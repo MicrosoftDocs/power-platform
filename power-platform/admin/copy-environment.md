@@ -98,30 +98,31 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 | DocumentIndex | ProductPriceLevel | ChannelPropertyGroup |
 | DuplicateRecord | ProductSalesLiterature | DynamicPropertyAssociation |
 | Email | ProductSubstitute | DynamicPropertyInstance |
-| EmailHash | QuarterlyFiscalCalendar | DynamicPropertyOptionSetItem |
-| EmailSearch | QueueItem | Position |
-| Entitlement | Quote | ChannelProperty |
-| EntitlementChannel | QuoteClose | RollupJob |
-| EntitlementContacts | QuoteDetail | SLAKPIInstance |
-| EntitlementProducts | RecurrenceRule | SystemUserManagerMap |
-| EntitlementTemplate | TextAnalyticsEntityMapping | SystemUserSyncMappingProfiles |
-| EntitlementTemplateChannel | RecurringAppointmentMaster | OfficeGraphDocument |
-| EntitlementTemplateProducts | RelationshipRole | SimilarityRule |
-| ExchangeSyncIdMapping | RelationshipRoleMap | BookableResource |
-| BookableResourceBookingExchangeSyncIdMapping | ReplicationBacklog | BookableResourceGroup |
-| ExternalParty | SalesLiterature | BookableResourceBooking |
-| ExternalPartyItem | SalesLiteratureItem | BookableResourceBookingHeader |
-| Fax | SalesOrder | BookableResourceCategory |
-| FixedMonthlyFiscalCalendar | SalesOrderDetail | BookableResourceCharacteristic |
-| Goal | SdkMessageProcessingStepSecureConfig | BookableResourceCategoryAssn |
-| GoalRollupQuery | SemiAnnualFiscalCalendar | Characteristic |
-| Import | Service | RatingValue |
-| ImportData | ServiceAppointment | RatingModel |
-| ImportFile | ServiceContractContacts | BookingStatus |
-| ImportLog | SharePointData | RecommendedDocument |
-| Incident | SharePointDocument | EmailSignature |
-| IncidentResolution | SharePointDocumentLocation | UserSearchFacet |
-| IntegrationStatus | SharePointSite | GlobalSearchConfiguration |
+| Email Template | QuarterlyFiscalCalendar | DynamicPropertyOptionSetItem |
+| EmailHash  | QueueItem | Position |
+| EmailSearch | Quote | ChannelProperty |
+| Entitlement | QuoteClose | RollupJob |
+| EntitlementChannel | QuoteDetail | SLAKPIInstance |
+| EntitlementContacts  | RecurrenceRule | SystemUserManagerMap |
+| EntitlementProducts | TextAnalyticsEntityMapping | SystemUserSyncMappingProfiles |
+| EntitlementTemplate | RecurringAppointmentMaster | OfficeGraphDocument |
+| EntitlementTemplateChannel | RelationshipRole | SimilarityRule |
+| EntitlementTemplateProducts | RelationshipRoleMap | BookableResource |
+| ExchangeSyncIdMapping | ReplicationBacklog | BookableResourceGroup |
+| BookableResourceBookingExchangeSyncIdMapping | SalesLiterature | BookableResourceBooking |
+| ExternalParty | SalesLiteratureItem | BookableResourceBookingHeader |
+| ExternalPartyItem | SalesOrder | BookableResourceCategory |
+| Fax | SalesOrderDetail | BookableResourceCharacteristic |
+| FixedMonthlyFiscalCalendar | SdkMessageProcessingStepSecureConfig | BookableResourceCategoryAssn |
+| Goal | SemiAnnualFiscalCalendar | Characteristic |
+| GoalRollupQuery | Service | RatingValue |
+| Import | ServiceAppointment | RatingModel |
+| ImportData | ServiceContractContacts | BookingStatus |
+| ImportFile | SharePointData | RecommendedDocument |
+| ImportLog | SharePointDocument | EmailSignature |
+| Incident | SharePointDocumentLocation | UserSearchFacet |
+| IncidentResolution | SharePointSite | GlobalSearchConfiguration |
+| IntegrationStatus | SLA | | 
 
 ## Copy an environment
   
