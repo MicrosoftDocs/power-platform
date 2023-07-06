@@ -31,7 +31,7 @@ To see your current license usage, select **View license consumption (preview)**
 
 > [!NOTE]
 > - Trial licenses and Developer Plans can be used to license users in Managed Environments, but the restrictions specific to these types of licenses still apply. For example, trial licenses can be used to license users for 30 days, while the Developer Plan can be used to license users for dev/test purposes only in developer environments.
-> - Restrictions that apply to Managed Environments don't apply to the default environment. For more inforamtion, see [Manage the default environment](../guidance/adoption/manage-default-environment.md) and [Secure the default environment](../guidance/adoption/secure-default-environment.md).
+> - Restrictions that apply to Managed Environments don't apply to the default environment. More information: [Manage the default environment](../guidance/adoption/manage-default-environment.md) and [Secure the default environment](../guidance/adoption/secure-default-environment.md).
 
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br />
