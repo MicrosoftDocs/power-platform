@@ -109,7 +109,7 @@
           {
             "in": "path",
             "name": "reportId",
-            "description": "The report ID.",
+            "description": "The report ID",
             "required": true,
             "type": "string"
           },
