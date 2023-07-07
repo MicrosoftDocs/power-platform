@@ -4,7 +4,7 @@ description: Create a team template and add to an entity form
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 
 ms.component: pa-admin
@@ -86,10 +86,36 @@ Check your security role:
      The team template you selected now appears on the **Main** form.  
   
 14. On the **Actions** toolbar, select **Save**, and then select **Publish**.  
-  
+
+## Add a team template to a Solution   
+
+You can add your team template as a component to a [solution](https://learn.microsoft.com/power-apps/maker/data-platform/solutions-overview).
+
+1. [Create a solution](https://learn.microsoft.com/power-apps/maker/data-platform/create-solution).
+
+   Add Team template.
+   
+1. Click the **Add existing** on the action bar.
+1. Click on **More** and **Other**, and select **Team template**.
+1. Select your Team template and click **Add**.
+
+   Add the Table where your Team template was added.
+
+1. Click the **Add existing** on the action bar.
+1. Click on **Table**.
+1. Select the table where the Team template was added and click **Next**.
+1. Check the **Include table metadata** option.
+1. Click **Add**.
+2. [Publish your customizations](https://learn.microsoft.com/power-apps/maker/data-platform/create-solution#publish-changes).
+
 > [!NOTE]
-> The Access Team template does not get exported with its entity in a Solution.  Administrators will need to recreate the template when exporting the entity into another environment.
+> For custom tables, you will need to check the **Include all objects** option.
 
+## Export your team template
+You can now export your team template and import it into a different environment.
 
+1. [Export your team template solution](https://learn.microsoft.com/power-apps/maker/data-platform/export-solutions).
+1. Download the solution .zip file.
+1. [Import your team template .zip file solution](https://learn.microsoft.com/power-apps/maker/data-platform/import-update-export-solutions).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
