@@ -77,9 +77,9 @@ To share user settings created for a particular user profile, we recommend that 
 
 1. Open the ALM Accelerator for Power Platform Administration app, and go to **Deployment User Settings**.
 
-1. Open the **Deployment User Setting** that you want to share with your team, and then select **Share**.
+1. Select the **Deployment User Setting** that you want to share with your team, and then select **Share**.
 
-1. Open your Azure AD Group team by using **Advanced lookup** in the **Sharing** dialog.
+1. Click on the **magnifying glass icon** and select **Advanced lookup**.
 
    1. In **Advanced lookup**, select **Teams**.
 
