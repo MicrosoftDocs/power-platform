@@ -13,6 +13,9 @@ ms.contributors:
 - mihaelab
 contributors:
 - Funken1766
+- mihaelablendea
+- mikferland-msft
+- sericks007
 ---
 # Licensing
 
