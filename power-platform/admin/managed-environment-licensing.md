@@ -4,8 +4,8 @@ description: Learn about licensing Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/07/2023
-author: mikferland-msft 
-ms.author: miferlan
+author: mihaelablendea
+ms.author: mihaelab
 ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: "admin-security"
@@ -13,6 +13,9 @@ ms.contributors:
 - mihaelab
 contributors:
 - Funken1766
+- mihaelablendea
+- mikferland-msft
+- sericks007
 ---
 # Licensing
 
