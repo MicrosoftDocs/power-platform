@@ -18,6 +18,10 @@ ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+contributors:
+  - DanaMartens
+  - sericks007
+  - angieandrews
 ---
 
 # View the Power Platform connector activity logs
