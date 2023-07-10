@@ -14,7 +14,7 @@ ms.contributors:
 ---
 # Power Platform and Dynamics 365 apps operated by 21Vianet in China
 
-Microsoft Power Platform and Dynamics 365 apps services operated by 21Vianet are designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services that's currently operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd ("21Vianet"). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., located in mainland China.
+Microsoft Power Platform and Dynamics 365 apps services operated by 21Vianet are designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services that's currently operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd ("21Vianet"). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., located in China.
 
 The Dyamics 365 apps include Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
@@ -29,7 +29,7 @@ For information about how to provision environments, go to [Create and manage en
 
 ## Feature availability
 
-The deployment of Microsoft Business Applications in each geography is based on the foundational principles of security, privacy, compliance, transparency, reliability, and in-country disaster recovery. Organizations get a complete cloud infrastructure and platform, and familiar productivity and business application tools. Customer data is stored at rest within the geography, except as noted in the [Trust Center](https://www.microsoft.com/trust-center/privacy/data-location).
+The deployment of Microsoft Business Applications in each geography is based on the foundational principles of security, privacy, compliance, transparency, reliability, and in-country/region disaster recovery. Organizations get a complete cloud infrastructure and platform, and familiar productivity and business application tools. Customer data is stored at rest within the geography, except as noted in the [Trust Center](https://www.microsoft.com/trust-center/privacy/data-location).
 
 Microsoft strives to maintain functional parity across our localized datacenter deployments. However, there are exceptions that are affected by dependent service availability, market priorities, or compliance regulations. These exceptions are indicated in the [Product and Feature Availability PDF document (download)](https://aka.ms/BAPfunctionalparityapac). The column labeled "China (21-V)" should help customers and partners understand and plan for successful implementation of their business application solutions. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases.
 
@@ -39,9 +39,9 @@ To connect Dynamics 365 with your Exchange Online tenant in China and use server
 
 ## Expansion and transition to "China 3" datacenters
 
-Beginning in April 2023, current and future Business Applications customers who operate in China are poised to benefit greatly from the new Azure datacenters that are referred to as the Azure "China 3" Region. These cutting-edge datacenters provide enough capacity and robustness to sustain the ongoing expansion and demands of Business Applications in China. They also offer an opportunity to introduce capabilities and offerings that aren't currently available in the region. This development represents an exciting and promising advancement for the future of Business Applications in China.
+Effective April 2023, current and future Business Applications customers who operate in China are poised to benefit greatly from the new Azure datacenters that are referred to as the Azure "China 3" Region. These cutting-edge datacenters provide enough capacity and robustness to sustain the ongoing expansion and demands of Business Applications in China. They also offer an opportunity to introduce capabilities and offerings that aren't currently available in the region. This development represents an exciting and promising advancement for the future of Business Applications in China.
 
-As of April 17, 2023, new [Power Platform environments with a Dataverse database](create-environment.md#create-an-environment-in-the-power-platform-admin-center) will be created in China 3. Then, throughout April, May, June, July, and August 2023, the Microsoft product engineering teams will transition existing Power Platform Dataverse environments to China 3. There will be no changes to the environment IDs, organization IDs, tenant IDs, URLs, or URIs that are used to access Business Applications environments. There will also be no functionality impact.
+Effective July 10, 2023, new [Power Platform environments with a Dataverse database](create-environment.md#create-an-environment-in-the-power-platform-admin-center) will be created in China 3. Then, throughout August and September 2023, the Microsoft product engineering teams will transition existing Power Platform Dataverse environments to China 3. There will be no changes to the environment IDs, organization IDs, tenant IDs, URLs, or URIs that are used to access Business Applications environments. There will also be no functionality impact.
 
 As customer tenants are selected for transition, notifications will be distributed to the Microsoft 365 Message Center to notify administrators about this maintenance activity. Specifically, the notifications will indicate when the transition will occur for their environments. Transitions are expected to occur between 15:00 and 21:00 Coordinated Universal Time. Both non-production environments and production environments will be transitioned without customer involvement. However, a minor interruption in service communication is expected. This interruption should last less than 10 minutes.
 
