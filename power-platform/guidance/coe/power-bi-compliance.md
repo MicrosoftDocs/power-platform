@@ -53,7 +53,7 @@ The **Adoption insights** page provides you with a tenant-wide overview of:
 - Top 5 connectors used in apps and flows
 - Top 5 most launched apps
 - Top 5 makers with the most launched apps
-- Top 5 countries where makers create most launched apps
+- Top 5 countries/regions where makers create most launched apps
 - Top 5 environments that consume the most capacity
 
 ![Adoption insights.](media/pbi-compliance3.png "Adoption insights")

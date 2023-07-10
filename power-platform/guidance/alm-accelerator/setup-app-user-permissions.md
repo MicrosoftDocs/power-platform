@@ -45,7 +45,7 @@ The service connections in the ALM Accelerator must provide user privileges to a
 
 1. Sign in to Azure DevOps.
 
-1. Open your project, and then in the lower-left corner, select **Organization settings**.
+1. Open your project, and then in the lower-left corner, select **Project settings** to access project settings.
 
 1. Select **Service connections**, and then in the **Service Connections** list, select the service connection to be shared with users.
 
