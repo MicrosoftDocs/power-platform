@@ -4,7 +4,7 @@ description: Create bots that use Azure conversational language understanding in
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
 ms.date: 6/23/2023
 ms.topic: article
-author: iaanw
+author: KendalBond007
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "advanced-authoring, CLU, ceX"
@@ -31,26 +31,32 @@ Below are the steps to create a bot using an existing CLU model:
 
 Before you begin, make sure that you have your CLU model project name and deployment name.
 1. Create a new [Power Virtual Agents](authoring-first-bot.md) bot.
-1. From the left navigation, choose **Language**.
-1. From the **NLU Resource** drop-down list, choose **Power Virtual Agent NLU**.
-    :::image type="content" source="media/advanced-clu-integration/clu-image1.png" alt-text="Language option to select NLU resource." border="false":::
-
-1. In Power Apps, choose the **Connections** menu, select **…More**, and then search for **Azure Cognitive Service for Language**.
+1. From the left navigation, choose **Language**. NOTE: If you have already enabled a CLU connection that you wish to use, skip to step 4.
+1. To create a new connection, from within Power Apps, choose the **Connections** menu, select **…More**, and then search for **Azure Cognitive Service for Language**.
 
     :::image type="content" source="media/advanced-clu-integration/clu-image2.png" alt-text="Azure Cognitive Service for Language." border="false":::
 
-1. Select the **+ (plus sign)** on the to the right of the connector name, to display the authentication settings page. 
-1. Enter the  display name, API key, account key, site URL, then select **Save**. Once Power Apps creates the connector, return to your Power Virtual Agents bot.
+1. From the **NLU Resource** drop-down list, choose **Power Virtual Agent NLU**.
+
+    :::image type="content" source="media/advanced-clu-integration/clu-image1.png" alt-text="Language option to select NLU resource." border="false":::
+
+> [!NOTE]
+> If you you see the following, then you are not connected to **Azure Congnitive Service for Language**. Follow step 3 to connect.
+> 
+> :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected-27Jun23.png" alt-text="Language option menu when not connected to Azure Congintive Service for Language." border="false":::
+
+5. Select the **+ (plus sign)** on the to the right of the connector name, to display the authentication settings page. 
+6. Enter the display name, API key, account key, site URL, then select **Save**. Once Power Apps creates the connector, return to your Power Virtual Agents bot.
     :::image type="content" source="media/advanced-clu-integration/clu-image3.png" alt-text="Enter display name, authentication type, account key, and Site URL." border="false"::: 
 
-1. To view it in the **Connections** list, right click the **Azure Cognitive Service for Language** connector and select **Edit**. 
-1. Change the display name to something else to distinguish it from other CLU connectors. The name you enter to change can be any name you choose.
-1. From the left navigation in Power Virtual Agents, choose **Language**, then in the **NLU Resource** drop-down list, choose [*the name you typed in the last step*], then select **Save**.
-1. In the **Delete example trigger phrases?** option, select **Save snapshot**. This saves the bot content, including trigger phrases and bot dialogues into a backlog file in YAML format.
+7. To view it in the **Connections** list, right click the **Azure Cognitive Service for Language** connector and select **Edit**. 
+9. Change the display name to something else to distinguish it from other CLU connectors. The name you enter to change can be any name you choose.
+8. From the left navigation in Power Virtual Agents, choose **Language**, then in the **NLU Resource** drop-down list, choose [*the name you typed in the last step*], then select **Save**.
+9. In the **Delete example trigger phrases?** option, select **Save snapshot**. This saves the bot content, including trigger phrases and bot dialogues into a backlog file in YAML format.
 
     :::image type="content" source="media/advanced-clu-integration/clu-image4.png" alt-text="Select Save snapshot to delete example trigger phrases." border="false"::: 
  
-1. Enter your project name and deployment information, and select **Save**.
+10. Enter your project name and deployment information, and select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image5.png" alt-text="Choose a project and model in Azure Cognitive Service for Language." border="false"::: 
 
 Next, switch back to Power Virtual Agents. Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.

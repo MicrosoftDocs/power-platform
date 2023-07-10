@@ -1,8 +1,8 @@
 ---
-title: PowerShell support | Microsoft Docs
-description: Description of the different PowerShell cmdlets and a walkthrough of how to install and run them.
+title: PowerShell support
+description: Learn about the PowerShell cmdlets and get a tutorial of how to install and run them.
 author: laneswenka
-ms.reviewer: kvivek
+ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 01/20/2023
@@ -14,10 +14,10 @@ search.audienceType:
 
 # PowerShell support for Power Apps 
 
-With PowerShell cmdlets for app creators and administrators, you can automate many of the monitoring and management tasks that are only possible manually today in [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+With [PowerShell](/powershell/scripting/overview) cmdlets for app creators and administrators, you can automate many of the monitoring and management tasks that are only possible manually today in [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## Cmdlets
-[Cmdlets](/powershell/scripting/developer/cmdlet/cmdlet-overview) are functions written in PowerShell script language that execute commands in the Windows PowerShell environment. Running these Power Apps cmdlets will allow you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. Note that you can still use the cmdlets if you're not an admin on the tenant, but you will be limited to the resources you own. Cmdlets that start with the word 'Admin' are designed to be used by an administrative user account.
+[Cmdlets](/powershell/scripting/developer/cmdlet/cmdlet-overview) are functions written in the [PowerShell](/powershell/scripting/overview) script language that execute commands in PowerShell. Running these Power Apps cmdlets allows you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. You can still use the cmdlets if you're not an admin on the tenant, but you're limited to the resources you own. Cmdlets that start with the word 'Admin' are designed to be used by an administrative user account.
 
 Cmdlets are available on the PowerShell gallery as two separate modules: 
 - [Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell)
@@ -34,19 +34,22 @@ For information on the Power Apps admin module, see [Get started using the Power
 > Add-PowerAppsAccount -Endpoint "usgov" 
 > ```
 
+## Get started with PowerShell
+If you're new to PowerShell and need help with finding and launching it, go to [Getting Started with PowerShell](/powershell/scripting/learn/ps101/01-getting-started). If you need help with using PowerShell or the cmdlets, go to [The PowerShell Help System](/powershell/scripting/learn/ps101/02-help-system).
+
 ## Requirements
-PowerShell in this topic requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
+PowerShell in this article requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
 
 > ```powershell
 > $PSVersionTable.PSVersion
 > ```
 
-If you have an outdated version, see [Upgrading existing Windows PowerShell](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
+If you have an outdated version, go to [Upgrading existing Windows PowerShell](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
 
 > [!IMPORTANT]
 > The modules described in this document, use .NET Framework. This makes it incompatible with PowerShell 6.0 and later, which uses .NET Core. 
 
-## Installation
+## Module installation
 To run the PowerShell cmdlets for app creators, do the following:
 
 1. Run PowerShell as an administrator.
@@ -68,7 +71,7 @@ To run the PowerShell cmdlets for app creators, do the following:
     Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Scope CurrentUser
     ```
 
-3. If you are prompted to accept the change to *InstallationPolicy* value of the repository, accept [A] Yes to all modules by typing 'A' and pressing **Enter** for each module.
+3. If you're prompted to accept the change to *InstallationPolicy* value of the repository, accept [A] Yes to all modules by typing 'A' and pressing **Enter** for each module.
 
    ![Accept InstallationPolicy value.](media/accept-installationpolicy-value75.png "Accept InstallationPolicy value")
 
@@ -84,15 +87,40 @@ To run the PowerShell cmdlets for app creators, do the following:
     $pass = ConvertTo-SecureString "password" -AsPlainText -Force
     Add-PowerAppsAccount -Username user@contoso.com -Password $pass
     ```
+### Module updates
+You can check the version of all your PowerShell modules using [Get-Module](/powershell/module/microsoft.powershell.core/get-module)
+
+```powershell
+Get-Module
+```
+And you can update all your PowerShell modules to the latest using [Update-Module](/powershell/module/powershellget/update-module)
+
+```powershell
+Update-Module
+```
+
+Alternately, you can check the module version of the Power Platform modules specifically using [Get-Module](/powershell/module/microsoft.powershell.core/get-module) and the "-Name" parameter
+
+```powershell
+Get-Module -Name "Microsoft.PowerApps.Administration.PowerShell"
+Get-Module -Name "Microsoft.PowerApps.PowerShell"
+```
+
+And update the Power Platform PowerShell modules specifically using [Update-Module](/powershell/module/powershellget/update-module) and the "-Name" parameter
+
+```powershell
+Update-Module -Name "Microsoft.PowerApps.Administration.PowerShell"
+Update-Module -Name "Microsoft.PowerApps.PowerShell"
+```
 
 ## Power Apps cmdlets for app creators
 
 ### Prerequisite
-Users with a valid Power Apps license can perform the operations in these cmdlets, but they will only have access to the resources (for example, apps, flows, etc.) that have been created or shared with them.
+Users with a valid Power Apps license can perform the operations in these cmdlets, but they only have access to the resources (for example, apps and flows) that have been created or shared with them.
 
 ### Cmdlet list - Maker Cmdlets
 > [!NOTE]
-> We have updated some of the cmdlets function names in the latest release in order to add appropriate prefixes to prevent collisions. See the table below for an overview of what has changed.
+> We've updated some of the cmdlets function names in the latest release in order to add appropriate prefixes to prevent collisions. Refer the following table for an overview of what has changed.
 
 | Purpose | Cmdlet |
 | --- | --- |
@@ -114,7 +142,7 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 
 ## Power Apps cmdlets for administrators
 
-For information on Power Apps cmdlets for admins, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md)
+For information on Power Apps cmdlets for admins, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md)
 
 ## Tips
 
@@ -122,7 +150,7 @@ For information on Power Apps cmdlets for admins, see [Get started with PowerShe
 
      ![Get-Help command.](media/get-help-cmdlet.png "Get-Help command")
 
-- To cycle through the possible options for input tags, click on the tab key after typing out the dash (-) character, after the cmdlet name.
+- To cycle through the possible options for input tags, select the tab key after typing out the dash (-) character, after the cmdlet name.
 
 Example commands:
 
@@ -134,7 +162,7 @@ Get-Help Get-AdminPowerAppEnvironment -Detailed
 
 ## Operation examples
 
-Below are some common scenarios that show how to use new and existing Power Apps cmdlets.
+Following are some common scenarios that show how to use new and existing Power Apps cmdlets.
 
 - [Environments Commands](#environments-commands)
 - [Power Apps Commands](#power-apps-commands)
@@ -154,7 +182,7 @@ Use these commands to get details on and update environments in your tenant.
 Get-AdminPowerAppEnvironment
 ```
 
-Returns a list of each environment across your tenant, with details of each (e.g., environment name (guid), display name, location, creator, etc).
+Returns a list of each environment across your tenant, with details of each (for example, environment name (guid), display name, location, creator, and more).
 
 #### Display details of your default environment
 
@@ -184,7 +212,7 @@ These operations are used to read and modify Power Apps data in your tenant.
 Get-AdminPowerApp
 ```
 
-Returns a list of all Power Apps across the tenant, with details of each (e.g., application name (guid), display name, creator, etc).
+Returns a list of all Power Apps across the tenant, with details of each (for example, application name (guid), display name, creator, and more).
 
 #### Display a list of all Power Apps that match the input display name
 
@@ -212,7 +240,7 @@ Featured applications are grouped and pushed to the top of the list in the Power
 Get-AdminPowerApp 'DisplayName' | Set-AdminPowerAppAsHero
 ```
 
-A Hero app will appear at the top of the list in the Power Apps mobile player. There can only be one Hero app.
+A Hero app appears at the top of the list in the Power Apps mobile player. There can only be one Hero app.
 
 The pipeline (represented as the '|' character between two cmdlets) takes the output of the first cmdlet and passes it as the input value of the second, assuming the function has been written to accommodate the pipeline feature.
 
@@ -242,19 +270,19 @@ Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Obje
 Get-AdminPowerAppsUserDetails -OutputFilePath '.\adminUserDetails.txt' –UserPrincipalName 'admin@bappartners.onmicrosoft.com'
 ```
 
-The above command will store the Power Apps user details (basic usage information about the input user via their user principal name) in the specified text file. It will create a new file if there is no existing file with that name, and overwrite the text file if it already exists.
+The above command stores the Power Apps user details (basic usage information about the input user via their user principal name) in the specified text file. It creates a new file if there is no existing file with that name, and overwrites the text file if it already exists.
 
 #### Export a list of assigned user licenses
 
 ```powershell
 Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 ```
-Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
+Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans and plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
 The export can take a while for tenants with a large number of Microsoft Power Platform users.
 
 > [!NOTE]
-> Output of the Get-AdminPowerAppLicenses cmdlet only includes licenses for users that have accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users that have had licenses assigned in Azure AD (typically via the Microsoft 365 admin center) but have never accessed Power Platform services will not have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Azure AD can take up to seven days to reflect in the output for users that haven't accessed the service recently.
+> Output of the Get-AdminPowerAppLicenses cmdlet only includes licenses for users that have accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users that have had licenses assigned in Azure AD (typically via the Microsoft 365 admin center) but have never accessed Power Platform services won't have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Azure AD can take up to seven days to reflect in the output for users that haven't accessed the service recently.
 
 #### Set logged in user as the owner of a canvas app
 
@@ -286,7 +314,7 @@ This recovers a canvas app that is discoverable via Get-AdminDeletedPowerAppsLis
 
 The following cmdlets can be used to specify and verify which environment SharePoint custom forms are saved to, instead of the default environment. When the designated environment for SharePoint custom forms changes, this is the environment where newly created custom forms are saved. Existing custom forms don't automatically migrate to different environments as these cmdlets are used. The ability for a user to create a custom form in a designated environment requires that user to have the Environment Maker role. Users can be granted the Environment Maker role in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).  
 
-Note, any environment which isn’t the default environment, can be deleted. If the designated SharePoint custom form environment is deleted the custom forms are deleted with it.
+Any environment that isn’t the default environment can be deleted. If the designated SharePoint custom form environment is deleted, the custom forms are deleted with it.
 
 ```powershell
 Get-AdminPowerAppSharepointFormEnvironment  
@@ -315,9 +343,9 @@ $settings.PowerPlatform.PowerApps.disableShareWithEveryone
 
 This setting controls whether users with the Environment Maker security role can share canvas apps with '[Everyone in an organization](/powerapps/maker/canvas-apps/share-app)'. When the setting is set to ‘true’, only users with an admin role (Dynamics 365 admin, Power Platform Service admin, Azure AD tenant admin) can share apps with ‘Everyone in an organization’.  
 
-Note, regardless of this tenant settings value makers with the sharing privilege can share apps with security groups of any size. This control only determines whether the ‘Everyone’ shorthand may be used when sharing.  
+Regardless of this tenant settings value, makers with the sharing privilege can share apps with security groups of any size. This control only determines whether the ‘Everyone’ shorthand may be used when sharing.  
 
-#### Change tenant setting for ability to share apps with ‘Everyone’ 
+#### Change tenant setting for ability to share apps with ‘Everyone’
 
 ```powershell
 $settings = Get-TenantSettings 
@@ -325,9 +353,9 @@ $settings.powerPlatform.powerApps.disableShareWithEveryone = $True
 Set-TenantSettings -RequestBody $settings
 ```
 
-##### Surface your organization’s governance error message content 
+##### Surface your organization’s governance error message content
 
-If you specify governance error message content to appear in error messages, it will be included in the error message displayed when makers observe they don’t have permission to share apps with 'Everyone'. See [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
+If you specify governance error message content to appear in error messages, it's included in the error message displayed when makers observe they don’t have permission to share apps with 'Everyone'. See [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
 #### Associate in context flows to an app
 
@@ -339,10 +367,10 @@ Associate flows in context of an app to the app to create a dependency between t
 
 EnvironmentName and FlowName can be found in the flow url:
 
- - For a Non-Solution flow, the URL will look like this:
+ - For a Non-Solution flow, the URL looks like this:
    https://preview.flow.microsoft.com/manage/environments/839eace6-59ab-4243-97ec-a5b8fcc104e7/flows/6df8ec2d-3a2b-49ef-8e91-942b8be3202t/details
    <br />The GUID after environments/ is the EnvironmentName and the GUID after flows/ is the FlowName
- - For Solution flow, the URL will look like this:
+ - For Solution flow, the URL looks like this:
    https://us.flow.microsoft.com/manage/environments/66495a1d-e34e-e330-9baf-0be559e6900b/solutions/fd140aaf-4df4-11dd-bd17-0019b9312238/flows/53d829c4-a5db-4f9f-8ed8-4fb49da69ee1/details
    <br />The GUID after environments/ is the EnvironmentName and the GUID after flows/ is the FlowName
  - The AppName for canvas app can be found in Canvas app details page.
@@ -392,7 +420,7 @@ Returns the owner details of the specified flow.
 Get-AdminFlowUserDetails –UserId $Global:currentSession.userId
 ```
 
-Returns the user details regarding flow usage. In this example we're using the user Id of the current logged in user of the PowerShell session as input.
+Returns the user details regarding flow usage. In this example, we're using the user Id of the current logged in user of the PowerShell session as input.
 
 #### Remove flow user details
 
@@ -447,7 +475,7 @@ New-DlpPolicy
 
 Creates a new DLP policy for the signed-in admin's tenant.
 
-#### Retrieve a list of of DLP objects
+#### Retrieve a list of DLP objects
 
 ```powershell
 Get-DlpPolicy
@@ -507,7 +535,7 @@ Set-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -UpdatedExemptResourc
 Remove-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
 ```
 
-To exempt a resource from a DLP policy you need the following information: 
+To exempt a resource from a DLP policy, you need the following information: 
 
 - Tenant ID (GUID) 
 - DLP policy ID (GUID) 
@@ -547,11 +575,11 @@ To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 0600
 |-------|----------------------------------------|-----------------------------------|
 | 1     | User launches an app that’s not DLP compliant but DLP exempt. | App launch proceeds with or without DLP enforcement.                                                                                                             |
 | 2     | Maker saves an app that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the app save operation. The DLP non-compliance warning is shown regardless of DLP exemption. |
-| 3     | Maker saves a flow that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the flow save operation. The DLP non-compliance warning will not appear.                        |
+| 3     | Maker saves a flow that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance doesn't block the flow save operation. The DLP non-compliance warning doesn't appear.                        |
 
 ### Governance error message content commands
 
-The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they are prompted by governance controls. For instance, when governance error message content is set it will appear in Power Apps Data Loss Prevention policy runtime enforcement messages. 
+The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they're prompted by governance controls. For instance, when governance error message content is set, it appears in Power Apps Data Loss Prevention policy runtime enforcement messages.
 
 #### Set governance error message content 
 
@@ -579,6 +607,7 @@ The governance error message URL and email can be shown independently or togethe
 |     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’       |     Generally available    |
 |     4    |     Maker saves an app created using Power Apps that’s not DLP compliant                                                          |     Generally available    |
 |     5    |     Maker saves a Power Automate flow that’s not DLP compliant                                                     |     Generally available    |
+|     6    |     User launches an app without security group membership to the security group associated to Dataverse environment|     Generally available    |
 
 #### Display governance error message content 
 
@@ -613,11 +642,11 @@ Get-AllowedConsentPlans
 
 The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or developer plans that users can sign themselves up for via Power Apps/Power Automate portals/Power Automate for desktop. "Ad-hoc subscription" or "Viral" consent plans are trial licenses that users can sign themselves up for via https://signup.microsoft.com or admins can assign to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal. 
 
-By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command as well as disabling the setting *AllowAdHocSubscriptions* in Azure AD. 
+By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command and disabling the setting *AllowAdHocSubscriptions* in Azure AD. 
 
-It is important to note that when using *Remove-AllowedConsentPlans* all existing plans of the specified type will be removed from all users in the tenant and will not be recoverable. In addition, it will block all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
+It is important to know that when using *Remove-AllowedConsentPlans*, all existing plans of the specified type are removed from all users in the tenant and aren't be recoverable. In addition, it blocks all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
 
-## Questions?
+## If you have uestions
 
 If you have any comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
 
