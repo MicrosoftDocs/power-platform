@@ -43,7 +43,7 @@ For users to use the service connection from the ALM Accelerator for Power Platf
 
 1. Go to Azure DevOps.
 
-1. Open your project, and then in the lower-left corner, select **Organization settings** to access project settings.
+1. Open your project, and then in the lower-left corner, select **Project settings** to access project settings.
 
 1. Select **Service connections**, and then select the service connection to be shared with users from the **Service Connections** list.
 
