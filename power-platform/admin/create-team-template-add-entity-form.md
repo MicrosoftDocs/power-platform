@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/08/2021
+ms.date: 07/10/2023
 search.audienceType: 
   - admin
 ---
@@ -87,35 +87,35 @@ Check your security role:
   
 14. On the **Actions** toolbar, select **Save**, and then select **Publish**.  
 
-## Add a team template to a Solution   
+## Add a team template to a solution   
 
-You can add your team template as a component to a [solution](https://learn.microsoft.com/power-apps/maker/data-platform/solutions-overview).
+You can add your team template as a component to a [solution](/power-apps/maker/data-platform/solutions-overview).
 
-1. [Create a solution](https://learn.microsoft.com/power-apps/maker/data-platform/create-solution).
+1. [Create a solution](/power-apps/maker/data-platform/create-solution).
 
    Add Team template.
    
-1. Click the **Add existing** on the action bar.
-1. Click on **More** and **Other**, and select **Team template**.
-1. Select your Team template and click **Add**.
+1. Select **Add existing** on the action bar.
+1. Select **More** and **Other**, and then select **Team template**.
+1. Select your Team template and select **Add**.
 
-   Add the Table where your Team template was added.
+   Add the table where your Team template was added.
 
-1. Click the **Add existing** on the action bar.
-1. Click on **Table**.
-1. Select the table where the Team template was added and click **Next**.
-1. Check the **Include table metadata** option.
-1. Click **Add**.
-2. [Publish your customizations](https://learn.microsoft.com/power-apps/maker/data-platform/create-solution#publish-changes).
+1. Select **Add existing** on the action bar.
+1. Select **Table**.
+1. Select the table where the Team template was added. Select **Next**.
+1. Select the **Include table metadata** option.
+1. Select **Add**.
+1. [Publish your customizations](/power-apps/maker/data-platform/create-solution#publish-changes).
 
 > [!NOTE]
-> For custom tables, you will need to check the **Include all objects** option.
+> For custom tables, you will need to select the **Include all objects** option.
 
 ## Export your team template
 You can now export your team template and import it into a different environment.
 
-1. [Export your team template solution](https://learn.microsoft.com/power-apps/maker/data-platform/export-solutions).
+1. [Export your team template solution](/power-apps/maker/data-platform/export-solutions).
 1. Download the solution .zip file.
-1. [Import your team template .zip file solution](https://learn.microsoft.com/power-apps/maker/data-platform/import-update-export-solutions).
+1. [Import your team template .zip file solution](/power-apps/maker/data-platform/import-update-export-solutions).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
