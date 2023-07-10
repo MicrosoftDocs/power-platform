@@ -45,12 +45,7 @@ Select one of the following settings:
 
 When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step, the verification of solutions fails and in the **Block** mode, solution imports are blocked.
 
-### Considerations
-- Solution checker must be run with the solution checker ruleset. The easiest ways to do this are:
-  - Run solution checker in the [maker portal](/power-apps/maker/data-platform/use-powerapps-checker) where the solution checker ruleset is used.
-  - Use [pac solution check](../developer/cli/reference/solution.md#pac-solution-check) where the solution checker ruleset is used by default.
-- Solution checker must be run within a 90 day window of the import.
-- When invoking solution checker, do not pass any file exclusions or rule overrides. These may be supported for solution checker enforcement in the future.
+For more information on what to do when encountering a warn or block, see the [troubleshooting guide](/troubleshoot/power-platform/power-apps/manage-apps-and-solutions/solution-checker-enforcement-import-issues).
 
 ## Email messages to the admin
 
