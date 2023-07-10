@@ -25,11 +25,11 @@ You can use [solution checker](/power-apps/maker/data-platform/use-powerapps-che
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-To enable the solution checker for your Managed Environment:
+To enable solution checker enforcement for your Managed Environment:
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 1. In the navigation pane, select **Environments**, and then select a managed environment.
-1. On the command bar, select **Edit Managed Environments**, and then select the appropriate setting under **Solution checker**.
+1. On the command bar, select **Edit Managed Environments**, and then select the appropriate setting under **Solution checker enforcement**.
 
     :::image type="content" source="media/managed-environment-solution-checker.png" alt-text="Screenshot of the solution checker settings screen.":::
 
@@ -54,11 +54,9 @@ When the solution checker enforcement is turned on, all solutions should be vali
 
 ## Email messages to the admin
 
-When the validation mode is set to **Warn** or **Block**, Power Platform admins receive summary emails when a solution is imported or blocked. The contents of the email differ depending on the way solution was checked.
+When the validation mode is set to **Warn** or **Block**, Power Platform admins receive summary emails when a solution is imported or blocked. When the solution is imported into an environment, environment admins can see the count of issues by severity in the solution in the summary email.
 
-Solutions checked from Power Apps [(make.powerapps.com](https://make.powerapps.com)) have the results stored in the source environment. When this solution is imported into an environment, admins of this environment get a link to these results in the summary email.
-
-Solutions checked from the [Power Platform Build Tools](/power-platform/alm/devops-build-tools) have the results returned as a downloadable file of the Power Apps Checker build task. When this solution is imported into an environment, environment admins can see the count of issues in the solution in the summary email. The summary email, in this case, doesn't have a link to the results.  
+The email is sent to all users with the roles of [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) and [Dynamics 365 service administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). It is also sent to recipients of the [weekly digest emails](managed-environment-usage-insights.md#who-can-receive-the-weekly-digest).
 
 ### Suppress validation emails
 
