@@ -35,7 +35,7 @@ For information on the Power Apps admin module, see [Get started using the Power
 > ```
 
 ## Get started with PowerShell
-If you're new to PowerShell and need help finding and launching it, go to [Getting Started with PowerShell](/powershell/scripting/learn/ps101/01-getting-started). If you need help using PowerShell or the cmdlets, go to [The PowerShell Help System](/powershell/scripting/learn/ps101/02-help-system).
+If you're new to PowerShell and need help with finding and launching it, go to [Getting Started with PowerShell](/powershell/scripting/learn/ps101/01-getting-started). If you need help with using PowerShell or the cmdlets, go to [The PowerShell Help System](/powershell/scripting/learn/ps101/02-help-system).
 
 ## Requirements
 PowerShell in this article requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
@@ -49,7 +49,7 @@ If you have an outdated version, go to [Upgrading existing Windows PowerShell](/
 > [!IMPORTANT]
 > The modules described in this document, use .NET Framework. This makes it incompatible with PowerShell 6.0 and later, which uses .NET Core. 
 
-## Installation
+## Module installation
 To run the PowerShell cmdlets for app creators, do the following:
 
 1. Run PowerShell as an administrator.
@@ -87,6 +87,31 @@ To run the PowerShell cmdlets for app creators, do the following:
     $pass = ConvertTo-SecureString "password" -AsPlainText -Force
     Add-PowerAppsAccount -Username user@contoso.com -Password $pass
     ```
+### Module updates
+You can check the version of all your PowerShell modules using [Get-Module](/powershell/module/microsoft.powershell.core/get-module)
+
+```powershell
+Get-Module
+```
+And you can update all your PowerShell modules to the latest using [Update-Module](/powershell/module/powershellget/update-module)
+
+```powershell
+Update-Module
+```
+
+Alternately, you can check the module version of the Power Platform modules specifically using [Get-Module](/powershell/module/microsoft.powershell.core/get-module) and the "-Name" parameter
+
+```powershell
+Get-Module -Name "Microsoft.PowerApps.Administration.PowerShell"
+Get-Module -Name "Microsoft.PowerApps.PowerShell"
+```
+
+And update the Power Platform PowerShell modules specifically using [Update-Module](/powershell/module/powershellget/update-module) and the "-Name" parameter
+
+```powershell
+Update-Module -Name "Microsoft.PowerApps.Administration.PowerShell"
+Update-Module -Name "Microsoft.PowerApps.PowerShell"
+```
 
 ## Power Apps cmdlets for app creators
 
@@ -318,9 +343,9 @@ $settings.PowerPlatform.PowerApps.disableShareWithEveryone
 
 This setting controls whether users with the Environment Maker security role can share canvas apps with '[Everyone in an organization](/powerapps/maker/canvas-apps/share-app)'. When the setting is set to ‘true’, only users with an admin role (Dynamics 365 admin, Power Platform Service admin, Azure AD tenant admin) can share apps with ‘Everyone in an organization’.  
 
-Note, regardless of this tenant settings value makers with the sharing privilege can share apps with security groups of any size. This control only determines whether the ‘Everyone’ shorthand may be used when sharing.  
+Regardless of this tenant settings value, makers with the sharing privilege can share apps with security groups of any size. This control only determines whether the ‘Everyone’ shorthand may be used when sharing.  
 
-#### Change tenant setting for ability to share apps with ‘Everyone’ 
+#### Change tenant setting for ability to share apps with ‘Everyone’
 
 ```powershell
 $settings = Get-TenantSettings 
@@ -328,7 +353,7 @@ $settings.powerPlatform.powerApps.disableShareWithEveryone = $True
 Set-TenantSettings -RequestBody $settings
 ```
 
-##### Surface your organization’s governance error message content 
+##### Surface your organization’s governance error message content
 
 If you specify governance error message content to appear in error messages, it's included in the error message displayed when makers observe they don’t have permission to share apps with 'Everyone'. See [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
@@ -510,7 +535,7 @@ Set-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -UpdatedExemptResourc
 Remove-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
 ```
 
-To exempt a resource from a DLP policy you need the following information: 
+To exempt a resource from a DLP policy, you need the following information: 
 
 - Tenant ID (GUID) 
 - DLP policy ID (GUID) 
@@ -550,11 +575,11 @@ To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 0600
 |-------|----------------------------------------|-----------------------------------|
 | 1     | User launches an app that’s not DLP compliant but DLP exempt. | App launch proceeds with or without DLP enforcement.                                                                                                             |
 | 2     | Maker saves an app that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the app save operation. The DLP non-compliance warning is shown regardless of DLP exemption. |
-| 3     | Maker saves a flow that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the flow save operation. The DLP non-compliance warning won't appear.                        |
+| 3     | Maker saves a flow that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance doesn't block the flow save operation. The DLP non-compliance warning doesn't appear.                        |
 
 ### Governance error message content commands
 
-The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they're prompted by governance controls. For instance, when governance error message content is set it will appear in Power Apps Data Loss Prevention policy runtime enforcement messages. 
+The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they're prompted by governance controls. For instance, when governance error message content is set, it appears in Power Apps Data Loss Prevention policy runtime enforcement messages.
 
 #### Set governance error message content 
 
@@ -582,6 +607,7 @@ The governance error message URL and email can be shown independently or togethe
 |     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’       |     Generally available    |
 |     4    |     Maker saves an app created using Power Apps that’s not DLP compliant                                                          |     Generally available    |
 |     5    |     Maker saves a Power Automate flow that’s not DLP compliant                                                     |     Generally available    |
+|     6    |     User launches an app without security group membership to the security group associated to Dataverse environment|     Generally available    |
 
 #### Display governance error message content 
 
@@ -618,9 +644,9 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 
 By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command and disabling the setting *AllowAdHocSubscriptions* in Azure AD. 
 
-It is important to know that when using *Remove-AllowedConsentPlans* all existing plans of the specified type will be removed from all users in the tenant and won't be recoverable. In addition, it blocks all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
+It is important to know that when using *Remove-AllowedConsentPlans*, all existing plans of the specified type are removed from all users in the tenant and aren't be recoverable. In addition, it blocks all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
 
-## Questions?
+## If you have uestions
 
 If you have any comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
 
