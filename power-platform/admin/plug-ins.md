@@ -27,10 +27,10 @@ View plug-in details
 ## Disable a plug-in
 If you need to disable a plug in, see [Disable or enable a plug-in step](/power-apps/developer/data-platform/register-plug-in#disable-or-enable-a-plug-in-step).
 
-## Change user imperonation for a plug-in
+## Change user impersonation for a plug-in
 If you need to change user impersonation for a plug-in, see [Set user impersonation for a step](/power-apps/developer/data-platform/register-plug-in#set-user-impersonation-for-a-step).
 
-## Update license inforamtion for a user
+## Update license information for a user
 To change the license assignment for a user in the Microsoft 365 admin center, see [To assign a license](create-users.md#to-assign-a-license).
 
 
