@@ -21,8 +21,8 @@ ms.reviewer: kvivek
 
 ### Related content
 
-- [Responsible AI FAQs for Power Apps](/power-apps/maker/common/transparency-note)
-- [Responsible AI FAQs for Power Automate](/power-automate/transparency-note)
-- [Responsible AI FAQs for Power Pages](/power-pages/transparency-note)
+- [Responsible AI FAQs for Power Apps](/power-apps/maker/common/responsible-ai-overview/)
+- [Responsible AI FAQs for Power Automate](/power-automate/responsible-ai-overview/)
+- [Responsible AI FAQs for Power Pages](/power-pages/responsible-ai-overview/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
