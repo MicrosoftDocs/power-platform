@@ -1,13 +1,13 @@
 ---
 title: "View self-service storage capacity  | MicrosoftDocs"
 description: View self-service storage capacity
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

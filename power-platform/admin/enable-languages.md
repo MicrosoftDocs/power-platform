@@ -1,13 +1,13 @@
 ---
 title: "Regional and language options for your environment | MicrosoftDocs"
 description: Set regional and language options for your environment 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/29/2021
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 search.audienceType: 
   - admin
 ---

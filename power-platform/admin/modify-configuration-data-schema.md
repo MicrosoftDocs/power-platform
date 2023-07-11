@@ -1,13 +1,13 @@
 ---
 title: "Modify a configuration data schema  | MicrosoftDocs"
 description: Modify a configuration data schema
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/26/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

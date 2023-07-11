@@ -1,12 +1,12 @@
 ---
 title: "Enable accessible email flow | MicrosoftDocs"
 description: Enable accessible email flow
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

@@ -1,19 +1,15 @@
 ---
 title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/26/2022
-ms.subservice: admin
+ms.date: 07/10/2023
 author: ChrisGarty
 ms.author: cgarty
 ms.reviewer: sericks
-search.audienceType: 
-  - admin
 ---
 # Copy an environment
 
-You can use Copy environment in the Microsoft Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use the **Copy** option in the Microsoft Power Platform admin center to copy data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![Copy menu.](media/copy-menu.png "Copy menu")
@@ -23,7 +19,7 @@ You can use Copy environment in the Microsoft Power Platform admin center to cop
 >   :::image type="content" source="media/copy-environment-no-target.png" alt-text="No target for copying environment.":::
 > - You can only copy to an environment in the same tenant and region.
 > - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) might not be part of the copy. You should validate your apps post copy.
-> - You can't copy from or to a default type environment.
+> - You can't copy from or to a default or trial type environment.
 > - Copy and restore operations can take up to 8 hours unless a lot of data, including audit data, needs to be copied or restored, in which case they could take up to 24 hours.
   
 ## Copy over everything
@@ -102,30 +98,31 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 | DocumentIndex | ProductPriceLevel | ChannelPropertyGroup |
 | DuplicateRecord | ProductSalesLiterature | DynamicPropertyAssociation |
 | Email | ProductSubstitute | DynamicPropertyInstance |
-| EmailHash | QuarterlyFiscalCalendar | DynamicPropertyOptionSetItem |
-| EmailSearch | QueueItem | Position |
-| Entitlement | Quote | ChannelProperty |
-| EntitlementChannel | QuoteClose | RollupJob |
-| EntitlementContacts | QuoteDetail | SLAKPIInstance |
-| EntitlementProducts | RecurrenceRule | SystemUserManagerMap |
-| EntitlementTemplate | TextAnalyticsEntityMapping | SystemUserSyncMappingProfiles |
-| EntitlementTemplateChannel | RecurringAppointmentMaster | OfficeGraphDocument |
-| EntitlementTemplateProducts | RelationshipRole | SimilarityRule |
-| ExchangeSyncIdMapping | RelationshipRoleMap | BookableResource |
-| BookableResourceBookingExchangeSyncIdMapping | ReplicationBacklog | BookableResourceGroup |
-| ExternalParty | SalesLiterature | BookableResourceBooking |
-| ExternalPartyItem | SalesLiteratureItem | BookableResourceBookingHeader |
-| Fax | SalesOrder | BookableResourceCategory |
-| FixedMonthlyFiscalCalendar | SalesOrderDetail | BookableResourceCharacteristic |
-| Goal | SdkMessageProcessingStepSecureConfig | BookableResourceCategoryAssn |
-| GoalRollupQuery | SemiAnnualFiscalCalendar | Characteristic |
-| Import | Service | RatingValue |
-| ImportData | ServiceAppointment | RatingModel |
-| ImportFile | ServiceContractContacts | BookingStatus |
-| ImportLog | SharePointData | RecommendedDocument |
-| Incident | SharePointDocument | EmailSignature |
-| IncidentResolution | SharePointDocumentLocation | UserSearchFacet |
-| IntegrationStatus | SharePointSite | GlobalSearchConfiguration |
+| Email Template | QuarterlyFiscalCalendar | DynamicPropertyOptionSetItem |
+| EmailHash  | QueueItem | Position |
+| EmailSearch | Quote | ChannelProperty |
+| Entitlement | QuoteClose | RollupJob |
+| EntitlementChannel | QuoteDetail | SLAKPIInstance |
+| EntitlementContacts  | RecurrenceRule | SystemUserManagerMap |
+| EntitlementProducts | TextAnalyticsEntityMapping | SystemUserSyncMappingProfiles |
+| EntitlementTemplate | RecurringAppointmentMaster | OfficeGraphDocument |
+| EntitlementTemplateChannel | RelationshipRole | SimilarityRule |
+| EntitlementTemplateProducts | RelationshipRoleMap | BookableResource |
+| ExchangeSyncIdMapping | ReplicationBacklog | BookableResourceGroup |
+| BookableResourceBookingExchangeSyncIdMapping | SalesLiterature | BookableResourceBooking |
+| ExternalParty | SalesLiteratureItem | BookableResourceBookingHeader |
+| ExternalPartyItem | SalesOrder | BookableResourceCategory |
+| Fax | SalesOrderDetail | BookableResourceCharacteristic |
+| FixedMonthlyFiscalCalendar | SdkMessageProcessingStepSecureConfig | BookableResourceCategoryAssn |
+| Goal | SemiAnnualFiscalCalendar | Characteristic |
+| GoalRollupQuery | Service | RatingValue |
+| Import | ServiceAppointment | RatingModel |
+| ImportData | ServiceContractContacts | BookingStatus |
+| ImportFile | SharePointData | RecommendedDocument |
+| ImportLog | SharePointDocument | EmailSignature |
+| Incident | SharePointDocumentLocation | UserSearchFacet |
+| IncidentResolution | SharePointSite | GlobalSearchConfiguration |
+| IntegrationStatus | SLA | | 
 
 ## Copy an environment
   

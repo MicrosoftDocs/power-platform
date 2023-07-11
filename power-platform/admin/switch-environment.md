@@ -1,13 +1,13 @@
 ---
 title: "Change environment type | MicrosoftDocs"
 description: Change the environment type
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/04/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

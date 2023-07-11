@@ -4,7 +4,7 @@ description: Invite users with Azure Active Directory B2B collaboration
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/15/2022
-author: jimholtz
+author: sericks007
 ms.subservice: admin
 ms.author: kvivek
 ms.reviewer: kvivek
@@ -110,9 +110,6 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
 6. Click **Select**, and then click **Assign**.  
   
    Next, assign the invited users with appropriate security roles for the environment so they can access it. See [Create users](create-users.md).  
-  
-## Approve email or enable mailbox (not supported)  
- Since server-side synchronization is not supported, System admins cannot approve an invited email address or mailbox since emails cannot be synced from the invited user’s [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)].  
   
 ## Notify your invited users  
  To complete the user invitation, notify your invited users and provide them with the URL for the environment they are invited to (for example, https://contoso.crm.dynamics.com).  
