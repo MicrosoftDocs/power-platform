@@ -1,18 +1,18 @@
 ---
-title: "Transparency note for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform"
-description: "The transparency note describes the optional data sharing setting for Copilot AI features in Dynamics 365 and Power Platform and how Microsoft responsibly uses your data."
+title: "FAQs for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform"
+description: "These FAQs describes the optional data sharing setting for Copilot AI features in Dynamics 365 and Power Platform and how Microsoft responsibly uses your data."
 author: amishastri 
 ms.date: 06/29/2023
 ms.custom: 
-  - transparency-note
+  - responsible-ai-faqs
 ms.topic: article
 ms.author: amishastri
 ms.reviewer: kvivek
 ---
 
-# Transparency note for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform
+# FAQs for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform
 
-This transparency note describes information related to optional data sharing to improve Dynamics 365 Copilot and Power Platform Copilot AI features and how Microsoft responsibly uses your data.
+This article describes information related to optional data sharing to improve Dynamics 365 Copilot and Power Platform Copilot AI features and how Microsoft responsibly uses your data.
 
 ## What is data sharing for Copilot AI features?
 
@@ -43,7 +43,7 @@ Your data can only be accessed by Microsoft personnel with elevated access permi
 
 ## What about data privacy?
 
-All data is handled as per the Copilot data security and privacy guidelines explained in [Transparency note for Copilot data security and privacy in Microsoft Power Platform](transparency-note-copilot-data-security-privacy.md).
+All data is handled as per the Copilot data security and privacy guidelines explained in [FAQs for Copilot data security and privacy in Microsoft Power Platform](faqs-copilot-data-security-privacy.md).
 
 ## What about Customer Lockbox?
 
@@ -52,7 +52,7 @@ All data is handled as per the Copilot data security and privacy guidelines expl
 ### Related content
 
 [Manage tenant settings](/power-platform/admin/tenant-settings)<br/>
-[Transparency notes for Microsoft Power Platform](transparency-note-overview.md)<br/>
-[Transparency notes for Dynamics 365](/dynamics365/transparency-note-overview)
+[FAQs for Microsoft Power Platform](responsible-ai-overview.md)<br/>
+[FAQs for Dynamics 365](/dynamics365/transparency-note-overview)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

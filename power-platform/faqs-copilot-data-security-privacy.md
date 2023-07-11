@@ -1,16 +1,16 @@
 ---
-title: "Transparency note for Copilot data security and privacy in Microsoft Power Platform"
-description: "The transparency note discusses Copilot data security and privacy in Power Platform and how Copilot responsibly uses AI capabilities."
+title: "FAQs for Copilot data security and privacy in Microsoft Power Platform"
+description: "This FAQs discusses Copilot data security and privacy in Power Platform and how Copilot responsibly uses AI capabilities."
 author: KumarVivek 
 ms.date: 05/23/2023
 ms.custom: 
-  - transparency-note
+  - responsible-ai-faqs
 ms.topic: article
 ms.author: waltsun
 ms.reviewer: kvivek
 ---
 
-# Transparency note for Copilot data security and privacy in Microsoft Power Platform
+# FAQs for Copilot data security and privacy in Microsoft Power Platform
 
 [!INCLUDE [copilot-data-security-privacy](~/../shared-content/shared/transparency-notes-includes/copilot-data-security-privacy.md)]
 
