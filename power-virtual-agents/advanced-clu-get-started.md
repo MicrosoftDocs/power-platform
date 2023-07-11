@@ -6,7 +6,7 @@ ms.date: 7/11/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-ms.reviewer" peterswimm
+ms.reviewer: peterswimm
 manager: leeclontz
 ms.custom: "advanced-authoring, CLU, ceX"
 ms.service: power-virtual-agents
