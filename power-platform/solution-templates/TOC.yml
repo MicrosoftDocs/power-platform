@@ -44,6 +44,8 @@
       href: finance/sap-procurement/use/requisition-management.md
     - name: Purchase orders management
       href: finance/sap-procurement/use/purchase-order-management.md
+    - name: Goods receipt management
+      href: finance/sap-procurement/use/goods-receipt-management.md
   - name: FAQs
     href: finance/sap-procurement/faqs.md
 - name: Human Resources - Employee Kudos
