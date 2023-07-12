@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder"
 ms.topic: conceptual
-ms.date: 06/27/2023
+ms.date: 07/12/2023
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -524,12 +524,6 @@ Users without an existing Power Apps or Power Automate license can access AI Bui
 Learn more:
 - [How do pay-as-you-go meters work?](/power-platform/admin/pay-as-you-go-meters)
 - [Frequently asked questions](/power-platform/admin/pay-as-you-go-issues-faq#frequently-asked-questions)
-
-## Promotions and limited-time offers
-What content goes here???
-
-## License transitions
-What content goes here???
 
 ## Add-ons
 
