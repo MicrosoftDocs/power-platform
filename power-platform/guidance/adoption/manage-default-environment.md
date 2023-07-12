@@ -3,7 +3,7 @@ title: Manage the default environment
 description: Learn how to manage the default environment in Microsoft Power Platform.
 author: rranjit83
 ms.author: rranjit
-ms.reviewer: matp
+ms.reviewer: sericks
 ms.topic: how-to
 ms.date: 07/12/2023
 ms.custom: bap-template
