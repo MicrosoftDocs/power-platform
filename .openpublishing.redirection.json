@@ -611,6 +611,21 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "power-platform/transparency-note-copilot-data-security-privacy.md",
+      "redirect_url": "/power-platform/faqs-copilot-data-security-privacy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/transparency-note-copilot-data-sharing.md",
+      "redirect_url": "/power-platform/faqs-copilot-data-sharing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/transparency-note-overview.md",
+      "redirect_url": "/power-platform/responsible-ai-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/admin-powerapps-enterprise-deployment.md",
       "redirect_url": "https://aka.ms/powerappsadminwhitepaper",
       "redirect_document_id": "false"
