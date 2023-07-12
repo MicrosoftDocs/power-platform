@@ -30,13 +30,13 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- Sign in with an account that has at least OC_Admin and Bot Author role roles.
+- Sign in with an account that has at least OC_Admin and Bot Author roles.
 - Have a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 - Your bot and Omnichannel for Customer Service must be in the same environment.
-- For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
+- For end-to-end capabilities to work as expected, you must [publish](./publication-fundamentals-publish-channels.md) your bot.
 
 > [!WARNING]
-> Power Virtual Agents bots with names that are longer than 30 characters will fail to connect when following the instructions in this topic. Ensure your bot's name contains less than 30 characters before proceeding.
+> Power Virtual Agents bots with names that are longer than 30 characters will fail to connect when you follow the instructions in this topic. Ensure your bot's name contains less than 30 characters before you proceed.
 
 ## Connect your bot to Omnichannel for Customer Service
 
@@ -63,13 +63,13 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 
 ### Bots with Application Lifecycle Management
 
-If you've [set up Application Lifecycle Management (ALM) for your bots](/power-platform/alm/basics-alm), and are exporting and importing bots between [development (unmanaged) and test or production (managed) environments](/power-platform/alm/basics-alm#types-of-environments-used-in-alm), you might see a message that we can't determine if Omnichannel for Customer Service integration is enabled for the environment.
+Suppose you've [set up Application Lifecycle Management (ALM) for your bots](/power-platform/alm/basics-alm), and are exporting and importing bots between [development (unmanaged) and test or production (managed) environments](/power-platform/alm/basics-alm#types-of-environments-used-in-alm). In that case, you might see a message that we can't determine if Omnichannel for Customer Service integration is enabled for the environment.
 
 :::image type="content" source="./media/configuration-hand-off-omnichannel/transfer-managed-bot.png" alt-text="Message that we can't determine if this bot has omnichannel capabilities enabled or disabled.":::
 
-If the bot you exported has omnichannel capabilities enabled, you can ignore this message. The bot will still work properly. The message will disappear after you export the latest version of your bot from your development environment, and then import it into a targeted test or production environment with managed bots.
+If the bot you exported has omnichannel capabilities enabled, you can ignore this message. The bot will still work properly. The message will disappear after you export the latest version of your bot from your development environment and then import it into a targeted test or production environment with managed bots.
 
-If you continue to see the message after exporting and importing the latest version of your managed bot, make sure to remove any unmanaged layers:
+If you continue to see the message after you export and import the latest version of your managed bot, make sure to remove any unmanaged layers:
 
 1. Sign in to Power Apps and select the managed bot's environment.  
 
@@ -87,9 +87,9 @@ If your bot doesn't have omnichannel capabilities enabled, the message will alwa
 
 ## Configure inactivity timeout to close conversation
 
-Dynamics 365 Customer Service expects a conversation to end after a period of inactivity. This is important to ensure the supervisor view displays the correct ongoing conversations and manage agent loads and metrics correctly. When you create a bot from Dynamics 365 Customer Service, the default bot content includes two topics: **Session Timeout Reminder** and **Session Timeout**. These topics use the [Inactivity trigger](authoring-triggers.md?tabs=preview#inactivity) to first remind the user, and then close the convesation after a set inactivity timeout value, which can be configured in the topic. But if you create the bot from the Power Virtual Agents portal, those topics will not be included in the bot. To create them, follow the steps below:
+Dynamics 365 Customer Service expects a conversation to end after a period of inactivity. This feature is important to ensure the supervisor view displays the correct ongoing conversations and manages agent loads and metrics correctly. When you create a bot from Dynamics 365 Customer Service, the default bot content includes two topics: **Session Timeout Reminder** and **Session Timeout**. These topics use the [Inactivity trigger](authoring-triggers.md?tabs=preview#inactivity) to first remind the user, and then close the convesation after a set inactivity timeout value, which can be configured in the topic. But if you create the bot from the Power Virtual Agents portal, those topics won't be included in the bot. To create them, follow the steps below:
 
-### Creating a Session Timeout topic
+### Create a Session Timeout topic
 
 1. From the left navigation, select **Topics**.
 
@@ -105,25 +105,25 @@ Dynamics 365 Customer Service expects a conversation to end after a period of in
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-Inactivity-Trigger.png" alt-text="Configure inactivity trigger":::
 
-1. Select a **Value** from the dropdown, or enter an arbitrary value (in seconds) using a **Formula** entry. This is the amount of inactive time it will take for the topic to trigger.
+1. Select a **Value** from the dropdown, or enter an arbitrary value (in seconds) using a **Formula** entry. This value is the amount of inactive time it will take for the topic to trigger.
 
-1. Select which channel it applies to by using the **Condition** option. For OmniChannel, click on **Select a varable** under the **Condition** block, select the **System** tab, and **Activity.Channel**. 
+1. Select which channel it applies to by using the **Condition** option. For OmniChannel, click on **Select a variable** under the **Condition** block, select the **System** tab, and **Activity.Channel**. 
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-Inactivity-Condition.png" alt-text="Change inactivity trigger condition":::
 
 1. Select **Omnichannel** from the dropdown.
 
-1. Finally add a message, and at the end, add an End Conversation node so the conversation ends. You can do this by clikcing on the **(+)** sign, selecting **Topic management** and **End conversation**.
+1. Finally, add a message, and at the end, add an End Conversation node so the conversation ends. Click on the **(+)** sign, select **Topic management**, and then select **End conversation**.
 
-Finally save and publish your bot.
+Finally, save and publish your bot.
 
 ## Manage your bot's omnichannel capabilities
 
-Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect your bot, and find the link to go to the Omnichannel for Customer Service admin center to view the connection details.
+Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect your bot and find the link to go to the Omnichannel for Customer Service admin center to view the connection details.
 
 ### Disconnect your bot from Omnichannel for Customer Service or disable the connection
 
-If you select **Disconnect**, the application user that represents the bot in your Omnichannel for Customer Service instance is disabled. Your bot is effectively disconnected from the Omnichannel for Customer Service environment. Your bot will stop receiving any traffic from your Omnichannel for Customer Service instance.
+If you select **Disconnect**, the application user that represents the bot in your Omnichannel for Customer Service instance is disabled. Your bot effectively disconnects from the Omnichannel for Customer Service environment. Your bot will stop receiving any traffic from your Omnichannel for Customer Service instance.
 
 :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-disconnect.png" alt-text="Screenshot of OmniChannel pane with a disconnect button.":::
 
@@ -179,7 +179,7 @@ Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.
 
 1. Under **See the environment this bot is connected to**, select the environment where you have Omnichannel for Customer Service integration turned on. If your bot and Omnichannel for Customer Service are in different environments, Analytics for Omnichannel for Customer Service won't work for your bot.
 
-    If you haven't set up Omnichannel for Customer Service in that environment, you'll see a message inviting you to begin a trial.
+    If you haven't set up Omnichannel for Customer Service in that environment, you'll see a message that invites you to begin a trial.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/transfer-no-oc.png" alt-text="Message that says you haven't set up Omnichannel for Customer Service integration in this environment.":::
 
@@ -216,7 +216,7 @@ If you've [set up Application Lifecycle Management (ALM) for your bots](/power-p
 
 If the bot you exported has omnichannel capabilities enabled, you can ignore this message. The bot will still work properly. The message will disappear after you export the latest version of your bot from your development environment, and then import it into a targeted test or production environment with managed bots.
 
-If you continue to see the message after exporting and importing the latest version of your managed bot, make sure to remove any unmanaged layers:
+If you continue to see the message after you export and import the latest version of your managed bot, make sure to remove any unmanaged layers:
 
 1. Sign in to Power Apps and select the managed bot's environment.  
 
@@ -261,7 +261,7 @@ Select **Enable voice** to turn voice capabilities on or off for the entire bot,
 :::image type="content" source="./media/configuration-hand-off-omnichannel/voice-toggle.png" alt-text="Screenshot of the Power Virtual Agents Omnichannel section with the Enable voice toggle highlighted.":::
 
 > [!IMPORTANT]
-> If a bot is connected to an Omnichannel voice workstream or queue and taking calls, and the voice is disabled, the calls will start to fail. Ensure that the bot is disconnected from Omnichannel workstreams or queues before disabling voice in the Power Virtual Agents configuration.
+> If a bot is connected to an Omnichannel voice workstream or queue and takes calls, and the voice is disabled, the calls will start to fail. Ensure that the bot is disconnected from Omnichannel workstreams or queues before you disable voice in the Power Virtual Agents configuration.
 
 
 ### Set survey consent
@@ -370,17 +370,17 @@ The following extensions aren't required to hand-off to Omnichannel for Customer
 
 Typically, the extensions are automatically installed in your Omnichannel for Customer Service environment. However, if the environment that you connected Omnichannel for Customer Service to isn't the same environment your bot is in, you'll need to manually install the extensions.
 
-### For both text and voice hand-off
+### Text and voice hand-off
 
-Install the following extensions in this order:
+For both text and voice hand-off, install the following extensions in this order:
 
 1. [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension)
 1. [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension)
 1. [Omnichannel Voice Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelvoicepvaextension)
 
-### For only text (messaging) hand-off
+### Text (messaging) hand-off
 
-Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
+For only Text (messaging) hand-off, install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
 
 If you still see the following warning after installing the Omnichannel Power Virtual Agent extension, and you don't need voice capabilities, you can safely ignore it.
 
