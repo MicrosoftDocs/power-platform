@@ -32,13 +32,17 @@ There are three options for viewing a goods receipt:
 
 ### Select a goods receipt
 
-From the _Select recent goods receipt_ drop down list, you can see a list of previous goods receipts that you have interacted with. You can choose one from the list, and it will load the data for that goods receipt.
+From the _Select recent goods receipt_ drop down list, you can see a list of previous goods receipts that you have interacted with. You can choose one from the list, and it loads the data for that goods receipt.
 
 ### Search for a goods receipt
 
-If you have not interacted with the goods receipt, and you don't know the exact number, you can search for a goods receipt. Click the funnel icon, shown below in the red box.
+If you have not interacted with the goods receipt, and you don't know the exact number, you can search for a goods receipt. Select the **funnel** icon to open the goods receipt search screen.
 
-This will open the goods receipt search screen. Here you can search by any individual field or a combination of _Vendor_, _Purchase order_, Movement type_and_Posting date range_. After entering your desired selection criteria, click the **Search** button and your results will be displayed. Select the goods receipt you would like to see, and it will be displayed on the goods receipt overview screen.
+The goods receipt search screen allows you to search by any individual field or a combination of _Vendor_, _Purchase order_, Movement type_and_Posting date range_.
+
+1. Enter your desired selection criteria.
+1. Select the **Search** button to display your results.
+1. Select the _goods receipt_ you want to see displayed on the overview screen.
 
 ### Enter a goods receipt
 
@@ -57,7 +61,7 @@ If you know the goods receipt number of the material document you want to view, 
 
 ## Field Mappings
 
-Field mappings from requisition screen to function module.
+The field mappings are from requisition screen to function module.
 
 ### BAPI_GOODSMVT_CREATE Mapping
 
