@@ -13,14 +13,25 @@ ms.date: 06/27/2023
 ---
 
 # View information about plug-in steps
+A _plug-in_ is a custom event handler that executes in response to a specific event raised during processing of a Microsoft Dataverse data operation. This article explains common tasks related to plug-ins that you may need to complete. For more information about plug-ins, see [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins).
 
+## View all plug-in steps for an environment
+To view all plug-in steps for an environemnt, complete the following steps in the maker portal.
+
+1. Sign in to [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Select **Solutions**.
+1. Select **Default Solution**.
+1. Select **Objects** > **Plug-in steps**.
+
+## View plug-in details
 If you have installed plug-ins in an environment, you can view plug-in details in Power Platform admin center. Follow these steps to view plug-in information such as the plug-in name, status, the user under whose identity the plug-in is executing, user license status, and more. You can use the information displayed in this experience to identify common issues related to plugin execution.
 
 > [!Note]
 > At this time, only plug-ins of the System User entity type are supported.
 
-View plug-in details
-1. In the Power Platform admin center, select an environment.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments** in the navigation pane.
+1. Select an environment.
 1. Select **Settings** > **Users + permissions** > **Plug-ins**.
 1. View information about all plug-ins (System User Entity type only) installed in the environment.
 
