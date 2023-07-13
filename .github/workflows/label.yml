@@ -9,14 +9,12 @@ name: Labeler
 on: [pull_request_target]
 
 jobs:
-  PVA:
-  - power-virtual-agents/**
-
-    runs-on: ubuntu-latest
+  triage:
     permissions:
       contents: read
       pull-requests: write
 
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/labeler@v4
       with:
