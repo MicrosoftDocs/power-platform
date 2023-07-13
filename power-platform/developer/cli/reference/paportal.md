@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 6/15/2023
+ms.date: 7/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac paportal
 
-Commands for working with Power Pages website
+Commands for working with Power Pages website.
 
 [!INCLUDE [paportal-intro](includes/paportal-intro.md)]
 
@@ -26,30 +26,30 @@ Commands for working with Power Pages website
 
 |Command|Description|
 |---------|---------|
-|[pac paportal download](#pac-paportal-download)|Download Power Pages website content from the current Dataverse environment|
-|[pac paportal list](#pac-paportal-list)|List all Power Pages websites from the current Dataverse environment|
-|[pac paportal upload](#pac-paportal-upload)|Upload Power Pages website content to current Dataverse environment|
+|[pac paportal download](#pac-paportal-download)|Download Power Pages website content from the current Dataverse environment.|
+|[pac paportal list](#pac-paportal-list)|List all Power Pages websites from the current Dataverse environment.|
+|[pac paportal upload](#pac-paportal-upload)|Upload Power Pages website content to current Dataverse environment.|
 
 
 ## pac paportal download
 
-Download Power Pages website content from the current Dataverse environment
+Download Power Pages website content from the current Dataverse environment.
 
 [!INCLUDE [paportal-download-intro](includes/paportal-download-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for paportal download
 
 #### `--path` `-p`
 
-Path where the Power Pages website content will be downloaded
+Path where the Power Pages website content is downloaded
 
 #### `--webSiteId` `-id`
 
 Power Pages website ID to download
 
 
-### Optional Parameters
+### Optional Parameters for paportal download
 
 #### `--excludeEntities` `-xe`
 
@@ -57,52 +57,52 @@ Comma separated list of entity logical names to exclude downloading
 
 #### `--includeEntities` `-ie`
 
-Download only the entities specified for this argument in comma separated entity logical name
+Download only the entities specified for this argument using comma separated entity logical names.
 
 #### `--modelVersion` `-mv`
 
-Power Pages website data model version to download
+Power Pages website data model version to download.
 
 #### `--overwrite` `-o`
 
 Power Pages website content to overwrite
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [paportal-download-remarks](includes/paportal-download-remarks.md)]
 
 ## pac paportal list
 
-List all Power Pages websites from the current Dataverse environment
+List all Power Pages websites from the current Dataverse environment.
 
 [!INCLUDE [paportal-list-intro](includes/paportal-list-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for paportal list
 
 #### `--verbose` `-v`
 
-Enables verbose mode and furbishes additional details.
+Enables verbose mode to provide more details.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [paportal-list-remarks](includes/paportal-list-remarks.md)]
 
 ## pac paportal upload
 
-Upload Power Pages website content to current Dataverse environment
+Upload Power Pages website content to current Dataverse environment.
 
 [!INCLUDE [paportal-upload-intro](includes/paportal-upload-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for paportal upload
 
 #### `--path` `-p`
 
-Path from where the Power Pages website content will be uploaded
+Path from where the Power Pages website content is uploaded.
 
 
-### Optional Parameters
+### Optional Parameters for paportal upload
 
 #### `--deploymentProfile` `-dp`
 
@@ -110,13 +110,13 @@ Deployment profile name to be used. Defaults to 'default'
 
 #### `--forceUploadAll` `-f`
 
-Upload all Power Pages website content to the current Dataverse environment
+Upload all Power Pages website content to the current Dataverse environment.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--modelVersion` `-mv`
 
-Power Pages website data model version to upload
+Power Pages website data model version to upload.
 
 [!INCLUDE [paportal-upload-remarks](includes/paportal-upload-remarks.md)]
 
