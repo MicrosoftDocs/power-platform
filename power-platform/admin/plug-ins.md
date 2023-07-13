@@ -1,5 +1,5 @@
 ---
-title: View information about plug-ins
+title: View information about plug-in steps
 description: Learn how to view information about plug-ins.
 ms.subservice: admin
 author: sericks007
@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 06/27/2023
 ---
 
-# View information about plug-ins
+# View information about plug-in steps
 
 If you have installed plug-ins in an environment, you can view plug-in details in Power Platform admin center. Follow these steps to view plug-in information such as the plug-in name, status, the user under whose identity the plug-in is executing, user license status, and more. You can use the information displayed in this experience to identify common issues related to plugin execution.
 
