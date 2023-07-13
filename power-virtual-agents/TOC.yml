@@ -239,3 +239,12 @@
       href: gdpr-delete.md
     - name: Requests to discover data
       href: gdpr-discovery.md
+- name: Responsible AI
+  items:
+    - name: Overview
+      href: responsible-ai-overview.md
+    - name: FAQ for generative answers
+      href: faqs-generative-answers.md
+    - name: FAQ for copilot
+      href: faqs-copilot.md
+- 

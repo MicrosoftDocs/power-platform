@@ -12,3 +12,9 @@ Capability name | Description | Documentation | Training, model, and usage notes
 -- | -- | -- | --
 Generative answers | Use generative answers in your bot to automatically create responses to a bot user's questions from existing (internal or external) knowledge sources, without needing to manually create topics. | [Generative answers documentations](nlu-boost-conversations.md) | [AI response generation transparency FAQs](transparency-faq-generative-answers.md)
 Generative answers | Use generative answers in your bot to automatically create responses to a bot user's questions from existing (internal or external) knowledge sources, without needing to manually create topics. | [Generative answers documentations](nlu-boost-conversations.md) | [AI response generation transparency FAQs](transparency-faq-generative-answers.md)
+
+
+
+## AI-driven features in this app
+
+This app contains a growing list of AI-driven features. To learn about the capabilities and impact of specific features, select a feature name from the list.
