@@ -13,10 +13,12 @@ ms.date: 06/27/2023
 ---
 
 # View information about plug-in steps
-A _plug-in_ is a custom event handler that executes in response to a specific event raised during processing of a Microsoft Dataverse data operation. This article explains common tasks related to plug-ins that you may need to complete. For more information about plug-ins, see [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins).
+_Plug-ins_ contain code that enable server-side customization of Microsoft Dataverse data operations. Each plug-in is registered to execute at a specific point within that operation, which is called a step. You may need to find which plug-in steps are registered for specific events and you may need to temporarily disable plug-ins steps to avoid issues caused by the plug-in.
+
+This article describes how you can view information about plug-ins and disable and enable them using the Power Platform Admin Center or Power Apps. You can also perform these actions by installing and using the [Plug-in Registration tool](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/download-tools-nuget) (PRT).
 
 ## View all plug-in steps for an environment
-To view all plug-in steps for an environemnt, complete the following steps in the maker portal.
+To view all plug-in steps for an environemnt, complete the following steps in the Power Apps.
 
 1. Sign in to [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 1. Select **Solutions**.
