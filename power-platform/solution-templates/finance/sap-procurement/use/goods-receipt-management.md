@@ -28,15 +28,15 @@ There are three options for viewing a goods receipt:
 
 - You can select a recent goods receipt that you have interacted with.
 - You can search for a goods receipt based on vendor, purchase order, and date range.
-- You can enter in the goods receipt number, if you know it.
+- You can enter in the goods receipt number, if known.
 
 ### Select a goods receipt
 
-From the _Select recent goods receipt_ drop down list, you can see a list of previous goods receipts that you have interacted with. You can choose one from the list, and it loads the data for that goods receipt.
+From the _Select recent goods receipt_ drop-down list, you can see a list of previous goods receipts that you have interacted with. You can choose one from the list, and it loads the data for that goods receipt.
 
 ### Search for a goods receipt
 
-If you have not interacted with the goods receipt, and you don't know the exact number, you can search for a goods receipt. Select the **funnel** icon to open the goods receipt search screen.
+If you haven't interacted with the goods receipt, and you don't know the exact number, you can search for a goods receipt. Select the **funnel** icon to open the goods receipt search screen.
 
 The goods receipt search screen allows you to search by any individual field or a combination of _Vendor_, _Purchase order_, Movement type_and_Posting date range_.
 
@@ -50,7 +50,7 @@ If you know the goods receipt number of the material document you want to view, 
 
 ## Create goods receipt
 
-1. Select the **Create** button seen in the red box below.
+1. Select the **Create** button.
 1. Enter a _purchase order number_.
 1. Select the **right-pointing arrow** next to the purchase order number to view:
 
