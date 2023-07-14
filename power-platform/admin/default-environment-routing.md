@@ -54,6 +54,8 @@ During this preview, you must get your Power Platform **tenant ID** on the allow
 1. Apply for the [private preview](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR5ggzcJ5zOhCu7m4ZkreWStUMk1INzNPWEdYTVQxNThZVkM4TFpWMTU5US4u). 
 1. After you receive confirmation of having your tenant ID added to the allow-list for the private preview, login to Power Platform admin center as an admin and make sure your default enviornment is a Managed Environment.
 
+  ![Make sure your default environment is a Managed Environment.](media/default-managed-environment.png)
+
 1. Make sure the **Developer environment assignment** setting is enabled for **Everyone**. You can check / change this tenant level settings from PPAC (See below)
 
 1. Run the following commands in Power Shell.
