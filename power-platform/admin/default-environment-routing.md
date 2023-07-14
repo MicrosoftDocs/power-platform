@@ -33,11 +33,11 @@ Default environment routing is a tenant-level, admin setting that:
 
 -   Requires the default environment to be a [Managed Environment](managed-environment-overview.md).
 
-## Enabling the Default environment routing setting
+## Enable the Default environment routing setting
 
 The **Default environment routing** setting is disabled by default and must be enabled using the command line tool or PowerShell.
 
-## Before you begin
+### Before you begin
 
 Before you enable the **Default environment routing** feature, consider the following effects:
 
@@ -45,7 +45,7 @@ Before you enable the **Default environment routing** feature, consider the foll
 
 -   New makers will be assigned the admin role in their newly created developer environments.
 
-## Enable the feature
+### Enable the feature
 
 During this preview, you must get your Power Platform **tenant ID** on the allow-list for using this feature. To see your tenant ID, go to the Power Platform admin center > **Settings** > **Session details**, and copy your tenant ID from the **Session details** window.
 
@@ -62,7 +62,6 @@ During this preview, you must get your Power Platform **tenant ID** on the allow
 
 1. Run the following commands in Power Shell.
 
-Run the following commands in Power Shell.
 
 //login to your tenant account
 
