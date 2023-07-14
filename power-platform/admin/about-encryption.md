@@ -4,7 +4,7 @@ description: "Learn about data encryption in Microsoft Dataverse."
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - paulliew
   - denise-msft
@@ -30,20 +30,18 @@ Dynamics 365 uses heterogenous storage (Dataverse) to store the data. The data i
 - Azure Blob storage for binary data, such as images and documents
 - Azure Search for search indexing
 - Microsoft 365 Activity Log and Azure Cosmos DB for audit data
+- Azure Data Lake for analytics
 
 Dataverse databases are using SQL TDE (Transparent Data Encryption, compliant with FIPS 140-2) to provide real-time I/O encryption and decryption of the data and log files for data encryption at-rest. [Azure Storage Encryption](/azure/storage/common/storage-service-encryption) is used for data at rest stored in the Azure Blob Storage. These are encrypted and decrypted transparently using 256-bit AES encryption compliant with FIPS 140-2.
 
-By default, Microsoft stores and manages the database encryption key for your environments. As of now, given the heterogenous storage, the customer managed key feature is available only for the Azure SQL database that stores transactional data. The File/Document (blob storage) and Azure Data Lake encryption by customer managed key is in the roadmap for future releases. The manage keys feature in the Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the tenant. Given the heterogenous type of storage, Customer Managed Keys are limited to encrypt the Azure SQL Database storing transactional data only. File, Log and Search encryption will remain managed by Microsoft.
+By default, Microsoft stores and manages the database encryption key for your environments using Microsoft managed key. However, Power Platform provides customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key. The encryption key resides in your own Azure key vault which allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
 :::image type="content" source="media/encryption-data-at-rest.png" alt-text="Encryption of data at rest":::
 
-Administrators can provide their own encryption key using their own key generator hardware (HSM) or use our administrator tool to generate an encryption key. The key management feature supports both PFX and BYOK encryption files.
+Administrators can provide their own encryption key using their own key generator hardware (HSM) or use our Azure key vault to generate an encryption key. The key management feature takes the complexity out of encryption key management by using Azure Key Vault to securely store encryption keys. Azure Key Vault helps safeguard cryptographic keys and secrets used by cloud applications and services. Encryption keys must meet the following Azure Key Vault requirements:
 
-The key management feature takes the complexity out of encryption key management by using Azure Key Vault to securely store encryption keys. Azure Key Vault helps safeguard cryptographic keys and secrets used by cloud applications and services. The key management feature doesn't require that you have an Azure Key Vault subscription and for most situations there is no need to access encryption keys used for Dynamics 365 (Dataverse) within the vault. Encryption keys must meet the following Azure Key Vault requirements:
-
-1. Key file format of PFX or BYOK,
-2. 2048-bit RSA or RSA-HSM key type, and
-3. PFX encryption key are password protected.
+1. 2048-bit RSA 
+1. [HSM BYOK](https://learn.microsoft.com/azure/key-vault/keys/hsm-protected-keys)
 
 Administrators also can revert the encryption key back to a Microsoft managed key at any time.
 
