@@ -29,7 +29,7 @@ Default environment routing is a tenant-level, admin setting that:
 
 -   Requires that the **Developer environment assignment** setting is enabled for **Everyone**.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](media/image1.png)
+    ![The Developer environment assignment setting must be enabled for Everyone.](media/developer-environments-assignment-everyone.png)
 
 -   Requires the default environment to be a [Managed Environment](managed-environment-overview.md).
 
@@ -49,31 +49,27 @@ Before you enable the **Default environment routing** feature, consider the foll
 
 During this preview, you must get your Power Platform **tenant ID** on the allow-list for using this feature. To see your tenant ID, go to the Power Platform admin center > **Settings** > **Session details**, and copy your tenant ID from the **Session details** window.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image3.png)
+![You need the tenant ID from the Session details window.](media/session-details-window.png)
 
 1. Apply for the [private preview](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR5ggzcJ5zOhCu7m4ZkreWStUMk1INzNPWEdYTVQxNThZVkM4TFpWMTU5US4u). 
 1. After you receive confirmation of having your tenant ID added to the allow-list for the private preview, login to Power Platform admin center as an admin and make sure your default enviornment is a Managed Environment.
 
-  ![A screenshot of a computer Description automatically generated](media/image4.png)
-
 1. Make sure the **Developer environment assignment** setting is enabled for **Everyone**. You can check / change this tenant level settings from PPAC (See below)
-
-  ![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)
 
 1. Run the following commands in Power Shell.
 
-  1. Log in to your tenant account.
+    1. Log in to your tenant account.
 
     ```powershell
     $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
     ```
 
-  1. Retrieve and store your tenant setting in tenantSettings.
+    1. Retrieve and store your tenant setting in tenantSettings.
 
     ```powershell
     $tenantSettings = Get-TenantSettings  
     ```
-  1. Setup the enableDefaultEnvironmentRouting flag to true.
+    1. Setup the enableDefaultEnvironmentRouting flag to true.
 
     ```powershell
     $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
