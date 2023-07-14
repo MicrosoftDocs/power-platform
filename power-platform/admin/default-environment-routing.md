@@ -83,7 +83,7 @@ When trying to enable an environment routing tenant setting, keep the following 
 
 1.  If the **Developer environment assignments** property is set for only _specific admins_, the command fails and an error message is displayed. To change this, go to Power Platform admin center > **Tenant settings** -> **Developer environment assignments** and set it to **Everyone**.
 
-2.  If the tenant's default environment is not managed, the command fails and an error message is displayed. See [Enable or edit Managed Environments in the admin center](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center) for more information.
+2.  If the tenant's default environment isn't managed, the command fails and an error message is displayed. See [Enable or edit Managed Environments in the admin center](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center) for more information.
 
 ## Disable the feature
 
@@ -119,7 +119,7 @@ $tenantSettings.powerPlatform.governance
 
 ## If testing before June 18, 2023
 
-If makers are testing the functionality before June 18, 2023, they will need to append the flag, **?cdsCommon.enableNewHomePageExperience=false**, next to the [make.powerapps.com](https://make.powerapps.com)URL in order to display the legacy page and activate environment routing. Otherwise, if you are testing after Jun 18, this flag can be disregarded.
+If makers are testing the functionality before June 18, 2023, they must append the flag, **?cdsCommon.enableNewHomePageExperience=false**, next to the [make.powerapps.com](https://make.powerapps.com) URL in order to display the legacy page and activate environment routing. Otherwise, if you're testing after Jun 18, 2023, this flag can be disregarded.
 
 ![If testing this functionality before June 18, 2023, append flag to URL.](media/try-new-homepage.png)
 
@@ -152,7 +152,7 @@ Yes, makers can always switch to other environments.
 
 ### Will the developer environment impact my tenant DV quota?
 
-No, the developer environments should not impact your tenant DV quota.
+No, the developer environments don't impact your tenant DV quota.
 
 ### What happens if the developer environment creation fails?
 
