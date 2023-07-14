@@ -1,19 +1,19 @@
-title: Responsible AI FAQs for [Product]
-description: Responsible AI FAQs provide information about the AI technology used in [Product], along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: [Date]
+title: Responsible AI FAQs for Power Virtual Agents
+description: Responsible AI FAQs provide information about the AI technology used in Power Virtual Agents, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+ms.date: 7/13/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
-author: [Author]
-ms.author: [Author]
-ms.reviewer: [Reviewer]
+author: iaanw
+ms.author: iawilt
+ms.reviewer: iawilt
 ---
 
-# Responsible AI FAQs for [Product]
+# Responsible AI FAQs for Power Virtual Agents
 
 [!INCLUDE[faqs-overview](../includes/faqs-overview.md)]
 
 [!INCLUDE[faqs-feature](../includes/faqs-feature.md)]
 
-- [[Feature]]([Link])
-- [[Feature]]([Link])
+- [FAQ for generative answers](faqs-generative-answers.md)
+- [FAQ for copilot](faqs-copilot.md)
