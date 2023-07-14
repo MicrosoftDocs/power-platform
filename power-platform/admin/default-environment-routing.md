@@ -21,7 +21,7 @@ Unlike today, when the default environment routing admin setting is enabled and 
 
 They will have Dataverse available in their environment and their developer environment will be automatically a managed environment with the admin settings already pre-configured, like sharing limits, and solution checker. Admins will no longer need to worry that their makers working in the Default environment where other makers can step on each other work or storing sensitive data in a shared place.
 
-# Prerequisites
+## Prerequisites
 
 Default environment routing is a tenant level admin setting that:
 
@@ -35,7 +35,7 @@ Default environment routing is a tenant level admin setting that:
 
 ![A screenshot of a computer Description automatically generated](media/image2.png)
 
-# Enabling Default environment routing setting
+## Enabling Default environment routing setting
 
 The default environment routing setting is disabled by default and must be enabled using the Command Line tool / PowerShell.
 
@@ -123,7 +123,7 @@ $tenantSettings.powerPlatform.governance
 
 *policy : @{enableDesktopFlowDataPolicyManagement=False}*
 
-# Maker Experience
+## Maker Experience
 
 Please keep in mind that if the makers are testing the **<u>functionality before June 18<sup>th</sup></u> , they will need to append the following flag "*?cdsCommon.enableNewHomePageExperience=false*** "next to the Power Maker Portal page URL in order to display the **legacy maker portal homepage** and activate the environment routing; otherwise, if you are testing after Jun 18<sup>th</sup>, this flag can be disregarded.
 
@@ -133,47 +133,43 @@ Please keep in mind that if the makers are testing the **<u>functionality before
 
 **Example URL with the maker home page flag** <https://make.powerapps.com/?cdsCommon.enableNewHomePageExperience=false>
 
-# Preview disclaimer
-
-Preview features are features that aren't complete but are made available on a "preview" basis so customers can get early access and provide feedback. Preview features are not supported by Microsoft Support, may have limited or restricted functionality, aren't meant for production use, and may be available only in selected geographic areas.
-
-# Feedback / Issue reporting 
+## Feedback / Issue reporting 
 
 Please capture your session details and share them using the [following form](https://forms.office.com/r/ppXNGHD8RX) or send us an email to report any problems you come across or to share your feedback. You can capture the session details by clicking on the gear icon at the top right corner of your maker portal page session details and then copy the session details from the popup window.
 
 ![A screenshot of a computer Description automatically generated](media/image7.png)
 
-# FAQ
+## FAQ
 
-1. **Will the created developer environments be managed ?**
+### Will the created developer environments be managed?
 
 Yes, all the newly created developer environments will be managed by default.
 
-2. **What environment types are created when the default environment routing is enabled ?**
+### What environment types are created when the default environment routing is enabled?
 
 The created environments are developer environments.
 
-3. **What roles do the makers get assigned in the created developer environments?**
+### What roles do the makers get assigned in the created developer environments?
 
 The makers get assigned the admin security role in their created developer environments.
 
-4. **Can the new makers switch to the default environment or any other environment they have access after landing into their own developer environment using the environment picker ?**
+### Can the new makers switch to the default environment or any other environment they have access after landing into their own developer environment using the environment picker?
 
 Yes, makers can always switch to other environments after landing into their own environment.
 
-5. **Will the created Developer environment impact my tenant DV quota ?**
+### Will the created Developer environment impact my tenant DV quota?
 
 No, the developer environments should not impact your tenant DV quota.
 
-6. **What will happen if the developer environment creation fails ?**
+### What will happen if the developer environment creation fails?
 
 If some reason, the creation of the developer environment fails, makers will be automatically routed to the default environment.
 
-7. **What DLP policies will be applied for the newly created developer environment ?**
+### What DLP policies will be applied for the newly created developer environment?
 
 During the private preview, no specific DLP policies will be assigned to the developer environment. Accordingly, the developer environment will inherit existing tenant level DLP policies.
 
-8. **What are the preconfigured Managed Environment settings for the newly created developer environments ?**
+### What are the preconfigured Managed Environment settings for the newly created developer environments?
 
 All the newly created developer environments will have the following managed environment settings preconfigured:
 
@@ -189,22 +185,11 @@ Maker welcome message: Not established.
 
 ![A screenshot of a computer Description automatically generated with low confidence](media/image9.png)
 
-9. **Is the default environment routing also available for Power Automate, PVA, and Power Pages ?**
+### Is the default environment routing also available for Power Automate, PVA, and Power Pages?
 
 During the private preview, the default environment routing is limited to Power Apps only.
 
-10. **Do I need to be a Power Platfrom tenant admin to enable this feature ?**
+### Do I need to be a Power Platfrom tenant admin to enable this feature?
 
- Yes, you need to have a Power Platform tenant admin privilege to enable this feature in your tenant or you can ask your tenant admin to turn it on for you.
+Yes, you need to have a Power Platform tenant admin privilege to enable this feature in your tenant or you can ask your tenant admin to turn it on for you.
 
-# Copyright
-
-This document is provided "as-is". Information and views expressed in this document, including URL and other Internet web site references, may change without notice.
-
-Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
-
-This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal reference purposes. This document is confidential and proprietary to Microsoft. It is disclosed and can be used only pursuant to a non-disclosure agreement.
-
-© 2023 Microsoft. All rights reserved.
-
-Microsoft is the trademark of the Microsoft group of companies. All other trademarks are the property of their respective owners.
