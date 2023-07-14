@@ -15,61 +15,52 @@ search.audienceType:
 
 # Overview
 
-Default environment routing is a premium governance feature that allows Power Platform admins to automatically direct their **new makers** into their own personal developer environment when they visit the maker portal page for the first time (i.e., make.powerapps.com). Default environment routing will offer new makers a personal safe space to build with DATAVERSE without the fear of others' accessing their apps or data.
+Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. Default environment routing will offer new makers a personal, safe space to build with Microsoft Dataverse, without the fear of others' accessing their apps or data.
 
-Unlike today, when the default environment routing admin setting is enabled and a new maker visit the maker portal page for the first time, they will land into their own personal developer environment instead of the default environment. Personal developer environments will be makers' own personal "OneDrive" for personal productivity where they can start building apps and solutions in their own workspace. New makers will not need to learn about which environment to work in since this will all happen automatically.
+Unlike today, when the **Default environment routing** setting is enabled and a new maker visits [make.powerapps.com](https://make.powerapps.com) for the first time, the maker will land in their own, personal developer environment instead of the default environment. Personal, developer environments will be makers' own, personal [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity where they can start building apps and solutions in their own workspace. New makers won't need to learn about which environment to work in since this happens automatically.
 
-They will have Dataverse available in their environment and their developer environment will be automatically a managed environment with the admin settings already pre-configured, like sharing limits, and solution checker. Admins will no longer need to worry that their makers working in the Default environment where other makers can step on each other work or storing sensitive data in a shared place.
+Dataverse is available in personal, developer environments and these enviroments are Managed Environments with the admin settings already pre-configured, such as sharing limits and solution checker. Admins no longer need to worry that their makers working in the default environment, where other makers can step on others work or store sensitive data in a shared place.
 
 ## Prerequisites
 
-Default environment routing is a tenant level admin setting that:
+Default environment routing is a tenant-level, admin setting that:
 
--   Can only be enabled by **Power Platform admins**.
+-   Can only be enabled by Power Platform admins.
 
--   Require the "**Developer Environment assignment**" setting to be enabled for "**Everyone**".
+-   Requires that the **Developer environment assignment** setting is enabled for **Everyone**.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image1.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](media/image1.png)
 
--   Require the default environment to be Managed. Learn more how to make an environment managed.
+-   Requires the default environment to be a [Managed Environment](managed-environment-overview.md).
 
-![A screenshot of a computer Description automatically generated](media/image2.png)
+## Enabling the Default environment routing setting
 
-## Enabling Default environment routing setting
-
-The default environment routing setting is disabled by default and must be enabled using the Command Line tool / PowerShell.
+The **Default environment routing** setting is disabled by default and must be enabled using the command line tool or PowerShell.
 
 ## Before you begin
 
-Before you enable this feature, ensure you consider the following effects:
+Before you enable the **Default environment routing** feature, consider the following effects:
 
--   This feature will enable the automatic creation of a personal developer environment for **all** of your Power Apps new makers when they first land into the portal page (make.powrapps.com). The definition of a new maker is limited to the makers who visit the maker portal page (make.powerapps.com) for the first time. Returning makers who have visited the maker portal page before won't be impacted.
+-   This feature enables the automatic creation of a personal, developer environment for **all** of your Power Apps new makers when they first launch [make.powerapps.com](https://make.powerapps.com). The definition of a new maker is limited to the makers who visit [make.powerapps.com](https://make.powerapps.com) for the first time. Returning makers who have visited the site before won't be impacted.
 
 -   New makers will be assigned the admin role in their newly created developer environments.
 
-## Enabling the feature
+## Enable the feature
 
-During this private preview, you'll need to get your Power Platform **tenant ID** to the allow-list for using this feature. To get your tenant ID you will need to go to PPAC / Admin portal à Settings àSession details, and copy your tenant ID from the session details window.
+During this preview, you must get your Power Platform **tenant ID** on the allow-list for using this feature. To see your tenant ID, go to the Power Platform admin center > **Settings** > **Session details**, and copy your tenant ID from the **Session details** window.
 
 ![A screenshot of a computer Description automatically generated with medium confidence](media/image3.png)
 
-**Step 1:**
+1. Apply for the [private preview](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR5ggzcJ5zOhCu7m4ZkreWStUMk1INzNPWEdYTVQxNThZVkM4TFpWMTU5US4u). 
+1. After you receive confirmation of having your tenant ID added to the allow-list for the private preview, login to Power Platform admin center as an admin and make sure your default enviornment is a Managed Environment.
 
-You need to apply for the Private Preview Enrollment [here](https://aka.ms/er-p).
+  ![A screenshot of a computer Description automatically generated](media/image4.png)
 
-**Step 2:**
+1. Make sure the **Developer environment assignment** setting is enabled for **Everyone**. You can check / change this tenant level settings from PPAC (See below)
 
-After you receive confirmation of having your Tenant ID added to the allow-list for this private preview, login to PPAC (Power Platform Admin Center) as a Power Platform admin and make sure your Default Enviornment is Managed.
+  ![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)
 
-![A screenshot of a computer Description automatically generated](media/image4.png)
-
-**Step 3:**
-
-Make sure the "Developer Environment assignment" Settings is enabled for "Everyone". You can check / change this tenant level settings from PPAC (See below)
-
-![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)
-
-**Step 4:**
+1. Run the following commands in Power Shell.
 
 Run the following commands in Power Shell.
 
