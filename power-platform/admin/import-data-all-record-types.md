@@ -1,13 +1,13 @@
 ---
 title: "Import data (all record types)  | MicrosoftDocs"
 description: Import data (all record types) 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/08/2020
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 search.audienceType: 
   - admin
 ---

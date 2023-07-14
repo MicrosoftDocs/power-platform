@@ -58,7 +58,7 @@ Data will be stored in the United States if a bot author's tenant location isn't
 
 | Azure geographic locations (geos) | Azure datacenters (regions)                                                                                                                                                               |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Asia Pacific                      | Southeast Asia (Singapore), East Asia (Hong Kong)                                                                                                                                         |
+| Asia Pacific                      | Southeast Asia (Singapore), East Asia (Hong Kong Special Administrative Region)                                                                                                                                         |
 | Australia                         | Australia East (New South Wales), Australia Southeast (Victoria)                                                                                                                          |
 | Canada                            | Canada Central (Toronto), Canada East (Quebec City)                                                                                                                                       |
 | Europe                            | West Europe (Netherlands), North Europe (Ireland)                                                                                                                                         |

@@ -1,13 +1,13 @@
 ---
 title: "Use the Microsoft 365 admin center to manage your subscription  | MicrosoftDocs"
 description: Use the Microsoft 365 admin center to manage your subscription
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/26/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

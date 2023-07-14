@@ -69,7 +69,7 @@ Using these steps, you can set up an Azure AD app registration for an HTTP call 
 
 1. Add a description and expiration in line with your organization's policies, and then select **Add**.
 
-1. Copy and paste the application (client) IDto a text document in Notepad for the time being.
+1. Copy and paste the application (client) ID to a text document in Notepad for the time being.
 
 1. Select **Overview** and copy and paste the application (client) ID and directory (tenant) ID values to the same text document. Be sure to make a note of which GUID is for which value. You'll need these values when you configure the custom connector.
 

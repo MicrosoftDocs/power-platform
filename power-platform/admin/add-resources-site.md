@@ -1,13 +1,13 @@
 ---
 title: "Add resources to a site record for your business"
 description: "Learn how to add users, equipment, and facilities to a site record to show what is available at a location."
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

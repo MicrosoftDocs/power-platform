@@ -22,7 +22,7 @@ In the past, when a bot couldn't determine a user's intent, it asked the user to
 
 Now, before involving a live agent, the bot uses natural language processing (NLP) to:
 - Parse what a user types to determine what they're asking
-- Find, collate, and parse relevant information from a specified source (for example, your company's website) or from multiple sources, including Sharepoint and OneNote.
+- Find, collate, and parse relevant information from a specified source (for example, your company's website) or from multiple sources, including Sharepoint and OneDrive for Business.
 - Summarize search results into plain language that is delivered to the bot user
 
 Your workflow might be like this:
@@ -51,7 +51,7 @@ Details and examples on how you can expand your bot's ability to use generative 
   - [Bing Custom Search](https://www.customsearch.ai/)
 - Internal resources include:
   - SharePoint
-  - OneDrive
+  - OneDrive for Business
   - Dataverse
   - Custom data (internal or external): supply your own content from any source; for instance, from a Power Automate Flow, Skill, or other source
 

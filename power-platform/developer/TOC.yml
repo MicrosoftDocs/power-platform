@@ -89,6 +89,8 @@
                   href: cli\reference\catalog.md
                 - name: pac connector
                   href: cli\reference\connector.md
+                - name: pac copilot
+                  href: cli\reference\copilot.md
                 - name: pac data
                   href: cli\reference\data.md
                 - name: pac help
