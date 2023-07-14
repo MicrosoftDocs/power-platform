@@ -62,42 +62,44 @@ During this preview, you must get your Power Platform **tenant ID** on the allow
 
     1. Log in to your tenant account.
 
-    ```powershell
-    $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
-    ```
+      ```powershell
+      $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
+      ```
 
     1. Retrieve and store your tenant setting in tenantSettings.
 
-    ```powershell
-    $tenantSettings = Get-TenantSettings  
-    ```
+      ```powershell
+      $tenantSettings = Get-TenantSettings  
+      ```
     1. Setup the enableDefaultEnvironmentRouting flag to true.
 
-    ```powershell
-    $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
-    
-    Set-TenantSettings -RequestBody $tenantSettings
-    ```
+      ```powershell
+      $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
+      
+      Set-TenantSettings -RequestBody $tenantSettings
+      ```
 
-When trying to enable an environment routing tenant setting, 
+When trying to enable an environment routing tenant setting, keep the following points in mind: 
 
-1.  If Developer environment assignments is set for only "Specific admins", the command will not succeed and show error message. To change this, go to PPAC -&gt; Tenant Settings -&gt; Developer environment assignments and set it to everyone.
+1.  If the **Developer environment assignments** property is set for only _specific admins_, the command won't succeed and show an error message. To change this, go to Power Platform admin center > **Tenant settings** -> **Developer environment assignments** and set it to **Everyone**.
 
-2.  If tenant default environment is not managed, the command will not succeed and show error message. TO change this, refer to [Enable Managed Environments - Power Platform \| Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-enable#enable-or-edit-managed-environments-in-the-admin-center)
+2.  If the tenant's default environment is not managed, the command won't succeed and show an error message. TO change this, refer to Enable or edit Managed Environments in the admin center](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center)
 
-## Disabling the feature
+## Disable the feature
 
-To **disable** environment routing for your tenant, running the following Power shell commands
+To disable environment routing for your tenant, run the following Power Shell commands:
 
+```powershell
 $tenantSettings = Get-TenantSettings  
 
 $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
 
 Set-TenantSettings -RequestBody $tenantSettings
+```
 
-**Check if Environment Routing is On**
+## Check if environment routing is turned on
 
-Admins can run the following Cmdlt to confirm if environment routing is enabled for their tenant default environment. The ***enableDefaultEnvironmentRouting** flag should be set to True*
+Admins can run the following Cmdlt to confirm if environment routing is enabled for their tenant's default environment. The **enableDefaultEnvironmentRouting** flag should be set to **True**.
 
 $Get-TenantSettings
 
@@ -115,9 +117,9 @@ $tenantSettings.powerPlatform.governance
 
 *policy : @{enableDesktopFlowDataPolicyManagement=False}*
 
-## Maker Experience
+## Maker experience
 
-Please keep in mind that if the makers are testing the **<u>functionality before June 18<sup>th</sup></u> , they will need to append the following flag "*?cdsCommon.enableNewHomePageExperience=false*** "next to the Power Maker Portal page URL in order to display the **legacy maker portal homepage** and activate the environment routing; otherwise, if you are testing after Jun 18<sup>th</sup>, this flag can be disregarded.
+Note that if makers are testing the functionality before June 18, they will need to append the following flag **?cdsCommon.enableNewHomePageExperience=false** next to the [make.powerapps.com](https://make.powerapps.com)URL in order to display the legacy page and activate the environment routing. Otherwise, if you are testing after Jun 18<, this flag can be disregarded.
 
 ![](media/image6.png)
 
