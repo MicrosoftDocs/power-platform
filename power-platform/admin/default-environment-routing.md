@@ -117,19 +117,19 @@ $tenantSettings.powerPlatform.governance
 
 *policy : @{enableDesktopFlowDataPolicyManagement=False}*
 
-## Maker experience
+## If testing before June 18, 2023
 
-Note that if makers are testing the functionality before June 18, they will need to append the following flag **?cdsCommon.enableNewHomePageExperience=false** next to the [make.powerapps.com](https://make.powerapps.com)URL in order to display the legacy page and activate the environment routing. Otherwise, if you are testing after Jun 18<, this flag can be disregarded.
+Note that if makers are testing the functionality before June 18, 2023, they will need to append the flag, **?cdsCommon.enableNewHomePageExperience=false**, next to the [make.powerapps.com](https://make.powerapps.com)URL in order to display the legacy page and activate environment routing. Otherwise, if you are testing after Jun 18, this flag can be disregarded.
 
-![](media/image6.png)
+![If testing this functionality before June 18, append flag to URL.](media/try-new-homepage.png)
 
-*New maker portal page is not supported before Jun 18<sup>th</sup>*
+**Example URL with the maker home page flag:** `https://make.powerapps.com/?cdsCommon.enableNewHomePageExperience=false`
 
-**Example URL with the maker home page flag** <https://make.powerapps.com/?cdsCommon.enableNewHomePageExperience=false>
+## Feedback and issue reporting 
 
-## Feedback / Issue reporting 
+[Report any problems you encounter or share your feedback with us]((https://forms.office.com/r/ppXNGHD8RX)) to help us improve this feature.
 
-Please capture your session details and share them using the [following form](https://forms.office.com/r/ppXNGHD8RX) or send us an email to report any problems you come across or to share your feedback. You can capture the session details by clicking on the gear icon at the top right corner of your maker portal page session details and then copy the session details from the popup window.
+You can capture the session details by selecting the gear icon at the top right corner of your maker portal page session details and then copy the session details from the popup window.
 
 ![A screenshot of a computer Description automatically generated](media/image7.png)
 
