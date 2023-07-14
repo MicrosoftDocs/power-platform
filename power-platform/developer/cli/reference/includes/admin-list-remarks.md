@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+#### `--json`
 
-### Remarks
-
-Add remarks here...
-
--->
+Returns the output of the command as a JSON formatted string.

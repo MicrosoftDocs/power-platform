@@ -5,7 +5,7 @@ keywords: "composer, adaptive card"
 ms.date: 03/24/2023
 
 ms.topic: article
-author: iaanw
+author: KendalBond007
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: makolomi
@@ -26,11 +26,9 @@ In addition to the native analytics features within Power Virtual Agents, you ca
 > [!IMPORTANT]
 > Application Insights is a feature of [Azure Monitor](/azure/azure-monitor/overview), an extensible Application Performance Management (APM) tool that allows you to monitor your live applications. It requires a subscription to [Microsoft Azure](https://azure.microsoft.com/).
 
-# [Preview](#tab/preview)
+# [Web App](#tab/webApp)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
-
-### Connect your Power Virtual Agents bot to Application Insights
+## Connect your Power Virtual Agents bot to Application Insights
 
 To connect your bot to Application Insights, you first need to add your instrumentation key to the project.
 
@@ -46,13 +44,13 @@ To connect your bot to Application Insights, you first need to add your instrume
 
 - **Log sensitive Activity properties** - If enabled, the values of certain properties that could be considered sensitive on incoming / outgoing messages and events are included in logs. The properties that are considered potentially sensitive are userid, name, text and speak (text and speak properties only apply to messages).
 
-### Analyze bot telemetry with Application Insights
+## Analyze bot telemetry with Application Insights
 
 After you've connected your bot to Application Insights, telemetry data is logged when users interact with the bot, including testing within Power Virtual Agents. To see the logged telemetry data, navigate to the **Logs** section of your Application Insights resource in Azure.
 
 From here, you can use [Kusto queries](/azure/data-explorer/kusto/query) to query and analyze your data. See [example queries](#example-queries).
 
-#### Example queries
+### Example queries
 
 A query can be as simple as specifying a single table, such as `customEvents`, which shows all custom telemetry events logged from Power Virtual Agents. But you can also use [Kusto queries](/azure/data-explorer/kusto/query) to narrow down your results further, including;
 
@@ -77,7 +75,7 @@ customEvents
 > [!IMPORTANT]
 > The data within some fields varies and is more or less applicable, depending on the channel that is being used. For example, you'll only get a correct count of unique users in the query if they're authenticated users and their user ids are consistent across conversations. In anonymous scenarios where a random user id is generated per conversation, the user id field is less useful.
 
-### Excluding telemetry from test conversations from your queries
+## Excluding telemetry from test conversations from your queries
 
 Your bot logs telemetry for all conversations, including those that happen within the Power Virtual Agents test canvas. If you want to exclude telemetry gathered during testing, you can extend your query with the `designMode` custom dimension that is captured on all events, and use a *where* clause in your query.
 
@@ -88,7 +86,7 @@ customEvents
 | extend isDesignMode = customDimensions['designMode']
 | where isDesignMode == "False"
 ```
-### Custom Dimensions
+## Custom Dimensions
 
 Much of the specific activity data received from Power Virtual Agents is stored in the `customDimensions` field. You can [see a custom dimension field being used](#excluding-telemetry-from-test-conversations-from-your-queries) in a query to exclude telemetry from test conversations.
 
@@ -104,7 +102,7 @@ Much of the specific activity data received from Power Virtual Agents is stored 
 | text         | Text in message                 | `find a coffee shop`                                    |
 | designMode         | Conversation happened within the test canvas                 | `True` / `False`                                     |
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 [!INCLUDE [Composer integrated with Power Virtual Agents](includes/composer-integrated-with-pva.md)]
 
@@ -113,7 +111,7 @@ You can use Bot Framework Composer with Power Virtual Agents to send event data 
 > [!IMPORTANT]
 > Application Insights is a feature of [Azure Monitor](/azure/azure-monitor/overview), an extensible Application Performance Management (APM) tool that allows you to monitor your live applications. It requires a subscription to [Microsoft Azure](https://azure.microsoft.com/).
 
-### Connect Application Insights
+## Connect Application Insights
 
 To connect to your Application Insights service in Composer, you need to add your instrumentation key to the project.
 

@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
 
 > [!NOTE]
-> Sessions transcripts are unavailable for download on the Power Virtual Agents app in Teams. To review and export session information, you'll need to sign up for the [Power Virtual Agents web app](requirements-licensing-subscriptions.md).
+> Conversation transcripts in Dataverse are unavailable for download on the Power Virtual Agents app in Teams. To review and export transcripts in Dataverse, you'll need to sign up for the [Power Virtual Agents web app](requirements-licensing-subscriptions.md). Session chat transcripts can be downloaded via the Power Virtual Agents app. For more details, refer to [Download bot session transcripts](analytics-sessions.md#download-bot-session-transcripts).
 
 Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest impact on your bot's performance.
 
@@ -26,32 +26,16 @@ Multiple charts show you trends and usage for your bot's topics. These charts us
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mNOu]
 >
 
-> [!NOTE]
-> Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. You can use a [custom analytics solution to create a custom Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get bot analytics for these plans.
-
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
-
-As a bot maker, your job isn't done when you publish your bot for use. You'll want to know how well your bot is performing its intended duties. The comprehensive analytics in Power Virtual Agents keep your bot's key performance indicators front and center. Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest effect on your bot's performance.
-
-> [!NOTE]
-> Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. In the meantime, you can use a [custom analytics solution to create a Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get analytics in these plans.
+As a bot maker, your job isn't done when you publish your bot for use. You'll want to know how well your bot is performing its intended duties. The comprehensive analytics in Power Virtual Agents keep your bot's key performance indicators front and center. Multiple charts show trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest effect on your bot's performance.
 
 ### Analytics in Power Virtual Agents
 
 In Power Virtual Agents, in the navigation menu, select **Analytics**.
-
-Conversation transcripts are available immediately. Analytics are updated every hour.
-
-# [Web app](#tab/web)
-
-### Analytics in Power Virtual Agents
 
 The analytics section is divided into a number of pages to give you multiple ways to understand bot performance.
 
@@ -62,7 +46,13 @@ The following terms are used in this section.
 - _Billed sessions_ are used to measure resource consumption. Billed sessions are independent of analytics sessions.
 
 > [!NOTE]
-> Although transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
+> Transcripts are available for download about 20 minutes after an analytic session _ends_, as conversation transcripts in Dataverse via the Power Apps portal and as session chat transcripts via the Power Virtual Agents app. It can take up to an hour after the analytic session _ends_  before the appearing in the analytics dashboard.
+
+> [!Note]
+> In the classic version of Power Virtual Agents, conversation transcripts in Dataverse are available approximately 6 hours after the analytic session _starts_.
+
+> [!NOTE]
+> Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. In the meantime, you can use a [custom analytics solution to create a Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get analytics in these plans.
 
 ### View analytics
 

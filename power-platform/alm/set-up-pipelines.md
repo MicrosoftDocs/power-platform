@@ -4,7 +4,7 @@ description: Learn how to create, configure, share, and manage Power Platform pi
 author: caburk
 ms.author: matp
 ms.topic: how-to
-ms.date: 02/28/2023
+ms.date: 06/20/2023
 ms.custom: template-how-to
 ---
 # Set up pipelines in Power Platform
@@ -23,16 +23,9 @@ Power Platform administrators can create one or more pipelines, associate any nu
 - You must have a Power Platform administrator or Dataverse system administrator role.
 - All development and target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md). 
 
-#### Choose environments for pipelines
+#### Create or choose environments for pipelines
 
-Before you begin, you’ll need to choose which environments will participate in pipelines. A common setup might include the following:
-
-| Environment purpose | Environment type | Managed environment |
-|--------------|-----|----|
-| Host | Production | No |
-| Development | Developer | Yes |
-| QA |  Developer | Yes |
-| Production |  Production | Yes | 
+Before you begin, you’ll need to identify which environments will participate in pipelines. Be sure to enable all development and target environments as [Managed Environments](../admin/managed-environment-overview.md). However, the pipelines host environment doesn't have to be a Managed Environment.
 
 - **Host environment**. This special-purpose environment acts as the **storage** and management plane for all pipeline configuration, security, and run history.
   - We recommend you keep this as a **dedicated production environment** separate from the development and target environments.
@@ -63,13 +56,13 @@ Once installed, the deployment pipelines configuration application will appear i
 
 ### Configure a deployment pipeline
 
-1. Copy and paste the environment IDs of all environments participating in the pipelines to a clear text editor such as Notepad. You’ll need these later. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
+1. Copy the environment IDs of all development and target [Managed Environments](../admin/managed-environment-overview.md) that will be linked to pipelines.You’ll need these later. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
 1. Once the **Deployment Pipeline** package installation has completed, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), then select the dedicated host environment (where you installed the application).
 1. **Play** the **Deployment Pipeline Configuration** app.
 1. Select **Environments** on the left pane, and then select **New** to create the environment records in Dataverse:
    - **Name**: Enter the name for the environment record. It's a good idea to include the same name as the actual environment, such as **Contoso Dev**.
    - **Environment Type**: Select either **Development Environment** or **Target Environment**. Select **Development Environment** for all source environments where unmanaged solutions will be developed. Select **Target Environment** for QA and production environments where the managed solution artifacts will be deployed.
-   - **Environment Id**: Paste in the environment ID that you copied in the earlier step.
+   - **Environment Id**: Be sure to select the correct ID. You can find the environment ID for the current environment within make.powerapps.com. Select the **Settings** icon on the command bar, and then then select **Developer resources**. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
 1. Select **Save**.
 1. Refresh the form, then verify **Validation Status** equals **Success**.
 1. Repeat steps 4-6 until all environments that will participate in the pipeline have environment records created.
