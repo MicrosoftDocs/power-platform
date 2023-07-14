@@ -58,22 +58,22 @@ During this preview, you must get your Power Platform **tenant ID** on the allow
 
 1. Make sure the **Developer environment assignment** setting is enabled for **Everyone**. 
 
-1. Run the following commands in Power Shell.
+1. Run the following commands in PowerShell.
 
     1. Log in to your tenant account.
 
-      ```powershell
+      ```PowerShell
       $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
       ```
 
     1. Retrieve and store your tenant setting in tenantSettings.
 
-      ```powershell
+      ```PowerShell
       $tenantSettings = Get-TenantSettings  
       ```
     1. Set the **enableDefaultEnvironmentRouting** flag to **True**.
 
-      ```powershell
+      ```PowerShell
       $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
       
       Set-TenantSettings -RequestBody $tenantSettings
@@ -87,9 +87,9 @@ When trying to enable an environment routing tenant setting, keep the following 
 
 ## Disable the feature
 
-To disable environment routing for your tenant, run the following Power Shell commands:
+To disable environment routing for your tenant, run the following PowerShell commands:
 
-```powershell
+```PowerShell
 $tenantSettings = Get-TenantSettings  
 
 $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
