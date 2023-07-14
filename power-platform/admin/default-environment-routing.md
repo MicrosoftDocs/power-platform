@@ -1,6 +1,6 @@
 ---
 title: Default environment routing
-description: Description goes here.
+description: Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/14/2023
@@ -13,7 +13,7 @@ search.audienceType:
 ---
 
 
-# Overview
+# Default environment routing
 
 Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. Default environment routing will offer new makers a personal, safe space to build with Microsoft Dataverse, without the fear of others' accessing their apps or data.
 
