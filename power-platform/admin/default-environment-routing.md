@@ -15,17 +15,17 @@ search.audienceType:
 
 # Default environment routing
 
-Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. Default environment routing offers new makers a personal, safe space to build with Microsoft Dataverse, without the fear of others' accessing their apps or data.
+Default environment routing is a premium, governance feature. This feature allows Power Platform admins to automatically direct *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. Default environment routing offers new makers a personal, safe space to build with Microsoft Dataverse, without the fear of others accessing their apps or data.
 
-Unlike today, when the **Default environment routing** setting is enabled and a new maker visits [make.powerapps.com](https://make.powerapps.com) for the first time, the maker opens their own, personal developer environment instead of the default environment. Personal, developer environments are makers' own, personal [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity where they can start building apps and solutions in their own workspace. New makers don't need to learn about which environment to work in since this happens automatically.
+Unlike today, when the **Default environment routing** setting is enabled and a new maker visits [make.powerapps.com](https://make.powerapps.com) for the first time, the maker opens their own, personal developer environment, instead of the default environment. Personal, developer environments are makers own, personal [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity where they can start building apps and solutions in their own workspace. New makers don't need to learn about which environment to work in since this happens automatically.
 
-Dataverse is available in personal, developer environments and these environments are Managed Environments with the admin settings already pre-configured, such as sharing limits and solution checker. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
+Dataverse is available in personal, developer environments and these environments are Managed Environments with the admin settings already preconfigured, such as sharing limits and solution checker. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
 
 ## Prerequisites
 
 Default environment routing is a tenant-level, admin setting that:
 
--   Can only be enabled by Power Platform admins.
+-   Is enabled by Power Platform admins only.
 
 -   Requires that the **Developer environment assignment** setting is enabled for **Everyone**.
 
@@ -56,7 +56,7 @@ During this preview, you must get your Power Platform **tenant ID** on the allow
 
   ![Make sure your default environment is a Managed Environment.](media/default-managed-environment.png)
 
-1. Make sure the **Developer environment assignment** setting is enabled for **Everyone**. You can check / change this tenant level settings from PPAC (See below)
+1. Make sure the **Developer environment assignment** setting is enabled for **Everyone**. 
 
 1. Run the following commands in Power Shell.
 
@@ -121,7 +121,7 @@ $tenantSettings.powerPlatform.governance
 
 If makers are testing the functionality before June 18, 2023, they will need to append the flag, **?cdsCommon.enableNewHomePageExperience=false**, next to the [make.powerapps.com](https://make.powerapps.com)URL in order to display the legacy page and activate environment routing. Otherwise, if you are testing after Jun 18, this flag can be disregarded.
 
-![If testing this functionality before June 18, append flag to URL.](media/try-new-homepage.png)
+![If testing this functionality before June 18, 2023, append flag to URL.](media/try-new-homepage.png)
 
 **Example URL with the maker home page flag:** `https://make.powerapps.com/?cdsCommon.enableNewHomePageExperience=false`
 
@@ -178,7 +178,7 @@ All developer environments have the following Managed Environment settings preco
 
 During the private preview, the default environment routing is limited to Power Apps only.
 
-### Do I need to be a Power Platfrom tenant admin to enable this feature?
+### Do I need to be a Power Platform tenant admin to enable this feature?
 
 Yes, you need to have a Power Platform tenant admin privilege to enable this feature in your tenant or you can ask your tenant admin to turn it on for you.
 
