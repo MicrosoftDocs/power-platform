@@ -62,20 +62,24 @@ During this preview, you must get your Power Platform **tenant ID** on the allow
 
 1. Run the following commands in Power Shell.
 
+  1. Log in to your tenant account.
 
-//login to your tenant account
+    ```powershell
+    $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
+    ```
 
-$Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
+  1. Retrieve and store your tenant setting in tenantSettings.
 
-// retrieve and store your tenant setting in tenantSettings
+    ```powershell
+    $tenantSettings = Get-TenantSettings  
+    ```
+  1. Setup the enableDefaultEnvironmentRouting flag to true.
 
-$tenantSettings = Get-TenantSettings  
-
-// setup the enableDefaultEnvironmentRouting flag to true
-
-$tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
-
-Set-TenantSettings -RequestBody $tenantSettings
+    ```powershell
+    $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
+    
+    Set-TenantSettings -RequestBody $tenantSettings
+    ```
 
 When trying to enable an environment routing tenant setting, 
 
