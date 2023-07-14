@@ -127,59 +127,54 @@ Note that if makers are testing the functionality before June 18, 2023, they wil
 
 ## Feedback and issue reporting 
 
-[Report any problems you encounter or share your feedback with us]((https://forms.office.com/r/ppXNGHD8RX)) to help us improve this feature.
+[Report any problems you encounter or share your feedback with us](https://forms.office.com/r/ppXNGHD8RX) to help us improve this feature.
 
-You can capture the session details by selecting the gear icon at the top right corner of your maker portal page session details and then copy the session details from the popup window.
+You can capture the session details by selecting the **Settings** icon at the top-right corner of the page. In Power Apps session details window, copy your session ID.
 
-![A screenshot of a computer Description automatically generated](media/image7.png)
 
-## FAQ
+## Frequently asked questions (FAQs)
 
 ### Will the created developer environments be managed?
 
-Yes, all the newly created developer environments will be managed by default.
+Yes, all the newly created developer environments will be Managed Environments, by default.
 
 ### What environment types are created when the default environment routing is enabled?
 
 The created environments are developer environments.
 
-### What roles do the makers get assigned in the created developer environments?
+### What roles do the makers get assigned in the developer environments?
 
-The makers get assigned the admin security role in their created developer environments.
+The makers get assigned the admin security role in the developer environments.
 
-### Can the new makers switch to the default environment or any other environment they have access after landing into their own developer environment using the environment picker?
+### Can new makers switch to the default environment, or any other environment they have access to, after launching their own developer environment?
 
-Yes, makers can always switch to other environments after landing into their own environment.
+Yes, makers can always switch to other environments.
 
-### Will the created Developer environment impact my tenant DV quota?
+### Will the developer environment impact my tenant DV quota?
 
 No, the developer environments should not impact your tenant DV quota.
 
-### What will happen if the developer environment creation fails?
+### What happens if the developer environment creation fails?
 
-If some reason, the creation of the developer environment fails, makers will be automatically routed to the default environment.
+If some reason, the creation of the developer environment fails, makers are automatically routed to the default environment.
 
-### What DLP policies will be applied for the newly created developer environment?
+### What data loss prevention (DLP) policies are applied for the developer environment?
 
-During the private preview, no specific DLP policies will be assigned to the developer environment. Accordingly, the developer environment will inherit existing tenant level DLP policies.
+During the private preview, no specific DLP policies are assigned to the developer environment. Accordingly, the developer environment inherits existing, tenant-level DLP policies.
 
 ### What are the preconfigured Managed Environment settings for the newly created developer environments?
 
-All the newly created developer environments will have the following managed environment settings preconfigured:
+All developer environments have the following Managed Environment settings preconfigured:
 
-Sharing limits: Set to exclude sharing with SG and preconfigured to share with 5 individuals.
+- **Sharing limits**: Set to exclude sharing with secuirty groups, and preconfigured to share with five individuals.
 
-Solution Checker: Set to Warn
+- **Solution Checker**: Set to **Warn**.
 
-Usage Insights: Is selected.
+- **Usage insights**: Is selected.
 
-Maker welcome message: Not established.
+- **Maker welcome message**: Not established.
 
-![A screenshot of a computer Description automatically generated with low confidence](media/image8.png)
-
-![A screenshot of a computer Description automatically generated with low confidence](media/image9.png)
-
-### Is the default environment routing also available for Power Automate, PVA, and Power Pages?
+### Is the default environment routing also available for Power Automate, Power Virtual Agents, and Power Pages?
 
 During the private preview, the default environment routing is limited to Power Apps only.
 
