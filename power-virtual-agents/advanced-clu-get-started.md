@@ -2,10 +2,11 @@
 title: Get started with conversational language understanding integration (preview)
 description: Create bots that use Azure conversational language understanding in Power Virtual Agents.
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
-ms.date: 6/23/2023
+ms.date: 7/11/2023
 ms.topic: article
-author: KendalBond007
+author: iaanw
 ms.author: iawilt
+ms.reviewer: peterswimm
 manager: leeclontz
 ms.custom: "advanced-authoring, CLU, ceX"
 ms.service: power-virtual-agents
@@ -31,12 +32,24 @@ Below are the steps to create a bot using an existing CLU model:
 
 Before you begin, make sure that you have your CLU model project name and deployment name.
 1. Create a new [Power Virtual Agents](authoring-first-bot.md) bot.
-1. From the left navigation, choose **Language**. NOTE: If you have already enabled a CLU connection that you wish to use, skip to step 4.
-1. To create a new connection, from within Power Apps, choose the **Connections** menu, select **…More**, and then search for **Azure Cognitive Service for Language**.
+
+   > [!NOTE]
+   > Ensure the [environment for your bot](environments-first-run-experience.md) has been created in a [region supported by Power Virtual Agents](data-location.md?tabs=web#data-locations) and which has an [equivalent CLU region](/azure/cognitive-services/language-service/conversational-language-understanding/service-limits#regional-availability).
+   >
+   > Not all regions supported by Power Virtual Agents have an equivalent CLU region.
+
+2. With your bot open, expand the **Settings** tab on the side menu pane and select **Language**.
+
+   :::image type="content" source="media/advanced-clu-integration/clu-enable-language.png" alt-text="Screenshot of the Power Virtual Agents web app with the Settings and Language menu options highlighted." border="false":::
+
+   >[!NOTE]
+   > If you have already enabled a CLU connection, skip to step 4.
+
+3. To create a new connection, from within Power Apps, choose the **Connections** menu, select **...More**, and then search for **Azure Cognitive Service for Language**.
 
     :::image type="content" source="media/advanced-clu-integration/clu-image2.png" alt-text="Azure Cognitive Service for Language." border="false":::
 
-1. From the **NLU Resource** drop-down list, choose **Power Virtual Agent NLU**.
+4. From the **NLU Resource** drop-down list, choose **Power Virtual Agent NLU**.
 
     :::image type="content" source="media/advanced-clu-integration/clu-image1.png" alt-text="Language option to select NLU resource." border="false":::
 
