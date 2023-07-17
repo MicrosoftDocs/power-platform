@@ -117,7 +117,7 @@ Download the audit log data in JSON format by using Dataverse OData API. The for
 - Set the number of items to return in **top=1** or specific the number you want to return.
 
 > [!Note]
-> - You can reach out to Microsoft support to get it enabled for your Power Platform environment.
+> You can reach out to Microsoft support to get it enabled for your Power Platform environment.
 
 ### My Power Automate flows are not working as expected after configuring the IP firewall on my Power Platform environment. What should I do?
 
