@@ -16,7 +16,7 @@ These frequently asked questions (FAQ) article describes information related to 
 
 ## What is data sharing for Copilot AI features?
 
-Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s machine learning models, features, services, and related systems.
+Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s machine learning models, features, services, and related systems. Microsoft will not use your data to improve OpenAI foundational models.
 
 ## What are the benefits of opting in?
 
