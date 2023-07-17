@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 06/22/2023
+ms.date: 07/17/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key
@@ -310,8 +310,8 @@ Once the enterprise policy is created, the key vault administrator grants the en
 1. Select the enterprise policy, and then choose **Select**.
 1. Select **Review + assign**.
 
- > [!NOTE]
-   > The above permission setting is based on your key vault's **Permission model** of **Azure role-based access control**. If your key vault is set to **Vault access policy**, it is recommended that you migrate to the role-based model. To grant your enterprise policy to access key vault using **Vault access policy**, create an Access policy, select **Get** on *Key management operations* and **Unwrap key** and **Wrap key** on *Cryptographic Operations*.
+> [!NOTE]
+> The above permission setting is based on your key vault's **Permission model** of **Azure role-based access control**. If your key vault is set to **Vault access policy**, it's recommended that you migrate to the role-based model. To grant your enterprise policy access to the key vault using **Vault access policy**, create an Access policy, select **Get** on *Key management operations* and **Unwrap key** and **Wrap key** on *Cryptographic Operations*.
 
 
 
@@ -367,8 +367,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Select **Save**, and then select **Confirm**.
 
 > [!IMPORTANT]
->
-> - The environment is disabled temporarily during this process and re-enabled to allow users to access while the encryption process continues. It can take up to a day or two to complete the encryption process.
+> - The environment is disabled temporarily during this process and re-enabled to allow users access while the encryption process continues. It can take up to a day or two to complete the encryption process.
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
 
 > [!NOTE]
@@ -389,8 +388,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 1. Select **Save**.
    
   > [!IMPORTANT]
-  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to Microsoft managed key. **Do not delete or disable the key, or the key vault, or remove the enteprise policy's permissions to the key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
-
+  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enteprise policy's permissions to the key vault.** The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
 ### Change the environment's encryption key
 
@@ -408,8 +406,7 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 1. Repeat steps 2-6 until all environments in the enterprise policy have been removed.
 
   > [!IMPORTANT]
-  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to Microsoft managed key. **Do not delete or disable the key, or the key vault, or remove the enteprise policy's permissions to the key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
-
+  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enteprise policy's permissions to the key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
 1. Once all the environments are removed, from the Power Platform admin center go to **Enterprise policies**.
 1. Select the new enterprise policy, and then select **Edit policy**.
