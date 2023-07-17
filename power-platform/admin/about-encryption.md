@@ -40,8 +40,8 @@ By default, Microsoft stores and manages the database encryption key for your en
 
 Administrators can provide their own encryption key using their own key generator hardware (HSM) or use Azure Key Vault to generate an encryption key. The key management feature takes the complexity out of encryption key management by using Azure Key Vault to securely store encryption keys. Azure Key Vault helps safeguard cryptographic keys and secrets used by cloud applications and services. Encryption keys must meet the following Azure Key Vault requirements:
 
-1. 2048-bit RSA 
-1. [HSM BYOK](/azure/key-vault/keys/hsm-protected-keys)
+- 2048-bit RSA 
+- [HSM BYOK](/azure/key-vault/keys/hsm-protected-keys)
 
 Administrators also can revert the encryption key back to a Microsoft managed key at any time.
 
