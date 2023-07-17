@@ -9,7 +9,7 @@ ms.custom:
   - "admin-security"
   - bap-template
 ms.topic: conceptual
-ms.date: 07/13/2023
+ms.date: 07/17/2023
 ---
 
 # View information about plug-in steps
@@ -25,8 +25,10 @@ To view all plug-in steps for an environemnt, complete the following steps in th
 1. Select **Default Solution**.
 1. Select **Objects** > **Plug-in steps**.
 
-## View plug-in details
-If you have installed plug-ins in an environment, you can view plug-in details in Power Platform admin center. Follow these steps to view plug-in information such as the plug-in name, status, the user under whose identity the plug-in is executing, user license status, and more. You can use the information displayed in this experience to identify common issues related to plugin execution.
+## View System User plug-in steps
+Plug-ins on the System User table can interfere with user sync operations. To make these more visible for system administrators, you can find information about these steps in the Power Platform admin center.
+
+Follow these steps to view plug-in information such as the plug-in name, status, the user under whose identity the plug-in is executing, user license status, and more. You can use the information displayed in this experience to identify common issues related to plugin execution.
 
 > [!Note]
 > At this time, only plug-ins of the System User entity type are supported.
