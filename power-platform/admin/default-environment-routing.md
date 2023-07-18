@@ -35,7 +35,7 @@ Default environment routing is a tenant-level, admin setting that:
 
 ## Enable the Default environment routing setting
 
-The **Default environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com) or [PowerShell](https://learn.microsoft.com/en-us/powershell/).
+The **Default environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com) or [PowerShell](/powershell/).
 
 ### Before you begin
 
