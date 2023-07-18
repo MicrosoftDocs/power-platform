@@ -33,7 +33,7 @@ Power Apps P1 and P2 and Power Automate P1 and P2 plans are no longer available 
 
 ### Is there a plan for developers?
 
-Yes, we have a free Developer Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/developerplan/)).
+Yes, we have a free Developer Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/developerplan/).
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
