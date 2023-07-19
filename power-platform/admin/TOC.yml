@@ -72,7 +72,7 @@
               href: wp-license-management.md
             - name: View license consumption for Power Apps and Power Automate (preview)
               href: view-license-consumption-issues.md
-            - name: View license consumption for finance and operations apps (preview)
+            - name: View license consumption for finance and operations apps in Power Platform admin center (preview)
               href: view-license-consumption-finops-apps.md
             - name: Manage licenses in your org
               href: signup-question-and-answer.md
