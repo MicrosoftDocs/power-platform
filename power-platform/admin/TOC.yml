@@ -72,6 +72,8 @@
               href: wp-license-management.md
             - name: View license consumption (preview)
               href: view-license-consumption-issues.md
+            - name: View license consumption for finance and operations apps (preview)
+              href: view-license-consumption-finops-apps.md
             - name: Manage licenses in your org
               href: signup-question-and-answer.md
             - name: Administer without a license
