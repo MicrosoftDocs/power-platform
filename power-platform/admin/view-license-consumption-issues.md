@@ -57,6 +57,7 @@ The **Environments** tab on **Licenses (preview)** page displays licensing infor
 ### Power Apps
 
 | Setting | Description |
+| ------- | ----------- |
 | **Power Apps licensing overview** | The number of users actively using licenses in the last 30 days, and whether any actions are recommended. If you change a standard environment to a managed environment, any users who open an app with only a Microsoft 365 license will require a standalone Power Apps license to run the app. |
 | License type | The type of license &mdash;Dynamics 365, Microsoft 365, per app, per user, pay-as-you-go, trial, or developer&mdash;the actual license is mapped to. |
 | Active users | The number of unique users who opened apps in the environment at least once in the last 30 days. |
@@ -71,6 +72,7 @@ The **Environments** tab on **Licenses (preview)** page displays licensing infor
 ### Power Automate
 
 | Setting | Description |
+| ------- | ----------- |
 | **Power Automate licensing overview** | The number of users and flows actively using Power Automate licenses in the last 30 days, based on flow execution and whether any actions are recommended. |
 | License type | The type of license &mdash;Dynamics 365, Microsoft 365, Power Automate per flow, per user, pay-as-you-go, trial, or developer&mdash;the actual license is mapped to. |
 | Active users | The number of unique users who executed flows in the environment at least once in the last 30 days. |
