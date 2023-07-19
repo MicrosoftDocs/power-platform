@@ -63,7 +63,7 @@ The **Environments** tab on **Licenses (preview)** page displays licensing infor
 | Active users | The number of unique users who opened apps in the environment at least once in the last 30 days. |
 | Recommended actions | Actions to consider to convert the environment to a managed environment. |
 | Usage details for a license type | Select a license type in the **Power Apps licensing overview** section to view a list of the users who are consuming a specific license type. |
-| Email | The email ID or UPN <!-- EDITOR'S NOTE: Spell out abbreviations on first mention. --> of the user who launched an app in the selected environment. Includes a list of users with whom an app is shared and whether the app is installed in the environment. Select the email link to open the Microsoft 365 admin portal. |
+| Email | The email ID or user principal name (UPN) of the user who launched an app in the selected environment. Includes a list of users with whom an app is shared and whether the app is installed in the environment. Select the email link to open the Microsoft 365 admin portal. |
 | License | The license SKU |
 | Last active date | The date when a selected app was last opened by a user in a selected time. |
 | **License Type: Power App Per App** | If the selected environment has per-app licenses assigned, a list of apps consuming app pass licenses, the number of users the app has been shared with, and the number of users who have opened the app using per-app licenses |
@@ -79,7 +79,7 @@ The **Environments** tab on **Licenses (preview)** page displays licensing infor
 | Unique flow count | The number of unique flows executed in the environment at least once in the last 30 days. |
 | Recommended actions | Actions to consider to convert the environment to a managed environment. |
 | **Usage details for a license type** | Select a license type in the **Power Automate licensing** section to view a list of the users who are consuming a specific license type. |
-| Email | The email ID or UPN <!-- EDITOR'S NOTE: Spell out abbreviations on first mention. --> of the user who executed flows in the selected environment. Select a user to see a list of all the flows executed by the user in the selected environment. |
+| Email | The email ID or UPN of the user who executed flows in the selected environment. Select a user to see a list of all the flows executed by the user in the selected environment. |
 | Flow name | Name of the flow executed, which links to the flow detail page. |
 | License | The license SKU |
 | Date last run | The date when the flow was last executed. |
