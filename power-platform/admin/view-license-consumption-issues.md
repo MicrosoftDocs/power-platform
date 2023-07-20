@@ -1,8 +1,8 @@
 ---
 title: View license consumption for Power Apps and Power Automate (preview)
 description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
-author: KendalBond007
-ms.date: 04/14/2023
+author: amiyapatr-zz
+ms.date: 07/20/2023
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -86,10 +86,7 @@ The **Environments** tab on **Licenses (preview)** page displays licensing infor
 | Premium feature | Indicates if a premium feature, such as a premium connector, custom connector, or Dataverse connector was used in the flow. |
 | Flow type | Indicates if the flow is scheduled, instant, or automated. |
 | Download | Downloads the information in CSV format. Select a specific license type to start the download. After a CSV file is generated, you can download the same file again within five days without having to start a new download. |
-| Attention needed | Summary count of flows requiring licensing attention, which includes:
-- List of flows without an owner
-- Stand alone and Premium flows using standard or expired licenses
-- Out of context flows, such as Premium flows using Power Apps, Power Virtual Agents, or Dynamics 365 licenses, but not running in a Power Apps, Power Virtual Agents or Dynamics 365 context. |
+| Attention needed | Summary count of flows requiring licensing attention, which includes: </br><ul></br><li>List of flow not having an owner.</li></br><li>Standalone, Premium flow using standard or expired licenses.</li></br><li>Out of Context flow, such as Premium flows using Power Apps, Power Virtual Agents, or Dynamics 365 licenses but not running in in the context of Power Apps, Power Virtual Agents, or Dynamics 365.</li></br></ul> |
 
 ## Other ways to view licensing pages
 
