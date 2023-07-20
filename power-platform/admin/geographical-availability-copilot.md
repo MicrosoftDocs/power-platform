@@ -65,40 +65,40 @@ Below table illustrates the availability of copilots in non-US environments.
 
 | Product | Feature Name &amp; Description | Regions available without consent | Available in non-US region w/ consent | Language support |
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-| **D365 Marketing** | **Content Ideas: Discoverability and first use UX improvements**</br>(doc link) | US | No | English |
-|  | **Query Assist: Natural language to segment<br /></br>**(doc link) | US | No | English |
-| **D365 Customer Insights** | **Dialog with Data**</br>(doc link) | US | No | English |
-| **Viva Sales** | **Meeting Summary Follow Up Email**<br /></br>(doc link) | US | No | English |
-| **D365 Finance** | **Collections CoPilot: Collections timeline summary from workspace**</br>(doc link) | US | No | English |
-| **Project Operations**</br>** ** | **Project issues and risks tracking information<br /></br>**(doc link) | US | No | English |
-| ** ** | **Project status reports<br /></br>**(doc link) | US | No | English |
-| ** ** | **Project WBS generation<br /></br>**(doc link) | US | No | English |
-| **D365 Customer Service** | **Digital messaging with Copilot **<br /></br>(doc link) | US | Yes | English |
-|  | **Auto-Draft Email**<br /></br>(doc link) | US | Yes | English |
-|  | **Converse with Copilot**</br>(doc link) | US | Yes | English |
-|  | **Conversation summarization**</br>(doc link) | US | Yes | English |
-|  | **Case summarization<br /></br>**(doc link) | US | Yes | English |
-| **Nuance Mix (VA, IVR)** | **Consumer Assist (Bing/GPT fallback)**</br>(doc link) | US | No | English |
-|  | **AppDev Assist (NL2Bot)**</br>(doc link) | US | No | English |
-| **Microsoft Supply Chain Center** | **Contact Suppliers**<br /></br>(doc link) | US | No | English |
-| **D365 Supply Chain Management** | **Copilot for Procurement: Summarize and handle PO changes in D365 SCM Hub**</br>(doc link) | US | No | English |
-| **Business Central** | **AI-Generated Product Descriptions**<br /></br>(doc link) | US | No | English |
-| **Dataverse** | **Dataverse Service for Copilot for M365 BizChat and BAP business applications<br /></br>**(doc link) | US | No | English |
-| ** ** | **Excel to Table for New Makers<br /></br>**(doc link) | US | No | English |
-| ** ** | **M365 Biz Chat Q&amp;A and Actions with Dataverse Connectors**</br>(doc link) | US | No | English |
-| **AI Builder** | **Text Generation with GPT**<br /></br>(doc link) | US | Yes | English |
-| **Power Apps** | **Maker Copilot (NL2Table)**<br /></br>(doc link) | US | No | English |
-|  | **Maker Copilot: (NL2Edit)**</br>(doc link) | US | No | English |
-|  | **App Copilot for canvas Power Apps**</br>(doc link - [Add Copilot control to a canvas app](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fpower-apps%2Fmaker%2Fcanvas-apps%2Fadd-ai-copilot&amp;data=05%7C01%7CSidhartha.Gundavarapu%40microsoft.com%7C35658fc11c624c52cba708db84c7ce1a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638249766110760978%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=M2%2BaRQy6cOK17%2BiI1%2F7JQGm0rvEUvuzZMj6q3S5nXkI%3D&amp;reserved=0)) | US | No | English |
-| ** ** | **App Copilot for model Power Apps and D365**</br>(doc link) | US | No | English |
-| **Power Automate** | **Power Automate Designer Copilot**</br>(doc link) | US | No | English |
-| **Power Pages** | **C2 Copilot (PVA Chatbot)<br /></br>**(doc link) | US | No | English, Danish, Dutch, French, German, Italian, Spanish, and Japanese |
-| ** ** | **Create form in webpage<br /></br>**(doc link) | US | No | English |
-| ** ** | **Create Text Copy in webpage<br /></br>**(doc link) | US | No | English |
-| ** ** | **Create Website Page**</br>(doc link) | US | No | English |
-| **Power Virtual Agents** | **Generative Answers**</br>(doc link) | US | No | English, Danish, Dutch, French, German, Italian, Spanish, and Japanese |
-|  | **Generative Actions**</br>(doc link) | US | No | English |
-| ** ** | **PVA Copilot**</br>(doc link) | US | No | English |
+| D365 Marketing | **Content Ideas: Discoverability and first use UX improvements**</br>(doc link) | US | No | English |
+| D365 Marketing  | **Query Assist: Natural language to segment<br /></br>**(doc link) | US | No | English |
+| D365 Customer Insights | **Dialog with Data**</br>(doc link) | US | No | English |
+| Viva Sales | **Meeting Summary Follow Up Email**<br /></br>(doc link) | US | No | English |
+| D365 Finance | **Collections CoPilot: Collections timeline summary from workspace**</br>(doc link) | US | No | English |
+|Project Operations | **Project issues and risks tracking information<br /></br>**(doc link) | US | No | English |
+|Project Operations | **Project status reports<br /></br>**(doc link) | US | No | English |
+| Project Operations | **Project WBS generation<br /></br>**(doc link) | US | No | English |
+| D365 Customer Service | **Digital messaging with Copilot **<br /></br>(doc link) | US | Yes | English |
+| D365 Customer Service | **Auto-Draft Email**<br /></br>(doc link) | US | Yes | English |
+| D365 Customer Service | **Converse with Copilot**</br>(doc link) | US | Yes | English |
+| D365 Customer Service | **Conversation summarization**</br>(doc link) | US | Yes | English |
+| D365 Customer Service | **Case summarization<br /></br>**(doc link) | US | Yes | English |
+| Nuance Mix (VA, IVR) | **Consumer Assist (Bing/GPT fallback)**</br>(doc link) | US | No | English |
+|  Nuance Mix (VA, IVR) | **AppDev Assist (NL2Bot)**</br>(doc link) | US | No | English |
+| Microsoft Supply Chain Center | **Contact Suppliers**<br /></br>(doc link) | US | No | English |
+| D365 Supply Chain Management | **Copilot for Procurement: Summarize and handle PO changes in D365 SCM Hub**</br>(doc link) | US | No | English |
+| Business Central| **AI-Generated Product Descriptions**<br /></br>(doc link) | US | No | English |
+| Dataverse | **Dataverse Service for Copilot for M365 BizChat and BAP business applications<br /></br>**(doc link) | US | No | English |
+| Dataverse | **Excel to Table for New Makers<br /></br>**(doc link) | US | No | English |
+| Dataverse | **M365 Biz Chat Q&amp;A and Actions with Dataverse Connectors**</br>(doc link) | US | No | English |
+| AI Builder | **Text Generation with GPT**<br /></br>(doc link) | US | Yes | English |
+| Power Apps | **Maker Copilot (NL2Table)**<br /></br>(doc link) | US | No | English |
+| Power Apps | **Maker Copilot: (NL2Edit)**</br>(doc link) | US | No | English |
+|  Power Apps| **App Copilot for canvas Power Apps**</br>(doc link - [Add Copilot control to a canvas app](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fpower-apps%2Fmaker%2Fcanvas-apps%2Fadd-ai-copilot&amp;data=05%7C01%7CSidhartha.Gundavarapu%40microsoft.com%7C35658fc11c624c52cba708db84c7ce1a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638249766110760978%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=M2%2BaRQy6cOK17%2BiI1%2F7JQGm0rvEUvuzZMj6q3S5nXkI%3D&amp;reserved=0)) | US | No | English |
+| Power Apps | **App Copilot for model Power Apps and D365**</br>(doc link) | US | No | English |
+| Power Automate | **Power Automate Designer Copilot**</br>(doc link) | US | No | English |
+| Power Pages| **C2 Copilot (PVA Chatbot)<br /></br>**(doc link) | US | No | English, Danish, Dutch, French, German, Italian, Spanish, and Japanese |
+|Power Pages | **Create form in webpage<br /></br>**(doc link) | US | No | English |
+|Power Pages | **Create Text Copy in webpage<br /></br>**(doc link) | US | No | English |
+| Power Pages| **Create Website Page**</br>(doc link) | US | No | English |
+| Power Virtual Agents | **Generative Answers**</br>(doc link) | US | No | English, Danish, Dutch, French, German, Italian, Spanish, and Japanese |
+| Power Virtual Agents  | **Generative Actions**</br>(doc link) | US | No | English |
+|  Power Virtual Agents | **PVA Copilot**</br>(doc link) | US | No | English |
 
 
 
