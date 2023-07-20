@@ -48,7 +48,7 @@ The **User license level overview** section provides a summary count of user lic
 | ------- | ----------- |
 | User license level | Type of Finance and Operations license available, or required by the tenant. |
 | Available seats | Number of seats for a user license level available for the tenant. |
-| Assigned seats | Number of users assigned who are assigned licenses. |
+| Assigned seats | Number of users who are assigned licenses. |
 | Required seats | Number of users who need licenses based on role assignment in Finance and Operations environments. |
 | License utilization status | This status is calculated by comparing the number of roles assigned versus the number of licenses available |
 
