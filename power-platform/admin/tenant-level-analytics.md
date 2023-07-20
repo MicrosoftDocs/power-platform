@@ -29,13 +29,13 @@ To access these reports, sign in to the Power Platform admin center and select *
 > [!Important]
 > [!include [preview](../includes/cc-preview-features-definition.md)]
 > 
-> This capability is in process of rolling out, and may not be available in your region yet.
+> This capability is in the process of rolling out, and may not be available in your region yet.
 
 ## Who can view these reports?
 
 Administrators with the following roles and a [license](pricing-billing-skus.md) can view the reports in Power Apps analytics:
 
-- **Environment admin** - Can view reports for the environments where the admin is member of Contributor or Environment Admin role.
+- **Environment admin** - Can view reports for the environments where the admin is a member of the Contributor or Environment Admin role.
 - **Power Platform admin** - Can view reports for all environments.
 - **Dynamics 365 admin** - Can view reports for all environments. 
 - **Microsoft 365 Global admin** - Can view reports for all environments.
@@ -44,13 +44,13 @@ For more information on the different roles for managing your tenant across the 
 
 ## How do I enable tenant-level analytics?
 
-A member from one of the following admin roles is required to enable tenant-level analytics:
+A member of one of the following admin roles is required to enable tenant-level analytics:
 
 - Power Platform admin
 - Microsoft 365 Global admin
 - Delegated admin 
 
-The admin doesn't need to be a licensed user.  Environment admins gain access to the tenant-level analytics once the service admin enables the feature using the following steps. 
+The admin doesn't need to be a licensed user. Environment admins gain access to the tenant-level analytics once the service admin enables the feature using the following steps: 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and select **Analytics** > **Power Apps** or **Analytics** > **Power Automate**.
 
@@ -66,7 +66,7 @@ The admin doesn't need to be a licensed user.  Environment admins gain access to
 
     :::image type="content" source="media/analytics-pane.png" alt-text="Select Enable to turn on tenant-level analytics.":::
  
-    Once enabled, this feature aggregates data from environments across all regions in your tenant and copy it into the default environment region for tenant-level reporting. A tenant-level administrator role is required for one-time operation of granting consent for tenant-level analytics. 
+    Once enabled, this feature aggregates data from environments across all regions in your tenant and copies it into the default environment region for tenant-level reporting. A tenant-level administrator role is required for one-time operation of granting consent for tenant-level analytics. 
 
 1. Select **Save**, and then close the form. 
 
@@ -97,7 +97,7 @@ Environment admins aren't able to disable tenant-level analytics.
 
 # [Classic](#tab/sdk)
 
-Once enabled, this feature copies data from environments that are associated with a tenant to the default environment region regardless of the location of the environment. A tenant-level administrator role is required for one time operation of granting consent for tenant-level analytics. 
+Once enabled, this feature copies data from environments that are associated with a tenant to the default environment region regardless of the location of the environment. A tenant-level administrator role is required for one-time operation of granting consent for tenant-level analytics. 
 
 To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. In the upper-right corner, select **Tenant level analytics** from the dropdown list. 
 
@@ -107,7 +107,7 @@ To access these reports, sign in to the Power Platform admin center and select *
 
 Administrators with the following roles and a [license](pricing-billing-skus.md) can view the reports in Power Apps analytics:
 
-- **Environment admin** - Can view reports for the environments where the admin is member of Contributor or Environment Admin role.
+- **Environment admin** - Can view reports for the environments where the admin is a member of the Contributor or Environment Admin role.
 - **Power Platform admin** - Can view reports for all environments.
 - **Dynamics 365 admin** - Can view reports for all environments. 
 - **Microsoft 365 Global admin** - Can view reports for all environments.
@@ -116,13 +116,13 @@ For more information on the different roles for managing your tenant across the 
 
 ## How do I enable tenant-level analytics?
 
-A member from one of the following admin roles is required to enable tenant-level analytics:
+A member of one of the following admin roles is required to enable tenant-level analytics:
 
 - Power Platform admin
 - Microsoft 365 Global admin
 - Delegated admin 
 
-The admin doesn't need to be a licensed user.  Environment admins gain access to the tenant-level analytics once the service admin enables the feature using the following steps. 
+The admin doesn't need to be a licensed user. Environment admins gain access to the tenant-level analytics once the service admin enables the feature using the following steps: 
 
 1. Select the **Settings** icon in the upper-right corner of the Power Platform admin center, and then select **Power Platform settings**. 
 
@@ -130,7 +130,7 @@ The admin doesn't need to be a licensed user.  Environment admins gain access to
 
    :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics.":::
 
-3. **Granting consent for tenant-level analytics:** The process of collecting information for tenant-level analytics includes copying service telemetry data from other GEO locations into a central location for reporting.  Customers must explicitly enable this Power Platform operation.  
+3. **Granting consent for tenant-level analytics:** The process of collecting information for tenant-level analytics includes copying service telemetry data from other GEO locations into a central location for reporting. Customers must explicitly enable this Power Platform operation.  
 
    Select **Enable** to grant consent for the service to collocate service telemetry data in the location associated with the default environment. 
 
@@ -148,7 +148,7 @@ Administrators with the following roles and a [license](pricing-billing-skus.md)
 - Microsoft 365 Global admin
 - Delegated admin 
 
-Environment admins aren't able to disable tenant-level analytics.
+Environment admins can't disable tenant-level analytics.
 
 > [!IMPORTANT]
 > When you disable the tenant-level analytics preview feature, note the following:
@@ -164,7 +164,7 @@ Environment admins aren't able to disable tenant-level analytics.
 ---
 ## Where is this feature available?
 
-The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is pending availability in Government & Sovereign Clouds.
+The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is pending availability in Government and Sovereign clouds.
 
 ### See also
 [Tenant-level analytics for Power Apps](powerapps-analytics-reports.md) <br />
