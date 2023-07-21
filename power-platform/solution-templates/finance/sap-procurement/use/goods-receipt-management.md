@@ -28,11 +28,11 @@ There are three options for viewing a goods receipt:
 
 - You can select a recent goods receipt that you have interacted with.
 - You can search for a goods receipt based on vendor, purchase order, and date range.
-- You can enter in the goods receipt number, if known.
+- You can enter a known goods receipt number.
 
 ### Select a goods receipt
 
-From the _Select recent goods receipt_ drop-down list, you can see a list of previous goods receipts that you have interacted with. You can choose one from the list, and it loads the data for that goods receipt.
+Select a _goods receipt_ from the _Select recent goods receipt_ drop-down list that displays a list of recent goods receipts that you have interacted with. Choose a goods receipt from the list to load on to the screen.
 
 ### Search for a goods receipt
 
@@ -42,7 +42,7 @@ The goods receipt search screen allows you to search by any individual field or 
 
 1. Enter your desired selection criteria.
 1. Select the **Search** button to display your results.
-1. Select the _goods receipt_ you want to see displayed on the overview screen.
+1. Select the _goods receipt_ you want to display on the overview screen.
 
 ### Enter a goods receipt
 
@@ -61,7 +61,7 @@ If you know the goods receipt number of the material document you want to view, 
 
 ## Field Mappings
 
-The field mappings are from requisition screen to function module.
+The table provides requisition screen to function module field mappings.
 
 ### BAPI_GOODSMVT_CREATE Mapping
 

@@ -43,8 +43,8 @@ If you have not interacted with the purchase order, and you don't know the exact
 1. Select the **funnel icon** to open the purchase order search screen. On the screen, you can search by any individual field or a combination of _Purchase Order Number_, _Vendor_, and _Date Range_.
 :::image type="content" source="media/purchase-order-management/search-po.png" alt-text="Search for a purchase order screen.":::
 1. Enter your selection criteria in the fields.
-1. Select **Search** and your results will be displayed.
-1. Select the PO you would like to see, and it will be displayed on the PO overview screen.
+1. Select **Search** to display your results.
+1. Select the PO you would like to see displayed on the PO overview screen.
 
 ## Enter a purchase order number
 
@@ -114,7 +114,7 @@ When you load an existing purchase order, you have the ability to edit or approv
 
 ## Field mappings
 
-Field mappings from purchase order screen to the function module.
+The table provides purchase order screen to function module field mappings.
 
 ### BAPI_PO_CREATE1 Mapping
 

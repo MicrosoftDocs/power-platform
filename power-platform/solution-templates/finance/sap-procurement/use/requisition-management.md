@@ -44,7 +44,7 @@ If you haven't interacted with the requisition, and you don't know the exact num
 :::image type="content" source="media/requisition-management/req-search.png" alt-text="Search for a requisition screen.":::
 1. Enter your selection criteria in the fields.
 1. Select **Search** and your results will be displayed.
-1. Select the requisition you would like to see, and it will be displayed on the requisition overview screen.
+1. Select the requisition you would like to display on the requisition overview screen.
 
 ### Enter a requisition number
 
@@ -112,7 +112,7 @@ You can also filter items in the _Items_ list. The filter box can be found on th
 
 ## Field mappings
 
-Field mappings from the requisition screen to the function module.
+The table provides requisition screen to function module field mappings.
 
 ### BAPI_PR_CREATE Mapping
 

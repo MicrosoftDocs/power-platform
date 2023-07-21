@@ -46,16 +46,30 @@
       href: finance/sap-procurement/use/purchase-order-management.md
     - name: Goods receipt management
       href: finance/sap-procurement/use/goods-receipt-management.md
+    - name: Vendor invoice management
+      href: finance/sap-procurement/use/vendor-invoice-management.md
   - name: FAQs
     href: finance/sap-procurement/faqs.md
-- name: Human Resources - Employee Kudos
+- name: Human Resources
   items:
-  - name: Overview
-    href: hr/employee-kudos/overview.md
-  - name: Install
-    href: hr/employee-kudos/install.md
-  - name: Use
-    href: hr/employee-kudos/use.md  
+  - name: Employee Kudos
+    items:
+    - name: Overview
+      href: hr/employee-kudos/overview.md
+    - name: Install
+      href: hr/employee-kudos/install.md
+    - name: Use
+      href: hr/employee-kudos/use.md
+  - name: Awards and Recognition
+    items:
+    - name: Overview
+      href: hr/awards-recognition/overview.md
+    - name: Install
+      href: hr/awards-recognition/install.md
+    - name: Use
+      href: hr/awards-recognition/use.md
+    - name: Customize
+      href: hr/awards-recognition/customize.md
 - name: Related content
   items:
   - name: Power Apps documentation
