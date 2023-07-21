@@ -120,22 +120,22 @@ To boost coverage in a **Generative answers** node, follow these instructions:
 
 #### Bing custom search
 
-1. On the **Web API** tab under **Production**, copy the Custom configuration ID you want to use. This functions like a URL would as described in [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). If you have more than one custom configuration, make sure you're copying the ID you want.
+1. On the **Web API** tab under **Production**, copy the custom configuration ID you want to use. This functions like a URL would as described in [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). If you have more than one custom configuration, make sure you're copying the ID you want.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize content node with Bing custom search.":::
 
 
 #### Generative answers node properties
 
-1. Select **Properties** from the node menu, and then **Data source**.
+1. Select **Properties** from the node menu and then **Data source**.
 
 1. Select **Search with Bing Custom Search** from **Search public data**.
 
-1. Paste your custom configuration in the **Configuration ID** input box to add it to the node's data sources. If you haven't exceeded relevant limits (as defined in the [Information sources table](#information-sources), you can add other URLs.
+1. Paste your custom configuration ID in the **Configuration ID** input box to add it to the node's data sources. If you haven't exceeded relevant limits (as defined in the [Information sources table](#information-sources), you can add other URLs.
 
 1. When you're done entering sources, close the menu. Make sure to save any changes to your topic.
 
-    :::image type="content" source="media/nlu-gpt/generative-ansswers-bing-custom.png" alt-text="Screenshot of the  Search and summarize content node with Bing custom search.":::
+    :::image type="content" source="media/nlu-gpt/generative-answers-bing-custom.png" alt-text="Screenshot showing the Search public data section and Configuration ID boxes highlighted in the generative answers property pane.":::
  
 The node will now retrieve content from the information sources in the Bing Custom Search configuration provided. This allows you to use a large number of sources to boost your bot without having to enter each source individually.
 
