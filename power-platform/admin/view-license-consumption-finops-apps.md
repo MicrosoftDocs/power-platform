@@ -1,5 +1,5 @@
 ---
-title: View license consumption for finance and operations apps in Power Platform admin center (preview)
+title: View license consumption for finance and operations apps (preview)
 description: Learn how to view your organization's Power Apps license consumption for finance and operations apps. 
 author: KendalBond007
 ms.date: 07/21/2023
@@ -12,7 +12,7 @@ search.audienceType:
  - admin
 ---
 
-# View license consumption for finance and operations apps in Power Platform admin center (preview)
+# View license consumption for finance and operations apps (preview)
 
 <!-- fwlink: https://go.microsoft.com/fwlink/?linkid=2206011 -->
 
