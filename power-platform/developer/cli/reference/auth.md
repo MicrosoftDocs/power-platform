@@ -71,11 +71,12 @@ Optional: The client secret to authenticate with
 Optional: The cloud instance to authenticate with
 
 Use one of these values:
-- Public
-- UsGov
-- UsGovHigh
-- UsGovDod
-- China
+
+- `Public`
+- `UsGov`
+- `UsGovHigh`
+- `UsGovDod`
+- `China`
   
 #### `--deviceCode` `-dc`
 
