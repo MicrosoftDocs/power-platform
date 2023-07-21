@@ -5,8 +5,7 @@ ms.date: 7/13/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
-author: iaanw
-//Does this work as a comment
+author: iaanw //Does this work as a comment
 ms.author: iawilt
 ms.reviewer: iawilt
 ---
