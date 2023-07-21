@@ -127,16 +127,20 @@ To boost coverage in a **Generative answers** node, follow these instructions:
 
 #### Generative answers node properties
 
-1. Select **Properties** from the node menu, and select **Data source**.
+1. Select **Properties** from the node menu, and then **Data source**.
 
-1. Select **Search with Bing Custom Search** from **Search public data**. Paste your custom configuration in the **Configuration ID** input box to add it to the node's data sources. If you haven't exceeded relevant limits (as defined in the [Information sources table](#information-sources), you can add other URLs.
+1. Select **Search with Bing Custom Search** from **Search public data**.
+
+1. Paste your custom configuration in the **Configuration ID** input box to add it to the node's data sources. If you haven't exceeded relevant limits (as defined in the [Information sources table](#information-sources), you can add other URLs.
 
 1. When you're done entering sources, close the menu. Make sure to save any changes to your topic.
+
+    :::image type="content" source="media/nlu-gpt/generative-ansswers-bing-custom.png" alt-text="Screenshot of the  Search and summarize content node with Bing custom search.":::
  
 The node will now retrieve content from the information sources in the Bing Custom Search configuration provided. This allows you to use a large number of sources to boost your bot without having to enter each source individually.
 
 ### Connect to a SharePoint site or OneDrive for Business
-<img width="1366" alt="Bing Custom Search" src="https://github.com/MicrosoftDocs/power-platform-pr/assets/18705275/73b3d89a-921c-4942-a5b8-a8801fe41b68">
+
 
 Power Virtual Agents now supports boosting conversations using generative answers with content stored on SharePoint sites and OneDrive for Business. This capability works by pairing your bot with a specific site URL, such as _contoso.sharepoint.com/sites/policies_. When a bot user asks a question or makes a statement where the bot doesn't have a manually configured topic to use, it will search for relevant content from that site URL and all sub-paths and will use generative answers technology to help summarize this content into a targeted response.
 
