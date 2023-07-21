@@ -84,7 +84,7 @@ The following table indicates the availability of copilots and generative AI fea
 | AI Builder | **Text Generation with GPT**<br /></br>(doc link) | US | Yes | English |
 | Power Apps | **Maker Copilot (NL2Table)**<br /></br>(doc link) | US | No | English |
 | Power Apps | **Maker Copilot: (NL2Edit)**</br>(doc link) | US | No | English |
-|  Power Apps| **Copilot for canvas apps**<br><br>[Add Copilot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot) | US | No | English |
+|  Power Apps| **Copilot for canvas apps**<br><br>Learn more: [Add Copilot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot) | US | No | English |
 | Power Apps | **App Copilot for model Power Apps and Dynamics 365**</br>(doc link) | US | No | English |
 | Power Automate | **Power Automate Designer Copilot**</br>(doc link) | US | No | English |
 | Power Pages| **C2 Copilot (PVA Chatbot)<br /></br>**(doc link) | US | No | English, Danish, Dutch, French, German, Italian, Spanish, and Japanese |
