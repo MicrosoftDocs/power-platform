@@ -52,7 +52,7 @@ You can disable the copilots and generative AI features in non-US environments b
 > [!Note]
 > Any data movement that happened while this feature was enabled cannot be reversed by removing your consent.
 
-### Geographical availability of copilots and generative AI features
+## Geographical availability of copilots and generative AI features
 
 Currently all the Power Platform and Dynamics 365 copilots and generative features are available in the US region only. As the required infrastructure is available across other regions, copilots and generative AI features can be accessed from the same data boundary and opt-in consent is not required.
 
