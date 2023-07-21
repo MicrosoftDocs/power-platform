@@ -38,7 +38,7 @@ To see an overview of license usage:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
 1. From **Billing (preview)** select **Licences (preview)**.
 1. Select the **Overview** tab.
-1. Select **finance and operations** from the **Product** list.
+1. Select **Finance and operations** from the **Product** list.
 
 ### User license level overview
 
