@@ -1,6 +1,6 @@
 ### Remarks
 
-For the `deviceCode` parameter, the values to use map to these other common acronyms or names:
+For the `cloud` parameter, the values to use map to these other common acronyms or names:
 
 - GCC = `UsGov`
 - GCC High = `UsGovHigh`
