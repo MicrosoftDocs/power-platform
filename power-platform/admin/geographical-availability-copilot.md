@@ -58,7 +58,7 @@ Currently all the Power Platform and Dynamics 365 copilots and generative featur
 
 The following table indicates the availability of copilots and generative AI features in non-US environments.
 
-| Product | Feature name  | Regions available without consent | Available in non-US region with consent | Language support |
+| Product | Feature  | Regions available without consent | Available in non-US region with consent | Language support |
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
 | Dynamics 365 Marketing | **Content Ideas: Discoverability and first use UX improvements**</br>(doc link) | US | No | English |
 | Dynamics 365 Marketing  | **Query Assist: Natural language to segment<br /></br>**(doc link) | US | No | English |
@@ -84,7 +84,7 @@ The following table indicates the availability of copilots and generative AI fea
 | AI Builder | **Text Generation with GPT**<br /></br>(doc link) | US | Yes | English |
 | Power Apps | **Maker Copilot (NL2Table)**<br /></br>(doc link) | US | No | English |
 | Power Apps | **Maker Copilot: (NL2Edit)**</br>(doc link) | US | No | English |
-|  Power Apps| **App Copilot for canvas Power Apps**</br>(doc link - [Add Copilot control to a canvas app](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fpower-apps%2Fmaker%2Fcanvas-apps%2Fadd-ai-copilot&amp;data=05%7C01%7CSidhartha.Gundavarapu%40microsoft.com%7C35658fc11c624c52cba708db84c7ce1a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638249766110760978%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=M2%2BaRQy6cOK17%2BiI1%2F7JQGm0rvEUvuzZMj6q3S5nXkI%3D&amp;reserved=0)) | US | No | English |
+|  Power Apps| [Add Copilot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot) | US | No | English |
 | Power Apps | **App Copilot for model Power Apps and Dynamics 365**</br>(doc link) | US | No | English |
 | Power Automate | **Power Automate Designer Copilot**</br>(doc link) | US | No | English |
 | Power Pages| **C2 Copilot (PVA Chatbot)<br /></br>**(doc link) | US | No | English, Danish, Dutch, French, German, Italian, Spanish, and Japanese |
