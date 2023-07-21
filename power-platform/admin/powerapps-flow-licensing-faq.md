@@ -27,10 +27,6 @@ See the FAQ: [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/s
 
 Yes, non-profit, government and academic pricing is available in respective program channels.
 
-### What happened to the Power Apps and Power Automate Plan 1 and Plan 2 plans after December 31, 2020?
-
-Power Apps P1 and P2 and Power Automate P1 and P2 plans are no longer available for purchase, including via auto-renewal, after December 31, 2020. Customers with these plan licenses that have renewals falling on or after January 1, 2021 must transition to the Power Apps per user or per app plans, or the Power Automate per user or per flow plans to continue using the Microsoft Power Platform services. Contact your Microsoft account rep for more information.
-
 ### Is there a plan for developers?
 
 Yes, we have a free Developer Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/developerplan/).
@@ -57,13 +53,15 @@ More information is available [here](./api-request-limits-allocations.md).
 
 ### How is Microsoft Power Apps licensed? 
 
-- **Power Apps per app plan** which allows individual users to run applications (one app or one portal) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
+- **Power Apps Premium** is licensed per user and entitles the licensed user to build, modernize, and run unlimited custom applications and access unlimited websites for $20/user/month (or $12 per user/month with 2,000+ new user licenses).
 
-- **Power Apps per user plan** which equips a user to run unlimited applications (within service limits) based on the full capabilities of Power Apps for $20/user/month.
+- **Power Apps per per app** enables individual users to run applications (one app or one portal) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
 
-- **Power Apps pay-as-you-go plan** which allows individual users to run applications (1 app or 1 portal) without any licenses via Azure subscription. You only pay for the number of users who used the app in a month. See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
+- **Power Apps pay-as-you-go plan** allows individual users to run applications (1 app) without any licenses via an Azure subscription. You postpay only for the number of users who used the app in a month. See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
-See [Power Apps pricing](https://powerapps.microsoft.com/pricing/).
+### What is the difference between the legacy Power Apps per user offer and the Power Apps Premium offer?
+
+There is no difference between these two offers. Power Apps per user has simply been renamed *Power Apps Premium*.
 
 ### How do I use Power Apps per app plans? 
 See [About Power Apps per app plans](about-powerapps-perapp.md).
@@ -94,7 +92,7 @@ Also, the guest must have the same license that’s required for non-guests to r
 
 Power Apps licenses will continue to include Power Automate capabilities. However, flows will need to run within the context of the app, which refers to using the same data sources for triggers or actions as the app. Consuming standalone Power Automate flows unrelated to the app(s) will require purchase of a standalone Power Automate license.
 
-### Do all my users need to be licensed with the same Power Apps plan, or can I mix plans?
+### Do all my users need to be licensed with the same types of Power Apps licenses, or can I mix licenses?
 
 You can mix and match Power Apps licenses, and licenses that include Power Apps capabilities, across the users in your organization.
 
