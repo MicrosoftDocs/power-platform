@@ -47,7 +47,7 @@ You can disable the copilots and generative AI features in non-US environments b
 
 4.  Select **Disable**.
 
-  After you remove your consent, the status on the **Allow data movement across regions for AI features** card shows **Not allowed** and copilots and generative AI features are disabled in the environment.
+    After you remove your consent, the status on the **Allow data movement across regions for AI features** card shows **Not allowed** and copilots and generative AI features are disabled in the environment.
 
 > [!Note]
 > Any data movement that happened while this feature was enabled cannot be reversed by removing your consent.
