@@ -258,6 +258,8 @@
                       href: create-team-template-add-entity-form.md
                     - name: Users
                       href: users-settings.md
+                    - name: Plug-in steps
+                      href: plug-ins.md
                 - name: Audit and logs
                   items:
                     - name: Audit log management
