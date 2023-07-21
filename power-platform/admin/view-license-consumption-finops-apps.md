@@ -1,6 +1,6 @@
 ---
-title: View license consumption for Finance and Operations apps in Power Platform admin center (preview)
-description: Learn how to view your organization's Power Apps license consumption for Finance and Operations apps. 
+title: View license consumption for finance and operations apps in Power Platform admin center (preview)
+description: Learn how to view your organization's Power Apps license consumption for finance and operations apps. 
 author: KendalBond007
 ms.date: 07/19/2023
 ms.reviewer: sericks
@@ -12,17 +12,17 @@ search.audienceType:
  - admin
 ---
 
-# View license consumption for Finance and Operations apps in Power Platform admin center (preview)
+# View license consumption for finance and operations apps in Power Platform admin center (preview)
 
 <!-- fwlink: https://go.microsoft.com/fwlink/?linkid=2206011 -->
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-You can use the **Licenses (preview)** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to see how different user licenses are consumed in your Finance and Operations environments. With this information, you can get answers to questions like:
+You can use the **Licenses (preview)** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to see how different user licenses are consumed in your finance and operations environments. With this information, you can get answers to questions like:
 
-- What types of Finance and Operations licenses do you have available for your tenant?
+- What types of finance and operations licenses do you have available for your tenant?
 - How many licenses have been assigned to users?
-- How many roles have been assigned to users in different Finance and Operations environments, and what licenses are needed based on their role assignment?
+- How many roles have been assigned to users in different finance and operations environments, and what licenses are needed based on their role assignment?
 - Are there additional licenses needed based on role assignments in your tenant?
 
 > [!IMPORTANT]
@@ -38,7 +38,7 @@ To see an overview of license usage:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
 1. From **Billing (preview)** select **Licences (preview)**.
 1. Select the **Overview** tab.
-1. Select **Finance and Operations** from the **Product** list.
+1. Select **finance and operations** from the **Product** list.
 
 ### User license level overview
 
@@ -46,10 +46,10 @@ The **User license level overview** section provides a summary count of user lic
 
 | Information | Description |
 | ------- | ----------- |
-| User license level | Type of Finance and Operations license available, or required by the tenant. |
+| User license level | Type of finance and operations license available, or required by the tenant. |
 | Available seats | Number of seats for a user license level available for the tenant. |
 | Assigned seats | Number of users who are assigned licenses. |
-| Required seats | Number of users who need licenses based on role assignment in Finance and Operations environments. |
+| Required seats | Number of users who need licenses based on role assignment in finance and operations environments. |
 | License utilization status | This status is calculated by comparing the number of roles assigned versus the number of licenses available |
 
 You can view the individual licenses mapped to a license level, and the number of seats available for the individual license by selecting the number in the **Available seats** for a specific user license level.
@@ -72,9 +72,9 @@ The following is a screenshot of the **Licences (preview)** page displaying **Us
 :::image type="content" source="media/admin-view-user-licenses/finops-apps-drill-down.png" alt-text="Screenshot of the Licenses (preview) page, including User license level.":::
 
 You can filter the view using **Environment, Security role, Role license** and **Assigned license** filters.
-Select an **Email/User ID** to view the details of all roles assigned to the selected user across all Finance and Operations environments in the tenant. This view also provides recommendations on what licenses should be assigned to the user based on the user's assigned roles. This can be see in the following image.
+Select an **Email/User ID** to view the details of all roles assigned to the selected user across all finance and operations environments in the tenant. This view also provides recommendations on what licenses should be assigned to the user based on the user's assigned roles. This can be see in the following image.
 
-:::image type="content" source="media/admin-view-user-licenses/finops-apps-email-userid-sort.png" alt-text="Screenshot of the details of all roles assigned to a selected user across all Finance and Operations enviornments in a tenant.":::
+:::image type="content" source="media/admin-view-user-licenses/finops-apps-email-userid-sort.png" alt-text="Screenshot of the details of all roles assigned to a selected user across all finance and operations enviornments in a tenant.":::
 
 ## Download
 
