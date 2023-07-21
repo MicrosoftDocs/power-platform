@@ -250,6 +250,42 @@ Follow these steps to apply unattended RPA add-ons for your flows.
 
 Learn more: [Assign licenses and manage access to Power Virtual Agents](/power-virtual-agents/requirements-licensing)
 
+### What are the pricing and licensing details for Power Virtual Agents?
+
+-   List price (USD): $200 per tenant/month. This is a limited time offer available through December 31, 2023. See the [pricing page](https://powervirtualagents.microsoft.com/en-us/pricing/) for details.
+
+-   Entitlements: Licensed by tenant, Power Virtual Agents entitles a tenant to 2,000 chat sessions per tenant/month enabling the tenant to deploy chatbots and create cloud flows within the context of the Power Virtual Agents bots.
+
+### Power Virtual Agents capacity add-on
+
+#### What are the pricing and licensing details for Power Virtual Agents capacity add-on?
+
+-   List Price (USD): $100 per tenant/month. This is a limited time offer available through December 31, 2023. See the [pricing page](https://powervirtualagents.microsoft.com/en-us/pricing/) for details.
+
+-   Entitlements: Licensed by tenant, the capacity add-on adds 1,000 chat sessions per tenant/month increasing the number of chat bot sessions per tenant.
+
+### Power Virtual Agents per user
+
+#### What are the pricing and licensing details for Power Virtual Agents capacity add-on?
+
+-   List price (USD): $0 per user/month
+
+-   Entitlements: Licensed by user, the Power Virtual Agents per user license is required for each user authoring bots. It is recommended to acquire the tenant license (with the capacity add-on if needed) and user licenses as part of a single transaction to simplify onboarding to Power Virtual Agents.
+
+#### How do Power Virtual Agents use rights that come with Microsoft 365 of Office 365 licenses compare with use rights for the full Power Virtual Agents licenses?
+
+Power Virtual Agents for Teams enables customers with select Microsoft 365 or Office 365 licenses to build and deploy custom chatbots directly within Teams, using Dataverse for Teams as opposed to Dataverse. Additionally, chat sessions are unlimited per tenant/month. A service limit of 10 sessions per user per 24 hours across all bots in a tenant is enforced.
+
+#### Are there additional Power Virtual Agents licensing requirements to create and edit with Copilot?
+
+-   Your bot must be created in the US region.
+
+-   You'll need a Power Virtual Agents license and you will need to create an account.
+
+    -   If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart) for building bots with GPT.
+
+-   This capability may be subject to usage limits or capacity throttling.
+
 ## Power Pages
 
 ### How is Power Pages licensed?
