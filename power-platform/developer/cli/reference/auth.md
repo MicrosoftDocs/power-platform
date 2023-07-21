@@ -70,6 +70,13 @@ Optional: The client secret to authenticate with
 
 Optional: The cloud instance to authenticate with
 
+Use one of these values:
+- Public
+- UsGov
+- UsGovHigh
+- UsGovDod
+- China
+  
 #### `--deviceCode` `-dc`
 
 Use the Azure Active Directory Device Code flow for interactive sign-in.
