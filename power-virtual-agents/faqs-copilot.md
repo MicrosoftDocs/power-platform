@@ -1,4 +1,6 @@
 ---
+// does this work as a comment
+<!-- what about this -->
 title: FAQ for copilot
 description: This FAQ provides information about the AI technology used in Power Virtual Agents, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 7/13/2023
@@ -6,6 +8,8 @@ ms.custom:
   - responsible-ai-faqs
 ms.topic: article
 author: iaanw
+// does this work as a comment
+<!-- what about this -->
 ms.author: iawilt
 ms.reviewer: iawilt
 ---
