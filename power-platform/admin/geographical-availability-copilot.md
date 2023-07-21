@@ -26,11 +26,11 @@ You can allow copilots in your non-US environments by following these steps:
 
 1.  Select **Edit** on the **Allow data movement across regions for AI features** card.
 
-    ![A screenshot of a computer Description automatically generated](media/allow-data-movement.png)
+    ![Select **Edit** on the **Allow data movement across regions for AI features** card.](media/allow-data-movement.png)
 
 1.  Read the information on the panel and select the check mark to consent to the terms of use.
 
-    ![A screenshot of a computer Description automatically generated](media/terms-of-use.png)
+    ![Select the check mark to consent to the terms of use.](media/terms-of-use.png)
 
 1.  Select **Enable**.
 
