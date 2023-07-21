@@ -78,7 +78,7 @@ On the **Activity** bar. you notice the icon for the Power Platform Tools.
 
 The final check would be to launch the terminal window and type `pac`.
 
-:::image type="content" source="media/installation-success-2.png" alt-text="PAC CLI in the terminal window":::
+:::image type="content" source="media/installation-success-2-v2.png" alt-text="PAC CLI in the terminal window":::
 
 ### Uninstall Power Platform Tools for Visual Studio Code
 
