@@ -8,8 +8,8 @@ The class derived from <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext
 For more information about the capabilities that this code generation tool enables:
 
 - [Late-bound and early-bound programming using the Organization service](/power-apps/developer/data-platform/org-service/early-bound-programming)
-- [Use OrganizationServiceContext](/developer/data-platform/org-service/organizationservicecontext)
-- [Build queries with LINQ](/developer/data-platform/org-service/build-queries-with-linq-net-language-integrated-query)
+- [Use OrganizationServiceContext](/power-apps/developer/data-platform/org-service/organizationservicecontext)
+- [Build queries with LINQ](/power-apps/developer/data-platform/org-service/build-queries-with-linq-net-language-integrated-query)
 
 > [!NOTE]
 > The `pac modelbuilder build` command replaces the `CrmSvcUtil.exe` distributed with the [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGet package.
