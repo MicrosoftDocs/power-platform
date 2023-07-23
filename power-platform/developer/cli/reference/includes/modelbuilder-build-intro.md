@@ -4,7 +4,7 @@
 
 ### Example
 
-The following example shows how to use the `build` command with PowerShell.
+The following example shows how to use the `build` command with a command prompt.
 
 <!-- 
 We should use the full parameter names for examples. The alias are too cryptic for beginners.
@@ -13,16 +13,33 @@ Showing the commands on multiple lines that end in '`', allows them to see the f
 just copy and paste the command to try them.
 -->
 
+
+```dos
+pac modelbuilder build ^
+  --entitynamesfilter account;contact ^
+  --generatesdkmessages ^
+  --emitfieldsclasses ^
+  --emitVirtualAttributes ^
+  --namespace MyApps.Model ^
+  --outdirectory c:\src\MyApps\Model ^
+  --writesettingsTemplateFile
+```
+
+And the same command using PowerShell:
+
 ```powershell
 pac modelbuilder build `
-  --entitynamesfilter account;contact `
+  --entitynamesfilter 'account;contact' `
   --generatesdkmessages `
   --emitfieldsclasses `
   --emitVirtualAttributes `
   --namespace MyApps.Model `
-  --outdirectory c:\src\MyApps\Model `
+  --outdirectory 'c:\src\MyApps\Model' `
   --writesettingsTemplateFile
 ```
+
+> [!IMPORTANT]
+> You need to surround any string parameters with single quotes when using PowerShell.
 
 The result of this command is that the following files are written to the `c:\src\MyApps\Model` folder.
 
