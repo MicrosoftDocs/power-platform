@@ -348,7 +348,6 @@ The Power Pages authenticated per user and Power Pages anonymous per user offers
 | Tier 2 | 20 packs | 10,000+ users | $37.50 |   
 | Tier 3 | 200 packs | 100,000+ users | $25 |   
 
-
 Price quoted above are list prices for commercial channel, special prices are offered for education and non-profit customers.
 
 ### Does Power Pages licenses include Dataverse storage?
