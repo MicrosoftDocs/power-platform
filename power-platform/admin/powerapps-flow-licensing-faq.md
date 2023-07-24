@@ -125,7 +125,8 @@ This new offer includes all the benefits of Power Automate per user with attende
 -   List Price (USD): $150 per user/month
 -   Entitlements: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), OR business critical processes that need to be accessed by unlimited users within an organization
 
-Note: Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating M/O365 require the Microsoft 365 - Unattended License. Please see the Product Terms for more information
+> [!Note]
+> Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating M/O365 require the Microsoft 365 - Unattended License. Please see the Product Terms for more information
 
 #### Are there minimum purchase requirements for Power Automate Process?
 
@@ -166,7 +167,8 @@ Process Mining Desktop capability and limited amount of Process Mining data stor
 
 Power BI licenses are not included in Power Automate Process Mining. In order to customize and analyze your process mining results further, you may want to acquire additional Power BI Pro\*, Power BI per user or Power BI premium capacity licenses if you haven't already done so. Pricing & Product Comparison \| Microsoft Power BI
 
-\*Please note, Power BI Pro is included in Microsoft 365 E5 and Office 365 E5
+> [!Note]
+> Power BI Pro is included in Microsoft 365 E5 and Office 365 E5.
 
 #### Can customers use the Power Platform Admin Center (PPAC) to assess their highest monthly Process Mining usage?
 
@@ -194,7 +196,8 @@ The Power Automate Premium trial will include 100 MB of Process Mining stored da
     -   Multiple hosted RPA add-on licenses can be added with a single qualifying base license.
     -   Concurrent instances of a singular process require an additional unattended bot for each instance.
 
--   Note: Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating M/O365 require the Microsoft 365 - Unattended License. Please see the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
+> [!Note]
+>  Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating M/O365 require the Microsoft 365 - Unattended License. Please see the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
 
 ### Is per flow an eligible pre-requisite for the Hosted RPA add-on?
 
@@ -578,17 +581,15 @@ This capability isn't available yet, but is included in our roadmap.
 
 -   Governance and security
 
-** Note**
-
-Accessing an environment with Dataverse requires all users to have a corresponding standalone Microsoft Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
+> [!Note]
+> Accessing an environment with Dataverse requires all users to have a corresponding standalone Microsoft Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
 
 ### **Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
 No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Dataverse capabilities with Microsoft 365 licenses](pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses) for more details on the feature.
 
-** Note**
-
-There is a service plan called *Dataverse for Teams* that is related to the Dataverse for Teams capabilities. This service plan is used by our platform for granting customer tenants Dataverse for Teams storage capacity and should not be deactivated.
+> [!Note]
+> There is a service plan called *Dataverse for Teams* that is related to the Dataverse for Teams capabilities. This service plan is used by our platform for granting customer tenants Dataverse for Teams storage capacity and should not be deactivated.
 
 ### Is geo migration supported for Dataverse for Teams environments?
 
