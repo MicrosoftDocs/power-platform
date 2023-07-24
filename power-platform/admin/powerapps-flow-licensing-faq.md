@@ -360,8 +360,8 @@ Yes, Dataverse database and Dataverse file capacity is included with the authent
 
 ### How many users are included in each capacity pack for Power Pages licenses?
 
-1. **Power Pages authenticated user/website subscription** – Each pack consists of 100 users. This is same for all tiers.
-1. **Power Pages anonymous user/website subscription –** Each pack consists of 500 users. This is same for all tiers.
+- **Power Pages authenticated user/website subscription** – Each pack consists of 100 users. This is same for all tiers.
+- **Power Pages anonymous user/website subscription –** Each pack consists of 500 users. This is same for all tiers.
 
 ### What are the Power Pages use rights included with Power Apps and Dynamics 365 enterprise licenses?
 
@@ -377,12 +377,10 @@ Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses
 |-------------------------|-------------------------|-------------------------|
 | **Provisioning a website** | Every additional website in the environment requires 1 GB of Dataverse capacity | No Dataverse capacity is required to provision a website |
 | **Qualifying base offers** | Dynamics 365 and Power Apps licenses | No base offer is required and licenses can be purchased standalone |
-| **Licenses required for internal authenticated users** | Dynamics 365 enterprise licenses<br /></br>Power Apps per app plan<br /></br>Power Apps per user plan<br /></br>Power Apps per app pay-as-you-go meter | Dynamics 365 enterprise licenses<br /></br>Power Apps per app plan<br /></br>Power Apps per user plan<br /></br>(New) Authenticated per user/website subscription<br /></br><del>(New)</del> <del>Authenticated</del> <del>user pay-as-you-go meter</del> |
-| **Licenses required for external authenticated Users** | Power Apps portals logins capacity (one login = daily unique login) | Authenticated per user/website subscription<br /></br><del>Authenticated user pay-as-you-go meter</del> |
-| **Licenses required for anonymous users** | Power Apps portals page view capacity | Anonymous per user/website subscription<br /></br><del>Anonymous user pay-as-you-go meter</del> |
-| **Dataverse storage** | Not included with Power Apps portals logins and page view capacity | Included with Power Pages subscription<br /></br>Included with Power Pages <del>pay-as-you-go meter</del> |
-| **<del>Pay-as-you-go model</del>** | <del>Not available</del> | <del>Available</del> |
-
+| **Licenses required for internal authenticated users** | Dynamics 365 enterprise licenses<br /></br>Power Apps per app plan<br /></br>Power Apps per user plan<br /></br>Power Apps per app pay-as-you-go meter | Dynamics 365 enterprise licenses<br /></br>Power Apps per app plan<br /></br>Power Apps per user plan<br /></br>(New) Authenticated per user/website subscription<br /></br> |
+| **Licenses required for external authenticated Users** | Power Apps portals logins capacity (one login = daily unique login) | Authenticated per user/website subscription<br /></br> |
+| **Licenses required for anonymous users** | Power Apps portals page view capacity | Anonymous per user/website subscription<br /></br>|
+| **Dataverse storage** | Not included with Power Apps portals logins and page view capacity | Included with Power Pages subscription<br /></br>Included with Power Pages  |
 
 ### If I'm building a Power Pages website for my employees who will log in using their Azure AD credentials. What Power Pages licenses do I need?
 
@@ -408,7 +406,8 @@ For example, in a scenario where a website was accessed by a total of 100 authen
 
 ### If I create a Power Pages website that can potentially be used by 100,000 authenticated users, however in a given month it will only be used by 5,000 users (out of the 100,000). Do I need to purchase authenticated per user capacity for 100,000 users or 5,000 users?**
 
-Power Pages authenticated per user/website is licensed based on the number of unique authenticated users who access the site in a month. In this example, the customer should purchase capacity for 5,000 users.  
+Power Pages authenticated per user/website is licensed based on the number of unique authenticated users who access the site in a month. In this example, the customer should purchase capacity for 5,000 users.
+
 The same is true if the users are anonymous and not authenticated.
 
 ### Do I require additional licensing for Power Pages content delivery network (CDN) and web application firewall (WAF) capabilities?
@@ -417,7 +416,7 @@ No. Both CDN and WAF capabilities are included as part of Power Pages licensing 
 
 ### For subscription-based licenses, what is the minimum number of authenticated and anonymous user capacity I need to assign to an environment?
 
-1. **Authenticated Users** -&gt; Minimum quantity that needs to be assigned to an environment is 25.
+1. **Authenticated Users**: Minimum quantity that needs to be assigned to an environment is 25.
 
 For example, if you have three websites (in three different environments) and bought one authenticated user pack (100 users), you can assign them in the following ways:
 
@@ -425,7 +424,7 @@ For example, if you have three websites (in three different environments) and bo
 -   Environment 2: 35 (min 25)
 -   Environment 3: 40 (min 25)
 
-2. **Anonymous Users-&gt;** Minimum 200 per environment. After that you can assign 1 at a minimum.
+2. **Anonymous Users**: Minimum 200 per environment. After that you can assign 1 at a minimum.
 
 For example, if you have two websites (in two different environments) and licensed one anonymous user pack (500 users), you can assign them in the following ways:
 
@@ -496,7 +495,7 @@ Dataverse for Teams and Power Virtual Agents for Teams capabilities will be avai
 
 Creation of Dataverse for Teams environments isn't available from the Power Platform admin center. Creation of new Dataverse for Teams environments will only be possible from within Teams.
 
-### **Can Dataverse for Teams be used outside of Teams?
+### Can Dataverse for Teams be used outside of Teams?
 
 Dataverse for Teams is designed to work in the Teams client across web, desktop and mobile. If you'd want to use Dataverse for Teams outside of Teams, you must upgrade your environment to Dataverse.
 
@@ -504,7 +503,7 @@ Dataverse for Teams is designed to work in the Teams client across web, desktop 
 
 Each Dataverse for Teams environment uniquely maps (1:1) to a Teams team and can store up to 1,000,000 records based on typical usage (enforced as 2 GB relational database storage per Dataverse for Teams environment). For details on service limits, including the tenant-level capacity limits associated with Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md).
 
-### **Can we control who can create environments with Dataverse for Teams?
+### Can we control who can create environments with Dataverse for Teams?
 
 Teams governs who can create and join a Team. The environment is created for a team when an owner or member tries to create an application in it.
 
@@ -577,7 +576,7 @@ This capability isn't available yet, but is included in our roadmap.
 > [!Note]
 > Accessing an environment with Dataverse requires all users to have a corresponding standalone Microsoft Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
 
-### **Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
+### Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
 No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Dataverse capabilities with Microsoft 365 licenses](pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses) for more details on the feature.
 
