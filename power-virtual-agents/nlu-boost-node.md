@@ -26,7 +26,6 @@ You can further boost your bot's conversations by using multiple internal and ex
 - Internal resources:
   - SharePoint
   - OneDrive for Business
-  - Dataverse
   - Custom data (internal or external): Supply your own content from any source, for example, from a Power Automate Flow, a Skill, or other source.
 
 You can also add information sources to a topic using the **Generative answers** node. This node allows you to specify sources that the node will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability.
