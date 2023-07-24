@@ -47,7 +47,7 @@ API capacity is tracked based on consumption at an individual user level, and th
 
 API limits are also applicable to application users, non-interactive users and administrative users in Dataverse.
 
-More information is available [here](admin/api-request-limits-allocations.md).
+More information is available [here](api-request-limits-allocations.md).
 
 ## Power Apps
 
@@ -336,20 +336,20 @@ The Power Pages authenticated per user and Power Pages anonymous per user offers
 
 ### Authenticated per user/website subscription capacity packs
 
-| Capacity Pack Tiers | Capacity Packs<br /></br>Minimum purchase | Number of users<br /></br>(100 users/capacity pack) | Price per capacity pack/month |  |
-|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-| Tier 1 | 1 pack | 100+ users | $200 |  |
-| Tier 2 | 100 packs | 10,000+ users | $75 |  |
-| Tier 3 | 1,000 packs | 100,000+ users | $50 |  |
+| Capacity Pack Tiers | Capacity Packs<br /></br>Minimum purchase | Number of users<br /></br>(100 users/capacity pack) | Price per capacity pack/month |  
+|-------------------------|-------------------------|-------------------------|-------------------------|
+| Tier 1 | 1 pack | 100+ users | $200 |  
+| Tier 2 | 100 packs | 10,000+ users | $75 |  
+| Tier 3 | 1,000 packs | 100,000+ users | $50 |  
 
 
 ### Anonymous per user/website subscription capacity packs
 
-| Capacity Pack Tiers | Capacity Packs<br /></br>Minimum purchase | Number of users<br /></br>(500 users/capacity pack) | Price per capacity pack/month |  |
-|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-| Tier 1 | 1 pack | 500+ users | $75 |  |
-| Tier 2 | 20 packs | 10,000+ users | $37.50 |   |
-| Tier 3 | 200 packs | 100,000+ users | $25 |   |
+| Capacity Pack Tiers | Capacity Packs<br /></br>Minimum purchase | Number of users<br /></br>(500 users/capacity pack) | Price per capacity pack/month |  
+|-------------------------|-------------------------|-------------------------|-------------------------|
+| Tier 1 | 1 pack | 500+ users | $75 |  
+| Tier 2 | 20 packs | 10,000+ users | $37.50 |   
+| Tier 3 | 200 packs | 100,000+ users | $25 |   
 
 
 Price quoted above are list prices for commercial channel, special prices are offered for education and non-profit customers.
