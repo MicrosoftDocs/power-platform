@@ -1,5 +1,5 @@
 ---
-title: Use Copilot to generate deployment notes in Pipelines (preview)
+title: Use Copilot to generate deployment notes in pipelines (preview)
 description: Learn how to use Copilot to generate deployment notes during pipeline deployments.
 author: ASheehi1
 ms.author: matp
@@ -9,7 +9,7 @@ contributors:
    - ASheehi1
 ms.custom: template-how-to
 ---
-# Use Copilot to generate deployment notes in Pipelines (preview)
+# Use Copilot to generate deployment notes in pipelines (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -28,7 +28,7 @@ Solutions can become complex, often containing dozens of components that are dif
 
 ## Disable AI-generated deployment notes
 
-1. Go to the **Deployment Pipeline Configuration** app in the Pipelines Host environment.
+1. Go to the **Deployment Pipeline Configuration** app in the pipelines Host environment.
 2. Select **Pipelines** in the left navigation bar.
 3. Click the pipeline that you would like to disable AI for.
 4. Set "AI deployment notes" to **Disabled** via the dropdown.
