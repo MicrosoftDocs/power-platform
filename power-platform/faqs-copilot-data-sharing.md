@@ -2,7 +2,7 @@
 title: "FAQ for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform"
 description: "This FAQ describes the optional data sharing setting for Copilot AI features in Dynamics 365 and Power Platform and how Microsoft responsibly uses your data."
 author: amishastri 
-ms.date: 06/29/2023
+ms.date: 07/18/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -16,7 +16,7 @@ These frequently asked questions (FAQ) article describes information related to 
 
 ## What is data sharing for Copilot AI features?
 
-Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s machine learning models, features, services, and related systems.
+Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s machine learning models, features, services, and related systems. Microsoft won't use your data to improve OpenAI foundational models.
 
 ## What are the benefits of opting in?
 
