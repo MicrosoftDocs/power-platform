@@ -21,7 +21,7 @@ Provides answers to Power Platform products in general.
 
 ### What are the self-service purchase options for the Microsoft Power Platform products?
 
-See the FAQ: [Self-service purchase FAQ](https://learn.microsoft.com/en-us/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities).
+See the FAQ: [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities).
 
 ### Is non-profit, government, and academic pricing available?
 
@@ -33,11 +33,11 @@ Yes, we have a free Developer Plan to learn and build skills on Power Apps, Powe
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
-You can buy additional data storage, file storage and flow runs. See [Licensing overview for Microsoft Power Platform](https://learn.microsoft.com/en-us/power-platform/admin/pricing-billing-skus).
+You can buy additional data storage, file storage and flow runs. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 ### Who can buy Microsoft Platform apps plans?
 
-Any customer can sign up for a [free trial](https://learn.microsoft.com/en-us/power-platform/admin/try-powerapps-dynamics-365). Microsoft 365 admins can buy Power Platform apps plans for their teams or organization. Contact your Microsoft 365 admin when you're ready to buy.
+Any customer can sign up for a [free trial](try-powerapps-dynamics-365.md). Microsoft 365 admins can buy Power Platform apps plans for their teams or organization. Contact your Microsoft 365 admin when you're ready to buy.
 
 ### Are there limits on the number of API requests users can make?
 
@@ -47,7 +47,7 @@ API capacity is tracked based on consumption at an individual user level, and th
 
 API limits are also applicable to application users, non-interactive users and administrative users in Dataverse.
 
-More information is available [here](https://learn.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations).
+More information is available [here](admin/api-request-limits-allocations.md).
 
 ## Power Apps
 
@@ -57,7 +57,7 @@ More information is available [here](https://learn.microsoft.com/en-us/power-pl
 
 - **Power Apps per app** enables individual users to run applications (one app or one portal) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
 
-- **Power Apps pay-as-you-go** allows individual users to run applications (1 app) without any licenses via an Azure subscription. You postpay only for the number of users who used the app in a month. See [Preview: Pay-as-you-go plan](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-overview).
+- **Power Apps pay-as-you-go** allows individual users to run applications (1 app) without any licenses via an Azure subscription. You postpay only for the number of users who used the app in a month. See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 See [Power Apps pricing](https://powerapps.microsoft.com/pricing/) for details.
 
@@ -67,11 +67,11 @@ There is no difference between these two offers, Power Apps per user has simply 
 
 ### How do I use Power Apps per app plans?
 
-See [About Power Apps per app plans](https://learn.microsoft.com/en-us/power-platform/admin/about-powerapps-perapp).
+See [About Power Apps per app plans](about-powerapps-perapp.md).
 
 ### How do I use Power Apps pay-as-you-go plan?
 
-See [Preview: Pay-as-you-go plan](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-overview).
+See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 ### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
@@ -91,7 +91,7 @@ The guest user must have a Power Apps license assigned through one of the follow
 
 -   The home tenant of the guest user
 
-Also, the guest must have the same license that's required for non-guests to run an app. A collection of examples is available [here](https://learn.microsoft.com/en-us/powerapps/maker/canvas-apps/share-app-guests#frequently-asked-questions).
+Also, the guest must have the same license that's required for non-guests to run an app. A collection of examples is available [here](/powerapps/maker/canvas-apps/share-app-guests#frequently-asked-questions).
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
 
@@ -105,7 +105,7 @@ You can mix and match Power Apps licenses, and licenses that include Power Apps 
 
 ### How is Microsoft Power Automate licensed?
 
-See [Types of Power Automate licenses](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types), [Frequently asked questions about Power Automate licenses](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/faqs) and [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for details.
+See [Types of Power Automate licenses](power-automate-licensing/types.md), [Frequently asked questions about Power Automate licenses](power-automate-licensing/faqs.md) and [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for details.
 
 ### Power Automate Premium
 
@@ -233,7 +233,7 @@ Follow these steps to apply unattended RPA add-ons for your flows.
 
 ## Power Virtual Agents
 
-Learn more: [Assign licenses and manage access to Power Virtual Agents](https://learn.microsoft.com/en-us/power-virtual-agents/requirements-licensing)
+Learn more: [Assign licenses and manage access to Power Virtual Agents](/power-virtual-agents/requirements-licensing)
 
 ### What are the pricing and licensing details for Power Virtual Agents?**
 
@@ -265,7 +265,7 @@ Power Virtual Agents for Teams enables customers with select M/O365 licenses to 
 
 -   Your bot must be created in the US region.
 -   You'll need a Power Virtual Agents license and you will need to create an account.
-    -   (If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the <u>[Quickstart guide](https://learn.microsoft.com/en-us/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
+    -   (If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
 -   This capability may be subject to usage limits or capacity throttling.
 
 ## Power Pages
@@ -329,7 +329,7 @@ However, it's important to ensure that rest of the site is made authenticated. T
 
 ### How much does these licenses cost?
 
-The Power Pages authenticated per user and Power Pages anonymous per user offers serve both small and large customer scenarios with a low barrier to entry, and easily scale for high-volume growth. Subscription and [pay-as-you-go](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-meters?tabs=image#power-pages-meters-preview) pricing is detailed below.
+The Power Pages authenticated per user and Power Pages anonymous per user offers serve both small and large customer scenarios with a low barrier to entry, and easily scale for high-volume growth. Subscription and [pay-as-you-go](pay-as-you-go-meters.md?tabs=image#power-pages-meters-preview) pricing is detailed below.
 
 ### Authenticated per user/website subscription capacity packs
 
@@ -482,7 +482,7 @@ To deliver a comprehensive low-code extensibility platform for Microsoft Teams, 
 
 Dataverse for Teams is a built-in flexible datastore that provides data storage and a one-click solution for (app/chatbot) deployment in Teams. With the addition of Dataverse for Teams:
 
--   Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams. This includes using custom [APIs built using Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/export-api-power-platform).
+-   Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams. This includes using custom [APIs built using Azure API Management](/azure/api-management/export-api-power-platform).
 
 -   Additionally, Power Virtual Agents capabilities are being introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams only.
 
@@ -506,7 +506,7 @@ Dataverse for Teams is designed to work in the Teams client across web, desktop 
 
 ### Is there a limit to Dataverse for Teams capacity? How many Dataverse for Teams environments can be created in a tenant?
 
-Each Dataverse for Teams environment uniquely maps (1:1) to a Teams team and can store up to 1,000,000 records based on typical usage (enforced as 2 GB relational database storage per Dataverse for Teams environment). For details on service limits, including the tenant-level capacity limits associated with Dataverse for Teams, see [About the Dataverse for Teams environment](https://learn.microsoft.com/en-us/power-platform/admin/about-teams-environment).
+Each Dataverse for Teams environment uniquely maps (1:1) to a Teams team and can store up to 1,000,000 records based on typical usage (enforced as 2 GB relational database storage per Dataverse for Teams environment). For details on service limits, including the tenant-level capacity limits associated with Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md).
 
 ### **Can we control who can create environments with Dataverse for Teams?
 
@@ -520,7 +520,7 @@ A Dataverse for Teams environment is deleted when the associated Team is deleted
 
 When the environment capacity limits are reached (2 GB per environment) new solutions (apps, chatbots, flows) can't be created or installed in that specific Dataverse for Teams environment.
 
-When the tenant capacity service limits are reached (grows with the \# of eligible Microsoft 365 USLs in the tenant as explained [here](https://learn.microsoft.com/en-us/power-platform/admin/about-teams-environment):
+When the tenant capacity service limits are reached (grows with the \# of eligible Microsoft 365 USLs in the tenant as explained [here](about-teams-environment.md):
 
 -   New apps, chatbots, flows, or tables can't be created or installed in any Dataverse for Teams environment.
 
@@ -560,7 +560,7 @@ No. Dataverse for Teams provides support for approximately 1 million rows per te
 
 1.  Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in an environment.
 
-2.  [Upgrade](https://learn.microsoft.com/en-us/power-platform/admin/about-teams-environment#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
+2.  [Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
 ### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into an environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
 
@@ -568,7 +568,7 @@ This capability isn't available yet, but is included in our roadmap.
 
 ### Other than adding capacity, what are the other reasons to upgrade a Dataverse for Teams environment?
 
-[Upgrading](https://learn.microsoft.com/en-us/power-platform/admin/about-teams-environment#upgrade-process) an environment from Dataverse for Teams to Dataverse will enable customers to take advantage of additional capacity, capabilities, such as:
+[Upgrading](about-teams-environment.md#upgrade-process) an environment from Dataverse for Teams to Dataverse will enable customers to take advantage of additional capacity, capabilities, such as:
 
 -   Enterprise ALM, data types
 
@@ -584,7 +584,7 @@ Accessing an environment with Dataverse requires all users to have a correspondi
 
 ### **Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
-No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Dataverse capabilities with Microsoft 365 licenses](https://learn.microsoft.com/en-us/power-platform/admin/pricing-billing-skus#dataverse-capabilities-with-microsoft-365-licenses) for more details on the feature.
+No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Dataverse capabilities with Microsoft 365 licenses](pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses) for more details on the feature.
 
 ** Note**
 
@@ -602,13 +602,13 @@ AI Builder is a capacity add-on to paid, select Power Apps, Power Automate, and 
 
 -   More details about licensing can be found in the Microsoft Power Apps and Power Automate Licensing Guide.
 
--   Information about how to allocate capacity in the Power Platform admin center can be found [here](https://learn.microsoft.com/en-us/power-platform/admin/capacity-add-on).
+-   Information about how to allocate capacity in the Power Platform admin center can be found [here](capacity-add-on.md).
 
 ### How is AI Builder capacity enforced?
 
 The AI Builder capacity add-on is an annual subscription, and capacity is enforced on a monthly basis. Capacity should be purchased for the peak utilization monthly period.
 
-Information about how to allocate AI Builder capacity to your environment is available [here](https://learn.microsoft.com/en-us/power-platform/admin/capacity-add-on).
+Information about how to allocate AI Builder capacity to your environment is available [here](capacity-add-on.md).
 
 ### Can AI Builder capacity be added to the P1 and P2 plans for Power Apps and Power Automate that are being retired?
 
@@ -616,7 +616,7 @@ Yes. AI Builder capacity can be added to the P1 and P2 plans for Power Apps and 
 
 ### What is a "service credit" and how does it work?
 
-AI Builder includes several model types, including custom and prebuilt – a full list is available [here](https://learn.microsoft.com/en-us/ai-builder/model-types#model-types).
+AI Builder includes several model types, including custom and prebuilt – a full list is available [here](/ai-builder/model-types#model-types).
 
 AI models consume service credits when they are trained, used in an app or flow, or scheduled to periodically run. The amount of capacity consumed varies based the AI model, as well as the size and complexity of the data set.
 
@@ -626,9 +626,9 @@ Each user license grants you 5000 credits, allowing you to assess the capabiliti
 
 ### Which AI models are available for free in public preview and which are in paid GA status?
 
-The release status for AI Builder features is available [here](https://learn.microsoft.com/en-us/power-platform-release-plan/2020wave1/ai-builder/).
+The release status for AI Builder features is available [here](/power-platform-release-plan/2020wave1/ai-builder/).
 
-AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found [here](https://learn.microsoft.com/en-us/ai-builder/model-types#model-types).
+AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found [here](/ai-builder/model-types#model-types).
 
 ### Is a trial available for AI Builder?
 
@@ -638,9 +638,9 @@ Users without an existing Power Apps or Power Automate license can access AI Bui
 
 Learn more:
 
--   [How do pay-as-you-go meters work?](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-meters)
+-   [How do pay-as-you-go meters work?](pay-as-you-go-meters.md)
 
--   [Frequently asked questions](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-issues-faq#frequently-asked-questions)
+-   [Frequently asked questions](pay-as-you-go-issues-faq.md#frequently-asked-questions)
 
 ## Add-ons
 
@@ -676,11 +676,11 @@ Yes, with the Power Apps Developer Plan you get a free environment for individua
 
 ### How do I convert my trial environment to a production environment?
 
-More information is available [here](https://learn.microsoft.com/en-us/power-platform/admin/trial-environments).
+More information is available [here](trial-environments.md).
 
 ### Where can I find more information about trial environments?
 
-For more information about trial environments in Power Apps read this [topic](https://learn.microsoft.com/en-us/power-platform/admin/trial-environments).
+For more information about trial environments in Power Apps read this [topic](trial-environments.md).
 
 ## Power Platform use rights included with Microsoft 365
 
@@ -725,7 +725,7 @@ Premium connectors list at October 2019 (will expand over time):
 
 Power Automate plan-based limits on trigger frequency and the number of runs allocated to a tenant per month are being removed.
 
-Power Apps and Power Automate usage will be subject to service limits described [here](https://learn.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations). Per user service limits provide capacity assurance for users and alleviate the risk of one user exhausting the tenant wide quota.
+Power Apps and Power Automate usage will be subject to service limits described [here](api-request-limits-allocations.md). Per user service limits provide capacity assurance for users and alleviate the risk of one user exhausting the tenant wide quota.
 
 ### How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct 1, 2019? Will my existing apps and Power Automate workflows continue to work?
 
