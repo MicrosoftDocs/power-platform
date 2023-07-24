@@ -13,11 +13,11 @@ ms.contributors:
 
 # Power Platform licensing FAQs
 
-We have found some common questions on licensing and plan options. We've included several here with their answers. For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+This article lists common questions on licensing and plan options. We've included several here with their answers. For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## Power Platform product licensing
 
-Provides answers to Power Platform products in general.
+This section provides answers to Power Platform products in general.
 
 ### What are the self-service purchase options for the Microsoft Power Platform products?
 
@@ -25,7 +25,7 @@ See the FAQ: [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/
 
 ### Is non-profit, government, and academic pricing available?
 
-Yes, non-profit, government and academic pricing is available in respective program channels.
+Yes, non-profit, government, and academic pricing is available in respective program channels.
 
 ### Is there a plan for developers?
 
@@ -33,7 +33,7 @@ Yes, we have a free Developer Plan to learn and build skills on Power Apps, Powe
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
-You can buy additional data storage, file storage and flow runs. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+You can buy additional data storage, file storage, and flow runs. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 ### Who can buy Microsoft Platform apps plans?
 
@@ -47,7 +47,7 @@ API capacity is tracked based on consumption at an individual user level, and th
 
 API limits are also applicable to application users, non-interactive users and administrative users in Dataverse.
 
-More information is available [here](api-request-limits-allocations.md).
+More information is available in [Requests limits and allocations](api-request-limits-allocations.md).
 
 ## Power Apps
 
@@ -57,13 +57,13 @@ More information is available [here](api-request-limits-allocations.md).
 
 - **Power Apps per app** enables individual users to run applications (one app or one portal) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
 
-- **Power Apps pay-as-you-go** allows individual users to run applications (1 app) without any licenses via an Azure subscription. You postpay only for the number of users who used the app in a month. See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
+- **Power Apps pay-as-you-go** allows individual users to run applications (one app) without any licenses via an Azure subscription. You postpay only for the number of users who used the app in a month. See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 See [Power Apps pricing](https://powerapps.microsoft.com/pricing/) for details.
 
 ### What is the difference between the legacy Power Apps per user offer and the Power Apps Premium offer?
 
-There is no difference between these two offers, Power Apps per user has simply been renamed "Power Apps Premium."
+There is no difference between these two offers. Power Apps per user has simply been renamed *Power Apps Premium*.
 
 ### How do I use Power Apps per app plans?
 
@@ -75,7 +75,7 @@ See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 ### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
-The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each "per app" license provides an individual user with rights to one app (canvas and/or model-driven) or one Power Apps custom website, within a single environment. A single user might be covered by multiple "per app" licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the "per app" license is stackable.
+The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each *per app* license provides an individual user with rights to one app (canvas and/or model-driven) or one Power Apps custom website, within a single environment. A single user might be covered by multiple *per app* licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the *per app* license is stackable.
 
 An important part of this feature simplification is that we'll no longer require any standalone plans for maker or admin capabilities. Previously admins required a Power Apps P2 license for certain management operations; this will no longer be the case.
 
@@ -88,10 +88,9 @@ No. Embedded canvas components within the model-driven app are recognized as a s
 The guest user must have a Power Apps license assigned through one of the following tenants:
 
 -   The tenant hosting the app being shared
-
 -   The home tenant of the guest user
 
-Also, the guest must have the same license that's required for non-guests to run an app. A collection of examples is available [here](/powerapps/maker/canvas-apps/share-app-guests#frequently-asked-questions).
+Also, the guest must have the same license that's required for non-guests to run an app. A collection of examples is available in this [Frequently asked questions](/powerapps/maker/canvas-apps/share-app-guests#frequently-asked-questions).
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
 
