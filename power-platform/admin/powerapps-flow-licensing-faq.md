@@ -184,9 +184,9 @@ Customers that purchase the Power Automate Premium license will be able to use e
 
 The Power Automate Premium trial will include 100 MB of Process Mining stored data per process.
 
-## Power Automate hosted RPA add-on
+### Power Automate hosted RPA add-on
 
-### What are the pricing and licensing details for Power Automate hosted RPA?
+#### What are the pricing and licensing details for Power Automate hosted RPA?
 
 -   List Price (USD): $215 per bot/month
 -   Entitlements: Licensed per bot, the Power Automate hosted RPA add-on license provides capacity for a single Microsoft RPA bot and a virtual machine for running automations.
@@ -197,23 +197,23 @@ The Power Automate Premium trial will include 100 MB of Process Mining stored da
 > [!Note]
 >  Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. Please see the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
 
-### Is per flow an eligible pre-requisite for the Hosted RPA add-on?
+#### Is per flow an eligible pre-requisite for the Hosted RPA add-on?
 
 Yes, per flow is eligible until February 1.
 
-### How are the bots hosted?
+#### How are the bots hosted?
 
 The bots are hosted with Azure virtual machines leveraging Virtual Machine Scale Sets (VMSS). VMSS is an Azure Compute resource which can be used to deploy and manage a set of identical VMs providing (up to 1000 VMs) by spreading VMs across fault domains in a region or within an Availability Zone.
 
-### Is this offer available worldwide?
+#### Is this offer available worldwide?
 
 Yes, the hosted RPA add-on will be available to all geographies worldwide with the exception of UAE due to capacity restrictions.
 
-### Is there a trial version of Power Automate hosted RPA?
+#### Is there a trial version of Power Automate hosted RPA?
 
 Yes, trial users can create up to 10 hosted RPA bots groups and have up to two bots running in parallel in a given environment. To start a trial, customers can go to the Power Automate pricing page and select the **Try free** link under Power Automate per user with attended RPA or navigate to the Power Automate portal desktop flow page.
 
-### Are Power Automate per user, Power Automate per flow, and the Power Automate unattended RPA add-on still available?
+#### Are Power Automate per user, Power Automate per flow, and the Power Automate unattended RPA add-on still available?
 
 These offers will be available until February 1, 2024.
 
