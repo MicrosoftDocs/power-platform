@@ -66,5 +66,3 @@ Follow these procedures to make the most of the feature:
 ## See also 
 - [Use Copilot to generate deployment notes in pipelines (preview)](copilot-deployment-notes-pipelines.md)
 
- 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
