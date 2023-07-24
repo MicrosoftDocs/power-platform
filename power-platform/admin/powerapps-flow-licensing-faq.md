@@ -392,7 +392,7 @@ Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses
 
 Internal authenticated users of a Power Pages website can use one of the following type of licenses:
 
-**Subscription based**
+Subscription based
 
 1. **Power Apps per app** – Users can access one Power Pages website that should be part of environment to which Power Apps per app capacity licenses are assigned.
 1. **Power Apps per user licensed users** – Users who have been assigned Power Apps per user licenses can use unlimited Power Pages websites.
@@ -454,13 +454,13 @@ Power Apps portals login and page view subscriptions will be available for purch
 
 Power Pages are licensed at a monthly rate that is based on a customer's anticipated user volume. They aren't accumulated as individual assets and wouldn't carry forward month to month.
 
-# Dataverse
+## Dataverse
 
-## **What Dataverse capacity is included with the Power Apps and Power Automate plans?**
+### What Dataverse capacity is included with the Power Apps and Power Automate plans?
 
 Every tenant with a Power Apps license gets default capacity. In addition, for each license there's additional capacity (pooled) added to the tenant.
 
-| **Power Apps capacity Limits** | **Per license entitlement (Power Apps per app plan)** | **Per license entitlement (Power Apps per user plan)** |
+| Power Apps capacity Limits | Per license entitlement (Power Apps per app plan) | Per license entitlement (Power Apps per user plan)|
 |--------------------------------|-------------------------------------------------------|--------------------------------------------------------|
 | Dataverse Database Capacity    | \+ 50 MB                                              | \+ 250 MB                                              |
 | Dataverse Log Capacity         | \+ 0                                                  | \+ 0                                                   |
@@ -468,15 +468,15 @@ Every tenant with a Power Apps license gets default capacity. In addition, for e
 
 Since flows, as well as certain Power Automate features like approvals, run inside of the Dataverse, every tenant with a Power Automate license gets default capacity. In addition, for each per-user or per-flow license there is additional capacity added to the tenant.
 
-| **Power Automate capacity Limits** | **+ Per user** | **+ Per flow** |
+| Power Automate capacity Limits | + Per user | + Per flow |
 |------------------------------------|----------------|----------------|
 | Dataverse Database Capacity        | \+ 250 MB      | \+ 50 MB       |
 | Dataverse Log Capacity             | \+ 0           | \+ 0           |
 | Dataverse File Capacity            | \+ 2 GB        | \+ 200 MB      |
 
-# Dataverse for Teams
+## Dataverse for Teams
 
-## **Are the existing Microsoft Power Platform use rights included with Microsoft 365 licenses changing?**
+### Are the existing Microsoft Power Platform use rights included with Microsoft 365 licenses changing?
 
 To deliver a comprehensive low-code extensibility platform for Microsoft Teams, Microsoft Power Platform capabilities available as part of select Microsoft 365 subscriptions are expanding with the introduction of Dataverse for Teams.
 
@@ -488,35 +488,35 @@ Dataverse for Teams is a built-in flexible datastore that provides data storage 
 
 The existing Microsoft Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
 
-## **Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?**
+### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
 
 Yes. With Dataverse for Teams, users now can build flows using Power Automate portal and that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
 
-## **Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?**
+### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
 Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-## **How is Dataverse for Teams environment created?**
+### How is Dataverse for Teams environment created?
 
 Creation of Dataverse for Teams environments isn't available from the Power Platform admin center. Creation of new Dataverse for Teams environments will only be possible from within Teams.
 
-## **Can Dataverse for Teams be used outside of Teams?**
+### **Can Dataverse for Teams be used outside of Teams?
 
 Dataverse for Teams is designed to work in the Teams client across web, desktop and mobile. If you'd want to use Dataverse for Teams outside of Teams, you must upgrade your environment to Dataverse.
 
-## **Is there a limit to Dataverse for Teams capacity? How many Dataverse for Teams environments can be created in a tenant?**
+### Is there a limit to Dataverse for Teams capacity? How many Dataverse for Teams environments can be created in a tenant?
 
 Each Dataverse for Teams environment uniquely maps (1:1) to a Teams team and can store up to 1,000,000 records based on typical usage (enforced as 2 GB relational database storage per Dataverse for Teams environment). For details on service limits, including the tenant-level capacity limits associated with Dataverse for Teams, see [About the Dataverse for Teams environment](https://review.learn.microsoft.com/en-us/power-platform/admin/about-teams-environment).
 
-## **Can we control who can create environments with Dataverse for Teams?**
+### **Can we control who can create environments with Dataverse for Teams?
 
 Teams governs who can create and join a Team. The environment is created for a team when an owner or member tries to create an application in it.
 
-## **Can a Dataverse for Teams environment be deleted?**
+### Can a Dataverse for Teams environment be deleted?
 
 A Dataverse for Teams environment is deleted when the associated Team is deleted.
 
-## **How does the capacity enforcement work for Dataverse for Teams environments?**
+### How does the capacity enforcement work for Dataverse for Teams environments?
 
 When the environment capacity limits are reached (2 GB per environment) new solutions (apps, chatbots, flows) can't be created or installed in that specific Dataverse for Teams environment.
 
@@ -536,25 +536,25 @@ In both cases:
 
 -   Certain options within each solution (Power Apps/Power Automate/Power Virtual Agents) will be hidden/grayed out.
 
-## **Can customers with Power Apps, Power Automate, and Power Virtual Agents subscriptions use premium connectors with Dataverse for Teams?**
+### Can customers with Power Apps, Power Automate, and Power Virtual Agents subscriptions use premium connectors with Dataverse for Teams?
 
 Yes. Accessing premium connectors in a specific Dataverse for Teams environment requires users in that environment to be licensed accordingly.
 
 Example: In a Dataverse for Teams environment, accessing premium connectors in the context of an app requires all users accessing the app to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
 
-## **Can I use AI Builder with Dataverse for Teams?**
+### Can I use AI Builder with Dataverse for Teams?
 
 No. Tables for AI Builder aren't included in Dataverse for Teams.
 
-## **Can I use desktop flows with Dataverse for Teams?**
+### Can I use desktop flows with Dataverse for Teams?
 
 No. Desktop flows aren't supported in Dataverse for Teams.
 
-## **Can I use custom connectors in Dataverse for Teams?**
+### Can I use custom connectors in Dataverse for Teams?
 
 Custom connectors aren't supported in Dataverse for Teams but [support for Azure API Management (API-M)](https://powerapps.microsoft.com/blog/azure-api-management-connector-on-the-power-platform/) will be available later in Dataverse for Teams.
 
-## **Can customers purchase more capacity for a Dataverse for Teams environment?**
+### Can customers purchase more capacity for a Dataverse for Teams environment?
 
 No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2 GB), users who want to create a new app, flow, chatbot, or table in the environment will need to:
 
@@ -562,11 +562,11 @@ No. Dataverse for Teams provides support for approximately 1 million rows per te
 
 2.  [Upgrade](https://review.learn.microsoft.com/en-us/power-platform/admin/about-teams-environment#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
-## **Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into an environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?**
+### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into an environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
 
 This capability isn't available yet, but is included in our roadmap.
 
-## **Other than adding capacity, what are the other reasons to upgrade a Dataverse for Teams environment?**
+### Other than adding capacity, what are the other reasons to upgrade a Dataverse for Teams environment?
 
 [Upgrading](https://review.learn.microsoft.com/en-us/power-platform/admin/about-teams-environment#upgrade-process) an environment from Dataverse for Teams to Dataverse will enable customers to take advantage of additional capacity, capabilities, such as:
 
@@ -582,7 +582,7 @@ This capability isn't available yet, but is included in our roadmap.
 
 Accessing an environment with Dataverse requires all users to have a corresponding standalone Microsoft Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
 
-## **Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?**
+### **Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
 No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Dataverse capabilities with Microsoft 365 licenses](https://review.learn.microsoft.com/en-us/power-platform/admin/pricing-billing-skus#dataverse-capabilities-with-microsoft-365-licenses) for more details on the feature.
 
@@ -590,7 +590,7 @@ No. A limited set of Dataverse capabilities were recently added to Microsoft 365
 
 There is a service plan called *Dataverse for Teams* that is related to the Dataverse for Teams capabilities. This service plan is used by our platform for granting customer tenants Dataverse for Teams storage capacity and should not be deactivated.
 
-## **Is geo migration supported for Dataverse for Teams environments?**
+### Is geo migration supported for Dataverse for Teams environments?
 
 Geo migration isn't supported for Dataverse for Teams environments.
 
