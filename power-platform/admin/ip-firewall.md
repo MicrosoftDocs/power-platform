@@ -4,7 +4,7 @@ description: Learn about how to use IP firewall in Power Platform environments.
 author: ritesp
 ms.author: ritesp
 ms.topic: overview
-ms.date: 06/19/2023
+ms.date: 07/19/2023
 ms.reviewer: sericks
 ms.custom: template-overview
 
@@ -116,9 +116,15 @@ Download the audit log data in JSON format by using Dataverse OData API. The for
 - Set the action value to **118** for this event.
 - Set the number of items to return in **top=1** or specific the number you want to return.
 
+> [!Note]
+> You can reach out to Microsoft support to get it enabled for your Power Platform environment.
+
 ### My Power Automate flows are not working as expected after configuring the IP firewall on my Power Platform environment. What should I do?
 
 You can allow the service tags in the IP firewall settings. Verify that you have allowed the related service tags listed the [Managed connectors outbound IP addresses](/connectors/common/outbound-ip-addresses) article.
+
+### I have configured reverse proxy address correctly, however the IP firewall is not working.
+Check if your reverse proxy is configured to send the client IP address in the forwarded header.
 
 ## Next steps
 
