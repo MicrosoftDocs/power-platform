@@ -594,9 +594,9 @@ There is a service plan called *Dataverse for Teams* that is related to the Da
 
 Geo migration isn't supported for Dataverse for Teams environments.
 
-# AI Builder
+## AI Builder
 
-## **How is AI Builder licensed?**
+### How is AI Builder licensed?
 
 AI Builder is a capacity add-on to paid, select Power Apps, Power Automate, and Dynamics 365 licenses. Each $500 subscription includes 1 million AI Builder service credits applied at the tenant level. To use your AI Builder capacity, an administrator has to allocate AI Builder capacity to the environment where you want to use AI Builder.
 
@@ -604,37 +604,37 @@ AI Builder is a capacity add-on to paid, select Power Apps, Power Automate, and 
 
 -   Information about how to allocate capacity in the Power Platform admin center can be found [here](https://review.learn.microsoft.com/en-us/power-platform/admin/capacity-add-on).
 
-## **How is AI Builder capacity enforced?**
+### How is AI Builder capacity enforced?
 
 The AI Builder capacity add-on is an annual subscription, and capacity is enforced on a monthly basis. Capacity should be purchased for the peak utilization monthly period.
 
 Information about how to allocate AI Builder capacity to your environment is available [here](https://review.learn.microsoft.com/en-us/power-platform/admin/capacity-add-on).
 
-## **Can AI Builder capacity be added to the P1 and P2 plans for Power Apps and Power Automate that are being retired?**
+### Can AI Builder capacity be added to the P1 and P2 plans for Power Apps and Power Automate that are being retired?
 
 Yes. AI Builder capacity can be added to the P1 and P2 plans for Power Apps and Power Automate for customers who haven't yet transitioned to the new Power Apps and Power Automate plans.
 
-## **What is a "service credit" and how does it work?**
+### What is a "service credit" and how does it work?
 
 AI Builder includes several model types, including custom and prebuilt – a full list is available [here](https://review.learn.microsoft.com/en-us/ai-builder/model-types#model-types).
 
 AI models consume service credits when they are trained, used in an app or flow, or scheduled to periodically run. The amount of capacity consumed varies based the AI model, as well as the size and complexity of the data set.
 
-## **What can I do with the 5,000 AI credits included in the per user plan with attended RPA?**
+### What can I do with the 5,000 AI credits included in the per user plan with attended RPA?
 
 Each user license grants you 5000 credits, allowing you to assess the capabilities in AI Builder. For instance, you could use these credits to extract data from a few documents with *form processing* or perform hundreds of basic OCR extractions with *text recognition*.
 
-## **Which AI models are available for free in public preview and which are in paid GA status?**
+### Which AI models are available for free in public preview and which are in paid GA status?
 
 The release status for AI Builder features is available [here](https://review.learn.microsoft.com/en-us/power-platform-release-plan/2020wave1/ai-builder/).
 
 AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found [here](https://review.learn.microsoft.com/en-us/ai-builder/model-types#model-types).
 
-## **Is a trial available for AI Builder?**
+### Is a trial available for AI Builder?
 
 Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane.
 
-# Power Platform pay-as-you-go plan
+## Power Platform pay-as-you-go plan
 
 Learn more:
 
@@ -642,9 +642,9 @@ Learn more:
 
 -   [Frequently asked questions](https://review.learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-issues-faq#frequently-asked-questions)
 
-# Add-ons
+## Add-ons
 
-## **What add-ons are available to the Power Apps and Power Automate plans?**
+### What add-ons are available to the Power Apps and Power Automate plans?
 
 A list of add-ons applicable to all standalone Power Apps and Power Automate plans are listed below:
 
@@ -662,29 +662,29 @@ A list of add-ons applicable to all standalone Power Apps and Power Automate pla
 
 -   Dataverse Log Capacity (1 GB) $10 per month
 
-# Trial Licenses
+## Trial Licenses
 
-## **How long is the free trial period?**
+### How long is the free trial period?
 
 Free trials for Microsoft Power Apps last 30 days. For Power Automate, they're available for 90 days.
 
-## **Is there a way to develop my Microsoft Power Apps and Power Automate skills for more than 90 days?**
+### Is there a way to develop my Microsoft Power Apps and Power Automate skills for more than 90 days?
 
 Yes, with the Power Apps Developer Plan you get a free environment for individual use with functionality including the Dataverse. In this environment you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Developer Plan isn't intended for production use.
 
 [Learn more](https://powerapps.microsoft.com/pricing/).
 
-## **How do I convert my trial environment to a production environment?**
+### How do I convert my trial environment to a production environment?
 
 More information is available [here](https://review.learn.microsoft.com/en-us/power-platform/admin/trial-environments).
 
-## **Where can I find more information about trial environments?**
+### Where can I find more information about trial environments?
 
 For more information about trial environments in Power Apps read this [topic](https://review.learn.microsoft.com/en-us/power-platform/admin/trial-environments).
 
-# Power Platform use rights included with Microsoft 365
+## Power Platform use rights included with Microsoft 365
 
-## **What are Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications?**
+### What are Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications?
 
 Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications.
 
@@ -693,70 +693,41 @@ Effective October 1, 2019, the SQL, Azure, and Dynamics 365 connectors listed be
 Premium connectors list at October 2019 (will expand over time):
 
 -   Azure Application Insights
-
 -   Azure Automation
-
 -   Azure Blob Storage
-
 -   Azure Container
-
 -   Azure Cosmos
-
 -   Azure Data Factory
-
 -   Azure Data Lake
-
 -   Azure DevOps
-
 -   Azure Event Grid
-
 -   Azure Event Grid Publish
-
 -   Azure File Storage
-
 -   Azure IoT Central
-
 -   Azure Kusto
-
 -   Azure Log Analytics
-
 -   Azure Log Analytics Data Collector
-
 -   Azure Queues
-
 -   Azure Resource Manager
-
 -   Azure SQL
-
 -   Azure Synapse Analytics
-
 -   Azure Table Storage
-
 -   Dynamics 365
-
 -   Dynamics 365 Customer Insights
-
 -   Dynamics 365 Finance & Operations
-
 -   Dynamics 365 Sales Insights
-
 -   Dynamics 365 Business Central
-
 -   Dynamics 365 Business Central (on-premises)
-
 -   Dynamics NAV
-
 -   Event Hubs
-
 -   Service Bus
-
 -   SQL Server
 
 Power Automate plan-based limits on trigger frequency and the number of runs allocated to a tenant per month are being removed.
 
 Power Apps and Power Automate usage will be subject to service limits described [here](https://review.learn.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations). Per user service limits provide capacity assurance for users and alleviate the risk of one user exhausting the tenant wide quota.
 
-## **How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct 1, 2019? Will my existing apps and Power Automate workflows continue to work?**
+### How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct 1, 2019? Will my existing apps and Power Automate workflows continue to work?
 
 Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Microsoft 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Microsoft 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.
 
@@ -766,13 +737,13 @@ The extended transition period allows for using the connectors listed above but 
 
 Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector doesn't provide Dataverse capacity. Dataverse capacity is a prerequisite for Power Apps and Power Automate workflows to use Dataverse.
 
-## **How many apps I can run with Microsoft 365 plans?**
+### How many apps I can run with Microsoft 365 plans?
 
 There's no limit on the number of applications. Customers can continue to run standalone apps to extend and customize Microsoft 365 using standard connectors.
 
-# Power Platform use rights included with Dynamics 365
+## Power Platform use rights included with Dynamics 365
 
-## **What are Microsoft Power Apps and Power Automate use rights for Dynamics 365 applications?**
+### What are Microsoft Power Apps and Power Automate use rights for Dynamics 365 applications?
 
 Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications.
 
@@ -782,7 +753,7 @@ Power Apps use rights with Dynamics 365 licenses: Dynamics 365 *Enterprise* li
 
 Power Automate use rights with Dynamics 365 licenses: Dynamics 365 licenses will no longer include general purpose Power Automate capabilities. Power Automate flows will need to map to licensed Dynamics 365 application context - Power Automate flows should trigger from OR connect to data sources within use rights of licensed Dynamics 365 application(s). Use of standalone flows will require a Power Automate license.
 
-## **Can I connect to Microsoft Dynamics for finance and operations apps?**
+### Can I connect to Microsoft Dynamics for finance and operations apps?
 
 Yes, you can use the Dynamics 365 finance and operations apps connector to build canvas apps using this data.
 
