@@ -302,18 +302,18 @@ Anonymous users/website/month are calculated as unique users who access one or m
 
 There are several scenarios in which a user who has anonymously browsed the website won't be counted in the meter, some of these are described below:
 
-1.  Any access of a website running in trial mode won't be counted.
-2.  Any access of a website running in private mode won't be counted.
-3.  If the user accesses specific pages on the website, then they aren't counted as anonymous users, these are:
-    1.  Pages related to log in like sign-in, register, invitation, and external authentication call back. This is done to ensure if the user is trying to authenticate to the website, they aren't counted as an anonymous user.
-    1.  System pages like the ones starting with **/\_** such as **/\_services** and **/\_resource**.
-    1.  If a page returns a redirect response (http 3xx status).
-    1.  If a page returns an error response (http 5xx status).
-    1.  If a page returns 404, or any http 4xx response.
-4.  Bots and crawler accessing anonymous pages of the website isn't counted.
-5.  If there's a monitoring system setup to test website availability periodically, it will be removed if it sends a non-browser user agent. In case your monitoring system sends a user agent that is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend targeting **/\_services/about** page of your website to ensure that it isn't counted in anonymous user access.
-6.  If a user is accessing only static resources (CSS, JavaScript, and images) won't be counted.
-7.  If a user is browsing anonymously and later logs in to the website within same day (UTC time zone), then that user will only be counted as authenticated user and won't be counted as anonymous user.
+-  Any access of a website running in trial mode won't be counted.
+-  Any access of a website running in private mode won't be counted.
+-  If the user accesses specific pages on the website, then they aren't counted as anonymous users, these are:
+    -  Pages related to log in like sign-in, register, invitation, and external authentication call back. This is done to ensure if the user is trying to authenticate to the website, they aren't counted as an anonymous user.
+    -  System pages like the ones starting with **/\_** such as **/\_services** and **/\_resource**.
+    -  If a page returns a redirect response (http 3xx status).
+    -  If a page returns an error response (http 5xx status).
+    -  If a page returns 404, or any http 4xx response.
+-  Bots and crawler accessing anonymous pages of the website isn't counted.
+-  If there's a monitoring system setup to test website availability periodically, it will be removed if it sends a non-browser user agent. In case your monitoring system sends a user agent that is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend targeting **/\_services/about** page of your website to ensure that it isn't counted in anonymous user access.
+-  If a user is accessing only static resources (CSS, JavaScript, and images) won't be counted.
+-  If a user is browsing anonymously and later logs in to the website within same day (UTC time zone), then that user will only be counted as authenticated user and won't be counted as anonymous user.
 
 ### If a user accesses a site anonymously and then logs in to the site in the same session, will the user be counted as both an anonymous and an authenticated user?
 
@@ -323,7 +323,7 @@ If a user accesses a site in both an anonymous and an authenticated manner in th
 
 No, log in page access isn't counted for calculating anonymous users. So if the only anonymous page is sign in page, then it will not require anonymous user subscription to be purchased.
 
-However, it's important to ensure that rest of the site is made authenticated. This can be done by using Page level permissions on home page and only making it available for authenticated user roles. If any other method is used like using a client side (JavaScript) redirect to log in page, then it might lead to some pages being available anonymously.
+However, it's important to ensure that rest of the site is made authenticated. This can be done by using page-level permissions on home page and only making it available for authenticated user roles. If any other method is used like using a client-side (JavaScript) redirect to log in page, then it might lead to some pages being available anonymously.
 
 ### How much does these licenses cost?
 
@@ -336,7 +336,6 @@ The Power Pages authenticated per user and Power Pages anonymous per user offers
 | Tier 1 | 1 pack | 100+ users | $200 |  
 | Tier 2 | 100 packs | 10,000+ users | $75 |  
 | Tier 3 | 1,000 packs | 100,000+ users | $50 |  
-
 
 ### Anonymous per user/website subscription capacity packs
 
@@ -377,7 +376,7 @@ Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses
 | Parameter | Power Apps portals licensing | Power Pages licensing |
 |-------------------------|-------------------------|-------------------------|
 | **Provisioning a website** | Every additional website in the environment requires 1 GB of Dataverse capacity | No Dataverse capacity is required to provision a website |
-| **Qualifying base offers** | Dynamics 365 and Power Apps licenses. | No base offer is required and licenses can be purchased standalone |
+| **Qualifying base offers** | Dynamics 365 and Power Apps licenses | No base offer is required and licenses can be purchased standalone |
 | **Licenses required for internal authenticated users** | Dynamics 365 enterprise licenses<br /></br>Power Apps per app plan<br /></br>Power Apps per user plan<br /></br>Power Apps per app pay-as-you-go meter | Dynamics 365 enterprise licenses<br /></br>Power Apps per app plan<br /></br>Power Apps per user plan<br /></br>(New) Authenticated per user/website subscription<br /></br><del>(New)</del> <del>Authenticated</del> <del>user pay-as-you-go meter</del> |
 | **Licenses required for external authenticated Users** | Power Apps portals logins capacity (one login = daily unique login) | Authenticated per user/website subscription<br /></br><del>Authenticated user pay-as-you-go meter</del> |
 | **Licenses required for anonymous users** | Power Apps portals page view capacity | Anonymous per user/website subscription<br /></br><del>Anonymous user pay-as-you-go meter</del> |
@@ -389,7 +388,7 @@ Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses
 
 Internal authenticated users of a Power Pages website can use one of the following type of licenses:
 
-Subscription based
+**Subscription based**
 
 1. **Power Apps per app** – Users can access one Power Pages website that should be part of environment to which Power Apps per app capacity licenses are assigned.
 1. **Power Apps per user licensed users** – Users who have been assigned Power Apps per user licenses can use unlimited Power Pages websites.
