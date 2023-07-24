@@ -104,14 +104,14 @@ You can mix and match Power Apps licenses, and licenses that include Power Apps 
 
 ### How is Microsoft Power Automate licensed?
 
-See [Types of Power Automate licenses](power-automate-licensing/types.md), [Frequently asked questions about Power Automate licenses](power-automate-licensing/faqs.md) and [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for details.
+See [Types of Power Automate licenses](power-automate-licensing/types.md), [Frequently asked questions about Power Automate licenses](power-automate-licensing/faqs.md), and [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for details.
 
 ### Power Automate Premium
 
-#### What are the pricing and licensing details Power Automate Premium?**
+#### What are the pricing and licensing details Power Automate Premium?
 
 -   List Price (USD): $15 per user/month
--   Entitlements: Licensed per user, Power Automate Premium enables licensed users to automate modern applications via API-based digital process automation, DPA (cloud flows) and legacy applications via UI-based robotic process automation (desktop flows) in attended mode. It also includes full Process Mining desktop functionality and a limited amount of Process Mining data storage (50MB per user license up to 100GB per customer)
+-   Entitlements: Licensed per user, Power Automate Premium enables licensed users to automate modern applications via API-based digital process automation, Digital Process Automation (cloud flows), and legacy applications via UI-based robotic process automation (desktop flows) in attended mode. It also includes full Process Mining desktop functionality and a limited amount of Process Mining data storage (50 MB per user license up to 100 GB per customer).
 
 #### How does this compare to the previous Power Automate per user with attended RPA offer and the Power Automate per user offer?
 
@@ -122,10 +122,10 @@ This new offer includes all the benefits of Power Automate per user with attende
 #### What are the pricing and licensing details for Power Automate Process?
 
 -   List Price (USD): $150 per user/month
--   Entitlements: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), OR business critical processes that need to be accessed by unlimited users within an organization
+-   Entitlements: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization.
 
 > [!Note]
-> Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating M/O365 require the Microsoft 365 - Unattended License. Please see the Product Terms for more information
+> Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365, require the Microsoft 365 - Unattended License. Please see the Product Terms for more information.
 
 #### Are there minimum purchase requirements for Power Automate Process?
 
@@ -142,9 +142,9 @@ No, there are no licensing prerequisites required for eligibility to purchase Po
 -   List Price (USD): $5,000 for 100 GB of data stored/month
 -   Required pre-requisite: Power Automate Premium. Multiple add-ons can be applied to a single pre-requisite.
 -   Additional Entitlements per capacity pack:
-    -   Dataverse Database capacity 2 GB/capacity pack
-    -   Dataverse File capacity 1 TB/capacity pack
-    -   250k Power Platform Requests/24 hrs.
+    -   Dataverse database capacity 2 GB/capacity pack
+    -   Dataverse file capacity 1 TB/capacity pack
+    -   250k Power Platform Requests/24 hrs
 
 #### When will Process Mining be available to purchase?
 
@@ -160,26 +160,25 @@ Yes, Process Mining offers a free 30-day trial giving access to many of the key 
 
 #### Will Process Mining use rights come with any other Power Platform or Dynamics 365 licenses?
 
-Process Mining Desktop capability and limited amount of Process Mining data storage capacity is included with the Power Automate Premium per user offer. We will update the Process Mining use rights as product truth matures in other Power Platform and Dynamics 365 products.
+Process Mining Desktop capability and limited amount of Process Mining data storage capacity is included with the Power Automate Premium per user offer. We plan to update the Process Mining use rights in the future.
 
 #### Are Power BI Pro, Power BI Per User or Power BI premium capacity licenses required for this solution? If so, do any Power BI limitations come into play or is there a package price?
 
-Power BI licenses are not included in Power Automate Process Mining. In order to customize and analyze your process mining results further, you may want to acquire additional Power BI Pro\*, Power BI per user or Power BI premium capacity licenses if you haven't already done so. Pricing & Product Comparison \| Microsoft Power BI
+Power BI licenses are not included in Power Automate Process Mining. In order to customize and analyze your process mining results further, you may want to acquire additional Power BI Pro\*, Power BI per user, or Power BI premium capacity licenses if you haven't already done so. For more information, see [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
-> [!Note]
-> Power BI Pro is included in Microsoft 365 E5 and Office 365 E5.
+\* Power BI Pro is [included](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot:overviewtab&rtc=1) in Microsoft 365 E5 and Office 365 E5.
 
-#### Can customers use the Power Platform Admin Center (PPAC) to assess their highest monthly Process Mining usage?
+#### Can customers use the Power Platform admin center to assess their highest monthly Process Mining usage?
 
-Yes, customers can assess their highest monthly Process Mining usage to understand capacity needed. Current and past usage data are available in the Power Platform Admin Center (PPAC).
+Yes, customers can assess their highest monthly Process Mining usage to understand capacity needed. Current and past usage data are available in the [Power Platform admin enter](https://admin.powerplatform.microsoft.com/).
 
 #### How much capacity should I purchase if my company has occasional spikes?
 
-Capacity should be purchased for the peak utilization over a 12-month contract period. If customers experience monthly or seasonal spikes, they must purchase enough capacity to allow for this high "watermark" when estimating the amount of capacity needed per month.
+Capacity should be purchased for the peak utilization over a 12-month contract period. If customers experience monthly or seasonal spikes, they must purchase enough capacity to allow for this high *watermark* when estimating the amount of capacity needed per month.
 
 #### How much process mining capacity is included in the Power Automate Premium license?
 
-Customers that purchase the Power Automate Premium license will be able to use entitlements for task mining and limited data storage for process mining (<u>up to 50 MB</u>) at no additional charge. The per user license
+Customers that purchase the Power Automate Premium license will be able to use entitlements for task mining and limited data storage for process mining (<u>up to 50 MB</u>) at no additional charge.
 
 #### How much process mining capacity is included in the Power Automate Premium trial?
 
@@ -196,11 +195,11 @@ The Power Automate Premium trial will include 100 MB of Process Mining stored da
     -   Concurrent instances of a singular process require an additional unattended bot for each instance.
 
 > [!Note]
->  Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating M/O365 require the Microsoft 365 - Unattended License. Please see the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
+>  Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. Please see the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
 
 ### Is per flow an eligible pre-requisite for the Hosted RPA add-on?
 
-Yes, per flow is eligible until 2/1.
+Yes, per flow is eligible until February 1.
 
 ### How are the bots hosted?
 
@@ -231,17 +230,16 @@ Follow these steps to apply unattended RPA add-ons for your flows.
 3.  Makers can now run unattended desktop flows within the environment that has the unattended capacity.
 
 > [!Note]
-> The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
+> The unattended add-on is environment-specific. If you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. If you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
 
 ## Power Virtual Agents
 
 Learn more: [Assign licenses and manage access to Power Virtual Agents](/power-virtual-agents/requirements-licensing)
 
-### What are the pricing and licensing details for Power Virtual Agents?**
+### What are the pricing and licensing details for Power Virtual Agents?
 
 -   List Price (USD): $200 per tenant/month\*
-
--   Entitlements: Licensed by tenant, Power Virtual Agents entitles a tenant to 2,000 Chat sessions per tenant/month enabling the tenant to deploy chatbots and create cloud flows within the context of the Power Virtual Agents bots.
+-   Entitlements: Licensed by tenant, Power Virtual Agents entitles a tenant to 2,000 chat sessions per tenant/month enabling the tenant to deploy chatbots and create cloud flows within the context of the Power Virtual Agents bots.
 
 ### Power Virtual Agents capacity add-on
 
