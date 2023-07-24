@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 6/15/2023
+ms.date: 7/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -37,11 +37,11 @@ List of Virtual Agents in the current or target Dataverse environment.
 [!INCLUDE [virtual-agent-list-intro](includes/virtual-agent-list-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for virtual-agent list
 
 #### `--environment` `-env`
 
-The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [virtual-agent-list-remarks](includes/virtual-agent-list-remarks.md)]
 
@@ -52,18 +52,18 @@ Poll the deployment status of a specified Virtual Agent in the current or target
 [!INCLUDE [virtual-agent-status-intro](includes/virtual-agent-status-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for virtual-agent status
 
 #### `--bot-id` `-id`
 
-The ID of a Virtual Agent (Chatbot)
+The ID of a Virtual Agent (Chatbot).
 
 
-### Optional Parameters
+### Optional Parameters for virtual-agent status
 
 #### `--environment` `-env`
 
-The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [virtual-agent-status-remarks](includes/virtual-agent-status-remarks.md)]
 

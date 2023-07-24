@@ -142,7 +142,7 @@ Based on successful experience with customer engagements, here is a list of addi
   Although it’s important to make sure resources are reasonably partitioned between projects and business units using environments, it’s still important to find a good balance between security and feasibility. Managing shared test and production environments is a good way to facilitate a larger number of *important* solutions while preserving capacity and following best practices. This maintains restricted permissions because test and production have restricted environment permissions, and therefore the end users can’t modify the applications.
 - **Provision environments with Dataverse instances in the appropriate region**
   
-  In companies where employees work in multiple countries, there might be some compliance considerations in terms of where data is stored and sent between countries. If the environment has a Dataverse instance, the data is physically being stored in the region. Review the list of supported environment regions.
+  In companies where employees work in multiple countries/regions, there might be some compliance considerations in terms of where data is stored and sent between countries/regions. If the environment has a Dataverse instance, the data is physically being stored in the region. Review the list of supported environment regions.
 
 ### Factors that influence provisioning
 

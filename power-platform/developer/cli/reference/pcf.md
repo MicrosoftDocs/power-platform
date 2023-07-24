@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 6/15/2023
+ms.date: 7/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -27,7 +27,7 @@ Commands for working with Power Apps component framework projects
 |Command|Description|
 |---------|---------|
 |[pac pcf init](#pac-pcf-init)|Initializes a directory with a new Power Apps component framework project|
-|[pac pcf push](#pac-pcf-push)|Import the Power Apps component framework project into the current Dataverse Organization|
+|[pac pcf push](#pac-pcf-push)|Import the Power Apps component framework project into the current Dataverse organization|
 |[pac pcf version](#pac-pcf-version)|Patch version for controls|
 
 
@@ -38,40 +38,28 @@ Initializes a directory with a new Power Apps component framework project
 [!INCLUDE [pcf-init-intro](includes/pcf-init-intro.md)]
 
 
-### Required Parameters
-
-#### `--name` `-n`
-
-The name for the component
-
-**Note**: Only characters within the ranges [A - Z], [a - z] or [0 - 9] are allowed. The first character may not be a number.
-
-#### `--namespace` `-ns`
-
-The namespace for the component
-
-**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '.' are allowed. The first and last character may not be the '.' character. Consecutive '.' characters are not allowed. Numbers are not allowed as the first character or immediately after a period.
-
-#### `--template` `-t`
-
-Choose a template for the component
-
-Use one of these values:
-
-- `field`
-- `dataset`
-
-
-### Optional Parameters
+### Optional Parameters for pcf init
 
 #### `--framework` `-fw`
 
-The rendering framework for control. Default value is 'none' [none: HTML, react: React]
+The rendering framework for control. The default value is 'none', which means HTML.
 
 Use one of these values:
 
 - `none`
 - `react`
+
+#### `--name` `-n`
+
+The name for the component.
+
+**Note**: Only characters within the ranges [A - Z], [a - z] or [0 - 9] are allowed. The first character may not be a number.
+
+#### `--namespace` `-ns`
+
+The namespace for the component.
+
+**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '.' are allowed. The first and last character may not be the '.' character. Consecutive '.' characters are not allowed. Numbers are not allowed as the first character or immediately after a period.
 
 #### `--outputDirectory` `-o`
 
@@ -79,41 +67,47 @@ Output directory
 
 #### `--run-npm-install` `-npm`
 
-Auto run 'npm install' after the control is created. Default value is 'false'
+Auto run 'npm install' after the control is created. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
+
+#### `--template` `-t`
+
+Choose a template for the component.
+
+Use one of these values:
+
+- `field`
+- `dataset`
 
 [!INCLUDE [pcf-init-remarks](includes/pcf-init-remarks.md)]
 
 ## pac pcf push
 
-Import the Power Apps component framework project into the current Dataverse Organization
+Import the Power Apps component framework project into the current Dataverse organization
 
 [!INCLUDE [pcf-push-intro](includes/pcf-push-intro.md)]
 
 
-### Required Parameters
-
-#### `--publisher-prefix` `-pp`
-
-Customization prefix value for the Dataverse solution publisher
-
-**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.
-
-
-### Optional Parameters
+### Optional Parameters for pcf push
 
 #### `--force-import` `-f`
 
 Force a full update of the control
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--interactive` `-i`
 
-Indicates that actions in the build are allowed to interact with the user. Do not use this argument in an automated scenario where interactivity is not expected.
+Indicates that actions in the build are allowed to interact with the user. Don't use this argument in an automated scenario where interactivity is not expected.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
+
+#### `--publisher-prefix` `-pp`
+
+Customization prefix value for the Dataverse solution publisher
+
+**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and can't start with 'mscrm'.
 
 #### `--verbosity` `-v`
 
@@ -135,23 +129,23 @@ Patch version for controls
 [!INCLUDE [pcf-version-intro](includes/pcf-version-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for pcf version
 
 #### `--allmanifests` `-a`
 
 Updates patch version for all 'ControlManifest.xml' files
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--filename` `-fn`
 
-Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv
+Tracker CSV file name to be used when using filetracking as a strategy. The default value is 'ControlsStateVersionInfo.csv'.
 
 #### `--patchversion` `-pv`
 
 Patch version for controls
 
-**Note**: The value must be a positive integer
+**Note**: The value must be a positive integer.
 
 #### `--path` `-p`
 
@@ -159,7 +153,7 @@ Absolute/Relative path of the 'ControlManifest.xml' for updating.
 
 #### `--strategy` `-s`
 
-Updates patch version for 'ControlManifest.xml' files using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"
+Updates patch version for 'ControlManifest.xml' files using specified strategy. If using gittags, set a personal access token in the following environment variable "PacCli.PAT"
 
 Use one of these values:
 
@@ -170,7 +164,7 @@ Use one of these values:
 
 #### `--updatetarget` `-ut`
 
-Specify which target manifest needs to be updated
+Specify which target manifest needs to be updated.
 
 Use one of these values:
 

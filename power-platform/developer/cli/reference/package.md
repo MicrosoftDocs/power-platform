@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 6/15/2023
+ms.date: 7/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,9 +26,9 @@ Commands for working with Dataverse package projects
 
 |Command|Description|
 |---------|---------|
-|[pac package add-external-package](#pac-package-add-external-package)|Adds a package that is external to the Dataverse solution system to a PD Package project|
+|[pac package add-external-package](#pac-package-add-external-package)|Adds a package that is external to the Dataverse solution system to a Package Deployer Package project.|
 |[pac package add-reference](#pac-package-add-reference)|Adds reference to Dataverse solution project|
-|[pac package add-solution](#pac-package-add-solution)|Adds a prebuilt Dataverse solution file to a PD Package project|
+|[pac package add-solution](#pac-package-add-solution)|Adds a prebuilt Dataverse solution file to a Package Deployer Package project.|
 |[pac package deploy](#pac-package-deploy)|Deploys package to Dataverse|
 |[pac package init](#pac-package-init)|Initializes a directory with a new Dataverse package project|
 |[pac package show](#pac-package-show)|Shows details of Dataverse package|
@@ -36,23 +36,23 @@ Commands for working with Dataverse package projects
 
 ## pac package add-external-package
 
-Adds a package that is external to the Dataverse solution system to a PD Package project
+Adds a package that is external to the Dataverse solution system to a Package Deployer Package project.
 
 [!INCLUDE [package-add-external-package-intro](includes/package-add-external-package-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for package add-external-package
 
 #### `--package-type` `-t`
 
-The type of the package being added. e.g. 'xpp' for FnO packages.
+The type of the package being added. For example: 'xpp' for FnO packages.
 
 #### `--path` `-p`
 
 Path to the external package
 
 
-### Optional Parameters
+### Optional Parameters for package add-external-package
 
 #### `--import-order`
 
@@ -60,9 +60,9 @@ A whole number that indicates the order to insert this item into the final Impor
 
 #### `--skip-validation` `-sv`
 
-Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.
+Adds the item to the project file even if the file doesn't exist or appears to be invalid. Note: Using this doesn't affect any validation performed by MSBuild.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [package-add-external-package-remarks](includes/package-add-external-package-remarks.md)]
 
@@ -73,18 +73,18 @@ Adds reference to Dataverse solution project
 [!INCLUDE [package-add-reference-intro](includes/package-add-reference-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for package add-reference
 
 #### `--path` `-p`
 
 The path to the referenced Dataverse solution project
 
 
-### Optional Parameters
+### Optional Parameters for package add-reference
 
 #### `--dependency-overrides`
 
-A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.
+A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where minVersion and maxVersion are optional but should be in .NET version format syntax.
 
 **Note**: Use a semicolon delimited list of dependency overrides of the format \<uniquename>:\<minVersion>:\<maxVersion>.
 
@@ -132,23 +132,23 @@ Use one of these values:
 
 ## pac package add-solution
 
-Adds a prebuilt Dataverse solution file to a PD Package project
+Adds a prebuilt Dataverse solution file to a Package Deployer Package project.
 
 [!INCLUDE [package-add-solution-intro](includes/package-add-solution-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for package add-solution
 
 #### `--path` `-p`
 
-Path to the Dataverse solution file (must be *.zip)
+Path to the Dataverse solution file. The file must be a compressed ZIP file.
 
 
-### Optional Parameters
+### Optional Parameters for package add-solution
 
 #### `--dependency-overrides`
 
-A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.
+A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where minVersion and maxVersion are optional but should be in .NET version format syntax.
 
 **Note**: Use a semicolon delimited list of dependency overrides of the format \<uniquename>:\<minVersion>:\<maxVersion>.
 
@@ -194,9 +194,9 @@ Use one of these values:
 
 #### `--skip-validation` `-sv`
 
-Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.
+Adds the item to the project file even if the file doesn't exist or appears to be invalid. Note: Using this doesn't affect any validation performed by MSBuild.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [package-add-solution-remarks](includes/package-add-solution-remarks.md)]
 
@@ -207,20 +207,20 @@ Deploys package to Dataverse
 [!INCLUDE [package-deploy-intro](includes/package-deploy-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for package deploy
 
 #### `--package` `-p`
 
-path to a package dll or zip file with a package
+Path to a package dll or zip file with a package.
 
 
-### Optional Parameters
+### Optional Parameters for package deploy
 
 #### `--logConsole` `-c`
 
 Output log to console
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--logFile` `-lf`
 
@@ -228,15 +228,15 @@ Log file path
 
 #### `--settings` `-s`
 
-Runtime Package Settings that are passed to the package that is being deployed.  The format of the string must be `key=value|key=value`.
+Runtime Package Settings that are passed to the package that is being deployed. The format of the string must be `key=value|key=value`.
 
 **Note**: The format of the string must be `key=value|key=value`.
 
 #### `--verbose` `-vdbg`
 
-Emit Verbose logs to the log outputs
+Emit verbose logs to the log outputs.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [package-deploy-remarks](includes/package-deploy-remarks.md)]
 
@@ -247,7 +247,7 @@ Initializes a directory with a new Dataverse package project
 [!INCLUDE [package-init-intro](includes/package-init-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for package init
 
 #### `--outputDirectory` `-o`
 
@@ -266,14 +266,14 @@ Shows details of Dataverse package
 [!INCLUDE [package-show-intro](includes/package-show-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for package show
 
 #### `--package` `-p`
 
-path to a package dll or zip file with a package
+Path to a package dll or zip file with a package.
 
 
-### Optional Parameters
+### Optional Parameters for package show
 
 #### `--logFile` `-lf`
 
@@ -281,9 +281,9 @@ Log file path
 
 #### `--verbose` `-vdbg`
 
-Emit Verbose logs to the log outputs
+Emit verbose logs to the log outputs.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [package-show-remarks](includes/package-show-remarks.md)]
 

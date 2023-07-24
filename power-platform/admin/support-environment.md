@@ -9,13 +9,13 @@ ms.tgt_pltfrm: ""
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
-author: "jimholtz"
+author: sericks007
 contributors:
   - davidme-ms
 ms.assetid: 
 caps.latest.revision: 63
 ms.subservice: admin
-ms.author: "jimholtz"
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

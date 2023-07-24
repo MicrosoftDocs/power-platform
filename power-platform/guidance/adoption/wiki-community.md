@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 04/10/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -104,7 +104,7 @@ $timeZone = 2
 1. **$newSiteURL** - replace  */powerplatformhub* with your chosen Power Platform communication site URL.
 1. **$ownerEmail** - update with admin email address.
 1. **$siteTitle** - replace with your chosen Power Platform communication site title.
-1. **$timeZone** - a number representing the time zone for your organization, select from the list of [available time zones](/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones).
+1. **$timeZone** - a number representing the time zone for your organization.
 
 Open **Set-PowerPlatformHubAsDLPErrorSettings.ps1** in an ISE of your choice and update the following variables:
 
