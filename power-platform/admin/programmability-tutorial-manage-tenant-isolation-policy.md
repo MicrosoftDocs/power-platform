@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Manage tenant isolation policy (preview) | Microsoft Docs"
+title: "utorial: Manage tenant isolation policy (preview) 
 description: This tutorial will demonstrate how to use the Power Platform API (preview) to manage tenant isolation policy.
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/13/2023
+ms.date: 07/25/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -16,23 +16,23 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial is aimed at (PROVIDE CUSTOMER SCENARIO HERE THAT IS UX DRIVEN).
+This tutorial demonstrates how to use the Power Platform API (preview) to manage tenant isolation policy.
 
 In this tutorial, you'll learn how to:
 
-1.	Authenticate with Power Platform API and related tools
-2.	Call the GET 
-3.	Review the output
-4.	Make updates using POST
-5.	Verify in the admin center
+1.	Authenticate with Power Platform API and related tools.
+2.	Call the GET. 
+3.	Review the output.
+4.	Make updates using POST.
+5.	Verify in the admin center.
 
-In this example scenario, a Customer is looking to enable tenant isolation for their production tenant. 
+In this example scenario, a customer is looking to enable tenant isolation for their production tenant. 
 
 > [!IMPORTANT]
 > The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
 ## Choose a tool that can authenticate with Power Platform API
-Below are details on getting connected to the Power Platform programmatically.  This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, as well as a generic PowerShell example.  More tools and software development kits (SDKs) are coming for Power Platform API that are directly built on top of the API and have full parity.  When those tools become available this tutorial will also be updated.
+Below are details on getting connected to the Power Platform programmatically. This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, as well as a generic PowerShell example.  More tools and software development kits (SDKs) are coming for Power Platform API that are directly built on top of the API and have full parity.  When those tools become available this tutorial will be updated.
 
 # [Azure](#tab/Azure)
 ### Authenticate with Power Platform API and related tools
@@ -40,24 +40,21 @@ To start off, in this tutorial we'll use a Logic Apps workflow.  A Power Automat
 
 Visit the Azure portal, and then create a new logic app and give it a name:
 
-> [!div class="mx-imgBorder"] 
-> ![Create a logic app.](media/appmgmt-tutorial-1.png "Create a logic app (Azure)")
+:::image type="content" source="media/appmgmt-tutorial-1.png" alt-text="Create a logic app.":::
 
-After that finishes provisioning, edit the workflow using the Designer and set up a Recurrence trigger to run on schedule of your choosing:
+After that finishes provisioning, edit the workflow using the designer and set up a recurrence trigger to run on schedule of your choosing:
 
-> [!div class="mx-imgBorder"] 
-> ![Set up a Recurrence trigger.](media/capacity2.png "Set up a Recurrence trigger")
-
+:::image type="content" source="media/capacity2.png" alt-text="Set up a recurrence trigger.":::
+ 
 For the remainder of this tutorial, you'll need an environment ID and an application name to complete the subsequent steps:
-- **Environment Id**: The ID of the environment to which you would install the package. This isn't the organization ID.
+- **Environment ID**: The ID of the environment to which you would install the package. This isn't the organization ID.
 - **Application name**: The name of the application you're trying to install.
 
-Next we'll authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication (preview)](programmability-authentication-v2.md).
+Next, authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication (preview)](programmability-authentication-v2.md).
 
 In this tutorial, we're using a user credential with password to obtain a token.  An example call to Azure AD is below:
 
-> [!div class="mx-imgBorder"] 
-> ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/appmgmt-tutorial-2.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
+:::image type="content" source="media/appmgmt-tutorial-2.png" alt-text="Authenticate with Azure AD and retrieve a token for calling the Power Platform API.":::
 
 We then parse the Azure AD token response into a typed object using this JSON schema in the 'Parse JSON' action:
 
@@ -81,12 +78,12 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 }
 ```
 
-> [!div class="mx-imgBorder"] 
-> ![Parse the Azure AD token response into a strongly typed object.](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
+:::image type="content" source="media/capacity5.png" alt-text="Parse the Azure AD token response into a strongly typed object.":::
 
 # [Generic PowerShell](#tab/pshell)
 ### Get authenticated
 Using Power Platform CLI, you can easily get authenticated with a particular Dataverse organization.  To do this, select an existing auth profile:
+
 ```powershell
 #REPLACE_WITH_EXAMPLE
 ```
@@ -271,14 +268,13 @@ We then parse the response into a strongly typed object using this JSON schema w
 
 # [Generic PowerShell](#tab/pshell)
 ### Call the GET
-Powershell instructions
+Powershell instructions:
 
 ```powershell
 #PROVIDE_CUSTOMER_EXAMPLE
 ```
 
-> [!div class="mx-imgBorder"] 
-> ![List the apps for an environment.](media/appmgmt-tutorial-cli-2.png "List the apps for an environment")
+:::image type="content" source="media/appmgmt-tutorial-cli-2.png" alt-text="List the apps for an environment.":::
 
 For more information, see the [Auth](/powerapps/developer/data-platform/cli/reference/application-command) article for more in depth examples.
 
@@ -297,7 +293,8 @@ REST instructions
 POST https://api.powerplatform.com/appmanagement/environments/{environmentId}/applicationPackages/{uniqueName}/install?api-version=2022-03-01-preview
 ```
 
-And the request body will have the application entry from the earlier step:
+The request body has the application entry from the earlier step:
+
 ```json
 {
                 "id": "ce3bab3c-ada1-40cf-b84b-49b26603a281",
@@ -335,6 +332,7 @@ And the request body will have the application entry from the earlier step:
 ```
 
 The following is an example response:
+
 ```json
 {
         "id": "9a44d33b-6055-4c9b-aa4a-4c410a22e9ad",
@@ -367,11 +365,11 @@ The following is an example response:
     }
 ```
 
-Then we'll use the Parse JSON action to get the operationID for our subsequent steps.
+Then, use the Parse JSON action to get the operationID for our subsequent steps.
 
 # [Generic PowerShell](#tab/pshell)
 ### Review the output
-Powershell instructions
+Powershell instructions:
 
 ```powershell
 #PROVIDE_CUSTOMER_EXAMPLE
@@ -384,18 +382,19 @@ Now we will (PROVIDE CUSTOMER EXAMPLE)
 # [Azure](#tab/Azure)
 
 ### Make updates using POST API
-REST instructions
+REST instructions:
 
 > [!div class="mx-imgBorder"] 
 > ![Until control.](media/appmgmt-tutorial-3.png "Until control")
 
-We'll make use of the [Application Install Status](/rest/api/power-platform/appmanagement/applications/get-application-package-install-status) endpoint to monitor the installation. Be sure to set the **operationId** property to from the prior step. 
+Use the [Application Install Status](/rest/api/power-platform/appmanagement/applications/get-application-package-install-status) endpoint to monitor the installation. Be sure to set the **operationId** property to from the prior step. 
 
 ```http
 GET https://api.powerplatform.com/appmanagement/environments/{environmentId}/operations/{operationId}?api-version=2022-03-01-preview
 ```
 
 An example output is shown below:
+
 ```json
 {
   "status": "NotStarted",
@@ -409,11 +408,10 @@ An example output is shown below:
 From here, we can evaluate the status and if it's one of the terminal values we can break the loop.
 
 ### Verify in the admin center
-Now that the activity is done, you can verify it here in the admin center
+Now that the activity is done, you can verify it here in the admin center:
 
-> [!div class="mx-imgBorder"] 
-> ![Send an email (v2) on the status of the activity.](media/appmgmt-tutorial-4.png "Send an email (v2) on the status of the activity")
+:::image type="content" source="media/appmgmt-tutorial-4.png" alt-text="Send an email (v2) on the status of the activity.":::
 
 # [Generic PowerShell](#tab/pshell)
 ### Monitor progress
-Congratulations! You've reached the easy part, now just sit back and watch as your application completes installation.  In the case of a failure, you can always review the detailed logs from the Dynamics 365 apps list in your environment in the Power Platform admin center.
+Congratulations! Now watch as your application completes installation.  In the case of a failure, you can always review the detailed logs from the Dynamics 365 apps list in your environment in the Power Platform admin center.
