@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 6/15/2023
+ms.date: 7/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,25 +26,59 @@ Use the include files to add additional content to this topic.
 
 |Command|Description|
 |---------|---------|
-|[pac copilot prepare-fetch](#pac-copilot-prepare-fetch)|Takes FetchXML file from AI LLM and prepares it for execution against current environment|
+|[pac copilot list](#pac-copilot-list)|AI Builder models in the current environment.|
+|[pac copilot predict](#pac-copilot-predict)|Sends text or prompt to AI Model|
+|[pac copilot prepare-fetch](#pac-copilot-prepare-fetch)|Takes the FetchXML file from the AI Large Language Model (LLM) and prepares it for execution against the current environment.|
 
+
+## pac copilot list
+
+AI Builder models in the current environment.
+
+[!INCLUDE [copilot-list-remarks](includes/copilot-list-remarks.md)]
+
+## pac copilot predict
+
+Sends text or prompt to AI Model
+
+[!INCLUDE [copilot-predict-intro](includes/copilot-predict-intro.md)]
+
+
+### Required Parameters for copilot predict
+
+#### `--model-id` `-m`
+
+AI Builder model Id
+
+
+### Optional Parameters for copilot predict
+
+#### `--prompt` `-p`
+
+Prompt to send to AI Model
+
+#### `--text` `-t`
+
+Text to send to AI Model
+
+[!INCLUDE [copilot-predict-remarks](includes/copilot-predict-remarks.md)]
 
 ## pac copilot prepare-fetch
 
-Takes FetchXML file from AI LLM and prepares it for execution against current environment
+Takes the FetchXML file from the AI Large Language Model (LLM) and prepares it for execution against the current environment.
 
 [!INCLUDE [copilot-prepare-fetch-intro](includes/copilot-prepare-fetch-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for copilot prepare-fetch
 
 #### `--inputFile` `-i`
 
-Input FetchXML file which is usually comes from AI LLM
+Input FetchXML file that usually comes from AI LLM.
 
 #### `--outputFile` `-o`
 
-Output FetchXML file which is ready to execute against current environment
+Output FetchXML file that is ready to execute against the current environment.
 
 [!INCLUDE [copilot-prepare-fetch-remarks](includes/copilot-prepare-fetch-remarks.md)]
 
