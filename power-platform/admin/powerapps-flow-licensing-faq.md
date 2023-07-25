@@ -340,10 +340,10 @@ The Power Pages authenticated per user and Power Pages anonymous per user offers
 ### Anonymous per user/website subscription capacity packs
 
 | Capacity Pack Tiers | Capacity Packs<br>Minimum purchase | Number of users<br>(500 users/capacity pack) | Price per capacity pack/month |  
-|-------------------------|-------------------------|-------------------------|-------------------------|
-| Tier 1 | 1 pack | 500+ users | $75 |  
-| Tier 2 | 20 packs | 10,000+ users | $37.50 |   
-| Tier 3 | 200 packs | 100,000+ users | $25 |   
+|---------------------|------------------------------------|----------------------------------------------|-------------------------------|
+| Tier 1 | 1 pack     | 500+ users     | $75 |  
+| Tier 2 | 20 packs   | 10,000+ users  | $37.50 |   
+| Tier 3 | 200 packs  | 100,000+ users | $25 |   
 
 Price quoted above are list prices for commercial channel, special prices are offered for education and non-profit customers.
 
