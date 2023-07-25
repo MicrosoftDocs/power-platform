@@ -1,8 +1,8 @@
 ---
-title: Integrate continuous access evaluation (preview)
-description: Learn how to use continous access evaluation in Microsoft Power Platform to enforce changes to user access and tenant policy in near real-time.
+title: Continuous access evaluation (preview)
+description: Learn how continuous access evaluation in Microsoft Power Platform enforces changes to user access and tenant policy in near real-time.
 ms.date: 07/25/2023
-ms.topic: how-to
+ms.topic: overview
 author: ritesp
 ms.author: ritesp
 ms.reviewer: sericks
@@ -13,7 +13,7 @@ search.audienceType:
 ms.custom: bap-template
 ---
 
-# Integrate continuous access evaluation (preview)
+# Continuous access evaluation (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -32,32 +32,31 @@ Integrating continuous access evaluation in your Power Platform solutions offers
 
 - **Prevent unauthorized access to Power Platform services**: When a user account password is compromised, the Azure AD administrator can reset it or disable the account in near&ndash;real-time to prevent unauthorized access to Power Platform services.
 
-- **Remove user access in near&ndash;real-time**: An organization has obligations to instantly remove user access due to various reasons, such as security threats, termination of employment, policy violations, or legal requirements. With continuous access evaluation, the Azure AD administrator can instantly disable user accounts, thereby revoking the access to organizations resources in near real time.
+- **Remove user access in near&ndash;real-time**: Organizations have an obligation to instantly remove a user's access because of security threats, termination of employment, policy violations, or legal requirements. With continuous access evaluation, the Azure AD administrator can instantly disable user accounts and revoke access to organization resources in near&ndash;real-time.
 
-For Power Platform, continuous access evaluation is currently supported by Dataverse only. Microsoft is working with other Power Platform services and clients to support continuous access evaluation.
+## Limitations
 
- See [Continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) for the limitations of continuous access evaluation.
+For Power Platform, only Dataverse supports continuous access evaluation. Microsoft is working to add support to other Power Platform services and clients.
 
-## Scenarios supported by Power Platform
+[Learn about other limitations of continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations).
+
+## Supported events
 
 Continuous access evaluation supports two types of events:
 
-- User [critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) are the events that are related to a user's access to cloud resources.
-- [Conditional access policy](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#conditional-access-policy-evaluation) evaluation occurs when a user should lose access to a resource, based on an administrator-defined policy, such as IP location policy.
+- [User-critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) are events that are related to a user's access to cloud resources:
 
-User critical events include:
+  - User account is disabled or deleted.
+  - Password is changed or reset.
+  - User sessions are revoked.
+  - Multifactor authentication is enabled for the user.
 
-- User account is disabled or deleted.
-- Password is changed or reset.
-- User sessions are revoked.
-- Multifactor authentication is enabled for the user.
+- [Conditional access policy](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#conditional-access-policy-evaluation) evaluation occurs when a user should lose access to a resource based on an administrator-defined policy, such as when the user is no longer connecting from allowed IP locations.
 
-Conditional access policy evaluation occurs when the user account is no longer connecting from allowed IP locations.
+## Supported Power Platform clients
 
-## Power Platform clients supporting continuous access evaluation
-
-Continuous access evaluation-enabled clients for Power Platform support a claim challenge. A claim challenge is a redirect of a user's session to Azure AD for reauthentication when a cached, user token is rejected by a continuous access evaluation-enabled Power Platform service, such as Dataverse. Currently the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) support continuous access evaluation claims. More clients are planned to onboard to continuous access evaluation in the future.
+Power Platform clients that are enabled for continuous access evaluation support *claim challenges*. A claim challenge is a redirect of a user's session to Azure AD for reauthentication when a continuous access evaluation-enabled service like Dataverse rejects a cached user token. Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation support continuous access evaluation claims, with more clients planned to onboard in the future.
 
 For clients that don't support continuous access evaluation, the access token lifetime remains the same as configured or set to the default value.
 
-To enable continuous access evaluation on your Power Platform Dataverse environment, reach out to your Microsoft contact  or Microsoft Support.
+To enable continuous access evaluation in your Power Platform Dataverse environment, reach out to your Microsoft contact or Microsoft Support.

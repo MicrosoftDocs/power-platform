@@ -456,7 +456,7 @@
                   href: block-cookie-replay-attack.md
                 - name: Configure IP firewall (preview)
                   href: ip-firewall.md
-                - name: Integrate continuous access evaluation (preview)
+                - name: Continuous access evaluation (preview)
                   href: continuous-access-evaluation.md
                 - name: Configure environment security
                   items:
