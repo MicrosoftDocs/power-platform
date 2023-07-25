@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Manage tenant isolation policy (preview) | Microsoft Docs"
+title: Tutorial: Manage tenant isolation policy (preview) 
 description: This tutorial will demonstrate how to use the Power Platform API (preview) to manage tenant isolation policy.
 author: laneswenka
 ms.reviewer: sericks
