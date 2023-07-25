@@ -21,8 +21,6 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-<!-- question from editor: Do you want to add any "See also" links to this? -->
-
 # Set up environments and data policies
 
 A cohesive environment strategy supported by data policies enables your organization to protect your existing digital assets and securely deploy solutions.
