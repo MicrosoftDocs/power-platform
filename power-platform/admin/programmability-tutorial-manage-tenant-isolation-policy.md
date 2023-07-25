@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Manage tenant isolation policy (preview) | Microsoft Docs"
-description: This tutorial will demonstrate how to use the Power Platform API (preview) to manage tenant isolation policy.
+description: This tutorial demonstrates how to use the Power Platform API (preview) to manage tenant isolation policy.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -32,11 +32,11 @@ In this example scenario, a customer is looking to enable tenant isolation for t
 > The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
 ## Choose a tool that can authenticate with Power Platform API
-The following section provides details on getting connected to the Power Platform programmatically. This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, as well as a generic PowerShell example.  More tools and software development kits (SDKs) are coming for Power Platform API that are directly built on top of the API and have full parity.  When those tools become available this tutorial will be updated.
+The following section provides details on getting connected to the Power Platform programmatically. This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, and a generic PowerShell example.  More tools and software development kits (SDKs) are coming for Power Platform API that are directly built on top of the API and have full parity.  When those tools become available this tutorial will be updated.
 
 # [Azure](#tab/Azure)
 ### Authenticate with Power Platform API and related tools
-To start off, in this tutorial we'll use a Logic Apps workflow.  A Power Automate flow is also acceptable, and any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST will work with this tutorial.
+To start off, use a Logic Apps workflow.  A Power Automate flow is also acceptable, and any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST works with this tutorial.
 
 Visit the Azure portal, and then create a new logic app and give it a name:
 
@@ -46,13 +46,13 @@ After that finishes provisioning, edit the workflow using the designer and set u
 
 :::image type="content" source="media/capacity2.png" alt-text="Set up a recurrence trigger.":::
  
-For the remainder of this tutorial, you'll need an environment ID and an application name to complete the subsequent steps:
+For the remainder of this tutorial, you need an environment ID and an application name to complete the subsequent steps:
 - **Environment ID**: The ID of the environment to which you would install the package. This isn't the organization ID.
 - **Application name**: The name of the application you're trying to install.
 
 Next, authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication (preview)](programmability-authentication-v2.md).
 
-In this tutorial, we're using a user credential with password to obtain a token.  An example call to Azure AD is below:
+In this tutorial, we're using a user credential with password to obtain a token.  An example call to Azure AD is shown:
 
 :::image type="content" source="media/appmgmt-tutorial-2.png" alt-text="Authenticate with Azure AD and retrieve a token for calling the Power Platform API.":::
 
@@ -84,13 +84,13 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 ### Get authenticated
 Using Power Platform CLI, you can easily get authenticated with a particular Dataverse organization.  To do this, select an existing auth profile:
 
-```powershell
+```PowerShell
 #REPLACE_WITH_EXAMPLE
 ```
 ---
 
 ## Call the GET
-In this section we will retrieve the (PROVIDE CUSTOMER EXAMPLE).
+Retrieve the (PROVIDE CUSTOMER EXAMPLE).
 
 # [Azure](#tab/Azure)
 
@@ -101,7 +101,7 @@ REST INSTRUCTIONS
 GET https://api.powerplatform.com/appmanagement/environments/{environmentId}/applicationPackages?api-version=2022-03-01-preview
 ```
 
-We then parse the response into a strongly typed object using this JSON schema with the 'Parse JSON' action:
+We then parse the response into a typed object using this JSON schema with the 'Parse JSON' action:
 ```json
 {
     "properties": {
@@ -268,9 +268,9 @@ We then parse the response into a strongly typed object using this JSON schema w
 
 # [Generic PowerShell](#tab/pshell)
 ### Call the GET
-Powershell instructions:
+PowerShell instructions:
 
-```powershell
+```PowerShell
 #PROVIDE_CUSTOMER_EXAMPLE
 ```
 
@@ -369,9 +369,9 @@ Then, use the Parse JSON action to get the operationID for our subsequent steps.
 
 # [Generic PowerShell](#tab/pshell)
 ### Review the output
-Powershell instructions:
+PowerShell instructions:
 
-```powershell
+```PowerShell
 #PROVIDE_CUSTOMER_EXAMPLE
 ```
 ---
