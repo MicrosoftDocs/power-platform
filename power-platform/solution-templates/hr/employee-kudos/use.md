@@ -9,9 +9,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
----
-
-<!-- Note from editor: Please check the link in line 50. It might not be working. --> 
+--- 
 
 # Get started using the Employee Kudos app
 
