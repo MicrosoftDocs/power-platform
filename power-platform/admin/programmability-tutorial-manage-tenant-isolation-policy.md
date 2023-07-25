@@ -18,7 +18,7 @@ search.audienceType:
 
 This tutorial demonstrates how to use the Power Platform API (preview) to manage tenant isolation policy.
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 1.	Authenticate with Power Platform API and related tools.
 2.	Call the GET. 
@@ -32,7 +32,7 @@ In this example scenario, a customer is looking to enable tenant isolation for t
 > The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
 ## Choose a tool that can authenticate with Power Platform API
-Below are details on getting connected to the Power Platform programmatically. This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, as well as a generic PowerShell example.  More tools and software development kits (SDKs) are coming for Power Platform API that are directly built on top of the API and have full parity.  When those tools become available this tutorial will be updated.
+The following section provides details on getting connected to the Power Platform programmatically. This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, as well as a generic PowerShell example.  More tools and software development kits (SDKs) are coming for Power Platform API that are directly built on top of the API and have full parity.  When those tools become available this tutorial will be updated.
 
 # [Azure](#tab/Azure)
 ### Authenticate with Power Platform API and related tools
