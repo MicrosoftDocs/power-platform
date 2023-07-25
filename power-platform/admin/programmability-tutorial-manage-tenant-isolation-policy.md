@@ -331,7 +331,7 @@ The request body has the application entry from the earlier step:
             }
 ```
 
-The following is an example response:
+An example response:
 
 ```json
 {
@@ -393,7 +393,7 @@ Use the [Application Install Status](/rest/api/power-platform/appmanagement/appl
 GET https://api.powerplatform.com/appmanagement/environments/{environmentId}/operations/{operationId}?api-version=2022-03-01-preview
 ```
 
-An example output is shown below:
+An example output is shown:
 
 ```json
 {
