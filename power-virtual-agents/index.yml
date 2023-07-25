@@ -37,9 +37,9 @@ highlightedContent:
     url: https://powerplatform.microsoft.com/training-workshops/?accordion=1&tab=6
 
   # Card
-  - title: "Troubleshoot"
-    itemType: reference
-    url: ./error-codes.md
+  - title: Build bots fast
+    itemType: get-started
+    url: ./nlu-gpt-overview.md
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -48,7 +48,7 @@ highlightedContent:
 # Card with summary style
 additionalContent:
   sections:
-    - title: Create and design
+    - title: Create
       # Each card should have at least three and no more than five links. Do not include a "See also" link.
       items:
         - title: Try/Buy
