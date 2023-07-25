@@ -33,7 +33,7 @@ Yes, we have a free Developer Plan to learn and build skills on Power Apps, Powe
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
-You can buy additional data storage, file storage, and flow runs. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+You can buy more data storage, file storage, and flow runs. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 ### Who can buy Microsoft Platform apps plans?
 
@@ -63,7 +63,7 @@ See [Power Apps pricing](https://powerapps.microsoft.com/pricing/) for details.
 
 ### What is the difference between the legacy Power Apps per user offer and the Power Apps Premium offer?
 
-There is no difference between these two offers. Power Apps per user has simply been renamed *Power Apps Premium*.
+There is no difference between these two offers. Power Apps per user has been renamed *Power Apps Premium*.
 
 ### How do I use Power Apps per app plans?
 
@@ -94,7 +94,7 @@ Also, the guest must have the same license that's required for non-guests to run
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
 
-Power Apps licenses will continue to include Power Automate capabilities. However, flows will need to run within the context of the app, which refers to using the same data sources for triggers or actions as the app. Consuming standalone Power Automate flows unrelated to the app(s) will require purchase of a standalone Power Automate license.
+Power Apps licenses continue to include Power Automate capabilities. However, flows need to run within the context of the app, which refers to using the same data sources for triggers or actions as the app. Consuming standalone Power Automate flows unrelated to the app(s) requires purchase of a standalone Power Automate license.
 
 ### Do all my users need to be licensed with the same types of Power Apps licenses, or can I mix licenses?
 
@@ -141,7 +141,7 @@ No, there are no licensing prerequisites required for eligibility to purchase Po
 
 -   List Price (USD): $5,000 for 100 GB of data stored/month
 -   Required pre-requisite: Power Automate Premium. Multiple add-ons can be applied to a single pre-requisite.
--   Additional Entitlements per capacity pack:
+-   More entitlements per capacity pack:
     -   Dataverse database capacity 2 GB/capacity pack
     -   Dataverse file capacity 1 TB/capacity pack
     -   250k Power Platform Requests/24 hrs
@@ -164,7 +164,7 @@ Process Mining Desktop capability and limited amount of Process Mining data stor
 
 #### Are Power BI Pro, Power BI Per User or Power BI premium capacity licenses required for this solution? If so, do any Power BI limitations come into play or is there a package price?
 
-Power BI licenses are not included in Power Automate Process Mining. In order to customize and analyze your process mining results further, you may want to acquire additional Power BI Pro\*, Power BI per user, or Power BI premium capacity licenses if you haven't already done so. For more information, see [Power BI pricing](https://powerbi.microsoft.com/pricing/).
+Power BI licenses are not included in Power Automate Process Mining. In order to customize and analyze your process mining results further, you may want to acquire more Power BI Pro\*, Power BI per user, or Power BI premium capacity licenses if you haven't already done so. For more information, see [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
 \* Power BI Pro is [included](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot:overviewtab&rtc=1) in Microsoft 365 E5 and Office 365 E5.
 
@@ -178,7 +178,7 @@ Capacity should be purchased for the peak utilization over a 12-month contract p
 
 #### How much process mining capacity is included in the Power Automate Premium license?
 
-Customers that purchase the Power Automate Premium license will be able to use entitlements for task mining and limited data storage for process mining (<u>up to 50 MB</u>) at no additional charge.
+Customers that purchase the Power Automate Premium license are able to use entitlements for task mining and limited data storage for process mining (<u>up to 50 MB</u>) at no extra charge.
 
 #### How much process mining capacity is included in the Power Automate Premium trial?
 
@@ -192,10 +192,10 @@ The Power Automate Premium trial will include 100 MB of Process Mining stored da
 -   Entitlements: Licensed per bot, the Power Automate hosted RPA add-on license provides capacity for a single Microsoft RPA bot and a virtual machine for running automations.
 -   Qualifying prerequisite: Power Automate Premium, Power Automate Process
     -   Multiple hosted RPA add-on licenses can be added with a single qualifying base license.
-    -   Concurrent instances of a singular process require an additional unattended bot for each instance.
+    -   Concurrent instances of a singular process require an extra unattended bot for each instance.
 
 > [!Note]
->  Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. Please see the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
+>  Any software automated with an unattended bot may require extra licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. Please see the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
 
 #### Is per flow an eligible pre-requisite for the Hosted RPA add-on?
 
@@ -207,7 +207,7 @@ The bots are hosted with Azure virtual machines leveraging Virtual Machine Scale
 
 #### Is this offer available worldwide?
 
-Yes, the hosted RPA add-on will be available to all geographies worldwide with the exception of UAE due to capacity restrictions.
+Yes, the hosted RPA add-on will be available to all geographies worldwide except for UAE due to capacity restrictions.
 
 #### Is there a trial version of Power Automate hosted RPA?
 
@@ -266,7 +266,7 @@ Power Virtual Agents for Teams enables customers with select Microsoft 365 or Of
 #### Are there additional Power Virtual Agents licensing requirements to create and edit with Copilot?
 
 -   Your bot must be created in the US region.
--   You'll need a Power Virtual Agents license and you will need to create an account.
+-   You need a Power Virtual Agents license and you must create an account.
     -   (If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
 -   This capability may be subject to usage limits or capacity throttling.
 
@@ -311,7 +311,7 @@ There are several scenarios in which a user who has anonymously browsed the webs
     -  If a page returns an error response (http 5xx status).
     -  If a page returns 404, or any http 4xx response.
 -  Bots and crawler accessing anonymous pages of the website isn't counted.
--  If there's a monitoring system setup to test website availability periodically, it will be removed if it sends a non-browser user agent. In case your monitoring system sends a user agent that is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend targeting **/\_services/about** page of your website to ensure that it isn't counted in anonymous user access.
+-  If there's a monitoring system setup to test website availability periodically, it is removed if it sends a non-browser user agent. In case your monitoring system sends a user agent that is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend targeting **/\_services/about** page of your website to ensure that it isn't counted in anonymous user access.
 -  If a user is accessing only static resources (CSS, JavaScript, and images) won't be counted.
 -  If a user is browsing anonymously and later logs in to the website within same day (UTC time zone), then that user will only be counted as authenticated user and won't be counted as anonymous user.
 
@@ -375,14 +375,14 @@ Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses
 
 | Parameter | Power Apps portals licensing | Power Pages licensing |
 |-------------------------|-------------------------|-------------------------|
-| **Provisioning a website** | Every additional website in the environment requires 1 GB of Dataverse capacity | No Dataverse capacity is required to provision a website |
+| **Provisioning a website** | Every extra website in the environment requires 1 GB of Dataverse capacity | No Dataverse capacity is required to provision a website |
 | **Qualifying base offers** | Dynamics 365 and Power Apps licenses | No base offer is required and licenses can be purchased standalone |
 | **Licenses required for internal authenticated users** | Dynamics 365 enterprise licenses<br /></br>Power Apps per app plan<br /></br>Power Apps per user plan<br /></br>Power Apps per app pay-as-you-go meter | Dynamics 365 enterprise licenses<br /></br>Power Apps per app plan<br /></br>Power Apps per user plan<br /></br>(New) Authenticated per user/website subscription<br /></br> |
 | **Licenses required for external authenticated Users** | Power Apps portals logins capacity (one login = daily unique login) | Authenticated per user/website subscription<br /></br> |
 | **Licenses required for anonymous users** | Power Apps portals page view capacity | Anonymous per user/website subscription<br /></br>|
 | **Dataverse storage** | Not included with Power Apps portals logins and page view capacity | Included with Power Pages subscription<br /></br>Included with Power Pages  |
 
-### If I'm building a Power Pages website for my employees who will log in using their Azure AD credentials. What Power Pages licenses do I need?
+### If I'm building a Power Pages website for my employees who log in using their Azure AD credentials. What Power Pages licenses do I need?
 
 Internal authenticated users of a Power Pages website can use one of the following type of licenses:
 
@@ -397,7 +397,7 @@ Internal authenticated users of a Power Pages website can use one of the followi
 
 Power Pages Authenticated per user/month capacity count the number of unique users in a month that have accessed the website in an authenticated manner whereas Power Apps login capacity counts the number of total logins all users had on the website over a 24-hour period.    
     
-For example, in a scenario where a website was accessed by a total of 100 authenticated users in a month with each user logging in once every day to the website. In this scenario, if we apply both meters, here is how they'll work;
+For example, in a scenario where a website was accessed by a total of 100 authenticated users in a month with each user logging in once every day to the website. In this scenario, if we apply both meters, here is how they work:
 
 1. **Power Pages authenticated per user**  
     With Power Pages Authenticated per user per website monthly capacity, the total number of users would be 100 and the customer will need to purchase capacity for 100 users for the website.
@@ -410,9 +410,9 @@ Power Pages authenticated per user/website is licensed based on the number of un
 
 The same is true if the users are anonymous and not authenticated.
 
-### Do I require additional licensing for Power Pages content delivery network (CDN) and web application firewall (WAF) capabilities?
+### Do I require extra licensing for Power Pages content delivery network (CDN) and web application firewall (WAF) capabilities?
 
-No. Both CDN and WAF capabilities are included as part of Power Pages licensing and don't require any additional licenses to be purchased.
+No. Both CDN and WAF capabilities are included as part of Power Pages licensing and don't require any extra licenses to be purchased.
 
 ### For subscription-based licenses, what is the minimum number of authenticated and anonymous user capacity I need to assign to an environment?
 
