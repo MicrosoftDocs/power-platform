@@ -22,6 +22,8 @@
         - name: Responsible AI
           items:
             - name: Overview
-              href: transparency-note-overview.md
-            - name: Transparency note for Copilot data security and privacy
-              href: transparency-note-copilot-data-security-privacy.md
+              href: responsible-ai-overview.md
+            - name: FAQ for Copilot data security and privacy
+              href: faqs-copilot-data-security-privacy.md
+            - name: FAQ for Copilot data sharing
+              href: faqs-copilot-data-sharing.md

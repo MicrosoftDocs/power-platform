@@ -140,7 +140,7 @@ Power Virtual Agents has OSPAR attestation.
 
 ## Korea-Information Security Management System (K-ISMS)
 
-[K-ISMS](https://isms.kisa.or.kr/main/isms/intro/) is a country-specific ISMS framework that defines a stringent set of control requirements designed to help ensure that organizations in Korea consistently and securely protect their information assets.
+[K-ISMS](https://isms.kisa.or.kr/main/isms/intro/) is a country/region-specific ISMS framework that defines a stringent set of control requirements designed to help ensure that organizations in Korea consistently and securely protect their information assets.
 
 [Learn more about ISMS (Korea)](/compliance/regulatory/offering-ISMS-korea).
 
