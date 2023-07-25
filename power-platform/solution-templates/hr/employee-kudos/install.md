@@ -11,9 +11,6 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-<!-- Note that "environment" is misspelled at the top center of the image in line 72.  Also, in line 74, is "templated" correct or should it be "templates"? -->
-
-
 # Install the Employee Kudos template
 
 Take the following steps to install the Employee Kudos solution template.
