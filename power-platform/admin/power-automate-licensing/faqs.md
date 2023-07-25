@@ -41,11 +41,11 @@ You need process license if your flow meets one of the following criteria:
 
 - Your flows use unattended RPA(Robotic Process Automation) to run desktop flows on machines without user interaction.
   or
-- Your flows are running under Application user(flow owner is a Service principal).Organization with multiple environments(Dev/Test/Prod) use DevOps pipelines to export and deploy flows into other environments for healthy ALM(Application life management) run their flows using service principal to avoid giving access to users in production environments.
+- Your flows are running under Application user (flow owner is a Service principal). Organization with multiple environments(Dev/Test/Prod) use DevOps pipelines to export and deploy flows into other environments for healthy ALM (Application life management) run their flows using service principal to avoid giving access to users in production environments.
   or
 - Your flows process large data or need to run frequently data thereby needing high volume of Power platform requests.
   or
--  Your premium flow provides is invoked by mutliple users. In this case, either everyone needs a premium license or the flow needs a process license. If a flow has a process license, it doesn't require any user to have a license. It provides an organization with the flexibility to pay for licenses based on the number of flows. Larger organizations or solutions that affect many people, can benefit from the fixed monthly cost.
+-  Your premium flow provides is invoked by multiple users. In this case, either everyone needs a premium license or the flow needs a process license. If a flow has a process license, it doesn't require any user to have a license. It provides an organization with the flexibility to pay for licenses based on the number of flows. Larger organizations or solutions that affect many people, can benefit from the fixed monthly cost.
   or
 - Your Flow uses premium connectors, and  your organization has many guest users using the flow, but you don't know if the guest users' home tenant provides them with premium licenses.
 
