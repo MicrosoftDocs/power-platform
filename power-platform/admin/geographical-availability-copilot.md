@@ -17,40 +17,49 @@ With copilots and generative AI features in Power Platform and Dynamics 365, you
 
 These capabilities are currently available in environments in the US region and support the English language. This feature allows you to try the copilot and generative features across Power Platform and Dynamics 365 customer engagement environments is non-US regions.
 
-> [!Note]
-> The underlying infrastructure for copilots is currently available in the US region only. Accessing copilots or generative AI features from non-US regions results in data movement across regional boundaries.
+> [!NOTE]
+> The underlying infrastructure for copilots is currently available in the US region only. Accessing copilots or generative AI features from non-US regions results in **data movement across regional boundaries**. Once enabled, any data movement that already happened while this feature was enabled cannot be reversed by [removing your consent](#disable-copilots-and-generative-ai-in-non-us-regions).
 
 You can allow copilots in your non-US environments by following these steps:
 
-1.  Navigate to an environment's **Settings** page in [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-1.  Select **Edit** on the **Allow data movement across regions for AI features** card.
+1. Select **Environments** from the left-pane.
+
+1. Select your environment.
+
+1. From the right-side of the screen, select **Edit** on the **Allow data movement across regions for AI features** card.
 
     ![Select **Edit** on the **Allow data movement across regions for AI features** card.](media/allow-data-movement.png)
 
-1.  Read the information on the panel and select the check mark to consent to the terms of use.
+1. Read the information on the panel and select the check mark to consent to the terms of use.
 
     ![Select the check mark to consent to the terms of use.](media/terms-of-use.png)
 
-1.  Select **Enable**.
+1. Select **Enable**.
 
     After you consent, the status on the **Allow data movement across regions for AI features** card shows **Allowed** and copilots and generative AI features are enabled in the environment.
 
 ## Disable copilots and generative AI in non-US regions
+
 You can disable the copilots and generative AI features in non-US environments by following these steps.
 
-1.  Navigate to an environment's **Settings** page in [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+> [!IMPORTANT]
+> Any data movement that happened while this feature was enabled cannot be reversed by removing your consent.
 
-1.  Select **Edit** button on the **Allow data movement across regions for AI features** card.
+1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-1.  Clear the terms of use check mark.
+1. Select **Environments** from the left-pane.
 
-4.  Select **Disable**.
+1. Select your environment.
+
+1. From the right-side of the screen, select **Edit** on the **Allow data movement across regions for AI features** card.
+
+1. Clear the terms of use check mark.
+
+1. Select **Disable**.
 
     After you remove your consent, the status on the **Allow data movement across regions for AI features** card shows **Not allowed** and copilots and generative AI features are disabled in the environment.
-
-> [!Note]
-> Any data movement that happened while this feature was enabled cannot be reversed by removing your consent.
 
 ## Geographical availability of copilots and generative AI features
 
@@ -81,13 +90,13 @@ The following table indicates the availability of copilots and generative AI fea
 | Dataverse | **Dataverse Service for Copilot for M365 BizChat and BAP business applications<br /></br>**(doc link) | US | No | English |
 | Dataverse | **Excel to Table for New Makers<br /></br>**(doc link) | US | No | English |
 | Dataverse | **M365 Biz Chat Q&amp;A and Actions with Dataverse Connectors**</br>(doc link) | US | No | English |
-| AI Builder | **Text Generation with GPT**<br /></br>(doc link) | US | Yes | English |
+| AI Builder | **Text Generation with GPT**<br /></br>(doc link) | US | No | English |
 | Power Apps | **Maker Copilot (NL2Table)**<br /></br>Learn more: [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app) | US | No | English |
 | Power Apps | **Maker Copilot: (NL2Edit)**</br>(doc link) | US | No | English |
 |  Power Apps| **Copilot for canvas apps**<br><br>Learn more: [Add Copilot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot) | US | No | English |
 | Power Apps | **App Copilot for model Power Apps and Dynamics 365**</br>(doc link) | US | No | English |
 | Power Automate | **Power Automate Designer Copilot**</br>(doc link) | US | No | English |
-| Power Pages| **C2 Copilot (PVA Chatbot)**<br /><br />Learn more: [Enable chatbot in a Power Pages site](/power-pages/getting-started/enable-chatbot) | US | No | English, Danish, Dutch, French, German, Italian, Spanish, and Japanese |
+| Power Pages| **C2 Copilot (PVA Chatbot)**<br /><br />Learn more: [Enable chatbot in a Power Pages site](/power-pages/getting-started/enable-chatbot) | US | No | English |
 | Power Pages | **Create form in webpage**<br /><br />Learn more: [Create AI-generated form using Copilot](/power-pages/getting-started/add-form-copilot) | US | No | English |
 | Power Pages | **Create text in webpage**<br /><br />Learn more: [Add AI-generated text using Copilot](/power-pages/getting-started/add-text-copilot) | US | No | English |
 | Power Pages| **Create website page**<br /><br />(doc link) | US | No | English |

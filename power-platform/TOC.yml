@@ -17,6 +17,8 @@
           href: solution-templates/overview.md
         - name: International availability
           href: availability.md
+        - name: Enable copilots and generative AI in non-US regions
+          href: admin/geographical-availability-copilot.md
         - name: Important changes (deprecations) coming
           href: important-changes-coming.md
         - name: Responsible AI
