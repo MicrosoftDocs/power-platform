@@ -18,5 +18,5 @@ Responsible AI FAQs are part of a broader effort to put Microsoft's AI principle
 ## AI-driven features in Power Platform ALM
 This is a growing list of AI-driven features. To learn about the capabilities and impact of specific features, select a feature name from the list.
 
-- [FAQ for Use Copilot to generate deployment notes in pipelines](faqs-ai-deployment-notes-pipelines.md)
+- [FAQ for using Copilot to generate deployment notes in pipelines](faqs-ai-deployment-notes-pipelines.md)
 - [Use Copilot to generate deployment notes in pipelines (preview)](copilot-deployment-notes-pipelines.md)
