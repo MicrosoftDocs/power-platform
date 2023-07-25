@@ -21,10 +21,6 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-
-<!-- from editor: Note that the image in line 40 says "SAP Accelerator Administrator" but it's with text that says "SAP Solution Administrator." Is that correct? --> 
-
-
 # Use the SAP Solution Administrator model-driven app
 
 Learn about the _SAP Solution Administrator_ model-driven app and how you can use it in conjunction with Dataverse to seed relevant SAP data into your solutions' apps and flows as well as monitor the solutions you deploy.
