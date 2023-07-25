@@ -77,7 +77,7 @@ Use one of these values:
 - `UsGovHigh`
 - `UsGovDod`
 - `China`
-
+  
 #### `--deviceCode` `-dc`
 
 Use the Azure Active Directory Device Code flow for interactive sign-in.
