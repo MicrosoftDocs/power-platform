@@ -1,15 +1,15 @@
 ---
-title: "Add users to an environment automatically or manually"
-description: "Learn about adding users to an environment and how the process differs when it has a Dataverse database. Use security groups to restrict access or add specific users." 
-author: sericks007
+title: Add users to an environment automatically or manually
+description: Learn about adding users to an environment and how the process differs when it has a Dataverse database. Use security groups to restrict access or add specific users. 
+author: srpoduri 
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: jimholtz
+ms.author: sripod
+ms.reviewer: sericks
 ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/17/2021
+ms.date: 07/21/2023
 search.audienceType: 
   - admin
 ---
@@ -27,11 +27,13 @@ When an environment is created with a Dataverse database or a Dataverse database
 
 - For a user to be successfully added to an environment that has a Dataverse database, the user must meet certain criteria. This same criteria applies to [enabling a user who is already present in an environment](create-users.md#enable-or-disable-user-accounts).  
 
-- Automatic user addition to an environment takes time, especially if your organization is large and access to the environment isn't restricted to any security group. As a best practice, we recommend that you restrict access to your environment to a specific set of users by [associating your environment to a security group](control-user-access.md). 
+- Automatic user addition to an environment takes time, especially if your organization is large and access to the environment isn't restricted to any security group. As a best practice, we recommend that you restrict access to your environment to a specific set of users by [associating your environment to a security group](control-user-access.md).
+
+- The system also supports just-in-time (JIT) user provisioning. In this scenario, when users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment. 
 
 - In most cases, adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by [assigning security roles to users](database-security.md). Users with certain Dynamics 365 app licenses will be assigned some security roles by default that only give them read access to the environment's resources. Users who have been assigned service admin roles or the Global admin role, assigned through the Microsoft 365 admin center, will get the [System Administrator role](database-security.md#predefined-security-roles) by default. They will have admin privileges to the environment's resources when they get added to the environment. 
 
-- Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner. 
+- Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner.
 
 > [!TIP]
 > Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).

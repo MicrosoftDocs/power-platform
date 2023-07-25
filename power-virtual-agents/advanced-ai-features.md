@@ -2,13 +2,12 @@
 title: "AI features for Teams and Classic bots (contains video)"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users. These features are available in the Teams app for Power Virtual Agents and for Classic bots."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 03/24/2023
-
+ms.date: 07/25/2023
 ms.topic: how-to
-author: KendalBond007
+author: iaanw
 ms.author: iawilt
 manager: leeclontz
-ms.reviewer: eaglez
+ms.reviewer: peterswimm
 ms.custom: "advanced-authoring, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -107,7 +106,12 @@ After reviewing the suggested trigger phrases, you can choose to delete the enti
 
 ### Conversation personalization (preview)
 
-[When this feature is enabled](#enable-or-disable-ai-capabilities), the bot reuses information from Microsoft Graph and Azure Active Directory (Azure AD) throughout the conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
+> [!IMPORTANT]
+> The conversation personalization (preview) capability will be **retired on 28 Septempter 2023**. From that date onwards, you won't be able to enable this capability in any new or existing bots. The capability will also be disabled for any existing bots that have it enabled.
+>  
+> The unified authoring canvas includes a raft of improvements to the types of AI used by Power Virtual Agents. Wherever possible, we recommend you [create and convert your bots with the unified authoring canvas](unified-authoring-conversion.md).
+
+For this capability, the bot reuses information from Microsoft Graph and Azure Active Directory (Azure AD) throughout the conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
 
 Specifically, with this feature enabled, when the bot asks questions such as those in the following table, the corresponding user information is pulled from Microsoft Graph and Azure AD (for authenticated users) and provided as prompts for the user to choose as an option.
 
@@ -142,8 +146,12 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 
 > [!IMPORTANT]
 > You can't enable these features for bots aren't marked **Classic**. This includes any bots created (or converted) in the web app after May 23, 2023, or any bots that weren't created with the unified authoring canvas (such as those you created specifically for certain scenarios, which you chose when you created the bot).
+>
+> The conversation personalization (preview) capability will be **retired on 28 Septempter 2023**. From that date onwards, you won't be able to enable this capability in any new or existing bots. The capability will also be disabled for any existing bots that have it enabled, and it will be removed from the **AI capabilities** page in Power Virtual Agents.
+>  
+> The unified authoring canvas includes a raft of improvements to the types of AI used by Power Virtual Agents. Wherever possible, we recommend you [create and convert your bots with the unified authoring canvas](unified-authoring-conversion.md).
 
-To use these AI capabilities in Power Virtual Agents:
+To enable these older AI capabilities in Power Virtual Agents:
 
 1. Open the bot you want to enable the features for:
   - In the web app, the bot must be marked with **Classic**.
