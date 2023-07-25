@@ -78,6 +78,8 @@
                   href: extend-pipelines-github-export.md
             - name: Run pipelines
               href: run-pipeline.md
+            - name: Use Copilot to generate deployment notes in pipelines (preview)
+              href: copilot-deployment-notes-pipelines.md
     - name: ALM for developers
       href: alm-for-developers.md
       items:
@@ -160,3 +162,9 @@
           href: when-edit-customization-file.md
         - name: Pipeline table reference
           href: ../developer/pipelines/table-reference.md
+    - name: Responsible AI
+      items:
+        - name: Overview
+          href: responsible-AI-overview.md
+        - name: FAQ for using Copilot to generate deployment notes in pipelines
+          href: faqs-ai-deployment-notes-pipelines.md
