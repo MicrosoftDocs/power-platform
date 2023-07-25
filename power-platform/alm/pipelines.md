@@ -127,7 +127,7 @@ Yes. You can configure bulk delete jobs in the Dataverse pipelines host to delet
 
 ### Can I specify advanced solution import behaviors such as update versus upgrade?
 
-Not currently. Pipelines default import behavior is _Upgrade_ with _Maintain customizations_.
+Not currently. Pipelines default import behavior is _Upgrade_ with _Overwrite customizations_.
 
 ### Can an environment be associated with multiple hosts?
 
@@ -151,7 +151,7 @@ Yes, this is possible, although we recommend starting with the same pipeline for
 
 ### Can the host environment also be used as a development or target environment?
 
-While possible, this isn't typically recommended; especially for development environments that may be deleted or reset. 
+Using the same environment for development and the host isn't supported; other combinations aren't recommended as a best practice.  
 
 ### How can I view what changed between different versions?
 
