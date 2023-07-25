@@ -68,11 +68,11 @@ The following table indicates the availability of copilots and generative AI fea
 |Project Operations | **Project issues and risks tracking information<br /></br>**(doc link) | US | No | English |
 |Project Operations | **Project status reports<br /></br>**(doc link) | US | No | English |
 | Project Operations | **Project WBS generation<br /></br>**(doc link) | US | No | English |
-| Dynamics 365 Customer Service | **Digital messaging with Copilot **<br /></br>(doc link) | US | Yes | English |
-| Dynamics 365 Customer Service | **Auto-Draft Email**<br /></br>(doc link) | US | Yes | English |
-| Dynamics 365 Customer Service | **Converse with Copilot**</br>(doc link) | US | Yes | English |
-| Dynamics 365 Customer Service | **Conversation summarization**</br>(doc link) | US | Yes | English |
-| Dynamics 365 Customer Service | **Case summarization<br /></br>**(doc link) | US | Yes | English |
+| Dynamics 365 Customer Service | **Digital messaging with Copilot **<br /></br>[Draft a chat response](/dynamics365/customer-service/use-copilot-features#draft-a-chat-response) | US | Yes | English |
+| Dynamics 365 Customer Service | **Auto-Draft Email**<br /></br>[Draft emails](/dynamics365/customer-service/use-copilot-features#draft-emails) | US | Yes | English |
+| Dynamics 365 Customer Service | **Converse with Copilot**</br>[Ask a question](/dynamics365/customer-service/use-copilot-features#ask-a-question) | US | Yes | English |
+| Dynamics 365 Customer Service | **Conversation summarization**</br>[Summarize conversations](/dynamics365/customer-service/use-copilot-features#summarize-conversations) | US | Yes | English |
+| Dynamics 365 Customer Service | **Case summarization<br /></br>**[Summarize cases](/dynamics365/customer-service/use-copilot-features#summarize-cases) | US | Yes | English |
 | Nuance Mix (VA, IVR) | **Consumer Assist (Bing/GPT fallback)**</br>(doc link) | US | No | English |
 |  Nuance Mix (VA, IVR) | **AppDev Assist (NL2Bot)**</br>(doc link) | US | No | English |
 | Microsoft Supply Chain Center | **Contact Suppliers**<br /></br>(doc link) | US | No | English |
