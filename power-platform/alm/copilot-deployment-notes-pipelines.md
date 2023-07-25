@@ -39,12 +39,10 @@ Solutions can become complex, often containing dozens of components that are dif
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
 > - This capability is powered by [ Azure OpenAI Service](/azure/cognitive-services/openai/overview).
-> - Learn more about our [transparency for Copilot data security and privacy in Power Platform](/dynamics365/transparency-note-copilot-data-security-privacy.md).
+> - Learn more about our [transparency for Copilot data security and privacy in Power Platform](/dynamics365/transparency-note-copilot-data-security-privacy).
 > - This capability is in process of rolling out, and may not be available in your region yet.
 > - This capability  may be subject to usage limits or capacity throttling.
 
 ### See also
 
 [FAQ for using Copilot to generate deployment notes in pipelines](faqs-ai-deployment-notes-pipelines.md)
-
-[Transparency notes for Power Apps](/power-apps/maker/common/transparency-note.md)
