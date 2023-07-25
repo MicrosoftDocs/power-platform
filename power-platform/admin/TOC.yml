@@ -454,9 +454,9 @@
                   href: block-forwarded-email-from-power-automate.md
                 - name: Block cookie replay attacks
                   href: block-cookie-replay-attack.md
-                - name: IP firewall (preview)
+                - name: Configure IP firewall (preview)
                   href: ip-firewall.md
-                - name: Continuous access evaluation integration (preview)
+                - name: Integrate continuous access evaluation (preview)
                   href: continuous-access-evaluation.md
                 - name: Configure environment security
                   items:
