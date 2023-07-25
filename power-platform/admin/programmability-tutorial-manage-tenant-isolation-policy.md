@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 1.	Authenticate with Power Platform API and related tools.
 2.	Call the GET. 
 3.	Review the output.
-4.	Make updates using POST.
+4.	Make updates with POST.
 5.	Verify in the admin center.
 
 In this example scenario, a customer is looking to enable tenant isolation for their production tenant. 
@@ -376,12 +376,12 @@ PowerShell instructions:
 ```
 ---
 
-## Make updates using POST
+## Make updates with POST
 Now we will (PROVIDE CUSTOMER EXAMPLE)
 
 # [Azure](#tab/Azure)
 
-### Make updates using POST API
+### Make updates with POST API
 REST instructions:
 
 > [!div class="mx-imgBorder"] 
