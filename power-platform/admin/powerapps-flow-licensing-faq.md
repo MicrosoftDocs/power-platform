@@ -114,7 +114,7 @@ See [Types of Power Automate licenses](power-automate-licensing/types.md), [Fr
 
 ### Power Automate Premium
 
-#### What are the pricing and licensing details Power Automate Premium?
+#### What are the pricing and licensing details for Power Automate Premium?
 
 -   List Price (USD): $15 per user/month
 -   Entitlements: Licensed per user, Power Automate Premium enables licensed users to automate modern applications via API-based digital process automation, Digital Process Automation (cloud flows), and legacy applications via UI-based robotic process automation (desktop flows) in attended mode. It also includes full Process Mining desktop functionality and a limited amount of Process Mining data storage (50 MB per user license up to 100 GB per customer).
