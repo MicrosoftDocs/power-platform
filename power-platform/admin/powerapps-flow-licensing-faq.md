@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs| Microsoft Docs
 description: FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: conceptual
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -48,6 +48,10 @@ API capacity is tracked based on consumption at an individual user level, and th
 API limits are also applicable to application users, non-interactive users and administrative users in Dataverse.
 
 More information is available in [Requests limits and allocations](api-request-limits-allocations.md).
+
+### What are the new Power Platform offers that launched on August 1, 2023?
+
+This new Power Platform simplified portfolio of offers is generally available August 1, 2023. Here is an overview of the offers.
 
 ## Power Apps
 
@@ -199,7 +203,7 @@ The Power Automate Premium trial will include 100 MB of Process Mining stored da
 
 #### Is per flow an eligible pre-requisite for the Hosted RPA add-on?
 
-Yes, per flow is eligible until February 1.
+Yes, per flow is eligible until February 1, 2024.
 
 #### How are the bots hosted?
 
