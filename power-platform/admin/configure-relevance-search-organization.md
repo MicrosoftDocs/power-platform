@@ -225,6 +225,12 @@ To edit the searchable fields of a table:
 >
 > - Although you can have related table fields as a **View column** or a **Find column** or a **Filter column** in a table's Quick Find View, related table fields are not supported by Dataverse search and hence ignored.
 >
+> - If the length of text in a table column is changed and the column is set to **Simple Search View**, the import may not be successful and the following error occur.
+> 
+>    *Length is not valid because this is an indexed attribute and hence cannot have size greater than 1700.*
+>
+>    The "indexed attribute" can't extend beyond 1700 bytes. If the corresponding column is registered in the **Quick Find View**, remove the corresponding column to **Quick Find View** and try to re-export after a time interval. For more information, see [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16). 
+>
 > - Updates to calculated fields and lookups are not automatically synced in Dataverse search. Data is refreshed whenever a field that is configured for Dataverse search is updated in a record.
 > 
 > - There are some common fields, that are part of every table in Dataverse, which are part of the Dataverse search index by default. Some examples of common fields are:
