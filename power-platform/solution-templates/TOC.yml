@@ -63,13 +63,13 @@
   - name: Awards and Recognition
     items:
     - name: Overview
-      href: hr/awards-recognition/overview.md
+      href: hr/awards-and-recognition/overview.md
     - name: Install
-      href: hr/awards-recognition/install.md
+      href: hr/awards-and-recognition/install.md
     - name: Use
-      href: hr/awards-recognition/use.md
+      href: hr/awards-and-recognition/use.md
     - name: Customize
-      href: hr/awards-recognition/customize.md
+      href: hr/awards-and-recognition/customize.md
 - name: Related content
   items:
   - name: Power Apps documentation

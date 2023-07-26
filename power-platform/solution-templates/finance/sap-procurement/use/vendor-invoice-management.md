@@ -12,7 +12,7 @@ contributors:
 - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 07/14/2023
+ms.date: 07/24/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -24,11 +24,11 @@ You can do several functions in SAP more easily and quickly using Microsoft's SA
 
 ## View a vendor invoice
 
-There are three options for viewing a vendor invoice:
+You have three options for viewing a vendor invoice:
 
-- You can select a recent vendor invoice that you have interacted with.
-- You can search for a vendor invoice based on vendor, document type, company code, and date range.
-- You can enter a known vendor invoice number.
+- Select a recent vendor invoice that you have interacted with.
+- Search for a vendor invoice based on vendor, document type, company code, and date range.
+- Enter a known vendor invoice number.
 
 ### Select a vendor invoice
 
@@ -38,11 +38,18 @@ From the _Select recent vendor invoice_ drop down list, you can see a list of pr
 
 If you have not interacted with the vendor invoice, and you don't know the exact number, you can search for a vendor invoice. Select the **funnel** icon to open the vendor invoice search screen.
 
-The vendor invoice search screen allows you to search by an individual field or a combination of _Vendor_, _Document type_, _Company code_, and _Creation date range_.
+The vendor invoice search screen allows you to search by an individual field or a combination of these fields:
+
+- _Vendor_
+- _Document type_
+- _Company code_
+- _Creation date range_
+
+Take these steps to perform a search:
 
 1. Enter your selection criteria.
 1. Select the **Search** button to display your results.
-1. Select the _vendor invoice_ you want to display on the overview screen.you want to see displayed on the overview screen.
+1. Select the _vendor invoice_ you want to display on the overview screen you want to see displayed on the overview screen.
 
 ### Enter a vendor invoice number
 

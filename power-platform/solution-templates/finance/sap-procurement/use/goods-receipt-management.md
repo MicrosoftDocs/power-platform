@@ -20,7 +20,7 @@ ms.subservice: solution-templates
 
 # SAP Goods Receipt Management app
 
-The SAP Goods Receipt Management application allows you to do several functions in SAP quicker and easier than using SAPGui.  You can search for and view an existing goods receipt document and receive goods against a purchase order.
+The SAP Goods Receipt Management application allows you to do several functions in SAP quicker and easier than using SAP GUI.  You can search for and view an existing goods receipt document and receive goods against a purchase order.
 
 ## View a goods receipt
 
@@ -48,7 +48,7 @@ The goods receipt search screen allows you to search by any individual field or 
 
 If you know the goods receipt number of the material document you want to view, you can type it in the _Search goods receipt number_ field.
 
-## Create goods receipt
+## Create a goods receipt
 
 1. Select the **Create** button.
 1. Enter a _purchase order number_.
