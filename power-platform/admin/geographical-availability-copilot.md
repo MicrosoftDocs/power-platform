@@ -72,7 +72,7 @@ The following table indicates the availability of copilots and generative AI fea
 | Dynamics 365 Marketing | **Content Ideas: Discoverability and first use UX improvements**</br>(doc link) | US | No | English |
 | Dynamics 365 Marketing  | **Query Assist: Natural language to segment<br /></br>**(doc link) | US | No | English |
 | Dynamics 365 Customer Insights | **Dialog with Data**</br>[Have a dialog with data using Copilot in Customer Insights (preview)](/dynamics365/customer-insights/dialog-with-data) | US | No | English |
-| Viva Sales | **Meeting Summary Follow Up Email**<br /></br>(doc link) | US | No | English |
+| Sales Copilot | **Meeting summary follow-up email**<br /></br>[Create a sales meeting summary email](https://support.microsoft.com/topic/use-copilot-to-kickstart-email-messages-148708be-e1f9-477c-baba-0b4dd4b7abef#bkmk-meeting-summary-ai-reply) | US | No | English |
 | Dynamics 365 Finance | **Collections CoPilot: Collections timeline summary from workspace**</br>[Collections coordinator summary](/dynamics365/finance/accounts-receivable/collectionscoordinatorsummary) | US | No | English |
 |Project Operations | **Project issues and risks tracking information<br /></br>**(doc link) | US | No | English |
 |Project Operations | **Project status reports<br /></br>**(doc link) | US | No | English |
