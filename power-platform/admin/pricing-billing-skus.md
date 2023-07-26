@@ -29,7 +29,7 @@ For information about Power BI licensing, see [Power BI pricing](https://powerbi
 
 Power Apps/Power Automate capabilities for Microsoft 365 enable users to extend and customize the Office experience with Power Apps and Power Automate. Users can create applications and flows based on Microsoft 365 data. These productivity apps can also utilize data outside of Microsoft 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors.
 
-Here is a brief overview of capabilities included with Power Apps for Microsoft 365 plan. More details around which Microsoft 365 plans include these capabilities can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
+Here is a brief overview of capabilities included with Power Apps for Microsoft 365 plan. More details around which Microsoft 365 plans include these capabilities can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
 | Functionalities                                                   | Power Apps for Microsoft 365 |
 |-----------------------------------------------------------------------|------------------------------|
