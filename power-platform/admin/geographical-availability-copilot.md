@@ -85,7 +85,7 @@ The following table indicates the availability of copilots and generative AI fea
 | Nuance Mix (VA, IVR) | **Consumer Assist (Bing/GPT fallback)**</br>(doc link) | US | No | English |
 |  Nuance Mix (VA, IVR) | **AppDev Assist (NL2Bot)**</br>(doc link) | US | No | English |
 | Microsoft Supply Chain Center | **Contact Suppliers**<br /></br>(doc link) | US | No | English |
-| Dynamics 365 Supply Chain Management | **Copilot for Procurement: Summarize and handle PO changes in Dynamics 365 SCM Hub**</br>(doc link) | US | No | English |
+| Dynamics 365 Supply Chain Management | **Copilot for Procurement: Summarize and handle PO changes in Dynamics 365 SCM Hub**</br>[Review and accept changes to confirmed purchase orders](/dynamics365/supply-chain/procurement/purchase-order-changes-after-confirmation) | US | No | English |
 | Business Central| **AI-Generated Product Descriptions**<br /></br>[AI-powered item marketing text with Copilot](/dynamics365/business-central/ai-overview) | US | No | English |
 | Dataverse | **Dataverse Service for Copilot for M365 BizChat and BAP business applications<br /></br>**(doc link) | US | No | English |
 | Dataverse | **Excel to Table for New Makers<br /></br>**(doc link) | US | No | English |
