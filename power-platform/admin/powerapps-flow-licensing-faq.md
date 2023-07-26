@@ -325,13 +325,13 @@ There are several scenarios in which a user who has anonymously browsed the webs
 
 If a user accesses a site in both an anonymous and an authenticated manner in the same session or even within same day (24 hours using UTC time zone), the user will only be counted as an authenticated user and not as anonymous user.
 
-### Access to my website is authenticated, however it has an anonymous log in page. Do I need to purchase anonymous user subscription?
+### Access to my website is authenticated, however it has an anonymous log in page. Do I need to purchase an anonymous user subscription?
 
 No, log in page access isn't counted for calculating anonymous users. So if the only anonymous page is sign in page, then it will not require anonymous user subscription to be purchased.
 
 However, it's important to ensure that rest of the site is made authenticated. This can be done by using page-level permissions on home page and only making it available for authenticated user roles. If any other method is used like using a client-side (JavaScript) redirect to log in page, then it might lead to some pages being available anonymously.
 
-### How much does these licenses cost?
+### How much do these licenses cost?
 
 The Power Pages authenticated per user and Power Pages anonymous per user offers serve both small and large customer scenarios with a low barrier to entry, and easily scale for high-volume growth. Subscription and [pay-as-you-go](pay-as-you-go-meters.md?tabs=image#power-pages-meters-preview) pricing is detailed below.
 
