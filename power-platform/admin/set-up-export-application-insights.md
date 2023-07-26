@@ -24,64 +24,49 @@ search.audienceType:
 
 ## Set up export to your Applications Insights environment from the Power Platform admin center
 
-1. In the Power Platform admin center, select **Data Export** > **New data export**.
+1. In the Power Platform admin center, select **Data Export** > **App Insights** > **New data export**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Data export.](media/data-export.png "Data export")
+   > ![Data export.](media/Step1_AppInsights.png "Data export")
 
-2. Select **Export to Application Insights**. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Data export to Application Insights.](media/data-export-application-insights.png "Data export to Application Insights")
-
-3. Search for the environment that you'll set up for the Application Insights data export setup. You can choose to filter based on the environment type.
+2. Name the export package to be used as an Azure Application Insights instance. Select the specific data type you would like to export, whether it’s Dataverse, Power Automate, or Dynamics. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Select an environment type.](media/data-export-application-insights-select-environment-type.png "Select an environment type")
+   > ![Data export to Application Insights.](media/Step2_AppInsights.png "Data export to Application Insights")
 
-   Choose the environment you want, and then select **Save**.
+   For Automate, select whether to export cloud flow runs, triggers, or actions.
+   > [!div class="mx-imgBorder"] 
+   > ![Automate options.](media/Step2b_appinsights.png "Automate options")
+
+3. Select the environment that you'll set up for the Application Insights data export setup. You can choose to filter based on the environment type.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Select an environment.](media/data-export-application-insights-select-environment.png "Select an environment")
+   > ![Select an environment type.](media/Step3_AppInsights.png "Select an environment type")
 
-4. Choose the Azure subscription, resource group, and Application Insights environment, and then select **Create**. You must have contributor, writer, or admin rights to the Application Insights environment. Typically, one production environment or tenant maps to one Application Insights environment. 
+   Click **Next** when you’ve selected an environment. 
 
-   > [!div class="mx-imgBorder"] 
-   > ![Data export Application Insights details.](media/data-export-application-insights-details.png "Data export Application Insights details")
-
-5. The data export connection should now be set up. In the next 24 hours, data will start being exported to your Application Insights environment.
+4. Select the right Azure subscription, resource group, and Application Insights environment, and then click **Next**. You must have contributor, writer, or admin rights to the Application Insights environment. Typically, one production environment or tenant maps to one Application Insights environment. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Data export success.](media/data-export-application-insights-success.png "Data export success")
+   > ![Data export Application Insights details.](media/Step4_AppInsights.png "Data export Application Insights details")
 
-6. To stop the data export to Application Insights, select **Delete export**. You can set up a new connection whenever you decide to restart the data export.
+5. Review the details of your new export package, and then click **Create** to set up the data export connection. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Delete export.](media/data-export-delete.png "Delete export")
+   > ![Create data export.](media/Step5_AppInsights.png "Create data export")
 
-## Regional availability 
+   The data export connection should now be set up. In the next 24 hours, data will start being exported to your Application Insights environment.
 
-|Zone  | Available |Public Preview availability  |
-|---------|---------|---------|
-|Canada     | Yes |  Yes |
-|EMEA     | Yes |  Jan 2021        |
-|North America     | Yes |  Jan 2021        |
-|Germany  | Yes |  Jan 2021       |
-|France     | Yes | March 2021        |
-|South America     | Yes | Jan 2021        |
-|Asia Pacific     |  Yes | Jan 2021       |
-|Japan     |  Yes | Jan 2021       |
-|UK     | Yes | Jan 2021        |
-|OCE     | Yes | Jan 2021        |
-|India     | Yes | March 2021        |
-|South Africa (ZAF)     |  Yes | Jan 2021       |
-|UAE     | Yes | March 2021        |
-|Switzerland (CHE)     | Yes | Jan 2021       |
-|GCC     | No |  Fall 2022 |
-|GCC-High     | No |  Fall 2022 |
-|GCC-DOD     | No |  TBD |
-|Mooncake     | No |  TBD |
+   > [!div class="mx-imgBorder"] 
+   > ![Data export success.](media/Step5a_AppInsights.png "Data export success")
 
+7. To stop the data export to Application Insights, select **Delete export**. You can set up a new connection whenever you decide to restart the data export.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Delete export.](media/Step6_AppInsights.png "Delete export")
+
+  > [!IMPORTANT] 
+  > - The export function for Dynamics is currently only available in private preview, while Power Automate’s is only available in public preview. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
