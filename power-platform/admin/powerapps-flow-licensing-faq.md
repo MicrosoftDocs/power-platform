@@ -13,7 +13,9 @@ ms.contributors:
 
 # Power Platform licensing FAQs
 
-This article lists common questions on licensing and plan options. We've included several here with their answers. For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+This article lists common questions on licensing and plan options. We've included several here with their answers. 
+
+For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## Power Platform product licensing
 
