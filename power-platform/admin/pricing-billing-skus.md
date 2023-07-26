@@ -3,7 +3,7 @@ title: Licensing overview for Microsoft Power Platform | Microsoft Docs
 description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, Power Pages, Power BI, AI Builder, Dataverse).
 author: dileepsinghmicrosoft
 ms.topic: overview
-ms.date: 05/01/2023
+ms.date: 07/26/2023
 ms.subservice: admin
 ms.author: dileeps
 ms.reviewer: sericks
@@ -15,19 +15,15 @@ search.audienceType:
 
 # Licensing overview for Microsoft Power Platform
 
-The topics in this section provide detailed information about Power Apps and Power Automate licensing.
+The topics in this section provide detailed information about Microsoft Power Platform licensing.
 
-For information about:
+## Power Apps, Power Automate, Power Virtual Agents, and Power Pages offers 
 
-- Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
+Power Apps, Power Automate, Power Virtual Agents, and Power Pages provide users the ability to create and run apps, bots, and custom websites across data sources that extend beyond Microsoft 365, such as Salesforce and on-premises and custom data sources. These plans also include access to [Dataverse](/power-apps/maker/data-platform/data-platform-intro) to store and manage data.
 
-- Power Virtual Agents licensing, see [Licensing for Power Virtual Agents](/power-virtual-agents/requirements-licensing-subscriptions) and for information about pricing, see [Power Virtual Agents pricing plans](https://powervirtualagents.microsoft.com/pricing/).
+More details around capabilities and pricing of the Power Platform offers can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
-## Power Apps and Power Automate Standalone plans
-
-Standalone Power Apps and Power Automate plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to [Dataverse](/powerapps/maker/data-platform/data-platform-intro) to store and manage data.
-
-More details around pricing and capabilities of standalone plans can be found in [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+For information about Power BI licensing, see [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
 
 ## Power Apps and Power Automate for Microsoft 365
 
