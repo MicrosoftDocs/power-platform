@@ -646,7 +646,7 @@ By default all types of consent plans are allowed in a tenant. A common use case
 
 It is important to know that when using *Remove-AllowedConsentPlans*, all existing plans of the specified type are removed from all users in the tenant and aren't be recoverable. In addition, it blocks all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
 
-## If you have uestions
+## If you have questions
 
 If you have any comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
 
