@@ -4,7 +4,7 @@ description: Configure Dataverse search to improve search results and performanc
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/11/2022
+ms.date: 07/26/2022
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -229,7 +229,7 @@ To edit the searchable fields of a table:
 > 
 >    *Length is not valid because this is an indexed attribute and hence cannot have size greater than 1700.*
 >
->    The "indexed attribute" can't extend beyond 1700 bytes. If the corresponding column is registered in the **Quick Find View**, remove the corresponding column to **Quick Find View** and try to re-export after a time interval. For more information, see [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16). 
+>    The "indexed attribute" can't extend beyond 1700 bytes. If the corresponding column is registered in the **Quick Find View**, remove the corresponding column to **Quick Find View** and try to re-export after a time interval. For more information, see [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true). 
 >
 > - Updates to calculated fields and lookups are not automatically synced in Dataverse search. Data is refreshed whenever a field that is configured for Dataverse search is updated in a record.
 > 
