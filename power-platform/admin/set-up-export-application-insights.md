@@ -23,7 +23,7 @@ search.audienceType:
 2. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need to be a member of one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
   > [!IMPORTANT] 
-  > - Power Automate is public preview, Dynamics Customer Service is private preview.
+  > - The AppInsights exporting function for Power Automate is public preview, while Dynamics Customer Service's is private preview.
 
   > [!NOTE]
   > The version of App Insights described in the documentation below is not available in Sovereign Clouds. The prerequisites and setup instructions are consistent with the version currently hosted in Sovereign Clouds.
