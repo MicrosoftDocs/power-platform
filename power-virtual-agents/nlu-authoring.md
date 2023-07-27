@@ -2,7 +2,7 @@
 title: Create (and edit) with Copilot
 description: Use AI powered by GPT to create and edit bot topics, and get your chatbot ready for your users in minutes.
 keywords: "PVA"
-ms.date: 3/16/2023
+ms.date: 7/30/2023
 ms.topic: how-to
 author: KendalBond007
 ms.author: iawilt
@@ -22,7 +22,7 @@ This means you can quickly create and deploy a functional bot, without having to
 
 The capability uses AI to understand what you want to do, and then automatically creates a functioning topic, complete with different node types and conversational responses.
 
-See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for more examples and descriptions of how this capability works, and how to use it with the [Boost conversations (preview)](nlu-boost-conversations.md) capability.
+See the [AI-based chatbot authoring overview](nlu-gpt-overview.md) for more examples and descriptions of how this capability works, and how to use it with the [Boost conversations](nlu-boost-conversations.md) capability.
 
 ## Prerequisites
 
@@ -36,11 +36,9 @@ See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for
 
     > [!NOTE]
     >  
-    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
+    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
 
-    :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
-
-- Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
+- Review the [AI response generation training, model, and usage FAQ](faqs-copilot.md) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
 
 - This capability may be subject to usage limits or capacity throttling.
 
@@ -58,9 +56,9 @@ When creating a new topic, you can select **Create with Copilot** and ask the AI
     > 1. Select the **Settings** icon on the top menu and then **General settings**.
     >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents menu with the Settings icon open.":::
     >  
-    > 2. Set the switch under **Intelligent authoring support (preview)** to **On**.
+    > 2. Set the switch under **Intelligent authoring support** to **On**.
 
-2. In the **Create it with Copilot (preview)** window that appears, enter a name for your topic in the **Name your topic** field. 
+2. In the **Create it with Copilot** window that appears, enter a name for your topic in the **Name your topic** field. 
 
 3. In the **Create a topic to...** field, describe the topic you want to create in simple, plain English. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.
 
@@ -75,7 +73,7 @@ When creating a new topic, you can select **Create with Copilot** and ask the AI
 
 ## Use Copilot to edit a topic
 
-With the new **Edit with Copilot (preview)** pane, you can make changes to your topic using the power of NLU. For example, if you want to make updates to your bot, such as moving and updating the nodes, all you need to do is describe what you want with Copilot.
+With the new **Edit with Copilot** pane, you can make changes to your topic using the power of NLU. For example, if you want to make updates to your bot, such as moving and updating the nodes, all you need to do is describe what you want with Copilot.
 Think of this new capability as a powerful wizard-like feature that walks you through the editing a topic process to fine-tune your bot's topics without having to work directly in the authoring canvas. You can also make additions and changes to existing nodes, and tell Copilot what you want it to do.
 
 You can use AI to help you modify any topic in your bot. The topic doesn't need to have been created with Copilot.
