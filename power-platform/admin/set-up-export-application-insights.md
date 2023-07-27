@@ -46,7 +46,7 @@ Learn how to set up export functionality to Application Insights from the Power 
 
 1. Select the Azure subscription, resource group, and Application Insights environment that you're exporting data _to_. Then select **Next**.
 
-  You must have contributor, writer, or admin rights to the Application Insights environment. Typically, one production environment or tenant maps to one Application Insights environment. 
+    You must have contributor, writer, or admin rights to the Application Insights environment. Typically, one production environment or tenant maps to one Application Insights environment. 
 
 1. Review the details that you entered for the new export package, and then select **Create** to set up the data export connection. 
 
