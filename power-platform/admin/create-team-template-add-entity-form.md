@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/10/2023
+ms.date: 07/21/2023
 search.audienceType: 
   - admin
 ---
@@ -106,10 +106,18 @@ You can add your team template as a component to a [solution](/power-apps/maker/
 1. Select the table where the Team template was added. Select **Next**.
 1. Select the **Include table metadata** option.
 1. Select **Add**.
-1. [Publish your customizations](/power-apps/maker/data-platform/create-solution#publish-changes).
 
 > [!NOTE]
 > For custom tables, you will need to select the **Include all objects** option.
+
+   Add the form where the Team template was added.
+
+1. Double-click the table where the updated form resides.
+1. Click the **Forms** link under the **Data experiences** section.
+1. Click the **Add existing form** option on the Action bar.
+1. Select the form where the Team template was added.
+1. Click **Add**.
+1. [Publish your customizations](/power-apps/maker/data-platform/create-solution#publish-changes).
 
 ## Export your team template
 You can now export your team template and import it into a different environment.

@@ -5,7 +5,7 @@ author: danamartens
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/01/2023
+ms.date: 07/18/2023
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: sericks
@@ -122,6 +122,8 @@ If the organizer has deleted past instances of the series, then Dynamics 365 see
 - **Mapping:** Meetings in Exchange sync to Dynamics 365 as appointments. Recurring meetings sync to Dynamics 365 as a recurring appointment primary and its instances. If individual instances of a recurring meeting are modified in Exchange, they sync to Dynamics 365 as exception appointment records.
 
 - **Appointment status and Free/Busy state:** If the appointment state in Exchange is **Free**, the appointment state syncs to Dynamics 365 as **Free**. If the state is **Completed** or **Canceled** in Dynamics 365, the appointment status in Dynamics 365 is set to **Completed**. If the state is **Open** in Dynamics 365, the appointment status is set to **Free**. Working elsewhere, Free/Busy status syncs to Dynamics 365 as state **Open** and status **Free**.
+
+- **Appointments with Completed or Canceled state in Dynamics 365:** If the appointment state in Dynamics 365 is **Completed** or **Canceled**, any changes to the meeting in Exchange will not sync to Dynamics 365.
 
 - **Appointment booking and conflict management:** When an appointment is tracked to Dynamics 365, server-side sync uses the booking API to make sure that attendees are available at the specified time. For example, if the organizer's calendar in Dynamics 365 has another appointment at the same time, the booking fails, and the appointment isn't synced. The user can [address the scheduling conflict](https://go.microsoft.com/fwlink/?linkid=2187456), select to ignore it, and let the appointment sync anyway. Booking from Dynamics 365 in Outlook automatically suppresses the scheduling conflict. For more information, see [A scheduling conflict was found when saving appointment [appointment subject] from Exchange to Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/scheduling-conflict-saving-appointment).
 
