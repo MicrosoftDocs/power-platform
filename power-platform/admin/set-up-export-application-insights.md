@@ -44,7 +44,7 @@ Learn how to export data to Application Insights from the Power Platform admin c
    
 1. Select the environment that you're exporting data _from_. You can choose to filter based on the environment type. Select **Next**.
 
-1. Select the Azure subscription, resource group, and Application Insights environment that you're exporting data _to_. Then select **Next**.
+1. Select the Azure subscription, resource group, and Application Insights environment that you're exporting data _to_. Select **Next**.
 
     You must have contributor, writer, or admin rights to the Application Insights environment. Typically, one production environment or tenant maps to one Application Insights environment. 
 
