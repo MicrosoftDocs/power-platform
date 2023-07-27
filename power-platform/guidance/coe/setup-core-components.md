@@ -214,7 +214,6 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - Admin | Sync Template v3 (Sync Flow Errors)
 - Admin | Sync Template v3 (Driver)
 - CLEANUP - Admin | Sync Template v3 (Check Deleted)
-- CLEANUP - Admin | Sync Template v3 (Connection Status)
 - CLEANUP - Admin | Sync Template v3 (Delete Bad Data)
 - CLEANUP - Admin | Sync Template v3 (Orphaned Makers)
 - CLEANUP - Admin | Sync Template v3 (Power Apps User Shared With)
@@ -413,7 +412,7 @@ Using these steps, you set up an Azure AD app registration that is used in a clo
 > [!NOTE]
 > Only set up the Audit Log solution if you've chosen [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
-The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The CoE Starter Kit works without this flow; however, usage information (app launches, unique users) in the Power BI dashboard is blank. More information: [Set up the audit log connector](setup-auditlog.md)
+The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The CoE Starter Kit works without this flow; however, usage information (app launches, unique users) in the Power BI dashboard is blank. More information: [Set up the audit log connector](setup-auditlog-http.md)
 
 ## Set up the Power BI dashboard
 
