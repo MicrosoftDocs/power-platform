@@ -20,13 +20,13 @@ As an admin, you'll want to use the insights you gather to drive action, such as
 
 You can use the **Environment Capacity** page to identify the environments consuming your tenants Dataverse capacity. Review your total capacity consumption, and identify environments that consume a lot of capacity.
 
-![Environment Capacity.](media/pb-7.png "Environment Capacity")
+:::image type="content" source="media/pb-7.png" alt-text="Environment Capacity":::
 
 ## App deep dive
 
 You can use the **App deep dive** page to visualize data about your apps across multiple dimensions. The decomposition tree visual automatically aggregates data and enables drilling down into your dimensions in any order.
 
-![App deep dive.](media/pb-18.png "App deep dive")
+:::image type="content" source="media/pb-18.png" alt-text="App deep dive":::
 
 You can use the decomposition tree visual to drill down into apps by environment name, app plan classification, maker department, connector name, connector tier, app type, archive score.
 
@@ -86,13 +86,13 @@ Select **Connector Name** in the decomposition tree visual to view app numbers a
 
 Once you have identified apps based on the selected criteria, right-click to select a specific app, and then select Drill through to get further details for the selected app. You can manage app access through an embedded app, review app connectors, review the app archive score, and review the individual app usage using Drill through.
 
-![Drill through to app details.](media/pb-26.png "Drill through to app details.")
+:::image type="content" source="media/pb-26.png" alt-text="Drill through to app details.":::
 
 ## Flow deep dive
 
 You can use the **Flow deep dive** page to visualize data about your flows across multiple dimensions. The decomposition tree visual automatically aggregates data and enables drilling down into your dimensions in any order.
 
-![Flow deep dive.](media/pb-19.png "Flow deep dive")
+:::image type="content" source="media/pb-19.png" alt-text="Flow deep dive":::
 
 You can use the decomposition tree visual to drill down into apps by environment name, maker department, connector name, connector tier, flow state, archive score.
 
@@ -131,7 +131,7 @@ Select **Connector Name** in the decomposition tree visual to view app numbers a
 
 Once you have identified flows based on the selected criteria, right-click to select a specific flow, and then select Drill through to get further details for the selected flow. You can manage flow access through an embedded app, review flow connectors, and review the flow archive score.
 
-![Drill through to flow details.](media/pb-27.png "Drill through to flow details.")
+:::image type="content" source="media/pb-27.png" alt-text="Drill through to flow details.":::
 
 ## App and Flow Archive
 
@@ -155,7 +155,7 @@ The **Archive Score** is the sum of multiple criteria:
 - Is the app suspended? (+2)
 - Is the app orphaned? (+2)
 
-![App Archive Score.](media/pb-28.png "App Archive Score")
+:::image type="content" source="media/pb-28.png" alt-text="App Archive Score":::
 
 The **Flow deep dive** page shows the archive score - you can either sort the table by highest archive score, or select **Archive Score** in the decomposition tree visual to view aggregated data across all scores. You can use filters to target specific makers, date ranges, environments, departments, or connectors. Drill through from an individual flow to the **Review Archive Score** page to view the score details.
 
@@ -174,7 +174,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 - How complex is the flow, based on the number of unique actions? (-1 if it's complex, because that indicates a user has spent a lot of time putting it together)
 
-![Flow Archive.](media/pb-29.png "Flow Archive")
+:::image type="content" source="media/pb-29.png" alt-text="Flow Archive":::
 
 ### Manage App Access
 
@@ -190,7 +190,7 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 - After you've granted yourself ownership, you can open the maker portal to view the version number.
 
-![App Details.](media/pb-30.png "App Details")
+:::image type="content" source="media/pb-30.png" alt-text="App Details":::
 
 ### Manage Flow Access
 
@@ -208,13 +208,13 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 - After you've granted yourself ownership, you can open the maker portal to view flow analytics and details.
 
-![Flow Details.](media/pb-31.png "Flow Details")
+:::image type="content" source="media/pb-31.png" alt-text="Flow Details":::
 
 ## Connector deep dive
 
 You can use the **Connector deep dive** page to better understand your connector usage across flows and apps. Identify the most used connectors and learn how many apps and flows use premium connectors and which makers.
 
-![Environment Capacity.](media/pb-20.png "Environment Capacity")
+:::image type="content" source="media/pb-20.png" alt-text="Connector deep dive":::
 
 ### Desktop flow detail
 
