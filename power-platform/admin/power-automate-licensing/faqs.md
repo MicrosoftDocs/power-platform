@@ -35,7 +35,9 @@ Microsoft recommends that most organizations buy the Power Automate premium lice
 
 The premium user plan is intended for human user to support the broad adoption of an automation culture in an organization.
 
-The process plan is intended for critical enterprise process automations that are typically backoffice and not run by human users. For example, every organization needs processes for Invoice processing, HR onboarding etc which are not tied to a human user.
+The process plan is intended for core enterprise process automations that are typically backoffice and not run by human users. For example, every organization needs processes for Invoice processing, HR onboarding etc that are mandatory to the normal operation of the business. These processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they are all handling an invoice through multiple steps to closure.
+
+By obtaining a process license, organizations ensure that all the flows within the business process are appropriately licensed. This enables the deployment and management of interconnected flows as a cohesive unit, facilitating Application Lifecycle Management (ALM) and optimized performance.
 
 You need process license if your flow meets one of the following criteria:
 
@@ -60,7 +62,15 @@ You need process license if your flow meets one of the following criteria:
     Purchase one process for every business critical process. Some examples are invoice processing, HR onboarding etc. All cloud flows related to the same business process are included in the license. The flows can be organized as parent/child flows are tagged as in context of the flow with process license.
 
 - Your process has RPA and DPA: how many business processes will you put in production?
-    By default each license comes with a machine session for that business process, you can add more as appropriate. All cloud flows related to the same business     process are included in the license. The flows can be organized as parent/child flows are tagged as in context of the flow with process license.
+    Core business processes typically span across multiple cloud flows and desktop flows. All cloud flows related to the same business process are included in the license. By default each license comes with a machine session for that business process, you can add more process licenses if you need multiple RPA sessions for concurrnet execution. 
+
+### My process has multiple flows. Will i need multiple process licenses?
+No. You only need one process license. This encourages micro services architecture best practices where flows can be small with fine grained functionality resulting in better maintainability. 
+
+Identify the flow that starts the process and assign the process license to that flow. Tag all the flows as in context of the flow with process license. The flows must be in same solution and be using the same data sources. The flows organized as parent, child flows, in context flows are all treated as one process with one process license assigned to the main flow. 
+
+### My solution has multiple processes. Do i need multiple process licenses?
+Yes. All flows of a process must be in same solution and a solution can have multiple processes with process license assigned to each of them. 
 
 ### Who needs to purchase a premium license?
 
