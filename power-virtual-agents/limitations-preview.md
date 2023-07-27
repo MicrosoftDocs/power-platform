@@ -26,7 +26,6 @@ The Power Virtual Agents preview doesn't yet support some of the features you're
 - The **Track between topics** toggle in the [Test bot pane](authoring-test-bot.md) doesn't work.
 - Default values in multiple-choice questions don't work.
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
-- Omnichannel for Customer Service, including voice capabilities, isn't supported.
 - Preview bots can't be created in GCC or GCC High environments.
 
 ## Troubleshoot firewall or network issues

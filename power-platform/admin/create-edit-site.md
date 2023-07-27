@@ -1,13 +1,13 @@
 ---
 title: "Create or edit site entries to provide location details"
 description: "Learn how to create or edit the details about a site in Advanced Settings, including street address, phone number, and time zone."
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

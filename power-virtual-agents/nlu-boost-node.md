@@ -26,7 +26,6 @@ You can further boost your bot's conversations by using multiple internal and ex
 - Internal resources:
   - SharePoint
   - OneDrive for Business
-  - Dataverse
   - Custom data (internal or external): Supply your own content from any source, for example, from a Power Automate Flow, a Skill, or other source.
 
 You can also add information sources to a topic using the **Generative answers** node. This node allows you to specify sources that the node will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability.
@@ -45,7 +44,7 @@ This table summarizes the information sources you can use to boost conversations
 | Bing Search | External | Searches the query input on Bing; returning results only from provided websites | 4 public URLs (for example, _microsoft.com_) | None |
 | [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to Power Virtual Agents | More than 4 URLs (Bing Custom Search also provides other functionality) | None |
 | SharePoint | Internal | Connects to a SharePoint URL, uses GraphSearch to return results | 4 URLs | Bot user Azure Active Directory (Azure AD) authentication |
-| OneDrive for business | Internal | Connects to a OneDrive for Business URL, uses GraphSearch to return results | 4 URLs | Bot user Azure Active Directory (Azure AD) authentication |
+| OneDrive for Business | Internal | Connects to a OneDrive for Business URL, uses GraphSearch to return results | 4 URLs | Bot user Azure Active Directory (Azure AD) authentication |
 | [Custom data](#custom-data-source) | Internal | Uses a JSON code block to define the URLs and content to use | One variable, populated with the JSON results to be summarized | Dependent on source |
 
 As the table notes, some features require user authentication to be configured for your bot. In the cases of SharePoint and OneDrive for Business, authentication is done using Azure AD. User authentication for information sources also means that when a specific user asks a question of the bot, the bot will only surface content that that specific user can access.
@@ -120,29 +119,27 @@ To boost coverage in a **Generative answers** node, follow these instructions:
 
 #### Bing custom search
 
-1. On the **Web API** tab under **Production**, copy the Custom configuration ID you want to use. This functions like a URL would as described in [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). If you have more than one custom configuration, make sure you're copying the ID you want.
+1. On the **Web API** tab under **Production**, copy the custom configuration ID you want to use. This functions like a URL would as described in [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). If you have more than one custom configuration, make sure you're copying the ID you want.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize content node with Bing custom search.":::
 
-#### Bot settings
-
-1. With your bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
-
-1. Enter your Bing custom search Custom Configuration ID as one of your URLs. 
-
-1. Select **Save** at the top of the **AI capabilities** page.
 
 #### Generative answers node properties
 
-1. Select **Properties** from the node menu, and select **Data source**.
+1. Select **Properties** from the node menu and then **Data source**.
 
-1. Paste your custom configuration in the input box under **Sites**, and select the plus icon (**+**) to add it to the node's data sources. If you haven't exceeded relevant limits (as defined in the [Information sources table](#information-sources), you can add other URLs.
+1. Select **Search with Bing Custom Search** from **Search public data**.
+
+1. Paste your custom configuration ID in the **Configuration ID** input box to add it to the node's data sources. If you haven't exceeded relevant limits (as defined in the [Information sources table](#information-sources), you can add other URLs.
 
 1. When you're done entering sources, close the menu. Make sure to save any changes to your topic.
+
+    :::image type="content" source="media/nlu-gpt/generative-answers-bing-custom.png" alt-text="Screenshot showing the Search public data section and Configuration ID boxes highlighted in the generative answers property pane.":::
  
 The node will now retrieve content from the information sources in the Bing Custom Search configuration provided. This allows you to use a large number of sources to boost your bot without having to enter each source individually.
 
 ### Connect to a SharePoint site or OneDrive for Business
+
 
 Power Virtual Agents now supports boosting conversations using generative answers with content stored on SharePoint sites and OneDrive for Business. This capability works by pairing your bot with a specific site URL, such as _contoso.sharepoint.com/sites/policies_. When a bot user asks a question or makes a statement where the bot doesn't have a manually configured topic to use, it will search for relevant content from that site URL and all sub-paths and will use generative answers technology to help summarize this content into a targeted response.
 
@@ -176,7 +173,7 @@ These sources require authentication, since the bot makes calls on behalf of the
 
 You can find instructions for how to create the needed Azure AD application registration in [Configure user authentication with Azure Active Directory](configuration-authentication-azure-ad.md)
 
-You'll need to include these delegated permissions:
+You'll need to include these delegated permissions for **Microsoft Graph**:
 
 1. Files.Read.All
 2. Sites.Read.All

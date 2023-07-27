@@ -115,7 +115,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 - **Audit Log** represents session details for Power Apps. The following information is available for each audit log entry:
   - Operation (launched app, deleted app, deleted flow)
   - App/cloud flow ID
-  - User city, country, department, job title (from Microsoft 365)
+  - User city, country/region, department, job title (from Microsoft 365)
   - Audit log event time
 
 - **Power Platform User** represents who an app is shared with. The following information is available for each user:
