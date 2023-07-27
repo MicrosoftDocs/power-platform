@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 08/02/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -14,19 +14,23 @@ search.audienceType:
 ---
 # Govern with the CoE Power BI dashboard
 
-As an admin, you'll want to use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, archive it, or delete it.
+As an admin, you'll want to use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, or delete it.
 
-## App license assessment
+## Environment Capacity
 
-You can use the App license assessment page to view apps that use premium or standard features and drill down into connectors, departments or makers that are using premium connectors.
+You can use the **Environment Capacity** page to identify the environments consuming your tenants Dataverse capacity. Review your total capacity consumption, and identify environments that consume a lot of capacity.
 
-![Apps License Assessment.](media/pb-22.png "Apps License Assessment")
+![Environment Capacity.](media/pb-7.png "Environment Capacity")
 
-## App risk assessment
+## App deep dive
 
-You can use the dashboard to identify overshared and overused resources, or resources that use specific connectors. Not only will you have visibility to those types of resources, you can grant yourself ownership to inspect the resource behavior and decide whether you need to take further action.
+You can use the **App deep dive** page to visualize data about your apps across multiple dimensions. The decomposition tree visual automatically aggregates data and enables drilling down into your dimensions in any order.
 
-You can filter the **App Risk Assessment** page by:
+![App deep dive.](media/pb-18.png "App deep dive")
+
+You can use the decomposition tree visual to drill down into apps by environment name, app plan classification, maker department, connector name, connector tier, app type, archive score.
+
+You can filter the **App deep dive** page by:
 
 - Environment
 
@@ -34,21 +38,24 @@ You can filter the **App Risk Assessment** page by:
 
 - Is the app shared with the entire tenant?
 
-- Number of shared (individual) users
+- Number of shared (individual) users and groups
 
 - App type
 
 - Connector
 
 - Last launched date
+- App plan classification
+- Connector name and connector tier
+- Is the app orphaned (the app owner has left the organization)
 
-In addition, you can sort the output data by the number of unique users or sessions, and the last launched date.
+In addition, you can sort the output data by the total number of users the app is shared with, unique users that have launched the app, last launched date, archive score, environment name and app owner.
 
 Some typical assessments an admin might perform are described in the following sections.
 
 ### Identify widely shared apps
 
-Set **Shared with Everyone** to **True**, or select the **Number of Shared Users** on the slider on the rightmost filter pane to find widely shared apps.
+Set **Shared with tenant** to **True**, or select the **App Shared with (Total)** on the filter pane to find widely shared apps.
 
 - Widely shared resources (shared with the entire tenant or many individual users) might need a stronger support model, or you might need to review the number of people they're shared with.
 
@@ -58,33 +65,36 @@ Set **Shared with Everyone** to **True**, or select the **Number of Shared Users
 
 ### Identify orphaned apps
 
-Select **Blank** in the **Owner** drop-down list on the rightmost filter pane to find orphaned apps.
+Set **Is Orphaned** to **True** in the filter pane to find orphaned apps.
 
 Orphaned apps, where the app owner has left the organization, will still work for users, but changes or bug fixes can only be made by an owner. It's important, therefore, to identify orphaned apps and find a new owner for them, or work on a retirement plan for those apps.
 
 ### Identify implicitly shared app connections
 
-- Some connectors, like the SQL Connector used with SQL Server Authentication, are [shared implicitly with users](/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the app is published, the connection is also published and available to your users. Your users can then also create apps by using any connection that uses SQL Server authentication that's shared with them.
+- Some connectors, like the SQL Connector used with SQL Server Authentication, can be [shared implicitly with users](/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the app is published, the connection is also published and available to your users. Your users can then also create apps by using any connection that uses SQL Server authentication that's shared with them.
 
 - Identify apps that use the SQL Server Connector. Ensure that users are aware of the risks, and help them mitigate it by enabling Azure AD authentication for SQL Server.
 
-Select **SQL Server** in the **Connector** drop-down on the rightmost filter pane to find apps that use the SQL Server Connector.
+Select **SQL Server** in the **Connector Name** drop-down on the rightmost filter pane to find apps that use the SQL Server Connector.
 
-![Apps Risk Assessment.](media/pb-15.png "Apps Risk Assessment")
+### Review top used connectors in apps
 
-## Flows risk assessment
+- Identify top used connectors to understand what data sources your makers are connecting to.
+- Identify how many apps and makers are using premium connectors, to understand your license consumption and requirements.
 
-The **Flows Risk Assessment** page enables you to filter by:
+Select **Connector Name** in the decomposition tree visual to view app numbers aggregated by connector name, or select **Connector Tier** in the decomposition tree visual to view app numbers aggregated by connector tier.
 
-- Environment
+Once you have identified apps based on the selected criteria, right-click to select a specific app, and then select Drill through to get further details for the selected app. You can manage app access through an embedded app, review app connectors, review the app archive score, and review the individual app usage using Drill through.
 
-- Maker
+![Drill through to app details.](media/pb-26.png "Drill through to app details.")
 
-- Connector (Microsoft 365 Users, Microsoft Dataverse)
+## Flow deep dive
 
-- Operation (Parse JSON, HTTP)
+You can use the **Flow deep dive** page to visualize data about your flows across multiple dimensions. The decomposition tree visual automatically aggregates data and enables drilling down into your dimensions in any order.
 
-- Action (Send Email, Delete SharePoint Items)
+![Flow deep dive.](media/pb-19.png "Flow deep dive")
+
+You can use the decomposition tree visual to drill down into apps by environment name, maker department, connector name, connector tier, flow state, archive score.
 
 Some typical assessments an admin might perform are described in the following sections.
 
@@ -94,7 +104,7 @@ Some typical assessments an admin might perform are described in the following s
 
 - Find those flows, and work with the maker to decide whether the flow is still needed, and if so, what policy violation they've encountered. Educate the maker or modify the DLP policy as needed.
 
-Sort by **State** in the grid to look at flows that are **Suspended**.
+Select **State** in the decomposition tree visual and then drill down to suspended flows.
 
 ### Identify orphaned flows
 
@@ -102,7 +112,7 @@ Sort by **State** in the grid to look at flows that are **Suspended**.
 
 - In the meantime, grant yourself ownership to see what the flow is doing.
 
-Select **Blank** in the **Owner** drop-down list on the rightmost filter pane to find orphaned flows.
+Set **Is Orphaned** to **True** in the filter pane to find orphaned apps.
 
 ### Implicitly shared flow connections
 
@@ -110,35 +120,18 @@ Select **Blank** in the **Owner** drop-down list on the rightmost filter pane to
 
 - Identify flows that use the SQL Server Connector. Ensure that users are aware of the risk, and help them mitigate it by enabling Azure AD authentication for SQL Server.
 
-Select **SQL Server** in the **Connector** drop-down list on the rightmost filter pane to find flows that use the SQL Server Connector.
+Select **SQL Server** in the **Connector Name** drop-down list on the rightmost filter pane to find flows that use the SQL Server Connector.
 
-### Identify flow actions
+### Review top used connectors in flows
 
-- Specific actions or connectors might require you to gather additional information from the maker or educate them on usage. Some examples might be the Forward Email action of the Outlook connector or HTTP requests.
+- Identify top used connectors to understand what data sources your makers are connecting to.
+- Identify how many flows and makers are using premium connectors, to understand your license consumption and requirements.
 
-Select actions or connectors you're interested in from the **Connector** and **Action** lists on the rightmost side of this page to find flows that use those connectors or actions.
+Select **Connector Name** in the decomposition tree visual to view app numbers aggregated by connector name, or select **Connector Tier** in the decomposition tree visual to view app numbers aggregated by connector tier.
 
-![Flows Risk Assessment .](media/pb-25.png "Flows Risk Assessment")
+Once you have identified flows based on the selected criteria, right-click to select a specific flow, and then select Drill through to get further details for the selected flow. You can manage flow access through an embedded app, review flow connectors, and review the flow archive score.
 
-## Desktop flows risk assessment
-
-The **Desktop flows Risk Assessment** page enables you to filter by:
-
-- Environment
-
-- Maker
-
-- Desktop flow type
-
-Some typical assessments an admin might perform are described in the following sections.
-
-### Identify orphaned Desktop flows
-
-- Orphaned desktop flows, where the flow owner has left the organization, will stop working. It's therefore important to identify orphaned desktop flows, check whether they're still needed, and find a new owner.
-
-Select **Blank** in the **Owner** drop-down list on the rightmost filter pane to find orphaned flows.
-
-![Desktop flows Risk Assessment .](media/pb-26.png "Desktop flows Risk Assessment")
+![Drill through to flow details.](media/pb-27.png "Drill through to flow details.")
 
 ## App and Flow Archive
 
@@ -148,18 +141,7 @@ Using the CoE dashboard, admins also have the ability to identify unused apps an
 
 - The highest possible score for a flow is 8. A score of 8 represents a flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over three years ago, was likely created from a template, is in a stopped state, and isn't complex (contains fewer than five actions).
 
-- The highest possible score for a desktop flow is 4. A score of 4 represents a desktop flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over a year ago, and was likely created from a template.
-
-:::row:::
-   :::column span="":::
-      ![Power Apps Archive.](media/pb-16.png "Power Apps Archive")
-   :::column-end:::
-   :::column span="":::
-      ![Power Automate Archive.](media/pb-24.png "Power Automate Archive")
-   :::column-end:::
-:::row-end:::
-
-The **App Archive** page is sorted by highest archive score. You can use filters to target specific makers, date ranges, environments, departments, or connectors.
+The **App deep dive** page shows the archive score - you can either sort the table by highest archive score, or select **Archive Score** in the decomposition tree visual to view aggregated data across all scores. You can use filters to target specific makers, date ranges, environments, departments, or connectors. Drill through from an individual app to the **Review Archive Score** page to view the score details.
 
 The **Archive Score** is the sum of multiple criteria:
 
@@ -170,16 +152,12 @@ The **Archive Score** is the sum of multiple criteria:
 - When was the app last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
 
 - Is this app likely a template, or are there multiple apps with the same name? (+1)
+- Is the app suspended? (+2)
+- Is the app orphaned? (+2)
 
-A [tooltip](/power-bi/desktop-tooltips) shows additional details like the number of launches and last launched date.
+![App Archive Score.](media/pb-28.png "App Archive Score")
 
-![App Archive.](media/pb-33.png "App Archive")
-
-Right-click to select a specific app, and then select **Drill through** >  **App Detail** to open the detail page for the selected app.
-
-![Go to the app detail page.](media/pb-32.png "Go to the app detail page")
-
-The **Flow Archive** page is sorted by highest archive score. You can target specific makers, date ranges, environments, departments, or connectors.
+The **Flow deep dive** page shows the archive score - you can either sort the table by highest archive score, or select **Archive Score** in the decomposition tree visual to view aggregated data across all scores. You can use filters to target specific makers, date ranges, environments, departments, or connectors. Drill through from an individual flow to the **Review Archive Score** page to view the score details.
 
 The **Archive Score** is the sum of multiple criteria:
 
@@ -191,33 +169,16 @@ The **Archive Score** is the sum of multiple criteria:
 
 - Is this flow likely a template, or are there multiple flows with the same name? (+1)
 
-- What is the flow state? (+2 for stopped, +1 for suspended)
+- What is the flow state? (+2 for suspended)
+- Is the flow orphaned? (+2)
 
 - How complex is the flow, based on the number of unique actions? (-1 if it's complex, because that indicates a user has spent a lot of time putting it together)
 
-![Flow Archive.](media/pb-24.png "Flow Archive")
+![Flow Archive.](media/pb-29.png "Flow Archive")
 
-The **desktop flow Archive** page is sorted by highest archive score. You can target specific makers, date ranges, environments, departments, or connectors.
+### Manage App Access
 
-The **Archive Score** is the sum of multiple criteria:
-
-- Has the flow been modified since it was created? (+1)
-
-- Does the flow name use non-production words such as *test*, *demo*, or *sample*? (+1)
-
-- When was the flow last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
-
-- Is this flow likely a template, or are there multiple flows with the same name? (+1)
-
-A tooltip shows additional details like the number of launches and last launched date, in addition to the scores for the above criteria.
-
-![Desktop flow Archive.](media/pb-27.png "Desktop flow Archive")
-
-By right-clicking to select a specific flow and going to **Drill through** > **Flow Detail**, you can open the detail page for the selected flow.
-
-### App Detail
-
-The **App Detail** page provides you with rich information about this resource, in addition to an embedded app that lets you immediately take action.
+The **Manage App Access** page is available by drilling down from a selected app and provides you with an embedded app that lets you immediately take action.
 
 With the embedded app, you don't have to leave the Power BI dashboard to take action:
 
@@ -231,9 +192,9 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 ![App Details.](media/pb-30.png "App Details")
 
-### Flow Detail
+### Manage Flow Access
 
-The **Flow Detail** page provides you with richer information about this resource, in addition to an embedded app to immediately take action.
+The **Manage Flow Access** page is available by drilling down from a selected flow and provides you with an embedded app that lets you immediately take action.
 
 With the embedded app, you don't have to leave the Power BI dashboard to take action:
 
@@ -249,11 +210,14 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 ![Flow Details.](media/pb-31.png "Flow Details")
 
-### Desktop flow Detail
+## Connector deep dive
 
-The **desktop flow Detail** page provides you with richer information about the runs of this desktop flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the desktop flow has failed.
+You can use the **Connector deep dive** page to better understand your connector usage across flows and apps. Identify the most used connectors and learn how many apps and flows use premium connectors and which makers.
 
-![Desktop flow Details.](media/pb-34.png "Desktop flow Details")
+![Environment Capacity.](media/pb-20.png "Environment Capacity")
 
+### Desktop flow detail
+
+The **Desktop flow Detail** page is available by drilling down from a selected desktop flow. This page provides you with richer information about the runs of this desktop flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the desktop flow has failed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
