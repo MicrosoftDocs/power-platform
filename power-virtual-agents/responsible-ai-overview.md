@@ -12,9 +12,9 @@ ms.reviewer: iawilt
 
 # Responsible AI FAQs for Power Virtual Agents
 
-[!INCLUDE[faqs-overview](includes/faqs-overview.md)]
+[!INCLUDE[responsible-ai-intro](includes/responsible-ai-intro.md)]
 
-[!INCLUDE[faqs-feature](includes/faqs-feature.md)]
+[!INCLUDE[responsible-ai-features](includes/responsible-ai-features.md)]
 
 - [FAQ for generative answers](faqs-generative-answers.md)
 - [FAQ for copilot](faqs-copilot.md)
