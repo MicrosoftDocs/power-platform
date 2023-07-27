@@ -14,7 +14,7 @@ search.audienceType:
 ---
 # Export data to Application Insights 
 
-Learn how to set up export functionality to Application Insights from the Power Platform admin center.
+Learn how to export data to Application Insights from the Power Platform admin center.
 
 ## Prerequisites
 
