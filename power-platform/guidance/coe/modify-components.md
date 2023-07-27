@@ -251,7 +251,7 @@ There are a few reasons why you may want to do this:
     :::image type="content" source="media/coe-extend1.png" alt-text="Select Add page to add a new custom page.":::
 1. Select **Custom page**
 1. Select **Use an existing custom page** and select the pages you want to add.
-      :::image type="content" source="media/coe-extend2.jpg" alt-text="Select Add page to add a new custom page.":::
+      :::image type="content" source="media/coe-extend2.jpg" alt-text="Select an existing custom page to add to the navigation.":::
 1. You can also add additional content, such as tables, dashboards and links.
 1. Select **Save** and **Publish**.
 1. Select **Play** to test the app.
