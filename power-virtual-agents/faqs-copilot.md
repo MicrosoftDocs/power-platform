@@ -1,6 +1,6 @@
 ---
 title: FAQ for Copilot
-description: This FAQ provides information about the AI technology used in Power Virtual Agents, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+description: This FAQ provides information about the AI technology used for the Copilot capability in Power Virtual Agents, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 7/30/2023
 ms.custom: 
   - responsible-ai-faqs

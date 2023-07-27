@@ -46,7 +46,7 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 - This capability may be subject to usage limits or capacity throttling.
  
 > [!IMPORTANT] 
-> If you create a bot that has **Boost conversations** enabled, you'll need your admin to [enable bot publishing for the capability](nlu-boost-conversations.md#disable-bot-publishing). 
+> If you create a bot that has **Boost conversations** enabled, you'll need your admin to [enable bot publishing for the capability](nlu-boost-conversations.md). 
 
 ## How bot conversations work
 
