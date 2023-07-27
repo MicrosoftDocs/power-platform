@@ -171,7 +171,6 @@ The following flows support the inventory setup and need to be turned on before 
 - Admin | Excuse Support Envts from Governance Flows
 - Command Center App >  Get M365 Service Messages
 - Command Center App > Initially Populate Bookmarks
-- Command Center App > Get CoE Flows
 - Command Center App > Set CoE Flows State
 - DLP Editor > Parse impacted resources into CSV
 
