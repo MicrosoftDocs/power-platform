@@ -39,9 +39,9 @@ The process plan is intended for critical enterprise process automations that ar
 
 You need process license if your flow meets one of the following criteria:
 
-- Your flows use unattended RPA(Robotic Process Automation) to run desktop flows on machines without user interaction.
+- Your flows use unattended RPA (Robotic Process Automation) to run desktop flows on machines without user interaction.
   or
-- Your flows are running under Application user (flow owner is a Service principal). Organization with multiple environments(Dev/Test/Prod) use DevOps pipelines to export and deploy flows into other environments for healthy ALM (Application life management) run their flows using service principal to avoid giving access to users in production environments.
+- Your flows are running under Application user (flow owner is a Service principal). Organization with multiple environments (Dev/Test/Prod) use DevOps pipelines to export and deploy flows into other environments for healthy ALM (Application lifecyle management) run their flows using service principal to avoid giving access to users in production environments.
   or
 - Your flows process large data or need to run frequently data thereby needing high volume of Power platform requests.
   or
