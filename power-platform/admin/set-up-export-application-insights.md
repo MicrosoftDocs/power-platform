@@ -55,10 +55,15 @@ Learn how to set up export functionality to Application Insights from the Power 
    > [!div class="mx-imgBorder"] 
    > ![Data export success.](media/Step5a_AppInsights.png "Data export success")
 
-10. To stop the data export to Application Insights, select **Delete export**. You can set up a new connection whenever you decide to restart the data export.
+## Delete an export package
 
-   > [!div class="mx-imgBorder"] 
-   > ![Delete export.](media/Step6_AppInsights.png "Delete export")
+1. In the Power Platform admin center, select **Data export** in the navigation pane.
+
+1. On the **Data export** page, select the **App Insights** tab. 
+
+1. Select the export package you want to delete and select **Delete export**.
+
+   You can set up a new connection whenever you decide to restart the data export.
 
 
 
