@@ -628,7 +628,7 @@
                   href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
-                - name: Set up export to Application Insights
+                - name: Export data to Application Insights
                   href: set-up-export-application-insights.md
         - name: Storage
           items:
