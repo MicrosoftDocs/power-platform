@@ -171,7 +171,7 @@ No, all canvas apps are accessed through a web browser.
 
 ### Is there anything we need to provision to set up SAP integration with Power Platform?
 
-Yes, a Windows virtual machine (VM) with at least 8 GB of RAM needs to be provisioned for the on-premises data gateway, which acts as a proxy server to listen for requests from your Power Platform tenant and relays them to SAP. One windows machine is sufficient for testing, but a cluster of Windows VMs should be set up for deployment to production to avoid single points of failure.
+Yes, a Windows virtual machine (VM) with at least 8 GB of RAM needs to be provisioned for the on-premises data gateway, which acts as a proxy server to listen for requests from your Power Platform tenant and relays them to SAP. One Windows machine is sufficient for testing, but a cluster of Windows VMs should be set up for deployment to production to avoid single points of failure.
 
 ### How quickly can a canvas app on SAP be up and running?
 
