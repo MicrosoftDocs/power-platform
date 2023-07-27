@@ -26,7 +26,7 @@ Learn how to export data to Application Insights from the Power Platform admin c
 - To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you must be a member of one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
     > [!IMPORTANT] 
-    > The Application Insights exporting functionality for Power Automate is in public preview, while Dynamics Customer Service's exporting functionality is ub private preview.
+    > The Application Insights exporting functionality for Power Automate is in public preview.
 
     > [!NOTE]
     > - The version of Application Insights described in this article isn't available in sovereign clouds. The prerequisites and setup instructions are consistent with the version currently hosted in sovereign clouds.
@@ -38,8 +38,8 @@ Learn how to export data to Application Insights from the Power Platform admin c
 
 1. On the **Data export** page, select the **App Insights** tab. Then select **New data export**.
 
-1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance**, **Power Automate**, or **Dynamics Customer Service**.
-
+1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance** or **Power Automate**.
+   
    If you select **Power Automate**, select whether to export cloud flow runs, triggers, and/or actions.
    
 1. Select the environment that you're exporting data _from_. You can choose to filter based on the environment type. Select **Next**.
