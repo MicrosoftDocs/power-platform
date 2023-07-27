@@ -17,30 +17,24 @@ ms.contributors:
 
 # Setting up Application Insights with cloud flow telemetry
 
-You can learn more about the different Azure Application Insights features and how they could be leveraged to monitor your telemetry [here](https://learn.microsoft.com/en-us/azure/azure-monitor/app/overview-dashboard).
+You can learn more about the different Azure Application Insights features and how they could be leveraged to monitor your telemetry in [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
 
-Power Automate telemetry flows into two tables on Application Insights – **Requests** and **Dependencies.** All the downstream alerting and monitoring capabilities we could do on Power Automate data would be within these two tables within Application Insights.
+Power Automate telemetry flows into two tables on Application Insights. All the downstream alerting and monitoring capabilities in Power Automate data are in these two tables in Application Insights.
 
-**Requests** table contains *cloud flow runs*
+- The **Requests** table contains *cloud flow runs*.
+- The **Dependencies** table contains *cloud flow triggers* and*cloud flow actions*.
 
-**Dependencies** table contains *cloud flow triggers* and*cloud flow actions*
+This section focuses on how the existing features within Application Insights could be leveraged to create monitoring and alerting capabilities for your automations.
 
-While Appinsights capabilities could be leveraged for comprehensive monitoring of your applications, including custom diagnostics, performance monitoring etc, this section will focus on how the existing features within Appinsights could be leveraged to create monitoring and alerting capabilities for your automations.
+Select the Application Insights instance from the Azure portal homepage.
 
-Select the application insights instance from the Azure portal homepage
+It is recommended that you bookmark the selected Application Insights link.
 
-It is recommended that you bookmark the selected Appinsights link if this will be the primary instance you will leverage for monitoring Power Automate
+## Monitor cloud flow executions
 
-1. **Monitoring cloud flow executions**
-
-<!-- -->
-
-1.  Select **Metrics** from the left navigation menu and then select **Server requests** from the **Metric** filter. Adjust the time period filter from the top right per the specific needs
-
-![A screenshot of a computer Description automatically generated with low confidence](media/image1.jpeg)
-
-2.  For filtering cloud flow executions to a specific environment, click on **Add filter**, and then select **environmentId** from the **Property** field and select your environment
-
+1.  Select **Metrics** from the navigation pane.
+1.  Select **Server requests** from the **Metric** filter. Adjust the time period filter in the top-right of the page, as needed.
+1.  To filter cloud flow executions for a specific environment, select **Add filter**, and then select your environment ID from the **Property** field.
 ![A screenshot of a computer Description automatically generated with medium confidence](media/image2.jpeg)
 
 3.  For further filtering cloud flow executions to a specific flow or a set of flows, you simply need to add more filters. You can click on **Add filter**, and then select **Operation name** from the property field and select the flow(s) you want to monitor.
