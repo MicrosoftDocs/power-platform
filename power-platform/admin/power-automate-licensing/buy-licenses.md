@@ -16,6 +16,7 @@ search.audienceType:
 
 Power Platform admins can purchase licenses for Power Automate and then manage those licenses in their organization.
 
+
 ### Buy Power Automate plans
 
 You can purchase Power Automate plans from [Microsoft 365 admin center](https://admin.microsoft.com/).
@@ -50,6 +51,9 @@ You can purchase the **Power Automate unattended RPA add-on** from the [Microsof
 
 After the purchase completes, the environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
+> [!TIP]
+> You can also use PowerShell commands to assign Power Autoamte licenses to an environment , see [Power Automate commands](../powerapps-powershell.md#)
+
 ## Manage licenses
 
 
@@ -67,7 +71,7 @@ Here are the two steps you must take if you want to assign a Process license.
 It's easy and scalable to allocate the Process licenses you've purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased the licenses.
 
 > [!TIP]
-> To learn more about how to allocate the per flow license to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
+> To learn more about how to allocate the Process license to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
 
 Follow these steps to allocate add-ons to an environment.
 
