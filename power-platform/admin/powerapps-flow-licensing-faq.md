@@ -131,7 +131,7 @@ This new offer includes all the benefits of Power Automate per user with attende
 -   **Entitlements**: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization.
 
 > [!Note]
-> Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365, require the Microsoft 365 - Unattended License. Please see the Product Terms for more information.
+> Any software automated with an unattended bot may require extra licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. Please see the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
 
 #### Are there minimum purchase requirements for Power Automate Process?
 
@@ -162,7 +162,7 @@ No, there is no limit to the number of users per tenant.
 
 #### Is there a trial version of Power Automate Process Mining?
 
-Yes, Process Mining offers a free 30-day trial giving access to many of the key features of Process Mining. The free Process Mining trial is included in the Power Automate trial available here.
+Yes, Process Mining offers a free 30-day trial giving access to many of the key features of Process Mining. The free Process Mining trial is included in the Power Automate trial available [here](https://signup.microsoft.com/get-started/signup?sku=f30db892-07e9-47e9-837c-80727f46fd3d&pbi_source=web&pi=1&ru=https%3a%2f%2fflow.microsoft.com%2fsignIn%3fredirectUrl%3dhttps%253a%252f%252fflow.microsoft.com%252fen-us%252f&products=f30db892-07e9-47e9-837c-80727f46fd3d&ali=1&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9).
 
 #### Will Process Mining use rights come with any other Power Platform or Dynamics 365 licenses?
 
@@ -213,11 +213,11 @@ The bots are hosted with Azure virtual machines leveraging Virtual Machine Scale
 
 #### Is this offer available worldwide?
 
-Yes, the hosted RPA add-on will be available to all geographies worldwide except for UAE due to capacity restrictions.
+Yes, the hosted RPA add-on will be available to all geographies worldwide except for UAE, due to capacity restrictions.
 
 #### Is there a trial version of Power Automate hosted RPA?
 
-Yes, trial users can create up to 10 hosted RPA bots groups and have up to two bots running in parallel in a given environment. To start a trial, customers can go to the Power Automate pricing page and select the **Try free** link under Power Automate per user with attended RPA or navigate to the Power Automate portal desktop flow page.
+Yes, trial users can create up to 10 hosted RPA bots groups and have up to two bots running in parallel in a given environment. To start a trial, customers can go to the Power Automate pricing page and select the **Try free** link, under Power Automate per user with attended RPA or navigate to the Power Automate portal desktop flow page.
 
 #### Are Power Automate per user, Power Automate per flow, and the Power Automate unattended RPA add-on still available?
 
@@ -302,15 +302,15 @@ Authenticated user/website/month are calculated as unique users who log into the
 
 Anonymous users are users who browse a website and don't log in.
 
-Anonymous users/website/month are calculated as unique users who access one or more anonymous pages of the website in a calendar month duration. Uniqueness is determined through a unique anonymous user ID stored in a browser cookie. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new anonymous user ID is generated and user would be counted as a different user.
+Anonymous users/website/month are calculated as unique users who access one or more anonymous pages of the website in a calendar month duration. Uniqueness is determined through a unique anonymous user ID stored in a browser cookie. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new anonymous user ID is generated and the user would be counted as a different user.
 
-### What are the scenarios in which a user isn't counted as anonymous user even though the user browses an anonymous page on the website?
+### What are the scenarios in which a user isn't counted as an anonymous user, even though the user browses an anonymous page on the website?
 
-There are several scenarios in which a user who has anonymously browsed the website won't be counted in the meter, some of these are described below:
+There are several scenarios in which a user who has anonymously browsed the website won't be counted in the meter. Some of these are described below:
 
 -  Any access of a website running in trial mode won't be counted.
 -  Any access of a website running in private mode won't be counted.
--  If the user accesses specific pages on the website, then they aren't counted as anonymous users, these are:
+-  If the user accesses specific pages on the website, then they aren't counted as anonymous users. These are:
     -  Pages related to log in like sign-in, register, invitation, and external authentication call back. This is done to ensure if the user is trying to authenticate to the website, they aren't counted as an anonymous user.
     -  System pages like the ones starting with **/\_** such as **/\_services** and **/\_resource**.
     -  If a page returns a redirect response (http 3xx status).
@@ -319,17 +319,17 @@ There are several scenarios in which a user who has anonymously browsed the webs
 -  Bots and crawler accessing anonymous pages of the website isn't counted.
 -  If there's a monitoring system setup to test website availability periodically, it is removed if it sends a non-browser user agent. In case your monitoring system sends a user agent that is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend targeting **/\_services/about** page of your website to ensure that it isn't counted in anonymous user access.
 -  If a user is accessing only static resources (CSS, JavaScript, and images) won't be counted.
--  If a user is browsing anonymously and later logs in to the website within same day (UTC time zone), then that user will only be counted as authenticated user and won't be counted as anonymous user.
+-  If a user is browsing anonymously and later logs in to the website within the same day (UTC time zone), then that user will only be counted as an authenticated user and won't be counted as an anonymous user.
 
 ### If a user accesses a site anonymously and then logs in to the site in the same session, will the user be counted as both an anonymous and an authenticated user?
 
-If a user accesses a site in both an anonymous and an authenticated manner in the same session or even within same day (24 hours using UTC time zone), the user will only be counted as an authenticated user and not as anonymous user.
+If a user accesses a site in both an anonymous and an authenticated manner, in the same session or even within the same day (24 hours using UTC time zone), the user will be counted as an authenticated user.
 
 ### Access to my website is authenticated, however it has an anonymous log in page. Do I need to purchase an anonymous user subscription?
 
-No, log in page access isn't counted for calculating anonymous users. So if the only anonymous page is sign in page, then it will not require anonymous user subscription to be purchased.
+No, log in page access isn't counted for calculating anonymous users. If the only anonymous page is the sign in page, then it will not require anonymous user subscription to be purchased.
 
-However, it's important to ensure that rest of the site is made authenticated. This can be done by using page-level permissions on home page and only making it available for authenticated user roles. If any other method is used like using a client-side (JavaScript) redirect to log in page, then it might lead to some pages being available anonymously.
+However, it's important to ensure that the rest of the site is made authenticated. This can be done by using page-level permissions on home page and only making it available for authenticated user roles. If any other method is used, like using a client-side (JavaScript) redirect to log in page, then it might lead to some pages being available anonymously.
 
 ### How much do these licenses cost?
 
@@ -337,7 +337,7 @@ The Power Pages authenticated per user and Power Pages anonymous per user offers
 
 ### Authenticated per user/website subscription capacity packs
 
-| Capacity Pack Tiers | Capacity Packs<br>Minimum purchase | Number of users<br>(100 users/capacity pack) | Price per capacity pack/month |  
+| Capacity pack tiers | Capacity packs minimum purchase | Number of users<br>(100 users/capacity pack) | Price per capacity pack/month |  
 |-------------------------|-------------------------|-------------------------|-------------------------|
 | Tier 1 | 1 pack | 100+ users | $200 |  
 | Tier 2 | 100 packs | 10,000+ users | $75 |  
@@ -345,37 +345,37 @@ The Power Pages authenticated per user and Power Pages anonymous per user offers
 
 ### Anonymous per user/website subscription capacity packs
 
-| Capacity Pack Tiers | Capacity Packs<br>Minimum purchase | Number of users<br>(500 users/capacity pack) | Price per capacity pack/month |  
+| Capacity pack tiers | Capacity packs minimum purchase | Number of users<br>(500 users/capacity pack) | Price per capacity pack/month |  
 |---------------------|------------------------------------|----------------------------------------------|-------------------------------|
 | Tier 1 | 1 pack     | 500+ users     | $75 |  
 | Tier 2 | 20 packs   | 10,000+ users  | $37.50 |   
 | Tier 3 | 200 packs  | 100,000+ users | $25 |   
 
-Price quoted above are list prices for commercial channel, special prices are offered for education and non-profit customers.
+Prices quoted above are list prices for commercial channel. Special prices are offered for education and non-profit customers.
 
-### Does Power Pages licenses include Dataverse storage?
+### Do Power Pages licenses include Dataverse storage?
 
 Yes, Dataverse database and Dataverse file capacity is included with the authenticated per user/website and the anonymous per user/website licenses. Allocated capacities differ between subscription plans and pay-as-you-go plans as detailed below.
 
 ### Dataverse default capacity - subscription plans
 
-| Capacity Type           | Dataverse database storage per tenant | Dataverse database storage per capacity pack | Dataverse file storage per capacity pack |
+| Capacity type           | Dataverse database storage per tenant | Dataverse database storage per capacity pack | Dataverse file storage per capacity pack |
 |------------------------------|-------------------------------------------|--------------------------------------------------|----------------------------------------------|
 | Authenticated per user plan  | 5 GB                                      | 2 GB                                             | 16 GB                                        |
 | Anonymous per user plan      | 5 GB                                      | 500 MB                                           | 4 GB                                         |
 
 ### How many users are included in each capacity pack for Power Pages licenses?
 
-- **Power Pages authenticated user/website subscription** – Each pack consists of 100 users. This is same for all tiers.
-- **Power Pages anonymous user/website subscription –** Each pack consists of 500 users. This is same for all tiers.
+- **Power Pages authenticated user/website subscription**: Each pack consists of 100 users. This is same for all tiers.
+- **Power Pages anonymous user/website subscription**: Each pack consists of 500 users. This is same for all tiers.
 
 ### What are the Power Pages use rights included with Power Apps and Dynamics 365 enterprise licenses?
 
 Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses, are granted use rights for Power Pages as described below.
 
-1.  Power Apps per app licensed users - One Power Pages website.
-2.  Power Apps per user licensed users – Unlimited Power Pages websites
-3.  Dynamics 365 enterprise licensed users – Unlimited Power Pages websites. These websites must map to the licensed Dynamics 365 application context and map to the same environment as the licensed Dynamics 365 application.
+1.  Power Apps per app licensed users: One Power Pages website.
+2.  Power Apps per user licensed users: Unlimited Power Pages websites.
+3.  Dynamics 365 enterprise licensed users: Unlimited Power Pages websites. These websites must map to the licensed Dynamics 365 application context and map to the same environment as the licensed Dynamics 365 application.
 
 ### What are the main differences between Power Pages and Power Apps portals licensing?
 
@@ -394,10 +394,10 @@ Internal authenticated users of a Power Pages website can use one of the followi
 
 **Subscription based**
 
-1. **Power Apps per app** – Users can access one Power Pages website that should be part of environment to which Power Apps per app capacity licenses are assigned.
-1. **Power Apps per user licensed users** – Users who have been assigned Power Apps per user licenses can use unlimited Power Pages websites.
-1. **Dynamics 365 enterprise licensed users** – Users who have been assigned Dynamics 365 enterprise licenses can use unlimited Power Pages websites. These websites must map to the licensed Dynamics 365 application context and map to the same environment as the licensed Dynamics 365 application.
-1. **Power Pages authenticated user/website subscription** – Users can access one Power Pages website to which Power Pages authenticated per user/website capacity is assigned. If a user accessing the website has a Power Apps per user or a Dynamics 365 enterprise license assigned, then that user won't be counted in Power Pages authenticated user/website capacity.
+1. **Power Apps per app**: Users can access one Power Pages website that should be part of environment to which Power Apps per app capacity licenses are assigned.
+1. **Power Apps per user licensed users**: Users who have been assigned Power Apps per user licenses can use unlimited Power Pages websites.
+1. **Dynamics 365 enterprise licensed users**: Users who have been assigned Dynamics 365 enterprise licenses can use unlimited Power Pages websites. These websites must map to the licensed Dynamics 365 application context and map to the same environment as the licensed Dynamics 365 application.
+1. **Power Pages authenticated user/website subscription**: Users can access one Power Pages website to which Power Pages authenticated per user/website capacity is assigned. If a user accessing the website has a Power Apps per user or a Dynamics 365 enterprise license assigned, then that user won't be counted in Power Pages authenticated user/website capacity.
 
 ### What is the difference between Power Apps portals login capacity and Power Pages authenticated per user/month capacity?
 
@@ -410,7 +410,7 @@ For example, in a scenario where a website was accessed by a total of 100 authen
 2. **Power Apps portal login**  
     With Power Apps portal logins, total number of logins would be 100 \* 30 = 3000 (as each user is logging in once every day) and customer will need to purchase capacity for 3000 logins for the website.
 
-### If I create a Power Pages website that can potentially be used by 100,000 authenticated users, however in a given month it will only be used by 5,000 users (out of the 100,000). Do I need to purchase authenticated per user capacity for 100,000 users or 5,000 users?**
+### Suppose I create a Power Pages website that can potentially be used by 100,000 authenticated users. However in a given month it will only be used by 5,000 users (out of the 100,000). Do I need to purchase authenticated per user capacity for 100,000 users or 5,000 users?
 
 Power Pages authenticated per user/website is licensed based on the number of unique authenticated users who access the site in a month. In this example, the customer should purchase capacity for 5,000 users.
 
@@ -422,20 +422,20 @@ No. Both CDN and WAF capabilities are included as part of Power Pages licensing 
 
 ### For subscription-based licenses, what is the minimum number of authenticated and anonymous user capacity I need to assign to an environment?
 
-1. **Authenticated Users**: Minimum quantity that needs to be assigned to an environment is 25.
+- **Authenticated users**: Minimum quantity that needs to be assigned to an environment is 25.
 
-For example, if you have three websites (in three different environments) and bought one authenticated user pack (100 users), you can assign them in the following ways:
+    For example, if you have three websites (in three different environments) and bought one authenticated user pack (100 users), you can assign them in the following ways:
 
--   Environment 1: 25 (min 25)
--   Environment 2: 35 (min 25)
--   Environment 3: 40 (min 25)
+    -   Environment 1: 25 (min 25)
+    -   Environment 2: 35 (min 25)
+    -   Environment 3: 40 (min 25)
 
-2. **Anonymous Users**: Minimum 200 per environment. After that you can assign 1 at a minimum.
+- **Anonymous users**: Minimum 200 per environment. After that you can assign 1 at a minimum.
 
-For example, if you have two websites (in two different environments) and licensed one anonymous user pack (500 users), you can assign them in the following ways:
+    For example, if you have two websites (in two different environments) and licensed one anonymous user pack (500 users), you can assign them in the following ways:
 
--   Environment 1: 220 (min 200)
--   Environment 2: 280 (min 200)
+    -   Environment 1: 220 (min 200)
+    -   Environment 2: 280 (min 200)
 
 ### Can I still purchase Power Apps portals login and page view subscriptions?
 
