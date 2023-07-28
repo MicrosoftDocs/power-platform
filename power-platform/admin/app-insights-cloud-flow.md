@@ -102,7 +102,7 @@ You can combine multiple conditions into a single alert by clicking on **Add con
 
 1. Review and finish setting up the alert.
 
-## Creating a custom alert
+## Create a custom alert
 
 Out of the box alerts help you track errors at the Application Insights instance level.
 
