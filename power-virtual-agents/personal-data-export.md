@@ -26,25 +26,25 @@ This topic discusses the Power Virtual Agents capabilities to find or export per
 
 1. Go to [https://make.powerapps.com](https://make.powerapps.com) and sign in with your credentials.
 
-   :::image type="content" source="media/gdpr-export/export-1.png" alt-text="Sign in to powerapps.com." border="false":::
+   :::image type="content" source="media/personal-data-export/export-1.png" alt-text="Sign in to powerapps.com." border="false":::
 
 1. In the side pane, select **Data** > **Tables**.
 
-   :::image type="content" source="media/gdpr-export/open-table.png" alt-text="Open Data table.":::
+   :::image type="content" source="media/personal-data-export/open-table.png" alt-text="Open Data table.":::
 
 1. Select the **Data** dropdown, then select **Export data**.
 
-   :::image type="content" source="media/gdpr-export/ExportDataMenu.png" alt-text="Export data.":::
+   :::image type="content" source="media/personal-data-export/ExportDataMenu.png" alt-text="Export data.":::
 
 1. Select **Chatbot** and **Chatbot subcomponent** from the entity list, then select **Export data**. Your data will take a couple of minutes to be compiled for export.
 
-   :::image type="content" source="media/gdpr-export/ExportChatbotAndChatbotSubComponent.png" alt-text="Select entities for export.":::
+   :::image type="content" source="media/personal-data-export/ExportChatbotAndChatbotSubComponent.png" alt-text="Select entities for export.":::
 
-   :::image type="content" source="media/gdpr-export/export-data-button.png" alt-text="Select export data button.":::
+   :::image type="content" source="media/personal-data-export/export-data-button.png" alt-text="Select export data button.":::
 
 1. When your export is ready, select **Download exported data** to download the content.
 
-   :::image type="content" source="media/gdpr-export/DownloadExportedData.png" alt-text="Download exported data.":::
+   :::image type="content" source="media/personal-data-export/DownloadExportedData.png" alt-text="Download exported data.":::
 
 ### Bot sessions (as bot author)
 
@@ -60,6 +60,6 @@ Microsoft provides the ability to access, delete, and export certain customer da
 
 1. Select **Add export request**.
 
-   :::image type="content" source="media/gdpr-export/export-azure-portal.png" alt-text="Export system generated logs.":::
+   :::image type="content" source="media/personal-data-export/export-azure-portal.png" alt-text="Export system generated logs.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
