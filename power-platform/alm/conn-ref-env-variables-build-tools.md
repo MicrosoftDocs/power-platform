@@ -193,6 +193,10 @@ When using the [Import Solution task](devops-build-tool-tasks.md#power-platform-
 
 :::image type="content" source="media/cref-evar-figure13.png" alt-text="Using the deployment settings file" lightbox="media/cref-evar-figure13.png":::
 
+## Validation
+
+During solution import, the connection references will be validated to ensure that the connections placed inside them will be usable by the owner of the connection reference. Ensure that the connections are owned by the owner of the connection references or that the [connections are shared](/power-apps/maker/data-platform/create-connection-reference#share-connections-with-another-user-so-flows-can-be-enabled).
+
 ### See also
 
 [What is Microsoft Power Platform CLI?](/powerapps/developer/data-platform/powerapps-cli)  
