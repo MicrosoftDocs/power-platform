@@ -7,4 +7,4 @@
 >
 > - [Flow values must be returned synchronously to Power Virtual Agents](../advanced-flow-create.md#turn-off-asynchronous-responses-in-the-flow).
 >
-> - A cloud flow called from Power Virtual Agents has a 2-minute timeout limit to run and return to the chatbot. To be under the 2-minute limit, you should optimize the flow logic, queries, and the returned data. If some of the cloud flow logic can continue to run after a result is sent to the chatbot, consider placing these actions after the 'Return value(s) to Power Virtual Agents' step in your cloud flow.
+> - A cloud flow called from Power Virtual Agents has a 100-second timeout limit to run and return to the chatbot. To be under the 100-second limit, you should optimize the flow logic, queries, and the returned data. If some of the cloud flow logic can continue to run after a result is sent to the chatbot, consider placing these actions after the 'Return value(s) to Power Virtual Agents' step in your cloud flow.
