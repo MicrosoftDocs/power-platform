@@ -63,7 +63,7 @@ Here are the two steps you must take if you want to assign a Process license.
 1. Assign a Process license to a flow.
 
    > [!NOTE]
-   > To run unattended desktop flows in an environment, you need to assign one Process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you will also need to assign one Process license for each parallel flow that runs on the machine.
+   > To run unattended desktop flows in an environment, you need to assign one Process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you will also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
 
 It's easy and scalable to allocate the Process licenses you've purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased the licenses.
 
