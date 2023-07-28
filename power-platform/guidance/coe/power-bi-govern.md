@@ -221,6 +221,30 @@ You can use the **Connector deep dive** page to better understand your connector
 
 :::image type="content" source="media/pb-20.png" alt-text="Connector deep dive":::
 
+### <a id="desktop-flows-risk-assessment" /> Desktop Flow usage
+
+The **Desktop Flow usage** page enables you to filter by:
+
+- Environment name and type
+- Maker
+- Desktop flow name
+- Error code 
+- Run Completed On
+
+Some typical assessments an admin might perform are described in the following sections.
+
+#### Identify orphaned Desktop flows
+
+Orphaned desktop flows, where the flow owner has left the organization, will stop working. It's therefore important to identify orphaned desktop flows, check whether they're still needed, and find a new owner.
+Select **Blank** in the **Maker Name** drop-down list on the filter pane to find orphaned flows.
+
+#### Identify frequent failures
+
+Identify frequent reasons for why desktop flow runs fail and work with the maker to fix the errors.
+Select an error in the **Error Code** drop-down list on the filter pane to find desktop flows that failed.
+
+:::image type="content" source="media/pb-23.png" alt-text="Desktop flow usage":::
+
 ### Desktop flow detail
 
 The **Desktop flow Detail** page is available by drilling down from a selected desktop flow. This page provides you with richer information about the runs of this desktop flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the desktop flow has failed.
