@@ -27,13 +27,13 @@ For information about Power BI licensing, see [Power BI pricing](https://powerbi
 
 ## Power Apps and Power Automate for Microsoft 365
 
-Power Apps/Power Automate capabilities for Microsoft 365 enable users to extend and customize the Office experience with Power Apps and Power Automate. Users can create applications and flows based on Microsoft 365 data. These productivity apps can also utilize data outside of Microsoft 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors.
+Power Apps and Power Automate capabilities for Microsoft 365 enable users to extend and customize the Office experience with Power Apps and Power Automate. Users can create applications and flows based on Microsoft 365 data. These productivity apps can also utilize data outside of Microsoft 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors.
 
-Here is a brief overview of capabilities included with Power Apps for Microsoft 365 plan. More details around which Microsoft 365 plans include these capabilities can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
+Here is a brief overview of capabilities included with the Power Apps for Microsoft 365 plan. More details around which Microsoft 365 plans include these capabilities can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
 | Functionalities                                                   | Power Apps for Microsoft 365 |
 |-----------------------------------------------------------------------|------------------------------|
-| Create, run and share apps                                            | Yes                          |
+| Create, run, and share apps                                            | Yes                          |
 | Run canvas apps in context of Microsoft 365                              | Yes                          |
 | Connect to Microsoft 365 data                                            | Yes                          |
 | Connect to cloud services using standard connectors                   | Yes                          |
@@ -105,14 +105,14 @@ If you want to build skills and learn more about Power Apps, Power Automate, and
 
 Pay-as-you-go is a way to pay for Power Apps and Power Automate using an Azure subscription, which allows you to get started building and sharing apps without any license commitment or upfront purchasing. More information: [Pay-as-you-go plan](pay-as-you-go-overview.md)
 
-## Tenant level special licenses
+## Tenant-level special licenses
 
 If a tenant administrator activates any one of the following SKUs, then all users in the tenant (active and guest) become eligible to be synced into all Dataverse environments in the tenant. Access to the users will be granted at runtime when the user accesses the Dataverse environment. In addition, the user’s access mode is set to Read-Write in Dataverse.
 
-You can view a list of all assigned licenses in the [Microsoft Admin Center](https://admin.microsoft.com)
+You can view a list of all assigned licenses in the [Microsoft Admin Center](https://admin.microsoft.com).
 
 > [!NOTE]
-> User must still be assigned a security role in Dataverse before they can access any data in Dataverse.
+> A user must be assigned to a security role in Dataverse before the user can access any data in Dataverse.
 >
 |Plan name   | SKU ID  | Capability string  |
 |---|---|---|
