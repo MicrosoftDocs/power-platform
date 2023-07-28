@@ -2,7 +2,6 @@
 title: "Overview of personal data requests"
 description: "Review personal data request information Power Virtual Agents."
 ms.date: 07/28/2023
-
 ms.topic: article
 author: iaanw
 ms.author: iawilt

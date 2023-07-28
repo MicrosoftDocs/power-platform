@@ -2,7 +2,6 @@
 title: "Export data to respond to requests for copies of personal data"
 description: "Export data to respond to requests for copies of personal data in Power Virtual Agents."
 ms.date: 07/28/2023
-
 ms.topic: article
 author: iaanw
 ms.author: iawilt

@@ -1,9 +1,7 @@
 ---
 title: "Responding to personal data delete requests from data subjects"
 description: "Respond to personal data delete equests for Power Virtual Agents."
-keywords: "PVA, delete data"
 ms.date: 07/28/2023
-
 ms.topic: article
 author: iaanw
 ms.author: iawilt

@@ -1,9 +1,7 @@
 ---
 title: "Responding to personal data discovery requests from data subjects"
 description: "Respond to personal data requests for Power Virtual Agents."
-keywords: "PVA"
 ms.date: 07/28/2023
-
 ms.topic: article
 author: iaanw
 ms.author: iawilt
