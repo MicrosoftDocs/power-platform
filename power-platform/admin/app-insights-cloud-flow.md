@@ -144,7 +144,7 @@ Here are some of the sample queries you can use.
 
     ```
     let myEnvironmentId = **'Insert your environment ID here**;
-    let myActionName = **'Delete\_a\_row'**;
+    let myActionName = **'Delete a row'**;
     dependencies
     | where timestamp > ago(**1d**)
     | where customDimensions['resourceProvider'] == 'Cloud Flow'
