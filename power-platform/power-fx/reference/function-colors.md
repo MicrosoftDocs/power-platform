@@ -1,6 +1,6 @@
 ---
-title: Color enumeration and ColorFade, ColorValue, and RGBA functions in Power Apps
-description: Reference information including syntax and examples for the Color enumeration and ColorFade, ColorValue, and RGBA functions in Power Apps.
+title: Color enumeration and ColorFade, ColorValue, and RGBA functions
+description: Reference information including syntax and examples for the Color enumeration and ColorFade, ColorValue, and RGBA functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Color enumeration and ColorFade, ColorValue, and RGBA functions in Power Apps
+# Color enumeration and ColorFade, ColorValue, and RGBA functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Use built-in color values, define custom colors, and use the alpha channel.
 

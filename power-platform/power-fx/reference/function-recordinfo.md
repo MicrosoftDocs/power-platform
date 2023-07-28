@@ -1,6 +1,6 @@
 ---
-title: RecordInfo function in Power Apps
-description: Reference information including syntax and examples for the RecordInfo function in Power Apps.
+title: RecordInfo function
+description: Reference information including syntax and examples for the RecordInfo function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# RecordInfo function in Power Apps
+# RecordInfo function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Provides information about a [record](/power-apps/maker/canvas-apps/working-with-tables#elements-of-a-table) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 

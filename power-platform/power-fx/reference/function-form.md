@@ -1,6 +1,6 @@
 ---
-title: EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions in Power Apps
-description: Reference information including syntax and examples for the EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions in Power Apps.
+title: EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions
+description: Reference information including syntax and examples for the EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions in Power Apps
+# EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 View, edit, or create an item, save the contents, and reset the controls in an **[Edit form](/power-apps/maker/canvas-apps/controls/control-form-detail)** control.
 

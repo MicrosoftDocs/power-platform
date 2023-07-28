@@ -1,6 +1,6 @@
 ---
-title: First, FirstN, Index, Last, and LastN functions in Power Apps
-description: Reference information including syntax and examples for the First, FirstN, Index, Last, and LastN functions in Power Apps.
+title: First, FirstN, Index, Last, and LastN functions
+description: Reference information including syntax and examples for the First, FirstN, Index, Last, and LastN functions.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -16,7 +16,9 @@ contributors:
   - jorisdg
 ---
 
-# First, FirstN, Index, Last, and LastN functions in Power Apps
+# First, FirstN, Index, Last, and LastN functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Returns the first, last, or a specific [record](/power-apps/maker/canvas-apps/working-with-tables#records), or a set of first or last records, from a table.
 

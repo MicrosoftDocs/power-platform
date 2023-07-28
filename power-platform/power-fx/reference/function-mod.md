@@ -1,6 +1,6 @@
 ---
-title: Mod function in Power Apps
-description: Reference information including syntax and examples for the Mod function in Power Apps.
+title: Mod function
+description: Reference information including syntax and examples for the Mod function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Mod function in Power Apps
+# Mod function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Returns the remainder of a division.
 

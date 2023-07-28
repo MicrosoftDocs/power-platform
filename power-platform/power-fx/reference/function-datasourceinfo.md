@@ -1,6 +1,6 @@
 ---
-title: DataSourceInfo function in Power Apps
-description: Reference information including syntax and examples for the DataSourceInfo function in Power Apps.
+title: DataSourceInfo function
+description: Reference information including syntax and examples for the DataSourceInfo function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# DataSourceInfo function in Power Apps
+# DataSourceInfo function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Provides information about a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 

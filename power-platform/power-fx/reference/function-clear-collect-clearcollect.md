@@ -1,6 +1,6 @@
 ---
-title: Collect, Clear, and ClearCollect functions in Power Apps
-description: Reference information including syntax and examples for the Collect, Clear, and ClearCollect functions in Power Apps.
+title: Collect, Clear, and ClearCollect functions
+description: Reference information including syntax and examples for the Collect, Clear, and ClearCollect functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Collect, Clear, and ClearCollect functions in Power Apps
+# Collect, Clear, and ClearCollect functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Creates and clears [collections](/power-apps/maker/canvas-apps/working-with-data-sources#collections) and adds [records](/power-apps/maker/canvas-apps/working-with-tables#records) to any [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 

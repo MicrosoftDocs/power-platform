@@ -1,6 +1,6 @@
 ---
-title: Patch function in Power Apps (contains video)
-description: Reference information including syntax and examples for the Patch function in Power Apps.
+title: Patch function (contains video)
+description: Reference information including syntax and examples for the Patch function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Patch function in Power Apps
+# Patch function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Modifies or creates one or more [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources), or merges records outside of a data source.
 

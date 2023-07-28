@@ -1,6 +1,6 @@
 ---
-title: DateAdd, DateDiff, and TimeZoneOffset functions in Power Apps
-description: Reference information including syntax and examples for the DateAdd, DateDiff, and TimeZoneOffset functions in Power Apps.
+title: DateAdd, DateDiff, and TimeZoneOffset functions
+description: Reference information including syntax and examples for the DateAdd, DateDiff, and TimeZoneOffset functions.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -16,7 +16,9 @@ contributors:
   - jorisdg
 ---
 
-# DateAdd, DateDiff, and TimeZoneOffset functions in Power Apps
+# DateAdd, DateDiff, and TimeZoneOffset functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Adds to or finds the difference in date/time values and converts between local time and UTC.
 

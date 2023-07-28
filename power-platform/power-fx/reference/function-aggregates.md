@@ -1,6 +1,6 @@
 ---
-title: Average, Max, Min, StdevP, Sum, and VarP functions in Power Apps
-description: Reference information including syntax and examples for the Average, Max, Min, StdevP, Sum, and VarP functions in Power Apps.
+title: Average, Max, Min, StdevP, Sum, and VarP functions
+description: Reference information including syntax and examples for the Average, Max, Min, StdevP, Sum, and VarP functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Average, Max, Min, StdevP, Sum, and VarP functions in Power Apps
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
+
+# Average, Max, Min, StdevP, Sum, and VarP functions
 
 Aggregate functions that summarize a set of numbers.
 

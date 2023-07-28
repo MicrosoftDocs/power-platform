@@ -1,6 +1,6 @@
 ---
-title: Boolean function in Power Apps
-description: Reference information including syntax and examples for the Boolean function in Power Apps.
+title: Boolean function
+description: Reference information including syntax and examples for the Boolean function.
 author: jorisdg
 ms.topic: reference
 ms.custom: canvas
@@ -13,7 +13,9 @@ contributors:
   - mduelae
   - jorisdg
 ---
-# Boolean function in Power Apps
+# Boolean function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Converts a text string, number, or untyped value to a Boolean value.
 

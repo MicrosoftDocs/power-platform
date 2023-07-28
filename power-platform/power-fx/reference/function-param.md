@@ -1,6 +1,6 @@
 ---
-title: Launch and Param functions in Power Apps
-description: Reference information including syntax and examples for the Launch and Param functions in Power Apps.
+title: Launch and Param functions
+description: Reference information including syntax and examples for the Launch and Param functions.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -16,7 +16,9 @@ contributors:
   - jorisdg
 ---
 
-# Launch and Param functions in Power Apps
+# Launch and Param functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Launches a webpage or a canvas app and provides access to launch parameters.
 

@@ -1,6 +1,6 @@
 ---
-title: Date and Time functions in Power Apps
-description: Reference information including syntax and examples for the Date and Time functions in Power Apps.
+title: Date and Time functions
+description: Reference information including syntax and examples for the Date and Time functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Date and Time functions in Power Apps
+# Date and Time functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Converts date and time components to a date/time value.
 

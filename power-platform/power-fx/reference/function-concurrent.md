@@ -1,6 +1,6 @@
 ---
-title: Concurrent function in Power Apps
-description: Reference information including syntax and examples for the Concurrent function in Power Apps.
+title: Concurrent function
+description: Reference information including syntax and examples for the Concurrent function.
 author: gregli-msft
 
 ms.topic: reference
@@ -18,7 +18,9 @@ contributors:
   - lezucket
 ---
 
-# Concurrent function in Power Apps
+# Concurrent function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Evaluates multiple formulas concurrently with one another.
 

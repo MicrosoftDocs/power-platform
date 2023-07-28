@@ -1,6 +1,6 @@
 ---
-title: AsType and IsType functions in Power Apps
-description: Reference information including syntax and examples for the AsType and IsType functions in Power Apps.
+title: AsType and IsType functions
+description: Reference information including syntax and examples for the AsType and IsType functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# AsType and IsType functions in Power Apps
+# AsType and IsType functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Checks a record reference for a specific table type (**IsType**) and treats the reference as a specific type (**AsType**).
 

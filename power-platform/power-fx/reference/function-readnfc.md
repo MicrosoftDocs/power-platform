@@ -1,6 +1,6 @@
 ---
-title: ReadNFC function | Microsoft Docs
-description: Reference information, including syntax, for the ReadNFC function in Power Apps
+title: ReadNFC function
+description: Reference information, including syntax, for the ReadNFC function
 author: mikepenaMS
 ms.topic: reference
 ms.custom: canvas
@@ -18,7 +18,9 @@ contributors:
   - anuitz
 ---
 
-# ReadNFC function in Power Apps
+# ReadNFC function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Reads a Near Field Communication (NFC) tag.
 

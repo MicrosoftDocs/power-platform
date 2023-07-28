@@ -1,6 +1,6 @@
 ---
-title: SaveData, LoadData, and ClearData functions in Power Apps
-description: Reference information including syntax and examples for the SaveData, LoadData, and ClearData functions in Power Apps.
+title: SaveData, LoadData, and ClearData functions
+description: Reference information including syntax and examples for the SaveData, LoadData, and ClearData functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -18,7 +18,9 @@ contributors:
   - melzoghbi
 ---
 
-# SaveData, LoadData, and ClearData functions in Power Apps
+# SaveData, LoadData, and ClearData functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Saves and reloads a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) from the app host's storage.
 

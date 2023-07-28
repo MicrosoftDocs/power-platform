@@ -1,6 +1,6 @@
 ---
-title: Defaults function in Power Apps
-description: Reference information including syntax and examples for the Defaults function in Power Apps.
+title: Defaults function
+description: Reference information including syntax and examples for the Defaults function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,7 @@ contributors:
   - jorisdg
 ---
 
-# Defaults function in Power Apps
+# Defaults function
 
 Returns the default values for a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 

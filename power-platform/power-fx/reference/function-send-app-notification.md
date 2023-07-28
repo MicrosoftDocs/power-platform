@@ -1,6 +1,6 @@
 ---
-title: XSendAppNotification and related functions in Power Apps
-description: Reference information including syntax and examples for the XSendAppNotification, XCreateUrlAction, XCreateSidePaneActionForDashboard, XCreateSidePaneActionForEntity, XCreateSidePaneActionForEntityList, and XCreateTeamsChatAction functions in Power Apps.
+title: XSendAppNotification and related functions
+description: Reference information including syntax and examples for the XSendAppNotification, XCreateUrlAction, XCreateSidePaneActionForDashboard, XCreateSidePaneActionForEntity, XCreateSidePaneActionForEntityList, and XCreateTeamsChatAction functions.
 author: jaredha
 ms.topic: reference
 ms.custom: canvas
@@ -13,7 +13,9 @@ search.audienceType:
 contributors:
 ---
 
-# XSendAppNotification and related action functions in Power Apps (preview)
+# XSendAppNotification and related action functions (preview)
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 [This article is pre-release documentation and is subject to change.]
 

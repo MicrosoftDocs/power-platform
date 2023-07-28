@@ -1,6 +1,6 @@
 ---
-title: Int, Round, RoundDown, RoundUp, and Trunc functions | Microsoft Docs
-description: Reference information, including syntax, for the Int, Round, RoundDown, RoundUp, and Trunc functions in Power Apps
+title: Int, Round, RoundDown, RoundUp, and Trunc functions
+description: Reference information, including syntax, for the Int, Round, RoundDown, RoundUp, and Trunc functions
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Int, Round, RoundDown, RoundUp, and Trunc functions in Power Apps
+# Int, Round, RoundDown, RoundUp, and Trunc functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Rounds a number.
 

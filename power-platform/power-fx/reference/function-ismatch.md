@@ -1,6 +1,6 @@
 ---
-title: IsMatch, Match, and MatchAll functions in Power Apps
-description: Reference information including syntax and examples for the IsMatch, Match, and MatchAll functions in Power Apps.
+title: IsMatch, Match, and MatchAll functions
+description: Reference information including syntax and examples for the IsMatch, Match, and MatchAll functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# IsMatch, Match, and MatchAll functions in Power Apps
+# IsMatch, Match, and MatchAll functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Tests for a match or extracts portions of a text string based on a pattern.
 

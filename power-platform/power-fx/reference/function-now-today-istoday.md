@@ -1,6 +1,6 @@
 ---
-title: Now, Today, IsToday, UTCNow, and UTCToday functions in Power Apps
-description: Reference information including syntax and examples for the Now, Today, IsToday, UTCNow, and UTCToday functions in Power Apps.
+title: Now, Today, IsToday, UTCNow, and UTCToday functions
+description: Reference information including syntax and examples for the Now, Today, IsToday, UTCNow, and UTCToday functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Now, Today, IsToday, UTCNow, UTCToday, IsUTCToday functions in Power Apps
+# Now, Today, IsToday, UTCNow, UTCToday, IsUTCToday functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Returns the current date and time, and tests whether a date/time value is today.
 

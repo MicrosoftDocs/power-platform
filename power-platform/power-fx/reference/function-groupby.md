@@ -1,6 +1,6 @@
 ---
-title: GroupBy and Ungroup functions in Power Apps
-description: Reference information including syntax and examples for the GroupBy and Ungroup functions in Power Apps.
+title: GroupBy and Ungroup functions
+description: Reference information including syntax and examples for the GroupBy and Ungroup functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# GroupBy and Ungroup functions in Power Apps
+# GroupBy and Ungroup functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Groups and ungroups [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables).
 

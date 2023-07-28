@@ -1,6 +1,6 @@
 ---
-title: Len function in Power Apps
-description: Reference information including syntax and examples for the Len function in Power Apps.
+title: Len function
+description: Reference information including syntax and examples for the Len function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Len function in Power Apps
+# Len function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Returns the length of a string of text.
 

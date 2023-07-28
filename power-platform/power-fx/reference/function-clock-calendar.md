@@ -1,6 +1,6 @@
 ---
-title: Calendar and Clock functions in Power Apps
-description: Reference information including syntax and examples for the Calendar and Clock functions in Power Apps.
+title: Calendar and Clock functions
+description: Reference information including syntax and examples for the Calendar and Clock functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Calendar and Clock functions in Power Apps
+# Calendar and Clock functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Retrieves calendar and clock information about the current locale.
 

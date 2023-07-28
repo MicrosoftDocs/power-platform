@@ -1,6 +1,6 @@
 ---
-title: ParseJSON function in Power Apps
-description: Reference information including syntax and examples for the ParseJSON function in Power Apps.
+title: ParseJSON function
+description: Reference information including syntax and examples for the ParseJSON function.
 author: jorisdg
 
 ms.topic: reference
@@ -15,7 +15,10 @@ contributors:
   - jorisdg
   - mduelae
 ---
-# ParseJSON function in Power Apps
+# ParseJSON function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
+
 Interprets a JSON string and returns an [untyped object](../untyped-object.md).
 
 ## Description

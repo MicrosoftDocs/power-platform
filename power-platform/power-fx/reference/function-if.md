@@ -1,6 +1,6 @@
 ---
-title: If and Switch functions in Power Apps
-description: Reference information including syntax and examples for the If and Switch functions in Power Apps.
+title: If and Switch functions
+description: Reference information including syntax and examples for the If and Switch functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# If and Switch functions in Power Apps
+# If and Switch functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Determines whether any condition in a set is true (**If**) or the result of a formula matches any value in a set (**Switch**) and then returns a result or executes an action.
 

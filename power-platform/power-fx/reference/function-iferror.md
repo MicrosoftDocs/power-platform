@@ -1,6 +1,6 @@
 ---
-title: Error, IfError, IsError, and IsBlankOrError functions in Power Apps
-description: Reference information including syntax and examples for the Error, IfError, IsError, IsBlankOrError functions in Power Apps.
+title: Error, IfError, IsError, and IsBlankOrError functions
+description: Reference information including syntax and examples for the Error, IfError, IsError, IsBlankOrError functions.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -16,7 +16,9 @@ contributors:
   - jorisdg
 ---
 
-# Error, IfError, IsError, IsBlankOrError functions in Power Apps
+# Error, IfError, IsError, IsBlankOrError functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Detects errors and provides an alternative value or takes action. Create a custom error or pass through an error.
 

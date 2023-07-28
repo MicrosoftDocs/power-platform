@@ -1,6 +1,6 @@
 ---
-title: Left, Mid, and Right functions in Power Apps
-description: Reference information including syntax and examples for the Left, Mid, and Right functions in Power Apps.
+title: Left, Mid, and Right functions
+description: Reference information including syntax and examples for the Left, Mid, and Right functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Left, Mid, and Right functions in Power Apps
+# Left, Mid, and Right functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Extracts the left, middle, or right portion of a string of text.
 

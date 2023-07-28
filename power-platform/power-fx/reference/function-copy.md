@@ -1,6 +1,6 @@
 ---
-title: Copy function in Power Apps
-description: Reference information for the Copy function in Power Apps.
+title: Copy function
+description: Reference information for the Copy function.
 author: jorisdg
 ms.subservice: power-fx
 ms.topic: reference
@@ -11,7 +11,9 @@ ms.author: jorisde
 search.audienceType: 
   - maker
 ---
-# Copy function in Power Apps
+# Copy function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Copies text to the clipboard on the device where the app is running.
 

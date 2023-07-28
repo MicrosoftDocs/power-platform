@@ -1,6 +1,6 @@
 ---
-title: Replace and Substitute functions in Power Apps
-description: Reference information including syntax and examples for the Replace and Substitute functions in Power Apps.
+title: Replace and Substitute functions
+description: Reference information including syntax and examples for the Replace and Substitute functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Replace and Substitute functions in Power Apps
+# Replace and Substitute functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Replace a portion of a string of text with another string.
 

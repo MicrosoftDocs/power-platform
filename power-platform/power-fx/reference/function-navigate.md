@@ -1,6 +1,6 @@
 ---
-title: Back and Navigate functions in Power Apps
-description: Reference information including syntax and examples for the Back and Navigate functions in Power Apps.
+title: Back and Navigate functions
+description: Reference information including syntax and examples for the Back and Navigate functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Back and Navigate functions in Power Apps
+# Back and Navigate functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Changes which screen is displayed.
 

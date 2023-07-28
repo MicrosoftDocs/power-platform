@@ -1,6 +1,6 @@
 ---
-title: ForAll function in Power Apps
-description: Reference information including syntax and examples for the ForAll function in Power Apps.
+title: ForAll function
+description: Reference information including syntax and examples for the ForAll function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# ForAll function in Power Apps
+# ForAll function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Calculates values and performs actions for all the [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables).
 

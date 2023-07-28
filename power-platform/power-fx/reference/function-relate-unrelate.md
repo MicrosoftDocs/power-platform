@@ -1,6 +1,6 @@
 ---
-title: Relate and Unrelate functions in Power Apps
-description: Reference information including syntax and examples for the Relate and Unrelate functions in Power Apps.
+title: Relate and Unrelate functions
+description: Reference information including syntax and examples for the Relate and Unrelate functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Relate and Unrelate functions in Power Apps
+# Relate and Unrelate functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Relate and unrelate records of two tables through a one-to-many or many-to-many relationship.
 

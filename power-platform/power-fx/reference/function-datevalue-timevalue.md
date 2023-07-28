@@ -1,6 +1,6 @@
 ---
-title: DateValue, TimeValue, and DateTimeValue functions in Power Apps
-description: Reference information including syntax and examples for the DateValue, TimeValue, and DateTimeValue functions in Power Apps.
+title: DateValue, TimeValue, and DateTimeValue functions
+description: Reference information including syntax and examples for the DateValue, TimeValue, and DateTimeValue functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# DateValue, TimeValue, and DateTimeValue functions in Power Apps
+# DateValue, TimeValue, and DateTimeValue functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Converts date, time, or both in a _string_ to a _date/time_ value.
 

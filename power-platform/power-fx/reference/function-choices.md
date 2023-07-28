@@ -1,6 +1,6 @@
 ---
-title: Choices function in Power Apps
-description: Reference information including syntax and examples for the Choices function in Power Apps.
+title: Choices function
+description: Reference information including syntax and examples for the Choices function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Choices function in Power Apps
+# Choices function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Returns a table of the possible values for a lookup column.
 

@@ -1,6 +1,6 @@
 ---
-title: Download function in Power Apps
-description: Reference information including syntax and examples for the Download function in Power Apps.
+title: Download function
+description: Reference information including syntax and examples for the Download function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Download function in Power Apps
+# Download function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Downloads a file from the web to the local device.
 

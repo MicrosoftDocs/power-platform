@@ -1,6 +1,6 @@
 ---
-title: Language function in Power Apps
-description: Reference information including syntax and examples for the Language function in Power Apps.
+title: Language function
+description: Reference information including syntax and examples for the Language function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Language function in Power Apps
+# Language function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Returns the language tag of the current user.
 

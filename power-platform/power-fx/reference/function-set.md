@@ -1,6 +1,6 @@
 ---
-title: Set function in Power Apps
-description: Reference information including syntax and examples for the Set function in Power Apps.
+title: Set function
+description: Reference information including syntax and examples for the Set function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Set function in Power Apps
+# Set function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Sets the value of a global variable.
 

@@ -1,6 +1,6 @@
 ---
-title: Sequence function in Power Apps
-description: Reference information including syntax and examples for the Sequence function in Power Apps.
+title: Sequence function
+description: Reference information including syntax and examples for the Sequence function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Sequence function in Power Apps
+# Sequence function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Generate a table of sequential numbers.
 

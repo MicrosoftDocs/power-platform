@@ -1,6 +1,6 @@
 ---
-title: Abs, Exp, Ln, Power, Log, and Sqrt functions in Power Apps
-description: Reference information including syntax and examples for the Abs, Exp, Ln, Power, and Sqrt functions in Power Apps.
+title: Abs, Exp, Ln, Power, Log, and Sqrt functions
+description: Reference information including syntax and examples for the Abs, Exp, Ln, Power, and Sqrt functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Abs, Exp, Ln, Power, Log, and Sqrt functions in Power Apps
+# Abs, Exp, Ln, Power, Log, and Sqrt functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Calculates absolute values, logarithms, square roots, and the results of raising _e_ or any number to specified powers.
 

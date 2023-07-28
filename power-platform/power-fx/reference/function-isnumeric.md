@@ -1,6 +1,6 @@
 ---
-title: IsNumeric function in Power Apps
-description: Reference information including syntax and examples for the IsNumeric function in Power Apps.
+title: IsNumeric function
+description: Reference information including syntax and examples for the IsNumeric function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# IsNumeric function in Power Apps
+# IsNumeric function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Tests whether a value is numeric.
 

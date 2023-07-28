@@ -1,6 +1,6 @@
 ---
-title: Filter, Search, and LookUp functions in Power Apps (contains video)
-description: Reference information including syntax and examples for the Filter, Search, and LookUp functions in Power Apps.
+title: Filter, Search, and LookUp functions (contains video)
+description: Reference information including syntax and examples for the Filter, Search, and LookUp functions.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -16,7 +16,7 @@ contributors:
   - jorisdg
 ---
 
-# Filter, Search, and LookUp functions in Power Apps
+# Filter, Search, and LookUp functions
 
 Finds one or more [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables).
 

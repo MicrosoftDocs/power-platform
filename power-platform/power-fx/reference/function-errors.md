@@ -1,6 +1,6 @@
 ---
-title: Errors function in Power Apps
-description: Reference information including syntax and examples for the Errors function in Power Apps.
+title: Errors function
+description: Reference information including syntax and examples for the Errors function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Errors function in Power Apps
+# Errors function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Provides error information for previous changes to a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 

@@ -1,6 +1,6 @@
 ---
-title: PDF function in Power Apps (experimental)
-description: Reference information including syntax and examples for the PDF function in Power Apps.
+title: PDF function (experimental)
+description: Reference information including syntax and examples for the PDF function.
 author: TashasEv
 ms.topic: reference
 ms.custom: canvas
@@ -15,9 +15,11 @@ contributors:
   - mduelae
 ---
 
-# PDF function in Power Apps (experimental)
+# PDF function(experimental)
 
-[This article is prerelease documentation and is subject to change.\]
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
+
+[This article is prerelease documentation and is subject to change.]
 
 Export contents from the current screen to an object for use in multiple scenarios.
 
