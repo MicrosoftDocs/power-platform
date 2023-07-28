@@ -20,7 +20,7 @@ ms.subservice: solution-templates
 
 # SAP Requisition Management app
 
-The SAP Requisition Management app allows you to do several functions in SAP quicker and easier than using SAPGui. You can view a requisition, search for a requisition, change an existing requisition, or create a new requisition.
+The SAP Requisition Management app allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view and update an existing requisition, create a new requisition, and convert a requisition to a purchase order.
 
 :::image type="content" source="media/requisition-management/sap-req-app.png" alt-text="Image of the Power Platform Procurement requisition app":::
 
@@ -29,7 +29,7 @@ The SAP Requisition Management app allows you to do several functions in SAP qui
 You have three options for viewing a requisition:
 
 - Select a recent requisition that you have interacted with.
-- Type in the requisition number, if you know it.
+- Enter a known requisition number.
 - Search for a requisition based on vendor and date range.
 
 ### Select a recent requisition
@@ -44,7 +44,7 @@ If you know the requisition number of the document you want to view, you can typ
 
 If you haven't interacted with the requisition, and you don't know the exact number, you can search for a requisition.
 
-1. Select the **funnel icon** to open the requisition search screen. On the screen, you can search by any individual field or a combination of _Requisition Number_, _Vendor_, and _Date Range_.
+1. Select the **funnel icon** to open the _Requisition search_ screen. On the screen, you can search by any individual field or a combination of _Requisition Number_, _Vendor_, and _Date Range_.
 
    :::image type="content" source="media/requisition-management/req-search.png" alt-text="Image shows requisition search screen.":::
 
@@ -60,11 +60,11 @@ You can create a new requisition:
 
 1. Enter a vendor number.
 
-1. Select the arrow pointing to the right side of the screen, next to the vendor number, and the vendor name appears.
+1. Select the **right-pointing arrow** next to the vendor number to see the vendor name.
 
-1. Select the appropriate Purchasing Organization from the dropdown list.
+1. Select the appropriate _Purchasing Organization_ from the dropdown list.
 
-1. Select the appropriate Purchasing Group from the dropdown list.
+1. Select the appropriate _Purchasing Group_ from the dropdown list.
 
 ## Add a line item to a requisition
 
@@ -72,7 +72,7 @@ You can create a new requisition:
 
 1. View the _New Requisition Item Details_ page.
 
-1. Select your location (plant).
+1. Select your _location (plant)_.
 
 1. If you know your material number, enter it, or you can search by selecting the filter symbol.
 
@@ -80,7 +80,7 @@ You can create a new requisition:
 
 1. Search by _material number_, _description_, _material type_ or _location_ (_plant_). Select the **material number**. As an example, pick _PRODUCT2_ and it populates that data into the new requisition item detail screen.
 
-1. Now enter the quantity and the unit price. The _Unit_ field was prepopulated when we selected this material from the _Material Search_.
+1. Enter the quantity and the unit price. The _Unit_ field is prepopulated when the material is selected from the _Material Search_.
 
 1. View the total automatically calculated based on the quantity multiplied by the unit price.
 

@@ -40,16 +40,16 @@ If you have not interacted with the vendor invoice, and you don't know the exact
 
 The vendor invoice search screen allows you to search by an individual field or a combination of these fields:
 
-- _Vendor_
-- _Document type_
-- _Company code_
-- _Creation date range_
+- Vendor
+- Document type
+- Company code
+- Creation date range
 
 Take these steps to perform a search:
 
 1. Enter your selection criteria.
-1. Select the **Search** button to display your results.
-1. Select the _vendor invoice_ you want to display on the overview screen you want to see displayed on the overview screen.
+1. Select **Search** to display your results.
+1. Select the _vendor invoice_ you want to display on the overview screen.
 
 ### Enter a vendor invoice number
 

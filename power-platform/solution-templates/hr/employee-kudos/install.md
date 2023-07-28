@@ -41,7 +41,7 @@ Import the Kudos solution template into the environment.
 After the installation is complete, the status shows as _Installed_.
 
 > [!TIP]
-> You can log your questions and get support for the SAP Procurement solution template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> You can log your questions and get support for the Employee Kudos solution template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
 ## Step 3: Create an access team
 
