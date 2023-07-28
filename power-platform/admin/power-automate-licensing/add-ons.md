@@ -22,7 +22,9 @@ You cannot assign Power Platform requests capacity add-on packs to users or flow
 
 If Power Automate is throttling your flows, try [Pay-as-you-go](types.md#power-platform-requests-pay-as-you-go) to ensure that none of the flows in the environment are throttled. If you cannot use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
-## Unattended add-on
+## Unattended RPA add-on
+> [!NOTE]
+> The Power Automate unattended RPA add-on is now replaced by the Power Automate Process plan which provides the same capability as the unattended RPA add-on.
 
 Unattended desktop flows run without human interaction. These flows are best for scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
 
@@ -44,10 +46,8 @@ Here are a few important notes of which you should be aware regarding the unatte
 
 1. I want to run unattended flow. What licenses do I need?
 
-   You need either Power Automate per user with attended RPA or Power Automate per flow plans as a base license and Unattended add-on to be able to run the unattended flow.
-1. Is buying just the unattended add-on enough?
+   You need either **Power Automate Premium plan** (previously Power Automate per user plan with attended RPA) or Power Automate per flow plans as a base license and Unattended add-on to be able to run the unattended flow.
 
-   No. You need to a have a qualifying base license (per user RPA/per flow) for which the add-on can be added on.
 1. I need multiple instances running unattended. Do I need multiple add-ons?
 
    Yes if you need to run them at the same time. If not, the runs will be queued and begin when the bot is free.
