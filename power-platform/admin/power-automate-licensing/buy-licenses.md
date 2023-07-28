@@ -51,9 +51,6 @@ You can purchase the **Power Automate unattended RPA add-on** from the [Microsof
 
 After the purchase completes, the environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-> [!TIP]
-> You can also use PowerShell commands to assign Power Automate licenses to an environment , see [Power Automate commands](../powerapps-powershell.md#)
-
 ## Manage licenses
 
 
