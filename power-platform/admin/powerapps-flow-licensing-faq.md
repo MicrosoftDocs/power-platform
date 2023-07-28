@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs| Microsoft Docs
 description: FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: conceptual
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -21,7 +21,7 @@ For more details about Microsoft Power Platform licensing, download the [Licens
 
 This section provides answers to Power Platform products in general.
 
-### What are the self-service purchase options for the Microsoft Power Platform products?
+### What are the self-service purchase options for the Power Platform products?
 
 See the FAQ: [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities).
 
@@ -31,7 +31,7 @@ Yes, non-profit, government, and academic pricing is available in respective pro
 
 ### Is there a plan for developers?
 
-Yes, we have a free Developer Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/developerplan/)).
+Yes, we have a free Developer Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/developerplan/)
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
@@ -45,9 +45,9 @@ Any customer can sign up for a [free trial](try-powerapps-dynamics-365.md). Mic
 
 Yes. To help ensure service levels, availability and quality, there are limits to the number of API requests users can make across Power Platform. Service limits are set against normal usage patterns in both 5-minute and per 24-hour intervals, and most customers won't reach them.
 
-API capacity is tracked based on consumption at an individual user level, and the daily limits can't be pooled at any other level.
+API capacity is tracked based on consumption at an individual, user level, and the daily limits can't be pooled at any other level.
 
-API limits are also applicable to application users, non-interactive users and administrative users in Dataverse.
+API limits are also applicable to application users, non-interactive users, and administrative users in Dataverse.
 
 More information is available in [Requests limits and allocations](api-request-limits-allocations.md).
 
@@ -116,8 +116,8 @@ See [Types of Power Automate licenses](power-automate-licensing/types.md), [Fr
 
 #### What are the pricing and licensing details for Power Automate Premium?
 
--   List Price (USD): $15 per user/month
--   Entitlements: Licensed per user, Power Automate Premium enables licensed users to automate modern applications via API-based digital process automation, Digital Process Automation (cloud flows), and legacy applications via UI-based robotic process automation (desktop flows) in attended mode. It also includes full Process Mining desktop functionality and a limited amount of Process Mining data storage (50 MB per user license up to 100 GB per customer).
+-   **List Price (USD)**: $15 per user/month
+-   **Entitlements**: Licensed per user, Power Automate Premium enables licensed users to automate modern applications via API-based digital process automation, Digital Process Automation (cloud flows), and legacy applications via UI-based robotic process automation (desktop flows) in attended mode. It also includes full Process Mining desktop functionality and a limited amount of Process Mining data storage (50 MB per user license up to 100 GB per customer).
 
 #### How does this compare to the previous Power Automate per user with attended RPA offer and the Power Automate per user offer?
 
@@ -127,8 +127,8 @@ This new offer includes all the benefits of Power Automate per user with attende
 
 #### What are the pricing and licensing details for Power Automate Process?
 
--   List Price (USD): $150 per user/month
--   Entitlements: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization.
+-  **List Price (USD)**: $150 per user/month
+-   **Entitlements**: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization.
 
 > [!Note]
 > Any software automated with an unattended bot may require additional licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365, require the Microsoft 365 - Unattended License. Please see the Product Terms for more information.
@@ -145,9 +145,9 @@ No, there are no licensing prerequisites required for eligibility to purchase Po
 
 #### What are the pricing and licensing details for Power Automate Process Mining?
 
--   List Price (USD): $5,000 for 100 GB of data stored/month
--   Required pre-requisite: Power Automate Premium. Multiple add-ons can be applied to a single pre-requisite.
--   More entitlements per capacity pack:
+-   **List Price (USD)**: $5,000 for 100 GB of data stored/month
+-   **Required pre-requisite**: Power Automate Premium. Multiple add-ons can be applied to a single pre-requisite.
+-   **More entitlements per capacity pack**:
     -   Dataverse database capacity 2 GB/capacity pack
     -   Dataverse file capacity 1 TB/capacity pack
     -   250k Power Platform Requests/24 hrs
@@ -194,9 +194,9 @@ The Power Automate Premium trial will include 100 MB of Process Mining stored da
 
 #### What are the pricing and licensing details for Power Automate hosted RPA?
 
--   List Price (USD): $215 per bot/month
--   Entitlements: Licensed per bot, the Power Automate hosted RPA add-on license provides capacity for a single Microsoft RPA bot and a virtual machine for running automations.
--   Qualifying prerequisite: Power Automate Premium, Power Automate Process
+-   **List Price (USD)**: $215 per bot/month
+-   **Entitlements**: Licensed per bot, the Power Automate hosted RPA add-on license provides capacity for a single Microsoft RPA bot and a virtual machine for running automations.
+-   **Qualifying prerequisite**: Power Automate Premium, Power Automate Process
     -   Multiple hosted RPA add-on licenses can be added with a single qualifying base license.
     -   Concurrent instances of a singular process require an extra unattended bot for each instance.
 
@@ -244,8 +244,8 @@ Learn more: [Assign licenses and manage access to Power Virtual Agents](/power-
 
 ### What are the pricing and licensing details for Power Virtual Agents?
 
--   List Price (USD): $200 per tenant/month\*
--   Entitlements: Licensed by tenant, Power Virtual Agents entitles a tenant to 2,000 chat sessions per tenant/month enabling the tenant to deploy chatbots and create cloud flows within the context of the Power Virtual Agents bots.
+-   **List Price (USD)**: $200 per tenant/month\*
+-   **Entitlements**: Licensed by tenant, Power Virtual Agents entitles a tenant to 2,000 chat sessions per tenant/month enabling the tenant to deploy chatbots and create cloud flows within the context of the Power Virtual Agents bots.
 
 \* Limited Time Offers available through December 31, 2023. See the [pricing page](https://powervirtualagents.microsoft.com/pricing/) for details.
 
@@ -253,8 +253,8 @@ Learn more: [Assign licenses and manage access to Power Virtual Agents](/power-
 
 #### What are the pricing and licensing details for Power Virtual Agents capacity add-on?
 
--   List Price (USD): $100 per tenant/month\*
--   Entitlements: Licensed by tenant, the capacity add-on adds 1,000 chat sessions per tenant/month increasing the number of chat bot sessions per tenant.
+-   **List Price (USD)**: $100 per tenant/month\*
+-   **Entitlements**: Licensed by tenant, the capacity add-on adds 1,000 chat sessions per tenant/month increasing the number of chat bot sessions per tenant.
 
 \* Limited Time Offers available through December 31, 2023. See the [pricing page](https://powervirtualagents.microsoft.com/pricing/) for details.
 
@@ -262,8 +262,8 @@ Learn more: [Assign licenses and manage access to Power Virtual Agents](/power-
 
 #### What are the pricing and licensing details for Power Virtual Agents capacity add-on?
 
--   List Price (USD): $0 per user/month
--   Entitlements: Licensed by user, the Power Virtual Agents per user license is required for each user authoring bots. It is recommended to acquire the tenant license (with the capacity add-on, if needed) and user licenses as part of a single transaction to simplify onboarding to Power Virtual Agents.
+-   **List Price (USD)**: $0 per user/month
+-   **Entitlements**: Licensed by user, the Power Virtual Agents per user license is required for each user authoring bots. It is recommended to acquire the tenant license (with the capacity add-on, if needed) and user licenses as part of a single transaction to simplify onboarding to Power Virtual Agents.
 
 #### How do Power Virtual Agents use rights that come with Microsoft 365 or Office 365 licenses compare with use rights for the full Power Virtual Agents licenses?
 
