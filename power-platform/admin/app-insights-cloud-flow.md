@@ -88,7 +88,7 @@ To set up an alert for a cloud flow run failure:
 
 1. Select the threshold for monitoring errors and the frequency with which you want to check for errors.
 
-You can combine multiple conditions into a single alert by clicking on **Add condition** and repeating the previous step
+    You can combine multiple conditions into a single alert by selecting **Add condition** and repeating the previous step
 
 1. If an action group isn't already created, create a specific action group. More information: [Action groups](/azure/azure-monitor/alerts/action-groups)
 
