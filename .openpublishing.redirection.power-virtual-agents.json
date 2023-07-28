@@ -3,21 +3,16 @@
     {
       "source_path": "power-virtual-agents/gdpr-discovery.md",
       "redirect_url": "personal-data-discovery",
-      "redirect_document_id": "true"
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-virtual-agents/gdpr-delete.md",
       "redirect_url": "personal-data-delete",
-      "redirect_document_id": "true"
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-virtual-agents/gdpr-summary.md",
-      "redirect_url": "personal-data-summary",
-      "redirect_document_id": "true"
-    },
-    {
-      "source_path": "power-virtual-agents/gdpr-export.md",
-      "redirect_url": "personal-data-export",
+      "redirect_url": "/power-virtual-agents/personal-data-summary",
       "redirect_document_id": "true"
     },
     {
@@ -753,6 +748,11 @@
       "source_path": "power-virtual-agents/teams/requirements-licensing-teams.md",
       "redirect_url": "../requirements-licensing",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/gdpr-export.md",
+      "redirect_url": "personal-data-export",
+      "redirect_document_id": "true"
     }
   ]
 }
