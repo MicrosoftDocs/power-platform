@@ -441,13 +441,13 @@ No. Both CDN and WAF capabilities are included as part of Power Pages licensing 
 
 Power Apps portals login and page view subscriptions will be available for purchase during transition period.
 
-1. **Existing customers who have Power Apps portals login and page view subscriptions**
+- **Existing customers who have Power Apps portals login and page view subscriptions**
 
-    -   Power Apps portals customers whose agreements expire before March 31, 2023 will have the option to renew their agreements using the existing Power Apps portals SKUs for one more agreement term.
+    -   Power Apps portals customers whose agreements expire before March 31, 2023, will have the option to renew their agreements using the existing Power Apps portals SKUs for one more agreement term.
     -   During this transition period, existing customers will also be able to purchase more capacity for existing SKUs to create new websites or augment capacity for existing websites.  
     -   Power Apps portals customers whose agreements expire after March 31, 2023, will need to transition to the new Power Pages licensing upon expiration of their Power Apps portals subscription term.
 
-2. **New customers**
+- **New customers**
     -   Power Apps portals per login and per page view SKUs will be available for new customers to purchase until March 31, 2023.
     -   After March 31, 2023, new customers will purchase the new Power Pages SKUs.
 
