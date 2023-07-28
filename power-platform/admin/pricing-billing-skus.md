@@ -15,7 +15,7 @@ search.audienceType:
 
 # Licensing overview for Microsoft Power Platform
 
-The topics in this section provide detailed information about Microsoft Power Platform licensing.
+This article provides detailed information about Microsoft Power Platform licensing.
 
 ## Power Apps, Power Automate, Power Virtual Agents, and Power Pages offers 
 
