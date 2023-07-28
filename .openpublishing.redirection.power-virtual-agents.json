@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path": "power-virtual-agents/gdpr-discovery.md",
+      "redirect_url": "personal-data-discovery",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/gdpr-delete.md",
+      "redirect_url": "personal-data-delete",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/gdpr-summary.md",
+      "redirect_url": "personal-data-summary",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/gdpr-export.md",
+      "redirect_url": "personal-data-export",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-virtual-agents/advanced-use-dispatcher.md",
       "redirect_url": "configuration-add-skills",
       "redirect_document_id": "false"
@@ -122,7 +142,7 @@
       "redirect_document_id": "false"
     },
 
-    //Build-22 redirects
+    //Build-22, Teams, and preview redirects
 
     {
       "source_path": "power-virtual-agents/build-22/advanced-cards.md",
@@ -512,7 +532,7 @@
     {
       "source_path": "power-virtual-agents/teams/admin-upgrade-dataverse-teams.md",
       "redirect_url": "../admin-upgrade-dataverse-teams",
-      "redirect_document_id":  "false"
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-virtual-agents/teams/admin-share-bots-teams.md",
