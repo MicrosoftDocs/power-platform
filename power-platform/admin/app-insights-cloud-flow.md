@@ -1,6 +1,6 @@
 ---
-title: Setting up Application Insights with cloud flow telemetry
-description: Description here.
+title: Set up Application Insights with cloud flow telemetry
+description: Learn about how to set up Azure Application Insights with cloud flow telemetry to create monitor cloud flows.
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
@@ -15,196 +15,158 @@ ms.contributors:
 - rakrish
 ---
 
-# Setting up Application Insights with cloud flow telemetry
+# Set up Application Insights with cloud flow telemetry
 
-You can learn more about the different Azure Application Insights features and how they could be leveraged to monitor your telemetry in [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
+Power Automate telemetry flows into two tables on Application Insights – **Requests** and **Dependencies.** All the downstream alerting and monitoring capabilities we could do on Power Automate data would be within these two tables within Application Insights.
 
-Power Automate telemetry flows into two tables on Application Insights. All the downstream alerting and monitoring capabilities in Power Automate data are in these two tables in Application Insights.
+| **Table name**   | **Description**                                         |
+|------------------|---------------------------------------------------------|
+| **Requests**     | Contains *cloud flow runs*                              |
+| **Dependencies** | Contains *cloud flow triggers* and *cloud flow actions* |
 
-- The **Requests** table contains *cloud flow runs*.
-- The **Dependencies** table contains *cloud flow triggers* and*cloud flow actions*.
+While Application Insights capabilities can be used for comprehensive monitoring of your applications, including custom diagnostics, and performance monitoring, this article focuses on how to use the existing features within Application Insights to create monitoring and alerting capabilities for your automation. To learn about how to open and work with Application Insights dashboard, see [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
 
-This section focuses on how the existing features within Application Insights could be leveraged to create monitoring and alerting capabilities for your automations.
-
-Select the Application Insights instance from the Azure portal homepage.
-
-It is recommended that you bookmark the selected Application Insights link.
+> [!TIP]
+> Consider bookmarking the selected Application Insights dashboard for fast and easy access to the insights information.
 
 ## Monitor cloud flow executions
 
-1.  Select **Metrics** from the navigation pane.
-1.  Select **Server requests** from the **Metric** filter. Adjust the time period filter in the top-right of the page, as needed.
-1.  To filter cloud flow executions for a specific environment, select **Add filter**, and then select your environment ID from the **Property** field.
-![A screenshot of a computer Description automatically generated with medium confidence](media/image2.jpeg)
+Follow these steps to monitor cloud flow executions.
 
-3.  For further filtering cloud flow executions to a specific flow or a set of flows, you simply need to add more filters. You can click on **Add filter**, and then select **Operation name** from the property field and select the flow(s) you want to monitor.
+1. From the [Application Insights dashboard](/azure/azure-monitor/app/overview-dashboard) for your instance, select **Metrics** from the left navigation menu and then select **Server requests** from the **Metric** filter. Adjust the time period filter from the top right as required.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image3.jpeg)
+    :::image type="content" source="media/app-insights-cloud-flow/metrics.png" alt-text="Metrics - Application Insights" border="true":::
 
-These Operation Name field maps to the flow identifier you see from the Power Automate portal. If you need to find the flow id of any cloud flow, select the cloud flow from the Power Automate portal and the highlighted part- alphanumeric part that follows the word *flows*.
+1. For filtering cloud flow executions to a specific environment, select **Add filter**, and then select **environmentId** from the **Property** field and select your environment.
 
-![A picture containing text  screenshot  software  web page Description automatically generated](media/image4.jpeg)
+For more filtering cloud flow executions to a specific flow or a set of flows, you add more filters. To do this, select **Add filter**, and then select **Operation name** from the property field and select the flow(s) you want to monitor.
 
-4.  Similarly, you can continue adding more filters as depending on the scenario. For the most popular scenarios, you can pin those dashboards as favorites. You can also drill into specific error or alerting directly from this screen as well
+The **Operation Name** field maps to the flow identifier you see from [Power Automate](https://make.powerautomate.com). For example, to find the flow ID of any cloud flow, select the cloud flow from the Power Automate portal and the highlighted part- alphanumeric part that follows the word *flows*.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image5.jpeg)
+:::image type="content" source="media/app-insights-cloud-flow/mapping.png" alt-text="Metrics - operation name mapping" border="true":::
 
-2. **Monitoring cloud flow triggers and actions**
+You can continue adding more filters as depending on the scenario, pin frequently reviewed scenarios, drill into specific error, or alert directly from the screen
 
-<!-- -->
+## Monitor cloud flow triggers and actions
 
-1.  Select **Metrics** from the left navigation and select **Dependency calls** from the **Metric** filter
+Follow these steps to monitor cloud flow executions.
 
-![A screen shot of a computer Description automatically generated with medium confidence](media/image6.jpeg)
+1. From the [Application Insights dashboard](/azure/azure-monitor/app/overview-dashboard) for your instance, select **Metrics** from the left navigation and select **Dependency calls** from the **Metric** filter.
 
-2.  Similar to cloud flow runs, you can filter for environment id to filter for specific environments
+1. Filter for environment ID to filter for specific environments.
 
-![A screen shot of a computer Description automatically generated with medium confidence](media/image7.jpeg)
+1. Select **Add filter** > **Signal Category** from the **Property** filter.
 
-3.  Click on **Add filter** and select **Signal Category** from the **Property** filter. Now select **Cloud flow triggers** or **Cloud flow actions** to filter for triggers and actions respectively
+1. Select **Cloud flow triggers** or **Cloud flow actions** to filter for triggers and actions respectively.
 
-![A screen shot of a computer Description automatically generated with medium confidence](media/image8.jpeg)
+    :::image type="content" source="media/app-insights-cloud-flow/triggers-actions.png" alt-text="Triggers and actions" border="true":::
 
-4.  Click on **Add filter** and select **ResourceId** to select triggers and actions for specific flows. Within the dependencies table, the column ResourceId maps to the flowId
+1. Select **Add filter** and select **ResourceId** to select triggers and actions for specific flows. Within the dependencies table, the column **ResourceId** maps to the **flowId.**
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image9.jpeg)
+1. Select **Add filter** and select **Operation Name** from the property filter to specify the names of specific actions or triggers if you want to further distill down. These filters are the same as the display names of triggers and actions of the cloud flow you would see in the Power Automate designer
 
-5.  Click on **Add filter** and select **Operation Name** from the property filter to specify the names of specific actions or triggers if you want to further distill down. These are the same as the display names of triggers and actions of the cloud flow you would see in the Power Automate designer
+You can also pin these dashboards as favorites for a quick reference.
 
-![A screenshot of a computer Description automatically generated](media/image10.jpeg)
+## Create alerts for cloud flow run failures
 
-These dashboards can also be pinned as favorites for quick reference from the same screen.
+Application Insights provides a set of robust out-of-the-box alerting capabilities that can be used for getting on automation failures.
 
-3. **Creating alerts for cloud flow run failures**
-
-AppInsights provides a set of robust out-of-the-box alerting capabilities that can be leveraged for getting on automation failures.
-
-**Cloud flow runs** are mapped to Requests table, and hence fall into **Server Requests** signal name. Therefore, any alerts that refer to **Failed requests** directly map to cloud flow run error.
+**Cloud flow runs** are mapped to **Requests** table, and fall into **Server Requests** signal name. Therefore, any alerts that refer to **Failed requests** directly map to cloud flow run error.
 
 **Cloud flow triggers** and **cloud flow actions** are mapped to the **Dependency calls** signal name. Hence, any alerts that refer to **Dependency call failures** map to action or trigger errors.
 
-To set up an alert for a cloud flow run failure, perform the following steps
+> [!NOTE]
+> For step-by-step instructions to create and edit alert rules in Application Insights, go to [Create or edit an alert rule](/azure/azure-monitor/alerts/alerts-create-new-alert-rule?tabs=metric).
 
-1.  Select **Alerts** from the left navigation and click on **Create-&gt; Alert rule**
+To set up an alert for a cloud flow run failure:
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image11.jpeg)
+1. From the [Application Insights dashboard](/azure/azure-monitor/app/overview-dashboard) for your instance, select **Alerts** from the left navigation. And then, select **Create an alert rule.**
 
-2.  Select **Dependency calls** for alerting on triggers and actions. If you want to alert on only failures, select **Dependency call failures**.
+1. Select **Dependency calls** for alerting on triggers and actions. To alert on only failures, select **Dependency call failures**.
 
-Similarly, select **Server Requests** for cloud flow runs. If you want to alert only on run failures, select **Failed requests**
+1. Select **Server Requests** for cloud flow runs. To alert only on run failures, select **Failed requests**
 
-![A screenshot of a computer Description automatically generated](media/image12.jpeg)
-
-3.  Select the threshold for monitoring errors and the frequency with which you want to check for errors.
-
-![A screenshot of a computer Description automatically generated with medium confidence](media/image13.jpeg)
+1. Select the threshold for monitoring errors and the frequency with which you want to check for errors.
 
 You can combine multiple conditions into a single alert by clicking on **Add condition** and repeating the previous step
 
-4.  If an action group is not already created, create a specific action group. You can learn more about action groups [here](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/action-groups).
+1. If an action group isn't already created, create a specific action group. More information: [Action groups](/azure/azure-monitor/alerts/action-groups)
 
-<img src="media/image14.jpg" style="width:5.15318in;height:2.56558in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+1. Enter the notification type you want to configure for this alert.
 
-5.  Specify the notification type you want to configure for this alert
+1. Enter the action you want to perform once this alert is fired. You can use a webhook to trigger a Power Automate flow to do more advanced notifications using Microsoft Teams or other communication channels enabled by the connector ecosystem.
 
-<img src="media/image15.jpg" style="width:4.85838in;height:1.76428in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
+1. Review and complete the creation of the action group.
 
-6.  Specify the action you want to perform once this alert is fired. You can use a webhook to trigger a Power Automate flow to do more advanced notifications via Teams or Slack or other communication channels enabled by the connector ecosystem.
+1. Configure the severity of the alert and provide an appropriate name
 
-![A picture containing text  screenshot  software  computer icon Description automatically generated](media/image16.jpeg)
+1. Review and finish setting up the alert.
 
-Review and finish creation of the action group
+## Creating a custom alert
 
-7.  Configure the severity of the alert and provide an appropriate name
+Out of the box alerts help you track errors at the Application Insights instance level.
 
-<img src="media/image17.jpg" style="width:4.97306in;height:3.30528in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
+When you want to restrict alerting for a specific environment, or a specific set of flows or actions, consider **Custom log search**. You can configure custom log search while [creating an alert rule](/azure/azure-monitor/alerts/alerts-create-new-alert-rule?tabs=metric) by adding a condition with the signal name of **Custom log search**.
 
-Review and finish setting up the alert
+And then, enter any custom query that you want to add. Here are some examples.
 
-4. **Creating a custom alert**
+Here are some of the sample queries you can use.
 
-Out of the box alerts help you track errors at the Appinsights instance level. But if you want to restrict the alerting for a specific environment or a specific set of flows or even a specific set of actions, you can easily do that.
+1. **Filtering for a specific cloud flow's failures**.
 
-In step **ii** of the above alert creation wizard, click on **Custom log search**
-
-![A screenshot of a computer Description automatically generated with medium confidence](media/image18.jpeg)
-
-From the next screen, provide any custom query you want to search on.
-
-Here are some of the sample queries you can leverage.
-
-1. **Filtering for a specific cloud flow's failures**. (replace the bolded values with your specific values)
-
-let myEnvironmentId = **'9bfb7347-1726-4575-9bb3-e4e7158f1b4d**';
-
-let myFlowId = **'2175bb6c-d8f8-404a-b020-191496ad941a**';
-
-requests
-
-\| where timestamp &gt; ago(**1d**)
-
-\| where customDimensions \['resourceProvider'\] == 'Cloud Flow'
-
-\| where customDimensions \['signalCategory'\] == 'Cloud flow runs'
-
-\| where customDimensions \['environmentId'\] == myEnvironmentId
-
-\| where customDimensions \['resourceId'\] == myFlowId
-
-\| where success == false
+    ```
+    let myEnvironmentId = **'Insert your environment ID here**;
+    let myFlowId = **Insert your flow ID here** ';
+    requests
+    | where timestamp &gt; ago(**1d**)
+    | where customDimensions ['resourceProvider'] == 'Cloud Flow'
+    | where customDimensions ['signalCategory'] == 'Cloud flow runs'
+    | where customDimensions ['environmentId'] == myEnvironmentId
+    | where customDimensions ['resourceId'] == myFlowId
+    | where success == false
+    ```
 
 2. **Filtering for a specific cloud trigger's failures**. (replace the bolded values with your specific values)
 
-let myEnvironmentId = **'9bfb7347-1726-4575-9bb3-e4e7158f1b4d**';
-
-let myTriggerName = **'When\_a\_new\_channel\_message\_is\_added**';
-
-dependencies
-
-\| where timestamp &gt; ago(**1d**)
-
-\| where customDimensions\['resourceProvider'\] == 'Cloud Flow'
-
-\| where customDimensions\['signalCategory'\] == 'Cloud flow triggers'
-
-\| where customDimensions\['environmentId'\] == myEnvironmentId
-
-\| where name == myTriggerName
-
-\| where success == false
+    ```
+    let myEnvironmentId = **'Insert your environment ID here**;
+    let myFlowId = **Insert your flow ID here** ';
+    dependencies
+    | where timestamp &gt; ago(**1d**)
+    | where customDimensions['resourceProvider'] == 'Cloud Flow'
+    | where customDimensions['signalCategory'] == 'Cloud flow triggers'
+    | where customDimensions['environmentId'] == myEnvironmentId
+    | where name == myTriggerName
+    | where success == false
+    ```
 
 3. **Filtering for a specific cloud action's failures**. (replace the bolded values with your specific values)
 
-let myEnvironmentId = **'9bfb7347-1726-4575-9bb3-e4e7158f1b4d**';
+    ```
+    let myEnvironmentId = **'Insert your environment ID here**;
+    let myActionName = **'Delete\_a\_row'**;
+    dependencies
+    | where timestamp &gt; ago(**1d**)
+    | where customDimensions['resourceProvider'] == 'Cloud Flow'
+    | where customDimensions['signalCategory'] == 'Cloud flow actions'
+    | where customDimensions['environmentId'] == myEnvironmentId
+    | where name == myActionName
+    | where success == false
+    ```
 
-let myActionName = **'Delete\_a\_row'**;
+You can combine multiple such custom queries into a single alert per your requirements.
 
-dependencies
+## Custom debugging of logs
 
-\| where timestamp &gt; ago(**1d**)
+Since all the raw telemetry is now flowing into Application Insights, you can use the Log Analytics in AppInsights to perform custom debugging or diagnostics per business needs.
 
-\| where customDimensions\['resourceProvider'\] == 'Cloud Flow'
+- **Cloud flow runs data** is available on the **Requests** table
+- **Cloud flow triggers and actions** data is available on the **Dependencies** table
 
-\| where customDimensions\['signalCategory'\] == 'Cloud flow actions'
+Within these tables, **Custom Dimensions** column contains most of the metadata required for detailed debugging of cloud flows – such as environment ID, flow ID and action names.
 
-\| where customDimensions\['environmentId'\] == myEnvironmentId
+### See also
 
-\| where name == myActionName
-
-\| where success == false
-
-As described in step iii from above, you can combine multiple such custom queries into a single alert per your requirements.
-
-5. **Custom debugging of logs**
-
-Since all the raw telemetry is now flowing into Application Insights, customers can leverage the Log Analytics in AppInsights to perform custom debugging or diagnostics per business needs.
-
-**Cloud flow runs data** will be available on the **Requests** table
-
-**Cloud flow triggers and actions** data will be available on the **Dependencies** table
-
-![A screenshot of a computer Description automatically generated with medium confidence](media/image19.jpeg)
-
-Within these tables, **Custom Dimensions** column contain most of the metadata required for detailed debugging of cloud flows, including environment id, flow id, action names etc
-
-You can learn more about the log analytics capabilities offered by Azure Application Insights [here](https://microsoft-my.sharepoint.com/personal/rakrish_microsoft_com/Documents/Flow/Planning/You%20can%20learn%20more%20about%20the%20log%20analytics%20capabilities%20offered%20by%20Azure%20Application%20Insights%20here.).
+- [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard)
+- [Create or edit an alert rule](/azure/azure-monitor/alerts/alerts-create-new-alert-rule?tabs=metric)
+- [Action groups](/azure/azure-monitor/alerts/action-groups)
