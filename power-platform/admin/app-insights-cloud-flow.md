@@ -118,7 +118,7 @@ Here are some of the sample queries you can use.
     let myEnvironmentId = **'Insert your environment ID here**;
     let myFlowId = **Insert your flow ID here** ';
     requests
-    | where timestamp &gt; ago(**1d**)
+    | where timestamp > ago(**1d**)
     | where customDimensions ['resourceProvider'] == 'Cloud Flow'
     | where customDimensions ['signalCategory'] == 'Cloud flow runs'
     | where customDimensions ['environmentId'] == myEnvironmentId
@@ -132,7 +132,7 @@ Here are some of the sample queries you can use.
     let myEnvironmentId = **'Insert your environment ID here**;
     let myFlowId = **Insert your flow ID here** ';
     dependencies
-    | where timestamp &gt; ago(**1d**)
+    | where timestamp > ago(**1d**)
     | where customDimensions['resourceProvider'] == 'Cloud Flow'
     | where customDimensions['signalCategory'] == 'Cloud flow triggers'
     | where customDimensions['environmentId'] == myEnvironmentId
@@ -146,7 +146,7 @@ Here are some of the sample queries you can use.
     let myEnvironmentId = **'Insert your environment ID here**;
     let myActionName = **'Delete\_a\_row'**;
     dependencies
-    | where timestamp &gt; ago(**1d**)
+    | where timestamp > ago(**1d**)
     | where customDimensions['resourceProvider'] == 'Cloud Flow'
     | where customDimensions['signalCategory'] == 'Cloud flow actions'
     | where customDimensions['environmentId'] == myEnvironmentId
@@ -158,7 +158,7 @@ You can combine multiple such custom queries into a single alert per your requir
 
 ## Custom debugging of logs
 
-Since all the raw telemetry is now flowing into Application Insights, you can use the Log Analytics in AppInsights to perform custom debugging or diagnostics per business needs.
+Since all the raw telemetry is now flowing into Application Insights, you can use the [Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) in Application Insights to perform custom debugging or diagnostics per business needs.
 
 - **Cloud flow runs data** is available on the **Requests** table
 - **Cloud flow triggers and actions** data is available on the **Dependencies** table
