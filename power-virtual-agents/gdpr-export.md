@@ -1,7 +1,7 @@
 ---
-title: "Responding to GDPR Data Subject Export Requests"
-description: "Learn how to respond to GDPR Data Subject Export Requests for Power Virtual Agents."
-ms.date: 03/24/2023
+title: "Export data to respond to requests for copies of personal data"
+description: "Export data to respond to requests for copies of personal data in Power Virtual Agents."
+ms.date: 07/28/2023
 
 ms.topic: article
 author: iaanw

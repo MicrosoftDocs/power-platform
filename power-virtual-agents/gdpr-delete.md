@@ -1,19 +1,19 @@
 ---
-title: "Responding to GDPR Data Subject Delete Requests"
-description: "Respond to GDPR Data Subject Delete Requests for Power Virtual Agents."
-keywords: "PVA, GDPR, delete data"
-ms.date: 03/24/2023
+title: "Responding to personal data delete requests from data subjects"
+description: "Respond to personal data delete equests for Power Virtual Agents."
+keywords: "PVA, delete data"
+ms.date: 07/28/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-ms.custom: ceX, gdpr
+ms.custom: ceX
 manager: leeclontz
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Responding to requests to delete data from Power Virtual Agents
+# Responding to personal data delete requests from data subjects
 
 This topic discusses the experiences that Power Virtual Agents offers when deleting personal data for a specific user.
 
