@@ -1,6 +1,6 @@
 ---
-title: Trace function in Power Apps
-description: Reference information including syntax and examples for the Trace function in Power Apps.
+title: Trace function
+description: Reference information including syntax and examples for the Trace function.
 author: mduelae
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Trace function in Power Apps
+# Trace function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Often there is a lot of logic working behind the scenes in an app. Sometimes the impact is obvious, for example a control's value or color changes, confirming the logic operated correctly. However, sometimes it isn't obvious and it can be difficult to visualize and understand what is happening inside the app. Use the **Trace** function to record diagnostic information from behind the scenes, creating a timeline of what actually happened, to better understand how your app is operating and to help debug issues.
 

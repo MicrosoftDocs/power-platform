@@ -1,6 +1,6 @@
 ---
-title: Split function in Power Apps
-description: Reference information including syntax and examples for the Split function in Power Apps.
+title: Split function
+description: Reference information including syntax and examples for the Split function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Split function in Power Apps
+# Split function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Splits a text string into a table of substrings.
 

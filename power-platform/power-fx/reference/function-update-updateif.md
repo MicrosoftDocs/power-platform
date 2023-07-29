@@ -1,6 +1,6 @@
 ---
-title: Update and UpdateIf functions in Power Apps
-description: Reference information including syntax and examples for the Update and UpdateIf functions in Power Apps.
+title: Update and UpdateIf functions
+description: Reference information including syntax and examples for the Update and UpdateIf functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Update and UpdateIf functions in Power Apps
+# Update and UpdateIf functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Updates [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 

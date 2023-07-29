@@ -1,6 +1,6 @@
 ---
-title: Value function in Power Apps
-description: Reference information including syntax and examples for the Value function in Power Apps.
+title: Value function
+description: Reference information including syntax and examples for the Value function.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -14,7 +14,9 @@ contributors:
   - jorisdg
 ---
 
-# Value function in Power Apps
+# Value function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Converts a string of text to a number.
 

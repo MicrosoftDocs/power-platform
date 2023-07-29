@@ -1,6 +1,6 @@
 ---
-title: UpdateContext function in Power Apps
-description: Reference information including syntax and examples for the UpdateContext function in Power Apps.
+title: UpdateContext function
+description: Reference information including syntax and examples for the UpdateContext function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# UpdateContext function in Power Apps
+# UpdateContext function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Creates or updates [context variables](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable) of the current screen.
 

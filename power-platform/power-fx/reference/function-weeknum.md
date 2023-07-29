@@ -1,6 +1,6 @@
 ---
-title: WeekNum and ISOWeekNum functions in Power Apps
-description: Reference information including syntax and examples for the WeekNum and ISOWeekNum functions in Power Apps.
+title: WeekNum and ISOWeekNum functions
+description: Reference information including syntax and examples for the WeekNum and ISOWeekNum functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -15,7 +15,9 @@ contributors:
   - mduelae
   - jorisdg
 ---
-# WeekNum and ISOWeekNum functions in Power Apps
+# WeekNum and ISOWeekNum functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Returns the week number of a specific date. 
 

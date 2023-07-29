@@ -1,6 +1,6 @@
 ---
-title: Table function in Power Apps
-description: Reference information including syntax and examples for the Table function in Power Apps.
+title: Table function
+description: Reference information including syntax and examples for the Table function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Table function in Power Apps
+# Table function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
 
 Creates a temporary [table](/power-apps/maker/canvas-apps/working-with-tables).
 
