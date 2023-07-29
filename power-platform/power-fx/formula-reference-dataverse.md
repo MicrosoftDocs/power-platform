@@ -24,186 +24,186 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 :::row:::
    :::column span="":::
-      [Abs](../canvas-apps/functions/function-numericals.md)
+      [Abs](reference/function-numericals.md)
    :::column-end:::
    :::column span="":::
-      [And](../canvas-apps/functions/function-logicals.md)
+      [And](reference/function-logicals.md)
    :::column-end:::
    :::column span="":::
-      [Average](../canvas-apps/functions/function-aggregates.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Blank](../canvas-apps/functions/function-isblank-isempty.md)
-   :::column-end:::
-   :::column span="":::
-      [Char](../canvas-apps/functions/function-char.md)
-   :::column-end:::
-   :::column span="":::
-      [Concatenate](../canvas-apps/functions/function-concatenate.md)
+      [Average](reference/function-aggregates.md)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [DateAdd](../canvas-apps/functions/function-dateadd-datediff.md)
+      [Blank](reference/function-isblank-isempty.md)
    :::column-end:::
    :::column span="":::
-      [DateDiff](../canvas-apps/functions/function-dateadd-datediff.md)
+      [Char](reference/function-char.md)
    :::column-end:::
    :::column span="":::
-      [Day](../canvas-apps/functions/function-datetime-parts.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [EndsWith](../canvas-apps/functions/function-startswith.md)
-   :::column-end:::
-   :::column span="":::
-      [Value](../canvas-apps/functions/function-value.md)
-   :::column-end:::
-   :::column span="":::
-      [Hour](../canvas-apps/functions/function-datetime-parts.md)
+      [Concatenate](reference/function-concatenate.md)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [If](../canvas-apps/functions/function-if.md)
+      [DateAdd](reference/function-dateadd-datediff.md)
    :::column-end:::
    :::column span="":::
-      [IfError](../canvas-apps/functions/function-iferror.md)
+      [DateDiff](reference/function-dateadd-datediff.md)
    :::column-end:::
    :::column span="":::
-      [Int](../canvas-apps/functions/function-round.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [IsBlank](../canvas-apps/functions/function-isblank-isempty.md)
-   :::column-end:::
-   :::column span="":::
-      [IsError](../canvas-apps/functions/function-iferror.md)
-   :::column-end:::
-   :::column span="":::
-      [ISOWeekNum](../canvas-apps/functions/function-weeknum.md)
+      [Day](reference/function-datetime-parts.md)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [IsUTCToday](../canvas-apps/functions/function-now-today-istoday.md)
+      [EndsWith](reference/function-startswith.md)
    :::column-end:::
    :::column span="":::
-      [Left](../canvas-apps/functions/function-left-mid-right.md)
+      [Value](reference/function-value.md)
    :::column-end:::
    :::column span="":::
-      [Len](../canvas-apps/functions/function-len.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Year](../canvas-apps/functions/function-datetime-parts.md)
-   :::column-end:::
-   :::column span="":::
-      [Lower](../canvas-apps/functions/function-lower-upper-proper.md)
-   :::column-end:::
-   :::column span="":::
-      [Max](../canvas-apps/functions/function-aggregates.md)
+      [Hour](reference/function-datetime-parts.md)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Mid](../canvas-apps/functions/function-left-mid-right.md)
+      [If](reference/function-if.md)
    :::column-end:::
    :::column span="":::
-      [Min](../canvas-apps/functions/function-aggregates.md)
+      [IfError](reference/function-iferror.md)
    :::column-end:::
    :::column span="":::
-      [Minute](../canvas-apps/functions/function-datetime-parts.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Mod](../canvas-apps/functions/function-mod.md)
-   :::column-end:::
-   :::column span="":::
-      [Month](../canvas-apps/functions/function-datetime-parts.md)
-   :::column-end:::
-   :::column span="":::
-      [Not](../canvas-apps/functions/function-logicals.md)
+      [Int](reference/function-round.md)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Or](../canvas-apps/functions/function-logicals.md)
+      [IsBlank](reference/function-isblank-isempty.md)
    :::column-end:::
    :::column span="":::
-      [WeekNum](../canvas-apps/functions/function-weeknum.md)
+      [IsError](reference/function-iferror.md)
    :::column-end:::
    :::column span="":::
-      [Replace](../canvas-apps/functions/function-replace-substitute.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Right](../canvas-apps/functions/function-left-mid-right.md)
-   :::column-end:::
-   :::column span="":::
-      [Round](../canvas-apps/functions/function-round.md)
-   :::column-end:::
-   :::column span="":::
-      [RoundDown](../canvas-apps/functions/function-round.md)
+      [ISOWeekNum](reference/function-weeknum.md)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [RoundUp](../canvas-apps/functions/function-round.md)
+      [IsUTCToday](reference/function-now-today-istoday.md)
    :::column-end:::
    :::column span="":::
-      [Second](../canvas-apps/functions/function-datetime-parts.md)
+      [Left](reference/function-left-mid-right.md)
    :::column-end:::
    :::column span="":::
-      [Weekday](../canvas-apps/functions/function-datetime-parts.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [StartsWith](../canvas-apps/functions/function-startswith.md)
-   :::column-end:::
-   :::column span="":::
-      [Substitute](../canvas-apps/functions/function-replace-substitute.md)
-   :::column-end:::
-   :::column span="":::
-      [Sum](../canvas-apps/functions/function-aggregates.md)
+      [Len](reference/function-len.md)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Switch](../canvas-apps/functions/function-if.md)
+      [Year](reference/function-datetime-parts.md)
    :::column-end:::
    :::column span="":::
-      [Text](../canvas-apps/functions/function-text.md)
+      [Lower](reference/function-lower-upper-proper.md)
    :::column-end:::
    :::column span="":::
-      [Trim](../canvas-apps/functions/function-trim.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Trunc](../canvas-apps/functions/function-round.md)
-   :::column-end:::
-   :::column span="":::
-      [TrimEnds](../canvas-apps/functions/function-trim.md)
-   :::column-end:::
-   :::column span="":::
-      [Upper](../canvas-apps/functions/function-lower-upper-proper.md)
+      [Max](reference/function-aggregates.md)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [UTCNow](../canvas-apps/functions/function-now-today-istoday.md)
+      [Mid](reference/function-left-mid-right.md)
    :::column-end:::
    :::column span="":::
-      [UTCToday](../canvas-apps/functions/function-now-today-istoday.md)
+      [Min](reference/function-aggregates.md)
+   :::column-end:::
+   :::column span="":::
+      [Minute](reference/function-datetime-parts.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Mod](reference/function-mod.md)
+   :::column-end:::
+   :::column span="":::
+      [Month](reference/function-datetime-parts.md)
+   :::column-end:::
+   :::column span="":::
+      [Not](reference/function-logicals.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Or](reference/function-logicals.md)
+   :::column-end:::
+   :::column span="":::
+      [WeekNum](reference/function-weeknum.md)
+   :::column-end:::
+   :::column span="":::
+      [Replace](reference/function-replace-substitute.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Right](reference/function-left-mid-right.md)
+   :::column-end:::
+   :::column span="":::
+      [Round](reference/function-round.md)
+   :::column-end:::
+   :::column span="":::
+      [RoundDown](reference/function-round.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [RoundUp](reference/function-round.md)
+   :::column-end:::
+   :::column span="":::
+      [Second](reference/function-datetime-parts.md)
+   :::column-end:::
+   :::column span="":::
+      [Weekday](reference/function-datetime-parts.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [StartsWith](reference/function-startswith.md)
+   :::column-end:::
+   :::column span="":::
+      [Substitute](reference/function-replace-substitute.md)
+   :::column-end:::
+   :::column span="":::
+      [Sum](reference/function-aggregates.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Switch](reference/function-if.md)
+   :::column-end:::
+   :::column span="":::
+      [Text](reference/function-text.md)
+   :::column-end:::
+   :::column span="":::
+      [Trim](reference/function-trim.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Trunc](reference/function-round.md)
+   :::column-end:::
+   :::column span="":::
+      [TrimEnds](reference/function-trim.md)
+   :::column-end:::
+   :::column span="":::
+      [Upper](reference/function-lower-upper-proper.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [UTCNow](reference/function-now-today-istoday.md)
+   :::column-end:::
+   :::column span="":::
+      [UTCToday](reference/function-now-today-istoday.md)
    :::column-end:::
    :::column span="":::
 
