@@ -19,7 +19,7 @@ contributors:
 
 # Lower, Upper, and Proper functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md) :::image type="icon" source="media/yes-icon.svg" border="false"::: [Dataverse](../formula-reference-dataverse.md)
 
 Converts letters in a string of text to all lowercase, all uppercase, or proper case.
 

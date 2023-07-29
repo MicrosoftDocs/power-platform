@@ -1,4 +1,4 @@
----
+ :::image type="icon" source="media/yes-icon.svg" border="false"::: [Dataverse](../formula-reference-dataverse.md)---
 title: Text function
 description: Reference information including syntax and examples for the Text function.
 author: gregli-msft
@@ -16,7 +16,7 @@ contributors:
 
 # Text function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md) :::image type="icon" source="media/yes-icon.svg" border="false"::: [Dataverse](../formula-reference-dataverse.md)
 
 Converts any value and formats a number or date/time value to a string of text.
 

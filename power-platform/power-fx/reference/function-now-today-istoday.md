@@ -19,7 +19,7 @@ contributors:
 
 # Now, Today, IsToday, UTCNow, UTCToday, IsUTCToday functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md)
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md) :::image type="icon" source="media/yes-icon.svg" border="false"::: [Dataverse](../formula-reference-dataverse.md)
 
 Returns the current date and time, and tests whether a date/time value is today.
 
