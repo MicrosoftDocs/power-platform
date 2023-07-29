@@ -26,8 +26,16 @@
           href: working-with-json.md
         - name: Formula reference
           items:
-          - name: Overview
+          - name: All functions
             href: formula-reference.md
+          - name: Functions by product or service
+            items:
+            - name: All Dataverse functions
+              href: formula-reference-dataverse.md
+            - name: All Power Apps functions
+              href: formula-reference-power-apps.md
+            - name: All Power Virtual Agents functions
+              href: formula-reference-pva.md
           - name: Abs
             href: reference/function-numericals.md
           - name: Acceleration
