@@ -1,4 +1,4 @@
- :::image type="icon" source="media/yes-icon.svg" border="false"::: [Dataverse](../formula-reference-dataverse.md)---
+---
 title: Text function
 description: Reference information including syntax and examples for the Text function.
 author: gregli-msft

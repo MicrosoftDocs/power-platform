@@ -248,4 +248,3 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 **[Year](reference/function-datetime-parts.md?tabs=power-apps)** - Retrieves the year portion of a date/time value.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md?tabs=power-apps)** - ]
