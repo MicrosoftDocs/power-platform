@@ -1,6 +1,6 @@
 ---
 title: All Power Apps functions
-description: Reference information for functions, signals, and enumerations in Power Apps.
+description: Reference information for all functions in Power Apps.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -461,4 +461,4 @@ In this article, learn about all the functions available in Power Apps.
 
 **[Year](reference/function-datetime-parts.md?tabs=power-apps)** – Retrieves the year portion of a date/time value.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md?tabs=power-apps)]
+

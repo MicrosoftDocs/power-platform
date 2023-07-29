@@ -89,7 +89,7 @@ or:
 
 The walk through that follows does exactly these operations on these tables using an app with **Gallery** and **Combo box** controls for selecting the records involved.
 
-These examples depend on the sample data being installed in your environment. Either [create a trial environment including sample data](/power-apps/maker/model-driven-apps/overview-model-driven-samples.md#get-sample-apps) or [add sample data to an existing environment](/power-apps/maker/model-driven-apps/overview-model-driven-samples#install-or-uninstall-sample-data).
+These examples depend on the sample data being installed in your environment. Either [create a trial environment including sample data](/power-apps/maker/model-driven-apps/overview-model-driven-samples#get-sample-apps) or [add sample data to an existing environment](/power-apps/maker/model-driven-apps/overview-model-driven-samples#install-or-uninstall-sample-data).
 
 ### One-to-many
 

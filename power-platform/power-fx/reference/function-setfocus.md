@@ -45,7 +45,7 @@ The control with focus may be visually different based on the [**FocusedBorderCo
 - [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control
 - [**TextInput**](/power-apps/maker/canvas-apps/controls/control-text-input) control
 
-You cannot set the focus to controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery.md) control, [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, or [Component](/power-apps/maker/canvas-apps/create-component). **SetFocus** can be used with a control in a scrollbale screen.
+You cannot set the focus to controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) control, [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, or [Component](/power-apps/maker/canvas-apps/create-component). **SetFocus** can be used with a control in a scrollbale screen.
 
 You cannot set the focus to controls that are within a [**Container**](/power-apps/maker/canvas-apps/controls/control-container) control.
 

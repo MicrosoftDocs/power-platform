@@ -17,9 +17,9 @@ contributors:
   - jorisdg
 ---
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md) :::image type="icon" source="media/yes-icon.svg" border="false"::: [Dataverse](../formula-reference-dataverse.md)
-
 # Average, Max, Min, StdevP, Sum, and VarP functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md) :::image type="icon" source="media/yes-icon.svg" border="false"::: [Dataverse](../formula-reference-dataverse.md)
 
 Aggregate functions that summarize a set of numbers.
 
