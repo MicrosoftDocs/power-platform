@@ -16,6 +16,8 @@ contributors:
 ---
 # App object in Power Apps
 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md) :::image type="icon" source="media/yes-icon.svg" border="false"::: [Dataverse](../formula-reference-dataverse.md)
+
 Provides information about the currently running app and control over the app's behavior.
 
 ## Description

@@ -18,6 +18,8 @@ contributors:
 
 # Operators and Identifiers in Power Apps
 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [Power Apps](../formula-reference-power-apps.md) :::image type="icon" source="media/yes-icon.svg" border="false"::: [Dataverse](../formula-reference-dataverse.md)
+
 Some of these operators are dependent on the language of the author. For more information about language support in canvas apps, see [Global apps](/power-apps/maker/canvas-apps/global-apps).
 
 | Symbol                                                                        | Type                                                        | Example                                                                                          | Description                                                                                                                                                                                                                                                                                              |
