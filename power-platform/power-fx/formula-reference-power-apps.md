@@ -20,8 +20,6 @@ contributors:
 
 In this article, learn about all the functions available in Power Apps.
 
-## Functions available in Power Apps
-
 ## <a id="-a"></a> A
 
 **[Abs](reference/function-numericals.md?tabs=power-apps)** – Absolute value of a number.

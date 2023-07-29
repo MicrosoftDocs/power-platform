@@ -20,194 +20,140 @@ contributors:
 
 In this article, learn about all the functions available in Microsoft Dataverse.
 
-## Functions available in Dataverse
+## <a id="-a"></a> A
 
-:::row:::
-   :::column span="":::
-      [Abs](reference/function-numericals.md)
-   :::column-end:::
-   :::column span="":::
-      [And](reference/function-logicals.md)
-   :::column-end:::
-   :::column span="":::
-      [Average](reference/function-aggregates.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Blank](reference/function-isblank-isempty.md)
-   :::column-end:::
-   :::column span="":::
-      [Char](reference/function-char.md)
-   :::column-end:::
-   :::column span="":::
-      [Concatenate](reference/function-concatenate.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [DateAdd](reference/function-dateadd-datediff.md)
-   :::column-end:::
-   :::column span="":::
-      [DateDiff](reference/function-dateadd-datediff.md)
-   :::column-end:::
-   :::column span="":::
-      [Day](reference/function-datetime-parts.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [EndsWith](reference/function-startswith.md)
-   :::column-end:::
-   :::column span="":::
-      [Value](reference/function-value.md)
-   :::column-end:::
-   :::column span="":::
-      [Hour](reference/function-datetime-parts.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [If](reference/function-if.md)
-   :::column-end:::
-   :::column span="":::
-      [IfError](reference/function-iferror.md)
-   :::column-end:::
-   :::column span="":::
-      [Int](reference/function-round.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [IsBlank](reference/function-isblank-isempty.md)
-   :::column-end:::
-   :::column span="":::
-      [IsError](reference/function-iferror.md)
-   :::column-end:::
-   :::column span="":::
-      [ISOWeekNum](reference/function-weeknum.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [IsUTCToday](reference/function-now-today-istoday.md)
-   :::column-end:::
-   :::column span="":::
-      [Left](reference/function-left-mid-right.md)
-   :::column-end:::
-   :::column span="":::
-      [Len](reference/function-len.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Year](reference/function-datetime-parts.md)
-   :::column-end:::
-   :::column span="":::
-      [Lower](reference/function-lower-upper-proper.md)
-   :::column-end:::
-   :::column span="":::
-      [Max](reference/function-aggregates.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Mid](reference/function-left-mid-right.md)
-   :::column-end:::
-   :::column span="":::
-      [Min](reference/function-aggregates.md)
-   :::column-end:::
-   :::column span="":::
-      [Minute](reference/function-datetime-parts.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Mod](reference/function-mod.md)
-   :::column-end:::
-   :::column span="":::
-      [Month](reference/function-datetime-parts.md)
-   :::column-end:::
-   :::column span="":::
-      [Not](reference/function-logicals.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Or](reference/function-logicals.md)
-   :::column-end:::
-   :::column span="":::
-      [WeekNum](reference/function-weeknum.md)
-   :::column-end:::
-   :::column span="":::
-      [Replace](reference/function-replace-substitute.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Right](reference/function-left-mid-right.md)
-   :::column-end:::
-   :::column span="":::
-      [Round](reference/function-round.md)
-   :::column-end:::
-   :::column span="":::
-      [RoundDown](reference/function-round.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [RoundUp](reference/function-round.md)
-   :::column-end:::
-   :::column span="":::
-      [Second](reference/function-datetime-parts.md)
-   :::column-end:::
-   :::column span="":::
-      [Weekday](reference/function-datetime-parts.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [StartsWith](reference/function-startswith.md)
-   :::column-end:::
-   :::column span="":::
-      [Substitute](reference/function-replace-substitute.md)
-   :::column-end:::
-   :::column span="":::
-      [Sum](reference/function-aggregates.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Switch](reference/function-if.md)
-   :::column-end:::
-   :::column span="":::
-      [Text](reference/function-text.md)
-   :::column-end:::
-   :::column span="":::
-      [Trim](reference/function-trim.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Trunc](reference/function-round.md)
-   :::column-end:::
-   :::column span="":::
-      [TrimEnds](reference/function-trim.md)
-   :::column-end:::
-   :::column span="":::
-      [Upper](reference/function-lower-upper-proper.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [UTCNow](reference/function-now-today-istoday.md)
-   :::column-end:::
-   :::column span="":::
-      [UTCToday](reference/function-now-today-istoday.md)
-   :::column-end:::
-   :::column span="":::
+**[Abs](reference/function-numericals.md)** - Absolute value of a number.
 
-   :::column-end:::
-:::row-end:::
+**[And](reference/function-logicals.md)** - Boolean logic AND. Returns true if all arguments are true. You can also use the [&& operator](reference/operators.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+**[Average](reference/function-aggregates.md)** - Calculates the average of a table expression or a set of arguments.
+
+## B
+
+**[Blank](reference/function-isblank-isempty.md)** - Returns a *blank* value that can be used to insert a NULL value in a data source.
+
+## C
+
+**[Char](reference/function-char.md)** - Translates a character code into a string.
+
+**[Concatenate](reference/function-concatenate.md)** - Concatenates strings.
+
+## D
+
+**[DateAdd](reference/function-dateadd-datediff.md)** - Adds days, months, quarters, or years to a date/time value.
+
+**[DateDiff](reference/function-dateadd-datediff.md)** - Subtracts two date values, and shows the result in days, months, quarters, or years.
+
+**[Day](reference/function-datetime-parts.md)** - Retrieves the day portion of a date/time value.
+
+## E
+
+**[EndsWith](reference/function-startswith.md)** - Checks whether a text string ends with another text string.
+
+## H
+
+**[Hour](reference/function-datetime-parts.md)** - Returns the hour portion of a date/time value.
+
+## I
+
+**[If](reference/function-if.md)** - Returns one value if a condition is true and another value if not.
+
+**[IfError](reference/function-iferror.md)** - Detects errors and provides an alternative value or takes action.
+
+**[Int](reference/function-round.md)** - Rounds down to the nearest integer.
+
+**[IsBlank](reference/function-isblank-isempty.md)** - Checks for a [blank](reference/function-isblank-isempty.md) value.
+
+**[IsError](reference/function-iferror.md)** - Checks for an error.
+
+**[ISOWeekNum](reference/function-weeknum.md)** - Returns the ISO week number of a date/time value.
+
+**[IsUTCToday](reference/function-now-today-istoday.md)** - Checks whether a date/time value is sometime today in Coordinated Universal Time (UTC).
+
+## L
+
+**[Left](reference/function-left-mid-right.md)** - Returns the left-most portion of a string.
+
+**[Len](reference/function-len.md)** - Returns the length of a string.
+
+**[Lower](reference/function-lower-upper-proper.md)** - Converts letters in a string of text to all lowercase.
+
+## M
+
+**[Max](reference/function-aggregates.md)** - Maximum value of a table expression or a set of arguments.
+
+**[Mid](reference/function-left-mid-right.md)** - Returns the middle portion of a string.
+
+**[Min](reference/function-aggregates.md)** - Minimum value of a table expression or a set of arguments.
+
+**[Minute](reference/function-datetime-parts.md)** - Retrieves the minute portion of a date/time value.
+
+**[Mod](reference/function-mod.md)** - Returns the remainder after a dividend is divided by a divisor.
+
+**[Month](reference/function-datetime-parts.md)** - Retrieves the month portion of a date/time value.
+
+## N
+
+**[Not](reference/function-logicals.md)** - Boolean logic NOT. Returns true if its argument is false, and returns false if its argument is true. You can also use the [! operator](reference/operators.md).
+
+## O
+
+**[Or](reference/function-logicals.md)** - Boolean logic OR. Returns true if any of its arguments are true. You can also use the [|| operator](reference/operators.md).
+
+## R
+
+**[Replace](reference/function-replace-substitute.md)** - Replaces part of a string with another string, by starting position of the string.
+
+**[Right](reference/function-left-mid-right.md)** - Returns the right-most portion of a string.
+
+**[Round](reference/function-round.md)** - Rounds to the closest number.
+
+**[RoundDown](reference/function-round.md)** - Rounds down to the largest previous number.
+
+**[RoundUp](reference/function-round.md)** - Rounds up to the smallest next number.
+
+## S
+
+**[Second](reference/function-datetime-parts.md)** - Retrieves the second portion of a date/time value.
+
+**[StartsWith](reference/function-startswith.md)** - Checks if a text string begins with another text string.
+
+**[Substitute](reference/function-replace-substitute.md)** - Replaces part of a string with another string, by matching strings.
+
+**[Sum](reference/function-aggregates.md)** - Calculates the sum of a table expression or a set of arguments.
+
+**[Switch](reference/function-if.md)** - Matches with a set of values and then evaluates a corresponding formula.
+
+## T
+
+**[Text](reference/function-text.md)** - Converts any value and formats a number or date/time value to a string of text.
+
+**[Trim](reference/function-trim.md)** - Removes extra spaces from the ends and interior of a string of text.
+
+**[Trunc](reference/function-round.md)** - Truncates the number to only the integer portion by removing any decimal portion.
+
+**[TrimEnds](reference/function-trim.md)** - Removes extra spaces from the ends of a string of text only.
+
+## U
+
+**[Upper](reference/function-lower-upper-proper.md)** - Converts letters in a string of text to all uppercase.
+
+**[UTCNow](reference/function-now-today-istoday.md)** - Returns the current date/time value in Coordinated Universal Time (UTC).
+
+**[UTCToday](reference/function-now-today-istoday.md)** - Returns the current date-only value in Coordinated Universal Time (UTC).
+
+## V
+
+**[Value](reference/function-value.md)** - Converts a string to a number.
+
+## W
+
+**[Weekday](reference/function-datetime-parts.md)** - Retrieves the weekday portion of a date/time value.
+
+**[WeekNum](reference/function-weeknum.md)** - Returns the week number of a date/time value.
+
+## Y
+
+**[Year](reference/function-datetime-parts.md)** - Retrieves the year portion of a date/time value.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)** - ]
