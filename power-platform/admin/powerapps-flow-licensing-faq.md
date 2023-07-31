@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs| Microsoft Docs
 description: FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: conceptual
-ms.date: 07/28/2023
+ms.date: 07/31/2023
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -20,6 +20,10 @@ For more details about Microsoft Power Platform licensing, download the [Licens
 ## Power Platform product licensing
 
 This section provides answers to Power Platform products in general.
+
+### What are the new Power Platform offers that launched on August 1, 2023?
+
+This new Power Platform simplified portfolio of offers is generally available August 1, 2023. Here is an overview of the offers.
 
 ### What are the self-service purchase options for the Power Platform products?
 
@@ -50,10 +54,6 @@ API capacity is tracked based on consumption at an individual, user level, and t
 API limits are also applicable to application users, non-interactive users, and administrative users in Dataverse.
 
 More information is available in [Requests limits and allocations](api-request-limits-allocations.md).
-
-### What are the new Power Platform offers that launched on August 1, 2023?
-
-This new Power Platform simplified portfolio of offers is generally available August 1, 2023. Here is an overview of the offers.
 
 ## Power Apps
 
