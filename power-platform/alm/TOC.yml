@@ -166,5 +166,5 @@
       items:
       - name: Overview
         href: ../responsible-ai-overview.md
-      - name:  Copilot to generate deployment notes in pipelines form-alm-faq.yml
+      - name:  Copilot to generate deployment notes in pipelines FAQ
         href: faqs-AI-deployment-notes-pipelines.md
