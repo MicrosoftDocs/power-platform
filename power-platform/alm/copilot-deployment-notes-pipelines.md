@@ -36,7 +36,7 @@ Solutions can become complex, often containing dozens of components that are dif
 - One or more pipelines must already be created and associated with the environment that's used for development.
 - You must have access to run a pipeline. More information: [Grant access to edit or run pipelines](set-up-pipelines.md#grant-access-to-edit-or-run-pipelines)
 - Your pipeline, and all of its linked environments, must be in the **United States** region to participate in this preview.
-- The setting for "AI deployment notes" must be set to **Enabled** in the **Deployment Pipeline Configuration** app for each pipeline you want to preview this feature with.
+- The setting for **AI deployment notes** must be set to **Enabled** in the **Deployment Pipeline Configuration** app for each pipeline you want to preview this feature with.
 
 ## Disable AI-generated deployment notes
 
