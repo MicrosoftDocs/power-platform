@@ -22,7 +22,7 @@ Power Platform admins can purchase licenses for Power Automate and then manage t
 You can purchase Power Automate plans from [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 1. Sign in to the Microsoft 365 admin center.
-1. Go to **Billing** > **Purchase services**, and then search for "Power Automate" to find all relevant plans.
+1. Go to **Marketplace** > **All products**, and then search for "Power Automate" to find all relevant plans.
 1. Select the plan that you want to buy.
 
    ![Purchase services by selecting a plan](../media/power-automate-licensing/select-plan.png)
@@ -31,25 +31,22 @@ You can purchase Power Automate plans from [Microsoft 365 admin center](https://
 
    ![Image showing the detail for the plan selected](../media/power-automate-licensing/selected-plan.png)
 
-### Buy Unattended RPA  add-on
+### Buy Hosted RPA add-on
 
-You can purchase the **Power Automate unattended RPA add-on** from the [Microsoft 365 admin center](https://admin.microsoft.com/).
+You can purchase the **Power Automate hosted RPA add-on** from the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 1. Sign in to the Microsoft 365 admin center.
-1. Go to **Billing** > **Purchase services**, and then search for "Power Automate" to find all relevant plans.
-1. Search for the **Power Automate unattended RPA Trial add-on**.
+1. Go to **Marketplace** > **All products**, and then search for "Power Automate" to find all relevant plans.
+1. Search for the **Power Automate Premium**.
 
-   ![An image that displays the Power Automate unattended RPA Trial add-on](../media/power-automate-licensing/unattended-trial-add-on.png)
+   ![An image that displays the Power Automate Premium](../media/power-automate-licensing/select-plan.png)
 
-1. Select **Details** on the **Power Automate unattended RPA Trial add-on** plan, and then select **Add-ons**.
-
-   ![Image that displays the add-ons button](../media/power-automate-licensing/add-ons.png)
-
-1. Find the **Power Automate unattended RPA add-on Trial** and buy it.
+1. Select **Details** on the **Power Automate Premim** plan, and then select **Add-ons**.
+1. Find the **Power Automate hosted RPA Trial** and buy it.
 
    ![Power Automate unattended RPA add-on Trial add on](../media/power-automate-licensing/add-ons-details.png)
 
-After the purchase completes, the environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+After the purchase completes, the environment admin must assign the available (paid or trial) hosted RPA add-on capacities to a specific environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 ## Manage licenses
 
