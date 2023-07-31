@@ -47,9 +47,9 @@ You need process license if your flow meets one of the following criteria:
   or
 - Your flows process large data or need to run frequently data thereby needing high volume of Power platform requests.
   or
--  Your premium flow provides is invoked by multiple users. In this case, either everyone needs a premium license or the flow needs a process license. If a flow has a process license, it doesn't require any user to have a license. It provides an organization with the flexibility to pay for licenses based on the number of flows. Larger organizations or solutions that affect many people, can benefit from the fixed monthly cost.
+-  Your premium flow is invoked by multiple users. In this case, either everyone needs a premium license or the flow needs a process license. If a flow has a process license, it doesn't require any user to have a license. It provides an organization with the flexibility to pay for licenses based on the number of flows. Larger organizations or solutions that affect many people, can benefit from the fixed monthly cost.
   or
-- Your Flow uses premium connectors, and  your organization has many guest users using the flow, but you don't know if the guest users' home tenant provides them with premium licenses.
+- Your flow uses premium connectors, and your organization has many guest users using the flow, but you don't know if the guest users' home tenant provides them with premium licenses.
 
 ### How many process licenses do i need?
 
@@ -61,12 +61,15 @@ You need process license if your flow meets one of the following criteria:
     Purchase one process for every core business process. Some examples of core business processes are invoice processing, HR onboarding etc. All cloud flows related to the same business process are included in the license. 
 
 ### My process has multiple flows. Will i need multiple process licenses?
-No. You only need one process license. This encourages microservices architecture best practices where flows can be small with fine grained functionality resulting in better maintainability. 
+
+Core business processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they are all handling an invoice through multiple steps to closure. You only need one process license for a core business process. This encourages microservices architecture best practices where flows can be small with fine grained functionality resulting in better maintainability. 
 
 Identify the flow that starts the process and assign the process license to that flow. Tag all the flows as in context of the flow with process license. The flows must be in same solution and be using the same data sources. The flows organized as parent, child flows, in context flows are all treated as one process with one process license assigned to the main flow. 
 
+Note: Ability to tag flows as in-context to a flow is coming soon in Power Automate maker portal.
+
 ### My solution has multiple processes. Do i need multiple process licenses?
-Yes. All flows of a process must be in same solution and a solution can have multiple processes with process license assigned to each of them. 
+Yes. All flows of a process must be in same solution and a solution can have multiple processes with a process license assigned to each of them. 
 
 ### Who needs to purchase a premium license?
 
