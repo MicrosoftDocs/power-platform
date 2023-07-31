@@ -35,21 +35,31 @@ The easiest way to get finance and operations apps up and running in Power Platf
 
 ### Before you begin
 
-You cannot deploy finance and operations apps in Power Platform unless you have a license assigned that grants this permission.  An example license is Dynamics 365 Finance or Dynamics 365 Supply Chain Management for customers, and Dynamics 365 Operations Application Partner Sandbox for partners and ISVs.  This must be assigned by your license administrator to your user account in Microsoft Entra (formerly known as Azure Active Directory).
+You cannot deploy finance and operations apps in Power Platform unless you have a license assigned that grants this permission.  An example license is Dynamics 365 Finance or Dynamics 365 Supply Chain Management for customers, and Dynamics 365 Operations Application Partner Sandbox for partners and ISVs.  This must be assigned by your license administrator to your user account in Microsoft Entra (formerly known as Azure Active Directory).  You can review the licenses currently assigned to you under the Subscription table on the [MyAccount](https://portal.office.com/account/?ref=MeControl) page.
 
-You also must have at least 1 gigabyte of available Operations and Dataverse database capacities.  For more information see [Manage storage capacity](https://aka.ms/).
+You also must have at least 1 gigabyte of available Operations and Dataverse database capacities.  For more information see [Manage storage and capacity](../finance-operations-storage-capacity.md).
 
 # [Power Platform admin center](#tab/PPAC)
 
 ### Create from the admin center
 
-To start off, in this tutorial we'll use a Logic Apps workflow.  A Power Automate flow is also acceptable, and any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST will work with this tutorial.
+Inside of the Power Platform admin center, visit the Environments tab.  From there, click on the **New** button and a slider window will load on the right hand side of the screen.
+
+<img src="media/tutorial-new-environment1.png" width="400px" />
+
+Give the new environment a name.  Environment names do not need to be unique in Power Platform unlike in Lifecycle Services.  Choose your deployment region and ensure the environment type is Sandbox.
+
+Thereafter, enable the Dataverse option and click **Next**.
+
+On the next screen, fill out the Dataverse required fields and then select **Enable Dynamics 365 apps** and choose the appropriate template for your license:
+
+<img src="media/new-environment-template.png" width="350px" />
 
 # [PowerShell](#tab/PowerShell)
 
 ### Create from PowerShell
 
-Use the below script to initialize some variables that we'll use throughout the tutorial.  Optionally, you may use Username/Password authentication but it isn't advised.
+Load up your PowerShell console and execute the following commands to generate the environment.  Note the variables so that you can change the input values as required.
 
 ```powershell
 #Install the module
@@ -68,18 +78,15 @@ Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -C
 ---
 
 ## Delete the environment
-In this section, we'll fetch the environment list that you administer.  This can be done via API and PowerShell.
+In this step, we will clean up the environment we previously created.  This is also commonly done by admins who wish to reclaim capacity for other purposes.
 
 # [Power Platform admin center](#tab/PPAC)
 
 ### Cleanup from the UI
 
-Now is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context, you can also enter that Bearer Token at this step as well.
+Highlight the given environment, and then click the **Delete** button in the action bar across the top of the page.  
 
-> [!div class="mx-imgBorder"] 
-> ![Use the List Environments endpoint to retrieve all environments and their metadata.](media/capacity6.png "Use the List Environments endpoint to retrieve all environments and their metadata")
-
-We then parse the Power Platform API response into a strongly typed object using this JSON schema with the 'Parse JSON' action:
+Confirm that you wish to delete the environment and proceed.  This will start the deletion process and will eventually free up the Dataverse and Operations storage consumed by this environment for other needs.
 
 > [!div class="mx-imgBorder"] 
 > ![Parse the Power Platform API response into a strongly typed object.](media/capacity7.png "Parse the Power Platform API response into a strongly typed object")
@@ -87,13 +94,12 @@ We then parse the Power Platform API response into a strongly typed object using
 # [PowerShell](#tab/PowerShell)
 
 ### Cleanup via PowerShell
-Use the below script to pull a list of all environments you're the administrator over.  Using the new "-Capacity" flag you can add capacity consumption information for each environment retrieved.
+Use the below script to delete the previously created enviornment.  Note to change the environmentID to one that matches your environment.
 
 ```powershell
 #fetch environment list with capacity populated.  This is only possible when calling full environment list
 $environmentsList = Get-AdminPowerAppEnvironment -Capacity
 ```
 ---
-
 
 ## Related articles

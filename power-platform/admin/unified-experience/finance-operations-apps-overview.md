@@ -79,15 +79,14 @@ When it comes to environment lifecycle operations, there are some terminology an
 | Convert to Production | Not applicable | Convert to Production | This operation isn't yet implemented for environments where **Finance and Operations Provisioning App** is installed. |
 | Delete | Deallocate / Delete | Delete | Restoring a deleted environment where **Dynamics 365 Finance and Operations Provisioning App** was installed isn't yet implemented. |
 
-## TO DO: Scenario tutorials
+## Tutorials and helpful articles
 
 The following list of continually updated scenario tutorials provides a walkthrough for administrators in these new experiences.
 
-- Provision a new environment with an ERP-based template
-- Install **Dynamics 365 Finance and Operations Provisioning app** in an existing environment
+- [Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md)
 - Add a developer user to an environment and connect to it with Visual Studio
 - Set up a continuous integration and continuous deployment (CI/CD) build and release pipeline
-- Manage storage and capacity
+- [Manage storage and capacity](../finance-operations-storage-capacity.md)
 
 ### Related articles
 
