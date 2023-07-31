@@ -1,6 +1,6 @@
 ---
 title: Requirements to integrate SAP with Power Platform
-description: Review requirements for setting up SAP integration with Microsoft Power Platform.
+description: Learn about the requirements for integrating SAP with Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -12,7 +12,7 @@ contributors:
   - scottwoodallmsft
   - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: install-set-up-deploy
+ms.topic: conceptual
 ms.date: 06/06/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -21,24 +21,27 @@ ms.subservice: solution-templates
 
 # Requirements to integrate SAP with Power Platform
 
-Review all the requirements, identify opportunities, and develop a plan of action that best suits your organization's needs.
+Review the requirements, identify opportunities, and develop a plan of action that best suits your organization's needs.
 
-- [Power Platform licensing](/power-platform/admin/pricing-billing-skus). Determine if your organization has the necessary premium [licensing](https://www.microsoft.com/licensing/default) to proceed with the setup. It's important to consider:
-  - Power Apps, Power Automate, and Power BI licensing that supports setting up and using an on-premises data gateway with premium applications, flows, and connectors (SAP ERP and Dataverse).
-  - All admins, developers, and functional business users working with SAP solutions have the required licenses to do so.
-    - A [Power BI license](/power-bi/fundamentals/service-features-license-type) is required for the admin who is setting up the on-premises data gateway.
+- Your organization has the necessary premium  to proceed: 
+
+  - Power Apps, Power Automate, and Power BI premium [licensing](https://www.microsoft.com/licensing/default) that supports setting up and using an on-premises data gateway with premium applications, flows, and connectors (SAP ERP and Dataverse)
+  - Required licenses for the admins, developers, and functional business users who will be working with SAP solutions
+  - A [Power BI license](/power-bi/fundamentals/service-features-license-type) for the admin who's setting up the on-premises data gateway
+  - [Power Platform licensing](/power-platform/admin/pricing-billing-skus).
 
 - [SAP](<https://www.sap.com/>) subscription:
   
   - The SAP ERP connector can work with any SAP system that uses RFC and BAPI calls.
-  - Setup requires an administrator who has valid S-User access to the SAP system(s). The S-User is an SAP super administrator and has all of the authorizations for the portal and can manage other necessary SAP roles as necessary.
-  - SAP server and user accounts will need to be set up to allow actions.
+  - An administrator has valid S-User access to the SAP system(s). The S-User is an SAP super administrator and has all the authorizations for the portal and can manage other necessary SAP roles as necessary.
+  - SAP server and user accounts need to be set up to allow actions.
 
-- [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server. Create a Windows VM or provision a server specifically for hosting the on-premises data gateway for SAP integration with Power Platform.
-  - Ensure it meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended) for gateway installation and management.
-  - Review other [related considerations](/data-integration/gateway/service-gateway-install#related-considerations).
-  For instance, if you're planning to use Windows authentication, make certain that you install the gateway on a computer that's a member of the same active directory environment as the data source.
-- [On-premises data gateway](/data-integration/gateway/). The gateway is to be installed on the newly created Windows VM or provisioned server by an Azure AD Global or Gateway (default user permission for anyone performing the install) admin working with an SAP Super admin (S-User).
+- Create a [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or provision a server specifically for hosting the on-premises data gateway for SAP integration with Power Platform:
+
+  - Make sure it meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended) for gateway installation and management.
+  - Review [related considerations](/data-integration/gateway/service-gateway-install#related-considerations). For instance, if you're planning to use Windows authentication, make certain that you install the gateway on a computer that's a member of the same Azure Active Directory (Azure AD) environment as the data source.
+
+- An [on-premises data gateway](/data-integration/gateway/) installed on the Windows VM or provisioned server by an Azure AD Global or Gateway (default user permission for anyone performing the install) admin working with an SAP super admin (S-User).
   - Review [on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management) for Power Platform to learn more.
   - Go to the [Microsoft Download Center's on-premises data gateway page](https://www.microsoft.com/download/details.aspx?id=53127) and download the most recent version (December 16, 2022 or newer) of the gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
     - In the _System Requirements_ section on the gateway download page, identify the operating systems and .NET Frameworks required to support the most recent version of the gateway.
