@@ -70,8 +70,10 @@
               href: pricing-billing-skus.md
             - name: About licensing and license management
               href: wp-license-management.md
-            - name: View license consumption (preview)
+            - name: View license consumption for Power Apps and Power Automate (preview)
               href: view-license-consumption-issues.md
+            - name: View license consumption for finance and operations apps (preview)
+              href: view-license-consumption-finops-apps.md
             - name: Manage licenses in your org
               href: signup-question-and-answer.md
             - name: Administer without a license
@@ -256,6 +258,8 @@
                       href: create-team-template-add-entity-form.md
                     - name: Users
                       href: users-settings.md
+                    - name: Plug-in steps
+                      href: plug-ins.md
                 - name: Audit and logs
                   items:
                     - name: Audit log management
