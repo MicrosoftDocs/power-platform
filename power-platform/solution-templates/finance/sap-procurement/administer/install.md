@@ -29,16 +29,19 @@ First, select the links to download the [mpa_SAPBase_managed](https://aka.ms/Dow
 
 > [!IMPORTANT]
 >
-> Two solutions will always be installed in your environment.
+> Two solutions will always be installed in your environment:
 >
-> - **SAP Base solution** – contains the base Power Platform components required for the SAP procurement solutions. The base solution also supports other SAP-related solutions that will be released in the future.
-> - **SAP Procurement solution template** – contains Power Platform components specific to the procure-to-pay process domain.
+> - **SAP Base solution** contains the base Power Platform components required for the SAP Procurement solutions. The base solution also supports other SAP-related solutions that will be released later.
+> - **SAP Procurement solution template** contains Power Platform components specific to the procure-to-pay process domain.
 
 ## Install the SAP Base solution template
 
 1. In the _Power Apps Maker Portal_, select the developer (sandbox) _environment_ that you want to install the solutions in and then select the **Solutions** menu option.
+
 1. Select **Import solution**, selecting the **mpa_SAPBase_managed** file.
+
 1. Enter the environment variables when prompted, using the [Configure environment variables](configure-environment-variables.md) guidance.
+
 1. Select **Import**.
 
 > [!NOTE]
