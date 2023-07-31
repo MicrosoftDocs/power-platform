@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: admin
 ms.topic: overview
-ms.date: 05/02/2023
+ms.date: 07/31/2023
 ms.author: prkoduku
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -61,17 +61,17 @@ You can find more details can be found in [Microsoft Power Apps and Power Automa
 Learn [more about license entitlements](#license-entitlements).
 
 Here's a chart that lays out the limits that are associated with the different license plans.
-License|Power platform limits per 24 hours|Standard connectors|Premium connectors, Business process flows, Custom connectors, On-premise gateway|RPA attended|RPA Unattended|AI builder credits|Dataverse database capacity(accruved per USL/flow)|Dataverse file capacity(acrruved per USL/flow)|Process Mining desktop functionality|Process Mining data storage
---------|--------|----|-------|----|------|-----|--------|----------|--------|-----
+
+|License|Power platform limits per 24 hours|Standard connectors|Premium connectors, Business process flows, Custom connectors, On-premise gateway|RPA attended|RPA Unattended|AI builder credits|Dataverse database capacity(accruved per USL/flow)|Dataverse file capacity(accrued per USL/flow)|Process Mining desktop functionality|Process Mining data storage |
+|--------|--------|----|-------|----|------|-----|--------|----------|--------|-----|
 Power Automate premium|Actual limit-40K/user Transition period limit-200K/flow|Included|Included|One bot included|Not Included|5000|250MB|2GB|Included|50MB per user license up to 100GB per tenant|
 Power Automate process plan|Actual limit-250K/flow Transition period limit-500K/flow|Included|Included|Not included|Included|5000|50MB|200MB|Not Included|Not Included
 Office 365|Actual limit-6K/flow Transition period limit-10K/flow|Included|Not included|Not included|Not Included|Not included|Not included|Not included|Not included|Not included
-Power Apps premium|Actual limit-40K/user Transition period limit-200K/flow|Incuded|Included if the flow is in context of a Power App|Not included|Not included|500 credits|250MB|2GB|Not included|Not included
-Dynamics 365 professional 1|Actual limit-40K/user Transition period limit-200K/flow|Incuded|Included if the flow is in context of D365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
-Dynamics 365 Enterprise applications 2|Actual limit-40K/user Transition period limit-200K/flow|Incuded|Included if the flow is in context of D365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
-Dynamics 365 Team member|Actual limit-6K/user Transition period limit-10K/flow|Incuded|Included if the flow is in context of D365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
-Windows licenses|Not included|Not Incuded|Not Included |Limited RPA via PAD only|Not included|Not included|Not included|Not included|Not included|Not included
-
+Power Apps premium|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of a Power App|Not included|Not included|500 credits|250MB|2GB|Not included|Not included
+Dynamics 365 professional 1|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of D365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
+Dynamics 365 Enterprise applications 2|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of D365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
+Dynamics 365 Team member|Actual limit-6K/user Transition period limit-10K/flow|Included|Included if the flow is in context of D365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
+Windows licenses|Not included|Not Included|Not Included |Limited RPA via PAD only|Not included|Not included|Not included|Not included|Not included|Not included
 
 1. Dynamics 365 Sales Professional and Dynamics 365 Customer Service Professional.
 
