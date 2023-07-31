@@ -1,6 +1,6 @@
 ---
 title: Extend canvas apps
-description: Best practices and patterns for applying customizations to the canvas Power Apps to enable local business requirements
+description: Best practices and patterns for applying customizations to the canvas Power Apps to enable local business requirements.
 author: tverhasselt
 ms.author: thoverh
 contributors:
@@ -35,11 +35,11 @@ All apps are developed using published best practices and standards. We recommen
 
 | Standard | Comments | More information |
 | -------- | -------- | ---------------- |
-| Feature Status | Features that are either turned on or off by default. Includes a subset of preview features except experimental features. | [Understand experimental, preview, and retired features in canvas apps](/power-apps/maker/canvas-apps/working-with-experimental-preview) |
+| Feature Status | Features that are turned on or off by default. Includes a subset of preview features except experimental features. | [Understand experimental, preview, and retired features in canvas apps](/power-apps/maker/canvas-apps/working-with-experimental-preview) |
 | Responsiveness | Responsive to single device type such as tablet or mobile. Allows the app to snap to various standard screen and container sizes including embedding the apps within Microsoft Teams. Uses auto-layout responsive container controls extensively. | [Building responsive canvas apps](/power-apps/maker/canvas-apps/build-responsive-apps)
 | Naming & Coding Standards | Controls, variables, collections, and Dataverse naming standards are followed to promote ease of discovery and maintenance. | [Power Apps Canvas App Coding Standards and Guidelines](https://powerapps.microsoft.com/blog/powerapps-canvas-app-coding-standards-and-guidelines)
 | Accessibility | Properties that support accessibility. For example, Accessible Labels, Roles, Live, Focus Border Thickness, Color Contrast, and Tab Orders. These properties avoid known design patterns that don't support accessibility requirements. | [Create accessible canvas apps](/power-apps/maker/canvas-apps/accessible-apps) and [Accessibility limitations in canvas apps](/power-apps/maker/canvas-apps/accessible-apps-limitations) |
-| Performance | Best practices are followed avoiding known performance limitations. | [Tips and best practices to improve performance of canvas apps](/power-apps/maker/canvas-apps/performance-tips)
+| Performance | Best practices are followed to avoid known performance limitations. | [Tips and best practices to improve performance of canvas apps](/power-apps/maker/canvas-apps/performance-tips)
 
 ## Global app color themes
 
@@ -47,7 +47,7 @@ All apps follow a custom theme and can be changed according to your organization
 
 > [!IMPORTANT]
 >
-> Although it is possible to change a variety of color palette properties, it is recommended to only change the primary color property in the global theme variable.
+> Although it's possible to change a variety of color palette properties, we recommend only changing the primary color property in the global theme variable.
 
 ~~~power-fx
     Set(
@@ -75,17 +75,17 @@ All apps follow a custom theme and can be changed according to your organization
 
 Add your corporate logo to the apps by first uploading your corporate logo image file to the app and then adding it to the _ScreenHeader_ component.
 
-:::image type="content" source="media/extend-canvas-apps/add-corp-logo-.png" alt-text=" Add your corporate logo to the app":::
+:::image type="content" source="media/extend-canvas-apps/add-corp-logo-.png" alt-text="Add your corporate logo to the app":::
 
 More information: [Using multimedia files in canvas apps](/power-apps/maker/canvas-apps/add-images-pictures-audio-video)
 
 ## Localization and global app support
 
-All canvas apps by default have support for the English language by default. However, all apps are designed to be _localization ready_ and can be managed to support more languages. Control-width properties may need to be altered directly depending on languages chosen to deploy.
+All canvas apps by default have support for the English language. However, all apps are designed to be _localization ready_ and can be managed to support more languages. Control-width properties may need to be altered directly depending on languages chosen to deploy.
 
 ### String localization pattern
 
-1. On the first screen's _OnVisible_ property during the launch of the app, the app reads the user's browser language setting and determine the corresponding _ISO Language Code_ choice value.
+1. On the first screen's _OnVisible_ property during the launch of the app, the app reads the user's browser language setting and determines the corresponding _ISO Language Code_ choice value.
 
 ~~~power-fx
       Set(
@@ -122,7 +122,7 @@ All canvas apps by default have support for the English language by default. How
 
 > [!NOTE]
 >
-> Label and input control properties attempt to anticipate the width the localized text value but may not always be successful given complexities in that calculation. Thus, it is recommended to always test and make minor edits to the apps once localized strings and changes are made.
+> Label and input control properties attempt to anticipate the width of the localized text value but may not always be successful given the complexities of that calculation. Thus, we recommend that you always test and make minor edits to the apps once localized strings and changes are made.
 
 > [!TIP]
 >
@@ -141,7 +141,7 @@ The app queries the _SAP Localization_ Dataverse entity for strings that have be
         )
 ~~~
 
-All text related properties within various controls such as Text, HintText, Accessible Label, InputTextPlaceholder, NoSelectionText, and ToolTips have formulas that look first for an equivalent localized string. If it doesn't find the equivalent, it defaults to English, which is set in the _Text_ property within the _With_ block.
+All text-related properties within various controls such as Text, HintText, Accessible Label, InputTextPlaceholder, NoSelectionText, and ToolTips have formulas that look first for an equivalent localized string. If it doesn't find the equivalent, it defaults to English, which is set in the _Text_ property within the _With_ block.
 
 ~~~power-fx
   With(
@@ -162,7 +162,7 @@ All text related properties within various controls such as Text, HintText, Acce
   )
 ~~~
 
-For _combo box_ controls that filter values from the _SAP List of Value_ table, the user's mapped _ISO Language Code_ from their browser's setting is always applied to the filter criteria, defaulting to English if no list of values are administrated for their language.
+For _combo box_ controls that filter values from the _SAP List of Value_ table, the user's mapped _ISO Language Code_ from their browser's setting is always applied to the filter criteria, defaulting to English if no list of values is administered for their language.
 
 ~~~power-fx
 Sort(
@@ -178,7 +178,7 @@ Sort(
 
 ### Browser locale settings
 
-All number, date and time fields in the canvas apps honor the user's browser locale settings by default. For example, a date displayed as _3/23/2023_ for a user using United States as their locale settings will show as _23.03.2023_ for a user using the Germany locale setting.
+All number, date, and time fields in the canvas apps honor the user's browser locale settings by default. For example, a date displayed as _3/23/2023_ for a user using United States as their locale settings will show as _23.03.2023_ for a user using the Germany locale setting.
 
 More information: [Build global support into canvas apps](/power-apps/maker/canvas-apps/global-apps)
 
@@ -208,22 +208,22 @@ More information: [Canvas component overview](/power-apps/maker/canvas-apps/crea
 
 ## Additional SAP fields
 
-Every SAP implementation is different and it's fully expected to add your own fields that support your business processes. Thus, ample screen space and design considerations were implemented to allow you to easily add the fields you need.
+Every SAP implementation is different and it's fully expected that you'll add your own fields that support your business processes. Thus, ample screen space and design considerations were implemented to allow you to easily add the fields you need.
 
 ### Common control containers
 
-Most controls are contained within a container consisting of both label and input control. For example, the field to capture the name of the vendor within the SAP Vendor Management app consists of a Label and Text Input control as seen in the screenshot that follows. To add a new field, copy an existing container control and paste in the appropriate responsive component, updating the names, text and ultimately mapped fields.
+Most controls are contained within a container consisting of both label and input control. For example, the field to capture the name of the vendor within the SAP Vendor Management app consists of a Label and Text Input control as seen in the screenshot that follows. To add a new field, copy an existing container control and paste in the appropriate responsive component, updating the names, text, and ultimately mapped fields.
 
-:::image type="content" source="media/extend-canvas-apps/container-control.png" alt-text=" Work with container controls.":::
+:::image type="content" source="media/extend-canvas-apps/container-control.png" alt-text="Work with container controls.":::
 
 > [!NOTE]
-> There are similar containers for other types of input controls like Comboboxes, Date Pickers and Buttons.
+> There are similar containers for other types of input controls like Comboboxes, Date Pickers, and Buttons.
 
 ### Responsive containers
 
-The apps are designed to be responsive to the tablet/desktop device type using vertical and horizontal container controls such as show in the screenshot that follows. These containers are configured to have starting points for properties such as _height_, _width_, _LayoutMinHeight_, _LayoutMinWidth_, and _Wrap_. As you add more fields to these containers, ensure these properties are also updated to continue to handle the responsiveness appropriately.
+The apps are designed to be responsive to the tablet/desktop device type using vertical and horizontal container controls such as shown in the screenshot that follows. These containers are configured to have starting points for properties such as _height_, _width_, _LayoutMinHeight_, _LayoutMinWidth_, and _Wrap_. As you add more fields to these containers, ensure these properties are also updated to continue to handle the responsiveness appropriately.
 
-:::image type="content" source="media/extend-canvas-apps/ex-horizontal-container.png" alt-text=" Work with responsive containers.":::
+:::image type="content" source="media/extend-canvas-apps/ex-horizontal-container.png" alt-text="Work with responsive containers.":::
 
 More information: [Autolayout containers](/power-apps/maker/canvas-apps/build-responsive-apps#auto-layout-containers)
 
@@ -231,13 +231,13 @@ More information: [Autolayout containers](/power-apps/maker/canvas-apps/build-re
 
 The power of canvas apps is that they can easily connect into one of several hundred other systems and applications securely using their native connector library. 
 
-For example, if your SAP Procurement purchase order process requires data from upstream presales opportunities that exist in a CRM to complete the process, you can use the [Salesforce](/connectors/salesforce/) or Dataverse connectors to integrate with Dynamics 365 so you can easily add that data to the SAP Purchase Order app at the select of a button.
+For example, if your SAP Procurement purchase order process requires data from upstream presales opportunities that exist in a CRM to complete the process, you can use the [Salesforce](/connectors/salesforce/) or Dataverse connectors to integrate with Dynamics 365 so you can easily add that data to the SAP Purchase Order app at the click of a button.
 
 Additionally, if you have an internal proprietary system or a system with no native connector, you can work with your IT Team to create a custom connector that allows Power Apps to easily interface with that system through a supported API.
 
 More information:
--[List of connectors](/connectors/connector-reference/connector-reference-powerapps-connectors)
--[Custom connectors overview](/connectors/custom-connectors/)
+- [List of connectors](/connectors/connector-reference/connector-reference-powerapps-connectors)
+- [Custom connectors overview](/connectors/custom-connectors/)
 
 ## App error handling
 
@@ -263,7 +263,7 @@ Error(FirstError);
 )
 ~~~
 
-All unexpected exceptions generated by the app are handled in the _App.OnError_ property where a _SAP solution template error_ record is created before the error is rethrown and traced. The admin can view the error details as put triggers in place to be alerted on app unhandled exceptions as seen in the [Monitor errors](monitor-errors.md) document.
+All unexpected exceptions generated by the app are handled in the _App.OnError_ property where a _SAP solution template error_ record is created before the error is rethrown and traced. The admin can view the error details and put triggers in place to be alerted on app unhandled exceptions as seen in the [Monitor errors](monitor-errors.md) document.
 
 More information: [OnError property](/power-platform/power-fx/reference/object-app#onerror-property)
 
