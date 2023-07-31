@@ -162,9 +162,3 @@
           href: when-edit-customization-file.md
         - name: Pipeline table reference
           href: ../developer/pipelines/table-reference.md
-    - name: Responsible AI
-      items:
-        - name: Overview
-          href: responsible-AI-overview.md
-        - name: FAQ for using Copilot to generate deployment notes in pipelines
-          href: faqs-ai-deployment-notes-pipelines.md
