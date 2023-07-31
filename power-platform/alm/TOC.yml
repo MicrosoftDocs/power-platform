@@ -162,3 +162,9 @@
           href: when-edit-customization-file.md
         - name: Pipeline table reference
           href: ../developer/pipelines/table-reference.md
+        - name: Responsible ### YamlMime:Achievements
+          items:
+          - name: Overview
+            href: ../responsible-ai-overview.md
+          - name:  Copilot to generate deployment notes in pipelines form-alm-faq.yml
+            href: faqs-AI-deployment-notes-pipelines.md
