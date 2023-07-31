@@ -71,7 +71,7 @@ Power Apps premium|Actual limit-40K/user Transition period limit-200K/flow|Inclu
 Dynamics 365 professional 1|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of D365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
 Dynamics 365 Enterprise applications 2|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of D365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
 Dynamics 365 Team member|Actual limit-6K/user Transition period limit-10K/flow|Included|Included if the flow is in context of D365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
-Windows licenses|Not included|Not Included|Not Included |Limited RPA via PAD only|Not included|Not included|Not included|Not included|Not included|Not included
+Windows licenses|Not included|Not Included|Not Included |Limited RPA via Power Automate for desktop flows only|Not included|Not included|Not included|Not included|Not included|Not included
 
 1. Dynamics 365 Sales Professional and Dynamics 365 Customer Service Professional.
 
