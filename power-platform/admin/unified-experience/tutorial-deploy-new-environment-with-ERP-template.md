@@ -14,7 +14,7 @@ search.audienceType:
 
 # Tutorial: Provision a new environment with an ERP-based template (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Finance and operations apps have been re-imagined as an application hosted by Microsoft Dataverse.  No longer do customers need to deploy their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications.  Additionally, most administrative actions in Power Platform are available via UI and API based experience.
 
@@ -88,8 +88,6 @@ Highlight the given environment, and then click the **Delete** button in the act
 
 Confirm that you wish to delete the environment and proceed.  This will start the deletion process and will eventually free up the Dataverse and Operations storage consumed by this environment for other needs.
 
-> [!div class="mx-imgBorder"] 
-> ![Parse the Power Platform API response into a strongly typed object.](media/capacity7.png "Parse the Power Platform API response into a strongly typed object")
 
 # [PowerShell](#tab/PowerShell)
 
