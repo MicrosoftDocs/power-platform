@@ -41,7 +41,7 @@ You can purchase the **Power Automate hosted RPA add-on** from the [Microsoft 36
 
    ![An image that displays the Power Automate Premium](../media/power-automate-licensing/select-plan.png)
 
-1. Select **Details** on the **Power Automate Premim** plan, and then select **Add-ons**.
+1. Select **Details** on the **Power Automate Premium** plan, and then select **Add-ons**.
 1. Find the **Power Automate hosted RPA Trial** and buy it.
 
    ![Power Automate unattended RPA add-on Trial add on](../media/power-automate-licensing/add-ons-details.png)
