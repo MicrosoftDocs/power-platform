@@ -653,7 +653,7 @@ A list of add-ons applicable to all standalone Power Apps and Power Automate pla
 
     -   Power Apps Portals page view capacity add-on (100,000 anonymous page views for $100 per month)
 
--   **Power Platform Requests add-on (formally Power Apps and Power Automate capacity add-on** increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
+-   **Power Platform Requests add-on (formally Power Apps and Power Automate capacity add-on**) increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
 
 -   Dataverse Database Capacity (1 GB) $40 per month
 
