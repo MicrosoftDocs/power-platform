@@ -53,19 +53,15 @@ You need process license if your flow meets one of the following criteria:
 
 ### How many process licenses do i need?
 
-- Your process only needs RPA: how many machine sessions do you need?  
+- Your process has unattended RPA(Robotic Process Automation): how many machine sessions do you need?
+   Purchase one Process license for each machine. You can add more Process licenses if you need concurrent execution on the machine. All desktop flows(RPA) running on the machine and cloud flows(DPA) that are part of the business process are covered by the Process license.
+ 
+- Your process only needs DPA(Digital Process Automation): how many core business processes do you want to automate?  
 
-    Purchase one process for every machine session. All desktop flows running on a machine and the invoking cloud flows are included in the license. 
-
-- Your process only needs DPA: how many business critical processes will you put in production?  
-
-    Purchase one process for every business critical process. Some examples are invoice processing, HR onboarding etc. All cloud flows related to the same business process are included in the license. The flows can be organized as parent/child flows are tagged as in context of the flow with process license.
-
-- Your process has RPA and DPA: how many business processes will you put in production?
-    Core business processes typically span across multiple cloud flows and desktop flows. All cloud flows related to the same business process are included in the license. By default each license comes with a machine session for that business process, you can add more process licenses if you need multiple RPA sessions for concurrnet execution. 
+    Purchase one process for every core business process. Some examples of core business processes are invoice processing, HR onboarding etc. All cloud flows related to the same business process are included in the license. 
 
 ### My process has multiple flows. Will i need multiple process licenses?
-No. You only need one process license. This encourages micro services architecture best practices where flows can be small with fine grained functionality resulting in better maintainability. 
+No. You only need one process license. This encourages microservices architecture best practices where flows can be small with fine grained functionality resulting in better maintainability. 
 
 Identify the flow that starts the process and assign the process license to that flow. Tag all the flows as in context of the flow with process license. The flows must be in same solution and be using the same data sources. The flows organized as parent, child flows, in context flows are all treated as one process with one process license assigned to the main flow. 
 
@@ -74,10 +70,10 @@ Yes. All flows of a process must be in same solution and a solution can have mul
 
 ### Who needs to purchase a premium license?
 
--The process plan has the highest priority among all licenses.This means if a process license is assigned to a flow, the flow always uses this license and doesnt need owner or running user to have a premium license.
+- The process plan has the highest priority among all licenses.This means if a process license is assigned to a flow, the flow always uses this license and doesnt need owner or running user to have a premium license.
 - Automated and scheduled flows always run in the context of the flow owner regardless of who starts the flow or what accounts are used for connections inside of the flow. Instant flows (button, hybrid triggers) run in the context of the user who invokes them, regardless of the connections used in the flow. If an automated or scheduled flow uses a premium connector, only the owner needs to have a premium license.
 - If an instant flow has premium connectors, every user who runs the flow needs a Power Automate premium license. In such cases, instead of licensing every user, you can license the flow with a process license. One exception to this rule is that the HTTP trigger runs in the context of the owner, even if it's used in an instant flow.
-- If the flow doesn't use a premium connector, you donot need a premium license. You can use Microsoft 365 license.
+- If the flow doesn't use a premium connector, you do not need a premium license. You can use Microsoft 365 license.
 
 To find out what type (automated/manual/scheduled) of flow you have, select a flow to see its 'type' in the details.
 
@@ -160,15 +156,15 @@ Yes, they can use Power Automate for the desktop (they have usage rights for it)
 ## Legacy license questions
 
 > [!NOTE]
-> Per the August 1, 2023 announcement, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from the pricelist on February 1, 2023,  
+> Per the August 1, 2023 announcement, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from the pricelist on February 1, 2024,  
 Power Automate Process, an all-encompassing license that is easier to manage, licenses a single ‘automation’ bot that can be used for unattended robotic process automation (unattended RPA), OR cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month. 
 >
 ### How is process license different from per flow license 
-For unattended RPA, previously customers will need to buy a per flow license for the cloud flow and an unattended addon. Now they can purchase a process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the process license. 
+For unattended RPA, previously customers will need to buy a per flow license for the cloud flow and an unattended RPA add-on. Now they can purchase a process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the process license. 
 
-For cloud flows, one per flow license allows a parent flow and its child flows. One process license allows the parent flow, its child flows and any flows that are tagged as in context of the flow. Per flow needed to be purchased as a 5pack and there is no prerequisite on the number of process licenses. 
+For cloud flows, one per flow license allows a parent flow and its child flows. One process license allows the parent flow, its child flows and any flows that are tagged as in context of the flow. Per flow had a minimum of 5 pack to be purchased to get started. There is no minimum purchase quantity requirement for process license. 
 
-### How is Power Automate premium license differet from Power Automate per user with attended RPA license?
+### How is Power Automate premium license different from Power Automate per user with attended RPA license?
 Power Automate premium offer includes all the benefits of Power Automate per user with attended RPA offered at $40 per user/month, plus the Process Mining visualize and analyze processes capabilities and is offered at $15 per user/month.
 
 ## Office 365 license questions
