@@ -647,13 +647,13 @@ Learn more:
 
 A list of add-ons applicable to all standalone Power Apps and Power Automate plans are listed below:
 
--   The new **Power Apps Portals login capacity add-on** and **Portals page view capacity add-on** is for external users of Power Apps Portals. External users are those outside of your organization who sign in with various identities such as LinkedIn, Microsoft account, other commercial sign-in providers, or anonymously.
+-   New **Power Apps Portals login capacity add-on** and **Portals page view capacity add-on** is for external users of Power Apps Portals. External users are those outside of your organization who sign in with various identities such as LinkedIn, Microsoft account, other commercial sign-in providers, or anonymously.
 
     -   Power Apps Portals log in capacity add-ons (various volume tiers start from $200 per 100 logins per month)
 
     -   Power Apps Portals page view capacity add-on (100,000 anonymous page views for $100 per month)
 
--   The new **Power Apps and Power Automate capacity add-on** increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
+-   **Power Platform Requests add-on (formally Power Apps and Power Automate capacity add-on** increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
 
 -   Dataverse Database Capacity (1 GB) $40 per month
 
