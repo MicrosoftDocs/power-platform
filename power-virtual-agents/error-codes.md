@@ -59,7 +59,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md), wh
 | [DataLossPreventionViolation](#datalosspreventionviolation)       | There was a data loss prevention violation.                         |
 | [FlowActionException](#flowactionexception)                       | An error occurred while executing a [cloud flow][2].                |
 | [FlowActionBadRequest](#flowactionbadrequest)                     | A request made to a [cloud flow][2] was malformed.                  |
-| [FlowActionTimedOut](#flowactiontimedout)                         | A [cloud flow][2] took more than 2 minutes to run and timed out.    |
+| [FlowActionTimedOut](#flowactiontimedout)                         | A [cloud flow][2] took more than 100 seconds to run and timed out.    |
 | [InvalidContent](#invalidcontent)                                 | Invalid content was added to the code editor.                       |
 | [InfiniteLoopInBotContent](#infiniteloopinbotcontent)             | A node was executed too many times.                                 |
 | [LatestPublishedVersionNotFound](#latestpublishedversionnotfound) | Unable to retrieve the published version of the bot.                |
@@ -117,7 +117,7 @@ Common problems include:
 
 **Error message:** "The flow with id {FlowId} has timed out . Error Code: {FlowErrorCode}"
 
-**Resolution:** [Check the flow for errors](/power-automate/error-checker) to understand why the cloud flow took more than 2 minutes to run before it returned to Power Virtual Agents. Try to optimize the query and the data you return from any other backend system. If some of the cloud flow logic can continue to run after a result is sent to the bot, place these actions after the 'Return value(s) to Power Virtual Agents' step in your cloud flow.
+**Resolution:** [Check the flow for errors](/power-automate/error-checker) to understand why the cloud flow took more than 100 seconds to run before it returned to Power Virtual Agents. Try to optimize the query and the data you return from any other backend system. If some of the cloud flow logic can continue to run after a result is sent to the bot, place these actions after the 'Return value(s) to Power Virtual Agents' step in your cloud flow.
 
 #### InvalidContent
 
