@@ -630,7 +630,7 @@
                   href: telemetry-events-dataverse.md
                 - name: Export data to Application Insights
                   href: set-up-export-application-insights.md
-                - name: Set up Application Insights with cloud flow telemetry
+                - name: Set up Application Insights with Power Automate (preview)
                   href: app-insights-cloud-flow.md
         - name: Storage
           items:
