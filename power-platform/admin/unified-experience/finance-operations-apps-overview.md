@@ -22,15 +22,15 @@ As part of the unification of admin experiences of finance and operations apps w
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-This article provides an overview to Dynamics 365 finance and operations apps administrators who are new to the Power Platform admin center. Learn some core concepts to help understand the key differences between your prior admin center Lifecycle Services (LCS) and the new experience along with links to more resources and articles that provide detailed information
+This article provides an overview to Dynamics 365 finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services (LCS) and the new experience along with links to more resources and articles that provide detailed information for common tasks.
 
-To learn more the unified experience, watch the following video on Microsoft Dynamics 365 Community channel on YouTube: [Video: One Dynamics One Platform](https://www.youtube.com/embed/VPQSmtgzfjM)
+To learn more the admin unification journey, watch the following video on Microsoft Dynamics 365 Community channel on YouTube: [Video: One Dynamics One Platform](https://www.youtube.com/embed/VPQSmtgzfjM)
 
-## How finance and operations apps are referenced in the Power Platform admin center?
+## How will finance and operations apps surface in the Power Platform admin center?
 
 You won't see any new environment types in the Power Platform admin center; we have integrated the finance and operations apps into the Power Platform fabric.
 
-You can access the finance and operations apps within Power Platform admin center in one of the following two ways:
+You can deploy the finance and operations apps within Power Platform admin center in one of the following two ways:
 
 - **Option A: Create a new environment through templates**: Whenever you create a new environment in the Power Platform admin center, you have the option to add a Dataverse database and enable Dynamics 365 apps. When you choose these two options, a list of environment app templates becomes available in the **Automatically deploy these apps** list, which is a group of applications preinstalled on a Dataverse database.  
 
@@ -51,11 +51,13 @@ In either approach, notice that your environment has two runtime URLs: one for t
 
 ## Transition from an environment-slot purchasing model to a capacity-based model
 
-When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to 60 GB of operations database capacity and an additional 10 GB of Dataverse database capacity. Additionally, for each user license that you purchased, you receive an incremental amount of both operations and Dataverse database capacity.
+When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to 60 GB of operations database capacity and an additional 10 GB of Dataverse database capacity. Additionally, for each user license that you purchased, you receive an incremental amount of both Operations and Dataverse database capacity.
 
 :::image type="content" source="media/PPI-Capacity.png" alt-text="Capacity view in Power Platform admin center":::
 
-A license is required to create or install any finance and operations app in Power Platform admin center. You must also have at least 1 GB available of both operations and Dataverse database capacity to provision one more environment.  Beyond that, there are no strict limits on how many environments you can create unlike in LCS admin center were each Sandbox and Production environment slot was a predetermined purchase.
+A license is required to create or install any finance and operations app in Power Platform admin center. You must also have at least 1 GB available of both Operations and Dataverse database capacity to provision one more environment.  Beyond that, there are no strict limits on how many environments you can create unlike in LCS admin center were each Sandbox and Production environment slot was a predetermined purchase.
+
+As part of the capacity-based model, all environments are given the same level of compute performance be it Sandbox or Production environments.  This is based on the number of user licenses purchased, and will dynamically scale up or down as your license quantities adjust.
 
 ## Development reimagined
 
