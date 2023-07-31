@@ -18,10 +18,5 @@ contributors:
 
 # All Power Virtual Agents functions
 
-Content applicable to all functions in Power Virtual Agents.
-
-## Functions available in Power Virtual Agents
-
-**[Average](reference/function-aggregates.md?tabs=pva)** - Calculates the average of a table expression or a set of arguments.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
