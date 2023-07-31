@@ -111,7 +111,7 @@ After you update your flow, anyone will be able to use that flow, even if it lev
 
 ### Assign per flow license
 
-Here are the two steps you must take if you want to assign a per flow license to a user.
+Here are the two steps you must take if you want to assign a per flow license.
 
 1. Allocate the per flow license to an environment in the Power Platform admin center.
 
@@ -151,7 +151,7 @@ Follow these steps to allocate add-ons to an environment.
 
 After you update your flow, anyone will be able to use that flow, even if it leverages premium connectors. Additionally, capacity will be dedicated to that flow.
 
-### Assign unattended add-ons to an environment
+### Assign unattended RPA add-on to an environment
 
 In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Resources** > **Capacity** > **Manage** in add-ons to assign add-ons.
 
