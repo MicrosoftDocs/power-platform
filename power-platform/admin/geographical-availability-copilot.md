@@ -74,9 +74,9 @@ The following table indicates the availability of copilots and generative AI fea
 | Dynamics 365 Customer Insights | **Dialog with Data**</br>[Have a dialog with data using Copilot in Customer Insights (preview)](/dynamics365/customer-insights/dialog-with-data) | US | No | English |
 | Sales Copilot | **Meeting summary follow-up email**<br /></br>[Create a sales meeting summary email](https://support.microsoft.com/topic/use-copilot-to-kickstart-email-messages-148708be-e1f9-477c-baba-0b4dd4b7abef#bkmk-meeting-summary-ai-reply) | US | No | English |
 | Dynamics 365 Finance | **Collections Copilot: Collections timeline summary from workspace**</br>[Collections coordinator summary](/dynamics365/finance/accounts-receivable/collectionscoordinatorsummary) | US | No | English |
-|Project Operations | **Project issues and risks tracking information<br /></br>**[Project management Copilot overview](/dynamics365/project-operations/project-management/copilot-features.md) | US | No | English |
-|Project Operations | **Project status reports<br /></br>**[Project management Copilot overview](/dynamics365/project-operations/project-management/copilot-features.md) | US | No | English |
-| Project Operations | **Project WBS generation<br /></br>**[Project management Copilot overview](/dynamics365/project-operations/project-management/copilot-features.md) | US | No | English |
+|Project Operations | **Project issues and risks tracking information<br /></br>**[Project management Copilot overview](/dynamics365/project-operations/project-management/copilot-features) | US | No | English |
+|Project Operations | **Project status reports<br /></br>**[Project management Copilot overview](/dynamics365/project-operations/project-management/copilot-features) | US | No | English |
+| Project Operations | **Project WBS generation<br /></br>**[Project management Copilot overview](/dynamics365/project-operations/project-management/copilot-features) | US | No | English |
 | Dynamics 365 Customer Service | **Digital messaging with Copilot**<br /></br>[Draft a chat response](/dynamics365/customer-service/use-copilot-features#draft-a-chat-response) | US | Yes | English |
 | Dynamics 365 Customer Service | **Auto-Draft Email**<br /></br>[Draft emails](/dynamics365/customer-service/use-copilot-features#draft-emails) | US | Yes | English |
 | Dynamics 365 Customer Service | **Converse with Copilot**</br>[Ask a question](/dynamics365/customer-service/use-copilot-features#ask-a-question) | US | Yes | English |
