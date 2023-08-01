@@ -95,9 +95,8 @@ You can unassign an add-on. This is also commonly done by admins who wish to rec
 ### Unassign an add-on from the Power Platform admin center
 
 1. Sign in to the Power Platform admin center and select **Resources** > **Capacity**.
-2. Select the **Add-ons** tab.
-3. Select **Manage**.
-4. Find your environment and remove the AI Builder Credits allocation that was assigned earlier in this article.
+3. Select **Manage** in the **Add-ons** section.
+4. Find your environment and remove the AI Builder credits allocation that was assigned earlier in this article.
 5. Select **Save**.
 
 # [PowerShell](#tab/PowerShell)
