@@ -1,8 +1,8 @@
 ---
-title: "Tutorial: Allocate add-ons to environments (preview) | Microsoft Docs"
-description: This tutorial will demonstrate how to use allocate add-ons to environments manually as well as programmatically.
+title: Tutorial: Allocate add-ons to environments (preview)
+description: Learn how to use allocate add-ons to environments manually, as well as programmatically.
 author: laneswenka
-ms.reviewer: laneswenka
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 08/01/2023
@@ -16,13 +16,13 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Add-ons provide extra capabilities that Power Apps, Power Automate Flows, and other resources can utilize.  These are assignable at the environment level in Power Platform admin center, and are made available based on prior license purchases.  To learn more about add-on management, reporting, and access control visit [Add-on capacity management](./capacity-add-on.md).
+Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can utilize. These capabiities can be assigned at the environment-level in Power Platform admin center, and are made available based on prior license purchases.  To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
 
 In this tutorial, you'll learn how to:
 
-- Visit the admin center and manually allocate an add-on to an environment
-- Allocate add-ons using PowerShell to perform this action at scale
-- Unassign the add-on when finished
+- Visit the Power Platform admin center and manually allocate an add-on to an environment.
+- Allocate add-ons using PowerShell to perform this action at scale.
+- Unassign the add-on when finished.
 
 As an example of this scenario, a customer who has purchased AI Builder Credits and Power Automate per Process flows can assign those add-ons to an environment to account for usage in that environment.
 
