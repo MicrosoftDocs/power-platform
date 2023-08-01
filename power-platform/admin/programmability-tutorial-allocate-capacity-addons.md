@@ -43,11 +43,11 @@ Not all add-ons are available in the admin center UI.  As new add-ons become ava
 
 Once logged in to the admin center, visit the **Resources** -> **Capacity** page.  From there, scroll down to the **Add-ons** section and click the **Manage** link.
 
-<img src="media/tutorial-allocate-addons1.png" width="400px" />
+:::image type="content" source="media/tutorial-allocate-addons1.png" alt-text="Select the Manage link.":::
 
 On the next screen, select an environment and review all of the various add-ons you could assign.  As a reminder, you can only adjust add-ons for those you have previously purchased.  In this example, we will add 500 AI Builder Credits to the environment and click **Save**.
 
-<img src="media/tutorial-allocate-addons2.png" width="400px" />
+:::image type="content" source="media/tutorial-allocate-addons2.png" alt-text="Select an environment and review all of the various add-ons you could assign.":::
 
 # [PowerShell](#tab/PowerShell)
 
