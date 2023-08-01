@@ -65,34 +65,27 @@ The solutions include security roles:
   - Localizers can nominate people and see their own data.
   - Assign this role to everyone who will potentially nominate others for awards.
 
-> [!NOTE]
-> All users must also be assigned the *Basic User* role in addition to any other roles assigned to them.
-> Roles can be assigned from the Admin Center.
+> [!IMPORTANT]
+> All users must be assigned the *Basic User* role in addition to any other roles assigned to them.
 >
 > 1. Go to [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/home).
 > 1. Select **Environment** and then select the environment where the solution was installed.
 > 1. Select **Users** > **See all**.
->1. Select the users and then select **Manage security roles** to assign the appropriate roles.
->1. Select **Save**.
+> 1. Select the users and then select **Manage security roles** to assign the appropriate roles.
+> 1. Select **Save**.
 
 ## Step 4: Set cloud flows to *on*
 
 Open the newly installed Awards and Recognition solution and verify that the cloud flow is set to the on status. If not, turn it on.
 
 1. Select the cloud flow that is turned off.
-
 1. Select **Turn on** located in the toolbar.
 
 ## Step 5: Share the app
 
 1. Select **Apps** in the environment in which Awards and Recognition is installed.
 1. Locate the Awards and Recognition app.
-
-> [!NOTE]
-> If you did not install the Awards and Recognition solution and it has not been shared with you, then you will have to navigate into the Awards and Recognition solution and find the app there.
-
-3. Go to the *three dots* to the right of the Awards and Recognition app and select **Share**.
-
+1. Go to the *three dots* to the right of the Awards and Recognition app and select **Share**.
 1. Search for and add the users who you want to share the app with.
 
     - For users who should have access to *edit* the app, check the Co-owner box.
@@ -100,10 +93,11 @@ Open the newly installed Awards and Recognition solution and verify that the c
     - If everyone in the organization should be able to use the app, you can look for Everyone in the Enter a name box.
 
 1. In the *Data permission area*, you can select roles from a drop-down list. It's next to the Microsoft Dataverse tables that the Awards and Recognition app uses. Be sure to select the correct Awards and Recognition role (Awards and Recognition – Program Admin, Awards and Recognition – User) along with Basic User.
-
 1. Add an optional email message.
-
 1. Select **Share**.
+
+> [!NOTE]
+> If you didn't install the Awards and Recognition solution and it hasn't been shared with you, then you'll have to navigate into the Awards and Recognition solution to find the app there.
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 

@@ -32,11 +32,11 @@ You have three options for viewing a vendor invoice:
 
 ### Select a vendor invoice
 
-From the _Select recent vendor invoice_ drop down list, you can see a list of previous vendor invoices that you have interacted with. You can choose one from the list, and it loads the data for that vendor invoice.
+You can select a recently viewed vendor invoice from a drop-down list. Choose a _vendor invoice_ to load onto the screen.
 
 ### Search for vendor invoice
 
-If you have not interacted with the vendor invoice, and you don't know the exact number, you can search for a vendor invoice. Select the **funnel** icon to open the vendor invoice search screen.
+If you have not interacted with the vendor invoice and you don't know the exact number, you can search for a vendor invoice. Select the **funnel** icon to open the vendor invoice search screen.
 
 The vendor invoice search screen allows you to search by an individual field or a combination of these fields:
 

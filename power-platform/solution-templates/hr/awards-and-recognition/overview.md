@@ -17,9 +17,9 @@ The Awards and Recognition solution enables organizations to define nomination p
 
 The Awards and Recognition AppSource package consists of two solutions:
 
-- The *Employee Experience Base* solution contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+- **Employee Experience Base**: Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
 
-- The *Awards and Recognition* solution contains all the components needed to enable the Awards & Recognition experience in your organization.
+- **Awards and Recognition**: Contains all the components needed to enable the Awards & Recognition experience in your organization.
 
 You can access the Awards and Recognition solution template on [AppSource](https://aka.ms/AccessAwardsAndRecognitionTemplate).
 
@@ -28,12 +28,12 @@ You can access the Awards and Recognition solution template on [AppSource](https
 The *Employee Experience Base* solution contains various technical components that allow an admin to set up and manage the language preferences.
 
 - **One model-driven app**: The *Employee Experience Localization Admin* app allows you to see and edit localized string values as an admin.
-- **One table**: The *Employee Experience localization* table records the app string replacements for every localized version of the app.
+- **One table**: The *Employee Experience Localization* table records the app string replacements for every localized version of the app.
 - **Two security roles**:
 
   - The *Employee Experience Localization Reader* provides read access to the table.
   - The *Employee Experience Localizer* provides *create*, *read*, *update*, and *delete* access to the table.
-- **One Choice**: The *ISO EE Language Code* stores the abbreviation for available language codes.
+- **One Choice**: The *ISO Employee Experience Language Code* stores the abbreviation for available language codes.
 
 ## Awards and Recognition solution
 

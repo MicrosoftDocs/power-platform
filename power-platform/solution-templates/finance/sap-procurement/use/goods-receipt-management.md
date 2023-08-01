@@ -24,24 +24,24 @@ The SAP Goods Receipt Management application allows you to do several functions 
 
 ## View a goods receipt
 
-There are three options for viewing a goods receipt:
+You have three options for viewing a goods receipt:
 
-- You can select a recent goods receipt that you have interacted with.
-- You can search for a goods receipt based on vendor, purchase order, and date range.
-- You can enter a known goods receipt number.
+- Select a recent goods receipt that you have interacted with.
+- Search for a goods receipt based on vendor, purchase order, and date range.
+- Enter a known goods receipt number.
 
 ### Select a goods receipt
 
-Select a _goods receipt_ from the _Select recent goods receipt_ drop-down list that displays a list of recent goods receipts that you have interacted with. Choose a goods receipt from the list to load on to the screen.
+You can select a recently viewed goods receipt from the _Select recent goods receipt_ drop-down list. Choose a _goods receipt_ from the list to load onto your screen.
 
 ### Search for a goods receipt
 
-If you haven't interacted with the goods receipt, and you don't know the exact number, you can search for a goods receipt. Select the **funnel** icon to open the goods receipt search screen.
+If you haven't interacted with the goods receipt and you don't know the exact number, you can search for a goods receipt. Select the **funnel** to open the goods receipt search screen.
 
-The goods receipt search screen allows you to search by any individual field or a combination of _Vendor_, _Purchase order_, Movement type_and_Posting date range_.
+The goods receipt search screen allows you to search by any individual field or a combination of _Vendor_, _Purchase order_, _Movement type_ and _Posting date range_.
 
-1. Enter your desired selection criteria.
-1. Select the **Search** button to display your results.
+1. Enter your selection criteria.
+1. Select **Search** to display your results.
 1. Select the _goods receipt_ you want to display on the overview screen.
 
 ### Enter a goods receipt
@@ -52,14 +52,14 @@ If you know the goods receipt number of the material document you want to view, 
 
 1. Select the **Create** button.
 1. Enter a _purchase order number_.
-1. Select the **right-pointing arrow** next to the purchase order number to view:
+1. Select the right-pointing **arrow** next to the purchase order number to view:
 
     - Vendor number and name
     - Purchase order items
 1. Adjust the _Quantity received_ as needed.
 1. Select **Save** to post the goods receipt.
 
-## Field Mappings
+## Field mappings
 
 The table provides requisition screen to function module field mappings.
 

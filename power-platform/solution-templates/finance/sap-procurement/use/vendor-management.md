@@ -34,13 +34,13 @@ You can load existing vendor information three different ways:
 
 ### Select a vendor invoice
 
-You can select a recent vendor from a list without having to do a search. Select the **Select recent vendor** drop down list located in the top bar on the vendors app to see a list of vendors that you interacted with previously. Choose a vendor from the list to load that vendor record.
+You can select a recently viewed vendor from the *Select recent vendor* drop-down list. Choose a *vendor* from the list to load that vendor's record onto your screen.
 
 ### Search for a vendor
 
 You can search for a vendor using known search criteria.
 
-  1. Select the **funnel icon** located in the top bar of the vendors app to open the vendor search screen.
+  1. Select the **funnel** icon to open the vendor search screen.
   1. Enter your search criteria into one or more of the following fields:
       - Vendor name
       - Street
@@ -49,16 +49,16 @@ You can search for a vendor using known search criteria.
       - State
    :::image type="content" source="media/vendor-management/vendor-search.png" alt-text="Search for a vendor screen.":::
   1. Select **Search** to see your results.
-  1. Select the _vendor_ you want to view from the list of results.
-  1. Select the _vendor number_ to load the vendor's information from SAP to your screen.  If the list is too long, you can filter it to narrow the results by typing data from any field into _Filter vendors_.
+  1. Select the *vendor* you want to view from the list of results.
+  1. Select the *vendor number* to load the vendor's information from SAP to your screen.  If the list is too long, you can filter it to narrow the results by typing data from any field into *Filter vendors*.
 
 ### Enter a vendor number
 
-You can enter a known _vendor number_ into the **Search vendor number** field located in the top bar on the vendors app and select the **arrow** to the right. This action retrieves the vendor record from SAP and displays the information on your screen.
+You can enter a known vendor number into the *Search vendor number* field and select the **arrow** to retrieve the vendor record from SAP and display the information on your screen.
 
 ## Update vendor information
 
-Once an existing vendor record is loaded to the app, making changes is straightforward. Select the **Edit** button to toggle into _Change_ mode.
+Once an existing vendor record is loaded to the app, making changes is straightforward. Select the **Edit** button to toggle into *Change* mode.
 
 ### Edit the header
 
@@ -70,7 +70,7 @@ Header information can be edited directly on the main page.
 
 1. Select **Done** to return to the main page with the updates or **Cancel** to return with no changes.
 
-1. Select **+ Add** to initiate the creation of a new assignment. Once a row is selected with the checkbox, the _X Delete_ button appears. That allows for the assignment to be flagged as deleted in SAP.
+1. Select **+ Add** to initiate the creation of a new assignment. Once a row is selected with the checkbox, the *X Delete* button appears. That allows for the assignment to be flagged as deleted in SAP.
 
 > [!NOTE]
 >
@@ -78,14 +78,14 @@ Header information can be edited directly on the main page.
 
 ### Edit phone numbers and email addresses
 
-Phone numbers and email addresses can be maintained in similar fashion to the purchasing organization and company code assignments, with _Edit_, _+ Add_, and _X Delete_ options available for each entry.
+Phone numbers and email addresses can be maintained in similar fashion to the purchasing organization and company code assignments, with *Edit*, *+ Add*, and *X Delete* options available for each entry.
 
 ### Save or cancel
 
-Once the changes are complete, you can select either the **Save** or **Cancel** button that appears in the top bar on the screen.
+Once the changes are complete, you can select either **Save** or **Cancel**.
 
-- _Save_ results in the call of standard functions for _vendor update_ in SAP and you'll see the updated vendor record load on to the page from SAP.
-- _Cancel_ discards all changes and the original vendor data is restored to the state.
+- *Save* results in the call of standard functions for *vendor update* in SAP and you'll see the updated vendor record load on to the page from SAP.
+- *Cancel* discards all changes and the original vendor data is restored to the state.
 
 ## Create a vendor
 
@@ -103,14 +103,14 @@ Each purchasing organization and company code assignment is added individually. 
 
 ### Add phone numbers and email addresses
 
-Phone numbers and email addresses can be added in similar fashion to the purchasing organization and company code assignments, with _Edit_, _+ Add_ and _X Delete_ options available for each entry.
+Phone numbers and email addresses can be added in similar fashion to the purchasing organization and company code assignments, with *Edit*, *+ Add* and *X Delete* options available for each entry.
 
 ### Save or cancel changes
 
 Once the changes are complete, you can select either the **Save** or **Cancel** button located at the top of the screen.
 
-- _Save_ results in the call of standard functions for _vendor creation_ in SAP and you will see the saved vendor record load on to the page from SAP.
-- _Cancel_ discards all changes and the original data is restored to its initial state.
+- *Save* results in the call of standard functions for *vendor creation* in SAP and you will see the saved vendor record load on to the page from SAP.
+- *Cancel* discards all changes and the original data is restored to its initial state.
 
 ## Field mappings
 
