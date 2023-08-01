@@ -24,7 +24,7 @@ In this tutorial, you'll learn how to:
 - Allocate add-ons using PowerShell to perform this action at scale
 - Unassign the add-on when finished
 
-As an example of this scenario, a customer who has purchased AI Builder Credits can assign those to an environment to account for AI Builder usage in that environment.
+As an example of this scenario, a customer who has purchased AI Builder Credits and Power Automate per Process flows can assign those add-ons to an environment to account for usage in that environment.
 
 > [!IMPORTANT]
 > Power Platform APIs and tools are in preview.  Portions of this tutorial may change in the future.
@@ -32,6 +32,10 @@ As an example of this scenario, a customer who has purchased AI Builder Credits 
 ## Login and perform the allocation
 
 To start, we will login as a Power Platform administrator and will allocate AI Builder credits to a particular environment.  For this example, we will pick a random environment but you would want to assign the add-ons you require to the appropriate environments where they will be used.
+
+### Before you begin
+
+Not all add-ons are available in the admin center UI.  As new add-ons become available, they are often surfaced via API and programmability tools first to get customer feedback before making them more generally available in the UI.  Such an example is the Power Automate per Process add-on, which we will show how to allocate using PowerShell below.
 
 # [Power Platform admin center](#tab/PPAC)
 
@@ -49,7 +53,9 @@ On the next screen, select an environment and review all of the various add-ons 
 
 ### Automated allocation via PowerShell
 
-Load up your PowerShell console and execute the following commands to allocate add-ons to a given environment.  In this example, we are selecting the same environment shown from the manual example in the admin center, but you could query for several environments and loop through each one as required.  Note the variables so that you can change the input values as required. 
+Load up your PowerShell console and execute the following commands to allocate add-ons to a given environment.  In this example, we are selecting the same environment shown from the manual example in the admin center, but you could query for several environments and loop through each one as required.  Note that in the PowerShell example below, we are using the new **PowerAutomatePerProcess** add-on type, which is not yet available in the admin center UI.
+
+For a list of all add-on types, see [Definitions: External Currency Type](https://learn.microsoft.com/en-us/rest/api/power-platform/licensing/currency-allocation/get-currency-allocation-by-environment#externalcurrencytype).
 
 ```powershell
 #Install the module
@@ -67,7 +73,7 @@ $AccessToken = Get-AzAccessToken -TenantId $TenantId -ResourceUrl "https://api.p
 $headers = @{ 'Authorization' = 'Bearer '+$AccessToken.Token }
 $headers.Add('Content-Type', 'application/json')
 
-$patchRequestBody =  "{`"currencyAllocations`": `"[{currencyType: `"AI`", allocated:2}]`" }"
+$patchRequestBody =  "{`"currencyAllocations`": `"[{currencyType: `"PowerAutomatePerProcess`", allocated:1}]`" }"
 
 Write-Host "Calling patch to adjust add-on allocations..."
 
@@ -110,7 +116,7 @@ $AccessToken = Get-AzAccessToken -TenantId $TenantId -ResourceUrl "https://api.p
 $headers = @{ 'Authorization' = 'Bearer '+$AccessToken.Token }
 $headers.Add('Content-Type', 'application/json')
 
-$patchRequestBody =  "{`"currencyAllocations`": `"[{currencyType: `"AI`", allocated:0}]`" }"
+$patchRequestBody =  "{`"currencyAllocations`": `"[{currencyType: `"PowerAutomatePerProcess`", allocated:0}]`" }"
 
 Write-Host "Calling patch to adjust add-on allocations..."
 
