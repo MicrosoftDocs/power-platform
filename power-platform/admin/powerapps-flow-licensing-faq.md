@@ -21,10 +21,6 @@ For more details about Microsoft Power Platform licensing, download the [Licens
 
 This section provides answers to Power Platform products in general.
 
-### What are the new Power Platform offers that launched on August 1, 2023?
-
-This new Power Platform simplified portfolio of offers is generally available August 1, 2023. Here is an overview of the offers.
-
 ### What are the self-service purchase options for the Power Platform products?
 
 See the FAQ: [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities).
@@ -81,7 +77,7 @@ See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 ### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
-The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each *per app* license provides an individual user with rights to one app (canvas and/or model-driven) or one Power Apps custom website, within a single environment. A single user might be covered by multiple *per app* licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the *per app* license is stackable.
+The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each *per app* license provides an individual user with rights to one app (canvas and/or model-driven) within a single environment. A single user might be covered by multiple *per app* licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the *per app* license is stackable.
 
 An important part of this feature simplification is that we'll no longer require any standalone plans for maker or admin capabilities. Previously admins required a Power Apps P2 license for certain management operations; this will no longer be the case.
 
@@ -646,12 +642,6 @@ Learn more:
 #### What add-ons are available to the Power Apps and Power Automate plans?
 
 A list of add-ons applicable to all standalone Power Apps and Power Automate plans are listed below:
-
--   New **Power Apps Portals login capacity add-on** and **Portals page view capacity add-on** is for external users of Power Apps Portals. External users are those outside of your organization who sign in with various identities such as LinkedIn, Microsoft account, other commercial sign-in providers, or anonymously.
-
-    -   Power Apps Portals log in capacity add-ons (various volume tiers start from $200 per 100 logins per month)
-
-    -   Power Apps Portals page view capacity add-on (100,000 anonymous page views for $100 per month)
 
 -   **Power Platform Requests add-on (formally Power Apps and Power Automate capacity add-on**) increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
 
