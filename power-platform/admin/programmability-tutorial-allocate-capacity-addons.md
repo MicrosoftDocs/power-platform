@@ -16,44 +16,46 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can utilize. These capabiities can be assigned at the environment-level in Power Platform admin center, and are made available based on prior license purchases.  To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
+Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can utilize. These capabiities can be assigned at the environment-level in Power Platform admin center, and are made available based on prior license purchases. To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
 
 In this tutorial, you'll learn how to:
 
-- Visit the Power Platform admin center and manually allocate an add-on to an environment.
-- Allocate add-ons using PowerShell to perform this action at scale.
+- Go to the Power Platform admin center and manually allocate an add-on to an environment.
+- Allocate add-ons at scale using PowerShell.
 - Unassign the add-on when finished.
 
-As an example of this scenario, a customer who has purchased AI Builder Credits and Power Automate per Process flows can assign those add-ons to an environment to account for usage in that environment.
+As an example of this scenario, a customer who has purchased AI Builder credits and Power Automate per Process flows can assign those add-ons to an environment to account for usage in that environment.
 
 > [!IMPORTANT]
-> Power Platform APIs and tools are in preview.  Portions of this tutorial may change in the future.
+> This is a preview feature.
+> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-## Login and perform the allocation
+## Allocate an add-on to an environment
 
-To start, we will login as a Power Platform administrator and will allocate AI Builder credits to a particular environment.  For this example, we will pick a random environment but you would want to assign the add-ons you require to the appropriate environments where they will be used.
+To start, log in as a Power Platform administrator and allocate AI Builder credits to the environment where they will be used.
 
-### Before you begin
-
-Not all add-ons are available in the admin center UI.  As new add-ons become available, they are often surfaced via API and programmability tools first to get customer feedback before making them more generally available in the UI.  Such an example is the Power Automate per Process add-on, which we will show how to allocate using PowerShell below.
+Not all add-ons are available in the Power Platform admin center UI.  As new add-ons become available, they are often first surfaced using API and programmability tools to get customer feedback before making them more generally available in the UI.  Such an example is the Power Automate per Process add-on, which can be allocated using PowerShell, as shown in the following PowerShell example.
 
 # [Power Platform admin center](#tab/PPAC)
 
-### Manual allocation from the admin center
+### Manual allocation from the Power Platform admin center
 
-Once logged in to the admin center, visit the **Resources** -> **Capacity** page.  From there, scroll down to the **Add-ons** section and click the **Manage** link.
+1. After you sign in to the Power Platform admin center, select **Resources** > **Capacity**.  
+2. Scroll down to the **Add-ons** section and select the **Manage** link.
 
-:::image type="content" source="media/tutorial-allocate-addons1.png" alt-text="Select the Manage link.":::
+    :::image type="content" source="media/tutorial-allocate-addons1.png" alt-text="Select the Manage link.":::
 
-On the next screen, select an environment and review all of the various add-ons you could assign.  As a reminder, you can only adjust add-ons for those you have previously purchased.  In this example, we will add 500 AI Builder Credits to the environment and click **Save**.
+3. Select an environment and review all of the various add-ons you could assign. Keep in mind that you can only adjust add-ons for those that you have previously purchased.  
 
-:::image type="content" source="media/tutorial-allocate-addons2.png" alt-text="Select an environment and review all of the various add-ons you could assign.":::
+    In this example, we will add 500 AI Builder credits to the environment, and then select **Save**.
+
+    :::image type="content" source="media/tutorial-allocate-addons2.png" alt-text="Select an environment and review all of the various add-ons you could assign.":::
 
 # [PowerShell](#tab/PowerShell)
 
 ### Automated allocation via PowerShell
 
-Load up your PowerShell console and execute the following commands to allocate add-ons to a given environment.  In this example, we are selecting the same environment shown from the manual example in the admin center, but you could query for several environments and loop through each one as required.  Note that in the PowerShell example below, we are using the new **PowerAutomatePerProcess** add-on type, which is not yet available in the admin center UI.
+Load your PowerShell console and execute the following commands to allocate add-ons to a specific environment. In this example, we are selecting the same environment shown from the manual example in the admin center, but you could query for several environments and loop through each one as required.  Note that in the PowerShell example below, we are using the new **PowerAutomatePerProcess** add-on type, which is not yet available in the Power Platform admin center UI.
 
 For a list of all add-on types, see [Definitions: External Currency Type](/rest/api/power-platform/licensing/currency-allocation/get-currency-allocation-by-environment#externalcurrencytype).
 
@@ -86,19 +88,22 @@ $patchRequestResponse
 ---
 
 ## Unassign the add-on when finished
-In this step, we will clean up the allocation previously assigned.  This is also commonly done by admins who wish to reclaim capacity for other purposes.
+You can unassign an add-on. This is also commonly done by admins who wish to reclaim capacity for other purposes.
 
 # [Power Platform admin center](#tab/PPAC)
 
-### Cleanup from the UI
+### Unassign the add-on from the Power Platform admin center
 
-Return to the Capacity page and click the **Manage** button in the Add-ons section.  From there, find the previous environment and remove the AI Builder Credits allocation and click **Save**.
-
+1. Sign in to the Power Platform admin center and select **Resources** > **Capacity**.
+2. Select the **Add-ons** tab.
+3. Select **Manage**.
+4. Find your environment and remove the AI Builder Credits allocation.
+5. Select **Save**.
 
 # [PowerShell](#tab/PowerShell)
 
-### Cleanup via PowerShell
-Use the below script to remove the prior allocation.  Note to change the environmentID to one that matches your environment.
+### Unassign the add-on using PowerShell
+Use the following script to remove the prior allocation.  You must change the **environmentID** to one that matches your environment.
 
 ```powershell
 #Install the module
