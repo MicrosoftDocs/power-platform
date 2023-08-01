@@ -1,10 +1,10 @@
 ---
-title: "Frequently asked questions | MicrosoftDocs"
-description: "Frequently asked questions, tips, and how-to's about getting the CoE Starter Kit set up"
+title: Frequently asked questions | MicrosoftDocs
+description: Frequently asked questions, tips, and how-to's about getting the CoE Starter Kit set up.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/02/2023
+ms.date: 08/01/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
