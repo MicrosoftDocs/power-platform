@@ -20,9 +20,11 @@ ms.subservice: solution-templates
 
 # SAP Vendor Management app
 
-The SAP Vendor Management app lets you do several SAP functions quicker and easier than using SAP GUI.  You can view, update, or create a vendor.
+The SAP Vendor Management app is part of the SAP Procurement solution. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view, update, and create a vendor.
 
-:::image type="content" source="media/vendor-management/sap-vendors-app.png" alt-text="Image of the Power Platform Procurement vendor app":::
+This video shows how you can manage your SAP vendor data using the SAP Vendor Management app.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18F9g]
 
 ## View vendor information
 
@@ -31,6 +33,8 @@ You can load existing vendor information three different ways:
 - Select a recent vendor from a dropdown list.
 - Search for a vendor.
 - Enter a known vendor number.
+
+:::image type="content" source="media/vendor-management/sap-vendors-app.png" alt-text="Image of the Power Platform Procurement vendor app":::
 
 ### Select a vendor invoice
 
@@ -154,7 +158,7 @@ The table provides vendor screen to function module field mappings.
 
 | Segment | Field | Label                  | Comment               |
 |---------|-------|------------------------|-----------------------|
-| E1LFA1M | LIFNR | Vendor                 | Blank during _Create_ |
+| E1LFA1M | LIFNR | Vendor                 | Blank during *Create* |
 | E1LFA1M | KTOKK | AccountGroup           |                       |
 | E1LFA1M | LAND1 | Country                |                       |
 | E1LFA1M | NAME1 | VendorName             |                       |
@@ -164,13 +168,13 @@ The table provides vendor screen to function module field mappings.
 | E1LFA1M | STRAS | Street                 |                       |
 | E1LFB1M | MSGFN | CrudType               |                       |
 | E1LFB1M | BUKRS | CompanyCode            |                       |
-| E1LFB1M | LOEVM | CrudType               | _X_ for Delete        |
+| E1LFB1M | LOEVM | CrudType               | *X* for Delete        |
 | E1LFB1M | AKONT | GLAccount              |                       |
 | E1LFB1M | ZWELS | PaymentMethods         |                       |
 | E1LFB1M | ZTERM | PaymentTerms           |                       |
 | E1LFM1M | MSGFN | CrudType               |                       |
 | E1LFM1M | EKORG | PurchasingOrganization |                       |
-| E1LFM1M | LOEVM | CrudType               | _X_ for Delete        |
+| E1LFM1M | LOEVM | CrudType               | *X* for Delete        |
 | E1LFM1M | WAERS | Currency               |                       |
 | E1LFM1M | ZTERM | PaymentTerms           |                       |
 | E1LFM1M | EKGRP | PurchasingGroup        |                       |

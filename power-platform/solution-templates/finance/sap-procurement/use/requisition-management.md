@@ -20,9 +20,11 @@ ms.subservice: solution-templates
 
 # SAP Requisition Management app
 
-The SAP Requisition Management app allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view and update an existing requisition, create a new requisition, and convert a requisition to a purchase order.
+The SAP Requisition Management app is part of the SAP Procurement solution. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view and update an existing requisition, create a new requisition, and convert a requisition to a purchase order.
 
-:::image type="content" source="media/requisition-management/sap-req-app.png" alt-text="Image of the Power Platform Procurement requisition app":::
+This video shows how you can manage your SAP requisition data using the SAP Requisition Management app.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18CAe]
 
 ## View requisition data
 
@@ -31,6 +33,8 @@ You have three options for viewing a requisition:
 - Select a recent requisition that you have interacted with.
 - Enter a known requisition number.
 - Search for a requisition based on vendor and date range.
+
+:::image type="content" source="media/requisition-management/sap-req-app.png" alt-text="Image of the Power Platform Procurement requisition app":::
 
 ### Select a recent requisition
 
