@@ -1,5 +1,5 @@
 ---
-title: Tenant-level analytics (preview)
+title: Tenant-level analytics
 description: View tenant-level analytics in various reports.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,24 +12,11 @@ search.audienceType:
   - admin
 ---
 
-# Tenant-level analytics (preview)
+# Tenant-level analytics
 
 Power Platform resources periodically emit telemetry data for various operations and user activities across environments and extensions. Tenant-level analytics allows admins to view and compare insights derived from the Platform telemetry data across environments they manage. Tenant admins can view reports containing analytics that apply to all environments within the tenant. 
 
 The tenant-level analytics experience varies based on which version you're using. 
-
-# [New experience (preview)](#tab/webapi)
-
-[This tab is pre-release documentation and is subject to change.]
-
-Once enabled, this feature aggregates data from environments across all regions in your tenant and copies it into the default environment region for tenant-level reporting. A tenant-level administrator role is required for one-time operation of granting consent for tenant-level analytics. 
-
-To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps** or **Analytics** > **Power Automate**. Tenant-level reports can be accessed in the **Overview** tab, and environment-level reports can be accessed in the **Environment View** tab. 
-
-> [!Important]
-> [!include [preview](../includes/cc-preview-features-definition.md)]
-> 
-> This capability is in the process of rolling out, and may not be available in your region yet.
 
 ## Who can view these reports?
 
