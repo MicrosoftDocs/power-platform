@@ -1,6 +1,6 @@
 ---
 title: Pre-populate connection references and environment variables for automated deployments using Power Platform Build Tools
-description: "Learn about pre-populating connection references and environment variables to truly automate your deployments.
+description: Learn about pre-populating connection references and environment variables to truly automate your deployments.
 author: kkanakas
 ms.author: kartikka
 ms.custom: ""
