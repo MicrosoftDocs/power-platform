@@ -702,6 +702,8 @@
                   href: programmability-tutorial-create-daily-capacity-report.md
                 - name: "Install an application to a target environment (preview)"
                   href: programmability-tutorial-install-application-environment.md
+                - name: "Tutorial: Allocate add-ons to environments (preview)"
+                  href: programmability-tutorial-allocate-capacity-addons.md
             - name: PowerShell
               items:
                 - name: Getting started
