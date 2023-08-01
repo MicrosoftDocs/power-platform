@@ -16,12 +16,12 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can utilize. These capabiities can be assigned at the environment-level in the Power Platform admin center, and are made available based on prior license purchases. To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
+Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can utilize. These capabiities can be assigned at the environment-level in the Power Platform admin center and are made available based on prior license purchases. To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
 
 In this tutorial, you'll learn how to:
 
-- Go to the Power Platform admin center and manually allocate an add-on to an environment.
-- Allocate add-ons at scale using PowerShell.
+- Manually allocate an add-on to an environment in the Power Platform admin center.
+- Allocate add-ons, at scale, using PowerShell.
 - Unassign the add-on when finished.
 
 As an example of this scenario, a customer who has purchased AI Builder credits and Power Automate per Process flows can assign those add-ons to an environment to account for usage in that environment.
@@ -32,15 +32,15 @@ As an example of this scenario, a customer who has purchased AI Builder credits 
 
 ## Allocate an add-on to an environment
 
-To start, log in as a Power Platform administrator and allocate AI Builder credits to the environment where they will be used.
+To start, sign in as a Power Platform administrator and allocate AI Builder credits to the environment where they will be used.
 
-Not all add-ons are available in the Power Platform admin center UI.  As new add-ons become available, they are often first surfaced using API and programmability tools to get customer feedback before making them more generally available in the UI.  Such an example is the Power Automate per Process add-on, which can be allocated using PowerShell, as shown in the following PowerShell example.
+Not all add-ons are available in the Power Platform admin center UI. As new add-ons become available, they are often first surfaced using API and programmability tools to get customer feedback before making them more generally available in the UI.  Such an example is the Power Automate per Process add-on, which can be allocated using PowerShell, as shown in the following PowerShell example.
 
 # [Power Platform admin center](#tab/PPAC)
 
 ### Manually allocate an add-on from the Power Platform admin center
 
-1. After you sign in to the Power Platform admin center, select **Resources** > **Capacity**.  
+1. In the Power Platform admin center, select **Resources** > **Capacity**.  
 2. Scroll down to the **Add-ons** section and select the **Manage** link.
 
     :::image type="content" source="media/tutorial-allocate-addons1.png" alt-text="Select the Manage link.":::
