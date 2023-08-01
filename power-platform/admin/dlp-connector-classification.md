@@ -4,7 +4,7 @@ description: About ways to categorize connectors within a DLP policy.
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/05/2022
+ms.date: 08/01/2023
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -12,6 +12,7 @@ ms.reviewer: jimholtz
 contributors:
   - mikferland-msft
   - mihaelablendea
+  - kavehkazms 
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -89,9 +90,9 @@ The following connectors can't be blocked by using DLP policies.
 
 ## Viewing the classification of connectors
 
-When editing DLP policies in the Power Platform Admin Center, all available and visible connectors are shown, regardless of whether they have been classified in a policy. However, when viewing a DLP policy in PowerShell or via the Power Platform for Admins connector, you will only see the connectors that have been explicitly classified (i.e. classified in the Business, Non-business, or Blocked categories). DLP policies viewed from PowerShell or the Power Platform for Admins connector may include stale references to connectors that are no longer available or visible.
+When editing DLP policies in the Power Platform admin center, all available and visible connectors are shown, regardless of whether they have been classified in a policy. However, when viewing a DLP policy in PowerShell or through the Power Platform for Admins connector, you see only the connectors that have been explicitly classified in the Business, Non-business, or Blocked categories. DLP policies viewed from PowerShell or the Power Platform for Admins connector may include stale references to connectors that are no longer available or visible.
 
-In general, the list of Power Platform connectors can differ depending on where you are viewing them, and there are several reasons for this. Some connectors may require specific licensing, and if your license doesn't include them, they will not be visible. Different environments can also have different connectors available due to compliance and regulatory requirements. Microsoft may release updates to connectors, which may not be immediately available across all Power Platform components. Some connectors may only be available in Power Automate and not in Power Apps. Depending on your role and permissions, you may not have access to all connectors.
+In general, the list of Power Platform connectors can differ depending on where you are viewing them, and there are several reasons for this. Some connectors may require specific licensing, and if your license doesn't include them, they're not visible. Different environments can also have different connectors available due to compliance and regulatory requirements. Microsoft may release updates to connectors, which may not be immediately available across all Power Platform components. Some connectors may only be available in Power Automate and not in Power Apps. Depending on your role and permissions, you may not have access to all connectors.
 
 ## Custom connector classification
 
