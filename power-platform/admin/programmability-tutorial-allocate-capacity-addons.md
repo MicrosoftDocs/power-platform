@@ -14,7 +14,7 @@ search.audienceType:
 
 # Tutorial: Allocate add-ons to environments (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Add-ons provide extra capabilities that Power Apps, Power Automate Flows, and other resources can utilize.  These are assignable at the environment level in Power Platform admin center, and are made available based on prior license purchases.  
 
@@ -24,7 +24,7 @@ In this tutorial, you'll learn how to:
 - Allocate add-ons using PowerShell to perform this action at scale
 - Unassign the add-on when finished
 
-As an example of this scenario, a customer who has purchased Power Apps app passes can assign those to an environment to allow anyone in those environments to use the apps without an individual license.  
+As an example of this scenario, a customer who has purchased AI Builder Credits can assign those to an environment to account for AI Builder usage in that environment.
 
 > [!IMPORTANT]
 > Power Platform APIs and tools are in preview.  Portions of this tutorial may change in the future.
@@ -57,17 +57,29 @@ Load up your PowerShell console and execute the following commands to allocate a
 
 ```powershell
 #Install the module
-Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
+Install-Module -Name Az.Accounts
 
 # Set variables for your session
 $TenantId = "YOUR_TENANT_GUID_FROM_AAD"
-$SPNId = "YOUR_AZURE_APPLICATION_REGISTRATION_CLIENT_ID"
-$ClientSecret = "YOUR_AZURE_APPLICATION_CLIENT_SECRET"
-$capacityDetailsList = @()
+$EnvironmentId = "YOUR_POWER_PLATFORM_ENVIRONMENT_ID_HERE"
 
 Write-Host "Creating a session against the Power Platform API"
 
-Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret $ClientSecret
+Connect-AzAccount
+$AccessToken = Get-AzAccessToken -TenantId $TenantId -ResourceUrl "https://api.powerplatform.com/"
+
+$headers = @{ 'Authorization' = 'Bearer '+$AccessToken.Token }
+$headers.Add('Content-Type', 'application/json')
+
+$patchRequestBody =  "{`"currencyAllocations`": `"[{currencyType: `"AI`", allocated:2}]`" }"
+
+Write-Host "Calling patch to adjust add-on allocations..."
+
+$patchRequestResponse = Invoke-RestMethod -Method Patch -Uri "https://api.powerplatform.com/licensing/environments/$EnvironmentId/allocations?api-version=2022-03-01-preview" 
+-Headers $headers -Body $patchRequestBody
+
+$patchRequestResponse
+
 ```
 ---
 
@@ -87,8 +99,29 @@ Return to the Capacity page and click the **Manage** button in the Add-ons secti
 Use the below script to remove the prior allocation.  Note to change the environmentID to one that matches your environment.
 
 ```powershell
-#fetch environment list with capacity populated.  This is only possible when calling full environment list
-$environmentsList = Get-AdminPowerAppEnvironment -Capacity
+#Install the module
+Install-Module -Name Az.Accounts
+
+# Set variables for your session
+$TenantId = "YOUR_TENANT_GUID_FROM_AAD"
+$EnvironmentId = "YOUR_POWER_PLATFORM_ENVIRONMENT_ID_HERE"
+
+Write-Host "Creating a session against the Power Platform API"
+
+Connect-AzAccount
+$AccessToken = Get-AzAccessToken -TenantId $TenantId -ResourceUrl "https://api.powerplatform.com/"
+
+$headers = @{ 'Authorization' = 'Bearer '+$AccessToken.Token }
+$headers.Add('Content-Type', 'application/json')
+
+$patchRequestBody =  "{`"currencyAllocations`": `"[{currencyType: `"AI`", allocated:0}]`" }"
+
+Write-Host "Calling patch to adjust add-on allocations..."
+
+$patchRequestResponse = Invoke-RestMethod -Method Patch -Uri "https://api.powerplatform.com/licensing/environments/$EnvironmentId/allocations?api-version=2022-03-01-preview" 
+-Headers $headers -Body $patchRequestBody
+
+$patchRequestResponse
 ```
 ---
 
