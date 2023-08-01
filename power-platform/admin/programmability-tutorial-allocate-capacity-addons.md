@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Allocate add-ons to environments (preview) | Microsoft Docs"
-description: Learn how to use allocate add-ons to environments manually, as well as programmatically.
+description: Learn how to allocate add-ons to environments manually, as well as programmatically.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -16,9 +16,9 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can utilize. These capabiities can be assigned at the environment-level in the Power Platform admin center and are made available based on prior license purchases. To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
+Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can utilize. These capabilities can be assigned at the environment-level in the Power Platform admin center and are made available based on prior license purchases. To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn to:
 
 - Manually allocate an add-on to an environment in the Power Platform admin center.
 - Allocate add-ons, at scale, using PowerShell.
@@ -32,9 +32,9 @@ As an example of this scenario, a customer who has purchased AI Builder credits 
 
 ## Allocate an add-on to an environment
 
-To start, sign in as a Power Platform administrator and allocate AI Builder credits to the environment where they will be used.
+To start, sign in as a Power Platform administrator and allocate AI Builder credits to the environment where they'll be used.
 
-Not all add-ons are available in the Power Platform admin center UI. As new add-ons become available, they are often first surfaced using API and programmability tools to get customer feedback before making them more generally available in the UI.  Such an example is the Power Automate per Process add-on, which can be allocated using PowerShell, as shown in the following PowerShell example.
+Not all add-ons are available in the Power Platform admin center UI. As new add-ons become available, they're often first surfaced using API and programmability tools to get customer feedback before making them more generally available in the UI.  Such an example is the Power Automate per Process add-on, which can be allocated using PowerShell, as shown in the following PowerShell example.
 
 # [Power Platform admin center](#tab/PPAC)
 
@@ -47,7 +47,7 @@ Not all add-ons are available in the Power Platform admin center UI. As new add-
 
 3. Select an environment and review all of the various add-ons you could assign. Keep in mind that you can only adjust add-ons for those that you have previously purchased.  
 
-    In this example, we will add 500 AI Builder credits to the environment, and then select **Save**.
+    In this example, we add 500 AI Builder credits to the environment, and then select **Save**.
 
     :::image type="content" source="media/tutorial-allocate-addons2.png" alt-text="Select an environment and review all of the various add-ons you could assign.":::
 
@@ -55,7 +55,7 @@ Not all add-ons are available in the Power Platform admin center UI. As new add-
 
 ### Allocate an add-on using PowerShell
 
-Load your PowerShell console and execute the following commands to allocate add-ons to a specific environment. In this example, we are selecting the same environment shown from the manual example in the admin center, but you could query for several environments and loop through each one as required.  Note that in the PowerShell example below, we are using the new **PowerAutomatePerProcess** add-on type, which is not yet available in the Power Platform admin center UI.
+Load your PowerShell console and execute the following commands to allocate add-ons to a specific environment. In this example, select the same environment used in the manual example in the Power Platform admin center, but you could query for several environments and loop through each one, as required. In the PowerShell example below, use the new **PowerAutomatePerProcess** add-on type, which isn't yet available in the Power Platform admin center UI.
 
 For a list of all add-on types, see [Definitions: External Currency Type](/rest/api/power-platform/licensing/currency-allocation/get-currency-allocation-by-environment#externalcurrencytype).
 
