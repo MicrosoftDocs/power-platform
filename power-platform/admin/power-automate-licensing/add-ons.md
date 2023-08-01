@@ -24,7 +24,7 @@ If Power Automate is throttling your flows, try [Pay-as-you-go](types.md#power-p
 
 ## Unattended RPA add-on
 > [!NOTE]
-> The Power Automate unattended RPA add-on is now replaced by the Power Automate Process plan which provides the same capability as the unattended RPA add-on.
+> The Power Automate unattended RPA add-on is now replaced by the Power Automate Process plan, which provides the same capability as the unattended RPA add-on.
 
 Unattended desktop flows run without human interaction. These flows are best for scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
 
