@@ -47,9 +47,11 @@ Not all add-ons are available in the Power Platform admin center UI. As new add-
 
 3. Select an environment and review all of the various add-ons you could assign. Keep in mind that you can only adjust add-ons for those that you have previously purchased.  
 
-    In this example, we add 500 AI Builder credits to the environment, and then select **Save**.
+    In this example, we add 500 AI Builder credits to the environment.
 
     :::image type="content" source="media/tutorial-allocate-addons2.png" alt-text="Select an environment and review all of the various add-ons you could assign.":::
+
+4. Select **Save**.
 
 # [PowerShell](#tab/PowerShell)
 
