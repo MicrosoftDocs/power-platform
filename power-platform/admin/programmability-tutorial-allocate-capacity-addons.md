@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Allocate add-ons to environments (preview)
+title: Tutorial: Allocate add-ons to environments (preview) | Microsoft Docs
 description: Learn how to use allocate add-ons to environments manually, as well as programmatically.
 author: laneswenka
 ms.reviewer: sericks
