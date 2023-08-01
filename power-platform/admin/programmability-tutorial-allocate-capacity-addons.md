@@ -57,7 +57,7 @@ Not all add-ons are available in the Power Platform admin center UI. As new add-
 
 ### Allocate an add-on using PowerShell
 
-Load your PowerShell console and execute the following commands to allocate add-ons to a specific environment. In this example, select the same environment used in the manual example in the Power Platform admin center, but you could query for several environments and loop through each one, as required. In the PowerShell example below, use the new **PowerAutomatePerProcess** add-on type, which isn't yet available in the Power Platform admin center UI.
+Load your PowerShell console and execute the following commands to allocate add-ons to a specific environment. In this example, select the same environment used in the manual example in the Power Platform admin center, but you could query for several environments and loop through each one, as required. In the example below, we used the new **PowerAutomatePerProcess** add-on type, which isn't yet available in the Power Platform admin center UI.
 
 For a list of all add-on types, see [Definitions: External Currency Type](/rest/api/power-platform/licensing/currency-allocation/get-currency-allocation-by-environment#externalcurrencytype).
 
