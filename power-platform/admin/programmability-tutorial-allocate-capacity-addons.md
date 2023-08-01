@@ -38,7 +38,7 @@ Not all add-ons are available in the Power Platform admin center UI.  As new add
 
 # [Power Platform admin center](#tab/PPAC)
 
-### Manual allocation from the Power Platform admin center
+### Manually allocate an add-on from the Power Platform admin center
 
 1. After you sign in to the Power Platform admin center, select **Resources** > **Capacity**.  
 2. Scroll down to the **Add-ons** section and select the **Manage** link.
@@ -53,7 +53,7 @@ Not all add-ons are available in the Power Platform admin center UI.  As new add
 
 # [PowerShell](#tab/PowerShell)
 
-### Automated allocation via PowerShell
+### Allocate an add-on using PowerShell
 
 Load your PowerShell console and execute the following commands to allocate add-ons to a specific environment. In this example, we are selecting the same environment shown from the manual example in the admin center, but you could query for several environments and loop through each one as required.  Note that in the PowerShell example below, we are using the new **PowerAutomatePerProcess** add-on type, which is not yet available in the Power Platform admin center UI.
 
@@ -87,23 +87,23 @@ $patchRequestResponse
 ```
 ---
 
-## Unassign the add-on when finished
+## Unassign an add-on
 You can unassign an add-on. This is also commonly done by admins who wish to reclaim capacity for other purposes.
 
 # [Power Platform admin center](#tab/PPAC)
 
-### Unassign the add-on from the Power Platform admin center
+### Unassign an add-on from the Power Platform admin center
 
 1. Sign in to the Power Platform admin center and select **Resources** > **Capacity**.
 2. Select the **Add-ons** tab.
 3. Select **Manage**.
-4. Find your environment and remove the AI Builder Credits allocation.
+4. Find your environment and remove the AI Builder Credits allocation that was assigned earlier in this article.
 5. Select **Save**.
 
 # [PowerShell](#tab/PowerShell)
 
-### Unassign the add-on using PowerShell
-Use the following script to remove the prior allocation.  You must change the **environmentID** to one that matches your environment.
+### Unassign an add-on using PowerShell
+Use the following script to unassign an add-on.  You must change the **environmentID** to one that matches your environment.
 
 ```powershell
 #Install the module
