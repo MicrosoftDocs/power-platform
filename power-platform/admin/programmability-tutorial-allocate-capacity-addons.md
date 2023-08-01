@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Add-ons provide extra capabilities that Power Apps, Power Automate Flows, and other resources can utilize.  These are assignable at the environment level in Power Platform admin center, and are made available based on prior license purchases.  
+Add-ons provide extra capabilities that Power Apps, Power Automate Flows, and other resources can utilize.  These are assignable at the environment level in Power Platform admin center, and are made available based on prior license purchases.  To learn more about add-on management, reporting, and access control visit [Add-on capacity management](./capacity-add-on.md).
 
 In this tutorial, you'll learn how to:
 
@@ -29,13 +29,9 @@ As an example of this scenario, a customer who has purchased AI Builder Credits 
 > [!IMPORTANT]
 > Power Platform APIs and tools are in preview.  Portions of this tutorial may change in the future.
 
-## Login and allocate
+## Login and perform the allocation
 
-To start, we will login as a Power Platform administrator and will allocate an app pass to a particular environment.
-
-### Before you begin
-
-Is there anything we need to make people aware of before they get started??
+To start, we will login as a Power Platform administrator and will allocate AI Builder credits to a particular environment.  For this example, we will pick a random environment but you would want to assign the add-ons you require to the appropriate environments where they will be used.
 
 # [Power Platform admin center](#tab/PPAC)
 
@@ -124,5 +120,3 @@ $patchRequestResponse = Invoke-RestMethod -Method Patch -Uri "https://api.powerp
 $patchRequestResponse
 ```
 ---
-
-## Related articles

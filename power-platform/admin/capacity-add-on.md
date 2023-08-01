@@ -64,6 +64,8 @@ To allocate capacity to an environment:
    - If you want to create 5 flows in an environment which are going to be used for business process flows, assign a capacity of 5 for **flow per business process**.
   - If a company has created a portal and anticipate 50,000 views of the portal, they should allocate 50,000 **portal page views**.
 
+> [!NOTE]
+> If you want to update many add-on allocations across environments at scale, please check out [Tutorial: Allocate add-ons to environments (preview)](./programmability-tutorial-allocate-capacity-addons.md).
 
 ## Control who can allocate add-on capacity
 
