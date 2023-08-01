@@ -135,7 +135,7 @@ Follow these steps to allocate add-ons to an environment.
    > The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
 1. Select **Save**.
 
-   ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-license-environment.png)
+   ![An image that displays the steps needed to assign a license to an environment and manage add-ons.](../media/power-automate-licensing/assign-license-environment.png)
 
    After you assign a per flow plan add-on to an environment, you can choose which flows can use that add-on.
 
@@ -249,7 +249,7 @@ Yes. To get started, use the [self-service purchase](/microsoft-365/commerce/sub
 > [!IMPORTANT]
 > This capability isn't available to government, non-profit, or education tenants in the United States.
 
-Customers can make a self-service purchase from Power Automate. To do this, they first provide their email address to confirm if they are a user in an existing Azure Active Directory (Azure AD) tenant. Next, they'll need to log in by using their Azure AD credentials. After signing in, the they need to indicate the number subscriptions they want to purchase and provide a credit card for payment. When the purchase is complete, they'll can start using their subscription. The purchaser can also access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
+Customers can make a self-service purchase from Power Automate. To do this, they first provide their email address to confirm if they are a user in an existing Azure Active Directory (Azure AD) tenant. Next, they need to log in by using their Azure AD credentials. After signing in, they need to indicate the number subscriptions they want to purchase and provide a credit card for payment. When the purchase is complete, they can start using their subscription. The purchaser can also access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
 
 ![This image displays the self service get started screen with all the necessary steps](../media/power-automate-licensing/get-started-self-service.png)
 
