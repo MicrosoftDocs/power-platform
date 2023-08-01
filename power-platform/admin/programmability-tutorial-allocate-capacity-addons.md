@@ -22,8 +22,8 @@ In this tutorial, you learn to:
 
 - Manually allocate an add-on to an environment in the Power Platform admin center.
 - Allocate add-ons, at scale, using PowerShell.
-- Unassign the add-on when finished.
-
+- Unassign an add-on.
+  
 As an example of this scenario, a customer who has purchased AI Builder credits and Power Automate per Process flows can assign those add-ons to an environment to account for usage in that environment.
 
 > [!IMPORTANT]
