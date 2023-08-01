@@ -16,19 +16,14 @@ searchScope:
 
 # Generative answers with Azure OpenAI on your data
 
-By connecting Power Virtual Agents with Azure OpenAI on your data, users will be able to leverage the resources from Azure in the Generative Answers node. [Azure OpenAI on your data] (https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data) works with OpenAI's powerful language models and Azure Cognitive Search to index your data to provide responses while complying with their organizational policies. Businesses can use these models to chat, view data citations, and customize chat experiences based on their data
+By connecting Power Virtual Agents with Azure OpenAI on your data, users will be able to leverage the resources from Azure in the Generative Answers node. [Azure OpenAI on your data](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data). works with OpenAI's powerful language models and Azure Cognitive Search to index your data to provide responses while complying with their organizational policies. Businesses can use these models to chat, view data citations, and customize chat experiences based on their data
 
-To get started, connect your data source using [Azure OpenAI Studio] (https://openai.studio-ppe.azure.com/) and start asking questions and chatting on your data.
+To get started, connect your data source using [Azure OpenAI Studio](https://openai.studio-ppe.azure.com/) and start asking questions and chatting on your data.
 ![image.png](/.attachments/image-17344070-b3a3-41e3-a95b-c8974fbfb81b.png)
 
 To connect a Power Virtual Agent bot to your data, select 'Deploy'. The bot is created an automatically connected to your Azure resource
 ![image.png](/.attachments/image-fb615231-bd18-4b2b-9ce1-274f76937d68.png)
 
-
->[!CAUTION]
-> Information sources defined in the **Generative answers** node will override those you have specified at the bot level, which will then function as a fallback. 
-
-These methods of boosting your bot using generative answers allow you to specify information sources for the entire bot (for instance, with a URL at bot creation) and also use alternate information sources within a topic (with the **Generative answers** node).
 
 
 ## Create with Generative Answers node
@@ -54,4 +49,7 @@ The Generative answers node allows you to use generative answers with your a bot
 
 The topic will now generate answers from the information sources via Azure OpenAI on your data connection.
 
+>[!CAUTION]
+> Information sources defined in the **Generative answers** node will override those you have specified at the bot level, which will then function as a fallback. 
 
+These methods of boosting your bot using generative answers allow you to specify information sources for the entire bot (for instance, with a URL at bot creation) and also use alternate information sources within a topic (with the **Generative answers** node).
