@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: laneswenka
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/31/2023
+ms.date: 08/01/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -55,7 +55,7 @@ On the next screen, select an environment and review all of the various add-ons 
 
 Load up your PowerShell console and execute the following commands to allocate add-ons to a given environment.  In this example, we are selecting the same environment shown from the manual example in the admin center, but you could query for several environments and loop through each one as required.  Note that in the PowerShell example below, we are using the new **PowerAutomatePerProcess** add-on type, which is not yet available in the admin center UI.
 
-For a list of all add-on types, see [Definitions: External Currency Type](https://learn.microsoft.com/en-us/rest/api/power-platform/licensing/currency-allocation/get-currency-allocation-by-environment#externalcurrencytype).
+For a list of all add-on types, see [Definitions: External Currency Type](/rest/api/power-platform/licensing/currency-allocation/get-currency-allocation-by-environment#externalcurrencytype).
 
 ```powershell
 #Install the module
