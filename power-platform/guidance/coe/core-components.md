@@ -3,7 +3,7 @@ title: Use core components
 description: "The CoE Starter Kit core components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment."
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 05/23/2023
+ms.date: 08/01/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -288,7 +288,7 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 | Admin \| Sync Template v3 (Connection Identities) | Automated | triggered by Admin \| Sync Template v3 (Driver) | This flow gets connection identity information by using Get Connections as Admin. This information is then created or updated in the Connection Reference Identity table. |
 | Admin \| Sync Template v3 CoE Solution Metadata | Button | Triggered from Admin \| Sync Template v3 (Call Updates) and manually from apps | Updates the CoE Solution Metadata table with values from CoE team after upgrades in order to track the solution contents of the CoE solutions. |
 | Admin \| Sync Template v3 (Desktop Flow - Runs) | Scheduled | Daily | This flow gets desktop flow run history and session details. Turning on this flow is optional, only turn this flow on if a tenant-level overview of desktop flows is important. |
-| Admin \| Sync Template v3 (Desktop Flow) | Automated | triggered by Admin \| Sync Template v3 (Driver) | This flow retrieves desktop flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of desktop flows is important. |
+| Admin \| Sync Template v3 (Desktop Flow) | Automated | triggered by Admin \| Sync Template v3 (Driver) | This flow retrieves desktop flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional. Only turn this flow on if a tenant-level overview of desktop flows is important. |
 | Admin \| Sync Template v3 (Environment Properties) | Automated | triggered by Admin \| Sync Template v3 (Driver) | This flow retrieves add-on, capacity, and security role information for environments. This information is retrieved from the Power Platform admin connector and from underlying Dataverse tables, and requires the user running the flow to have system administrator privileges in the environment. |
 | Admin \| Sync Template v3 (Flow Action Details) | Scheduled | Daily | This flow gets the actions and triggers for all flows. This flow uses [Get Flow as Admin](/connectors/flowmanagement/#get-flow-as-admin) to get action and trigger details for every individual flow in your tenant. Thus, it can be a very time-consuming and resource-consuming flow to run. Turning on this flow is optional, only do so to perform action-level reporting or analysis, such as reporting on who's using the Send Email action of the Microsoft 365 Outlook connector. |
 | Admin \| Sync Template v3 (Flows) | Automated | triggered by Admin \| Sync Template v3 (Driver) | This flow gets cloud flow information by using [List Flows as Admin](/connectors/flowmanagement/#list-flows-as-admin). Also updates the record if flows have been deleted. |
