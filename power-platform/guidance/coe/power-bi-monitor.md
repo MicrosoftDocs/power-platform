@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 08/02/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -21,13 +21,9 @@ With the **Monitor** section of the Center of Excellence (CoE) Power BI dashboar
 The **Overview – Power Apps, Power Automate and Chatbots** page provides you with a tenant-wide overview of resources:
 
 - Total number of environments (and environments created this month)
-
 - Total number of environment makers
-
 - Total number of custom connectors
-
 - Total number of apps, app makers, and apps created this month
-
 - Total number of flows, flow makers, and flows created this month
 - Total number of bots, bot makers, and bots created this month
 
@@ -52,14 +48,10 @@ The **Environments** page shows you how many environments, environment makers, a
 The graphs visualize:
 
 - The environment creation trend by date
-
 - The number of resources per environment
-
 - The number of environments by type
-
 - Top environment creators
-
-- The number of managed environments
+- The number of Managed Environments
 
 The filters allow you to drill down and analyze specific environment types, maker trends, and changes over time.
 
@@ -67,12 +59,11 @@ The filters allow you to drill down and analyze specific environment types, make
 
 ## Teams Environments
 
-The **Teams Environments** page shows you the number of Microsoft Teams environments, environment makers, and resources in those environments you have
+The **Teams Environments** page shows you the number of Microsoft Teams environments, environment makers, and resources in those environments.
 
 The graphs visualize:
 
 - The environment creation trend
-
 - The number of resources per environment
 
 The tables of environments shows:
@@ -88,14 +79,14 @@ The tables of environments shows:
 
 The table of apps shows:
 
-- App Name
+- App name
 - Owner
-- Last Launched
-- Created On date
-- Modified On date
+- Last launched
+- Created on date
+- Modified on date
 
 >[!NOTE]
-> Last Launched information is only available if the [Audit Log](setup-auditlog-http.md) has been configured.
+> **Last launched** information is only available if the [Audit Log](setup-auditlog-http.md) has been configured.
 >
 > Information about bots created via Power Virtual Agents in Microsoft Teams environments is currently not available in the CoE Starter Kit.
 
@@ -108,16 +99,12 @@ The filters allow you to filter by Owner as well as Created date.
 The **Apps** page provides an overview of apps in your environment:
 
 - Total number of apps
-
 - Total number of apps created this month
-
 - Total number of app makers
-
 - Total number of canvas apps and model-driven apps
-
 - The number of production apps (a *production app* has had 50 active sessions, or active sessions by five unique users, in a month)
 
-On the graphs, you can see your app creation trend, your makers over time, your top enviornments and top connectors used in apps. 
+On the graphs, you can see your app creation trend, your makers over time, your top environments, and top connectors used in apps. 
 
 Filters on this page can help you narrow down this view by app owner, app plan classification, app type, environment name and type, or connector used.
 
@@ -125,9 +112,9 @@ Filters on this page can help you narrow down this view by app owner, app plan c
 
 The hamburger menu on this page helps you navigate to other reports relevant to Power Apps.
 
-### SharePoint Form Apps
+### SharePoint form apps
 
-The **SharePoint Form Apps** page provides an overview of apps created to customize SharePoint list or document library forms.
+The **SharePoint Form Apps** page provides an overview of apps created to customize SharePoint lists or document library forms.
 
 Navigate directly to the SharePoint site and view how many connectors are being used in a customized form.
 
@@ -138,11 +125,8 @@ Navigate directly to the SharePoint site and view how many connectors are being 
 The **Cloud flows** page provides an overview of cloud-based API automation flows in your environment:
 
 - Total number of flows
-
 - Total number of flows created this month
-
 - Total number of flow makers
-
 - Total number of started, suspended and stopped flows
 
 Through visuals, you can see your flow creation trend, your top active departments, and top environments and top connectors used in flows.
@@ -151,7 +135,7 @@ Filters on this page can help you narrow down this view by flow owner, flow stat
 
 ![Flow overview.](media/pb-10.png "Flow overview")
 
-## Custom Connectors
+## Custom connectors
 
 The **Custom Connectors** page helps you understand what [custom connectors](/connectors/custom-connectors/) you have, what endpoints they're connecting to, and which resources are using the custom connector.
 
@@ -166,12 +150,10 @@ Filters help you narrow down the view by connector creator, environment, or crea
 The **Desktop flows** page provides an overview of UI-based robotic process automation (RPA) flows in your environment:
 
 - Total number of desktop flows
-
 - Total number of desktop flows created this month
-
 - Total number of desktop flow makers
 
-Through visuals, you can see your flow creation trend and top environments with desktop flows. Use the list view of all flows to sort your flows by type, and flow state.
+Through visuals, you can see your flow creation trend and top environments with desktop flows. Use the list view of all flows to sort your flows by type and flow state.
 
 Filters on this page can help you narrow down this view by flow owner, flow display name, environment, maker department, or desktop flow type.
 
@@ -182,11 +164,8 @@ Filters on this page can help you narrow down this view by flow owner, flow disp
 The **Bots** page provides an overview of Power Virtual Agent bots in your environment:
 
 - Total number of bots
-
 - Total number of bots created this month
-
 - Total number of bot makers
-
 - Total number of published bots
 
 Through visuals, you can see your bot creation trend and top environments with bots. Use the list view of all bots to sort your bots by bot maker or bot state.
@@ -195,14 +174,12 @@ Filters on this page can help you narrow down this view by environment and by ma
 
 ![Power Virtual Agents.](media/pb-13.png "Power Virtual Agents")
 
-## AI Builder Models
+## AI Builder models
 
 The **AI Builder Models** page provides an overview of AI Builder Models in your environment:
 
 - Total number of AI Builder models
-
 - Total number of AI Builder models created this month
-
 - Total number of AI Builder models makers
 
 Through visuals, you can see your AI Builder model creation trend and top environments with AI Builder models. Use the list view of all AI Builder models to sort your AI Builder models by maker or template.
@@ -216,12 +193,10 @@ Filters on this page can help you narrow down this view by environment and by ma
 The **Power Pages** page provides an overview of  Power Pages in your environment:
 
 - Total number of Power Pages
-
 - Total number of Power Pages created this month
-
 - Total number of Power Pages makers
 
-Through visuals, you can see your Power Pages creation trend and top environments with Power Pages. Use the list view of all Power Pages to sort your Power Pages by maker, website, website status and table permission.
+Through visuals, you can see your Power Pages creation trend and top environments with Power Pages. Use the list view of all Power Pages to sort your Power Pages by maker, website, website status, and table permission.
 
 Filters on this page can help you narrow down this view by environment and by maker.
 
@@ -232,30 +207,26 @@ Filters on this page can help you narrow down this view by environment and by ma
 The **Solutions** page provides an overview of Power Platform solutions in your environment:
 
 - Total number of solutions
-
 - Total number of solutions created this month
-
 - Total number of solution makers
 
-Through visuals, you can see your solution creation trend and top environments with solutions. Use the list view of all solutions to sort your solutions by publisher, maker or environment.
+Through visuals, you can see your solution creation trend and top environments with solutions. Use the list view of all solutions to sort your solutions by publisher, maker, or environment.
 
-Filters on this page can help you narrow down this view by environment, publisher and by maker.
+Filters on this page can help you narrow down this view by environment, publisher, and maker.
 
 ![Solutions.](media/pb-16.png "Solutions")
 
-## Business Process Flows
+## Business process flows
 
-The **Business Process Flows** page provides an overview of  Business Process Flows in your environment:
+The **Business Process Flows** page provides an overview of Business process flows in your environment:
 
-- Total number of Business Process Flows
+- Total number of business process flows
+- Total number of business process flows created this month
+- Total number of business process flows makers
 
-- Total number of Business Process Flows created this month
+Through visuals, you can see your business process flow creation trend and top environments with business process flows. Use the list view of all business process flows to sort by state, maker, and environment.
 
-- Total number of Business Process Flow makers
-
-Through visuals, you can see your  Business Process Flow creation trend and top environments with  Business Process Flows. Use the list view of all  Business Process Flows to sort by state, maker and environment.
-
-Filters on this page can help you narrow down this view by environment, state and by maker.
+Filters on this page can help you narrow down this view by environment, state, and maker.
 
 ![ Business Process Flows.](media/pb-17.png " Business Process Flows")
 
