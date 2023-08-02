@@ -15,11 +15,11 @@ search.audienceType:
 ---
 # Govern with the CoE Power BI dashboard
 
-As an admin, you'll want to use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, or delete it.
+As an admin, you can use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, or delete it.
 
-## Environment Capacity
+## Environment capacity
 
-You can use the **Environment Capacity** page to identify the environments consuming your tenants Dataverse capacity. Review your total capacity consumption, and identify environments that consume a lot of capacity.
+You can use the **Environment Capacity** page to identify the environments consuming Dataverse capacity in your tenants. Review your total capacity consumption and identify environments that consume a lot of capacity.
 
 :::image type="content" source="media/pb-7.png" alt-text="Environment Capacity":::
 
@@ -29,28 +29,22 @@ You can use the **App deep dive** page to visualize data about your apps across 
 
 :::image type="content" source="media/pb-18.png" alt-text="App deep dive":::
 
-You can use the decomposition tree visual to drill down into apps by environment name, app plan classification, maker department, connector name, connector tier, app type, archive score.
+You can use the decomposition tree visual to drill down into apps by environment name, app plan classification, maker department, connector name, connector tier, app type, and archive score.
 
 You can filter the **App deep dive** page by:
 
 - Environment
-
 - Maker
-
 - Is the app shared with the entire tenant?
-
 - Number of shared (individual) users and groups
-
 - App type
-
 - Connector
-
 - Last launched date
 - App plan classification
 - Connector name and connector tier
 - Is the app orphaned (the app owner has left the organization)
 
-In addition, you can sort the output data by the total number of users the app is shared with, unique users that have launched the app, last launched date, archive score, environment name and app owner.
+In addition, you can sort the output data by the total number of users the app is shared with, unique users that have launched the app, last launched date, archive score, environment name, and app owner.
 
 Some typical assessments an admin might perform are described in the following sections.
 
