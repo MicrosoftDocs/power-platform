@@ -4,7 +4,7 @@ description: "Prerequisites and instructions for setting up the Center of Excell
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2023
+ms.date: 08/02/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -29,7 +29,7 @@ The CoE Starter Kit requires access to your tenant's Power Platform environments
 - Power Apps Per User license (non-trial) and Microsoft 365 license.
 - Power Automate Per User license, or Per Flow licenses (non-trial).
 - Power BI Premium per user or per capacity (if using [Data Export](#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory)
-- The identity must have access to an Office 365 mailbox that has the REST API enabled and meet all requirements to use the [Office 365 Outlook](/connectors/office365/) connector.
+- The identity must have access to an Office 365 mailbox that has the REST API enabled. It must also meet all requirements to use the [Office 365 Outlook](/connectors/office365/) connector.
 - If you'd like to collect telemetry information, such as app launches and unique users per app, you must be granted access to the Audit Log and work with a Global Admin who has access to [Microsoft 365 audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log) to complete the setup.
 - If you'd like to share the [Power BI report](power-bi.md) that's part of the CoE Starter Kit, this identity needs to have the Power BI Pro license.  
 
