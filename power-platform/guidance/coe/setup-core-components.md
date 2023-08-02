@@ -385,7 +385,7 @@ Using these steps, you set up an Azure AD app registration that is used in a clo
 
 ### Update environment variables
 
-[Update the environment variables](faq.md#update-environment-variables) that hold the client ID and secret as shown in the following table. You can store the client secret either in plain text in the **Command Center - Client Secret** environment variable (not recommended) or create store the client secret in Azure Key Vault and reference it in the **Command Center - Client Azure Secret** environment variable (recommended). Review the required permissions to [use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview).
+[Update the environment variables](faq.md#update-environment-variables) that hold the client ID and secret, as shown in the following table. You can store the client secret either in plain text in the **Command Center - Client Secret** environment variable (not recommended) or store the client secret in Azure Key Vault and reference it in the **Command Center - Client Azure Secret** environment variable (recommended). Review the required permissions to [use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview).
 
 >[!NOTE]
 > The flow using this environment variable is configured with a condition to expect either the Command Center - Client Secret or the Command Center - Client Azure Secret environment variable. It is not necessary to edit the flow or command center application to work with Azure Key Vault.
@@ -412,7 +412,7 @@ Using these steps, you set up an Azure AD app registration that is used in a clo
 > [!NOTE]
 > Only set up the Audit Log solution if you've chosen [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
-The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The CoE Starter Kit works without this flow; however, usage information (app launches, unique users) in the Power BI dashboard is blank. More information: [Set up the audit log connector](setup-auditlog-http.md)
+The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users and launches) for apps. The CoE Starter Kit works without this flow. However, usage information, such as app launches and unique users, in the Power BI dashboard is blank. More information: [Set up the audit log connector](setup-auditlog-http.md)
 
 ## Set up the Power BI dashboard
 
@@ -484,8 +484,8 @@ Environment variables are used to store application and flow configuration data 
 | Flow Dataflow ID | Dataflow ID of the CoE BYODL Flows dataflow.  Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
 | FullInventory | Determines whether you want to update only objects that have changed, or all objects. Switching to Yes causes the flows to inventory every single app, flow, and bot in the tenant every day, and isn't recommended for large tenants.  | No |
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High, and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)| Not applicable |
-| Get Security Roles for All BUs | If false (Default) gathers the SYSTEM Admin users only for the environments parent Business Unit. If true gathers for all Business Unit. This due to some tenants having a large number of Business Units and performing too many flow runs if collecting this data across all Business Units. | No |
-|Individual Admin |This is the email address to which communications in the starter kit will be sent which can't be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
+| Get Security Roles for All Business Units | If false (default), it gathers the SYSTEM Admin users only for the environment's parent business unit. If true gathers for all business units. This is due to some tenants having a large number of business units and performing too many flow runs if collecting this data across all business units. | No |
+|Individual Admin |This is the email address to which communications in the starter kit will be sent, which can't be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
 | InventoryFilter_DaysToLookBack | When not running a full inventory, we filter back this number of days and then see if the object needs updated.| 7 |
 | is All Environments Inventory |If true, (the default) the CoE inventory tracks all environments. New environments added to the inventory have their Excuse from Inventory set to false. You can opt out individual environments.  If false, the CoE inventory tracks a subset of environments. New environments added to the inventory have their Excuse from Inventory set to true. You can opt in individual environments.  | Yes |
 | Maker Dataflow ID | Dataflow ID of the CoE BYODL Makers dataflow.  Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
