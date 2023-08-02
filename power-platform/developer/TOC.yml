@@ -133,3 +133,15 @@
           href: tools-alm.md
         - name: Dataverse developer tools
           href: tools-dataverse.md
+        - name: Power Apps Test Engine (preview)
+          items:
+           - name: Overview
+             href: test-engine/overview.md
+           - name: PowerAppsTestEngine.exe Inputs
+             href: test-engine/command-input.md
+           - name: Test Engine Power Fx functions
+             href: test-engine/powerfx.md
+           - name: Test Engine Power Fx functions
+             href: test-engine/powerfx.md
+
+        
