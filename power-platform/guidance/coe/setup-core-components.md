@@ -53,7 +53,7 @@ We recommend that you create connections to all connectors used in the solution 
     - [RSS](/connectors/rss/)
     - [SharePoint](/connectors/sharepointonline/)
     - [HTTP with Azure AD](/connectors/webcontents/)
-1. Create a connection for [HTTP with Azure AD](/connectors/webcontents/), and set **Base Resource URL** and **Azure AD Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+1. Create a connection for [HTTP with Azure AD](/connectors/webcontents/), and set **Base Resource URL** and **Azure AD Resource URI (Application ID URI)** to [https://graph.microsoft.com/](https://graph.microsoft.com/) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 :::image type="content" source="media/httpazuread.png" alt-text="Establish an HTTP with Azure AD connection":::
 
 ## Set up the Inventory components using the Setup Wizard
