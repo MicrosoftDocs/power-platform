@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2023
+ms.date: 08/02/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -186,15 +186,15 @@ The solution in this case is to clear the permissions:
 
 ## Configure embedded apps in the CoE dashboard
 
-The **Production_CoEDashboard_MMMYY.pbit** and **BYODL_CoEDashboard_MMMYY.pbit** dashboards can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to configure the Power Apps visuals in the Power BI dashboard before you can use them.
+The **Production_CoEDashboard_MMMYY.pbit** and **BYODL_CoEDashboard_MMMYY.pbit** dashboards can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker through email. You must configure the Power Apps visuals in the Power BI dashboard before you can use them.
 
-In order to configure the embedded apps, you need to meet these pre-requisites:
+In order to configure the embedded apps, you must meet these pre-requisites:
 
-- You need to be an owner or co-owner of the **Admin – Access this app** and **Admin – Access this flow** apps to be able to embed them.
-- This app uses Microsoft Dataverse, end users need to have a Power Apps Per User license, or the app needs to be assigned a Power Apps Per App license, or the environment needs to be covered by pay-as-you-go.
+- You must be an owner or co-owner of the **Admin – Access this app** and **Admin – Access this flow** apps to be able to embed them.
+- Because this app uses Microsoft Dataverse, end-users must have a Power Apps Per User license, the app must be assigned a Power Apps Per App license, or the environment must be covered by pay-as-you-go.
 - This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required.
 
-Once you meet these requirements, embed the apps:
+Once you meet these requirements, embed the apps.
 
 1. Open the CoE Power BI dashboard in **Power BI Desktop**.
 1. Go to the **App Detail** page.
