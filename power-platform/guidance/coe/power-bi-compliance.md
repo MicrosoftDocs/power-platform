@@ -27,7 +27,7 @@ The **Compliance and Governance insights** page provides you with a tenant-wide 
 - Apps and flows not in solutions
 - Apps and flows with duplicate names
 - Apps and flows with test, demo, template in the name
-- Apps, flows and environments with open [compliance details requests](example-processes.md)
+- Apps, flows, and environments with open [compliance details requests](example-processes.md)
 - Apps currently not compliant with DLP policies or billing policies
 - Grandfathered apps
 - Apps shared with everyone and apps shared with more than 100 users
@@ -40,11 +40,11 @@ The **Compliance and Governance insights** page provides you with a tenant-wide 
 - Cross-tenant connections
 - Environments with no apps or flows
 - Custom connectors using HTTP environments
-- Non-Managed environments
+- Non-managed environments
 
 :::image type="content" source="media/pbi-compliance1.png" alt-text="Compliance and Governance insights":::
 
-From each card, you can drill-through to a list of apps, flows or environments matching the selected criteria:
+From each card, you can drill-through to a list of apps, flows, or environments matching the selected criteria.
 
 :::image type="content" source="media/pbi-compliance2.png" alt-text="Compliance and Governance drill-through":::
 
