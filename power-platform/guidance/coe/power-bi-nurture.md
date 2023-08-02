@@ -19,11 +19,11 @@ The **Nurture** section helps you find your "star" app and flow makers and see w
 
 ## Makers
 
-The **Maker** page, at one glance, helps you see your top makers, how many apps and flows those makers have created, and your top active departments and where your makers are based.
+The **Maker** page helps you see your top makers, how many apps and flows those makers have created, your top active departments, and where your makers are based.
 
 :::image type="content" source="media/pb-6.png" alt-text="Makers":::
 
-## App Usage
+## App usage
 
 The **App Usage** page shows your top apps by number of app launches and your users who most frequently launch apps.
 
@@ -31,19 +31,19 @@ The **App Usage** page shows your top apps by number of app launches and your us
 
 ## YoY Adoption
 
-The **YoY Adoption** page shows your year-on-year adoption of Power Platform, this page highlights growth in number of apps, cloud flows, desktop flows, chatbots, environments and makers and shows you the percentage increase or decrease year-on-year.
+The **YoY Adoption** page shows your year-on-year adoption of Power Platform. This page highlights growth in number of apps, cloud flows, desktop flows, chatbots, environments, and makers, and shows you the percentage increase or decrease year-on-year.
 
 :::image type="content" source="media/pb-25.png" alt-text="YoY Adoption":::
 
-## Power Apps Adoption
+## Power Apps adoption
 
-The **Power Apps Adoption** page shows you further insights into how Power Apps is getting adopted in your organization. This page highlights total and monthly new users, and month-on-month growth of users. This page additionally shows Power Apps MAU and Premium MAU (Monthly Active Users) over time, and the number of apps using Azure, SharePoint, Dataverse as data sources.
+The **Power Apps Adoption** page shows you further insights into how Power Apps is getting adopted in your organization. This page highlights total and monthly new users, and month-on-month growth of users. This page additionally shows Power Apps monthly active users (MAU) and Premium MAU over time, and the number of apps using Azure, SharePoint, and Dataverse as data sources.
 
 :::image type="content" source="media/pb-24.png" alt-text="Power Apps Adoption":::
 
 ### Desktop flows usage
 
-The **desktop flow usage** page provides an overview of UI-based RPA flow runs in your environment:
+The **Desktop flows usage** page provides an overview of UI-based robotic process automateion (RPA) flow runs in your environment:
 
 - Number of runs per date and desktop flow type
 - Total number of runs
