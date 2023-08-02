@@ -2,9 +2,9 @@
 title: "Microsoft Power Platform Build Tools for Azure DevOps | Microsoft Docs"
 description: "Learn about the ALM-related tools, APIs, and services that are available to developers when using Azure DevOps."
 keywords: 
-author: mikkelsen2000
+author: snizar007
 ms.subservice: alm
-ms.author: pemikkel
+ms.author: snizar
 ms.custom: ""
 ms.date: 12/07/2022
 ms.reviewer: "pehecke"
@@ -90,43 +90,33 @@ To interact with the Microsoft Power Platform environment, a connection must be 
 
 ## Configure service connections using a service principal
 
-To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Microsoft Power Platform environment you want to connect to. We've offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available in this article [Azure application registration](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
+To configure a connection using service principal, you must first have a Power Platform profile authenticated with the required permissions. 
+Add Microsoft Azure Active Directory application and associated application user to the Dataverse environment.
 
-### Create service principal and client secret using PowerShell
+### Create service principal and client secret
 
-This PowerShell script helps creating and configuring the service principal to be used with the Microsoft Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
+This Power Platfor CLI command  helps creating and configuring the service principal to be used with the Microsoft Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
 
 This application is then added as an administrator user to the Microsoft Power Platform tenant itself.
 
-**Installation**
+```
+C:\> pac admin create-service-principal  --environment <environment id>
+```
+:::image type="content" source="media/create-spn-help.png" alt-text="PAC CLI create-service-principal help" lightbox="media/create-spn-help.png":::
 
-Download the following PowerShell cmdlet: https://pabuildtools.blob.core.windows.net/spn-docs-4133a3fe/New-CrmServicePrincipal.ps1
-
-<ul><li>Open a regular Windows PowerShell command prompt (standard, not PS core)
-</li></ul> 
-<ul><li>Navigate to the folder where you saved the script, and unblock the script using the following command: `Unblock-File New-CrmServicePrincipal.ps1`
-</li></ul>
-<ul><li>Run the script: `.\New-CrmServicePrincipal.ps1`</li></ul>
-
-The script will prompt two times with AAD login dialogs:
-
-
-<ul><li>First prompt: to log in as administrator to the AAD instance associated with the Microsoft Power Platform tenant
-</li></ul> 
-<ul><li>Second prompt: to log in as tenant administrator to the Microsoft Power Platform tenant itself
-</li></ul>
-
-
-Once successful, three columns are displayed:
+Once successful, four columns are displayed:
 
 <ul><li>Power Platform TenantId</li></ul>
 <ul><li>Application ID</li></ul>
 <ul><li>Client Secret (in clear text)</li></ul>
+<ul><li>Expiration</li></ul>
+
+:::image type="content" source="media/create-spn.png" alt-text="PAC CLI create-service-principal" lightbox="media/create-spn.png":::
 
 Use the information displayed to configure the Power Platform service connection. 
 
 > [!IMPORTANT]
-> Keep the client secret safe and secure. Once the PowerShell command prompt is cleared, you cannot retrieve the same client secret again.
+> Keep the client secret safe and secure. Once the command prompt is cleared, you cannot retrieve the same client secret again.
 
 
 ### Configure environment with the Application ID
