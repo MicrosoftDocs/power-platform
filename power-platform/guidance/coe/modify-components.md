@@ -36,7 +36,7 @@ Not following best practices when extending the CoE Starter Kit can lead to unin
 Before we explain how to extend the CoE Starter Kit, here's some guidance on what components we do and don't recommend extending:
 
 - Tables and model-driven apps support merging. These resources can easily be extended by creating your own unmanaged solution and making changes there (for example, adding new fields). During an upgrade, you'll receive our changes and also keep your changes.
-- Canvas apps, custom pages and cloud flows do not support merging. These resources can only be extended and customized by creating a copy in your own unmanaged solution. During an upgrade, you'll no longer receive our changes, which should be a deliberate choice in order to customize a process and make it fit to your organization.
+- Canvas apps, custom pages, and cloud flows do not support merging. These resources can only be extended and customized by creating a copy in your own unmanaged solution. During an upgrade, you no longer receive our changes, which should be a deliberate choice in order to customize a process and make it fit to your organization.
 - Cloud flows that are responsible for [gathering inventory](core-components.md#flows) should not be customized. These flows are frequently updated to fix bugs, gather additional data, or improve performance. If you have additional requirements for what inventory to gather, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues) or create separate flows for your requirements.
 - Power BI dashboards do not support merging. We recommend creating a copy of the dashboard, creating your own custom reports and publishing them to same workspace as the main CoE dashboard for your admins to have a seamless experience between out of the box CoE kit reports and your custom reports.
 
@@ -62,7 +62,7 @@ If you plan to make customizations to a large number of CoE Starter Kit componen
 ## What are some limitations?
 
 - The Power Automate "Save As" capability to copy a flow is not supported for flows that call child flows. The only way to customize flows with child flows is by editing the flow in the managed solution and creating an unmanaged layer.
-- Canvas apps, custom pages and cloud flows do not support merging. These resources can only be extended and customized by creating a copy in your own, unmanaged solution.
+- Canvas apps, custom pages, and cloud flows do not support merging. These resources can only be extended and customized by creating a copy in your own, unmanaged solution.
 - Power BI dashboards do not support merging.
 
 ## Creating a new solution
@@ -239,17 +239,17 @@ Then, configure the new model-driven application:
 1. Select **Save** and **Publish**.
 1. Select **Play** to test the app.
 
-You can also add existing custom pages to your own model-driven app. Custom pages are the building blocks behind most apps in the CoE Starter Kit, and you can bring them into your own model-driven app to build very tailored and targeted experiences for your admins and makers.
+You can also add existing custom pages to your own, model-driven app. Custom pages are the building blocks behind most apps in the CoE Starter Kit, and you can bring them into your own, model-driven app to build very tailored and targeted experiences for your admins and makers.
 
 There are a few reasons why you may want to do this:
 
-- Some of the apps in the CoE Starter Kit bring together a few different features by including different custom pages in the navigation of the main application, for example the [Nurture apps - Makers](nurture-components.md). If you don't want to use all the features, you may want to create your own app and only include custom pages of the features you want to use in the navigation.
-- Some of the apps in the CoE Starter Kit  target the same persona, but functionality is split across different apps - for example the [Power Platform Admin View](core-components.md#power-platform-admin-view) and [CoE Admin Command Center](core-components.md#coe-admin-command-center) are both apps that admins will use. You may want to combine both apps into one and can do that by creating your own model-driven app and bringing in all the custom pages and tables into one app.
-- If you've created your own features and extensions to the CoE Starter Kit as custom pages and want to combine them with CoE Starter Kit features for a seamless user experience, the best option may be to create your own model-driven app and bringing in your custom pages and CoE Starter Kit custom pages into the navigation. 
+- Some of the apps in the CoE Starter Kit bring together a few different features by including different custom pages in the navigation of the main application, such as the [Nurture apps - Makers](nurture-components.md). If you don't want to use all the features, you may want to create your own app and only include custom pages of the features you want to use in the navigation.
+- Some of the apps in the CoE Starter Kit target the same persona, but functionality is split across different apps. For example the [Power Platform Admin View](core-components.md#power-platform-admin-view) and [CoE Admin Command Center](core-components.md#coe-admin-command-center) are both apps that admins will use. You may want to combine both apps into one app. You can do that by creating your own, model-driven app and bringing in all the custom pages and tables into one app.
+- If you've created your own features and extensions to the CoE Starter Kit as custom pages and want to combine them with CoE Starter Kit features for a seamless user experience, the best option may be to create your own, model-driven app. You can bring in your custom pages and CoE Starter Kit custom pages into the navigation. 
 
-1. Once you've created your own model-driven app, select **+ Add page**.
+1. If you've created your own model-driven app, select **+ Add page**.
     :::image type="content" source="media/coe-extend1.png" alt-text="Select Add page to add a new custom page.":::
-1. Select **Custom page**
+1. Select **Custom page**.
 1. Select **Use an existing custom page** and select the pages you want to add.
       :::image type="content" source="media/coe-extend2.jpg" alt-text="Select an existing custom page to add to the navigation.":::
 1. You can also add additional content, such as tables, dashboards and links.
