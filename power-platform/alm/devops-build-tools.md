@@ -5,11 +5,9 @@ keywords:
 author: snizar007
 ms.subservice: alm
 ms.author: snizar
-ms.custom: ""
-ms.date: 12/07/2022
-ms.reviewer: "pehecke"
-
-ms.topic: "article"
+ms.date: 08/02/2023
+ms.reviewer: pehecke
+ms.topic: article
 search.audienceType: 
   - developer
 ---
@@ -17,20 +15,22 @@ search.audienceType:
 # Microsoft Power Platform Build Tools for Azure DevOps
 
 Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related
-to apps built on Microsoft Power Platform. These tasks include: 
+to apps built on Microsoft Power Platform. These tasks include:
 
-<ul><li>Synchronization of solution metadata (also known as
-solutions) that contains the various platform components such as customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation), canvas apps, model-driven apps, UI flows, virtual agents, AI Builder models, and connectors between development environments and source control</li></ul>
-<ul><li>Generating build artifacts</li></ul>
-<ul><li>Deploying to downstream environments</li></ul>
+- Synchronization of solution metadata (also known as solutions) that contains the various platform components such as:
+  - Customer engagement apps: Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation
+  - Canvas apps
+  - Model-driven apps
+  - UI flows
+  - Virtual agents
+  - AI Builder models
+  - Connectors between development environments and source control
+- Generating build artifacts
+- Deploying to downstream environments
+- Provisioning or de-provisioning environments
+- Perform static analysis checks against solutions by using the Power Apps checker service
 
-<ul><li>Provisioning or de-provisioning
-environments</li></ul>
-
-<ul><li>Perform static analysis checks against solutions by using the Power Apps checker service</li></ul>
-
-
-Microsoft Power Platform Build Tools tasks can be used along with any other available
+Use Microsoft Power Platform Build Tools tasks with any other available
 Azure DevOps tasks to compose your build and release pipelines. Pipelines
 that teams commonly put in place include Initiate, Export from Dev, Build, and Release.
 
@@ -43,28 +43,29 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 
 ## What are Microsoft Power Platform Build Tools?
 
-Microsoft Power Platform Build Tools are a collection of Power Platform&ndash;specific Azure DevOps
+Microsoft Power Platform Build Tools are a collection of Power Platform specific Azure DevOps
 build tasks that eliminate the need to manually download custom tooling and
-scripts to manage the application lifecycle of apps built on Microsoft Power Platform. The tasks can be used
-individually to perform a task, such as importing a solution into a
-downstream environment, or used together in a pipeline to orchestrate a
-scenario such as "generate a build artifact", "deploy to test", or "harvest maker
-changes." The build tasks can largely be categorized into four types:
+scripts to manage the application lifecycle of apps built on Microsoft Power Platform. 
+
+You can use the tasks individually, such as importing a solution into a
+downstream environment, or together in a pipeline to orchestrate a
+scenario such as *generate a build artifact*, *deploy to test*, or *harvest maker
+changes*. The build tasks can largely be categorized into four types:
 
 - Helper
-
 - Quality check
-
 - Solution
-
 - Environment management
 
 For more information about the available tasks, see [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md). 
 
 
-## What is Power Platform Build Tools version 2.0? 
-In addition to what Power Platform Build Tools provide, version 2.0 of Power Platform Build Tools is Power Platform CLI based. 
-Power Platform Build Tools version 1.0 , as in the first release, is based on PowerShell. Going forward Power Platform Build Tools 2.0 is the version that will be serviced and newer features added. 
+## What is Power Platform Build Tools version 2.0?
+
+In addition to what Power Platform Build Tools provide, version 2.0 of Power Platform Build Tools is Power Platform CLI based.
+
+Power Platform Build Tools version 1.0 is based on PowerShell. Power Platform Build Tools 2.0 is the version that will be serviced and newer features added.
+
 For previous versions of Power Platform Build Tools, we will do critical security updates as needed. We would highly recommend that customers move to Power Platform Build Tools version 2.0 at their earliest.
 
 > [!IMPORTANT]
@@ -83,46 +84,67 @@ searching for "Power Platform".
 
 ## Connection to environments
 
-To interact with the Microsoft Power Platform environment, a connection must be established that enables the various build tool tasks to perform the required actions. Two types of connections are available:
+To interact with the Microsoft Power Platform environment, you must establish a connection so the build tool tasks can perform the required actions. Two types of connections are available:
 
-- Username/password: Configured as a generic service connection with username and password. Username/password doesn't support multi-factor authentication.
-- Service principal and client secret: (recommended) This connection type uses service principal based authentication and supports multi-factor authentication.
+
+|Connection type|Description|
+|---------|---------|
+|Service principal and client secret (recommended)|Uses service principal based authentication and supports multi-factor authentication|
+|Username/password|A generic service connection with username and password. Doesn't support multi-factor authentication.|
 
 ## Configure service connections using a service principal
 
-To configure a connection using service principal, you must first have a Power Platform profile authenticated with the required permissions. 
-Add Microsoft Azure Active Directory application and associated application user to the Dataverse environment.
+To configure a connection using service principal, you must first have a Power Platform profile authenticated with the required permissions. You must add a Microsoft Azure Active Directory application and associated application user to the Dataverse environment.
 
 ### Create service principal and client secret
 
-This Power Platfor CLI command  helps creating and configuring the service principal to be used with the Microsoft Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
+Use the [pac admin create-service-principal](../developer/cli/reference/admin.md#pac-admin-create-service-principal) command to create and configure the service principal to be used with the Microsoft Power Platform Build Tools tasks.
 
-This application is then added as an administrator user to the Microsoft Power Platform tenant itself.
+This command first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
+Then it adds the application as an administrator user to the Microsoft Power Platform tenant.
 
-```
+This command has two parameters:
+
+|name|short name|Required|Description|
+|---------|---------|---------|---------|
+|`environment`|`env`|Yes|The ID or URL of the environment to add an application user to.|
+|`role`|`r`|No|Name or ID of security role to be applied to application user. The default value is: 'System Administrator'.|
+
+You can use it like this:
+
+```powershell
 C:\> pac admin create-service-principal  --environment <environment id>
 ```
-:::image type="content" source="media/create-spn-help.png" alt-text="PAC CLI create-service-principal help" lightbox="media/create-spn-help.png":::
 
-Once successful, four columns are displayed:
+When successful, four columns are displayed:
 
-<ul><li>Power Platform TenantId</li></ul>
-<ul><li>Application ID</li></ul>
-<ul><li>Client Secret (in clear text)</li></ul>
-<ul><li>Expiration</li></ul>
+- Power Platform TenantId
+- Application ID
+- Client Secret (in clear text)
+- Expiration
 
-:::image type="content" source="media/create-spn.png" alt-text="PAC CLI create-service-principal" lightbox="media/create-spn.png":::
+For example:
 
-Use the information displayed to configure the Power Platform service connection. 
+```powershell
+PS C:\>pac admin create-service-principal --environment d3fcc479-0122-e7af-9965-bde57f69ee1d
+Connected as admin@M365x57236226.onmicrosoft.com
+Successfully assigned user adde6d52-9582-4932-a43a-beca5d182301 to environment d3fcc479-0122-e7af-9965-bde57f69eeld with security role System Administrator
+Tenant ID                            Application ID                       Client Secret                           Expiration
+2b0463ed-efd7-419d-927d-a9dca49d899c adde6d52-9582-4932-a43a-beca5d182301 beY8Q~JBZ~CBDgIKKBjbZ3g6BofKzoZkYj23Hbf 7/31/2024 4:27:03 PM
+
+```
+
+Use the information displayed to configure the Power Platform service connection.
 
 > [!IMPORTANT]
 > Keep the client secret safe and secure. Once the command prompt is cleared, you cannot retrieve the same client secret again.
 
 
 ### Configure environment with the Application ID
-The Application ID must be added as an Application User in the Microsoft Power Platform environment you are connecting to. Information on how to add an application user is available in this article [Application user creation](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation).
 
-Ensure that the added Application User has the system administrator role assigned (available from “Manage Roles” in the security settings for the application user).
+You must add the Application ID as an Application User in the Microsoft Power Platform environment you are connecting to. More information:  [Application user creation](/power-apps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation).
+
+Ensure that the added Application User has the system administrator role assigned (available from "Manage Roles" in the security settings for the application user).
 
 ## Frequently asked questions (FAQs)
 
@@ -150,7 +172,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 *The build tools are available at no cost. However, a valid subscription to Azure DevOps is required to utilize the Build Tools. More information is available [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).*
 
-**I can see the extension, but why don’t I have an option to install it?**
+**I can see the extension, but why don't I have an option to install it?**
 
 *If you do not see the **install** option, then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
 
