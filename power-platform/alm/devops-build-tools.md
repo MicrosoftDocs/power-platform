@@ -116,6 +116,8 @@ You can use it like this:
 C:\> pac admin create-service-principal  --environment <environment id>
 ```
 
+<!-- Following example also in cli\reference\includes\admin-create-service-principal-remarks.md -->
+
 When successful, four columns are displayed:
 
 - Power Platform TenantId
