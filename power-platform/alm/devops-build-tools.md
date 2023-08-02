@@ -129,7 +129,7 @@ For example:
 
 ```powershell
 PS C:\>pac admin create-service-principal --environment d3fcc479-0122-e7af-9965-bde57f69ee1d
-Connected as admin@M365x57236226.onmicrosoft.com
+Connected as admin@M365x57236726.onmicrosoft.com
 Successfully assigned user adde6d52-9582-4932-a43a-beca5d182301 to environment d3fcc479-0122-e7af-9965-bde57f69eeld with security role System Administrator
 Tenant ID                            Application ID                       Client Secret                           Expiration
 2b0463ed-efd7-419d-927d-a9dca49d899c adde6d52-9582-4932-a43a-beca5d182301 beY8Q~JBZ~CBDgIKKBjbZ3g6BofKzoZkYj23Hbf 7/31/2024 4:27:03 PM
@@ -143,7 +143,17 @@ Use the information displayed to configure the Power Platform service connection
 
 ### Configure environment with the Application ID
 
-You must add the Application ID as an Application User in the Microsoft Power Platform environment you're connecting to. More information:  [Application user creation](/power-apps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation).
+You must add the Application ID as an Application User in the Microsoft Power Platform environment you're connecting to. There are two ways you can do this.
+
+- You can review this article:  [Application user creation](/power-apps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation).
+- You can use Power Platform CLI. For example:
+
+```powershell
+PS C:\>pac admin assign-user -user "adde6d52-9582-4932-a43a-beca5d182301" --role "System administrator" --environment d3fcc479-0122-e7af-9965-bde57f69ee1d --application-user
+Connected to... SnDemoDev
+Connected as admin@M365x57236726.onmicrosoft.com
+Successfully assigned user adde6d52-9582-4932-a43a-beca5d182301 to environment d3fcc479-0122-e7af-9965-bde57f69ee1d with security role System Administrator
+```
 
 Ensure that the added Application User has the system administrator role assigned (available from "Manage Roles" in the security settings for the application user).
 
