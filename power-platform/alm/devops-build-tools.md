@@ -185,7 +185,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 **I can see the extension, but why don't I have an option to install it?**
 
-*If you don't see the **install** option, then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
+*If you don't see the **install** option, then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](/azure/devops/marketplace/how-to/grant-permissions).*
 
 **How can developers use the results of the Checker task?**
 
@@ -193,7 +193,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 ### See Also
 
-[Build tool tasks](devops-build-tool-tasks.md)  
+[Build tool tasks](devops-build-tool-tasks.md)   
 [Microsoft Power Platform Build Tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
