@@ -17,7 +17,7 @@ search.audienceType:
 Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related
 to apps built on Microsoft Power Platform. These tasks include:
 
-- Synchronization of solution metadata (also known as solutions) that contains the various platform components such as:
+- Synchronizing solution metadata (also known as solutions) that contains the various platform components such as:
   - Customer engagement apps: Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation
   - Canvas apps
   - Model-driven apps
@@ -27,8 +27,8 @@ to apps built on Microsoft Power Platform. These tasks include:
   - Connectors between development environments and source control
 - Generating build artifacts
 - Deploying to downstream environments
-- Provisioning or de-provisioning environments
-- Perform static analysis checks against solutions by using the Power Apps checker service
+- Provisioning or deprovisioning environments
+- Performing static analysis checks against solutions by using the Power Apps checker service
 
 Use Microsoft Power Platform Build Tools tasks with any other available
 Azure DevOps tasks to compose your build and release pipelines. Pipelines
@@ -45,7 +45,7 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 
 Microsoft Power Platform Build Tools are a collection of Power Platform specific Azure DevOps
 build tasks that eliminate the need to manually download custom tooling and
-scripts to manage the application lifecycle of apps built on Microsoft Power Platform. 
+scripts to manage the application lifecycle of apps built on Microsoft Power Platform.
 
 You can use the tasks individually, such as importing a solution into a
 downstream environment, or together in a pipeline to orchestrate a
@@ -66,7 +66,7 @@ In addition to what Power Platform Build Tools provide, version 2.0 of Power Pla
 
 Power Platform Build Tools version 1.0 is based on PowerShell. Power Platform Build Tools 2.0 is the version that will be serviced and newer features added.
 
-For previous versions of Power Platform Build Tools, we will do critical security updates as needed. We would highly recommend that customers move to Power Platform Build Tools version 2.0 at their earliest.
+For previous versions of Power Platform Build Tools, we'll do critical security updates as needed. We would highly recommend that customers move to Power Platform Build Tools version 2.0 at their earliest.
 
 > [!IMPORTANT]
 > You cannot mix and match task versions for Power Platform Build Tools in your build pipeline.
@@ -100,7 +100,7 @@ To configure a connection using service principal, you must first have a Power P
 
 Use the [pac admin create-service-principal](../developer/cli/reference/admin.md#pac-admin-create-service-principal) command to create and configure the service principal to be used with the Microsoft Power Platform Build Tools tasks.
 
-This command first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
+This command first registers an Application object and corresponding Service Principal Name (SPN) in Azure Active Directory.
 Then it adds the application as an administrator user to the Microsoft Power Platform tenant.
 
 This command has two parameters:
@@ -142,7 +142,7 @@ Use the information displayed to configure the Power Platform service connection
 
 ### Configure environment with the Application ID
 
-You must add the Application ID as an Application User in the Microsoft Power Platform environment you are connecting to. More information:  [Application user creation](/power-apps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation).
+You must add the Application ID as an Application User in the Microsoft Power Platform environment you're connecting to. More information:  [Application user creation](/power-apps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation).
 
 Ensure that the added Application User has the system administrator role assigned (available from "Manage Roles" in the security settings for the application user).
 
@@ -150,7 +150,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 **Will my old Microsoft Power Platform Build Tool pipelines continue to work?**
 
-*The older pipelines will continue to work, but newer features will not be added to the older tasks. If you want to exercise the newer features, then we would highly recommend that you change the version of your task in the pipeline.*
+*The older pipelines continue to work, but newer features won't be added to the older tasks. If you want to exercise the newer features, then we would highly recommend that you change the version of your task in the pipeline.*
 
 **Why did you base the new task on Power Platform CLI instead of PowerShell?**
 
@@ -162,11 +162,11 @@ Ensure that the added Application User has the system administrator role assigne
 
 **I had previously installed the preview of the Build Tools - can I upgrade from the preview of Power Apps Build Tools to Power Platform Build Tools?**
 
-*You cannot upgrade from the preview version as we had to introduce some breaking changes in the Generally Available release. To move from the preview version, you have to install the Microsoft Power Platform Build Tools and either rebuild your pipelines, or reconfigure your existing pipelines to use the new Build Tools tasks. You must also create new Service connections as well.*
+*You can't upgrade from the preview version as we had to introduce some breaking changes in the Generally Available release. To move from the preview version, you have to install the Microsoft Power Platform Build Tools and either rebuild your pipelines, or reconfigure your existing pipelines to use the new Build Tools tasks. You must also create new Service connections as well.*
 
 **Can I include flow and canvas apps?**
 
-*Yes, flows and canvas apps are solution aware so if these components are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. The need for manual configuration will be addressed later this year when we introduce environment variables and connectors. A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
+*Yes, flows and canvas apps are solution aware so if these components are added to your solution, they can participate in the lifecycle of your app. However, some steps still require manual configurations. The need for manual configuration will be addressed later this year when we introduce environment variables and connectors. A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
 
 **How much do the Microsoft Power Platform Build Tools cost?**
 
@@ -174,7 +174,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 **I can see the extension, but why don't I have an option to install it?**
 
-*If you do not see the **install** option, then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
+*If you don't see the **install** option, then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
 
 **How can developers use the results of the Checker task?**
 
