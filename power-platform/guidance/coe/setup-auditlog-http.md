@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2023
+ms.date: 08/02/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -133,7 +133,7 @@ You can load historic data into the CoE Starter Kit tables manually using one of
 1. Turn the flow on and run it, selecting the downloaded file for the Audit Log CSV parameter.
     :::image type="content" source="media/coe-oldauditlogs-3.png" alt-text="Load old audit logs via flow":::
    > [!NOTE]
-   > If you don't see the file loading after selecting Import, it may exceed the allowed content size for this trigger. Try breaking up the file into smaller files (50,000 rows per file) and run the flow once per file. The flow can be run simultaneously for multiple files.
+   > If you don't see the file loading after selecting **Import**, it may exceed the allowed content size for this trigger. Try breaking up the file into smaller files (50,000 rows per file) and run the flow once per file. The flow can be run simultaneously for multiple files.
 1. When complete, these logs will be included in your telemetry. The last launched list for the apps will be updated if more recent launches are found.
 
 ## It looks like I found a bug with the CoE Starter Kit. Where should I go?
