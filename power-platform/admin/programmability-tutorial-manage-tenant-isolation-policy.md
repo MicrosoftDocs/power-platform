@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Manage tenant isolation policy (preview) | Microsoft Docs"
-description: This tutorial demonstrates how to use the Power Platform API (preview) to manage tenant isolation policy.
+description: Learn how to use the Power Platform API (preview) to manage tenant isolation policy.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -18,7 +18,7 @@ search.audienceType:
 
 This tutorial demonstrates how to use the Power Platform API (preview) to manage tenant isolation policy.
 
-In this tutorial, you learn how to:
+In this tutorial, learn how to:
 
 1.	Authenticate with Power Platform API and related tools.
 2.	Call the GET. 
@@ -27,7 +27,6 @@ In this tutorial, you learn how to:
 5.	Verify in the admin center.
 
 In this example scenario, a customer is looking to enable tenant isolation for their production tenant. 
-
 
 > [!IMPORTANT]
 > - This is a preview feature.
