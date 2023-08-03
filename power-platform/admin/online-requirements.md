@@ -59,8 +59,6 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://mem.gfx.ms  | Me Control is a Microsoft feature that provides a consistent way for users to do core authentication functions like signing in, switching between accounts and more.    |
 | https://www.d365ccafpi.com |  d365ccafpi service exposes a controller endpoint for token change to achieve client side first party integration with external service from PCF control  |
 | https://api.admin.powerplatform.microsoft.com | Required to call Power Platform admin center service in Public cloud
-| https://api.gcc.admin.powerplatform.microsoft.us https://api.high.admin.powerplatform.microsoft.us https://api.admin.appsplatform.us | Required to call Power Platform admin center service in Government cloud
-| https://api.ppac.partner.microsoftonline.cn  | Required to call Power Platform admin center service in China cloud
 
 > [!IMPORTANT]
 > - If you are Government cloud customer, go to [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls) 
