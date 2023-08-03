@@ -33,7 +33,7 @@ For more information on the different roles for managing your tenant across the 
 
 When a user creates an environment in a region, the environment is hosted in that region. All data for that environment resides within that region for a maximum period of 28 days. 
 
-The data refresh cycle is about 3 hours and you can find the last refresh time at the top right corner of the page.
+The data refresh cycle is about 24 hours and you can find the last refresh time at the top right corner of the page.
 
 ## What are the available reports?
 
