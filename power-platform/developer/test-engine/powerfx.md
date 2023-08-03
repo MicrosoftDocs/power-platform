@@ -13,6 +13,8 @@ contributors:
 
 # Test Engine Power Fx functions
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 There are several functions defined for the test framework.
 
 - [Assert](#assert)

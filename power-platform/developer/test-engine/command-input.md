@@ -12,6 +12,8 @@ contributors:
 ---
 # PowerAppsTestEngine.exe Inputs
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 The executable can take in inputs defined in `config.dev.json`, or as command line input parameters.
 
 ## Parameters

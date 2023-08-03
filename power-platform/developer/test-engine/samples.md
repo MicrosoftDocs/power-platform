@@ -12,7 +12,9 @@ contributors:
 ---
 # Test Engine Samples
 
-Document introducing the information about the controls and test engine features demonstrated for each sample. Most sample contains one zipped msapp and one YAML test plan. YAML test plans are defined in [Test Engine Yaml format](yaml.md). In order to test a sample, follow instructions in [Power Apps Test Engine](overview.md).
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+Learn about the controls and test engine features demonstrated for each sample. Most sample contains one zipped msapp and one YAML test plan. YAML test plans are defined in [Test Engine Yaml format](yaml.md). In order to test a sample, follow instructions in [Power Apps Test Engine](overview.md).
 
 ## Type of Samples
 
