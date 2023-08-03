@@ -103,5 +103,7 @@ The following table indicates the availability of copilots and generative AI fea
 | Power Virtual Agents | **Generative answers**</br>[Generative answers](/power-virtual-agents/nlu-boost-conversations) | US | No | English |
 | Power Virtual Agents | **Power Virtual Agents Copilot**</br>[Create (end edit) with Copilot)](/power-virtual-agents/nlu-authoring) | US | No | English |
 
+### See also
 
+[Troubleshoot missing environments](troubleshoot-missing-environments.md)
 
