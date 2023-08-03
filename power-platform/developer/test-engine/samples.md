@@ -16,7 +16,7 @@ contributors:
 
 Learn about the controls and test engine features demonstrated for each sample. Most sample contains one zipped msapp and one YAML test plan. YAML test plans are defined in [Test Engine Yaml format](yaml.md). In order to test a sample, follow instructions in [Power Apps Test Engine](overview.md).
 
-## Type of Samples
+## Samples
 
 
 | Sample Name|Description |  Features Demonstrated |
@@ -30,4 +30,7 @@ Learn about the controls and test engine features demonstrated for each sample. 
  |[ManyScreens](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/manyscreens) | Interact with controls with different screens |<ul><li>Three Screens on the canvas app. </li><li>First 'Home Screen' have two `Button` navigate to other two screens. </li><li>Other two Screens 'Label Screen' and 'Gallery Screen' each have one `Button` navigate to the 'Home Screen'. </li><li>Select on the 'Label Screen ' `Button`. </li><li>Assert `label1` to be string on 'Label Screen'("Hello world!").
  |[Nested Gallery](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/nestedgallery)| Interact with controls within a nested gallery |<ul><li>Two Gallery and two label each with column and row. </li><li>Column Gallery inside row Gallery.  </li><li>`Select` first row in the row gallery. </li><li>`Assert` row `Label` to validate that the selected row is updated. </li><li>`Select` second column in the column gallery. </li><li>`Assert` column `Label` to validate that the selected column is updated. 
  |[PCF Component](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/pcfcomponent) | Interact with increment control of the PCF Component |<ul><li>Import PCF Component in the canvas app. </li><li>Use SetProperty to set `IncrementControl1` to a number(10). </li><li>Assert `IncrementControl1` to a number (10). </li><li>Check [PCF Component](/power-apps/developer/component-framework/overview) for more information.
- |[Screen Navigation](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/screennavigation) | Interact with controls for navigate to different screen |<ul><li>Two Screens and labels on the canvas app. </li><li>'Screen1' have `Button2` navigate to second screen. </li><li>'Screen2' have `Button1` navigate to first screen. </li><li>Select on the `Button2`. </li><li>Assert `label2` to be the string("Screen2").
+
+ <!-- This Screen Navigation sample doesn't exist in the repo -->
+
+ <!-- |[Screen Navigation](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/screennavigation) | Interact with controls for navigate to different screen |<ul><li>Two Screens and labels on the canvas app. </li><li>'Screen1' have `Button2` navigate to second screen. </li><li>'Screen2' have `Button1` navigate to first screen. </li><li>Select on the `Button2`. </li><li>Assert `label2` to be the string("Screen2"). -->
