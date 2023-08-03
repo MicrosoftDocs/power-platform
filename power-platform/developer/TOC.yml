@@ -141,8 +141,8 @@
              href: test-engine/command-input.md
            - name: Test Engine Power Fx functions
              href: test-engine/powerfx.md
-           - name: Test Engine Power Fx functions
-             href: test-engine/powerfx.md
+           - name: Test Engine Yaml format
+             href: test-engine/yaml.md
            - name: Test Engine Samples
              href: test-engine/samples.md
 
