@@ -1,6 +1,6 @@
 ---
 title: "Test Engine Power Fx functions"
-description: "Describes Power Fx functions you can use with PowerApps Test Engine."
+description: "Describes Power Fx functions you can use with Power Apps Test Engine."
 author: jt000
 ms.subservice: developer
 ms.author: jasontre
@@ -13,7 +13,7 @@ contributors:
 
 # Test Engine Power Fx functions
 
-There are several specifically defined functions for the test framework.
+There are several functions defined for the test framework.
 
 - [Assert](#assert)
 - [Screenshot](#screenshot)
@@ -27,7 +27,7 @@ There are several specifically defined functions for the test framework.
 
 `Assert(BooleanExpression, Message)`
 
-The `Assert` function takes in a Power Fx expression that should evaluate to a boolean value. If the value returned is false, the test will fail.
+The `Assert` function takes in a Power Fx expression that should evaluate to a boolean value. If the value returned is false, the test fails.
 
 ### Assert example
 
@@ -39,7 +39,7 @@ The `Assert` function takes in a Power Fx expression that should evaluate to a b
 
 `Screenshot(fileNameOfScreenshot)`
 
-This will capture a screenshot of the app at the current point in time. The screenshot file will be saved to the test output folder and with the name provided.
+This function captures a screenshot of the app at the current point in time. The screenshot file is saved to the test output folder and with the name provided.
 
 > **Note:** Only jpeg and png files are supported.
 
@@ -57,7 +57,7 @@ This will capture a screenshot of the app at the current point in time. The scre
 
 `Select(Index(gallerycontrol.AllItems, row or column).child control)`
 
-This is the same functionality as the Power Apps [Select function](/power-apps/maker/canvas-apps/functions/function-select).
+This function has the same functionality as the Power Apps [Select function](/power-apps/maker/canvas-apps/functions/function-select).
 
 When working with a nested gallery, use [Index()](/power-platform/power-fx/reference/function-first-last) within the select function.
 
@@ -77,7 +77,7 @@ When working with a nested gallery, use [Index()](/power-platform/power-fx/refer
 
 `SetProperty(control.propertyName, propertyValue)`
 
-This is the same functionality as the Power Apps [SetProperty function](/power-apps/maker/canvas-apps/functions/function-setproperty).
+This function has the same functionality as the Power Apps [SetProperty function](/power-apps/maker/canvas-apps/functions/function-setproperty).
 
 When working with a nested gallery, use [Index()](/power-platform/power-fx/reference/function-first-last) within the `SetProperty` function.
 
@@ -97,7 +97,7 @@ When working with a nested gallery, use [Index()](/power-platform/power-fx/refer
 
 `Wait(Control, Property, Value)`
 
-This will wait for the property of the control to equal the specified value.
+This function waits for the property of the control to equal the specified value.
 
 ### Wait example
 

@@ -143,5 +143,7 @@
              href: test-engine/powerfx.md
            - name: Test Engine Power Fx functions
              href: test-engine/powerfx.md
+           - name: Test Engine Samples
+             href: test-engine/samples.md
 
         
