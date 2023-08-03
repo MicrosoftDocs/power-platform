@@ -1,12 +1,13 @@
 ---
 title: View analytics for Power Automate desktop flows | Microsoft Docs
 description: Learn about trends, usage patterns, and more analytics for desktop flows in the Power Platform admin center.
-author: msftman
+author: StephenRauchPM
 ms.devlang: na
 ms.topic: conceptual
-ms.date: 02/23/2023
+ms.date: 08/03/2023
 ms.subservice: admin
-ms.author: DeonHe
+ms.author: stephenrauch
+ms.reviewer: sericks
 search.audienceType: 
   - flowadmin
 ---
@@ -32,7 +33,7 @@ Created | This report shows you analytics against recently created desktop flows
 ## Data storage
 When a user creates an environment in a region, the environment is hosted in that region. All data for that environment resides within that region for a maximum period of 28 days.
 
-The data refresh cycle is about 24 hours and you can find the last refresh time at the top right corner of the page.
+The data refresh cycle is about 24 hours and you can find the last refresh time at the top-right corner of the page.
 
 ## Prerequisites
 
