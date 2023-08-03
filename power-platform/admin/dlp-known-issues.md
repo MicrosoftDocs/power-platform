@@ -20,6 +20,7 @@ search.audienceType:
 Below are known limitations to know about when leveraging our suite of data loss prevention (DLP) capabilities:
 
 ## General
+- If you delete an environment and it's still within the 7-day recovery period, you'll still be able to see it in DLP policies when you view them in PowerShell. Once the recovery period ends, the environment is permanently deleted. However, it may take up to 7 days for all references to the environment to be automatically removed from your DLP policies.
 - There's limited support for DLP actions in the [Power Platform for Admins connector](/connectors/powerplatformforadmins/). The ability to block a connector is only supported in the DLP actions labeled with "V2" (such as "Create DLP Policy V2"). Connector action control, connector endpoint filtering, and DLP for custom connectors can't be configured using the Power Platform for Admins connector.
 - Tabular functions in the [Power Apps expression language](/powerapps/maker/canvas-apps/formula-reference) can't be governed with DLP.
 - Solution flows need to be activated once, to create a runtime representation, before they can be targeted for DLP enforcement exemption using the [Set-PowerAppDlpPolicyExemptResources cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/set-powerappdlppolicyexemptresources). If activation of the flow isn't allowed as-is because of a current DLP violation, then you could make changes to avoid violations, save, activate, add the exemption, then edit as desired with the exemption active.
