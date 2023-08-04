@@ -12,7 +12,7 @@ contributors:
   - garrettm-msft
   - nanivijay
 ms.contributors:
-- viotti 
+  - viotti 
 search.audienceType: 
   - admin
 ---
