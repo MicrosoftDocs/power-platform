@@ -43,6 +43,14 @@ landingContent:
             url: custom-analytics-strategy.md
 
   # Card
+  - title: Planning a conversational AI project
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Projects best practices
+            url: project-best-practices.md
+
+  # Card
   - title: Related content
     linkLists:
       - linkListType: reference

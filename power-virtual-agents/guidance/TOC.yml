@@ -40,3 +40,7 @@
         href: deflection-transcripts-analysis.md
     - name: Custom analytics strategy
       href: custom-analytics-strategy.md
+- name: Planning a conversational AI project
+  items:
+    - name: Project best practices
+      href: project-best-practices.md
