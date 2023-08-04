@@ -12,7 +12,7 @@ contributors:
 - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 07/12/2023
+ms.date: 08/04/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -21,6 +21,8 @@ ms.subservice: solution-templates
 # SAP Goods Receipt Management app
 
 The SAP Goods Receipt Management app is part of the SAP Procurement solution. It allows you to do several functions in SAP quicker and easier than using SAP GUI.  You can search for and view an existing goods receipt document and receive goods against a purchase order.
+
+:::image type="content" source="media/goods-receipts/sap-procure-gr-ed.png" alt-text="Image of Microsoft's SAP Procurement purchase order app for Power Platform.":::
 
 ## View a goods receipt
 

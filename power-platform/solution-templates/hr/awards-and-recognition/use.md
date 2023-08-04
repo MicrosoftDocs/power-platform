@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 07/21/2023
+ms.date: 08/03/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -19,7 +19,7 @@ This article gets you started with how to use both the administrative and user a
 
 ## Create awards and assessment ratings
 
-The first step to creating an awards program is to configure the awards. There are three high-level steps to creating an award:
+Get started creating an awards program by configuring the awards. There are three high-level steps to creating an award:
 
 - Create the award record.
 - Upload an image that represents the award.
@@ -90,15 +90,15 @@ All awards and recognitions are given out in defined nomination periods. Take th
 
 1. Select **+ New** on the toolbar and fill out the form:
 
-    - **Name** – Give a name for the nomination. For example, *Q4*.
+    - **Name**: Give a name for the nomination. For example, *Q4*.
 
-    - **Description** – Provide a longer description of the period. For example, *Quarter 4, Fiscal Year 2023*.
+    - **Description**: Provide a longer description of the period. For example, *Quarter 4, Fiscal Year 2023*.
 
-    - **Fiscal Year** – Enter the nomination period's fiscal year.
+    - **Fiscal Year**: Enter the nomination period's fiscal year.
 
-    - **Start Date** – Provide the date and time that the app will start accepting nominations for the nomination period.
+    - **Start Date**: Provide the date and time that the app will start accepting nominations for the nomination period.
 
-    - **End Date** - Provide the date and time that the app will stop accepting nominations for the nomination period.
+    - **End Date**: Provide the date and time that the app will stop accepting nominations for the nomination period.
 
 1. Select **Save**.
 
@@ -114,7 +114,7 @@ Users select specific awards that are made available within a set nomination per
 
 1. Select **Add** to add the existing award.
 
-1. Repeat steps one through three to continue to associating awards to specific nomination periods.
+1. Repeat steps one through three to continue associating awards to specific nomination periods.
 
 ## Review and finalize the nominations
 
@@ -124,7 +124,7 @@ Follow these steps to review the nominations and approve or reject:
 
 1. Start the Awards and Recognition Administration app and select **Nominations** in the  *Nominations* section.
 
-1. Filter by specifying a *nomination period* if there is more than one active nomination period.
+1. Filter by specifying a *nomination period* if there's more than one active nomination period.
 
     - Select the nomination period *column name*.
     - Select **Filter By**.
@@ -168,11 +168,13 @@ To grant users the ability to localize app strings, you must assign the **Empl
 
 You can submit nominations for your coworkers for outstanding efforts in your organization and view your own recognitions that you receive in the Awards and Recognition app.
 
-Open the *Awards and Recognition* app.  
+Open the *Awards and Recognition* app.
 
-To create a new nomination, follow these steps:
+:::image type="content" source="media/use/ar-awards-recognition.png" alt-text="Awards and Recognition app's start a new nomination screen.":::
 
-1. Select a *Nomination Period* from the main screen, then select **Next**.
+Create a new nomination, by taking these steps:
+
+1. Select a *Nomination Period* in the *Select here* drop-down on the main screen, then select **Next**.
 
 1. Select from *available awards*. Select **Next**.
 
@@ -210,7 +212,7 @@ To view approved awards that I've received, take these steps:
 
 1. Select **Recognitions Received**.
 
-1. Review the nominations you've submitted in the past by selecting the **arrow** to the right of each choice. Use the search and filter capability to narrow down results if there are lots of records.
+1. Review the nominations you've received in the past by selecting the **arrow** to the right of each choice. Use the search and filter capability to narrow down results if there are a lot of records.
 
 > [!TIP]
 >

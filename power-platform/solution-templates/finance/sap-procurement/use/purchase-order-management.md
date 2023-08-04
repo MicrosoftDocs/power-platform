@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 06/06/2023
+ms.date: 08/04/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -22,7 +22,7 @@ ms.subservice: solution-templates
 
 The SAP Purchase Order Management app is part of the SAP Procurement solution. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can search for, view, and change an existing purchase order (PO), or create a new PO.
 
-This video shows how you can manage your SAP PO data using the SAP Purchase Order Management app.
+See how you can manage your SAP PO data using the SAP Purchase Order Management app.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18zOb]
 
@@ -34,7 +34,7 @@ You have three options for viewing a purchase order:
 - Enter a known PO order number.
 - Search for a purchase order based on vendor and date range.
 
-:::image type="content" source="media/purchase-order-management/sap-po-app.png" alt-text="Image of the Power Platform Procurement purchase order app.":::
+:::image type="content" source="media/purchase-order-management/sap-procure-po-ed.png" alt-text="Image of the Power Platform Procurement purchase order app.":::
 
 ### Select a recent purchase order
 

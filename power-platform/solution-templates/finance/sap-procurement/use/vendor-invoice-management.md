@@ -12,7 +12,7 @@ contributors:
 - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 07/24/2023
+ms.date: 08/04/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -21,6 +21,8 @@ ms.subservice: solution-templates
 # SAP Vendor Invoice Management app
 
 The SAP Vendor Invoice Management app is part of the SAP Procurement solution. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view a recent vendor invoice, approve a vendor invoice for payment, and create an invoice against an existing purchase order.
+
+:::image type="content" source="media/invoices/sap-procure-invoices-ed.png" alt-text="Image of Microsoft's SAP Procurement purchase order app for Power Platform.":::
 
 ## View a vendor invoice
 

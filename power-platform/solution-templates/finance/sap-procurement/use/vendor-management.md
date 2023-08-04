@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 07/24/2023
+ms.date: 08/04/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -22,7 +22,7 @@ ms.subservice: solution-templates
 
 The SAP Vendor Management app is part of the SAP Procurement solution. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view, update, and create a vendor.
 
-This video shows how you can manage your SAP vendor data using the SAP Vendor Management app.
+See how you can manage your SAP vendor data using the SAP Vendor Management app.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18F9g]
 
@@ -34,7 +34,7 @@ You can load existing vendor information three different ways:
 - Search for a vendor.
 - Enter a known vendor number.
 
-:::image type="content" source="media/vendor-management/sap-vendors-app.png" alt-text="Image of the Power Platform Procurement vendor app":::
+:::image type="content" source="media/vendor-management/sap-procure-vendors-ed.png" alt-text="Image of Microsoft's SAP Procurement vendor app for Power Platform.":::
 
 ### Select a vendor invoice
 

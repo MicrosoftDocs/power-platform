@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 06/06/2023
+ms.date: 08/04/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -22,7 +22,7 @@ ms.subservice: solution-templates
 
 The SAP Requisition Management app is part of the SAP Procurement solution. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view and update an existing requisition, create a new requisition, and convert a requisition to a purchase order.
 
-This video shows how you can manage your SAP requisition data using the SAP Requisition Management app.
+See how you can manage your SAP requisition data using the SAP Requisition Management app.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18CAe]
 
@@ -34,7 +34,7 @@ You have three options for viewing a requisition:
 - Enter a known requisition number.
 - Search for a requisition based on vendor and date range.
 
-:::image type="content" source="media/requisition-management/sap-req-app.png" alt-text="Image of the Power Platform Procurement requisition app":::
+:::image type="content" source="media/requisition-management/sap-procure-req-ed.png" alt-text="Image of Microsoft's SAP Procurement requisition app for Power Platform.":::
 
 ### Select a recent requisition
 
@@ -111,6 +111,7 @@ When you load an existing requisition, you have the ability to edit or convert t
 You can sort column headings by ascending or descending order. To sort, select **Column Heading**. An *arrow* appears to show you the sort order.  
 
 > [!NOTE]
+>
 > The sort is done as a character string, so numbers may not be in numeric order.
 
 You can also filter items in the *Items* list. The filter box can be found on the right side of the *Items* list.

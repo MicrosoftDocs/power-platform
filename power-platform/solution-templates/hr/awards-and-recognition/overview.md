@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 07/21/2023
+ms.date: 08/03/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -14,6 +14,8 @@ ms.subservice: solution-templates
 # Awards and Recognition solution template for Power Platform
 
 The Awards and Recognition solution enables organizations to define nomination periods and available awards (types of recognition) in those periods that employees can nominate others for. Awards can be configured to be available to single individuals, multiple individuals, or pre-defined teams. Program administrators can then review and approve/decline nominations.
+
+:::image type="content" source="media/overview/ar-four-screens.png" alt-text="Screenshots of Awards and Recognition." lightbox="media/overview/ar-four-screens.png":::
 
 The Awards and Recognition AppSource package consists of two solutions:
 

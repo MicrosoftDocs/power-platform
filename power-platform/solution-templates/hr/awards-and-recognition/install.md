@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
-ms.date: 07/21/2023
+ms.date: 08/03/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -28,55 +28,52 @@ If you want to create the connections in advance, go to *Connections*, and sel
 Import the Awards & Recognition solution template and the Employee Experience Base solution into the environment.
 
 - Go to the Awards and Recognition solution template in AppSource and select **Get it now**.
-- Select the environment that you want to install the solution template into. Select environment
+- Select the environment that you want to install the solution template into.
 
 - Agree to the Terms and Privacy Statements by checking the boxes.
 
-- Select install. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
+- Select **install**. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
 
 > [!TIP]
 > You can log your questions and get support for the Awards and Recognition solution template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
-## Step 3: Assign security roles to users
+## Step 3: Assign security roles
 
-The solutions include security roles:
+Set up security roles in your solutions so admins can manage the app experiences and users can access and use the app. Take these steps to get started:
 
-- **Awards and Recognition - Program Admin**
-  - Program admins can see and update all the data.
+1. Go to [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/home).
+1. Select **Environment** and then select the environment where the solution was installed.
+1. Select **Users**, then select **See all**.
+1. Choose the users who will be using the app and then select **Manage security roles** to assign *Basic User* and any other appropriate roles to each user.
+1. Select **Save**.
 
-  - Admins can configure awards, award assessment ratings, nomination periods, groups, and group membership.
+### Awards and Recognition
 
-  - Admins can approve, reject, withdraw, or cancelling nominations.
+**Program Admin**: Assign the admin role to people who will be configuring award programs and reviewing and finalizing nominations.
 
-  - Admins can create, update, or delete language localization data.
+- Program admins can see and update all the data.
+- Admins can configure awards, award assessment ratings, nomination periods, groups, and group membership.
+- Admins can approve, reject, withdraw, or cancelling nominations.
+- Admins can create, update, or delete language localization data.
 
-  - Assign the admin role to people who will be configuring award programs and reviewing and finalizing nominations.
+**User**: Assign the user role to *everyone* who will potentially nominate others for awards.
 
-- **Awards and Recognition — User**
-  - Users can nominate people and see their own data.
-  - Users can read the localization data.
-  - Assign the user role to *everyone* who will potentially nominate others for awards.
+- Users can nominate people and see their own data.
+- Users can read the localized data.
 
-- **Employee Experiences Base — Localizer**
+### Employee Experiences Base
 
-    The Localizer role can be granted independently of the Awards and Recognition security roles. This allows someone to be granted the ability to create localized text strings without the ability to administer the awards program.
+**Localizer**: You can grant the localizer role independently of the Awards and Recognition security roles so someone can create localized text strings without the ability to administer the awards program.
 
-  - Localizers can create localized text strings.
-  - Localizers can nominate people and see their own data.
-  - Assign this role to everyone who will potentially nominate others for awards.
+- Localizers can create localized text strings.
+- Localizers can nominate people and see their own data.
 
 > [!IMPORTANT]
 > All users must be assigned the *Basic User* role in addition to any other roles assigned to them.
->
-> 1. Go to [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/home).
-> 1. Select **Environment** and then select the environment where the solution was installed.
-> 1. Select **Users** > **See all**.
-> 1. Select the users and then select **Manage security roles** to assign the appropriate roles.
-> 1. Select **Save**.
 
 ## Step 4: Set cloud flows to *on*
 
-Open the newly installed Awards and Recognition solution and verify that the cloud flow is set to the on status. If not, turn it on.
+Open the newly installed Awards and Recognition solution and verify that the cloud flow is set to the *on* status. If not, turn it on.
 
 1. Select the cloud flow that is turned off.
 1. Select **Turn on** located in the toolbar.
@@ -92,7 +89,7 @@ Open the newly installed Awards and Recognition solution and verify that the c
     - For regular users of the app, leave that checkbox empty.
     - If everyone in the organization should be able to use the app, you can look for Everyone in the Enter a name box.
 
-1. In the *Data permission area*, you can select roles from a drop-down list. It's next to the Microsoft Dataverse tables that the Awards and Recognition app uses. Be sure to select the correct Awards and Recognition role (Awards and Recognition – Program Admin, Awards and Recognition – User) along with Basic User.
+1. In the *Data permission area*, you can select roles from a drop-down list. It's next to the Microsoft Dataverse tables that the Awards and Recognition app uses. Be sure to select the correct Awards and Recognition role (Program Admin or User) along with *Basic User* for each user.
 1. Add an optional email message.
 1. Select **Share**.
 
