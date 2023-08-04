@@ -148,10 +148,9 @@ Follow these steps for each flow:
     1. Select **+ New connection reference** or if pre-existing connections are listed, you can select one of those to reuse it. After you do that, the warning should resolve and you'll see the flow step without the warning. Note: after selecting, it may take a few seconds for everything to resolve.
     1. Select the next flow step with a warning on it.
     1. Select **+ New connection reference** or if pre-existing connections are listed, you can select one of those to reuse it. After you do that, the warning should resolve and you'll see the flow step without the warning. It may take a few seconds for everything to resolve.
-     
-       :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference.":::
-    
     1. Select **Save** at the bottom of the screen or at the top toolbar.
+
+ :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference.":::
 
 ## Step 7: Set cloud flows to _On_
 
@@ -192,10 +191,8 @@ To do this:
 
    :::image type="content" source="media/install/Auditing1.png" alt-text="Select environment tab and select audit settings.":::
 
-
 1. Select **Start auditing**.
 
 ## Next steps
 
 [Get started using the Employee Kudos app](use.md)
-

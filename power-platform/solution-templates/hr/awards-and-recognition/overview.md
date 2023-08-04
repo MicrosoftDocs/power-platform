@@ -64,4 +64,6 @@ The *Awards and Recognition* solution is composed of two apps, eight tables, two
 
   - **Awards and Recognition – Recognition gets deactivated** – Sets the *reviewed by* and *reviewed on* fields once a nomination has been set to a final state.
 
-Next steps: [Install the Awards and Recognition template](install.md)
+## Next steps
+
+[Install the Awards and Recognition template](install.md)

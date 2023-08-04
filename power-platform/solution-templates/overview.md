@@ -78,4 +78,4 @@ You can log your questions and get support for the solution templates at <https:
 - [SAP Requisition Management app](finance/sap-procurement/use/requisition-management.md)
 - [SAP Purchase Orders Management app](finance/sap-procurement/use/purchase-order-management.md)
 - [Get started using the Employee Kudos app](hr/employee-kudos/use.md)
-
+- [Use the Awards and Recognition app](hr/awards-and-recognition/use.md)

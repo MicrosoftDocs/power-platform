@@ -106,3 +106,7 @@ While this isn't required, we recommend enabling the audit setting on the system
 1. Select **Environment** to select the environment where the solution is installed.
 1. Select **Audit settings**.
 1. Select **Start auditing**
+
+## Next steps
+
+[Use the Awards & Recognition app](use.md)
