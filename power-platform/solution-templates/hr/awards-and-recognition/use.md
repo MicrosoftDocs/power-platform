@@ -27,6 +27,8 @@ Get started creating an awards program by configuring the awards. There are thre
 
 ### Create the award record
 
+:::image type="content" source="media/use/ar-admin-app.png" alt-text="Create the award record in the admin app screenshot.":::
+
 Take these steps to create an award record:
 
 1. Start the *Awards and Recognition Administration* app and select **Awards**.
