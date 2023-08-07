@@ -52,19 +52,19 @@ Before you enable the **Default environment routing** feature, consider the foll
 1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 1. Run the following commands in PowerShell.
 
-    1. Log in to your tenant account.
+    a. Log in to your tenant account.
 
       ```PowerShell
       $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
       ```
 
-    1. Retrieve and store your tenant setting in tenantSettings.
+    b. Retrieve and store your tenant setting in tenantSettings.
 
       ```PowerShell
       $tenantSettings = Get-TenantSettings  
       ```
       
-    1. Set the **enableDefaultEnvironmentRouting** flag to **True**.
+    c. Set the **enableDefaultEnvironmentRouting** flag to **True**.
 
       ```PowerShell
       $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
