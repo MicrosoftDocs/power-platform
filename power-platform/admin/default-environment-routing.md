@@ -1,5 +1,5 @@
 ---
-title: Default environment routing
+title: Default environment routing (preview)
 description: Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -13,13 +13,19 @@ search.audienceType:
 ---
 
 
-# Default environment routing
+# Default environment routing (preview)
+
+[This article is prerelease documentation and is subject to change.]
 
 Default environment routing is a premium, governance feature. This feature allows Power Platform admins to automatically direct *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. Default environment routing offers new makers a personal, safe space to build with Microsoft Dataverse, without the fear of others accessing their apps or data.
 
 Unlike today, when the **Default environment routing** setting is enabled and a new maker visits [make.powerapps.com](https://make.powerapps.com) for the first time, the maker opens their own, personal developer environment, instead of the default environment. Personal, developer environments are makers' own space, similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity where they can start building apps and solutions in their own workspace. New makers don't need to learn about which environment to work in since this happens automatically.
 
 Dataverse is available in developer environments and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings already preconfigured, such as sharing limits and solution checker. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
 
@@ -140,7 +146,7 @@ If some reason, the creation of the developer environment fails, makers are auto
 
 ### What data loss prevention (DLP) policies are applied for the developer environment?
 
-During the private preview, no specific DLP policies are assigned to the developer environment. Accordingly, the developer environment inherits existing, tenant-level DLP policies.
+During the public preview, no specific DLP policies are assigned to the developer environment. Accordingly, the developer environment inherits existing, tenant-level DLP policies.
 
 ### What are the preconfigured Managed Environment settings for the newly created developer environments?
 
@@ -156,7 +162,7 @@ All developer environments have the following Managed Environment settings preco
 
 ### Is the default environment routing also available for Power Automate, Power Virtual Agents, and Power Pages?
 
-During the private preview, the default environment routing is limited to Power Apps only.
+During the public preview, the default environment routing is limited to Power Apps only.
 
 ### Do I need to be a Power Platform tenant admin to enable this feature?
 
