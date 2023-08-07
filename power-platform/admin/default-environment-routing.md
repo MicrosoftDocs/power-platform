@@ -43,7 +43,7 @@ Before you enable the **Default environment routing** feature, consider the foll
 
 -   This feature enables the automatic creation of a personal, developer environment for all of your Power Apps new makers when they first launch [make.powerapps.com](https://make.powerapps.com). The definition of a new maker is limited to the makers who visit [make.powerapps.com](https://make.powerapps.com) for the first time. Returning makers who have visited the site before aren't impacted.
 
--   New makers will be assigned the admin role in their newly created developer environments.
+-   New makers are assigned the admin role in their newly created developer environments.
 
 ### Enable the feature
 
@@ -76,7 +76,7 @@ When trying to enable an environment routing tenant setting, keep the following 
 
 -  If the **Developer environment assignments** property is set for only _specific admins_, the command fails and an error message is displayed. To change this, go to Power Platform admin center > **Tenant settings** > **Developer environment assignments** and set it to **Everyone**.
 
--  If the tenant's default environment isn't managed, the command fails and an error message is displayed. See [Enable or edit Managed Environments in the admin center](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center) for more information.
+-  If the tenant's default environment isn't managed, the command fails and an error message is displayed. For more information, see [Enable or edit Managed Environments in the admin center](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center).
 
 ## Disable the feature
 
