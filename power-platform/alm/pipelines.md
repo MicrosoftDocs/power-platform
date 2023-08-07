@@ -122,7 +122,8 @@ Yes, together these tools are powerful while keeping maker experiences simple. M
 
 Not currently. The same is true when manually importing solutions.
 
-### Can I set retention policicies for pipelines data?
+### Can I set retention policies for pipelines data?
+
 Yes. You can configure bulk delete jobs in the Dataverse pipelines host to delete data on a defined schedule. 
 
 ### Can I specify advanced solution import behaviors such as update versus upgrade?
