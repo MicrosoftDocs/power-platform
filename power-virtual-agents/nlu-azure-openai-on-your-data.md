@@ -49,13 +49,10 @@ A Conversational boosting system topic is automatically generated when the bot i
 
 
 
-1. With a topic open for editing in Power Virtual Agents, from the **Advanced** menu add a **Generative answers** node.
- 
-    :::image type="content" source="media/nlu-gpt/generative-ans-node-22May23.png" alt-text="Screenshot of adding a Search and summarize content node.":::
+1. With a topic open for editing in Power Virtual Agents, onn the Generative answers node, under **Data sources**, select **Edit**.
 
-1. On the Generative answers node, under **Data sources**, select **Edit**.
+   ![Boost_edit data sources](https://github.com/MicrosoftDocs/power-platform-pr/assets/18705275/49478aec-cba2-4b5a-a52e-be953012f2ae)
 
-    :::image type="content" source="media/nlu-gpt/create-gen-ans-node-image-highlight-22May23.png" alt-text="Screenshot of the Search and summarize content node properties.":::
 
 1. Edit the connection to the Azure OpenAI Service.
 <mark>[IDW] This might need some more info - will check against the UI</mark>
