@@ -63,4 +63,3 @@ You can access the solution templates on AppSource at: <https://aka.ms/AccessEmp
 ## See also
 
 [Get started using the Employee Kudos app](use.md)
-

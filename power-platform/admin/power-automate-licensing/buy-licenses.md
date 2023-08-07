@@ -16,12 +16,13 @@ search.audienceType:
 
 Power Platform admins can purchase licenses for Power Automate and then manage those licenses in their organization.
 
+
 ### Buy Power Automate plans
 
 You can purchase Power Automate plans from [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 1. Sign in to the Microsoft 365 admin center.
-1. Go to **Billing** > **Purchase services**, and then search for "Power Automate" to find all relevant plans.
+1. Go to **Marketplace** > **All products**, and then search for "Power Automate" to find all relevant plans.
 1. Select the plan that you want to buy.
 
    ![Purchase services by selecting a plan](../media/power-automate-licensing/select-plan.png)
@@ -30,27 +31,70 @@ You can purchase Power Automate plans from [Microsoft 365 admin center](https://
 
    ![Image showing the detail for the plan selected](../media/power-automate-licensing/selected-plan.png)
 
-### Buy Unattended add-on
+### Buy Hosted RPA add-on
 
-You can purchase the **Power Automate unattended RPA Trial add-on** from the [Microsoft 365 admin center](https://admin.microsoft.com/).
+You can purchase the **Power Automate hosted RPA add-on** from the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 1. Sign in to the Microsoft 365 admin center.
-1. Go to **Billing** > **Purchase services**, and then search for "Power Automate" to find all relevant plans.
-1. Search for the **Power Automate unattended RPA Trial add-on**.
+1. Go to **Marketplace** > **All products**, and then search for "Power Automate" to find all relevant plans.
+1. Search for the **Power Automate Premium**.
 
-   ![An image that displays the Power Automate unattended RPA Trial add-on](../media/power-automate-licensing/unattended-trial-add-on.png)
+   ![An image that displays the Power Automate Premium](../media/power-automate-licensing/select-plan.png)
 
-1. Select **Details** on the **Power Automate unattended RPA Trial add-on** plan, and then select **Add-ons**.
-
-   ![Image that displays the add-ons button](../media/power-automate-licensing/add-ons.png)
-
-1. Find the **Power Automate unattended RPA add-on Trial** and buy it.
+1. Select **Details** on the **Power Automate Premium** plan, and then select **Add-ons**.
+1. Find the **Power Automate hosted RPA Trial** and buy it.
 
    ![Power Automate unattended RPA add-on Trial add on](../media/power-automate-licensing/add-ons-details.png)
 
-After the purchase completes, the environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+After the purchase completes, the environment admin must assign the available (paid or trial) hosted RPA add-on capacities to a specific environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 ## Manage licenses
+
+
+### Assign Process license
+
+Here are the two steps you must take if you want to assign a Process license.
+
+1. Allocate the Process license to an environment in the Power Platform admin center.
+
+1. Assign a Process license to a flow.
+
+   > [!NOTE]
+   > To run unattended desktop flows in an environment, you need to assign one Process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you will also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
+
+It's easy and scalable to allocate the Process licenses you've purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased the licenses.
+
+> [!TIP]
+> To learn more about how to allocate the Process license to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
+
+Follow these steps to allocate add-ons to an environment.
+
+1. Select **Resources** > **Capacity** on the left side of the screen.
+1. Select **Add-ons** > in the capacity page.
+1. Select the edit button on an environment.
+1. Enter the amount of each add-on you would like to allocate to each environment.
+
+   > [!TIP]
+   > Power Automate Process is the same as Process license.
+   > [!NOTE]
+   > The Process license is environment specific. So, if you have multiple environments that need to run a flow and/or unattended desktop flow, you need to assign the Process license in each environment.
+
+  
+1. Select **Save**.
+
+   ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment.png)
+
+   After you assign the Process licenses to an environment, you can choose which flows can use the Process licenses.
+
+1. In [Power Automate](https://flow.microsoft.com/), choose the flow to which you want to add the license. Owners, co-owners of the flow and admins can assign a Process license to a flow.
+
+   When you select a flow, you'll now see a new section in the details pane that tells you if the flow is assigned to a user, or if it is part of the Process license. The default for a flow is to use the license of the user.
+
+1. To have a flow use the Process license, select  **Edit** in the details panel. You will then see the **Name**, **Description** and **Plan** that the flow uses. If your environment has the Process license assigned, you can move that flow to use the Process license. Otherwise, you'll need to assign capacity.
+
+   ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
+
+After you update your flow, anyone will be able to use that flow, even if it leverages premium connectors. Additionally, capacity will be dedicated to that flow.
 
 ### Assign per user licenses to user
 
@@ -67,7 +111,7 @@ After the purchase completes, the environment admin must assign the available (p
 
 ### Assign per flow license
 
-Here are the two steps you must take if you want to assign a per flow license to a user.
+Here are the two steps you must take if you want to assign a per flow license.
 
 1. Allocate the per flow license to an environment in the Power Platform admin center.
 
@@ -91,7 +135,7 @@ Follow these steps to allocate add-ons to an environment.
    > The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
 1. Select **Save**.
 
-   ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-license-environment.png)
+   ![An image that displays the steps needed to assign a license to an environment and manage add-ons.](../media/power-automate-licensing/assign-license-environment.png)
 
    After you assign a per flow plan add-on to an environment, you can choose which flows can use that add-on.
 
@@ -107,7 +151,7 @@ Follow these steps to allocate add-ons to an environment.
 
 After you update your flow, anyone will be able to use that flow, even if it leverages premium connectors. Additionally, capacity will be dedicated to that flow.
 
-### Assign unattended add-ons to an environment
+### Assign unattended RPA add-on to an environment
 
 In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Resources** > **Capacity** > **Manage** in add-ons to assign add-ons.
 
@@ -205,7 +249,7 @@ Yes. To get started, use the [self-service purchase](/microsoft-365/commerce/sub
 > [!IMPORTANT]
 > This capability isn't available to government, non-profit, or education tenants in the United States.
 
-Customers can make a self-service purchase from Power Automate. To do this, they first provide their email address to confirm if they are a user in an existing Azure Active Directory (Azure AD) tenant. Next, they'll need to log in by using their Azure AD credentials. After signing in, the they need to indicate the number subscriptions they want to purchase and provide a credit card for payment. When the purchase is complete, they'll can start using their subscription. The purchaser can also access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
+Customers can make a self-service purchase from Power Automate. To do this, they first provide their email address to confirm if they are a user in an existing Azure Active Directory (Azure AD) tenant. Next, they need to log in by using their Azure AD credentials. After signing in, they need to indicate the number subscriptions they want to purchase and provide a credit card for payment. When the purchase is complete, they can start using their subscription. The purchaser can also access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
 
 ![This image displays the self service get started screen with all the necessary steps](../media/power-automate-licensing/get-started-self-service.png)
 

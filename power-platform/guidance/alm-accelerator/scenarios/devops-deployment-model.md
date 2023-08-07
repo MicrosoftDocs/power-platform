@@ -1,15 +1,14 @@
 ---
-title: "ALM Accelerator for Power Platform DevOps deployment model"
-description: "Overview of deployment models for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+title: Azure DevOps deployment model
+description: Learn about Azure DevOps deployment models for the ALM Accelerator for Power Platform.
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
-ms.custom: ""
-ms.date: 04/07/2023
-
-ms.topic: "article"
 ms.reviewer: sericks
+ms.custom: bap-template
+ms.date: 04/07/2023
+ms.topic: conceptual
 search.audienceType: 
   - admin
 search.app: 
@@ -17,63 +16,59 @@ search.app:
   - Powerplatform
 ---
 
-# ALM Accelerator for Power Platform DevOps deployment model
+# Azure DevOps deployment model
 
-## Overview
+The ALM Accelerator for Power Platform supports three Azure DevOps deployment models:
 
-Scenarios:
-
-- **Power Platform 1:1 DevOps** - Single Azure DevOps organization and project used by the ALM Accelerator.
-- **Power Platform 1:Many DevOps** - Single Azure DevOps organization and multiple projects used by the ALM Accelerator.
-- **Multiple Power Platform environments and DevOps** - Multiple Azure DevOps organizations with multiple ALM Accelerator installations.
-
-> [!NOTE]
-> Multiple Power Platform environments and DevOps aren't recommended by ALM Accelerator as separate instances will need to be updated and managed. Projects displayed to the user will be managed by role-based access security.
+- [**1:1**](#11-power-platform-to-azure-devops): A single Azure DevOps organization and a single ALM Accelerator project
+- [**1:Many**](#1many-power-platform-to-azure-devops): A single Azure DevOps organization and multiple ALM Accelerator projects
+- [**Many:Many**](#manymany-power-platform-to-azure-devops): Multiple Azure DevOps organizations with multiple ALM Accelerator installations  
+    We don't recommend a Many:Many scenario. You'd need to update and manage separate instances, and projects displayed to the user would be managed by role-based security.
 
 ## Factors to consider
 
-As you plan your DevOps deployment model, the following factors may help you decide the best approach:
+As you plan your Azure DevOps deployment model, the following factors may help you determine the best approach:
 
 - Do different teams or business units require separate locations to store and manage solutions?
 
-- Is there a cost and benefit of the overhead in managing and maintaining managing multiple DevOps processes for different Power Platform environments?
+- Do different teams or business units have different levels of business sensitivity or data loss prevention policies that require separate handling?
 
-- Do different teams or business units have differing levels of business sensitivity or data loss prevention that will require separate handling?
+- Does the benefit outweigh the cost of the overhead in managing and maintaining multiple Azure DevOps processes for different Power Platform environments?
 
-- How will common assets be shared and managed between multiple teams? For example, shared DevOps templates or shared components.
+- How will common assets like Azure DevOps templates and shared components be shared and managed between multiple teams?
 
-- Azure Active Directory security model. Will each team manage and maintain Active Directory applications and service principals or will they be shared across different Power Platform environments and Azure DevOps organizations?
+- Will each team manage and maintain Azure Active Directory (Azure AD) applications and service principals? Or will Azure AD applications and service principals be shared across different Power Platform environments and Azure DevOps organizations?
 
-## Power Platform 1 to 1 DevOps
-
-In this scenario, the following configuration is assumed:
-
-- Single Power Platform Maker Deployment with Shared Power Platform Environments for the Accelerator Canvas Application, Validation, Test, and Production Environments.
-
-- Single Shared Azure DevOps where all Makers collaborate on Solutions.
-
-## Power Platform 1 to many DevOps
+## 1:1 Power Platform to Azure DevOps
 
 In this scenario, the following configuration is assumed:
 
-- Single Power Platform maker deployment with shared Power Platform environments for the Maker Canvas application, validation, test, and production environments.
+- Has a single Power Platform maker deployment with shared Power Platform environments for the ALM Accelerator canvas app and validation, test, and production environments.
 
-- Multiple Azure DevOps for different teams or Business Units.
+- Has a single shared Azure DevOps organization where all makers collaborate on solutions.
 
-- Each Azure DevOps organization can have a different set of users protected buy different role-based access security rules.
-
-- Multiple pipelines can be defined and used at an Azure DevOps level that allows solutions to be deployed to different validation, test, and production environments.
-
-## Multiple Power Platform environments and DevOps
-
-This scenario is not a recommended deployment model as it requires the deployment and management of multiple AA4PP deployments within the organization.
+## 1:Many Power Platform to Azure DevOps
 
 In this scenario, the following configuration is assumed:
 
-- Multiple Power Platform maker deployments with shared Power Platform Environments for the Maker Canvas application, validation, test, and production environments.
+- Has a single Power Platform maker deployment with shared Power Platform environments for the maker canvas app and validation, test, and production environments.
 
-- Multiple Azure DevOps for different teams or business units.
+- Has multiple Azure DevOps organizations for different teams or business units.
 
-- Each Azure DevOps organization can have a different set of users protected buy different role-based access security rules.
+- Each Azure DevOps organization can have a different set of users protected by different role-based security rules.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+- Multiple pipelines can be defined and used at an Azure DevOps organization level to allow solutions to be deployed to different validation, test, and production environments.
+
+## Many:Many Power Platform to Azure DevOps
+
+This scenario isn't recommended because it requires the deployment and management of multiple ALM Accelerator instances.
+
+In this scenario, the following configuration is assumed:
+
+- Has multiple Power Platform maker deployments with shared Power Platform Environments for the maker canvas app and validation, test, and production environments.
+
+- Has multiple Azure DevOps organizations for different teams or business units.
+
+- Each Azure DevOps organization can have a different set of users protected by different role-based security rules.
+
+[!INCLUDE [footer-include](../../../includes/footer-banner.md)]
