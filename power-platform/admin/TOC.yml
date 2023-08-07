@@ -604,7 +604,7 @@
                   href: analytics-ui-flow.md
             - name: Reports
               items:
-                - name: Tenant-level analytics (preview)
+                - name: Tenant-level analytics
                   href: tenant-level-analytics.md
                 - name: Power Apps analytics
                   href: powerapps-analytics-reports.md
