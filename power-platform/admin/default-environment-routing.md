@@ -74,7 +74,7 @@ Before you enable the **Default environment routing** feature, consider the foll
 
 When trying to enable an environment routing tenant setting, keep the following points in mind: 
 
--  If the **Developer environment assignments** property is set for only _specific admins_, the command fails and an error message is displayed. To change this, go to Power Platform admin center > **Tenant settings** -> **Developer environment assignments** and set it to **Everyone**.
+-  If the **Developer environment assignments** property is set for only _specific admins_, the command fails and an error message is displayed. To change this, go to Power Platform admin center > **Tenant settings** > **Developer environment assignments** and set it to **Everyone**.
 
 -  If the tenant's default environment isn't managed, the command fails and an error message is displayed. See [Enable or edit Managed Environments in the admin center](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center) for more information.
 
