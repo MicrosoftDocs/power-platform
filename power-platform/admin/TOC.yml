@@ -212,7 +212,7 @@
                       href: settings-features.md
                     - name: Enable languages
                       href: enable-languages.md
-                    - name: Privacy preferences
+                    - name: Manage privacy and security settings
                       href: settings-privacy-security.md
                     - name: Configure Dataverse search
                       href: configure-relevance-search-organization.md
@@ -454,9 +454,9 @@
                   href: block-forwarded-email-from-power-automate.md
                 - name: Block cookie replay attacks
                   href: block-cookie-replay-attack.md
-                - name: IP firewall (preview)
+                - name: Configure IP firewall (preview)
                   href: ip-firewall.md
-                - name: Continuous access evaluation integration (preview)
+                - name: Continuous access evaluation (preview)
                   href: continuous-access-evaluation.md
                 - name: Configure environment security
                   items:
