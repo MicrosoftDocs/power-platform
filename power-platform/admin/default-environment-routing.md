@@ -94,6 +94,7 @@ Set-TenantSettings -RequestBody $tenantSettings
 
 Admins can run the following cmdlet to confirm if environment routing is enabled for their tenant's default environment. The **enableDefaultEnvironmentRouting** flag should be set to **True**.
 
+```PowerShell
 $Get-TenantSettings
 
 $tenantSettings = Get-TenantSettings
@@ -109,7 +110,7 @@ $tenantSettings.powerPlatform.governance
 ***enableDefaultEnvironmentRouting**: **True***
 
 *policy: @{enableDesktopFlowDataPolicyManagement=False}*
-
+```
 
 ## Frequently asked questions (FAQs)
 
@@ -129,9 +130,9 @@ The makers get assigned the admin security role in the developer environments.
 
 Yes, makers can always switch to other environments.
 
-### Will the developer environment impact my tenant DV quota?
+### Will the developer environment impact my tenant Dataverse quota?
 
-No, the developer environments don't impact your tenant DV quota.
+No, the developer environments don't impact your tenant Dataverse quota.
 
 ### What happens if the developer environment creation fails?
 
