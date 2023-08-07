@@ -604,7 +604,7 @@
                   href: analytics-ui-flow.md
             - name: Reports
               items:
-                - name: Tenant-level analytics (preview)
+                - name: Tenant-level analytics
                   href: tenant-level-analytics.md
                 - name: Power Apps analytics
                   href: powerapps-analytics-reports.md
@@ -704,6 +704,8 @@
                   href: programmability-tutorial-create-daily-capacity-report.md
                 - name: "Install an application to a target environment (preview)"
                   href: programmability-tutorial-install-application-environment.md
+                - name: "Tutorial: Allocate add-ons to environments (preview)"
+                  href: programmability-tutorial-allocate-capacity-addons.md
             - name: PowerShell
               items:
                 - name: Getting started
