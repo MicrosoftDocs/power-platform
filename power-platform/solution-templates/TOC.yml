@@ -46,14 +46,24 @@
       href: finance/sap-procurement/use/purchase-order-management.md
   - name: FAQs
     href: finance/sap-procurement/faqs.md
-- name: Human Resources - Employee Kudos
+- name: Human Resources
   items:
-  - name: Overview
-    href: hr/employee-kudos/overview.md
-  - name: Install
-    href: hr/employee-kudos/install.md
-  - name: Use
-    href: hr/employee-kudos/use.md  
+  - name: Employee Kudos
+    items:
+    - name: Overview
+      href: hr/employee-kudos/overview.md
+    - name: Install
+      href: hr/employee-kudos/install.md
+    - name: Use
+      href: hr/employee-kudos/use.md
+  - name: Awards and Recognition
+    items:
+    - name: Overview
+      href: hr/awards-and-recognition/overview.md
+    - name: Install
+      href: hr/awards-and-recognition/install.md
+    - name: Use
+      href: hr/awards-and-recognition/use.md 
 - name: Related content
   items:
   - name: Power Apps documentation
