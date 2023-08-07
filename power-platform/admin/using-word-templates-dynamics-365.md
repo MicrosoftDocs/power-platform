@@ -308,7 +308,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
  Lists of records created from a custom template may not appear in the same order in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] documents as the order in customer engagement apps. Records are listed in the order of the time and date they were created.  
 
 ### Issue with right-to-left languages
-Content in right-to-left (RTL) languages may have some formatting issues in the Word document after the document is created.
+Content in right-to-left (RTL) languages may have some formatting issues in the Word file after the document is created.
 
 ### See also  
 
