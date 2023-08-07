@@ -21,7 +21,7 @@ To add Kudos *types* or *badges*, follow these steps:
 
 1. Start the *Kudos Administration app* and select **Badges** under **Administration**.
 
-   :::image type="content" source="media/use/Badges1.png" alt-text="Screenshot showing selection of Badges":::
+   :::image type="content" source="media/use/Badges1.png" alt-text="Screenshot showing selection of Badges.":::
 
 1. Select **+ New** on the top toolbar and fill out the *Name*, *SubTitle*, and *Sort Order* for the new badge.
 1. Select **Save**. Once done, you can associate an image with the badge. Kudos is a visual experience, so it's important to assign an image to each badge.
@@ -34,7 +34,7 @@ If a user doesn't want to be part of the program, you can add them to the opt-ou
 1. Start the *Kudos Administration* app.
 1. Select **Opt-out Users** under **Administration**.
 
-   :::image type="content" source="media/use/OptOut1.png" alt-text="Screenshot showing selection of Opt-out Users":::
+   :::image type="content" source="media/use/OptOut1.png" alt-text="Screenshot showing selection of Opt-out Users.":::
 
 1. Select **+ New** on the top toolbar and fill out the form.
 1. Select **Save**.

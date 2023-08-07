@@ -28,7 +28,7 @@ When you select the **license request** link, the **Make a license request** scr
 
     Details like the project you're working on and urgency of the project might help admins choose to act on the request quickly.  
 
-1. In the **Select license type** section, the required license is preselected based on your usage. For example, if you use RPA (robotic process automation) in any of your flows, **Per-user license with attended RPA (robotic process automation)** is selected by default.
+1. In the **Select license type** section, the required license is preselected based on your usage. For example, if you use RPA (robotic process automation) in any of your flows, **Power Automate Premium plan** is selected by default.
 
     You can change the selection to request a different license.
 
