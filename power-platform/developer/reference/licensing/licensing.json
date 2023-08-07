@@ -982,10 +982,11 @@
         "PerFlowPlan",
         "VAConversations",
         "AppPassForTeams",
-        "PAUnattendedRPA"
+        "PAUnattendedRPA",
+        "PowerAutomatePerProcess"
       ],
       "type": "string",
-      "example": "AppPass"
+      "example": "PowerAutomatePerProcess"
     },
     "BillingPolicyConditionsModel": {
       "description": "The ISV Contract API filter conditions.",
