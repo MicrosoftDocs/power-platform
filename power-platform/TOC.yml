@@ -29,3 +29,5 @@
               href: faqs-copilot-data-security-privacy.md
             - name: FAQ for Copilot data sharing
               href: faqs-copilot-data-sharing.md
+            - name: FAQ for using Copilot to generate deployment notes in pipelines
+              href: alm/faqs-ai-deployment-notes-pipelines.md
