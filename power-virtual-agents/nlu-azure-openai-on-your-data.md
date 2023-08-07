@@ -30,11 +30,12 @@ By connecting Power Virtual Agents with Azure OpenAI on your data, your bots can
 
 To get started, connect your data source using [Azure OpenAI Studio](https://openai.studio-ppe.azure.com/), and start asking questions and chatting on your data.
 
-:::image type="content" source="/.attachments/image-17344070-b3a3-41e3-a95b-c8974fbfb81b.png" alt-text="image.png":::
+![AOAI_connect data](https://github.com/MicrosoftDocs/power-platform-pr/assets/18705275/4f41ca43-303e-4f71-ab3f-b0a34930a0e5)
+
 
 To connect a Power Virtual Agent bot to your data, select **Deploy**. The bot is created and automatically connected to your Azure resource.
 
-:::image type="content" source="/.attachments/image-fb615231-bd18-4b2b-9ce1-274f76937d68.png" alt-text="image.png":::
+![AOAI_deploy to PVA](https://github.com/MicrosoftDocs/power-platform-pr/assets/18705275/1ab8d462-87e8-42fa-b452-c0e34f87729b)
 
 
 
@@ -44,7 +45,9 @@ The Generative answers node allows you to use generative answers within a bot's 
 
 A Conversational boosting system topic is automatically generated when the bot is created from Azure OpenAI Studio.
 
-:::image type="content" source="/.attachments/image-8000c230-28ce-46a1-9f4d-6baa01c47343.png" alt-text="image.png":::
+![Boost topic](https://github.com/MicrosoftDocs/power-platform-pr/assets/18705275/fd47684a-1dfb-4a61-9f04-93605d2bb3c7)
+
+
 
 1. With a topic open for editing in Power Virtual Agents, from the **Advanced** menu add a **Generative answers** node.
  
@@ -57,7 +60,7 @@ A Conversational boosting system topic is automatically generated when the bot i
 1. Edit the connection to the Azure OpenAI Service.
 <mark>[IDW] This might need some more info - will check against the UI</mark>
 
-    :::image type="content" source="/.attachments/image-a03c477d-aabb-4a47-abac-b3ec2877142c.png" alt-text="image.png":::
+    ![Boost conversation_AOAI connector](https://github.com/MicrosoftDocs/power-platform-pr/assets/18705275/7b720290-7c9f-4b1a-8d44-457bf893f8a9)
 
 1. When you're done editing, close the menu. Make sure to save any changes to your topic.
 
@@ -69,3 +72,5 @@ The topic will now generate answers from the information sources via the *Azure 
 > Information sources defined in the **Generative answers** node will override those you have specified at the bot level, which will then function as a fallback. 
 
 These methods of boosting your bot using generative answers allow you to specify information sources for the entire bot (for instance, with a URL at bot creation) and also use alternate information sources within a topic (with the **Generative answers** node).
+
+
