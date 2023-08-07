@@ -29,9 +29,9 @@ The **App Usage** page shows your top apps by number of app launches and your us
 
 :::image type="content" source="media/pb-21.png" alt-text="App Usage":::
 
-## YoY Adoption
+## Year-over-year (YoY) adoption
 
-The **YoY Adoption** page shows your year-on-year adoption of Power Platform. This page highlights growth in number of apps, cloud flows, desktop flows, chatbots, environments, and makers, and shows you the percentage increase or decrease year-on-year.
+The **YoY Adoption** page shows your year-over-year adoption of Power Platform. This page highlights growth in number of apps, cloud flows, desktop flows, chatbots, environments, and makers, and shows you the percentage increase or decrease year-on-year.
 
 :::image type="content" source="media/pb-25.png" alt-text="YoY Adoption":::
 
