@@ -140,7 +140,7 @@ Fill out the pages and then submit to have your support request receive an exped
 We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited preview, please fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
 
 ## Model-driven apps and support environments
-For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Dynamics 365 Customer Engagement** product for that field.
+For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Dynamics 365 Sales** product for that field.
 
 > [!div class="mx-imgBorder"] 
 > ![Select Dynamics 365 Customer Engagement.](media/new-support-request-ce-product.png "Select Dynamics 365 Customer Engagement")
