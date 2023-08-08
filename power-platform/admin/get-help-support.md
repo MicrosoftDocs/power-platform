@@ -45,7 +45,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
   - Helpdesk Admin
   - LCS User
 
-- Available for the the following [support plans](https://www.microsoft.com/dynamics365/support):
+- Available for the following [support plans](https://www.microsoft.com/dynamics365/support):
    
   - Subscription Support
   - Professional Direct Support
@@ -57,7 +57,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 > - Your Support subscription has expired. Please renew.
 > - We couldn't find your support plan. 
 >   - If you have a Unified or Premier Support plan, please contact your Incident Manager or Customer Success Account Manager (CSAM).
->   - If you have a non-Unified/Premier Support plan, please verify the plan is active. For support information, see [Community Forums](https://community.dynamics.com/forums/thread/).
+>   - If you have a non-Unified/Premier Support plan, please verify the plan is active. For support information, see [Community forums](https://community.dynamics.com/forums/thread/).
 
 
 ## View solutions or create a support request
