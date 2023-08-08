@@ -26,10 +26,10 @@ These sources include:
 
 - External sources:
   - Bing Search
-  - [Bing Custom Search](https://www.customsearch.ai/)
+  - Bing Custom Search
 
 - Internal resources:
-  - [Azure OpenAI on your data](nlu-azure-openai-on-your-data.md)
+  - Azure OpenAI on your data
   - SharePoint
   - OneDrive for Business
   - Custom data (internal or external): Supply your own content from any source, for example, from a Power Automate Flow, a Skill, or other source.
@@ -43,7 +43,7 @@ Different information sources have different capabilities, such as the number of
 | --- | --- | --- | --- | --- |
 | Bing Search | External | Searches the query input on Bing; returning results only from provided websites | 4 public URLs (for example, _microsoft.com_) | None |
 | [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to Power Virtual Agents | Each search ID can use more than 4 URLs (Bing Custom Search also provides other functionality) but you can only connect to one search ID | None |
-| [Azure OpenAI on your data](nlu-azure-openai-on-your-data.md) | Internal |  | Defined by your Azure OpenAI Service connection. | Bot user's Azure Active Directory (Azure AD) authentication |
+| Azure OpenAI on your data | Internal |  | Defined by your Azure OpenAI Service connection. | Bot user's Azure Active Directory (Azure AD) authentication |
 | SharePoint | Internal | Connects to a SharePoint URL, uses GraphSearch to return results | 4 URLs | Bot user's Azure Active Directory (Azure AD) authentication |
 | OneDrive for Business | Internal | Connects to a OneDrive for Business URL, uses GraphSearch to return results | 4 URLs | Bot user's Azure Active Directory (Azure AD) authentication |
 | [Custom data](#custom-data-source) | Internal | Uses a JSON code block to define the URLs and content to use | One variable, populated with the JSON results to be summarized | Dependent on source |
