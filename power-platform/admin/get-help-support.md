@@ -1,14 +1,16 @@
 ---
 title: "Get Help + Support in Power Platform  | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative to get resolution for your issue.
-author: sericks
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/04/2023
+ms.date: 08/08/2023
 ms.subservice: admin
-ms.author: kvivek 
+ms.author: sericks 
 search.audienceType: 
   - admin
+contributors:
+- prabhav
 ---
 # Get Help + Support
 
@@ -136,17 +138,6 @@ Fill out the pages and then submit to have your support request receive an exped
 > ![Fill in outage info.](media/report-outage-page-one.png "Fill in outage info")
 
 We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited preview, please fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
-
-## For app-specific issues
-To get the fastest response time for issues you encounter with a preview or production release of a specific customer engagement app or add-on, create a support request for the specific application from the **Application and Add-ons** menu.   
-
-> [!div class="mx-imgBorder"] 
-> ![Select from this list for app issues.](media/support-use-applications-addons.png "Select from this list for app issues")
-
-Do **not** select topics from **Administration Center** as this can result in lost time in routing your support request properly. 
-
-> [!div class="mx-imgBorder"] 
-> ![Don't select from this list for app issues.](media/support-dont-use-administration-center.png "Don't select from this list for app issues")
 
 ## Model-driven apps and support environments
 For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Dynamics 365 Customer Engagement** product for that field.
