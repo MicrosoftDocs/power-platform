@@ -24,7 +24,7 @@ To get started, connect your data source using [Azure OpenAI Studio](https://ope
 
 To connect a Power Virtual Agent bot to your data, select **Deploy**. The bot is created and automatically connected to your Azure resource.
 
-:::image type="content" source="media/nlu-gpt/generative-answers-azure-deploy.png" alt-text="Screenshot showing the deploy option from Azure OpenAI Studio."::: deploy to pva
+:::image type="content" source="media/nlu-gpt/generative-answers-azure-deploy.png" alt-text="Screenshot showing the deploy option from Azure OpenAI Studio.":::
 
 > [!NOTE]
 > A Conversational boosting system topic is automatically generated when the bot is created from Azure OpenAI Studio.
@@ -34,8 +34,6 @@ To connect a Power Virtual Agent bot to your data, select **Deploy**. The bot is
 To use Azure OpenAI:
 
 1. In Power Virtual Agents, open the **Data source** configuration pane for your [topic's generative answers node](nlu-boost-node.md):
-
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the Generative answers node data sources menu.":::
 
     - Open the **Properties** pane for the **Create generative answers** node and select **Data source**.
     - On the **Create generative answers** node, select **Edit** under **Data sources**.
