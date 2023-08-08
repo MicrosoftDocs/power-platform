@@ -20,20 +20,20 @@ By connecting Power Virtual Agents with Azure OpenAI on your data, your bots can
 
 To get started, connect your data source using [Azure OpenAI Studio](https://openai.studio-ppe.azure.com/), and start asking questions and chatting on your data.
 
-:::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text='Screenshot showing the Azuree OpenAI Studio.':::
+:::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text="Screenshot showing the Azuree OpenAI Studio.":::
 
 To connect a Power Virtual Agent bot to your data, select **Deploy**. The bot is created and automatically connected to your Azure resource.
 
-:::image type="content" source="media/nlu-gpt/generative-answers-azure-deploy.png" alt-text='Screenshot showing the deploy option from Azure OpenAI Studio.'::: deploy to pva
+:::image type="content" source="media/nlu-gpt/generative-answers-azure-deploy.png" alt-text="Screenshot showing the deploy option from Azure OpenAI Studio."::: deploy to pva
 
 > [!NOTE]
 > A Conversational boosting system topic is automatically generated when the bot is created from Azure OpenAI Studio.
 >  
-> :::image type="content" source="media/nlu-gpt/generative-answers-azure-topic.png" alt-text='Screenshot showing the conversational boosting topic in the list of topics.'::: boosted topic
+> :::image type="content" source="media/nlu-gpt/generative-answers-azure-topic.png" alt-text="Screenshot showing the conversational boosting topic in the list of topics."::: boosted topic
 
 To use Azure OpenAI:
 
-1. In Power Virtual Agents, open the **Data source** configuration pane for your topic's node:
+1. In Power Virtual Agents, open the **Data source** configuration pane for your [topic's generative answers node](nlu-boost-node.md):
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the Generative answers node data sources menu.":::
 
@@ -44,7 +44,7 @@ To use Azure OpenAI:
 
 1. Edit the connection to the Azure OpenAI Service.
 
-    :::image type="content" source="media/nlu-gpt/generative-answers-azure-source.png" alt-text='Screenshot showing the Azure OpenAI source.'::: 
+    :::image type="content" source="media/nlu-gpt/generative-answers-azure-source.png" alt-text="Screenshot showing the Azure OpenAI source."::: 
 
 1. When you're done entering sources, close the menu. Make sure to save any changes to your topic.
 
