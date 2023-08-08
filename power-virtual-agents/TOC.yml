@@ -40,6 +40,8 @@
       href: nlu-boost-node.md
     - name: Use a Bing Custom Search to search a number of websites
       href: nlu-generative-answers-bing.md
+    - name: Use a connection to Azure OpenAI on your data
+      href: nlu-generative-answers-azure-openai.md
     - name: Use content on SharePoint or OneDrive for Business
       href: nlu-generative-answers-sharepoint-onedrive.md
     - name: Use a custom data source
