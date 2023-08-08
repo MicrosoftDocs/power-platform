@@ -17,7 +17,11 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 
 > [!IMPORTANT]
 >
-> The environment is disabled during migration of the BYOK key to the customer-managed key. The downtime is short as we only need to change the encryption key for the SQL storage. Once the environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB, the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. When BYOK enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
+> We have assigned an account manager to each of the BYOK tenants to assist in your BYOK migration. Your account manager will work with you to develop a migration plan and they will submit an internal service ticket for the engineering team to start the process where we first remove the BYOK feature flag from your Power Platform admin center. You will then start the migration as described in this documentation. We automatically complete the final migration steps when you moved your last BYOK environment to customer-managed key. This is where we remove the SQL service restriction from all your remaining environments and remove the BYOK key vaults from your tenant, after 28 days from the date the final BYOK environment was migrated.  
+
+> Once an environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB, the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. When BYOK enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
+
+> In addition to having the ability to use different/multiple encryption keys for separate environments and better management of your encryption key in your own key vault, upgrading BYOK to customer-managed key opens up your environments to all other Power Platform services that use non-SQL storage, example Customer Insights and Analytics, larger file upload sizes, more cost effective audit storage with audit retention, Elastic table services, Dataverse Search, Long-term retention, etc.
 
 If you have enabled audit and search in the BYOK environment and have uploaded files and created a data lake, all these storages will be automatically created and encrypted with the customer-managed encryption key.
 
@@ -28,7 +32,9 @@ Similarly, if you didn’t enable these audit or search functionalities and enab
 1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data: More information: [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data).
 
 > [!NOTE]
-> When migrating your BYOK environment to use the customer-managed key, the environment shows up in the **Environments with policies** list, and as managed by **CustomerViaMicrosoft** on the **Environment Settings\Environment encryption** page.
+> There is no downtime when you migrate your BYOK environment.
+>
+> When a BYOK environment is migrated to customer-managed key, the environment shows up in the **Environments with policies** list, and as managed by **CustomerViaMicrosoft** on the **Environment Settings\Environment encryption** page.
 
 ## Next steps
 
