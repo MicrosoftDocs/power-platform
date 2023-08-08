@@ -142,8 +142,7 @@ We'd love to know your thoughts on the new outage reporting process. Or, if you'
 ## Model-driven apps and support environments
 For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Dynamics 365 Sales** product for that field.
 
-> [!div class="mx-imgBorder"] 
-> ![Select Dynamics 365 Customer Engagement.](media/new-support-request-ce-product.png "Select Dynamics 365 Customer Engagement")
+:::image type="content" source="media/how-can-we-help.png" alt-text="Select Dynamics 365 Sales as the product.":::
 
 ### See also
 [Support overview](support-overview.md)<br />
