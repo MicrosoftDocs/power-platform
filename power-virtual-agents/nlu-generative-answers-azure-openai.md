@@ -5,7 +5,7 @@ keywords: "PVA"
 ms.date: 07/31/2023
 ms.topic: how-to
 author: mainguy70
-ms.author: mainguy70
+ms.author: iawilt
 ms.reviewer: iawilt
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
