@@ -140,7 +140,7 @@ Not currently. However, intentional extension hooks are available to customize p
 
 ### Where can I view and run pipelines?
 
-Currently within any development environments associated with a pipeline. Pipelines can't be viewed or run from within target environments. Notice you can also retrieve and run pipelines from the Power Platform CLI.
+Navigate to an unmanaged solution within development a environment associated with your pipeline. Pipelines can't be viewed or run from the default solution, managed solutions, or in target environments. Notice you can also retrieve and run pipelines from the Power Platform CLI.
 
 ### Can I deploy across regions?
 
