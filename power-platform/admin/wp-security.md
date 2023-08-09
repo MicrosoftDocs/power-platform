@@ -4,12 +4,11 @@ description: Provides information about the security concepts in Microsoft Datav
 ms.date: 06/30/2020
 
 ms.topic: overview
-ms.custom: 
-  - "admin-security"
-  - "intro-internal"
-author: jimholtz
+ms.custom: "admin-security"
+ms.collection: get-started
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin

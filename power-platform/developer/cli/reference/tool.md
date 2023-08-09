@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 5/15/2023
+ms.date: 7/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac tool
 
-Power Platform tools that can be installed and launched
+Power Platform tools that can be installed and launched.
 
 [!INCLUDE [tool-intro](includes/tool-intro.md)]
 
@@ -26,32 +26,40 @@ Power Platform tools that can be installed and launched
 
 |Command|Description|
 |---------|---------|
-|[pac tool cmt](#pac-tool-cmt)|Launch Configuration Migration Tool (CMT)|
+|[pac tool admin](#pac-tool-admin)|Launch Power Platform Admin Center for the current environment.|
+|[pac tool cmt](#pac-tool-cmt)|Launch Configuration Migration Tool (CMT).|
 |[pac tool list](#pac-tool-list)|List the launchable tools and their local install state and version.|
-|[pac tool pd](#pac-tool-pd)|Launch Package Deployer (PD)|
-|[pac tool prt](#pac-tool-prt)|Launch Plug-in Registration Tool (PRT)|
+|[pac tool maker](#pac-tool-maker)|Launch Power Apps Maker Portal for the current environment.|
+|[pac tool pd](#pac-tool-pd)|Launch Package Deployer (PD).|
+|[pac tool prt](#pac-tool-prt)|Launch Plug-in Registration Tool (PRT).|
 
+
+## pac tool admin
+
+Launch Power Platform Admin Center for the current environment.
+
+[!INCLUDE [tool-admin-remarks](includes/tool-admin-remarks.md)]
 
 ## pac tool cmt
 
-Launch Configuration Migration Tool (CMT)
+Launch Configuration Migration Tool (CMT).
 
 [!INCLUDE [tool-cmt-intro](includes/tool-cmt-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for tool cmt
 
 #### `--clear` `-c`
 
 Clear tool from local file cache
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--update` `-u`
 
-Update tool to latest available version from nuget.org
+Update tool to latest available version from nuget.org.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [tool-cmt-remarks](includes/tool-cmt-remarks.md)]
 
@@ -61,49 +69,55 @@ List the launchable tools and their local install state and version.
 
 [!INCLUDE [tool-list-remarks](includes/tool-list-remarks.md)]
 
+## pac tool maker
+
+Launch Power Apps Maker Portal for the current environment.
+
+[!INCLUDE [tool-maker-remarks](includes/tool-maker-remarks.md)]
+
 ## pac tool pd
 
-Launch Package Deployer (PD)
+Launch Package Deployer (PD).
 
 [!INCLUDE [tool-pd-intro](includes/tool-pd-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for tool pd
 
 #### `--clear` `-c`
 
 Clear tool from local file cache
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--update` `-u`
 
-Update tool to latest available version from nuget.org
+Update tool to latest available version from nuget.org.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [tool-pd-remarks](includes/tool-pd-remarks.md)]
 
 ## pac tool prt
 
-Launch Plug-in Registration Tool (PRT)
+Launch Plug-in Registration Tool (PRT).
 
 [!INCLUDE [tool-prt-intro](includes/tool-prt-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for tool prt
 
 #### `--clear` `-c`
 
 Clear tool from local file cache
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--update` `-u`
 
-Update tool to latest available version from nuget.org
+Update tool to latest available version from nuget.org.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [tool-prt-remarks](includes/tool-prt-remarks.md)]
 

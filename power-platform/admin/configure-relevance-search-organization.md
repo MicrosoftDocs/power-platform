@@ -1,12 +1,12 @@
 ---
 title: "Configure Dataverse search to improve search results and performance   | MicrosoftDocs"
 description: Configure Dataverse search to improve search results and performance 
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/11/2022
+ms.date: 07/27/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---
@@ -224,6 +224,12 @@ To edit the searchable fields of a table:
 > - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
 >
 > - Although you can have related table fields as a **View column** or a **Find column** or a **Filter column** in a table's Quick Find View, related table fields are not supported by Dataverse search and hence ignored.
+>
+> - If the length of text in a table column is changed and the column is set to **Simple Search View**, the import may not be successful and the following error may occur.
+> 
+>    *Length is not valid because this is an indexed attribute and hence cannot have size greater than 1700.*
+>
+>    The indexed attribute can't extend beyond 1700 bytes. If the corresponding column is registered in the **Quick Find View**, remove the corresponding column from the **Quick Find View** and try to re-export after a time interval.  If you change or delete a **Quick Find View** setting, it may take up to 24 hours to be reflected in the index, as it is a once-a-day maintenance job for the on-premises product.  For more information, see [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true). 
 >
 > - Updates to calculated fields and lookups are not automatically synced in Dataverse search. Data is refreshed whenever a field that is configured for Dataverse search is updated in a record.
 > 

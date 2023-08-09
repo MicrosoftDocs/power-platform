@@ -1,23 +1,23 @@
 ---
-title: "CoE ALM Accelerator for Power Platform key concepts"
+title: "CoE ALM Accelerator for Power Platform key concepts (Deprecated)"
 description: "Key concepts related to ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/23/2023
 
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# CoE ALM Accelerator for Power Platform key concepts
+# CoE ALM Accelerator for Power Platform key concepts (Deprecated)
 
 As you deploy and use the ALM CLI, it's important to understand the following key concepts that the CLI is automating.
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 ## Azure Active Directory
 
@@ -51,7 +51,7 @@ The CoE CLI application can create an Azure Active Directory application that au
 The CoE CLI application can create an Azure Active Directory group that is used for Azure DevOps and Power Platform authentication and role-based access security.
 
 - Group created via Azure CLI.
-   - [Create Group](/cli/azure/ad/group?#az_ad_group_create)
+- [Create Group](/cli/azure/ad/group?#az_ad_group_create)
 
 ## Azure DevOps
 
@@ -140,7 +140,7 @@ The ALM Accelerator for Power Platform assumes the following environments have b
 
 1. Maker environment - An environment that the ALM Accelerator for Power Platform will be installed to. It also requires the following component:
 
-   - "Microsoft Dataverse (legacy)" connection - More information: [Before you start](./before-you-start.md#maker-environment-dataverse-connection).
+   - "Microsoft Dataverse (legacy)" connection - More information: [Before you start](before-you-start.md).
 
 1. Validation - Environment used to validate the deployment before a change is merged into the feature branch.
 

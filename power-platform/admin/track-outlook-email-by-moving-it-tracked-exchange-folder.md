@@ -1,12 +1,12 @@
 ---
 title: "Track Outlook email by moving it to a tracked Exchange folder | MicrosoftDocs"
 description: Track Outlook email by moving it to a tracked Exchange folder
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

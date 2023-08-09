@@ -4,7 +4,7 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/05/2023
+ms.date: 05/22/2023
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -134,6 +134,7 @@ In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamic
 - Microsoft 365 A5/E5/F5/G5 Compliance
 - Microsoft 365 F5 Security & Compliance
 - Microsoft 365 A5/E5/F5/G5 Insider Risk Management
+- Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
 [Learn more](https://go.microsoft.com/fwlink/?linkid=2214240) about applicable licenses.
 
 ## Exclusions

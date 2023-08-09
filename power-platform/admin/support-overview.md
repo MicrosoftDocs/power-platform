@@ -4,9 +4,8 @@ description: Information on support for Microsoft Power Platform and Dynamics 36
 ms.date: 03/23/2022
 ms.reviewer: ""
 ms.topic: overview
-ms.custom: 
-  - "admin-security"
-  - "intro-internal"
+ms.custom: "admin-security"
+ms.collection: get-started
 author: "KumarVivek"
 ms.subservice: admin
 ms.author: "kvivek"

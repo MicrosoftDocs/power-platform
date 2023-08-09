@@ -1,52 +1,75 @@
 ---
-title: "Maintain the ALM Accelerator for Microsoft Power Platform using the admin app | MicrosoftDocs"
-description: "The ALM Accelerator for Microsoft Power Platform helps you follow ALM patterns and practices to move your solutions from your development environment to test and production environments by using Azure DevOps. This guide walks through the maintenance tasks and Azure DevOps project configurations you need to perform for new solutions and projects."
-author: mikefactorial
-ms.topic: conceptual
-ms.date: 04/25/2023
+title: Maintain ALM Accelerator projects
+description: Learn how to perform maintenance tasks and Azure DevOps project configurations in the ALM Accelerator for Power Platform.
+ms.topic: how-to
+ms.date: 05/22/2023
 ms.subservice: guidance
+author: mikefactorial
 ms.author: jeschro
 ms.reviewer: sericks
+ms.custom: bap-template
 ---
 
-# Maintain the ALM Accelerator for Microsoft Power Platform using the ALM Accelerator Admin app
+# Maintain ALM Accelerator projects
 
-Once a project is onboarded to the ALM Accelerator, there are many tasks you can perform to maintain the project. This guide walks through the maintenance tasks and Azure DevOps project configurations you need to perform for new solutions and projects.
+After you onboard a project to the ALM Accelerator, you need to perform certain tasks to maintain it. This article describes the maintenance tasks and Azure DevOps project configurations you need to perform for new solutions and projects.
 
-## Onboarding new users to Azure DevOps
+## Onboard new users to Azure DevOps
 
-1. Open the ALM Accelerator Admin app and select your Azure DevOps organization from the drop-down list.
-1. Select a project from the list to add a new user to.
-1. Under **Team Members**, view the current list of users in the project.
-1. Add and remove users from your Azure DevOps project based on current users in the organization.
+1. Open the ALM Accelerator administration app and select your Azure DevOps organization.
+1. Select a project.
+1. Under **Team Members**, add users to the project. You can also remove users from the project here.
 
-## View existing pipelines in Azure DevOps
+## View pipelines in Azure DevOps
 
-1. Open the ALM Accelerator Admin app and select your Azure DevOps organization from the drop-down list.
-1. Select a project from the list to view existing pipelines.
-1. View the current list of pipelines in the project. From here, you can view the pipeline details and the YAML for the pipeline by selecting the pipeline name and selecting **View**,
+1. Open the ALM Accelerator administration app and select your Azure DevOps organization.
+1. Select a project.
+1. View the list of pipelines in the project.
+    To view the pipeline's details and the YAML for the pipeline, select its name, and then select **View**.
 
-## View and create repositories in Azure DevOps
+## View, create, and upgrade repositories in Azure DevOps
 
-1. Open the ALM Accelerator Admin app and select your Azure DevOps organization from the drop-down list.
-1. Select a project from the list to view or create repositories in your project.
-1. Under repositories, view the current list of repositories in the project. From here, you can view the repository details by selecting **View**.
-1. Create new repositories by selecting **New**.
-1. If you set up your project using the project wizard, you can upgrade an existing ALM Accelerator template repository to the latest version by selecting **Upgrade**. For more information on how the upgrade process works, see [Upgrade the ALM Accelerator for Power Platform app](setup-upgrade-configuration.md). If your project wasn't setup using the setup wizard, creating the sync-pipeline-repo pipeline manually will allow you to use the upgrade feature in the future.
+1. Open the ALM Accelerator administration app and select your Azure DevOps organization.
+1. Select a project.
+1. Under **Repositories**, view the list of repositories in the project.
+    From here, select **New** to view the repository's details.
 
-## Create, edit, and delete service connections
+To create a repository, select **New**.
 
-When onboarding a new maker environment or deployment environment, you need to create a service connection to the environment. This service connection is used to deploy the solution to the environment. You can create, edit, and delete service connections from the ALM Accelerator Admin app.
+If you set up your project using the project wizard, you can select **Upgrade** to [upgrade an ALM Accelerator template repository](setup-upgrade-configuration.md) to the latest version. If your project didn't use the wizard, [create the sync-pipeline-repo pipeline manually](setup-pipeline-sync.md) to use the upgrade feature in the future.
 
-1. Open the ALM Accelerator Admin app and select your Azure DevOps organization from the drop-down list.
-1. Select a project from the list to add a new service connection or view existing service connections.
-1. Create a new service connection by selecting **New**.
-1. Delete an existing service connection by selecting the **Delete** button.
-1. Edit an existing service connection by selecting the **Edit** button.
+## Onboard new maker or deployment environments
 
-## View existing variable groups
+When a new maker or deployment environment joins the ALM process, you need to onboard it to the ALM Accelerator. Onboarding includes creating app users in Dataverse and new service connections in Azure DevOps to allow the pipelines to connect to the new environment.
 
-A default variable group is created when setting up a new project using the project wizard. This variable group is used to drive many of the pipelines in the ALM Accelerator. You can view the variable group by selecting the **View** button.
+### Create an app user in your Dataverse environments
+
+1. Go to the [Power Platform admin center](https://aka.ms/ppac).
+
+1. Select your environment, and then select **Settings**.
+
+1. Select **Users + permissions** > **Application users**.
+
+1. Select **New app user**.
+
+1. Select the Azure App Registration, **Business Unit**, and **Security Role**.
+
+    > [!NOTE]
+    > We recommend that you give this user system administrator role privileges, so that the user can perform the required functions in each of the environments.
+
+### Create, edit, and delete service connections
+
+Create a service connection to the new environment to deploy the solution to it. Create, edit, and delete service connections in the ALM Accelerator administration app.
+
+1. Open the ALM Accelerator administration app and select your Azure DevOps organization.
+1. Select a project to add a new service connection or view existing service connections.
+    - To create a service connection, select **New**.
+    - To delete a service connection, select **Delete**.
+    - To edit a service connection, select **Edit**.
+
+## View variable groups
+
+A variable group is created when you set up a new project using the project wizard. This variable group drives many of the pipelines in the ALM Accelerator. To view the variable group, select the **View** button.
 
 ## Read more
 
@@ -56,4 +79,4 @@ A default variable group is created when setting up a new project using the proj
 - [Configuration and data deployment in pipelines](setup-data-deployment-configuration.md)
 - [Configuring pipeline sync](setup-pipeline-sync.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]

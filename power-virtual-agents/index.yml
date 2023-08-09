@@ -1,166 +1,130 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Virtual Agents documentation # < 60 chars
-summary: Build chatbots easily with Power Virtual Agents.
+summary: Discover how to build AI-driven chatbots easily with Power Virtual Agents with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: power-virtual-agents
 
 metadata:
-  title: Microsoft Power Virtual Agents documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: See how Power Virtual Agents can be used to build powerful AI-driven chatbots. # Required; article description that is displayed in search results. < 160 chars.
-  
+  title: Official Microsoft Power Virtual Agents documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Discover how to build AI-driven chatbots easily with Power Virtual Agents with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site. # Required; article description that is displayed in search results. < 160 chars.
+
   ms.topic: hub-page # Required
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
   ms.author: iawilt #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/24/2022 #Required; mm/dd/yyyy format.
-  ms.custom: intro-internal
+  ms.date: 06/21/2023 #Required; mm/dd/yyyy format.
+  ms.collection: get-started
+  ms.custom: bap-template
   hide_bc: false
 
-
 highlightedContent:
-
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
+  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
 
   items:
     # Card
-    - title: What is Power Virtual Agents?
-      itemType: overview
-      url: ./fundamentals-what-is-power-virtual-agents.md
+  - title: What is Power Virtual Agents?
+    itemType: get-started
+    url: ./fundamentals-what-is-power-virtual-agents.md
 
-    # Card
-    - title: Build bots fast with generative AI
-      itemType: whats-new
-      url: ./nlu-gpt-overview.md
+  # Card
+  - title: What's new in Power Virtual Agents?
+    itemType: whats-new
+    url: https://go.microsoft.com/fwlink/?linkid=2082154
 
-    # Card
-    - title: What's new in Power Virtual Agents?
-      itemType: whats-new
-      url: https://go.microsoft.com/fwlink/?linkid=2082154
+  # Card
+  - title: Power Virtual Agents training
+    itemType: training
+    url: https://powerplatform.microsoft.com/training-workshops/?accordion=1&tab=6
 
-    # Card
-    - title: "Power Virtual Agents Community"
-      itemType: learn
-      url: https://go.microsoft.com/fwlink/?linkid=2058639
-
-    # Card
-    - title: "Power Virtual Agents videos"
-      itemType: video
-      url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
-
-    # Card
-    - title: Register for a free virtual Power Virtual Agents in a Day workshop
-      itemType: learn
-      url: https://powerplatform.microsoft.com/training-workshops/?accordion=1&tab=6
+  # Card
+  - title: Build bots fast
+    itemType: get-started
+    url: ./nlu-gpt-overview.md
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-conceptualContent:  
-  items:
-    - title: Power Virtual Agents preview
-      links:
-        - text: Overview
-          url: ./preview/overview.md
-          itemType: overview
-        - text: Limitations
-          url: ./preview/limitations.md
-          itemType: overview
-        - text: Quickstart
-          url: ./preview/quickstart.md
-          itemType: quickstart
-
-    - title: Get started
-      links:
-        - text: Sign up for free
-          url: ./sign-up-individual.md
-          itemType: get-started        
-        - text: Web app
-          url: ./fundamentals-what-is-power-virtual-agents-portal.md
-          itemType: overview
-        - text: App in Microsoft Teams
-          url: ./teams/fundamentals-what-is-power-virtual-agents-teams.md
-          itemType: overview      
-    
-    - title: Create bots with generative AI
-      links:
-        - text: Use generative AI to build bots fast
-          url: ./nlu-gpt-overview.md
-          itemType: overview
-        - text: Tell your bot what it should do
-          url: ./nlu-authoring.md
-          itemType: tutorial
-        - text: Make your bot useful from day one
-          url: ./nlu-boost-conversations.md
-          itemType: tutorial
-        - text: Build a bot with generative AI from the ground up
-          url: ./nlu-gpt-quickstart.md
-          itemType: quickstart
-
-    - title: Enhance and improve your bots
-      links:
-        - text: Use entities and slot filling
-          url: ./teams/advanced-entities-slot-filling-teams.md
-          itemType: overview
-        - text: Use end-user authentication
-          url: ./advanced-end-user-authentication.md
-          itemType: overview
-        - text: Use Microsoft Bot Framework Skills
-          url: ./teams/advanced-use-skills-teams.md
-          itemType: concept
-
-
-    - title: Publish and integrate
-      links:
-        - text: Configure demo and live sites
-          url: ./publication-connect-bot-to-web-channels.md
-          itemType: overview
-        - text: Publish to Microsoft Teams
-          url: ./publication-add-bot-to-microsoft-teams.md
-          itemType: overview
-        - text: Publish to Facebook
-          url: ./publication-add-bot-to-facebook.md
-          itemType: overview
-
-    - title: Monitor and diagnose
-      links:
-        - text: Use analytics to improve your bot
-          url: ./analytics-overview.md
-          itemType: overview
-        - text: Analyze bot performance and usage
-          url: ./analytics-summary.md
-          itemType: overview
-        - text: Analyze topic usage
-          url: ./analytics-topic-details.md
-          itemType: overview     
-
-    - title: Administer and manage
-      links:
-        - text: Assign licenses
-          url: ./requirements-licensing.md
-          itemType: overview
-        - text: Working with environments
-          url: ./environments-first-run-experience.md
-          itemType: overview
-        - text: Export and import bots using solutions
-          url: ./authoring-export-import-bots.md
-          itemType: how-to-guide     
-    
-    - title: Support and licensing
-      links:
-        - text: Community help and support
-          url: ./fundamentals-support.md
-          itemType: overview
-        - text: Licensing
-          url: ./requirements-licensing-subscriptions.md
-          itemType: overview 
-    
 
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
-  # Supports up to 3 sections
   sections:
-    - title: Other Microsoft Power Platform products # < 60 chars (optional)
-    - items:
+    - title: Create
+      # Each card should have at least three and no more than five links. Do not include a "See also" link.
+      items:
+        - title: Try/Buy
+          links:
+            - text: Sign up for free
+              url: ./sign-up-individual.md
+            - text: Buy license
+              url: ./requirements-licensing-subscriptions.md
+        - title: Fundamentals
+          links:
+            - text: Use the web app
+              url: ./fundamentals-what-is-power-virtual-agents-portal.md
+            - text: Use the unified canvas to build bots
+              url: ./unified-authoring-conversion.md
+        - title: Create bots with generative AI
+          links:
+            - text: Use generative AI to build bots fast
+              url: ./nlu-gpt-overview.md
+            - text: Tell your bot what it should do
+              url: ./nlu-authoring.md
+            - text: Make your bot useful from day one
+              url: ./nlu-boost-conversations.md
+            - text: Build a bot with generative AI from the ground up
+              url: ./nlu-gpt-quickstart.md
+        - title: Enhance and improve your bots
+          links:
+            - text: Use entities and slot filling
+              url: ./advanced-entities-slot-filling.md
+            - text: Use end-user authentication
+              url: ./advanced-end-user-authentication.md
+            - text: Use Microsoft Bot Framework Skills
+              url: ./advanced-use-skills.md
+        - title: Best practices guidance
+          links:
+            - text: Topics best practices
+              url: guidance/topics-overview.md
+            - text: Trigger phrases best practices
+              url: guidance/trigger-phrases-best-practices.md
+            - text: Measuring chatbot engagement
+              url: guidance/measuring-engagement.md
+
+    - title: Administer and extend
+      items:
+        - title: Administer Power Virtual Agents
+          links:
+            - text: Assign licenses
+              url: ./requirements-licensing.md
+            - text: Working with environments
+              url: ./environments-first-run-experience.md
+            - text: Export and import bots using solutions
+              url: ./authoring-export-import-bots.md
+        - title: Publish and integrate
+          links:
+            - text: Configure demo and live sites
+              url: ./publication-connect-bot-to-web-channels.md
+            - text: Publish to Microsoft Teams
+              url: ./publication-add-bot-to-microsoft-teams.md
+            - text: Publish to Facebook
+              url: ./publication-add-bot-to-facebook.md
+        - title: Monitor and diagnose
+          links:
+            - text: Use analytics to improve your bot
+              url: ./analytics-overview.md
+            - text: Analyze bot performance and usage
+              url: ./analytics-summary.md
+            - text: Analyze topic usage
+              url: ./analytics-topic-details.md
+    #   - title: Use
+    #   items:
+
+    - title: Related content
+      items:
+        # Card
+        - title: Power Platform
+          summary: One-stop learning resource for Power Platform applications and features including admin, developer, and guidance documentation.
+          url: /power-platform
         # Card
         - title: Power Apps
           summary: Quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
@@ -177,11 +141,11 @@ additionalContent:
 
     - title: See also
       items:
-      # Card
-      - title: Dynamics 365
-        summary: "The next generation of CRM and ERP applications"
-        url: /dynamics365/
-      # Card
-      - title: Microsoft Azure
-        summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
-        url: /azure
+        # Card
+        - title: Dynamics 365
+          summary: "The next generation of CRM and ERP applications"
+          url: /dynamics365/
+        # Card
+        - title: Microsoft Azure
+          summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
+          url: /azure
