@@ -38,6 +38,7 @@ For more information about these prerequisites, go to [Set up pipelines](set-up-
 1. Select **Deploy**. This initiates an automated deployment to the target environment.
 
 > [!NOTE]
+> - Pipelines are not visible within the default solution, managed solutions, or target environments.
 > - You must complete the deployment stages in order. For example, you can't deploy version 1.0.0.1 to production before it has been deployed to test. After deploying to test, the same solution that was deployed will then be deployed to production, even if afterward you made changes to the solution without incrementing the version.
 > - A message stating your request to deploy here is pending, which means your admin attached [background processes or approvals](extend-pipelines.md) that run before your deployment can proceed.
 
