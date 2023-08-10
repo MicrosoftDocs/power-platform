@@ -3,7 +3,7 @@ title: Migrate apps and flows from the default environment
 description: Learn how to migrate apps and flows from the default environment.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/10/2023
+ms.date: 08/31/2023
 ms.subservice: guidance
 author: robstand
 ms.author: ravichada
@@ -459,6 +459,7 @@ Yes, you can still use solutions in a Dataverse enabled environment. The app and
 ### Definitions
 
 #### Default Environment
+
 You can't delete the default environment. You can't manually back up the default environment; system backups are done continuously.
 
 The default environment is limited to 1 TB of storage capacity. To store more data, you can create a production environment. The default environment has the following:
