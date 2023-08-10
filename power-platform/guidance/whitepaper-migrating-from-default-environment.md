@@ -111,7 +111,7 @@ The distinction between app and solution is an important one. Exporting and impo
 
 ### Export and import a canvas app (legacy way)
 
-:::image type="content" source="media/image2.gif" alt-text="Export package GIF demo with example export walkthrough." link="link":::
+:::image type="content" source="media/image2.gif" alt-text="Export package GIF demo with example export walkthrough.":::
 
 The detailed steps are documented at [Exporting a canvas app package](/power-apps/maker/canvas-apps/export-import-app) and [Importing a canvas app package](/power-apps/maker/canvas-apps/export-import-app).
 
@@ -361,7 +361,6 @@ Notice the “Connections” will give you the list of all connections used by t
 1. Use the earlier information to notify the maker about the future impact, you can use Power Cards to collect the feedback from the maker if the App/Flow can be deleted or need to be migrated to another Environment.
 
 Based on your analysis, if you determine that the affected Flows aren't being used (it hasn't been running for a while, isn't shared with anyone, hasn't been updated in a while), you can put it in quarantine and send an email to the make with instructions on how to move it to a different environment. This encourages a DIY (Do it Yourself) culture and removes the shadow IT. In some situations, you might want to exempt some objects from the DLP. For instance, you would like to apply a specific DLP only for new resources created and exempt the current resources. More information about DLP resource exemption can be found [here](/power-platform/admin/dlp-resource-exemption).
-
 
 ### Tagging options
 

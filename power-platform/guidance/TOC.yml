@@ -440,7 +440,7 @@
     - name: Whitepapers
       items:
         - name: Migrating apps and flows from the default environment
-          href: whitepaper-migrating-from-default-environment.md 
+          href: whitepaper-migrating-from-default-environment.md
     - name: Resources
       items:
         - name: Icons
