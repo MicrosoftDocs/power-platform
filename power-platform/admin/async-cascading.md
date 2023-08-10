@@ -87,7 +87,7 @@ Opening a cascading operation displays:
 Assign, Delete, and Merge cascading transactions can be processed asynchronously. 
 
 > [!NOTE]
-> Other transactions, such as share/unshare, rollup view, and re-parent are are currently under review for asynchronous processing. 
+> Other transactions, such as share/unshare, rollup view, and re-parent are currently under review for asynchronous processing. 
 
 ## Troubleshooting issues with asynchronous cascading operations
 When synchronous cascading jobs fail, they stop and roll back all the changes so that none of the records include the changes requested. This can be a time-consuming process as rollbacks can take as long as the original attempt, and retrying the operation starts again from the first record.
