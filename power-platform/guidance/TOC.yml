@@ -439,7 +439,9 @@
           href: expressroute/checklist.md
     - name: Whitepapers
       items:
-        - name: Migrating from the default environment
+        - name: Whitepapers overview
+          href: whitepapers.md
+        - name: Migrating from the default environment whitepaper
           href: whitepaper-migrating-from-default-environment.md
     - name: Resources
       items:
