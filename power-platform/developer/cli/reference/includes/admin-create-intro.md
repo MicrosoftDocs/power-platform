@@ -4,6 +4,7 @@ The following examples show the use of the `pac admin create` command.
 
 - [Simple creation of an environment](#simple-creation-of-an-environment)
 - [Advanced creation of an environment](#advanced-creation-of-an-environment)
+- [Create using --input-file](#create-using---input-file)
 
 #### Simple creation of an environment
 
@@ -35,4 +36,22 @@ pac admin create `
   --region europe `
   --type Production `
   --domain ContosoMarketing
+```
+
+#### Create using --input-file
+
+In this example, we create the same environment described in [Advanced creation of an environment](#advanced-creation-of-an-environment), except refer to data in a JSON file named `config.json` where config.json contains this data:
+
+```json
+{
+  "name": "Contoso Marketing"
+  "currency": "EUR"
+  "region": "europe"
+  "type": "Production"
+  "domain": "ContosoMarketing"
+}
+```
+
+```powershell
+pac admin create --input-file C:\config.json
 ```
