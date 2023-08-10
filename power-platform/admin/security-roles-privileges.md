@@ -9,21 +9,16 @@ ms.custom:
   - "admin-security"
   - bap-template
 ms.topic: conceptual
-ms.date: 04/18/2023
+ms.date: 06/23/2023
 ---
 
 # Security roles and privileges
 
 To control who can access restricted or sensitive data and resources and what they can do with them, assign users to security roles. This article provides an overview of security roles and their associated privileges.
 
-You can assign security roles using the [new, modern UI](#security-roles-and-the-new-modern-ui-preview) or the [legacy UI](#security-roles-and-the-legacy-ui).
+You can assign security roles using the [new, modern UI](#security-roles-and-the-new-modern-ui) or the [legacy UI](#security-roles-and-the-legacy-ui).
 
-## Security roles and the new, modern UI (preview)
-
-> [!Important]
-> [!include [preview](../includes/cc-preview-features-definition.md)]
->
-> This capability is in the process of rolling out and may not be available in your region yet.
+## Security roles and the new, modern UI
 
 Security roles define how different users access different types of records. To control access to data and resources, you can create or modify security roles and change the security roles that are assigned to your users.
 
@@ -33,7 +28,7 @@ A user can have multiple security roles. Security role privileges are cumulative
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Environments** in the navigation pane, and then select an environment.
 
-1. Select **Settings** > **Users + Permissions** > **Security roles (Preview)**.
+1. Select **Settings** > **Users + Permissions** > **Security roles**.
 
 ### Define the privileges and properties of a security role
 
@@ -248,8 +243,6 @@ A security role can be set to provide team members with direct Basic-level acces
 1. Go to each tab and set the appropriate privileges on each table.
 
    To change the access level for a privilege, keep selecting the access level symbol until you see the one you want. The access levels available depend on whether the record type is organization-owned or user-owned.
-
-You can also set this privilege inheritance property for all out-of-the-box security roles except the System Administrator role.  
 
 You can only select Basic-level privileges in the member's privilege inheritance. If you need to provide access to a child business unit, elevate the privilege to Deep. For example, you need to assign a security role to the Group team and you want the members of the group to be able to Append to Account. Set up the security role with a Basic-level member's privilege inheritance. Set the Append to Account privilege to Deep. This is because Basic privileges apply only to the user's business unit.
 

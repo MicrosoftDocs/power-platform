@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2023
+ms.date: 08/02/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -69,7 +69,7 @@ Using these steps, you can set up an Azure AD app registration for an HTTP call 
 
 1. Add a description and expiration in line with your organization's policies, and then select **Add**.
 
-1. Copy and paste the application (client) IDto a text document in Notepad for the time being.
+1. Copy and paste the application (client) ID to a text document in Notepad for the time being.
 
 1. Select **Overview** and copy and paste the application (client) ID and directory (tenant) ID values to the same text document. Be sure to make a note of which GUID is for which value. You'll need these values when you configure the custom connector.
 
@@ -132,6 +132,8 @@ You can load historic data into the CoE Starter Kit tables manually using one of
 1. Browse to the following flow in the core solution: **Admin | Audit Logs | Load events from exported Audit Log CSV file**
 1. Turn the flow on and run it, selecting the downloaded file for the Audit Log CSV parameter.
     :::image type="content" source="media/coe-oldauditlogs-3.png" alt-text="Load old audit logs via flow":::
+   > [!NOTE]
+   > If you don't see the file loading after selecting **Import**, it may exceed the allowed content size for this trigger. Try breaking up the file into smaller files (50,000 rows per file) and run the flow once per file. The flow can be run simultaneously for multiple files.
 1. When complete, these logs will be included in your telemetry. The last launched list for the apps will be updated if more recent launches are found.
 
 ## It looks like I found a bug with the CoE Starter Kit. Where should I go?

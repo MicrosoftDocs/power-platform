@@ -1,5 +1,5 @@
 ---
-title: Configure environment variables for SAP and Power Platform SAP solutions  (preview)
+title: Configure environment variables for SAP and Power Platform SAP solutions
 description: Set up environment variables for SAP and Microsoft Power Platform SAP solutions.
 author: jongilman88
 ms.author: jongilman
@@ -17,11 +17,11 @@ ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
 ms.date: 06/06/2023
 ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
 ---
 
-# Configure environment variables (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Configure environment variables
 
 Environment variables are solution components that store parameter keys and values, which then serve as input to various other application objects, such as Power Automate flows and Power Apps. Enterprise systems often have multiple connection parameters, and manually entering the parameters into each component can be redundant and time-consuming.
 
@@ -35,7 +35,7 @@ Learn more: [Use environment variables in Power Automate solution cloud flows](/
 
 The _SAP Base_ solution template contains five environment variables that set the SAP connection parameters used in the cloud flows.
 
-When you install the SAP Procurement solution template, you will be prompted to enter values for four of the five environment variables that do not have a default value. You can configure the environment variables to your local needs.
+When you install the SAP Procurement solution template, you'll be prompted to enter values for four of the five environment variables that don't have a default value. You can configure the environment variables to your local needs.
 
 Once set up, the environment variables can be edited as you build your own solutions in the development environment.
 
@@ -43,10 +43,10 @@ More information: [Customizing solutions](customize-solutions.md).
 
 | Syntax | Description | Default Value |
 | ----------- | ----------- | ----------- |
-| SAP Application Server | JSON string that contains system parameters, host, system number, client, etc. Refer to the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance).  |  |
+| SAP Application Server | JSON string that contains system parameters, host, system number, client, and more. Refer to the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance).  |  |
 | SAP Client ID | The SAP client ID to connect to the SAP system. The SAP backends' client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999. Used separately in IDoc transactions. |  |
-| SAP Count of Rows To Read | Sets the maximum number of records to be returned on any search query and helps to alleviate performance concerns  | 1000 |
-| SAP SPRAS | There are times when you will need to specify a language on specific transactions, such as _ReadMaterial_. We have created an environmental variable called SAP SPRAS that allows you to easily control the value in one place according to your localization requirements |  |
+| SAP Count of Rows To Read | Sets the maximum number of records to be returned on any search query and helps to alleviate performance concerns.  | 1000 |
+| SAP SPRAS | There are times when you will need to specify a language on specific transactions, such as _ReadMaterial_. We have created an environmental variable called SAP SPRAS that allows you to easily control the value in one place according to your localization requirements. |  |
 | SAP System ID | The SAP system's three-letter system ID (Mandatory if connection type Message Server and message server service isn't present). Used separately in IDoc transactions. |  |
 
 More information: [Create an environment variable in a solution](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution) using the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance) or for any local environment variable need.
@@ -64,7 +64,7 @@ Environment variables are available in a flow's dynamic content selector. Go int
 1. Select the desired environment variable.
 1. Select **Save**.
 
-    :::image type="content" source="media/configure-environment-variables/use-env-var-in-connector-actions.png" alt-text=" Reuse environment variables in the SAP ERP connector's actions":::
+    :::image type="content" source="media/configure-environment-variables/use-env-var-in-connector-actions.png" alt-text="Reuse environment variables in the SAP ERP connector's actions":::
 
 ## Next steps
 

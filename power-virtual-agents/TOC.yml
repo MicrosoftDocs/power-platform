@@ -38,8 +38,18 @@
       href: nlu-boost-conversations.md
     - name: Generative answers with Search and summarize
       href: nlu-boost-node.md
+    - name: Use a Bing Custom Search to search a number of websites
+      href: nlu-generative-answers-bing.md
+    - name: Use a connection to Azure OpenAI on your data
+      href: nlu-generative-answers-azure-openai.md
+    - name: Use content on SharePoint or OneDrive for Business
+      href: nlu-generative-answers-sharepoint-onedrive.md
+    - name: Use a custom data source
+      href: nlu-generative-answers-custom-data.md
     - name: Create (and edit) with Copilot
       href: nlu-authoring.md
+    - name: AI features for Teams and Classic bots
+      href: advanced-ai-features.md
 - name: Administer and manage
   items:
     - name: Assign licenses
@@ -102,8 +112,6 @@
   items:
     - name: Key concepts - Enhanced authoring
       href: advanced-fundamentals.md
-    - name: Enable advanced AI features
-      href: advanced-ai-features.md
     - name: Use entities and slot filling
       href: advanced-entities-slot-filling.md
     - name: Use variables
@@ -157,13 +165,13 @@
       href: publication-connect-bot-to-azure-bot-service-channels.md
     - name: Integrate with question answering
       href: integrate-with-question-answering.md
-    - name: Integrate with the Azure cognitive language understanding service (CLU)
+    - name: Integrate with conversational language understanding (preview)
       items:
-        - name: Create bots with Azure cognitive language understanding (preview)
+        - name: Conversational language understanding integration overview
           href: advanced-clu-integration.md
-        - name: Get started with cognitive language understanding (preview)
+        - name: Get started with conversational language understanding integration
           href: advanced-clu-get-started.md
-        - name: Entity registration for cognitive language understanding (preview)
+        - name: Entity registration for conversational language understanding integration
           href: advanced-clu-entity-registration.md
     - name: Integrate with Bot Framework skills
       items:

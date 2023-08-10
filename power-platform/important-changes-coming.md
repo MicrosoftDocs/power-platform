@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 04/12/2023
+ms.date: 06/29/2023
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -21,19 +21,23 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
+
+Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
+
 ## jQuery 2.1.1 to be removed in model-driven apps
 
-As part of a service update designed to improve security within Microsoft Power Apps we are removing jQuery version 2.1.1 from model-driven applications. In October 2023 we are removing the library located here: `/_static/_common/scripts/jquery-2.1.1.min.js`.
+As part of a service update designed to improve security within Microsoft Power Apps we're removing jQuery version 2.1.1 from model-driven applications. In October 2023 we're removing the library located here: `/_static/_common/scripts/jquery-2.1.1.min.js`.
 
-If custom code in web resources has a dependency on this library it will stop working when this library is removed. We do not support use of any model-driven application client-side code, including libraries that model-driven apps depend on. These libraries might change without warning. More information: [Unsupported customizations](/power-apps/developer/model-driven-apps/supported-customizations#unsupported-customizations).
+If custom code in web resources has a dependency on this library it will stop working when this library is removed. We don't support use of any model-driven application client-side code, including libraries that model-driven apps depend on. These libraries might change without warning. More information: [Unsupported customizations](/power-apps/developer/model-driven-apps/supported-customizations#unsupported-customizations).
 
 ### Are you impacted?
 
-To determine if you are impacted, search your web resource code for this line: `/_static/_common/scripts/jquery-2.1.1.min.js`.
+To determine if you're impacted, search your web resource code for this line: `/_static/_common/scripts/jquery-2.1.1.min.js`.
 
 If your code isn't already in a source code repository, you should export your solutions and extract the contents. There are many tools you may use to search the contents. For example, you can use the search capabilities of Visual Studio Code. More information: [Visual Studio Code: Basic Editing > Search across files](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
 
-### What to do if you are impacted?
+### What to do if you're impacted?
 
 If your web resources have a dependency on this library, you should replace the reference with a newer version of JQuery.
 
@@ -62,7 +66,7 @@ Effective January 2023, the following controls for model-driven apps are depreca
 
 #### Why is this needed? 
 
-We will be introducing new Fluent UI controls that have better usability, accessibility, and dark mode support. 
+We'll be introducing new Fluent UI controls that have better usability, accessibility, and dark mode support. 
 
 #### Impact
 
@@ -95,7 +99,7 @@ Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondat
 
 There will be a phased-in approach before deprecation takes place. Here's the timeline:
 
-- **August 30, 2022:** The actions and triggers in Dataverse legacy connector will be avaible in the Dataverse connector.
+- **August 30, 2022:** The actions and triggers in Dataverse legacy connector will be available in the Dataverse connector.
     - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility for a period of time with additional timelines available in August 2023.
     - All new logic apps will be created using the new actions.
 - **August 2022 through preview period:** Both new and legacy actions and triggers will be available during new flow creation. By August 2023, a date for the move to GA will be provided. 
@@ -514,7 +518,7 @@ In the coming months, for those that have not already made the transition, we wi
 For more information and steps to make a smooth transition, see: 
 
 -   [Unified Interface Community
-    Group](https://community.dynamics.com/365/unified-interface/) including a
+    Group](https://community.dynamics.com/forums/thread/?partialUrl=user-interface) including a
     Blog and Forum
 
 -   [Getting Started Unified Interface
@@ -685,6 +689,10 @@ The Silverlight (XAP) web resource is deprecated on the web client, and isn't
 supported on Unified Interface. Instead of Silverlight web resources, you must use custom
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
+
+## Gateways for desktop flows are deprecated
+
+Gateways for desktop flows are deprecated. Direct connectivity is the preferred option to run attended and unattended desktop flows on your machine(s). This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](/power-automate/desktop-flows/manage-machines#switch-from-gateways-to-direct-connectivity).
 
 ## Canvas apps
 

@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 5/15/2023
+ms.date: 7/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -38,26 +38,26 @@ Generate a canvas app from a custom connector
 [!INCLUDE [canvas-create-intro](includes/canvas-create-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for canvas create
 
 #### `--msapp`
 
 Path to .msapp file to be generated
 
 
-### Optional Parameters
+### Optional Parameters for canvas create
 
 #### `--connector-display-name`
 
-The display name of the Connector from which the Power App will be generated
+The display name of the Connector to generate the Power App from.
 
 #### `--connector-id`
 
-The ID of the Connector from which the Power App will be generated
+The ID of the Connector to generate the Power App from.
 
 #### `--environment`
 
-The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [canvas-create-remarks](includes/canvas-create-remarks.md)]
 
@@ -68,7 +68,7 @@ The target Environment ID or URL.  Default value is the environment of your curr
 [!INCLUDE [canvas-pack-intro](includes/canvas-pack-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for canvas pack
 
 #### `--msapp`
 
@@ -87,14 +87,14 @@ Directory to sources to be packed
 [!INCLUDE [canvas-unpack-intro](includes/canvas-unpack-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for canvas unpack
 
 #### `--msapp`
 
 Path to .msapp file
 
 
-### Optional Parameters
+### Optional Parameters for canvas unpack
 
 #### `--sources`
 

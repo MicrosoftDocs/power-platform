@@ -1,15 +1,14 @@
 ---
-title: "ALM Accelerator for Power Platform deployment scenarios"
-description: "Overview of deployment scenarios for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+title: Deployment scenarios
+description: Get a link to learn more about deployment scenarios for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI) in Power Platform."
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
-ms.custom: ""
-ms.date: 04/07/2023
-
-ms.topic: "article"
 ms.reviewer: sericks
+ms.custom: bap-template
+ms.date: 04/07/2023
+ms.topic: overview
 search.audienceType: 
   - admin
 search.app: 
@@ -17,12 +16,12 @@ search.app:
   - Powerplatform
 ---
 
-# ALM Accelerator for Power Platform deployment scenarios
+# Deployment scenarios
 
-As you plan your ALM Accelerator for Power Platform (AA4PP) deployment, one or more of the following scenarios might apply to you:
+As you plan your ALM Accelerator for Power Platform deployment, one or more of the following scenarios might apply to you:
 
-- [Tenant deployments](./tenant-deployments.md) - Discusses different Azure Active Directory configurations across demo, single Azure AD, and multiple Azure AD deployment models.
+- [Tenant deployments](./tenant-deployments.md) discusses Azure Active Directory (Azure AD) configurations across demo, single Azure AD, and multiple Azure AD deployment models.
 
-- [DevOps deployment model](./devops-deployment-model.md) - Discusses the relationship between AA4PP deployments and one or more different Azure DevOps organizations.
+- [DevOps deployment model](./devops-deployment-model.md) discusses the relationship between ALM Accelerator deployments and one or more Azure DevOps organizations.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../../includes/footer-banner.md)]

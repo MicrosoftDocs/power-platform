@@ -1,13 +1,13 @@
 ---
 title: "Remove user personal data  | MicrosoftDocs"
 description: Remove user personal data
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/30/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

@@ -1,13 +1,13 @@
 ---
 title: "System Settings Goals tab   | MicrosoftDocs"
 description: System Settings Goals tab 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: admin
 ms.date: 08/31/2021
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

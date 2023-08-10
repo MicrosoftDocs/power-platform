@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2023
+ms.date: 08/02/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -128,21 +128,21 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ### Troubleshooting
 
-The *Data source error: Information is needed in order to combine data; Information about a data source is required.* error message when using the BYODL Dashboard means that you have not configured the correct [privacy settings](/power-bi/enterprise/desktop-privacy-levels) for Power BI to combine data from the Azure storage account and Dataverse. Change the privacy level and update the credentials to resolve the issue:
+The *Data source error: Information is needed in order to combine data; Information about a data source is required* error message when using the BYODL Dashboard means that you have not configured the correct [privacy settings](/power-bi/enterprise/desktop-privacy-levels) for Power BI to combine data from the Azure storage account and Dataverse. Change the privacy level and update the credentials to resolve the issue:
 
 1. Open Power BI Desktop.
-1. Select **File > Options and settings > Options**.
-1. Select **Global > Privacy** and set the privacy level to **Always combine data according to your Privacy Level setting for each data source**.
-2
+1. Select **File** > **Options and settings** > **Options**.
+1. Select **Global** > **Privacy** and set the privacy level to **Always combine data according to your Privacy Level settings for each source**.
+
     :::image type="content" source="media/coepbi-byodl.PNG" alt-text="Set the privacy level to: Always combine data according to your Privacy Level setting for each data source.":::
     
-1. Select **OK**, and then select **File > Options and settings > Options** again.
-1. Select **Current File > Privacy** and set the privacy level to **Combine data according to your Privacy Level setting for each data source**.
+1. Select **OK**, and then select **File** > **Options and settings** > **Options** again.
+1. Select **Current File** > **Privacy** and set the privacy level to **Combine data according to your Privacy Level settings for each source**.
 
     :::image type="content" source="media/coepbi-byodl2.PNG" alt-text="Set the privacy level to: Combine data according to your Privacy Level setting for each data source.":::
     
 1. Select **OK**.
-1. Select **File > Options and settings > Data source settings**.
+1. Select **File** > **Options and settings** > **Data source settings**.
 1. Select **Edit Permissions** and set the privacy level to **Organizational** for both data sources.
 
     :::image type="content" source="media/coepbi-byodl3.PNG" alt-text="Set the privacy level to: Organizational.":::
@@ -156,7 +156,7 @@ The *Data source error: Information is needed in order to combine data; Informat
     :::image type="content" source="media/coepbi-byodl5.PNG" alt-text="Select settings on the dataset.":::
     
 1. Select **Data Source Credentials**.
-1. Select **Edit credentials**, set the privacy level to **Organizational** for both data sources and select **Sign in** for each data source.
+1. Select **Edit credentials**, set the privacy level to **Organizational** for both data sources, and select **Sign in** for each data source.
 
     :::image type="content" source="media/coepbi-byodl4.PNG" alt-text="Set the privacy level to: Organizational and sign in.":::
 
@@ -168,24 +168,33 @@ The *A connection was successfully established with the server, but then an erro
 
 :::image type="content" source="media/pbi_error2.PNG" alt-text="Error message: A connection was successfully established with the server, but then an error occurred.":::
 
-When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue, and [setup latest version](https://www.microsoft.com/download/details.aspx?id=58494).
+When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue, and [set up the latest version](https://www.microsoft.com/download/details.aspx?id=58494).
 
 :::image type="content" source="media/pbi_error3.PNG" alt-text="Error message: Unable to open document.":::
 
-When you see sign in issues, you may have issues with your data source settings being cached to the wrong user or tenant. Here are a few examples of what that might look like:
+When you see sign-in issues, you may have issues with your data source settings being cached to the wrong user or tenant. Here are a few examples of what that might look like:
+
 :::image type="content" source="media/pbi-signin-failure1.PNG" alt-text="Error message: Data Source Error. The remote name could not be resolved.":::
 :::image type="content" source="media/pbi-signin-failure2.PNG" alt-text="Error message: Authorization wasn't specified.":::
 
 The solution in this case is to clear the permissions:
 
 1. Open Power BI Desktop.
-1. Select **File > Options and settings > Data source settings**.
+1. Select **File** > **Options and settings** > **Data source settings**.
 1. Select the data source you need to connect to (for example, <https://mycoe.crm.dynamics.com>) and select **Clear Permissions**.
-1. Then, try and open the Power BI template file again.
+1. Then, try to open the Power BI template file again.
 
-### (Optional) Configure embedded apps in the CoE dashboard
+## Configure embedded apps in the CoE dashboard
 
-The **Production_CoEDashboard_MMMYY.pbit**  can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to configure the Power Apps visuals in the Power BI dashboard before you can use them.
+The **Production_CoEDashboard_MMMYY.pbit** and **BYODL_CoEDashboard_MMMYY.pbit** dashboards can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker through email. You must configure the Power Apps visuals in the Power BI dashboard before you can use them.
+
+In order to configure the embedded apps, you must meet these pre-requisites:
+
+- You must be an owner or co-owner of the **Admin – Access this app** and **Admin – Access this flow** apps to be able to embed them.
+- Because this app uses Microsoft Dataverse, end-users must have a Power Apps Per User license, the app must be assigned a Power Apps Per App license, or the environment must be covered by pay-as-you-go.
+- This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required.
+
+Once you meet these requirements, embed the apps.
 
 1. Open the CoE Power BI dashboard in **Power BI Desktop**.
 1. Go to the **App Detail** page.

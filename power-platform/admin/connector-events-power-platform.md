@@ -1,5 +1,5 @@
 ---
-title: View the Power Platform connector activity logs (preview)
+title: View the Power Platform connector activity logs
 description: View Power Platform audit logs for events related to connections and custom connectors.
 services: ''
 suite: flow
@@ -11,25 +11,22 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/17/2022
+ms.date: 06/28/2023
 ms.subservice: admin
 ms.author: sameerch
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+contributors:
+  - DanaMartens
+  - sericks007
+  - angieandrews
 ---
 
-# View the Power Platform connector activity logs (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# View the Power Platform connector activity logs
 
 Audit logs are logs for important system level events. In the audit log feature, audit logs are available for events related to connections and custom connectors.
-
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Access the logs
 
@@ -39,7 +36,7 @@ Audit logs are logs for important system level events. In the audit log feature,
 
    :::image type="content" source="./media/audit-logs/solutions-audit.png" alt-text="Screenshot of the Audit selection on the Microsoft Purview menu under Solutions.":::
 
-   In the **New Search (preview)** tab, you can search for connector events.
+   In the **New Search** tab, you can search for connector events.
 
    :::image type="content" source="./media/audit-logs/purview-audit.png" alt-text="Screenshot of the Audit screen in the Microsoft Purview compliance portal.":::
 

@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 08/02/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -110,8 +110,7 @@ Create a new app based on the template.
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. Select **New** > **Canvas App**.
-1. Select **Open** > **Browse Files**, and then select the template file downloaded from the theme gallery.
-    ![Create an app based on a theme.](media/theming-15.png "Create an app based on a theme")
+1. Select ***...*** > **Open** > **Browse Files**, and then select the template file downloaded from the theme gallery.
 1. After it's opened, the theme will automatically be applied to controls or components that you add to the screen.
     ![New app with theme.](media/theming-16.png "New app with theme")
 

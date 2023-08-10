@@ -17,14 +17,9 @@ ms.custom: bap-template
 
 You can assign other privileges to a security role than the familiar Read, Write, Append, and so on. Use either the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to assign privileges to a security role.
 
-## New experience (preview)
+## New experience
 
-> [!Important]
-> [!include [preview](../includes/cc-preview-features-definition.md)]
->
-> This capability is in the process of rolling out and may not be available in your region yet.
-
-The following table describes the miscellaneous privileges, which in the new, modern UI are listed alphabetically on the **Miscellaneous privileges** tab of the security role editor.
+The following table describes the miscellaneous privileges, which in the new, modern UI are listpred alphabetically on the **Miscellaneous privileges** tab of the security role editor.
 
 | Miscellaneous privilege | Privilege name | More information |
 |-------------------------|----------------|------------|
