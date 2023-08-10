@@ -4,7 +4,6 @@ description: Whitepapers allow you to explore Power Platform topics at a deeper 
 author: robstand
 ms.author: rstand
 ms.reviewer: sericks
-ms.service: powerbi
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 08/10/2023
