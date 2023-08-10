@@ -12,7 +12,7 @@ ms.custom: bap-template
 ---
 # Migrating apps and flows from the default environment
 
-This document aims to address a key need of how organizations and administrators can plan migration of their various assets from default environment.
+This document addresses a key need of how organizations and administrators can plan migration of their various assets from default environment.
 
 ## Default environment
 
@@ -37,7 +37,7 @@ Center of Excellence/enablement (CoE) teams that monitor Power Platform are forc
 
 ### Identification of the Power Platform objects
 
-The first step is to identify apps and flows and assets that need to be moved over (or) cleaned-up. The [CoE Starter Kit](/power-platform/guidance/coe/overview) provides an inventory of all the apps and flows, and the Power BI reports also help determine usage. This step helps you evaluate the app usage and should help to label them. As you go through the exercise, be sure to [tag](#)apps and flows that should be migrated to another environment. A tag could be based on the connectors used, user location, user department, and so on. This document also outlines a method for recognizing items that should be cleaned or relocated based on Data Loss Prevention (DLP) [later in this document](#).
+The first step is to identify apps and flows and assets that need to be moved over (or) cleaned-up. The [CoE Starter Kit](/power-platform/guidance/coe/overview) provides an inventory of all the apps and flows, and the Power BI reports also help determine usage. This step helps you evaluate the app usage and should help to label them. As you go through the exercise, be sure to tag apps and flows that should be migrated to another environment. A tag could be based on the connectors used, user location, user department, and so on. This document also outlines a method for recognizing items that should be cleaned or relocated based on Data Loss Prevention (DLP).
 
 ### Move the Power Platform objects
 
@@ -115,15 +115,15 @@ The distinction between app and solution is an important one. Exporting and impo
 
 The detailed steps are documented at [Exporting a canvas app package](/power-apps/maker/canvas-apps/export-import-app) and [Importing a canvas app package](/power-apps/maker/canvas-apps/export-import-app).
 
-This method of exporting apps is a legacy way. While it’s supported, we recommend that using [solutions](#), which allows for migrating multiple components instead of just one resource.
+This method of exporting apps is a legacy way. While it’s supported, we recommend that using [solutions](#solutions), which allows for migrating multiple components instead of just one resource.
 
 ### Export and import flow (legacy way)
 
 The following steps describe how to export a flow.
 
-1. To export a flow package, select "…" menu, select **'Export'** then select **'Package (.zip)’.**
+1. To export a flow package, select "…" menu, select **Export** then select **Package (.zip).**.
 1. On the next screen, supply a name and a description for your package first. You can then configure defaults and add comments that are accessible during the import phase.
-1. Next, select the "**Export**" button in the bottom right corner and your package should start downloading shortly after. If your download doesn't start automatically, you can also select the "**Download**" button.
+1. Next, select the **Export** button in the bottom right corner and your package should start downloading shortly after. If your download doesn't start automatically, you can also select the **Download** button.
 
 The following steps describe how to import a flow.
 
