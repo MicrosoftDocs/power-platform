@@ -69,7 +69,7 @@
     - name: Install
       href: hr/awards-and-recognition/install.md
     - name: Use
-      href: hr/awards-and-recognition/use.md
+      href: hr/awards-and-recognition/use.md 
 - name: Related content
   items:
   - name: Power Apps documentation

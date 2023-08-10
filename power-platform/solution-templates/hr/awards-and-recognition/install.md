@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
-ms.date: 08/03/2023
+ms.date: 08/04/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -106,3 +106,7 @@ While this isn't required, we recommend enabling the audit setting on the system
 1. Select **Environment** to select the environment where the solution is installed.
 1. Select **Audit settings**.
 1. Select **Start auditing**
+
+## Next steps
+
+[Use the Awards & Recognition app](use.md)

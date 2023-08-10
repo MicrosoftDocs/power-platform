@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 08/03/2023
+ms.date: 08/04/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -64,4 +64,6 @@ The *Awards and Recognition* solution is composed of two apps, eight tables, two
 
   - **Awards and Recognition – Recognition gets deactivated** – Sets the *reviewed by* and *reviewed on* fields once a nomination has been set to a final state.
 
-Next steps: [Install the Awards and Recognition template](install.md)
+## Next steps
+
+[Install the Awards and Recognition template](install.md)

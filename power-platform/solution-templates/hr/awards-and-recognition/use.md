@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 08/03/2023
+ms.date: 08/04/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

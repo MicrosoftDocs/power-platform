@@ -34,7 +34,7 @@ Import the Kudos solution template into the environment.
 1. Go to the [Kudos solution template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
 1. Select the environment that you want to install the solution template into.
 
-   :::image type="content" source="media/install/appsource-install-template.png" alt-text="Select the environment in which to install the template":::
+   :::image type="content" source="media/install/appsource-install-template.png" alt-text="Select the environment in which to install the template.":::
 1. Agree to the Terms and Privacy statements by selecting the boxes.
 1. Select **Install**. You'll be taken to a screen where you can view the installation status.
 
@@ -66,7 +66,7 @@ To create the access team:
 1. Select **Settings**.
 1. Select **Templates** > **Access team templates**.
 
-   :::image type="content" source="media/install/AccessTeam2.png" alt-text="Select Access team templates":::
+   :::image type="content" source="media/install/AccessTeam2.png" alt-text="Select Access team templates.":::
 
    You'll be redirected to the _All Team Templated_ view.
 1. Select **New** on the ribbon.
@@ -123,7 +123,7 @@ Follow these steps for each flow:
 1. Go to the Kudos solution and open the flow.
 1. In the lower-right, in a section called _Run only users_, select **Edit**. The _Manage run-only permissions_ screen pops up:
 
-     :::image type="content" source="media/install/RunOnly2.png" alt-text="Manage run-only permissions":::
+     :::image type="content" source="media/install/RunOnly2.png" alt-text="Manage run-only permissions.":::
 
 1. In the top box labeled _Invite system users or teams_, enter the security group you want to use that contains all Kudos users.
 1. Select **Save**.
@@ -152,6 +152,8 @@ Follow these steps for each flow:
        :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference":::
 
     1. Select **Save** at the bottom of the screen or at the top toolbar.
+
+ :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference.":::
 
 ## Step 7: Set cloud flows to _On_
 
@@ -190,7 +192,7 @@ To do this:
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select the **Environment** tab, select the environment where the solution is installed, and then select **Audit settings**.
 
-   :::image type="content" source="media/install/Auditing1.png" alt-text="Select environment tab and select audit settings":::
+   :::image type="content" source="media/install/Auditing1.png" alt-text="Select environment tab and select audit settings.":::
 
 1. Select **Start auditing**.
 
