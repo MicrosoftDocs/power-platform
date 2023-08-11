@@ -210,7 +210,7 @@ Image showing an example of dependent components for the account table.
 
 Assuming that a Solution is created (check this [documentation](/power-apps/maker/data-platform/create-solution) to create a solution and add objects), a maker needs to use the Add existing component menu option to add an existing app, flow, or Power Virtual Agent.
 
-![Graphical user interface, application  Description automatically generated](media/image4.png)
+:::image type="content" source="media/image4.png" alt-text="Image showing adding existing components to a solution.":::
 
 ### Adjust connection references
 
@@ -311,7 +311,7 @@ To prevent downtime of potential critical objects, due DLPs, part of CoE Starter
 
 Update existing DLP policies to review impact:
 
-![Graphical user interface, application  Description automatically generated](media/image5.gif)
+:::image type="content" source="media/image5.gif" alt-text="Update existing DLP policies to review impact.":::
 
 Follow this [link](/power-platform/guidance/coe/after-setup-tenant-hygiene) to find more information about the DLP Editor.
 
@@ -319,7 +319,7 @@ Before turning on the Data Loss Prevention (DLP) feature, you can identify which
 
 Using The DLP Editor v2, in the "Impact Analysis” choose “Export impacted apps and flows to CSV.”
 
-![Graphical user interface, application  Description automatically generated](media/image6.png)
+:::image type="content" source="media/image6.png" alt-text="Using The DLP Editor v2.":::
 
 Each generated csv file (flow.csv and apps.csv) will have information regarding:
 
