@@ -16,11 +16,9 @@ This document addresses a key need of how organizations and administrators can p
 
 ## Default environment
 
-Power Apps creates a single default environment for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant and is named as follows: "{Azure AD tenant name} (default)".
+One default environment is created per tenant and is acceissble for all users in that tenant. The default environment is created in the region closest to the default region of the Azure AD tenant and is named as follows: "{Azure AD tenant name} (default)". Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
 
-The default environment empowers every employee in an organization with a Microsoft 365 license to create apps and cloud flows. The default environment becomes the first playground studio for these employees to start building their apps and flows. Most organizations often rename the default environment to Personal Productivity.
-
-Every employee in an organization using Power Platform has access to the default environment. Because it isn't possible to remove the environment maker role from the default environment, makers start to build personal productivity apps and flows and share them within their teams for others to benefit.
+In the default environment employees of an organization with a Microsoft 365 license can create apps and cloud flows. The default environment becomes the first playground studio for these employees to start building their apps and flows. Because it isn't possible to remove the environment maker role from the default environment, makers start to build personal productivity apps and flows and share them within their teams for others to benefit. Most organizations often rename the default environment to Personal Productivity.
 
 Administrators reactively discover that many apps and flows are created in the default environment. It may not be appropriate for the app or flow to be in the default environment in scenarios such as:
 
@@ -28,8 +26,7 @@ Administrators reactively discover that many apps and flows are created in the d
 - An app uses Excel workbooks with sensitive data.
 - An app based on SharePoint lists is getting many data interactions – inserts, updates.
 - An app or flow is using connectors that aren't allowed in new Data Loss Prevention (DLP) policies.
-
-Custom Connector(s) are enabled and used in the default environment instead of being secured in a dedicated environment.
+- Custom Connector(s) are enabled and used in the default environment instead of being secured in a dedicated environment.
 
 The above scenarios are worth consideration and provide an indication that you should start moving these apps and flows from the default environment into their own developer environment and/or another shared environment. Other factors that come into play are the limitations associated with the default environment.
 
@@ -41,11 +38,11 @@ The first step is to identify apps and flows and assets that need to be moved ov
 
 ### Move the Power Platform objects
 
-If the component is intended for a move to a different environment, there are options available to move the app. A move is an interactive process and would need some level of Maker interaction. The level of complexity to move an app or flow increases with the mix of components used to build an app or flow.
+If the component is tagged to move to a different environment, there are options available to move the app. A move is an interactive process and would need some level of Maker interaction. The level of complexity to move an app or flow increases with the mix of components used to build an app or flow.
 
 For example, an App with six screens has 10 buttons through multiple screens. Let’s assume that these 10 buttons call an individual flow. There are also a couple of flows that get triggered daily to fix data or integrate data with another system. Let’s also assume that there's some AI Builder image processing model that is used as part of the automation. To move such an app, all components need to be added to a solution, connection references used across be adjusted correctly and tested out before confirming the completion.
 
-In another case, assume a Canvas app that uses an Office 365 connection. In this case, the maker just needs to add the canvas app only to the solution.
+In another case, assume a Canvas app that uses an Office 365 connection. In this case, the maker just needs to add only the canvas app to the solution.
 
 ### Clean up the Power Platform objects
 
@@ -53,27 +50,27 @@ If a component is tagged for cleanup, then there are two main options. The first
 
 As an example, CoE Team administrators find that most of the makers created test apps and flows to learn and abandoned them, which can be confirmed by looking at the usage metrics. Another way is to quarantine the app and if no one approaches then you can delete such apps as well.
 
-Maintaining a communication strategy throughout this process plays a key role. Admins should plan to communicate:
 
-- Establishing connections that makers need to permit as they launch the app in the new environment
-- The new URL of the app from the target environment
-- Navigating to the right environment.
+>Maintaining a communication strategy throughout each of the above process plays a key role. Admins should plan to communicate:
+> - Establishing connections that makers need to permit as they launch the app in the new environment
+> - The new URL of the app from the target environment
+> - Navigating to the right environment.
 
-Some of these solutions for relocating objects are ready-made and may require a standalone Power Apps and Power Automate license that provide users the ability to create and run apps across data sources that extend beyond Microsoft 365.
+>Some of these solutions for relocating objects are ready-made and may require a standalone Power Apps and Power Automate license that provide users the ability to create and run apps across data sources that extend beyond Microsoft 365.
 
 ## Strategies
 
-The entire process of identifying and moving apps and flows from the default environment is more likely to be successful when it's based on a strategy. There are multiple strategies that you can apply.
+The entire process of identifying and moving apps and flows from the default environment is more likely to be successful when it's based on a strategy. There are multiple strategies that you should consider.
 
 ### DLP strategy
 
 Data loss prevention (DLP) policies function as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. DLP policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. It's recommended to have at least one policy.
 
-Effectively, your environment strategy is defined through DLP and that provides a destination for the apps and flows in default environment.
+Effectively, your environment strategy is defined through DLP and that provides a destination for the apps and flows developed in default environment.
 
 ### Environment strategy
 
-When you develop an environment strategy, you configure environments and other layers of data security in a way that supports productive development in your organization, while securing and organizing resources. A strategy to manage environment provisioning and access, and controlling resources within them, is important to:
+Developing an environment strategy would mean to configure environments and other layers of data security in a way, that support productive development in your organization, while securing and organizing resources. A strategy to manage environment provisioning, access management, and controlling resources within them, is important to:
 
 - Secure data and access.
 - Govern the default environment in a compliant way.
@@ -89,7 +86,7 @@ You should have well-established departments that can self-sustain and have exis
 
 ### Communication strategy
 
-As part of the migration and/or clean-up effort, make sure the process is smooth to the makers, stakeholders, and leadership. Develop a strategy on how best to communicate and at what points you need to communicate that provides consistency in objective and helps with communication for all involved. Some options to consider include:
+As part of the migration and/or clean-up effort, make sure the process is smooth to the makers, stakeholders, and leadership. Develop a strategy on how best to communicate and at what points you need to communicate, that provides consistency in objective and helps with communication for all involved. Some options to consider include:
 
 - Use the CoE Starter Kit as an asset tracker.
 - Add custom cloud flows to send notifications at various stages.
@@ -172,7 +169,7 @@ This document outlines some possibilities. It's important to carefully consider 
 
 ### Migrate all – DB backup and restore option
 
-As with every other environment, the default environment is backed up as well. These system backups are performed automatically. There's no on-demand option for the default environment, so it will require a support request.
+Similar to most environment types, the default environment is backed up as well. These system backups are performed automatically. There's no on-demand option for the default environment, so it will require a support request.
 
 Once backed up, it can be restored into a new environment keeping all the data within Dataverse. This option is only to show the reader about its existence and educate the reader on when to consider. It shouldn't be pursued as the primary choice, as it would only yield partial migration.
 
@@ -195,6 +192,7 @@ At a high level, the steps are:
 1. Check for solution dependencies and add objects.
 1. Export the Solution
 1. Import the Solution
+2. Transfer data
 
 ### Checking for solution dependencies
 
@@ -206,7 +204,7 @@ Use the [show dependencies](/power-apps/maker/data-platform/view-component-depen
 
 ![Component dependency for the account table.](media/image3.png)
 
-An image showing dependencies of account table.
+Image showing an example of dependent components for the account table.
 
 ### Adding a component to a Solution (manual)
 
@@ -222,13 +220,10 @@ Canvas apps and flows handle connections differently. Flows use connection refer
 
 Canvas apps that aren't solution aware when added to a solution won't automatically be upgraded to use connection references. Connection references get associated with canvas apps only at the time a data source is added to the app. To upgrade apps, you must
 
-Add an app that is nonsolution aware to a solution.
-
-Remove the connection from the app.
-
-As best practice, create a new connection reference in the solution.
-
-Add a connection containing an associated connection reference.
+1. Add an app that is nonsolution aware to a solution.
+2. Remove the connection from the app.
+3. As best practice, create a new connection reference in the solution.
+4. Add a connection containing an associated connection reference.
 
 #### Updating a flow to use connection references instead of connections
 
@@ -270,7 +265,7 @@ Assuming the solutions are ready, the next stage of automation can be done in mu
 
 The Power Platform Command Line Interface (PAC CLI) also provides options to export and import solutions. All solution-related [commands](/power-platform/developer/cli/reference/solution) can be used to build, export, and import solutions. You can also use PAC CLI to [transfer data in and out](/power-platform/developer/cli/reference/data).
 
-A maker friendly option is to use Pipelines that are intended to democratize ALM for Microsoft Power Platform. Bringing ALM automation and CI/CD capabilities into a single feature service is more approachable for all makers, admins, and developers. This feature usage does require the default environment to be set as Managed environment.
+A maker friendly option is to use Pipelines that are intended to democratize ALM for Microsoft Power Platform. Bringing ALM automation and CI/CD capabilities into a single feature service is more approachable for all makers, admins, and developers. 
 
 ### Creating connections (manual)
 
@@ -286,11 +281,11 @@ There are multiple options available for data migration ranging from manual to f
 1. Dataflows can be used to create mappings between the environments and used to move the data. HTTP Web connector may be used as an alternative to Dataverse.
 1. Azure Data Factory can be used with Dataverse connector to pull data from source and inserted into the destination.
 
-Given that Default environment is limited in size, one of the above options should suffice to move data out of the default environment.
+Given that default environment is limited in size, one of the above options should suffice to move data out of the default environment.
 
 #### Clean up considerations
 
-A cleanup is a good idea for apps and flows that haven't been updated or used in a long time.  There are different paths for an administrator to consider as far as cleanup is concerned.
+A cleanup is a good idea for apps and flows that have not been used and/or updated in a long time.  There are different paths for an administrator to consider as far as cleanup is concerned.
 
 - Decide the order of importing the data. The least dependent tables go first and most dependent come at the last.
 - Not all fields need be mapped. Fields like version, Modified date, Created date and some other system fields don't need to be mapped.
@@ -302,7 +297,7 @@ In many cases, these are test flows, apps created by makers as part of their per
 
 ## Conclusion
 
-Power Platform is a tool for citizen developers and pro developers alike. Default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual or Developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which will help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-serve models of learning about the strategy, implementation of solutions and best practices to develop apps and flows. A good addition is to capture some success stories as well on the communication site. Success stories published internally help makers to connect with and open for possibilities that could be achieved using Power Platform.
+Power Platform is a tool for citizen developers and pro developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual or Developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which will help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-serve models of learning about the strategy, implementation of solutions and best practices to develop apps and flows. A good addition is to capture some success stories as well on the communication site. Success stories published internally help makers to connect with and open for possibilities that could be achieved using Power Platform.
 
 A strong governance strategy is essential when migrating or moving specific objects. There are various strategies available for migrating objects, including individual and mass migration. The best fit option depends on our organization policies. Solutions are the most recommended way to organize the components of your application and make migrations more straightforward.
 
