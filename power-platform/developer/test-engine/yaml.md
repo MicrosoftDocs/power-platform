@@ -4,7 +4,7 @@ description: Describes the YAML format for test following the same guidelines as
 author: jt000
 ms.subservice: developer
 ms.author: jasontre
-ms.date: 08/02/2023
+ms.date: 08/11/2023
 ms.reviewer: jdaly
 ms.topic: article
 contributors:

@@ -4,7 +4,7 @@ description: Learn about how you can automate tests of standalone canvas apps us
 author: jt000
 ms.subservice: developer
 ms.author: jasontre
-ms.date: 08/02/2023
+ms.date: 08/11/2023
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
