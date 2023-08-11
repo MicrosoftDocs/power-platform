@@ -11,7 +11,9 @@ contributors:
  - JimDaly
 ---
 
+
 # Power Apps Test Engine Power Fx functions (preview)
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -110,3 +112,4 @@ This function waits for the property of the control to equal the specified value
 [Power Apps Test Engine overview (preview)](overview.md)   
 [Power Apps Test Engine YAML format (preview)](yaml.md)   
 [Power Apps Test Engine control support matrix (preview)](controlsupport.md)
+
