@@ -174,7 +174,7 @@ A customer initializes a chat conversation on your portal. The application ident
 
 When you run a query for the specific conversation ID, here's the trace log that's displayed:
 
-![A picture containing text  screenshot  font  document Description automatically generated](media/image8.png)
+![Example trace log that's displayed when you run a query for a specific conversation ID.](media/conversation-lifecyle-scenario.png)
 
 ## Export conversation data
 
