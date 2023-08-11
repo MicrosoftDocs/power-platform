@@ -37,7 +37,7 @@ You can then use the conversation lifecycle events data from Dynamics 365 Custom
 
 ## Pricing
 
-Azure Application Insights is an extension of Azure Monitor and charges for data ingested. There are two log ingestion plans – Basic and Analytic logs. To know the pricing for your business requirements, see [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
+Azure Application Insights is an extension of Azure Monitor and charges for data ingested. There are two log ingestion plans – Basic and Analytic logs. To know the pricing for your business requirements, see [Azure Monitor pricing](https://azure.microsoft.com/pricing/details/monitor/#pricing).
 
 ## Set up a connection with Azure Application Insights
 
@@ -53,7 +53,7 @@ Before you perform a data export, create a connection between your Dynamics 365 
     - Select **Dynamics Customer Service**.
     - Select **Next**.
 
-1.  Select the environment from which you'd like to export the data, and then select **Next**. You can export data from a [Managed Environment](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-enable) only.
+1.  Select the environment from which you'd like to export the data, and then select **Next**. You can export data from a [Managed Environment](managed-environment-enable/md) only.
 
 1. Specify the **Subscription**, **Resource group**, and the **Application Insights** instance. Then select **Next**.
 
