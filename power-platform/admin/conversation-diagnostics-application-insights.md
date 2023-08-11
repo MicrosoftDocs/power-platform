@@ -68,33 +68,45 @@ After you've configured the data export setup, conversation lifecycle informatio
 ### Conversation scenarios
 The **Traces** table contains data about the following conversation scenarios.
 
-**Category**: Conversation initiation 
-  **Scenario**: Conversation is initialized 
-  **Scenario**: Customer identified
+- **Category**: Conversation initiation 
+  - **Scenario**: Conversation is initialized 
+  - **Scenario**: Customer identified
 
-**Category**: Virtual agent interaction
-  **Scenario**: Virtual agent assigned
-  **Scenario**: Conversation ended by virtual assistant
-  **Scenario**: Virtual assistant escalation to human agent from virtual agent
+- **Category**: Virtual agent interaction
+  - **Scenario**: Virtual agent assigned
+  - **Scenario**: Conversation ended by virtual assistant
+  - **Scenario**: Virtual assistant escalation to human agent from virtual agent
 
-**Category**:  Routing
-  **Scenario**: Demand Classification
-  **Scenario**: Queue assignment
+- **Category**:  Routing
+  - **Scenario**: Demand Classification
+  - **Scenario**: Queue assignment
 
-**Category**:  Human agent interaction
-  **Scenario**: Agent accepted
-  **Scenario**: Agent rejected
-  **Scenario**: Acceptance request timed out
-  **Scenario**: Agent rejoined
-  **Scenario**: Agent self-assignment
+- **Category**:  Human agent interaction
+  - **Scenario**: Agent accepted
+  - **Scenario**: Agent rejected
+  - **Scenario**: Acceptance request timed out
+  - **Scenario**: Agent rejoined
+  - **Scenario**: Agent self-assignment
 
-**Category**: Conversation completion
-  **Scenario**: Conversation ended by customer
-  **Scenario**: Conversation ended by agent
-  **Scenario**: Agent session closed
-  **Scenario**: Conversation abandoned by customer/customer disconnect
-  **Scenario**: Conversation force close by supervisor
-  **Scenario**: Conversation closed
+- **Category**: Conversation completion
+  - **Scenario**: Conversation ended by customer
+  - **Scenario**: Conversation ended by agent
+  - **Scenario**: Agent session closed
+  - **Scenario**: Conversation abandoned by customer/customer disconnect
+  - **Scenario**: Conversation force close by supervisor
+  - **Scenario**: Conversation closed
+ 
+### Conversation scenarios metadata
+The conversation scenarios in the **Traces** table contains has the following metadata.
+
+-	Org ID
+- LiveWorkItem ID
+-	Channel Type
+-	Scenario Status (Started/Failed/Completed)
+-	Timestamp
+-	Duration (for completed scenarios)
+-	Participant Type (human agent or virtual agent)
+-	Active Directory User ID (where applicable)
 
 ## Understand conversation logs metadata
 
@@ -112,32 +124,31 @@ A description of the attributes displayed in Application Insights is as follows:
     - **Duration**: The time taken for the scenario to complete.
     - **Participant Type**: Indicates if the conversation is assigned to a human agent or a bot.
 - **Operation\_name**: Indicates the conversation lifecycle event.
-- **Operation\_id**: The unique identifier of the root operation. This is the transactionid of the conversation from Customer Service.
-- **Operation\_parentid**: The conversation Id of the conversation.
+- **Operation\_id**: The unique identifier of the root operation. This is the transaction ID of the conversation from Dynamics 365 Customer Service.
+- **Operation\_parentid**: The conversation ID of the conversation.
 - **Session\_id**: The instance of the user's interaction with the app.
-- **User\_id**: Represents the user of the application. This field is populated with the AD user id whenever the scenario includes human agents or bots. For all other scenarios, 0 is displayed.
+- **User\_id**: Represents the user of the application. This field is populated with the Active Directory user ID whenever the scenario includes human agents or bots. For all other scenarios, 0 is displayed.
 - **Severitylevel**: The trace severity level. This is set to 0.
 - **itemType**: The table that the record was retrieved from. This is always set to Trace.
 
-For example, the following image summarizes a scenario where a Livechat conversation is assigned to a queue. The Traces table displays the following metadata:
+For example, in a scenario where a Livechat conversation is assigned to a queue, the Traces table displays the following metadata:
 
 -   The **ScenarioStarted** message, with the **Operation\_name**, QueueAssignment, and the timestamp at which the scenario started.
 -   The **ScenarioCompleted** message, with the duration the application took for the scenario to be successfully completed as the scenario is a success, and the conversation is assigned to a queue.  
       
     ![A screenshot of a computer Description automatically generated with low confidence](media/image6.png)
 
-### 
-
 ## Access conversation logs from Application Insights
 
-To view the logs for a conversation, perform the following steps:
+To view the logs for a conversation, complete the following steps.
 
-1.  Login to [Azure portal](https://portal.azure.com/#home) and access your Application Insights instance. Ensure this is the same instance you've used to setup the data export.
+1.  Log in to [Azure portal](https://portal.azure.com/#home) and access your Application Insights instance. Ensure this is the same instance that you've used to setup the data export.
 
 2.  Select **Logs** in **Monitoring**.
 
-3.  Run a query on the **Traces** table, filtering by the conversationid of your conversation. A sample query is as follows:
+3.  Run a query on the **Traces** table, filtering by the conversation ID of your conversation. A sample query is as follows:
 
+``` SQL
 *let lwiId = "269079bb-f39d-4281-bf87-d13bae6d0ed2";*
 
 *let operationIds = (traces*
@@ -153,14 +164,11 @@ To view the logs for a conversation, perform the following steps:
 *\| project timestamp, message, customDimensions, operation\_Name, operation\_Id, operation\_ParentId, session\_Id, user\_Id, severityLevel, itemType*
 
 *\| sort by timestamp asc*
+```
 
-Where lwid is the conversation ID you've retrieved from your Customer Service application.
+Where **lwid** is the conversation ID you've retrieved from your Dynamics 365 Customer Service application.
 
 4.  The application displays the trace for the conversation.
-
-![](media/image7.png)
-
-## 
 
 ## Conversation lifecycle scenario: Success
 
