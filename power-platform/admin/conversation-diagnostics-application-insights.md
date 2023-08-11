@@ -27,7 +27,7 @@ You can then use the conversation lifecycle events data from Dynamics 365 Custom
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-# Prerequisites
+## Prerequisites
 
 -   An active Azure tenant and the [Application Insights environment](/azure/azure-monitor/app/create-workspace-resource) set up for receiving the data. More information: [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource).
 
@@ -35,17 +35,17 @@ You can then use the conversation lifecycle events data from Dynamics 365 Custom
 
 -   You'll need to have one of the following roles to set up data export in Power Platform admin center: Power Platform administrator, Dynamics 365 administrator, or Microsoft 365 Global administrator.
 
-# Pricing
+## Pricing
 
 Azure Application Insights is an extension of Azure Monitor and charges for data ingested. There are two log ingestion plans – Basic and Analytic logs. To know the pricing for your business requirements, see [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
 
-# Set up a connection with Azure Application Insights
+## Set up a connection with Azure Application Insights
 
 Before you perform a data export, create a connection between your Dynamics 365 Customer Service tenant and Azure Application Insights in Power Platform admin center. You can create only one data export configuration from Dynamics 365 Customer Service to Application Insights per environment. To enable the data export, complete the following steps.
 
-1.  Go to **Power Platform admin center** and select **Data Export** from the left navigation.
+1.  In the Power Platform admin center, select **Data Export** in the navigation pane.
 
-1.  Select **New data export** under the **App Insights** tab.
+1.  On the **Data export** page, select the **App Insights** tab. Then select **New data export**.
 
 1.  On the **New data exports to Azure Application Insights** page, complete the following actions, and then select **Next**.
 
@@ -61,33 +61,40 @@ Before you perform a data export, create a connection between your Dynamics 365 
 
     ![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)
 
-# Access and use the conversation information in Application Insights
+## Access and use the conversation information in Application Insights
 
 After you've configured the data export setup, conversation lifecycle information for live chat, digital messaging, voice, and custom channel conversations is available in the Application Insights **Traces** table.
 
-The table contains data about the following conversation scenarios and corresponding metadata.
+### Conversation scenarios
+The **Traces** table contains data about the following conversation scenarios.
 
-| **Category** | **Scenario** | **Metadata** |
-|-------------------------|-------------------------|-------------------------|
-| Conversation initiation | Conversation is initialized | <ul></br><li>Org ID</li></br><li>LiveWorkItem ID</li></br><li>Channel Type</li></br><li>Scenario Status<br /></br>(Started/Failed/Completed)</li></br><li>Timestamp</li></br><li>Duration (for completed scenarios)</li></br><li>Participant Type (human agent or virtual agent)</li></br><li>AD User ID (where applicable)</li></br></ul> |
-|  | Customer identified |  |
-| Virtual agent interaction | Virtual agent assigned |  |
-|  | Conversation ended by virtual assistant |  |
-|  | Virtual assistant escalation to human agent from virtual agent |  |
-| Routing | Demand Classification |  |
-|  | Queue assignment |  |
-|  | Agent assignment |  |
-| Human agent interaction | Agent accepted |  |
-|  | Agent rejected |  |
-|  | Acceptance request timed out |  |
-|  | Agent rejoined |  |
-|  | Agent self-assignment |  |
-| Conversation completion | Conversation ended by customer |  |
-|  | Conversation ended by agent |  |
-|  | Agent session closed |  |
-|  | Conversation abandoned by customer/customer disconnect |  |
-|  | Conversation force close by supervisor |  |
-|  | Conversation closed |  |
+**Category**: Conversation initiation 
+  **Scenario**: Conversation is initialized 
+  **Scenario**: Customer identified
+
+**Category**: Virtual agent interaction
+  **Scenario**: Virtual agent assigned
+  **Scenario**: Conversation ended by virtual assistant
+  **Scenario**: Virtual assistant escalation to human agent from virtual agent
+
+**Category**:  Routing
+  **Scenario**: Demand Classification
+  **Scenario**: Queue assignment
+
+**Category**:  Human agent interaction
+  **Scenario**: Agent accepted
+  **Scenario**: Agent rejected
+  **Scenario**: Acceptance request timed out
+  **Scenario**: Agent rejoined
+  **Scenario**: Agent self-assignment
+
+**Category**: Conversation completion
+  **Scenario**: Conversation ended by customer
+  **Scenario**: Conversation ended by agent
+  **Scenario**: Agent session closed
+  **Scenario**: Conversation abandoned by customer/customer disconnect
+  **Scenario**: Conversation force close by supervisor
+  **Scenario**: Conversation closed
 
 ## Understand conversation logs metadata
 
