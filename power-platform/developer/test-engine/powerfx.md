@@ -1,5 +1,5 @@
 ---
-title: "Power Apps Test Engine Power Fx functions"
+title: "Power Apps Test Engine Power Fx functions (preview)"
 description: "Describes Power Fx functions you can use with Power Apps Test Engine."
 author: jt000
 ms.subservice: developer
@@ -11,7 +11,7 @@ contributors:
  - JimDaly
 ---
 
-# Power Apps Test Engine Power Fx functions
+# Power Apps Test Engine Power Fx functions (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -104,3 +104,9 @@ This function waits for the property of the control to equal the specified value
 ### Wait example
 
 ` Wait(Label1, "Text", "0")`
+
+### See also
+
+[Power Apps Test Engine overview (preview)](overview.md)   
+[Power Apps Test Engine Yaml format (preview)](yaml.md)   
+[Power Apps Test Engine control support matrix (preview)](controlsupport.md)

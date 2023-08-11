@@ -1,5 +1,5 @@
 ---
-title: "Power Apps Test Engine (preview) Yaml format"
+title: "Power Apps Test Engine Yaml format (preview)"
 description: "Describes the Yaml format for test following the same guidelines as Power Fx does."
 author: jt000
 ms.subservice: developer
@@ -10,7 +10,7 @@ ms.topic: article
 contributors:
  - JimDaly
 ---
-# Power Apps Test Engine (preview) Yaml format
+# Power Apps Test Engine Yaml format (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -153,3 +153,9 @@ Example PowerShell to set user credentials based on YAML:
 $env:user1Email = "someone@example.com"
 $env:user1Password = "fake password"
 ```
+
+### See also
+
+[Power Apps Test Engine overview (preview)](overview.md)   
+[Power Apps Test Engine Power Fx functions (preview)](powerfx.md)   
+[Power Apps Test Engine control support matrix (preview)](controlsupport.md)

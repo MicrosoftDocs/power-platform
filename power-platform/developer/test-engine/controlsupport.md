@@ -1,5 +1,5 @@
 ---
-title: "Power Apps Test Engine (preview) Control Support Matrix"
+title: "Power Apps Test Engine control support matrix (preview)"
 description: "Supported controls for the Power Apps Test Engine"
 author: jt000
 ms.subservice: developer
@@ -11,7 +11,7 @@ contributors:
  - JimDaly
 ---
 
-# Power Apps Test Engine (preview) Control Support Matrix
+# Power Apps Test Engine control support matrix (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -168,3 +168,9 @@ Power Apps Test Engine only supports a subset of the full list control supported
 | Display form | n/a | n/a | n/a | n/a |
 | Power BI tile | n/a | n/a | n/a | |
 | Stream Video | n/a | n/a | n/a | n/a |
+
+### See also
+
+[Power Apps Test Engine overview (preview)](overview.md)   
+[Power Apps Test Engine Yaml format (preview)](yaml.md)   
+[Power Apps Test Engine Power Fx functions (preview)](powerfx.md)

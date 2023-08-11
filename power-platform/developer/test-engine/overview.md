@@ -1,6 +1,6 @@
 ---
-title: "Overview of Power Apps Test Engine (preview)"
-description: "Power Apps Test Engine is a component within the Power Platform CLI used for automating standalone canvas apps in Power Apps"
+title: Power Apps Test Engine overview (preview)
+description: Learn about how you can automate tests of standalone canvas apps using the Power Apps Test Engine within Power Platform CLI.
 author: jt000
 ms.subservice: developer
 ms.author: jasontre
@@ -11,50 +11,62 @@ contributors:
  - JimDaly
 ---
 
-# Overview of Power Apps Test Engine (preview)
+# Power Apps Test Engine overview (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Power Apps Test Engine is a component within the Power Platform CLI used for testing standalone canvas apps in Power Apps. See ["What is Microsoft Power Platform CLI?"](/power-platform/developer/cli/introduction) for more information on installing Power Apps Test Engine within this component.
+[!INCLUDE [cc-preview-features-expect-changes](../../includes/cc-preview-features-expect-changes.md)]
+
+Power Apps Test Engine is a component within the Power Platform CLI (PAC CLI) used for testing standalone canvas apps in Power Apps. You must [Install Microsoft Power Platform CLI](../cli/introduction.md#install-microsoft-power-platform-cli) to use the Test Engine.
 
 ## Benefits
 
 Power Apps Test Engine has the following benefits:
 
-- Power Fx test authoring - Makers can author tests in YAML format using the familiar Power Fx language.
-- DOM abstraction - Tests are authored using references to control names that are defined within Power Apps Studio. JavaScript is not needed for writing tests and don't need to be familiar with the browser DOM of the app's rendered output.
-- Connector mocking - Test authors can optionally create mocks of network calls, typically used when Power Apps makes calls to connectors. Connector mocking allows the app to be tested without modification to the app itself while avoiding any unwanted side-effects of the external APIs.
-- Screenshot and video recording support - Test Engine can take screenshots at any point during your test execution, and records videos of the test run. This can be helpful to diagnose failed tests and to understand what the actual experience of the failed test case was.
+- **Power Fx test authoring**: Author tests in YAML format using the familiar Power Fx language.
+- **DOM abstraction**: Use references to control names that are defined within Power Apps Studio when you author tests. You don't need to use JavaScript, or be familiar with the browser Document Object Model (DOM) of the rendered output of the app.
+- **Connector mocking**: You can create mocks of network calls the app makes using connectors. You can test the app without modifying it and avoid unwanted side-effects of the external APIs.
+- **Screenshot and video recording support**: You can use Test Engine to take screenshots and record videos of the test run. These images and recordings help diagnose failed tests and understand the actual experience of the failed test cases.
 
 ## Running Power Apps Test Engine
 
-### Creating a Test Plan YAML
+Testing your app with Test Engine requires the following steps:
 
-Creating a test plan yaml can be achieved in 2 ways, either by downloading from an existing Power Apps Test Studio test plan or creating a test plan YAML from scratch.
+1. [Create a Test Plan](#create-a-test-plan)
+1. [Set up your user](#set-up-your-user)
+1. [Run the test](#run-the-test)
+1. [View the results](#view-the-results)
 
-#### Option 1: Author your own test plan
+### Create a Test Plan
 
-Create a yaml file using the test plan schema explained in [Power Apps Test Engine Yaml Explained](yaml)
+Test plans are defined using [YAML](https://yaml.org/spec/1.2.2/) format. You can [author your own test plan](#author-your-own-test-plan) or [download recorded tests from Test Studio](#download-recorded-tests-from-test-studio).
 
-#### Option 2: Download recorded tests from Test Studio
+
+<!-- TODO: This would be a good place to briefly explain the advantages of either choice -->
+
+#### Author your own test plan
+
+Create a yaml file using the test plan schema explained in [Power Apps Test Engine Yaml format (preview)](yaml.md).
+
+#### Download recorded tests from Test Studio
 
 If you have tests that you have recorded in [Test Studio](/power-apps/maker/canvas-apps/test-studio), you can download them from Test Studio to reuse in Test Engine.
 
-- Make use of the **Download suite** button available in Test Studio to download the test plan. Choose the test suite to download if you have multiple test suites.
+- Use the **Download suite** button in Test Studio to download the test plan. Choose the test suite to download if you have multiple test suites.
 
     ![Screenshot of Test Studio download test suite button](media/download-test-suite.png)
 
-- Alternatively you can make use of the **Download** button available under each test suite.
+- Alternatively, use the **Download** button available under each test suite.
 
     ![Screenshot of Test Studio download test suite individual button](media/download-test-suite-individual.png)
 
 - Make sure you update the config file and user configurations if you're using a different tenant or environment for this app.
 
-### Setting up your user
+### Set up your user
 
 Test Engine doesn't support multi-factor authentication. Use an account that requires only a username and password to sign in for your tests.
 
-Test credentials can't be stored in test plan files. Rather, they're stored in environment variables. The test plan file contains references to which environment variables are used for credentials. For example, the following snippet indicates that the `user1Email` and `user1Password` environment variables are used:
+You can't store test credentials in test plan files. Store them in environment variables. The test plan file contains references to which environment variables are used for credentials. For example, the following YAML snippet indicates that the `user1Email` and `user1Password` environment variables are used:
 
 ```yaml
 environmentVariables:
@@ -64,29 +76,35 @@ environmentVariables:
       passwordKey: user1Password
 ```
 
-View the [Users](yaml#users) for more information.
+View [Users](yaml.md#users) for more information.
 
-Store the username and password for the user in your environment variables which can be done in powershell using the below script.
+Use the following PowerShell script to store the username and password in your environment variables.
 
 ```powershell
 $env:user1Email = "someone@example.com"
 $env:user1Password = "fake password"
 ```
 
-### Running `pac tests run`
+### Run the test
 
-To run your test plan, execute the Power Apps Test Engine by running `pac tests run` providing at a minimum your test plan file path, environment id, and tenant.
+<!-- TODO: Add link to pac tests run command when published -->
+Use the PAC CLI `pac tests run` command to run your test plan. You must provide:
 
-### Viewing the results
+- Path to your test plan file
+- EnvironmentId
+- TenantId
 
-Once the tests have completed, you will be able to view the results of your test in the .trx file located in the output directory. Additionally, this folder will contain any screenshots taken by your tests as well as the video if `recordVideo` is set to `true` in the test plan yaml.
+
+### View the results
+
+When the tests complete, you can view the results of your test in the `.trx` file located in the output directory. This folder contains any screenshots or videos captured by your tests when `recordVideo` is set to `true` in the test plan yaml.
 
 ## Limitations
 
 The following are known limitations when working with Power Apps Test Engine.
 
 - Multi-factor authentication isn't supported. Use an account that requires only a username and password to run your tests.
-- Some controls are currently unsupported in Power Apps Test Engine. See [Power Apps Test Engine (preview) Control Support Matrix](controlsupport) for a full list.
+- Some controls are currently unsupported in Power Apps Test Engine. See [Power Apps Test Engine Control Support Matrix (preview)](controlsupport.md) for a full list.
 - Browser locale will follow your browser's default settings
 
 ### Supported Browsers
@@ -97,7 +115,9 @@ Test engine currently supports the following browsers.
 - Firefox
 - WebKit
 
-## Additional Considerations
+## Additional considerations
+
+The following are some additional things to consider for your test plans.
 
 ### Languages and regions that use period as the decimal separator
 
@@ -110,26 +130,34 @@ See the following samples that have the `locale` property specified as examples 
 
 ### How apps are referenced in test plan files
 
-The way that the test plan files refer to the target app differs depending on whether or not the app is in a solution or not. We recommend using solutions whenever possible because they provide greater portability.
+The way that test plan files refer to the target app depends on whether or not the app is in a solution or not. We recommend using solutions whenever possible because they provide greater portability.
 
-- **Working with apps within Solutions** - Test plan files for apps that are part of [solutions](/power-apps/maker/data-platform/solutions-overview) are portable across environments. For solution-based apps, the test plan refers to the target app with a logical name (the app LogicalName property) which doesn't change if the app moves to a different environment.
+#### Working with apps within solutions
 
-  1. Locate the App Logical name for the app
-     1. In the **Solutions** tab, open the solution that contains the app
-     1. Select **Apps**
-     1. Note the **Name** column. It's the app logical name (Not the **Display name**)
-  2. Update your test plan file
-     1. Open the test plan YAML file for the app
-     1. Fill in the **appLogicalName** value with the new App logical name
+Test plan files for apps that are part of [solutions](/power-apps/maker/data-platform/solutions-overview) are portable across environments. For solution-based apps, the test plan refers to the target app with a logical name (the app `LogicalName` property) which doesn't change if the app moves to a different environment.
 
-- **Working with apps outside of Solutions** - If you move an app that is _not_ part of a solution to a new environment, you'll need to manually update the test plan file to refer to the app. How to update a test plan file for a non-solution based app:
+1. Locate the Logical name for the app
+   1. In the **Solutions** tab, open the solution that contains the app
+   1. Select **Apps**
+   1. Note the **Name** column. It's the app logical name (Not the **Display name**)
+1. Update your test plan file
+   1. Open the test plan YAML file for the app
+   1. Fill in the **appLogicalName** value with the new App logical name
 
-  1. Locate the App ID for the app in its new location
-     1. In the **Apps** list, locate the app and open the context menu
-     1. Select **Details**
-     1. Note the **App ID** GUID on the Details pane
-  1. Update your test plan file
-     1. Open the test plan YAML file for the app
-     1. Fill in the **appId** with the new App ID
+#### Working with apps outside of solutions
 
+If you move an app that is _not_ part of a solution to a new environment, you'll need to manually update the test plan file to refer to the app. How to update a test plan file for a non-solution based app:
 
+1. Locate the App ID for the app in its new location
+   1. In the **Apps** list, locate the app and open the context menu
+   1. Select **Details**
+   1. Note the **App ID** GUID on the Details pane
+1. Update your test plan file
+   1. Open the test plan YAML file for the app
+   1. Fill in the **appId** with the new App ID
+
+### See also
+
+[Power Apps Test Engine Yaml format (preview)](yaml.md)   
+[Power Apps Test Engine Power Fx functions (preview)](powerfx.md)   
+[Power Apps Test Engine control support matrix (preview)](controlsupport.md)
