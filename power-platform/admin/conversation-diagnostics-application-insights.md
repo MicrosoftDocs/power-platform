@@ -19,60 +19,51 @@ ms.contributors:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Into here.
+Conversation diagnostics logs each of the conversation lifecycle events, giving you a greater visibility into conversations-based operational telemetry of your organization.  This helps your support team to proactively monitor the system and allows developers to easily identify, diagnose, and fix problematic conversations, or seek swift support.
+
+Connect your Dynamics 365 Customer Service environment to an Azure Application Insights instance to collect and store conversation logs. For more information about Application Insights features and how they can be used to monitor your telemetry and diagnose failures, see [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard) and [Diagnose failures using the Azure portal](/azure/azure-monitor/app/asp-net-exceptions#diagnose-failures-using-the-azure-portal).
+
+You can then use the conversation lifecycle events data from Dynamics 365 Customer Service in Application Insights to monitor system health, export, and combine it with additional data sets to build custom dashboards per your business needs.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-Conversation diagnostics logs each of the conversation lifecycle events, giving you a greater visibility into conversations-based operational telemetry of your organization.  This helps your support team to proactively monitor the system and allows developers to easily identify, diagnose, and fix problematic conversations, or seek swift support.
-
-Connect your Customer Service environment to an Azure Application Insights instance to collect and store conversation logs. For more information about Application Insights features and how they can be used to monitor your telemetry and diagnose failures, see: [Application Insights Overview dashboard](https://learn.microsoft.com/en-us/azure/azure-monitor/app/overview-dashboard) and [Diagnose failures using the Azure portal](https://learn.microsoft.com/en-us/azure/azure-monitor/app/asp-net-exceptions#diagnose-failures-using-the-azure-portal).
-
-You can then use the conversation lifecycle events data from Customer Service in Application Insights to monitor system health, export, and combine it with additional data sets to build custom dashboards per your business needs.
-
 # Prerequisites
 
--   An active Azure tenant and the [Application Insights environment](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource) set up for receiving the data. For more information, see: [Workspace-based Application Insights resources](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource).
+-   An active Azure tenant and the [Application Insights environment](/azure/azure-monitor/app/create-workspace-resource) set up for receiving the data. More information: [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource).
 
--   Dynamics 365 Customer Service Enterprise license. This environment must be a managed environment. To make your environment a managed environment, perform the steps in [Enable Managed Environments.](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-enable)
+-   Dynamics 365 Customer Service Enterprise license. This environment must be a Managed Environment. To make your environment a Managed Environment, perform the steps in [Enable Managed Environments](managed-environment-enable.md).
 
 -   You'll need to have one of the following roles to set up data export in Power Platform admin center: Power Platform administrator, Dynamics 365 administrator, or Microsoft 365 Global administrator.
 
 # Pricing
 
-Azure Application Insights is an extension of Azure Monitor and charges for data ingested. There are two log ingestion plans – Basic and Analytic logs. To know the pricing for your business requirements, see: [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
+Azure Application Insights is an extension of Azure Monitor and charges for data ingested. There are two log ingestion plans – Basic and Analytic logs. To know the pricing for your business requirements, see [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
 
-# Setup a connection with Azure Application Insights
+# Set up a connection with Azure Application Insights
 
-Before you perform a data export, create a connection between your Dynamics 365 Customer Service tenant and Azure Application Insights in Power Platform admin center. You can create only one data export configuration from Customer Service to Application Insights per environment. To enable the data export, perform the following steps:
+Before you perform a data export, create a connection between your Dynamics 365 Customer Service tenant and Azure Application Insights in Power Platform admin center. You can create only one data export configuration from Dynamics 365 Customer Service to Application Insights per environment. To enable the data export, complete the following steps.
 
-1.  Go to **Power Platform admin center** and select **Data Export** from the left navigation. Then, select **New data export** under the **App Insights** tab.
+1.  Go to **Power Platform admin center** and select **Data Export** from the left navigation.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image1.png)
+1.  Select **New data export** under the **App Insights** tab.
 
-2.  On the **New data exports to Azure Application Insights** page, perform the following actions, and then select **Next**:
+1.  On the **New data exports to Azure Application Insights** page, complete the following actions, and then select **Next**.
 
-    -   Specify the **Name of the export package**.
+    - Enter a name in the **Name of the export package** field.
+    - Select **Dynamics Customer Service**.
+    - Select **Next**.
 
-    -   Select **Dynamics Customer Service  
- **
+1.  Select the environment from which you'd like to export the data, and then select **Next**. You can export data from a [Managed Environment](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-enable) only.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image2.png)
+1. Specify the **Subscription**, **Resource group**, and the **Application Insights** instance. Then select **Next**.
 
-3.  Select the environment from which you'd like to export the data, and then select **Next**. You can export data from a [managed environment](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-enable) only.
+1. Review the setup configuration, and then select **Create.** The data export from Dynamics 365 Customer Service to Application Insights is created and displayed on the **Data export** page.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image3.png)
-
-4\. Specify the **Subscription**, **Resource group**, and the **Application Insights** instance.
-
-![A screenshot of a computer Description automatically generated](media/image4.png)
-
-5\. Review the setup configuration, and then select **Create.** The data export from Customer Service to Application Insights is created and displayed on the **Data export** page.
-
-![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)
 
 # Access and use the conversation information in Application Insights
 
-After you've configured the data export setup, conversation lifecycle information for Live Chat, Digital Messaging, Voice, and Custom channel conversations is available in the Application Insights **Traces** table**.**
+After you've configured the data export setup, conversation lifecycle information for live chat, digital messaging, voice, and custom channel conversations is available in the Application Insights **Traces** table.
 
 The table contains data about the following conversation scenarios and corresponding metadata.
 
@@ -98,53 +89,32 @@ The table contains data about the following conversation scenarios and correspon
 |  | Conversation force close by supervisor |  |
 |  | Conversation closed |  |
 
-
 ## Understand conversation logs metadata
 
 A description of the attributes displayed in Application Insights is as follows:
 
 - **Timestamp \[UTC\]**: The date and time at which the event is logged. 
-
 - **Message**: Indicates the scenario status the conversation lifecycle event. This can be Started, Failed, or Completed.
-
-    -   Started: Indicates that the conversation scenario started.
-
-    -   Completed: Indicates that the conversation scenario was successfully completed.
-
-    -   Failed: Indicates that the conversation scenario failed.
-
+    -   **Started**: Indicates that the conversation scenario started.
+    -   **Completed**: Indicates that the conversation scenario was successfully completed.
+    -   **Failed**: Indicates that the conversation scenario failed.
 - **customDimensions**: Contains the following metadata required for detailed debugging:
-
     - **organizationId**: The unique identifier of the organization.
-
     - **LiveWorkItemID**: The unique identifier of the conversation to which the message must be sent to.
-
     - **Channel Type**: Indicates the channel through which the customer is sending messages.
-
     - **Duration**: The time taken for the scenario to complete.
-
     - **Participant Type**: Indicates if the conversation is assigned to a human agent or a bot.
-
-<!-- -->
-
 - **Operation\_name**: Indicates the conversation lifecycle event.
-
 - **Operation\_id**: The unique identifier of the root operation. This is the transactionid of the conversation from Customer Service.
-
 - **Operation\_parentid**: The conversation Id of the conversation.
-
 - **Session\_id**: The instance of the user's interaction with the app.
-
 - **User\_id**: Represents the user of the application. This field is populated with the AD user id whenever the scenario includes human agents or bots. For all other scenarios, 0 is displayed.
-
 - **Severitylevel**: The trace severity level. This is set to 0.
-
 - **itemType**: The table that the record was retrieved from. This is always set to Trace.
 
 For example, the following image summarizes a scenario where a Livechat conversation is assigned to a queue. The Traces table displays the following metadata:
 
 -   The **ScenarioStarted** message, with the **Operation\_name**, QueueAssignment, and the timestamp at which the scenario started.
-
 -   The **ScenarioCompleted** message, with the duration the application took for the scenario to be successfully completed as the scenario is a success, and the conversation is assigned to a queue.  
       
     ![A screenshot of a computer Description automatically generated with low confidence](media/image6.png)
