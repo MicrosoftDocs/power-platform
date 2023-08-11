@@ -24,11 +24,11 @@ Power Apps Test Engine is a component within the Power Platform CLI (PAC CLI) us
 Power Apps Test Engine has the following benefits:
 
 - **Power Fx test authoring**: Author tests in YAML format using the familiar Power Fx language.
-- **DOM abstraction**: Use references to control names that are defined within Power Apps Studio when you author tests. You don't need to use JavaScript, or be familiar with the browser Document Object Model (DOM) of the rendered output of the app.
+- **DOM abstraction**: Use references to control names that are defined within Power Apps Studio when you author tests. You don't need to use JavaScript, or be familiar with the browser Document Object Model (DOM) rendered output of the app.
 - **Connector mocking**: You can create mocks of network calls the app makes using connectors. You can test the app without modifying it and avoid unwanted side-effects of the external APIs.
 - **Screenshot and video recording support**: You can use Test Engine to take screenshots and record videos of the test run. These images and recordings help diagnose failed tests and understand the actual experience of the failed test cases.
 
-## Running Power Apps Test Engine
+## Testing your app
 
 Testing your app with Test Engine requires the following steps:
 
@@ -46,7 +46,7 @@ Test plans are defined using [YAML](https://yaml.org/spec/1.2.2/) format. You ca
 
 #### Author your own test plan
 
-Create a yaml file using the test plan schema explained in [Power Apps Test Engine Yaml format (preview)](yaml.md).
+Create a yaml file using the test plan schema explained in [Power Apps Test Engine YAML format (preview)](yaml.md).
 
 #### Download recorded tests from Test Studio
 
@@ -158,6 +158,6 @@ If you move an app that is _not_ part of a solution to a new environment, you'll
 
 ### See also
 
-[Power Apps Test Engine Yaml format (preview)](yaml.md)   
+[Power Apps Test Engine YAML format (preview)](yaml.md)   
 [Power Apps Test Engine Power Fx functions (preview)](powerfx.md)   
 [Power Apps Test Engine control support matrix (preview)](controlsupport.md)

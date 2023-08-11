@@ -108,5 +108,5 @@ This function waits for the property of the control to equal the specified value
 ### See also
 
 [Power Apps Test Engine overview (preview)](overview.md)   
-[Power Apps Test Engine Yaml format (preview)](yaml.md)   
+[Power Apps Test Engine YAML format (preview)](yaml.md)   
 [Power Apps Test Engine control support matrix (preview)](controlsupport.md)

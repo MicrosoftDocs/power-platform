@@ -1,6 +1,6 @@
 ---
 title: "Power Apps Test Engine control support matrix (preview)"
-description: "Supported controls for the Power Apps Test Engine"
+description: Supported controls for the Power Apps Test Engine
 author: jt000
 ms.subservice: developer
 ms.author: jasontre
@@ -17,7 +17,7 @@ contributors:
 
 ## Overview
 
-Power Apps Test Engine only supports a subset of the full list control supported in Power Apps. The support depends on if the control is top-level (i.e. not nested within a gallery or component), nested within a gallery, or nested within a component. Below you will find a list of controls and their support.
+Power Apps Test Engine only supports a subset of the full list control supported in Power Apps. The support depends on if the control is [top-level ](#top-level)(i.e. not nested within a gallery or component), [nested within a gallery](#nested-in-a-gallery), or [nested within a component](#nested-in-a-component). Below you will find a list of controls and their support.
 
 ### Top Level
 
@@ -172,5 +172,5 @@ Power Apps Test Engine only supports a subset of the full list control supported
 ### See also
 
 [Power Apps Test Engine overview (preview)](overview.md)   
-[Power Apps Test Engine Yaml format (preview)](yaml.md)   
+[Power Apps Test Engine YAML format (preview)](yaml.md)   
 [Power Apps Test Engine Power Fx functions (preview)](powerfx.md)

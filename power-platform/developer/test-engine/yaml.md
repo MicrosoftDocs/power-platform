@@ -1,6 +1,6 @@
 ---
-title: "Power Apps Test Engine Yaml format (preview)"
-description: "Describes the Yaml format for test following the same guidelines as Power Fx does."
+title: "Power Apps Test Engine YAML format (preview)"
+description: Describes the YAML format for test following the same guidelines as Power Fx.
 author: jt000
 ms.subservice: developer
 ms.author: jasontre
@@ -10,7 +10,7 @@ ms.topic: article
 contributors:
  - JimDaly
 ---
-# Power Apps Test Engine Yaml format (preview)
+# Power Apps Test Engine YAML format (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -55,9 +55,9 @@ Used to define one test.
 | `Headers` | No | A list of header fields in the request in the format of [fieldName: fieldValue] |
 | `requestBodyFile` | No | A text file with the request body. All text in this file is read as the request body |
 
-For optional properties, if no value is specified, the routing applies to all. For example, if Method is null, we send back the mock response whatever the method is as long as the other properties all match.
+For optional properties, if no value is specified, the routing applies to all. For example, if `Method` is null, we send back the mock response whatever the method is as long as the other properties all match.
 
-For Sharepoint/Dataverse/Connector apps, requestURL and Method can be the same for all requests. `x-ms-request-method` and `x-ms-request-url` in  headers may need to be configured in that case to identify different requests.
+For Sharepoint/Dataverse/Connector apps, `requestURL` and `Method` can be the same for all requests. `x-ms-request-method` and `x-ms-request-url` in  headers may need to be configured in that case to identify different requests.
 
 #### test TestCases
 
@@ -82,12 +82,12 @@ Used to define settings for the tests in the test plan.
 
 | Property | Required | Description |
 |---|---|---|
-| `locale` | Yes | The locale/culture syntax in which the test cases or test steps are written in. See [Global Support in Microsoft Power Fx(../../power-fx/global.md) for more info. If unspecified, `CultureInfo.CurrentCulture` is used for the locale by default for parsing the test steps. |
+| `locale` | Yes | The locale/culture syntax in which the test cases or test steps are written in. See [Global Support in Microsoft Power Fx](../../power-fx/global.md) for more information. If unspecified, `CultureInfo.CurrentCulture` is used for the locale by default for parsing the test steps. |
 | `browserConfigurations` | Yes | A list of browser configurations to be tested. At least one browser must be specified. |
 | `recordVideo` | No | Default is false. If set to true, a video recording of the test is captured. |
 | `headless` | No | Default is true. If set to false, the browser shows up during test execution. |
 | `enablePowerFxOverlay` | No | Default is false. If set to true, an overlay with the currently running Power FX command is placed on the screen. |
-| `timeout` | No | Default is 30,000 milliseconds(30s). Timeout value in milliseconds. If any operation takes longer than the timeout limit, it ends the test in a failure. |
+| `timeout` | No |Timeout value in milliseconds. Default is 30,000 milliseconds (30s). If any operation takes longer than the timeout limit, it ends the test in a failure. |
 | `filePath` | No |  The file path to a separate yaml file with all the test settings. If provided, it will **override** all the test settings in the test plan. |
 
 #### testSettings Browser configuration
