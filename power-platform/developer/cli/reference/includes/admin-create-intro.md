@@ -44,10 +44,10 @@ In this example, we create the same environment described in [Advanced creation 
 
 ```json
 {
-  "name": "Contoso Marketing"
-  "currency": "EUR"
-  "region": "europe"
-  "type": "Production"
+  "name": "Contoso Marketing",
+  "currency": "EUR",
+  "region": "europe",
+  "type": "Production",
   "domain": "ContosoMarketing"
 }
 ```
