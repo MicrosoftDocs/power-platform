@@ -58,7 +58,7 @@ Table(
     	ItemDisplayName: "Power Apps",
     	ItemKey: "1",
     	ItemEnabled: true,
-        ItemChecked: true,
+    	ItemChecked: true,
     	ItemIconName: "Powerapps",
     	ItemIconColor: "purple",
     	ItemTextColor: "purple",
