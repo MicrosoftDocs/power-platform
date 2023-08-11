@@ -16,7 +16,7 @@ This document addresses a key need of how organizations and administrators can p
 
 ## Default environment
 
-One default environment is created per tenant and is acceissble for all users in that tenant. The default environment is created in the region closest to the default region of the Azure AD tenant and is named as follows: "{Azure AD tenant name} (default)". Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
+One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure AD tenant and is named as follows: "{Azure AD tenant name} (default)". Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
 
 In the default environment employees of an organization with a Microsoft 365 license can create apps and cloud flows. The default environment becomes the first playground studio for these employees to start building their apps and flows. Because it isn't possible to remove the environment maker role from the default environment, makers start to build personal productivity apps and flows and share them within their teams for others to benefit. Most organizations often rename the default environment to Personal Productivity.
 
@@ -50,13 +50,13 @@ If a component is tagged for cleanup, then there are two main options. The first
 
 As an example, CoE Team administrators find that most of the makers created test apps and flows to learn and abandoned them, which can be confirmed by looking at the usage metrics. Another way is to quarantine the app and if no one approaches then you can delete such apps as well.
 
+Maintaining a communication strategy plays a key role. Admins should plan to communicate:
 
->Maintaining a communication strategy throughout each of the above process plays a key role. Admins should plan to communicate:
-> - Establishing connections that makers need to permit as they launch the app in the new environment
-> - The new URL of the app from the target environment
-> - Navigating to the right environment.
+- Establishing connections that makers need to permit as they launch the app in the new environment
+- The new URL of the app from the target environment
+- Navigating to the right environment.
 
->Some of these solutions for relocating objects are ready-made and may require a standalone Power Apps and Power Automate license that provide users the ability to create and run apps across data sources that extend beyond Microsoft 365.
+Some of these solutions for relocating objects are ready-made and may require a standalone Power Apps and Power Automate license that provide users the ability to create and run apps across data sources that extend beyond Microsoft 365.
 
 ## Strategies
 
@@ -70,7 +70,7 @@ Effectively, your environment strategy is defined through DLP and that provides 
 
 ### Environment strategy
 
-Developing an environment strategy would mean to configure environments and other layers of data security in a way, that support productive development in your organization, while securing and organizing resources. A strategy to manage environment provisioning, access management, and controlling resources within them, is important to:
+Developing an environment strategy requires configuring environments and other layers of data security in a way that supports productive development in your organization, while securing and organizing resources. A strategy to manage environment provisioning, access management, and controlling resources within them, is important to:
 
 - Secure data and access.
 - Govern the default environment in a compliant way.
@@ -169,9 +169,7 @@ This document outlines some possibilities. It's important to carefully consider 
 
 ### Migrate all – DB backup and restore option
 
-Similar to most environment types, the default environment is backed up as well. These system backups are performed automatically. There's no on-demand option for the default environment, so it will require a support request.
-
-Once backed up, it can be restored into a new environment keeping all the data within Dataverse. This option is only to show the reader about its existence and educate the reader on when to consider. It shouldn't be pursued as the primary choice, as it would only yield partial migration.
+Similar to most environment types, the default environment is backed up as well. These system backups are performed automatically. There's no on-demand option for the default environment, so it requires a support request. The backup can be restored into a new environment keeping all the data within Dataverse. This option is only to show the reader about its existence and educate the reader on when to consider. It shouldn't be pursued as the primary choice, as it would only yield partial migration.
 
 | **Supported** | **Not fully supported** |
 |---|---|
@@ -200,7 +198,7 @@ The success of a solution import in target environment can only be ensured when 
 
 Manually add selected components to the solution. In this case, it's assumed that you know that all dependent components are already available on the target environment.
 
-Use the [show dependencies](/power-apps/maker/data-platform/view-component-dependencies) button from within the solution to let system identify dependencies for you. You have the option to add all or selectively add only those that don't exist in the target.
+Use the [show dependencies](/power-apps/maker/data-platform/view-component-dependencies) button from within the solution to let system identify dependencies for you. You can add all or selectively add only dependencies that don't exist in the target.
 
 ![Component dependency for the account table.](media/image3.png)
 

@@ -10,7 +10,7 @@ ms.date: 08/10/2023
 ---
 # Whitepapers for Power Platform
 
-Whitepapers allow you to explore Power Platofrm topics at a deeper level. Here you can find a list of available white papers for Power Platform.
+Whitepapers allow you to explore Power Platform topics at a deeper level. Here you can find a list of available white papers for Power Platform.
 
 | Whitepaper | Description | Date |
 | --- | --- | --- |
