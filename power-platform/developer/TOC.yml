@@ -123,7 +123,7 @@
               href: devtools-vs.md
             - name: Create a Power Platform Tools project
               href: devtools-vs-create-project.md
-        - name: Visual Studio connected service (preview)
+        - name: Visual Studio connected service
           items:
             - name: Overview of Visual Studio connected service
               href: visual-studio-connected-service.md
