@@ -21,7 +21,7 @@ Power Apps Test Engine only supports a subset of the full list control supported
 
 ### Top Level
 
-| | Assert | Wait | Set Property | Select |
+| Control | [Assert](powerfx.md#assert) | [Wait](powerfx.md#wait) | [SetProperty](powerfx.md#setproperty) | [Select](powerfx.md#select) |
 | :--- | :---: | :---: | :---: | :---: |
 | Address input | | | | n/a |
 | Audio | | | | n/a |
@@ -71,7 +71,7 @@ Power Apps Test Engine only supports a subset of the full list control supported
 
 ### Nested in a Gallery
 
-| | Assert | Wait | Set Property | Select |
+| Control | [Assert](powerfx.md#assert) | [Wait](powerfx.md#wait) | [SetProperty](powerfx.md#setproperty) | [Select](powerfx.md#select) |
 | :--- | :---: | :---: | :---: | :---: |
 | Address input | | | | n/a |
 | Audio | | | | n/a |
@@ -121,7 +121,7 @@ Power Apps Test Engine only supports a subset of the full list control supported
 
 ### Nested in a Component
 
-| | Assert | Wait | Set Property | Select |
+| Control | [Assert](powerfx.md#assert) | [Wait](powerfx.md#wait) | [SetProperty](powerfx.md#setproperty) | [Select](powerfx.md#select) |
 | :--- | :---: | :---: | :---: | :---: |
 | Address input | | | &#9747; | n/a |
 | Audio | n/a | n/a | &#9747; | n/a |
