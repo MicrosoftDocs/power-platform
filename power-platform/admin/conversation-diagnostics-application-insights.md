@@ -180,4 +180,4 @@ When you run a query for the specific conversation ID, here's the trace log that
 
 ## Export conversation data
 
-You can use the **Export** option to export the logs and combine this data with data sets from other tables to create your own custom monitoring dashboards. For more information, see: [Create custom KPI dashboards using Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/tutorial-app-dashboards).
+You can use the **Export** option to export the logs and combine this data with data sets from other tables to create your own custom monitoring dashboards. More information: [Create custom KPI dashboards using Application Insights](/azure/azure-monitor/app/tutorial-app-dashboards).
