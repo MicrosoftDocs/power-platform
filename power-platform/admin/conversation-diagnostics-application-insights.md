@@ -58,9 +58,7 @@ Before you perform a data export, create a connection between your Dynamics 365 
 1. Specify the **Subscription**, **Resource group**, and the **Application Insights** instance. Then select **Next**.
 
 1. Review the setup configuration, and then select **Create.** The data export from Dynamics 365 Customer Service to Application Insights is created and displayed on the **Data export** page.
-
-    ![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)
-
+   
 ## Access and use the conversation information in Application Insights
 
 After you've configured the data export setup, conversation lifecycle information for live chat, digital messaging, voice, and custom channel conversations is available in the Application Insights **Traces** table.
