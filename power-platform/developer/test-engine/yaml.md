@@ -15,7 +15,7 @@ contributors:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Tests are defined in YAML following the same guidelines as Power Fx does. To find out more about the Power Fx YAML formula grammar, [Power Fx YAML formula grammar](../../power-fx/yaml-formula-grammar.md).
+Tests are defined in YAML following the same guidelines as Power Fx does. [Learn more about the Power Fx YAML formula grammar](../../power-fx/yaml-formula-grammar.md).
 
 View the [PowerApps-TestEngine/samples](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples) folder for detailed examples.
 
