@@ -34,7 +34,7 @@ Learn how to export data to Application Insights from the Power Platform admin c
 
 ## Create an export package
 
-1. In the Power Platform admin center, select **Data export** in the navigation pane.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Data export** in the navigation pane.
 
 1. On the **Data export** page, select the **App Insights** tab. Then select **New data export**.
 
