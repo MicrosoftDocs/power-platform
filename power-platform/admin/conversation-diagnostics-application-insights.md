@@ -148,25 +148,25 @@ To view the logs for a conversation, complete the following steps.
 
 3.  Run a query on the **Traces** table, filtering by the conversation ID of your conversation. A sample query is as follows:
 
-``` SQL
-*let lwiId = "269079bb-f39d-4281-bf87-d13bae6d0ed2";*
+    ``` SQL
+    *let lwiId = "269079bb-f39d-4281-bf87-d13bae6d0ed2";*
+    
+    *let operationIds = (traces*
+    
+    *\| where operation\_ParentId == lwiId // LWI to be checked*
+    
+    *\| distinct operation\_Id);*
+    
+    *traces*
+    
+    *\| where operation\_Id in (operationIds) or operation\_ParentId == lwiId*
+    
+    *\| project timestamp, message, customDimensions, operation\_Name, operation\_Id, operation\_ParentId, session\_Id, user\_Id, severityLevel, itemType*
+    
+    *\| sort by timestamp asc*
+    ```
 
-*let operationIds = (traces*
-
-*\| where operation\_ParentId == lwiId // LWI to be checked*
-
-*\| distinct operation\_Id);*
-
-*traces*
-
-*\| where operation\_Id in (operationIds) or operation\_ParentId == lwiId*
-
-*\| project timestamp, message, customDimensions, operation\_Name, operation\_Id, operation\_ParentId, session\_Id, user\_Id, severityLevel, itemType*
-
-*\| sort by timestamp asc*
-```
-
-Where **lwid** is the conversation ID you've retrieved from your Dynamics 365 Customer Service application.
+    Where **lwid** is the conversation ID you've retrieved from your Dynamics 365 Customer Service application.
 
 4.  The application displays the trace for the conversation.
 
