@@ -53,7 +53,7 @@ Before you perform a data export, create a connection between your Dynamics 365 
     - Select **Dynamics Customer Service**.
     - Select **Next**.
 
-1.  Select the environment from which you'd like to export the data, and then select **Next**. You can export data from a [Managed Environment](managed-environment-enable/md) only.
+1.  Select the environment from which you'd like to export the data, and then select **Next**. You can export data from a [Managed Environment](managed-environment-enable.md) only.
 
 1. Specify the **Subscription**, **Resource group**, and the **Application Insights** instance. Then select **Next**.
 
