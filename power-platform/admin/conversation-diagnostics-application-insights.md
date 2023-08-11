@@ -129,12 +129,12 @@ A description of the attributes displayed in Application Insights is as follows:
 - **Severitylevel**: The trace severity level. This is set to 0.
 - **itemType**: The table that the record was retrieved from. This is always set to Trace.
 
-For example, in a scenario where a Livechat conversation is assigned to a queue, the Traces table displays the following metadata:
+For example, in a scenario where a live chat conversation is assigned to a queue, the Traces table displays the following metadata:
 
 -   The **ScenarioStarted** message, with the **Operation\_name**, QueueAssignment, and the timestamp at which the scenario started.
 -   The **ScenarioCompleted** message, with the duration the application took for the scenario to be successfully completed as the scenario is a success, and the conversation is assigned to a queue.  
       
-    ![A screenshot of a computer Description automatically generated with low confidence](media/image6.png)
+    ![The metadata when a live chat conversation is assigned to a queue.](media/live-chat-assigned-to-queue.png)
 
 ## Access conversation logs from Application Insights
 
