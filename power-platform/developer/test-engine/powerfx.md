@@ -1,5 +1,5 @@
 ---
-title: "Test Engine Power Fx functions"
+title: "Power Apps Test Engine Power Fx functions"
 description: "Describes Power Fx functions you can use with Power Apps Test Engine."
 author: jt000
 ms.subservice: developer
@@ -11,7 +11,7 @@ contributors:
  - JimDaly
 ---
 
-# Test Engine Power Fx functions
+# Power Apps Test Engine Power Fx functions
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 

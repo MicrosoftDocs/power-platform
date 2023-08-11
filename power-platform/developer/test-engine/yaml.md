@@ -1,5 +1,5 @@
 ---
-title: "Test Engine Yaml format"
+title: "Power Apps Test Engine (preview) Yaml format"
 description: "Describes the Yaml format for test following the same guidelines as Power Fx does."
 author: jt000
 ms.subservice: developer
@@ -10,7 +10,7 @@ ms.topic: article
 contributors:
  - JimDaly
 ---
-# Test Engine Yaml format
+# Power Apps Test Engine (preview) Yaml format
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
