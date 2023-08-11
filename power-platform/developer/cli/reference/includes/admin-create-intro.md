@@ -52,6 +52,8 @@ In this example, we create the same environment described in [Advanced creation 
 }
 ```
 
+Then, refer to the file when using the `pac admin create` command:
+
 ```powershell
 pac admin create --input-file C:\config.json
 ```
