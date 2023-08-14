@@ -2,10 +2,10 @@
 title: "Tutorial: Provision a new environment with an ERP-based template (preview) | Microsoft Docs"
 description: This tutorial will demonstrate how to use the Power Platform to deploy an environment with Finance and Operations apps installed.
 author: laneswenka
-ms.reviewer: laneswenka
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/31/2023
+ms.date: 08/14/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -45,7 +45,7 @@ You also must have at least 1 gigabyte of available Operations and Dataverse dat
 
 Inside of the Power Platform admin center, visit the Environments tab.  From there, click on the **New** button and a slider window will load on the right hand side of the screen.
 
-<img src="media/tutorial-new-environment1.png" width="400px" />
+:::image type="content" source="media/tutorial-new-environment1.png" alt-text="Click the New button to create a new enviroment.":::
 
 Give the new environment a name.  Environment names do not need to be unique in Power Platform unlike in Lifecycle Services.  Choose your deployment region and ensure the environment type is Sandbox.
 
@@ -53,7 +53,7 @@ Thereafter, enable the Dataverse option and click **Next**.
 
 On the next screen, fill out the Dataverse required fields and then select **Enable Dynamics 365 apps** and choose the appropriate template for your license:
 
-<img src="media/new-environment-template.png" width="350px" />
+:::image type="content" source="media/new-environment-template.png" alt-text="Enable the Dynamics 365 apps and select the appropriate template for your license.":::
 
 # [PowerShell](#tab/PowerShell)
 
