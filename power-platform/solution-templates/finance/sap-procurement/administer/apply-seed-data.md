@@ -39,7 +39,7 @@ You need to have _Data_.
 
 You can store and manage menu items in Dataverse and associate them with configured [Dataverse Group Teams](configure-security-groups.md#create-dataverse-group-teams) to control access and visibility to apps and components.
 
-:::image type="content" source="media/apply-seed-data/sap-admin-menu-items.png" alt-text="Manage menu options in Dataverse.":::
+:::image type="content" source="media/apply-seed-data/sap-base-menu-items.png" alt-text="Manage menu options in Dataverse.":::
 
 ### Set up application menus
 
