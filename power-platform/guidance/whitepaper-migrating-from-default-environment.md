@@ -3,22 +3,25 @@ title: Migrate apps and flows from the default environment
 description: Learn how to migrate apps and flows from the default environment.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/31/2023
+ms.date: 08/14/2023
 ms.subservice: guidance
 author: ravi-chada
 ms.author: ravichada
 ms.reviewer: sericks
 ms.custom: bap-template
+contributors:
+- RobStand
 ---
+
 # Migrating apps and flows from the default environment
 
-This document addresses a key need of how organizations and administrators can plan migration of their various assets from default environment.
+This article explains how organizations and administrators can plan migration of their apps and flows from the default environment.
 
 ## Default environment
 
-One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure AD tenant and is named as follows: "{Azure AD tenant name} (default)". Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
+One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD) tenant and is named as follows: **<Azure AD tenant name> (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
 
-In the default environment employees of an organization with a Microsoft 365 license can create apps and cloud flows. The default environment becomes the first playground studio for these employees to start building their apps and flows. Because it isn't possible to remove the environment maker role from the default environment, makers start to build personal productivity apps and flows and share them within their teams for others to benefit. Most organizations often rename the default environment to Personal Productivity.
+In the default environment, employees of an organization with a Microsoft 365 license can create apps and cloud flows. The default environment becomes the first playground studio for these employees to start building their apps and flows. Because it isn't possible to remove the environment maker role from the default environment, makers start to build personal productivity apps and flows and share them within their teams for others to benefit. Most organizations often rename the default environment to Personal Productivity.
 
 Administrators reactively discover that many apps and flows are created in the default environment. It may not be appropriate for the app or flow to be in the default environment in scenarios such as:
 
