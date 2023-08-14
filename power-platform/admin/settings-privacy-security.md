@@ -1,108 +1,84 @@
 ---
-title: "Manage privacy and security settings   | MicrosoftDocs"
-description: View and manage privacy and security settings for Microsoft Dataverse.
-author: Mattp123
+title: Manage privacy and security settings
+description: Learn how to view and manage privacy and security settings for Microsoft Dataverse.
+ms.date: 07/25/2023
+ms.topic: how-to
 ms.component: pa-admin
-ms.topic: conceptual
 ms.subservice: admin
-ms.date: 05/26/2023
+author: Mattp123
 ms.author: matp 
-search.audienceType: 
-  - admin
+search.audienceType: admin
+ms.custom: bap-template
 ---
+
 # Manage privacy and security settings
 
-Use these settings to adjust customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), privacy and security.
+Use these settings to customize the privacy and security of the Dataverse environments that are associated with Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation.
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Privacy + Security**.
+You need to have the System Administrator or System Customizer security role or equivalent permissions to change an environment's privacy and security settings.
 
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
+1. Sign in to the Power Platform admin center.
 
-**Check your security role**
+1. Select **Environments**, and then select an environment.
 
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
+1. Select **Settings** > **Product** > **Privacy + Security**.
 
 ## Settings
 
-> [!div class="mx-tableFixed"]
-> |Settings|Description|  
-> |--------------|-----------------|  
-> |**Privacy preference**|More information: [Set error reporting preferences for the organization](#set-error-reporting-preferences-for-the-organization)|  
-> |Show privacy statement link for this organization|Default: Off. Select to display the privacy statement link.|  
-> |Privacy statement URL|Provide users with a link to your organization's privacy statement. If you show the link, it will be added to the **Settings** menu.| 
-> |**Default action to take when an error occurs**|More information: [Replace the privacy statement for the organization](#replace-the-privacy-statement-for-the-organization) |
-> |Ask the user for permission to send an error report to Microsoft|Default: Not selected. |  
-> |Automatically send an error report to Microsoft without user interaction |Default: Not selected.  |  
-> |Never send an error report to Microsoft|Default: Not selected. |  
-> |**Blocked attachments**| |
-> |Block these file extensions |Prevent upload or download of certain attachment types that are considered dangerous. Separate file extensions with a semicolon.<br /><br />Default extensions: ade; adp; app; asa; ashx; asmx; asp; bas; bat; cdx; cer; chm; class; cmd; com; config; cpl; crt; csh; dll; exe; fxp; hlp; hta; htr; htw; ida; idc; idq; inf; ins; isp; its; jar; js; jse; ksh; lnk; mad; maf; mag; mam; maq; mar; mas; mat; mau; mav; maw; mda; mdb; mde; mdt; mdw; mdz; msc; msh; msh1; msh1xml; msh2; msh2xml; mshxml; msi; msp; mst; ops; pcd; pif; prf; prg; printer; pst; reg; rem; scf; scr; sct; shb; shs; shtm; shtml; soap; stm; tmp; url; vb; vbe; vbs; vsmacros; vss; vst; vsw; ws; wsc; wsf; wsh|
-> |Blocked mime types|Prevent upload of certain attachment mime types that are considered dangerous. Separate mime types with a semicolon. <br/>More information: [Mime type validation](#mime-type-validation)|
-> |Allowed mime types|Allow upload of certain attachment mime types. Separate mime types with a semicolon. <br/>More information: [Mime type validation](#mime-type-validation)|
-> |**Session expiration**|More information: [Security enhancements: User session and access management](user-session-management.md) |  
-> |Set custom session timeout|Default: Off. Select **On** to specify values different from default values.|
-> |Enter maximum session length|After the time you set is reached, users must re-authenticate to customer engagement apps.|  
-> |How long before the session expires do you want to show a timeout warning?|After the time you set is reached, users receive an expiration warning.|  
-> |**Inactivity timeout**|More information: [Inactivity timeout](user-session-management.md#inactivity-timeout) |  
-> |Set inactivity timeout|Default: Off. Enable to automatically sign out a user. |  
-> | **Enable sharing** | Default: Off. Select **On** to allow users to share read-only links to records with other users from this environment. |
-> |**Content security policy**|More information: [Content security policy](content-security-policy.md) |
-> | **IP address settings**   |    |
-> |  Enable IP address based cookie binding  | Default is Off. When enabled, helps prevent session hijacking exploits in Dataverse with IP address-based cookie binding.  More information: [Block cookie replay attacks in Dataverse](block-cookie-replay-attack.md) |
-> | Enable IP address based Storage Shared Access Signature (SAS) rule  | Default is Off. Restricts who, based on IP address, can use enterprise SAS tokens. More information: [SAS IP Binding](security/data-storage.md#sas-ip-binding) |
-> |  Enable IP address based firewall rule  | Default is Off. When enabled, allows you to limit Dataverse access to users by specifying valid IP address ranges. More information: [IP firewall in Power Platform environments](ip-firewall.md)  | 
+| Settings | Description |
+| -------------- | ----------------- |
+| **Privacy preference** | [Set error reporting preferences for the organization](#set-error-reporting-preferences-for-the-organization) |
+| Show privacy statement link for this organization | Default: Off. Select to display the privacy statement link. |
+| Privacy statement URL | Provide users with a link to your organization's privacy statement. If you show the link, it's added to the **Settings** menu. |
+| **Default action to take when an error occurs** | [Replace the privacy statement for the organization](#replace-the-privacy-statement-for-the-organization) |
+| Ask the user for permission to send an error report to Microsoft | Default: Not selected. |
+| Automatically send an error report to Microsoft without user interaction | Default: Not selected. |
+| Never send an error report to Microsoft | Default: Not selected. |
+| **Blocked attachments** |  |
+| Block these file extensions | Prevent upload or download of certain attachment types that are considered dangerous. Separate file extensions with a semicolon.<br/><br/>Default extensions: ade; adp; app; asa; ashx; asmx; asp; bas; bat; cdx; cer; chm; class; cmd; com; config; cpl; crt; csh; dll; exe; fxp; hlp; hta; htr; htw; ida; idc; idq; inf; ins; isp; its; jar; js; jse; ksh; lnk; mad; maf; mag; mam; maq; mar; mas; mat; mau; mav; maw; mda; mdb; mde; mdt; mdw; mdz; msc; msh; msh1; msh1xml; msh2; msh2xml; mshxml; msi; msp; mst; ops; pcd; pif; prf; prg; printer; pst; reg; rem; scf; scr; sct; shb; shs; shtm; shtml; soap; stm; tmp; url; vb; vbe; vbs; vsmacros; vss; vst; vsw; ws; wsc; wsf; wsh |
+| Blocked mime types | Prevent upload of certain attachment MIME types that are considered dangerous. Separate MIME types with a semicolon. If you allow some MIME types, any blocked MIME types are ignored and only the MIME types in the allow list are allowed. |
+| Allowed mime types | Allow upload of certain attachment MIME types. Separate MIME types with a semicolon.<br/>:::image type="content" source="media/mimetypes.png" alt-text="Screenshot of blocked MIME types in Dataverse environment privacy settings.":::<br/>If you allow some MIME types, any blocked MIME types are ignored and only the MIME types in the allow list are allowed. |
+| **Session expiration** | [Security enhancements: User session and access management](user-session-management.md) |
+| Set custom session timeout | Default: Off. Select **On** to specify values different from the default values. |
+| Enter maximum session length | After the time you set is reached, users must reauthenticate to customer engagement apps. |
+| How long before the session expires do you want to show a timeout warning? | After the time you set is reached, users receive an expiration warning. |
+| **Inactivity timeout** | [Inactivity timeout](user-session-management.md#inactivity-timeout) |
+| Set inactivity timeout | Default: Off. Enable to automatically sign out a user. |
+| **Enable sharing** |  Default: Off. Select **On** to allow users to share read-only links to records with other users from this environment. |
+| **Content security policy** | [Content security policy](content-security-policy.md) |
+| **IP address settings** | |
+| Enable IP address based cookie binding | Default: Off. When enabled, helps prevent session hijacking exploits in Dataverse with IP address-based cookie binding. [Block cookie replay attacks in Dataverse](block-cookie-replay-attack.md) |
+| Enable IP address based Storage Shared Access Signature (SAS) rule | Default: Off. Restricts who, based on IP address, can use enterprise SAS tokens. [SAS IP Binding](security/data-storage.md#sas-ip-binding) |
+| Enable IP address based firewall rule | Default: Off. When enabled, allows you to limit Dataverse access to users by specifying valid IP address ranges. [IP firewall in Power Platform environments](ip-firewall.md) |
 
 ## Replace the privacy statement for the organization
 
- By default, the [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] privacy statement is always shown to users with an administrator role only, and not to other (business) users. As an administrator, you can add a link to specify your organization's privacy statement, which is then shown to other users in your organization.  
-  
-1. Go to **Environments** > [select an environment] > **Settings** > **Product** > **Privacy + Security**
-  
-2. Under **Privacy Preferences**, turn on **Show privacy statement link for this organization**.
-  
-3. In the **Privacy statement URL** box, type the link of the webpage you want to show.  
-  
-   > [!div class="mx-imgBorder"] 
-   > ![Replace privacy statement for the organization.](media/privacy-preference-statement75.png "Replace privacy statement for the organization")
-  
-4. Select **Save**.  
-  
-> [!NOTE]
->  Any user with the System Administrator security role will always see the [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] privacy statement and not the organization’s privacy statement.
+ By default, the Microsoft privacy statement is always shown to users who have an administrator role but not to other business users. As an administrator, you can specify a link to your organization's privacy statement, which is then shown to other users in your organization. However, any user who has the System Administrator security role always see the Microsoft privacy statement, not the organization's.
+
+1. Sign in to the Power Platform admin center.
+
+1. Select **Environments**, and then select an environment.
+
+1. Select **Settings** > **Product** > **Privacy + Security**.
+
+1. Under **Privacy Preferences**, turn on **Show privacy statement link for this organization**.
+
+1. In the **Privacy statement URL** box, enter the URL of the page you want to show.
+
+1. Select **Save**.
 
 ## Set error reporting preferences for the organization
 
- When errors occur in the product, data about the problem is sent to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. This data – an error report - allows customer engagement apps to track and address errors relating to [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)]. You can help [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] improve products and services when you allow the system to send these error reports.  
-  
- By default, individual users have a measure of control over whether to send error reports to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. But you, as an administrator, can override their preferences and set up the error reporting preferences for the entire organization.  
-  
-1. Go to **Environments** > [select an environment] > **Settings** > **Product** > **Privacy + Security**
-  
-2. Under **Privacy Preferences**, **Default action to take when an error occurs**, select an action to take. 
-  
-   > [!div class="mx-imgBorder"] 
-   > ![Select error notification preferences for users.](media/privacy-preference-error-notifications75.png "Select error notification preferences for users")
- 
-3. Select **Save**. 
+ When errors occur in the product, it sends data about the problem to Microsoft. This error report allows customer engagement apps to track and address errors relating to Dynamics 365. You can help Microsoft improve products and services when you allow the system to send error reports.
 
-When you use this setting, you can control error reporting for the entire organization by:  
-  
--   Not allowing users to make changes in how error reporting occurs.  
-  
--   Changing the default behavior for how error reporting happens.  
-  
-## Mime type validation
-In addition to validation on the file extension, you can now enable validation on mime types.
+ By default, individual users have a measure of control over whether to send error reports to Microsoft. As an administrator, you can override their preferences and set error reporting preferences for the entire organization. You can prevent users from making changes in how errors are reported and change the default behavior for error reporting,
 
-1. Go to **Environments** > [select an environment] > **Settings** > **Product** > **Privacy + Security**
-  
-2. Under **Privacy Preferences**, set allowed or blocked mime types.
-  
-   > [!div class="mx-imgBorder"] 
-   > ![Allowed or blocked mime types.](media/mimetypes.png "Allowed or blocked mime types")
- 
-3. Select **Save**. 
+1. In the Power Platform admin center, select **Environments**, and then select an environment.
 
-Allowed mime types is useful when there are only a few mime types that you want to allow. When the allowed mime types is set, the blocked mime types are ignored and only the mime types set in the allow list will be allowed.
+1. Select **Settings** > **Product** > **Privacy + Security**.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+1. Under **Privacy Preferences**, select a **Default action to take when an error occurs**.
+
+1. Select **Save**.
+
+[!INCLUDE [footer-include](../includes/footer-banner.md)]
