@@ -19,37 +19,37 @@ This article explains how organizations and administrators can plan migration of
 
 ## Default environment
 
-One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD) tenant and is named as follows: **[Azure AD tenant name] (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
+One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD), part of Microsoft Entra, tenant and is named as follows: **[Azure AD tenant name] (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
 
 In the default environment, employees of an organization with a Microsoft 365 license can create apps and cloud flows. The default environment becomes the first playground studio for these employees to start building their apps and flows. Because it isn't possible to remove the environment maker role from the default environment, makers start to build personal productivity apps and flows and share them within their teams for others to benefit. Most organizations often rename the default environment to Personal Productivity.
 
-Administrators reactively discover that many apps and flows are created in the default environment. It may not be appropriate for the app or flow to be in the default environment in scenarios such as:
+Administrators reactively discover that many apps and flows are created in the default environment. It may not be appropriate for an app or flow to be in the default environment in scenarios, such as:
 
-- An app is shared with many users – production like behavior.
+- An app is shared with many users in production-like behavior.
 - An app uses Excel workbooks with sensitive data.
-- An app based on SharePoint lists is getting many data interactions – inserts, updates.
+- An app based on SharePoint lists is getting many data interactions such as inserts or updates.
 - An app or flow is using connectors that aren't allowed in new Data Loss Prevention (DLP) policies.
-- Custom Connector(s) are enabled and used in the default environment instead of being secured in a dedicated environment.
+- Custom Connectors are enabled and used in the default environment instead of being secured in a dedicated environment.
 
-The above scenarios are worth consideration and provide an indication that you should start moving these apps and flows from the default environment into their own developer environment and/or another shared environment. Other factors that come into play are the limitations associated with the default environment.
+The above scenarios are worth consideration and provide an indication that you should start moving these apps and flows from the default environment into their own developer environment or another shared environment. Other factors that come into play are the limitations associated with the default environment.
 
 Center of Excellence/enablement (CoE) teams that monitor Power Platform are forced to react once the limits are reached, which negatively affects the apps that are running in the default environment. This limitation may be something an administrator or the CoE team need to perform regularly as well. There are three broad stages:
 
 ### Identification of the Power Platform objects
 
-The first step is to identify apps and flows and assets that need to be moved over (or) cleaned-up. The [CoE Starter Kit](/power-platform/guidance/coe/overview) provides an inventory of all the apps and flows, and the Power BI reports also help determine usage. This step helps you evaluate the app usage and should help to label them. As you go through the exercise, be sure to tag apps and flows that should be migrated to another environment. A tag could be based on the connectors used, user location, user department, and so on. This document also outlines a method for recognizing items that should be cleaned or relocated based on Data Loss Prevention (DLP).
+The first step is to identify apps and flows and assets that need to be moved over or cleaned-up. The [CoE Starter Kit](/power-platform/guidance/coe/overview) provides an inventory of all the apps and flows, and the Power BI reports also help determine usage. This step helps you evaluate the app usage and should help to label them. As you go through the exercise, be sure to tag apps and flows that should be migrated to another environment. A tag could be based on the connectors used, user location, user department, and so on. This article also outlines a method for recognizing items that should be cleaned or relocated based on Data Loss Prevention (DLP).
 
 ### Move the Power Platform objects
 
-If the component is tagged to move to a different environment, there are options available to move the app. A move is an interactive process and would need some level of Maker interaction. The level of complexity to move an app or flow increases with the mix of components used to build an app or flow.
+If the component is tagged to move to a different environment, there are options available to move the app. A move is an interactive process and would need some level of maker interaction. The level of complexity to move an app or flow increases with the mix of components used to build an app or flow.
 
-For example, an App with six screens has 10 buttons through multiple screens. Let’s assume that these 10 buttons call an individual flow. There are also a couple of flows that get triggered daily to fix data or integrate data with another system. Let’s also assume that there's some AI Builder image processing model that is used as part of the automation. To move such an app, all components need to be added to a solution, connection references used across be adjusted correctly and tested out before confirming the completion.
+For example, an app with six screens has ten buttons through multiple screens. Let’s assume that these ten buttons call an individual flow. There are also a couple of flows that get triggered daily to fix data or integrate data with another system. Let’s also assume that there's some AI Builder image processing model that is used as part of the automation. To move such an app, all components need to be added to a solution, connection references used across be adjusted correctly, and tested out before confirming the completion.
 
-In another case, assume a Canvas app that uses an Office 365 connection. In this case, the maker just needs to add only the canvas app to the solution.
+In another case, assume that there's a canvas app that uses an Office 365 connection. In this case, the maker just needs to add only the canvas app to the solution.
 
 ### Clean up the Power Platform objects
 
-If a component is tagged for cleanup, then there are two main options. The first option is to just delete it directly and the second option is to delete after taking a backup. In the latter case of backup, there may be some overlap of steps coinciding with moving objects.
+If a component is tagged for cleanup, then there are two, main options. The first option is to delete it directly and the second option is to delete it after taking a backup. In the latter case of backup, there may be some overlap of steps coinciding with moving objects.
 
 As an example, CoE Team administrators find that most of the makers created test apps and flows to learn and abandoned them, which can be confirmed by looking at the usage metrics. Another way is to quarantine the app and if no one approaches then you can delete such apps as well.
 
