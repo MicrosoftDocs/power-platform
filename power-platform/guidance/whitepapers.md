@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: sericks
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 08/14/2023
 ---
 # Whitepapers for Power Platform
 
