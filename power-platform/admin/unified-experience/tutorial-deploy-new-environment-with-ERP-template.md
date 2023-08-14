@@ -14,7 +14,7 @@ search.audienceType:
 
 # Tutorial: Provision a new environment with an ERP-based template (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Finance and operations apps have been re-imagined as an application hosted by Microsoft Dataverse.  No longer do customers need to deploy their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications.  Additionally, most administrative actions in Power Platform are available via UI and API based experience.
 
@@ -26,8 +26,7 @@ In this tutorial, you'll learn how to:
 
 As an example of this scenario, a customer who operates their finance and operations apps environments via Lifecycle Services (LCS) portal today would like to try deploying one of the newer developer-focused sandboxes in Power Platform admin center.  
 
-> [!IMPORTANT]
-> Unified admin experiences for finance and operations apps are in preview.  Portions of this tutorial may change in the future.
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Environment deployment
 
