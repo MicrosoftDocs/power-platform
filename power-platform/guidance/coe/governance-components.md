@@ -12,6 +12,10 @@ search.audienceType:
   - admin
 ---
 
+<!-- check deprecated in line 74. -->
+
+
+
 # Use governance components
 
 After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage.
@@ -76,7 +80,7 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
-#### Compliance Status
+#### Compliance status
 
 The Developer Compliance Center allows makers to check the compliance status and submit more details for the following resources:
 
@@ -88,6 +92,10 @@ The Developer Compliance Center allows makers to check the compliance status and
 - Desktop Flows
 - Solutions
 - Environments
+
+
+
+
 
 Based on the resource, makers can filter their resources to the following compliance status:
 
