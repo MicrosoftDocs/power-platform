@@ -93,15 +93,11 @@ The Developer Compliance Center allows makers to check the compliance status and
 - Solutions
 - Environments
 
-
-
-
-
 Based on the resource, makers can filter their resources to the following compliance status:
 
 - **Missing Details** indicates that the compliance process or an admin has requested more details to be submitted to bring the resource back into compliance.
 - **Flagged as inactive** indicates that the resource has been marked as inactive.
-- **Non-compliant** indicates that the resource is currently non compliant with existing DLP or billing policies, often this means that the resource can't be used until the problem is resolved.
+- **Non-compliant** indicates that the resource is currently noncompliant with existing DLP or billing policies; often this means that the resource can't be used until the problem is resolved.
 - **Re-publish needed** (for canvas apps only) indicates that the app hasn't been published in the past 60 days.
 - **Missing description** indicates that the resource needs a description populated to help the admin understand what the resource is used for.
 
@@ -120,9 +116,9 @@ For **Missing Details**, makers can achieve compliance by providing additional i
 
 :::image type="content" source="media/coe57.png" alt-text="Developer Compliance Center app details":::
 
-### Business process flows
+### Business process flows 
 
-#### Power Apps App Approval BPF
+#### Power Apps App Approval business process flow
 
 This process helps the admin audit the app approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
@@ -139,7 +135,7 @@ This process helps the admin audit the app approval process by providing a visua
    :::column-end:::
 :::row-end:::
 
-#### Flow Approval BPF
+#### Flow Approval business process flow
 
 This process helps the admin audit the flow approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
@@ -156,7 +152,7 @@ This process helps the admin audit the flow approval process by providing a visu
    :::column-end:::
 :::row-end:::
 
-#### Custom Connector Approval BPF
+#### Custom Connector Approval business process flow
 
 This process helps the admin audit the custom connector approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
@@ -173,7 +169,7 @@ This process helps the admin audit the custom connector approval process by prov
    :::column-end:::
 :::row-end:::
 
-#### Chatbot Approval BPF
+#### Chatbot Approval business process flow
 
 This process helps the admin audit the chatbot approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
@@ -213,6 +209,9 @@ All business process flows are disabled by default. To enable them, do the follo
 #### Inactivity notifications approval
 
 Represents inactivity notifications approval tasks started during the Admin | Inactivity notifications v2 flows.
+
+
+
 
 ### Flows
 
