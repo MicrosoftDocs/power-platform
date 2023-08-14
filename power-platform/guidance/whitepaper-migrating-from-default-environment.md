@@ -19,7 +19,7 @@ This article explains how organizations and administrators can plan migration of
 
 ## Default environment
 
-One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD) tenant and is named as follows: **<Azure AD tenant name> (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
+One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD) tenant and is named as follows: **[Azure AD tenant name] (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
 
 In the default environment, employees of an organization with a Microsoft 365 license can create apps and cloud flows. The default environment becomes the first playground studio for these employees to start building their apps and flows. Because it isn't possible to remove the environment maker role from the default environment, makers start to build personal productivity apps and flows and share them within their teams for others to benefit. Most organizations often rename the default environment to Personal Productivity.
 
