@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 06/20/2023
+ms.date: 08/14/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
 ---
@@ -140,7 +140,7 @@ Not currently. However, intentional extension hooks are available to customize p
 
 ### Where can I view and run pipelines?
 
-Navigate to an unmanaged solution within development a environment associated with your pipeline. Pipelines can't be viewed or run from the default solution, managed solutions, or in target environments. Notice you can also retrieve and run pipelines from the Power Platform CLI.
+Navigate to an unmanaged solution in development to an environment associated with your pipeline. Pipelines can't be viewed or run from the default solution, managed solutions, or in target environments. Notice you can also retrieve and run pipelines from the Power Platform CLI.
 
 ### Can I deploy across regions?
 
@@ -189,7 +189,7 @@ While there are many additional functional differences, the fundamental differen
 We encourage customers to use pipelines for core deployment functionality, and when needed, extend pipelines to integrate with other CI/CD tools. When used together, the workloads required within CI/CD tools often become less complicated and costly to maintain. 
 
 ### Can I use impersonation to deploy on behalf of another user?
-This is not supported.
+This isn't supported.
 
 ## Next steps
 
