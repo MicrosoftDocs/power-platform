@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 08/04/2023
+ms.date: 08/14/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -191,3 +191,12 @@ The table provides vendor screen to function module field mappings.
 | BAPIADTEL  | EXTENSION  | Extension |
 | BAPIADTEL  | STD_NO     | Default   |
 | BAPIADTEL  | CONSNUMBER | ID        |
+
+## See also
+
+[SAP Vendor Management app](vendor-management.md)
+[SAP Requisition Management app](requisition-management.md)
+[SAP Purchase Order Management app](purchase-order-management.md)
+[SAP Goods Receipt Management app](goods-receipt-management.md)
+[SAP Vendor Invoice Management app](vendor-invoice-management.md)
+[SAP Vendor Payment management app](payment-management.md)

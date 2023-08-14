@@ -12,7 +12,7 @@ contributors:
 - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 08/04/2023
+ms.date: 08/14/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -28,9 +28,13 @@ The SAP Goods Receipt Management app is part of the SAP Procurement solution. It
 
 You have three options for viewing a goods receipt:
 
+- Enter a known goods receipt number.
 - Select a recent goods receipt that you have interacted with.
 - Search for a goods receipt based on vendor, purchase order, and date range.
-- Enter a known goods receipt number.
+
+### Enter a goods receipt
+
+If you know the goods receipt number of the material document you want to view, you can type it in the _Search goods receipt number_ field.
 
 ### Select a goods receipt
 
@@ -45,10 +49,6 @@ The goods receipt search screen allows you to search by any individual field or 
 1. Enter your selection criteria.
 1. Select **Search** to display your results.
 1. Select the _goods receipt_ you want to display on the overview screen.
-
-### Enter a goods receipt
-
-If you know the goods receipt number of the material document you want to view, you can type it in the _Search goods receipt number_ field.
 
 ## Create a goods receipt
 
@@ -84,3 +84,11 @@ The table provides requisition screen to function module field mappings.
 | Line (Default)   | Movement Type | GOODSMVT_ITEM    | MOVE_TYPE | '101' |
 | Line (Default)   | Movement Indicator | GOODSMVT_ITEM    | MVT_IND | 'B' |
 | Header (Default) | Goods Movement Code           | GOODSMVT_CODE    | GM_CODE    | 01            |
+
+## See also
+
+[SAP Vendor Management app](vendor-management.md)
+[SAP Requisition Management app](requisition-management.md)
+[SAP Purchase Order Management app](purchase-order-management.md)
+[SAP Vendor Invoice Management app](vendor-invoice-management.md)
+[SAP Vendor Payment management app](payment-management.md)

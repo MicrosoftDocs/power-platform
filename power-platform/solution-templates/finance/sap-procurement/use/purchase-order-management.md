@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 08/04/2023
+ms.date: 08/14/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -30,19 +30,19 @@ See how you can manage your SAP PO data using the SAP Purchase Order Management 
 
 You have three options for viewing a purchase order:
 
-- Select a recent PO that you have interacted with.
 - Enter a known PO order number.
+- Select a recent PO that you have interacted with.
 - Search for a purchase order based on vendor and date range.
 
 :::image type="content" source="media/purchase-order-management/sap-procure-po-ed.png" alt-text="Image of the Power Platform Procurement purchase order app.":::
 
-### Select a recent purchase order
-
-You can select a recently viewed PO from the _Select recent purchase order_ drop-down list. Choose a _purchase order_ from the list to load onto your screen.
-
 ### Enter a purchase order number
 
 If you know the purchase order number, you can enter it in the _Search purchase order number_ field.
+
+### Select a recent purchase order
+
+You can select a recently viewed PO from the _Select recent purchase order_ drop-down list. Choose a _purchase order_ from the list to load onto your screen.
 
 ### Search for a purchase order
 
@@ -181,3 +181,11 @@ Field mappings from purchase order screen to the function module.
 | Schedule Line (Default) | Schedule Line           | POSCHEDULE    | SCHED_LINE    | NB            |
 | Condition (Default)             | Condition Type                    | POCOND    | COND_TYPE  | PBXX               |
 | Condition (Default)             | Condition Type                    | POCOND    | CHANGE_ID | U               |
+
+## See also
+
+[SAP Vendor Management app](vendor-management.md)
+[SAP Requisition Management app](requisition-management.md)
+[SAP Goods Receipt Management app](goods-receipt-management.md)
+[SAP Vendor Invoice Management app](vendor-invoice-management.md)
+[SAP Vendor Payment management app](payment-management.md)
