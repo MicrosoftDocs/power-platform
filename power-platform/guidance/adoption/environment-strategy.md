@@ -100,7 +100,7 @@ Some considerations for custom environments:
 
 In addition to the above recommendations, establishing your environment strategy will also shape and direct your **[DLP strategy](dlp-strategy.md)**.
 
-| &nbsp;  | &nbsp; |
+| &nbsp; | &nbsp; |
 |---|---|
 | Everyone is a maker. Communicate with everyone that **Default** isn't for development of critical apps | ![Default environment.](media/env-default.png "Default environment") |
 | Only one user has access. **Developer** environments are completely locked for any other user except the user who subscribed to the community plan. Applications can be moved out of the environment if needed.| ![Developer environment.](media/env-dev.png "Default Developer") |  |
