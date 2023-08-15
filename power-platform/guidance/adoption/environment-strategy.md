@@ -100,17 +100,11 @@ Some considerations for custom environments:
 
 In addition to the above recommendations, establishing your environment strategy will also shape and direct your **[DLP strategy](dlp-strategy.md)**.
 
-| &nbsp; | &nbsp; |
-|---|---|
-| Everyone is a maker. Communicate with everyone that **Default** isn't for development of critical apps | ![Default environment.](media/env-default.png "Default environment") |
-| Only one user has access. **Developer** environments are completely locked for any other user except the user who subscribed to the community plan. Applications can be moved out of the environment if needed.| ![Developer environment.](media/env-dev.png "Default Developer") |  |
-| Approved users have access. **Shared** environments for user and team productivity scenarios, with an approved maker list. | ![Power User and Power Dev environment.](media/env-power.png "Power User and Power Dev Developer") |
-| **Dedicated** environments for critical projects and workloads. Developers have environment maker access in the development environment, but only user access in the test and production environments. End users only have end user access to the production solution so no one can modify the production applications. | ![Critical Project Development, Test and Production environments.](media/env-critical.png "Critical Project Development, Test and Production environments") |
-| **Shared** test and production environments for important but medium complex apps. Individual projects and business units have their own development environment to protect data, but solutions are deployed to shared test and production environments. Developers are end users in the test environment, and end users only have basic user access to solutions and data in the production environment. | ![Business Unit and Project Development environments, with shared test and production environments.](media/env-important.png "Business Unit and Project Development environments, with shared test and production environments") |
-
-&#9679; Critical Project<br>
-&#9679; Important Project<br>
-&#9679; User and team productivity<br>
+- Everyone is a maker. Communicate with everyone that **Default** isn't for development of critical apps. 
+- Only one user has access. **Developer** environments are completely locked for any other user except the user who subscribed to the community plan. Applications can be moved out of the environment if needed.
+- Approved users have access. **Shared** environments for user and team productivity scenarios, with an approved maker list. 
+- **Dedicated** environments for critical projects and workloads. Developers have environment maker access in the development environment, but only user access in the test and production environments. End users only have end user access to the production solution so no one can modify the production applications. 
+- **Shared** test and production environments for important but medium complex apps. Individual projects and business units have their own development environment to protect data, but solutions are deployed to shared test and production environments. Developers are end users in the test environment, and end users only have basic user access to solutions and data in the production environment.
 
 ### Additional recommendations to manage environments
 
