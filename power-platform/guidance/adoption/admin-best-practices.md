@@ -52,9 +52,9 @@ In this section, we'll explore some best practices to follow when establishing a
 
 ## Related resources
 
-[Microsoft Power Platform admin guide](../../admin/admin-documentation.md)<Br>
-[Microsoft Power Apps and Power Automate Admin Whitepaper](https://aka.ms/powerappsadminwhitepaper)
-[Default environment routing](../../admin/default-environment-routing.md)
+- [Microsoft Power Platform admin guide](../../admin/admin-documentation.md)
+- [Microsoft Power Apps and Power Automate Admin Whitepaper](https://aka.ms/powerappsadminwhitepaper)
+- [Default environment routing](../../admin/default-environment-routing.md)
 
 
 
