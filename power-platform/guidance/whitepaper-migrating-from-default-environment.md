@@ -156,27 +156,27 @@ Migration pages involve exporting the existing configuration from the source Mic
 
 ### SharePoint Form app – special case for default environment
 
-[SharePoint form apps](/power-apps/maker/canvas-apps/sharepoint-form-integration) can be associated with only one environment, and if not configured otherwise, are in the default environment. A migration of all apps requires setting the destination to be a different environment instead of the default environment. Existing custom forms don't automatically migrate to the newly designated environment. Only production environments may be designated for SharePoint custom forms. The manual process follows like moving a canvas app.
+[SharePoint form apps](/power-apps/maker/canvas-apps/sharepoint-form-integration) can be associated with only one environment, and if not configured otherwise, are in the default environment. A migration of all apps requires setting the destination to be a different environment instead of the default environment. Existing custom forms don't automatically migrate to the newly designated environment. Only production environments may be designated for SharePoint custom forms. The manual process follows, like moving a canvas app.
 
 ## Backing up Microsoft Power Platform objects
 
-Most Microsoft Power Platform objects are exported as zip files if not they have at least a file format. These files in their original format as a zip file or whatever extension they come with can be added to any file storage location or a repository of your choice. A few options to mention are Azure DevOps, GitHub, SharePoint, One Drive or any other solution that supports all file formats.
+Most Microsoft Power Platform objects are exported as zip files. If not, they have at least one file format. These files in their original format, as a zip file or whatever extension they come with, can be added to any file storage location or a repository of your choice. A few options to mention are Azure DevOps, GitHub, SharePoint, One Drive, or any other solution that supports all file formats.
 
 ## Mass migration options
 
 The migration of an app or flow is successful if it functions the same way as it did before. However, there are certain elements that can't be transferred:
 
-- Flow Run data about the past runs of the flow. The data about flow runs is only stored for 28 days. If you need the data, then it can be exported and stored by either using the CoE Starter Kit or if you have [set up export to data lake](/power-platform/admin/self-service-analytics-schema-definition). The latest version of the CoE Starter Kit has the flow run data if used with Data Export.
-- Versions of the Canvas app. As makers iterate through the development process, there may be multiple versions created. The prior versions can't migrate, only the latest version can be.
-- Data accessed by the app or flow, using connectors, aren't included in the migration. Only app metadata is included as part of export.
+- **Flow run data about the past runs of the flow** - The data about flow runs is only stored for 28 days. If you need the data, then it can be exported and stored by either using the CoE Starter Kit or if you have [set up export to data lake](/power-platform/admin/self-service-analytics-schema-definition). The latest version of the CoE Starter Kit has the flow run data if used with Data Export.
+- **Versions of the canvas app** - As makers iterate through the development process, there may be multiple versions created. The prior versions can't be migrated. Only the latest version can be migrated.
+- **Data accessed by the app or flow or by using connectors** - Only app metadata is included as part of export.
 
 Any collaboration comments made in the app or flow are also not included.
 
-This document outlines some possibilities. It's important to carefully consider the implications and advantages of each possibility before deciding.
+This article outlines some possibilities. It's important to carefully consider the implications and advantages of each possibility before deciding.
 
-### Migrate all – DB backup and restore option
+### Migrate all – database backup and restore option
 
-Similar to most environment types, the default environment is backed up as well. These system backups are performed automatically. There's no on-demand option for the default environment, so it requires a support request. The backup can be restored into a new environment keeping all the data within Dataverse. This option is only to show the reader about its existence and educate the reader on when to consider. It shouldn't be pursued as the primary choice, as it would only yield partial migration.
+Similar to most environment types, the default environment is backed up, as well. These system backups are performed automatically. There's no on-demand option for the default environment, so it requires a support request. The backup can be restored into a new environment keeping all the data within Dataverse. This option is only to show the reader about its existence and educate the reader on when to consider. It shouldn't be pursued as the primary choice, as it would only yield partial migration.
 
 | **Supported** | **Not fully supported** |
 |---|---|
