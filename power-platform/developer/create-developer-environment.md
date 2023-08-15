@@ -15,7 +15,7 @@ contributors:
 ---
 # Create a developer environment with the Power Apps Developer Plan
 
-To fully use the [Power Apps Develper Plan](plan.md) as a developer, you'll need an Azure account and a work account. This article will guide you through the process for creating a Power Platform environment and a test tenant if needed.
+To fully use the [Power Apps Developer Plan](plan.md) as a developer, you'll need an Azure account and a work account. This article will guide you through the process for creating a Power Platform environment and a test tenant if needed.
 
 ## Where do I start?
 

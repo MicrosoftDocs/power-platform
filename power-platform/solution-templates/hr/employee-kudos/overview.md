@@ -16,8 +16,8 @@ Employees can recognize others for attributes or actions they are grateful for b
 
 The Kudos AppSource package consists of two solutions:
 
-- **Employee Experience base solution**: Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-- **Kudos solution**: Contains all the components needed to enable the Kudos experience within a company.
+- **Employee Experience Base**: Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+- **Kudos**: Contains all the components needed to enable the Kudos experience within a company.
 
 You can access the solution templates on AppSource at: <https://aka.ms/AccessEmployeeKudosTemplate>
 
@@ -25,9 +25,10 @@ You can access the solution templates on AppSource at: <https://aka.ms/AccessEmp
 
 ## Employee Experience base solution technical components
 
-- **One model-driven app**: _Employee Experience Localization Admin App_ lets an admin see and edit localized string values.
+- **One model-driven app**:
+  - Employee Experience Localization Admin: lets an admin see and edit localized string values.
 - **One table**:
-  - Employee Experience localization: Records the app string replacements for every language into which the app is localized.
+  - Employee Experience Localization: Records the app string replacements for every language into which the app is localized.
 - **Two security roles**:
   - Employee Experience Localization Reader: Provides read access to the table.
   - Employee Experience Localizer: Provides create, read, update, and delete access to the table.
@@ -36,8 +37,10 @@ You can access the solution templates on AppSource at: <https://aka.ms/AccessEmp
 
 ## Kudos solution technical components
 
-- **One canvas app**: _Kudos App_, where the users can send Kudos and review their sent and received Kudos.
-- **One model-driven app**: _Kudos Administration App_ where an admin can see all Kudos, create or edit badges, and add or remove users from the _Opt Out User list_.
+- **One canvas app**:
+  - Kudos app: where the users send Kudos and review their sent and received Kudos.
+- **One model-driven app**:
+  - Kudos Administration app: where an admin can see all Kudos, create or edit badges, and add or remove users from the _Opt Out User list_.
 - **Three tables**:
   - Kudos: Stores the Kudos given.
   - Badges: Defines the Kudos types that are available in the experience.
@@ -63,4 +66,3 @@ You can access the solution templates on AppSource at: <https://aka.ms/AccessEmp
 ## See also
 
 [Get started using the Employee Kudos app](use.md)
-

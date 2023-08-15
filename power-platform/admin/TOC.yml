@@ -212,7 +212,7 @@
                       href: settings-features.md
                     - name: Enable languages
                       href: enable-languages.md
-                    - name: Privacy preferences
+                    - name: Manage privacy and security settings
                       href: settings-privacy-security.md
                     - name: Configure Dataverse search
                       href: configure-relevance-search-organization.md
@@ -454,9 +454,9 @@
                   href: block-forwarded-email-from-power-automate.md
                 - name: Block cookie replay attacks
                   href: block-cookie-replay-attack.md
-                - name: IP firewall (preview)
+                - name: Configure IP firewall (preview)
                   href: ip-firewall.md
-                - name: Continuous access evaluation integration (preview)
+                - name: Continuous access evaluation (preview)
                   href: continuous-access-evaluation.md
                 - name: Configure environment security
                   items:
@@ -604,7 +604,7 @@
                   href: analytics-ui-flow.md
             - name: Reports
               items:
-                - name: Tenant-level analytics (preview)
+                - name: Tenant-level analytics
                   href: tenant-level-analytics.md
                 - name: Power Apps analytics
                   href: powerapps-analytics-reports.md
@@ -702,6 +702,8 @@
                   href: programmability-tutorial-create-daily-capacity-report.md
                 - name: "Install an application to a target environment (preview)"
                   href: programmability-tutorial-install-application-environment.md
+                - name: "Tutorial: Allocate add-ons to environments (preview)"
+                  href: programmability-tutorial-allocate-capacity-addons.md
             - name: PowerShell
               items:
                 - name: Getting started

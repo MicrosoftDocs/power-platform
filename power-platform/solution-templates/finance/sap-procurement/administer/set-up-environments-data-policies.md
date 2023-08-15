@@ -55,7 +55,7 @@ More information: [Security and governance considerations](/power-platform/admin
 
 [Environments](/power-platform/admin/environments-overview) serve as containers to separate applications that might have different roles, security requirements, stages of deployment, or target audiences.
 
-Installing, configuring, testing, and running [solutions](/power-apps/maker/data-platform/solutions-overview) on Power Platform requires [application lifecycle management](/power-platform/alm/overview-alm). This three-environment strategy supports ALM:
+Installing, configuring, testing, and running [solutions](/power-apps/maker/data-platform/solutions-overview) on Power Platform requires [application lifecycle management](/power-platform/alm/overview-alm). A three-environment strategy supports ALM:
 
 - **Development**: The development sandbox environment is where the SAP Procurement solution template should first be installed and copied so it can be extended to meet your business requirements. This environment is connected to an SAP developer environment.
 - **Test**: The test sandbox environment is where configurations layered on top of the SAP Procurement solutions should be staged and validated by technical and business experts. This environment is connected to an SAP test environment.
