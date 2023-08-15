@@ -39,21 +39,24 @@ When you install the SAP Procurement solution template, you'll be prompted to en
 
 Once set up, the environment variables can be edited as you build your own solutions in the development environment.
 
-More information: [Customizing solutions](customize-solutions.md).
+The table lists, describes, and provides the available default value for the five environment variables that you need to set the SAP connection parameters.
 
 | Syntax | Description | Default Value |
 | ----------- | ----------- | ----------- |
 | SAP Application Server | JSON string that contains system parameters, host, system number, client, and more. Refer to the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance).  |  |
-| SAP Client ID | The SAP client ID to connect to the SAP system. The SAP backends' client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999. Used separately in IDoc transactions. |  |
+| SAP Client ID | The SAP client ID identifies your connection to the SAP system. The SAP backend client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999. Used separately in IDoc transactions. |  |
 | SAP Count of Rows To Read | Sets the maximum number of records to be returned on any search query and helps to alleviate performance concerns.  | 1000 |
 | SAP SPRAS | There are times when you will need to specify a language on specific transactions, such as _ReadMaterial_. We have created an environmental variable called SAP SPRAS that allows you to easily control the value in one place according to your localization requirements. |  |
-| SAP System ID | The SAP system's three-letter system ID (Mandatory if connection type Message Server and message server service isn't present). Used separately in IDoc transactions. |  |
+| SAP System ID | The SAP system's three-letter system ID (Mandatory if connection type is _Message Server_ and a message server service isn't present). Used separately in IDoc transactions. | |
 
-More information: [Create an environment variable in a solution](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution) using the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance) or for any local environment variable need.
+More information:
+
+- [Customizing solutions](customize-solutions.md)
+- [Create an environment variable in a solution](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution) using the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance) or for any local environment variable need.
 
 ## Reuse the environment variable in a flow
 
-Environment variables are available in a flow's dynamic content selector. Go into an SAP Procurement solution template cloud flow to select the environment variables to reuse in [SAP actions](/connectors/sap/#actions).
+The environment variables you set up are now available in a flow's dynamic content selector. Go into an SAP Procurement solution template cloud flow to select the environment variables to reuse in [SAP actions](/connectors/sap/#actions).
 
 > [!IMPORTANT]
 >
