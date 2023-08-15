@@ -87,7 +87,6 @@ Used to define settings for the tests in the test plan.
 | `browserConfigurations` | Yes | A list of browser configurations to be tested. At least one browser must be specified. |
 | `recordVideo` | No | Default is false. If set to true, a video recording of the test is captured. |
 | `headless` | No | Default is true. If set to false, the browser shows up during test execution. |
-| `enablePowerFxOverlay` | No | Default is false. If set to true, an overlay with the currently running Power FX command is placed on the screen. |
 | `timeout` | No |Timeout value in milliseconds. Default is 30,000 milliseconds (30s). If any operation takes longer than the timeout limit, it ends the test in a failure. |
 | `filePath` | No |  The file path to a separate yaml file with all the test settings. If provided, it will **override** all the test settings in the test plan. |
 
