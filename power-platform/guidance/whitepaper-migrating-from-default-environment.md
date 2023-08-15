@@ -3,7 +3,7 @@ title: Migrate apps and flows from the default environment
 description: Learn how to migrate apps and flows from the default environment.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/14/2023
+ms.date: 08/15/2023
 ms.subservice: guidance
 author: ravi-chada
 ms.author: ravichada
@@ -21,42 +21,46 @@ This article explains how organizations and administrators can plan migration of
 
 One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD), part of Microsoft Entra, tenant and is named as follows: **[Azure AD tenant name] (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
 
-In the default environment, employees of an organization with a Microsoft 365 license can create apps and cloud flows. The default environment becomes the first playground studio for these employees to start building their apps and flows. Because it isn't possible to remove the environment maker role from the default environment, makers start to build personal productivity apps and flows and share them within their teams for others to benefit. Most organizations often rename the default environment to Personal Productivity.
+In the default environment, employees of an organization with a Microsoft 365 license can create apps and cloud flows. The default environment becomes the first playground studio for these employees to start building their apps and flows. Because it isn't possible to remove the environment maker role from the default environment, makers start to build personal productivity apps and flows and share them within their teams for others to benefit. Most organizations often rename the default environment to **Personal Productivity**.
 
 Administrators reactively discover that many apps and flows are created in the default environment. It may not be appropriate for an app or flow to be in the default environment in scenarios, such as:
 
 - An app is shared with many users in production-like behavior.
 - An app uses Excel workbooks with sensitive data.
-- An app based on SharePoint lists is getting many data interactions such as inserts or updates.
-- An app or flow is using connectors that aren't allowed in new Data Loss Prevention (DLP) policies.
-- Custom Connectors are enabled and used in the default environment instead of being secured in a dedicated environment.
+- An app, based on SharePoint lists, is getting many data interactions such as inserts or updates.
+- An app or flow is using connectors that aren't allowed in new data loss prevention (DLP) policies.
+- Custom connectors are enabled and used in the default environment, instead of being secured in a dedicated environment.
 
-The above scenarios are worth consideration and provide an indication that you should start moving these apps and flows from the default environment into their own developer environment or another shared environment. Other factors that come into play are the limitations associated with the default environment.
+The above scenarios are worth consideration and provide an indication that you should start moving these apps and flows from the default environment into their own, developer environment or another shared environment. Other factors that come into play are the limitations associated with the default environment.
 
-Center of Excellence/enablement (CoE) teams that monitor Power Platform are forced to react once the limits are reached, which negatively affects the apps that are running in the default environment. This limitation may be something an administrator or the CoE team need to perform regularly as well. There are three broad stages:
+Center of Excellence (CoE) teams that monitor Power Platform are forced to react once the limits are reached, which negatively affects the apps that are running in the default environment. This limitation may be something an administrator or the CoE team need to perform regularly, as well. There are three broad stages:
+
+- Identification of the Power Platform objects
+- Move the Power Platform objects
+- Clean up the Power Platform objects
 
 ### Identification of the Power Platform objects
 
-The first step is to identify apps and flows and assets that need to be moved over or cleaned-up. The [CoE Starter Kit](/power-platform/guidance/coe/overview) provides an inventory of all the apps and flows, and the Power BI reports also help determine usage. This step helps you evaluate the app usage and should help to label them. As you go through the exercise, be sure to tag apps and flows that should be migrated to another environment. A tag could be based on the connectors used, user location, user department, and so on. This article also outlines a method for recognizing items that should be cleaned or relocated based on Data Loss Prevention (DLP).
+The first step is to identify apps and flows and assets that need to be moved over or cleaned-up. The [CoE Starter Kit](/power-platform/guidance/coe/overview) provides an inventory of all the apps and flows, and the Power BI reports help determine usage. This step helps you evaluate the app usage and should help to label them. As you go through the exercise, be sure to tag apps and flows that should be migrated to another environment. A tag could be based on the connectors used, user location, user department, and so on. This article also outlines a method for recognizing items that should be cleaned or relocated based on data loss prevention (DLP) practices.
 
 ### Move the Power Platform objects
 
-If the component is tagged to move to a different environment, there are options available to move the app. A move is an interactive process and would need some level of maker interaction. The level of complexity to move an app or flow increases with the mix of components used to build an app or flow.
+If the component is tagged to move to a different environment, there are options available to move the app. A move is an interactive process and needs some level of maker interaction. The level of complexity to move an app or flow increases with the mix of components used to build the app or flow.
 
-For example, an app with six screens has ten buttons through multiple screens. Let’s assume that these ten buttons call an individual flow. There are also a couple of flows that get triggered daily to fix data or integrate data with another system. Let’s also assume that there's some AI Builder image processing model that is used as part of the automation. To move such an app, all components need to be added to a solution, connection references used across be adjusted correctly, and tested out before confirming the completion.
+For example, an app with six screens has ten buttons through multiple screens. Let’s assume that these ten buttons each call an individual flow. There are also a couple of flows that get triggered daily to fix data or integrate data with another system. Let’s also assume that there is an AI Builder image processing model that's used as part of the automation. To move such an app, all components must be added to a solution and connection references must be adjusted correctly and tested out before confirming the completion.
 
 In another case, assume that there's a canvas app that uses an Office 365 connection. In this case, the maker just needs to add only the canvas app to the solution.
 
 ### Clean up the Power Platform objects
 
-If a component is tagged for cleanup, then there are two, main options. The first option is to delete it directly and the second option is to delete it after taking a backup. In the latter case of backup, there may be some overlap of steps coinciding with moving objects.
+If a component is tagged for clean-up, then there are two, main options. The first option is to delete it directly and the second option is to delete it after taking a backup. In the latter case of backup, there may be some overlap of steps coinciding with moving objects.
 
-As an example, CoE Team administrators find that most of the makers created test apps and flows to learn and abandoned them, which can be confirmed by looking at the usage metrics. Another way is to quarantine the app and if no one approaches then you can delete such apps as well.
+As an example, CoE Team administrators find that most makers create test apps and flows for learning purposes. The makers then abandon the apps and flows, which can be confirmed by looking at the usage metrics. Another way is to quarantine an app. If no one approaches you about the app, the app can be deleted, as well.
 
 Maintaining a communication strategy plays a key role. Admins should plan to communicate:
 
-- Establishing connections that makers need to permit as they launch the app in the new environment
-- The new URL of the app from the target environment
+- Establishing connections that makers need to permit as they launch the app in the new environment.
+- The new URL of the app from the target environment.
 - Navigating to the right environment.
 
 Some of these solutions for relocating objects are ready-made and may require a standalone Power Apps and Power Automate license that provide users the ability to create and run apps across data sources that extend beyond Microsoft 365.
@@ -67,9 +71,9 @@ The entire process of identifying and moving apps and flows from the default env
 
 ### DLP strategy
 
-Data loss prevention (DLP) policies function as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. DLP policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. It's recommended to have at least one policy.
+Data loss prevention (DLP) policies function as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. DLP policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. We recommended that you have, at least, one policy.
 
-Effectively, your environment strategy is defined through DLP and that provides a destination for the apps and flows developed in default environment.
+Effectively, your environment strategy is defined through DLP and that provides a destination for the apps and flows developed in the default environment.
 
 ### Environment strategy
 
@@ -89,21 +93,21 @@ You should have well-established departments that can self-sustain and have exis
 
 ### Communication strategy
 
-As part of the migration and/or clean-up effort, make sure the process is smooth to the makers, stakeholders, and leadership. Develop a strategy on how best to communicate and at what points you need to communicate, that provides consistency in objective and helps with communication for all involved. Some options to consider include:
+As part of the migration and clean-up effort, make sure the process is smooth to the makers, stakeholders, and leadership. Develop a strategy on how best to communicate and at what points you need to communicate, that provides consistency in your objectives and helps with communication for all involved. Some options to consider include:
 
 - Use the CoE Starter Kit as an asset tracker.
 - Add custom cloud flows to send notifications at various stages.
-- Create template emails that get sent out to communicate with the maker(s).
+- Create template emails that get sent out to communicate with makers.
 
-Things to keep in mind are.
+Things to keep in mind include:
 
 - Change in URL of the app. Users of the app need to update any bookmarks to an app in the default environment.
 - If there's a URL-based HTTP trigger flow, that must be updated in dependent flows to ensure it still acts as a webhook.
-- Provide detailed steps to establish connections once the move is complete for both makers and app users. The user shouldn't be worried about creating a connection when they launch the app for the first time from the new environment.
+- Provide detailed steps to establish connections once the move is complete for both makers and app users. Users shouldn't be worried about creating a connection when they launch the app for the first time from the new environment.
 
-A good start for setting up communications requires a self-serve model to scale and be more real time for users than just leaving it for a single user’s email or a distribution list. If you plan to establish a SharePoint site, there's a template available that you could use, create an internal Microsoft Power Platform hub. The hub becomes the common place to learn about strategy and guidance so makers get to make right decisions for what they intend to build and where they should go for it.
+A good start for setting up communications requires a self-serve model to scale and be more real-time for users than just leaving it for a single user’s email or a distribution list. If you plan to establish a SharePoint site, there's a template available that you can use to create an internal, Microsoft Power Platform hub. The hub becomes the common place to learn about strategy and guidance so makers get to make right decisions for what they intend to build and where they should go for it.
 
-There are some existing solution components like [set up inactivity notifications components](/power-platform/guidance/coe/setup-archive-components) and [set up Developer Compliance components](/power-platform/guidance/coe/setup-governance-components) in the CoE Starter Kit that you could take advantage of. These components come with email templates, and they can be duplicated to fit your purpose and need for migrating them from default environment. A good addition is to capture some success stories as well on the communication site.
+There are some existing solution components like [set up inactivity notifications components](/power-platform/guidance/coe/setup-archive-components) and [set up Developer Compliance components](/power-platform/guidance/coe/setup-governance-components) in the CoE Starter Kit that you could take advantage of. These components come with email templates and they can be duplicated to fit your purpose and need for migrating them from the default environment. A good addition is to capture some success stories on the communication site, as well.
 
 ## Individual migration of objects
 
@@ -113,42 +117,42 @@ The distinction between app and solution is an important one. Exporting and impo
 
 :::image type="content" source="media/image2.gif" alt-text="Export package GIF demo with example export walkthrough.":::
 
-The detailed steps are documented at [Exporting a canvas app package](/power-apps/maker/canvas-apps/export-import-app) and [Importing a canvas app package](/power-apps/maker/canvas-apps/export-import-app).
+The detailed steps are documented in [Exporting a canvas app package](/power-apps/maker/canvas-apps/export-import-app) and [Importing a canvas app package](/power-apps/maker/canvas-apps/export-import-app).
 
-This method of exporting apps is a legacy way. While it’s supported, we recommend that using [solutions](#solutions), which allows for migrating multiple components instead of just one resource.
+This method of exporting apps is a legacy way. While it’s supported, we recommend that you use [solutions](#solutions). Solutions enable you to migrate multiple components instead of just one resource.
 
 ### Export and import flow (legacy way)
 
 The following steps describe how to export a flow.
 
-1. To export a flow package, select "…" menu, select **Export** then select **Package (.zip).**.
-1. On the next screen, supply a name and a description for your package first. You can then configure defaults and add comments that are accessible during the import phase.
-1. Next, select the **Export** button in the bottom right corner and your package should start downloading shortly after. If your download doesn't start automatically, you can also select the **Download** button.
+1. Select "…" menu, select **Export** then select **Package (.zip).**.
+1. Enter a name and a description for your package. You can then configure default settings and add comments that are accessible during the import phase.
+1. Select the **Export** button in the bottom-right corner to download the package. If your download doesn't start automatically, you can select the **Download** button.
 
 The following steps describe how to import a flow.
 
-1. To import a flow, select the import button on the screen.
-1. Next, upload the package file and wait for the screen to show the package details.
+1. Select the **Import** button.
+1. Upload the package file and wait for the screen to show the package details.
 1. When configuring the flow settings, you can choose to either create a new flow or update an existing one with the flow definition from the package.
-1. Select the connections that are required to set up the flow as part of the import process. You should see the ***Import*** button light up once you have successfully configured all the required settings.
+1. Select the connections that are required to set up the flow. You should see the **Import** button become available after you have successfully configured all the required settings.
 
-Once you have imported the flow, it must be activated. Remember, if the flow has any connection references, the user activating it must have access to those connections. If not, the connection owner can grant access to the activation user.
+After you have imported the flow, it must be activated. If the flow has any connection references, the user activating it must have access to those connections. If not, the connection owner can grant access to the activation user.
 
-This method of exporting cloud flows is a legacy way. While it’s supported, it's recommended to use solutions, which allows for migrating multiple components instead of just one resource.
+This method of exporting cloud flows is a legacy way. While it’s supported, we recommended that you use solutions, which enable you to migrate multiple components instead of just one resource.
 
-### Export and import a model driven app
+### Export and import a model-driven app
 
-A model driven app is always part of a solution. The packaged app, included in the solution file (.zip), can be shared with users based on their security roles after it has been successfully exported from the source environment and imported into the target environment.
+A model-driven app is always part of a solution. The packaged app, included in the solution file (.zip), can be shared with users based on their security roles after it has been successfully exported from the source environment and imported into the target environment.
 
-Detailed steps by step processes are covered in [export a solution](/power-apps/maker/model-driven-apps/distribute-model-driven-app) and [import a solution](/power-apps/maker/model-driven-apps/distribute-model-driven-app)
+The detailed step-by-step processes are covered in [Export a solution](/power-apps/maker/model-driven-apps/distribute-model-driven-app) and [Import a solution](/power-apps/maker/model-driven-apps/distribute-model-driven-app).
 
 ### Export and import a Power Virtual Agents bot
 
-You can export and import bots using solutions. A detailed list of steps is covered in [export and import bots using solutions](/power-virtual-agents/authoring-export-import-bots).
+You can export and import bots using solutions. A detailed list of steps is covered in [Export and import bots using solutions](/power-virtual-agents/authoring-export-import-bots).
 
 ### Export and import Power Pages site
 
-Migration pages involve exporting the existing configuration from the source Microsoft Dataverse environment, and then importing it into the target Dataverse environment. There are some prerequisite steps that need to be [performed in the target environment](/power-apps/maker/portals/admin/migrate-portal-configuration). Once the preparation work is complete, the portal configuration data can be exported using the [configuration migration tool](/power-apps/maker/portals/admin/migrate-portal-configuration).
+Migration pages involve exporting the existing configuration from the source Microsoft Dataverse environment, and then importing it into the target Dataverse environment. There are some prerequisite steps that must be [performed in the target environment](/power-apps/maker/portals/admin/migrate-portal-configuration). Once the preparation work is complete, the portal configuration data can be exported using the [configuration migration tool](/power-apps/maker/portals/admin/migrate-portal-configuration).
 
 ### SharePoint Form app – special case for default environment
 
