@@ -72,7 +72,7 @@ You can customize the email sent out by the flow; by default, it looks like the 
 
 > [!NOTE]
 > - In the February 2023 release, the **Developer Compliance Center** canvas app has been replaced with the Developer Compliance Center model-driven app. The new app uses model-driven app features and custom pages. The Developer Compliance Center canvas app has been renamed to [deprecated] Developer Compliance Center and will be removed from the solution by June 2023.
-> - The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
+> - The update has been made to use the benefits of custom pages and [Creator kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
 This app is used in the [auditing process](example-processes.md) as a tool for users to check whether apps, flows, chatbots, or custom connectors they own are compliant, and to submit information to the CoE admins as business justification to stay in compliance.
 
@@ -112,7 +112,7 @@ For **Missing Details**, makers can achieve compliance by providing additional i
 - **Conditions of use**: (For connectors only) Describe in which situations the connector can and should be used.
 - **Mitigation Plan provided**: For critical solutions, upload a mitigation plan that details what business users do if there isn't an outage.
 
-**Customize**: Verify that the **Support Details** form matches your requirements, and update if necessary.
+**Customize**: Verify that the **Support details** form matches your requirements, and update if necessary.
 
 :::image type="content" source="media/coe57.png" alt-text="Developer Compliance Center app details":::
 
@@ -209,9 +209,6 @@ All business process flows are disabled by default. To enable them, do the follo
 #### Inactivity notifications approval
 
 Represents inactivity notifications approval tasks started during the Admin | Inactivity notifications v2 flows.
-
-
-
 
 ### Flows
 
@@ -329,6 +326,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 
 >[!NOTE]
 >We recommend that you configure environment policies in Power Platform admin center to delete inactive Dataverse for Teams environments, instead.
+>
 >Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](/power-platform/admin/inactive-teams-environment)
 
 > [!IMPORTANT]
@@ -360,7 +358,7 @@ This flow sends a daily reminder email to environment owners who have been asked
 >[!NOTE]
 >These components will not work in GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
 
-[Watch a walk-through](https://www.youtube.com/watch?v=0zptiBppTNo&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the clean-up for orphaned objects process works.
+[Watch a walk-through](https://www.youtube.com/watch?v=0zptiBppTNo&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the cleanup for orphaned objects process works.
 
 ### Flows
 
@@ -400,14 +398,14 @@ If they choose to see the items individually, then they can make these decisions
 
 | Name | Description | Default value |
 |------|---------------|------|
-| Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify if you want to quarantine apps if they're not compliant. Specified in days. | 7 days |
+| Quarantine Apps after x days of noncompliance | If using the Compliance flow for apps to gather compliance details from makers, specify if you want to quarantine apps if they're not compliant. Specified in days. | 7 days |
 
 ### Flows
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
 |[Admin \| Quarantine non-compliant apps](#admin--quarantine-non-compliant-apps) | Scheduled |  Daily |
-| [Admin \| Set app quarantine status](#admin--set-app-quarantine-status) | Automated | When the Quarantine App field in the PowerApps App table is changed |
+| [Admin \| Set app quarantine status](#admin--set-app-quarantine-status) | Automated | When the Quarantine App field in the Power Apps App table is changed |
 
 #### Admin \| Quarantine non-compliant apps
 
@@ -428,7 +426,7 @@ This flow is triggered automatically if the app quarantine status field of the P
 
 This field:
 
-- Is set to **Yes** by the Admin \| Quarantine non-compliant apps.
+- Is set to **Yes** by the Admin \| Quarantine noncompliant apps.
 - Can be updated to either **Yes** or **No** manually by the admin from the [Power Platform Admin View](core-components.md#power-platform-admin-view) to quarantine apps or release apps from quarantine.
 
 This flow sets the quarantine status of the app.
