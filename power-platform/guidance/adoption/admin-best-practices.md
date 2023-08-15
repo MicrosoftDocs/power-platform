@@ -54,6 +54,8 @@ In this section, we'll explore some best practices to follow when establishing a
 
 [Microsoft Power Platform admin guide](../../admin/admin-documentation.md)<Br>
 [Microsoft Power Apps and Power Automate Admin Whitepaper](https://aka.ms/powerappsadminwhitepaper)
+[Default environment routing](../../admin/default-environment-routing.md)
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
