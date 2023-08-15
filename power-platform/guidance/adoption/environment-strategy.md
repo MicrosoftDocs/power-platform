@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 8/15/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
     - ProfessorKendrick
 search.audienceType: 
