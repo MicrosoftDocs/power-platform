@@ -202,6 +202,8 @@
                   href: admin-settings.md
                 - name: Environment database settings
                   href: environment-database-settings.md
+                - name: Default environment routing (preview)
+                  href: default-environment-routing.md
                 - name: Product
                   items:
                     - name: Behavior
