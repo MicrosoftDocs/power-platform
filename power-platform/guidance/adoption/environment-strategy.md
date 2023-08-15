@@ -3,7 +3,7 @@ title: "Establishing an environment strategy - Microsoft Power Platform | Micros
 description: Develop an environment strategy to securely manage resources in Power Platform environments while allowing productive development.
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 2/23/2023
+ms.date: 8/15/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -39,6 +39,7 @@ Before we get started, let’s look at some environment and security key facts:
 - Non-default environments offer more control around [permissions](../../admin/environments-overview.md#environment-permissions).
 - An environment can have one or zero [Microsoft Dataverse instances](../../admin/create-database.md).
 - Environments include [predefined security roles](../../admin/database-security.md) that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app.
+- [Default environment routing](../../admin/default-environment-routing.md) is a premium, governance feature. This feature allows Power Platform admins to automatically direct new makers into their own, personal developer environments when they visit make.powerapps.com for the first time. 
 
 ### Types of environments
 
