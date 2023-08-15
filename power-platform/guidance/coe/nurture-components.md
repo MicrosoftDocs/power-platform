@@ -15,7 +15,7 @@ search.audienceType:
 
 An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.   More information: [Set up nurture components](setup-nurture-components.md) and [watch the video](https://www.youtube.com/embed/StqxBgbt_ZM) on how to use the core components solution.
 
-The CoE nurture components solution contains assets relevant to everyone in the organization: admins, makers, in addition to users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md)
+The CoE nurture components solution contains assets relevant to everyone in the organization: admins, makers, and users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md)
 
 ## Video hub components
 
@@ -25,7 +25,7 @@ The CoE nurture components solution contains assets relevant to everyone in the 
 |------|--------------|
 | Community hub content | Represents video content that is available in the video hub canvas app, or the Video hub - admin model driven app. |
 | Community hub comment | Represents comments that video hub users have made.  The 'comment status' column controls which comments are approved and viewable in the video hub canvas app. |
-| Playlist | Represents a playlist.  Playlists are curated lists of video content for a specific group or requirement, for example: community meeting recordings. The playlist type column currently defines two types of playlist: shared, or private. Shared playlists are viewable to all users, whereas private playlists are available to the playlist creator (in development). |
+| Playlist | Represents a playlist.  Playlists are curated lists of video content for a specific group or requirement; for example, community meeting recordings. The playlist type column currently defines two types of playlist: shared, or private. Shared playlists are viewable to all users, whereas private playlists are available to the playlist creator (in development). |
 | Playlist item | Represents the relationship between a playlist and community hub content (video). |
 | Champion profile | Represents a champion in your organization. A champion profile is displayed on the start screen of the video hub canvas app. |
 
