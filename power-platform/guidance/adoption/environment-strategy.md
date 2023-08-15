@@ -100,7 +100,7 @@ Some considerations for custom environments:
 
 In addition to the above recommendations, establishing your environment strategy will also shape and direct your **[DLP strategy](dlp-strategy.md)**.
 
-| | |
+| &nbsp;  | &nbsp; |
 |---|---|
 | Everyone is a maker. Communicate with everyone that **Default** isn't for development of critical apps | ![Default environment.](media/env-default.png "Default environment") |
 | Only one user has access. **Developer** environments are completely locked for any other user except the user who subscribed to the community plan. Applications can be moved out of the environment if needed.| ![Developer environment.](media/env-dev.png "Default Developer") |  |
@@ -155,7 +155,7 @@ Some factors influence when to provision which types of environments:
 
    Different types of applications should be separated in different environments based on how critical each is.
 
-    | | |
+    | &nbsp;  | &nbsp; |
     |:---:|---|
     | ![Critical apps.](media/env-l1.png "Critical apps") | Mission-critical scenarios and/or high-complexity and/or org-wide usage. Support owned by IT. Robust ALM process (dev/test/prod). Longer development cycle, often greater than 3 months to minimum viable product.
      | ![Important apps.](media/env-l2.png "Important apps") | Important but not critical and/or medium complexity and/or scoped to business unit. Support owned by app owner or business unit, blessed by IT. ALM-using environments are advised but might not be necessary. Development typically less than three months to Minimum Viable Product.
