@@ -37,6 +37,20 @@ The following admins will be able to create new environments in the Power Platfo
 
 Developer environments are special environments intended only for use by the owner. You can restrict users from creating developer type environments from Power Platform admin center, but if the user has a **Microsoft Power Apps for Developer** license, a developer environment will be auto-created next time the user logs in.
 
+To restrict users to create developer type environments, admins can use following PowerShell:
+
+```powershell
+$requestBody = [pscustomobject]@{
+powerPlatform = [pscustomobject]@{
+governance = [pscustomobject]@{
+disableDeveloperEnvironmentCreationByNonAdminUsers  = $True
+}
+}
+}
+
+Set-TenantSettings -RequestBody $requestBody
+```
+
 To permanently remove the auto-creation of developer environments, a member of the Power Platform related [service admin roles](/power-platform/admin/use-service-admin-role-manage-tenant) must perform the following actions:
 
 - Remove the **Microsoft Power Apps for Developer** license. More information: [Service plan IDs for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
