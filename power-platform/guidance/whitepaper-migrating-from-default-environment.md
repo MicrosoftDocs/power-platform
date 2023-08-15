@@ -272,35 +272,35 @@ A maker-friendly option is to use pipelines that are intended to democratize ALM
 
 ### Creating connections (manual)
 
-In the target environment before the import operation is set, create the missing connections that are required by the app or flow. This should help as a refresher to create connections - [Manage connections in Power Automate (contains video) - Power Automate | Microsoft Learn](/power-automate/add-manage-connections)
+In the target environment before the import operation is set, create the missing connections that are required by the app or flow. For more information about how to create connections, see [Manage connections in Power Automate](/power-automate/add-manage-connections).
 
 ### Data Migration
 
-There are multiple options available for data migration ranging from manual to full automation.
+There are multiple options available for data migration, ranging from manual to full automation.
 
 1. Manually export and import the data using Excel workbooks.
-1. A Power Automate cloud flow can be developed to extract data from source tables and write directly to destination. However, this needs the maker to use the Dynamics 365 Connector or Dataverse (Legacy) connector. As of this document authoring, Dataverse connector doesn’t support connecting across environments, yet. This feature is on the roadmap and once released that may be used to move data from one to the other.
-1. [Configuration Migration tool (CMT)](/power-platform/admin/manage-configuration-data) is a tool that is used for portal migration but can also be used for regular data migration. CMT can also be used with PowerShell. The [PAC CLI tool](/power-platform/developer/cli/reference/tool) gives the ability to call CMT.
-1. Dataflows can be used to create mappings between the environments and used to move the data. HTTP Web connector may be used as an alternative to Dataverse.
-1. Azure Data Factory can be used with Dataverse connector to pull data from source and inserted into the destination.
+1. A Power Automate cloud flow can be developed to extract data from source tables and write directly to the destination. However, this requires the maker to use the Dynamics 365 Connector or the Dataverse (legacy) connector. Currently, the Dataverse connector doesn’t support connecting across environments. This feature is planned for the future, and once released it may be used to move data from one to the other.
+1. [Configuration Migration tool (CMT)](/power-platform/admin/manage-configuration-data) is a tool that is used for portal migration, but can also be used for regular data migration. CMT can also be used with PowerShell. The [PAC CLI tool](/power-platform/developer/cli/reference/tool) gives the ability to call CMT.
+1. Dataflows can be used to create mappings between the environments and used to move data. HTTP Web connector may be used as an alternative to Dataverse.
+1. Azure Data Factory can be used with the Dataverse connector to pull data from the source and insert it into the destination.
 
-Given that default environment is limited in size, one of the above options should suffice to move data out of the default environment.
+Given that the default environment is limited in size, one of the above options should suffice to move data out of the default environment.
 
 #### Clean up considerations
 
-A cleanup is a good idea for apps and flows that have not been used and/or updated in a long time.  There are different paths for an administrator to consider as far as cleanup is concerned.
+A clean-up is a good idea for apps and flows that have not been used and updated in a long time.  There are different paths for an administrator to consider as far as clean-up is concerned.
 
-- Decide the order of importing the data. The least dependent tables go first and most dependent come at the last.
-- Not all fields need be mapped. Fields like version, Modified date, Created date and some other system fields don't need to be mapped.
-- If you would like to preserve the Original created on date, then use map the Source Created On date field to OverRiddenCreatedOn field on the destination table.
+- Decide the order of importing the data. The least dependent tables go first and most dependent come at the end.
+- Not all fields need be mapped. Fields like **Version**, **Modified date**, **Created on date**, and some other system fields don't need to be mapped.
+- If you would like to preserve the original **Created on date**, then use map the source **Created On date** field to **OverRiddenCreatedOn** field on the destination table.
 - Audit data can't be migrated.
-- Don't enable any workflows, flows that get triggered based on data insertion unless intended. This increases the time for data migration.
+- Don't enable any workflows or flows that get triggered based on data insertion, unless intended. This increases the time for data migration.
 
-In many cases, these are test flows, apps created by makers as part of their personal productivity learning and experimenting.
+In many cases, these are test flows and apps created by makers as part of their personal productivity learning and experimenting.
 
 ## Conclusion
 
-Power Platform is a tool for citizen developers and pro developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual or Developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which will help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-serve models of learning about the strategy, implementation of solutions and best practices to develop apps and flows. A good addition is to capture some success stories as well on the communication site. Success stories published internally help makers to connect with and open for possibilities that could be achieved using Power Platform.
+Power Platform is a tool for citizen developers and profesional developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual, or developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which can help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-serve models of learning about the strategy, implementation of solutions, and best practices to develop apps and flows. A good addition is to capture some success stories on the communication site. Success stories published internally help makers to connect with ideas and makes them open to possibilities that could be achieved using Power Platform.
 
 A strong governance strategy is essential when migrating or moving specific objects. There are various strategies available for migrating objects, including individual and mass migration. The best fit option depends on our organization policies. Solutions are the most recommended way to organize the components of your application and make migrations more straightforward.
 
