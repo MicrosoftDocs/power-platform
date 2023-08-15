@@ -25,6 +25,8 @@ ms.subservice: solution-templates
 
 An [on-premises data gateway](/power-platform/admin/wp-onpremises-gateway) acts as a bridge to provide secure data transfer between on-premises data that isn't in the cloud and Microsoft cloud services.
 
+:::image type="content" source="media/set-up-gateway/opdg-connect.png" alt-text="Reuse environment variables in the SAP ERP connector's actions":::
+
 The on-premises data gateway installation encompasses multiple components installed on the same domain as the Windows Virtual Machine (VM). Each dedicated machine can only have one gateway installed on it. The same gateway can be used in multiple environments as long as the [gateway region](/power-automate/regions-overview) and the environment region match. Administrators need to take the following steps to set up the gateway:
 
 1. Create a new [Windows VM](/azure/virtual-machines/overview) or provision a new or repurposed server specifically for SAP integration with Power Platform.
