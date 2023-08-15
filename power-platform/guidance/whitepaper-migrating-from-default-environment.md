@@ -186,65 +186,63 @@ Not fully supported indicates that there may be potential data loss during migra
 
 ### Migrate metadata and then data
 
-A recommended approach is to use Solutions to move the metadata and then either dataflows, Azure Data Factory, or another tool of preference could be employed to transfer data. Complete automation from start to finish may not be achievable in all cases, due to the diverse connectors, but close approximation is possible.
+A recommended approach is to use solutions to move the metadata and then either dataflows, Azure Data Factory, or another tool of preference could be employed to transfer data. Complete automation from start to finish may not be achievable in all cases, due to the diverse connectors, but close approximation is possible.
 
 At a high level, the steps are:
 
-1. Add App to a Solution
-1. Add Flow to Solution
-1. Add existing PVA.
-1. Adjust connection references in Apps and Flows
+1. Add app to a solution.
+1. Add flow to solution.
+1. Add existing Power Virtual Agents.
+1. Adjust connection references in apps and flows.
 1. Check for solution dependencies and add objects.
-1. Export the Solution
-1. Import the Solution
-2. Transfer data
+1. Export the solution.
+1. Import the solution.
+1. Transfer data.
 
 ### Checking for solution dependencies
 
-The success of a solution import in target environment can only be ensured when you have all related components added to solution or they're available in the target environment. If there are missing components, then the import of solution is likely to fail. To ensure that all required components are present, there are options best if used in combination:
+The success of a solution import in the target environment can only be ensured when you have all related components added to the solution or they're available in the target environment. If there are missing components, then the import of the solution is likely to fail. To ensure that all required components are present, there are options best if used in combination:
 
-Manually add selected components to the solution. In this case, it's assumed that you know that all dependent components are already available on the target environment.
+- Manually add selected components to the solution. In this case, it's assumed that you know that all dependent components are already available on the target environment.
 
-Use the [show dependencies](/power-apps/maker/data-platform/view-component-dependencies) button from within the solution to let system identify dependencies for you. You can add all or selectively add only dependencies that don't exist in the target.
+- Use the [show dependencies](/power-apps/maker/data-platform/view-component-dependencies) button from within the solution to let the system identify dependencies for you. You can add all dependencies or selectively add only the dependencies that don't exist in the target environment.
 
-![Component dependency for the account table.](media/image3.png)
+:::image type="content" source="media/image3.png" alt-text="Image showing an example of dependent components for the account table.":::
 
-Image showing an example of dependent components for the account table.
+### Adding a component to a solution (manual)
 
-### Adding a component to a Solution (manual)
-
-Assuming that a Solution is created (check this [documentation](/power-apps/maker/data-platform/create-solution) to create a solution and add objects), a maker needs to use the Add existing component menu option to add an existing app, flow, or Power Virtual Agent.
+Assuming that [a solution is created](/power-apps/maker/data-platform/create-solution), a maker needs to use the add existing component menu option to add an existing app, flow, or Power Virtual Agent.
 
 :::image type="content" source="media/image4.png" alt-text="Image showing adding existing components to a solution.":::
 
 ### Adjust connection references
 
-Canvas apps and flows handle connections differently. Flows use connection references for all connectors, while canvas apps only use them for implicitly shared (non-OAuth) connections, such as SQL Server Authentication.
+Canvas apps and flows handle connections differently. Flows use connection references for all connectors, while canvas apps only use them for implicitly shared (non-OAuth) connections, such as SQL Server authentication.
 
 #### Updating an app to use connection references instead of connections
 
-Canvas apps that aren't solution aware when added to a solution won't automatically be upgraded to use connection references. Connection references get associated with canvas apps only at the time a data source is added to the app. To upgrade apps, you must
+Canvas apps, that aren't solution-aware when added to a solution, won't automatically be upgraded to use connection references. Connection references get associated with canvas apps only at the time a data source is added to the app. To upgrade apps, you must:
 
-1. Add an app that is nonsolution aware to a solution.
+1. Add an app that is non-solution aware to a solution.
 2. Remove the connection from the app.
-3. As best practice, create a new connection reference in the solution.
+3. Create a new connection reference in the solution.
 4. Add a connection containing an associated connection reference.
 
 #### Updating a flow to use connection references instead of connections
 
-When a flow isn't in a solution, it uses connections. If that flow is then added into solution, it continues to use connections initially. Flows can be updated to use connections references instead of connections in one of two ways:
+When a flow isn't in a solution, it uses connections. If that flow is then added into a solution, it continues to use connections initially. Flows can be updated to use connections references, instead of connections, in one of two ways:
 
-If the flow is exported in an unmanaged solution and imported, the connections are removed with connection references.
+- If the flow is exported in an unmanaged solution and imported, the connections are removed with connection references.
 
-When a solution flow is opened, the flow checker on the flow details page shows a warning to **Use connection references**. The warning message has an action to **Remove connections so connection references can be added**. Selecting that action removes connections from the trigger and actions in the flow and allow connection references to be selected and created.
+- When a solution flow is opened, the flow checker on the flow details page shows a warning to **use connection references**. The warning message has an action you can select to **Remove connections so connection references can be added**. Selecting that action removes connections from the trigger and actions in the flow and allows connection references to be selected and created.
 
-### Adding an object to a Solution (automation)
+### Adding an object to a solution (automation)
 
-You can use PowerShell commands to move apps in bulk to a solution. Adding pre-existing Canvas apps and cloud flows to solutions can also be done via the command line. Install the latest PowerShell modules to try this option. The two main commands are `Set-PowerAppAsSolutionAware` and `Set-FlowAsSolutionAware`.
+You can use PowerShell commands to move apps in bulk to a solution. Adding pre-existing canvas apps and cloud flows to solutions can also be done via the command line. Install the latest PowerShell modules to try this option. The two main commands are **Set-PowerAppAsSolutionAware** and **Set-FlowAsSolutionAware**.
 
-Once the modules are installed, insert your own Environment ID, App ID, Flow ID, and Solution ID.
+Once the modules are installed, insert your own environment ID, app ID, flow ID, and solution ID.
 
-For a Canvas app:
+For a canvas app:
 
 ```powershell
 Set-PowerAppAsSolutionAware -EnvironmentName {Environment ID} -AppName {App ID} -SolutionId {Solution ID}
@@ -256,21 +254,21 @@ For a flow:
 Set-FlowAsSolutionAware -EnvironmentName {Environment ID} -FlowName {Flow ID} - SolutionId {Solution ID}
 ```
 
-[Connection references](/power-platform/alm/conn-ref-env-variables-build-tools) are data entries into connection reference table. To use the connection reference as part of the App or Flow requires a modification of the core App or Flow definition. You need to replace the `connectionReferences` node with the connection reference.
+[Connection references](/power-platform/alm/conn-ref-env-variables-build-tools) are data entries into the connection reference table. To use the connection reference as part of the app or flow requires a modification of the core app or flow definition. You need to replace the **connectionReferences** node with the connection reference.
 
 ### Solution export and import
 
-Assuming the solutions are ready, the next stage of automation can be done in multiple ways.
+Assuming the solutions are ready, the next stage of automation can be done in multiple ways:
 
 - Manually [export](/power-apps/maker/data-platform/export-solutions) and [import](/power-apps/maker/data-platform/import-update-export-solutions) the solutions into the target environment.
 
 - Use [packages](/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell) to move multiple solutions in a single pass.
 
-- Use Microsoft Power Platform [build tools tasks](/power-platform/alm/devops-build-tool-tasks) to perform multiple operations like pack solution, unpack solution, export solution and import solution. DevOps provides the ability to automate ALM and these tasks are all built to support ALM for Microsoft Power Platform.
+- Use Microsoft Power Platform [build tools tasks](/power-platform/alm/devops-build-tool-tasks) to perform multiple operations like pack solution, unpack solution, export solution, and import solution. DevOps provides the ability to automate application lifecycle management (ALM) and these tasks are all built to support ALM for Microsoft Power Platform.
 
 The Power Platform Command Line Interface (PAC CLI) also provides options to export and import solutions. All solution-related [commands](/power-platform/developer/cli/reference/solution) can be used to build, export, and import solutions. You can also use PAC CLI to [transfer data in and out](/power-platform/developer/cli/reference/data).
 
-A maker friendly option is to use Pipelines that are intended to democratize ALM for Microsoft Power Platform. Bringing ALM automation and CI/CD capabilities into a single feature service is more approachable for all makers, admins, and developers. 
+A maker-friendly option is to use pipelines that are intended to democratize ALM for Power Platform. Bringing ALM automation and CI/CD capabilities into a single feature service is more approachable for all makers, admins, and developers. 
 
 ### Creating connections (manual)
 
