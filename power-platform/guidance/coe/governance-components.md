@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-<!-- check deprecated in line 74. -->
+<!-- In line 74, is "deprecated" meant to be set within square brackets? That is how it appears on the live page. Also, it would be helpful to readers if descriptions of the flows were presented in the order in which they're listed in all the tables (tables in lines 215 and 365 aren't followed by descriptions in the same order).     -->
 
 
 
@@ -116,9 +116,9 @@ For **Missing Details**, makers can achieve compliance by providing additional i
 
 :::image type="content" source="media/coe57.png" alt-text="Developer Compliance Center app details":::
 
-### Business process flows 
+### Business process flows (BPFs)
 
-#### Power Apps App Approval business process flow
+#### Power Apps App Approval BPF
 
 This process helps the admin audit the app approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
@@ -135,7 +135,7 @@ This process helps the admin audit the app approval process by providing a visua
    :::column-end:::
 :::row-end:::
 
-#### Flow Approval business process flow
+#### Flow Approval BPF
 
 This process helps the admin audit the flow approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
@@ -152,7 +152,7 @@ This process helps the admin audit the flow approval process by providing a visu
    :::column-end:::
 :::row-end:::
 
-#### Custom Connector Approval business process flow
+#### Custom Connector Approval BPF
 
 This process helps the admin audit the custom connector approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
@@ -169,7 +169,7 @@ This process helps the admin audit the custom connector approval process by prov
    :::column-end:::
 :::row-end:::
 
-#### Chatbot Approval business process flow
+#### Chatbot Approval BPF
 
 This process helps the admin audit the chatbot approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
