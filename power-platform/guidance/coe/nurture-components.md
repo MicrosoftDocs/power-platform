@@ -11,6 +11,11 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
+<!-- In lines 101, 144, and 201, is it correct that "deprecated" is set within hard brackets? -->
+
+
+
 # Use nurture components
 
 An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.   More information: [Set up nurture components](setup-nurture-components.md) and [watch the video](https://www.youtube.com/embed/StqxBgbt_ZM) on how to use the core components solution.
@@ -92,19 +97,16 @@ If you're planning to run an internal Training in a Day event (such as App in a 
 
 #### Training in a day pages in Nurture apps - Maker app
 
-
-
-
-
 >[!NOTE]
 >In the February 2023 release, the **Training in a day registration** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Training in a day registration canvas app has been renamed to [deprecated] Training in a day registration and will be removed from the solution by June 2023.
+>
 >The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
 If you're planning to run a Training in a Day event, use this page in the Nurture apps - Maker app to enable your users to register for upcoming events.
 
 **Permission**: As soon as you're running internal training events, share the Nurture apps - Maker with everyone in the organization.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
+**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Training in a Day Registration app.](media/training1.png "Training in a Day Registration app")
 
@@ -130,9 +132,9 @@ If you're planning to run a Training in a Day event, use this page in the Nurtur
 
 A page inside the Nurture apps - Admin app that the Solution Assessment admin uses to enter or update the questions, answers, and categories that are listed in the apps.
 
-**Permission**: Share this app with the Solution Assessment admins - this can be your CoE or Power Platform adoption lead.
+**Permission**: Share this app with the Solution Assessment admins—this can be your CoE or Power Platform adoption lead.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
+**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Maker Journey Admin app.](media/MakerJourneyAdminApp.png "Maker Journey Admin app")
 
@@ -140,13 +142,14 @@ A page inside the Nurture apps - Admin app that the Solution Assessment admin us
 
 >[!NOTE]
 >In the February 2023 release, the **Maker Assessment** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Maker Assessment canvas app has been renamed to [deprecated] Maker Assessment and will be removed from the solution by June 2023.
+>
 >The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
-The Solution Assessment page can be used to ask users a series of questions regarding the target audience, data and support of the solution they're planning and informing them about governance, support and license considerations a maker needs to keep in mind before starting the development of their solution.
+The Solution Assessment page can be used to ask users a series of questions regarding the target audience, data and support of the solution they're planning, and informing them about governance, support, and license considerations a maker needs to keep in mind before starting the development of their solution.
 
 **Permission**: The Nurture apps - Maker can be shared with the entire organization.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
+**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Maker Assessment app, screen 1.](media/MakerJourneyAssessmentApp_1.png "Maker Assessment app, screen 1")
 
@@ -165,8 +168,8 @@ The Solution Assessment page can be used to ask users a series of questions rega
 
 | Flow | Type | Schedule | Description |
 | --- | --- | --- | --- |
-| Pulse - Survey Makers for CoE feedback | Schedule | Weekly on Thursdays | Posts an adaptive card to randomly identified makers to ask them for feedback on how they feel about the Power Platform support and adoption strategy.. |
-| Pulse [Child] - post adaptive cards to maker | Manual | child flow | Uses AI Builder to translate and analyze the feedback response and stores the response in the Pulse Feedback table.|
+| Pulse - Survey Makers for CoE feedback | Schedule | Weekly on Thursdays | Posts an adaptive card to randomly identified makers to ask them for feedback on what they think about the Power Platform support and adoption strategy. |
+| Pulse [Child] - post adaptive cards to maker | Manual | Child flow | Uses AI Builder to translate and analyze the feedback response and stores the response in the Pulse Feedback table.|
 
 Makers receive adaptive cards sent by the **Pulse [Child] - post adaptive cards to maker** flow to provide feedback:
 
@@ -178,7 +181,7 @@ Pulse feedback Power BI Dashboard to display feedback and sentiment over time.
 
 ![Pulse overview.](media/pulse-2.png "Pulse overview.")
 
-The dashboard also provides the ability to view detailed feedback with and filter by department that provided it.
+The dashboard also provides the ability to view detailed feedback and filter by department that provided it.
 
 ![Pulse details.](media/pulse-3.png "Pulse details.")
 
@@ -196,13 +199,14 @@ The dashboard also provides the ability to view detailed feedback with and filte
 
 >[!NOTE]
 >In the February 2023 release, the **Template Catalog** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Template Catalog canvas app has been renamed to [deprecated] Template Catalog and will be removed from the solution by June 2023.
+>
 >The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
 A custom page that CoE admins can use to share app and component templates, in addition to best practice documents, with their makers.
 
 **Permission**: After you've made the content ready, the Nurture apps - Maker can be shared with the entire organization.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
+**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 > [!NOTE]
 > This app can't be used in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps.
