@@ -59,6 +59,10 @@ In an environment, you can only have one application user for each Azure AD&ndas
 
    > [!NOTE]
    > In addition to entering the Application Name or Application ID, you can also enter an Azure Managed Identity Application ID. For Managed Identity, do not enter the Managed Identity Application Name, use the Managed Identity Application ID instead.
+   > 
+   > Enterprise Applications does not show in the list of applications, only Azre Active Directory App registrations will show. Search for the multitenant application by name or ID, to assign it to the applicatino user.  
+
+   
 
 7. The selected Azure AD app is displayed under **App**. You can select **Edit** (![Edit.](media/edit-button.png)) to choose another Azure AD application. Under **Business Unit**, select a business unit from the dropdown list.  
 
