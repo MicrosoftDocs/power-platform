@@ -23,9 +23,9 @@ The CoE nurture components solution contains assets relevant to everyone in the 
 
 | Name | Description |
 |------|--------------|
-| Community hub content | Represents video content that is available in the video hub canvas app, or the Video hub - admin model driven app. |
+| Community hub content | Represents video content that is available in the video hub canvas app, or the video hub - admin model-driven app. |
 | Community hub comment | Represents comments that video hub users have made.  The 'comment status' column controls which comments are approved and viewable in the video hub canvas app. |
-| Playlist | Represents a playlist.  Playlists are curated lists of video content for a specific group or requirement; for example, community meeting recordings. The playlist type column currently defines two types of playlist: shared, or private. Shared playlists are viewable to all users, whereas private playlists are available to the playlist creator (in development). |
+| Playlist | Represents a playlist.  Playlists are curated lists of video content for a specific group or requirement; for example, community meeting recordings. The playlist type column currently defines two types of playlist: shared or private. Shared playlists are viewable to all users, whereas private playlists are available to the playlist creator (in development). |
 | Playlist item | Represents the relationship between a playlist and community hub content (video). |
 | Champion profile | Represents a champion in your organization. A champion profile is displayed on the start screen of the video hub canvas app. |
 
@@ -33,7 +33,7 @@ The CoE nurture components solution contains assets relevant to everyone in the 
 
 #### Video hub - admin
 
-A model driven app, designed for administrators and/or moderators of the video hub.  Users of this app can add video content, manage comment status and playlists.
+A model-driven app, designed for administrators or moderators of the video hub.  Users of this app can add video content and manage comment status and playlists.
 
 ![Video hub - admin](media/Video-hub-admin-app.png)
 
@@ -43,11 +43,11 @@ A model driven app, designed for administrators and/or moderators of the video h
 
 #### Video hub
 
-The canvas app for video content, playlists, etc.
+The canvas app for video content, playlists, and more.
 
 ![Related video enabled](media/Video-hub-start-screen.png)
 
-Content is grouped in one of three in-built categories:
+Content is grouped in one of three built-in categories:
 
 - How-to videos
 - Community calls
@@ -57,7 +57,7 @@ Aside from providing a centralized hub for enterprise video content, administrat
 
 ![Playlist screen](media/Video-hub-playlist-all.png)
 
-Currently, internal (Stream) videos, and external (YouTube) are the only two types of video available in the app.
+Currently, internal (Stream) and external (YouTube) are the only types of video available in the app.
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
@@ -67,15 +67,15 @@ Currently, internal (Stream) videos, and external (YouTube) are the only two typ
 
 | Name | Description |
 |------|---------------|
-| InADayAttendees | Represents attendees that have registered for a Training in a Day course by using the Training in a Day Registration canvas app. The following information is available for each attendee: attendee email, name and registered event |
-| InADayEvent | Represents available training events created through the Training in a Day Management canvas app. The following information is available for each event: name, description, start time, end time, max attendees and location |
+| InADayAttendees | Represents attendees who have registered for a Training in a Day course by using the Training in a Day Registration canvas app. The following information is available for each attendee: attendee email, name, and registered event |
+| InADayEvent | Represents available training events created through the Training in a Day Management canvas app. The following information is available for each event: name, description, start time, end time, max attendees, and location |
 
 ### Flows
 
 | Flow | Type | Schedule | Description |
 | --- | --- | --- | --- |
 | Training in a Day \| Feedback Reminder | Schedule | Daily | Sends an email to attendees of a training event on the day, and requests feedback. |
-| Training in a Day \| Registration Confirmation Automated | Automated | when a user registers for an event using the [Training in a day](#training-in-a-day-pages-in-nurture-apps---maker-app) app | Sends an email to attendees of a training event on the day, and requests feedback. |
+| Training in a Day \| Registration Confirmation Automated | Automated | When a user registers for an event using the [Training in a day](#training-in-a-day-pages-in-nurture-apps---maker-app) app | Sends an email to attendees of a training event on the day, and requests feedback. |
 | Training in a Day \| Reminder 3 days prior to event | Schedule | Daily | Sends a reminder email to an attendee of a Training in a Day event three days before the event. |
 
 ### Apps
@@ -86,11 +86,15 @@ If you're planning to run an internal Training in a Day event (such as App in a 
 
 **Permission**: Share with CoE admins or the owners of your internal training events.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
+**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Training in a Day Management app.](media/training2.png "Training in a Day Management app")
 
 #### Training in a day pages in Nurture apps - Maker app
+
+
+
+
 
 >[!NOTE]
 >In the February 2023 release, the **Training in a day registration** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Training in a day registration canvas app has been renamed to [deprecated] Training in a day registration and will be removed from the solution by June 2023.
