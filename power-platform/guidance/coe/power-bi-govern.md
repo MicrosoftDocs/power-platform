@@ -1,6 +1,6 @@
 ---
 title: "Govern with the CoE Power BI dashboard | MicrosoftDocs"
-description: "Perform risk assessments and identifying critical, orphaned, or unused resources with the CoE Power BI dashboard"
+description: "Perform risk assessments and identify critical, orphaned, or unused resources with the CoE Power BI dashboard"
 author: manuelap-msft
 
 ms.component: pa-admin
@@ -44,7 +44,7 @@ You can filter the **App deep dive** page by:
 - Connector name and connector tier
 - Is the app orphaned (the app owner has left the organization)
 
-In addition, you can sort the output data by the total number of users the app is shared with, unique users that have launched the app, last launched date, archive score, environment name, and app owner.
+In addition, you can sort the output data by the total number of users the app is shared with, unique users who have launched the app, last launched date, archive score, environment name, and app owner.
 
 Some typical assessments an admin might perform are described in the following sections.
 
@@ -54,7 +54,10 @@ Set **Shared with tenant** to **True**, or select the **App Shared with (Total)*
 
 - Widely shared resources (shared with the entire tenant or many individual users) might need a stronger support model, or you might need to review the number of people they're shared with.
 
-- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise, (a) Your entire org sees the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them), and (b) If a user doesn't have access to the underlying data source, they receive an error message when they try to open the app, which can cause an increase in support tickets and confusion.
+- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise:
+
+  - Your entire org sees the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them).
+  - If a user doesn't have access to the underlying data source, they receive an error message when they try to open the app, which can cause an increase in support tickets and confusion.
 
 - Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user leaves the department or job role they'll still see the app and be able to access the information. Therefore, it's recommended to share role-specific apps with an Azure AD group instead.
 
@@ -63,6 +66,12 @@ Set **Shared with tenant** to **True**, or select the **App Shared with (Total)*
 Set **Is Orphaned** to **True** in the filter pane to find orphaned apps.
 
 Orphaned apps, where the app owner has left the organization, will still work for users, but changes or bug fixes can only be made by an owner. It's important, therefore, to identify orphaned apps and find a new owner for them, or work on a retirement plan for those apps.
+
+
+
+
+
+
 
 ### Identify implicitly shared app connections
 
