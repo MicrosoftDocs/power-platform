@@ -18,7 +18,8 @@ With copilots and generative AI features in Power Platform and Dynamics 365, you
 These capabilities are currently available in environments in the US region and support the English language. This feature allows you to try the copilot and generative features across Power Platform and Dynamics 365 customer engagement environments is non-US regions.
 
 > [!NOTE]
-> The underlying infrastructure for copilots is currently available in the US region only. Accessing copilots or generative AI features from non-US regions results in **data movement across regional boundaries**. Once enabled, any data movement that already happened while this feature was enabled cannot be reversed by [removing your consent](#disable-copilots-and-generative-ai-in-non-us-regions).
+> - The underlying infrastructure for copilots is currently available in the US region only. Accessing copilots or generative AI features from non-US regions results in **data movement across regional boundaries**. Once enabled, any data movement that already happened while this feature was enabled cannot be reversed by [removing your consent](#disable-copilots-and-generative-ai-in-non-us-regions).
+> - This setting is only available in a Power Platform environment that is created in regions other than **United States - Default** and **Preview (United States)**. To enable or disable copilot features in environments created in **United States – Default** or **Preview (United States)** regions, refer to the [documentation for the applicable product](#geographical-availability-of-copilots-and-generative-ai-features). 
 
 You can allow copilots in your non-US environments by following these steps:
 
