@@ -37,7 +37,6 @@ Default environment routing is a tenant-level, admin setting that:
 
     ![The Developer environment assignment setting must be enabled for Everyone.](media/developer-environments-assignment-everyone.png)
 
--   Requires the default environment to be a [Managed Environment](managed-environment-overview.md).
 
 ## Enable the Default environment routing setting
 
@@ -53,9 +52,12 @@ Before you enable the **Default environment routing** feature, consider the foll
 
 ### Enable the feature
 
-1.  Make sure your default environment is a [Managed Environment](managed-environment-overview.md).
 1. Make sure the **Developer environment assignment** setting is enabled for **Everyone**. 
 1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
+
+--- We need to add PPAC UI settings (A description +  ascreenshot)
+
+Alternatively you can --- 
 1. Run the following commands in PowerShell.
 
     a. Log in to your tenant account.
@@ -142,11 +144,11 @@ No, the developer environments don't impact your tenant Dataverse quota.
 
 ### What happens if the developer environment creation fails?
 
-If some reason, the creation of the developer environment fails, makers are automatically routed to the default environment.
+If for some reason, the creation of the developer environment fails, makers are automatically routed to the default environment.
 
 ### What data loss prevention (DLP) policies are applied for the developer environment?
 
-During the public preview, no specific DLP policies are assigned to the developer environment. Accordingly, the developer environment inherits existing, tenant-level DLP policies.
+During the preview, no specific DLP policies are assigned to the developer environment. Accordingly, the developer environment inherits existing, tenant-level DLP policies.
 
 ### What are the preconfigured Managed Environment settings for the newly created developer environments?
 
@@ -162,7 +164,7 @@ All developer environments have the following Managed Environment settings preco
 
 ### Is the default environment routing also available for Power Automate, Power Virtual Agents, and Power Pages?
 
-During the public preview, the default environment routing is limited to Power Apps only.
+During the preview, the default environment routing is limited to Power Apps only.
 
 ### Do I need to be a Power Platform tenant admin to enable this feature?
 
