@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-<!-- I added "logs" to the sentence in lines 247 and 247. Please check to see if that is correct. -->
+<!-- I added "logs" to the sentence in lines 247 and 247. Please check to see if that is correct. In line 97, it says to open Power Apps but the image shows Power Automate in the top corner, and I don't know if that's correct or not. -->
 
 
 # Collect audit logs using a custom connector (deprecated)
@@ -60,7 +60,7 @@ Using these steps, you set up an Azure AD app registration that is used in a cus
 
 1. Enter a name (for example, **Microsoft 365 Management**), don't change any other setting, and then select **Register**.
 
-1. Select **API Permissions** > **+ Add a permission**.
+1. Select **API permissions** > **+ Add a permission**.
 
    ![API Permissions - Add a permission.](media/coe34.png "Add a permission")
 
