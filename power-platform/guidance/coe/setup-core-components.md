@@ -1,6 +1,6 @@
 ---
 title: "Set up inventory components | MicrosoftDocs"
-description: "Set up instructions for how to set up the inventory components solution of the CoE Starter Kit"
+description: "Instructions for how to set up the inventory components solution of the CoE Starter Kit"
 author: manuelap-msft
 ms.topic: conceptual
 ms.date: 08/02/2023
@@ -18,7 +18,7 @@ The flows and dataflows in this solution sync all your resources into tables and
 
 > [!IMPORTANT]
 > - Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes that you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
-> - If you are trying out [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, [download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant. We recommend you don't depend on this feature just yet and test it in a dedicated test environment first. Trying out this feature will help us to validate that the feature is what you need and that we're not introducing unintended side effects. our feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
+> - If you are trying out [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, [download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant. We recommend you don't depend on this feature just yet and test it in a dedicated test environment first. Trying out this feature will help us to validate that the feature is what you need and that we're not introducing unintended side effects. Your feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 >
 >    Setting up the inventory components using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) is only supported through the [setup wizard](#set-up-the-inventory-components-using-the-setup-wizard). Manual setup instructions will be available after the experimental preview.
 
@@ -54,6 +54,7 @@ We recommend that you create connections to all connectors used in the solution 
     - [SharePoint](/connectors/sharepointonline/)
     - [HTTP with Azure AD](/connectors/webcontents/)
 1. Create a connection for [HTTP with Azure AD](/connectors/webcontents/), and set **Base Resource URL** and **Azure AD Resource URI (Application ID URI)** to [https://graph.microsoft.com/](https://graph.microsoft.com/) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+
 :::image type="content" source="media/httpazuread.png" alt-text="Establish an HTTP with Azure AD connection":::
 
 ## Set up the Inventory components using the Setup Wizard
@@ -62,7 +63,7 @@ We recommend that you create connections to all connectors used in the solution 
 
 1. Download the CoE Starter Kit [compressed file](https://aka.ms/CoeStarterKitDownload) to your computer.
 
-1. Extract the compressed (zip) file. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
+1. Extract the compressed (.zip) file. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
 
 1. Import the **CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip** solution file from the extracted folder.
 
@@ -79,8 +80,9 @@ The import can take up to 15 minutes to be completed.
 
 1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Setup and Upgrade Wizard** app.
-1. This app provides a guided step by step experience through the configuration steps.
-    :::image type="content" source="media/coesetupwizard.png" alt-text="CoE Starter Kit Setup Wizard":::
+1. This app provides a guided step-by-step experience through the configuration steps.
+
+   :::image type="content" source="media/coesetupwizard.png" alt-text="CoE Starter Kit Setup Wizard":::
 
 #### Troubleshooting
 
@@ -99,16 +101,16 @@ If you see an *Error Loading Control* warning when opening the Setup Wizard app,
 During solution import, you configure environment variable values. Make sure to have the following information ready.
 
 > [!IMPORTANT]
-> Mandatory environment variables for gathering inventory information are listed in the following table. Leave other environment variables empty during import - we'll update them later on as we configure different parts of the CoE Starter Kit.
+> Mandatory environment variables for gathering inventory information are listed in the following table. Leave other environment variables empty during import—we'll update them later as we configure different parts of the CoE Starter Kit.
 
 | Name | Description |
 |------|---------------|
 |Admin eMail |This is the email address to which most admin communications in the starter kit are sent. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
 |CompanyName |The name of the company to be displayed in various apps, emails, and so forth. Currently only used by the Video hub (Nurture components) app.  |
 |Individual Admin |This is the email address to which communications in the starter kit are sent which can't be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
-| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow and as part of the [Admin | Welcome Email v3](core-components.md#flows-2). More information: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) |
+| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow and as part of the [Admin | Welcome Email v3](core-components.md#flows-2). More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) |
 | Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform users (for example, end users that apps are shared with). You use this to communicate and share apps with them. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) |
-| Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)|
+| Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High, and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).|
 |PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including the trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
 |Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://make.powerautomate.com/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
@@ -118,44 +120,44 @@ During solution import, you configure environment variable values. Make sure to 
 
 1. Download the CoE Starter Kit [compressed file](https://aka.ms/CoeStarterKitDownload) to your computer.
 
-1. Extract the compressed (zip) file. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
+1. Extract the compressed (.zip) file. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
 
 1. Import the solution: Use the CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip solution file from the extracted folder to [install the solution](faq.md#installing-a-solution-in-a-production-environment).
 
-1. Update environment variable values by using the [relevant information](#gather-environment-variable-values). The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it is used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
+1. Update environment variable values by using the [relevant information](#gather-environment-variable-values). The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it is used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables being configured.
 
 The import can take up to 15 minutes to be completed.
 
 > [!NOTE]
-> - The next steps walk you through turning on flows that gather your tenants inventory. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
-> - The steps later will create an inventory of all environments in your tenant, if you wish to inventory only a subset of environments, please see [Setting up CoE for a subset of environments](faq.md#setting-up-coe-for-a-subset-of-environments) before proceeding.
+> - The next steps walk you through turning on flows that gather your tenants' inventory. Some of these flows are configured to turn on automatically after import. However, billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on.
+> - Later steps will create an inventory of all environments in your tenant. If you want to inventory only a subset of environments, see [Setting up CoE for a subset of environments](faq.md#setting-up-coe-for-a-subset-of-environments) before proceeding.
 
-In your test environment, [update the *ProductionEnvironment* environment variable](faq.md#update-environment-variables) to no before proceeding.
+In your test environment, [update the *ProductionEnvironment* environment variable](faq.md#update-environment-variables) to **No** before proceeding.
 
 ### Turn on child flows
 
-There are several child flows, check to make sure all of these flows are on:
+There are several child flows. Check to make sure all of these flows are on:
 
-1. HELPER - Add User to Security Role
-1. HELPER - Send Email
-1. HELPER - Maker Check
-1. HELPER - CloudFlowOperations
-1. HELPER - CanvasAppOperations
-1. HELPER - ObjectOperations
-1. CLEANUP HELPER - Check Deleted (Ai Models)
-1. CLEANUP HELPER - Check Deleted (Business Process Flows)
-1. CLEANUP HELPER - Check Deleted (Canvas Apps)
-1. CLEANUP HELPER - Check Deleted (Cloud Flows)
-1. CLEANUP HELPER - Check Deleted (Custom Connectors)
-1. CLEANUP HELPER - Check Deleted (Model Driven Apps)
-1. CLEANUP HELPER - Check Deleted (PVA)
-1. CLEANUP HELPER - Check Deleted (Solutions)
-1. CLEANUP HELPER - Power Apps User Shared With
-1. SYNC HELPER - Apps
-1. SYNC HELPER - Cloud Flows
-1. SYNC HELPER - Get Security Role Users
+- HELPER - Add User to Security Role
+- HELPER - Send Email
+- HELPER - Maker Check
+- HELPER - CloudFlowOperations
+- HELPER - CanvasAppOperations
+- HELPER - ObjectOperations
+- CLEANUP HELPER - Check Deleted (Ai Models)
+- CLEANUP HELPER - Check Deleted (Business Process Flows)
+- CLEANUP HELPER - Check Deleted (Canvas Apps)
+- CLEANUP HELPER - Check Deleted (Cloud Flows)
+- CLEANUP HELPER - Check Deleted (Custom Connectors)
+- CLEANUP HELPER - Check Deleted (Model Driven Apps)
+- CLEANUP HELPER - Check Deleted (PVA)
+- CLEANUP HELPER - Check Deleted (Solutions)
+- CLEANUP HELPER - Power Apps User Shared With
+- SYNC HELPER - Apps
+- SYNC HELPER - Cloud Flows
+- SYNC HELPER - Get Security Role Users
 
-If you get a connection authorization error turning on a flow, you might need to set the [run-only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
+If you get a connection authorization error when turning on a flow, you might need to set the [run-only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
 
  ![Connection authorization error when turning on the flow.](media/connerror.png "Connection authorization error when turning on the flow.")
 
@@ -193,7 +195,8 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 > Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 
 >[!NOTE]
->Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow - for example, looking at who is using the Send Email or Get Item actions.
+>Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow—for example, looking at who is using the Send Email or Get Item actions.
+>
 >This flow temporarily makes the account running the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow that is using HTTP actions to retrieve further details of those actions (for example, the HTTP host), and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
 
 - Admin | Sync Template v3 (Ai Models)
@@ -223,7 +226,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >[!NOTE]
 > To load-balance queries against Dataverse, the Admin | Sync Template v3 (Driver) flow implements a delay of up to 15 hours before starting to collect the inventory. This flow, therefore, might appear to be running for a long time.
 
-The first run of these flows performs a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
+The first run of these flows performs a full inventory of every Power Platform resource (app, flow, bot, environment, and so on) in your tenant and depending on the size of your tenant, these flows may take a long time to run. Learn more: [Long running flows](limitations.md#long-running-flows).
 
 ## Set up dataflows to retrieve your inventory from Data Export
 
@@ -239,8 +242,10 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Navigate to [portal.azure.com](https://portal.azure.com).
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
 1. Select **Endpoints**.
-1. Copy the Data Lake Storage URL to notepad.
-    :::image type="content" source="media/byodl-1.png" alt-text="Copy Data Lake Storage URL from Storage Account endpoints.":::
+1. Copy the Data Lake Storage URL to Notepad.
+
+   :::image type="content" source="media/byodl-1.png" alt-text="Copy Data Lake Storage URL from Storage Account endpoints.":::
+
 1. Append */powerplatform* to the URL.
 
 ### Confirm Storage Account permission
@@ -248,33 +253,49 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Navigate to [portal.azure.com](https://portal.azure.com).
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
 1. Select **Access Control (IAM)**.
-1. Select **View my access**
+1. Select **View my access**.
 1. Confirm you have the Storage Blob Data Reader role assigned.
-     :::image type="content" source="media/byodl-2.png" alt-text="Confirm your account has the Storage Blob Data Reader role.":::
+
+    :::image type="content" source="media/byodl-2.png" alt-text="Confirm your account has the Storage Blob Data Reader role.":::
 
 ### Copy Environment Web API endpoint
 
 1. Navigate to [make.powerapps.com](https://make.powerapps.com).
 1. Select the environment you've installed the CoE Starter Kit in.
 1. Select the cog > Developer resources.
-    :::image type="content" source="media/byodl-3.png" alt-text="Navigate to Developer Resources.":::
+
+   :::image type="content" source="media/byodl-3.png" alt-text="Navigate to Developer Resources.":::
+
 1. Copy the Web API endpoint.
-    :::image type="content" source="media/byodl-4.png" alt-text="Copy the Environment Web API endpoint.":::
+
+   :::image type="content" source="media/byodl-4.png" alt-text="Copy the Environment Web API endpoint.":::
 
 ### Configure connections to data sources
+
+
+
+
+
 
 1. Navigate to [make.powerapps.com](https://make.powerapps.com).
 1. Select the environment you've installed the CoE Starter Kit in.
 1. Select **Dataflows**.
 1. Edit the **CoE BYODL Makers** dataflow.
-    :::image type="content" source="media/byodl-7.png" alt-text="Edit the CoE BYODL Makers dataflow.":::
+
+   :::image type="content" source="media/byodl-7.png" alt-text="Edit the CoE BYODL Makers dataflow.":::
 
     1. Update the *DatalakeURL* parameter with the link to your Data Lake Storage URL and the *EnvironmentAPI* parameter with the link to your Environment Web API endpoint.
+
         :::image type="content" source="media/byodl-8.png" alt-text="Update the DatalakeURL and EnvironmentAPI parameters":::
+
     1. Select each table shown in the Queries section and configure the connection.
-        :::image type="content" source="media/byodl-9.png" alt-text="Select a table to configure the connection":::
+
+       :::image type="content" source="media/byodl-9.png" alt-text="Select a table to configure the connection":::
+
     1. For each connection, select Organizational account and sign in with your account.
-        :::image type="content" source="media/byodl-10.png" alt-text="Configure the connection using your organizational account.":::
+
+       :::image type="content" source="media/byodl-10.png" alt-text="Configure the connection using your organizational account.":::
+    
     1. Once all connections are configured and there are no more warnings, select **Next**.
     1. Select the **Makers** table and confirm that this table is configured to load data to the existing **admin_Maker** table.
     
