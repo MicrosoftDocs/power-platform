@@ -96,7 +96,7 @@ The following table indicates the availability of copilots and generative AI fea
 | Power Apps | **Maker Copilot: (NL2Edit)**</br>(doc link) | US | No | English |
 |  Power Apps| **Copilot for canvas apps**<br><br>Learn more: [Add Copilot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot) | US | No | English |
 | Power Apps | **App Copilot for model Power Apps and Dynamics 365**</br>(doc link) | US | No | English |
-| Power Automate | **Power Automate Designer Copilot**</br>[Understand AI-powered cloud flows designer (preview)](/power-automate/flows-designer) | US | No | English |
+| Power Automate | **Power Automate Designer Copilot**</br>[Understand AI-powered cloud flows designer (preview)](/power-automate/flows-designer) | US | Yes | English |
 | Power Pages| **C2 Copilot (Power Virtual Agents Chatbot)**<br /><br />Learn more: [Enable chatbot in a Power Pages site](/power-pages/getting-started/enable-chatbot) | US | No | English |
 | Power Pages | **Create form in webpage**<br /><br />Learn more: [Create AI-generated form using Copilot](/power-pages/getting-started/add-form-copilot) | US | No | English |
 | Power Pages | **Create text in webpage**<br /><br />Learn more: [Add AI-generated text using Copilot](/power-pages/getting-started/add-text-copilot) | US | No | English |
