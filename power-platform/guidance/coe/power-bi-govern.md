@@ -14,7 +14,7 @@ search.audienceType:
   - admin
 ---
 
-<!-- The formatting in line 214 is doing something strange to all the content that follows, making it all hyperlinked. Can the angle brackets and content within be removed? -->
+<!-- The formatting in line 214 is doing something strange to all the content that follows, making it all hyperlinked. (See it live here: https://learn.microsoft.com/en-us/power-platform/guidance/coe/power-bi-govern. Can the angle brackets and content within be removed? -->
 
 
 # Govern with the CoE Power BI dashboard
