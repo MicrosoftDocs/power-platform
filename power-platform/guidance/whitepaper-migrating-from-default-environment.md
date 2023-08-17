@@ -456,52 +456,52 @@ The goal is to have all Power Platform components added to a single solution, wh
 
 ### Definitions
 
-#### Default Environment
+#### Default environment
 
-You can't delete the default environment. You can't manually back up the default environment; system backups are done continuously.
+You can't delete the default environment. You can't manually back up the default environment. System backups are done continuously.
 
 The default environment is limited to 1 TB of storage capacity. To store more data, you can create a production environment. The default environment has the following:
 
-- 3 GB Dataverse Database Capacity
-- 3 GB Dataverse File Capacity
-- 1 GB Dataverse Log Capacity
+- 3 GB Dataverse database capacity
+- 3 GB Dataverse file capacity
+- 1 GB Dataverse log capacity
 
-The capacity check conducted prior to creating new environments exclude the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
+The capacity check conducted prior to creating new environments, excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
 #### Managed Environment
 
-Managed Environments is a suite of capabilities that allows admins to manage Microsoft Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment except the developer environments.
+Managed Environments is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment, except the developer environments.
 
 Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. When Managed Environments is activated in an environment, every app, Power Automate flow, Power Virtual Agents bot, and Power Pages website in that environment requires standalone licenses for accessing respective resources. For example:
 
-Every user running an app in a managed environment must have a Power Apps per user or per app license or a Dynamics 365 license that gives premium Power Apps usage rights.
+- Every user running an app in a Managed Environment must have a Power Apps per user or per app license or a Dynamics 365 license that gives premium Power Apps usage rights.
 
-Every user running a Power Automate cloud flow in a managed environment must have a standalone Power Automate per user license, a Power Automate per flow license, or a Dynamics 365 license with premium Power Automate usage rights. Power Automate cloud flows that are triggered within apps or in context of apps or chatbots are covered by the respective Power Apps or Power Virtual Agents standalone licenses.
+- Every user running a Power Automate cloud flow in a Managed Environment must have a standalone Power Automate per user license, a Power Automate per flow license, or a Dynamics 365 license with premium Power Automate usage rights. Power Automate cloud flows that are triggered within apps or in context of apps or chatbots are covered by the respective Power Apps or Power Virtual Agents standalone licenses.
 
 #### Solutions
 
-Solutions are the mechanism for implementing ALM in Power Apps and other Microsoft Power Platform products, such as Power Automate. Solutions are used to transport apps and objects from one environment to another or to apply a set of customizations to existing apps. A solution can contain one or more apps and other objects such as site maps, tables, processes, web resources, choices, flows, and more.
+Solutions are the mechanism for implementing ALM in Power Apps and other Power Platform products, such as Power Automate. Solutions are used to transport apps and objects from one environment to another or to apply a set of customizations to existing apps. A solution can contain one or more apps and other objects such as site maps, tables, processes, web resources, choices, flows, and more.
 
-#### Environment Variables in a solution
+#### Environment variables in a solution
 
-Environment variables enable the basic ALM scenario of moving an application between Microsoft Power Platform environments. Environment variables store the parameter keys and values, which then serve as input to various other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
+Environment variables enable the basic ALM scenario of moving an application between Power Platform environments. Environment variables store the parameter keys and values, which then serve as input to various other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
 
 In this scenario, the applications stay the same except for some key external application references (such as tables, connections, and keys) that are different between the source environment and the destination environment. The applications require the structure of the tables or connections to be the same between the source and the destination environments, with some differences. Environment variables allow you to specify which of these different external references should be updated as the application is moved across environments.
 
 Benefits of using environment variables include:
 
-1. Provide new parameter values while **importing solutions** to other environments.
-1. Store configuration for the **data sources** used in canvas apps and flows. For example, SharePoint Online site and list parameters can be stored as environment variables; therefore, allowing you to connect to different sites and lists in different environments without needing to modify the apps and flows.
-1. Package and transport your customization and configuration together and manage them in a single location.
-1. Package and transport secrets, such as credentials used by different objects, separately from the objects that use them.
-1. One environment variable can be used across many different solution objects - whether they're the same type of component or different. For example, a canvas app and a flow can use the same environment variable. When the value of the environment variable needs to change, you only need to change one value.
+- Provide new parameter values while importing solutions to other environments.
+- Store configuration for the data sources used in canvas apps and flows. For example, SharePoint Online site and list parameters can be stored as environment variables, which allow you to connect to different sites and lists in different environments without needing to modify the apps and flows.
+- Package and transport your customization and configuration together and manage them in a single location.
+- Package and transport secrets, such as credentials used by different objects, separately from the objects that use them.
+- One environment variable can be used across many different solution objects, whether they're the same type of component or different. For example, a canvas app and a flow can use the same environment variable. When the value of the environment variable needs to change, you only need to change one value.
 
 Additionally, if you need to retire a data source in production environments, you can update the environment variable values with information for the new data source. The apps and flows don't require modification and will start using the new data source.
 
-The environment variables can be unpacked and stored in source control. You may also store different environment variables values files for the separate configuration needed in different environments. Solution Packager can then accept the file corresponding to the environment the solution will be imported to.
+The environment variables can be unpacked and stored in source control. You may also store different environment variables values files for the separate configuration needed in different environments. Solution Packager can then accept the file corresponding to the environment the solution is imported to.
 
-#### Connection References in a solution
+#### Connection references in a solution
 
-A connection is a proxy or a wrapper around an API that allows the underlying service to talk to Microsoft Power Automate, Microsoft Power Apps, and Azure Logic Apps. It provides a way for users to connect their accounts and use a set of prebuilt actions and triggers to build their apps and workflows.
+A connection is a proxy or a wrapper around an API that allows the underlying service to talk to Power Automate, Power Apps, and Azure Logic apps. It provides a way for users to connect their accounts and use a set of prebuilt actions and triggers to build their apps and workflows.
 
-A connection reference is a solution component that contains information about a connector. Both canvas app and operations within a Power Automate flow bind to a connection reference. You can import your connection reference into a target environment with no further configuration needed after the import is completed. To change a specific connection associated with a canvas app or flow, you edit the connection reference component within the solution.
+A connection reference is a solution component that contains information about a connector. Both canvas app and operations within a Power Automate flow bind to a connection reference. You can import your connection reference into a target environment with no further configuration needed after the import is completed. To change a specific connection associated with a canvas app or flow, edit the connection reference component within the solution.
