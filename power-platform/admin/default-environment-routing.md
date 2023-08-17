@@ -3,7 +3,7 @@ title: Default environment routing (preview)
 description: Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/07/2023
+ms.date: 08/17/2023
 author: sericks007 
 ms.author: sericks 
 ms.reviewer: sericks
@@ -50,14 +50,16 @@ Before you enable the **Default environment routing** feature, consider the foll
 
 -   New makers are assigned the admin role in their newly created developer environments.
 
-### Enable the feature
+### Enable the feature in Power Platform admin center
 
-1. Make sure the **Developer environment assignment** setting is enabled for **Everyone**. 
-1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), in navigation pane, select **Settings**.
+1. On the **Tenent settings** page, select **Environment routing (preview)**.
+1. In the **Environment routing** pane, turn on the **Create personal developer enviroments for new makers** option.
 
---- We need to add PPAC UI settings (A description +  ascreenshot)
+   :::image type="content" source="media/environment-routing.png" alt-text="Turn on the 'Create personal developer environments for new makers' option.":::
 
-Alternatively you can --- 
+### Enable the feature with PowerShell
+
 1. Run the following commands in PowerShell.
 
     a. Log in to your tenant account.
