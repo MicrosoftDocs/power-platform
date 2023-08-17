@@ -23,12 +23,8 @@ The Audit Log Sync flow connects to the Microsoft 365 audit log to gather teleme
 
 The Center of Excellence (CoE) Starter Kit works without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
-
-
-
-
 > [!IMPORTANT]
-> Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup in this article. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+> Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup in this article. This article assumes you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 >
 > Only set up the Audit Log solution if you've chosen [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
@@ -37,11 +33,14 @@ The Center of Excellence (CoE) Starter Kit works without this flow, but the usag
 ## Before you use the audit log connector
 
 1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide)
-1. The user identity running the flow must have permission to the audit logs. Minimum permissions for this described here: [Before you search the audit logs](/microsoft-365/compliance/audit-log-search?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log)
-1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
-1. A Global Admin is required to configure the Azure AD app registration.
 
-The Office 365 Management APIs use Azure Active Directory (Azure AD) to provide authentication services that you can use to grant rights for your application to access them.
+1. The user identity running the flow must have permission to the audit logs. Minimum permissions for this are described here: [Before you search the audit logs](/microsoft-365/compliance/audit-log-search?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log)
+
+1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+
+1. A Global Admin is required to configure the Azure Active Directory (Azure AD) app registration.
+
+The Office 365 Management APIs use Azure AD to provide authentication services that you can use to grant rights for your application to access them.
 
 ### Create an Azure AD app registration for the Office 365 Management API
 
@@ -91,7 +90,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-1. Go to [Power Apps](https://make.powerapps.com) > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector is listed here; it has been imported with the core components solution.
+1. Go to **[Power Apps](https://make.powerapps.com)** > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector is listed here; it has been imported with the core components solution.
 1. Select **Edit**.
 
     ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
@@ -121,9 +120,9 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Don't change the **Tenant ID**.
 
-1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://<span>login</span>.microsoftonline.us/ for a GCC High or DoD tenant.
+1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://<span>login</span>.microsoftonline.us/ for a GCC high or DoD tenant.
 
-1. Set the **Resource URL** to https://<span>manage</span>.office.com for a commercial tenant, https://<span>manage</span>-gcc.office.com for a GCC tenant, https://<span>manage</span>.office365.us for a GCC high tenant and https://<span>manage</span>.protection.apps.mil for a DoD tenant.
+1. Set the **Resource URL** to https://<span>manage</span>.office.com for a commercial tenant, https://<span>manage</span>-gcc.office.com for a GCC tenant, https://<span>manage</span>.office365.us for a GCC high tenant, and https://<span>manage</span>.protection.apps.mil for a DoD tenant.
 
 1. Select **Update Connector**.
 
@@ -134,7 +133,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 ### Update Azure AD app registration with the redirect URL
 
-1. Go back to the Azure portal and your app registrations.
+1. Go to the Azure portal and your app registrations.
 
 1. Under **Overview**, select **Add a Redirect URI**.
 
@@ -159,7 +158,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription.](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the **directory (tenant) ID** - copied earlier from the **App Registration** overview page in Azure AD - into the **Tenant** field.
+1. Paste the **directory (tenant) ID**—copied earlier from the **App Registration** overview page in Azure AD—into the **Tenant** field.
 1. Paste the **directory (tenant) ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
@@ -167,6 +166,11 @@ Go back to the custom connector to set up a connection to the custom connector a
 You should see a (200) status returned, which means the query was successful.
 
 ![Successful status being returned from the StartSubscription activity.](media/coe44.png "Successful status being returned from the StartSubscription activity")
+
+
+
+
+
 
 > [!IMPORTANT]
 > If you have previously enabled the subscription, you will see a **(400) The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
