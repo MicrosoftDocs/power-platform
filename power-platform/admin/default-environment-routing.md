@@ -113,7 +113,7 @@ $tenantSettings.powerPlatform.governance
 
 *disableAdminDigest: False*
 
-*additionalAdminDigestEmailRecipients: AllanD@M365x95509069.OnMicrosoft.com*
+*additionalAdminDigestEmailRecipients: email@myorg.com*
 
 *disableDeveloperEnvironmentCreationByNonAdminUsers: False*
 
