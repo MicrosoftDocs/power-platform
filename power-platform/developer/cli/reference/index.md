@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 7/13/2023
+ms.date: 8/16/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -40,6 +40,7 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac plugin](plugin.md)|Commands for working with Dataverse plug-in class library|
 |[pac solution](solution.md)|Commands for working with Dataverse solution projects|
 |[pac telemetry](telemetry.md)|Manage telemetry settings.|
+|[pac tests](tests.md)|(Preview) Execution of automated tests for a Power App|
 |[pac tool](tool.md)|Power Platform tools that can be installed and launched.|
 |[pac virtual-agent](virtual-agent.md)|Commands for working with Power Virtual Agent bots|
 
