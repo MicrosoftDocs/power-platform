@@ -366,19 +366,19 @@ Based on your analysis, if you determine that the affected flows aren't being us
 
 CoE Starter Kit doesn’t have a tagging option today. However, it could be a customization that you could add to the Starter Kit.
 
-Create a Table called Tags and set up an N-N relationship with App, Flows and other inventory tables. You can then Create a Tag and associate these records with the appropriate inventory items. For better user experience, you can embed a grid on the Main form of apps, flows, and other inventory tables. This option is recommended as it has referential consistency.
+Create a table called **Tags** and set up an N-N relationship with the app, flows, and other inventory tables. You can then create a tag and associate these records with the appropriate inventory items. For a better user experience, you can embed a grid on the **Main** form of apps, flows, and other inventory tables. This option is recommended as it has referential consistency.
 
-Create a Text field on each inventory table and use that to capture a Text(tag) that you can later use.
+Create a text field on each inventory table and use that to capture the text (tag) that you can later use.
 
-If you want a more fixed list Create a Global Option Set and add that to all the inventory tables and their forms as well.
+If you want a more fixed list, create a global option set and add that to all the inventory tables and their forms, as well.
 
 ### Quarantine option
 
-If you're uncertain about the necessity of certain applications, you could try isolating them for a while and put them in quarantine, during this state, the app can only be used by the owner. After a suitable amount of time has elapsed and no response from the owner has been received, you can feel more secure in removing them from the environment.
+If you're uncertain about the necessity of certain applications, you can try isolating them for a while and put them in quarantine during this state. The app can only be used by the owner. After a suitable amount of time has elapsed and if no response from the owner has been received, you can remove them from the environment.
 
-Flows don’t support quarantine state, but a similar approach can be used by stopping the flow and check if it gets activated again by the owner.
+Flows don’t support the quarantine state, but a similar approach can be used by stopping the flow and checking if it gets activated again by the owner.
 
-In both cases having proper communication with the owner is important, for instance, using Email or messages in Microsoft Teams.
+In both cases, having proper communication with the owner is important.
 
 ### Only Delete option
 
