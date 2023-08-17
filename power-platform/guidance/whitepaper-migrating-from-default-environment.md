@@ -448,11 +448,11 @@ The goal is to have all Power Platform components added to a single solution, wh
 
 - **Can I make existing objects solution aware?**
 
-      Yes, with the guidance provided in the sections following you'll understand the different options available.
+  Yes, with the guidance provided in the sections following you'll understand the different options available.
 
 - **I'm building an app using non-premium connectors. Can I still use solutions?**
 
-      Yes, you can still use solutions in a Dataverse enabled environment. The app and connection references can all be part of one solution package. This helps to move the app into a new environment. You can iterate the development of the app in a Developer environment and deploy it to the downstream environments by exporting the solution and importing it into the target environment. Also, the solutions zip file can be stored in the file repository for future reference and works for back-up and restore purposes.
+  Yes, you can still use solutions in a Dataverse enabled environment. The app and connection references can all be part of one solution package. This helps to move the app into a new environment. You can iterate the development of the app in a Developer environment and deploy it to the downstream environments by exporting the solution and importing it into the target environment. Also, the solutions zip file can be stored in the file repository for future reference and works for back-up and restore purposes.
 
 ### Definitions
 
