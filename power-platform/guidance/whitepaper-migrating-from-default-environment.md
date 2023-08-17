@@ -341,8 +341,6 @@ Example of implementation to identify the connection:
 1. Use the **Get Tenant DLP Policy** connector specifying the DLP in question.
 1. The result is two arrays, business data and non-business data. As an example, the Twitter connector shows this code:
 
-   | |
-   |---|
 
    ```
    [
@@ -382,22 +380,22 @@ In both cases, having proper communication with the owner is important.
 
 ### Only Delete option
 
-If there's really no loss of productivity and reuse of the objects as determined this option is the best. Most Test flow and apps fall into this category.
+If there's really no loss of productivity and reuse of the objects, this option is the best. Most test flows and apps fall into this category.
 
 In this case, once the list of objects is identified, a PowerShell batch could be developed, and a csv list passed to it, which would then delete all those assets.
 
-As you loop through the IDs of apps and flows the below command can be used to remove them from the default environment.
+As you loop through the IDs of apps and flows, the following command can be used to remove them from the default environment.
 
 - Remove-AdminFlow -EnvironmentName Default-[Guid] -FlowName [Guid]
 - Remove-AdminPowerApp -AppName [Guid] -EnvironmentName [Guid]
 
 ### Objects backup and Delete option
 
-As an example, assume that Power Automate flow is created to address a specific seasonal need, but it hasn't been used for a long time. In this case, it’s good to take a backup of the component before deleting the component.
+As an example, assume that a Power Automate flow is created to address a specific seasonal need, but that it hasn't been used for a long time. In this case, it’s good to take a backup of the component before deleting the component.
 
-To make a backup of the component either options of [Individual Migration](#) or [Mass Migration](#) could be used to generate an exported solution. This can then be added to either a file repository of your choice or to OneDrive location.
+To make a backup of the component, either options of [Individual Migration](#) or [Mass Migration](#) could be used to generate an exported solution. This can then be added to either a file repository of your choice or to a OneDrive location.
 
-Once the backup is secured then the options from Delete above can be applied to complete the cleanup process.
+After the backup is secured, then the options from Delete above can be applied to complete the clean-up process.
 
 ### Role based communication
 
@@ -407,54 +405,54 @@ Effective communication is crucial during a migration process. Communication hap
 
 In the migration process there are typically different audiences involved in communication. Here are the most typical key stakeholders and their roles:
 
-1. **App owners** – app owners are individuals or teams responsible for the development, maintenance, and management of specific applications. They have in-depth knowledge of the functionality, workflow, and configuration of their applications. Communication with app owners is crucial to understanding their app-specific requirements, gathering feedback, addressing concerns, and ensuring a smooth migration of their apps to the new environment.
-1. **App users** – app users are the individuals who utilize the applications regularly to perform their tasks or workflows. They may have varying levels of technical expertise and familiarity with the applications. Communication with app users is important to inform them about the migration, provide updates on any changes or disruptions that may occur and offer training or support to ensure a seamless transition and minimize any impact on their day-to-day operations.
-1. **Department Heads/Managers**: Department heads or managers play a significant role in the migration process as they oversee the operations and strategic objectives of their respective departments. They need to be informed about the migration timeline, potential impacts, and benefits. Communication with department heads allows them to provide necessary guidance, align the migration with departmental goals, and ensure smooth coordination within their teams.
-1. **IT/Technical Teams**: IT or technical teams are responsible for the infrastructure, systems, and overall technical aspects of the migration. They're involved in the planning, execution, and support of the migration process. Communication with IT teams is essential to discuss technical requirements, dependencies, security considerations, and any necessary infrastructure or configuration changes that need to be implemented for the successful migration.
-1. **Security and Compliance Teams**: Security and compliance teams play a critical role in ensuring data security, privacy, and regulatory compliance during the migration. They provide guidance and ensure that appropriate measures are in place to protect sensitive information. Communication with security and compliance teams involves discussing security requirements, encryption protocols, access controls, and any compliance-related considerations throughout the migration process.
-1. **Executive Management:** Executive management, including C-level executives or senior leadership, should be kept informed about the migration process. They may not require detailed technical information but should be aware of the project's objectives, progress, and potential impacts on the organization. Communication with executive management helps ensure their support, alignment with strategic goals, and resource allocation for the migration.
+- **App owners** – App owners are individuals or teams responsible for the development, maintenance, and management of specific applications. They have in-depth knowledge of the functionality, workflow, and configuration of their applications. Communication with app owners is crucial to understanding their app-specific requirements, gathering feedback, addressing concerns, and ensuring a smooth migration of their apps to the new environment.
+- **App users** – App users are the individuals who utilize the applications regularly to perform their tasks or workflows. They may have varying levels of technical expertise and familiarity with the applications. Communication with app users is important to inform them about the migration, provide updates on any changes or disruptions that may occur, offer training or support to ensure a seamless transition, and minimize any impact on their day-to-day operations.
+- **Department heads or managers**: Department heads or managers play a significant role in the migration process as they oversee the operations and strategic objectives of their respective departments. They need to be informed about the migration timeline, potential impacts, and benefits. Communication with department heads allows them to provide necessary guidance, align the migration with departmental goals, and ensure smooth coordination within their teams.
+- **IT or technical teams**: IT or technical teams are responsible for the infrastructure, systems, and overall technical aspects of the migration. They're involved in the planning, execution, and support of the migration process. Communication with IT teams is essential to discuss technical requirements, dependencies, security considerations, and any necessary infrastructure or configuration changes that need to be implemented for the successful migration.
+- **Security and compliance teams**: Security and compliance teams play a critical role in ensuring data security, privacy, and regulatory compliance during the migration. They provide guidance and ensure that appropriate measures are in place to protect sensitive information. Communication with security and compliance teams involves discussing security requirements, encryption protocols, access controls, and any compliance-related considerations throughout the migration process.
+- **Executive management:** Executive management, including C-level executives or senior leadership, should be kept informed about the migration process. They may not require detailed, technical information, but should be aware of the project's objectives, progress, and potential impacts on the organization. Communication with executive management helps ensure their support, alignment with strategic goals, and resource allocation for the migration.
 
-It's important to tailor communication strategies and messages for each audience, considering their specific needs, concerns and level of technical understanding. Clear and timely communication with all stakeholders fosters collaboration, ensures smooth coordination and mitigates any potential challenges during the migration process.
+It's important to tailor communication strategies and messages for each audience, considering their specific needs, concerns and level of technical understanding. Clear and timely communication with all stakeholders fosters collaboration, ensures smooth coordination, and mitigates any potential challenges during the migration process.
 
 #### Cadence
 
-The cadence or frequency of communications with stakeholders during a migration process will vary based on the specific needs and dynamics of the project. It's important to establish regular and consistent communication to keep stakeholders informed, address concerns and maintain alignment throughout the migration. Here are some considerations for determining the cadence of communication with different stakeholders:
+The cadence or frequency of communication with stakeholders during a migration process will vary based on the specific needs and dynamics of the project. It's important to establish regular and consistent communication to keep stakeholders informed, address concerns, and maintain alignment throughout the migration. Here are some considerations for determining the cadence of communication with different stakeholders:
 
-1. **App owners:** maintaining frequent communication with app owners throughout the migration process. This includes regular updates on the progress of the migration, addressing any concerns and involving app owners in decision making when necessary. The frequency of communication can vary depending on the complexity and criticality of the app, but it's recommended to have regular check-ins, and timely responses to inquiries.
-1. **App users:** Engage app users through regular communication channels to keep them informed about the migration. This should include announcements, emails, newsletters or even dedicated training sessions or workshops. The frequency of communication with app users may vary, but it's crucial to provide updates at key milestones, inform them about any changes or disruptions that may affect them and offer support and guidance throughout the process.
-1. **Department heads and managers:** Communication with department heads and managers can occur at regular intervals or as needed based on the significance of the migration to their departments. Provide periodic updates on the overall progress, timelines, and impact on their teams.
-1. **IT/ technical teams**: Engage in regular communication with IT and technical teams involved in the migration. This includes ongoing collaboration, sharing updates on technical, addressing technical questions or issues, and coordinating any necessary configurations or changes. Frequency will likely be higher in the planning and analysis phase and the implementation phase with regular touchpoints or meetings to ensure smooth coordination.
+- **App owners:** Maintaining frequent communication with app owners throughout the migration process is important. This includes regular updates on the progress of the migration, addressing any concerns, and involving app owners in decision making, when necessary. The frequency of communication can vary depending on the complexity and criticality of the app, but it's recommended to have regular check-ins and timely responses to inquiries.
+- **App users:** Engage app users through regular communication channels to keep them informed about the migration. This should include announcements, emails, newsletters, or even dedicated training sessions or workshops. The frequency of communication with app users may vary, but it's crucial to provide updates at key milestones, inform them about any changes or disruptions that may affect them, and offer support and guidance throughout the process.
+- **Department heads and managers:** Communication with department heads and managers can occur at regular intervals or as needed, based on the significance of the migration to their departments. Provide periodic updates on the overall progress, timelines, and impact on their teams.
+- **IT or technical teams**: Engage in regular communication with IT and technical teams involved in the migration. This includes ongoing collaboration, sharing updates on technical questions or issues, and coordinating any necessary configurations or changes. Frequency will likely be higher in the planning and analysis phase. During the implementation phase, have regular touchpoints or meetings to ensure smooth coordination.
 
 ### Resourcing
 
 Managing resources effectively is crucial for a successful migration. Here are some key aspects to consider when it comes to resourcing management during a migration:
 
-1. **Resource identification:** Identify the resources required for the migration project, including individuals or teams responsible for tasks such as premigration preparations, data migration, testing, deployment, configuration, and post-migration support. Determine the specific skills, expertise, and availability needed for each role.
-1. **Resources allocation:** Assign resources to their respective roles and tasks based on their skills, availability, and workload capacity. Ensure that resources are appropriately allocated to balance the workload and meet project deadlines. Consider any dependencies or constraints that may impact resource allocation, such as shared resources across multiple projects.
-1. **Skills development and training:** Assess the skills and knowledge gaps within the team and provide necessary training or upskilling opportunities to ensure that resources are adequately equipped for their assigned tasks. This may involve providing training sessions, workshops, or access to relevant resources and documentation.
-1. **Communication and collaboration:** Foster effective communication and collaboration among resources involved in the migration. Encourage regular status updates, coordination meetings, and knowledge sharing to ensure that all team members are aligned, informed, and working together towards common goals.
-1. **Contingency planning:** Anticipate potential resource constraints or risks and develop contingency plans. Have backup resources identified or cross-trained in critical roles to mitigate any unforeseen challenges, such as unexpected absences or resource limitations.
-1. **Stakeholder engagement:** Keep stakeholders, such as app owners, department heads, and management, informed about resource allocation and any potential impact on timelines or deliverables. Regularly communicate resource updates, progress reports, and any adjustments to resourcing plans to manage expectations and maintain transparency.
+- **Resource identification:** Identify the resources required for the migration project, including individuals or teams responsible for tasks such as premigration preparations, data migration, testing, deployment, configuration, and post-migration support. Determine the specific skills, expertise, and availability needed for each role.
+- **Resources allocation:** Assign resources to roles and tasks based on the resource's skills, availability, and workload capacity. Ensure that resources are appropriately allocated to balance the workload and meet project deadlines. Consider any dependencies or constraints that may impact resource allocation, such as shared resources across multiple projects.
+- **Skills development and training:** Assess the skills and knowledge gaps within the team and provide necessary training or upskilling opportunities to ensure that resources are adequately equipped for their assigned tasks. This may involve providing training sessions, workshops, or access to relevant resources and documentation.
+- **Communication and collaboration:** Foster effective communication and collaboration among resources involved in the migration. Encourage regular status updates, coordination meetings, and knowledge sharing to ensure that all team members are aligned, informed, and working together towards common goals.
+- **Contingency planning:** Anticipate potential resource constraints or risks and develop contingency plans. Have backup resources identified or cross-trained in critical roles to mitigate any unforeseen challenges, such as unexpected absences or resource limitations.
+- **Stakeholder engagement:** Keep stakeholders, such as app owners, department heads, and management, informed about resource allocation and any potential impact on timelines or deliverables. Regularly communicate resource updates, progress reports, and any adjustments to resourcing plans to manage expectations and maintain transparency.
 
-### Solution Aware (be part of a solution)
+### Solution aware (be part of a solution)
 
-Microsoft Power Platform is a collection of low-code tools that have their own ALM processes. For example, a Canvas app can be exported as a zip file and imported into a new environment, while a Cloud flow can be exported and imported as zip files. Dataverse objects use Solutions as a packaging tool, which can also be exported as a zip file and imported into a new environment.
+Power Platform is a collection of low-code tools that have their own ALM processes. For example, a canvas app can be exported as a zip file and imported into a new environment, while a cloud flow can be exported and imported as zip files. Dataverse objects use solutions as a packaging tool, which can also be exported as a zip file and imported into a new environment.
 
-There are different ways of exporting your apps and flows to move them to a new environment. Solutions are a single file that can include nearly anything your makers build in Microsoft Power Platform and move them together.  Canvas apps and cloud flows can be exported directly.
+There are different ways of exporting your apps and flows to move them to a new environment. Solutions are a single file that can include nearly anything your makers build in Power Platform and move them together.  Canvas apps and cloud flows can be exported directly.
 
-Over time, Microsoft Power Platform objects have evolved to be solution aware. Now apps and flows can be solution aware by default, though this requires manual activation. Makers could still create apps and flows from make.powerapps.com and make.powerautomate.com, which can be classified as non-Solution aware, and these can be exported individually, or add them to a solution. By adding a Solution, the maker can take advantage of Environment variables and Connection references to configure and deploy endpoints across environments.
+Over time, Power Platform objects have evolved to be solution aware. Now apps and flows can be solution aware by default, though this requires manual activation. Makers could still create apps and flows from make.powerapps.com and make.powerautomate.com, which can be classified as non-solution aware, and these can be exported individually, or add them to a solution. By adding a solution, the maker can take advantage of environment variables and connection references to configure and deploy endpoints across environments.
 
-The goal is to have all Microsoft Power Platform components added to a single Solution, which allows multiple components to be easily moved as a single unit between environments.
+The goal is to have all Power Platform components added to a single solution, which allows multiple components to be easily moved as a single unit between environments.
 
 #### Common questions about solutions
 
-*Can I make existing objects solution aware?*
+- **Can I make existing objects solution aware?**
 
-Yes, with the guidance provided in the sections following you'll understand the different options available.
+      Yes, with the guidance provided in the sections following you'll understand the different options available.
 
-*I'm building an app using non-Premium connectors. Can I still use Solutions?*
+- **I'm building an app using non-premium connectors. Can I still use solutions?**
 
-Yes, you can still use solutions in a Dataverse enabled environment. The app and connection references can all be part of a one solution package. This helps to move the app into a new environment. You can iterate the development of the app in a Developer environment and deploy it to the downstream environments by exporting the solution and importing it into the target environment. Also, the Solutions zip file can be stored in the file repository for future reference and works as a back-up and restore purposes.
+      Yes, you can still use solutions in a Dataverse enabled environment. The app and connection references can all be part of one solution package. This helps to move the app into a new environment. You can iterate the development of the app in a Developer environment and deploy it to the downstream environments by exporting the solution and importing it into the target environment. Also, the solutions zip file can be stored in the file repository for future reference and works for back-up and restore purposes.
 
 ### Definitions
 
