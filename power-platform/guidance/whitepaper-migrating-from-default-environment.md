@@ -3,7 +3,7 @@ title: Migrate apps and flows from the default environment
 description: Learn how to migrate apps and flows from the default environment.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/15/2023
+ms.date: 08/17/2023
 ms.subservice: guidance
 author: ravi-chada
 ms.author: ravichada
@@ -308,36 +308,38 @@ A strong governance strategy is essential when migrating or moving specific obje
 
 ### Identification of Objects using DLP
 
-DLP policy-based identification is helpful to define target environments for your apps and flows. There might be an App or Flows that are using a connector that is blocked by the DLP or a mix of Business and Non-Business connectors, which, upon DLP activation, will stop working. Noncompliant objects based on DLP.
+DLP policy-based identification is helpful to define target environments for your apps and flows. There might be apps or flows that are using a connector that is blocked by the DLP or a mix of business and non-business connectors, which, upon DLP activation, will stop working. Noncompliant objects based on DLP.
 
-To prevent downtime of potential critical objects, due DLPs, part of CoE Starter Kit, you can find **DLP editor (impact analysis) tool**. The goal of the DLP Editor is to allow admins to see the impact of existing policies or the potential impact of policy changes. It provides admins with a view of impacted apps and flows, and resources that would be disabled if new or updated policies were to be enforced. The app can be used to review existing policies, change existing policies, and mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
+To prevent downtime of potential critical objects, due to DLP, part of CoE Starter Kit, you can find **DLP editor (impact analysis) tool**. The goal of the DLP editor is to allow admins to see the impact of existing policies or the potential impact of policy changes. It provides admins with a view of impacted apps and flows, and resources that would be disabled if new or updated policies were to be enforced. The app can be used to review existing policies, change existing policies, and mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
 
-Update existing DLP policies to review impact:
+Update existing DLP policies to review impact.
 
 :::image type="content" source="media/image5.gif" alt-text="Update existing DLP policies to review impact.":::
 
-Follow this [link](/power-platform/guidance/coe/after-setup-tenant-hygiene) to find more information about the DLP Editor.
+Follow the [Establishing tenant hygiene with the CoE Starter Kit](/power-platform/guidance/coe/after-setup-tenant-hygiene) article to find more information about the DLP editor.
 
-Before turning on the Data Loss Prevention (DLP) feature, you can identify which Apps/Flows will be affected and alert the makers. The DLP Editor can send a list of all the Apps/Flows that will be affected to an email address, which will generate a .csv file for each type of object.
+Before turning on the DLP feature, you can identify which apps and flows will be affected and alert the makers. The DLP editor can send a list of all the apps and flows that will be affected to an email address, which will generate a .csv file for each type of object.
 
-Using The DLP Editor v2, in the "Impact Analysis” choose “Export impacted apps and flows to CSV.”
+Using The DLP editor version 2.0, in the **Impact Analysis** area, choose **Export impacted apps and flows to CSV**.
 
-:::image type="content" source="media/image6.png" alt-text="Using The DLP Editor v2.":::
+:::image type="content" source="media/image6.png" alt-text="Use the DLP editor version 2.0.":::
 
 Each generated csv file (flow.csv and apps.csv) will have information regarding:
 
-1. Name of App/Flow
-1. Owner of App/Flow
-1. OwnerEmail of App/Flow
-1. Connections, all connections used by App/Flow
-1. ID of App/flow to unique identify the object
-1. EnvironmentID where the App/Flow is located
+1. Name of the apps and flows.
+1. Owner of the apps and flows.
+1. OwnerEmail of the apps and flows.
+1. All connections used by the apps and flows.
+1. ID of the apps and flows to identify the object.
+1. EnvironmentID where the apps and flows are located.
 
-Notice the “Connections” will give you the list of all connections used by the App or Flow, if you need to identify exactly which connector is impacted by the DLP in question, an automation is needed at this time, we're evaluating changing this situation in the tool. <br><br>Example of implementation to identify the connection:
+Notice the **Connections** give you the list of all connections used by the app or flow. If you need to identify exactly which connector is impacted by the DLP in question, an automation is needed at this time. We're evaluating changing this situation in the tool.
 
-1. Create a Power Automate Flow.
-1. Use the “Get Tenant DLP Policy” connector specifying the DLP in question.
-1. The result is two arrays, Business Data and Non-Business Data, as an example the Twitter connector will show as below:
+Example of implementation to identify the connection:
+
+1. Create a Power Automate flow.
+1. Use the **Get Tenant DLP Policy** connector specifying the DLP in question.
+1. The result is two arrays, business data and non-business data. As an example, the Twitter connector shows this code:
 
    | |
    |---|
@@ -353,12 +355,12 @@ Notice the “Connections” will give you the list of all connections used by t
    ]
    ```
 
-4. From this list you have access to the “name” of the connector that will match with the name list of the csv App/Flow Connection column.
-1. By converting the csv to Excel format and placing it in your OneDrive, you can read all the impacted Apps/Flows from Power Automate and check which connection is the affected based on logic to compare connections with connector names.
-1. After you have a match on which connection is causing the impact you can generate a new list with App/Flow ID and connector affected by the DLP.
-1. Use the earlier information to notify the maker about the future impact, you can use Power Cards to collect the feedback from the maker if the App/Flow can be deleted or need to be migrated to another Environment.
+1. From this list, you have access to the name of the connector that matches with the name list of the csv app or flow **Connection** column.
+1. By converting the csv to Excel format and placing it in your OneDrive, you can read all the impacted apps and flows from Power Automate. Check which connection is affected based on logic that compares connections with connector names.
+1. After you have a match on which connection is causing the impact, generate a new list with the app or flow ID and the connector affected by the DLP.
+1. Use the earlier information to notify the maker about the future impact. You can use Power Cards to collect the feedback from the maker if the app or flow can be deleted or needs to be migrated to another environment.
 
-Based on your analysis, if you determine that the affected Flows aren't being used (it hasn't been running for a while, isn't shared with anyone, hasn't been updated in a while), you can put it in quarantine and send an email to the make with instructions on how to move it to a different environment. This encourages a DIY (Do it Yourself) culture and removes the shadow IT. In some situations, you might want to exempt some objects from the DLP. For instance, you would like to apply a specific DLP only for new resources created and exempt the current resources. More information about DLP resource exemption can be found [here](/power-platform/admin/dlp-resource-exemption).
+Based on your analysis, if you determine that the affected flows aren't being used, you can put it in quarantine and send an email to the maker with instructions on how to move it to a different environment. This encourages a do-it-yourself (DIY) culture and removes the shadow IT. In some situations, you might want to exempt some objects from the DLP. For instance, you may want to apply a specific DLP only for new resources that have been created and exempt the current resources. For more information about DLP resource exemption, see [DLP resource exemption](/power-platform/admin/dlp-resource-exemption).
 
 ### Tagging options
 
