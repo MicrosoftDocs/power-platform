@@ -10,12 +10,6 @@
           href: plan.md
         - name: Create a developer environment
           href: create-developer-environment.md
-    - name: Unified developer experience
-      items:
-        - name: Unified developer experience overview
-          href: unified-experience\unified-exp-overview.md
-        - name: Deploy packages
-          href: unified-experience\unified-exp-deploy-packages.md
     - name: Fusion development
       href: fusion-development.md
     - name: ALM for developers
@@ -71,6 +65,12 @@
           href: administer-catalog.md
         - name: View, submit, and install catalog items
           href: submit-catalog-items.md
+    - name: Unified developer experience
+      items:
+        - name: Unified developer experience overview
+          href: unified-experience\unified-exp-overview.md
+        - name: Deploy packages
+          href: unified-experience\unified-exp-deploy-packages.md
     - name: Tools
       expanded: true
       items:
