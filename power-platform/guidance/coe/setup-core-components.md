@@ -196,7 +196,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >
 > ![Error when turning on a flow with an insufficient license.](media/flowpaginationerror.png "Error when turning on a flow with an insufficient license.")
 >
-> Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
+> Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency, looping, and debatching limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 
 >[!NOTE]
 >Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow—for example, looking at who is using the Send Email or Get Item actions.
