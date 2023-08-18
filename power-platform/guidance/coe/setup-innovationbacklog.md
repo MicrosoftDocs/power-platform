@@ -92,7 +92,7 @@ Learn more: [Turn flows on](/power-automate/disable-flow#turn-flows-on)
 
 1. Select **Go Icon**.
 
-    ![Select Go Icons to update icons.](media/ib-5.png "Select Go Icons to update icons")
+    ![Select Go Icon to update icons.](media/ib-5.png "Select Go Icons to update icons")
 
 1. Select each non-software tool, add an icon from the **ToolIcons** folder, and select **Add** to save the icon.
 
@@ -102,11 +102,11 @@ Learn more: [Turn flows on](/power-automate/disable-flow#turn-flows-on)
 
    ![Open the Innovation Backlog app.](media/ib-6.png "Open the Innovation Backlog app")
 
-1. Copy the **Web Link**
+1. Copy the **Web Link**.
 
    ![Copy the Web Link.](media/ib-9.png "Copy the Web Link")
 
-1. Go to [make.powerapps.com](<https://make.powerapps.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**
+1. Go to [make.powerapps.com](<https://make.powerapps.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**.
 
    ![Open the Default Solution and filter to only show Environment Variables.](media/ib-7.png "Open the Default Solution and filter to only show Environment Variables")
 
@@ -120,21 +120,21 @@ You can now [use the Innovation Backlog app](innovationbacklog-components.md).
 
 Before you begin:
 
-- decide which team to add the Innovation Backlog app to or create a new team.
-- [install the Power Apps app](/powerapps/teams/install-personal-app) in Teams.
-- [create your first app](/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
+- Decide which team to add the Innovation Backlog app to or create a new team.
+- [Install the Power Apps app](/powerapps/teams/install-personal-app) in Teams.
+- [Create your first app](/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
 
 1. Download the CoE Starter Kit compressed file from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload).
 
-1. Extract the zip file.
+1. Extract the .zip file.
 
 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you want to add the solution to.
 
-1. Select **See All**
+1. Select **See All**.
 
     ![Open the Power Apps app in Teams to import a new solution.](media/ibteams-1.png "Open the Power Apps app in Teams to import a new solution.")
 
-1. Select **Import**
+1. Select **Import**.
 
 1. In the pop-up window, select **Choose File**.
 
