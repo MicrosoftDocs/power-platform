@@ -51,7 +51,7 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
-1. Establish connections to the Microsoft Dataverse (Current Environment), Microsoft Dataverse, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
+1. Establish connections to the Microsoft Dataverse (Current Environment), Microsoft Dataverse, Power Apps for Makers, and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
      ![Establish connections to activate your solution.](media/ibteams-2.png "Establish connections to activate your solution.")
 
@@ -73,28 +73,46 @@ To populate some of the tables with default values, turn on the following flows:
 Learn more: [Turn flows on](/power-automate/disable-flow#turn-flows-on)
 
 1. Now, run the flows to populate some of the tables with default values.
-    1. Open the **Add pain points** cloud flow and select **Run** > **Run Flow**.
-        ![Run Add Pain points cloud flow.](media/ib-2.png "Run Add Pain points cloud flow")
-    1. Open the **Update Software Tools** cloud flow and select **Run** > **Run Flow**.
-        ![Run Update Software Tools cloud flow.](media/ib-3.png "Run Update Software Tools cloud flow")
-    1. Wait for both of them to finish (This might take 10 mins.)
 
-1. Extract the **ToolIcons.zip**. You can find this file in the initial download.
+    1. Open the **Add pain points** cloud flow and select **Run** > **Run Flow**.
+
+       ![Run Add pain points cloud flow.](media/ib-2.png "Run Add pain points cloud flow")
+    
+    1. Open the **Update Software Tools** cloud flow and select **Run** > **Run Flow**.
+
+        ![Run Update Software Tools cloud flow.](media/ib-3.png "Run Update Software Tools cloud flow")
+    
+    1. Wait for both of them to finish. (This might take 10 minutes.)
+
+1. Extract **ToolIcons.zip**. You can find this file in the initial download.
 
 1. Open the **Innovation Backlog Admin** app.
+
     ![Open the Innovation Backlog Admin app.](media/ib-4.png "Open the Innovation Backlog Admin app")
+
 1. Select **Go Icon**.
-        ![Select Go Icons to update icons.](media/ib-5.png "Select Go Icons to update icons")
+
+    ![Select Go Icons to update icons.](media/ib-5.png "Select Go Icons to update icons")
+
 1. Select each non-software tool, add an icon from the **ToolIcons** folder, and select **Add** to save the icon.
-    ![Add an icon for a non-software tool in the Admin app.](media/ib-10.png "Add an icon for a non-software tool in the Admin app")
+
+   ![Add an icon for a non-software tool in the Admin app.](media/ib-10.png "Add an icon for a non-software tool in the Admin app")
+
 1. Go back to the Center of Excellence - Innovation Backlog solution and select the **Innovation Backlog** canvas app.
-    ![Open the Innovation Backlog app.](media/ib-6.png "Open the Innovation Backlog app")
+
+   ![Open the Innovation Backlog app.](media/ib-6.png "Open the Innovation Backlog app")
+
 1. Copy the **Web Link**
-        ![Copy the Web Link.](media/ib-9.png "Copy the Web Link")
+
+   ![Copy the Web Link.](media/ib-9.png "Copy the Web Link")
+
 1. Go to [make.powerapps.com](<https://make.powerapps.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**
-    ![Open the Default Solution and filter to only show Environment Variables.](media/ib-7.png "Open the Default Solution and filter to only show Environment Variables")
+
+   ![Open the Default Solution and filter to only show Environment Variables.](media/ib-7.png "Open the Default Solution and filter to only show Environment Variables")
+
 1. Select the **InnovationBacklogAppURL** variable and paste in the URL for the Innovation Backlog app.
-    ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
+
+   ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
 
 You can now [use the Innovation Backlog app](innovationbacklog-components.md).
 
