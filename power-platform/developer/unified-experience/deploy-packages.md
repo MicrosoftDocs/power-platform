@@ -112,5 +112,4 @@ You need to link the built artifact to the release pipeline that points to the c
 
 1. Observe changes once the deployment is complete  
 
-
-[!INCLUDE [footer-banner](../../../includes/footer-banner.md)]
+[!INCLUDE [footer-banner](../../includes/footer-banner.md)]
