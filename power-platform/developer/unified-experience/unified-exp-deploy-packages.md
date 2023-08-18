@@ -71,7 +71,7 @@ To generate a **Power Platform Unified** package:
 1. Check the box for **Create Power Platform Unified Package**.
 1. Add the **Platform** and **Application** version used to build the solution.
 1. Provide the path for deployable package location.
-1. Optionally choose to generate separate LCS format package.
+1. Optionally choose to generate separate LCS format package.     
 
    :::image type="content" source="../media/unified-experience/create-deployable-package.png" alt-text="Shows Azure DevOps Pipelines with create deployable package agent job selected.":::
 

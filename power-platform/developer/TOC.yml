@@ -10,6 +10,14 @@
           href: plan.md
         - name: Create a developer environment
           href: create-developer-environment.md
+    - name: Unified developer experience
+      items:
+        - name: Unified experience overview
+          href: unified-exp-overview.md
+        - name: Development lifecycle
+          href: unified-exp-development-lifecycle.md
+        - name: Deploy packages
+          href: unified-exp-deploy-packages.md
     - name: Fusion development
       href: fusion-development.md
     - name: ALM for developers
