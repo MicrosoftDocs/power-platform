@@ -1,5 +1,5 @@
 ---
-title: "Unified developer experience home page (preview)"
+title: "Unified developer experience for finance and operations apps developers (preview)"
 description: These topics describe tools that developers will use to simplify working across Microsoft Dataverse, Customer Engagement, and Finance and Operations by using a single tool and a consolidated environment.
 author: pvillads
 ms.date: 07/24/2023
@@ -12,7 +12,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.collection: get-started
 ---
-# Unified developer experience (preview)
+# Unified developer experience for finance and operations apps developers (preview)
 
 <!-- 
 This is a good place to start with an introduction that covers things at a high level.
