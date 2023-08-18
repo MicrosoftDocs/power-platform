@@ -3,7 +3,7 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/06/2023
+ms.date: 08/17/2023
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -37,7 +37,7 @@ When members of these group teams access these environments, their access rights
 
 #### Provision and deprovision users 
 
-Once the group team and its security role are established in an environment, user access to the environment is based on the user membership of the Azure AD groups. When a new user is created in the tenant, all the administrator needs to do is assign the user to the appropriate Azure AD group, and assign Dataverse licenses. The user can immediately access the environment without the need to wait for the administrator to assign a security role.
+Once the group team and its security role are established in an environment, user access to the environment is based on the user membership of the Azure AD groups. When a new user is created in the tenant, all the administrator needs to do is assign the user to the appropriate Azure AD group, and assign Dataverse licenses. The user can immediately access the environment without the need to wait for the administrator to add the user into the environment or assign a security role. The user is created in the environment under the root business unit.  
 
 When users are deleted/disabled in Azure AD or removed from the Azure AD groups, they lose their group membership and won't be able to access the environment when they try to sign in.  
 
@@ -149,7 +149,8 @@ Review the following table for how members in Azure AD groups match to Dataverse
 > - **Azure AD group members are also added to the group team with [impersonation calls](/powerapps/developer/common-data-service/impersonate-another-user)**. You can use create group members in the group team on behalf of another user using impersonation. 
 > - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission.
-> - The group team name is not automatically updated when the Azure AD group name is changed. There is no impact in system operation with group name changes, but we recommend you update it via the Power Platform admin center Teams settings. 
+> - The group team name isn't automatically updated when the Azure AD group name is changed. There's no impact in system operation with group name changes, but we recommend that you update it in the Power Platform admin center Teams settings.
+> - The AD group members are automatically created in the environment when they first access the environment. The users are added under the root business unit. You don't need to move the user to a different business unit if you enabled the [Modernized Business Units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) to manage your user's data access. 
 
 ## Manage the security roles of a team
 
