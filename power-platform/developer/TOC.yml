@@ -68,9 +68,9 @@
     - name: Unified developer experience
       items:
         - name: Unified developer experience overview
-          href: finance-operations-dev-overview.md
+          href: unified-experience\finance-operations-dev-overview.md
         - name: Deploy packages
-          href: finance-operations-deploy-packages.md
+          href: unified-experience\finance-operations-deploy-packages.md
     - name: Tools
       expanded: true
       items:
