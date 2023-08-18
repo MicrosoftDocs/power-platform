@@ -19,7 +19,15 @@ This article explains how organizations and administrators can plan migration of
 
 ## Default environment
 
-One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD), part of Microsoft Entra, tenant and is named as follows: **[Azure AD tenant name] (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. 
+One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD), part of Microsoft Entra, tenant and is named as follows: **[Azure AD tenant name] (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment.
+
+You can't delete the default environment and you can't manually back up the default environment. System backups are done continuously. The default environment is limited to 1 TB of storage capacity. The default environment has the following capabities:
+
+- 3 GB Dataverse database capacity
+- 3 GB Dataverse file capacity
+- 1 GB Dataverse log capacity
+
+The capacity check conducted prior to creating new environments, excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment. To store more data, you can create a production environment.
 
 In the default environment, employees of an organization with a Microsoft 365 license can create apps and cloud flows. The default environment becomes the first playground studio for these employees to start building their apps and flows. Because it isn't possible to remove the environment maker role from the default environment, makers start to build personal productivity apps and flows and share them within their teams for others to benefit. Most organizations often rename the default environment to **Personal Productivity**.
 
@@ -38,6 +46,12 @@ Center of Excellence (CoE) teams that monitor Power Platform are forced to react
 - Identification of the Power Platform objects
 - Move the Power Platform objects
 - Clean up the Power Platform objects
+
+There are different ways of exporting your apps and flows to move them to a new environment. Solutions are a single file that can include nearly anything your makers build in Power Platform and move them together.  Canvas apps and cloud flows can be exported directly.
+
+Over time, Power Platform objects have evolved to be solution aware. Now apps and flows can be solution aware by default, though this requires manual activation. Makers could still create apps and flows from make.powerapps.com and make.powerautomate.com, which can be classified as non-solution aware, and these can be exported individually, or add them to a solution. By adding a solution, the maker can take advantage of environment variables and connection references to configure and deploy endpoints across environments.
+
+The goal is to have all Power Platform components added to a single solution, which allows multiple components to be easily moved as a single unit between environments.
 
 ### Identification of the Power Platform objects
 
@@ -73,6 +87,60 @@ The entire process of identifying and moving apps and flows from the default env
 
 Data loss prevention (DLP) policies function as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. DLP policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. We recommended that you have, at least, one policy.
 
+### Identification of Objects using DLP
+
+DLP policy-based identification is helpful to define target environments for your apps and flows. There might be apps or flows that are using a connector that is blocked by the DLP or a mix of business and non-business connectors, which, upon DLP activation, will stop working. Noncompliant objects based on DLP.
+
+To prevent downtime of potential critical objects, due to DLP, part of CoE Starter Kit, you can find **DLP editor (impact analysis) tool**. The goal of the DLP editor is to allow admins to see the impact of existing policies or the potential impact of policy changes. It provides admins with a view of impacted apps and flows, and resources that would be disabled if new or updated policies were to be enforced. The app can be used to review existing policies, change existing policies, and mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
+
+Update existing DLP policies to review impact.
+
+:::image type="content" source="media/image5.gif" alt-text="Update existing DLP policies to review impact.":::
+
+Follow the [Establishing tenant hygiene with the CoE Starter Kit](/power-platform/guidance/coe/after-setup-tenant-hygiene) article to find more information about the DLP editor.
+
+Before turning on the DLP feature, you can identify which apps and flows will be affected and alert the makers. The DLP editor can send a list of all the apps and flows that will be affected to an email address, which will generate a .csv file for each type of object.
+
+Using The DLP editor version 2.0, in the **Impact Analysis** area, choose **Export impacted apps and flows to CSV**.
+
+:::image type="content" source="media/image6.png" alt-text="Use the DLP editor version 2.0.":::
+
+Each generated csv file (flow.csv and apps.csv) will have information regarding:
+
+1. Name of the apps and flows.
+1. Owner of the apps and flows.
+1. OwnerEmail of the apps and flows.
+1. All connections used by the apps and flows.
+1. ID of the apps and flows to identify the object.
+1. EnvironmentID where the apps and flows are located.
+
+Notice the **Connections** give you the list of all connections used by the app or flow. If you need to identify exactly which connector is impacted by the DLP in question, an automation is needed at this time. We're evaluating changing this situation in the tool.
+
+Example of implementation to identify the connection:
+
+1. Create a Power Automate flow.
+1. Use the **Get Tenant DLP Policy** connector specifying the DLP in question.
+1. The result is two arrays, business data and non-business data. As an example, the Twitter connector shows this code:
+
+
+   ```
+   [
+     {
+       "id": "/providers/Microsoft.PowerApps/apis/shared_twitter",
+       "name": "Twitter",
+       "type": "Microsoft.PowerApps/apis"
+     }
+   ……
+   ]
+   ```
+
+1. From this list, you have access to the name of the connector that matches with the name list of the csv app or flow **Connection** column.
+1. By converting the csv to Excel format and placing it in your OneDrive, you can read all the impacted apps and flows from Power Automate. Check which connection is affected based on logic that compares connections with connector names.
+1. After you have a match on which connection is causing the impact, generate a new list with the app or flow ID and the connector affected by the DLP.
+1. Use the earlier information to notify the maker about the future impact. You can use Power Cards to collect the feedback from the maker if the app or flow can be deleted or needs to be migrated to another environment.
+
+Based on your analysis, if you determine that the affected flows aren't being used, you can put it in quarantine and send an email to the maker with instructions on how to move it to a different environment. This encourages a do-it-yourself (DIY) culture and removes the shadow IT. In some situations, you might want to exempt some objects from the DLP. For instance, you may want to apply a specific DLP only for new resources that have been created and exempt the current resources. For more information about DLP resource exemption, see [DLP resource exemption](/power-platform/admin/dlp-resource-exemption).
+
 Effectively, your environment strategy is defined through DLP and that provides a destination for the apps and flows developed in the default environment.
 
 ### Environment strategy
@@ -92,6 +160,7 @@ Developing an environment strategy requires configuring environments and other l
 You should have well-established departments that can self-sustain and have existing ALM processes in place. In such cases, environments provide isolation and organize resources based on the department. A strategy based on that can be achieved by creating separate environments for each department. These environments then become the destination for the apps and flows in the default environment.
 
 ### Communication strategy
+Effective communication is crucial during a migration process. Communication happens over all phases of the migration process. Clear communication fosters understanding and collaboration among stakeholders. It enables the smooth flow of information, ensuring that everyone involved is well-informed about the migration plans, progress, and any potential challenges.
 
 As part of the migration and clean-up effort, make sure the process is smooth to the makers, stakeholders, and leadership. Develop a strategy on how best to communicate and at what points you need to communicate, that provides consistency in your objectives and helps with communication for all involved. Some options to consider include:
 
@@ -109,6 +178,39 @@ A good start for setting up communications requires a self-serve model to scale 
 
 There are some existing solution components like [set up inactivity notifications components](/power-platform/guidance/coe/setup-archive-components) and [set up Developer Compliance components](/power-platform/guidance/coe/setup-governance-components) in the CoE Starter Kit that you could take advantage of. These components come with email templates and they can be duplicated to fit your purpose and need for migrating them from the default environment. A good addition is to capture some success stories on the communication site, as well.
 
+#### Audiences
+
+In the migration process there are typically different audiences involved in communication. Here are the most typical key stakeholders and their roles:
+
+- **App owners** – App owners are individuals or teams responsible for the development, maintenance, and management of specific applications. They have in-depth knowledge of the functionality, workflow, and configuration of their applications. Communication with app owners is crucial to understanding their app-specific requirements, gathering feedback, addressing concerns, and ensuring a smooth migration of their apps to the new environment.
+- **App users** – App users are the individuals who utilize the applications regularly to perform their tasks or workflows. They may have varying levels of technical expertise and familiarity with the applications. Communication with app users is important to inform them about the migration, provide updates on any changes or disruptions that may occur, offer training or support to ensure a seamless transition, and minimize any impact on their day-to-day operations.
+- **Department heads or managers**: Department heads or managers play a significant role in the migration process as they oversee the operations and strategic objectives of their respective departments. They need to be informed about the migration timeline, potential impacts, and benefits. Communication with department heads allows them to provide necessary guidance, align the migration with departmental goals, and ensure smooth coordination within their teams.
+- **IT or technical teams**: IT or technical teams are responsible for the infrastructure, systems, and overall technical aspects of the migration. They're involved in the planning, execution, and support of the migration process. Communication with IT teams is essential to discuss technical requirements, dependencies, security considerations, and any necessary infrastructure or configuration changes that need to be implemented for the successful migration.
+- **Security and compliance teams**: Security and compliance teams play a critical role in ensuring data security, privacy, and regulatory compliance during the migration. They provide guidance and ensure that appropriate measures are in place to protect sensitive information. Communication with security and compliance teams involves discussing security requirements, encryption protocols, access controls, and any compliance-related considerations throughout the migration process.
+- **Executive management:** Executive management, including C-level executives or senior leadership, should be kept informed about the migration process. They may not require detailed, technical information, but should be aware of the project's objectives, progress, and potential impacts on the organization. Communication with executive management helps ensure their support, alignment with strategic goals, and resource allocation for the migration.
+
+It's important to tailor communication strategies and messages for each audience, considering their specific needs, concerns and level of technical understanding. Clear and timely communication with all stakeholders fosters collaboration, ensures smooth coordination, and mitigates any potential challenges during the migration process.
+
+#### Cadence
+
+The cadence or frequency of communication with stakeholders during a migration process will vary based on the specific needs and dynamics of the project. It's important to establish regular and consistent communication to keep stakeholders informed, address concerns, and maintain alignment throughout the migration. Here are some considerations for determining the cadence of communication with different stakeholders:
+
+- **App owners:** Maintaining frequent communication with app owners throughout the migration process is important. This includes regular updates on the progress of the migration, addressing any concerns, and involving app owners in decision making, when necessary. The frequency of communication can vary depending on the complexity and criticality of the app, but it's recommended to have regular check-ins and timely responses to inquiries.
+- **App users:** Engage app users through regular communication channels to keep them informed about the migration. This should include announcements, emails, newsletters, or even dedicated training sessions or workshops. The frequency of communication with app users may vary, but it's crucial to provide updates at key milestones, inform them about any changes or disruptions that may affect them, and offer support and guidance throughout the process.
+- **Department heads and managers:** Communication with department heads and managers can occur at regular intervals or as needed, based on the significance of the migration to their departments. Provide periodic updates on the overall progress, timelines, and impact on their teams.
+- **IT or technical teams**: Engage in regular communication with IT and technical teams involved in the migration. This includes ongoing collaboration, sharing updates on technical questions or issues, and coordinating any necessary configurations or changes. Frequency will likely be higher in the planning and analysis phase. During the implementation phase, have regular touchpoints or meetings to ensure smooth coordination.
+
+### Resourcing
+
+Managing resources effectively is crucial for a successful migration. Here are some key aspects to consider when it comes to resourcing management during a migration:
+
+- **Resource identification:** Identify the resources required for the migration project, including individuals or teams responsible for tasks such as premigration preparations, data migration, testing, deployment, configuration, and post-migration support. Determine the specific skills, expertise, and availability needed for each role.
+- **Resources allocation:** Assign resources to roles and tasks based on the resource's skills, availability, and workload capacity. Ensure that resources are appropriately allocated to balance the workload and meet project deadlines. Consider any dependencies or constraints that may impact resource allocation, such as shared resources across multiple projects.
+- **Skills development and training:** Assess the skills and knowledge gaps within the team and provide necessary training or upskilling opportunities to ensure that resources are adequately equipped for their assigned tasks. This may involve providing training sessions, workshops, or access to relevant resources and documentation.
+- **Communication and collaboration:** Foster effective communication and collaboration among resources involved in the migration. Encourage regular status updates, coordination meetings, and knowledge sharing to ensure that all team members are aligned, informed, and working together towards common goals.
+- **Contingency planning:** Anticipate potential resource constraints or risks and develop contingency plans. Have backup resources identified or cross-trained in critical roles to mitigate any unforeseen challenges, such as unexpected absences or resource limitations.
+- **Stakeholder engagement:** Keep stakeholders, such as app owners, department heads, and management, informed about resource allocation and any potential impact on timelines or deliverables. Regularly communicate resource updates, progress reports, and any adjustments to resourcing plans to manage expectations and maintain transparency.
+
 ## Individual migration of objects
 
 The distinction between app and solution is an important one. Exporting and importing an app only affects that object. A solution is a container that can have multiple apps, flows, and other objects.
@@ -119,7 +221,7 @@ The distinction between app and solution is an important one. Exporting and impo
 
 The detailed steps are documented in [Exporting a canvas app package](/power-apps/maker/canvas-apps/export-import-app) and [Importing a canvas app package](/power-apps/maker/canvas-apps/export-import-app).
 
-This method of exporting apps is a legacy way. While it’s supported, we recommend that you use [solutions](#solutions). Solutions enable you to migrate multiple components instead of just one resource.
+This method of exporting apps is a legacy way. While it’s supported, we recommend that you use [solutions](/power-apps/maker/data-platform/solutions-overview). Solutions enable you to migrate multiple components instead of just one resource.
 
 ### Export and import flow (legacy way)
 
@@ -286,7 +388,7 @@ There are multiple options available for data migration, ranging from manual to 
 
 Given that the default environment is limited in size, one of the above options should suffice to move data out of the default environment.
 
-#### Clean up considerations
+### Clean up considerations
 
 A clean-up is a good idea for apps and flows that have not been used and updated in a long time.  There are different paths for an administrator to consider as far as clean-up is concerned.
 
@@ -296,71 +398,7 @@ A clean-up is a good idea for apps and flows that have not been used and updated
 - Audit data can't be migrated.
 - Don't enable any workflows or flows that get triggered based on data insertion, unless intended. This increases the time for data migration.
 
-In many cases, these are test flows and apps created by makers as part of their personal productivity learning and experimenting.
-
-## Conclusion
-
-Power Platform is a tool for citizen developers and profesional developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual, or developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which can help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-serve models of learning about the strategy, implementation of solutions, and best practices to develop apps and flows. A good addition is to capture some success stories on the communication site. Success stories published internally help makers to connect with ideas and makes them open to possibilities that could be achieved using Power Platform.
-
-A strong governance strategy is essential when migrating or moving specific objects. There are various strategies available for migrating objects, including individual and mass migration. The best fit option depends on our organization policies. Solutions are the most recommended way to organize the components of your application and make migrations more straightforward.
-
-## Appendix
-
-### Identification of Objects using DLP
-
-DLP policy-based identification is helpful to define target environments for your apps and flows. There might be apps or flows that are using a connector that is blocked by the DLP or a mix of business and non-business connectors, which, upon DLP activation, will stop working. Noncompliant objects based on DLP.
-
-To prevent downtime of potential critical objects, due to DLP, part of CoE Starter Kit, you can find **DLP editor (impact analysis) tool**. The goal of the DLP editor is to allow admins to see the impact of existing policies or the potential impact of policy changes. It provides admins with a view of impacted apps and flows, and resources that would be disabled if new or updated policies were to be enforced. The app can be used to review existing policies, change existing policies, and mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
-
-Update existing DLP policies to review impact.
-
-:::image type="content" source="media/image5.gif" alt-text="Update existing DLP policies to review impact.":::
-
-Follow the [Establishing tenant hygiene with the CoE Starter Kit](/power-platform/guidance/coe/after-setup-tenant-hygiene) article to find more information about the DLP editor.
-
-Before turning on the DLP feature, you can identify which apps and flows will be affected and alert the makers. The DLP editor can send a list of all the apps and flows that will be affected to an email address, which will generate a .csv file for each type of object.
-
-Using The DLP editor version 2.0, in the **Impact Analysis** area, choose **Export impacted apps and flows to CSV**.
-
-:::image type="content" source="media/image6.png" alt-text="Use the DLP editor version 2.0.":::
-
-Each generated csv file (flow.csv and apps.csv) will have information regarding:
-
-1. Name of the apps and flows.
-1. Owner of the apps and flows.
-1. OwnerEmail of the apps and flows.
-1. All connections used by the apps and flows.
-1. ID of the apps and flows to identify the object.
-1. EnvironmentID where the apps and flows are located.
-
-Notice the **Connections** give you the list of all connections used by the app or flow. If you need to identify exactly which connector is impacted by the DLP in question, an automation is needed at this time. We're evaluating changing this situation in the tool.
-
-Example of implementation to identify the connection:
-
-1. Create a Power Automate flow.
-1. Use the **Get Tenant DLP Policy** connector specifying the DLP in question.
-1. The result is two arrays, business data and non-business data. As an example, the Twitter connector shows this code:
-
-
-   ```
-   [
-     {
-       "id": "/providers/Microsoft.PowerApps/apis/shared_twitter",
-       "name": "Twitter",
-       "type": "Microsoft.PowerApps/apis"
-     }
-   ……
-   ]
-   ```
-
-1. From this list, you have access to the name of the connector that matches with the name list of the csv app or flow **Connection** column.
-1. By converting the csv to Excel format and placing it in your OneDrive, you can read all the impacted apps and flows from Power Automate. Check which connection is affected based on logic that compares connections with connector names.
-1. After you have a match on which connection is causing the impact, generate a new list with the app or flow ID and the connector affected by the DLP.
-1. Use the earlier information to notify the maker about the future impact. You can use Power Cards to collect the feedback from the maker if the app or flow can be deleted or needs to be migrated to another environment.
-
-Based on your analysis, if you determine that the affected flows aren't being used, you can put it in quarantine and send an email to the maker with instructions on how to move it to a different environment. This encourages a do-it-yourself (DIY) culture and removes the shadow IT. In some situations, you might want to exempt some objects from the DLP. For instance, you may want to apply a specific DLP only for new resources that have been created and exempt the current resources. For more information about DLP resource exemption, see [DLP resource exemption](/power-platform/admin/dlp-resource-exemption).
-
-### Tagging options
+#### Tagging options
 
 CoE Starter Kit doesn’t have a tagging option today. However, it could be a customization that you could add to the Starter Kit.
 
@@ -370,7 +408,7 @@ Create a text field on each inventory table and use that to capture the text (ta
 
 If you want a more fixed list, create a global option set and add that to all the inventory tables and their forms, as well.
 
-### Quarantine option
+#### Quarantine option
 
 If you're uncertain about the necessity of certain applications, you can try isolating them for a while and put them in quarantine during this state. The app can only be used by the owner. After a suitable amount of time has elapsed and if no response from the owner has been received, you can remove them from the environment.
 
@@ -378,7 +416,7 @@ Flows don’t support the quarantine state, but a similar approach can be used b
 
 In both cases, having proper communication with the owner is important.
 
-### Only Delete option
+#### Only Delete option
 
 If there's really no loss of productivity and reuse of the objects, this option is the best. Most test flows and apps fall into this category.
 
@@ -389,119 +427,18 @@ As you loop through the IDs of apps and flows, the following command can be used
 - Remove-AdminFlow -EnvironmentName Default-[Guid] -FlowName [Guid]
 - Remove-AdminPowerApp -AppName [Guid] -EnvironmentName [Guid]
 
-### Objects backup and Delete option
+#### Objects backup and Delete option
 
 As an example, assume that a Power Automate flow is created to address a specific seasonal need, but that it hasn't been used for a long time. In this case, it’s good to take a backup of the component before deleting the component.
 
-To make a backup of the component, either options of [Individual Migration](#) or [Mass Migration](#) could be used to generate an exported solution. This can then be added to either a file repository of your choice or to a OneDrive location.
+To make a backup of the component, either options of individual migration or mass migration could be used to generate an exported solution. This can then be added to either a file repository of your choice or to a OneDrive location.
 
 After the backup is secured, then the options from Delete above can be applied to complete the clean-up process.
 
-### Role based communication
+In many cases, these are test flows and apps created by makers as part of their personal productivity learning and experimenting.
 
-Effective communication is crucial during a migration process. Communication happens over all phases of the migration process. Clear communication fosters understanding and collaboration among stakeholders. It enables the smooth flow of information, ensuring that everyone involved is well-informed about the migration plans, progress, and any potential challenges.
+## Conclusion
 
-#### Audiences
+Power Platform is a tool for citizen developers and profesional developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual, or developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which can help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-serve models of learning about the strategy, implementation of solutions, and best practices to develop apps and flows. A good addition is to capture some success stories on the communication site. Success stories published internally help makers to connect with ideas and makes them open to possibilities that could be achieved using Power Platform.
 
-In the migration process there are typically different audiences involved in communication. Here are the most typical key stakeholders and their roles:
-
-- **App owners** – App owners are individuals or teams responsible for the development, maintenance, and management of specific applications. They have in-depth knowledge of the functionality, workflow, and configuration of their applications. Communication with app owners is crucial to understanding their app-specific requirements, gathering feedback, addressing concerns, and ensuring a smooth migration of their apps to the new environment.
-- **App users** – App users are the individuals who utilize the applications regularly to perform their tasks or workflows. They may have varying levels of technical expertise and familiarity with the applications. Communication with app users is important to inform them about the migration, provide updates on any changes or disruptions that may occur, offer training or support to ensure a seamless transition, and minimize any impact on their day-to-day operations.
-- **Department heads or managers**: Department heads or managers play a significant role in the migration process as they oversee the operations and strategic objectives of their respective departments. They need to be informed about the migration timeline, potential impacts, and benefits. Communication with department heads allows them to provide necessary guidance, align the migration with departmental goals, and ensure smooth coordination within their teams.
-- **IT or technical teams**: IT or technical teams are responsible for the infrastructure, systems, and overall technical aspects of the migration. They're involved in the planning, execution, and support of the migration process. Communication with IT teams is essential to discuss technical requirements, dependencies, security considerations, and any necessary infrastructure or configuration changes that need to be implemented for the successful migration.
-- **Security and compliance teams**: Security and compliance teams play a critical role in ensuring data security, privacy, and regulatory compliance during the migration. They provide guidance and ensure that appropriate measures are in place to protect sensitive information. Communication with security and compliance teams involves discussing security requirements, encryption protocols, access controls, and any compliance-related considerations throughout the migration process.
-- **Executive management:** Executive management, including C-level executives or senior leadership, should be kept informed about the migration process. They may not require detailed, technical information, but should be aware of the project's objectives, progress, and potential impacts on the organization. Communication with executive management helps ensure their support, alignment with strategic goals, and resource allocation for the migration.
-
-It's important to tailor communication strategies and messages for each audience, considering their specific needs, concerns and level of technical understanding. Clear and timely communication with all stakeholders fosters collaboration, ensures smooth coordination, and mitigates any potential challenges during the migration process.
-
-#### Cadence
-
-The cadence or frequency of communication with stakeholders during a migration process will vary based on the specific needs and dynamics of the project. It's important to establish regular and consistent communication to keep stakeholders informed, address concerns, and maintain alignment throughout the migration. Here are some considerations for determining the cadence of communication with different stakeholders:
-
-- **App owners:** Maintaining frequent communication with app owners throughout the migration process is important. This includes regular updates on the progress of the migration, addressing any concerns, and involving app owners in decision making, when necessary. The frequency of communication can vary depending on the complexity and criticality of the app, but it's recommended to have regular check-ins and timely responses to inquiries.
-- **App users:** Engage app users through regular communication channels to keep them informed about the migration. This should include announcements, emails, newsletters, or even dedicated training sessions or workshops. The frequency of communication with app users may vary, but it's crucial to provide updates at key milestones, inform them about any changes or disruptions that may affect them, and offer support and guidance throughout the process.
-- **Department heads and managers:** Communication with department heads and managers can occur at regular intervals or as needed, based on the significance of the migration to their departments. Provide periodic updates on the overall progress, timelines, and impact on their teams.
-- **IT or technical teams**: Engage in regular communication with IT and technical teams involved in the migration. This includes ongoing collaboration, sharing updates on technical questions or issues, and coordinating any necessary configurations or changes. Frequency will likely be higher in the planning and analysis phase. During the implementation phase, have regular touchpoints or meetings to ensure smooth coordination.
-
-### Resourcing
-
-Managing resources effectively is crucial for a successful migration. Here are some key aspects to consider when it comes to resourcing management during a migration:
-
-- **Resource identification:** Identify the resources required for the migration project, including individuals or teams responsible for tasks such as premigration preparations, data migration, testing, deployment, configuration, and post-migration support. Determine the specific skills, expertise, and availability needed for each role.
-- **Resources allocation:** Assign resources to roles and tasks based on the resource's skills, availability, and workload capacity. Ensure that resources are appropriately allocated to balance the workload and meet project deadlines. Consider any dependencies or constraints that may impact resource allocation, such as shared resources across multiple projects.
-- **Skills development and training:** Assess the skills and knowledge gaps within the team and provide necessary training or upskilling opportunities to ensure that resources are adequately equipped for their assigned tasks. This may involve providing training sessions, workshops, or access to relevant resources and documentation.
-- **Communication and collaboration:** Foster effective communication and collaboration among resources involved in the migration. Encourage regular status updates, coordination meetings, and knowledge sharing to ensure that all team members are aligned, informed, and working together towards common goals.
-- **Contingency planning:** Anticipate potential resource constraints or risks and develop contingency plans. Have backup resources identified or cross-trained in critical roles to mitigate any unforeseen challenges, such as unexpected absences or resource limitations.
-- **Stakeholder engagement:** Keep stakeholders, such as app owners, department heads, and management, informed about resource allocation and any potential impact on timelines or deliverables. Regularly communicate resource updates, progress reports, and any adjustments to resourcing plans to manage expectations and maintain transparency.
-
-### Solution aware (be part of a solution)
-
-Power Platform is a collection of low-code tools that have their own ALM processes. For example, a canvas app can be exported as a zip file and imported into a new environment, while a cloud flow can be exported and imported as zip files. Dataverse objects use solutions as a packaging tool, which can also be exported as a zip file and imported into a new environment.
-
-There are different ways of exporting your apps and flows to move them to a new environment. Solutions are a single file that can include nearly anything your makers build in Power Platform and move them together.  Canvas apps and cloud flows can be exported directly.
-
-Over time, Power Platform objects have evolved to be solution aware. Now apps and flows can be solution aware by default, though this requires manual activation. Makers could still create apps and flows from make.powerapps.com and make.powerautomate.com, which can be classified as non-solution aware, and these can be exported individually, or add them to a solution. By adding a solution, the maker can take advantage of environment variables and connection references to configure and deploy endpoints across environments.
-
-The goal is to have all Power Platform components added to a single solution, which allows multiple components to be easily moved as a single unit between environments.
-
-#### Common questions about solutions
-
-- **Can I make existing objects solution aware?**
-
-  Yes, with the guidance provided in the sections following you'll understand the different options available.
-
-- **I'm building an app using non-premium connectors. Can I still use solutions?**
-
-  Yes, you can still use solutions in a Dataverse enabled environment. The app and connection references can all be part of one solution package. This helps to move the app into a new environment. You can iterate the development of the app in a Developer environment and deploy it to the downstream environments by exporting the solution and importing it into the target environment. Also, the solutions zip file can be stored in the file repository for future reference and works for back-up and restore purposes.
-
-### Definitions
-
-#### Default environment
-
-You can't delete the default environment. You can't manually back up the default environment. System backups are done continuously.
-
-The default environment is limited to 1 TB of storage capacity. To store more data, you can create a production environment. The default environment has the following:
-
-- 3 GB Dataverse database capacity
-- 3 GB Dataverse file capacity
-- 1 GB Dataverse log capacity
-
-The capacity check conducted prior to creating new environments, excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
-
-#### Managed Environment
-
-Managed Environments is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment, except the developer environments.
-
-Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. When Managed Environments is activated in an environment, every app, Power Automate flow, Power Virtual Agents bot, and Power Pages website in that environment requires standalone licenses for accessing respective resources. For example:
-
-- Every user running an app in a Managed Environment must have a Power Apps per user or per app license or a Dynamics 365 license that gives premium Power Apps usage rights.
-
-- Every user running a Power Automate cloud flow in a Managed Environment must have a standalone Power Automate per user license, a Power Automate per flow license, or a Dynamics 365 license with premium Power Automate usage rights. Power Automate cloud flows that are triggered within apps or in context of apps or chatbots are covered by the respective Power Apps or Power Virtual Agents standalone licenses.
-
-#### Solutions
-
-Solutions are the mechanism for implementing ALM in Power Apps and other Power Platform products, such as Power Automate. Solutions are used to transport apps and objects from one environment to another or to apply a set of customizations to existing apps. A solution can contain one or more apps and other objects such as site maps, tables, processes, web resources, choices, flows, and more.
-
-#### Environment variables in a solution
-
-Environment variables enable the basic ALM scenario of moving an application between Power Platform environments. Environment variables store the parameter keys and values, which then serve as input to various other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
-
-In this scenario, the applications stay the same except for some key external application references (such as tables, connections, and keys) that are different between the source environment and the destination environment. The applications require the structure of the tables or connections to be the same between the source and the destination environments, with some differences. Environment variables allow you to specify which of these different external references should be updated as the application is moved across environments.
-
-Benefits of using environment variables include:
-
-- Provide new parameter values while importing solutions to other environments.
-- Store configuration for the data sources used in canvas apps and flows. For example, SharePoint Online site and list parameters can be stored as environment variables, which allow you to connect to different sites and lists in different environments without needing to modify the apps and flows.
-- Package and transport your customization and configuration together and manage them in a single location.
-- Package and transport secrets, such as credentials used by different objects, separately from the objects that use them.
-- One environment variable can be used across many different solution objects, whether they're the same type of component or different. For example, a canvas app and a flow can use the same environment variable. When the value of the environment variable needs to change, you only need to change one value.
-
-Additionally, if you need to retire a data source in production environments, you can update the environment variable values with information for the new data source. The apps and flows don't require modification and will start using the new data source.
-
-The environment variables can be unpacked and stored in source control. You may also store different environment variables values files for the separate configuration needed in different environments. Solution Packager can then accept the file corresponding to the environment the solution is imported to.
-
-#### Connection references in a solution
-
-A connection is a proxy or a wrapper around an API that allows the underlying service to talk to Power Automate, Power Apps, and Azure Logic apps. It provides a way for users to connect their accounts and use a set of prebuilt actions and triggers to build their apps and workflows.
-
-A connection reference is a solution component that contains information about a connector. Both canvas app and operations within a Power Automate flow bind to a connection reference. You can import your connection reference into a target environment with no further configuration needed after the import is completed. To change a specific connection associated with a canvas app or flow, edit the connection reference component within the solution.
+A strong governance strategy is essential when migrating or moving specific objects. There are various strategies available for migrating objects, including individual and mass migration. The best fit option depends on our organization policies. Solutions are the most recommended way to organize the components of your application and make migrations more straightforward.
