@@ -104,7 +104,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
    >[!IMPORTANT]
    >
    > - If your tenant is a GCC tenant, change the host to manage-gcc.office.com.
-   > - If your tenant is a GCC high tenant, change the host to manage.office365.us.
+   > - If your tenant is a GCC High tenant, change the host to manage.office365.us.
    > - If your tenant is a DoD tenant, change the host to manage.protection.apps.mil.
    >
    > More information: [Activity API operations](/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations)
@@ -124,9 +124,9 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Don't change the **Tenant ID**.
 
-1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://<span>login</span>.microsoftonline.us/ for a GCC high or DoD tenant.
+1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://<span>login</span>.microsoftonline.us/ for a GCC High or DoD tenant.
 
-1. Set the **Resource URL** to https://<span>manage</span>.office.com for a commercial tenant, https://<span>manage</span>-gcc.office.com for a GCC tenant, https://<span>manage</span>.office365.us for a GCC high tenant, and https://<span>manage</span>.protection.apps.mil for a DoD tenant.
+1. Set the **Resource URL** to https://<span>manage</span>.office.com for a commercial tenant, https://<span>manage</span>-gcc.office.com for a GCC tenant, https://<span>manage</span>.office365.us for a GCC High tenant, and https://<span>manage</span>.protection.apps.mil for a DoD tenant.
 
 1. Select **Update Connector**.
 
