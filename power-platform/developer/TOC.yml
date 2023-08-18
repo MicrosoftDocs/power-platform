@@ -15,7 +15,7 @@
         - name: Unified developer experience overview
           href: unified-exp-overview.md
         - name: Deploy packages
-          href: deploy-packages.md
+          href: unified-exp-deploy-packages.md
     - name: Fusion development
       href: fusion-development.md
     - name: ALM for developers
