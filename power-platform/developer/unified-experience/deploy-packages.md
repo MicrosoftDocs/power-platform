@@ -63,7 +63,7 @@ You need to create a build pipeline to generate the package in the Power Platfor
 
 The process of building the solution remains same as referenced or based on preexisting build pipelines.
 
-:::image type="content" source="media/unified-experience/deploy-packages.md" alt-text="Shows Azure DevOps Pipelines with build solution agent job selected.":::
+:::image type="content" source="media/unified-experience/deploy-packages.png" alt-text="Shows Azure DevOps Pipelines with build solution agent job selected.":::
 
 To generate a **Power Platform Unified** package:
 
