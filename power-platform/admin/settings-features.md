@@ -30,12 +30,12 @@ Make sure you have the System Administrator or System Customizer security role o
 > [!NOTE]
 > These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
 
-## Copilot
+## Copilot (preview)
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Allow canvas editors to get AI-powered answers to how-to questions and AI Builder GPT experiences. Currently in preview. (preview)  |When **On**, enables Copilot to create apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. More information: [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview) | On |
-| Allow users to analyze data using an AI-powered chat experience in [canvas](/power-apps/maker/canvas-apps/add-ai-copilot) and [model-driven apps](/power-apps/maker/common/responsible-ai-overview).<br>Note: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas and model-driven apps for app users to ask questions and have a natural language conversation about data in the app. More information: [Add Copilot control to a canvas app (preview)](/power-apps/maker/canvas-apps/add-ai-copilot) and [Add Copilot to model-driven apps (preview)](/power-apps/maker/model-driven-apps/add-ai-copilot) | Off |
+| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. (preview)<br>Note: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas and model-driven apps for app users to ask questions and have a natural language conversation about data in the app. More information: [Add Copilot control to a canvas app (preview)](/power-apps/maker/canvas-apps/add-ai-copilot) and [Add Copilot to model-driven apps (preview)](/power-apps/maker/model-driven-apps/add-ai-copilot) | Off |
 
 
 ## AI Builder
