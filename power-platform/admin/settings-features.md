@@ -63,7 +63,7 @@ Choose which provider to enable outbound calls from within customer engagement a
 |Use Skype|  More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)| Enabled. |
 |Use Skype for Business|More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)  |Not enabled|
 
-### Hosted RPA
+## Hosted RPA
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Hosted RPA bots (Preview)| If **On**, users can run unattended automation at scale without the need to provide or setup any machine. More information: [Hosted RPA bots (preview)](/power-automate/desktop-flows/hosted-machine-groups) | On |
