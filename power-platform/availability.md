@@ -17,6 +17,7 @@ ms.author: radhij
 We are excited to share the downloadable [Infrastructure and availability PDF](https://aka.ms/dynamics_365_international_availability_deck) with you.
 
 The purpose of this document is to provide comprehensive information about product availability and customer data locations for the Microsoft Power Platform family of applications. This document has information about the following:
+
 - Product availability
 - Data location
 - Language
@@ -26,11 +27,10 @@ The information will be updated periodically. Microsoft provides no license, exp
 
 Review and respect the full disclaimer included in all printed and electronically distributed versions of this document.
 
-### See also
+## See also
+
 [International availability of Dynamics 365](/dynamics365/get-started/availability) <br />
 [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/availability-reports/)<br/>
 [Microsoft Cloud industry solutions availability](https://aka.ms/industry-cloud-availability)
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
