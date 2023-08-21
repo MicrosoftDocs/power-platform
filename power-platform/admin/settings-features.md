@@ -140,7 +140,7 @@ Choose which provider to enable outbound calls from within customer engagement a
 ## Record ownership across business units
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-> | Record ownership across business units   |  Set to **On** to enable the Matrix data access structure. Not recommended for production environments.  More information: [Matrix data access structure (Modernize Business Units - Preview)](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) |Off|
+| Record ownership across business units   |  Set to **On** to enable the Matrix data access structure. Not recommended for production environments.  More information: [Matrix data access structure (Modernize Business Units - Preview)](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) |Off|
 
 ## Power Apps ideas for canvas apps
 | Setting | Description | Default value |
