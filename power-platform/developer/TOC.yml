@@ -74,9 +74,9 @@
         - name: Debug X++ code
           href: unified-experience\debug.md
         - name: Copy
-          href: unified-experience\copy.md
+          href: 
         - name: Frequently asked questions (FAQs)
-          href: unified-experience\faq.md
+          href: 
     - name: Tools
       expanded: true
       items:
