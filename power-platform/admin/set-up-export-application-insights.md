@@ -19,6 +19,7 @@ search.audienceType:
 1. Ensure that you have an [Application Insights environment](/azure/azure-monitor/app/create-workspace-resource) set up for receiving the data, in addition to the [environment](environments-overview.md) that has a database. 
    - For the Application Insights environment, you must have contributor, writer, or admin rights.
    - The Application Insights environment must be unique for an environment or tenant. Note that Application Insights out-of-the-box reports won't function correctly if a single Application Insights environment contains data from multiple environments.
+   - (Optional) Ensure that the resource group, the Application Insights instance, and the Power Platform environment are created in the same region. Telemetry data may not be visible in Application Insights if the environments differ.
 
 2. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need to be a member of one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin. 
 
@@ -81,6 +82,7 @@ search.audienceType:
 |GCC-High     | No |  Fall 2022 |
 |GCC-DOD     | No |  TBD |
 |Mooncake     | No |  TBD |
+
 
 
 
