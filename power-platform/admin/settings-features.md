@@ -93,16 +93,6 @@ Choose which provider to enable outbound calls from within customer engagement a
 | Cloud flows | More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) | Off |
 
 
-## Preferred solution 
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| When on, Dataverse will automatically add any new or updated objects to the users' preferred solution (when the user is not in the context of a solution).  | | Off|
-
-## Finance and Operations in Dataverse 
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Enable Finance and Operations User Impersonation in Dataverse | | Off|
-
 ## Data validation
 | Setting | Description | Default value |
 |---------|-------------|---------------|
