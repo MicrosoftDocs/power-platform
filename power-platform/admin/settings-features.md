@@ -63,16 +63,6 @@ Choose which provider to enable outbound calls from within customer engagement a
 |Use Skype|  More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)| Enabled. |
 |Use Skype for Business|More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)  |Not enabled|
 
-## Hosted RPA
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-|         |             |               |
-
-## Enhanced desktop flow schema
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-|         |             |               |
-
 ## Grids and views
 | Setting | Description | Default value |
 |---------|-------------|---------------|
