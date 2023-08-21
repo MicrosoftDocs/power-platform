@@ -39,7 +39,7 @@ You need to have _Data_.
 
 You can store and manage menu items in Dataverse and associate them with configured [Dataverse Group Teams](configure-security-groups.md#create-dataverse-group-teams) to control access and visibility to apps and components.
 
-:::image type="content" source="media/apply-seed-data/sap-admin-menu-items.png" alt-text="Manage menu options in Dataverse.":::
+:::image type="content" source="media/apply-seed-data/sap-base-menu-items.png" alt-text="Manage menu options in Dataverse.":::
 
 ### Set up application menus
 
@@ -87,7 +87,6 @@ The constrained list of values varies according to what business process is bein
 
    To help you create and manage the list of values, a list of the fields with examples and descriptions are provided in this table.
 
-
    | Field | Examples| Description |
    | ----------- | ----------- | ----------- |
    | Display Value | "United States", "German", "Mexico" | The localized version of the display value the user will see in combo box app controls. |
@@ -96,7 +95,6 @@ The constrained list of values varies according to what business process is bein
    | Domain | "Country", "State", "Payment Terms" | Constrained value representing the domain that the list of values is mapped to. The app combo box controls filter the appropriate values based on mapped domain. More domains can be added by extending the Dataverse choice values. |
    | Parent Value |  | Allows for parent-child relationships of values. For example, specific state/province domain values can be parented to a single country domain value. |
    | Description |  | General description of what the value represents. |
-
 
 1. Select **Save** and monitor the import progress.
 
@@ -152,4 +150,3 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 
 - [Overview](../overview.md)
 - [Get started](get-started.md)
-

@@ -42,8 +42,14 @@
       href: finance/sap-procurement/use/vendor-management.md
     - name: Requisition management
       href: finance/sap-procurement/use/requisition-management.md
-    - name: Purchase orders management
+    - name: Purchase order management
       href: finance/sap-procurement/use/purchase-order-management.md
+    - name: Goods receipt management
+      href: finance/sap-procurement/use/goods-receipt-management.md
+    - name: Vendor invoice management
+      href: finance/sap-procurement/use/vendor-invoice-management.md
+    - name: Vendor payment management
+      href: finance/sap-procurement/use/payment-management.md
   - name: FAQs
     href: finance/sap-procurement/faqs.md
 - name: Human Resources
