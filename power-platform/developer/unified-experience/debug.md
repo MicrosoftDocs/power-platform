@@ -15,38 +15,41 @@ ms.collection: get-started
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-The unified developer experience allows you to write code on your local development computer and run it inside a cloud service. There exists is a separation of functionality between these two tiers.
+The unified developer experience for Dynamics 365 Finance and Operation apps enables you to write code on your local development computer and run it inside a cloud service. There exists a separation of functionality between these two tiers (local and cloud).
 
- - Development tier - contains the finance and operations metadata and the X++ source code
+ - Development tier - contains the finance and operations metadata and any X++ source code on your local development computer
  - Execution tier - cloud hosted site that stores the business data and executes X++ code
 
 This article we will show you how to:
-- Build a small runnable class in X++
-- Deploy the class to the cloud runtime
-- Start the debugger and debug the X++ code
+1. Build a small runnable class in X++
+2. Deploy the class to the cloud runtime
+3. Start the debugger and debug the X++ code
 
-Let's begin by developing a runnable X++ class to use as an example. The classes only task is to log a message into the infolog. The important thing here is not what the runnable class does, rather it is how we compile, run, and debug it.
+Let's begin by developing a runnable X++ class to use as an example. The classes only task is to log a message into the infolog<!--what is this?-->. The important thing here is not what the runnable class does, rather it is how we compile, run, and debug it.
 
-As a prerequisite, you will need to have 
+As a prerequisite, you will need access to have a working Power Platform developer environment with the Finance and Operations apps installed. You will also need to install the Power Platform tools extension for Visual Studio. <!--Add link-->
+
+More information: <!--Link to PPAC article-->
 
 ## Create a model
 
-We will start creating a model in Visual Studio.
+We will start by creating a model in Visual Studio.
 
 1. Launch Visual Studio and choose **Continue without code**.
-1.  by choosing the menu option **Extensions** > **Dynamics 365** > **Model management** > **Create model...**. Use the example model name "MyTestModel" when prompted by the wizard, providing relevant information for the rest of the required information.
+1. Choose the menu option **Extensions** > **Dynamics 365** > **Model management** > **Create model...**. If you do not see this menu option, you don't have the required Visual Studio extension installed.
+1. Use the example model name "MyTestModel" when prompted by the wizard, providing relevant information for the rest of the required information.
 
-Insert Create Model 1 bitmap
+    :::image type="content" source="../media/unified-experience/devexp-debug-create_model1.png" alt-text="Add parameters":::
 
-On the next page of the wizard make sure you are creating a new package.
+1. On the next page of the wizard make sure you are creating a new package.
 
-Insert Create Model 2 bitmap
+    :::image type="content" source="../media/unified-experience/devexp-debug-create_model2.png" alt-text="Select package":::
 
-Next, fill in the referenced models. You only need to specify dependencies on the Application Platform and Application Foundation packages in this trivial example.
+1. Fill in the referenced models. You only need to specify dependencies on the Application Platform and Application Foundation packages in this trivial example.
 
-Insert Create Model 3 bitmap
+    :::image type="content" source="../media/unified-experience/devexp-debug-create_model3.png" alt-text="Select referenced packages":::
 
-Click **Next** multiple times until the package has been created.
+1. Click **Next** multiple times until the package has been created.
 
 ## Add and compile the runnable X++ class
 
