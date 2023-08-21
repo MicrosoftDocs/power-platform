@@ -100,7 +100,7 @@ Choose which provider to enable outbound calls from within customer engagement a
 ## Finance and Operations in Dataverse
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable Finance and Operations user impersonation in Dataverse | When enabled, the Finance and Operations application in this environment has permissions to impersonate Dataverse users. This allows users of Finance and Operations to make calls to Dataverse which run as that same user in Dataverse, using the Dataverse permissions assigned to that user. Only select this option if the Finance and Operations administrator is trusted with the same level of permissions in Dataverse as the Dataverse administrator. | Off|| 
+| Enable Finance and Operations user impersonation in Dataverse | When enabled, the Finance and Operations application in this environment has permissions to impersonate Dataverse users. This allows users of Finance and Operations to make calls to Dataverse which run as that same user in Dataverse, using the Dataverse permissions assigned to that user. Only select this option if the Finance and Operations administrator is trusted with the same level of permissions in Dataverse as the Dataverse administrator. | Off |
 
 ## Data validation
 | Setting | Description | Default value |
