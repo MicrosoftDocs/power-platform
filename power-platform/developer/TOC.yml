@@ -68,12 +68,12 @@
     - name: Unified developer experience
       items:
         - name: Overview
-          href: unified-experience\finance-operations-dev-overview.md
+          href: unified-experience\overview.md
         - name: Deploy packages
-          href: unified-experience\finance-operations-deploy-packages.md
+          href: unified-experience\deploy-packages.md
         - name: Debug X++ code
           href: unified-experience\debug.md
-        - name: Copy
+        - name: Copy an LCS environment
           href: 
         - name: Frequently asked questions (FAQs)
           href: 
