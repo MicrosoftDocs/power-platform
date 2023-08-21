@@ -66,7 +66,16 @@ Choose which provider to enable outbound calls from within customer engagement a
 ## Hosted RPA
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Hosted RPA bots (Preview)| If **On**, users can run unattended automation at scale without the need to provide or setup any machine. More information: [Hosted RPA bots (preview)](/power-automate/desktop-flows/hosted-machine-groups) | On |
+| Enable hosted machine groups.| (Description goes here.) | On |
+| Enable work or school accounts for hosted machine groups.| (Description goes here.) | On |
+| Enable hosted machines.| (Description goes here.) | On |
+| Enable cross-geo support for hosted machines| (Description goes here.) | off |
+
+## Enhanced desktop flows schema
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable storage of desktop flow files into v2 schema.| (Description goes here.) | On |
+| Opt-out of desktop flow schema v2 enabled by default.| (Description goes here.) | Off |
 
 ## Grids and views
 | Setting | Description | Default value |
