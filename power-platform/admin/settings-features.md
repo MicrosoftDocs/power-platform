@@ -92,10 +92,6 @@ Choose which provider to enable outbound calls from within customer engagement a
 | Canvas apps | More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) | Off |
 | Cloud flows | More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) | Off |
 
-## Long term data retention in Dataverse (preview)
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Enable admins to set up data retention policies that allows retention of non-active data for compliance requirements in a Dataverse managed data lake. | | On |
 
 ## Preferred solution 
 | Setting | Description | Default value |
