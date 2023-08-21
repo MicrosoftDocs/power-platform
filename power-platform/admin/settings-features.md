@@ -73,7 +73,7 @@ Choose which provider to enable outbound calls from within customer engagement a
 ## Advanced find options
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Modern advanced find in model-driven apps| If **On**, legacy advanced find will be replaced with a modern experience that has enhanced view management capabilities like searching on views and the ability to share, hide, and delete personal views. More information: [Advanced find in model-driven apps](/powerapps/user/advanced-find). This setting only appears if you have enabled 2022 Release Wave 1. |  On.|
+|Modern advanced find in model-driven apps| If **On**, legacy advanced find will be replaced with a modern experience that has enhanced view management capabilities like searching on views and the ability to share, hide, and delete personal views. More information: [Advanced find in model-driven apps](/powerapps/user/advanced-find). This setting only appears if you have enabled 2022 Release Wave 1. |  Off.|
 |Allow users to hide system views| If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. More information: [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you have enabled 2022 Release Wave 1.| Off. |
 
 ## Activities 
