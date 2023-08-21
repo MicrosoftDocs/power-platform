@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 7/13/2023
+ms.date: 8/16/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -93,7 +93,13 @@ Import the Power Apps component framework project into the current Dataverse org
 
 #### `--force-import` `-f`
 
-Force a full update of the control
+Force a full update of the control as part of a temporary solution
+
+This parameter requires no value. It's a switch.
+
+#### `--incremental` `-inc`
+
+Pushes only files which are diifferent using entity updates.
 
 This parameter requires no value. It's a switch.
 

@@ -28,7 +28,7 @@ Unexpected errors will occasionally occur with any enterprise software deploymen
 
 Unexpected errors are caught and handled within all the apps and flows using OnError and scoped action blocks that raise exceptions respectively. If raised, a new **SAP solution template error** Dataverse record will be created and viewable within the **SAP solution template administrator** app. From here, an administrator can view errors that are being generated and assess for common problems and corrective action.
 
-:::image type="content" source="media/monitor-errors/procure-monitor-errors.png" alt-text="Monitor errors in the procurement solutions":::
+:::image type="content" source="media/monitor-errors/sap-base-errors.png" alt-text="Monitor errors in the procurement solutions":::
 
 ### Steps to view solution template errors
 
