@@ -1,12 +1,12 @@
 ---
 title: "Manage feature settings | MicrosoftDocs"
 description: Manage feature settings to adjust how features appear and function in Power Platform.
-author: KumarVivek
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/18/2023
+ms.date: 08/21/2023
 ms.subservice: admin
-ms.author: kvivek
+ms.author: sericks
 ms.reviewer: sericks
 contributors:
     - ProfessorKendrick
@@ -35,7 +35,7 @@ Make sure you have the System Administrator or System Customizer security role o
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Allow canvas editors to get AI-powered answers to how-to questions and AI Builder GPT experiences. Currently in preview. (preview)  |When **On**, enables Copilot to create apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. More information: [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview) | On |
-| Allow users to analyze data using an AI-powered chat experience in [canvas](/power-apps/maker/canvas-apps/add-ai-copilot) and [model-driven apps]/power-apps/maker/common/responsible-ai-overview).<br>Note: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables copilot in canvas and model-driven apps for app users to ask questions and have a natural language conversation about data in the app. More information: (links to the two docs that Mints and Matt are working on) | Off |
+| Allow users to analyze data using an AI-powered chat experience in [canvas](/power-apps/maker/canvas-apps/add-ai-copilot) and [model-driven apps](/power-apps/maker/common/responsible-ai-overview).<br>Note: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas and model-driven apps for app users to ask questions and have a natural language conversation about data in the app. More information: (links to the two docs that Mints and Matt are working on) | Off |
 
 
 ## AI Builder
