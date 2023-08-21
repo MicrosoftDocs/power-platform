@@ -41,7 +41,7 @@ Import the Kudos solution template into the environment.
 After the installation is complete, the status shows as _Installed_.
 
 > [!TIP]
-> You can log your questions and get support for the SAP Procurement solution template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> You can log your questions and get support for the Employee Kudos solution template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
 ## Step 3: Create an access team
 
@@ -115,7 +115,7 @@ Set up a new or use an existing security group that represents all users of the 
 
 There are two cloud flows that require configuration of run-only access:
 
-- Kudo App – Share Kudos with Sender, Assign to Recipient
+- Kudos App – Share Kudos with Sender, Assign to Recipient
 - Kudos App – Notification Email
 
 Follow these steps for each flow:
@@ -148,6 +148,9 @@ Follow these steps for each flow:
     1. Select **+ New connection reference** or if pre-existing connections are listed, you can select one of those to reuse it. After you do that, the warning should resolve and you'll see the flow step without the warning. Note: after selecting, it may take a few seconds for everything to resolve.
     1. Select the next flow step with a warning on it.
     1. Select **+ New connection reference** or if pre-existing connections are listed, you can select one of those to reuse it. After you do that, the warning should resolve and you'll see the flow step without the warning. It may take a few seconds for everything to resolve.
+
+       :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference":::
+
     1. Select **Save** at the bottom of the screen or at the top toolbar.
 
  :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference.":::
