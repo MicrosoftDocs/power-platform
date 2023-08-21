@@ -5,7 +5,7 @@ keywords: Microsoft Power Platform CLI, code components, component framework, CL
 ms.author: snizar
 author: snizar007
 ms.reviewer: jdaly
-ms.date: 05/16/2023
+ms.date: 08/21/2023
 ms.topic: overview
 ---
 # What is Microsoft Power Platform CLI?
@@ -156,6 +156,10 @@ This table lists some of the common commands used in the PAC CLI.
 
 > [!TIP]
 > For the complete list of supported commands, see [Microsoft Power Platform CLI Command Groups](reference/index.md) or  run the `pac` command or `pac` \<subcommand> - for example: `pac solution`.
+
+## Provide feedback
+
+Use [github.com/microsoft/powerplatform-build-tools/discussions](https://github.com/microsoft/powerplatform-build-tools/discussions) to view and submit feedback for PAC CLI.
 
 ### See also
 
