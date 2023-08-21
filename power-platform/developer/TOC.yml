@@ -67,10 +67,16 @@
           href: submit-catalog-items.md
     - name: Unified developer experience
       items:
-        - name: Unified developer experience overview
+        - name: Overview
           href: unified-experience\finance-operations-dev-overview.md
         - name: Deploy packages
           href: unified-experience\finance-operations-deploy-packages.md
+        - name: Debug X++ code
+          href: unified-experience\debug.md
+        - name: Copy
+          href: unified-experience\copy.md
+        - name: Frequently asked questions (FAQs)
+          href: unified-experience\faq.md
     - name: Tools
       expanded: true
       items:
