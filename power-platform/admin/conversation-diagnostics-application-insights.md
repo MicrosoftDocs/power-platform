@@ -4,7 +4,7 @@ description: Learn about how to...
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2023
+ms.date: 08/21/2023
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -27,8 +27,8 @@ You can then use the conversation lifecycle events data from Dynamics 365 Custom
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-    > [!IMPORTANT] 
-    > When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this Public Preview only, the premium use rights requirement and the ME restriction are relaxed.
+> [!IMPORTANT]
+> When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this public preview only, the premium use rights requirement and the ME restriction are relaxed.
 
 ## Pricing
 
