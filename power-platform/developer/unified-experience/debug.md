@@ -27,9 +27,9 @@ This article we will show you how to:
 
 Let's begin by developing a runnable X++ class to use as an example. The classes only task is to log a message into the infolog<!--what is this?-->. The important thing here is not what the runnable class does, rather it is how we compile, run, and debug it.
 
-As a prerequisite, you will need access to have a working Power Platform developer environment with the Finance and Operations apps installed. You will also need to install the Power Platform tools extension for Visual Studio. <!--Add link-->
+As a prerequisite, you will need access to have a working Power Platform development environment with the Dynamics 365 Finance and Operations apps installed. You will also need to install the Power Platform tools extension for Visual Studio.
 
-More information: <!--Link to PPAC article-->
+More information: <!--PPAC environment setup link-->, <!--VS extension link-->
 
 ## Create a model
 
@@ -37,15 +37,15 @@ We will start by creating a model in Visual Studio.
 
 1. Launch Visual Studio and choose **Continue without code**.
 1. Choose the menu option **Extensions** > **Dynamics 365** > **Model management** > **Create model...**. If you do not see this menu option, you don't have the required Visual Studio extension installed.
-1. Use the example model name "MyTestModel" when prompted by the wizard, providing relevant information for the rest of the required information.
+1. Enter a model name of "MyTestModel" when prompted by the form, providing relevant information for the rest of the required information.
 
     :::image type="content" source="../media/unified-experience/devexp-debug-create_model1.png" alt-text="Add parameters":::
 
-1. On the next page of the wizard make sure you are creating a new package.
+1. On the next step of the form choose **Create new package**.
 
     :::image type="content" source="../media/unified-experience/devexp-debug-create_model2.png" alt-text="Select package":::
 
-1. Fill in the referenced models. You only need to specify dependencies on the Application Platform and Application Foundation packages in this trivial example.
+1. Choose all referenced models. You only need to specify dependencies on the Application Platform and Application Foundation packages in this trivial example.
 
     :::image type="content" source="../media/unified-experience/devexp-debug-create_model3.png" alt-text="Select referenced packages":::
 
@@ -53,8 +53,14 @@ We will start by creating a model in Visual Studio.
 
 ## Add and compile the runnable X++ class
 
-Now create the project that will contain the runnable class. The name is not important here - In this case we will keep the default name, i.e. FinanceOperations3. Now add a runnable class to the project in the Solution explorer by right clicking the project, selecting the Add menu | New Item. Select a Runnable Class in the Code menu in Dynamics 365 Items, and call it MyRunnableClass. Visual Studio will open a window with the template for a runnable class providing a static main method that will be called as the runnable class runs. Since we are only providing a token implementation here, we will simply add a call to log a string message in the infolog:
+Create a project and X++ class in Visual Studio by following these steps.
 
+1. Create a project in Visual Studio that will contain the runnable class. The name of the class is not important here. For this exercise we will keep the default name (i.e., FinanceOperations3).
+1. Add a runnable class to the project in **Solution Explorer** by right-clicking the project and choosing **Add** > **New item**. 
+1. Select a **Runnable Class** in the **Code** menu under **Dynamics 365 items**, and call it "MyRunnableClass". Visual Studio will open a window with the template for a runnable class providing a static `main` method that will be called as the runnable class runs.
+1. Add the following X++ code to the `main` method. Since we are only providing a token implementation here, we will simply add a call to log a string message in the infolog:
+
+```xpp
 internal final class MyRunnableClass
 {
     public static void main(Args _args)
@@ -62,16 +68,17 @@ internal final class MyRunnableClass
         Info('Hello World from the Server Side');
     }
 }
+``````
 
-Now we will compile that class, to make sure we did not introduce any errors to this very simple code: The compilation is done by selecting Build from the context menu on the project. 
+Compile the class to make sure we did not introduce any errors to this very simple code. The compilation is done by selecting **Build** from the context menu on the project.
 
 ## Deploy the class
 
-All the work that we have done uptil now has happened on the client side. The X++ compiler and the related tools are all intalled here, along with the metadata that defines the application you are developing against. You can use the Configure Metadata menu item to manage the configuration that you are working with. Now the time has come to execute the code, and for this we will need to deploy the code to the server tier. For this, you can use the Extension | Dynamics 365 | Deploy | Deploy Models to Online Environment. The dialog that appears will allow select the packages to deploy. In this case, you will need to select the MyTestModel. You can easily find that model by using the search field at the top of the list of packages. At the bottom of the dialog you will see the packages that are referenced. Since these are part of the code that Microsoft ships, you do not need to deploy them - They are already installed on the server tier.
+All the work that we have done up until now has happened on the client side. The X++ compiler and the related tools are all installed locally, along with the metadata that defines the application you are developing against. You can use the **Configure Metadata** menu item to manage the configuration that you are working with. Now the time has come to execute the code and for this we will need to deploy the code to the server (cloud) tier. For this operation you will use the **Extension** > **Dynamics 365** > **Deploy** > **Deploy Models to Online Environment** menu item. The dialog that appears will allow select the packages to deploy. In this case, you will need to select "MyTestModel". You can easily find that model by using the search field at the top of the list of packages. At the bottom of the dialog you will see the packages that are referenced. Since these are part of the code that Microsoft ships, you do not need to deploy them as they are already installed on the server tier.
 
-At this point you are accessing the endpoint in the cloud, so you will likely need to authenticate. Use your Dataverse credentials to connect to Dataverse and select the solution to work against. After a little while, the authentication has been completed.
+At this point you are accessing the endpoint in the cloud, so you will likely need to authenticate. Use your Microsoft Dataverse credentials to connect to Dataverse and select the solution to work against. After a short wait, the authentication will complete.
 
-You can follow the progress of the deployment by going to the "FinOps Cloud Runtinme" channel in the Visual Studio Output window. Once that is complete, you can see log information by following the link in the output window. 
+You can follow the progress of the deployment by navigating  to the "FinOps Cloud Runtinme" channel in the Visual Studio output window. Once that deployment is complete, you can see log information by following the link displayed in the output window.
 
 ## Debug the code
 
