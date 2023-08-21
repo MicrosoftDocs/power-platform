@@ -26,7 +26,9 @@ Learn how to export data to Application Insights from the Power Platform admin c
 - To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you must be a member of one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
     > [!IMPORTANT] 
-    > The Application Insights exporting functionality for Power Automate is in public preview.
+    > The Application Insights exporting functionality for Power Automate and Dynamics Customer Services is in public preview.
+    >
+    > When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this Public Preview only, the premium use rights requirement and the ME restriction are relaxed.
 
     > [!NOTE]
     > - The version of Application Insights described in this article isn't available in sovereign clouds. The prerequisites and setup instructions are consistent with the version currently hosted in sovereign clouds.
