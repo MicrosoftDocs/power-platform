@@ -27,13 +27,8 @@ You can then use the conversation lifecycle events data from Dynamics 365 Custom
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-## Prerequisites
-
--   An active Azure tenant and the [Application Insights environment](/azure/azure-monitor/app/create-workspace-resource) set up for receiving the data. More information: [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource).
-
--   Dynamics 365 Customer Service Enterprise license. This environment must be a Managed Environment. To make your environment a Managed Environment, perform the steps in [Enable Managed Environments](managed-environment-enable.md).
-
--   You'll need to have one of the following roles to set up data export in Power Platform admin center: Power Platform administrator, Dynamics 365 administrator, or Microsoft 365 Global administrator.
+    > [!IMPORTANT] 
+    > When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this Public Preview only, the premium use rights requirement and the ME restriction are relaxed.
 
 ## Pricing
 
