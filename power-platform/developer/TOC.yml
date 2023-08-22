@@ -74,9 +74,9 @@
         - name: Debug X++ code
           href: unified-experience\debug.md
         - name: Copy an LCS environment
-          href: 
+          href: unified-experience\overview.md
         - name: Frequently asked questions (FAQs)
-          href: 
+          href: unified-experience\overview.md
     - name: Tools
       expanded: true
       items:

@@ -70,42 +70,50 @@ internal final class MyRunnableClass
 }
 ``````
 
-Compile the class to make sure we did not introduce any errors to this very simple code. The compilation is done by selecting **Build** from the context menu on the project.
+Compile the class to make sure you did not introduce any errors to this very simple code. The compilation is done by selecting **Build** from the context menu on the project.
 
 ## Deploy the class
 
-All the work that we have done up until now has happened on the client side. The X++ compiler and the related tools are all installed locally, along with the metadata that defines the application you are developing against. You can use the **Configure Metadata** menu item to manage the configuration that you are working with. Now the time has come to execute the code and for this we will need to deploy the code to the server (cloud) tier. For this operation you will use the **Extension** > **Dynamics 365** > **Deploy** > **Deploy Models to Online Environment** menu item. The dialog that appears will allow select the packages to deploy. In this case, you will need to select "MyTestModel". You can easily find that model by using the search field at the top of the list of packages. At the bottom of the dialog you will see the packages that are referenced. Since these are part of the code that Microsoft ships, you do not need to deploy them as they are already installed on the server tier.
+All the work that we have done up until now has happened on the client side. The X++ compiler and the related tools are all installed locally, along with the metadata that defines the application you are developing against. In Visual Studio, you can use the **Configure Metadata** menu item to manage the configuration that you are working with.
+
+Now the time has come to execute the code, and for this we will need to deploy the code to the server (cloud) tier. For this operation you will use the **Extension** > **Dynamics 365** > **Deploy** > **Deploy Models to Online Environment** menu item. The dialog that appears will allow select the packages to deploy. In this case, you will need to select "MyTestModel". You can easily find that model by using the search field at the top of the list of packages. At the bottom of the dialog you will see the packages that are referenced. Since these are part of the code that Microsoft ships, you do not need to deploy them as they are already installed on the server tier.
 
 At this point you are accessing the endpoint in the cloud, so you will likely need to authenticate. Use your Microsoft Dataverse credentials to connect to Dataverse and select the solution to work against. After a short wait, the authentication will complete.
 
 You can follow the progress of the deployment by navigating  to the "FinOps Cloud Runtinme" channel in the Visual Studio output window. Once that deployment is complete, you can see log information by following the link displayed in the output window.
 
-## Debug the code
+## Debug the deployed code
 
-Now we have compiled the code, and we have uploaded it to the cloud endpoint. Now the bits are ready to be executed. To check that all is well with our extraordinarily complex code, we will now debug it. Before we do, set the debugging options to load the symbols for your package, and also for applicationplatform and applicationfoundation. Do this by opening the options from the Extensions menu, and go to the debugging tab. Here you will find the Debugging page that shows options for loading symvols. Make sure you indicate that you want to load the items in your solution and also the ApplicationFoundation and ApplicationPlatform packages. This will be useful later.
+After you have compiled the project code and uploaded it to the cloud endpoint, the binary is ready to be executed. To verify that all is well with the compiled class code, you will now debug it.
 
-Now set a breakpoint in the line where we call the info method. Then press the green arrow to start debugging, or use the F5 keyboard shortcut.
+1. In Visual Studio, set the debugging options to load the symbols for your package and also for applicationplatform and applicationfoundation.
+    Do this by opening the options from the **Extensions** menu, and go to the debugging tab. Here you will find the **Debugging** page that shows options for loading symbols. Make sure you indicate that you want to load the items in your solution and also the ApplicationFoundation and ApplicationPlatform packages.
+2. Set a breakpoint in the line where we call the `Info` method and then press the green arrow in the toolbar, or use the F5 keyboard shortcut, to start debugging.
+    You will see a browser window open with a URL that designates the runnable class. After a little while the browser will load the form that shows that the class runner is active, and is executing the MyRunnableClass class. Next, the debugger will load the symbols for your project and execution will stop at the breakpoint.
+3. Press F5 to continue execution and then you will see that the infolog pane in Visual Studio shows the message we entered into the infolog using the call to the `Info` method.
+4. Refresh the browser window which will re-load the URL.
+    You will see that the breakpoint loads immediately. The debugger is still running, and the output message will appear a second time in the infolog without restarting the debugger. This technique is especially useful when running forms. You can always refresh the browser, and the form will be loaded again without any delay caused by loading the symbols.
 
-You will see a browser open with a URL that designates the runnable class. After a little while the browser will load the form that shows that the class runner is active, and is executing the MyRunnableClass class. Then the debugger will load the symbols for your project and hit the breakpoint.
+Let's now try that. Instead of tediously writing our own form all over again, we will use a form that already exists. Start by using the SysUserSetup form that allows you to set the colorization (i.e., the theme) used to render forms. We will change the URL to open the SysUserSetup form instead of running the class by changing the menuitem (mi) - that part that designates the menu item to start the class runner. The URL will end up with something like this:
 
-After you continue execution (by pressing F5) you will see that the infolog pane in Visual Studio shows the message we entered into the infolog using the call to info(). Now go to the browser and refresh it, loading the URL. You will see that the breakpoint loads immediately: The debugger is still running, and the message will appear a second time in the infolog, without restarting the debugger. This technique is especially useful when running forms: You can always refresh the browser, and the form will be loaded again, without any delay caused by loading the symbols. 
+https://<environment?prt=initial&debug=vs&activityid=\<unchanged>&cmp=DAT&mi=SysUserSetup
 
-Let us try that. Instead of tediously writing our own form all over again, we will use a form that already exists, namely the SysUserSetup form that allows you to set the colorization (i.e. the theme) used to render forms. We will change the URL open the SysUserSetup form instead of running the class by changing the menuitem (mi) that part that designates the menu item to start the class runner. The URL will end up with something like:
+You will now see the form that allows you to set the colors in Dynamic's open. <!--What are you meaning here-->
 
-https://<environment?prt=initial&debug=vs&activityid=<unchanged>&cmp=DAT&mi=SysUserSetup
+Now let's set a breakpoint in the form.
 
-You will now see the form that allows you to set the colors in Dynamics open. 
-
-Now let us set a breakpoint in the form. First open the application explorer from the View menu. Then enter the string 'SysUserSetup type:"form"' in the search bar in the Application Explorer window. Select the form there, and select View Code to open the editor with the source code for this form.
-
-In that form, set a breakpoint in the selectionChange() method in the ThemeChooser control. This code will be triggered when the user selects a new color theme. Then, in the browser, select one of the colored squares, say the red one. You will hit the breakpoint. Continue the execution with F5 and hit another colored square and the breakpoint will be triggered again.
+1. Open the **Application Explorer** from the View menu.
+1. Enter the string 'SysUserSetup type:"form"' in the search bar in the Application Explorer window. 1. Select the form, and select **View code** to open the editor with the source code for this form.
+1. In that form, set a breakpoint in the `selectionChange` method in the ThemeChooser control. This code will be triggered when the user selects a new color theme.
+1. In the browser window, select one of the colored squares, let's say the red one. You will hit the breakpoint.
+1. Continue the execution by pressing F5. Another colored square is hit and the breakpoint will be triggered again.
 
 ## Summary
 
-As a recap, here is a summary and the points to take away from this exersize. We started with using Visual Studio to create a simple runnable class. After the compilation, the package needed to be pushed to the cloud endpoint for execution: X++ code can only be executed in the cloud, so we performed a deployment operation. Once the deployment was complete, we executed the code by setting a breakpoint and running the debugger. We then started a form from the browser, and noticed that breakpoints were hit correctly as the form was used and that we did not have to restart the debugger for that to happen. In fact, the debugger can be started by using the "Launch Debugger" option on the Extension menu. You can then enter the URL in the browser and the breakpoints will be hit.
+As a recap, here is a summary and the points to take away from this exercise. We started with using Visual Studio to create a simple runnable class. After the compilation, the package needed to be pushed to the cloud endpoint for execution. X++ code can only be executed in the cloud, so we performed a deployment operation. Once the deployment was complete, we executed the code by setting a breakpoint and running the debugger. We then started a form from the browser, and noticed that breakpoints were hit correctly as the form was used and we did not have to restart the debugger for that to happen. In fact, the debugger can be started by using the **Launch debugger** option on the **Extension** menu. You can then enter a URL in the browser and the breakpoints will be hit.
 
 ### See also
 
-[Finance and operations apps documentation](/dynamics365/fin-ops-core/fin-ops/)<br/>
-[Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)<br/>
+[Deploy packages](deploy-packages.md)  
+[Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](/power-platform/admin/manage-apps)
