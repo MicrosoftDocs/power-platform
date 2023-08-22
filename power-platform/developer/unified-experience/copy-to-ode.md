@@ -1,6 +1,6 @@
 ---
-title: "Copy a LCS environment"
-description: "Learn how to copy from a LCS managed environment to a Power Platform admin center (PPAC) online development environment (ODE)"
+title: "Copy an LCS environment"
+description: "Learn how to copy from an LCS managed environment to a Power Platform admin center (PPAC) online development environment (ODE)"
 author: pvillads
 ms.date: 08/21/2023
 ms.topic: article
@@ -11,7 +11,7 @@ ms.author: pvillads
 ms.collection: get-started
 ---
 
-# Copy a LCS environment (preview)
+# Copy an LCS environment (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
