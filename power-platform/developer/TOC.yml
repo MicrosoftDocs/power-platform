@@ -74,11 +74,11 @@
         - name: Deploy packages
           href: unified-experience\deploy-packages.md
         - name: Use CI/CD pipelines
-          href: unified-experience\overview.md
+          href: unified-experience\cicd-pipeline.md
         - name: Copy an LCS environment
-          href: unified-experience\overview.md
+          href: unified-experience\copy-to-ode.md
         - name: Frequently asked questions (FAQs)
-          href: unified-experience\overview.md
+          href: unified-experience\faq.md
     - name: Tools
       expanded: true
       items:
