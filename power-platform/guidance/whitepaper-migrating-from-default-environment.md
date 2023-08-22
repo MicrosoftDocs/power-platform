@@ -89,7 +89,7 @@ Data loss prevention (DLP) policies function as guardrails to help prevent users
 
 ### Identification of objects using DLP
 
-DLP policy-based identification is helpful to define target environments for your apps and flows. There might be apps or flows that are using a connector that is blocked by the DLP or a mix of business and non-business connectors, which, upon DLP activation, will stop working. Noncompliant objects based on DLP.
+DLP policy-based identification is helpful to define target environments for your apps and flows. There might be apps or flows that are using a connector that is blocked by the DLP or a mix of business and non-business connectors, which, upon DLP activation, will stop working.
 
 To prevent downtime of potential critical objects, due to DLP, part of CoE Starter Kit, you can find **DLP editor (impact analysis) tool**. The goal of the DLP editor is to allow admins to see the impact of existing policies or the potential impact of policy changes. It provides admins with a view of impacted apps and flows, and resources that would be disabled if new or updated policies were to be enforced. The app can be used to review existing policies, change existing policies, and mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
 
@@ -363,7 +363,7 @@ Assuming the solutions are ready, the next stage of automation can be done in mu
 
 The Power Platform Command Line Interface (CLI) also provides options to export and import solutions. All solution-related [commands](/power-platform/developer/cli/reference/solution) can be used to build, export, and import solutions. You can also use CLI to [transfer data in and out](/power-platform/developer/cli/reference/data).
 
-A maker-friendly option is to use pipelines that are intended to democratize ALM for Power Platform. Bringing ALM automation and CI/CD capabilities into a single feature service is more approachable for all makers, admins, and developers. 
+A maker-friendly option is to use pipelines that are intended to democratize ALM for Power Platform. Bringing ALM automation and continuous integration/continuous deployment (CI/CD) capabilities into a single feature service is more approachable for all makers, admins, and developers. 
 
 ### Creating connections (manual)
 
@@ -395,7 +395,7 @@ A clean-up is a good idea for apps and flows that have not been used and updated
 
 CoE Starter Kit doesn’t have a tagging option today. However, it could be a customization that you could add to the Starter Kit.
 
-Create a table called **Tags** and set up an N-N relationship with the app, flows, and other inventory tables. You can then create a tag and associate these records with the appropriate inventory items. For a better user experience, you can embed a grid on the **Main** form of apps, flows, and other inventory tables. This option is recommended as it has referential consistency.
+Create a table called **Tags** and set up an many-to-many (N:N) relationship with the app, flows, and other inventory tables. You can then create a tag and associate these records with the appropriate inventory items. For a better user experience, you can embed a grid on the **Main** form of apps, flows, and other inventory tables. This option is recommended as it has referential consistency.
 
 Create a text field on each inventory table and use that to capture the text (tag) that you can later use.
 
@@ -426,7 +426,7 @@ As an example, assume that a Power Automate flow is created to address a specifi
 
 To make a backup of the component, either options of individual migration or mass migration could be used to generate an exported solution. This can then be added to either a file repository of your choice or to a OneDrive location.
 
-After the backup is secured, then the options from Delete above can be applied to complete the clean-up process.
+After the backup is secured, then you can apply delete option to complete the clean-up process.
 
 In many cases, these are test flows and apps created by makers as part of their personal productivity learning and experimenting.
 
