@@ -11,21 +11,21 @@ ms.author: pvillads
 ms.collection: get-started
 ---
 
-# Copy an LCS environment to nline development environment (preview)
+# Copy an LCS environment to an online development environment (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This guide provides step-by-step instructions on performing a copy from an LCS managed Production/Sandbox environment to a Power Platform admin center (PPAC) managed online development environment (ODE).
+This guide provides step-by-step instructions on performing a copy from an LCS managed production/sandbox environment to a Power Platform admin center (PPAC) managed online development environment (ODE).
 
 Unlike the current LCS copy experience, PPAC based copy copies over your databases, any customizations and the ISV solutions. In simple terms, it produces a replica of the source environment that includes both code and data.
 
 ## Prerequisites
 
-1. An LCS Production/Sandbox environment (source)
+1. An LCS production/sandbox environment (source)
 1. Online development environment (target)
 
 > [!IMPORTANT]
-> Ensure that both source and target are provisioned in the same geographic region. (Provisioning is now available in all regions).
+> Ensure that both source and target are provisioned in the same geographic region. Provisioning is now available in all regions.
 
 ## Step by step instructions
 
@@ -39,7 +39,7 @@ For instructions on performing this step, use [Connect finance and operations ap
 ### Step 2: Install/update the latest Dynamics 365 Finance and Operations Platform tools app
 
 > [!NOTE]
-> This application/solution is needed to connect Visual studio extension to the Finance and Operations environment.
+> This application/solution is needed to connect the Visual Studio extension to the Finance and Operations environment.
 
 1. In the Power Platform admin center and select **Environments**.
 1. Select the environment you wish to copy. From the **Resources** menu, select **Dynamics 365 apps**.
@@ -48,7 +48,7 @@ For instructions on performing this step, use [Connect finance and operations ap
 
 You should see Dynamics 365 Finance and Operations platform tools in the list of available apps.
 
-If you see "Update Available" in the Status for Dynamics 365 Finance and Operations platform tools, click on the link, agree to the terms and click **Update**
+If you see "Update Available" in the **Status** for Dynamics 365 Finance and Operations platform tools, click on the link, agree to the terms and click **Update**
 
 :::image type="content" source="../media/unified-experience/copy-to-ode-platform-tools.png" alt-text="Dynamics 365 Finance and Operations platform tools showing an Update available status.":::
 
@@ -84,7 +84,7 @@ pac package deploy --logConsole --package <OutputPath>\<Package>.dll
 ### Step 5: Initiate Copy
 
 1. Go to the source environment in [PPAC](https://aka.ms/PPAC)
-1. Click on **Copy**. This will open a fly out menu, such as in [Step 2 above](#step-2-install-update-the-latest-dynamics-365-finance-and-operations-platform-tools-app)
+1. Click on **Copy**. This will open a fly out menu, such as in [Step 2 above](#step-2-installupdate-the-latest-dynamics-365-finance-and-operations-platform-tools-app)
 1. Select the target environment from dropdown
 1. Select the target online development environment
 1. After selecting the target from dropdown, click on copy to start the copy operation
