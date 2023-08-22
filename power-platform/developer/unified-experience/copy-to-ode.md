@@ -59,3 +59,46 @@ If Dynamics 365 Finance and Operations platform tools is not listed, click on **
 From the list on right side, find and select “Dynamics 365 Finance and Operations platform tools” app, click on next and follow the instructions to install.
 
 :::image type="content" source="../media/unified-experience/copy-to-ode-install-apps.png" alt-text="Install Dynamics 365 apps menu.":::
+
+### Step 3: Convert LCS packages to the new unified format
+
+> [!NOTE]
+> This step is needed to convert the existing LCS package into a new unified deployment package (aka UDP) format. The package format is changed to align with other Dynamics applications.
+
+Run the following command using ModelUtil.exe from Windows Powershell. You can find the .exe in PackagesLocalDirectoryDev/bin.
+
+```
+.\ModelUtil.exe -convertToUnifiedPackage -file=<PathToYourPackage>.zip -outputpath=<OutputPath>
+```
+
+### Step 4: Upload/Deploy unified deployable package
+
+This deploy command doesn’t make any changes to the Finance and Operations LCS environment, nor does it require any downtime to apply this package. This is done to upload and save the customizations into Dataverse storage. During a copy from a source environment, these artifacts are used to apply customizations on target environment.
+
+1. Install [PAC CLI](https://aka.ms/PowerAppsCLI)
+1. [Authenticate and connect to source Dataverse](../cli/reference/auth#basic-create)
+1. Run: pac auth list
+1. Run: pac auth select --index 1
+1. Run: pac package deploy --logConsole --package <OutputPath>\<Package>.dll
+
+### Step 5: Initiate Copy
+
+1. Go to the source environment in [PPAC](https://aka.ms/PPAC)
+1. Click on **Copy**. This will open a fly out menu, such as in [Step 1 above](#step-1:-connect-finance-and-operations-apps-with-a-new-Microsoft-Dataverse-instance)
+1. Select the target environment from dropdown
+1. Select the target online development environment
+1. After selecting the target from dropdown, click on copy to start the copy operation
+
+:::image type="content" source="../media/unified-experience/copy-to-ode-copy-environment.png" alt-text="Copy environment menu":::
+
+You can monitor the copy progress from the *target environment page* (Not the PPAC page).
+
+:::image type="content" source="../media/unified-experience/copy-to-ode-copy-progress.png" alt-text="Copy progress from the target environment page":::
+
+If you click on target environment in PPAC, you will see something like the image from step 5 above while copy operation is ongoing.
+
+#### See also
+
+[Deploy packages](deploy-packages.md)  
+[Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
+[Manage Dynamics 365 apps](/power-platform/admin/manage-apps)
