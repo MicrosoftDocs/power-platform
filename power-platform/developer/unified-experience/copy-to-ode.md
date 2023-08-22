@@ -25,7 +25,7 @@ Unlike the current LCS copy experience, PPAC based copy copies over your databas
 1. Online development environment (target)
 
 > [!IMPORTANT]
-> Ensure that both source and target are in the same geographic region. (Provisioning is now available in all regions).
+> Ensure that both source and target are provisioned in the same geographic region. (Provisioning is now available in all regions).
 
 ## Step by step instructions
 
