@@ -57,6 +57,44 @@ to the versions of the tools that are required for the pipeline to run properly.
 | `DefaultVersion`<br/>Use default tool versions | Set to **true** to use the default version of all tools, otherwise **false**. Required (and **false**) when any tool versions are specified. |
 | `PowerAppsAdminVersion`<br/>`XrmToolingPackageDeploymentVersion`<br/>`MicrosoftPowerAppsCheckerVersion`<br/>`CrmSdkCoreToolsVersion`<br/>Tool version | The specific version of the tool to use. |
 
+### Power Platform Set Connection Variables
+
+Sets BuildTools.* variables to provide custom script tasks access to use the Service Connection as a single source of truth.
+
+#### YAML snippet (SetConnectionVariables)
+
+```yml
+# Make DevOps service connection to Power Platform availiabe to scripts
+  - task: PowerPlatformSetConnectionVariables@2
+    inputs:
+      authenticationType: 'PowerPlatformSPN'
+      PowerPlatformSPN: 'devops service connection name or id'
+```
+
+#### Parameters (SetConnectionVariables)
+
+| Parameters    | Description   |
+|---------------|---------------|
+| `authenticationType`<br/>Type of authentication | (Optional) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | (**PowerPlatformSPN** only) The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
+| `Environment`<br/>Environment Url | (optional) Environment url this task targets; default is the pipeline variable that e.g. the CreateEnvironment task has set before. |
+| `ApplicationId`<br/>Application Id | (**PowerPlatformEnvironment** only) Appplication Id to use to login. |
+| `RedirectUri`<br/>Redirect Uri |(**PowerPlatformEnvironment** only) Redirect URI of the specificed App. Needed when specifying an App Id. |
+
+#### Outputs (SetConnectionVariables)
+
+| Output Variable    | Description   |
+|---------------|---------------|
+| `BuildTools.ApplicationId` | Output variable of Application Id used by Service Connection |
+| `BuildTools.ClientSecret` | Output variable of Client Secret used by Service Connection |
+| `BuildTools.TenantId` | Output variable of Tenant Id used by Service Connection |
+| `BuildTools.DataverseConnectionString` | Output variable of a Dataverse connection string based on values used by Service Connection |
+| `BuildTools.UserName` | Output variable of Username used by Service Connection |
+| `BuildTools.Password` | Output variable of Password used by Service Connection |
+
+<!-- reference: https://github.com/microsoft/powerplatform-build-tools/blob/main/src/tasks/set-connection-variables/set-connection-variables-v2/task.json -->
+
 ### Power Platform WhoAmI
 
 Verifies a Power Platform environment service connection by connecting and making a WhoAmI request. This task can be useful to include early in the pipeline, to verify connectivity before processing begins.
@@ -91,6 +129,7 @@ Verifies a Power Platform environment service connection by connecting and makin
 | `authenticationType`<br/>Type of authentication | (Optional) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
+
 
 ## Quality check
 
