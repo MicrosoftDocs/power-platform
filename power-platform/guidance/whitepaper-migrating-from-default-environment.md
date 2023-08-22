@@ -93,11 +93,7 @@ DLP policy-based identification is helpful to define target environments for you
 
 To prevent downtime of potential critical objects, due to DLP, part of CoE Starter Kit, you can find **DLP editor (impact analysis) tool**. The goal of the DLP editor is to allow admins to see the impact of existing policies or the potential impact of policy changes. It provides admins with a view of impacted apps and flows, and resources that would be disabled if new or updated policies were to be enforced. The app can be used to review existing policies, change existing policies, and mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
 
-Update existing DLP policies to review impact.
-
-:::image type="content" source="media/image5.gif" alt-text="Update existing DLP policies to review impact.":::
-
-Follow the [Establishing tenant hygiene with the CoE Starter Kit](/power-platform/guidance/coe/after-setup-tenant-hygiene) article to find more information about the DLP editor.
+Update existing DLP policies to review impact. Follow the [Establishing tenant hygiene with the CoE Starter Kit](/power-platform/guidance/coe/after-setup-tenant-hygiene) article to find more information about the DLP editor.
 
 Before turning on the DLP feature, you can identify which apps and flows will be affected and alert the makers. The DLP editor can send a list of all the apps and flows that will be affected to an email address, which will generate a .csv file for each type of object.
 
@@ -216,8 +212,6 @@ Managing resources effectively is crucial for a successful migration. Here are s
 The distinction between app and solution is an important one. Exporting and importing an app only affects that object. A solution is a container that can have multiple apps, flows, and other objects.
 
 ### Export and import a canvas app (legacy way)
-
-:::image type="content" source="media/image2.gif" alt-text="Export package GIF demo with example export walkthrough.":::
 
 The detailed steps are documented in [Exporting a canvas app package](/power-apps/maker/canvas-apps/export-import-app) and [Importing a canvas app package](/power-apps/maker/canvas-apps/export-import-app).
 
