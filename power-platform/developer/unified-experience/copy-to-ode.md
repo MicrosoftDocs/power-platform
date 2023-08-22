@@ -93,7 +93,7 @@ pac package deploy --logConsole --package <OutputPath>\<Package>.dll
 
 You can monitor the copy progress from the *target environment page* (Not the PPAC page).
 
-:::image type="content" source="../media/unified-experience/copy-to-ode-copy-progress.png" alt-text="Copy progress from the target environment page":::
+:::image type="content" source="../media/unified-experience/copy-to-ode-copy-progress2.png" alt-text="Copy progress from the target environment page":::
 
 If you click on target environment in PPAC, you will see something like the image from step 5 above ("After selecting...") while copy operation is ongoing.
 
