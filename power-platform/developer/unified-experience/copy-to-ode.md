@@ -36,7 +36,7 @@ Unlike the current LCS copy experience, PPAC based copy copies over your databas
 
 For instructions on performing this step, use [Connect finance and operations apps with a new Microsoft Dataverse instance](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv).
 
-### Step 2: Install/update the latest Dynamics 365 Finance and Operations Platform tools app
+### Step 2: Install/update the latest Dynamics 365 Finance and Operations Platform Tools app
 
 > [!NOTE]
 > This application/solution is needed to connect the Visual Studio extension to the Finance and Operations environment.
@@ -53,13 +53,13 @@ If you see "Update Available" in the **Status** for Dynamics 365 Finance and Ope
 :::image type="content" source="../media/unified-experience/copy-to-ode-platform-tools.png" alt-text="Dynamics 365 Finance and Operations platform tools showing an Update available status.":::
 
 If Dynamics 365 Finance and Operations Platform Tools is not listed, click on **Install App** to add this app to your organization.
-From the list on right side, find and select “Dynamics 365 Finance and Operations Platform Tools” app, click on next and follow the instructions to install.
+From the list on right side, find and select “Dynamics 365 Finance and Operations Platform Tools” app, click on **Next** and follow the instructions to install.
 
 :::image type="content" source="../media/unified-experience/copy-to-ode-install-apps.png" alt-text="Install Dynamics 365 apps menu.":::
 
 ### Step 3: Convert LCS packages to the new unified format
 
-This step is needed to convert the existing LCS package into a new unified deployment package (aka UDP) format. The package format is changed to align with other Dynamics applications.
+This step is needed to convert the existing LCS package into a new unified deployment package (UDP) format. The package format is changed to align with other Dynamics applications.
 
 Run the following command using ModelUtil.exe from Windows Powershell. You can find the .exe in PackagesLocalDirectoryDev/bin.
 
@@ -84,7 +84,7 @@ pac package deploy --logConsole --package <OutputPath>\<Package>.dll
 ### Step 5: Initiate Copy
 
 1. Go to the source environment in [PPAC](https://aka.ms/PPAC)
-1. Click on **Copy**. This will open a fly out menu, such as in [Step 2 above](#step-2-installupdate-the-latest-dynamics-365-finance-and-operations-platform-tools-app)
+1. Click on **Copy**
 1. Select the target environment from dropdown
 1. Select the target online development environment
 1. After selecting the target from dropdown, click on **Copy** to start the copy operation
