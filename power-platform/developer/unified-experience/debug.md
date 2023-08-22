@@ -87,30 +87,39 @@ You can follow the progress of the deployment by navigating  to the "FinOps Clou
 After you have compiled the project code and uploaded it to the cloud endpoint, the binary is ready to be executed. To verify that all is well with the compiled class code, you will now debug it.
 
 1. In Visual Studio, set the debugging options to load the symbols for your package and also for applicationplatform and applicationfoundation.
+
     Do this by opening the options from the **Extensions** menu, and go to the debugging tab. Here you will find the **Debugging** page that shows options for loading symbols. Make sure you indicate that you want to load the items in your solution and also the ApplicationFoundation and ApplicationPlatform packages.
-2. Set a breakpoint in the line where we call the `Info` method and then press the green arrow in the toolbar, or use the F5 keyboard shortcut, to start debugging.
+
+1. Set a breakpoint in the line where we call the `Info` method and then press the green arrow in the toolbar, or use the F5 keyboard shortcut, to start debugging.
+
     You will see a browser window open with a URL that designates the runnable class. After a little while the browser will load the form that shows that the class runner is active, and is executing the MyRunnableClass class. Next, the debugger will load the symbols for your project and execution will stop at the breakpoint.
-3. Press F5 to continue execution and then you will see that the infolog pane in Visual Studio shows the message we entered into the infolog using the call to the `Info` method.
-4. Refresh the browser window which will re-load the URL.
+
+1. Press F5 to continue execution and then you will see that the infolog pane in Visual Studio shows the message we entered into the infolog using the call to the `Info` method.
+
+1. Refresh the browser window which will re-load the URL.
+
     You will see that the breakpoint loads immediately. The debugger is still running, and the output message will appear a second time in the infolog without restarting the debugger. This technique is especially useful when running forms. You can always refresh the browser, and the form will be loaded again without any delay caused by loading the symbols.
 
 Let's now try that. Instead of tediously writing our own form all over again, we will use a form that already exists. Start by using the SysUserSetup form that allows you to set the colorization (i.e., the theme) used to render forms. We will change the URL to open the SysUserSetup form instead of running the class by changing the menuitem (mi) - that part that designates the menu item to start the class runner. The URL will end up with something like this:
 
-https://<environment?prt=initial&debug=vs&activityid=\<unchanged>&cmp=DAT&mi=SysUserSetup
+`https://<environment?prt=initial&debug=vs&activityid=\<unchanged>&cmp=DAT&mi=SysUserSetup`
 
 You will now see the form that allows you to set the colors in Dynamic's open. <!--What are you meaning here-->
 
 Now let's set a breakpoint in the form.
 
 1. Open the **Application Explorer** from the View menu.
-1. Enter the string 'SysUserSetup type:"form"' in the search bar in the Application Explorer window. 1. Select the form, and select **View code** to open the editor with the source code for this form.
+1. Enter the string `SysUserSetup type:"form"` in the search bar in the Application Explorer window.
+1. Select the form, and select **View code** to open the editor with the source code for this form.
 1. In that form, set a breakpoint in the `selectionChange` method in the ThemeChooser control. This code will be triggered when the user selects a new color theme.
 1. In the browser window, select one of the colored squares, let's say the red one. You will hit the breakpoint.
 1. Continue the execution by pressing F5. Another colored square is hit and the breakpoint will be triggered again.
 
 ## Summary
 
-As a recap, here is a summary and the points to take away from this exercise. We started with using Visual Studio to create a simple runnable class. After the compilation, the package needed to be pushed to the cloud endpoint for execution. X++ code can only be executed in the cloud, so we performed a deployment operation. Once the deployment was complete, we executed the code by setting a breakpoint and running the debugger. We then started a form from the browser, and noticed that breakpoints were hit correctly as the form was used and we did not have to restart the debugger for that to happen. In fact, the debugger can be started by using the **Launch debugger** option on the **Extension** menu. You can then enter a URL in the browser and the breakpoints will be hit.
+As a recap, here is a summary and the points to take away from this exercise.
+
+We started with using Visual Studio to create a simple runnable class. After the compilation, the package needed to be pushed to the cloud endpoint for execution. X++ code can only be executed in the cloud, so we performed a deployment operation. Once the deployment was complete, we executed the code by setting a breakpoint and running the debugger. We then started a form from the browser, and noticed that breakpoints were hit correctly as the form was used and we did not have to restart the debugger for that to happen. In fact, the debugger can be started by using the **Launch debugger** option on the **Extension** menu. You can then enter a URL in the browser and the breakpoints will be hit.
 
 ### See also
 
