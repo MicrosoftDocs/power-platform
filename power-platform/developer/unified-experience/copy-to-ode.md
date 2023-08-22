@@ -11,16 +11,13 @@ ms.author: pvillads
 ms.collection: get-started
 ---
 
-# Copy an LCS environment to ODE (preview)
+# Copy an LCS environment to nline development environment (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This guide provides step-by-step instructions on performing a Copy from an LCS managed Production/Sandbox environment to a Power Platform admin center (PPAC)) managed online development environment (ODE).
+This guide provides step-by-step instructions on performing a copy from an LCS managed Production/Sandbox environment to a Power Platform admin center (PPAC) managed online development environment (ODE).
 
 Unlike the current LCS copy experience, PPAC based copy copies over your AxDB, MrDB, any customizations and the ISV solutions. In simple terms, it produces a replica of the source environment that includes both code and data.
-
-> [!NOTE]
-> To copy from one ODE to another, skip to step 4.
 
 ## Prerequisites
 
@@ -28,18 +25,18 @@ Unlike the current LCS copy experience, PPAC based copy copies over your AxDB, M
 1. Online development environment (target)
 
 > [!IMPORTANT]
-> Ensure that both source and target environments should be in the same geo or region. (Provisioning is now available in all regions).
-
-> [!NOTE]
-> Copying across geo is not supported in PPAC.
+> Ensure that both source and target are in the same geographic region. (Provisioning is now available in all regions).
 
 ## Step by step instructions
+
+> [!NOTE]
+> To copy from one ODE to another, skip to step 4.
 
 ### Step 1: Connect finance and operations apps with a new Microsoft Dataverse instance
 
 For instructions on performing this step, use [Connect finance and operations apps with a new Microsoft Dataverse instance](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv).
 
-### Step 2: Install/update the latest Dynamics 365 Finance and Operation Platform tools app
+### Step 2: Install/update the latest Dynamics 365 Finance and Operations Platform tools app
 
 > [!NOTE]
 > This application/solution is needed to connect Visual studio extension to the Finance and Operations environment.
@@ -62,8 +59,7 @@ From the list on right side, find and select “Dynamics 365 Finance and Operati
 
 ### Step 3: Convert LCS packages to the new unified format
 
-> [!NOTE]
-> This step is needed to convert the existing LCS package into a new unified deployment package (aka UDP) format. The package format is changed to align with other Dynamics applications.
+This step is needed to convert the existing LCS package into a new unified deployment package (aka UDP) format. The package format is changed to align with other Dynamics applications.
 
 Run the following command using ModelUtil.exe from Windows Powershell. You can find the .exe in PackagesLocalDirectoryDev/bin.
 
@@ -77,14 +73,18 @@ This deploy command doesn’t make any changes to the Finance and Operations LCS
 
 1. Install [PAC CLI](https://aka.ms/PowerAppsCLI)
 1. [Authenticate and connect to source Dataverse](../cli/reference/auth.md#pac-auth-create)
-1. Run: pac auth list
-1. Run: pac auth select --index 1
-1. Run: pac package deploy --logConsole --package <OutputPath>\<Package>.dll
+1. Run the following:
+
+```
+pac auth list
+pac auth select --index 1
+pac package deploy --logConsole --package <OutputPath>\<Package>.dll
+```
 
 ### Step 5: Initiate Copy
 
 1. Go to the source environment in [PPAC](https://aka.ms/PPAC)
-1. Click on **Copy**. This will open a fly out menu, such as in [Step 2 above](#step-2-install-update-the-latest-dynamics-365-finance-and-operation-platform-tools-app)
+1. Click on **Copy**. This will open a fly out menu, such as in [Step 1 above](#step-1-connect-finance-and-operations-apps-with-a-new-Microsoft-Dataverse-instance)
 1. Select the target environment from dropdown
 1. Select the target online development environment
 1. After selecting the target from dropdown, click on copy to start the copy operation
