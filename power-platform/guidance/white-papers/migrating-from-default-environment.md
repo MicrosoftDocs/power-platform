@@ -99,7 +99,7 @@ Before turning on the DLP feature, you can identify which apps and flows will be
 
 Using the DLP editor version 2.0, in the **Impact Analysis** area, choose **Export impacted apps and flows to CSV**.
 
-:::image type="content" source="media/image6.png" alt-text="Use the DLP editor version 2.0.":::
+:::image type="content" source="../media/image6.png" alt-text="Use the DLP editor version 2.0.":::
 
 Each generated csv file (flow.csv and apps.csv) will have information regarding:
 
@@ -302,13 +302,13 @@ The success of a solution import in the target environment can only be ensured w
 
 - Use the [show dependencies](/power-apps/maker/data-platform/view-component-dependencies) button from within the solution to let the system identify dependencies for you. You can add all dependencies or selectively add only the dependencies that don't exist in the target environment.
 
-   :::image type="content" source="media/image3.png" alt-text="Image showing an example of dependent components for the account table.":::
+   :::image type="content" source="../media/image3.png" alt-text="Image showing an example of dependent components for the account table.":::
 
 ### Adding a component to a solution (manual)
 
 Assuming that [a solution is created](/power-apps/maker/data-platform/create-solution), a maker needs to use the add existing component menu option to add an existing app, flow, or Power Virtual Agent.
 
-:::image type="content" source="media/image4.png" alt-text="Image showing adding existing components to a solution.":::
+:::image type="content" source="../media/image4.png" alt-text="Image showing adding existing components to a solution.":::
 
 ### Adjust connection references
 
