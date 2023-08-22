@@ -3,7 +3,7 @@ title: Migrate apps and flows from the default environment
 description: Learn how to migrate apps and flows from the default environment.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/17/2023
+ms.date: 08/21/2023
 ms.subservice: guidance
 author: ravi-chada
 ms.author: ravichada
@@ -87,7 +87,7 @@ The entire process of identifying and moving apps and flows from the default env
 
 Data loss prevention (DLP) policies function as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. DLP policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. We recommended that you have, at least, one policy.
 
-### Identification of Objects using DLP
+### Identification of objects using DLP
 
 DLP policy-based identification is helpful to define target environments for your apps and flows. There might be apps or flows that are using a connector that is blocked by the DLP or a mix of business and non-business connectors, which, upon DLP activation, will stop working. Noncompliant objects based on DLP.
 
@@ -101,7 +101,7 @@ Follow the [Establishing tenant hygiene with the CoE Starter Kit](/power-platfor
 
 Before turning on the DLP feature, you can identify which apps and flows will be affected and alert the makers. The DLP editor can send a list of all the apps and flows that will be affected to an email address, which will generate a .csv file for each type of object.
 
-Using The DLP editor version 2.0, in the **Impact Analysis** area, choose **Export impacted apps and flows to CSV**.
+Using the DLP editor version 2.0, in the **Impact Analysis** area, choose **Export impacted apps and flows to CSV**.
 
 :::image type="content" source="media/image6.png" alt-text="Use the DLP editor version 2.0.":::
 
@@ -112,9 +112,9 @@ Each generated csv file (flow.csv and apps.csv) will have information regarding:
 1. OwnerEmail of the apps and flows.
 1. All connections used by the apps and flows.
 1. ID of the apps and flows to identify the object.
-1. EnvironmentID where the apps and flows are located.
+1. Environment ID where the apps and flows are located.
 
-Notice the **Connections** give you the list of all connections used by the app or flow. If you need to identify exactly which connector is impacted by the DLP in question, an automation is needed at this time. We're evaluating changing this situation in the tool.
+Notice that the **Connections** give you the list of all connections used by the app or flow. If you need to identify exactly which connector is impacted by the DLP in question, an automation is needed at this time. We're evaluating changing this situation in the tool.
 
 Example of implementation to identify the connection:
 
@@ -139,7 +139,7 @@ Example of implementation to identify the connection:
 1. After you have a match on which connection is causing the impact, generate a new list with the app or flow ID and the connector affected by the DLP.
 1. Use the earlier information to notify the maker about the future impact. You can use Power Cards to collect the feedback from the maker if the app or flow can be deleted or needs to be migrated to another environment.
 
-Based on your analysis, if you determine that the affected flows aren't being used, you can put it in quarantine and send an email to the maker with instructions on how to move it to a different environment. This encourages a do-it-yourself (DIY) culture and removes the shadow IT. In some situations, you might want to exempt some objects from the DLP. For instance, you may want to apply a specific DLP only for new resources that have been created and exempt the current resources. For more information about DLP resource exemption, see [DLP resource exemption](/power-platform/admin/dlp-resource-exemption).
+Based on your analysis, if you determine that the affected flows aren't being used, you can put them in quarantine and send an email to the maker with instructions on how to move them to a different environment. This encourages a do-it-yourself (DIY) culture and removes the shadow IT. In some situations, you might want to exempt some objects from the DLP. For instance, you may want to apply a specific DLP only for new resources that have been created and exempt the current resources. For more information about DLP resource exemption, see [DLP resource exemption](/power-platform/admin/dlp-resource-exemption).
 
 Effectively, your environment strategy is defined through DLP and that provides a destination for the apps and flows developed in the default environment.
 
@@ -182,12 +182,12 @@ There are some existing solution components like [set up inactivity notification
 
 In the migration process there are typically different audiences involved in communication. Here are the most typical key stakeholders and their roles:
 
-- **App owners** – App owners are individuals or teams responsible for the development, maintenance, and management of specific applications. They have in-depth knowledge of the functionality, workflow, and configuration of their applications. Communication with app owners is crucial to understanding their app-specific requirements, gathering feedback, addressing concerns, and ensuring a smooth migration of their apps to the new environment.
-- **App users** – App users are the individuals who utilize the applications regularly to perform their tasks or workflows. They may have varying levels of technical expertise and familiarity with the applications. Communication with app users is important to inform them about the migration, provide updates on any changes or disruptions that may occur, offer training or support to ensure a seamless transition, and minimize any impact on their day-to-day operations.
+- **App owners**: App owners are individuals or teams responsible for the development, maintenance, and management of specific applications. They have in-depth knowledge of the functionality, workflow, and configuration of their applications. Communication with app owners is crucial to understanding their app-specific requirements, gathering feedback, addressing concerns, and ensuring a smooth migration of their apps to the new environment.
+- **App users**: App users are the individuals who utilize the applications regularly to perform their tasks or workflows. They may have varying levels of technical expertise and familiarity with the applications. Communication with app users is important to inform them about the migration, provide updates on any changes or disruptions that may occur, offer training or support to ensure a seamless transition, and minimize any impact on their day-to-day operations.
 - **Department heads or managers**: Department heads or managers play a significant role in the migration process as they oversee the operations and strategic objectives of their respective departments. They need to be informed about the migration timeline, potential impacts, and benefits. Communication with department heads allows them to provide necessary guidance, align the migration with departmental goals, and ensure smooth coordination within their teams.
 - **IT or technical teams**: IT or technical teams are responsible for the infrastructure, systems, and overall technical aspects of the migration. They're involved in the planning, execution, and support of the migration process. Communication with IT teams is essential to discuss technical requirements, dependencies, security considerations, and any necessary infrastructure or configuration changes that need to be implemented for the successful migration.
 - **Security and compliance teams**: Security and compliance teams play a critical role in ensuring data security, privacy, and regulatory compliance during the migration. They provide guidance and ensure that appropriate measures are in place to protect sensitive information. Communication with security and compliance teams involves discussing security requirements, encryption protocols, access controls, and any compliance-related considerations throughout the migration process.
-- **Executive management:** Executive management, including C-level executives or senior leadership, should be kept informed about the migration process. They may not require detailed, technical information, but should be aware of the project's objectives, progress, and potential impacts on the organization. Communication with executive management helps ensure their support, alignment with strategic goals, and resource allocation for the migration.
+- **Executive management**: Executive management, including C-level executives or senior leadership, should be kept informed about the migration process. They may not require detailed, technical information, but should be aware of the project's objectives, progress, and potential impacts on the organization. Communication with executive management helps ensure their support, alignment with strategic goals, and resource allocation for the migration.
 
 It's important to tailor communication strategies and messages for each audience, considering their specific needs, concerns and level of technical understanding. Clear and timely communication with all stakeholders fosters collaboration, ensures smooth coordination, and mitigates any potential challenges during the migration process.
 
@@ -227,7 +227,7 @@ This method of exporting apps is a legacy way. While it’s supported, we recomm
 
 The following steps describe how to export a flow.
 
-1. Select "…" menu, select **Export** then select **Package (.zip).**.
+1. Select "…" menu, select **Export** then select **Package (.zip)**.
 1. Enter a name and a description for your package. You can then configure default settings and add comments that are accessible during the import phase.
 1. Select the **Export** button in the bottom-right corner to download the package. If your download doesn't start automatically, you can select the **Download** button.
 
@@ -280,9 +280,8 @@ This article outlines some possibilities. It's important to carefully consider t
 
 Similar to most environment types, the default environment is backed up, as well. These system backups are performed automatically. There's no on-demand option for the default environment, so it requires a support request. The backup can be restored into a new environment keeping all the data within Dataverse. This option is only to show the reader about its existence and educate the reader on when to consider. It shouldn't be pursued as the primary choice, as it would only yield partial migration.
 
-| **Supported** | **Not fully supported** |
-|---|---|
-| **DataverseDynamics apps** | Canvas appComponent libraryCustom pagesPower AutomatePower Virtual Agents |
+- **Supported**: Dataverse, Dynamics apps
+- **Not fully supported**: Canvas app, component library, custom pages, Power Automate, Power Virtual Agents 
 
 Not fully supported indicates that there may be potential data loss during migration and more steps required.
 
@@ -309,7 +308,7 @@ The success of a solution import in the target environment can only be ensured w
 
 - Use the [show dependencies](/power-apps/maker/data-platform/view-component-dependencies) button from within the solution to let the system identify dependencies for you. You can add all dependencies or selectively add only the dependencies that don't exist in the target environment.
 
-:::image type="content" source="media/image3.png" alt-text="Image showing an example of dependent components for the account table.":::
+   :::image type="content" source="media/image3.png" alt-text="Image showing an example of dependent components for the account table.":::
 
 ### Adding a component to a solution (manual)
 
@@ -366,9 +365,9 @@ Assuming the solutions are ready, the next stage of automation can be done in mu
 
 - Use [packages](/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell) to move multiple solutions in a single pass.
 
-- Use Microsoft Power Platform [build tools tasks](/power-platform/alm/devops-build-tool-tasks) to perform multiple operations like pack solution, unpack solution, export solution, and import solution. DevOps provides the ability to automate application lifecycle management (ALM) and these tasks are all built to support ALM for Microsoft Power Platform.
+- Use Power Platform [build tools tasks](/power-platform/alm/devops-build-tool-tasks) to perform multiple operations like pack solution, unpack solution, export solution, and import solution. DevOps provides the ability to automate application lifecycle management (ALM) and these tasks are all built to support ALM for Microsoft Power Platform.
 
-The Power Platform Command Line Interface (PAC CLI) also provides options to export and import solutions. All solution-related [commands](/power-platform/developer/cli/reference/solution) can be used to build, export, and import solutions. You can also use PAC CLI to [transfer data in and out](/power-platform/developer/cli/reference/data).
+The Power Platform Command Line Interface (CLI) also provides options to export and import solutions. All solution-related [commands](/power-platform/developer/cli/reference/solution) can be used to build, export, and import solutions. You can also use CLI to [transfer data in and out](/power-platform/developer/cli/reference/data).
 
 A maker-friendly option is to use pipelines that are intended to democratize ALM for Power Platform. Bringing ALM automation and CI/CD capabilities into a single feature service is more approachable for all makers, admins, and developers. 
 
@@ -376,15 +375,15 @@ A maker-friendly option is to use pipelines that are intended to democratize ALM
 
 In the target environment before the import operation is set, create the missing connections that are required by the app or flow. For more information about how to create connections, see [Manage connections in Power Automate](/power-automate/add-manage-connections).
 
-### Data Migration
+### Data migration
 
 There are multiple options available for data migration, ranging from manual to full automation.
 
-1. Manually export and import the data using Excel workbooks.
-1. A Power Automate cloud flow can be developed to extract data from source tables and write directly to the destination. However, this requires the maker to use the Dynamics 365 Connector or the Dataverse (legacy) connector. Currently, the Dataverse connector doesn’t support connecting across environments. This feature is planned for the future, and once released it may be used to move data from one to the other.
-1. [Configuration Migration tool (CMT)](/power-platform/admin/manage-configuration-data) is a tool that is used for portal migration, but can also be used for regular data migration. CMT can also be used with PowerShell. The [PAC CLI tool](/power-platform/developer/cli/reference/tool) gives the ability to call CMT.
-1. Dataflows can be used to create mappings between the environments and used to move data. HTTP Web connector may be used as an alternative to Dataverse.
-1. Azure Data Factory can be used with the Dataverse connector to pull data from the source and insert it into the destination.
+- Manually export and import the data using Excel workbooks.
+- A Power Automate cloud flow can be developed to extract data from source tables and write directly to the destination. However, this requires the maker to use the Dynamics 365 Connector or the Dataverse (legacy) connector. Currently, the Dataverse connector doesn’t support connecting across environments. This feature is planned for the future, and once released it may be used to move data from one to the other.
+- [Configuration Migration tool (CMT)](/power-platform/admin/manage-configuration-data) is a tool that is used for portal migration, but can also be used for regular data migration. CMT can also be used with PowerShell. The [PAC CLI tool](/power-platform/developer/cli/reference/tool) gives the ability to call CMT.
+- Dataflows can be used to create mappings between the environments and used to move data. HTTP Web connector may be used as an alternative to Dataverse.
+- Azure Data Factory can be used with the Dataverse connector to pull data from the source and insert it into the destination.
 
 Given that the default environment is limited in size, one of the above options should suffice to move data out of the default environment.
 
@@ -439,6 +438,6 @@ In many cases, these are test flows and apps created by makers as part of their 
 
 ## Conclusion
 
-Power Platform is a tool for citizen developers and profesional developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual, or developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which can help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-serve models of learning about the strategy, implementation of solutions, and best practices to develop apps and flows. A good addition is to capture some success stories on the communication site. Success stories published internally help makers to connect with ideas and makes them open to possibilities that could be achieved using Power Platform.
+Power Platform is a tool for citizen developers and profesional developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual, or developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which can help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-service models of learning about the strategy, implementation of solutions, and best practices to develop apps and flows. A good addition is to capture some success stories on the communication site. Success stories published internally help makers to connect with ideas and makes them open to possibilities that could be achieved using Power Platform.
 
 A strong governance strategy is essential when migrating or moving specific objects. There are various strategies available for migrating objects, including individual and mass migration. The best fit option depends on our organization policies. Solutions are the most recommended way to organize the components of your application and make migrations more straightforward.
