@@ -91,7 +91,7 @@ pac package deploy --logConsole --package <OutputPath>\<Package>.dll
 
 :::image type="content" source="../media/unified-experience/copy-to-ode-copy-environment.png" alt-text="Copy environment menu":::
 
-You can monitor the copy progress from the *target environment page* (Not the PPAC page).
+You can monitor the copy progress from the *target environment page* (not the PPAC page).
 
 :::image type="content" source="../media/unified-experience/copy-to-ode-copy-progress2.png" alt-text="Copy progress from the target environment page":::
 
