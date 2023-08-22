@@ -69,10 +69,12 @@
       items:
         - name: Overview
           href: unified-experience\overview.md
+        - name: Write, deploy, and debug X++ code
+          href: unified-experience\debug.md
         - name: Deploy packages
           href: unified-experience\deploy-packages.md
-        - name: Debug X++ code
-          href: unified-experience\debug.md
+        - name: Use CI/CD pipelines
+          href: unified-experience\overview.md
         - name: Copy an LCS environment
           href: unified-experience\overview.md
         - name: Frequently asked questions (FAQs)

@@ -1,6 +1,6 @@
 ---
-title: "Debug in the unified developer experience"
-description: "Learn how to write an X++ class, deploy, and debug it in the unified developer experience."
+title: "Write, deploy, and debug X++ code"
+description: "Learn how to write a simple X++ class, deploy it, and then debug it in the unified developer experience."
 author: pvillads
 ms.date: 08/21/2023
 ms.topic: article
@@ -11,7 +11,7 @@ ms.author: pvillads
 ms.collection: get-started
 ---
 
-# Debug in the unified developer experience (preview)
+# Write, deploy, and debug X++ code (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -21,15 +21,13 @@ The unified developer experience for Dynamics 365 Finance and Operation apps ena
  - Execution tier - cloud hosted site that stores the business data and executes X++ code
 
 This article we will show you how to:
-1. Build a small runnable class in X++
+1. Write and compile a simple runnable X++ class
 2. Deploy the class to the cloud runtime
-3. Start the debugger and debug the X++ code
+3. Debug the deployed X++ code
 
-Let's begin by developing a runnable X++ class to use as an example. The classes only task is to log a message into the infolog<!--what is this?-->. The important thing here is not what the runnable class does, rather it is how we compile, run, and debug it.
+Let's begin by developing a runnable X++ class to use as an example. The classes only task is to log a message into the infolog<!--what is this?-->. The important thing here is not what the runnable class does, rather it is how we compile, run, and debug it. If you want to learn about the X++ language, see the [programming reference](/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference).
 
-As a prerequisite, you will need access to have a working Power Platform development environment with the Dynamics 365 Finance and Operations apps installed. You will also need to install the Power Platform tools extension for Visual Studio.
-
-More information: <!--PPAC environment setup link-->, <!--VS extension link-->
+As a prerequisite, you will need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md). You will also need to [Get the Power Platform Build Tools marketplace extension](deploy-packages.md#get-the-power-platform-build-tools-marketplace-extension).
 
 ## Create a model
 
