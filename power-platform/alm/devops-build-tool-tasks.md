@@ -130,7 +130,6 @@ Verifies a Power Platform environment service connection by connecting and makin
 | `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
 
-
 ## Quality check
 
 Below are the available tasks for checking the quality of a solution.
