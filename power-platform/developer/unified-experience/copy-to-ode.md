@@ -1,6 +1,6 @@
 ---
-title: "Copy an LCS environment to ODE"
-description: "Learn how to copy from an LCS managed environment to a Power Platform admin center ODE"
+title: "Copy a LCS environment"
+description: "Learn how to copy from a LCS managed environment to a Power Platform admin center (PPAC) online development environment (ODE)"
 author: pvillads
 ms.date: 08/21/2023
 ms.topic: article
@@ -11,11 +11,11 @@ ms.author: pvillads
 ms.collection: get-started
 ---
 
-# Copy an LCS environment to an online development environment (preview)
+# Copy a LCS environment (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This guide provides step-by-step instructions on performing a copy from a LCS managed production/sandbox environment to a Power Platform admin center (PPAC) managed online development environment (ODE).
+This guide provides step-by-step instructions on performing a copy from a Life Cycle Services (LCS) managed production/sandbox environment to a Power Platform admin center (PPAC) managed online development environment (ODE).
 
 Unlike the current LCS copy experience, PPAC based copy copies over your databases, any customizations and the ISV solutions. In simple terms, it produces a replica of the source environment that includes both code and data.
 
@@ -39,7 +39,7 @@ For instructions on performing this step, use [Connect finance and operations ap
 ### Step 2: Install/update the latest Dynamics 365 Finance and Operations Platform Tools app
 
 > [!NOTE]
-> This application/solution is needed to connect the Visual Studio extension to the Finance and Operations environment.
+> This application/solution is needed to connect the Visual Studio extension to the finance and operations environment.
 
 1. In the Power Platform admin center select **Environments**.
 1. Select the environment you wish to copy. From the **Resources** menu, select **Dynamics 365 apps**.
@@ -69,7 +69,7 @@ Run the following command using ModelUtil.exe from Windows Powershell. You can f
 
 ### Step 4: Upload/Deploy unified deployable package
 
-This deploy command doesn’t make any changes to the Finance and Operations LCS environment, nor does it require any downtime to apply this package. This is done to upload and save the customizations into Dataverse storage. During a copy from a source environment, these artifacts are used to apply customizations on the target environment.
+This deploy command doesn’t make any changes to the finance and operations LCS environment, nor does it require any downtime to apply this package. This is done to upload and save the customizations into Dataverse storage. During a copy from a source environment, these artifacts are used to apply customizations on the target environment.
 
 1. Install [PAC CLI](https://aka.ms/PowerAppsCLI)
 1. [Authenticate and connect to source Dataverse](../cli/reference/auth.md#pac-auth-create)
