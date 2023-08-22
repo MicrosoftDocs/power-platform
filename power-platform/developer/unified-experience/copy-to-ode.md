@@ -84,7 +84,7 @@ pac package deploy --logConsole --package <OutputPath>\<Package>.dll
 ### Step 5: Initiate Copy
 
 1. Go to the source environment in [PPAC](https://aka.ms/PPAC)
-1. Click on **Copy**. This will open a fly out menu, such as in [Step 1 above](#step-1-connect-finance-and-operations-apps-with-a-new-Microsoft-Dataverse-instance)
+1. Click on **Copy**. This will open a fly out menu, such as in [Step 2 above](#step-2-install-update-the-latest-dynamics-365-finance-and-operations-platform-tools-app)
 1. Select the target environment from dropdown
 1. Select the target online development environment
 1. After selecting the target from dropdown, click on copy to start the copy operation
