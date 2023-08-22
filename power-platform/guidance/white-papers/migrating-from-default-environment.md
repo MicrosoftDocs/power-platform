@@ -15,7 +15,7 @@ contributors:
 
 # Migrating apps and flows from the default environment
 
-This article explains how organizations and administrators can plan migration of their apps and flows from the default environment.
+This white paper explains how organizations and administrators can plan migration of their apps and flows from the default environment.
 
 ## Default environment
 
