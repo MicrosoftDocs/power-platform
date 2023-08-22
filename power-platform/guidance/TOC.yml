@@ -437,12 +437,12 @@
           href: expressroute/setup.md
         - name: ExpressRoute readiness checklist
           href: expressroute/checklist.md
-    - name: Whitepapers
+    - name: White papers
       items:
-        - name: Whitepapers overview
-          href: whitepapers.md
+        - name: Power Platform white papers
+          href: white-papers/index.md
         - name: Migrating from the default environment whitepaper
-          href: whitepaper-migrating-from-default-environment.md
+          href: white-papers/migrating-from-default-environment.md
     - name: Resources
       items:
         - name: Icons
