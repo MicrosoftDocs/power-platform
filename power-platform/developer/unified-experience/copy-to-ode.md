@@ -17,7 +17,7 @@ ms.collection: get-started
 
 This guide provides step-by-step instructions on performing a copy from an LCS managed Production/Sandbox environment to a Power Platform admin center (PPAC) managed online development environment (ODE).
 
-Unlike the current LCS copy experience, PPAC based copy copies over your AxDB, MrDB, any customizations and the ISV solutions. In simple terms, it produces a replica of the source environment that includes both code and data.
+Unlike the current LCS copy experience, PPAC based copy copies over your Databases, any customizations and the ISV solutions. In simple terms, it produces a replica of the source environment that includes both code and data.
 
 ## Prerequisites
 
