@@ -76,7 +76,7 @@ Run the following command using ModelUtil.exe from Windows Powershell. You can f
 This deploy command doesn’t make any changes to the Finance and Operations LCS environment, nor does it require any downtime to apply this package. This is done to upload and save the customizations into Dataverse storage. During a copy from a source environment, these artifacts are used to apply customizations on target environment.
 
 1. Install [PAC CLI](https://aka.ms/PowerAppsCLI)
-1. [Authenticate and connect to source Dataverse](../cli/reference/auth#basic-create)
+1. [Authenticate and connect to source Dataverse](../cli/reference/auth.md#pac-auth-create)
 1. Run: pac auth list
 1. Run: pac auth select --index 1
 1. Run: pac package deploy --logConsole --package <OutputPath>\<Package>.dll
