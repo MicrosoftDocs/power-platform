@@ -47,7 +47,7 @@ The ability to view known issues is currently in preview and is only available f
 
 ## View known issues when creating a support request
 
-1. When [creating a support request](get-help-support.md#view-solutions-or-create-a-support-request), if a known issue is applicable to the search query, it will show up at the top of the **Solutions** tab.
+1. When [creating a support request](get-help-support.md#view-solutions-or-create-a-support-request), if a known issue is applicable to the search query, it displays at the top of the **Solutions** tab.
 
     ![A screenshot of a computer Description automatically generated](media/image3.png)
 
@@ -67,7 +67,7 @@ The ability to view known issues is currently in preview and supports limited pr
 
 No, a fix is in progress and an update will be shared on the known issue details page as soon as it's available. The **Status** will also be updated to reflect progress.
 
-##### What does a known issues's Status (Active/Resolved) mean?
+##### What does a known issue's Status (Active/Resolved) mean?
 
 Status signifies the progress of the issue. Issues being worked on are in the **Active** state, while issues that have been fixed, but not necessarily deployed, are in **Resolved** state.
 
@@ -75,7 +75,7 @@ Status signifies the progress of the issue. Issues being worked on are in the **
 
 When available, a workaround will be shared in the **Workaround** field of the known issue details page. (Select a known issue to see more details and a possible workaround).
 
-##### Do you provide an estimaged time of arrival (ETA) on the issue fix?
+##### Do you provide an estimated time of arrival (ETA) on the issue fix?
 
 When available, more information on the release schedule will be shared in the **Workaround** field of the known issue details page.
 
