@@ -16,7 +16,7 @@ These frequently asked questions (FAQ) article describes information related to 
 
 ## What is data sharing for Copilot AI features?
 
-Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s features, services, machine learning models, and related systems for Dynamics 365 and Power Platform Copilot AI features. We don't use customer data to train Azure OpenAI Service foundation models.
+Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s features, services, machine learning models, and related systems for Dynamics 365 and Power Platform Copilot AI features. We don't use customer data to train Azure OpenAI Service foundation models.
 
 ## How does it work?
 
@@ -24,7 +24,7 @@ You may opt in to participate by using the Power Platform admin center. To opt i
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
-1. In the left pane, select **Settings** > **Tenant Settings**, and turn on **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** > **Enable Data Sharing** toggle. 
+1. In the left pane, select **Settings** > **Tenant Settings**, and turn on **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features** > **Enable Data Sharing** toggle. 
 
 > [!NOTE]
 > When this optional data sharing setting is off, we don’t use customer data under this program. 
@@ -38,7 +38,7 @@ Sharing your data can benefit you in two ways:
 
 ## If I've opted in, how can I withdraw my consent?
 
-By default, the data sharing option is disabled for you. After you opt in, you can opt out any time by going to the **Settings** > **Tenant Settings** page in the Power Platform admin center and turning off the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** toggle. More information: [Tenant settings](admin/tenant-settings.md)
+By default, the data sharing option is disabled for you. After you opt in, you can opt out any time by going to the **Settings** > **Tenant Settings** page in the Power Platform admin center and turning off the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features** toggle. More information: [Tenant settings](admin/tenant-settings.md)
 
 ## What happens when I withdraw my consent?
 
