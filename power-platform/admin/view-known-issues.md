@@ -40,8 +40,6 @@ The ability to view known issues is currently in preview and is only available f
     
 1.  Select a known issue to see more details, including a description of the problem and a workaround, if available.
 
-    ![A screenshot of a computer Description automatically generated](media/image2.png)
-
 > [!Tip]
 > Bookmark the URL of the known issue page and come back directly to view updates.
 
@@ -49,11 +47,11 @@ The ability to view known issues is currently in preview and is only available f
 
 1. When [creating a support request](get-help-support.md#view-solutions-or-create-a-support-request), if a known issue is applicable to the search query, it displays at the top of the **Solutions** tab.
 
-    ![A screenshot of a computer Description automatically generated](media/image3.png)
+    ![A screenshot of a computer Description automatically generated](media/known-issue-at-top.png)
 
 1. Select the title of the issue to obtain more information.
      
-    ![A screenshot of a computer Description automatically generated](media/image4.png)
+    ![A screenshot of a computer Description automatically generated](media/still-need-help.png)
 
 1. If the information resolved your query, click **Yes** to close the support request. To see more solutions, select **No, I still need help**.
 
