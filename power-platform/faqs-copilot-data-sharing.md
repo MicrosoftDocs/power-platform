@@ -24,7 +24,7 @@ You may opt in to participate by using the Power Platform admin center. To opt i
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
-1. In the left pane, select **Settings** > **Tenant Settings**, and turn on **Data sharing for Copilot AI features** > **Enable Data Sharing** toggle. 
+1. In the left pane, select **Settings** > **Tenant Settings**, and turn on **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** > **Enable Data Sharing** toggle. 
 
 > [!NOTE]
 > When this optional data sharing setting is off, we don’t use customer data under this program. 
