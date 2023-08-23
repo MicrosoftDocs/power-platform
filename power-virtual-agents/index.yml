@@ -38,7 +38,7 @@ highlightedContent:
 
   # Card
   - title: Troubleshoot
-    itemType: troubleshoot
+    itemType: concept
     url: ./error-codes.md
 
 # conceptualContent section
