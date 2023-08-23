@@ -18,7 +18,8 @@ ms.contributors:
 
 Customer trust and transparency are important to us. You can now view existing product issues, or known issues, for which a fix has been identified or is in progress. A workaround and expected time to fix the issue is also provided, when available.  
   
-The ability to view known issues is currently in preview and is only available for limited features within Power Automate and Power Apps products.
+> [!Important]
+> The ability to view known issues is currently in preview and is only available for limited features within Power Automate and Power Apps products.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
@@ -41,7 +42,7 @@ The ability to view known issues is currently in preview and is only available f
 1.  Select a known issue to see more details, including a description of the problem and a workaround, if available.
 
 > [!Tip]
-> Bookmark the URL of the known issue page and come back directly to view updates.
+> Bookmark the URL of the known issue page so that you can easily come back to view updates.
 
 ## View known issues when creating a support request
 
@@ -49,7 +50,7 @@ The ability to view known issues is currently in preview and is only available f
 
    :::image type="content" source="media/known-issue-at-top.png" alt-text="The known issue displays at the top of the Solutions tab.":::
 
-1. Select the title of the issue to obtain more information.
+1. Select the title of the issue to view details.
 
     :::image type="content" source="media/still-need-help.png" alt-text="Select 'Yes' or 'No, I still need help'.":::
      
