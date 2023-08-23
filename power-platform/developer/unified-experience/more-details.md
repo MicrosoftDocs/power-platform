@@ -1,6 +1,6 @@
 ---
-title: "Unified developer experience overview (preview)"
-description: Learn about developing code for Dynamics 365 finance and operations apps using the new Power Platform unified developer experience.
+title: "Unified developer experience implementation (preview)"
+description: Learn implementation details about the Power Platform unified developer experience.
 author: pvillads
 ms.date: 08/22/2023
 ms.topic: article
@@ -8,7 +8,7 @@ ms.reviewer: pehecke
 ms.author: pvillads
 ---
 
-# Unified developer experience overview (preview)
+# Unified developer experience implementation (preview)"
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -36,4 +36,7 @@ Developers sometimes face problems that are data related. Fortunately, it is eas
 
 ### See also
 
+[Continuous integration and deployment pipelines (preview)](cicd-pipeline.md)  
 [Unified admin experience for finance and operations apps (preview)](../../admin/unified-experience/finance-operations-apps-overview.md)
+
+[!INCLUDE [footer-banner](../../includes/footer-banner.md)]

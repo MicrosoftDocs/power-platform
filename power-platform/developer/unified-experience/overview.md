@@ -1,6 +1,6 @@
 ---
-title: "Developer experience continued (preview)"
-description: Learn more about developing code for Dynamics 365 finance and operations apps using the new Power Platform unified developer experience.
+title: "Unified developer experience overview (preview)"
+description: Learn about developing code for Dynamics 365 finance and operations apps using the new Power Platform unified developer experience.
 author: pvillads
 ms.date: 08/22/2023
 ms.topic: article
@@ -8,7 +8,7 @@ ms.reviewer: pehecke
 ms.author: pvillads
 ---
 
-# Developer experience continued (preview)
+# Unified developer experience overview  (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -43,3 +43,5 @@ More information: [Virtual Tables](/power-apps/developer/data-platform/virtual-e
 ### See also
 
 [Unified admin experience for finance and operations apps (preview)](../../admin/unified-experience/finance-operations-apps-overview.md)
+
+[!INCLUDE [footer-banner](../../includes/footer-banner.md)]
