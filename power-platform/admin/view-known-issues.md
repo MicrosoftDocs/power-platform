@@ -50,10 +50,10 @@ The ability to view known issues is currently in preview and is only available f
    :::image type="content" source="media/known-issue-at-top.png" alt-text="The known issue displays at the top of the Solutions tab.":::
 
 1. Select the title of the issue to obtain more information.
+
+    :::image type="content" source="media/still-need-help.png" alt-text="Select 'Yes' or 'No, I still need help'.":::
      
 1. If the information resolved your query, click **Yes** to close the support request. To see more solutions, select **No, I still need help**.
-
-      :::image type="content" source="media/still-need-help.png" alt-text="Select 'Yes' or 'No, I still need help'.":::
 
 ## Frequently asked questions (FAQs)
 
