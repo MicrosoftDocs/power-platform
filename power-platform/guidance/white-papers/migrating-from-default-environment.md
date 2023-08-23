@@ -1,5 +1,5 @@
 ---
-title: Migrate apps and flows from the default environment
+title: Migrating apps and flows from the default environment
 description: Learn how to migrate apps and flows from the default environment.
 ms.component: pa-admin
 ms.topic: how-to
