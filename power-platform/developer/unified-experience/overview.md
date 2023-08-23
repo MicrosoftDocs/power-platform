@@ -42,6 +42,10 @@ More information: [Virtual Tables](/power-apps/developer/data-platform/virtual-e
 
 ### See also
 
-[Unified admin experience for finance and operations apps (preview)](../../admin/unified-experience/finance-operations-apps-overview.md)
+[Write, deploy, and debug X++ code (preview)](debug.md)  
+[Frequently asked questions (preview)](faq.md)
+[Unified admin experience for finance and operations apps (preview)](../../admin/unified-experience/finance-operations-apps-overview.md)  
+
+[Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page) (Dynamics 365 legacy information)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
