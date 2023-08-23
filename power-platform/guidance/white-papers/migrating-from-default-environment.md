@@ -10,7 +10,7 @@ ms.author: ravichada
 ms.reviewer: sericks
 ms.custom: bap-template
 contributors:
-- RobStand
+    - RobStand
 ---
 
 # Migrating apps and flows from the default environment

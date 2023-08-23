@@ -10,8 +10,9 @@ ms.date: 08/14/2023
 ---
 # Power Platform white papers
 
-Whitepapers allow you to explore Power Platform topics at a deeper level. Here you can find a list of available white papers for Power Platform.
+White papers provide in-depth information, solutions, and recommendations to help you address complex Power Platform topics and inform your decision-making.
 
 | Whitepaper | Description | Date |
 | --- | --- | --- |
+| [Applicaiton modernization with Power Platform](application-modernization.md) |This white paper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. | August 2023 |
 | [Migrating apps and flows from the default environment](migrating-from-default-environment.md) |This technical whitepaper outlines considerations and best practices for migrating apps and flows from the default environment. | August 2023 |
