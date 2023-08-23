@@ -66,18 +66,18 @@ The ability to view known issues is currently in preview and is only available f
 
 No, a fix is in progress and an update will be shared on the known issue details page as soon as it's available. The **Status** will also be updated to reflect progress.
 
-##### What does a known issue's Status (Active/Resolved) mean?
+### What does a known issue's Status (Active/Resolved) mean?
 
 Status signifies the progress of the issue. Issues being worked on are in the **Active** state, while issues that have been fixed, but not necessarily deployed, are in **Resolved** state.
 
-##### While Microsoft works on a fix, is there any interim solution?
+### While Microsoft works on a fix, is there any interim solution?
 
 When available, a workaround will be shared in the **Workaround** field of the known issue details page. (Select a known issue to see more details and a possible workaround).
 
-##### Do you provide an estimated time of arrival (ETA) on the issue fix?
+### Do you provide an estimated time of arrival (ETA) on the issue fix?
 
 When available, more information on the release schedule will be shared in the **Workaround** field of the known issue details page.
 
-#####  How do I know if there has been any update on the issue?
+###  How do I know if there has been any update on the issue?
 
 We recommend bookmarking the URL on issue information page and revisiting to see the updated information.
