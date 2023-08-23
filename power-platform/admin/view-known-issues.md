@@ -18,7 +18,7 @@ ms.contributors:
 
 Customer trust and transparency are important to us. You can now view existing product issues, or known issues, for which a fix has been identified or is in progress. A workaround and expected time to fix the issue is also provided, when available.  
   
-The ability to view known issues is currently in preview and is only available for Power Automate and Power Apps products.
+The ability to view known issues is currently in preview and is only available for limited features within Power Automate and Power Apps products.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
@@ -59,7 +59,7 @@ The ability to view known issues is currently in preview and is only available f
 
 ### Why am I seeing known issues for Power Automate and Power Apps products only?
 
-The ability to view known issues is currently in preview and supports limited product features within Power Automate and Power Apps only.
+The ability to view known issues is currently in preview and is only available for limited features within Power Automate and Power Apps products.
  
 ### Should I create a support request if my issue is listed under known issues?
 
