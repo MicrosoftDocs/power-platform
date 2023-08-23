@@ -4,16 +4,20 @@ description: Learn about modernizing applications with Power Platform.
 author: robstand
 ms.topic: overview
 ms.custom: 
-ms.date: 08/31/2023
+ms.date: 08/23/2023
 ms.author: rstand
 ms.reviewer: sericks
+ms.custom: bap-template
 contributors:
+    - RobStand
 ---
 
 # Application modernization with Power Platform
 
-This whitepaper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. It provides insights and guidance on how the Microsoft low-code platform can help you ensure the success of application modernization efforts as part of an organization’s digital transformation.
+The low-code development capabilities of Microsoft Power Platform make it possible to build and deploy modern applications faster and more cost-effectively than ever before. Whether you’re a citizen developer tinkering around the edges or a pro developer working on a complex customization, you can drive digital transformation intuitively, quickly, and at lower cost than with traditional approaches.
 
-Author: Robert Standefer (Microsoft)
+This whitepaper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. It provides insights and guidance on how  Microsoft Power Platform can help you ensure the success of application modernization efforts as part of an organization’s digital transformation.
 
-Download: Download the white paper from [https://aka.ms/lowcode/modernize](https://aka.ms/lowcode/modernize)
+*Author*: Robert Standefer (Microsoft)
+
+*Download*: Download the white paper from [https://aka.ms/lowcode/modernize](https://aka.ms/lowcode/modernize)

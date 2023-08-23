@@ -17,6 +17,8 @@ contributors:
 
 This white paper explains how organizations and administrators can plan migration of their apps and flows from the default environment.
 
+*Authors*: Ravi Chada (Microsoft), Rui Santos (Microsoft)
+
 ## Default environment
 
 One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD), part of Microsoft Entra, tenant and is named as follows: **[Azure AD tenant name] (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment.
