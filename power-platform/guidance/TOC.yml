@@ -443,6 +443,8 @@
           href: white-papers/index.md
         - name: Migrating from the default environment
           href: white-papers/migrating-from-default-environment.md
+        - name: Modernizing applications with Power Platform
+          href: white-papers/application-modernization.md
     - name: Resources
       items:
         - name: Icons
