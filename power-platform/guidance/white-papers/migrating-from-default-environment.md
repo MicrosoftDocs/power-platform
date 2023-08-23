@@ -89,19 +89,19 @@ Data loss prevention (DLP) policies function as guardrails to help prevent users
 
 ### Identification of objects using DLP
 
-DLP policy-based identification is helpful to define target environments for your apps and flows. There might be apps or flows that are using a connector that is blocked by the DLP or a mix of business and non-business connectors, which, upon DLP activation, will stop working.
+DLP policy-based identification is helpful to define target environments for your apps and flows. There might be apps or flows that are using a connector that is blocked by the DLP or a mix of business and non-business connectors, which, upon DLP activation, stop working.
 
 To prevent downtime of potential critical objects, due to DLP, part of CoE Starter Kit, you can find **DLP editor (impact analysis) tool**. The goal of the DLP editor is to allow admins to see the impact of existing policies or the potential impact of policy changes. It provides admins with a view of impacted apps and flows, and resources that would be disabled if new or updated policies were to be enforced. The app can be used to review existing policies, change existing policies, and mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
 
 Update existing DLP policies to review impact. Follow the [Establishing tenant hygiene with the CoE Starter Kit](/power-platform/guidance/coe/after-setup-tenant-hygiene) article to find more information about the DLP editor.
 
-Before turning on the DLP feature, you can identify which apps and flows are affected and alert the makers. The DLP editor can send a list of all the apps and flows that are affected to an email address, which will generate a .csv file for each type of object.
+Before turning on the DLP feature, you can identify which apps and flows are affected and alert the makers. The DLP editor can send a list of all the apps and flows that are affected to an email address, which generates a .csv file for each type of object.
 
 Using the DLP editor version 2.0, in the **Impact Analysis** area, choose **Export impacted apps and flows to CSV**.
 
 :::image type="content" source="../media/image6.png" alt-text="Use the DLP editor version 2.0.":::
 
-Each generated csv file (flow.csv and apps.csv) will have information regarding:
+Each generated csv file (flow.csv and apps.csv) has information regarding:
 
 1. Name of the apps and flows.
 1. Owner of the apps and flows.
@@ -189,12 +189,12 @@ It's important to tailor communication strategies and messages for each audience
 
 #### Cadence
 
-The cadence or frequency of communication with stakeholders during a migration process will vary based on the specific needs and dynamics of the project. It's important to establish regular and consistent communication to keep stakeholders informed, address concerns, and maintain alignment throughout the migration. Here are some considerations for determining the cadence of communication with different stakeholders:
+The cadence or frequency of communication with stakeholders during a migration process varies based on the specific needs and dynamics of the project. It's important to establish regular and consistent communication to keep stakeholders informed, address concerns, and maintain alignment throughout the migration. Here are some considerations for determining the cadence of communication with different stakeholders:
 
 - **App owners:** Maintaining frequent communication with app owners throughout the migration process is important. This includes regular updates on the progress of the migration, addressing any concerns, and involving app owners in decision making, when necessary. The frequency of communication can vary depending on the complexity and criticality of the app, but it's recommended to have regular check-ins and timely responses to inquiries.
 - **App users:** Engage app users through regular communication channels to keep them informed about the migration. This should include announcements, emails, newsletters, or even dedicated training sessions or workshops. The frequency of communication with app users may vary, but it's crucial to provide updates at key milestones, inform them about any changes or disruptions that may affect them, and offer support and guidance throughout the process.
 - **Department heads and managers:** Communication with department heads and managers can occur at regular intervals or as needed, based on the significance of the migration to their departments. Provide periodic updates on the overall progress, timelines, and impact on their teams.
-- **IT or technical teams**: Engage in regular communication with IT and technical teams involved in the migration. This includes ongoing collaboration, sharing updates on technical questions or issues, and coordinating any necessary configurations or changes. Frequency will likely be higher in the planning and analysis phase. During the implementation phase, have regular touchpoints or meetings to ensure smooth coordination.
+- **IT or technical teams**: Engage in regular communication with IT and technical teams involved in the migration. This includes ongoing collaboration, sharing updates on technical questions or issues, and coordinating any necessary configurations or changes. Communication frequency is typically higher in the planning and analysis phase. During the implementation phase, have regular touchpoints or meetings to ensure smooth coordination.
 
 ### Resourcing
 
