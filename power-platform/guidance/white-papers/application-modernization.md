@@ -3,7 +3,6 @@ title: Application modernization with Power Platform white paper
 description: Learn about modernizing applications with Power Platform.
 author: robstand
 ms.topic: overview
-ms.custom: 
 ms.date: 08/23/2023
 ms.author: rstand
 ms.reviewer: sericks
