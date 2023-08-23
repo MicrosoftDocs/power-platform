@@ -3,7 +3,7 @@ title: Migrate apps and flows from the default environment
 description: Learn how to migrate apps and flows from the default environment.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/21/2023
+ms.date: 08/23/2023
 ms.subservice: guidance
 author: ravi-chada
 ms.author: ravichada
@@ -395,7 +395,7 @@ A clean-up is a good idea for apps and flows that have not been used and updated
 
 CoE Starter Kit doesn’t have a tagging option today. However, it could be a customization that you could add to the Starter Kit.
 
-Create a table called **Tags** and set up an many-to-many (N:N) relationship with the app, flows, and other inventory tables. You can then create a tag and associate these records with the appropriate inventory items. For a better user experience, you can embed a grid on the **Main** form of apps, flows, and other inventory tables. This option is recommended as it has referential consistency.
+Create a table called **Tags** and set up a many-to-many (N:N) relationship with the app, flows, and other inventory tables. You can then create a tag and associate these records with the appropriate inventory items. For a better user experience, you can embed a grid on the **Main** form of apps, flows, and other inventory tables. This option is recommended as it has referential consistency.
 
 Create a text field on each inventory table and use that to capture the text (tag) that you can later use.
 
@@ -426,7 +426,7 @@ As an example, assume that a Power Automate flow is created to address a specifi
 
 To make a backup of the component, either options of individual migration or mass migration could be used to generate an exported solution. This can then be added to either a file repository of your choice or to a OneDrive location.
 
-After the backup is secured, then you can apply delete option to complete the clean-up process.
+After the backup is secured, then you can apply the **Delete** option to complete the clean-up process.
 
 In many cases, these are test flows and apps created by makers as part of their personal productivity learning and experimenting.
 
