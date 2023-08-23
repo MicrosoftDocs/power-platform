@@ -21,7 +21,7 @@ This white paper explains how organizations and administrators can plan migratio
 
 One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD), part of Microsoft Entra, tenant and is named as follows: **[Azure AD tenant name] (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment.
 
-You can't delete the default environment and you can't manually back up the default environment. System backups are done continuously. The default environment is limited to 1 TB of storage capacity. The default environment has the following capabities:
+You can't delete the default environment and you can't manually back up the default environment. System backups are done continuously. The default environment is limited to 1 TB of storage capacity. The default environment has the following capabilities:
 
 - 3 GB Dataverse database capacity
 - 3 GB Dataverse file capacity
@@ -61,7 +61,7 @@ The first step is to identify apps and flows and assets that need to be moved ov
 
 If the component is tagged to move to a different environment, there are options available to move the app. A move is an interactive process and needs some level of maker interaction. The level of complexity to move an app or flow increases with the mix of components used to build the app or flow.
 
-For example, an app with six screens has ten buttons through multiple screens. Let’s assume that these ten buttons each call an individual flow. There are also a couple of flows that get triggered daily to fix data or integrate data with another system. Let’s also assume that there is an AI Builder image processing model that's used as part of the automation. To move such an app, all components must be added to a solution and connection references must be adjusted correctly and tested out before confirming the completion.
+For example, an app with six screens has 10 buttons through multiple screens. Let’s assume that these 10 buttons each call an individual flow. There are also a couple of flows that get triggered daily to fix data or integrate data with another system. Let’s also assume that there's an AI Builder image processing model that's used as part of the automation. To move such an app, all components must be added to a solution and connection references must be adjusted correctly and tested out before confirming the completion.
 
 In another case, assume that there's a canvas app that uses an Office 365 connection. In this case, the maker just needs to add only the canvas app to the solution.
 
@@ -95,7 +95,7 @@ To prevent downtime of potential critical objects, due to DLP, part of CoE Start
 
 Update existing DLP policies to review impact. Follow the [Establishing tenant hygiene with the CoE Starter Kit](/power-platform/guidance/coe/after-setup-tenant-hygiene) article to find more information about the DLP editor.
 
-Before turning on the DLP feature, you can identify which apps and flows will be affected and alert the makers. The DLP editor can send a list of all the apps and flows that will be affected to an email address, which will generate a .csv file for each type of object.
+Before turning on the DLP feature, you can identify which apps and flows are affected and alert the makers. The DLP editor can send a list of all the apps and flows that are affected to an email address, which will generate a .csv file for each type of object.
 
 Using the DLP editor version 2.0, in the **Impact Analysis** area, choose **Export impacted apps and flows to CSV**.
 
@@ -176,7 +176,7 @@ There are some existing solution components like [set up inactivity notification
 
 #### Audiences
 
-In the migration process there are typically different audiences involved in communication. Here are the most typical key stakeholders and their roles:
+ In the migration process, there are typically different audiences involved in communication. Here are the most typical key stakeholders and their roles:
 
 - **App owners**: App owners are individuals or teams responsible for the development, maintenance, and management of specific applications. They have in-depth knowledge of the functionality, workflow, and configuration of their applications. Communication with app owners is crucial to understanding their app-specific requirements, gathering feedback, addressing concerns, and ensuring a smooth migration of their apps to the new environment.
 - **App users**: App users are the individuals who utilize the applications regularly to perform their tasks or workflows. They may have varying levels of technical expertise and familiarity with the applications. Communication with app users is important to inform them about the migration, provide updates on any changes or disruptions that may occur, offer training or support to ensure a seamless transition, and minimize any impact on their day-to-day operations.
@@ -316,7 +316,7 @@ Canvas apps and flows handle connections differently. Flows use connection refer
 
 #### Updating an app to use connection references instead of connections
 
-Canvas apps, that aren't solution-aware when added to a solution, won't automatically be upgraded to use connection references. Connection references get associated with canvas apps only at the time a data source is added to the app. To upgrade apps, you must:
+Canvas apps that aren't solution-aware when added to a solution won't automatically be upgraded to use connection references. Connection references get associated with canvas apps only at the time a data source is added to the app. To upgrade apps, you must:
 
 1. Add an app that is non-solution aware to a solution.
 2. Remove the connection from the app.
@@ -383,7 +383,7 @@ Given that the default environment is limited in size, one of the above options 
 
 ### Clean up considerations
 
-A clean-up is a good idea for apps and flows that have not been used and updated in a long time.  There are different paths for an administrator to consider as far as clean-up is concerned.
+A clean-up is a good idea for apps and flows that haven't been used and updated in a long time.  There are different paths for an administrator to consider as far as clean-up is concerned.
 
 - Decide the order of importing the data. The least dependent tables go first and most dependent come at the end.
 - Not all fields need be mapped. Fields like **Version**, **Modified date**, **Created on date**, and some other system fields don't need to be mapped.
@@ -432,6 +432,6 @@ In many cases, these are test flows and apps created by makers as part of their 
 
 ## Conclusion
 
-Power Platform is a tool for citizen developers and profesional developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual, or developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which can help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-service models of learning about the strategy, implementation of solutions, and best practices to develop apps and flows. A good addition is to capture some success stories on the communication site. Success stories published internally help makers to connect with ideas and makes them open to possibilities that could be achieved using Power Platform.
+Power Platform is a tool for citizen developers and professional developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual, or developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which can help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-service models of learning about the strategy, implementation of solutions, and best practices to develop apps and flows. A good addition is to capture some success stories on the communication site. Success stories published internally help makers to connect with ideas and makes them open to possibilities that could be achieved using Power Platform.
 
 A strong governance strategy is essential when migrating or moving specific objects. There are various strategies available for migrating objects, including individual and mass migration. The best fit option depends on our organization policies. Solutions are the most recommended way to organize the components of your application and make migrations more straightforward.
