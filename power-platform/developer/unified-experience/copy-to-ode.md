@@ -11,7 +11,7 @@ ms.author: pvillads
 ms.collection: get-started
 ---
 
-# Copy a Life Cycle Services environment (preview)
+# Copy a Lifecycle Services environment (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
