@@ -57,15 +57,13 @@ Ensure that your Windows user has access to the specified SQL server or LocalDB.
 
 `sqllocaldb stop MSSQLLocalDB`
 
+then
+
 `sqllocaldb delete MSSQLLocalDB`
 
 5. Run the new SqlLocalDB.msi (2019) installer. It will create a new MSSQLLocalDB instance.
 
-### I get the following error running UnoDev operations
-
-`
-Principal user (Id=<Redacted>, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=<Redacted>(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege
-`
+### I get the following error running UnoDev operations `Principal user (Id=<Redacted>, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=<Redacted>(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege`
 
 This is an issue in the environment. Please reach out to us with environment details. Users running the unodev operation should have correct licenses assigned.
 
