@@ -4,7 +4,7 @@ description: Learn how to view known issues in Power Platform admin center.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/23/2023
+ms.date: 08/24/2023
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
@@ -39,7 +39,7 @@ Customer trust and transparency are important to us. You can now view existing p
 
     - **Search:** Enter key words to surface the known issue you're looking for.
     
-1.  Select a known issue to see more details, including a description of the problem and a workaround, if available.
+1.  Select the title of a known issue to view details about the issue, including a description of the problem and a workaround, if available.
 
 > [!Tip]
 > Bookmark the URL of the known issue page so that you can easily come back to view updates.
