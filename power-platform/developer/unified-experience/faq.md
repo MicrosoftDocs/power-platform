@@ -64,9 +64,9 @@ sqllocaldb delete MSSQLLocalDB
 
 ### I get the following error running UnoDev operations
 
-```
+`
 Principal user (Id=<Redacted>, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=<Redacted>(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege
-```
+`
 
 This is an issue in the environment. Please reach out to us with environment details. Users running the unodev operation should have correct licenses assigned.
 
