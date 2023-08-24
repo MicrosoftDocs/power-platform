@@ -27,7 +27,7 @@ This article we will show you how to:
 
 Let's begin by developing a runnable X++ class to use as an example. The classes only task is to log a message into the infolog<!--what is this?-->. The important thing here is not what the runnable class does, rather it is how we compile, run, and debug it. If you want to learn about the X++ language, see the [programming reference](/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference).
 
-As a prerequisite, you will need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md). You will also need to [Get the Power Platform Build Tools marketplace extension](deploy-packages.md#get-the-power-platform-build-tools-marketplace-extension).
+As a prerequisite, you will need to have completed setting up your local Visual Studio developer environment. More information: [Install and configure development tools (preview)](install-config-tools.md)
 
 ## Create a model
 

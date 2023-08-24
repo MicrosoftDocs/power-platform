@@ -40,6 +40,13 @@ Virtual tables, also known as virtual entities, enable the integration of data r
 
 More information: [Virtual Tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve).
 
+## Next steps
+
+Set up Visual Studio on your local development computer.
+
+> [!div class="nextstepaction"]
+> [Next step](install-config-tools.md)
+
 ### See also
 
 [Install and configure development tools (preview)](install-config-tools.md)

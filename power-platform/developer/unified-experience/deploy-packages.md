@@ -39,7 +39,7 @@ Locate and install the **Power Platform Build Tools** extension from **Organizat
 
 Get the relevant Nuget packages with the right version to build against for the unified developer experience environments and upload to artifact feed in the project.
 
-Download the X++ Nuget packages with the required version and add them to your artifact feed. Reference: [Build automation that uses Microsoft-hosted agents and Azure Pipelines](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation)
+Download the X++ Nuget packages with the required version and add them to your artifact feed. Reference: [Build automation that uses Microsoft-hosted agents and Azure Pipelines](/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation)
 
 ## Upload the metadata and solution
 

@@ -70,7 +70,7 @@
         - name: Overview
           href: unified-experience\overview.md
         - name: Install development tools
-          href: install-config-tools.md
+          href: unified-experience\install-config-tools.md
         - name: Write, deploy, and debug X++ code
           href: unified-experience\debug.md
         - name: Deploy packages
