@@ -12,7 +12,7 @@ ms.author: pvillads
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This FAQ answers common questions about the AI that is used by the generative answers capability in Power Virtual Agents.
+This FAQ answers common questions about regarding the unified developer experience for finance and operations apps.
 
 ## Licensing, capacity and environment Provisioning
 
