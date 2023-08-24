@@ -114,6 +114,23 @@ The trace parser is being updated to support working on ODOP clients. Please ana
 
 Use **Detatch All** to end debugging.
 
+## Checking logs and history
+
+### I applied a package, but it failed. How can I do additional debugging to determite the failure?
+
+Details to access logs will be available in the Visual Studio output pane in the case of failures, or if you mark the settings to download logs after every request.
+
+### How can I find out what packages are applied to my environment?
+
+Go to DV environment and check the OperationsHistory table to download the logs.
+
+### My operation failed, and was not able to find sufficient information in the logs. How can I get a correlation id to provide to Support?
+
+The correlation id is in the output pane. The client machine name (with timestamp) will also be enough for Microsoft to obtain telemetry information.
+
+### How do I check what failed for a given correlation id?
+
+Write a TSG with query for Support to use. Select a PG to contact based on the query result.
 
 ### See also
 
