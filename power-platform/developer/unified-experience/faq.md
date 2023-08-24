@@ -75,7 +75,7 @@ This happens when the Finance and Operations environment is not ready to service
 
 ### My source environment version is <10.0.35. Why can't I copy from it?
 
-UnoDev functionality is available for version 10.0.35 and later. Since during copy we also copy compute, if the source enviornment is earlier than 10.0.35 the target will lose Uno functionality.
+UnoDev functionality is available for version 10.0.35 and later. Since during copy we also copy compute, if the source enviornment is earlier than 10.0.35 the target will lose UnoDev functionality.
 
 ### I provisioned an environment from UI, but am unable to run UnoDev operations
 
