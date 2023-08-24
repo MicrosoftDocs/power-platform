@@ -16,7 +16,7 @@ This FAQ answers common questions about regarding the unified developer experien
 
 ## Licensing, capacity and environment Provisioning
 
-### My environment saw showing as preparing in Power Platform admin center (PPAC) but has now disappeared. Why has my environment deployment failed?
+### My environment saw showing as preparing in Power Platform admin center, but has now disappeared. Why has my environment deployment failed?
 
 This happens when provisioning fails. Contact support with the environment name and tenant ID.
 
@@ -24,13 +24,13 @@ This happens when provisioning fails. Contact support with the environment name 
 
 Use Windows PowerShell instead of PowerShell 7
 
-### Provisioning fails with the error "You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app."
+### My provisioning fails with an error about missing licences.
 
-Ensure that you have licenses for the template you're deploying.
+When you get the error "You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app.", ensure that you have licenses for the template you're deploying.
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
-### I can't access SQL server using my SQL Server Management Studio (SSMS) client running in a OneBox environment (such as a VHD or CHE)
+### I can't access SQL server using my SQL Server Management Studio client running in a OneBox environment
 
 We don't currently have a solution for secure connection to a SQL server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) will be developed to provide read-only queries to a database from SSMS. There's also a JIT access that will allow you to access the data after providing authentication.
 
@@ -63,9 +63,11 @@ then
 
 5. Run the new SqlLocalDB.msi (2019) installer. It creates a new MSSQLLocalDB instance.
 
-### I get the following error running UnoDev operations `Principal user (Id=<Redacted>, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=<Redacted>(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege`
+### I get the a missing licenses error when running UnoDev operations
 
-This is an issue in the environment. Reach out to us with environment details. Users running the UnoDev operation should have correct licenses assigned.
+When you get the following error, contact us with environment details to fix the issue.
+
+"Principal user (Id=<Redacted>, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=<Redacted>(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege"
 
 ## UnoDev operations (apply package, debugging, copy, pipeline setup, package conversion)
 
@@ -103,9 +105,9 @@ Additionally, a **Full DB Sync** from the Dynamics365 menu in **Extensions** is 
 
 Locate ModelUtil.exe inside the bin and run it from the command line to see usage. Choose the -convertToUnifiedPackage option and provide the package zip and output location as parameters.
 
-### Trace Parser doesn't work on my VS client
+### Trace Parser doesn't work on my Visual Studio client
 
-The trace parser is being updated to support working on ODOP clients. Analyze the trace using trace parser on existing Finance and Operations developer machines.
+The trace parser is being updated to support working on unified clients. Analyze the trace using trace parser on existing Finance and Operations developer machines.
 
 ### Stopping debugging restarts the Runtime
 
@@ -124,10 +126,6 @@ Go to DV environment and check the OperationsHistory table to download the logs.
 ### My operation failed, and wasn't able to find sufficient information in the logs. How can I get a correlation id to provide to Support?
 
 The correlation id is in the output pane. The client machine name with timestamp is also sufficient for Microsoft to obtain telemetry information.
-
-### How do I check what failed for a given correlation id?
-
-Write a TSG with query for Support to use. Select a PG to contact based on the query result.
 
 ### See also
 
