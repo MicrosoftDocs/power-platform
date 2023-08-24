@@ -82,6 +82,8 @@ To configure the extension, follow these instructions.
     1. **Reference metadata folder** should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).
     1. Choose **Save**.
 
+:::image type="content" source="../media/devexp-config.png" alt-text="Manage local configurations":::
+
 If after filling in all the fields the **Save** button is still grayed out, you will see error messages with a red border in tooltips on the offending fields.
 Ensure that you entered the correct string value (e.g., "(localdb)\." if you are using LocalDB). Also, if you are using LocalDB, you may need to issue the following command from a Command prompt: `sqllocaldb create MSSQLLocalDB -s`.
 
