@@ -30,6 +30,7 @@ After you have installed the Power Platform Tools extension for Visual Studio, f
 1. Launch Visual Studio if not already running.
 1. In the **Tools** menu, select **Connect to Dataverse**.
 1. Select the desired options in the dialog and select **Login**.
+
     Choose not to use the signed in user (in case you need to use another account with a VS license) and type in the credentials as necessary to match your development user account.
 1. When presented with a dialog to select a solution, select an available solution and then choose **Done**.
 1. You will be presented with a list of Dataverse organizations (databases deployed). Find the sandbox environment created for online development and connect to it.
@@ -51,9 +52,25 @@ CHoose **OK** in the dialog to start the download. Visual studio will notify you
 
 ### Extract system metadata
 
+Downloaded assets can be found in the following location:
+`C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
+
+Two files were downloaded:
+
+- Finance and operations extension is downloaded as Microsoft.Dynamics.Framework.Tools.Installer.vsix
+- System metadata was downloaded as PackagesLocalDirectory.zip.
+
+Unpack the PackagesLocalDirectory.zip as PackagesLocalDirectory
+
 ### Install the finance and operations extension
 
+Using Windows File Explorer, from the folder shown below open the VSIX file to install the extension.
+
+`C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
+
 ### Configure the finance and operations extension
+
+
 
 ## Summary
 
