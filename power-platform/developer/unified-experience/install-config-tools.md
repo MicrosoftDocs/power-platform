@@ -95,7 +95,14 @@ You can create several configurations, but you must select one to be the current
 
 ## Summary
 
-Congratulations! You’re now ready to build, deploy, debug, and test your X++ modules working with the Dataverse online development environment. Explore the possibilities with the power of Dynamics 365 Finance and Operations integrated with Power Platform.
+Congratulations! You’re now ready to build, deploy, debug, and test your X++ modules working with the Power Platform online development environment. Explore the possibilities with the power of Dynamics 365 Finance and Operations integrated with Power Platform.
+
+## Next steps
+
+Start writing code, deploy, and debug.
+
+> [!div class="nextstepaction"]
+> [Write, deploy, and debug X++ code](install-config-tools.md)
 
 ### See also
 

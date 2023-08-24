@@ -45,7 +45,7 @@ More information: [Virtual Tables](/power-apps/developer/data-platform/virtual-e
 Set up Visual Studio on your local development computer.
 
 > [!div class="nextstepaction"]
-> [Next step](install-config-tools.md)
+> [Install and configure development tools](install-config-tools.md)
 
 ### See also
 
