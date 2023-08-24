@@ -32,7 +32,7 @@ Ensure that you have licenses for the template you're deploying.
 
 ### I can't access SQL server using my SQL Server Management Studio (SSMS) client running in a OneBox environment (such as a VHD or CHE)
 
-We don't currently have a solution for secure connection to a SQL server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) will be developed to provide read-only queries to a database from SSMS. There is also a JIT access that will allow you to access the data after providing authentication.
+We don't currently have a solution for secure connection to a SQL server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) will be developed to provide read-only queries to a database from SSMS. There's also a JIT access that will allow you to access the data after providing authentication.
 
 ### The Configure Metadata option doesn't appear on the menu
 
@@ -44,7 +44,7 @@ Use [7Zip](7-zip.org) to extract the metadata.
 
 ### The message "Please wait for update to complete" pop up keeps appearing
 
-This only happens until the metadata is configured.
+When metadata is configured, this should stop.
 
 ### Cross reference database validation keeps failing
 
@@ -65,21 +65,21 @@ then
 
 ### I get the following error running UnoDev operations `Principal user (Id=<Redacted>, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=<Redacted>(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege`
 
-This is an issue in the environment. Please reach out to us with environment details. Users running the unodev operation should have correct licenses assigned.
+This is an issue in the environment. Reach out to us with environment details. Users running the UnoDev operation should have correct licenses assigned.
 
 ## UnoDev operations (apply package, debugging, copy, pipeline setup, package conversion)
 
 ### My Operations fails with error EnvironmentNotInReadyState
 
-This happens when the Finance and Operations environment is not ready to service the request. Please retry after a few minutes. You can check if the environment is in the ready state by opening the Finance and Operations environment link.
+This happens when the Finance and Operations environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the Finance and Operations environment link.
 
 ### My source environment version is <10.0.35. Why can't I copy from it?
 
-UnoDev functionality is available for version 10.0.35 and later. Since during copy we also copy compute, if the source enviornment is earlier than 10.0.35 the target will lose UnoDev functionality.
+UnoDev functionality is available for version 10.0.35 and later. Since during copy we also copy compute, if the source environment is earlier than 10.0.35 the target loses UnoDev functionality.
 
 ### I provisioned an environment from UI, but am unable to run UnoDev operations
 
-UI does not provision online environments. Only sandbox and production environments are privisioned via UI, and UnoDev operations are not supported on these environments. Please provision OnlineDev environments via command line, and then run UnoDev operations.
+UI doesn't provision online environments. Only sandbox and production environments are provisioned via UI, and UnoDev operations aren't supported on these environments. Provision OnlineDev environments via command line, and then run UnoDev operations.
 
 ### Is package deployment of the unit test code required for executing tests in the cloud runtime?
 
@@ -91,8 +91,8 @@ Application Foundation and Test Essentials are required for unit test execution.
 
 ### For private preview, how can I set up a pipeline that automates creation and application of a deployable package to a new environment?
 
-Reach out over Yammer or other method to provide your organization name for Microsoft to share a marketplace extension that can be installed and used in creating a new pipeline setup. This will be capable of package creation, ISV license addition, and application of the package.
-This will soon be merged into the current generally available extension, so that no new installation will be needed. For details, see [this reference](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/1740962955264).
+Reach out over Yammer or other method to provide your organization name. Microsoft will share a marketplace extension that can be installed and used in creating a new pipeline setup. It is capable of package creation, ISV license addition, and application of the package.
+This extension will soon be merged into the current generally available extension, so that no new installation will be needed. For details, see [this reference](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/1740962955264).
 
 ### How do I include a license and directly deploy from Visual Studio?
 
@@ -109,11 +109,11 @@ The trace parser is being updated to support working on ODOP clients. Analyze th
 
 ### Stopping debugging restarts the Runtime
 
-Use **Detatch All** to end debugging.
+Use **Detach All** to end debugging.
 
 ## Checking logs and history
 
-### I applied a package, but it failed. How can I do additional debugging to determite the failure?
+### I applied a package, but it failed. How can I do further debugging to determine the failure?
 
 Details to access logs will be available in the Visual Studio output pane in the case of failures, or if you mark the settings to download logs after every request.
 
@@ -121,9 +121,9 @@ Details to access logs will be available in the Visual Studio output pane in the
 
 Go to DV environment and check the OperationsHistory table to download the logs.
 
-### My operation failed, and was not able to find sufficient information in the logs. How can I get a correlation id to provide to Support?
+### My operation failed, and wasn't able to find sufficient information in the logs. How can I get a correlation id to provide to Support?
 
-The correlation id is in the output pane. The client machine name (with timestamp) will also be enough for Microsoft to obtain telemetry information.
+The correlation id is in the output pane. The client machine name with timestamp is also sufficient for Microsoft to obtain telemetry information.
 
 ### How do I check what failed for a given correlation id?
 
