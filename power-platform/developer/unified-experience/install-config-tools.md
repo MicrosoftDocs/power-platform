@@ -102,7 +102,7 @@ Congratulations! You’re now ready to build, deploy, debug, and test your X++ m
 Start writing code, deploy, and debug.
 
 > [!div class="nextstepaction"]
-> [Write, deploy, and debug X++ code](install-config-tools.md)
+> [Write, deploy, and debug X++ code](debug.md)
 
 ### See also
 
