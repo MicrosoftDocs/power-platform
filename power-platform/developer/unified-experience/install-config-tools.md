@@ -88,9 +88,10 @@ If after filling in all the fields the **Save** button is still grayed out, you 
 Ensure that you entered the correct string value (e.g., "(localdb)\." if you are using LocalDB). Also, if you are using LocalDB, you may need to issue the following command from a Command prompt: `sqllocaldb create MSSQLLocalDB -s`.
 
 You will also get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
-Once the configuration completes, navigate to **Extensions** > **Dynamics 365** > **Application Explorer** > **Open**.
 
-You can create several configurations, but you must select one to be the current one. The chosen configuration will take effect on new instances of Visual studio.
+Once the configuration completes, navigate to **Extensions** > **Dynamics 365** > **Application Explorer** > **Open**. You should see the **Application Explorer** window open.
+
+You can create several configurations, but you must select one to be the current one. The chosen configuration will take effect on new instances of Visual Studio.
 
 ## Summary
 
