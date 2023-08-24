@@ -77,7 +77,7 @@
           href: unified-experience\deploy-packages.md
         - name: Use CI/CD pipelines
           href: unified-experience\cicd-pipeline.md
-        - name: Copy an LCS environment
+        - name: Copy a Lifecycle Services environment
           href: unified-experience\copy-to-ode.md
         - name: Frequently asked questions (FAQs)
           href: unified-experience\faq.md
