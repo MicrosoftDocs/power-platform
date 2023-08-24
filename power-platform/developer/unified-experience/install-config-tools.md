@@ -14,7 +14,7 @@ ms.author: pathaku
 
 This article describes how to install and configure required Visual Studio and finance and operations tools into your local development environment. The instructions in each section should be following in the order presented in this article.
 
-As a prerequisite, you will need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md). 
+As a prerequisite, you will need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
 
 > [!IMPORTANT]
 > The user account you will be using for development in the sandbox environment must be assigned either the System Administrator or System Customizer role.
@@ -52,7 +52,7 @@ CHoose **OK** in the dialog to start the download. Visual studio will notify you
 
 ### Extract system metadata
 
-Downloaded assets can be found in the following location:
+Downloaded assets can be found in the following location:  
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
 
 Two files were downloaded:
@@ -60,23 +60,39 @@ Two files were downloaded:
 - Finance and operations extension is downloaded as Microsoft.Dynamics.Framework.Tools.Installer.vsix
 - System metadata was downloaded as PackagesLocalDirectory.zip.
 
-Unpack the PackagesLocalDirectory.zip as PackagesLocalDirectory
+Unpack the PackagesLocalDirectory.zip file as PackagesLocalDirectory.
 
 ### Install the finance and operations extension
 
-Using Windows File Explorer, from the folder shown below open the VSIX file to install the extension.
+Using Windows File Explorer, from the folder shown below open the Microsoft.Dynamics.Framework.Tools.Installer.vsix file to install the extension.
 
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
 
 ### Configure the finance and operations extension
 
+To configure the extension, follow these instructions.
 
+1. Start Visual Studio, and then select **Continue without code** from the dialog.
+1. Navigate to **Extensions** > **Dynamics 365** > **Configure runtime** > **Configure runtime** for the first time.  
+    After the initial configuration, go to **Extensions** > **Dynamics 365** > **Application Explorer** > **Configure Metadata** for further changes.
+1. On the configuration form, select **New**, and then create a new configuration.
+    1. **Folder for your metadata** is the folder where your own code is (or will be)
+    1. **Configuration file location** is a folder (and file name) that will store the configuration you are creating now. It can be anywhere on your drive.
+    1. **Cross reference database server** should be "(localdb)\." if you are using LocalDB, or "localhost" if you are using Microsoft SQL Server.
+    1. **Reference metadata folder** should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).
+    1. Choose **Save**.
+
+If after filling in all the fields the **Save** button is still grayed out, you will see error messages with a red border in tooltips on the offending fields.
+Ensure that you entered the correct string value (e.g., "(localdb)\." if you are using LocalDB). Also, if you are using LocalDB, you may need to issue the following command from a Command prompt: `sqllocaldb create MSSQLLocalDB -s`.
+
+You will also get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
+Once the configuration completes, navigate to **Extensions** > **Dynamics 365** > **Application Explorer** > **Open**.
+
+You can create several configurations, but you must select one to be the current one. The chosen configuration will take effect on new instances of Visual studio.
 
 ## Summary
 
-If you have followed the above procedures correctly, you should see the **F&O Explorer** window open in Visual Studio.
-
-<!--Add image-->
+Congratulations! You’re now ready to build, deploy, debug, and test your X++ modules working with the Dataverse online development environment. Explore the possibilities with the power of Dynamics 365 Finance and Operations integrated with Power Platform.
 
 ### See also
 
