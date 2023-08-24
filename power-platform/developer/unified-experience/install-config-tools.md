@@ -75,14 +75,15 @@ To configure the extension, follow these instructions.
 1. Start Visual Studio, and then select **Continue without code** from the dialog.
 1. Navigate to **Extensions** > **Dynamics 365** > **Configure runtime** > **Configure runtime** for the first time.  
     After the initial configuration, go to **Extensions** > **Dynamics 365** > **Application Explorer** > **Configure Metadata** for further changes.
-1. On the configuration form, select **New**, and then create a new configuration.
-    1. **Folder for your metadata** is the folder where your own code is (or will be)
-    1. **Configuration file location** is a folder (and file name) that will store the configuration you are creating now. It can be anywhere on your drive.
-    1. **Cross reference database server** should be "(localdb)\." if you are using LocalDB, or "localhost" if you are using Microsoft SQL Server.
-    1. **Reference metadata folder** should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).
-    1. Choose **Save**.
+1. On the configuration form, select **New**, and then create a new configuration. See the field descriptions provided below.
+1. Choose **Save**.
 
-:::image type="content" source="../media/devexp-config.png" alt-text="Manage local configurations":::
+| Form field | Description |
+|---|---|
+|Folder for your metadata| Folder where your own code is (or will be).|
+|Configuration file location| Folder (and file name) that will store the configuration you are creating now. It can be anywhere on your drive.|
+|Cross reference database server| Should be set to "(localdb)\." if you are using LocalDB, or "localhost" if you are using Microsoft SQL Server.|
+|Reference metadata folder| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).|
 
 If after filling in all the fields the **Save** button is still grayed out, you will see error messages with a red border in tooltips on the offending fields.
 Ensure that you entered the correct string value (e.g., "(localdb)\." if you are using LocalDB). Also, if you are using LocalDB, you may need to issue the following command from a Command prompt: `sqllocaldb create MSSQLLocalDB -s`.
