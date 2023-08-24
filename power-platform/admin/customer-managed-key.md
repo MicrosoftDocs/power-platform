@@ -5,8 +5,9 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 07/17/2023
+ms.date: 08/24/2023
 ms.custom: template-how-to
+
 ---
 # Manage your customer-managed encryption key
 
@@ -367,8 +368,9 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Select **Save**, and then select **Confirm**.
 
 > [!IMPORTANT]
-> - The environment is disabled temporarily during this process and re-enabled to allow users access while the encryption process continues. It can take up to a day or two to complete the encryption process.
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
+> - The encryption can take up to four days to complete, but the environment might be enabled before the **Add environments** operation completes.
+> - The operation might not complete and if it fails, your data continues to be encrypted with Microsoft managed key. You can re-run the **Add environments** operation again.
 
 > [!NOTE]
 > You can only add environments that are enabled as Managed Environments. Trial and Teams environment types can't be added to the enterprise policy.
