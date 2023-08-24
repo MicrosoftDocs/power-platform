@@ -42,9 +42,12 @@ More information: [Virtual Tables](/power-apps/developer/data-platform/virtual-e
 
 ### See also
 
+[Install and configure development tools (preview)](install-config-tools.md)
 [Write, deploy, and debug X++ code (preview)](debug.md)  
 [Frequently asked questions (preview)](faq.md)
-[Unified admin experience for finance and operations apps (preview)](../../admin/unified-experience/finance-operations-apps-overview.md)  
+
+[Unified admin experience for finance and operations apps (preview)](../../admin/unified-experience/finance-operations-apps-overview.md)
+[Tutorial: Provision a new environment with an ERP-based template (preview)](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md#tutorial-provision-a-new-environment-with-an-erp-based-template-preview)
 
 [Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page) (Dynamics 365 legacy information)
 

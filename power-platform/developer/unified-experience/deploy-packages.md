@@ -1,6 +1,6 @@
 ---
 title: "Deploy packages"
-description: "Learn how to deploy packages from unified developer experience environments from Azure DevOps pipelines."
+description: "Learn how to deploy packages from unified developer experience environments using Azure DevOps pipelines."
 author: pvillads
 ms.date: 08/01/2023
 ms.topic: article
@@ -8,28 +8,18 @@ audience: Developer, IT Pro
 ms.reviewer: jdaly
 ms.search.region: Global
 ms.author: pvillads
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.collection: get-started
 ---
 
-# Deploy packages
+# Deploy packages using Azure DevOps
 
-This article explains how to deploy packages to unified developer experience environments from Azure DevOps pipelines.
+This article explains how to deploy packages to Microsoft Power Platform unified developer experience environments using Azure DevOps pipelines.
 
-You need to complete the following steps:
-
-1. [Get the latest shared marketplace extension](#get-the-latest-shared-marketplace-extension)
-1. [Get the Power Platform Build Tools marketplace extension](#get-the-power-platform-build-tools-marketplace-extension)
-1. [Upload Nuget packages to the artifact feed in the project](#upload-nuget-packages-to-the-artifact-feed-in-the-project)
-1. [Upload the metadata and solution](#upload-the-metadata-and-solution)
-1. [Create build pipeline](#create-build-pipeline)
-1. [Link the built artifact](#link-the-built-artifact)
-
+You will need to complete the documented steps of this article in the order presented (top to bottom).
 
 ## Get the latest shared marketplace extension
 
-You need to get the latest shared marketplace extension for Dynamics 365 Finance and Operations Tools.
+Get the latest shared marketplace extension for Dynamics 365 Finance and Operations Tools.
 
 To get the latest shared marketplace extension:
 
