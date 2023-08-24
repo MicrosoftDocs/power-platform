@@ -24,7 +24,7 @@ This happens when provisioning fails. Contact support with the environment name 
 
 Use Windows PowerShell instead of PowerShell 7
 
-### Provisioning fails with the error "You don't have the required Dynamics 365 licenses to create a database with <app name> Dynamics app."
+### Provisioning fails with the error "You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app."
 
 Ensure that you have licenses for the template you are deploying.
 
@@ -55,10 +55,10 @@ Ensure that your Windows user has access to the specified SQL server or LocalDB.
 1. Select "LocalDB" and **Download**
 1. Before running the SqlLocalDB.msi installer, delete your current MSSQLLocalDB instance:
 
-```
+`
 sqllocaldb stop MSSQLLocalDB
 sqllocaldb delete MSSQLLocalDB
-```
+`
 
 5. Run the new SqlLocalDB.msi (2019) installer. It will create a new MSSQLLocalDB instance.
 
