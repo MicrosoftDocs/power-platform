@@ -61,7 +61,7 @@ then
 
 `sqllocaldb delete MSSQLLocalDB`
 
-5. Run the new SqlLocalDB.msi (2019) installer. It will create a new MSSQLLocalDB instance.
+5. Run the new SqlLocalDB.msi (2019) installer. It creates a new MSSQLLocalDB instance.
 
 ### I get the following error running UnoDev operations `Principal user (Id=<Redacted>, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=<Redacted>(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege`
 
@@ -89,9 +89,9 @@ Yes. Any new tests or modifications must be deployed to the environment for the 
 
 Application Foundation and Test Essentials are required for unit test execution.
 
-### For private preview, how can I set up a pipeline that automates creation and application of a deployable package to a new environment?
+### For preview, how can I set up a pipeline that automates creation and application of a deployable package to a new environment?
 
-Reach out over Yammer or other method to provide your organization name. Microsoft will share a marketplace extension that can be installed and used in creating a new pipeline setup. It is capable of package creation, ISV license addition, and application of the package.
+Reach out over Yammer or other method to provide your organization name. Microsoft shares a marketplace extension that can be installed and used in creating a new pipeline setup. It's capable of package creation, ISV license addition, and application of the package.
 This extension will soon be merged into the current generally available extension, so that no new installation will be needed. For details, see [this reference](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/1740962955264).
 
 ### How do I include a license and directly deploy from Visual Studio?
@@ -115,7 +115,7 @@ Use **Detach All** to end debugging.
 
 ### I applied a package, but it failed. How can I do further debugging to determine the failure?
 
-Details to access logs will be available in the Visual Studio output pane in the case of failures, or if you mark the settings to download logs after every request.
+Details to access logs will be available in the Visual Studio output pane in case of failures, or if you mark the settings to download logs after every request.
 
 ### How can I find out what packages are applied to my environment?
 
