@@ -3,7 +3,7 @@ title: Manage your customer-managed encryption key in Power Platform
 description: Learn how to manage your encryption key. 
 author: paulliew
 ms.author: paulliew
-ms.reviewer: matp, ratrtile, sericks
+ms.reviewer: matp, ratrtile
 ms.topic: how-to
 ms.date: 08/24/2023
 ms.custom: template-how-to
