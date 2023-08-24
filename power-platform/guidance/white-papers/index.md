@@ -14,5 +14,5 @@ White papers provide in-depth information, solutions, and recommendations to hel
 
 | Whitepaper | Description | Date |
 | --- | --- | --- |
-| [Applicaiton modernization with Power Platform](application-modernization.md) |This white paper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. | August 2023 |
-| [Migrating apps and flows from the default environment](migrating-from-default-environment.md) |This technical whitepaper outlines considerations and best practices for migrating apps and flows from the default environment. | August 2023 |
+| [Application modernization with Power Platform](application-modernization.md) |This white paper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. | August 2023 |
+| [Migrating apps and flows from the default environment](migrating-from-default-environment.md) |This technical white paper outlines considerations and best practices for migrating apps and flows from the default environment. | August 2023 |
