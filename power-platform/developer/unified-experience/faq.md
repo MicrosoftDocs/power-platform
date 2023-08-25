@@ -24,7 +24,7 @@ This happens when provisioning fails. Contact support with the environment name 
 
 Use Windows PowerShell instead of PowerShell 7
 
-### My provisioning fails with an error about missing licences.
+### My provisioning fails with an error about missing licenses
 
 When you get the following error, ensure that you have licenses for the template you're deploying.
 

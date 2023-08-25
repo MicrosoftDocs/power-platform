@@ -32,7 +32,7 @@ More information: [Microsoft Power Platform developer documentation](../index.ym
 
 Dual-write provides a tightly coupled near real-time and bi-directional integration between the FnO apps and Dataverse. Once an entity is enabled for dual-write, any create, update, or delete change in FnO apps results in writes to Dataverse and vice versa. For example, a change in the Customer entity in finance and operations apps is reflected in the Account entity in Dataverse and vice-versa. While all this happens with minimal setup, Power Platform does provide an advanced user interface for all your customization needs.
 
-More information: [DualWrite](https://powerapps.microsoft.com/de-ch/blog/announcing-dual-write-preview).
+More information: [DualWrite](https://powerapps.microsoft.com/blog/announcing-dual-write-preview).
 
 ### Virtual tables
 
