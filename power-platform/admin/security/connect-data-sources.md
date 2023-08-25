@@ -9,7 +9,7 @@ ms.collection: get-started
 author: lancedMicrosoft
 ms.subservice: admin
 ms.author: lanced
-ms.reviewer: tapanm
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
@@ -75,7 +75,7 @@ Even in the case of explicit authentication, it's important to remember that itâ
 
 For example, suppose you have a SharePoint list that includes **Name** and **Salary** columns. You then build an app that exposes only the **Name** column. This means that users have access only to the **Name** column in your app.
 
-However, suppose your users have SharePoint list permissions that allow them to view and edit both the **Name** and **Salary** columns. Now suppose a specific user has Power Apps maker rights to that SharePoint list. In this case, nothing prevents the user from creating a new app that accesses the **Salary** column. The permissions that you grant through the user interface of your app don't deny the data source permissions that the user has.
+However, suppose your users have SharePoint list permissions that allow them to view and edit both the **Name** and **Salary** columns. Now suppose a specific user has Power Apps maker rights to that SharePoint list. In this case, nothing prevents that user from creating a new app that accesses the **Salary** column. The permissions that you grant through the user interface of your app don't deny the data source permissions that the user has.
 
 Learn more about the [difference between explicit and implicit connections](/powerapps/maker/canvas-apps/connections/sql-server-security#difference-between-explicit-and-implicit-connections). Although the article refers to SQL Server, it applies to all relational databases.
 
