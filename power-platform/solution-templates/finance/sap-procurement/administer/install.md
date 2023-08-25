@@ -25,7 +25,7 @@ ms.subservice: solution-templates
 
 As a Power Platform admin, you can take the following steps to access and install the solution to the development environment you prepared for it.
 
-First, select the links to download the [mpa_SAPBase_managed](https://aka.ms/DownloadSAPBaseSolution) and [mpa_SAPProcurement_managed](https://aka.ms/DownloadSAPProcurementSolution) solution files.
+First, select the links to download the [mpa_SAPBase_managed](https://aka.ms/SAPBaseTemplate-PowerPlatform) and [mpa_SAPProcurement_managed](https://aka.ms/SAPProcurementTemplate-PowerPlatform) solution files.
 
 > [!IMPORTANT]
 >

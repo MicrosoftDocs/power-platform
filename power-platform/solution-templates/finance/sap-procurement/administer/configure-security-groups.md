@@ -104,7 +104,7 @@ Security group members can only access apps and flows that are shared with them.
 Share the flows with _Run only privileges_ so users have access to embedded flows and the SAP ERP, Dataverse, and Office 365 connector user services use the triggering user's credentials.
 
 > [!WARNING]
-> Failure to change the **Read Only privileges** of the flows will prevent the connector services from passing user credentials. Sharing of Dataverse and Office 365 connections should be limited.
+> Failure to change the **Read Only** privileges of the flows will prevent the connector services from passing user credentials. Sharing of Dataverse and Office 365 connections should be limited.
 
 ### Steps to share apps
 

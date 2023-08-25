@@ -29,7 +29,7 @@ More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
 The data source for the SAP Procurement solutions is your SAP system. Storing your system's SAP connection information in the solutions ensures that the SAP system connection information can be easily re-established when the solutions are migrated to different environments.
 
-At the time of solution import, you are prompted to create a new connection or map existing connections that are already set up by performing the actions here.
+When you import the solutions, you'll be prompted to create new connections or map existing connections.
 
 ## Set up and manage connections
 
@@ -75,7 +75,7 @@ To update the connection references originally set during the install solution p
 1. Double select each of the _connection references_ and choose each **Connection** that you created.
 1. Select **Save**.
 
-The two connection references contained in the solution are:
+The two connection references contained in the SAP Procurement solution are:
 
 - **SAP Dataverse**: A placeholder for Dataverse connection.
 - **SAP ERP**: A placeholder for SAP ERP connection.
