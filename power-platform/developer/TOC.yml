@@ -75,8 +75,6 @@
           href: unified-experience\debug.md
         - name: Deploy packages
           href: unified-experience\deploy-packages.md
-        - name: Copy a Lifecycle Services environment
-          href: unified-experience\copy-to-ode.md
         - name: Frequently asked questions (FAQs)
           href: unified-experience\faq.md
     - name: Tools

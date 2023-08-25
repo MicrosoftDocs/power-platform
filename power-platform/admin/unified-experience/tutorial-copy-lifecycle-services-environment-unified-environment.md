@@ -47,18 +47,18 @@ Before the source environment can be copied, several steps need to be performed 
 1. In the Power Platform admin center select **Environments**.
 2. Select the source environment from which you wish to start the copy. From the **Resources** menu, select **Dynamics 365 apps**.
 
-:::image type="content" source="/power-platform/developer/unified-experience/media/unified-experience/copy-to-ode-view-apps.png" alt-text="Viewing Dynamics 365 apps from the environment resources menu.":::
+:::image type="content" source="media/copy-to-ode-view-apps.png" alt-text="Viewing Dynamics 365 apps from the environment resources menu.":::
 
 You should see Dynamics 365 Finance and Operations Platform Tools in the list of available apps.
 
 If you see "Update Available" in the **Status** for Dynamics 365 Finance and Operations Platform Tools, click on the link, agree to the terms and click **Update**
 
-:::image type="content" source="/power-platform/developer/unified-experience/media/unified-experience/copy-to-ode-platform-tools.png" alt-text="Dynamics 365 Finance and Operations platform tools showing an Update available status.":::
+:::image type="content" source="media/copy-to-ode-platform-tools.png" alt-text="Dynamics 365 Finance and Operations platform tools showing an Update available status.":::
 
 If Dynamics 365 Finance and Operations Platform Tools is not listed, click on **Install App** to add this app to your organization.
 From the list on right side, find and select “Dynamics 365 Finance and Operations Platform Tools” app, click on **Next** and follow the instructions to install.
 
-:::image type="content" source="../media/unified-experience/copy-to-ode-install-apps.png" alt-text="Install Dynamics 365 apps menu.":::
+:::image type="content" source="media/copy-to-ode-install-apps.png" alt-text="Install Dynamics 365 apps menu.":::
 
 ## Convert Finance and operations apps packages to the new unified package format
 
