@@ -26,7 +26,9 @@ Use Windows PowerShell instead of PowerShell 7
 
 ### My provisioning fails with an error about missing licences.
 
-When you get the error "You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app.", ensure that you have licenses for the template you're deploying.
+When you get the following error, ensure that you have licenses for the template you're deploying.
+
+"You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app."
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
