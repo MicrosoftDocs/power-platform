@@ -320,7 +320,7 @@ Turning on these flows requires a premium Power Automate license or association 
 
 Power Apps licensed user flows that are triggered from the canvas apps or that use Dataverse "For a select record" trigger in model driven app are automatically considered as being in context of the Power App and are excluded from enforcement. If a premium flow isn't triggered by an app and is not linked to any app created using Power Apps, you must purchase a standalone Power Automate license.
 
-Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics entities in the environment or using First party Dynamics connectors like F&O are automatically considered as being in context of the D365 app in the environment and are excluded from enforcement. If the environment doesn't have Dynamics 365 app installed or if a premium flow isn't using Dynamics entities and is not linked to any D365 app, you must purchase a standalone Power Automate license.
+Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics entities in the environment or using first party Dynamics connectors like finance and operations are automatically considered as being in context of the D365 app in the environment and are excluded from enforcement. If the environment doesn't have Dynamics 365 app installed or if a premium flow isn't using Dynamics entities and is not linked to any D365 app, you must purchase a standalone Power Automate license.
 
 ### How can I easily determine if my flow is in context of a Power Apps/Dynamics 365 app
 
