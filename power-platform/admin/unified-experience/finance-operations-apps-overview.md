@@ -3,8 +3,11 @@ title: "Unified admin experience for finance and operations apps (preview)"
 description: "Overview of unified admin experiences for Dynamics 365 finance and operations apps customers in Power Platform admin center"
 author: laneswenka
 ms.topic: overview
-ms.date: 06/13/2023
+ms.date: 08/25/2023
+ms.subservice: admin
 ms.author: laswenka
+ms.reviewer: sericks
+
 ---
 
 # Unified admin experience for finance and operations apps (preview)
