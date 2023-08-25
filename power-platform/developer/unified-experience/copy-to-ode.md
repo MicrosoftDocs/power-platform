@@ -1,5 +1,5 @@
 ---
-title: "Copy an LCS environment"
+title: "Copy an Lifecycle Services environment"
 description: "Learn how to copy from an LCS managed environment to a Power Platform admin center (PPAC) online development environment (ODE)"
 author: pvillads
 ms.date: 08/21/2023
@@ -11,11 +11,11 @@ ms.author: pvillads
 ms.collection: get-started
 ---
 
-# Copy an LCS environment (preview)
+# Copy a Lifecycle Services environment (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This guide provides step-by-step instructions on performing a copy from a Life Cycle Services (LCS) managed production/sandbox environment to a Power Platform admin center (PPAC) managed online development environment (ODE).
+This guide provides step-by-step instructions on performing a copy from a Lifecycle Services (LCS) managed production/sandbox environment to a Power Platform admin center (PPAC) managed online development environment (ODE).
 
 Unlike the current LCS copy experience, PPAC based copy copies over your databases, any customizations and the ISV solutions. In simple terms, it produces a replica of the source environment that includes both code and data.
 

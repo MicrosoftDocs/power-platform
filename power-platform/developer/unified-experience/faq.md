@@ -12,11 +12,11 @@ ms.author: pvillads
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This FAQ answers common questions about the AI that is used by the generative answers capability in Power Virtual Agents.
+This FAQ answers common questions about regarding the unified developer experience for finance and operations apps.
 
 ## Licensing, capacity and environment Provisioning
 
-### My environment saw showing as preparing in Power Platform admin center (PPAC) but has now disappeared. Why has my environment deployment failed?
+### My environment was showing as preparing in Power Platform admin center, but has now disappeared. Why has my environment deployment failed?
 
 This happens when provisioning fails. Contact support with the environment name and tenant ID.
 
@@ -24,15 +24,19 @@ This happens when provisioning fails. Contact support with the environment name 
 
 Use Windows PowerShell instead of PowerShell 7
 
-### Provisioning fails with the error "You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app."
+### My provisioning fails with an error about missing licences.
 
-Ensure that you have licenses for the template you're deploying.
+When you get the following error, ensure that you have licenses for the template you're deploying.
+
+Error message:
+
+"You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app."
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
-### I can't access SQL server using my SQL Server Management Studio (SSMS) client running in a OneBox environment (such as a VHD or CHE)
+### I can't access SQL server using my SQL Server Management Studio client running in a OneBox environment
 
-We don't currently have a solution for secure connection to a SQL server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) will be developed to provide read-only queries to a database from SSMS. There is also a JIT access that will allow you to access the data after providing authentication.
+We don't currently have a solution for secure connection to a SQL server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) will be developed to provide read-only queries to a database from SSMS. There's also a JIT access that will allow you to access the data after providing authentication.
 
 ### The Configure Metadata option doesn't appear on the menu
 
@@ -44,7 +48,7 @@ Use [7Zip](7-zip.org) to extract the metadata.
 
 ### The message "Please wait for update to complete" pop up keeps appearing
 
-This only happens until the metadata is configured.
+When metadata is configured, this should stop.
 
 ### Cross reference database validation keeps failing
 
@@ -61,25 +65,29 @@ then
 
 `sqllocaldb delete MSSQLLocalDB`
 
-5. Run the new SqlLocalDB.msi (2019) installer. It will create a new MSSQLLocalDB instance.
+5. Run the new SqlLocalDB.msi (2019) installer. It creates a new MSSQLLocalDB instance.
 
-### I get the following error running UnoDev operations `Principal user (Id=<Redacted>, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=<Redacted>(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege`
+### I get the a missing licenses error when running UnoDev operations
 
-This is an issue in the environment. Please reach out to us with environment details. Users running the unodev operation should have correct licenses assigned.
+When you get the following error, contact us with environment details to fix the issue.
+
+Error message:
+
+"Principal user (Id=`<Redacted>`, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=`<Redacted>`(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege"
 
 ## UnoDev operations (apply package, debugging, copy, pipeline setup, package conversion)
 
 ### My Operations fails with error EnvironmentNotInReadyState
 
-This happens when the Finance and Operations environment is not ready to service the request. Please retry after a few minutes. You can check if the environment is in the ready state by opening the Finance and Operations environment link.
+This happens when the Finance and Operations environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the Finance and Operations environment link.
 
 ### My source environment version is <10.0.35. Why can't I copy from it?
 
-UnoDev functionality is available for version 10.0.35 and later. Since during copy we also copy compute, if the source enviornment is earlier than 10.0.35 the target will lose Uno functionality.
+UnoDev functionality is available for version 10.0.35 and later. Since during copy we also copy compute, if the source environment is earlier than 10.0.35 the target loses UnoDev functionality.
 
 ### I provisioned an environment from UI, but am unable to run UnoDev operations
 
-UI does not provision online environments. Only sandbox and production environments are privisioned via UI, and UnoDev operations are not supported on these environments. Please provision OnlineDev environments via command line, and then run UnoDev operations.
+UI doesn't provision online environments. Only sandbox and production environments are provisioned via UI, and UnoDev operations aren't supported on these environments. Provision OnlineDev environments via command line, and then run UnoDev operations.
 
 ### Is package deployment of the unit test code required for executing tests in the cloud runtime?
 
@@ -89,45 +97,41 @@ Yes. Any new tests or modifications must be deployed to the environment for the 
 
 Application Foundation and Test Essentials are required for unit test execution.
 
-### For private preview, how can I set up a pipeline that automates creation and application of a deployable package to a new environment?
+### For preview, how can I set up a pipeline that automates creation and application of a deployable package to a new environment?
 
-Reach out over Yammer or other method to provide your organization name for Microsoft to share a marketplace extension that can be installed and used in creating a new pipeline setup. This will be capable of package creation, ISV license addition, and application of the package.
-This will soon be merged into the current generally available extension, so that no new installation will be needed. For details, see [this reference](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/1740962955264).
+Reach out over Yammer or other method to provide your organization name. Microsoft shares a marketplace extension that can be installed and used in creating a new pipeline setup. It's capable of package creation, ISV license addition, and application of the package.
+This extension will soon be merged into the current generally available extension, so that no new installation will be needed. For details, see [this reference](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/1740962955264).
 
 ### How do I include a license and directly deploy from Visual Studio?
 
 Licenses can be directly included and deployed by placing them in the __License (with _two_ underscores) folder in the model, at the same level as your bin. This will be verified and applied when you deploy the package.
 Additionally, a **Full DB Sync** from the Dynamics365 menu in **Extensions** is required for the applied license to take effect.
 
-### How can I convert a Fully Deployable Package (a legacy package applied to LCS) into the new format to be compatible for deployment to environments?
+### How can I convert a Fully Deployable Package (a Lifecycle Services legacy package) into the new format to be compatible for deployment to environments?
 
 Locate ModelUtil.exe inside the bin and run it from the command line to see usage. Choose the -convertToUnifiedPackage option and provide the package zip and output location as parameters.
 
-### Trace Parser doesn't work on my VS client
+### Trace Parser doesn't work on my Visual Studio client
 
-The trace parser is being updated to support working on ODOP clients. Analyze the trace using trace parser on existing Finance and Operations developer machines.
+The trace parser is being updated to support working on unified clients. Analyze the trace using trace parser on existing Finance and Operations developer machines.
 
 ### Stopping debugging restarts the Runtime
 
-Use **Detatch All** to end debugging.
+Use **Detach All** to end debugging.
 
 ## Checking logs and history
 
-### I applied a package, but it failed. How can I do additional debugging to determite the failure?
+### I applied a package, but it failed. How can I do further debugging to determine the failure?
 
-Details to access logs will be available in the Visual Studio output pane in the case of failures, or if you mark the settings to download logs after every request.
+Details to access logs will be available in the Visual Studio output pane in case of failures, or if you mark the settings to download logs after every request.
 
 ### How can I find out what packages are applied to my environment?
 
 Go to DV environment and check the OperationsHistory table to download the logs.
 
-### My operation failed, and was not able to find sufficient information in the logs. How can I get a correlation id to provide to Support?
+### My operation failed, and wasn't able to find sufficient information in the logs. How can I get a correlation id to provide to Support?
 
-The correlation id is in the output pane. The client machine name (with timestamp) will also be enough for Microsoft to obtain telemetry information.
-
-### How do I check what failed for a given correlation id?
-
-Write a TSG with query for Support to use. Select a PG to contact based on the query result.
+The correlation id is in the output pane. The client machine name with timestamp is also sufficient for Microsoft to obtain telemetry information.
 
 ### See also
 
