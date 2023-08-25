@@ -19,7 +19,7 @@ This FAQ answers common questions about regarding the unified developer experien
 
 ### My environment was showing as preparing in Power Platform admin center, but has now disappeared. Why has my environment deployment failed?
 
-This happens when provisioning fails. Contact support with the environment name and tenant ID.
+This happens when provisioning fails. Contact Microsoft Support with the environment name and tenant ID.
 
 ### I can't provision an environment with PowerShell 7
 
@@ -67,15 +67,15 @@ sqllocaldb delete MSSQLLocalDB
 
 5. Run the new SqlLocalDB.msi (2019) installer. It creates a new MSSQLLocalDB instance.
 
-### I get the a missing licenses error when running UnoDev operations
+### I get the a missing licenses error when running unified developer experience operations
 
-When you get the following error, contact us with environment details to fix the issue.
+When you get the following error, contact Microsoft Support with environment details to fix the issue.
 
 Error message:
 
 "Principal user (Id=`<Redacted>`, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=`<Redacted>`(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege"
 
-## UnoDev operations (apply package, debugging, copy, pipeline setup, package conversion)
+## Unified developer experience operations (apply package, debugging, copy, pipeline setup, package conversion)
 
 ### My Operations fails with error EnvironmentNotInReadyState
 
@@ -83,11 +83,11 @@ This happens when the Finance and Operations environment isn't ready to service 
 
 ### My source environment version is <10.0.35. Why can't I copy from it?
 
-UnoDev functionality is available for version 10.0.35 and later. Since during copy we also copy compute, if the source environment is earlier than 10.0.35 the target loses UnoDev functionality.
+Unified developer experience functionality is available for version 10.0.35 and later. Since during copy we also copy compute, if the source environment is earlier than 10.0.35 the target loses unified developer experience functionality.
 
-### I provisioned an environment from UI, but am unable to run UnoDev operations
+### I provisioned an environment from UI, but am unable to run unified developer experience operations
 
-UI doesn't provision online environments. Only sandbox and production environments are provisioned via UI, and UnoDev operations aren't supported on these environments. Provision OnlineDev environments via command line, and then run UnoDev operations.
+UI doesn't provision online environments. Only sandbox and production environments are provisioned via UI, and unified developer experience operations aren't supported on these environments. Provision OnlineDev environments via command line, and then run unified developer experience operations.
 
 ### Is package deployment of the unit test code required for executing tests in the cloud runtime?
 
