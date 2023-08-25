@@ -1,7 +1,7 @@
 ---
 title: Connecting and authenticating to data sources
 description: Learn how Power Platform connects and authenticates to external data sources.
-ms.date: 02/14/2022
+ms.date: 08/25/2023
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: "admin-security"
@@ -71,7 +71,11 @@ There are two types of data source authentication methods in Power Apps: *explic
 
 We recommend you use explicit authentication whenever possible. It's more secure.
 
-Even in the case of explicit authentication, however, it's important to remember that while an application (e.g., Power Apps, Power Automate, ...) may only present a certain set of fields to an end user, it is the end user's rights on that data source that determine - ultimately - what they can see and edit.  For instance, say you have a SharePoint list that has a "Name" column and a "Salary" column.  Then, you build and app that only exposes the "Name" field.  In the app, they only have access to "Name".  Let us further say that your end user has SharePoint permissions that allow them to see both columns. And also that your end user has maker rights that allow them to see and edit both fields.  Then there is nothing stopping your end user from creating an app then that accesses, for instance, the salary field in a new app.  The permissions you grant via the UI in your app do not negate the back-end data source permissions that the user has.
+Even in the case of explicit authentication, it's important to remember that it’s the user’s rights on a data source that determines what the user can see and edit. 
+
+For example, suppose you have a SharePoint list that includes **Name** and **Salary** columns. You then build an app that exposes only the **Name** column. This means that users have access only to the **Name** column in your app.
+
+However, suppose your users have SharePoint list permissions that allow them to view and edit both the **Name** and **Salary** columns. Now suppose a specific user has Power Apps maker rights to that SharePoint list. In this case, nothing prevents the user from creating a new app that accesses the **Salary** column. The permissions that you grant through the user interface of your app don't deny the data source permissions that the user has.
 
 Learn more about the [difference between explicit and implicit connections](/powerapps/maker/canvas-apps/connections/sql-server-security#difference-between-explicit-and-implicit-connections). Although the article refers to SQL Server, it applies to all relational databases.
 
