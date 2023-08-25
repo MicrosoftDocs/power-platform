@@ -103,7 +103,7 @@ This extension will soon be merged into the current generally available extensio
 Licenses can be directly included and deployed by placing them in the __License (with _two_ underscores) folder in the model, at the same level as your bin. This will be verified and applied when you deploy the package.
 Additionally, a **Full DB Sync** from the Dynamics365 menu in **Extensions** is required for the applied license to take effect.
 
-### How can I convert a Fully Deployable Package (a legacy package applied to LCS) into the new format to be compatible for deployment to environments?
+### How can I convert a Fully Deployable Package (a Lifecycle Services legacy package) into the new format to be compatible for deployment to environments?
 
 Locate ModelUtil.exe inside the bin and run it from the command line to see usage. Choose the -convertToUnifiedPackage option and provide the package zip and output location as parameters.
 
