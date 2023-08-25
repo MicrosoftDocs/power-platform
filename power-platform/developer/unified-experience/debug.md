@@ -3,12 +3,10 @@ title: "Write, deploy, and debug X++ code"
 description: "Learn how to write a simple X++ class, deploy it, and then debug it in the unified developer experience."
 author: pvillads
 ms.date: 08/21/2023
-ms.topic: article
-audience: Developer, IT Pro
+ms.topic: how-to
 ms.reviewer: phecke
-ms.search.region: Global
 ms.author: pvillads
-ms.collection: get-started
+ms.subservice: developer
 ---
 
 # Write, deploy, and debug X++ code (preview)

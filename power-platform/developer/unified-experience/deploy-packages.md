@@ -4,11 +4,9 @@ description: "Learn how to deploy packages from unified developer experience env
 author: pvillads
 ms.date: 08/01/2023
 ms.topic: article
-audience: Developer, IT Pro
 ms.reviewer: jdaly
-ms.search.region: Global
 ms.author: pvillads
-ms.collection: get-started
+ms.subservice: developer
 ---
 
 # Deploy packages using Azure DevOps (preview)
