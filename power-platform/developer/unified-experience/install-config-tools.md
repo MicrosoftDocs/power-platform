@@ -17,7 +17,7 @@ This article describes how to install and configure required Visual Studio and f
 As a prerequisite, you will need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
 
 > [!IMPORTANT]
-> The user account you will be using for development in the sandbox environment must be assigned either the System Administrator or System Customizer role.
+> The user account you will be using for development in the sandbox environment must be assigned the System Administrator role.
 
 ## Install the Power Platform extension for Visual Studio
 
@@ -79,13 +79,15 @@ To configure the extension, follow these instructions.
 
 | Form field | Description |
 |---|---|
-|Folder for your metadata| Folder where your own code is (or will be).|
-|Configuration file location| Folder (and file name) that will store the configuration you are creating now. It can be anywhere on your drive.|
-|Cross reference database server| Should be set to "(localdb)\." if you are using LocalDB, or "localhost" if you are using Microsoft SQL Server.|
-|Reference metadata folder| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).|
+|Name| Name of the configuration you are creating now.|
+|Description| Description of the configuration you are creating now.|
+|Cross reference database server| Could be set to "(localdb)\." if you are using LocalDB, or "localhost" if you are using Microsoft SQL Server.|
+|Cross reference database name| The name for the Cross reference database. The VS extension will create one if it does not exist.|
+|Folder for your own custom metadata| Folder where your own code is (or will be).|
+|Folders for reference metadata| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).|
 
 If after filling in all the fields the **Save** button is still grayed out, you will see error messages with a red border in tooltips on the offending fields.
-Ensure that you entered the correct string value (e.g., "(localdb)\." if you are using LocalDB). Also, if you are using LocalDB, you may need to issue the following command from a Command prompt: `sqllocaldb create MSSQLLocalDB -s`.
+Ensure that you entered the correct string value (e.g., "(localdb)\." if you are using LocalDB). Also, if you are using LocalDB, you may need to issue the following command from a Command prompt: `sqllocaldb create MSSQLLocalDB -s`. Refer https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb .
 
 You will also get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
 
