@@ -71,6 +71,8 @@ There are two types of data source authentication methods in Power Apps: *explic
 
 We recommend you use explicit authentication whenever possible. It's more secure.
 
+Even in the case of explicit authentication, however, it's important to remember that while an application (e.g., Power Apps, Power Automate, ...) may only present a certain set of fields to an end user, it is the end user's rights on that data source that determine - ultimately - what they can see and edit.  For instance, say you have a SharePoint list that has a "Name" column and a "Salary" column.  Then, you build and app that only exposes the "Name" field.  In the app, they only have access to "Name".  Let us further say that your end user has SharePoint permissions that allow them to see both columns. And also that your end user has maker rights that allow them to see and edit both fields.  Then there is nothing stopping your end user from creating an app then that accesses, for instance, the salary field in a new app.  The permissions you grant via the UI in your app do not negate the back-end data source permissions that the user has.
+
 Learn more about the [difference between explicit and implicit connections](/powerapps/maker/canvas-apps/connections/sql-server-security#difference-between-explicit-and-implicit-connections). Although the article refers to SQL Server, it applies to all relational databases.
 
 ### Related articles
