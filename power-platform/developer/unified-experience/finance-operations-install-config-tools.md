@@ -109,6 +109,6 @@ Start writing code, deploy, and debug.
 
 ### See also
 
-[Unified developer experience overview (preview)](finance-operationsdev-overview.md)
+[Unified developer experience for finance and operations apps (preview)](finance-operations-dev-overview.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]

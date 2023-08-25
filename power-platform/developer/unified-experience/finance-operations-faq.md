@@ -135,4 +135,4 @@ The correlation id is in the output pane. The client machine name with timestamp
 
 ### See also
 
-[Unified developer experience overview (preview)](finance-operations-dev-overview.md)
+[Unified developer experience for finance and operations apps (preview)](finance-operations-dev-overview.md)

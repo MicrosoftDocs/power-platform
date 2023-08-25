@@ -23,7 +23,7 @@ Get the latest shared marketplace extension for Dynamics 365 Finance and Operati
 
 To get the latest shared marketplace extension:
 
-1. TODO: Describe where this starts. Is it in PPAC?
+1. TODO: Describe where this starts. Is it in Power Platform admin center?
 1. Locate and install **Dynamics 365 Finance and Operations Tools** shared extension under **Organization Settings** > **Extensions**. (preview version)
 1. Add a **Create Deployable Package** task in your build pipeline and ensure it contains task version 1.\*. 
 1. Ensure **Add Licenses to Deployable Package** has task version 1.\*.  
@@ -61,7 +61,7 @@ To generate a **Power Platform Unified** package:
 1. Check the box for **Create Power Platform Unified Package**.
 1. Add the **Platform** and **Application** version used to build the solution.
 1. Provide the path for deployable package location.
-1. Optionally choose to generate separate LCS format package.
+1. Optionally choose to generate separate Microsoft Dynamics 365 Lifecycle Services format package.
 
    :::image type="content" source="../media/unified-experience/create-deployable-package.png" alt-text="Shows Azure DevOps Pipelines with create deployable package agent job selected.":::
 
