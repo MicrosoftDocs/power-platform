@@ -28,6 +28,7 @@ Use Windows PowerShell instead of PowerShell 7
 
 When you get the following error, ensure that you have licenses for the template you're deploying.
 
+Error:
 "You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app."
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
@@ -69,6 +70,7 @@ then
 
 When you get the following error, contact us with environment details to fix the issue.
 
+Error:
 "Principal user (Id=`<Redacted>`, type=8, rollCount=2, privilegeCount=<>, accessMode=1, MetadataCachePrivilegesCount=7371, businessUnitId=`<Redacted>`(Setup/Stub unlicensed user with filtered privileges from associated roles. Consider assigning license.)), is missing prvCreatemsprov_fnopackage privilege"
 
 ## UnoDev operations (apply package, debugging, copy, pipeline setup, package conversion)
