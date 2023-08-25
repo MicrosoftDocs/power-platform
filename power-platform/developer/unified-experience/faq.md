@@ -44,7 +44,7 @@ When this happens, open the Infolog and the menu should appear.
 
 ### PackagesLocalDirectory extraction doesn't complete
 
-Use [7Zip](7-zip.org) to extract the metadata.
+Use [7Zip](https://www.7-zip.org/download.html) to extract the metadata.
 
 ### The message "Please wait for update to complete" pop up keeps appearing
 
