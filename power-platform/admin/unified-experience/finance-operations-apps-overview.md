@@ -15,7 +15,7 @@ Users of Dynamics 365 finance and operations apps can now administer their envir
 
 As part of the unification of admin experiences of finance and operations apps within Power Platform, the environment for finance and operations apps is now considered as an application within Power Platform. This means that multiple Dynamics 365 applications (such as Sales, Marketing, finance and operations) and apps, flows, and websites in Power Platform can be installed and hosted on the same Power Platform environment [with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database) providing a consistent and single set of lifecycle operations that an admin can perform across all of these artifacts.
 
-:::image type="content" source="media/one-admin-journey.png" alt-text="Unified admin experience for Dynamics 365 finance and operations apps":::
+:::image type="content" source="media/one-admin-journey.png" width="200px" alt-text="Unified admin experience for Dynamics 365 finance and operations apps":::
 
 > [!IMPORTANT]
 >
@@ -83,9 +83,9 @@ When it comes to environment lifecycle operations, there are some terminology an
 
 The following list of continually updated scenario tutorials provides a walkthrough for administrators in these new experiences.
 
-- [Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md)
-- Add a developer user to an environment and connect to it with Visual Studio
-- Set up a continuous integration and continuous deployment (CI/CD) build and release pipeline
+- [Provision a new environment with an ERP-based template (preview)](./tutorial-deploy-new-environment-with-ERP-template.md)
+- [Tutorial: Copy a Lifecycle Services environment to a unified environment (preview)](./tutorial-copy-lifecycle-services-environment-unified-environment.md)
+- [Unified admin trials (preview)](admin-trials.md)
 - [Manage storage and capacity](../finance-operations-storage-capacity.md)
 
 ### Related articles
