@@ -21,7 +21,7 @@ Consider a typical scenario where a developer would create a simple app for capt
 
 ## Finance and operations development
 
-Development with FnO is accomplished in Visual Studio using the Visual studio add-in<!--link?-->. This development environment provides everything a professional developer would expect. The unified environment runs in the cloud, and because of that we have made several changes and improvements to the way a developer works with FnO. However, existing FnO developers will find that the large majority of their workflows will not be different from what they are used to. The article [Write, deploy, and debug X++ code (preview)](debug.md) walks you through how to build X++ code, deploy it to the cloud, execute and debug it there. All other content that you are likely to find about FnO development, like how to extend existing code, is likely to still hold true.
+Development with FnO is accomplished in Visual Studio using the Visual studio add-in<!--link?-->. This development environment provides everything a professional developer would expect. The unified environment runs in the cloud, and because of that we have made several changes and improvements to the way a developer works with FnO. However, existing FnO developers will find that the large majority of their workflows will not be different from what they are used to. The article [Write, deploy, and debug X++ code (preview)](finance-operations-debug.md) walks you through how to build X++ code, deploy it to the cloud, execute and debug it there. All other content that you are likely to find about FnO development, like how to extend existing code, is likely to still hold true.
 
 ## Power Platform
 
@@ -46,13 +46,13 @@ More information: [Virtual Tables](/power-apps/developer/data-platform/virtual-e
 Set up Visual Studio on your local development computer.
 
 > [!div class="nextstepaction"]
-> [Install and configure development tools](install-config-tools.md)
+> [Install and configure development tools](finance-operations-install-config-tools.md)
 
 ### See also
 
-[Install and configure development tools (preview)](install-config-tools.md)
-[Write, deploy, and debug X++ code (preview)](debug.md)  
-[Frequently asked questions (preview)](faq.md)
+[Install and configure development tools (preview)](finance-operations-install-config-tools.md)
+[Write, deploy, and debug X++ code (preview)](finance-operations-debug.md)  
+[Frequently asked questions (preview)](finance-operations-faq.md)
 
 [Unified admin experience for finance and operations apps (preview)](../../admin/unified-experience/finance-operations-apps-overview.md)  
 [Tutorial: Provision a new environment with an ERP-based template (preview)](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md#tutorial-provision-a-new-environment-with-an-erp-based-template-preview)

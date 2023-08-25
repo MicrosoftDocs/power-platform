@@ -25,7 +25,7 @@ This article we will show you how to:
 
 Let's begin by developing a runnable X++ class to use as an example. The classes only task is to log a message into the infolog<!--what is this?-->. The important thing here is not what the runnable class does, rather it is how we compile, run, and debug it. If you want to learn about the X++ language, see the [programming reference](/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference).
 
-As a prerequisite, you will need to have completed setting up your local Visual Studio developer environment. More information: [Install and configure development tools (preview)](install-config-tools.md)
+As a prerequisite, you will need to have completed setting up your local Visual Studio developer environment. More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
 
 ## Create a model
 
@@ -119,7 +119,7 @@ We started with using Visual Studio to create a simple runnable class. After the
 
 ### See also
 
-[Deploy packages](deploy-packages.md)  
+[Deploy packages](finance-operations-deploy-packages.md)  
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](/power-platform/admin/manage-apps)
 

@@ -105,10 +105,10 @@ Congratulations! You’re now ready to build, deploy, debug, and test your X++ m
 Start writing code, deploy, and debug.
 
 > [!div class="nextstepaction"]
-> [Write, deploy, and debug X++ code](debug.md)
+> [Write, deploy, and debug X++ code](finance-operations-debug.md)
 
 ### See also
 
-[Unified developer experience overview (preview)](overview.md)
+[Unified developer experience overview (preview)](finance-operations-overview.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
