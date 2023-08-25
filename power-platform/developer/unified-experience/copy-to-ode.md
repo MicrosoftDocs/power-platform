@@ -3,12 +3,10 @@ title: "Copy a Lifecycle Services environment"
 description: "Learn how to copy from an LCS managed environment to a Power Platform admin center (PPAC) online development environment (ODE)"
 author: pvillads
 ms.date: 08/21/2023
-ms.topic: article
-audience: Developer, IT Pro
+ms.topic: how-to
 ms.reviewer: phecke
-ms.search.region: Global
 ms.author: pvillads
-ms.collection: get-started
+ms.subservice: developer
 ---
 
 # Copy a Lifecycle Services environment (preview)
