@@ -44,7 +44,11 @@ After installing the Power Platform Tools extension and connecting to the online
 :::image type="content" source="../media/devexp-fno-download.png" alt-text="Extension and metadata download dialog.":::
 
 > [!IMPORTANT]
-> The dialog to download the finance and operations extension is only displayed when you have connected to a properly configured online developer-focused sandbox environment.
+> The dialog to download the finance and operations extension is only displayed when
+>
+> the setting in Visual Studio > Tools> Options> Power Platform Tools > 'Download Assets for Dynamics 365 Finance if using Unified environments' is checked.
+>
+> the online environment connected to is an unified developer-focused sandbox environment.
 >
 > You need at least 5 GB of free space on the local system drive to download the extension and metadata.
 
@@ -60,7 +64,7 @@ Two files were downloaded:
 - Finance and operations extension is downloaded as Microsoft.Dynamics.Framework.Tools.Installer.vsix
 - System metadata was downloaded as PackagesLocalDirectory.zip.
 
-Unpack the PackagesLocalDirectory.zip file as PackagesLocalDirectory.
+Unpack the PackagesLocalDirectory.zip file as PackagesLocalDirectory. We recommend using 7zip to speed up extraction (https://www.7-zip.org/download.html).
 
 ### Install the finance and operations extension
 
