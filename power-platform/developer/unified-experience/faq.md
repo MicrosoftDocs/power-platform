@@ -24,7 +24,7 @@ This happens when provisioning fails. Contact support with the environment name 
 
 Use Windows PowerShell instead of PowerShell 7
 
-### My provisioning fails with an error about missing licences.
+### My provisioning fails with an error about missing licenses
 
 When you get the following error, ensure that you have licenses for the template you're deploying.
 
@@ -44,7 +44,7 @@ When this happens, open the Infolog and the menu should appear.
 
 ### PackagesLocalDirectory extraction doesn't complete
 
-Use [7Zip](7-zip.org) to extract the metadata.
+Use [7Zip](https://www.7-zip.org/download.html) to extract the metadata.
 
 ### The message "Please wait for update to complete" pop up keeps appearing
 
