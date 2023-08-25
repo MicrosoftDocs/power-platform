@@ -29,8 +29,7 @@ After you have installed the Power Platform Tools extension for Visual Studio, f
 
 1. Launch Visual Studio if not already running.
 1. In the **Tools** menu, select **Connect to Dataverse**.
-1. Select the desired options in the dialog and select **Login**.
-
+1. Select the desired options in the dialog and select **Login**.  
     Choose not to use the signed in user (in case you need to use another account with a VS license) and type in the credentials as necessary to match your development user account.
 1. When presented with a dialog to select a solution, select an available solution and then choose **Done**.
 1. You will be presented with a list of Dataverse organizations (databases deployed). Find the sandbox environment created for online development and connect to it.
@@ -44,11 +43,7 @@ After installing the Power Platform Tools extension and connecting to the online
 :::image type="content" source="../media/devexp-fno-download.png" alt-text="Extension and metadata download dialog.":::
 
 > [!IMPORTANT]
-> The dialog to download the finance and operations extension is only displayed when
->
-> the setting in Visual Studio > Tools> Options> Power Platform Tools > 'Download Assets for Dynamics 365 Finance if using Unified environments' is checked.
->
-> the online environment connected to is an unified developer-focused sandbox environment.
+> The dialog to download the finance and operations extension is only displayed when the Visual Studio setting **Tools** > **Options** > **Power Platform Tools** > **Download Assets for Dynamics 365 Finance if using unified environments** is checked.
 >
 > You need at least 5 GB of free space on the local system drive to download the extension and metadata.
 
@@ -64,7 +59,7 @@ Two files were downloaded:
 - Finance and operations extension is downloaded as Microsoft.Dynamics.Framework.Tools.Installer.vsix
 - System metadata was downloaded as PackagesLocalDirectory.zip.
 
-Unpack the PackagesLocalDirectory.zip file as PackagesLocalDirectory. We recommend using 7zip to speed up extraction (https://www.7-zip.org/download.html).
+Unpack the PackagesLocalDirectory.zip file as PackagesLocalDirectory. We recommend using the [7zip](https://www.7-zip.org/download.html) utility to speed up extraction.
 
 ### Install the finance and operations extension
 
