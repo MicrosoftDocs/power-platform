@@ -16,7 +16,7 @@ This FAQ answers common questions about regarding the unified developer experien
 
 ## Licensing, capacity and environment Provisioning
 
-### My environment saw showing as preparing in Power Platform admin center, but has now disappeared. Why has my environment deployment failed?
+### My environment was showing as preparing in Power Platform admin center, but has now disappeared. Why has my environment deployment failed?
 
 This happens when provisioning fails. Contact support with the environment name and tenant ID.
 
