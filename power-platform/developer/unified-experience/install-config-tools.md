@@ -88,7 +88,7 @@ To configure the extension, follow these instructions.
 |Folders for reference metadata| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).|
 
 If after filling in all the fields the **Save** button is still grayed out, you will see error messages with a red border in tooltips on the offending fields.
-Ensure that you entered the correct string value (e.g., "(localdb)\." if you are using LocalDB). Also, if you are using LocalDB, you may need to issue the following command from a Command prompt: `sqllocaldb create MSSQLLocalDB -s`. Refer https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb .
+Ensure that you entered the correct string value (e.g., "(localdb)\." if you are using LocalDB). Also, if you are using LocalDB, you may need to issue the following command from a Command prompt: `sqllocaldb create MSSQLLocalDB -s`. More information: [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
 
 You will also get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
 
