@@ -3,12 +3,10 @@ title: "Copy a Lifecycle Services environment"
 description: "Learn how to copy from an LCS managed environment to a Power Platform admin center (PPAC) online development environment (ODE)"
 author: pvillads
 ms.date: 08/21/2023
-ms.topic: article
-audience: Developer, IT Pro
+ms.topic: how-to
 ms.reviewer: phecke
-ms.search.region: Global
 ms.author: pvillads
-ms.collection: get-started
+ms.subservice: developer
 ---
 
 # Copy a Lifecycle Services environment (preview)
@@ -34,7 +32,7 @@ Unlike the current LCS copy experience, PPAC based copy copies over your databas
 
 ### Step 1: Connect finance and operations apps with a new Microsoft Dataverse instance
 
-For instructions on performing this step, use [Connect finance and operations apps with a new Microsoft Dataverse instance](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv).
+For instructions on performing this step, use [Connect finance and operations apps with a new Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv).
 
 ### Step 2: Install/update the latest Dynamics 365 Finance and Operations Platform Tools app
 

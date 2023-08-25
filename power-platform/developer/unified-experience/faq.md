@@ -6,6 +6,7 @@ ms.date: 08/22/2023
 ms.topic: article
 ms.reviewer: pehecke
 ms.author: pvillads
+ms.subservice: developer
 ---
 
 # Frequently asked questions (preview)
@@ -59,11 +60,10 @@ Ensure that your Windows user has access to the specified SQL server or LocalDB.
 1. Select "LocalDB" and **Download**
 1. Before running the SqlLocalDB.msi installer, delete your current MSSQLLocalDB instance:
 
-`sqllocaldb stop MSSQLLocalDB`
-
-then
-
-`sqllocaldb delete MSSQLLocalDB`
+```
+sqllocaldb stop MSSQLLocalDB
+sqllocaldb delete MSSQLLocalDB
+```
 
 5. Run the new SqlLocalDB.msi (2019) installer. It creates a new MSSQLLocalDB instance.
 
