@@ -42,6 +42,10 @@ You also must have at least 1 gigabyte of available Operations and Dataverse dat
 
 ### Create from the admin center
 
+> [!Note]
+> During public preview, this will initially not be visible in Power Platform admin center.  Instead you may provision these new environments using PowerShell on the related tab on this page.  However this will eventually be visible when non-developer Sandboxes are supported for Finance and operations apps.
+
+
 Inside of the Power Platform admin center, visit the Environments tab.  From there, click on the **New** button and a slider window will load on the right hand side of the screen.
 
 :::image type="content" source="media/tutorial-new-environment1.png" alt-text="Click the New button to create a new enviroment.":::
@@ -68,13 +72,31 @@ Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 $TenantId = "YOUR_TENANT_GUID_FROM_AAD"
 $SPNId = "YOUR_AZURE_APPLICATION_REGISTRATION_CLIENT_ID"
 $ClientSecret = "YOUR_AZURE_APPLICATION_CLIENT_SECRET"
-$capacityDetailsList = @()
 
 Write-Host "Creating a session against the Power Platform API"
 
 Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret $ClientSecret
+
+#To construct the json object to pass in
+$jsonObject= @" 
+{ 
+ "PostProvisioningPackages": 
+ [ 
+ { 
+ "applicationUniqueName": "msdyn_FinanceAndOperationsProvisioningAppAnchor", 
+"parameters": "DevToolsEnabled=true|DemoDataEnabled=true" 
+ } 
+ ] 
+} 
+"@ | ConvertFrom-Json
+
+# To kick off new environment deployment
+# IMPORTANT - This has to be a single line, after the copy & paste the command
+New-AdminPowerAppEnvironment -DisplayName “UnoEnvName1” -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
 ```
 ---
+
+In the above example, we used the Finance environment template.  Similar options are available to you for other Finance and operations apps such as D365_FinOps_SCM and D365_FinOps_ProjOps.
 
 ## Delete the environment
 In this step, we will clean up the environment we previously created.  This is also commonly done by admins who wish to reclaim capacity for other purposes.
@@ -94,8 +116,8 @@ Confirm that you wish to delete the environment and proceed.  This will start th
 Use the below script to delete the previously created enviornment.  Note to change the environmentID to one that matches your environment.
 
 ```powershell
-#fetch environment list with capacity populated.  This is only possible when calling full environment list
-$environmentsList = Get-AdminPowerAppEnvironment -Capacity
+#Remove the previously created environment by ID
+Remove-AdminPowerAppEnvironment -EnvironmentName [Guid]
 ```
 ---
 
