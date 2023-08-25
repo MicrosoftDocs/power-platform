@@ -21,7 +21,8 @@ Customer trust and transparency are important to us. You can now view existing p
 > [!Important]
 > The ability to view known issues is currently in preview and is only available for limited features within Power Automate and Power Apps products.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)
+> The ability to view known issues is currently in preview and is only available for limited features within Power Automate and Power Apps products.]
 
 ## View known issues  
   
