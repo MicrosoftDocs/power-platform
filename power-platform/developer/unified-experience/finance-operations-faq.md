@@ -3,7 +3,7 @@ title: "Frequently asked questions (preview)"
 description: FAQs for the Power Platform unified developer experience.
 author: pvillads
 ms.date: 08/22/2023
-ms.topic: article
+ms.topic: faq
 ms.reviewer: pehecke
 ms.author: pvillads
 ms.subservice: developer
@@ -13,9 +13,9 @@ ms.subservice: developer
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This FAQ answers common questions about regarding the unified developer experience for finance and operations apps.
+This FAQ answers common questions regarding the unified developer experience for finance and operations apps.
 
-## Licensing, capacity and environment Provisioning
+## Licensing, capacity, and environment provisioning
 
 ### My environment was showing as preparing in Power Platform admin center, but has now disappeared. Why has my environment deployment failed?
 
@@ -35,9 +35,9 @@ Error message:
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
-### I can't access SQL server using my SQL Server Management Studio client running in a OneBox environment
+### I can't access SQL Server using my SQL Server Management Studio client running in a OneBox environment
 
-We don't currently have a solution for secure connection to a SQL server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) will be developed to provide read-only queries to a database from SSMS. There's also a JIT access that will allow you to access the data after providing authentication.
+We don't currently have a solution for secure connection to SQL Server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) will be developed to provide read-only queries to a database from SQL Server Management Studio. There's also a JIT access that will allow you to access the data after providing authentication.
 
 ### The Configure Metadata option doesn't appear on the menu
 
@@ -53,14 +53,14 @@ When metadata is configured, this should stop.
 
 ### Cross reference database validation keeps failing
 
-Ensure that your Windows user has access to the specified SQL server or LocalDB. The following instructions describe a local DB setup.
+Ensure that your Windows user has access to the specified SQL Server or LocalDB. The following instructions describe a local DB setup.
 
 1. Download the LocalDB 2019 installer by using the [SQL Server Express installer](https://go.microsoft.com/fwlink/?linkid=866658).
 1. Run the installer and select "Download Media"
 1. Select "LocalDB" and **Download**
 1. Before running the SqlLocalDB.msi installer, delete your current MSSQLLocalDB instance:
 
-```
+```powershell
 sqllocaldb stop MSSQLLocalDB
 sqllocaldb delete MSSQLLocalDB
 ```
@@ -79,7 +79,7 @@ Error message:
 
 ### My Operations fails with error EnvironmentNotInReadyState
 
-This happens when the Finance and Operations environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the Finance and Operations environment link.
+This happens when the the unified developer environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the finance and operations environment link.
 
 ### My source environment version is <10.0.35. Why can't I copy from it?
 
@@ -87,7 +87,7 @@ Unified developer experience functionality is available for version 10.0.35 and 
 
 ### I provisioned an environment from UI, but am unable to run unified developer experience operations
 
-UI doesn't provision online environments. Only sandbox and production environments are provisioned via UI, and unified developer experience operations aren't supported on these environments. Provision OnlineDev environments via command line, and then run unified developer experience operations.
+The UI doesn't provision online environments. Only sandbox and production environments are provisioned via the UI, and unified developer experience operations aren't supported on these environments. Provision OnlineDev environments via the command line, and then run unified developer experience operations.
 
 ### Is package deployment of the unit test code required for executing tests in the cloud runtime?
 
@@ -97,25 +97,26 @@ Yes. Any new tests or modifications must be deployed to the environment for the 
 
 Application Foundation and Test Essentials are required for unit test execution.
 
-### For preview, how can I set up a pipeline that automates creation and application of a deployable package to a new environment?
+### For the preview release, how can I set up a pipeline that automates creation and application of a deployable package to a new environment?
 
 Reach out over Yammer or other method to provide your organization name. Microsoft shares a marketplace extension that can be installed and used in creating a new pipeline setup. It's capable of package creation, ISV license addition, and application of the package.
-This extension will soon be merged into the current generally available extension, so that no new installation will be needed. For details, see [this reference](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/1740962955264).
+This extension will soon be merged into the current generally available extension, so that no new installation will be needed. For details, see this [Yammer](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/1740962955264) reference.
 
 ### How do I include a license and directly deploy from Visual Studio?
 
-Licenses can be directly included and deployed by placing them in the __License (with _two_ underscores) folder in the model, at the same level as your bin. This will be verified and applied when you deploy the package.
-Additionally, a **Full DB Sync** from the Dynamics365 menu in **Extensions** is required for the applied license to take effect.
+Licenses can be directly included and deployed by placing them in the __License (with _two_ underscores) folder in the model, at the same level as your bin folder. This will be verified and applied when you deploy the package.
 
-### How can I convert a Fully Deployable Package (a Lifecycle Services legacy package) into the new format to be compatible for deployment to environments?
+Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is required for the applied license to take effect.
 
-Locate ModelUtil.exe inside the bin and run it from the command line to see usage. Choose the -convertToUnifiedPackage option and provide the package zip and output location as parameters.
+### How can I convert a Fully deployable package (Lifecycle Services legacy package) into the new format to be compatible for deployment to environments?
 
-### Trace Parser doesn't work on my Visual Studio client
+Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. Choose the `-convertToUnifiedPackage` option and provide the package zip and output location as parameters.
 
-The trace parser is being updated to support working on unified clients. Analyze the trace using trace parser on existing Finance and Operations developer machines.
+### Trace parser doesn't work on my Visual Studio client
 
-### Stopping debugging restarts the Runtime
+The trace parser is being updated to support working on unified clients. Analyze the trace using trace parser on existing finance and operations developer machines.
+
+### Stopping debugging restarts the runtime
 
 Use **Detach All** to end debugging.
 
@@ -127,9 +128,9 @@ Details to access logs will be available in the Visual Studio output pane in cas
 
 ### How can I find out what packages are applied to my environment?
 
-Go to DV environment and check the OperationsHistory table to download the logs.
+Go to the Dataverse environment and check the OperationsHistory table to download the logs.
 
-### My operation failed, and wasn't able to find sufficient information in the logs. How can I get a correlation id to provide to Support?
+### My operation failed, and wasn't able to find sufficient information in the logs. How can I get a correlation id to provide to Microsoft Support?
 
 The correlation id is in the output pane. The client machine name with timestamp is also sufficient for Microsoft to obtain telemetry information.
 

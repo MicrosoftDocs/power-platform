@@ -3,7 +3,7 @@ title: "Unified developer experience for finance and operations apps (preview)"
 description: Learn about developing code for Dynamics 365 finance and operations apps using the new Power Platform unified developer experience.
 author: pvillads
 ms.date: 08/22/2023
-ms.topic: article
+ms.topic: overview
 ms.reviewer: pehecke
 ms.author: pvillads
 ms.subservice: developer
