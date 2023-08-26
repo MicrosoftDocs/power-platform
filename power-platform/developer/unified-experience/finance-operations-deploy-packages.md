@@ -1,6 +1,6 @@
 ---
 title: "Deploy packages"
-description: "Learn how to deploy packages from unified developer experience environments using Azure DevOps pipelines."
+description: "Learn how to deploy packages from unified developer experience environments using Azure Pipelines."
 author: pvillads
 ms.date: 08/01/2023
 ms.topic: article
@@ -9,13 +9,13 @@ ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Deploy packages using Azure DevOps (preview)
+# Deploy packages using Azure Pipelines (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This article explains how to deploy packages to Microsoft Power Platform unified developer experience environments using Azure DevOps pipelines.
+This article explains how to deploy packages to Microsoft Power Platform unified developer experience environments using Azure Pipelines.
 
-You will need to complete the documented steps of this article in the order presented (top to bottom).
+You need to complete the documented steps of this article in the order presented (top to bottom).
 
 ## Get the latest shared marketplace extension
 
@@ -23,7 +23,7 @@ Get the latest shared marketplace extension for Dynamics 365 Finance and Operati
 
 To get the latest shared marketplace extension:
 
-1. TODO: Describe where this starts. Is it in Power Platform admin center?
+1. TODO: Describe where this menu starts. Is it in Power Platform admin center?
 1. Locate and install **Dynamics 365 Finance and Operations Tools** shared extension under **Organization Settings** > **Extensions**. (preview version)
 1. Add a **Create Deployable Package** task in your build pipeline and ensure it contains task version 1.\*. 
 1. Ensure **Add Licenses to Deployable Package** has task version 1.\*.  
@@ -35,25 +35,25 @@ To get the latest shared marketplace extension:
 
 Locate and install the **Power Platform Build Tools** extension from **Organization Settings** > **Extensions** > **Browse Marketplace**.
 
-## Upload Nuget packages to the artifact feed in the project
+## Upload NuGet packages to the artifact feed in the project
 
-Get the relevant Nuget packages with the right version to build against for the unified developer experience environments and upload to artifact feed in the project.
+Get the relevant NuGet packages with the right version to build against for the unified developer experience environments and upload to artifact feed in the project.
 
-Download the X++ Nuget packages with the required version and add them to your artifact feed. Reference: [Build automation that uses Microsoft-hosted agents and Azure Pipelines](/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation)
+Download the X++ NuGet packages with the required version and add them to your artifact feed. Reference: [Build automation that uses Microsoft-hosted agents and Azure Pipelines](/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation)
 
 ## Upload the metadata and solution
 
 Upload the metadata and solution to the repository for the relevant model.
 
-TODO: Does this need instructions? Or a link to other content?
+TODO: Does this need instruction? Or a link to other content?
 
 ## Create build pipeline
 
 You need to create a build pipeline to generate the package in the Power Platform Unified package format
 
-The process of building the solution remains same as referenced or based on preexisting build pipelines.
+The process of building the solution remains same as referenced or based on pre-existing build pipelines.
 
-:::image type="content" source="../media/unified-experience/create-build-pipeline.png" alt-text="Shows Azure DevOps Pipelines with build solution agent job selected.":::
+:::image type="content" source="../media/unified-experience/create-build-pipeline.png" alt-text="Shows Azure Pipelines with build solution agent job selected.":::
 
 To generate a **Power Platform Unified** package:
 
@@ -63,20 +63,20 @@ To generate a **Power Platform Unified** package:
 1. Provide the path for deployable package location.
 1. Optionally choose to generate separate Microsoft Dynamics 365 Lifecycle Services format package.
 
-   :::image type="content" source="../media/unified-experience/create-deployable-package.png" alt-text="Shows Azure DevOps Pipelines with create deployable package agent job selected.":::
+   :::image type="content" source="../media/unified-experience/create-deployable-package.png" alt-text="Shows Azure Pipelines with create deployable package agent job selected.":::
 
 When licensing is required:
 
-1. Add task version 1.\* for License addition and choose **Power Platform Unified Package** from the drop down.
+1. Add task version 1.\* for License addition and choose **Power Platform Unified Package** from the drop down menu.
 1. Provide the **Model** name for which to include license.
-1. Add 1 task for each model that license is needed.
+1. Add one task for each model that license is needed.
 1. Modify the path to the deployable package created in previous task.
 
-   :::image type="content" source="../media/unified-experience/add-licenses-to-deployable-package.png" alt-text="Shows Azure DevOps Pipelines with add licenses to deployable package agent job selected.":::
+   :::image type="content" source="../media/unified-experience/add-licenses-to-deployable-package.png" alt-text="Shows Azure Pipelines with add licenses to deployable package agent job selected.":::
 
 Once the pipeline is built, locate the published artifacts in the drop.
 
-   :::image type="content" source="../media/unified-experience/locate-published-artifacts.png" alt-text="Shows Azure DevOps Pipeline highlighting the Related area showing the artifacts.":::
+   :::image type="content" source="../media/unified-experience/locate-published-artifacts.png" alt-text="Shows Azure Pipeline highlighting the Related area showing the artifacts.":::
 
 ## Link the built artifact
 
