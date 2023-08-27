@@ -21,7 +21,7 @@ Customer trust and transparency are important to us. You can now view existing p
 > [!Important]
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - The ability to view known issues is only available for limited features within Power Automate and Power Apps products.
+> - The ability to view known issues is only available for limited features within Power Automate and Power Apps products for users in US region.
 
 ## View known issues  
   
