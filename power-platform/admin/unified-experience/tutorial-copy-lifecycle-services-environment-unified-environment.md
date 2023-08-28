@@ -44,13 +44,13 @@ Before the source environment can be copied, several steps must be performed to 
 1. In the Power Platform admin center select **Environments**.
 2. Select the source environment from which you want to start the copy. From the **Resources** menu, select **Dynamics 365 apps**.
 
-:::image type="content" source="media/copy-to-ode-view-apps.png" alt-text="Viewing Dynamics 365 apps from the environment resources menu.":::
+:::image type="content" source="media/copy-to-ode-view-apps2.png" alt-text="Viewing Dynamics 365 apps from the environment resources menu.":::
 
 You should see **Dynamics 365 Finance and Operations Platform Tools** in the list of available apps.
 
 If you see **Update Available** in the **Status** for Dynamics 365 Finance and Operations Platform Tools, select the link, agree to the terms, and select **Update**.
 
-:::image type="content" source="media/copy-to-ode-platform-tools.png" alt-text="Dynamics 365 Finance and Operations platform tools showing an Update available status.":::
+:::image type="content" source="media/copy-to-ode-platform-tools2.png" alt-text="Dynamics 365 Finance and Operations platform tools showing an Update available status.":::
 
 If Dynamics 365 Finance and Operations Platform Tools is not listed, select **Install App** to add this app to your organization.
 From the list on right side, find and select the **Dynamics 365 Finance and Operations Platform Tools** app, select **Next**, and follow the instructions to install.
