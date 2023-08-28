@@ -65,7 +65,7 @@
           href: administer-catalog.md
         - name: View, submit, and install catalog items
           href: submit-catalog-items.md
-    - name: Unified developer experience
+    - name: Unified developer experience for finance and operations apps (preview)
       items:
         - name: Overview
           href: unified-experience\finance-operations-dev-overview.md
