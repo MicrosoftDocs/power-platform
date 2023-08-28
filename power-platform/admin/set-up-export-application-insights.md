@@ -1,86 +1,71 @@
 ---
-title: "Set up exporting to Application Insights | Microsoft Docs"
-description: About setting up exporting to Application Insights from the Power Platform admin center
+title: Export data to Application Insights 
+description: Learn how to export data to Application Insights from the Power Platform admin center.
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/07/2022
-author: tjvass
+ms.date: 07/27/2023
+author: iwinoto-msft
 ms.subservice: admin
-ms.author: tjvass
-ms.reviewer: jimholtz
+ms.author: t-iwinoto
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Set up exporting to Application Insights 
+# Export data to Application Insights 
+
+Learn how to export data to Application Insights from the Power Platform admin center.
 
 ## Prerequisites
 
-1. Ensure that you have an [Application Insights environment](/azure/azure-monitor/app/create-workspace-resource) set up for receiving the data, in addition to the [environment](environments-overview.md) that has a database. 
+- Ensure that you have an [Application Insights environment](/azure/azure-monitor/app/create-workspace-resource) set up for receiving the data, in addition to the [environment](environments-overview.md) that has a database.
+  
    - For the Application Insights environment, you must have contributor, writer, or admin rights.
-   - The Application Insights environment must be unique for an environment or tenant. Note that Application Insights out-of-the-box reports won't function correctly if a single Application Insights environment contains data from multiple environments.
+   - The Application Insights environment must be unique for an environment or tenant. Application Insights out-of-the-box reports won't function correctly if a single Application Insights environment contains data from multiple environments.
 
-2. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need to be a member of one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin. 
+- To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you must be a member of one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
-## Set up export to your Applications Insights environment from the Power Platform admin center
+    > [!IMPORTANT] 
+    > The Application Insights exporting functionality for Power Automate and Dynamics Customer Services is in public preview.
+    >
+    > When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this Public Preview only, the premium use rights requirement and the ME restriction are relaxed.
 
-1. In the Power Platform admin center, select **Data Export** > **New data export**.
+    > [!NOTE]
+    > - The version of Application Insights described in this article isn't available in sovereign clouds. The prerequisites and setup instructions are consistent with the version currently hosted in sovereign clouds.
+    > - For Government Community Cloud (GCC) customers that need to configure integration to Application Insights in Azure Government environments, enter a support ticket.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Data export.](media/data-export.png "Data export")
+## Create an export package
 
-2. Select **Export to Application Insights**. 
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Data export** in the navigation pane.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Data export to Application Insights.](media/data-export-application-insights.png "Data export to Application Insights")
+1. On the **Data export** page, select the **App Insights** tab. Then select **New data export**.
 
-3. Search for the environment that you'll set up for the Application Insights data export setup. You can choose to filter based on the environment type.
+1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance** or **Power Automate**.
+   
+   If you select **Power Automate**, select whether to export cloud flow runs, triggers, and/or actions.
+   
+1. Select the environment that you're exporting data _from_. You can choose to filter based on the environment type. Select **Next**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Select an environment type.](media/data-export-application-insights-select-environment-type.png "Select an environment type")
+1. Select the Azure subscription, resource group, and Application Insights environment that you're exporting data _to_. Select **Next**.
 
-   Choose the environment you want, and then select **Save**.
+    You must have contributor, writer, or admin rights to the Application Insights environment. Typically, one production environment or tenant maps to one Application Insights environment. 
 
-   > [!div class="mx-imgBorder"] 
-   > ![Select an environment.](media/data-export-application-insights-select-environment.png "Select an environment")
+1. Review the details that you entered for the new export package, and then select **Create** to set up the data export connection. 
 
-4. Choose the Azure subscription, resource group, and Application Insights environment, and then select **Create**. You must have contributor, writer, or admin rights to the Application Insights environment. Typically, one production environment or tenant maps to one Application Insights environment. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Data export Application Insights details.](media/data-export-application-insights-details.png "Data export Application Insights details")
-
-5. The data export connection should now be set up. In the next 24 hours, data will start being exported to your Application Insights environment.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Data export success.](media/data-export-application-insights-success.png "Data export success")
-
-6. To stop the data export to Application Insights, select **Delete export**. You can set up a new connection whenever you decide to restart the data export.
+   The data export connection should now be set up. Within the next 24 hours, data will start being exported to your Application Insights environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Delete export.](media/data-export-delete.png "Delete export")
+   > ![Data export success.](media/Step5a_AppInsights.png "Data export success")
 
-## Regional availability 
+## Delete an export package
 
-|Zone  | Available |Public Preview availability  |
-|---------|---------|---------|
-|Canada     | Yes |  Yes |
-|EMEA     | Yes |  Jan 2021        |
-|North America     | Yes |  Jan 2021        |
-|Germany  | Yes |  Jan 2021       |
-|France     | Yes | March 2021        |
-|South America     | Yes | Jan 2021        |
-|Asia Pacific     |  Yes | Jan 2021       |
-|Japan     |  Yes | Jan 2021       |
-|UK     | Yes | Jan 2021        |
-|OCE     | Yes | Jan 2021        |
-|India     | Yes | March 2021        |
-|South Africa (ZAF)     |  Yes | Jan 2021       |
-|UAE     | Yes | March 2021        |
-|Switzerland (CHE)     | Yes | Jan 2021       |
-|GCC     | No |  Fall 2022 |
-|GCC-High     | No |  Fall 2022 |
-|GCC-DOD     | No |  TBD |
-|Mooncake     | No |  TBD |
+1. In the Power Platform admin center, select **Data export** in the navigation pane.
+
+1. On the **Data export** page, select the **App Insights** tab. 
+
+1. Select the export package you want to delete and select **Delete export**.
+
+   You can set up a new connection whenever you decide to restart the data export.
 
 
 
