@@ -33,10 +33,10 @@ The target environment in this tutorial is always a unified environment that con
 
 The source environment in this tutorial is always a finance and operations apps environment in LCS that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
-# [Prepare the source environment]
+## Prepare the source environment
 Before the source environment can be copied, several steps must be performed to ensure that data and code copy correctly to the target environment.  Without performing these steps, code or data loss can occur. 
 
-## Install or update the latest Dynamics 365 Finance and Operations Platform Tools app
+### Install or update the latest Dynamics 365 Finance and Operations Platform Tools app
 
 > [!NOTE]
 > This application is necessary in the source environment as it helps to store the X++ code in Microsoft Dataverse. This allows the code to copy to the target environment alongside the data.  Without this, data loss can occur.
@@ -57,7 +57,7 @@ From the list on right side, find and select the **Dynamics 365 Finance and Oper
 
 :::image type="content" source="media/copy-to-ode-install-apps.png" alt-text="Install Dynamics 365 apps menu.":::
 
-## Convert finance and operations apps packages to the new unified package format
+### Convert finance and operations apps packages to the new unified package format
 
 This step is used to convert the existing **Software deployable package**, typically used by LCS, into a new, unified, deployment package format. The package format is changed to align with other Dynamics 365 applications hosted by Microsoft Dataverse.
 
