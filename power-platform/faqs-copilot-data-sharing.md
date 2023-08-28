@@ -2,7 +2,7 @@
 title: "FAQ for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform"
 description: "This FAQ describes the optional data sharing setting for Copilot AI features in Dynamics 365 and Power Platform and how Microsoft responsibly uses your data."
 author: amishastri 
-ms.date: 08/17/2023
+ms.date: 08/23/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -16,7 +16,20 @@ These frequently asked questions (FAQ) article describes information related to 
 
 ## What is data sharing for Copilot AI features?
 
-Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s machine learning models, features, services, and related systems. Microsoft won't use your data to improve Azure OpenAI Service foundation models.
+Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s features, services, machine learning models, and related systems for Dynamics 365 and Power Platform Copilot AI features. We don't use customer data to train Azure OpenAI Service foundation models.
+
+## How does it work?
+
+You may opt in to participate by using the Power Platform admin center. To opt in: 
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
+
+1. In the left pane, select **Settings** > **Tenant Settings**, and turn on **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features** > **Enable Data Sharing** toggle. 
+
+1. Select **Save**.
+
+> [!NOTE]
+> When this optional data sharing setting is off, we don’t use customer data under this program. 
 
 ## What are the benefits of opting in?
 
@@ -27,11 +40,11 @@ Sharing your data can benefit you in two ways:
 
 ## If I've opted in, how can I withdraw my consent?
 
-By default, the data sharing option is disabled for you. After you opt in, you can opt out any time by going to the **Settings** > **Tenant Settings** page in the Power Platform admin center and turning off the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** toggle. More information: [Tenant settings](admin/tenant-settings.md)
+By default, the data sharing option is disabled for you. After you opt in, you can opt out any time by going to the **Settings** > **Tenant Settings** page in the Power Platform admin center and turning off the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features** toggle. More information: [Tenant settings](admin/tenant-settings.md)
 
 ## What happens when I withdraw my consent?
 
-You own your data. Microsoft uses your data only to provide the services we've agreed upon and for the purposes that are compatible with providing those services. Your data remains yours and we don't share it. If you leave this program, all your data is deleted within 30 days of opting out.
+You own your data. Microsoft uses your data only to provide the services we've agreed upon and for the purposes that are compatible with providing those services. Your data remains yours and we don't share it. If you leave this program, all your data is deleted within 30 days of opting out. However, we may still use your data up to end of the 30-day period.
 
 ## Who has access to my data?
 
