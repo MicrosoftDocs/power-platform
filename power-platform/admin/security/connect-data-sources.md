@@ -1,7 +1,7 @@
 ---
 title: Connecting and authenticating to data sources
 description: Learn how Power Platform connects and authenticates to external data sources.
-ms.date: 02/14/2022
+ms.date: 08/25/2023
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: "admin-security"
@@ -9,7 +9,7 @@ ms.collection: get-started
 author: lancedMicrosoft
 ms.subservice: admin
 ms.author: lanced
-ms.reviewer: tapanm
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
@@ -70,6 +70,12 @@ There are two types of data source authentication methods in Power Apps: *explic
 - **Implicit authentication** means the credentials the app maker provided when creating the connection are used.
 
 We recommend you use explicit authentication whenever possible. It's more secure.
+
+Even in the case of explicit authentication, it's important to remember that it’s the user’s rights on a data source that determines what the user can see and edit. 
+
+For example, suppose you have a SharePoint list that includes **Name** and **Salary** columns. You then build an app that exposes only the **Name** column. This means that users have access only to the **Name** column in your app.
+
+However, suppose your users have SharePoint list permissions that allow them to view and edit both the **Name** and **Salary** columns. Now suppose a specific user has Power Apps maker rights to that SharePoint list. In this case, nothing prevents that user from creating a new app that accesses the **Salary** column. The permissions that you grant through the user interface of your app don't deny the data source permissions that the user has.
 
 Learn more about the [difference between explicit and implicit connections](/powerapps/maker/canvas-apps/connections/sql-server-security#difference-between-explicit-and-implicit-connections). Although the article refers to SQL Server, it applies to all relational databases.
 

@@ -27,7 +27,7 @@
               href: responsible-ai-overview.md
             - name: FAQ for Copilot data security and privacy
               href: faqs-copilot-data-security-privacy.md
-            - name: FAQ for Copilot data sharing
+            - name: FAQ for optional data sharing for Copilot
               href: faqs-copilot-data-sharing.md
             - name: FAQ for using Copilot to generate deployment notes in pipelines
               href: alm/faqs-ai-deployment-notes-pipelines.md
