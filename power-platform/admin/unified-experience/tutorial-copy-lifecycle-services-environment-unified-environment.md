@@ -91,7 +91,7 @@ Inside of the Power Platform admin center, visit the source environment you wish
 
 ## Copy via PowerShell
 
-Load the PowerShell console and execute the following commands to generate the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../admin/powershell-getting-started.md).
+Load the PowerShell console and execute the following commands to generate the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
 
 ```PowerShell
 #Install the module
