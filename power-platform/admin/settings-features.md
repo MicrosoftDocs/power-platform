@@ -66,9 +66,9 @@ Choose which provider to enable outbound calls from within customer engagement a
 ## Hosted RPA
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable hosted machine groups.| If **On**, users can run unattended automation at scale without providing or setting up any machines. More information: [Hosted machine group](/power-automate/desktop-flows/hosted-machine-groups).  | On |
-| Enable work or school accounts for hosted machine groups.| If **On**, your hosted machine group has access to your resources that are part of the business plan linked to your organization, such as Office, SharePoint, Azure, and others. More information: [Use your work or school account](/power-automate/desktop-flows/hosted-machine-groups#use-your-work-or-school-account). | On |
-| Enable hosted machines.| If **On**, users can build, test, and run attended and unattended desktop flows without providing or setting up any physical machines. More information: [Hosted machines](/power-automate/desktop-flows/hosted-machines). | On |
+| Enable hosted machine groups.| If **On**, users can run unattended automation at scale with [hosted machine group](/power-automate/desktop-flows/hosted-machine-groups).  | On |
+| Enable work or school accounts for hosted machine groups.| If **On**, your hosted machine group has access to your resources that are part of [your work or school account](/power-automate/desktop-flows/hosted-machine-groups#use-your-work-or-school-account). | On |
+| Enable hosted machines.| If **On**, users can build, test, and run attended and unattended desktop flows without providing or setting up any physical machine with [hosted machines](/power-automate/desktop-flows/hosted-machines). | On |
 | Enable cross-geo support for hosted machines| If **On**, this allows users to provision hosted machines in a geography different from that of the configured tenant country. More information: [Azure tenant country/region and supported geographies in the public cloud](/power-automate/desktop-flows/hosted-machines#azure-tenant-countryregion-and-supported-geographies-in-the-public-cloud). | On |
 
 ## Enhanced desktop flows schema
