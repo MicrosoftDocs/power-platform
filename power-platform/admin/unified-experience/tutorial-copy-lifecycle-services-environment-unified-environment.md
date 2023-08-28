@@ -85,7 +85,7 @@ pac package deploy --logConsole --package <OutputPath>\<Package>.dll
 
 ## Begin the copy operation
 
-Inside of the Power Platform admin center, visit the source environment you wish to copy.  From there, select the **Copy** button in the top action pane.  In the slider window that appears, choose to copy **Everything**, which incorporates both the Dataverse and X++ source code, as well as the data from the source.  SElect the **Target** environment to be the unified, developer environment.
+Inside of the Power Platform admin center, visit the source environment you wish to copy.  From there, select the **Copy** button in the top action pane.  In the slider window that appears, choose to copy **Everything**, which incorporates both the Dataverse and X++ source code, as well as the data from the source.  Select the **Target** environment to be the unified, developer environment.
 
 # [PowerShell](#tab/PowerShell)
 
