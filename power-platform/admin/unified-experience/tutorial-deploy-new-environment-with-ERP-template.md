@@ -1,11 +1,11 @@
 ---
 title: "Tutorial: Provision a new environment with an ERP-based template (preview) | Microsoft Docs"
-description: This tutorial will demonstrate how to use the Power Platform to deploy an environment with Finance and Operations apps installed.
+description: This tutorial demonstrates how to use the Power Platform to deploy an environment with finance and operations apps installed.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/14/2023
+ms.date: 08/28/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -16,11 +16,11 @@ search.audienceType:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Finance and operations apps have been re-imagined as an application hosted by Microsoft Dataverse.  No longer do customers need to deploy their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications.  Additionally, most administrative actions in Power Platform are available through the admin center and an API-based experience.
+Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse.  No longer do customers need to deploy their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications.  Additionally, most administrative actions in Power Platform are available through the admin center and an API-based experience.
 
-In this tutorial, you'll learn how to:
+In this tutorial, learn how to:
 
-- Visit the Power Platform admin center and create a new environment using a template based on your assigned license.
+- Go to the Power Platform admin center and create a new environment using a template based on your assigned license.
 - Deploy a developer-focused sandbox using PowerShell to use with X++ code.
 - Delete an environment when no longer in use.
 
@@ -30,13 +30,13 @@ As an example of this scenario, a customer who operates their finance and operat
 
 ## Environment deployment
 
-The easiest way to get finance and operations apps up and running in Power Platform is to create a new environment using a template.  A template is simply an efficiency in terms of creating a Dataverse-based Power Platform enviornment with several applications pre-installed.  In this scenario, the finance and operations ERP application is installed automatically upon environment creation.
+The easiest way to get finance and operations apps up and running in Power Platform is to create a new environment using a template.  A template is simply an efficiency in terms of creating a Dataverse-based Power Platform environment with several applications preinstalled.  In this scenario, the finance and operations ERP application is installed automatically upon environment creation.
 
 ### Before you begin
 
-You cannot deploy finance and operations apps in Power Platform unless you have a license assigned that grants this permission. An example license is Dynamics 365 Finance or Dynamics 365 Supply Chain Management for customers, and Dynamics 365 Operations Application Partner Sandbox for partners and ISVs.  This must be assigned by your license administrator to your user account in Microsoft Entra (formerly known as Azure Active Directory).  You can review the licenses currently assigned to you in the Subscription table on the [MyAccount](https://portal.office.com/account/?ref=MeControl) page.
+You can't deploy finance and operations apps in Power Platform unless you have a license assigned that grants this permission. An example license is Dynamics 365 Finance or Dynamics 365 Supply Chain Management for customers, and Dynamics 365 Operations Application Partner Sandbox for partners and ISVs.  This must be assigned by your license administrator to your user account in Microsoft Entra (formerly known as Azure Active Directory).  You can review the licenses currently assigned to you in the Subscription table on the [MyAccount](https://portal.office.com/account/?ref=MeControl) page.
 
-You also must have at least one gigabyte of available Operations and Dataverse database capacities.  For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
+You also must have at least 1 gigabyte of available Operations and Dataverse database capacities.  For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
 
 # [Power Platform admin center](#tab/PPAC)
 
@@ -46,12 +46,12 @@ You also must have at least one gigabyte of available Operations and Dataverse d
 > During public preview, this will initially not be visible in Power Platform admin center.  Instead you may provision these new environments using PowerShell on the related tab on this page.  However this will eventually be visible when non-developer sandboxes are supported for finance and operations apps.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane.  The **Enviromnets** page is displayed.
+1. Select **Environments** in the navigation pane.  The **Environments** page is displayed.
 1. Select **New**. The **New environment** pane is displayed.
 
-    :::image type="content" source="media/tutorial-new-environment1.png" alt-text="Click the New button to create a new enviroment.":::
+    :::image type="content" source="media/tutorial-new-environment1.png" alt-text="Click the New button to create a new environment.":::
 
-1. Enter a name for the environment. Environment names do not need to be unique in Power Platform, unlike in LCS.
+1. Enter a name for the environment. Environment names don't need to be unique in Power Platform, unlike in LCS.
 1. Choose your deployment region.
 1. From the **Type** list, select **Sandbox**.
 1. Enable the Dataverse data store option, and select **Next**.
@@ -101,18 +101,18 @@ New-AdminPowerAppEnvironment -DisplayName “UnoEnvName1” -EnvironmentSku Sand
 In the above example, we used the **Finance** environment template.  Similar options are available to you for other finance and operations apps, such as Supply Chain Management and Project Operations.
 
 ## Delete the environment
-In this step, we will delete the environment we previously created.  Deleting an environment is an action commonly done by admins who wish to reclaim capacity for other purposes.
+In this step, delete the environment you previously created.  Deleting an environment is an action commonly done by admins who wish to reclaim capacity for other purposes.
 
 # [Power Platform admin center](#tab/PPAC)
 
 Select a specific environment, and then select the **Delete** button in the action bar at the top of the page.  
 
-Confirm that you wish to delete the environment and proceed. This will start the deletion process and will eventually free-up the Dataverse and Operations storage consumed by this environment for other needs.
+Confirm that you wish to delete the environment and proceed. This starts the deletion process and will eventually free-up the Dataverse and Operations storage consumed by this environment for other needs.
 
 
 # [PowerShell](#tab/PowerShell)
 
-Use the below script to delete the previously created enviornment.  Set the **environmentID** appropriately.
+Use the below script to delete the previously created environment.  Set the **environmentID** appropriately.
 
 ```powershell
 #Remove the previously created environment by ID
