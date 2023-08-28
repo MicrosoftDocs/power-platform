@@ -40,10 +40,10 @@ After the product is purchased, assign the license to an admin who can sign in t
 1. Change the enviornment type to **Trial (subscription-based)**.
 2. Select **Next**.
 1. Select a **Security group** and choose to **Enable Dynamics 365 apps**.
-1. In the drop down menu, select the template that is related to the trial license you were given, such as **Finance (preview)**.
-1. Start the deployment, which may take an hour to complete.  
+1. In the drop-down menu, select the template that is related to the trial license you were given, such as **Finance (Preview)**.
+1. Select **Save** to start the deployment, which may take an hour to complete.  
 
-After the deployment is finished, you may use both Dataverse and finance and operations apps capabilities in a unified trial environment. This includes add-ins, such as **Export to Data Lake**, **Planning Optimization**, and **Finance Insights**, which were previously only available to paid customer environments in Lifecycle Services.
+After the deployment is finished, you may use both Dataverse and finance and operations apps capabilities in a unified trial environment. This includes add-ins, such as **Export to Data Lake**, **Planning Optimization**, and **Finance Insights**, which were previously only available to paid customer environments in LCS.
 
 ### Related articles
 
