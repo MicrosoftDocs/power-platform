@@ -31,7 +31,7 @@ As an example of this scenario, a customer who operates their finance and operat
 
 The target environment in this tutorial is always a unified environment that contains finance and operations apps hosted by Microsoft Dataverse.  To learn how to deploy one of these environments, see [Tutorial: Provision a new environment with an ERP-based template (preview)](./tutorial-deploy-new-environment-with-ERP-template.md).
 
-The source environment in this tutorial is always a finance and operations apps environment in LCS that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
+The source environment in this tutorial is always a finance and operations apps environment in LCS that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).
 
 ## Prepare the source environment
 Before the source environment can be copied, several steps must be performed to ensure that data and code copy correctly to the target environment.  Without performing these steps, code or data loss can occur. 
@@ -91,7 +91,7 @@ Inside of the Power Platform admin center, visit the source environment you wish
 
 ## Copy via PowerShell
 
-Load the PowerShell console and execute the following commands to generate the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](power-platform/admin/powershell-getting-started.md).
+Load the PowerShell console and execute the following commands to generate the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../admin/powershell-getting-started.md).
 
 ```PowerShell
 #Install the module
