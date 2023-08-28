@@ -34,10 +34,12 @@ After the product is purchased, assign the license to an admin who can sign in t
 
 1. After the trial license is assigned to your user account, sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Environments** in the navigation pane. The **Environments** page is displayed.
-1. Select **New** to create a new environment.
-1. Give the environment a name in the pane that is displayed.
-1. change the enviornment type to **Subscription-based trial**.
-1. Move on to the next tab where you will need to select a **Security group** and choose to **Enable Dynamics 365 apps**.
+1. Select **New** to create a new environment. The **New environment** pane is displayed.
+1. Enter a name for the environment.
+1. Select your region.
+1. Change the enviornment type to **Trial (subscription-based)**.
+2. Select **Next**.
+1. Select a **Security group** and choose to **Enable Dynamics 365 apps**.
 1. In the drop down menu, select the template that is related to the trial license you were given, such as **Finance (preview)**.
 1. Start the deployment, which may take an hour to complete.  
 
