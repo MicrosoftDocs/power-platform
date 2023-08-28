@@ -33,7 +33,10 @@ The target environment in this tutorial is always a unified environment that con
 
 The source environment in this tutorial is always a finance and operations apps environment in LCS that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).
 
+Ensure that both the source and target environments are provisioned in the same region. For general information on copying environments refer to [Copy an environment](../copy-environment.md).
+
 ## Prepare the source environment
+
 Before the source environment can be copied, several steps must be performed to ensure that data and code copy correctly to the target environment.  Without performing these steps, code or data loss can occur. 
 
 ### Install or update the latest Dynamics 365 Finance and Operations Platform Tools app
