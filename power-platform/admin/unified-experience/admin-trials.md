@@ -3,7 +3,7 @@ title: "Unified admin trials (preview)"
 description: "Subscription based trial environments for administrators of finance and operations apps."
 author: laneswenka
 ms.topic: conceptual
-ms.date: 08/25/2023
+ms.date: 08/28/2023
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
@@ -16,7 +16,7 @@ ms.reviewer: sericks
 
 Historically administrators, partners, and ISVs have had to use cloud-hosted environments in Lifecycle Services (LCS) to create demo or trial environments for finance and operations apps.  This was to demonstrate the software capabilities and try out new features of the product on a low-cost basis.
 
-To improve this experience, Microsoft has made available free subscription-based trial environments for Dynammics 365 finance and operations apps, including Finance, Supply Chain Management, Project Operations, and Commerce apps. 
+To improve this experience, Microsoft has made available free subscription-based trial environments for Dynamics 365 finance and operations apps, including Finance, Supply Chain Management, Project Operations, and Commerce apps. 
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -37,7 +37,7 @@ After the product is purchased, assign the license to an admin who can sign in t
 1. Select **New** to create a new environment. The **New environment** pane is displayed.
 1. Enter a name for the environment.
 1. Select your region.
-1. Change the enviornment type to **Trial (subscription-based)**.
+1. Change the environment type to **Trial (subscription-based)**.
 2. Select **Next**.
 1. Select a **Security group** and choose to **Enable Dynamics 365 apps**.
 1. In the drop-down menu, select the template that is related to the trial license you were given, such as **Finance (Preview)**.
