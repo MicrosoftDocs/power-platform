@@ -72,7 +72,7 @@ Run the following command using ModelUtil.exe from Windows Powershell. You can f
 This deploy command doesn’t make any changes to the finance and operations environment hosted in Lifecycle Services, nor does it require any downtime to apply this package on either the operations environment or the Dataverse environment. This is done to upload and save the customizations into Dataverse storage so that they can be copied. 
 
 1. Install [PAC CLI](https://aka.ms/PowerAppsCLI)
-2. [Authenticate and connect to source Dataverse](../cli/reference/auth.md#pac-auth-create)
+2. [Authenticate and connect to source Dataverse](../developer/cli/reference/auth.md#pac-auth-create)
 3. Run the following:
 
 ```
