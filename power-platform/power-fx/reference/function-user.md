@@ -48,7 +48,7 @@ The current Power Apps user has the following information:
 
 - Full Name: **"John Doe"**
 - Email address: **"john.doe@contoso.com"**
-  Entra Object Id: a90c6800-e58c-4495-81f7-55819b56fe2a
+- Entra Object Id: a90c6800-e58c-4495-81f7-55819b56fe2a
 - Image: ![Image icon.](media/function-user/john-doe-picture.png "Image icon")
 
 | Formula             | Description                                                                                                                                       | Result                                                                                                                              |
