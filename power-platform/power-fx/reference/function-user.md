@@ -48,7 +48,7 @@ The current Power Apps user has the following information:
 
 - Full Name: **"John Doe"**
 - Email address: **"john.doe@contoso.com"**
-- Entra Object Id: a90c6800-e58c-4495-81f7-55819b56fe2a
+- Entra Object Id: **a90c6800-e58c-4495-81f7-55819b56fe2a** _(GUID)_
 - Image: ![Image icon.](media/function-user/john-doe-picture.png "Image icon")
 
 | Formula             | Description                                                                                                                                       | Result                                                                                                                              |
@@ -56,7 +56,7 @@ The current Power Apps user has the following information:
 | **User()**          | Record of all information for the current Power Apps user.                                                                                        | { FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678", EntraObjectId:&nbsp;a90c6800&#8209;e58c&#8209;4495&#8209;81f7&#8209;55819b56fe2a }                                   |
 | **User().Email**    | The email address of the current Power Apps user.                                                                                                 | "john.doe@contoso.com"                                                                                                              |
 | **User().FullName** | The full name of the current Power Apps user.                                                                                                     | "John Doe"                                                                                                                          |
-| **User().EntraObjectId** | Microsoft Entra Object ID of the current user.                                                                                                   | a90c6800-e58c-4495-81f7-55819b56fe2a                                                                                            |
+| **User().EntraObjectId** | Microsoft Entra Object ID of the current user.                                                                                                   | a90c6800-e58c-4495-81f7-55819b56fe2a _(GUID)_                                                                                           |
 | **User().Image**    | The image URL for the current Power Apps user. Set the **Image** property of the **Image** control to this value to display the image in the app. | "blob:1234...5678"<br><br>With **ImageControl.Image**:<br>![Image icon 1.](media/function-user/john-doe-picture.png "Image icon 1") |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
