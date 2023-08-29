@@ -80,6 +80,27 @@ More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
 
+### Import starter data
+
+> [!NOTE]
+> Importing the starter data is optional.
+
+If you want to pre-populate the Video hub with videos from the [Microsoft Power Platform YouTube channel](https://www.youtube.com/@mspowerplatform), import data from the Video hub starter workbook.
+
+1. Open the Nurture - Admin app and navigate to the **Content** page.
+
+1. From the command bar, select **Import from Excel**.
+
+1. Select Choose File.
+
+1. Go to the location where you saved the file microsoft-video-hub-starter-data.xlsx, and then select Open.
+
+1. Select **Next**.
+
+1. Select **Finish**.
+
+An import job is created. You can track its progress by selecting Track Progress.
+
 ### Manage content in the Nurture apps - admin app
 
 #### Video content
