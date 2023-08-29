@@ -4,7 +4,7 @@ description: Learn how to export data to Application Insights from the Power Pla
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2023
+ms.date: 08/29/2023
 author: iwinoto-msft
 ms.subservice: admin
 ms.author: t-iwinoto
@@ -26,7 +26,7 @@ Learn how to export data to Application Insights from the Power Platform admin c
 - To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you must be a member of one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
     > [!IMPORTANT] 
-    > The Application Insights exporting functionality for Power Automate and Dynamics Customer Services is in public preview in all Public Geos (Sovereigns).  Power Automate and Dynamics Customer Services functionality in public preview is not available in GCC / GCCH sovereign clouds.
+    > The Application Insights exporting functionality for Power Automate and Dynamics Customer Services is in public preview in all Public Geos (Sovereigns).  Power Automate and Dynamics Customer Services functionality in public preview is not available in Government Community Cloud (GCC) or Government Community Cloud - High (GCC High) sovereign clouds.
     >
     > When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this Public Preview only, the premium use rights requirement and the ME restriction are relaxed.
 
