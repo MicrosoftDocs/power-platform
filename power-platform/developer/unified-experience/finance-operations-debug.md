@@ -120,6 +120,7 @@ We started with using Visual Studio to create a simple runnable class. After the
 
 ### See also
 
+[Unit testing in the unified developer experience](finance-operations-testing.md)  
 [Deploy packages](finance-operations-deploy-packages.md)  
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](../admin/manage-apps.md)
