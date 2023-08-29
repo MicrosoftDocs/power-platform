@@ -3,7 +3,7 @@ title: "Unified admin experience for finance and operations apps (preview)"
 description: "Overview of unified admin experiences for Dynamics 365 finance and operations apps customers in Power Platform admin center"
 author: laneswenka
 ms.topic: overview
-ms.date: 08/25/2023
+ms.date: 08/29/2023
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
@@ -27,7 +27,7 @@ As part of the unification of admin experiences of finance and operations apps w
 
 This article provides an overview to Dynamics 365 finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services (LCS) and the new experience along with links to more resources and articles that provide detailed information for common tasks.
 
-To learn more about the admin unification journey, watch the following video on Microsoft Dynamics 365 Community channel on YouTube: [Video: One Dynamics One Platform](https://www.youtube.com/embed/VPQSmtgzfjM)
+To learn more about the admin unification journey, watch the following video on Microsoft Dynamics 365 Community channel on YouTube: [Video: Unified admin experience for finance and operations apps](https://www.youtube.com/embed/VPQSmtgzfjM)
 
 ## How will finance and operations apps surface in the Power Platform admin center?
 
