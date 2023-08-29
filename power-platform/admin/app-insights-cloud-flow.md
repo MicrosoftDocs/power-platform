@@ -4,7 +4,7 @@ description: Learn about how to set up Azure Application Insights with Power Aut
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/21/2023
+ms.date: 08/29/2023
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
