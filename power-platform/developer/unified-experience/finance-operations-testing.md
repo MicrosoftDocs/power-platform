@@ -1,5 +1,5 @@
 ---
-title: Unit testing in the unified developer experience. 
+title: "Unit testing (preview)" 
 description: Shows you how to create and run test cases.
 author: pvillads
 ms.date: 08/28/2023
@@ -9,7 +9,7 @@ ms.reviewer: pehecke
 ms.author: pvillads
 ---
 
-# Unit testing in the unified developer experience
+# Unit testing (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -104,8 +104,10 @@ Now continue by following these instructions.
 After you have fixed any problems diagnosed by the X++ compiler, you're ready to run your unit tests using the Visual Studio test explorer. In the unified developer experience, the execution takes place in the cloud against the data that resides in the running SQL Server. So you need to deploy the results of your compilation to the cloud by following these steps.
 
 1. Select the **Deploy model for project FleetManagementUnitTests** menu item from the context menu on the project in Solution Explorer. You're prompted to connect to Power Platform if you aren't already connected.
+
     The deployment dialog is displayed. Since we haven't added any new tables that need to be synced to the database, we now perform the deployment step.
     :::image type="content" source="../media/unified-experience/devexp-test-deploy.png" alt-text="Deployment dialog.":::
+
 1. On the **Test** menu of Visual Studio, open **Test Explorer**.
 1. Select **Run selected test** to execute in the cloud the two test methods of the test case.
 
