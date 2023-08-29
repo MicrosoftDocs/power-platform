@@ -51,7 +51,7 @@ class FMUnitTestSample extends SysTestCase
         FMDataHelper::main(null);
     }
 
-    [SysTestMethod, Hookable(false)]]
+    [SysTestMethod, Hookable(false)]
     public void testFMTotalsEngine()
     {
         FMRental rental;
@@ -81,7 +81,7 @@ class FMUnitTestSample extends SysTestCase
         this.assertEquals(expectedTotal,fmRentalTotal);
     }
 
-    [SysTestMethod, Hookable(false)]]
+    [SysTestMethod, Hookable(false)]
     public void testFMCarValidateField()
     {
         FMCarClass fmCar;
@@ -96,7 +96,7 @@ class FMUnitTestSample extends SysTestCase
 
 ```
 
-Now continue by following these instructions.
+Continue by following these remaining instructions.
 
 1. Save the test class.
 1. Build the project by right-clicking on the FleetManagementUnitTestSample project in **Solution Explorer**, and then select **Build.**
@@ -104,8 +104,8 @@ Now continue by following these instructions.
 After you have fixed any problems diagnosed by the X++ compiler, you're ready to run your unit tests using the Visual Studio test explorer. In the unified developer experience, the execution takes place in the cloud against the data that resides in the running SQL Server. So you need to deploy the results of your compilation to the cloud by following these steps.
 
 1. Select the **Deploy model for project FleetManagementUnitTests** menu item from the context menu on the project in Solution Explorer. You're prompted to connect to Power Platform if you aren't already connected.
+1. The deployment dialog is displayed. Since we haven't added any new tables that need to be synced to the database, we now perform the deployment step. Fill out the dialog and choose **Deploy**.
 
-    The deployment dialog is displayed. Since we haven't added any new tables that need to be synced to the database, we now perform the deployment step.
     :::image type="content" source="../media/unified-experience/devexp-test-deploy.png" alt-text="Deployment dialog.":::
 
 1. On the **Test** menu of Visual Studio, open **Test Explorer**.
@@ -115,7 +115,7 @@ Test Explorer shows the results of each test after it completes. Hopefully, all 
 
 ## Test isolation
 
-For a test to be of high value it must be reliable. A test must pass or fail consistently, independent of other factors such as other tests. One typical cause of unreliable tests is leaking state, such as data left behind in the data base that influences downstream tests. To prevent this type of issue, you can use the ```SysTestTransaction``` attribute.
+For a test to be of high value it must be reliable. A test must pass or fail consistently, independent of other factors such as other tests. One typical cause of unreliable tests is leaking state, such as data left behind in the database that influences downstream tests. Another cause of unreliable tests is relying on tests to be called in a particular order. To prevent this type of issue, you can use the `SysTestTransaction` attribute.
 
 |  TestTransactionMode | Description  |
 |---|---|
@@ -126,10 +126,10 @@ For a test to be of high value it must be reliable. A test must pass or fail con
 
 Example:
 
-```xpp    
+```xpp
     [SysTestTransaction(TestTransactionMode::LegacyRollback)]
     class MyTestSample extends SysTestCase
-```    
+```
 
 ## Test module creation to manage test code and FormAdaptors
 
