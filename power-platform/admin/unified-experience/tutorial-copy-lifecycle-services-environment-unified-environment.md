@@ -56,9 +56,9 @@ If you see **Update Available** in the **Status** for Dynamics 365 Finance and O
 :::image type="content" source="media/copy-to-ode-platform-tools2.png" alt-text="Dynamics 365 Finance and Operations platform tools showing an Update available status.":::
 
 If Dynamics 365 Finance and Operations Platform Tools is not listed, select **Install App** to add this app to your organization.
-From the list on right side, find and select the **Dynamics 365 Finance and Operations Platform Tools** app, select **Next**, and follow the instructions to install.
+From the list on right side, find and select the **Dynamics 365 Finance and Operations Platform Tools** app, select **Install**, and follow the instructions to install.
 
-:::image type="content" source="media/copy-to-ode-install-apps.png" alt-text="Install Dynamics 365 apps menu.":::
+:::image type="content" source="media/copy-to-ode-install-apps2.png" alt-text="Install Dynamics 365 apps menu.":::
 
 ### Convert finance and operations apps packages to the new unified package format
 
