@@ -15,8 +15,8 @@ ms.subservice: developer
 
 The unified developer experience for Dynamics 365 Finance and Operation apps enables you to write code on your local development computer and run it inside a cloud service. There exists a separation of functionality between these two tiers (local and cloud).
 
- - Development tier - contains the finance and operations metadata and any X++ source code on your local development computer
- - Execution tier - cloud hosted site that stores the business data and executes X++ code
+- Development tier - contains the finance and operations metadata and any X++ source code on your local development computer
+- Execution tier - cloud hosted site that stores the business data and executes X++ code
 
 This article shows you how to:
 
@@ -122,6 +122,6 @@ We started with using Visual Studio to create a simple runnable class. After the
 
 [Deploy packages](finance-operations-deploy-packages.md)  
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
-[Manage Dynamics 365 apps](/power-platform/admin/manage-apps)
+[Manage Dynamics 365 apps](../admin/manage-apps.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
