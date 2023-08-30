@@ -13,7 +13,7 @@ ms.author: pvillads
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial shows you how to create and run reliable test cases.
+This how-to article shows you how to create and run reliable test cases.
 
 ## Prerequisites
 
