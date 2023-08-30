@@ -116,7 +116,7 @@ The key vault administrator then grants the respective Power Platform/Dynamics 3
 
 ##### Prerequisites
 
-- An Azure subscription that includes Azure Key Vault or Azure Key Vault managed HSM (preview).
+- An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules (preview).
 - Global tenant admin or an  Azure AD with contributor permission to the Azure AD subscription and permission to create an Azure Key Vault and key. This is required to set up the key vault.
 
 ##### Create the key and grant access using Azure Key Vault
@@ -180,11 +180,11 @@ In Azure, perform the following steps:
       - **Key type**: **RSA**
       - **RSA key size**: **2048**
 
-#### Import protected keys for hardware security modules (HSM)
+#### Import protected keys for Hardware Security Modules (HSM)
 You can use your protected keys for hardware security modules (HSM) to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. For more information, see [Supported HSMs](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) [Import HSM-protected keys to Key Vault (BYOK)](/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
 
-#### Create a key in the Azure Key Vault managed HSM (Hardware Security Module) - Preview
-You can use encryption key created from the Azure Key Vault managed HSM to encryption your environment data. This gives you FIPS 140-2 Level 3 support. 
+#### Create a key in the Azure Key Vault Managed HSM - Preview
+You can use an encryption key created from the Azure Key Vault Managed HSM to encrypt your environment data. This gives you FIPS 140-2 Level 3 support. 
 
 ##### Create RSA-HSM keys
 1. Make sure you've met the [prerequisites](#prerequisites).
@@ -193,13 +193,13 @@ You can use encryption key created from the Azure Key Vault managed HSM to encry
    1.	[Provision the Managed HSM](https://learn.microsoft.com/azure/key-vault/managed-hsm/quick-create-cli#provision-a-managed-hsm).
    1.	[Activate the Managed HSM](https://learn.microsoft.com/azure/key-vault/managed-hsm/quick-create-cli#activate-your-managed-hsm). 
 1.	Enable **Purge Protection** in your Managed HSM.
-1. Grant the **Managed HSM Crypto User** role to the person who created the Managed HSM key vault:
-   1.	Access the Managed HSM key vault on the [Azure portal](https://portal.azure.com/) .
-   1.	Navigate to **Local RBAC** and click on **+ Add**.
-   1.	In the Role dropdown, select the **Managed HSM Crypto User** role on the Role assignment page.
-   1.	Select **All keys** under Scope.
-   1.	Click on **Select security principal**, and select the admin on the Add Principal page.
-   1.	Click the **Create** button.
+1. Grant the **Managed HSM Crypto User** role to the person who created the Managed HSM key vault.
+   1.	Access the Managed HSM key vault on the [Azure portal](https://portal.azure.com/).
+   1.	Navigate to **Local RBAC** and select **+ Add**.
+   1.	In the **Role** drop-down list, select the **Managed HSM Crypto User** role on the **Role assignment** page.
+   1.	Select **All keys** under **Scope**.
+   1.	Select **Select security principal**, and then select the admin on the **Add Principal** page.
+   1.	Select **Create**.
 1.	Create a RSA-HSM key:
       - **Options**: **Generate**
       - **Name**: Provide a name for the key
@@ -218,7 +218,7 @@ You can either create a [new key vault and establish a private link connection](
    - Enable **Purge Protection**
    - Key type: RSA 
    - Key size: 2048
-1. Copy down the key vault URL and the encryption key URL to be used for creating the enterprise policy.
+1. Copy the key vault URL and the encryption key URL to be used for creating the enterprise policy.
 
    > [!NOTE]
    > Once you've added a private endpoint to your key vault or disabled the public access network, you won’t be able to see the key unless you have the appropriate permission.
@@ -439,22 +439,23 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 > The environment will be disabled when it's added to the new enterprise policy. 
 
 ### Change the environment's encryption key with a new key version (preview)
-You can change the environment’s encryption key by creating a new key version. When you create a new key version, the new key version is automatically enabled. All the storage resources will detect the new key version and start applying it to encrypt your data. 
+You can change the environment’s encryption key by creating a new key version. When you create a new key version, the new key version is automatically enabled. All the storage resources detect the new key version and start applying it to encrypt your data. 
 
-When you modify the key or the key version, the protection of the root encryption key changes, but the data in the storage always remains encrypted with your key. There is no additional action required on your part to ensure that your data is protected. Rotating the key version doesn't impact performance. There is no downtime associated with rotating the key version. It can take 24 hours for all the resource providers to apply the new key version in the background. The previous key version must not be disabled as it is required for the service to use it for the re-encryption and for the support of database restoration. 
+When you modify the key or the key version, the protection of the root encryption key changes, but the data in the storage always remains encrypted with your key. There is no additional action required on your part to ensure that your data is protected. Rotating the key version doesn't impact performance. There is no downtime associated with rotating the key version. It can take 24 hours for all the resource providers to apply the new key version in the background. The previous key version must not be disabled as it's required for the service to use it for the re-encryption and for the support of database restoration. 
 
-To rotate the encryption key by creating a new key version.
+To rotate the encryption key by creating a new key version, use the following steps.
+
 1.	Go to the [Azure portal](https://ms.portal.azure.com/) > **Key Vaults** and locate the key vault where you want to create a new key version.
 1.	Navigate to **Keys**.
-1.	Click on the current enabled key.
-1.	Click on **+ New Version**.
-1.	Note that the Enabled setting is defaulted to **Yes** which means that the new key version will automatically enabled upon creation.
-1.	Click on the **Create** button.
+1. Select the current, enabled key.
+1.	Select **+ New Version**.
+1.	Note that the **Enabled** setting defaults to **Yes**, which means that the new key version is automatically enabled upon creation.
+1.	Select **Create**.
 
-You can also rotate the encryption key using the [Rotation policy](https://learn.microsoft.com/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy) by either configuring a rotation policy or rotate on demand  by invoking [Rotate now](https://learn.microsoft.com/azure/key-vault/keys/how-to-configure-key-rotation#rotation-on-demand).
+You can also rotate the encryption key using the [Rotation policy](/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy) by either configuring a rotation policy or rotate, on demand, by invoking [Rotate now](/azure/key-vault/keys/how-to-configure-key-rotation#rotation-on-demand).
 
 > [!IMPORTANT]
-> The new key version is automatically rotated in the background and there is no action required by the Power Platform admin. It is important that the previous key version must not be disabled/deleted for at least 28 days to support database restoration. Disabling/deleting the previous key version too early can take your environment offline.
+> The new key version is automatically rotated in the background and there is no action required by the Power Platform admin. It is important that the previous key version must not be disabled or deleted for, at least, 28 days to support database restoration. Disabling or deleting the previous key version too early can take your environment offline.
 
 ### View the list of encrypted environments
 
