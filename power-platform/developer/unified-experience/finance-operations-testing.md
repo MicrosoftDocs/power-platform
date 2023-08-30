@@ -137,7 +137,9 @@ Creating a test specific module helps to keep test code together and manageable.
 
 1. Open **Visual Studio** and go to **Dynamics 365** > **Model Management** > **Create model**.
 1. Enter the model name, select the layer, and then enter any more details. It's a good idea to include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**.
-1. Because this model holds forms from the Application Platform/Foundation, add references to models listed in the dialog.
+1. Because this model holds forms from the Application Platform/Foundation, add references to models selected (checked) in the following figure.
+
+    :::image type="content" source="../media/unified-experience/devexp-test-create_model.png" alt-text="Create model dialog.":::
 
 ### See also
 
