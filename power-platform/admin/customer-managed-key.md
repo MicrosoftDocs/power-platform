@@ -189,9 +189,9 @@ You can use an encryption key created from the Azure Key Vault Managed HSM to en
 ##### Create RSA-HSM keys
 1. Make sure you've met the [prerequisites](#prerequisites).
 1. Go to the [Azure portal](https://ms.portal.azure.com/).
-1. Create a [Managed HSM](https://learn.microsoft.com/azure/key-vault/managed-hsm/quick-create-cli#create-a-managed-hsm):
-   1.	[Provision the Managed HSM](https://learn.microsoft.com/azure/key-vault/managed-hsm/quick-create-cli#provision-a-managed-hsm).
-   1.	[Activate the Managed HSM](https://learn.microsoft.com/azure/key-vault/managed-hsm/quick-create-cli#activate-your-managed-hsm). 
+1. Create a [Managed HSM](/azure/key-vault/managed-hsm/quick-create-cli#create-a-managed-hsm):
+   1.	[Provision the Managed HSM](/azure/key-vault/managed-hsm/quick-create-cli#provision-a-managed-hsm).
+   1.	[Activate the Managed HSM](/azure/key-vault/managed-hsm/quick-create-cli#activate-your-managed-hsm). 
 1.	Enable **Purge Protection** in your Managed HSM.
 1. Grant the **Managed HSM Crypto User** role to the person who created the Managed HSM key vault.
    1.	Access the Managed HSM key vault on the [Azure portal](https://portal.azure.com/).
