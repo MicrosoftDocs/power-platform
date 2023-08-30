@@ -66,7 +66,16 @@ Choose which provider to enable outbound calls from within customer engagement a
 ## Hosted RPA
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Hosted RPA bots (Preview)| If **On**, users can run unattended automation at scale without the need to provide or setup any machine. More information: [Hosted RPA bots (preview)](/power-automate/desktop-flows/hosted-machine-groups) | On |
+| Enable hosted machine groups.| If **On**, users can run unattended automation at scale with [hosted machine group](/power-automate/desktop-flows/hosted-machine-groups).  | On |
+| Enable work or school accounts for hosted machine groups.| If **On**, your hosted machine group has access to your resources that are part of [your work or school account](/power-automate/desktop-flows/hosted-machine-groups#use-your-work-or-school-account). | On |
+| Enable hosted machines.| If **On**, users can build, test, and run attended and unattended desktop flows without providing or setting up any physical machine with [hosted machines](/power-automate/desktop-flows/hosted-machines). | On |
+| Enable cross-geo support for hosted machines| If **On**, this allows users to provision hosted machines in a geography different from that of the configured tenant country. More information: [Azure tenant country/region and supported geographies in the public cloud](/power-automate/desktop-flows/hosted-machines#azure-tenant-countryregion-and-supported-geographies-in-the-public-cloud). | On |
+
+## Enhanced desktop flows schema
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable storage of desktop flow files into v2 schema.| If **On**, Dataverse database consumption for paid license users is reduced. Also, it offloads components of your desktop flows into your Dataverse for Apps File Capacity. More information: [Enable the v2 schema](/power-automate/desktop-flows/schema#enable-the-v2-schema). | On |
+| Opt-out of desktop flow schema v2 enabled by default.| In 2024, v2 schema will be turned **On** for all environments without the option to disable the feature. We recommend that you enable the feature in advance so users can benefit from the product enhancements that come with it. More information: [Schema v2 enabled by default](/power-automate/desktop-flows/schema#schema-v2-enabled-by-default).  | Off |
 
 ## Grids and views
 | Setting | Description | Default value |
