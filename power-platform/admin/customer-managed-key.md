@@ -142,7 +142,7 @@ The Power Platform administrator manages customer-managed key tasks related to t
 
 1. Add the Power Platform environments to the enterprise policy to encrypt data with the customer-managed key. More information: [Add an environment to the enterprise policy to encrypt data](#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
 1. Remove environments from enterprise policy to return encryption to Microsoft managed key. More information: [Remove environments from policy to return to Microsoft managed key](#remove-environments-from-policy-to-return-to-microsoft-managed-key)
-1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy. More information: [Change the environment's encryption key](#change-the-environments-encryption-key)
+1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy. More information: [Create encryption key and grant access](#change-the-environments-encryption-key-with-a-new-enterprise-policy-and-key)
 1. Migrate from BYOK. If you are using the earlier self-managed encryption key feature, you can migrate your key to customer managed key. More information: [Migrate bring-your-own-key environments to customer-managed key](cmk-migrate-from-byok.md)
 
 ## Create encryption key and grant access
