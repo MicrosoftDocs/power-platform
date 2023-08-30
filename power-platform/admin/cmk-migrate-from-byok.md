@@ -26,7 +26,7 @@ If you have enabled audit and search in the BYOK environment and have uploaded f
 
 Similarly, if you didn’t enable these audit or search functionalities and enabled them after your environment is encrypted with this feature, all these storages will be automatically created and encrypted with the encryption key.
 
-1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy. More information: [Create the key and grant access overview](customer-managed-key.md##create-encryption-key-and-grant-access) and [Create enterprise policy](customer-managed-key.md#create-enterprise-policy).
+1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy. More information: [Create encryption key and grant access](customer-managed-key.md#create-encryption-key-and-grant-access) and [Create enterprise policy](customer-managed-key.md#create-enterprise-policy).
 1. Enable the non-BYOK or BYOK environment as **Managed Environment**. More information: [Enable Managed Environment](customer-managed-key.md#enable-managed-environment-to-be-added-to-the-enterprise-policy).
 1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data: More information: [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data).
 
