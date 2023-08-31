@@ -42,15 +42,15 @@ Once set up, the environment variables can be edited as you build your own solut
 
 The table provides information about the five environment variables that need  SAP connection parameters set up.
 
-| Syntax | Description | Default Value |
-| ----------- | ----------- | ----------- |
-| SAP Application Server | JSON string that contains system parameters, host, system number, client, and more. Refer to the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance).  |  |
-| SAP Client ID | The SAP client ID identifies your connection to the SAP system. The SAP backend client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999. Used separately in IDoc transactions. |  |
-| SAP Count of Rows To Read | Sets the maximum number of records to be returned on any search query and helps to alleviate performance concerns.  | 1000 |
-| SAP SPRAS | There are times when you will need to specify a language on specific transactions, such as _ReadMaterial_. We have created an environmental variable called SAP SPRAS that allows you to easily control the value in one place according to your localization requirements. |  |
-| SAP System ID | The SAP system's three-letter system ID (Mandatory if connection type is _Message Server_ and a message server service isn't present). Used separately in IDoc transactions. | |
+| Display name              | Name       | Description     | Default value |
+|--------------------|--------------------|------------------------|---------------|
+| SAP Application Server    | mpa_SAPApplicationServer | JSON string that contains system parameters, host, system number, client, and more. Refer to the SAP property guidance.       |               |
+| SAP Client ID             | mpa_SAPClientID          | The SAP client ID identifies your connection to the SAP system. The SAP backend client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999. Used separately in IDoc transactions.   |               |
+| SAP Count of Rows to Read | mpa_SAPCountofRowsToRead | Sets the maximum number of records to be returned on any search query and helps to alleviate performance concerns.                     | 1000          |
+| SAP Language Key          | mpa_SAPSPRAS             | There are times when you will need to specify a language on specific transactions, such as   ReadMaterial. We have created an environmental variable called SAP SPRAS that allows you to easily control the value in one place according to your localization requirements. |               |
+| SAP System ID             | mpa_SAPSystemID          | The SAP system's three-letter system ID (Mandatory if connection type is   Message Server and a message server service isn't present). Used separately in IDoc transactions.                                                                        |               |
 
-Here are some example connection strings for SAP environment variables:
+Here are some example connection strings:
 
 ### ASHOST - Application Server
 
@@ -118,8 +118,6 @@ Here are some example connection strings for SAP environment variables:
 
 } 
 ```
-
-:::image type="content" source="media/configure-environment-variables/sap-env-var-conn-strings.png" alt-text="Monitor errors in the procurement solutions":::
 
 More information:
 
