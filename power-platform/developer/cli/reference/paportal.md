@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 7/13/2023
+ms.date: 8/16/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,10 +26,26 @@ Commands for working with Power Pages website.
 
 |Command|Description|
 |---------|---------|
+|[pac paportal bootstrap-migrate](#pac-paportal-bootstrap-migrate)|Migrates HTML code from bootstrap V3 to V5.|
 |[pac paportal download](#pac-paportal-download)|Download Power Pages website content from the current Dataverse environment.|
 |[pac paportal list](#pac-paportal-list)|List all Power Pages websites from the current Dataverse environment.|
 |[pac paportal upload](#pac-paportal-upload)|Upload Power Pages website content to current Dataverse environment.|
 
+
+## pac paportal bootstrap-migrate
+
+Migrates HTML code from bootstrap V3 to V5.
+
+[!INCLUDE [paportal-bootstrap-migrate-intro](includes/paportal-bootstrap-migrate-intro.md)]
+
+
+### Required Parameters for paportal bootstrap-migrate
+
+#### `--path` `-p`
+
+Path of website content.
+
+[!INCLUDE [paportal-bootstrap-migrate-remarks](includes/paportal-bootstrap-migrate-remarks.md)]
 
 ## pac paportal download
 
