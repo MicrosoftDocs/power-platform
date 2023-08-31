@@ -19,6 +19,6 @@ The low-code development capabilities of Microsoft Power Platform make it possib
 
 This white paper explores the benefits, strategies, and best practices of modernizing applications with Power Platform. It provides insights and guidance on how Power Platform can help you ensure the success of application modernization efforts as part of an organization’s digital transformation.
 
-*Author*: Robert Standefer (Microsoft)
+**Author**: Robert Standefer (Microsoft)
 
-*Download*: Download the white paper from [https://aka.ms/lowcode/modernize](https://aka.ms/lowcode/modernize)
+**Download**: Download the white paper from [https://aka.ms/lowcode/modernize](https://aka.ms/lowcode/modernize).
