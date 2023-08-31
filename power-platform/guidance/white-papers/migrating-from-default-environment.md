@@ -21,7 +21,7 @@ This white paper explains how organizations and administrators can plan migratio
 
 ## Default environment
 
-One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD), part of Microsoft Entra, tenant and is named as follows: **[Azure AD tenant name] (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment.
+One default environment is created per tenant and is accessible for all users in that tenant. The default environment is created in the region closest to the default region of the Azure Active Directory (Azure AD) tenant and is named as follows: **[Azure AD tenant name] (default)**. Whenever a new user signs up for Power Apps or Power Automate, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment.
 
 You can't delete the default environment and you can't manually back up the default environment. System backups are done continuously. The default environment is limited to 1 TB of storage capacity. The default environment has the following capabilities:
 
