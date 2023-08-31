@@ -73,10 +73,12 @@
           href: unified-experience\finance-operations-install-config-tools.md
         - name: Write, deploy, and debug X++ code
           href: unified-experience\finance-operations-debug.md
-        - name: Deploy packages
-          href: unified-experience\finance-operations-deploy-packages.md
         - name: Unit testing
           href: unified-experience\finance-operations-testing.md
+        - name: Deploy packages
+          href: unified-experience\finance-operations-deploy-packages.md
+        - name: Continuous integration and deployment
+          href: unified-experience\finance-operations-pipelines.md
         - name: Frequently asked questions (FAQs)
           href: unified-experience\finance-operations-faq.md
     - name: Tools
