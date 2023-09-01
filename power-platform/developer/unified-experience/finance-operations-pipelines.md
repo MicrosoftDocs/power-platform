@@ -55,12 +55,10 @@ THIS IS RELATED TO THE NEXT STEP - I DON'T SEE WHERE BASED ON THE IMAGES?
 
 :::image type="content" source="../media/unified-experience/pipelines-create-release-pipeline.png" alt-text="Image of a release pipeline.":::
 
-2. Add the following tasks to stage 2:
+2. Add the following tasks to stage 2 as shown in the following image.
     1. Power Platform Tool Installer
     1. Power Platform WhoAmI
     1. Power Platform Deploy Package
-
-as shown in the following image. 
 
 :::image type="content" source="../media/unified-experience/pipelines-who-am-i.png" alt-text="Image of WhoAmI task settings.":::
 
