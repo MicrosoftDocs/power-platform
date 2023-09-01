@@ -47,7 +47,7 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 1.  Once the pipeline is built, locate the published artifacts located under **Related** in the Summary tab.
 THIS IS RELATED TO THE NEXT STEP - I DON'T SEE WHERE BASED ON THE IMAGES?
 
-(IMAGE LINK 4 - need clean image)
+:::image type="content" source="../media/unified-experience/pipelines-locate-artifacts.png" alt-text="Image of Build a Solution in Azure DevOps.":::
 
 ## Link to your deploy pipeline
 
