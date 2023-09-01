@@ -58,7 +58,9 @@ THIS IS RELATED TO THE NEXT STEP - I DON'T SEE WHERE BASED ON THE IMAGES?
 2. Add the following tasks to stage 2:
     1. Power Platform Tool Installer
     1. Power Platform WhoAmI
-    1. Power Platform Deploy Package as shown in the following image. 
+    1. Power Platform Deploy Package
+
+as shown in the following image. 
 
 (IMAGE LINK 6)
 
