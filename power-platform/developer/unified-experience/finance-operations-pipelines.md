@@ -17,8 +17,7 @@ This article explains how to implement continuous integration and deployment (CI
 
 - Get the latest Dynamics 365 Finance and Operations (link?) and [Power Platform Build Tools](../..//alm/devops-build-tools.md#get-microsoft-power-platform-build-tools).
 - Create a build pipeline to generate a package in Power Platform unified package format
-- Upload your solution and relevant artifacts using NuGet packages for the unified environment
-- Link the generated package to your release pipeline for deployment.
+- Upload your solution and relevant artifacts, and link the generated package to your deploy pipeline
 
 ## Install or update the latest build tools
 
