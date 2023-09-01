@@ -18,7 +18,7 @@ This article explains how to implement continuous integration and deployment (CI
 - Get the latest Dynamics 365 Finance and Operations tools
 - Get the latest Power Platform build tools
 - Upload relevant artifacts using nuget packages with for the unified environment
-- I have no idea what #4 is saying
+- Upload your solution and metadata for your model
 - Create a build pipeline to generate a package in Power Platform unified package format
 - Link the built artifact to the release pipeline for deployment.
 
