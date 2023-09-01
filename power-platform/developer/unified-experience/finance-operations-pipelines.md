@@ -18,7 +18,7 @@ This article explains how to implement continuous integration and deployment (CI
 - Get the latest Dynamics 365 Finance and Operations (link?) and [Power Platform Build Tools](../..//alm/devops-build-tools.md#get-microsoft-power-platform-build-tools).
 - Create a build pipeline to generate a package in Power Platform unified package format
 - Upload your solution and relevant artifacts using Nuget packages for the unified environment
-- Link the generated package to the release pipeline for deployment.
+- Link the generated package to your release pipeline for deployment.
 
 ## Install or update the latest build tools
 
@@ -40,6 +40,33 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 
 (IMAGE LINK 2)
 
-2. 
+2. If licensing is required, select the **Add Licenses to Deployable Packages** for your version 1 task and choose Power Platform Unified Package from the drop down. Provide the **Model Name** to include a license. Add a task for each model that the license is needed. Modify the path to the deployable package created in previous step.
+
+(IMAGE LINK 3)
+
+1.  Once the pipeline is built, locate the published artifacts located under **Related** in the Summary tab.
+THIS IS RELATED TO THE NEXT STEP - I DON'T SEE WHERE BASED ON THE IMAGES?
+
+(IMAGE LINK 4)
+
+## Link to your deploy pipeline
+
+1. Create a release pipeline, choosing the build pipeline from the preceding section.
+
+(IMAGE LINK 5)
+
+2. Add the following tasks to stage 2:
+    1. Power Platform Tool Installer
+    1. Power Platform WhoAmI
+    1. Power Platform Deploy Package as shown in the following image. 
+
+(IMAGE LINK 6)
+
+For the WhoAmI task, add a generic service connection for your environment. You can get the connection details from the Org Details.
+QUESTION: Do users know how to get to this locatin/Org Details?
+
+1. To deploy the task, provide the path of the generated package from the build pipeline.
+
+(IMAGE LINK 7)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
