@@ -13,9 +13,9 @@ ms.subservice: developer
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This article explains how to implement continuous integration and deployment (CI/CD) of Power Platform unified developer experience assets using Azure Pipelines. Spcifically, how to
+This article explains how to implement continuous integration and deployment (CI/CD) of Power Platform unified developer experience assets using Azure Pipelines. Specifically, how to:
 
-- Get the latest Dynamics 365 Finance and Operations (link?) and [Power Platform Build Tools](../..//alm/devops-build-tools.md#get-microsoft-power-platform-build-tools).
+- Get the latest Dynamics 365 Finance and Operations tools (link?) and [Power Platform Build Tools](../..//alm/devops-build-tools.md#get-microsoft-power-platform-build-tools)
 - Create a build pipeline to generate a package in Power Platform unified package format
 - Upload your solution and relevant artifacts, and link the generated package to your deploy pipeline
 
