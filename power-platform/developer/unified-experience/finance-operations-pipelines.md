@@ -13,11 +13,11 @@ ms.subservice: developer
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This article explains how to implement continuous integration and deployment (CI/CD) of Power Platform unified developer experience assets using Azure Pipelines. You will find learn how to
+This article explains how to implement continuous integration and deployment (CI/CD) of Power Platform unified developer experience assets using Azure Pipelines. Spcifically, how to
 
 - Get the latest Dynamics 365 Finance and Operations (link?) and [Power Platform Build Tools](../..//alm/devops-build-tools.md#get-microsoft-power-platform-build-tools).
 - Create a build pipeline to generate a package in Power Platform unified package format
-- Upload your solution and relevant artifacts using Nuget packages for the unified environment
+- Upload your solution and relevant artifacts using NuGet packages for the unified environment
 - Link the generated package to your release pipeline for deployment.
 
 ## Install or update the latest build tools
@@ -25,7 +25,7 @@ This article explains how to implement continuous integration and deployment (CI
 1. Locate and install the “Dynamics 365 Finance and Operations Tools” shared extension under **Organization Settings -> Extensions**.
 QUESTION: Where will I find this menu? Power Platform admin center?
 
-1. Add a **Create Deployable Package** task in your build pipeline, and ensure it contains task version 1. Ensure Add Licenses to Deployable Package has task version 1. If you have tasks with same name then select "View Yaml" for the task to ensure it’s a preview task.
+1. Add a **Create Deployable Package** task in your build pipeline, and ensure it contains task version 1. Ensure Add Licenses to Deployable Package has task version 1. If you have tasks with same name, then select "View Yaml" for the task to ensure it’s a preview task.
 1.  Locate and install the “Power Platform Build Tools” extension from **Organization Settings -> Extensions -> Browse Marketplace**.
 1. Download the X++ Nuget packages with the required version and add them to your artifact feed. For details on this step refer to [Build automation that uses Microsoft-hosted agents and Azure Pipelines - Finance & Operations](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation).
 
@@ -40,7 +40,7 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 
 (IMAGE LINK 2)
 
-2. If licensing is required, select the **Add Licenses to Deployable Packages** for your version 1 task and choose Power Platform Unified Package from the drop down. Provide the **Model Name** to include a license. Add a task for each model that the license is needed. Modify the path to the deployable package created in previous step.
+2. If licensing is required, select the **Add Licenses to Deployable Packages** for your version 1 task and choose Power Platform Unified Package from the drop down menu. Provide the **Model Name** to include a license. Add a task for each model that the license is needed. Modify the path to the deployable package created in previous step.
 
 (IMAGE LINK 3)
 
