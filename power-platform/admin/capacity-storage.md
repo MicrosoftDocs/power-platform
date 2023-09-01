@@ -84,6 +84,9 @@ The actual files such as .pdf (or any other file attachment type) are stored in 
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
+> [!NOTE]
+> - There is no technical limit on the size of a dataverse environment. Limits mentioned on this page are entitlement limits based on product licenses purchased.
+
 To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse** tab. 
 
 Note the following features:
