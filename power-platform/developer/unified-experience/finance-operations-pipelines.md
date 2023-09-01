@@ -33,27 +33,27 @@ QUESTION: Where will I find this menu? Power Platform admin center?
 
 The process for building your solution remains same, and can be based on preexisting build pipelines.
 
-(IMAGE LINK 1)
+:::image type="content" source="../media/unified-experience/pipelines-build-solution.png" alt-text="Image of Build a Solution in Azure DevOps.":::
 
 1. To generate a Power Platform unified package, add your version 1 task to **Create Deployable Package**. Check the box for **Create Power Platform Unified Package**. Add the Platform and Application version used to build the solution, and provide the path for the deployable package location.
 Optionally, you can choose to generate a separate Lifecycle Services format package.
 
-(IMAGE LINK 2)
+:::image type="content" source="../media/unified-experience/pipelines-create-deployable-package.png" alt-text="Image of Create Deployable Package in Azure DevOps.":::
 
 2. If licensing is required, select the **Add Licenses to Deployable Packages** for your version 1 task and choose Power Platform Unified Package from the drop down menu. Provide the **Model Name** to include a license. Add a task for each model that the license is needed. Modify the path to the deployable package created in previous step.
 
-(IMAGE LINK 3)
+:::image type="content" source="../media/unified-experience/pipelines-add-licenses.png" alt-text="Image of Add Licenses to Deployable Package in Azure DevOps.":::
 
 1.  Once the pipeline is built, locate the published artifacts located under **Related** in the Summary tab.
 THIS IS RELATED TO THE NEXT STEP - I DON'T SEE WHERE BASED ON THE IMAGES?
 
-(IMAGE LINK 4)
+(IMAGE LINK 4 - need clean image)
 
 ## Link to your deploy pipeline
 
 1. Create a release pipeline, choosing the build pipeline from the preceding section.
 
-(IMAGE LINK 5)
+:::image type="content" source="../media/unified-experience/pipelines-create-release-pipeline.png" alt-text="Image of a release pipeline.":::
 
 2. Add the following tasks to stage 2:
     1. Power Platform Tool Installer
@@ -62,13 +62,13 @@ THIS IS RELATED TO THE NEXT STEP - I DON'T SEE WHERE BASED ON THE IMAGES?
 
 as shown in the following image. 
 
-(IMAGE LINK 6)
+:::image type="content" source="../media/unified-experience/pipelines-who-am-i.png" alt-text="Image of WhoAmI task settings.":::
 
 For the WhoAmI task, add a generic service connection for your environment. You can get the connection details from the Org Details.
 QUESTION: Do users know how to get to this locatin/Org Details?
 
 1. To deploy the task, provide the path of the generated package from the build pipeline.
 
-(IMAGE LINK 7)
+:::image type="content" source="../media/unified-experience/pipelines-deploy-packages.png" alt-text="Image of Power Platform Deploy Package task settings.":::
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
