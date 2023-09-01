@@ -15,7 +15,7 @@ ms.subservice: developer
 
 This article explains how to implement continuous integration and deployment (CI/CD) of Power Platform unified developer experience assets using Azure Pipelines. Specifically, how to:
 
-- Get the latest [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) and [Power Platform Build Tools](../..//alm/devops-build-tools.md#get-microsoft-power-platform-build-tools)
+- Get the latest [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) and [Power Platform Build Tools](../../alm/devops-build-tools.md#get-microsoft-power-platform-build-tools)
 - Create a build pipeline to generate a package in Power Platform unified package format
 - Upload your solution and relevant artifacts, and link the generated package to your deploy pipeline
 
@@ -46,7 +46,7 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 1.  Once the pipeline is built, locate the published artifacts located under **Related** in the Summary tab.
 THIS IS RELATED TO THE NEXT STEP - I DON'T SEE WHERE BASED ON THE IMAGES?
 
-:::image type="content" source="../media/unified-experience/pipelines-locate-artifacts.png" alt-text="Image of Build a Solution in Azure DevOps.":::
+:::image type="content" source="../media/unified-experience/pipelines-locate-artifacts.png" alt-text="Image of solution artifacts in Azure DevOps.":::
 
 ## Link to your deploy pipeline
 
