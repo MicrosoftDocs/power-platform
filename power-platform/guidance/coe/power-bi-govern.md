@@ -14,9 +14,6 @@ search.audienceType:
   - admin
 ---
 
-<!-- The formatting in line 214 is doing something strange to all the content that follows, making it all hyperlinked. (See it live here: https://learn.microsoft.com/en-us/power-platform/guidance/coe/power-bi-govern. Can the angle brackets and content within be removed? -->
-
-
 # Govern with the CoE Power BI dashboard
 
 As an admin, you can use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, or delete it.
