@@ -22,6 +22,7 @@ This article explains how to implement continuous integration and deployment (CI
 ## Install or update the latest build tools
 
 1. Locate and install the “Dynamics 365 Finance and Operations Tools” shared extension under **Organization Settings -> Extensions**.
+
 QUESTION: Where will I find this menu? Power Platform admin center?
 
 1. Add a **Create Deployable Package** task in your build pipeline, and ensure it contains task version 1. Ensure Add Licenses to Deployable Package has task version 1. If you have tasks with same name, then select "View Yaml" for the task to ensure it’s a preview task.
@@ -39,7 +40,7 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 
 :::image type="content" source="../media/unified-experience/pipelines-create-deployable-package.png" alt-text="Image of Create Deployable Package in Azure DevOps.":::
 
-2. If licensing is required, select the **Add Licenses to Deployable Packages** for your version 1 task and choose Power Platform Unified Package from the drop down menu. Provide the **Model Name** to include a license. Add a task for each model that the license is needed. Modify the path to the deployable package created in previous step.
+1. If licensing is required, select the **Add Licenses to Deployable Packages** for your version 1 task and choose Power Platform Unified Package from the drop down menu. Provide the **Model Name** to include a license. Add a task for each model that the license is needed. Modify the path to the deployable package created in previous step.
 
 :::image type="content" source="../media/unified-experience/pipelines-add-licenses.png" alt-text="Image of Add Licenses to Deployable Package in Azure DevOps.":::
 
@@ -54,7 +55,7 @@ THIS IS RELATED TO THE NEXT STEP - I DON'T SEE WHERE BASED ON THE IMAGES?
 
 :::image type="content" source="../media/unified-experience/pipelines-create-release-pipeline.png" alt-text="Image of a release pipeline.":::
 
-2. Add the following tasks to stage 2 as shown in the following image.
+1. Add the following tasks to stage 2 as shown in the following image.
     1. Power Platform Tool Installer
     1. Power Platform WhoAmI
     1. Power Platform Deploy Package
