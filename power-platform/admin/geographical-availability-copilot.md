@@ -1,5 +1,5 @@
 ---
-title: Enable copilots and generative AI in non-US regions
+title: Enable copilots and generative AI in non-US and non-Switzerland regions
 description: Description about this article.
 author: sidhartg
 ms.component: pa-admin
@@ -11,17 +11,18 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin 
 ---
-# Enable copilots and generative AI features in non-US regions
+# Enable copilots and generative AI features in non-US and non-Switzerland regions
 
-With copilots and generative AI features in Power Platform and Dynamics 365, you can build apps, flows, pages, chatbots, ask questions about your data, summarize information, reply to chat and email messages, generate content ideas, and get general answers related to the product.
+With copilots and generative AI features in Power Platform and Dynamics 365, you can build apps, flows, pages, chatbots, ask questions about your data, summarize information, reply to chat and email messages, generate content ideas, get general answers related to the product, and more.
 
-These capabilities are currently available in environments in the US region and support the English language. This feature allows you to try the copilot and generative features across Power Platform and Dynamics 365 customer engagement environments is non-US regions.
+All these capabilities are currently available in environments in the US region and support the English language. They are starting to be available in Switzerland progressively. With this feature, you can try the copilot and generative features across Power Platform and Dynamics 365 customer engagement environments is non-US and non-Switzerland regions.
 
 > [!NOTE]
-> - The underlying infrastructure for copilots is currently available in the US region only. Accessing copilots or generative AI features from non-US regions results in **data movement across regional boundaries**. Once enabled, any data movement that already happened while this feature was enabled cannot be reversed by [removing your consent](#disable-copilots-and-generative-ai-in-non-us-regions).
-> - This setting is only available in a Power Platform environment that is created in regions other than **United States - Default** and **Preview (United States)**. To enable or disable copilot features in environments created in **United States – Default** or **Preview (United States)** regions, refer to the [documentation for the applicable product](#geographical-availability-of-copilots-and-generative-ai-features). 
+> - The underlying infrastructure for copilots is currently available in the US and Switzerland regions only. Accessing copilots or generative AI features from non-US and non-Switzerland regions results in **data movement across regional boundaries**. Once enabled, any data movement that already happened while this feature was enabled cannot be reversed by [removing your consent](#disable-copilots-and-generative-ai-in-non-us-regions).
+> - All data from the Copilots and generative AI features in the Europe region (including France and Germany) will be handled by the underlying infrastructure hosted in Switzerland region. For all other regions, the requests are handled by the infrastructure hosted in the US region.
+> - This setting is only available in a Power Platform environment that is created in regions other than **United States - Default**, **Preview (United States)**, and **Switzerland**. To enable or disable copilot features in environments created in **United States – Default**, **Preview (United States)**, or **Switzerland** regions, refer to the [documentation for the applicable product](#geographical-availability-of-copilots-and-generative-ai-features). 
 
-You can allow copilots in your non-US environments by following these steps:
+You can allow copilots in your non-US and non-Switzerland environments by following these steps:
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -41,9 +42,9 @@ You can allow copilots in your non-US environments by following these steps:
 
     After you consent, the status on the **Allow data movement across regions for AI features** card shows **Allowed** and copilots and generative AI features are enabled in the environment.
 
-## Disable copilots and generative AI in non-US regions
+## Disable copilots and generative AI in non-US and non-Switzerland regions
 
-You can disable the copilots and generative AI features in non-US environments by following these steps.
+You can disable the copilots and generative AI features in non-US and non-Switzerland environments by following these steps.
 
 > [!IMPORTANT]
 > Any data movement that happened while this feature was enabled cannot be reversed by removing your consent.
@@ -68,7 +69,7 @@ Currently all the Power Platform and Dynamics 365 copilots and generative featur
 
 The following table indicates the availability of copilots and generative AI features in non-US environments.
 
-| Product | Feature  | Regions available without consent | Available in non-US region with consent | Language support |
+| Product | Feature  | Regions available without consent | Available in non-US/non-Switzerland regions with consent | Language support |
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
 | Dynamics 365 Marketing | **Content Ideas: Generate engaging email content**</br>[Use Copilot to generate email content ideas](/dynamics365/marketing/content-ideas) | US | No | English |
 | Dynamics 365 Marketing  | **Query Assist: Natural language to segment**</br>[Target the right customers using the query assist copilot](/marketing/real-time-marketing-natural-language-segments) | US | No | English |
@@ -89,7 +90,7 @@ The following table indicates the availability of copilots and generative AI fea
 | Dynamics 365 Supply Chain Management | **Copilot for Procurement: Summarize and handle PO changes in Dynamics 365 SCM Hub**</br>Learn more: [Review and accept changes to confirmed purchase orders](/dynamics365/supply-chain/procurement/purchase-order-changes-after-confirmation) | US | No | English |
 | Business Central| **AI-Generated Product Descriptions**<br /></br>[AI-powered item marketing text with Copilot](/dynamics365/business-central/ai-overview) | US | No | English |
 | Dataverse | **Dataverse Service for Copilot for M365 BizChat and BAP business applications<br /></br>**(doc link) | US | No | English |
-| Dataverse | **Excel to Table for New Makers<br /></br>**(doc link) | US | No | English |
+| Dataverse | **Excel to Table for New Makers<br /></br>**(doc link) | US | Yes | English |
 | Dataverse | **M365 Biz Chat Q&amp;A and Actions with Dataverse Connectors**</br>(doc link) | US | No | English |
 | AI Builder | **Text Generation with GPT**<br /></br>[Text generation model overview (preview)](/ai-builder/prebuilt-azure-openai) | US | No | English |
 | Power Apps | **Maker Copilot (NL2Table)**<br /></br>Learn more: [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app) | US | No | English |
