@@ -173,12 +173,6 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Environment
   - Is desktop flow orphaned (yes/no)
   
-  > [!IMPORTANT]
-  >
-  > - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
-  > - Windows recorder (V1) is deprecated and no longer works.
-  > - Migrate your flows created with these solutions to Power Automate for desktop or delete them.
-
 - **RPA Session** represents a desktop flow session. The following information is available for each bot:
   - ID
   - Desktop Flow

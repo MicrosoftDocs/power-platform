@@ -92,10 +92,6 @@ If you're planning to run an internal Training in a Day event (such as App in a 
 
 #### Training in a day pages in Nurture apps - Maker app
 
->[!NOTE]
->In the February 2023 release, the **Training in a day registration** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Training in a day registration canvas app has been renamed to [deprecated] Training in a day registration and will be removed from the solution by June 2023.
->The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
-
 If you're planning to run a Training in a Day event, use this page in the Nurture apps - Maker app to enable your users to register for upcoming events.
 
 **Permission**: As soon as you're running internal training events, share the Nurture apps - Maker with everyone in the organization.
@@ -185,10 +181,6 @@ The dashboard also provides the ability to view detailed feedback with and filte
 ### Apps
 
 #### Template Catalog page in Nurture apps - Maker app
-
->[!NOTE]
->In the February 2023 release, the **Template Catalog** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Template Catalog canvas app has been renamed to [deprecated] Template Catalog and will be removed from the solution by June 2023.
->The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
 A custom page that CoE admins can use to share app and component templates, in addition to best practice documents, with their makers.
 
