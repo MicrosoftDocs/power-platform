@@ -123,7 +123,7 @@ This solution collects app launches from the moment it's configured, and is not 
 You can load historic data into the CoE Starter Kit tables manually using one of the flows provided in the solution, as described here.
 
 > [!NOTE]
-> The user retrieving Audit Logs must have permission to the audit logs. Minimum permissions for this is described in [Before you search the audit logs](/microsoft-365/compliance/audit-log-search?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
+> The user retrieving Audit Logs must have permission to the audit logs. Learn more: [Before you search the audit logs](/microsoft-365/compliance/audit-log-search?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
 
 1. Browse to the [Audit Log search](https://compliance.microsoft.com/auditlogsearch).
 1. Search for the Launched app activity in the date range available to you.
