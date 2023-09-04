@@ -87,12 +87,12 @@ If you want to fully update your entire inventory again, you can do that by chan
 
 To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects which have been modified since the object was last inventoried.
 
-If you want to force the inventory fo an app or flow, for example to make sure all the information is up to date, you can use the **Inventory Me** flag:
+If you want to force the inventory for an app or flow, for example to make sure all the information is up to date, you can use the **Inventory Me** flag:
 
-1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
 1. Open the **Power Platform Admin View** app.
 1. Select **Apps** or **Flows**.
-1. Select a single app or flow from the view.
+1. Select the app or flow you want to inventory from the view.
 1. Select **Settings**.
 1. Change the **Inventory Me** flag to Yes.
 
@@ -100,9 +100,9 @@ Once this flag has been set to yes, the next inventory run will update the objec
 
 ## Customize emails
 
-All emails that are sent as part of the CoE Starter Kit are stored in the **Customized Emails** table that's part of the solution. To customize the emails, you do not need to modify the flows or apps that send the emails. Instead you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app:
+All emails that are sent as part of the CoE Starter Kit are stored in the **Customized Emails** table. To customize the emails, you do not need to modify the flows or apps that send the emails. Instead you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app:
 
-1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
 1. Open the **CoE Admin Command Center** app.
 1. Select **Customized Emails**.
 1. Select the eMail you want to customize > **Edit**.
@@ -118,7 +118,7 @@ The following limitations apply when updating environment variables:
 
 To update environment variables, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center)
 
-1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
 1. Open the **CoE Admin Command Center** app.
 1. Select **Environment Variables**, and update the current value.
 
