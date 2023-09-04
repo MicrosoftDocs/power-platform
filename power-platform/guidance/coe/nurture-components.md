@@ -134,10 +134,6 @@ A page inside the Nurture apps - Admin app that the Solution Assessment admin us
 
 #### Solution Assessment page in Nurture apps - Maker apps
 
->[!NOTE]
->In the February 2023 release, the **Maker Assessment** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Maker Assessment canvas app has been renamed to [deprecated] Maker Assessment and will be removed from the solution by June 2023.
->The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
-
 The Solution Assessment page can be used to ask users a series of questions regarding the target audience, data and support of the solution they're planning and informing them about governance, support and license considerations a maker needs to keep in mind before starting the development of their solution.
 
 **Permission**: The Nurture apps - Maker can be shared with the entire organization.

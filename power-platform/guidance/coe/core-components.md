@@ -340,10 +340,6 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 
 #### CoE Admin Command Center
 
-> [!NOTE]
-> - In the February 2023 release, the **Admin - Command Center** canvas app has been replaced with the CoE Admin Command Center model-driven app. The new app uses model-driven app features and custom pages. The Admin - Command Center app has been renamed to [deprecated] Admin - Command Center and will be removed from the solution by June 2023.
-> - The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
-
 A canvas app used by admins as a starting point to launch other apps in the CoE Starter Kit and review content relevant to admins.
 
 Use this app to:
