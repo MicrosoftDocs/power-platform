@@ -87,7 +87,7 @@ If you want to fully update your entire inventory again, you can do that by chan
 
 To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects which have been modified since the object was last inventoried.
 
-If you want to force the inventory fo an app or flow, for example to make sure all the information is up to date, you can use the **Inventory Me&& flag:
+If you want to force the inventory fo an app or flow, for example to make sure all the information is up to date, you can use the **Inventory Me** flag:
 
 1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment
 1. Open the **Power Platform Admin View** app.
