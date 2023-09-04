@@ -214,14 +214,14 @@ You can use the **Connector deep dive** page to better understand your connector
 
 :::image type="content" source="media/pb-20.png" alt-text="Connector deep dive":::
 
-### <a id="desktop-flows-risk-assessment"> Desktop flow usage
+### <a id="desktop-flows-risk-assessment"></a> Desktop flow usage
 
 The **Desktop Flow usage** page enables you to filter by:
 
 - Environment name and type
 - Maker
 - Desktop flow name
-- Error code 
+- Error code
 - Run completed on date
 
 Some typical assessments an admin might perform are described in the following sections.
