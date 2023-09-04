@@ -18,6 +18,10 @@ The components in the Center of Excellence (CoE) Starter Kit are designed for mu
 
 The app auditing sample process showcases how your CoE department or IT administrators can automate an auditing process on an app-level basis to gather additional information about an app, like business justification and the impact of an outage, from the maker.
 
+>[!NOTE]
+> Follow the [setup compliance components](setup-governance-components.md) steps to configure this process.
+> Learn more: [Compliance process](governance-components.md#compliance-processes).
+
 ## Process description
 
 **Problem statement:** There are many apps in the Contoso tenant. IT doesn't know what all these apps are intended for or how to support individual apps when the helpdesk is called, and it's unclear whether all the apps are being maintained to any standard. They can see details like the description and number of shared users from the Power Apps for Admins connector, but they need to communicate directly with the app owner to fully understand the situation around the apps. Especially in a large organization like Contoso, it's not feasible for the IT team to be responsible for manually reaching out to each app owner individually, and those details can't be stored in email conversations. The Contoso team would like to have a central app catalog for high-quality apps.

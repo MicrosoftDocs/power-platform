@@ -136,7 +136,6 @@ Using the CoE dashboard, admins also have the ability to identify unused apps an
 
 - The highest possible score for a flow is 10. A score of 10 represents a flow that hasn't been modified since it was created, is using a nonproduction word like _test_ or _demo_ in the title, was created over three years ago, was likely created from a template, is in a stopped state, doesn't have an owner, and isn't complex (contains fewer than five actions).
 
-
 The **App deep dive** page shows the archive score. You can either sort the table by highest archive score, or select **Archive Score** in the decomposition tree visual to view aggregated data across all scores. You can use filters to target specific makers, date ranges, environments, departments, or connectors. Drill through from an individual app to the **Review Archive Score** page to view the score details.
 
 The **Archive Score** is the sum of multiple criteria:
@@ -215,7 +214,7 @@ You can use the **Connector deep dive** page to better understand your connector
 
 :::image type="content" source="media/pb-20.png" alt-text="Connector deep dive":::
 
-### <a id="desktop-flows-risk-assessment" /> Desktop flow usage
+### <a id="desktop-flows-risk-assessment"> Desktop flow usage
 
 The **Desktop Flow usage** page enables you to filter by:
 
