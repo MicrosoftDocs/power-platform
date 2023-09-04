@@ -66,7 +66,7 @@ You may want to monitor and govern only certain environments with the CoE Starte
 
 ## Running a full inventory
 
-To reduce API calls, the inventory flows do not update all objects with every sync flow, they only update objects which have been modified since the object was last inventoried.
+To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects which have been modified since the object was last inventoried.
 
 The inventory flows also don't check each object every day to see if its modified date is more recent than what is in inventory. Instead these flows:
 
@@ -82,6 +82,31 @@ If you want to fully update your entire inventory again, you can do that by chan
 1. Set the value of the **Full inventory** environment variable to **Yes**. Learn more: [Update environment variables](#update-environment-variables)).
 1. Run the **Admin | Sync Template v3 (Driver)** flow.
 1. Set the **Full inventory** environment variable to **No**.
+
+## Update inventory for a selected app or flow
+
+To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects which have been modified since the object was last inventoried.
+
+If you want to force the inventory fo an app or flow, for example to make sure all the information is up to date, you can use the **Inventory Me&& flag:
+
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment
+1. Open the **Power Platform Admin View** app.
+1. Select **Apps** or **Flows**.
+1. Select a single app or flow from the view.
+1. Select **Settings**.
+1. Change the **Inventory Me** flag to Yes.
+
+Once this flag has been set to yes, the next inventory run will update the object even if it has not recently been modified and the flag will be set back to no.
+
+## Customize emails
+
+All emails that are sent as part of the CoE Starter Kit are stored in the **Customized Emails** table that's part of the solution. To customize the emails, you do not need to modify the flows or apps that send the emails. Instead you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app:
+
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment
+1. Open the **CoE Admin Command Center** app.
+1. Select **Customized Emails**.
+1. Select the eMail you want to customize > **Edit**.
+1. By default, all emails are provided in English. You can also add localized versions of the email by selecting **add language**.
 
 ## Update environment variables
 
