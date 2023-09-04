@@ -13,9 +13,6 @@ search.audienceType:
   - admin
 ---
 
-<!-- I added "logs" to the sentence in lines 247 and 247. Please check to see if that is correct. In line 97, it says to open Power Apps but the image shows Power Automate in the top corner, and I don't know if that's correct or not. -->
-
-
 # Collect audit logs using a custom connector (deprecated)
 
 > [!IMPORTANT]
@@ -96,8 +93,6 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Go to **[Power Apps](https://make.powerapps.com)** > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector is listed here; it has been imported with the core components solution.
 1. Select **Edit**.
-
-    ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
 
 1. If your tenant is a commercial tenant, leave the **General** page as is.
 

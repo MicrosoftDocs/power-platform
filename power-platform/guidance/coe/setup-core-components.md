@@ -10,10 +10,6 @@ ms.reviewer: sericks
 
 ---
 
-<!-- In lines 321, 322, and 323, is CoE BYDODL correct? Or should it be CoE BYODL? -->
-
-
-
 # Set up inventory components
 
 This article helps you set up the inventory components of the Core solution of the Center of Excellence (CoE) Starter Kit. The inventory is the heart of the CoE; before embarking on your Microsoft Power Platform adoption journey, you want to first understand whether you have existing apps, flows, and makers, and lay the foundation to monitor new apps and flows being created.
@@ -318,9 +314,9 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 
     :::image type="content" source="media/byodl-13.png" alt-text="Wait for the CoE BYODL Environments dataflow to finish.":::
     
-1. Now edit the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps**, and **CoE BYDODL Flows** dataflows and complete the same steps to update the **DatalakeURL** and **EnvironmentAPI** parameters and configure the connections to the data sources used by this dataflow. 
-1. Confirm that the **CoE BYODL Apps** and **CoE BYODL Model Driven Apps** dataflows are configured to load data to the existing **admin_App** table, and the **CoE BYDODL Flows** dataflow is configured to load data to the existing **admin_Flow** table.
-1. Publish the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps** and **CoE BYDODL Flows** dataflows and wait for the refresh to finish.
+1. Now edit the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps**, and **CoE BYODL Flows** dataflows and complete the same steps to update the **DatalakeURL** and **EnvironmentAPI** parameters and configure the connections to the data sources used by this dataflow. 
+1. Confirm that the **CoE BYODL Apps** and **CoE BYODL Model Driven Apps** dataflows are configured to load data to the existing **admin_App** table, and the **CoE BYODL Flows** dataflow is configured to load data to the existing **admin_Flow** table.
+1. Publish the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps** and **CoE BYODL Flows** dataflows and wait for the refresh to finish.
 
     :::image type="content" source="media/byodl-17.png" alt-text="Wait for the CoE BYODL Apps, Model Driven Apps, and Flows dataflows to finish.":::
     
