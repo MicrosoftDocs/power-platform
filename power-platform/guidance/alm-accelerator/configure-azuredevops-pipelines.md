@@ -2,12 +2,15 @@
 title: Configure ALM Accelerator pipelines
 description: Learn how to customize Azure Pipelines in ALM Accelerator for Power Platform.
 ms.topic: how-to
-ms.date: 04/10/2023
+ms.date: 09/05/2023
 ms.subservice: guidance
 author: mikefactorial
 ms.author: rusant
 ms.reviewer: sericks
 ms.custom: bap-template
+contributors:
+- RajeevPentyala
+  
 ---
 
 # Configure ALM Accelerator pipelines
@@ -147,7 +150,7 @@ The pipelines use variables to determine whether or not a task should execute or
 | CacheEnabled | True | Export/Deploy | If false, the caching of PowerShell modules is disabled. This option is useful if your pipelines execute clean-up of the cache directory after the pipelines execute. |
 | ProcessCanvasApps | True | Export/Deploy | If false, the canvas apps aren't unpacked during export or packed during builds.<br/>**NOTE**: The [canvas unpack and pack functionality is currently in preview](https://aka.ms/paccanvas). It's not recommended for use in production environments at this time. However, you can't view canvas source code in source control unless you set this variable to True. |
 | DisableSolutionChecker | False | Deploy | If true, solution checker doesn't run on every build that's initiated through a pull request. |
-| SkipSolutionImport | False | Deploy | If true, solution import step will be skipped during deployment. However, other activities such as flow activations and sharing will still be performed. |
+| SkipSolutionImport | False | Deploy | If true, the solution import step is skipped during deployment. However, other activities such as flow activations and sharing are still be performed. |
 
 ## Next steps
 
