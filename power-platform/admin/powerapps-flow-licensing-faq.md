@@ -591,6 +591,8 @@ Geo migration isn't supported for Dataverse for Teams environments.
 
 ## AI Builder
 
+*note: you can find other AI Builder licensing FAQ about credit management [here](https://go.microsoft.com/fwlink/?linkid=2246312)*
+
 ### How is AI Builder licensed?
 
 AI Builder is licensed as an add-on to your Power Apps, Power Automate, or Dynamics 365 license. Each $500 subscription includes 1 million AI Builder service credits applied at the tenant level. To use your AI Builder capacity, an administrator has to allocate AI Builder capacity to the environment where you want to use AI Builder.
