@@ -10,12 +10,14 @@ ms.author: ravichada
 ms.reviewer: sericks
 ms.custom: bap-template
 contributors:
-- RobStand
+    - RobStand
 ---
 
 # Migrating apps and flows from the default environment
 
 This white paper explains how organizations and administrators can plan migration of their apps and flows from the default environment.
+
+*Authors*: Ravi Chada (Microsoft), Rui Santos (Microsoft)
 
 ## Default environment
 
