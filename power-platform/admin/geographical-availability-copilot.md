@@ -101,7 +101,7 @@ The following table indicates the availability of copilots and generative AI fea
 | Power Pages| **C2 Copilot (Power Virtual Agents Chatbot)**<br /><br />Learn more: [Enable chatbot in a Power Pages site](/power-pages/getting-started/enable-chatbot) | US | No | English |
 | Power Pages | **Create form in webpage**<br /><br />Learn more: [Create AI-generated form using Copilot](/power-pages/getting-started/add-form-copilot) | US | No | English |
 | Power Pages | **Create text in webpage**<br /><br />Learn more: [Add AI-generated text using Copilot](/power-pages/getting-started/add-text-copilot) | US | No | English |
-| Power Pages| **Create website page**<br /><br />(doc link) | US | No | English |
+| Power Pages| **Create a webpage**<br /><br /> [Create an AI-generated webpage](/power-pages/getting-started/create-page-copilot) | US | No | English |
 | Power Virtual Agents | **Generative answers**</br>[Generative answers](/power-virtual-agents/nlu-boost-conversations) | US | No | English |
 | Power Virtual Agents | **Power Virtual Agents Copilot**</br>[Create (end edit) with Copilot)](/power-virtual-agents/nlu-authoring) | US | No | English |
 
