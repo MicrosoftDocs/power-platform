@@ -41,9 +41,9 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 
     :::image type="content" source="../media/unified-experience/pipelines-add-licenses.png" alt-text="Image of Add Licenses to Deployable Package in Azure DevOps.":::
 
-1.  Once the pipeline is built, locate the published artifacts located under **Related** in the Summary tab.
+1.  Once the pipeline is built, locate the published artifacts located under **Related** in the **Summary** tab.
 
-    :::image type="content" source="../media/unified-experience/pipelines-locate-artifacts.png" alt-text="Image of solution artifacts in Azure DevOps.":::
+    :::image type="content" source="../media/unified-experience/pipelines-locate-artifacts2.png" alt-text="Image of solution artifacts in Azure DevOps.":::
 
 ## Link to your deploy pipeline
 
