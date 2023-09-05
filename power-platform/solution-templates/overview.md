@@ -79,5 +79,8 @@ You can log your questions and get support for the solution templates at <https:
 - [SAP Vendor Management app](finance/sap-procurement/use/vendor-management.md)
 - [SAP Requisition Management app](finance/sap-procurement/use/requisition-management.md)
 - [SAP Purchase Orders Management app](finance/sap-procurement/use/purchase-order-management.md)
+- [SAP Goods Receipt Management app](finance/sap-procurement/use/goods-receipt-management.md)
+- [SAP Vendor Invoice Management app](finance/sap-procurement/use/vendor-invoice-management.md)
+- [SAP Vendor Payment Management app](finance/sap-procurement/use/payment-management.md)
 - [Get started using the Employee Kudos app](hr/employee-kudos/use.md)
 - [Use the Awards and Recognition app](hr/awards-and-recognition/use.md)
