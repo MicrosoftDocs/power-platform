@@ -117,7 +117,6 @@ You can filter your view to display reports from a specific **environment** or f
 
 ## Learn more
 
-- Analyze the [desktop flows risk assessment](../guidance/coe/power-bi-govern.md#desktop-flows-risk-assessment) in your environment.
 - [Create desktop flows](/power-automate/desktop-flows/create-desktop).
 - [Create Selenium IDE flows](/power-automate/ui-flows/create-web).
 - Run [desktop flows](/power-automate/desktop-flows/run-desktop-flow).

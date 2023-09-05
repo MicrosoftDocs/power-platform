@@ -25,7 +25,7 @@ ms.subservice: solution-templates
 
 The [SAP ERP connector](/connectors/saperp/) is designed for use by multiple users of an application; therefore, the connections aren't shared. The user credentials are provided in the connection, while other details required to connect to the SAP system (like server details and security configuration) are provided as part of the action.
 
-Enabling single sign-on (SSO) makes it easy to refresh data from SAP while adhering to user-level permissions configured in SAP. There are several ways you can set up SSO for streamlined identity and access management. To set up SSO, be sure to obtain the necessary administrative privileges in Azure and SAP.
+Enabling single sign-on (SSO) makes it easy to refresh data from SAP while adhering to user-level permissions configured in SAP. There are several ways you can set up SSO for streamlined identity and access management.
 
 The SAP ERP connector supports the following authentication types:
 
@@ -35,6 +35,8 @@ The SAP ERP connector supports the following authentication types:
 | [Windows authentication](/connectors/saperp/#windows-authentication)     | Use Windows user name and password to access SAP server. |   Steps 1, 2, 3, 4      |
 | [Azure AD authentication](/connectors/saperp/#azure-ad-integrated)    | Use Azure AD to access SAP server. | Steps 1, 2, 3, 4     |
 
+> [!NOTE]
+> Specific administrative privileges are required to set up SSO in Azure and SAP. Be sure to obtain the necessary admin privileges for each system before setting up SSO.
 More information:
 
 - [Azure Active Directory documentation](/azure/active-directory/)
@@ -144,4 +146,3 @@ More information on setup and configuration:
 
 - [Overview](../overview.md)
 - [Get started](get-started.md)
-

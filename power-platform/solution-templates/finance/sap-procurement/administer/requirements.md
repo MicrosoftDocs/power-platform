@@ -23,7 +23,7 @@ ms.subservice: solution-templates
 
 Review the requirements, identify opportunities, and develop a plan of action that best suits your organization's needs.
 
-- Your organization has the necessary premium  to proceed: 
+- Your organization has the necessary premium  to proceed:
 
   - Power Apps, Power Automate, and Power BI premium [licensing](https://www.microsoft.com/licensing/default) that supports setting up and using an on-premises data gateway with premium applications, flows, and connectors (SAP ERP and Dataverse)
   - Required licenses for the admins, developers, and functional business users who will be working with SAP solutions

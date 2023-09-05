@@ -72,7 +72,7 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
-#### Compliance Status
+#### Compliance status
 
 The Developer Compliance Center allows makers to check the compliance status and submit more details for the following resources:
 
@@ -89,7 +89,7 @@ Based on the resource, makers can filter their resources to the following compli
 
 - **Missing Details** indicates that the compliance process or an admin has requested more details to be submitted to bring the resource back into compliance.
 - **Flagged as inactive** indicates that the resource has been marked as inactive.
-- **Non-compliant** indicates that the resource is currently non compliant with existing DLP or billing policies, often this means that the resource can't be used until the problem is resolved.
+- **Non-compliant** indicates that the resource is currently noncompliant with existing DLP or billing policies; often this means that the resource can't be used until the problem is resolved.
 - **Re-publish needed** (for canvas apps only) indicates that the app hasn't been published in the past 60 days.
 - **Missing description** indicates that the resource needs a description populated to help the admin understand what the resource is used for.
 
@@ -104,11 +104,11 @@ For **Missing Details**, makers can achieve compliance by providing additional i
 - **Conditions of use**: (For connectors only) Describe in which situations the connector can and should be used.
 - **Mitigation Plan provided**: For critical solutions, upload a mitigation plan that details what business users do if there isn't an outage.
 
-**Customize**: Verify that the **Support Details** form matches your requirements, and update if necessary.
+**Customize**: Verify that the **Support details** form matches your requirements, and update if necessary.
 
 :::image type="content" source="media/coe57.png" alt-text="Developer Compliance Center app details":::
 
-### Business process flows
+### Business process flows (BPFs)
 
 #### Power Apps App Approval BPF
 
@@ -206,12 +206,10 @@ Represents inactivity notifications approval tasks started during the Admin | In
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
-|[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  Triggered by admin \| Sync Template v3 |
-| [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
-| [Admin \| Inactivity notifications v2 (Check Approval)](#admin--inactivity-notifications-check-approval) | Schedule | Daily |
-| [Admin \| Inactivity notifications v2 (Clean Up and Delete)](#admin--inactivity-notifications-clean-up-and-delete) | Schedule | Daily |
 | [Admin \| Inactivity notifications (Start Approval for Apps)](#admin--inactivity-notifications-v2-start-approval-for-apps) | Schedule | Weekly |
 | [Admin \| Inactivity notifications (Start Approval for Flows)](#admin--inactivity-notifications-v2-start-approval-for-flows) | Schedule | Weekly |
+| [Admin \| Inactivity notifications v2 (Check Approval)](#admin--inactivity-notifications-check-approval) | Schedule | Daily |
+| [Admin \| Inactivity notifications v2 (Clean Up and Delete)](#admin--inactivity-notifications-clean-up-and-delete) | Schedule | Daily |
 | [Admin \| Email Managers Ignored Approvals](#admin--email-managers-ignored-inactivity-notifications-approvals) | Instant | Weekly |
 
 #### Admin \| Inactivity notifications v2 (Start Approval for Apps)
@@ -348,15 +346,14 @@ This flow sends a daily reminder email to environment owners who have been asked
 >[!NOTE]
 >These components will not work in GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
 
-[Watch a walk-through](https://www.youtube.com/watch?v=0zptiBppTNo&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the clean-up for orphaned objects process works.
+[Watch a walk-through](https://www.youtube.com/watch?v=0zptiBppTNo&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the cleanup for orphaned objects process works.
 
 ### Flows
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
-| [Request Orphaned Objects Reassigned (Child)](#request-orphaned-objects-reassigned-child) | Instant | child |
 | [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | weekly |
-
+| [Request Orphaned Objects Reassigned (Child)](#request-orphaned-objects-reassigned-child) | Instant | child |
 
 #### Request Orphaned Objects Reassigned (Parent)
 
@@ -388,14 +385,14 @@ If they choose to see the items individually, then they can make these decisions
 
 | Name | Description | Default value |
 |------|---------------|------|
-| Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify if you want to quarantine apps if they're not compliant. Specified in days. | 7 days |
+| Quarantine Apps after x days of noncompliance | If using the Compliance flow for apps to gather compliance details from makers, specify if you want to quarantine apps if they're not compliant. Specified in days. | 7 days |
 
 ### Flows
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
 |[Admin \| Quarantine non-compliant apps](#admin--quarantine-non-compliant-apps) | Scheduled |  Daily |
-| [Admin \| Set app quarantine status](#admin--set-app-quarantine-status) | Automated | When the Quarantine App field in the PowerApps App table is changed |
+| [Admin \| Set app quarantine status](#admin--set-app-quarantine-status) | Automated | When the Quarantine App field in the Power Apps App table is changed |
 
 #### Admin \| Quarantine non-compliant apps
 
@@ -416,7 +413,7 @@ This flow is triggered automatically if the app quarantine status field of the P
 
 This field:
 
-- Is set to **Yes** by the Admin \| Quarantine non-compliant apps.
+- Is set to **Yes** by the Admin \| Quarantine noncompliant apps.
 - Can be updated to either **Yes** or **No** manually by the admin from the [Power Platform Admin View](core-components.md#power-platform-admin-view) to quarantine apps or release apps from quarantine.
 
 This flow sets the quarantine status of the app.
