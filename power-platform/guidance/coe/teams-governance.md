@@ -53,8 +53,8 @@ The admin can further decide to approve a business justification, but highlight 
 
 ## Monitoring and weekly cleanup process
 
->[!NOTE]
->Automatically deleting inactive Dataverse for Teams environment is now part of the Power Platform Admin Center. Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
+> [!NOTE]
+> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. More information: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md)
 
 Admins can also monitor inactive Microsoft Teams environments in their tenant and invoke cleanup as appropriate, in addition to having automated cleanup of unused environments in place to free up capacity for more compelling scenarios.
 
