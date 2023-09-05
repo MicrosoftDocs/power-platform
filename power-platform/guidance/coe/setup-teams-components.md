@@ -5,30 +5,30 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 09/05/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
 # Set up Dataverse for Teams environment management
 
->[!IMPORTANT]
->The flows supporting this processes post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams is not available in GCC High and DoD.
+> [!IMPORTANT]
+> The flows supporting this processes post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams is not available in GCC High and DoD.
 > It is important that these flows remain **turned off** in these regions as they will not work fully. If turned on, makers will never receive the request to submit a business justification via an adaptive card and the [weekly cleanup](teams-governance.md#monitoring-and-weekly-cleanup-process) will remove all Dataverse for Teams environments as none have a business justification submitted. 
 
 This article will help you to setup the Dataverse for Teams environment management components of the Governance solution. Learn more: [Microsoft Dataverse for Teams environment management](teams-governance.md)
 
 This set of functionality allows you to monitor new Dataverse for Teams environments.
 
->[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environments), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+> [!IMPORTANT]
+> This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environments), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
->[!NOTE]
->Automatically deleting inactive Dataverse for Teams environment is now part of the Power Platform Admin Center. Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
->As there is parity between this feature, and the functionality in the CoE Starter Kit we will remove that portion of the features below from the CoE starter kit once the native support in the product is available broadly in all clouds.
+> [!NOTE]
+> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. More information: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
+> As there is parity between this feature, and the functionality in the CoE Starter Kit we will remove that portion of the features below from the CoE starter kit once the native support in the product is available broadly in all clouds.
 
 ## Set up the Dataverse for Teams environment management components using the Setup Wizard
 
