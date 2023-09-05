@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 05/02/2023
+ms.date: 09/01/2023
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
@@ -83,6 +83,9 @@ The actual files such as .pdf (or any other file attachment type) are stored in 
 ### Dataverse tab
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
+
+> [!NOTE]
+> There is no technical limit on the size of a Dataverse environment. Limits mentioned on this page are entitlement limits based on product licenses purchased.
 
 To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse** tab. 
 

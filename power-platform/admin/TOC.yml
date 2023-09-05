@@ -52,6 +52,8 @@
               href: get-help-support.md
             - name: Support overview
               href: support-overview.md
+            - name: View known issues (preview)
+              href: view-known-issues.md
             - name: Support environments and the consent process
               href: support-environment.md
             - name: Determine your organization ID and name

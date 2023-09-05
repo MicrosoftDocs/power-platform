@@ -1,6 +1,6 @@
 ---
 title: "Govern with the CoE Power BI dashboard | MicrosoftDocs"
-description: "Perform risk assessments and identifying critical, orphaned, or unused resources with the CoE Power BI dashboard"
+description: "Perform risk assessments and identify critical, orphaned, or unused resources with the CoE Power BI dashboard"
 author: manuelap-msft
 
 ms.component: pa-admin
@@ -13,6 +13,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
 # Govern with the CoE Power BI dashboard
 
 As an admin, you can use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, or delete it.
@@ -44,7 +45,7 @@ You can filter the **App deep dive** page by:
 - Connector name and connector tier
 - Is the app orphaned (the app owner has left the organization)
 
-In addition, you can sort the output data by the total number of users the app is shared with, unique users that have launched the app, last launched date, archive score, environment name, and app owner.
+In addition, you can sort the output data by the total number of users the app is shared with, unique users who have launched the app, last launched date, archive score, environment name, and app owner.
 
 Some typical assessments an admin might perform are described in the following sections.
 
@@ -54,7 +55,10 @@ Set **Shared with tenant** to **True**, or select the **App Shared with (Total)*
 
 - Widely shared resources (shared with the entire tenant or many individual users) might need a stronger support model, or you might need to review the number of people they're shared with.
 
-- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise, (a) Your entire org sees the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them), and (b) If a user doesn't have access to the underlying data source, they receive an error message when they try to open the app, which can cause an increase in support tickets and confusion.
+- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise:
+
+  - Your entire org sees the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them).
+  - If a user doesn't have access to the underlying data source, they receive an error message when they try to open the app, which can cause an increase in support tickets and confusion.
 
 - Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user leaves the department or job role they'll still see the app and be able to access the information. Therefore, it's recommended to share role-specific apps with an Azure AD group instead.
 
@@ -70,7 +74,7 @@ Orphaned apps, where the app owner has left the organization, will still work fo
 
 - Identify apps that use the SQL Server Connector. Ensure that users are aware of the risks, and help them mitigate it by enabling Azure AD authentication for SQL Server.
 
-Select **SQL Server** in the **Connector Name** drop-down on the rightmost filter pane to find apps that use the SQL Server Connector.
+Select **SQL Server** in the **Connector Name** drop-down list on the rightmost filter pane to find apps that use the SQL Server Connector.
 
 ### Review top-used connectors in apps
 
@@ -111,7 +115,7 @@ Set **Is Orphaned** to **True** in the filter pane to find orphaned apps.
 
 ### Implicitly shared flow connections
 
-- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users](/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the flow is shared, the connection is also published and available to your users. Your users can also create flows by using any connection that uses SQL Server authentication that's shared with them.
+- Some connectors, like the SQL Connector used with SQL Server Authentication, are [shared implicitly with users](/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the flow is shared, the connection is also published and available to your users. Your users can also create flows by using any connection that uses SQL Server authentication that's shared with them.
 
 - Identify flows that use the SQL Server Connector. Ensure that users are aware of the risk, and help them mitigate it by enabling Azure AD authentication for SQL Server.
 
@@ -136,17 +140,13 @@ Using the CoE dashboard, admins also have the ability to identify unused apps an
 
 - The highest possible score for a flow is 10. A score of 10 represents a flow that hasn't been modified since it was created, is using a nonproduction word like _test_ or _demo_ in the title, was created over three years ago, was likely created from a template, is in a stopped state, doesn't have an owner, and isn't complex (contains fewer than five actions).
 
-
 The **App deep dive** page shows the archive score. You can either sort the table by highest archive score, or select **Archive Score** in the decomposition tree visual to view aggregated data across all scores. You can use filters to target specific makers, date ranges, environments, departments, or connectors. Drill through from an individual app to the **Review Archive Score** page to view the score details.
 
 The **Archive Score** is the sum of multiple criteria:
 
 - Has the app been modified since it was created? (+1)
-
 - Does the app name use nonproduction words such as *test*, *demo*, or *sample*? (+1)
-
 - When was the app last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
-
 - Is this app likely a template, or are there multiple apps with the same name? (+1)
 - Is the app suspended? (+2)
 - Is the app orphaned? (+2)
@@ -158,20 +158,13 @@ The **Flow deep dive** page shows the archive score. You can either sort the tab
 The **Archive Score** is the sum of multiple criteria:
 
 - Has the flow been modified since it was created? (+1)
-
 - Does the flow name use nonproduction words such as *test*, *demo*, or *sample*? (+1)
-
 - When was the flow last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
-
 - Is this flow likely a template, or are there multiple flows with the same name? (+1)
-
 - What is the flow state? (+2 for suspended)
 - Is the flow orphaned? (+2)
-
 - Does the flow have an owner?(+2 if no owner)
-
 - How complex is the flow, based on the number of unique actions? (-1 if it's complex, because that indicates a user has spent much time putting it together)
-
 
 :::image type="content" source="media/pb-29.png" alt-text="Flow Archive":::
 
@@ -189,7 +182,7 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 - After you've granted yourself ownership, you can open the maker portal to view the version number.
 
-:::image type="content" source="media/pb-30.png" alt-text="App Details":::
+:::image type="content" source="media/pb-30.png" alt-text="App details":::
 
 ### Manage flow access
 
@@ -207,15 +200,15 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 - After you've granted yourself ownership, you can open the maker portal to view flow analytics and details.
 
-:::image type="content" source="media/pb-31.png" alt-text="Flow Details":::
+:::image type="content" source="media/pb-31.png" alt-text="Flow details":::
 
 ## Connector deep dive
 
-You can use the **Connector deep dive** page to better understand your connector usage across flows and apps. Identify the most used-connectors and learn how many apps and flows use premium connectors and which makers.
+You can use the **Connector deep dive** page to better understand your connector usage across flows and apps. Identify the most-used connectors and learn how many apps and flows use premium connectors and which makers.
 
 :::image type="content" source="media/pb-20.png" alt-text="Connector deep dive":::
 
-### <a id="desktop-flows-risk-assessment" /> Desktop flow usage
+### Desktop flow usage
 
 The **Desktop Flow usage** page enables you to filter by:
 
@@ -243,6 +236,6 @@ Select an error in the **Error Code** drop-down list on the filter pane to find 
 
 ### Desktop flow detail
 
-The **Desktop flow Detail** page is available by drilling down from a selected desktop flow. This page provides you with richer information about the runs of this desktop flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the desktop flow has failed.
+The **Desktop flow detail** page is available by drilling down from a selected desktop flow. This page provides you with richer information about the runs of this desktop flow. You will be able to review the run history, identify anomalies in the time it takes to complete a single run, and view error codes and messages if the desktop flow has failed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
