@@ -12,10 +12,6 @@ search.audienceType:
   - admin
 ---
 
-<!-- In line 74, is "deprecated" meant to be set within square brackets? That is how it appears on the live page. Also, it would be helpful to readers if descriptions of the flows were presented in the order in which they're listed in all the tables (tables in lines 215 and 365 aren't followed by descriptions in the same order).     -->
-
-
-
 # Use governance components
 
 After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage.
