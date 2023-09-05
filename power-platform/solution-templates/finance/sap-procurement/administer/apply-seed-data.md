@@ -75,7 +75,7 @@ The constrained list of values varies according to what business process is bein
 >
 > The _Export to Excel Online_ capability available in the administrator app is the most efficient way to load and maintain these values in bulk.
 
-:::image type="content" source="media/apply-seed-data/sap-admin-list-values.png" alt-text="Manage list values in the SAP Administrator app.":::
+:::image type="content" source="media/apply-seed-data/sap-base-list-of-values.png" alt-text="Manage list values in the SAP Administrator app.":::
 
 ### Create and manage list of values
 
@@ -112,7 +112,7 @@ All strings in the canvas apps are defaulted to English. However, the canvas app
 
 More information: [Localization and global app support](extend-canvas-apps.md#localization-and-global-app-support)
 
-:::image type="content" source="media/apply-seed-data/sap-localizations.png" alt-text="Manage SAP string localizations.":::
+:::image type="content" source="media/apply-seed-data/sap-base-localizations.png" alt-text="Manage SAP string localizations.":::
 
 ### Create localization strings
 
