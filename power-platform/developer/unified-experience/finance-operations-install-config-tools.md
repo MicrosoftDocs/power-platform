@@ -110,7 +110,7 @@ You may get a prompt for elevation as administrator to register the protocol han
 
 Once the configuration completes, navigate to **View** > **Application Explorer** . You should see the **Application Explorer** window open. You may have to restart Visual studio first. 
 
-![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/20115956/426b955e-e116-4cca-93d4-acc4793b7260)
+:::image type="content" source="../media/D365FinOpsApplicationExplorer.png" alt-text="Application Explorer.":::
 
 You can create several configurations, but must select one to be current. The chosen configuration takes effect on new instances of Visual Studio.
 
