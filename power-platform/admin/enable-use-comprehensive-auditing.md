@@ -4,9 +4,9 @@ description: Learn how to enable auditing to be used for reports in the Microsof
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/06/2023
-author: tjvass
+author: StephenRauchPM
 ms.subservice: admin
-ms.author: tjvass
+ms.author: stephenrauch
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
