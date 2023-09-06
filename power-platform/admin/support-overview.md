@@ -1,13 +1,12 @@
 ---
 title: "Support for Microsoft Power Platform and Dynamics 365 apps | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and Dynamics 365 apps
-ms.date: 03/23/2022
-ms.reviewer: ""
+ms.date: 09/06/2023
+ms.reviewer: "kvivek"
 ms.topic: overview
 ms.custom: "admin-security"
 ms.collection: get-started
 author: "KumarVivek"
-ms.subservice: admin
 ms.author: "kvivek"
 ---
 # Support for Microsoft Power Platform and Dynamics 365 apps
