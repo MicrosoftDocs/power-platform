@@ -47,9 +47,9 @@ Performance data related to page loads and Unified Interface (UCI) outbound netw
 
 ## Where is the page load data available?
 
-This data goes into the **pageViews** table in Application Insights. An entry is logged every time a user loads a page in Unified Interface. The data logged will only include "clean" loads. Loads whose duration can't accurately be measured&mdash;fast navigation, switching away from the app, an alert message&mdash;won't be included. Because of this, we recommend against using this data for accurate numbers related to usage analytics.
+This data goes into the **pageViews** table in Application Insights. An entry is logged every time a user loads a page in Unified Interface. The data logged only includes "clean" loads. Loads whose duration can't accurately be measured&mdash;fast navigation, switching away from the app, an alert message&mdash;aren't included. Because of this, we recommend against using this data for accurate numbers related to usage analytics.
 
-There are additional properties in **customDimensions** that provide more details for Unified Interface page loads. For example, this query will return the values for all the attributes in the **pageViews** table.
+There are other properties in **customDimensions** that provide more details for Unified Interface page loads. For example, this query returns the values for all the attributes in the **pageViews** table.
 
 ```kusto
 pageViews
@@ -105,7 +105,7 @@ The UCI Request dependency table has the following fields:
 
   - **appModule**: The appModule making the call.
   - **bodySize**: The size of the response, encoded and decoded.
-  - **cached**: Whether the request went to the local cache or had to go to the server. Note that this doesn't work as expected if the end user was on the Internet Explorer browser.
+  - **cached**: Whether the request went to the local cache or had to go to the server. This doesn't work as expected if the end user was on the Internet Explorer browser.
   - **download**: The time taken to download the response.
   - **stall**: The time where the request was waiting in the browser queue.
   - **ttfb**: The time spent waiting for the initial response, also known as the "time to first byte." This time captures the latency of a round trip to the server in addition to the time spent waiting for the server to deliver the response.
@@ -117,7 +117,7 @@ The UCI Request dependency table has the following fields:
 
 ### Why are some of my users experiencing slowness on Unified Interface?
 
-One scenario where discovery and analysis can be very valuable is when a user from a region (say, Asia) reports that a form is performing slowly. This user based in Asia might be accessing an environment or organization in North America. The details will show the total load time in addition to the network-related duration. It might very well be that this is a cause of the slow performance perceived by the user.
+One scenario where discovery and analysis can be valuable is when a user from a region (say, Asia) reports that a form is performing slowly. This user based in Asia might be accessing an environment or organization in North America. The details show the total load time in addition to the network-related duration. It might well be that this is a cause of the slow performance perceived by the user.
 
 You can use the **warmLatency**, **warmThroughput**, and **coldLatency** attributes to understand the breakdown of where time is spent on page loads and other Unified Interface requests, as shown in the following image.
 
@@ -200,7 +200,7 @@ union *
 | where operation_Id contains "[ActivityIdHere]"
 ```
 
-Note that Monitor is a real-time debugging tool; however, data might not be available in it for a few hours.
+Monitor is a real-time debugging tool; however, data might not be available in it for a few hours.
 
 ### Why are users experiencing issues with a specific form?
 
