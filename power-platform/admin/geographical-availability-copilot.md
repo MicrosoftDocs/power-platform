@@ -93,7 +93,7 @@ The following table indicates the availability of copilots and generative AI fea
 | Dataverse | **Excel to Table for New Makers<br /></br>**(doc link) | US | Yes | English |
 | Dataverse | **M365 Biz Chat Q&amp;A and Actions with Dataverse Connectors**</br>(doc link) | US | No | English |
 | AI Builder | **Text Generation with GPT**<br /></br>[Text generation model overview (preview)](/ai-builder/prebuilt-azure-openai) | US | No | English |
-| Power Apps | **Maker Copilot (NL2Table)**<br /></br>Learn more: [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app) | US | No | English |
+| Power Apps | **Maker Copilot (NL2Table)**<br /></br>Learn more: [Build tables through conversation](/power-apps/maker/data-platform/create-edit-entities-portal#describe-the-new-table-preview) | US | No | English |
 | Power Apps | **Maker Copilot: (NL2Edit)**</br>(doc link) | US | No | English |
 |  Power Apps| **Copilot for canvas apps**<br><br>Learn more: [Add Copilot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot) | US | No | English |
 | Power Apps | **App Copilot for model Power Apps and Dynamics 365**</br>(doc link) | US | No | English |
