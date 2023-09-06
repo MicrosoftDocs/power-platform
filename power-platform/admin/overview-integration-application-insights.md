@@ -5,10 +5,10 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 04/20/2023
-author: tjvass
+author: StephenRauchPM
 ms.subservice: admin
-ms.author: tjvass
-ms.reviewer: jimholtz
+ms.author: stephenrauch
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
