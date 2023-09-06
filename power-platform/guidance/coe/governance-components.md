@@ -4,7 +4,7 @@ description: "The governance components solution provides assets to automate com
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/05/2023
+ms.date: 09/06/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -315,7 +315,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 #### Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
 > [!NOTE]
-> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
+> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. More information: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
 
 > [!IMPORTANT]
 > This flow deletes environments for which no business justification exists, or where the business justification has been rejected. Environment owners have 7 days to provide a business justification before the environment gets deleted.
