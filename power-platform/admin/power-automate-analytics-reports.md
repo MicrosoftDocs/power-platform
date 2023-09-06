@@ -4,10 +4,10 @@ description: View Tenant-level analytics for Power Automate.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/16/2022
-author: tjvass
+author: StephenRauchPM
 ms.subservice: admin
-ms.author: tjvass
-ms.reviewer: jimholtz
+ms.author: stephenrauch
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
