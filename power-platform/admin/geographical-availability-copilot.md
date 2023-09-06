@@ -10,6 +10,12 @@ ms.author: sidhartg
 ms.reviewer: sericks
 search.audienceType: 
   - admin 
+contributors:
+ - JesseParsons
+ - tapanm-msft
+ - sidhartg
+ - sericks007
+ - prvenka
 ---
 # Enable copilots and generative AI features outside United States and Switzerland regions
 
@@ -20,7 +26,8 @@ All these capabilities are currently available in environments in the US region 
 > [!NOTE]
 > - The underlying infrastructure for copilots is currently available in the US and Switzerland regions only. Accessing copilots or generative AI features from non-US and non-Switzerland regions results in **data movement across regional boundaries**. Once enabled, any data movement that already happened while this feature was enabled cannot be reversed by [removing your consent](#disable-copilots-and-generative-ai-in-non-us-and-non-switzerland-regions).
 > - All data from the Copilots and generative AI features in the Europe region (including France and Germany) will be handled by the underlying infrastructure hosted in Switzerland region. For all other regions, the requests are handled by the infrastructure hosted in the US region.
-> - This setting is only available in a Power Platform environment that is created in regions other than **United States - Default**, **Preview (United States)**, and **Switzerland**. To enable or disable copilot features in environments created in **United States – Default**, **Preview (United States)**, or **Switzerland** regions, refer to the [documentation for the applicable product](#available-copilot-and-generative-ai-features-outside-united-states-and-switzerland-regions). 
+> - This setting is only available in a Power Platform environment that is created in regions other than **United States - Default**, **Preview (United States)**, and **Switzerland**. To enable or disable copilot features in environments created in **United States – Default**, **Preview (United States)**, or **Switzerland** regions, refer to the [documentation for the applicable product](#available-copilot-and-generative-ai-features-outside-united-states-and-switzerland-regions).
+> - To enable Copilot for Dynamics 365 Customer Service outside United States and Switzerland regions, refer to [Copilot data movement across geographies (preview)](/dynamics365/customer-service/copilot-data-movement).
 
 You can allow copilots in your non-US and non-Switzerland environments by following these steps:
 
@@ -74,13 +81,8 @@ The following table lists all copilot and generative AI features available in Po
 
 | Product | Feature  | Documentation
 |-------------------------|-------------------------|-------------------------|
-| Dynamics 365 Customer Service | Digital messaging with Copilot | [Draft a chat response](/dynamics365/customer-service/use-copilot-features#draft-a-chat-response) |
-| Dynamics 365 Customer Service | Auto-Draft Email | [Draft emails](/dynamics365/customer-service/use-copilot-features#draft-emails) |
-| Dynamics 365 Customer Service | Converse with Copilot  | [Ask a question](/dynamics365/customer-service/use-copilot-features#ask-a-question) |
-| Dynamics 365 Customer Service | Conversation summarization | [Summarize conversations](/dynamics365/customer-service/use-copilot-features#summarize-conversations) |
-| Dynamics 365 Customer Service | Case summarization | [Summarize cases](/dynamics365/customer-service/use-copilot-features#summarize-cases) |
-| Dataverse | Excel to Table for New Makers | \<Insert doc link\> |
-| Power Automate | Power Automate Designer Copilot | [Understand AI-powered cloud flows designer (preview)](/power-automate/flows-designer) |
+| Microsoft Dataverse | Excel to table for new makers | [Upload an Excel file (preview)](/power-apps/maker/data-platform/create-edit-entities-portal#upload-an-excel-file-preview) |
+| Power Automate | Power Automate designer copilot | [Understand AI-powered cloud flows designer (preview)](/power-automate/flows-designer) |
 
 ### See also
 
