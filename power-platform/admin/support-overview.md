@@ -18,13 +18,13 @@ Support is available in markets where Microsoft Power Platform or Dynamics 365 s
 
 ### For which languages does Microsoft provide support?
 
-Microsoft provides support in English globally and provides additional languages within certain regions. These additional languages include: Japanese, Spanish, French, German, Italian, Portuguese, Traditional Chinese, and Simplified Chinese.
+Microsoft provides support in English globally and in additional languages (Japanese, Spanish, French, German, Italian, Portuguese, Traditional Chinese, and Simplified Chinese) within certain regions.  
 
-|English  |Japanese  |Spanish, French, German, Italian, Portuguese  |Traditional Chinese, Simplified Chinese  |
+|English <sup>*</sup>  |Japanese <sup>**</sup>  |Spanish, French, German, Italian, Portuguese <sup>**</sup> |Traditional Chinese, Simplified Chinese <sup>**</sup>  |
 |---------|---------|---------|---------|
-|<sup>*</sup>Provided globally all day, every day   |<sup>*</sup>Provided to customers in Japan all day, every day        |Available to customers in Europe/Middle East/Africa regions during those regions' business hours <br />Spanish/Portuguese available to customers in South America during that region's business hours   | Available to customers in Asia/Pacific region during that region's business hours        |
+|Provided globally all day, every day   |Available to customers in Japan region during that region's business hours        |Available to customers in Europe/Middle East/Africa regions during those regions' business hours <br />Spanish/Portuguese available to customers in South America during that region's business hours   | Available to customers in Asia/Pacific region during that region's business hours        |
 
-<sup>*</sup>around the clock (all day, every day) support is available based on issue severity and your support offering.
+<sup>*</sup> Around the clock (all day, every day) support is available based on issue severity and your support offering.<br/><sup>**</sup> Support in languages other than English may be available during local business hours, however, are subject to availability.
 
 > [!NOTE]
 > Translation services might be available to assist with additional languages outside normal business hours.
