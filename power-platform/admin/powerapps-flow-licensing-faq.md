@@ -4,6 +4,10 @@ description: FAQs for licensing Power Apps, Power Automate, Power Pages, Dataver
 ms.topic: conceptual
 ms.date: 07/31/2023
 author: chrisgarty
+contributors:
+  - chrisgarty
+  - Antoine2F
+  - v-aangie
 ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
@@ -626,7 +630,7 @@ Each user license grants you 5,000 credits, allowing you to assess the capabilit
 
 ### Which AI models are available for free in public preview and which are in paid GA status?
 
-The release status (preview or not) for AI Builder features is available in [Model types](/ai-builder/model-types#model-types).
+The release status (preview and general availability) for AI Builder features is available in [Model types](/ai-builder/model-types#model-types).
 
 AI models available in public preview do not require paid AI Builder capacity. 
 
