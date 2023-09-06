@@ -24,14 +24,14 @@ Microsoft provides support in English globally and in additional languages (Japa
 |---------|---------|---------|---------|
 |Provided globally all day, every day   |Available to customers in Japan region during that region's business hours        |Available to customers in Europe/Middle East/Africa regions during those regions' business hours <br />Spanish/Portuguese available to customers in South America during that region's business hours   | Available to customers in Asia/Pacific region during that region's business hours        |
 
-<sup>*</sup> Around the clock (all day, every day) support is available based on issue severity and your support offering.<br/><sup>**</sup> Support in languages other than English may be available during local business hours, however, are subject to availability.
+<sup>*</sup> Around the clock (all day, every day) support is available based on issue severity and your support offering.<br/><sup>**</sup> Support in languages other than English may be available during local business hours subject to availability.
 
 > [!NOTE]
 > Translation services might be available to assist with additional languages outside normal business hours.
 
 ### Do I get around the clock support? 
 
-- Microsoft provides all day, every day support for all Severity A issues and might provide all day, every day assistance for issues of other severity based on your support offering. 
+- Microsoft provides all day, every day support in English for all Severity A issues and might provide all day, every day assistance for issues of other severity based on your support offering. 
 - For those issues that do not qualify for all day, every day support, Microsoft provides assistance during local business hours only.
 - For finance and operations apps, support times for some features can vary by region and can differ from the following hours listed.
 
