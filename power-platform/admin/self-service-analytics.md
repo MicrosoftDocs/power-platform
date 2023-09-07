@@ -29,6 +29,8 @@ Data Lake Storage is a key part of Cortana Intelligence, meaning that it works w
 
 > [!NOTE]
 > Enablement of data export will be limited to customers with a paid, premium Microsoft Dataverse license available for the tenant. Details of additional licensing requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). Additional details about minimum Dataverse capacity requirements to access the data export features will be announced in advance of general availability.
+>
+> For Government Community Cloud (GCC) customer that need to configure integration to Data Lake storage hosted in an Azure Government subscription, please open a support ticket.
 
 ## Prerequisites
 
