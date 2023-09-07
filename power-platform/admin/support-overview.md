@@ -31,7 +31,7 @@ Microsoft provides support in English globally and in additional languages (Japa
 ### Do I get around the clock support? 
 
 - Microsoft provides all day, every day support in English for all Severity A issues and might provide all day, every day assistance for issues of other severity based on your support offering. 
-- For those issues that do not qualify for all day, every day support, Microsoft provides assistance during local business hours only.
+- For those issues that don't qualify for all day, every day support, Microsoft provides assistance during local business hours only.
 - For finance and operations apps, support times for some features can vary by region and can differ from the following hours listed.
 
 ### What hours are considered local business hours for support? 
@@ -97,7 +97,7 @@ We have designed our support plans to meet different business needs:
 ### What's the difference between technical support and advisory services?
 
 - Technical support Break-fix issues are technical problems you experience while using services. "Break-fix" is an industry term that refers to "work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order."
-- How functionality works is not considered a break-fix issue but is more closely related to training. These "how-to" questions - or Advisory services - involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training is not included in support plans.
+- How functionality works isn't considered a break-fix issue but is more closely related to training. These "how-to" questions - or Advisory services - involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training isn't included in support plans.
 
 ### How does Professional Direct support compare to Premier/Unified support? 
 
@@ -143,28 +143,28 @@ Public preview and/or beta services may be supported through our [forums](https:
 
 ### Why is submitting a request online the preferred method of contacting Support?
 
-Submitting support requests online allows us to deliver fast and deep technical expertise in the most effective and efficient manner possible. Due to the detailed nature of the requests, it is much easier to provide relevant information online, compared to reading this information over the phone. This model also eliminates unproductive hold time and provides instead a simple, intuitive online process. As a result, customer problems are routed more quickly, to the most qualified engineer.
+Submitting support requests online allows us to deliver fast and deep technical expertise in the most effective and efficient manner possible. Due to the detailed nature of the requests, it's easier to provide relevant information online, compared to reading this information over the phone. This model also eliminates unproductive hold time and provides instead a simple, intuitive online process. As a result, customer problems are routed more quickly, to the most qualified engineer.
 
 ### Is there a phone number I can call to contact Support?
 
-Contacting Support over the phone will not speed up the processing of your request, and you will get a much better and faster experience by contacting support via the correct support portals listed earlier in this topic. If you cannot submit a request online, you can find a local support number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
+Contacting Support over the phone won't speed up the processing of your request, and you'll get a better and faster experience by contacting support via the correct support portals listed earlier in this article. If you can't submit a request online, you can find a local support number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
 
 ### How do I submit a request for technical support or advisory services?
 
-- Access to technical support is provided through one of the [support plans included with Dynamics 365 apps or through one of the premium support plans](https://dynamics.microsoft.com/support/plans/). Submit a technical support request from the correct support portal for the product or service for which you need assistance (see the table earlier in this topic). To begin the support-request submission process:
+- Access to technical support is provided through one of the [support plans included with Dynamics 365 apps or through one of the premium support plans](https://dynamics.microsoft.com/support/plans/). Submit a technical support request from the correct support portal for the product or service for which you need assistance (see the table earlier in this article). To begin the support-request submission process:
   - From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Help + support** from the left navigation pane and then **New support request** from the top navigation.
   - From the [Lifecycle Services portal](https://lcs.dynamics.com/), choose a project, select **Support** from the option list, and then select **Submit an incident**.
   - From [Support for Business](https://support.microsoft.com/supportforbusiness/productselection), select the Dynamics 365 product family followed by the specific Dynamics 365 product or service for which you need help.
   - From the [Premier Portal](https://support.microsoft.com/premier), select **New support request** from the Support requests page navigation, enter your access ID and password or select your associated access ID, and proceed with your submission.
-- Access to subscription management and billing support is included with your subscription. To open a Billing and Subscription Management support request, sign in to the [Microsoft 365 Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane and provide the additional information needed to submit the support request.
+- Access to subscription management and billing support is included with your subscription. To open a Billing and Subscription Management support request, sign in to the [Microsoft 365 Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles don't address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane and provide the additional information needed to submit the support request.
 
-### How do I submit a support request if I cannot sign in to the support portal for my product or service?
+### How do I submit a support request if I can't sign in to the support portal for my product or service?
  
-If you cannot submit a support request online, you can find a local support phone number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
+If you can't submit a support request online, you can find a local support phone number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
 
 ### How do I get support if I don't have a subscription yet, and I get an error message while creating one?
 
-You can open a Subscription Management support request through the [Microsoft 365 Admin Portal](https://portal.office.com/), as long as you have a Power Platform admin sign-in credentials to the portal. To open a Subscription Management support request, sign in to the [Microsoft 365 Admin Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane, and provide the additional information needed to submit the support request.
+You can open a Subscription Management support request through the [Microsoft 365 Admin Portal](https://portal.office.com/), as long as you have a Power Platform admin sign-in credential to the portal. To open a Subscription Management support request, sign in to the [Microsoft 365 Admin Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane, and provide the additional information needed to submit the support request.
 
 ### Who can submit a support request in the Power Platform admin center?
 
