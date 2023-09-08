@@ -104,6 +104,8 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
   
     :::image type="content" source="../admin/media/hierarchy-security.png" alt-text="Set up hierarchy security in the new, modern UI.":::
 
+    [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+
     # [Legacy UI](#tab/LegacyUI)
   
     :::image type="content" source="../admin/media/hierarchy-security-setup2.png" alt-text="Set up hierarchy security in the legacy UI.":::
