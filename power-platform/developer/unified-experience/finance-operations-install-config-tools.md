@@ -60,7 +60,7 @@ Downloaded assets can be found in the following location:
 
 Three files are downloaded:
 
-![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/20115956/5b0881f8-4716-4a53-9ab1-73db4381ef0b)
+:::image type="content" source="../media/unified-experience/D365FinOpsAsetsDownloaded.png" alt-text="download asset files":::
 
 - Finance and operations extension is downloaded as Microsoft.Dynamics.Framework.Tools.Installer.vsix
 - System metadata was downloaded as PackagesLocalDirectory.zip.
@@ -68,7 +68,7 @@ Three files are downloaded:
 
 Unblock any file that needs unblocking 
 
-![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/20115956/e563f43e-c5f2-4359-b9fe-8981bcbe3980)
+:::image type="content" source="../media/unified-experience/D365FinOpsAsetsUnblock.png" alt-text="Unblock downloaded asset files":::
 
 Unpack the PackagesLocalDirectory.zip file as PackagesLocalDirectory. We recommend using the [7zip](https://www.7-zip.org/download.html) utility to speed up extraction.
 
@@ -83,11 +83,11 @@ To configure the extension, follow these instructions.
 
 1. Start Visual Studio, and then select **Continue without code** from the dialog.
 2. Navigate to **Extensions** > **Dynamics 365** > **Configure Metadata** for the first time.  
-    If you do not see it, go to **Extensions** > **Dynamics 365** > **Infolog** and retry.
-   ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/20115956/656b8fef-cf72-4109-8581-5b44d00f62be)
+    If you do not see it, open **Extensions** > **Dynamics 365** > **Infolog** and retry.
+   :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadataMenu.png" alt-text="Configure Metadata menu":::
 
 4. On the configuration form, click **New**, and then create a new configuration. See the field descriptions provided in the following table.
- ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/20115956/85010784-fab1-4bdc-9964-375eac5cb4f2)
+ :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadata.png" alt-text="Configure Metadata dialog":::
 6. Click **Save**.
 
 | Form field | Description |
@@ -101,7 +101,7 @@ To configure the extension, follow these instructions.
 |Folders for reference metadata| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).|
 
 If after filling in all the fields the **Save** button is still grayed out, you'll see error messages with a red border in tooltips on the offending fields.
-![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/20115956/4eb24582-fd69-42c1-8145-481f7ba3baa9)
+:::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadataValidation.png" alt-text="Configure Metadata Validation":::
 
 Ensure that you entered the correct value(s) for fields with errors. (for example, "(localdb)\." if you're using LocalDB). 
 Also, if you're using LocalDB, you may need to first configure and test it. Consider issuing the following command from a command prompt: `sqllocaldb create MSSQLLocalDB -s`. More information: [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
@@ -110,7 +110,7 @@ You may get a prompt for elevation as administrator to register the protocol han
 
 Once the configuration completes, navigate to **View** > **Application Explorer** . You should see the **Application Explorer** window open. You may have to restart Visual studio first. 
 
-:::image type="content" source="../media/unified-experience/D365FinOpsApplicationExplorer.png" alt-text="Application Explorer.":::
+:::image type="content" source="../media/unified-experience/D365FinOpsApplicationExplorer.png" alt-text="Application Explorer":::
 
 You can create several configurations, but must select one to be current. The chosen configuration takes effect on new instances of Visual Studio.
 
