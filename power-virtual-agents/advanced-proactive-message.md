@@ -2,27 +2,18 @@
 title: "Notify bot users in Teams with proactive messages"
 description: "Use Power Automate flows to send proactive messages to bot users in Teams, with updates to their conversations, requests for information, and more."
 keywords: "PVA"
-ms.date: 04/21/2023
-
+ms.date: 07/11/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewer: micchow
 ms.custom: "teams, flow, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Send proactive messages Microsoft Teams (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-proactive-message.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-proactive-message-teams.md)
+# Send proactive messages Microsoft Teams
 
 After you've [published your bot](publication-fundamentals-publish-channels.md) and [made the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md), you can notify users ("recipients") in Microsoft Teams with proactive messages. Proactive messages use Power Automate flows to deliver their content, and are useful in many scenarios, including:
 
@@ -30,6 +21,12 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 - Providing reminders or news updates. For example, the bot could send a reminder message to complete online training.
 
 > [!IMPORTANT]
+> Bots created or converted with the [unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-power-virtual-agents) can't send proactive messages in Teams. Your bot can only send proactive messages if:
+> 
+> - You create your bot in the Teams app.
+> - You create a **Classic** bot.
+> - You created your bot before May 23, 2023.
+>
 > A bot can't deliver messages if the recipient:
 >
 > - Doesn't have the bot installed in Microsoft Teams.
@@ -39,14 +36,16 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- Your bot must be marked **Classic**, or it must be a bot you created in the Teams app.
 - [Learn how to use and create flows](advanced-flow.md).
 - [Publish your bot](publication-fundamentals-publish-channels.md).
 - [Add your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
 - [Getting started with Power Automate](/power-automate/getting-started).
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Known limitations
 
+- You can't send proactive messages in Teams if you've created your bot [with the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-power-virtual-agents).
 - If the bot is disconnected and reconnected to Microsoft Teams, users won't receive proactive messages until after they re-install the bot.
 - All proactive messages from Power Virtual Agents are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
 - Proactive messages won't be logged in conversation transcripts or [Analytics sessions](analytics-overview.md).
@@ -385,3 +384,5 @@ You can use the returned status code to define different follow-up behaviors in 
 | 200         | True                | Message is successfully delivered.                                                             |
 | 100         | False               | Message couldn't be delivered because the recipient doesn't have the bot installed.            |
 | 300         | False               | Message couldn't be delivered because the recipient is in an active conversation with the bot. |
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

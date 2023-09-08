@@ -1,9 +1,9 @@
 ---
 title: "Select a data map | MicrosoftDocs"
 description: Select a data map
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 
 ms.component: pa-admin
 ms.topic: conceptual

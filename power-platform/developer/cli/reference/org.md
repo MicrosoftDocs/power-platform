@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 8/16/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac org
 
-Work with your Dataverse Organization
+Work with your Dataverse organization.
 
 [!INCLUDE [org-intro](includes/org-intro.md)]
 
@@ -27,9 +27,11 @@ Work with your Dataverse Organization
 |Command|Description|
 |---------|---------|
 |[pac org fetch](#pac-org-fetch)|(Preview) Performs FetchXML query against Dataverse|
-|[pac org list](#pac-org-list)|Lists all of the Dataverse Organizations the user has access to|
-|[pac org select](#pac-org-select)|Select default organization for current authentication profile|
-|[pac org who](#pac-org-who)|Displays information about the current Dataverse Organization|
+|[pac org list](#pac-org-list)|Lists all of the Dataverse organizations the user has access to|
+|[pac org list-settings](#pac-org-list-settings)|List environment settings|
+|[pac org select](#pac-org-select)|Select default organization for current authentication profile.|
+|[pac org update-settings](#pac-org-update-settings)|Update environment settings|
+|[pac org who](#pac-org-who)|Displays information about the current Dataverse organization.|
 
 
 ## pac org fetch
@@ -39,7 +41,7 @@ Work with your Dataverse Organization
 [!INCLUDE [org-fetch-intro](includes/org-fetch-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for org fetch
 
 #### `--xml` `-x`
 
@@ -53,37 +55,74 @@ File with FetchXML query to run
 
 ## pac org list
 
-Lists all of the Dataverse Organizations the user has access to
+Lists all of the Dataverse organizations the user has access to
 
 [!INCLUDE [org-list-intro](includes/org-list-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for org list
 
 #### `--filter` `-f`
 
-Show only environments containing filter criteria
+Show only environments containing filter criteria.
 
 [!INCLUDE [org-list-remarks](includes/org-list-remarks.md)]
 
+## pac org list-settings
+
+List environment settings
+
+[!INCLUDE [org-list-settings-intro](includes/org-list-settings-intro.md)]
+
+
+### Optional Parameters for org list-settings
+
+#### `--filter` `-f`
+
+Show only settings containing filter criteria
+
+[!INCLUDE [org-list-settings-remarks](includes/org-list-settings-remarks.md)]
+
 ## pac org select
 
-Select default organization for current authentication profile
+Select default organization for current authentication profile.
 
 [!INCLUDE [org-select-intro](includes/org-select-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for org select
 
 #### `--environment` `-env`
 
-Default environment (id, url, unique name or partial name)
+Default environment (ID, url, unique name, or partial name).
 
 [!INCLUDE [org-select-remarks](includes/org-select-remarks.md)]
 
+## pac org update-settings
+
+Update environment settings
+
+[!INCLUDE [org-update-settings-intro](includes/org-update-settings-intro.md)]
+
+
+### Required Parameters for org update-settings
+
+#### `--name` `-n`
+
+Name of the setting to update
+
+
+### Optional Parameters for org update-settings
+
+#### `--value` `-v`
+
+Value to which setting should be updated to
+
+[!INCLUDE [org-update-settings-remarks](includes/org-update-settings-remarks.md)]
+
 ## pac org who
 
-Displays information about the current Dataverse Organization
+Displays information about the current Dataverse organization.
 
 [!INCLUDE [org-who-remarks](includes/org-who-remarks.md)]
 

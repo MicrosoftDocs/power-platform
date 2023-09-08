@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 8/16/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,18 +26,18 @@ Commands for listing and installing available Dataverse applications from AppSou
 
 |Command|Description|
 |---------|---------|
-|[pac application install](#pac-application-install)|Installs Dataverse application to given environment|
+|[pac application install](#pac-application-install)|Installs Dataverse application to given environment.|
 |[pac application list](#pac-application-list)|List available Dataverse applications from AppSource|
 
 
 ## pac application install
 
-Installs Dataverse application to given environment
+Installs Dataverse application to given environment.
 
 [!INCLUDE [application-install-intro](includes/application-install-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for application install
 
 #### `--application-list` `-al`
 
@@ -45,15 +45,12 @@ Location of the JSON file with list of the Dataverse applications from AppSource
 
 #### `--application-name` `-an`
 
-Unique name of the application that will be installed to target environment
+Unique name of the application to install to the target environment.
 
 #### `--environment` `-env`
 
-List available Dataverse applications for given environment (by id or url); if not specified, list all applications in the tenant
+List available Dataverse applications for given environment (by ID or url); if not specified, list all applications in the tenant
 
-#### `--environment-id` `-id`
-
-**Deprecated**: Use `--environment` instead.
 [!INCLUDE [application-install-remarks](includes/application-install-remarks.md)]
 
 ## pac application list
@@ -63,15 +60,12 @@ List available Dataverse applications from AppSource
 [!INCLUDE [application-list-intro](includes/application-list-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for application list
 
 #### `--environment` `-env`
 
-List available Dataverse applications for given environment (by id or url); if not specified, list all applications in the tenant
+List available Dataverse applications for given environment (by ID or url); if not specified, list all applications in the tenant
 
-#### `--environment-id` `-id`
-
-**Deprecated**: Use `--environment` instead.
 #### `--installState` `-s`
 
 Filter by application install state

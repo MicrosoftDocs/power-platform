@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 8/16/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -36,80 +36,107 @@ Builds a code model for Dataverse APIs and Tables
 [!INCLUDE [modelbuilder-build-intro](includes/modelbuilder-build-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for modelbuilder build
 
 #### `--outdirectory` `-o`
 
-Write Directory for entity, message and optionset files
+Write directory for entity, message, and optionset files.
 
 
-### Optional Parameters
+### Optional Parameters for modelbuilder build
+
+#### `--emitentityetc` `-etc`
+
+When set, includes the entity ETC ( entity type code ) in the generated code.
+
+This parameter requires no value. It's a switch.
 
 #### `--emitfieldsclasses` `-efc`
 
 Generate a constants structure that contains all of the field names by entity at the time of code generation.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
+
+#### `--emitvirtualattributes` `-eva`
+
+When set, includes the Virtual Attributes of entities in the generated code.
+
+This parameter requires no value. It's a switch.
 
 #### `--entitynamesfilter` `-enf`
 
-Filters the list of entities are retrieved when reading data from Dataverse. Passed in as a semicolon separated list.  Using the form \<entitylogicalname>;\<entitylogicalname>
+Filters the list of entities are retrieved when reading data from Dataverse. Passed in as a semicolon separated list. Using the form \<entitylogicalname>;\<entitylogicalname>
 
 #### `--entitytypesfolder` `-etf`
 
-Folder name that will contain entities. default is Entities
-
-#### `--generateActions` `-a`
-
-When set, Emits message classes as part of code generation.
-
-This parameter requires no value. It is a switch.
+Folder name that contains entities. The default name is 'Entities'.
 
 #### `--generateGlobalOptionSets` `-go`
 
-Emit all Global OptionSets, note: if an entity contains a reference to a global optionset, it will be emitted even if this switch is not present.
+Emit all Global OptionSets. Note: If an entity contains a reference to a global optionset, it is emitted even if this switch is not present.
+
+#### `--generatesdkmessages` `-a`
+
+When set, emits Sdk message classes as part of code generation.
+
+This parameter requires no value. It's a switch.
 
 #### `--language` `-l`
 
-The language to use for the generated proxy code.  This can be either 'CS' or 'VB'.  The default language is 'CS'.
+The language to use for the generated proxy code. This value can be either 'CS' or 'VB'. The default language is 'CS'.
+
+#### `--logLevel` `-ll`
+
+Log level. The default value is 'Off'.
+
+Use one of these values:
+
+- `Off`
+- `Critical`
+- `Error`
+- `Warning`
+- `Information`
+- `Verbose`
+- `ActivityTracing`
+- `All`
 
 #### `--messagenamesfilter` `-mnf`
 
-Filters the list of messages that are retrieved when reading data from Dataverse. Passed in as a semicolon separated list, required messages ( Create, Update, Delete, Retrieve, RetrieveMultiple, Associate and Disassociate) are always included. An * can be used to proceed or trail an message allowing for all messages starting with or ending with a string.  Using the form \<messagename>;\<messagename>
+Filters the list of messages that are retrieved when reading data from Dataverse. Passed in as a semicolon separated list, required messages (Create, Update, Delete, Retrieve, RetrieveMultiple, Associate and Disassociate) are always included. Use a trailing or leading asterisk (*) with the names of the messages to allow for all messages starting with or ending with a string. Using the form \<messagename>;\<messagename>.
 
 #### `--messagestypesfolder` `-mtf`
 
-Folder name that will contain messages.  default is Messages
+Folder name that contains messages. The default name is 'Messages'.
 
 #### `--namespace` `-n`
 
-The namespace for the generated code.  The default namespace is the global namespace.
+The namespace for the generated code. The default namespace is the global namespace.
 
 #### `--optionsetstypesfolder` `-otf`
 
-Folder name that will contain option sets.  default is OptionSets
+Folder name that contains option sets. The default name is 'OptionSets'.
 
 #### `--serviceContextName` `-sctx`
 
-The name for the generated service context. If a value is passed in, it will be used for the Service Context.  If not, no Service Context will be generated.
+The name for the generated service context. If a value is passed in, it's used for the Service Context. If not, no Service Context is generated.
 
 #### `--settingsTemplateFile` `-stf`
 
-Contains Settings to be used for this run of the Dataverse Model Builder, overrides any duplicate parameters on command line.  Cannot be set when --writesettingstemplate is used.
+Contains Settings to be used for this run of the Dataverse Model Builder, overrides any duplicate parameters on command line. Can't be set when --writesettingstemplate is used.
 
 #### `--suppressGeneratedCodeAttribute` `-sgca`
 
 When set, this suppress all generated objects being tagged with the code generation engine and version
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--suppressINotifyPattern`
 
-When enabled, does not write the INotify wrappers for properties and classes.
+When enabled, doesn't write the INotify wrappers for properties and classes.
 
 #### `--writesettingsTemplateFile` `-wstf`
 
-When Set, writes a settings file out to the output directory with the current passed settings or default settings
+When set, writes a settings file out to the output directory with the current passed settings or default settings.
 
 [!INCLUDE [modelbuilder-build-remarks](includes/modelbuilder-build-remarks.md)]
 

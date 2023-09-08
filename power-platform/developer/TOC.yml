@@ -57,6 +57,14 @@
               href: isvstudio\auto-update.md
             - name: Embed Pay-as-you-go for ISVs (preview)
               href: isvstudio/embed-analytics.md
+    - name: Catalog in Power Platform (preview)
+      items:
+        - name: Overview of catalog
+          href: catalog.md
+        - name: Administer the catalog
+          href: administer-catalog.md
+        - name: View, submit, and install catalog items
+          href: submit-catalog-items.md
     - name: Tools
       expanded: true
       items:
@@ -81,6 +89,8 @@
                 href: cli\reference\catalog.md
               - name: pac connector
                 href: cli\reference\connector.md
+              - name: pac copilot
+                href: cli\reference\copilot.md
               - name: pac data
                 href: cli\reference\data.md
               - name: pac help
@@ -103,6 +113,8 @@
                 href: cli\reference\solution.md
               - name: pac telemetry
                 href: cli\reference\telemetry.md
+              - name: pac tests
+                href: cli\reference\tests.md
               - name: pac tool
                 href: cli\reference\tool.md
               - name: pac virtual-agent
@@ -113,7 +125,7 @@
               href: devtools-vs.md
             - name: Create a Power Platform Tools project
               href: devtools-vs-create-project.md
-        - name: Visual Studio connected service (preview)
+        - name: Visual Studio connected service
           items:
             - name: Overview of Visual Studio connected service
               href: visual-studio-connected-service.md

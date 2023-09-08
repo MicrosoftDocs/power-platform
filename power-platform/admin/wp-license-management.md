@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.custom: intro-internal
+ms.collection: get-started
 ms.date: 11/02/2021
 ms.subservice: admin
 ms.author: dileeps

@@ -2,12 +2,13 @@
 title: "Add a chatbot to Facebook"
 description: "Add your bot to Facebook so Facebook users can interact with it."
 keywords: "Channel, publish, Facebook, PVA"
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: micchow
+manager: leeclontz
 ms.custom: "publication, authoring, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

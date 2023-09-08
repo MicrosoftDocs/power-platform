@@ -1,13 +1,13 @@
 ---
 title: "Run bulk system jobs to detect duplicate records  | MicrosoftDocs"
 description: Run bulk system jobs to detect duplicate records
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

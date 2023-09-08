@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 8/16/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -28,9 +28,10 @@ Use the include files to add additional content to this topic.
 |---------|---------|
 |[pac catalog create-submission](#pac-catalog-create-submission)|(Preview) Create catalog submission document. Note: This command will be removed in a future release.|
 |[pac catalog install](#pac-catalog-install)|(Preview) Install a catalog item to the target environment.|
-|[pac catalog list](#pac-catalog-list)|(Preview) List all published catalog items from the current Dataverse Organization.|
+|[pac catalog list](#pac-catalog-list)|(Preview) List all published catalog items from the current Dataverse organization.|
 |[pac catalog status](#pac-catalog-status)|(Preview) Get status of the catalog install/submit request.|
 |[pac catalog submit](#pac-catalog-submit)|(Preview) Submit catalog approval request.|
+|[pac catalog update](#pac-catalog-update)|(Preview) Update settings for the catalog.|
 
 
 ## pac catalog create-submission
@@ -40,7 +41,7 @@ Use the include files to add additional content to this topic.
 [!INCLUDE [catalog-create-submission-intro](includes/catalog-create-submission-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for catalog create-submission
 
 #### `--path` `-p`
 
@@ -55,24 +56,24 @@ Path to catalog submission document
 [!INCLUDE [catalog-install-intro](includes/catalog-install-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for catalog install
 
 #### `--catalog-item-id` `-cid`
 
-Catalog item to be installed on the target environment
+Catalog item to be installed on the target environment.
 
 #### `--target-url` `-tu`
 
 Url of the target environment for catalog item installation
 
 
-### Optional Parameters
+### Optional Parameters for catalog install
 
 #### `--poll-status` `-ps`
 
 Poll to check status of your request
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--settings` `-s`
 
@@ -82,22 +83,22 @@ Runtime Package Settings for the installation framework to execute. The format o
 
 #### `--target-version` `-tv`
 
-Target version to install. If left empty, published version is selected.
+Target version to install. If left empty, the published version is selected.
 
 [!INCLUDE [catalog-install-remarks](includes/catalog-install-remarks.md)]
 
 ## pac catalog list
 
-(Preview) List all published catalog items from the current Dataverse Organization.
+(Preview) List all published catalog items from the current Dataverse organization.
 
 [!INCLUDE [catalog-list-intro](includes/catalog-list-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for catalog list
 
 #### `--catalog-item-id` `-cid`
 
-Catalog item id to search for. When catalog item id is used, catalog item name is ignored.
+Catalog item ID to search for. When catalog item ID is used, catalog item name is ignored.
 
 #### `--catalog-item-name` `-n`
 
@@ -107,7 +108,7 @@ Catalog item name to search for.
 
 Include active items.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [catalog-list-remarks](includes/catalog-list-remarks.md)]
 
@@ -118,11 +119,11 @@ This parameter requires no value. It is a switch.
 [!INCLUDE [catalog-status-intro](includes/catalog-status-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for catalog status
 
 #### `--tracking-id` `-id`
 
-Request tracking id
+Request tracking ID.
 
 #### `--type` `-t`
 
@@ -142,14 +143,14 @@ Use one of these values:
 [!INCLUDE [catalog-submit-intro](includes/catalog-submit-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for catalog submit
 
 #### `--path` `-p`
 
 Path to catalog submission document
 
 
-### Optional Parameters
+### Optional Parameters for catalog submit
 
 #### `--package-zip` `-pz`
 
@@ -159,13 +160,28 @@ Path to package zip file.
 
 Poll to check status of your request
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--solution-zip` `-sz`
 
 Path to solution zip file.
 
 [!INCLUDE [catalog-submit-remarks](includes/catalog-submit-remarks.md)]
+
+## pac catalog update
+
+(Preview) Update settings for the catalog.
+
+[!INCLUDE [catalog-update-intro](includes/catalog-update-intro.md)]
+
+
+### Required Parameters for catalog update
+
+#### `--path` `-p`
+
+Path to catalog settings document
+
+[!INCLUDE [catalog-update-remarks](includes/catalog-update-remarks.md)]
 
 [!INCLUDE [catalog-remarks](includes/catalog-remarks.md)]
 

@@ -4,7 +4,7 @@ description: "Prerequisites and instructions for setting up the Center of Excell
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2023
+ms.date: 08/02/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -29,13 +29,13 @@ The CoE Starter Kit requires access to your tenant's Power Platform environments
 - Power Apps Per User license (non-trial) and Microsoft 365 license.
 - Power Automate Per User license, or Per Flow licenses (non-trial).
 - Power BI Premium per user or per capacity (if using [Data Export](#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory)
-- The identity must be email-enabled.
+- The identity must have access to an Office 365 mailbox that has the REST API enabled. It must also meet all requirements to use the [Office 365 Outlook](/connectors/office365/) connector.
 - If you'd like to collect telemetry information, such as app launches and unique users per app, you must be granted access to the Audit Log and work with a Global Admin who has access to [Microsoft 365 audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log) to complete the setup.
 - If you'd like to share the [Power BI report](power-bi.md) that's part of the CoE Starter Kit, this identity needs to have the Power BI Pro license.  
 
 These roles and licenses must be available to this user continuously; it's not sufficient for the admin access to be granted only temporarily via [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management). The CoE Starter Kit works by using admin connectors in cloud flows (such as [Power Apps for Admins](/connectors/powerappsforadmins/)) to check for new and updated Power Platform resources and provide admin and governance tooling based on Power Platform resources in your tenant (for example, identify highly shared or unused resources). These connectors require an account that has Power Platform Admin access to retrieve the inventory of all environments - a role with lesser privileges wouldn't see all resources in the inventory. The flows using these connectors run on a schedule and on event-based triggers. If you use an identity that has time-based access via PIM to run these flows, not all the inventory would be retrieved.
 
-Configure multifactor authentication for the account by following the recommended settings for [conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
+Configure multi-factor authentication for the account by following the recommended settings for [conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
 
 <a name="how-will-you-communicate-with-your-admins-makers-and-end-users"></a>
 
@@ -106,8 +106,8 @@ Create two production environments to install the CoE Starter Kit solutions:
 - [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database).
 - Choose English as the default language.
 - Don't add sample apps and datasets.
-- Don't restrict environment access with a security group, because some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
-- After [importing the solution](setup-core-components.md) and completing the setup steps, set the *ProductionEnvironment* variable to no in your test environment. This means you can test the coE Starter Kit processes without impacting makers and end users.
+- Set the security group to **None** to allow open access. Some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
+- After [importing the solution](setup-core-components.md) and completing the setup steps, set the *ProductionEnvironment* variable to no in your test environment. This means you can test the CoE Starter Kit processes without impacting makers and end users.
 
 >[!IMPORTANT]
 >Using Data Export as a mechanism to retrieve inventory and telemetry is currently in preview - we recommend you test this in a dedicated test environment before using this feature in production.
