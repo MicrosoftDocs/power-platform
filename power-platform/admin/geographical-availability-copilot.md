@@ -44,11 +44,11 @@ You can allow copilots in your Power Platform environments outside the United St
 
 1. From the right side of the screen, select **Edit** on the **Allow data movement across regions for generative AI features** card.
 
-    :::image type="content" source="media/allow-data-movement.png" alt-text="Select **Edit** on the **Allow data movement across regions for generative AI features** card." lightbox="media/article-folder-name/image-file-expanded.png" border="true":::
+    :::image type="content" source="media/allow-data-movement.png" alt-text="Select **Edit** on the **Allow data movement across regions for generative AI features** card." border="true":::
 
 1. Read the information in the panel and select the check mark to consent to the terms of use.
 
-    :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use." lightbox="media/article-folder-name/image-file-expanded.png" border="true":::
+    :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use." border="true":::
 
 1. Select **Enable**.
 
