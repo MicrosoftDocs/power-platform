@@ -87,7 +87,9 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
     > [!IMPORTANT]
     >  To make any changes in **Hierarchy security**, you must have the **Change Hierarchy Security Settings** privilege.
 
-1. Set the **Depth** to a desired value to limit how many levels deep a manager has a read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you log in into customer engagement apps, not as an administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
+1. Set the **Depth** to a desired value to limit how many levels deep a manager has a read-only access to the data of their reports.
+  
+    For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you log in into customer engagement apps, not as an administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
 
     > [!div class="mx-imgBorder"] 
     > ![Read access for VP of Sales.](../admin/media/sales-vp-access.png "Read access for VP of Sales")
