@@ -93,12 +93,12 @@ In the **Hierarchy Table Management** section, all system tables are enabled for
 
 The **Hierarchy Security** window is shown below. 
 
-# [New, modern UI in preview](#tab/Legacy UI)
+# [New, modern UI in preview](#tab/preview)
   
 > [!div class="mx-imgBorder"] 
 > ![Set up hierarchy security.](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security")
 
-# [Legacy UI](#tab/Legacy UI)
+# [Legacy UI](#tab/LegacyUI)
   
 :::image type="content" source="../admin/media/hierarchy-security-setup2.png" alt-text="Set up hierarchy security in the legacy UI.":::
 
