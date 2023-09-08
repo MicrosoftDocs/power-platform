@@ -86,18 +86,25 @@ The hierarchy security is disabled by default. To enable:
   
 2. Under **Hierarchy Model** select either **Enable Manager Hierarchy Model** or **Enable Position Hierarchy Model**, depending on the requirement.  
   
-> [!IMPORTANT]
->  To make any changes in **Hierarchy security**, you must have the **Change Hierarchy Security Settings** privilege.  
+    > [!IMPORTANT]
+    >  To make any changes in **Hierarchy security**, you must have the **Change Hierarchy Security Settings** privilege.  
   
-In the **Hierarchy Table Management**, all system tables are enabled for hierarchy security out-of-the-box, but, you can exclude selective tables from the hierarchy. In order to exclude specific tables from the hierarchy model, they need to be unselected from the window below, and the changes need to be saved for them to be excluded from the model. 
+In the **Hierarchy Table Management** section, all system tables are enabled for hierarchy security by default, but, you can exclude selective tables from the hierarchy. To exclude a specific table from the hierarchy model, clear the check mark next to the table name and save your changes.
 
-The **Hierarchy Security** window shown below:  
+The **Hierarchy Security** window is shown below. 
+
+# [New, modern UI in preview](#tab/Legacy UI)
   
 > [!div class="mx-imgBorder"] 
 > ![Set up hierarchy security.](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security")
 
+# [Legacy UI](#tab/Legacy UI)
   
- Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you log in into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
+:::image type="content" source="../admin/media/hierarchy-security-setup2.png" alt-text="Set up hierarchy security in the legacy UI.":::
+
+---
+
+Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you log in into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
 
 > [!div class="mx-imgBorder"] 
 > ![Read access for VP of Sales.](../admin/media/sales-vp-access.png "Read access for VP of Sales")
