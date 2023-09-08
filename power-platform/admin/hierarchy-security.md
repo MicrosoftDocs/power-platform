@@ -91,12 +91,11 @@ The hierarchy security is disabled by default. To enable:
   
 In the **Hierarchy Table Management** section, all system tables are enabled for hierarchy security by default, but, you can exclude selective tables from the hierarchy. To exclude a specific table from the hierarchy model, clear the check mark next to the table name and save your changes.
 
-The **Hierarchy Security** window is shown below. 
+The **Hierarchy Security** page is shown below. 
 
 # [New, modern UI in preview](#tab/preview)
   
-> [!div class="mx-imgBorder"] 
-> ![Set up hierarchy security.](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security")
+:::image type="content" source="../admin/media/hierarchy-security-setup2.png" alt-text="Set up hierarchy security in the new, modern UI.":::
 
 # [Legacy UI](#tab/LegacyUI)
   
