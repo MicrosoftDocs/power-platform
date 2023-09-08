@@ -40,23 +40,6 @@ The client Secret must be added and stored as a GitHub Secret, and will be refer
 
 The available helper task is described below.
 
-> [!NOTE]
-> If you receive a timeout error from a GitHub Actions workflow, try version @v1 of GitHub Actions for Power Platform.
-> 
-> Be sure to add the **Install Power Platform Tools** task in your workflow prior to any other GitHub Actions for Power Platform.
->   
-> For example,
->
->     jobs:
->      builds:
->       runs-on: windows-latest   # alternate runner OS is: ubuntu-latest
-> 
->     steps:
->      - name: Install Power Platform Tools
->         uses: microsoft/powerplatform-actions/actions-install@v1
->
-> You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
-
 ### whoAmI
 
 Verifies the service connection by connecting to the service and sending a `WhoAmI` [[SDK](/dotnet/api/microsoft.crm.sdk.messages.whoamirequest)/[Web API](/dynamics365/customer-engagement/web-api/whoami)] request. This task can be useful to include early in your GitHub workflow, to verify connectivity before processing begins.
@@ -269,6 +252,22 @@ Get status of the catalog install/submit request.
 
 
 ## GitHub workflow authoring
+
+When running your GitHub Actions workflow, if you receive a timeout error, try using version @v1 of GitHub Actions for Power Platform.
+
+Be sure to add the **Install Power Platform Tools** task in your workflow prior to any other GitHub Actions for Power Platform. See the example below.
+
+```
+jobs:
+    builds:
+        runs-on: windows-latest   # alternate runner OS is: ubuntu-latest
+
+    steps:
+    - name: Install Power Platform Tools
+        uses: microsoft/powerplatform-actions/actions-install@v1
+```
+
+You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
 
 To learn more about composing GitHub workflows using GitHub actions, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
 
