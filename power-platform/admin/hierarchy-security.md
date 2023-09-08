@@ -132,6 +132,8 @@ The manager hierarchy is easily created by using the manager relationship on the
   
    For each position, provide the name of the position, the parent of the position, and the description. Add users to this position by using the lookup field called **Users in this position**. Below is the example of position hierarchy with the active positions.  
   
+   :::image type="content" source="../admin/media/active-positions.png" alt-text="Active positions in Hierarchy Security"":::
+
    The example of the enabled users with their corresponding positions is shown below:  
   
    :::image type="content" source="../admin/media/hierachy-security-enabled-users.png" alt-text="Enabled users with assigned positions.":::
