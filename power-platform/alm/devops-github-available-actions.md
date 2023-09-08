@@ -16,7 +16,7 @@ search.audienceType:
 
 # Available GitHub Actions for Microsoft Power Platform development
 
-[GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. In addition, sample GitHub workflows shown as well. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
+[GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. In addition, sample GitHub workflows are shown as well. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
 
 ## Configure credentials to use with GitHub Actions with Microsoft Power Platform
 
@@ -41,9 +41,9 @@ The client Secret must be added and stored as a GitHub Secret, and will be refer
 The available helper task is described below.
 
 > [!NOTE]
-> If you face timeout error with GitHub Actions workflow, please use @v1 for GitHub Actions for Power Platform.
+> If you receive a timeout error from a GitHub Actions workflow, try version @v1 of GitHub Actions for Power Platform.
 > 
-> You must add **Install Power Platform Tools** (_steps below_) prior to any GitHub Actions for Power Platform.
+> Be sure to add the **Install Power Platform Tools** task in your workflow prior to any other GitHub Actions for Power Platform.
 >   
 > For example,
 >
@@ -55,7 +55,7 @@ The available helper task is described below.
 >      - name: Install Power Platform Tools
 >         uses: microsoft/powerplatform-actions/actions-install@v1
 >
-> You can find addition sample at GitHub Action as [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions)
+> You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
 
 ### whoAmI
 
