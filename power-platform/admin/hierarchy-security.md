@@ -4,13 +4,15 @@ description: Learn how to use hierarchy security to control access
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/16/2022
+ms.date: 09/08/2023
 search.audienceType: 
   - admin
+ms.contribitors:
+- pmantha
 ---
 # Hierarchy security to control access
 
@@ -78,16 +80,18 @@ Make sure you have the System Administrator permission to update the setting.
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
   
- The hierarchy security is disabled by default. To enable:  
+The hierarchy security is disabled by default. To enable:  
   
 1. Select an environment and go to **Settings** > **Users + Permissions** > **Hierarchy security**.
   
-2. Under **Turn on Hierarchy Modelling** select **Enable Hierarchy Modeling**.  
+2. Under **Hierarchy Model** select either **Enable Manager Hierarchy Model** or **Enable Position Hierarchy Model**, depending on the requirement.  
   
 > [!IMPORTANT]
 >  To make any changes in **Hierarchy security**, you must have the **Change Hierarchy Security Settings** privilege.  
   
- After you have enabled the hierarchy modeling, choose the specific model by selecting the **Manager Hierarchy** or **Custom Position Hierarchy**. All system tables are enabled for hierarchy security out-of-the-box, but, you can exclude selective tables from the hierarchy. The **Hierarchy Security** window shown below:  
+In the **Hierarchy Table Management**, all system tables are enabled for hierarchy security out-of-the-box, but, you can exclude selective tables from the hierarchy. In order to exclude specific tables from the hierarchy model, they need to be unselected from the window below, and the changes need to be saved for them to be excluded from the model. 
+
+The **Hierarchy Security** window shown below:  
   
 > [!div class="mx-imgBorder"] 
 > ![Set up hierarchy security.](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security")
