@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 09/08/2023
 search.audienceType: 
   - admin
-ms.contribitors:
+ms.contributors:
 - pmantha
 ---
 # Hierarchy security to control access
