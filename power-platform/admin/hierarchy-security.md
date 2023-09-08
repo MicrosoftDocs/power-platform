@@ -112,12 +112,12 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
     ---
   
 ## Set up manager and position hierarchies  
-The Manager hierarchy is easily created by using the manager relationship on the system user record. You use the Manager (**ParentsystemuserID**) lookup field to specify the manager of the user. If you have already created the Position hierarchy, you can also tag the user with a particular position in the Position hierarchy. In the following example, the sales person reports to the sales manager in the Manager hierarchy and also has the Sales position in the Position hierarchy:  
+The manager hierarchy is easily created by using the manager relationship on the system user record. You use the Manager (**ParentsystemuserID**) lookup field to specify the manager of the user. If you have already created the position hierarchy, you can also tag the user with a particular position in the position hierarchy. In the following example, the sales person reports to the sales manager in the manager hierarchy and also has the sales position in the position hierarchy:  
 
 > [!div class="mx-imgBorder"] 
 > ![Sales person user record.](../admin/media/appointment-fields-customization.png "Sales person user record")
   
- To add a user to a particular position in the Position hierarchy, use the lookup field called Position on the user record’s form, as show below:  
+ To add a user to a particular position in the position hierarchy, use the lookup field called **Position** on the user record’s form, as show below:  
   
 > [!IMPORTANT]
 >  To add a user to a position or change the user’s position, you must have the **Assign position for a user** privilege.  
@@ -125,16 +125,16 @@ The Manager hierarchy is easily created by using the manager relationship on the
 > [!div class="mx-imgBorder"] 
 > ![Add user to position in Hierarchy Security.](../admin/media/hierarchy-security-add-position2.png "Add user to position in Hierarchy Security")
   
- To change the position on the user record’s form, on the nav bar, choose **More** (…) and choose a different position, as shown below:  
+ To change the position on the user record’s form, on the navigation bar, choose **More** (…) and choose a different position, as shown below:  
   
 > [!div class="mx-imgBorder"] 
 > ![Change position in hierarchy security.](../admin/media/cust-hs-change-position2.png "Change position in hierarchy security")
   
- To create a Position hierarchy:  
+ To create a position hierarchy:  
   
 1. Select an environment and go to **Settings** > **Users + Permissions** > **Positions**.
   
-   For each position, provide the name of the position, the parent of the position, and the description. Add users to this position by using the lookup field called **Users in this position**. Below is the example of Position hierarchy with the active positions.  
+   For each position, provide the name of the position, the parent of the position, and the description. Add users to this position by using the lookup field called **Users in this position**. Below is the example of position hierarchy with the active positions.  
 
    > [!div class="mx-imgBorder"] 
    > ![Active positions in Hierarchy Security.](../admin/media/active-positions.png "Active positions in Hierarchy Security")
@@ -147,7 +147,7 @@ The Manager hierarchy is easily created by using the manager relationship on the
 ## Performance considerations  
  To boost the performance, we recommend:  
   
--   Keep the effective hierarchy security to 50 users or less under a manager/position. Your hierarchy may have more than 50 users under a manager/position, but you can use the Depth setting to reduce the number of levels for Read-only access and with this limit the effective number of users under a manager/position to 50 users or less.  
+-   Keep the effective hierarchy security to 50 users or less under a manager or position. Your hierarchy may have more than 50 users under a manager or position, but you can use the **Depth** setting to reduce the number of levels for read-only access and with this limit the effective number of users under a manager or position to 50 users or less.  
   
 -   Use hierarchy security models in conjunction with other existing security models for more complex scenarios. Avoid creating a large number of business units, instead, create fewer business units and add hierarchy security.  
   
