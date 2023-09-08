@@ -3,7 +3,7 @@ title: "Microsoft Power Platform self-service analytics export Power Platform in
 description: Export Power Apps canvas apps inventory and usage data to use with your organization's line-of-business scenarios.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2023
+ms.date: 09/08/2023
 ms.subservice: admin
 author: StephenRauchPM
 ms.author: stephenrauch
@@ -30,7 +30,7 @@ Data Lake Storage is a key part of Cortana Intelligence, meaning that it works w
 > [!NOTE]
 > Enablement of data export will be limited to customers with a paid, premium Microsoft Dataverse license available for the tenant. Details of additional licensing requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). Additional details about minimum Dataverse capacity requirements to access the data export features will be announced in advance of general availability.
 >
-> For Government Community Cloud (GCC) customer that need to configure integration to Data Lake storage hosted in an Azure Government subscription, please open a support ticket.
+> For Government Community Cloud (GCC) customers who need to configure integration to Data Lake storage hosted in an Azure Government subscription, please open a [support request](get-help-support.md).
 
 ## Prerequisites
 
