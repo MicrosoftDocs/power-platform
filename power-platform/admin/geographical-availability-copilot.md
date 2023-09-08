@@ -80,7 +80,7 @@ You can disable copilots and generative AI features in Power Platform environmen
 
 Currently all the Power Platform and Dynamics 365 copilots and generative AI features are available only in the United States and Switzerland regions. As the required infrastructure is available across other regions, copilots and generative AI features can be accessed from the same data boundary and opt-in consent isn't required.
 
-The following table lists all copilot and generative AI features available in Power Platform environments outside the United States and Switzerland regions with consent set.
+The following table lists all copilot and generative AI features available in Power Platform environments outside the United States and Switzerland regions when the consent is set to **Allowed**.
 
 > [!NOTE]
 > Copilot and generative AI features only work with the English language.
