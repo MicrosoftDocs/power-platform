@@ -42,9 +42,9 @@ You can allow copilots in your Power Platform environments outside the United St
 
 1. Select your environment.
 
-1. From the right side of the screen, select **Edit** on the **Allow data movement across regions for AI features** card.
+1. From the right side of the screen, select **Edit** on the **Allow data movement across regions for generative AI features** card.
 
-    ![Select **Edit** on the **Allow data movement across regions for AI features** card.](media/allow-data-movement.png)
+    ![Select **Edit** on the **Allow data movement across regions for generative AI features** card.](media/allow-data-movement.png)
 
 1. Read the information in the panel and select the check mark to consent to the terms of use.
 
@@ -52,7 +52,7 @@ You can allow copilots in your Power Platform environments outside the United St
 
 1. Select **Enable**.
 
-    After you consent, the status on the **Allow data movement across regions for AI features** card shows **Allowed** and copilots and generative AI features are enabled in the environment.
+    After you consent, the status on the **Allow data movement across regions for generative AI features** card shows **Allowed** and copilots and generative AI features are enabled in the environment.
 
 ## Disable copilots and generative AI outside the United States and Switzerland
 
@@ -67,13 +67,13 @@ You can disable copilots and generative AI features in Power Platform environmen
 
 1. Select your environment.
 
-1. From the right side of the screen, select **Edit** on the **Allow data movement across regions for AI features** card.
+1. From the right side of the screen, select **Edit** on the **Allow data movement across regions for generative AI features** card.
 
 1. Clear the terms of use check mark.
 
 1. Select **Disable**.
 
-    After you remove your consent, the status on the **Allow data movement across regions for AI features** card shows **Not allowed** disabling copilots and generative AI features in the environment.
+    After you remove your consent, the status on the **Allow data movement across regions for generative AI features** card shows **Not allowed** disabling copilots and generative AI features in the environment.
 
 ## Available copilot and generative AI features outside the United States and Switzerland
 
