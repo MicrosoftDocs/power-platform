@@ -44,7 +44,9 @@ After installing the Power Platform Tools extension and connecting to the online
 :::image type="content" source="../media/devexp-fno-download.png" alt-text="Extension and metadata download dialog.":::
 
 > [!IMPORTANT]
-> The dialog to download the finance and operations extension is only displayed when the Visual Studio setting **Tools** > **Options** > **Power Platform Tools** > **Download Assets for Dynamics 365 Finance if using unified environments** is checked.
+> You can configure settings using the Visual Studio setting **Tools** > **Options** > **Power Platform Tools**.
+> 
+> :::image type="content" source="../media/unified-experience/D365FinOpsToolsOptions.png" alt-text="Tools options":::
 >
 > You need at least 12 GB of free space on the local system drive to download the extension and metadata.
 
@@ -96,7 +98,7 @@ To configure the extension, follow these instructions.
 |Description| Description of the configuration you're creating now.|
 |Cross reference database server| Could be set to "(localdb)\." if you're using LocalDB, or "localhost" if you're using Microsoft SQL Server.|
 |Cross reference database name| The name for the Cross reference database. The VS extension creates one if it doesn't exist.|
-|Application version to restore cross reference database from| This is populated from the assets downloaded when you connected to the unified development environment.|
+|Application version to restore cross reference database from| Please select this. It is populated from the assets downloaded when you connected to the unified development environment.|
 |Folder for your own custom metadata| Folder where your own code is (or will be).|
 |Folders for reference metadata| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).|
 
@@ -106,7 +108,10 @@ If after filling in all the fields the **Save** button is still grayed out, you'
 Ensure that you entered the correct value(s) for fields with errors. (for example, "(localdb)\." if you're using LocalDB). 
 Also, if you're using LocalDB, you may need to first configure and test it. Consider issuing the following command from a command prompt: `sqllocaldb create MSSQLLocalDB -s`. More information: [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
 
-You may get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
+ > [!NOTE]
+    > If the cross reference database does not already exist, the tool will restore the database from backup. You will see notifications in the Visual Studio Output pane. If you need to restore it again by yourself you can do so. Refer  https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#restore-to-sql-server 
+
+After configuration is saved, you may get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
 
 Once the configuration completes, navigate to **View** > **Application Explorer** . You should see the **Application Explorer** window open. You may have to restart Visual studio first. 
 
