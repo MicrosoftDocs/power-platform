@@ -4,7 +4,7 @@ description: Learn about how to...
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/21/2023
+ms.date: 09/08/2023
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -13,6 +13,7 @@ search.audienceType:
   - admin
 ms.contributors:
 - avkatiyar
+- StephenRauchPM
 ---
 
 # Conversation diagnostics in Azure Application Insights (preview)
@@ -28,7 +29,7 @@ You can then use the conversation lifecycle events data from Dynamics 365 Custom
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 > [!NOTE]
-> Export of Power Automate and Dynamics Customer Service data is not available in sovereign cloud (GCC,GCCH, DoD) at this time.
+> Export of Power Automate and Dynamics 365 Customer Service data is not available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud - High (GCC High), and Department of Defense (DoD), at this time.
 
 > [!IMPORTANT]
 > When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this public preview only, the premium use rights requirement and the Managed Environments restriction are relaxed.
