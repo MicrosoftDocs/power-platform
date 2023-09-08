@@ -42,6 +42,20 @@ The available helper task is described below.
 
 > [!NOTE]
 > If you face timeout error with GitHub Actions workflow, please use @v1 for GitHub Actions for Power Platform.
+> 
+> You must add **Install Power Platform Tools** (_steps below_) prior to any GitHub Actions for Power Platform.
+>   
+> For example,
+>
+>     jobs:
+>      builds:
+>       runs-on: windows-latest   # alternate runner OS is: ubuntu-latest
+> 
+>     steps:
+>      - name: Install Power Platform Tools
+>         uses: microsoft/powerplatform-actions/actions-install@v1
+>
+> You can find addition sample at GitHub Action as [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions)
 
 ### whoAmI
 
