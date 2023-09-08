@@ -4,7 +4,7 @@ description: Learn about how to set up Azure Application Insights with Power Aut
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/06/2023
+ms.date: 09/08/2023
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -13,6 +13,7 @@ search.audienceType:
   - admin
 ms.contributors:
 - rakrish
+- StephenRauchPM
 ---
 
 # Set up Application Insights with Power Automate (preview)
@@ -29,7 +30,7 @@ Power Automate telemetry flows into two tables on Application Insights – **Req
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 > [!NOTE]
-> Export of Power Automate and Dynamics Customer Service data is not available in sovereign cloud (GCC,GCCH, DoD) at this time.
+> Export of Power Automate and Dynamics 365 Customer Service data is not available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud - High (GCC High), and Department of Defense (DoD), at this time.
 
 > [!IMPORTANT]
 > When this feature transitions to General Availability (GA), the feature is planned for Managed Environments only.  For this preview only, the Managed Environment restriction doesn't apply.
