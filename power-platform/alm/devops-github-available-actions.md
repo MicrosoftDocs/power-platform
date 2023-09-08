@@ -40,6 +40,9 @@ The client Secret must be added and stored as a GitHub Secret, and will be refer
 
 The available helper task is described below.
 
+> [!NOTE]
+> If you face timeout error with GitHub Actions workflow, please use @v1 for GitHub Actions for Power Platform.
+
 ### whoAmI
 
 Verifies the service connection by connecting to the service and sending a `WhoAmI` [[SDK](/dotnet/api/microsoft.crm.sdk.messages.whoamirequest)/[Web API](/dynamics365/customer-engagement/web-api/whoami)] request. This task can be useful to include early in your GitHub workflow, to verify connectivity before processing begins.
