@@ -44,7 +44,7 @@ Two security models can be used for hierarchies, the _manager hierarchy_ and the
 
 For a non-direct report in the same management chain of the manager, a manager has read-only access to the non-direct report’s data. For a direct report, the manager has Read, Write, Append, AppendTo access to the report’s data. To illustrate the manager hierarchy security model, let’s take a look at the diagram below. The CEO can read or update the VP of Sales data and the VP of Service data. However, the CEO can only read the sales manager data and the service manager data, as well as the sales and support data. You can further limit the amount of data accessible by a manager with _depth_. Depth is used to limit how many levels deep a manager has read-only access to the data of their reports. For example, if the depth is set to 2, the CEO can see the data of the VP of Sales, VP of Service, and sales and service managers. However, the CEO doesn’t see the sales data or the support data.  
   
- ![Manager hierarchy security.](../admin/media/manage-hierarchy-security.png "Manager hierarchy security")  
+:::image type="content" source="../admin/media/manage-hierarchy-security.png" alt-text="Manager hierarchy":::
 
 It is important to note that if a direct report has deeper security access to a table than their manager, the manager may not able to see all the records that the direct report has access to. The following example illustrates this point.  
   
@@ -63,7 +63,7 @@ It is important to note that if a direct report has deeper security access to a 
   
 To illustrate the concept of the direct ancestor path, let’s look at the diagram below. The sales manager position has access to the sales data, however, it doesn’t have access to the support data, which is in the different ancestor path. The same is true for the service manager position. It doesn’t have access to the sales data, which is in the sales path. Like in the manager hierarchy, you can limit the amount of data accessible by higher positions with _depth_. The depth will limit how many levels deep a higher position has read-only access, to the data of the lower positions in the direct ancestor path. For example, if the depth is set to 3, the CEO position can see the data all the way down from the VP of Sales and VP of Service positions, to the sales and support positions.  
   
- ![Position hierarchy.](../admin/media/position-hierarchy.png "Position hierarchy")  
+:::image type="content" source="../admin/media/position-hierarchy.png" alt-text="Position hierarchy":::
   
 > [!NOTE]
 > With the position hierarchy security, a user at a higher position has access to the records owned by a lower position user or by the team that a user is a member of, and to the records that are directly shared to the user or the team that a user is a member of.  
@@ -91,8 +91,7 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
   
     For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you log in into customer engagement apps, not as an administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
 
-    > [!div class="mx-imgBorder"] 
-    > ![Read access for VP of Sales.](../admin/media/sales-vp-access.png "Read access for VP of Sales")
+    :::image type="content" source="../admin/media/sales-vp-access.png" alt-text="Read access for VP of Sales":::
   
     > [!NOTE]
     >  While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.  
@@ -114,21 +113,18 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
 ## Set up manager and position hierarchies  
 The manager hierarchy is easily created by using the manager relationship on the system user record. You use the Manager (**ParentsystemuserID**) lookup field to specify the manager of the user. If you have already created the position hierarchy, you can also tag the user with a particular position in the position hierarchy. In the following example, the sales person reports to the sales manager in the manager hierarchy and also has the sales position in the position hierarchy:  
 
-> [!div class="mx-imgBorder"] 
-> ![Sales person user record.](../admin/media/appointment-fields-customization.png "Sales person user record")
+:::image type="content" source="../admin/media/appointment-fields-customization.png" alt-text="Sales person user record":::
   
  To add a user to a particular position in the position hierarchy, use the lookup field called **Position** on the user record’s form, as show below:  
   
 > [!IMPORTANT]
 >  To add a user to a position or change the user’s position, you must have the **Assign position for a user** privilege.  
 
-> [!div class="mx-imgBorder"] 
-> ![Add user to position in Hierarchy Security.](../admin/media/hierarchy-security-add-position2.png "Add user to position in Hierarchy Security")
+:::image type="content" source="../admin/media/hierarchy-security-add-position2.png" alt-text="Add user to position in Hierarchy Security":::
   
  To change the position on the user record’s form, on the navigation bar, choose **More** (…) and choose a different position, as shown below:  
   
-> [!div class="mx-imgBorder"] 
-> ![Change position in hierarchy security.](../admin/media/cust-hs-change-position2.png "Change position in hierarchy security")
+:::image type="content" source="../admin/media/cust-hs-change-position2.png" alt-text="Change position in hierarchy security":::
   
  To create a position hierarchy:  
   
@@ -136,13 +132,11 @@ The manager hierarchy is easily created by using the manager relationship on the
   
    For each position, provide the name of the position, the parent of the position, and the description. Add users to this position by using the lookup field called **Users in this position**. Below is the example of position hierarchy with the active positions.  
 
-   > [!div class="mx-imgBorder"] 
-   > ![Active positions in Hierarchy Security.](../admin/media/active-positions.png "Active positions in Hierarchy Security")
+   :::image type="content" source="../admin/media/active-positions.png" alt-text="Active positions in Hierarchy Security"":::
   
    The example of the enabled users with their corresponding positions is shown below:  
   
-   > [!div class="mx-imgBorder"] 
-   > ![Enabled users with assigned positions.](../admin/media/hierachy-security-enabled-users.png "Enabled users with assigned positions")
+   :::image type="content" source="../admin/media/hierachy-security-enabled-users.png" alt-text="Enabled users with assigned positions.":::
 
 ## Performance considerations  
  To boost the performance, we recommend:  
