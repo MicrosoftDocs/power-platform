@@ -74,8 +74,15 @@ Compile the class to make sure you didn't introduce any errors to this code. The
 All the work that we have done up until now has happened on the client side. The X++ compiler and the related tools are all installed locally, along with the metadata that defines the application you're developing against. In Visual Studio, you can use the **Configure Metadata** menu item to manage the configuration that you're working with.
 
 Now the time has come to execute the code, and for code execution you need to deploy the code to the server (cloud) tier. For this operation, use the **Extension** > **Dynamics 365** > **Deploy** > **Deploy Models to Online Environment** menu item. The dialog that appears allows you to select the packages to deploy. In this case, you need to select "MyTestModel". You can easily find that model by using the search field at the top of the list of packages. At the bottom of the dialog, see the packages that are referenced. Since these packages are part of the code that Microsoft ships, you don't need to deploy them as they're already installed on the server tier.
+At this point, you're accessing the endpoint in the cloud, so unless you are already logged in, you likely need to authenticate and connect to the environment. Use your Microsoft Dataverse credentials to connect to Dataverse and select the solution to work against. After a short wait, the authentication will complete.
 
-At this point, you're accessing the endpoint in the cloud, so you likely need to authenticate. Use your Microsoft Dataverse credentials to connect to Dataverse and select the solution to work against. After a short wait, the authentication will complete.
+> [!IMPORTANT]
+> There are 4 different ways to deploy your changes to the unified development environment.
+> Deploy the full model via the Dynamics365 > Deploy > Deploy Models ... dialog. One can choose to synchronize the database if so desired.
+> As part of a full build, deploy the full model. This is initiated via the Dynamics365 > Build Models dialog, if the option to 'Deploy to connected online environment' is turned on. The tool will synchronize database or not based on the 'synchronize database' setting on the same 'Options' tab.
+> As part of an incremental build from the solution explorer if you set to true 'Deploy changes to online environment'. This will only deploy changes since last successful deployment or those made as part of this build. It will honor the project settings for 'Synchronize database'
+> Right click a project and choose to 'Deploy model for project ...'. This will deploy only chnages since last successful deployment and also synchrnize the database for the module.
+> Synchronize the database for all models without deploying anything new via Dynamics365 > Synchronize Database...
 
 You can follow the progress of the deployment by navigating  to the "FinOps Cloud Run-time" channel in the Visual Studio output window. Once that deployment is complete, you can see log information by following the link displayed in the output window.
 
@@ -111,6 +118,9 @@ Now let's set a breakpoint in the form.
 1. In that form, set a breakpoint in the `selectionChange` method in the ThemeChooser control. This code is triggered when the user selects a new color theme.
 1. In the browser window, select one of the colored squares, let's say the red one. You;ll hit the breakpoint.
 1. Continue the execution by pressing F5. Another colored square is hit and the breakpoint is triggered again.
+
+> [!IMPORTANT]
+> If you want to attach the debugger to the running process use Dynamics365 > Launch debugger.
 
 ## Summary
 
