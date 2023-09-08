@@ -109,6 +109,7 @@ If after filling in all the fields the **Save** button is still grayed out, you'
 
 Ensure that you entered the correct value(s) for fields with errors. (for example, "(localdb)\." if you're using LocalDB). 
 Also, if you're using LocalDB, you may need to first configure and test it. Consider issuing the following command from a command prompt: `sqllocaldb create MSSQLLocalDB -s`. More information: [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
+
     > [!NOTE]
     > If the cross reference database does not already exist, the tool will restore the database from backup. You will see notifications in the Visual Studio Output pane. If you need to restore it again by yourself you can do so. Refer  https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#restore-to-sql-server 
 
