@@ -47,13 +47,12 @@ After installing the Power Platform Tools extension and connecting to the online
 > You can configure settings using the Visual Studio setting **Tools** > **Options** > **Power Platform Tools**.
 >
 > Consider **Do not display Power Platform Explorer...** to speed up login to environment and **Download logs...** to get logs for deployment and DBSync operations.
-> 
+>
 > :::image type="content" source="../media/unified-experience/D365FinOpsToolsOptions.png" alt-text="Tools options":::
 >
 > You need at least 12 GB of free space on the local system drive to download the extension and metadata.
 
-Choose **OK** in the dialog to start the download. Visual studio notifies you once the download is completed. 
-
+Choose **OK** in the dialog to start the download. Visual studio notifies you once the download is completed.
 
 Visual Studio may not be responsive while downloading the assets.
 
@@ -62,7 +61,7 @@ Visual Studio may not be responsive while downloading the assets.
 Downloaded assets can be found in the following location:  
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
 
-Three files are downloaded:
+Three files are downloaded and described below.
 
 :::image type="content" source="../media/unified-experience/D365FinOpsAsetsDownloaded.png" alt-text="download asset files":::
 
@@ -70,7 +69,7 @@ Three files are downloaded:
 - System metadata was downloaded as PackagesLocalDirectory.zip.
 - Backup of the cross reference database as DYNAMICSXREFDB.bak
 
-Unblock any file that needs unblocking 
+Unblock any of these files that needs unblocking.
 
 :::image type="content" source="../media/unified-experience/D365FinOpsAsetsUnblock.png" alt-text="Unblock downloaded asset files":::
 
@@ -90,9 +89,9 @@ To configure the extension, follow these instructions.
     If you do not see it, open **Extensions** > **Dynamics 365** > **Infolog** and retry.
    :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadataMenu.png" alt-text="Configure Metadata menu":::
 
-4. On the configuration form, click **New**, and then create a new configuration. See the field descriptions provided in the following table.
+3. On the configuration form, select **New** and then create a new configuration. See the field descriptions provided in the table that follows this procedure.
  :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadata.png" alt-text="Configure Metadata dialog":::
-6. Click **Save**.
+4. Select **Save**.
 
 | Form field | Description |
 |---|---|
@@ -107,15 +106,17 @@ To configure the extension, follow these instructions.
 If after filling in all the fields the **Save** button is still grayed out, you'll see error messages with a red border in tooltips on the offending fields.
 :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadataValidation.png" alt-text="Configure Metadata Validation":::
 
-Ensure that you entered the correct value(s) for fields with errors. (for example, "(localdb)\." if you're using LocalDB). 
-Also, if you're using LocalDB, you may need to first configure and test it. Consider issuing the following command from a command prompt: `sqllocaldb create MSSQLLocalDB -s`. More information: [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
+Ensure that you entered the correct value(s) for fields with errors. For example, use "(localdb)\." if you're using LocalDB. 
+Also, if you're using LocalDB, you may need to first configure and test it. Consider issuing the following command from a command prompt: `sqllocaldb create MSSQLLocalDB -s`.
+
+More information: [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
 
 > [!NOTE]
-> If the cross reference database does not already exist, the tool will restore the database from backup downloaded to C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>. You will see notifications in the Visual Studio Output pane. If you need to restore it again by yourself you can do so. For steps refer  https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#restore-to-sql-server 
+> If the cross reference database does not already exist, the tool will restore the database from backup downloaded to C:\Users\\<User>\AppData\Local\Microsoft\Dynamics365\\<ApplicationVersion>. You'll see notifications in the Visual Studio **Output** pane. If you need to restore it again by yourself you can do so. For instructions to do a restore refer to [Restore to SQL Server](/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#restore-to-sql-server).
 
-After configuration is saved, you may get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
+After the configuration is saved, you may get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
 
-Once the configuration completes, navigate to **View** > **Application Explorer** . You should see the **Application Explorer** window open. You may have to restart Visual studio first. 
+Once the configuration completes, navigate to **View** > **Application Explorer** . You should see the **Application Explorer** window open. You may have to restart Visual studio first.
 
 :::image type="content" source="../media/unified-experience/D365FinOpsApplicationExplorer.png" alt-text="Application Explorer":::
 

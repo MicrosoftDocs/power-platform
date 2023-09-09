@@ -75,22 +75,22 @@ All the work that we have done up until now has happened on the client side. The
 
 Now the time has come to execute the code, and for code execution you need to deploy the code to the server (cloud) tier. For this operation, use the **Extension** > **Dynamics 365** > **Deploy** > **Deploy Models to Online Environment** menu item. The dialog that appears allows you to select the packages to deploy. In this case, you need to select "MyTestModel". You can easily find that model by using the search field at the top of the list of packages. At the bottom of the dialog, see the packages that are referenced. Since these packages are part of the code that Microsoft ships, you don't need to deploy them as they're already installed on the server tier.
 
-:::image type="content" source="../media/unified-experience/D365FinOpsDeployDialog.png" alt-text="Shows the deploy modules dialog":::
+:::image type="content" source="../media/unified-experience/D365FinOpsDeployDialog.png" alt-text="The deploy modules dialog":::
 
-At this point, you're accessing the endpoint in the cloud, so unless you are already logged in, you likely need to authenticate and connect to the environment. Use your Microsoft Dataverse credentials to connect to Dataverse and select the solution to work against. After a short wait, the authentication will complete.
+At this point you're accessing the endpoint in the cloud, so unless you are already logged in you likely need to authenticate and connect to the environment. Use your Microsoft Dataverse credentials to connect to Dataverse and select the solution to work against. After a short wait, the authentication will complete.
 
 > [!IMPORTANT]
 > There are different ways to deploy your changes to the unified development environment.
 >  
->   1. Deploy the full model via the Dynamics365 > Deploy > Deploy Models ... dialog. One can choose to synchronize the database if so desired.
-> 
->   2. As part of a full build, deploy the full model. This is initiated via the Dynamics365 > Build Models dialog, if the option to 'Deploy to connected online environment' is turned on. The tool will synchronize database or not based on the 'synchronize database' setting on the same 'Options' tab.
+>   1. Deploy the full model via the **Dynamics 365** > **Deploy** > **Deploy models ...** dialog. You can choose to synchronize the database if so desired.
 >
->   3. As part of an incremental build from the solution explorer if you set to true 'Deploy changes to online environment'. This will only deploy changes since last successful deployment or those made as part of this build. It will honor the project settings for 'Synchronize database'
+>   2. As part of a full build, deploy the full model. This deployment is initiated via the **Dynamics 365** > **Build models** dialog if the option to **Deploy to connected online environment** is turned on. The tool will synchronize database or not based on the **synchronize database** setting on the same **Options** tab.
 >
->   4. Right click a project and choose to 'Deploy model for project ...'. This will only deploy changes since last successful deployment and also synchronize the database for the module.
+>   3. As part of an incremental build from Solution Explorer, setting **Deploy changes to online environment** to true will only deploy changes since the last successful deployment or those made as part of this build. It will honor the project settings for **Synchronize database**.
 >
->   5. Synchronize the database for all models without deploying anything new via Dynamics365 > Synchronize Database...
+>   4. Right click a project and choose to **Deploy model for project ...**. This will only deploy changes since last successful deployment and also synchronize the database for the module.
+>
+>   5. Synchronize the database for all models without deploying anything new via **Dynamics 365** > **Synchronize database...**.
 
 You can follow the progress of the deployment by navigating  to the "FinOps Cloud Run-time" channel in the Visual Studio output window. Once that deployment is complete, you can see log information by following the link displayed in the output window.
 
@@ -128,11 +128,11 @@ Now let's set a breakpoint in the form.
 1. Continue the execution by pressing F5. Another colored square is hit and the breakpoint is triggered again.
 
 > [!IMPORTANT]
-> If you want to attach the debugger to the running AOS process in the unified environment use Dynamics365 > Launch debugger.
+> If you want to attach the debugger to the running AOS process in the unified environment use **Dynamics 365** > **Launch debugger**.
 > 
-> To detach the debugger from the runtime without restarting the AOS, use Detach in place of Stop.
-> 
-> Use appinsights to monitor and diagnose the application executing in the unified development environment. Learn more about observability https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights
+> To detach the debugger from the runtime without restarting the AOS, use **Detach in place of Stop**.
+>
+> Use Application Insights to monitor and diagnose the application executing in the unified development environment. Learn more about observability: [Monitoring and telemetry using Application Insights](/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights)
 
 ## Summary
 
@@ -142,8 +142,7 @@ We started with using Visual Studio to create a simple runnable class. After the
 
 ### See also
 
-[Unit testing in the unified developer experience](finance-operations-testing.md)  
-[Deploy packages](finance-operations-deploy-packages.md)  
+[Unit testing in the unified developer experience](finance-operations-testing.md)   
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](../../admin/manage-apps.md)
 
