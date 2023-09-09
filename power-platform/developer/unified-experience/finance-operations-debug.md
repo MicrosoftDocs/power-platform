@@ -125,9 +125,11 @@ Now let's set a breakpoint in the form.
 1. Continue the execution by pressing F5. Another colored square is hit and the breakpoint is triggered again.
 
 > [!IMPORTANT]
-> If you want to attach the debugger to the running process use Dynamics365 > Launch debugger.
+> If you want to attach the debugger to the running AOS process in the unified environment use Dynamics365 > Launch debugger.
 > 
-> To detach the debugger from the runtime without restarting it use Detach in place of Stop.
+> To detach the debugger from the runtime without restarting the AOS, use Detach in place of Stop.
+> 
+> Use appinsights to monitor and diagnose the application executing in the unified development environment. Learn more about observability https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights
 
 ## Summary
 
