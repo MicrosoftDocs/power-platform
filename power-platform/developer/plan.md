@@ -144,10 +144,6 @@ However, even after deleting a user's developer environment, a new developer env
 
 Yes. To prevent users from creating developer environments, go to [Control environment creation](/power-platform/admin/control-environment-creation#developer-environments).
 
-### Does the developer environment get auto-created with a developer plan?
-
-No, developer environments no longer get auto-created with a Power Apps Developer Plan. The maker/developer needs to create developer environments either through Power Platform admin center, Power Apps,  or the community page.
-
 ### Does the Power Apps Developer plan include Power Automate RPA use rights?
 
 No. However, users may start a Power Automate trial including RPA use rights to try out RPA capabilities. Power Apps Developer plan includes cloud flow use rights since these can be connected to an act as an extension of Power Apps apps.
@@ -155,10 +151,6 @@ No. However, users may start a Power Automate trial including RPA use rights to 
 ### Does the Power Apps Developer plan include AI Builder use rights?
 
 No. However, users may start an AI Builder trial to try out the AI Builder capabilities.
-
-### Can a developer environment be a managed environment?
-
-The developer environment can become a managed environment. However, managed environment use rights are not included in the developer plan. As a result, end users will require premium licenses in order to run their assets in a managed developer environment.
 
 ### Why does a banner appear with apps running in the developer environment?
 
