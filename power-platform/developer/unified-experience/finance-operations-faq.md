@@ -134,6 +134,10 @@ Go to the Dataverse environment and check the OperationsHistory table to downloa
 
 The correlation id is in the output pane. The client machine name with timestamp is also sufficient for Microsoft to obtain telemetry information.
 
+### How do I monitor and diagnose the deployed code running in the Unified environment?
+
+Use appinsights to monitor and diagnose the application executing in the unified development environment. Learn more about observability https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights.
+
 ### See also
 
 [Unified developer experience for finance and operations apps (preview)](finance-operations-dev-overview.md)
