@@ -16,7 +16,7 @@ search.audienceType:
 
 # Available GitHub Actions for Microsoft Power Platform development
 
-[GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. In addition, sample GitHub workflows shown as well. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
+[GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. In addition, sample GitHub workflows are shown as well. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
 
 ## Configure credentials to use with GitHub Actions with Microsoft Power Platform
 
@@ -252,6 +252,22 @@ Get status of the catalog install/submit request.
 
 
 ## GitHub workflow authoring
+
+When running your GitHub Actions workflow, if you receive a timeout error, try using version @v1 of GitHub Actions for Power Platform.
+
+Be sure to add the **Install Power Platform Tools** task in your workflow prior to any other GitHub Actions for Power Platform. See the example below.
+
+```
+jobs:
+    builds:
+        runs-on: windows-latest   # alternate runner OS is: ubuntu-latest
+
+    steps:
+    - name: Install Power Platform Tools
+        uses: microsoft/powerplatform-actions/actions-install@v1
+```
+
+You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
 
 To learn more about composing GitHub workflows using GitHub actions, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
 

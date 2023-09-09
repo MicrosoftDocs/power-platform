@@ -93,7 +93,7 @@ In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-mode
 Each record has an **Owning Business Unit** column which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
 
 > [!NOTE]
-> When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using Organization Service to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
+> When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using SDK for .NET to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
 
 You can manage whether you want to allow your user to set the Owning Business Unit column when the feature switch is ON. To set the Owning Business Unit column, you need to grant the user’s security role the Business Unit table’s **Append To** privilege with local level permission.  
 
