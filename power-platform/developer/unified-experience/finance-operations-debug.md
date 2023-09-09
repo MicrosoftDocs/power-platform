@@ -78,10 +78,15 @@ At this point, you're accessing the endpoint in the cloud, so unless you are alr
 
 > [!IMPORTANT]
 > There are different ways to deploy your changes to the unified development environment.
+    > 
     1. Deploy the full model via the Dynamics365 > Deploy > Deploy Models ... dialog. One can choose to synchronize the database if so desired.
+    > 
     2. As part of a full build, deploy the full model. This is initiated via the Dynamics365 > Build Models dialog, if the option to 'Deploy to connected online environment' is turned on. The tool will synchronize database or not based on the 'synchronize database' setting on the same 'Options' tab.
+    >
     3. As part of an incremental build from the solution explorer if you set to true 'Deploy changes to online environment'. This will only deploy changes since last successful deployment or those made as part of this build. It will honor the project settings for 'Synchronize database'
+    >
     4. Right click a project and choose to 'Deploy model for project ...'. This will deploy only chnages since last successful deployment and also synchrnize the database for the module.
+    >
     5. Synchronize the database for all models without deploying anything new via Dynamics365 > Synchronize Database...
 
 You can follow the progress of the deployment by navigating  to the "FinOps Cloud Run-time" channel in the Visual Studio output window. Once that deployment is complete, you can see log information by following the link displayed in the output window.
@@ -121,6 +126,7 @@ Now let's set a breakpoint in the form.
 
 > [!IMPORTANT]
 > If you want to attach the debugger to the running process use Dynamics365 > Launch debugger.
+> 
 > To detach the debugger from the runtime without restarting it use Detach in place of Stop.
 
 ## Summary
