@@ -74,6 +74,9 @@ Compile the class to make sure you didn't introduce any errors to this code. The
 All the work that we have done up until now has happened on the client side. The X++ compiler and the related tools are all installed locally, along with the metadata that defines the application you're developing against. In Visual Studio, you can use the **Configure Metadata** menu item to manage the configuration that you're working with.
 
 Now the time has come to execute the code, and for code execution you need to deploy the code to the server (cloud) tier. For this operation, use the **Extension** > **Dynamics 365** > **Deploy** > **Deploy Models to Online Environment** menu item. The dialog that appears allows you to select the packages to deploy. In this case, you need to select "MyTestModel". You can easily find that model by using the search field at the top of the list of packages. At the bottom of the dialog, see the packages that are referenced. Since these packages are part of the code that Microsoft ships, you don't need to deploy them as they're already installed on the server tier.
+
+:::image type="content" source="../media/unified-experience/D365FinOpsDeployDialog.png" alt-text="Shows the deploy modules dialog":::
+
 At this point, you're accessing the endpoint in the cloud, so unless you are already logged in, you likely need to authenticate and connect to the environment. Use your Microsoft Dataverse credentials to connect to Dataverse and select the solution to work against. After a short wait, the authentication will complete.
 
 > [!IMPORTANT]
