@@ -156,10 +156,6 @@ No. However, users may start a Power Automate trial including RPA use rights to 
 
 No. However, users may start an AI Builder trial to try out the AI Builder capabilities.
 
-### Can a developer environment be a managed environment?
-
-The developer environment can become a managed environment. However, managed environment use rights are not included in the developer plan. As a result, end users will require premium licenses in order to run their assets in a managed developer environment.
-
 ### Why does a banner appear with apps running in the developer environment?
 
 Since developer environments aren't intended to support production scenarios, apps display a temporary banner to remind makers about them running in a developer environment. This banner will no longer appear if you move the app from a developer environment to a non-developer environment.
