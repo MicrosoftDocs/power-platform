@@ -158,7 +158,7 @@ No. However, users may start an AI Builder trial to try out the AI Builder capab
 
 ### Can a developer environment be a managed environment?
 
-The developer environment can become a managed environment. However, managed environment use rights are not included in the developer plan. As a result, end users will require a premium licenses in order to run their assets in a managed developer environment.
+The developer environment can become a managed environment. However, managed environment use rights are not included in the developer plan. As a result, end users will require premium licenses in order to run their assets in a managed developer environment.
 
 ### Why does a banner appear with apps running in the developer environment?
 
