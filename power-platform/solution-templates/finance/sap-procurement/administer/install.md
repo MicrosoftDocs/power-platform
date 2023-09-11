@@ -23,9 +23,9 @@ ms.subservice: solution-templates
 
 # Install SAP Procurement solution template files
 
-As a Power Platform admin, you can take the following steps to access and install the solution to the development environment you prepared for it.
+As a Power Platform admin, go to [Templates for Power Platform](https://aka.ms/TemplatesforPowerPlatform) on GitHub to access all the template assets.
 
-First, select the links to download the [mpa_SAPBase_managed](https://aka.ms/DownloadSAPBaseSolution) and [mpa_SAPProcurement_managed](https://aka.ms/DownloadSAPProcurementSolution) solution files.
+Download the SAP Procurement solution from GitHub and install it in the development environment you prepared for it.
 
 > [!IMPORTANT]
 >
