@@ -5,9 +5,9 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/30/2022
 ms.subservice: admin
-author: tjvass
-ms.author: tjvass
-ms.reviewer: jimholtz
+author: StephenRauchPM
+ms.author: stephenrauch
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

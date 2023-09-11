@@ -4,7 +4,7 @@ description: Learn about how to set up Azure Application Insights with Power Aut
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/21/2023
+ms.date: 09/08/2023
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -13,6 +13,7 @@ search.audienceType:
   - admin
 ms.contributors:
 - rakrish
+- StephenRauchPM
 ---
 
 # Set up Application Insights with Power Automate (preview)
@@ -28,8 +29,11 @@ Power Automate telemetry flows into two tables on Application Insights – **Req
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
+> [!NOTE]
+> Export of Power Automate and Dynamics 365 Customer Service data is not available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud - High (GCC High), and Department of Defense (DoD), at this time.
+
 > [!IMPORTANT]
-> When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this public preview only, the premium use rights requirement and the Managed Enviornments restriction are relaxed.
+> When this feature transitions to General Availability (GA), the feature is planned for Managed Environments only.  For this preview only, the Managed Environment restriction doesn't apply.
 
 
 While Application Insights capabilities can be used for comprehensive monitoring of your applications, including custom diagnostics, and performance monitoring, this article focuses on how to use the existing features within Application Insights to create monitoring and alerting capabilities for your automation. To learn about how to open and work with Application Insights dashboard, see [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
