@@ -322,44 +322,71 @@ Power Apps licensed user flows that are triggered from the canvas apps or that u
 
 Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics entities in the environment or using First party Dynamics connectors like F&O are automatically considered as being in context of the D365 app in the environment and are excluded from enforcement. If the environment doesn't have Dynamics 365 app installed or if a premium flow isn't using Dynamics entities and is not linked to any D365 app, you must purchase a standalone Power Automate license.
 
-### How can I easily determine if my flow is in context of a Power Apps/Dynamics 365 app
 
-Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be deleted if the corresponding apps are deleted? Is the flow talking to the same data sources as the app? If so, the flow is in context. 
 
-### How can I identify flows that need Premium licenses to avoid interruptions
+### How can I identify flows that need Premium licenses to avoid interruptions due to enforcement?
 Admins have a Powershell command to see the flows that need their attention like the following: 
+| Enforcement Type | Admin notifications | Maker notification|Grace period|Recommended Action|Enforcement- Flow turn off|
+|--------------|-------------------|--------|----------|---------|-------|
+|Premium flows where flow owner left the organization| September 1st 2022| October 1st 2022|14 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow| October 15th 2022
+|Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now)|
+|Premium flows created by flow owner with Power Apps license but the flow isn't triggered by the Power App|
+|Premium flows created by flow owner with D365 license but the flow isn't in a Dynamics environment or the flow isn't interacting with Dynamics entities|
+|Sevice principal flows without a per flow/ Process licenses|
 
-1. Premium flows where flow owner left the organization.
-
-1. Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now).
-
-1. Premium flows created by flow owner with Power Apps license but the flow isn't triggered by the Power App.
-
-1. Premium flows created by flow owner with D365 license but the flow isn't in a Dynamics environment or the flow isn't interacting with Dynamics entities.
-
-1. Environments where there are more per flow plans assigned to the flows than active per flow licenses assigned to the environment. 
-
-Admins will need to run the power shell per environment. If no results are returned, there are no flows that need your attention. When there are any licensing changes in your environment or new users/flows added to the environment, run the power shell command to identify if any flows need your attention. When new enforcements are launched, admins and makers will get notifications in Power Platform admin center, Power Automate portal and emails. If you receive a notification, rerun the powershell to identify any flows that need your attention.  
+Admins will need to run the power shell per environment. If no results are returned, there are no flows that need your attention. When there are any licensing changes in your environment or new users/flows added to the environment, run the power shell command to identify if any flows need your attention. When new enforcements are launched, admins and makers will get notifications in Power Platform admin center, Power Automate portal and emails. If you receive a notification, update the version and rerun the powershell to identify any flows that need your attention.  
 
 Assign a Power Automate premium  license to the owner of the flow or assign a Process license to the flow to avoid the flow being turned off. To learn more, go to [flow expiration limits](/power-automate/limits-and-config#expiration-limits).
+> [!NOTE]
+> Enforcements are deployed a geo region at a time, dates above are for earliest region. If you dont see notifications in Power Platform Admin center or Power Automate portal even though the date listed in the table passed, it means the enforcement is not deployed in your region yet. 
+>
 
 Once a license is assigned/flow is associated to an app, edit and save the flow. It can take up to 24 hours for the PowerShell to refresh and remove the flow from the PowerShell response.
 
-To update the modules:
+
+
+If you previously installed Power shell, check for the installed version using below coomand
+Get-InstalledModule -Name  Microsoft.PowerApps.Administration.PowerShell
+
+The latest version deployed in August 2023 is 2.0.174. If you are on a previous version, use below command to update the power shell module.
 
 ```powershell
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force
 Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Force 
 ``````
-
+> [!NOTE]
+> In August 2023, we made multiple enhancements and performance improvements to the Powershell module. Please update to the latest version
+>
 Command: `Get-AdminFlowAtRiskOfSuspension`
  
 Command example with export:
 
 `Get-AdminFlowAtRiskOfSuspension -EnvironmentName  <ENV_NAME> -ApiVersion '2016-11-01' | Export-Csv -Path suspensionList.csv -NoTypeInformation`
 
+If the number of environments in the tenant is less than 500, use the following script to get all the flows that need licenses across the tenant:
+
+$environments = Get-AdminPowerAppEnvironment
+$allFlows = @()
+
+foreach ($env in $environments) {
+    Write-Host "Getting flows at risk of suspension for environment $($env.DisplayName)..."
+    $flows = Get-AdminFlowAtRiskOfSuspension -EnvironmentName $env.EnvironmentName
+    Write-Host "Found $($flows.Count) flows at risk of suspension."
+    $allFlows += $flows
+}
+
+# Write all flows to a CSV file
+$allFlows | Export-Csv -Path "flows.csv" -NoTypeInformation
+
+Write-Host "All flows at risk of suspension written to flows.csv"
+
+If there are more than 500 environments in the tenant, raise a support ticket so our support team can run the report for you. 
+
 Makers can find a premium icon next to the name of a premium flow.
 
+### How can I easily determine if my flow is in context of a Power Apps/Dynamics 365 app?
+
+Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be deleted if the corresponding apps are deleted? Is the flow talking to the same data sources as the app? If so, the flow is in context. 
 ### How can I associate in context flows to Power Apps/Dynamics365 apps 
 
 Flows created to support apps built with Power Apps/Dynamics365  must run within the context of the app. This means the flow must use the same data sources for triggers or actions as the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the apps using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app). Once the flow is linked, a dependency is established between the app and the flow and they can be managed together. If the linked app is deleted or unused, the flow will be turned off.
