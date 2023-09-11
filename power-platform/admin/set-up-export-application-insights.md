@@ -4,14 +4,17 @@ description: Learn how to export data to Application Insights from the Power Pla
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2023
+ms.date: 09/08/2023
 author: iwinoto-msft
 ms.subservice: admin
 ms.author: t-iwinoto
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- StephenRauchPM
 ---
+
 # Export data to Application Insights 
 
 Learn how to export data to Application Insights from the Power Platform admin center.
@@ -26,13 +29,14 @@ Learn how to export data to Application Insights from the Power Platform admin c
 - To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you must be a member of one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
     > [!IMPORTANT] 
-    > The Application Insights exporting functionality for Power Automate and Dynamics Customer Services is in public preview.
+    > The Application Insights exporting functionality for Power Automate and Dynamics 365 Customer Service is in public preview in all public sovereign geos.  Power Automate and Dynamics 365 Customer Service functionality in public preview is not available in Government Community Cloud (GCC) or Government Community Cloud - High (GCC High) sovereign clouds.
     >
-    > When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this Public Preview only, the premium use rights requirement and the ME restriction are relaxed.
+    > When this feature transitions to General Availability (GA), the feature is planned for Managed Environments only. For this preview only, the Managed Environment restriction doesn't apply.
+    >
+    > For GCC customers that need to configure integration to Application Insights in Azure Government environments, enter a [support request](support-overview.md).
 
     > [!NOTE]
-    > - The version of Application Insights described in this article isn't available in sovereign clouds. The prerequisites and setup instructions are consistent with the version currently hosted in sovereign clouds.
-    > - For Government Community Cloud (GCC) customers that need to configure integration to Application Insights in Azure Government environments, enter a support ticket.
+    > The service level agreement (SLA) for the delivery of telemetry data streams from Power Platform products supported by this feature to Application Insights is 24 hours.
 
 ## Create an export package
 
