@@ -47,27 +47,27 @@ When a GitHub Actions workflow forces an install of Power Platform CLI in the co
 > [!IMPORTANT]
 > - This is a breaking change and may impact other actions.
 > - Be sure to add the **Install Power Platform Tools** task as a first task in your workflow prior to any other GitHub Actions for Power Platform. 
->
-> ```
-> jobs:
->     builds:
->         runs-on: windows-latest   # alternate runner OS is: ubuntu-latest
->
->    steps:
->     - name: Install Power Platform Tools
->         uses: microsoft/powerplatform-actions/actions-install@v1
->
->     - name: Export Solution
->          uses: microsoft/powerplatform-actions/export-solution@v1
->       with:
->          environment-url: 'https://myenv.crm.dynamics.com'
->          user-name: 'me@myenv.onmicrosoft.com'
->          password-secret: ${{ secrets.MYPASSWORD }}
->          solution-name: aSolution
->          solution-output-file: 'aSolution.zip'
->          working-directory: 'out'
-> 
-> ```
+
+```
+jobs:
+    builds:
+        runs-on: windows-latest   # alternate runner OS is: ubuntu-latest
+
+    steps:
+    - name: Install Power Platform Tools
+        uses: microsoft/powerplatform-actions/actions-install@v1
+
+    - name: Export Solution
+         uses: microsoft/powerplatform-actions/export-solution@v1
+      with:
+         environment-url: 'https://myenv.crm.dynamics.com'
+         user-name: 'me@myenv.onmicrosoft.com'
+         password-secret: ${{ secrets.MYPASSWORD }}
+         solution-name: aSolution
+         solution-output-file: 'aSolution.zip'
+         working-directory: 'out'
+
+```
 
 You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
 
