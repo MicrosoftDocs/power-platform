@@ -132,7 +132,7 @@ Go to the Dataverse environment and check the OperationsHistory table to downloa
 
 ### My operation failed, and wasn't able to find sufficient information in the logs. How can I get a correlation id to provide to Microsoft Support?
 
-The correlation id is in the Visual Studio output pane. The correlation id, client machine name and timestamp are required for Microsoft to investigate. Aditionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users<userName>\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\16.11.32802.440\VisualStudioD365Extension-2022-08-12.log
+The correlation id is in the Visual Studio output pane. The correlation id, client machine name and timestamp are required for Microsoft to investigate. Aditionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to ''C:\Users<userName>\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\16.11.32802.440\VisualStudioD365Extension-2022-08-12.log''
 
 ### How do I monitor and diagnose deployed code running in the unified environment?
 
