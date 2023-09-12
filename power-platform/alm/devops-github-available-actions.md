@@ -8,7 +8,6 @@ ms.author: kartikka
 ms.custom: ""
 ms.date: 08/30/2021
 ms.reviewer: "pehecke"
-
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -40,16 +39,14 @@ The client Secret must be added and stored as a GitHub Secret, and will be refer
 
 The available helper task is described below.
 
-### Actions-Install
+### actions-install
 
-When a GitHub Actions workflow forces an install of Power Platform CLI (PAC) in the context of a runner and timeout error occurs, you must use version 1 (@v1) with an additional action `actions-install` like below.
+When a GitHub Actions workflow forces an install of Power Platform CLI in the context of a runner, and timeout error occurs then you must use version 1 (@v1) with an additional action (`actions-install`) as below.
 
 >
-> [!NOTE]
->
-> This would be a BREAKING CHANGE and may impact other actions.
-> 
-> Be sure to add the **Install Power Platform Tools** task as a very first task in your workflow prior to any other GitHub Actions for Power Platform. 
+> [!IMPORTANT]
+> - This is a breaking change and may impact other actions.
+> - Be sure to add the **Install Power Platform Tools** task as a first task in your workflow prior to any other GitHub Actions for Power Platform. 
 >
 > ```
 > jobs:
@@ -71,8 +68,8 @@ When a GitHub Actions workflow forces an install of Power Platform CLI (PAC) in 
 >          working-directory: 'out'
 > 
 > ```
->
-> You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
+
+You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
 
 ### whoAmI
 
