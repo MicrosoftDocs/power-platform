@@ -1,7 +1,7 @@
 ---
-title: "Rate limits for chatbots"
+title: "Quotas, limits, app registration, and configuration values for Power Virtual Agents"
 description: "Rate limits determine how often messages can be sent to a chatbot"
-keywords: "PVA, quotas, rate limits, requests, restrictions"
+keywords: "PVA, quotas, rate limits, requests, restrictions, app registration"
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -13,9 +13,9 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Quotas, limits, and configuration values for Power Virtual Agents
+# Quotas, limits, app registration, and configuration values for Power Virtual Agents
 
-This topic contains quotas, limits, and configuration values for Power Virtual Agents.
+This topic contains quotas, limits, app registration usage, and configuration values for Power Virtual Agents.
 
 ## Quotas
 
