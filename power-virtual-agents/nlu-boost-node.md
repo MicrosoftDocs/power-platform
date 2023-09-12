@@ -79,7 +79,7 @@ You'll now be able to specify and configure data sources, described in these art
 Some of the sources require authentication, since the bot makes calls on behalf of the user interaction with the chat window. 
 
 When you use the test chat, it will make calls using the account used to sign in to _powerva.microsoft.com_. 
-When you publish your bot, the calls are made on behalf of the user chatting with the bot, using the authentication setting configured in the bot, which must use manual authentication with Service Provider type of "Azure AD". 
+When you publish your bot, the calls are made on behalf of the user chatting with the bot, using the authentication settings configured in the bot, which must use manual authentication with the **Service Provider** type of **Azure AD**. 
 Instructions for how to do this can be found in [Configure user authentication in Power Virtual Agents](configuration-end-user-authentication.md).
 
 You can find instructions for how to create the needed Azure AD application registration in [Configure user authentication with Azure Active Directory](configuration-authentication-azure-ad.md)
