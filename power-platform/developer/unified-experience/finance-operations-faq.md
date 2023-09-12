@@ -81,7 +81,7 @@ Error message:
 
 This happens when the the unified developer environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the finance and operations environment link.
 
-### My source environment version is <10.0.35. Why can't I copy from it?
+### What is the earliest version of source environment I can copy from?
 
 Unified developer experience functionality is available for version 10.0.35 and later. Since during copy we also copy compute, if the source environment is earlier than 10.0.35 the target loses unified developer experience functionality.
 
