@@ -52,6 +52,8 @@
               href: get-help-support.md
             - name: Support overview
               href: support-overview.md
+            - name: View known issues (preview)
+              href: view-known-issues.md
             - name: Support environments and the consent process
               href: support-environment.md
             - name: Determine your organization ID and name
@@ -628,8 +630,12 @@
                   href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
-                - name: Set up export to Application Insights
+                - name: Export data to Application Insights
                   href: set-up-export-application-insights.md
+                - name: Set up Application Insights with Power Automate (preview)
+                  href: app-insights-cloud-flow.md
+                - name: Conversation diagnostics in Azure Application Insights (preview)
+                  href: conversation-diagnostics-application-insights.md
         - name: Storage
           items:
             - name: What's new for storage
