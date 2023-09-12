@@ -45,8 +45,8 @@ When a GitHub Actions workflow forces an install of Power Platform CLI in the co
 
 >
 > [!IMPORTANT]
-> - This is a breaking change and may impact other actions.
-> - Be sure to add the **Install Power Platform Tools** task as a first task in your workflow prior to any other GitHub Actions for Power Platform. 
+> - Using version 1 (@v1) might lead to updates to existing GitHub actions that can result in current workflows being updated.
+> - You must add the **Install Power Platform Tools** task as a first task in your workflow prior to any other GitHub Actions for Power Platform. 
 
 ```
 jobs:
