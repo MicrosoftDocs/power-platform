@@ -313,7 +313,7 @@ An environment has multiple apps. There are flows for data management that don't
 
 ## Enforcement
 
-Dynamics 365 and Power Apps licenses include a limited set of Power Automate capabilities that allow users to run flows that allow for in context flows. To learn more, go to [What Power Automate capabilities are included in Dynamics 365 licenses?](faqs.mds#what-power-automate-capabilities-are-included-in-dynamics-365-licenses). Flows not in context of apps are subject to enforcement. Below are the enforcement timelines:
+Dynamics 365 and Power Apps licenses include a limited set of Power Automate capabilities that allow users to run flows that allow for in context flows. To learn more, go to [What Power Automate capabilities are included in Dynamics 365 licenses?](faqs.md#what-power-automate-capabilities-are-included-in-dynamics-365-licenses). Flows not in context of apps are subject to enforcement. Below are the enforcement timelines:
   - Admins with flows that need licenses will first get notifications in Power Platform Admin center.
   - Admins can find these flows using PowerShell and assign a Process/per-flow license to the flow or a Power Automate premium/per-user license to the owner to avoid any interruptions. Admins have 30 days to act on these flows before makers start receiving notifications.
   - After 30 days from admin notifications, flow owners and co-owners get email notifications and in product banners in Power Automate portal about the flows that need their attention. Admins will get email notifications about the flows.
