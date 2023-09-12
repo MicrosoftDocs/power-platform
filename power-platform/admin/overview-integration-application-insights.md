@@ -4,7 +4,7 @@ description: About integration with Application Insights
 services: powerapps
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 04/20/2023
+ms.date: 09/12/2023
 author: StephenRauchPM
 ms.subservice: admin
 ms.author: stephenrauch
@@ -99,7 +99,7 @@ In Application Insights, go to the **Logs** panel under **Monitoring** on the le
 
 ## Common fields
 
-All the [tables](#what-telemetry-and-which-tables-are-being-populated-in-application-insights) populated in Application Insights have these common fields:
+All the tables populated in Application Insights have these common fields:
 
 - **cloud_RoleInstance**: For events emitted as a part of this effort, this field will be set to **CDS Data Export** to ensure that they can be distinguished from other events in the same Application Insights environment.
 - **operation_Id**: This links together all the operations in a single interaction&mdash;which is one way to get all related events to a failing event.<br/>
