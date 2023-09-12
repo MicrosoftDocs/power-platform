@@ -40,6 +40,40 @@ The client Secret must be added and stored as a GitHub Secret, and will be refer
 
 The available helper task is described below.
 
+### Actions-Install
+
+When a GitHub Actions workflow forces an install of Power Platform CLI (PAC) in the context of a runner and timeout error occurs, you must use version 1 (@v1) with an additional action `actions-install` like below.
+
+>
+> [!NOTE]
+>
+> This would be a BREAKING CHANGE and may impact other actions.
+> 
+> Be sure to add the **Install Power Platform Tools** task as a very first task in your workflow prior to any other GitHub Actions for Power Platform. 
+>
+> ```
+> jobs:
+>     builds:
+>         runs-on: windows-latest   # alternate runner OS is: ubuntu-latest
+>
+>    steps:
+>     - name: Install Power Platform Tools
+>         uses: microsoft/powerplatform-actions/actions-install@v1
+>
+>     - name: Export Solution
+>          uses: microsoft/powerplatform-actions/export-solution@v1
+>       with:
+>          environment-url: 'https://myenv.crm.dynamics.com'
+>          user-name: 'me@myenv.onmicrosoft.com'
+>          password-secret: ${{ secrets.MYPASSWORD }}
+>          solution-name: aSolution
+>          solution-output-file: 'aSolution.zip'
+>          working-directory: 'out'
+> 
+> ```
+>
+> You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
+
 ### whoAmI
 
 Verifies the service connection by connecting to the service and sending a `WhoAmI` [[SDK](/dotnet/api/microsoft.crm.sdk.messages.whoamirequest)/[Web API](/dynamics365/customer-engagement/web-api/whoami)] request. This task can be useful to include early in your GitHub workflow, to verify connectivity before processing begins.
@@ -252,22 +286,6 @@ Get status of the catalog install/submit request.
 
 
 ## GitHub workflow authoring
-
-When running your GitHub Actions workflow, if you receive a timeout error, try using version @v1 of GitHub Actions for Power Platform.
-
-Be sure to add the **Install Power Platform Tools** task in your workflow prior to any other GitHub Actions for Power Platform. See the example below.
-
-```
-jobs:
-    builds:
-        runs-on: windows-latest   # alternate runner OS is: ubuntu-latest
-
-    steps:
-    - name: Install Power Platform Tools
-        uses: microsoft/powerplatform-actions/actions-install@v1
-```
-
-You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
 
 To learn more about composing GitHub workflows using GitHub actions, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
 
