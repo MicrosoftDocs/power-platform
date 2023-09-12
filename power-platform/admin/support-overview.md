@@ -124,7 +124,7 @@ When Microsoft offers you early access to Dynamics 365 apps preview services and
 ### Do support plans cover preview (beta) services or features?
 
 - Support for Dynamics 365 apps services and features is provided only for "generally available" programs—see the previous question.
-Public preview and/or beta services may be supported through our [forums](https://community.dynamics.com/f) or other channels. 
+Public preview and/or beta services may be supported through our [forums](https://community.dynamics.com) or other channels. 
 - Any technical support for a public preview service or feature is limited to break-fix scenarios and is available only in English with no around the clock support available.
 
 ## Using Support
