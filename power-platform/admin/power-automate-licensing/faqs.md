@@ -314,7 +314,7 @@ An environment has multiple apps. There are flows for data management that don't
 
 ## Enforcement 
 
-Dynamics 365 and Power Apps licenses include a limited set of Power Automate capabilities that allow users to run flows that allow for in context flows. To learn more, go to Power Automate use rights included with Dynamics licenses. Premium automated or scheduled flows not linked to an app require a Power Automate license, and the owner has 90 days to get a license before the flows turn off. Admins can find these flows and assign a Process license to the flow or a Power Automate premium  license to the owner to keep the flow running. Alternatively, if the flow is supporting a Power App/D365 app, associate the flow to the app. Starting September 1, 2023, new flows using premium features without a license will be turned off by default. Owners and co-owners of flows created before September 1, 2023 will be notified, have a 90-day grace period, and will be turned off if no action is taken. The enforcements are deployed by region so the notifications can be at a later time based on the region. Admins have 90 days since notification to act on the flows.
+Dynamics 365 and Power Apps licenses include a limited set of Power Automate capabilities that allow users to run flows that allow for in context flows. To learn more, go to Power Automate use rights included with Dynamics licenses. Premium automated or scheduled flows not linked to an app require a Power Automate license, and the owner has 90 days to get a license before the flows turn off. Admins can find these flows and assign a Process license to the flow or a Power Automate premium  license to the owner to keep the flow running. Alternatively, if the flow is supporting a Power App/D365 app, associate the flow to the app. Starting September 1, 2023, new flows using premium features without a license will be turned off by default. Owners and co-owners of flows created before September 1, 2023 will be notified, have a 90-day grace period, and will be turned off if no action is taken. Admins have 90 days since notification to act on the flows.
 
 Turning on these flows requires a premium Power Automate license or association with the corresponding app. 
 
@@ -324,13 +324,13 @@ Dynamics 365 licensed user flows that are using Dataverse connector to talk to D
 
 
 
-### How can I identify flows that need Premium licenses to avoid interruptions due to enforcement?
+### What enforcements are coming and how can I identify flows that need Premium licenses to avoid interruptions due to enforcement?
 Admins have a Powershell command to see the flows that need their attention like the following: 
-| Enforcement Type | Admin notifications | Maker notification|Grace period|Recommended Action|Enforcement- Flow turn off|
-|--------------|-------------------|--------|----------|---------|-------|
-|Premium flows where flow owner left the organization| September 1st 2022| October 1st 2022|14 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow| October 15th 2022
-|Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now)|
-|Premium flows created by flow owner with Power Apps license but the flow isn't triggered by the Power App|
+| Enforcement Type | Exceptions |Admin notifications | Maker notification|Grace period|Recommended Action|Enforcement- Flow turn off|
+|--------------|-------------------|--------|----------|---------|-------|------|
+|Premium flows where flow owner left the organization| Manual flows and flows whose owners have grandfathered licenses(P1,P2) will not be enforced  |September 1st 2022| October 1st 2022|14 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow| October 15th 2022
+|Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now)|Manual flows and flows whose owners have grandfathered licenses(P1,P2) will not be enforced  |September 1st 2022| October 1st 2022|14 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow| October 15th 2022
+|Premium flows created by flow owner with Power Apps license but the flow isn't triggered by the Power App|Power Apps licensed user flows that are triggered from the canvas apps or that use Dataverse "For a select record" trigger in model driven app are automatically considered as being in context of the Power App and are excluded from enforcement|September 15th 2023| October 15th 2023|90 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow.Alternatively, if the flow is supporting a Power App, associate the flow to the app| Jan 15th 2024
 |Premium flows created by flow owner with D365 license but the flow isn't in a Dynamics environment or the flow isn't interacting with Dynamics entities|
 |Sevice principal flows without a per flow/ Process licenses|
 
