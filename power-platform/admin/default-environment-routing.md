@@ -26,6 +26,7 @@ Dataverse is available in developer environments and these environments are [Man
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - Managed Environment is not included as an entitlement in the Developer Plan when users run their assets. More information on the Managed environments and the Developer plan can be found [here](https://learn.microsoft.com/en-us/power-platform/developer/plan).
 
 ## Prerequisites
 
