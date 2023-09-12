@@ -1,7 +1,7 @@
 ---
 title: "Support for Microsoft Power Platform and Dynamics 365 apps | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and Dynamics 365 apps
-ms.date: 09/06/2023
+ms.date: 09/12/2023
 ms.reviewer: "kvivek"
 ms.topic: overview
 ms.custom: "admin-security"
