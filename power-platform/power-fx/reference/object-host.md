@@ -20,11 +20,11 @@ The **Host** object in Power Apps provides information about the current host ru
 
 The **Host** object provides information about the host device, operating system, and player that is running the app.  This is similar to [the **App** object](object-app.md) and every app has access to the **Host** object.
 
-One of the best uses of **Host** is to debug an app that isn't working properly on a specific device or with a specific browser.  Use the text properties of this object to display information in the app's UI with a **Text label** control or log the information to a database table or to [Application Insights](../../../power-platform/admin/overview-integration-application-insights).
+One of the best uses of **Host** is to debug an app that isn't working properly on a specific device or with a specific browser.  Use the text properties of this object to display information in the app's UI with a **Text label** control or log the information to a database table or to [Application Insights](/power-platform/admin/overview-integration-application-insights).
 
 It is tempting to use **Host** to tailor an app to a specific device or browser.  This can be dangerous as Power Apps is designed to be run on a wide spectrum of hardware and software platforms and your **Host** based logic may not account for them all and they will likely change over time.  The better approach is to use information that is more abstracted and not tied to specific hardware and software. 
 
-For example, sometimes it is desirable to tailor a screen to show less information or reorganize information if running on a smaller device such as a phone.  The best way to do this is to use the [**Size**](../../../power-apps/maker/canvas-apps/controls/control-screen#additional-properties) property of the **Screen** control which will work on all hardware/software combinations.
+For example, sometimes it is desirable to tailor a screen to show less information or reorganize information if running on a smaller device such as a phone.  The best way to do this is to use the [**Size**](/power-apps/maker/canvas-apps/controls/control-screen#additional-properties) property of the **Screen** control which will work on all hardware/software combinations.
 
 To access the **Host** object, expand the  [**App**](object-app.md) object at the top of the **Tree view** pane and then select it. In this example, the **Host** object doesn't have any properties that accept formulas.
 
