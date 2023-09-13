@@ -62,20 +62,15 @@ On the next screen, fill out the Dataverse required fields and then select **Ena
 
 ### Create from PowerShell
 
-Load up your PowerShell console and execute the following commands to generate the environment.  Note the variables so that you can change the input values as required.
+Load up your PowerShell console and execute the following commands to generate the environment.  Note the variables so that you can change the input values as required.  If you wish to use a service principal, please follow the instructions at [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
 
 ```powershell
 #Install the module
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 
-# Set variables for your session
-$TenantId = "YOUR_TENANT_GUID_FROM_AAD"
-$SPNId = "YOUR_AZURE_APPLICATION_REGISTRATION_CLIENT_ID"
-$ClientSecret = "YOUR_AZURE_APPLICATION_CLIENT_SECRET"
-
 Write-Host "Creating a session against the Power Platform API"
 
-Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret $ClientSecret
+Add-PowerAppsAccount -Endpoint prod
 
 #To construct the json object to pass in
 $jsonObject= @" 
