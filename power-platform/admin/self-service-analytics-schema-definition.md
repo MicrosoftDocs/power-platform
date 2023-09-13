@@ -218,6 +218,8 @@ The following tables detail the schema definitions of the data. Metadata are con
 
 > [!NOTE]
 > The latest versions of generally well-known platform operating systems should contain data, but in some cases this data might not be available.
+>
+> For Model apps the value of createdPrincipalID is null.  This is a known issue.
 
 ### See also
 
