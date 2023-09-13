@@ -41,7 +41,11 @@ We don't currently have a solution for secure connection to SQL Server running b
 
 ### The Configure Metadata option doesn't appear on the menu
 
-When this option is missing from the menu, open the Infolog and the menu should appear.
+When this option is missing from the menu, open the infolog from the menu and retry.
+
+### How do I re download the client assets
+
+When you connect to the unified development environment the tool does a few checks and does not initiate download if the required assets were previously downloaded. In case you need to download again please rename/delete the child folder with the application version of the environment under %LOCALAPPDATA%\Microsoft\Dynamics365. 
 
 ### PackagesLocalDirectory extraction doesn't complete
 
@@ -49,7 +53,7 @@ Use [7Zip](https://www.7-zip.org/download.html) to extract the metadata.
 
 ### The message "Please wait for update to complete" pop up keeps appearing
 
-When metadata is configured, this popup dialog should stop.
+When a configuration is created, saved and dialog closed the necessary files will be updated and this popup will stop. It it keeps recurring even after you open a new Visual studio instance, find the file PackagesLocalDirectory/bin/InstalledVersion.json in reference metadata folder and update the version to match the platform version in your environment.
 
 ### Cross reference database validation keeps failing
 
@@ -118,21 +122,21 @@ The trace parser is being updated to support working on unified clients. Analyze
 
 ### Stopping debugging restarts the runtime
 
-Use **Detach All** to end debugging.
+Use **Detach All** to end debugging in place of **Stop Debugging**.
 
 ## Checking logs and history
 
 ### I applied a package, but it failed. How can I do further debugging to determine the failure?
 
-Details to access logs will be available in the Visual Studio output pane if there were failures, or if you mark the settings to download logs after every request.
+Link to download operation logs is available in the Visual Studio output pane. It is downloaded in case of failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
 
 ### How can I find out what packages are applied to my environment?
 
-Go to the Dataverse environment and check the OperationsHistory table to download the logs.
+Go to the Dataverse environment and check the **OperationsHistory** and **Packages** tables.
 
-### My operation failed, and wasn't able to find sufficient information in the logs. How can I get a correlation id to provide to Microsoft Support?
+### My operation failed, and wasn't able to find sufficient information in the logs. What information do I provide to Microsoft Support?
 
-The correlation id is in the Visual Studio output pane. The correlation id, client machine name and timestamp are required for Microsoft to investigate. Aditionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\16.11.32802.440\VisualStudioD365Extension-2022-08-12.log.
+The correlation id, client machine name and timestamp are required for Microsoft to investigate. The correlation id is in the Visual Studio output pane. Aditionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\16.11.32802.440\VisualStudioD365Extension-2022-08-12.log.
 
 ### How do I monitor and diagnose deployed code running in the unified environment?
 
