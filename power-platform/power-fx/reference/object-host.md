@@ -109,7 +109,7 @@ Label1.Text: Host.Version
 
 Run your app on different devices and with different browsers and you will see results similar to the below.
 
-### Power Apps Studio on Windows with the Microsoft Edge browser
+### Power Apps Studio on Windows with Edge browser
 
 **Host.Version** is always blank when working in Power Apps Studio.
 
@@ -121,7 +121,7 @@ Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
 Host.Version: 
 ```
 
-### Power Apps mobile player on iOS
+### Power Apps native mobile player on iOS
 
 ```
 Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 PowerApps/e1c23ff9-4822-4e75-a003-01c91407a4d2
@@ -131,7 +131,7 @@ Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
 Host.Version: PowerApps-Native/3.23084.8(iOS)
 ```
 
-### Firefox web browser on Windows
+### Power Apps web player on Windows with Firefox browser
 
 ```
 Host.BrowserUserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0
@@ -141,7 +141,7 @@ Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
 Host.Version: PowerApps-Web/3.23084.6(Windows)
 ```
 
-### web browser on iOS
+### Power Apps web player on iOS with Safari browser
 
 ```
 Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
