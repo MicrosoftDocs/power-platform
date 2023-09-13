@@ -101,10 +101,9 @@ Yes. Any new tests or modifications must be deployed to the environment for the 
 
 Application Foundation and Test Essentials are required for unit test execution.
 
-### For the preview release, how can I set up a pipeline that automates creation and application of a deployable package to a new environment?
+### How can I set up a pipeline that automates creation and application of a deployable package to a new environment?
 
-Reach out over Yammer or other method to provide your organization name. Microsoft shares a marketplace extension that can be installed and used in creating a new pipeline setup. It's capable of package creation, ISV license addition, and application of the package.
-This extension is planned to be merged into the current generally available extension, so that no new installation is needed. For details, see this [Yammer](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/1740962955264) reference.
+Use the latest version of the Azure DevOps extension from the marketplace. It is now capable of package creation, ISV license addition, and application of the package. Refer https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools.
 
 ### How do I include a license and directly deploy from Visual Studio?
 
