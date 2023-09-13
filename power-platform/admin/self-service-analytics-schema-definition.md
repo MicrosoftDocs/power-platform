@@ -3,12 +3,13 @@ title: Microsoft Power Platform self-service analytics schema definition (previe
 description: Learn about the contents of the data exported from Power Platform to Azure Data Lake Gen2 storage locations. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/28/2023
+ms.date: 09/13/2023
 ms.subservice: admin
 author: ChrisGarty
 contributors:
   - ChrisGarty
   - v-aangie
+  - StephenRauchPM
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -217,7 +218,8 @@ The following tables detail the schema definitions of the data. Metadata are con
 |runs	               |Int	                |Number of runs |
 
 > [!NOTE]
-> The latest versions of generally well-known platform operating systems should contain data, but in some cases this data might not be available.
+> - The latest versions of generally well-known platform operating systems should contain data, but in some cases this data might not be available.
+> - There's a known issue for model-driven apps where the value of createdPrincipalID is null.
 
 ### See also
 
