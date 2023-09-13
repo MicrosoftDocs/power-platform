@@ -13,7 +13,7 @@ ms.subservice: developer
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-The unified developer experience for Dynamics 365 Finance and Operation apps enables you to write code on your local development computer and run it inside a cloud service. There exists a separation of functionality between these two tiers (local and cloud).
+The unified developer experience for Dynamics 365 finance and operation apps enables you to write code on your local development computer and run it inside a cloud service. There exists a separation of functionality between these two tiers (local and cloud).
 
 - Development tier - contains the finance and operations metadata and any X++ source code on your local development computer
 - Execution tier - cloud hosted site that stores the business data and executes X++ code
@@ -24,7 +24,7 @@ This article shows you how to:
 2. Deploy the class to the cloud runtime
 3. Debug the deployed X++ code
 
-Let's begin by developing a runnable X++ class to use as an example. The classes only task is to log a message into the Infolog. The important thing here isn't what the runnable class does, rather it's how we compile, run, and debug it. If you want to learn about the X++ language, see the [programming reference](/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference).
+Let's begin by developing a runnable X++ class to use as an example. The class's only task is to log a message into the Infolog. The important thing here isn't what the runnable class does, rather it's how we compile, run, and debug it. If you want to learn about the X++ language, see the [programming reference](/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference).
 
 As a prerequisite, you need to have completed setting up your local Visual Studio developer environment. More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
 
@@ -57,15 +57,15 @@ Create a project and X++ class in Visual Studio by following these steps.
 1. Select a **Runnable Class** in the **Code** menu under **Dynamics 365 items**, and call it "MyRunnableClass". Visual Studio opens a window with the template for a runnable class providing a static `main` method that is called as the runnable class runs.
 1. Add the following X++ code to the `main` method. Since we're only providing a token implementation here, add a call to log a string message in the Infolog:
 
-```xpp
-internal final class MyRunnableClass
-{
-    public static void main(Args _args)
-    {
-        Info('Hello World from the Server Side');
-    }
-}
-``````
+  ```xpp
+  internal final class MyRunnableClass
+  {
+      public static void main(Args _args)
+      {
+          Info('Hello World from the Server Side');
+      }
+  }
+  ```
 
 Compile the class to make sure you didn't introduce any errors to this code. The compilation is done by selecting **Build** from the context menu on the project.
 
@@ -88,7 +88,7 @@ At this point you're accessing the endpoint in the cloud, so unless you are alre
 >
 >   3. As part of an incremental build from Solution Explorer, setting **Deploy changes to online environment** to true will only deploy changes since the last successful deployment or those made as part of this build. It will honor the project settings for **Synchronize database**.
 >
->   4. Right click a project and choose to **Deploy model for project ...**. This will only deploy changes since last successful deployment and also synchronize the database for the module.
+>   4. Right-click a project and choose to **Deploy model for project ...**. This will only deploy changes since last successful deployment and also synchronize the database for the module.
 >
 >   5. Synchronize the database for all models without deploying anything new via **Dynamics 365** > **Synchronize database...**.
 
@@ -98,7 +98,7 @@ You can follow the progress of the deployment by navigating  to the "FinOps Clou
 
 After you have compiled the project code and uploaded it to the cloud endpoint, the binary is ready to be executed. To verify that all is well with the compiled class code, debug it.
 
-1. In Visual Studio, set the debugging options to load the symbols for your package and also for applicationplatform and applicationfoundation.
+1. In Visual Studio, set the debugging options to load the symbols for your package and also for ApplicationPlatform and ApplicationFoundation packages.
 
     To set the options, start by opening the options from the **Extensions** menu, and go to the debugging tab. The **Debugging** page shows options for loading symbols. Make sure you indicate that you want to load the items in your solution and also the ApplicationFoundation and ApplicationPlatform packages.
 
@@ -114,13 +114,13 @@ After you have compiled the project code and uploaded it to the cloud endpoint, 
 
 Let's now try that. Instead of tediously writing our own form all over again, use a form that already exists. Start by using the SysUserSetup form that allows you to set the colorization (theme) used to render forms. We'll change the URL to open the SysUserSetup form instead of running the class by changing the menuitem (mi) - that part that designates the menu item to start the class runner. The URL will end up with something like this:
 
-`https://<environment?prt=initial&debug=vs&activityid=\<unchanged>&cmp=DAT&mi=SysUserSetup`
+`https://<environment>?prt=initial&debug=vs&activityid=\<unchanged>&cmp=DAT&mi=SysUserSetup`
 
 You'll now see the form that allows you to set the colors in Dynamic's open. <!--What are you meaning here-->
 
 Now let's set a breakpoint in the form.
 
-1. Open the **Application Explorer** from the View menu.
+1. Open the **Application Explorer** from the **View** menu.
 1. Enter the string `SysUserSetup type:"form"` in the search bar in the Application Explorer window.
 1. Select the form, and select **View code** to open the editor with the source code for this form.
 1. In that form, set a breakpoint in the `selectionChange` method in the ThemeChooser control. This code is triggered when the user selects a new color theme.

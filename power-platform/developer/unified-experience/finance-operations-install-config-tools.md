@@ -123,7 +123,7 @@ You can create several configurations, but must select one to be current. The ch
 
 ## Summary
 
-Congratulations! You’re now ready to build, deploy, debug, and test your X++ modules working with the Power Platform online development environment. Explore the possibilities with the power of Dynamics 365 Finance and Operations integrated with Power Platform.
+Congratulations! You’re now ready to build, deploy, debug, and test your X++ modules working with the Power Platform online development environment. Explore the possibilities with the power of Dynamics 365 finance and operations integrated with Power Platform.
 
 ## Next steps
 
