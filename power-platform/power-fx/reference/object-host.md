@@ -18,32 +18,34 @@ The **Host** object in Power Apps provides information about the current host ru
 
 ## Description
 
-Similar to a control or [the **App** object](object-app.md), the **Host** object provides properties that identify information from the host running the app. Every app has a **Host** object.  
+The **Host** object provides information about the host device, operating system, and player that is running the app.  This is similar to [the **App** object](object-app.md) and every app has access to the **Host** object.
 
-Use this information to debug an app that is operating differently on a specific browser or device.  The strings provided here can be easily shown in the app UI with a **Text label** control or you can log the information to App insights.
+One of the best uses of **Host** is to debug an app that isn't working properly on a specific device or with a specific browser.  Use the text properties of this object to display information in the app's UI with a **Text label** control or log the information to a database table or to [Application Insights](../../../power-platform/admin/overview-integration-application-insights).
 
-> [!NOTE]
-> The host object is currently only available in custom pages and canvas apps.
+It is tempting to use **Host** to tailor an app to a specific device or browser.  This can be dangerous as Power Apps is designed to be run on a wide spectrum of hardware and software platforms and your **Host** based logic may not account for them all and they will likely change over time.  The better approach is to use information that is more abstracted and not tied to specific hardware and software. 
 
+For example, sometimes it is desirable to tailor a screen to show less information or reorganize information if running on a smaller device such as a phone.  The best way to do this is to use the [**Size**](../../../power-apps/maker/canvas-apps/controls/control-screen#additional-properties) property of the **Screen** control which will work on all hardware/software combinations.
 
 To access the **Host** object, expand the  [**App**](object-app.md) object at the top of the **Tree view** pane and then select it. In this example, the **Host** object doesn't have any properties that accept formulas.
 
 > [!div class="mx-imgBorder"]
 > ![The Host object in the Tree view pane.](media/object-host/hostobject.png)
 
+> [!NOTE]
+> The host object is currently only available in custom pages and canvas apps.
+
 ## BrowserUserAgent property
 
-The text property **BrowserUserAgent** contains the complete user agent string that the browser uses to identify itself when running the app
+The text property **BrowserUserAgent** contains the complete user agent string that the browser uses to identify itself when running the app.
 
 For example, a browser user agent string might be:
 
 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) 
 - AppleWebKit/537.36 (KHTML, like Gecko) 
-- Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78`
+- Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78
 
 > [!NOTE]
 > If you're running Power Apps in a native app or using the [the wrap](/power-apps/maker/common/wrap/wrap-how-to) feature in Power Apps, the app is presented via a browser control, which supplies a user agent string.
-
 
 ## OSType property
 
@@ -90,7 +92,7 @@ Label1.Text: Host.TenantID
 
 ## Version property
 
-The **Version** property provides the version identification and version number of the Power Apps player.  Similar to **BrowserUserAget**, more than one version number may be returned, separated by spaces.
+The **Version** property provides the identification and version number of the Power Apps player.  Similar to **BrowserUserAget**, more than one version number may be returned, separated by spaces.
 
 The **Version** property will always be an empty string when working in Power Apps Studio.
 
@@ -136,7 +138,7 @@ Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
 Host.Version: PowerApps-Web/3.23084.6(Windows)
 ```
 
-Running your app in a web browser on iOS, you will see something similar to:
+Running your app in Safari web browser on iOS, you will see something similar to:
 
 ```
 Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
