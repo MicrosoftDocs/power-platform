@@ -109,7 +109,7 @@ After you have fixed any problems diagnosed by the X++ compiler, you're ready to
     :::image type="content" source="../media/unified-experience/devexp-test-deploy.png" alt-text="Deployment dialog.":::
 
 1. On the **Test** menu of Visual Studio, open **Test Explorer**.
-1. Select **Run selected test** to execute in the cloud the two test methods of the test case.
+1. Select **Run selected test** to execute in the cloud the two test methods of the test case. Note that we do not currently support the debug menu in Test Explorer.
 
 Test Explorer shows the results of each test after it completes. Hopefully, all your tests succeed. If not, you can use Test Explorer to navigate to the offending test code.
 
