@@ -124,12 +124,12 @@ Now let's set a breakpoint in the form.
 1. Enter the string `SysUserSetup type:"form"` in the search bar in the Application Explorer window.
 1. Select the form, and select **View code** to open the editor with the source code for this form.
 1. In that form, set a breakpoint in the `selectionChange` method in the ThemeChooser control. This code is triggered when the user selects a new color theme.
-1. In the browser window, select one of the colored squares, let's say the red one. You;ll hit the breakpoint.
+1. In the browser window, select one of the colored squares, let's say the red one. You'll hit the breakpoint.
 1. Continue the execution by pressing F5. Another colored square is hit and the breakpoint is triggered again.
 
 > [!IMPORTANT]
 > If you want to attach the debugger to the running AOS process in the unified environment use **Dynamics 365** > **Launch debugger**.
-> 
+>
 > To detach the debugger from the runtime without restarting the AOS, use **Detach in place of Stop**.
 >
 > Use Application Insights to monitor and diagnose the application executing in the unified development environment. Learn more about observability: [Monitoring and telemetry using Application Insights](/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights)

@@ -43,7 +43,7 @@ We don't currently have a solution for secure connection to SQL Server running b
 
 When this option is missing from the menu, open the infolog from the menu and retry.
 
-### How do I re download the client assets
+### How do I download again the client assets
 
 When you connect to the unified development environment the tool does a few checks and does not initiate download if the required assets were previously downloaded. In case you need to download again please rename/delete the child folder with the application version of the environment under %LOCALAPPDATA%\Microsoft\Dynamics365. 
 
@@ -53,14 +53,14 @@ Use [7Zip](https://www.7-zip.org/download.html) to extract the metadata.
 
 ### The message "Please wait for update to complete" pop up keeps appearing
 
-When a configuration is created, saved and dialog closed the necessary files will be updated and this popup will stop. It it keeps recurring even after you open a new Visual studio instance, find the file PackagesLocalDirectory/bin/InstalledVersion.json in reference metadata folder and update the version to match the platform version in your environment.
+When a configuration is created, saved, and the dialog closed, the necessary files will be updated and this popup will stop. If the dialog keeps recurring even after you open a new Visual Studio instance, the find the file PackagesLocalDirectory/bin/InstalledVersion.json in reference metadata folder and update the version to match the platform version in your environment.
 
 ### Cross reference database validation keeps failing
 
-Ensure that your Windows user has access to the specified SQL Server or LocalDB. The following instructions describe a local DB setup.
+Ensure that your Microsoft Windows user has access to the specified SQL Server or LocalDB. The following instructions describe a local DB setup.
 
 1. Download the LocalDB 2019 installer by using the [SQL Server Express installer](https://go.microsoft.com/fwlink/?linkid=866658).
-1. Run the installer and select "Download Media"
+1. Run the installer and select **Download Media**
 1. Select "LocalDB" and **Download**
 1. Before running the SqlLocalDB.msi installer, delete your current MSSQLLocalDB instance:
 
