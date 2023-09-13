@@ -19,7 +19,7 @@ searchScope:
 You can use generative answers with content stored on SharePoint sites and OneDrive for Business. This capability works by pairing your bot with a specific site URL, such as _contoso.sharepoint.com/sites/policies_. When a bot user asks a question or makes a statement where the bot doesn't have a manually configured topic to use, it will search for relevant content from that site URL and all sub-paths and will use generative answers technology to help summarize this content into a targeted response.
 
 > [!CAUTION]
-> Content analysis and retrieval happens on behalf of the signed-in user, meaning this feature [requires user authentication to be configured for your bot using Azure AD](nlu-boost-node.md#authentication). 
+> Content analysis and retrieval happens on behalf of the signed-in user, meaning this feature requires user authentication to be [configured for your bot using Azure AD under the **Manual (for custom website)** authentication option](nlu-boost-node.md#authentication). The **No authentication** and **Only for Teams** authentication options can't retrieve information from Sharepoint or OneDrive for Business.
 >  
 > It also means that when a specific user asks a question of the bot, the bot will only surface content that that specific user has access to read on SharePoint or OneDrive for Business.
 

@@ -65,20 +65,20 @@
           href: administer-catalog.md
         - name: View, submit, and install catalog items
           href: submit-catalog-items.md
-    - name: Unified developer experience
+    - name: Unified developer experience for finance and operations apps (preview)
       items:
         - name: Overview
-          href: unified-experience\overview.md
+          href: unified-experience\finance-operations-dev-overview.md
         - name: Install development tools
-          href: unified-experience\install-config-tools.md
+          href: unified-experience\finance-operations-install-config-tools.md
         - name: Write, deploy, and debug X++ code
-          href: unified-experience\debug.md
-        - name: Deploy packages
-          href: unified-experience\deploy-packages.md
-        - name: Copy a Lifecycle Services environment
-          href: unified-experience\copy-to-ode.md
+          href: unified-experience\finance-operations-debug.md
+        - name: Unit testing
+          href: unified-experience\finance-operations-testing.md
+        - name: Continuous integration and deployment
+          href: unified-experience\finance-operations-pipelines.md
         - name: Frequently asked questions (FAQs)
-          href: unified-experience\faq.md
+          href: unified-experience\finance-operations-faq.md
     - name: Tools
       expanded: true
       items:

@@ -93,7 +93,7 @@ In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-mode
 Each record has an **Owning Business Unit** column which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
 
 > [!NOTE]
-> When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using Organization Service to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
+> When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using SDK for .NET to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
 
 You can manage whether you want to allow your user to set the Owning Business Unit column when the feature switch is ON. To set the Owning Business Unit column, you need to grant the user’s security role the Business Unit table’s **Append To** privilege with local level permission.  
 
@@ -152,7 +152,7 @@ Teams are another important security building block. Teams are owned by a Busine
 
 ## Record sharing
 
-Individual records can be shared on a one by one basis with another user. This is a powerful way of handling exceptions that don’t fall into the record ownership or member of a business unit access model. It should be an exception though because it's a less performant way of controlling access. Sharing tougher to troubleshoot because it's not a consistently implemented access control. Sharing can be done at both the user and team level. Sharing with a team is a more efficient way of sharing. A more advanced concept of sharing is with Access Teams which provides auto creation of a team and sharing of record access with the team based on an Access Team Template (template of permissions) which is applied. Access teams can also be used without the templates, with just manual add/remove of its members. Access teams are more performant because they don’t allow owning records by the team or having security roles assigned to the team. Users get access because the record is shared with the team and the user is a member.
+Individual records can be shared on a one-by-one basis with another user. This is a powerful way of handling exceptions that don’t fall into the record ownership or is a member of a business unit access model. It should be an exception, though, because it's a less performant way of controlling access. Sharing is tougher to troubleshoot because it's not a consistently implemented access control. Sharing can be done at both the user and team level. Sharing with a team is a more efficient way of sharing. A more advanced concept of sharing is with Access Teams, which provides auto-creation of a team and sharing of record access with the team is based on an Access Team Template (template of permissions) which is applied. Access teams can also be used without the templates, with just manually adding or removing its members. Access teams are more performant because they don’t allow owning records by the team or having security roles assigned to the team. Users get access because the record is shared with the team and the user is a member.
 
 ### Record-level security in Dataverse
 
