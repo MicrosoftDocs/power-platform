@@ -23,7 +23,7 @@ With the Power Platform admin center, you can export Power Platform inventory an
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - The user experience that displays the list of established subscriptions has a limitation in this Public Preview of displaying only the first 50 subscriptions.
+> - During this preview, the user experience displaying the list of established subscriptions is limited to show only first 50 subscriptions.
 
 Data Lake Storage is a key part of Cortana Intelligence, meaning that it works with Azure Synapse Analytics, Power BI, and Azure Data Factory for a complete cloud big-data and advanced analytics platform that helps you with everything from data preparation to doing interactive analytics on large-scale datasets. Architected from the ground up for cloud scale and performance, Data Lake Storage is a cost-effective solution to run big data workloads. With Data Lake Storage, your organization can analyze all its data in a single place with no artificial constraints. 
 
