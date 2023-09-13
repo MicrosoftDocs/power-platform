@@ -17,7 +17,7 @@ This how-to article shows you how to create and run reliable test cases.
 
 ## Prerequisites
 
-You need to have a Power Platform unified developer experience installed and configured on your local machine and a Power Platform develop-focused sandbox environment linked to it. It's important to keep the cloud and local representation of the code the same (synchronized).
+You need to have a Power Platform unified developer experience installed and configured on your local machine and a Power Platform developer-focused sandbox environment linked to it. It's important to keep the cloud and local representation of the code the same (synchronized).
 
 More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
 
@@ -32,12 +32,12 @@ You can create new test cases to test the functionality in an application.
 
 1. Open Visual Studio.
 1. On the **File** menu, select **Open** > **Project/Solution**, and then select **FleetManagement** **solution** from the desktop folder. If the solution file isn't on your computer, the steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](/dynamics365/fin-ops-core/dev-itpro/dev-tools/fleet-management-sample).
-1. In **Solution Explorer**, right-click the **Fleet Management** solution, point to **Add**, and then select **New Project**.
+1. In **Solution Explorer**, right-click the **Fleet Management** solution, select **Add**, and then select **New Project**.
 1. Choose **finance and operations** as the project type to create.
 1. Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:\Users\Public\Desktop\FleetManagement) as the location, and then select **OK**. 
 1. In **Solution Explorer**, right-click the new project, and then select **Properties**.
 1. Set the **Model** property to **FleetManagementUnitTests**, and then select **OK**.
-1. Now add a test class containing the tests against the fleet management code. Right-click the FleetManagementUnitTestSample project, point to **Add**, and then select **New Item**.
+1. Now add a test class containing the tests against the fleet management code. Right-click the FleetManagementUnitTestSample project, select **Add**, and then select **New Item**.
 1. In the **Add New Item** window, select **Test Class** as the type of element to add. Name the new class FMUnitTestSample, and then select **Add**.
 
 The template class contains information that should get you started with writing your test. In this example, the test class only consist of two tests, each marked with the SysTestMethod attribute. Since the methods aren't subject to extensibility, they have been adorned with a `Hookable(false)` attribute. In addition, the test class contains a method called `setup()` that is called prior to any tests being run. This method is often useful for setting up state shared across all tests.
@@ -115,14 +115,14 @@ Test Explorer shows the results of each test after it completes. Hopefully, all 
 
 ## Test isolation
 
-For a test to be of high value it must be reliable. A test must pass or fail consistently, independent of other factors such as other tests. One typical cause of unreliable tests is leaking state, such as data left behind in the database that influences downstream tests. Another cause of unreliable tests is relying on tests to be called in a particular order. To prevent this type of issue, you can use the `SysTestTransaction` attribute.
+For a test to be of high value it must be reliable. A test must pass or fail consistently independent of other factors such as other tests. One typical cause of unreliable tests is leaking state, such as data left behind in the database that influences downstream tests. Another cause of unreliable tests is relying on tests to be called in a particular order. To prevent this type of issue, you can use the `SysTestTransaction` attribute.
 
 |  TestTransactionMode | Description  |
 |---|---|
-| AutoRollback | **Default**. Provides the best isolation.<br><br> All transactions are rolled back using SQL save points, and all database statements are routed to the main connection, including user connections. No data is persisted. |
+| AutoRollback | Default. Provides the best isolation.<br><br> All transactions are rolled back using SQL save points, and all database statements are routed to the main connection including user connections. No data is persisted. |
 | LegacyRollback | All insert statements are tracked and deleted during clean-up.<br><br> All insert statements are downgraded to row-by-row. One typical use case is when testing user connections or concurrency scenarios. This isolation level cleans up setup data, and the recommendation is to wrap each test method in a ttsBegin and ttsAbort. |
 | LegacyRollbackWithUpdateTracking | All update, delete, and insert statements are tracked and reverted during cleanup.<br><br> All insert, update, and delete statements are tracked and downgraded to row-by-row. This mode is the slowest isolation level. |
-| None | **Only use for debugging**. Provides no isolation.<br><br> This setting can be useful to temporarily debug a test, as it allows you to use the regular user interface to navigate the data that the test created. |
+| None | Only use this mode for debugging. Provides no isolation.<br><br> This setting can be useful to temporarily debug a test as it allows you to use the regular user interface to navigate the data that the test created. |
 
 Example:
 
