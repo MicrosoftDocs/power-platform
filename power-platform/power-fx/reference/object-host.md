@@ -18,7 +18,9 @@ The **Host** object in Power Apps provides information about the current host ru
 
 ## Description
 
-Similar to a control or [the **App** object](object-app.md), the **Host** object provides properties that identify information from the host running the app. Every app has a **Host** object.
+Similar to a control or [the **App** object](object-app.md), the **Host** object provides properties that identify information from the host running the app. Every app has a **Host** object.  
+
+Use this information to debug an app that is operating differently on a specific browser or device.  The strings provided here can be easily shown in the app UI with a **Text label** control or you can log the information to App insights.
 
 > [!NOTE]
 > The host object is currently only available in custom pages and canvas apps.
@@ -57,7 +59,7 @@ The **OSType** property provides the name of the operating system where the app 
 | ... |
 
 > [!NOTE]
-> Don't using the **OSType** to change experience or functionality of your app based on the reported operating system.
+> Don't use the **OSType** to change experience or functionality of your app based on the reported operating system.
 
 The **OSType** text can be used in any formula, such as showing it in a label's text property:
 
@@ -84,4 +86,62 @@ The **TenantID** property provides the Globally Unique Identifier (GUID) that sp
 
 ```powerapps-dot
 Label1.Text: Host.TenantID
+```
+
+## Version property
+
+The **Version** property provides the version identification and version number of the Power Apps player.  Similar to **BrowserUserAget**, more than one version number may be returned, separated by spaces.
+
+The **Version** property will always be an empty string when working in Power Apps Studio.
+
+```powerapps-dot
+Label1.Text: Host.Version
+```
+
+## Examples
+
+1. Create a new app
+1. Add a label control and set the `Text` property to `"Host.BrowserUserAgent: " & Host.BrowserUserAgent`.
+1. Add a label control and set the `Text` property to `"Host.OSType: " & Host.OSType`.
+1. Add a label control and set the `Text` property to `"Host.SessionID: " & Host.SessionID`.
+1. Add a label control and set the `Text` property to `"Host.TenantID: " & Host.TenantID`.
+1. Add a label control and set the `Text` property to `"Host.Version: " & Host.Version`.
+
+Running your app in Power Apps Studio on Windows with the Microsoft Edge browser, you will see something similar to (note that Host.Version will always be blank in Power Apps Studio):
+```
+Host.BrowserUserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Host.OSType: Windows
+Host.SessionID: ee2eed1a-8455-4e68-a433-a709302d0c71
+Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.Version: 
+```
+
+Running your app in the Power Apps mobile player on iOS, you will see something similar to:
+
+```
+Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 PowerApps/e1c23ff9-4822-4e75-a003-01c91407a4d2
+Host.OSType: Windows
+Host.SessionID: 3ebec22f-ee2e-412a-b3eb-45d97db34863
+Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.Version: PowerApps-Native/3.23084.8(iOS)
+```
+
+Running your app in a Firefox web browser on Windows, you will see something similar to:
+
+```
+Host.BrowserUserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0
+Host.OSType: Windows
+Host.SessionID: 283309a4-d88b-4b2a-88de-73b47d1b62d0
+Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.Version: PowerApps-Web/3.23084.6(Windows)
+```
+
+Running your app in a web browser on iOS, you will see something similar to:
+
+```
+Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+Host.OSType: iOS
+Host.SessionID: a09a946d-ce71-4c1f-bd35-519c79849c8d
+Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.Version: PowerApps-Web/3.23084.6(iOS)
 ```
