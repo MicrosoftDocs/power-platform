@@ -90,9 +90,10 @@ Label1.Text: Host.TenantID
 
 ## Version property
 
-The **Version** property provides the identification and version number of the Power Apps player.  Similar to **BrowserUserAget**, more than one version number may be returned, separated by spaces.
+The **Version** property provides the identification and version number of the Power Apps player.  Similar to **BrowserUserAgent**, more than one version number may be returned, separated by spaces.
 
-The **Version** property is always an empty string when working in Power Apps Studio.
+> [!NOTE]
+> The **Version** property is always an empty string when working in Power Apps Studio.
 
 ```powerapps-dot
 Label1.Text: Host.Version
