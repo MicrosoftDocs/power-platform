@@ -112,7 +112,7 @@ Also, if you're using LocalDB, you may need to first configure and test it. Cons
 More information: [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
 
 > [!NOTE]
-> If the cross reference database does not already exist, the tool will restore the database from backup downloaded to 'C:\Users\\<User>\AppData\Local\Microsoft\Dynamics365\\<ApplicationVersion>'. You'll see notifications in the Visual Studio **Output** pane. If you need to restore it again by yourself you can do so. For instructions to do a restore refer to [Restore to SQL Server](/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#restore-to-sql-server).
+> If the cross reference database does not already exist, the tool will restore the database from backup downloaded to C:\Users\\`<User>`\AppData\Local\Microsoft\Dynamics365\\`<ApplicationVersion>`. You'll see notifications in the Visual Studio **Output** pane. If you need to restore it again by yourself you can do so. For instructions to do a restore refer to [Restore to SQL Server](/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#restore-to-sql-server).
 
 After the configuration is saved, you may get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
 
