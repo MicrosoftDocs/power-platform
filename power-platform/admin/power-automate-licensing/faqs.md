@@ -361,7 +361,9 @@ Command example with export:
 
 If the number of environments in the tenant is less than 500, use the following script to get all the flows that need licenses across the tenant:
 
+```powershell
 $environments = Get-AdminPowerAppEnvironment
+
 $allFlows = @()
 foreach ($env in $environments) {
     Write-Host "Getting flows at risk of suspension for environment $($env.DisplayName)..."
@@ -369,6 +371,7 @@ foreach ($env in $environments) {
     Write-Host "Found $($flows.Count) flows at risk of suspension."
     $allFlows += $flows
 }
+```
 
 #### Write all flows to a CSV file
 $allFlows | Export-Csv -Path "flows.csv" -NoTypeInformation
