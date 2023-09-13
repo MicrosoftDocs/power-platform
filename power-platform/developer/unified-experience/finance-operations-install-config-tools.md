@@ -33,7 +33,7 @@ After you have installed the Power Platform Tools extension for Visual Studio, f
 1. Select the desired options in the dialog and select **Login**.  
     Choose not to use the signed-in user if you need to use another account with a VS license. Enter the credentials as necessary to match your development user account.
 1. When presented with a dialog to select a solution, select an available solution and then choose **Done**.
-1. You are presented with a list of Dataverse organizations (databases deployed). Find the sandbox environment created for online development and connect to it.
+1. You will be presented with a list of Dataverse organizations (databases deployed). Find the sandbox environment created for online development and connect to it.
     > [!NOTE]
     > If you have only one online development environment, the organization list dialog may not be shown as you would automatically connect to the environment.
 

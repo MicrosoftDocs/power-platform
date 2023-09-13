@@ -119,5 +119,3 @@ Use the below script to delete the previously created environment.  Set the **en
 Remove-AdminPowerAppEnvironment -EnvironmentName [Guid]
 ```
 ---
-
-

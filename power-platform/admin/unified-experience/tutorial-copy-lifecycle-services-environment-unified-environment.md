@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Finance and operations apps have been re-imagined as an application hosted by Microsoft Dataverse. A common function for finance and operations apps administrators is to copy environments. Historically, this has been done in Microsoft Dynamics 365 Lifecycle Services (LCS), but now everything can be managed in Power Platform admin center.
+Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for finance and operations apps administrators is to copy environments. Historically, this has been done in Microsoft Dynamics 365 Lifecycle Services (LCS), but now everything can be managed in Power Platform admin center.
 
 In this tutorial, you'll learn how to:
 
