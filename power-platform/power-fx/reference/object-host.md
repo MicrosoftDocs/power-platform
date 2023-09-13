@@ -18,15 +18,13 @@ The **Host** object in Power Apps provides information about the current host ru
 
 ## Description
 
-The **Host** object provides information about the host device, operating system, and player that is running the app.  This is similar to [the **App** object](object-app.md) and every app has access to the **Host** object.
+The **Host** object provides information about the host device, operating system, and player that is running an app.  **Host** is similar to [the **App** object](object-app.md) and every app has access to this information.
 
-One of the best uses of **Host** is to debug an app that isn't working properly on a specific device or with a specific browser.  Use the text properties of this object to display information in the app's UI with a **Text label** control or log the information to a database table or to [Application Insights](/power-platform/admin/overview-integration-application-insights).
+One of the best uses of **Host** is to debug an app that isn't working properly on a specific device or with a specific browser.  Use the text properties of this object to display information in the app's UI with a [**Text label**](/power-apps/maker/canvas-apps/controls/control-label) control or log the information to a database table or to [Application Insights](/power-platform/admin/overview-integration-application-insights).
 
-It is tempting to use **Host** to tailor an app to a specific device or browser.  This can be dangerous as Power Apps is designed to be run on a wide spectrum of hardware and software platforms and your **Host** based logic may not account for them all and they will likely change over time.  The better approach is to use information that is more abstracted and not tied to specific hardware and software. 
+It's tempting to use **Host** to tailor an app to a specific device or browser.  This is dangerous as Power Apps is designed to be run on a wide spectrum of hardware and software platforms and your **Host** based logic may not account for all of them especially as they are likely to change over time.  The better approach is to use information that is more abstracted and not tied to specific hardware and software. For example, use the [**Size**](/power-apps/maker/canvas-apps/controls/control-screen#additional-properties) property of the **Screen** control to tailor a screen to show less or reorganize information when running on a smaller device such as a phone.
 
-For example, sometimes it is desirable to tailor a screen to show less information or reorganize information if running on a smaller device such as a phone.  The best way to do this is to use the [**Size**](/power-apps/maker/canvas-apps/controls/control-screen#additional-properties) property of the **Screen** control which will work on all hardware/software combinations.
-
-To access the **Host** object, expand the  [**App**](object-app.md) object at the top of the **Tree view** pane and then select it. In this example, the **Host** object doesn't have any properties that accept formulas.
+To access the **Host** object in Power Apps Studio, expand the [**App**](object-app.md) object at the top of the **Tree view** pane and then select **Host**. In this example, the **Host** object doesn't have any properties that accept formulas.
 
 > [!div class="mx-imgBorder"]
 > ![The Host object in the Tree view pane.](media/object-host/hostobject.png)
@@ -70,7 +68,7 @@ Label1.Text: "You're running " & Host.OSType
 ```
 
 ## SessionID property
-The **SessionID** property returns the GUID that identifies the current session. This can be useful for troubleshooting purposes.
+The **SessionID** property returns the GUID that identifies the current session. Include this information when reporting problems to your administrator.
 
 > [!NOTE]
 > In embedded scenarios such as Power Apps in Power BI, the SessionID property returns the underlying Power Apps session ID, not the Power BI session ID.
@@ -94,7 +92,7 @@ Label1.Text: Host.TenantID
 
 The **Version** property provides the identification and version number of the Power Apps player.  Similar to **BrowserUserAget**, more than one version number may be returned, separated by spaces.
 
-The **Version** property will always be an empty string when working in Power Apps Studio.
+The **Version** property is always an empty string when working in Power Apps Studio.
 
 ```powerapps-dot
 Label1.Text: Host.Version
@@ -102,14 +100,19 @@ Label1.Text: Host.Version
 
 ## Examples
 
-1. Create a new app
-1. Add a label control and set the `Text` property to `"Host.BrowserUserAgent: " & Host.BrowserUserAgent`.
-1. Add a label control and set the `Text` property to `"Host.OSType: " & Host.OSType`.
-1. Add a label control and set the `Text` property to `"Host.SessionID: " & Host.SessionID`.
-1. Add a label control and set the `Text` property to `"Host.TenantID: " & Host.TenantID`.
-1. Add a label control and set the `Text` property to `"Host.Version: " & Host.Version`.
+1. Create a new Canvas app.
+1. Add a **Text label** control and set the `Text` property to `"Host.BrowserUserAgent: " & Host.BrowserUserAgent`.
+1. Add a **Text label** control and set the `Text` property to `"Host.OSType: " & Host.OSType`.
+1. Add a **Text label** control and set the `Text` property to `"Host.SessionID: " & Host.SessionID`.
+1. Add a **Text label** control and set the `Text` property to `"Host.TenantID: " & Host.TenantID`.
+1. Add a **Text label** control and set the `Text` property to `"Host.Version: " & Host.Version`.
 
-Running your app in Power Apps Studio on Windows with the Microsoft Edge browser, you will see something similar to (note that Host.Version will always be blank in Power Apps Studio):
+Run your app on different devices and with different browsers and you will see results similar to the below.
+
+### Power Apps Studio on Windows with the Microsoft Edge browser
+
+**Host.Version** is always blank when working in Power Apps Studio.
+
 ```
 Host.BrowserUserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
 Host.OSType: Windows
@@ -118,7 +121,7 @@ Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
 Host.Version: 
 ```
 
-Running your app in the Power Apps mobile player on iOS, you will see something similar to:
+### Power Apps mobile player on iOS
 
 ```
 Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 PowerApps/e1c23ff9-4822-4e75-a003-01c91407a4d2
@@ -128,7 +131,7 @@ Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
 Host.Version: PowerApps-Native/3.23084.8(iOS)
 ```
 
-Running your app in a Firefox web browser on Windows, you will see something similar to:
+### Firefox web browser on Windows
 
 ```
 Host.BrowserUserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0
@@ -138,7 +141,7 @@ Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
 Host.Version: PowerApps-Web/3.23084.6(Windows)
 ```
 
-Running your app in Safari web browser on iOS, you will see something similar to:
+### web browser on iOS
 
 ```
 Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
