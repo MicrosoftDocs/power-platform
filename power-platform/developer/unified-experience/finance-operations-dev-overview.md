@@ -21,7 +21,7 @@ Consider a typical scenario where a developer would create a simple app for capt
 
 ## Finance and operations app development
 
-Development for finance and operations apps is accomplished in Visual Studio using the Visual studio add-in. This development environment provides everything a professional developer would expect. The unified environment runs in the cloud, and because of that we have made several changes and improvements to the way a developer works with finance and operations apps. However, existing finance and operations app developers will find that the large majority of their workflows will not be different from what they are used to. The article [Write, deploy, and debug X++ code (preview)](finance-operations-debug.md) walks you through how to build X++ code, deploy it to the cloud, execute and debug it there. All other content that you are likely to find about finance and operations app development, like how to extend existing code, is likely to still hold true.
+Development for finance and operations apps is accomplished in Visual Studio using the Visual Studio add-in. This development environment provides everything a professional developer would expect. The unified environment runs in the cloud, and because of that we have made several changes and improvements to the way a developer works with finance and operations apps. However, existing finance and operations app developers will find that the large majority of their workflows will not be different from what they are used to. The article [Write, deploy, and debug X++ code (preview)](finance-operations-debug.md) walks you through how to build X++ code, deploy it to the cloud, execute and debug it there. All other content that you are likely to find about finance and operations app development, like how to extend existing code, is likely to still hold true.
 
 More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
 
@@ -52,11 +52,11 @@ Set up Visual Studio on your local development computer.
 
 ### See also
 
-[Install and configure development tools (preview)](finance-operations-install-config-tools.md)
+[Install and configure development tools (preview)](finance-operations-install-config-tools.md)  
 [Write, deploy, and debug X++ code (preview)](finance-operations-debug.md)  
 [Frequently asked questions (preview)](finance-operations-faq.md)  
-[Tutorial: Provision a new environment with an ERP-based template (preview)](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md#tutorial-provision-a-new-environment-with-an-erp-based-template-preview)
-[Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page) (Dynamics 365 legacy information)<br/>
+[Tutorial: Provision a new environment with an ERP-based template (preview)](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md#tutorial-provision-a-new-environment-with-an-erp-based-template-preview)  
+[Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page) (Dynamics 365 legacy information)  
 [Unified admin experience for finance and operations apps (preview)](../../admin/unified-experience/finance-operations-apps-overview.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
