@@ -101,7 +101,7 @@ New-AdminPowerAppEnvironment -DisplayName “UnoEnvName1” -EnvironmentSku Sand
 In the above example, we used the **Finance** environment template.  Similar options are available to you for other finance and operations apps, such as Supply Chain Management and Project Operations.
 
 ## Delete the environment
-In this step, delete the environment you previously created.  Deleting an environment is an action commonly done by admins who wish to reclaim capacity for other purposes.
+In this step, delete the environment you previously created.  Deleting an environment is an action commonly done by admins who wish to reclaim capacity for other purposes. An environment can be deleted using the Power Platform admin center, or PowerShell as follows.
 
 # [Power Platform admin center](#tab/PPAC)
 
