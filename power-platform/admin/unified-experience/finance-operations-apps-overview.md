@@ -3,11 +3,10 @@ title: "Unified admin experience for finance and operations apps (preview)"
 description: "Overview of unified admin experiences for finance and operations apps customers in Power Platform admin center"
 author: laneswenka
 ms.topic: overview
-ms.date: 08/29/2023
+ms.date: 09/13/2023
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
-
 ---
 
 # Unified admin experience for finance and operations apps (preview)
@@ -99,7 +98,8 @@ As part of the preview, there are a few knonw limitations of functionality that 
 
 ### Related articles
 
+- [Unified developer experience for finance and operations apps (preview)](../../developer/unified-experience/finance-operations-dev-overview.md)
 - [Finance and operations apps documentation](/dynamics365/fin-ops-core/fin-ops/)  
 - [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 - [Manage Dynamics 365 apps](/power-platform/admin/manage-apps)  
-- [Unified developer experience for finance and operations apps (preview)](../../developer/unified-experience/finance-operations-dev-overview.md)
+
