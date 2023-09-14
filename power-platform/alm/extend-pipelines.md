@@ -10,12 +10,27 @@ ms.custom:
 ---
 # Extend pipelines in Power Platform
 
-ALM processes often vary across customers and business organizations. Pipelines extensibility provides the ability to configure deployment gates and apply custom logic at multiple steps of your deployment process. No-code, low-code, and pro-code options are available to customize pipelines and integrate with with other systems of record. For example, you can use Power Automate to add approvals, send notifications, or use pipelines in Power Platform along-side continuous integration/continuous deployment (CI/CD) applications such as Azure DevOps, GitHub, and others. These are only a few of the many possibilities.
+Pipelines can be custom tailored to serve the unique needs of an organization. For example, you can add approvals, deploy via service principals, integrate with systems of record, with Azure DevOps, GitHub, and much more. Because [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) are used, custom business logic can be triggered within Power Automate or various other subscribers. Whether your pipeline is basic or sophistocated on the inside, the deployment experience maintains simplicity.
 
-Pipelines raise various [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) that can trigger custom logic. Event data is relayed to subscribers such as Power Automate, which provides over 1,000 built-in [connectors](/connectors/connector-reference/), Azure Service Bus, Azure Event Hubs, Webhooks, and [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins). Regardless of how pipelines are extended, the maker-facing deployment experience remains simple.
 
 > [!IMPORTANT]
-> The capability to extend pipelines is being gradually rolled out across regions and might not be available yet in your region.
+> New pipelines extensions are being gradually rolled out across regions and might not be available yet in your region.
+
+## Gated extensions available
+Pipelines deployments progress through multiple pre-defined steps until deployment completion. Gated extensions insert custom steps into the progression where custom business logic can be executed. It's like your own personal train where you're in control of where it stops and whether it continues or not.
+
+When enabled, each extension inserts a custom step at a different point within a deployment’s progression. Extensions can be used alone or together. 
+
+1. **Pre-export Step Required** allows running custom validation logic when a deployment request is submitted. Pipelines won’t export the solution from a development environment until this step is marked as completed. Only enable this for the first stage in a pipeline (e.g. UAT). 
+2. **Is delegated deployment** carries out deployments using a service principal or pipeline stage owner’s identity (instead of the requesting maker’s). This ensures makers can request deployments without elevated (or any) access within target environments. Requires approval from an authorized identity.
+3. **Pre-deployment-step required** provides additional flexibility to insert a custom step after a deployment is approved. For example, if a final approval is required.
+
+## Understanding Pipelines triggers and actions
+When a step of a deployment begins or completes, it produces a trigger event. Custom logic can be initiated from these triggers. Some triggers are produced for all deployments. Additional triggers are produced when gated extensions are enabled. These correspond to the custom step inserted.
+
+Each gated extension requires your logic to notify the pipelines host when to proceed or fail the deployment. Use the Dataverse unbound action that corresponds with each gated extension, and only when the gated extension is enabled.
+
+# Deploy with a service principal
 
 ## Add predeployment conditions
 
