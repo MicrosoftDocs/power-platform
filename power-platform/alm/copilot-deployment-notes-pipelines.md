@@ -9,9 +9,7 @@ contributors:
    - ASheehi1
 ms.custom: template-how-to
 ---
-# Use Copilot to generate deployment notes in pipelines (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Use Copilot to generate deployment notes in pipelines
 
 Makers spend time and energy noting what is included in their deployed solution to give enough context for any admin approving (triggered via [extensibility](extend-pipelines.md)) their deployment requests or viewing their pipeline deployment record. With AI-generated deployment notes, in just seconds, a solution summary can be generated for the maker and pre-fill the deployment notes field, giving anyone viewing the deployment request or record enough context to understand what the solution does and what it contains. 
 
