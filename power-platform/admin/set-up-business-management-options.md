@@ -1,15 +1,18 @@
 ---
 title: "Set up Business Management options | MicrosoftDocs"
-ms.custom: 
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
 ms.subservice: admin
 ms.author: sericks
-search.audienceType: 
+search.audienceType:
   - admin
+description: Set up rules to manage your business with the Business Management Options page.
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:09/14/2023
 ---
 # Set up Business Management options
 <!-- This is a topic linked from Help and is not in the TOC. -->
