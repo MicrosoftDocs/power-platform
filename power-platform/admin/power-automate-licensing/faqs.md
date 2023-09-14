@@ -325,7 +325,7 @@ Dynamics 365 and Power Apps licenses include a limited set of Power Automate cap
 
 Admins have a Powershell command to see the flows that need their attention like the following:
 
-Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics entities in the environment or using first party Dynamics connectors like finance and operations are automatically considered as being in context of the D365 app in the environment and are excluded from enforcement. If the environment doesn't have Dynamics 365 app installed or if a premium flow isn't using Dynamics entities and is not linked to any D365 app, you must purchase a standalone Power Automate license.
+Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics 365 entities in the environment or using first party Dynamics 365 connectors like finance and operations are automatically considered as being in context of the Dynamics 365 app in the environment and are excluded from enforcement. If the environment doesn't have Dynamics 365 app installed or if a premium flow isn't using Dynamics 365 entities and is not linked to any Dynamics 365 app, you must purchase a standalone Power Automate license.
 
 | Enforcement Type | Exceptions | Admin notifications | Maker notification | Grace period | Recommended Action | Enforcement - Flow turn off |
 |--------------|-------------------|--------|----------|---------|-------|------|
