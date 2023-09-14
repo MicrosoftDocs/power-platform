@@ -163,7 +163,7 @@ Since developer environments aren't intended to support production scenarios, ap
 :::image type="content" source="media/power_apps_dev_env_app_banner.png" alt-text="Power Apps Developer Environment app banner.":::
 
 ### Are Managed Environment use rights included in the Developer Plan?
-Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. In other words, users&mdashincluding makers running their own apps or flows&mdashneed a premium license in addition to the developer plan to run their assets in a managed, developer environment.
+Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. In other words, users&#8212including makers running their own apps or flows&#8212need a premium license in addition to the developer plan to run their assets in a managed, developer environment.
 
 ### Are Dynamics 365 apps available in a developer environment?
 
