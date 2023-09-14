@@ -1,5 +1,5 @@
 ---
-title: Use Copilot to generate deployment notes in pipelines (preview)
+title: Use Copilot to generate deployment notes in pipelines
 description: Learn how to use Copilot to generate deployment notes during pipeline deployments.
 author: ASheehi1
 ms.author: matp
