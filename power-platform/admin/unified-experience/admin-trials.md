@@ -3,11 +3,10 @@ title: "Unified admin trials (preview)"
 description: "Subscription based trial environments for administrators of finance and operations apps."
 author: laneswenka
 ms.topic: conceptual
-ms.date: 08/28/2023
+ms.date: 09/13/2023
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
-
 ---
 
 # Unified admin trials (preview)
@@ -17,10 +16,6 @@ ms.reviewer: sericks
 Historically administrators, partners, and ISVs have had to use cloud-hosted environments in Lifecycle Services (LCS) to create demo or trial environments for finance and operations apps.  This was to demonstrate the software capabilities and try out new features of the product on a low-cost basis.
 
 To improve this experience, Microsoft has made available free subscription-based trial environments for finance and operations apps, including Dynamics 365 Finance, Supply Chain Management, Project Operations, and Commerce apps.
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Acquire a free subscription-based trial license
 

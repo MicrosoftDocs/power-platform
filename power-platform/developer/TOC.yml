@@ -69,6 +69,7 @@
       items:
         - name: Overview
           href: unified-experience\finance-operations-dev-overview.md
+          displayName: Overview of unified developer experience for finance and operations apps
         - name: Install development tools
           href: unified-experience\finance-operations-install-config-tools.md
         - name: Write, deploy, and debug X++ code

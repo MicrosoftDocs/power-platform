@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/28/2023
+ms.date: 09/13/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -25,8 +25,6 @@ In this tutorial, learn how to:
 - Delete an environment when no longer in use.
 
 As an example of this scenario, a customer who operates their finance and operations apps environments in Microsoft Dynamics 365 Lifecycle Services (LCS), can deploy one of the newer, developer-focused sandboxes in Power Platform admin center.  
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Environment deployment
 
