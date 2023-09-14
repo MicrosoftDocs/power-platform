@@ -36,6 +36,8 @@ To see your current license usage, select **View license consumption (preview)**
 
 > [!NOTE]
 > Trial licenses can be used to license users in Managed Environments, but the restrictions specific to these types of licenses still apply. For example, trial licenses can be used to license users for 30 days.
+>
+> Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br />
