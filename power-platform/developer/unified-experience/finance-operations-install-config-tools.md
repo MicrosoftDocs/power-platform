@@ -1,6 +1,6 @@
 ---
 title: "Install and configure development tools (preview)"
-description: Set up required Dynamics 365 finance and operations app development tools on your local computer.
+description: Set up required finance and operations app development tools on your local computer.
 author: pvillads
 ms.date: 08/23/2023
 ms.topic: how-to
@@ -123,7 +123,7 @@ You can create several configurations, but must select one to be current. The ch
 
 ## Summary
 
-Congratulations! You’re now ready to build, deploy, debug, and test your X++ modules working with the Power Platform online development environment. Explore the possibilities with the power of Dynamics 365 finance and operations integrated with Power Platform.
+Congratulations! You’re now ready to build, deploy, debug, and test your X++ modules working with the Power Platform online development environment. Explore the possibilities with the power of finance and operations integrated with Power Platform.
 
 ## Next steps
 

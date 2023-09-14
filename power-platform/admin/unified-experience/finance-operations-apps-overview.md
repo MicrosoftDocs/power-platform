@@ -1,6 +1,6 @@
 ---
 title: "Unified admin experience for finance and operations apps (preview)"
-description: "Overview of unified admin experiences for Dynamics 365 finance and operations apps customers in Power Platform admin center"
+description: "Overview of unified admin experiences for finance and operations apps customers in Power Platform admin center"
 author: laneswenka
 ms.topic: overview
 ms.date: 08/29/2023
@@ -14,18 +14,18 @@ ms.reviewer: sericks
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Users of Dynamics 365 finance and operations apps can now administer their environments, policies, licensing, and capacity in [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+Users of finance and operations apps can now administer their environments, policies, licensing, and capacity in [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 As part of the unification of admin experiences of finance and operations apps within Power Platform, the environment for finance and operations apps is now considered as an application within Power Platform. This means that multiple Dynamics 365 applications (such as Sales, Marketing, finance and operations) and apps, flows, and websites in Power Platform can be installed and hosted on the same Power Platform environment [with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database), providing a consistent and single set of lifecycle operations that an admin can perform across all of these artifacts.
 
-:::image type="content" source="media/one-admin-journey.png" alt-text="Unified admin experience for Dynamics 365 finance and operations apps":::
+:::image type="content" source="media/one-admin-journey.png" alt-text="Unified admin experience for finance and operations apps":::
 
 > [!IMPORTANT]
 >
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-This article provides an overview to Dynamics 365 finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services (LCS) and the new experience along with links to more resources and articles that provide detailed information for common tasks.
+This article provides an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services (LCS) and the new experience along with links to more resources and articles that provide detailed information for common tasks.
 
 To learn more about the admin unification journey, watch the following video on Microsoft Dynamics 365 Community channel on YouTube: [Video: Unified admin experience for finance and operations apps](https://www.youtube.com/embed/VPQSmtgzfjM)
 
@@ -99,6 +99,7 @@ As part of the preview, there are a few knonw limitations of functionality that 
 
 ### Related articles
 
-- [Finance and operations apps documentation](/dynamics365/fin-ops-core/fin-ops/)
-- [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)
-- [Manage Dynamics 365 apps](/power-platform/admin/manage-apps)
+- [Finance and operations apps documentation](/dynamics365/fin-ops-core/fin-ops/)  
+- [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
+- [Manage Dynamics 365 apps](/power-platform/admin/manage-apps)  
+- [Unified developer experience for finance and operations apps (preview)](../../developer/unified-experience/finance-operations-dev-overview.md)

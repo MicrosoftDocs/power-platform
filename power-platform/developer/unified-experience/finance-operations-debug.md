@@ -13,7 +13,7 @@ ms.subservice: developer
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-The unified developer experience for Dynamics 365 finance and operation apps enables you to write code on your local development computer and run it inside a cloud service. There exists a separation of functionality between these two tiers (local and cloud).
+The unified developer experience for finance and operation apps enables you to write code on your local development computer and run it inside a cloud service. There exists a separation of functionality between these two tiers (local and cloud).
 
 - Development tier - contains the finance and operations metadata and any X++ source code on your local development computer
 - Execution tier - cloud hosted site that stores the business data and executes X++ code
