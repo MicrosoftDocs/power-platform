@@ -10,8 +10,7 @@ ms.custom:
 ---
 # Extend pipelines in Power Platform
 
-Pipelines can be custom tailored to serve the unique needs of an organization. For example, you can add approvals, deploy via service principals, integrate with systems of record, with Azure DevOps, GitHub, and much more. Because [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) are used, custom business logic can be triggered within Power Automate or various other subscribers. Whether your pipeline is basic or sophistocated on the inside, the deployment experience maintains simplicity.
-
+Pipelines can be custom tailored to serve the unique needs of an organization. For example, you can add approvals, deploy via service principals, integrate with systems of record, with Azure DevOps, GitHub, and much more. Because [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) are used, business logic can be executed within Power Automate or various other subscribers. Whether your pipeline is basic or sophistocated on the inside, the deployment experience remains simple on the outside.
 
 > [!IMPORTANT]
 > New pipelines extensions are being gradually rolled out across regions and might not be available yet in your region.
@@ -31,6 +30,32 @@ When a step of a deployment begins or completes, it produces a trigger event. Cu
 Each gated extension requires your logic to notify the pipelines host when to proceed or fail the deployment. Use the Dataverse unbound action that corresponds with each gated extension, and only when the gated extension is enabled.
 
 # Deploy with a service principal
+1. Create an App registration (service principal) in Microsoft Entra ID (formerly Azure Active Directory)
+2. > [!IMPORTANT] Add the pipeline stage owner as an owner of the app registration in Entra ID. This can be a standard user or service principal.
+3. Add the app registration as an S2S user in your pipelines host environment and each target environment it deploys to.
+4. Assign the Pipelines Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments. 
+5. Lower permissioned security roles cannot deploy plugins and other code components.
+6. Check Is delegated deployment on a pipeline stage, select Service Principal, and enter the Client ID. Save.
+7. Create a cloud flow within the pipelines host environment. _Alternive systems can be integrated using pipelines API's._
+8. Select the OnApprovalStarted trigger.
+9. Add steps for desired custom logic.
+10. Insert an approval step. Use Dynamic content for sending deployment request information to the approver(s).
+11. Insert a condition. 
+12. Add Dataverse Perform an unbound action.
+  a.  Action Name: UpdateApprovalStatus
+  b.  ApprovalComments: Insert Dynamic Content. Comments will be visible to the requestor of the deployment.
+  c.  ApprovalStatus: 20 = approved, 30 = rejected
+  d.  ApprovalProperties: Insert Dynamic Content. Admin information accessible from within the pipelines host.
+14. > [Important] The UpdateApprovalStatus action must use the service principal’s connection. You’ll need a client ID and secret.
+15.	Save and then test the pipeline. 
+
+> [!Important] Requesting makers may not have access to deployed resources in target environments. They must be shared. //Sample to automate sharing is pending.
+
+> [!TIP] At minimum, the Basic User security role is needed to deploy connection references and access the environment. 
+
+> [!TIP] When testing, if you remove your own security role, another admin will need to restore it later. Power Platform admins can restore their own security role within the classic experience.
+
+
 
 ## Add predeployment conditions
 
