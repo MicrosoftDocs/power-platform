@@ -103,7 +103,7 @@ Application Foundation and Test Essentials are required for unit test execution.
 
 ### How can I set up a pipeline that automates creation and application of a deployable package to a new environment?
 
-Use the latest version of the Azure DevOps extension from the marketplace. It is now capable of package creation, ISV license addition, and application of the package. Refer https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools.
+Use the latest version of the Azure DevOps extension from the marketplace. It is now capable of package creation, ISV license addition, and application of the package. Refer to [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools).
 
 ### How do I include a license and directly deploy from Visual Studio?
 
@@ -111,7 +111,7 @@ Licenses can be directly included and deployed by placing them in the __License 
 
 Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is required for the applied license to take effect.
 
-### How can I convert a Fully deployable package (Lifecycle Services legacy package) into the new format to be compatible for deployment to environments?
+### How can I convert a fully deployable package (Lifecycle Services legacy package) into the new format to be compatible for deployment to environments?
 
 Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. Choose the `-convertToUnifiedPackage` option and provide the package zip and output location as parameters.
 
@@ -127,7 +127,7 @@ Use **Detach All** to end debugging in place of **Stop Debugging**.
 
 ### I applied a package, but it failed. How can I do further debugging to determine the failure?
 
-Link to download operation logs is available in the Visual Studio output pane. It is downloaded in case of failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
+A link to download operation logs is available in the Visual Studio output pane. It is downloaded in case of failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
 
 ### How can I find out what packages are applied to my environment?
 
@@ -135,11 +135,11 @@ Go to the Dataverse environment and check the **OperationsHistory** and **Packag
 
 ### My operation failed, and wasn't able to find sufficient information in the logs. What information do I provide to Microsoft Support?
 
-The correlation id, client machine name and timestamp are required for Microsoft to investigate. The correlation id is in the Visual Studio output pane. Aditionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\16.11.32802.440\VisualStudioD365Extension-2022-08-12.log.
+The correlation id, client machine name, and timestamp are required for Microsoft to investigate. The correlation id is in the Visual Studio output pane. Aditionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\16.11.32802.440\VisualStudioD365Extension-2022-08-12.log.
 
 ### How do I monitor and diagnose deployed code running in the unified environment?
 
-Use Application Insights to monitor and diagnose the application executing in the unified development environment.
+Use Application Insights to monitor and diagnose the application executing in the unified developer environment.
 
 Learn more about observability: [Monitoring and telemetry using Application Insights](/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights)
 
