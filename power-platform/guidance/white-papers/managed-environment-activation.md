@@ -487,6 +487,8 @@ If you're about to start activating ME features and based on the knowledge you a
     Maker Welcome content: Empty without the link to learn more
     ![ME Settings for Teams Environments](../media/mae/image24.png)
     :::column-end:::
+    :::column:::
+    :::column-end:::
 :::row-end:::
 
 ## How to use Manage Environment feature together with CoE Starter Kit
