@@ -1015,6 +1015,17 @@
                   href: connect-onedrive-business.md
                 - name: Connect to Yammer
                   href: connect-yammer.md
+        - name: Unified admin experience for finance and operations apps (preview)
+          items:
+            - name: Overview
+              href: unified-experience/finance-operations-apps-overview.md
+              displayName: Overview of unified admin experience for finance and operations apps
+            - name: "Tutorial: Provision a new environment with an ERP-based template"
+              href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
+            - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
+              href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
+            - name: "Admin trials for finance and operations apps"
+              href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization
           items:
             - name: Overview
