@@ -19,13 +19,12 @@ Power Platform administrators can create one or more pipelines, associate any nu
 
 - Four environments are recommended, but you can use as few as three Power Platform environments to create a pipeline.
 - All environments used in pipelines must have a Microsoft Dataverse database.
-- Microsoft Dataverse for Teams environments aren't currently supported for use with pipelines.
-- You must have a Power Platform administrator or Dataverse system administrator role.
-- All development and target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md). 
+- You must have a Power Platform administrator or Dataverse system administrator role to install the pipelines application.
+- All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md). 
 
 #### Create or choose environments for pipelines
 
-Before you begin, you’ll need to identify which environments will participate in pipelines. Be sure to enable all development and target environments as [Managed Environments](../admin/managed-environment-overview.md). However, the pipelines host environment doesn't have to be a Managed Environment.
+Before you begin, you’ll need to identify which environments will participate in pipelines. Be sure to enable all target environments as [Managed Environments](../admin/managed-environment-overview.md). Managed Environments is not requird for the pipelines host or developer environments.
 
 - **Host environment**. This special-purpose environment acts as the **storage** and management plane for all pipeline configuration, security, and run history.
   - We recommend you keep this as a **dedicated production environment** separate from the development and target environments.
