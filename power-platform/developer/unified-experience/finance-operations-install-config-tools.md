@@ -19,6 +19,8 @@ As a prerequisite, you need access to a [provisioned developer-focused sandbox e
 
 > [!IMPORTANT]
 > The user account you'll be using for development in the sandbox environment must be assigned the System Administrator role.
+> The windows development machine must have Visual Studio 2019 installed with at least the .Net desktop development workload and the Modeling SDK (this can be selected under Individual components in Visual Studio Installer)
+> The development machine also needs SQL Server or SQL Server Express LocalDB
 
 ## Install the Power Platform extension for Visual Studio
 
@@ -46,7 +48,7 @@ After installing the Power Platform Tools extension and connecting to the online
 > [!IMPORTANT]
 > You can configure settings using the Visual Studio setting **Tools** > **Options** > **Power Platform Tools**.
 >
-> Consider the option **Do not display Power Platform Explorer...** to speed up logon to your environment and **Download logs...** to get logs for deployment and DBSync operations.
+> Consider the option **Do not display Power Platform Explorer...** to speed up connecting to your environment and **Download logs...** to get logs for deployment and DBSync operations.
 >
 > :::image type="content" source="../media/unified-experience/D365FinOpsToolsOptions.png" alt-text="Tools options":::
 >
