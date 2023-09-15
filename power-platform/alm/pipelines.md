@@ -82,8 +82,10 @@ No. Solutions are exported as soon as a deployment request is submitted (when th
 
 ### Are standalone licenses required to use pipelines?
 
-- Both source and target environments must be enabled as Managed Environments. Managed Environments isn't required for the pipelines host. 
-- Standalone licenses aren't required to enable Managed Environments for developer and trial type environments.
+- Developer environments are not required to be Managed Environments. They can be used for development and testing with the developer plan.
+- The pipelines host should be a production environment. Managed Environments is not required for the pipelines host. 
+- All other environments used in pipelines must be enabled as Managed Environments. 
+- Licenses granting premium use rights are required for all Managed Environments.
 
 A common setup example:
 
