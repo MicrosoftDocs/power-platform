@@ -19,25 +19,25 @@ This document addresses the key features of Managed Environments and how organiz
 
 ## Managed Environments overview
 
-Managed Environments is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment. 
+Managed Environments is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment.
 
-There are different aspects depending on the environment type, business needs or internal policies. In this article, you'll find illustrations and explanations based on various organizations that have implemented Managed Environments.
+There are different aspects depending on the environment type, business needs or internal policies. In this article, you find illustrations and explanations based on various organizations that have implemented Managed Environments.
 
-To learn more about how to activate Managed environments, please follow [this link](/power-platform/admin/managed-environment-enable).
+To learn more about how to activate Managed environments, follow [this link](/power-platform/admin/managed-environment-enable).
 
 ## Introduction
 
-Managed Environments being a suite of features is important to understand each feature capability and advantages. 
+Managed Environments being a suite of features is important to understand each feature capability and advantages.
 
 Pipelines in Power Platform are used by organizations to democratize application lifecycle management, enabling them to streamline and optimize their development processes. Managed Environments also offer a range of features and capabilities that empower administrators to customize makers welcome messages in-product, restrict sharing of canvas apps, and gain valuable insights into user activity. With the possibility to manage all DLPs associated with a specific environment, it allows administrators to be more efficient and focused on business needs. Enforcing static analysis checks on solutions and limiting user access to Dataverse through IP Firewall and IP cookie binding allows administrators to follow internal policies and best practices. Additionally, customers can use the Customer Managed Key (CMK) feature to encrypt their data at-rest and meet stringent data privacy and compliance requirements. Microsoft's Lockbox feature ensures that customer data is accessed by Microsoft only when there's a compelling business reason to do so, while extended backup capabilities safeguard against data loss and ensure continuous availability of service. Additionally, Power Automate's DLP feature enables organizations to create and enforce policies that classify desktop flow and individual actions, helping to ensure that sensitive data is protected always.
 
-The following sections are presented with examples and ideas of how your organization could take advantage of Managed Environments. 
+The following sections are presented with examples and ideas of how your organization could take advantage of Managed Environments.
 
 ### Pipelines in Power Platform
 
 Pipelines in Power Platform aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.
 
-To find more information on how the feature works, you can follow [this link](/power-platform/alm/pipelines). 
+To find more information on how the feature works, you can follow [this link](/power-platform/alm/pipelines).
 
 Although pipelines aren't always used by IT administrators or members of the governance team, it's common in organizations for these teams to provide support on how solutions should be deployed to different environments. Administrators are enabled to centrally manage and govern pipelines, providing makers with intuitive user experience for easily deploying their solutions.
 
@@ -45,23 +45,23 @@ To move a solution from one environment to another, typically specified as the s
 
 ![A screenshot of the Pipelines screen in Power Apps](../media/mae/image1.png)
 
-One crucial aspect to consider when utilizing Managed Environments is that all environments within a pipeline must be activated as Managed Environments. This means that if an organization has a pipeline consisting of Dev/Test/Production environments, all these environments must be activated as Managed Environments.
+One crucial aspect to consider when utilizing Managed Environments is that all environments within a pipeline must be activated as Managed Environments. If an organization has a pipeline consisting of Dev/Test/Production environments, all these environments must be activated as Managed Environments.
 
-It's also important to note that personal productivity solutions should be in a personal development environment. The usage of Pipelines will facilitate the deployment of these solutions to target environments. Having this in consideration, it allows Administrators and CoE teams to focus on enabling makers instead of cleaning up resources, especially in Default Environment.
+It's also important to note that personal productivity solutions should be in a personal development environment. The usage of Pipelines facilitate the deployment of these solutions to target environments. Having this in consideration, it allows Administrators and CoE teams to focus on enabling makers instead of cleaning up resources, especially in Default Environment.
 
 Some organizations include pipeline creation as part of their environment creation process. This not only streamlines the process for Makers to publish solutions in the correct environments, but also ensures standardization within the organization. Furthermore, these processes can be automated, from environment creation to pipeline creation, and the respective roles can be assigned accordingly.
 
 ### Maker welcome content
 
-In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com/). 
+In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com/).
 
 To find more information on how the feature works, you can follow [this link](/power-platform/admin/welcome-content).
 
-It's crucial to inform Makers about the company rules and what can be done in each environment or group of environments. Here are some suggestions on how your organization could use the welcome message depending on environment type: 
+It's crucial to inform Makers about the company rules and what can be done in each environment or group of environments. Here are some suggestions on how your organization could use the welcome message depending on environment type:
 
-- **Default Environment**: this is often the most restricted environment with DLPs and sharing controls. To make sure your Makers know about the possible limitations, a good starting point is to create a customized welcome message and include a link to your organization’s policy website or document. 
+- **Default Environment**: this is often the most restricted environment with DLPs and sharing controls. To make sure your Makers know about the possible limitations, a good starting point is to create a customized welcome message and include a link to your organization’s policy website or document.
 
-  As an example, you could inform makers that the Default Environment is intended to be used only for O365 related features such as SharePoint Forms. It's recommended not to use production applications on Default Environment, which means sharing limits might be in place. We'll describe better how to limit the sharing possibilities, but informing the makers in the beginning can lead to a cleaner Environment and more compliant Apps. Taking all factors into consideration an example of message could be: 
+  As an example, you could inform makers that the Default Environment is intended to be used only for O365 related features such as SharePoint Forms. It's recommended not to use production applications on Default Environment, which means sharing limits might be in place. We describe better how to limit the sharing possibilities, but informing the makers in the beginning can lead to a cleaner Environment and more compliant Apps. Taking all factors into consideration an example of message could be:
 
 ![A screenshot of the Welcome message in Power Apps](../media/mae/image2.png)
 
@@ -86,18 +86,21 @@ The **Learn More** link can be configured under the settings, as the following p
 ![A screenshot of Power Apps showing a "Getting Started" popup](../media/mae/image3.png)
 
 ### Production environments
-They're typically used for deploying solutions to production. It's targeting enterprise applications and team productivity applications. In this case it's important to have compliant apps and data. Since you need to control which users have access to the production environment it's beneficial to inform the user if you have a policy of refreshing access. According to the use case, you might allow more connectors and increase the sharing limits. Depending on your centralized or decentralized support team, you can also use this message to inform the right team to support the Makers.
+
+They're typically used for deploying solutions to production. It's targeting enterprise applications and team productivity applications. In this case, it's important to have compliant apps and data. Since you need to control which users have access to the production environment it's beneficial to inform the user if you have a policy of refreshing access. According to the use case, you might allow more connectors and increase the sharing limits. Depending on your centralized or decentralized support team, you can also use this message to inform the right team to support the Makers.
 
 A proposed message for an environment created for the Finance department in Europe could be the following.
 
 ![A screenshot of Power Apps showing a "Getting Started" popup for a production environment](../media/mae/image4.png)
 
 ### Developer environments
+
 It's often used for developers to build their solutions. Since the developers are working on the application, it isn't in production and the scalability is limited. Normally it has more relaxed DLPs due to the nature of the makers, but to avoid the Developers using this type of environments with production assets is important to limit the sharing capabilities and a specific DLP to be assigned to this type of environments. An example of a Maker onboarding message can be the following.
 
 ![A screenshot of Power Apps showing a "Getting Started" popup for a developer environment](../media/mae/image5.png)
 
 ### Sandbox Environments
+
 Typically this type of environments is used when testing a solution. Due to some tests involving a significant number of users these environments scale to a certain point and have more capacity than a Developer environment type. It's also common to use this type of environment as a development environment, normally shared by multiple developers. An example of a Maker onboarding message can be the following.
 
 ![A screenshot of Power Apps showing a "Getting Started" popup for a sandbox environment](../media/mae/image6.png)
@@ -117,8 +120,8 @@ An important aspect of activating Sharing Limits is the fact the limit will only
 
 There are different situations that you need to control how Makers share their Apps across your organization. Here are the most common scenarios and reasons:
 
-1. Limit Apps sharing in a Personal Productivity environment. If you have an environment where users can create Apps for their own work, Apps without global business value or Apps without support from IT, it's important that you limit those Apps for only the maker and not spread it across the organization. Sometimes you have Apps that start as personal productivity and reach popularity and are transformed into a crucial App, because of this reason you should be mindful about the limit you'll configure, between 5 and 50 users is commonly used.
-1. Avoid Apps being shared with security groups or everyone. By sharing with security groups, you're allowing all members of the group to run the App. For instance, if you are in a developer environment you might want to make sure the developer is in control of how the Apps are shared and not by membership of the group. In other scenarios you might want to limit the sharing to everyone – notice by default All users in the tenant are added to the Default Environment.
+1. Limit Apps sharing in a Personal Productivity environment. If you have an environment where users can create Apps for their own work, Apps without global business value or Apps without support from IT, it's important that you limit those Apps for only the maker and not spread it across the organization. Sometimes you have Apps that start as personal productivity and reach popularity and are transformed into a crucial App, because of this reason you should be mindful about the limit you configure, between 5 and 50 users is commonly used.
+1. Avoid Apps being shared with security groups or everyone. By sharing with security groups, you're allowing all members of the group to run the App. For instance, if you are in a developer environment you might want to make sure the developer is in control of how the Apps are shared and not by membership of the group. In other scenarios you might want to limit the sharing to everyone – notice by default all users in the tenant are added to the Default Environment.
 
 The most common scenarios of sharing limits in the different environments are:
 
@@ -168,9 +171,9 @@ Currently the sharing capabilities are only for Power Apps of type Canvas, but i
 
 Examples of what happens when you activate this feature with different configurations:
 
-**Example 1:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until he removes all previous security groups. After all groups are removed, the user is allowed to share with specific users without limitation on the number.
+**Example 1:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until it removes all previous security groups. After all groups are removed, the user is allowed to share with specific users without limitation on the number.
 
-**Example 2:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until he removes all previous security groups and the number of users that the app is shared with goes below 20. For example, if an App is shared with 50 users, when the Maker tries to change the sharing configuration, first would need to remove at least 30 users, and/or any security group, and maintain only a list of 20 users.
+**Example 2:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until it removes all previous security groups and the number of users that the app is shared with goes below 20. For example, if an App is shared with 50 users, when the Maker tries to change the sharing configuration, first would need to remove at least 30 users, and/or any security group, and maintain only a list of 20 users.
 
 ### Usage insights
 
@@ -271,7 +274,7 @@ Pro Tip: Note, if you have misconfigured these policies, you might need to reque
 
 ### IP cookie binding (block cookie reply attacks)
 
-Customers can prevent session cookie exploits with IP address-based cookie binding. 
+Customers can prevent session cookie exploits with IP address-based cookie binding.
 
 To find more information on how the feature works, you can follow [this link](/power-platform/admin/block-cookie-replay-attack).
 
@@ -304,7 +307,7 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 
 To find more information on how the feature works, you can follow [this link](/power-platform/admin/about-lockbox).
 
-With Lockbox activated, when data access is required for a ticket resolution, the Global administrators and Power Platform administrators receive a Lockbox request for approval. After the approval, the Microsoft engineer will have access to the data for a limited time that they need for investigation. Every time an engineer needs to access data, a new Lockbox request is sent to the administrators. All actions that the engineer did are being recorded in the audit log, so the environment will still have full audit log history. 
+With Lockbox activated, when data access is required for a ticket resolution, the Global administrators and Power Platform administrators receive a Lockbox request for approval. After the approval, the Microsoft engineer will have access to the data for a limited time that they need for investigation. Every time an engineer needs to access data, a new Lockbox request is sent to the administrators. All actions that the engineer did are being recorded in the audit log, so the environment will still have full audit log history.
 
 Makers that need this kind of Microsoft support would need to coordinate with their Global administrators or Power Platform Administrators and should be carefully reviewed by them.
 
@@ -378,7 +381,7 @@ Makers and developers can create solutions and templates with useful configurati
 
 To find more information on how the feature works, you can follow [this link](/power-platform/developer/catalog).
 
-Organizations are using the catalog in Power Platform to allow developers and makers to easily find and use templates and code components within their organization. It also provides a central location for administrators to store and maintain power platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements. The processof using catalog in Power Platform is a continuous cycle of five steps:
+Organizations are using the catalog in Power Platform to allow developers and makers to easily find and use templates and code components within their organization. It also provides a central location for administrators to store and maintain power platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements. The process of using catalog in Power Platform is a continuous cycle of five steps:
 
 1. Create
 1. Submit
@@ -430,10 +433,18 @@ If you're about to start activating ME features and based on the knowledge you a
 :::row-end:::
 :::row:::
     :::column:::
-    ![](../media/mae/image20.png)
+    Limit Sharing: Exclude sharing with limit total individuals to 20
+    Solution Checker: Block with activated the sending emails
+    Usage Insights: Activated
+    Maker Welcome content: Customized including the link to learn more
+    ![ME Settings for Default Environments](../media/mae/image20.png)
     :::column-end:::
     :::column:::
-    ![](../media/mae/image21.png)
+    Limit Sharing: Don't set limits
+    Solution Checker: Warning without the sending emails
+    Usage Insights: Deactivated
+    Maker Welcome content: Customized including the link to learn more
+    ![ME Settings for Developer Environments](../media/mae/image21.png)
     :::column-end:::
 :::row-end:::
 
@@ -447,10 +458,18 @@ If you're about to start activating ME features and based on the knowledge you a
 :::row-end:::
 :::row:::
     :::column:::
-    ![](../media/mae/image22.png)
+    Limit Sharing: Don't set limits
+    Solution Checker: Warning without the sending emails
+    Usage Insights: Activated
+    Maker Welcome content: Customized including the link to learn more
+    ![ME Settings for Sandbox Environments](../media/mae/image22.png)
     :::column-end:::
     :::column:::
-    ![](../media/mae/image23.png)
+    Limit Sharing: Don't set limits
+    Solution Checker: Block with activated the sending emails
+    Usage Insights: Activated
+    Maker Welcome content: Customized including the link to learn more
+    ![ME Settings for Production Environments](../media/mae/image23.png)
     :::column-end:::
 :::row-end:::
 
@@ -459,19 +478,13 @@ If you're about to start activating ME features and based on the knowledge you a
     **Teams Environment**
     :::column-end:::
     :::column:::
-    
+    Limit Sharing: Don't set limits
+    Solution Checker: Block with activated the sending emails
+    Usage Insights: Activated
+    Maker Welcome content: Empty without the link to learn more
+    ![ME Settings for Teams Environments](../media/mae/image24.png)
     :::column-end:::
 :::row-end:::
-:::row:::
-    :::column:::
-    
-    :::column-end:::
-    :::column:::
-    
-    :::column-end:::
-:::row-end:::
-
-![](../media/mae/image24.png)
 
 ## How to use Manage Environment feature together with CoE Starter Kit
 
