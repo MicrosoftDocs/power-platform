@@ -1,7 +1,7 @@
 ---
 title: Activating Managed Environments
 description: Learn about activating the features of Managed Environments.
-author: robstand
+author: rsantos00
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 08/31/2023
@@ -43,7 +43,7 @@ Although pipelines aren't always used by IT administrators or members of the gov
 
 To move a solution from one environment to another, typically specified as the source environment and target environment, a user with the appropriate security group needs to create a pipeline. A pipeline specifies all the environments included in the application life cycle, meaning what the developer environment and target environments (test, quality, production) are. The most common pipeline is composed of Dev/Test/Production environments, but it's also common to see Dev/Validation/Test/Production, for instance. With pipelines in the Power Platform, you can create a pipeline that fits your needs and specifications. An example of a pipeline is shown in the following picture:
 
-![A screenshot of a computer  Description automatically generated](../media/mae/image1.png)
+![A screenshot of the Pipelines screen in Power Apps](../media/mae/image1.png)
 
 One crucial aspect to consider when utilizing Managed Environments is that all environments within a pipeline must be activated as Managed Environments. This means that if an organization has a pipeline consisting of Dev/Test/Production environments, all these environments must be activated as Managed Environments.
 
@@ -63,7 +63,7 @@ It's crucial to inform Makers about the company rules and what can be done in ea
 
   As an example, you could inform makers that the Default Environment is intended to be used only for O365 related features such as SharePoint Forms. It's recommended not to use production applications on Default Environment, which means sharing limits might be in place. We'll describe better how to limit the sharing possibilities, but informing the makers in the beginning can lead to a cleaner Environment and more compliant Apps. Taking all factors into consideration an example of message could be: 
 
-![](../media/mae/image2.png)
+![A screenshot of the Welcome message in Power Apps](../media/mae/image2.png)
 
 Configuration would look something like this:
 
@@ -83,24 +83,24 @@ If you are unsure about if you are in the right place? Follow [this guidance**](
 
 The **Learn More** link can be configured under the settings, as the following picture suggests.
 
-![A screenshot of a computer  Description automatically generated](../media/mae/image3.png)
+![A screenshot of Power Apps showing a "Getting Started" popup](../media/mae/image3.png)
 
 ### Production environments
 They're typically used for deploying solutions to production. It's targeting enterprise applications and team productivity applications. In this case it's important to have compliant apps and data. Since you need to control which users have access to the production environment it's beneficial to inform the user if you have a policy of refreshing access. According to the use case, you might allow more connectors and increase the sharing limits. Depending on your centralized or decentralized support team, you can also use this message to inform the right team to support the Makers.
 
 A proposed message for an environment created for the Finance department in Europe could be the following.
 
-![A screenshot of a computer  Description automatically generated](../media/mae/image4.png)
+![A screenshot of Power Apps showing a "Getting Started" popup for a production environment](../media/mae/image4.png)
 
 ### Developer environments
 It's often used for developers to build their solutions. Since the developers are working on the application, it isn't in production and the scalability is limited. Normally it has more relaxed DLPs due to the nature of the makers, but to avoid the Developers using this type of environments with production assets is important to limit the sharing capabilities and a specific DLP to be assigned to this type of environments. An example of a Maker onboarding message can be the following.
 
-![A screenshot of a computer  Description automatically generated](../media/mae/image5.png)
+![A screenshot of Power Apps showing a "Getting Started" popup for a developer environment](../media/mae/image5.png)
 
 ### Sandbox Environments
 Typically this type of environments is used when testing a solution. Due to some tests involving a significant number of users these environments scale to a certain point and have more capacity than a Developer environment type. It's also common to use this type of environment as a development environment, normally shared by multiple developers. An example of a Maker onboarding message can be the following.
 
-![A screenshot of a computer  Description automatically generated](../media/mae/image6.png)
+![A screenshot of Power Apps showing a "Getting Started" popup for a sandbox environment](../media/mae/image6.png)
 
 Now that you have seen some examples of how to use the Maker welcome message it's important you adapt based on your organization needs.
 
@@ -134,7 +134,7 @@ The most common scenarios of sharing limits in the different environments are:
     **Default**
     :::column-end:::
     :::column:::
-    ![](../media/mae/image7.png)
+    Choose `Exclude sharing with security groups`, tick the `Limit total individuals who can share to` checkbox, and select `20` for the value.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -142,7 +142,7 @@ The most common scenarios of sharing limits in the different environments are:
     **Developer**
     :::column-end:::
     :::column:::
-    ![](../media/mae/image8.png)
+    Choose `Exclude sharing with security groups`, tick the `Limit total individuals who can share to` checkbox, and select `5` for the value.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -150,7 +150,8 @@ The most common scenarios of sharing limits in the different environments are:
     **Sandbox**
     :::column-end:::
     :::column:::
-    ![](../media/mae/image10.png)
+    Choose `Exclude sharing with security groups`and leave the `Limit total individuals who can share to` checkbox unticked.
+    If you want to control the Tester users and you need to use a security group, choose `Don't set limits (default)`.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -158,7 +159,7 @@ The most common scenarios of sharing limits in the different environments are:
     **Production**
     :::column-end:::
     :::column:::
-    ![](../media/mae/image11.png)
+    Choose `Don't set limits (default)`.
     :::column-end:::
 :::row-end:::
 
@@ -166,13 +167,9 @@ Currently the sharing capabilities are only for Power Apps of type Canvas, but i
 
 Examples of what happens when you activate this feature with different configurations:
 
-**Example 1:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until he removes all previous security groups. After all groups are removed, the user is allowed to share with specific users he would like without limitation on the number.
+**Example 1:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until he removes all previous security groups. After all groups are removed, the user is allowed to share with specific users without limitation on the number.
 
-- ![](../media/mae/image9.png)
-
-**Example 2:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until he removes all previous security groups and the number of users that the app is shared with goes below 20. For example, if an App is shared with 50 users, when the Maker tries to change the sharing configuration, first would need to remove at least 30 users, and/or any security group, and maintain only a list of 20 users. 
-
-- ![](../media/mae/image7.png)
+**Example 2:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until he removes all previous security groups and the number of users that the app is shared with goes below 20. For example, if an App is shared with 50 users, when the Maker tries to change the sharing configuration, first would need to remove at least 30 users, and/or any security group, and maintain only a list of 20 users.
 
 ### Usage insights
 
@@ -221,7 +218,7 @@ Organizations using this feature have different configurations depending on the 
     **Default**
     :::column-end:::
     :::column:::
-    ![](../media/mae/image12.png)
+    Choose `Block` and tick the `Send emails` box.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -229,7 +226,7 @@ Organizations using this feature have different configurations depending on the 
     **Developer**
     :::column-end:::
     :::column:::
-    ![](../media/mae/image13.png)
+    Choose `Warm` and leave the `Send emails` box unticked.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -237,7 +234,7 @@ Organizations using this feature have different configurations depending on the 
     **Sandbox**
     :::column-end:::
     :::column:::
-    ![](../media/mae/image14.png)
+    Choose `Warm` and leave the `Send emails` box unticked.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -245,7 +242,7 @@ Organizations using this feature have different configurations depending on the 
     **Production**
     :::column-end:::
     :::column:::
-    ![](../media/mae/image15.png)
+    Choose `Block` and tick the `Send emails` box.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -253,7 +250,7 @@ Organizations using this feature have different configurations depending on the 
     **Teams Environment**
     :::column-end:::
     :::column:::
-    ![](../media/mae/image16.png)
+    Choose `Block` and tick the `Send emails` box.
     :::column-end:::
 :::row-end:::
 
@@ -380,9 +377,13 @@ Makers and developers can create solutions and templates with useful configurati
 
 To find more information on how the feature works, you can follow [this link](/power-platform/developer/catalog).
 
-Organizations are using the catalog in Power Platform to allow developers and makers to easily find and use templates and code components within their organization. It also provides a central location for administrators to store and maintain power platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements. The following diagram describes the process of using catalog in Power Platform.
+Organizations are using the catalog in Power Platform to allow developers and makers to easily find and use templates and code components within their organization. It also provides a central location for administrators to store and maintain power platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements. The processof using catalog in Power Platform is a continuous cycle of five steps:
 
-![](../media/mae/image19.png)
+1. Create
+1. Submit
+1. Approve & Store
+1. Discover
+1. Acquire
 
 Organizations that encourage developers and makers to build and share components and templates on the Power Platform can derive more value from it. Simply building isn't enough; sharing these artifacts at scale can foster communities and support groups that can unlock value from a diverse set of personnel within the organization. Successful organizations adopt a fusion teams model where pro-developers, makers, and admins work together to help their fellow employees derive the highest value possible from the platform, by reusing components and templates.
 
