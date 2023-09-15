@@ -472,11 +472,14 @@ If you're about to start activating ME features and based on the knowledge you a
     ![ME Settings for Production Environments](../media/mae/image23.png)
     :::column-end:::
 :::row-end:::
-
 :::row:::
     :::column:::
     **Teams Environment**
     :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
     Limit Sharing: Don't set limits
     Solution Checker: Block with activated the sending emails
