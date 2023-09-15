@@ -104,7 +104,8 @@ Typically this type of environments is used when testing a solution. Due to some
 
 Now that you have seen some examples of how to use the Maker welcome message it's important you adapt based on your organization needs.
 
->[!TIP] Using images that identify the Environment type or owners is very good for user adoption and error prevention.
+>[!TIP]
+> Using images that identify the Environment type or owners is very good for user adoption and error prevention.
 
 ### Limit Sharing
 
@@ -262,7 +263,7 @@ To find more information on how the feature works, you can follow [this link](/p
 
 By default, every Dataverse data can be accessed using the API from any IP address, secured by authentication. It's common in organizations to restrict access to some allowed sources mitigating insider threats like data exfiltration.
 
-When this feature is enabled the IP address is being analyzed in real time and blocked in case it isn't whitelisted. For example, requests with a stolen access token to Dataverse from outside allowed IP ranges, will be validated against the allowed IP range and the attempt will be denied in real time.
+When this feature is enabled the IP address is being analyzed in real time and blocked in case it isn't allowed. For example, requests with a stolen access token to Dataverse from outside allowed IP ranges, will be validated against the allowed IP range and the attempt will be denied in real time.
 
 Organizations tend to activate IP Firewall and configure it to allow connections from their office premises and to restrict connections coming from outside. The best practice is to use it together with conditional access to avoid inconsistent policies and dependencies.
 
