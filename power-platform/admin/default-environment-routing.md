@@ -3,9 +3,9 @@ title: Default environment routing (preview)
 description: Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/17/2023
-author: sericks007 
-ms.author: sericks 
+ms.date: 09/15/2023
+author: hasharaf 
+ms.author: hasharaf 
 ms.reviewer: sericks
 ms.subservice: admin
 search.audienceType: 
@@ -26,8 +26,8 @@ Dataverse is available in developer environments and these environments are [Man
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - By default, all developer environments created through environment routing will be managed.
-> - Managed Environment is not included as an entitlement in the Developer Plan when users run their assets. More information on the Managed environments and the Developer plan can be found [here](https://learn.microsoft.com/en-us/power-platform/developer/plan).
+> - By default, all developer environments created through environment routingare managed.
+> - Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 
 ## Prerequisites
 
