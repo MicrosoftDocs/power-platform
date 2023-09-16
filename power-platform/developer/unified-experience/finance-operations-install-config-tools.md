@@ -97,7 +97,7 @@ To configure the extension, follow these instructions.
 |---|---|
 |Name| Name of the configuration you're creating now.|
 |Description| Description of the configuration you're creating now.|
-|Cross reference database server| Set to "(localdb)\." if you're using LocalDB, or "localhost" if you're using Microsoft SQL Server.|
+|Cross reference database server| Set to "(localdb)\\." if you're using LocalDB, or "localhost" if you're using Microsoft SQL Server.|
 |Cross reference database name| The name for the cross reference database. The Visual Studio extension creates one if it doesn't exist.|
 |Application version to restore cross reference database from| Please select this. It is populated from the assets downloaded when you connected to the unified developer environment.|
 |Folder for your own custom metadata| Folder where your own code is (or will be).|
@@ -107,7 +107,7 @@ If after filling in all the fields the **Save** button is still grayed out, you'
 
 :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadataValidation.png" alt-text="Configure Metadata Validation":::
 
-Ensure that you entered the correct value(s) for fields with errors. For example, use "(localdb)\." if you're using LocalDB. 
+Ensure that you entered the correct value(s) for fields with errors. For example, use "(localdb)\\." if you're using LocalDB. 
 Also, if you're using LocalDB, you may need to first configure and test it. Consider issuing the following command from a Command prompt: `sqllocaldb create MSSQLLocalDB -s`.
 
 More information: [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
