@@ -29,7 +29,7 @@ ISV Studio is designed to become the go-to Power Platform destination for Indepe
 
 ISV Studio supports applications built on the Microsoft Dataverse that are published to and deployed through [AppSource](https://appsource.microsoft.com/). No telemetry is provided on side loaded solutions not deployed through AppSource.
 
-The applications currently available on the Dataverse includes Power Apps and Dynamics 365 for Sales, Marketing, Service, and Talent. ISV Studio now provides telemetry features in Dynamics 365 Finance and Operations.
+The applications currently available on the Dataverse includes Power Apps and Dynamics 365 for Sales, Marketing, Service, and Talent. ISV Studio now provides telemetry features in finance and operations apps.
 
 When end user installs an application from AppSource, a consent dialog is displayed requesting the user to acknowledge that contact, usage, and transactional information may be shared with the application provider. This information is used by the provider to support billing and other transactional activities and to enable telemetry in ISV Studio for the ISV to learn from and act on.
 
@@ -39,15 +39,15 @@ To access the public preview of ISV Studio, navigate your browser to [https://ak
 
 ## Prerequisites
 
-Prerequisites are different for Microsoft Dataverse and for Dynamics 365 Finance and Operations.
+Prerequisites are different for Microsoft Dataverse and for finance and operations.
 
 ### For Microsoft Dataverse
 
 The ISV must be associated with a Microsoft registered Partner organization [ISV] that has one or more supported apps published in [AppSource](https://appsource.microsoft.com/). Supported apps include model-driven apps created using Power Apps and Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
 
-### For Dynamics 365 Finance and Operations
+### For finance and operations
 
-- For Dynamics 365 Finance and Operations, update the `SolutionID` in the descriptors with the `ProductId` of their offer in Partner Center. The `ProductId` of their offer can be found in the URL in Partner Center.
+- For finance and operations apps, update the `SolutionID` in the descriptors with the `ProductId` of their offer in Partner Center. The `ProductId` of their offer can be found in the URL in Partner Center.
 - Ask customers to install the latest solution with the above. They need to be on version `10.0.16` or above to see the telemetry feature in ISV Studio. More information: [ISV Studio solutions](/dynamics365/fin-ops-core/dev-itpro/dev-tools/isv-studio-solutions)
 
 ## Access to ISV Studio

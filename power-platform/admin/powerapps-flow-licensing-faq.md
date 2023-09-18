@@ -749,7 +749,7 @@ Power Automate use rights with Dynamics 365 licenses: Dynamics 365 licenses will
 
 #### Can I connect to Microsoft Dynamics for finance and operations apps?
 
-Yes, you can use the Dynamics 365 finance and operations apps connector to build canvas apps using this data.
+Yes, you can use the finance and operations apps connector to build canvas apps using this data.
 
 
  
