@@ -11,6 +11,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "power-platform/admin/set-up-sales-territories-organize-business-markets-geographical-area.md",
+      "redirect_url": "/dynamics365/sales/set-up-sales-territories",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/guidance/automation-coe/automation-admin-gov.md",
       "redirect_url": "/power-automate/guidance/automation-coe/automation-admin-gov",
       "redirect_document_id": "false"

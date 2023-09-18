@@ -8,7 +8,6 @@ ms.author: kartikka
 ms.custom: ""
 ms.date: 08/30/2021
 ms.reviewer: "pehecke"
-
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -39,6 +38,38 @@ The client Secret must be added and stored as a GitHub Secret, and will be refer
 ## Helper tasks
 
 The available helper task is described below.
+
+### actions-install
+
+When a GitHub Actions workflow forces an install of Power Platform CLI in the context of a runner, and timeout error occurs then you must use version 1 (@v1) with an additional action (`actions-install`) as below.
+
+>
+> [!IMPORTANT]
+> - Using version 1 (@v1) might lead to updates to existing GitHub actions that can result in current workflows being updated.
+> - You must add the **Install Power Platform Tools** task as a first task in your workflow prior to any other GitHub Actions for Power Platform. 
+
+```
+jobs:
+    builds:
+        runs-on: windows-latest   # alternate runner OS is: ubuntu-latest
+
+    steps:
+    - name: Install Power Platform Tools
+        uses: microsoft/powerplatform-actions/actions-install@v1
+
+    - name: Export Solution
+         uses: microsoft/powerplatform-actions/export-solution@v1
+      with:
+         environment-url: 'https://myenv.crm.dynamics.com'
+         user-name: 'me@myenv.onmicrosoft.com'
+         password-secret: ${{ secrets.MYPASSWORD }}
+         solution-name: aSolution
+         solution-output-file: 'aSolution.zip'
+         working-directory: 'out'
+
+```
+
+You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
 
 ### whoAmI
 
@@ -252,22 +283,6 @@ Get status of the catalog install/submit request.
 
 
 ## GitHub workflow authoring
-
-When running your GitHub Actions workflow, if you receive a timeout error, try using version @v1 of GitHub Actions for Power Platform.
-
-Be sure to add the **Install Power Platform Tools** task in your workflow prior to any other GitHub Actions for Power Platform. See the example below.
-
-```
-jobs:
-    builds:
-        runs-on: windows-latest   # alternate runner OS is: ubuntu-latest
-
-    steps:
-    - name: Install Power Platform Tools
-        uses: microsoft/powerplatform-actions/actions-install@v1
-```
-
-You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
 
 To learn more about composing GitHub workflows using GitHub actions, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
 
