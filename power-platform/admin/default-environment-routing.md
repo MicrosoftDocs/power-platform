@@ -3,7 +3,7 @@ title: Default environment routing (preview)
 description: Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/15/2023
+ms.date: 09/18/2023
 author: hasharaf 
 ms.author: hasharaf 
 ms.reviewer: sericks
@@ -21,7 +21,7 @@ Default environment routing is a premium, governance feature. This feature allow
 
 Up until now, when the **Default environment routing** setting is enabled and a new maker visits [make.powerapps.com](https://make.powerapps.com) for the first time, the maker opens their own, personal developer environment, instead of the default environment. Personal, developer environments are makers' own space, similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity where they can start building apps and solutions in their own workspace. New makers don't need to learn about which environment to work in since this happens automatically.
 
-    ![Default Environment Routing](media/EnvRouting-Bloge.png)
+:::image type="content" source="media/EnvRouting-Bloge.png" alt-text="Upload the deployment profile.":::
     
 Dataverse is available in developer environments, and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings already preconfigured, such as sharing limits and solution checker. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
 
