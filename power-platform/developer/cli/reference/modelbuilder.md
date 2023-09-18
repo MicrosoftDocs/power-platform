@@ -65,7 +65,7 @@ This parameter requires no value. It's a switch.
 
 #### `--entitynamesfilter` `-enf`
 
-Filters the list of entities are retrieved when reading data from Dataverse. Passed in as a semicolon separated list. Using the form \<entitylogicalname>;<entitylogicalname>
+Filters the list of entities are retrieved when reading data from Dataverse. Passed in as a semicolon separated list. Using the form \<entitylogicalname>;\<entitylogicalname>
 
 #### `--entitytypesfolder` `-etf`
 
