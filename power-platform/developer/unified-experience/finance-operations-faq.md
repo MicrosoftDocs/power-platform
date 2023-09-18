@@ -39,9 +39,9 @@ Error message:
 
 We don't currently have a solution for secure connection to SQL Server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) is planned to provide read-only queries to a database from SQL Server Management Studio. There's also a JIT access that will allow you to access the data after providing authentication.
 
-### I connected to the environment from Visual Studio but did not get any pop up to download metadata
+### I connected to the environment from Visual Studio but did not get any pop-up to download metadata
 
-Ensure that the unifed development environment you created is of type **Sandbox**. **Trial** environment will not work.
+Ensure that the unifed development environment you created is of type **Sandbox**. A **Trial** environment will not work.
 
 ### The Configure Metadata option doesn't appear on the menu
 
