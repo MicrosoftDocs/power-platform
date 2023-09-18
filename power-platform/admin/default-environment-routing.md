@@ -21,12 +21,12 @@ Default environment routing is a premium, governance feature. This feature allow
 
 Unlike today, when the **Default environment routing** setting is enabled and a new maker visits [make.powerapps.com](https://make.powerapps.com) for the first time, the maker opens their own, personal developer environment, instead of the default environment. Personal, developer environments are makers' own space, similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity where they can start building apps and solutions in their own workspace. New makers don't need to learn about which environment to work in since this happens automatically.
 
-Dataverse is available in developer environments and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings already preconfigured, such as sharing limits and solution checker. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
+Dataverse is available in developer environments, and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings already preconfigured, such as sharing limits and solution checker. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - By default, all developer environments created through environment routingare managed.
+> - By default, all developer environments created through environment routing are managed.
 > - Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 
 ## Prerequisites
@@ -38,7 +38,8 @@ Default environment routing is a tenant-level, admin setting that:
 -   Requires that the **Developer environment assignment** setting is enabled for **Everyone**.
 
     ![The Developer environment assignment setting must be enabled for Everyone.](media/developer-environments-assignment-everyone.png)
-
+    
+-   Requires the use of Managed Environment, since all of the newly created environments will be managed. Users in a managed developer environment will require premium licenses to run Power Platform assets.
 
 ## Enable the Default environment routing setting
 
@@ -51,6 +52,8 @@ Before you enable the **Default environment routing** feature, consider the foll
 -   This feature enables the automatic creation of a personal, developer environment for all of your Power Apps new makers when they first launch [make.powerapps.com](https://make.powerapps.com). The definition of a new maker is limited to the makers who visit [make.powerapps.com](https://make.powerapps.com) for the first time. Returning makers who have visited the site before aren't impacted.
 
 -   New makers are assigned the admin role in their newly created developer environments.
+
+-   By default, all developer environments created through environment routing are managed.
 
 ### Enable the feature in Power Platform admin center
 
