@@ -4,7 +4,7 @@ description: "The governance components solution provides assets to automate com
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/06/2023
+ms.date: 09/06/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -65,10 +65,6 @@ You can customize the email sent out by the flow; by default, it looks like the 
 ### Apps
 
 #### Developer Compliance Center
-
-> [!NOTE]
-> - In the February 2023 release, the **Developer Compliance Center** canvas app has been replaced with the Developer Compliance Center model-driven app. The new app uses model-driven app features and custom pages. The Developer Compliance Center canvas app has been renamed to [deprecated] Developer Compliance Center and will be removed from the solution by June 2023.
-> - The update has been made to use the benefits of custom pages and [Creator kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
 This app is used in the [auditing process](example-processes.md) as a tool for users to check whether apps, flows, chatbots, or custom connectors they own are compliant, and to submit information to the CoE admins as business justification to stay in compliance.
 
@@ -318,10 +314,8 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 
 #### Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
->[!NOTE]
->We recommend that you configure environment policies in Power Platform admin center to delete inactive Dataverse for Teams environments, instead.
->
->Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](/power-platform/admin/inactive-teams-environment)
+> [!NOTE]
+> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. More information: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
 
 > [!IMPORTANT]
 > This flow deletes environments for which no business justification exists, or where the business justification has been rejected. Environment owners have 7 days to provide a business justification before the environment gets deleted.
