@@ -3,7 +3,7 @@ title: "Microsoft Power Platform self-service analytics export Power Platform in
 description: Export Power Apps canvas apps inventory and usage data to use with your organization's line-of-business scenarios.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 09/13/2023
 ms.subservice: admin
 author: StephenRauchPM
 ms.author: stephenrauch
@@ -23,7 +23,7 @@ With the Power Platform admin center, you can export Power Platform inventory an
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
+> - During this preview, the user experience displaying the list of established subscriptions is limited to show only first 50 subscriptions created within the tenant.
 
 Data Lake Storage is a key part of Cortana Intelligence, meaning that it works with Azure Synapse Analytics, Power BI, and Azure Data Factory for a complete cloud big-data and advanced analytics platform that helps you with everything from data preparation to doing interactive analytics on large-scale datasets. Architected from the ground up for cloud scale and performance, Data Lake Storage is a cost-effective solution to run big data workloads. With Data Lake Storage, your organization can analyze all its data in a single place with no artificial constraints. 
 
@@ -34,12 +34,9 @@ Data Lake Storage is a key part of Cortana Intelligence, meaning that it works w
 
 ## Prerequisites
 
-- To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you'll need one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
+- To access data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you'll need one a member of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
-- [Create a storage account](/azure/storage/blobs/create-data-lake-storage-account) to use with Azure Data Lake Storage Gen2. Make sure you select the same location for the data lake storage account as your Power BI tenant. To learn more about how to determine your Power BI tenant location, see [Where is my Power BI tenant located?](/power-bi/admin/service-admin-where-is-my-tenant-located). In addition, you must have *owner* or *contributor* access to the Data Lake Storage account, in addition to *owner* or *contributor* access to the Azure subscription. 
-
-  > [!NOTE]
-  > Your organization's Azure Active Directory (Azure AD) global admin must be the one who sets up the connection. This is required because your tenant has to allow the service to access the Data Lake Storage account. This is a one-time setup only, and will need to be performed by the Azure AD admin.
+- [Create a storage account](/azure/storage/blobs/create-data-lake-storage-account) to use with Azure Data Lake Storage Gen2. Make sure you select the same location for the data lake storage account as your Power BI tenant. To learn more about how to determine your Power BI tenant location, see [Where is my Power BI tenant located?](/power-bi/admin/service-admin-where-is-my-tenant-located).
 
   > [!NOTE]
   > The following Azure Data Lake Storage Gen2 configurations are supported for this preview feature:
@@ -76,13 +73,9 @@ Admins should use the Power Platform admin center to set up the data export. Bef
 
 Follow these steps to set up the data lake.
 
-1. Sign in to the Power Platform admin center as an Azure AD global admin, select **Export to Azure Data Lake**, and then select **Power Apps** or **Cloud flows**.
-
-   :::image type="content" source="media/export-data-lake-power-apps.png" alt-text="Screenshot showing Power Apps selected for export to data lake.":::
+1. Sign in to the Power Platform admin center as an Azure AD Global Admin, select **Export to Azure Data Lake**, and then select **Power Apps** or **Cloud flows**.  The Global Admin user must have specific roles described in the section First-time setup of data export below.
 
 2. Set **Enable tenant-level analytics** to **On**.
-
-   :::image type="content" source="media/enable-tenant-level-analytics-data-export.png" alt-text="Screenshot showing Enable tenant-level analytics turned on.":::
 
 3. Choose a subscription to associate with the Azure storage account.
 
@@ -100,7 +93,7 @@ Follow these steps to set up the data lake.
 Microsoft requires that the first time you set up a data export to your organization's data lake, your Azure AD global admin must be the person who sets up the connection.
 
 > [!IMPORTANT]
-> A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, a [Data Lake Storage Gen2 account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This is a one-time setup, which must be performed by your Azure AD admin. When your Azure AD admin grants access permissions to your Azure AD tenant, the process temporarily allows the Microsoft service principal account to export and write data to your Data Lake Storage Gen2 specified storage account only. The Microsoft service principal account used for this will not be granted any permissions for other operations in your Data Lake Storage account.
+> A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, a [Data Lake Storage Gen2 account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration).  A one-time connection setup must be performed by a user who is a member of your organization's Azure Active Directory (Azure AD) Global Admin built-in role [with elevated access](/azure/role-based-access-control/elevate-access-global-admin#elevate-access-for-a-global-administrator) to subscriptions. Or a Global Admin who has at least a "Contributor" Azure RBAC role on the Azure Subscription with a "User Access Administrator" and "Contributor" Azure RBAC role on the target Azure Storage account. This is required because the tenant must allow the service to access and assign specific permissions on the Data Lake Storage account.
 
 
 

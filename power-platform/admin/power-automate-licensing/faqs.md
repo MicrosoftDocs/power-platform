@@ -325,12 +325,14 @@ Dynamics 365 and Power Apps licenses include a limited set of Power Automate cap
 
 Admins have a Powershell command to see the flows that need their attention like the following:
 
+Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics 365 entities in the environment or using first party Dynamics 365 connectors like finance and operations are automatically considered as being in context of the Dynamics 365 app in the environment and are excluded from enforcement. If the environment doesn't have Dynamics 365 app installed or if a premium flow isn't using Dynamics 365 entities and is not linked to any Dynamics 365 app, you must purchase a standalone Power Automate license.
+
 | Enforcement Type | Exceptions | Admin notifications | Maker notification | Grace period | Recommended Action | Enforcement - Flow turn off |
 |--------------|-------------------|--------|----------|---------|-------|------|
 | Premium flows where flow owner left the organization | Manual flows and flows whose owners have grandfathered licenses(P1,P2) will not be enforced  | September 1, 2022 | October 1, 2022 | 14 days | Assign a Power Automate license to the flow owner or per-flow/process license to the flow | October 15, 2022 |
 |Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now)|Manual flows and flows whose owners have grandfathered licenses(P1,P2) will not be enforced  | September 1, 2022| October 1, 2022 | 14 days | Assign a Power Automate license to the flow owner or per-flow/process license to the flow | October 15, 2022 |
 |Premium flows created by flow owner with Power Apps license but the flow isn't triggered by the Power App|Power Apps licensed user flows that are triggered from the canvas apps or that use Dataverse "For a select record" trigger in model driven app are automatically considered as being in context of the Power App and are excluded from enforcement|September 15, 2023| October 15, 2023|90 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Power App, [associate the flow to the app](faqs.md#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps).| Jan 15, 2024 |
-|Premium flows created by flow owner with D365 license but the flow isn't in a Dynamics environment or the flow isn't interacting with Dynamics entities|Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics entities in the environment or using First party Dynamics connectors like F&O are automatically considered as being in context of the D365 app in the environment and are excluded from enforcement.| September 15, 2023| October 15, 2023|90 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Dynamics 365 app, [associate the flow to the app](faqs.md#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps).| Jan 15, 2024 |
+|Premium flows created by flow owner with D365 license but the flow isn't in a Dynamics environment or the flow isn't interacting with Dynamics entities|Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics entities in the environment or using First party Dynamics connectors like finance and operations are automatically considered as being in context of the D365 app in the environment and are excluded from enforcement.| September 15, 2023| October 15, 2023|90 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Dynamics 365 app, [associate the flow to the app](faqs.md#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps).| Jan 15, 2024 |
 |Premium Sevice principal flows without a per flow/ Process licenses| Service principal flows in context of Dynamics 365 app are excluded from enforcement | March 15, 2024| April 15, 2024|90 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Dynamics 365 app, associate the flow to the app.| Aug 15, 2024 |
 
 > [!NOTE]
@@ -361,7 +363,9 @@ Command example with export:
 
 If the number of environments in the tenant is less than 500, use the following script to get all the flows that need licenses across the tenant:
 
+```powershell
 $environments = Get-AdminPowerAppEnvironment
+
 $allFlows = @()
 foreach ($env in $environments) {
     Write-Host "Getting flows at risk of suspension for environment $($env.DisplayName)..."
@@ -369,8 +373,10 @@ foreach ($env in $environments) {
     Write-Host "Found $($flows.Count) flows at risk of suspension."
     $allFlows += $flows
 }
+```
 
 #### Write all flows to a CSV file
+
 $allFlows | Export-Csv -Path "flows.csv" -NoTypeInformation
 
 Write-Host "All flows at risk of suspension written to flows.csv"
