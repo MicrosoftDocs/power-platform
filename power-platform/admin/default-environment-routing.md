@@ -39,7 +39,7 @@ Default environment routing is a tenant-level, admin setting that:
 
 -   Requires that the **Developer environment assignment** setting is enabled for **Everyone**.
 
-    ![The Developer environment assignment setting must be enabled for Everyone.](media/developer-environments-assignment-everyone.png)
+    :::image type="content" source="media/developer-environments-assignment-everyone.png" alt-text="The Developer environment assignment setting must be enabled for Everyone.":::
     
 -   Requires the use of Managed Environment, since all of the newly created environments will be managed. Users in a managed developer environment will require premium licenses to run Power Platform assets.
 
