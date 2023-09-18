@@ -19,6 +19,8 @@ As a prerequisite, you need access to a [provisioned developer-focused sandbox e
 
 > [!IMPORTANT]
 > The user account you'll be using for development in the sandbox environment must be assigned the System Administrator role.
+> 
+> The development machine running Microsoft Windows must have Visual Studio 2019 installed with at least the .NET desktop development workload and the Modeling SDK. This SDK can be selected under individual components in the Visual Studio installer. The development machine also must have SQL Server or SQL Server Express LocalDB installed.
 
 ## Install the Power Platform extension for Visual Studio
 
@@ -46,7 +48,7 @@ After installing the Power Platform Tools extension and connecting to the online
 > [!IMPORTANT]
 > You can configure settings using the Visual Studio setting **Tools** > **Options** > **Power Platform Tools**.
 >
-> Consider the option **Do not display Power Platform Explorer...** to speed up logon to your environment and **Download logs...** to get logs for deployment and DBSync operations.
+> Consider the option **Do not display Power Platform Explorer...** to speed up connecting to your environment and **Download logs...** to get logs for deployment and DBSync operations.
 >
 > :::image type="content" source="../media/unified-experience/D365FinOpsToolsOptions.png" alt-text="Tools options":::
 >
@@ -95,7 +97,7 @@ To configure the extension, follow these instructions.
 |---|---|
 |Name| Name of the configuration you're creating now.|
 |Description| Description of the configuration you're creating now.|
-|Cross reference database server| Set to "(localdb)\." if you're using LocalDB, or "localhost" if you're using Microsoft SQL Server.|
+|Cross reference database server| Set to "(localdb)\\." if you're using LocalDB, or "localhost" if you're using Microsoft SQL Server.|
 |Cross reference database name| The name for the cross reference database. The Visual Studio extension creates one if it doesn't exist.|
 |Application version to restore cross reference database from| Please select this. It is populated from the assets downloaded when you connected to the unified developer environment.|
 |Folder for your own custom metadata| Folder where your own code is (or will be).|
@@ -105,7 +107,7 @@ If after filling in all the fields the **Save** button is still grayed out, you'
 
 :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadataValidation.png" alt-text="Configure Metadata Validation":::
 
-Ensure that you entered the correct value(s) for fields with errors. For example, use "(localdb)\." if you're using LocalDB. 
+Ensure that you entered the correct value(s) for fields with errors. For example, use "(localdb)\\." if you're using LocalDB. 
 Also, if you're using LocalDB, you may need to first configure and test it. Consider issuing the following command from a Command prompt: `sqllocaldb create MSSQLLocalDB -s`.
 
 More information: [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
