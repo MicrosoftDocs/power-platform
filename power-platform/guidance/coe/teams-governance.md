@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2020
+ms.date: 09/05/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -16,9 +16,8 @@ search.audienceType:
 
 You can take advantage of our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new [Dataverse for Teams environments](../../admin/about-teams-environment.md) and requesting business justifications for newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is used effectively in your tenant and distributed to the most important business use cases. Similar workflows can be used to apply specific data loss prevention (DLP) policies to Dataverse for Teams environments as needed, and to invoke cleanup of unused assets to free up capacity for more compelling scenarios in the tenant.
 
->[!IMPORTANT]
->Automatically deleting inactive Dataverse for Teams environment is now part of the product - you can configure Teams environment deletion policies from the Power Platform Admin center. Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md). <br>
->As there is parity between this feature, and the functionality in the CoE Starter Kit we will remove that portion of the features below from the CoE starter kit once the native support in the product is available broadly in all clouds.
+> [!IMPORTANT]
+> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. More information: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
 
 ## Process description
 
@@ -52,9 +51,8 @@ The admin can further decide to approve a business justification, but highlight 
 
 ## Monitoring and weekly cleanup process
 
->[!NOTE]
->You can now configure environment policies in Power Platform Admin Center to delete inactive Dataverse for Teams environments. As this feature is now available in Power Platform Admin Center, we will deprecate inactivity based deletion in the CoE Starter Kit effective November 2022.<br>
->Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](/power-platform/admin/inactive-teams-environment)
+> [!NOTE]
+> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. More information: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md)
 
 Admins can also monitor inactive Microsoft Teams environments in their tenant and invoke cleanup as appropriate, in addition to having automated cleanup of unused environments in place to free up capacity for more compelling scenarios.
 
