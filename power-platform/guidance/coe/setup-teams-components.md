@@ -28,7 +28,6 @@ This set of functionality allows you to monitor new Dataverse for Teams environm
 
 > [!NOTE]
 > Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. More information: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
-> As there is parity between this feature, and the functionality in the CoE Starter Kit we will remove that portion of the features below from the CoE starter kit once the native support in the product is available broadly in all clouds.
 
 ## Set up the Dataverse for Teams environment management components using the Setup Wizard
 
