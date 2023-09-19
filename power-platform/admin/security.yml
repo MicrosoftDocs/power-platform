@@ -32,7 +32,9 @@ landingContent:
           - text: Connecting and authenticating to data sources
             url: ./security/connect-data-sources.md 
           - text: Security and governance considerations
-            url: governance-considerations.md           
+            url: governance-considerations.md
+          - text: Default environment routing
+            url: default-environment-routing.md
 
   # Card
   - title: Configure environment security
