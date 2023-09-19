@@ -521,7 +521,7 @@ The following table offers a simple comparison between features of Managed Envir
 | **CMK** | No | |
 | **Lockbox** | No | |
 
-#Conclusion
+## Conclusion
 
 In summary, Managed Environments in Power Platform offer a powerful suite of tools for organizations looking to streamline their development processes while ensuring compliance with internal policies and best practices. With features like Pipelines, DLP, and governance at scale through Maker Welcome and Solution checker, organizations can accelerate their professional development while protecting sensitive data and ensuring healthy solutions in the environment. Additionally, the platform offers robust data privacy and security measures through the Customer Managed Key feature and Microsoft's Lockbox feature, as well as extended backup capabilities for continuous availability of service.
 
