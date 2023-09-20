@@ -50,7 +50,7 @@ Power Apps can also send push notifications using an entirely different mechanis
 Note: This function was previously named **ShowError** when it could only display error messages.
 
 >[!NOTE]
-> Notify can be used in [standalone canvas app](https://learn.microsoft.com/power-apps/maker/canvas-apps/working-with-formulas), [custom page](https://learn.microsoft.com/power-apps/maker/model-driven-apps/page-powerfx-in-model-app) and [Power Fx commanding](https://learn.microsoft.com/power-apps/maker/model-driven-apps/commanding-use-powerfx) experiences. The default values for  NotificationType and Timeout vary by the experience its used in. You can specify the values you want set for NotificationType and Timeout by explicitly setting them in your Power Fx expression and these values will be respected regardless of the experience. 
+> Notify can be used in [standalone canvas app](/power-apps/maker/canvas-apps/working-with-formulas), [custom page](power-apps/maker/model-driven-apps/page-powerfx-in-model-app) and [Power Fx commanding](/power-apps/maker/model-driven-apps/commanding-use-powerfx) experiences. The default values for NotificationType and Timeout vary by the experience its used in. You can specify the values you want set for NotificationType and Timeout by explicitly setting them in your Power Fx expression and these values will be respected regardless of the experience. 
 
 
 ## Syntax
