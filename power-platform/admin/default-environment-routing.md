@@ -3,7 +3,7 @@ title: Default environment routing (preview)
 description: Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/18/2023
+ms.date: 09/20/2023
 author: hasharaf 
 ms.author: hasharaf 
 ms.reviewer: sericks
@@ -180,5 +180,5 @@ During the preview, the default environment routing is limited to Power Apps onl
 Yes, you need to have a Power Platform tenant admin privilege to enable this feature in your tenant, or you can ask your tenant admin to turn it on for you.
 
 ### Does creating an app or flow in a managed developer environment require a premium license?
-A premium license is not required for the creation or preview of an app or a flow in a managed developer environment. However, a user or maker will need a premium license in order to **run** an app or flow in a managed developer environment.
+A premium license isn't required for the creation or preview of an app or flow in a managed, developer environment. However, a user or maker needs a premium license to *run* an app or flow in a managed, developer environment.
 
