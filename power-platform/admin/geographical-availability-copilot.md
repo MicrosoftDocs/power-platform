@@ -88,7 +88,7 @@ The following table lists all copilot and generative AI features available in Po
 | Product | Feature  | Documentation
 |-------------------------|-------------------------|-------------------------|
 | Microsoft Dataverse | Excel to table for new makers | [Upload an Excel file (preview)](/power-apps/maker/data-platform/create-edit-entities-portal#upload-an-excel-file-preview) |
-| Power Automate | Power Automate designer copilot | [Understand AI-powered cloud flows designer (preview)](/power-automate/flows-designer) |
+| Power Automate | Power Automate designer copilot | [Get started with Copilot in cloud flows (preview)](/power-automate/get-started-with-copilot) |
 
 ### See also
 
