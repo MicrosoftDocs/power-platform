@@ -2,12 +2,13 @@
 title: "Create and reply to comments in bot topics"
 description: "Add new comments, reply to existing comments, and resolve or delete comments and comment threads for topics within a Power Virtual Agents chatbot."
 keywords: "PVA"
-ms.date: 11/02/2021
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: gitikag
+manager: leeclontz
 ms.custom: authoring, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -15,9 +16,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Add comments to bots (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+# Add comments to bots
 
 Comments are notes that are associated with items in your bot. Use comments to help your team collaborate on the bot and provide feedback, or provide additional information on implementation details in your bot.  
 

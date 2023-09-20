@@ -1,9 +1,9 @@
 ---
 title: "Troubleshoot common user access issues for environments"
 description: "Learn how to run and interpret diagnostics for user access to environments, including criteria for access."
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.component: pa-admin

@@ -3,10 +3,10 @@ title: Enable Managed Environments
 description: Learn how to enable Managed Environments for Power Platform in the admin center or PowerShell.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/12/2022
+ms.date: 06/14/2023
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
@@ -51,6 +51,32 @@ Use the following settings to increase visibility and control for the selected e
 | **[Data policies](managed-environment-data-policies.md)** | Help safeguard your organizational data by limiting the connectors available.|
 | See active data policies for this environment | View the policies that define the consumer connectors that specific data can be shared with. |
 
+## Enable Managed Environments using PowerShell
+
+Admins can also use PowerShell to enable Managed Environments. Below is a PowerShell script that enables it for a single environment.
+
+```powershell
+$GovernanceConfiguration = [pscustomobject] @{ 
+    protectionLevel = "Standard" 
+    settings = [pscustomobject]@{ 
+        extendedSettings = @{} 
+    }
+} 
+
+Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentID> -UpdatedGovernanceConfiguration $GovernanceConfiguration 
+```
+## Copy Managed Environment settings using PowerShell
+
+Admins can use PowerShell to copy settings from one Managed Environment to another environment. If the target environment wasn't a Managed Environment, copy settings will also enable it as a Managed Environment. 
+
+```powershell
+#Get settings from the source Managed Environment
+$sourceEnvironment = Get-AdminPowerAppEnvironment -EnvironmentName <SourceEnvironmentId>
+
+# Copy the settings from the source Managed Environment above to the target environment
+Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <TargetEnvironmentId> -UpdatedGovernanceConfiguration $sourceEnvironment.Internal.properties.governanceConfiguration
+```
+
 ## Disable Managed Environments using PowerShell
 
 Admins can use PowerShell to remove the Managed Environments property on an environment. Before disabling Managed Environments, the administrator must ensure that none of the Managed Environments capabilities are in use.
@@ -60,7 +86,7 @@ Here's an example PowerShell script that calls the API to set the Managed Enviro
 ```powershell
 $UpdatedGovernanceConfiguration = [pscustomobject]@{
     protectionLevel = "Basic"
- }
+}
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentID> -UpdatedGovernanceConfiguration $UpdatedGovernanceConfiguration
 ```
 

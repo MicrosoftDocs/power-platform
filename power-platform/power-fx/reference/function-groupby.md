@@ -86,8 +86,7 @@ ClearCollect( CityPopulations,
 3. While holding down the Alt key, select the **Original** button.
 
    You just created a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections), named **CityPopulations**, that contains this data:
-
-   You just created a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections), named **CityPopulations**, that contains this data:
+   
    ![CityPopulations example.](media/function-groupby/cities.png)
 
 4. To display this collection, select **Collections** on the **File** menu and then select the **CityPopulations** collection. The first five records in the collection appear:
@@ -109,9 +108,9 @@ ClearCollect( CityPopulations,
 
 4. To display the first five records in this collection, select **Collections** on the **File** menu.
 
-   ![Cities by country.](media/function-groupby/citiesbycountry-collection.png)
+   ![Cities by country/region.](media/function-groupby/citiesbycountry-collection.png)
 
-5. To display the populations of cities in a country, select the table icon in the **Cities** column for that country (for example, Germany):
+5. To display the populations of cities in a country/region, select the table icon in the **Cities** column for that country/region (for example, Germany):
 
    ![Population - Germany.](media/function-groupby/population-germany.png)
 
@@ -135,11 +134,11 @@ ClearCollect( CityPopulations,
 
    Which results in:
 
-   ![Cities by country after ungroup.](media/function-groupby/cities-hase.png)
+   ![Cities by country/region after ungroup.](media/function-groupby/cities-hase.png)
 
 ### Aggregate results
 
-Something else we can do with a grouped table is to aggregate the results. In this example, we will sum the population of the major cities in each country.
+Something else we can do with a grouped table is to aggregate the results. In this example, we will sum the population of the major cities in each country/region.
 
 1. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **"Sum"**.
 2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **"Sum"** button to this formula:

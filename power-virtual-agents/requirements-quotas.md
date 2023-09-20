@@ -1,20 +1,21 @@
 ---
-title: "Rate limits for chatbots"
+title: "Quotas, limits, app registration, and configuration values"
 description: "Rate limits determine how often messages can be sent to a chatbot"
-keywords: "PVA, quotas, rate limits, requests, restrictions"
-ms.date: 03/09/2022
+keywords: "PVA, quotas, rate limits, requests, restrictions, app registration"
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: quotas, admin, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Quotas, limits, and configuration values for Power Virtual Agents
+# Quotas, limits, app registration, and configuration values for Power Virtual Agents
 
-This topic contains quotas, limits, and configuration values for Power Virtual Agents.
+This topic contains quotas, limits, app registration usage, and configuration values for Power Virtual Agents.
 
 ## Quotas
 
@@ -45,7 +46,7 @@ These limits apply to the Power Virtual Agents web app and the Power Virtual Age
 | Trigger phrases | 200 per topic                          | 200 per topic                                                                                                           |
 | Skills          | 100 per bot                            | 100 per bot<sup>2</sup>                                                                                                 |
 
-<sup>1</sup> If you're approaching limits in Dataverse for Teams environments, you can [upgrade Dataverse for Teams](teams/admin-upgrade-dataverse-teams.md) to continue adding topics.
+<sup>1</sup> If you're approaching limits in Dataverse for Teams environments, you can [upgrade Dataverse for Teams](admin-upgrade-dataverse-teams.md) to continue adding topics.
 
 <sup>2</sup> You must have a [Power Virtual Agents standalone subscription](requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription) to use skills in a bot you've created in the Teams app. Skills are not available in the [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan).
 
@@ -66,7 +67,6 @@ The following table lists the services to which Power Virtual Agents connects. E
 
 Configure all [required services for Power Automate](/power-automate/ip-address-configuration#required-services), in addition to Power Virtual Agents, to use both together.
 
-<!-- best viewed/edited without wordwrap -->
 | Domains                            | Required | Protocols | Uses                                                                                                                                          |
 | ---------------------------------- | -------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | *.directline.botframework.com        | Yes      | HTTPS     | Access to Bot Framework Web Chat                                                                                                              |
@@ -77,6 +77,22 @@ Configure all [required services for Power Automate](/power-automate/ip-address-
 | bot-framework.azureedge.net        | Yes      | HTTPS     | Bot framework resources                                                                                                                       |
 | pa-guided.azureedge.net            | No       | HTTPS     | In-product guidance (recommended)                                                                                                             |
 | cci-prod-botdesigner.azureedge.net | Yes      | HTTPS     | Power Virtual Agents authoring experience                                                                                                     |
+
+## How Power Virtual Agents automatically creates app registration
+
+### What is app registration?
+
+App registration is a process that assigns a unique identifier and a secret key to a chatbot, allowing it to communicate with different channels and services. App registration is a mandatory component of Power Virtual Agents chatbots, as it enables the bot to identify itself to Omnichannel for Customer Service, in Microsoft Teams, and to authenticate with other channels. App registration also allows the bot to connect with skills.
+
+### How does Power Virtual Agents manage app registration?
+
+Power Virtual Agents simplifies the app registration process by automatically creating and managing the app registration for each chatbot. There is no action required from the customer to set up or configure the app registration. Power Virtual Agents handles the app registration behind the scenes, ensuring that the bot has the necessary credentials and permissions to interact with Omnichannel, selected channels, and skills. The customer can focus on designing and publishing the bot, without worrying about the technical details of app registration.
+
+### Is app registration secure?
+
+App registration does not pose a security issue to customers or their data. The app registration is only used to identify the bot and to enable secure communication with the channels and skills. The app registration does not grant access to any customer data or resources, nor does it expose any sensitive information about the bot. The app registration is stored and managed by Power Virtual Agents, which follows the highest standards of security and compliance. 
+
+
 
 ## IP addresses
 

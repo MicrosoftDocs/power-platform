@@ -3,10 +3,10 @@ title: "Establishing an environment strategy - Microsoft Power Platform | Micros
 description: Develop an environment strategy to securely manage resources in Power Platform environments while allowing productive development.
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 2/23/2023
+ms.date: 8/15/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
     - ProfessorKendrick
 search.audienceType: 
@@ -39,6 +39,7 @@ Before we get started, let’s look at some environment and security key facts:
 - Non-default environments offer more control around [permissions](../../admin/environments-overview.md#environment-permissions).
 - An environment can have one or zero [Microsoft Dataverse instances](../../admin/create-database.md).
 - Environments include [predefined security roles](../../admin/database-security.md) that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app.
+- [Default environment routing](../../admin/default-environment-routing.md) is a premium, governance feature. This feature allows Power Platform admins to automatically direct new makers into their own, personal developer environments when they visit make.powerapps.com for the first time. 
 
 ### Types of environments
 
@@ -99,17 +100,11 @@ Some considerations for custom environments:
 
 In addition to the above recommendations, establishing your environment strategy will also shape and direct your **[DLP strategy](dlp-strategy.md)**.
 
-| | |
-|---|---|
-| Everyone is a maker. Communicate with everyone that **Default** isn't for development of critical apps | ![Default environment.](media/env-default.png "Default environment") |
-| Only one user has access. **Developer** environments are completely locked for any other user except the user who subscribed to the community plan. Applications can be moved out of the environment if needed.| ![Developer environment.](media/env-dev.png "Default Developer") |  |
-| Approved users have access. **Shared** environments for user and team productivity scenarios, with an approved maker list. | ![Power User and Power Dev environment.](media/env-power.png "Power User and Power Dev Developer") |
-| **Dedicated** environments for critical projects and workloads. Developers have environment maker access in the development environment, but only user access in the test and production environments. End users only have end user access to the production solution so no one can modify the production applications. | ![Critical Project Development, Test and Production environments.](media/env-critical.png "Critical Project Development, Test and Production environments") |
-| **Shared** test and production environments for important but medium complex apps. Individual projects and business units have their own development environment to protect data, but solutions are deployed to shared test and production environments. Developers are end users in the test environment, and end users only have basic user access to solutions and data in the production environment. | ![Business Unit and Project Development environments, with shared test and production environments.](media/env-important.png "Business Unit and Project Development environments, with shared test and production environments") |
-
-&#9679; Critical Project<br>
-&#9679; Important Project<br>
-&#9679; User and team productivity<br>
+- Everyone is a maker. Communicate with everyone that **Default** isn't for development of critical apps. 
+- Only one user has access. **Developer** environments are completely locked for any other user except the user who subscribed to the community plan. Applications can be moved out of the environment if needed.
+- Approved users have access. **Shared** environments for user and team productivity scenarios, with an approved maker list. 
+- **Dedicated** environments for critical projects and workloads. Developers have environment maker access in the development environment, but only user access in the test and production environments. End users only have end user access to the production solution so no one can modify the production applications. 
+- **Shared** test and production environments for important but medium complex apps. Individual projects and business units have their own development environment to protect data, but solutions are deployed to shared test and production environments. Developers are end users in the test environment, and end users only have basic user access to solutions and data in the production environment.
 
 ### Additional recommendations to manage environments
 
@@ -142,7 +137,7 @@ Based on successful experience with customer engagements, here is a list of addi
   Although it’s important to make sure resources are reasonably partitioned between projects and business units using environments, it’s still important to find a good balance between security and feasibility. Managing shared test and production environments is a good way to facilitate a larger number of *important* solutions while preserving capacity and following best practices. This maintains restricted permissions because test and production have restricted environment permissions, and therefore the end users can’t modify the applications.
 - **Provision environments with Dataverse instances in the appropriate region**
   
-  In companies where employees work in multiple countries, there might be some compliance considerations in terms of where data is stored and sent between countries. If the environment has a Dataverse instance, the data is physically being stored in the region. Review the list of supported environment regions.
+  In companies where employees work in multiple countries/regions, there might be some compliance considerations in terms of where data is stored and sent between countries/regions. If the environment has a Dataverse instance, the data is physically being stored in the region. Review the list of supported environment regions.
 
 ### Factors that influence provisioning
 
@@ -154,7 +149,7 @@ Some factors influence when to provision which types of environments:
 
    Different types of applications should be separated in different environments based on how critical each is.
 
-    | | |
+    | &nbsp;  | &nbsp; |
     |:---:|---|
     | ![Critical apps.](media/env-l1.png "Critical apps") | Mission-critical scenarios and/or high-complexity and/or org-wide usage. Support owned by IT. Robust ALM process (dev/test/prod). Longer development cycle, often greater than 3 months to minimum viable product.
      | ![Important apps.](media/env-l2.png "Important apps") | Important but not critical and/or medium complexity and/or scoped to business unit. Support owned by app owner or business unit, blessed by IT. ALM-using environments are advised but might not be necessary. Development typically less than three months to Minimum Viable Product.

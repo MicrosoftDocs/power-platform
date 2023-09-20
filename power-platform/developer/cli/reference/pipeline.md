@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 9/18/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,18 +26,18 @@ Work with Pipelines
 
 |Command|Description|
 |---------|---------|
-|[pac pipeline deploy](#pac-pipeline-deploy)|Start pipeline deployment|
+|[pac pipeline deploy](#pac-pipeline-deploy)|Start pipeline deployment.|
 |[pac pipeline list](#pac-pipeline-list)|List Pipelines|
 
 
 ## pac pipeline deploy
 
-Start pipeline deployment
+Start pipeline deployment.
 
 [!INCLUDE [pipeline-deploy-intro](includes/pipeline-deploy-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for pipeline deploy
 
 #### `--currentVersion` `-cv`
 
@@ -57,16 +57,16 @@ Solution Name
 
 #### `--stageId` `-sid`
 
-Deployment Stage Id
+Deployment Stage ID
 
 
-### Optional Parameters
+### Optional Parameters for pipeline deploy
 
 #### `--wait` `-w`
 
-Wait until deployment finishes
+Wait until the deployment finishes.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [pipeline-deploy-remarks](includes/pipeline-deploy-remarks.md)]
 
@@ -77,11 +77,11 @@ List Pipelines
 [!INCLUDE [pipeline-list-intro](includes/pipeline-list-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for pipeline list
 
 #### `--pipeline` `-p`
 
-Pipeline name or id for which show list of details such as deployment stages
+Pipeline name or ID for which show list of details such as deployment stages
 
 [!INCLUDE [pipeline-list-remarks](includes/pipeline-list-remarks.md)]
 

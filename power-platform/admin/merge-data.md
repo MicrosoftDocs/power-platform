@@ -1,13 +1,13 @@
 ---
 title: "Merge data | MicrosoftDocs"
 description: Merge data
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

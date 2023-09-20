@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 9/18/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -48,11 +48,11 @@ Create and store authentication profiles on this computer
 [!INCLUDE [auth-create-intro](includes/auth-create-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for auth create
 
 #### `--applicationId` `-id`
 
-Optional: The application id to authenticate with
+Optional: The application ID to authenticate with.
 
 #### `--certificateDiskPath` `-cdp`
 
@@ -76,30 +76,30 @@ Use one of these values:
 - `UsGov`
 - `UsGovHigh`
 - `UsGovDod`
-- `Mooncake`
+- `China`
 
 #### `--deviceCode` `-dc`
 
-Use the AAD DeviceCode flow for interactive login.
+Use the Microsoft Entra ID Device Code flow for interactive sign-in.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--environment` `-env`
 
-Default environment (id, url, unique name or partial name)
+Default environment (ID, url, unique name, or partial name).
 
 #### `--kind` `-k`
 
-**Deprecated**: This parameter will be ignored.
+**Deprecated**: This parameter is ignored.
 #### `--managedIdentity` `-mi`
 
 Use Azure Managed Identity.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--name` `-n`
 
-The name you want to give to this authentication profile (maximum 30 characters)
+The name you want to give to this authentication profile (maximum 30 characters).
 
 **Note**: The length of the name should be between 1 and 30
 
@@ -109,7 +109,7 @@ Optional: The password to authenticate with
 
 #### `--tenant` `-t`
 
-Tenant id if using application id/client secret or application id/client certificate.
+Tenant ID if using application ID/client secret or application ID/client certificate.
 
 #### `--url` `-u`
 
@@ -117,7 +117,7 @@ The resource URL to connect to
 
 #### `--username` `-un`
 
-Optional: The username to authenticate with; shows AAD dialog if not specified
+Optional: The username to authenticate with; shows Microsoft Entra ID dialog if not specified.
 
 [!INCLUDE [auth-create-remarks](includes/auth-create-remarks.md)]
 
@@ -128,13 +128,13 @@ Delete a particular authentication profile
 [!INCLUDE [auth-delete-intro](includes/auth-delete-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for auth delete
 
 #### `--index` `-i`
 
 The index of the profile to be deleted
 
-**Note**: The value must be a positive integer
+**Note**: The value must be a positive integer.
 
 #### `--name` `-n`
 
@@ -157,17 +157,17 @@ Name or rename an existing authentication profile
 [!INCLUDE [auth-name-intro](includes/auth-name-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for auth name
 
 #### `--index` `-i`
 
 The index of the profile to be named/renamed
 
-**Note**: The value must be a positive integer
+**Note**: The value must be a positive integer.
 
 #### `--name` `-n`
 
-The name you want to give to this authentication profile (maximum 30 characters)
+The name you want to give to this authentication profile (maximum 30 characters).
 
 **Note**: The length of the name should be between 1 and 30
 
@@ -180,13 +180,13 @@ Select which authentication profile should be active
 [!INCLUDE [auth-select-intro](includes/auth-select-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for auth select
 
 #### `--index` `-i`
 
-The index of the profile to be active
+The index of the profile to be active.
 
-**Note**: The value must be a positive integer
+**Note**: The value must be a positive integer.
 
 #### `--name` `-n`
 
@@ -203,24 +203,24 @@ Update name or target environment of an existing authentication profile
 [!INCLUDE [auth-update-intro](includes/auth-update-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for auth update
 
 #### `--index` `-i`
 
 The index of the profile to be named/renamed
 
-**Note**: The value must be a positive integer
+**Note**: The value must be a positive integer.
 
 
-### Optional Parameters
+### Optional Parameters for auth update
 
 #### `--environment` `-env`
 
-Default environment (id, url, unique name or partial name)
+Default environment (ID, url, unique name, or partial name).
 
 #### `--name` `-n`
 
-The name you want to give to this authentication profile (maximum 30 characters)
+The name you want to give to this authentication profile (maximum 30 characters).
 
 [!INCLUDE [auth-update-remarks](includes/auth-update-remarks.md)]
 

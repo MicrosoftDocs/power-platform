@@ -1,0 +1,33 @@
+- name: Power Platform
+  items:
+    - name: Microsoft Power Platform documentation
+      items:
+        - name: Microsoft Power Platform documentation
+          href: index.yml
+        - name: Admin documentation
+          href: admin/index.yml
+        - name: Application lifecycle management (ALM) documentation
+          href: alm/index.yml
+        - name: Developer documentation
+          href: developer/index.yml
+        - name: Guidance documentation
+          href: guidance/index.yml
+          displayName: CoE adoption guidance best practices
+        - name: Solution templates
+          href: solution-templates/overview.md
+        - name: International availability
+          href: availability.md
+        - name: Enable copilots and generative AI features outside United States and Switzerland
+          href: admin/geographical-availability-copilot.md
+        - name: Important changes (deprecations) coming
+          href: important-changes-coming.md
+        - name: Responsible AI
+          items:
+            - name: Overview
+              href: responsible-ai-overview.md
+            - name: FAQ for Copilot data security and privacy
+              href: faqs-copilot-data-security-privacy.md
+            - name: FAQ for optional data sharing for Copilot
+              href: faqs-copilot-data-sharing.md
+            - name: FAQ for using Copilot to generate deployment notes in pipelines
+              href: alm/faqs-ai-deployment-notes-pipelines.md

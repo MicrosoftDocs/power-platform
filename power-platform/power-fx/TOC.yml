@@ -20,9 +20,9 @@
           href: error-handling.md
         - name: Global apps
           href: global.md
-        - name: Untyped objects (experimental)
+        - name: Untyped objects
           href: untyped-object.md
-        - name: Working with JSON (experimental)
+        - name: Working with JSON
           href: working-with-json.md
         - name: Formula reference
           items:
@@ -264,7 +264,7 @@
             href: reference/function-param.md
           - name: Parent
             href: reference/operators.md#self-and-parent-operators
-          - name: ParseJSON (experimental)
+          - name: ParseJSON
             href: reference/function-parsejson.md
           - name: Patch
             href: reference/function-patch.md
@@ -330,6 +330,8 @@
             href: reference/function-select.md
           - name: Self
             href: reference/operators.md#self-and-parent-operators
+          - name: SendAppNotification (preview)
+            href: reference/function-send-app-notification.md
           - name: Set
             href: reference/function-set.md
           - name: SetFocus
@@ -389,7 +391,7 @@
           - name: TrimEnds
             href: reference/function-trim.md
           - name: Trunc
-            href: reference/function-round.md    
+            href: reference/function-round.md 
           - name: Ungroup
             href: reference/function-groupby.md
           - name: Unrelate

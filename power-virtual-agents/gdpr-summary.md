@@ -1,22 +1,18 @@
 ---
 title: "Overview of GDPR compliance"
 description: "Review GDPR compliance information Power Virtual Agents."
-ms.date: 9/22/2020
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # GDPR compliance for Power Virtual Agents
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](gdpr-summary.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/gdpr-summary-teams.md)
 
 The EU Data Protection Regulation (GDPR) gives rights to people (known in the regulation as _data subjects_) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the _data controller_ or just _controller_). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called in this document a _Data Subject Rights Request_ or DSR request.
 

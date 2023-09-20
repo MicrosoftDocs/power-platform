@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 9/18/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -37,11 +37,11 @@ Initializes a directory with a new Dataverse plug-in class library.
 [!INCLUDE [plugin-init-intro](includes/plugin-init-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for plugin init
 
 #### `--author` `-a`
 
-Author(s) of the Dataverse Plug-in Package.
+One or more authors of the Dataverse Plug-in Package.
 
 #### `--outputDirectory` `-o`
 
@@ -53,9 +53,9 @@ Relative path to the Dataverse plug-in assembly originator key file for signing.
 
 #### `--skip-signing` `-ss`
 
-Skip plug-in assembly signing which gives plug-in assembly strong name. Default value is 'false'
+Skip plug-in assembly signing that gives the plug-in assembly a strong name. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [plugin-init-remarks](includes/plugin-init-remarks.md)]
 
@@ -66,18 +66,18 @@ Import plug-in into Dataverse.
 [!INCLUDE [plugin-push-intro](includes/plugin-push-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for plugin push
 
 #### `--pluginId` `-id`
 
-Id of plug-in assembly or plug-in package
+ID of plug-in assembly or plug-in package
 
 
-### Optional Parameters
+### Optional Parameters for plugin push
 
 #### `--configuration` `-c`
 
-Build configuration. Default: Debug
+Build configuration. The default value is: 'Debug'.
 
 #### `--pluginFile` `-pf`
 
@@ -85,7 +85,7 @@ File name of plug-in assembly or plug-in package
 
 #### `--type` `-t`
 
-Type of item if not specified explicitly through --pluginFile. Default: Nuget
+Type of item if not specified explicitly through --pluginFile. The default value is: 'Nuget'.
 
 Use one of these values:
 

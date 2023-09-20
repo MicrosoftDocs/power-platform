@@ -109,7 +109,7 @@ ExpressRoute.
 ![Traffic from the customer's branch is connected to the customer's datacenter through a WAN.](media/routed-via-wan.png)
 
 Where a customer has a highly distributed network of users, such as a branch
-network of offices distributed around a country, the network traffic needs
+network of offices distributed around a country/region, the network traffic needs
 to be connected efficiently from multiple, highly geographically distributed
 locations. The typical pattern for this is to route things through
 the WAN to the local network connected to ExpressRoute, as shown in the following image.
@@ -158,7 +158,7 @@ user. In this case, it's important to ensure that unique public IPs are publishe
 via each ExpressRoute circuit; each of these subnets must be distinct, which
 requires that you have as many publicly facing subnets as ExpressRoute connections.
 
-![A separate ExpressRoute circuit is used for each country.](media/two-separate-expressroute-circuit.png)
+![A separate ExpressRoute circuit is used for each country/region.](media/two-separate-expressroute-circuit.png)
 
 This is particularly beneficial if different operational areas are located in vastly
 different geographic areas, or if the network connectivity between the areas is
