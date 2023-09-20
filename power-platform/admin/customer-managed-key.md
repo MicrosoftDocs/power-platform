@@ -50,6 +50,8 @@ Currently, all your customer data stored *only* in the following apps and servic
 
 <sup>1</sup> When you apply the customer managed key to an environment that has existing Power Automate flows, the flows data continues to be encrypted with Microsoft-managed key. More information: [Power Automate customer manged key](/power-automate/customer-managed-keys).
 
+[Power Apps](https://learn.microsoft.com/power-apps/powerapps-overview) and [Power Virtual Agent](https://learn.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents) store its data in their own storage and in [Microsoft Dataverse](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-intro). When you apply the customer managed key to these environments, only the data stores in **Microsoft Dataverse** is encrypted with your key. The non-Microsoft Dataverse data continues to be encrypted with the Microsoft managed key.
+
 > [!NOTE]
 >
 > The connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
