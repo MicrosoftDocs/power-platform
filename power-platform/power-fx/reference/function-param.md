@@ -110,7 +110,7 @@ The **Param** function retrieves a parameter passed to the app when it was launc
 - Even if the parameter contains a number, the type returned by **Param** will always be a text string. Conversion to other types will automatically occur or use explicit conversions such as the [**Value**](function-value.md) function to convert explicitly to a number.
 
 >[!NOTE]
-> For [custom pages](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-page-to-model-app), the only parameters accepted by the page are: recordId and entityName.
+> For [custom pages](/power-apps/maker/model-driven-apps/add-page-to-model-app), the only parameters accepted by the page are: recordId and entityName.
 
 ## Syntax
 
