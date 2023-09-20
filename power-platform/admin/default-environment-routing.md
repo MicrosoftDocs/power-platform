@@ -177,5 +177,8 @@ During the preview, the default environment routing is limited to Power Apps onl
 
 ### Do I need to be a Power Platform tenant admin to enable this feature?
 
-Yes, you need to have a Power Platform tenant admin privilege to enable this feature in your tenant or you can ask your tenant admin to turn it on for you.
+Yes, you need to have a Power Platform tenant admin privilege to enable this feature in your tenant, or you can ask your tenant admin to turn it on for you.
+
+### Does creating an app or flow in a managed developer environment require a premium license?
+A premium license is not required for the creation or preview of an app or a flow in a managed developer environment. However, a user or maker will need a premium license in order to **run** an app or flow in a managed developer environment.
 
