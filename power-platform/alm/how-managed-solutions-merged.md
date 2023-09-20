@@ -64,7 +64,17 @@ When the Conflicts Tab appears on an imported form, you can move the component d
  Each new option set option is initialized with an integer value assigned that includes an option value prefix. The option value prefix is a set of five digits prepended to the option value. An option value prefix is generated based on the solution publisher's customization prefix, but can be set to any value. The option value prefix helps differentiate new option set options created in the context of a specific solution publisher and reduces the opportunity for collisions of option values. Using the option value prefix is recommended but not required.  
   
  A managed solution usually updates or adds options for option sets that are already in the environment, for example, the Category or Industry option sets for an account. When a managed solution modifies the options available in an option set, all the options defined in the managed solution are available in the environment. When the managed solution is uninstalled, the options in the option set will be returned to their original state.  
-  
+
+## Merge security role privileges
+ When a security role is imported from a managed solution into an environment, all the manually added privileges of that security role will be removed. However, the modified privileges of the security role where the privilege level was changed, for example from Basic to Global or vice versa will remain.
+
+ > [!Recommendation]
+> Use the same custom Solution to manage updating security roles. If you use a new custom solution to update a security role that was previously updated in another solution, some of the privilege updates will not be applied.
+>
+> Do not use a custom Solution to modify [predefined security roles](https://learn.microsoft.com/power-platform/admin/database-security#predefined-security-roles). These updates will be removed when the **predefined roles** are updated by the system. Create a copy of the **predefined role** and manage the copied role in your custom Solution.
+>
+
+
 ### See also  
 
 [Use a solution to customize](use-solutions-for-your-customizations.md)
