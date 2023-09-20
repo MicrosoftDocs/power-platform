@@ -29,7 +29,7 @@ More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
 The data source for the SAP Procurement solutions is your SAP system. Storing your system's SAP connection information in the solutions ensures that the SAP system connection information can be easily re-established when the solutions are migrated to different environments.
 
-At the time of solution import, you are prompted to create a new connection or map existing connections that are already set up by performing the actions here.
+When you import the solutions, you'll be prompted to create new connections or map existing connections.
 
 ## Set up and manage connections
 
@@ -53,18 +53,18 @@ To set up [connections](/connectors/connectors):
 > [!IMPORTANT]
 > Successful setup of the SAP ERP connector is dependent on specific [requirements](requirements.md):
 >
-> 1. On-premises data gateway
-> 1. Microsoft C++ Runtime DLL Version 10.x
-> 1. SAP .NET Connector 3.0 SDK from SAP
+> - On-premises data gateway
+> - Microsoft C++ Runtime DLL Version 10.x
+> - SAP .NET Connector 3.0 SDK from SAP
 
 ## Manage connection references
 
 A _connection reference_ is a solution component that contains a reference to a connection about a specific connector.
 
-All required connections are referenced by _Connection References_ in the SAP procurement solution template cloud flows. Connection references provide a way to set connections on cloud flow action steps when migrating solutions across environments without modifying the flow and creating an unnecessary solution layer.
+All required connections are referenced by _Connection References_ in the SAP Procurement solution template cloud flows. Connection references provide a way to set connections on cloud flow action steps when migrating solutions across environments without modifying the flow and creating an unnecessary solution layer.
 
 > [!NOTE]
-> It is a best practice to always use connection references in both cloud flows and apps to support your ALM strategy.
+> It's a best practice to always use connection references in both cloud flows and apps to support your ALM strategy.
 > Connection references are automatically created and set during the solution [install](install.md) process.
 
 To update the connection references originally set during the install solution process:
@@ -73,12 +73,12 @@ To update the connection references originally set during the install solution p
 1. Select the **SAP Procurement** solution.
 1. Select **Connection references**.
 1. Double select each of the _connection references_ and choose each **Connection** that you created.
-1. Select **Save**
+1. Select **Save**.
 
-The two connection references contained in the solution are:
+The two connection references contained in the SAP Procurement solution are:
 
-- **SAP Dataverse** A placeholder for Dataverse connection
-- **SAP ERP**  A placeholder for SAP ERP connection
+- **SAP Dataverse**: A placeholder for Dataverse connection.
+- **SAP ERP**: A placeholder for SAP ERP connection.
 
 More information: [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference)
 

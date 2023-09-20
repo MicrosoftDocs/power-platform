@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/10/2023
+ms.date: 08/22/2023
 search.audienceType: 
   - admin
 ---
@@ -18,6 +18,10 @@ search.audienceType:
 <!-- legacy procedure -->
 
 A team template can be used for the entities that are enabled for automatically created access teams. In the team template, you have to specify the entity type and the access rights on the entity record. For example, you can create a team template for an account entity and specify the Read, Write, and Share access rights on the account record that the team members are granted when the team is automatically created. After you create a team template, you have to customize the entity main form to include the new team template. After you publish customizations, the access team template is added in all record forms for the specified entity in a form of a list. For example, you created a team template called “Sales team” for the account entity. On all account record forms you’ll see the list called “Sales team”. You can add or remove team members using this list.  
+
+To learn more about creating, using, and adding access teams to a solution, watch the following video.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18Hte] 
+
     
 ## Enable an entity for access teams  
 
@@ -106,10 +110,18 @@ You can add your team template as a component to a [solution](/power-apps/maker/
 1. Select the table where the Team template was added. Select **Next**.
 1. Select the **Include table metadata** option.
 1. Select **Add**.
-1. [Publish your customizations](/power-apps/maker/data-platform/create-solution#publish-changes).
 
 > [!NOTE]
 > For custom tables, you will need to select the **Include all objects** option.
+
+   Add the form where the Team template was added.
+
+1. Double-click the table where the updated form resides.
+1. Click the **Forms** link under the **Data experiences** section.
+1. Click the **Add existing form** option on the Action bar.
+1. Select the form where the Team template was added.
+1. Click **Add**.
+1. [Publish your customizations](/power-apps/maker/data-platform/create-solution#publish-changes).
 
 ## Export your team template
 You can now export your team template and import it into a different environment.

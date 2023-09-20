@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 6/15/2023
+ms.date: 9/18/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -29,17 +29,21 @@ Work with your Power Platform Admin Account
 |[pac admin assign-group](#pac-admin-assign-group)|Assign group to target Dataverse environment with specified security role.|
 |[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target Dataverse environment with specified security role.|
 |[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
-|[pac admin copy](#pac-admin-copy)|Copy Source Environment to Destination Environment|
-|[pac admin create](#pac-admin-create)|Creates a Dataverse database in your tenant.|
-|[pac admin create-service-principal](#pac-admin-create-service-principal)|Add AAD Application and SPN to Dynamics365 AAD and configure Dynamics365 to accept the SPN as tenant admin user.|
-|[pac admin delete](#pac-admin-delete)|Deletes Environment from your tenant|
-|[pac admin list](#pac-admin-list)|List all environments from your tenant|
-|[pac admin list-app-templates](#pac-admin-list-app-templates)|Lists all supported Dataverse database templates of model-driven apps in Dynamics 365.|
+|[pac admin copy](#pac-admin-copy)|Copy Source Environment to Destination Environment.|
+|[pac admin create](#pac-admin-create)|Creates a Dataverse instance in your tenant.|
+|[pac admin create-service-principal](#pac-admin-create-service-principal)|Add Microsoft Entra ID application and associated application user to the Dataverse environment.|
+|[pac admin delete](#pac-admin-delete)|Deletes the environment from your tenant.|
+|[pac admin list](#pac-admin-list)|List all environments from your tenant.|
+|[pac admin list-app-templates](#pac-admin-list-app-templates)|Lists all supported Dataverse templates of model-driven apps in Dynamics 365.|
 |[pac admin list-backups](#pac-admin-list-backups)|Lists all backups of your environment.|
-|[pac admin reset](#pac-admin-reset)|Reset environment from your tenant|
+|[pac admin list-service-principal](#pac-admin-list-service-principal)|List Microsoft Entra ID applications which have access to Dataverse.|
+|[pac admin list-tenant-settings](#pac-admin-list-tenant-settings)|List tenant settings.|
+|[pac admin reset](#pac-admin-reset)|Reset the environment from your tenant.|
 |[pac admin restore](#pac-admin-restore)|Restores an environment to a given backup.|
 |[pac admin set-backup-retention-period](#pac-admin-set-backup-retention-period)|Takes a manual backup of your environment.|
-|[pac admin status](#pac-admin-status)|This command will list the status of all the operations in progress.|
+|[pac admin set-governance-config](#pac-admin-set-governance-config)|Enable, disable, and edit managed environments.|
+|[pac admin status](#pac-admin-status)|This command lists the status of all the operations in progress.|
+|[pac admin update-tenant-settings](#pac-admin-update-tenant-settings)|Update tenant settings.|
 
 
 ## pac admin assign-group
@@ -49,7 +53,7 @@ Assign group to target Dataverse environment with specified security role.
 [!INCLUDE [admin-assign-group-intro](includes/admin-assign-group-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for admin assign-group
 
 #### `--environment` `-env`
 
@@ -57,11 +61,11 @@ ID or URL of the environment to assign a user to.
 
 #### `--group` `-g`
 
-AAD object id of group to assign to target Dataverse environment.
+Microsoft Entra ID object ID of group to assign to target Dataverse environment.
 
 #### `--group-name` `-gn`
 
-Name of group/team that will be created in Dataverse.
+Name of the group or team to create in Dataverse.
 
 #### `--membership-type` `-mt`
 
@@ -90,7 +94,7 @@ Use one of these values:
 - `AadOfficeGroup`
 
 
-### Optional Parameters
+### Optional Parameters for admin assign-group
 
 #### `--business-unit` `-bu`
 
@@ -105,7 +109,7 @@ Assign a user to a target Dataverse environment with specified security role.
 [!INCLUDE [admin-assign-user-intro](includes/admin-assign-user-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for admin assign-user
 
 #### `--environment` `-env`
 
@@ -117,20 +121,20 @@ Name or ID of security role to be applied to user
 
 #### `--user` `-u`
 
-Object ID or UPN of AAD user to be assigned to the environment or Application ID if assigning an Application User.
+Object ID or user principal name (UPN) of Microsoft Entra ID user to be assigned to the environment or Application ID if assigning an Application User.
 
 
-### Optional Parameters
+### Optional Parameters for admin assign-user
 
 #### `--application-user` `-au`
 
-Specifies whether the input user is an application user. If business unit is not specified the application user will be added to the authenticated users business unit.
+Specifies whether the input user is an application user. If a business unit isn't specified, the application user is added to the authenticated users business unit.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--async` `-a`
 
-**Deprecated**: This parameter will be ignored.
+**Deprecated**: This parameter is ignored.
 #### `--business-unit` `-bu`
 
 ID of business unit to associate application user with.
@@ -144,79 +148,61 @@ Takes a manual backup of your environment.
 [!INCLUDE [admin-backup-intro](includes/admin-backup-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for admin backup
 
 #### `--label` `-l`
 
 Sets the backup label as provided.
 
 
-### Optional Parameters
+### Optional Parameters for admin backup
 
 #### `--environment` `-env`
 
 Environment URL or ID of the Environment that requires backup.
 
-#### `--environment-id` `-id`
-
-**Deprecated**: Use `--environment` instead.
 #### `--notes` `-n`
 
-**Deprecated**: This parameter will be ignored.
-#### `--url` `-u`
-
-**Deprecated**: Use `--environment` instead.
+**Deprecated**: This parameter is ignored.
 [!INCLUDE [admin-backup-remarks](includes/admin-backup-remarks.md)]
 
 ## pac admin copy
 
-Copy Source Environment to Destination Environment
+Copy Source Environment to Destination Environment.
 
 [!INCLUDE [admin-copy-intro](includes/admin-copy-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for admin copy
 
 #### `--async` `-a`
 
 Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 #### `--name` `-n`
 
-Name of the target environment
+Name of the target environment.
 
 #### `--skip-audit-data` `-sa`
 
 Switch indicating whether audit data should be skipped
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--source-env` `-se`
 
 Environment URL or ID of the source environment that is being copied
 
-#### `--source-id` `-si`
-
-**Deprecated**: Use `--source-env` instead.
-#### `--source-url` `-su`
-
-**Deprecated**: Use `--source-env` instead.
 #### `--target-env` `-te`
 
-Environment URL or ID of the target environment
+Environment URL or ID of the target environment.
 
-#### `--target-id` `-ti`
-
-**Deprecated**: Use `--target-env` instead.
-#### `--target-url` `-tu`
-
-**Deprecated**: Use `--target-env` instead.
 #### `--type` `-t`
 
 
@@ -230,12 +216,12 @@ Use one of these values:
 
 ## pac admin create
 
-Creates a Dataverse database in your tenant.
+Creates a Dataverse instance in your tenant.
 
 [!INCLUDE [admin-create-intro](includes/admin-create-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for admin create
 
 #### `--type` `-t`
 
@@ -251,13 +237,13 @@ Use one of these values:
 - `SubscriptionBasedTrial`
 
 
-### Optional Parameters
+### Optional Parameters for admin create
 
 #### `--async` `-a`
 
 Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--currency` `-c`
 
@@ -265,13 +251,13 @@ Sets the currency used for your environment. [defaults to USD]
 
 #### `--domain` `-d`
 
-The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.
+The domain name is part of the environment URL. If domain name is already in use, a numeric value is appended to the domain name. For example: If 'contoso' is already in use, then the environment URL is updated to https://{contoso}0.crm.dynamics.com.
 
-**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '-' are allowed. The first and last character cannot be the '-' character. Consecutive '-' characters are not allowed.
+**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '-' are allowed. The first and last character can't be the '-' character. Consecutive '-' characters aren't allowed.
 
 #### `--input-file` `-if`
 
-The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.
+The verb arguments to be passed in a .json input file. For example: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.
 
 #### `--language` `-l`
 
@@ -279,7 +265,7 @@ Sets the language used for your environment. [defaults to English]
 
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 #### `--name` `-n`
 
@@ -291,80 +277,88 @@ Sets the environment's region name. [defaults to unitedstates]
 
 #### `--team-id` `-tid`
 
-Team Id as Guid
+Team ID as Guid
 
 **Note**: The Team Id must be a valid Guid.
 
 #### `--templates` `-tm`
 
-Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"
+Sets the Dynamics 365 app that needs to be deployed, passed as comma separated values. For example: -tm "D365_Sample, D365_Sales"
 
 [!INCLUDE [admin-create-remarks](includes/admin-create-remarks.md)]
 
 ## pac admin create-service-principal
 
-Add AAD Application and SPN to Dynamics365 AAD and configure Dynamics365 to accept the SPN as tenant admin user.
+Add Microsoft Entra ID application and associated application user to the Dataverse environment.
+
+[!INCLUDE [admin-create-service-principal-intro](includes/admin-create-service-principal-intro.md)]
+
+
+### Optional Parameters for admin create-service-principal
+
+#### `--environment` `-env`
+
+Environment (ID, org ID, url, unique name, or partial name).
+
+#### `--name` `-n`
+
+Application name to create in Entra ID.
+
+#### `--role` `-r`
+
+Name or ID of security role to be applied to application user. The default value is: 'System Administrator'.
 
 [!INCLUDE [admin-create-service-principal-remarks](includes/admin-create-service-principal-remarks.md)]
 
 ## pac admin delete
 
-Deletes Environment from your tenant
+Deletes the environment from your tenant.
 
 [!INCLUDE [admin-delete-intro](includes/admin-delete-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for admin delete
 
 #### `--async` `-a`
 
 Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--environment` `-env`
 
 Environment URL or ID of the Environment that needs to be deleted from your tenant.
 
-#### `--environment-id` `-id`
-
-**Deprecated**: Use `--environment` instead.
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
-#### `--url` `-u`
-
-**Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-delete-remarks](includes/admin-delete-remarks.md)]
 
 ## pac admin list
 
-List all environments from your tenant
+List all environments from your tenant.
 
 [!INCLUDE [admin-list-intro](includes/admin-list-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for admin list
 
 #### `--application` `-a`
 
-List all environments that have specified application installed. To specify application, use unique name or id.
+List all environments that have specified application installed. To specify application, use unique name or ID.
 
 #### `--environment` `-env`
 
-List all environments that contain given string in their name or id.
+List all environments that contain given string in their name or ID.
 
-#### `--environment-id` `-id`
-
-**Deprecated**: Use `--environment` instead.
 #### `--name` `-n`
 
 List all environments that contain given string in their name.
 
 #### `--organization-id` `-oi`
 
-List all environments that contain given string in their organization id.
+List all environments that contain given string in their organization ID.
 
 #### `--type` `-t`
 
@@ -379,19 +373,16 @@ Use one of these values:
 - `Teams`
 - `SubscriptionBasedTrial`
 
-#### `--url` `-u`
-
-**Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-list-remarks](includes/admin-list-remarks.md)]
 
 ## pac admin list-app-templates
 
-Lists all supported Dataverse database templates of model-driven apps in Dynamics 365.
+Lists all supported Dataverse templates of model-driven apps in Dynamics 365.
 
 [!INCLUDE [admin-list-app-templates-intro](includes/admin-list-app-templates-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for admin list-app-templates
 
 #### `--region` `-r`
 
@@ -406,34 +397,62 @@ Lists all backups of your environment.
 [!INCLUDE [admin-list-backups-intro](includes/admin-list-backups-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for admin list-backups
 
 #### `--environment` `-env`
 
-List all environments that contains given string in their Environment ID or URL.
+List all environments that contain a given string in their Environment ID or URL.
 
-#### `--environment-id` `-id`
-
-**Deprecated**: Use `--environment` instead.
-#### `--url` `-u`
-
-**Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-list-backups-remarks](includes/admin-list-backups-remarks.md)]
+
+## pac admin list-service-principal
+
+List Microsoft Entra ID applications which have access to Dataverse.
+
+[!INCLUDE [admin-list-service-principal-intro](includes/admin-list-service-principal-intro.md)]
+
+
+### Optional Parameters for admin list-service-principal
+
+#### `--filter` `-f`
+
+Application name 'starts with' filter.
+
+#### `--max` `-m`
+
+Max number of applications to show. Default: 20
+
+[!INCLUDE [admin-list-service-principal-remarks](includes/admin-list-service-principal-remarks.md)]
+
+## pac admin list-tenant-settings
+
+List tenant settings.
+
+[!INCLUDE [admin-list-tenant-settings-intro](includes/admin-list-tenant-settings-intro.md)]
+
+
+### Optional Parameters for admin list-tenant-settings
+
+#### `--settings-file` `-s`
+
+The .json file to output tenant settings.
+
+[!INCLUDE [admin-list-tenant-settings-remarks](includes/admin-list-tenant-settings-remarks.md)]
 
 ## pac admin reset
 
-Reset environment from your tenant
+Reset the environment from your tenant.
 
 [!INCLUDE [admin-reset-intro](includes/admin-reset-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for admin reset
 
 #### `--async` `-a`
 
 Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--currency` `-c`
 
@@ -441,18 +460,15 @@ Sets the currency used for your environment. [defaults to USD]
 
 #### `--domain` `-d`
 
-The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.
+The domain name is part of the environment URL. If domain name is already in use, a numeric value is appended to the domain name. For example: If 'contoso' is already in use, then the environment URL is updated to https://{contoso}0.crm.dynamics.com.
 
 #### `--environment` `-env`
 
 URL or ID of the Environment that needs to be reset.
 
-#### `--environment-id` `-id`
-
-**Deprecated**: Use `--environment` instead.
 #### `--input-file` `-if`
 
-The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.
+The verb arguments to be passed in a .json input file. For example: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.
 
 #### `--language` `-l`
 
@@ -460,7 +476,7 @@ Sets the language used for your environment. [defaults to English]
 
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 #### `--name` `-n`
 
@@ -472,11 +488,8 @@ Sets the description used to associate the environment with a specific intent.
 
 #### `--templates` `-tm`
 
-Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"
+Sets the Dynamics 365 app that needs to be deployed, passed as comma separated values. For example: -tm "D365_Sample, D365_Sales"
 
-#### `--url` `-u`
-
-**Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-reset-remarks](includes/admin-reset-remarks.md)]
 
 ## pac admin restore
@@ -486,24 +499,24 @@ Restores an environment to a given backup.
 [!INCLUDE [admin-restore-intro](includes/admin-restore-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for admin restore
 
 #### `--selected-backup` `-sb`
 
 DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'.
 
 
-### Optional Parameters
+### Optional Parameters for admin restore
 
 #### `--async` `-a`
 
 Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 #### `--name` `-n`
 
@@ -513,28 +526,16 @@ Optional name of the restored environment.
 
 Switch indicating whether audit data should be skipped
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--source-env` `-se`
 
 Environment URL or ID of the source environment required for restore.
 
-#### `--source-id` `-si`
-
-**Deprecated**: Use `--source-env` instead.
-#### `--source-url` `-su`
-
-**Deprecated**: Use `--source-env` instead.
 #### `--target-env` `-te`
 
 Environment URL or ID of the target environment required for restore. This would default to source URL/ID if not provided.
 
-#### `--target-id` `-ti`
-
-**Deprecated**: Use `--target-env` instead.
-#### `--target-url` `-tu`
-
-**Deprecated**: Use `--target-env` instead.
 [!INCLUDE [admin-restore-remarks](includes/admin-restore-remarks.md)]
 
 ## pac admin set-backup-retention-period
@@ -544,42 +545,114 @@ Takes a manual backup of your environment.
 [!INCLUDE [admin-set-backup-retention-period-intro](includes/admin-set-backup-retention-period-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for admin set-backup-retention-period
 
 #### `--backup-retention-period` `-br`
 
 Sets the backup retention period in days as provided. Valid values are: 7, 14, 21, 28.
 
 
-### Optional Parameters
+### Optional Parameters for admin set-backup-retention-period
 
 #### `--async` `-a`
 
 Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--environment` `-env`
 
 Environment URL or ID of the Environment that requires backup.
 
-#### `--environment-id` `-id`
-
-**Deprecated**: Use `--environment` instead.
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
-#### `--url` `-u`
-
-**Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-set-backup-retention-period-remarks](includes/admin-set-backup-retention-period-remarks.md)]
+
+## pac admin set-governance-config
+
+Enable, disable, and edit managed environments.
+
+[!INCLUDE [admin-set-governance-config-intro](includes/admin-set-governance-config-intro.md)]
+
+
+### Required Parameters for admin set-governance-config
+
+#### `--environment` `-env`
+
+URL or ID of the environment for which managed environments need to be enabled, disabled or edited.
+
+#### `--protection-level` `-pl`
+
+Set protection level : 'Standard' to enable managed environments, 'Basic' to disable managed environments.
+
+Use one of these values:
+
+- `Basic`
+- `Standard`
+
+
+### Optional Parameters for admin set-governance-config
+
+#### `--disable-group-sharing` `-dgs`
+
+Disable group sharing.
+
+This parameter requires no value. It's a switch.
+
+#### `--exclude-analysis` `-ea`
+
+Exclude usage insights for the environment from the weekly digest email.
+
+This parameter requires no value. It's a switch.
+
+#### `--include-insights` `-ii`
+
+Include insights in the Power Platform Admin Center homepage cards.
+
+This parameter requires no value. It's a switch.
+
+#### `--limit-sharing-mode` `-lsm`
+
+Limit sharing mode.
+
+#### `--max-limit-user-sharing` `-ml`
+
+If group sharing is disabled, specify the number of people that makers can share canvas apps with.
+
+#### `--solution-checker-mode` `-scm`
+
+Solution checker validation mode.
+
+Use one of these values:
+
+- `none`
+- `warn`
+- `block`
+
+[!INCLUDE [admin-set-governance-config-remarks](includes/admin-set-governance-config-remarks.md)]
 
 ## pac admin status
 
-This command will list the status of all the operations in progress.
+This command lists the status of all the operations in progress.
 
 [!INCLUDE [admin-status-remarks](includes/admin-status-remarks.md)]
+
+## pac admin update-tenant-settings
+
+Update tenant settings.
+
+[!INCLUDE [admin-update-tenant-settings-intro](includes/admin-update-tenant-settings-intro.md)]
+
+
+### Required Parameters for admin update-tenant-settings
+
+#### `--settings-file` `-s`
+
+The .json file with tenant settings.
+
+[!INCLUDE [admin-update-tenant-settings-remarks](includes/admin-update-tenant-settings-remarks.md)]
 
 [!INCLUDE [admin-remarks](includes/admin-remarks.md)]
 
