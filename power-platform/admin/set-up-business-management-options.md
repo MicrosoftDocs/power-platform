@@ -8,7 +8,7 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType:
   - admin
-description: Set up rules to manage your business with the Business Management Options page.
+description: Learn how to optimize your business with Microsoft's Power Platform. Discover how to manage fiscal settings, create goals, and more.
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
