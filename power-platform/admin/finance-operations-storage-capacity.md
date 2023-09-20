@@ -40,7 +40,7 @@ To determine whether you have any of these licenses, sign in to the [Microsoft 3
 > The following licenses are eligible for entitlements but aren't represented in the current reporting:
 >
 > - Dynamics AX (Online) licenses
-> - China-specific licenses for Dynamics 365 finance and operations apps
+> - China-specific licenses for finance and operations apps
 > - Operations Sandbox Tier 4 and Tier 5 per-user subscription license incremental capacity  
 >
 > If you have these licenses, reach out to your account team to get a full view of your entitlement.  

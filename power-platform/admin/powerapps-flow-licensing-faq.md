@@ -1,9 +1,13 @@
 ---
 title: Power Platform licensing FAQs| Microsoft Docs
-description: FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
+description: Learn about FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: conceptual
 ms.date: 07/31/2023
 author: chrisgarty
+contributors:
+  - chrisgarty
+  - Antoine2F
+  - v-aangie
 ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
@@ -567,13 +571,10 @@ This capability isn't available yet, but is included in our roadmap.
 
 [Upgrading](about-teams-environment.md#upgrade-process) an environment from Dataverse for Teams to Dataverse enables customers to take advantage of more capacity and capabilities, such as:
 
--   Enterprise ALM, data types
-
--   Support for log and managed data lake
-
--   Rich access control, auditing
-
--   Governance and security
+- Enterprise ALM, data types
+- Support for log and managed data lake
+- Rich access control, auditing
+- Governance and security
 
 > [!Note]
 > Accessing an environment with Dataverse requires all users to have a corresponding standalone Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
@@ -591,51 +592,55 @@ Geo migration isn't supported for Dataverse for Teams environments.
 
 ## AI Builder
 
+You can find other AI Builder licensing frequently asked questions about credit management in [AI Builder licenses FAQ](https://go.microsoft.com/fwlink/?linkid=2246312).
+
 ### How is AI Builder licensed?
 
-AI Builder is a capacity add-on to paid, select Power Apps, Power Automate, and Dynamics 365 licenses. Each $500 subscription includes 1 million AI Builder service credits applied at the tenant level. To use your AI Builder capacity, an administrator has to allocate AI Builder capacity to the environment where you want to use AI Builder.
+AI Builder is licensed as an add-on to your Power Apps, Power Automate, or Dynamics 365 license. Each $500 subscription includes 1 million AI Builder service credits applied at the tenant level. To use your AI Builder capacity, an administrator has to allocate AI Builder capacity to the environment where you want to use AI Builder.
 
--   More details about licensing can be found in the Microsoft Power Apps and Power Automate Licensing Guide.
-
--   Information about how to allocate capacity in the Power Platform admin center can be found in [Capacity add-ons](capacity-add-on.md).
+- You can find more details about AI Builder licensing and Credit management in specific [AI Builder licensing documentation](/ai-builder/administer-licensing).
+- You can also download the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) (pdf).
+- You can find general information about how to allocate capacity in the Power Platform admin center in [Capacity add-ons](capacity-add-on.md).
 
 ### How is AI Builder capacity enforced?
 
-The AI Builder capacity add-on is an annual subscription, and capacity is enforced on a monthly basis. Capacity should be purchased for the peak utilization monthly period.
+The AI Builder capacity add-on is an annual subscription, and capacity is enforced on a monthly basis. Purchase capacity for the peak utilization monthly period.
 
-Information about how to allocate AI Builder capacity to your environment is available in [Capacity add-ons](capacity-add-on.md).
+- You can find details on AI Builder credit management and enforcement in specific [AI Builder licensing](https://go.microsoft.com/fwlink/?linkid=2239022) documentation.
+- You can find general information about how to allocate capacity to your environment in [Capacity add-ons](capacity-add-on.md).
 
 ### Can AI Builder capacity be added to the P1 and P2 plans for Power Apps and Power Automate that are being retired?
 
 Yes. AI Builder capacity can be added to the P1 and P2 plans for Power Apps and Power Automate for customers who haven't yet transitioned to the new Power Apps and Power Automate plans.
 
-### What is a "service credit" and how does it work?
+### What is a 'service credit', and how does it work?
 
-AI Builder includes several model types, including custom and prebuilt. A full list is available in [Model types](/ai-builder/model-types#model-types).
+AI Builder includes several model types, including custom and prebuilt. A list is available in [Model types](/ai-builder/model-types#model-types).
 
-AI models consume service credits when they are trained, used in an app or flow, or scheduled to periodically run. The amount of capacity consumed varies based the AI model, as well as the size and complexity of the data set.
+AI models consume service credits when they are trained, used in an app or flow, or scheduled to periodically run. The amount of capacity consumed varies based on the AI model, and the size and complexity of the data set.
 
 ### What can I do with the 5,000 AI credits included in the per user plan with attended RPA?
 
-Each user license grants you 5,000 credits, allowing you to assess the capabilities in AI Builder. For instance, you could use these credits to extract data from a few documents with *form processing* or perform hundreds of basic OCR extractions with *text recognition*.
+Each user license grants you 5,000 credits, which allows you to assess the capabilities in AI Builder. For instance, you could use these credits to extract data from a few documents with *form processing* or perform hundreds of basic OCR extractions with *text recognition*.
 
-### Which AI models are available for free in public preview and which are in paid GA status?
+### Which AI models are available for free in public preview and which are in paid general availability (GA) status?
 
-The release status for AI Builder features is available in [Overview of AI Builder 2020 release wave 1](/power-platform-release-plan/2020wave1/ai-builder/).
+The release status (preview and GA) for AI Builder features is available in [Overview of AI Builder 2020 release wave 1](/power-platform-release-plan/2020wave1/ai-builder/).
 
-AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found in [Model types](/ai-builder/model-types#model-types).
+AI models available in public preview don't require paid AI Builder capacity.
 
 ### Is a trial available for AI Builder?
 
 Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane.
 
+To learn more, go to [AI Builder trial capacity](https://go.microsoft.com/fwlink/?linkid=2134231).
+
 ## Power Platform pay-as-you-go plan
 
-Learn more:
+Learn more about the pay-as-you-go plan by selecting the following links.
 
--   [How do pay-as-you-go meters work?](pay-as-you-go-meters.md)
-
--   [Frequently asked questions](pay-as-you-go-issues-faq.md#frequently-asked-questions)
+- [How do pay-as-you-go meters work?](pay-as-you-go-meters.md)
+- [Frequently asked questions](pay-as-you-go-issues-faq.md#frequently-asked-questions)
 
 ### Add-ons
 
@@ -744,7 +749,7 @@ Power Automate use rights with Dynamics 365 licenses: Dynamics 365 licenses will
 
 #### Can I connect to Microsoft Dynamics for finance and operations apps?
 
-Yes, you can use the Dynamics 365 finance and operations apps connector to build canvas apps using this data.
+Yes, you can use the finance and operations apps connector to build canvas apps using this data.
 
 
  

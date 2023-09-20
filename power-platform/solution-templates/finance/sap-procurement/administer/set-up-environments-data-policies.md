@@ -15,7 +15,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
-ms.date: 06/06/2023
+ms.date: 08/18/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -55,7 +55,7 @@ More information: [Security and governance considerations](/power-platform/admin
 
 [Environments](/power-platform/admin/environments-overview) serve as containers to separate applications that might have different roles, security requirements, stages of deployment, or target audiences.
 
-Installing, configuring, testing, and running [solutions](/power-apps/maker/data-platform/solutions-overview) on Power Platform requires [application lifecycle management](/power-platform/alm/overview-alm). This three-environment strategy supports ALM:
+Installing, configuring, testing, and running [solutions](/power-apps/maker/data-platform/solutions-overview) on Power Platform requires [application lifecycle management](/power-platform/alm/overview-alm). A three-environment strategy supports ALM:
 
 - **Development**: The development sandbox environment is where the SAP Procurement solution template should first be installed and copied so it can be extended to meet your business requirements. This environment is connected to an SAP developer environment.
 - **Test**: The test sandbox environment is where configurations layered on top of the SAP Procurement solutions should be staged and validated by technical and business experts. This environment is connected to an SAP test environment.
@@ -70,9 +70,15 @@ More information:
 - [Manage Microsoft Dataverse settings](/power-platform/admin/admin-settings)
 - [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)
 
-## Use the managed environment capability
+## Enable managed environments
 
-[Managed environments](/power-platform/admin/managed-environment-overview) give admins more control when running mission-critical processes, such as your procure-to-pay processes. Your admins can put tighter controls on accessing SAP data, view a managed environment's [data policies](/power-platform/admin/managed-environment-data-policies), and take advantage of other capabilities that support solutions running enterprise scenarios.
+[Managed environments](/power-platform/admin/managed-environment-overview) give admins more control when running mission-critical processes—such as your procure-to-pay processes. You can:
+
+- Put tighter controls on accessing SAP data by setting [data policies](/power-platform/admin/managed-environment-data-policies) and limiting sharing.
+- Get adoption insights by viewing usage.
+- Take advantage of other capabilities that support solutions running enterprise scenarios.
+
+:::image type="content" source="media/set-up-environments-data-policies/enable-managed-env.png" alt-text="Reuse environment variables in the SAP ERP connector's actions":::
 
 ## Set up data policies
 

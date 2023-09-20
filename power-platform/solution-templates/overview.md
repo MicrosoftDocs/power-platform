@@ -61,6 +61,7 @@ Solution templates are available on Microsoft AppSource. Be sure to check often 
 | --- | --- | --- | --- |
 | Finance | SAP procurement | [SAP procurement](finance/sap-procurement/overview.md) | <https://aka.ms/AccessSAPProcurementTemplate> |
 | Human resources | Employee kudos | [Employee kudos](hr/employee-kudos/overview.md) | <https://aka.ms/AccessEmployeeKudosTemplate> |
+| Human resources | Awards and Recognition | [Awards and Recognition](hr/awards-and-recognition/overview.md) | <https://aka.ms/AccessAwardsandRecognitionTemplate> |
 
 ## Support
 
@@ -70,6 +71,7 @@ You can log your questions and get support for the solution templates at <https:
 
 - [Get started with SAP Procurement solution template](finance/sap-procurement/administer/get-started.md)
 - [Install the Employee Kudos template](hr/employee-kudos/install.md)
+- [Install the Awards and Recognition template](hr/awards-and-recognition/install.md)
 
 ## See also
 
@@ -77,5 +79,8 @@ You can log your questions and get support for the solution templates at <https:
 - [SAP Vendor Management app](finance/sap-procurement/use/vendor-management.md)
 - [SAP Requisition Management app](finance/sap-procurement/use/requisition-management.md)
 - [SAP Purchase Orders Management app](finance/sap-procurement/use/purchase-order-management.md)
+- [SAP Goods Receipt Management app](finance/sap-procurement/use/goods-receipt-management.md)
+- [SAP Vendor Invoice Management app](finance/sap-procurement/use/vendor-invoice-management.md)
+- [SAP Vendor Payment Management app](finance/sap-procurement/use/payment-management.md)
 - [Get started using the Employee Kudos app](hr/employee-kudos/use.md)
 - [Use the Awards and Recognition app](hr/awards-and-recognition/use.md)

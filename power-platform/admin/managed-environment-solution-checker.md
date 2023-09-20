@@ -42,8 +42,8 @@ Select one of the following settings:
 | Setting | Description |
 | --- | --- |
 | None |  Turns off the automatic solution validations during solution import. There aren't any experience or behavioral changes to solution authoring, exports, or imports. |
-| Warn |  All custom solutions are automatically verified during solution import. When a solution with highly-critical issues is being imported, you are warned about the action but the import itself continues, and if everything else with the import is fine, the solution is imported into the environment. After a successful import, a message stating that the imported solution had validation issues is shown. Additionally, Power Platform environment admins receive a summary email with details of the solution validation. |
-| Block | All custom solutions are automatically verified during solution import. When a solution has highly-critical issues, the import process is canceled, and a message stating that the imported solution had validation issues is shown. This happens before the actual import, so there aren't any changes to the environment due to the import failure. Additionally, Power Platform environment admins receive a summary email with details of the solution validation.|
+| Warn |  All custom solutions are automatically verified during solution import. When a solution with highly-critical issues is being imported, you are warned about the action but the import itself continues, and if everything else with the import is fine, the solution is imported into the environment. After a successful import, a message stating that the imported solution had validation issues is shown. Additionally, a summary email is sent with details of the solution validation. |
+| Block | All custom solutions are automatically verified during solution import. When a solution has highly-critical issues, the import process is canceled, and a message stating that the imported solution had validation issues is shown. This happens before the actual import, so there aren't any changes to the environment due to the import failure. Additionally, a summary email is sent with details of the solution validation.|
 
 When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step, the verification of solutions fails and in the **Block** mode, solution imports are blocked.
 
@@ -51,7 +51,7 @@ For more information on what to do when encountering a warn or block, see the [t
 
 ## Email messages to the admin
 
-When the validation mode is set to **Warn** or **Block**, Power Platform admins receive summary emails when a solution is imported or blocked. When the solution is imported into an environment, environment admins can see the count of issues by severity in the solution in the summary email.
+When the validation mode is set to **Warn** or **Block**, a summary email is sent when a solution is imported or blocked. When the solution is imported into an environment, the summary email shows the count of issues by severity in the solution.
 
 The email is sent to all users with the roles of [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) and [Dynamics 365 service administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). It is also sent to recipients of the [weekly digest emails](managed-environment-usage-insights.md#who-can-receive-the-weekly-digest).
 
