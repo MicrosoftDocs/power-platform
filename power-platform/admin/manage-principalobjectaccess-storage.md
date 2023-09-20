@@ -74,9 +74,9 @@ The POA table is managed by the system to ensure proper access of users or teams
 ## Troubleshooting guides
 When the cascade configuration of a table relationship is [changed from **Reparent** or **Share** to **No Cascade**](https://learn.microsoft.com/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior#inherited-access-repair), use this article to clean up the inherited access. This removes unnecessary POA records. More information: [How to clean up inherited access](https://learn.microsoft.com/troubleshoot/power-platform/power-apps/dataverse/cleanup-inherited-access?tabs=sdk).
 
-System job to cleanup legacy inherited access rights that remain after the cascading behavior was changed to **Cascade None**. [Inherited acccess rights cleanup](/power-apps/maker/data-platform/create-edit-entity-relationships#inherited-access-rights-cleanup)
+Inherited access rights cleanup is a system job that cleans up the legacy, inherited access rights that remain after the cascading behavior is changed to **Cascade None**. More information: [Inherited acccess rights cleanup](/power-apps/maker/data-platform/create-edit-entity-relationships#inherited-access-rights-cleanup)
 
-This shows if the user access was granted because of POA. [Determine why a user has access](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/security-sharing-assigning?tabs=sdk#determine-why-a-user-has-access). 
+To learn whether user access was granted because of POA, see [Determine why a user has access](/power-apps/developer/data-platform/security-sharing-assigning?tabs=sdk#determine-why-a-user-has-access). 
 
 
 ### See also
