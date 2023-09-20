@@ -233,6 +233,7 @@ When audit log search in the Microsoft Purview compliance portal is turned on, u
 - Office has a 3KB limit for each audit record. Therefore, in some cases a single record from customer engagement apps needs to be split into multiple records in Office. The CorrelationId field can be used to retrieve the set of split records for a given source record. Operations that are likely to require splitting include RetrieveMultiple and ExportToExcel.
 - Some operations need additional processing to retrieve all relevant data. For example, RetrieveMultiple and ExportToExcel are processed to extract the list of records that are retrieved or exported. However, not all relevant operations are yet processed. For example, ExportToWord is currently logged as single operation with no additional details about what was exported.
 - In future releases, logging will disabled for operations that are determined to not be useful based on a review of the logs. For example, some operations result from automated system activity, not user activity.
+- In some record instances, the EntityName value may be marked with Unknown.  These records are not related to any specific entity related operation and came in blank from CRM. They all have entity id of 0000000-0000-0000-0000-000000000000.
 
 ### See also
 [Manage Dataverse auditing](manage-dataverse-auditing.md)<br />

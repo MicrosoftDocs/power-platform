@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 8/16/2023
+ms.date: 9/18/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -37,11 +37,13 @@ Work with your Power Platform Admin Account
 |[pac admin list-app-templates](#pac-admin-list-app-templates)|Lists all supported Dataverse templates of model-driven apps in Dynamics 365.|
 |[pac admin list-backups](#pac-admin-list-backups)|Lists all backups of your environment.|
 |[pac admin list-service-principal](#pac-admin-list-service-principal)|List Microsoft Entra ID applications which have access to Dataverse.|
+|[pac admin list-tenant-settings](#pac-admin-list-tenant-settings)|List tenant settings.|
 |[pac admin reset](#pac-admin-reset)|Reset the environment from your tenant.|
 |[pac admin restore](#pac-admin-restore)|Restores an environment to a given backup.|
 |[pac admin set-backup-retention-period](#pac-admin-set-backup-retention-period)|Takes a manual backup of your environment.|
 |[pac admin set-governance-config](#pac-admin-set-governance-config)|Enable, disable, and edit managed environments.|
 |[pac admin status](#pac-admin-status)|This command lists the status of all the operations in progress.|
+|[pac admin update-tenant-settings](#pac-admin-update-tenant-settings)|Update tenant settings.|
 
 
 ## pac admin assign-group
@@ -422,6 +424,21 @@ Max number of applications to show. Default: 20
 
 [!INCLUDE [admin-list-service-principal-remarks](includes/admin-list-service-principal-remarks.md)]
 
+## pac admin list-tenant-settings
+
+List tenant settings.
+
+[!INCLUDE [admin-list-tenant-settings-intro](includes/admin-list-tenant-settings-intro.md)]
+
+
+### Optional Parameters for admin list-tenant-settings
+
+#### `--settings-file` `-s`
+
+The .json file to output tenant settings.
+
+[!INCLUDE [admin-list-tenant-settings-remarks](includes/admin-list-tenant-settings-remarks.md)]
+
 ## pac admin reset
 
 Reset the environment from your tenant.
@@ -621,6 +638,21 @@ Use one of these values:
 This command lists the status of all the operations in progress.
 
 [!INCLUDE [admin-status-remarks](includes/admin-status-remarks.md)]
+
+## pac admin update-tenant-settings
+
+Update tenant settings.
+
+[!INCLUDE [admin-update-tenant-settings-intro](includes/admin-update-tenant-settings-intro.md)]
+
+
+### Required Parameters for admin update-tenant-settings
+
+#### `--settings-file` `-s`
+
+The .json file with tenant settings.
+
+[!INCLUDE [admin-update-tenant-settings-remarks](includes/admin-update-tenant-settings-remarks.md)]
 
 [!INCLUDE [admin-remarks](includes/admin-remarks.md)]
 
