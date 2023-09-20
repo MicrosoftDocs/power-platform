@@ -72,7 +72,7 @@ The RetrieveAccessOrigin API can be used to determine where a user or team’s a
 The POA table is managed by the system to ensure proper access of users or teams to respective records. Direct deletion on this table is not supported since it can break the security model defined for the organization. The correct way to clean up the POA table is by adjusting the security model, and revoking access that was previously given.
 
 ## Troubleshooting guides
-When the cascade configuration of a table relationship is [changed from **Reparent** or **Share** to **No Cascade**](https://learn.microsoft.com/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior#inherited-access-repair), use this article to clean up the inherited access. This removes unnecessary POA records. More information: [How to clean up inherited access](https://learn.microsoft.com/troubleshoot/power-platform/power-apps/dataverse/cleanup-inherited-access?tabs=sdk).
+When the cascade configuration of a table relationship is [changed from **Reparent** or **Share** to **No Cascade**](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior#inherited-access-repair), use this article to clean up the inherited access. This removes unnecessary POA records. More information: [How to clean up inherited access](/troubleshoot/power-platform/power-apps/dataverse/cleanup-inherited-access?tabs=sdk).
 
 Inherited access rights cleanup is a system job that cleans up the legacy, inherited access rights that remain after the cascading behavior is changed to **Cascade None**. More information: [Inherited acccess rights cleanup](/power-apps/maker/data-platform/create-edit-entity-relationships#inherited-access-rights-cleanup)
 
