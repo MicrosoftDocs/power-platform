@@ -637,7 +637,7 @@ These cmdlets allow you to enforce DLP policy for violating connections at envir
 
 ##### Enforce DLP policy for violating connections at environment level
 
-Enforce environment level DLP polices to determine connections that are violating DLP policies.
+Enforce DLP polices to determine connections that are violating DLP policies in environment.
 
 ```powershell 
 DLPEnforcementOnConnectionsInEnvironment -EnvironmentName [Environment ID]
@@ -651,10 +651,10 @@ DLPEnforcementOnConnectionsInEnvironment -EnvironmentName c4a07cd6-cb14-e987-b5a
 
 ##### Enforce DLP policy for violating connections at tenant level
 
-Enforce tenant level DLP polices to determine connections that are violating DLP policies.
+Enforce DLP polices to determine connections that are violating DLP policies in tenant.
 
 ```powershell
-DLPEnforcementInConnectionsOnTenant
+DLPEnforcementOnConnectionsInTenant
 ```
 
 ### Block trial licenses commands
