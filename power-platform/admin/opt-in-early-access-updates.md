@@ -20,12 +20,16 @@ Because the major releases include features that affect the user experience, you
 > Check out the early access features for Microsoft [Power Platform](/power-platform-release-plan/2021wave1/features-ready-early-access) and [Dynamics 365](/dynamics365-release-plan/2021wave1/features-ready-early-access) to know the features that will roll out to the users automatically when you opt in for an update.
 
 ## Early access availability  
-For each of the major releases, you can opt in for early access updates approximately two months before the major release is automatically enabled in your region.
+For each of the major releases, you can opt in for early access updates approximately two months before the major release is automatically enabled in your region. 
 
 There are two major releases, Wave1 and Wave2:
-- For Wave1 release, that's planned to be automatically enabled starting in the first week of April, you'll be able to opt in for early access updates on the first Monday of February.
-- For Wave2 release, that's planned to be automatically enabled starting in the first week of October, you'll be able to opt in for early access updates on the first Monday of August.
+- For Wave1 release, that's planned to be general available starting in the first week of April, you'll be able to opt in for early access updates on the first Monday of February.
+- For Wave2 release, that's planned to be general available starting in the first week of October, you'll be able to opt in for early access updates on the first Monday of August.
 The exact schedule for Wave1 and Wave2 releases are updated in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule) before early access starts.
+
+> [!NOTE]
+> An environment that you opt-in for a Wave release, must again manually opt-in before the next wave release if that environment want to participate again in the next wave release early access. Early access opt-on of an environment for a wave release is not considered automatically for the next wave rekease unless manually enabled again.
+> When multiple environments needs to participate in early access, each environment must opt-in individually to get future updates. 
 
 The following is an example of an early update availability timeline.
 
