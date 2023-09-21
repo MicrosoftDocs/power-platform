@@ -3,7 +3,7 @@ title: "Teams in Dataverse   | MicrosoftDocs"
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/22/2022
+ms.date: 09/21/2023
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -61,7 +61,7 @@ A list of all of the teams in the environment is displayed.
    :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
 
    
-  <sup>1</sup> The **Administrator** field is only for reference and it doesn't have any special processing. You can use this field to restrict who can add/remove team members by registering a [plugin](https://learn.microsoft.com/power-apps/developer/data-platform/plug-ins) on the [associate and disassociate APIs](https://learn.microsoft.com/power-apps/developer/data-platform/webapi/associate-disassociate-entities-using-web-api) for **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. See [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin). 
+  <sup>1</sup> The **Administrator** field is only for reference and it doesn't have any special processing. You can use this field to restrict who can add/remove team members by registering a [plug-in](/power-apps/developer/data-platform/plug-ins) on the [associate and disassociate](/power-apps/developer/data-platform/webapi/associate-disassociate-entities-using-web-api) APIs for **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. See available community [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin). 
 
    > [!NOTE]
    > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group.
