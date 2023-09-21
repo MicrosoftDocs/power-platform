@@ -22,7 +22,10 @@ Because the major releases include features that affect the user experience, you
 ## Early access availability  
 For each of the major releases, you can opt in for early access updates approximately two months before the major release is automatically enabled in your region.
 
-For example, for a wave 1 major release that's planned to be automatically enabled starting in the first week of April, you'll be able to opt in for early access updates in early February. Similarly, for a wave 2 release that's planned to be automatically enabled starting in the first week of October, you'll be able to opt in for early access updates in early August.
+There are two major releases, Wave1 and Wave2:
+- For Wave1 release, that's planned to be automatically enabled starting in the first week of April, you'll be able to opt in for early access updates on the first Monday of February.
+- For Wave2 release, that's planned to be automatically enabled starting in the first week of October, you'll be able to opt in for early access updates on the first Monday of August.
+The exact schedule for Wave1 and Wave2 releases are updated in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule) before early access starts.
 
 The following is an example of an early update availability timeline.
 
