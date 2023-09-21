@@ -33,7 +33,7 @@ All these capabilities are currently available in environments in United States 
 > - All data from the copilots and generative AI features in the Europe region (including France and Germany) are handled by the underlying infrastructure hosted in the Switzerland region. For all other Power Platform environment regions, the requests are handled by the infrastructure hosted in the United States region.
 > - This setting is only available in a Power Platform environment that is created in regions other than **United States - Default**, **Preview (United States)**, and **Switzerland**. To enable or disable copilot features in environments created in **United States – Default**, **Preview (United States)**, or **Switzerland** regions, refer to the respective product documentation for the applicable product.
 > - To enable copilot for Dynamics 365 Customer Service outside United States, refer to [Copilot data movement across geographies (preview)](/dynamics365/customer-service/copilot-data-movement).
-> - To enable copilot for Dynamics 365 Sales outside North America, refer to [Sales Copilot data movement across geographies (preview)](/dynamics365/sales/sales-copilot-data-movement).
+> - To enable copilot for Dynamics 365 Sales outside North America, refer to [Sales Copilot data movement across geographies](/dynamics365/sales/sales-copilot-data-movement).
 
 You can allow copilots in your Power Platform environments outside the United States or Switzerland regions by following these steps:
 
