@@ -112,7 +112,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
 ## Change the default data group
 
-1. Sign in to the Power Platform admin center as a [global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+1. Sign in to the Power Platform admin center as a [global admin](/microsoft-365/admin/add-users/about-admin-roles).
 
 2. From the list of DLP policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
