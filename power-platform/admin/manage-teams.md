@@ -7,7 +7,7 @@ ms.date: 02/22/2022
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -55,15 +55,18 @@ A list of all of the teams in the environment is displayed.
    - **Team name:** Be sure this name is unique within a business unit.
    - **Description:** Enter a description of the team.
    - **Business unit:** Select the business unit from the dropdown list.
-   - **Administrator:** Search for users in the organization. Start entering characters.
+   - **Administrator:** <sup>1</sup> Search for users in the organization. Start entering characters.
    - **Team type:** Select the team type from the dropdown list.
 
    :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
-   
-   > [!NOTE]
-   > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group. 
 
-5. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
+   
+  <sup>1</sup> The **Administrator** field is only for reference and it doesn't have any special processing. You can use this field to restrict who can add/remove team members by registering a [plugin](https://learn.microsoft.com/power-apps/developer/data-platform/plug-ins) on the [associate and disassociate APIs](https://learn.microsoft.com/power-apps/developer/data-platform/webapi/associate-disassociate-entities-using-web-api) for **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. See [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin). 
+
+   > [!NOTE]
+   > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group.
+   
+6. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
    - **Group name:** Start entering text to select an existing Azure AD group name.These groups are pre-created in Azure AD.
    - **Membership type:** Select the membership type from the dropdown list.
