@@ -94,7 +94,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 4. (Optional) If necessary, consider enforcing DLP policies on connections. More information: [Enforce DLP policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections)
 
    > [!NOTE]
-   > Connections blocked by the DLP policies are disabled.
+   > Connections violating DLP policies would be disabled.
 
 ## Delete a DLP policy
 
