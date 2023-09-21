@@ -646,7 +646,7 @@ DLPEnforcementOnConnectionsInEnvironment -EnvironmentName [Environment ID]
 **Example**
 
 ```powershell
-DLPEnforcementOnConnectionsOnEnvironment -EnvironmentName c4a07cd6-cb14-e987-b5a2-a1dd61346963 
+DLPEnforcementOnConnectionsInEnvironment -EnvironmentName c4a07cd6-cb14-e987-b5a2-a1dd61346963 
 ```
 
 ##### Enforce DLP policy for violating connections at tenant level
@@ -654,7 +654,7 @@ DLPEnforcementOnConnectionsOnEnvironment -EnvironmentName c4a07cd6-cb14-e987-b5a
 Enforce tenant level DLP polices to determine connections that are violating DLP policies.
 
 ```powershell
-DLPEnforcementOnConnectionsOnTenant
+DLPEnforcementInConnectionsOnTenant
 ```
 
 ### Block trial licenses commands
