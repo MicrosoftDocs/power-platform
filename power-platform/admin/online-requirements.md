@@ -63,6 +63,15 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://www.d365ccafpi.com |  d365ccafpi service exposes a controller endpoint for token change to achieve client side first party integration with external service from PCF control  |
 | https://api.admin.powerplatform.microsoft.com | Required to call Power Platform admin center service in public cloud.|
 
+#### Telemetry Endpoints
+Below are the endpoints and their corresponding clouds to which Dynamics apps send their telemetry.
+|  Endpoint URL | Cloud |
+|---|---|
+| https://eu-mobile.events.data.microsoft.com/Collector/3.0/ | Public - Europe |
+| browser.pipe.aria.microsoft.com | Public - Rest of the World |
+| https://tb.pipe.aria.microsoft.com/Collector/3.0 | Gov - GCC |
+| https://pf.pipe.aria.microsoft.com/Collector/3.0 | Gov - DoD |
+
 > [!IMPORTANT]
 > - If you are Government cloud customer, go to [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls) 
 > - If you are a customer in China and want to access Dynamics 365 services operated by a local company that stores your data within China, go to [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md)
