@@ -25,7 +25,7 @@ For each of the major releases, you can opt in for early access updates approxim
 There are two major releases, Wave1 and Wave2:
 - For Wave1 release, that's planned to be general available starting in the first week of April, you'll be able to opt in for early access updates on the first Monday of February.
 - For Wave2 release, that's planned to be general available starting in the first week of October, you'll be able to opt in for early access updates on the first Monday of August.
-The exact schedule for Wave1 and Wave2 releases are updated in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule) before early access starts.
+The specific schedule for wave release is updated in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule) before early access starts for each wave release.
 
 > [!NOTE]
 > - An environment that you opt-in for a Wave release, must again manually opt-in before the next wave release if that environment want to participate again in the next wave release early access. Early access opt-on of an environment for a wave release is not considered automatically for the next wave rekease unless manually enabled again.
