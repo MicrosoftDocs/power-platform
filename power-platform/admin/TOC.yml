@@ -1097,8 +1097,6 @@
       items:
         - name: Overview
           href: about-ce-guide.md
-        - name: Sales territories
-          href: set-up-sales-territories-organize-business-markets-geographical-area.md
         - name: Define subjects to categorize cases, products, and articles
           href: define-subjects-categorize-cases-products-articles.md
         - name: Enhanced service level agreements
