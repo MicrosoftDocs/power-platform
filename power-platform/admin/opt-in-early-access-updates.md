@@ -28,7 +28,7 @@ There are two major releases, Wave1 and Wave2:
 The specific schedule for wave release is updated in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule) before early access starts for each wave release.
 
 > [!NOTE]
-> - An environment that you opt-in for a Wave release, must again manually opt-in before the next wave release if that environment want to participate again in the next wave release early access. Early access opt-on of an environment for a wave release is not considered automatically for the next wave rekease unless manually enabled again.
+> - An environment that you opt-in for a Wave release, must again manually opt-in before the next wave release if that environment want to participate again in the next wave release early access. Early access opt-on of an environment for a wave release is not considered automatically for the next wave release unless manually enabled again.
 > - When multiple environments needs to participate in early access, each environment must opt-in individually to get future updates. 
 
 The following is an example of an early update availability timeline.
