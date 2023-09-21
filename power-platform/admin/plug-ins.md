@@ -48,4 +48,6 @@ If you need to change user impersonation for a plug-in, see [Set user impersonat
 ## Update license information for a user
 To change the license assignment for a user in the Microsoft 365 admin center, see [To assign a license](create-users.md#to-assign-a-license).
 
-
+## Post operation and pre-operation plugins 
+When the system user table is updated with a SetBusiness unit, the post operation plugin runs twice as these are 2 separate update operations in the pipeline. However, the pre-operation plugin is only run once.
+To prevent the post operation to run twice, you can check for the businessunit field update and run your business process accordingly.  
