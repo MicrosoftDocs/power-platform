@@ -14,6 +14,7 @@ Pipelines can be custom tailored to serve the unique needs of an organization. F
 
 > [!IMPORTANT]
 > New pipelines extensions are being gradually rolled out across regions and might not be available yet in your region.
+> Existing pipelines customers may need to update the Power Platform Pipelines application to enable new features. You can manage the updates within the Power Platform admin center.
 
 ## Gated extensions available
 Pipelines deployments progress through multiple pre-defined steps until deployment completion. Gated extensions insert custom steps into the progression where custom business logic can be executed. It's like your own personal train where you're in control of where it stops and whether it continues or not.
@@ -26,10 +27,11 @@ When enabled, each extension inserts a custom step at a different point within a
 2. **Is delegated deployment** carries out deployments using a service principal or pipeline stage owner’s identity (instead of the requesting maker’s). This ensures makers can request deployments without elevated (or any) access within target environments. Requires approval from an authorized identity.
 3. **Pre-deployment-step required** provides additional flexibility to insert a custom step after a deployment is approved. For example, if a final approval is required.
 
-## Understanding Pipelines triggers and actions
-When a step of a deployment begins or completes, it produces a trigger event. Custom logic can be initiated from these triggers. Some triggers are produced for all deployments. Additional triggers are produced when gated extensions are enabled. These correspond to the custom step inserted.
+:::image type="content" source="media/three-gated-extensions.png" alt-text="Enable gated extensions":::
 
-Each gated extension requires your logic to notify the pipelines host when to proceed or fail the deployment. Use the Dataverse unbound action that corresponds with each gated extension, and only when the gated extension is enabled.
+Steps inserted by enabling a gated extension are in a pending state until your business logic executes and finally signals the pipelines host to complete or reject the step.
+ > [!NOTE]
+ > Once the managed and unmanaged solution artifacts are exported, the system stores them in the pipelines host and prohibits any tampering or modification. The same managed artifact, per version, will be deployed to all subsequent stages in the pipeline in sequential order. This ensures no solution can bypass QA environments or approval processes. 
 
 # Set up delegated deployments
 Delegated deployments can be run as a service principal or pipeline stage owner.
@@ -79,25 +81,20 @@ Regular users, including those used as service accounts, can also serve as deleg
     i.	Action Name: UpdateApprovalStatus (20 = completed, 30 = rejected)
 
 
-## Add predeployment conditions
+# Understanding Pipelines triggers and actions
 
-You can optionally configure a gate for each pipeline stage. Then when a deployment is submitted, the request remains in a pending state until your business logic executes and finally signals the pipelines host to complete or reject the deployment. Pending deployment requests contain both the exported managed and unmanaged solutions, and connections and environment variable values for the target environment (sometimes referred to as "deployment settings" or "DeploymentSettings.JSON"). For example, you may wish to run code scans, commit the solution to source control, or perform any number of automated tasks before deployments to a target environment.
+Each step of a pipeline deployment triggers a real-time event at the beginning and completion of the step for which you can initiate custom logic. Additional triggers are produced when gated extensions are enabled. These correspond to the custom step inserted when an extension is enabled on the pipeline stage.
 
-The system prevents any tampering or modification to the exported solution artifact. Solutions are exported when a deployment request is submitted (when the maker selects **Deploy** from within their development environment), and the same solution artifact will be deployed upon approval. Similarly, the system doesn't re-export a solution for deployments to subsequent stages in a pipeline. The same solution artifact must pass through pipeline stages in sequential order. This ensures customization can't bypass QA environments or your approval processes.
+| Gated extension | Step started trigger  | Step completed trigger | Unbound action | Connection to use |
+| --- | --- | --- | --- | --- |
+| Pre-export step required | 'OnDeploymentRequested' | N/A | UpdatePreExportStepStatus | Any identity with access to update the deployment stage run record |
+| Is delegated deployment | OnApprovalStarted | OnDeploymentCompleted | Create a connection as the service principla or or pipeline stage owner as configured on the pipeline stage. The pipeline stage owner must be an owner of the service principal in Microsoft Entra ID (formerly Azure Active Directory) |
+| Pre-deployment step required | OnPreDeploymentStarted | OnPreDeploymentCompleted | UpdatePreDeploymentStepStatus | Any identity with access to update the deployment stage run record |
 
-When configuring the pipeline stage, select the **Pre-Deployment Step Required** checkbox.
-
-  :::image type="content" source="media/pipelines-pre-step-config.png" alt-text="Pipelines pre-deployment step required":::
-
-   > [!IMPORTANT]
-   >
-   > - Adding a pre-deployment step gates pipelines deployments, but makers are required to have permission to import solutions to the target environment.
-   > - Existing pipeline users may need to update the Power Platform Pipelines application to enable new features. You can manage the updates within the Power Platform admin center.
+> [!NOTE]
+> OnDeploymentRequested triggers for all deployments
 
 ## Triggers
-
-Each step of a pipeline deployment triggers a real-time event at the beginning and completion of the step.
-
 Triggers are available in Power Automate cloud flows within the pipelines host environment under the **When an action is performed** [trigger](/connectors/commondataserviceforapps/#triggers) of the Dataverse connector.
 
 - **Catalog**: Microsoft Dataverse Common
@@ -112,7 +109,7 @@ Triggers are available in Power Automate cloud flows within the pipelines host e
 
 :::image type="content" source="media/pipelines-triggers.png" alt-text="Pipelines triggers in Power Automate":::
 
-## Trigger conditions
+### Trigger conditions
 
 Power Automate [trigger conditions](/power-automate/triggers-introduction#use-trigger-conditions-to-reduce-flow-runs) allow you to customize the trigger so that the flow runs only when certain conditions are met. For example, you may need to run different flows and associated business logic within different pipelines or pipeline stages. This also helps keep flow runs and Power platform requests consumption low.
 
@@ -138,20 +135,26 @@ Triggers a flow for deployment stages with the stage name *containing* 'QA':
 
 Learn more about expressions used in conditions: [Use expressions in conditions to check multiple values](/power-automate/use-expressions-in-conditions).
 
-## Action
+## Actions
 
-After running the desired predeployment logic in cloud flows, use the **Perform an unbound action** named `UpdatePreDeploymentStepStatus`. Set `PreDeploymentStepStatus` to:
+After running the desired logic in cloud flows, use the **Perform an unbound action** in conjunction with the corresponding action for each gated extension.
 
-- **20** for completing the deployment.
+These parameters are exposed across the actions for the corresponding gated extensions.  
 
-- **30** for rejecting the deployment. The deployment won't proceed and status will be set to failed. You can add comments to indicate the reason for rejection.
+- PreExportStepStatus, ApprovalStatus, and PreExportStepStatus:
+  - **10** is the pending status set by the system.
+  - **20** for completing the step.
+  - **30** for rejecting the step. The deployment won't proceed and status will be set to failed. You can also add both maker facing and admin facing comments to indicate the reason for rejection.
+- ApprovalComments and Pre-deployment comments:
+-   Comments that are visible to the maker within pipelines run history. Intended for approvers to share comments or any other information you’d like the maker to have. E.g. why their deployment was rejected.
+  -   Comments are not exposed for pre-export
+  -   Not used by Microsoft
+- PreExportProperties and ApprovalProperties:
+  - Admins can store information or custom parameters here without it surfacing to makers. E.g. a link to the flow run or approval, or other pertinent data. The intent is to provide flexibility and simplify custom reporting for deployment related data.
+  - Properties not exposed for pre-export
+  - Not used by Microsoft 
 
-:::image type="content" source="media/pipelines-approval-flow.png" alt-text="Pipelines approvals":::
-
-> [!NOTE]
-> The system sets **10** (pending) for `PreDeploymentStepStatus` as the default state for submitted deployments when this configuration is present.
-
-## Event details
+### Event details
 
 The tables below indicate inputs and outputs for each event. Output parameters can be used within subsequent steps of a cloud flow.
 
