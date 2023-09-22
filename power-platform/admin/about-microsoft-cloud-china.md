@@ -37,6 +37,12 @@ Microsoft strives to maintain functional parity across our localized datacenter 
 
 To connect Dynamics 365 with your Exchange Online tenant in China and use server-side synchronization functionality, go to [Enable server-side synchronization functionality for Exchange Online in China](connect-exchange-online.md#enable-server-side-synchronization-functionality-for-exchange-online-in-china).
 
+## Telemetry for model-driven apps
+
+The following URL must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
+
+https://browser.pipe.aria.microsoft.com
+
 ## Expansion and transition to "China 3" datacenters
 
 Effective April 2023, current and future Business Applications customers who operate in China are poised to benefit greatly from the new Azure datacenters that are referred to as the Azure "China 3" Region. These cutting-edge datacenters provide enough capacity and robustness to sustain the ongoing expansion and demands of Business Applications in China. They also offer an opportunity to introduce capabilities and offerings that aren't currently available in the region. This development represents an exciting and promising advancement for the future of Business Applications in China.
