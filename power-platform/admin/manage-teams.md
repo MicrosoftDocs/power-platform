@@ -62,10 +62,10 @@ A list of all of the teams in the environment is displayed.
      
    - **Team type:** Select the team type from the dropdown list.
 
-   :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
+     :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
 
-   > [!NOTE]
-   > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group.
+     > [!NOTE]
+     > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group.
    
 6. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
