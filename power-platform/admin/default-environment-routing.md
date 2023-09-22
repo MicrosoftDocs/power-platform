@@ -30,6 +30,7 @@ Dataverse is available in developer environments, and these environments are [Ma
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - By default, all developer environments created through environment routing are managed.
 > - Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
+> - **Non-managed** Developer environments are **unaffected** by this feature. You can learn more about the developer environment and developer plan [here](https://learn.microsoft.com/en-us/power-platform/developer/plan)
 
 ## Prerequisites
 
@@ -41,7 +42,7 @@ Default environment routing is a tenant-level, admin setting that:
 
     :::image type="content" source="media/developer-environments-assignment-everyone.png" alt-text="The Developer environment assignment setting must be enabled for Everyone.":::
     
--   Requires the use of Managed Environment, since all of the newly created environments will be managed. Users in a managed developer environment will require premium licenses to run Power Platform assets.
+-   Requires the use of Managed Environment, since all of the newly created environments will be managed. Users in a **managed** developer environment will require premium licenses to run Power Platform assets.
 
 ## Enable the Default environment routing setting
 
