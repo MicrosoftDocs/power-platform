@@ -7,11 +7,12 @@ ms.author: samathur
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/12/2023
+ms.date: 09/22/2023
 search.audienceType: 
   - admin
 ms.contributors:
 - matleon
+- swatim
 ---
 # General availability deployment
 
@@ -20,7 +21,7 @@ After a release cycle has been made "generally available" to users, environments
 > [!TIP]
 > Check out [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) to learn more about new features to be released in the release waves.
 
-Throughout a release cycle, your environments are updated over the scheduled weekend. These scheduled windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center). The specific time when the updates for an environment complete within the scheduled weekend cannot be predetermined.
+Throughout a release cycle, your environments are updated over the scheduled weekend. These scheduled windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center). The specific time when the updates for an environment complete, within the scheduled weekend, can't be predetermined.
 
 Each notification from the Message Center includes dates, the maintenance window, and the Release Plan reference. In addition, included is a list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).  
 
