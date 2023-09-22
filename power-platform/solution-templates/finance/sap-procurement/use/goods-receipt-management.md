@@ -11,7 +11,7 @@ contributors:
 - ryanb58
 - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: concept
+ms.topic: concept-article
 ms.date: 08/14/2023
 ms.custom: bap-template
 ms.service: power-platform
