@@ -6,9 +6,11 @@ ms.subservice: admin
 ms.author: samathur
 ms.reviewer: kvivek
 ms.topic: conceptual
-ms.date: 01/31/2023
+ms.date: 09/22/2023
 search.audienceType: 
   - admin
+ms.contributors:
+- swatim
 ---
 # Opt in to early access updates 
 
@@ -20,16 +22,18 @@ Because the major releases include features that affect the user experience, you
 > Check out the early access features for Microsoft [Power Platform](/power-platform-release-plan/2021wave1/features-ready-early-access) and [Dynamics 365](/dynamics365-release-plan/2021wave1/features-ready-early-access) to know the features that will roll out to the users automatically when you opt in for an update.
 
 ## Early access availability  
-For each of the major releases, you can opt in for early access updates approximately two months before the major release is automatically enabled in your region. 
+For each of the major releases, you can opt-in for early access updates approximately two months before the major release is automatically enabled in your region. 
 
-There are two major releases, Wave1 and Wave2:
-- For Wave1 release, that's planned to be general available starting in the first week of April, you'll be able to opt in for early access updates on the first Monday of February.
-- For Wave2 release, that's planned to be general available starting in the first week of October, you'll be able to opt in for early access updates on the first Monday of August.
-The specific schedule for wave release is updated in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule) before early access starts for each wave release.
+There are two major releases, Wave 1 and Wave 2:
+- For the Wave 1 release, that's planned for general availablility starting in the first week of April, you can opt-in for early access updates on the first Monday of February.
+- For the Wave 2 release, that's planned for general availablility starting in the first week of October, you can opt-in for early access updates on the first Monday of August.
+- 
+The specific schedule for each wave release is updated in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule) before early access starts for each wave release.
 
 > [!NOTE]
-> - An environment that you opt-in for a Wave release, must again manually opt-in before the next wave release if that environment want to participate again in the next wave release early access. Early access opt-on of an environment for a wave release is not considered automatically for the next wave release unless manually enabled again.
-> - When multiple environments needs to participate in early access, each environment must opt-in individually to get future updates. 
+> Early access is not granted automatically.
+> - For each _release wave_, you must opt-in for early access updates.
+> - For each _environment that you want updated_, you must opt-in for early access updates.
 
 The following is an example of an early update availability timeline.
 
