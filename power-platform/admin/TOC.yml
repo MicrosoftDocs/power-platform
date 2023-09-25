@@ -204,6 +204,8 @@
                   href: admin-settings.md
                 - name: Environment database settings
                   href: environment-database-settings.md
+                - name: Default environment routing (preview)
+                  href: default-environment-routing.md
                 - name: Product
                   items:
                     - name: Behavior
@@ -1095,8 +1097,6 @@
       items:
         - name: Overview
           href: about-ce-guide.md
-        - name: Sales territories
-          href: set-up-sales-territories-organize-business-markets-geographical-area.md
         - name: Define subjects to categorize cases, products, and articles
           href: define-subjects-categorize-cases-products-articles.md
         - name: Enhanced service level agreements

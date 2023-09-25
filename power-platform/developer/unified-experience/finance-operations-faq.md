@@ -39,21 +39,25 @@ Error message:
 
 We don't currently have a solution for secure connection to SQL Server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) is planned to provide read-only queries to a database from SQL Server Management Studio. There's also a JIT access that will allow you to access the data after providing authentication.
 
+### I connected to the environment from Visual Studio but didn't get any pop-up to download metadata
+
+Ensure that the unified development environment you created is of type **Sandbox**. A **Trial** environment won't work.
+
 ### The Configure Metadata option doesn't appear on the menu
 
-When this option is missing from the menu, open the infolog from the menu and retry.
+When this option is missing from the menu, open the Infolog from the menu and retry.
 
 ### How do I download again the client assets
 
-When you connect to the unified development environment the tool does a few checks and does not initiate download if the required assets were previously downloaded. In case you need to download again please rename/delete the child folder with the application version of the environment under %LOCALAPPDATA%\Microsoft\Dynamics365. 
+When you connect to the unified development environment, the tool does a few checks and doesn't initiate download if the required assets were previously downloaded. In case you need to download again, simply rename/delete the child folder with the application version of the environment under %LOCALAPPDATA%\Microsoft\Dynamics365. 
 
 ### PackagesLocalDirectory extraction doesn't complete
 
-Use [7Zip](https://www.7-zip.org/download.html) to extract the metadata.
+Use [7-Zip](https://www.7-zip.org/download.html) to extract the metadata.
 
 ### The message "Please wait for update to complete" pop up keeps appearing
 
-When a configuration is created, saved, and the dialog closed, the necessary files will be updated and this popup will stop. If the dialog keeps recurring even after you open a new Visual Studio instance, the find the file PackagesLocalDirectory/bin/InstalledVersion.json in reference metadata folder and update the version to match the platform version in your environment.
+When a configuration is created, saved, and the dialog closed, the necessary files are updated and this popup will stop. If the dialog keeps recurring even after you open a new Visual Studio instance, the find the file PackagesLocalDirectory/bin/InstalledVersion.json in reference metadata folder and update the version to match the platform version in your environment.
 
 ### Cross reference database validation keeps failing
 
@@ -103,7 +107,7 @@ Application Foundation and Test Essentials are required for unit test execution.
 
 ### How can I set up a pipeline that automates creation and application of a deployable package to a new environment?
 
-Use the latest version of the Azure DevOps extension from the marketplace. It is now capable of package creation, ISV license addition, and application of the package. Refer to [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools).
+Use the latest version of the Azure DevOps extension from the marketplace. It's now capable of package creation, ISV license addition, and application of the package. Refer to [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools).
 
 ### How do I include a license and directly deploy from Visual Studio?
 
@@ -127,7 +131,7 @@ Use **Detach All** to end debugging in place of **Stop Debugging**.
 
 ### I applied a package, but it failed. How can I do further debugging to determine the failure?
 
-A link to download operation logs is available in the Visual Studio output pane. It is downloaded in case of failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
+A link to download operation logs is available in the Visual Studio output pane. It's downloaded if there were failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
 
 ### How can I find out what packages are applied to my environment?
 
@@ -135,7 +139,7 @@ Go to the Dataverse environment and check the **OperationsHistory** and **Packag
 
 ### My operation failed, and wasn't able to find sufficient information in the logs. What information do I provide to Microsoft Support?
 
-The correlation id, client machine name, and timestamp are required for Microsoft to investigate. The correlation id is in the Visual Studio output pane. Aditionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\16.11.32802.440\VisualStudioD365Extension-2022-08-12.log.
+The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane. Additionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\16.11.32802.440\VisualStudioD365Extension-2022-08-12.log.
 
 ### How do I monitor and diagnose deployed code running in the unified environment?
 
