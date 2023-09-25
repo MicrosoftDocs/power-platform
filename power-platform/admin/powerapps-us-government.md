@@ -232,7 +232,8 @@ Previously, US Government customers needed to contact support before configuring
 
 The following URL must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
 
-https://tb.pipe.aria.microsoft.com/Collector/3.0 (applicable for GCC, GCC High, and DoD)
+- **GCC and GCC High**: `https://tb.pipe.aria.microsoft.com/Collector/3.0`
+- **DoD**: `https://pf.pipe.aria.microsoft.com/Collector/3.0`
 
 ## Power Apps US Government feature limitations
 
