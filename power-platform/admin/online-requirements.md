@@ -4,7 +4,7 @@ description: Provides information about URLs and IP addresses to be added to the
 author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/04/2023
+ms.date: 09/25/2023
 ms.subservice: admin
 ms.author: kvivek
 contributors:
@@ -62,7 +62,7 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://mem.gfx.ms  | Me Control is a Microsoft feature that provides a consistent way for users to do core authentication functions like signing in, switching between accounts and more.    |
 | https://www.d365ccafpi.com |  d365ccafpi service exposes a controller endpoint for token change to achieve client side first party integration with external service from PCF control  |
 | https://api.admin.powerplatform.microsoft.com | Required to call Power Platform admin center service in public cloud.|
-| https://eu-mobile.events.data.microsoft.com/Collector/3.0 (Europe)<br/>https://browser.pipe.aria.microsoft.com (rest of the world) | Required for model-driven apps telemetry information.|
+| https://eu-mobile.events.data.microsoft.com/Collector/3.0 (Europe)<br/>https://browser.pipe.aria.microsoft.com (Rest of the world) | Required for model-driven apps telemetry information.|
 
 > [!IMPORTANT]
 > - If you are Government cloud customer, go to [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls) 
