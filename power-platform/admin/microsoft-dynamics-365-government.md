@@ -4,12 +4,16 @@ description: "Learn about features that are specific to Microsoft Dynamics 365 U
 author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/14/2022
+ms.date: 09/25/2023
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contibutors:
+- Akshay-Koushik-Hothur
+ms.contributors:
+- ahothur
 ---
 
 # Dynamics 365 US Government  
