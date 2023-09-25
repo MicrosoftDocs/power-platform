@@ -6,9 +6,11 @@ ms.subservice: admin
 ms.author: samathur
 ms.reviewer: kvivek
 ms.topic: conceptual
-ms.date: 01/31/2023
+ms.date: 09/22/2023
 search.audienceType: 
   - admin
+ms.contributors:
+- swatim
 ---
 # Opt in to early access updates 
 
@@ -20,9 +22,18 @@ Because the major releases include features that affect the user experience, you
 > Check out the early access features for Microsoft [Power Platform](/power-platform-release-plan/2021wave1/features-ready-early-access) and [Dynamics 365](/dynamics365-release-plan/2021wave1/features-ready-early-access) to know the features that will roll out to the users automatically when you opt in for an update.
 
 ## Early access availability  
-For each of the major releases, you can opt in for early access updates approximately two months before the major release is automatically enabled in your region.
+For each of the major releases, you can opt-in for early access updates approximately two months before the major release is automatically enabled in your region. 
 
-For example, for a wave 1 major release that's planned to be automatically enabled starting in the first week of April, you'll be able to opt in for early access updates in early February. Similarly, for a wave 2 release that's planned to be automatically enabled starting in the first week of October, you'll be able to opt in for early access updates in early August.
+There are two major releases, Wave 1 and Wave 2:
+- For the Wave 1 release, that's planned for general availablility starting in the first week of April, you can opt-in for early access updates on the first Monday of February.
+- For the Wave 2 release, that's planned for general availablility starting in the first week of October, you can opt-in for early access updates on the first Monday of August.
+- 
+The specific schedule for each wave release is updated in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule) before early access starts for each wave release.
+
+> [!NOTE]
+> Early access is not granted automatically.
+> - For each _release wave_, you must opt-in for early access updates.
+> - For each _environment that you want updated_, you must opt-in for early access updates.
 
 The following is an example of an early update availability timeline.
 
@@ -166,7 +177,7 @@ If you've enabled the early access updates in your environments, you'll continue
 
 If you didn't opt in for the early access updates in your environments, after a release wave is generally available, all environments will be automatically turned on to receive mandatory updates of the release wave.  For regional deployment, see [General availability deployment](./general-availability-deployment.md)
  
-Throughout a release wave, your environments will be updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates will occur will be published to the [Message Center](/office365/admin/manage/message-center?view=o365-worldwide). Each notification will include the dates, the maintenance window, and the Release Plan reference for the list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time.
+Throughout a release wave, your environments will be updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates will occur will be published to the [Message Center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true). Each notification will include the dates, the maintenance window, and the Release Plan reference for the list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time.
 
 See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance). 
 

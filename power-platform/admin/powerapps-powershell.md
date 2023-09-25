@@ -5,11 +5,14 @@ author: laneswenka
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 01/20/2023
+ms.date: 09/20/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+ms.contributors:
+ - jopanchal
+ - amijh
 ---
 
 # PowerShell support for Power Apps 
@@ -505,8 +508,6 @@ Remove-DlpPolicy
 
 Deletes a DLP policy.
 
-
-
 ### DLP resource exemption cmdlets 
 
 These cmdlets allow you to exempt or unexempt a specific resource from a DLP policy. 
@@ -629,6 +630,32 @@ Set-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{
   } 
 } 
 ``` 
+
+#### Enforce DLP policy for violating connections
+
+These cmdlets allow you to enforce DLP policy for violating connections at environment or tenant level.
+
+##### Enforce DLP policy for violating connections at environment level
+
+Enforce DLP policies on connections in an environment. This will disable connections that are violating DLP policies.
+
+```powershell 
+Start-DLPEnforcementOnConnectionsInEnvironment -EnvironmentName [Environment ID]
+``` 
+
+**Example**
+
+```powershell
+Start-DLPEnforcementOnConnectionsInEnvironment -EnvironmentName c4a07cd6-cb14-e987-b5a2-a1dd61346963 
+```
+
+##### Enforce DLP policy for violating connections at tenant level
+
+Enforce DLP policies on connections in the tenant. This will disable connections that are violating DLP policies.
+
+```powershell
+Start-DLPEnforcementOnConnectionsInTenant
+```
 
 ### Block trial licenses commands
 
