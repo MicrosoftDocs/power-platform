@@ -35,13 +35,14 @@ These are the primary elements of Managed Environments:
 > Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 
 ### See also
-[Enable Managed Environments](managed-environment-enable.md)   <br />
-[Usage insights](managed-environment-usage-insights.md)  <br />
-[Limit sharing](managed-environment-sharing-limits.md)  <br />
-[Data policies](managed-environment-data-policies.md) <br />
-[Licensing](managed-environment-licensing.md) <br />
-[View license consumption (preview)](view-license-consumption-issues.md) <br />
-[Tenant settings](tenant-settings.md) 
+- [Enable Managed Environments](managed-environment-enable.md)   
+- [Usage insights](managed-environment-usage-insights.md)  
+- [Limit sharing](managed-environment-sharing-limits.md)  
+- [Data policies](managed-environment-data-policies.md)
+- [Licensing](managed-environment-licensing.md) 
+- [View license consumption (preview)](view-license-consumption-issues.md) 
+- [Tenant settings](tenant-settings.md)
+- [Default environment routing](default-environment-routing.md)
 
 
 

@@ -88,7 +88,7 @@ At this point you're accessing the endpoint in the cloud, so unless you are alre
 >
 >   3. As part of an incremental build from Solution Explorer, setting **Deploy changes to online environment** to true will only deploy changes since the last successful deployment or those made as part of this build. It will honor the project settings for **Synchronize database**.
 >
->   4. Right-click a project and choose to **Deploy model for project ...**. This will only deploy changes since last successful deployment and also synchronize the database for the module.
+>   4. Right-click a project and choose to **Deploy model for project ...**. This will only deploy changes since last successful deployment but will not synchronize the database for the module.
 >
 >   5. Synchronize the database for all models without deploying anything new via **Dynamics 365** > **Synchronize database...**.
 
