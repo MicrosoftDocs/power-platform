@@ -3,7 +3,7 @@ title: Default environment routing (preview)
 description: Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/18/2023
+ms.date: 09/25/2023
 author: hasharaf 
 ms.author: hasharaf 
 ms.reviewer: sericks
@@ -30,6 +30,7 @@ Dataverse is available in developer environments, and these environments are [Ma
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - By default, all developer environments created through environment routing are managed.
 > - Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
+> - **Non-managed** developer environments are **unaffected** by this feature. Learn more about the developer environment and developer plan in [About the Power Apps Developer Plan](../developer/plan.md).
 
 ## Prerequisites
 
@@ -41,7 +42,7 @@ Default environment routing is a tenant-level, admin setting that:
 
     :::image type="content" source="media/developer-environments-assignment-everyone.png" alt-text="The Developer environment assignment setting must be enabled for Everyone.":::
     
--   Requires the use of Managed Environment, since all of the newly created environments will be managed. Users in a managed developer environment will require premium licenses to run Power Platform assets.
+-   Requires the use of Managed Environments, since all of the newly, created environments are managed. Users in a **managed** developer environment must have premium licenses to run Power Platform assets.
 
 ## Enable the Default environment routing setting
 
@@ -177,5 +178,13 @@ During the preview, the default environment routing is limited to Power Apps onl
 
 ### Do I need to be a Power Platform tenant admin to enable this feature?
 
-Yes, you need to have a Power Platform tenant admin privilege to enable this feature in your tenant or you can ask your tenant admin to turn it on for you.
+Yes, you need to have a Power Platform tenant admin privilege to enable this feature in your tenant, or you can ask your tenant admin to turn it on for you.
+
+### Does creating an app or flow in a managed, developer environment require a premium license?
+
+A premium license isn't required for the creation or preview of an app or flow in a managed, developer environment. However, a user or maker needs a premium license to *run* an app or flow in a managed, developer environment.
+
+### Does the default environment need to be managed to enable environment routing?
+
+No, the default environment doesn't need to be managed to enable environment routing. 
 
