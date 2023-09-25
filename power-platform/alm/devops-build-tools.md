@@ -108,7 +108,7 @@ This command has two parameters:
 |name|short name|Required|Description|
 |---------|---------|---------|---------|
 |`environment`|`env`|Yes|The ID or URL of the environment to add an application user to.|
-|`role`|`r`|No|Name or ID of security role to be applied to application user. The default value is: 'System Administrator'. <br />Note: Solution Chcker requires a role with privileges to append to msdyn_analysisjob. 'System Administrator' has this privilege by default.|
+|`role`|`r`|No|Name or ID of security role to be applied to application user. The default value is: 'System Administrator'. <p/>Solution Checker requires a role with prvAppendmsdyn_analysisjob privilege to append to msdyn_analysisjob. The System Administrator role has this privilege by default.|
 
 You can use it like this:
 
