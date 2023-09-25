@@ -90,7 +90,7 @@ For the examples in this section, the current time is **8:58 PM** on **July 11, 
 | **IsToday( DateAdd( Now(), 12 ) )**                       | Tests whether the current date and time, plus 12 days, is between midnight today and midnight tomorrow.      | **false**             |
 | **IsToday( DateAdd( Today(), 12 ) )**                     | Tests whether the current date, plus 12 days, is between midnight today and midnight tomorrow.               | **false**             |
 | **Hour( UTCNow() )**                                      | Retrieves the current date and time in UTC and extracts the hour only, which is 8 hours ahead of local time. | 4                     |
-| **Day( UTCToday() )**                                     | Retrives the current date only in UTC and extracts the day, which is 1 day ahead of local time.              | 12                    |
+| **Day( UTCToday() )**                                     | Retrieves the current date only in UTC and extracts the day, which is 1 day ahead of local time.              | 12                    |
 | **IsUTCToday( UTCNow() )**                                | Tests whether the current date and time is between midnight today and midnight tomorrow, all in UTC time.    | **true**              |
 | **IsUTCToday( UTCToday() )**                              | Tests whether the current date is between midnight today and midnight tomorrow, all in UTC time.             | **true**              |
 
