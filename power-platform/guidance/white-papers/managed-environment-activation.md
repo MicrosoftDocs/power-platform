@@ -25,21 +25,20 @@ There are different aspects depending on the environment type, business needs, o
 
 Managed Environments being a suite of features is important to understand each feature capability and advantages.
 
-Pipelines in Power Platform are used by organizations to democratize application lifecycle management, enabling them to streamline and optimize their development processes. Managed Environments also offer a range of features and capabilities that empower administrators to customize makers' welcome messages in-product, restrict sharing of canvas apps, and gain valuable insights into user activity. With the possibility to manage all data loss prevention (DLA) policies associated with a specific environment, it allows administrators to be more efficient and focused on business needs. Enforcing static analysis checks on solutions and limiting user access to Dataverse through IP Firewall and IP cookie binding allows administrators to follow internal policies and best practices. Customers can use the Customer Managed Key (CMK) feature to encrypt their data at-rest and meet stringent data privacy and compliance requirements. Microsoft's Lockbox feature ensures that customer data is accessed by Microsoft only when there's a compelling business reason to do so, while extended backup capabilities safeguard against data loss and ensure continuous availability of service. Additionally, Power Automate's DLP feature enables organizations to create and enforce policies that classify desktop flow and individual actions, which helps to ensure that sensitive data is protected always.
+Pipelines in Power Platform are used by organizations to democratize application lifecycle management (ALM), enabling them to streamline and optimize their development processes. Managed Environments also offer a range of features and capabilities that empower administrators to customize makers' welcome messages in-product, restrict sharing of canvas apps, and gain valuable insights into user activity. With the possibility to manage all data loss prevention (DLA) policies associated with a specific environment, it allows administrators to be more efficient and focused on business needs. Enforcing static analysis checks on solutions and limiting user access to Dataverse through IP Firewall and IP cookie binding allows administrators to follow internal policies and best practices. Customers can use the Customer Managed Key (CMK) feature to encrypt their data at-rest and meet stringent data privacy and compliance requirements. Microsoft's Lockbox feature ensures that customer data is accessed by Microsoft only when there's a compelling business reason to do so, while extended backup capabilities safeguard against data loss and ensure continuous availability of service. Additionally, Power Automate's DLP feature enables organizations to create and enforce policies that classify desktop flow and individual actions, which helps to ensure that sensitive data is protected always.
 
 The following sections are presented with examples and ideas of how your organization could take advantage of Managed Environments.
 
 ### Pipelines in Power Platform
 
-Pipelines in Power Platform aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.
+Pipelines in Power Platform aim to democratize application lifecycle management practices for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers. To learn more about pipelines, see [Overview of pipelines in Power Platform](../../alm/pipelines.md).
 
-To find more information on how the feature works, you can follow [this link](/power-platform/alm/pipelines).
+Although pipelines aren't always used by IT administrators or members of the governance team, it's common in organizations for these teams to provide support on how solutions should be deployed to different environments. Administrators are enabled to centrally manage and govern pipelines, providing makers with intuitive user experiences for easily deploying their solutions.
 
-Although pipelines aren't always used by IT administrators or members of the governance team, it's common in organizations for these teams to provide support on how solutions should be deployed to different environments. Administrators are enabled to centrally manage and govern pipelines, providing makers with intuitive user experience for easily deploying their solutions.
-
-To move a solution from one environment to another, typically specified as the source environment and target environment, a user with the appropriate security group needs to create a pipeline. A pipeline specifies all the environments included in the application life cycle, meaning what the developer environment and target environments (test, quality, production) are. The most common pipeline is composed of Dev/Test/Production environments, but it's also common to see Dev/Validation/Test/Production, for instance. With pipelines in the Power Platform, you can create a pipeline that fits your needs and specifications. An example of a pipeline is shown in the following picture:
+To move a solution from one environment to another, typically specified as the _source environment_ and _target environment_, a user with the appropriate security group needs to create a pipeline. A pipeline specifies all the environments included in the application lifecycle, meaning what the developer environment and target environments (test, quality, production) are. The most common pipeline is composed of Dev/Test/Production environments, but it's also common to see Dev/Validation/Test/Production, for instance. With pipelines in the Power Platform, you can create a pipeline that fits your needs and specifications. An example of a pipeline is shown in the following picture:
 
 ![A screenshot of the Pipelines screen in Power Apps](../media/mae/image1.png)
+:::image type="content" source="media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png" alt-text="Upload the deployment profile.":::
 
 One crucial aspect to consider when utilizing Managed Environments is that all environments within a pipeline must be activated as Managed Environments. If an organization has a pipeline consisting of Dev/Test/Production environments, all these environments must be activated as Managed Environments.
 
@@ -59,7 +58,7 @@ It's crucial to inform Makers about the company rules and what can be done in ea
 
   As an example, you could inform makers that the Default Environment is intended to be used only for O365 related features such as SharePoint Forms. It's recommended not to use production applications on Default Environment, which means sharing limits might be in place. We describe better how to limit the sharing possibilities, but informing the makers in the beginning can lead to a cleaner Environment and more compliant Apps. Taking all factors into consideration an example of message could be:
 
-![A screenshot of the Welcome message in Power Apps](../media/mae/image2.png)
+:::image type="content" source="../media/mae/image2.png" alt-text="A screenshot of the Welcome message in Power Apps.":::
 
 Configuration would look something like this:
 
@@ -79,7 +78,7 @@ If you are unsure about if you are in the right place? Follow [this guidance**](
 
 The **Learn More** link can be configured under the settings, as the following picture suggests.
 
-![A screenshot of Power Apps showing a "Getting Started" popup](../media/mae/image3.png)
+:::image type="content" source="../media/mae/image3.png" alt-text="A screenshot of Power Apps showing a "Getting Started" pop-up.":::
 
 ### Production environments
 
@@ -87,19 +86,19 @@ They're typically used for deploying solutions to production. It's targeting ent
 
 A proposed message for an environment created for the Finance department in Europe could be the following.
 
-![A screenshot of Power Apps showing a "Getting Started" popup for a production environment](../media/mae/image4.png)
+:::image type="content" source="../media/mae/image4.png" alt-text="A screenshot of Power Apps showing a "Getting Started" popup for a production environment.":::
 
 ### Developer environments
 
 It's often used for developers to build their solutions. Since the developers are working on the application, it isn't in production and the scalability is limited. Normally it has more relaxed DLPs due to the nature of the makers, but to avoid the Developers using this type of environments with production assets is important to limit the sharing capabilities and a specific DLP to be assigned to this type of environments. An example of a Maker onboarding message can be the following.
 
-![A screenshot of Power Apps showing a "Getting Started" popup for a developer environment](../media/mae/image5.png)
+:::image type="content" source="../media/mae/image5.png" alt-text="A screenshot of Power Apps showing a "Getting Started" popup for a developer environment.":::
 
 ### Sandbox Environments
 
 Typically this type of environments is used when testing a solution. Due to some tests involving a significant number of users these environments scale to a certain point and have more capacity than a Developer environment type. It's also common to use this type of environment as a development environment, normally shared by multiple developers. An example of a Maker onboarding message can be the following.
 
-![A screenshot of Power Apps showing a "Getting Started" popup for a sandbox environment](../media/mae/image6.png)
+:::image type="content" source="../media/mae/image6.png" alt-text="A screenshot of Power Apps showing a "Getting Started" popup for a sandbox environment.":::
 
 Now that you have seen some examples of how to use the Maker welcome message it's important you adapt based on your organization needs.
 
@@ -330,7 +329,7 @@ To find more information on how the feature works, you can follow [this link](/p
 
 At the time of writing, by default, desktop flows action groups don’t appear when a DLP policy is being created, the administrator needs to activate a Tenant Setting in the Power Platform admin center, as it’s shows in the following picture.
 
-![Screenshot of the DLP for desktop flows setting in the Power Platform admin center.](../media/mae/image17.png)
+:::image type="content" source="../media/mae/image17.png" alt-text="Screenshot of the DLP for desktop flows setting in the Power Platform admin center.":::
 
 The Default Environment allows everyone to be a Maker and take advantage of Desktop Flows in Microsoft Windows. However, it's important to have a strategy for Data Loss Prevention (DLP) strategy in Desktop Flows, just as one would for Cloud Flows. This is to ensure compliance with organizational policies. For example, if an organization is blocking the running of scripts on user PCs, it's important to prevent makers from creating Desktop Flows with a "Run Script" action. Similarly, if an organization is limiting the usage of the HTTP connector, it would be relevant to block similar actions in Desktop Flows to ensure compliance.
 
@@ -346,7 +345,7 @@ To find more information on how the feature works, you can follow [this link](/p
 
 Organizations that have widely used App or Power Automate Flows are using this feature to get more control of their assets. The following picture shows the count and average duration of each operation for a Model Driven App. This information is useful to identify those operations that most affect users.
 
-![Application Insights Performance panel.](../media/mae/image18.png)
+:::image type="content" source="../media/mae/image18.png" alt-text="Application Insights Performance panel.":::
 
 Organizations with Dataverse Environments use the data stream to monitor performance data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. It also provides data for failures in plug-in and Dataverse SDK operations.
 
