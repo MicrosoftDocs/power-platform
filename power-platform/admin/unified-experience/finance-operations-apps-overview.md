@@ -91,9 +91,9 @@ The following list of continually updated scenario tutorials provides a walkthro
 - [Manage storage and capacity](../finance-operations-storage-capacity.md)
 
 ### Known limitations during preview
-As part of the preview, there are a few knonw limitations of functionality that Microsoft is looking to address.  These limitations will soon be removed, so please check back often to determine their resolution.
-- The environment templates don't include Project Operations.  This will soon be resolved.
-- The environment name cannot exceed 20 characters.  This is a limitation on the finance and operations runtime that will soon be removed.
+As part of the preview, there are a few known limitations of functionality that Microsoft is looking to address. These limitations will soon be removed, so please check back often to determine their resolution.
+- The environment templates don't include Project Operations. This will soon be resolved.
+- The environment name cannot exceed 20 characters. This is a limitation on the finance and operations runtime that will soon be removed.
 
 
 ### Related articles

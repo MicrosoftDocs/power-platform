@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/developer/cli/reference/tests.md",
+      "redirect_url": "test",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "power-platform/developer/cli/reference/paportal.md",
+      "redirect_url": "powerpages",
+      "redirect_document_id": "false"
+    }, 
+    {
       "source_path": "power-platform/alm/maintain-managed-solutions.md",
       "redirect_url": "/power-apps/maker/data-platform/update-solutions",
       "redirect_document_id": "false"
