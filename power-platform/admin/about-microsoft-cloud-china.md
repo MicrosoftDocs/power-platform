@@ -4,13 +4,16 @@ description: This article provides information about Microsoft Power Platform an
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/23/2023
+ms.date: 09/25/2023
 ms.subservice: admin
 ms.author: sericks
 ms.contributors:
 - macarrer
 - pvayner
 - shailesn
+- ahothur
+contributors:
+- Akshay-Koushik-Hothur 
 ---
 # Power Platform and Dynamics 365 apps operated by 21Vianet in China
 
