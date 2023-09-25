@@ -37,30 +37,30 @@ Although pipelines aren't always used by IT administrators or members of the gov
 
 To move a solution from one environment to another, typically specified as the _source environment_ and _target environment_, a user with the appropriate security group needs to create a pipeline. A pipeline specifies all the environments included in the application lifecycle, meaning what the developer environment and target environments (test, quality, production) are. The most common pipeline is composed of Dev/Test/Production environments, but it's also common to see Dev/Validation/Test/Production, for instance. With pipelines in the Power Platform, you can create a pipeline that fits your needs and specifications. An example of a pipeline is shown in the following picture:
 
-![A screenshot of the Pipelines screen in Power Apps](../media/mae/image1.png)
-:::image type="content" source="media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png" alt-text="Upload the deployment profile.":::
+:::image type="content" source="../media/mae/image1.png" alt-text="A screenshot of the Pipelines screen in Power Apps.":::
 
 One crucial aspect to consider when utilizing Managed Environments is that all environments within a pipeline must be activated as Managed Environments. If an organization has a pipeline consisting of Dev/Test/Production environments, all these environments must be activated as Managed Environments.
 
-It's also important to note that personal productivity solutions should be in a personal development environment. The usage of Pipelines facilitate the deployment of these solutions to target environments. Having this in consideration, it allows Administrators and CoE teams to focus on enabling makers instead of cleaning up resources, especially in Default Environment.
+It's also important to note that personal productivity solutions should be in a personal, development environment. The usage of pipelines facilitate the deployment of these solutions to target environments. Having this in consideration, it allows administrators and Center of Excellence (CoE) teams to focus on enabling makers instead of cleaning up resources, especially in the default environment.
 
-Some organizations include pipeline creation as part of their environment creation process. This not only streamlines the process for Makers to publish solutions in the correct environments, but also ensures standardization within the organization. Furthermore, these processes can be automated, from environment creation to pipeline creation, and the respective roles can be assigned accordingly.
+Some organizations include pipeline creation as part of their environment creation process. This not only streamlines the process for makers to publish solutions in the correct environments, but it also ensures standardization within the organization. Furthermore, these processes can be automated, from environment creation to pipeline creation, and the respective roles can be assigned accordingly.
 
 ### Maker welcome content
 
-In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com/).
+In Managed Environments, admins can provide customized, welcome content to help their makers get started with [Power Apps](https://make.powerapps.com/).
 
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/welcome-content).
+For more information about how the feature works, see [Enable maker welcome content](../../admin/welcome-content.md).
 
-It's crucial to inform Makers about the company rules and what can be done in each environment or group of environments. Here are some suggestions on how your organization could use the welcome message depending on environment type:
+It's crucial to inform makers about the company rules and what can be done in each environment or group of environments. Here are some suggestions on how your organization could use the welcome message, depending on the environment type.
 
-- **Default Environment**: this is often the most restricted environment with DLPs and sharing controls. To make sure your Makers know about the possible limitations, a good starting point is to create a customized welcome message and include a link to your organization’s policy website or document.
+#### Default environment 
+The default environment is often the most restricted environment with DLPs and sharing controls. To make sure your makers know about the possible limitations, a good starting point is to create a customized welcome message and include a link to your organization’s policy website or document.
 
-  As an example, you could inform makers that the Default Environment is intended to be used only for O365 related features such as SharePoint Forms. It's recommended not to use production applications on Default Environment, which means sharing limits might be in place. We describe better how to limit the sharing possibilities, but informing the makers in the beginning can lead to a cleaner Environment and more compliant Apps. Taking all factors into consideration an example of message could be:
+As an example, you could inform makers that the default environment is intended to be used only for Office 365 related features, such as SharePoint forms. It's recommended that you don't use production applications on the default environment, which means sharing limits might be in place. We describe how to limit the sharing possibilities, but informing the makers in the beginning can lead to a cleaner environment and more compliant apps. Taking all factors into consideration, an example of message could look like the following image.
 
 :::image type="content" source="../media/mae/image2.png" alt-text="A screenshot of the Welcome message in Power Apps.":::
 
-Configuration would look something like this:
+Based on the above image, configuration would look something like this:
 
 ```markdown
 [Contoso](https://i.ibb.co/SNSTCx3/something.png)
@@ -80,7 +80,7 @@ The **Learn More** link can be configured under the settings, as the following p
 
 :::image type="content" source="../media/mae/image3.png" alt-text="A screenshot of Power Apps showing a "Getting Started" pop-up.":::
 
-### Production environments
+#### Production environments
 
 They're typically used for deploying solutions to production. It's targeting enterprise applications and team productivity applications. In this case, it's important to have compliant apps and data. Since you need to control which users have access to the production environment it's beneficial to inform the user if you have a policy of refreshing access. According to the use case, you might allow more connectors and increase the sharing limits. Depending on your centralized or decentralized support team, you can also use this message to inform the right team to support the Makers.
 
@@ -88,13 +88,13 @@ A proposed message for an environment created for the Finance department in Euro
 
 :::image type="content" source="../media/mae/image4.png" alt-text="A screenshot of Power Apps showing a "Getting Started" popup for a production environment.":::
 
-### Developer environments
+#### Developer environments
 
 It's often used for developers to build their solutions. Since the developers are working on the application, it isn't in production and the scalability is limited. Normally it has more relaxed DLPs due to the nature of the makers, but to avoid the Developers using this type of environments with production assets is important to limit the sharing capabilities and a specific DLP to be assigned to this type of environments. An example of a Maker onboarding message can be the following.
 
 :::image type="content" source="../media/mae/image5.png" alt-text="A screenshot of Power Apps showing a "Getting Started" popup for a developer environment.":::
 
-### Sandbox Environments
+#### Sandbox Environments
 
 Typically this type of environments is used when testing a solution. Due to some tests involving a significant number of users these environments scale to a certain point and have more capacity than a Developer environment type. It's also common to use this type of environment as a development environment, normally shared by multiple developers. An example of a Maker onboarding message can be the following.
 
