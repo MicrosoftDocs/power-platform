@@ -17,6 +17,9 @@ Historically administrators, partners, and ISVs have had to use cloud-hosted env
 
 To improve this experience, Microsoft has made available free subscription-based trial environments for finance and operations apps, including Dynamics 365 Finance, Supply Chain Management, Project Operations, and Commerce apps.
 
+> [!IMPORTANT]
+> The trial environments don't support development with Visual Studio. For development, you will need a developer-focused sandbox environment. More information: [Install and configure development tools](/power-platform/developer/unified-experience/finance-operations-install-config-tools).
+
 ## Acquire a free subscription-based trial license
 
 The first step in deploying a trial environment is to acquire a trial license.  This can be done by a tenant administrator in the [Microsoft 365 Admin Center](https://admin.microsoft.com/) and visiting the **Marketplace** option.  
