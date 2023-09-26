@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/developer/cli/reference/tests.md",
+      "redirect_url": "test",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "power-platform/developer/cli/reference/paportal.md",
+      "redirect_url": "powerpages",
+      "redirect_document_id": "false"
+    }, 
+    {
       "source_path": "power-platform/alm/maintain-managed-solutions.md",
       "redirect_url": "/power-apps/maker/data-platform/update-solutions",
       "redirect_document_id": "false"
@@ -8,6 +18,11 @@
     {
       "source_path": "power-platform/admin/managed-environment-weekly-digests.md",
       "redirect_url": "managed-environment-usage-insights",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/set-up-sales-territories-organize-business-markets-geographical-area.md",
+      "redirect_url": "/dynamics365/sales/set-up-sales-territories",
       "redirect_document_id": "false"
     },
     {
@@ -608,6 +623,21 @@
     {
       "source_path": "power-platform/admin/about-power-virtual-agents.md",
       "redirect_url": "/power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/transparency-note-copilot-data-security-privacy.md",
+      "redirect_url": "/power-platform/faqs-copilot-data-security-privacy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/transparency-note-copilot-data-sharing.md",
+      "redirect_url": "/power-platform/faqs-copilot-data-sharing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/transparency-note-overview.md",
+      "redirect_url": "/power-platform/responsible-ai-overview",
       "redirect_document_id": "false"
     },
     {

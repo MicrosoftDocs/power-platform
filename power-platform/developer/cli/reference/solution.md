@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 6/15/2023
+ms.date: 9/18/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,38 +26,38 @@ Commands for working with Dataverse solution projects
 
 |Command|Description|
 |---------|---------|
-|[pac solution add-license](#pac-solution-add-license)|Add license and plan info to solution|
+|[pac solution add-license](#pac-solution-add-license)|Add license and plan info to the solution.|
 |[pac solution add-reference](#pac-solution-add-reference)|Adds a reference from the project in the current directory to the project at 'path'|
-|[pac solution add-solution-component](#pac-solution-add-solution-component)|Add solution component(s) to the target unmanaged solution in Dataverse.|
-|[pac solution check](#pac-solution-check)|Upload a Dataverse Solution project to run against the Power Apps Checker Service|
-|[pac solution clone](#pac-solution-clone)|Create a solution project based on an existing solution in your Organization|
+|[pac solution add-solution-component](#pac-solution-add-solution-component)|Add one or more solution components to the target unmanaged solution in Dataverse.|
+|[pac solution check](#pac-solution-check)|Upload a Dataverse solution project to run against the Power Apps Checker service.|
+|[pac solution clone](#pac-solution-clone)|Create a solution project based on an existing solution in your organization.|
 |[pac solution create-settings](#pac-solution-create-settings)|Create a settings file from solution zip or solution folder.|
-|[pac solution delete](#pac-solution-delete)|Delete solution from Dataverse in the current Environment.|
+|[pac solution delete](#pac-solution-delete)|Delete a solution from Dataverse in the current environment.|
 |[pac solution export](#pac-solution-export)|Export a solution from Dataverse.|
 |[pac solution import](#pac-solution-import)|Import the solution into Dataverse.|
 |[pac solution init](#pac-solution-init)|Initializes a directory with a new Dataverse solution project|
-|[pac solution list](#pac-solution-list)|List all Solutions from the current Dataverse Organization|
+|[pac solution list](#pac-solution-list)|List all Solutions from the current Dataverse organization|
 |[pac solution online-version](#pac-solution-online-version)|Sets version for solution loaded in Dataverse.|
-|[pac solution pack](#pac-solution-pack)|Package solution components on local filesystem into solution.zip (SolutionPackager)|
+|[pac solution pack](#pac-solution-pack)|Package solution components on local filesystem into solution.zip (SolutionPackager).|
 |[pac solution publish](#pac-solution-publish)|Publishes all customizations|
-|[pac solution sync](#pac-solution-sync)|Sync the current Dataverse solution project to the current state of the solution in your Organization.|
-|[pac solution unpack](#pac-solution-unpack)|Extract solution components from solution.zip onto local filesystem (SolutionPackager)|
+|[pac solution sync](#pac-solution-sync)|Sync the current Dataverse solution project to the current state of the solution in your organization.|
+|[pac solution unpack](#pac-solution-unpack)|Extract solution components from solution.zip onto local filesystem (SolutionPackager).|
 |[pac solution upgrade](#pac-solution-upgrade)|Option to stage the Dataverse solution for upgrade|
-|[pac solution version](#pac-solution-version)|Update build or revision version for solution|
+|[pac solution version](#pac-solution-version)|Update build or revision version for the solution.|
 
 
 ## pac solution add-license
 
-Add license and plan info to solution
+Add license and plan info to the solution.
 
 [!INCLUDE [solution-add-license-intro](includes/solution-add-license-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution add-license
 
 #### `--planDefinitionFile` `-pd`
 
-License plan definition file in CSV format; expected columns: Service ID, Display name, More info URL
+License plan definition file in CSV format; expected columns: Service ID, Display name, More info URL.
 
 #### `--planMappingFile` `-pm`
 
@@ -72,7 +72,7 @@ Adds a reference from the project in the current directory to the project at 'pa
 [!INCLUDE [solution-add-reference-intro](includes/solution-add-reference-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution add-reference
 
 #### `--path` `-p`
 
@@ -82,33 +82,33 @@ The path to the referenced project
 
 ## pac solution add-solution-component
 
-Add solution component(s) to the target unmanaged solution in Dataverse.
+Add one or more solution components to the target unmanaged solution in Dataverse.
 
 [!INCLUDE [solution-add-solution-component-intro](includes/solution-add-solution-component-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution add-solution-component
 
 #### `--component` `-c`
 
-The schema name or ID of the component to add to the target solution
+The schema name or ID of the component to add to the target solution.
 
 #### `--componentType` `-ct`
 
-The value that represents the solution component that you are adding
+The value that represents the solution component that you're adding.
 
 #### `--solutionUniqueName` `-sn`
 
-Name of the solution
+Name of the solution.
 
 
-### Optional Parameters
+### Optional Parameters for solution add-solution-component
 
 #### `--AddRequiredComponents` `-arc`
 
-Indicates whether other solution components that are required by the solution component that you are adding should also be added to the unmanaged solution
+Indicates whether other solution components required by the solution component that you're adding should also be added to the unmanaged solution.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--environment` `-env`
 
@@ -118,16 +118,16 @@ Environment URL or ID of the target environment.
 
 ## pac solution check
 
-Upload a Dataverse Solution project to run against the Power Apps Checker Service
+Upload a Dataverse solution project to run against the Power Apps Checker service.
 
 [!INCLUDE [solution-check-intro](includes/solution-check-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for solution check
 
 #### `--customEndpoint` `-ce`
 
-Specify a custom URL as Power Apps Checker endpoint
+Specify a custom URL as the Power Apps Checker endpoint.
 
 #### `--excludedFiles` `-ef`
 
@@ -168,21 +168,21 @@ Output directory
 
 #### `--path` `-p`
 
-Path where the to-be-checked solution zip file(s) exist; path can contain glob/wildcard characters
+Path where one or more solution files to be checked exist. The path can contain glob/wildcard characters.
 
 #### `--ruleLevelOverride` `-rl`
 
-Path to a file containing a JSON array rules and levels to override.  Accepted values for OverrideLevel are: Critical, High, Medium, Low, Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}]
+Path to a file containing a JSON array rules and levels to override. Accepted values for OverrideLevel are: Critical, High, Medium, Low, Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}]
 
 #### `--ruleSet` `-rs`
 
-Select a rule set that will be executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default)
+Select a rule set that is executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default).
 
 #### `--saveResults` `-sav`
 
-Uses current environment to store solution analysis results which can be seen in Solution Health Hub App. By default, this argument is set to false
+Uses current environment to store solution analysis results that can be seen in Solution Health Hub App. By default, this argument is set to false.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--solutionUrl` `-u`
 
@@ -192,29 +192,29 @@ SAS Uri pointing to solution.zip to be analyzed
 
 ## pac solution clone
 
-Create a solution project based on an existing solution in your Organization
+Create a solution project based on an existing solution in your organization.
 
 [!INCLUDE [solution-clone-intro](includes/solution-clone-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution clone
 
 #### `--name` `-n`
 
-The name of the solution to be exported
+The name of the solution to be exported.
 
 
-### Optional Parameters
+### Optional Parameters for solution clone
 
 #### `--async` `-a`
 
-Exports solution asynchronously
+Exports the solution asynchronously.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--include` `-i`
 
-Which settings should be included in the solution being exported
+Which settings should be included in the solution being exported.
 
 Use one or more of these values separated by commas:
 
@@ -234,11 +234,11 @@ Use one or more of these values separated by commas:
 
 Extract or merge all string resources into .resx files.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 #### `--outputDirectory` `-o`
 
@@ -246,17 +246,17 @@ Output directory
 
 #### `--packagetype` `-p`
 
-Specifies the extraction type for the solution. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Both'
+Specifies the extraction type for the solution. Can be: 'Unmanaged', 'Managed' or 'Both'. The default value is: 'Both'.
 
 #### `--processCanvasApps` `-pca`
 
-(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. default: false
+(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--targetversion` `-v`
 
-**Deprecated**: This parameter will be ignored.
+**Deprecated**: This parameter is ignored.
 [!INCLUDE [solution-clone-remarks](includes/solution-clone-remarks.md)]
 
 ## pac solution create-settings
@@ -266,7 +266,7 @@ Create a settings file from solution zip or solution folder.
 [!INCLUDE [solution-create-settings-intro](includes/solution-create-settings-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for solution create-settings
 
 #### `--settings-file` `-s`
 
@@ -284,16 +284,16 @@ Path to solution zip file.
 
 ## pac solution delete
 
-Delete solution from Dataverse in the current Environment.
+Delete a solution from Dataverse in the current environment.
 
 [!INCLUDE [solution-delete-intro](includes/solution-delete-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution delete
 
 #### `--solution-name` `-sn`
 
-Name of the solution
+Name of the solution.
 
 [!INCLUDE [solution-delete-remarks](includes/solution-delete-remarks.md)]
 
@@ -304,28 +304,24 @@ Export a solution from Dataverse.
 [!INCLUDE [solution-export-intro](includes/solution-export-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution export
 
 #### `--name` `-n`
 
-The name of the solution to be exported
-
-#### `--path` `-p`
-
-Path where the exported solution zip file will be written
+The name of the solution to be exported.
 
 
-### Optional Parameters
+### Optional Parameters for solution export
 
 #### `--async` `-a`
 
-Exports solution asynchronously
+Exports the solution asynchronously.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--include` `-i`
 
-Which settings should be included in the solution being exported
+Which settings should be included in the solution being exported.
 
 Use one or more of these values separated by commas:
 
@@ -343,23 +339,27 @@ Use one or more of these values separated by commas:
 
 #### `--managed` `-m`
 
-Whether the solution should be exported as a managed solution
+Whether the solution should be exported as a managed solution.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 #### `--overwrite` `-ow`
 
 The exported solution file can overwrite the solution zip file on the local file system.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
+
+#### `--path` `-p`
+
+Path where the exported solution zip file is written.
 
 #### `--targetversion` `-v`
 
-**Deprecated**: This parameter will be ignored.
+**Deprecated**: This parameter is ignored.
 [!INCLUDE [solution-export-remarks](includes/solution-export-remarks.md)]
 
 ## pac solution import
@@ -369,41 +369,41 @@ Import the solution into Dataverse.
 [!INCLUDE [solution-import-intro](includes/solution-import-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for solution import
 
 #### `--activate-plugins` `-ap`
 
-Activate plug-ins and workflows on the solution
+Activate plug-ins and workflows on the solution.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--async` `-a`
 
-Imports solution asynchronously
+Imports the solution asynchronously.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--convert-to-managed` `-cm`
 
-Convert as Managed Solution
+Convert to a managed solution.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--force-overwrite` `-f`
 
 Force an overwrite of unmanaged customizations
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--import-as-holding` `-h`
 
-Import the solution as a holding solution
+Import the solution as a holding solution.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 #### `--path` `-p`
 
@@ -411,9 +411,9 @@ Path to solution zip file. If not specified, assumes the current folder is a cds
 
 #### `--publish-changes` `-pc`
 
-Publish your changes upon a successful import
+Publish your changes upon a successful import.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--settings-file`
 
@@ -423,7 +423,13 @@ The .json file with the deployment settings for connection references and enviro
 
 Skip dependency check against dependencies flagged as product update
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
+
+#### `--skip-lower-version` `-slv`
+
+Skip solution import if same or higher version is present in current environment.
+
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [solution-import-remarks](includes/solution-import-remarks.md)]
 
@@ -434,7 +440,7 @@ Initializes a directory with a new Dataverse solution project
 [!INCLUDE [solution-init-intro](includes/solution-init-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution init
 
 #### `--publisher-name` `-pn`
 
@@ -446,10 +452,10 @@ Name of the Dataverse solution publisher
 
 Customization prefix value for the Dataverse solution publisher
 
-**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.
+**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and can't start with 'mscrm'.
 
 
-### Optional Parameters
+### Optional Parameters for solution init
 
 #### `--outputDirectory` `-o`
 
@@ -459,20 +465,17 @@ Output directory
 
 ## pac solution list
 
-List all Solutions from the current Dataverse Organization
+List all Solutions from the current Dataverse organization
 
 [!INCLUDE [solution-list-intro](includes/solution-list-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for solution list
 
 #### `--environment` `-env`
 
-The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
 
-#### `--environment-id`
-
-**Deprecated**: Use `--environment` instead.
 [!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
 
 ## pac solution online-version
@@ -482,11 +485,11 @@ Sets version for solution loaded in Dataverse.
 [!INCLUDE [solution-online-version-intro](includes/solution-online-version-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution online-version
 
 #### `--solution-name` `-sn`
 
-Name of the solution
+Name of the solution.
 
 #### `--solution-version` `-sv`
 
@@ -496,57 +499,57 @@ Specify the solution version number.
 
 ## pac solution pack
 
-Package solution components on local filesystem into solution.zip (SolutionPackager)
+Package solution components on local filesystem into solution.zip (SolutionPackager).
 
 [!INCLUDE [solution-pack-intro](includes/solution-pack-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution pack
 
 #### `--zipfile` `-z`
 
 The full path to the solution ZIP file
 
 
-### Optional Parameters
+### Optional Parameters for solution pack
 
 #### `--allowDelete` `-ad`
 
-Dictates if delete operations may occur; default: false.
+Dictates if delete operations may occur. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--allowWrite` `-aw`
 
-Dictates if write operations may occur; default: false.
+Dictates if write operations may occur. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--clobber` `-c`
 
-Enables that files marked read-only can be deleted or overwritten; default: false.
+Enables that files marked read-only can be deleted or overwritten. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--disablePluginRemap` `-dpm`
 
-Disabled plug-in fully qualified type name remapping. default: false
+Disabled plug-in fully qualified type name remapping. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--errorlevel` `-e`
 
-Minimum logging level for log output [Verbose|Info|Warning|Error|Off]; default: Info
+Minimum logging level for log output [Verbose|Info|Warning|Error|Off]. The default value is 'Info'.
 
 #### `--folder` `-f`
 
-The path to the root folder on the local filesystem. When unpacking/extractins, this will be written to, when packing this will be read from.
+The path to the root folder on the local filesystem. When unpacking or extracting, this is written to. When packing this is read from.
 
 #### `--localize` `-loc`
 
 Extract or merge all string resources into .resx files.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--log` `-l`
 
@@ -558,33 +561,33 @@ The full path to a mapping xml file from which to read component folders to pack
 
 #### `--packagetype` `-p`
 
-When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'
+When unpacking or extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'. The default value is 'Unmanaged'.
 
 #### `--processCanvasApps` `-pca`
 
-(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. default: false
+(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--singleComponent` `-sc`
 
-Only perform action on a single component type [WebResource|Plugin|Workflow|None]; default: None.
+Only perform action on a single component type [WebResource|Plugin|Workflow|None]. The default value is 'None'.
 
 #### `--sourceLoc` `-src`
 
-Generates a template resource file. Valid only on Extract. Possible Values are auto or an LCID/ISO code of the language you wish to export. When Present, this will extract the string resources from the given locale as a neutral .resx. If auto or just the long or short form of the switch is specified the base locale for the solution will be used.
+Generates a template resource file. Valid only on extract. Possible values are 'auto', or language code of the language you wish to export. You can use Language Code Identifier (LCID), or International Organization for Standardization (ISO) language code formats. When present, this extracts the string resources from the given locale as a neutral .resx. If 'auto' or just the long or short form of the switch is specified, the base locale for the solution is used.
 
 #### `--useLcid` `-lcid`
 
-Use LCID's (1033) rather than ISO codes (en-US) for language files.
+Use Language Code Identifier (LCID) values (1033) rather than International Organization for Standardization (ISO) codes (en-US) for language files.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--useUnmanagedFileForMissingManaged` `-same`
 
-Use the same XML source file when packaging for Managed and only Unmanaged XML file is found; applies to AppModuleSiteMap, AppModuleMap, FormXml files
+Use the same XML source file when packaging for Managed and only Unmanaged XML file is found; applies to AppModuleSiteMap, AppModuleMap, FormXml files.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [solution-pack-remarks](includes/solution-pack-remarks.md)]
 
@@ -595,38 +598,38 @@ Publishes all customizations
 [!INCLUDE [solution-publish-intro](includes/solution-publish-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for solution publish
 
 #### `--async` `-a`
 
 Publishes all customizations asynchronously
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 [!INCLUDE [solution-publish-remarks](includes/solution-publish-remarks.md)]
 
 ## pac solution sync
 
-Sync the current Dataverse solution project to the current state of the solution in your Organization.
+Sync the current Dataverse solution project to the current state of the solution in your organization.
 
 [!INCLUDE [solution-sync-intro](includes/solution-sync-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for solution sync
 
 #### `--async` `-a`
 
-Exports solution asynchronously
+Exports the solution asynchronously.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--include` `-i`
 
-Which settings should be included in the solution being exported
+Which settings should be included in the solution being exported.
 
 Use one or more of these values separated by commas:
 
@@ -646,21 +649,21 @@ Use one or more of these values separated by commas:
 
 Extract or merge all string resources into .resx files.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 #### `--packagetype` `-p`
 
-When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Both'
+When unpacking or extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'. The default value is: 'Both'.
 
 #### `--processCanvasApps` `-pca`
 
-(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. default: false
+(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--solution-folder` `-f`
 
@@ -670,57 +673,57 @@ Path to the local, unpacked solution folder: either the root of the 'Other/Solut
 
 ## pac solution unpack
 
-Extract solution components from solution.zip onto local filesystem (SolutionPackager)
+Extract solution components from solution.zip onto local filesystem (SolutionPackager).
 
 [!INCLUDE [solution-unpack-intro](includes/solution-unpack-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution unpack
 
 #### `--zipfile` `-z`
 
 The full path to the solution ZIP file
 
 
-### Optional Parameters
+### Optional Parameters for solution unpack
 
 #### `--allowDelete` `-ad`
 
-Dictates if delete operations may occur; default: false.
+Dictates if delete operations may occur. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--allowWrite` `-aw`
 
-Dictates if write operations may occur; default: false.
+Dictates if write operations may occur. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--clobber` `-c`
 
-Enables that files marked read-only can be deleted or overwritten; default: false.
+Enables that files marked read-only can be deleted or overwritten. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--disablePluginRemap` `-dpm`
 
-Disabled plug-in fully qualified type name remapping. default: false
+Disabled plug-in fully qualified type name remapping. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--errorlevel` `-e`
 
-Minimum logging level for log output [Verbose|Info|Warning|Error|Off]; default: Info
+Minimum logging level for log output [Verbose|Info|Warning|Error|Off]. The default value is 'Info'.
 
 #### `--folder` `-f`
 
-The path to the root folder on the local filesystem. When unpacking/extractins, this will be written to, when packing this will be read from.
+The path to the root folder on the local filesystem. When unpacking or extracting, this is written to. When packing this is read from.
 
 #### `--localize` `-loc`
 
 Extract or merge all string resources into .resx files.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--log` `-l`
 
@@ -732,33 +735,33 @@ The full path to a mapping xml file from which to read component folders to pack
 
 #### `--packagetype` `-p`
 
-When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'
+When unpacking or extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'. The default value is 'Unmanaged'.
 
 #### `--processCanvasApps` `-pca`
 
-(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. default: false
+(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. The default value is 'false'.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--singleComponent` `-sc`
 
-Only perform action on a single component type [WebResource|Plugin|Workflow|None]; default: None.
+Only perform action on a single component type [WebResource|Plugin|Workflow|None]. The default value is 'None'.
 
 #### `--sourceLoc` `-src`
 
-Generates a template resource file. Valid only on Extract. Possible Values are auto or an LCID/ISO code of the language you wish to export. When Present, this will extract the string resources from the given locale as a neutral .resx. If auto or just the long or short form of the switch is specified the base locale for the solution will be used.
+Generates a template resource file. Valid only on extract. Possible values are 'auto', or language code of the language you wish to export. You can use Language Code Identifier (LCID), or International Organization for Standardization (ISO) language code formats. When present, this extracts the string resources from the given locale as a neutral .resx. If 'auto' or just the long or short form of the switch is specified, the base locale for the solution is used.
 
 #### `--useLcid` `-lcid`
 
-Use LCID's (1033) rather than ISO codes (en-US) for language files.
+Use Language Code Identifier (LCID) values (1033) rather than International Organization for Standardization (ISO) codes (en-US) for language files.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--useUnmanagedFileForMissingManaged` `-same`
 
-Use the same XML source file when packaging for Managed and only Unmanaged XML file is found; applies to AppModuleSiteMap, AppModuleMap, FormXml files
+Use the same XML source file when packaging for Managed and only Unmanaged XML file is found; applies to AppModuleSiteMap, AppModuleMap, FormXml files.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [solution-unpack-remarks](includes/solution-unpack-remarks.md)]
 
@@ -769,54 +772,54 @@ Option to stage the Dataverse solution for upgrade
 [!INCLUDE [solution-upgrade-intro](includes/solution-upgrade-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for solution upgrade
 
 #### `--solution-name` `-sn`
 
-Name of the solution
+Name of the solution.
 
 
-### Optional Parameters
+### Optional Parameters for solution upgrade
 
 #### `--async` `-a`
 
 Upgrades solution asynchronously
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--max-async-wait-time` `-wt`
 
-Max asynchronous wait time in minutes. Default value is 60 minutes
+Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 [!INCLUDE [solution-upgrade-remarks](includes/solution-upgrade-remarks.md)]
 
 ## pac solution version
 
-Update build or revision version for solution
+Update build or revision version for the solution.
 
 [!INCLUDE [solution-version-intro](includes/solution-version-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for solution version
 
 #### `--buildversion` `-bv`
 
-Build version for solution
+Build version for the solution.
 
-**Note**: The value must be a positive integer
+**Note**: The value must be a positive integer.
 
 #### `--filename` `-fn`
 
-Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv
+Tracker CSV file name to be used when using filetracking as a strategy. The default value is 'ControlsStateVersionInfo.csv'.
 
 #### `--patchversion` `-pv`
 
-**Deprecated**: This parameter will be ignored.
+**Deprecated**: This parameter is ignored.
 #### `--revisionversion` `-rv`
 
-Revision version for solution
+Revision version for the solution.
 
-**Note**: The value must be a positive integer
+**Note**: The value must be a positive integer.
 
 #### `--solutionPath` `-sp`
 

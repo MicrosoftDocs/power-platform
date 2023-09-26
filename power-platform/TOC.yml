@@ -17,13 +17,17 @@
           href: solution-templates/overview.md
         - name: International availability
           href: availability.md
+        - name: Enable copilots and generative AI features outside United States and Switzerland
+          href: admin/geographical-availability-copilot.md
         - name: Important changes (deprecations) coming
           href: important-changes-coming.md
         - name: Responsible AI
           items:
             - name: Overview
-              href: transparency-note-overview.md
-            - name: Transparency note for Copilot data security and privacy
-              href: transparency-note-copilot-data-security-privacy.md
-            - name: Transparency note for Copilot data sharing
-              href: transparency-note-copilot-data-sharing.md
+              href: responsible-ai-overview.md
+            - name: FAQ for Copilot data security and privacy
+              href: faqs-copilot-data-security-privacy.md
+            - name: FAQ for optional data sharing for Copilot
+              href: faqs-copilot-data-sharing.md
+            - name: FAQ for using Copilot to generate deployment notes in pipelines
+              href: alm/faqs-ai-deployment-notes-pipelines.md

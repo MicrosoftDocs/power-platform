@@ -31,10 +31,10 @@ Below are the steps to create a bot using an existing CLU model:
 Before you begin, make sure that you have your CLU model project name and deployment name.
 1. Create a new [Power Virtual Agents](authoring-first-bot.md) bot.
 
-> [!NOTE]
-> Ensure the [environment for your bot](environments-first-run-experience.md) has been created in a [region supported by Power Virtual Agents](data-location.md?tabs=web#data-locations) and which has an [equivalent CLU region](/azure/cognitive-services/language-service/conversational-language-understanding/service-limits#regional-availability).
->
-> Not all regions supported by Power Virtual Agents have an equivalent CLU region.
+   > [!NOTE]
+   > Ensure the [environment for your bot](environments-first-run-experience.md) has been created in a [region supported by Power Virtual Agents](data-location.md?tabs=web#data-locations) and which has an [equivalent CLU region](/azure/cognitive-services/language-service/conversational-language-understanding/service-limits#regional-availability).
+   >
+   > Not all regions supported by Power Virtual Agents have an equivalent CLU region.
 
 2. With your bot open, expand the **Settings** tab on the side menu pane and select **Language**.
 
@@ -43,7 +43,8 @@ Before you begin, make sure that you have your CLU model project name and deploy
    >[!NOTE]
    > If you have already enabled a CLU connection, skip to step 4.
 
-3. To create a new connection, from within Power Apps, choose the **Connections** menu, select **…More**, and then search for **Azure Cognitive Service for Language**.
+3. To create a new connection, from within Power Apps, choose the **Connections** menu, select **...More**, and then search for **Azure Cognitive Service for Language**.
+
 
     :::image type="content" source="media/advanced-clu-integration/clu-image2.png" alt-text="Azure Cognitive Service for Language." border="false":::
 

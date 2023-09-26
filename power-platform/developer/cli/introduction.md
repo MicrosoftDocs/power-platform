@@ -5,7 +5,7 @@ keywords: Microsoft Power Platform CLI, code components, component framework, CL
 ms.author: snizar
 author: snizar007
 ms.reviewer: jdaly
-ms.date: 05/16/2023
+ms.date: 08/21/2023
 ms.topic: overview
 ---
 # What is Microsoft Power Platform CLI?
@@ -39,14 +39,14 @@ Follow these steps to install Microsoft Power Platform CLI using Visual Studio C
 1. Select the **Extensions** icon from the **Activity** panel. In the search bar, enter **Power Platform Tools**.
 1. Select **Install**. Once the installation is finished, restart Visual Studio Code to see the extension within the **Terminal** window.
 
-   :::image type="content" source="media/power-platform-vs-code-extension-install.png" alt-text="VS Code extension install":::
+   :::image type="content" source="media/power-platform-vs-code-extension-install-v2.png" alt-text="VS Code extension install":::
 
    > [!NOTE]
    > Power Platform Tools for Visual Studio Code updates automatically.
 
 1. Optionally, you can initiate the install into Visual Studio Code directly from [Marketplace]( https://aka.ms/ppcvscode) and it launches Visual Studio Code and commence the extension installation.
 
-   :::image type="content" source="media/marketplace-install.png" alt-text="Launch install from Marketplace":::
+   :::image type="content" source="media/marketplace-install-v2.png" alt-text="Launch install from Marketplace":::
 
 You can also do a side-load install into Visual Studio Code by downloading the extension from the [Marketplace](https://aka.ms/ppcvscode).
 
@@ -56,7 +56,7 @@ In some organizations, downloading or initiating an install over the web is proh
 
 1. Go to the [Marketplace](https://aka.ms/ppcvscode) and instead of pressing the **Install** button, select the **Download Extension** link under **Resources**:
 
-   :::image type="content" source="media/side-load-install-1.png" alt-text="Download the extension":::
+   :::image type="content" source="media/side-load-install-1-v2.png" alt-text="Download the extension":::
    
    Clicking this link downloads a file with a .vsix extension on to your workstation.
 
@@ -74,11 +74,11 @@ Once the installation is successful, you need to restart Visual Studio Code, upo
 
 On the **Activity** bar. you notice the icon for the Power Platform Tools.
 
-:::image type="content" source="media/installation-success-3.png" alt-text="icon":::
+:::image type="content" source="media/installation-success-3-v2.png" alt-text="icon":::
 
 The final check would be to launch the terminal window and type `pac`.
 
-:::image type="content" source="media/installation-success-2.png" alt-text="PAC CLI in the terminal window":::
+:::image type="content" source="media/installation-success-2-v2.png" alt-text="PAC CLI in the terminal window":::
 
 ### Uninstall Power Platform Tools for Visual Studio Code
 
@@ -96,12 +96,18 @@ To install Power Platform CLI for Windows, you can either install via DotNet too
 
 - To install via .msi download and run the .msi file found here: [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI), choose the **Install** option.
 
-### Update Power Platform CLI for Windows
+### Update Power Platform CLI for Windows/MacOS/Linux
 
 To take advantage of all the latest capabilities, update Microsoft Power Platform CLI tooling to the latest version by using this command:
 
 ```dotnetcli
 pac install latest
+```
+
+To update via [DotNet tool](/dotnet/core/tools/global-tools), you must have [.NET](https://dotnet.microsoft.com/download) installed (.NET 6.0 recommended). Update Power Platform CLI by using this command:
+
+```dotnetcli
+dotnet tool update --global Microsoft.PowerApps.CLI.Tool
 ```
 
 > [!NOTE]
@@ -150,6 +156,10 @@ This table lists some of the common commands used in the PAC CLI.
 
 > [!TIP]
 > For the complete list of supported commands, see [Microsoft Power Platform CLI Command Groups](reference/index.md) or  run the `pac` command or `pac` \<subcommand> - for example: `pac solution`.
+
+## Provide feedback
+
+Use [github.com/microsoft/powerplatform-build-tools/discussions](https://github.com/microsoft/powerplatform-build-tools/discussions) to view and submit feedback for PAC CLI.
 
 ### See also
 

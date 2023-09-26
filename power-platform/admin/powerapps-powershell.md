@@ -5,11 +5,14 @@ author: laneswenka
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 01/20/2023
+ms.date: 09/20/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+ms.contributors:
+ - jopanchal
+ - amijh
 ---
 
 # PowerShell support for Power Apps 
@@ -505,8 +508,6 @@ Remove-DlpPolicy
 
 Deletes a DLP policy.
 
-
-
 ### DLP resource exemption cmdlets 
 
 These cmdlets allow you to exempt or unexempt a specific resource from a DLP policy. 
@@ -607,6 +608,7 @@ The governance error message URL and email can be shown independently or togethe
 |     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’       |     Generally available    |
 |     4    |     Maker saves an app created using Power Apps that’s not DLP compliant                                                          |     Generally available    |
 |     5    |     Maker saves a Power Automate flow that’s not DLP compliant                                                     |     Generally available    |
+|     6    |     User launches an app without security group membership to the security group associated to Dataverse environment|     Generally available    |
 
 #### Display governance error message content 
 
@@ -629,6 +631,32 @@ Set-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{
 } 
 ``` 
 
+#### Enforce DLP policy for violating connections
+
+These cmdlets allow you to enforce DLP policy for violating connections at environment or tenant level.
+
+##### Enforce DLP policy for violating connections at environment level
+
+Enforce DLP policies on connections in an environment. This will disable connections that are violating DLP policies.
+
+```powershell 
+Start-DLPEnforcementOnConnectionsInEnvironment -EnvironmentName [Environment ID]
+``` 
+
+**Example**
+
+```powershell
+Start-DLPEnforcementOnConnectionsInEnvironment -EnvironmentName c4a07cd6-cb14-e987-b5a2-a1dd61346963 
+```
+
+##### Enforce DLP policy for violating connections at tenant level
+
+Enforce DLP policies on connections in the tenant. This will disable connections that are violating DLP policies.
+
+```powershell
+Start-DLPEnforcementOnConnectionsInTenant
+```
+
 ### Block trial licenses commands
 
 Commands:
@@ -645,7 +673,7 @@ By default all types of consent plans are allowed in a tenant. A common use case
 
 It is important to know that when using *Remove-AllowedConsentPlans*, all existing plans of the specified type are removed from all users in the tenant and aren't be recoverable. In addition, it blocks all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
 
-## If you have uestions
+## If you have questions
 
 If you have any comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
 
