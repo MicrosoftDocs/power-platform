@@ -13,25 +13,28 @@ ms.custom:
 Pipelines can be custom tailored to serve the unique needs of an organization. For example, you can add approvals, deploy via service principals, and integrate with internal systems of record, Azure DevOps, GitHub, and much more. Because [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) are used, business logic can be executed within Power Automate or various other subscribers. Whether your pipeline is basic or sophistocated on the inside, the deployment experience remains simple for makers on the outside.
 
 > [!IMPORTANT]
-> New pipelines extensions are being gradually rolled out across regions and might not be available yet in your region.
-> Existing pipelines customers may need to update the Power Platform Pipelines application to enable new features. You can manage the updates within the Power Platform admin center.
+> - New pipelines extensions are being gradually rolled out across regions and might not be available yet in your region.
+> - Existing pipelines customers may need to update the Power Platform Pipelines application to enable new features. You can manage the updates within the Power Platform admin center.
 
 ## Gated extensions available
 Pipelines deployments progress through multiple pre-defined steps until deployment completion. Gated extensions insert custom steps into the progression where custom business logic can be executed. It's like your own personal train where you're in control of where it stops and whether it continues or not.
 
-:::image type="content" source="media/Extensibility Flow Diagram.png" alt-text="Extensibility diagram":::
+:::image type="content" source="media/extensibility-flow-diagram.png" alt-text="Extensibility diagram":::
 
 When enabled, each extension inserts a custom step at a different point within a deployment’s progression. Extensions can be used alone or together. 
 
 1. **Pre-export Step Required** allows running custom validation logic when a deployment request is submitted. Pipelines won’t export the solution from a development environment until this step is marked as completed. Only enable this for the first stage in a pipeline (e.g. UAT). 
+
 2. **Is delegated deployment** carries out deployments using a service principal or pipeline stage owner’s identity (instead of the requesting maker’s). This ensures makers can request deployments without elevated (or any) access within target environments. Requires approval from an authorized identity.
+
 3. **Pre-deployment-step required** provides additional flexibility to insert a custom step after a deployment is approved. For example, if a final approval is required.
 
-:::image type="content" source="media/three-gated-extensions.png" alt-text="Enable gated extensions":::
+    :::image type="content" source="media/three-gated-extensions.png" alt-text="Enable gated extensions":::
 
 Steps inserted by enabling a gated extension are in a pending state until your business logic executes and finally signals the pipelines host to complete or reject the step. Makers can see when a deployment is pending as well as cancel their deployment request up until the final step of the deployment. 
- > [!NOTE]
- > Once the managed and unmanaged solution artifacts are exported, the system stores them in the pipelines host and prohibits any tampering or modification. The same managed artifact, per version, will be deployed to all subsequent stages in the pipeline in sequential order. This ensures no solution can bypass QA environments or approval processes. 
+
+> [!NOTE]
+> Once the managed and unmanaged solution artifacts are exported, the system stores them in the pipelines host and prohibits any tampering or modification. The same managed artifact, per version, will be deployed to all subsequent stages in the pipeline in sequential order. This ensures no solution can bypass QA environments or approval processes. 
 
 ## Understanding pipelines triggers and actions
 
@@ -46,9 +49,10 @@ The tables below indicate triggers and actions required for each extension. Outp
 | Pre-deployment step required | OnPreDeploymentStarted | OnPreDeploymentCompleted | UpdatePreDeploymentStepStatus | Any identity with access to update the deployment stage run record |
 
 > [!NOTE]
-> OnDeploymentRequested triggers for all deployments
+> OnDeploymentRequested triggers for all deployments.
 
 ## Triggers
+
 Triggers are available in Power Automate cloud flows within the pipelines host environment under the **When an action is performed** [trigger](/connectors/commondataserviceforapps/#triggers) of the Dataverse connector.
 
 - **Catalog**: Microsoft Dataverse Common
