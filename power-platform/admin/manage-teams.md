@@ -3,11 +3,11 @@ title: "Teams in Dataverse   | MicrosoftDocs"
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/22/2022
+ms.date: 09/22/2023
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -56,14 +56,18 @@ A list of all of the teams in the environment is displayed.
    - **Description:** Enter a description of the team.
    - **Business unit:** Select the business unit from the dropdown list.
    - **Administrator:** Search for users in the organization. Start entering characters.
+     
+       > [!Note]
+       > The **Administrator** field is only for reference and it doesn't have any special processing. You can use this field to restrict who can add and remove team members by registering a [plug-in](/power-apps/developer/data-platform/plug-ins) on the [associate and disassociate](/power-apps/developer/data-platform/webapi/associate-disassociate-entities-using-web-api) APIs for the **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. For more information, see the community [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin).
+     
    - **Team type:** Select the team type from the dropdown list.
 
-   :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
-   
-   > [!NOTE]
-   > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group. 
+     :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
 
-5. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
+     > [!NOTE]
+     > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group.
+   
+6. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
    - **Group name:** Start entering text to select an existing Azure AD group name.These groups are pre-created in Azure AD.
    - **Membership type:** Select the membership type from the dropdown list.
