@@ -4,7 +4,7 @@ description: Learn about activating the features of Managed Environments.
 author: rsantos00
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 09/25/2023
+ms.date: 09/26/2023
 ms.author: rstand
 ms.reviewer: sericks
 ms.custom: bap-template
@@ -76,99 +76,64 @@ Before you start make sure you are aware of these limitations:
 If you are unsure about if you are in the right place? Follow [this guidance**](#).
 ```
 
-The **Learn More** link can be configured under the settings, as the following picture suggests.
+The **Learn more** link can be configured under the settings, as the following picture suggests.
 
 :::image type="content" source="../media/mae/image3.png" alt-text="A screenshot of Power Apps showing a "Getting Started" pop-up.":::
 
 #### Production environments
 
-They're typically used for deploying solutions to production. It's targeting enterprise applications and team productivity applications. In this case, it's important to have compliant apps and data. Since you need to control which users have access to the production environment it's beneficial to inform the user if you have a policy of refreshing access. According to the use case, you might allow more connectors and increase the sharing limits. Depending on your centralized or decentralized support team, you can also use this message to inform the right team to support the Makers.
+Production environments are typically used for deploying solutions to production. It's targeting enterprise applications and team productivity applications. In this case, it's important to have compliant apps and data. Since you need to control which users have access to the production environment, it's beneficial to inform the user if you have a policy of refreshing access. According to the use case, you might allow more connectors and increase the sharing limits. Depending on your support team, you can also use this message to inform the right team to support the makers.
 
 A proposed message for an environment created for the Finance department in Europe could be the following.
 
-:::image type="content" source="../media/mae/image4.png" alt-text="A screenshot of Power Apps showing a "Getting Started" popup for a production environment.":::
+:::image type="content" source="../media/mae/image4.png" alt-text="A screenshot of Power Apps showing a "Getting Started" pop-up for a production environment.":::
 
 #### Developer environments
 
-It's often used for developers to build their solutions. Since the developers are working on the application, it isn't in production and the scalability is limited. Normally it has more relaxed DLPs due to the nature of the makers, but to avoid the Developers using this type of environments with production assets is important to limit the sharing capabilities and a specific DLP to be assigned to this type of environments. An example of a Maker onboarding message can be the following.
+Developer environments are often used for developers to build their solutions. Since the developers are working on the application, it isn't in production and the scalability is limited. Normally, the environment has more relaxed DLPs due to the nature of the makers. To avoid the developers using this type of environment with production assets, limit the sharing capabilities and use a specific DLP for this type of environment. An example of a maker onboarding message might look like the following image.
 
 :::image type="content" source="../media/mae/image5.png" alt-text="A screenshot of Power Apps showing a "Getting Started" popup for a developer environment.":::
 
 #### Sandbox Environments
 
-Typically this type of environments is used when testing a solution. Due to some tests involving a significant number of users these environments scale to a certain point and have more capacity than a Developer environment type. It's also common to use this type of environment as a development environment, normally shared by multiple developers. An example of a Maker onboarding message can be the following.
+Typically sandbox environments are used when testing a solution. Due to some tests involving a significant number of users, these environments scale to a certain point and have more capacity than a developer environment. It's also common to use a sandbox environment as a development environment, which is normally shared by multiple developers. An example of a maker onboarding message is shown in the image below.
 
 :::image type="content" source="../media/mae/image6.png" alt-text="A screenshot of Power Apps showing a "Getting Started" popup for a sandbox environment.":::
 
-Now that you have seen some examples of how to use the Maker welcome message it's important you adapt based on your organization needs.
+Now that you have seen some examples of how to use the welcome message, it's important that you adapt, based on your organizational needs.
 
 >[!TIP]
-> Using images that identify the Environment type or owners is very good for user adoption and error prevention.
+> Using images that identify the environment type or owners is very good for user adoption and error prevention.
 
-### Limit Sharing
+### Limit sharing
 
-In Managed Environments, admins can limit how broadly users can share canvas apps.
+In Managed Environments, admins can limit how broadly users can share canvas apps. More information: [Limit sharing](../../admin/managed-environment-sharing-limits.md).
 
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/managed-environment-sharing-limits).
+An important aspect of limit sharing is the fact that the limit only applies to future sharing actions. This means that if you apply a sharing limit of 20, to an existing environment with apps already shared with more than 20 users, those apps continue to work for all users the apps were previously shared with. It's common to have a process to inform all the makers of apps shared with more than the new limit, to reduce the number of users the apps were shared with, and, in some cases, the administrator might move the solution to another environment.
 
-An important aspect of activating Sharing Limits is the fact the limit will only be applied in future sharing actions, meaning if you apply a sharing limit of 20, on an existing Environment with Apps already shared with more than 20 users, those apps continue to work and all users previously shared will be able to access the apps. It's common to have a process to inform all the makers of Apps shared with more than the new limit, to reduce the number of users it was shared with, and, in some cases, the administrator might move the solution to another environment.
+There are different situations that you need to control how makers share their apps across your organization. Here are the most common scenarios and reasons:
 
-There are different situations that you need to control how Makers share their Apps across your organization. Here are the most common scenarios and reasons:
+- **Limit app sharing in a personal productivity environment.** If you have an environment where users can create apps for their own work, apps without global business value, or apps without support from IT, it's important that you limit those apps for only the makers and not share those apps across the organization. You may have apps that start as personal, productivity apps, but they become popular and are transformed into crucial apps. In this scenario, be mindful about the limit you configure. Between 5 and 50 users is commonly used.
 
-1. Limit Apps sharing in a Personal Productivity environment. If you have an environment where users can create Apps for their own work, Apps without global business value or Apps without support from IT, it's important that you limit those Apps for only the maker and not spread it across the organization. Sometimes you have Apps that start as personal productivity and reach popularity and are transformed into a crucial App, because of this reason you should be mindful about the limit you configure, between 5 and 50 users is commonly used.
-1. Avoid Apps being shared with security groups or everyone. By sharing with security groups, you're allowing all members of the group to run the App. For instance, if you are in a developer environment you might want to make sure the developer is in control of how the Apps are shared and not by membership of the group. In other scenarios you might want to limit the sharing to everyone – notice by default all users in the tenant are added to the Default Environment.
+- **Avoid apps being shared with security groups or everyone.** By sharing with security groups, you're allowing all members of the group to run the app. For instance, if you are in a developer environment, you might want to make sure that the developer is in control of how the apps are shared, instead of relying on membership of the group. In other scenarios, you might want to limit the sharing to everyone. Notice, by default, all users in the tenant are added to the eefault environment.
 
 The most common scenarios of sharing limits in the different environments are:
 
-:::row:::
-    :::column:::
-    **Environment Type**
-    :::column-end:::
-    :::column:::
-    **Sharing limits**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    **Default**
-    :::column-end:::
-    :::column:::
-    Choose `Exclude sharing with security groups`, tick the `Limit total individuals who can share to` checkbox, and select `20` for the value.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    **Developer**
-    :::column-end:::
-    :::column:::
-    Choose `Exclude sharing with security groups`, tick the `Limit total individuals who can share to` checkbox, and select `5` for the value.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    **Sandbox**
-    :::column-end:::
-    :::column:::
-    Choose `Exclude sharing with security groups`and leave the `Limit total individuals who can share to` checkbox unticked.
-    If you want to control the Tester users and you need to use a security group, choose `Don't set limits (default)`.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    **Production**
-    :::column-end:::
-    :::column:::
-    Choose `Don't set limits (default)`.
-    :::column-end:::
-:::row-end:::
 
-Currently the sharing capabilities are only for Power Apps of type Canvas, but in the future, we might support Model Driven and Power Automate Flows.
+| Environment Type|Sharing limits|
+|----------------|-------------------|
+|Default|Choose **Exclude sharing with security groups**, tick the **Limit total individuals who can share to** check box, and select **20** for the value.|
+|Developer| Choose **Exclude sharing with security groups**, tick the **Limit total individuals who can share to** check box, and select **5** for the value.|
+|Sandbox| Choose **Exclude sharing with security groups**and leave the **Limit total individuals who can share to** checkbox unticked.<br><br>If you want to control the tester users and you need to use a security group, choose **Don't set limits (default)**.|
+|Production|Choose **Don't set limits (default)**.|
 
-Examples of what happens when you activate this feature with different configurations:
+Currently the sharing capabilities are only for canvas apps, but in the future, we might support model-driven apps and Power Automate flows.
 
-**Example 1:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until it removes all previous security groups. After all groups are removed, the user is allowed to share with specific users without limitation on the number.
+See the following examples of what happens when you activate this feature with different configurations.
 
-**Example 2:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until it removes all previous security groups and the number of users that the app is shared with goes below 20. For example, if an App is shared with 50 users, when the Maker tries to change the sharing configuration, first would need to remove at least 30 users, and/or any security group, and maintain only a list of 20 users.
+- **Example 1:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until it removes all previous security groups. After all groups are removed, the user is allowed to share with specific users without limitation on the number.
+
+- **Example 2:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until it removes all previous security groups and the number of users that the app is shared with goes below 20. For example, if an App is shared with 50 users, when the Maker tries to change the sharing configuration, first would need to remove at least 30 users, and/or any security group, and maintain only a list of 20 users.
 
 ### Usage insights
 
