@@ -263,13 +263,10 @@ This feature has been highly anticipated by customers with Dynamics 365 environm
 
 ### Lockbox
 
-Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. However, in certain cases it may be needed Microsoft support to access customer data in case there's a strong business reason for that. Microsoft has a complicated internal approval process to grant access to customer data in these rare cases. However, there are customers that need to meet laws and regulations and require to have full control over who can access confidential/classified data and when. With Power Platform Customer Lockbox, customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. That gives full control over the data to the customer.
+Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. However, in rare situations, accessing limitted customer data is required for investigation purposes. Microsoft has a multi-layered internal approval process to grant access to customer data in these cases. Customers that are follwoing compliance and regulatory requirement will need extra control over who or when Microsoft can access their data. With Power Platform Customer Lockbox, customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. That gives full control over the data access to the customer.
+With Lockbox activated, when data access is required for a ticket resolution, the Global administrators and Power Platform administrators receive a Lockbox request for approval. After the approval, the Microsoft personel will have access to the data within the bounday of the environment that the request came for. Acess is time bound and it is not automatically renewed - every time data access is needed, a new Lockbox request is sent to the administrators. All udpates to Lockbox requests are automatically recorded in the audit log.
 
 To find more information on how the feature works, you can follow [this link](/power-platform/admin/about-lockbox).
-
-With Lockbox activated, when data access is required for a ticket resolution, the Global administrators and Power Platform administrators receive a Lockbox request for approval. After the approval, the Microsoft engineer will have access to the data for a limited time that they need for investigation. Every time an engineer needs to access data, a new Lockbox request is sent to the administrators. All actions that the engineer did are being recorded in the audit log, so the environment will still have full audit log history.
-
-Makers that need this kind of Microsoft support would need to coordinate with their Global administrators or Power Platform Administrators and should be carefully reviewed by them.
 
 Extended backup (7 to 28 days)
 
