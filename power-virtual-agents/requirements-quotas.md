@@ -2,11 +2,12 @@
 title: "Quotas, limits, app registration, certificates, and configuration values"
 description: "Work with the quotas, limits, app registation requirements and certificates used by Power Virtual Agents."
 keywords: "PVA, quotas, rate limits, requests, restrictions, app registration, certificates"
-ms.date: 03/24/2023
+ms.date: 09/26/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+ms.reviewer: clmori
 manager: leeclontz
 ms.custom: quotas, admin, ceX
 ms.service: power-virtual-agents
@@ -101,13 +102,13 @@ App registration does not pose a security issue to customers or their data. The 
 ## How Power Virtual Agents automatically creates and rotates certificates
 
 ### Overview
-In order to let chatbots to communicate with your data sources and services, Power Virtual Agents creates an application in your Azure Active Directory (AAD) tenant, and an associated service principal. A service principal is an identity that represents an application and allows it to access resources in your tenant. Power Virtual Agents controls the credentials to the service principal, which is an encrypted certificate.
+To let chatbots communicate with your data sources and services, Power Virtual Agents creates an application in your Azure Active Directory (AAD) tenant, along with an associated service principal. A service principal is an identity that represents an application and allows it to access resources in your tenant. Power Virtual Agents controls the credentials to the service principal, which is an encrypted certificate.
 
-### Certificate Rotation
+### Certificate rotation
 For security and compliance reasons, Power Virtual Agents rotates the certificates roughly every 70 days. This means that the service principal gets a new certificate and the old one is revoked. This process is automatic and does not require any action from you. Certificate rotation does not affect the functionality of your chatbots or the security of your data. It is a standard practice that ensures that the certificates are always valid and up to date.
 
 ### Applicability
-Certificate rotation applies to both Power Virtual Agents classic and production. Both versions create and rotate certificates in the same manner, and requires not input from you.
+Certificate rotation applies to both Power Virtual Agents classic and production (unified authoring canvas) versions. Both versions create and rotate certificates in the same manner, and don't require any action from you.
 
 
 ## IP addresses
