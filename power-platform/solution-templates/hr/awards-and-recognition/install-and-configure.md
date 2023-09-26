@@ -1,23 +1,23 @@
 ---
-title: Install the Awards and Recognition solution template for Power Platform
-description: Learn how to install the Awards and Recognition solution template for Power Platform.
+title: Install and configure the Awards and Recognition template for Power Platform
+description: Learn how to install and configure the Awards and Recognition template for Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
-ms.date: 08/04/2023
+ms.date: 09/25/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Install the Awards and Recognition template
+# Install and configure the Awards and Recognition template
 
-Take the following steps to install the Awards and Recognition solution template.
+As a Power Platform admin, you can access, import, install, configure, and deploy the Awards and Recognition template for your organization. To get started, follow the steps to install and configure the Awards and Recognition template.
 
 ## Step 1: Create connections
 
-The installation requires a Microsoft Dataverse connection. It's best to create connections before importing the solution to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
+The installation requires a Microsoft Dataverse connection. It's best to create connections before importing the template to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
 
 Create a new connection with the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/).
 
@@ -25,21 +25,21 @@ If you want to create the connections in advance, go to *Connections*, and sel
 
 ## Step 2: Install from AppSource
 
-Import the Awards & Recognition solution template and the Employee Experience Base solution into the environment.
+You can access the template on AppSource and install into the Power Platform environment that has the Dataverse connector set up..
 
 - Go to the Awards and Recognition solution template in AppSource and select **Get it now**.
-- Select the environment that you want to install the solution template into.
+- Select the environment that you want to install the template into.
 
 - Agree to the Terms and Privacy Statements by checking the boxes.
 
 - Select **install**. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
 
 > [!TIP]
-> You can log your questions and get support for the Awards and Recognition solution template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> You can log your questions and get support for the Awards and Recognition template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
 ## Step 3: Assign security roles
 
-Set up security roles in your solutions so admins can manage the app experiences and users can access and use the app. Take these steps to get started:
+Set up security roles in your solutions so admins can manage access to and the experiences in the app. Take these steps to get started:
 
 1. Go to [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/home).
 1. Select **Environment** and then select the environment where the solution was installed.
@@ -80,6 +80,8 @@ Open the newly installed Awards and Recognition solution and verify that the c
 
 ## Step 5: Share the app
 
+Once you have configured the app
+
 1. Select **Apps** in the environment in which Awards and Recognition is installed.
 1. Locate the Awards and Recognition app.
 1. Go to the *three dots* to the right of the Awards and Recognition app and select **Share**.
@@ -93,6 +95,9 @@ Open the newly installed Awards and Recognition solution and verify that the c
 1. Add an optional email message.
 1. Select **Share**.
 
+> [!TIP]
+> You may want to only share the app with the Awards and Recognition program admins first so they can configure awards, award assessment ratings, nomination periods, groups, and group membership. Once the program admins have set up the app for wider use, they can have you deploy it to the wider audience.
+
 > [!NOTE]
 > If you didn't install the Awards and Recognition solution and it hasn't been shared with you, then you'll have to navigate into the Awards and Recognition solution to find the app there.
 
@@ -105,8 +110,9 @@ While this isn't required, we recommend enabling the audit setting on the system
 1. Go to [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/home).
 1. Select **Environment** to select the environment where the solution is installed.
 1. Select **Audit settings**.
-1. Select **Start auditing**
+1. Select **Start auditing**.
 
 ## Next steps
 
-[Use the Awards & Recognition app](use.md)
+[Manage the Awards and Recognition app](manage.md)
+[Use the Awards and Recognition app](use.md)

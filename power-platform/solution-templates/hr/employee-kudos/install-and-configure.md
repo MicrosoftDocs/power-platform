@@ -1,19 +1,19 @@
 ---
-title: Install the Power Platform Employee Kudos solution template
-description: Learn how to install the Employee Kudos solution template for Power Platform.
+title: Install and configure the Employee Kudos template for Power Platform
+description: Learn how to install and configure the Employee Kudos template for Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
-ms.date: 06/06/2023
+ms.date: 09/25/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Install the Employee Kudos template
+# Install and configure the Employee Kudos template
 
-Take the following steps to install the Employee Kudos solution template.
+Take the following steps to install the Employee Kudos template.
 
 ## Step 1: Create connections
 
@@ -25,14 +25,14 @@ Create three new connections with these connectors:
 - [Office 365 Outlook connector](/connectors/office365/)
 - [Office 365 Users connector](/connectors/office365users/)
 
-If you want to create the connections in advance, go to _Connections_, and select **+ New Connection** in the left-side panel. Search for each connection listed in this section and create a connection.
+If you want to create the connections in advance, go to **Connections**, and select **+ New Connection** in the left-side panel. Search for each connection listed in this section and create a connection.
 
 ## Step 2: Install from AppSource
 
-Import the Kudos solution template into the environment.
+Import the Kudos template into the environment.
 
-1. Go to the [Kudos solution template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
-1. Select the environment that you want to install the solution template into.
+1. Go to the [Kudos template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
+1. Select the environment that you want to install the template into.
 
    :::image type="content" source="media/install/appsource-install-template.png" alt-text="Select the environment in which to install the template.":::
 1. Agree to the Terms and Privacy statements by selecting the boxes.
@@ -41,13 +41,13 @@ Import the Kudos solution template into the environment.
 After the installation is complete, the status shows as _Installed_.
 
 > [!TIP]
-> You can log your questions and get support for the Employee Kudos solution template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> You can log your questions and get support for the Employee Kudos template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
 ## Step 3: Create an access team
 
 Access team: Kudos-ReadAccessTeam
 
-Access teams aren't, technically, a security role as defined in Power Platform, but they play an important part in securing access rights to a Kudos. Kudos records are _owned_ by the recipient but should be readable by the sender's manager and the recipient's manager. The access team enables this by dynamically assigning the sender's manager and recipient's manager _read access_ to that Kudos through a Power Automate flow.
+Access teams aren't, technically, security roles as defined in Power Platform, but they play an important part in securing access rights to a Kudos. Kudos records are _owned_ by the recipient but should be readable by the sender's manager and the recipient's manager. The access team enables this by dynamically assigning the sender's manager and recipient's manager _read access_ to that Kudos through a Power Automate flow.
 
 More information: [Use access teams and owner teams to collaborate and share information](/power-apps/developer/data-platform/use-access-teams-owner-teams-collaborate-share-information)
 
@@ -157,7 +157,7 @@ Follow these steps for each flow:
 
 ## Step 7: Set cloud flows to _On_
 
-Open the newly installed _Kudos solution template_ and verify that the four cloud flows are set to the _on_ status. If they aren't, turn them on.
+Open the newly installed _Kudos solution_ and verify that the four cloud flows are set to the _on_ status. If they aren't, turn them on.
 
 1. Select the cloud flow that is turned off.
 1. Select **Turn on** on the top toolbar.
@@ -166,7 +166,7 @@ Open the newly installed _Kudos solution template_ and verify that the four clou
 
 Sample data along with installation instructions are available on GitHub at this link: [Kudos Sample Data](https://aka.ms/KudosSampleData)
 
-To create your own badges, refer to [Create Custom Badges](use.md#create-custom-kudos-types).
+To create your own badges, refer to [Create Custom Badges](manage.md#create-custom-kudos-types).
 
 ## Step 9: Share the App
 
@@ -198,4 +198,4 @@ To do this:
 
 ## Next steps
 
-[Get started using the Employee Kudos app](use.md)
+[Get started managing the Employee Kudos app](manage.md)

@@ -58,18 +58,30 @@
     items:
     - name: Overview
       href: hr/employee-kudos/overview.md
-    - name: Install
-      href: hr/employee-kudos/install.md
-    - name: Use
-      href: hr/employee-kudos/use.md
+    - name: Install and configure
+      href: hr/employee-kudos/install-and-configure.md
+    - name: Manage
+      href: hr/employee-kudos/manage.md
   - name: Awards and Recognition
     items:
     - name: Overview
       href: hr/awards-and-recognition/overview.md
-    - name: Install
-      href: hr/awards-and-recognition/install.md
+    - name: Install and configure
+      href: hr/awards-and-recognition/install-and-configure.md
+    - name: Manage
+      href: hr/awards-and-recognition/manage.md
     - name: Use
-      href: hr/awards-and-recognition/use.md 
+      href: hr/awards-and-recognition/use.md
+  - name: Onboarding Buddy
+    items:
+    - name: Overview
+      href: hr/onboarding-buddy/overview.md
+    - name: Install and configure
+      href: hr/onboarding-buddy/install-and-configure.md
+    - name: Manage
+      href: hr/onboarding-buddy/manage.md
+    - name: Customize
+      href: hr/onboarding-buddy/customize.md
 - name: Related content
   items:
   - name: Power Apps documentation
