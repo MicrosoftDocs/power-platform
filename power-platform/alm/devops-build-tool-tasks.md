@@ -483,11 +483,6 @@ steps:
   timeoutInMinutes: 2
   retryCountOnTaskFailure: 5
 ```
-Needed parameters for Link Settings. 
-$(PowerPlatformSetConnectionVariables.BuildTools.TenantId)
-$(PowerPlatformSetConnectionVariables.BuildTools.ApplicationId)
-$(PowerPlatformSetConnectionVariables.BuildTools.ClientSecret)
-
 #### Parameters (SetConnectionVariables)
 
 | Parameters      | Description    |
