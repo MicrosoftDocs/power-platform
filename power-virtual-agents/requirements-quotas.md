@@ -1,6 +1,6 @@
 ---
 title: "Quotas, limits, app registration, certificates, and configuration values"
-description: "Rate limits determine how often messages can be sent to a chatbot. Includes details about Quotas, limits, app registation and certificates used by Power Virtual Agents"
+description: "Work with the quotas, limits, app registation requirements and certificates used by Power Virtual Agents."
 keywords: "PVA, quotas, rate limits, requests, restrictions, app registration, certificates"
 ms.date: 03/24/2023
 
