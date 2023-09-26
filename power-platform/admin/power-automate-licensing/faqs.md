@@ -94,9 +94,9 @@ Each flow exists in a specific environment. This means if a flow is imported int
 
 The Power Automate Premium license is a user level license. All user level licenses (Power Automate Premium, Microsoft 365, Dynamics 365) are tenant level licenses. The user can use the flow in all environments without having to buy a separate license.
 
-### Can I run multiple cloud flows, each of them invoking their own corresponding RPA flows in unattended mode with one Power Automate Process license?
+### Can I run multiple cloud flows, each of them invoking its own RPA flows in unattended mode with one Power Automate Process license?
 
-Yes, you can run multiple cloud flows by queueing them. You can't run them in parallel. For example, if have four (4) cloud flows, and each one of them invokes its own Power Automate flows, you can run the first one at 09:00 AM, the second one at 11:00 AM, and so on, in the same virtual machine.
+Yes, you can run multiple cloud flows by queueing them, but you can't run them in parallel. For example, if have four (4) cloud flows, and each one of them invokes its own Power Automate flows, you can run the first one at 09:00 AM, the second one at 11:00 AM, and so on, in the same virtual machine.
 
 ### Can Power Automate Hosted RPA add-on be used as a Power Automate Unattended RPA add-on?
 
