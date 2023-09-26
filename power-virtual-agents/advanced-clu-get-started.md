@@ -1,5 +1,5 @@
 ---
-title: Get started with conversational language understanding integration (preview)
+title: Get started with conversational language understanding integration
 description: Create bots that use Azure conversational language understanding in Power Virtual Agents.
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
 ms.date: 7/11/2023
@@ -13,9 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Get started with conversational language understanding integration (preview)
-
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Get started with conversational language understanding integration 
 
 This topic includes the step-by-step procedures you need to get started with [conversational language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
 
