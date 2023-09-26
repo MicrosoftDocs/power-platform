@@ -467,6 +467,42 @@ This definition can then be used in the Set Solution Version task by setting the
 
 Alternatively a powershell inline task script $(Get-Date -Format yyyy.MM.dd.HHmm) output set to empty variable named SolutionVersion as Write-Host ("##vso[task.setvariable variable=SolutionVersion;]$version"), Set Solution Version as $(SolutionVersion).
 
+### Power Platform Set Connection Variables
+
+Sets BuildTools.* variables to provide custom script tasks access to use the Service Connection as a single source of truth.
+
+#### YAML snippet (SetConnectionVariables)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.set-connection-variables.PowerPlatformSetConnectionVariables@2
+  displayName: 'Power Platform Set Connection Variables '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+  timeoutInMinutes: 2
+  retryCountOnTaskFailure: 5
+```
+Needed parameters for Link Settings. 
+$(PowerPlatformSetConnectionVariables.BuildTools.TenantId)
+$(PowerPlatformSetConnectionVariables.BuildTools.ApplicationId)
+$(PowerPlatformSetConnectionVariables.BuildTools.ClientSecret)
+
+#### Parameters (SetConnectionVariables)
+
+| Parameters      | Description    |
+|-----------------|----------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to Set Connection Variables for. Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `timeoutInMinutes`<br/>Number of retries if task failed. | Specifies the number of retries for this task that will happen in case of task failure. Not supported for agentless tasks. |
+| `retryCountOnTaskFailure`<br/>Timeout | Specifies the maximum time, in minutes, that a task is allowed to execute before being canceled by server. A zero value indicates an infinite timeout.|
+| `ApplicationId`<br/>Application Id for login. | (Required for Username/password) Application Id to use to login (See additional note below). |
+| `RedirectUri`<br/>Redirect URI of the specificed App. | (Required for Username/password) Redirect URI of the specificed App. Needed when specifying an App Id. (See additional note below).. |
+
+> [!NOTE]
+> When using Username/password authentication type, Application Id and Redirect Uri will be required. This [authenticate oauth](/power-apps/developer/data-platform/authenticate-oauth) document has an explanation of why you need to create an app registration to authenticate to Dataverse.
+> When you connect using Username/password authentication means connection is as an application which is connecting on behalf of a user to Dataverse.
+
 ### Power Platform Deploy Package
 
 Deploys a package to an environment. Deploying a [package](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer) as opposed to a single solution file provides an option to deploy multiple solutions, data, and code into an environment.
