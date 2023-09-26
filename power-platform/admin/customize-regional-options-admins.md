@@ -15,8 +15,11 @@ search.audienceType:
 
 <!-- legacy procedure -->
 
-You can customize how numbers, currencies, times, and dates appear to everyone in your organization.  
-  
+You can customize how numbers, currencies, times, and dates appear to everyone in your organization.
+
+> [!NOTE]
+> This setting only controls the default options for new users signing into an organization for the first time. This will not update the options for any existing user who has previously signed in. Existing users will need to update the options for themselves under [Personalization Settings](/power-apps/user/set-personal-options)
+
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
 - Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile).
