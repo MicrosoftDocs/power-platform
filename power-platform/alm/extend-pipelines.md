@@ -33,7 +33,7 @@ Steps inserted by enabling a gated extension are in a pending state until your b
  > [!NOTE]
  > Once the managed and unmanaged solution artifacts are exported, the system stores them in the pipelines host and prohibits any tampering or modification. The same managed artifact, per version, will be deployed to all subsequent stages in the pipeline in sequential order. This ensures no solution can bypass QA environments or approval processes. 
 
-# Understanding Pipelines triggers and actions
+## Understanding pipelines triggers and actions
 
 Each step of a pipeline deployment triggers a real-time event at the beginning and completion of the step for which you can initiate custom logic. Additional triggers are produced when gated extensions are enabled. These correspond to the custom step inserted when an extension is enabled on the pipeline stage.
 
