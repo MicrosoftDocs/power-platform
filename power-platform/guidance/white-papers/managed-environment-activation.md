@@ -119,7 +119,6 @@ There are different situations that you need to control how makers share their a
 
 The most common scenarios of sharing limits in the different environments are:
 
-
 | Environment Type|Sharing limits|
 |----------------|-------------------|
 |Default|Choose **Exclude sharing with security groups**, tick the **Limit total individuals who can share to** check box, and select **20** for the value.|
@@ -137,11 +136,9 @@ See the following examples of what happens when you activate this feature with d
 
 ### Usage insights
 
-Admins or preconfigured users can stay informed about what’s happening in their Managed Environments. These insights contain analytics about top apps, most impactful makers, and inactive resources you can safely clean up. These insights are generated and delivered to your mailbox once a week.
+Admins or preconfigured users can stay informed about what’s happening in their Managed Environments. These insights contain analytics about top apps, most impactful makers, and inactive resources you can safely clean up. These insights are generated and delivered to your mailbox once a week. More information: [Usage insights](/power-platform/admin/managed-environment-usage-insights).
 
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/managed-environment-usage-insights).
-
-If you're ever wondering which Apps are the most popular (with the most runs) or which Apps or Flows you should consider cleaning, the weekly digest on Managed Environments is helpful. Every week the information is aggregated, meaning the information is consolidated from all the Managed Environments you have configured and sent to your email. 
+If you're ever wondering which apps are the most popular (with the most runs) or which apps or flows you should consider cleaning, the weekly digest on Managed Environments is helpful. Every week the information is aggregated, meaning the information is consolidated from all the Managed Environments you have configured and sent to your email. 
 
 Usage insights enable administrators to have a summary view of apps and flows activity in the environments, for more in depth analysis they can follow the links provided in the email and go directly to the resource.
 
