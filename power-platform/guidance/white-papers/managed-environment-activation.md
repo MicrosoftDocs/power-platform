@@ -21,7 +21,7 @@ This article addresses the key features of Managed Environments and how organiza
 
 Managed Environments is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment.
 
-There are different aspects depending on the environment type, business needs, or internal policies. In this article, you find illustrations and explanations based on various organizations that have implemented Managed Environments. To learn more about how to activate Managed Environments, see [Enable Managed Environments](/power-platform/admin/managed-environment-enable).
+There are different aspects depending on the environment type, business needs, or internal policies. In this article, you find illustrations and explanations based on various organizations that have implemented Managed Environments. More information: [Enable Managed Environments](/power-platform/admin/managed-environment-enable)
 
 Managed Environments being a suite of features is important to understand each feature capability and advantages.
 
@@ -31,7 +31,7 @@ The following sections are presented with examples and ideas of how your organiz
 
 ### Pipelines in Power Platform
 
-Pipelines in Power Platform aim to democratize application lifecycle management practices for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers. To learn more about pipelines, see [Overview of pipelines in Power Platform](../../alm/pipelines.md).
+Pipelines in Power Platform aim to democratize application lifecycle management practices for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers. More information: [Overview of pipelines in Power Platform](../../alm/pipelines.md)
 
 Although pipelines aren't always used by IT administrators or members of the governance team, it's common in organizations for these teams to provide support on how solutions should be deployed to different environments. Administrators are enabled to centrally manage and govern pipelines, providing makers with intuitive user experiences for easily deploying their solutions.
 
@@ -107,7 +107,7 @@ Now that you have seen some examples of how to use the welcome message, it's imp
 
 ### Limit sharing
 
-In Managed Environments, admins can limit how broadly users can share canvas apps. More information: [Limit sharing](../../admin/managed-environment-sharing-limits.md).
+In Managed Environments, admins can limit how broadly users can share canvas apps. More information: [Limit sharing](../../admin/managed-environment-sharing-limits.md)
 
 An important aspect of limit sharing is the fact that the limit only applies to future sharing actions. This means that if you apply a sharing limit of 20, to an existing environment with apps already shared with more than 20 users, those apps continue to work for all users the apps were previously shared with. It's common to have a process to inform all the makers of apps shared with more than the new limit, to reduce the number of users the apps were shared with, and, in some cases, the administrator might move the solution to another environment.
 
@@ -136,106 +136,63 @@ See the following examples of what happens when you activate this feature with d
 
 ### Usage insights
 
-Admins or preconfigured users can stay informed about what’s happening in their Managed Environments. These insights contain analytics about top apps, most impactful makers, and inactive resources you can safely clean up. These insights are generated and delivered to your mailbox once a week. More information: [Usage insights](/power-platform/admin/managed-environment-usage-insights).
+Admins or preconfigured users can stay informed about what’s happening in their Managed Environments. These insights contain analytics about top apps, most impactful makers, and inactive resources you can safely clean up. These insights are generated and delivered to your mailbox once a week. More information: [Usage insights](/power-platform/admin/managed-environment-usage-insights)
 
 If you're ever wondering which apps are the most popular (with the most runs) or which apps or flows you should consider cleaning, the weekly digest on Managed Environments is helpful. Every week the information is aggregated, meaning the information is consolidated from all the Managed Environments you have configured and sent to your email. 
 
-Usage insights enable administrators to have a summary view of apps and flows activity in the environments, for more in depth analysis they can follow the links provided in the email and go directly to the resource.
+Usage insights enable administrators to have a summary view of apps and flows activity in the environments. For more in depth analysis, admins can follow the links provided in the email and go directly to the resource.
 
-It's common for decentralized IT teams to use this email to inform the different Administrators of what is happening with their Managed Environment, making recipient management an important task to follow. Due to the limit number of recipients you can configure, is suggested in some situations to use an email distribution list (for example [HR_Admins@contoso.com](mailto:HR_Admins@contoso.com)  or [Finance_Admins@contoso.com](mailto:Finance_Admins@contoso.com) distributions lists) and do the recipient management on the distribution list.
+It's common for decentralized IT teams to use this email to inform the different admins of what is happening with their Managed Environment, making recipient management an important task to follow. Due to the limited number of recipients you can configure, use an email distribution list, such as [HR_Admins@contoso.com](mailto:HR_Admins@contoso.com)  or [Finance_Admins@contoso.com](mailto:Finance_Admins@contoso.com), and manage the recipients on the distribution list.
 
 ### Data policies
 
 In Managed Environments, admins can easily identify all the data policies that are applied to the environment.
 
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/managed-environment-data-policies). 
+More information: [Data policies](../../admin/managed-environment-data-policies.md)
 
-With a well-planned environment strategy, it's imperative to have a Data Loss Prevention (DLP) strategy in place. DLPs dictate which connectors are available and which ones can be used with each other. It's possible for multiple DLPs to be active in the same environment, but the most restrictive DLP will take precedence. For example, if one DLP allows the use of connector A and another DLP blocks the use of connector A, the connector is blocked.
+With a well-planned environment strategy, it's imperative to have a DLP strategy in place. DLPs dictate which connectors are available and which ones can be used with each other. It's possible for multiple DLPs to be active in the same environment, but the most restrictive DLP will take precedence. For example, if one DLP allows the use of connector A and another DLP blocks the use of connector A, the connector is blocked.
 
-It isn't uncommon for environments to have multiple DLPs applied, particularly in scenarios where DLPs are applied by region, country, department, or team within the same environment. It's crucial to have a clear visualization of all DLPs applied to a specific environment, and this can be achieved by ensuring that the environment is Managed. This is precisely the intention behind this feature.
+It isn't uncommon for environments to have multiple DLPs applied, particularly in scenarios where DLPs are applied by region, country, department, or team within the same environment. It's crucial to have a clear visualization of all DLPs applied to a specific environment, and this can be achieved by ensuring that the environment is managed. This is precisely the intention behind this feature.
 
 ### Solution checker
 
-In Managed Environments, admins can easily enforce rich static analysis checks on your solutions against a set of best practice rules and identify problematic patterns.
+In Managed Environments, admins can easily enforce rich static analysis checks on your solutions against a set of best practice rules and identify problematic patterns. More information: [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker)
 
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/managed-environment-solution-checker).
-
-Users with permission to install solutions in environments, such as those with the Environment Maker role, can import solutions using various methods, including manually in the Maker portal or using pac CLI. It's common for a Center of Excellence/Enablement (CoE) team to set up guardrails to reduce the risk of noncompliant solutions in the environment. In organizations with decentralized CoEs, it's often necessary to activate this feature along with sending an email to proactively reach out to Makers and offer support.
+Users with permission to install solutions in environments, such as those with the Environment Maker role, can import solutions using various methods, including manually in the maker portal or using pac CLI. It's common for a Center of Excellence (CoE) team to set up guardrails to reduce the risk of noncompliant solutions in the environment. In organizations with decentralized CoEs, it's often necessary to activate this feature along with sending an email to proactively reach out to makers and offer support.
 
 This feature allows for different levels of control, including None, Warn, and Block. Each level allows administrators to configure the impact of the check, whether it's to provide a warning but allow the import, or to block the import altogether, while also providing information to the maker about the result of the import.
 
 Organizations using this feature have different configurations depending on the environment type. It's normal to have exceptions, and this guidance should always be aligned with your needs. However, the most common scenarios for the solution checker in different environments are as follows:
 
-:::row:::
-    :::column:::
-    **Environment Type**
-    :::column-end:::
-    :::column:::
-    **Solution checker**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    **Default**
-    :::column-end:::
-    :::column:::
-    Choose `Block` and tick the `Send emails` box.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    **Developer**
-    :::column-end:::
-    :::column:::
-    Choose `Warm` and leave the `Send emails` box unticked.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    **Sandbox**
-    :::column-end:::
-    :::column:::
-    Choose `Warm` and leave the `Send emails` box unticked.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    **Production**
-    :::column-end:::
-    :::column:::
-    Choose `Block` and tick the `Send emails` box.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    **Teams Environment**
-    :::column-end:::
-    :::column:::
-    Choose `Block` and tick the `Send emails` box.
-    :::column-end:::
-:::row-end:::
 
-### IP Firewall
+|Environment Type|Solution checker|
+|------------------|-------------|
+|Default |Choose **Block** and select the **Send emails**  check box.|
+|Developer|Choose **Warm** and leave the **Send emails** check box clear.|
+| Sandbox | Choose **Warm** and leave the **Send emails** check box clear.|
+| Production| Choose **Block** and select the **Send emails** check box.|
+|Teams Environment|Choose **Block** and select the **Send emails** check box.|
 
-The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyses the IP address of each request in real time.
+### IP firewall
 
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/ip-firewall).
+The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. More information: [IP firewall in Power Platform environments](../../admin/ip-firewall.md)
 
-By default, every Dataverse data can be accessed using the API from any IP address, secured by authentication. It's common in organizations to restrict access to some allowed sources mitigating insider threats like data exfiltration.
+By default, all Dataverse data can be accessed using the API from any IP address, secured by authentication. It's common in organizations to restrict access to some allowed sources, mitigating insider threats like data exfiltration.
 
-When this feature is enabled the IP address is being analyzed in real time and blocked in case it isn't allowed. For example, requests with a stolen access token to Dataverse from outside allowed IP ranges, will be validated against the allowed IP range and the attempt will be denied in real time.
+When this feature is enabled, the IP address is being analyzed in real time and blocked in case it isn't allowed. For example, requests with a stolen access token to Dataverse from outside allowed IP ranges, are validated against the allowed IP range and the attempt is denied in real time.
 
-Organizations tend to activate IP Firewall and configure it to allow connections from their office premises and to restrict connections coming from outside. The best practice is to use it together with conditional access to avoid inconsistent policies and dependencies.
+Organizations tend to activate IP firewall and configure it to allow connections from their office premises and to restrict connections coming from outside. The best practice is to use it together with conditional access to avoid inconsistent policies and dependencies.
 
-Pro Tip: Note, if you have misconfigured these policies, you might need to request assistance from Microsoft Support or you might limit access in Power Apps from users outside of the allowed IPs and limit Power Automate actions that have been previously allowed.
+> [!Tip]
+> If you've misconfigured these policies, you might need to request assistance from Microsoft Support. You might limit access in Power Apps from users outside of the allowed IPs and limit Power Automate actions that have been previously allowed.
 
 ### IP cookie binding (block cookie reply attacks)
 
 Customers can prevent session cookie exploits with IP address-based cookie binding.
 
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/block-cookie-replay-attack).
+More information: [Block cookie replay attacks in Dataverse](../../admin/block-cookie-replay-attack.md).
 
-If you have a stolen session cookie from an authorized computer that has cookie IP binding enabled then once the exploiter tries to use the cookie from a different computer to gain unauthorized access to Dataverse, the attempt is blocked, and an error message is shown asking the user to reauthenticate.
+If you have a stolen session cookie from an authorized computer that has cookie IP binding enabled, then once the exploiter tries to use the cookie from a different computer to gain unauthorized access to Dataverse, the attempt is blocked, and an error message is shown asking the user to reauthenticate.
 
 The user is asked to reauthenticate in the following scenarios:
 
