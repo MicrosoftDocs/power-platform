@@ -62,4 +62,4 @@ Complete these tasks to make the most of this feature:
 
 ## See also
 
-- [Use Copilot to generate deployment notes in pipelines](copilot-deployment-notes-pipelines.md)
+- [Use Copilot to generate deployment notes in pipelines (preview)](copilot-deployment-notes-pipelines.md)
