@@ -144,3 +144,5 @@ An example customer, who expects up to 10000 sessions a month for their bot, whi
     
     c. Dataverse capacity (10GB DB, 10GB File, 2GB Log)
        Add-on and User licenses are still required, as detailed above. Latest information on [Power Virtual Agents licensing.](https://powervirtualagents.microsoft.com/en-us/pricing/)
+
+       [Building a team](project-building-a-team.md)

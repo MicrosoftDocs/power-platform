@@ -49,8 +49,10 @@ landingContent:
         links:
           - text: Projects best practices
             url: project-best-practices.md
-          - text: Projects best practices
+          - text: Projects getting started
             url: project-getting-started.md
+          - text: Project building a team
+            url: project-building-a-team.md
 
   # Card
   - title: Related content
