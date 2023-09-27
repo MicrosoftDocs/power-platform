@@ -31,6 +31,7 @@ These sources include:
 - Internal resources:
   - Azure OpenAI on your data
   - SharePoint
+  - Documents uploaded to Dataverse
   - OneDrive for Business
   - Custom data (internal or external): Supply your own content from any source, for example, from a Power Automate Flow, a Skill, or other source.
 
@@ -47,6 +48,7 @@ Different information sources have different capabilities, such as the number of
 | SharePoint | Internal | Connects to a SharePoint URL, uses GraphSearch to return results | 4 URLs | Bot user's Azure Active Directory (Azure AD) authentication |
 | OneDrive for Business | Internal | Connects to a OneDrive for Business URL, uses GraphSearch to return results | 4 URLs | Bot user's Azure Active Directory (Azure AD) authentication |
 | Custom data | Internal | Uses a JSON code block to define the URLs and content to use | One variable, populated with the JSON results to be summarized | Dependent on source |
+| Documents | Internal | Searches documents uploaded to Dataverse returning results from the documents contents | Limited by Dataverse file stowage allocation. | None |
 
 Bot user authentication for information sources means that when a specific user asks a question of the bot, the bot will only surface content that that specific user can access.
 
