@@ -122,7 +122,8 @@ An example customer, who expects up to 10000 sessions a month for their bot, whi
 
 
 **Power Virtual Agents for Teams**
-1. **Microsoft 365 license**
+
+**1. Microsoft 365 license**
 
     a. Unlimited sessions (Teams channel only)
 
@@ -135,7 +136,7 @@ An example customer, who expects up to 10000 sessions a month for their bot, whi
     Customers deploying PVA with Dynamics 365 for Customer Service now receive a version of the PVA tenant license 
     with their Dynamics 365 purchase:
 
-1. **Tenant license (billed monthly, capacity pooled at Tenant)**
+**1. Tenant license (billed monthly, capacity pooled at Tenant)**
     
     a. 1000 sessions per tenant
     
@@ -145,5 +146,5 @@ An example customer, who expects up to 10000 sessions a month for their bot, whi
     c. Dataverse capacity (10GB DB, 10GB File, 2GB Log)
        Add-on and User licenses are still required, as detailed above. Latest information on [Power Virtual Agents licensing.](https://powervirtualagents.microsoft.com/en-us/pricing/)
 
-[!div class="nextstepaction"]
-[Building a team](project-building-a-team.md)
+
+> [Building a team](project-building-a-team.md)
