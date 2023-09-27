@@ -1,8 +1,8 @@
 ---
-title: Conversational language understanding integration overview (preview)
+title: Conversational language understanding integration overview
 description: Automate the creation of bots in Power Virtual Agents bots with CLU integration.
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
-ms.date: 6/23/2023
+ms.date: 09/26/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -12,9 +12,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Conversational language understanding integration overview (preview)
-
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Conversational language understanding integration overview 
 
 You can integrate your [conversational Language Understanding (CLU)](/azure/cognitive-services/language-service/conversational-language-understanding/overview) model with a Power Virtual Agents bot. Conversational language understanding is one of the custom features offered by Azure Cognitive Service for Language. It is a cloud-based service that applies machine-learning intelligence to enable you to build natural language understanding component to be used in an end-to-end conversational application. Language service APIs are available (but not required for you to integrate with Power Virtual Agents) and the [Azure Language Studio](/azure/cognitive-services/language-service/overview) provides natural language processing (NLP) features for analyzing conversational text.
 
