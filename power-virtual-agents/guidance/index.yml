@@ -49,7 +49,7 @@ landingContent:
         links:
           - text: Projects best practices
             url: project-best-practices.md
-          - text: Projects getting started
+          - text: Getting started
             url: project-getting-started.md
           - text: Building a team
             url: project-building-a-team.md

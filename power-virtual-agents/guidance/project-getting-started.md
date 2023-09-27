@@ -22,11 +22,12 @@ Below is an example of goals a customer may define at project inception
 
 1. **Delivery goals (Minimum Viable Project (MVP))**
 
-    a. Go-live with chatbot on <target> date - target less than 3 months
+    a. Go-live with chatbot on target date - target less than 3 months
     
-    b. Bot can answer top <target> use cases - using a script of test phrases
+    b. Bot can answer top target use cases - using a script of test phrases
     
-    c. <Target> complex use cases with back-end integration - this will help with deflection
+    c. Target complex use cases with back-end integration - this will help with deflection
+
 2. **Business goals (driven toward once live)**
     
     a. Resolved session % - normally the project team aims to increase this number
@@ -53,7 +54,7 @@ Inspiring usecases is a key part to beginning your bot building journey.
 The program includes the following:
 
 1. Interested employees will participate in a
-[Power Virtual Agents in a Day](https://learn.microsoft.com/en-us/training/paths/power-virtual-agents-workshop/) training where they
+[Power Virtual Agents in a Day](https://learn.microsoft.com/training/paths/power-virtual-agents-workshop/) training where they
 will learn the fundamentals of conversational bot building.
 
 2. Once attendees have experience building bots,
@@ -81,17 +82,17 @@ Inspire others to do more.
 you can run on a regular cycle to further promote chatbot
 development within your organization.
 
-<div style="text-align:center;">
-<span style="color: #0066cc;">Hackathons encourage organizations to learn and apply what they’ve learnt in real-world use cases to develop bots</span>
-</div>
+
+[!TIP]
+Hackathons encourage organizations to learn and apply what they’ve learnt in real-world use cases to develop bots
+
 
 ### Licensing 
 Make sure you scope out how much you expect your project to cost. Speak to your Microsoft account team to confirm 
 you’re using accurate pricing for your organization. The licensing of Power Virtual Agents is relatively simple with a few 
 key components. Most important to understand is that the license is based on chatbot sessions. A session is defined as:
 
-<span style="color: #0066cc;">“The session begins when a user topic is triggered and ends when one of these conditions is met—either the user’s questions are answered, or the conversation exceeds 60 minutes or 100 turns.” </span>
-
+“The session begins when a user topic is triggered and ends when one of these conditions is met—either the user’s questions are answered, or the conversation exceeds 60 minutes or 100 turns.”
 
 
 There are 3 main ways in which customers acquire PVA licenses: 
@@ -148,5 +149,5 @@ There are 3 main ways in which customers acquire PVA licenses:
     c. Dataverse capacity (10GB DB, 10GB File, 2GB Log)
        Add-on and User licenses are still required, as detailed above. Latest information on [Power Virtual Agents licensing.](https://powervirtualagents.microsoft.com/en-us/pricing/)
 
-
-[Building a team](project-building-a-team.md)
+> [!div class="nextstepaction"]
+> [Building a team](project-building-a-team.md)
