@@ -1,5 +1,5 @@
 ---
-title: Use Copilot to generate deployment notes in pipelines
+title: Use Copilot to generate deployment notes in pipelines (preview)
 description: Learn how to use Copilot to generate deployment notes during pipeline deployments.
 author: ASheehi1
 ms.author: matp
@@ -9,7 +9,7 @@ contributors:
    - ASheehi1
 ms.custom: template-how-to
 ---
-# Use Copilot to generate deployment notes in pipelines
+# Use Copilot to generate deployment notes in pipelines (preview)
 
 Makers spend time and energy noting what is included in their deployed solution to give enough context for any admin approving (triggered via [extensibility](extend-pipelines.md)) their deployment requests or viewing their pipeline deployment record. With AI-generated deployment notes, in just seconds, a solution summary can be generated for the maker and pre-fill the deployment notes field, giving anyone viewing the deployment request or record enough context to understand what the solution does and what it contains. 
 
@@ -18,6 +18,7 @@ When you deploy solutions in a pipeline in Power Platform, you can [deploy with 
 > [!IMPORTANT]
 >
 > - This capability is powered by [ Azure OpenAI Service](/azure/cognitive-services/openai/overview).
+> - For more information, go to our [terms](https://dynamics.microsoft.com/legaldocs/supp-azure-openai-features/)
 > - Learn more with our [FAQ for Copilot data security and privacy in Dynamics 365](/dynamics365/transparency-note-copilot-data-security-privacy).
 > - This capability is in process of rolling out, and may not be available in your region yet.
 > - This capability  may be subject to usage limits or capacity throttling.
