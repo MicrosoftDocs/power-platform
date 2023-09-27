@@ -78,7 +78,7 @@ If you are unsure about if you are in the right place? Follow [this guidance**](
 
 The **Learn more** link can be configured under the settings, as the following picture suggests.
 
-:::image type="content" source="../media/mae/image3.png" alt-text="A screenshot of Power Apps showing a "Getting Started" pop-up.":::
+:::image type="content" source="../media/mae/image3.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up.":::
 
 #### Production environments
 
@@ -86,19 +86,19 @@ Production environments are typically used for deploying solutions to production
 
 A proposed message for an environment created for the Finance department in Europe could be the following.
 
-:::image type="content" source="../media/mae/image4.png" alt-text="A screenshot of Power Apps showing a "Getting Started" pop-up for a production environment.":::
+:::image type="content" source="../media/mae/image4.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up for a production environment.":::
 
 #### Developer environments
 
 Developer environments are often used for developers to build their solutions. Since the developers are working on the application, it isn't in production and the scalability is limited. Normally, the environment has more relaxed DLPs due to the nature of the makers. To avoid the developers using this type of environment with production assets, limit the sharing capabilities and use a specific DLP for this type of environment. An example of a maker onboarding message might look like the following image.
 
-:::image type="content" source="../media/mae/image5.png" alt-text="A screenshot of Power Apps showing a "Getting Started" popup for a developer environment.":::
+:::image type="content" source="../media/mae/image5.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up for a developer environment.":::
 
 #### Sandbox Environments
 
 Typically sandbox environments are used when testing a solution. Due to some tests involving a significant number of users, these environments scale to a certain point and have more capacity than a developer environment. It's also common to use a sandbox environment as a development environment, which is normally shared by multiple developers. An example of a maker onboarding message is shown in the image below.
 
-:::image type="content" source="../media/mae/image6.png" alt-text="A screenshot of Power Apps showing a "Getting Started" popup for a sandbox environment.":::
+:::image type="content" source="../media/mae/image6.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up for a sandbox environment.":::
 
 Now that you have seen some examples of how to use the welcome message, it's important that you adapt, based on your organizational needs.
 
@@ -259,7 +259,7 @@ Organizations with Dataverse environments use the data stream to monitor perform
 
 For Power Apps insights, organizations can monitor cloud flow executions. Together with filters, it is possible to detect any flow that is failing and create alerts for notifications.
 
-The following example shows how to create a custom alert to filter for a specific cloud flow’s failure. For more examples, see [Set up Application Insights with Power Automate](app-insights-cloud-flow.md).
+The following example shows how to create a custom alert to filter for a specific cloud flow’s failure. For more examples, see [Set up Application Insights with Power Automate](../../admin/app-insights-cloud-flow.md).
 
 ```
 let myEnvironmentId = **'Insert your environment ID here**;
