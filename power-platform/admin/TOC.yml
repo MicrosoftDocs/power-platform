@@ -1036,10 +1036,10 @@
               href: analyze-improve-data-query-performance.md
         - name: Compliance and data privacy
           href: wp-compliance-data-privacy.md
-        - name: GDPR - Responding to DSR requests
+        - name: Responding to DSR requests
           items:
-            - name: About GDPR
-              href: about-gdpr.md
+            - name: About privacy
+              href: about-privacy.md
             - name: System-generated logs
               href: powerapps-gdpr-dsr-guide-systemlogs.md
             - name: Data integrations for Dataverse
@@ -1053,7 +1053,7 @@
                 - name: Delete data
                   href: powerapps-gdpr-delete-dsr.md
                 - name: Dataverse customer data
-                  href: common-data-service-gdpr-dsr-guide.md
+                  href: common-data-service-privacy-dsr-guide.md
         - name: Datacenter regions
           href: new-datacenter-regions.md
           items:
