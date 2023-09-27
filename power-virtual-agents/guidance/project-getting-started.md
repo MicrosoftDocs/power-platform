@@ -118,7 +118,7 @@ There are 3 main ways in which customers acquire PVA licenses:
 
     c. One license required for each bot author
 
-An example customer, who expects up to 10000 sessions a month for their bot, which will be managed by 10 users, would purchase 1x Tenant license, 9x Add-on license, and 10x User licenses.
+[!TIP] An example customer, who expects up to 10000 sessions a month for their bot, which will be managed by 10 users, would purchase 1x Tenant license, 9x Add-on license, and 10x User licenses.
 
 
 **Power Virtual Agents for Teams**
