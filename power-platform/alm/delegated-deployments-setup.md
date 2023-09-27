@@ -10,7 +10,13 @@ ms.custom:
 ---
 # Deploy pipelines as a service principal or pipeline owner (preview)
 
+[This article is prerelease documentation and is subject to change.]
+
 Delegated deployments can be run as a service principal or pipeline stage owner. When enabled, the pipeline stage deploys as the delegate (service principal or pipeline stage owner) instead of the requesting maker. 
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback
 
 ## Deploy with a service principal
 
