@@ -21,7 +21,7 @@ The installation requires a Microsoft Dataverse connection. It's best to create 
 
 Create a new connection with the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/).
 
-If you want to create the connections in advance, go to *Connections*, and select **+ New Connection**. Search for each connection listed in this section and create a connection.
+If you want to create the connection in advance, go to **Connections**, and select **+ New Connection**. Search for the Microsoft Dataverse connector and create a connection.
 
 ## Step 2: Install from AppSource
 
@@ -32,7 +32,7 @@ You can access the template on AppSource and install into the Power Platform env
 
 - Agree to the Terms and Privacy Statements by checking the boxes.
 
-- Select **install**. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
+- Select **Install**. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
 
 > [!TIP]
 > You can log your questions and get support for the Awards and Recognition template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.

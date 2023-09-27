@@ -13,7 +13,7 @@ ms.subservice: solution-templates
 
 # Onboarding Buddy template for Power Platform
 
-The Onboarding Buddy template helps your organization set up and automate the new or transfer employee's mentoring experience. Existing employees sign up to be *onboarding buddies* and are paired with with the new employees to help them onboard and ramp up successfully.
+The Onboarding Buddy template helps your organization set up and automate a new or transfer employee's mentoring experience. Existing employees sign up to be *onboarding buddies* and are paired with with the new employees to help them onboard and ramp up successfully.
 
 The Onboarding Buddy app allows:
 
