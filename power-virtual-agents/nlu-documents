@@ -1,0 +1,74 @@
+---
+title: "Use documents as a generative answers data source"
+description: "Overview of how to use documents as a generative answers data source"
+ms.reviewer: mboninco
+ms.date: 09/26/2023
+
+//Do not update these; the docs team uses them for content management
+ms.topic: how-to
+author: iaanw
+ms.author: iawilt
+ms.collection: virtual-agent
+ms.service: power-virtual-agents
+searchScope:
+  - "Power Virtual Agents"
+---
+
+H1 - Use a document as a data source (Preview)
+
+Documents can be used as a data source for generative answers and will be stored securely in Dataverse.  The number of documents that can be uploaded is only limited by available file stowage for the Dataverse environment. 
+Image, audio, video, and executable files are not supported. See Supported document types for a full list.
+
+[!WARNING] - File contents available to all users. Uploaded file content is available to anyone chatting with the bot, regardless of file permissions or access controls.
+
+H2 - Uploading a document 
+
+On the AI capabilities setting page in the Upload a document section, drag and drop files and folders onto the control or click on the link in the file upload control to open a file window.
+
+:::image type="content" source="media/nlu-gpt/nlu-document-upload.png" alt-text="Screenshot of interface to upload a document":::
+
+Once uploaded, it will take several minutes for the content of the document to become ready to provide results to a generative answers query. 
+
+Uploaded documents create new copies and do not overwrite existing documents, even if they have the same name. This may result in duplicate files with the same file name.
+
+[!TIP] When updating an existing file add a version number to the file name before uploading to distinguish it from the previous version.
+
+The uploaded document becomes part of the bot solution. Exporting and importing a bot solution will include the documents. 
+
+H2 - Downloading or deleting a document
+
+To download or delete an uploaded document, hover over the document name and click on the download or delete icon.
+
+:::image type="content" source="media/nlu-gpt/nlu-document-download.png" alt-text="Screenshot of interface to download a document":::
+
+H2 - Disable documents as a data source for a generative answers’ node
+
+Documents usad as a data source for the bot are used as a data source by default for all generative answers nodes. To opt out a specific generative answers node from using documents as a data source:
+
+1.	Open up the topic with the generative answers’ node in the authoring canvas
+2.	Switch to code editor mode (top menu bar under the ellipse …)
+3.	Direct under variable: Topic.Answer add the following lines:
+    fileSearchDataSource:
+        searchFilesMode: 
+           kind: DoNotSearchFiles
+4.	Click Save on the top menu bar
+
+H2 - Supported document types:
+
+* Word documents (doc, docx)
+* Excel spreadsheets (xls, xlsx)
+* PowerPoint documents (ppt, pptx)
+* PDF documents (pdf)
+* Text documents (.txt, .md, .log)
+* HTML files (html, htm)
+* CSV files (csv)
+* XML files (xml)
+* OpenDocument files (odt, ods, odp)
+* EPUB documents (epub)
+* Rich Text Format documents (rtf)
+* Apple iWork documents (pages, key, numbers)
+* JSON files (json)
+* YAML files (yml, yaml)
+* LaTeX files (tex)
+
+
