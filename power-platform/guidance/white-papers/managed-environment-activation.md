@@ -315,105 +315,67 @@ The following list shows the impact caused by deactivating Managed Environments.
 
 ## Examples of commonly used settings for Managed Environments
 
-If you're about to start activating Managed Environment features, generate a comparable template to the one demonstrated below, for each environment group type.
+If you're about to start activating Managed Environment features, consider options for each environment group type. The following sections provide examples.
 
-:::row:::
-    :::column:::
-    **Default Environment**
-    :::column-end:::
-    :::column:::
-    **Developer Environment**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    Limit Sharing: Exclude sharing with limit total individuals to 20
-    Solution Checker: Block with activated the sending emails
-    Usage Insights: Activated
-    Maker Welcome content: Customized including the link to learn more
-    ![ME Settings for Default Environments](../media/mae/image20.png)
-    :::column-end:::
-    :::column:::
-    Limit Sharing: Don't set limits
-    Solution Checker: Warning without the sending emails
-    Usage Insights: Deactivated
-    Maker Welcome content: Customized including the link to learn more
-    ![ME Settings for Developer Environments](../media/mae/image21.png)
-    :::column-end:::
-:::row-end:::
+### Default environment
+- **Limit sharing**: Exclude sharing with limit total of 20 individuals
+- **Solution checker**: Block and send emails
+- **Usage insights**: On
+- **Maker welcome content**: Customized, including the link to learn more
 
-:::row:::
-    :::column:::
-    **Sandbox Environment**
-    :::column-end:::
-    :::column:::
-    **Production Environment**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    Limit Sharing: Don't set limits
-    Solution Checker: Warning without the sending emails
-    Usage Insights: Activated
-    Maker Welcome content: Customized including the link to learn more
-    ![ME Settings for Sandbox Environments](../media/mae/image22.png)
-    :::column-end:::
-    :::column:::
-    Limit Sharing: Don't set limits
-    Solution Checker: Block with activated the sending emails
-    Usage Insights: Activated
-    Maker Welcome content: Customized including the link to learn more
-    ![ME Settings for Production Environments](../media/mae/image23.png)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    **Teams Environment**
-    :::column-end:::
-    :::column:::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    Limit Sharing: Don't set limits
-    Solution Checker: Block with activated the sending emails
-    Usage Insights: Activated
-    Maker Welcome content: Empty without the link to learn more
-    ![ME Settings for Teams Environments](../media/mae/image24.png)
-    :::column-end:::
-    :::column:::
-    :::column-end:::
-:::row-end:::
+### Developer environment
+- **Limit sharing**: Don't set limits
+- **Solution checker**: Warn and don't send emails
+- **Usage insights**: Off
+- **Maker welcome content**: Customized, including the link to learn more
 
-## How to use Manage Environment feature together with CoE Starter Kit
+### Sandbox Environment
+- **Limit sharing**: Don't set limits
+- **Solution checker**: Warn and don't send emails
+- **Usage insights**: On
+- **Maker welcome content**: Customized, including the link to learn more
+
+### Production environment
+- **Limit sharing**: Don't set limits
+- **Solution checker**: Block and send emails
+- **Usage insights**: On
+- **Maker welcome content**: Customized including the link to learn more
+
+### Teams environment
+- **Limit sharing**: Don't set limits
+- **Solution checker**: Block and send emails
+- **Usage insights**: On
+- **Maker welcome content**: No content or learn more link
+
+## How to use the Managed Environment feature with CoE Starter Kit
 
 Managed Environment capabilities can be used standalone, or alongside capabilities of the CoE Starter Kit to administer and govern your Power Platform adoption.
 
-The CoE Starter Kit reflects our customer obsession through experimentation and innovation with an open-source low-code model influenced by customer feedback. Managed Environments continues our customer obsession - and over time will replace certain features in the CoE Starter Kit. Whilst the evolution of Managed Environments continues, new experiments and innovations are added to the CoE Starter Kit to gauge admin interest.
+The CoE Starter Kit reflects our customer obsession through experimentation and innovation with an open-source, low-code model influenced by customer feedback. Managed Environments  are planned to eventually replace certain features in the CoE Starter Kit. While the evolution of Managed Environments continues, new experiments and innovations are added to the CoE Starter Kit to gauge admin interest.
 
-The CoE Starter Kit offers a comprehensive set of features to administer, govern and nurture Power Platform adoption. Some of these features in the CoE kit overlap with Managed Environments features, which raises the question of how organizations should use the CoE Starter Kit and/or Managed Environments features. Our recommendation is to start with the out of the box capabilities in Power Platform admin center and Managed Environments. The built-in product capabilities are robust and fully supported. And if you discover you need more capabilities to govern your tenant, check if features in the CoE Starter Kit can complement what you get out of the box.
+The CoE Starter Kit offers a comprehensive set of features to administer, govern, and nurture Power Platform adoption. Some of the features in the CoE kit overlap with Managed Environments features, which raises the question of how organizations should use the CoE Starter Kit with Managed Environments features. Our recommendation is to start with the default capabilities in the Power Platform admin center and Managed Environments. The built-in product capabilities are robust and fully supported. If you discover that you need more capabilities to govern your tenant, check if features in the CoE Starter Kit can complement what you get out-of-the-box.
 
-This guide provides the reader with some base concepts, but it depends on each organization and their governance processes to find the best hybrid model that suits their needs.
+Each organization, along with their governance processes, needs to find the best hybrid model that suits their requirements.
 
-The CoE Starter Kit uses publicly available APIs and actions to apply guardrails in the governance process. These processes are asynchronous and happen reactively. For instance, if an organization needs to restrict sharing capabilities to 20 users, the CoE can only react after the limit has been exceeded, possibly resulting in noncompliant assets in the organization. On the other hand, Managed Environments use private APIs built into the product that allow for restriction of limits before they're passed, making it possible to have a fully compliant policy. Whilst Managed Environments continues its evolution based on customer feedback, but also based on learnings from customers using the CoE Starter Kit, there may be partial overlaps in features that are available. It isn't the intent of the CoE Starter Kit to replicate or duplicate features that exist in Managed Environments, instead the CoE Starter Kit focuses on new innovation and addressing currently unmet customers asks to gauge feedback on what’s needed next and to continue to inspire our customers and product evolution. 
+The CoE Starter Kit uses publicly available APIs and actions to apply guardrails in the governance process. These processes are asynchronous and happen reactively. For instance, if an organization needs to restrict sharing capabilities to 20 users, the CoE can only react after the limit has been exceeded, possibly resulting in noncompliant assets in the organization. On the other hand, Managed Environments use private APIs built into the product that allow for restriction of limits before they're passed, making it possible to have a fully compliant policy. While Managed Environments continues its evolution based on customer feedback, but also based on learnings from customers using the CoE Starter Kit, there may be partial overlaps in features that are available. It isn't the intent of the CoE Starter Kit to replicate or duplicate features that exist in Managed Environments, instead the CoE Starter Kit focuses on new innovation and addressing currently unmet customers asks to gauge feedback on what’s needed next and to continue to inspire our customers and product evolution. 
 
-There are many features that the CoE Starter Kit enables organizations to use that aren't currently possible with Managed Environments, and vice versa. In this document, we focus on the features that have an overlap with Managed Environments to allow you to make the best decision on the most suitable approach for your tenant. Additionally, we recommend getting an overview of all the notable features the CoE Kit has to offer by [following this link](/power-platform/guidance/coe/overview).
+There are many features that the CoE Starter Kit enables organizations to use that aren't currently possible with Managed Environments, and vice versa. In this document, we focus on the features that have an overlap with Managed Environments to allow you to make the best decision on the most suitable approach for your tenant. We recommend that you review [Center of Excellence (CoE) overview](../coe/overview.md).
 
 The following table offers a simple comparison between features of Managed Environment and CoE Starter Kit.
 
 | **Feature** | **CoE Starter Kit** | **Observations** |
 |:---:|:---:|:---:|
-| **Maker Welcome** | Partially | In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When the welcome content is enabled, upon signing into Power Apps, Makers are greeted with customized Getting started information. A similar concept in the CoE Starter Kit is welcome email, which sends an email to new Makers only after they've created an app, flow, or bot for the first time. This means that makers may get necessary information only after they've created their first resource, whereas the Managed Environments feature shows them information when they sign into Power Apps. ME is the only one with communication in the Maker Studio. ME also allows you to tailor the welcome message per environment, whereas the CoE kit only has one welcome message across all environments. |
-| **Limit Sharing** | Not real time (Reactive) | Admins can set sharing limits in the kit, but they can't be proactively enforced. Sharing limits in the CoE kit are used to send compliance notifications and reminders to Makers only. |
-| **Usage Insights** | Yes | Both solutions have good visualization of the inventory and usage insights. One advantage of the CoE kits reporting is that it combines your telemetry and inventory data with data about your tenant from Azure Active Directory, allowing you to find your most active Makers by department/city/country/etc. Additionally, as reporting happens through a Power BI template you can slice and dice the data based on your requirements and use Power BI row-level security to share dashboards with other admin groups. Learn more: [CoE Power BI Dashboard - Power Platform &#124; Microsoft Learn](/power-platform/guidance/coe/power-bi) |
-| **Data Policies** | Yes | Kit has a DLP impact tool that is useful to understand the impact of activating a certain DLP |
-| **Weekly Digest** | Partially | The CoE Starter Kit doesn't have a weekly digest for admins, instead admins self-serve information through the Power BI dashboard. Inactive apps and flows are highlighted in the Weekly digest email. In the CoE Starter Kit, a similar goal is achieved with the inactivity notification process, which notifies Makers of their inactive resources and asks for approval to delete them. One of the main goals of Managed Environments and the CoE Starter Kit is to provide more insights thus allowing admins to act. The CoE kit provides more capabilities, which can reduce the burden on the admins dealing with inactive resources, as the CoE can direct resource management to the Maker thus making the owner responsible for their own resources. |
-| **Pipelines in Power Platform** | Partially | Part of the CoE Kit, exists another Kit called ALM Accelerator for Power Platform that has similar features of Pipelines for Power Platform including some extensibility for integration between both solutions. |
-| **Solution Checker** | No | Since these solutions are tightly integrated with the product, there isn’t a way for the Kit to support those. |
-| **IP Firewall** | No | |
-| **Block cookie reply attacks** | No | |
-| **CMK** | No | |
-| **Lockbox** | No | |
+| Maker Welcome | Partially | In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When the welcome content is enabled, upon signing into Power Apps, Makers are greeted with customized Getting started information. A similar concept in the CoE Starter Kit is welcome email, which sends an email to new Makers only after they've created an app, flow, or bot for the first time. This means that makers may get necessary information only after they've created their first resource, whereas the Managed Environments feature shows them information when they sign into Power Apps. ME is the only one with communication in the Maker Studio. ME also allows you to tailor the welcome message per environment, whereas the CoE kit only has one welcome message across all environments. |
+| Limit Sharing | Not real time (Reactive) | Admins can set sharing limits in the kit, but they can't be proactively enforced. Sharing limits in the CoE kit are used to send compliance notifications and reminders to Makers only. |
+| Usage Insights| Yes | Both solutions have good visualization of the inventory and usage insights. One advantage of the CoE kits reporting is that it combines your telemetry and inventory data with data about your tenant from Azure Active Directory, allowing you to find your most active Makers by department/city/country/etc. Additionally, as reporting happens through a Power BI template you can slice and dice the data based on your requirements and use Power BI row-level security to share dashboards with other admin groups. Learn more: [CoE Power BI Dashboard - Power Platform &#124; Microsoft Learn](/power-platform/guidance/coe/power-bi) |
+| Data Policies| Yes | Kit has a DLP impact tool that is useful to understand the impact of activating a certain DLP |
+| Weekly Digest | Partially | The CoE Starter Kit doesn't have a weekly digest for admins, instead admins self-serve information through the Power BI dashboard. Inactive apps and flows are highlighted in the Weekly digest email. In the CoE Starter Kit, a similar goal is achieved with the inactivity notification process, which notifies Makers of their inactive resources and asks for approval to delete them. One of the main goals of Managed Environments and the CoE Starter Kit is to provide more insights thus allowing admins to act. The CoE kit provides more capabilities, which can reduce the burden on the admins dealing with inactive resources, as the CoE can direct resource management to the Maker thus making the owner responsible for their own resources. |
+| Pipelines in Power Platform | Partially | Part of the CoE Kit, exists another Kit called ALM Accelerator for Power Platform that has similar features of Pipelines for Power Platform including some extensibility for integration between both solutions. |
+| Solution Checker | No | Since these solutions are tightly integrated with the product, there isn’t a way for the Kit to support those. |
+| IP Firewall | No | |
+| Block cookie reply attacks | No | |
+| CMK| No | |
+| Lockbox | No | |
 
 ## Conclusion
 
