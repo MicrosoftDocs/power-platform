@@ -186,6 +186,10 @@
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
+                - name: Block cookie replay attacks
+                  href: block-cookie-replay-attack.md
+                - name: Configure IP firewall (preview)
+                  href: ip-firewall.md
             - name: Environment updates
               items:
                 - name: Opt in to early access updates
@@ -456,10 +460,6 @@
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors
                   href: block-forwarded-email-from-power-automate.md
-                - name: Block cookie replay attacks
-                  href: block-cookie-replay-attack.md
-                - name: Configure IP firewall (preview)
-                  href: ip-firewall.md
                 - name: Continuous access evaluation (preview)
                   href: continuous-access-evaluation.md
                 - name: Configure environment security
