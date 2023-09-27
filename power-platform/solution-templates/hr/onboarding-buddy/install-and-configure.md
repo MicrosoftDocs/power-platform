@@ -73,7 +73,7 @@ More information:
 - [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users)
 - [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
 
-## Step 4: Set cloud flows to on
+## Step 4: Set cloud flows to *on*
 
 Open the newly installed Awards and Recognition solution and verify that the cloud flow is set to the *on* status. If not, turn it on.
 
@@ -93,66 +93,41 @@ Share the Onboarding Buddy Admin app and Onboarding Buddy app with the appropria
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
-## Step 6: Publish the canvas app
+## Step 6: Configure program parameters
 
-Once you are done making changes to an app, you must explicitly publish them to make them available to everyone with whom the app is shared.
+There are some program parameters that must be set for the application to work correctly.
 
-1. Go to [Power Apps](https://make.powerapps.com)
-1. Select **Environments** on the left panel and then select the environment where the solution is installed.
-1. Select **Apps** on the left panel to assign the *Onboarding Buddy* app.
-    :::image type="content" source="media/install/ob-install-share-app.png" alt-text="Power Apps screen with Apps and Onboarding Buddy app selected.":::
-1. Select the **three dots**.
-1. Select **Share**.
-1. Look for the users you want to share the app with.
-    1. Check the **Co-owner** box if the user should have access to edit the app.
-    1. Leave the checkbox empty for regular users of the app.
-    1. If everyone in the company should be able to use the app, you can look for *Everyone* in the **Enter a name** box.
-    :::image type="content" source="media/install/ob-install-add-users.png" alt-text="Power Apps screen showing users being set up for Onboarding Buddy app and notified.":::
-1. Select the **three dots**.
-1. Select **Edit**.
-1. Select **Share** to publish the Onboarding Buddy app.
+Open the Onboarding Buddy Admin App and select **Configurations** to set the parameters for the program.
 
-## Step 7: Set up reference tables list
+1. Select **New** in the top menu bar if you don't have any records yet. If there is already an existing record, select it and then select **Edit** in the top menu bar. There should only ever be one record in this table.
+:::image type="content" source="media/install/ob-install-active-config-record.png" alt-text="Power Apps screen showing active configuration record.":::
+1. There are three program-level settings you can tweak. Set them up with the values you desire.
 
-The canvas application feeds the data on Dataverse to work. It needs a *reference tables list* to have the correct information. All this information is populated using the model-driven app.
+    - **Days after match to send the first nudge email**. This controls when the first emails go out to the buddy and the onboarder that introduces them to the program and encourages them to engage with each other.
+    - **Days prior to end of match to send the last nudge email**. This controls when the final emails go out to the buddy and the onboarder. You can use this to encourage them to wrap up any final activities.
+    - **Length of Buddy Match Period (days)**. This controls how long the match lasts.
+    :::image type="content" source="media/install/ob-install-config-match-duration.png" alt-text="Power Apps screen showing new configuration record detailing how long a match lasts.":::
+1. Select **Save**.
 
-To configure the app, open your environment and go to your model-driven app labeled *Onboarding Buddy Admin*.
+## Step 7: Populate the Onboarders table
 
-:::image type="content" source="media/install/ob-install-select-md-app.png" alt-text="Power Apps screen showing model-driven apps.":::
+For a person to show up in the app as an Onbaorder who can be matched, you must first be enter them into the Onbaorders table.
 
-In the *Onboarding Buddy Admin* app, use the left panel's navigation to identify the different tables:
+The New Onboarders Sync flow is set to run every Saturday. It will automatically import users into the Onboarding table from AAD that have been created in the last week. Initially, though, you may have to populate existing employees that you want to be a part of the program right away.
 
-- Group 1 contains *Onboarders* and *Buddy Lists*.
-- Group 2 contains *Configurations*.
+### Manually run the flow
 
-:::image type="content" source="media/install/ob-install-lft-nav-tables.png" alt-text="Power Apps screen showing tables listed in the left panel.":::
-
-### Group 1 tables
-
-Select **Onboarders** to populate the table with the new employees.
-
-Select **Buddy Lists** to populate the table with the established employees who are mentors.
-
-### Populate the Onboarders table
-
-For a person to show up in the app as an *Onbaorder* who can be matched, you must first be enter them into the *Onbaorders* table.
-
-The *New Onboarders Sync* flow is set to run every Saturday. It automatically imports users into the Onboarding table from AAD that have been created in the last week. Initially, though, you may have to populate existing employees that you want to be a part of the program right away.
-
-#### Manually run the flow
-
-You can run the *New Onboarders Sync* flow manually to populate all new employees who join your organization in the last week. Take these steps:
+You can run the New Onboarders Sync flow manually to populate all new employees who join your organization in the last week. Take these steps:
 
 1. Select **Flows** from the left panel in Power Apps.
 1. Hover over the **New Onboarders Sync** flow and select **Play** (Run).
-
 :::image type="content" source="media/install/ob-install-onboarders-sync.png" alt-text="Power Apps screen showing Cloud flows.":::
 
-#### Manually create Onboarder records
+### Manually create onboarder records
 
-If you have existing employees that you wish to add to the Onboarder table that have been in AAD for more than a week, you can manually add them.
+If you have existing employees that you wish to add to the Onboarders table that have been in AAD for more than a week, you can manually add them.
 
-1. Select **Onboarders** in the *Onboarding Buddy Admin* app.
+1. Select **Onboarders** in the Onboarding Buddy Admin app.
 1. Select **+New** from the top menu.
 1. Populate the fields. The most critical fields to populate are:
     1. Onboarder
@@ -164,24 +139,6 @@ If you have existing employees that you wish to add to the Onboarder table that 
 1. Optionally populate the other fields.
 1. Select **Save & Close** from the top menu.
 1. Repeat the steps for as many Onboarders as you need to create.
-
-### Group 2 table
-
-Select **Configurations** to set the parameters for the program.
-
-1. Select **New** in the top menu bar if you don't have any records yet.
-If there's already an existing record, select it and then select **Edit** in the top menu bar. There should only ever be one record in this table.
-
-    :::image type="content" source="media/install/ob-install-active-config-record.png" alt-text="Power Apps screen showing active configuration record.":::
-
-1. There are three program-level settings you can tweak. Set them up with the values you desire.  
-
-    - **Days after match to send the first nudge email**. This controls when the first emails go out to the buddy and the onboarder that introduces them to the program and encourages them to engage with each other.
-    - **Days prior to end of match to send the last nudge email**. This controls when the final emails go out to the buddy and the onboarder. You can use this to encourage them to wrap up any final activities.
-    - **Length of Buddy Match Period (days)**. This controls how long the match lasts.
-
-    :::image type="content" source="media/install/ob-install-config-match-duration.png" alt-text="Power Apps screen showing new configuration record detailing how long a match lasts.":::
-1. Select **Save**.
 
 ## Step 8: Turn on Auditing
 
