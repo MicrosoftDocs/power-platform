@@ -204,6 +204,8 @@
                   href: admin-settings.md
                 - name: Environment database settings
                   href: environment-database-settings.md
+                - name: Default environment routing (preview)
+                  href: default-environment-routing.md
                 - name: Product
                   items:
                     - name: Behavior
@@ -1013,6 +1015,17 @@
                   href: connect-onedrive-business.md
                 - name: Connect to Yammer
                   href: connect-yammer.md
+        - name: Unified admin experience for finance and operations apps (preview)
+          items:
+            - name: Overview
+              href: unified-experience/finance-operations-apps-overview.md
+              displayName: Overview of unified admin experience for finance and operations apps
+            - name: "Tutorial: Provision a new environment with an ERP-based template"
+              href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
+            - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
+              href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
+            - name: "Admin trials for finance and operations apps"
+              href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization
           items:
             - name: Overview
@@ -1084,8 +1097,6 @@
       items:
         - name: Overview
           href: about-ce-guide.md
-        - name: Sales territories
-          href: set-up-sales-territories-organize-business-markets-geographical-area.md
         - name: Define subjects to categorize cases, products, and articles
           href: define-subjects-categorize-cases-products-articles.md
         - name: Enhanced service level agreements

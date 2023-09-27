@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 8/16/2023
+ms.date: 9/18/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -27,20 +27,21 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac auth](auth.md)|Manage how you authenticate to various services|
 |[pac canvas](canvas.md)|Operating with Power Apps .msapp files|
 |[pac catalog](catalog.md)|(Preview) Commands for working with Catalog in Power Platform|
+|[pac connection](connection.md)|(Preview) Commands for working with Dataverse connection.|
 |[pac connector](connector.md)|(Preview) Commands for working with Power Platform Connectors|
-|[pac copilot](copilot.md)|(Preview) Tools and utilities for copilot scenarios|
+|[pac copilot](copilot.md)|Tools and utilities for copilot scenarios|
 |[pac data](data.md)|Import and export data from Dataverse.|
 |[pac help](help.md)|Show help for the Microsoft Power Platform CLI.|
 |[pac modelbuilder](modelbuilder.md)|Code Generator for Dataverse APIs and Tables|
 |[pac org](org.md)|Work with your Dataverse organization.|
 |[pac package](package.md)|Commands for working with Dataverse package projects|
-|[pac paportal](paportal.md)|Commands for working with Power Pages website.|
 |[pac pcf](pcf.md)|Commands for working with Power Apps component framework projects|
 |[pac pipeline](pipeline.md)|Work with Pipelines|
 |[pac plugin](plugin.md)|Commands for working with Dataverse plug-in class library|
+|[pac powerpages](powerpages.md)|Commands for working with Power Pages website.|
 |[pac solution](solution.md)|Commands for working with Dataverse solution projects|
 |[pac telemetry](telemetry.md)|Manage telemetry settings.|
-|[pac tests](tests.md)|(Preview) Execution of automated tests for a Power App|
+|[pac test](test.md)|(Preview) Execution of automated tests for a Power App|
 |[pac tool](tool.md)|Power Platform tools that can be installed and launched.|
 |[pac virtual-agent](virtual-agent.md)|Commands for working with Power Virtual Agent bots|
 
