@@ -15,19 +15,31 @@ contributors:
 
 # Activating Managed Environments
 
-This article addresses the key features of Managed Environments and how organizations and administrators can plan the activation of features.
+This article addresses the key features of Managed Environments and how organizations and administrators can be benefited activating these capabilities.
 
 ## Managed Environments overview
 
-Managed Environments is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment.
+Managed Environments is a suite of premium governance capabilities that allows admins to manage Power Platform at scale with more control, more visibility, and less effort.
 
-There are different aspects depending on the environment type, business needs, or internal policies. In this article, you find illustrations and explanations based on various organizations that have implemented Managed Environments. More information: [Enable Managed Environments](/power-platform/admin/managed-environment-enable)
+In this article, you will learn about each of the features and examples based on organizations that have activated Managed Environments, including:
 
-Managed Environments being a suite of features is important to understand each feature capability and advantages.
+ - **Pipelines in Power Platform** brings application lifecycle management (AML) automation to streamline development processes with reduced effort.
+ - **Maker welcome content** provides customized welcome message to help makers in the organization get started with Power Apps.
+ - **Limit Sharing** adds guardrail on how broadly users can share canvas apps.
+ - **Usage Insights** keeps admins informed about apps usage and users activities via weekly digest email.
+ - **Data policies** can be easily identified and accessed for Managed Environment.
+ - **Solution Checker** enforces rich static analysis validations during solution imports.
+ - **IP Firewall** protects organizational data by limiting user access to Dataverse from allowed IP locations.
+ - **IP cookie binding** prevents session hijacking exploits in Dataverse with IP address-based cookie binding.
+ - **Customer Managed Key (CMK)** offers added data protection to encrypt your data using the encryption key from your own key vault.
+ - **Lockbox** provides an interface for customer approval to data access requests from Microsoft Support.
+ - **Extended backup** allows extended backup retention period from 7 days to up to 28 days.
+ - **DLP for desktop flow** governs desktop flow models and individual models actions in Power Automate.
+ - **Export data to Azure Application Insights** helps diagnose and troubleshooting issues related to errors and performance.
+ - **Catalog in Power Platform** promotes collaboration and productivity via sharing Power Platform artifacts at scale.
 
-Pipelines in Power Platform are used by organizations to democratize application lifecycle management (ALM), enabling them to streamline and optimize their development processes. Managed Environments also offer a range of features and capabilities that empower administrators to customize makers' welcome messages in-product, restrict sharing of canvas apps, and gain valuable insights into user activity. With the possibility to manage all data loss prevention (DLA) policies associated with a specific environment, it allows administrators to be more efficient and focused on business needs. Enforcing static analysis checks on solutions and limiting user access to Dataverse through IP Firewall and IP cookie binding allows administrators to follow internal policies and best practices. Customers can use the Customer Managed Key (CMK) feature to encrypt their data at-rest and meet stringent data privacy and compliance requirements. Microsoft's Lockbox feature ensures that customer data is accessed by Microsoft only when there's a compelling business reason to do so, while extended backup capabilities safeguard against data loss and ensure continuous availability of service. Additionally, Power Automate's DLP feature enables organizations to create and enforce policies that classify desktop flow and individual actions, which helps to ensure that sensitive data is protected always.
+More information: [Enable Managed Environments](/power-platform/admin/managed-environment-enable)
 
-The following sections are presented with examples and ideas of how your organization could take advantage of Managed Environments.
 
 ### Pipelines in Power Platform
 
