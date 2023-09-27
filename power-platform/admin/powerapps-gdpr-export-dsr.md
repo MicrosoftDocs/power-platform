@@ -36,7 +36,7 @@ Connection | | App creator: Available <br> Admin: Available
 Connection permissions    | | App creator: Available <br> Admin: Available
 Power Apps user settings, user-app settings, and notifications | | App creator: Available <br> Admin: Available
 
-> ** With the introduction of Microsoft Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Dataverse database environment. For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
+> ** With the introduction of Microsoft Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Dataverse database environment. For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-privacy-dsr-guide.md).
 
 > *** An administrator can access these resources from the [Power Apps portal](https://make.powerapps.com) only if the owner of the resource has explicitly granted them access. If the administrator has not been granted access, they need to leverage the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md).
 
@@ -115,7 +115,7 @@ Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -
 >  This function only works for environments that do not have a Dataverse database environment.
 
 ### For environments with a Dataverse database
-With the introduction of the Dataverse, if a database is created within the environment, role assignments are stored as records within the Dataverse database environment. For information on how to remove personal data from a Dataverse database environment, see [Common Data Serviice User personal data removal](./common-data-service-gdpr-dsr-guide.md).
+With the introduction of the Dataverse, if a database is created within the environment, role assignments are stored as records within the Dataverse database environment. For information on how to remove personal data from a Dataverse database environment, see [Common Data Serviice User personal data removal](./common-data-service-privacy-dsr-guide.md).
  
 ## Step 3: Export personal data contained within canvas apps created by the user
 
