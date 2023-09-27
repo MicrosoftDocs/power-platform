@@ -123,7 +123,7 @@ An example customer, who expects up to 10000 sessions a month for their bot, whi
 
 **Power Virtual Agents for Teams**
 
-**1. Microsoft 365 license**
+1. **Microsoft 365 license**
 
     a. Unlimited sessions (Teams channel only)
 
@@ -132,11 +132,12 @@ An example customer, who expects up to 10000 sessions a month for their bot, whi
     Generally, if a customer is interested in using PVA for Teams, no further licensing is required (as they need Microsoft 
     365 to use Teams) unless they wish to deploy their bot to additional channels (they will need the standard PVA licenses 
     detailed above).
+
 **Chat for Dynamics 365 Customer Service (Omnichannel)**
     Customers deploying PVA with Dynamics 365 for Customer Service now receive a version of the PVA tenant license 
     with their Dynamics 365 purchase:
 
-**1. Tenant license (billed monthly, capacity pooled at Tenant)**
+1. **Tenant license (billed monthly, capacity pooled at Tenant)**
     
     a. 1000 sessions per tenant
     
@@ -147,4 +148,4 @@ An example customer, who expects up to 10000 sessions a month for their bot, whi
        Add-on and User licenses are still required, as detailed above. Latest information on [Power Virtual Agents licensing.](https://powervirtualagents.microsoft.com/en-us/pricing/)
 
 
-> [Building a team](project-building-a-team.md)
+[Building a team](project-building-a-team.md)
