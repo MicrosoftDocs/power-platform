@@ -44,3 +44,5 @@
   items:
     - name: Project best practices
       href: project-best-practices.md
+    - name: Project getting started
+      href: project-getting-started.md
