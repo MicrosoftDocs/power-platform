@@ -4,7 +4,7 @@ description: Learn about activating the features of Managed Environments.
 author: rsantos00
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 09/26/2023
+ms.date: 09/27/2023
 ms.author: rstand
 ms.reviewer: sericks
 ms.custom: bap-template
@@ -121,9 +121,9 @@ The most common scenarios of sharing limits in the different environments are:
 
 | Environment Type|Sharing limits|
 |----------------|-------------------|
-|Default|Choose **Exclude sharing with security groups**, tick the **Limit total individuals who can share to** check box, and select **20** for the value.|
-|Developer| Choose **Exclude sharing with security groups**, tick the **Limit total individuals who can share to** check box, and select **5** for the value.|
-|Sandbox| Choose **Exclude sharing with security groups**and leave the **Limit total individuals who can share to** checkbox unticked.<br><br>If you want to control the tester users and you need to use a security group, choose **Don't set limits (default)**.|
+|Default|Choose **Exclude sharing with security groups**, select the **Limit total individuals who can share to** check box, and select **20** for the value.|
+|Developer| Choose **Exclude sharing with security groups**, select the **Limit total individuals who can share to** check box, and select **5** for the value.|
+|Sandbox| Choose **Exclude sharing with security groups**and leave the **Limit total individuals who can share to** checkbox clear.<br><br>If you want to control the tester users and you need to use a security group, choose **Don't set limits (default)**.|
 |Production|Choose **Don't set limits (default)**.|
 
 Currently the sharing capabilities are only for canvas apps, but in the future, we might support model-driven apps and Power Automate flows.
@@ -146,9 +146,7 @@ It's common for decentralized IT teams to use this email to inform the different
 
 ### Data policies
 
-In Managed Environments, admins can easily identify all the data policies that are applied to the environment.
-
-More information: [Data policies](../../admin/managed-environment-data-policies.md)
+In Managed Environments, admins can easily identify all the data policies that are applied to the environment. More information: [Data policies](../../admin/managed-environment-data-policies.md)
 
 With a well-planned environment strategy, it's imperative to have a DLP strategy in place. DLPs dictate which connectors are available and which ones can be used with each other. It's possible for multiple DLPs to be active in the same environment, but the most restrictive DLP will take precedence. For example, if one DLP allows the use of connector A and another DLP blocks the use of connector A, the connector is blocked.
 
@@ -188,9 +186,7 @@ Organizations tend to activate IP firewall and configure it to allow connections
 
 ### IP cookie binding (block cookie reply attacks)
 
-Customers can prevent session cookie exploits with IP address-based cookie binding.
-
-More information: [Block cookie replay attacks in Dataverse](../../admin/block-cookie-replay-attack.md).
+Customers can prevent session cookie exploits with IP address-based cookie binding. More information: [Block cookie replay attacks in Dataverse](../../admin/block-cookie-replay-attack.md).
 
 If you have a stolen session cookie from an authorized computer that has cookie IP binding enabled, then once the exploiter tries to use the cookie from a different computer to gain unauthorized access to Dataverse, the attempt is blocked, and an error message is shown asking the user to reauthenticate.
 
@@ -219,7 +215,7 @@ Most operations, support, and troubleshooting performed by Microsoft personnel d
 
 When data access is required for a ticket resolution with Lockbox activated, the global admins and Power Platform admins receive a Lockbox request for approval. After the approval, the Microsoft personnel have access to the data within the boundary of the environment that the request came from. Access is time-bound and it is not automatically renewed. Every time data access is needed, a new Lockbox request is sent to the admins. All updates to Lockbox requests are automatically recorded in the audit log. More information: [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](/power-platform/admin/about-lockbox)
 
-Extended backup (7 to 28 days)
+### Extended backup (7 to 28 days)
 
 It's important to protect your data in Power Platform and Dataverse, and provide continuous availability of service. If you use Power Platform to create production environments that have a database and Dynamics 365 applications enabled, you can benefit from the system back-ups that are automatically performed for those environments. The system back-ups are stored for up to 28 days. Therefore, you can restore your environment if there are any issues.
 
