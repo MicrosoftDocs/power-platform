@@ -18,4 +18,4 @@ everyone in the project.
 Internal Team 
 Most customers treat a Chatbot implementation like any other project. It usually consists of the following roles:
 
-(./media/topics/Project-Building-Internal-Team.png)
+![Roles](./media/topics/Project-Building-Internal-Team.png)
