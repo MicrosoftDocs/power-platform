@@ -13,7 +13,7 @@ ms.subservice: solution-templates
 
 # Install and configure the Onboarding Buddy template
 
-As a Power Platform admin, you can access, import, install, configure, and deploy the Onboarding Buddy template for your organization.
+As a Power Platform admin, you'll access, import, install, configure, and deploy the Onboarding Buddy template for your organization.
 
 > [!IMPORTANT]
 > Two solutions will always be installed in your environment:
@@ -65,7 +65,7 @@ Roles can be assigned from the admin portal.
 1. Select the user(s).
 1. Select **Manage security roles** and select the appropriate roles for each user.
 1. Select **Save**.
-:::image type="content" source="media/ob-set-up-roles-env.png" alt-text="Screen of Power Platform admin center showing where to select environments and users.":::
+:::image type="content" source="media/install/ob-install-assign-roles.png" alt-text="Screen of Power Platform admin center showing where to select environments and users.":::
 
 > [!NOTE]
 > All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application. If users don't have a security role, they'll get a data access denied error when trying to run an app. Users can't access environments until they are assigned at least one security role for that environment.
