@@ -16,7 +16,7 @@ ms.date: 02/28/2022
 search.audienceType: 
   - admin
 ---
-# About GDPR (EU) compliance
+# About privacy compliance
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 

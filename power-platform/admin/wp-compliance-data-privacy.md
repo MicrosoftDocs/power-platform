@@ -40,25 +40,16 @@ By default, Microsoft stores and manages the database encryption keys for your e
 
 ## Resources to manage GDPR compliance
 
-The European Union General Data Protection Regulation (GDPR) is one of the newest privacy regulations enacted that gives rights to people to manage their personal data. In this section, we will look at some of the tools and resources available for the Microsoft Power Platform to assist administrators in their efforts to comply with GDPR. Some of these resources and tools may also be helpful to assist you in other data privacy-related tasks not directly related to GDPR. A complete discussion of GDPR is beyond the scope of this content, however in this section we'll focus on the tools and resources to support your efforts. Additionally, Microsoft has a section on the trust center dedicated to GDPR resources and information that can be helpful. You can find that here https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-First, let’s review at some of GDPR’s terminology that matters in this context:
-
-|Term  |Relevance  |
-|---------|---------|
-|Data Subject     | GDPR identifies people as data subjects. It is their personal data that might have been collected by your organization either in the employment of the person or some interaction collecting their personal data        |
-|Data Controller     |Organizations that collect and process data for their own purposes         |
-|Data Processor     | Organizations that process data on behalf of others        |
-|Personal Data     | Any information relating to an identified or identifiable natural person.        |
-
-As an administrator one of the key activities in support of GDPR will be related to Data Subject Rights (DSR) requests. These are formal requests from a Data Subject to a Data Controller (likely your organization) to act on their personal data in your systems. GDPR gives rights to Data Subjects to obtain copies, request corrections, restrict processing of the data, delete the data and to receive copies in an electronic format so it could be moved to another Data Controller.
+As an administrator one of the key activities in support of privacy will be related to Data Subject Rights (DSR) requests. These are formal requests from a data subject to a data controller (likely your organization) to act on their personal data in your systems. Data subjects have the right to obtain copies, request corrections, restrict processing of the data, delete the data and to receive copies in an electronic format so it could be moved to another data controller.
 
 The following links point to detailed information to help you respond to DSR requests depending on the features your organization is using.
 
 |Platform Feature Area  |Link to detailed response steps  |
 |---------|---------|
 |Power Apps  |  [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md)      |
-|Dataverse     |  [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md)     |
+|Dataverse     |  [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-privacy-dsr-guide.md)     |
 |Power Automate    | [Responding to GDPR Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary)       | 
 |Microsoft Accounts (MSAs)     | [Respond to GDPR Data Subject Rights (DSRs) requests](/power-automate/gdpr-dsr-summary-msa)       | 
 |Customer engagement apps     | [Dynamics 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-Dynamics365?view=o365-worldwide)        | 
