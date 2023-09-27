@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
-ms.date: 09/25/2023
+ms.date: 09/27/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -48,7 +48,7 @@ Access the template on AppSource and install the template's solutions into a Pow
 - Select **Install**. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
 
 > [!TIP]
-> You can log your questions and get support for the Employee Kudos template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> You can log your questions and get support for the Onboarding Buddy template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
 ## Step 3: Assign security roles to the users
 
@@ -165,8 +165,8 @@ If you have existing employees that you wish to add to the Onboarder table that 
     1. Organization
     1. Region
 1. Optionally populate the other fields.
-1. Select **Save** and **Close** from the top menu.
-1. Repeat the steps for as many onboarders as you need to create.
+1. Select **Save & Close** from the top menu.
+1. Repeat the steps for as many Onboarders as you need to create.
 
 ### Group2 table
 
