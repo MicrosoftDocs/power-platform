@@ -74,7 +74,7 @@
               items:
                 - name: Overview of extending pipelines
                   href: extend-pipelines.md
-                - name: Deploy with a service principal or other user
+                - name: Deploy with a service principal or other user (preview)
                   href: delegated-deployments-setup.md
                 - name: Extend pipelines using GitHub Actions
                   href: extend-pipelines-github-export.md
