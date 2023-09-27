@@ -203,75 +203,63 @@ The user is asked to reauthenticate in the following scenarios:
 
 Organizations enable the IP cookie-based binding in cases where they want to restrict the network traffic to come only from one IP address for the user, and in case of a change, it reauthenticates the user with the new IP address (let’s say if the user connects to a VPN network).
 
-### Customer Managed Key (CMK)
+### Customer-managed key (CMK)
 
-Customers have data privacy and compliance requirements to secure their data by encrypting their data at-rest. This secures the data from exposure in an event where a copy of the database is stolen. With data encryption at-rest, the stolen database data is protected from being restored to a different server without the encryption key.
+Customers have data privacy and compliance requirements to secure their data by encrypting their data at-rest. This secures the data from exposure in an event where a copy of the database is stolen. With data encryption at-rest, the stolen database data is protected from being restored to a different server without the encryption key. More information: [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
 
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/customer-managed-key).
+The customer-managed key (CMK) is being used by organizations, which need to meet laws and regulations around security and data confidentially, for example, signing confidential data with their own key. Using this feature, organizations guarantee that only they have access to the key to decrypt the information, restricting access to anyone without the encryption key, including Microsoft. Organizations with CMK also have strict procedures to protect and renew the encryption key.
 
-The CMK is being used by organizations, which need to meet laws and regulations around security and data confidentially, for example, signing confidential data with their own key. Using this feature, organizations guarantee that only they have access to the key to decrypt the information, restricting access to anyone without the encryption key, including Microsoft. Organizations with CMK also have strict procedures to protect and renew the encryption key.
+CMK offers more advantages compared to the bring-your-own-key (BYOK) feature, such as having the ability to use different or multiple encryption keys for separate environments and better management of your encryption key in your own key vault. Upgrading BYOK to customer-managed key opens up your environments to all other Power Platform services that use non-SQL storage. For example, customer insights and analytics, larger file upload sizes, more cost effective audit storage with audit retention, elastic table services, Dataverse search, and long-term retention are available. Organizations using BYOK are recommended to migrate to CMK.
 
-CMK offers advantages then Bring Your Own Key (BYOK) feature, having the ability to use different or multiple encryption keys for separate environments and better management of your encryption key in your own key vault, upgrading BYOK to customer-managed key opens up your environments to all other Power Platform services that use non-SQL storage. For example, Customer Insights and Analytics, larger file upload sizes, more cost effective audit storage with audit retention, elastic table services, Dataverse search, and long-term retention are available. Organizations using BYOK are recommended to migrate to CMK.
-
-This feature has been highly anticipated by customers with Dynamics 365 environments, since in most cases it contains confidential/secret information related to finance, healthcare, or business secrets.
+This feature has been highly anticipated by customers with Dynamics 365 environments, since in most cases it contains confidential and secret information related to finance, healthcare, or business secrets.
 
 ### Lockbox
 
-Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. However, in rare situations, accessing limited customer data is required for investigation purposes. Microsoft has a multi-layered internal approval process to grant access to customer data in these cases. Customers that are following compliance and regulatory requirement will need extra control over who or when Microsoft can access their data. With Power Platform Customer Lockbox, customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. That gives full control over the data access to the customer.
+Most operations, support, and troubleshooting performed by Microsoft personnel don't require access to customer data. However, in rare situations, accessing limited, customer data is required for investigation purposes. Microsoft has a multi-layered, internal approval process to grant access to customer data in these cases. Customers who are following compliance and regulatory requirements, need extra control over who or when Microsoft can access their data. With Power Platform Customer Lockbox, customers can review and approve (or reject) data access requests in the rare occasions when data access to customer data is needed. That gives full control over the data access to the customer.
 
-With Lockbox activated, when data access is required for a ticket resolution, the Global administrators and Power Platform administrators receive a Lockbox request for approval. After the approval, the Microsoft personnel will have access to the data within the boundary of the environment that the request came for. Access is time bound and it is not automatically renewed - every time data access is needed, a new Lockbox request is sent to the administrators. All updates to Lockbox requests are automatically recorded in the audit log.
-
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/about-lockbox).
+When data access is required for a ticket resolution with Lockbox activated, the global admins and Power Platform admins receive a Lockbox request for approval. After the approval, the Microsoft personnel have access to the data within the boundary of the environment that the request came from. Access is time-bound and it is not automatically renewed. Every time data access is needed, a new Lockbox request is sent to the admins. All updates to Lockbox requests are automatically recorded in the audit log. More information: [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](/power-platform/admin/about-lockbox)
 
 Extended backup (7 to 28 days)
 
-It's important to protect your data in Microsoft Power Platform and Dataverse, and provide continuous availability of service. If you use Microsoft Power Platform to create production environments that have a database and Dynamics 365 applications enabled, you can benefit from the system backups that are automatically performed for those environments. The system backups are stored for up to 28 days. Therefore, you can restore your environment if there are any issues.
+It's important to protect your data in Power Platform and Dataverse, and provide continuous availability of service. If you use Power Platform to create production environments that have a database and Dynamics 365 applications enabled, you can benefit from the system back-ups that are automatically performed for those environments. The system back-ups are stored for up to 28 days. Therefore, you can restore your environment if there are any issues.
 
-For production environments that don't have Dynamics 365 applications enabled, the default backup retention period is only seven days. However, for managed environments, admins can use PowerShell to change the setting and extend the backup retention period. The available options are 7, 14, 21, and 28 days.
+For production environments that don't have Dynamics 365 applications enabled, the default, back-up retention period is only 7 days. However, for Managed Environments, admins can use PowerShell to change the setting and extend the back-up retention period. The available options are 7, 14, 21, and 28 days. More information: [Back up and restore environments](/power-platform/admin/backup-restore-environments)
 
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/backup-restore-environments).
+The ability to change the back-up retention period is useful for Managed Environments that don't have Dynamics 365 applications enabled. Organizations are using this extension to retain the back-up for a longer period, getting more flexibility and security for their data. It also helps with accidental data deletion scenarios or restores the system after a complex deployment that failed.
 
-The ability to change the backup retention period is useful for managed environments that don't have Dynamics 365 applications enabled. Organizations are using this extension to retain the backup for a longer period, getting more flexibility and security for their data. It also helps with accidental data deletion scenarios or restores the system after a complex deployment that failed.
+The following PowerShell command can be used to extend the back-up to different retentions periods.
 
-The following PowerShell command can be used to extend the backup to different retentions periods.
+```PowerShell
+Set-AdminPowerAppEnvironmentBackupRetentionPeriod -EnvironmentName 6B29FC40-CA47-1067-B31D-00DD010662DA -NewBackupRetentionPeriodInDays 28
+```
 
-| **Set-AdminPowerAppEnvironmentBackupRetentionPeriod -EnvironmentName 6B29FC40-CA47-1067-B31D-00DD010662DA -NewBackupRetentionPeriodInDays 28** |
-|---|
+## DLP for desktop flows
 
-DLP for desktop flows
+Power Automate allows you to create and enforce DLP policies that classify desktop flow modules and individual, module actions such as _Business_, _Nonbusiness_, or _Blocked_. This categorization prevents makers from combining modules and actions from different categories into a desktop flow, or between a cloud flow and the desktop flow it uses. The enforcement of DLP policies for desktop flows are enforced if the desktop flow is in a Managed Environment. More information: [Manage data loss prevention (DLP) policies](/power-automate/prevent-data-loss)
 
-Power Automate allows you to create and enforce DLP policies that classify desktop flow modules and individual module actions such as Business, Nonbusiness, or Blocked. This categorization prevents makers from combining modules and actions from different categories into a desktop flow or between a cloud flow and the desktop flow it uses. The enforcement of DLP policies for desktop flows will only be enforced if the desktop flow is in a Managed Environment.
-
-To find more information on how the feature works, you can follow [this link](/power-automate/prevent-data-loss).
-
-At the time of writing, by default, desktop flows action groups don’t appear when a DLP policy is being created, the administrator needs to activate a Tenant Setting in the Power Platform admin center, as it’s shows in the following picture.
+By default, action groups for desktop flows don’t appear when a DLP policy is being created. The admin needs to activate the **Desktop flows actions in DLP** tenant setting in the Power Platform admin center.
 
 :::image type="content" source="../media/mae/image17.png" alt-text="Screenshot of the DLP for desktop flows setting in the Power Platform admin center.":::
 
-The Default Environment allows everyone to be a Maker and take advantage of Desktop Flows in Microsoft Windows. However, it's important to have a strategy for Data Loss Prevention (DLP) strategy in Desktop Flows, just as one would for Cloud Flows. This is to ensure compliance with organizational policies. For example, if an organization is blocking the running of scripts on user PCs, it's important to prevent makers from creating Desktop Flows with a "Run Script" action. Similarly, if an organization is limiting the usage of the HTTP connector, it would be relevant to block similar actions in Desktop Flows to ensure compliance.
+The default environment allows everyone to be a maker and take advantage of desktop flows in Windows. However, it's important to have a DLP strategy for desktop flows, just as one would for cloud flows. This is to ensure compliance with organizational policies. For example, if an organization is blocking the running of scripts on user PCs, it's important to prevent makers from creating desktop flows with a **Run Script** action. Similarly, if an organization is limiting the usage of the HTTP connector, it would be relevant to block similar actions for desktop flows to ensure compliance.
 
-By having a strategy for DLP in Desktop Flows, organizations can ensure that their data remains secure and that their policies are being followed, even in the context of Desktop Flows.
+By having a DLP strategy for desktop flows, organizations can ensure that their data remains secure and that their policies are being followed, even in the context of desktop flows.
 
-If you want to do an impact analysis before applying a DLP policy, to assess the impact on your desktop flows, you can use the DLP impact analysis tool from the Automation KIT: [DLP impact analysis for desktop flows - Power Automate | Microsoft Learn](/power-automate/guidance/automation-kit/dlp-impact-analysis)
+To assess the impact on your desktop flows, you can use the DLP impact analysis tool from the automation kit. More information: [DLP impact analysis for desktop flows](/power-automate/guidance/automation-kit/dlp-impact-analysis)
 
 ### Export data to Azure Application Insights
 
-Application Insights can be set up to receive telemetry on diagnostics and performance captured by the Dataverse platform. This telemetry provides information that can be used to diagnose and troubleshooting issues related to errors and performance. Application Insights is part of the Azure Monitor ecosystem and is widely used by enterprises for monitoring and diagnostics.
+Application Insights can be set up to receive telemetry on diagnostics and performance captured by the Dataverse platform. This telemetry provides information that can be used to diagnose and troubleshoot issues related to errors and performance. Application Insights is part of the Azure Monitor ecosystem and is widely used by enterprises for monitoring and diagnostics. More information: [Overview of integration with Application Insights](/power-platform/admin/overview-integration-application-insights)
 
-To find more information on how the feature works, you can follow [this link](/power-platform/admin/overview-integration-application-insights).
-
-Organizations that have widely used App or Power Automate Flows are using this feature to get more control of their assets. The following picture shows the count and average duration of each operation for a Model Driven App. This information is useful to identify those operations that most affect users.
+Organizations that have widely used app or Power Automate flows are using this feature to get more control of their assets. The following image shows the count and average duration of each operation for a model-driven app. This information is useful to identify those operations that most affect users.
 
 :::image type="content" source="../media/mae/image18.png" alt-text="Application Insights Performance panel.":::
 
-Organizations with Dataverse Environments use the data stream to monitor performance data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. It also provides data for failures in plug-in and Dataverse SDK operations.
+Organizations with Dataverse environments use the data stream to monitor performance of data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. It also provides data for failures in plug-in and Dataverse SDK operations.
 
-Additionally, to Power Apps insights, organizations have also the possibility to monitor cloud flows executions and together with filters, is possible to detect any flow that is failing and create alerts to be notified when it happens.
+For Power Apps insights, organizations can monitor cloud flow executions. Together with filters, it is possible to detect any flow that is failing and create alerts for notifications.
 
-The following example shows how to create a custom alert to filter for specific cloud flow’s failure, is possible to find [more examples here](/power-platform/admin/app-insights-cloud-flow).
-
-| |
-|---|
+The following example shows how to create a custom alert to filter for a specific cloud flow’s failure. For more examples, see [Set up Application Insights with Power Automate](app-insights-cloud-flow.md).
 
 ```
 let myEnvironmentId = **'Insert your environment ID here**;
@@ -287,53 +275,51 @@ requests
 
 ### Catalog in Power Platform
 
-The catalog in Power Platform is a centralized location where makers and developers can find, create, submit, approve, store, discover, and acquire solutions and templates. It allows them to crowd-source and find Power Platform templates and code components within their organization easily, and get started with templates that provide immediate value. The catalog also provides a central location for administrators to store and maintain power platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements.
+The catalog in Power Platform is a centralized location where makers and developers can find, create, submit, approve, store, discover, and acquire solutions and templates. It allows them to crowd-source and find Power Platform templates and code components within their organization easily, and get started with templates that provide immediate value. The catalog also provides a central location for admins to store and maintain power platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements.
 
-Makers and developers can create solutions and templates with useful configuration points, and submit them to the catalog to help their colleagues solve business problems. Admins and LOB approvers can review and approve these submissions, and the catalog serves as a single source of truth for power platform artifacts that can be curated and controlled to accelerate value for makers and developers. Overall, the catalog in Power Platform streamlines the process of finding, creating, and sharing solutions and templates, making it easier for organizations to solve business problems and achieve their goals.
+Makers and developers can create solutions and templates with useful configuration points, and submit them to the catalog to help their colleagues solve business problems. Admins and line-of-business approvers can review and approve these submissions. The catalog serves as a single source of truth for power platform artifacts that can be curated and controlled to accelerate value for makers and developers. Overall, the catalog in Power Platform streamlines the process of finding, creating, and sharing solutions and templates, making it easier for organizations to solve business problems and achieve their goals. More information: [Catalog in Power Platform](/power-platform/developer/catalog)
 
-To find more information on how the feature works, you can follow [this link](/power-platform/developer/catalog).
-
-Organizations are using the catalog in Power Platform to allow developers and makers to easily find and use templates and code components within their organization. It also provides a central location for administrators to store and maintain power platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements. The process of using catalog in Power Platform is a continuous cycle of five steps:
+Organizations are using the catalog in Power Platform to allow developers and makers to easily find and use templates and code components within their organization. It also provides a central location for admins to store and maintain power platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements. The process of using the catalog in Power Platform is a continuous cycle of five steps:
 
 1. Create
 1. Submit
-1. Approve & Store
+1. Approve and store
 1. Discover
 1. Acquire
 
-Organizations that encourage developers and makers to build and share components and templates on the Power Platform can derive more value from it. Simply building isn't enough; sharing these artifacts at scale can foster communities and support groups that can unlock value from a diverse set of personnel within the organization. Successful organizations adopt a fusion teams model where pro-developers, makers, and admins work together to help their fellow employees derive the highest value possible from the platform, by reusing components and templates.
+Organizations that encourage developers and makers to build and share components and templates on the Power Platform can derive more value from it. Simply building isn't enough. Sharing these artifacts, at scale, can foster communities and support groups that can unlock value from a diverse set of personnel within the organization. Successful organizations adopt a fusion team model where pro-developers, makers, and admins work together to help their fellow employees derive the highest value possible from the platform, by reusing components and templates.
 
-## Considerations for Managed Environments (ME)
+## Considerations for Managed Environments
 
-Managed Environments are a set of features designed to make governance of the Power Platform easier by giving more control and requiring less effort from administrators, which is something that many organizations have been eagerly anticipating. Multiple organizations have their own governance processes that were influenced by the CoE Starter Kit, while others are using the out-of-the-box features of the kit and extending it to meet their specific needs. For organizations using the kit, it's important to maintain an internal process to update it monthly and follow the suggestions presented in the [CoE Starter Kit Office Hours](https://aka.ms/coeofficehours). Power CAT is the team responsible for the CoE Starter Kit, and is community driven, hence not covered with the same Service Level Agreement (SLA) as the licensed products. Customers are advised to interact using the [GitHub site](https://github.com/microsoft/coe-starter-kit/issues) to report bugs, ask questions, or request new features.
+Managed Environments are a set of features designed to make governance of the Power Platform easier by giving more control and requiring less effort from admins, which is something that many organizations have been eagerly anticipating. Multiple organizations have their own governance processes that were influenced by the CoE Starter Kit, while others are using the out-of-the-box features of the kit and extending it to meet their specific needs. For organizations using the kit, it's important to maintain an internal process to update it monthly and follow the suggestions presented in the [CoE Starter Kit Office Hours](https://aka.ms/coeofficehours). Power CAT is the team responsible for the CoE Starter Kit, and is community driven, hence not covered with the same service level agreement (SLA) as the licensed products. Customers are advised to interact using the [GitHub site](https://github.com/microsoft/coe-starter-kit/issues) to report bugs, ask questions, or request new features.
 
-When using Managed Environments, you're using in-product features that are managed by Microsoft, so you don't need to update or maintain any of these features, and they're updated with the release waves of the Power Platform, or more announcements throughout the year. When you use in-product features, you're will also receive full support via opening Microsoft Support ticket if needed.
+When using Managed Environments, you're using in-product features that are managed by Microsoft, so you don't need to update or maintain any of these features, and they're updated with the release waves of the Power Platform, or more announcements throughout the year. When you use in-product features, you also receive full support through Microsoft Support, if needed.
 
-The engineering team for Managed Environments has worked closely with [Power CAT](https://aka.ms/whoispowercat) to identify the features mostly used in the CoE Starter Kit and onboard them in-product. This has created a situation where some features are available in both places. If you're currently using the CoE Starter Kit, it's important to have a hybrid strategy. Using the CoE Starter Kit to expand the governance features included in Managed Environments is the recommended approach, where organizations first use the Managed Environment feature and then use the kit to fulfill more needs.
+The engineering team for Managed Environments has worked closely with [Power CAT](https://aka.ms/whoispowercat) to identify the features mostly used in the CoE Starter Kit and onboard them in the product. This has created a situation where some features are available in both places. If you're currently using the CoE Starter Kit, it's important to have a hybrid strategy. Using the CoE Starter Kit to expand the governance features included in Managed Environments is the recommended approach, where organizations first use the Managed Environment feature and then use the kit to fulfill more needs.
 
 Having a transition plan is a valuable exercise that can help ensure a smooth and successful outcome. It's important to understand what steps to take when transitioning away from Managed Environments.
 
-The following list shows the impact caused by deactivating ME.
+The following list shows the impact caused by deactivating Managed Environments.
 
-| **Feature** | **Makers Impact** | **Admin Impact** |
+| Feature| Makers Impact | Admin Impact |
 |:---:|:---:|:---:|
-| **Maker Welcome** | **None directly** – Will stop seeing the Welcome Message when users enter the environment | **None directly** – Won't be able to define customized messages in environments |
-| **Limit Sharing** | **None directly** – Will be able to share the Apps with Security Groups and any User they want | **None directly** – Won't be able to control how the Apps are being shared in the respective environment |
-| **Usage Insights** | **None** | Will stop receiving the weekly email about the insights of the Environment and impacting anyone who was configured it to receive it |
-| **Data Policies** | **None** | **None directly** – the DLPs will still be enforced to the environments, but the Admin won't have the modern experience capability to apply many DLPs to a specific environment |
-| **Pipelines in Power Platform** | Won't be able to use the previously configure Pipelines | **None** |
-| **Solution Checker** | **None** | **None directly** – This allows makers to import any solution without previously check for errors, security, and noncompliant aspects |
-| **CMK** | **None** | The feature might be limited |
-| **IP Firewall** | **None** | The feature might be limited |
-| **LockBox** | **None** | The feature might be limited |
-| **Extended backup (7 to 28 days)** | **None** | The feature might be limited |
-| **DLP for desktop flows** | **None** | The makers are able to run the previously blocked actions |
-| **Export to App Insights** | **None** | The feature might be limited |
-| **Catalog in Power Platform** | **None** | The feature might be limited |
+| Maker Welcome | None directly – Will stop seeing the welcome message when users enter the environment. | None directly – Won't be able to define customized messages in environments. |
+| Limit Sharing | None directly – Will be able to share the apps with security groups and any user they want. | None directly – Won't be able to control how the apps are being shared in the respective environment. |
+| Usage Insights| None| Will stop receiving the weekly email about the insights of the environment and impacting anyone who was configured it to receive it. |
+| Data Policies | None | None directly – the DLPs are enforced to the environments, but the admin doesn't have the modern experience capability to apply many DLPs to a specific environment. |
+| Pipelines in Power Platform| Can't use the previously configure pipelines. | None|
+| Solution Checker | None | None directly – This allows makers to import any solution without a check for errors, security, and noncompliant aspects. |
+| CMK | None | The feature might be limited. |
+| IP Firewall | None | The feature might be limited. |
+| LockBox | None| The feature might be limited. |
+| Extended backup (7 to 28 days)| None | The feature might be limited. |
+| DLP for desktop flows | None | The makers are able to run the previously blocked actions. |
+| Export to App Insights | None | The feature might be limited. |
+| Catalog in Power Platform | None | The feature might be limited. |
 
 ## Examples of commonly used settings for Managed Environments
 
-If you're about to start activating ME features and based on the knowledge you acquired from the previous modules, it would be advisable to generate a comparable template to the one demonstrated below, for each environment group type.
+If you're about to start activating Managed Environment features, generate a comparable template to the one demonstrated below, for each environment group type.
 
 :::row:::
     :::column:::
