@@ -38,9 +38,9 @@ This quickstart guide introduces you to the minimal steps necessary to get start
     >  
     > Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
-- You must be using the [preview version of Power Virtual Agents](overview-preview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
+- You must be using the [current version of Power Virtual Agents](overview-preview.md), and the bot type must not be **Classic**. Classic chatbots have **(classic)** added to their name.  
 
-    :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
+    :::image type="content" source="media/nlu-gpt/nlu-boost-bots.png" alt-text="Screenshot of the list of chatbots with one bot with clasic added to its name.":::
 
 - [Review AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
@@ -48,9 +48,6 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 
 - This capability may be subject to usage limits or capacity throttling.
  
-> [!IMPORTANT] 
-> During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need your admin to [enable bot publishing for the capability](nlu-boost-conversations.md#disable-bot-publishing). 
-
 ## How bot conversations work
 
 Power Virtual Agent bots use a [customized NLU model and AI capabilities](advanced-ai-features.md) to understand what a user types and respond with the most appropriate bot topic. A bot topic is a sequence of nodes that logically flow from one step to the other. See [Create and edit topics (preview)](authoring-create-edit-topics.md) for details on how bot topics work.
@@ -75,12 +72,7 @@ Ready to get started? The first step is to create your bot.
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-home.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
 
-2. Select **Try the unified canvas (preview)** to create a preview bot. 
-   - An opt-in confirmation message appears the first time you create or view a preview bot that describes some of their benefits.
-
-   :::image type="content" source="media/nlu-gpt/nlu-quickstart-create-bot.png" alt-text="Screenshot of the Create a chatbot page.":::
-
-3. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic, and select **Create**.
+2. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic, and select **Create**.
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the Boost your conversation preview option.":::
 
