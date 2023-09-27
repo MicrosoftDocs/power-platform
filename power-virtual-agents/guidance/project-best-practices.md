@@ -47,5 +47,6 @@ Here is a short breakdown of the best practices we view as most important and wi
     move to 
     production-level process as early as possible. Don’t leave these activities to the end when there are timelines to be met.
 
-
+[!div class="nextstepaction"]
+> [Getting Started](project-getting-started.md)
 
