@@ -489,10 +489,10 @@ steps:
 |-----------------|----------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to Set Connection Variables for. Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
-| `timeoutInMinutes`<br/>Number of retries if task failed. | Specifies the number of retries for this task that will happen in case of task failure. Not supported for agentless tasks. |
-| `retryCountOnTaskFailure`<br/>Timeout | Specifies the maximum time, in minutes, that a task is allowed to execute before being canceled by server. A zero value indicates an infinite timeout.|
+| `timeoutInMinutes`<br/>Timeout | Specifies the maximum time, in minutes, that a task is allowed to execute before being canceled by server. A zero value indicates an infinite timeout.|
+| `retryCountOnTaskFailure`<br/>Number of retries if task failed. | Specifies the number of retries for this task that will happen in case of task failure. Not supported for agentless tasks. |
 | `ApplicationId`<br/>Application Id for login. | (Required for Username/password) Application Id to use to login (See additional note below). |
-| `RedirectUri`<br/>Redirect URI of the specificed App. | (Required for Username/password) Redirect URI of the specificed App. Needed when specifying an App Id. (See additional note below).. |
+| `RedirectUri`<br/>Redirect URI of the specificed App. | (Required for Username/password) Redirect URI of the specificed App. Needed when specifying an App Id. (See additional note below). |
 
 > [!NOTE]
 > When using Username/password authentication type, Application Id and Redirect Uri will be required. This [authenticate oauth](/power-apps/developer/data-platform/authenticate-oauth) document has an explanation of why you need to create an app registration to authenticate to Dataverse.
