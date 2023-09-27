@@ -10,7 +10,8 @@ ms.reviewer: iawilt
 ---
 
 # Getting Started/Ideation
-## Setting Goals ##
+
+### Setting Goals 
 We normally recommend customers separate the project goals around 3 distinct areas – core delivery, business 
 metrics, and governance. If chatbots are brand-new to your organization, then the examples below are a good starting 
 point. One clear trend we see with goals – once you go live you will learn very quickly what is important, how your 
@@ -81,10 +82,10 @@ you can run on a regular cycle to further promote chatbot
 development within your organization.
 
 <div style="text-align:center;">
-### <span style="color: #0066cc;">Hackathons encourage organizations to learn and apply what they’ve learnt in real-world use cases to develop bots</span>
+<span style="color: #0066cc;">Hackathons encourage organizations to learn and apply what they’ve learnt in real-world use cases to develop bots</span>
 </div>
 
-## Licensing 
+### Licensing 
 Make sure you scope out how much you expect your project to cost. Speak to your Microsoft account team to confirm 
 you’re using accurate pricing for your organization. The licensing of Power Virtual Agents is relatively simple with a few 
 key components. Most important to understand is that the license is based on chatbot sessions. A session is defined as:
@@ -94,21 +95,52 @@ key components. Most important to understand is that the license is based on cha
 
 
 There are 3 main ways in which customers acquire PVA licenses: 
-## Power Virtual Agents 
 
-#### 1. Tenant license (billed monthly, capacity pooled at Tenant)
-        a. 2000 sessions (no limits on channel)
-        b. Power Automate rights included (with higher throttling limits), including Premium
-           connectors (All flows must start and end with PVA connectors)
-        c. Dataverse capacity (10GB DB, 10GB File, 2GB Log)
+**Power Virtual Agents**
 
-#### 2. Add-on license (billed monthly, capacity pooled at Tenant)
-        a. 1000 sessions (no limits on channel)
-#### 3. User license (Grants permission to author bots)
-        a. Currently available for no cost, but should be purchased in the same transaction as the Tenant license
-        b. Assigned to users in the admin portal
-        c. One license required for each bot author
+1. **Tenant license (billed monthly, capacity pooled at Tenant)**
 
-#### <span style="color: #0066cc;">An example customer</span>, who expects up to 10000 sessions a month for their bot, which will be managed by 10 users, would purchase 1x Tenant license, 9x Add-on license, and 10x User licenses.
+    a. 2000 sessions (no limits on channel)
+    
+    b. Power Automate rights included (with higher throttling limits), including Premium connectors (All flows must start and end with PVA connectors)
+    
+    c. Dataverse capacity (10GB DB, 10GB File, 2GB Log)
+
+2. **Add-on license (billed monthly, capacity pooled at Tenant)**
+    
+    a. 1000 sessions (no limits on channel)
+ 
+3. **User license (Grants permission to author bots)**
+        
+    a. Currently available for no cost, but should be purchased in the same transaction as the Tenant license
+
+    b. Assigned to users in the admin portal
+
+    c. One license required for each bot author
+
+*<span style="color: #0066cc;">An example customer</span>, who expects up to 10000 sessions a month for their bot, which will be managed by 10 users, would purchase 1x Tenant license, 9x Add-on license, and 10x User licenses.*
 
 
+**Power Virtual Agents for Teams**
+1. **Microsoft 365 license**
+
+    a. Unlimited sessions (Teams channel only)
+
+    b. Power Automate rights (Standard connectors only)
+
+    Generally, if a customer is interested in using PVA for Teams, no further licensing is required (as they need Microsoft 
+    365 to use Teams) unless they wish to deploy their bot to additional channels (they will need the standard PVA licenses 
+    detailed above).
+**Chat for Dynamics 365 Customer Service (Omnichannel)**
+    Customers deploying PVA with Dynamics 365 for Customer Service now receive a version of the PVA tenant license 
+    with their Dynamics 365 purchase:
+
+1. **Tenant license (billed monthly, capacity pooled at Tenant)**
+    
+    a. 1000 sessions per tenant
+    
+    b. Power Automate rights included (with higher throttling limits), including Premium
+       connectors (All flows must start and end with PVA connectors)
+    
+    c. Dataverse capacity (10GB DB, 10GB File, 2GB Log)
+       Add-on and User licenses are still required, as detailed above. Latest information on [Power Virtual Agents licensing.](https://powervirtualagents.microsoft.com/en-us/pricing/)
