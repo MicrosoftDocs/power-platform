@@ -323,7 +323,7 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 ## Step 12: Export the user's personal data in environments
 Anyone with a Power Apps license, provided there is 1GB available database capacity, can create environments and create and build apps on Dataverse; this includes the Power Apps Developer Plan, which is a free license that allows users to try out Dataverse in an individual environment. To see which Dataverse capabilities are included in each Power Apps license, see the [Power Apps Pricing page](https://powerapps.microsoft.com/pricing).
 
-For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
+For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-privacy-dsr-guide.md).
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for Power Apps users.
