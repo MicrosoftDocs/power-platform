@@ -18,14 +18,14 @@ As a Power Platform admin, you'll access, import, install, configure, and deploy
 > [!IMPORTANT]
 > Two solutions will always be installed in your environment:
 >
-> - **Employee Experience Base**: Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-> - **Onboarding Buddy**: Contains all the components needed to enable the implementation of an Onboarding Buddy program within an organization.
+> - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Onboarding Buddy**. Contains all the components needed to enable the implementation of an Onboarding Buddy program within an organization.
 
 To get started, follow the steps to install and configure the Onboarding Buddy template.
 
 ## Step 1: Create connections
 
-Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be manually manually set up.
+Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be manually set up.
 
 The installation requires you to set up four new connections for the Onboarding Buddy app. It's best to create the connections before importing the solution to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
 
@@ -34,7 +34,7 @@ The installation requires you to set up four new connections for the Onboarding 
 - [Office 365 Users connector](/connectors/office365users/)
 - [Office 365 Groups connector](/connectors/office365groups/)
 
-To create the connections in advance, go to **Connections**, and select **+ New Connection** in the left-side panel. Search for each connection listed in this section and create a connection.
+To create the connections in advance, go to **Connections**, and select **+ New Connection** on the left panel. Search for each connection listed in this section and create a connection.
 
 ## Step 2: Install from AppSource
 
@@ -42,10 +42,8 @@ Access the template on AppSource and install the template's solutions into a Pow
 
 - Go to the Onboarding Buddy template in AppSource and select **Get it now**.
 - Select the environment that you want to install the template into.
-
 - Agree to the Terms and Privacy Statements by checking the boxes.
-
-- Select **Install**. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
+- Select **Install**. You'll be taken to a screen where you can view the installation status. Once the installation is complete, the status updates to *Installed*.
 
 > [!TIP]
 > You can log your questions and get support for the Onboarding Buddy template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
@@ -54,13 +52,13 @@ Access the template on AppSource and install the template's solutions into a Pow
 
 The Onboarding Buddy solution contains two security roles:
 
-- **Administrator** - Assign this role to users who need access to the model-driven app administrative app and will have access to manage all reference data and see all records.
-- **User** - Assign this role to all users of the Onboarding Buddy application.
+- **Administrator**. Assign this role to users who need access to the model-driven app administrative app and will have access to manage all reference data and see all records.
+- **User**. Assign this role to all users of the Onboarding Buddy application.
 
 Roles can be assigned from the admin portal.
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Environments** on the left panel and select the environment where the solution was installed.  
+1. Select **Environments** on the left panel and select the environment where the solution is installed.  
 1. Select **Users** > **See all**.
 1. Select the user(s).
 1. Select **Manage security roles** and select the appropriate roles for each user.
@@ -68,7 +66,7 @@ Roles can be assigned from the admin portal.
 :::image type="content" source="media/install/ob-install-assign-roles.png" alt-text="Screen of Power Platform admin center showing where to select environments and users.":::
 
 > [!NOTE]
-> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application. If users don't have a security role, they'll get a data access denied error when trying to run an app. Users can't access environments until they are assigned at least one security role for that environment.
+> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application. If users don't have a security role, they'll get a *data access denied* error when trying to run an app. Users can't access environments until they're assigned at least one security role for that environment.
 
 More information:
 
@@ -100,9 +98,8 @@ More information: [Share a canvas app with your organization](/power-apps/maker/
 Once you are done making changes to an app, you must explicitly publish them to make them available to everyone with whom the app is shared.
 
 1. Go to [Power Apps](https://make.powerapps.com)
-1. Select **Environments** on the left panel and then select the environment where the solution was installed.
+1. Select **Environments** on the left panel and then select the environment where the solution is installed.
 1. Select **Apps** on the left panel to assign the *Onboarding Buddy* app.
-
     :::image type="content" source="media/install/ob-install-share-app.png" alt-text="Power Apps screen with Apps and Onboarding Buddy app selected.":::
 1. Select the **three dots**.
 1. Select **Share**.
@@ -110,7 +107,6 @@ Once you are done making changes to an app, you must explicitly publish them to 
     1. Check the **Co-owner** box if the user should have access to edit the app.
     1. Leave the checkbox empty for regular users of the app.
     1. If everyone in the company should be able to use the app, you can look for *Everyone* in the **Enter a name** box.
-
     :::image type="content" source="media/install/ob-install-add-users.png" alt-text="Power Apps screen showing users being set up for Onboarding Buddy app and notified.":::
 1. Select the **three dots**.
 1. Select **Edit**.
@@ -118,7 +114,7 @@ Once you are done making changes to an app, you must explicitly publish them to 
 
 ## Step 7: Set up reference tables list
 
-The canvas application feeds the data on Dataverse to work. It needs a *reference tables list* to have the correct information. All this information will be populated using the model-driven app.
+The canvas application feeds the data on Dataverse to work. It needs a *reference tables list* to have the correct information. All this information is populated using the model-driven app.
 
 To configure the app, open your environment and go to your model-driven app labeled *Onboarding Buddy Admin*.
 
@@ -126,21 +122,22 @@ To configure the app, open your environment and go to your model-driven app labe
 
 In the *Onboarding Buddy Admin* app, use the left panel's navigation to identify the different tables:
 
-- Group1 contains *Onboarders* and *Buddy Lists*.
-- Group2 contains *Configurations*.
+- Group 1 contains *Onboarders* and *Buddy Lists*.
+- Group 2 contains *Configurations*.
 
 :::image type="content" source="media/install/ob-install-lft-nav-tables.png" alt-text="Power Apps screen showing tables listed in the left panel.":::
 
-### Group1 tables
+### Group 1 tables
 
 Select **Onboarders** to populate the table with the new employees.
 
 Select **Buddy Lists** to populate the table with the established employees who are mentors.
 
 ### Populate the Onboarders table
-For a person to show up in the app as an *Onbaorder* who can be matched, you must first be enter them into the Onbaorders table.
 
-The *New Onboarders Sync* flow is set to run every Saturday. It will automatically import users into the Onboarding table from AAD that have been created in the last week. Initially, though, you may have to populate existing employees that you want to be a part of the program right away.
+For a person to show up in the app as an *Onbaorder* who can be matched, you must first be enter them into the *Onbaorders* table.
+
+The *New Onboarders Sync* flow is set to run every Saturday. It automatically imports users into the Onboarding table from AAD that have been created in the last week. Initially, though, you may have to populate existing employees that you want to be a part of the program right away.
 
 #### Manually run the flow
 
@@ -168,12 +165,12 @@ If you have existing employees that you wish to add to the Onboarder table that 
 1. Select **Save & Close** from the top menu.
 1. Repeat the steps for as many Onboarders as you need to create.
 
-### Group2 table
+### Group 2 table
 
 Select **Configurations** to set the parameters for the program.
 
 1. Select **New** in the top menu bar if you don't have any records yet.
-If there is already an existing record, select it and then select **Edit** in the top menu bar. There should only ever be one record in this table.
+If there's already an existing record, select it and then select **Edit** in the top menu bar. There should only ever be one record in this table.
 
     :::image type="content" source="media/install/ob-install-active-config-record.png" alt-text="Power Apps screen showing active configuration record.":::
 
@@ -188,12 +185,12 @@ If there is already an existing record, select it and then select **Edit** in th
 
 ## Step 8: Turn on Auditing
 
-While this is not required, we recommend enabling the audit setting on the system, so it is easy to see who created/updated records in the future.
+While this is not required, we recommend enabling the audit setting on the system, so it's easy to see who created/updated records in the future.
 
 To do this:
 
 1. Go to [Power Platform admin center](https://gcc.admin.powerplatform.microsoft.us/home)
-1. Select **Environments** in the left panel and select the environment where the solution is installed.
+1. Select **Environments** on the left panel and select the environment where the solution is installed.
 1. Select **Settings**.
 :::image type="content" source="media/install/ob-install-audit.png" alt-text="Power Platform admin center screen showing audit logs.":::
 1. Select **Start Auditing**.
