@@ -20,14 +20,16 @@ Delegated deployments can be run as a service principal or pipeline stage owner.
 
 ## Deploy with a service principal
 
+For a delegated deployment with a service principal, follow these steps.
+
 1. Create an app registration (service principal) in Microsoft Azure Active Directory (AD).
 
     > [!IMPORTANT]
     > Add the pipeline stage owner as an owner of the app registration in Azure AD. This can be a standard user or service principal.
 1. Add the app registration as a server-to-server (S2S) user in your pipelines host environment and each target environment it deploys to.
 1. Assign the Pipelines Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments.
-1. Lower permission security roles cannot deploy plug-ins and other code components.
-1. Check **Is delegated deployment** on a pipeline stage, select Service Principal, and enter the Client ID. Click **Save**.
+    Lower permission security roles cannot deploy plug-ins and other code components.
+1. Choose (check) **Is delegated deployment** on a pipeline stage, select **Service Principal**, and enter the Client ID. Click **Save**.
 1. Create a cloud flow within the pipelines host environment. _Alternative systems can be integrated using pipeline's Dataverse API's.
 1. Select the **OnApprovalStarted** trigger.
 1. Add steps for your desired custom logic.
@@ -57,11 +59,11 @@ Regular users, including those used as service accounts, can also serve as deleg
 
 To deploy as the pipeline stage owner, follow these steps.
 
-1.	Assign the Pipelines Administrator security role to the pipeline stage owner within the pipelines host, and System Administrator security role within target environments.
+1.	Assign the Pipelines Administrator security role to the pipeline stage owner within the pipelines host, and assign System Administrator security role within target environments.
     
     Lower permission security roles cannot deploy plug-ins and other code components.
 
-1.	Check **Is delegated deployment** on a pipeline stage, and select Stage Owner.
+1.	Choose (check) **Is delegated deployment** on a pipeline stage, and select **Stage Owner**.
     - The pipeline stage owner’s identity will be used for all deployments to this stage.
     - Similarly, this identity must be used to approve deployments.
 1.	Create a cloud flow in a solution within the pipelines host environment.
