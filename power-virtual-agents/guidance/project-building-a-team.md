@@ -63,7 +63,7 @@ This is typically a System Integrator that leads various activities:
 
 For organizations that are new to building PVA chatbots, it is likely there are some training needs required for the 
 customer to be familiar with the technology. The following resources can be leveraged to assist customers with 
-building PVA chatbots, [aka.ms/LearnPVA.] (https://powervirtualagents.microsoft.com/en-us/blog/new-years-resolution-build-powerful-conversational-bots/)
+building PVA chatbots, [aka.ms/LearnPVA.](https://powervirtualagents.microsoft.com/blog/new-years-resolution-build-powerful-conversational-bots/)
 
 Training can be delivered through various channels. These channels include Technical Sales Professionals (TSPs), 
 Microsoft Technology Center (MTC) Architects and Microsoft certified partners. In exceptional circumstances, 
