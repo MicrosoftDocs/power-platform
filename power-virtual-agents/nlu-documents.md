@@ -12,7 +12,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Use a document as a data source (preview)
+# Upload documents for generative answers (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -80,14 +80,14 @@ To exclude a specific generative answers node from using documents as a data sou
 1.	Open the topic with the generative answers node you want to exclude.  
 2.	On the top menu bar, select the **More options** icon, and then select **Open code editor**.
    
-4.	Insert the following lines of code immediately after the line `variable: Topic.Answer`:
+3.	Insert the following lines of code immediately after the line `variable: Topic.Answer`:
     ```yml
     fileSearchDataSource:
         searchFilesMode: 
            kind: DoNotSearchFiles
     ```
 
-5.	Select **Save** on the top menu bar. You can now close the code editor and continue editing your bot's topics.
+4.	Select **Save** on the top menu bar. You can now close the code editor and continue editing your bot's topics.
 
 ## Supported document types
 
