@@ -19,11 +19,11 @@ This article addresses the key features of Managed Environments and how organiza
 
 ## Managed Environments overview
 
-Managed Environments is a suite of premium governance capabilities that allows admins to manage Power Platform at scale with more control, more visibility, and less effort.
+Managed Environments is a suite of premium governance capabilities that allows IT administrators to manage Power Platform at scale with more control, more visibility, and less effort.
 
 In this article, you will learn about each of the features and examples based on organizations that have activated Managed Environments, including:
 
- - **Pipelines in Power Platform** brings application lifecycle management (AML) automation to streamline development processes with reduced effort.
+ - **Pipelines in Power Platform** bring application lifecycle management (AML) automation to streamline development processes with reduced effort.
  - **Maker welcome content** provides customized welcome message to help makers in the organization get started with Power Apps.
  - **Limit Sharing** adds guardrail on how broadly users can share canvas apps.
  - **Usage Insights** keeps admins informed about apps usage and users activities via weekly digest email.
@@ -45,34 +45,27 @@ More information: [Enable Managed Environments](/power-platform/admin/managed-en
 
 Pipelines in Power Platform aim to democratize application lifecycle management practices for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers. More information: [Overview of pipelines in Power Platform](../../alm/pipelines.md)
 
-Although pipelines aren't always used by IT administrators or members of the governance team, it's common in organizations for these teams to provide support on how solutions should be deployed to different environments. Administrators are enabled to centrally manage and govern pipelines, providing makers with intuitive user experiences for easily deploying their solutions.
+It's common in organizations for IT administrators or members of the governance team to provide support on how solutions should be deployed to different environments, administrators can centrally manage and govern pipelines, providing makers with intuitive user experiences and easily deploying their solutions.
 
-To move a solution from one environment to another, typically specified as the _source environment_ and _target environment_, a user with the appropriate security group needs to create a pipeline. A pipeline specifies all the environments included in the application lifecycle, meaning what the developer environment and target environments (test, quality, production) are. The most common pipeline is composed of Dev/Test/Production environments, but it's also common to see Dev/Validation/Test/Production, for instance. With pipelines in the Power Platform, you can create a pipeline that fits your needs and specifications. An example of a pipeline is shown in the following picture:
+To deploye a solution from one environment to another via pipelines, typically specified as the _source environment_ and _target environment_, you'll need to identify which environments will be part of the pipelines. The most common pipeline is composed of Dev/Test/Production environments, or Dev/Validation/Test/Production. Here's an example of a pipeline:
 
 :::image type="content" source="../media/mae/image1.png" alt-text="A screenshot of the Pipelines screen in Power Apps.":::
 
-One crucial aspect to consider when utilizing Managed Environments is that all environments within a pipeline must be activated as Managed Environments. If an organization has a pipeline consisting of Dev/Test/Production environments, all these environments must be activated as Managed Environments.
+> **_NOTE:_** Be sure to enable all environments **excpet the Developer type environment** within a pipeline as Managed Environments. 
 
-It's also important to note that personal productivity solutions should be in a personal, development environment. The usage of pipelines facilitate the deployment of these solutions to target environments. Having this in consideration, it allows administrators and Center of Excellence (CoE) teams to focus on enabling makers instead of cleaning up resources, especially in the default environment.
+It's a best practice for personal productivity solutions to be developed in a personal, development environment, which then can be deployed to target environment via pipelines. You may also consider settings up pipelines when creating new environments to facilitate ALM for citizen-led and pro-dev-led projects at scale. 
 
-Some organizations include pipeline creation as part of their environment creation process. This not only streamlines the process for makers to publish solutions in the correct environments, but it also ensures standardization within the organization. Furthermore, these processes can be automated, from environment creation to pipeline creation, and the respective roles can be assigned accordingly.
 
 ### Maker welcome content
 
-In Managed Environments, admins can provide customized, welcome content to help their makers get started with [Power Apps](https://make.powerapps.com/).
+In Managed Environments, admins can provide customized, welcome content to help their makers get started with [Power Apps](https://make.powerapps.com/). More information: [Enable maker welcome content](../../admin/welcome-content.md).
 
-For more information about how the feature works, see [Enable maker welcome content](../../admin/welcome-content.md).
-
-It's crucial to inform makers about the company rules and what can be done in each environment or group of environments. Here are some suggestions on how your organization could use the welcome message, depending on the environment type.
+A customized welcome content allows admins to inform makers about the company rules and what can be done in each environment or group of environments when first time a maker access the maker portal. Here are some suggestions on how your organization could use the welcome message for each of the environment types.
 
 #### Default environment 
-The default environment is often the most restricted environment with DLPs and sharing controls. To make sure your makers know about the possible limitations, a good starting point is to create a customized welcome message and include a link to your organization’s policy website or document.
+The default environment is often the most restricted environment with DLPs and sharing controls. To ensure your makers know about the possible limitations, a good starting point is to create a customized welcome message and include a link to your organization’s policy website or document.
 
-As an example, you could inform makers that the default environment is intended to be used only for Office 365 related features, such as SharePoint forms. It's recommended that you don't use production applications on the default environment, which means sharing limits might be in place. We describe how to limit the sharing possibilities, but informing the makers in the beginning can lead to a cleaner environment and more compliant apps. Taking all factors into consideration, an example of message could look like the following image.
-
-:::image type="content" source="../media/mae/image2.png" alt-text="A screenshot of the Welcome message in Power Apps.":::
-
-Based on the above image, configuration would look something like this:
+For example, admins may want to inform makers that the default environment is intended to be used only for Office 365 related features, not use production applications in the default environment, and the canvas app can only be shared with limited number of individuals. Below illustrates howt to configure such message in the customized welcome content:
 
 ```markdown
 [Contoso](https://i.ibb.co/SNSTCx3/something.png)
@@ -87,10 +80,14 @@ Before you start make sure you are aware of these limitations:
 
 If you are unsure about if you are in the right place? Follow [this guidance**](#).
 ```
-
-The **Learn more** link can be configured under the settings, as the following picture suggests.
+In addition, a **Learn more** link can also be customized: 
 
 :::image type="content" source="../media/mae/image3.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up.":::
+
+Based on the configuration example above, here's what the maker welcome message will look like:
+
+:::image type="content" source="../media/mae/image2.png" alt-text="A screenshot of the Welcome message in Power Apps.":::
+
 
 #### Production environments
 
