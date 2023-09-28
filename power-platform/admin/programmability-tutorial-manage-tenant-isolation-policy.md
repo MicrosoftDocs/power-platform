@@ -47,7 +47,7 @@ $Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
 ---
 
 ## Create a report. 
-Retrieve the (PROVIDE CUSTOMER EXAMPLE).
+In this section we will create a report using PowerShell.  
 
 # [Generic PowerShell](#tab/pshell)
 ### Create a report via Invoke-RestMethod
