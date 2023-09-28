@@ -1,5 +1,5 @@
 ---
-title: "Use documents as a generative answers data source (preview)"
+title: "Use uploaded documents as a generative answers data source (preview)"
 description: "You can upload documents that your chatbot can use as a source for generating conversational answers."
 ms.reviewer: mboninco
 ms.date: 09/29/2023
@@ -12,7 +12,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Upload documents for generative answers (preview)
+# Use uploaded documents for generative answers (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
