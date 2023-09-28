@@ -1,8 +1,8 @@
 ---
-title: Entity registration for conversational language understanding (preview)
+title: Entity registration for conversational language understanding 
 description: Add language understanding entities to a Power Virtual Agents bot.
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
-ms.date: 6/6/2023
+ms.date: 9/26/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -12,9 +12,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Entity registration for conversational language understanding integration (preview)
-
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Entity registration for conversational language understanding integration 
 
 This article discusses adding conversational language understanding (CLU) entities to Power Virtual Agents bots. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). In most cases, you can use [Power Virtual Agent Prebuilt Entities](advanced-entities-slot-filling.md) for your projects, but should you want to use CLU entity types with custom JSON resolutions, the following schema examples are provided as a reference. 
 
