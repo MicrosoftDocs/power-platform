@@ -97,7 +97,7 @@ In November 2023, we'll provide timelines when all existing flows using the depr
 
 ## Microsoft Dataverse (legacy) connector for Azure Logic Apps will be deprecated and replaced with another connector
 
-Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (also referred to as the CDS 2.0 connector) was deprecated. This connector was used to connect to Dataverse for use in multiple clients and components. The [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector was made available for use in Azure Logic Apps starting August 2022. The Dataverse connector provides both legacy triggers and actions and new preview triggers and actions for the newest connector. Dates for when previews will be be generally available will be provided by November 2023.
+Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (also referred to as the CDS 2.0 connector) was deprecated. This connector was used to connect to Dataverse for use in multiple clients and components. The [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector was made available for use in Azure Logic Apps starting August 2022. The Dataverse connector provides both legacy triggers and actions and new preview triggers and actions for the newest connector. Dates for when previews will be generally available will be provided by November 2023.
 
 There will be a phased-in approach before deprecation takes place. Here's the timeline:
 
@@ -286,7 +286,7 @@ We recommend that you start using your web browser as soon as possible to run yo
 
 ## Organization data download filters for mobile offline are deprecated
 
-Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option, which lets you determine what data is available when users work in offline mode. For more information, see [Create a mobile offline synchronization](/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**.
+Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option, which lets you determine what data is available when users work in offline mode. For more information, see [Create a mobile offline synchronization](/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria have been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**.
 
 ## TLS RSA cipher suites are deprecated
 
