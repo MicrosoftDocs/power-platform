@@ -5,7 +5,7 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: angieandrews
 ms.date: 01/24/2022
 ms.subservice: power-fx
 ms.author: gregli
@@ -31,7 +31,7 @@ The **IsToday** function tests whether a date/time value is between midnight tod
 
 **Now**, **Today**, and **IsToday** functions work with the local time of the current user.
 
-**UTCNow**, **UTCToday**, and **IsUTCToday** functions are the same as their non-UTC countrparts but work with time zone independent values and use Coordinated Universal Time (UTC).
+**UTCNow**, **UTCToday**, and **IsUTCToday** functions are the same as their non-UTC counterparts but work with time zone independent values and use Coordinated Universal Time (UTC).
 
 > [!NOTE]
 >
@@ -65,7 +65,7 @@ When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-for
 
 - _DateTime_ - Required. The date/time value to test.
 
-#### Using Coodinated Universal Time (UTC)
+#### Using Coordinated Universal Time (UTC)
 
 **UTCNow**()
 
@@ -73,7 +73,7 @@ When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-for
 
 **IsUTCToday**( _TimeZoneIndependentTime_ )
 
-- _TimeZoneIndependentDateTime_ - Required. The time zone indepdenent date/time value to test.
+- _TimeZoneIndependentDateTime_ - Required. The time zone independent date/time value to test.
 
 ## Examples
 
@@ -90,7 +90,7 @@ For the examples in this section, the current time is **8:58 PM** on **July 11, 
 | **IsToday( DateAdd( Now(), 12 ) )**                       | Tests whether the current date and time, plus 12 days, is between midnight today and midnight tomorrow.      | **false**             |
 | **IsToday( DateAdd( Today(), 12 ) )**                     | Tests whether the current date, plus 12 days, is between midnight today and midnight tomorrow.               | **false**             |
 | **Hour( UTCNow() )**                                      | Retrieves the current date and time in UTC and extracts the hour only, which is 8 hours ahead of local time. | 4                     |
-| **Day( UTCToday() )**                                     | Retrives the current date only in UTC and extracts the day, which is 1 day ahead of local time.              | 12                    |
+| **Day( UTCToday() )**                                     | Retrieves the current date only in UTC and extracts the day, which is 1 day ahead of local time.              | 12                    |
 | **IsUTCToday( UTCNow() )**                                | Tests whether the current date and time is between midnight today and midnight tomorrow, all in UTC time.    | **true**              |
 | **IsUTCToday( UTCToday() )**                              | Tests whether the current date is between midnight today and midnight tomorrow, all in UTC time.             | **true**              |
 

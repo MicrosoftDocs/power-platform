@@ -15,9 +15,9 @@ ms.subservice: developer
 
 This article describes how to install and configure required Visual Studio finance and operations tools into your local development environment. The instructions in each section should be followed in the order presented in this article.
 
-As a prerequisite, you need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
-
 > [!IMPORTANT]
+> As a prerequisite, you need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
+>
 > The user account you'll be using for development in the sandbox environment must be assigned the System Administrator role.
 > 
 > The development machine running Microsoft Windows must have Visual Studio 2019 installed with at least the .NET desktop development workload and the Modeling SDK. This SDK can be selected under individual components in the Visual Studio installer. The development machine also must have SQL Server or SQL Server Express LocalDB installed.
