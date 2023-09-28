@@ -11,13 +11,13 @@ ms.reviewer: iawilt
 
 # Getting Started/Ideation
 
-### Setting Goals 
+## Setting Goals 
 We normally recommend customers separate the project goals around 3 distinct areas – core delivery, business 
 metrics, and governance. If chatbots are brand-new to your organization, then the examples below are a good starting 
 point. One clear trend we see with goals – once you go live you will learn very quickly what is important, how your 
 customers behave, and where you would like to improve.
 
-### Project goals ###
+## Project goals 
 Below is an example of goals a customer may define at project inception
 
 1. **Delivery goals (Minimum Viable Project (MVP))**
@@ -49,7 +49,7 @@ Below is an example of goals a customer may define at project inception
     
     c. Reporting & review cadence arranged
 
-### Usecase building
+## Usecase building
 Inspiring usecases is a key part to beginning your bot building journey. 
 The program includes the following:
 
@@ -87,7 +87,7 @@ development within your organization.
 > Hackathons encourage organizations to learn and apply what they’ve learnt in real-world use cases to develop bots
 
 
-### Licensing 
+## Licensing 
 Make sure you scope out how much you expect your project to cost. Speak to your Microsoft account team to confirm 
 you’re using accurate pricing for your organization. The licensing of Power Virtual Agents is relatively simple with a few 
 key components. Most important to understand is that the license is based on chatbot sessions. A session is defined as:

@@ -21,7 +21,7 @@ Most customers treat a Chatbot implementation like any other project. It usually
 ![Roles](./media/topics/Project-Building-Internal-Team.png)
 
 
-## External Team ##
+## External Team 
 
 **3rd party Delivery partner (where applicable)** 
 
