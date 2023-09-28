@@ -22,7 +22,7 @@ When a bot user asks a question, and the bot doesn't have a defined topic that i
 
 Uploaded documents will be stored securely in Dataverse, and the number of documents that can be uploaded is only limited by the available file storage for your Dataverse environment. 
 
-Image, audio, video, and executable files are not supported. See [Supported document types] for a full list.
+Image, audio, video, and executable files are not supported. See [Supported document types]() for a full list.
 
 > [!IMPORTANT]
 >  
