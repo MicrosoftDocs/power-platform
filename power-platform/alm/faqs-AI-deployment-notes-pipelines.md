@@ -15,7 +15,7 @@ These frequently asked questions (FAQ) describe the AI impact of use Copilot to 
 
 ## What's use Copilot to generate deployment notes in pipelines?
 
-AI-generated deployment notes is a feature in pipelines for Power Platform that allows you to seamlessly generate deployment notes to provide more context to your deployment record. The only steps are to review what AI has generated for you (pre-filled in the Deployment notes field), and continue to deploy.
+AI-generated deployment notes is a feature in pipelines for Power Platform that allows you to seamlessly generate deployment notes to provide more context to your deployment record. The only steps are to review what AI has generated for you (pre-filled in the **Deployment notes** field), and continue to deploy.
 
 ## What are the system’s capabilities? 
 
