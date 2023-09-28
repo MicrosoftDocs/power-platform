@@ -35,13 +35,13 @@ For a delegated deployment with a service principal, follow these steps.
 1. Add steps for your desired custom logic.
 1. Insert an approval step. Use Dynamic content for sending deployment request information to the approver(s).
 1. Insert a condition.
-1. Add Dataverse **Perform an unbound action** using the settings shown below.
+1. Add Dataverse **Perform an unbound action** using the settings shown below.  
     Action Name: UpdateApprovalStatus
     ApprovalComments: Insert Dynamic Content. Comments will be visible to the requestor of the deployment.
     ApprovalStatus: 20 = approved, 30 = rejected
     ApprovalProperties: Insert Dynamic Content. Admin information accessible from within the pipelines host.
 
-    > [Important] The UpdateApprovalStatus action must use the service principal’s connection. You’ll need a client ID and secret.
+    > [!IMPORTANT] The UpdateApprovalStatus action must use the service principal’s connection. You’ll need a client ID and secret.
     > 
     > :::image type="content" source="media/spn-connection.png" alt-text="Connect with service principal":::
 1. Save, and then test the pipeline.
