@@ -42,6 +42,8 @@ Delegated deployments can be run as a service principal or pipeline stage owner.
     > :::image type="content" source="media/spn-connection.png" alt-text="Connect with service principal":::
 1.	Save, and then test the pipeline.
 
+Below is a screenshot of a canonical approval flow.
+
 :::image type="content" source="media/canonical-approval-flow.png" alt-text="Canonical Approval Flow":::
 
 > [!IMPORTANT]
