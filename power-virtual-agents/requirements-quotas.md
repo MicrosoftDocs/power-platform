@@ -37,6 +37,11 @@ If the quota for **messages to a chatbot** is met, the user chatting with the ch
 
 These limits apply to the Power Virtual Agents web app and the Power Virtual Agents app in Microsoft Teams.
 
+### Maximum channel data message size limits when using Power Virtual Agents in Omnichannel
+Power Virtual Agents in Omnichannel uses the ACS channel, and has the same [channel data message size limit of 28kb](/azure/communication-services/concepts/chat/concepts#service-limits) applies. 
+
+This can impact scenarios such as [transfering to Omnichannel](configuration-hand-off-omnichannel.md?tabs=webApp), where all the variables (both those local to the topic and bot variables available in the conversation) are passed as context to the agent. If the size of all the variables passed exceeds the limit, the ACS channel will fail with error ```MessageSizeExceeded```, and the transfer will be completed without the variables being passed. If you encounter scenarios in which the context is not being passed, check for a large number of variables, and clear them before making the transfer to avoid going over the limit.
+
 ### Power Virtual Agents web and Teams apps limits
 
 | Feature         | Web app                                | Teams app                                                                                                               |
