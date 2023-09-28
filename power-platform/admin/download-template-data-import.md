@@ -2,14 +2,15 @@
 title: "Download a template for data import | MicrosoftDocs"
 description: Download a template for data import
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 09/28/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- ryan-mcculloch 
 ---
 # Download a template for data import
 
