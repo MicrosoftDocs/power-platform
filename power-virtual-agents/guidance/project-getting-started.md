@@ -17,7 +17,7 @@ metrics, and governance. If chatbots are brand-new to your organization, then th
 point. One clear trend we see with goals – once you go live you will learn very quickly what is important, how your 
 customers behave, and where you would like to improve.
 
-## Project goals 
+### Project goals 
 Below is an example of goals a customer may define at project inception
 
 1. **Delivery goals (Minimum Viable Project (MVP))**
