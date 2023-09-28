@@ -74,7 +74,7 @@ You'll now be able to specify and configure data sources, described in these art
 
 - [Use a Bing Custom Search to search a number of websites](nlu-generative-answers-bing.md)
 - [Use a connection to Azure OpenAI on your data](nlu-generative-answers-azure-openai.md)
-- [Use documents as a generative answers data source (preview)](nlu-documents.md)
+- [Upload documents to use as a data source (preview)](nlu-documents.md)
 - [Use content on SharePoint or OneDrive for Business](nlu-generative-answers-sharepoint-onedrive.md)
 - [Use a custom data source](nlu-generative-answers-custom-data.md)
 
