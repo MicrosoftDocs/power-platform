@@ -26,21 +26,23 @@ For deprecation information of other products, see [Other deprecation articles](
 
 Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
 
-## jQuery 2.1.1 to be removed in model-driven apps
+<a name="#jquery-211-to-be-removed-in-model-driven-apps" ></a>
 
-As part of a service update designed to improve security within Microsoft Power Apps we're removing jQuery version 2.1.1 from model-driven applications. In October 2023 we're removing the library located here: `/_static/_common/scripts/jquery-2.1.1.min.js`.
+## jQuery 2.1.1 was removed in model-driven apps
 
-If custom code in web resources has a dependency on this library it will stop working when this library is removed. We don't support use of any model-driven application client-side code, including libraries that model-driven apps depend on. These libraries might change without warning. More information: [Unsupported customizations](/power-apps/developer/model-driven-apps/supported-customizations#unsupported-customizations).
+As part of a service update designed to improve security within Microsoft Power Apps we removed jQuery version 2.1.1 from model-driven applications. One year after announcing the plan to remove this library, in October 2023 we removed the library located here: `/_static/_common/scripts/jquery-2.1.1.min.js`.
+
+If custom code in web resources had a dependency on this library, it stopped working when this library was removed. This was unsupported pattern as use of any model-driven application client-side code is not supported, including libraries that model-driven apps depend on. These libraries might change without warning. More information: [Unsupported customizations](/power-apps/developer/model-driven-apps/supported-customizations#unsupported-customizations).
 
 ### Are you impacted?
-
-To determine if you're impacted, search your web resource code for this line: `/_static/_common/scripts/jquery-2.1.1.min.js`.
+Now that the library has been removed, you will see errors in any web resources that depended on this library.
+You can search your web resource code for this line: `/_static/_common/scripts/jquery-2.1.1.min.js`.
 
 If your code isn't already in a source code repository, you should export your solutions and extract the contents. There are many tools you may use to search the contents. For example, you can use the search capabilities of Visual Studio Code. More information: [Visual Studio Code: Basic Editing > Search across files](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
 
 ### What to do if you're impacted?
 
-If your web resources have a dependency on this library, you should replace the reference with a newer version of JQuery.
+If your web resources had a dependency on this library, you should replace the reference with a newer version of JQuery.
 
 Note, there may be breaking changes between versions. For information about upgrading, see [jQuery Core Upgrade Guides](https://jquery.com/upgrade-guide/).
 
