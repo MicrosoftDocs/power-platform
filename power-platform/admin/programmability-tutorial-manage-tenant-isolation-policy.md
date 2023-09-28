@@ -114,7 +114,7 @@ try
 Now we will fetch a single report for your tenant.
 
 # [Generic PowerShell](#tab/pshell)
-### Fetch a single report
+### Fetch a single report using Invoke-RestMethod
 Now we will fetch the details of a single report.  This will provide information about the connections used within your tenant.
 
 ```PowerShell
