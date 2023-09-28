@@ -51,7 +51,8 @@ To deploye a solution from one environment to another via pipelines, typically s
 
 :::image type="content" source="../media/mae/image1.png" alt-text="A screenshot of the Pipelines screen in Power Apps.":::
 
-> **_NOTE:_** Be sure to enable all environments **excpet the Developer type environment** within a pipeline as Managed Environments. 
+>[!Note]
+> Be sure to enable all environments **excpet the Developer type environment** within a pipeline as Managed Environments. 
 
 It's a best practice for personal productivity solutions to be developed in a personal, development environment, which then can be deployed to target environment via pipelines. You may also consider settings up pipelines when creating new environments to facilitate ALM for citizen-led and pro-dev-led projects at scale. 
 
@@ -65,7 +66,7 @@ A customized welcome content allows admins to inform makers about the company ru
 #### Default environment 
 The default environment is often the most restricted environment with DLPs and sharing controls. To ensure your makers know about the possible limitations, a good starting point is to create a customized welcome message and include a link to your organization’s policy website or document.
 
-For example, admins may want to inform makers that the default environment is intended to be used only for Office 365 related features, not use production applications in the default environment, and the canvas app can only be shared with limited number of individuals. Below illustrates howt to configure such message in the customized welcome content:
+For example, admins may want to inform makers that the default environment is intended to be used only for Office 365 related features, not use production applications in the default environment, and the canvas app can only be shared with limited number of individuals. Below illustrates howt to configure such customized message in the Managed Environment setting pane:
 
 ```markdown
 [Contoso](https://i.ibb.co/SNSTCx3/something.png)
@@ -91,7 +92,7 @@ Based on the configuration example above, here's what the maker welcome message 
 
 #### Production environments
 
-Production environments are typically used for deploying solutions to production. It's targeting enterprise applications and team productivity applications. In this case, it's important to have compliant apps and data. Since you need to control which users have access to the production environment, it's beneficial to inform the user if you have a policy of refreshing access. According to the use case, you might allow more connectors and increase the sharing limits. Depending on your support team, you can also use this message to inform the right team to support the makers.
+Production environments are typically used for deploying solutions that supports enterprise applications and team productivity applications. In this case, it's important to have compliant apps and data. Since you need to control which users have access to the production environment, it's beneficial to inform the user if you have a policy of refreshing access. According to the use case, you might allow more connectors and increase the sharing limits. Depending on your support team, you can also use this message to inform the right team to support the makers.
 
 A proposed message for an environment created for the Finance department in Europe could be the following.
 
@@ -118,15 +119,15 @@ Now that you have seen some examples of how to use the welcome message, it's imp
 
 In Managed Environments, admins can limit how broadly users can share canvas apps. More information: [Limit sharing](../../admin/managed-environment-sharing-limits.md)
 
-An important aspect of limit sharing is the fact that the limit only applies to future sharing actions. This means that if you apply a sharing limit of 20, to an existing environment with apps already shared with more than 20 users, those apps continue to work for all users the apps were previously shared with. It's common to have a process to inform all the makers of apps shared with more than the new limit, to reduce the number of users the apps were shared with, and, in some cases, the administrator might move the solution to another environment.
+An important aspect of limit sharing is the fact that the limit only applies to future sharing actions. This means that if you apply a sharing limit of 20 to an existing environment with apps already shared with more than 20 users, those apps continue to work for all users the apps were previously shared with. It's recommended to have a process to inform all the makers of apps shared with more than the new limit to reduce the number of users the apps were shared with, and, in some cases, the administrator might move the solution to another environment.
 
 There are different situations that you need to control how makers share their apps across your organization. Here are the most common scenarios and reasons:
 
-- **Limit app sharing in a personal productivity environment.** If you have an environment where users can create apps for their own work, apps without global business value, or apps without support from IT, it's important that you limit those apps for only the makers and not share those apps across the organization. You may have apps that start as personal, productivity apps, but they become popular and are transformed into crucial apps. In this scenario, be mindful about the limit you configure. Between 5 and 50 users is commonly used.
+- **Limit app sharing in a personal productivity environment.** If you have an environment where users can create apps for their own work, apps without global business value, or apps without support from IT, it's important that you limit those apps for only the makers and not share those apps across the organization. You may have apps that start as personal productivity apps, but later become popular and are transformed into widely used apps. In this scenario, be mindful about the limit you configure. Between 5 and 50 users is a common limitation.
 
 - **Avoid apps being shared with security groups or everyone.** By sharing with security groups, you're allowing all members of the group to run the app. For instance, if you are in a developer environment, you might want to make sure that the developer is in control of how the apps are shared, instead of relying on membership of the group. In other scenarios, you might want to limit the sharing to everyone. Notice, by default, all users in the tenant are added to the eefault environment.
 
-The most common scenarios of sharing limits in the different environments are:
+Here are common scenarios of sharing limits in the different environment types:
 
 | Environment Type|Sharing limits|
 |----------------|-------------------|
@@ -135,21 +136,16 @@ The most common scenarios of sharing limits in the different environments are:
 |Sandbox| Choose **Exclude sharing with security groups**and leave the **Limit total individuals who can share to** checkbox clear.<br><br>If you want to control the tester users and you need to use a security group, choose **Don't set limits (default)**.|
 |Production|Choose **Don't set limits (default)**.|
 
-Currently the sharing capabilities are only for canvas apps, but in the future, we might support model-driven apps and Power Automate flows.
+Currently the limit sharing capabilities are for canvas apps only, model-driven apps and Power Automate flows may be supported in the future releases. 
 
-See the following examples of what happens when you activate this feature with different configurations.
-
-- **Example 1:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until it removes all previous security groups. After all groups are removed, the user is allowed to share with specific users without limitation on the number.
-
-- **Example 2:** Apps that are already in the environment and have been shared with users and security groups continue to work. If the Maker tries to share the App with any user or security group, will get an error message until it removes all previous security groups and the number of users that the app is shared with goes below 20. For example, if an App is shared with 50 users, when the Maker tries to change the sharing configuration, first would need to remove at least 30 users, and/or any security group, and maintain only a list of 20 users.
 
 ### Usage insights
 
 Admins or preconfigured users can stay informed about what’s happening in their Managed Environments. These insights contain analytics about top apps, most impactful makers, and inactive resources you can safely clean up. These insights are generated and delivered to your mailbox once a week. More information: [Usage insights](/power-platform/admin/managed-environment-usage-insights)
 
-If you're ever wondering which apps are the most popular (with the most runs) or which apps or flows you should consider cleaning, the weekly digest on Managed Environments is helpful. Every week the information is aggregated, meaning the information is consolidated from all the Managed Environments you have configured and sent to your email. 
+If you're ever wondering which apps are the most popular (with the most runs) or which apps or flows you should consider cleaning, the weekly digest on Managed Environments is helpful. Every week the information is aggregated from all the Managed Environments you have configured and sent to your email. 
 
-Usage insights enable administrators to have a summary view of apps and flows activity in the environments. For more in depth analysis, admins can follow the links provided in the email and go directly to the resource.
+Usage insights enable administrators to have a summary view of apps and flows activity in the environments, the links provided in the email also allow directly to the resource for in depth analysis. 
 
 It's common for decentralized IT teams to use this email to inform the different admins of what is happening with their Managed Environment, making recipient management an important task to follow. Due to the limited number of recipients you can configure, use an email distribution list, such as [HR_Admins@contoso.com](mailto:HR_Admins@contoso.com)  or [Finance_Admins@contoso.com](mailto:Finance_Admins@contoso.com), and manage the recipients on the distribution list.
 
@@ -159,13 +155,13 @@ In Managed Environments, admins can easily identify all the data policies that a
 
 With a well-planned environment strategy, it's imperative to have a DLP strategy in place. DLPs dictate which connectors are available and which ones can be used with each other. It's possible for multiple DLPs to be active in the same environment, but the most restrictive DLP will take precedence. For example, if one DLP allows the use of connector A and another DLP blocks the use of connector A, the connector is blocked.
 
-It isn't uncommon for environments to have multiple DLPs applied, particularly in scenarios where DLPs are applied by region, country, department, or team within the same environment. It's crucial to have a clear visualization of all DLPs applied to a specific environment, and this can be achieved by ensuring that the environment is managed. This is precisely the intention behind this feature.
+It is common for environments to have multiple DLPs applied, particularly in scenarios where DLPs are applied by region, country, department, or team within the same environment. It's crucial to have a clear visualization of all DLPs applied to a specific environment, and this can be achieved by ensuring that the environment is managed. 
 
 ### Solution checker
 
 In Managed Environments, admins can easily enforce rich static analysis checks on your solutions against a set of best practice rules and identify problematic patterns. More information: [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker)
 
-Users with permission to install solutions in environments, such as those with the Environment Maker role, can import solutions using various methods, including manually in the maker portal or using pac CLI. It's common for a Center of Excellence (CoE) team to set up guardrails to reduce the risk of noncompliant solutions in the environment. In organizations with decentralized CoEs, it's often necessary to activate this feature along with sending an email to proactively reach out to makers and offer support.
+Users with permission to install solutions in environments, such as those with the Environment Maker role, can import solutions using various methods, including manually impoart solution form the maker portal or using pac command line input(CLI). It's common for a Center of Excellence (CoE) team to set up guardrails to reduce the risk of noncompliant solutions in the environment. In organizations with decentralized CoEs, it's often necessary to activate this feature along with sending an email to proactively reach out to makers and offer support.
 
 This feature allows for different levels of control, including None, Warn, and Block. Each level allows administrators to configure the impact of the check, whether it's to provide a warning but allow the import, or to block the import altogether, while also providing information to the maker about the result of the import.
 
@@ -226,7 +222,7 @@ With Lockbox activated, when data access is required for a ticket resolution, th
 
 ### Extended backup (7 to 28 days)
 
-It's important to protect your data in Power Platform and Dataverse, and provide continuous availability of service. If you use Power Platform to create production environments that have a database and Dynamics 365 applications enabled, you can benefit from the system back-ups that are automatically performed for those environments. The system back-ups are stored for up to 28 days. Therefore, you can restore your environment if there are any issues.
+It's important to protect your data in Power Platform and Dataverse and provide continuous availability of service. If you use Power Platform to create production environments that have a database and Dynamics 365 applications enabled, you can benefit from the system back-ups that are automatically performed for those environments. The system back-ups are stored for up to 28 days. Therefore, you can restore your environment if there are any issues.
 
 For production environments that don't have Dynamics 365 applications enabled, the default, back-up retention period is only 7 days. However, for Managed Environments, admins can use PowerShell to change the setting and extend the back-up retention period. The available options are 7, 14, 21, and 28 days. More information: [Back up and restore environments](/power-platform/admin/backup-restore-environments)
 
@@ -310,17 +306,17 @@ The following list shows the impact caused by deactivating Managed Environments.
 |:---:|:---:|:---:|
 | Maker Welcome | None directly – Will stop seeing the welcome message when users enter the environment. | None directly – Won't be able to define customized messages in environments. |
 | Limit Sharing | None directly – Will be able to share the apps with security groups and any user they want. | None directly – Won't be able to control how the apps are being shared in the respective environment. |
-| Usage Insights| None| Will stop receiving the weekly email about the insights of the environment and impacting anyone who was configured it to receive it. |
+| Usage Insights| None| Will stop receiving the weekly email about the insights of the environment and impacting anyone who was configured as recipients. |
 | Data Policies | None | None directly – the DLPs are enforced to the environments, but the admin doesn't have the modern experience capability to apply many DLPs to a specific environment. |
 | Pipelines in Power Platform| Can't use the previously configure pipelines. | None|
 | Solution Checker | None | None directly – This allows makers to import any solution without a check for errors, security, and noncompliant aspects. |
-| CMK | None | The feature might be limited. |
-| IP Firewall | None | The feature might be limited. |
-| LockBox | None| The feature might be limited. |
-| Extended backup (7 to 28 days)| None | The feature might be limited. |
+| CMK | None | The feature will be limited. |
+| IP Firewall | None | The feature will be limited. |
+| LockBox | None| The feature will be limited. |
+| Extended backup (7 to 28 days)| None | The feature will be limited. |
 | DLP for desktop flows | None | The makers are able to run the previously blocked actions. |
-| Export to App Insights | None | The feature might be limited. |
-| Catalog in Power Platform | None | The feature might be limited. |
+| Export to App Insights | None | The feature will be limited. |
+| Catalog in Power Platform | None | The feature will be limited. |
 
 ## Examples of commonly used settings for Managed Environments
 
