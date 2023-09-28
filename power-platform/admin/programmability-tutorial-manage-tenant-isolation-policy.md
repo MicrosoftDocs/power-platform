@@ -1,6 +1,6 @@
 ---
-title: "Tutorial: Manage tenant isolation policy (preview) | Microsoft Docs"
-description: Learn how to use the Power Platform API (preview) to manage tenant isolation policy.
+title: "Tutorial: Create cross tenant isolation reports (preview) | Microsoft Docs"
+description: Learn how to use the Power Platform API (preview) to create cross tenant isolation reports (preview).
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -12,11 +12,11 @@ search.audienceType:
   - admin
 ---
 
-# Tutorial: Manage tenant isolation policy (preview)
+# Tutorial: Create cross tenant isolation reports (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial demonstrates how to use the Power Platform API (preview) to manage tenant isolation policy.
+This tutorial demonstrates how to use the Power Platform API (preview) to create cross tenant isolation reports.
 
 In this tutorial, learn how to:
 
@@ -24,8 +24,6 @@ In this tutorial, learn how to:
 1. [Create a report](#step-2-create-a-report)
 1. [List all reports for the tenant](#step-3-list-all-reports-for-the-tenant)
 1. [Fetch a single report](#step-4-fetch-a-single-report)
-
-In this example scenario, a customer is looking to enable tenant isolation for their production tenant. 
 
 > [!IMPORTANT]
 > - This is a preview feature.
