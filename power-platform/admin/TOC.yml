@@ -712,7 +712,7 @@
                   href: programmability-tutorial-install-application-environment.md
                 - name: "Tutorial: Allocate add-ons to environments (preview)"
                   href: programmability-tutorial-allocate-capacity-addons.md
-                - name: "Tutorial: Create cross tenant isolation reports (preview)"
+                - name: "Tutorial: Manage tenant isolation policy (preview)"
                   href: programmability-tutorial-manage-tenant-isolation-policy.md
             - name: PowerShell
               items:

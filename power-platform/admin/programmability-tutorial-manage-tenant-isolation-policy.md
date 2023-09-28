@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/03/2023
+ms.date: 09/28/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -20,38 +20,34 @@ This tutorial demonstrates how to use the Power Platform API (preview) to manage
 
 In this tutorial, learn how to:
 
-1.	Authenticate with Power Platform API and related tools.
-2.	Create a report. 
-3.	List all reports for the tenant.
-4.	Fetch a single report.
+1. [Authenticate using Power Platform API](#step-1-authenticate-using-power-platform-api)
+1. [Create a report](#step-2-create-a-report)
+1. [List all reports for the tenant](#step-3-list-all-reports-for-the-tenant)
+1. [Fetch a single report](#step-4-fetch-a-single-report)
 
 In this example scenario, a customer is looking to enable tenant isolation for their production tenant. 
 
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
+> - The host name and the data contracts might change during this feature preview period.
 
-## Choose a tool that can authenticate with Power Platform API
-The following section provides details on getting connected to the Power Platform programmatically. This tutorial includes using a generic PowerShell example.  More tools and software development kits (SDKs) are coming for Power Platform API that are directly built on top of the API and have full parity.  When those tools become available this tutorial will be updated.
+## Step 1. Authenticate using Power Platform API
 
-# [Generic PowerShell](#tab/pshell)
-### Get authenticated
-Using PowerShell, you can easily get authenticated with Power Platform API using the following script:
+Use the following PowerShell script to authenticate using Power Platform API.
 
 ```PowerShell
 Import-Module "MSAL.PS"
 $AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
 $Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
 ```
----
 
-## Create a report. 
-In this section we will create a report using PowerShell.  
+## Step 2. Create a report
 
-# [Generic PowerShell](#tab/pshell)
-### Create a report via Invoke-RestMethod
-Using the below script you can create a new tenant isolation report.  Note that you can only create one report per tenant per calendar day.  
+Use the following PowerShell script to create the report.
+
+> [!NOTE]
+> You can only create one report per tenant per calendar day.
 
 ```PowerShell
 try 
@@ -77,14 +73,12 @@ try
         Write-Host $responseBody
 }
 ```
----
 
-## List all reports for the tenant
-Now we will list all of the available reports for your tenant.
+Power Platform API reference: [Create Cross Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/create-cross-tenant-connection-report)
 
-# [Generic PowerShell](#tab/pshell)
-### List all reports using Invoke-RestMethod
-Let's list all of the available reports for your tenant.
+## Step 3. List all reports for the tenant
+
+Use the following PowerShell script to list all of the available reports for your tenant.
 
 ```PowerShell
 try 
@@ -108,26 +102,24 @@ try
         Write-Host $responseBody
 }
 ```
----
 
-## Fetch a single report
-Now we will fetch a single report for your tenant.
+Power Platform API reference: [Get Cross Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/get-cross-tenant-connection-report)
 
-# [Generic PowerShell](#tab/pshell)
-### Fetch a single report using Invoke-RestMethod
-Now we will fetch the details of a single report.  This will provide information about the connections used within your tenant.
+## Step 4. Fetch a single report
+
+Use the following PowerShell script to fetch a single report for your tenant about connections used within the tenant.
 
 ```PowerShell
 try 
 {
    # Get one cross tenant connections report for a tenant
-    $tenantListReportResponse = Invoke-RestMethod -Method Get -Uri "https://api.powerplatform.com/governance/crossTenantConnectionReports/{$reportId}?api-version=2022-03-01-preview" -Headers $Headers
+    $tenantListReportResponse = Invoke-RestMethod -Method Get -Uri "https://api.powerplatform.com/governance/crossTenantConnectionReport/{$reportId}?api-version=2022-03-01-preview" -Headers $Headers
     $report = $tenantListReportResponse | ConvertTo-Json -Depth 2 
     Write-Host $report
     Write-Host "" 
 
 } catch {
-    # Dig into the exception to get the Response details.
+    # Go through the exception to get the Response details.
     Write-Host "Response CorrelationId:" $_.Exception.Response.Headers["x-ms-correlation-id"]
     Write-Host "StatusCode:" $_.Exception.Response.StatusCode.value__ 
     Write-Host "StatusDescription:" $_.Exception.Response.StatusDescription
@@ -140,4 +132,9 @@ try
         Write-Host $responseBody
 }
 ```
----
+
+Power Platform API reference: [List Cross Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports/list-cross-tenant-connection-reports)
+
+### See also
+
+[Power Platform API reference - Cross Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports)
