@@ -33,7 +33,7 @@ Make sure you have the System Administrator or System Customizer security role o
 ## Copilot (preview)
 
 > [!NOTE]
-> Turning off Copilot for your tenant will only disable Copilot for makers. It won't disable [Copilot control for canvas apps](add-ai-copilot.md) or [Copilot for model-driven apps](../model-driven-apps/add-ai-copilot.md).
+> Turning off Copilot for your tenant will only disable Copilot for makers. It won't disable [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot) or [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot).
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
