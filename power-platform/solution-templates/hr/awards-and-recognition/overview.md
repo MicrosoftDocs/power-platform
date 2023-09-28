@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 09/25/2023
+ms.date: 09/28/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -56,12 +56,12 @@ The *Awards and Recognition* solution is composed of two apps, eight tables, and
 
 - **Two security roles**:
 
-  - **Awards and Recognition - Program Admin** – This role that should be granted to anyone that needs to configure nomination periods, awards, and groups as well as anyone who will be involved with setting the final state of nominations.
-  - **Awards and Recognition – User** – This role should be granted to ALL users of the application, generally everyone in an organization in which the awards program is being rolled out to.
+  - **Awards and Recognition - Program Admin** - This role that should be granted to anyone that needs to configure nomination periods, awards, and groups as well as anyone who will be involved with setting the final state of nominations.
+  - **Awards and Recognition – User** - This role should be granted to ALL users of the application, generally everyone in an organization in which the awards program is being rolled out to.
 
 - **One Power Automate flow**:
 
-  - **Awards and Recognition – Recognition gets deactivated** – Sets the *reviewed by* and *reviewed on* fields once a nomination has been set to a final state.
+  - **Awards and Recognition – Recognition gets deactivated** - Sets the *reviewed by* and *reviewed on* fields once a nomination has been set to a final state.
 
 ## Next steps
 
