@@ -1,13 +1,14 @@
 ---
 title: Extend pipelines in Power Platform
-description: Add business log to customize the pipeline deployment process.
+description: Add business logic to customize the pipeline deployment process.
 author: caburk
 ms.author: caburk
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 06/20/2023
+ms.date: 09/28/2023
 ms.custom: 
 ---
+
 # Extend pipelines in Power Platform
 
 Pipelines can be custom tailored to serve the unique needs of an organization. For example, you can add approvals, deploy via service principals, and integrate with internal systems of record, Azure DevOps, GitHub, and much more. Because [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) are used, business logic can be executed within Power Automate or various other subscribers. Whether your pipeline is basic or sophistocated on the inside, the deployment experience remains simple for makers on the outside.

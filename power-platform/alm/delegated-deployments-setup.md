@@ -36,13 +36,15 @@ For a delegated deployment with a service principal, follow these steps.
 1. Insert an approval step. Use Dynamic content for sending deployment request information to the approver(s).
 1. Insert a condition.
 1. Add Dataverse **Perform an unbound action** using the settings shown below.
-    1.  Action Name: UpdateApprovalStatus
-    1.  ApprovalComments: Insert Dynamic Content. Comments will be visible to the requestor of the deployment.
-    1.  ApprovalStatus: 20 = approved, 30 = rejected
-    1.  ApprovalProperties: Insert Dynamic Content. Admin information accessible from within the pipelines host.
+    Action Name: UpdateApprovalStatus
+    ApprovalComments: Insert Dynamic Content. Comments will be visible to the requestor of the deployment.
+    ApprovalStatus: 20 = approved, 30 = rejected
+    ApprovalProperties: Insert Dynamic Content. Admin information accessible from within the pipelines host.
+
     > [Important] The UpdateApprovalStatus action must use the service principal’s connection. You’ll need a client ID and secret.
+    > 
     > :::image type="content" source="media/spn-connection.png" alt-text="Connect with service principal":::
-1.	Save, and then test the pipeline.
+1. Save, and then test the pipeline.
 
 Below is a screenshot of a canonical approval flow.
 
@@ -67,7 +69,7 @@ To deploy as the pipeline stage owner, follow these steps.
     - The pipeline stage owner’s identity will be used for all deployments to this stage.
     - Similarly, this identity must be used to approve deployments.
 1.	Create a cloud flow in a solution within the pipelines host environment.
-    1.	Select the **OnApprovalStarted** trigger. **OnDeploymentRequested** can also be used if **Pre-Export Step Required** is disabled on the pipeline stage.
-    1.	Insert actions as desired. For example, an approval.
-    1.	Add Dataverse **Perform an unbound action**.
-        Action Name: UpdateApprovalStatus (20 = completed, 30 = rejected)
+    1. Select the **OnApprovalStarted** trigger. **OnDeploymentRequested** can also be used if **Pre-Export Step Required** is disabled on the pipeline stage.
+    1. Insert actions as desired. For example, an approval.
+    1. Add Dataverse **Perform an unbound action**.  
+      Action Name: UpdateApprovalStatus (20 = completed, 30 = rejected)
