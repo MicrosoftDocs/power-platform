@@ -21,7 +21,7 @@ To improve this experience, Microsoft has made available free subscription-based
 >
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - > The trial environments don't support development with Visual Studio. For development, you will need a developer-focused sandbox environment. More information: [Install and configure development tools](/power-platform/developer/unified-experience/finance-operations-install-config-tools).
+> - The trial environments don't support development with Visual Studio. For development, you will need a developer-focused sandbox environment. More information: [Install and configure development tools](/power-platform/developer/unified-experience/finance-operations-install-config-tools).
 
 ## Acquire a free subscription-based trial license
 
