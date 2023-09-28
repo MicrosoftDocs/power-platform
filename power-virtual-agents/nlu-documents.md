@@ -45,17 +45,17 @@ To upload a document to be used to generate answers:
 
 1. Under **Upload a document (preview)**, upload your documents in one of two ways:
 
-  - Drag and drop files and folders onto the field that says **Drag and drop files here or click to browse**.
-  - Select **click to browse** to open a file window where you can select the files you want.
+    - Drag and drop files and folders onto the field that says **Drag and drop files here or click to browse**.
+    - Select **click to browse** to open a file window where you can select the files you want.
 
-  :::image type="content" source="media/nlu-gpt/nlu-document-upload.png" alt-text="Screenshot of interface to upload a document":::
+    :::image type="content" source="media/nlu-gpt/nlu-document-upload.png" alt-text="Screenshot of interface to upload a document":::
 
 1. Select **Save** at the top of the **AI capabilities** page.
 
 
 Once uploaded, it can take a few minutes for the content of the document to be ready for use by the bot.
 
-Uploaded documents create new copies and do not overwrite existing documents, even if they have the same name. 
+Uploaded documents create new copies and don't overwrite existing documents, even if they have the same name. 
 
 > [!TIP] 
 >  
@@ -75,17 +75,19 @@ To download or delete an uploaded document, hover over the document name and sel
 
 Documents usad as a data source for the bot are used as a data source by default for all generative answers nodes. 
 
-To opt out a specific generative answers node from using documents as a data source:
+To exclude a specific generative answers node from using documents as a data source:
 
-1.	Open the topic with the generative answers node you want to exclude.
+1.	Open the topic with the generative answers node you want to exclude.  
 2.	On the top menu bar, select the **More options** icon, and then select **Open code editor**.
-3.	Insert the following lines of code immediately after the line `variable: Topic.Answer`:
+   
+4.	Insert the following lines of code immediately after the line `variable: Topic.Answer`:
     ```yml
     fileSearchDataSource:
         searchFilesMode: 
            kind: DoNotSearchFiles
     ```
-4.	Select **Save** on the top menu bar. You can now close the code editor and continue editing your bot's topics.
+
+5.	Select **Save** on the top menu bar. You can now close the code editor and continue editing your bot's topics.
 
 ## Supported document types
 
