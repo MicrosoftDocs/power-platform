@@ -21,10 +21,9 @@ This tutorial demonstrates how to use the Power Platform API (preview) to manage
 In this tutorial, learn how to:
 
 1.	Authenticate with Power Platform API and related tools.
-2.	Call the GET. 
-3.	Review the output.
-4.	Make updates with POST.
-5.	Verify in the admin center.
+2.	Create a report. 
+3.	List all reports for the tenant.
+4.	Fetch a single report.
 
 In this example scenario, a customer is looking to enable tenant isolation for their production tenant. 
 
@@ -34,386 +33,111 @@ In this example scenario, a customer is looking to enable tenant isolation for t
 > - The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
 ## Choose a tool that can authenticate with Power Platform API
-The following section provides details on getting connected to the Power Platform programmatically. This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, and a generic PowerShell example.  More tools and software development kits (SDKs) are coming for Power Platform API that are directly built on top of the API and have full parity.  When those tools become available this tutorial will be updated.
-
-# [Azure](#tab/Azure)
-### Authenticate with Power Platform API and related tools
-To start off, use a Logic Apps workflow.  A Power Automate flow is also acceptable, and any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST works with this tutorial.
-
-Visit the Azure portal, and then create a new logic app and give it a name:
-
-:::image type="content" source="media/appmgmt-tutorial-1.png" alt-text="Create a logic app.":::
-
-After that finishes provisioning, edit the workflow using the designer and set up a recurrence trigger to run on schedule of your choosing:
-
-:::image type="content" source="media/capacity2.png" alt-text="Set up a recurrence trigger.":::
- 
-For the remainder of this tutorial, you need an environment ID and an application name to complete the subsequent steps:
-- **Environment ID**: The ID of the environment to which you would install the package. This isn't the organization ID.
-- **Application name**: The name of the application you're trying to install.
-
-Next, authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication (preview)](programmability-authentication-v2.md).
-
-In this tutorial, we're using a user credential with password to obtain a token.  An example call to Azure AD is shown:
-
-:::image type="content" source="media/appmgmt-tutorial-2.png" alt-text="Authenticate with Azure AD and retrieve a token for calling the Power Platform API.":::
-
-We then parse the Azure AD token response into a typed object using this JSON schema in the 'Parse JSON' action:
-
-```json
-{
-    "properties": {
-        "access_token": {
-            "type": "string"
-        },
-        "expires_in": {
-            "type": "integer"
-        },
-        "ext_expires_in": {
-            "type": "integer"
-        },
-        "token_type": {
-            "type": "string"
-        }
-    },
-    "type": "object"
-}
-```
-
-:::image type="content" source="media/capacity5.png" alt-text="Parse the Azure AD token response into a strongly typed object.":::
+The following section provides details on getting connected to the Power Platform programmatically. This tutorial includes using a generic PowerShell example.  More tools and software development kits (SDKs) are coming for Power Platform API that are directly built on top of the API and have full parity.  When those tools become available this tutorial will be updated.
 
 # [Generic PowerShell](#tab/pshell)
 ### Get authenticated
-Using Power Platform CLI, you can easily get authenticated with a particular Dataverse organization.  To do this, select an existing auth profile:
+Using PowerShell, you can easily get authenticated with Power Platform API using the following script:
 
 ```PowerShell
-#REPLACE_WITH_EXAMPLE
+Import-Module "MSAL.PS"
+$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
+$Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
 ```
 ---
 
-## Call the GET
+## Create a report. 
 Retrieve the (PROVIDE CUSTOMER EXAMPLE).
 
-# [Azure](#tab/Azure)
+# [Generic PowerShell](#tab/pshell)
+### Create a report via Invoke-RestMethod
+Using the below script you can create a new tenant isolation report.  Note that you can only create one report per tenant per calendar day.  
 
-### Call the GET
-REST INSTRUCTIONS
-
-```http
-GET https://api.powerplatform.com/appmanagement/environments/{environmentId}/applicationPackages?api-version=2022-03-01-preview
-```
-
-We then parse the response into a typed object using this JSON schema with the 'Parse JSON' action:
-```json
+```PowerShell
+try 
 {
-    "properties": {
-        "value": {
-            "items": {
-                "properties": {
-                    "applicationDescription": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "applicationId": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "applicationName": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "applicationVisibility": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "catalogVisibility": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "crmMaxVersion": {},
-                    "crmMinversion": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "customHandleUpgrade": {
-                        "type": "boolean"
-                    },
-                    "endDateUtc": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "errorDetails": {},
-                    "id": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "instancePackageId": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "learnMoreUrl": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "localizedDescription": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "localizedName": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "publisherId": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "publisherName": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "singlePageApplicationUrl": {},
-                    "startDateUtc": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "state": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "supportedCountries": {
-                        "items": {
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        },
-                        "type": "array"
-                    },
-                    "uniqueName": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "version": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    }
-                },
-                "required": [
-                    "id",
-                    "uniqueName",
-                    "version",
-                    "localizedDescription",
-                    "localizedName",
-                    "applicationId",
-                    "applicationName",
-                    "applicationDescription",
-                    "singlePageApplicationUrl",
-                    "publisherName",
-                    "publisherId",
-                    "learnMoreUrl",
-                    "crmMinversion",
-                    "crmMaxVersion",
-                    "customHandleUpgrade",
-                    "instancePackageId",
-                    "state",
-                    "catalogVisibility",
-                    "applicationVisibility",
-                    "errorDetails",
-                    "startDateUtc",
-                    "endDateUtc",
-                    "supportedCountries"
-                ],
-                "type": "object"
-            },
-            "type": "array"
-        }
-    },
-    "type": "object"
+    # Create a cross tenant connections report
+    $tenantReportCreateResponse = Invoke-RestMethod -Method Post -Uri "https://api.powerplatform.com/governance/crossTenantConnectionReports?api-version=2022-03-01-preview" -Headers $Headers -Body ""
+    $reportId = $tenantReportCreateResponse.reportId
+    $reportStatus = $tenantReportCreateResponse.status
+
+    Write-Host "Cross tenant connections report created with ID=$reportId and status=$reportStatus" 
+
+} catch {
+    # Dig into the exception to get the Response details.
+    Write-Host "Response CorrelationId:" $_.Exception.Response.Headers["x-ms-correlation-id"]
+    Write-Host "StatusCode:" $_.Exception.Response.StatusCode.value__ 
+    Write-Host "StatusDescription:" $_.Exception.Response.StatusDescription
+    $result = $_.Exception.Response.GetResponseStream()
+        $reader = New-Object System.IO.StreamReader($result)
+        $reader.BaseStream.Position = 0
+        $reader.DiscardBufferedData()
+        $responseBody = $reader.ReadToEnd();
+
+        Write-Host $responseBody
 }
-```
-
-# [Generic PowerShell](#tab/pshell)
-### Call the GET
-PowerShell instructions:
-
-```PowerShell
-#PROVIDE_CUSTOMER_EXAMPLE
-```
-
-:::image type="content" source="media/appmgmt-tutorial-cli-2.png" alt-text="List the apps for an environment.":::
-
-For more information, see the [Auth](/powerapps/developer/data-platform/cli/reference/application-command) article for more in depth examples.
-
----
-
-## Review the output
-Now we will (PROVIDE CUSTOMER EXAMPLE)
-
-# [Azure](#tab/Azure)
-
-### Review the output API
-
-REST instructions
-
-```http
-POST https://api.powerplatform.com/appmanagement/environments/{environmentId}/applicationPackages/{uniqueName}/install?api-version=2022-03-01-preview
-```
-
-The request body has the application entry from the earlier step:
-
-```json
-{
-                "id": "ce3bab3c-ada1-40cf-b84b-49b26603a281",
-                "uniqueName": "Office365Groups",
-                "version": "2.9.0.3",
-                "localizedDescription": "With Office 365 groups, you can collaborate with people across your company even if they aren’t Dynamics 365 users. Groups provide a single location to share conversations, meetings, documents, and more.",
-                "localizedName": "Office 365 Groups",
-                "applicationId": "2f17f077-4175-4d82-b82b-17cd8950b74f",
-                "applicationName": "Office365Groups",
-                "applicationDescription": "",
-                "singlePageApplicationUrl": "",
-                "publisherName": "Microsoft CRM Package",
-                "publisherId": "255953fd-9ab8-4146-bfa1-859aae326ae9",
-                "learnMoreUrl": "http://go.microsoft.com/fwlink/?LinkID=525719",
-                "crmMinversion": "8.0",
-                "crmMaxVersion": null,
-                "customHandleUpgrade": false,
-                "instancePackageId": null,
-                "state": "None",
-                "catalogVisibility": "None",
-                "applicationVisibility": "All",
-                "errorDetails": null,
-                "startDateUtc": "2016-01-01T00:00:00Z",
-                "endDateUtc": "2050-01-01T00:00:00Z",
-                "supportedCountries": [
-                    "AE",
-                    "AL",
-                    "AM",
-                    "AO",
-                    "VN",
-                    "ZA",
-                    "ZW"
-                ]
-            }
-```
-
-An example response:
-
-```json
-{
-        "id": "9a44d33b-6055-4c9b-aa4a-4c410a22e9ad",
-        "packageId": "ce3bab3c-ada1-40cf-b84b-49b26603a281",
-        "applicationId": "2f17f077-4175-4d82-b82b-17cd8950b74f",
-        "applicationName": "Office365Groups",
-        "applicationDescription": "",
-        "singlePageApplicationUrl": "",
-        "publisherName": "Microsoft CRM Package",
-        "publisherId": "255953fd-9ab8-4146-bfa1-859aae326ae9",
-        "packageUniqueName": "Office365Groups",
-        "packageVersion": "2.9.0.3",
-        "localizedDescription": "With Office 365 groups, you can collaborate with people across your company even if they aren’t Dynamics 365 users. Groups provide a single location to share conversations, meetings, documents, and more.",
-        "localizedName": "Office 365 Groups",
-        "learnMoreUrl": "http://go.microsoft.com/fwlink/?LinkID=525719",
-        "termsOfServiceBlobUris": [
-            "https://crmprodnam.blob.core.windows.net/preferredsolution/microsoft_tos_dbd53f75-b571-46ad-b9ce-21b5656b85dd_1?sv=2018-03-28&sr=c&sig=v5iBtDum0N6A0sqyyhIkPECibmpGOKGiSmmm3ALGIR0%3D&se=2022-03-23T19%3A35%3A59Z&sp=r"
-        ],
-        "applicationVisibility": "All",
-        "lastOperation": {
-            "state": "InstallRequested",
-            "createdOn": "2022-03-22T19:35:59.7425066Z",
-            "modifiedOn": null,
-            "errorDetails": null,
-            "statusMessage": null,
-            "instancePackageId": "9a44d33b-6055-4c9b-aa4a-4c410a22e9ad",
-            "operationId": "4fde996a-bf68-413c-b2bf-33f21a7e9afb"
-        },
-        "customHandleUpgrade": false
-    }
-```
-
-Then, use the Parse JSON action to get the operationID for our subsequent steps.
-
-# [Generic PowerShell](#tab/pshell)
-### Review the output
-PowerShell instructions:
-
-```PowerShell
-#PROVIDE_CUSTOMER_EXAMPLE
 ```
 ---
 
-## Make updates with POST
-Now we will (PROVIDE CUSTOMER EXAMPLE)
-
-# [Azure](#tab/Azure)
-
-### Make updates with POST API
-REST instructions:
-
-> [!div class="mx-imgBorder"] 
-> ![Until control.](media/appmgmt-tutorial-3.png "Until control")
-
-Use the [Application Install Status](/rest/api/power-platform/appmanagement/applications/get-application-package-install-status) endpoint to monitor the installation. Be sure to set the **operationId** property to from the prior step. 
-
-```http
-GET https://api.powerplatform.com/appmanagement/environments/{environmentId}/operations/{operationId}?api-version=2022-03-01-preview
-```
-
-An example output is shown:
-
-```json
-{
-  "status": "NotStarted",
-  "createdDateTime": "2022-03-22T20:05:58.9414573Z",
-  "lastActionDateTime": null,
-  "error": null,
-  "statusMessage": null,
-  "operationId": "523b51a8-6af4-40cd-aa7d-86bddfa6697b"
-}
-```
-From here, we can evaluate the status and if it's one of the terminal values we can break the loop.
-
-### Verify in the admin center
-Now that the activity is done, you can verify it here in the admin center:
-
-:::image type="content" source="media/appmgmt-tutorial-4.png" alt-text="Send an email (v2) on the status of the activity.":::
+## List all reports for the tenant
+Now we will list all of the available reports for your tenant.
 
 # [Generic PowerShell](#tab/pshell)
-### Monitor progress
-Congratulations! Now watch as your application completes installation.  In the case of a failure, you can always review the detailed logs from the Dynamics 365 apps list in your environment in the Power Platform admin center.
+### List all reports using Invoke-RestMethod
+Let's list all of the available reports for your tenant.
+
+```PowerShell
+try 
+{
+     # Get all available cross tenant connections reports for a tenant
+    $tenantListReportResponse = Invoke-RestMethod -Method Get -Uri "https://api.powerplatform.com/governance/crossTenantConnectionReports?api-version=2022-03-01-preview" -Headers $Headers
+    $report = $tenantListReportResponse | ConvertTo-Json -Depth 3 
+    Write-Host $report 
+
+} catch {
+    # Dig into the exception to get the Response details.
+    Write-Host "Response CorrelationId:" $_.Exception.Response.Headers["x-ms-correlation-id"]
+    Write-Host "StatusCode:" $_.Exception.Response.StatusCode.value__ 
+    Write-Host "StatusDescription:" $_.Exception.Response.StatusDescription
+    $result = $_.Exception.Response.GetResponseStream()
+        $reader = New-Object System.IO.StreamReader($result)
+        $reader.BaseStream.Position = 0
+        $reader.DiscardBufferedData()
+        $responseBody = $reader.ReadToEnd();
+
+        Write-Host $responseBody
+}
+```
+---
+
+## Fetch a single report
+Now we will fetch a single report for your tenant.
+
+# [Generic PowerShell](#tab/pshell)
+### Fetch a single report
+Now we will fetch the details of a single report.  This will provide information about the connections used within your tenant.
+
+```PowerShell
+try 
+{
+   # Get one cross tenant connections report for a tenant
+    $tenantListReportResponse = Invoke-RestMethod -Method Get -Uri "https://api.powerplatform.com/governance/crossTenantConnectionReports/{$reportId}?api-version=2022-03-01-preview" -Headers $Headers
+    $report = $tenantListReportResponse | ConvertTo-Json -Depth 2 
+    Write-Host $report
+    Write-Host "" 
+
+} catch {
+    # Dig into the exception to get the Response details.
+    Write-Host "Response CorrelationId:" $_.Exception.Response.Headers["x-ms-correlation-id"]
+    Write-Host "StatusCode:" $_.Exception.Response.StatusCode.value__ 
+    Write-Host "StatusDescription:" $_.Exception.Response.StatusDescription
+    $result = $_.Exception.Response.GetResponseStream()
+        $reader = New-Object System.IO.StreamReader($result)
+        $reader.BaseStream.Position = 0
+        $reader.DiscardBufferedData()
+        $responseBody = $reader.ReadToEnd();
+
+        Write-Host $responseBody
+}
+```
+---
