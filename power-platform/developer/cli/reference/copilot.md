@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 8/16/2023
+ms.date: 9/18/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac copilot
 
-(Preview) Tools and utilities for copilot scenarios
+Tools and utilities for copilot scenarios
 
 [!INCLUDE [copilot-intro](includes/copilot-intro.md)]
 

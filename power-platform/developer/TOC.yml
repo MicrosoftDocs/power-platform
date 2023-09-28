@@ -102,6 +102,8 @@
                 href: cli\reference\canvas.md
               - name: pac catalog
                 href: cli\reference\catalog.md
+              - name: pac connection
+                href: cli\reference\connection.md
               - name: pac connector
                 href: cli\reference\connector.md
               - name: pac copilot
@@ -116,20 +118,20 @@
                 href: cli\reference\org.md
               - name: pac package
                 href: cli\reference\package.md
-              - name: pac paportal
-                href: cli\reference\paportal.md
               - name: pac pcf
                 href: cli\reference\pcf.md
               - name: pac pipeline
                 href: cli\reference\pipeline.md
               - name: pac plugin
                 href: cli\reference\plugin.md
+              - name: pac powerpages
+                href: cli\reference\powerpages.md
               - name: pac solution
                 href: cli\reference\solution.md
               - name: pac telemetry
                 href: cli\reference\telemetry.md
-              - name: pac tests
-                href: cli\reference\tests.md
+              - name: pac test
+                href: cli\reference\test.md
               - name: pac tool
                 href: cli\reference\tool.md
               - name: pac virtual-agent
