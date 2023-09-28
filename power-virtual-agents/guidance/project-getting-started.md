@@ -136,9 +136,9 @@ There are 3 main ways in which customers acquire PVA licenses:
     365 to use Teams) unless they wish to deploy their bot to additional channels (they will need the standard PVA licenses 
     detailed above).
 
-**Chat for Dynamics 365 Customer Service (Omnichannel)**
-    Customers deploying PVA with Dynamics 365 for Customer Service now receive a version of the PVA tenant license 
-    with their Dynamics 365 purchase:
+ 
+  **Chat for Dynamics 365 Customer Service (Omnichannel)**
+    Customers deploying PVA with Dynamics 365 for Customer Service now receive a version of the PVA tenant license with their Dynamics 365 purchase:
 
 1. **Tenant license (billed monthly, capacity pooled at Tenant)**
     
