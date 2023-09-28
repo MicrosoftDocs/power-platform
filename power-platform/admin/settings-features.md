@@ -4,7 +4,7 @@ description: Manage feature settings to adjust how features appear and function 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/22/2023
+ms.date: 09/28/2023
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -31,6 +31,9 @@ Make sure you have the System Administrator or System Customizer security role o
 > These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
 
 ## Copilot (preview)
+
+> [!NOTE]
+> Turning off Copilot for your tenant will only disable Copilot for makers. It won't disable [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot) or [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot).
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
