@@ -113,7 +113,7 @@ Use the following PowerShell script to fetch a single report for your tenant abo
 try 
 {
    # Get one cross tenant connections report for a tenant
-    $tenantListReportResponse = Invoke-RestMethod -Method Get -Uri "https://api.powerplatform.com/governance/crossTenantConnectionReport/{$reportId}?api-version=2022-03-01-preview" -Headers $Headers
+    $tenantListReportResponse = Invoke-RestMethod -Method Get -Uri "https://api.powerplatform.com/governance/crossTenantConnectionReports/{$reportId}?api-version=2022-03-01-preview" -Headers $Headers
     $report = $tenantListReportResponse | ConvertTo-Json -Depth 2 
     Write-Host $report
     Write-Host "" 
