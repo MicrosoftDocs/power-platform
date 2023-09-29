@@ -1,6 +1,6 @@
 ---
-title: Get started with the SAP Procurement solution template
-description: Walk through the high-level steps to integrate SAP with Power Platform and work with the SAP Procurement solution template.
+title: Get started with the SAP Procurement template
+description: Walk through the high-level steps to integrate SAP with Power Platform and work with the SAP Procurement template.
 author: tverhasselt
 ms.author: thoverh
 contributors:

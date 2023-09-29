@@ -69,7 +69,6 @@ Once deployed, you'll see your procurement team members quickly and easily adapt
 
 ## Access the SAP Procurement template from AppSource
 
-:::image type="content" source="media/overview/sap-procurement-template-icon.png" alt-text="Image of Microsoft's SAP Procurement template for Power Platform icon.":::
 You can [access the SAP Procurement template from AppSource](<https://aka.ms/AccessSAPProcurementTemplate>).
 
 > [!IMPORTANT]
