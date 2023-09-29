@@ -73,7 +73,7 @@ To download or delete an uploaded document, hover over the document name and sel
 
 ## Disable documents as a data source for a generative answers node
 
-Documents usad as a data source for the bot are used as a data source by default for all generative answers nodes. 
+Documents used as a data source for the bot are used as a data source by default for all generative answers nodes. 
 
 To exclude a specific generative answers node from using documents as a data source:
 
