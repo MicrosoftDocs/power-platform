@@ -4,6 +4,6 @@ Instructions: Remove comments and this line. Add appropriate example below
 ### Example
 
 ```powershell
-pac tests run
+pac connection update
 ``` 
 -->
