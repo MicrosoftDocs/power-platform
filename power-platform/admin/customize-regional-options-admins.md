@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 09/28/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,10 +13,11 @@ search.audienceType:
 ---
 # Customize regional options 
 
-<!-- legacy procedure -->
+You can customize how numbers, currencies, times, and dates appear to everyone in your organization.
 
-You can customize how numbers, currencies, times, and dates appear to everyone in your organization.  
-  
+> [!NOTE]
+> This setting only controls the default options for new users signing into an organization for the first time. This doesn't update the options for any existing users who have previously signed in. Existing users must update the options for themselves under [Personalization Settings](/power-apps/user/set-personal-options).
+
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
 - Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile).
