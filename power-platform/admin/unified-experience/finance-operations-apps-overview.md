@@ -3,7 +3,7 @@ title: "Unified admin experience for finance and operations apps (preview)"
 description: "Overview of unified admin experiences for finance and operations apps customers in Power Platform admin center"
 author: laneswenka
 ms.topic: overview
-ms.date: 09/13/2023
+ms.date: 09/29/2023
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
@@ -91,10 +91,28 @@ The following list of continually updated scenario tutorials provides a walkthro
 - [Manage storage and capacity](../finance-operations-storage-capacity.md)
 
 ### Known limitations during preview
-As part of the preview, there are a few knonw limitations of functionality that Microsoft is looking to address.  These limitations will soon be removed, so please check back often to determine their resolution.
-- The environment templates don't include Project Operations.  This will soon be resolved.
-- The environment name cannot exceed 20 characters.  This is a limitation on the finance and operations runtime that will soon be removed.
 
+As part of the preview, there are a few known limitations of functionality that Microsoft is looking to address. These limitations will soon be removed, so please check back often to determine their resolution.
+- The environment templates don't include Project Operations. This will soon be resolved.
+- The environment name cannot exceed 20 characters. This is a limitation on the finance and operations runtime that will soon be removed.
+
+### Frequently asked questions from the public preview
+
+Below are a set of common questions and their related answers that we have received as part of the public preview.  We will continue to publish these and resolve open items before making the experience generally available.
+
+#### I don't know what licenses I have assigned
+
+You can view the licenses assigned to you at [My Account - Subscriptions](https://portal.office.com/account/?ref=MeControl#subscriptions). To see which templates this allows you to deploy, visit [Tutorial: Provision a new environment with an ERP-based template (preview)](tutorial-deploy-new-environment-with-ERP-template.md#knowing-which-template-to-provision).
+
+#### I don't have any available capacity
+
+All Power Platform environments require Dataverse capacity to deploy. In addition, Finance and Operations apps experiences require both Dataverse and Operations database capacities to be available to deploy. You can review the [storage capacity deficit](../finance-operations-storage-capacity.md#address-a-storage-capacity-deficit).
+
+One of the best ways to reduce capacity is to review your sandboxes and see which can be cleaned up or removed.  We're  also building a new type of copy operation in Power Platform admin center that will truncate all of the transactional tables during the copy so that the resulting environment is as small as possible without sacrificing critical module configurations or master data. You can then use Data Import Export Framework (DIXF) to copy over a limited set of transactions for testing purposes. When this new copy operation is available we will update this FAQ with details on how to utilize it.
+
+#### How do I access SQL for these environments
+
+Direct SQL access is not available at this time, however We're working on providing a just-in-time access approach similar to what has been available earlier using Lifecycle Services. When this comes available, we will update this FAQ with details on how to utilize it.
 
 ### Related articles
 

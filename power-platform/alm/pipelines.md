@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 08/14/2023
+ms.date: 09/15/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
 ---
@@ -82,8 +82,10 @@ No. Solutions are exported as soon as a deployment request is submitted (when th
 
 ### Are standalone licenses required to use pipelines?
 
-- Both source and target environments must be enabled as Managed Environments. Managed Environments isn't required for the pipelines host. 
-- Standalone licenses aren't required to enable Managed Environments for developer and trial type environments.
+- Developer environments aren't required to be Managed Environments. They can be used for development and testing with the developer plan.
+- The pipelines host should be a production environment, but the pipelines host doesn't have to be a Managed Environment.
+- All other environments used in pipelines must be enabled as Managed Environments.
+- Licenses granting premium use rights are required for all Managed Environments.
 
 A common setup example:
 
@@ -164,7 +166,7 @@ This is a valid configuration and should be evaluated based on the needs and pol
 
 ### Can I deploy unmanaged solutions?
 
-No. We recommend that you always deploy managed solutions to non-development environments. Notice unmanaged solutions are automatically exported and stored in the pipelines host so you can download and import them to other development environments or put them in source control. 
+No. We recommend that you always deploy managed solutions to nondevelopment environments. Notice unmanaged solutions are automatically exported and stored in the pipelines host so you can download and import them to other development environments or put them in source control. 
 
 ### Can I deploy multiple solutions at once?
 
