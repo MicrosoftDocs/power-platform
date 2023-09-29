@@ -134,10 +134,10 @@ Here are common scenarios of sharing limits in the different environment types:
 |----------------|-------------------|
 |Default|Choose **Exclude sharing with security groups**, select the **Limit total individuals who can share to** check box, and select **20** for the value.|
 |Developer| Choose **Exclude sharing with security groups**, select the **Limit total individuals who can share to** check box, and select **5** for the value.|
-|Sandbox| Choose **Exclude sharing with security groups**and leave the **Limit total individuals who can share to** checkbox clear.<br><br>If you want to control the tester users and you need to use a security group, choose **Don't set limits (default)**.|
-|Production|Choose **Don't set limits (default)**.|
+|Sandbox| Choose **Exclude sharing with security groups** and leave the **Limit total individuals who can share to** checkbox clear. This option also enables IT to manage a particular Security Group that includes all users authorized to run the application. <br><br>If the maker, user, or team has the ability to manage which users are permitted to test, choose **Don't set limits (default)**.|
+|Production|Choose **Don't set limits (default)**. If you want to control based on a specific Security Group, choose **Exclude sharing with security groups** and leave the **Limit total individuals who can share to** checkbox clear. |
 
-Currently the limit sharing capabilities are for canvas apps only, model-driven apps and Power Automate flows may be supported in the future releases. 
+Currently the limit sharing capabilities are for canvas apps only. 
 
 
 ### Usage insights
