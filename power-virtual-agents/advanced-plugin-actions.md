@@ -1,5 +1,5 @@
 ---
-title: Use plugin actions in Power Virtual Agents (previw)
+title: Use plugin actions in Power Virtual Agents (preview)
 description: Use plugin actions to extend the capabilities of your bots.
 keywords: "PVA, plugin, connector, flow, automate"
 ms.date: 09/29/2023
