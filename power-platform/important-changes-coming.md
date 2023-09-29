@@ -26,28 +26,31 @@ For deprecation information of other products, see [Other deprecation articles](
 
 Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
 
-## jQuery 2.1.1 to be removed in model-driven apps
+<a name="#jquery-211-to-be-removed-in-model-driven-apps" ></a>
 
-As part of a service update designed to improve security within Microsoft Power Apps we're removing jQuery version 2.1.1 from model-driven applications. In October 2023 we're removing the library located here: `/_static/_common/scripts/jquery-2.1.1.min.js`.
+## jQuery 2.1.1 was removed in model-driven apps
 
-If custom code in web resources has a dependency on this library it will stop working when this library is removed. We don't support use of any model-driven application client-side code, including libraries that model-driven apps depend on. These libraries might change without warning. More information: [Unsupported customizations](/power-apps/developer/model-driven-apps/supported-customizations#unsupported-customizations).
+As part of a service update designed to improve security within Microsoft Power Apps, we removed jQuery version 2.1.1 from model-driven applications. One year after announcing the plan to remove this library, in October 2023 we removed the library located here: `/_static/_common/scripts/jquery-2.1.1.min.js`.
+
+If custom code in web resources had a dependency on this library, it stopped working when this library was removed. This was unsupported pattern as use of any model-driven application client-side code isn't supported, including libraries that model-driven apps depend on. These libraries might change without warning. More information: [Unsupported customizations](/power-apps/developer/model-driven-apps/supported-customizations#unsupported-customizations).
 
 ### Are you impacted?
 
-To determine if you're impacted, search your web resource code for this line: `/_static/_common/scripts/jquery-2.1.1.min.js`.
+Now that the library has been removed, you'll see errors in any web resources that depended on this library.
+You can search your web resource code for this line: `/_static/_common/scripts/jquery-2.1.1.min.js`.
 
 If your code isn't already in a source code repository, you should export your solutions and extract the contents. There are many tools you may use to search the contents. For example, you can use the search capabilities of Visual Studio Code. More information: [Visual Studio Code: Basic Editing > Search across files](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
 
 ### What to do if you're impacted?
 
-If your web resources have a dependency on this library, you should replace the reference with a newer version of JQuery.
+If your web resources had a dependency on this library, you should replace the reference with a newer version of JQuery.
 
 Note, there may be breaking changes between versions. For information about upgrading, see [jQuery Core Upgrade Guides](https://jquery.com/upgrade-guide/).
 
 Choose one of these options:
 
 - Create a new JavaScript web resource with the minified version of jQuery. The library is available here: [jQuery Core – All Versions](https://releases.jquery.com/jquery/). More information: [Create or edit model-driven app web resources to extend an app](/power-apps/maker/model-driven-apps/create-edit-web-resources).
-- Locate the URL of a CDN for a newer version of jQuery. For example [jQuery-libraries-cdnjs](https://cdnjs.com/libraries/jquery).
+- Locate the URL of a CDN for a newer version of jQuery. For example: [jQuery-libraries-cdnjs](https://cdnjs.com/libraries/jquery).
 
 Replace the reference to `/_static/_common/scripts/jquery-2.1.1.min.js` with the name of the web resource you created or the URL to the CDN resource with a newer version of jQuery.
 
@@ -91,7 +94,7 @@ For new and existing flows, customers should use the [Microsoft Dataverse](/conn
 
 These features will start to be available for general availability in October 2023. You can start migrating your flows to use the Dataverse connector in October 2022. Users will be able to use a migration assistant to migrate from the Dataverse (legacy) connector to the Dataverse connector. On the detail page of each flow, you'll see the following message: *Migrate this flow to the latest Microsoft Dataverse connector*. You'll be able to open the migration assistant from there to create a copy of the flow with the current Microsoft Dataverse connector and all parameters mapped.
 
-Previously, the migration assistant did not support flows in an older format, including most flows created before August 2020. Starting October 2023, all flows outside of solutions and in unmanaged solutions can be migrated using the migration assistant.
+Previously, the migration assistant didn't support flows in an older format, including most flows created before August 2020. Starting October 2023, all flows outside of solutions and in unmanaged solutions can be migrated using the migration assistant.
 
 In November 2023, we'll provide timelines when all existing flows using the deprecated legacy actions and triggers will stop working. Users will need to review their existing flows to update them to the new actions and triggers by the specified timeline (typically one year from the announcement date).
 
@@ -137,7 +140,7 @@ The legacy read-only grid:
 
 Tables configured to use the *Read-only Grid (Default)* control are replaced with the *Power Apps read-only grid* for views and subgrids. This change started with the 2022 release wave 1. 
 
-When the Power Apps read-only grid is originally enabled, the jump bar row is not visible; however, makers can re-enable this as needed. More information: [Configure the Power Apps read-only grid control](/power-apps/maker/model-driven-apps/power-apps-grid-control#configure-the-power-apps-read-only-grid-control)
+When the Power Apps read-only grid is originally enabled, the jump bar row isn't visible; however, makers can re-enable this as needed. More information: [Configure the Power Apps read-only grid control](/power-apps/maker/model-driven-apps/power-apps-grid-control#configure-the-power-apps-read-only-grid-control)
 
 ## Dynamics 365 (Preview) app for Windows is deprecated
 
@@ -159,7 +162,7 @@ On June 20, 2022 [Power Apps for Windows](https://apps.microsoft.com/store/detai
 
 ## Data Export Service deprecation
 
-Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on will not be available for download for all customers. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
+Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on won't be available for download for all customers. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
 
 ## Dataverse OData v2.0 Service removal
 
@@ -167,7 +170,7 @@ We plan to remove the Organization Data Service. Any code that uses the Organiza
 
 The original removal date was November 11, 2022, but this was extended to April 30, 2023. We have decided not to remove the service on April 30, 2023.
 
-We are going to defer the removal of this service to allow people more time to complete the transition of their code to use the Web API. If you have detected that you are still using this endpoint, you must prioritize transitioning this code to use Web API so you will be prepared when the final removal date is announced.
+We're going to defer the removal of this service to allow people more time to complete the transition of their code to use the Web API. If you have detected that you're still using this endpoint, you must prioritize transitioning this code to use Web API so you'll be prepared when the final removal date is announced.
 
 > [!NOTE]
 > This announcement does not involve the deprecated SDK for .NET SOAP endpoint. At this time, no date has been announced for the removal of the SOAP endpoint.
@@ -182,11 +185,11 @@ Effective February 2022, support for Microsoft 365 Groups (previously known as O
 
 Existing customers can create teams from their existing Microsoft 365 Groups and map them to individual records as per the requirements. They can also continue to use Microsoft 365 Groups but have a custom experience to host it inside Dynamics 365.
 
-If you've questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
+If you have questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
 
 ## Support for viewing and managing application users in legacy web client is deprecated
 
-Effective February 2022, the list of "Application Users" will not be available under **Advanced Settings** > **Security** > **Users**. You can use the Power Platform admin center to view and manage application users. See [Manage application users in the Power Platform admin center](admin/manage-application-users.md).
+Effective February 2022, the list of "Application Users" won't be available under **Advanced Settings** > **Security** > **Users**. You can use the Power Platform admin center to view and manage application users. See [Manage application users in the Power Platform admin center](admin/manage-application-users.md).
 
 ## The Analyze section, in mobile offline profiles is deprecated
 
@@ -332,7 +335,7 @@ As an alternative you can install news Power Apps component framework control. F
 
 Effective June 2, 2020, the Dynamics 365 Sales bot, a feature that enables users to retrieve sales information through a bot within Dynamics 365 Sales app for Teams will be deprecated. Until July 31, 2020, Microsoft will continue to provide support for the feature, but won't release any more functionality beyond what is already present.  After July 31, 2020, you'll no longer be able to receive responses to conversations. The bot won't be available for new customers; existing customers may still be able to access the bot from the Chat, however the bot won't respond to questions.
 
-It is our goal to deliver a powerful bot experience that allows users to retrieve and manage information. Based on usage data and feedback from our customers, we'll be working on a powerful, extensible set of capabilities and features that will allow you to intuitively access and interact with sales information—among other entities—through a bot interface. we'll keep you updated on timing for when this will be available.
+It is our goal to deliver a powerful bot experience that allows users to retrieve and manage information. Based on usage data and feedback from our customers, we are working on a powerful, extensible set of capabilities and features that will allow you to intuitively access and interact with sales information—among other entities—through a bot interface. we'll keep you updated on timing for when this will be available.
 
 ## Dynamics 365 Connector is deprecated
 
@@ -355,7 +358,7 @@ Canvas apps can no longer use the Power Apps player in Windows. All Canvas apps 
 ### The following behaviors will be observed
 #### Data integrator
 - Dynamics 365 connector can't be selected for creating a new integration.
-- Editing an existing integration will not be allowed, if you attempt to edit you will be required to choose a different connector.
+- Editing an existing integration won't be allowed, if you attempt to edit you'll be required to choose a different connector.
 
 #### Automate
 - Dynamics 365 connector can't be selected for creating a new flow.
@@ -364,7 +367,7 @@ Canvas apps can no longer use the Power Apps player in Windows. All Canvas apps 
 #### Logic Apps
 - Dynamics 365 connector can't be selected for creating a new Logic App.
 - Existing Logic Apps will continue to run but must be migrated as soon as possible.
-- You will be able to edit an existing Logic App.
+- You'll be able to edit an existing Logic App.
 
 #### Canvas apps
 - The Windows Player for canvas apps will no longer be able to be used.
@@ -391,7 +394,7 @@ Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector.
 
 #### Data integrator
 - All new integrations should be created with the Microsoft Dataverse (Legacy) connector.
-- Dynamics 365 connectors should be replaced with the Microsoft Dataverse (legacy) connector. The Microsoft Dataverse connector is not yet available.
+- Dynamics 365 connectors should be replaced with the Microsoft Dataverse (legacy) connector. The Microsoft Dataverse connector isn't yet available.
 - Data Integrations will need to be recreated in the Data Integrator using the Microsoft Dataverse (legacy) connector and then completing setup.
 
 #### Power Automate
@@ -414,7 +417,7 @@ By October 2023, you should be able to migrate all flows, including previously u
 
 
 #### Canvas apps
-- If you are using the Power Apps Player to launch Power Apps in Windows, you will need to switch over to Power Apps for Windows.
+- If you're using the Power Apps Player to launch Power Apps in Windows, you'll need to switch over to Power Apps for Windows.
 
 
 ## AI Builder text classification models are deprecated
@@ -457,7 +460,7 @@ More information:
 
 ## Old Dataverse environment URL redirector service is deprecated
 
-When you access your Dataverse environment for the first time or every time after you have signed out from a prior session, you are directed to Azure AD for signing in. In the sign-in page URL, it contains a set of internal values/codes that include a link to the URL redirector service. Upon successful login, the URL redirector service directs you to your Dataverse environment.
+When you access your Dataverse environment for the first time or every time after you have signed out from a prior session, you're directed to Azure AD for signing in. In the sign-in page URL, it contains a set of internal values/codes that include a link to the URL redirector service. Upon successful login, the URL redirector service directs you to your Dataverse environment.
 
 The old URL redirector service, cloudredirector.crm.dynamics.com, was replaced in September 2019 with the new one, bn1--namcrlivesg614.crm.dynamics.com (just an example; the URL will differ based on your environment region). The old URL redirector service is deprecated, and will be removed on **March 31, 2020**. 
 
@@ -474,7 +477,7 @@ and
 [Microsoft.Xrm.Tooling.Connector.CrmServiceClient](/dotnet/api/microsoft.xrm.tooling.connector.crmserviceclient)
 classes for the authentication type of "Office365".
 
-We are making this change to remove a security protocol (WS-Trust) that is
+We're making this change to remove a security protocol (WS-Trust) that is
 inherently insecure by current encryption standards. While Microsoft has worked
 hard to protect users who choose to use this authentication type for
 the convenience of login process, it has become an increasing source of concern
@@ -484,7 +487,7 @@ an authentication flow that presents both the user ID and password to the
 authenticating resource in 'clear text' form, relying solely on the transport
 encryption to provide security for the initial leg of the authentication, until
 such point as the token service returns an authentication token to use.
-Additionally, the WS-Trust protocol does not support modern forms of
+Additionally, the WS-Trust protocol doesn't support modern forms of
 Multi-Factor Authentication and conditional access controls to customer data.
 
 With this change, the intent is to guide developers away from this
@@ -516,7 +519,7 @@ As of September 2019, the legacy web client is deprecated. Customers must transi
 On December 4, 2020, the legacy web client will no longer be available. Organizations should make the transition to Unified Interface as soon as possible to take advantage of Microsoft's ongoing investments in reliability, performance, and functionality. 
 
  
-In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 4, 2020. 
+In the coming months, for those that have not already made the transition, we'll be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 4, 2020. 
 For more information and steps to make a smooth transition, see: 
 
 -   [Unified Interface Community
@@ -539,7 +542,7 @@ For more information and steps to make a smooth transition, see:
 
 [Task flows](/power-automate/create-mobile-task-flow) are used to create a step-by-step data entry form for common tasks, such as after-meeting follow-ups. 
 
-Task flows are deprecated and will be removed by October 1, 2021. They will be replaced by the immersive experience for business process flows that is planned for release. More information: [Business process flow immersive experiences](/power-platform-release-plan/2019wave2/microsoft-flow/business-process-immersive-experiences)
+Task flows are deprecated and will be removed by October 1, 2021. They'll be replaced by the immersive experience for business process flows that is planned for release. More information: [Business process flow immersive experiences](/power-platform-release-plan/2019wave2/microsoft-flow/business-process-immersive-experiences)
 
 ## Process Dialogs are deprecated
 
@@ -551,7 +554,7 @@ Process dialogs are deprecated and will be removed by December 1, 2020. Suggeste
 ## Legacy process-related attributes in entities are deprecated
 
 
-The legacy process-related attributes (such as **StageId**, and **TraversedPath**) on entities enabled for business process flows are now deprecated. The **SetProcess** action for business process flows is also deprecated. Manipulating these legacy process-related attributes for target entity records does not guarantee consistency of the business process flow state, and isn't a supported scenario. The recommended way is to use the attributes of the business process flow entity. More information: [Create, retrieve, update, and delete business process flow entity records](/dynamics365/customer-engagement/developer/model-business-process-flows#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances)
+The legacy process-related attributes (such as **StageId**, and **TraversedPath**) on entities enabled for business process flows are now deprecated. The **SetProcess** action for business process flows is also deprecated. Manipulating these legacy process-related attributes for target entity records doesn't guarantee consistency of the business process flow state, and isn't a supported scenario. The recommended way is to use the attributes of the business process flow entity. More information: [Create, retrieve, update, and delete business process flow entity records](/dynamics365/customer-engagement/developer/model-business-process-flows#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances)
 
 ## Some client APIs are deprecated
 
@@ -560,7 +563,7 @@ client scripts without having to change them based on the context or the client
 (web client or the new Unified Interface) where they run. You should plan to use
 the new client APIs mentioned in the **Replacement Client API** column instead
 of the deprecated ones. The deprecated client APIs will continue to be available
-and supported until they are officially removed from a future major release. *A public announcement here in the documentation, on the Dynamics 365 blog, and in many other places will be made at least six months before removal.*
+and supported until they're officially removed from a future major release. *A public announcement here in the documentation, on the Dynamics 365 blog, and in many other places will be made at least six months before removal.*
 
 
 |Deprecated Client API |Replacement Client API |Comments |
@@ -628,7 +631,7 @@ Microsoft will continue to provide security and other critical updates to the Dy
 
 **What should you do?**
 
-If you are currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft's ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
+If you're currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft's ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
 
 ## Usage of Parature knowledgebase as the knowledge management solution is deprecated
 
