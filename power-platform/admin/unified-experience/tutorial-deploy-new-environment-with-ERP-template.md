@@ -92,7 +92,7 @@ $jsonObject= @"
 
 # To kick off new environment deployment
 # IMPORTANT - This has to be a single line, after the copy & paste the command
-New-AdminPowerAppEnvironment -DisplayName “UnoEnvName1” -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
+New-AdminPowerAppEnvironment -DisplayName "UnoEnvName1" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
 ```
 ---
 
