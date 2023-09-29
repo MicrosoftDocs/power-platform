@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 09/27/2023
+ms.date: 09/29/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -22,8 +22,8 @@ There are three kinds of users who interact with the Onboarding Buddy app in som
 > [!NOTE]
 > There are two admin roles that may also directly use the Onboarding Buddy app even though their primary functions are to configure and manage the app.
 >
-> - **Power Platform admin**. As a Power Platform admin, you [install and configure](/install-and-configure.md/) the Onboarding Buddy Admin app for the Program admin and the Onboarding Buddy app for users.
-> - **Program admin**. As a Program admin, you [manage](/manage.md) the Onboarding Buddy program through the Onboarding Buddy Admin app.
+> - **Power Platform admin**. As a Power Platform admin, you install and configure the Onboarding Buddy Admin app for the Program admin and the Onboarding Buddy app for users.
+> - **Program admin**. As a Program admin, you manage the Onboarding Buddy program through the Onboarding Buddy Admin app.
 
 ## Use the Onboarding Buddy app as a Buddy
 
