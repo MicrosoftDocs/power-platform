@@ -38,6 +38,20 @@ When an environment is created with a Dataverse database or a Dataverse database
 > [!TIP]
 > Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
 
+**Important considerations when adding users to environments via automation**
+We do not rely on UPN as the primary identifier to match users in the Dataverse database. We only honor AAD Object ID (AzureActiveDirectoryObjectId) as the primary identifier for user records in Dataverse database.
+If you were previously relying on UPN match to import data into Dynamics CRM, you must make the following changes to your process. This change is required to prevent duplicate user records from being created in the system.
+
+1.	Create the user records in Microsoft Entra before starting your data import process
+
+2.	Sync the user from Microsoft Entra into the environment(s) where you intend to perform data import.
+  a.	You can perform this sync in multiple ways: 
+    i.	[By adding a security group to the environment](https://learn.microsoft.com/en-us/power-platform/admin/control-user-access#associate-a-security-group-with-an-environment)
+    ii.	[By adding the user manually in the environment](https://learn.microsoft.com/en-us/power-platform/admin/add-users-to-environment#add-users-to-an-environment-that-has-a-dataverse-database)
+    iii. [By using PowerShell scripts to add the user to the environment](https://learn.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest)
+    iv.	[By leveraging Force sync in Power Automate flows](https://powerusers.microsoft.com/t5/Power-Apps-Community-Blog/Using-Force-Sync-User-to-sync-users-Power-Platform-Dynamics-365/ba-p/1605498)
+3.	Once the system syncs the user(s) into the environment, run your data import workflows and/or other automations.
+
 **To add users to an environment that has a Dataverse database**
 
 1. From the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to add users. 
