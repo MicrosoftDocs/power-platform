@@ -110,15 +110,15 @@ To call a plugin action:
     - get weather
     - what's the weather
 
-     :::image type="content" source="media/advanced-plugin-action/weather-topic-trigger-phrases.png" alt-text="Screenshot of trigger phrases in a new topic.":::
+     :::image type="content" source="media/advanced-plugin-actions/weather-topic-trigger-phrases.png" alt-text="Screenshot of trigger phrases in a new topic.":::
 
 1. Select **Add node** (**+**) and then select **Call an action**. Switch to the **Plugin actions (preview)** tab and then select the plugin action you created earlier, **Get weather forecast**.
 
-    :::image type="content" source="media/advanced-plugin-action/weather-topic-add-action.png" alt-text="Screenshot of new node menu open and the weather plugin action selected.":::
+    :::image type="content" source="media/advanced-plugin-actions/weather-topic-add-action.png" alt-text="Screenshot of new node menu open and the weather plugin action selected.":::
 
 1. Your **plugin action (preview)** node is now added to your topic.
 
-    :::image type="content" source="media/advanced-plugin-action/weather-topic-node-added.png" alt-text="Screenshot of the new plugin action node in the topic.":::
+    :::image type="content" source="media/advanced-plugin-actions/weather-topic-node-added.png" alt-text="Screenshot of the new plugin action node in the topic.":::
 
 1.  Select **Save**.
 
@@ -128,11 +128,11 @@ By default, when your plugin action runs, your bot generates questions for the u
 
 1. Select **Set value** on the node and choose the input you would like to override.
 
-    :::image type="content" source="media/advanced-plugin-action/weather-topic-select-input-override.png" alt-text="Screenshot of the list of inputs that are available to be overridden.":::
+    :::image type="content" source="media/advanced-plugin-actions/weather-topic-select-input-override.png" alt-text="Screenshot of the list of inputs that are available to be overridden.":::
 
 1. You can now enter the value you want to set the input to, either by typing a value, selecting a variable or using a formula.
 
-    :::image type="content" source="media/advanced-plugin-action/weather-topic-overridden-input.png" alt-text="Screenshot of the units input having been overridden.":::
+    :::image type="content" source="media/advanced-plugin-actions/weather-topic-overridden-input.png" alt-text="Screenshot of the units input having been overridden.":::
 
 Now that this input has been overridden, the bot won't ask the user for a value. 
 
@@ -140,7 +140,7 @@ Now that this input has been overridden, the bot won't ask the user for a value.
 
 Once you have added a plugin action to a topic, you can test it. You can see the weather plugin action added earlier being tested in this screenshot:
 
-:::image type="content" source="media/advanced-plugin-action/weather-topic-test-plugin-action.png" alt-text="Screenshot of the list of inputs that are available to be overridden.":::
+:::image type="content" source="media/advanced-plugin-actions/weather-topic-test-plugin-action.png" alt-text="Screenshot of the plugin action being tested.":::
 
 GPT-driven conversations can be more fluid than traditionally authored questions, allowing a user to answer more than one question in a single turn or amending values that they entered previously. 
 
