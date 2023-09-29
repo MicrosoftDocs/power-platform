@@ -30,7 +30,7 @@ For a delegated deployment with a service principal, follow these steps.
 1. Assign the Pipelines Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments.
     Lower permission security roles cannot deploy plug-ins and other code components.
 1. Choose (check) **Is delegated deployment** on a pipeline stage, select **Service Principal**, and enter the Client ID. Click **Save**.
-1. Create a cloud flow within the pipelines host environment. _Alternative systems can be integrated using pipeline's Dataverse API's.
+1. Create a cloud flow within the pipelines host environment. Alternative systems can be integrated using pipelines' Dataverse API's.
 1. Select the **OnApprovalStarted** trigger.
 1. Add steps for your desired custom logic.
 1. Insert an approval step. Use Dynamic content for sending deployment request information to the approver(s).
