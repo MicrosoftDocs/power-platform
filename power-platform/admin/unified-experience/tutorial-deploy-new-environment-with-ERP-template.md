@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 09/13/2023
+ms.date: 09/29/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -57,6 +57,28 @@ Be sure to check out the latest known limitations available on the overview arti
 
 ## Step-by-step provisioning guide
 
+# [Power Platform admin center](#tab/PPAC)
+
+### Create an environment
+
+> [!Note]
+> During public preview, this will initially not be visible in Power Platform admin center.  Instead you may provision these new environments using PowerShell on the related tab on this page.  However this will eventually be visible when non-developer sandboxes are supported for finance and operations apps.
+
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments** in the navigation pane.  The **Environments** page is displayed.
+1. Select **New**. The **New environment** pane is displayed.
+
+    :::image type="content" source="media/tutorial-new-environment1.png" alt-text="Click the New button to create a new environment.":::
+
+1. Enter a name for the environment. Environment names don't need to be unique in Power Platform, unlike in LCS.
+1. Choose your Provisionment region.
+1. From the **Type** list, select **Sandbox**.
+1. Enable the Dataverse data store option, and select **Next**.
+1. On the next screen, enter the Dataverse-required fields.
+1. Select **Enable Dynamics 365 apps** and choose the appropriate template for your license.
+
+    :::image type="content" source="media/new-environment-template.png" alt-text="Enable the Dynamics 365 apps and select the appropriate template for your license.":::
+
 # [PowerShell](#tab/PowerShell)
 
 ### Create an environment
@@ -88,28 +110,6 @@ $jsonObject= @"
 # IMPORTANT - This has to be a single line, after the copy & paste the command
 New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
 ```
-
-# [Power Platform admin center](#tab/PPAC)
-
-### Create an environment
-
-> [!Note]
-> During public preview, this will initially not be visible in Power Platform admin center.  Instead you may provision these new environments using PowerShell on the related tab on this page.  However this will eventually be visible when non-developer sandboxes are supported for finance and operations apps.
-
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane.  The **Environments** page is displayed.
-1. Select **New**. The **New environment** pane is displayed.
-
-    :::image type="content" source="media/tutorial-new-environment1.png" alt-text="Click the New button to create a new environment.":::
-
-1. Enter a name for the environment. Environment names don't need to be unique in Power Platform, unlike in LCS.
-1. Choose your Provisionment region.
-1. From the **Type** list, select **Sandbox**.
-1. Enable the Dataverse data store option, and select **Next**.
-1. On the next screen, enter the Dataverse-required fields.
-1. Select **Enable Dynamics 365 apps** and choose the appropriate template for your license.
-
-    :::image type="content" source="media/new-environment-template.png" alt-text="Enable the Dynamics 365 apps and select the appropriate template for your license.":::
 ---
 
 In the above example, we used the **Finance** environment template.  See above in this article for a table reference of all templates available by license.  Also please note that your environment name must be **globally unique and less than 20 characters** as that derrives the environment URL.  We will be adding up-front validation in the future.
