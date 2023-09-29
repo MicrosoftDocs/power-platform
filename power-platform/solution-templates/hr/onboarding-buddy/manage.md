@@ -13,17 +13,17 @@ ms.subservice: solution-templates
 
 # Get started managing the Onboarding Buddy app
 
-As an Onboarding Buddy program administrator, you can manage the Onboarding Buddy program. In the Onboarding Buddy Admin app you'll be able to:
+As an Onboarding Buddy program administrator, you can manage the Onboarding Buddy program. In the Onboarding Buddy Admin app you are able to:
 
-- Manually add an Onboarder
+- Manually add a new employee
 - Update the configuration
-- Localize the strings to support additional languages
+- Localize the strings to support more languages
 
 ## Manually add an Onboarder
 
-Take these steps in the Onboarding Buddy Admin app to manually add an Onboarder to the program:
+Take these steps in the Onboarding Buddy Admin app to manually add a new employee to the program:
 
-1. Select **Onboarders** on the left panel.
+1. Select **Onboarders** on the left-side menu.
 :::image type="content" source="media/manage/ob-manage-onboarders.png" alt-text="Power Apps screenshot of adding Onboarders.":::
 1. Select **+New** from the top menu.
 1. Fill out the form details.
@@ -32,9 +32,9 @@ Take these steps in the Onboarding Buddy Admin app to manually add an Onboarder 
 
 ## Update the configuration
 
-Take these steps in the Onboarding Buddy Admin app to update the configuration: 
+Take these steps in the Onboarding Buddy Admin app to update the configuration:
 
-1. Select **Configurations** on the left panel.
+1. Select **Configurations** on the left-side menu.
 1. Select the existing record (there should only be a single record in this table).
 1. Select **Edit**.
 :::image type="content" source="media/manage/ob-manage-configure.png" alt-text="Power Apps screenshot of updating configurations.":::
@@ -43,13 +43,13 @@ Take these steps in the Onboarding Buddy Admin app to update the configuration:
 
 ## Support additional languages
 
-Take these steps in the Onboarding Buddy Admin app to localize the strings to support additional languages:
+Take these steps in the Onboarding Buddy Admin app to localize the strings to support more languages:
 
-1. Select **Employee Experience Localizations** on the left panel.
+1. Select **Employee Experience Localizations** on the left-side menu.
 1. Select **+New**.
 1. Fill out the form.
-    1. **English Value**. The value in the app that you want to replace.
-    1. **Language**  The language you are translating into.
+    1. **English Value**. The value in the app that you replace.
+    1. **Language**  The language you're translating into.
     1. **Localized Value**. The translated string you set up.
     1. **String Type**. The filter you can apply. It's optional but can help you sort and manage localized strings at a later date.
 1. Select **Save & Close**.

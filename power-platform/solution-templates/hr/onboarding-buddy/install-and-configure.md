@@ -13,7 +13,7 @@ ms.subservice: solution-templates
 
 # Install and configure the Onboarding Buddy template
 
-As a Power Platform admin, you'll access, import, install, configure, and deploy the Onboarding Buddy template for your organization.
+As a Power Platform admin, you access, import, install, configure, and deploy the Onboarding Buddy template for your organization.
 
 > [!IMPORTANT]
 > Two solutions will always be installed in your environment:
@@ -34,7 +34,7 @@ The installation requires you to set up four new connections for the Onboarding 
 - [Office 365 Users connector](/connectors/office365users/)
 - [Office 365 Groups connector](/connectors/office365groups/)
 
-To create the connections in advance, go to **Connections**, and select **+ New Connection** on the left panel. Search for each connection listed in this section and create a connection.
+To create the connections in advance, go to **Connections**, and select **+ New Connection** on the left-side menu. Search for each connection listed in this section and create a connection.
 
 ## Step 2: Install from AppSource
 
@@ -43,7 +43,7 @@ Access the template on AppSource and install the template's solutions into a Pow
 - Go to the Onboarding Buddy template in AppSource and select **Get it now**.
 - Select the environment that you want to install the template into.
 - Agree to the Terms and Privacy Statements by checking the boxes.
-- Select **Install**. You'll be taken to a screen where you can view the installation status. Once the installation is complete, the status updates to *Installed*.
+- Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status updates to *Installed*.
 
 > [!TIP]
 > You can log your questions and get support for the Onboarding Buddy template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
@@ -52,13 +52,13 @@ Access the template on AppSource and install the template's solutions into a Pow
 
 The Onboarding Buddy solution contains two security roles:
 
-- **Administrator**. Assign this role to users who need access to the model-driven app administrative app and will have access to manage all reference data and see all records.
+- **Administrator**. Assign this role to users who need access to the model-driven administrative app to manage all reference data and see all records.
 - **User**. Assign this role to all users of the Onboarding Buddy application.
 
 Roles can be assigned from the admin portal.
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Environments** on the left panel and select the environment where the solution is installed.  
+1. Select **Environments** on the left-side menu and select the environment where the solution is installed.  
 1. Select **Users** > **See all**.
 1. Select the user(s).
 1. Select **Manage security roles** and select the appropriate roles for each user.
@@ -75,7 +75,7 @@ More information:
 
 ## Step 4: Set cloud flows to *on*
 
-Open the newly installed Awards and Recognition solution and verify that the cloud flow is set to the *on* status. If not, turn it on.
+Open the newly installed Onboarding Buddy solutions and verify that the cloud flows are set to the *on* status. If not, turn the status to *on*.
 
 1. Select the cloud flow that is turned off.
 1. Select **Turn on** located in the toolbar.
@@ -103,23 +103,23 @@ Open the Onboarding Buddy Admin App and select **Configurations** to set the par
 :::image type="content" source="media/install/ob-install-active-config-record.png" alt-text="Power Apps screen showing active configuration record.":::
 1. There are three program-level settings you can tweak. Set them up with the values you desire.
 
-    - **Days after match to send the first nudge email**. This controls when the first emails go out to the buddy and the onboarder that introduces them to the program and encourages them to engage with each other.
-    - **Days prior to end of match to send the last nudge email**. This controls when the final emails go out to the buddy and the onboarder. You can use this to encourage them to wrap up any final activities.
-    - **Length of Buddy Match Period (days)**. This controls how long the match lasts.
+    - **Days after match to send the first nudge email** - Controls when the first emails go out to the Buddies and Onboarders. You can use the initial emails to  introduces people to the program and encourages matches to engage with each other.
+    - **Days prior to end of match to send the last nudge email** - Controls when the final emails go out to the Buddies and Onboarders. You can use the final emails to encourage matches to wrap up any final activities.
+    - **Length of Buddy Match Period (days)** - Controls how long matches last.
     :::image type="content" source="media/install/ob-install-config-match-duration.png" alt-text="Power Apps screen showing new configuration record detailing how long a match lasts.":::
 1. Select **Save**.
 
 ## Step 7: Populate the Onboarders table
 
-For a person to show up in the app as an Onbaorder who can be matched, you must first be enter them into the Onbaorders table.
+For a new employee to show up in the app as an Onbaorder who can be matched, you must first enter them into the Onbaorders table.
 
-The New Onboarders Sync flow is set to run every Saturday. It will automatically import users into the Onboarding table from AAD that have been created in the last week. Initially, though, you may have to populate existing employees that you want to be a part of the program right away.
+The *New Onboarders Sync* flow is set to run every Saturday. It automatically imports new employees set up in AAD in the last week into the Onboarding table. Initially, though, you may have to populate existing employees that you want to be a part of the program right away.
 
 ### Manually run the flow
 
 You can run the New Onboarders Sync flow manually to populate all new employees who join your organization in the last week. Take these steps:
 
-1. Select **Flows** from the left panel in Power Apps.
+1. Select **Flows** on the left-side menu in Power Apps.
 1. Hover over the **New Onboarders Sync** flow and select **Play** (Run).
 :::image type="content" source="media/install/ob-install-onboarders-sync.png" alt-text="Power Apps screen showing Cloud flows.":::
 
@@ -142,12 +142,12 @@ If you have existing employees that you wish to add to the Onboarders table that
 
 ## Step 8: Turn on Auditing
 
-While this is not required, we recommend enabling the audit setting on the system, so it's easy to see who created/updated records in the future.
+While auditing is not required, we recommend enabling the audit setting on the system, so it's easy to see who creates and updates records in the future.
 
 To do this:
 
 1. Go to [Power Platform admin center](https://gcc.admin.powerplatform.microsoft.us/home)
-1. Select **Environments** on the left panel and select the environment where the solution is installed.
+1. Select **Environments** on the left-side menu and select the environment where the solution is installed.
 1. Select **Settings**.
 :::image type="content" source="media/install/ob-install-audit.png" alt-text="Power Platform admin center screen showing audit logs.":::
 1. Select **Start Auditing**.
