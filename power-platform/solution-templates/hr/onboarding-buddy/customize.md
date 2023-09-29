@@ -41,7 +41,7 @@ You can use the emails to communicate program expectations, link to useful resou
 
 :::image type="content" source="media/customize/ob-customize-emails.png" alt-text="Screenshot of setting up a flow for an email communication.":::
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > The emails are set up as generic communications. It is important that you customize the emails to suit your program's goals.
 
 ### Edit emails

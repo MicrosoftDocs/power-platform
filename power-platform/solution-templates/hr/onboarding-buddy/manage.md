@@ -13,7 +13,7 @@ ms.subservice: solution-templates
 
 # Get started managing the Onboarding Buddy app
 
-As an Onboarding Buddy program administrator, you can manage the Onboarding Buddy program. In the Onboarding Buddy Admin app you are able to:
+As an Onboarding Buddy program administrator, you can manage the Onboarding Buddy program. In the Onboarding Buddy Admin app, you are able to:
 
 - Manually add a new employee
 - Update the configuration
@@ -24,10 +24,10 @@ As an Onboarding Buddy program administrator, you can manage the Onboarding Budd
 Take these steps in the Onboarding Buddy Admin app to manually add a new employee to the program:
 
 1. Select **Onboarders** on the left-side menu.
-:::image type="content" source="media/manage/ob-manage-onboarders.png" alt-text="Power Apps screenshot of adding Onboarders.":::
+:::image type="content" source="media/manage/ob-manage-onboarders.png" alt-text="Power Apps screenshot of adding new employees.":::
 1. Select **+New** from the top menu.
 1. Fill out the form details.
-1. :::image type="content" source="media/manage/ob-manage-onboarder-details.png" alt-text="Power Apps screenshot Onboarders details screen.":::
+1. :::image type="content" source="media/manage/ob-manage-onboarder-details.png" alt-text="Power Apps screenshot of the details screen.":::
 1. Select **Save & Close**.
 
 ## Update the configuration
@@ -38,7 +38,7 @@ Take these steps in the Onboarding Buddy Admin app to update the configuration:
 1. Select the existing record (there should only be a single record in this table).
 1. Select **Edit**.
 :::image type="content" source="media/manage/ob-manage-configure.png" alt-text="Power Apps screenshot of updating configurations.":::
-1. Edit and select **Save & Close**.
+1. *Edit* and select **Save & Close**.
 :::image type="content" source="media/manage/ob-manage-new-config.png" alt-text="Power Apps screenshot of editing the configuration.":::
 
 ## Support additional languages
