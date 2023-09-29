@@ -41,7 +41,8 @@ For a delegated deployment with a service principal, follow these steps.
     ApprovalStatus: 20 = approved, 30 = rejected
     ApprovalProperties: Insert Dynamic Content. Admin information accessible from within the pipelines host.
 
-    > [!IMPORTANT] The UpdateApprovalStatus action must use the service principal’s connection. You’ll need a client ID and secret.
+    > [!IMPORTANT]
+    > The UpdateApprovalStatus action must use the service principal’s connection. You’ll need a client ID and secret.
     > 
     > :::image type="content" source="media/spn-connection.png" alt-text="Connect with service principal":::
 1. Save, and then test the pipeline.

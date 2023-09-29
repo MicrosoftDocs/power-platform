@@ -59,7 +59,7 @@ Triggers are available in Power Automate cloud flows within the pipelines host e
 - **Catalog**: Microsoft Dataverse Common
 - **Category**: Power Platform Pipelines
 - **Table name**: (none)
-- **Action name**: Select an option from the list. Pipelines provide the following custom actions that produce a trigger in Power Automate cloud flows. Approval and OnPreDeployment* related events only trigger when the corresponding extension is enabled. 
+- **Action name**: Select an option from the list. Pipelines provide the following custom actions that produce a trigger in Power Automate cloud flows. Approval and OnPreDeployment* related events only trigger when the corresponding extension is enabled.  
   `OnDeploymentRequested`  
   `OnApprovalStarted`  
   `OnApprovalCompleted`  
