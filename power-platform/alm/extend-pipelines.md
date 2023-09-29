@@ -15,7 +15,7 @@ Pipelines can be custom tailored to serve the unique needs of an organization. F
 
 > [!IMPORTANT]
 > - New pipelines extensions are being gradually rolled out across regions and might not be available yet in your region.
-> - Existing pipelines customers may need to update the Power Platform pipelines application to enable new features. You can manage the updates within the Power Platform administrator center.
+> - Existing pipelines customers may need to update the Power Platform pipelines application to enable new features. You can manage the updates within the Power Platform admin center.
 
 ## Gated extensions available
 Pipelines deployments progress through multiple pre-defined steps until deployment completion. Gated extensions insert custom steps into the progression where custom business logic can be executed. It's like your own personal train where you're in control of where it stops and whether it continues or not.
@@ -59,7 +59,7 @@ Triggers are available in Power Automate cloud flows within the pipelines host e
 - **Catalog**: Microsoft Dataverse Common
 - **Category**: Power Platform Pipelines
 - **Table name**: (none)
-- **Action name**: Select an option from the list. Pipelines provide the following custom actions that produce a trigger in Power Automate cloud flows. Approval and OnPreDeployment* related events only trigger when the corresponding extension is enabled.  
+- **Action name**: Select an option from the list. Pipelines provide the following custom actions that produce a trigger in Power Automate cloud flows. Approval and OnPreDeployment* related events only trigger when the corresponding extension is enabled.
   `OnDeploymentRequested`  
   `OnApprovalStarted`  
   `OnApprovalCompleted`  
