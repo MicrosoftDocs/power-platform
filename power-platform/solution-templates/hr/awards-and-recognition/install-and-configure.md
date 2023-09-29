@@ -25,14 +25,14 @@ If you want to create the connection in advance, go to **Connections**, and se
 
 ## Step 2: Install from AppSource
 
-You can access the template on AppSource and install into the Power Platform environment that has the Dataverse connector set up..
+You can access the template on AppSource and install into the Power Platform environment that has the Dataverse connector set up.
 
-- Go to the Awards and Recognition solution template in AppSource and select **Get it now**.
-- Select the environment that you want to install the template into.
+1. Go to the Awards and Recognition solution template in AppSource and select **Get it now**.
+1. Select the environment that you want to install the template into.
 
-- Agree to the Terms and Privacy Statements by checking the boxes.
+1. Agree to the Terms and Privacy Statements by checking the boxes.
 
-- Select **Install**. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
+1. Select **Install**. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
 
 > [!TIP]
 > You can log your questions and get support for the Awards and Recognition template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
