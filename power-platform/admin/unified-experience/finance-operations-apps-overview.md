@@ -102,7 +102,7 @@ Below are a set of common questions and their related answers that we have recei
 
 #### I don't know what licenses I have assigned
 
-You can view the licenses assigned to you at [My Account - Subscriptions](https://portal.office.com/account/?ref=MeControl#subscriptions). To see which templates this allows you to deploy, visit [Tutorial: Provision a new environment with an ERP-based template (preview)](/tutorial-deploy-new-environment-with-ERP-template.md#knowing-which-template-to-provision).
+You can view the licenses assigned to you at [My Account - Subscriptions](https://portal.office.com/account/?ref=MeControl#subscriptions). To see which templates this allows you to deploy, visit [Tutorial: Provision a new environment with an ERP-based template (preview)](tutorial-deploy-new-environment-with-ERP-template.md#knowing-which-template-to-provision).
 
 #### I don't have any available capacity
 
