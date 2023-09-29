@@ -4,7 +4,7 @@ description: Learn about activating the features of Managed Environments.
 author: rsantos00
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 09/27/2023
+ms.date: 09/29/2023
 ms.author: rstand
 ms.reviewer: sericks
 ms.custom: bap-template
@@ -19,9 +19,9 @@ This article addresses the key features of Managed Environments and how organiza
 
 ## Managed Environments overview
 
-Managed Environments is a suite of premium governance capabilities that allows IT administrators to manage Power Platform at scale with more control, more visibility, and less effort. Admins can use Managed Environments with any type of environment. Certain features can be configured upon enabling a Managed Environment. Once an environment is managed, it unlocks additional features across the Power Platform. 
+Managed Environments is a suite of premium governance capabilities that allows IT administrators to manage Power Platform at scale with more control, more visibility, and less effort. Admins can use Managed Environments with any type of environment. Certain features can be configured upon enabling a Managed Environment. Once an environment is managed, it unlocks more features across the Power Platform. 
 
-You will learn about each of the features and examples based on organizations that have activated Managed Environments, including:
+You'll learn about each of the features and examples based on organizations that have activated Managed Environments, including:
 
  - **Pipelines in Power Platform** bring application lifecycle management (AML) automation to streamline development processes with reduced effort.
  - **Maker welcome content** provides customized welcome message to help makers in the organization get started with Power Apps.
@@ -48,11 +48,11 @@ Pipelines in Power Platform aim to democratize application lifecycle management 
 
 It's common in organizations for IT administrators or members of the governance team to provide support on how solutions should be deployed to different environments, administrators can centrally manage and govern pipelines, providing makers with intuitive user experiences and easily deploying their solutions.
 
-To deploye a solution from one environment to another via pipelines, typically specified as the _source environment_ and _target environment_, you'll need to identify which environments will be part of the pipelines. The most common pipeline is composed of Dev/Test/Production environments, or Dev/Validation/Test/Production. Here's an example of a pipeline:
+To deploy a solution from one environment to another via pipelines, typically specified as the _source environment_ and _target environment_, you need to identify which environments are part of the pipelines. The most common pipeline is composed of Dev/Test/Production environments, or Dev/Validation/Test/Production. Here's an example of a pipeline:
 
-:::image type="content" source="../media/mae/image1.png" alt-text="A screenshot of the Pipelines screen in Power Apps.":::
+:::image type="content" source="media/mae/image1.png" alt-text="A screenshot of the Pipelines screen in Power Apps.":::
 
->[!Note]
+> [!NOTE]
 > Is recomended to enable all environments, within a pipeline, as Managed Environments but the **Developer type environment are optional** and can be used in the pipeline without being activated as Managed Environment. 
 
 It's a best practice for personal productivity solutions to be developed in a personal, development environment, which then can be deployed to target environment via pipelines. You may also consider settings up pipelines when creating new environments to facilitate ALM for citizen-led and pro-dev-led projects at scale. 
@@ -62,12 +62,12 @@ It's a best practice for personal productivity solutions to be developed in a pe
 
 In Managed Environments, admins can provide customized, welcome content to help their makers get started with [Power Apps](https://make.powerapps.com/). More information: [Enable maker welcome content](../../admin/welcome-content.md).
 
-A customized welcome content allows admins to inform makers about the company rules and what can be done in each environment or group of environments when first time a maker visit [make.powerapps.com](https://make.powerapps.com). Here are some suggestions on how your organization could use the welcome message for each of the environment types.
+A customized welcome content allows admins to inform makers about the company rules and what can be done in each environment or group of environments when first time a maker visit [Power Apps](https://make.powerapps.com). Here are some suggestions on how your organization could use the welcome message for each of the environment types.
 
 #### Default environment 
 The default environment is often the most restricted environment with DLPs and sharing controls. To ensure your makers know about the possible limitations, a good starting point is to create a customized welcome message and include a link to your organization’s policy website or document.
 
-For example, admins may want to inform makers that the default environment is intended to be used only for Office 365 related features, not use production applications in the default environment, and the canvas app can only be shared with limited number of individuals. Below illustrates howt to configure such customized message in the Managed Environment setting pane:
+For example, admins may want to inform makers that the default environment is intended to be used only for Office 365 related features, not to use production applications in the default environment, and the canvas app should only be shared with limited number of individuals. Below illustrates how to configure such customized message in the Managed Environment setting pane:
 
 ```markdown
 [Contoso](https://i.ibb.co/SNSTCx3/something.png)
@@ -84,36 +84,38 @@ If you are unsure about if you are in the right place? Follow [this guidance**](
 ```
 In addition, a **Learn more** link can also be customized: 
 
-:::image type="content" source="../media/mae/image3.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up.":::
+:::image type="content" source="media/mae/image3.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up.":::
 
-Based on the configuration example above, here's what the maker welcome message will look like:
+Based on the configuration example mentioned above, here's what the maker welcome message looks like:
 
-:::image type="content" source="../media/mae/image2.png" alt-text="A screenshot of the Welcome message in Power Apps.":::
+:::image type="content" source="media/mae/image2.png" alt-text="A screenshot of the Welcome message in Power Apps.":::
 
 
 #### Production environments
 
-Production environments are typically used for deploying solutions that supports enterprise applications and team productivity applications. In this case, it's important to have compliant apps and data. Since you need to control which users have access to the production environment, it's beneficial to inform the user if you have a policy of refreshing access. According to the use case, you might allow more connectors and increase the sharing limits. Depending on your support team, you can also use this message to inform the right team to support the makers.
+Production environments are typically used for deploying solutions that support enterprise applications and team productivity applications. In this case, it's important to have compliant apps and data. Since you need to control which users have access to the production environment, it's beneficial to inform the user if you have a policy of refreshing access. According to the use case, you might allow more connectors and increase the sharing limits. Depending on your support team, you can also use this message to inform the right team to support the makers.
 
-A proposed message for an environment created for the Finance department in Europe could be the following.
+An example of a proposed message for an environment created for the Finance department in Europe could be:
 
-:::image type="content" source="../media/mae/image4.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up for a production environment.":::
+:::image type="content" source="media/mae/image4.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up for a production environment.":::
 
 #### Developer environments
 
 Developer environments are often used for developers to build their solutions. Since the developers are working on the application, it isn't in production and the scalability is limited. Normally, the environment has more relaxed DLPs due to the nature of the makers. To avoid the developers using this type of environment with production assets, limit the sharing capabilities and use a specific DLP for this type of environment. An example of a maker onboarding message might look like the following image.
 
-:::image type="content" source="../media/mae/image5.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up for a developer environment.":::
+:::image type="content" source="media/mae/image5.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up for a developer environment.":::
 
 #### Sandbox Environments
 
-Typically sandbox environments are used when testing a solution. Due to some tests involving a significant number of users, these environments scale to a certain point and have more capacity than a developer environment. It's also common to use a sandbox environment as a development environment, which is normally shared by multiple developers. An example of a maker onboarding message is shown in the image below.
+Typically sandbox environments are used when testing a solution. Due to some tests involving a significant number of users, these environments scale to a certain point and have more capacity than a developer environment. It's also common to use a sandbox environment as a development environment, which is typically shared by multiple developers.
 
-:::image type="content" source="../media/mae/image6.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up for a sandbox environment.":::
+An example of a maker onboarding message is shown in the following image.
+
+:::image type="content" source="media/mae/image6.png" alt-text="A screenshot of Power Apps showing the Getting Started pop-up for a sandbox environment.":::
 
 Now that you have seen some examples of how to use the welcome message, it's important that you adapt, based on your organizational needs.
 
->[!TIP]
+> [!TIP]
 > Using images that identify the environment type or owners is very good for user adoption and error prevention.
 
 ### Limit sharing
@@ -124,9 +126,9 @@ An important aspect of limit sharing is the fact that the limit only applies to 
 
 There are different situations that you need to control how makers share their apps across your organization. Here are the most common scenarios and reasons:
 
-- **Limit app sharing in a personal productivity environment.** If you have an environment where users can create apps for their own work, apps without global business value, or apps without support from IT, it's important that you limit those apps for only the makers and not share those apps across the organization. You may have apps that start as personal productivity apps, but later become popular and are transformed into widely used apps. In this scenario, be mindful about the limit you configure. Between 5 and 50 users is a common limitation.
+- **Limit app sharing in a personal productivity environment.** If you have an environment where users can create apps for their own work, apps without global business value, or apps without support from IT, it's important that you limit those apps for only the makers and not share those apps across the organization. You may have apps that start as personal productivity apps, but later become popular and are transformed into widely used apps. In this scenario, be mindful about the limit you configure. A common limitation is between 5 and 50 users.
 
-- **Avoid apps being shared with security groups or everyone.** By sharing with security groups, you're allowing all members of the group to run the app. For instance, if you are in a developer environment, you might want to make sure that the developer is in control of how the apps are shared, instead of relying on membership of the group. In other scenarios, you might want to limit the sharing to everyone. In organizations, where the sharing of apps is regulated by a Security Group that is managed by the IT department, it may be advisable to restrict makers from sharing with Security Groups other than those that have been pre-configured by the IT department.
+- **Avoid apps being shared with security groups or everyone.** By sharing with security groups, you're allowing all members of the group to run the app. For instance, if you are in a developer environment, you might want to make sure that the developer is in control of how the apps are shared, instead of relying on membership of the group. In other scenarios, you might want to limit the sharing to everyone. In organizations, where the sharing of apps is regulated by a Security Group that is managed by the IT department, it may be advisable to restrict makers from sharing with Security Groups other than those that have been preconfigured by the IT department.
 
 Here are common scenarios of sharing limits in the different environment types:
 
@@ -156,13 +158,13 @@ In Managed Environments, admins can easily identify all the data policies that a
 
 With a well-planned environment strategy, it's imperative to have a DLP strategy in place. DLPs dictate which connectors are available and which ones can be used with each other. It's possible for multiple DLPs to be active in the same environment, but the most restrictive DLP will take precedence. For example, if one DLP allows the use of connector A and another DLP blocks the use of connector A, the connector is blocked.
 
-It is common for environments to have multiple DLPs applied, particularly in scenarios where DLPs are applied by region, country, department, or team within the same environment. It's crucial to have a clear visualization of all DLPs applied to a specific environment, and this can be achieved by ensuring that the environment is managed. 
+It's common for environments to have multiple DLPs applied, particularly in scenarios where DLPs are applied by region, country, department, or team within the same environment. It's crucial to have a clear visualization of all DLPs applied to a specific environment, and this can be achieved by ensuring that the environment is managed. 
 
 ### Solution checker
 
 In Managed Environments, admins can easily enforce rich static analysis checks on your solutions against a set of best practice rules and identify problematic patterns. More information: [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker)
 
-Users with permission to install solutions in environments, such as those with the Environment Maker role, can import solutions using various methods, including manually impoart solution form the maker portal or using pac command line input(CLI). It's common for a Center of Excellence (CoE) team to set up guardrails to reduce the risk of noncompliant solutions in the environment. In organizations with decentralized CoEs, it's often necessary to activate this feature along with sending an email to proactively reach out to makers and offer support.
+Users with permission to install solutions in environments, such as those with the Environment Maker role, can import solutions using various methods, including manually import solution form the maker portal or using pac command line input(CLI). It's common for a Center of Excellence (CoE) team to set up guardrails to reduce the risk of noncompliant solutions in the environment. In organizations with decentralized CoEs, it's often necessary to activate this feature along with sending an email to proactively reach out to makers and offer support.
 
 This feature allows for different levels of control, including None, Warn, and Block. Each level allows administrators to configure the impact of the check, whether it's to provide a warning but allow the import, or to block the import altogether, while also providing information to the maker about the result of the import.
 
@@ -187,7 +189,7 @@ When this feature is enabled, the IP address is being analyzed in real time and 
 
 Organizations tend to activate IP firewall and configure it to allow connections from their office premises and to restrict connections coming from outside. The best practice is to use it together with conditional access to avoid inconsistent policies and dependencies.
 
-> [!Tip]
+> [!TIP]
 > If you've misconfigured these policies, you might need to request assistance from Microsoft Support. You might limit access in Power Apps from users outside of the allowed IPs and limit Power Automate actions that have been previously allowed.
 
 ### IP cookie binding (block cookie reply attacks)
@@ -203,7 +205,7 @@ The user is asked to reauthenticate in the following scenarios:
 - When the Internet connection is reset by the Internet service provider
 - When a router is reset or restarted
 
-Organizations enable the IP cookie-based binding in cases where they want to restrict the network traffic to come only from one IP address for the user, and in case of a change, it reauthenticates the user with the new IP address (let’s say if the user connects to a VPN network).
+Organizations enable the IP cookie-based binding in cases where they want to restrict the network traffic to come only from one IP address for the user, and if there is a change, it reauthenticates the user with the new IP address (let’s say if the user connects to a VPN network).
 
 ### Customer-managed key (CMK)
 
@@ -217,15 +219,15 @@ This feature has been highly anticipated by customers with Dynamics 365 environm
 
 ### Lockbox
 
-Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. However, in rare situations, accessing limited customer data is required for investigation purposes. Microsoft has a multi-layered internal approval process to grant access to customer data in these cases. Customers that are following compliance and regulatory requirement will need extra control over who or when Microsoft can access their data. With Power Platform Customer Lockbox, customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. That gives full control over the data access to the customer.
+Most operations, support, and troubleshooting performed by Microsoft personnel (including sub-processors) don't require access to customer data. However, in rare situations, accessing limited customer data is required for investigation purposes. Microsoft has a multi-layered internal approval process to grant access to customer data in these cases. Customers that are following compliance and regulatory requirement need extra control over who or when Microsoft can access their data. With Power Platform Customer Lockbox, customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. That gives full control over the data access to the customer.
 
-With Lockbox activated, when data access is required for a ticket resolution, the Global administrators and Power Platform administrators receive a Lockbox request for approval. After the approval, the Microsoft personnel will have access to the data within the boundary of the environment that the request came for. Access is time bound and it is not automatically renewed - every time data access is needed, a new Lockbox request is sent to the administrators. All updates to Lockbox requests are automatically recorded in the audit log. More information:[Lockbox in Power Platform](/power-platform/admin/about-lockbox)
+With Lockbox activated, when data access is required for a ticket resolution, the Global administrators and Power Platform administrators receive a Lockbox request for approval. After the approval, the Microsoft personnel will have access to the data within the boundary of the environment that the request came for. Access is time bound and it isn't automatically renewed - every time data access is needed, a new Lockbox request is sent to the administrators. All updates to Lockbox requests are automatically recorded in the audit log. More information:[Lockbox in Power Platform](/power-platform/admin/about-lockbox)
 
 ### Extended backup (7 to 28 days)
 
 It's important to protect your data in Power Platform and Dataverse and provide continuous availability of service. If you use Power Platform to create production environments that have a database and Dynamics 365 applications enabled, you can benefit from the system back-ups that are automatically performed for those environments. The system back-ups are stored for up to 28 days. Therefore, you can restore your environment if there are any issues.
 
-For production environments that don't have Dynamics 365 applications enabled, the default, back-up retention period is only 7 days. However, for Managed Environments, admins can use PowerShell to change the setting and extend the back-up retention period. The available options are 7, 14, 21, and 28 days. More information: [Back up and restore environments](/power-platform/admin/backup-restore-environments)
+For production environments that don't have Dynamics 365 applications enabled, the default, back-up retention period is only seven days. However, for Managed Environments, admins can use PowerShell to change the setting and extend the back-up retention period. The available options are 7, 14, 21, and 28 days. More information: [Back up and restore environments](/power-platform/admin/backup-restore-environments)
 
 The ability to change the back-up retention period is useful for Managed Environments that don't have Dynamics 365 applications enabled. Organizations are using this extension to retain the back-up for a longer period, getting more flexibility and security for their data. It also helps with accidental data deletion scenarios or restores the system after a complex deployment that failed.
 
@@ -241,7 +243,7 @@ Power Automate allows you to create and enforce DLP policies that classify deskt
 
 By default, action groups for desktop flows don’t appear when a DLP policy is being created. The admin needs to activate the **Desktop flows actions in DLP** tenant setting in the Power Platform admin center.
 
-:::image type="content" source="../media/mae/image17.png" alt-text="Screenshot of the DLP for desktop flows setting in the Power Platform admin center.":::
+:::image type="content" source="media/mae/image17.png" alt-text="Screenshot of the DLP for desktop flows setting in the Power Platform admin center.":::
 
 The default environment allows everyone to be a maker and take advantage of desktop flows in Windows. However, it's important to have a DLP strategy for desktop flows, just as one would for cloud flows. This is to ensure compliance with organizational policies. For example, if an organization is blocking the running of scripts on user PCs, it's important to prevent makers from creating desktop flows with a **Run Script** action. Similarly, if an organization is limiting the usage of the HTTP connector, it would be relevant to block similar actions for desktop flows to ensure compliance.
 
@@ -255,15 +257,15 @@ Application Insights can be set up to receive telemetry on diagnostics and perfo
 
 Organizations that have widely used app or Power Automate flows are using this feature to get more control of their assets. The following image shows the count and average duration of each operation for a model-driven app. This information is useful to identify those operations that most affect users.
 
-:::image type="content" source="../media/mae/image18.png" alt-text="Application Insights Performance panel.":::
+:::image type="content" source="media/mae/image18.png" alt-text="Application Insights Performance panel.":::
 
 Organizations with Dataverse environments use the data stream to monitor performance of data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. It also provides data for failures in plug-in and Dataverse SDK operations.
 
-For Power Apps insights, organizations can monitor cloud flow executions. Together with filters, it is possible to detect any flow that is failing and create alerts for notifications.
+For Power Apps insights, organizations can monitor cloud flow executions. Together with filters, it's possible to detect any flow that is failing and create alerts for notifications.
 
 The following example shows how to create a custom alert to filter for a specific cloud flow’s failure. For more examples, see [Set up Application Insights with Power Automate](../../admin/app-insights-cloud-flow.md).
 
-```
+```kusto
 let myEnvironmentId = **'Insert your environment ID here**;
 let myFlowId = **Insert your flow ID here** ';
 requests
@@ -273,7 +275,7 @@ requests
 | where customDimensions ['environmentId'] == myEnvironmentId
 | where customDimensions ['resourceId'] == myFlowId
 | where success == false
-```
+``````
 
 ### Catalog in Power Platform
 
@@ -293,7 +295,7 @@ Organizations that encourage developers and makers to build and share components
 
 ## Default environment routing
 
-Default environment routing is a premium, governance feature. This feature allows Power Platform admins to automatically direct *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. Default environment routing offers new makers a personal, safe space to build with Microsoft Dataverse, without the fear of others accessing their apps or data. More information: [Default environment routing](/power-platform/admin/default-environment-routing.md)
+Default environment routing is a premium, governance feature. This feature allows Power Platform admins to automatically direct *new makers* into their own, personal developer environments when they visit [Power Apps](https://make.powerapps.com) for the first time. Default environment routing offers new makers a personal, safe space to build with Microsoft Dataverse, without the fear of others accessing their apps or data. More information: [Default environment routing](/power-platform/admin/default-environment-routing)
 
 ## Considerations for Managed Environments
 
@@ -389,5 +391,7 @@ The following table offers a simple comparison between features of Managed Envir
 
 ## Conclusion
 
-Managed Environments with premium governance capabilities stands as a pivotal solution for IT admins tasked with managing and governing at scale. By providing a robust suite of tools and controls, it empowers governance teams in the organizations to maintain a delicate balance between innovation and security. With granular access controls, streamlined solution deployment, and policy enforcement, Managed Environments offer the foundation for organizations to confidently harness the full potential of the Power Platform while ensuring compliance, data integrity, and optimal performance. In an era where data governance is paramount, these capabilities elevate the platform to be a cornerstone in modern enterprise IT strategies, fostering efficiency and peace of mind for administrators and stakeholders alike. 
+Managed Environments with premium governance capabilities stand as a pivotal solution for IT admins tasked with managing and governing at scale. By providing a robust suite of tools and controls, it empowers governance teams in the organizations to maintain a delicate balance between innovation and security. With granular access controls, streamlined solution deployment, and policy enforcement, Managed Environments offer the foundation for organizations to confidently harness the full potential of the Power Platform while ensuring compliance, data integrity, and optimal performance. In an era where data governance is paramount, these capabilities elevate the platform to be a cornerstone in modern enterprise IT strategies, fostering efficiency and peace of mind for administrators and stakeholders alike. 
+
+### See also
 
