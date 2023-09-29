@@ -17,7 +17,7 @@ There are three kinds of users who interact with the Onboarding Buddy app in som
 
 - **Manager**. As a manager, you use the Onboarding Buddy app to match available Buddies with Onboarders within teams.
 - **Buddy**. As a Buddy, you use the app to sign up as a Buddy and receive emails throughout the program.
-- **Onboarder**. As an Onboarder, you are set up in the program to get matched and receive emails but you do not use the app directly.
+- **Onboarder**. As an Onboarder, you are set up in the program to get matched and receive emails, but you do not use the app directly.
 
 > [!NOTE]
 > There are two admin roles that may also directly use the Onboarding Buddy app even though their primary functions are to configure and manage the app.
@@ -27,9 +27,9 @@ There are three kinds of users who interact with the Onboarding Buddy app in som
 
 ## Use the Onboarding Buddy app as a Buddy
 
-A Buddy is just any employee who wants to participate and make themselves available as someone who can be matched to Onboarders to help them orientate and onboard successfully. They will use the Onboarding Buddy canvas app to do the following:
+A Buddy is an employee who wants to make themselves available as someone who can be matched to Onboarders. Buddies help the Onboarders orientate and onboard successfully. Buddies use the Onboarding Buddy canvas app to:
 
-- Sign up to be a buddy.
+- Sign up to be a Buddy.
 - Update their Buddy profile.
 
 ### Sign up to be a Buddy
@@ -53,7 +53,7 @@ Update your Buddy profile in the Onboarding Buddy app.
 
 ## Match Onboarders to Buddies
 
-As a manager, you are responsible for matching Onboarders with Buddies. Use the Onboarding Buddy canvas app to:
+As a manager, you're responsible for matching Onboarders with Buddies. Use the Onboarding Buddy canvas app to:
 
 - View and match Onboarders in your team who need to be matched.
 - View Onboarders in your team who are currently matched for onboarding.
@@ -61,11 +61,11 @@ As a manager, you are responsible for matching Onboarders with Buddies. Use the 
 
 ### View and match Onboarders to Buddies
 
-As a manager, be sure to go through the Buddy sign-up process. Once you do that, you can view and match Onboarders in the Onboarding Buddy app.
+As a manager, you'll need to also go through the Buddy sign-up process. Once you do that, you can view and match Onboarders in the Onboarding Buddy app.
 
 1. In the *Sign up to be a Buddy* section, you'll see a button labeled *Match Buddies*.
-1. Select **Match Buddies**—it will take you to the Onboarders screen where you can view all your employees who need to be onboarded.
-1. Select the Onboarder you wish to match. This will take you to the matching screen.
+1. Select **Match Buddies**—it takes you to the Onboarders screen where you'll view all your employees who need to be onboarded.
+1. Select the Onboarder you wish to match. This takes you to the matching screen.
 1. Select the Buddy you wish to match to the Onboarder and review their profile to confirm it's a good match.
 1. Select **Match**.
 :::image type="content" source="media/use/ob-use-match.png" alt-text="Screenshots of the Onboarding Buddy app's profile matching screens.":::
