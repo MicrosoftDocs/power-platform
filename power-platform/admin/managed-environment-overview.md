@@ -18,11 +18,11 @@ search.audienceType:
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2206011 and 2211534 -->
 
-Managed Environments is a suite of premium capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment.
+Managed Environments is a suite of premium capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment. Certain features can be configured upon enabling a Managed Environment. Once an environment is managed, it unlocks additional features across the Power Platform. 
 
 [Learn how to enable Managed Environments](managed-environment-enable.md).
 
-Managed Environments includes but not limited to the folloiwng features: 
+A Managed Environments encompasses, but not limited to, the folloiwng features: 
 
 - [Limit sharing](managed-environment-sharing-limits.md)
 - [Weekly usage insights](managed-environment-usage-insights.md)
