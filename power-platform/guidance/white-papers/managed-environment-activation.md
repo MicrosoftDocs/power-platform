@@ -53,7 +53,7 @@ To deploye a solution from one environment to another via pipelines, typically s
 :::image type="content" source="../media/mae/image1.png" alt-text="A screenshot of the Pipelines screen in Power Apps.":::
 
 >[!Note]
-> Be sure to enable all environments **excpet the Developer type environment** within a pipeline as Managed Environments. 
+> Is recomended to enable all environments, within a pipeline, as Managed Environments but the **Developer type environment are optional** and can be used in the pipeline without being activated as Managed Environment. 
 
 It's a best practice for personal productivity solutions to be developed in a personal, development environment, which then can be deployed to target environment via pipelines. You may also consider settings up pipelines when creating new environments to facilitate ALM for citizen-led and pro-dev-led projects at scale. 
 
