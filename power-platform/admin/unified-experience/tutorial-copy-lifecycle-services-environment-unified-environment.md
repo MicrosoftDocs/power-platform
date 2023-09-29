@@ -25,6 +25,11 @@ In this tutorial, you'll learn how to:
 
 As an example of this scenario, a customer who operates their finance and operations apps environments through the Lifecycle Services (LCS) site today would like to copy their production environment data in to their new, unified, developer environment in Power Platform admin center.
 
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
 ## Before you begin
 
 The target environment in this tutorial is always a unified environment that contains finance and operations apps hosted by Microsoft Dataverse.  To learn how to deploy one of these environments, see [Tutorial: Provision a new environment with an ERP-based template (preview)](./tutorial-deploy-new-environment-with-ERP-template.md).
