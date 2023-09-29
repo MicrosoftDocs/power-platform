@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 7/13/2023
+ms.date: 9/18/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac copilot
 
-(Preview) Tools and utilities for copilot scenarios
+Tools and utilities for copilot scenarios
 
 [!INCLUDE [copilot-intro](includes/copilot-intro.md)]
 
@@ -44,14 +44,15 @@ Sends text or prompt to AI Model
 [!INCLUDE [copilot-predict-intro](includes/copilot-predict-intro.md)]
 
 
-### Required Parameters for copilot predict
+### Optional Parameters for copilot predict
 
-#### `--model-id` `-m`
+#### `--model-id` `-id`
 
 AI Builder model Id
 
+#### `--model-name` `-n`
 
-### Optional Parameters for copilot predict
+Full or partial AI Model name
 
 #### `--prompt` `-p`
 

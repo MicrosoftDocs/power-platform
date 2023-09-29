@@ -6,8 +6,8 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/09/2023
 ms.subservice: admin
-author: tjvass
-ms.author: tjvass
+author: StephenRauchPM
+ms.author: stephenrauch
 ms.reviewer: sericks 
 search.audienceType: 
   - admin

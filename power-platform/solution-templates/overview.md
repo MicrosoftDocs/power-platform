@@ -1,6 +1,6 @@
 ---
-title: Overview of solution templates for Power Platform
-description: Learn how Microsoft solution templates for Power Platform empower you to create solutions.
+title: Solution templates for Power Platform
+description: Learn how solution templates for Power Platform can help you build, extend, and deploy solutions quickly.
 author: kaagar
 ms.author: kaagar
 contributors: 
@@ -14,40 +14,54 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# What are solution templates for Power Platform?
+# Solution templates for Power Platform
 
-Solution templates for Power Platform are solutions built on [Microsoft Power Platform](/power-platform/). The solution templates are designed to drive productivity and operational efficiencies within specific lines of business or enterprise-wide. Aligned to specific use cases and outcomes, they accelerate time to value by digitizing new processes or extending upon existing major technology investments, such as an enterprise resource planning (ERP), customer relationship management (CRM), or human resource (HR) systems.
+Solution templates for [Power Platform](/power-platform/) are solutions that serve as starting points for specific use cases and outcomes. They accelerate time to value by allowing you to quickly digitize new processes or extend your technology investments in enterprise resource planning (ERP), customer relationship management (CRM), and human resource (HR) systems.
 
-Power Platform solution templates require premium licensing and are built for centralized teams to install and extend upon locally. You can organize an internal information technology (IT) and  business operations team or select an external partner team to implement the Power Platform template solution project.
+Solution templates are built for centralized teams to install and extend locally. You can organize an internal information technology (IT) and business operations team or select an external partner team to implement a Power Platform template solution project.
 
-## What are the benefits?
+The solution templates help you:
 
-Implementing enterprise software use cases can be time consuming and expensive. Solution templates for Microsoft Power Platform provide a foundation for you to work with and build upon so you can quickly extend and deploy. In turn, by continuing to use the full potential of Power Platform, the solution templates can be further extended to connect workflows across more systems of record and digitize manually intensive processes.
+- See how your system's data can be easily accessed and organized in a streamlined view in a series of canvas Power Apps.
+- Realize how workflows can be automated by Power Automate cloud flows operating behind the scenes.
 
-The solution templates enable you to:
+Additionally, you can:
 
-- **Time to Value**
-  - Remove much of the upfront investments needed in traditional enterprise software development
-  - Reduce sets of resources and skills needed to deploy
-  - Gain new business insights through digitized and connected processes
+- Customize your solutions.
+- Integrate your system of record with other features, applications, and systems.
+- Incorporate other controls over how your users interact with data.
 
-- **Maximize Existing IT Investments**
-  - Continue to drive value out of existing major IT investments like ERP, CRM, and HCM
-  - Maintain systems of record and data sources of truth
+Power Platform solution templates require premium licensing.
+
+## Benefits of solution templates
+
+Implementing enterprise software use cases can be time-consuming and expensive. Solution templates for Power Platform provide a foundation for you to start from. You can use the full potential of Power Platform to extend solution templates, connecting workflows across more systems of record and digitizing manually intensive processes.
+
+Solution templates offer the following benefits:
+
+- **Time to value**
+  - Remove many of the upfront investments needed in traditional enterprise software development.
+  - Reduce sets of resources and skills needed to deploy.
+  - Gain new business insights through digitized and connected processes.
+
+- **Maximize existing IT investments**
+  - Continue to drive value out of existing major IT investments like ERP, CRM, and HR systems.
+  - Maintain systems of record and data sources of truth.
 
 - **Productivity**
-  - Reduce inefficiencies in current manual processes
-  - Connect data across multiple systems of record to complete a workflow
-  - Meet users where they are whether in Teams or other collaborative experiences
+  - Reduce inefficiencies in manual processes.
+  - Connect data across multiple systems of record to complete a workflow.
+  - Meet users where they are, whether in Teams or in other collaborative experiences.
 
 ## Current templates
 
-Learn more about the current template offerings on AppSource. Be sure to check back frequently for new templates that become available across more lines of business (LOB) and organization functions.
+Solution templates are available on Microsoft AppSource. Be sure to check often for new templates that become available for more lines of business and organization functions.
 
-| Line of business | Organization function | Learn documentation                                                                                                         |  Access                                     |
-|------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| **Finance**          | SAP Procurement       | [SAP Procurement](finance/sap-procurement/overview.md) | <https://aka.ms/AccessSAPProcurementTemplate> |
-| **Human resources**  | Employee Kudos        | [Employee Kudos](hr/employee-kudos/overview.md)        | <https://aka.ms/AccessEmployeeKudosTemplate>  |
+| Line of business | Organization function | Learn documentation | Access |
+| --- | --- | --- | --- |
+| Finance | SAP procurement | [SAP procurement](finance/sap-procurement/overview.md) | <https://aka.ms/AccessSAPProcurementTemplate> |
+| Human resources | Employee kudos | [Employee kudos](hr/employee-kudos/overview.md) | <https://aka.ms/AccessEmployeeKudosTemplate> |
+| Human resources | Awards and Recognition | [Awards and Recognition](hr/awards-and-recognition/overview.md) | <https://aka.ms/AccessAwardsandRecognitionTemplate> |
 
 ## Support
 
@@ -57,6 +71,7 @@ You can log your questions and get support for the solution templates at <https:
 
 - [Get started with SAP Procurement solution template](finance/sap-procurement/administer/get-started.md)
 - [Install the Employee Kudos template](hr/employee-kudos/install.md)
+- [Install the Awards and Recognition template](hr/awards-and-recognition/install.md)
 
 ## See also
 
@@ -64,4 +79,8 @@ You can log your questions and get support for the solution templates at <https:
 - [SAP Vendor Management app](finance/sap-procurement/use/vendor-management.md)
 - [SAP Requisition Management app](finance/sap-procurement/use/requisition-management.md)
 - [SAP Purchase Orders Management app](finance/sap-procurement/use/purchase-order-management.md)
+- [SAP Goods Receipt Management app](finance/sap-procurement/use/goods-receipt-management.md)
+- [SAP Vendor Invoice Management app](finance/sap-procurement/use/vendor-invoice-management.md)
+- [SAP Vendor Payment Management app](finance/sap-procurement/use/payment-management.md)
 - [Get started using the Employee Kudos app](hr/employee-kudos/use.md)
+- [Use the Awards and Recognition app](hr/awards-and-recognition/use.md)
