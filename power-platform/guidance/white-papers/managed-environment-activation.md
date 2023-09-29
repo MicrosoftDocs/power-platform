@@ -395,3 +395,4 @@ Managed Environments with premium governance capabilities stand as a pivotal sol
 
 ### See also
 
+[Power Platform white papers](index.md)
