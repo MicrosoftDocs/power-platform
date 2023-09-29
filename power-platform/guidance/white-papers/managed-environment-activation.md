@@ -19,9 +19,9 @@ This article addresses the key features of Managed Environments and how organiza
 
 ## Managed Environments overview
 
-Managed Environments is a suite of premium governance capabilities that allows IT administrators to manage Power Platform at scale with more control, more visibility, and less effort.
+Managed Environments is a suite of premium governance capabilities that allows IT administrators to manage Power Platform at scale with more control, more visibility, and less effort. Admins can use Managed Environments with any type of environment. Certain features can be configured upon enabling a Managed Environment. Once an environment is managed, it unlocks additional features across the Power Platform. 
 
-In this article, you will learn about each of the features and examples based on organizations that have activated Managed Environments, including:
+You will learn about each of the features and examples based on organizations that have activated Managed Environments, including:
 
  - **Pipelines in Power Platform** bring application lifecycle management (AML) automation to streamline development processes with reduced effort.
  - **Maker welcome content** provides customized welcome message to help makers in the organization get started with Power Apps.
@@ -37,7 +37,8 @@ In this article, you will learn about each of the features and examples based on
  - **DLP for desktop flow** governs desktop flow models and individual models actions in Power Automate.
  - **Export data to Azure Application Insights** helps diagnose and troubleshooting issues related to errors and performance.
  - **Catalog in Power Platform** promotes collaboration and productivity via sharing Power Platform artifacts at scale.
-
+ - **Default environment routing** automatically direct new makers into their own personal developer environments. 
+   
 More information: [Enable Managed Environments](/power-platform/admin/managed-environment-enable)
 
 
@@ -61,7 +62,7 @@ It's a best practice for personal productivity solutions to be developed in a pe
 
 In Managed Environments, admins can provide customized, welcome content to help their makers get started with [Power Apps](https://make.powerapps.com/). More information: [Enable maker welcome content](../../admin/welcome-content.md).
 
-A customized welcome content allows admins to inform makers about the company rules and what can be done in each environment or group of environments when first time a maker access the maker portal. Here are some suggestions on how your organization could use the welcome message for each of the environment types.
+A customized welcome content allows admins to inform makers about the company rules and what can be done in each environment or group of environments when first time a maker visit [make.powerapps.com](https://make.powerapps.com). Here are some suggestions on how your organization could use the welcome message for each of the environment types.
 
 #### Default environment 
 The default environment is often the most restricted environment with DLPs and sharing controls. To ensure your makers know about the possible limitations, a good starting point is to create a customized welcome message and include a link to your organization’s policy website or document.
@@ -290,6 +291,10 @@ Organizations are using the catalog in Power Platform to allow developers and ma
 
 Organizations that encourage developers and makers to build and share components and templates on the Power Platform can derive more value from it. Simply building isn't enough. Sharing these artifacts, at scale, can foster communities and support groups that can unlock value from a diverse set of personnel within the organization. Successful organizations adopt a fusion team model where pro-developers, makers, and admins work together to help their fellow employees derive the highest value possible from the platform, by reusing components and templates.
 
+## Default environment routing
+
+Default environment routing is a premium, governance feature. This feature allows Power Platform admins to automatically direct *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. Default environment routing offers new makers a personal, safe space to build with Microsoft Dataverse, without the fear of others accessing their apps or data. More information: [Default environment routing](/power-platform/admin/default-environment-routing.md)
+
 ## Considerations for Managed Environments
 
 Managed Environments are a set of features designed to make governance of the Power Platform easier by giving more control and requiring less effort from admins, which is something that many organizations have been eagerly anticipating. Multiple organizations have their own governance processes that were influenced by the CoE Starter Kit, while others are using the out-of-the-box features of the kit and extending it to meet their specific needs. For organizations using the kit, it's important to maintain an internal process to update it monthly and follow the suggestions presented in the [CoE Starter Kit Office Hours](https://aka.ms/coeofficehours). Power CAT is the team responsible for the CoE Starter Kit, and is community driven, hence not covered with the same service level agreement (SLA) as the licensed products. Customers are advised to interact using the [GitHub site](https://github.com/microsoft/coe-starter-kit/issues) to report bugs, ask questions, or request new features.
@@ -384,6 +389,5 @@ The following table offers a simple comparison between features of Managed Envir
 
 ## Conclusion
 
-In summary, Managed Environments in Power Platform offer a powerful suite of tools for organizations looking to streamline their development processes while ensuring compliance with internal policies and best practices. With features like pipelines, DLP, and governance at scale through the maker Welcome content and Solution checker, organizations can accelerate their professional development while protecting sensitive data and ensuring healthy solutions in the environment. Additionally, the platform offers robust data privacy and security measures through the Customer Managed Key feature and Microsoft's Lockbox feature, as well as extended backup capabilities for continuous availability of service.
+Managed Environments with premium governance capabilities stands as a pivotal solution for IT admins tasked with managing and governing at scale. By providing a robust suite of tools and controls, it empowers governance teams in the organizations to maintain a delicate balance between innovation and security. With granular access controls, streamlined solution deployment, and policy enforcement, Managed Environments offer the foundation for organizations to confidently harness the full potential of the Power Platform while ensuring compliance, data integrity, and optimal performance. In an era where data governance is paramount, these capabilities elevate the platform to be a cornerstone in modern enterprise IT strategies, fostering efficiency and peace of mind for administrators and stakeholders alike. 
 
-Overall, Managed Environments in Power Platform provide a comprehensive solution for organizations looking to democratize application lifecycle management and achieve greater efficiency and compliance in their development processes. With more visibility, control, and less effort in the development process, organizations can make informed decisions about their development processes and ensure that internal policies and best practices are followed. Whether it's accelerating professional development, protecting sensitive data, or ensuring data privacy and security, Managed Environments in Power Platform offer significant value to organizations looking to optimize their development processes and achieve their business goals.
