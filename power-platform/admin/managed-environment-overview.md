@@ -56,6 +56,7 @@ A Managed Environments encompasses, but not limited to, the folloiwng features:
 - [View license consumption (preview)](view-license-consumption-issues.md) 
 - [Tenant settings](tenant-settings.md)
 - [Default environment routing](default-environment-routing.md)
+<!-- - [Activating Managed Environments](../guidance/white-papers/managed-environment-activation.md)-->
 
 
 
