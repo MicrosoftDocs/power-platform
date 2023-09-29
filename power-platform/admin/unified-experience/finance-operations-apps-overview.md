@@ -95,6 +95,19 @@ As part of the preview, there are a few knonw limitations of functionality that 
 - The environment templates don't include Project Operations.  This will soon be resolved.
 - The environment name cannot exceed 20 characters.  This is a limitation on the finance and operations runtime that will soon be removed.
 
+### Frequently asked questions from the public preview
+Below are a set of common questions and their related answers that we have received as part of the public preview.  We will continue to publish these and resolve open items before making the experience generally available.
+
+#### I don't know what licenses I have assigned
+You can view the licenses assigned to you at [My Account - Subscriptions](https://portal.office.com/account/?ref=MeControl#subscriptions).  To see which templates this allows you to deploy, visit [Tutorial: Provision a new environment with an ERP-based template (preview)](/tutorial-deploy-new-environment-with-ERP-template.md#knowing-which-template-to-deploy).
+
+#### I don't have any available capacity
+All Power Platform environments require Dataverse capacity to deploy.  In addition, Finance and Operations apps experiences require both Dataverse and Operations database capacities to be available to deploy.  You can review the [Address a storage capacity deficit](/../finance-operations-storage-capacity.md#address-a-storage-capacity-deficit).
+
+One of the best ways to reduce capacity is to review your sandboxes and see which can be cleaned up or removed.  Microsoft is also building a new type of copy operation in PPAC that will truncate all of the transactional tables during the copy so that the resulting environment is as small as possible without sacrificing critical module configurations or master data.  You can then use Data Import Export Framework (DIXF) to copy over a limited set of transactions for testing purposes.  When this new copy operation is available we will update this FAQ with details on how to utilize it.
+
+#### How do I access SQL for these environments
+Direct SQL access is not available at this time, however Microsoft is working on providing a just-in-time access approach similar to what has been available historicaly via Lifecycle Services.  When this comes available, we will update this FAQ with details on how to utilize it.
 
 ### Related articles
 
