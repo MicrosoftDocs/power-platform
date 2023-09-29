@@ -41,7 +41,8 @@ You can't Provision finance and operations apps in Power Platform unless you hav
 
 You also must have at least 1 gigabyte of available Operations and Dataverse database capacities.  For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
 
-### Knowing which template to Provision
+### Knowing which template to provision
+
 All Dynamics 365 environment templates are associated with their related full user licenses.  This means that the admin user in Power Platform admin center must have a full license assigned to them to be able to create one of these environments, and the same holds true when using tools like PowerShell as well.  Below is a table which shows the mapping between various finance and operations apps licenses and their template details.
 
 | License | Template name | Template ID | Comments |
@@ -53,7 +54,8 @@ All Dynamics 365 environment templates are associated with their related full us
 | Dynamics 365 Commerce| Commerce (preview) | D365_FinOps_Commerce | This is not yet available in the public preview but will be soon.  |
 
 ### Known limitations
-Be sure to check out the latest known limitations available on the overview article [Unified admin experience for finance and operations apps (preview)](/finance-operations-apps-overview.md#known-limitations-during-preview).
+
+Be sure to check out the latest known limitations available on the overview article [Unified admin experience for finance and operations apps (preview)](finance-operations-apps-overview.md#known-limitations-during-preview).
 
 ## Step-by-step provisioning guide
 
