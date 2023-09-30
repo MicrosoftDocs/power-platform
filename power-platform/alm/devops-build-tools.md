@@ -149,7 +149,7 @@ You must add the Application ID as an Application User in the Microsoft Power Pl
 - You can use Power Platform CLI. For example:
 
 ```powershell
-PS C:\>pac admin assign-user -user "adde6d52-9582-4932-a43a-beca5d182301" --role "System administrator" --environment d3fcc479-0122-e7af-9965-bde57f69ee1d --application-user
+PS C:\>pac admin assign-user --user "adde6d52-9582-4932-a43a-beca5d182301" --role "System administrator" --environment d3fcc479-0122-e7af-9965-bde57f69ee1d --application-user
 Connected to... SnDemoDev
 Connected as admin@M365x57236726.onmicrosoft.com
 Successfully assigned user adde6d52-9582-4932-a43a-beca5d182301 to environment d3fcc479-0122-e7af-9965-bde57f69ee1d with security role System Administrator
