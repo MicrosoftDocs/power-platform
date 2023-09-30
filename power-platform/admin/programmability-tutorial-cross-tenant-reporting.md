@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 09/28/2023
+ms.date: 09/29/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -29,6 +29,7 @@ In this tutorial, learn how to:
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - The host name and the data contracts might change during this feature preview period.
+> - For more details about tenant isolation, see [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md).
 
 ## Step 1. Authenticate using Power Platform API
 
