@@ -44,7 +44,7 @@ A language includes the following information:
 |--------------------------------------------------------|---------------|
 | 1025 Arabic                                            | \_CI_AI       |
 | 1026 Bulgarian - Cyrillic dataset                      | \_CI_AI       |
-| 1027 Catalan (Spain)                                   | \_CI_AI       |
+| 1027 Catalan                                           | \_CI_AI       |
 | 1028 Traditional Chinese Taiwan - Stroke 90 dataset    | \_CI_AI       |
 | 1029 Czech                                             | \_CI_AI       |
 | 1030 Danish Norwegian                                  | \_CI_AI       |
