@@ -76,11 +76,11 @@ A language includes the following information:
 | 1062 Latvian                                           | \_CI_AS       |
 | 1063 Lithuanian                                        | \_CI_AS       |
 | 1066 Vietnamese                                        | \_CI_AS       |
-| 1069 Basque (Spain)                                    | \_CI_AS       |
+| 1069 Basque                                            | \_CI_AS       |
 | 1081 Hindi - Latin character dataset                   | \_CI_AS       |
 | 1086 Malay                                             | \_CI_AS       |
 | 1087 Kazakh                                            | \_CI_AS       |
-| 1110 Galician (Spain)                                  | \_CI_AS       |
+| 1110 Galician                                          | \_CI_AS       |
 | 2052 Simplified Chinese (China) - Stroke 90 dataset    | \_CI_AI       |
 | 2070 Portuguese (Portugal)                             | \_CI_AI       |
 | 2074 Serbian - Latin character set                     | \_CI_AS       |
