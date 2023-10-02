@@ -69,6 +69,7 @@ Training can be delivered through various channels. These channels include Techn
 Microsoft Technology Center (MTC) Architects and Microsoft certified partners. In exceptional circumstances, 
 engineering resources like Power CAT may be able to facilitate these sessions. 
 
+|
 |--|--|
 
 |**PVA in a Day is an instructor led, hand’s on 
