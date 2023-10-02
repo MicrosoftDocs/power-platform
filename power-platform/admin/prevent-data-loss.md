@@ -3,7 +3,7 @@ title: "Manage data loss prevention (DLP) policies"
 description: "Learn how to create, edit, and delete data loss prevention (DLP) policies, including the default data group for new connectors."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/20/2023
+ms.date: 10/02/2023
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: jimholtz
@@ -94,7 +94,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 4. (Optional) If necessary, consider enforcing DLP policies on connections. More information: [Enforce DLP policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections)
 
    > [!NOTE]
-   > Connections violating DLP policies will be disabled while connections that don't violate DLP policies will be enabled.
+   >  Enforcing DLP policies will disable existing connections that violate any DLP policies and enable any previously disabled connections that no longer violate any DLP policies.
 
 ## Delete a DLP policy
 
