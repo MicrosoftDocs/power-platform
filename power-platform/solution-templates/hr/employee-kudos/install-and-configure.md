@@ -1,19 +1,19 @@
 ---
-title: Install the Power Platform Employee Kudos solution template
-description: Learn how to install the Employee Kudos solution template for Power Platform.
+title: Install and configure the Employee Kudos template for Power Platform
+description: Learn how to install and configure the Employee Kudos template for Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
-ms.date: 06/06/2023
+ms.date: 09/27/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Install the Employee Kudos template
+# Install and configure the Employee Kudos template
 
-Take the following steps to install the Employee Kudos solution template.
+Take the following steps to install the Employee Kudos template.
 
 ## Step 1: Create connections
 
@@ -25,14 +25,14 @@ Create three new connections with these connectors:
 - [Office 365 Outlook connector](/connectors/office365/)
 - [Office 365 Users connector](/connectors/office365users/)
 
-If you want to create the connections in advance, go to _Connections_, and select **+ New Connection** in the left-side panel. Search for each connection listed in this section and create a connection.
+If you want to create the connections in advance, go to **Connections**, and select **+ New Connection** in the left-side panel. Search for each connection listed in this section and create a connection.
 
 ## Step 2: Install from AppSource
 
-Import the Kudos solution template into the environment.
+Import the Kudos template into the environment.
 
-1. Go to the [Kudos solution template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
-1. Select the environment that you want to install the solution template into.
+1. Go to the [Kudos template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
+1. Select the environment that you want to install the template into.
 
    :::image type="content" source="media/install/appsource-install-template.png" alt-text="Select the environment in which to install the template.":::
 1. Agree to the Terms and Privacy statements by selecting the boxes.
@@ -41,13 +41,13 @@ Import the Kudos solution template into the environment.
 After the installation is complete, the status shows as _Installed_.
 
 > [!TIP]
-> You can log your questions and get support for the Employee Kudos solution template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> You can log your questions and get support for the Employee Kudos template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
 ## Step 3: Create an access team
 
-Access team: Kudos-ReadAccessTeam
+Create an access team called _Kudos-ReadAccessTeam_.
 
-Access teams aren't, technically, a security role as defined in Power Platform, but they play an important part in securing access rights to a Kudos. Kudos records are _owned_ by the recipient but should be readable by the sender's manager and the recipient's manager. The access team enables this by dynamically assigning the sender's manager and recipient's manager _read access_ to that Kudos through a Power Automate flow.
+Access teams aren't, technically, security roles as defined in Power Platform, but they play an important part in securing access rights to a Kudos. Kudos records are _owned_ by the recipient but should be readable by the sender's manager and the recipient's manager. The access team enables this by dynamically assigning the sender's manager and recipient's manager _read access_ to that Kudos through a Power Automate flow.
 
 More information: [Use access teams and owner teams to collaborate and share information](/power-apps/developer/data-platform/use-access-teams-owner-teams-collaborate-share-information)
 
@@ -71,11 +71,10 @@ To create the access team:
    You'll be redirected to the _All Team Templated_ view.
 1. Select **New** on the ribbon.
 1. Create a new record with the following information. Use the same name that the Power Automate flow uses to look up and use the access team.
-    - Name: Kudos-ReadAccessTeam
-        - Use this as the name that the Power Automate flow uses. You can change the name, but if you do, you must also edit the flow.
-    - Entity: Kudo
-    - Description: The team to share with the sender of Kudos and the Kudos recipient's manager.
-1. Set **Access Rights** to **Read**.
+    - Name: **Kudos-ReadAccessTeam** - Use this as the name that the Power Automate flow uses. You can change the name, but if you do, you must also edit the flow.
+    - Entity: **Kudo**
+    - Description: **The team to share with the sender of Kudos and the Kudos recipient's manager**.
+1. Set _Access Rights_ to **Read**.
 1. Select **Save** and close this window.
 
 ## Step 4: Assign security roles to users
@@ -95,19 +94,17 @@ The solution includes three new security roles:
   - This security role grants access to the canvas app, where users can see their own sent and received Kudos and send new ones.
   - Assign this role to regular users who need access to send and receive Kudos.
 
-> [!NOTE]
-> All users must also be assigned the _Basic User_ role in addition to any other roles assigned to them.
-
-Roles can be assigned from the admin center.
+Roles can be assigned from the Power Platform admin center.
 
 1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
-1. Select the **Environment** tab and then select the environment where the solution was installed.
+1. Select **Environment** on the left panel and then select the environment where the solution was installed.
 1. Select **Users** > **See all**.
-1. Select the users, select **Manage security roles**, and then select the appropriate roles.
+1. Select the user(s).
+1. Select **Manage security roles**, and then select the appropriate roles.
 1. Select **Save**.
 
 > [!IMPORTANT]
-> Be sure to also add the **Basic User** security role in addition to other Kudos-specific roles.
+> All users must also be assigned the **Basic User** security role in addition to other Kudos-specific roles.
 
 ## Step 5: Assign _run-only_ access to flows
 
@@ -130,17 +127,21 @@ Follow these steps for each flow:
 
 ## Step 6: Set flow connections
 
-1. Open the Kudos solution template by selecting **Kudos solution template** in the solutions tab.
+1. In Power Apps maker portal, select **Solutions** on the left panel.
+1. Select **Kudos** from your list of solutions.
+1. Select **Cloud Flows**. Two cloud flows require editing:
 
-1. In the _Kudos solution template_, go to _Cloud Flows_. Two cloud flows require editing:
-    - **Kudo app**: Share Kudos with sender, assign to recipient
     - **Kudos app**: Notification email
-1. Edit the _Kudo app_ by taking these steps:
+    - **Kudo app**: Share Kudos with sender, assign to recipient
+1. Edit the _Kudos app_ by taking these steps:
+
     1. Select the flow to open a flow overview page.
     1. Select **Edit** in the upper-left corner.
     1. Select **Continue**.
     1. Select **Save**.
-1. Edit the _Kudos app_ by taking these steps:
+
+1. Edit the _Kudo app_ by taking these steps:
+
     1. Go to _Cloud Flows_ in the Kudos solution.
     1. Select the flow to open a flow overview page.
     1. Select **Edit** in the upper-left corner.
@@ -153,11 +154,11 @@ Follow these steps for each flow:
 
     1. Select **Save** at the bottom of the screen or at the top toolbar.
 
- :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference.":::
+       :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference.":::
 
 ## Step 7: Set cloud flows to _On_
 
-Open the newly installed _Kudos solution template_ and verify that the four cloud flows are set to the _on_ status. If they aren't, turn them on.
+Open the newly installed _Kudos solution_ and verify that the four cloud flows are set to the _on_ status. If they aren't, turn them on.
 
 1. Select the cloud flow that is turned off.
 1. Select **Turn on** on the top toolbar.
@@ -166,13 +167,14 @@ Open the newly installed _Kudos solution template_ and verify that the four clou
 
 Sample data along with installation instructions are available on GitHub at this link: [Kudos Sample Data](https://aka.ms/KudosSampleData)
 
-To create your own badges, refer to [Create Custom Badges](use.md#create-custom-kudos-types).
+To create your own badges, refer to [Create Custom Badges](manage.md#create-custom-kudos-types).
 
 ## Step 9: Share the App
 
-1. In the environment that Kudos is installed in, select **Apps**.
-1. Locate the _Kudos App_. Note: If you didn't install the Kudos solution and it hasn't been shared with you, then you'll have to navigate to the Kudos solution and find the app there.
-1. Select the _three dots_ to the right of the Kudos app and then select **Share**.
+1. Select **Apps** in the environment that Kudos is installed in.
+1. Locate the _Kudos App_.
+1. Select the **three dots** to the right of the Kudos app.
+1. Select **Share**.
 1. Search for and add the users with whom you want to share the app.
     - For users who should be able to edit the app, select the _Co-owner_ box.
     - For regular users of the app, leave that checkbox empty.
@@ -180,6 +182,9 @@ To create your own badges, refer to [Create Custom Badges](use.md#create-custom-
 1. In the _Data permission_ area, you can select roles from a dropdown list. It's next to the Microsoft Dataverse tables that the Kudos app uses. Be sure to select the correct Kudos role (Employee, Manager, Program Admin) along with _Basic User_.
 1. Add an optional email message.
 1. Select **Share**.
+
+> [!NOTE]
+>If you didn't install the Kudos solution and it hasn't been shared with you, then you'll have to navigate to the Kudos solution and find the app there.
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
@@ -198,4 +203,4 @@ To do this:
 
 ## Next steps
 
-[Get started using the Employee Kudos app](use.md)
+[Get started managing the Employee Kudos app](manage.md)
