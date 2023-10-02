@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Data loss prevention example 2 - Block HTTP requests from Power Virtual Agents chatbots
 
-Bot makers in your organization can [extend their Power Virtual Agents (classic) bots with Bot Framework Composer](advanced-bot-framework-composer.md) and use HTTP requests. 
+Bot makers in your organization can make HTTP requests with the [Send HTTP request node](authoring-http-node.md) or by [extending (classic) bots with Bot Framework Composer](advanced-bot-framework-composer.md). 
 
 You can use data loss prevention policies to prevent bot makers from configuring HTTP requests to help prevent data exfiltration.
 
@@ -41,7 +41,23 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
     :::image type="content" source="media/dlp-example-2/update-policy.png" alt-text="Screenshot of the review screen when creating a DLP policy ":::
 
-## Confirm policy enforcement in Power Virtual Agents (classic) 
+## Confirm policy enforcement
+
+# [Web App](#tab/webapp)
+
+You can confirm that this connector is being used in the DLP policy from the Power Virtual Agents.
+
+First, open your bot from the environment where the DLP policy is applied. Go to the authoring canvas, create a new topic, add a **Send HTTP request** node (minimally populating the URL property) and then Save your Topic.
+
+Navigate to the **Publish** page and, if the policy is enforced, you'll see an error (you may need to refresh the page if you do not see the error immediately) indicating that "Your bot may not work as intended right now due to your organization's data loss prevention policies".
+
+:::image type="content" source="media/dlp-example-2/http-node-dlp-error.png" alt-text="Screenshot of the Publish page with an error message indicating a violation with organization DLP policies.":::
+
+You can choose to click the **Download details** button in the error banner to see granular details of the policy violations and to confirm that the HTTP connector is blocked.
+
+:::image type="content" source="media/dlp-example-2/dlp-error-download.png" alt-text="Screenshot of a downloaded excel file showing details of DLP policy violations including HTTP connector.":::
+
+# [Classic](#tab/classic)
 
 You can confirm that this connector is being used in the DLP policy from the Power Virtual Agents (classic) web app.
 

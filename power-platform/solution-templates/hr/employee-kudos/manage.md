@@ -1,6 +1,6 @@
 ---
-title: Use the Employee Kudos app
-description: Get started using the Employee Kudos app.
+title: Manage the Employee Kudos app
+description: Get started managing the Employee Kudos app.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
@@ -11,7 +11,7 @@ ms.service: power-platform
 ms.subservice: solution-templates
 --- 
 
-# Get started using the Employee Kudos app
+# Get started managing the Employee Kudos app
 
 Follow the steps to create custom Kudos *types*, opt out users, and localize the application strings.
 
