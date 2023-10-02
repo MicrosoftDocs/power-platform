@@ -34,12 +34,12 @@ highlightedContent:
   # Card
   - title: Power Virtual Agents training
     itemType: training
-    url: https://powerplatform.microsoft.com/training-workshops/?accordion=1&tab=6
+    url: https://learn.microsoft.com/training/browse/?expanded=power-platform&products=power-virtual-agents
 
   # Card
-  - title: Build bots fast
-    itemType: get-started
-    url: ./nlu-gpt-overview.md
+  - title: Troubleshoot
+    itemType: concept
+    url: ./error-codes.md
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

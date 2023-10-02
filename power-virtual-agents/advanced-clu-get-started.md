@@ -1,5 +1,5 @@
 ---
-title: Get started with conversational language understanding integration (preview)
+title: Get started with conversational language understanding integration
 description: Create bots that use Azure conversational language understanding in Power Virtual Agents.
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
 ms.date: 7/11/2023
@@ -13,9 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Get started with conversational language understanding integration (preview)
-
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Get started with conversational language understanding integration 
 
 This topic includes the step-by-step procedures you need to get started with [conversational language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
 
@@ -46,6 +44,7 @@ Before you begin, make sure that you have your CLU model project name and deploy
    > If you have already enabled a CLU connection, skip to step 4.
 
 3. To create a new connection, from within Power Apps, choose the **Connections** menu, select **...More**, and then search for **Azure Cognitive Service for Language**.
+
 
     :::image type="content" source="media/advanced-clu-integration/clu-image2.png" alt-text="Azure Cognitive Service for Language." border="false":::
 

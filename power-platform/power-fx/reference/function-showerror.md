@@ -25,7 +25,7 @@ Displays a banner message to the user.
 
 ## Description
 
-The **Notify** function displays a banner message to the user at the top of the screen. The notification will remain until the user dismisses it or the timeout expires which defaults to 10 seconds.
+The **Notify** function displays a banner message to the user at the top of the screen. The notification remains until the user dismisses it or the timeout expires which defaults to 10 seconds.
 
 An appropriate color and icon are used depending on the type of the message. The type is specified by the second argument to the function:
 
@@ -45,11 +45,15 @@ Messages are shown both when authoring your app and when end users are using you
 
 **Notify** can be paired with the [**IfError**](function-iferror.md) function to detect and report errors with a custom error message.
 
-Power Apps can also send push notifications using an entirely different mechanism from **Notify**. For more information see [Send a notification in Power Apps](/power-apps/maker/canvas-apps/add-notifications).
+Power Apps can also send push notifications using an entirely different mechanism from **Notify**. For more information, see [Send a notification in Power Apps](/power-apps/maker/canvas-apps/add-notifications).
 
 **Notify** always returns _true_.
 
 Note: This function was previously named **ShowError** when it could only display error messages.
+
+>[!NOTE]
+> Notify can be used in [standalone canvas app](/power-apps/maker/canvas-apps/working-with-formulas), [custom page](/power-apps/maker/model-driven-apps/page-powerfx-in-model-app) and [Power Fx commanding](/power-apps/maker/model-driven-apps/commanding-use-powerfx) experiences. The default values for NotificationType and Timeout vary by the experience its used in. You can specify the values you want set for NotificationType and Timeout by explicitly setting them in your Power Fx expression and these values will be respected regardless of the experience. 
+
 
 ## Syntax
 
@@ -57,7 +61,7 @@ Note: This function was previously named **ShowError** when it could only displa
 
 - _Message_ – Required. Message to display to the user.
 - _NotificationType_ – Optional. Type of the message to display from the table above. The default is **NotificationType.Information**.
-- _Timeout_ – Optional. Number of milliseconds to wait before automatically dismissing the notification. The default is 10 seconds (or 10,000 milliseconds). The notification will be displayed indefinitely with a _Timeout_ of 0.
+- _Timeout_ – Optional. Number of milliseconds to wait before automatically dismissing the notification. The default is 10 seconds (or 10,000 milliseconds). The notification is displayed indefinitely with a _Timeout_ of 0.
 
 ## Examples
 
@@ -73,7 +77,7 @@ Note: This function was previously named **ShowError** when it could only displa
 
 3. Click or press the button.
 
-   Each time the button is clicked, the message **Hello, World** is displayed to the user as informational. It will dismiss automatically in 10 seconds (default timeout) if the user does not dismiss it or press the button again.
+   Each time the button is clicked, the message **Hello, World** is displayed to the user as informational. It dismisses  automatically in 10 seconds (default timeout) if the user doesn't dismiss it or press the button again.
 
    ![In the authoring environment, showing Button.OnSelect calling Notify and displaying the resulting Hello, World message as a blue banner message for the user.](media/function-showerror/hello-world.png)
 
@@ -85,7 +89,7 @@ Note: This function was previously named **ShowError** when it could only displa
 
 5. Click or press the button.
 
-   Now each time the button is clicked, the message **Hello, World** is displayed to the user as an error. It will dismiss automatically in 10 seconds (default timeout) if the user does not dismiss it or press the button again.
+   Now each time the button is clicked, the message **Hello, World** is displayed to the user as an error. It dismisses automatically in 10 seconds (default timeout) if the user doesn't dismiss it or press the button again.
 
    ![In the authoring environment, showing Button.OnSelect calling Notify and displaying the resulting Hello, World message as a red banner message for the user.](media/function-showerror/hello-world-error.png)
 
@@ -97,7 +101,7 @@ Note: This function was previously named **ShowError** when it could only displa
 
 7. Click or press the button.
 
-   Now each time the button is clicked, the message **Hello, World** is displayed to the user as a warning. It will dismiss automatically in 4 seconds (4,000 milliseconds) if the user does not dismiss it or press the button again.
+   Now each time the button is clicked, the message **Hello, World** is displayed to the user as a warning. It dismisses automatically in 4 seconds (4,000 milliseconds) if the user doesn't dismiss it or press the button again.
 
    ![In the authoring environment, showing Button.OnSelect calling Notify and displaying the resulting Hello, World message as an orange banner message for the user.](media/function-showerror/hello-world-warning.png)
 

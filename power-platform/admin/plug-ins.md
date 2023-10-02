@@ -9,7 +9,7 @@ ms.custom:
   - "admin-security"
   - bap-template
 ms.topic: conceptual
-ms.date: 07/17/2023
+ms.date: 09/21/2023
 ---
 
 # View information about plug-in steps
@@ -48,4 +48,8 @@ If you need to change user impersonation for a plug-in, see [Set user impersonat
 ## Update license information for a user
 To change the license assignment for a user in the Microsoft 365 admin center, see [To assign a license](create-users.md#to-assign-a-license).
 
+## Post operation and pre-operation plug-ins 
+When the system user table is updated with a SetBusiness unit, the post operation plug-in runs twice as these are two separate update operations in the event pipeline. However, the pre-operation plug-in is only run once.
+To prevent the post operation to run twice, you can check for the businessunit field update and run your business process accordingly.  
 
+More information: [Event execution pipeline](/power-apps/developer/data-platform/event-framework#event-execution-pipeline)

@@ -65,6 +65,21 @@
           href: administer-catalog.md
         - name: View, submit, and install catalog items
           href: submit-catalog-items.md
+    - name: Unified developer experience for finance and operations apps (preview)
+      items:
+        - name: Overview
+          href: unified-experience\finance-operations-dev-overview.md
+          displayName: Overview of unified developer experience for finance and operations apps
+        - name: Install development tools
+          href: unified-experience\finance-operations-install-config-tools.md
+        - name: Write, deploy, and debug X++ code
+          href: unified-experience\finance-operations-debug.md
+        - name: Unit testing
+          href: unified-experience\finance-operations-testing.md
+        - name: Continuous integration and deployment
+          href: unified-experience\finance-operations-pipelines.md
+        - name: Frequently asked questions (FAQs)
+          href: unified-experience\finance-operations-faq.md
     - name: Tools
       expanded: true
       items:
@@ -77,46 +92,50 @@
             - name: Power Platform CLI reference
               href: cli\reference\index.md
               items:
-                - name: pac admin
-                  href: cli\reference\admin.md
-                - name: pac application
-                  href: cli\reference\application.md
-                - name: pac auth
-                  href: cli\reference\auth.md
-                - name: pac canvas
-                  href: cli\reference\canvas.md
-                - name: pac catalog
-                  href: cli\reference\catalog.md
-                - name: pac connector
-                  href: cli\reference\connector.md
-                - name: pac copilot
-                  href: cli\reference\copilot.md
-                - name: pac data
-                  href: cli\reference\data.md
-                - name: pac help
-                  href: cli\reference\help.md
-                - name: pac modelbuilder
-                  href: cli\reference\modelbuilder.md
-                - name: pac org
-                  href: cli\reference\org.md
-                - name: pac package
-                  href: cli\reference\package.md
-                - name: pac paportal
-                  href: cli\reference\paportal.md
-                - name: pac pcf
-                  href: cli\reference\pcf.md
-                - name: pac pipeline
-                  href: cli\reference\pipeline.md
-                - name: pac plugin
-                  href: cli\reference\plugin.md
-                - name: pac solution
-                  href: cli\reference\solution.md
-                - name: pac telemetry
-                  href: cli\reference\telemetry.md
-                - name: pac tool
-                  href: cli\reference\tool.md
-                - name: pac virtual-agent
-                  href: cli\reference\virtual-agent.md
+              - name: pac admin
+                href: cli\reference\admin.md
+              - name: pac application
+                href: cli\reference\application.md
+              - name: pac auth
+                href: cli\reference\auth.md
+              - name: pac canvas
+                href: cli\reference\canvas.md
+              - name: pac catalog
+                href: cli\reference\catalog.md
+              - name: pac connection
+                href: cli\reference\connection.md
+              - name: pac connector
+                href: cli\reference\connector.md
+              - name: pac copilot
+                href: cli\reference\copilot.md
+              - name: pac data
+                href: cli\reference\data.md
+              - name: pac help
+                href: cli\reference\help.md
+              - name: pac modelbuilder
+                href: cli\reference\modelbuilder.md
+              - name: pac org
+                href: cli\reference\org.md
+              - name: pac package
+                href: cli\reference\package.md
+              - name: pac pcf
+                href: cli\reference\pcf.md
+              - name: pac pipeline
+                href: cli\reference\pipeline.md
+              - name: pac plugin
+                href: cli\reference\plugin.md
+              - name: pac powerpages
+                href: cli\reference\powerpages.md
+              - name: pac solution
+                href: cli\reference\solution.md
+              - name: pac telemetry
+                href: cli\reference\telemetry.md
+              - name: pac test
+                href: cli\reference\test.md
+              - name: pac tool
+                href: cli\reference\tool.md
+              - name: pac virtual-agent
+                href: cli\reference\virtual-agent.md
         - name: Power Platform Tools for Visual Studio
           items:
             - name: What is Power Platform Tools for Visual Studio

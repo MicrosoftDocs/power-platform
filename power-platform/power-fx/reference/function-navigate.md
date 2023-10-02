@@ -76,7 +76,7 @@ When the **Back** function runs, the inverse transition is used by default. For 
 
 **Navigate**( _Screen_ [, _Transition_ [, *UpdateContextRecord* ] ] )
 
-- _Screen_ - Required. The screen to display.
+- _Screen_ - Required. The screen to display. In place of _Screen_, you can also use a control that is on the screen you wish to navigate to.
 - _Transition_ - Optional. The visual transition to use between the current screen and the next screen. See the list of valid values for this argument earlier in this article. The default value is **None**.
 - _UpdateContextRecord_ - Optional. A record that contains the name of at least one column and a value for each column. This record updates the [context variables](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable) of the new screen as if passed to the **[UpdateContext](function-updatecontext.md)** function.
 
