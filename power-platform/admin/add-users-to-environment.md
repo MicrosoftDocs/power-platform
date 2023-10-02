@@ -69,16 +69,16 @@ Azure AD object ID ([AzureActiveDirectoryObjectId](/dotnet/api/microsoft.crm.sdk
 > [!IMPORTANT]
 > Follow below steps to prevent duplicate user records from being created in the system.
 
-    1. Create the user records in Microsoft Entra ID before starting your data import process.
-    
-    1. Sync the user from Microsoft Entra ID into the environment(s) where you intend to perform data import.
-        You can perform this sync in multiple ways: 
-        
-        1. **Method 1**: [By adding a security group to the environment](control-user-access.md#associate-a-security-group-with-an-environment)
-        1. **Method 2**: [By adding the user manually in the environment](#add-users-manually-to-an-environment-that-has-a-dataverse-database)
-        1. **Method 3**: [By using PowerShell scripts to add the user to the environment](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser)
-        1. **Method 4**: [By using Force sync in Power Automate cloud flows](/connectors/powerplatformforadmins/#force-sync-user)
-    
-    1. After the users are synchronized into the environment, run your data import workflows or other automation.
+1. Create the user records in Microsoft Entra ID before starting your data import process.
+
+1. Sync the user from Microsoft Entra ID into the environment(s) where you intend to perform data import.
+   You can perform this sync in multiple ways: 
+   
+   1. **Method 1**: [By adding a security group to the environment](control-user-access.md#associate-a-security-group-with-an-environment)
+   1. **Method 2**: [By adding the user manually in the environment](#add-users-manually-to-an-environment-that-has-a-dataverse-database)
+   1. **Method 3**: [By using PowerShell scripts to add the user to the environment](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser)
+   1. **Method 4**: [By using Force sync in Power Automate cloud flows](/connectors/powerplatformforadmins/#force-sync-user)
+
+1. After the users are synchronized into the environment, run your data import workflows or other automation.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
