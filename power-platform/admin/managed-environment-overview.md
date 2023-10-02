@@ -3,7 +3,7 @@ title: Managed Environments overview
 description: Use Managed Environments to view and control your Dynamics 365 applications with less effort.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/14/2023
+ms.date: 10/02/2023
 author: mihaelablendea 
 ms.author: mihaelab 
 ms.reviewer: sericks
@@ -35,11 +35,11 @@ A Managed Environments encompasses, but not limited to, the folloiwng features:
 - [Customer Managed Key (CMK)](customer-managed-key.md)
 - [Lockbox](about-lockbox.md)
 - [Extended backup](backup-restore-environments.md)
-- [DLP for desktop flow](https://learn.microsoft.com/en-us/power-automate/prevent-data-loss)
+- [DLP for desktop flow](/power-automate/prevent-data-loss)
 - [Export data to Azure Application Insights](overview-integration-application-insights.md)
 - [Catalog in Power Platform](/power-platform/developer/catalog.md)
 - [Default environment routing](default-environment-routing.md)
-- [Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
+- [Create an app description with Copilot](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
   
 
 > [!NOTE]
@@ -56,7 +56,7 @@ A Managed Environments encompasses, but not limited to, the folloiwng features:
 - [View license consumption (preview)](view-license-consumption-issues.md) 
 - [Tenant settings](tenant-settings.md)
 - [Default environment routing](default-environment-routing.md)
-<!-- - [Activating Managed Environments](../guidance/white-papers/managed-environment-activation.md)-->
+- [Activating Managed Environments](../guidance/white-papers/managed-environment-activation.md)
 
 
 
