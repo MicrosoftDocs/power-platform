@@ -74,10 +74,10 @@ Azure AD object ID ([AzureActiveDirectoryObjectId](/dotnet/api/microsoft.crm.sdk
 1. Sync the user from Microsoft Entra ID into the environment(s) where you intend to perform data import.
    You can perform this sync in multiple ways: 
    
-   1. **Method 1**: [By adding a security group to the environment](control-user-access.md#associate-a-security-group-with-an-environment)
-   1. **Method 2**: [By adding the user manually in the environment](#add-users-manually-to-an-environment-that-has-a-dataverse-database)
-   1. **Method 3**: [By using PowerShell scripts to add the user to the environment](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser)
-   1. **Method 4**: [By using Force sync in Power Automate cloud flows](/connectors/powerplatformforadmins/#force-sync-user)
+   - **Method 1**: [By adding a security group to the environment](control-user-access.md#associate-a-security-group-with-an-environment)
+   - **Method 2**: [By adding the user manually in the environment](#add-users-manually-to-an-environment-that-has-a-dataverse-database)
+   - **Method 3**: [By using PowerShell scripts to add the user to the environment](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser)
+   - **Method 4**: [By using Force sync in Power Automate cloud flows](/connectors/powerplatformforadmins/#force-sync-user)
 
 1. After the users are synchronized into the environment, run your data import workflows or other automation.
 
