@@ -445,6 +445,8 @@
           href: white-papers/migrating-from-default-environment.md
         - name: Application modernization with Power Platform
           href: white-papers/application-modernization.md
+        - name: Activating Managed Environments
+          href: white-papers/managed-environment-activation.md
     - name: Resources
       items:
         - name: Icons
