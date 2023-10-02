@@ -23,6 +23,13 @@ You don't have to add users to environments that have no Dataverse database, bec
 
 ## Add users to an environment that has a Dataverse database 
 
+You can add users to an environment that has a Dataverse database in two ways. Through automation, or manually.
+
+> [!TIP]
+> Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
+
+### Add users through automation to an environment that has a Dataverse database
+
 When an environment is created with a Dataverse database or a Dataverse database is added to an existing environment, all users in the organization are added automatically to the environment unless a security group is selected as an access filter. Review the following on automatic user addition to environments. 
 
 - For a user to be successfully added to an environment that has a Dataverse database, the user must meet certain criteria. This same criteria applies to [enabling a user who is already present in an environment](create-users.md#enable-or-disable-user-accounts).  
@@ -35,12 +42,21 @@ When an environment is created with a Dataverse database or a Dataverse database
 
 - Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner.
 
-- Review [important considerations when adding users to environments using automation](#important-considerations-when-adding-users-to-environments-using-automation) to prevent duplicate user records from being created in the system.
+- Azure AD object ID ([AzureActiveDirectoryObjectId](/dotnet/api/microsoft.crm.sdk.messages.userdetails.azureactivedirectoryobjectid)) is used as the primary identifier for user records in a Dataverse database. UPN isn't used as the primary identifier. If you've used UPN earlier to import data into Dynamics 365, ensure you consider the following changes to your process.
 
-> [!TIP]
-> Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
+    1. Create the user records in Microsoft Entra ID before starting your data import process.
+    
+    1. Sync the user from Microsoft Entra ID into the environment(s) where you intend to perform data import.
+        You can perform this sync in multiple ways: 
+        
+        1. **Method 1**: [By adding a security group to the environment](control-user-access.md#associate-a-security-group-with-an-environment)
+        1. **Method 2**: [By adding the user manually in the environment](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database)
+        1. **Method 3**: [By using PowerShell scripts to add the user to the environment](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser)
+        1. **Method 4**: [By using Force sync in Power Automate cloud flows](/connectors/powerplatformforadmins/#force-sync-user)
+    
+    1. After the users are synchronized into the environment, run your data import workflows or other automation.
 
-To add users to an environment that has a Dataverse database:
+### Add users manually to an environment that has a Dataverse database
 
 1. From the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to add users. 
 
@@ -61,21 +77,5 @@ To add users to an environment that has a Dataverse database:
 5. Select **Refresh** to see the added user in the list.
 
 6. After a user is added to the environment, [assign a security role to the user](database-security.md) to configure their access to resources in the environment. 
-
-### Important considerations when adding users to environments using automation
-
-Azure AD object ID ([AzureActiveDirectoryObjectId](/dotnet/api/microsoft.crm.sdk.messages.userdetails.azureactivedirectoryobjectid)) is used as the primary identifier for user records in a Dataverse database. UPN isn't used as the primary identifier. If you've used UPN earlier to import data into Dynamics 365, ensure you consider the following changes to your process.
-
-1. Create the user records in Microsoft Entra ID before starting your data import process.
-
-1. Sync the user from Microsoft Entra ID into the environment(s) where you intend to perform data import.
-    You can perform this sync in multiple ways: 
-    
-    1. **Method 1**: [By adding a security group to the environment](control-user-access.md#associate-a-security-group-with-an-environment)
-    1. **Method 2**: [By adding the user manually in the environment](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database)
-    1. **Method 3**: [By using PowerShell scripts to add the user to the environment](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser)
-    1. **Method 4**: [By using Force sync in Power Automate cloud flows](/connectors/powerplatformforadmins/#force-sync-user)
-
-1. After the users are synchronized into the environment, run your data import workflows or other automation.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
