@@ -1049,7 +1049,7 @@
                 - name: Overview
                   href: powerapps-gdpr-dsr-guide.md
                 - name: Export data
-                  href: powerapps-gdpr-export-dsr.md
+                  href: powerapps-privacy-export-dsr.md
                 - name: Delete data
                   href: powerapps-gdpr-delete-dsr.md
                 - name: Dataverse customer data
