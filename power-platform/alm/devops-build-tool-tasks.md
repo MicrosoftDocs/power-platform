@@ -1,14 +1,13 @@
 ---
 title: "Build tool tasks | Microsoft Docs"
-description: "Learn about what build tool tasks are available plus some examples of tasks in DevOps pipelines."
+description: "Learn about what build tool tasks are available plus some examples of tasks in Azure Pipelines."
 keywords: 
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
 ms.custom: ""
-ms.date: 05/22/2023
+ms.date: 09/29/2023
 ms.reviewer: "pehecke"
-
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -16,18 +15,18 @@ search.audienceType:
 
 # Microsoft Power Platform Build Tools tasks
 
-The available build tasks are described in the following sections. Afterwards, we will showcase some example Azure DevOps pipelines making use of these tasks. For information about the build tools and how to download them, see [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md).
+The available build tasks are described in the following sections. Afterwards, we'll showcase some example Azure Pipelines making use of these tasks. For information about the build tools and how to download them, see [Microsoft Power Platform Build Tools for Azure Pipelines](devops-build-tools.md).
 
 ## Helper task
 
-The available helper tasks are described below.
+The available helper tasks are described next.
 
 ### Power Platform Tool Installer
 
 This task is required to be added once before any other Power Platform Build Tools tasks in build and
 release pipelines. This task installs a set of Power Platform&ndash;specific tools required
 by the agent to run the Microsoft Power Platform build tasks. This task doesn't require any
-more configuration when added, but contains parameters for the specific versions
+more configuration when added. This task contains parameters for the specific versions
 of each of the tools that are being installed.
 
 To stay up to date with the tool versions over time, make sure these parameters correspond
@@ -133,23 +132,23 @@ you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| `PowerPlatformSPN`<br/>Service Connection | (Required) A connection to a licensed Microsoft Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment)<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task, see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
-| `UseDefaultPACheckerEndpoint`<br/>Use default Power Platform Checker endpoint | By default (**true**), the geographic location of the checker service will use the same geography as the environment you connect to. |
+| `PowerPlatformSPN`<br/>Service Connection | (Required) A connection to a licensed Microsoft Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment)<p/>Note: Service Principal is the only authentication method available for the checker task. If you're using username/password for all other tasks, you'll have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task, see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
+| `UseDefaultPACheckerEndpoint`<br/>Use default Power Platform Checker endpoint | By default (**true**), the geographic location of the checker service uses the same geography as the environment you connect to. |
 | `CustomPACheckerEndpoint`<br/>Custom PAC checker endpoint | Required when `UseDefaultPACheckerEndpoint` is **false**. You have an option to specify another geo to use, for example `https://japan.api.advisor.powerapps.com.` For a list of available geographies, see [Use the Power Platform Checker API](/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography). |
-| `FileLocation`<br/>Location of file(s) to analyze       | Required when referencing a file from a shared access signature (SAS) URL `sasUriFile`.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
+| `FileLocation`<br/>Location of file(s) to analyze       | Required when referencing a file from a shared access signature (SAS) URL `sasUriFile`.<p/>Note: It's important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
 | `FilesToAnalyzeSasUri`<br/>SAS files to analyze | Required when `FileLocation` is set to `sasUriFile`. Enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list. |
-| `FilesToAnalyze`<br/>Local files to analyze | Required when SAS files are not analyzed. Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders. |
+| `FilesToAnalyze`<br/>Local files to analyze | Required when SAS files aren't analyzed. Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders. |
 | `FilesToExclude`<br/>Local files to exclude | Specify the names of files to be excluded from the analysis. If more than one, provide through a comma (,) or semi-colon (;) separated list. This list can include a full file name or a name with leading or trailing wildcards, such as *jquery or form.js |
 | `RulesToOverride`<br/>Rules to override | A JSON array containing rules and levels to override. Accepted values for OverrideLevel are: Critical, High, Medium, Low, Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}] |
 | `RuleSet`<br/>Rule set | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps [maker portal](https://make.powerapps.com).</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to [AppSource](https://appsource.microsoft.com/).</li></ul>    |
 | `ErrorLevel`<br/>Error Level | Combined with the error threshold parameter defines the severity of errors and warnings that are allowed. Supported threshold values are \<level>IssueCount where level=Critical, High, Medium, Low, and Informational. |
 | `ErrorThreshold`<br/>Error threshold | Defines the number of errors (>=0) of a specified level that are allowed for the checker to pass the solutions being checked. |
 | `FailOnPowerAppsCheckerAnalysisError`<br/>Fail on error | When **true**, fail if the Power Apps Checker analysis is returned as Failed or FinishedWithErrors. |
-| `ArtifactDestinationName`<br/>DevOps artifact name | Specify the Azure DevOps artifacts name for the checker .sarif file. |
+| `ArtifactDestinationName`<br/>DevOps artifact name | Specify the Azure Artifacts name for the checker .sarif file. |
 
 ## Solution tasks
 
-This set of tasks can automate solution actions. The environment tasks outlined later in this section that create, copy, or restore an environment will overwrite the service connections with the newly created environments. This makes it possible to perform solution tasks against environments that are created on demand. 
+This set of tasks can automate solution actions. The environment tasks outlined later in this section that create, copy, or restore an environment overwrite the service connections with the newly created environments. This makes it possible to perform solution tasks against environments that are created on demand. 
 
 ### Power Platform Import Solution
 
@@ -188,8 +187,8 @@ steps:
 | Parameters           | Description        |
 |----------------------|--------------------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to import the solution into (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to import the solution into (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to import the solution into (for example, `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to import the solution into (for example, `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `SolutionInputFile`<br/>Solution input file | (Required) The path and file name of the solution .zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
 | `HoldingSolution`<br/>Import as a holding solution | An advance parameter (true\|false) used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. |
 | `OverwriteUnmanagedCustomizations`<br/>Overwrite un-managed customizations | Specify whether to overwrite un-managed customizations (true\|false). |
@@ -466,6 +465,38 @@ This provides options to define the exact shape of version number under the "Opt
 This definition can then be used in the Set Solution Version task by setting the Version Number property with: $(Build.BuildId) instead of hard coding 20200824.0.0.2.
 
 Alternatively a powershell inline task script $(Get-Date -Format yyyy.MM.dd.HHmm) output set to empty variable named SolutionVersion as Write-Host ("##vso[task.setvariable variable=SolutionVersion;]$version"), Set Solution Version as $(SolutionVersion).
+
+### Power Platform Set Connection Variables
+
+Sets BuildTools.* variables to provide custom script tasks access to use the service connection as a single source of truth.
+
+#### YAML snippet (SetConnectionVariables)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.set-connection-variables.PowerPlatformSetConnectionVariables@2
+  displayName: 'Power Platform Set Connection Variables '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+  timeoutInMinutes: 2
+  retryCountOnTaskFailure: 5
+```
+
+#### Parameters (SetConnectionVariables)
+
+| Parameters      | Description    |
+|-----------------|----------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to set connection variables for. Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `timeoutInMinutes`<br/>Timeout | Specifies the maximum time, in minutes, that a task is allowed to execute before being canceled by server. A zero value indicates an infinite timeout.|
+| `retryCountOnTaskFailure`<br/>Number of retries if task failed | Specifies the number of retries for this task that will happen in case of task failure. Not supported for agent-less tasks. |
+| `ApplicationId`<br/>Application Id for login | (Required for username/password) Application Id to use for login (See additional note below). |
+| `RedirectUri`<br/>Redirect URI of the specificed app | (Required for username/password) Redirect URI of the specified app. Needed when specifying an App Id. (See additional note below). |
+
+> [!NOTE]
+> When using the username/password authentication type, the Application Id and Redirect Uri will be required. This [authenticate oauth](/power-apps/developer/data-platform/authenticate-oauth) document has an explanation of why you need to create an app registration to authenticate with Dataverse.
+> When you connect using username/password authentication, the connection behaves as an application which is connecting on behalf of a user to Dataverse.
 
 ### Power Platform Deploy Package
 
@@ -938,7 +969,7 @@ To learn more about creating these pipelines and actually do hands-on pipeline
 authoring using the Microsoft Power Platform Build Tools, complete the [build tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools),
 which you can download from GitHub.
 
-More information about Azure DevOps pipelines: [Use Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started)
+More information about Azure Pipelines: [Use Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started)
 
 <a name="build-pipeline-export-solution-from-development"></a>
 
