@@ -50,7 +50,7 @@ When an environment is created with a Dataverse database or a Dataverse database
         You can perform this sync in multiple ways: 
         
         1. **Method 1**: [By adding a security group to the environment](control-user-access.md#associate-a-security-group-with-an-environment)
-        1. **Method 2**: [By adding the user manually in the environment](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database)
+        1. **Method 2**: [By adding the user manually in the environment](#add-users-manually-to-an-environment-that-has-a-dataverse-database)
         1. **Method 3**: [By using PowerShell scripts to add the user to the environment](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser)
         1. **Method 4**: [By using Force sync in Power Automate cloud flows](/connectors/powerplatformforadmins/#force-sync-user)
     
