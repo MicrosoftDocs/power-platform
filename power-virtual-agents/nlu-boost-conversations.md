@@ -52,7 +52,7 @@ Details and examples on how you can expand your bot's ability to use generative 
 - Internal resources include:
   - SharePoint
   - OneDrive for Business
-  - Dataverse
+  - Documents uploaded to Dataverse
   - Custom data (internal or external): supply your own content from any source; for instance, from a Power Automate Flow, Skill, or other source
 
 
@@ -74,11 +74,7 @@ In addition to [URL considerations](nlu-boost-conversations.md#url-consideration
     >
     > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
 
-- When you create a new bot, select **Try the unified canvas (preview)**.
-
-    :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
-
-- You must enable the **generative answers** option for each bot.
+  - You must enable the **generative answers** option for each bot.
 
 - [Review AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
