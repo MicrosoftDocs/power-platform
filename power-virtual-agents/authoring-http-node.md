@@ -59,15 +59,15 @@ In Power Virtual Agents, you can extend the bot's capabilities by calling extern
 
     :::image type="content" source="media/authoring-http-node/body-content-options.png" alt-text="Screenshot of body content options dropdown":::
 
-    - **JSON Content**: JSON content allows you to provide a JSON object in the request body. This is often used when making POST or PUT requests. When this option is selected, you are presented with an editor where you can enter your JSON content. 
+      - **JSON Content**: JSON content allows you to provide a JSON object in the request body. This is often used when making POST or PUT requests. When this option is selected, you are presented with an editor where you can enter your JSON content. 
+    
+      You can also enter specify your JSON content using Power FX, allowing you to include dynamic values and reference variables. To do this, select the **Edit JSON** button, choose **Formula** and then enter a Power FX object (any existing JSON that has already been entered will be converted into a Power FX object for you), which will be converted into JSON when the HTTP request is made.
 
-    You can also enter specify your JSON content using Power FX, allowing you to include dynamic values and reference variables. To do this, select the **Edit JSON** button, choose **Formula** and then enter a Power FX object (any existing JSON that has already been entered will be converted into a Power FX object for you), which will be converted into JSON when the HTTP request is made.
+      :::image type="content" source="media/authoring-http-node/body-content-json.png" alt-text="Screenshot of JSON content selected for body content type.":::
 
-    :::image type="content" source="media/authoring-http-node/body-content-json.png" alt-text="Screenshot of JSON content selected for body content type.":::
+      - **Raw content**: Raw content lets you insert a string of data into the request body, and this string can be of any content type you specify. Raw content is entered using a Power FX formula, such as the string content shown in the example below.
 
-    - **Raw content**: Raw content lets you insert a string of data into the request body, and this string can be of any content type you specify. Raw content is entered using a Power FX formula, such as the string content shown in the example below.
-
-    :::image type="content" source="media/authoring-http-node/body-content-raw.png" alt-text="Screenshot of RAW content selected for body content type.":::
+      :::image type="content" source="media/authoring-http-node/body-content-raw.png" alt-text="Screenshot of RAW content selected for body content type.":::
 
 ## Error handling and timeout
 
