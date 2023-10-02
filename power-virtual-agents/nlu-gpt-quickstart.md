@@ -38,9 +38,9 @@ This quickstart guide introduces you to the minimal steps necessary to get start
     >  
     > Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
-- You must be using the [preview version of Power Virtual Agents](overview-preview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
+- You must be using the [current version of Power Virtual Agents](overview-preview.md), and the bot type must not be **Classic**. Classic chatbots have **(classic)** added to their name.  
 
-    :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
+    :::image type="content" source="media/nlu-gpt/nlu-boost-bots.png" alt-text="Screenshot of the list of chatbots with one bot with clasic added to its name.":::
 
 - [Review AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
@@ -48,9 +48,6 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 
 - This capability may be subject to usage limits or capacity throttling.
  
-> [!IMPORTANT] 
-> During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need your admin to [enable bot publishing for the capability](nlu-boost-conversations.md#disable-bot-publishing). 
-
 ## How bot conversations work
 
 Power Virtual Agent bots use a [customized NLU model and AI capabilities](advanced-ai-features.md) to understand what a user types and respond with the most appropriate bot topic. A bot topic is a sequence of nodes that logically flow from one step to the other. See [Create and edit topics (preview)](authoring-create-edit-topics.md) for details on how bot topics work.
@@ -75,16 +72,11 @@ Ready to get started? The first step is to create your bot.
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-home.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
 
-2. Select **Try the unified canvas (preview)** to create a preview bot. 
-   - An opt-in confirmation message appears the first time you create or view a preview bot that describes some of their benefits.
-
-   :::image type="content" source="media/nlu-gpt/nlu-quickstart-create-bot.png" alt-text="Screenshot of the Create a chatbot page.":::
-
-3. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic, and select **Create**.
+2. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic, and select **Create**.
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the Boost your conversation preview option.":::
 
-There you have it! You’ve created a new bot.  
+
 
  > [!NOTE]
  > This initial bot creation only prompts you for one fallback website. You can add other data sources, including internal resources such as Sharepoint or OneDrive, and external facing websites. For more information about including additional data sources, refer to [Use Copilot to edit a topic](nlu-authoring.md#use-copilot-to-edit-a-topic).
@@ -117,7 +109,7 @@ See the [Boost conversations (preview)](nlu-boost-conversations.md) topic for mo
       
 4. Select **Create**.
 
-Once your topic is created, your bot is ready for testing. It's that simple!
+Once your topic is created, your bot is ready for testing.
 
 You can explore ways to extend and enhance your boosted bot and topic in [Create (and edit) with Copilot](nlu-authoring.md).
 
@@ -126,13 +118,16 @@ You can explore ways to extend and enhance your boosted bot and topic in [Create
 Once you create a bot, you can immediately test the bot and try out different phrases for your bot to reply to. 
 The **Test bot** pane shows how a bot conversation plays out at every step and you can fine-tune a topic directly within the **Power Virtual Agents (preview)** portal:
  
-1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the side navigation menu. 
+1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the side navigation menu.
+   
     :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-bot.png" alt-text="Screenshot of Test bot option.":::
-2. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to. For example, you could type *What is your return policy?*. 
+
+1. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to. For example, you could type *What is your return policy?*. 
  
    The bot retrieves information from the website and returns a response. The response provides a link to where it found that information and allows you to provide feedback.
  
-4. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
+1. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
+
     :::image type="content" source="media/nlu-gpt/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
  
 > [!NOTE]
