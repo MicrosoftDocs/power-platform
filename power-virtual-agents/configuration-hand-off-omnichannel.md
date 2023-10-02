@@ -364,6 +364,8 @@ If your topics include Markdown content, the voice bot reads the asterisk (*). A
 
 See [limitations when using Power Virtual Agents with the Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#limitations).
 
+For limits on the size of variables that are shared with Omnichannel when Power Virtual Agents tranfers the conversation, please see [Power Virtual Agents maximum channel data message size limits](requirements-quotas.md#limits)
+
 ## Recommended extensions
 
 The following extensions aren't required to hand-off to Omnichannel for Customer Service, but they provide bot authors with a better experience by providing [extra variables and actions](#voice-based-capabilities).
