@@ -42,6 +42,8 @@
       href: nlu-generative-answers-bing.md
     - name: Use a connection to Azure OpenAI on your data
       href: nlu-generative-answers-azure-openai.md
+    - name: Use uploaded documents (preview)
+      href: nlu-documents.md
     - name: Use content on SharePoint or OneDrive for Business
       href: nlu-generative-answers-sharepoint-onedrive.md
     - name: Use a custom data source
