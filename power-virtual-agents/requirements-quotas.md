@@ -1,7 +1,7 @@
 ---
-title: "Rate limits for chatbots"
+title: "Quotas, limits, app registration, and configuration values"
 description: "Rate limits determine how often messages can be sent to a chatbot"
-keywords: "PVA, quotas, rate limits, requests, restrictions"
+keywords: "PVA, quotas, rate limits, requests, restrictions, app registration"
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -13,9 +13,9 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Quotas, limits, and configuration values for Power Virtual Agents
+# Quotas, limits, app registration, and configuration values for Power Virtual Agents
 
-This topic contains quotas, limits, and configuration values for Power Virtual Agents.
+This topic contains quotas, limits, app registration usage, and configuration values for Power Virtual Agents.
 
 ## Quotas
 
@@ -36,6 +36,11 @@ If the quota for **messages to a chatbot** is met, the user chatting with the ch
 ## Limits
 
 These limits apply to the Power Virtual Agents web app and the Power Virtual Agents app in Microsoft Teams.
+
+### Maximum channel data message size limits when using Power Virtual Agents in Omnichannel
+Power Virtual Agents in Omnichannel uses the ACS channel, and has the same [channel data message size limit of 28kb](/azure/communication-services/concepts/chat/concepts#service-limits) applies. 
+
+This can impact scenarios such as [transfering to Omnichannel](configuration-hand-off-omnichannel.md?tabs=webApp), where all the variables (both those local to the topic and bot variables available in the conversation) are passed as context to the agent. If the size of all the variables passed exceeds the limit, the ACS channel will fail with error ```MessageSizeExceeded```, and the transfer will be completed without the variables being passed. If you encounter scenarios in which the context is not being passed, check for a large number of variables, and clear them before making the transfer to avoid going over the limit.
 
 ### Power Virtual Agents web and Teams apps limits
 
@@ -78,6 +83,19 @@ Configure all [required services for Power Automate](/power-automate/ip-address-
 | pa-guided.azureedge.net            | No       | HTTPS     | In-product guidance (recommended)                                                                                                             |
 | cci-prod-botdesigner.azureedge.net | Yes      | HTTPS     | Power Virtual Agents authoring experience                                                                                                     |
 
+## How Power Virtual Agents automatically creates app registration
+
+### What is app registration?
+
+App registration is a process that assigns a unique identifier and a secret key to a chatbot, allowing it to communicate with different channels and services. App registration is a mandatory component of Power Virtual Agents chatbots, as it enables the bot to identify itself to Omnichannel for Customer Service, in Microsoft Teams, and to authenticate with other channels. App registration also allows the bot to connect with skills.
+
+### How does Power Virtual Agents manage app registration?
+
+Power Virtual Agents simplifies the app registration process by automatically creating and managing the app registration for each chatbot. There is no action required from the customer to set up or configure the app registration. Power Virtual Agents handles the app registration behind the scenes, ensuring that the bot has the necessary credentials and permissions to interact with Omnichannel, selected channels, and skills. The customer can focus on designing and publishing the bot, without worrying about the technical details of app registration.
+
+### Is app registration secure?
+
+App registration does not pose a security issue to customers or their data. The app registration is only used to identify the bot and to enable secure communication with the channels and skills. The app registration does not grant access to any customer data or resources, nor does it expose any sensitive information about the bot. The app registration is stored and managed by Power Virtual Agents, which follows the highest standards of security and compliance. 
 
 
 

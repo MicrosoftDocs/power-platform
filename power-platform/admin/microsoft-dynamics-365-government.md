@@ -4,12 +4,16 @@ description: "Learn about features that are specific to Microsoft Dynamics 365 U
 author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/14/2022
+ms.date: 09/25/2023
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contibutors:
+- Akshay-Koushik-Hothur
+ms.contributors:
+- ahothur
 ---
 
 # Dynamics 365 US Government  
@@ -224,6 +228,13 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 ### Dynamics 365 Lifecycle Services (LCS)
 - GCC: https://gov.lcs.microsoftdynamics.us
+
+### Telemetry for model-driven apps
+
+The following URLs must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
+- GCC: https://tb.pipe.aria.microsoft.com/Collector/3.0
+- GCC High: https://tb.pipe.aria.microsoft.com/Collector/3.0
+- DoD: https://pf.pipe.aria.microsoft.com/Collector/3.0
 
 ## Regional Discovery Service is deprecated
 

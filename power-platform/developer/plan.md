@@ -144,6 +144,10 @@ However, even after deleting a user's developer environment, a new developer env
 
 Yes. To prevent users from creating developer environments, go to [Control environment creation](/power-platform/admin/control-environment-creation#developer-environments).
 
+### Does the developer environment get auto-created with a developer plan?
+
+No, developer environments no longer get auto-created with a Power Apps Developer Plan. The maker/developer needs to create developer environments either through Power Platform admin center, Power Apps,  or the community page.
+
 ### Does the Power Apps Developer plan include Power Automate RPA use rights?
 
 No. However, users may start a Power Automate trial including RPA use rights to try out RPA capabilities. Power Apps Developer plan includes cloud flow use rights since these can be connected to an act as an extension of Power Apps apps.
@@ -152,11 +156,18 @@ No. However, users may start a Power Automate trial including RPA use rights to 
 
 No. However, users may start an AI Builder trial to try out the AI Builder capabilities.
 
+### Can a developer environment be a managed environment?
+
+The developer environment can become a managed environment. However, managed environment use rights are not included in the developer plan. As a result, end users will require premium licenses in order to run their assets in a managed developer environment.
+
 ### Why does a banner appear with apps running in the developer environment?
 
 Since developer environments aren't intended to support production scenarios, apps display a temporary banner to remind makers about them running in a developer environment. This banner will no longer appear if you move the app from a developer environment to a non-developer environment.
 
 :::image type="content" source="media/power_apps_dev_env_app_banner.png" alt-text="Power Apps Developer Environment app banner.":::
+
+### Are Managed Environment use rights included in the Developer Plan?
+Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. In other words, users&mdash;including makers running their own apps or flows&mdash;need a premium license in addition to the developer plan to run their assets in a managed, developer environment.
 
 ### Are Dynamics 365 apps available in a developer environment?
 

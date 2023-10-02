@@ -4,7 +4,7 @@ description: Provides information about Power Apps US Government service descrip
 author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/23/2022
+ms.date: 09/25/2023
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
@@ -227,6 +227,13 @@ Install an [on-premises data gateway](/powerapps/maker/canvas-apps/gateway-manag
 If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. 
 
 Previously, US Government customers needed to contact support before configuring their first on-premises data gateway, as support would need to "allowlist" the tenant for gateway use. This is no longer necessary. If you encounter any issues configuring or using the on-premises data gateway, contact support for assistance.
+
+## Telemetry for model-driven apps
+
+The following URL must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
+
+- **GCC and GCC High**: `https://tb.pipe.aria.microsoft.com/Collector/3.0`
+- **DoD**: `https://pf.pipe.aria.microsoft.com/Collector/3.0`
 
 ## Power Apps US Government feature limitations
 
