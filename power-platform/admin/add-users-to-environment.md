@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/21/2023
+ms.date: 10/02/2023
 search.audienceType: 
   - admin
 ---
@@ -31,34 +31,39 @@ When an environment is created with a Dataverse database or a Dataverse database
 
 - The system also supports just-in-time (JIT) user provisioning. In this scenario, when users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment. 
 
-- In most cases, adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by [assigning security roles to users](database-security.md). Users with certain Dynamics 365 app licenses will be assigned some security roles by default that only give them read access to the environment's resources. Users who have been assigned service admin roles or the Global admin role, assigned through the Microsoft 365 admin center, will get the [System Administrator role](database-security.md#predefined-security-roles) by default. They will have admin privileges to the environment's resources when they get added to the environment. 
+- In most cases, adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by [assigning security roles to users](database-security.md). Users with certain Dynamics 365 app licenses will be assigned some security roles by default that only give them read access to the environment's resources. Users who have been assigned service admin roles or the Global admin role, assigned through the Microsoft 365 admin center, will get the [System Administrator role](database-security.md#predefined-security-roles) by default. They'll have admin privileges to the environment's resources when they get added to the environment. 
 
 - Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner.
 
 > [!TIP]
 > Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
 
-**Important considerations when adding users to environments via automation**
-We do not rely on UPN as the primary identifier to match users in the Dataverse database. We only honor AAD Object ID (AzureActiveDirectoryObjectId) as the primary identifier for user records in Dataverse database.
-If you were previously relying on UPN match to import data into Dynamics CRM, you must make the following changes to your process. This change is required to prevent duplicate user records from being created in the system.
+### Important considerations when adding users to environments using automation
 
-1.	Create the user records in Microsoft Entra before starting your data import process
+Azure AD object ID ([AzureActiveDirectoryObjectId](/dotnet/api/microsoft.crm.sdk.messages.userdetails.azureactivedirectoryobjectid)) is used as the primary identifier for user records in a Dataverse database. UPN isn't used as the primary identifier. If you've used UPN earlier to import data into Dynamics 365, ensure you consider the following changes to your process.
 
-2.	Sync the user from Microsoft Entra into the environment(s) where you intend to perform data import.
-  a.	You can perform this sync in multiple ways: 
-    i.	[By adding a security group to the environment](https://learn.microsoft.com/en-us/power-platform/admin/control-user-access#associate-a-security-group-with-an-environment)
-    ii.	[By adding the user manually in the environment](https://learn.microsoft.com/en-us/power-platform/admin/add-users-to-environment#add-users-to-an-environment-that-has-a-dataverse-database)
-    iii. [By using PowerShell scripts to add the user to the environment](https://learn.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest)
-    iv.	[By leveraging Force sync in Power Automate flows](https://powerusers.microsoft.com/t5/Power-Apps-Community-Blog/Using-Force-Sync-User-to-sync-users-Power-Platform-Dynamics-365/ba-p/1605498)
-3.	Once the system syncs the user(s) into the environment, run your data import workflows and/or other automations.
+> [!IMPORTANT]
+> Below changes are required to prevent duplicate user records from being created in the system.
 
-**To add users to an environment that has a Dataverse database**
+1. Create the user records in Microsoft Entra ID before starting your data import process.
+
+1. Sync the user from Microsoft Entra ID into the environment(s) where you intend to perform data import.
+    You can perform this sync in multiple ways: 
+    
+    1. **Method 1**: [By adding a security group to the environment](/control-user-access.md#associate-a-security-group-with-an-environment)
+    1. **Method 2**: [By adding the user manually in the environment](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database)
+    1. **Method 3**: [By using PowerShell scripts to add the user to the environment](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser)
+    1. **Method 4**: [By using Force sync in Power Automate cloud flows](/connectors/powerplatformforadmins/#force-sync-user)
+
+1. After the users are synchronized into the environment, run your data import workflows or other automation.
+
+### Add users to an environment that has a Dataverse database
 
 1. From the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to add users. 
 
 2. Select **Settings** > **Users + permissions** > **Users**. 
 
-   You'll see the list of users that have already been added to the environment. This user list includes users with enabled and disabled status. More information: [Enable or disable users](create-users.md#enable-or-disable-user-accounts) 
+   You see the list of users that have already been added to the environment. This user list includes users with enabled and disabled status. More information: [Enable or disable users](create-users.md#enable-or-disable-user-accounts) 
 
 3. Check to see whether the user you want to add might already be present in the environment by doing a search (because automatic user addition might have added the user already). If you don't find the user in the environment yet, select **Add user**. 
 
