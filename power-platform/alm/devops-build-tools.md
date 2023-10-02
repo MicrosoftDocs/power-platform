@@ -5,7 +5,7 @@ keywords:
 author: snizar007
 ms.subservice: alm
 ms.author: snizar
-ms.date: 08/02/2023
+ms.date: 09/25/2023
 ms.reviewer: pehecke
 ms.topic: article
 search.audienceType: 
@@ -108,7 +108,7 @@ This command has two parameters:
 |name|short name|Required|Description|
 |---------|---------|---------|---------|
 |`environment`|`env`|Yes|The ID or URL of the environment to add an application user to.|
-|`role`|`r`|No|Name or ID of security role to be applied to application user. The default value is: 'System Administrator'.|
+|`role`|`r`|No|Name or ID of security role to be applied to application user. The default value is: 'System Administrator'. <p/><p/>Solution Checker requires a role with prvAppendmsdyn_analysisjob privilege to append to the msdyn_analysisjob table. The System Administrator role has this privilege by default.|
 
 You can use it like this:
 
@@ -149,7 +149,7 @@ You must add the Application ID as an Application User in the Microsoft Power Pl
 - You can use Power Platform CLI. For example:
 
 ```powershell
-PS C:\>pac admin assign-user -user "adde6d52-9582-4932-a43a-beca5d182301" --role "System administrator" --environment d3fcc479-0122-e7af-9965-bde57f69ee1d --application-user
+PS C:\>pac admin assign-user --user "adde6d52-9582-4932-a43a-beca5d182301" --role "System administrator" --environment d3fcc479-0122-e7af-9965-bde57f69ee1d --application-user
 Connected to... SnDemoDev
 Connected as admin@M365x57236726.onmicrosoft.com
 Successfully assigned user adde6d52-9582-4932-a43a-beca5d182301 to environment d3fcc479-0122-e7af-9965-bde57f69ee1d with security role System Administrator

@@ -1,56 +1,78 @@
 ---
 title: Extend pipelines in Power Platform
-description: Add business log to customize the pipeline deployment process.
+description: Add business logic to customize the pipeline deployment process.
 author: caburk
 ms.author: caburk
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 06/20/2023
+ms.date: 09/28/2023
 ms.custom: 
 ---
+
 # Extend pipelines in Power Platform
 
-ALM processes often vary across customers and business organizations. Pipelines extensibility provides the ability to configure deployment gates and apply custom logic at multiple steps of your deployment process. No-code, low-code, and pro-code options are available to customize pipelines and integrate with with other systems of record. For example, you can use Power Automate to add approvals, send notifications, or use pipelines in Power Platform along-side continuous integration/continuous deployment (CI/CD) applications such as Azure DevOps, GitHub, and others. These are only a few of the many possibilities.
-
-Pipelines raise various [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) that can trigger custom logic. Event data is relayed to subscribers such as Power Automate, which provides over 1,000 built-in [connectors](/connectors/connector-reference/), Azure Service Bus, Azure Event Hubs, Webhooks, and [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins). Regardless of how pipelines are extended, the maker-facing deployment experience remains simple.
+Pipelines can be custom tailored to serve the unique needs of an organization. For example, you can add approvals, deploy via service principals, and integrate with internal systems of record, Azure DevOps, GitHub, and much more. Because [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) are used, business logic can be executed within Power Automate or various other subscribers. Whether your pipeline is basic or sophistocated on the inside, the deployment experience remains simple for makers on the outside.
 
 > [!IMPORTANT]
-> The capability to extend pipelines is being gradually rolled out across regions and might not be available yet in your region.
+> - New pipelines extensions are being gradually rolled out across regions and might not be available yet in your region.
+> - Existing pipelines customers may need to update the Power Platform pipelines application to enable new features. You can manage the updates within the Power Platform admin center.
 
-## Add predeployment conditions
+## Gated extensions available
+Pipelines deployments progress through multiple pre-defined steps until deployment completion. Gated extensions insert custom steps into the progression where custom business logic can be executed. It's like your own personal train where you're in control of where it stops and whether it continues or not.
 
-You can optionally configure a gate for each pipeline stage. Then when a deployment is submitted, the request remains in a pending state until your business logic executes and finally signals the pipelines host to complete or reject the deployment. Pending deployment requests contain both the exported managed and unmanaged solutions, and connections and environment variable values for the target environment (sometimes referred to as "deployment settings" or "DeploymentSettings.JSON"). For example, you may wish to run code scans, commit the solution to source control, or perform any number of automated tasks before deployments to a target environment.
+:::image type="content" source="media/extensibility-flow-diagram.png" alt-text="Extensibility diagram":::
 
-The system prevents any tampering or modification to the exported solution artifact. Solutions are exported when a deployment request is submitted (when the maker selects **Deploy** from within their development environment), and the same solution artifact will be deployed upon approval. Similarly, the system doesn't re-export a solution for deployments to subsequent stages in a pipeline. The same solution artifact must pass through pipeline stages in sequential order. This ensures customization can't bypass QA environments or your approval processes.
+When enabled, each extension inserts a custom step at a different point within a deployment’s progression. Extensions can be used alone or together. 
 
-When configuring the pipeline stage, select the **Pre-Deployment Step Required** checkbox.
+- **Pre-export Step Required** allows running custom validation logic when a deployment request is submitted. Pipelines won’t export the solution from a development environment until this step is marked as completed. Only enable this for the first stage in a pipeline (e.g., UAT).
 
-  :::image type="content" source="media/pipelines-pre-step-config.png" alt-text="Pipelines pre-deployment step required":::
+- **Is Delegated Deployment** carries out deployments using a service principal or pipeline stage owner’s identity instead of the requesting maker’s. This ensures makers can request deployments without elevated (or any) access within target environments. Requires approval from an authorized identity.
 
-   > [!IMPORTANT]
-   >
-   > - Adding a pre-deployment step gates pipelines deployments, but makers are required to have permission to import solutions to the target environment.
-   > - Existing pipeline users may need to update the Power Platform Pipelines application to enable new features. You can manage the updates within the Power Platform admin center.
+- **Pre-deployment Step Required** provides additional flexibility to insert a custom step after a deployment is approved. For example, if a final approval is required.
+
+:::image type="content" source="media/three-gated-extensions.png" alt-text="Enable gated extensions":::
+
+Steps inserted by enabling a gated extension are in a pending state until your business logic executes and finally signals the pipelines host to complete or reject the step. Makers can see when a deployment is pending as well as cancel their deployment request up until the final step of the deployment. 
+
+> [!NOTE]
+> Once the managed and unmanaged solution artifacts are exported, the system stores them in the pipelines host and prohibits any tampering or modification. The same managed artifact, per version, will be deployed to all subsequent stages in the pipeline in sequential order. This ensures no solution can bypass QA environments or approval processes. 
+
+## Understanding pipelines triggers and actions
+
+Each step of a pipeline deployment triggers a real-time event at the beginning and completion of the step for which you can initiate custom logic. Additional triggers are produced when gated extensions are enabled. These correspond to the custom step inserted when an extension is enabled on the pipeline stage.
+
+The tables below indicate triggers and actions required for each extension. Output parameters from each trigger can be used within subsequent steps of a cloud flow.
+
+| Gated extension | Step started trigger  | Step completed trigger | Unbound action | Connection to use |
+| --- | --- | --- | --- | --- |
+| Pre-export step required | OnDeploymentRequested | N/A | UpdatePreExportStepStatus | Any identity with access to update the deployment stage run record |
+| Is delegated deployment | OnApprovalStarted | OnDeploymentCompleted | Create a connection as the service principal or or pipeline stage owner as configured on the pipeline stage. The pipeline stage owner must be an owner of the service principal in Microsoft Azure Active Directory. |
+| Pre-deployment step required | OnPreDeploymentStarted | OnPreDeploymentCompleted | UpdatePreDeploymentStepStatus | Any identity with access to update the deployment stage run record |
+
+> [!NOTE]
+> OnDeploymentRequested triggers for all deployments.
 
 ## Triggers
-
-Each step of a pipeline deployment triggers a real-time event at the beginning and completion of the step.
 
 Triggers are available in Power Automate cloud flows within the pipelines host environment under the **When an action is performed** [trigger](/connectors/commondataserviceforapps/#triggers) of the Dataverse connector.
 
 - **Catalog**: Microsoft Dataverse Common
 - **Category**: Power Platform Pipelines
 - **Table name**: (none)
-- **Action name**: Select an option from the list. Pipelines provide the following custom actions that produce a trigger in Power Automate cloud flows:
-  - `OnDeploymentCompleted`
-  - `OnDeploymentRequested`
-  - `OnDeploymentStarted`
-  - `OnPreDeploymentCompleted`
-  - `OnPreDeploymentStarted`
+- **Action name**: Select an option from the list. Pipelines provide the following custom actions that produce a trigger in Power Automate cloud flows. Approval and OnPreDeployment* related events only trigger when the corresponding extension is enabled.
+  `OnDeploymentRequested`  
+  `OnApprovalStarted`  
+  `OnApprovalCompleted`  
+  `OnPreDeploymentStarted`  
+  `OnPreDeploymentCompleted`  
+  `OnDeploymentStarted`  
+  `OnDeploymentCompleted`
+
+Below is an example screenshot of a trigger.
 
 :::image type="content" source="media/pipelines-triggers.png" alt-text="Pipelines triggers in Power Automate":::
 
-## Trigger conditions
+### Trigger conditions
 
 Power Automate [trigger conditions](/power-automate/triggers-introduction#use-trigger-conditions-to-reduce-flow-runs) allow you to customize the trigger so that the flow runs only when certain conditions are met. For example, you may need to run different flows and associated business logic within different pipelines or pipeline stages. This also helps keep flow runs and Power platform requests consumption low.
 
@@ -76,46 +98,24 @@ Triggers a flow for deployment stages with the stage name *containing* 'QA':
 
 Learn more about expressions used in conditions: [Use expressions in conditions to check multiple values](/power-automate/use-expressions-in-conditions).
 
-## Action
+## Actions
 
-After running the desired predeployment logic in cloud flows, use the **Perform an unbound action** named `UpdatePreDeploymentStepStatus`. Set `PreDeploymentStepStatus` to:
+After running the desired logic in cloud flows, use the **Perform an unbound action** in conjunction with the corresponding action for each gated extension.
 
-- **20** for completing the deployment.
+These parameters are exposed across the actions for the corresponding gated extensions.  
 
-- **30** for rejecting the deployment. The deployment won't proceed and status will be set to failed. You can add comments to indicate the reason for rejection.
+- UpdatePreExportStepStatus, UpdateApprovalStatus, and PreDeploymentStepStatus:
+  - **10** is the pending status set by the system.
+  - **20** for completing the step.
+  - **30** for rejecting the step. The deployment won't proceed and status will be set to failed. You can also add both maker facing and admin facing comments to indicate the reason for rejection.
+- ApprovalComments and pre-deployment comments:
+  -   Comments that are visible to the maker within pipelines run history. Intended for approvers to share comments with the requesting maker. For example, why their deployment was rejected or information about company specific processes.
+- PreExportProperties and ApprovalProperties:
+  - Admins can store information or custom parameters here without it surfacing to makers - for example a link to the flow run or approval, or other pertinent data. The intent is to provide flexibility and simplify custom reporting for deployment related data.
 
-:::image type="content" source="media/pipelines-approval-flow.png" alt-text="Pipelines approvals":::
+### Samples
 
-> [!NOTE]
-> The system sets **10** (pending) for `PreDeploymentStepStatus` as the default state for submitted deployments when this configuration is present.
-
-## Event details
-
-The tables below indicate inputs and outputs for each event. Output parameters can be used within subsequent steps of a cloud flow.
-
-#### Deployment requested step
-
-| Event | Input parameters  | Output parameters | Comments |
-| --- | --- | --- | --- |
-| `OnDeploymentRequested`  | StageRunID | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>Solution Artifact Version, <br/>DeployAsUser, <br/>Stage Run Details Link (link to record in the pipelines configuration app), <br/>Artifact Download Link  | Not gated. Can be used for predeployment validation of the solution artifact.<br/> ArtifactFileDownloadLink is a link to download the managed solution file. To download the unmanaged solution, change the link from "/artifactfile/" to "/artifactfileunmanaged/"<br/><br/>Example to download managed solution: `https://[myorg].crm.dynamics.com/api/data/v9.0/deploymentartifacts(GUID)/artifactfile/$value`<br/><br/>Example to download unmanaged solution: `https://[myorg].crm.dynamics.com/api/data/v9.0/deploymentartifacts(GUID)/artifactfileunmanaged/$value`  |
-
-#### Pre-deployment step
-
-| Event | Input parameters  | Output parameters | Comments |
-| --- | --- | --- | ---  |
-| `OnPreDeploymentStarted` (Gated)  | StageRunID, <br/> PreDeployment Step Status (**10** (Pending), **20** (Completed), **30** (Failed)) | Artifact Name, <br/>Deploy As User, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>Solution Artifact Version,, <br/>Deployment Notes, <br/>Stage Run Details Link (link to record in the pipelines configuration app), <br/>Artifact Download Link | - Only triggers when **Pre-Deployment Step Required** is checked in the pipeline stage configuration. <br/>- Can be used to trigger approvals and other business logic before a deployment can proceed to the next step. <br/>- Requires calling the unbound action `UpdatePreDeploymentStepStatus` to set the `PreDeploymentStepStatus` after other business logic has completed. <br/> ArtifactFileDownloadLink is a link to download the managed solution file. To download the unmanaged solution, change the link from "/artifactfile/" to "/artifactfileunmanaged/"<br/><br/>Example to download managed solution: `https://[myorg].crm.dynamics.com/api/data/v9.0/deploymentartifacts(GUID)/artifactfile/$value`<br/><br/>Example to download unmanaged solution: `https://[myorg].crm.dynamics.com/api/data/v9.0/deploymentartifacts(GUID)/artifactfileunmanaged/$value` |
-| `OnPreDeploymentCompleted`   | StageRunID | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,<br/> PreDeployment Step Status (**10** (Pending), **20** (Completed), **30** (Failed)), <br/>Comments  | Event produced when `UpdatePreDeploymentStatus` is set to completed. |
-
-#### Deployment step
-
-| Event | Input parameters  | Output parameters | Comments |
-| --- | --- | --- | ---  |
-| `OnDeploymentStarted`   | StageRunID (GUID), <br/>Deployment Status ( **200000001** (Started), **200000005** (Scheduled))  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,  | Triggers when the actual deployment started or scheduled. Can be used to trigger custom pre-deployment logic.
-| `OnDeploymentCompleted`   | StageRunID (GUID), <br/>DeploymentStatus (**200000002** (Succeeded), **200000006** (Canceled), **200000003** (Failed)), <br/>ErrorMessage  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name  | Triggers when the deployment succeeded, failed, or was canceled. Can be used to trigger custom post-deployment logic. |
-
-### Sample
-
-Download and then import this unmanaged solution into your pipelines host environment, which contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https://aka.ms/DownloadPipelinesExtensibilitySamples)
+Download and then import this unmanaged solution into your pipelines host environment. The download contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https://aka.ms/DownloadPipelinesExtensibilitySamples)
 
 ## Next step
 
