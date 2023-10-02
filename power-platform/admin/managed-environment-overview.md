@@ -37,7 +37,7 @@ A Managed Environments encompasses, but not limited to, the folloiwng features:
 - [Extended backup](backup-restore-environments.md)
 - [DLP for desktop flow](/power-automate/prevent-data-loss)
 - [Export data to Azure Application Insights](overview-integration-application-insights.md)
-- [Catalog in Power Platform](/power-platform/developer/catalog.md)
+- [Catalog in Power Platform](../developer/catalog.md)
 - [Default environment routing](default-environment-routing.md)
 - [Create an app description with Copilot](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
   
