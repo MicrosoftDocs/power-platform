@@ -48,7 +48,7 @@ The following links point to detailed information to help you respond to DSR req
 
 |Platform Feature Area  |Link to detailed response steps  |
 |---------|---------|
-|Power Apps  |  [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md)      |
+|Power Apps  |  [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-privacy-export-dsr.md)      |
 |Dataverse     |  [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-privacy-dsr-guide.md)     |
 |Power Automate    | [Responding to GDPR Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary)       |
 |Microsoft Accounts (MSAs)     | [Respond to GDPR Data Subject Rights (DSRs) requests](/power-automate/gdpr-dsr-summary-msa)       |
