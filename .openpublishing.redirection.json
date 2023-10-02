@@ -641,6 +641,21 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "power-platform/solution-templates/hr/awards-and-recognition/install.md",
+      "redirect_url": "/power-platform/solution-templates/hr/awards-and-recognition/install-and-configure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/solution-templates/hr/employee-kudos/install.md",
+      "redirect_url": "/power-platform/solution-templates/hr/employee-kudos/install-and-configure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/solution-templates/hr/employee-kudos/use.md",
+      "redirect_url": "/power-platform/solution-templates/hr/employee-kudos/manage",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/admin-powerapps-enterprise-deployment.md",
       "redirect_url": "https://aka.ms/powerappsadminwhitepaper",
       "redirect_document_id": "false"
