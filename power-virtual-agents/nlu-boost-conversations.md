@@ -1,5 +1,5 @@
 ---
-title: Generative Answers
+title: Generative answers
 description: Provide answers and information for your bot users, even if you haven't created a topic for their issue.
 keywords: "PVA"
 ms.date: 5/03/2023
@@ -66,19 +66,19 @@ In addition to [URL considerations](nlu-boost-conversations.md#url-consideration
 >  
 > Your bot must be created in the US region. 
 >  
-> Other regions, and languages other than English, aren't supported during the preview.
+> Other regions, and languages other than English, aren't supported.
 
 - An account for Power Virtual Agents.
 
     > [!NOTE]
     >
-    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
+    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
 
   - You must enable the **generative answers** option for each bot.
 
 - [Review AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
-- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported during the preview.
+- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported.
 
 - This capability may be subject to usage limits or capacity throttling.
 
@@ -96,7 +96,7 @@ In addition to [URL considerations](nlu-boost-conversations.md#url-consideration
 
 3. Provide a website you'd like the bot to use for generating answers, and click **Create**. See the [URL considerations](#url-considerations) section for what types of URLs you can use. 
 
-    :::image type="content" source="media/nlu-gpt/create-bot-highlight-22May23.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
+    :::image type="content" source="media/nlu-gpt/create-bot-highlight-22May23.png" alt-text="Screenshot of the bot creation screen.":::
 
 After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that generative answers is enabled. From the **Overview** page, you can navigate to the **AI Capabilities** page if you want to change the URL you want to use.
 
@@ -104,7 +104,7 @@ You can also change the URL, disable generative answers, or change the level of 
 
 1. With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
 
-    1. Under **Boost conversational coverage (preview)**, use the checkbox for generative answers to enable or disable the capability.
+    1. Under **Boost conversational coverage**, use the checkbox for generative answers to enable or disable the capability.
 
     1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](#url-considerations) as when enabling the capability when you create a bot.
 
@@ -189,13 +189,13 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 ### Quotas
 
-Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. During preview, bots with "Generative Answers" enabled have a limit on the number of queries they can make that reach out to the URL you specified.
+Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. 
 
-During the preview, bots with generative answers enabled have a limit on the number of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas)
+Bots with generative answers enabled have a limit on the number of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas)
 
 ### Pricing
 
-During the preview, the use of the boosted conversations capability isn't billable and follows the [usual quotas and limitations](requirements-quotas.md#quotas).
+The use of the boosted conversations capability isn't billable and follows the [usual quotas and limitations](requirements-quotas.md#quotas).
 
 ## AI response generation training, model, and usage notes
 
