@@ -678,7 +678,7 @@
               href: /powerapps/maker/portals/admin/power-platform-admin-center
         - name: Activity logging
           items:
-            - name: View Power Platform administrative logs in Microsoft Purview
+            - name: View Power Platform administrative logs in Microsoft Purview (preview)
               href: admin-activity-logging.md
             - name: Power Apps activity logging
               href: logging-powerapps.md

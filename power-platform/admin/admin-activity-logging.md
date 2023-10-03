@@ -1,5 +1,5 @@
 ---
-title: View Power Platform administrative logs using auditing solutions in Microsoft Purview
+title: View Power Platform administrative logs using auditing solutions in Microsoft Purview (preview)
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,7 +12,9 @@ search.audienceType:
   - admin
 ---
 
-# View Power Platform administrative logs using auditing solutions in Microsoft Purview
+# View Power Platform administrative logs using auditing solutions in Microsoft Purview (preview)
+
+[!INCLUDE preview-banner]
 
 Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies and integration-related settings. Hence, it becomes important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
 
@@ -22,7 +24,9 @@ In this article, you learn about activities that are performed on Power Platform
 - [Environment Property and Setting Change Activities](#activity-category-environment-property-and-setting-change-activities)
 - Environment Security and Permission Change Activities
 
-> [!NOTE]
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Administrative activities for Power Platform environments are enabled by default on all tenants. You can't disable activity collection.
 > - At least one user with an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview.
 
@@ -56,7 +60,7 @@ Each activity event contains a payload of metadata that is specific to the indiv
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
-| Changed Property on Environment | Communicates when a property on an environment has changed. In general, properties are metadata (name) that is associated with an Environment.</br> The list of Property change events includes:</br><ul></br><li>Display Name</li></br><li>Domain Name</li></br><li>Security GroupId</li></br><li>Admin Mode</li></br><li>Background Operations State</li></br></ul> |
+| Changed Property on Environment | Communicates when a property on an environment has changed. In general, properties are metadata (name) that is associated with an Environment. Includes changes to:<ul><li>Display Name</li><li>Domain Name</li><li>Security GroupId</li><li>Admin Mode</li><li>Background Operations State</li></ul> |
 
 ## View activities in Microsoft Purview
 
@@ -74,11 +78,11 @@ Narrow down search constructs that are specific to individual events.
 
 As you search, individual activities are shown. A common schema is enforced to enable search constructs across activities. The value in the **PropertyCollection** field is specific to each activity type.
 
-For more information about the Microsoft Purview audit log, data retention policies and capabilities, go to [Auditing solutions in Microsoft Purview](purview/audit-solutions-overview).
+For more information about the Microsoft Purview audit log, data retention policies and capabilities, go to [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 ### See also
 
-- [Auditing solutions in Microsoft Purview](purview/audit-solutions-overview)
+- [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
 - [Detailed properties in the audit log](/purview/audit-log-detailed-properties)
 - [Power Apps activity logging](logging-powerapps.md)
