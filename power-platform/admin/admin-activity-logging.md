@@ -14,7 +14,7 @@ search.audienceType:
 
 # View Power Platform administrative logs using auditing solutions in Microsoft Purview (preview)
 
-[!INCLUDE preview-banner]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies and integration-related settings. Hence, it becomes important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
 
