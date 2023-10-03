@@ -22,7 +22,7 @@ This means you can quickly create and deploy a functional bot, without having to
 
 The capability uses AI to understand what you want to do, and then automatically creates a functioning topic, complete with different node types and conversational responses.
 
-See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for more examples and descriptions of how this capability works, and how to use it with the [Boost conversations (preview)](nlu-boost-conversations.md) capability.
+See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for more examples and descriptions of how this capability works, and how to use it with the [Boost conversations](nlu-boost-conversations.md) capability.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for
 
     > [!NOTE]
     >  
-    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
+    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
@@ -58,7 +58,7 @@ When creating a new topic, you can select **Create with Copilot** and ask the AI
     > 1. Select the **Settings** icon on the top menu and then **General settings**.
     >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents menu with the Settings icon open.":::
     >  
-    > 2. Set the switch under **Intelligent authoring support (preview)** to **On**.
+    > 2. Set the switch under **Intelligent authoring support ()** to **On**.
 
 2. In the **Create it with Copilot (preview)** window that appears, enter a name for your topic in the **Name your topic** field. 
 
