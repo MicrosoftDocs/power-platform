@@ -120,8 +120,8 @@ You can view a list of all assigned licenses in the [Microsoft Admin Center](htt
 | Dynamics 365 for Marketing Attach  | 85430fb9-02e8-48be-9d7e-328beb41fa29  | DYN365_MARKETING_APP_ATTACH  |
 | Dynamics 365 Marketing (Self-Service)  | 1224df81-ff37-4222-a5fe-85c7feecdba8  | DYN365_MARKETING_APP_DEPT  |
 | Dynamics 365 Marketing Attach (Self-Service)  |	95b34ddc-99ff-41f0-823d-0051478d9469  |	DYN365_MARKETING_APP_ATTACH_DEPT  |
-| Dynamics 365 Marketing Additional Application (Self-Service)  |	fcc6a509-4249-47bf-8f21-0d882dbbdae3  |	DYN365_MARKETING_APPLICATION_ADDON_DEPT	Company
-| Dynamics 365 Marketing Additional Non-Prod Application (Self-Service)	  | a7cd421b-9f64-4206-a33b-b9154ae28f97  |	DYN365_MARKETING_SANDBOX_APPLICATION_ADDON_DEPT	Company
+| Dynamics 365 Marketing Additional Application (Self-Service)  |	fcc6a509-4249-47bf-8f21-0d882dbbdae3  |	DYN365_MARKETING_APPLICATION_ADDON_DEPT	 |
+| Dynamics 365 Marketing Additional Non-Prod Application (Self-Service)	  | a7cd421b-9f64-4206-a33b-b9154ae28f97  |	DYN365_MARKETING_SANDBOX_APPLICATION_ADDON_DEPT	 |
 | Project Plan 3  | 53818b1b-4a27-454b-8896-0dba576410e6  | PROJECTPROFESSIONAL  |
 | Project Plan 3 (for Department)  | 46102f44-d912-47e7-b0ca-1bd7b70ada3b  | PROJECT_PLAN3_DEPT  |
 | Project Plan 3 for faculty  | 46974aed-363e-423c-9e6a-951037cec495  | PROJECTPROFESSIONAL_FACULTY  |
@@ -133,5 +133,6 @@ You can view a list of all assigned licenses in the [Microsoft Admin Center](htt
 | Project Plan 1 (for Department)  | 84cd610f-a3f8-4beb-84ab-d9d2c902c6c9  | PROJECT_PLAN1_DEPT  |
 | Project Plan 3 for GCC  | 074c6829-b3a0-430a-ba3d-aca365e57065  | PROJECTPROFESSIONAL_GOV  |
 | Project Plan 5 for GCC  | f2230877-72be-4fec-b1ba-7156d6f75bd6  | PROJECTPREMIUM_GOV  |
+| Dynamics 365 Customer Insights (and Attach)  | 1720c3f7-7da3-4a11-8324-92aad283eb68  | DYN365_CUSTOMER_INSIGHTS_JOURNEYS_BASE  |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
