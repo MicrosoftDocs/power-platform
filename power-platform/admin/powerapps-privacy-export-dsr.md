@@ -115,7 +115,7 @@ Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -
 >  This function only works for environments that do not have a Dataverse database environment.
 
 ### For environments with a Dataverse database
-With the introduction of the Dataverse, if a database is created within the environment, role assignments are stored as records within the Dataverse database environment. For information on how to remove personal data from a Dataverse database environment, see [Common Data Serviice User personal data removal](./common-data-service-privacy-dsr-guide.md).
+With the introduction of the Dataverse, if a database is created within the environment, role assignments are stored as records within the Dataverse database environment. For information on how to remove personal data from a Dataverse database environment, see [Common Data Service User personal data removal](./common-data-service-privacy-dsr-guide.md).
  
 ## Step 3: Export personal data contained within canvas apps created by the user
 
