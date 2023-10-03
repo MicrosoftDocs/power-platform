@@ -38,7 +38,7 @@ The following table describes the miscellaneous privileges, which in the new, mo
 | Bulk Delete | prvBulkDelete | [Bulk delete](delete-bulk-records.md) |
 | Change Hierarchy Security Settings | prvWriteHierarchicalSecurityConfiguration | [Hierarchy security to control access](hierarchy-security.md) |
 | Configure Internet Marketing module | prvConfigureInternetMarketing | [Create and deploy marketing pages](/dynamics365/marketing/create-deploy-marketing-pages) |
-| Configure Yammer | prvConfigureYammer | [Yammer resources](https://resources.techcommunity.microsoft.com/yammer/adoption/) |
+| Configure Yammer | prvConfigureYammer | [Yammer resources](https://adoption.microsoft.com/yammer/) |
 | Create own calendar | prvCreateOwnCalendar | [Create and customize marketing calendars](/dynamics365/marketing/customize-marketing-calendars) |
 | Create Quick Campaign | prvAllowQuickCampaign | [Create a quick campaign using in-app marketing (Sales)](/dynamics365/sales-enterprise/create-quick-campaign-using-app-marketing-sales) |
 | Delete Audit Partitions | prvDeleteAuditPartitions | [Recover database space by deleting audit logs](recover-database-space-deleting-audit-logs.md) |
