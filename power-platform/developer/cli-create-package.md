@@ -84,37 +84,37 @@ You can use the Plug-in Registration tool (PRT) to perform the following tasks:
 
 PRT has a new **Display by Package** view to list any plug-in packages previously imported:
 
-:::image type="content" source="media/prt-display-by-package-view.png" alt-text="View a list of plug-in packages using the plug-in registration tool.":::
+:::image type="content" source="media/tools/prt-display-by-package-view.png" alt-text="View a list of plug-in packages using the plug-in registration tool.":::
 
 ### Register a NuGet package as a plug-in package
 
 PRT has a new command to select a NuGet package to import/register as a plug-in package.
 
-:::image type="content" source="media/prt-register-new-package-command.png" alt-text="Command to register a plug-in package using the plug-in registration tool.":::
+:::image type="content" source="media/tools/prt-register-new-package-command.png" alt-text="Command to register a plug-in package using the plug-in registration tool.":::
 
 This command opens a dialog to select the plug-in package.
 
 You can select an existing solution or create a new one.
 
-:::image type="content" source="media/prt-import-new-plugin-package-dialog.png" alt-text="Dialog to import a new plug-in package.":::
+:::image type="content" source="media/tools/prt-import-new-plugin-package-dialog.png" alt-text="Dialog to import a new plug-in package.":::
 
 From the **Display by Package** view, you can select the assembly and register steps.
 
-:::image type="content" source="media/prt-new-plug-in package-view.png" alt-text="Showing a newly uploaded plug-in package in the Display by Package view.":::
+:::image type="content" source="media/tools/prt-new-plug-in package-view.png" alt-text="Showing a newly uploaded plug-in package in the Display by Package view.":::
 
 The assembly is also available within the **Display by Assembly** view.
 
-:::image type="content" source="media/prt-show-pluginpackage-assembly-display-by-assembly-view.png" alt-text="Showing the plug-in package assembly in the Display by Assembly view.":::
+:::image type="content" source="media/tools/prt-show-pluginpackage-assembly-display-by-assembly-view.png" alt-text="Showing the plug-in package assembly in the Display by Assembly view.":::
 
 ### Update a plug-in package
 
 While viewing the list of plug-in packages using the **Display by Package** view, select the plug-in package and select the **Update** command.
 
-:::image type="content" source="media/prt-pluginpackage-update-command.png" alt-text="Showing the Update command while a plug-in package is selected.":::
+:::image type="content" source="media/tools/prt-pluginpackage-update-command.png" alt-text="Showing the Update command while a plug-in package is selected.":::
 
 This command opens a dialog so you can select the NuGet Package with changes.
 
-:::image type="content" source="media/prt-update-pluginpackage-dialog.png" alt-text="The update Plug-in Package dialog.":::
+:::image type="content" source="media/tools/prt-update-pluginpackage-dialog.png" alt-text="The update Plug-in Package dialog.":::
 
 > [!IMPORTANT]
 > If your update removes any plug-in assemblies, or types which are used in plug-in step registrations, the update will be rejected. You must manually remove any step registrations that use plug-in assemblies or plug-in types that you want to remove with your update.
@@ -125,7 +125,7 @@ This command opens a dialog so you can select the NuGet Package with changes.
 
 While viewing the list of plug-in packages using the **Display by Package** view, select the plug-in package and select the **Unregister** command.
 
-:::image type="content" source="media/prt-pluginpackage-unregister-command.png" alt-text="Showing the Unregister command while a plug-in package is selected.":::
+:::image type="content" source="media/tools/prt-pluginpackage-unregister-command.png" alt-text="Showing the Unregister command while a plug-in package is selected.":::
 
 > [!IMPORTANT]
 > You cannot unregister a package that has any plug-in step registrations for any plug-in assemblies in the package. You must first unregister all step registrations for the assemblies in the package before you can delete the package.
