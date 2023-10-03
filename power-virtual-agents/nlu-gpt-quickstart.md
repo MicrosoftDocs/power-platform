@@ -38,8 +38,11 @@ This quickstart guide introduces you to the minimal steps necessary to get start
     >  
     > Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
-
 - [Review AI response generation training, model, and usage FAQ](faqs-generative-answers.md) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
+
+- You must be using the [current version of Power Virtual Agents](overview-preview.md), and the bot type must not be **Classic**. Classic chatbots have **(classic)** added to their name.  
+
+    :::image type="content" source="media/nlu-gpt/nlu-boost-bots.png" alt-text="Screenshot of the list of chatbots with one bot with clasic added to its name.":::
 
 - Your bot must be created in the US region. Other regions, and languages other than English, aren't supported.
 
@@ -72,16 +75,11 @@ Ready to get started? The first step is to create your bot.
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-home.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
 
-2. Select **Try the unified canvas** to create a bot. 
-   - An opt-in confirmation message appears the first time you create or view a bot that describes some of their benefits.
-
-   :::image type="content" source="media/nlu-gpt/nlu-quickstart-create-bot.png" alt-text="Screenshot of the Create a chatbot page.":::
-
-3. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic, and select **Create**.
+1. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic, and select **Create**.
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the Boost your conversation option.":::
 
-There you have it! You’ve created a new bot.  
+
 
  > [!NOTE]
  > This initial bot creation only prompts you for one fallback website. You can add other data sources, including internal resources such as Sharepoint or OneDrive, and external facing websites. For more information about including additional data sources, refer to [Use Copilot to edit a topic](nlu-authoring.md#use-copilot-to-edit-a-topic).
@@ -114,7 +112,7 @@ See the [Boost conversations](nlu-boost-conversations.md) topic for more details
       
 4. Select **Create**.
 
-Once your topic is created, your bot is ready for testing. It's that simple!
+Once your topic is created, your bot is ready for testing.
 
 You can explore ways to extend and enhance your boosted bot and topic in [Create (and edit) with Copilot](nlu-authoring.md).
 
@@ -123,13 +121,16 @@ You can explore ways to extend and enhance your boosted bot and topic in [Create
 Once you create a bot, you can immediately test the bot and try out different phrases for your bot to reply to. 
 The **Test bot** pane shows how a bot conversation plays out at every step and you can fine-tune a topic directly within the **Power Virtual Agents** portal:
  
-1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the side navigation menu. 
+1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the side navigation menu.
+   
     :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-bot.png" alt-text="Screenshot of Test bot option.":::
-2. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to. For example, you could type *What is your return policy?*. 
+
+1. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to. For example, you could type *What is your return policy?*. 
  
    The bot retrieves information from the website and returns a response. The response provides a link to where it found that information and allows you to provide feedback.
  
-4. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
+1. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
+
     :::image type="content" source="media/nlu-gpt/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
  
 > [!NOTE]

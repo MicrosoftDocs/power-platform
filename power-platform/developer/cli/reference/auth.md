@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 7/13/2023
+ms.date: 9/18/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -77,10 +77,10 @@ Use one of these values:
 - `UsGovHigh`
 - `UsGovDod`
 - `China`
-  
+
 #### `--deviceCode` `-dc`
 
-Use the Azure Active Directory Device Code flow for interactive sign-in.
+Use the Microsoft Entra ID Device Code flow for interactive sign-in.
 
 This parameter requires no value. It's a switch.
 
@@ -117,7 +117,7 @@ The resource URL to connect to
 
 #### `--username` `-un`
 
-Optional: The username to authenticate with; shows Azure Active Directory dialog if not specified.
+Optional: The username to authenticate with; shows Microsoft Entra ID dialog if not specified.
 
 [!INCLUDE [auth-create-remarks](includes/auth-create-remarks.md)]
 

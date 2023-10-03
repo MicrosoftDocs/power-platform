@@ -3,7 +3,7 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/06/2023
+ms.date: 09/21/2023
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -12,8 +12,6 @@ search.audienceType:
   - admin
 ---
 # Manage group teams
-
-<!-- legacy procedure --> 
 
 ## About group teams
 
@@ -37,7 +35,7 @@ When members of these group teams access these environments, their access rights
 
 #### Provision and deprovision users 
 
-Once the group team and its security role are established in an environment, user access to the environment is based on the user membership of the Azure AD groups. When a new user is created in the tenant, all the administrator needs to do is assign the user to the appropriate Azure AD group, and assign Dataverse licenses. The user can immediately access the environment without the need to wait for the administrator to assign a security role.
+Once the group team and its security role are established in an environment, user access to the environment is based on the user membership of the Azure AD groups. When a new user is created in the tenant, all the administrator needs to do is assign the user to the appropriate Azure AD group, and assign Dataverse licenses. The user can immediately access the environment without the need to wait for the administrator to add the user into the environment or assign a security role. The user is created in the environment under the root business unit.  
 
 When users are deleted/disabled in Azure AD or removed from the Azure AD groups, they lose their group membership and won't be able to access the environment when they try to sign in.  
 
@@ -101,7 +99,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 
 6. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
-   - **Group name:** Start entering text to select an existing Azure AD group name.These groups are pre-created in Azure AD.
+   - **Group name:** Start entering text to select an existing Azure AD group name. These groups are precreated in Azure AD.
    - **Membership type:** Select the membership type from the dropdown list. See [How Azure AD security group members match to Dataverse group team members](#how-azure-ad-security-group-members-match-to-dataverse-group-team-members).
    
    :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="Screenshot of settings for a new Azure AD team.":::
@@ -147,9 +145,10 @@ Review the following table for how members in Azure AD groups match to Dataverse
 > - If your environment has a security group, you will need to add the group team's Azure AD group as a member of that security group in order for the group team's users to be able to access the environment.
 > - **The list of team members listed in each group team only displays the user members who have accessed the environment.** This list doesn't show all the group members of the Azure AD group. When an Azure AD group member accesses the environment, the group member is added to the group team. The team member's privileges are derived dynamically at run-time by inheriting the group team's security role. Since the security role is assigned to the group team and the group team member inherits the privileges, the security role is not assigned directly to the group team member. Due to the team member's privileges being derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
 > - **Azure AD group members are also added to the group team with [impersonation calls](/powerapps/developer/common-data-service/impersonate-another-user)**. You can use create group members in the group team on behalf of another user using impersonation. 
-> - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
+> - Team members are added or removed from the group team at run-time when the group member signs into the environment. These addition and removal group member events can be used to trigger plugin operations.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission.
-> - The group team name is not automatically updated when the Azure AD group name is changed. There is no impact in system operation with group name changes, but we recommend you update it via the Power Platform admin center Teams settings. 
+> - The group team name isn't automatically updated when the Azure AD group name is changed. There's no impact in system operation with group name changes, but we recommend that you update it in the Power Platform admin center Teams settings.
+> - The AD group members are automatically created in the environment when they first access the environment. The users are added under the root business unit. You don't need to move the user to a different business unit if you enabled the [Modernized Business Units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) to manage your user's data access. 
 
 ## Manage the security roles of a team
 
@@ -168,7 +167,7 @@ See [Change the business unit for a team](create-edit-business-units.md#change-t
 
 ## Add group team types to the default lookup view
 
-When manually assigning a record or sharing a record using the built in form, the default options list does not pick up some group team types such as Azure AD. You can edit the filter on the default lookup view of the teams table so that it includes these groups.
+When manually assigning a record or sharing a record using the built-in form, the default options list doesn't pick up some group team types such as Azure AD. You can edit the filter on the default lookup view of the teams table so that it includes these groups.
 
 1.	Sign in to [Power Apps](https://make.powerapps.com).
 

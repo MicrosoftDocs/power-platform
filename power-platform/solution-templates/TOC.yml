@@ -42,18 +42,48 @@
       href: finance/sap-procurement/use/vendor-management.md
     - name: Requisition management
       href: finance/sap-procurement/use/requisition-management.md
-    - name: Purchase orders management
+    - name: Purchase order management
       href: finance/sap-procurement/use/purchase-order-management.md
+    - name: Goods receipt management
+      href: finance/sap-procurement/use/goods-receipt-management.md
+    - name: Vendor invoice management
+      href: finance/sap-procurement/use/vendor-invoice-management.md
+    - name: Vendor payment management
+      href: finance/sap-procurement/use/payment-management.md
   - name: FAQs
     href: finance/sap-procurement/faqs.md
-- name: Human Resources - Employee Kudos
+- name: Human Resources
   items:
-  - name: Overview
-    href: hr/employee-kudos/overview.md
-  - name: Install
-    href: hr/employee-kudos/install.md
-  - name: Use
-    href: hr/employee-kudos/use.md  
+  - name: Employee Kudos
+    items:
+    - name: Overview
+      href: hr/employee-kudos/overview.md
+    - name: Install and configure
+      href: hr/employee-kudos/install-and-configure.md
+    - name: Manage
+      href: hr/employee-kudos/manage.md
+  - name: Awards and Recognition
+    items:
+    - name: Overview
+      href: hr/awards-and-recognition/overview.md
+    - name: Install and configure
+      href: hr/awards-and-recognition/install-and-configure.md
+    - name: Manage
+      href: hr/awards-and-recognition/manage.md
+    - name: Use
+      href: hr/awards-and-recognition/use.md
+  - name: Onboarding Buddy
+    items:
+    - name: Overview
+      href: hr/onboarding-buddy/overview.md
+    - name: Install and configure
+      href: hr/onboarding-buddy/install-and-configure.md
+    - name: Customize
+      href: hr/onboarding-buddy/customize.md
+    - name: Manage
+      href: hr/onboarding-buddy/manage.md
+    - name: Use
+      href: hr/onboarding-buddy/use.md
 - name: Related content
   items:
   - name: Power Apps documentation

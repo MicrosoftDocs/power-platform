@@ -33,6 +33,10 @@ By leveraging recent advancements in AI large language models, Power Virtual Age
     > [!NOTE]
     > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
 
+- You must be using the [current version of Power Virtual Agents](unified-authoring-conversion.md), and the bot type mustn't be **Classic**. Classic chatbots have **(classic)** added to their name. 
+
+    :::image type="content" source="media/nlu-gpt/nlu-boost-bots.png" alt-text="Screenshot of the list of chatbots with one bot with clasic added to its name.":::
+
 - This capability may be subject to usage limits or capacity throttling.
 
 ## Generate a bot's responses on-the-fly

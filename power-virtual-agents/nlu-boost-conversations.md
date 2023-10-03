@@ -52,7 +52,7 @@ Details and examples on how you can expand your bot's ability to use generative 
 - Internal resources include:
   - SharePoint
   - OneDrive for Business
-  - Dataverse
+  - Documents uploaded to Dataverse
   - Custom data (internal or external): supply your own content from any source; for instance, from a Power Automate Flow, Skill, or other source
 
 

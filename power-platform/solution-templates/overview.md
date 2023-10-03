@@ -35,9 +35,9 @@ Power Platform solution templates require premium licensing.
 
 ## Benefits of solution templates
 
-Implementing enterprise software use cases can be time-consuming and expensive. Solution templates for Power Platform provide a foundation for you to start from. You can use the full potential of Power Platform to extend solution templates, connecting workflows across more systems of record and digitizing manually intensive processes.
+Implementing enterprise software use cases can be time-consuming and expensive. Solution templates for Power Platform provide a foundation for you to start from. You can use the full potential of Power Platform to extend the templates by connecting workflows across more systems of record and digitizing manually intensive processes.
 
-Solution templates offer the following benefits:
+Templates for Power Platform offer the following benefits:
 
 - **Time to value**
   - Remove many of the upfront investments needed in traditional enterprise software development.
@@ -55,12 +55,14 @@ Solution templates offer the following benefits:
 
 ## Current templates
 
-Solution templates are available on Microsoft AppSource. Be sure to check often for new templates that become available for more lines of business and organization functions.
+Templates for Power Platform are available on Microsoft AppSource. Be sure to check often for new templates that become available for more lines of business and organization functions.
 
 | Line of business | Organization function | Learn documentation | Access |
 | --- | --- | --- | --- |
 | Finance | SAP procurement | [SAP procurement](finance/sap-procurement/overview.md) | <https://aka.ms/AccessSAPProcurementTemplate> |
-| Human resources | Employee kudos | [Employee kudos](hr/employee-kudos/overview.md) | <https://aka.ms/AccessEmployeeKudosTemplate> |
+| Human resources | Peer-to-peer recognition | [Employee Kudos](hr/employee-kudos/overview.md) | <https://aka.ms/AccessEmployeeKudosTemplate> |
+| Human resources | Employee awards | [Awards and Recognition](hr/awards-and-recognition/overview.md) | <https://aka.ms/AccessAwardsandRecognitionTemplate> |
+| Human resources | New employee mentoring  | [Onboarding Buddy](hr/onboarding-buddy/overview.md) | <https://aka.ms/AccessOnboardingBuddyTemplate> |
 
 ## Support
 
@@ -68,8 +70,9 @@ You can log your questions and get support for the solution templates at <https:
 
 ## Next steps
 
-- [Get started with SAP Procurement solution template](finance/sap-procurement/administer/get-started.md)
-- [Install the Employee Kudos template](hr/employee-kudos/install.md)
+- [Get started with SAP Procurement template](finance/sap-procurement/administer/get-started.md)
+- [Install the Employee Kudos template](hr/employee-kudos/install-and-configure.md)
+- [Install the Awards and Recognition template](hr/awards-and-recognition/install-and-configure.md)
 
 ## See also
 
@@ -77,5 +80,8 @@ You can log your questions and get support for the solution templates at <https:
 - [SAP Vendor Management app](finance/sap-procurement/use/vendor-management.md)
 - [SAP Requisition Management app](finance/sap-procurement/use/requisition-management.md)
 - [SAP Purchase Orders Management app](finance/sap-procurement/use/purchase-order-management.md)
-- [Get started using the Employee Kudos app](hr/employee-kudos/use.md)
-
+- [SAP Goods Receipt Management app](finance/sap-procurement/use/goods-receipt-management.md)
+- [SAP Vendor Invoice Management app](finance/sap-procurement/use/vendor-invoice-management.md)
+- [SAP Vendor Payment Management app](finance/sap-procurement/use/payment-management.md)
+- [Manage the Employee Kudos app](hr/employee-kudos/manage.md)
+- [Use the Awards and Recognition app](hr/awards-and-recognition/use.md)

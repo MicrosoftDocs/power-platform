@@ -34,10 +34,22 @@
       href: nlu-gpt-overview.md
     - name: Quickstart guide for building bots with GPT
       href: nlu-gpt-quickstart.md
+    - name: Use plugin actions in Power Virtual Agents (preview)
+      href: advanced-plugin-actions.md
     - name: Generative answers
       href: nlu-boost-conversations.md
     - name: Generative answers with Search and summarize
       href: nlu-boost-node.md
+    - name: Use a Bing Custom Search to search a number of websites
+      href: nlu-generative-answers-bing.md
+    - name: Use a connection to Azure OpenAI on your data
+      href: nlu-generative-answers-azure-openai.md
+    - name: Use uploaded documents (preview)
+      href: nlu-documents.md
+    - name: Use content on SharePoint or OneDrive for Business
+      href: nlu-generative-answers-sharepoint-onedrive.md
+    - name: Use a custom data source
+      href: nlu-generative-answers-custom-data.md
     - name: Create (and edit) with Copilot
       href: nlu-authoring.md
     - name: AI features for Teams and Classic bots
@@ -108,6 +120,8 @@
       href: advanced-entities-slot-filling.md
     - name: Use variables
       href: authoring-variables.md
+    - name: Make HTTP requests
+      href: authoring-http-node.md
     - name: Sending event activities
       href: authoring-send-event-activities.md
     - name: Reuse variables across topics

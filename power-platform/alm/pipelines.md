@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 06/20/2023
+ms.date: 09/15/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
 ---
@@ -82,8 +82,10 @@ No. Solutions are exported as soon as a deployment request is submitted (when th
 
 ### Are standalone licenses required to use pipelines?
 
-- Both source and target environments must be enabled as Managed Environments. Managed Environments isn't required for the pipelines host. 
-- Standalone licenses aren't required to enable Managed Environments for developer and trial type environments.
+- Developer environments aren't required to be Managed Environments. They can be used for development and testing with the developer plan.
+- The pipelines host should be a production environment, but the pipelines host doesn't have to be a Managed Environment.
+- All other environments used in pipelines must be enabled as Managed Environments.
+- Licenses granting premium use rights are required for all Managed Environments.
 
 A common setup example:
 
@@ -122,12 +124,13 @@ Yes, together these tools are powerful while keeping maker experiences simple. M
 
 Not currently. The same is true when manually importing solutions.
 
-### Can I set retention policicies for pipelines data?
+### Can I set retention policies for pipelines data?
+
 Yes. You can configure bulk delete jobs in the Dataverse pipelines host to delete data on a defined schedule. 
 
 ### Can I specify advanced solution import behaviors such as update versus upgrade?
 
-Not currently. Pipelines default import behavior is _Upgrade_ with _Maintain customizations_.
+Not currently. Pipelines default import behavior is _Upgrade_ with _Overwrite customizations_.
 
 ### Can an environment be associated with multiple hosts?
 
@@ -139,7 +142,7 @@ Not currently. However, intentional extension hooks are available to customize p
 
 ### Where can I view and run pipelines?
 
-Currently within any development environments associated with a pipeline. Pipelines can't be viewed or run from within target environments. Notice you can also retrieve and run pipelines from the Power Platform CLI.
+Navigate to an unmanaged solution in development to an environment associated with your pipeline. Pipelines can't be viewed or run from the default solution, managed solutions, or in target environments. Notice you can also retrieve and run pipelines from the Power Platform CLI.
 
 ### Can I deploy across regions?
 
@@ -151,7 +154,7 @@ Yes, this is possible, although we recommend starting with the same pipeline for
 
 ### Can the host environment also be used as a development or target environment?
 
-While possible, this isn't typically recommended; especially for development environments that may be deleted or reset. 
+Using the same environment for development and the host isn't supported; other combinations aren't recommended as a best practice.  
 
 ### How can I view what changed between different versions?
 
@@ -163,7 +166,7 @@ This is a valid configuration and should be evaluated based on the needs and pol
 
 ### Can I deploy unmanaged solutions?
 
-No. We recommend that you always deploy managed solutions to non-development environments. Notice unmanaged solutions are automatically exported and stored in the pipelines host so you can download and import them to other development environments or put them in source control. 
+No. We recommend that you always deploy managed solutions to nondevelopment environments. Notice unmanaged solutions are automatically exported and stored in the pipelines host so you can download and import them to other development environments or put them in source control. 
 
 ### Can I deploy multiple solutions at once?
 
@@ -188,7 +191,7 @@ While there are many additional functional differences, the fundamental differen
 We encourage customers to use pipelines for core deployment functionality, and when needed, extend pipelines to integrate with other CI/CD tools. When used together, the workloads required within CI/CD tools often become less complicated and costly to maintain. 
 
 ### Can I use impersonation to deploy on behalf of another user?
-This is not supported.
+This isn't supported.
 
 ## Next steps
 
