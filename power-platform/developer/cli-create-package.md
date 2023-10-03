@@ -22,16 +22,16 @@ This article helps you:
 
 > [!div class="checklist"]
 >
-> * Decide whether to write a How-to article for a product or service.
-> * Identify what content to include in a How-to article.
+> * Create a Visual Studio plug-in project
+> * Add a dependent assembly to the project and build
+> * Use the Plug-in Registration tool to upload and register your package
 
 More information: [Build and package plug-in code](/power-apps/developer/data-platform/build-and-package).
 
 ## Prerequisites
 
-- A plug-in package
 - Access to a Dataverse environment
-- An account in the target environment with System Administrator or System Customizer role
+- An system user account in the target environment with System Administrator or System Customizer role
 - The tools described in the following table
 
 |Tool/App|Instructions |
@@ -61,13 +61,13 @@ These commands create a Visual Studio .NET Framework class library project based
 
 Depending on your Visual Studio solution configuration, when you open the Visual Studio project in Visual Studio and build it, a NuGet package is generated for the project in the `bin\Debug` or `bin\Release` folder. Each time you build your project, this NuGet package is updated. The NuGet package is the file you upload using the Plug-in Registration tool.
 
-## Add a dependent assembly using NuGet
+## Add a dependent assembly to your project
 
-You can add a NuGet Package to your Visual Studio project as you normally do. After you build the project, you should find the assembly in the NuGet package.
+You can add a NuGet package to your Visual Studio plug-in project as you normally do. After you build the project, you should find the dependent assembly in the NuGet plug-in package.
 
 You can use [NuGet Package Explorer](https://www.microsoft.com/p/nuget-package-explorer/9wzdncrdmdm3) to examine the NuGet package.
 
-## Add a dependent assembly without using NuGet
+### Add a dependent assembly without using NuGet
 
 If you have an assembly that isn't distributed as a NuGet package, you can add it to your project as you normally do. In **Solution Explorer**, right-click **Dependencies** and choose **Add Assembly Reference...**. Select the assembly you want to add.
 
@@ -75,20 +75,22 @@ If you have an assembly that isn't distributed as a NuGet package, you can add i
 
 You can use the Plug-in Registration tool (PRT) to perform the following tasks:
 
-1. View list of available plug-in packages.
-1. Register a NuGet package as a plug-in package.
-1. Update a plug-in package.
-1. Delete plug-in packages.
+1. View list of available plug-in packages
+1. Register a NuGet package as a plug-in package
+
+While you have the PRT open, you can optionally:
+1. Update a plug-in package
+1. Delete plug-in packages
 
 ### View list of available plug-in packages
 
-PRT has a new **Display by Package** view to list any plug-in packages previously imported:
+The PRT has a new **Display by Package** view to list any plug-in packages previously imported:
 
 :::image type="content" source="media/tools/prt-display-by-package-view.png" alt-text="View a list of plug-in packages using the plug-in registration tool.":::
 
 ### Register a NuGet package as a plug-in package
 
-PRT has a new command to select a NuGet package to import/register as a plug-in package.
+The PRT has a command to select a NuGet package to import/register as a plug-in package.
 
 :::image type="content" source="media/tools/prt-register-new-package-command.png" alt-text="Command to register a plug-in package using the plug-in registration tool.":::
 
