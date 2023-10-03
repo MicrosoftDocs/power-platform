@@ -4,7 +4,7 @@ description: "Learn how to start a new Visual Studio project for plug-in or cust
 ms.custom: ""
 ms.date: 01/27/2023
 ms.reviewer: "pehecke"
-ms.topic: "article"
+ms.topic: "how-to"
 author: "phecke" # GitHub ID
 ms.subservice: developer
 ms.author: "pehecke" # MSFT alias of Microsoft employees only
