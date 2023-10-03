@@ -1,0 +1,91 @@
+---
+title: View Power Platform administrative logs using auditing solutions in Microsoft Purview
+description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 10/20/2023
+author: StephenRauchPM
+ms.subservice: admin
+ms.author: stephenrauch 
+ms.reviewer: sericks 
+search.audienceType: 
+  - admin
+---
+
+# View Power Platform administrative logs using auditing solutions in Microsoft Purview
+
+Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies and integration-related settings. Hence, it becomes important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
+
+In this article, you learn about activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces using Microsoft Purview compliance portal. The activities fall within three categories:
+
+- [Environment Lifecycle Operations](#activity-category-environment-lifecycle-operations)
+- [Environment Property and Setting Change Activities](#activity-category-environment-property-and-setting-change-activities)
+- Environment Security and Permission Change Activities
+
+> [!NOTE]
+> - Administrative activities for Power Platform environments are enabled by default on all tenants. You can't disable activity collection.
+> - At least one user with an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview.
+
+The audit activities include actions by Global Administrators, Power Platform Administrators, Dynamics 365 Administrators, members of the System Administrator role (for Power Platform environments with Dataverse), Environment Creator/Owner (for Power Platform environments without Dataverse) and impersonated users that map to any of these roles.
+
+Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). A schema that defines the payload of metadata that is unique for each activity.
+
+## Activity category: Environment Lifecycle Operations
+
+Each activity event contains a payload of metadata that is specific to the individual event. The following Environment Lifecycle Operation activities are delivered to Microsoft Purview.
+
+| **Event**                  | **Description**                                                                                                                        |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Provisioned environment    | Environment created.                                                                                                                   |
+| Deleted environment        | Environment deleted.                                                                                                                   |
+| Recovered environment      | Recovery of a deleted environment that was deleted within seven days.                                                                      |
+| Hard-deleted environment   | Environment that was hard deleted.                                                                                                     |
+| Moved environment          | Environment moved to a different Tenant.                                                                                               |
+| Copied environment         | Copied environment including the specific attributes that were copied (application data, users, and customizations, and schemas). |
+| Backed up environment      | Environment that has been backed up.                                                                                                   |
+| Restored environment       | Environment that has been restored from backup.                                                                                        |
+| Converted environment type | Environment that was converted to a different environment type (Production or Sandbox).                                          |
+| Reset environment          | A sandbox environment has been reset.                                                                                                  |
+| Upgraded environment       | A component of an environment has been upgraded to a new version.                                                                      |
+| CMK-Renewed environment    | Customer Managed Key (CMK) has been renewed on an Environment.                                                                         |
+| CMK-Reverted environment   | Removed environment from enterprise policy to return encryption to Microsoft managed key.                                              |
+
+## Activity category: Environment Property and Setting Change Activities
+
+Each activity event contains a payload of metadata that is specific to the individual event. The following Environment Property and Setting activities are delivered to Microsoft Purview.
+
+| **Event** | **Description** |
+|-------------------------|-------------------------|
+| Changed Property on Environment | Communicates when a property on an environment has changed. In general, properties are metadata (name) that is associated with an Environment.</br> The list of Property change events includes:</br><ul></br><li>Display Name</li></br><li>Domain Name</li></br><li>Security GroupId</li></br><li>Admin Mode</li></br><li>Background Operations State</li></br></ul> |
+
+## View activities in Microsoft Purview
+
+When audit log search is turned on in the Microsoft Purview compliance portal, admin activity from your organization is recorded in the Microsoft Purview audit log.
+
+You can use several methods to search events in Microsoft Purview.
+
+:::image type="content" source="media/admin-activity-logging/audit-search.png" alt-text="Microsoft Purview search audit page":::
+
+Use wild card search for contextual information in the Microsoft Purview user experience.
+
+Narrow down search constructs that are specific to individual events.
+
+:::image type="content" source="media/admin-activity-logging/filter-record-types.png" alt-text="Filter record types in Microsoft Purview audit search":::
+
+As you search, individual activities are shown. A common schema is enforced to enable search constructs across activities. The value in the **PropertyCollection** field is specific to each activity type.
+
+For more information about the Microsoft Purview audit log, data retention policies and capabilities, go to [Auditing solutions in Microsoft Purview](purview/audit-solutions-overview).
+
+### See also
+
+- [Auditing solutions in Microsoft Purview](purview/audit-solutions-overview)
+- [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
+- [Detailed properties in the audit log](/purview/audit-log-detailed-properties)
+- [Power Apps activity logging](logging-powerapps.md)
+- [Power Automate activity logging](logging-power-automate.md)
+- [Power Platform connector activity logging (preview)](connector-events-power-platform.md)
+- [Data loss prevention activity logging](dlp-activity-logging.md)
+- [Manage Dataverse auditing](manage-dataverse-auditing.md)
+- [Dataverse and model-driven apps](enable-use-comprehensive-auditing.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
