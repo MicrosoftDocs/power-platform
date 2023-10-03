@@ -1041,17 +1041,17 @@
             - name: About privacy
               href: about-privacy.md
             - name: System-generated logs
-              href: powerapps-gdpr-dsr-guide-systemlogs.md
+              href: powerapps-privacy-dsr-guide-systemlogs.md
             - name: Data integrations for Dataverse
               href: data-integration-gdpr-dsr-guide.md
             - name: Power Apps customer data
               items:
                 - name: Overview
-                  href: powerapps-gdpr-dsr-guide.md
+                  href: powerapps-privacy-dsr-guide.md
                 - name: Export data
                   href: powerapps-privacy-export-dsr.md
                 - name: Delete data
-                  href: powerapps-gdpr-delete-dsr.md
+                  href: powerapps-privacy-delete-dsr.md
                 - name: Dataverse customer data
                   href: common-data-service-privacy-dsr-guide.md
         - name: Datacenter regions

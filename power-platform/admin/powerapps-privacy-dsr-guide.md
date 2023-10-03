@@ -68,7 +68,7 @@ Power Apps offers the following experiences to find personal data for a specific
 - **Website access**: [Power Apps site](https://make.powerapps.com) and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 - **PowerShell access**: Power Apps cmdlets (for [app creators](./powerapps-powershell.md) and [administrators](./powerapps-powershell.md)) and [On-premises gateway cmdlets](/data-integration/gateway/service-gateway-high-availability-clusters)
 
-For detailed steps on how you can use these experiences to find personal data for a specific user for each of these types of resources, see [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md).
+For detailed steps on how you can use these experiences to find personal data for a specific user for each of these types of resources, see [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-privacy-export-dsr.md).
 
 After you find the data, you can then perform the specific action to satisfy the request by the data subject.
 
@@ -83,7 +83,7 @@ For guidance on how to discover personal data stored by the Power Automate servi
 ### Step 3: Find personal data for the user in environments of Dataverse
 Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the [Power Apps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each Power Apps license.
 
-For guidance on how to discover personal data stored by Dataverse, see [Responding to Data Subject Rights (DSR) requests for customer data in Dataverse](common-data-service-gdpr-dsr-guide.md).
+For guidance on how to discover personal data stored by Dataverse, see [Responding to Data Subject Rights (DSR) requests for customer data in Dataverse](common-data-service-privacy-dsr-guide.md).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.
@@ -107,7 +107,7 @@ Data subjects may request that you restrict processing of their personal data.  
 ## Export
 The "right of data portability" allows a data subject to request a copy of their personal data in an electronic format (that's a "structured, commonly used, machine read-able and interoperable format") that may be transmitted to another data controller.
 
-See [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md) for details.
+See [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-privacy-export-dsr.md) for details.
 
 ## Delete
 The "right to erasure" by the removal of personal data from an organization's customer data is a key protection in the GDPR. Removing personal data includes system-generated logs but not audit-log information.
