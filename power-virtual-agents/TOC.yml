@@ -120,6 +120,8 @@
       href: advanced-entities-slot-filling.md
     - name: Use variables
       href: authoring-variables.md
+    - name: Make HTTP requests
+      href: authoring-http-node.md
     - name: Sending event activities
       href: authoring-send-event-activities.md
     - name: Reuse variables across topics
