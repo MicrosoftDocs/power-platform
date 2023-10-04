@@ -1,6 +1,6 @@
 ---
 title: Create and register a plug-in package using PAC CLI
-description: Add Power Platform as a connected service in Visual Studio to create a custom connector.
+description: Create and register a plug-in package containing a dependent assembly using the Power Platform CLI.
 author: marcelbf
 ms.author: marcelbf
 ms.reviewer: pehecke
@@ -14,9 +14,9 @@ contributors:
 ms.custom: bap-template
 ---
 
-# Create and register a plug-in package
+# Create and register a plug-in package using PAC CLI
 
-In this article you will learn how to create a plug-in package, and then upload and register it on the Dataverse server. You'll be using PAC CLI to create the plug-in package and the Plug-in Registration tool to upload and register the package.
+In this article you'll learn how to create a plug-in package, upload and register it on the Dataverse server, and perform some other package management tasks. You'll be using PAC CLI to create the plug-in package and the Plug-in Registration tool to upload and register the package.
 
 This article helps you:
 
@@ -25,6 +25,7 @@ This article helps you:
 > * Create a Visual Studio plug-in project
 > * Add a dependent assembly to the project and build
 > * Use the Plug-in Registration tool to upload and register your package
+> * Use the Plug-in Registration tool to update and delete a package
 
 More information: [Build and package plug-in code](/power-apps/developer/data-platform/build-and-package).
 
