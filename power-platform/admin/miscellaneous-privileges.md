@@ -86,7 +86,7 @@ The following table describes the miscellaneous privileges, which in the new, mo
 | Send Invitation | prvSendInviteForLive | [Invite users with Azure Active Directory B2B collaboration](invite-users-azure-active-directory-b2b-collaboration.md) |
 | Turn On Tracing | Not applicable | [Plug-in and custom workflow activity tracing](system-settings-dialog-box-customization-tab.md) |
 | Use internet marketing module | prvUseInternetMarketing | [Create a quick campaign using in-app marketing (Sales)](/dynamics365/customerengagement/on-premises/developer/sample-distribute-a-quick-campaign) |
-| View Audit History | prvReadRecordAuditHistory | [Audit history](common-data-service-privacy-dsr-guide.md#audit-history) |
+| View Audit History | prvReadRecordAuditHistory | [Audit history](dataverse-privacy-dsr-guide.md#audit-history) |
 | View Audit Partitions | prvReadAuditPartitions | [Audit data and user activity for security and compliance](manage-dataverse-auditing.md) |
 | View Audit Summary | prvReadAuditSummary | [Power Apps activity logging](logging-powerapps.md) |
 | Web Mail Merge | prvWebMailMerge | [Work with mail merge templates](work-mail-merge-templates.md) |

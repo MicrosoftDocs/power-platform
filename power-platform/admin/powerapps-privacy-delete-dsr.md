@@ -33,7 +33,7 @@ Requires manual review and deletion |    Automatically deleted when the user is 
 
 \** Each of these resources contains "Created By" and "Modified By" records that include personal data. For security reasons, these records will be retained until the resource is deleted.
 
-\*** For environments that include a Microsoft Dataverse database, environment permissions (that is, which users are assigned to the Environment Maker and Admin roles) are stored as records in that database. For guidance on how to respond to DSRs for users of Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-privacy-dsr-guide.md).
+\*** For environments that include a Microsoft Dataverse database, environment permissions (that is, which users are assigned to the Environment Maker and Admin roles) are stored as records in that database. For guidance on how to respond to DSRs for users of Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).
 
 For the data and resources that require manual review, Power Apps offers the following experiences to reassign (if necessary) or delete personal data for a specific user:
 
@@ -54,7 +54,7 @@ Here is the breakdown of which experiences are available to delete each type of 
 |Custom connector | | App creator: Available <br> Admin: Available|
 |Custom-connector permissions | | App creator: Available <br> Admin: Available|
 
-\** With the introduction of Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the environment of that database. For guidance on how to respond to DSRs for users of Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-privacy-dsr-guide.md).
+\** With the introduction of Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the environment of that database. For guidance on how to respond to DSRs for users of Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).
 
 ## Prerequisites
 
@@ -353,7 +353,7 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 ## Step 10: Delete the user's personal data in environments of Dataverse
 Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the Power Apps pricing page for which capabilities are included in each Power Apps license.
 
-For guidance on how to respond to DSRs for users who use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-privacy-dsr-guide.md).
+For guidance on how to respond to DSRs for users who use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.

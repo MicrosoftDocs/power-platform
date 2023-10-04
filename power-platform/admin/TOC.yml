@@ -1055,7 +1055,7 @@
                 - name: Delete data
                   href: powerapps-privacy-delete-dsr.md
                 - name: Dataverse customer data
-                  href: common-data-service-privacy-dsr-guide.md
+                  href: dataverse-privacy-dsr-guide.md
         - name: Datacenter regions
           href: new-datacenter-regions.md
           items:
