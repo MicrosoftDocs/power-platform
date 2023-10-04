@@ -31,13 +31,13 @@ More information: [Build and package plug-in code](/power-apps/developer/data-pl
 ## Prerequisites
 
 - Access to a Dataverse environment
-- An system user account in the target environment with System Administrator or System Customizer role
-- The tools described in the following table
+- An system user account, with System Administrator or System Customizer role, in the target environment
+- The tools described in the next table
 
 |Tool/App|Instructions |
 |---------|---------|
 |**Microsoft Power Platform CLI**|Use version 1.17 or higher.<br />The preferred installation method is using Visual Studio Code. See [Power Platform Tools](https://aka.ms/ppcvscode).<p />You can also download and install the Windows version here: [https://aka.ms/PowerAppsCLI](https://aka.ms/PowerAppsCLI).<p />If you have already installed the Windows version, make sure you run `pac install latest` to get the latest version.<p />More information: [What is Microsoft Power Platform CLI?](/power-platform/developer/cli/introduction)|
-|**Plug-in Registration tool (PRT)**|Use version 9.1.0.184 or higher.<br /><br />Use these instructions to install the latest version: [Dataverse development tools](download-tools-nuget.md).|
+|**Plug-in Registration tool (PRT)**|Use version 9.1.0.184 or higher.<br /><br />Use these instructions to install the latest version: [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget).|
 |**Visual Studio**| Microsoft Visual Studio 2019 or newer.|
 
 ## Create a Visual Studio project
@@ -53,7 +53,7 @@ Use the PAC CLI [pac plugin init](/power-platform/developer/cli/reference/plugin
    ```
 
 > [!NOTE]
-> It is no longer required to sign the assemblies when using dependent assemblies. If you sign your assembly, all dependent assemblies must also be signed. More information: [Signing Assemblies](#signing-assemblies)
+> You are not required to sign the assemblies when using dependent assemblies. If you sign your assembly, all dependent assemblies must also be signed. More information: [Signed assemblies are not required](/power-apps/developer/data-platform/build-and-package#signed-assemblies-are-not-required)
 >
 > The [pac plugin init](/power-platform/developer/cli/reference/plugin#pac-plugin-init) command has a number of optional parameters. You must use the [--skip-signing](/power-platform/developer/cli/reference/plugin#--skip-signing--ss) parameter if you do not want to sign your plug-in assembly.
 
@@ -144,4 +144,4 @@ Now that you have a plug-in package registered in Dataverse, consider adding it 
 [What is Microsoft Power Platform CLI?](cli/introduction.md)  
 [About the Plug-in Registration tool](/power-apps/developer/data-platform/register-plug-in#about-the-plug-in-registration-tool)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
