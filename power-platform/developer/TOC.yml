@@ -90,7 +90,7 @@
             - name: What is Power Platform CLI
               href: cli\introduction.md
             - name: Create and register a plug-in package
-              href: cli\cli-create-package.md
+              href: howto\cli-create-package.md
             - name: Power Platform CLI reference
               href: cli\reference\index.md
               items:
