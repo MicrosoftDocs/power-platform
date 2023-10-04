@@ -41,7 +41,8 @@ Sign up to be a Buddy in the Onboarding Buddy app.
 1. Read more about the program and select **Next**.
 :::image type="content" source="media/use/ob-use-welcome.png" alt-text="Screenshot of the Onboarding Buddy app's welcome screens.":::
 1. Fill out the *buddy details* form. Select **yes** to the *Available as a buddy* option.
-:::image type="content" source="media/use/ob-use-buddy-details.png" alt-text="Screenshot of the Onboarding Buddy app's Update your buddy details screen.":::
+
+    :::image type="content" source="media/use/ob-use-buddy-details.png" alt-text="Screenshot of the Onboarding Buddy app's Update your buddy details screen.":::
 
 ### Update your Buddy profile
 
