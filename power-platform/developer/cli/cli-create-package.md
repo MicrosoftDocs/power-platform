@@ -42,10 +42,10 @@ More information: [Build and package plug-in code](/power-apps/developer/data-pl
 
 ## Create a Visual Studio project
 
-Use the PAC CLI [pac plugin init](./reference/plugin#pac-plugin-init) command to create a Visual Studio project that  streamlines your development process with dependent assemblies.
+Use the PAC CLI [pac plugin init](reference/plugin.md#pac-plugin-init) command to create a Visual Studio project that  streamlines your development process with dependent assemblies.
 
 1. Create a folder for your plug-in project. The name of this folder determines the name of the Visual Studio .NET Framework Class library project for your plug-in.
-1. Open a PowerShell terminal window in Visual Studio Code to navigate to the folder and run the command [pac plugin init](./reference/plugin#pac-plugin-init). For plug-in packages, we recommend that you use the `--skip-signing` parameter so that your plug-in assemblies aren't signed.
+1. Open a PowerShell terminal window in Visual Studio Code to navigate to the folder and run the command [pac plugin init](reference/plugin.md#pac-plugin-init). For plug-in packages, we recommend that you use the `--skip-signing` parameter so that your plug-in assemblies aren't signed.
 
    Example:
    ```powershell
@@ -55,7 +55,7 @@ Use the PAC CLI [pac plugin init](./reference/plugin#pac-plugin-init) command to
 > [!NOTE]
 > You are not required to sign the assemblies when using dependent assemblies. If you sign your assembly, all dependent assemblies must also be signed. More information: [Signed assemblies are not required](/power-apps/developer/data-platform/build-and-package#signed-assemblies-are-not-required)
 >
-> The [pac plugin init](./reference/plugin#pac-plugin-init) command has a number of optional parameters. You must use the [--skip-signing](./reference/plugin#--skip-signing--ss) parameter if you do not want to sign your plug-in assembly.
+> The [pac plugin init](reference/plugin.md#pac-plugin-init) command has a number of optional parameters. You must use the [--skip-signing](reference/plugin.md#--skip-signing--ss) parameter if you do not want to sign your plug-in assembly.
 
 These commands create a Visual Studio .NET Framework class library project based on the name of the folder it was created in.
 
