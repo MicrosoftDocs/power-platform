@@ -659,6 +659,16 @@
       "source_path": "power-platform/admin/admin-powerapps-enterprise-deployment.md",
       "redirect_url": "https://aka.ms/powerappsadminwhitepaper",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/about-gdpr.md",
+      "redirect_url": "/power-platform/admin/about-privacy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/common-data-service-gdpr-dsr-guide.md",
+      "redirect_url": "/power-platform/admin/dataverse-privacy-dsr-guide",
+      "redirect_document_id": "false"
     }
   ]
 }
