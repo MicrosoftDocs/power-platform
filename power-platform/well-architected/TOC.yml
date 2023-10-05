@@ -1,0 +1,29 @@
+- name: Power Platform Well-Architected
+  href: index.yml
+  items:
+      - name: What's new
+        items:
+        - name: Power Platform Well-Architected
+          href: ./overview.md
+        - name: How to use this documentation
+          href: ./overview.md
+      - name: Pillars
+        items:
+        - name: Overview
+          href: ./overview.md
+        - name: Reliability
+          items: 
+          - name: Quick links
+            href: ./overview.md
+        - name: Operational excellence
+          items: 
+          - name: Quick links
+            href: ./overview.md
+        - name: Performance efficiency
+          items: 
+          - name: Quick links
+            href: ./overview.md
+        - name: Security
+          items: 
+          - name: Quick links
+            href: security/index.yml
