@@ -101,7 +101,7 @@ Within the Power Platform Explorer, you can view available plug-in packages.
 
 ### Create a plug-in package, alternate method
 
-As mentioned in [Deploy plug-in packages](#deploy-plugin-packages), you will not typically have to create a plug-in package in the usual flow of creating a plug-in. It will be created automatically the first time you deploy the plug-in while the **Use NuGet package for deploying plug-ins to Dataverse** option is set in Visual Studio. However, you can create a new plug-in package from a NuGet package using the following steps.
+As mentioned in [Deploy plug-in packages](#deploy-plug-in-packages), you will not typically have to create a plug-in package in the usual flow of creating a plug-in. It will be created automatically the first time you deploy the plug-in while the **Use NuGet package for deploying plug-ins to Dataverse** option is set in Visual Studio. However, you can create a new plug-in package from a NuGet package using the following steps.
 
 1. Within the Power Platform Explorer, select **Plug-in Packages** and select **Create** from the context menu.
 
@@ -124,7 +124,7 @@ Within the Power Platform Explorer, select a plug-in package and then select **D
 
 ### Update a plug-in package, alternate method
 
-As mentioned in [Deploy plug-in packages](#deploy-plugin-packages), you will not typically have to update a plug-in package in the usual flow of creating a plug-in. It will be updated automatically each time you deploy the plug-in while the **Use nuget package for deploying plug-ins to Dataverse** option is set in Visual Studio. However, you can update a new plug-in package from a Nuget package using the steps below.
+As mentioned in [Deploy plug-in packages](#deploy-plug-in-packages), you will not typically have to update a plug-in package in the usual flow of creating a plug-in. It will be updated automatically each time you deploy the plug-in while the **Use nuget package for deploying plug-ins to Dataverse** option is set in Visual Studio. However, you can update a new plug-in package from a Nuget package using the steps below.
 
 Within the **Power Platform Explorer**, select a plug-in package and select **Update** from the context menu.
 
