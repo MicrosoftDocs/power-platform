@@ -25,9 +25,7 @@ Once the user record is deleted from Active Directory, system admins can remove 
 
 ## Remove user personal data via User form
 
-When the user record is deleted from Active Directory, the following message is displayed on the User form:
-
-"This user's information is no longer managed by Microsoft 365. You can update this record to comply with the GDPR by removing or replacing all personal data."
+When the user record is deleted from Active Directory, you will receive a message stating that this user's information is no longer managed by Microsoft 365, and you can update this record to comply with privacy standards by removing or replacing all personal data.
 
 To remove personal data:
 
