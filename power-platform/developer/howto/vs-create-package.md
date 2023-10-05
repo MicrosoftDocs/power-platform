@@ -48,7 +48,7 @@ Power Platform Tools for Visual Studio provides several configuration options as
 1. In Visual Studio, go to **Tools** > **Options** and search for **Power Platform tools**.
 1. Select **Use nuget package for deploying Plugins to Dataverse**.
 
-   :::image type="content" source="media/power-platform-tools-options.png" alt-text="Select Use NuGet package for deploying Plugins to Dataverse.":::
+   :::image type="content" source="../media/tools/power-platform-tools-options.png" alt-text="Select Use NuGet package for deploying Plugins to Dataverse.":::
 
 > [!NOTE]
 > When this option is selected, all your plug-in projects will be deployed with Plug-in packages.
@@ -67,7 +67,7 @@ If you have an assembly that isn't distributed as a NuGet package, you can add i
 
 To deploy your plug-in package, in **Solution Explorer** right-click the plug-in project and select **Deploy** from the context menu.
 
-:::image type="content" source="media/power-platform-deploy-pluginpackage.png" alt-text="foo":::
+:::image type="content" source="../media/tools/power-platform-deploy-pluginpackage.png" alt-text="foo":::
 
 When you deploy for the first time, you should see a message in the output window that informs you that the plug-in package was created:
 
@@ -93,14 +93,14 @@ E:\projects\PowerPlatformVSSolution\ExamplePlugins\bin\outputPackages\PowerPlatf
 
 Within the Power Platform Explorer, you can view available plug-in packages.
 
-:::image type="content" source="media/power-platform-explorer-plug-in-packages.png" alt-text="Within the Power Platform Explorer, you can view available plug-in packages":::
+:::image type="content" source="../media/tools/power-platform-explorer-plug-in-packages.png" alt-text="Within the Power Platform Explorer, you can view available plug-in packages":::
 
 
 #### Delete a Plugin Package with Power Platform Tools
 
 Within the Power Platform Explorer, select a plug-in package and select **Delete** from the context menu.
 
-:::image type="content" source="media/power-platform-delete-pluginpackage.png" alt-text="Select a plug-in package and select Delete from the context menu":::
+:::image type="content" source="../media/tools/power-platform-delete-pluginpackage.png" alt-text="Select a plug-in package and select Delete from the context menu":::
 
 > [!IMPORTANT]
 > Deleting a package will delete the package, all assemblies within it, all plug-ins within the assembly, and any plug-in step registrations for the plug-ins.
@@ -113,11 +113,11 @@ Within the Power Platform Explorer, select a plug-in package and select **Delete
 
 1. Within the Power Platform Explorer, select **Plug-in Packages** and select **Create** from the context menu.
 
-   :::image type="content" source="media/power-platform-create-pluginpackage.png" alt-text="Within the Power Platform Explorer, select Plug-in Packages and select Create from the context menu.":::
+   :::image type="content" source="../media/tools/power-platform-create-pluginpackage.png" alt-text="Within the Power Platform Explorer, select Plug-in Packages and select Create from the context menu.":::
 
 1. This command opens the **Import new Plugin package** dialog.
 
-   :::image type="content" source="media/power-platform-create-pluginpackage-dialog.png" alt-text="The **Import new Plugin package dialog":::
+   :::image type="content" source="../media/tools/power-platform-create-pluginpackage-dialog.png" alt-text="The **Import new Plugin package dialog":::
 
    Select the NuGet package and choose which solution it should be added to, or create a new solution.
 
@@ -129,7 +129,7 @@ Within the Power Platform Explorer, select a plug-in package and select **Delete
 
 Within the **Power Platform Explorer**, select a plug-in package and select **Update** from the context menu.
 
-:::image type="content" source="media/power-platform-update-pluginpackage.png" alt-text="Select a plug-in package and select Update from the context menu":::
+:::image type="content" source="../media/tools/power-platform-update-pluginpackage.png" alt-text="Select a plug-in package and select Update from the context menu":::
 
 This command opens a dialog so you can select a NuGet package to update the plug-in package.
 
