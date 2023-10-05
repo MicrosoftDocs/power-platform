@@ -1,5 +1,5 @@
 - name: Power Platform Well-Architected
-  href: index.yml
+  href: index.md
   items:
       - name: What's new
         items:
@@ -26,4 +26,4 @@
         - name: Security
           items: 
           - name: Quick links
-            href: security/index.yml
+            href: ./overview.md
