@@ -2,9 +2,8 @@
 title: "Benefits of ExpressRoute with Microsoft Power Platform | MicrosoftDocs"
 description: "Benefits of using ExpressRoute with Microsoft Power Platform including GDPR, compliance, and network traffic predictability."
 author: taiki-yoshida
-
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 10/05/2023
 ms.subservice: guidance
 ms.author: tayoshi
 ms.reviewer: kathyos
