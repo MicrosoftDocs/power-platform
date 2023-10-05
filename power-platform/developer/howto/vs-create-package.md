@@ -37,13 +37,13 @@ More information: [Build and package plug-in code](/power-apps/developer/data-pl
 
 You'll need Visual Studio 2019 and Power Platform Tools for Visual Studio installed on your development computer. See these articles related to installing and using Power Platform Tools for Visual Studio.
 
-* [Install Power Platform Tools](tools/devtools-install.md)
-* [Quickstart: Create a Power Platform Tools project](tools/devtools-create-project.md)
-* [Quickstart: Create a plug-in using Power Platform Tools](tools/devtools-create-plugin.md)
+* [What is Power Platform Tools for Visual Studio](../devtools-vs.md)
+* [Quickstart: Create a Power Platform Tools project](../devtools-vs-create-project.md)
+* [Quickstart: Create a plug-in using Power Platform Tools](/power-apps/developer/data-platform/tools/devtools-create-plugin)
 
 #### Enable Plugin Packages for Power Platform Tools
 
-Power Platform Tools for Visual Studio provides several configuration options as described in [Power Platform Tools options](tools/devtools-install.md#power-platform-tools-options).
+Power Platform Tools for Visual Studio provides several configuration options as described in [Power Platform Tools options](../devtools-vs.md#power-platform-tools-options).
 
 1. In Visual Studio, go to **Tools** > **Options** and search for **Power Platform tools**.
 1. Select **Use nuget package for deploying Plugins to Dataverse**.
