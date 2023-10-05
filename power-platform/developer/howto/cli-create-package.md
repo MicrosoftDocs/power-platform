@@ -32,7 +32,7 @@ More information: [Build and package plug-in code](/power-apps/developer/data-pl
 ## Prerequisites
 
 * Access to a Dataverse environment
-* An system user account, with System Administrator or System Customizer role, in the target environment
+* A system user account, with System Administrator or System Customizer role, in the target environment
 * The tools described in the next table
 
 |Tool/App|Instructions |
@@ -64,9 +64,9 @@ Depending on your Visual Studio solution configuration, when you open the Visual
 
 ## Add a dependent assembly to your project
 
-You can add a NuGet package to your Visual Studio plug-in project as you normally do. After you build the project, you should find the dependent assembly in the NuGet plug-in package.
+You can add a NuGet package for satisfying required references to your Visual Studio plug-in project as you normally do. After you build the project, you should find your plug-in assembly in the generated NuGet package located in the `bin\outputPackages` folder.
 
-You can use [NuGet Package Explorer](https://www.microsoft.com/p/nuget-package-explorer/9wzdncrdmdm3) to examine the NuGet package.
+You can use [NuGet Package Explorer](https://www.microsoft.com/p/nuget-package-explorer/9wzdncrdmdm3) to examine the generated NuGet package.
 
 ### Add a dependent assembly without using NuGet
 
@@ -78,10 +78,6 @@ You can use the Plug-in Registration tool (PRT) to perform the following tasks:
 
 1. View list of available plug-in packages
 1. Register a NuGet package as a plug-in package
-
-While you have the PRT open, you can optionally:
-1. Update a plug-in package
-1. Delete plug-in packages
 
 ### View list of available plug-in packages
 
@@ -108,6 +104,10 @@ From the **Display by Package** view, you can select the assembly and register s
 The assembly is also available within the **Display by Assembly** view.
 
 :::image type="content" source="../media/tools/prt-show-pluginpackage-assembly-display-by-assembly-view.png" alt-text="Showing the plug-in package assembly in the Display by Assembly view.":::
+
+## Plug-in package management
+
+Within the Plug-in Registration tool, you can perform additional operations on plug-in packages as described in the next sections.
 
 ### Update a plug-in package
 

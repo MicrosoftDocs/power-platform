@@ -32,40 +32,40 @@ More information: [Build and package plug-in code](/power-apps/developer/data-pl
 ## Prerequisites
 
 * Access to a Dataverse environment
-* An system user account, with System Administrator or System Customizer role, in the target environment
-* The tools described in the next table
+* A system user account, with System Administrator or System Customizer role, in the target environment
+* Visual Studio 2019 with Power Platform Tools extension installed
 
-You'll need Visual Studio 2019 and Power Platform Tools for Visual Studio installed on your development computer. See these articles related to installing and using Power Platform Tools for Visual Studio.
+Review these articles related to installing and using Power Platform Tools for Visual Studio.
 
 * [What is Power Platform Tools for Visual Studio](../devtools-vs.md)
-* [Quickstart: Create a Power Platform Tools project](../devtools-vs-create-project.md)
-* [Quickstart: Create a plug-in using Power Platform Tools](/power-apps/developer/data-platform/tools/devtools-create-plugin)
+* [Create a Power Platform Tools project](../devtools-vs-create-project.md)
+* [Create a plug-in using Power Platform Tools](/power-apps/developer/data-platform/tools/devtools-create-plugin)
 
-#### Enable Plugin Packages for Power Platform Tools
+## Enable plug-in packages for Power Platform Tools
 
 Power Platform Tools for Visual Studio provides several configuration options as described in [Power Platform Tools options](../devtools-vs.md#power-platform-tools-options).
 
 1. In Visual Studio, go to **Tools** > **Options** and search for **Power Platform tools**.
-1. Select **Use nuget package for deploying Plugins to Dataverse**.
+1. Select **Use NuGet package for deploying plug-ins to Dataverse**.
 
-   :::image type="content" source="../media/tools/power-platform-tools-options.png" alt-text="Select Use NuGet package for deploying Plugins to Dataverse.":::
+   :::image type="content" source="../media/tools/power-platform-tools-options.png" alt-text="Select Use NuGet package for deploying plug-ins to Dataverse.":::
 
 > [!NOTE]
-> When this option is selected, all your plug-in projects will be deployed with Plug-in packages.
+> When this option is selected, all your plug-in projects will be deployed as plug-in packages.
 
-#### Add a dependent assembly using NuGet with Power Platform Tools
+## Add a dependent assembly to your project
 
-You can add a NuGet Package to your Visual Studio project as you normally do. After you build the project, you should find the assembly in the NuGet package. The NuGet package is in the `bin\outputPackages` folder.
+You can add a NuGet package for satisfying required references to your Visual Studio project as you normally do. After you build the project, you should find your plug-in assembly in the generated NuGet package located in the `bin\outputPackages` folder.
 
-You can use [NuGet Package Explorer](https://www.microsoft.com/p/nuget-package-explorer/9wzdncrdmdm3) to examine the NuGet package.
+You can use [NuGet Package Explorer](https://www.microsoft.com/p/nuget-package-explorer/9wzdncrdmdm3) to examine the generated NuGet package.
 
-#### Add a dependent assembly without using NuGet with Power Platform Tools
+### Add a dependent assembly without using NuGet
 
 If you have an assembly that isn't distributed as a NuGet package, you can add it to your project as you normally do. In **Solution Explorer**, right-click **Dependencies** and choose **Add Assembly Reference...**. Select the assembly you want to add.
 
-#### Deploy Plugin Packages for Power Platform Tools
+## Deploy plug-in packages
 
-To deploy your plug-in package, in **Solution Explorer** right-click the plug-in project and select **Deploy** from the context menu.
+To deploy (upload and register) your plug-in package, in **Solution Explorer** right-click the plug-in project and select **Deploy** from the context menu.
 
 :::image type="content" source="../media/tools/power-platform-deploy-pluginpackage.png" alt-text="foo":::
 
@@ -82,59 +82,54 @@ Each time you deploy after that, you'll see a message in the output window that 
 ```
 6/22/2022 3:20:14 PM : update of Plugin Package sample_PowerPlatformVSSolution.ExamplePlugins, at
 E:\projects\PowerPlatformVSSolution\ExamplePlugins\bin\outputPackages\PowerPlatformVSSolution.ExamplePlugins.1.0.0.nupkg was successful.
-
 ```
+
 > [!IMPORTANT]
-> If your update removes any plug-in assemblies, or types which are used in plug-in step registrations, the update will be rejected. You must manually remove any step registrations that use plug-in assemblies or plugin types that you want to remove with your update.
+> If your update removes any plug-in assemblies, or types which are used in plug-in step registrations, the update will be rejected. You must manually remove any step registrations that use plug-in assemblies or plug-in types that you want to remove with your update.
 >
 > The version of the plug-in package or plug-in assembly is not a factor in any upgrade behaviors. You can update the versions of these items as you need.
 
-#### View Plugin Packages with Power Platform Tools
+## Plug-in package management
+
+Within Visual Studio, you can perform additional operations on plug-in packages as described in the next sections.
+
+### View plug-in packages with Power Platform Tools
 
 Within the Power Platform Explorer, you can view available plug-in packages.
 
 :::image type="content" source="../media/tools/power-platform-explorer-plug-in-packages.png" alt-text="Within the Power Platform Explorer, you can view available plug-in packages":::
 
+### Create a plug-in package, alternate method
 
-#### Delete a Plugin Package with Power Platform Tools
+As mentioned in [Deploy plug-in packages](#deploy-plugin-packages), you will not typically have to create a plug-in package in the usual flow of creating a plug-in. It will be created automatically the first time you deploy the plug-in while the **Use NuGet package for deploying plug-ins to Dataverse** option is set in Visual Studio. However, you can create a new plug-in package from a NuGet package using the following steps.
 
-Within the Power Platform Explorer, select a plug-in package and select **Delete** from the context menu.
+1. Within the Power Platform Explorer, select **Plug-in Packages** and select **Create** from the context menu.
+
+   :::image type="content" source="../media/tools/power-platform-create-pluginpackage.png" alt-text="Within the Power Platform Explorer, select Plug-in Packages and select Create from the context menu.":::
+
+1. This command opens the **Import new plug-in package** dialog.
+
+   :::image type="content" source="../media/tools/power-platform-create-pluginpackage-dialog.png" alt-text="The **Import new plug-in package dialog":::
+
+1. Select the NuGet package and choose which solution it should be added to, or create a new solution.
+
+### Delete a plug-in package
+
+Within the Power Platform Explorer, select a plug-in package and then select **Delete** from the context menu.
 
 :::image type="content" source="../media/tools/power-platform-delete-pluginpackage.png" alt-text="Select a plug-in package and select Delete from the context menu":::
 
 > [!IMPORTANT]
 > Deleting a package will delete the package, all assemblies within it, all plug-ins within the assembly, and any plug-in step registrations for the plug-ins.
 
-#### Create a Plugin Package with Power Platform Tools
+### Update a plug-in package, alternate method
 
-> [!NOTE]
-> As mentioned in [Deploy Plugin Packages for Power Platform Tools](#deploy-plugin-packages-for-power-platform-tools), you will not typically have to create a plug-in package in the usual flow of creating a plug-in. It will be created automatically the first time you deploy the plug-in while the **Use nuget package for deploying Plugins to Dataverse** option is set in Visual Studio.
-> However, you can create a new plug-in package from a Nuget package using the following steps.
-
-1. Within the Power Platform Explorer, select **Plug-in Packages** and select **Create** from the context menu.
-
-   :::image type="content" source="../media/tools/power-platform-create-pluginpackage.png" alt-text="Within the Power Platform Explorer, select Plug-in Packages and select Create from the context menu.":::
-
-1. This command opens the **Import new Plugin package** dialog.
-
-   :::image type="content" source="../media/tools/power-platform-create-pluginpackage-dialog.png" alt-text="The **Import new Plugin package dialog":::
-
-   Select the NuGet package and choose which solution it should be added to, or create a new solution.
-
-#### Update a Plugin Package with Power Platform Tools
-
-> [!NOTE]
-> As mentioned in [Deploy Plugin Packages for Power Platform Tools](#deploy-plugin-packages-for-power-platform-tools), you will not typically have to update a plug-in package in the usual flow of creating a plug-in. It will be updated automatically each time you deploy the plug-in while the **Use nuget package for deploying Plugins to Dataverse** option is set in Visual Studio.
-> However, you can update a new plug-in package from a Nuget package using the steps below.
+As mentioned in [Deploy plug-in packages](#deploy-plugin-packages), you will not typically have to update a plug-in package in the usual flow of creating a plug-in. It will be updated automatically each time you deploy the plug-in while the **Use nuget package for deploying plug-ins to Dataverse** option is set in Visual Studio. However, you can update a new plug-in package from a Nuget package using the steps below.
 
 Within the **Power Platform Explorer**, select a plug-in package and select **Update** from the context menu.
 
 :::image type="content" source="../media/tools/power-platform-update-pluginpackage.png" alt-text="Select a plug-in package and select Update from the context menu":::
 
 This command opens a dialog so you can select a NuGet package to update the plug-in package.
-
-### See also
-  
-[About the Plug-in Registration tool](/power-apps/developer/data-platform/register-plug-in#about-the-plug-in-registration-tool)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
