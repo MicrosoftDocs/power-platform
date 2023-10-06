@@ -90,6 +90,8 @@
       href: authoring-system-topics.md
     - name: Create and edit topics
       href: authoring-create-edit-topics.md
+    - name: Use topic triggers
+      href: authoring-triggers.md
     - name: Start with sample topics
       href: authoring-template-topics.md
     - name: Start from existing content
