@@ -2,7 +2,7 @@
 title: AI-based chatbot authoring overview
 description: Create instantly useful chatbots quickly with natural language understanding-based authoring capabilities in Power Virtual Agents.
 keywords: "Power Virtual Agents, bot, chatbot, GPT, OpenAI, PVA"
-ms.date: 3/16/2023
+ms.date: 7/30/2023
 ms.topic: overview
 author: iaanw
 ms.author: iawilt

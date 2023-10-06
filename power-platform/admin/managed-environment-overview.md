@@ -22,12 +22,12 @@ Managed Environments is a suite of premium capabilities that allows admins to ma
 
 [Learn how to enable Managed Environments](managed-environment-enable.md).
 
-A Managed Environments encompasses, but not limited to, the folloiwng features: 
+A Managed Environment encompasses, but is not limited to, the following features: 
 
 - [Limit sharing](managed-environment-sharing-limits.md)
 - [Weekly usage insights](managed-environment-usage-insights.md)
 - [Data policies](managed-environment-data-policies.md)
-- [Pielines in Power Platform](../alm/set-up-pipelines.md)
+- [Pipelines in Power Platform](../alm/set-up-pipelines.md)
 - [Maker welcome content](welcome-content.md)
 - [Solution checker](managed-environment-solution-checker.md)
 - [IP Firewall](ip-firewall.md)

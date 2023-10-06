@@ -20,6 +20,8 @@ You can use generative answers with content stored on SharePoint sites and OneDr
 
 > [!CAUTION]
 > Content analysis and retrieval happens on behalf of the signed-in user, meaning this feature requires user authentication to be [configured for your bot using Azure AD under the **Manual (for custom website)** authentication option](nlu-boost-node.md#authentication). The **No authentication** and **Only for Teams** authentication options can't retrieve information from Sharepoint or OneDrive for Business.
+>
+> When configuring **Manual (for custom website)** authentication for your bot, you will need to provide scopes that control what access PVA has on behalf of that user. In particular, you need to specify **Sites.Read.All**, **Files.Read.All** in the scopes field in addition to the existing **profile** and **opendid** values. These scopes do not give the user the ability to see anything they couldn't already, but it allows this logged in session to access the content that user already has access to on the Sharepoint site which you've configured for Generative Answers.
 >  
 > It also means that when a specific user asks a question of the bot, the bot will only surface content that that specific user has access to read on SharePoint or OneDrive for Business.
 
