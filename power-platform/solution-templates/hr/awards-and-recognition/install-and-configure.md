@@ -75,8 +75,11 @@ Set up security roles in your solutions so admins can manage access to and the e
 
 Open the newly installed Awards and Recognition solution and verify that the cloud flow is set to the *on* status. If not, turn it on.
 
-1. Select the cloud flow that is turned off.
-1. Select **Turn on** located in the toolbar.
+1. Select **Solutions** on left-side panel.
+1. Select the **Awards and Recognition** solution from the list.
+1. Select **Cloud flows (1)** on the left-side panel.
+1. Select the *flow*.
+1. Select **Turn on** on the command bar if the flow is not already set to *on*.
 
 ## Step 5: Share the app
 

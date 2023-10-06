@@ -53,3 +53,8 @@ Take these steps in the Onboarding Buddy Admin app to localize the strings to su
     1. **Localized Value**. The translated string you set up.
     1. **String Type**. The filter you can apply. It's optional but can help you sort and manage localized strings at a later date.
 1. Select **Save & Close**.
+
+## See also
+
+- [Install and configure the Onboarding Buddy template](install-and-configure.md)
+- [Get started using the Onboarding Buddy app](use.md)

@@ -41,7 +41,12 @@ The *Employee Experience Base* solution contains various components that allow a
 The *Awards and Recognition* solution contains various components that an admin can configure. It is composed of two apps, eight tables, and two security roles.
 
 - **One canvas app**: **Awards and Recognition** - The app for the users. It's where you nominate others for awards, view their past nominations, and see awards they have received.
-- **One model-driven app**: **Awards and Recognition Administration** - The app for the admins. It's where you can configure nomination periods, available awards and related assessment questions, define teams that can be nominated, and approve and deny nominations.
+- **One model-driven app**: **Awards and Recognition Administration** - The app for the admins. It's where you, as an admin, can:
+
+  - Configure nomination periods.
+  - Configure available awards and related assessment questions.
+  - Configure teams that can be nominated.
+  - Approve and deny nominations.
 
 - **Eight tables**:
 
@@ -56,10 +61,10 @@ The *Awards and Recognition* solution contains various components that an admin 
 
 - **Two security roles**:
 
-  - **Awards and Recognition – Program Admin** - A role that is granted to anyone who needs to configure nomination periods, awards, and group—as well as anyone who will be involved with setting the final state of nominations.
-  - **Awards and Recognition – User** - A role that is granted to ALL users of the application. Generally, everyone in an organization in which the awards program is being rolled out to.
+  - **Awards and Recognition - Program Admin** - A role that is granted to anyone who needs to configure nomination periods, awards, and group—as well as anyone who will be involved with setting the final state of nominations.
+  - **Awards and Recognition - User** - A role that is granted to ALL users of the application. Generally, everyone in an organization in which the awards program is being rolled out to.
 
-- **One Power Automate flow**: **Awards and Recognition – Recognition gets deactivated** - This flow sets the *reviewed by* and *reviewed on* fields once a nomination has been set to a final state.
+- **One Power Automate flow**: **Awards and Recognition - Recognition gets deactivated** - This flow sets the *reviewed by* and *reviewed on* fields once a nomination has been set to a final state.
 
 ## Next steps
 

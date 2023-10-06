@@ -48,7 +48,7 @@ Access the template on AppSource and install the template's solutions into a Pow
 > [!TIP]
 > You can log your questions and get support for the Onboarding Buddy template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
-## Step 3: Assign security roles to the users
+## Step 3: Assign security roles
 
 The Onboarding Buddy solution contains two security roles:
 
@@ -66,34 +66,18 @@ Roles can be assigned from the admin portal.
 :::image type="content" source="media/install/ob-install-assign-roles.png" alt-text="Screen of Power Platform admin center showing where to select environments and users.":::
 
 > [!NOTE]
-> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application. If users don't have a security role, they'll get a *data access denied* error when trying to run an app. Users can't access environments until they're assigned at least one security role for that environment.
+> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You can also assign the security roles in the web application. If users don't have a security role, they'll get a *data access denied* error when trying to run an app. Users can't access environments until they're assigned at least one security role for that environment.
 
 More information:
 
 - [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users)
 - [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
 
-## Step 4: Set cloud flows to *on*
+## Step 4: Share the apps with program admins
 
-Open the newly installed Onboarding Buddy solutions and verify that the cloud flows are set to the *on* status. If not, turn the status to *on*.
+You may have program managers who need to contribute to the configuration steps. In this case, follow the directions in [step eight](#share) to share both the Onboarding Buddy Admin app and the Onboarding Buddy app specifically with them.
 
-1. Select the cloud flow that is turned off.
-1. Select **Turn on** located in the toolbar.
-
-## Step 5: Share the apps
-
-Share the Onboarding Buddy Admin app and Onboarding Buddy app with the appropriate people in your organization.
-
-1. Go to [Power Apps](https://make.powerapps.com/).
-1. Select **Apps** on the left panel.
-1. Select the **three dots** to the right of the app you want to share.
-1. Select **Share**.
-1. Search for and select the appropriate security group (or individuals) that contains the members who need access to the app.
-1. Select **Share**. You can also choose whether or not to include an email invitation (not required).
-
-More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
-
-## Step 6: Configure program parameters
+## Step 5: Configure program parameters
 
 There are some program parameters that must be set for the application to work correctly.
 
@@ -109,7 +93,7 @@ Open the Onboarding Buddy Admin App and select **Configurations** to set the par
     :::image type="content" source="media/install/ob-install-config-match-duration.png" alt-text="Power Apps screen showing new configuration record detailing how long a match lasts.":::
 1. Select **Save**.
 
-## Step 7: Populate the Onboarders table
+## Step 6: Populate the Onboarders table
 
 For a new employee to show up in the app as an Onbaorder who can be matched, you must first enter them into the Onbaorders table.
 
@@ -140,7 +124,30 @@ If you have existing employees that you wish to add to the Onboarders table that
 1. Select **Save & Close** from the top menu.
 1. Repeat the steps for as many Onboarders as you need to create.
 
-## Step 8: Turn on Auditing
+## Step 7: Set cloud flows to *on*
+
+Open the newly installed Onboarding Buddy solutions and verify that the cloud flows are set to the *on* status. If not, turn the status to *on*.
+
+1. 1. Select **Solutions** on left-side panel.
+1. Select the **Onboarding Buddy** solution from the list.
+1. Select **Cloud flows (4)** on the left-side panel.
+1. Select *each of the four flows* in the list to verify that each one is turned on.
+1. Select **Turn on** on the command bar if the flow is not already set to *on*.
+
+## Step 8: Share the Onboarding Buddy app
+
+Share the Onboarding Buddy app with the users in your organization.
+
+1. Go to [Power Apps](https://make.powerapps.com/).
+1. Select **Apps** on the left-side panel.
+1. Select the **three dots** to the right of the app you want to share.
+1. Select **Share**.
+1. Search for and select the appropriate security group (or individuals) that contains the members who need access to the app. You can also verify user security roles from the *Share* screen.
+1. Select **Share**. You can also choose whether or not to include an email invitation (not required).
+
+More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
+
+## Step 9: Turn on Auditing
 
 While auditing is not required, we recommend enabling the audit setting on the system, so it's easy to see who creates and updates records in the future.
 
@@ -152,3 +159,12 @@ To do this:
 :::image type="content" source="media/install/ob-install-audit.png" alt-text="Power Platform admin center screen showing audit logs.":::
 1. Select **Start Auditing**.
 :::image type="content" source="media/install/ob-install-start-audit.png" alt-text="Power Platform admin center screen showing start audit checkbox.":::
+
+## Next step
+
+- [Learn how to customize the Onboarding Buddy app](customize.md)
+
+## See also
+
+- [Get started managing the Onboarding Buddy app](manage.md)
+- [Get started using the Onboarding Buddy app](use.md)

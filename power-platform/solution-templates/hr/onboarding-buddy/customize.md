@@ -105,3 +105,7 @@ The gallery, *galBuddies_BuddyMatches*, contains the filter code for matching bu
 `Filter('Buddy Lists', Region = varMatchedOnboarder.Region && Organization=varMatchedOnboarder.Organization && Available = true && Status = 'Status (Buddy Lists)'.Active && 'Status Reason' = 'Status Reason (Buddy Lists)'.Active)`
 
 Adding filter ux components and modifying the gallery code will allow you to customize the matching process appropriately for your organization.
+
+## Next steps
+
+- [Get started managing the Onboarding Buddy app](manage.md)

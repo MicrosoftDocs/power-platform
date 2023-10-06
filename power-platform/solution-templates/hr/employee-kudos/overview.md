@@ -14,6 +14,8 @@ ms.subservice: solution-templates
 
 Employees can recognize others for attributes or actions they are grateful for by sending Kudos to their teammates—offering peer-to-peer recognition.
 
+:::image type="content" source="media/overview/kudos-screens-small.png" alt-text="Screenshots of Employee Kudos." lightbox="media/overview/kudos-screens-large.png":::
+
 The Kudos AppSource template package consists of two solutions:
 
 - **Employee Experience Base** - Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
@@ -21,12 +23,10 @@ The Kudos AppSource template package consists of two solutions:
 
 You can access the template on AppSource at: <https://aka.ms/AccessEmployeeKudosTemplate>
 
-:::image type="content" source="media/overview/kudos-screens-small.png" alt-text="Screenshots of Employee Kudos." lightbox="media/overview/kudos-screens-large.png":::
-
 ## Employee Experience base solution components
 
 - **One model-driven app**: **Employee Experience Localization Admin** - The app allows you to see and edit localized string values as an admin.
-- **One table**: **Employee Experience Localization** - The table records the app string replacements for every localized version of the app.
+- **One table**: **Employee Experience Localization** - Records the app string replacements for every localized version of the app.
 - **Two security roles**:
   - **Employee Experience Localization Reader** - Provides *read* access to the table.
   - **Employee Experience Localizer** - Provides *create*, *read*, *update*, and *delete* access to the table.
@@ -52,14 +52,14 @@ You can access the template on AppSource at: <https://aka.ms/AccessEmployeeKudos
   - **Kudos - manager**
   - **Kudos - employee**
 - **Four Power Automate flows**:
-  - **Kudos app** – share Kudos with sender, assign to recipient.
-  - **Kudos** – deactivate received Kudos when an employee leaves the company.
-  - **Kudos** – delete Kudos when a user opts out.
-  - **Kudos app** – notification email.
+  - **Kudo app** – Shares Kudos with sender or assigns to a recipient.
+  - **Kudos** – Deactivates received Kudos when an employee leaves the company.
+  - **Kudos** – Deletes Kudos when a user opts out.
+  - **Kudos app** – Sends notification email.
 - **Three connection references**:
-  - **Kudos app – Dataverse** - Connection reference to Dataverse
-  - **Kudos app – Office 365** - Connection reference to Office 365
-  - **Kudos app – Outlook** - Connection reference to Outlook
+  - **Kudos - [Dataverse](/connectors/commondataserviceforapps/)** - Connection reference to Dataverse
+  - **Kudos - [Office 365 Outlook](/connectors/office365/)** - Connection reference to Outlook
+  - **Kudos - [Office 365 Users](/connectors/office365users/)** - Connection reference to Office 365
 
 ## Next steps
 

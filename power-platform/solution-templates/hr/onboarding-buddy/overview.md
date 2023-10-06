@@ -13,15 +13,20 @@ ms.subservice: solution-templates
 
 # Onboarding Buddy template for Power Platform
 
-The Onboarding Buddy template helps your organization set up and automate a new or transfer employee's mentoring experience. Existing employees sign up to be *onboarding buddies* and are paired with with the new employees to help them onboard and ramp up successfully.
+The Onboarding Buddy template helps your organization set up and automate support for new and transfer employee mentoring experiences.
+
+An existing employee signs up to be a *Buddy* and is paired with with a new or transfer employee, the *Onboarder*, to help them acclimate and ramp up successfully within your organization.
+
+:::image type="content" source="media/overview/ob-three-welcome.png" alt-text="Displays three Onboarding Buddy Power Apps mobile screens." lightbox="media/overview/ob-three-welcome.png":::
 
 The Onboarding Buddy app allows:
 
 - Employees to register as Buddies
-- Managers to find and match buddies to new hires and transfers (onboarders)
-- Configurable Power Automate emails to guide the onboarding experience
+- Managers to find and match buddies to new hires and transfers—the Onboarders
+- Configurable emails to guide the onboarding experience
 - Program administrators to manage the length of the program and when to send the introductory and wrap up emails
 
+:::image type="content" source="media/overview/ob-configure-match-emails.png" alt-text="Displays a visual of how match and email timing can be configured as well as customizing the email content .":::
 The Onboarding Buddy AppSource package consists of two solutions:
 
 - **Employee Experience Base**: Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
@@ -29,23 +34,23 @@ The Onboarding Buddy AppSource package consists of two solutions:
 
 You can access the templates on AppSource at: <https://aka.ms/AccessOnboardingBuddyTemplate>
 
-## Employee Experience base solution technical components
+## Employee Experience base solution components
 
-The *Employee Experience Base* solution contains various technical components that allow an admin to set up and manage the language preferences.
+The *Employee Experience Base* solution contains various components that allow an admin to set up and manage the language preferences.
 
-- **One model-driven app**: The *Employee Experience Localization Admin* app allows you to see and edit localized string values as an admin.
-- **One table**: The *Employee Experience Localization* table records the app string replacements for every localized version of the app.
+- **One model-driven app**: **Employee Experience Localization Admin** - Allows you to see and edit localized string values as an admin.
+- **One table**: **Employee Experience Localization** - Records the app string replacements for every localized version of the app.
 - **Two security roles**:
-  - The *Employee Experience Localization Reader* provides read access to the table.
-  - The *Employee Experience Localizer* provides *create*, *read*, *update*, and *delete* access to the table.
-- **One Choice**: The *ISO Employee Experience Language Code* stores the abbreviation for available language codes.
+  - **Employee Experience Localization Reader** - Provides read access to the table.
+  - **Employee Experience Localizer** - Provides *create*, *read*, *update*, and *delete* access to the table.
+- **One Choice**: **ISO Employee Experience Language Code** - Stores the abbreviation for available language codes.
 
-## Onboarding Buddy solution primary technical components
+## Onboarding Buddy solution components
 
 The *Onboarding Buddy* solution is composed of two apps, three tables, two security roles, four Power Automate flows, and four connections references for an admin to configure.
 
-- **One canvas app**: **Onboarding Buddy** - The app is designed for the employees (Buddies) and managers to use. Onboarder information is added to the app.
-- **One model-driven app**: **Onboarding Buddy Admin** - The app allows Power Platform and program administrators to configure the program and view the status of all Onboarders and Buddies. In addition, with the required security role, administrators can also localize application strings.
+- **One canvas app**: **Onboarding Buddy** - The app designed for the employees (Buddies) and managers to use. Onboarder information is added to the app for matching.
+- **One model-driven app**: **Onboarding Buddy Admin** - The app that allows Power Platform and program administrators to configure the program, manage, and view the status of all Onboarders and Buddies. In addition, with the required security role, administrators can also localize application strings.
 - **Three tables**:
   - **Buddy List** - Stores information and status about Buddies.
   - **Onboarders** - Stores information and status about people onboarding to the organization.
@@ -54,20 +59,22 @@ The *Onboarding Buddy* solution is composed of two apps, three tables, two secur
   - **Onboarding Buddy - administrator**
   - **Onboarding Buddy - user**
 - **Four Power Automate flows**:
-  - **Buddy Onboarder Emails** - This flow is the workhorse that manages state transitions and sends the appropriate emails. Edit this flow to customize your email content.
-  - **New Onboarders Sync** - This flow grabs all the new employee records in the last week and creates a record in the Onboarders table if it doesn't exist already.
-  - **Set Default fields in Onboarding table** - This flow uses the configuration information to update the fields related to the length of the buddy program and when emails should be sent when an Onboarder is matched to a Buddy.
-  - **Update Onboarders on update of Configurations record** - This flow updates the program-driven columns on the Onboarders table with new values based on configuration updates.
+  - **Buddy Onboarder Emails** - Manages state transitions and sends the appropriate emails. Edit this flow to customize your email content.
+  - **New Onboarders Sync** - Grabs all the new employee records in the last week and creates a record in the Onboarders table if it doesn't exist already.
+  - **Set Default fields in Onboarding table** - Uses the configuration information to update the fields related to the length of the buddy program and when emails should be sent when an Onboarder is matched to a Buddy.
+  - **Update Onboarders on update of Configurations record** - Updates the program-driven columns on the Onboarders table with new values based on configuration updates.
 - **Four connection references**:
-  - **Onboarding Buddy app - Dataverse** - Connection reference to Dataverse
-  - **Onboarding Buddy app - Office 365 Users** - Connection reference to Office 365
-  - **Onboarding Buddy app - Office 365 Outlook** - Connection reference to Outlook
-  - **Onboarding Buddy app - Office 365 Groups** - Connection reference to Office Groups
+  - **Onboarding Buddy app - [Dataverse](/connectors/commondataserviceforapps/)** - Connection reference to Dataverse
+  - **Onboarding Buddy app - [Office 365 Outlook](/connectors/office365/)** - Connection reference to Outlook
+  - **Onboarding Buddy app - [Office 365 Users](/connectors/office365users/)** - Connection reference to Office 365
+  - **Onboarding Buddy app - [Office 365 Groups](/connectors/office365groups/)** - Connection reference to Office Groups
 
 ## Next steps
 
-[Install and configure the Onboarding Buddy template](install-and-configure.md)
+- [Install and configure the Onboarding Buddy template](install-and-configure.md)
+- [Learn how to customize the Onboarding Buddy app](customize.md)
 
 ## See also
 
-[Get started managing the Onboarding Buddy app](manage.md)
+- [Get started managing the Onboarding Buddy app](manage.md)
+- [Get started using the Onboarding Buddy app](use.md)

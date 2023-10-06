@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
-ms.date: 09/27/2023
+ms.date: 10/04/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -97,7 +97,7 @@ The solution includes three new security roles:
 Roles can be assigned from the Power Platform admin center.
 
 1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
-1. Select **Environment** on the left panel and then select the environment where the solution was installed.
+1. Select **Environment** on the left-side panel and then select the environment where the solution was installed.
 1. Select **Users** > **See all**.
 1. Select the user(s).
 1. Select **Manage security roles**, and then select the appropriate roles.
@@ -127,24 +127,28 @@ Follow these steps for each flow:
 
 ## Step 6: Set flow connections
 
-1. In Power Apps maker portal, select **Solutions** on the left panel.
+1. In [Power Apps Studio](https://make.powerapps.com), select **Solutions** on the left-side panel.
 1. Select **Kudos** from your list of solutions.
 1. Select **Cloud Flows**. Two cloud flows require editing:
 
-    - **Kudos app**: Notification email
     - **Kudo app**: Share Kudos with sender, assign to recipient
-1. Edit the _Kudos app_ by taking these steps:
+    - **Kudos app**: Notification email
 
-    1. Select the flow to open a flow overview page.
-    1. Select **Edit** in the upper-left corner.
+1. Edit the _Kudo app - Share Kudo with Sender, Assign to Recipient_ by taking these steps:
+
+    1. In the Kudos solution, select _Cloud Flows_ on the left-side panel.
+    1. Select the _flow_ to open the flow's overview screen.
+
+    1. On the flow overview screen, select **Edit** on the command bar to connect the to the Microsoft Dataverse connector.
     1. Select **Continue**.
     1. Select **Save**.
+    :::image type="content" source="media/install/kudo-app-flow.png" alt-text="Image of Kudo App - Share Kudo with Sender, Assign to Recipient flow. Select save.":::
 
-1. Edit the _Kudo app_ by taking these steps:
+1. Edit the _Kudos app - Notification Email_ by taking these steps:
 
-    1. Go to _Cloud Flows_ in the Kudos solution.
-    1. Select the flow to open a flow overview page.
-    1. Select **Edit** in the upper-left corner.
+    1. In the Kudos solution, select _Cloud Flows_ on the left-side panel.
+    1. Select the _flow_ to open the flow's overview screen.
+    1. Select **Edit** on the command bar.
     1. Select the first flows step with a warning on it.
     1. Select **+ New connection reference** or if pre-existing connections are listed, you can select one of those to reuse it. After you do that, the warning should resolve and you'll see the flow step without the warning. Note: after selecting, it may take a few seconds for everything to resolve.
     1. Select the next flow step with a warning on it.
@@ -152,7 +156,7 @@ Follow these steps for each flow:
 
        :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference":::
 
-    1. Select **Save** at the bottom of the screen or at the top toolbar.
+    1. Select **Save** at the bottom of the screen or on the command bar.
 
        :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference.":::
 
@@ -160,8 +164,11 @@ Follow these steps for each flow:
 
 Open the newly installed _Kudos solution_ and verify that the four cloud flows are set to the _on_ status. If they aren't, turn them on.
 
-1. Select the cloud flow that is turned off.
-1. Select **Turn on** on the top toolbar.
+1. 1. Select **Solutions** on left-side panel.
+1. Select the **Kudos** solution from the list.
+1. Select **Cloud flows (4)** on the left-side panel.
+1. Select _each of the four flows_ in the list to verify that each one is turned on.
+1. Select **Turn on** on the command bar if the flow  is not already set to _on_.
 
 ## Step 8: Install sample data (optional)
 
@@ -184,7 +191,7 @@ To create your own badges, refer to [Create Custom Badges](manage.md#create-cust
 1. Select **Share**.
 
 > [!NOTE]
->If you didn't install the Kudos solution and it hasn't been shared with you, then you'll have to navigate to the Kudos solution and find the app there.
+>If you didn't install the Kudos solution and it hasn't been shared with you, then you'll have to go to the Kudos solution and find the app there.
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
