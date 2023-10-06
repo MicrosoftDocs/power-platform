@@ -365,6 +365,9 @@ We are in the process of moving application user management from the legacy web 
 ## How stub users are created
 A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in customer engagement apps. This user can't sign in, can't be enabled, and can't be synchronized to Microsoft 365. This type of user can only be created through data import. 
 
+> [!CAUTION]
+> To prevent the system from creating duplicate user records with the same UPN or throw errors during data import workflows, synchronize the users from Entra ID to Dataverse before running data import.
+
 A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Basic User** security role is assigned in a Power Apps environment.
 
 > [!NOTE]
