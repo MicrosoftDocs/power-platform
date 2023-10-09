@@ -69,19 +69,9 @@ Training can be delivered through various channels. These channels include Techn
 Microsoft Technology Center (MTC) Architects and Microsoft certified partners. In exceptional circumstances, 
 engineering resources like Power CAT may be able to facilitate these sessions. 
 
-|
-|--|--|
-
-|**PVA in a Day is an instructor led, hand’s on 
+| **PVA in a Day** | **PVA Architecture Series** |
+|:--|:--|
+|PVA in a Day is an instructor led, hand’s on 
 course that will familiarize chatbot makers 
 with Power Virtual Agents. The content 
-includes:** 
-• Build your first chatbot
-• Topic suggestions
-• Improve your chatbot with|The PVA Architecture Series is another 
-resource that can be consumed on-demand. 
-This content focuses on considerations 
-that customers should account for when 
-embarking on a chatbot project. The content 
-includes: 
-• Planning your first chatbot|
+includes: |
