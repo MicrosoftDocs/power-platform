@@ -4,8 +4,6 @@
       items: 
         - name: Overview
           href: overview.md
-        - name: Use Power Fx formulas in Power Apps 
-          href: /power-apps/maker/canvas-apps/working-with-formulas  
         - name: Operators
           href: operators.md   
         - name: Data types
@@ -440,3 +438,5 @@
             href: expression-grammar.md
           - name: YAML formula grammar
             href: yaml-formula-grammar.md
+        - name: Use Power Fx formulas in Power Apps 
+          href: /power-apps/maker/canvas-apps/working-with-formulas  

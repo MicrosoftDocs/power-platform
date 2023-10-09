@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 06/29/2023
+ms.date: 10/02/2023
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -25,6 +25,38 @@ For deprecation information of other products, see [Other deprecation articles](
 ## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
 
 Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
+
+## Deprecating support of unregistered MSA and External Azure Active Directory users in Dataverse
+
+As part of our ongoing efforts to enhance the security and performance of Dataverse platform, we are announcing deprecation of support to unregistered MSA and externals Azure Active Directory (AAD) users in Dataverse due to its relative obscurity and complexity associated with this feature in authorization scenario.
+
+### What is changing?
+
+If a [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Azure Active Directory (AAD ) accounts](/azure/active-directory/external-identities/default-account) that are not registered in your AAD tenant, you will not be able to access Dataverse on the common endpoint. You will see an error message like "AADSTS50020: user account ‘contoso@contoso.com; from identity provider ‘https://sts.windows.net/{tenant Id}/’ does not exist in tenant ‘{tenant name}’ and cannot access the application ‘{application Id}’(Dataverse org name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Azure Active Directory user account.". Previously, Dataverse would deny access to these accounts, but now they will be blocked at the AAD tenant level. This change does not affect [GDAP](/partner-center/gdap-introduction) or CSP users.
+
+### What do you need to do?
+
+If a user who is not part of your Azure Active Directory (AAD) needs access to Dataverse organization, the User needs to be added to the Tenant as an external User or Guest User. For detailed steps, see [Add B2B collaboration users in the Microsoft Entra admin center](/azure/active-directory/external-identities/add-users-administrator). Additionally, you can restrict access to the Dataverse organization by reviewing the access granted to external users by following the steps below.
+
+**Disable sharing apps with everyone:** You can assess if sharing applications with everyone (including guests) is a requirement for cross-team collaboration.  If it is not, then you can disable share with everyone using the following PowerShell script:
+
+```powershell
+$tenantSettings = Get-TenantSettings
+$tenantSettings.powerPlatform.powerApps.disableShareWithEveryone = $true
+Set-TenantSettings $tenantSettings
+```
+
+**Disable guests from making apps:** You can review if guests making apps in your organization are required. You can disable if guests are not expected to be makers (such as, customizing SharePoint forms). Note that this option already defaults to `$false`.
+
+```powershell
+$tenantSettings = Get-TenantSettings
+$tenantSettings.powerPlatform.powerApps.enableGuestsToMake = $false
+Set-TenantSettings $tenantSettings
+```
+  
+### When is this change coming into effect?
+
+By **October 2023**, we will be removing support of unregistered MSA and external AAD users in the Dataverse.
 
 <a name="#jquery-211-to-be-removed-in-model-driven-apps" ></a>
 

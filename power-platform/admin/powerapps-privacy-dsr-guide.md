@@ -1,6 +1,6 @@
 ---
 title: "Responding to Data Subject Rights (DSR) requests for Power Apps customer data"
-description: "Walkthough of how to respond to Data Subject Rights (DSR) requests for Power Apps customer data to support GDPR compliance."
+description: "Walkthough of how to respond to Data Subject Rights (DSR) requests for Power Apps customer data to support privacy compliance."
 author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
@@ -15,17 +15,10 @@ search.audienceType:
 # Responding to Data Subject Rights (DSR) requests for Power Apps customer data
 
 ## Introduction to DSR Requests
-The European Union (EU) General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that's been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects the right to do the following, as it pertains to their personal data:
 
-* Obtain copies
-* Request corrections
-* Restrict processing
-* Delete it
-* Receive it in electronic format so it can be moved to another controller
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-A formal request by a data subject to a controller to take an action on their personal data is called a Data Subject Rights (DSR) request.
-
-This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Power Apps, Power Automate, and Microsoft Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article provides examples of steps you can take to support privacy compliance when using Power Apps, Power Automate, and Microsoft Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
 The following actions are covered in this article:
 
@@ -68,14 +61,14 @@ Power Apps offers the following experiences to find personal data for a specific
 - **Website access**: [Power Apps site](https://make.powerapps.com) and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 - **PowerShell access**: Power Apps cmdlets (for [app creators](./powerapps-powershell.md) and [administrators](./powerapps-powershell.md)) and [On-premises gateway cmdlets](/data-integration/gateway/service-gateway-high-availability-clusters)
 
-For detailed steps on how you can use these experiences to find personal data for a specific user for each of these types of resources, see [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md).
+For detailed steps on how you can use these experiences to find personal data for a specific user for each of these types of resources, see [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-privacy-export-dsr.md).
 
 After you find the data, you can then perform the specific action to satisfy the request by the data subject.
 
 ### Step 2: Find personal data for the user in Power Automate
 Power Apps licenses always include Power Automate capabilities. In addition to being included in Power Apps licenses, Power Automate is also available as a standalone service.
 
-For guidance on how to discover personal data stored by the Power Automate service, see [Responding to GDPR Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary).
+For guidance on how to discover personal data stored by the Power Automate service, see [Responding to Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user
@@ -83,7 +76,7 @@ For guidance on how to discover personal data stored by the Power Automate servi
 ### Step 3: Find personal data for the user in environments of Dataverse
 Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the [Power Apps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each Power Apps license.
 
-For guidance on how to discover personal data stored by Dataverse, see [Responding to Data Subject Rights (DSR) requests for customer data in Dataverse](common-data-service-gdpr-dsr-guide.md).
+For guidance on how to discover personal data stored by Dataverse, see [Responding to Data Subject Rights (DSR) requests for customer data in Dataverse](dataverse-privacy-dsr-guide.md).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.
@@ -91,7 +84,7 @@ For guidance on how to discover personal data stored by Dataverse, see [Respondi
 ## Rectify
 If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
 
-You can use Azure Active Directory to manage the identities (personal data) of your users within Power Apps. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services. See [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) for details.
+You can use Azure Active Directory to manage the identities (personal data) of your users within Power Apps. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
 
 ## Restrict
 Data subjects may request that you restrict processing of their personal data.  We provide both pre-existing application programming interfaces (APIs) and user interfaces (UIs).  These experiences provide the enterprise customer's Power Platform admin the capability to manage such DSRs through a combination of data export and data deletion. A customer may request:
@@ -107,14 +100,14 @@ Data subjects may request that you restrict processing of their personal data.  
 ## Export
 The "right of data portability" allows a data subject to request a copy of their personal data in an electronic format (that's a "structured, commonly used, machine read-able and interoperable format") that may be transmitted to another data controller.
 
-See [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md) for details.
+See [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-privacy-export-dsr.md) for details.
 
 ## Delete
-The "right to erasure" by the removal of personal data from an organization's customer data is a key protection in the GDPR. Removing personal data includes system-generated logs but not audit-log information.
+The "right to erasure" by the removal of personal data from an organization's customer data is a key privacy protection. Removing personal data includes system-generated logs but not audit-log information.
 
 Power Apps allows users to build line-of-business applications that are a critical part of your organization's day-to-day operations. When a user leaves your organization, you will need to manually review and determine whether to delete certain data and resources that they have created. Other customer data will be automatically deleted whenever the user's account is deleted from Azure Active Directory.
 
-See [Responding to Data Subject Rights (DSR) requests to delete Power Apps customer data](powerapps-gdpr-delete-dsr.md) for details.
+See [Responding to Data Subject Rights (DSR) requests to delete Power Apps customer data](powerapps-privacy-delete-dsr.md) for details.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
