@@ -15,17 +15,9 @@ search.audienceType:
 
 ## Introduction to DSR requests
 
-The European Union (EU) General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as data subjects) to manage the personal data that's been collected by an employer or other type of agency or organization (known as the data controller or just controller). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects the right to do the following, as it pertains to their personal data:
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-- Obtain copies
-- Request corrections
-- Restrict processing
-- Delete it
-- Receive it in electronic format so it can be moved to another controller
-
-A formal request by a data subject to a controller to take an action on their personal data is called a Data Subject Rights (DSR) request.
-
-This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Data Integration for Admins via the administrator portal in Dataverse . You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article provides examples of steps you can take to support privacy compliance when using Data Integration for Admins via the administrator portal in Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
 ### Searching for and identifying personal data
 
