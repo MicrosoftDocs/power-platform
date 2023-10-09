@@ -1,6 +1,6 @@
 ---
-title: Power Fx formula reference for Power Apps
-description: Reference information for functions, signals, and enumerations in Power Apps.
+title: Power Fx formula reference
+description: Reference information for functions, signals, and enumerations in Power Fx.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -16,7 +16,7 @@ contributors:
   - jorisdg
 ---
 
-# Power Fx formula reference for Power Apps
+# Power Fx formula reference
 
 Formulas combine many elements. Listed below are:
 
