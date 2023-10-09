@@ -17,7 +17,7 @@ search.audienceType:
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-This article provides examples of steps you can take to support privacy compliance when using Data Integration for Admins via the administrator portal in Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article provides examples of steps you can take to support privacy compliance when using Data Integration for Admins via the administrator portal in Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to Data Subject Rights (DSR) requests.
 
 ### Searching for and identifying personal data
 
