@@ -4,11 +4,13 @@ description: "This page explains how to reset a Power Platform environment if yo
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2022
+ms.date: 10/09/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- iscohen-microsoft 
 ---
 # Reset environment 
 
