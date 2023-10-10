@@ -10,24 +10,24 @@
       - name: Pillars
         items:
         - name: Overview
-          href: ./overview.md
+          href: pillars.md
+        - name: Experience excellence
+          items:
+          - name: Quick links
+            href: experience-excllence/index.yml
         - name: Reliability
           items: 
           - name: Quick links
-            href: ./overview.md
-        - name: Experience excellence
-          items:
-            - name: Quick links
-              href: experience-excllence/index.yml
+            href: reliability/index.yml
         - name: Operational excellence
           items: 
           - name: Quick links
-            href: ./overview.md
+            href: operational-excellence/index.yml
         - name: Performance efficiency
           items: 
           - name: Quick links
-            href: ./overview.md
+            href: performance-efficiency/index.yml
         - name: Security
           items: 
           - name: Quick links
-            href: ./overview.md
+            href: security/index.yml
