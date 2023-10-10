@@ -24,15 +24,15 @@
           href: working-with-json.md
         - name: Formula reference
           items:
-          - name: All functions
-            href: formula-reference.md
-          - name: Functions by product or service
+          - name: Formula reference
+            href: formula-reference-overview.md
+          - name: By product or service
             items:
-            - name: All Dataverse functions
+            - name: Dataverse
               href: formula-reference-dataverse.md
-            - name: All Power Apps functions
-              href: formula-reference-power-apps.md
-            - name: All Power Virtual Agents functions
+            - name: Power Apps
+              href: formula-reference.md
+            - name: Power Virtual Agents
               href: formula-reference-pva.md
           - name: Abs
             href: reference/function-numericals.md

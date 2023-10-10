@@ -1,5 +1,5 @@
 ---
-title: All Power Virtual Agents functions
+title: Formula reference - Power Virtual Agents
 description: Reference information for functions, signals, and enumerations in Power Virtual Agents.
 author: gregli-msft
 ms.topic: reference
@@ -16,7 +16,7 @@ contributors:
   - jorisdg
 ---
 
-# All Power Virtual Agents functions
+# Formula reference - Power Virtual Agents
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

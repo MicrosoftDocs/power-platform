@@ -1,5 +1,5 @@
 ---
-title: All Dataverse functions
+title: Formula reference - Dataverse
 description: Reference information for functions, signals, and enumerations in Dataverse.
 author: gregli-msft
 ms.topic: reference
@@ -16,7 +16,7 @@ contributors:
   - jorisdg
 ---
 
-# All Dataverse functions
+# Formula reference - Dataverse
 
 In this article, learn about all the functions available in Microsoft Dataverse.
 
