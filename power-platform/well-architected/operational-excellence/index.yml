@@ -1,0 +1,94 @@
+### YamlMime:Landing
+
+title: Operational excellence quick links
+summary: Apply operational excellence guidance in your architecture to....
+
+metadata:
+  title: Operational excellence quick links
+  description: Apply experience excellence in your architecture to....
+  ms.service: waf
+  ms.subservice: waf-pillar-optimization
+  ms.topic: landing-page
+  author: robstand
+  ms.author: rstand
+  ms.date: 12/25/2023
+
+landingContent:
+  - title: Key points
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Design principles
+            url: principles.md
+          - text: Checklist
+            url: checklist.md
+          - text: Tradeoffs
+            url: tradeoffs.md
+          - text: Cost optimization patterns
+            url: design-patterns.md
+          - text: Azure Well-Architected Review assessment
+            url: /assessments/azure-architecture-review/
+  - title: Design principles
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Design with...
+            url: principles.md
+          - text: Design with...
+            url: principles.md
+          - text: Design with...
+            url: principles.md
+          - text: Design with...
+            url: principles.md
+          - text: Design with...
+            url: principles.md
+  - title: User experience
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: How to...
+            url: design-patterns.md
+          - text: How to...
+            url: design-patterns.md
+          - text: How to...
+            url: design-patterns.md
+          - text: How to...
+            url: design-patterns.md
+  - title: Design for usability
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: How to...
+            url: design-patterns.md
+          - text: How to...
+            url: design-patterns.md
+          - text: How to...
+            url: design-patterns.md
+          - text: How to...
+            url: design-patterns.md
+  - title: Interaction design
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: How to...
+            url: design-patterns.md
+          - text: How to...
+            url: design-patterns.md
+          - text: How to...
+            url: design-patterns.md
+          - text: How to...
+            url: design-patterns.md
+  - title: Related resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Recommendation
+            url: /power-platform/guidance
+          - text: Recommendation
+            url: /power-platform/guidance
+          - text: Recommendation
+            url: /power-platform/guidance
+          - text: Recommendation
+            url: /power-platform/guidance
+          - text: Recommendation
+            url: /power-platform/guidance

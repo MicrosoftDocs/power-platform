@@ -15,6 +15,10 @@
           items: 
           - name: Quick links
             href: ./overview.md
+        - name: Experience excellence
+          items:
+            - name: Quick links
+              href: experience-excllence/index.yml
         - name: Operational excellence
           items: 
           - name: Quick links
