@@ -48,4 +48,5 @@ Use collaboration settings to adjust how collaboration features work in Power Pl
 
   - **Show record name and type to unauthorized users when unfurling links in Teams chats**: When a link is pasted into a Teams chat, display the name and type of record in a card.
 
+
   - **Install the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams**: Active users of Dynamics 365 apps and Power Apps model-driven apps get the Dynamics 365 app for Teams automatically installed in their Teams client.
