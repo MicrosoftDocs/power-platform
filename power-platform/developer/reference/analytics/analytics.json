@@ -430,7 +430,7 @@
           "x-ms-summary": "Resource type"
         },
         "resourceSubType": {
-          "description": "The sub type of the resource",
+          "description": "The sub-type of the resource",
           "type": "string",
           "x-ms-summary": "Resource sub type"
         },
