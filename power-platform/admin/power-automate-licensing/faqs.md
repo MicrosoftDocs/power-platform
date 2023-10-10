@@ -339,7 +339,7 @@ Admins have a Powershell command to see the flows that need their attention like
 
 Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics 365 entities in the environment or using first party Dynamics 365 connectors like finance and operations are automatically considered as being in context of the Dynamics 365 app in the environment and are excluded from enforcement. If the environment doesn't have Dynamics 365 app installed or if a premium flow isn't using Dynamics 365 entities and is not linked to any Dynamics 365 app, you must purchase a standalone Power Automate license.
 
-| Enforcement Type | Exceptions | Admin notifications | Maker notification(+30 days) | Grace period(14 days or 120 days) | Recommended Action | Enforcement - Flow turn off |
+| Enforcement Type | Exceptions | Admin notifications | Maker notification(+30 days) | Grace period | Recommended Action | Enforcement - Flow turn off |
 |--------------|-------------------|--------|----------|---------|-------|------|
 | Premium flows where flow owner left the organization | Manual flows and flows whose owners have grandfathered licenses(P1,P2) will not be enforced  | September 1, 2022 | October 1, 2022 | 14 days | Assign a Power Automate license to the flow owner or per-flow/process license to the flow | October 15, 2022 |
 |Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now)|Manual flows and flows whose owners have grandfathered licenses(P1,P2) will not be enforced  | September 1, 2022| October 1, 2022 | 14 days | Assign a Power Automate license to the flow owner or per-flow/process license to the flow | October 15, 2022 |
