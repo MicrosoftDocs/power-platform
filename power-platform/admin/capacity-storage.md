@@ -49,8 +49,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 The new licensing storage model looks like the following image. 
 
-> [!div class="mx-imgBorder"] 
-> ![New licensing storage model.](media/capacity-new-license-model.png "New licensing storage model")
+:::image type="content" source="media/capacity-new-license-model.png" alt-text="New licensing storage model":::
 
 ## Capacity page details
 
@@ -65,14 +64,11 @@ For the **Summary** page to be displayed, the user needs to have one of the foll
 
 Alternatively Global Admins, Tenant Admins , or Power Platform Admins have the option to grant permission to Environment Administrators to view the Capacity Summary tab within the tenant settings 
 
-> [!div class="mx-imgBorder"] 
-> ![Capacity Summary setting tab.](media/Tenant-Capacity-Summary-Setting.png "Capacity Summary setting tab")
+:::image type="content" source="media/Tenant-Capacity-Summary-Setting.png" alt-text="Capacity Summary setting tab.":::
 
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
-> [!div class="mx-imgBorder"] 
-> ![Capacity page Summary tab.](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
-
+:::image type="content" source="media/storage-data-capacity-page-review.png" alt-text="Capacity page Summary tab":::
 
 All tables of Dataverse, including system tables, are included in the storage capacity reports.
 
@@ -103,8 +99,7 @@ Note the following features:
 |Details  | See the next section for using the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
 | Default environment tip | The calculated storage usage in this view only displays what is **above** the default environment’s included capacity. Tool tips indicate how to view actual usage in the **Details** section. |
 
-> [!div class="mx-imgBorder"] 
-> ![Storage data per environment details button.](media/storage-data-per-environment2.png "Storage data per environment details button")
+:::image type="content" source="media/storage-data-per-environment2.png" alt-text="Storage data per environment details button":::
 
 > [!NOTE]
 > - The following environments don't count against capacity and are shown as 0 GB:
@@ -123,8 +118,7 @@ Note the following features:
 
 Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
 
-> [!div class="mx-imgBorder"] 
-> ![Environment capacity analytics.](media/storage-data-capacity-details.png "Environment capacity analytics")
+:::image type="content" source="media/storage-data-capacity-details.png" alt-text="Environment capacity analytics":::
 
 The following details are provided:
 
