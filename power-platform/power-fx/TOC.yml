@@ -24,9 +24,7 @@
           href: working-with-json.md
         - name: Formula reference
           items:
-          - name: Formula reference
-            href: formula-reference-overview.md
-          - name: By product or service
+          - name: Formula reference by product or service
             items:
             - name: Dataverse
               href: formula-reference-dataverse.md
