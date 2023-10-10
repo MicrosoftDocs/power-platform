@@ -34,6 +34,8 @@
       href: nlu-gpt-overview.md
     - name: Quickstart guide for building bots with GPT
       href: nlu-gpt-quickstart.md
+    - name: Use plugin actions in Power Virtual Agents (preview)
+      href: advanced-plugin-actions.md
     - name: Generative answers
       href: nlu-boost-conversations.md
     - name: Generative answers with Search and summarize
@@ -42,6 +44,8 @@
       href: nlu-generative-answers-bing.md
     - name: Use a connection to Azure OpenAI on your data
       href: nlu-generative-answers-azure-openai.md
+    - name: Use uploaded documents (preview)
+      href: nlu-documents.md
     - name: Use content on SharePoint or OneDrive for Business
       href: nlu-generative-answers-sharepoint-onedrive.md
     - name: Use a custom data source
@@ -86,6 +90,8 @@
       href: authoring-system-topics.md
     - name: Create and edit topics
       href: authoring-create-edit-topics.md
+    - name: Use topic triggers
+      href: authoring-triggers.md
     - name: Start with sample topics
       href: authoring-template-topics.md
     - name: Start from existing content
@@ -116,6 +122,8 @@
       href: advanced-entities-slot-filling.md
     - name: Use variables
       href: authoring-variables.md
+    - name: Make HTTP requests
+      href: authoring-http-node.md
     - name: Sending event activities
       href: authoring-send-event-activities.md
     - name: Reuse variables across topics
@@ -247,3 +255,11 @@
       href: gdpr-delete.md
     - name: Requests to discover data
       href: gdpr-discovery.md
+- name: Responsible AI
+  items:
+    - name: Overview
+      href: responsible-ai-overview.md
+    - name: FAQ for generative answers
+      href: faqs-generative-answers.md
+    - name: FAQ for copilot
+      href: faqs-copilot.md

@@ -186,6 +186,10 @@
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
+                - name: Block cookie replay attacks
+                  href: block-cookie-replay-attack.md
+                - name: Configure IP firewall (preview)
+                  href: ip-firewall.md
             - name: Environment updates
               items:
                 - name: Opt in to early access updates
@@ -456,10 +460,6 @@
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors
                   href: block-forwarded-email-from-power-automate.md
-                - name: Block cookie replay attacks
-                  href: block-cookie-replay-attack.md
-                - name: Configure IP firewall (preview)
-                  href: ip-firewall.md
                 - name: Continuous access evaluation (preview)
                   href: continuous-access-evaluation.md
                 - name: Configure environment security
@@ -712,6 +712,8 @@
                   href: programmability-tutorial-install-application-environment.md
                 - name: "Tutorial: Allocate add-ons to environments (preview)"
                   href: programmability-tutorial-allocate-capacity-addons.md
+                - name: "Tutorial: Create cross tenant isolation reports (preview)"
+                  href: programmability-tutorial-cross-tenant-reporting.md
             - name: PowerShell
               items:
                 - name: Getting started
@@ -1036,24 +1038,24 @@
               href: analyze-improve-data-query-performance.md
         - name: Compliance and data privacy
           href: wp-compliance-data-privacy.md
-        - name: GDPR - Responding to DSR requests
+        - name: Responding to DSR requests
           items:
-            - name: About GDPR
-              href: about-gdpr.md
+            - name: About privacy
+              href: about-privacy.md
             - name: System-generated logs
-              href: powerapps-gdpr-dsr-guide-systemlogs.md
+              href: powerapps-privacy-dsr-guide-systemlogs.md
             - name: Data integrations for Dataverse
-              href: data-integration-gdpr-dsr-guide.md
+              href: data-integration-privacy-dsr-guide.md
             - name: Power Apps customer data
               items:
                 - name: Overview
-                  href: powerapps-gdpr-dsr-guide.md
+                  href: powerapps-privacy-dsr-guide.md
                 - name: Export data
-                  href: powerapps-gdpr-export-dsr.md
+                  href: powerapps-privacy-export-dsr.md
                 - name: Delete data
-                  href: powerapps-gdpr-delete-dsr.md
+                  href: powerapps-privacy-delete-dsr.md
                 - name: Dataverse customer data
-                  href: common-data-service-gdpr-dsr-guide.md
+                  href: dataverse-privacy-dsr-guide.md
         - name: Datacenter regions
           href: new-datacenter-regions.md
           items:
