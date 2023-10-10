@@ -14,6 +14,8 @@ contributors:
 ---
 # Host object in Power Apps
 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Cards 
+
 The **Host** object in Power Apps provides information about the current host running the app.
 
 ## Description
