@@ -64,7 +64,7 @@ For the **Summary** page to be displayed, the user needs to have one of the foll
 
 Alternatively Global Admins, Tenant Admins , or Power Platform Admins have the option to grant permission to Environment Administrators to view the Capacity Summary tab within the tenant settings 
 
-:::image type="content" source="media/Tenant-Capacity-Summary-Setting.png" alt-text="Capacity Summary setting tab.":::
+:::image type="content" source="media/tenant-capacity-summary-setting.png" alt-text="Capacity Summary setting tab.":::
 
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
