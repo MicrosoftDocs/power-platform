@@ -14,7 +14,9 @@
         - name: Experience excellence
           items:
           - name: Quick links
-            href: experience-excllence/index.yml
+            href: experience-excellence/index.yml
+          - name: Design principles
+            href: experience-excellence/principles.md
         - name: Reliability
           items: 
           - name: Quick links
