@@ -47,7 +47,7 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 1. Select **Environments**, and then select an environment.
 1. Select **Settings** > **Product** > **Privacy + Security**.
 1. Under **IP address settings**, set **Enable IP address based firewall rule** to **On**.
-1. Under **Allowed list of IPv4 or IPv6 ranges**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges.
+1. Under **Allowed list of IPv4 ranges**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges.
 1. Select other settings, as appropriate:
 
    - **Service tags to be allowed by IP firewall**: From the list, select service tags that can bypass IP firewall restrictions.
