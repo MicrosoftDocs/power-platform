@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 09/01/2023
+ms.date: 10/11/2023
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
@@ -62,7 +62,7 @@ For the **Summary** page to be displayed, the user needs to have one of the foll
 - Power Platform admin
 - Dynamics 365 admin 
 
-Alternatively Global Admins, Tenant Admins , or Power Platform Admins have the option to grant permission to Environment Administrators to view the Capacity Summary tab within the tenant settings 
+Alternatively global admins, tenant admins , or Power Platform admins have the option to grant permission to environment administrators to view the **Capacity Summary** tab within the tenant settings. 
 
 :::image type="content" source="media/Tenant-Capacity-Summary-Setting.png" alt-text="Capacity Summary setting tab.":::
 
