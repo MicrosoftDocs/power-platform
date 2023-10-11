@@ -689,6 +689,11 @@
       "source_path": "power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs.md",
       "redirect_url": "/power-platform/admin/powerapps-privacy-dsr-guide-systemlogs",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/data-integration-gdpr-dsr-guide.md",
+      "redirect_url": "/power-platform/admin/data-integration-privacy-dsr-guide",
+      "redirect_document_id": "false"
     }
   ]
 }
