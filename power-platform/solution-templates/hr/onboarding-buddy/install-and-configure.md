@@ -75,7 +75,7 @@ More information:
 
 ## Step 4: Share the apps with program admins
 
-You may have program managers who need to contribute to the configuration steps. In this case, follow the directions in [step eight](#share) to share both the Onboarding Buddy Admin app and the Onboarding Buddy app specifically with them.
+You may have program managers who need to contribute to the configuration steps. In this case, follow the directions in [step eight](#step-8-share-the-onboarding-buddy-app) to share both the Onboarding Buddy Admin app and the Onboarding Buddy app specifically with them.
 
 ## Step 5: Configure program parameters
 
