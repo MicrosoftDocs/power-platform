@@ -21,6 +21,7 @@ The IP firewall helps to protect your organizational data by limiting user acces
 > [!IMPORTANT]
 >
 > - The IP firewall feature is only available with [Managed Environments](managed-environment-overview.md).
+> - The IP firewall feature only supports OData endpoints for accessing Dataverse data. Support for [TDS endpoints](https://learn.microsoft.com/en-us/power-platform/admin/settings-features#tds-endpoint) will be included in future release.
 
 ## Key benefits
 
@@ -125,6 +126,9 @@ In the IP firewall settings, allow the service tags listed in [Managed connector
 ### I have configured the reverse proxy address correctly, but the IP firewall isn't working
 
 Make sure your reverse proxy is configured to send the client IP address in the forwarded header.
+
+### Some of the calls from Power BI are failing after i enabled the IP firewall on the Power Platform environment.
+Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](https://learn.microsoft.com/en-us/power-platform/admin/settings-features#tds-endpoint), you will need to disable IP firewall in the environment.
 
 ## Next steps
 
