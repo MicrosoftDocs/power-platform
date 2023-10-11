@@ -3,7 +3,7 @@ title: "Tenant settings"
 description: "Review and configure tenant-level settings linked from this page." 
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 10/10/2023
+ms.date: 10/11/2023
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:
@@ -32,7 +32,7 @@ The following settings apply to all environments within your tenant.
 |[Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy)*   | Enable the Customer Lockbox policy for Managed Environments.        |
 |[Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features](../transparency-note-copilot-data-sharing.md)   | Enable Microsoft to capture and human review inputs, outputs, telemetry from Dynamics 365 Copilot and Power Platform Copilot AI features to build, improve, and validate Microsoft's machine leaning models, features, services, and related systems.<br/>By default, this setting is disabled.       |
 | Catalog Assignments  | This setting is reserved for future use. No enforcement is driven by this setting at the current time.       |
-| Tenant capacity summary view | This setting controls who can view the tenant capacity summary page : either only tenant admins or both tenant and environment admins. |
+| Tenant capacity summary view | This setting controls who can view the tenant capacity summary page: either only tenant admins or both tenant and environment admins. |
 
 *This setting applies only to Managed Environments.
 
