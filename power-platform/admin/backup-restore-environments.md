@@ -36,6 +36,9 @@ For example, you create an environment on January 1. On that day, the system sta
 
 This section uses the PowerShell for Power Platform Administrators module, which is the recommended PowerShell module for interacting with admin capabilities. For information that will help you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started).
 
+   > [!NOTE]
+   > This setting is only applicable to Production environments that don't have Dynamics 365 applications enabled. For Production environments that do have Dynamics 365 applications, 28 days will always be used. For all other non-Production environments, the default backup retention period of seven days will be used, regardless of this setting's value.
+
 ### Set the retention period
 
 ```powershell
