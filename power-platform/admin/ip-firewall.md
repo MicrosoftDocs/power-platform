@@ -13,7 +13,6 @@ ms.custom:
 
 # IP firewall in Power Platform environments (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyses the IP address of each request in real time. For example, suppose the IP firewall is turned on in your production Dataverse environment and allowed IP addresses are in the ranges associated with your office location. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
 
@@ -21,8 +20,6 @@ The IP firewall helps to protect your organizational data by limiting user acces
 
 > [!IMPORTANT]
 >
-> - This is a preview feature.
-> - [!INCLUDE [preview](../includes/cc-preview-features-definition.md)]
 > - The IP firewall feature is only available with [Managed Environments](managed-environment-overview.md).
 
 ## Key benefits
@@ -49,14 +46,14 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 1. Select **Environments**, and then select an environment.
 1. Select **Settings** > **Product** > **Privacy + Security**.
 1. Under **IP address settings**, set **Enable IP address based firewall rule** to **On**.
-1. Under **Allowed list of IPv4 or IPv6 ranges**, specify the allowed IP ranges in classless interdomain routing (CIDR) format. If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges.
+1. Under **Allowed list of IPv4 or IPv6 ranges**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges.
 1. Select other settings, as appropriate:
 
    - **Service tags to be allowed by IP firewall**: From the list, select service tags that can bypass IP firewall restrictions.
    - **Allow access for Microsoft trusted services**: This setting allows service tags `PowerPlatformInfra`, `GenevaSynthetics`, and `GenevaActions` and internal first-party applications to access the Power Platform environment with Dataverse. Enabled by default.
    - **Allow access for all application users**: This setting allows all application users third-party and first-party access to Dataverse APIs. Enabled by default.
    - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
-   - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both IP-based cookie binding and the IP firewall.
+   - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas in CIDR format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). The reverse proxy setting applies to both IP-based cookie binding and the IP firewall.
 
 1. Select **Save**.
 
@@ -83,15 +80,15 @@ The IP firewall is supported in any Power Platform environment that includes Dat
 
 ### How soon does a change to the IP address list take effect?
 
-Changes to the list of allowed IP addresses or ranges typically take effect in about five minutes.
+Changes to the list of allowed IP addresses or ranges typically take effect in about 5-10 minutes.
 
 ### Does this feature work in real time?
 
-IP firewall protection works in real time. Since the feature works at the network layer, it evaluates the request even before the authentication flow begins.
+IP firewall protection works in real time. Since the feature works at the network layer, it evaluates the request after the authentication request is completed.
 
 ### Is this feature enabled by default in all environments?
 
-The IP firewall isn't enabled by default. The Power Platform administrator needs to enable it in relevant environments.
+The IP firewall isn't enabled by default. The Power Platform administrator needs to enable it for Managed Environments.
 
 ### What is audit-only mode?
 
@@ -99,11 +96,11 @@ In audit-only mode, the IP firewall identifies the IP addresses that are making 
 
 ### Is this feature available in all the environments?
 
-The IP firewall is available in Managed Environments only.
+The IP firewall is available for [Managed Environments](managed-environment-overview.md) only.
 
 ### Is there a limit on the number of IP addresses that I can add in the IP address text box?
 
-You can add up to 200 IP addresses, separated by commas.
+You can add up to 200 IP addresses ranges in CIDR format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632), separated by commas.
 
 ### What should I do if I'm locked out due to incorrect configuration of IP addresses in the IP firewall?
 
