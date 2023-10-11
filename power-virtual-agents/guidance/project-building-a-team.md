@@ -27,15 +27,15 @@ Most customers treat a Chatbot implementation like any other project. It usually
 
 This is typically a System Integrator that leads various activities: 
     
-1. Project management including setting up workstreams and reviews with customer
+1. **Project management** including setting up workstreams and reviews with customer
     
-2. Chatbot development – frequently includes developers/analysts with experience of Power Virtual Agents,chatbots and related technologies
+2. **Chatbot development** – frequently includes developers/analysts with experience of Power Virtual Agents,chatbots and related technologies
     
-3. Training
+3. **Training**
     
-4. Administration/governance setup
+4. **Administration/governance setup**
     
-5. Hackathons and other nurture events to drive adoption and knowledge sharing
+5. **Hackathons and other nurture events** to drive adoption and knowledge sharing
 
 ## Microsoft 
 
@@ -55,9 +55,7 @@ This is typically a System Integrator that leads various activities:
 
     b. Customer Advisory Team (CAT) – engages with select customers providing guidance on how to adopt and deploy technology including architecture reviews and monthly executive syncs
     
-3. **Microsoft Support** 
-    
-    a. Works with customers to solve issues with Microsoft software. Aims to solve issues directly but can also bring in engineering resources for challenging issues
+3. **Microsoft Support - Works with customers to solve issues with Microsoft software. Aims to solve issues directly but can also bring in engineering resources for challenging issues**
 
 ## Training your team 
 
@@ -94,5 +92,6 @@ engineering resources like Power CAT may be able to facilitate these sessions.
 - Advanced topics
 - Security and Governance.
    
-
+> [!div class="nextstepaction"]
+> [Project Planning](project-planning.md)
 
