@@ -69,9 +69,30 @@ Training can be delivered through various channels. These channels include Techn
 Microsoft Technology Center (MTC) Architects and Microsoft certified partners. In exceptional circumstances, 
 engineering resources like Power CAT may be able to facilitate these sessions. 
 
-| **PVA in a Day** | **PVA Architecture Series** |
-|:--|:--|
-|PVA in a Day is an instructor led, hand’s on 
-course that will familiarize chatbot makers 
-with Power Virtual Agents. The content 
-includes: |
+| **PVA in a Day** |
+|---|
+| **[PVA in a Day](https://powervirtualagents.microsoft.com/blog/power-virtual-agents-in-a-day-update-new-canvas-new-content/) is an instructor led, hands-on course that will familiarize chatbot makers with Power Virtual Agents. The content includes:** 
+- Build your first chatbot
+- Topic suggestions
+- Improve your chatbot with entitiesvariables and topic redirect 
+- Integrate with prebuilt Power Automate flows
+- Build Power Automate flows for your chatbot 
+- Authentication
+- Export and import bots using solutions
+- Create a chatbot in Microsoft Teams
+- Topic design
+- Extend your bot using Bot Framework Composer (Optional) 
+- Add a telephone number to your bot using AudioCodes (Optional)
+
+| **PVA Architecture Series** |
+|---|
+**The [PVA Architecture Series](https://www.youtube.com/playlist?list=PLi9EhCY4z99Xrdvy3Ya8wx-8KzsOpMj0S) is another resource that can be consumed on-demand. This content focuses on considerations that customers should account for when embarking on a chatbot project. The content includes:** |
+- Planning your first chatbot
+- Building your first chatbot
+- Extending your PVA chatbot with the Power Platform 
+- Extending your PVA chatbot with the Bot Framework (not sure)
+- Advanced topics
+- Security and Governance.
+   
+
+
