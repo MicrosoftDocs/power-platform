@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Provides information on how to back up and restore Power Platform environments
 ms.topic: conceptual
-ms.date: 05/22/2023
+ms.date: 10/12/2023
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
@@ -35,6 +35,9 @@ For example, you create an environment on January 1. On that day, the system sta
 ## Prepare your environment for PowerShell
 
 This section uses the PowerShell for Power Platform Administrators module, which is the recommended PowerShell module for interacting with admin capabilities. For information that will help you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started).
+
+> [!NOTE]
+> This setting applies to production environments that don't have Dynamics 365 applications enabled. For production environments that do have Dynamics 365 applications, 28 days is used. For all other non-production environments, the default, backup retention period of seven days is used, regardless of this setting's value.
 
 ### Set the retention period
 
