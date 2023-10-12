@@ -28,7 +28,7 @@ Starting in October 2023, the classic app, form, and view designers are deprecat
 
 ### Impact
 
-Depending on your geographic location and roll out cadence, this might not impact you immediately but changes should reach your region within a week. After that, makers will have to reach out to their admin to access the classic designers.
+Depending on your geographic location and roll out cadence, this change will impact you in mid-October 2023. Makers will have to reach out to their admin to access the classic designers.
 
 ### Re-enabling the classic designers
 
