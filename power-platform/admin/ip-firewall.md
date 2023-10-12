@@ -103,9 +103,9 @@ The IP firewall is available for [Managed Environments](managed-environment-over
 
 You can add up to 200 IP addresses ranges in CIDR format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632), separated by commas.
 
-### What should I do if I'm locked out due to incorrect configuration of IP addresses in the IP firewall?
+### What should I do if requests to Dataverse starts to fail?
 
-If the IP firewall is misconfigured, contact Microsoft Customer Support to get the environment unlocked.
+An incorrect configuration of IP ranges for IP firewall might be causing this issue. You can check and verify the IP ranges on the IP firewall settings page. We recommend that you turn on the IP firewall in Audit-only mode before enforcing it.
 
 ### How do I download the audit log for audit-only mode?
 
@@ -116,8 +116,6 @@ Use the Dataverse OData API to download the audit log data in JSON format. The f
 - Replace **[orgURI]** with the Dataverse environment URI.
 - Set the action value to **118** for this event.
 - Set the number of items to return in **top=1** or specific the number you want to return.
-
-Reach out to Microsoft Support to get the API enabled for your Power Platform environment.
 
 ### My Power Automate flows aren't working as expected after configuring the IP firewall on my Power Platform environment. What should I do?
 
