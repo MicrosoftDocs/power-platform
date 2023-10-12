@@ -24,7 +24,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Classic app, form, and view designers are deprecated
 
-Starting in October 2023, the classic app, form, and view designers are deprecated, by default. This means that, by default, all model-driven apps, forms, and views will only open via the modern designers. The **Switch to classic** option to revert back to the classic designers from the modern designers will no longer be available.
+Starting in October 2023, the classic app, form, and view designers are deprecated, by default. This means that, by default, all model-driven apps, forms, and views will only open via the modern designers. By default, the **Switch to classic** option to revert back to the classic designers from the modern designers will no longer be available.
 
 ### Impact
 
