@@ -4,7 +4,7 @@ description: View and manage behavior settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/27/2023
+ms.date: 10/12/2023
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
@@ -43,6 +43,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Pricing decimal precision|Select how many decimal points to use for a currency.| 0|
 > |**Display behavior**|||  
 > |Use updated experience for classic settings where possible.| If **On**, user will be redirected to the modern experience when accessing some settings from the legacy experience.  More information: [New location for admin settings](admin-settings.md#new-location-for-admin-settings).|Off for existing environment. <br><br>On for new environment created after October 2021. |
+> |Show the Switch to classic buttons in Power Apps| When **On**, makers will be able to open and continue to use the deprecated classic app, view, and form designers.  More information: [Classic app, form, and view designer are deprecated](../important-changes-coming.md#classic-app-form-and-view-designer-are-deprecated) |Off |
 > |Show app download message|If **On**, users will see a message regarding downloading the Dynamics 365 for tablets app.| On|
 > |Show legacy app to everyone, not just admin|The legacy web app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. It is always visible to those with System Administrator and System Customizer roles, and to other custom roles with similar privileges.  More information: [Dynamics 365 - custom](enable-unified-interface-only.md#dynamics-365---custom).| On | 
 > |Legacy app name|Enter the label to use for the legacy app. This appears on the Dynamics 365 home page. More information: [Dynamics 365 - custom](enable-unified-interface-only.md#dynamics-365---custom).|Dynamics 365 - custom |

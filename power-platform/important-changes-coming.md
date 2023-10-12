@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 10/02/2023
+ms.date: 10/12/2023
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -22,10 +22,17 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Classic App, Form, and View Designer will be deprecated by default 
+## Classic app, form, and view designers are deprecated
 
-Starting in October 2023, the Classic App, Form, and View Designer will be deprecated by default. This means that all model-driven apps, forms, and views will only open via the Modern Designers. The "Switch to Classic" option to revert back to Classic Designers from the Modern Designers will no longer be available by default. Depending on your geographic location and roll out cadence, this may not impact you immediately but changes should reach your region within a week. After that, makers will have to reach out to their admin to access the Classic Designers. Admins can turn the Switch to Classic option back on in the Power Platform Admin Center for specific environments. The Modern App, Form, and View Desginer are at core feature parity with the deprecated Classic Designers. As such, makers are expected to fully transition to use only the Modern Designers to build model-driven apps and components. 
+Starting in October 2023, the classic app, form, and view designers are deprecated, by default. This means that, by default, all model-driven apps, forms, and views will only open via the modern designers. The **Switch to classic** option to revert back to the classic designers from the modern designers will no longer be available.
 
+### Impact
+
+Depending on your geographic location and roll out cadence, this might not impact you immediately but changes should reach your region within a week. After that, makers will have to reach out to their admin to access the classic designers.
+
+### Re-enabling the classic designers
+
+Admins can turn the **Switch to classic** option back on in the Power Platform admin center for specific environments. The modern app, form, and view designers are at core feature parity with the deprecated classic designers. As such, makers are expected to fully transition to use only the modern designers to build model-driven apps and components. More information: [Manage behavior settings](admin/settings-behavior.md#settings)
 
 ## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
 
