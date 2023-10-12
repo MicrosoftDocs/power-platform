@@ -35,6 +35,9 @@ In this tutorial, learn how to:
 
 Use the following PowerShell script to authenticate using Power Platform API.
 
+> [!NOTE]
+> Only user with Global administrator and Power Platform administratos Entra ID roles have the permission to run the tenant isolation impact report.
+
 ```PowerShell
 Import-Module "MSAL.PS"
 $AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
