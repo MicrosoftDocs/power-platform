@@ -49,7 +49,7 @@ You can allow copilots in your Power Platform environments outside the United St
 
 1. Read the information in the panel and select the check mark to consent to the terms of use.
 
-    :::image type="content" source="media/generative-ai-pane.svg" alt-text="Select the check mark to consent to the terms of use.":::
+    :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use.":::
 
 1. Select **Enable**.
 
