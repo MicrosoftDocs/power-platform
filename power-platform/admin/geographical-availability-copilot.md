@@ -45,11 +45,11 @@ You can allow copilots in your Power Platform environments outside the United St
 
 1. On the right side of the screen, select **Edit** on the **Generative AI features** card.
 
-    :::image type="content" source="media/allow-data-movement.png" alt-text="Select **Edit** on the **Generative AI features** card." border="true":::
+    :::image type="content" source="media/ai-not-allowed.svg" alt-text="Select **Edit** on the **Generative AI features** card.":::
 
 1. Read the information in the panel and select the check mark to consent to the terms of use.
 
-    :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use." border="true":::
+    :::image type="content" source="media/generative-ai-pane.svg" alt-text="Select the check mark to consent to the terms of use.":::
 
 1. Select **Enable**.
 
