@@ -4,7 +4,7 @@ description: Learn about how to enable copilot and generative AI features in Pow
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/12/2023
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -43,7 +43,7 @@ You can allow copilots in your Power Platform environments outside the United St
 
 1. Select your environment.
 
-1. From the right side of the screen, select **Edit** on the **Generative AI features** card.
+1. On the right side of the screen, select **Edit** on the **Generative AI features** card.
 
     :::image type="content" source="media/allow-data-movement.png" alt-text="Select **Edit** on the **Generative AI features** card." border="true":::
 
@@ -68,7 +68,7 @@ You can disable copilots and generative AI features in Power Platform environmen
 
 1. Select your environment.
 
-1. From the right side of the screen, select **Edit** on the **Generative AI features** card.
+1. On the right side of the screen, select **Edit** on the **Generative AI features** card.
 
 1. Clear the terms of use check mark.
 
