@@ -50,11 +50,11 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 3. View the data on the **Summary** page.
 
    For the **Summary** page to be displayed, the user needs to have one of the following roles: 
-    - Tenant admin
-    - Power Platform admin
-    - Dynamics 365 admin 
+    - Tenant administrator
+    - Power Platform administrator
+    - Dynamics 365 administrator 
 
-Alternatively, a user with any of the above-mentioned roles has an option to grant permissions to Environment Administrator to view the capacity summary tab, within tenant setting page. 
+    Alternatively, a user with any of the above-mentioned roles has an option to grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page. 
 
 The new licensing storage model looks like the following image. 
 
