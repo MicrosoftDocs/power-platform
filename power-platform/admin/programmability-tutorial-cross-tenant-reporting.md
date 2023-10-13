@@ -10,6 +10,8 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+contributors:
+- mihaelablendea 
 ---
 
 # Tutorial: Create cross tenant isolation reports (preview)
