@@ -136,7 +136,7 @@ The details of this workaround are described in these instructions.
 ### See also
 
 [Update a solution](update-solutions-alm.md#update-a-solution)  
+[Assembly versioning](/power-apps/developer/data-platform/register-plug-in#assembly-versioning)  
 [Web resources](web-resource-component.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
