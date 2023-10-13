@@ -34,7 +34,8 @@ For more information about authentication, go to:
 
 4. **Secured connection**. The connection between customer engagement apps and Exchange must be encrypted via [TLS/SSL](/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
 
-5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior-facing connection.  
+5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior-facing connection. If your EWS endpoint is not exterior-facing, please review [IP addresses required](https://learn.microsoft.com/en-us/power-platform/admin/online-requirements#ip-addresses-required) and whitelist IP addresses on your on-premises firewall based on your Dynamics 365 online environment region to allow connections to your Exchange on-premises.
+
 
 > [!TIP]
 > To make sure you've got a good connection to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] (on-premises), run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx). 
