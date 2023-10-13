@@ -52,7 +52,7 @@ To add the localization strings to your multilingual bot, follow the steps below
 
 1. From the same "Language (Preview)" menu, select "Update localizations" for the language you want to update
 1. In the "Update localizations" pane, select the desired file format (JSON or ResX) to download the current localization file for that language
-  :::image type="content" source="media/multilingual-bot/configuration-4.png" alt-text="Screen showing all languages added to the bot.":::
+  :::image type="content" source="media/multilingual-bot/configuration-4.png" alt-text="Screen showing pane to download and upload localization files.":::
 > [!NOTE]
 > The downloaded file will contain the latest localization content for the bot. If you need to download previous versions of the localization file, go to PowerApps to download previous versions.
 1. Open the downloaded file and replace the primary language strings with the appropriate translated text.
