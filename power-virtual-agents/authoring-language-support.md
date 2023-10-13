@@ -76,3 +76,4 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 ### Related topics
 
 - [Data locations for organizations using Power Virtual Agents](data-location.md)
+- [Multilingual bots](multilingual.md)
