@@ -64,7 +64,7 @@ To add the localization strings to your multilingual bot, follow the steps below
 When authoring, you can configure the bot to change the current spoken language in the middle of a conversation. That logic can reside in any topic in the bot.
 
 To change the bot's current language, you can set the ```User.Language``` variable value to one of your bot secontary languages. This will change the language spoken by your bot immediately.
-:::image type="content" source="media/multilingual-bot/Authoring-1.png" alt-text="Screen showing a \"Set variable\" node defining the value of the \"User.Language\" variable.":::
+  :::image type="content" source="media/multilingual-bot/Authoring-1.png" alt-text="Screen showing a \"Set variable\" node defining the value of the \"User.Language\" variable.":::
 
 ## Testing a multilingual bot
 To test a multilingual bot:
