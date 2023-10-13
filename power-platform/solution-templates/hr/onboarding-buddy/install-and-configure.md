@@ -63,7 +63,6 @@ Roles can be assigned from the admin portal.
 1. Select the user(s).
 1. Select **Manage security roles** and select the appropriate roles for each user.
 1. Select **Save**.
-:::image type="content" source="media/install/ob-install-assign-roles.png" alt-text="Screen of Power Platform admin center showing where to select environments and users.":::
 
 > [!NOTE]
 > All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You can also assign the security roles in the web application. If users don't have a security role, they'll get a *data access denied* error when trying to run an app. Users can't access environments until they're assigned at least one security role for that environment.
@@ -156,9 +155,7 @@ To do this:
 1. Go to [Power Platform admin center](https://gcc.admin.powerplatform.microsoft.us/home)
 1. Select **Environments** on the left-side menu and select the environment where the solution is installed.
 1. Select **Settings**.
-:::image type="content" source="media/install/ob-install-audit.png" alt-text="Power Platform admin center screen showing audit logs.":::
 1. Select **Start Auditing**.
-:::image type="content" source="media/install/ob-install-start-audit.png" alt-text="Power Platform admin center screen showing start audit checkbox.":::
 
 ## Next step
 

@@ -27,7 +27,7 @@ Take these steps in the Onboarding Buddy Admin app to manually add a new employe
 :::image type="content" source="media/manage/ob-manage-onboarders.png" alt-text="Power Apps screenshot of adding new employees.":::
 1. Select **+New** from the top menu.
 1. Fill out the form details.
-1. :::image type="content" source="media/manage/ob-manage-onboarder-details.png" alt-text="Power Apps screenshot of the details screen.":::
+:::image type="content" source="media/manage/ob-manage-onboarder-details.png" alt-text="Power Apps screenshot of the details screen.":::
 1. Select **Save & Close**.
 
 ## Update the configuration

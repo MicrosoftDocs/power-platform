@@ -63,7 +63,7 @@ Once you've added the *Buddy Onboard Emails* flow, you can edit the emails.
 
 These screens allow you to introduce the buddy program and offer related details to your program participants.
 
-:::image type="content" source="media/customize/ob-customize-intro-screens.png" alt-text="Screenshot of the three introductory Onboarding Buddy app screens.":::
+:::image type="content" source="media/customize/ob-signup-welcome.png" alt-text="Screenshot of the three introductory Onboarding Buddy app screens.":::
 
 ### Customize the introductory screens
 
