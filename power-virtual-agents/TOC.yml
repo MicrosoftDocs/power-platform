@@ -112,6 +112,8 @@
       href: authoring-test-bot.md
     - name: Supported languages
       href: authoring-language-support.md
+    - name: Multilingual bots
+      hred: multilingual.md
     - name: Troubleshoot error codes
       href: error-codes.md
 - name: Enhance and improve
