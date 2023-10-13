@@ -124,8 +124,7 @@ The details of this workaround are described in these instructions.
 
 1. Start by updating the "major" version number of the assembly which has the target plug-in types removed.
 
-   After this version change, you will not be able to update the assembly using the Plug-in Registration tool (PRT). However, you   
-   will be able to register the assembly as a new assembly side-by-side with the old assembly.
+   After this version change, you will not be able to update the assembly using the Plug-in Registration tool (PRT). However, you will be able to register the assembly as a new assembly side-by-side with the old assembly.
 3. Register your new assembly side by side with the old assembly using the PRT.
 4. Migrate any existing steps for the old plug-in types to the corresponding plug-in types in the new assembly.
 5. Delete the old assembly.
