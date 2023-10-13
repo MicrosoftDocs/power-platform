@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 10/11/2023
+ms.date: 10/13/2023
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
@@ -9,6 +9,8 @@ ms.author: sriknair
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- amiyapatr-zz
 ---
 
 # New Microsoft Dataverse storage capacity 
@@ -47,6 +49,13 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 3. View the data on the **Summary** page.
 
+   For the **Summary** page to be displayed, the user needs to have one of the following roles: 
+    - Tenant admin
+    - Power Platform admin
+    - Dynamics 365 admin 
+
+Alternatively, a user with any of the above-mentioned roles has an option to grant permissions to Environment Administrator to view the capacity summary tab, within tenant setting page. 
+
 The new licensing storage model looks like the following image. 
 
 :::image type="content" source="media/capacity-new-license-model.png" alt-text="New licensing storage model":::
@@ -56,13 +65,6 @@ The new licensing storage model looks like the following image.
 ### Summary tab
 
 This page provides a tenant-level view of where your organization is using storage capacity.
-
-For the **Summary** page to be displayed, the user needs to have one of the following roles: 
-- Tenant admin
-- Power Platform admin
-- Dynamics 365 admin 
-
-Alternatively global admins, tenant admins , or Power Platform admins have the option to grant permission to environment administrators to view the **Capacity Summary** tab within the tenant settings. 
 
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
