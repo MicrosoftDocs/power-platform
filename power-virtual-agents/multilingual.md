@@ -40,7 +40,7 @@ When a bot is initially created, it is created with a Primary language (See [Sup
   :::image type="content" source="media/multilingual-bot/configuration-3.png" alt-text="Screen showing all languages added to the bot.":::
 
 > [!NOTE]
-> - You can add as many secontary languages as desired to the bot, as long as they are in the list of supported languages.
+> - You can add as many secondary languages as desired to the bot, as long as they are in the list of supported languages.
 
 ## Managing localization in a multilingual bot
 
@@ -63,7 +63,7 @@ To add the localization strings to your multilingual bot, follow the steps below
 
 When authoring, you can configure the bot to change the current spoken language in the middle of a conversation. That logic can reside in any topic in the bot.
 
-To change the bot's current language, you can set the ```User.Language``` variable value to one of your bot secontary languages. This will change the language spoken by your bot immediately.
+To change the bot's current language, you can set the ```User.Language``` variable value to one of your bot secondary languages. This will change the language spoken by your bot immediately.
   :::image type="content" source="media/multilingual-bot/Authoring-1.png" alt-text="Screen showing a Set variable node defining the value of the User.Language variable.":::
 
 ## Testing a multilingual bot
@@ -76,7 +76,7 @@ To test a multilingual bot:
 1. The authoring canvas will also show the secondary language.
 1. Enter a message in the secondary language to test the bot
 
-Alternatively, you can set your browser language to a secondary language supported by your bot, and open the [Demo bot](publication-connect-bot-to-web-channels.md?tabs=preview#customize-the-demo-website). The demo website will open in the secondary language, and the bot will chat using the secondaru language strings.
+Alternatively, you can set your browser language to a secondary language supported by your bot, and open the [Demo bot](publication-connect-bot-to-web-channels.md?tabs=preview#customize-the-demo-website). The demo website will open in the secondary language, and the bot will chat using the secondary language strings.
 
 
 ## Related topics
