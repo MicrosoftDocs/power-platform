@@ -54,7 +54,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
     - Power Platform administrator
     - Dynamics 365 administrator 
 
-    Alternatively, a user with any of the above-mentioned roles has an option to grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page. 
+    Alternatively, a user with any of the above-mentioned roles has the option to grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page. 
 
 The new licensing storage model looks like the following image. 
 
