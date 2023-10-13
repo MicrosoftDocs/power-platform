@@ -33,6 +33,9 @@ Error message:
 
 "You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app."
 
+### How can I Provision / Update my unified environment to specific Finance and Operations version:
+We currently don't have the capability to provision or update the environment to specific runtime updates/version. Support for this is planned but until this support is enabled, we suggest using Environment Copy feature to get your Unified Development environments on the same version as that of Sandbox/Prod environments. [Copy Lifecycle Services Managed Environments to Unified Environments](../../admin/unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md)
+
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
 ### I can't access SQL Server using my SQL Server Management Studio client running in a OneBox environment
