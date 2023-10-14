@@ -7,7 +7,8 @@ ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
 ms.reviewer: sericks
-ms.contributors:
+contributors:
+- Funken1766 
 
 
 ---
@@ -256,6 +257,9 @@ No. Apps shared with Everyone in an environment that's backed up aren't shared w
 
 ### Are app identifiers the same after backup and restore operations?
 No for canvas apps. The app ID for a canvas app is different in a restored environment than the ID value when an environment was backed up. 
+
+### If I restore my environment, will previous backups remain available? 
+Yes, all backups within the organization's retention period will remain available. 
 
 ## Troubleshooting
 
