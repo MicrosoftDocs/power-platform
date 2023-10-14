@@ -27,21 +27,12 @@ Whether this is right for your use case will depend on organizational need, supp
 
 
 
-|**Project Workstreams**||
-|---|---:|
+**Project Workstreams**
+![Prject Workstrearms](./media/topics/ProjectWorkstreams.png)
+
 Setting up an adoption platform requires several workstreams that can execute in parallel, each with their own goals, timelines, and owners. These are as follows, with summary callouts on responsibilities: 
  **Bot building**
 1. This workstream focuses on building out the related content for the chatbot use case.
 1. Content creation/development tasks 
-|![Prject Workstrearms](./media/topics/ProjectWorkstreams.png)
-
-
-| Project Workstream |  |
-|---|---:|
-Setting up an adoption platform requires several workstreams that can execute in parallel, each with their own goals, timelines, and owners. These are as follows, with summary callouts on responsibilities:
-a. This workstream focuses on building out the related content for the chatbot use case.
- b. Content creation/development tasks |![Project Workstreams](./media/topics/ProjectWorkstreams.png)
-
-
 Please refer to the Action Development section for
 
