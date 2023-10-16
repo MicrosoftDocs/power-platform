@@ -129,6 +129,10 @@ The following details are provided:
 - Actual log usage
 - Top tables and their growth over time
 
+> [!NOTE]
+> Refer to Storage capacity reports under Dataverse long term retention(https://learn.microsoft.com/power-apps/maker/data-platform/data-retention-overview) to understand details on storage capacity with the retention feature.
+
+
 ### Microsoft Teams tab
 
 This page provides a view of the capacity storage used by your Microsoft Teams environments. Teams environment capacity usage doesn't count towards your organization's Dataverse usage.
