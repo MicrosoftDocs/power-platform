@@ -5,11 +5,13 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 09/29/2023
+ms.date: 10/13/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+contributors:
+- mihaelablendea 
 ---
 
 # Tutorial: Create cross tenant isolation reports (preview)
@@ -34,6 +36,9 @@ In this tutorial, learn how to:
 ## Step 1. Authenticate using Power Platform API
 
 Use the following PowerShell script to authenticate using Power Platform API.
+
+> [!NOTE]
+> Only users with Global administrator and Power Platform administrator Entra ID roles have permission to run the tenant isolation impact report.
 
 ```PowerShell
 Import-Module "MSAL.PS"
