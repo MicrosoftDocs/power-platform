@@ -11,12 +11,12 @@
         items:
         - name: Overview
           href: pillars.md
-        - name: Experience excellence
+        - name: Experience optimization
           items:
           - name: Quick links
-            href: experience-excellence/index.yml
+            href: experience-optimization/index.yml
           - name: Design principles
-            href: experience-excellence/principles.md
+            href: experience-optimization/principles.md
         - name: Reliability
           items: 
           - name: Quick links

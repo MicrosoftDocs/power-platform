@@ -1,0 +1,176 @@
+### YamlMime:Marketing
+title: Power Platform Well-Architected
+sections:
+  # Intro
+  - componentType: text 
+    title: Power Platform Well-Architected
+    summary: Power Platform Well-Architected is a set of guidance and resources to help solution architects build a technical foundation for their low-code workloads.
+  # Navigation Section
+  - componentType: navigation
+    size: large # optionally make section larger
+    # backgroundColor: medium
+    alignment: center # 'left' is default
+    blocks:
+      - componentType: icon-link
+        icon: book-open
+        url: whats-new.md
+        text: What's new      
+      - componentType: icon-link
+        icon: book-open
+        url: pillars.md
+        text: Pillars
+      - componentType: icon-link
+        icon: book-open
+        url: workloads.md
+        text: Workloads
+      - componentType: icon-link
+        icon: book-open
+        url: service-guides/index.yml
+        text: Azure offerings
+      - componentType: icon-link
+        icon: topic-learn
+        url: /training/modules/azure-well-architected-introduction/
+        text: Training    
+      - componentType: icon-link
+        icon: developer-tools
+        url: /assessments/azure-architecture-review/
+        text: Assessment tool      
+      - componentType: icon-link
+        icon: topic-architecture
+        url: /azure/architecture/browse/
+        text: Azure Architecture Center
+  # Standard hero
+  - componentType: hero
+    supertitle: Azure Well-Architected Framework
+    title: Design workloads that achieve business value over time.
+    size: small
+    summary: As solution architects, you want to build reliable, secure, and performant workloads that maximize the value of investment in Azure infrastructure. Start with the Pillars, and align your design choices with the principles. Then, build a strong foundation for your workload based on technical design areas. Finally, use review tools to assess your readiness in deploying to production.
+    image:
+      componentType: image
+      src: ./_images/waf-diagram-revised.png   
+
+  # bifold with image and text blocks
+  - componentType: bifold
+    alignment: center
+    blocks:
+      - componentType: image
+        src: ./_images/waf-refresh.png   
+        alt: WAF refresh update   
+      - title: Featured update - Core pillars restructured and refreshed 
+        summary: The Azure Well-Architected Framework published a significant content refresh across all five pillars. 
+        componentType: text
+        links:
+          - componentType: link
+            url: whats-new.md
+            text: What's new?
+        list:
+          componentType: list
+          style: checklist
+          children:
+            - Design principles include a set of recommended approaches and benefits.
+            - Design review checklist drive action through codified recommendations. 
+            - Design tradeoffs with other pillars. 
+            - Recommedations on building key strategies for fulfilling the principles of design.
+            - Design patterns based on proven, common architecture patterns, mapped to pillar.
+            - Azure Well-Architected Review has been refreshed to aligned with the new content.  
+ 
+# cards section (4)
+  - componentType: grid
+    title: Pillars
+    blocks:
+    - componentType: icon-card
+      title: Reliability
+      summary: Ensures that the workload meets the uptime and recovery targets by building redundancy and resiliency at scale. 
+      url: ./reliability/index.yml 
+      icon: 
+        componentType: image
+        src: _images/resiliency.svg                         
+    - componentType: icon-card
+      title: Security
+      summary: Protect the workload from attacks by maintaining confidentiality and data integrity. 
+      url: ./security/index.yml    
+      icon: 
+        componentType: image
+        src: _images/security.svg      
+    - componentType: icon-card
+      title: Cost Optimization
+      summary: Adopt an optimization mindset by at organizational, architectural, and tactical levels to keep your spending within budget. 
+      url: ./cost-optimization/index.yml
+      icon: 
+        componentType: image
+        src: _images/cost.svg             
+    - componentType: icon-card
+      title: Operational Excellence
+      summary: Reduce issues in production by building holistic observability and automated systems. 
+      url: ./cost-optimization/index.yml
+      icon: 
+        componentType: image
+        src: _images/devops.svg         
+    - componentType: icon-card
+      title: Performance Efficiency
+      summary: Adjust to changes in demands placed on the workload by through horizontal scaling and testing changes before deploying to production. 
+      url: ./performance-efficiency/index.yml    
+      icon: 
+        componentType: image
+        src: _images/scalability.svg   
+     
+  # Summary cards grid
+  - componentType: grid
+    backgroundColor: "alternating-grey"
+    title: Workloads
+    blocks:
+      - componentType: summary-card
+        title: Oracle on IaaS
+        summary: Host Oracle workloads on Azure, which includes not only Oracle Databases, but also applications such as Siebel, Peoplesoft, JD Edwards. 
+        url: ./oracle-iaas/overview.md
+      - componentType: summary-card
+        title: SAP
+        summary: Evaluate, design, and optimize an SAP workload from premigration to operations. 
+        url: ./sap/quick-links.yml    
+      - componentType: summary-card
+        title: Mission-critical
+        summary: Design and operationalize workloads that are expected to be always available and resilient to failures.
+        url: ./mission-critical/index.yml
+      - componentType: summary-card
+        title: Hybrid
+        summary: Build applications running across on-premises, multicloud, and the edge, ensuring uncompromised security and developer agility.
+        url: ./hybrid/hybrid-overview.md
+      - componentType: summary-card
+        title: Sustainability
+        summary: Plan your path forward, improve your sustainability posture, and create new business value while reducing your operational footprint.
+        url: ./sustainability/index.yml
+      - componentType: summary-card
+        title: IoT
+        summary: Resolve architectural challenges for designing, building, and operating IoT solutions according to your requirements and constraints.
+        url: ./iot/iot-overview.md
+      - componentType: summary-card
+        title: Azure VMware Solution
+        summary: Relocate legacy application virtual machines to Azure VMware Solution as a staging area for the first phase of your migration and modernization strategy.
+        url: ./azure-vmware/index.yml
+    addendum:
+      text: See example workloads that apply Well-Architected tenets in the 
+      link:
+        text: Azure Architecture Center
+        url: /azure/architecture/browse/
+  
+  #Text section
+  - componentType: text
+    title: Azure service guides
+    links:
+    - componentType: link
+      url: ./service-guides/
+      text: Browse the service guides
+
+  # social section
+  - componentType: social
+    title: Follow us on the web
+    links:
+      - componentType: social-link
+        url: /azure/architecture/browse/
+        destination: website    
+      - componentType: social-link
+        url: https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog/label-name/Well%20Architected
+        destination: blog
+      - componentType: social-link
+        url: https://www.youtube.com/watch?v=xDhaHSK7mgM
+        destination: youtube
