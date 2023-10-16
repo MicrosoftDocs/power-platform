@@ -3,11 +3,11 @@ title: "Connect to Exchange Server (on-premises) | MicrosoftDocs"
 description: Connect to Exchange Server (on-premises)
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/24/2021
+ms.date: 10/16/2023
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -34,7 +34,7 @@ For more information about authentication, go to:
 
 4. **Secured connection**. The connection between customer engagement apps and Exchange must be encrypted via [TLS/SSL](/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
 
-5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior-facing connection. If your EWS endpoint is not exterior-facing, please review [IP addresses required](https://learn.microsoft.com/en-us/power-platform/admin/online-requirements#ip-addresses-required) and whitelist IP addresses on your on-premises firewall based on your Dynamics 365 online environment region to allow connections to your Exchange on-premises.
+5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior-facing connection. If your EWS endpoint is not exterior-facing, review [IP addresses required](online-requirements.md#ip-addresses-required). Be sure to whitelist IP addresses on your on-premises firewall, based on your Dynamics 365 online environment region to allow connections to your Exchange server that is on-premises.
 
 
 > [!TIP]
