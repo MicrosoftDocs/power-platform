@@ -1047,7 +1047,7 @@
             - name: System-generated logs
               href: powerapps-privacy-dsr-guide-systemlogs.md
             - name: Data integrations for Dataverse
-              href: data-integration-gdpr-dsr-guide.md
+              href: data-integration-privacy-dsr-guide.md
             - name: Power Apps customer data
               items:
                 - name: Overview
