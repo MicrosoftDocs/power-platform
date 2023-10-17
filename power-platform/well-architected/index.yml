@@ -41,7 +41,7 @@ sections:
         text: Azure Architecture Center
   # Standard hero
   - componentType: hero
-    supertitle: Azure Well-Architected Framework
+    supertitle: Power Well-Architected
     title: Design workloads that achieve business value over time.
     size: small
     summary: As solution architects, you want to build reliable, secure, and performant workloads that maximize the value of investment in Azure infrastructure. Start with the Pillars, and align your design choices with the principles. Then, build a strong foundation for your workload based on technical design areas. Finally, use review tools to assess your readiness in deploying to production.

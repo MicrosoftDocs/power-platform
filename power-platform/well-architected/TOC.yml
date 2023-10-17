@@ -1,5 +1,5 @@
 - name: Power Platform Well-Architected
-  href: index.md
+  href: index.yml
   items:
       - name: What's new
         items:
