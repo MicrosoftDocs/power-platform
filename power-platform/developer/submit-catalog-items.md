@@ -172,13 +172,13 @@ The following items are required for all submissions:
 
 #### Publisher
 
-Creates a publisher record that can be associated to one or more Microsoft Azure Active Directory (Azure AD) groups containing authorized users who can make updates to the Catalog item going forward.
+Creates a publisher record that can be associated to one or more Microsoft Entra ID groups containing authorized users who can make updates to the Catalog item going forward.
 
 Don't confuse this term with *Solution Publisher*. Catalog item publisher is entirely a different concept.
 
 You need to provide the ID publisher `DisplayName` at a minimum. ID can be any string value. System checks if that publisher exists, else creates it and assigns an ID.
 
-Example: HR IT team of developers can create a publisher and ID the developers using an Azure AD group.
+Example: HR IT team of developers can create a publisher and ID the developers using an Entra ID group.
 
 Here's an example of a publisher record:
 
