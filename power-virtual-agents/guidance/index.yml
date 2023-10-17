@@ -29,7 +29,7 @@ landingContent:
             url: slot-filling-best-practices.md
         links:
           - text: Display Data from Arrays in Adaptive Cards
-            url: Adaptive Cards-Display Data from Arrays.md
+            url: Adaptive-Cards-Display-Data-from-Arrays.md
 
   # Card
   - title: Measuring and improving chatbots
