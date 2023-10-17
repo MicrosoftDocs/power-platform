@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 9/18/2023
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -284,6 +284,10 @@ Team ID as Guid
 #### `--templates` `-tm`
 
 Sets the Dynamics 365 app that needs to be deployed, passed as comma separated values. For example: -tm "D365_Sample, D365_Sales"
+
+#### `--user` `-u`
+
+Object ID or user principal name (UPN) of Microsoft Entra ID user to be assigned to the environment.
 
 [!INCLUDE [admin-create-remarks](includes/admin-create-remarks.md)]
 

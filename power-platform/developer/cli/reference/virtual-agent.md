@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 9/18/2023
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,9 +26,122 @@ Commands for working with Power Virtual Agent bots
 
 |Command|Description|
 |---------|---------|
+|[pac virtual-agent create](#pac-virtual-agent-create)|Creates a new bot using an existing template file as the reference.|
+|[pac virtual-agent extract-template](#pac-virtual-agent-extract-template)|Extracts a template file from an existing bot in an environment.|
+|[pac virtual-agent extract-translation](#pac-virtual-agent-extract-translation)|Extracts file containing localized content for one or more bots.|
 |[pac virtual-agent list](#pac-virtual-agent-list)|List of Virtual Agents in the current or target Dataverse environment.|
+|[pac virtual-agent merge-translation](#pac-virtual-agent-merge-translation)|Merge files containing localized content for one or more bots.|
 |[pac virtual-agent status](#pac-virtual-agent-status)|Poll the deployment status of a specified Virtual Agent in the current or target Dataverse environment.|
 
+
+## pac virtual-agent create
+
+Creates a new bot using an existing template file as the reference.
+
+[!INCLUDE [virtual-agent-create-intro](includes/virtual-agent-create-intro.md)]
+
+
+### Required Parameters for virtual-agent create
+
+#### `--displayName`
+
+The display name of the new bot
+
+#### `--schemaName`
+
+The schema name (unique name) of the new bot.
+
+#### `--solution` `-s`
+
+Name of the solution.
+
+#### `--templateFileName`
+
+Source yaml file containing the bot template that was extracted using the extract-template command.
+
+
+### Optional Parameters for virtual-agent create
+
+#### `--environment` `-env`
+
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+
+[!INCLUDE [virtual-agent-create-remarks](includes/virtual-agent-create-remarks.md)]
+
+## pac virtual-agent extract-template
+
+Extracts a template file from an existing bot in an environment.
+
+[!INCLUDE [virtual-agent-extract-template-intro](includes/virtual-agent-extract-template-intro.md)]
+
+
+### Required Parameters for virtual-agent extract-template
+
+#### `--bot` `-id`
+
+The Chatbot ID or schema name (unique name found in Bot Details or file name in solution explorer).
+
+#### `--templateFileName`
+
+Location of the yaml file to write the bot template to.
+
+
+### Optional Parameters for virtual-agent extract-template
+
+#### `--environment` `-env`
+
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+
+#### `--overwrite` `-o`
+
+Allow overwrite of the output data file if it already exists.
+
+This parameter requires no value. It's a switch.
+
+[!INCLUDE [virtual-agent-extract-template-remarks](includes/virtual-agent-extract-template-remarks.md)]
+
+## pac virtual-agent extract-translation
+
+Extracts file containing localized content for one or more bots.
+
+[!INCLUDE [virtual-agent-extract-translation-intro](includes/virtual-agent-extract-translation-intro.md)]
+
+
+### Optional Parameters for virtual-agent extract-translation
+
+#### `--all` `-a`
+
+Write localization files for all supported languages. By default, only the primary language is written.
+
+This parameter requires no value. It's a switch.
+
+#### `--bot` `-id`
+
+The Chatbot ID or schema name (unique name found in Bot Details or file name in solution explorer).
+
+#### `--environment` `-env`
+
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+
+#### `--format`
+
+The file format in which to write localized files, either 'resx' or 'json'. The default is 'resx'.
+
+#### `--outdir`
+
+The output directory to write to.
+
+#### `--overwrite` `-o`
+
+Allow overwrite of the output data file if it already exists.
+
+This parameter requires no value. It's a switch.
+
+#### `--sourcedir` `-src`
+
+Source solution directory. When specified, will ignore the connected environment when looking for bots and instead look for content in the solution folder.
+
+[!INCLUDE [virtual-agent-extract-translation-remarks](includes/virtual-agent-extract-translation-remarks.md)]
 
 ## pac virtual-agent list
 
@@ -44,6 +157,45 @@ List of Virtual Agents in the current or target Dataverse environment.
 The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [virtual-agent-list-remarks](includes/virtual-agent-list-remarks.md)]
+
+## pac virtual-agent merge-translation
+
+Merge files containing localized content for one or more bots.
+
+[!INCLUDE [virtual-agent-merge-translation-intro](includes/virtual-agent-merge-translation-intro.md)]
+
+
+### Optional Parameters for virtual-agent merge-translation
+
+#### `--environment` `-env`
+
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+
+#### `--file` `-f`
+
+The list of files that contain translations. Glob patterns are supported.
+
+#### `--solution` `-s`
+
+Name of the solution.
+
+#### `--sourcedir` `-src`
+
+Source solution directory. When specified, will ignore the connected environment when looking for bots and instead look for content in the solution folder.
+
+#### `--verbose`
+
+Output more diagnostic information during data import/export
+
+This parameter requires no value. It's a switch.
+
+#### `--whatif`
+
+Does not execute the command, but outputs the details of what would happen.
+
+This parameter requires no value. It's a switch.
+
+[!INCLUDE [virtual-agent-merge-translation-remarks](includes/virtual-agent-merge-translation-remarks.md)]
 
 ## pac virtual-agent status
 

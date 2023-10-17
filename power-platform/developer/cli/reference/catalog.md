@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 9/18/2023
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac catalog
 
-(Preview) Commands for working with Catalog in Power Platform
+Commands for working with Catalog in Power Platform
 
 [!INCLUDE [catalog-intro](includes/catalog-intro.md)]
 
@@ -26,17 +26,17 @@ Use the include files to add additional content to this topic.
 
 |Command|Description|
 |---------|---------|
-|[pac catalog create-submission](#pac-catalog-create-submission)|(Preview) Create catalog submission document. Note: This command will be removed in a future release.|
-|[pac catalog install](#pac-catalog-install)|(Preview) Install a catalog item to the target environment.|
-|[pac catalog list](#pac-catalog-list)|(Preview) List all published catalog items from the current Dataverse organization.|
-|[pac catalog status](#pac-catalog-status)|(Preview) Get status of the catalog install/submit request.|
-|[pac catalog submit](#pac-catalog-submit)|(Preview) Submit catalog approval request.|
-|[pac catalog update](#pac-catalog-update)|(Preview) Update settings for the catalog.|
+|[pac catalog create-submission](#pac-catalog-create-submission)|Create catalog submission document. Note: This command will be removed in a future release.|
+|[pac catalog install](#pac-catalog-install)|Install a catalog item to the target environment.|
+|[pac catalog list](#pac-catalog-list)|List all published catalog items from the current Dataverse organization.|
+|[pac catalog status](#pac-catalog-status)|Get status of the catalog install/submit request.|
+|[pac catalog submit](#pac-catalog-submit)|Submit catalog approval request.|
+|[pac catalog update](#pac-catalog-update)|Update settings for the catalog.|
 
 
 ## pac catalog create-submission
 
-(Preview) Create catalog submission document. Note: This command will be removed in a future release.
+Create catalog submission document. Note: This command will be removed in a future release.
 
 [!INCLUDE [catalog-create-submission-intro](includes/catalog-create-submission-intro.md)]
 
@@ -51,7 +51,7 @@ Path to catalog submission document
 
 ## pac catalog install
 
-(Preview) Install a catalog item to the target environment.
+Install a catalog item to the target environment.
 
 [!INCLUDE [catalog-install-intro](includes/catalog-install-intro.md)]
 
@@ -89,7 +89,7 @@ Target version to install. If left empty, the published version is selected.
 
 ## pac catalog list
 
-(Preview) List all published catalog items from the current Dataverse organization.
+List all published catalog items from the current Dataverse organization.
 
 [!INCLUDE [catalog-list-intro](includes/catalog-list-intro.md)]
 
@@ -114,7 +114,7 @@ This parameter requires no value. It's a switch.
 
 ## pac catalog status
 
-(Preview) Get status of the catalog install/submit request.
+Get status of the catalog install/submit request.
 
 [!INCLUDE [catalog-status-intro](includes/catalog-status-intro.md)]
 
@@ -138,7 +138,7 @@ Use one of these values:
 
 ## pac catalog submit
 
-(Preview) Submit catalog approval request.
+Submit catalog approval request.
 
 [!INCLUDE [catalog-submit-intro](includes/catalog-submit-intro.md)]
 
@@ -170,7 +170,7 @@ Path to solution zip file.
 
 ## pac catalog update
 
-(Preview) Update settings for the catalog.
+Update settings for the catalog.
 
 [!INCLUDE [catalog-update-intro](includes/catalog-update-intro.md)]
 
