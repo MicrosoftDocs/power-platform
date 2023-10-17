@@ -28,7 +28,7 @@ landingContent:
           - text: Slot filling best practices
             url: slot-filling-best-practices.md
         links:
-          - text:  best practices
+          - text: Display Data from Arrays in Adaptive Cards
             url: Adaptive Cards-Display Data from Arrays.md
 
   # Card
