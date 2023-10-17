@@ -1,4 +1,4 @@
-
+---
 title: "Display Data from Arrays in Adaptive Cards"
 description: "Guidance on Adaptive Card in Power Virtual Agents."
 author: Neetu Srivastava
@@ -7,5 +7,5 @@ ms.topic: conceptual
 ms.custom: guidance
 ms.author: nesrivastava
 ms.reviewer: iawilt
-
+---
 # Display Data from Arrays in Adaptive Cards
