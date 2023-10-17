@@ -18,8 +18,6 @@
       href: trigger-phrases-best-practices.md
     - name: Slot filling best practices
       href: slot-filling-best-practices.md
-- name: Building chatbots
-  items:
     - name: Adaptive Card best practices
       items:
       - name: Display Data from Arrays in Adaptive Cards
