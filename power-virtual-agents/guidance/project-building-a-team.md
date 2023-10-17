@@ -79,7 +79,7 @@ engineering resources like Power CAT may be able to facilitate these sessions.
 - Export and import bots using solutions
 - Create a chatbot in Microsoft Teams
 - Topic design
-- Extend your bot using Bot Framework Composer (Optional) 
+- Extend your bot using Bot Framework Skill (Optional) 
 - Add a telephone number to your bot using AudioCodes (Optional)
 
 | **PVA Architecture Series** |
