@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 10/13/2023
+ms.date: 10/17/2023
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
@@ -11,6 +11,7 @@ search.audienceType:
   - admin
 contributors:
 - amiyapatr-zz
+- pnghub
 ---
 
 # New Microsoft Dataverse storage capacity 
@@ -128,6 +129,9 @@ The following details are provided:
 - Top files tables and their growth over time
 - Actual log usage
 - Top tables and their growth over time
+
+> [!NOTE]
+> Refer to the [storage capacity reports](/power-apps/maker/data-platform/data-retention-overview#storage-capacity-reports) under [Dataverse long term retention](/power-apps/maker/data-platform/data-retention-overview) to understand details on storage capacity with the retention feature.
 
 ### Microsoft Teams tab
 
