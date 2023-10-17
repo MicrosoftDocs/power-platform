@@ -544,7 +544,7 @@
           "type": "boolean"
         },
         "applicationUserAadAppId": {
-          "description": "Azure Active Directory (AAD) object unique identifier (ID)",
+          "description": "Entra ID object unique identifier (ID)",
           "type": "string"
         },
         "ownerId": {
@@ -578,7 +578,7 @@
       "flow": "implicit",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
       "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
-      "description": "Azure Active Directory OAuth2"
+      "description": "Entra ID OAuth2"
     }
   },
   "security": [
