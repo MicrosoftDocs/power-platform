@@ -30,13 +30,13 @@ Whether this is right for your use case will depend on organizational need, supp
 
 Setting up an adoption platform requires several workstreams that can execute in parallel, each with their own goals, timelines, and owners. These are as follows, with summary callouts on responsibilities: 
 
- **Bot building**
+### **Bot building**
 
   1. This workstream focuses on building out the related content for the chatbot use case.
   1. Content creation/development tasks 
   Please refer to the Action Development section for
 
-**Rhythm of Business (ROB)** 
+### **Rhythm of Business (ROB)** 
 
 A Rhythm of Business (ROB) meeting allows all participants, involved in the project, to provide status updates and identify any blocking issues so that they can be get resolved by stakeholders. These meetings should be very actionable and driven by dates and business goals. 
 
@@ -59,11 +59,11 @@ A Rhythm of Business (ROB) meeting allows all participants, involved in the proj
   - Scorecard review with progress, risks, blockers, and feedback
   - Forum for demos as appropriat
     
-  **Testing**
+  ### **Testing**
 
   User acceptance testing will likely take up a significant portion of delivering your PVA chatbot – ensuring not only the integration of the complete solution (with backends/handoff clients/APIs), but also of the chatbots responses to customer input. More information on testing, please refer to the testing strategy section.
     
-  **Production Deployment/Readiness checklist**
+  ### **Production Deployment/Readiness checklist**
 
  Ensuring that you are ready to deploy is a critical step in having a successful launch. Here are some considerations: 
   
@@ -82,7 +82,7 @@ A Rhythm of Business (ROB) meeting allows all participants, involved in the proj
   
   e.  Do you have a communication plan established to inform both internal and external stakeholders of the changes? This includes both pre and post deployment.
 
-**Power Platform Administration**
+### **Power Platform Administration**
 
 a. Many customers will already have Power Platform/M365 administration teams/CoEs that are accountable to the management of the technology set.
 
