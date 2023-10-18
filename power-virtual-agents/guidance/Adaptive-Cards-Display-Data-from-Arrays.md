@@ -15,4 +15,4 @@ In this document, we will learn how to display array items in Adaptive Cards in 
 
 Let’s say that you have a list of tasks in an array, and you want to show the list of tasks in the bot like below: 
 
-![Finaloutput](./media/topics/Project_Planning.png)
+![Finaloutput](./media/AdaptiveCard/EMPtask.png)
