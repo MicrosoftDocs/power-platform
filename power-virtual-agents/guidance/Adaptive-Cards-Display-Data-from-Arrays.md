@@ -113,11 +113,11 @@ Paste the following JSON code
 
 1.	Now we can refer the JSON record properties using expressions like "Topic.TaskTable.employeeName." 
 
-1.	To display array items in an Adaptive Card, use the Container element with the items property. The items property takes an array of elements as its value. Each element in the array will be displayed in the Adaptive Card, using  ['ForAll'](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-forall) function. Reference the "Topic.TaskTable.employeeTasks" array, it will  allow to access each of its properties.
+1.	To display array items in an Adaptive Card, use the Container element with the items property. The items property takes an array of elements as its value. Each element in the array will be displayed in the Adaptive Card, using  ['ForAll'](https://learn.microsoft.com/power-platform/power-fx/reference/function-forall) function. Reference the "Topic.TaskTable.employeeTasks" array, it will  allow to access each of its properties.
 
 Paste the YAML code in the code editor view. You can access this option at the top right corner of a new topic. 
 
-``` YAML
+``` yaml
 kind: AdaptiveDialog
 beginDialog:
   kind: OnRecognizedIntent

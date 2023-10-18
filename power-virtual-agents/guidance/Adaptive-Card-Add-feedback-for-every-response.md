@@ -123,7 +123,7 @@ To capture the thumbs up and down, I trigger the specific topic to get additiona
 
 Here is the YAML file to redirect to this topic to capture those responses. 
 
-``` YAML
+``` yaml
 kind: AdaptiveDialog
 beginDialog:
   kind: OnRecognizedIntent
