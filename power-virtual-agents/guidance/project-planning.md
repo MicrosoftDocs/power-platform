@@ -69,7 +69,7 @@ Microsoft/partner attend but customer is responsible for booking meetings and se
     
   **Production Deployment/Readiness checklist**
 
-Ensuring that you are ready to deploy is a critical step in having a successful launch. Here are some considerations: 
+ Ensuring that you are ready to deploy is a critical step in having a successful launch. Here are some considerations: 
   
   a. Have all scenarios been tested end to end to validate business requirements have been addressed?
   
