@@ -26,7 +26,7 @@ For a delegated deployment with a service principal, follow these steps.
 
     > [!IMPORTANT]
     > Add the pipeline stage owner as an owner of the enterprise application in Azure AD. This can be a standard user or service principal as long as the same identity owns the pipeline stage and enterprise application.
-1. Add the app registration as a server-to-server (S2S) user in your pipelines host environment and each target environment it deploys to.
+1. Add the enterprise application as a server-to-server (S2S) user in your pipelines host environment and each target environment it deploys to.
 1. Assign the Pipelines Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments.
     Lower permission security roles cannot deploy plug-ins and other code components.
 1. Choose (check) **Is delegated deployment** on a pipeline stage, select **Service Principal**, and enter the Client ID. Click **Save**.
