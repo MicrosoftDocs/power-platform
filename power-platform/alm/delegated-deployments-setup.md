@@ -22,19 +22,20 @@ Delegated deployments can be run as a service principal or pipeline stage owner.
 
 For a delegated deployment with a service principal, follow these steps.
 
-1. Create an app registration (service principal) in Microsoft Azure Active Directory (AD).
+1. Create an enterprise application (service principal) in Microsoft Azure Active Directory (AD).
 
     > [!IMPORTANT]
-    > Add the pipeline stage owner as an owner of the app registration in Azure AD. This can be a standard user or service principal.
+    > Add the pipeline stage owner as an owner of the enterprise application in Azure AD. This can be a standard user or service principal as long as the same identity owns the pipeline stage and enterprise application.
 1. Add the app registration as a server-to-server (S2S) user in your pipelines host environment and each target environment it deploys to.
 1. Assign the Pipelines Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments.
     Lower permission security roles cannot deploy plug-ins and other code components.
 1. Choose (check) **Is delegated deployment** on a pipeline stage, select **Service Principal**, and enter the Client ID. Click **Save**.
 1. Create a cloud flow within the pipelines host environment. Alternative systems can be integrated using pipelines' Dataverse API's.
-1. Select the **OnApprovalStarted** trigger.
+1. Select the **OnApprovalStarted** trigger. **OnDeploymentRequested** can also be used if **Pre-Export Step Required** is disabled on the pipeline stage.
 1. Add steps for your desired custom logic.
 1. Insert an approval step. Use Dynamic content for sending deployment request information to the approver(s).
 1. Insert a condition.
+2. Create a Dataverse connection for the service principal. You’ll need a client ID and secret.
 1. Add Dataverse **Perform an unbound action** using the settings shown below.  
     Action Name: UpdateApprovalStatus
     ApprovalComments: Insert Dynamic Content. Comments will be visible to the requestor of the deployment.
@@ -42,9 +43,13 @@ For a delegated deployment with a service principal, follow these steps.
     ApprovalProperties: Insert Dynamic Content. Admin information accessible from within the pipelines host.
 
     > [!IMPORTANT]
-    > The UpdateApprovalStatus action must use the service principal’s connection. You’ll need a client ID and secret.
+    > The UpdateApprovalStatus action must use the service principal’s connection. 
     > 
     > :::image type="content" source="media/spn-connection.png" alt-text="Connect with service principal":::
+    
+    > [!TIP]
+    > To improve dubugability, select ApprovalProperties and insert workflow() from the dynamic content menu. This links the flow run to the pipeline stage run (run history).
+    
 1. Save, and then test the pipeline.
 
 Below is a screenshot of a canonical approval flow.
@@ -58,7 +63,7 @@ Below is a screenshot of a canonical approval flow.
 
 ## Deploy as the pipeline stage owner
 
-Regular users, including those used as service accounts, can also serve as delegates. Configuration is more straightforward when compared to service principals, but solutions containing connection references cannot be deployed.
+Regular users, including those used as service accounts, can also serve as delegates. Configuration is more straightforward when compared to service principals, but solutions containing connection references for oAuth connections cannot be deployed.
 
 To deploy as the pipeline stage owner, follow these steps.
 
