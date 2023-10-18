@@ -23,9 +23,9 @@ Final output of this tutorial will look like below:
 
 3.	A new node, called Create generative answers will be added to your topic, and will open the Properties pane automatically. 
 
-4.	Under Data Source  Public website add any public website, like  https://learn.microsoft.com/
+4.	Under Data Source  Public website add any public website, like  [link](https://learn.microsoft.com/)
 
-5.	Under Advanced create a (Variable)[https://learn.microsoft.com/power-virtual-agents/authoring-variables?tabs=webApp] , store the generative answers generated in response to user queries and give this variable a meaningful name, such as "VarStoreAnswer."
+5.	Under Advanced create a (Variable)[https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-forall] , store the generative answers generated in response to user queries and give this variable a meaningful name, such as "VarStoreAnswer."
 
 6.	Uncheck the send a message box
 
