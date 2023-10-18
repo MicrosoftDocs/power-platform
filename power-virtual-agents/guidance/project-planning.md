@@ -33,6 +33,7 @@ Whether this is right for your use case will depend on organizational need, supp
 Setting up an adoption platform requires several workstreams that can execute in parallel, each with their own goals, timelines, and owners. These are as follows, with summary callouts on responsibilities: 
 
  **Bot building**
+
   1. This workstream focuses on building out the related content for the chatbot use case.
   1. Content creation/development tasks 
   Please refer to the Action Development section for
@@ -41,7 +42,10 @@ Setting up an adoption platform requires several workstreams that can execute in
 
 A Rhythm of Business (ROB) meeting allows all participants, involved in the project, to provide status updates and identify any blocking issues so that they can be get resolved by stakeholders. These meetings should be very actionable and driven by dates and business goals. 
   
-  - **Customer driven –** Microsoft/partner attend but customer is responsible for booking meetings and setting the agenda. The goal of this meeting is to run it as an engineering project, with success metrics and scorecards,and likely consists of:
+- **Customer driven –** 
+
+Microsoft/partner attend but customer is responsible for booking meetings and setting the agenda. The goal of this meeting is to run it as an engineering project, with success metrics and scorecards,and likely consists of:
+
     -Standups for chatbot development, 1-2 times a week
     - Weekly demos for progress
     - Weekly status updates emails highlighting blockers
@@ -53,6 +57,7 @@ A Rhythm of Business (ROB) meeting allows all participants, involved in the proj
 
 
    - **Jointly owned (Microsoft/partner)**
+
       - Architectural reviews to guide core decisions for the platform
       - Monthly exec reviews
       - Scorecard review with progress, risks, blockers, and feedback
@@ -65,6 +70,7 @@ A Rhythm of Business (ROB) meeting allows all participants, involved in the proj
   **Production Deployment/Readiness checklist**
 
 Ensuring that you are ready to deploy is a critical step in having a successful launch. Here are some considerations: 
+  
   a. Have all scenarios been tested end to end to validate business requirements have been addressed?
   
   b. Do you have a cutover plan that identifies step by step all the activities required to successfully go live?
