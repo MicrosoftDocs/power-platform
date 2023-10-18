@@ -27,7 +27,6 @@ landingContent:
             url: trigger-phrases-best-practices.md
           - text: Slot filling best practices
             url: slot-filling-best-practices.md
-        links:
           - text: Display Data from Arrays
             url: Adaptive-Cards-Display-Data-from-Arrays.md
 
