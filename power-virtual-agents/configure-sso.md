@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Configure single sign-on with Azure Active Directory 
 
-Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're in to the page where the bot is deployed.  
+Power Virtual Agents supports single sign-on (SSO), chatbots on your website can sign customers in if they're already signed in to the page or app where the bot is deployed.
 
 ## Prerequisites
 
@@ -26,22 +26,53 @@ Power Virtual Agents supports single sign-on (SSO), which means chatbots can sig
 - [Use a custom canvas](customize-default-canvas.md).
 
 
+For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
+
+There are four main steps to configuring SSO for Power Virtual Agents:
+
+1. Create an app registration in Azure AD for your custom canvas.
+
+1. Define a custom scope for your bot.
+
+1. Configure authentication in Power Virtual Agents to enable SSO.
+
+1. Configure your custom canvas HTML code to enable SSO.
+
+> [!IMPORTANT]
+>
+> SSO is currently not supported when a bot has been either:
+>
+> - Published to a [SharePoint website](publication-connect-bot-to-web-channels.md#add-bot-to-your-website).
+> - Published to a [Power Apps portal](publication-add-bot-to-power-pages.md).
+
+## Supported channels
+
+The following table details the [channels](publication-fundamentals-publish-channels.md) that currently support SSO. You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
+
+| Channel                                           | Supported     |
+|---------------------------------------------------|:-------------:|
+| [Azure Bot Service channels][6]                   | Not supported |
+| [Custom Website][3]                               | Supported     |
+| [Demo Website][2]                                 | Not supported |
+| [Facebook][5]                                     | Not supported |
+| [Microsoft Teams][1]<sup>1</sup>                  | Supported     |
+| [Mobile App][4]                                   | Not supported |
+| [Omnichannel for Customer Service][7]<sup>2</sup> | Supported     |
+
+[1]: publication-add-bot-to-microsoft-teams.md
+[2]: publication-connect-bot-to-web-channels.md
+[3]: publication-connect-bot-to-web-channels.md#custom-website
+[4]: publication-connect-bot-to-custom-application.md
+[5]: publication-add-bot-to-facebook.md
+[6]: publication-connect-bot-to-azure-bot-service-channels.md
+[7]: configuration-hand-off-omnichannel.md
+
+<sup>1</sup> If you also have the Teams channel enabled, you need to follow the configuration instructions on the [Configure SSO for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will cause your users to always fail authentication when using the Teams channel.
+
+<sup>2</sup> Only the live chat channel is supported. For more information, see [Configure hand-off to Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
+
+
 # [Web app](#tab/webApp)
-
-With single sign-on (SSO), chatbots on your website can sign customers in if they're already signed in to the page or app where the bot is deployed.
-
-In Power Virtual Agents preview, SSO is supported for the custom website channel only. It's not supported for the following channels:
-
-- Azure Bot Service
-- Demo website
-- Facebook
-- Microsoft Teams
-- Mobile app
-
-or when a bot has been:
-
-- Published to Teams, a SharePoint website, or a Power Apps portal
-- Integrated with Dynamics 365 Customer Service
 
 ### Create app registrations for your custom website
 
@@ -145,51 +176,6 @@ Use the code provided in the [Power Virtual Agents GitHub repo](https://github.c
 
 
 # [Classic](#tab/classic)
-
-For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
-
-There are four main steps to configuring SSO for Power Virtual Agents:
-
-1. Create an app registration in Azure AD for your custom canvas.
-
-1. Define a custom scope for your bot.
-
-1. Configure authentication in Power Virtual Agents to enable SSO.
-
-1. Configure your custom canvas HTML code to enable SSO.
-
-> [!IMPORTANT]
->
-> SSO is currently not supported when a bot has been either:
->
-> - Published to a [SharePoint website](publication-connect-bot-to-web-channels.md#add-bot-to-your-website).
-> - Published to a [Power Apps portal](publication-add-bot-to-power-pages.md).
-
-### Supported channels
-
-The following table details the [channels](publication-fundamentals-publish-channels.md) that currently support SSO. You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
-
-| Channel                                           | Supported     |
-|---------------------------------------------------|:-------------:|
-| [Azure Bot Service channels][6]                   | Not supported |
-| [Custom Website][3]                               | Supported     |
-| [Demo Website][2]                                 | Not supported |
-| [Facebook][5]                                     | Not supported |
-| [Microsoft Teams][1]<sup>1</sup>                  | Supported     |
-| [Mobile App][4]                                   | Not supported |
-| [Omnichannel for Customer Service][7]<sup>2</sup> | Supported     |
-
-[1]: publication-add-bot-to-microsoft-teams.md
-[2]: publication-connect-bot-to-web-channels.md
-[3]: publication-connect-bot-to-web-channels.md#custom-website
-[4]: publication-connect-bot-to-custom-application.md
-[5]: publication-add-bot-to-facebook.md
-[6]: publication-connect-bot-to-azure-bot-service-channels.md
-[7]: configuration-hand-off-omnichannel.md
-
-<sup>1</sup> If you also have the Teams channel enabled, you need to follow the configuration instructions on the [Configure SSO for Teams channel](configure-sso.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will cause your users to always fail authentication when using the Teams channel.
-
-<sup>2</sup> Only the live chat channel is supported. For more information, see [Configure hand-off to Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 ### Technical overview
 
