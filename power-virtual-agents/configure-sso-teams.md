@@ -23,6 +23,9 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 > [!IMPORTANT]
 > SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
+> [!NOTE]
+> If you are using Teams SSO authentication with Manual authentication option, and also using the bot on custom websites at the same time, you must deploy the Teams app using the app manifest. For more information, see [Download the bot's Teams app manifest](publication-add-bot-to-microsoft-teams#download-the-bots-teams-app-manifest-advanced). Other configurations such as authentications options beside Manual, or through Teams deployment using Power Virtual Agents one-click will not work.
+
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
