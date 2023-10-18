@@ -29,7 +29,7 @@ The following is a high-level overview of how security model is implemented in D
 - Environments act as security boundaries allowing different security needs to be implemented in each environment.
 - Flows and Canvas apps use connectors, the specific connections credentials and associated service entitlements determine permissions when apps use the connectors.
 - Environments with Dataverse add support for more advanced security models that are specific to controlling access to data and services in the environment with a Dataverse database.
-- To manage secuirty settings, you must be a system administsrator in Dataverse. For more information, see [Manage Microsoft Dataverse settings](admin-settings.md#security-settings).
+- To manage secuirty settings, you must be a system administsrator in Dataverse. For more information, see [Manage Microsoft Dataverse settings](admin-settings.md).
 
 > [!TIP]
 > To learn about how to help secure and govern Microsoft Power Platform apps like Power Automate, check out [Introduction to Power Automate security and governance](/training/modules/security-governance-intro/).
