@@ -11,7 +11,7 @@ ms.reviewer: iawilt
 
 # Project Planning
 
-**Sample Project Overview and Timelines**
+## **Sample Project Overview and Timelines**
 
 ![Project planning](./media/topics/Project_Planning.png)
 
@@ -24,8 +24,6 @@ choosing a rapid delivery timeline as your initial project phase include:
 - Return value back to your organization in an accelerated manner
 
 Whether this is right for your use case will depend on organizational need, support, and the ability to align the necessary workstreams.
-
-
 
 ## **Project Workstreams**
 ![Prject Workstrearms](./media/topics/ProjectWorkstreams.png)
@@ -41,27 +39,25 @@ Setting up an adoption platform requires several workstreams that can execute in
 **Rhythm of Business (ROB)** 
 
 A Rhythm of Business (ROB) meeting allows all participants, involved in the project, to provide status updates and identify any blocking issues so that they can be get resolved by stakeholders. These meetings should be very actionable and driven by dates and business goals. 
-  
-- **Customer driven –** 
 
-Microsoft/partner attend but customer is responsible for booking meetings and setting the agenda. The goal of this meeting is to run it as an engineering project, with success metrics and scorecards,and likely consists of:
+**1. Customer driven –**  Microsoft/partner attend but customer is responsible for booking meetings and setting the agenda. The goal of this meeting is to run it as an engineering project, with success metrics and scorecards,and likely consists of:
 
-    -Standups for chatbot development, 1-2 times a week
-    - Weekly demos for progress
-    - Weekly status updates emails highlighting blockers
-    - Bi-weekly bug prioritization
-    - Internal nurture – celebrate success
-    - Periodic retrospectives
-    - Weekly office hours to support customers adoption
-    - Teams channel for open communication
+  -Standups for chatbot development, 1-2 times a week
+  - Weekly demos for progress
+  - Weekly status updates emails highlighting blockers
+  - Bi-weekly bug prioritization
+  - Internal nurture – celebrate success
+  - Periodic retrospectives
+  - Weekly office hours to support customers adoption
+  - Teams channel for open communication
 
 
-   - **Jointly owned (Microsoft/partner)**
+**2. Jointly owned (Microsoft/partner)**
 
-      - Architectural reviews to guide core decisions for the platform
-      - Monthly exec reviews
-      - Scorecard review with progress, risks, blockers, and feedback
-      - Forum for demos as appropriat
+  - Architectural reviews to guide core decisions for the platform
+  - Monthly exec reviews
+  - Scorecard review with progress, risks, blockers, and feedback
+  - Forum for demos as appropriat
     
   **Testing**
 
