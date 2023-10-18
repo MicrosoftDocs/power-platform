@@ -62,29 +62,37 @@ A Rhythm of Business (ROB) meeting allows all participants, involved in the proj
 
      User acceptance testing will likely take up a significant portion of delivering your PVA chatbot – ensuring not only the integration of the complete solution (with backends/handoff clients/APIs), but also of the chatbots responses to customer input. More information on testing, please refer to the testing strategy section.
 
-|---|---|
-|**Production Deployment/Readiness checklist**|
-Ensuring that you are ready to deploy is a critical 
-step in having a successful launch. Here are 
-some considerations: 
-a. Have all scenarios been tested end to end
-to validate business requirements have
-been addressed?
-b. Do you have a cutover plan that
-identifies step by step all the activities
-required to successfully go live?
-c. Has this cutover plan been tested
-and validated?
-d. Do you have access to all the production
-resources that will be needed?
-• Environment
-• DLP policies
-• Gateways (if needed)
-• Azure resources (if needed)
-• External APIs (if needed)
-e. Do you have a communication plan
-established to inform both internal and
-external stakeholders of the changes?
-This includes both pre and post deployment.
+|Description                     |Details                            |
+|--------------------------------| :----------------------------------:|
+|**Production Deployment/Readiness checklist**|Ensuring that you are ready to deploy is a critical step in having a successful launch. Here are some considerations: 
+  - Have all scenarios been tested end to end
+  to validate business requirements have
+  been addressed?
+  - Do you have a cutover plan that
+  identifies step by step all the activities
+  required to successfully go live?
+  - Has this cutover plan been tested
+  and validated?
+  - Do you have access to all the production
+  resources that will be needed?
+    - Environment
+    - DLP policies
+    - Gateways (if needed)
+    - Azure resources (if needed)
+    - External APIs (if needed)
+  - Do you have a communication plan established to inform both internal and external stakeholders of the changes? This includes both pre and post deployment.|
+|**Power Platform Administration**| Power Platform Administration 
+a. Many customers will already have Power
+Platform/M365 administration teams/CoEs
+that are accountable to the management
+of the technology set.
+b. This team may focus on activities such as
+• Environment setup
+• Security/Access
+• DLP Policies
+• Gateways
+• Custom analytics
+Please refer to the Environment Strategy and 
+Custom Analytics Strategy sections for more details.|
 
      
