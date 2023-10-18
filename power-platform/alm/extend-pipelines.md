@@ -20,7 +20,7 @@ Pipelines can be custom tailored to serve the unique needs of an organization. F
 ## Gated extensions available
 Pipelines deployments progress through multiple pre-defined steps until deployment completion. Gated extensions insert custom steps into the progression where custom business logic can be executed. It's like your own personal train where you're in control of where it stops and whether it continues or not.
 
-:::image type="content" source="media/extensibility-flow-diagram.png" alt-text="Extensibility diagram":::
+:::image type="content" source="media/pipelines-extensibility-train.png" alt-text="Extensibility diagram":::
 
 When enabled, each extension inserts a custom step at a different point within a deployment’s progression. Extensions can be used alone or together. 
 
@@ -51,6 +51,8 @@ The tables below indicate triggers and actions required for each extension. Outp
 
 > [!NOTE]
 > OnDeploymentRequested triggers for all deployments.
+
+:::image type="content" source="media/extensibility-flow-diagram.png" alt-text="Extensibility diagram":::
 
 ## Triggers
 
