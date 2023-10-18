@@ -22,6 +22,8 @@
       items:
       - name: Display Data from Arrays
         href: Adaptive-Cards-Display-Data-from-Arrays .md
+      - name: Add feedback for every response 
+        href: Adaptive-Card-Add-feedback-for-every-response.md
 - name: Measuring and improving chatbots
   items:
     - name: Measuring engagement

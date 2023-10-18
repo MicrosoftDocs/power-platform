@@ -205,3 +205,6 @@ beginDialog:
               }
 
 ```
+
+> [!div class="nextstepaction"]
+> [Add feedback for every response](/Adaptive-Card-Add-feedback-for-every-response.md)
