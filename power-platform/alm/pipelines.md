@@ -110,7 +110,7 @@ Similar to authoring experiences, makers running pipelines can either provide th
 
 ### Why can't I update existing environment variables or connection references?
 
-Currently, environment variables without a value in the solution or targeted environment can be updated during deployment. If a value was deployed previously, it can be updated in the targeted environment. The same is true for updating connection references. 
+Currently, environment variables without a value in the solution or targeted environment can't be updated during deployment. If a value was deployed previously, it can be updated in the targeted environment. The same is true for updating connection references. 
 
 ### Who owns deployed solution objects?
 
