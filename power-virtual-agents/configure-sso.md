@@ -30,7 +30,7 @@ Power Virtual Agents supports single sign-on (SSO), which means chatbots can sig
 
 With single sign-on (SSO), chatbots on your website can sign customers in if they're already signed in to the page or app where the bot is deployed.
 
-In Power Virtual Agents preview, SSO is supported for the custom website channel only. It's not supported for the following channels:
+In Power Virtual Agents, SSO is supported for the custom website channel only. It's not supported for the following channels:
 
 - Azure Bot Service
 - Demo website

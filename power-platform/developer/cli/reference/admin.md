@@ -306,7 +306,7 @@ Environment (ID, org ID, url, unique name, or partial name).
 
 #### `--name` `-n`
 
-Application name to create in Entra ID.
+Application name to create in Microsoft Entra ID.
 
 #### `--role` `-r`
 
