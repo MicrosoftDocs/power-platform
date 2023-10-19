@@ -31,10 +31,6 @@ Other elements include:
 - [Controls and their properties](/power-apps/maker/canvas-apps/reference-properties)
 - [Data types](data-types.md)
 
-# All Power Apps functions
-
-In this article, learn about all the functions available in Power Apps.
-
 ## <a id="-a"></a> A
 
 **[Abs](reference/function-numericals.md?tabs=power-apps)** – Absolute value of a number.
