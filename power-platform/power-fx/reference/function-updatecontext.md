@@ -19,7 +19,7 @@ contributors:
 
 # UpdateContext function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Cards
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 Creates or updates [context variables](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable) of the current screen.
 
