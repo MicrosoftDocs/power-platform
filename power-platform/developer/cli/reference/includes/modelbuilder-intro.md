@@ -1,4 +1,4 @@
-Use the [pac modelbuilder build](#pac-modelbuilder-build) command to generate early-bound .NET classes for Dataverse tables, custom messages, and a class that is derived from the [OrganizationServiceContext Class](xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext).
+Use the [pac modelbuilder build](#pac-modelbuilder-build) command to generate early-bound .NET classes for Dataverse tables, custom messages, and a class that is derived from the [OrganizationServiceContext Class](xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext). [Learn more about using this command to generate early bound classes](/power-apps/developer/data-platform/org-service/generate-early-bound-classes)
 
 The class derived from <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>:
 
