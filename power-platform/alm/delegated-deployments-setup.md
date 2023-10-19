@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 10/02/2023
+ms.date: 10/19/2023
 ms.custom: 
 ---
 # Deploy pipelines as a service principal or pipeline owner (preview)
@@ -22,10 +22,10 @@ Delegated deployments can be run as a service principal or pipeline stage owner.
 
 For a delegated deployment with a service principal, follow these steps.
 
-1. Create an enterprise application (service principal) in Microsoft Azure Active Directory (AD).
+1. Create an enterprise application (service principal) in Microsoft Entra ID.
 
     > [!IMPORTANT]
-    > Add the pipeline stage owner as an owner of the enterprise application in Azure AD. This can be a standard user or service principal as long as the same identity owns the pipeline stage and enterprise application.
+    > Add the pipeline stage owner as an owner of the enterprise application in Entra ID. This can be a standard user or service principal as long as the same identity owns the pipeline stage and enterprise application.
 1. Add the enterprise application as a server-to-server (S2S) user in your pipelines host environment and each target environment it deploys to.
 1. Assign the Pipelines Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments.
     Lower permission security roles cannot deploy plug-ins and other code components.
@@ -35,7 +35,7 @@ For a delegated deployment with a service principal, follow these steps.
 1. Add steps for your desired custom logic.
 1. Insert an approval step. Use Dynamic content for sending deployment request information to the approver(s).
 1. Insert a condition.
-2. Create a Dataverse connection for the service principal. You’ll need a client ID and secret.
+1. Create a Dataverse connection for the service principal. You’ll need a client ID and secret.
 1. Add Dataverse **Perform an unbound action** using the settings shown below.  
     Action Name: UpdateApprovalStatus
     ApprovalComments: Insert Dynamic Content. Comments will be visible to the requestor of the deployment.
@@ -48,7 +48,7 @@ For a delegated deployment with a service principal, follow these steps.
     > :::image type="content" source="media/spn-connection.png" alt-text="Connect with service principal":::
     
     > [!TIP]
-    > To improve dubugability, select ApprovalProperties and insert workflow() from the dynamic content menu. This links the flow run to the pipeline stage run (run history).
+    > To improve the debug experience, select ApprovalProperties and insert workflow() from the dynamic content menu. This links the flow run to the pipeline stage run (run history).
     
 1. Save, and then test the pipeline.
 
