@@ -13,6 +13,9 @@ search.audienceType:
 ---
 # Set up customer engagement apps to use Skype or Skype for Business
 
+> [!Note]
+> This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)
+
 When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), your organization can benefit from these capabilities:  
   
 - Real-time communications with customers, colleagues, and team members without leaving customer engagement apps. Click or tap a person's phone number to call them.  

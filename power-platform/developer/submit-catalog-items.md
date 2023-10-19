@@ -178,7 +178,7 @@ Don't confuse this term with *Solution Publisher*. Catalog item publisher is ent
 
 You need to provide the ID publisher `DisplayName` at a minimum. ID can be any string value. System checks if that publisher exists, else creates it and assigns an ID.
 
-Example: HR IT team of developers can create a publisher and ID the developers using an Entra ID group.
+Example: HR IT team of developers can create a publisher and ID the developers using an Microsoft Entra ID group.
 
 Here's an example of a publisher record:
 
