@@ -24,7 +24,6 @@ These encryption key operations are available with customer-managed key (CMK):
 - Create a Power Platform enterprise policy for your key.
 - Grant the Power Platform enterprise policy permission to access your key vault.
 - Grant the Power Platform service admin to read the enterprise policy.
-- Grant the Power Platform service admin to read the enterprise policy.
 - Apply encryption key to your environment.
 - Revert/remove environment’s CMK encryption to Microsoft-managed key.
 - Change key by creating a new enterprise policy, removing the environment from CMK and re-apply CMK with new enterprise policy.
