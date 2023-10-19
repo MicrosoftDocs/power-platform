@@ -54,7 +54,7 @@ The result of this command is that the following files are written to the `c:\sr
 |---**EntityOptionSetEnum.cs**</br>
 |---**builderSettings.json**</br>
 
-*builderSettings.json* contains the parameters you specified for the command. You can use it to quickly regenerate the files as things change. The following example shows using the generated `buildersettings.json` file from the first command using the `--settingsTemplateFile` parameter:.
+*builderSettings.json* contains the parameters you specified for the command. You can use it to quickly regenerate the files as things change. The following example shows using the generated `buildersettings.json` file from the first command using the [settingsTemplateFile](../modelbuilder.md#--settingstemplatefile--stf):
 
 ```powershell
 pac modelbuilder build `
@@ -62,11 +62,7 @@ pac modelbuilder build `
   --settingsTemplateFile c:\src\MyApps\Model\builderSettings.json
 ```
 
-<!-- 
-Seems like we ought to recommend this.
-It is much more readable. I think I would much rather use this pattern than type out all these commands.
--->
-You can also choose to create a `builderSettings.json` file and use that instead of passing all the parameters to the command. The following is an example that is equivilent to the first example above:
+You can also choose to create a `builderSettings.json` file and use that instead of passing all the parameters to the command. The following is an example that is equivalent to the first example above:
 
 ```json
 {
@@ -87,6 +83,7 @@ You can also choose to create a `builderSettings.json` file and use that instead
   "emitVirtualAttributes": true
 }
 ```
-If you pass parameters to the command while using the `--settingsTemplateFile` parameter, the parameters passed to the command will override those set in the `builderSettings.json` file.
 
-You can't use the `--settingsTemplateFile` parameter and the `--writesettingsTemplateFile` parameter at the same time.
+If you pass parameters to the command while using the [settingsTemplateFile](../modelbuilder.md#--settingstemplatefile--stf) parameter, the parameters passed to the command will override those set in the `builderSettings.json` file.
+
+You can't use the [settingsTemplateFile](../modelbuilder.md#--settingstemplatefile--stf) parameter and the [writesettingsTemplateFile](../modelbuilder.md#--writesettingstemplatefile--wstf) parameter at the same time.
