@@ -113,11 +113,11 @@ These parameters are exposed across the actions for the corresponding gated exte
 - PreExportProperties and ApprovalProperties:
   - Admins can store information or custom parameters here without it surfacing to makers - for example a link to the flow run or approval, or other pertinent data. The intent is to provide flexibility and simplify custom reporting for deployment related data.
 
-### Samples
+## Samples
 
 Download and then import this unmanaged solution into your pipelines host environment. The download contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https://aka.ms/DownloadPipelinesExtensibilitySamples)
 
-## Next step
+## Next steps
 
 [Run pipelines in Power Platform](run-pipeline.md)
 
