@@ -57,7 +57,7 @@ The [Microsoft 365 Developer Program](/office/developer-program/microsoft-365-de
 You'll need a work account or a microsoft account to sign up. Use either your personal email address or set up a separate email address/Microsoft account to be used when you start the registration process for the Microsoft 365 Developer Program.
 
 1. Go to [Join the Microsoft 365 Developer Program page](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
-2. In the upper-right corner, select **Sign in** to sign in with your Microsoft account or Entra ID-enabled email.
+2. In the upper-right corner, select **Sign in** to sign in with your Microsoft account or Microsoft Entra ID-enabled email.
 3. After signing in, select **Join now**.
 4. On the Microsoft 365 Developer Program Signup page, complete the following fields in the online form:
     - Country/Region
