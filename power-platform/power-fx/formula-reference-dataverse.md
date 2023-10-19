@@ -24,17 +24,9 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 **[Abs](reference/function-numericals.md?tabs=power-apps)** - Absolute value of a number.
 
-**[AddColumns](reference/function-table-shaping.md?tabs=power-apps)** – Returns a table with [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) added.
-
-**[Acceleration](reference/signals.md?tabs=power-apps)** – Reads the acceleration sensor in your device.
-
 **[And](reference/function-logicals.md?tabs=power-apps)** - Boolean logic AND. Returns true if all arguments are true. You can also use the [&& operator](reference/operators.md).
 
-**[App](reference/object-app.md?tabs=power-apps)** – Provides information about the currently running app and control over the app's behavior.
-
 **[Average](reference/function-aggregates.md?tabs=power-apps)** - Calculates the average of a table expression or a set of arguments.
-
-**[As](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Names the current record in gallery, form, and record scope functions such as **ForAll**, **With**, and **Sum**.
 
 ## B
 
@@ -42,25 +34,9 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 ## C
 
-**[Calendar](reference/function-clock-calendar.md?tabs=power-apps)** – Retrieves information about the calendar for the current locale.
-
-**[Clear](reference/function-clear-collect-clearcollect.md?tabs=power-apps)** – Deletes all data from a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections).
-
-**[ClearData](reference/function-savedata-loaddata.md?tabs=power-apps)** – Clears a collection or all collections from an app host such as a local device.
-
-**[ClearCollect](reference/function-clear-collect-clearcollect.md?tabs=power-apps)** – Deletes all data from a collection and then adds a set of [records](/power-apps/maker/canvas-apps/working-with-tables#records).
-
-**[Choices](reference/function-choices.md?tabs=power-apps)** – Returns a table of the possible values for a lookup column.
-
-**[Connection](reference/signals.md?tabs=power-apps)** – Returns information about your network connection.
-
-**[Concurrent](reference/function-concurrent.md?tabs=power-apps)** – Evaluates multiple formulas concurrently with one another.
-
 **[Char](reference/function-char.md?tabs=power-apps)** - Translates a character code into a string.
 
-**[Clock](reference/function-clock-calendar.md?tabs=power-apps)** – Retrieves information about the clock for the current locale.
-
-**[Compass](reference/signals.md?tabs=power-apps)** – Returns your compass heading.
+**[Collect](reference/function-clear-collect-clearcollect.md?tabs=power-apps)** – Creates a collection or adds data to a data source.
 
 **[Concatenate](reference/function-concatenate.md?tabs=power-apps)** - Concatenates strings.
 
@@ -72,25 +48,17 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 **[Day](reference/function-datetime-parts.md?tabs=power-apps)** - Retrieves the day portion of a date/time value.
 
-**[Download](reference/function-download.md?tabs=power-apps)** – Downloads a file from the web to the local device.
-
-**[DropColumns](reference/function-table-shaping.md?tabs=power-apps)** – Returns a table with one or more columns removed.
+**[Defaults](reference/function-defaults.md?tabs=power-apps)** – Returns the default values for a data source.
 
 ## E
 
-**[EditForm](reference/function-form.md?tabs=power-apps)** – Resets a form control for editing of an item.
-
 **[EndsWith](reference/function-startswith.md?tabs=power-apps)** - Checks whether a text string ends with another text string.
-
-**[Errors](reference/function-errors.md?tabs=power-apps)** – Provides error information for previous changes to a data source.
 
 ## G
 
 **[GroupBy](reference/function-groupby.md?tabs=power-apps)** – Returns a table with records grouped together.
 
 ## H
-
-**[HashTags](reference/function-hashtags.md?tabs=power-apps)** – Extracts the hashtags (#strings) from a string.
 
 **[Hour](reference/function-datetime-parts.md?tabs=power-apps)** - Returns the hour portion of a date/time value.
 
@@ -104,13 +72,9 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 **[IsBlank](reference/function-isblank-isempty.md?tabs=power-apps)** - Checks for a [blank](reference/function-isblank-isempty.md) value.
 
-**[IsEmpty](reference/function-isblank-isempty.md?tabs=power-apps)** – Checks for an empty table.
-
 **[IsError](reference/function-iferror.md?tabs=power-apps)** - Checks for an error.
 
 **[ISOWeekNum](reference/function-weeknum.md?tabs=power-apps)** - Returns the ISO week number of a date/time value.
-
-**[IsType](reference/function-astype-istype.md?tabs=power-apps)** – Checks whether a record reference refers to a specific table type.
 
 **[IsUTCToday](reference/function-now-today-istoday.md?tabs=power-apps)** - Checks whether a date/time value is sometime today in Coordinated Universal Time (UTC).
 
@@ -120,15 +84,7 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 ## L
 
-**[Left](reference/function-left-mid-right.md?tabs=power-apps)** - Returns the left-most portion of a string.
-
-**[Len](reference/function-len.md?tabs=power-apps)** - Returns the length of a string.
-
-**[LoadData](reference/function-savedata-loaddata.md?tabs=power-apps)** – Loads a collection from an app host such as a local device.
-
-**[Location](reference/signals.md?tabs=power-apps)** – Returns your location as a map coordinate by using the Global Positioning System (GPS) and other information.
-
-**[Lower](reference/function-lower-upper-proper.md?tabs=power-apps)** - Converts letters in a string of text to all lowercase.
+**[Lower](reference/function-lower-upper-proper.md?tabs=power-apps)** – Converts letters in a string of text to all lowercase.
 
 ## M
 
@@ -146,11 +102,7 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 ## N
 
-**[NewForm](reference/function-form.md?tabs=power-apps)** – Resets a form control for creation of an item.
-
 **[Not](reference/function-logicals.md?tabs=power-apps)** - Boolean logic NOT. Returns true if its argument is false, and returns false if its argument is true. You can also use the [! operator](reference/operators.md).
-
-**[Notify](reference/function-showerror.md?tabs=power-apps)** – Displays a banner message to the user.
 
 ## O
 
@@ -164,14 +116,6 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 **[Replace](reference/function-replace-substitute.md?tabs=power-apps)** - Replaces part of a string with another string, by starting position of the string.
 
-**[Refresh](reference/function-refresh.md?tabs=power-apps)** – Refreshes the records of a data source.
-
-**[RemoveIf](reference/function-remove-removeif.md?tabs=power-apps)** – Removes records from a data source based on a condition.
-
-**[RenameColumns](reference/function-table-shaping.md?tabs=power-apps)** – Renames columns of a table.
-
-**[ResetForm](reference/function-form.md?tabs=power-apps)** – Resets a form control for editing of an existing item.
-
 **[Right](reference/function-left-mid-right.md?tabs=power-apps)** - Returns the right-most portion of a string.
 
 **[Round](reference/function-round.md?tabs=power-apps)** - Rounds to the closest number.
@@ -182,25 +126,11 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 ## S
 
-**[SaveData](reference/function-savedata-loaddata.md?tabs=power-apps)** – Saves a collection to an app host such as a local device.
-
-**[Search](reference/function-filter-lookup.md?tabs=power-apps)** – Finds records in a table that contain a string in one of their columns.
-
 **[Second](reference/function-datetime-parts.md?tabs=power-apps)** - Retrieves the second portion of a date/time value.
 
-**[Select](reference/function-select.md?tabs=power-apps)** – Simulates a select action on a control, causing the **OnSelect** formula to be evaluated.
-
-**[SetFocus](reference/function-setfocus.md?tabs=power-apps)** – Moves input focus to a specific control.
-
-**[SetProperty](reference/function-setproperty.md?tabs=power-apps)** – Simulates interactions with input controls.
-
-**[ShowColumns](reference/function-table-shaping.md?tabs=power-apps)** – Returns a table with only selected columns.
-
-**[SortByColumns](reference/function-sort.md?tabs=power-apps)** – Returns a sorted table based on one or more columns.
+**[Set](reference/function-set.md?tabs=power-apps)** – Sets the value of a global variable.
 
 **[StartsWith](reference/function-startswith.md?tabs=power-apps)** - Checks if a text string begins with another text string.
-
-**[SubmitForm](reference/function-form.md?tabs=power-apps)** – Saves the item in a form control to the data source.
 
 **[Substitute](reference/function-replace-substitute.md?tabs=power-apps)** - Replaces part of a string with another string, by matching strings.
 
@@ -220,11 +150,9 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 
 ## U
 
-**[Update](reference/function-update-updateif.md?tabs=power-apps)** – Replaces a record in a data source.
-
-**[UpdateIf](reference/function-update-updateif.md?tabs=power-apps)** – Modifies a set of records in a data source based on a condition.
-
 **[Upper](reference/function-lower-upper-proper.md?tabs=power-apps)** - Converts letters in a string of text to all uppercase.
+
+**[User](reference/function-user.md?tabs=power-apps)** – Returns information about the current user.
 
 **[UTCNow](reference/function-now-today-istoday.md?tabs=power-apps)** - Returns the current date/time value in Coordinated Universal Time (UTC).
 
@@ -239,8 +167,6 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 **[ViewForm](reference/function-form.md?tabs=power-apps)** – Resets a form control for viewing of an existing item.
 
 ## W
-
-**[Weekday](reference/function-datetime-parts.md?tabs=power-apps)** - Retrieves the weekday portion of a date/time value.
 
 **[WeekNum](reference/function-weeknum.md?tabs=power-apps)** - Returns the week number of a date/time value.
 
