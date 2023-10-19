@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 09/15/2023
+ms.date: 10/19/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
 ---
@@ -27,7 +27,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
 
 - Lower total cost of ownership:
   - Pipelines significantly improve maker, developer, and admin productivity. Pipelines enable your business solutions to come to market faster, with higher quality, through a safe and governed process.
-  - Minimal effort to implement secure, custom-tailored change management processes across your organization or team.
+  - Minimal effort to implement a secure and custom-tailored change management processes across your organization or team.
 
 - Save time and money:
   - The system handles the heavy lifting and ongoing maintenance so you don't have to.
@@ -35,7 +35,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
 - Scale ALM at your own pace:
   - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI](../developer/cli/introduction.md)
 - Achieve compliance, safety, monitoring, and automation goals with:
-  - Secure production environments with approval based [delegated deployments](../delegated-deployments-setup.md)
+  - Secure production environments with approval based [delegated deployments](../delegated-deployments-setup.md).
   - Customizations and audit logs saved automatically and are easily accessible.
   - Out-of-the-box analytics provides better visibility within a central location.
   - The ability to view out-of-the-box Power BI reports within the pipelines app or create your own. More information: [Reporting overview for model-driven apps](/power-apps/maker/model-driven-apps/reporting-overview)
@@ -104,9 +104,9 @@ Yes. See [delegated deployments](../delegated-deployments-setup.md).
 ### Can I use different service principals for diffent pipelines and stages?
 Yes. 
 
-### Whose connections can be used?
+### What connections can be used?
 
-Similar to authoring experiences, makers running pipelines can provide their own connections, or connections they have access to. Service principal connections can also be used for connectors that support service principal authentication, including custom connectors. 
+Similar to authoring experiences, makers running pipelines can either provide their own connections or connections they have access to. Service principal connections can also be used for connectors that support service principal authentication, including custom connectors. 
 
 ### Why can't I update existing environment variables or connection references?
 
@@ -114,7 +114,7 @@ Currently, environment variables without a value in the solution or targeted env
 
 ### Who owns deployed solution objects?
 
-The deploying identity. For standard deployments this is the requesting maker. For delegated deployments this is the delegated service principal or user. 
+The deploying identity. For standard deployments, the owner is the requesting maker. For delegated deployments, the owner is the delegated service principal or user. 
 
 ### Can pipelines deploy to a different tenant?
 
@@ -138,7 +138,7 @@ Yes, together these tools are powerful while keeping maker experiences simple. M
 
 ### Can I roll back to a previous version?
 
-Currently, only higher solution versions can be deployed or imported. As a work-around, admins download the artifact from the pipelines host, increment the solution version in the solution.xml file, then manually import it to the target environment. 
+Currently, only higher solution versions can be deployed or imported. As a work-around, admins download the artifact from the pipelines host, increment the solution version in the solution.xml file, then manually import it into the target environment. 
 
 ### Can I set retention policies for pipelines data?
 
