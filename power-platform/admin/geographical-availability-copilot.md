@@ -4,7 +4,7 @@ description: Learn about how to enable copilot and generative AI features in Pow
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/12/2023
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -43,17 +43,17 @@ You can allow copilots in your Power Platform environments outside the United St
 
 1. Select your environment.
 
-1. From the right side of the screen, select **Edit** on the **Allow data movement across regions for generative AI features** card.
+1. On the right side of the screen, select **Edit** on the **Generative AI features** card.
 
-    :::image type="content" source="media/allow-data-movement.png" alt-text="Select **Edit** on the **Allow data movement across regions for generative AI features** card." border="true":::
+    :::image type="content" source="media/ai-not-allowed.svg" alt-text="Select **Edit** on the **Generative AI features** card.":::
 
 1. Read the information in the panel and select the check mark to consent to the terms of use.
 
-    :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use." border="true":::
+    :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use.":::
 
 1. Select **Enable**.
 
-    After you consent, the status on the **Allow data movement across regions for generative AI features** card shows **Allowed** and copilots and generative AI features are enabled in the environment.
+    After you consent, the status on the **Generative AI features** card shows **Allowed** and copilots and generative AI features are enabled in the environment.
 
 ## Disable copilots and generative AI outside United States and Switzerland
 
@@ -68,13 +68,13 @@ You can disable copilots and generative AI features in Power Platform environmen
 
 1. Select your environment.
 
-1. From the right side of the screen, select **Edit** on the **Allow data movement across regions for generative AI features** card.
+1. On the right side of the screen, select **Edit** on the **Generative AI features** card.
 
 1. Clear the terms of use check mark.
 
 1. Select **Disable**.
 
-    After you remove your consent, the status on the **Allow data movement across regions for generative AI features** card shows **Not allowed** disabling copilots and generative AI features in the environment.
+    After you remove your consent, the status on the **Generative AI features** card shows **Not allowed** disabling copilots and generative AI features in the environment.
 
 ## Available copilot and generative AI features outside United States and Switzerland
 
