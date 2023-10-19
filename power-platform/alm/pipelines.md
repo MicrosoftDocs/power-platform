@@ -35,7 +35,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
 - Scale ALM at your own pace:
   - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI](../developer/cli/introduction.md)
 - Achieve compliance, safety, monitoring, and automation goals with:
-  - Secure production environments with approval based [delegated deployments](../delegated-deployments-setup.md).
+  - Secure production environments with approval based [delegated deployments](delegated-deployments-setup.md).
   - Customizations and audit logs saved automatically and are easily accessible.
   - Out-of-the-box analytics provides better visibility within a central location.
   - The ability to view out-of-the-box Power BI reports within the pipelines app or create your own. More information: [Reporting overview for model-driven apps](/power-apps/maker/model-driven-apps/reporting-overview)
@@ -99,7 +99,7 @@ A common setup example:
 
 ### Can I configure approvals for deployments?
 
-Yes. See [delegated deployments](../delegated-deployments-setup.md).
+Yes. See [delegated deployments](delegated-deployments-setup.md).
 
 ### Can I use different service principals for diffent pipelines and stages?
 Yes. 
