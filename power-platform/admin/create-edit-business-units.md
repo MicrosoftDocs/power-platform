@@ -43,9 +43,9 @@ A business unit is a logical grouping of related business activities.
 
 - A team can consist of users from one or many business units. Consider using this type of team if you have a situation where users from different business units need to work together on a shared set of records.  
 
-- (Preview) To allow your users to access data in a business unit, you can assign the user a security role from that business unit.  
+- To allow your users to access data in a business unit, you can assign the user a security role from that business unit. The users can remain in the root business unit.
 
-- (Preview) A user can be assigned to security roles from any business unit regardless of what the business unit the user belongs to. 
+- A user can be assigned to security roles from any business unit regardless of what the business unit the user belongs to.
 
 ## Create a new business unit  
   
