@@ -37,13 +37,13 @@ In the context of the **IsEmpty** function, _empty_ is specific to tables that c
 
 ## Blank
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
 
 The **Blank** function returns a _blank_ value. Use this to store a NULL value in a data source that supports these values, effectively removing any value from the field.
 
 ## IsBlank
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps  
 
 The **IsBlank** function tests for a _blank_ value or an empty string. The test includes empty strings to ease app creation since some data sources and controls use an empty string when there is no value present. To test specifically for a _blank_ value use `if( Value = Blank(), ...` instead of **IsBlank**. The **IsBlank** function considers empty tables as not blank, and **IsEmpty** should be used to test a table.
 
@@ -53,7 +53,7 @@ The return value for **IsBlank** is a boolean **true** or **false**.
 
 ## Coalesce
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps  
 
 The **Coalesce** function evaluates its arguments in order and returns the first value that isn't _blank_ or an empty string. Use this function to replace a _blank_ value or empty string with a different value but leave non-_blank_ and non-empty string values unchanged. If all the arguments are _blank_ or empty strings then the function returns _blank_, making **Coalesce** a good way to convert empty strings to _blank_ values.
 
@@ -63,7 +63,7 @@ All arguments to **Coalesce** must be of the same type; for example, you can't m
 
 ## IsEmpty
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps  
 
 The **IsEmpty** function tests whether a table contains any records. It's equivalent to using the **[CountRows](function-table-counts.md)** function and checking for zero. You can check for data-source errors by combining **IsEmpty** with the **[Errors](function-errors.md)** function.
 

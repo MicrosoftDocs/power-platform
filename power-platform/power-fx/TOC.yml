@@ -24,12 +24,10 @@
           href: working-with-json.md
         - name: Formula reference
           items:
-          - name: Dataverse formula reference
-            href: formula-reference-dataverse.md
           - name: Power Apps formula reference
             href: formula-reference.md
-          - name: Power Virtual Agents formula reference
-            href: formula-reference-pva.md
+          - name: Dataverse formula reference
+            href: formula-reference-dataverse.md
           - name: Abs
             href: reference/function-numericals.md
           - name: Acceleration

@@ -18,7 +18,7 @@ contributors:
 
 # Operators and Identifiers in Power Apps
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 Some of these operators are dependent on the language of the author. For more information about language support in canvas apps, see [Global apps](/power-apps/maker/canvas-apps/global-apps).
 
