@@ -18,11 +18,13 @@ just copy and paste the command to try them.
 pac modelbuilder build ^
   --entitynamesfilter account;contact ^
   --generatesdkmessages ^
+  --messagenamesfilter examp_* ^
   --emitfieldsclasses ^
   --emitVirtualAttributes ^
   --namespace MyApps.Model ^
   --outdirectory c:\src\MyApps\Model ^
-  --writesettingsTemplateFile
+  --writesettingsTemplateFile ^
+  --serviceContextName OrgContext
 ```
 
 And the same command using PowerShell:
@@ -31,11 +33,13 @@ And the same command using PowerShell:
 pac modelbuilder build `
   --entitynamesfilter 'account;contact' `
   --generatesdkmessages `
+  --messagenamesfilter 'examp_*' `
   --emitfieldsclasses `
   --emitVirtualAttributes `
-  --namespace MyApps.Model `
+  --namespace 'MyApps.Model' `
   --outdirectory 'c:\src\MyApps\Model' `
-  --writesettingsTemplateFile
+  --writesettingsTemplateFile `
+  --serviceContextName 'OrgContext'
 ```
 
 > [!IMPORTANT]
@@ -53,6 +57,7 @@ The result of this command is that the following files are written to the `c:\sr
 |&nbsp;&nbsp;&nbsp;&nbsp;|--examp_myapi.cs</br>
 |---**EntityOptionSetEnum.cs**</br>
 |---**builderSettings.json**</br>
+|---**OrgContext.cs**</br>
 
 *builderSettings.json* contains the parameters you specified for the command. You can use it to quickly regenerate the files as things change. The following example shows using the generated `buildersettings.json` file from the first command using the [settingsTemplateFile](../modelbuilder.md#--settingstemplatefile--stf):
 
@@ -70,6 +75,7 @@ You can also choose to create a `builderSettings.json` file and use that instead
   "suppressGeneratedCodeAttribute": false,
   "language": "CS",
   "namespace": "MyApps.Model",
+  "serviceContextName": "OrgContext",
   "generateSdkMessages": true,
   "generateGlobalOptionSets": false,
   "emitFieldsClasses": true,
@@ -77,7 +83,11 @@ You can also choose to create a `builderSettings.json` file and use that instead
   "messagesTypesFolder": "Messages",
   "optionSetsTypesFolder": "OptionSets",
   "entityNamesFilter": [
-    "account;contact"
+    "account",
+    "contact"
+  ],
+  "messageNamesFilter": [
+    "examp_*"
   ],
   "emitEntityETC": false,
   "emitVirtualAttributes": true
