@@ -19,7 +19,7 @@ contributors:
 
 # Download function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins 
 
 Downloads a file from the web to the local device.
 

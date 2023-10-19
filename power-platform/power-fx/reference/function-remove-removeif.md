@@ -19,7 +19,7 @@ contributors:
 
 # Remove and RemoveIf functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins 
 
 Removes [records](/power-apps/maker/canvas-apps/working-with-tables#records) from a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
