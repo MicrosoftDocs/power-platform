@@ -19,6 +19,8 @@ contributors:
 
 # User function
 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+
 Returns information about the current user.
 
 ## Description

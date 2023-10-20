@@ -19,6 +19,8 @@ contributors:
 
 # Defaults function
 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+
 Returns the default values for a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
 ## Description

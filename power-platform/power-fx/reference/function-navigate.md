@@ -19,8 +19,6 @@ contributors:
 
 # Back and Navigate functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
-
 Changes which screen is displayed.
 
 ## Overview
@@ -36,6 +34,8 @@ Use the **App** object's [**StartScreen**](object-app.md#startscreen-property) p
 You can use either function only within a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 ## Navigate
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 In the first argument, specify the name of the screen to display.
 
@@ -59,6 +59,8 @@ Set the **[OnHidden](/power-apps/maker/canvas-apps/controls/control-screen)** pr
 Context variables for navigation are explained in the article [navigate between screens](/power-apps/maker/canvas-apps/add-screen-context-variables#add-navigation).
 
 ## Back
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps 
 
 The **Back** function returns to the screen that was most recently displayed.
 

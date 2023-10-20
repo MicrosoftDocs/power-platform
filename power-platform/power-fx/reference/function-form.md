@@ -19,7 +19,7 @@ contributors:
 
 # EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 View, edit, or create an item, save the contents, and reset the controls in an **[Edit form](/power-apps/maker/canvas-apps/controls/control-form-detail)** control.
 

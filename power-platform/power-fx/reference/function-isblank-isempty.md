@@ -20,6 +20,8 @@ contributors:
 
 # Blank, Coalesce, IsBlank, and IsEmpty functions
 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
+
 Tests whether a value is blank or a [table](/power-apps/maker/canvas-apps/working-with-tables) contains no [records](/power-apps/maker/canvas-apps/working-with-tables#records), and provides a way to create _blank_ values.
 
 ## Overview

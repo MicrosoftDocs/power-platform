@@ -23,7 +23,7 @@ Creates and clears [collections](/power-apps/maker/canvas-apps/working-with-data
 
 ## Collect
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps    :::image type="icon" source="media/yes-icon.svg" border="false"::: Cards :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Cards :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins
 
 The **Collect** function adds records to a data source. The items to be added can be:
 
@@ -43,7 +43,7 @@ You can also use the **[Patch](function-patch.md)** function to create records i
 
 ## Clear
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 The **Clear** function deletes all the records of a collection. The columns of the collection will remain.
 
