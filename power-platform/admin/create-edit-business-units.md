@@ -5,11 +5,13 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/18/2022
+ms.date: 10/20/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- paulliew 
 ---
 # Create or edit business units 
 
