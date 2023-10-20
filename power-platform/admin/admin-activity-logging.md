@@ -20,9 +20,9 @@ Administration of Power Platform products and services can affect various capabi
 
 In this article, you learn about activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces using Microsoft Purview compliance portal. The activities fall within three categories:
 
-- [Environment Lifecycle Operations](#activity-category-environment-lifecycle-operations)
-- [Environment Property and Setting Change Activities](#activity-category-environment-property-and-setting-change-activities)
-- Environment Security and Permission Change Activities
+- [Environment lifecycle operations](#activity-category-environment-lifecycle-operations)
+- [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
+- Environment security and permission change activities
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -34,9 +34,9 @@ The audit activities include actions made by global administrators, Power Platfo
 
 Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). The schema defines the payload of metadata that is unique for each activity.
 
-## Activity category: Environment Lifecycle Operations
+## Activity category: Environment lifecycle operations
 
-Each activity event contains a payload of metadata that is specific to the individual event. The following Environment Lifecycle Operation activities are delivered to Microsoft Purview.
+Each activity event contains a payload of metadata that is specific to the individual event. The following _environment lifecycle operation_ activities are delivered to Microsoft Purview.
 
 | **Event**                  | **Description**                                                                                                                        |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -54,13 +54,13 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | CMK-Renewed environment    | The customer-managed key (CMK) has been renewed on the environment.                                                                         |
 | CMK-Reverted environment   | Environment was removed from enterprise policy and encryption was retured to Microsoft-managed key.                                              |
 
-## Activity category: Environment Property and Setting Change Activities
+## Activity category: Environment property and setting change activities
 
-Each activity event contains a payload of metadata that is specific to the individual event. The following Environment Property and Setting activities are delivered to Microsoft Purview.
+Each activity event contains a payload of metadata that is specific to the individual event. The following _environment property and setting_ activities are delivered to Microsoft Purview.
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
-| Changed Property on Environment | Communicates when a property on an environment has changed. In general, properties are metadata (name) that is associated with an Environment. Includes changes to:<ul><li>Display Name</li><li>Domain Name</li><li>Security GroupId</li><li>Admin Mode</li><li>Background Operations State</li></ul> |
+| Changed property on environment | Communicates when a property on an environment has changed. In general, properties are metadata (names) that is associated with an environment. Includes changes to:<ul><li>Display name</li><li>Domain name</li><li>Security group ID</li><li>Admin mode</li><li>Background operations state</li></ul> |
 
 ## View activities in Microsoft Purview
 
@@ -78,7 +78,7 @@ Narrow down search constructs that are specific to individual events.
 
 As you search, individual activities are shown. A common schema is enforced to enable search constructs across activities. The value in the **PropertyCollection** field is specific to each activity type.
 
-For more information about the Microsoft Purview audit log, data retention policies and capabilities, go to [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+For more information about the Microsoft Purview audit log, data retention policies, and capabilities, see [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 ### See also
 
