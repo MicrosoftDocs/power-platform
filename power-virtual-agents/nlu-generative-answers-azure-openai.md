@@ -18,13 +18,15 @@ searchScope:
 
 By connecting Power Virtual Agents with Azure OpenAI on your data, your bots can leverage resources from Azure through the Generative answers node. [Azure OpenAI on your data](/azure/ai-services/openai/concepts/use-your-data) works with the powerful language models in OpenAI and Azure Cognitive Search to index your data and provide responses while complying with your organizational policies. 
 
-To get started, connect your data source using [Azure OpenAI Studio](https://openai.studio-ppe.azure.com/), and start asking questions and chatting on your data.
+## Prerequisites
 
-:::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text="Screenshot showing the Azuree OpenAI Studio.":::
+- Connect your data source using [Azure OpenAI Studio](https://openai.studio-ppe.azure.com/).
 
-To connect a Power Virtual Agents bot to your data, select **Deploy**. The bot is created and automatically connected to your Azure resource in your default environment.
+  :::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text="Screenshot showing the Azuree OpenAI Studio.":::
 
-:::image type="content" source="media/nlu-gpt/aoai-default-instance.png" alt-text="Screenshot showing deployment of the bot into the default environment.":::
+- Connect a Power Virtual Agents bot to your data by selecting **Deploy to** and then **A new Power Virtual Agents bot**. The bot is created and automatically connected to your Azure resource in your default environment.
+
+  :::image type="content" source="media/nlu-gpt/aoai-default-instance.png" alt-text="Screenshot showing deployment of the bot into the default environment.":::
 
 
 > [!IMPORTANT]
