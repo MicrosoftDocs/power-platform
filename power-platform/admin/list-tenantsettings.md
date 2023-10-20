@@ -114,10 +114,10 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.environments.preferredEnvironmentLocation | String | Explicitly set the default location (Geo) for environments that are created without a location (Geo) specified. This includes Teams environments.|
 |powerPlatform.environments.disablePreferredDataLocationForTeamsEnvironment | Boolean | Ignore the Teams group preferred data location when provisioning a Teams environment. Default is false.|
 |powerPlatform.governance.disableAdminDigest | Boolean | Disables the weekly admin digest email for Managed Environments. Default is false. |
-|powerPlatform.governance.disableDeveloperEnvironmentCreationByNonAdminusers | Boolean | NEEDS DESCRIPTION.|
+|powerPlatform.governance.disableDeveloperEnvironmentCreationByNonAdminusers | Boolean | Restrict all developer environments to be created by Tenant Admins, Power Platform Admins, or Dynamics365 Service Admins.  Default is false.|
 |powerPlatform.governance.enableDefaultEnvironmentRouting | Boolean | Enables the Default Environment routing feature that  will create personal developer environments for new makers. Default is false. |
-|powerPlatform.governance.policy.enableDesktopFlowDataPolicyManagement | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.governance.policy.enableAzureCommercialConnectionsFromUsGov | Boolean | NEEDS DESCRIPTION.|
+|powerPlatform.governance.policy.enableDesktopFlowDataPolicyManagement | Boolean | When this setting is true, admins can view and manage desktop flow action groups in DLP policies in the Power Platform Admin Center.  Default is false.|
+|powerPlatform.governance.policy.enableAzureCommercialConnectionsFromUsGov | Boolean | This setting is not currently used by the Platform but may be used in the future.|
 |powerPlatform.licensing.disableUseOfUnassignedAIBuilderCredits| Boolean | Ability to use unallocated AI Builder credits in environments without allocated credits. Default is true. |
 |powerPlatform.licensing.disableBillingPolicyCreationByNonAdminUsers | Boolean | This is a legacy setting that is no longer used by the platform.  Default is false.|
 |powerPlatform.licensing.enableTenantCapacityReportForEnvironmentAdmins | Boolean | Ability to allow admins (tenant/power platform/dynamics 365) to grant permissions to environment administrator to view the capacity summary tab. Default is False.|
