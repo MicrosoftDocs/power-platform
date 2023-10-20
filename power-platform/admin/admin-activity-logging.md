@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies and integration-related settings. Hence, it becomes important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
+Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
 
 In this article, you learn about activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces using Microsoft Purview compliance portal. The activities fall within three categories:
 
@@ -28,11 +28,11 @@ In this article, you learn about activities that are performed on Power Platform
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Administrative activities for Power Platform environments are enabled by default on all tenants. You can't disable activity collection.
-> - At least one user with an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview.
+> - At least one user must have an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview.
 
-The audit activities include actions by Global Administrators, Power Platform Administrators, Dynamics 365 Administrators, members of the System Administrator role (for Power Platform environments with Dataverse), Environment Creator/Owner (for Power Platform environments without Dataverse) and impersonated users that map to any of these roles.
+The audit activities include actions made by global administrators, Power Platform administrators, Dynamics 365 administrators, members of the System Administrator role (for Power Platform environments with Dataverse), the environment creator or owner (for Power Platform environments without Dataverse), and impersonated users that map to any of these roles.
 
-Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). A schema that defines the payload of metadata that is unique for each activity.
+Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). The schema defines the payload of metadata that is unique for each activity.
 
 ## Activity category: Environment Lifecycle Operations
 
@@ -40,19 +40,19 @@ Each activity event contains a payload of metadata that is specific to the indiv
 
 | **Event**                  | **Description**                                                                                                                        |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Provisioned environment    | Environment created.                                                                                                                   |
-| Deleted environment        | Environment deleted.                                                                                                                   |
-| Recovered environment      | Recovery of a deleted environment that was deleted within seven days.                                                                      |
-| Hard-deleted environment   | Environment that was hard deleted.                                                                                                     |
-| Moved environment          | Environment moved to a different Tenant.                                                                                               |
-| Copied environment         | Copied environment including the specific attributes that were copied (application data, users, and customizations, and schemas). |
-| Backed up environment      | Environment that has been backed up.                                                                                                   |
-| Restored environment       | Environment that has been restored from backup.                                                                                        |
-| Converted environment type | Environment that was converted to a different environment type (Production or Sandbox).                                          |
+| Provisioned environment    | The environment was created.                                                                                                                   |
+| Deleted environment        | The environment was deleted.                                                                                                                   |
+| Recovered environment      | An environment that was deleted within seven days has been recovered.                                                                     |
+| Hard-deleted environment   | The environment was hard deleted.                                                                                                     |
+| Moved environment          | The environment was moved to a different tenant.                                                                                               |
+| Copied environment         | The environment, including specific attributes such as application data, users, customizations, and schemas, were copied. |
+| Backed up environment      | The environment that has been backed up.                                                                                                   |
+| Restored environment       | The environment has been restored from a back up.                                                                                        |
+| Converted environment type | The environment was converted to a different environment type, such as production or sandbox.                                          |
 | Reset environment          | A sandbox environment has been reset.                                                                                                  |
 | Upgraded environment       | A component of an environment has been upgraded to a new version.                                                                      |
-| CMK-Renewed environment    | Customer Managed Key (CMK) has been renewed on an Environment.                                                                         |
-| CMK-Reverted environment   | Removed environment from enterprise policy to return encryption to Microsoft managed key.                                              |
+| CMK-Renewed environment    | The customer-managed key (CMK) has been renewed on the environment.                                                                         |
+| CMK-Reverted environment   | Environment was removed from enterprise policy and encryption was retured to Microsoft-managed key.                                              |
 
 ## Activity category: Environment Property and Setting Change Activities
 
