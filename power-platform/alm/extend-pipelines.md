@@ -20,7 +20,7 @@ Pipelines can be custom tailored to serve the unique needs of an organization. F
 ## Gated extensions available
 Pipelines deployments progress through multiple pre-defined steps until deployment completion. Gated extensions insert custom steps into the progression where custom business logic can be executed. It's like your own personal train where you're in control of where it stops and whether it continues or not.
 
-:::image type="content" source="media/extensibility-flow-diagram.png" alt-text="Extensibility diagram":::
+:::image type="content" source="media/pipelines-extensibility-train.png" alt-text="Extensibility diagram":::
 
 When enabled, each extension inserts a custom step at a different point within a deployment’s progression. Extensions can be used alone or together. 
 
@@ -51,6 +51,8 @@ The tables below indicate triggers and actions required for each extension. Outp
 
 > [!NOTE]
 > OnDeploymentRequested triggers for all deployments.
+
+:::image type="content" source="media/extensibility-flow-diagram.png" alt-text="Extensibility diagram":::
 
 ## Triggers
 
@@ -113,11 +115,11 @@ These parameters are exposed across the actions for the corresponding gated exte
 - PreExportProperties and ApprovalProperties:
   - Admins can store information or custom parameters here without it surfacing to makers - for example a link to the flow run or approval, or other pertinent data. The intent is to provide flexibility and simplify custom reporting for deployment related data.
 
-### Samples
+## Samples
 
 Download and then import this unmanaged solution into your pipelines host environment. The download contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https://aka.ms/DownloadPipelinesExtensibilitySamples)
 
-## Next step
+## Next steps
 
 [Run pipelines in Power Platform](run-pipeline.md)
 
