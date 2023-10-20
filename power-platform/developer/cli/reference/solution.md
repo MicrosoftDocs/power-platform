@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 9/18/2023
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -42,7 +42,7 @@ Commands for working with Dataverse solution projects
 |[pac solution publish](#pac-solution-publish)|Publishes all customizations|
 |[pac solution sync](#pac-solution-sync)|Sync the current Dataverse solution project to the current state of the solution in your organization.|
 |[pac solution unpack](#pac-solution-unpack)|Extract solution components from solution.zip onto local filesystem (SolutionPackager).|
-|[pac solution upgrade](#pac-solution-upgrade)|Option to stage the Dataverse solution for upgrade|
+|[pac solution upgrade](#pac-solution-upgrade)|Apply solution upgrade|
 |[pac solution version](#pac-solution-version)|Update build or revision version for the solution.|
 
 
@@ -431,6 +431,12 @@ Skip solution import if same or higher version is present in current environment
 
 This parameter requires no value. It's a switch.
 
+#### `--stage-and-upgrade` `-up`
+
+Import and upgrade the solution.
+
+This parameter requires no value. It's a switch.
+
 [!INCLUDE [solution-import-remarks](includes/solution-import-remarks.md)]
 
 ## pac solution init
@@ -767,7 +773,7 @@ This parameter requires no value. It's a switch.
 
 ## pac solution upgrade
 
-Option to stage the Dataverse solution for upgrade
+Apply solution upgrade
 
 [!INCLUDE [solution-upgrade-intro](includes/solution-upgrade-intro.md)]
 
