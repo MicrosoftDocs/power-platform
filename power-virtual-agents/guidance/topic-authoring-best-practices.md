@@ -18,20 +18,17 @@ Power Virtual Agents offers much flexibility when it comes to topic management. 
 > [!div class="checklist"]
 >
 > - **Topics can trigger based on the user utterance** and the natural language understanding (NLU) model.  
-> These topics can almost be seen as your **entry points topics**.  
-> If you have trigger phrases that overlap multiple topics, it's good to have a catch-all topic (or _disambiguation topic_) and then redirect to other topics through slot filling and clarifying questions.  
-> Thanks to entity extraction, clarifying questions can be skipped and the conversation will directly flow to the appropriate topic, without further input from the user.  
+>   These topics can almost be seen as your **entry points topics**.  
+>   If you have trigger phrases that overlap multiple topics, it's good to have a catch-all topic (or _disambiguation topic_) and then redirect to other topics through slot filling and clarifying questions.  
+>   Thanks to entity extraction, clarifying questions can be skipped and the conversation will directly flow to the appropriate topic, without further input from the user.  
 >  
 > - **Topics can trigger when called from a redirect action**.  
->
 >   These topics can contain conversation and logic nodes, can be called by multiple topics, and can have input and output variables. They're ideally **reusable, bite-size, topics**.  
 >  
 > - **A topic can also be both**.  
->
 >   For example, topics triggered through intent recognition or by an explicit redirect.
 >    
 >  - **Topics can be triggered by other events**.  
->
 >    For example, custom events, inactivity, and so on.  
 
 See [the full list of topic triggers](/power-virtual-agents/authoring-triggers) for more information.
