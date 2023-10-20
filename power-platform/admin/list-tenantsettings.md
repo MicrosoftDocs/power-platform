@@ -109,21 +109,21 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.powerApps.disableCreateFromFigma | Boolean | NEEDS DESCRIPTION.|
 |powerPlatform.powerApps.disableConnectionSharingWithEveryone | Boolean | NEEDS DESCRIPTION.|
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams.  Default is 10000 but can be increased or decreased as required.|
-|powerPlatform.powerAutomate.disableCopilot | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.powerAutomate.disableCopilotWithBing | Boolean | NEEDS DESCRIPTION.|
+|powerPlatform.powerAutomate.disableCopilot | Boolean | •	Disables Cloud flows Copilot in Power Automate. Does not control ability to add AI-related connectors/actions in flow designer (ex. Skills connector or AiBuilder Create text with GPT action). Default value is false.|
+|powerPlatform.powerAutomate.disableCopilotWithBing | Boolean | Disables the Copilot-enhanced help feature within Power Automate to enhance answers on product documentation through Bing Search. Default value is false.|
 |powerPlatform.environments.preferredEnvironmentLocation | String | Explicitly set the default location (Geo) for environments that are created without a location (Geo) specified. This includes Teams environments.|
 |powerPlatform.environments.disablePreferredDataLocationForTeamsEnvironment | Boolean | Ignore the Teams group preferred data location when provisioning a Teams environment. Default is false.|
-|powerPlatform.governance.disableAdminDigest | Boolean | NEEDS DESCRIPTION.|
+|powerPlatform.governance.disableAdminDigest | Boolean | Disables the weekly admin digest email for Managed Environments. Default is false. |
 |powerPlatform.governance.disableDeveloperEnvironmentCreationByNonAdminusers | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.governance.enableDefaultEnvironmentRouting | Boolean | NEEDS DESCRIPTION.|
+|powerPlatform.governance.enableDefaultEnvironmentRouting | Boolean | Enables the Default Environment routing feature that  will create personal developer environments for new makers. Default is false. |
 |powerPlatform.governance.policy.enableDesktopFlowDataPolicyManagement | Boolean | NEEDS DESCRIPTION.|
 |powerPlatform.governance.policy.enableAzureCommercialConnectionsFromUsGov | Boolean | NEEDS DESCRIPTION.|
 |powerPlatform.licensing.disableUseOfUnassignedAIBuilderCredits| Boolean | Ability to use unallocated AI Builder credits in environments without allocated credits. Default is true. |
-|powerPlatform.licensing.disableBillingPolicyCreationByNonAdminUsers | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.licensing.enableTenantCapacityReportForEnvironmentAdmins | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.licensing.storageCapacityConsumptionWarningThreshold | INT? | NEEDS DESCRIPTION.|
-|powerPlatform.licensing.EnableTenantLicensingReportForEnvironmentAdmins | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.licensing.ApplyAutoClaimToOnlyManagedEnvironments | Boolean | NEEDS DESCRIPTION.|
+|powerPlatform.licensing.disableBillingPolicyCreationByNonAdminUsers | Boolean | This is a legacy setting that is no longer used by the platform.  Default is false.|
+|powerPlatform.licensing.enableTenantCapacityReportForEnvironmentAdmins | Boolean | Ability to allow admins (tenant/power platform/dynamics 365) to grant permissions to environment administrator to view the capacity summary tab. Default is False.|
+|powerPlatform.licensing.storageCapacityConsumptionWarningThreshold | INT | This setting is not currently used by the Platform but may be used in the future.|
+|powerPlatform.licensing.EnableTenantLicensingReportForEnvironmentAdmins | Boolean | Ability to allow admins (tenant/power platform/dynamics 365) to grant permissions to environment administrator to view the tenant scoped license reports (Power Apps/Finance and Operations etc.). Default is False.|
+|powerPlatform.licensing.ApplyAutoClaimToOnlyManagedEnvironments | Boolean | Allows the admins to choose if the license auto-claim policies are applied on managed environments or all environments (including standard ones). Default is True.|
 |powerPlatform.champions.disableChampionsInvitationReachout | Boolean | NEEDS DESCRIPTION.|
 |powerPlatform.champions.disableSkillsMatchInvitationReachout | Boolean | NEEDS DESCRIPTION.|
 |powerPlatform.intelligence.disableCopilot | Boolean | NEEDS DESCRIPTION.|
