@@ -13,12 +13,7 @@ ms.search.region: USA
 searchScope:
   - "Power Virtual Agents"
 ---
-> [!IMPORTANT]
->  
-> Your bot must be created in the US region. 
->  
-> Other regions, and languages other than English, aren't supported.
-> 
+
 # Use a connection to Azure OpenAI on your data for generative answers
 
 By connecting Power Virtual Agents with Azure OpenAI on your data, your bots can leverage resources from Azure through the Generative answers node. [Azure OpenAI on your data](/azure/ai-services/openai/concepts/use-your-data) works with the powerful language models in OpenAI and Azure Cognitive Search to index your data and provide responses while complying with your organizational policies. 
@@ -27,9 +22,19 @@ To get started, connect your data source using [Azure OpenAI Studio](https://ope
 
 :::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text="Screenshot showing the Azuree OpenAI Studio.":::
 
-To connect a Power Virtual Agent bot to your data, select **Deploy**. The bot is created and automatically connected to your Azure resource.
+To connect a Power Virtual Agent bot to your data, select **Deploy**. The bot is created and automatically connected to your Azure resource in your Default environment.
 
-:::image type="content" source="media/nlu-gpt/generative-answers-azure-deploy.png" alt-text="Screenshot showing the deploy option from Azure OpenAI Studio.":::
+
+> 
+
+
+![AOAI_deploy to PVA](https://github.com/MicrosoftDocs/power-platform-pr/assets/18705275/0275cbcc-09ad-4202-9241-712ad68b6797)
+
+> [!IMPORTANT]
+>  
+> Your bot must be created in the US region. 
+>  
+> Other regions, and languages other than English, aren't supported.
 
 > [!NOTE]
 > A Conversational boosting system topic is automatically generated when the bot is created from Azure OpenAI Studio.
@@ -54,4 +59,8 @@ To use Azure OpenAI:
 The topic will now generate answers from the information sources defined by your Azure OpenAI connection.
 
 >[!CAUTION]
-> Information sources defined in the **Generative answers** node will override those you have specified at the bot level, which will then function as a fallback. 
+> Information sources defined in the **Generative answers** node will override those you have specified at the bot level, which will then function as a fallback.
+>
+
+
+
