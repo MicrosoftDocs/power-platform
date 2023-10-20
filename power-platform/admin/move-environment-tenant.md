@@ -31,7 +31,7 @@ There are no user interface changes or version changes as part of this move. You
 
 > [!IMPORTANT]
 > - If moving individual environments from one tenant to another requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center by support team. More information: [Geo to geo migrations](geo-to-geo-migrations.md). 
-> - You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, or others.
+> - You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint or others.
 > - Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
 > - Existing source database backups won't be migrated to destination tenant.
 > - A Dataverse organization linked to a finance and operations organization cannot be migrated to a different tenant.

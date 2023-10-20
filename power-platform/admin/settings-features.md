@@ -61,6 +61,9 @@ Make sure you have the System Administrator or System Customizer security role o
 ### Set the telephony provider
 Choose which provider to enable outbound calls from within customer engagement apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.
 
+> [!Note]
+> This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)
+
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Use Skype|  More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)| Enabled |
@@ -103,11 +106,24 @@ Choose which provider to enable outbound calls from within customer engagement a
 |---------|-------------|---------------|
 | Allow records to be merged asynchronously | If **On**, records merged through the Unified Client interface will be merged asynchronously in the background. |Off |
 
-## Create new canvas apps and cloud flows in a Dataverse solutions (preview)
+## Create new canvas apps and cloud flows in a Dataverse solution
+
+> [!IMPORTANT]
+> This is a preview feature.
+
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Canvas apps | More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) | Off |
 | Cloud flows | More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) | Off |
+
+## Preferred solution
+
+> [!IMPORTANT]
+> This is a preview feature.
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Preferred solution | Lets makers set which unmanaged solution will maintain their created and edited components that occur anywhere in Power Apps. If not set, all components for all makers not already in the context of an unmanaged solution are maintained in the Common Data Services Default Solution. More information: [Set the preferred solution](/power-apps/maker/data-platform/preferred-solution) | Off |
 
 ## Finance and Operations in Dataverse
 | Setting | Description | Default value |

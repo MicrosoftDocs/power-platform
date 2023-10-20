@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 9/18/2023
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,7 +26,7 @@ Work with your Dataverse organization.
 
 |Command|Description|
 |---------|---------|
-|[pac org fetch](#pac-org-fetch)|(Preview) Performs FetchXML query against Dataverse|
+|[pac org fetch](#pac-org-fetch)|Performs FetchXML query against Dataverse|
 |[pac org list](#pac-org-list)|Lists all of the Dataverse organizations the user has access to|
 |[pac org list-settings](#pac-org-list-settings)|List environment settings|
 |[pac org select](#pac-org-select)|Select default organization for current authentication profile.|
@@ -36,7 +36,7 @@ Work with your Dataverse organization.
 
 ## pac org fetch
 
-(Preview) Performs FetchXML query against Dataverse
+Performs FetchXML query against Dataverse
 
 [!INCLUDE [org-fetch-intro](includes/org-fetch-intro.md)]
 
