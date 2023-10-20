@@ -51,7 +51,7 @@ Other elements include:
 
 **[Assert](reference/function-assert.md )** – Evaluates to true or false in a test.
 
-**[As](reference/operators.md #thisitem-thisrecord-and-as-operators)** – Names the current record in gallery, form, and record scope functions such as **ForAll**, **With**, and **Sum**.
+**[As](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Names the current record in gallery, form, and record scope functions such as **ForAll**, **With**, and **Sum**.
 
 **[AsType](reference/function-astype-istype.md )** – Treats a record reference as a specific table type.
 
