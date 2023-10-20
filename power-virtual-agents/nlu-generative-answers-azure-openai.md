@@ -22,13 +22,10 @@ To get started, connect your data source using [Azure OpenAI Studio](https://ope
 
 :::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text="Screenshot showing the Azuree OpenAI Studio.":::
 
-To connect a Power Virtual Agent bot to your data, select **Deploy**. The bot is created and automatically connected to your Azure resource in your Default environment.
+To connect a Power Virtual Agents bot to your data, select **Deploy**. The bot is created and automatically connected to your Azure resource in your default environment.
 
+:::image type="content" source="media/nlu-gpt/aoai-default-instance.png" alt-text="Screenshot showing deployment of the bot into the default environment.":::
 
-> 
-
-
-![AOAI_deploy to PVA](https://github.com/MicrosoftDocs/power-platform-pr/assets/18705275/0275cbcc-09ad-4202-9241-712ad68b6797)
 
 > [!IMPORTANT]
 >  
