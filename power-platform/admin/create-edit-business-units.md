@@ -5,11 +5,13 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/18/2022
+ms.date: 10/20/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- paulliew 
 ---
 # Create or edit business units 
 
@@ -21,7 +23,7 @@ A business unit is a logical grouping of related business activities.
   
  Keep the following in mind when creating business units:  
   
-- The organization (also known as the root business unit) is the top level of a business unit hierarchy. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), automatically create the organization when you install or provision customer engagement apps. You can’t delete the organization name. The organization name is derived from the domain name when the environment was provisioned. You cannot change the organization name using the Business Unit form but it can be changed using the [Web API](/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9).
+- The organization (also known as the root business unit) is the top level of a business unit hierarchy. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), automatically create the organization when you install or provision customer engagement apps. You can’t delete the organization name. The organization name is derived from the domain name when the environment was provisioned. You cannot change the organization name using the Business Unit form but it can be changed using the [Web API](/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9&preserve-view=true).
   
 - Each business unit can have just one parent business unit.  
   
@@ -43,9 +45,9 @@ A business unit is a logical grouping of related business activities.
 
 - A team can consist of users from one or many business units. Consider using this type of team if you have a situation where users from different business units need to work together on a shared set of records.  
 
-- (Preview) To allow your users to access data in a business unit, you can assign the user a security role from that business unit.  
+- To allow your users to access data in a business unit, you can assign the user a security role from that business unit. The users can remain in the root business unit.
 
-- (Preview) A user can be assigned to security roles from any business unit regardless of what the business unit the user belongs to. 
+- A user can be assigned to security roles from any business unit regardless of what the business unit the user belongs to.
 
 ## Create a new business unit  
   
