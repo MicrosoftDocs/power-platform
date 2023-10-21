@@ -24,6 +24,8 @@
           href: working-with-json.md
         - name: Formula reference
           items:
+          - name: Overview
+            href: formula-reference-overview.md
           - name: Power Apps formula reference
             href: formula-reference.md
           - name: Dataverse formula reference
