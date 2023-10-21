@@ -31,7 +31,7 @@ The Power Fx formulas are available for the following Power Platform components:
 
 The Power FX formula refence information is organized in the following way:
 
-- Each Power Platform component is listed as a filter article in the table of contents that you can use to find a list of all the available formulas for the component. For example, [Power Apps formula reference](formula-reference.m) and [Dataverse formula reference](formula-reference-dataverse.md).
+- Each Power Platform component is listed as a filter article in the table of contents that you can use to find a list of all the available formulas for the component. For example, [Power Apps formula reference](formula-reference.md) and [Dataverse formula reference](formula-reference-dataverse.md).
 - The sub areas are listed under the Applies to area at the beginning of each formula reference article. For example, the following denotes that the formula reference is available only for canvas apps, model-driven apps, and Dataverse formula columns:
 
 :::image type="content" source="media/overview/overview.png" alt-text="Example of Applies to":::
