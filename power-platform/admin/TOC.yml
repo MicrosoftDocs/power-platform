@@ -182,7 +182,7 @@
                   href: managed-environment-usage-insights.md
                 - name: Data policies
                   href: managed-environment-data-policies.md
-                - name: Solution checker enforcement (preview)
+                - name: Solution checker enforcement
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
