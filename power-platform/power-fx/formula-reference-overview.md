@@ -18,7 +18,7 @@ contributors:
   - tapanm-msft
 ---
 
-# Power Fx formula reference
+# Power Fx formula reference overview
 
 This section provides reference information about Power Fx formulas that you can use within Power Platform.
 
