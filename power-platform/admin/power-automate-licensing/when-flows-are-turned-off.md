@@ -54,3 +54,27 @@ Dynamics 365 licensed user flows are automatically considered as being in contex
 
 > [!NOTE]
 > Enforcements are deployed a geo region at a time. The dates in the preceding table are for the earliest region. If you don't see notifications in the Power Platform admin center or Power Automate portal even though the date listed in the table passed, it means the enforcement isn't deployed in your region yet.
+
+## Identify flows that need Premium licenses to avoid interruptions due to enforcement
+
+Admins need to run the PowerShell per environment. If no results are returned, there are no flows that need your attention. When there are any licensing changes in your environment, or new users or flows added to the environment, run the PowerShell command to identify if any flows need your attention. When new enforcements are launched, admins and makers get notifications in the Power Platform admin center, Power Automate portal, and emails. If you receive a notification, update the version and rerun the PowerShell to identify any new flows need your attention.  
+
+If you previously installed PowerShell, check for the installed version using the following command:
+
+`Get-InstalledModule -Name  Microsoft.PowerApps.Administration.PowerShell`
+
+The latest version deployed in August 2023 is 2.0.174. If you're on a previous version, use the following command to update the PowerShell module.
+
+```powershell
+Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force
+Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Force 
+``````
+
+> [!NOTE]
+> In August 2023, we made multiple enhancements and performance improvements to the Powershell module. You shoud update to the latest version.
+
+Command: `Get-AdminFlowAtRiskOfSuspension`
+
+Command example with export:
+
+`Get-AdminFlowAtRiskOfSuspension -EnvironmentName  <ENV_NAME> -ApiVersion '2016-11-01' | Export-Csv -Path suspensionList.c
