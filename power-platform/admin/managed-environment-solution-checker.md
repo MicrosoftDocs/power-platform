@@ -67,7 +67,7 @@ You can select solution checker rules to exclude from enforcement. For example, 
 
 The list contains rule names and descriptions grouped by category and sorted by severity. As a reminder, only critical severity rules will block a solution from being imported.
 
-:::image type="content" source="media/managed-environment-solution-checker-rule-exclusions-list.png" alt-text="Screenshot of the solution checker enforcement rule exclusions.":::
+:::image type="content" source="media/managed-environment-solution-checker-rule-exclusions-list.png" alt-text="Screenshot of the solution checker enforcement rule exclusion options.":::
 
 ## Use PowerShell to enable solution checker enforcement
 
