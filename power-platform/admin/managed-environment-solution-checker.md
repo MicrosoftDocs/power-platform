@@ -47,7 +47,7 @@ The email is sent to all users with the roles of [Power Platform administrator](
 
 ### Suppress validation emails
 
-By default, emails are sent when a solution fails validation for medium and above severities. When the checkbox is selected, emails aren't sent in warn mode. Emails aren't sent in block mode, as well, except for critical violations which block solution import.
+By default, emails are sent when a solution contains medium and above severities. When the checkbox is selected, emails aren't sent in warn mode. Emails aren't sent in block mode, as well, except for critical violations which block solution import.
 
 :::image type="content" source="media/managed-environment-solution-checker-checkbox.png" alt-text="Screenshot of the solution checker email checkbox.":::
 
