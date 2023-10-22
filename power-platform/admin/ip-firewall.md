@@ -51,10 +51,10 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 1. Select other settings, as appropriate:
 
    - **Service tags to be allowed by IP firewall**: From the list, select service tags that can bypass IP firewall restrictions.
-   - **Allow access for Microsoft trusted services**: This setting allows service tags `PowerPlatformInfra`, `GenevaSynthetics`, and `GenevaActions` and internal first-party applications to access the Power Platform environment with Dataverse. Enabled by default.
-   - **Allow access for all application users**: This setting allows all application users third-party and first-party access to Dataverse APIs. Enabled by default.
+   - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services to access the Power Platform environment with Dataverse. This access is used for activities such as monitoring and troubleshooting issues by bypassing the [support user](https://learn.microsoft.com/en-us/power-platform/admin/support-environment). Enabled by default.
+   - **Allow access for all application users**: This setting allows [all application users](https://learn.microsoft.com/en-us/power-platform/admin/system-application-users) third-party and first-party access to Dataverse APIs. Enabled by default.
    - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
-   - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas in CIDR format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). The reverse proxy setting applies to both IP-based cookie binding and the IP firewall.
+   - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both IP-based cookie binding and the IP firewall.
 
 1. Select **Save**.
 
@@ -93,7 +93,7 @@ The IP firewall isn't enabled by default. The Power Platform administrator needs
 
 ### What is audit-only mode?
 
-In audit-only mode, the IP firewall identifies the IP addresses that are making calls to the environment and allows them all, whether they're in an allowed range or not. It's helpful when you're configuring restrictions on a Power Platform environment. We recommend that you enable audit-only mode for at least a week and disable it only after careful review of the audit logs.
+In audit-only mode, the IP firewall identifies the IP addresses that are making calls to the environment and allows them all, whether they're in an allowed range or not. It's helpful when you're configuring restrictions on a Power Platform environment. We recommend that you enable audit-only mode for at least a week and disable it only after careful review of the [audit logs](https://learn.microsoft.com/en-us/power-platform/admin/ip-firewall#how-do-i-download-the-audit-log-for-audit-only-mode:~:text=How%20do%20I,Power%20Platform%20environment.).
 
 ### Is this feature available in all the environments?
 
