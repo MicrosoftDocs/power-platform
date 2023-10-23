@@ -2,7 +2,7 @@
 title: "Frequently asked questions (preview)"
 description: FAQs for the Power Platform unified developer experience.
 author: pvillads
-ms.date: 08/22/2023
+ms.date: 10/23/2023
 ms.topic: faq
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -32,9 +32,8 @@ When you get the following error, ensure that you have licenses for the template
 Error message:
 
 "You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app."
-
-### How can I Provision / Update my unified environment to specific Finance and Operations version:
-We currently don't have the capability to provision or update the environment to specific runtime updates/version. Support for this is planned but until this support is enabled, we suggest using Environment Copy feature to get your Unified Development environments on the same version as that of Sandbox/Prod environments. [Copy Lifecycle Services Managed Environments to Unified Environments](../../admin/unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md)
+### How can I provision or update my unified environment to a specific finance and operations version
+We currently don't have the capability to provision or update the environment to a specific runtime update or version. Support for this is planned, but until this support is enabled, we suggest using the environment copy feature to get your unified development environment on the same version as that of sandbox or production environments. [Copy a Lifecycle Services environment to a unified environments](../../admin/unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md)
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
