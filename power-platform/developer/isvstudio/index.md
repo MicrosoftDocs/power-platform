@@ -56,7 +56,7 @@ When you have admin access, you can grant and remove read access for other users
 
 ### Admin access
 
-To access ISV Studio as an admin user, your Entra ID account must be configured as a Publisher Owner in Partner Center. You can view the list of your Publisher Owners from the [Account Settings in Partner Center](/partner-center/partner-center-account-setup). With admin access, you're able to give more users read-only access to ISV Studio from the Studio directly.  
+To access ISV Studio as an admin user, your Microsoft Entra ID account must be configured as a Publisher Owner in Partner Center. You can view the list of your Publisher Owners from the [Account Settings in Partner Center](/partner-center/partner-center-account-setup). With admin access, you're able to give more users read-only access to ISV Studio from the Studio directly.  
 
 ### Grant read access
 
