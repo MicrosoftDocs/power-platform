@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# IP firewall in Power Platform environments (preview)
+# IP firewall in Power Platform environments
 
 
 The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyses the IP address of each request in real time. For example, suppose the IP firewall is turned on in your production Dataverse environment and allowed IP addresses are in the ranges associated with your office location. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
@@ -51,7 +51,7 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 1. Select other settings, as appropriate:
 
    - **Service tags to be allowed by IP firewall**: From the list, select service tags that can bypass IP firewall restrictions.
-   - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services to access the Power Platform environment with Dataverse. This access is used for activities such as monitoring and troubleshooting issues by bypassing the [support user](https://learn.microsoft.com/en-us/power-platform/admin/support-environment). Enabled by default.
+   - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services such as monitoring and [support user](https://learn.microsoft.com/en-us/power-platform/admin/support-environment) to bypass the IP firewall restrictions to access the Power Platform environment with Dataverse. Enabled by default.
    - **Allow access for all application users**: This setting allows [all application users](https://learn.microsoft.com/en-us/power-platform/admin/system-application-users) third-party and first-party access to Dataverse APIs. Enabled by default.
    - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
    - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both IP-based cookie binding and the IP firewall.
