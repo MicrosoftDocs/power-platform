@@ -78,6 +78,11 @@ To test a multilingual bot:
 
 Alternatively, you can set your browser language to a secondary language supported by your bot, and open the [Demo bot](publication-connect-bot-to-web-channels.md?tabs=preview#customize-the-demo-website). The demo website opens in the secondary language, and the bot chats using the secondary language strings.
 
+## Multilingual bot behavior for languages that are not configured
+If a user with a browser configured for a language that is not configured in the bot through the steps above, the bot will always fallback to its primary language (the language the bot was created originally). The bot's primary language cannot be changed after bot creation.
+
+## Multilingual bot behavior for missing translations
+If the author makes a change to the bot in the primary language (the language the bot was created originally) and does not subsequently upload the translations to those changes as described in the steps above, the bot will show those untranslated changes in the bot's primary language. This leads to a confusing dual-language experience. Always make sure the translations are up-to-date after making changed to the bot in the primary language.
 
 ## Related topics
 - [Supported Languages](authoring-language-support.md)
