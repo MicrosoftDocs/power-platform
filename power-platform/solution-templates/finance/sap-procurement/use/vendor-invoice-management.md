@@ -11,8 +11,8 @@ contributors:
 - ryanb58
 - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: concept-article
-ms.date: 09/10/2023
+ms.topic: conceptual
+ms.date: 08/14/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
