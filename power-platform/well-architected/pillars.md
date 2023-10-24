@@ -38,7 +38,7 @@ Assess your workload using the core pillars to **identify and prioritize opportu
 > 
 > Start your assessment with [**Azure Well-Architected Review**](/assessments/?id=azure-architecture-review&mode=pre-assessment).
 
-## Integration with Azure recommendation services
+## Integration with Power Platform guidance
 
 - [**Azure Advisor**](/azure/advisor/) uses the **core pillars** as a basis for analyzing your resource configuration and usage telemetry and provides appropriate recommendations. 
 
