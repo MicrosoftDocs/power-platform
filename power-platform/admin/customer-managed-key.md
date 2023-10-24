@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 08/24/2023
+ms.date: 10/20/2023
 ms.custom: template-how-to
 
 ---
@@ -15,7 +15,7 @@ Customers have data privacy and compliance requirements to secure their data by 
 
 All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
-To learn more about customer managed key in Power Platform, watch the following video.<p/>
+To learn more about customer managed key in Power Platform, watch the customer-managed key video.<p/>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW14O4G]
 
 These encryption key operations are available with customer-managed key (CMK):
@@ -23,7 +23,6 @@ These encryption key operations are available with customer-managed key (CMK):
 - Create a RSA (RSA-HSM) key from your Azure Key vault.
 - Create a Power Platform enterprise policy for your key.
 - Grant the Power Platform enterprise policy permission to access your key vault.
-- Grant the Power Platform service admin to read the enterprise policy.
 - Grant the Power Platform service admin to read the enterprise policy.
 - Apply encryption key to your environment.
 - Revert/remove environment’s CMK encryption to Microsoft-managed key.
@@ -49,6 +48,8 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Fraud Protection (Finance and operations)
 
 <sup>1</sup> When you apply the customer managed key to an environment that has existing Power Automate flows, the flows data continues to be encrypted with Microsoft-managed key. More information: [Power Automate customer manged key](/power-automate/customer-managed-keys).
+
+[Power Apps](/power-apps/powerapps-overview) and [Power Virtual Agent](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) store its data in their own storage and in [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro). When you apply the customer-managed key to these environments, only the data stores in **Microsoft Dataverse** are encrypted with your key. The non-Microsoft Dataverse data, including Power Apps source code and canvas apps icons, continue to be encrypted with the Microsoft-managed key.
 
 > [!NOTE]
 >

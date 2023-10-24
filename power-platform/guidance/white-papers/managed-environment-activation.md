@@ -15,7 +15,10 @@ contributors:
 
 # Activating Managed Environments
 
-This article addresses the key features of Managed Environments and how organizations and administrators can be benefited activating these capabilities.
+This white paper addresses the key features of Managed Environments and how organizations and administrators can be benefited activating these capabilities.
+
+> [!NOTE]
+> You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
 
 ## Managed Environments overview
 

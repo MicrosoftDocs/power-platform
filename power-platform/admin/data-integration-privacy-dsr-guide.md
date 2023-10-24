@@ -15,17 +15,9 @@ search.audienceType:
 
 ## Introduction to DSR requests
 
-The European Union (EU) General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as data subjects) to manage the personal data that's been collected by an employer or other type of agency or organization (known as the data controller or just controller). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects the right to do the following, as it pertains to their personal data:
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-- Obtain copies
-- Request corrections
-- Restrict processing
-- Delete it
-- Receive it in electronic format so it can be moved to another controller
-
-A formal request by a data subject to a controller to take an action on their personal data is called a Data Subject Rights (DSR) request.
-
-This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Data Integration for Admins via the administrator portal in Dataverse . You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article provides examples of steps you can take to support privacy compliance when using Data Integration for Admins via the administrator portal in Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to Data Subject Rights (DSR) requests.
 
 ### Searching for and identifying personal data
 
@@ -35,15 +27,15 @@ Data Integration for Admins in Dataverse allows any user of the integrator appli
 
 The data stored for the user is shown in the portal. All projects are visible on the projects tab:
 
-![View projects under projects tab.](./media/data-integration-gdpr-dsr/projects-tab.png)
+![View projects under projects tab.](./media/data-integration-privacy-dsr/projects-tab.png)
 
 All connection sets are visible on the connection sets tab:
 
-![View connection sets under connection sets tab.](./media/data-integration-gdpr-dsr/connections-tab.png)
+![View connection sets under connection sets tab.](./media/data-integration-privacy-dsr/connections-tab.png)
 
 All Templates are visible on the Templates tab:
 
-![View templates under templates tab.](./media/data-integration-gdpr-dsr/templates-tab.png)
+![View templates under templates tab.](./media/data-integration-privacy-dsr/templates-tab.png)
 
 ## Securing and controlling access to personal information
 
@@ -55,15 +47,15 @@ In Data Integration for Admins in Dataverse user-authored data, projects, and co
 
 Users can delete projects by navigating to the projects tab and clicking on the ellipses next to the project, and then selecting the delete option:
 
-![Delete projects by clicking on the ellipsis.](./media/data-integration-gdpr-dsr/projects-del.png)
+![Delete projects by clicking on the ellipsis.](./media/data-integration-privacy-dsr/projects-del.png)
 
 Users can delete templates by navigating to the templates tab and clicking the ellipses next to the template, and then selecting the delete option:
 
-![Delete templates by clicking on the ellipsis.](./media/data-integration-gdpr-dsr/templates-del.png)
+![Delete templates by clicking on the ellipsis.](./media/data-integration-privacy-dsr/templates-del.png)
 
 Users can delete connection sets by navigating to the connection sets tab and clicking on the ellipses next to the connection set, and then selecting the delete option:
 
-![Delete connection sets by clicking on the ellipsis.](./media/data-integration-gdpr-dsr/connsets-del.png)
+![Delete connection sets by clicking on the ellipsis.](./media/data-integration-privacy-dsr/connsets-del.png)
 
 ## Exporting personal data
 
@@ -73,15 +65,15 @@ In Data Integration for Admins in Dataverse, user-authored data can be exported 
 
 To export projects or projects with execution history, users can navigate to the projects tab and click the ellipses next to the project, and then select the desired export option:
 
-![Export projects by clicking on the ellipsis.](./media/data-integration-gdpr-dsr/projects-exp.png)
+![Export projects by clicking on the ellipsis.](./media/data-integration-privacy-dsr/projects-exp.png)
 
 To export templates, users can navigate to the templates tab and click on the ellipses next to the template, and then select the export option:
 
-![Export templates by clicking on the ellipsis.](./media/data-integration-gdpr-dsr/templates-exp.png)
+![Export templates by clicking on the ellipsis.](./media/data-integration-privacy-dsr/templates-exp.png)
 
 To export connection sets, users can navigate to the connection set tab and click on the ellipses next to the connection set, and then select the export option:
 
-![Export connection sets by clicking on the ellipsis.](./media/data-integration-gdpr-dsr/connsets-exp.png)
+![Export connection sets by clicking on the ellipsis.](./media/data-integration-privacy-dsr/connsets-exp.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

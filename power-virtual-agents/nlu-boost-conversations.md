@@ -1,5 +1,5 @@
 ---
-title: Generative Answers
+title: Generative answers
 description: Provide answers and information for your bot users, even if you haven't created a topic for their issue.
 keywords: "PVA"
 ms.date: 7/30/2023
@@ -96,6 +96,7 @@ In addition to [URL considerations](nlu-boost-conversations.md#url-consideration
 
     :::image type="content" source="media/nlu-gpt/create-bot-highlight-22May23.png" alt-text="Screenshot of the bot creation screen with the option highlighted.":::
 
+
 After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that generative answers is enabled. From the **Overview** page, you can navigate to the **AI Capabilities** page if you want to change the URL you want to use.
 
 You can also change the URL, disable generative answers, or change the level of content moderation in the settings for the bot:
@@ -189,7 +190,8 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. 
 
-Bots with generative answers enabled have a limit on the number of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas).
+Bots with generative answers enabled have a limit on the number of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas)
+
 
 ### Pricing
 

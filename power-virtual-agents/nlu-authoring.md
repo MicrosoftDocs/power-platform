@@ -58,6 +58,7 @@ When creating a new topic, you can select **Create with Copilot** and ask the AI
     >  
     > 2. Set the switch under **Intelligent authoring support** to **On**.
 
+
 2. In the **Create it with Copilot** window that appears, enter a name for your topic in the **Name your topic** field. 
 
 3. In the **Create a topic to...** field, describe the topic you want to create in simple, plain English. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.

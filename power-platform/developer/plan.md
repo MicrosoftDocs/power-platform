@@ -28,7 +28,7 @@ The Power Apps Developer Plan gives you a free development environment to build 
 
 ## Who can sign up for the Power Apps Developer Plan?
 
-Anyone with a [work or school email address](/power-apps/maker/signup-for-powerapps#faq) backed by [Azure Active Directory](/azure/active-directory/fundamentals/sign-up-organization) can sign up for the Power Apps Developer Plan.
+Anyone with a [work or school email address](/power-apps/maker/signup-for-powerapps#faq) backed by [Microsoft Entra ID](/azure/active-directory/fundamentals/sign-up-organization) can sign up for the Power Apps Developer Plan.
 
 ## How can I get the Power Apps Developer Plan?
 
