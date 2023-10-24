@@ -14,7 +14,17 @@
         - name: Reliability
           items: 
           - name: Quick links
-            href: reliability/index.yml
+            href: ./overview.md
+          - name: Design principles
+            href: ./overview.md
+          - name: Checklist
+            href: ./overview.md
+          - name: Tradeoffs
+            href: ./overview.md
+          - name: Recommendations   
+            items:
+              - name: Reliability patterns
+                href: ./overview.md
         - name: Operational excellence
           items: 
           - name: Quick links
