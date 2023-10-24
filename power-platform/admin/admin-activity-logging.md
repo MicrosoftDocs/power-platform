@@ -18,17 +18,16 @@ search.audienceType:
 
 Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
 
-In this article, you learn about activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces using Microsoft Purview compliance portal. The activities fall within three categories:
+In this article, you learn about activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces using Microsoft Purview compliance portal. The activities fall within the following categories:
 
 - [Environment lifecycle operations](#activity-category-environment-lifecycle-operations)
 - [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
-- Environment security and permission change activities
 
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Administrative activities for Power Platform environments are enabled by default on all tenants. You can't disable activity collection.
-> - At least one user must have an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview.
+> - At least one user with an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview. More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 
 The audit activities include actions made by global administrators, Power Platform administrators, Dynamics 365 administrators, members of the System Administrator role (for Power Platform environments with Dataverse), the environment creator or owner (for Power Platform environments without Dataverse), and impersonated users that map to any of these roles.
 
@@ -43,7 +42,7 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | Provisioned environment    | The environment was created.                                                                                                                   |
 | Deleted environment        | The environment was deleted.                                                                                                                   |
 | Recovered environment      | An environment that was deleted within seven days has been recovered.                                                                     |
-| Hard-deleted environment   | The environment was hard deleted.                                                                                                     |
+| Hard-deleted environment   | The environment was hard deleted.                                                                                                    |
 | Moved environment          | The environment was moved to a different tenant.                                                                                               |
 | Copied environment         | The environment, including specific attributes such as application data, users, customizations, and schemas, were copied. |
 | Backed up environment      | The environment that has been backed up.                                                                                                   |
