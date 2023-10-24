@@ -1,7 +1,7 @@
 - name: Power Platform Well-Architected
   href: index.yml
   items:
-      - name: What's new
+      - name: About
         items:
         - name: Power Platform Well-Architected
           href: ./overview.md
@@ -11,12 +11,6 @@
         items:
         - name: Overview
           href: pillars.md
-        - name: Experience optimization
-          items:
-          - name: Quick links
-            href: experience-optimization/index.yml
-          - name: Design principles
-            href: experience-optimization/principles.md
         - name: Reliability
           items: 
           - name: Quick links
@@ -29,6 +23,12 @@
           items: 
           - name: Quick links
             href: performance-efficiency/index.yml
+        - name: Experience optimization
+          items:
+          - name: Quick links
+            href: experience-optimization/index.yml
+          - name: Design principles
+            href: experience-optimization/principles.md
         - name: Security
           items: 
           - name: Quick links
