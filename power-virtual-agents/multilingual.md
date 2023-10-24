@@ -63,7 +63,7 @@ To add the localization strings to your multilingual bot:
   :::image type="content" source="media/multilingual-bot/configuration-4.png" alt-text="Screen showing pane to download and upload localization files.":::
 
   > [!NOTE]
-  > The downloaded file will contain the latest localization content for the bot. If you need to download previous versions of the localization file, [open the bot's solution in Power Apps to download previous versions](authoring-export-import-bots?tabs=webApp#add-components-to-a-chatbot-in-a-custom-solution).
+  > The downloaded file will contain the latest localization content for the bot. If you need to download previous versions of the localization file, [open the bot's solution in Power Apps to download previous versions](authoring-export-import-bots.md?tabs=webApp#add-components-to-a-chatbot-in-a-custom-solution).
 
 1. Open the downloaded file and replace the primary language strings with the appropriate translated text.
    
