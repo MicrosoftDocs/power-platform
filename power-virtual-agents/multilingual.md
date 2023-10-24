@@ -1,6 +1,6 @@
 ---
-title: Multilingual bot support (Preview)
-description: Configure and manage a multilingual bot in Power Virtual Agents.
+title: Configure and create multilingual chatbots (Preview)
+description: Add multilingual support to your Power Virtual Agents chatbots so your bot users and customers can ask questions and get answers in their language.
 keywords: "Multilingual, Languages, Localization, Translation"
 ms.date: 10/25/2023
 
@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Multilingual chat bots (Preview)
+# Configure and create multilingual chatbots (Preview)
 
 Multilingual bots are chatbots that can communicate with customers in different languages while keeping all the content in a single bot. In many cases, they can automatically detect the desired language and respond in the same language, providing a more personalized and engaging experience for customers. 
 
