@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 Multilingual bots are chatbots that can communicate with customers in different languages while keeping all the content in a single bot. In many cases, they can automatically detect the desired language and respond in the same language, providing a more personalized and engaging experience for customers. 
 
-For the list of supported languages, see our [Supported Languages page](authoring-language-support.md).
+For the list of supported languages, see our [Supported Languages article](authoring-language-support.md).
 
 > [!IMPORTANT]
 > This is a preview feature. Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
@@ -29,21 +29,21 @@ For the list of supported languages, see our [Supported Languages page](authorin
 
 
 ## Configuring a multilingual bot
-When a bot is initially created, it's created with a primary language. (See [Supported Languages page](authoring-language-support.md) for more details on how to select the bot's primary language). 
+When a bot is initially created, it's created with a primary language. (See the [Supported Languages article](authoring-language-support.md) for more details on how to select the bot's primary language). 
 
 To enable a multilingual bot:
 
 1. With a bot open, expand **Languages (Preview)** on the side navigation pane, and select **Add languages**.   
 
-  :::image type="content" source="media/multilingual-bot/configuration-1.png" alt-text="Setting up a multilingual bot.":::
+    :::image type="content" source="media/multilingual-bot/configuration-1.png" alt-text="Setting up a multilingual bot.":::
 
 1. Choose the languages you want to add to the bot.
 
-  :::image type="content" source="media/multilingual-bot/configuration-2.png" alt-text="Selecting multilingual bot languages.":::
+    :::image type="content" source="media/multilingual-bot/configuration-2.png" alt-text="Selecting multilingual bot languages.":::
 
 1. Select **Add Languages** and confirm that the list of languages is correct.
 
-  :::image type="content" source="media/multilingual-bot/configuration-3.png" alt-text="Screen showing all languages added to the bot.":::
+    :::image type="content" source="media/multilingual-bot/configuration-3.png" alt-text="Screen showing all languages added to the bot.":::
 
 > [!NOTE]
 > You can add as many secondary languages as desired to the bot, as long as they are in the list of supported languages.
@@ -51,7 +51,7 @@ To enable a multilingual bot:
 ## Managing localization in a multilingual bot
 
 > [!NOTE]
-> All bot topic and content editing must be done in the bot's primary language. To edit the bot's secondary language to localize the strings, you must use the steps in this section.
+> All bot topic and content editing must be done in the bot's primary language. To edit the bot's secondary language to localize the strings, you must use the steps in this section.    
 > Once the bot strings are localized and uploaded to the bot as described here, you can see the localized content in the authoring canvas by [switching the language in the test bot](#testing-a-multilingual-bot).
 
 To add the localization strings to your multilingual bot:
@@ -60,10 +60,11 @@ To add the localization strings to your multilingual bot:
    
 1. On the **Update localizations** page, select JSON or ResX format to download the current localization file for that language.
    
-  :::image type="content" source="media/multilingual-bot/configuration-4.png" alt-text="Screen showing pane to download and upload localization files.":::
+    :::image type="content" source="media/multilingual-bot/configuration-4.png" alt-text="Screen showing pane to download and upload localization files.":::
 
-  > [!NOTE]
-  > The downloaded file will contain the latest localization content for the bot. If you need to download previous versions of the localization file, [open the bot's solution in Power Apps to download previous versions](authoring-export-import-bots.md?tabs=webApp#add-components-to-a-chatbot-in-a-custom-solution).
+    > [!NOTE]
+    > The downloaded file will contain the latest localization content for the bot.
+    > If you need to download previous versions of the localization file, [open the bot's solution in Power Apps to download previous versions](authoring-export-import-bots.md?tabs=webApp#add-components-to-a-chatbot-in-a-custom-solution).
 
 1. Open the downloaded file and replace the primary language strings with the appropriate translated text.
    
@@ -87,7 +88,7 @@ To test a multilingual bot:
 
 1. Open the menu at the top of the test bot, and select one of the secondary languages.
 
-  :::image type="content" source="media/multilingual-bot/Test-1.png" alt-text="Screen showing the secondary language selection on test bot.":::
+    :::image type="content" source="media/multilingual-bot/Test-1.png" alt-text="Screen showing the secondary language selection on test bot.":::
 
 1. The test bot will reload itself, this time using the selected secondary language. The authoring canvas shows the secondary language.
 
