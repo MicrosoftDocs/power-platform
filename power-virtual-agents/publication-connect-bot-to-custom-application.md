@@ -86,18 +86,7 @@ To connect to the bot you have built with Power Virtual Agents, you'll need to r
 
 ### Get Direct Line token
 
-To start a conversation with your Power Virtual Agents bot, you need a Direct Line token. You need to add code that retrieves a Direct Line token with the Token Endpoint from the previous section to your app.
-
-To request a Direct Line token, issue a GET request to the endpoint below:
-
-```rest-api
-GET /api/botmanagement/v1/directline/directlinetoken
-```
-
-| Query Parameter | Required |
-| --------------- | -------- |
-| `TokenEndPoint` | yes      |
-
+To start a conversation with your Power Virtual Agents bot, you need a Direct Line token. This can be obtained by making a GET request to the endpoint indicated within the PVA screen. This token must then be used as the header for subsequent calls to the directline API. 
 
 Example:
 
@@ -105,7 +94,16 @@ Example:
 GET <BOT TOKEN ENDPOINT>
 ```
 
-If the request is successful, a Direct Line token will be returned for the requested bot.
+If the request is successful, will be returned a Direct Line token, expiration time and a conversationId for the requested bot.
+Example:
+
+```Json
+{
+    "token": "RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0y8qbOF5xPGfiCpg4Fv0y8qqbOF5x8qbOF5xn",
+    "expires_in": 3600,
+    "conversationId": "abc123"
+}
+```
 
 #### Sample code example
 
@@ -116,21 +114,16 @@ The following example uses samples from the [Connector sample code](https://gith
 /// Get directline token for connecting bot
 /// </summary>
 /// <returns>directline token as string</returns>
-public async Task<string> GetTokenAsync()
+public async Task<DirectLineToken> GetTokenAsync(string url)
 {
-  string token;
-  using (var httpRequest = new HttpRequestMessage())
-  {
-      httpRequest.Method = HttpMethod.Get;
-      UriBuilder uriBuilder = new UriBuilder(TokenEndPoint);
-      httpRequest.RequestUri = uriBuilder.Uri;
-      using (var response = await s_httpClient.SendAsync(httpRequest))
-      {
-          var responseString = await response.Content.ReadAsStringAsync();
-          token = SafeJsonConvert.DeserializeObject<DirectLineToken>(responseString).Token;
-      }
-  }
-  return token;
+    try
+    {
+        return await _httpClient.GetFromJsonAsync<DirectLineToken>(url);
+    }
+    catch (HttpRequestException ex)
+    {
+        throw ex;
+    }        
 }
 ```
   
@@ -138,18 +131,22 @@ public async Task<string> GetTokenAsync()
   /// <summary>
   /// class for serialization/deserialization DirectLineToken
   /// </summary>
-  public class DirectLineToken
-  {
-      public string Token { get; set; }
-  }
+ public class DirectLineToken
+{
+    public string Token { get; set; }
+    public int Expires_in { get; set; }
+    public string ConversationId { get; set; }
+}
   ```
 
-The response will be:
+The response object will be the same as the GET request we saw earlier
   
   ```json
-  {
-    "token": "<token>"
-  }
+ {
+    "token": "RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0y8qbOF5xPGfiCpg4Fv0y8qqbOF5x8qbOF5xn",
+    "expires_in": 3600,
+    "conversationId": "abc123"
+}
   ```
 
 ### Use Direct Line to communicate with the bot
