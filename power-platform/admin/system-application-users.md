@@ -67,7 +67,7 @@ Most of these users are hidden from user views but they can be found by using th
 | # Omnichannel | Ominichannel@onmicrosoft.com | To perform data integration between Omnichannel for Customer Service and Dataverse | System admin    |
 | # PowerAppsDataPlaneBackend | PowerAppsRPRole@onmicrosoft.com | To allow Power Apps to integrate with Dataverse | PowerAppsRPRole |
 | # PowerAppsCustomerManagementPlaneBackend | PowerAppsRPRole@onmicrosoft.com | To allow Power Apps to integrate with Dataverse | PowerAppsRPRole |
-| # Flow-RP | Flow-RP@onmicrosoft.com | To allow Power Automate to integrate with Dataverse | Flow-RP Role, Service Reader |
+| # Flow-RP | Flow-RP@onmicrosoft.com | To allow Power Automate to integrate with Dataverse | Flow-RP Role |
 | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\><br />@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service  |
 | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework  |
 | # Sharepoint Syntex | SharepointSyntex@onmicrosoft.com | To allow Sharepoint to use AI Builder document processing models | Basic User  |
