@@ -1,5 +1,5 @@
 ---
-title: When flows are turned off
+title: When premium flows are turned off due to license issues
 description: Learn about why your flows are turned off, types of enforecements, and recommendations.
 author: PriyaKodukula
 contributors:
@@ -8,14 +8,14 @@ contributors:
   - v-aangie
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/20/2023
+ms.date: 10/25/2023
 ms.author: prkoduku
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 ---
 
-# When flows are turned off
+# When premium flows are turned off due to license issues
 
 Dynamics 365 and Power Apps licenses include a limited set of Power Automate capabilities that allow users to run flows that allow for in context flows. To learn more, go to [What Power Automate capabilities are included in Dynamics 365 licenses](faqs.md#what-power-automate-capabilities-are-included-in-dynamics-365-licenses). 
 
