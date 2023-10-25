@@ -326,7 +326,7 @@ An environment has multiple apps. There are flows for data management that don't
 
 ### Why is my flow turned off?
 
-To learn more, go to [When flows are turned off](when-flows-are-turned-off.md).
+To learn more, go to [When premium flows are turned off due to license issues](when-flows-are-turned-off.md).
 
 This link also provides information about the types of enforecements, and how to identify flows that need Premium licenses to avoid interruptions due to enforcement.
 
