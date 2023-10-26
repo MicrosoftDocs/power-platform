@@ -152,7 +152,7 @@ additionalContent:
     - title: Power Platform capabilities and related features
       items:
         # Card
-        - title: Microsoft Dataverse
+        - title: Dataverse
           summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
           url: /powerapps/maker/common-data-service/data-platform-intro
         # Card
