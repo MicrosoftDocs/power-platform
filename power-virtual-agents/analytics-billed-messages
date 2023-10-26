@@ -46,22 +46,6 @@ The Billed Session report doesn't distinguish between sessions that are included
 
 ## Frequently asked questions
 
-### What's the difference between total sessions, engaged sessions, and billed sessions?
 
-- _Billed sessions_ are used to measure usage against the capacity that is allocated when you purchase a license. For more information, see the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
-- _Total sessions_ and _engaged sessions_ are metrics of _analytics sessions_, used to determine how efficient a bot is in addressing a user's questions.
-- _Billed sessions_ and _analytics sessions_ are distinct and independent.
-
-For more information, see [Summarize your bot's performance and usage](analytics-summary.md).
-
-
-
-### Where can I see the total number of billed sessions for my organization?
-
-You can only view billed sessions for individual bots.
-
-### If I'm on a trial subscription but have some billed sessions, do I have to pay?
-
-Not necessarily. The trial offer provides you with some billed sessions.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
