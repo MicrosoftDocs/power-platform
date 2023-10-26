@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/15/2023 #Required; mm/dd/yyyy format.
+  ms.date: 10/25/2023 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -119,26 +119,35 @@ conceptualContent:
             - url: ./guidance/adoption/methodology.md
               itemType: overview
               text: Adoption best practices
+            - url: /assessments/3c62fd23-9d36-491c-8941-26d5553365f8
+              itemType: overview
+              text: Adoption assessment
             - url: ./guidance/coe/starter-kit.md
               itemType: overview
               text: Center of Excellence (CoE) Starter kit
             - url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
               itemType: video
               text: "Videos: Power Apps and Power Automate Architecture Series"
-            - url: ./guidance/architecture/real-world-examples/overview.md
+            - url: /power-platform/guidance/white-papers
               itemType: overview
-              text: Real-world architecture examples
-            - url: /assessments/3c62fd23-9d36-491c-8941-26d5553365f8
-              itemType: overview
-              text: Power Platform adoption assessment
-        - title: Microsoft Power Fx
+              text: White papers            
+        - title: Copilot and AI capabilities
           links:
-            - url: ./power-fx/overview.md
+            - url: responsible-ai-overview.md
               itemType: overview
-              text: What is Microsoft Power Fx?
-            - url: https://github.com/microsoft/power-fx
-              itemType: reference
-              text: Microsoft Power Fx Open Source project
+              text: Responsible AI FAQs
+            - url: /power-apps/maker/common/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Apps
+            - url: /power-automate/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Automate
+            - url: /power-pages/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Pages 
+            - url: /power-virtual-agents/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Virtual Agents       
 
 additionalContent:
   # Supports up to 3 sections
@@ -146,19 +155,20 @@ additionalContent:
     - title: Power Platform capabilities and related features
       items:
         # Card
-        - title: Microsoft Dataverse
+        - title: AI Builder
+          summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
+          url: /ai-builder        
+        # Card
+        - title: Connectors
+          summary: "Connect to hundreds of data sources using a library of connectors"
+          url: /connectors/
+        # Card
+        - title: Dataverse
           summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
           url: /powerapps/maker/common-data-service/data-platform-intro
         # Card
-        - title: AI Builder
-          summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
-          url: /ai-builder
-        # Card
-        - title: Common Data Model
-          summary: "Unify data across all your business processes and enable interoperability among apps"
-          url: /common-data-model/
-        - title: Connectors
-          summary: "Connect to hundreds of data sources using a library of connectors"
+        - title: Power Fx
+          summary: "Low-code, strongly-typed, declarative, and functional language based on spreadsheet-like formulas"
           url: /connectors/
     - title: Similar Microsoft products
       items:
