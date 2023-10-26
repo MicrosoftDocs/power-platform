@@ -69,7 +69,7 @@ The Power Automate report provides insights into the activities of citizen autho
 
 |Calculation  |Description  |
 |---------|---------|
-|Active flows      | Count of Cloud flows with activity logged in the last 30 days        |
+|Active flows      | Number of flows that have been triggered and executed within the last 30 days        |
 |Created      | Number of Power Apps created within the current view        |
 |Makers      |Total makers with activity registered in the last 30 days          |
 |Connections     | Count of unique connections referenced within the current view         |
