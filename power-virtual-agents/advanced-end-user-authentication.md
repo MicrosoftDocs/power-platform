@@ -103,7 +103,7 @@ When you've configured user authentication for your bot, you can use authenticat
 
 The `User.DisplayName` variable contains the display name that's stored in the identity provider. Use this variable to greet or refer to the user without their having to explicitly give their name to the bot, making the conversation more personalized.
 
-Power Virtual Agents automatically sets the value of `User.DisplayName` from the `name` claim provided by the identity provider, as long as the `profile` scope was defined when manual authentication was configured. For more information about scope, see [Configure manual authentication with Azure AD](#configure-manual-authentication-with-azure-ad).
+Power Virtual Agents automatically sets the value of `User.DisplayName` from the `name` claim provided by the identity provider, as long as the `profile` scope was defined when manual authentication was configured. For more information about scope, see [Add user authentication to chatbot topics](configuration-authentication-azure-ad.md).
 
 #### User.Id
 
