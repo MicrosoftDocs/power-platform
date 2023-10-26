@@ -128,7 +128,7 @@ conceptualContent:
             - url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
               itemType: video
               text: "Videos: Power Apps and Power Automate Architecture Series"
-            - url: ./guidance/white-papers.md
+            - url: /power-platform/guidance/white-papers
               itemType: overview
               text: White papers            
         - title: Copilot and AI capabilities
