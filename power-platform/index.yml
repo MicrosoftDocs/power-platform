@@ -144,17 +144,16 @@ conceptualContent:
               text: AI-driven features in Power Automate
             - url: /power-pages/responsible-ai-overview
               itemType: overview
-              text: AI-driven features in Power Pages        
+              text: AI-driven features in Power Pages 
+            - url: /power-virtual-agents/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Virtual Agents       
 
 additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Power Platform capabilities and related features
       items:
-        # Card
-        - title: Dataverse
-          summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
-          url: /powerapps/maker/common-data-service/data-platform-intro
         # Card
         - title: AI Builder
           summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
@@ -163,6 +162,10 @@ additionalContent:
         - title: Connectors
           summary: "Connect to hundreds of data sources using a library of connectors"
           url: /connectors/
+        # Card
+        - title: Dataverse
+          summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
+          url: /powerapps/maker/common-data-service/data-platform-intro
         # Card
         - title: Power Fx
           summary: "Low-code, strongly-typed, declarative, and functional language based on spreadsheet-like formulas"
