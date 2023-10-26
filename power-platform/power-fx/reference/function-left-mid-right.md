@@ -1,6 +1,6 @@
 ---
-title: Left, Mid, and Right functions in Power Apps
-description: Reference information including syntax and examples for the Left, Mid, and Right functions in Power Apps.
+title: Left, Mid, and Right functions
+description: Reference information including syntax and examples for the Left, Mid, and Right functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Left, Mid, and Right functions in Power Apps
+# Left, Mid, and Right functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
 
 Extracts the left, middle, or right portion of a string of text.
 
