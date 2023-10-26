@@ -1,11 +1,11 @@
 ---
 title: Onboarding Buddy template for Power Platform
-description: Learn about the Onboarding buddy template for Power Platform.
+description: The Onboarding Buddy template for Power Platform enables you to quickly set up an app that allows you to match new employees to Buddies who help with the onboarding process.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/04/2023
+ms.date: 10/26/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -26,7 +26,8 @@ The Onboarding Buddy app allows:
 - Configurable emails to guide the onboarding experience
 - Program administrators to manage the length of the program and when to send the introductory and wrap up emails
 
-:::image type="content" source="media/overview/ob-configure-match-emails.png" alt-text="Displays a visual of how match and email timing can be configured as well as customizing the email content .":::
+As a program administrator, you can configure both the match and email timing. You can also customize the email content to help your Onboarders and Buddies accomplish the onboarding activities.
+:::image type="content" source="media/overview/ob-configure-match-and-emails.png" alt-text="Displays a visual of how match and email timing can be configured as well as customizing the email content .":::
 The Onboarding Buddy AppSource package consists of two solutions:
 
 - **Employee Experience Base**: Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
@@ -71,10 +72,4 @@ The *Onboarding Buddy* solution is composed of two apps, three tables, two secur
 
 ## Next steps
 
-- [Install and configure the Onboarding Buddy template](install-and-configure.md)
-- [Learn how to customize the Onboarding Buddy app](customize.md)
-
-## See also
-
-- [Get started managing the Onboarding Buddy app](manage.md)
-- [Get started using the Onboarding Buddy app](use.md)
+[Install and configure the Onboarding Buddy template](install-and-configure.md)

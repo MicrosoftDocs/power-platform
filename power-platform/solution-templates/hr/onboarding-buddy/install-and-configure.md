@@ -13,7 +13,7 @@ ms.subservice: solution-templates
 
 # Install and configure the Onboarding Buddy template
 
-As a Power Platform admin, you access, import, install, configure, and deploy the Onboarding Buddy template for your organization.
+As a Power Platform admin, you install, configure, and deploy the Onboarding Buddy template for your organization.
 
 > [!IMPORTANT]
 > Two solutions will always be installed in your environment:

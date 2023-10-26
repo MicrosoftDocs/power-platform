@@ -1,6 +1,6 @@
 ---
 title: Install and configure the Awards and Recognition template for Power Platform
-description: Learn how to install and configure the Awards and Recognition template for Power Platform.
+description: Learn how to install, configure, and deploy the Awards and Recognition template for Microsoft Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
@@ -13,7 +13,7 @@ ms.subservice: solution-templates
 
 # Install and configure the Awards and Recognition template
 
-As a Power Platform admin, you can access, import, install, configure, and deploy the Awards and Recognition template for your organization. To get started, follow the steps to install and configure the Awards and Recognition template.
+As a Power Platform admin, you can access, install, configure, and deploy the Awards and Recognition template for your organization. To get started, follow the steps to install and configure the Awards and Recognition template.
 
 ## Step 1: Create connections
 

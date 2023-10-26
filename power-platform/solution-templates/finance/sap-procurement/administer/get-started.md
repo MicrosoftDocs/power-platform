@@ -15,19 +15,25 @@ contributors:
 - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 06/06/2023
+ms.date: 10/26/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Get started with the SAP Procurement solution template
+# Get started with the SAP Procurement template
 
-Power Platform solution templates published by Microsoft on AppSource are designed to digitally transform broad, complex business scenarios for specific lines of business or enterprise wide.
+Templates for Power Platform published by Microsoft on AppSource are solutions designed to digitally transform broad, complex business scenarios for specific lines of business or enterprise wide.
 
-It's important to establish a defined, centralized team that consists of key stakeholders, business analysts, Power Platform administrators and developers, and SAP admins (S-User) and functional analysts (SAP BASIS).
+The SAP Procurement solutions are enterprise-ready and therefore need to be customized, delivered, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) to [maintain governance and security](/power-platform/guidance/adoption/admin-best-practices).
 
-Your team can get started by reviewing the steps in each phase of the administration journey.
+It's recommended that an [executive sponsor](/power-platform/guidance/adoption/executive-sponsorship?source=recommendations) establishes a team that consists of key stakeholders, product owners, business analysts, Power Platform administrators and developers and SAP admins (S-User) and functional analysts (SAP BASIS).
+
+Once established, your team can get started with its SAP + Power Platform administration journey by reviewing the Power Platform resource links and following the SAP integration and administration steps.
+
+[Power Platform adoption best practices](/power-platform/guidance/adoption/methodology)
+
+[Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
 
 ## Integrate SAP with Power Platform
 
@@ -66,9 +72,4 @@ Work with your SAP functional analyst, business subject matter experts, and Powe
 
 ## Next steps
 
-- [Requirements](requirements.md)
-- [Set up environments and data policies](set-up-environments-data-policies.md)
-
-### See also
-
-[Overview](../overview.md)
+[Requirements](requirements.md)

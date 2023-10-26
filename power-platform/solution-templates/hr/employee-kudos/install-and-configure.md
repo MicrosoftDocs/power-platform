@@ -1,11 +1,11 @@
 ---
 title: Install and configure the Employee Kudos template for Power Platform
-description: Learn how to install and configure the Employee Kudos template for Power Platform.
+description: Learn how to install and configure the Employee Kudos template for Microsoft Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
-ms.date: 10/04/2023
+ms.date: 10/26/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

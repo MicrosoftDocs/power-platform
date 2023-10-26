@@ -1,6 +1,6 @@
 ---
 title: Apply seed data
-description: Apply and manage key seed data that supports the SAP procurement apps and flows.
+description: Learn how you can populate a database with an initial set of data for your SAP Procurement apps and flows that run on Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
 contributors:

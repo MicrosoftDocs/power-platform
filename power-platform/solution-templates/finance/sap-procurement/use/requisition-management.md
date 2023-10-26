@@ -1,6 +1,6 @@
 ---
 title: Use the SAP Requisition Management app
-description: Get started using Microsoft's SAP Requisition Management app for Power Platform.
+description: Learn how you can view, create, edit, and convert SAP requisition data using Microsoft's SAP Requisition Management app for Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 08/14/2023
+ms.date: 10/26/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -22,7 +22,9 @@ ms.subservice: solution-templates
 
 The SAP Requisition Management app is part of the SAP Procurement solution for Microsoft Power Platform. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view and update an existing requisition, create a new requisition, and convert a requisition to a purchase order.
 
-See how you can manage your SAP requisition data using the SAP Requisition Management app.
+## Watch the demo
+
+Watch the demo to see how you can manage your SAP requisition data using the SAP Requisition Management app.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18CAe]
 

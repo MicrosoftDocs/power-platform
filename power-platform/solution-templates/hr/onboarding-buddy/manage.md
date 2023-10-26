@@ -1,6 +1,6 @@
 ---
 title: Manage the Onboarding Buddy app
-description: Get started managing the Onboarding Buddy app.
+description: Program admins manage the Onboarding Buddy app. Learn how to add new employees, update the configurations, and support more languages in the Onboarding Buddy Admin app.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle

@@ -1,6 +1,6 @@
 ---
 title: Integrating SAP with Power Platform FAQs
-description: FAQs about Microsoft Power Platform's integration with SAP.
+description: Get answers to the most frequently asked questions about SAP integration with Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
 contributors:

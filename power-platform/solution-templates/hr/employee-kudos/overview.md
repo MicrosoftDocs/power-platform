@@ -1,11 +1,11 @@
 ---
 title: Employee Kudos template for Power Platform
-description: Learn about the Employee Kudos template for Power Platform.
+description:  Empower your employees celebrate co-workers for their contributions. Learn about the Employee Kudos template for Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/04/2023
+ms.date: 10/26/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

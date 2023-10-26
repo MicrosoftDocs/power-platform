@@ -1,6 +1,6 @@
 ---
 title: Configure environment variables for SAP and Power Platform SAP solutions
-description: Set up environment variables for SAP and Microsoft Power Platform SAP solutions.
+description: Learn how to configure and centrally manage environment variables for Microsoft Power Platform SAP solutions.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -23,7 +23,7 @@ ms.subservice: solution-templates
 
 # Configure environment variables
 
-Environment variables are solution components that store parameter keys and values, which then serve as input to various other application objects, such as Power Automate flows and Power Apps. Enterprise systems often have multiple connection parameters, and manually entering the parameters into each component can be redundant and time-consuming.
+Environment variables are solution components that store parameter keys and values, which then serve as input to various other application objects found in Power Automate flows and Power Apps. Enterprise systems often have multiple connection parameters, and manually entering the parameters into each component can be redundant and time-consuming.
 
 The SAP Procurement solution template uses environment variables within cloud flows to centrally manage and set key properties on the [SAP ERP connector](/connectors/saperp/) flow action steps.
 
@@ -126,7 +126,7 @@ More information:
 
 ## Reuse the environment variable in a flow
 
-The environment variables you set up are now available in a flow's dynamic content selector. Go into an SAP Procurement solution template cloud flow to select the environment variables to reuse in [SAP actions](/connectors/sap/#actions).
+The environment variables you set up are now available in a flow's dynamic content selector. Go into a cloud flow in the SAP Procurement solution to select the environment variables to reuse in [SAP actions](/connectors/sap/#actions).
 
 > [!IMPORTANT]
 >

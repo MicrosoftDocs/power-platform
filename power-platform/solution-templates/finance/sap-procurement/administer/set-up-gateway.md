@@ -43,11 +43,11 @@ Gateways are set up by [administrators](/power-platform/admin/admin-documentatio
 
 1. Install the most recent version of the [on-premises data gateway](/data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) onto the machine (December 16, 2022, or later).
 
-1. Install the [Microsoft C++ Runtime DLLs version 10.x](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true) framework package onto the machine and configure. This version is contained in Microsoft Visual C++ 2010 Redistributables.
+1. Install most recent version of [Microsoft C++ Runtime DLLs](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022). SAP's NCo 3.1 download requires this library to support the .NET Framework.
 
-1. Install [SAP Connector for Microsoft .NET 3.0 (NCo3.0)](https://support.sap.com/en/product/connectors/msnet.html) on the machine.
+1. Install [SAP Connector for Microsoft .NET 3.1 (NCo3.1)](https://support.sap.com/en/product/connectors/msnet.html) on the machine.
 
-      - Select [Install assemblies to GAC](/dotnet/framework/app-domains/install-assembly-into-gac) in the Optional setup steps window during the installation of NCo3.0.
+      - Select [Install assemblies to GAC](/dotnet/framework/app-domains/install-assembly-into-gac) in the Optional setup steps window during the installation of NCo3.1.
 
 > [!IMPORTANT]
 >
@@ -82,12 +82,8 @@ More information:
 
 ## Next steps
 
-- [Configure authentication](configure-authentication.md)
-- [Install solutions](install.md)
-- [Set up connections](set-up-connections.md)
-- [Configure environment variables](configure-environment-variables.md)
+[Configure authentication](configure-authentication.md)
 
 ## See also
 
-- [Overview](../overview.md)
-- [Get started](get-started.md)
+[Get started with the SAP Procurement template](get-started.md)

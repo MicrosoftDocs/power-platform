@@ -1,6 +1,6 @@
 ---
 title: Awards and Recognition template for Power Platform
-description: Learn about the Awards and Recognition template for Power Platform.
+description: The Awards and Recognition template for Microsoft Power Platform enables organizations to facilitate an engaging and efficient awards system to acknowledge the outstanding efforts of employees .
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
@@ -13,7 +13,11 @@ ms.subservice: solution-templates
 
 # Awards and Recognition template for Power Platform
 
-The Awards and Recognition template enables organizations to define nomination periods and available awards (types of recognition) in those periods that employees can nominate others for. Awards can be configured to be available to single individuals, multiple individuals, or predefined teams. Program administrators can then review and approve or decline nominations.
+The Awards and Recognition template enables organizations to easily facilitate an employee awards program.
+
+Employees use the app to nominate co-workers and teams and to track their own recognitions.
+
+Program admins have the ability to define nomination periods and the available awards (types of recognition) in those periods. Awards can be configured to be available to single individuals, multiple individuals, or predefined teams. At the close of a nomination period, a program admin can review all the nominations and approve or decline them.
 
 :::image type="content" source="media/overview/ar-four-screens.png" alt-text="Screenshots of Awards and Recognition." lightbox="media/overview/ar-four-screens.png":::
 

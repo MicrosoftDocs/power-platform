@@ -1,6 +1,6 @@
 ---
 title: Use the Onboarding Buddy app
-description: Get started using the Onboarding Buddy app.
+description: Get started using the Onboarding Buddy app. Learn how you can use the Onboarding Buddy app to sign up as a Buddy or, as a manager, use the app to match Buddies to new employees.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle

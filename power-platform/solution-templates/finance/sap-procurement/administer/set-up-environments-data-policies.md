@@ -1,6 +1,6 @@
 ---
 title: Set up environments and data policies
-description: Learn best practices for setting up environments and data policies to support the deployment of the SAP Procurement Accelerator solutions.
+description: Learn best practices for setting up environments and data policies to support the deployment of the SAP Procurement solutions.
 author: jongilman88
 ms.author: jongilman
 contributors:

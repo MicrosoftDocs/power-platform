@@ -15,23 +15,23 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/06/2023
+ms.date: 10/26/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Set up access control lists in Azure Active Directory
+# Set up access control lists in Microsoft Entra ID
 
-Users only need access to the apps and flows that align to their departmental function. You can create Azure Active Directory (Azure AD) security groups based on business processes and assign team members to the appropriate groups. The security groups control user access to the apps and visibility to the various components within the apps.
+Users only need access to the apps and flows that align to their departmental function. You can create Microsoft Entra ID (Azure AD) security groups based on business processes and assign team members to the appropriate groups. The security groups control user access to the apps and visibility to the various components within the apps.
 
-## Create Azure Active Directory security groups
+## Create Entra ID security groups
 
-The following deployment model illustrates how you assign users to different Azure AD security groups based on their departmental function.
+The following deployment model illustrates how you assign users to different Entra ID (Azure AD) security groups based on their departmental function.
 
 ### Admin security group
 
-Set up one or more administrators to a SAP Procurement Admin team.
+Set up one or more administrators to an SAP Procurement Admin team.
 
 ### Functional security groups
 
@@ -48,19 +48,19 @@ This model is used throughout the rest of this document to show intent but your 
 
 More information:
 
-- [Azure Active Directory groups and group membership](/azure/active-directory/fundamentals/concept-learn-about-groups)
+- [Learn about groups and access rights in Microsoft Entra](/entra/fundamentals/concept-learn-about-groups)
 - [Teams (including group teams)](/power-platform/admin/wp-security-cds#teams-including-group-teams)
 
 ## Create Dataverse group teams
 
-Admins manage the [menu items](apply-seed-data.md#manage-menu-options) visible to users in the canvas apps directly in the SAP Administrator app. [Dataverse group team](/power-platform/admin/manage-group-teams) membership controls access and visibility to the menu items. [Azure AD security groups](#create-azure-active-directory-security-groups) govern Dataverse group team membership and ensure one of two options:
+Admins manage the [menu items](apply-seed-data.md#manage-menu-options) visible to users in the canvas apps directly in the SAP Administrator app. [Dataverse group team](/power-platform/admin/manage-group-teams) membership controls access and visibility to the menu items. Entra ID (Azure AD) security groups govern Dataverse group team membership and ensure one of two options:
 
 - Users have visibility and access to appropriate menu items in the canvas apps when they are added to one or more security groups.
 - Users lose visibility and access when they are removed from a security group.
 
 Additionally, menu visibility drives the _drill through_ behavior on certain fields in the canvas apps. For example, if a user is not part of the purchase orders team, then they can only view the associated purchase order number to the requisition in the SAP Requisition Management app. They can't drill through to see all the purchase order details.
 
-More information: [Work with Azure Active Directory group teams](/power-apps/developer/data-platform/aad-group-team)
+More information: [Work with Microsoft Entra ID group teams](/power-apps/developer/data-platform/aad-group-team)
 
 ### Get started managing teams
 
@@ -68,8 +68,8 @@ More information: [Work with Azure Active Directory group teams](/power-apps/dev
 1. Go to **Environments** and select the environment that contains the solutions.
 1. Go to **Settings** > **Users** + **permissions** > **Teams**.
 1. Select **+ Create Team**.
-1. Complete the required fields. For _Team type_, select **AAD Security Group**. You'll also be required to complete _Group name_ and _Membership type_.
-1. Search for the example security group previously created in AAD and associate it to the newly created _group team_.
+1. Complete the required fields. For _Team type_, select **Entra ID (Azure AD) Security Group**. You'll also be required to complete _Group name_ and _Membership type_.
+1. Search for the example security group previously created in Entra ID (Azure AD) and associate it to the newly created _group team_.
 1. Assign security roles to teams that correspond to team functions.
 
 ### Security role guidance
@@ -88,7 +88,7 @@ The following table provides guidance for assigning security roles:
 
 > [!NOTE]
 >
-> - Users are added to or removed from a group team based on their membership to the linked Azure AD security group.
+> - Users are added to or removed from a group team based on their membership to the linked Entra ID security group.
 > - Access to Dataverse data is governed by team membership with access levels differentiated between SAP integration user and SAP integration admin security role assignments to the teams.
 > - The Dataverse group team setup in the Power Platform admin center can also be seen in the SAP Admin app for reference.
 
@@ -117,13 +117,13 @@ Share the flows with _Run only privileges_ so users have access to embedded flow
 
 1. Go to the individual cloud flows in Power Apps.
 1. Go to the _Run only users_ section and select **Edit**.
-1. Invite _system users_ and _teams_ by searching for and selecting the Azure AD security groups that need access to the flow according to the Power Apps that that team needs to use.
+1. Invite _system users_ and _teams_ by searching for and selecting the Entra ID (Azure AD) security groups that need access to the flow according to the Power Apps that that team needs to use.
 1. For all three _connections used_, select the **Provided by run-only end user** option.
 1. Select **Save**.
 
 ### Sharing summary
 
-This table provides a mapping summary of what components need to be assigned or shared according to the example Azure AD security group teams.
+This table provides a mapping summary of what components need to be assigned or shared according to the example Entra ID (Azure AD) security group teams.
 
 |             Component             | Type | Vendor management team | Purchase requisitions team | Purchase orders team | Vendor goods receipt team | Vendor invoice team | Vendor payments team | Admin team |
 |:---------------------------------:|:----:|:----------------------:|:--------------------------:|:--------------------:|:-------------------------:|:-------------------:|:--------------------:|:------------------:|
@@ -170,12 +170,10 @@ More information:
 - [Share Model App](/power-apps/maker/model-driven-apps/share-model-driven-app)
 - [Share Cloud Flows](/power-automate/create-team-flows)
 
-## Next steps
+### Next steps
 
-- [Apply seed data](apply-seed-data.md)
-- [Monitor errors](monitor-errors.md)
+[Apply seed data](apply-seed-data.md)
 
 ### See also
 
-- [Overview](../overview.md)
-- [Get started](get-started.md)
+[Get started with the SAP Procurement template](get-started.md)

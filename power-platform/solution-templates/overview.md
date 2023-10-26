@@ -8,7 +8,7 @@ contributors:
 - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 06/15/2023
+ms.date: 10/26/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -16,7 +16,7 @@ ms.subservice: solution-templates
 
 # Templates for Power Platform
 
-Templates for [Power Platform](/power-platform/) are solutions that serve as starting points for specific use cases and outcomes. They accelerate time to value by allowing you to quickly digitize new processes or extend your technology investments in enterprise resource planning (ERP), customer relationship management (CRM), and human resource (HR) systems.
+Templates for [Power Platform](/power-platform/) are solutions that serve as starting points for specific enterprise-level use cases and outcomes. They accelerate time to value by allowing you to quickly digitize new processes or extend your technology investments in enterprise resource planning (ERP), customer relationship management (CRM), and human resource (HR) systems.
 
 The templates are built for centralized teams to install and extend locally. You can organize an internal information technology (IT) and business operations team or select an external partner team to implement a Power Platform template project.
 
@@ -27,11 +27,32 @@ Templates for Power Platform help you:
 
 Additionally, you can:
 
-- Customize your solutions.
-- Integrate your system of record with other features, applications, and systems.
-- Incorporate other controls over how your users interact with data.
+- Customize your solutions
+- Integrate your system of record with other features, applications, and systems
+- Incorporate other controls over how your users interact with data
 
-Templates for Power Platform require premium licensing.
+## Available templates
+
+Templates for Power Platform are available on [Microsoft AppSource](https://appsource.microsoft.com/en-US/?exp=ubp8).
+
+Be sure to check back often for new templates that become available.
+
+:::row:::
+   :::column span="":::
+      ![SAP Procurement](media/overview/sap-procure-icon-sq.png "SAP Procurement") <br> [SAP Procurement](https://aka.ms/AccessSAPProcurementTemplate) <br> Transform your view of SAP procurement data
+   :::column-end:::
+   :::column span="":::
+      ![Employee Kudos](media/overview/kudos-icon-sq.png "Employee Kudos") <br> [Employee Kudos](https://aka.ms/AccessEmployeeKudosTemplate) <br> Give and receive recognition for work
+           :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ![Awards and Recognition](media/overview/awards-req-icon-sq.png "Awards and Recognition") <br> [Awards and Recognition](https://aka.ms/AccessAwardsandRecognitionTemplate) <br> Facilitate an employee awards program
+   :::column-end:::
+   :::column span="":::
+      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> [Onboarding Buddy](https://aka.ms/AccessOnboardingBuddyTemplate) <br> Match new employees to _Buddies_
+   :::column-end:::
+:::row-end:::
 
 ## Benefits of using templates
 
@@ -53,30 +74,20 @@ Templates for Power Platform offer the following benefits:
   - Connect data across multiple systems of record to complete a workflow.
   - Meet users where they are, whether in Teams or in other collaborative experiences.
 
-## Available templates
+> [!NOTE]
+> Templates for Power Platform require Power Platform premium licensing.
+> Go to [**Licensing overview for Microsoft Power Platform**](/power-platform/admin/pricing-billing-skus) for more information.
 
-Templates for Power Platform are available on [Microsoft AppSource](https://appsource.microsoft.com/en-US/?exp=ubp8).
+## Get started
 
-Be sure to check back often for new templates that become available.
+Learn how to get started working with the templates for Power Platform:
 
-:::row:::
-   :::column span="":::
-      ![SAP Procurement](media/overview/sap-procure-icon-sq.png "SAP Procurement") <br> [SAP Procurement](https://aka.ms/AccessSAPProcurementTemplate) <br> Transform the way your employees view and work with SAP procurement data.
-   :::column-end:::
-   :::column span="":::
-      ![Employee Kudos](media/overview/kudos-icon-sq.png "Employee Kudos") <br> [Employee Kudos](https://aka.ms/AccessEmployeeKudosTemplate) <br> Empower employees to give and receive recognition for great work.
-           :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      ![Awards and Recognition](media/overview/awards-req-icon-sq.png "Awards and Recognition") <br> [Awards and Recognition](https://aka.ms/AccessAwardsandRecognitionTemplate) <br> Facilitate an engaging and efficient employee awards program.
-   :::column-end:::
-   :::column span="":::
-      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> [Onboarding Buddy](https://aka.ms/AccessOnboardingBuddyTemplate) <br> Match new employees to _Buddies_.
-   :::column-end:::
-:::row-end:::
+- [Get started with SAP Procurement template](finance/sap-procurement/administer/get-started.md)
+- [Install and configure the Employee Kudos template](hr/employee-kudos/install-and-configure.md)
+- [Install and configure the Awards and Recognition template](hr/awards-and-recognition/install-and-configure.md)
+- [Install and configure the Onboarding Buddy template](hr/onboarding-buddy/install-and-configure.md)
 
-## Templates for Power Platform support
+## Support
 
 Templates for Power Platform are published _as is_. However, we do provide template support to help you be successful.
 
@@ -86,17 +97,3 @@ Support can be accessed at [Templates for Power Platform](https://github.com/mic
 - access template assets
 - access template release updates
 - access template support resources
-
-## Next steps
-
-- [Get started with SAP Procurement template](finance/sap-procurement/administer/get-started.md)
-- [Install and configure the Employee Kudos template](hr/employee-kudos/install-and-configure.md)
-- [Install and configure the Awards and Recognition template](hr/awards-and-recognition/install-and-configure.md)
-- [Install and configure the Onboarding Buddy template](hr/onboarding-buddy/install-and-configure.md)
-
-## See also
-
-- [SAP Procurement template for Power Platform](finance/sap-procurement/overview.md)
-- [Employee Kudos template for Power Platform](hr/employee-kudos/overview.md)
-- [Awards and Recognition template for Power Platform](hr/awards-and-recognition/overview.md)
-- [Onboarding Buddy template for Power Platform](hr/onboarding-buddy/overview.md)

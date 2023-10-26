@@ -1,6 +1,6 @@
 ---
 title: Use the SAP Vendor Payment management app
-description: Get started using Microsoft's SAP Vendor Payment Management app for Power Platform.
+description: Learn how you can search for and view SAP vendor payment data using Microsoft's SAP Vendor Payment Management app for Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
 contributors:

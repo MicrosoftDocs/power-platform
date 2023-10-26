@@ -1,6 +1,6 @@
 ---
 title: Set up connections
-description: Learn how to set up data connections for SAP Procurement apps and flows.
+description: Learn how to set up data connections in solutions for SAP Procurement apps and flows.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -80,18 +80,22 @@ The two connection references contained in the SAP Procurement solution are:
 - **SAP Dataverse**: A placeholder for Dataverse connection.
 - **SAP ERP**: A placeholder for SAP ERP connection.
 
-More information: [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference)
+## Related content
 
-## Next steps
+[Connectors overview](/connectors/connectors)
 
-- [Configure security groups](configure-security-groups.md)
-- [Apply seed data](apply-seed-data.md)
+[Create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection)
+
+[Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference)
+
+[Manage connections in Power Automate](/power-automate/add-manage-connections)
+
+[Manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
+
+### Next steps
+
+[Configure security groups](configure-security-groups.md)
 
 ### See also
 
-- [Overview](../overview.md)
-- [Get started](get-started.md)
-- [Connectors overview](/connectors/connectors)
-- [Create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection)
-- [Manage connections in Power Automate](/power-automate/add-manage-connections)
-- [Manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
+[Get started with the SAP Procurement template](get-started.md)

@@ -1,6 +1,6 @@
 ---
 title: Customize the Onboarding Buddy app
-description: Learn how to customize the Onboarding Buddy app.
+description: You can customize the Onboarding Buddy app to fit how you want to run the program in your organization. Learn how to get started.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
@@ -63,7 +63,7 @@ Once you've added the *Buddy Onboard Emails* flow, you can edit the emails.
 
 These screens allow you to introduce the buddy program and offer related details to your program participants.
 
-:::image type="content" source="media/customize/ob-signup-welcome.png" alt-text="Screenshot of the three introductory Onboarding Buddy app screens.":::
+:::image type="content" source="media/customize/ob-start-update.png" alt-text="Screenshot of the three introductory Onboarding Buddy app screens.":::
 
 ### Customize the introductory screens
 

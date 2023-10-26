@@ -1,6 +1,6 @@
 ---
 title: Use the SAP Solution Administrator model-driven app
-description: Use the SAP Solution Administrator model-driven app to configure and manage data.
+description: Learn how to use Microsoft's SAP Solution Administrator model-driven app to configure SAP data in your apps and flows and monitor the solutions you deploy.
 author: tverhasselt
 ms.author: thoverh
 contributors:
@@ -55,7 +55,10 @@ All SAP transactional data is sourced from your SAP system and not stored in Pow
 
 More information: [What is Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro)
 
+### Next steps
+
+[Extend cloud flows](extend-cloud-flows.md)
+
 ### See also
 
-- [Overview](../overview.md)
-- [Get started](get-started.md)
+[Get started with the SAP Procurement template](get-started.md)
