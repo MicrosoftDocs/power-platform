@@ -131,6 +131,20 @@ conceptualContent:
             - url: /assessments/3c62fd23-9d36-491c-8941-26d5553365f8
               itemType: overview
               text: Power Platform adoption assessment
+        - title: Copilot capabilities
+          links:
+            - url: responsible-ai-overview.md
+              itemType: overview
+              text: Responsible AI FAQs
+            - url: /power-apps/maker/common/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Apps
+            - url: /power-automate/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Automate
+            - url: /power-pages/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Pages
         - title: Microsoft Power Fx
           links:
             - url: ./power-fx/overview.md
@@ -152,13 +166,14 @@ additionalContent:
         # Card
         - title: AI Builder
           summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
-          url: /ai-builder
+          url: /ai-builder        
         # Card
-        - title: Common Data Model
-          summary: "Unify data across all your business processes and enable interoperability among apps"
-          url: /common-data-model/
         - title: Connectors
           summary: "Connect to hundreds of data sources using a library of connectors"
+          url: /connectors/
+        # Card
+        - title: Power Fx
+          summary: "Low-code, strongly-typed, declarative, and functional language based on spreadsheet-like formulas"
           url: /connectors/
     - title: Similar Microsoft products
       items:
