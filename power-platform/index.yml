@@ -169,7 +169,7 @@ additionalContent:
         # Card
         - title: Power Fx
           summary: "Low-code, strongly-typed, declarative, and functional language based on spreadsheet-like formulas"
-          url: /connectors/
+          url: /power-platform/power-fx/overview
     - title: Similar Microsoft products
       items:
         # Card
