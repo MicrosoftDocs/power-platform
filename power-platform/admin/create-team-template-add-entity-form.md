@@ -14,7 +14,7 @@ search.audienceType:
   - admin
 ---
 
-<!-- Do you want the steps that start on line 126 to restart numbering or continue from the previous list? The note in line 121 causes the list to restart, unless you insert the note. -->
+<!-- Do you want the steps that start on line 126 to restart numbering or continue from the previous list? The note in line 121 causes the list to restart, unless you move the note a couple of space to the right. -->
 
 
 # Create a team template to control access rights for automatically created teams
