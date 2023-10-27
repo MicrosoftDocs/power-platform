@@ -10,7 +10,7 @@ ms.author: sidhartg
 ms.reviewer: sericks
 search.audienceType:
   - admin
-contributors:
+contributors: 
   - JesseParsons
   - tapanm-msft
   - sidhartg
