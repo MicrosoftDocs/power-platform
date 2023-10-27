@@ -33,13 +33,13 @@ The SAP ERP connector supports the following authentication types:
 |--------------|--------------|----------------|
 | [SAP authentication](/connectors/saperp/#sap-authentication)     | Use SAP user name and password to access SAP server.  | Step 4        |
 | [Windows authentication](/connectors/saperp/#windows-authentication)     | Use Windows user name and password to access SAP server. |   Steps 1, 2, 3, 4      |
-| [Entra ID (Azure AD) authentication](/connectors/saperp/#azure-ad-integrated)    | Use Azure AD to access SAP server. | Steps 1, 2, 3, 4     |
+| [Entra ID (Azure AD) authentication](/connectors/saperp/#azure-ad-integrated)    | Use Entra ID to access SAP server. | Steps 1, 2, 3, 4     |
 
 > [!NOTE]
 > Specific administrative privileges are required to set up SSO in Azure and SAP. Be sure to obtain the necessary admin privileges for each system before setting up SSO.
 More information:
 
-- [Azure Active Directory documentation](/azure/active-directory/)
+- [Microsoft Entra documentation](/entra/)
 - [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
 
 ## Step 1: Configure Kerberos constrained delegation
@@ -98,7 +98,7 @@ More information: [Use Kerberos single sign-on for SSO to SAP BW using CommonCry
 
 ## Step 3: Enable SAP SNC for Azure AD and Windows authentication
 
-The SAP ERP connector supports Entra ID (Azure AD) and Windows authentication by enabling SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so secure single sign-on to SAP environments can be established. The following property guidance helps with setup.
+The SAP ERP connector supports Entra ID, formerly Azure AD, and Windows server AD authentication by enabling SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so secure single sign-on to SAP environments can be established. The following property guidance helps with setup.
 
 | Property | Description |
 |---------|---------|
@@ -112,7 +112,7 @@ The SAP SNC name for the user must equal the user's Active Directory fully quali
 
 > [!NOTE]
 >
-> Entra ID (Azure AD) auth only—the _ID (Active Directory) SAP Service Principal_ account must have AES 128 or AES 256 defined on the _msDS-SupportedEncryptionType_ attribute.
+> Entra ID (Azure AD) auth only—the _Active DirectorySAP Service Principal_ account must have AES 128 or AES 256 defined on the _msDS-SupportedEncryptionType_ attribute.
 
 ## Step 4: Set up SAP server and user accounts to allow actions
 
@@ -131,7 +131,6 @@ More information on setup and configuration:
 - [SAP Single Sign-On](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON)
 - [Secure Login for SAP Single Sign-On Implementation Guide](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON/df185fd53bb645b1bd99284ee4e4a750/631b1669678d41d79d94601c238e218b.html)
 - [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
-- [Azure documentation](/azure/?product=networking)
 - [SAP ERP connector](/connectors/saperp/)
 - [Azure Logic Apps SAP connector](/azure/logic-apps/logic-apps-using-sap-connector)
 - [Data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention)
@@ -139,10 +138,8 @@ More information on setup and configuration:
 
 ## Next steps
 
-- [Install solutions](install.md)
-- [Set up connections](set-up-connections.md)
+[Install solutions](install.md)
 
 ### See also
 
-- [Overview](../overview.md)
-- [Get started](get-started.md)
+[Get started with the SAP Procurement template](get-started.md)
