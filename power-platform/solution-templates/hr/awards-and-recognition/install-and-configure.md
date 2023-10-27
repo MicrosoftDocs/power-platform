@@ -4,7 +4,7 @@ description: Learn how to install, configure, and deploy the Awards and Recognit
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: install-set-up-deploy
+ms.topic: how-to
 ms.date: 09/27/2023
 ms.custom: bap-template
 ms.service: power-platform
