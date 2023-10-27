@@ -16,6 +16,8 @@ contributors:
 ---
 # App object in Power Apps
 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+
 Provides information about the currently running app and control over the app's behavior.
 
 ## Description
