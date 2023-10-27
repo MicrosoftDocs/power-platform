@@ -4,7 +4,7 @@ description: Learn how to install and configure the Onboarding Buddy template fo
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: install-set-up-deploy
+ms.topic: how-to
 ms.date: 09/29/2023
 ms.custom: bap-template
 ms.service: power-platform
