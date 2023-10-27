@@ -13,13 +13,20 @@ ms.date: 08/22/2023
 search.audienceType: 
   - admin
 ---
+
+<!-- Do you want the steps that start on line 126 to restart numbering or continue from the previous list? The note in line 121 causes the list to restart, unless you insert the note. -->
+
+
 # Create a team template to control access rights for automatically created teams
 
 <!-- legacy procedure -->
 
-A team template can be used for the entities that are enabled for automatically created access teams. In the team template, you have to specify the entity type and the access rights on the entity record. For example, you can create a team template for an account entity and specify the Read, Write, and Share access rights on the account record that the team members are granted when the team is automatically created. After you create a team template, you have to customize the entity main form to include the new team template. After you publish customizations, the access team template is added in all record forms for the specified entity in the form of a list. For example, you created a team template called “Sales team” for the account entity. On all account record forms you’ll see the list called “Sales team”. You can add or remove team members using this list.  
+A team template can be used for the entities that are enabled for automatically created access teams. In the team template, you have to specify the entity type and the access rights on the entity record. For example, you can create a team template for an account entity and specify the Read, Write, and Share access rights on the account record that the team members are granted when the team is automatically created. 
+
+After you create a team template, you have to customize the entity main form to include the new team template. After you publish customizations, the access team template is added in all record forms for the specified entity in the form of a list. For example, you created a team template called “Sales team” for the account entity. On all account record forms you’ll see the list called “Sales team”. You can add or remove team members using this list.  
 
 To learn more about creating, using, and adding access teams to a solution, watch the following video.
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18Hte] 
 
     
@@ -28,7 +35,7 @@ To learn more about creating, using, and adding access teams to a solution, watc
 Make sure you have the system administrator or system customizer security role or equivalent permissions.
 
 Check your security role:
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user information](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
