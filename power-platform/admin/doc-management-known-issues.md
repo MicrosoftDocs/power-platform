@@ -167,7 +167,7 @@ This error occurs because these filter by options aren't currently supported wit
 
 The next and previours page arrow buttons in the SharePoint grid do not work. This is a known issue.
 
-**Resolution**: Users can selet the **Load More** button at the bottom-left of the page or select **Open Location** to go to the SharePoint site to access the file.
+**Resolution**: Users can selet the **Load More** button at the bottom of the page or select **Open Location** to go to the SharePoint site to access files.
 
 ### See also
 
