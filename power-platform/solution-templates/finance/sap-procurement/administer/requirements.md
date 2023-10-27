@@ -130,4 +130,4 @@ Be sure admin centers are set up and ready to support an enterprise-level deploy
 
 ### See also
 
-[Frequently asked questions about integrating SAP with Power Platform](/sap-procurement/faqs.md)
+[Frequently asked questions about integrating SAP with Power Platform](../faqs.md)
