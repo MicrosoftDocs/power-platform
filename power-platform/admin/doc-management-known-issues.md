@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 10/26/2022
+ms.date: 10/27/2023
 ms.custom: 
 ms.topic: article
 applies_to: 
@@ -17,6 +17,9 @@ ms.tgt_pltfrm:
 topic-status: Drafting
 search.audienceType: 
   - admin
+ms.contributors:
+- sericks
+- srihas
 ---
 # Known issues with document management
 
@@ -159,6 +162,12 @@ This error occurs with the following filter by options in the document associate
 :::image type="content" source="media/filterby-unsupported-docmgt.png" alt-text="Filter by options not supported":::
 
 This error occurs because these filter by options aren't currently supported with the document associated grid.
+
+### Next and previous page arrow buttons in the SharePoint grid do not work
+
+The next and previours page arrow buttons in the SharePoint grid do not work. This is a known issue.
+
+**Resolution**: Users can selet the **Load More** button at the bottom-left of the page or select **Open Location** to go to the SharePoint site to access the file.
 
 ### See also
 
