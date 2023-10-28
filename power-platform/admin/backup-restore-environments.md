@@ -23,7 +23,7 @@ The ability to change the backup retention period is useful for managed environm
 - This ability to extend the backup retention period beyond seven days is supported only for [managed environments](managed-environment-overview.md).
 - If you change the backup retention period, the new setting applies to all existing and future backups. Because the change might take up to 24 hours to go into effect on the existing backups, some backups might be deleted sooner than expected.
 
-To change the backup retention period, you must be an admin who has one of these roles in Azure Active Directory (Azure AD):
+To change the backup retention period, you must be an admin who has one of these roles in Microsoft Entra ID:
 
 - Global admin
 - Power Platform admin

@@ -135,7 +135,7 @@ Get-AppQuarantineState -EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
 ## Conditional Access on individual apps (preview)
-In addition to respecting Conditional Access policies applied to the Power Apps service, it is possible to apply Azure AD Conditional Access policies to individual apps created using Power Apps. For example, an admin can apply a Conditional Access policy requiring Multi-factor authentication only on apps containing sensitive data. Power Apps leverages [Azure AD Conditional Access authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview) as the mechanism to target Conditional Access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
+In addition to respecting Conditional Access policies applied to the Power Apps service, it is possible to apply Microsoft Entra Conditional Access policies to individual apps created using Power Apps. For example, an admin can apply a Conditional Access policy requiring Multi-factor authentication only on apps containing sensitive data. Power Apps leverages [Conditional Access authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview) as the mechanism to target Conditional Access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
 
 > [!NOTE]
 > 1. Authentication contexts set on an app are not moved with apps in solutions and moved across environments. This allows different authentication contexts to be applied to apps in different environments. Also, as an app moves across environments via solutions the authentication context set in an environment is preserved. For example, if an authentication context is set on an app in a UAT environment, that authentication context is preserved. 
@@ -157,7 +157,7 @@ After admins associate authentication contexts to Conditional Access policies in
 End users that do not meet Conditional Access policy requirements will observe the following dialog after signing in to access an app. 
 
 > [!div class="mx-imgBorder"] 
-> ![Conditional Access enforcement experience](media/admin-manage-apps/power_apps_conditional_access_AAD_dialog.png "Conditional Access enforcement experience" )
+> ![Conditional Access enforcement experience](media/admin-manage-apps/power_apps_conditional_access_Microsoft Entra_dialog.png "Conditional Access enforcement experience" )
 
 The following table reflects conditional access on granular apps support:
 

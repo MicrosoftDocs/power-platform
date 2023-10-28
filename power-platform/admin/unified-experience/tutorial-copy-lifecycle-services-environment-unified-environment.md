@@ -104,7 +104,7 @@ Load the PowerShell console and execute the following commands to generate the e
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 
 # Set variables for your session
-$TenantId = "YOUR_TENANT_GUID_FROM_AAD"
+$TenantId = "YOUR_TENANT_GUID_FROM_Microsoft Entra ID"
 $SPNId = "YOUR_AZURE_APPLICATION_REGISTRATION_CLIENT_ID"
 $ClientSecret = "YOUR_AZURE_APPLICATION_CLIENT_SECRET"
 $SourceEnvironmentID = "YOUR_SOURCE_ENVIRONMENT_ID_HERE"
@@ -124,6 +124,3 @@ Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -C
 Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDefinition $copyToRequest
 ```
 ---
-
-
-

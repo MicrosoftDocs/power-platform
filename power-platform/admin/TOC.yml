@@ -588,9 +588,9 @@
                   href: add-remove-territory-members.md
                 - name: User session management
                   href: user-session-management.md
-                - name: Conditional access with Azure AD
+                - name: Conditional access with Microsoft Entra ID
                   href: restrict-access-online-trusted-ip-rules.md
-                - name: B2B collaboration with Azure AD
+                - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
             - name: Security FAQs
               href: security/faqs.md

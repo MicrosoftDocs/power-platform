@@ -28,7 +28,7 @@ Managing user settings can be done in the Power Platform admin center. Use the f
 |---------|---------|
 |Run diagnostics     | Access diagnostics on a user in an environment. See [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics).        |
 |Manage security roles     | Assign security roles to control a user's access to data through a set of access levels and permissions. See [Assign a security role to a user](assign-security-roles.md).        |
-|Refresh user     | Re-sync the **User** page from Azure Active Directory.        |
+|Refresh user     | Re-sync the **User** page from Microsoft Entra ID.        |
 |Change position     | Specify the position that you want to assign a user. See [Hierarchy security to control access](hierarchy-security.md).   |
 |Change manager     | Specify the manager you want to assign to a user. See [Hierarchy security to control access](hierarchy-security.md).    |
 |Reassign records     | Assign all the records owned by the current user or team to a user or team.       |
@@ -45,4 +45,3 @@ Managing user settings can be done in the Power Platform admin center. Use the f
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

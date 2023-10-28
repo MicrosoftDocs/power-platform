@@ -81,7 +81,7 @@ To run the PowerShell cmdlets for app creators, do the following:
 4. Before accessing any of the commands, you have the option to provide your credentials using the following command. These credentials are refreshed for up to ~8 hours before you're required to sign in again to continue using the cmdlets.
 
     ```powershell
-    # This call opens prompt to collect credentials (Azure Active Directory account and password) used by the commands 
+    # This call opens prompt to collect credentials (Microsoft Entra account and password) used by the commands 
     Add-PowerAppsAccount
     ```
 
@@ -280,12 +280,12 @@ The above command stores the Power Apps user details (basic usage information ab
 ```powershell
 Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 ```
-Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans and plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
+Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans and plans that are sourced from Microsoft Entra ID. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
 The export can take a while for tenants with a large number of Microsoft Power Platform users.
 
 > [!NOTE]
-> Output of the Get-AdminPowerAppLicenses cmdlet only includes licenses for users that have accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users that have had licenses assigned in Azure AD (typically via the Microsoft 365 admin center) but have never accessed Power Platform services won't have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Azure AD can take up to seven days to reflect in the output for users that haven't accessed the service recently.
+> Output of the Get-AdminPowerAppLicenses cmdlet only includes licenses for users that have accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users that have had licenses assigned in Microsoft Entra ID (typically via the Microsoft 365 admin center) but have never accessed Power Platform services won't have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Microsoft Entra ID can take up to seven days to reflect in the output for users that haven't accessed the service recently.
 
 #### Set logged in user as the owner of a canvas app
 
@@ -344,7 +344,7 @@ $settings = Get-TenantSettings
 $settings.PowerPlatform.PowerApps.disableShareWithEveryone 
 ```
 
-This setting controls whether users with the Environment Maker security role can share canvas apps with '[Everyone in an organization](/powerapps/maker/canvas-apps/share-app)'. When the setting is set to ‘true’, only users with an admin role (Dynamics 365 admin, Power Platform Service admin, Azure AD tenant admin) can share apps with ‘Everyone in an organization’.  
+This setting controls whether users with the Environment Maker security role can share canvas apps with '[Everyone in an organization](/powerapps/maker/canvas-apps/share-app)'. When the setting is set to ‘true’, only users with an admin role (Dynamics 365 admin, Power Platform Service admin, Microsoft Entra tenant admin) can share apps with ‘Everyone in an organization’.  
 
 Regardless of this tenant settings value, makers with the sharing privilege can share apps with security groups of any size. This control only determines whether the ‘Everyone’ shorthand may be used when sharing.  
 
@@ -433,7 +433,7 @@ Remove-AdminFlowUserDetails –UserId 'UserId'
 
 Deletes the details on a flow user completely from the Microsoft database. All flows the input user owns must be deleted before the flow user details can be purged.
 
-**Note**: The UserId field is the Object ID of the user's Azure Active Directory record, which can be found in the [Azure Portal](https://portal.azure.com) under **Azure Active Directory** > **Users** > **Profile** > **Object ID**. You must be an admin to access this data from here.
+**Note**: The UserId field is the Object ID of the user's Microsoft Entra record, which can be found in the [Azure Portal](https://portal.azure.com) under **Microsoft Entra ID** > **Users** > **Profile** > **Object ID**. You must be an admin to access this data from here.
 
 #### Export all flows to a CSV file
 
@@ -667,9 +667,9 @@ Add-AllowedConsentPlans
 Get-AllowedConsentPlans
 ```
 
-The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or developer plans that users can sign themselves up for via Power Apps/Power Automate portals/Power Automate for desktop. "Ad-hoc subscription" or "Viral" consent plans are trial licenses that users can sign themselves up for via https://signup.microsoft.com or admins can assign to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal. 
+The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or developer plans that users can sign themselves up for via Power Apps/Power Automate portals/Power Automate for desktop. "Ad-hoc subscription" or "Viral" consent plans are trial licenses that users can sign themselves up for via https://signup.microsoft.com or admins can assign to users via Microsoft Entra ID or the Microsoft 365 admin portal. 
 
-By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command and disabling the setting *AllowAdHocSubscriptions* in Azure AD. 
+By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command and disabling the setting *AllowAdHocSubscriptions* in Microsoft Entra ID. 
 
 It is important to know that when using *Remove-AllowedConsentPlans*, all existing plans of the specified type are removed from all users in the tenant and aren't be recoverable. In addition, it blocks all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
 

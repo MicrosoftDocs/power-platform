@@ -21,14 +21,14 @@ You can use security enhancements to better secure the customer engagement apps 
 
 The maximum user session timeout of 24 hours is removed.  This means that a user is not forced to sign in with their credentials to use the customer engagement apps and other Microsoft service apps like Outlook that were opened in the same browser session every 24 hours. 
 
-### Honor Azure AD session policy 
-By default, the customer engagement apps leverage the Azure Active Directory (Azure AD) [session policy](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout.  Customer engagement apps use the Azure AD ID Token with a Policy Check Interval (PCI) claims.  Every hour a new Azure AD ID Token is fetched silently in the background and the Azure AD instant policy is enforced (by Azure AD). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Azure AD session policy is enforced. 
+### Honor Microsoft Entra session policy 
+By default, the customer engagement apps leverage the Microsoft Entra [session policy](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout.  Customer engagement apps use the Microsoft Entra ID Token with a Policy Check Interval (PCI) claims.  Every hour a new Microsoft Entra ID Token is fetched silently in the background and the Microsoft Entra instant policy is enforced (by Microsoft Entra ID). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Microsoft Entra session policy is enforced. 
 
-This Azure AD ID token refresh cycle continues in the background based on the Azure AD token lifetime policy configurations.  Users continue to access the customer engagement apps/Microsoft Dataverse data without the needs to reauthenticate until the Azure AD token lifetime policy expires. 
+This Microsoft Entra ID token refresh cycle continues in the background based on the Microsoft Entra token lifetime policy configurations.  Users continue to access the customer engagement apps/Microsoft Dataverse data without the needs to reauthenticate until the Microsoft Entra token lifetime policy expires. 
 
 > [!NOTE]
-> - The default Azure AD refresh token expiration is 90 days.  This token lifetime properties can be configured. For detailed information, see [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties).
-> - The Azure AD session policy is bypassed and the maximum user session duration is reverted back to 24 hours in the following scenarios:
+> - The default Microsoft Entra refresh token expiration is 90 days.  This token lifetime properties can be configured. For detailed information, see [Configurable token lifetimes in Microsoft Entra ID](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties).
+> - The Microsoft Entra session policy is bypassed and the maximum user session duration is reverted back to 24 hours in the following scenarios:
 >   - In a browser session, you went to the **Power Platform admin center** and opened an environment by manually keying in the environment URL (either on the same browser tab or a new browser tab).<br/> 
 >     **To workaround** the policy bypass and maximum 24 hour user session, open the environment from the Power Platform admin center **environments** tab by selecting the **Open** link.
 >   - In the same browser session, open a version 9.1.0.3647 or higher environment and then open a version earlier 9.1.0.3647. <br/>
@@ -37,11 +37,11 @@ This Azure AD ID token refresh cycle continues in the background based on the Az
 > To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button (![User profile Settings button.](media/user-profile-settings-button.png)) > **About**. 
 
 
-### Resilience to Azure AD outages 
-In the event that there are intermittent Azure AD outages, authenticated users can continue to access the customer engagement apps/Dataverse data if the PCI claims have not expired or the user has opted in the 'Stay signed in' during authentication. 
+### Resilience to Microsoft Entra outages 
+In the event that there are intermittent Microsoft Entra outages, authenticated users can continue to access the customer engagement apps/Dataverse data if the PCI claims have not expired or the user has opted in the 'Stay signed in' during authentication. 
 
 ### Set Custom Session timeout for individual environment 
-For environments that require different session timeout values, administrators can continue to set the session timeout and/or inactivity timeout in the System Settings.  These settings override the default Azure AD session policy and users will be directed to Azure AD for reauthentication when these settings expired.   
+For environments that require different session timeout values, administrators can continue to set the session timeout and/or inactivity timeout in the System Settings.  These settings override the default Microsoft Entra session policy and users will be directed to Microsoft Entra ID reauthentication when these settings expired.   
 
 ### To change this behavior
 
@@ -106,7 +106,7 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 
 ## Access management
 
-Customer engagement apps use Azure Active Directory as the identity provider.  To secure the user's access to customer engagement apps, the following were implemented:
+Customer engagement apps use Microsoft Entra ID as the identity provider.  To secure the user's access to customer engagement apps, the following were implemented:
 
 - To enforce users to reauthenticate, users are required to sign in with their credentials after they signed out within the application. 
 - To prevent users from sharing credentials to access customer engagement apps, the user access token is validated to ensure that the user who was given access by the identity provider is the same user who is accessing customer engagement apps.
