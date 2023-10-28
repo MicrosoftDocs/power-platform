@@ -16,7 +16,7 @@ Makers can use the ALM Accelerator app to increase their productivity when they'
 
 ## Dataverse user setup
 
-Users need to have the appropriate roles to access resources in Dataverse when they run the ALM Accelerator app. We recommend you create a [group team in Dataverse](/power-platform/admin/manage-teams), add your makers to it, and assign the appropriate roles to the team. Then you can add makers to and remove them from the group in Azure Active Directory to manage their access.
+Users need to have the appropriate roles to access resources in Dataverse when they run the ALM Accelerator app. We recommend you create a [group team in Dataverse](/power-platform/admin/manage-teams), add your makers to it, and assign the appropriate roles to the team. Then you can add makers to and remove them from the group in Microsoft Entra to manage their access.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and then select the environment in which the maker accounts exist.
 
@@ -26,9 +26,9 @@ Users need to have the appropriate roles to access resources in Dataverse when t
 
 1. Enter a **Team name**, and then select a **Business unit** and **Administrator**.
 
-1. Select **AAD Security Group** as the **Team type**.
+1. Select **Microsoft Entra Security Group** as the **Team type**.
 
-1. Search for and select the name of the **AAD Security Group** that you want to have access to the ALM Accelerator app.
+1. Search for and select the name of the **Microsoft Entra Security Group** that you want to have access to the ALM Accelerator app.
 
 1. Select members for **Membership type**.
 

@@ -15,7 +15,7 @@ ms.custom: bap-template
 You can configure the components of the ALM Accelerator for Power Platform either using its administration app or [manually](setup-components-manually.md). This article guides you through using the admin app and is structured in seven sections:
 
 - [**Prerequisites**](#prerequisites)
-- [**Configure Azure AD app registrations**](#configure-azure-ad-app-registrations)
+- [**Configure Microsoft Entra app registrations**](#configure-azure-ad-app-registrations)
 - [**Install Azure DevOps extensions**](#install-azure-devops-extensions)
 - [**Import the solution and configure the app**](#import-the-solution-and-configure-the-app)
 - [**Set up your first Azure DevOps project for use with the ALM Accelerator**](#set-up-your-first-azure-devops-project-for-use-with-the-alm-accelerator)
@@ -40,7 +40,7 @@ Before you install the ALM Accelerator for Power Platform, make sure you've met 
 
 - To complete the steps in this section, you need the following users and permissions in Azure, Azure DevOps, and Power Platform:
 
-  - A licensed Azure user with permissions to create and view Azure Active Directory (Azure AD) groups, create app registrations, and grant admin consent to app registrations in Azure AD
+  - A licensed Azure user with permissions to create and view Microsoft Entra groups, create app registrations, and grant admin consent to app registrations in Microsoft Entra ID
   - A licensed Azure DevOps user with permissions to create and manage pipelines, service connections, repos, and extensions
   - A licensed Power Platform user with permissions to create application users and grant them administrative permissions
 
@@ -49,18 +49,18 @@ Before you install the ALM Accelerator for Power Platform, make sure you've met 
   - [Dataverse (legacy)](/connectors/commondataservice/)
   - HTTP
   - [Power Apps for Makers](/connectors/powerappsforappmakers/)
-  - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
+  - [HTTP with Microsoft Entra ID](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
   - ALM Accelerator Custom DevOps (this connector is created as part of the [accelerator solution import](#import-the-solution-and-configure-the-app))
   - [Office 365 Users](/connectors/office365users/)
   - HTTP
 
 - [Install the Creator Kit](/power-platform/guidance/creator-kit/setup) in the environment where you install the ALM Accelerator.
 
-## Configure Azure AD app registrations
+## Configure Microsoft Entra app registrations
 
 The following steps are general to the functionality of the ALM Accelerator and aren't specific to any project or solution.
 
-### Create an app registration in your Azure AD environment
+### Create an app registration in your Microsoft Entra environment
 
 Create an app registration for the ALM Accelerator to grant the app and associated pipelines permissions required to perform operations in Azure DevOps and Power Apps or Dataverse. You only need to do this once.
 
@@ -70,7 +70,7 @@ The following steps show how to create a single app registration with permission
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. Select **Azure Active Directory** > **App registrations**.
+1. Select **Microsoft Entra** > **App registrations**.
 
 1. Select **+ New registration**, and then give the registration a name, such as *ALMAcceleratorServicePrincipal*.
 
@@ -192,7 +192,7 @@ Import the ALM Accelerator canvas app into your Power Platform environment, and 
 
 1. On the **Connections** page, select or create a connection to connect the **CDS DevOps connection** to Dataverse.
 
-    When you create a connection for **HTTP with Azure AD**, use **[Microsoft Graph](https://graph.microsoft.com)** for both parameters.
+    When you create a connection for **HTTP with Microsoft Entra**, use **[Microsoft Graph](https://graph.microsoft.com)** for both parameters.
 
 1. Select **Import**.
 
@@ -207,7 +207,7 @@ Import the ALM Accelerator canvas app into your Power Platform environment, and 
    | Name | Value |
    |--|--|
    | **Authentication Type** | **OAuth 2.0** |
-   | **Identity provider** | **Azure Active Directory** |
+   | **Identity provider** | **Microsoft Entra ID** |
    | **Client ID** | The **Application (client) ID** you copied when you [created the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
    | **Client secret** | The **Application (client) secret value** you copied when you [created the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
    | **Tenant ID** | Leave the default value, **common** |

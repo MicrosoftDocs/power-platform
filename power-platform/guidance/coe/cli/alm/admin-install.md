@@ -25,7 +25,7 @@ As a first step you'll need to complete the initial steps of an ALM deployment a
 The following roles are involved with Power Platform.
 
 - Administrator
-  - Azure Active Directory - Permissions to create Azure Active Directory applications with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent).
+  - Microsoft Entra ID - Permissions to create Microsoft Entra applications with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent).
   - Power Platform - Environment administrator to create validation, test, and production environments.
   - Azure DevOps - Organization and project administrator.
 - Maker
@@ -38,7 +38,7 @@ It is assumed that this installation will be run by a single user that has the f
 
 - DevOps administrator rights.
 
-- Azure Active Directory administrator rights.
+- Microsoft Entra administrator rights.
 
 ## Before you start
 
@@ -102,7 +102,7 @@ More information: [COE ALM generate install](https://aka.ms/coe-cli/help/alm/ins
 
 More information: [CoE ALM generate install](https://aka.ms/coe-cli/help/alm/install)
 
-If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
+If you're prompted to create an HTTP with Microsoft Entra ID (AD) connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Microsoft Entra Resource URI**.
 
 1. [Update permissions for the project build service](../../setup-almacceleratorpowerplatform.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 

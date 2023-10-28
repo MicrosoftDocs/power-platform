@@ -121,7 +121,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 - **Power Platform User** represents who an app is shared with. The following information is available for each user:
   - Display name
   - ID
-  - Group size (for users, this is set to 1; for groups, this is the group size according to Azure Active Directory)
+  - Group size (for users, this is set to 1; for groups, this is the group size according to Microsoft Entra ID)
   - Type (user, group, tenant)
   - User principal name (for users)
 
@@ -298,7 +298,7 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 | CLEANUP - Admin \| Sync Template v3 (Check Deleted) | Scheduled | Every two weeks | This long running flow runs every other week, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var Also Delete from CoE = no) or deletes them from the CoE (if Also Delete from CoE = yes). The audit log solution is able to find this information in on a daily basis for apps and flows, but not for other resources such as environments, desktop flows and chatbots. Run this flow periodically to check for deleted resources. |
 | CLEANUP - Admin \| Sync Template v3 (Connection Status) | Scheduled | Weekly | This flow runs weekly, and checks if any apps or flows have unresolved connections.|
 | CLEANUP - Admin \| Sync Template v3 (Delete Bad Data) | Scheduled | Daily | This flow runs daily, and looks for data in the inventory that is not complete, for example flows without an environment, and removes this data. |
-| CLEANUP - Admin \| Sync Template v3 (Orphaned Makers) | Scheduled | Weekly | This flow runs weekly, and checks if any makers have left the organization - if maker information can't be found in Azure AD/Office 365 Users, any resources created by the maker (apps, cloud and desktop flows, environments, chatbots) are marked as orphaned. |
+| CLEANUP - Admin \| Sync Template v3 (Orphaned Makers) | Scheduled | Weekly | This flow runs weekly, and checks if any makers have left the organization - if maker information can't be found in Microsoft Entra/Office 365 Users, any resources created by the maker (apps, cloud and desktop flows, environments, chatbots) are marked as orphaned. |
 | CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With) | Scheduled | Every two weeks | This long running flow runs every other week, and gets who the app is shared with by using [Get App Role Assignments as Admin](/connectors/powerappsforadmins/#get-app-role-assignments-as-admin). |
 | CLEANUP - Admin \| Sync Template v3 (PVA Usage)  | Scheduled | Monthly | This flow rolls up Power Virtual Agents (bot) information on a monthly basis. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using Power Virtual Agents in your tenant and are interested in getting a tenant-wide overview. |
 | CLEANUP HELPER - Check Deleted (Business Process Flows) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for business process flows  |
@@ -310,7 +310,7 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 | CLEANUP HELPER - Check Deleted (Custom Connectors) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for custom connectors  |
 | CLEANUP HELPER - Check Deleted (Ai Models) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for Ai Models  |
 | CLEANUP HELPER - Power Apps User Shared With | Child Flow | called from CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With) | runs once per environment to check |
-| HELPER - Add User to Security Role | Child Flow | Instant | This flow adds users to security roles. This flow currently supports adding Azure Active Directory (AAD) groups to security roles in the main organization of the current environment.  |
+| HELPER - Add User to Security Role | Child Flow | Instant | This flow adds users to security roles. This flow currently supports adding Microsoft Entra ID (Microsoft Entra ID) groups to security roles in the main organization of the current environment.  |
 | HELPER - CanvasAppOperations | Child Flow | Instant | This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
 | HELPER - CloudFlowOperations | Child Flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
 | HELPER - ObjectOperations | Child Flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. It calls that the operations supported are Delete and Assign (which reassigns owner). It calls either the **HELPER - CloudFlowOperations** or the **HELPER - CanvasAppOperations** child flow depending on its last parameter, objectType. It is needed due to a product bug in which you cannot call child flows with the Dataverse Connector from Canvas Apps. |
@@ -320,7 +320,7 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 | Command Center > Set CoE Flows State | Instant | from CoE Admin Command Center canvas app | Turns a flow on or off when called from a Canvas App. |
 | DLP Editor > Parse impacted resources into CSV | Instant | from DLP Editor v2 | This flow creates a CSV file of flows and apps impacted by DLP changes and sends it to the admin. |
 | SetupWizard>CallOrphan | Child Flow | Instant | This flow is triggered by a state in the Setup Wizard and calls the CLEANUP - Admin \| Sync Template v3 (Orphaned Makers) to identify orphaned makers immediately after setup.  |
-| SetupWizard>CreateGroup | Child Flow | Instant | This flow is triggered from the Setup Wizard if a new group is created when communication methods are getting configured.  This flow creates a new Azure Active Directory security group, and returns the group ID and email to the app. |
+| SetupWizard>CreateGroup | Child Flow | Instant | This flow is triggered from the Setup Wizard if a new group is created when communication methods are getting configured.  This flow creates a new Microsoft Entra security group, and returns the group ID and email to the app. |
 | SetupWizard>GetCurrentEnvironment | Child Flow | Instant | This flow is triggered from the Setup Wizard and uses the workflow() expression in Power Automate to return the current environment ID to the app. |
 | SetupWizard>GetTenantID | Child Flow | Instant | This flow is triggered from the Setup Wizard and calls [Graph API](/graph/api/organization-get) to return the current tenant ID to the app. |
 | SetupWizard>GetUserDetails | Child Flow | Instant | This flow is triggered from the Setup Wizard and calls [Graph API](/graph/api/user-list-licensedetails) to return which licenses are assigned to the current user (the user running the Setup Wizard) to the app. |
@@ -356,8 +356,8 @@ Use this app to:
 
 ![CoE Admin Command Center canvas app](media\commandcenter1.png "CoE Admin Command Center canvas app")
 
-When you first launch the app, you may have to establish a connection for [HTTP with Azure AD](/connectors/webcontents/), and set **Base Resource URL** and **Azure AD Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
-:::image type="content" source="media/httpazuread.png" alt-text="Establish an HTTP with Azure AD connection":::
+When you first launch the app, you may have to establish a connection for [HTTP with Microsoft Entra ID](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+:::image type="content" source="media/httpazuread.png" alt-text="Establish an HTTP with Microsoft Entra connection":::
 
 #### DLP Editor v2
 

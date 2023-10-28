@@ -140,15 +140,15 @@ At this point the control is functioning and selected members can be obtained fr
 PeoplePicker1.SelectedPeople
 ```
 
-### With Dataverse tables - AAD Users or Users
+### With Dataverse tables - Microsoft Entra Users or Users
 
 1. Set up the `Suggestions_Items` Property by specifying the below code snippet.
 
       Add Users or specific users(using below code) from table to the items collection(under `Suggestions_Items` property) of `PeoplePicker`.
 
-    -**`AAD Users` table**
+    -**`Microsoft Entra Users` table**
       ```powerapps-dot
-      Search('AAD Users', Self.SearchText,"displayname" ,"mail")
+      Search('Microsoft Entra Users', Self.SearchText,"displayname" ,"mail")
       ```
    -**`Users` table**
       ```powerapps-dot
@@ -157,7 +157,7 @@ PeoplePicker1.SelectedPeople
 
 1. Map the columns according to your need using AddColumns(). Below is an example of Column-Property Mapping:
 
-    |Property Name|AADUser Table Column|User Table Column|
+    |Property Name|Microsoft EntraUser Table Column|User Table Column|
     |-------------|--------------------|-----------------|
     |SuggestionKey|"mail"|"internalemailaddress"|
     |SuggestionName|"displayname"|"fullname"|

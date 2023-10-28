@@ -26,7 +26,7 @@ The first step is to ensure there's an environment to build and manage solutions
 
 ## Set up service principal
 
-The ALM Accelerator for Power Platform uses the created Azure Active Directory service principal to connect to environments and import and export the solutions. The user add command enables the ALM Accelerator to access each environment. The user add command adds the service principal as a user and assigns the system administrator security role to the user.
+The ALM Accelerator for Power Platform uses the created Microsoft Entra service principal to connect to environments and import and export the solutions. The user add command enables the ALM Accelerator to access each environment. The user add command adds the service principal as a user and assigns the system administrator security role to the user.
 
 1. Log out of any existing sessions if not the maker or a Power Platform tenant administrator.
 

@@ -40,7 +40,7 @@ Before you install the ALM Accelerator for Power Platform, make sure you've met 
 
 - To complete the steps in this section, you need the following users and permissions in Azure, Azure DevOps, and Power Platform:
 
-  - A licensed Azure user with permissions to create and view Azure Active Directory (Azure AD) groups, create app registrations, and grant admin consent to app registrations in Azure AD
+  - A licensed Azure user with permissions to create and view Microsoft Entra groups, create app registrations, and grant admin consent to app registrations in Microsoft Entra ID
   - A licensed Azure DevOps user with permissions to create and manage pipelines, service connections, repos, and extensions
   - A licensed Power Platform user with permissions to create application users and grant them administrative permissions
 
@@ -49,7 +49,7 @@ Before you install the ALM Accelerator for Power Platform, make sure you've met 
   - [Dataverse (legacy)](/connectors/commondataservice/)
   - HTTP
   - [Power Apps for Makers](/connectors/powerappsforappmakers/)
-  - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
+  - [HTTP with Microsoft Entra ID](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
   - ALM Accelerator Custom DevOps (this connector is created as part of the [accelerator solution import](#import-the-solution-and-configure-the-app))
   - [Office 365 Users](/connectors/office365users/)
   - HTTP
@@ -60,7 +60,7 @@ Before you install the ALM Accelerator for Power Platform, make sure you've met 
 
 The following steps are general to the functionality of the ALM Accelerator and aren't specific to any project or solution.
 
-### Create an app registration in your Azure AD environment
+### Create an app registration in your Microsoft Entra environment
 
 Create an app registration for the ALM Accelerator to grant the app and associated pipelines permissions required to perform operations in Azure DevOps and Power Apps or Dataverse. You only need to do this once.
 
@@ -70,7 +70,7 @@ The following steps show how to create a single app registration with permission
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. Select **Azure Active Directory** > **App registrations**.
+1. Select **Microsoft Entra** > **App registrations**.
 
 1. Select **+ New registration**, and then give the registration a name, such as *ALMAcceleratorServicePrincipal*.
 
@@ -245,7 +245,7 @@ To make sure the values of specific default environment variables are set during
 
     | Name | Description | Value |
     | --- | --- | --- |
-    | AADHost | The Azure Active Directory authorization endpoint | For public clouds, use *login.microsoftonline.com*. For government clouds, use the appropriate authorization URL. |
+    | Microsoft EntraHost | The Microsoft Entra authorization endpoint | For public clouds, use *login.microsoftonline.com*. For government clouds, use the appropriate authorization URL. |
     | ProcessCanvasApps | Whether canvas apps are unpacked during export or packed during builds | If False, then the canvas apps aren't unpacked during export or packed during builds. The [canvas app unpack and pack functionality is in preview](https://aka.ms/paccanvas) and isn't recommended for use in production environments at this time. However, you can't view canvas source code in source control unless you set this variable to True. |
 
 1. (**Optional**) If you use canvas studio test automation in your pipelines, add the following variables to the variable group:
@@ -336,7 +336,7 @@ Each Dataverse environment&mdash;development, validation, test, and production&m
 
 1. For **Service Connection Name**, enter the same URL you entered in step 4, including the training forward slash (/).
 
-1. Enter the **Tenant ID**, **Application (client) ID**, and **Client Secret** you copied from Azure AD when you [created the app registration](#create-the-app-registration).
+1. Enter the **Tenant ID**, **Application (client) ID**, and **Client Secret** you copied from Microsoft Entra when you [created the app registration](#create-the-app-registration).
 
 1. Select **Grant access permissions to all pipelines**.
 
@@ -636,7 +636,7 @@ You can allow all pipelines to access required service connections.
 
 ### Create a deployment configuration (optional)
 
-You need to create several configurations in a target environment after a solution is deployed. These configurations are specific to the environment and include connection references, environment variables, and permissions for Azure AD groups and Dataverse teams, in addition to sharing canvas apps and updating the ownership of solution components such as Power Automate flows. Along with these configurations, a target environment often needs sample or configuration data that's associated with Dataverse tables in the solution to provide a full end-to-end ALM experience.
+You need to create several configurations in a target environment after a solution is deployed. These configurations are specific to the environment and include connection references, environment variables, and permissions for Microsoft Entra groups and Dataverse teams, in addition to sharing canvas apps and updating the ownership of solution components such as Power Automate flows. Along with these configurations, a target environment often needs sample or configuration data that's associated with Dataverse tables in the solution to provide a full end-to-end ALM experience.
 
 If your solution requires these other configurations or data, follow the [deployment configuration guide](setup-data-deployment-configuration.md) to configure your pipelines based on the environments to which you're deploying.
 
@@ -660,7 +660,7 @@ Import the ALM Accelerator canvas app into your Power Platform environment, and 
 
 1. On the **Connections** page, select or create a connection to connect the **CDS DevOps connection** to Dataverse.
 
-    When you create a connection for **HTTP with Azure AD**, use **[Microsoft Graph](https://graph.microsoft.com)** for both parameters.
+    When you create a connection for **HTTP with Microsoft Entra**, use **[Microsoft Graph](https://graph.microsoft.com)** for both parameters.
 
 1. Select **Import**.
 
@@ -673,7 +673,7 @@ Import the ALM Accelerator canvas app into your Power Platform environment, and 
    | Name | Value |
    |--|--|
    | **Authentication Type** | **OAuth 2.0** |
-   | **Identity provider** | **Azure Active Directory** |
+   | **Identity provider** | **Microsoft Entra ID** |
    | **Client ID** | The **Application (client) ID** you copied when you [created the app registration](#create-the-app-registration) |
    | **Client secret** | The **Application (client) secret value** you copied when you [created the app registration](#create-the-app-registration) |
    | **Tenant ID** | Leave the default value, **common** |

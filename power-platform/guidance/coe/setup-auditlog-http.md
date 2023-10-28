@@ -27,18 +27,18 @@ The Center of Excellence (CoE) Starter Kit works without these flows, but the us
 
 1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide)
 1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
-1. A global admin is required to configure the Azure AD app registration.
+1. A global admin is required to configure the Microsoft Entra app registration.
 
-The Office 365 Management APIs use Azure Active Directory (Azure AD) to provide authentication services that you can use to grant rights for your application to access them.
+The Office 365 Management APIs use Microsoft Entra ID to provide authentication services that you can use to grant rights for your application to access them.
 
-## Create an Azure AD app registration for the Office 365 Management API
+## Create a Microsoft Entra app registration for the Office 365 Management API
 
-Using these steps, you can set up an Azure AD app registration for an HTTP call in a Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)
+Using these steps, you can set up a Microsoft Entra app registration for an HTTP call in a Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
-1. Go to **Azure Active Directory** > **App registrations**.
-   :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the Azure AD app registration.":::
+1. Go to **Microsoft Entra** > **App registrations**.
+   :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the Microsoft Entra app registration.":::
 
 1. Select **+ New Registration**.
 
@@ -85,9 +85,9 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 |------|------------|---------|
 | Audit Logs - Audience | The audience parameter for the HTTP calls. | Commercial (Default): https://<span>manage</span>.office.com<br><br>GCC: https://<span>manage-gcc</span>.office.com<br><br>GCC High: https://<span>manage</span>.office365.us><br><br>DoD: https://<span>manage</span>.protection.apps.mil|
 | Audit Logs - Authority | The authority field in the HTTP calls. | Commercial (Default): https://<span>login</span>.windows.net<br><br>GCC: https://<span>login</span>.windows.net<br><br>GCC High: https://<span>login</span>.microsoftonline.us<br><br>DoD: https://<span>login</span>.microsoftonline.us |
-| Audit Logs - ClientID | App registration Client ID. | The application client ID from the [Create an Azure AD app registration for the Office 365 Management API](#create-an-azure-ad-app-registration-for-the-office-365-management-api) step. |
-| Audit Logs - Client Secret | App registration client secret in plain text. | The application client secret from the [Create an Azure AD app registration for the Office 365 Management API](#create-an-azure-ad-app-registration-for-the-office-365-management-api) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
-| Audit Logs - Client Azure Secret | Azure Key Vault reference of the App registration client secret.  | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration for the Office 365 Management API](#create-an-azure-ad-app-registration-for-the-office-365-management-api) step. Leave empty if you're storing your client ID in plain text in the **Audit Logs - Client Secret** environment variable. This variable expects the Azure Key Vault reference, not the secret. Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)|
+| Audit Logs - ClientID | App registration Client ID. | The application client ID from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-an-azure-ad-app-registration-for-the-office-365-management-api) step. |
+| Audit Logs - Client Secret | App registration client secret in plain text. | The application client secret from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-an-azure-ad-app-registration-for-the-office-365-management-api) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
+| Audit Logs - Client Azure Secret | Azure Key Vault reference of the App registration client secret.  | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-an-azure-ad-app-registration-for-the-office-365-management-api) step. Leave empty if you're storing your client ID in plain text in the **Audit Logs - Client Secret** environment variable. This variable expects the Azure Key Vault reference, not the secret. Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)|
 
 ### Start a subscription to audit log content
 
@@ -106,7 +106,7 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 >
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check by seeing if you can search in [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
-> - Validate that you correctly followed the steps in [Azure AD app registration](#create-an-azure-ad-app-registration-for-the-office-365-management-api).
+> - Validate that you correctly followed the steps in [Microsoft Entra app registration](#create-an-azure-ad-app-registration-for-the-office-365-management-api).
 > - Validate that you correctly updated the environment variables for these flows.
 
 ### Turn on flows
