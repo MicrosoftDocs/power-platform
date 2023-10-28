@@ -59,7 +59,7 @@ Now you have the environments that we will need for this and ready to begin the 
 
 ## Create the service principal account and give it rights to the environments created
 
-1. You will need to create an application registration within Azure Active Directory. Do this for all DEV/BUILD/PROD environments used. More information: [Tutorial: Register an app with Azure Active Directory](/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory)
+1. You will need to create an application registration within Microsoft Entra ID. Do this for all DEV/BUILD/PROD environments used. More information: [Tutorial: Register an app with Microsoft Entra ID](/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory)
 
 2. Upon creation of the application registration, please note and save the Directory (tenant) ID and the Application (client) ID of the application.
 
@@ -95,7 +95,7 @@ Now you have the environments that we will need for this and ready to begin the 
 
 1. Select **+ New app user**. A panel will open on the right hand side of the screen.
 
-1. Select **+ Add an app**. A list of all the application registrations in your Azure AD tenant is shown. Proceed to select the application name from the list of registered apps.
+1. Select **+ Add an app**. A list of all the application registrations in your Microsoft Entra tenant is shown. Proceed to select the application name from the list of registered apps.
 
  1. Under **Business unit**, in the drop down box, select your environment as the business unit.
 

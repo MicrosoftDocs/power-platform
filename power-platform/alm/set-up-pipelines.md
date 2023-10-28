@@ -103,7 +103,7 @@ The **Deployment Pipeline User** security role grants access to run one or more 
 To share pipelines:
 
 - Assign makers the **Deployment Pipeline User** security role within the host environment. This security role is installed with the Power Platform pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
-- In the deployment pipeline configuration app, **Share** the pipeline record with makers (or Azure Active Directory groups). **Read** privilege is sufficient to view and run a pipeline from within the development environment. More information: [Share rows with a user or team](/power-apps/user/share-row)
+- In the deployment pipeline configuration app, **Share** the pipeline record with makers (or Microsoft Entra groups). **Read** privilege is sufficient to view and run a pipeline from within the development environment. More information: [Share rows with a user or team](/power-apps/user/share-row)
 - Makers must also have privileges to export solutions from the source development environments, as well as privileges to import solutions to the target test and production environments for which the pipeline deploys to. By default, system customizer and environment maker roles have these privileges.
 
 ### Share with pipeline administrators
@@ -113,7 +113,7 @@ The Deployment Pipeline Administrator security role grants full privileges to al
 > [!IMPORTANT]
 > Pipeline administrators must also have access to all development, test, and production environments that are associated with pipelines they create or run.
 
-Assign the **Deployment Pipeline Administrator** security role to users or Azure Active Directory groups within the host environment. This security role is installed with the **Power Platform Pipelines** application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
+Assign the **Deployment Pipeline Administrator** security role to users or Microsoft Entra groups within the host environment. This security role is installed with the **Power Platform Pipelines** application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
 
 ## Centrally manage and monitor deployments
 

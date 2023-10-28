@@ -48,7 +48,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 ### Creating a new secret for Service Principal Authentication
 1. Navigate to to you repository and click **Settings**, then expand **Secrets**, and then and click **Actions**.
 
-2. On the *Secrets* page, name the secret ‘PowerPlatformSPN’. Use the client secret from the application registration created in Azure Active Directory and enter it into the **Value** field, and then select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab.
+2. On the *Secrets* page, name the secret ‘PowerPlatformSPN’. Use the client secret from the application registration created in Microsoft Entra and enter it into the **Value** field, and then select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab.
 
     ![Create the service principal secret](../media/github-actions-tutorial/spn-secret-setup.gif "Create the service principal secret")
 
@@ -159,8 +159,8 @@ In this section, we will call the reusable workflow on the [release event](https
 4. Update the following variables in the new workflow file:
     - Update `<BUILD_ENVIRONMENT>` with the URL for the build environment you are using to generate the managed solution. For example: `https://poweractionsbuild.crm.dynamics.com`.
     - Update `<PROD_ENVIRONMENT>` with the URL for the production environment you are deploying to. For example: https://poweractionsprod.crm.dynamics.com.
-    - Update `<APP_ID>` with the Application (Client) ID that can be found in the [App registrations blade of the Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) by clicking into the registration created previously in this tutorial.
-    - Update `<TENANT_ID>` with the Directory (tenant) ID that can be found in the [App registrations blade of the Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) by clicking into the registration created previously in this tutorial.
+    - Update `<APP_ID>` with the Application (Client) ID that can be found in the [App registrations blade of the Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_Microsoft Entra ID_RegisteredApps/ApplicationsListBlade) by clicking into the registration created previously in this tutorial.
+    - Update `<TENANT_ID>` with the Directory (tenant) ID that can be found in the [App registrations blade of the Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_Microsoft Entra ID_RegisteredApps/ApplicationsListBlade) by clicking into the registration created previously in this tutorial.
 
 5. Commit the changes. Choose **Start commit** and then add a title (optional) and description (optional). Next, select **Commit new file**.
 

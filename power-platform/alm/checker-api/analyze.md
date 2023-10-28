@@ -32,7 +32,7 @@ Initiating an analysis job is done by submitting a `POST` request to the `analyz
 
 |Name|Type|Expected value|Required?|
 |---|---|---|---|
-|Authorization|string|The OAuth 1 bearer token with Azure Active Directory (AAD) Application ID claim.|yes|
+|Authorization|string|The OAuth 1 bearer token with Microsoft Entra ID (Microsoft Entra ID) Application ID claim.|yes|
 |x-ms-tenant-id|GUID|The ID of the tenant for the application.|yes|
 |x-ms-correlation-id|GUID|The Identifier for the analysis run. You should provide the same ID for the entire execution (upload, analyze, status).|yes|
 |Accept|object|`application/json, application/x-ms-sarif-v2`|yes|
