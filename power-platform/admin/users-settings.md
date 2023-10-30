@@ -34,6 +34,7 @@ Managing user settings can be done in the Power Platform admin center. Use the f
 |Reassign records     | Assign all the records owned by the current user or team to a user or team.       |
 |Change business unit     | Change the business unit a user is assigned to. See [Change the business unit for a user](create-edit-business-units.md#change-the-business-unit-for-a-user).        |
 |Manage teams     | Add or remove a user from a team. See [Microsoft Dataverse teams management](manage-teams.md).        |
+|Release channel     | Change the release channel for a user which overrides the org or app level release channel. See [Microsoft Dataverse teams management](manage-teams.md).        |
 
 ### See also
 [Create users](create-users.md)
