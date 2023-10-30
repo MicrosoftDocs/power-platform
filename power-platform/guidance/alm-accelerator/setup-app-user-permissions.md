@@ -26,7 +26,7 @@ Users need to have the appropriate roles to access resources in Dataverse when t
 
 1. Enter a **Team name**, and then select a **Business unit** and **Administrator**.
 
-1. Select **Microsoft Entra Security Group** as the **Team type**.
+1. Select **Microsoft Entra ID Security Group** as the **Team type**.
 
 1. Search for and select the name of the **Microsoft Entra Security Group** that you want to have access to the ALM Accelerator app.
 
