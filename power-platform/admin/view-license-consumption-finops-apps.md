@@ -23,7 +23,7 @@ You can use the **Licenses (preview)** page in the [Power Platform admin center]
 - What types of finance and operations licenses do you have available for your tenant?
 - How many licenses have been assigned to users?
 - How many roles have been assigned to users in different finance and operations environments, and what licenses are needed based on their role assignment?
-- Are there additional licenses needed based on role assignments in your tenant?
+- Are additional licenses needed based on role assignments in your tenant?
 
 > [!IMPORTANT]
 >
@@ -35,14 +35,14 @@ You can use the **Licenses (preview)** page in the [Power Platform admin center]
 
 To see an overview of license usage:
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
-1. From **Billing (preview)** select **Licenses (preview)**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. From **Billing (preview)**, select **Licenses (preview)**.
 1. Select the **Overview** tab.
 1. Select **Finance and operations** from the **Product** list.
 
 ### User license level overview
 
-The **User license level overview** section provides a summary count of user licenses available, assigned, and required for the tenant for Finance and Operations environments.
+The **User license level overview** section provides a summary count of user licenses available, assigned, and required for the tenant for finance and operations environments.
 
 | Information | Description |
 | ------- | ----------- |
