@@ -1,6 +1,6 @@
 ---
-title: Print function in Power Apps
-description: Reference information including syntax and examples for the Print function in Power Apps.
+title: Print function
+description: Reference information including syntax and examples for the Print function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Print function in Power Apps
+# Print function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 Opens the current screen in the default browser print dialog.
 
