@@ -40,7 +40,7 @@ Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) wi
 
 ## Deprecating support of unregistered MSA and External Microsoft Entra users in Dataverse
 
-As part of our ongoing efforts to enhance the security and performance of Dataverse platform, we are announcing deprecation of support to unregistered MSA and externals Microsoft Entra ID users in Dataverse due to its relative obscurity and complexity associated with this feature in authorization scenario.
+As part of our ongoing efforts to enhance the security and performance of Dataverse platform, we are announcing deprecation of support to unregistered MSA and externals Microsoft Entra users in Dataverse due to its relative obscurity and complexity associated with this feature in authorization scenario.
 
 ### What is changing?
 
