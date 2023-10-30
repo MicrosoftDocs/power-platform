@@ -36,7 +36,7 @@ You can use the **Licenses (preview)** page in the [Power Platform admin center]
 To see an overview of license usage:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
-1. From **Billing (preview)** select **Licences (preview)**.
+1. From **Billing (preview)** select **Licenses (preview)**.
 1. Select the **Overview** tab.
 1. Select **Finance and operations** from the **Product** list.
 
@@ -67,14 +67,15 @@ Select the specific **User license level** to see a list, and additional details
 | Required license | Mapped user license level for the role license. |
 | Assigned license | The license assigned to the user. |
 
-The following is a screenshot of the **Licences (preview)** page displaying **User license level**.
+The following is a screenshot of the **Licenses (preview)** page displaying **User license level**.
 
 :::image type="content" source="media/admin-view-user-licenses/finops-apps-drill-down.png" alt-text="Screenshot of the Licenses (preview) page, including User license level.":::
 
 You can filter the view using **Environment, Security role, Role license** and **Assigned license** filters.
-Select an **Email/User ID** to view the details of all roles assigned to the selected user across all finance and operations environments in the tenant. This view also provides recommendations on what licenses should be assigned to the user based on the user's assigned roles. This can be see in the following image.
 
-:::image type="content" source="media/admin-view-user-licenses/finops-apps-email-userid-sort.png" alt-text="Screenshot of the details of all roles assigned to a selected user across all finance and operations enviornments in a tenant.":::
+Select an **Email/User ID** to view the details of all roles assigned to the selected user across all finance and operations environments in the tenant. This view also provides recommendations on what licenses should be assigned to the user based on the user's assigned roles. This can be seen in the following image.
+
+:::image type="content" source="media/admin-view-user-licenses/finops-apps-email-userid-sort.png" alt-text="Screenshot of the details of all roles assigned to a selected user across all finance and operations environments in a tenant.":::
 
 ## Download
 
