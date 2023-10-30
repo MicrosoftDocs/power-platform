@@ -53,7 +53,7 @@ The ALM Accelerator administration app was used to configure the following user 
 
 1. Create connections and grant consent when prompted.
 
-1. If you're prompted to create an HTTP with Microsoft Entra connection, enter *https://graph.microsoft.com* for both the **Base Resource URL** and **Microsoft Entra Resource URI**.
+1. If you're prompted to create an HTTP with Microsoft Entra connection, enter *https://graph.microsoft.com* for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. Select **Create** for each connection when prompted.
 
