@@ -45,8 +45,6 @@ Select one of the following settings:
 | Warn |  All custom solutions are automatically verified during solution import. When a solution with highly-critical issues is being imported, you are warned about the action but the import itself continues, and if everything else with the import is fine, the solution is imported into the environment. After a successful import, a message stating that the imported solution had validation issues is shown. Additionally, a summary email is sent with details of the solution validation. |
 | Block | All custom solutions are automatically verified during solution import. When a solution has highly-critical issues, the import process is canceled, and a message stating that the imported solution had validation issues is shown. This happens before the actual import, so there aren't any changes to the environment due to the import failure. Additionally, a summary email is sent with details of the solution validation.|
 
-When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step, the verification of solutions fails and in the **Block** mode, solution imports are blocked.
-
 For more information on what to do when encountering a warn or block, see the [troubleshooting guide](/troubleshoot/power-platform/power-apps/manage-apps-and-solutions/solution-checker-enforcement-import-issues).
 
 ## Email messages to the admin

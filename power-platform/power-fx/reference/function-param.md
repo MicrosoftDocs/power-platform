@@ -1,6 +1,6 @@
 ---
-title: Launch and Param functions in Power Apps
-description: Reference information including syntax and examples for the Launch and Param functions in Power Apps.
+title: Launch and Param functions
+description: Reference information including syntax and examples for the Launch and Param functions.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -16,7 +16,9 @@ contributors:
   - jorisdg
 ---
 
-# Launch and Param functions in Power Apps
+# Launch and Param functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 Launches a webpage or a canvas app and provides access to launch parameters.
 
@@ -68,13 +70,13 @@ Native apps on a device can't be launched directly. There may be indirect option
 - An argument list of name value pairs. For example:
 
   ```powerapps-dot
-  Launch( "http://bing.com/search", "q", "Power Apps", "count", 1 )
+  Launch( "https://bing.com/search", "q", "Power Apps", "count", 1 )
   ```
 
 - A record of field values. For example:
 
   ```powerapps-dot
-  Launch( "http://bing.com/search", { q: "Power Apps", count: 1 } )
+  Launch( "https://bing.com/search", { q: "Power Apps", count: 1 } )
   ```
 
   This form can be easier to work with as it makes the association between name and value clearer. It's the only form that supports the optional _LaunchTarget_ argument.

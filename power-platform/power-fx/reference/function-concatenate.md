@@ -1,6 +1,6 @@
 ---
-title: Concat and Concatenate functions in Power Apps
-description: Reference information including syntax and examples for the Concat and Concatenate functions in Power Apps.
+title: Concat and Concatenate functions
+description: Reference information including syntax and examples for the Concat and Concatenate functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Concat and Concatenate functions in Power Apps
+# Concat and Concatenate functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
 
 Concatenates individual strings of text and strings in [tables](/power-apps/maker/canvas-apps/working-with-tables).
 
