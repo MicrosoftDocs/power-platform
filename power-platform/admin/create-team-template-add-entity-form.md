@@ -1,5 +1,5 @@
 ---
-title: "Create a team template and add to an entity form  | MicrosoftDocs"
+title: "Create a team template to control access rights for automatically created teams | MicrosoftDocs"
 description: Create a team template and add to an entity form
 author: paulliew
 ms.subservice: admin
@@ -14,7 +14,7 @@ search.audienceType:
   - admin
 ---
 
-<!-- Do you want the steps that start on line 126 to restart numbering or continue from the previous list? The note in line 121 causes the list to restart, unless you move the note a couple of space to the right. -->
+
 
 
 # Create a team template to control access rights for automatically created teams
@@ -118,10 +118,10 @@ You can add your team template as a component to a [solution](/power-apps/maker/
 1. Select the **Include table metadata** option.
 1. Select **Add**.
 
-> [!NOTE]
-> For custom tables, you'll need to select the **Include all objects** option.
+    > [!NOTE]
+    > For custom tables, you'll need to select the **Include all objects** option.
 
-   Add the form where the Team template was added.
+Add the form where the Team template was added.
 
 1. Double-click the table where the updated form resides.
 1. Click the **Forms** link under the **Data experiences** section.
