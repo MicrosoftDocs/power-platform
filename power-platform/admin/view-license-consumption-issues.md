@@ -37,6 +37,11 @@ Use the **Billings (preview)** > **Licenses (preview)** page in the [Power Platf
 
 The **Summary** tab on the **Licenses (preview)** page displays a summary of any environments in your tenant that require licensing attention.
 
+
+
+
+
+
 | Setting | Description |
 | ------- | ----------- |
 | Include standard environments | Select this option to see results for standard, or unmanaged, environments. By default, only managed environments are displayed. In managed environments, all users need standalone Power Apps or Power Automate licenses to run apps or execute flows. |
