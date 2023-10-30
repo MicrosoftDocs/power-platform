@@ -2,7 +2,7 @@
 title: Solution checker enforcement in Managed Environments (preview)
 description: Learn about using solution checker enforcement to automatically prevent security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 07/10/2023
+ms.date: 10/30/2023
 author: sidhartg
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -61,11 +61,11 @@ By default, emails are sent when a solution fails validation for medium and abov
 
 ## Rule exclusions
 
-You can select solution checker rules to exclude from enforcement. For example, a particular rule might take significant time and effort to fix across the solution, but you would still like the rest of the rules to be enforced in the meantime. Use the Excluded Rules drop down to pick the rules to exclude from enforcement.
+You can select solution checker rules to exclude from enforcement. For example, a particular rule might take significant time and effort to fix across the solution, but you would still like the rest of the rules to be enforced in the meantime. Use the **Excluded Rules** dropdown list to pick the rules to exclude from enforcement.
 
 :::image type="content" source="media/managed-environment-solution-checker-rule-exclusions.png" alt-text="Screenshot of the solution checker enforcement rule exclusions.":::
 
-The list contains rule names and descriptions grouped by category and sorted by severity. As a reminder, only critical severity rules will block a solution from being imported.
+The list contains rule names and descriptions grouped by category and sorted by severity. As a reminder, only critical severity rules block a solution from being imported.
 
 :::image type="content" source="media/managed-environment-solution-checker-rule-exclusions-list.png" alt-text="Screenshot of the solution checker enforcement rule exclusion options.":::
 
