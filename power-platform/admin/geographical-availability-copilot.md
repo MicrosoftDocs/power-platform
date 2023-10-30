@@ -62,7 +62,7 @@ The following table provides information about the data storage and processing r
 | Power Platform environment region | Data storage and processing region |
 | - | - |
 | Australia, United Kingdom, United States | Within the respective geographical region |
-| Europe, France, Germany, Norway, Switzerland  | Sweden and Switzerland |
+| Europe, France, Germany, Norway, Switzerland  | Sweden or Switzerland |
 | Asia, Brazil, Canada, India, Japan, Singapore, South Africa, South Korea, United Arab Emirates  | United States |
 
 ## Disable copilots and generative AI outside United States
