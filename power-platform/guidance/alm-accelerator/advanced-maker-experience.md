@@ -131,7 +131,7 @@ After you've associated a profile with your solution, you can configure the solu
       :::image type="content" source="media/aa4pp-deployment-settings-app-sharing.png" alt-text="Screenshot of App Sharing configuration in the ALM Accelerator.":::<!-- EDITOR'S NOTE: Please crop the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
       - All the apps in your solution are listed. Users can share them in their downstream environments with a Microsoft Entra group.
-      - Use the dropdown list to select the **Azure Microsoft Entra group** with which you'd like to share the app.
+      - Use the dropdown list to select the **Azure AAD group** with which you'd like to share the app.
       - To view the group details, select the details icon. A new browser tab opens with a link to the Microsoft Entra group in the Azure portal.
       - Use the permissions dropdown list to set the permissions to **Can View**, **Can Edit**, or **Can View and Share**.
 
@@ -139,8 +139,8 @@ After you've associated a profile with your solution, you can configure the solu
 
       :::image type="content" source="media/aa4pp-deployment-settings-group-teams.png" alt-text="Screenshot of Group Teams configuration in the ALM Accelerator.":::<!-- EDITOR'S NOTE: Please crop the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
-      - Dataverse Teams of type **Microsoft Entra Security Group** are listed. Users can configure new Group Teams for sharing flows and custom connectors.
-      - To add a new Group Team configuration, select **'+'**. Enter a **Team Name**, select an **Microsoft Entra Group** that the team should be linked to, and select **Security Roles** as required. The list of security roles is based on the roles available in the selected development environment. Add any custom security roles to the solution to make sure they're available in the target environment.
+      - Dataverse Teams of type **AAD Security Group** are listed. Users can configure new Group Teams for sharing flows and custom connectors.
+      - To add a new Group Team configuration, select **'+'**. Enter a **Team Name**, select an **AAD Group** that the team should be linked to, and select **Security Roles** as required. The list of security roles is based on the roles available in the selected development environment. Add any custom security roles to the solution to make sure they're available in the target environment.
 
    - **Flows**
 
