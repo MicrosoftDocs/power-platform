@@ -1,6 +1,6 @@
 ---
-title: Power Fx formula reference for Power Apps
-description: Reference information for functions, signals, and enumerations in Power Apps.
+title: Formula reference - Power Apps
+description: Reference information for all functions in Power Apps.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -16,9 +16,11 @@ contributors:
   - jorisdg
 ---
 
-# Power Fx formula reference for Power Apps
+# Formula reference - Power Apps
 
-Formulas combine many elements. Listed below are:
+In this article, learn about all the functions available in Power Apps.
+
+Formulas in Power Apps combine many elements. Listed below are:
 
 - **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are modeled after Microsoft Excel functions. Some functions have side effects, such as **SubmitForm**, which are appropriate only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) such as **Button.OnSelect**.
 - **Signals** return information about the environment. For example, **[Location](reference/signals.md)** returns the device's current GPS coordinates. Signals don't take parameters or have side effects.
@@ -161,7 +163,7 @@ Other elements include:
 
 **[Errors](reference/function-errors.md)** – Provides error information for previous changes to a data source.
 
-**[exactin](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
+**[exactin](reference/operators.md #in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
 
 **[Exit](reference/function-exit.md)** – Exits the currently running app and optionally signs out the current user.
 
@@ -200,7 +202,7 @@ Other elements include:
 
 **[IfError](reference/function-iferror.md)** - Detects errors and provides an alternative value or takes action.
 
-**[in](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
+**[in](reference/operators.md #in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
 
 **[Index](reference/function-first-last.md)** – Returns a record from a table based on ordered position.
 
@@ -294,7 +296,7 @@ Other elements include:
 
 **[Param](reference/function-param.md)** – Access parameters passed to a canvas app when launched.
 
-**[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
+**[Parent](reference/operators.md #self-and-parent-operators)** – Provides access to a container control's properties.
 
 **[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
 
@@ -362,7 +364,7 @@ Other elements include:
 
 **[Select](reference/function-select.md)** – Simulates a select action on a control, causing the **OnSelect** formula to be evaluated.
 
-**[Self](reference/operators.md#self-and-parent-operators)** – Provides access to the properties of the current control.
+**[Self](reference/operators.md #self-and-parent-operators)** – Provides access to the properties of the current control.
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
 
@@ -408,9 +410,9 @@ Other elements include:
 
 **[Text](reference/function-text.md)** – Converts any value and formats a number or date/time value to a string of text.
 
-**[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a gallery or form control.
+**[ThisItem](reference/operators.md #thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a gallery or form control.
 
-**[ThisRecord](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a record scope function, such as **ForAll**, **With**, and **Sum**.
+**[ThisRecord](reference/operators.md #thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a record scope function, such as **ForAll**, **With**, and **Sum**.
 
 **[Time](reference/function-date-time.md)** – Returns a date/time value, based on **Hour**, **Minute**, and **Second** values.
 
@@ -470,4 +472,4 @@ Other elements include:
 
 **[Year](reference/function-datetime-parts.md)** – Retrieves the year portion of a date/time value.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+
