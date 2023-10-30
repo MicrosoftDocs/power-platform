@@ -3,7 +3,7 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/21/2023
+ms.date: 10/30/2023
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -37,23 +37,23 @@ When members of these group teams access these environments, their access rights
 
 Once the group team and its security role are established in an environment, user access to the environment is based on the user membership of the Azure AD groups. When a new user is created in the tenant, all the administrator needs to do is assign the user to the appropriate Azure AD group, and assign Dataverse licenses. The user can immediately access the environment without the need to wait for the administrator to add the user into the environment or assign a security role. The user is created in the environment under the root business unit.  
 
-When users are deleted/disabled in Azure AD or removed from the Azure AD groups, they lose their group membership and won't be able to access the environment when they try to sign in.  
+When users are deleted or disabled in Azure AD or removed from the Azure AD groups, they lose their group membership and won't be able to access the environment when they try to sign in.  
 
 > [!NOTE]
-> The deleted/disabled group user remains in the Power Platform Dataverse environment if the user didn't not access the environment.
+> The deleted or disabled group user remains in the Power Platform Dataverse environment if the user didn't access the environment.
 
-> To remove the user from the Dataverse group team:
+To remove the user from the Dataverse group team:
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 1. Select an environment, and then select **Settings** > **Users + permissions** > **Users**.
 1. Search and select the user.
-1. On the User form, click on the "..." command.
-1. Click on the **Manage user in Dynamics 365** option.
-1. On the **User** form, select the Dataverse group team you want to remove the user from.
-1. Click the **Delete** button.
+1. On the User form, click on the **...** command.
+1. Select the **Manage user in Dynamics 365** option.
+1. On the **User** page, select the Dataverse group team you want to remove the user from.
+1. Select the **Delete** button.
 
 Note that if you accidentally deleted an active group user, the group user will be added back to the Dataverse group team the next time the user accesses the environment.
    
-
 #### Remove user access at run time 
 
 When a user is removed from the Azure AD groups by an administrator, the user is removed from the group team, and they lose their access rights the next time they access the environment. The memberships for the user's Azure AD groups and Dataverse group teams are synchronized, and the user's access rights are dynamically derived at run time.
