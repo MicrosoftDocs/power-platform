@@ -61,7 +61,7 @@ By default, emails are sent when a solution fails validation for medium and abov
 
 ## Rule exclusions
 
-You can select solution checker rules to exclude from enforcement. For example, a particular rule might take significant time and effort to fix across the solution, but you would still like the rest of the rules to be enforced in the meantime. Use the **Excluded Rules** dropdown list to pick the rules to exclude from enforcement.
+You can select to exclude solution checker rules from enforcement. For example, a particular rule might take significant time and effort to fix across the solution, but you would still like the rest of the rules to be enforced. Use the **Excluded Rules** dropdown list to select the rules to exclude from enforcement.
 
 :::image type="content" source="media/managed-environment-solution-checker-rule-exclusions.png" alt-text="Screenshot of the solution checker enforcement rule exclusions.":::
 
