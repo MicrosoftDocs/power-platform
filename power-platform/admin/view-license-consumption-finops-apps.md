@@ -54,7 +54,7 @@ The **User license level overview** section provides a summary count of user lic
 
 You can view the individual licenses mapped to a license level, and the number of seats available for the individual license by selecting the number in the **Available seats** for a specific user license level.
 
-### Drill down view
+### Drill-down view
 
 Select the specific **User license level** to see a list, and additional details of users who are required to have the selected license.
 
