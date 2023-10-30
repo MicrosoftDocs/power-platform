@@ -148,19 +148,19 @@ For those customers that implement network restrictions, ensure access to the fo
 
 **GCC Customers:**
 
-*.microsoft.us<br/>
-*.powerapps.us<br/>
-*.azure-apihub.us<br/>
-*.azure.us<br/>
-*.usgovcloudapi.net<br/>
-*.microsoftonline.com<br/>
-*.microsoft.com<br/>
-*.windows.net<br/>
-*.azureedge.net<br/>
-*.azure.net<br/>
-*.crm9.dynamics.com<br/>
+*.microsoft.us  
+*.powerapps.us  
+*.azure-apihub.us  
+*.azure.net  
+*.azure.us  
+*.azureedge.net  
+*.azureedge.us  
+*.usgovcloudapi.net  
+*.microsoftonline.com  
+*.microsoft.com  
+*.windows.net  
+*.crm9.dynamics.com  
 *.dynamics365portals.us
-
 
 Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
 
@@ -169,20 +169,20 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 
 **GCC High and DoD Customers:**
 
-*.microsoft.us<br/>
-*.powerapps.us<br/>
-*.azure-apihub.us<br/>
-*.azure.us<br/>
-*.usgovcloudapi.net<br/>
-*.microsoftonline.us<br/>
-*.azureedge.net<br/>
-*.azure.net<br/>
-*.azureedge.us<br/>
-*.microsoftdynamics.us (GCC High)<br/>
-*.crm.microsoftdynamics.us (GCC High)<br/>
-*.high.dynamics365portals.us (GCC High)<br />
-*.appsplatform.us (DoD)<br/>
-*.crm.appsplatform.us (DoD) <br />
+*.microsoft.us  
+*.powerapps.us  
+*.azure-apihub.us  
+*.azure.net  
+*.azure.us  
+*.azureedge.net  
+*.azureedge.us  
+*.usgovcloudapi.net  
+*.microsoftonline.us  
+*.microsoftdynamics.us (GCC High)  
+*.crm.microsoftdynamics.us (GCC High)  
+*.high.dynamics365portals.us (GCC High)  
+*.appsplatform.us (DoD)  
+*.crm.appsplatform.us (DoD)  
 *.appsplatformportals.us (DoD) 
 
 Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:

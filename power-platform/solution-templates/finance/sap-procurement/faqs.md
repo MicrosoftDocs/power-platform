@@ -13,7 +13,7 @@ contributors:
 - scottwoodallmsft
 - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: FAQs
+ms.topic: faq
 ms.date: 04/27/2023
 ms.custom: bap-template
 ms.service: power-platform
