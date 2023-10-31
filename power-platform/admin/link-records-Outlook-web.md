@@ -56,7 +56,7 @@ After turning on the **Search for records in Microsoft 365 apps** setting, your 
 
     When using the **/** reference, the record name and the environment are displayed.
 
-    ![A screenshot of a computer Description automatically generated](media/image2.png)
+    :::image type="content" source="media/adventure-works-link.png" alt-text="Insert a link into an Outlook web message.":::
 
 After selecting the record in the /mention dialog a link to the record(s) will be added to the email in Outlook Web Client.
 
