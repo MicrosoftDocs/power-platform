@@ -1,6 +1,6 @@
 ---
-title: JSON function in Power Apps
-description: Reference information including syntax and examples for the JSON function in Power Apps.
+title: JSON function
+description: Reference information including syntax and examples for the JSON function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# JSON function in Power Apps
+# JSON function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 Generates a JSON text string for a table, a record, or a value.
 

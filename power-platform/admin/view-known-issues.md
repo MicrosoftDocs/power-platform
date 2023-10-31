@@ -15,30 +15,30 @@ search.audienceType:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Customer trust and transparency are important to us. You can now view existing product issues, or known issues, for which a fix has been identified or is in progress. A workaround and expected time to fix the issue is also provided, when available.  
+Customer trust and transparency are important to us. You can now view existing product issues, or known issues, for which a fix has been identified or is in progress. A workaround and expected time to fix the issue are also provided, when available.  
   
 > [!Important]
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - The ability to view known issues is only available for limited features within Power Automate and Power Apps products for users in US region.
+> - The ability to view known issues is only available for limited features within Power Automate and Power Apps products for users in the US region.
 
 ## View known issues  
   
 1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1.  Select **Help + support** in the navigation pane.
 1.  Select the **Known issues (Preview)** tab.
-1.  Narrow down your search for a known issue by using the available filters and search.
+1.  Narrow your search for a known issue by using the available filters and search.
 
-    - **Product Category:** Choose one or multiple products. By default, all products with a known issue are selected.
-     - **Status:** Select the status of known issues that you want to view.
+    - **Product Category**: Choose one or multiple products. By default, all products with a known issue are selected.
+    - **Status**: Select the status of known issues that you want to view.
          
-        - **All:** All known issues are listed.
-        - **Active:** Known issues that are currently being worked on are listed.
-        - **Resolved:** Known issues that have been fixed, but not necesssarily deployed are listed.
+        - **All**: All known issues are listed.
+        - **Active**: Known issues that are currently being worked on are listed.
+        - **Resolved**: Known issues that have been fixed, but not necessarily deployed are listed.
 
-    - **Search:** Enter key words to surface the known issue you're looking for.
+    - **Search**: Enter key words to find the known issue you're looking for.
     
-1.  Select the title of a known issue to view details about the issue, including a description of the problem and a workaround, if available.
+1.  Select the title of a known issue to view details, including a description of the problem and a workaround, if available.
 
 > [!Tip]
 > Bookmark the URL of the known issue page so that you can easily come back to view updates.
@@ -67,11 +67,11 @@ No, a fix is in progress and an update will be shared on the known issue details
 
 ### What does a known issue's Status (Active/Resolved) mean?
 
-Status signifies the progress of the issue. Issues being worked on are in the **Active** state, while issues that have been fixed, but not necessarily deployed, are in **Resolved** state.
+Status signifies the progress of the issue. Issues being worked on are in the **Active** state, while issues that have been fixed, but not necessarily deployed, are in the **Resolved** state.
 
 ### While Microsoft works on a fix, is there any interim solution?
 
-When available, a workaround will be shared in the **Workaround** field of the known issue details page. (Select a known issue to see more details and a possible workaround).
+When available, a workaround will be shared in the **Workaround** field of the known issue details page. (Select a known issue to see more details and a possible workaround.)
 
 ### Do you provide an estimated time of arrival (ETA) on the issue fix?
 
