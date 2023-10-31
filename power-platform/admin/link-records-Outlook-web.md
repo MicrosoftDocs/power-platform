@@ -33,27 +33,30 @@ Security is top of mind, and only records that a user has access to and has most
 2. Select **Settings** > **Product** > **Features**.
 3. Under the **Search** section, turn on the **Search for records in Microsoft 365 apps** setting.
 
+## Link to business records in Outlook web
 
+After turning on the **Search for records in Microsoft 365 apps** setting, your users can open their Outlook web clients and quickly add a link to their most recently used records to be shared with colleagues.
 
-After saving your user will be able to open outlook web client and be able to quickly add a link to their most recently used records to be shared with colleagues.
+> [!Note]
+> It may take some time for records to be available in your outlook client.
 
-**NOTE**: It may take some time for records to be available in your outlook client.
+> [!Note]
+> This feature may not yet be available in your region. Come back soon if you do not see the option to enable sharing records in Microsoft365 apps.
 
-**NOTE**: This feature may not yet be available in your region, come back soon if you do not see the option to enable sharing records in M365 Apps.
+> [!Important]
+> The recipient of the email must be able to access the environment with security roles that allow the user to have access to the data and must be able to access the shared record.
 
-**IMPORTANT:**
+1. Open your Outlook web client.
+1. Create a new message.
+1. In the body of the email, type **/** and select the record you want to share with a colleague.
 
-The recipient of the email must be able to access the environment with security roles that allow the user to have access to the data and must be able to access the shared record.
+    In this example, you can see that the **/** mention is followed by the account "Adventure Works". When the user presses **Enter**, a link to the record is inserted into the body of the email.
 
-To use /mention, users can open outlook web client. In the body of the email just type / then the record you want to share with a colleague.
+    That's how easy it is for users to quickly add records they want to collaborate on and share with others in their organization who also has access to the record.
 
-In this example you can see the mention is followed by the account "Alpine Ski House". When the user hits enter a link to the record is inserted into the body of the email.
+    When using the **/** reference, the record name and the environment are displayed.
 
-That's how easy it is for your user to quickly add records they want to collaborate and share with someone in their organization that also has access to the record.
-
-When using the / mention the record name and the environment will be displayed.
-
-![A screenshot of a computer Description automatically generated](media/image2.png)
+    ![A screenshot of a computer Description automatically generated](media/image2.png)
 
 After selecting the record in the /mention dialog a link to the record(s) will be added to the email in Outlook Web Client.
 
