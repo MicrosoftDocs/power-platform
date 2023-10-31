@@ -40,12 +40,12 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/project-sophia/breadcrumb/toc.json",
+      "breadcrumb_path": "/ps-docs/breadcrumb/toc.json",
       "feedback_system": "Standard",
       "permissioned-type": "public"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "project-sophia"
+    "dest": "ps-docs"
   }
 }
