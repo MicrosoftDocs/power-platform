@@ -36,8 +36,8 @@
     },
     {
       "docset_name": "project-sophia",
-      "build_source_folder": "project-sophia",
-      "build_output_subfolder": "project-sophia",
+      "build_source_folder": "ps-docs",
+      "build_output_subfolder": "ps-docs",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
