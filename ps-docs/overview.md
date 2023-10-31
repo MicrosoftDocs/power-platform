@@ -26,7 +26,7 @@ Project “Sophia” offers has an AI- powered, user-friendly research canvas an
 > [!IMPORTANT]
 > - Project “Sophia” is only available in the US region.
 > - This is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - By accessing or using the Project “Sophia” in preview, you accept the [Microsoft Preview Terms of Service](https://go.microsoft.com/fwlink/?linkid=2242556).
+> - By accessing or using the Project “Sophia”, you accept the [Microsoft Preview Terms of Service](https://go.microsoft.com/fwlink/?linkid=2242556).
 > - Project “Sophia” uses Microsoft Bing and your research queries will be directed to Bing, which is governed by the Bing section of the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
 > - This capability may be subject to usage limits or capacity throttling
 
