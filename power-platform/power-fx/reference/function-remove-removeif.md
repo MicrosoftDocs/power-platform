@@ -23,6 +23,9 @@ contributors:
 
 Removes [records](/power-apps/maker/canvas-apps/working-with-tables#records) from a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
+> [!NOTE]
+> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support the **RemoveIf** function.
+
 ## Description
 
 ### Remove function

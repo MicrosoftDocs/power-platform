@@ -23,6 +23,9 @@ contributors:
 
 Returns the current date and time, and tests whether a date/time value is today.
 
+> [!NOTE]
+> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support the **UTCNow**, **UTCToday**, and **IsUTCToday** functions.
+
 ## Description
 
 The **Now** function returns the current date and time as a date/time value.

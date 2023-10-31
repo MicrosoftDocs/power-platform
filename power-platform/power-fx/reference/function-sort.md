@@ -23,6 +23,9 @@ contributors:
 
 Sorts a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
+> [!NOTE]
+> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support the **SortByColumns** function.
+
 ## Description
 
 The **Sort** function sorts a table based on a formula.

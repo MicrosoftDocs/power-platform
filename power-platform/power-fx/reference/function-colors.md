@@ -23,6 +23,9 @@ contributors:
 
 Use built-in color values, define custom colors, and use the alpha channel.
 
+> [!NOTE]
+> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support the **Color** enumeration.
+
 ## Description
 
 By using the **Color** enumeration, you can easily access the colors that are defined by HTML's Cascading Style Sheets (CSS). For example, **Color.Red** returns pure red. You can find a list of these colors at the end of this topic.

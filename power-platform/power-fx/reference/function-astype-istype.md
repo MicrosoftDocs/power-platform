@@ -23,6 +23,9 @@ contributors:
 
 Checks a record reference for a specific table type (**IsType**) and treats the reference as a specific type (**AsType**).
 
+> [!NOTE]
+> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support **IsType**.
+
 ## Description
 
 Read [Understand record references and polymorphic lookups](/power-apps/maker/canvas-apps/working-with-references) for a broader introduction and more details.
