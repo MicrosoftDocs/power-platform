@@ -1,6 +1,6 @@
 ---
-title: User function in Power Apps
-description: Reference information including syntax and examples for the User function in Power Apps.
+title: User function
+description: Reference information including syntax and examples for the User function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# User function in Power Apps
+# User function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 Returns information about the current user.
 

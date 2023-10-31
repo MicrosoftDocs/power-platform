@@ -124,6 +124,8 @@
                 href: cli\reference\pipeline.md
               - name: pac plugin
                 href: cli\reference\plugin.md
+              - name: pac power-fx
+                href: cli\reference\power-fx.md
               - name: pac powerpages
                 href: cli\reference\powerpages.md
               - name: pac solution
