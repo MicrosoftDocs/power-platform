@@ -122,12 +122,18 @@
             href: reference/function-dateadd-datediff.md
           - name: DateDiff
             href: reference/function-dateadd-datediff.md
+          - name: DateTime
+            href: reference/function-datetime.md
           - name: DateTimeValue
             href: reference/function-datevalue-timevalue.md
           - name: DateValue
             href: reference/function-datevalue-timevalue.md
           - name: Day
             href: reference/function-datetime-parts.md
+          - name: Dec2Hex
+            href: reference/function-dec2hex-hex2dec.md
+          - name: Decimal
+            href: reference/function-decimal.md
           - name: Defaults
             href: reference/function-defaults.md
           - name: Degrees
@@ -140,6 +146,8 @@
             href: reference/function-download.md
           - name: DropColumns
             href: reference/function-table-shaping.md
+          - name: EDate
+            href: reference/function-edate.md
           - name: EditForm
             href: reference/function-form.md
           - name: Enable
@@ -148,6 +156,8 @@
             href: reference/function-encode-decode.md
           - name: EndsWith
             href: reference/function-startswith.md
+          - name: EOMonth
+            href: reference/function-eomonth.md
           - name: Error
             href: reference/function-iferror.md
           - name: Errors
@@ -166,6 +176,8 @@
             href: reference/function-first-last.md
           - name: FirstN
             href: reference/function-first-last.md
+          - name: Float
+            href: reference/function-float.md
           - name: ForAll
             href: reference/function-forall.md
           - name: GroupBy
@@ -174,6 +186,10 @@
             href: reference/function-guid.md
           - name: HashTags
             href: reference/function-hashtags.md
+          - name: Help
+            href: reference/function-help.md
+          - name: Hex2Dec
+            href: reference/function-dec2hex-hex2dec.md
           - name: Host
             href: reference/object-host.md
           - name: Hour
@@ -264,6 +280,8 @@
             href: reference/operators.md
           - name: Or
             href: reference/function-logicals.md
+          - name: OptionSetInfo
+            href: reference/function-optionsetinfo.md
           - name: Param
             href: reference/function-param.md
           - name: Parent
