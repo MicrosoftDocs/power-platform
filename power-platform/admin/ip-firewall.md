@@ -95,7 +95,7 @@ The IP firewall isn't enabled by default. The Power Platform administrator needs
 
 ### What is audit-only mode?
 
-In audit-only mode, the IP firewall identifies the IP addresses that are making calls to the environment and allows them all, whether they're in an allowed range or not. It's helpful when you're configuring restrictions on a Power Platform environment. We recommend that you enable audit-only mode for at least a week and disable it only after careful review of the [audit logs](#how-do-i-download-the-audit-log-for-audit-only-mode:~:text=How%20do%20I,Power%20Platform%20environment.).
+In audit-only mode, the IP firewall identifies the IP addresses that are making calls to the environment and allows them all, whether they're in an allowed range or not. It's helpful when you're configuring restrictions on a Power Platform environment. We recommend that you enable audit-only mode for at least a week and disable it only after careful review of the [audit logs](#how-do-i-download-the-audit-log-for-audit-only-mode).
 
 ### Is this feature available in all the environments?
 
@@ -128,7 +128,7 @@ In the IP firewall settings, allow the service tags listed in [Managed connector
 Make sure your reverse proxy is configured to send the client IP address in the forwarded header.
 
 ### Some of the calls from Power BI are failing after i enabled the IP firewall on the Power Platform environment.
-Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features#tds-endpoint.md), you will need to disable IP firewall in the environment.
+Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features.md#tds-endpoint), you will need to disable IP firewall in the environment.
 
 ## Next steps
 
