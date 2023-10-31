@@ -17,31 +17,23 @@ ms.contributors:
 - mspilde
 ---
 
-# Use /mention to link to records in Outlook Web 
+# Use /mention to link to records in Outlook web 
 
-One of the most time consuming tasks for any person that uses emails is easily sharing information in your line of business applications with colleagues. You have to jump out of your Outlook Web experience, open your line of business app, navigate to a record and then copy and paste the link of the record into your email. This is an incredibly time consuming set of steps and actions and wouldn't it be great if you could just quickly access Dynamics 365 or Dataverse data directly from Outlook.
+One of the most time-consuming tasks for any person that uses email is easily sharing information in your line of business applications with colleagues. You have to jump out of your Outlook web experience, open your line of business app, navigate to a record, and then copy and paste the link of the record into your email. This is an incredibly time consuming set of steps and actions. 
 
-That is now possible with a simple configuration in the Power Platform Admin center. You can quickly enable your users to access the records they have most recently used in their application. The records will now be available in the Outlook Web client using a simple /mention gesture.
+Wouldn't it be great if you could just quickly access Dynamics 365 or Dataverse data directly from Outlook?
 
-Security is top of mind and only records that a user has access to and have most recently used will show up in the outlook web client.
+That is now possible with a simple configuration in the Power Platform admin center. You can quickly enable your users to access the records they have most recently used in their application. The records are available in the Outlook web client using a simple /mention gesture.
 
-To enable this great feature, you must be a system administrator for the environment.
+Security is top of mind, and only records that a user has access to and has most recently used will show up in the Outlook web client.
 
-Open <https://admin.powerplatform.microsoft.com/> in a web browser and login
+## Turn on the feature
 
-Select the environment that you want to enable Dynamics and Dataverse data to be used with /mention in Outlook Web client
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+2. Select **Settings** > **Product** > **Features**.
+3. Under the **Search** section, turn on the **Search for records in Microsoft 365 apps** setting.
 
--   Select Settings
 
--   Select Product
-
--   Select Features
-
-Under the Search section on the features page you will see an option to search for records in M365 apps.
-
-Click on the toggle to on and save.
-
-![](media/image1.png)
 
 After saving your user will be able to open outlook web client and be able to quickly add a link to their most recently used records to be shared with colleagues.
 
