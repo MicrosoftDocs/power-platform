@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 07/25/2023
+ms.date: 10/31/2023
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -21,7 +21,7 @@ The IP firewall helps to protect your organizational data by limiting user acces
 > [!IMPORTANT]
 >
 > - The IP firewall feature is only available with [Managed Environments](managed-environment-overview.md).
-> - The IP firewall feature only supports OData endpoints for accessing Dataverse data. Support for [TDS endpoints](https://learn.microsoft.com/en-us/power-platform/admin/settings-features#tds-endpoint) will be included in future release.
+> - The IP firewall feature only supports OData endpoints for accessing Dataverse data. Support for [TDS endpoints](settings-features.md#tds-endpoint) will be included in future release.
 
 ## Key benefits
 
@@ -51,8 +51,8 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 1. Select other settings, as appropriate:
 
    - **Service tags to be allowed by IP firewall**: From the list, select service tags that can bypass IP firewall restrictions.
-   - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services like monitoring and [support user](https://learn.microsoft.com/en-us/power-platform/admin/support-environment) etc. to bypass the IP firewall restrictions to access the Power Platform environment with Dataverse. Enabled by default.
-   - **Allow access for all application users**: This setting allows [all application users](https://learn.microsoft.com/en-us/power-platform/admin/system-application-users) third-party and first-party access to Dataverse APIs. Enabled by default.
+   - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services like monitoring and [support user](support-environment.md) etc. to bypass the IP firewall restrictions to access the Power Platform environment with Dataverse. Enabled by default.
+   - **Allow access for all application users**: This setting allows [all application users](system-application-users.md) third-party and first-party access to Dataverse APIs. Enabled by default.
    - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
    - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both IP-based cookie binding and the IP firewall.
 
@@ -95,7 +95,7 @@ The IP firewall isn't enabled by default. The Power Platform administrator needs
 
 ### What is audit-only mode?
 
-In audit-only mode, the IP firewall identifies the IP addresses that are making calls to the environment and allows them all, whether they're in an allowed range or not. It's helpful when you're configuring restrictions on a Power Platform environment. We recommend that you enable audit-only mode for at least a week and disable it only after careful review of the [audit logs](https://learn.microsoft.com/en-us/power-platform/admin/ip-firewall#how-do-i-download-the-audit-log-for-audit-only-mode:~:text=How%20do%20I,Power%20Platform%20environment.).
+In audit-only mode, the IP firewall identifies the IP addresses that are making calls to the environment and allows them all, whether they're in an allowed range or not. It's helpful when you're configuring restrictions on a Power Platform environment. We recommend that you enable audit-only mode for at least a week and disable it only after careful review of the [audit logs](#how-do-i-download-the-audit-log-for-audit-only-mode:~:text=How%20do%20I,Power%20Platform%20environment.).
 
 ### Is this feature available in all the environments?
 
@@ -128,7 +128,7 @@ In the IP firewall settings, allow the service tags listed in [Managed connector
 Make sure your reverse proxy is configured to send the client IP address in the forwarded header.
 
 ### Some of the calls from Power BI are failing after i enabled the IP firewall on the Power Platform environment.
-Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](https://learn.microsoft.com/en-us/power-platform/admin/settings-features#tds-endpoint), you will need to disable IP firewall in the environment.
+Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features#tds-endpoint.md), you will need to disable IP firewall in the environment.
 
 ## Next steps
 
