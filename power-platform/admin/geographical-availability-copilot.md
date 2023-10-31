@@ -4,7 +4,7 @@ description: Learn about how to enable copilot and generative AI features in Pow
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/27/2023
+ms.date: 10/31/2023
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
