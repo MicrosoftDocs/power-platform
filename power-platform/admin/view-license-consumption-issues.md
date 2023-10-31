@@ -47,7 +47,7 @@ The **Summary** tab on the **Licenses (preview)** page displays a summary of any
 
 ## Environments tab
 
-The **Environments** tab on **Licenses (preview)** page displays licensing information from the last 30 days for the selected environment.
+The **Environments** tab on the **Licenses (preview)** page displays licensing information from the last 30 days for the selected environment.
 
 | Setting | Description |
 | ------- | ----------- |
@@ -59,14 +59,14 @@ The **Environments** tab on **Licenses (preview)** page displays licensing infor
 | Setting | Description |
 | ------- | ----------- |
 | **Power Apps licensing overview** | The number of users actively using licenses in the last 30 days, and whether any actions are recommended. If you change a standard environment to a managed environment, any users who open an app with only a Microsoft 365 license will require a standalone Power Apps license to run the app. |
-| License type | The type of license &mdash;Dynamics 365, Microsoft 365, per app, per user, pay-as-you-go, trial, or developer&mdash;the actual license is mapped to. |
+| License type | The type of license&mdash;Dynamics 365, Microsoft 365, per app, per user, pay-as-you-go, trial, or developer&mdash;the actual license is mapped to. |
 | Active users | The number of unique users who opened apps in the environment at least once in the last 30 days. |
 | Recommended actions | Actions to consider to convert the environment to a managed environment. |
 | Usage details for a license type | Select a license type in the **Power Apps licensing overview** section to view a list of the users who are consuming a specific license type. |
 | Email | The email ID or user principal name (UPN) of the user who launched an app in the selected environment. Includes a list of users with whom an app is shared and whether the app is installed in the environment. Select the email link to open the Microsoft 365 admin portal. |
-| License | The license SKU |
+| License | The license SKU. |
 | Last active date | The date when a selected app was last opened by a user in a selected time. |
-| **License Type: Power App Per App** | If the selected environment has per-app licenses assigned, a list of apps consuming app pass licenses, the number of users the app has been shared with, and the number of users who have opened the app using per-app licenses |
+| **License Type: Power App Per App** | If the selected environment has per-app licenses assigned, a list of apps consuming app pass licenses, the number of users the app has been shared with, and the number of users who have opened the app using per-app licenses. |
 | Download | Downloads the information in CSV format. Select a specific license type to start the download. After a CSV file is generated, you can download the same file again within five days without having to start a new download. |
 
 ### Power Automate
@@ -74,16 +74,16 @@ The **Environments** tab on **Licenses (preview)** page displays licensing infor
 | Setting | Description |
 | ------- | ----------- |
 | **Power Automate licensing overview** | The number of users and flows actively using Power Automate licenses in the last 30 days, based on flow execution and whether any actions are recommended. |
-| License type | The type of license &mdash;Dynamics 365, Microsoft 365, Power Automate per flow, per user, pay-as-you-go, trial, or developer&mdash;the actual license is mapped to. |
+| License type | The type of license&mdash;Dynamics 365, Microsoft 365, Power Automate per flow, per user, pay-as-you-go, trial, or developer&mdash;the actual license is mapped to. |
 | Active users | The number of unique users who executed flows in the environment at least once in the last 30 days. |
 | Unique flow count | The number of unique flows executed in the environment at least once in the last 30 days. |
 | Recommended actions | Actions to consider to convert the environment to a managed environment. |
 | **Usage details for a license type** | Select a license type in the **Power Automate licensing** section to view a list of the users who are consuming a specific license type. |
 | Email | The email ID or UPN of the user who executed flows in the selected environment. Select a user to see a list of all the flows executed by the user in the selected environment. |
 | Flow name | Name of the flow executed, which links to the flow detail page. |
-| License | The license SKU |
+| License | The license SKU. |
 | Date last run | The date when the flow was last executed. |
-| Premium feature | Indicates if a premium feature, such as a premium connector, custom connector, or Dataverse connector was used in the flow. |
+| Premium feature | Indicates if a premium feature, such as a premium connector, custom connector, or Dataverse connector, was used in the flow. |
 | Flow type | Indicates if the flow is scheduled, instant, or automated. |
 | Download | Downloads the information in CSV format. Select a specific license type to start the download. After a CSV file is generated, you can download the same file again within five days without having to start a new download. |
 | Attention needed | Summary count of flows requiring licensing attention, which includes: </br><ul></br><li>List of flow not having an owner.</li></br><li>Standalone, Premium flow using standard or expired licenses.</li></br><li>Out of Context flow, such as Premium flows using Power Apps, Power Virtual Agents, or Dynamics 365 licenses but not running in in the context of Power Apps, Power Virtual Agents, or Dynamics 365.</li></br></ul> |
