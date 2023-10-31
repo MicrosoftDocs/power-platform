@@ -4,7 +4,7 @@ description: Manage feature settings to adjust how features appear and function 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/28/2023
+ms.date: 10/30/2023
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -144,7 +144,7 @@ Choose which provider to enable outbound calls from within customer engagement a
 |Prevent slow keyword filter for quick find terms on view pages |  If **On**, users will be prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message will be displayed in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip will be displayed indicating the search might be slow. More information: [Grid search](/power-apps/user/grid-filters#grid-search) | Off|
 |Quick Find record limits| If **On**, if more than 10,000 records are found, a message will be displayed that suggests a more selective search. More information: [Configure Dataverse search for the organization](configure-relevance-search-organization.md)| On |
 | Use quick find view of an entity for searching on grids and sub-grids|  Select **Yes** to show the traditional Quick Find search in an entity grid. The traditional Quick Find search applies the [Quick Find View](/powerapps/maker/model-driven-apps/create-edit-views#system-views) filters and displays the Quick Find columns after searching.  |Off|
-| Search for records in Microsoft 365 apps | Description | On |
+| Search for records in Microsoft 365 apps | You can quickly enable your users to access the records they have most recently used in their application.  The records are available in the Outlook Web client using a simple /mention gesture.  | On |
 
 ## Map and address services
 | Setting | Description | Default value |
