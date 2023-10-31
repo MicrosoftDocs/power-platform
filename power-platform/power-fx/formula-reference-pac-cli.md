@@ -78,9 +78,9 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[Collect](reference/function-clear-collect-clearcollect.md)** – Creates a collection or adds data to a data source.
 
-**[Color](reference/function-colors.md)** – Sets a property to a built-in color value.
+<!-- **[Color](reference/function-colors.md)** – Sets a property to a built-in color value. -->
 
-<!-- **[ColorFade](reference/function-colors.md)** – Fades a color value. -->
+**[ColorFade](reference/function-colors.md)** – Fades a color value.
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
@@ -464,7 +464,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[Value](reference/function-value.md)** – Converts a string to a number.
 
-<!-- **[VarP](reference/function-aggregates.md)** – Returns the variance of its arguments. -->
+**[VarP](reference/function-aggregates.md)** – Returns the variance of its arguments.
 
 <!-- **[ViewForm](reference/function-form.md)** – Resets a form control for viewing of an existing item. -->
 
