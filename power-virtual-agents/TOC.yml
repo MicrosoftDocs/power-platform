@@ -173,7 +173,7 @@
       href: publication-connect-bot-to-azure-bot-service-channels.md
     - name: Integrate with question answering
       href: integrate-with-question-answering.md
-    - name: Integrate with conversational language understanding (preview)
+    - name: Integrate with conversational language understanding
       items:
         - name: Conversational language understanding integration overview
           href: advanced-clu-integration.md
