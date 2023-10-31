@@ -17,7 +17,7 @@ contributors:
 ---
 # Decimal function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: PAC CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [PAC CLI](/power-platform/developer/cli/reference/power-fx)
 
 Add introduction here
 
