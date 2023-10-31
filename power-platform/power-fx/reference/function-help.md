@@ -18,3 +18,13 @@ contributors:
 # Help function
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: PAC CLI
+
+Add introduction here. Remove Overview if not needed.
+
+## Overview
+
+## Description
+
+## Syntax
+
+## Examples

@@ -18,3 +18,13 @@ contributors:
 # Decimal function
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: PAC CLI
+
+Add introduction here
+
+## Overview
+
+## Description
+
+## Syntax
+
+## Examples
