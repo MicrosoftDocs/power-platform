@@ -30,7 +30,7 @@ Enabling the IP firewall in your Power Platform environments offers several key 
 - **Mitigate insider threats like data exfiltration**: A malicious user who tries to download data from Dataverse using a client tool like Excel or Power BI from a disallowed IP location is blocked from doing so in real time.
 - **Prevent token replay attacks**: If a user steals an access token and tries to use it to access Dataverse from outside allowed IP ranges, Dataverse denies the attempt in real time.
 
-IT firewall protection works in both interactive and noninteractive scenarios.
+IP firewall protection works in both interactive and noninteractive scenarios.
 
 ## How does the IP firewall work?
 
