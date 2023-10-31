@@ -120,7 +120,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[DateDiff](reference/function-dateadd-datediff.md)** – Subtracts two date values, and shows the result in days, months, quarters, or years.
 
-**DateTime** //New or not documented
+**[DateTime](reference/function-datetime.md)** - TODO: Add description
 
 **[DateTimeValue](reference/function-datevalue-timevalue.md)** – Converts a date and time string to a date/time value.
 
@@ -128,9 +128,9 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[Day](reference/function-datetime-parts.md)** – Retrieves the day portion of a date/time value.
 
-**Dec2Hex** //New or not documented
+**[Dec2Hex](reference/function-dec2hex-hex2dec.md)** - TODO: Add description
    
-**Decimal** //New or not documented
+**[Decimal](reference/function-decimal.md)** - TODO: Add description
 
 <!-- **[Defaults](reference/function-defaults.md)** – Returns the default values for a data source. -->
 
@@ -146,7 +146,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 ## E
 
-**EDate** //New or not documented
+**[EDate](reference/function-edate.md)** - TODO: Add description
 
 
 <!-- **[EditForm](reference/function-form.md)** – Resets a form control for editing of an item. -->
@@ -157,7 +157,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
 
-**EOMonth** //New or not documented
+**[EOMonth](reference/function-eomonth.md)** - TODO: Add description
 
 **[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
@@ -179,7 +179,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[FirstN](reference/function-first-last.md)** – Returns the first set of records (N records) of a table.
 
-**Float** //New or not documented
+**[Float](reference/function-float.md)** - TODO: Add description
 
 **[ForAll](reference/function-forall.md)** – Calculates values and performs actions for all records of a table.
 
@@ -193,11 +193,11 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 <!-- **[HashTags](reference/function-hashtags.md)** – Extracts the hashtags (#strings) from a string. -->
 
-**Help** //New or not documented
+**[Help](reference/function-help.md)** - TODO: Add description
 
 <!-- **[Host](reference/object-host.md)** - Provides information about the current host running the app. -->
 
-**Hex2Dec** //New or not documented
+**[Hex2Dec](reference/function-dec2hex-hex2dec.md)** - TODO: Add description
 
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
 
@@ -296,7 +296,8 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 ## O
 
-**OptionSetInfo** //New or not documented
+
+**[OptionSetInfo](reference/function-optionsetinfo.md)** - TODO: Add description
 
 **[Or](reference/function-logicals.md)** – Boolean logic OR. Returns **true** if any of its arguments are **true**. You can also use the [**||** operator](reference/operators.md).
 
