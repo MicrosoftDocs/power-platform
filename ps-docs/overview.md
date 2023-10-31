@@ -32,6 +32,9 @@ Project “Sophia” offers has an AI- powered, user-friendly research canvas an
 
 You can interact with Project "Sophia" using the **Exploratory** and **Guides** option. The following screenshot provides more details about the interaction: 
 
+> [!div class="mx-imgBorder"]
+> ![Project "Sophia" main screen.](media/ps-main-screen.png)
+
 Legend
 
 1. **Exploratory**: Offers a blank canvas where you can explore and ask questions related to your business. Or you can upload business data and ask questions about the data. Project Sophia uses the uploaded data to generate insights and suggests next actions.
