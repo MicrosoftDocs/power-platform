@@ -19,7 +19,7 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
-Use the **Exploratory** option to explore a question or topic. When you ask a question or upload data and ask a questions about the data a workspace is created. By default, the workspace is title **Untitled**. You can select the defualt title and rename it. All of your workspaces are saved on the Home screen. 
+Use the **Exploratory** option to explore a question or topic. When you ask a question or upload data and ask questions about the data a workspace is created. By default, the workspace is title **Untitled**. You can select the defualt title and rename it. All of your workspaces are saved on the Home screen. 
 
 ## Ask a question
 
