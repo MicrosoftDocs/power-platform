@@ -1,6 +1,6 @@
 ---
 title: Configure authentication for SAP Procurement solutions
-description: Set up authentication with SAP and Microsoft Power Platform.
+description: Learn how to streamline access management to SAP for your Microsoft Power Platform users by enabling SSO.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -33,18 +33,18 @@ The SAP ERP connector supports the following authentication types:
 |--------------|--------------|----------------|
 | [SAP authentication](/connectors/saperp/#sap-authentication)     | Use SAP user name and password to access SAP server.  | Step 4        |
 | [Windows authentication](/connectors/saperp/#windows-authentication)     | Use Windows user name and password to access SAP server. |   Steps 1, 2, 3, 4      |
-| [Azure AD authentication](/connectors/saperp/#azure-ad-integrated)    | Use Azure AD to access SAP server. | Steps 1, 2, 3, 4     |
+| [Entra ID (Azure AD) authentication](/connectors/saperp/#azure-ad-integrated)    | Use Entra ID to access SAP server. | Steps 1, 2, 3, 4     |
 
 > [!NOTE]
 > Specific administrative privileges are required to set up SSO in Azure and SAP. Be sure to obtain the necessary admin privileges for each system before setting up SSO.
 More information:
 
-- [Azure Active Directory documentation](/azure/active-directory/)
+- [Microsoft Entra documentation](/entra/)
 - [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
 
 ## Step 1: Configure Kerberos constrained delegation
 
-[Kerberos constrained delegation (KCD)](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) provides secure user or service access to resources permitted by administrators without multiple requests for credentials. Kerberos constrained delegation needs to be configured for Windows and Azure AD authentication.
+[Kerberos constrained delegation (KCD)](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) provides secure user or service access to resources permitted by administrators without multiple requests for credentials. Kerberos constrained delegation needs to be configured for Windows and Entra ID (Azure AD) authentication.
 
 Run the gateway Windows service as a domain account with Service Principal Names (SPNs) (SetSPN).
 
@@ -52,7 +52,7 @@ Configuration tasks:
 
 1. [Configure an SPN for the gateway service account](/power-bi/connect-data/service-gateway-sso-kerberos#configure-an-spn-for-the-gateway-service-account). A domain  administrator uses the [Setspn tool](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)) that comes with Windows to enable delegation.
 
-1. [Adjust communication settings for the gateway](/data-integration/gateway/service-gateway-communication). Enable outbound Azure connections and review your firewall and port setups to ensure communication.
+1. [Adjust communication settings for the gateway](/data-integration/gateway/service-gateway-communication). Enable outbound Entra (Azure) connections and review your firewall and port setups to ensure communication.
 
 1. [Configure for standard Kerberos constrained delegation](/power-bi/connect-data/service-gateway-sso-kerberos#option-a-standard-kerberos-constrained-delegation). A domain administrator is required to configure a domain account for a service and it restricts the account to run on a single domain.
 
@@ -98,7 +98,7 @@ More information: [Use Kerberos single sign-on for SSO to SAP BW using CommonCry
 
 ## Step 3: Enable SAP SNC for Azure AD and Windows authentication
 
-The SAP ERP connector supports Azure AD and Windows authentication by enabling SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so secure single sign-on to SAP environments can be established. The following property guidance helps with setup.
+The SAP ERP connector supports Entra ID, formerly Azure AD, and Windows server AD authentication by enabling SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so secure single sign-on to SAP environments can be established. The following property guidance helps with setup.
 
 | Property | Description |
 |---------|---------|
@@ -112,7 +112,7 @@ The SAP SNC name for the user must equal the user's Active Directory fully quali
 
 > [!NOTE]
 >
-> Azure AD auth only—the _Active Directory SAP Service Principal_ account must have AES 128 or AES 256 defined on the _msDS-SupportedEncryptionType_ attribute.
+> Entra ID (Azure AD) auth only—the _Active DirectorySAP Service Principal_ account must have AES 128 or AES 256 defined on the _msDS-SupportedEncryptionType_ attribute.
 
 ## Step 4: Set up SAP server and user accounts to allow actions
 
@@ -126,23 +126,26 @@ SAP user accounts need to access the `RFC_Metadata` function group and the respe
 |Read Table action   | Either `RFC BBP_RFC_READ_TABLE` or `RFC_READ_TABLE` |
 |Grant strict minimum access to SAP server for your SAP connection  | `RFC_METADATA_GET` and `RFC_METADATA_GET_TIMESTAMP`|
 
-More information on setup and configuration:
+## Related content
 
-- [SAP Single Sign-On](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON)
-- [Secure Login for SAP Single Sign-On Implementation Guide](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON/df185fd53bb645b1bd99284ee4e4a750/631b1669678d41d79d94601c238e218b.html)
-- [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
-- [Azure documentation](/azure/?product=networking)
-- [SAP ERP connector](/connectors/saperp/)
-- [Azure Logic Apps SAP connector](/azure/logic-apps/logic-apps-using-sap-connector)
-- [Data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention)
-- [Hybrid architecture design](/azure/architecture/hybrid/hybrid-start-here)
+[SAP Single Sign-On](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON)
+
+[Secure Login for SAP Single Sign-On Implementation Guide](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON/df185fd53bb645b1bd99284ee4e4a750/631b1669678d41d79d94601c238e218b.html)
+
+[SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
+
+[SAP ERP connector](/connectors/saperp/)
+
+[Azure Logic Apps SAP connector](/azure/logic-apps/logic-apps-using-sap-connector)
+
+[Data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention)
+
+[Hybrid architecture design](/azure/architecture/hybrid/hybrid-start-here)
 
 ## Next steps
 
-- [Install solutions](install.md)
-- [Set up connections](set-up-connections.md)
+[Install solutions](install.md)
 
-### See also
+## See also
 
-- [Overview](../overview.md)
-- [Get started](get-started.md)
+[Get started with the SAP Procurement template](get-started.md)

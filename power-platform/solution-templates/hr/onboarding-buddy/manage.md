@@ -1,6 +1,6 @@
 ---
 title: Manage the Onboarding Buddy app
-description: Get started managing the Onboarding Buddy app.
+description: Program admins manage the Onboarding Buddy app. Learn how to add new employees, update the configurations, and support more languages in the Onboarding Buddy Admin app.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
@@ -27,7 +27,7 @@ Take these steps in the Onboarding Buddy Admin app to manually add a new employe
 :::image type="content" source="media/manage/ob-manage-onboarders.png" alt-text="Power Apps screenshot of adding new employees.":::
 1. Select **+New** from the top menu.
 1. Fill out the form details.
-1. :::image type="content" source="media/manage/ob-manage-onboarder-details.png" alt-text="Power Apps screenshot of the details screen.":::
+:::image type="content" source="media/manage/ob-manage-onboarder-details.png" alt-text="Power Apps screenshot of the details screen.":::
 1. Select **Save & Close**.
 
 ## Update the configuration
@@ -53,3 +53,8 @@ Take these steps in the Onboarding Buddy Admin app to localize the strings to su
     1. **Localized Value**. The translated string you set up.
     1. **String Type**. The filter you can apply. It's optional but can help you sort and manage localized strings at a later date.
 1. Select **Save & Close**.
+
+## See also
+
+- [Install and configure the Onboarding Buddy template](install-and-configure.md)
+- [Get started using the Onboarding Buddy app](use.md)
