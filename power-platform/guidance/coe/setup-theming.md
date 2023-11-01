@@ -2,7 +2,6 @@
 title: "Set up the Power Apps theming solution | MicrosoftDocs"
 description: "Setup instructions for the Power Apps theming solution, which contains a set apps, tables, custom controls and a component library.  The Theme editor app allows designers to create and manage themes."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up theming components

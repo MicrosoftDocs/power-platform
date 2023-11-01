@@ -9,11 +9,6 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Detect duplicate records and merge

@@ -5,16 +5,12 @@ keywords:
 author: Mattp123
 ms.subservice: alm
 ms.author: matp
-manager: kvivek
 ms.custom: ""
 ms.date: 09/11/2020
 ms.reviewer: ""
 
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Environment strategy for ALM

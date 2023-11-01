@@ -2,12 +2,12 @@
 title: "Configure single sign-on for the Power Virtual Agents app in Teams"
 description: "Enable your bot to authenticate an already-signed-in Teams user"
 keywords: "Single Sign-on, Teams SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 08/18/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: kamrani
 ms.custom: authentication, ceX
 ms.service: power-virtual-agents
@@ -23,24 +23,29 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 > [!IMPORTANT]
 > SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
+> [!NOTE]
+> If you are using Teams SSO authentication with the manual authentication option, and also using the bot on custom websites at the same time, you must deploy the Teams app using the app manifest.
+> 
+> For more information, see [Download the bot's Teams app manifest](publication-add-bot-to-microsoft-teams.md#download-the-bots-teams-app-manifest-advanced).
+> 
+> Other configurations such as authentications options beside Manual, or through Teams deployment using Power Virtual Agents one-click will not work.
+
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Learn how to use user authentication in a topic](advanced-end-user-authentication.md).
 - [Add your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
 
-## Configure user authentication
+## Configure an app registration
 
-Before you can turn on SSO, you'll need to configure user authentication with Azure AD. During this process, you'll create an app registration which you'll use to setup SSO.
+Before configuring SSO for Teams, you'll first need to configure user authentication with Azure AD. During this process, you'll create an app registration which you'll use to setup SSO.
 
-1. Create an app registration.
+1. Create an app registration. See the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md).
 1. Add the redirect URL.
 1. Generate a client secret.
 1. Configure manual authentication.
 
 Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md) then return to this article.
-
-<!-- Note: the following sections are nearly identical to https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/tab-sso-register-aad. They were mirrored here to give more specific guidance on the values that needed to be entered. -->
 
 ## Locate your Microsoft Teams channel app ID
 

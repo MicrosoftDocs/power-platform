@@ -1,20 +1,15 @@
 ---
 title: DetailsList control reference | Creator Kit
 description: Learn about the details and properties of the DetailsList control in the Creator Kit.
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 05/01/2023
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist
@@ -52,8 +47,8 @@ The `DetailsList` code component allows using the [Fluent UI `DetailsList` compo
 | `SelectionType` | Selection Type (None, Single, Multiple) |
 | `PageSize` | Defines how many records to load per page. |
 | `PageNumber` | Outputs the current page shown. |
-| `HasNextPage` | Outputs true if there is a next page. |
-| `HasPreviousPage` | Outputs true if there is a previous page. |
+| `HasNextPage` | Outputs true if there's a next page. |
+| `HasPreviousPage` | Outputs true if there's a previous page. |
 | `TotalRecords` | Outputs the total number of records available. |
 | `CurrentSortColumn` | The name of the column to show as currently used for sorting |
 | `CurrentSortDirection` | The direction of the current sort column being used |
@@ -64,7 +59,7 @@ These attributes must be available in the data source to enable the related func
 
 | Property | Description |
 | -------- | ----------- |
-| `RecordKey` | (optional) - The unique key column name. Provide this if you want the selection to be preserved when the Records are updated, and when you want the `EventRowKey` to contain the id instead of the row index after the `OnChange` event is fired.
+| `RecordKey` | (optional) - The unique key column name. Provide this if you want the selection to be preserved when the Records are updated, and when you want the `EventRowKey` to contain the ID instead of the row index after the `OnChange` event is fired.
 | `RecordCanSelect` | (optional) - The column name that contains a `boolean` value defining if a row can be selected.
 | `RecordSelected` | (optional) - The column name that contains a `boolean` value defining if a row is selected by default and when setting the `InputEvent` to contain `SetSelection`.  See the section on `Set Selection` below.
 
@@ -75,31 +70,31 @@ These attributes must be available in the data source to enable the related func
 | `ColDisplayName` | (Required) - Provides the name of the column to show in the header. |
 | `ColName` | (Required) - Provides the actual field name of the column in the Items collection. |
 | `ColWidth` | (Required) - Provides the absolute fixed width of the column in pixels. |
-| `ColCellType` | The type of cell to render. Possible values: `expand`, `tag`, `indicatortag`, `image`, `clickableimage`,  `link`. See below for more information. |
+| `ColCellType` | The type of cell to render. Possible values: `expand`, `tag`, `indicatortag`, `image`, `clickableimage`,  `link`. For more information, see the next sections. |
 | `ColHorizontalAlign` | The alignment of the cell content if the `ColCellType` is of type `image`, or `clickableimage`. |
 | `ColVerticalAlign` |  The alignment of the cell content if the `ColCellType` is of type `image`, or `clickableimage`. |
 | `ColMultiLine` | True when the text in the cells text should wrap if too long to fit the available width. |
 | `ColResizable` | True when the column header width should be resizable. |
-| `ColSortable` | True when the column should show be sortable. If the dataset supports automatic sorting via a direct Dataverse connection, the data will automatically be sorted. Otherwise, the `SortEventColumn` and `SortEventDirection` outputs will be set and must be used in the records Power FX binding expression. |
-| `ColSortBy` | The name of the column to provide to the `OnChange` event when the column is sorted. For example, if you are sorting date columns, you want to sort on the actual date value rather than the formatted text shown in the column. |
+| `ColSortable` | True when the column should be sortable. If the dataset supports automatic sorting via a direct Dataverse connection, the data will automatically be sorted. Otherwise, the `SortEventColumn` and `SortEventDirection` outputs will be set and must be used in the records Power FX binding expression. |
+| `ColSortBy` | The name of the column to provide to the `OnChange` event when the column is sorted. For example, if you're sorting date columns, you want to sort on the actual date value rather than the formatted text shown in the column. |
 | `ColIsBold` | True when the data cell data should be bold |
-| `ColTagColorColumn` | If the cell type is tag, set to the hex background color of the text tag. Can be set to `transparent`. If the cell type is a not a tag, set to a hex color to use as an indicator circle tag cell. If the text value is empty, the tag is not shown.   |
+| `ColTagColorColumn` | If the cell type is tag, set to the hex background color of the text tag. Can be set to `transparent`. If the cell type isn't a tag, set to a hex color to use as an indicator circle tag cell. If the text value is empty, the tag isn't shown.   |
 | `ColTagBorderColorColumn` | Set to a hex color to use as the border color of a text tag. Can be set to `transparent`. |
 | `ColHeaderPaddingLeft` | Adds padding to the column header text (pixels) |
 | `ColShowAsSubTextOf` | Setting this to the name of another column will move the column to be a child of that column. See below under Sub Text columns. |
 | `ColPaddingLeft` | Adds padding to the left of the child cell (pixels) |
 | `ColPaddingTop` | Adds padding to the top of the child cell (pixels) |
-| `ColLabelAbove` | Moves the label above the child cell value if it is shown as a Sub Text column. |
+| `ColLabelAbove` | Moves the label above the child cell value if it's shown as a Sub Text column. |
 | `ColMultiValueDelimiter` |  Joins multi value array values together with this delimiter. See below under multi-valued columns. |
 | `ColFirstMultiValueBold` | When showing a multi-valued array value, the first item is shown as bold.
-| `ColInlineLabel` | If set to a string value, then this is used to show a label inside the cell value that could be different to the column name. E.g. <br> ![image-20220322144857658](media/colinlinelabel.png) 
+| `ColInlineLabel` | If set to a string value, then this is used to show a label inside the cell value that could be different to the column name. for example <br> ![image-20220322144857658](media/colinlinelabel.png) 
 | `ColHideWhenBlank` | When true, any cell inline label & padding will be hidden if the cell value is blank. |
 | `ColSubTextRow` | When showing multiple cells on a sub text cell, set to the row index. Zero indicates the main cell content row. |
-| `ColAriaTextColumn` | The column that contains the aria description for cells (e.g. icon cells). |
-| `ColCellActionDisabledColumn` | The column that contains a boolean flag to control if a cell action (e.g. icon cells) is disabled. |
+| `ColAriaTextColumn` | The column that contains the aria description for cells (for example, icon cells). |
+| `ColCellActionDisabledColumn` | The column that contains a boolean flag to control if a cell action (for example, icon cells) is disabled. |
 | `ColImageWidth` | The icon/image size in pixels. |
 | `ColImagePadding` | The padding around an icon/image cell. |
-| `ColRowHeader` | Defines a column to render larger than the other cells (14px rather than 12px). There normally would only be a single Row Header per column set. |
+| `ColRowHeader` | Defines a column to render larger than the other cells (14 px rather than 12 px). There normally would only be a single Row Header per column set. |
 
 ### Style Properties
 
@@ -115,7 +110,7 @@ These attributes must be available in the data source to enable the related func
 | Property | Description |
 | -------- | ----------- |
 | `RaiseOnRowSelectionChangeEvent` | The `OnChange` event is raised when a row is selected/unselected. (see below) |
-| `InputEvent` | One or more input events (that can be combined together using string concatenation). Possible values `SetFocus`, `SetFocusOnRow`, `SetFocusOnHeader`, `ClearSelection`, `SetSelection`. Must be followed by random string element to ensure the event is triggered. Events can be combined e.g. `SetFocusClearSelection` will clear and set the focus at the same time. `SetFocusOnRowSetSelection` will set focus on a row and set the selection at the same time. |
+| `InputEvent` | One or more input events (that can be combined together using string concatenation). Possible values `SetFocus`, `SetFocusOnRow`, `SetFocusOnHeader`, `ClearSelection`, `SetSelection`. Must be followed by random string element to ensure the event is triggered. Events can be combined, for example, `SetFocusClearSelection` will clear and set the focus at the same time. `SetFocusOnRowSetSelection` will set focus on a row and set the selection at the same time. |
 | `EventName` | Output Event when `OnChange` is triggered. Possible values -  `Sort`, `CellAction`, `OnRowSelectionChange` |
 | `EventColumn` | Output Event column field name used when `CellAction` is invoked |
 | `EventRowKey` | Output Event column that holds either the index of the row that the event was invoked on, or the Row Key if the `RecordKey` property is set. |
@@ -227,7 +222,7 @@ The `ColCellType` column property accepts the following values: `expand`, `tag`,
 
 ### Expand/Collapse
 
-If the 'Sub Text' rows requires to have an expand/collapse icon, an additional column can be added to the column dataset and the column definition `ColCellType` set `expand` also:
+If the 'Sub Text' rows requires to have an expand/collapse icon, an additional column can be added to the column dataset, and the column definition `ColCellType` set `expand` also:
 
 ```json
 {ColName:"expand",ColDisplayName:"",ColWidth:32,ColResponsive:false, ColRightAligned:true, ColCellType:"expand"}
@@ -250,12 +245,12 @@ This will give the following result:
 
 ### Tag & Indicator Tag
 
-Using a cell type of tag or indicatortag you can create inline colored tags to display the cell content.
+Using a cell type of `tag` or `indicatortag` you can create inline colored tags to display the cell content.
 
-- `tag` - This will show a simple tag box with a colored background and border
+- `tag` - This will show a tag box with a colored background and border
 - `tagindicator` - Shows a tag box with a colored circle indicator
 
-The colors can be varied by row, and so the column metadata dataset simply provides the name of the columns that holds the colors for the tags.
+The colors can vary by row, and so the column metadata dataset simply provides the name of the columns that holds the colors for the tags.
 
 Consider the dataset:  
 ```powerapps-dot
@@ -308,13 +303,13 @@ Using a cell type of `image` or `clickableimage`, you can configure inline image
 
 The image content can be defined by prefixing with:
 
-- `https:`  A link to an external image. e.g. https://via.placeholder.com/100x70
-- `icon:` Using one of the [Fluent UI icons](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons) e.g. `icon:SkypeCircleCheck`
-- `data:` Using inline svg image data: e.g. `data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%2020...`
+- `https:`  A link to an external image. for example, https://via.placeholder.com/100x70
+- `icon:` Using one of the [Fluent UI icons](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons) for example, `icon:SkypeCircleCheck`
+- `data:` Using inline svg image data: for example, `data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%2020...`
 
 If the image is of type `clickableimage` the `OnChange` event will fire when the icon is selected, with an `EvenName` of `CellAction`, `EventColumn` providing the name of the image column and `EventRowKey` being the `RecordKey` of the row (if no `RecordKey` is set, then the `EventRowKey` will contain the row number).
 
-E.g. Consider the row data:
+for example, Consider the row data:
 
 ```powerapps-dot
 {
@@ -354,13 +349,16 @@ and the column metadata:
         ColDisplayName: "Clickable Image",
         ColCellType:"clickableimage",
         ColWidth: 60,
+        ColImageWidth: 60,
+        ColImagePadding: 8,
+        ColVerticalAlign: "Top"
 }
 ```
 
 This would give the result:  
 ![image-20220323161817524](media/details-list-columns-image.png)
 
-For the `clickableimage` column,  `OnChange` event can then handle when a user selects (mouse or keyboard) and icon (assuming that it is not disabled) using:
+For the `clickableimage` column,  `OnChange` event can then handle when a user selects (mouse or keyboard) and icon (assuming that it isn't disabled) using:
 
 ```powerapps-dot
 If(Self.EventName="CellAction",
@@ -393,7 +391,7 @@ The `OnChange` event is again fired when the link is clicked, with the `EventCol
 
 ### Multi-valued columns
 
-If a column value can has multiple values by setting it to a Table/Collection. This will then render the values as multiple cell values. E.g.:
+If a column value can has multiple values by setting it to a Table/Collection. This will then render the values as multiple cell values. for example:
 
 ```powerapps-dot
  {
@@ -422,7 +420,7 @@ This would result in the table showing:
 
 ### Sort Events
 
-A column is defined as being sortable by setting the `ColSortable` property to true. If the column shows a text value that is different to the sort order required (e.g. a formatted date or status column), then a different sort column can be specified using the `ColSortBy` property.
+A column is defined as being sortable by setting the `ColSortable` property to true. If the column shows a text value that is different to the sort order required (for example, a formatted date or status column), then a different sort column can be specified using the `ColSortBy` property.
 
 Sorting is then handled in two ways:
 
@@ -468,7 +466,7 @@ Manual Sorting is supported outside of the component to allow for custom connect
    SortByColumns(colData,ctxSortCol,If(ctxSortAsc,SortOrder.Ascending,SortOrder.Descending))
    ```
 
-When the OnChange event is fired after the user clicks on the column header to change the sort, the sort context variables are updated, using the new sort information provided, which causes the input dataset to be re-sorted and the table is updated accordingly.
+When the OnChange event is fired after the user select on the column header to change the sort, the sort context variables are updated, using the new sort information provided, which causes the input dataset to be re-sorted and the table is updated accordingly.
 
 ### Paging
 
@@ -478,8 +476,8 @@ The following properties are used to control paging:
 
 - `PageSize` - Defines how many records to load per page.
 - `PageNumber` - Outputs the current page shown.
-- `HasNextPage` - Outputs true if there is a next page.
-- `HasPreviousPage` - Outputs true if there is a previous page.
+- `HasNextPage` - Outputs true if there's a next page.
+- `HasPreviousPage` - Outputs true if there's a previous page.
 - `TotalRecords` - Outputs the total number of records available.
 
 The paging buttons can then be defined as follows:
@@ -500,6 +498,11 @@ The number of records label can be set to an expression similar to:
 grid.TotalRecords & " record(s)  " & Text(CountRows(grid.SelectedItems)+0) & " selected" 
 ```
 
+#### Show the top of the next page
+This is implemented using the 'SetFocusOnRow' event. If you had the InputEvent property bound to `ctxGridEvent`, on the next page button's OnSelect property you would use:
+`UpdateContext({ctxGridEvent:"LoadNextPageSetFocusOnRow" & Text(Rand())});`
+
+
 ### Input Events
 
 The `InputEvent` property can be set to one or more of the following:
@@ -507,11 +510,11 @@ The `InputEvent` property can be set to one or more of the following:
 - **`SetFocus`** - Sets focus on the first row of the grid
 - **`ClearSelection`** - Clears any selection, and sets back to the default selection.
 - **`SetSelection`** - Sets the selection as defined by the `RowSelected` column. 
-- **`LoadNextPage`** - Loads the next page if there is one
-- **`LoadPreviousPage`** - Loads the previous page if there one
+- **`LoadNextPage`** - Loads the next page if there's one
+- **`LoadPreviousPage`** - Loads the previous page if there's one
 - **`LoadFirstPage`** - Loads the first page
 
-To ensure that the input event is picked up, it must be sufficed with a random value. e.g. `SetSelection" & Text(Rand())`
+To ensure that the input event is picked up, it must be sufficed with a random value. for example, `SetSelection" & Text(Rand())`
 
 See below for more details.
 
@@ -526,7 +529,7 @@ When selecting items, the `SelectedItems` and `Selected` properties are updated.
 
 When a user invokes the row action, either by double clicking or pressing enter or a selected row, the `OnSelect` event is fired. The `Selected` property will contain a reference to the record that has been invoked. This event can be used to show a detailed record or navigate to another screen.
 
-If the `RaiseOnRowSelectionChangeEvent` property is enabled, when the selected rows is changed, the `OnChange` event is raised with the `EventName` set to `OnRowSelectionChange`. If the app needs to respond to a single row select rather than a row double click, the `OnChange` can detect this using code similar to:
+If the `RaiseOnRowSelectionChangeEvent` property is enabled, when the selected rows are changed, the `OnChange` event is raised with the `EventName` set to `OnRowSelectionChange`. If the app needs to respond to a single row select rather than a row double-click, the `OnChange` can detect this using code similar to:
 
 ```powerapps-dot
 If(
@@ -541,7 +544,7 @@ If(
 
 To clear the selected records, you must set the `InputEvent` property to a string that starts with
 
-E.g.
+for example
 
 ```powerapps-dot
 UpdateContext({ctxTableEvent:"ClearSelection"&Text(Rand())})
@@ -551,13 +554,13 @@ The context variable `ctxTableEvent` can then be bound to the `InputEvent` prope
 
 ### Set Row Selection
 
-If there is a scenario where a specific set of records should be programmatically selected, the `InputEvent` property can be set to `SetSelection` or `SetFocusOnRowSetSelection` in combination with setting the `RecordSelected` property on the record.
+If there's a scenario where a specific set of records should be programmatically selected, the `InputEvent` property can be set to `SetSelection` or `SetFocusOnRowSetSelection` in combination with setting the `RecordSelected` property on the record.
 
-E.g. If you had a dataset as follows:
+for example If you had a dataset as follows:
 
 `{RecordKey:1, RecordSelected:true, name:"Row1"}`
 
-To select and select the first row you can set the `InputEvent` to be `"SetFocusOnRowSetSelection"&Text(Rand())` or `"SetSelection"&Text(Rand())`
+To select and select the first row, you can set the `InputEvent` to be `"SetFocusOnRowSetSelection"&Text(Rand())` or `"SetSelection"&Text(Rand())`
 
 ### Configure "On Change" behavior
 

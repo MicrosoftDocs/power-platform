@@ -4,8 +4,6 @@
       items: 
         - name: Overview
           href: overview.md
-        - name: Use Power Fx formulas in Power Apps 
-          href: /power-apps/maker/canvas-apps/working-with-formulas  
         - name: Operators
           href: operators.md   
         - name: Data types
@@ -20,14 +18,18 @@
           href: error-handling.md
         - name: Global apps
           href: global.md
-        - name: Untyped objects (experimental)
+        - name: Untyped objects
           href: untyped-object.md
-        - name: Working with JSON (experimental)
+        - name: Working with JSON
           href: working-with-json.md
         - name: Formula reference
           items:
           - name: Overview
+            href: formula-reference-overview.md
+          - name: Power Apps formula reference
             href: formula-reference.md
+          - name: Dataverse formula reference
+            href: formula-reference-dataverse.md
           - name: Abs
             href: reference/function-numericals.md
           - name: Acceleration
@@ -96,6 +98,8 @@
             href: reference/function-confirm.md
           - name: Connection
             href: reference/signals.md
+          - name: Copy
+            href: reference/function-copy.md
           - name: Count
             href: reference/function-table-counts.md
           - name: Cos
@@ -172,6 +176,8 @@
             href: reference/function-hashtags.md
           - name: Hex2Dec
             href: reference/function-hexdec.md
+          - name: Host
+            href: reference/object-host.md
           - name: Hour
             href: reference/function-datetime-parts.md
           - name: Identifiers
@@ -264,7 +270,7 @@
             href: reference/function-param.md
           - name: Parent
             href: reference/operators.md#self-and-parent-operators
-          - name: ParseJSON (experimental)
+          - name: ParseJSON
             href: reference/function-parsejson.md
           - name: Patch
             href: reference/function-patch.md
@@ -330,6 +336,8 @@
             href: reference/function-select.md
           - name: Self
             href: reference/operators.md#self-and-parent-operators
+          - name: SendAppNotification (preview)
+            href: reference/function-send-app-notification.md
           - name: Set
             href: reference/function-set.md
           - name: SetFocus
@@ -389,7 +397,7 @@
           - name: TrimEnds
             href: reference/function-trim.md
           - name: Trunc
-            href: reference/function-round.md    
+            href: reference/function-round.md 
           - name: Ungroup
             href: reference/function-groupby.md
           - name: Unrelate
@@ -430,3 +438,5 @@
             href: expression-grammar.md
           - name: YAML formula grammar
             href: yaml-formula-grammar.md
+        - name: Use Power Fx formulas in Power Apps 
+          href: /power-apps/maker/canvas-apps/working-with-formulas  

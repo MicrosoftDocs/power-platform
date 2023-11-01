@@ -1,6 +1,6 @@
 ---
-title: Concat and Concatenate functions in Power Apps
-description: Reference information including syntax and examples for the Concat and Concatenate functions in Power Apps.
+title: Concat and Concatenate functions
+description: Reference information including syntax and examples for the Concat and Concatenate functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Concat and Concatenate functions in Power Apps
+# Concat and Concatenate functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
 
 Concatenates individual strings of text and strings in [tables](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -85,7 +85,7 @@ For this example, add a blank, vertical [**Gallery**](/power-apps/maker/canvas-a
 
 | Formula | Description | Result |
 | --- | --- | --- |
-| **Concatenate( "Name:&nbsp;",&nbsp;Products.Name, ",&nbsp;Type:&nbsp;",&nbsp;Products.Type )** | For each record in the **Products** table, concatenates the string **"Name: "**, the name of the product, the string **", Type: "** and the type of the product. | ![Table of products.](media/function-concatenate/single-column.png) |
+| **Concatenate( "Name:&nbsp;",&nbsp;Products.Name, ",&nbsp;Type:&nbsp;",&nbsp;Products.Type )** | For each record in the **Products** table, concatenates the string **"Name: "**, the name of the product, the string **", Type: "** and the type of the product. | A single-column table with a `Value` column containing the following values: "Name: Violin, Type: String", "Name: "Cello, Type: String", "Name: Trumpet, Type: Wind" |
 
 ### Concat function
 
@@ -106,6 +106,6 @@ For these examples, add a blank, vertical gallery, set its **Items** property to
 
 | Formula | Description | Result |
 | --- | --- | --- |
-| **Split( Concat(&nbsp;Products,&nbsp;Name,&nbsp;",&nbsp;"&nbsp;), ", " )** | Splits the text string with the separator **", "**. | ![Table with only 3 rows.](media/function-concatenate/matchall.png) |
+| **Split( Concat(&nbsp;Products,&nbsp;Name,&nbsp;",&nbsp;"&nbsp;), ", " )** | Splits the text string with the separator **", "**. | A single-column table with a `Value` column containing the following values: "Violin", "Cello", "Trumpet" |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

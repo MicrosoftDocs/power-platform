@@ -4,16 +4,11 @@ description: Control who can create and manage environments in the Power Platfor
 author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/30/2023
+ms.date: 08/16/2023
 ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 contributors:
   - marcelbf
 ---
@@ -42,11 +37,29 @@ The following admins will be able to create new environments in the Power Platfo
 
 Developer environments are special environments intended only for use by the owner. You can restrict users from creating developer type environments from Power Platform admin center, but if the user has a **Microsoft Power Apps for Developer** license, a developer environment will be auto-created next time the user logs in.
 
+To restrict users from creating developer type environments, admins can use following PowerShell command:
+
+```powershell
+$requestBody = [pscustomobject]@{
+powerPlatform = [pscustomobject]@{
+governance = [pscustomobject]@{
+disableDeveloperEnvironmentCreationByNonAdminUsers  = $True
+}
+}
+}
+
+Set-TenantSettings -RequestBody $requestBody
+```
+
 To permanently remove the auto-creation of developer environments, a member of the Power Platform related [service admin roles](/power-platform/admin/use-service-admin-role-manage-tenant) must perform the following actions:
 
 - Remove the **Microsoft Power Apps for Developer** license. More information: [Service plan IDs for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
 - Disable [self-service sign-up](/azure/active-directory/enterprise-users/directory-self-service-signup).
-- Explicitly block all "internal" consent plans in the tenant using PowerShell. More information: [Block trial licenses commands](/power-platform/admin/powerapps-powershell#block-trial-licenses-commands).
+- Explicitly block all "internal" consent plans in the tenant using PowerShell:
+```powershell
+Remove-AllowedConsentPlans -Types @("Internal", "Viral")
+```
+More information: [Block trial licenses commands](/power-platform/admin/powerapps-powershell#block-trial-licenses-commands).
 
 ## Control environment creation through PowerShell
 

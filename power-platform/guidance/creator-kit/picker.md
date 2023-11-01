@@ -1,20 +1,15 @@
 ---
 title: Picker control reference | Creator Kit
 description: Learn about the details and properties of the Picker control in the Creator Kit.
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 05/01/2023
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist
@@ -48,9 +43,9 @@ The Tag Picker code component provides the following features:
 The Tag Picker has the following input datasets, which are described in detail in [Key properties](#key-properties) later in this article.
 
 - `Tags` 
-  - `TagDisplayName` 
+  - `TagsDisplayName` 
 - `Suggestions` 
-  - `SuggestionDisplayName` 
+  - `SuggestionsDisplayName` 
   - `SuggestionSubDisplayName`
 
 The `Suggestions` dataset should be filtered by using the `SearchTerm` output property, for example:
@@ -79,13 +74,13 @@ Search(colSuggestions,TagPicker.SearchTerm,"name")
 ### `Items` properties
 | Property | Description |
 | -------- | ----------- |
-| `TagDisplayName` | Set to the name of the column that holds the tag display name. |
+| `TagsDisplayName` | Set to the name of the column that holds the tag display name. |
 
 ### `Suggestions` properties
 | Property | Description |
 | -------- | ----------- |
-| `SuggestionDisplayName` | set to the name of the column that holds the suggestion display name. |
-| `SuggestionSubDisplayName` | (Optional) set to the name of the column that holds the secondary line of text. |
+| `SuggestionsDisplayName` | set to the name of the column that holds the suggestion display name. |
+| `SuggestionsSubDisplayName` | (Optional) set to the name of the column that holds the secondary line of text. |
 
 ### Style properties
 | Property | Description |
@@ -105,7 +100,7 @@ Search(colSuggestions,TagPicker.SearchTerm,"name")
 | Property | Description |
 | -------- | ----------- |
 | `SearchTerm` | The text entered into the Tag Picker that can be used for filtering the suggestions dataset. |
-| `TagDisplayName` | the text that is used to create a new **Tag** when the **On Change** event is fired |
+| `TagsDisplayName` | the text that is used to create a new **Tag** when the **On Change** event is fired |
 | `AutoHeight` | When the tag picker wraps onto multiple lines, the **Auto Height** property can be used to control the height of a responsive container height. |
 
 ## Behavior
@@ -124,12 +119,12 @@ The `TagPicker`component raises an `OnChange` event when tags are added or remov
 The event should contain an expression similar to:
 
 ```powerapps-dot
-If( TagPicker.TagEvent = "Add" && CountRows(Filter(colTags,name=TagPicker.TagDisplayName)) = 0,
-    Collect( colTags, { name:TagPicker.TagDisplayName })
+If( TagPicker.TagEvent = "Add" && CountRows(Filter(colTags,name=TagPicker.TagsDisplayName)) = 0,
+    Collect( colTags, { name:TagPicker.TagsDisplayName })
 );
 
 If( TagPicker.TagEvent="Remove",
- RemoveIf( colTags,name=Text(TagPicker.TagDisplayName) )
+ RemoveIf( colTags,name=Text(TagPicker.TagsDisplayName) )
 );
 ```
 

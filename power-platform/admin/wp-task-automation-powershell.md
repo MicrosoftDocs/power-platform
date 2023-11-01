@@ -10,11 +10,6 @@ ms.author: laswenka
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Automation of tasks with PowerShell 

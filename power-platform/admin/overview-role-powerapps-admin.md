@@ -1,39 +1,29 @@
 ---
-title: "Overview of the role of a Power Platform administrator"
-description: "Get started on the Power Apps adoption journey by learning about the role of a Microsoft Power Platform administrator."
-author: jimholtz
-
-ms.component: pa-admin
+title: Overview of the role of a Power Platform administrator
+description: "Get started on the adoption journey by learning about the role of a Microsoft Power Platform administrator."
+author: sericks007
 ms.topic: overview
-ms.date: 05/01/2020
+ms.date: 06/20/2023
 ms.subservice: admin
-ms.author: jimholtz
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.author: sericks
 ---
 
 # What's the role of a Power Platform administrator?
 
-Administration of Power Apps, Power Automate, and Microsoft Dataverse is done through the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+Administration of Power Apps, Power Automate, Power Pages, and Power Virtual Agents is done through the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 
 ## Administration journey
-The evolution of an organization adopting Power Apps, Power Automate, and Dataverse starts with the administrator. As an administrator of Microsoft Power Platform, you begin your journey asking how you can protect your organization's data. What data is accessible through these services? Are there best practices to follow? What is the Power Apps security model and how should I control access to data? Once you determine how to proceed with data access, you'll then want to know how you can monitor and manage what users are doing with these services.
+The evolution of an organization adopting Power Apps, Power Automate, Power Pages, and Power Virtual Agents starts with the administrator. As an administrator of Microsoft Power Platform, you begin your journey asking how you can protect your organization's data. What data is accessible through these services? Are there best practices to follow? What is the Power Platform security model and how should I control access to data? Once you determine how to proceed with data access, you'll then want to know how you can monitor and manage what users are doing with these services.
 
-When you've figured out control and visibility, the next part of your journey takes you to deployment. Individual users and teams can deploy apps on their own, but how do you centrally deploy solutions for your entire organization? And how do you orchestrate updates and identify and fix issues?
-
-The documentation in this section, which you can access from the navigation pane on the left, provides answers to these questions and guides you on this journey.
+The navigation pane on the left provides answers to these questions and guides you on this journey.
 
 ## Next steps
-To get you started administering Power Apps, Power Automate, and Dataverse, check out the following articles:
-* Learn how to [create a data loss protection (DLP) policy](create-dlp-policy.md).
-* Learn how to [download a list of active users in your tenant](admin-view-user-licenses.md).
-* Learn about [environments](environments-overview.md).
+To get you started administering Power Platform:
+* Learn about how to [try Power Platform for free](try-powerapps-dynamics-365.md) and [licensing](pricing-billing-skus.md)
+* Learn about [Power Platform environments](environments-overview.md)
+* Learn about [security in Power Platform](security/overview.md)
+* Learn about various [analytics and reporting options](analytics-common-data-service.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

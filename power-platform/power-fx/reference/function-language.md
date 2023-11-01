@@ -1,6 +1,6 @@
 ---
-title: Language function in Power Apps
-description: Reference information including syntax and examples for the Language function in Power Apps.
+title: Language function
+description: Reference information including syntax and examples for the Language function.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Language function in Power Apps
+# Language function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 Returns the language tag of the current user.
 

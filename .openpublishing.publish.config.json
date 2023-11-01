@@ -33,6 +33,20 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
+    },
+    {
+      "docset_name": "project-sophia",
+      "build_source_folder": "ps-docs",
+      "build_output_subfolder": "ps-docs",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
@@ -42,9 +56,7 @@
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/power-platform",
   "git_repository_branch_open_to_public_contributors": "main",
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -62,6 +74,12 @@
       "path_to_root": "powerapps-samples",
       "url": "https://github.com/microsoft/PowerApps-Samples",
       "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "shared-content",
+      "url": "https://github.com/MicrosoftDocs/powerapps-docs-pr",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
@@ -83,13 +101,17 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
   },
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  }
+  "docs_build_engine": {},
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.power-virtual-agents.json"
+  ],
+  "skip_source_output_uploading": false,
+  "contribution_branch_mappings": {},
+  "need_generate_pdf_url_template": true
 }

@@ -5,17 +5,12 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/12/2022
-author: tjvass
+author: StephenRauchPM
 ms.subservice: admin
-ms.author: tjvass
-ms.reviewer: jimholtz
+ms.author: stephenrauch
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Telemetry events for Microsoft Dataverse
 

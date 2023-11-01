@@ -1,6 +1,6 @@
 ---
-title: Refresh function in Power Apps
-description: Reference information including syntax and examples for the Refresh function in Power Apps.
+title: Refresh function
+description: Reference information including syntax and examples for the Refresh function.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Refresh function in Power Apps
+# Refresh function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 Refreshes the [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 

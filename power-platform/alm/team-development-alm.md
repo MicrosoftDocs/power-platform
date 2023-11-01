@@ -5,7 +5,6 @@ keywords:
 author: Mattp123
 ms.subservice: alm
 ms.author: matp
-manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: ""
@@ -13,9 +12,6 @@ ms.reviewer: ""
 ms.topic: "article"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Scenario 5: Supporting team development
 Supporting team development consists of multiple apps and development team members in a structured release management process. Team development includes the following: 

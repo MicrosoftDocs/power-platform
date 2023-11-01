@@ -2,7 +2,6 @@
 title: Operators and Identifiers in Microsoft Power Fx | Microsoft Docs
 description: Reference information, including syntax and examples, for the operators and identifiers in Microsoft Power Fx
 author: gregli-msft
-manager: kvivek
 ms.topic: reference
 ms.reviewer: jdaly
 ms.date: 03/06/2022
@@ -10,8 +9,6 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae

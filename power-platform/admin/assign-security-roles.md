@@ -1,21 +1,16 @@
 ---
 title: "Assign security roles | MicrosoftDocs"
 description: About assigning security roles to a user.
-author: jimholtz
+author: sericks007
 ms.reviewer: jimholtz
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/25/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Assign a security role to a user  
 
@@ -91,9 +86,9 @@ When users are added to Dataverse, they will get roles assigned automatically ba
 
 2. Users with a valid license will get corresponding mapped roles assigned to them automatically. Removal of the respective license will result in automatic role removal. License-based default role management is not applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
 
-3. For the Default environment type, “BasicUser” and “EnvironmentMaker” roles will be assigned automatically to all users added in Dataverse.
+3. For the Default environment type, **Basic User** and **Environment Maker** roles will be assigned automatically to all users added in Dataverse.
 
-4. In the finance and operations linked environment with a Dataverse database, the finance and operations Basic User security role is automatically assigned to all active users in Dataverse. 
+4. In the finance and operations linked environment with a Dataverse database, the finance and operations **Basic User** security role is automatically assigned to all active users in Dataverse. 
 
 ## License to role mapping
 

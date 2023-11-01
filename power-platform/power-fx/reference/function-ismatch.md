@@ -1,6 +1,6 @@
 ---
-title: IsMatch, Match, and MatchAll functions in Power Apps
-description: Reference information including syntax and examples for the IsMatch, Match, and MatchAll functions in Power Apps.
+title: IsMatch, Match, and MatchAll functions
+description: Reference information including syntax and examples for the IsMatch, Match, and MatchAll functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# IsMatch, Match, and MatchAll functions in Power Apps
+# IsMatch, Match, and MatchAll functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 Tests for a match or extracts portions of a text string based on a pattern.
 
@@ -42,7 +42,7 @@ Use **Match** to extract the first text string that matches a pattern and **Matc
 
 These functions support [**MatchOptions**](#match-options). By default:
 
-- These functions perform a case-sensitive match. Use **IgnoreCase** to perform case-insensitive matches.
+- These functions perform a case-sensitive match. Use **MatchOptions.IgnoreCase** to perform case-insensitive matches.
 - **IsMatch** matches the entire text string (**Complete** MatchOption), while **Match** and **MatchAll** search for a match anywhere in the text string (**Contains** MatchOption). Use **Complete**, **Contains**, **BeginsWith**, or **EndsWith** as appropriate for your scenario.
 
 **IsMatch** returns _true_ if the text string matches the pattern or _false_ if it doesn't. **Match** returns _blank_ if no match is found that can be tested with the [**IsBlank**](function-isblank-isempty.md) function. **MatchAll** returns an empty table if no match is found that can be tested with the [**IsEmpty**](function-isblank-isempty.md) function.
@@ -131,12 +131,12 @@ You can modify the behavior of these functions by specifying one or more options
 
 | MatchOptions enum | Description                                                                                                                | Impact on a regular expression                                                                                             |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **BeginsWith**    | The pattern must match from the beginning of the text.                                                                     | Adds a **^** to the start of the regular expression.                                                                       |
-| **Complete**      | Default for **IsMatch**. The pattern must match the entire string of text, from beginning to end.                          | Adds a **^** to the start and a **$** to the end of the regular expression.                                                |
-| **Contains**      | Default for **Match** and **MatchAll**. The pattern must appear somewhere in the text but doesn't need to begin or end it. | Doesn't modify the regular expression.                                                                                     |
-| **EndsWith**      | The pattern must match the end of the string of text.                                                                      | Adds a **$** to the end of the regular expression.                                                                         |
-| **IgnoreCase**    | Treats uppercase and lowercase letters as identical. By default, matching is case sensitive.                               | Doesn't modify the regular expression. This option is the equivalent of the standard "i" modifier for regular expressions. |
-| **Multiline**     | Matches across multiple lines.                                                                                             | Doesn't modify the regular expression. This option is the equivalent of the standard "m" modifier for regular expressions. |
+| **MatchOptions.BeginsWith**    | The pattern must match from the beginning of the text.                                                                     | Adds a **^** to the start of the regular expression.                                                                       |
+| **MatchOptions.Complete**      | Default for **IsMatch**. The pattern must match the entire string of text, from beginning to end.                          | Adds a **^** to the start and a **$** to the end of the regular expression.                                                |
+| **MatchOptions.Contains**      | Default for **Match** and **MatchAll**. The pattern must appear somewhere in the text but doesn't need to begin or end it. | Doesn't modify the regular expression.                                                                                     |
+| **MatchOptions.EndsWith**      | The pattern must match the end of the string of text.                                                                      | Adds a **$** to the end of the regular expression.                                                                         |
+| **MatchOptions.IgnoreCase**    | Treats uppercase and lowercase letters as identical. By default, matching is case sensitive.                               | Doesn't modify the regular expression. This option is the equivalent of the standard "i" modifier for regular expressions. |
+| **MatchOptions.Multiline**     | Matches across multiple lines.                                                                                             | Doesn't modify the regular expression. This option is the equivalent of the standard "m" modifier for regular expressions. |
 
 Using **MatchAll** is equivalent to using the standard "g" modifier for regular expressions.
 

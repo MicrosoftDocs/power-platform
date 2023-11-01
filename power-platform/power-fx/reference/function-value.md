@@ -1,25 +1,22 @@
 ---
-title: Value function in Power Apps
-description: Reference information including syntax and examples for the Value function in Power Apps.
+title: Value function
+description: Reference information including syntax and examples for the Value function.
 author: gregli-msft
-
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
 ms.date: 02/06/2020
 ms.subservice: power-fx
 ms.author: gregli
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Value function in Power Apps
+# Value function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
 
 Converts a string of text to a number.
 
@@ -31,24 +28,24 @@ Different languages interpret **,** and **.** differently. By default, the text 
 
 Notes on the format of the string:
 
-- The string may be prefixed with the currency symbol for the current language. The currency symbol is ignored. Currency symbols for other languages are not ignored.
-- The string may be include a percent sign (**%**) at the end, indicating that it is a percentage. The number will be divided by 100 before being returned. Percentages and currency symbols cannot be mixed.
+- The string may be prefixed with the currency symbol for the current language. The currency symbol is ignored. Currency symbols for other languages aren't ignored.
+- The string may be include a percent sign (**%**) at the end, indicating that it's a percentage. The number will be divided by 100 before being returned. Percentages and currency symbols can't be mixed.
 - The string may be in scientific notation, with 12 x 10<sup>3</sup> expressed as "12e3".
 
-If the number is not in a proper format, **Value** will return an error.
+If the number isn't in a proper format, **Value** will return an error.
 
 To convert date and time values, use the [**DateValue**](function-datevalue-timevalue.md), [**TimeValue**](function-datevalue-timevalue.md), or [**DateTimeValue**](function-datevalue-timevalue.md) functions.
 
 ## Syntax
 
-**Value**( _String_ [, *LanguageTag* ] )
+**Value**( _String_ [, _LanguageTag_ ] )
 
 - _String_ - Required. String to convert to a numeric value.
 - _LanguageTag_ - Optional. The language tag in which to parse the string. If not specified, the language of the current user is used.
 
 **Value**( _Untyped_ )
 
-- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a number. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON number. Values inside of a string, such as `"15"` or `"12.5"`, are not accepted. Consider converting such untyped objects to [**Text**](function-text.md) first, then to a value. Keep in mind that locale-related formats are important considerations when communicating with external systems.
+- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a number. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON number, boolean, or text that can be converted to a number. Keep in mind that locale-related formats are important considerations when communicating with external systems.
 
 ## Examples
 

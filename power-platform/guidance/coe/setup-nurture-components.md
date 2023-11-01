@@ -2,20 +2,15 @@
 title: "How to set up nurture components"
 description: "Multiple nurture components are provided in the Center of Excellence (CoE) Starter Kit. Follow these instructions to install the components where you need them."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 09/05/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up nurture components
@@ -23,7 +18,7 @@ search.app:
 Multiple nurture components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
 >[!IMPORTANT]
->Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## Import the solution
 
@@ -34,10 +29,10 @@ The core components solution is required for the nurture components solution to 
 
 ## Set up video hub components
 
-### Set up the Video hub components using the Setup Wizard [Preview]
+### Set up the Video hub components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Video hub**.
 1. This app provides a guided step by step experience through the configuration steps.
    :::image type="content" source="media/setupwizard-vide.png" alt-text="CoE Starter Kit Setup Wizard - Video hub":::
@@ -84,6 +79,22 @@ The video hub components consist of two apps:
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+
+### Import starter data
+
+> [!NOTE]
+> Importing the starter data is optional.
+
+If you want to pre-populate the Video hub with videos from the [Microsoft Power Platform YouTube channel](https://www.youtube.com/@mspowerplatform), import data from the Video hub starter workbook.
+
+1. Open the Nurture - Admin app and navigate to the **Content** page.
+1. From the command bar, select **Import from Excel**.
+1. Select **Choose File**.
+1. Go to the location where you saved the **microsoft-video-hub-starter-data.xlsx** file, and then select **Open**.
+1. Select **Next**.
+1. Select **Finish**.
+
+An import job is created. You can track its progress by selecting **Track Progress**.
 
 ### Manage content in the Nurture apps - admin app
 
@@ -135,10 +146,10 @@ Comments have the following schema:
 
 ## Set up training in a day components
 
-### Set up the training in a day components using the Setup Wizard [Preview]
+### Set up the training in a day components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Training in a day**.
 1. This app provides a guided step by step experience through the configuration steps.
    :::image type="content" source="media/setupwizard-training.png" alt-text="CoE Starter Kit Setup Wizard - Training in a day":::
@@ -189,10 +200,10 @@ More information:
 
 ## Set up maker assessment components
 
-### Set up the maker assessment components using the Setup Wizard [Preview]
+### Set up the maker assessment components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Maker Assessment**.
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-assessment.png" alt-text="CoE Starter Kit Setup Wizard - Solution Assessment":::
@@ -238,10 +249,10 @@ More information:
 >[!NOTE]
 >The flows supporting this processes post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams is not available in GCC, GCC High and DoD. These flows should remain turned off in these regions as they will not work.
 
-### Set up the Pulse feedback survey components using the Setup Wizard [Preview]
+### Set up the Pulse feedback survey components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Pulse feedback**.
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-pulse.png" alt-text="CoE Starter Kit Setup Wizard - Pulse Feedback":::
@@ -280,10 +291,10 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ## Set up template catalog
 
-### Set up the template catalog components using the Setup Wizard [Preview]
+### Set up the template catalog components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Template Catalog**.
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-template.png" alt-text="CoE Starter Kit Setup Wizard - Template Catalog":::

@@ -12,11 +12,6 @@ contributors:
   - ShawnNandiMSFT
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Known issues and frequently asked questions 

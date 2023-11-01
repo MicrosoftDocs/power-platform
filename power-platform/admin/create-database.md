@@ -2,19 +2,14 @@
 title: Add a Microsoft Dataverse database | Microsoft Docs
 description: Walkthrough of how to add a Microsoft Dataverse database.
 services: powerapps
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/29/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Add a Microsoft Dataverse database
 

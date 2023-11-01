@@ -1,19 +1,14 @@
 ---
 title: "Customize change tracking of data entities for synchronization"
 description: "Learn how to selectively enable change tracking for data entities in Microsoft Power Platform, improving synchronization with external data sources."
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/26/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Enable change tracking to control data synchronization
 

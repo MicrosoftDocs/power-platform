@@ -1,6 +1,6 @@
 ---
-title: Len function in Power Apps
-description: Reference information including syntax and examples for the Len function in Power Apps.
+title: Len function
+description: Reference information including syntax and examples for the Len function.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,21 +11,21 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Len function in Power Apps
+# Len function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
 
 Returns the length of a string of text.
 
 ## Description
 
-If you specify a single string as the argument, the return value is the length as a number. If you specify a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains strings, the return value is a single-column table that contains the length of each string. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
+If you specify a single string as the argument, the return value is the length as a number. If you specify a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains strings, the return value is a single-column table with a **Value** column that contains the length of each string. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
 
 If you specify a [blank](function-isblank-isempty.md) string, **Len** returns 0.
 
@@ -45,20 +45,23 @@ If you specify a [blank](function-isblank-isempty.md) string, **Len** returns 0.
 
 For the examples in this section, the [data source](/power-apps/maker/canvas-apps/working-with-data-sources) is a text-input control that's named **Author** and that contains the string "E. E. Cummings".
 
-| Formula                | Description                                                  | Result |
-| ---------------------- | ------------------------------------------------------------ | ------ |
-| **Len( Author.Text )** | Measures the length of the string in the **Author** control. | 14     |
-| **Len( "" )**          | Measures the length of an empty string.                      | 0      |
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Len( Author.Text )** | Measures the length of the string in the **Author** control. | 14 |
+| **Len( "" )** | Measures the length of an empty string. | 0 |
 
 ### Single-column table
 
 For the first example in this section, the data source is named **People** and contains this data:
 
-![People table.](media/function-len/people-table.png)
+| Name | Address |
+| --- | --- |
+| "Jean" | "123 Main St NE" |
+| "Fred" | "789 SW 39th #3B" |
 
-| Formula                                                    | Description                                                                                                                                                                                                                                        | Result                                                                   |
-| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| **Len( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** | In the **Address** [column](/power-apps/maker/canvas-apps/working-with-tables#columns) of the **People** table:<br><ul><li>Measures the length of each string.</li><li>Returns a single-column table that contains the length of each string.</li> | ![Len with ShowColumns.](media/function-len/people-table-len.png)        |
-| **Len( [ "Hello", "to the", "World", "" ] )**              | In the **[Value](function-value.md)** column of the inline table:<br><ul><li>Measures the length of each string.</li><li>Returns a single-column table that contains the length of each string.</li>                                               | ![Len with text values.](media/function-len/people-table-len-inline.png) |
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Len( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** | In the **Address** [column](/power-apps/maker/canvas-apps/working-with-tables#columns) of the **People** table:<br><ul><li>Measures the length of each string.</li><li>Returns a single-column table that contains the length of each string.</li> | A single-column table with a `Value` column containing the following values: 14, 15 |
+| **Len( [ "Hello", "to the", "World", "" ] )** | In the **[Value](function-value.md)** column of the inline table:<br><ul><li>Measures the length of each string.</li><li>Returns a single-column table that contains the length of each string.</li> | A single-column table with a `Value` column containing the following values: 5, 6, 5, 0 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

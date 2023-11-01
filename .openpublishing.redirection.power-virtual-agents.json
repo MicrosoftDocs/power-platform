@@ -1,0 +1,740 @@
+{
+  "redirections": [
+    {
+      "source_path": "power-virtual-agents/advanced-use-dispatcher.md",
+      "redirect_url": "configuration-add-skills",
+      "redirect_document_id": "false"
+    },
+
+    {
+      "source_path": "power-virtual-agents/extend-custom-canvas-upload.md",
+      "redirect_url": "customize-default-canvas",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/extend-custom-canvas-connect.md",
+      "redirect_url": "customize-default-canvas",
+      "redirect_document_id": "true"
+    },
+    {
+      "source_path": "power-virtual-agents/expanding-design-canvas.md",
+      "redirect_url": "authoring-create-edit-topics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/faq.md",
+      "redirect_url": "index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/getting-started-analytics.md",
+      "redirect_url": "analytics-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/getting-started-bot-designer.md",
+      "redirect_url": "authoring-fundamentals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/getting-started-create-bot.md",
+      "redirect_url": "authoring-first-bot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/getting-started-create-greeting.md",
+      "redirect_url": "authoring-first-bot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/getting-started-create-topics.md",
+      "redirect_url": "authoring-create-edit-topics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/getting-started-delete-bot.md",
+      "redirect_url": "authoring-first-bot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/getting-started-deploy.md",
+      "redirect_url": "publication-fundamentals-publish-channels",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/getting-started-new-environment.md",
+      "redirect_url": "environments-fundamentals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/how-to-flow.md",
+      "redirect_url": "advanced-flow",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/how-to-handoff.md",
+      "redirect_url": "advanced-hand-off",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/how-to-templates.md",
+      "redirect_url": "authoring-template-topics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/how-to-test-bot.md",
+      "redirect_url": "authoring-first-bot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/how-to-variables.md",
+      "redirect_url": "authoring-variables",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/overview.md",
+      "redirect_url": "fundamentals-what-is-power-virtual-agents",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/quickstart.md",
+      "redirect_url": "fundamentals-get-started",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/topic-checker.md",
+      "redirect_url": "authoring-create-edit-topics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/videos.md",
+      "redirect_url": "index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/how-to-use-dispatcher.md",
+      "redirect_url": "index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/configuration-security.md",
+      "redirect_url": "configuration-end-user-authentication",
+      "redirect_document_id": "false"
+    },
+
+    //Build-22 redirects
+
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-cards.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-custom-speech-ssml.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-entities-slot-filling.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-flow.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-power-fx.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-speech-settings.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-billed-sessions.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-csat.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-overview.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-sessions-transcripts.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-sessions.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-summary.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-topic-details.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-comments.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-create-edit-topics.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-template-topics.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-test-bot.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-topic-management.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-variables-bot.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-variables.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/build-2022-limitations.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/build-2022-overview.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/build-2022-quickstart.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/customize-default-canvas.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/error-codes.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/publication-connect-bot-to-telephony.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/publication-connect-bot-to-web-channels.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/publication-fundamentals-publish-channels.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/index.yml",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/admin-data-loss-prevention.md",
+      "redirect_url": "../admin-data-loss-prevention",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/admin-share-bots.md",
+      "redirect_url": "../admin-share-bots",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/advanced-entities-slot-filling.md",
+      "redirect_url": "../advanced-entities-slot-filling",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/advanced-flow.md",
+      "redirect_url": "../advanced-flow",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/advanced-user-authentication.md",
+      "redirect_url": "../advanced-user-authentication",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/analytics-billed-sessions.md",
+      "redirect_url": "../analytics-billed-sessions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/analytics-csat.md",
+      "redirect_url": "../analytics-csat",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/analytics-overview.md",
+      "redirect_url": "../analytics-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/analytics-sessions-transcripts.md",
+      "redirect_url": "../analytics-sessions-transcripts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/analytics-sessions.md",
+      "redirect_url": "../analytics-sessions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/analytics-summary.md",
+      "redirect_url": "../analytics-summary",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/analytics-topic-details.md",
+      "redirect_url": "../analytics-topic-details",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-comments.md",
+      "redirect_url": "../authoring-comments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-create-edit-topics.md",
+      "redirect_url": "../authoring-create-edit-topics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-export-import-bots.md",
+      "redirect_url": "../authoring-export-import-bots",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-system-topics.md",
+      "redirect_url": "../authoring-system-topics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-template-topics.md",
+      "redirect_url": "../authoring-template-topics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-test-bot.md",
+      "redirect_url": "../authoring-test-bot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-topic-management.md",
+      "redirect_url": "../authoring-topic-management",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-variables-bot.md",
+      "redirect_url": "../authoring-variables-bot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-variables.md",
+      "redirect_url": "../authoring-variables",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/configuration-authentication-azure-ad.md",
+      "redirect_url": "../configuration-authentication-azure-ad",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/configuration-end-user-authentication.md",
+      "redirect_url": "../configuration-end-user-authentication",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/configure-web-security.md",
+      "redirect_url": "../configure-web-security",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/configure-web-sso.md",
+      "redirect_url": "../configure-web-sso",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/customize-default-canvas.md",
+      "redirect_url": "../customize-default-canvas",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/dlp-example-1.md",
+      "redirect_url": "../dlp-example-1",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/dlp-example-2.md",
+      "redirect_url": "../dlp-example-2",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/dlp-example-3.md",
+      "redirect_url": "../dlp-example-3",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/environments-first-run-experience.md",
+      "redirect_url": "../environments-first-run-experience",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/error-codes.md",
+      "redirect_url": "../error-codes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-ask-a-question.md",
+      "redirect_url": "../authoring-ask-a-question",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-send-message.md",
+      "redirect_url": "../authoring-send-message",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-topic-status.md",
+      "redirect_url": "../authoring-topic-status",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/authoring-using-conditions.md",
+      "redirect_url": "../authoring-using-conditions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/clone-existing-bot.md",
+      "redirect_url": "../clone-existing-bot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/composer-concepts.md",
+      "redirect_url": "../composer-concepts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/limitations.md",
+      "redirect_url": "../limitations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/manage-date-and-time.md",
+      "redirect_url": "../manage-date-and-time",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/overview.md",
+      "redirect_url": "../overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/publication-add-bot-to-microsoft-teams.md",
+      "redirect_url": "../publication-add-bot-to-microsoft-teams",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/publication-connect-bot-to-web-channels.md",
+      "redirect_url": "../publication-connect-bot-to-web-channels",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/publication-fundamentals-publish-channels.md",
+      "redirect_url": "../publication-fundamentals-publish-channels",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/quickstart.md",
+      "redirect_url": "../quickstart",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/requirements-licensing.md",
+      "redirect_url": "../requirements-licensing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/requirements-licensing-gcc.md",
+      "redirect_url": "../requirements-licensing-gcc",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/configuration-security-teams.md",
+      "redirect_url": "../configuration-end-user-authentication-teams",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/advanced-power-fx.md",
+      "redirect_url": "../advanced-power-fx",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/admin-upgrade-dataverse-teams.md",
+      "redirect_url": "../admin-upgrade-dataverse-teams",
+      "redirect_document_id":  "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/admin-share-bots-teams.md",
+      "redirect_url": "../admin-share-bots",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/advanced-ai-features-teams.md",
+      "redirect_url": "../advanced-ai-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/advanced-create-topics-from-web-teams.md",
+      "redirect_url": "../advanced-create-topics-from-web",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/advanced-end-user-authentication-teams.md",
+      "redirect_url": "../advanced-end-user-authentication",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/advanced-entities-slot-filling-teams.md",
+      "redirect_url": "../advanced-entities-slot-filling",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/advanced-flow-teams.md",
+      "redirect_url": "../advanced-flow",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/advanced-fundamentals-teams.md",
+      "redirect_url": "../advanced-fundamentals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/advanced-proactive-message-teams.md",
+      "redirect_url": "../advanced-proactive-message",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/advanced-use-skills-teams.md",
+      "redirect_url": "../advanced-use-skills",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/analytics-billed-sessions-teams.md",
+      "redirect_url": "../analytics-billed-sessions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/analytics-csat-teams.md",
+      "redirect_url": "../analytics-csat",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/analytics-overview-teams.md",
+      "redirect_url": "../analytics-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/analytics-sessions-teams.md",
+      "redirect_url": "../analytics-sessions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/analytics-summary-teams.md",
+      "redirect_url": "../analytics-summary",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/analytics-topic-details-teams.md",
+      "redirect_url": "analytics-topic-details",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-create-edit-topics-teams.md",
+      "redirect_url": "../authoring-create-edit-topics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-export-import-bots-teams.md",
+      "redirect_url": "../authoring-export-import-bots",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-first-bot-teams.md",
+      "redirect_url": "../authoring-first-bot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-fundamentals-teams.md",
+      "redirect_url": "../authoring-fundamentals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-language-support-teams.md",
+      "redirect_url": "../authoring-language-support",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-system-fallback-topic-teams.md",
+      "redirect_url": "../authoring-system-fallback-topic",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-system-topics-teams.md",
+      "redirect_url": "../authoring-system-topics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-template-topics-teams.md",
+      "redirect_url": "../authoring-template-topics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-test-bot-teams.md",
+      "redirect_url": "../authoring-test-bot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-topic-management-teams.md",
+      "redirect_url": "../authoring-topic-management",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-variables-bot-teams.md",
+      "redirect_url": "../authoring-variables-bot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/authoring-variables-teams.md",
+      "redirect_url": "../authoring-variables",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/configuration-add-skills-teams.md",
+      "redirect_url": "../configuration-add-skills",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/configuration-end-user-authentication-teams.md",
+      "redirect_url": "../configuration-end-user-authentication",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/configuration-fundamentals-teams.md",
+      "redirect_url": "../configuration-fundamentals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/configure-bot-greeting-teams.md",
+      "redirect_url": "../configure-bot-greeting",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/configure-web-security-teams.md",
+      "redirect_url": "../configure-web-security",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/customize-default-canvas-teams.md",
+      "redirect_url": "../customize-default-canvas",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/data-location-teams.md",
+      "redirect_url": "../data-location",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/error-codes-teams.md",
+      "redirect_url": "../error-codes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/fundamentals-get-started-teams.md",
+      "redirect_url": "../fundamentals-get-started",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/fundamentals-templates-teams.md",
+      "redirect_url": "../fundamentals-templates",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams.md",
+      "redirect_url": "../fundamentals-what-is-power-virtual-agents",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/gdpr-summary-teams.md",
+      "redirect_url": "../gdpr-summary",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/publication-add-bot-to-microsoft-teams-teams.md",
+      "redirect_url": "../publication-add-bot-to-microsoft-teams",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/publication-add-bot-to-microsoft-teams.md",
+      "redirect_url": "../publication-add-bot-to-microsoft-teams",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/publication-fundamentals-publish-channels-teams.md",
+      "redirect_url": "../publication-fundamentals-publish-channels",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/publication-terms-of-use-teams.md",
+      "redirect_url": "../publication-terms-of-use",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/requirements-licensing-teams.md",
+      "redirect_url": "../requirements-licensing",
+      "redirect_document_id": "false"
+    }
+  ]
+}
+
+   

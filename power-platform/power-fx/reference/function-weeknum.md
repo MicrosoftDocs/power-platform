@@ -1,6 +1,6 @@
 ---
-title: WeekNum and ISOWeekNum functions in Power Apps
-description: Reference information including syntax and examples for the WeekNum and ISOWeekNum functions in Power Apps.
+title: WeekNum and ISOWeekNum functions
+description: Reference information including syntax and examples for the WeekNum and ISOWeekNum functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -10,14 +10,14 @@ ms.date: 08/05/2021
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
-# WeekNum and ISOWeekNum functions in Power Apps
+# WeekNum and ISOWeekNum functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
 
 Returns the week number of a specific date. 
 

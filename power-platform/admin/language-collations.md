@@ -8,15 +8,9 @@ ms.topic: conceptual
 author: "NHelgren"
 ms.subservice: admin
 ms.author: nhelgren
-manager: kvivek
 ms.reviewer: matp
 search.audienceType: 
   - maker
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Microsoft Dataverse language collations
 
@@ -40,7 +34,7 @@ A language includes the following information:
 
 - **LCID**: This is an identification number applied to languages in the Microsoft .NET framework to easily identify which language is being used. For example, 1033 is US English.
 
-- **Language**: The actual language. In some cases, names, country, and character dataset information have been added for disambiguation.
+- **Language**: The actual language. In some cases, names, country/region, and character dataset information have been added for disambiguation.
 
 - **Collation**: The language collation uses the case-sensitivity and accent-sensitivity options associated with the language (_CI, _AS, _AI) described earlier. 
 
@@ -50,7 +44,7 @@ A language includes the following information:
 |--------------------------------------------------------|---------------|
 | 1025 Arabic                                            | \_CI_AI       |
 | 1026 Bulgarian - Cyrillic dataset                      | \_CI_AI       |
-| 1027 Catalan (Spain)                                   | \_CI_AI       |
+| 1027 Catalan                                           | \_CI_AI       |
 | 1028 Traditional Chinese Taiwan - Stroke 90 dataset    | \_CI_AI       |
 | 1029 Czech                                             | \_CI_AI       |
 | 1030 Danish Norwegian                                  | \_CI_AI       |
@@ -82,11 +76,11 @@ A language includes the following information:
 | 1062 Latvian                                           | \_CI_AS       |
 | 1063 Lithuanian                                        | \_CI_AS       |
 | 1066 Vietnamese                                        | \_CI_AS       |
-| 1069 Basque (Spain)                                    | \_CI_AS       |
+| 1069 Basque                                            | \_CI_AS       |
 | 1081 Hindi - Latin character dataset                   | \_CI_AS       |
 | 1086 Malay                                             | \_CI_AS       |
 | 1087 Kazakh                                            | \_CI_AS       |
-| 1110 Galician (Spain)                                  | \_CI_AS       |
+| 1110 Galician                                          | \_CI_AS       |
 | 2052 Simplified Chinese (China) - Stroke 90 dataset    | \_CI_AI       |
 | 2070 Portuguese (Portugal)                             | \_CI_AI       |
 | 2074 Serbian - Latin character set                     | \_CI_AS       |

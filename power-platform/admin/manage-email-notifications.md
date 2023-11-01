@@ -1,20 +1,15 @@
 ---
 title: "Manage email notifications  | MicrosoftDocs"
 description: Manage email notifications
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/08/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage email notifications to admins
 The service team regularly sends email notifications to the System Administrators of an organization. As an admin, you can set up a list of additional recipients to receive notifications using a cmdlet. For example, you can add to the list of recipients: 

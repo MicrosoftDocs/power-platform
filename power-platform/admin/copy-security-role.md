@@ -11,11 +11,6 @@ ms.topic: conceptual
 ms.date: 01/18/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Save time creating a security role by copying one
 

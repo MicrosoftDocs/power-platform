@@ -3,44 +3,37 @@ title: Licensing overview for Microsoft Power Platform | Microsoft Docs
 description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, Power Pages, Power BI, AI Builder, Dataverse).
 author: dileepsinghmicrosoft
 ms.topic: overview
-ms.date: 02/23/2023
+ms.date: 07/26/2023
 ms.subservice: admin
 ms.author: dileeps
-ms.reviewer: kvivek
+ms.reviewer: sericks
+contributors:
+- srpoduri 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Licensing overview for Microsoft Power Platform
 
-The topics in this section provide detailed information about Power Apps and Power Automate licensing.
+This article provides detailed information about Microsoft Power Platform licensing.
 
-For information about:
+## Power Apps, Power Automate, Power Virtual Agents, and Power Pages offers 
 
-- Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
+Power Apps, Power Automate, Power Virtual Agents, and Power Pages provide users the ability to create and run apps, bots, and custom websites across data sources that extend beyond Microsoft 365, such as Salesforce and on-premises and custom data sources. These plans also include access to [Dataverse](/power-apps/maker/data-platform/data-platform-intro) to store and manage data.
 
-- Power Virtual Agents licensing, see [Licensing for Power Virtual Agents](/power-virtual-agents/requirements-licensing-subscriptions) and for information about pricing, see [Power Virtual Agents pricing plans](https://powervirtualagents.microsoft.com/pricing/).
+More details around capabilities and pricing of the Power Platform offers can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
-## Power Apps and Power Automate Standalone plans
-
-Standalone Power Apps and Power Automate plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to [Dataverse](/powerapps/maker/data-platform/data-platform-intro) to store and manage data.
-
-More details around pricing and capabilities of standalone plans can be found in [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+For information about Power BI licensing, see [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
 
 ## Power Apps and Power Automate for Microsoft 365
 
-Power Apps/Power Automate capabilities for Microsoft 365 enable users to extend and customize the Office experience with Power Apps and Power Automate. Users can create applications and flows based on Microsoft 365 data. These productivity apps can also utilize data outside of Microsoft 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors.
+Power Apps and Power Automate capabilities for Microsoft 365 enable users to extend and customize the Office experience with Power Apps and Power Automate. Users can create applications and flows based on Microsoft 365 data. These productivity apps can also utilize data outside of Microsoft 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors.
 
-Here is a brief overview of capabilities included with Power Apps for Microsoft 365 plan. More details around which Microsoft 365 plans include these capabilities can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
+Here is a brief overview of capabilities included with the Power Apps for Microsoft 365 plan. More details around which Microsoft 365 plans include these capabilities can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
 | Functionalities                                                   | Power Apps for Microsoft 365 |
 |-----------------------------------------------------------------------|------------------------------|
-| Create, run and share apps                                            | Yes                          |
+| Create, run, and share apps                                            | Yes                          |
 | Run canvas apps in context of Microsoft 365                              | Yes                          |
 | Connect to Microsoft 365 data                                            | Yes                          |
 | Connect to cloud services using standard connectors                   | Yes                          |
@@ -65,7 +58,7 @@ This new service plan allows select Microsoft 365 applications to take advantage
 
 These limited capabilities of Dataverse are only available through select Microsoft 365 licenses and can't be used to run any custom apps or Power Automate flows, or run any Power Virtual Agent bots, or use any other data that doesn't belong to the Microsoft 365 applications that take advantage of these capabilities.
 
-These limited capabilities aren't the common set included with every Office application. They can be different based on the Microsoft 365 applications that use these capabilities. For the complete list of various limited capabilities, customers should refer to the service description of these Microsoft 365 applications that contain these Dataverse plans. These limited capabilities of Dataverse don't entitle the licensed user to run standalone Power Apps or Power Automate, or any other Microsoft Power Platform applications that use Dataverse.
+These limited capabilities aren't the common set included with every Office application. They can be different, based on the Microsoft 365 applications that use these capabilities. For the complete list of various limited capabilities, customers should refer to the service description of these Microsoft 365 applications that contain these Dataverse plans. These limited capabilities of Dataverse don't entitle the licensed user to run standalone Power Apps or Power Automate, or any other Microsoft Power Platform applications that use Dataverse.
 
 Review the [Microsoft Project Service description](/office365/servicedescriptions/project-online-service-description/project-online-service-description) for more details on the limited use of Dataverse that comes with Project.
 
@@ -112,19 +105,23 @@ If you want to build skills and learn more about Power Apps, Power Automate, and
 
 Pay-as-you-go is a way to pay for Power Apps and Power Automate using an Azure subscription, which allows you to get started building and sharing apps without any license commitment or upfront purchasing. More information: [Pay-as-you-go plan](pay-as-you-go-overview.md)
 
-## Tenant level special licenses
+## Tenant-level special licenses
 
 If a tenant administrator activates any one of the following SKUs, then all users in the tenant (active and guest) become eligible to be synced into all Dataverse environments in the tenant. Access to the users will be granted at runtime when the user accesses the Dataverse environment. In addition, the user’s access mode is set to Read-Write in Dataverse.
 
-You can view a list of all assigned licenses in the [Microsoft Admin Center](https://admin.microsoft.com)
+You can view a list of all assigned licenses in the [Microsoft Admin Center](https://admin.microsoft.com).
 
 > [!NOTE]
-> User must still be assigned a security role in Dataverse before they can access any data in Dataverse.
+> A user must be assigned to a security role in Dataverse before the user can access any data in Dataverse.
 >
-|Plan Name   | SKU ID  | Capability String  |
+|Plan name   | SKU ID  | Capability string  |
 |---|---|---|
 | Dynamics 365 for Marketing  | 00b861da-8087-4e30-beb8-8db3c6d9581e  | DYN365_MARKETING_APP  |
 | Dynamics 365 for Marketing Attach  | 85430fb9-02e8-48be-9d7e-328beb41fa29  | DYN365_MARKETING_APP_ATTACH  |
+| Dynamics 365 Marketing (Self-Service)  | 1224df81-ff37-4222-a5fe-85c7feecdba8  | DYN365_MARKETING_APP_DEPT  |
+| Dynamics 365 Marketing Attach (Self-Service)  |	95b34ddc-99ff-41f0-823d-0051478d9469  |	DYN365_MARKETING_APP_ATTACH_DEPT  |
+| Dynamics 365 Marketing Additional Application (Self-Service)  |	fcc6a509-4249-47bf-8f21-0d882dbbdae3  |	DYN365_MARKETING_APPLICATION_ADDON_DEPT	 |
+| Dynamics 365 Marketing Additional Non-Prod Application (Self-Service)	  | a7cd421b-9f64-4206-a33b-b9154ae28f97  |	DYN365_MARKETING_SANDBOX_APPLICATION_ADDON_DEPT	 |
 | Project Plan 3  | 53818b1b-4a27-454b-8896-0dba576410e6  | PROJECTPROFESSIONAL  |
 | Project Plan 3 (for Department)  | 46102f44-d912-47e7-b0ca-1bd7b70ada3b  | PROJECT_PLAN3_DEPT  |
 | Project Plan 3 for faculty  | 46974aed-363e-423c-9e6a-951037cec495  | PROJECTPROFESSIONAL_FACULTY  |
@@ -136,5 +133,6 @@ You can view a list of all assigned licenses in the [Microsoft Admin Center](htt
 | Project Plan 1 (for Department)  | 84cd610f-a3f8-4beb-84ab-d9d2c902c6c9  | PROJECT_PLAN1_DEPT  |
 | Project Plan 3 for GCC  | 074c6829-b3a0-430a-ba3d-aca365e57065  | PROJECTPROFESSIONAL_GOV  |
 | Project Plan 5 for GCC  | f2230877-72be-4fec-b1ba-7156d6f75bd6  | PROJECTPREMIUM_GOV  |
+| Dynamics 365 Customer Insights (and Attach)  | 1720c3f7-7da3-4a11-8324-92aad283eb68  | DYN365_CUSTOMER_INSIGHTS_JOURNEYS_BASE  |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: HashTags function in Power Apps
-description: Reference information including syntax and examples for the HashTags function in Power Apps.
+title: HashTags function
+description: Reference information including syntax and examples for the HashTags function.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# HashTags function in Power Apps
+# HashTags function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 Extracts the hashtags (#strings) from a string of text.
 

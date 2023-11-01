@@ -2,7 +2,6 @@
 title: "Track user access - Microsoft Power Platform | MicrosoftDocs"
 description: "Power Apps and Power Automate activities can be tracked and viewed from the Office 365 Security and Compliance Center. This allows tracking when apps or flows are created, edited, or deleted along with other key activities."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Track user access
 

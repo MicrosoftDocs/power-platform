@@ -4,17 +4,12 @@ description: Provides information about Power Apps US Government service descrip
 author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/23/2022
+ms.date: 09/25/2023
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Power Apps US Government
@@ -153,19 +148,19 @@ For those customers that implement network restrictions, ensure access to the fo
 
 **GCC Customers:**
 
-*.microsoft.us<br/>
-*.powerapps.us<br/>
-*.azure-apihub.us<br/>
-*.azure.us<br/>
-*.usgovcloudapi.net<br/>
-*.microsoftonline.com<br/>
-*.microsoft.com<br/>
-*.windows.net<br/>
-*.azureedge.net<br/>
-*.azure.net<br/>
-*.crm9.dynamics.com<br/>
+*.microsoft.us  
+*.powerapps.us  
+*.azure-apihub.us  
+*.azure.net  
+*.azure.us  
+*.azureedge.net  
+*.azureedge.us  
+*.usgovcloudapi.net  
+*.microsoftonline.com  
+*.microsoft.com  
+*.windows.net  
+*.crm9.dynamics.com  
 *.dynamics365portals.us
-
 
 Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
 
@@ -174,20 +169,20 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 
 **GCC High and DoD Customers:**
 
-*.microsoft.us<br/>
-*.powerapps.us<br/>
-*.azure-apihub.us<br/>
-*.azure.us<br/>
-*.usgovcloudapi.net<br/>
-*.microsoftonline.us<br/>
-*.azureedge.net<br/>
-*.azure.net<br/>
-*.azureedge.us<br/>
-*.microsoftdynamics.us (GCC High)<br/>
-*.crm.microsoftdynamics.us (GCC High)<br/>
-*.high.dynamics365portals.us (GCC High)<br />
-*.appsplatform.us (DoD)<br/>
-*.crm.appsplatform.us (DoD) <br />
+*.microsoft.us  
+*.powerapps.us  
+*.azure-apihub.us  
+*.azure.net  
+*.azure.us  
+*.azureedge.net  
+*.azureedge.us  
+*.usgovcloudapi.net  
+*.microsoftonline.us  
+*.microsoftdynamics.us (GCC High)  
+*.crm.microsoftdynamics.us (GCC High)  
+*.high.dynamics365portals.us (GCC High)  
+*.appsplatform.us (DoD)  
+*.crm.appsplatform.us (DoD)  
 *.appsplatformportals.us (DoD) 
 
 Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
@@ -232,6 +227,13 @@ Install an [on-premises data gateway](/powerapps/maker/canvas-apps/gateway-manag
 If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. 
 
 Previously, US Government customers needed to contact support before configuring their first on-premises data gateway, as support would need to "allowlist" the tenant for gateway use. This is no longer necessary. If you encounter any issues configuring or using the on-premises data gateway, contact support for assistance.
+
+## Telemetry for model-driven apps
+
+The following URL must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
+
+- **GCC and GCC High**: `https://tb.pipe.aria.microsoft.com/Collector/3.0`
+- **DoD**: `https://pf.pipe.aria.microsoft.com/Collector/3.0`
 
 ## Power Apps US Government feature limitations
 

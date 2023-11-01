@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI telemetry command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI telemetry command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 12/14/2022
+author: snizar007
+ms.author: snizar
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac telemetry
 
-Manage telemetry settings
+Manage telemetry settings.
 
 [!INCLUDE [telemetry-intro](includes/telemetry-intro.md)]
 
@@ -28,7 +28,7 @@ Manage telemetry settings
 |---------|---------|
 |[pac telemetry disable](#pac-telemetry-disable)|Choose to not send usage information to help Microsoft improve this product|
 |[pac telemetry enable](#pac-telemetry-enable)|Choose to send usage information to help Microsoft improve this product|
-|[pac telemetry status](#pac-telemetry-status)|Show the current status of telemetry|
+|[pac telemetry status](#pac-telemetry-status)|Show the current status of telemetry.|
 
 
 ## pac telemetry disable
@@ -45,7 +45,7 @@ Choose to send usage information to help Microsoft improve this product
 
 ## pac telemetry status
 
-Show the current status of telemetry
+Show the current status of telemetry.
 
 [!INCLUDE [telemetry-status-remarks](includes/telemetry-status-remarks.md)]
 

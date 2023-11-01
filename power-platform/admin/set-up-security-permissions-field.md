@@ -11,11 +11,6 @@ ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Set up security permissions for a column 
 

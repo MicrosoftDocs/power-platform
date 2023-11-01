@@ -1,6 +1,6 @@
 ---
-title: Count, CountA, CountIf, and CountRows functions in Power Apps
-description: Reference information including syntax and examples for the Count, CountA, CountIf, and CountRows functions in Power Apps.
+title: Count, CountA, CountIf, and CountRows functions
+description: Reference information including syntax and examples for the Count, CountA, CountIf, and CountRows functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Count, CountA, CountIf, and CountRows functions in Power Apps
+# Count, CountA, CountIf, and CountRows functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 Counts all [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables), or counts all records that satisfy a condition.
 

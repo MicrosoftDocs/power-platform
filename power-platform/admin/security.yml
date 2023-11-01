@@ -9,8 +9,8 @@ metadata:
   description: Learn how to set up and maintain security and governance for Power Platform. # Required; article description that is displayed in search results. < 160 chars.
   ms.subservice: admin
   ms.topic: landing-page  # Required
-  author: jimholtz #Required; your GitHub user alias, with correct capitalization.
-  ms.author: jimholtz #Required; microsoft alias of author; optional team alias.
+  author: sericks007 #Required; your GitHub user alias, with correct capitalization.
+  ms.author: sericks #Required; microsoft alias of author; optional team alias.
   ms.date: 09/28/2021 #Required; mm/dd/yyyy format.
   hide_bc: false
 
@@ -32,7 +32,9 @@ landingContent:
           - text: Connecting and authenticating to data sources
             url: ./security/connect-data-sources.md 
           - text: Security and governance considerations
-            url: governance-considerations.md           
+            url: governance-considerations.md
+          - text: Default environment routing
+            url: default-environment-routing.md
 
   # Card
   - title: Configure environment security

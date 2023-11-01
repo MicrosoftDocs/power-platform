@@ -1,6 +1,6 @@
 ---
-title: Launch and Param functions in Power Apps
-description: Reference information including syntax and examples for the Launch and Param functions in Power Apps.
+title: Launch and Param functions
+description: Reference information including syntax and examples for the Launch and Param functions.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -10,15 +10,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Launch and Param functions in Power Apps
+# Launch and Param functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 Launches a webpage or a canvas app and provides access to launch parameters.
 
@@ -70,13 +70,13 @@ Native apps on a device can't be launched directly. There may be indirect option
 - An argument list of name value pairs. For example:
 
   ```powerapps-dot
-  Launch( "http://bing.com/search", "q", "Power Apps", "count", 1 )
+  Launch( "https://bing.com/search", "q", "Power Apps", "count", 1 )
   ```
 
 - A record of field values. For example:
 
   ```powerapps-dot
-  Launch( "http://bing.com/search", { q: "Power Apps", count: 1 } )
+  Launch( "https://bing.com/search", { q: "Power Apps", count: 1 } )
   ```
 
   This form can be easier to work with as it makes the association between name and value clearer. It's the only form that supports the optional _LaunchTarget_ argument.
@@ -110,6 +110,9 @@ The **Param** function retrieves a parameter passed to the app when it was launc
 - Param names are case-sensitive.
 - Param names and values will be automatically URL decoded for use in your app.
 - Even if the parameter contains a number, the type returned by **Param** will always be a text string. Conversion to other types will automatically occur or use explicit conversions such as the [**Value**](function-value.md) function to convert explicitly to a number.
+
+>[!NOTE]
+> For [custom pages](/power-apps/maker/model-driven-apps/add-page-to-model-app), the only parameters accepted by the page are: recordId and entityName.
 
 ## Syntax
 
@@ -174,6 +177,7 @@ The following keywords are reserved (regardless of case) for internal use, and s
 - skipiframecreation
 - skiplaunchappcache
 - source
+- sourcetime
 - standaloneconsent
 - teamid
 - teamtype
@@ -190,7 +194,7 @@ The following keywords are reserved (regardless of case) for internal use, and s
 
 | Formula                                                                                                                                                | Description                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| **Launch(&nbsp;"http://bing.com/search",&nbsp;<br>"q",&nbsp;"Power&nbsp;Apps",&nbsp;"count",&nbsp;1&nbsp;)**                                           | Opens the webpage **http://bing.com/search?q=Power%20Apps&count=1**. A new window or tab is opened.                 |
+| **Launch(&nbsp;"http://bing.com/search",&nbsp;<br>"q",&nbsp;"Power&nbsp;Apps",&nbsp;"count",&nbsp;1&nbsp;)**                                           | Opens the webpage **https://bing.com/search?q=Power%20Apps&count=1**. A new window or tab is opened.                 |
 | **Launch(&nbsp;"http://bing.com/search",&nbsp;<br>{&nbsp;q:&nbsp;"Power&nbsp;Apps",&nbsp;count:&nbsp;1&nbsp;}&nbsp;)**                                 | The same as the previous examples using the equivalent record notation. A new window or tab is opened.              |
 | **Launch(&nbsp;"http://bing.com/search",&nbsp;<br>{&nbsp;q:&nbsp;"Power&nbsp;Apps",&nbsp;count:&nbsp;1&nbsp;},&nbsp;<br>LaunchTarget.Replace&nbsp;)**  | The same as the previous examples, replacing the current window or tab with the result if running in a web browser. |
 | **Launch(&nbsp;"http://bing.com/search",&nbsp;<br>{&nbsp;q:&nbsp;"Power&nbsp;Apps",&nbsp;count:&nbsp;1&nbsp;},&nbsp;<br>"Search&nbsp;Results"&nbsp;)** | The same as the previous example, creating or replacing the contents of the window or tab named **Search Results**. |

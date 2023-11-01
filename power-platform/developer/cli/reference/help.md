@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI help command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI help command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 12/14/2022
+author: snizar007
+ms.author: snizar
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac help
 
-Show help for the Microsoft Power Platform CLI
+Show help for the Microsoft Power Platform CLI.
 
 [!INCLUDE [help-intro](includes/help-intro.md)]
 

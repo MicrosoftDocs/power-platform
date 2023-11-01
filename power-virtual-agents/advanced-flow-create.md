@@ -2,12 +2,12 @@
 title: Create a flow
 description: Create a Power Automate flow that fetches a weather forecast for use with a bot.
 keywords: "PVA, flow, automate"
-ms.date: 07/28/2022
+ms.date: 03/24/2023
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring
 ms.collection: virtual-agent
@@ -177,8 +177,6 @@ Flows that you want to use in a bot must return values in real time, or [synchro
 
 When you create a flow from Power Virtual Agents, [asynchronous responses](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior) are turned off by default. If you modified an existing flow that has asynchronous responses turned on, you'll need to change the setting.
 
-<!-- At the time of writing, steps to find the async response setting (specifically in the PVA step/action) didn't exist in PA docs. If this has changed, please remove these steps and replace with the relevant link. -->
-
 1. [Open your flow](#modify-an-existing-flow-to-use-with-a-bot) and find the **Return value(s) to Power Virtual Agents** step.
 
 1. Select the **Menu** (**...**) icon, and then select **Settings**.
@@ -189,7 +187,7 @@ When you create a flow from Power Virtual Agents, [asynchronous responses](/azur
 
     :::image type="content" source="media/advanced-flow-create/async2.png" alt-text="Screenshot of the Asynchronous Response toggle.":::
 
-## Next steps
+## Related topics
 
 [Call the flow as an action in your bot](advanced-use-flow.md).
 

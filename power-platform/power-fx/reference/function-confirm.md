@@ -1,6 +1,6 @@
 ---
-title: Confirm function in Power Apps
-description: Reference information for the Confirm function in Power Apps.
+title: Confirm function
+description: Reference information for the Confirm function.
 author: gregli-msft
 ms.subservice: power-fx
 ms.topic: reference
@@ -10,15 +10,15 @@ ms.date: 12/04/2021
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Confirm function in Power Apps
+# Confirm function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 Display a confirmation dialog box to the user.
 

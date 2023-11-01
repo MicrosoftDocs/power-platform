@@ -2,7 +2,6 @@
 title: "Set up inactivity notifications components | MicrosoftDocs"
 description: "Learn how to set up the inactivity notifications components of the CoE Starter Kit"
 author: manuelap-msft
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/08/2023
@@ -11,10 +10,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up inactivity processes
@@ -27,7 +22,7 @@ This article will help you to set up the inactivity notifications for unused can
 You use this functionality to detect unused objects, and ask makers to either archive or unshare them to keep your tenant tidy.
 
 >[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 [Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
 
@@ -35,10 +30,10 @@ You use this functionality to detect unused objects, and ask makers to either ar
 
 Make sure your environment isn't restricted with an [environment security group](limitations.md#security-groups-and-approvals).
 
-## Set up the Inactivity process components using the Setup Wizard [Preview]
+## Set up the Inactivity process components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Inactivity notifications process**.
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-inact.png" alt-text="CoE Starter Kit Setup Wizard":::

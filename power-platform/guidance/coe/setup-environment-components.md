@@ -2,7 +2,6 @@
 title: "Set up environment request components | MicrosoftDocs"
 description: "Setup instructions for how to set up the environment request components solution of the CoE Starter Kit"
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up environment request components
@@ -23,14 +18,14 @@ search.app:
 This article will help you to set up the environment request components of the core solution, which automate the request, approval, and creation of environments and data loss prevention (DLP) policies.
 
 >[!IMPORTANT]
->Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 [Watch a walk-through](https://www.youtube.com/watch?v=16mspbGz1zA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the environment and DLP request process works.
 
-## Set up the Environment request components using the Setup Wizard [Preview]
+## Set up the Environment request components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Environment Request management**.
 1. This app provides a guided step by step experience through the configuration steps.
         :::image type="content" source="media/setupwizard-env.png" alt-text="CoE Starter Kit Setup Wizard":::

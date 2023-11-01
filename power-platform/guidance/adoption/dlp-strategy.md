@@ -2,7 +2,6 @@
 title: "Establishing a DLP strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "As an administrator taking over an environment or starting to support use of Power Apps and Power Automate, DLP policies should be one of the first things you set up."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Establishing a DLP strategy
 
@@ -85,7 +80,7 @@ The environment and DLP strategy Contoso admins have applied here consists of:
 
 1. Contoso admins have created another shared environment for users to create apps for user and team productivity use cases. This environment has an associated tenant-level DLP policy that isn't as risk-averse as a default policy and allows makers to use connectors like Azure services in addition to the Office 365 services. Because this is a non-default environment, admins can actively control the environment maker list for it. This is a tiered approach to shared user and team productivity environment and associated DLP settings.
 
-1. In addition, for the business units to create line-of-business applications, they have created development, test, and production environments for their tax and audit subsidiaries across various countries. The environment maker access to these environments is carefully managed, and appropriate first- and third-party connectors are made available using tenant-level DLP policies in consultation with the business unit stakeholders.
+1. In addition, for the business units to create line-of-business applications, they have created development, test, and production environments for their tax and audit subsidiaries across various countries/regions. The environment maker access to these environments is carefully managed, and appropriate first- and third-party connectors are made available using tenant-level DLP policies in consultation with the business unit stakeholders.
 
 1. Similarly, dev/test/production environments are created for Central IT's use to develop and roll out relevant or right applications. These business application scenarios typically have a well-defined set of connectors that need to be made available for makers, testers, and users in these environments. Access to these connectors is managed using a dedicated tenant-level policy.
 

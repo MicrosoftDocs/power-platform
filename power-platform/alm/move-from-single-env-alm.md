@@ -4,14 +4,10 @@ description: "Support healthy ALM by moving from a single environment to separat
 author: Mattp123
 ms.subservice: alm
 ms.author: matp
-manager: kvivek
 ms.date: 05/05/2020
 ms.topic: "article"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Scenario 2: Moving from a single production environment 
 This scenario aims at users or organizations that have a single Dataverse environment with a database that they use to create, test, and deploy

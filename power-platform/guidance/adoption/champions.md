@@ -2,7 +2,6 @@
 title: "Find and support champions in your organization - Microsoft Power Platform | MicrosoftDocs"
 description: "Find your Microsoft Power Platform champions with the right tools, and learn how they can support you."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Support Microsoft Power Platform champions in your organization
 

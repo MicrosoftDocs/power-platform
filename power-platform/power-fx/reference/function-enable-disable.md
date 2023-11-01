@@ -1,6 +1,6 @@
 ---
-title: Enable and Disable functions in Power Apps
-description: Reference information including syntax and examples for the Enable and Disable functions in Power Apps.
+title: Enable and Disable functions
+description: Reference information including syntax and examples for the Enable and Disable functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Enable and Disable functions in Power Apps
+# Enable and Disable functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 Turns a [signal](signals.md) on or off.
 

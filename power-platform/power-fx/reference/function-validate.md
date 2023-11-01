@@ -1,6 +1,6 @@
 ---
-title: Validate function in Power Apps
-description: Reference information including syntax and examples for the Validate function in Power Apps.
+title: Validate function
+description: Reference information including syntax and examples for the Validate function.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Validate function in Power Apps
+# Validate function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 The **Validate** function checks whether the value of a single [column](/power-apps/maker/canvas-apps/working-with-tables#columns) or a complete [record](/power-apps/maker/canvas-apps/working-with-tables#records) is valid for a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 

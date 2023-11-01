@@ -1,21 +1,15 @@
 ---
 title: "Update your apps to Unified Interface  | MicrosoftDocs"
 description: Update your apps to Unified Interface
-author: jimholtz
-manager: kvivek
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/09/2019
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Update your apps to Unified Interface
 

@@ -9,9 +9,6 @@ ms.author: stjeffer
 ms.reviewer: kvivek
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
 # Establishing tenant hygiene with the CoE Starter Kit

@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI data command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI data command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 12/14/2022
+author: snizar007
+ms.author: snizar
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -37,14 +37,14 @@ Export data
 [!INCLUDE [data-export-intro](includes/data-export-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for data export
 
 #### `--schemaFile` `-sf`
 
-Schema file name. It can be created using Configuration Migration Tool
+Schema file name. It can be created using the Configuration Migration Tool.
 
 
-### Optional Parameters
+### Optional Parameters for data export
 
 #### `--dataFile` `-df`
 
@@ -52,19 +52,19 @@ File name for data zip file. Default data.zip
 
 #### `--environment` `-env`
 
-Environment (id, org id, url, unique name or partial name)
+Environment (ID, org ID, url, unique name, or partial name).
 
 #### `--overwrite` `-o`
 
-Allow overwrite output data file if it already exists
+Allow overwrite of the output data file if it already exists.
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 #### `--verbose` `-v`
 
 Output more diagnostic information during data import/export
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [data-export-remarks](includes/data-export-remarks.md)]
 
@@ -75,27 +75,31 @@ Import data
 [!INCLUDE [data-import-intro](includes/data-import-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for data import
 
 #### `--data` `-d`
 
-Zip file or directory name with data for import
+Zip file or directory name with data for import.
 
 
-### Optional Parameters
+### Optional Parameters for data import
+
+#### `--connection-count` `-c`
+
+Number of parallel connections to use during import. Default: 5
 
 #### `--dataDirectory` `-dd`
 
-**Deprecated**: This parameter will be ignored.
+**Deprecated**: This parameter is ignored.
 #### `--environment` `-env`
 
-Environment (id, org id, url, unique name or partial name)
+Environment (ID, org ID, url, unique name, or partial name).
 
 #### `--verbose` `-v`
 
 Output more diagnostic information during data import/export
 
-This parameter requires no value. It is a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [data-import-remarks](includes/data-import-remarks.md)]
 

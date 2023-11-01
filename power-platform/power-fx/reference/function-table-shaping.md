@@ -1,6 +1,6 @@
 ---
-title: AddColumns, DropColumns, RenameColumns, and ShowColumns functions in Power Apps
-description: Reference information including syntax and examples for the AddColumns, DropColumns, RenameColumns, and ShowColumns functions in Power Apps.
+title: AddColumns, DropColumns, RenameColumns, and ShowColumns functions
+description: Reference information including syntax and examples for the AddColumns, DropColumns, RenameColumns, and ShowColumns functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# AddColumns, DropColumns, RenameColumns, and ShowColumns functions in Power Apps
+# AddColumns, DropColumns, RenameColumns, and ShowColumns functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 Shapes a [table](/power-apps/maker/canvas-apps/working-with-tables) by adding, dropping, renaming, and selecting its [columns](/power-apps/maker/canvas-apps/working-with-tables#columns).
 

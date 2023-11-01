@@ -1,6 +1,6 @@
 ---
-title: With function in Power Apps
-description: Reference information including syntax and examples for the With function in Power Apps.
+title: With function
+description: Reference information including syntax and examples for the With function.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# With function in Power Apps
+# With function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 Calculates values and performs actions for a single [record](/power-apps/maker/canvas-apps/working-with-tables#records), including inline records of named values.
 

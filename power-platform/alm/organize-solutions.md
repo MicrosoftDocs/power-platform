@@ -9,12 +9,8 @@ ms.topic: "article"
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
-manager: kvivek
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Organize your solutions

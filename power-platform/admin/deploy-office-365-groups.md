@@ -1,20 +1,15 @@
 ---
 title: "Deploy Microsoft 365 groups  | MicrosoftDocs"
 description: Deploy Microsoft 365 groups
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/26/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Deploy Microsoft 365 groups 
 

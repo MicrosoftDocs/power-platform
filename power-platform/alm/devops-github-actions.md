@@ -12,9 +12,6 @@ ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # GitHub Actions for Microsoft Power Platform 

@@ -2,7 +2,6 @@
 title: "User and maker support strategies - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance on establishing ongoing production solution and maker education support for Microsoft Power Platform."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # User and maker support strategy

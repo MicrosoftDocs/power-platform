@@ -1,19 +1,17 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 07/26/2022
+ms.date: 10/17/2023
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
 ms.author: sriknair
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+contributors:
+- amiyapatr-zz
+- pnghub
 ---
 
 # New Microsoft Dataverse storage capacity 
@@ -52,10 +50,16 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 3. View the data on the **Summary** page.
 
-The new licensing storage model looks like the following image. 
+   For the **Summary** page to be displayed, the user needs to have one of the following roles: 
+    - Tenant administrator
+    - Power Platform administrator
+    - Dynamics 365 administrator 
 
-> [!div class="mx-imgBorder"] 
-> ![New licensing storage model.](media/capacity-new-license-model.png "New licensing storage model")
+    Alternatively, a user with any of the above-mentioned roles has the option to grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page. 
+
+    The new licensing storage model looks like the following image. 
+
+    :::image type="content" source="media/capacity-new-license-model.png" alt-text="New licensing storage model":::
 
 ## Capacity page details
 
@@ -65,9 +69,7 @@ This page provides a tenant-level view of where your organization is using stora
 
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
-> [!div class="mx-imgBorder"] 
-> ![Capacity page Summary tab.](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
-
+:::image type="content" source="media/storage-data-capacity-page-review.png" alt-text="Capacity page Summary tab":::
 
 All tables of Dataverse, including system tables, are included in the storage capacity reports.
 
@@ -84,6 +86,9 @@ The actual files such as .pdf (or any other file attachment type) are stored in 
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
+> [!NOTE]
+> There is no technical limit on the size of a Dataverse environment. Limits mentioned on this page are entitlement limits based on product licenses purchased.
+
 To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse** tab. 
 
 Note the following features:
@@ -95,8 +100,7 @@ Note the following features:
 |Details  | See the next section for using the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
 | Default environment tip | The calculated storage usage in this view only displays what is **above** the default environment’s included capacity. Tool tips indicate how to view actual usage in the **Details** section. |
 
-> [!div class="mx-imgBorder"] 
-> ![Storage data per environment details button.](media/storage-data-per-environment2.png "Storage data per environment details button")
+:::image type="content" source="media/storage-data-per-environment2.png" alt-text="Storage data per environment details button":::
 
 > [!NOTE]
 > - The following environments don't count against capacity and are shown as 0 GB:
@@ -115,8 +119,7 @@ Note the following features:
 
 Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
 
-> [!div class="mx-imgBorder"] 
-> ![Environment capacity analytics.](media/storage-data-capacity-details.png "Environment capacity analytics")
+:::image type="content" source="media/storage-data-capacity-details.png" alt-text="Environment capacity analytics":::
 
 The following details are provided:
 
@@ -126,6 +129,9 @@ The following details are provided:
 - Top files tables and their growth over time
 - Actual log usage
 - Top tables and their growth over time
+
+> [!NOTE]
+> Refer to the [storage capacity reports](/power-apps/maker/data-platform/data-retention-overview#storage-capacity-reports) under [Dataverse long term retention](/power-apps/maker/data-platform/data-retention-overview) to understand details on storage capacity with the retention feature.
 
 ### Microsoft Teams tab
 
@@ -300,6 +306,10 @@ Default, production, and sandbox environments are counted for consumption. Trial
 ### What are tables ending in “- analytics" in my capacity report?
 
 Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse tables. See **More information** below for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
+
+### Why can I no longer see the Summary tab in my capacity report? 
+
+This is due to a change that occurred in April 2023, after which only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab in the capacity report. Users, such as environment admins, will no longer see this tab and will be redirected to the **Dataverse** tab when accessing the report. If you have a user that requires access to the **Summary** tab, assign one of the required roles. 
 
 **More information:**
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)

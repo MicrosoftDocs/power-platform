@@ -1,6 +1,6 @@
 ---
-title: EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions in Power Apps
-description: Reference information including syntax and examples for the EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions in Power Apps.
+title: EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions
+description: Reference information including syntax and examples for the EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions in Power Apps
+# EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 View, edit, or create an item, save the contents, and reset the controls in an **[Edit form](/power-apps/maker/canvas-apps/controls/control-form-detail)** control.
 
@@ -57,6 +57,9 @@ If validation passes, **SubmitForm** submits the change to the data source.
 ### EditForm
 
 The **EditForm** function changes the Form control's mode to **FormMode.Edit**. In this mode, the contents of the Form control's **[Item](/power-apps/maker/canvas-apps/controls/control-form-detail)** property are used to populate the form. If the **SubmitForm** function runs when the form is in this mode, a record is changed, not created. **FormMode.Edit** is the default for the Form control.
+
+>[!NOTE]
+> When the form is in edit mode and Item is null, data card properties are not evaluated and will return default values. 
 
 ### NewForm
 

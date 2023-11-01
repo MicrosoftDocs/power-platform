@@ -1,20 +1,15 @@
 ---
 title: "Support for Power Platform and Dynamics 365 apps - operated by 21Vianet in China  | MicrosoftDocs"
 description: Provides information about the support for Power Platform and Dynamics 365 apps ((Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation) that are operated by 21Vianet in China 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/23/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Support for Power Platform and Dynamics 365 apps - operated by 21Vianet in China
 

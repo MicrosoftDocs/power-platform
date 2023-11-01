@@ -1,20 +1,15 @@
 ---
 title: "Power Platform and Dynamics 365 datacenter regions"
 description: "Provides information about Power Platform and Dynamics 365 apps hosted in datacenters across many regions. Find a list of regions and URLs, plus how to migrate to a new datacenter."
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.custom: intro-internal
+ms.collection: get-started
 ms.date: 05/19/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Datacenter regions
 

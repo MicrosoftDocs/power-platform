@@ -1,6 +1,6 @@
 ---
-title: Exit function in Power Apps
-description: Reference information including syntax and examples for the Exit function in Power Apps.
+title: Exit function
+description: Reference information including syntax and examples for the Exit function.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Exit function in Power Apps
+# Exit function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 Exits the currently running app and optionally signs out the current user.
 

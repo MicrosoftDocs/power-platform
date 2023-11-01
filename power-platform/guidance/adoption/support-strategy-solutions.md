@@ -2,7 +2,6 @@
 title: "User support strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance on establishing a support and graduation framework, decision matrix, and user support process for Microsoft Power Platform solutions."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # User support: Ongoing production solution support

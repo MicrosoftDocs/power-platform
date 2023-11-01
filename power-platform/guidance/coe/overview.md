@@ -7,12 +7,6 @@ ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: kvivek
-search.audienceType: 
-  - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Center of Excellence (CoE) overview
 
@@ -112,6 +106,8 @@ Our recommendation is to start with the out of the box capabilities in Power Pla
 
 Let's now look at individual features of Managed Environments to see how they compare to what's in the CoE Starter Kit:
 
+**[Maker welcome content](/power-platform/admin/welcome-content)**: In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When the welcome content is enabled, upon signing in to Power Apps, makers will be greeted with customized getting started information. A similar concept in the CoE Starter Kit is the [welcome email](core-components.md#flows-2), which sends an email to new makers only after they've created an app, flow, or bot for the first time. This means that makers may get necessary information only after they've created their first resource, whereas the Managed Environments feature shows them information when they sign in to Power Apps.
+
 **[Weekly digest](/power-platform/admin/managed-environment-weekly-digests)**: The CoE Starter Kit doesn't have a weekly digest for admins; instead admins self-serve information through the [Power BI dashboard](/power-platform/guidance/coe/power-bi). Inactive apps and flows are highlighted in the Weekly digest email. In the CoE Starter Kit, a similar goal is achieved with the [inactivity notification process](governance-components.md#inactivity-processes), which notifies makers of their inactive resources and asks for approval to delete them. One of the main goals of Managed Environments and the CoE Starter Kit is to provide more insights thus allowing admins to take action. The CoE kit provides more capabilities, which can reduce the burden on the admin dealing with inactive resources, as the CoE can direct resource management to the maker thus making the owner responsible for their own resources.
 
 **[Sharing limits](/power-platform/admin/managed-environment-sharing-limits)**: The CoE Starter Kit can't limit sharing on resources, proactive governance like this can only be done via Managed Environments. The [Compliance process](example-processes.md) in the CoE Starter Kit offers a reactive way to identify highly shared resources. This process identifies highly shared resources and asks makers to provide additional information, so that admins can better support those solutions (for example, move them to a dedicated environment). With the Power BI dashboard admins can also identify highly shared resources.
@@ -122,7 +118,7 @@ In addition to those three features that have an overlap with Managed Environmen
 
 ### Tenant-level analytics
 
-[Tenant-level analytics](/power-platform/admin/tenant-level-analytics) in Power Platform Admin Center offer a great way to get a holistic overview of usage and inventory of your apps, flows, makers and environments and allow you to identify metrics like top used apps and top makers. The [Power BI dashboard](/power-platform/guidance/coe/power-bi) in the CoE Starter Kit combines your tenant level inventory and usage data with your organizations data to provide you with more granular insights into what departments, cities, and countries are using Power Platform. Additionally, a broader range of customizable filters is available so you can view your inventory by connector, classification (premium/standard), or drill into how many users an app is shared with. Tenant-level insights in the Power Platform Admin Center provide you with a great starting point to get familiar with your tenants adoption of Power Platform, and as your need for those insights matures, you can explore the rich and customizable reports of the CoE Starter Kit.
+[Tenant-level analytics](/power-platform/admin/tenant-level-analytics) in Power Platform Admin Center offer a great way to get a holistic overview of usage and inventory of your apps, flows, makers and environments and allow you to identify metrics like top used apps and top makers. The [Power BI dashboard](/power-platform/guidance/coe/power-bi) in the CoE Starter Kit combines your tenant level inventory and usage data with your organizations data to provide you with more granular insights into what departments, cities, and countries/regions are using Power Platform. Additionally, a broader range of customizable filters is available so you can view your inventory by connector, classification (premium/standard), or drill into how many users an app is shared with. Tenant-level insights in the Power Platform Admin Center provide you with a great starting point to get familiar with your tenants adoption of Power Platform, and as your need for those insights matures, you can explore the rich and customizable reports of the CoE Starter Kit.
 
 ## Further resources
 

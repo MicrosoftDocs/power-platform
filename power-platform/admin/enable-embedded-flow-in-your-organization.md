@@ -1,20 +1,15 @@
 ---
 title: "Enable Power Automate integration to automate processes  | MicrosoftDocs"
 description: Enable Power Automate integration to automate processes
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/17/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Enable Power Automate integration to automate processes
 

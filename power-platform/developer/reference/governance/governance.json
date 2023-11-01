@@ -1,0 +1,260 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/governance/crossTenantConnectionReports": {
+      "get": {
+        "tags": [
+          "CrossTenantConnectionReports"
+        ],
+        "summary": "List cross-tenant connection reports for a tenant.",
+        "operationId": "ListCrossTenantConnectionReports",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CrossTenantConnectionReportsResponseWithOdataContinuation"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CrossTenantConnectionReports"
+        ],
+        "summary": "Create a request to generate cross-tenant connection report for a tenant or return an existing report.",
+        "operationId": "CreateCrossTenantConnectionReport",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CrossTenantConnectionReport"
+            }
+          },
+          "202": {
+            "description": "Accepted",
+            "schema": {
+              "$ref": "#/definitions/CrossTenantConnectionReport"
+            }
+          }
+        }
+      }
+    },
+    "/governance/crossTenantConnectionReports/{reportId}": {
+      "get": {
+        "tags": [
+          "CrossTenantConnectionReports"
+        ],
+        "summary": "Get a cross-tenant connection report by report ID for a tenant.",
+        "operationId": "GetCrossTenantConnectionReport",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "reportId",
+            "description": "The report ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CrossTenantConnectionReport"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CrossTenantConnection": {
+      "required": [
+        "tenantId",
+        "connectionType"
+      ],
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "format": "uuid",
+          "description": "The Azure AD tenant ID to or from which the cross-tenant connection occurred.",
+          "type": "string"
+        },
+        "connectionType": {
+          "description": "The direction of the cross-tenant connection.",
+          "enum": [
+            "Inbound",
+            "Outbound"
+          ],
+          "type": "string"
+        }
+      }
+    },
+    "CrossTenantConnectionReport": {
+      "required": [
+        "tenantId",
+        "reportId",
+        "requestDate",
+        "reportStatus",
+        "startDate",
+        "endDate"
+      ],
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "format": "uuid",
+          "description": "The Azure AD tenant ID for which the report was generated.",
+          "type": "string"
+        },
+        "reportId": {
+          "format": "uuid",
+          "description": "The report ID.",
+          "type": "string"
+        },
+        "requestDate": {
+          "format": "date-time",
+          "description": "The date when the cross-tenant connection report was requested.",
+          "type": "string"
+        },
+        "startDate": {
+          "format": "date-time",
+          "description": "The start of the report date window.",
+          "type": "string"
+        },
+        "endDate": {
+          "format": "date-time",
+          "description": "The end of the report date window.",
+          "type": "string"
+        },
+        "reportStatus": {
+          "enum": [
+            "Received",
+            "InProgress",
+            "Completed",
+            "Failed"
+          ],
+          "type": "string"
+        },
+        "connections": {
+          "description": "The page of cross-tenant connections occurring within the report date window.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CrossTenantConnection"
+          }
+        },
+        "@odata.nextLink": {
+          "description": "The URI of the next page of the report containing additional cross-tenant connections.",
+          "type": "string"
+        }
+      }
+    },
+    "CrossTenantConnectionReportsResponseWithOdataContinuation": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The cross-tenant connection reports for the tenant.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CrossTenantConnectionReport"
+          }
+        },
+        "@odata.nextLink": {
+          "description": "The URI of the next page of the list response.",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [ ]
+    }
+  ]
+}

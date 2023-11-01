@@ -1,6 +1,6 @@
 ---
-title: Rand and RandBetween functions in Power Apps
-description: Reference information including syntax and examples for the Rand and RandBetween functions in Power Apps.
+title: Rand and RandBetween functions
+description: Reference information including syntax and examples for the Rand and RandBetween functions.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -10,15 +10,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Rand and RandBetween functions in Power Apps
+# Rand and RandBetween functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 Returns a pseudo-random number.
 

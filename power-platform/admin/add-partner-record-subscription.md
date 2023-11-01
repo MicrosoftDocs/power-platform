@@ -10,11 +10,6 @@ ms.author: mukeshpo
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Add a Partner of Record (POR) to your subscription
 

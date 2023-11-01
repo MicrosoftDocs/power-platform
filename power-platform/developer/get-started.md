@@ -10,10 +10,6 @@ ms.reviewer: kvivek
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerPlatform
-  - PowerApps
-  - Azure
 ---
 
 # Introduction to Microsoft Power Platform for developers

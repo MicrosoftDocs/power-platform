@@ -1,19 +1,14 @@
 ---
 title: "About Microsoft Cloud Canada  | MicrosoftDocs"
 description: About Microsoft Cloud Canada
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/23/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # About the Microsoft Cloud Canada datacenter
 

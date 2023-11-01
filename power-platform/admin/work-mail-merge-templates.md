@@ -1,20 +1,15 @@
 ---
 title: "Work with mail merge templates  | MicrosoftDocs"
 description: Work with mail merge templates 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/18/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Work with mail merge templates
 

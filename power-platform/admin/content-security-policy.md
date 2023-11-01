@@ -1,18 +1,17 @@
 ---
 title: "Content security policy"
 description: "Use content security policy to prevent clickjacking in Power Apps."  
-ms.date: 01/31/2023
+ms.date: 10/16/2023
 ms.topic: conceptual
 author: JesseParsons
 ms.subservice: admin
 ms.author: jeparson
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
+contributors:
+- ZinanZhang
 ---
 # Content security policy
 
@@ -28,22 +27,22 @@ Each component of the CSP header value controls the assets that can be downloade
 | [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `* data:` | No |
 | [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self'` | Yes |
 
-This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self';`. In our roadmap, we have the ability to modify currently non-customizable headers.
+This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self';`. In our roadmap, we have the ability to modify currently noncustomizable headers.
 
 ### Prerequisites
 - For Dynamics 365 Customer Engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 Customer Engagement (on-premises), version 9.1 or later version.
 
 ## Configuring CSP
 
-CSP can be toggled and configured through the Power Platform admin center. **It is important to enable on a dev/test environment first** since enabling this could start blocking scenarios if the policy is violated.  We also support a "report-only mode" to allow for easier ramp-up in production.
+CSP can be toggled and configured through the Power Platform admin center. **It is important to enable on a dev/test environment first** since enabling CSP could start blocking scenarios if the policy is violated.  We also support a "report-only mode" to allow for easier ramp-up in production.
 
-To configure CSP, navigate to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) -> **Environments** -> **Settings** -> **Privacy + Security**. Below is the default state of the settings:
+To configure CSP, navigate to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) -> **Environments** -> **Settings** -> **Privacy + Security**. The following image shows the default state of the settings:
 
 ![Content security policy default settings](media/csp-default-settings.png "Content security policy default settings")
 
 ### Reporting
 
-The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. Enabling it requires an endpoint to be specified. Violation reports will be sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced). For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
+The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. Enabling it requires an endpoint to be specified. Violation reports are sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced). For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
 
 ![Enabling reporting endpoint](media/csp-reporting.png "Enabling reporting endpoint")
 
@@ -51,7 +50,7 @@ The "Enable reporting" toggle controls whether model-driven and canvas apps send
 
 Enforcement of CSP is controlled independently for model-driven and canvas apps to provide granular control over policies. Use the model-driven/canvas pivot to modify the intended app type.
 
-The "Enforce content security policy" toggle turns on the default policy for enforcement, as specified above, for the given app type. Turning on this toggle will change the behavior of apps in this environment to adhere to the policy. Therefore, the suggested enablement flow would be:
+The "Enforce content security policy" toggle turns on the default policy for enforcement for the given app type. Turning on this toggle changes the behavior of apps in this environment to adhere to the policy. Therefore, the suggested enablement flow would be:
 1. Enforce on a dev/test environment.
 2. Enable report-only mode in production.
 3. Enforce in production once no violations are reported.
@@ -62,7 +61,7 @@ The final section is "Configure directives". This section allows you to control 
 
 ![Configure CSP directives](media/csp-directives.png "Configure CSP directives")
 
-Leaving the default directive toggled on uses the default value specified in the table above. Turning off the toggle allows admins to specify custom values for the directive. The example below sets custom values for `frame-ancestors`. The directive would be set to `frame-ancestors: https://www.foo.com https://www.bar.com` in this example, meaning the app could be hosted in `https://www.foo.com` and `https://www.bar.com`, but not in other origins. Use the Add button to add entries to the list and the delete icon to remove them.
+Leaving the default directive toggled on uses the default value specified in the table shown earlier in this article. Turning off the toggle allows admins to specify custom values for the directive and append them to the default value. The example below sets custom values for `frame-ancestors`. The directive would be set to `frame-ancestors: 'self' https://www.foo.com https://www.bar.com` in this example, meaning the app could be hosted in the same origin, `https://www.foo.com` and `https://www.bar.com`, but not in other origins. Use the Add button to add entries to the list and the delete icon to remove them.
 
 ![Setting custom CSP directives](media/csp-default-directive.png "Setting custom CSP directives")
 
@@ -70,6 +69,8 @@ Leaving the default directive toggled on uses the default value specified in the
 For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-integration/teams-integration), add the following to `frame-ancestors`:
 - `https://teams.microsoft.com/`
 - `https://msteamstabintegration.dynamics.com/`
+
+For Dynamics 365 App for Outlook, you must add your Outlook Web App homepage origin to `frame-ancestors`.
 
 ### Important considerations
 Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
@@ -121,7 +122,7 @@ CSP can be configured without using the UI by modifying the following organizati
 
 - [ContentSecurityPolicyConfigurationForCanvas](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfigurationForCanvas) controls the policy for canvas using the same process described in `ContentSecurityPolicyConfiguration` above.
 
-- [ContentSecurityPolicyReportUri](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyReportUri) controls whether reporting should be used. This setting is used by both model-driven and canvas apps. A valid string will send violation reports to the specified endpoint, using report-only mode if `IsContentSecurityPolicyEnabled`/`IsContentSecurityPolicyEnabledForCanvas` is turned off. An empty string disables reporting. For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
+- [ContentSecurityPolicyReportUri](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyReportUri) controls whether reporting should be used. This setting is used by both model-driven and canvas apps. A valid string sends violation reports to the specified endpoint, using report-only mode if `IsContentSecurityPolicyEnabled`/`IsContentSecurityPolicyEnabledForCanvas` is turned off. An empty string disables reporting. For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
 
 ## Configuring CSP without UI
 Especially for environments not in the Power Platform admin center such as on-premises configurations, admins may want to configure CSP using scripts to directly modify settings.

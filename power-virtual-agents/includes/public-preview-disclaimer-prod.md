@@ -1,2 +1,2 @@
 > [!NOTE]
-> There is additional information available for people using [Power Virtual Agents (preview)](../preview/overview.md).
+> This topic includes additional information for the [Power Virtual Agents (preview)](../overview-preview.md) version.

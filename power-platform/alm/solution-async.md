@@ -4,16 +4,12 @@ description: "Learn about staging solutions, and using an asynchronous job for i
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
-manager: kvivek
 ms.custom: ""
 ms.date: 04/05/2022
 ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Solution staging, with asynchronous import and export
@@ -235,7 +231,7 @@ public static void CheckImportStatus(
 Now let's take a look at some example code that demonstrates `ExportSolutionAsync`.
 
 ```csharp
-// Where 'service' is a pre-configured Organization service instance.
+// Where 'service' is a pre-configured IOrganizationService instance.
 var service = (OrganizationServiceProxy)xsc.CreateOrganizationService();
 
 var req = new OrganizationRequest("ExportSolutionAsync");
@@ -247,7 +243,7 @@ var response = service.Execute(req);
 In the response are the `AsyncOperationId` and `ExportJobId` parameter values. Use the `AsyncOperationId` in the response to verify the success (`statecode` == 3; `statuscode` == 30) of the asynchronous job. Next, use the `DownloadSolutionExportData` action (or message) with the `ExportJobId` value from the export response to download the exported solution file, which is returned in the `ExportSolutionFile` parameter.
 
 ```csharp
-// Where 'service' is a pre-configured Organization service instance.
+// Where 'service' is a pre-configured IOrganizationService instance.
 var service = (OrganizationServiceProxy)xsc.CreateOrganizationService();
 
 var req = new OrganizationRequest("DownloadSolutionExportData");

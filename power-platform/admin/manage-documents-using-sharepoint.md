@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage your documents using SharePoint
 

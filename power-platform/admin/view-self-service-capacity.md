@@ -1,21 +1,15 @@
 ---
 title: "View self-service storage capacity  | MicrosoftDocs"
 description: View self-service storage capacity
-author: jimholtz
-manager: kvivek
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # View self-service storage capacity
 

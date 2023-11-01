@@ -4,17 +4,15 @@ description: About general availability deployment
 author: samathur
 ms.subservice: admin
 ms.author: samathur 
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 09/22/2023
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.contributors:
+- matleon
+- swatim
 ---
 # General availability deployment
 
@@ -23,7 +21,7 @@ After a release cycle has been made "generally available" to users, environments
 > [!TIP]
 > Check out [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) to learn more about new features to be released in the release waves.
 
-Throughout a release cycle, your environments are updated during one of the weekend [maintenance windows](policies-communications.md#maintenance-timeline). These windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center).
+Throughout a release cycle, your environments are updated over the scheduled weekend. These scheduled windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center). The specific time when the updates for an environment complete, within the scheduled weekend, can't be predetermined.
 
 Each notification from the Message Center includes dates, the maintenance window, and the Release Plan reference. In addition, included is a list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).  
 
@@ -36,14 +34,16 @@ Each notification from the Message Center includes dates, the maintenance window
 
 The general availability deployment is based on the regions where environments are created.
 
-|Regions  |Schedule for 2023 wave 1 general availability deployment|
+|Regions  |Schedule for 2023 wave 2 general availability deployment|
 |---------|---------|
-| Canada<br />France<br />Germany<br />India<br />Norway <br />South Africa<br />South America<br />South Korea<br />Switzerland  | Friday, March 31, 2023 to Sunday, April 2, 2023     |
-|Asia Pacific<br /> Australia <br /> Great Britain<br />Japan<br />United Arab Emirates<br />GCC High     | Friday, April 7, 2023 to Sunday, April 9, 2023        |
-|Europe    | Friday, April 14, 2023 to Sunday, April 16, 2023      |
-|North America     |  Friday, April 21, 2023 to Sunday, April 23, 2023             |
-|China | Friday, April 28, 2023 to Sunday, April 30, 2023       |
-|GCC<br />DOD  | Friday, April 28, 2023 to Sunday, April 30, 2023    <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
+| Canada<br />South America<br />India<br />France<br />South Africa <br />Germany<br />Switzerland<br />Norway<br />Korea<br>Singapore  | Friday, September 29, 2023 to Monday, October 2, 2023 |
+|United Arab Emirates<br /> Japan<br />Asia Pacific<br />Great Britain<br>Australia<br>GCC High\*     | Friday, October 6, 2023 to Monday, October 9, 2023   |
+|Europe    | Friday, October 13, 2023 to Monday, October 16, 2023      |
+|North America     |  Friday, October 20, 2023 to Monday, October 23, 2023            |
+|GCC\*<br>DoD\* | Friday, October 27, 2023 to Monday, October 30, 2023  |
+|China | Friday, October 27, 2023 to Monday, October 30, 2023   |
+
+\*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 
 ### See also
 

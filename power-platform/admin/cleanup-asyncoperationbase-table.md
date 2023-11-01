@@ -12,11 +12,6 @@ contributors:
   - MicroSri
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Clean up records from AsyncOperationBase and WorkflowLogBase tables
 

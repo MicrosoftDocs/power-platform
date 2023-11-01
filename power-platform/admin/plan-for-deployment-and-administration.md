@@ -1,20 +1,15 @@
 ---
 title: "Plan for deployment and administration"
 description: "As an administrator, learn about the considerations when planning for deployment." 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/08/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Plan for deployment and administration
 

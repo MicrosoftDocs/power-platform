@@ -3,18 +3,13 @@ title: Tenant-level analytics for Power Automate
 description: View Tenant-level analytics for Power Automate.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/16/2022
-author: tjvass
+ms.date: 10/30/2023
+author: StephenRauchPM
 ms.subservice: admin
-ms.author: tjvass
-ms.reviewer: jimholtz
+ms.author: stephenrauch
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Tenant-level analytics for Power Automate
@@ -74,7 +69,7 @@ The Power Automate report provides insights into the activities of citizen autho
 
 |Calculation  |Description  |
 |---------|---------|
-|Active flows      | Count of Cloud flows with activity logged in the last 30 days        |
+|Active flows      | Number of flows that have been triggered and executed within the last 30 days        |
 |Created      | Number of Power Apps created within the current view        |
 |Makers      |Total makers with activity registered in the last 30 days          |
 |Connections     | Count of unique connections referenced within the current view         |

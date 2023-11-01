@@ -1,9 +1,9 @@
 ---
 title: "Troubleshoot common user access issues for environments"
 description: "Learn how to run and interpret diagnostics for user access to environments, including criteria for access."
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.component: pa-admin
@@ -11,11 +11,6 @@ ms.topic: conceptual
 ms.date: 07/07/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Troubleshooting: Common user access issues
 

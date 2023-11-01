@@ -5,7 +5,6 @@ keywords:
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
-manager: kvivek
 ms.custom: ""
 ms.date: 02/17/2023
 ms.reviewer: "pehecke"
@@ -14,9 +13,6 @@ ms.topic: "article"
 ms.assetid: 
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # ALM for developers
@@ -61,7 +57,7 @@ to avoid conflict.
 ### See also
 
 [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)  
-[Power Apps for developers](/powerapps/?panel=developer#pivot=home)
+[Power Platform developer docs](/power-platform/developer)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

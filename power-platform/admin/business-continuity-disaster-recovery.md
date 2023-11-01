@@ -11,11 +11,6 @@ ms.subservice: admin
 ms.author: sriknair
 search.audienceType: 
  - admin
-search.app:
- - D365CE
- - PowerApps
- - Powerplatform
- - Flow
 ---
 
 # Business continuity and disaster recovery

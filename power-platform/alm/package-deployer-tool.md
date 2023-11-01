@@ -5,16 +5,12 @@ keywords:
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
-manager: kvivek
 ms.custom: ""
 ms.date: 10/20/2022
 ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Create packages for the Package Deployer tool
@@ -545,7 +541,7 @@ To build the package, simply press F5 in Visual Studio or select **Build** > **B
 
 Your package is made of the following files under the *\<Project>*\Bin\Debug folder.  
 
-   - **\<PackageName> folder**: The folder name is the same as the one you changed for your package folder name in step 2.g of this section [Add costom code](#add-custom-code). This folder contains all solutions, configuration data, flat files, and the contents for your package.
+   - **\<PackageName> folder**: The folder name is the same as the one you changed for your package folder name in step 2.g of this section [Add custom code](#add-custom-code). This folder contains all solutions, configuration data, flat files, and the contents for your package.
 
 > [!NOTE]
 > You may see a .NET folder (e.g, net472) containing a pdpublish folder. Your DLL and other project files are in that pdpublish folder.

@@ -2,16 +2,16 @@
 title: "Programmability and Extensibility - Power Platform API - 2020-10-01 - List tenant settings (preview) | Microsoft Docs"
 description: Power Platform API Reference - List tenant settings
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/10/2022
+ms.date: 06/14/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-search.app:
-  - Powerplatform
+contributors:
+- bibekTimalsina948 
 ---
 
 # List tenant settings (preview)
@@ -73,7 +73,14 @@ The response is always a **200 OK** response, unless you aren't correctly authen
         "powerApps": {
             "disableShareWithEveryone": false,
             "enableGuestsToMake": false
-        }
+        },
+        "modelExperimentation": {
+            "enableModelDataSharing": false,
+            "disableDataLogging": false
+        },
+        "catalogSettings": {
+            "powerCatalogAudienceSetting": All
+        }   
     }
 }
 ```
@@ -95,7 +102,11 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.search.disableBingVideoSearch | Boolean | When this setting is true, users in the environment will see a message that Video search categories have been turned off by the administrator in the search results page.  Default is false.|
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams.  Default is 10000 but can be increased or decreased as required.|
 |powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the Share With Everyone capability in all Power Apps.  Default is false.|
+|powerPlatform.powerApps.DisableConnectionSharingWithEveryone | Boolean | Gets or sets a value indicating whether non-admin users in the tenant can share connections with everyone. Default is false. |
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps.  Default is false.|
-
+|powerPlatform.modelExperimentation.enableModelDataSharing | Boolean | Ability to allow Microsoft to read Power Automate Copilot AI feature customer data (inputs and outputs) and provide improved models.  Default is false.|
+|powerPlatform.modelExperimentation.disableDataLogging | Boolean | Ability to disable data logging and remove all data logged for Power Automate Copilot AI feature customer data (inputs and outputs).  Default is false.|
+|powerPlatform.catalogSettings.powerCatalogAudienceSetting | Enum |This setting is reserved for future use. No enforcement is driven by this setting at the current time.|
+|powerPlatform.licensing.disableUseOfUnassignedAIBuilderCredits| Boolean | Ability to use unallocated AI Builder credits in environments without allocated credits. Default is true. |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

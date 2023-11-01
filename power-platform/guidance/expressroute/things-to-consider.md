@@ -8,10 +8,6 @@ ms.date: 06/30/2021
 ms.subservice: guidance
 ms.author: tayoshi
 ms.reviewer: kathyos
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - rogergilchrist
   - rjmax
@@ -196,7 +192,7 @@ Microsoft 365 admin center, for example, isn't published across ExpressRoute.
 
 ## Support for sovereign clouds
 
-Customers required to meet government or country-specific regulations can choose
+Customers required to meet government or country/region-specific regulations can choose
 to use a sovereign cloud. Sovereign clouds are physically located in a region
 to meet the requirements specific to that particular government or country. For
 example, Power Apps for Government Community Cloud (GCC) is located in the

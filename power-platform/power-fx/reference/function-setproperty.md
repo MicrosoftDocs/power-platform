@@ -1,6 +1,6 @@
 ---
-title: SetProperty function in Power Apps Test Studio
-description: Reference information including syntax and examples for the SetProperty function in Power Apps Test Studio.
+title: SetProperty function
+description: Reference information including syntax and examples for the SetProperty function.
 author: mduelae
 
 ms.topic: reference
@@ -11,17 +11,20 @@ ms.subservice: power-fx
 ms.author: jorisde
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# SetProperty function in Power Apps Test Studio
+# SetProperty function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 The SetProperty function simulates interactions with input controls as if the user had entered or set a value on the control. This function is only available if you are writing tests in the Power Apps Test Studio. The following properties can be set using the SetProperty function.
+
+> [!IMPORTANT]
+> **Assert** function is only available for Test Studio in Power Apps.
 
 ## Syntax
 

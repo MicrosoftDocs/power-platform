@@ -1,6 +1,6 @@
 ---
-title: Day, Month, Year, Hour, Minute, Second, and Weekday functions in Power Apps
-description: Reference information including syntax and examples for the Day, Month, Year, Hour, Minute, Second, and Weekday functions in Power Apps.
+title: Day, Month, Year, Hour, Minute, Second, and Weekday functions
+description: Reference information including syntax and examples for the Day, Month, Year, Hour, Minute, Second, and Weekday functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Day, Month, Year, Hour, Minute, Second, and Weekday functions in Power Apps
+# Day, Month, Year, Hour, Minute, Second, and Weekday functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
 
 Returns individual components of a Date/Time value.
 

@@ -1,2 +1,2 @@
 > [!NOTE]
-> Power Virtual Agents now [supports these features](../preview/overview.md) without Composer.
+> Power Virtual Agents now [supports these features](../overview-preview.md) without Composer.

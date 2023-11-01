@@ -1,19 +1,14 @@
 ---
 title: "Recover database space by deleting audit logs  | MicrosoftDocs"
 description: Recover database space by deleting audit logs
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/05/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Recover database space by deleting audit logs
 

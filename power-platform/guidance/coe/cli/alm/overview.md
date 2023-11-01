@@ -1,30 +1,26 @@
 ---
-title: "CoE CLI ALM accelerator for Microsoft Power Platform"
+title: "CoE CLI ALM accelerator for Microsoft Power Platform (Deprecated)"
 description: "Overview of the Center of Excellence (CoE) command-line interface (CLI) ALM accelerator commands"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-manager: pladhani
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/23/2023
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
-# CoE CLI ALM accelerator for Microsoft Power Platform
+# CoE CLI ALM accelerator for Microsoft Power Platform (Deprecated)
+
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 You can use the CLI application lifecycle management (ALM) accelerator for Microsoft Power Platform to manage common ALM tasks to install, set up, and administer the ALM accelerator for Microsoft Power Platform. This article contains:
 
 - [Quick start](#quick-start) guides you through the process of a [demo tenant installation](./scenarios/tenant-deployments.md#demonstration-deployment).
 - [Understand the concepts](#understand-the-concepts) covers scenarios, personas, key concepts, and the installation process of using the Center of Excellence (CoE) CLI.
-
-> [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 ## Prerequisites
 
@@ -36,7 +32,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
 1. Validate the organization's [maturity model](./maturity/overview.md#quick-start) for ALM.
 
-1. Create your [Microsoft Power Platform environments](./before-you-start.md#power-platform), [Azure DevOps](./before-you-start.md#azure-devops) organization, and Azure DevOps project.
+1. Create your [Microsoft Power Platform environments](before-you-start.md#power-platform-environment-prerequisites), [Azure DevOps](before-you-start.md#azure-devops) organization, and Azure DevOps project.
 
 1. Create an installation configuration. Review the [installation help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) for installation parameters.
 

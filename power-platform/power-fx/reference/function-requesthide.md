@@ -1,6 +1,6 @@
 ---
-title: RequestHide function in Power Apps
-description: Reference information including syntax and examples for the RequestHide function in Power Apps.
+title: RequestHide function
+description: Reference information including syntax and examples for the RequestHide function.
 author: emcoope-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: emcoope
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# RequestHide function in Power Apps
+# RequestHide function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 Hides the [SharePoint form](/power-apps/maker/canvas-apps/sharepoint-form-integration#understand-the-sharepointintegration-control).
 

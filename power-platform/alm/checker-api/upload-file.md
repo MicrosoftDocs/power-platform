@@ -14,12 +14,8 @@ author: "mhuguet" # GitHub ID
 ms.subservice: alm
 ms.author: "michu"
 ms.reviewer: "pehecke"
-manager: "maustinjones"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Upload a file for analysis

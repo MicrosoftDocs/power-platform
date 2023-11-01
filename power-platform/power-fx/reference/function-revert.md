@@ -1,6 +1,6 @@
 ---
-title: Revert function in Power Apps
-description: Reference information including syntax and examples for the Revert function in Power Apps.
+title: Revert function
+description: Reference information including syntax and examples for the Revert function.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Revert function in Power Apps
+# Revert function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 Refreshes and clears errors for the [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 

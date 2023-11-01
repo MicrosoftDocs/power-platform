@@ -1,6 +1,6 @@
 ---
-title: Char function in Power Apps
-description: Reference information including syntax and examples for the Char function in Power Apps.
+title: Char function
+description: Reference information including syntax and examples for the Char function.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Char function in Power Apps
+# Char function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
 
 Translates a character code into a string.
 
@@ -27,19 +27,36 @@ Translates a character code into a string.
 
 The **Char** function translates a number into a string with the corresponding ASCII character.
 
+If you pass a single number, the return value is the translated string version of that number. If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains numbers, the return value is a single-column table of strings in a **Value** column. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
+
 ## Syntax
 
 **Char**( _CharacterCode_ )
 
 - _CharacterCode_ - Required. ASCII character code to translate.
 
+**Char**( _CharacterCodeTable_ )
+
+- _CharacterCodeTable_ - Required. Table of ASCII character codes to translate.
+
 ## Examples
 
-| Formula         | Description                                               | Result |
-| --------------- | --------------------------------------------------------- | ------ |
-| **Char( 65 )**  | Returns the character that corresponds to ASCII code 65.  | "A"    |
-| **Char( 105 )** | Returns the character that corresponds to ASCII code 105. | "i"    |
-| **Char( 35 )**  | Returns the character that corresponds to ASCII code 35.  | "#"    |
+### Single number
+
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Char( 65 )** | Returns the character that corresponds to ASCII code 65. | "A" |
+| **Char( 105 )** | Returns the character that corresponds to ASCII code 105. | "i" |
+| **Char( 35 )** | Returns the character that corresponds to ASCII code 35. | "#" |
+
+### Single-column table
+
+The example in this section converts numbers from a single-column table.
+
+| Formula | Result |
+| --- | --- |
+| `Char( [ 65, 105 ] )` | A single-column table with a `Value` column containing the following values: "A", "i" |
+| `Char( [ 35, 52 ] )` | A single-column table with a `Value` column containing the following values: "#", "4" |
 
 ### Display a character map
 

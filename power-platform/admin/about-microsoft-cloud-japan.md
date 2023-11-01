@@ -1,20 +1,15 @@
 ---
 title: "About Microsoft Cloud Japan  | MicrosoftDocs"
 description: About Microsoft Cloud Japan
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/23/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # About the Microsoft Cloud Japan datacenter
 

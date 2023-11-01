@@ -2,7 +2,6 @@
 title: "Establishing a Center of Excellence - Microsoft Power Platform | MicrosoftDocs"
 description: "Establishing a Microsoft Power Platform Center of Excellence (CoE) means investing in and nurturing organic growth while maintaining governance and control."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Establishing a Microsoft Power Platform Center of Excellence
 

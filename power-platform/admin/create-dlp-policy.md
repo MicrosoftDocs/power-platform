@@ -4,18 +4,13 @@ description: In this topic, you learn how to create a data loss prevention (DLP)
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/29/2022
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Create a data loss prevention (DLP) policy 

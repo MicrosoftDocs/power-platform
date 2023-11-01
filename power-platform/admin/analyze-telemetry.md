@@ -5,17 +5,12 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/06/2022
-author: tjvass
+author: StephenRauchPM
 ms.subservice: admin
-ms.author: tjvass
-ms.reviewer: jimholtz
+ms.author: stephenrauch
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights
 <!-- fwlink: 2147020 2151390 -->

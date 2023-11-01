@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI connector command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI connector command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 12/14/2022
+author: snizar007
+ms.author: snizar
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac connector
 
-(Preview) Commands for working with Power Platform Connectors
+Commands for working with Power Platform Connectors
 
 [!INCLUDE [connector-intro](includes/connector-intro.md)]
 
@@ -26,60 +26,73 @@ Use the include files to add additional content to this topic.
 
 |Command|Description|
 |---------|---------|
-|[pac connector create](#pac-connector-create)|(Preview) Creates a new row in the Connector table in Dataverse.|
-|[pac connector download](#pac-connector-download)|(Preview) Download a Connector's OpenApiDefinition and API Properties file|
-|[pac connector init](#pac-connector-init)|(Preview) Initializes a new API Properties file for a Connector|
-|[pac connector list](#pac-connector-list)|(Preview) List the Connectors registered in Dataverse.|
-|[pac connector update](#pac-connector-update)|(Preview) Updates a Connector Entity in Dataverse.|
+|[pac connector create](#pac-connector-create)|Creates a new row in the Connector table in Dataverse.|
+|[pac connector download](#pac-connector-download)|Download a Connector's OpenApiDefinition and API Properties file|
+|[pac connector init](#pac-connector-init)|Initializes a new API Properties file for a Connector.|
+|[pac connector list](#pac-connector-list)|List the Connectors registered in Dataverse.|
+|[pac connector update](#pac-connector-update)|Updates a Connector Entity in Dataverse.|
 
 
 ## pac connector create
 
-(Preview) Creates a new row in the Connector table in Dataverse.
+Creates a new row in the Connector table in Dataverse.
 
 [!INCLUDE [connector-create-intro](includes/connector-create-intro.md)]
 
 
-### Required Parameters
+### Optional Parameters for connector create
 
 #### `--api-definition-file` `-df`
 
-The filename and path to read the the Connector's OpenApiDefinition.
+The filename and path to read the Connector's OpenApiDefinition.
 
 #### `--api-properties-file` `-pf`
 
-The filename and path to read the the Connector's API Properties file.
-
-
-### Optional Parameters
+The filename and path to read the Connector's API Properties file.
 
 #### `--environment` `-env`
 
-The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+
+#### `--icon-file` `-if`
+
+The filename and path to and Icon .png file.
+
+#### `--script-file` `-sf`
+
+The filename and path to a Script .csx file.
+
+#### `--settings-file`
+
+The filename and path Connector Settings file.
+
+#### `--solution-unique-name` `-sol`
+
+The unique name of the solution to add the connector to
 
 [!INCLUDE [connector-create-remarks](includes/connector-create-remarks.md)]
 
 ## pac connector download
 
-(Preview) Download a Connector's OpenApiDefinition and API Properties file
+Download a Connector's OpenApiDefinition and API Properties file
 
 [!INCLUDE [connector-download-intro](includes/connector-download-intro.md)]
 
 
-### Required Parameters
+### Required Parameters for connector download
 
 #### `--connector-id` `-id`
 
 The ID of the Connector
 
-**Note**: The Connector Id must be a valid Guid.
+**Note**: The Connector ID must be a valid Guid.
 
 
-### Optional Parameters
+### Optional Parameters for connector download
 
 #### `--environment` `-env`
 
-The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
 
 #### `--outputDirectory` `-o`
 
@@ -89,29 +102,16 @@ Output directory
 
 ## pac connector init
 
-(Preview) Initializes a new API Properties file for a Connector
+Initializes a new API Properties file for a Connector.
 
 [!INCLUDE [connector-init-intro](includes/connector-init-intro.md)]
 
 
-### Required Parameters
-
-#### `--display-name` `-dn`
-
-The display name of the Connector
-
-#### `--name` `-n`
-
-The Name of the Connector
-
-**Note**: Connector Name must have a prefix of 2-8 alphabetical characters followed by  '_' and an alphanumeric name.
-
-
-### Optional Parameters
+### Optional Parameters for connector init
 
 #### `--connection-template` `-ct`
 
-Generate an initial Connection Parameters set with specified template
+Generate an initial Connection Parameters set with the specified template.
 
 Use one of these values:
 
@@ -121,6 +121,18 @@ Use one of these values:
 - `OAuthGeneric`
 - `OAuthAAD`
 
+#### `--generate-script-file`
+
+Generate an initial Connector Script file
+
+This parameter requires no value. It's a switch.
+
+#### `--generate-settings-file`
+
+Generate an initial Connector Settings file
+
+This parameter requires no value. It's a switch.
+
 #### `--outputDirectory` `-o`
 
 Output directory
@@ -129,44 +141,61 @@ Output directory
 
 ## pac connector list
 
-(Preview) List the Connectors registered in Dataverse.
+List the Connectors registered in Dataverse.
 
 [!INCLUDE [connector-list-intro](includes/connector-list-intro.md)]
 
 
-### Optional Parameters
+### Optional Parameters for connector list
 
 #### `--environment` `-env`
 
-The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [connector-list-remarks](includes/connector-list-remarks.md)]
 
 ## pac connector update
 
-(Preview) Updates a Connector Entity in Dataverse.
+Updates a Connector Entity in Dataverse.
 
 [!INCLUDE [connector-update-intro](includes/connector-update-intro.md)]
 
 
-### Required Parameters
+### Optional Parameters for connector update
 
 #### `--api-definition-file` `-df`
 
-The filename and path to read the the Connector's OpenApiDefinition.
+The filename and path to read the Connector's OpenApiDefinition.
+
+#### `--api-properties-file` `-pf`
+
+The filename and path to read the Connector's API Properties file.
 
 #### `--connector-id` `-id`
 
 The ID of the Connector
 
-**Note**: The Connector Id must be a valid Guid.
-
-
-### Optional Parameters
+**Note**: The Connector ID must be a valid Guid.
 
 #### `--environment` `-env`
 
-The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
+The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+
+#### `--icon-file` `-if`
+
+The filename and path to and Icon .png file.
+
+#### `--script-file` `-sf`
+
+The filename and path to a Script .csx file.
+
+#### `--settings-file`
+
+The filename and path Connector Settings file.
+
+#### `--solution-unique-name` `-sol`
+
+The unique name of the solution to add the connector to
 
 [!INCLUDE [connector-update-remarks](includes/connector-update-remarks.md)]
 

@@ -1,6 +1,6 @@
 ---
-title: Int, Round, RoundDown, RoundUp, and Trunc functions | Microsoft Docs
-description: Reference information, including syntax, for the Int, Round, RoundDown, RoundUp, and Trunc functions in Power Apps
+title: Int, Round, RoundDown, RoundUp, and Trunc functions
+description: Reference information, including syntax, for the Int, Round, RoundDown, RoundUp, and Trunc functions
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Int, Round, RoundDown, RoundUp, and Trunc functions in Power Apps
+# Int, Round, RoundDown, RoundUp, and Trunc functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
 
 Rounds a number.
 

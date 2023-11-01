@@ -1,20 +1,15 @@
 ---
 title: "Quickly navigate apps with the Microsoft 365 app launcher"
 description: "Learn how to use the Microsoft 365 app launcher to quickly move between Microsoft Dynamics 365 and Microsoft 365 apps." 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/26/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Quickly navigate with the Microsoft 365 app launcher
 

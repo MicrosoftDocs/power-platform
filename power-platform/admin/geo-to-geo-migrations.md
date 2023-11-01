@@ -1,23 +1,20 @@
 ---
-title: "Geo to geo migrations  | MicrosoftDocs"
+title: Geo to geo migrations
 description: Move your environment in a single tenant from one region to another with the Geo Migration feature.
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 2/28/2023
+ms.date: 5/23/2023
 ms.subservice: admin
 ms.author: matgupta 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors: 
     - ProfessorKendrick
+    - - LaurentPepin
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
+
 # Geo to geo migrations
 
 We continue to open new datacenter regions for business services, and to add datacenters to existing regions.  
@@ -30,7 +27,7 @@ The Geo Migration feature will allow customers to move their environments in a s
 > - After making a request, expect at least 10 days for the migration to be completed.  
 > - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
 > - Geo migrations are restricted into or out of OCE or IND.
-> - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances).
+> - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances). If installed, the Dynamics 365 Marketing app must be uninstalled prior to the migration.
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
 > - Dataverse organization linked to a finance and operations organization is not supported.
 > - There are important and critical preparation steps mentioned below that need to be performed for Power Apps/Power Automate, etc. prior to the geo migration. If these steps are missed, it is difficult to recover Power Apps/Power Automate solutions.
@@ -89,6 +86,10 @@ The following topics have information that could be helpful to understand the mo
 
 Before the migration: 
 1. For apps that are solution aware, you can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all apps/solutions either individually or group them together into a single solution (if they're not already).
+2. Once the canvas apps have been exported, delete the apps in the environment.
+
+> [!IMPORTANT]
+> Any canvas apps, custom pages, or component libraries that are not deleted in the environment prior to migration, will be in a corrupted state after migration.
 
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/ and navigate to the **Solutions** page.
@@ -137,12 +138,20 @@ After the migration:
 2. Open the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
 3. Provision the portal with the same portal type and language.
 
+#### For Dynamics 365 Marketing app:
+The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances). If installed, the app must be uninstalled prior to the migration.
+
+Before the migration: 
+
+1. Follow the [Uninstall Dynamics 365 Marketing](/dynamics365/marketing/uninstall-marketing) guide to uninstall Marketing app from the environment.
+
+
 ## How the move works  
 You'll be provided with a list of prerequisites and post-requisites for your migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move. 
 
 |   |    Before the move   |  During the move | After the move |
 |-----|------|---|----|
-| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager will work with you to request a move and scheduling. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend.<br /><br /> There is a step that will require your involvement, which is to re-enter the encryption key. This can happen at a time that suits you but the migration process will be on hold until you complete this action. | Notification and support <br /><br /> You will be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your geo has migrated you can perform the post requisite steps - primarily changing your new URLs with any associated plugins or services. |
+| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager will work with you to request a move and scheduling. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You will be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your geo has migrated you can perform the post requisite steps, primarily changing your new URLs with any associated plugins or services. |
 
 We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
 

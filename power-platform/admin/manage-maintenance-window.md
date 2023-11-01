@@ -9,11 +9,6 @@ ms.topic: conceptual
 ms.date: 10/28/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage your maintenance window 
 

@@ -1,6 +1,6 @@
 ---
-title: Choices function in Power Apps
-description: Reference information including syntax and examples for the Choices function in Power Apps.
+title: Choices function
+description: Reference information including syntax and examples for the Choices function.
 author: gregli-msft
 
 ms.topic: reference
@@ -11,15 +11,15 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
 
-# Choices function in Power Apps
+# Choices function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 Returns a table of the possible values for a lookup column.
 
@@ -43,9 +43,10 @@ At this time, you can use lookup columns only with SharePoint and Microsoft Data
 
 ## Syntax
 
-**Choices**( _column-reference_ )
+**Choices**( _column-reference_ [, _text-filter_ ] )
 
-- _column-reference_ – Required. A lookup column of a data source. Don't enclose the column name in double quotes. The reference must be directly to the column of the data source and not pass through a function or a control.
+- _column-reference_ - Required. A lookup column of a data source. Don't enclose the column name in double quotes. The reference must be directly to the column of the data source and not pass through a function or a control.
+- _text-filter_ - Optional. Filters the list of choices by only returning choices that start with the text specified in _text-filter_. If an empty string is specified, all choices will be returned.
 
 ## Examples
 

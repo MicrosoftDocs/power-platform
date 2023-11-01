@@ -1,22 +1,20 @@
 ---
 title: "Set up Skype or Skype for Business  | MicrosoftDocs"
 description: Set up Skype or Skype for Business 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Set up customer engagement apps to use Skype or Skype for Business
+
+> [!Note]
+> This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)
 
 When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), your organization can benefit from these capabilities:  
   

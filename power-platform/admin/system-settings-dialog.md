@@ -1,19 +1,14 @@
 ---
 title: "Overview of the System Settings dialog box"
 description: "Use the System Settings dialog box to specify system-level settings for your environment and customer engagement apps." 
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 09/11/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # System Settings dialog box  
 

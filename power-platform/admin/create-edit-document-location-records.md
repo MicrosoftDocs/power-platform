@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Create or edit document location records
 

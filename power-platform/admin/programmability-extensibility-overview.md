@@ -10,8 +10,6 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-search.app:
-  - Powerplatform
 ---
 
 # Programmability and extensibility overview (preview)

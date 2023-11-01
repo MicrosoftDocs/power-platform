@@ -1,23 +1,20 @@
 ---
 title: "Skype for Business and Skype integration  | MicrosoftDocs"
 description: Skype for Business and Skype integration
-author: jimholtz
-manager: kvivek
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/14/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Skype for Business and Skype integration
+
+> [!Note]
+> This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)
 
 If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] (formerly known as [!INCLUDE[pn_Microsoft_Lync](../includes/pn-microsoft-lync.md)]) or [!INCLUDE[pn_skype](../includes/pn-skype.md)], you can take advantage of connectivity features like click-to-call or checking user availability from within model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)].  
   

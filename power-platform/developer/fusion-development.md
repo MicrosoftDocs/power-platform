@@ -10,10 +10,6 @@ ms.reviewer:
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerPlatform
-  - PowerApps
-  - Azure
 ---
 
 # Fusion development in Power Platform
@@ -26,7 +22,7 @@ Fusion Development is an approach with the main goal of scaling application deve
 
 ## Personas for fusion development
 
-Bellow you can find the personas and the definition in a fusion team:
+Below you can find the personas and the definition in a fusion team:
 
 | Persona | Description |
 | ---- | ---- | 
