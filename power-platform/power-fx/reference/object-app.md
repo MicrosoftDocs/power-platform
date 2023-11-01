@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 09/16/2022
+ms.date: 11/01/2023
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -41,7 +41,7 @@ Use the **[Back](function-navigate.md)** or **[Navigate](function-navigate.md)**
 
 ## BackEnabled property
 
-The **BackEnabled** property changes how the app responds to the device back gesture (swipe or use **Back** button on Android devices, swipe from left on iOS devices) when running in [Power Apps mobile](/power-apps/mobile/run-powerapps-on-mobile). When enabled, the device back gesture navigates back to the screen that was most recently displayed, which is similar to the [**Back**](function-navigate.md#back) formula. When disabled, the device back gesture returns the user to the app list. 
+The **BackEnabled** property changes how the app responds to the device back gesture (swipe or use the hardware back button on Android devices, swipe from left on iOS devices) when running in [Power Apps mobile](/power-apps/mobile/run-powerapps-on-mobile). When enabled, the device back gesture navigates back to the screen that was most recently displayed, which is similar to the [**Back**](function-navigate.md#back) formula. When disabled, the device back gesture returns the user to the app list. 
 
 ## ConfirmExit properties
 
