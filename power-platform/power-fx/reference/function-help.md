@@ -23,7 +23,9 @@ Displays help information for interactive Power Fx hosts.
 
 ## Description
 
-The **Help** function displays help information when working with interactive Power Fx hosts, such as the [Power Platform CLI](../../developer/cli/introduction.md).  Information will include the list of functions available in this host and any details specific to this host.
+The **Help** function displays help information when working with interactive Power Fx hosts, such as the [Power Platform CLI](../../developer/cli/introduction.md).  
+
+Information includes the list of functions available and any deatails specific to this host. Information is updated as more details and new functions are added.
 
 > [!NOTE]
 > Most Power Fx hosts do not provide a **Help** function, instead relying on the documentation.
@@ -34,11 +36,9 @@ The **Help** function displays help information when working with interactive Po
 
 ## Examples
 
-1. [Install the Power Platofrm CLI](../../developer/cli/introduction.md).
+1. [Install the Power Platform CLI](../../developer/cli/introduction.md).
 1. From the command line, start the Power Fx repl with `pac power-fx repl`.
 1. Run the function `Help()`.  
-
-You will see something similar to the below.  Help information will be updated with more details and as new functions are introduced.
 
 ```
 C:\>pac power-fx repl
