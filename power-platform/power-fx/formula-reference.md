@@ -153,6 +153,8 @@ Other elements include:
 
 ## E
 
+**[EDate](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, without changing the day of the month.
+
 **[EditForm](reference/function-form.md)** – Resets a form control for editing of an item.
 
 **[Enable](reference/function-enable-disable.md)** – Enables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
@@ -160,6 +162,8 @@ Other elements include:
 **[EncodeUrl](reference/function-encode-decode.md)** – Encodes special characters using URL encoding.
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
+
+**[EOMonth](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, returning the last day of that month.
 
 **[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
