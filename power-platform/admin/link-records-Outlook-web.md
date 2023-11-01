@@ -19,7 +19,7 @@ ms.contributors:
 
 # Use /mention to link to records in Outlook web 
 
-One of the most time-consuming tasks for any person that uses email is easily sharing information in your line of business applications with colleagues. You have to jump out of your Outlook web experience, open your line of business app, navigate to a record, and then copy and paste the link of the record into your email. This is an incredibly time consuming set of steps and actions. 
+One of the most time-consuming tasks, for any person that uses email, is easily sharing information in your line of business applications with colleagues. You have to jump out of your Outlook web experience, open your line of business app, navigate to a record, and then copy and paste the link of the record into your email. This is an incredibly time consuming set of steps and actions. 
 
 Wouldn't it be great if you could just quickly access Dynamics 365 or Dataverse data directly from Outlook?
 
@@ -27,7 +27,7 @@ That is now possible with a simple configuration in the Power Platform admin cen
 
 Security is top of mind, and only records that a user has access to and has most recently used will show up in the Outlook web client.
 
-## Turn on the feature
+## Turn on the /mention feature
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 2. Select **Settings** > **Product** > **Features**.
@@ -52,16 +52,8 @@ After turning on the **Search for records in Microsoft 365 apps** setting, your 
 
     In this example, you can see that the **/** mention is followed by the account "Adventure Works". When the user presses **Enter**, a link to the record is inserted into the body of the email.
 
-    That's how easy it is for users to quickly add records they want to collaborate on and share with others in their organization who also has access to the record.
-
-    When using the **/** reference, the record name and the environment are displayed.
-
     :::image type="content" source="media/adventure-works-link.png" alt-text="Insert a link into an Outlook web message.":::
 
-After selecting the record in the /mention dialog a link to the record(s) will be added to the email in Outlook Web Client.
+    After selecting a record in the /mention form, a link to the record is added to the email in the Outlook web client. The recipient of the email can select the link and open the record, assuming the recipient has access to the environment, the app, and the record.
 
-![A screenshot of a computer Description automatically generated](media/image3.png)
-
-The recipient will be able to click on the link and open the record, however, they must have access to the environment, the app and the record.
-
-![A screenshot of a computer Description automatically generated](media/image4.png)
+     :::image type="content" source="media/final-email.png" alt-text="The email messsage the receipient receives.":::
