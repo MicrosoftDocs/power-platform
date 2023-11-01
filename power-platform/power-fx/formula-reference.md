@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 09/10/2022
+ms.date: 11/1/2023
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -130,6 +130,8 @@ Other elements include:
 **[DateAdd](reference/function-dateadd-datediff.md)** – Adds days, months, quarters, or years to a date/time value.
 
 **[DateDiff](reference/function-dateadd-datediff.md)** – Subtracts two date values, and shows the result in days, months, quarters, or years.
+
+**[DateTime](reference/function-date-time.md)** – Returns a date/time value, based on both date and time components.
 
 **[DateTimeValue](reference/function-datevalue-timevalue.md)** – Converts a date and time string to a date/time value.
 
