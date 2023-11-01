@@ -18,7 +18,7 @@ contributors:
 
 # Formula reference - Power Platform CLI
 
-In this article, learn about all the functions available in Microsoft Power Platform CLI.
+In this article, learn about all the functions available in Microsoft Power Platform CLI [pac power-fx commands](/power-platform/developer/cli/reference/power-fx).
 
 ## A
 
