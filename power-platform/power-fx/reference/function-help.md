@@ -2,7 +2,6 @@
 title: Help function
 description: Reference information including syntax and examples for the Help function.
 author: gregli-msft
-
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
@@ -25,10 +24,10 @@ Displays help information for command line Power Fx hosts.
 
 The **Help** function displays helpful information when working with command line Power Fx hosts, such as the [Power Platform CLI](../../developer/cli/introduction.md).  
 
-Information includes the list of functions available and any details specific to the host. It's updated as more guidance and new functions are added.
+The output information includes the list of functions available and any details specific to the host. This output is updated as more guidance and new functions are added.
 
 > [!NOTE]
-> Most Power Fx hosts do not provide a **Help** function, instead relying on the formula bar and documentation.
+> Most Power Fx hosts do not provide a **Help** function, relying on the formula bar and Power Fx documentation.
 
 ## Syntax
 
@@ -36,8 +35,8 @@ Information includes the list of functions available and any details specific to
 
 ## Examples
 
-1. [Install the Power Platform CLI](../../developer/cli/introduction.md).
-1. From the command line, start the Power Fx repl with `pac power-fx repl`.
+1. Install [Power Platform CLI](../../developer/cli/introduction.md).
+1. From the command line, start the [Power Fx repl](../../developer/cli/reference/power-fx.md) (interactive Power Fx Read-Eval-Print Loop) using `pac power-fx repl`.
 1. Run the function `Help()`.  
 
 ```
