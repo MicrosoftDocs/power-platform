@@ -100,7 +100,7 @@ This section of the report focuses on how many tasks are reactive ("ad-hoc"). Yo
 This section of the report aggregates duration for all tasks, grouped by task frequency, and provides insight into:
 
 - **Experience levels required**: Illustrates the experience required across all tasks, which can be useful in estimating training requirements for your existing team.
-- **Core admin persona** and **peripheral admin persona**:  Illustrates how many tasks are assigned to the different personas in your core administration team and how many tasks require other teams to complete. For example, creating an environment might require the Power Platform administrator and an Microsoft Entra administrator to create the environment and security groups for managing access.
+- **Core admin persona** and **peripheral admin persona**:  Illustrates how many tasks are assigned to the different personas in your core administration team and how many tasks require other teams to complete. For example, creating an environment might require the Power Platform administrator and a Microsoft Entra administrator to create the environment and security groups for managing access.
 
 ### Task overview - categorization
 
