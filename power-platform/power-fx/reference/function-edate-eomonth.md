@@ -25,7 +25,7 @@ Adds or subtracts a number of months from a Date/Time value, with optional adjus
 
 ## Description
 
-The **EDate** and **EOMonth** functions move a Date/Time forward or backward by a specified number of months, possibly changing the year as well.
+The **EDate** and **EOMonth** functions move a Date/Time forward or backward by a specified number of months.
 
 **EDate** will leave the day portion unmodified unless the new value would be beyond the end of the month.  For example, moving July 31 backward by one month yields June 30.  Use **EDate** to calculate the maturity dates or due dates that fall on the same day of the month as the date of issue.
 
@@ -53,19 +53,19 @@ See [working with dates and times](/power-apps/maker/canvas-apps/show-text-dates
 
 | Formula                                                    | Description                                                                       | Result            |
 | ---------------------------------------------------------- | --------------------------------------------------------------------------------- | ----------------- |
-| **EDate(&nbsp;Date(2023,5,15);&nbsp;,&nbsp;4&nbsp)**       | Adds four months to May 15, 2023, leaving the date unchanged.                     | Date(2023,9,15)   |
-| **EDate(&nbsp;Date(2023,5,15);&nbsp;,&nbsp;-10&nbsp)**     | Subtracts ten months from May 15, 2023, leaving the date unchanged.               | Date(2022,7,15)   |
-| **EDate(&nbsp;Date(2023,5,15);&nbsp;,&nbsp;0&nbsp)**       | Adds zero months to May 15, 2023 leaving the month and year unchanged, also leaves the date unchanged. | Date(2023,5,15)   |
-| **EDate(&nbsp;Date(2023,5,31);&nbsp;,&nbsp;1&nbsp)**       | Adds one months to May 15, 2023, adjusting the date since June does not have as many days as May. | Date(2023,6,30)   |
+| **EDate(&nbsp;Date(2023,5,15)&nbsp;,&nbsp;4&nbsp;)**       | Adds four months to May 15, 2023, leaving the date unchanged.                     | Date(2023,9,15)   |
+| **EDate(&nbsp;Date(2023,5,15)&nbsp;,&nbsp;-1002&nbsp;)**   | Subtracts 1,002 months from May 15, 2023, leaving the date unchanged.             | Date(1939,11,15)   |
+| **EDate(&nbsp;Date(2023,5,15)&nbsp;,&nbsp;0&nbsp;)**       | Adds zero months to May 15, 2023 leaving the month and year unchanged, also leaves the date unchanged. | Date(2023,5,15)   |
+| **EDate(&nbsp;Date(2023,5,31)&nbsp;,&nbsp;1&nbsp;)**       | Adds one months to May 15, 2023, adjusting the date since June does not have as many days as May. | Date(2023,6,30)   |
 
 ### EOMonth
 
 | Formula                                                    | Description                                                                       | Result            |
 | ---------------------------------------------------------- | --------------------------------------------------------------------------------- | ----------------- |
-| **EOMonth(&nbsp;Date(2023,5,15);&nbsp;,&nbsp;4&nbsp)**     | Adds four months to May 15, 2023, moving the date to the end of the month.        | Date(2023,9,30)   |
-| **EOMonth(&nbsp;Date(2023,5,15);&nbsp;,&nbsp;-10&nbsp)**   | Subtracts ten months from May 15, 2023, moving the date to the end of the month.  | Date(2022,7,30)   |
-| **EOMonth(&nbsp;Date(2023,5,15);&nbsp;,&nbsp;0&nbsp)**     | Adds zero months to May 15, 2023 leaving the month and year unchanged, moving the date to the end of the month.  | Date(2023,5,31)   |
-| **EOMonth(&nbsp;Date(2023,5,31);&nbsp;,&nbsp;1&nbsp)**     | Adds one months to May 15, 2023, moving the date to the end of the month. | Date(2023,6,30)   |
+| **EOMonth(&nbsp;Date(2023,5,15);&nbsp;,&nbsp;4&nbsp;)**     | Adds four months to May 15, 2023, moving the date to the end of the month.        | Date(2023,9,30)   |
+| **EOMonth(&nbsp;Date(2023,5,15);&nbsp;,&nbsp;-1002&nbsp;)** | Subtracts 1,002 months months from May 15, 2023, moving the date to the end of the resulting month.  | Date(1939,11,30)   |
+| **EOMonth(&nbsp;Date(2023,5,15);&nbsp;,&nbsp;0&nbsp;)**     | Adds zero months to May 15, 2023 leaving the month and year unchanged, moving the date to the end of the unmodified month.  | Date(2023,5,31)   |
+| **EOMonth(&nbsp;Date(2023,5,31);&nbsp;,&nbsp;1&nbsp;)**     | Adds one months to May 15, 2023, moving the date to the end of the resulting month. | Date(2023,6,30)   |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
