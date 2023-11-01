@@ -31,7 +31,7 @@ The **Date** function converts individual Year, Month, and Day values to a Date/
 - If Month is less than 1 or more than 12, the result subtracts or adds that many months from the beginning of the specified year.
 - If Day is greater than the number of days in the specified month, the function adds that many days to the first day of the month and returns the corresponding date from a subsequent month. If Day is less than 1, the function subtracts that many days, plus 1, from the first day of the specified month.
 
-The **Time** function converts individual Hour, Minute, and Second values to a Date/Time value. The result has no date associated with it.
+The **Time** function converts individual Hour, Minute, Second, and optionally Millisecond values to a Date/Time value. The result has no date associated with it.
 
 The **DateTime** function combines the **Date** and **Time** functions into a single function, taking both date and time arguments and returning a Date/Time value that has both date and time components.
 
