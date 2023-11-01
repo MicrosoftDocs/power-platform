@@ -70,7 +70,7 @@ The following steps show how to create a single app registration with permission
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. Select **Microsoft Entra** > **App registrations**.
+1. Select **Microsoft Entra ID** > **App registrations**.
 
 1. Select **+ New registration**, and then give the registration a name, such as *ALMAcceleratorServicePrincipal*.
 
