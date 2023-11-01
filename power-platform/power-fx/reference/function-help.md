@@ -25,7 +25,7 @@ Displays help information for command line Power Fx hosts.
 
 The **Help** function displays help information when working with command line Power Fx hosts, such as the [Power Platform CLI](../../developer/cli/introduction.md).  
 
-Information includes the list of functions available and any deatails specific to the host. It is updated as more details and new functions are added.
+Information includes the list of functions available and any details specific to the host. It's updated as more guidance and new functions are added.
 
 > [!NOTE]
 > Most Power Fx hosts do not provide a **Help** function, instead relying on the documentation.
