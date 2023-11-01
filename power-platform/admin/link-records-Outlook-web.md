@@ -1,5 +1,5 @@
 ---
-title: Use /mention to link to records in Outlook Web 
+title: Use /mention to link to records in Outlook web client
 description: The records will now be available in the Outlook Web client using a simple /mention gesture. 
 author: sericks007
 ms.component: pa-admin
@@ -17,7 +17,7 @@ ms.contributors:
 - mspilde
 ---
 
-# Use /mention to link to records in Outlook web 
+# Use /mention to link to records in Outlook web client
 
 One of the most time-consuming tasks, for any person that uses email, is easily sharing information in your line of business applications with colleagues. You have to jump out of your Outlook web experience, open your line of business app, navigate to a record, and then copy and paste the link of the record into your email. This is an incredibly time consuming set of steps and actions. 
 
@@ -33,7 +33,7 @@ Security is top of mind, and only records that a user has access to and has most
 2. Select **Settings** > **Product** > **Features**.
 3. Under the **Search** section, turn on the **Search for records in Microsoft 365 apps** setting.
 
-## Link to business records in Outlook web
+## Link to business records in Outlook web client
 
 After turning on the **Search for records in Microsoft 365 apps** setting, your users can open their Outlook web clients and quickly add a link to their most recently used records to be shared with colleagues.
 
