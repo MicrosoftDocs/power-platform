@@ -89,7 +89,10 @@ If a user typed
 this formula would return `02:50:24 P`:
 
 ```powerapps-dot
-Text( Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss A/P" )
+Text( 
+    Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), 
+    "hh:mm:ss A/P" 
+)
 ```
 
 ### DateTime
@@ -108,7 +111,8 @@ this formula would return `10/28/23 01:14:05.231 PM`:
 ```powerapps-dot
 Text(
     DateTime(Value(EclipseYear.Text), Value(EclipseMonth.Text), Value(EclipseDate.Text), 
-        Value(EclipseHour.Text), Value(EclipseMinute.Text), Value(EclipseSecond.Text), Value(EclipseSecond.Millisecond)
+        Value(EclipseHour.Text), Value(EclipseMinute.Text), 
+        Value(EclipseSecond.Text), Value(EclipseSecond.Millisecond)
     ), 
     "yy/mm/dd hh:mm:ss.000 AM/PM"
 )
