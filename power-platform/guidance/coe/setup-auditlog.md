@@ -49,7 +49,7 @@ Using these steps, you set up a Microsoft Entra app registration that is used in
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
-1. Go to **Microsoft Entra** > **App registrations**.
+1. Go to **Microsoft Entra ID** > **App registrations**.
 
    ![Microsoft Entra app registration.](media/coe33.png "Microsoft Entra app registration")
 
