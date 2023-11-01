@@ -19,7 +19,7 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
-When you ask Project "Sophia" a question or upload data and inquire about the data, a workspace is generated. The workspace is initially titled **Untitled**, but you can rename the default title. You can access all of your workspaces from the Home screen.
+When you ask Project "Sophia" a question or upload data and inquire about the data, a workspace is generated. 
 
 ## Ask a question
 
@@ -39,4 +39,21 @@ You can upload a data file and ask questions about the data. The supported file 
 3. Select **Generate** or enter your question in the text box and then select **Generate**.
 
 
+### Supported data files
+
+You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file.
+
+The following limitations apply to file uploads:
+
+- The maximum supported file size is 10mb.
+- For .csv (comma-separated values) files, the data within the file must be separated by commas. 
+- Excel:
+  - Column header in the first row only
+  - No more than 10 tables and max 50 columns for each table
+  - Can’t contain merged cells
+  - Elements such as images, charts and macros will not be processed
+- PDF:
+  - The file must contain selectable text. You can test this by trying to highlight text within the PDF. If you can’t select or highlight the text, then it won’t be processed.
+  - Use original digital documents or PDF that is converted directly from word processors or other digital sources. A scanned PDF won’t work.
+-	Encrypted or password-protected files aren’t supported 
 
