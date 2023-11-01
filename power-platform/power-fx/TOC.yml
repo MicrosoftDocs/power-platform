@@ -120,6 +120,8 @@
             href: reference/function-dateadd-datediff.md
           - name: DateDiff
             href: reference/function-dateadd-datediff.md
+          - name: DateTime
+            href: reference/function-date-time.md            
           - name: DateTimeValue
             href: reference/function-datevalue-timevalue.md
           - name: DateValue

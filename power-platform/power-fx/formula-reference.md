@@ -131,6 +131,8 @@ Other elements include:
 
 **[DateDiff](reference/function-dateadd-datediff.md)** – Subtracts two date values, and shows the result in days, months, quarters, or years.
 
+**[DateTime](reference/function-date-time.md)** – Returns a date/time value, based on both date and time components.
+
 **[DateTimeValue](reference/function-datevalue-timevalue.md)** – Converts a date and time string to a date/time value.
 
 **[DateValue](reference/function-datevalue-timevalue.md)** – Converts a date-only string to a date/time value.
