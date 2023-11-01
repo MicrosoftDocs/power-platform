@@ -32,11 +32,13 @@ This article provides details for the data types that canvas apps support. When 
 | **Currency**         | A currency value that's stored in a floating-point number. Currency values are the same as number values with currency-formatting options.                                                                                                                                                                                                      | **123**<br>**4.56**                                                                                                           |
 | **Date**             | A date without a time, in the time zone of the app's user.                                                                                                                                                                                                                                                                                      | **Date( 2019, 5, 16 )**                                                                                                       |
 | **DateTime**         | A date with a time, in the time zone of the app's user.                                                                                                                                                                                                                                                                                         | **DateTimeValue( "May 16, 2019 1:23:09 PM" )**                                                                                |
+| **Decimal**         | A number with high precision, base 10 operations, and limited range.                                                                                                                                                                                                                                                                                         | **123**<br>**Decimal( "1.2345" )**                                                                                |
+
 | **GUID**             | A [Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier).                                                                                                                                                                                                                                                    | **GUID()**<br>**GUID( "123e4567-e89b-12d3-a456-426655440000" )**                                                              |
 | **Hyperlink**        | A text string that holds a hyperlink.                                                                                                                                                                                                                                                                                                           | **"https://powerapps.microsoft.com"**                                                                                         |
 | **Image**            | A [Universal Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) text string to an image in .jpeg, .png, .svg, .gif, or other common web-image format.                                                                                                                                                        | **MyImage** added as an app resource<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
 | **Media**            | A URI text string to a video or audio recording.                                                                                                                                                                                                                                                                                                | **MyVideo** added as an app resource<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
-| **Number**           | A floating-point number.                                                                                                                                                                                                                                                                                                                        | **123**<br>**-4.567**<br>**8.903e121**                                                                                        |
+| **Number** or **Float**          | A number with standard precision, base 2 operations, and a wide range.                                                                                                                                                                                                                                                                                                                        | **123**<br>**8.903e121**<br>**1.234e200**                                                                                        |
 | **Choice**           | A choice from a set of options, backed by a number. This data type combines a localizable text label with a numeric value. The label appears in the app, and the numeric value is stored and used for comparisons.                                                                                                                              | **ThisItem.OrderStatus**                                                                                                      |
 | **Record**           | A record of data values. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](/power-apps/maker/canvas-apps/working-with-tables).                                                                                                                              | **{ Company: "Northwind Traders",<br>Staff: 35, <br>NonProfit: false }**                                                      |
 | **Record reference** | A reference to a record in a table. Such references are often used with polymorphic lookups. More information: [Working with references](/power-apps/maker/canvas-apps/working-with-references).                                                                                                                                                | **First(Accounts).Owner**                                                                                                     |
@@ -187,15 +189,72 @@ However, all data sizes are subject to the amount of available memory in the app
 
 As a best practice, hold data in memory only as long as necessary. Upload images to a database as soon as you can; download images only when the app's user requests them.
 
-## Number and Currency
+## Numbers
 
-**Number** and **Currency** data types use the [IEEE 754 double-precision floating-point standard](https://en.wikipedia.org/wiki/IEEE_754). This standard provides a very large range of numbers in which to work, from –1.79769 x 10<sup>308</sup> to 1.79769 x 10<sup>308</sup>. The smallest value that can be represented is 5 x 10<sup>–324</sup>.
+> [!NOTE]
+> Power Apps only supports **Float** today and it is the type of all numbers.  **Decimal** support will be added by the end of 2024.
 
-Canvas apps can exactly represent whole numbers (or integers) between –9,007,199,254,740,991 (–(2<sup>53</sup> – 1)) and 9,007,199,254,740,991 (2<sup>53</sup> – 1), inclusive. This range is larger than the 32-bit (or 4-byte) integer data types that databases commonly use. However, canvas apps can't represent 64-bit (or 8-byte) integer data types. You might want to store the number in a text field or use a calculated column to make a copy of the number in a text field, so that it's mapped into a **Text** data type in the canvas app. In this manner, you can hold, display, and enter these values, as well as comparing them to determine whether they're equal; however, you can't perform numerical calculations on them in this form.
+Power Fx supports two kinds of numbers: **Decimal** and **Float** (with synonyms **Number** and **Currency**).
+
+**Decimal** is best for most business calculations. It can accurately represent numbers in base 10 meaning that `0.1` can be exactly represented and will not be prone to rounding errors during calculations. It has a large enough range for any business need, up to 10<sup>28</sup> with up to 28 digits of precision.  **Decimal** is the default numeric data type for most Power Fx hosts, used if one simply writes `2*2`.
+
+**Float** is best for scientific calculations. It can represent numbers in a much larger range, up to 10<sup>308</sup>. Precision is limited to 15 decimal places and math is based on base 2 so it cannot represent some common decimal values precisely. **Float** also has higher performance and is favored if that is a factor and precision is not critical.
+
+### Decimal numbers
+
+The **Decimal** data type most often uses the [.NET decimal data type](https://learn.microsoft.com/en-us/dotnet/api/system.decimal). Some hosts, such as Dataverse formula columns that are run in SQL Serer, use the SQL Server decimal data type. 
+
+**Decimal** does math the way you learned in school, using base 10 digits.  That is very important to avoid rounding errors from very small differences that can accumulate when using base 2 math (as used by **Float**).
+
+The range is from positive 79,228,162,514,264,337,593,543,950,335 to negative 79,228,162,514,264,337,593,543,950,335. The decimal separator can be placed anywhere within these numbers, providing up to 28 digits of precision, and still be precisely represented. For example, 79,228,162,514,264.337593543950335 can be exactly represented, as can 7.9228162514264337593543950335.
+
+### Floating point numbers
+
+The **Float** data type, also known as **Number** or **Currency**, uses the [IEEE 754 double-precision floating-point standard](https://en.wikipedia.org/wiki/IEEE_754). This standard provides a very large range of numbers in which to work, from –1.79769 x 10<sup>308</sup> to 1.79769 x 10<sup>308</sup>. The smallest value that can be represented is 5 x 10<sup>–324</sup>.
+
+**Float** can exactly represent whole numbers (or integers) between –9,007,199,254,740,991 (–(2<sup>53</sup> – 1)) and 9,007,199,254,740,991 (2<sup>53</sup> – 1), inclusive. This range is larger than the 32-bit (or 4-byte) integer data types that databases commonly use. However, canvas apps can't represent 64-bit (or 8-byte) integer data types. You might want to store the number in a text field or use a calculated column to make a copy of the number in a text field, so that it's mapped into a **Text** data type in the canvas app. In this manner, you can hold, display, and enter these values, as well as comparing them to determine whether they're equal; however, you can't perform numerical calculations on them in this form.
 
 Floating-point arithmetic is approximate, so it can sometimes give unexpected results with many documented examples. You might expect the formula **55 / 100 \* 100** to return exactly 55 and **(55 / 100 \* 100) - 55** to return exactly zero. However, the latter formula returns 7.1054 x 10<sup>–15</sup>, which is very small but not zero. That tiny difference doesn't normally cause a problem, and the app rounds it away when showing the result. However, small differences can compound in subsequent calculations and appear to give the wrong answer.
 
 Database systems often store currencies and perform calculations by using decimal math, which offers a smaller range but greater control over the precision. By default, canvas apps map currencies in and out of floating-point values; therefore, the result might differ from calculations that are done in a native decimal data type. If this type of discrepancy will cause problems, you might want to work with these values as **Text**, just as you might with large integers described earlier in this section.
+
+### Defaults and conversions
+
+> [!NOTE]
+> Power Apps only supports **Float** today and it is the type of all numbers.  **Decimal** support will be added by the end of 2024.
+
+Most Power Fx hosts use **Decimal** by default.  This impacts:
+- Literal numbers in formulas.  The number `1.234` will be interpreted as a **Decimal** value.  For example, the formula `1.234 * 2` will interpret the `1.234` and `2` as **Decimal** and return a **Decimal** result.
+- Value function.  `Value( "1.234" )` will return a **Decimal** value.  For example, the formula `Value( "1.234" ) * 2` the **Value** function will interpret the contents of the text string `"1.234"` as a **Decimal**.
+
+To work with **Float** values, the **Float** function is used.  Extending the example above, `Float( 1.234 )` will convert the **Decimal** `1.234` to **Float**.  **Float** can also be used as a replacement for **Value** to convert a string containing a floating point number such as `Float( "1.234" )` to a **Float** value, which is required if the number can't be represented as a **Decimal**.
+
+In summary:
+
+| Usage                            | **Decimal** | **Float** |
+|----------------------------------|-------------|-----------|
+| Literal numbers in formulas      | `1.234` | `Float( 1.234 )`<br>`Float( "1.234" )` |
+| Conversion from text string      | `Value( "1.234" )`<br>`Decimal( "1.234" )` | `Float( "1.234" )` |
+| Conversion between numeric types | `Decimal( float )` | `Float( decimal )` |
+| Conversion to text string        | `Text( decimal )` | `Text( float )` |
+ 
+### Mixing numeric types
+
+**Float** and **Decimal** values can be freely mixed.  When mixed, **Decimal** values are converted to **Float** values due to the larger range.  Since this can result in a loss of precision, it is important to not mix the two needlessly.  Since **Decimal** is the default literal data type and most numeric functions will preserve the type, it is relatively easy to avoid moving to **Float** without desiring it.
+
+For example, consider the following calculation using `pac power-fx repl` after installing the [Power Platform CLI](../developer/cli/introduction.md).  Since both numbers are **Decimal**, the calculation is done in **Decimal**, and the result retains full precision:
+
+```powerapps-dot
+>> 1.0000000000000000000000000001 * 2
+2.0000000000000000000000000002
+```
+
+If instead, the second operand was changed to **Float** then the entire calculation would be done in **Float** and the tiny fractional part would be lost:
+
+```powerapps-dot
+>> 1.0000000000000000000000000001 * Float(2)
+2
+```
 
 ## Date, Time, and DateTime
 
