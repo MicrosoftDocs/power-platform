@@ -35,10 +35,7 @@ _SAP Solution Administrator_ is a model-driven app that allows the admin to conf
 
 :::image type="content" source="media/extend-model-apps-dataverse/sap-admin-app.png" alt-text="Monitor errors in the procurement solutions":::
 
-More information:
-
-- [What are model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/model-driven-app-overview)
-- [Understand model-driven app components](/power-apps/maker/model-driven-apps/model-driven-app-components)
+More information: [What are model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/model-driven-app-overview), [Understand model-driven app components](/power-apps/maker/model-driven-apps/model-driven-app-components)
 
 ## Dataverse tables
 
@@ -55,10 +52,10 @@ All SAP transactional data is sourced from your SAP system and not stored in Pow
 
 More information: [What is Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro)
 
-### Next steps
+## Next steps
 
 [Extend cloud flows](extend-cloud-flows.md)
 
-### See also
+## See also
 
 [Get started with the SAP Procurement template](get-started.md)

@@ -29,12 +29,12 @@ Download the SAP Procurement template files from GitHub and install them in the 
 
 > [!IMPORTANT]
 >
-> The template files contain two solution templates. You need to install both to your prepared environment:
+> The template files contain two solutions. You need to install both to your prepared environment:
 >
 > - **SAP Base solution** contains the base Power Platform components required for the SAP Procurement solutions. The base solution also supports other SAP-related solutions that will be released later.
-> - **SAP Procurement solution template** contains Power Platform components specific to the procure-to-pay process domain.
+> - **SAP Procurement solution** contains Power Platform components specific to the procure-to-pay process domain.
 
-## Install the SAP Base solution template
+## Install the SAP Base solution
 
 1. In the _Power Apps Maker Portal_, select the developer (sandbox) _environment_ that you want to install the solutions in and then select the **Solutions** menu option.
 
@@ -48,7 +48,7 @@ Download the SAP Procurement template files from GitHub and install them in the 
 >
 > It may take several minutes for the solution to import.
 
-## Install the SAP Procurement solution template
+## Install the SAP Procurement solution
 
 1. After the **SAP Base** solution successfully installs, navigate back to the **Solutions** menu option.
 
@@ -63,4 +63,4 @@ Download the SAP Procurement template files from GitHub and install them in the 
 
 ## See also
 
-- [Get started with the SAP Procurement template](get-started.md)
+[Get started with the SAP Procurement template](get-started.md)

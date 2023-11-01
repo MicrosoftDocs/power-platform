@@ -13,7 +13,7 @@ ms.subservice: solution-templates
 
 # Install and configure the Awards and Recognition template
 
-As a Power Platform admin, you can access, install, configure, and deploy the Awards and Recognition template for your organization. To get started, follow the steps to install and configure the Awards and Recognition template.
+As a Power Platform admin, you install, configure, and deploy the Awards and Recognition template's solutions for your organization. To get started, follow the steps.
 
 ## Step 1: Create connections
 
@@ -32,7 +32,13 @@ You can access the template on AppSource and install into the Power Platform env
 
 1. Agree to the Terms and Privacy Statements by checking the boxes.
 
-1. Select **Install**. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
+1. Select **Install**. You'll be taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
+
+> [!IMPORTANT]
+> Two solutions will always be installed in your environment:
+>
+> - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Awards and Recognition**. Contains all the components needed to set up an Awards and Recognition program within an organization.
 
 > [!TIP]
 > You can log your questions and get support for the Awards and Recognition template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.

@@ -25,7 +25,7 @@ ms.subservice: solution-templates
 
 Environment variables are solution components that store parameter keys and values, which then serve as input to various other application objects found in Power Automate flows and Power Apps. Enterprise systems often have multiple connection parameters, and manually entering the parameters into each component can be redundant and time-consuming.
 
-The SAP Procurement solution template uses environment variables within cloud flows to centrally manage and set key properties on the [SAP ERP connector](/connectors/saperp/) flow action steps.
+The SAP Procurement template uses environment variables within cloud flows to centrally manage and set key properties on the [SAP ERP connector](/connectors/saperp/) flow action steps.
 
 > [!TIP]
 > As a best practice, configure and manage environment variables as part of your [application lifecycle management (ALM)](/power-platform/alm/overview-alm) strategy. Set both default and current environment values as you migrate and manage the various solution files across your environments.
@@ -34,7 +34,7 @@ Learn more: [Use environment variables in Power Automate solution cloud flows](/
 
 ## Configure environment variables at time of installation
 
-The _SAP Base_ solution template contains five environment variables that set the SAP connection parameters used in the cloud flows.
+The template's _SAP Base_ solution contains five environment variables that set the SAP connection parameters used in the cloud flows.
 
 When you install the SAP Procurement solution template, you'll be prompted to enter values for four of the five environment variables that don't have a default value. You can configure the environment variables to your local needs.
 
@@ -119,14 +119,11 @@ Here are some example connection strings:
 } 
 ```
 
-More information:
-
-- [Customizing solutions](customize-solutions.md)
-- [Create an environment variable in a solution](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution) using the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance) or for any local environment variable need.
+More information: [Customizing solutions](customize-solutions.md) and [Create an environment variable in a solution](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution) using the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance) or for any local environment variable need.
 
 ## Reuse the environment variable in a flow
 
-The environment variables you set up are now available in a flow's dynamic content selector. Go into a cloud flow in the SAP Procurement solution to select the environment variables to reuse in [SAP actions](/connectors/sap/#actions).
+The environment variables you set up are now available in a flow's dynamic content selector. Go into a cloud flow in the _SAP Procurement_ solution to select the environment variables to reuse in [SAP actions](/connectors/sap/#actions).
 
 > [!IMPORTANT]
 >
@@ -141,10 +138,8 @@ The environment variables you set up are now available in a flow's dynamic conte
 
 ## Next steps
 
-- [Configure security groups](configure-security-groups.md)
-- [Apply seed data](apply-seed-data.md)
+[Configure security groups](configure-security-groups.md)
 
-### See also
+## See also
 
-- [Overview](../overview.md)
-- [Get started](get-started.md)
+[Get started with the SAP Procurement template](get-started.md)

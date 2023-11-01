@@ -13,7 +13,7 @@ ms.subservice: solution-templates
 
 # Install and configure the Employee Kudos template
 
-Take the following steps to install the Employee Kudos template.
+As a Power Platform admin, you install, configure, and deploy the Employee Kudos template's solutions for your organization. To get started, follow the steps.
 
 ## Step 1: Create connections
 
@@ -29,16 +29,20 @@ If you want to create the connections in advance, go to **Connections**, and sel
 
 ## Step 2: Install from AppSource
 
-Import the Kudos template into the environment.
+Import the Kudos template into an environment you have prepared for it.
 
 1. Go to the [Kudos template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
 1. Select the environment that you want to install the template into.
 
    :::image type="content" source="media/install/appsource-install-template.png" alt-text="Select the environment in which to install the template.":::
 1. Agree to the Terms and Privacy statements by selecting the boxes.
-1. Select **Install**. You'll be taken to a screen where you can view the installation status.
+1. Select **Install**. You'll be taken to a screen where you can view the installation status. Once the installation is complete, the status shows as _Installed_.
 
-After the installation is complete, the status shows as _Installed_.
+> [!IMPORTANT]
+> Two solutions will always be installed in your environment:
+>
+> - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Employee Kudos**. Contains all the components needed to enable the implementation of an Employee Kudos program within an organization.
 
 > [!TIP]
 > You can log your questions and get support for the Employee Kudos template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.

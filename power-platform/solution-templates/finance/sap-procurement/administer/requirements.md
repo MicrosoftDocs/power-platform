@@ -21,7 +21,7 @@ ms.subservice: solution-templates
 
 # Requirements to integrate SAP with Power Platform
 
-Review the requirements, identify opportunities, and develop a plan of action that best suits your organization's needs.
+Review the requirements with your team so you can identify opportunities and develop a plan of action that best suits your organization's needs.
 
 ## Power Platform licensing
 
@@ -54,17 +54,14 @@ Set up an on-premises data gateway on your virtual machine or server along with 
 
 The on-premises data gateway set up with the additional components on your machine or server work together to support the SAP ERP connector.
 
-### Admins
+### Privileges
 
 Be sure admins with the necessary privileges are available to coordinate and set up the on-premises data gateway along with the other components on the virtual machine or server:
 
-- A Microsoft Entra ID (Azure AD) Global or Gateway (default user permission for anyone performing the install) admin
+- A Microsoft Entra ID Global or Gateway (default user permission for anyone performing the install) admin
 - An SAP super admin (S-User)
 
-Go to these links to learn more about the on-premises data gateway:
-
-- [On-premises and VNet data gateways docs](/data-integration/gateway/).
-- [On-premises data gateway management for Power Platform](/power-platform/admin/onpremises-data-gateway-management)
+More information: [On-premises and VNet data gateways](/data-integration/gateway/), [On-premises data gateway management for Power Platform](/power-platform/admin/onpremises-data-gateway-management), [Set up on-premises data gateway for SAP integration with Power Platform](set-up-gateway.md)
 
 ### Downloads
 

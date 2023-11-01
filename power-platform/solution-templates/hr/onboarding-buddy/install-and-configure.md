@@ -13,13 +13,7 @@ ms.subservice: solution-templates
 
 # Install and configure the Onboarding Buddy template
 
-As a Power Platform admin, you install, configure, and deploy the Onboarding Buddy template for your organization.
-
-> [!IMPORTANT]
-> Two solutions will always be installed in your environment:
->
-> - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-> - **Onboarding Buddy**. Contains all the components needed to enable the implementation of an Onboarding Buddy program within an organization.
+As a Power Platform admin, you install, configure, and deploy the Onboarding Buddy template's solutions for your organization. To get started, follow the steps.
 
 To get started, follow the steps to install and configure the Onboarding Buddy template.
 
@@ -44,6 +38,12 @@ Access the template on AppSource and install the template's solutions into a Pow
 - Select the environment that you want to install the template into.
 - Agree to the Terms and Privacy Statements by checking the boxes.
 - Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status updates to *Installed*.
+
+> [!IMPORTANT]
+> Two solutions will always be installed in your environment:
+>
+> - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Onboarding Buddy**. Contains all the components needed to enable the implementation of an Onboarding Buddy program within an organization.
 
 > [!TIP]
 > You can log your questions and get support for the Onboarding Buddy template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.

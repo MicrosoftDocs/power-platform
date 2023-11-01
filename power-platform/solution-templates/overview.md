@@ -1,5 +1,5 @@
 ---
-title: Solution templates for Power Platform
+title: Enterprise templates for Power Platform
 description: Learn how solution templates for Power Platform can help you build, extend, and deploy solutions quickly.
 author: kaagar
 ms.author: kaagar
@@ -14,13 +14,13 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Templates for Power Platform
+# Enterprise templates for Power Platform
 
-Templates for [Power Platform](/power-platform/) are solutions that serve as starting points for specific enterprise-level use cases and outcomes. They accelerate time to value by allowing you to quickly digitize new processes or extend your technology investments in enterprise resource planning (ERP), customer relationship management (CRM), and human resource (HR) systems.
+Enterprise templates for [Power Platform](/power-platform/) are solutions that serve as starting points for specific use cases and outcomes. They accelerate time to value by allowing you to quickly digitize new processes or extend your technology investments in enterprise resource planning (ERP), customer relationship management (CRM), and human resource (HR) systems.
 
-The templates are built for centralized teams to install and extend locally. You can organize an internal information technology (IT) and business operations team or select an external partner team to implement a Power Platform template project.
+The templates are built for centralized teams to locally install, extend, and deploy. You can organize an internal information technology (IT) and business operations team or select an external partner team to implement a Power Platform template project.
 
-Templates for Power Platform help you:
+Enterprise templates for Power Platform help you:
 
 - See how your system's data can be easily accessed and organized in a streamlined view in Power Apps.
 - Realize how workflows can be automated by Power Automate cloud flows operating behind the scenes.
@@ -31,9 +31,9 @@ Additionally, you can:
 - Integrate your system of record with other features, applications, and systems
 - Incorporate other controls over how your users interact with data
 
-## Available templates
+## Available enterprise templates
 
-Templates for Power Platform are available on [Microsoft AppSource](https://appsource.microsoft.com/en-US/?exp=ubp8).
+Enterprise templates for Power Platform are available on [Microsoft AppSource](https://appsource.microsoft.com/en-US/?exp=ubp8).
 
 Be sure to check back often for new templates that become available.
 
@@ -54,9 +54,9 @@ Be sure to check back often for new templates that become available.
    :::column-end:::
 :::row-end:::
 
-## Benefits of using templates
+## Benefits of using enterprise templates
 
-Implementing enterprise software use cases can be time-consuming and expensive.  Templates for Power Platform provide a foundation for you to start from. You can use the full potential of Power Platform to extend the templates by connecting workflows across more systems of record and digitizing manually intensive processes.
+Implementing enterprise software use cases can be time consuming and expensive.  An enterprise template provides a foundation to help you quickly get started. You can use the full potential of Power Platform to extend the templates by connecting workflows across more systems of record and digitizing manually intensive processes.
 
 Templates for Power Platform offer the following benefits:
 
@@ -75,21 +75,16 @@ Templates for Power Platform offer the following benefits:
   - Meet users where they are, whether in Teams or in other collaborative experiences.
 
 > [!NOTE]
-> Templates for Power Platform require Power Platform premium licensing.
+> Enterprise templates for Power Platform require Power Platform premium licensing.
 > Go to [**Licensing overview for Microsoft Power Platform**](/power-platform/admin/pricing-billing-skus) for more information.
 
 ## Get started
 
-Learn how to get started working with the templates for Power Platform:
-
-- [Get started with SAP Procurement template](finance/sap-procurement/administer/get-started.md)
-- [Install and configure the Employee Kudos template](hr/employee-kudos/install-and-configure.md)
-- [Install and configure the Awards and Recognition template](hr/awards-and-recognition/install-and-configure.md)
-- [Install and configure the Onboarding Buddy template](hr/onboarding-buddy/install-and-configure.md)
+Learn how to get started working with Enterprise templates for Power Platform. More information: [Get started with SAP Procurement template](finance/sap-procurement/administer/get-started.md), [Install and configure the Employee Kudos template](hr/employee-kudos/install-and-configure.md), [Install and configure the Awards and Recognition template](hr/awards-and-recognition/install-and-configure.md), [Install and configure the Onboarding Buddy template](hr/onboarding-buddy/install-and-configure.md)
 
 ## Support
 
-Templates for Power Platform are published _as is_. However, we do provide template support to help you be successful.
+Enterprise templates for Power Platform are published _as is_. However, we do provide template support to help you be successful.
 
 Support can be accessed at [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) on GitHub. It's a dedicated support space for you to:
 

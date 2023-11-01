@@ -73,12 +73,15 @@ Because the connector maintains an internal state of the connection to SAP, you 
 1. Go to the [**Settings**](/power-platform/admin/onpremises-data-gateway-management#settings) panel in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
 1. Make sure the checkbox next to _Distribute requests across all active gateways in this cluster_ **remains unchecked** on the on-premises data Settings panel.
 
-More information:
+## Related content
 
-- [On-premises data gateways documentation](/data-integration/gateway/)
-- [Power Platform on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management)
-- [Manage on-premises data gateway high-availability clusters and load balancing](/data-integration/gateway/service-gateway-high-availability-clusters)
-- [Data source management](/power-platform/admin/onpremises-data-gateway-source-management)
+[On-premises data gateways documentation](/data-integration/gateway/)
+
+[Power Platform on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management)
+
+[Manage on-premises data gateway high-availability clusters and load balancing](/data-integration/gateway/service-gateway-high-availability-clusters)
+
+[Data source management](/power-platform/admin/onpremises-data-gateway-source-management)
 
 ## Next steps
 

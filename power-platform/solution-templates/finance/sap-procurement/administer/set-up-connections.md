@@ -61,7 +61,7 @@ To set up [connections](/connectors/connectors):
 
 A _connection reference_ is a solution component that contains a reference to a connection about a specific connector.
 
-All required connections are referenced by _Connection References_ in the SAP Procurement solution template cloud flows. Connection references provide a way to set connections on cloud flow action steps when migrating solutions across environments without modifying the flow and creating an unnecessary solution layer.
+All required connections are referenced by _Connection References_ in the SAP Procurement solution cloud flows. Connection references provide a way to set connections on cloud flow action steps when migrating solutions across environments without modifying the flow and creating an unnecessary solution layer.
 
 > [!NOTE]
 > It's a best practice to always use connection references in both cloud flows and apps to support your ALM strategy.
@@ -92,10 +92,10 @@ The two connection references contained in the SAP Procurement solution are:
 
 [Manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
 
-### Next steps
+## Next steps
 
 [Configure security groups](configure-security-groups.md)
 
-### See also
+## See also
 
 [Get started with the SAP Procurement template](get-started.md)

@@ -27,7 +27,7 @@ Data seeding is the process of populating a database with an initial set of data
 
 ## Manage menu options
 
-You can manage the menu options for one or more of the following apps that are part of the SAP Procurement solution template:
+You can manage the menu options for one or more of the following apps that are part of the SAP Procurement template:
 
 - SAP Vendor Management
 - SAP Purchase Requisitions
@@ -146,7 +146,7 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 - [Monitor errors](monitor-errors.md)
 - [Customize solutions](customize-solutions.md)
 
-### See also
+## See also
 
 - [Overview](../overview.md)
 - [Get started](get-started.md)

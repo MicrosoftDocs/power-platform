@@ -14,7 +14,7 @@ ms.subservice: solution-templates
 
 # Get started using the Awards and Recognition app
 
-As a user, use the Awards and Recognition app to submit nominations to recognize individual co-workers and teams, view your own recognitions, and update your user settings.
+As a user, use the Awards and Recognition app to submit nominations to recognize individual coworkers and teams, view your own recognitions, and update your user settings.
 
 Some users also have the ability to update the apps language setting if the **Employee Experience Localizer** security role is assigned to them by a Power Platform admin.
 
@@ -38,35 +38,35 @@ Take these steps to create a new nomination:
 
     - **Multiple People**. You're nominating more than one individual as a group for this award.  
 
-    - **Team**. You're nominating a pre-defined team for this award.
+    - **Team**. You're nominating a predefined team for this award.
 
 1. Search and select the *nominees* from the drop-down list. Select **Next**.
 
 1. Make a case for the nomination by providing a rationale for why the nominee or team deserves to win the award. Select **Next**.
 
-1. If assessment ratings are defined for this award, go to the *Star Ratings* screen where you'll rate each assessment area and then select **Next** to review and submit the nomination. If there are no assessment ratings to give, you'll go directly to the *Review & Submit* screen.
+1. If assessment ratings are defined for this award, go to the *Star Ratings* screen to rate each assessment area and then select **Next** to review and submit the nomination. If there are no assessment ratings to give, go directly to the *Review & Submit* screen.
 
 1. On the *Review & Submit* screen, review the award selected, nominee or team, rationale, and ratings you provided. If everything looks good, select **Submit**. If not, select the **back arrow** on the menu bar to change the various elements of the nomination until you're satisfied. Once complete, proceed back to the *Review & Submit* screen to select **Submit**.
 
-## View nominations I've submitted
+## View nominations you submitted
 
-To view nominations you've submitted in the past, take these steps:
+To view nominations you submitted in the past, take these steps:
 
 1. From the main screen of the Awards and Recognition app, select **Recent Activity**. This takes you to the *My Recognitions* screen.
 
 1. Select **Nominations I've Submitted** if it's not already defaulted to that view.
 
-1. Review the nominations you've submitted in the past by selecting the *arrow* to the right of each choice.
+1. Review the nominations you submitted in the past by selecting the *arrow* to the right of each choice.
 
-## View recognitions I've received
+## View recognitions you received
 
-To view approved awards that you've received, take these steps:
+To view approved awards that you received, take these steps:
 
 1. Select **Recent Activity**. This takes you to the *My Recognitions* screen.
 
 1. Select **Recognitions Received**.
 
-1. Review the nominations you've received in the past by selecting the **arrow** to the right of each choice. Use the search and filter capability to narrow down results if there are many records.
+1. Review the nominations you received in the past by selecting the **arrow** to the right of each choice. Use the search and filter capability to narrow down results if there are many records.
 
 > [!TIP]
 >

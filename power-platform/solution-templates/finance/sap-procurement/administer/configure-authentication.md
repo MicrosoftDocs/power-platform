@@ -126,20 +126,26 @@ SAP user accounts need to access the `RFC_Metadata` function group and the respe
 |Read Table action   | Either `RFC BBP_RFC_READ_TABLE` or `RFC_READ_TABLE` |
 |Grant strict minimum access to SAP server for your SAP connection  | `RFC_METADATA_GET` and `RFC_METADATA_GET_TIMESTAMP`|
 
-More information on setup and configuration:
+## Related content
 
-- [SAP Single Sign-On](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON)
-- [Secure Login for SAP Single Sign-On Implementation Guide](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON/df185fd53bb645b1bd99284ee4e4a750/631b1669678d41d79d94601c238e218b.html)
-- [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
-- [SAP ERP connector](/connectors/saperp/)
-- [Azure Logic Apps SAP connector](/azure/logic-apps/logic-apps-using-sap-connector)
-- [Data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention)
-- [Hybrid architecture design](/azure/architecture/hybrid/hybrid-start-here)
+[SAP Single Sign-On](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON)
+
+[Secure Login for SAP Single Sign-On Implementation Guide](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON/df185fd53bb645b1bd99284ee4e4a750/631b1669678d41d79d94601c238e218b.html)
+
+[SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
+
+[SAP ERP connector](/connectors/saperp/)
+
+[Azure Logic Apps SAP connector](/azure/logic-apps/logic-apps-using-sap-connector)
+
+[Data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention)
+
+[Hybrid architecture design](/azure/architecture/hybrid/hybrid-start-here)
 
 ## Next steps
 
 [Install solutions](install.md)
 
-### See also
+## See also
 
 [Get started with the SAP Procurement template](get-started.md)
