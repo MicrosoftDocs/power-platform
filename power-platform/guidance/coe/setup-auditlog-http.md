@@ -37,7 +37,7 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
-1. Go to **Microsoft Entra** > **App registrations**.
+1. Go to **Microsoft Entra ID** > **App registrations**.
    :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the Microsoft Entra app registration.":::
 
 1. Select **+ New Registration**.
