@@ -29,7 +29,7 @@ The **EDate** and **EOMonth** functions move a Date/Time forward or backward by 
 
 After the month adjustment, **EDate** leaves the day portion unmodified unless the new value would be beyond the end of the month. For example, moving July 31 backward by one month yields June 30. Use **EDate** to calculate the maturity dates or due dates that fall on the same day of the month as the date of issue.
 
-After the month adjustment, **EOMonth** changes the day potion to the last day of the resulting month.  Use **EOMonth** to calculate the maturity dates or due dates that fall on the last day of the month. **EOMonth** can be used to move a Date/Time to the end of the month by adding zero months.
+After the month adjustment, **EOMonth** changes the day potion to the last day of the resulting month. Use **EOMonth** to calculate the maturity dates or due dates that fall on the last day of the month. **EOMonth** can be used to move a Date/Time to the end of the month by adding zero months.
 
 All functions return a Date value. No time component is included, even if one was present in the input Date/Time.
 
@@ -40,12 +40,12 @@ See [working with dates and times](/power-apps/maker/canvas-apps/show-text-dates
 **EDate**( _DateTime_, _NumberOfMonths_ )
 
 - _DateTime_ - Required. Date/Time value to operate on.
-- _NumberOfMonths_ - Required. Number of months to add or subtract to _DateTime_.  A positive value yields a future date, a negative value yields a past date, and zero leaves the entire input _DateTime_ unchanged.
+- _NumberOfMonths_ - Required. Number of months to add or subtract to _DateTime_. A positive value yields a future date, a negative value yields a past date, and zero leaves the entire input _DateTime_ unchanged.
 
 **EOMonth**( _DateTime_, _NumberOfMonths_ )
 
 - _DateTime_ - Required. Date/Time value to operate on.
-- _NumberOfMonths_ - Required. Number of months to add or subtract to _DateTime_.  A positive value yields a future date, a negative value yields a past date, and zero changes the day portion of the input _DateTime_ to the end of the month.
+- _NumberOfMonths_ - Required. Number of months to add or subtract to _DateTime_. A positive value yields a future date, a negative value yields a past date, and zero changes the day portion of the input _DateTime_ to the end of the month.
 
 ## Examples
 
