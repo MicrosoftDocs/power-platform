@@ -30,15 +30,23 @@ Project “Sophia” offers has an AI- powered, user-friendly research canvas an
 > - Project “Sophia” uses Microsoft Bing and your research queries will be directed to Bing, which is governed by the Bing section of the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
 > - This capability may be subject to usage limits or capacity throttling
 
-You can interact with Project "Sophia" using the **Exploratory** and **Guides** option. The following screenshot provides more details about the interaction: 
+## Onboarding screen
+
+The first time that you sign in, you'll see the **Onboarding** screen where you can interact with Project "Sophia" using the **Exploratory** and **Guides** option. The following screenshot provides more details about the interaction: 
 
 > [!div class="mx-imgBorder"]
 > ![Project "Sophia" main screen.](media/ps-main-screen.png)
+
+After your first sign in, to get back to the **Onboarding** screen, go to the Home screen and then select **Go** on the **Onboarding** tile.
 
 Legend
 
 1. **Exploratory**: Offers a blank canvas where you can explore and ask questions related to your business. Or you can upload business data and ask questions about the data. Project Sophia uses the uploaded data to generate insights and suggests next actions.
 2. **Guides**: Helps you through the process of gathering relevant data to tackle specific role-based business tasks. For preview the account planning guide is supported. Guides for sales territory planning, supply chain optimization, and fiscal year close are coming soon.
 3. **Question**: Enter your question in the text box and then select **Generate**.
-4. **Blueprint**: The results that you get when you ask a question or upload data and then select **Generate**. You can also generate a new blueprint by selecting suggested next step.
-5. **Block**: Example of the different blocks of content that is generate in a blueprint.   
+4. **Blueprint**: The results that are generated when you ask a question or upload data. You can also generate a new blueprint by selecting suggested next step.
+5. **Block**: Example of the different blocks of content that is generate in a blueprint.
+
+## Home screen
+
+The next time you sign in to Project "Sophia" you'll be taken to the Home screen. The following screenshot shows how to navigate the Home screen.
