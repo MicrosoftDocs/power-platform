@@ -202,7 +202,7 @@ Power Fx supports two kinds of numbers: **Decimal** and **Float** (with synonyms
 
 ### Decimal numbers
 
-The **Decimal** data type most often uses the [.NET decimal data type](https://learn.microsoft.com/en-us/dotnet/api/system.decimal). Some hosts, such as Dataverse formula columns that are run in SQL Serer, use the SQL Server decimal data type. 
+The **Decimal** data type most often uses the [.NET decimal data type](xref:System.Decimal). Some hosts, such as Dataverse formula columns that are run in SQL Serer, use the SQL Server decimal data type. 
 
 **Decimal** does math the way you learned in school, using base 10 digits.  That is very important to avoid rounding errors from very small differences that can accumulate when using base 2 math (as used by **Float**).
 
