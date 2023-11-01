@@ -25,8 +25,8 @@ The IP firewall helps to protect your organizational data by limiting user acces
 > - The IP firewall feature only supports OData endpoints for accessing Dataverse data. Support for [TDS endpoints](settings-features.md#tds-endpoint) will be included in future release.
 
 > [!IMPORTANT]
-> This is a preview feature.
-> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Key benefits
 
