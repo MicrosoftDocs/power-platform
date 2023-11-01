@@ -53,7 +53,7 @@ If the input value is out of range or includes invalid hexadecimal characters in
 | `Hex2Dec( "fffffff373" )` | -3213 |
 | `Hex2Dec( "ffffffffff" )` | -1 |
 | `Hex2Dec( "ffffffffffff" )` | *error* (out of range) |
-| `Hex2Dec( "43j" )` | *error (invalid hexadecimal character) |
+| `Hex2Dec( "43j" )` | *error* (invalid hexadecimal character) |
 | `Hex2Dec( [ "A", "12", "FFFF" ] )` | [ 10, 18, 65535 ] |
 | `Hex2Dec( [ "3", "E", "I", "B" ] )` | [ 3, 14, *error* (invalid hexadecimal character), 11 ]
 
