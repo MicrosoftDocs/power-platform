@@ -1,4 +1,4 @@
-- name: Solution templates for Power Platform
+- name: Enterprise templates for Power Platform
   href: overview.md
 - name: Finance - SAP Procurement
   items:
@@ -7,6 +7,7 @@
   - name: Administer
     items:
     - name: Get started
+      displayName: Get started with the SAP Procurement template
       href: finance/sap-procurement/administer/get-started.md
     - name: Requirements
       href: finance/sap-procurement/administer/requirements.md

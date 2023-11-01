@@ -1,6 +1,6 @@
 ---
 title: Manage the Employee Kudos app
-description: Get started managing the Employee Kudos app.
+description: Get started managing the Employee Kudos app. Learn how to create custom Kudos types, opt out users, update the language settings.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
