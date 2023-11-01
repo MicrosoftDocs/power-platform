@@ -49,4 +49,18 @@ Legend
 
 ## Home screen
 
-The next time you sign in to Project "Sophia" you'll be taken to the Home screen. The following screenshot shows how to navigate the Home screen.
+After your initial sign the time time you that you sign in to Project "Sophia" you'll be take to the Home screen. The following screenshot shows how to navigate the Home screen.
+
+
+> [!div class="mx-imgBorder"]
+> ![Project "Sophia" main screen.](media/ps-home-screen.png)
+
+Legend
+
+1. **Home**: Takes you to the Home screen, which is shown this the screenshot.
+2. **New workspace**: Open a blank canvas where you can explore and ask questions related to your business. Or you can upload business data and ask questions about the data. Everytime you ask a questoin a workspace is created.
+3. **Guides**: Helps you through the process of gathering relevant data to tackle specific role-based business tasks. For preview the account planning guide is supported. Guides for sales territory planning, supply chain optimization, and fiscal year close are coming soon.
+4. **Documentation**: Access online help documentation.
+5. **Onboarding**: Select **Go** to go to the [**Onboarding**](overview.md#onboarding-screen) screenn
+6. **Workspace**: When you ask Project "Sophia" a question or upload data and inquire about the data, a workspace is generated. You can access all of your workspaces from the Home screen.
+7. **Workspace name**: The name of your workspace. The default title of your workspace is **Untitled**. Select the default title to rename it.
