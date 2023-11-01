@@ -1,12 +1,12 @@
 ---
-title: Hex2Dec and Dec2Hex functions in Power Fx
+title: Hex2Dec and Dec2Hex functions
 description: Reference information including syntax and examples for the Hex2Dec and Dec2Hex functions in Power Fx.
 author: gregli-msft
 manager: kvivek
 ms.subservice: power-fx
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: nabuthuk
+ms.reviewer: mkaur
 ms.date: 11/01/2023
 ms.author: gregli
 search.audienceType: 
@@ -14,7 +14,9 @@ search.audienceType:
 search.app: 
   - PowerApps
 ---
-# Dec2Hex and Hex2Dec functions in Power Fx
+# Dec2Hex and Hex2Dec functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps
 
 Convert between hexadecimal text strings and numbers.
 
@@ -28,14 +30,14 @@ Both these functions work with a 40 bit, two's-complement, whole number. The ran
 
 If you pass a single number or text string to these functions, the return value is a single result.  If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.  
 
-If the input value is out of range or includes invalid hexadecimal characters in the case of **Hex2Dec**, an **ErrorKind.Numeric** error is returned.  In the case of a single column table, the error will be embedded in the output table.
+If the input value is out of range or includes invalid hexadecimal characters in the case of **Hex2Dec**, an **ErrorKind.Numeric** error is returned.  In the case of a single column table, the error is embedded in the output table.
 
 ## Syntax
 
 **Dec2Hex**( *Number* [, *Places*] )
 
 - *Number* - Required.  Number to convert to hexadecimal.
-- *Places* - Optional.  The number of characters to use if the number is positive. If *Places* is omitted, **Dec2Hex** uses the minimum number of characters necessary. If this parameter is provided, and the result does not fit in the space provided, an **ErrorKind.Numeric** error is returned.  *Places* is ignored if the number to convert is negative.
+- *Places* - Optional.  The number of characters to use if the number is positive. If *Places* is omitted, **Dec2Hex** uses the minimum number of characters necessary. If this parameter is provided, and the result doesn't fit in the space provided, an **ErrorKind.Numeric** error is returned.  *Places* is ignored if the number to convert is negative.
 
 **Hex2Dec**( *HexString* )
 
