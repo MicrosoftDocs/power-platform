@@ -70,7 +70,7 @@ coe alm generate install -o quickstart.json
 coe alm install -f quickstart.json
 ```
 
-If you're prompted to create an HTTP with Microsoft Entra ID (AD) connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Microsoft Entra Resource URI**.
+If you're prompted to create an HTTP with Microsoft Entra ID connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Microsoft Entra Resource URI**.
 
 More information: [CoE ALM generate install](https://aka.ms/coe-cli/help/alm/generate/install)
 
