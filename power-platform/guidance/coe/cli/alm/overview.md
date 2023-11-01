@@ -89,7 +89,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
    Deploying to your enterprise? For more information, go to [Enterprise deployment](./scenarios/tenant-deployments.md#enterprise-deployment).
 
-   If you're prompted to create an HTTP with Microsoft Entra ID (AD) connection, enter **https&colon;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Microsoft Entra Resource URI**.
+   If you're prompted to create an HTTP with Microsoft Entra ID connection, enter **https&colon;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Microsoft Entra Resource URI**.
 
 1. [Update permissions for the project build service](../../setup-almacceleratorpowerplatform.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 
