@@ -19,13 +19,13 @@ ms.contributors:
 
 # Use /mention to link to records in Outlook web client
 
-One of the most time-consuming tasks, for any person that uses email, is easily sharing information in your line of business applications with colleagues. You have to jump out of your Outlook web experience, open your line of business app, navigate to a record, and then copy and paste the link of the record into your email. This is an incredibly time consuming set of steps and actions. 
+One of the most time-consuming tasks, for any person that uses email, is easily sharing information in your line of business applications with colleagues. You have to jump out of your Outlook web experience, open your line of business app, navigate to a record, and then copy and paste the link of the record into your email. This is an incredibly time-consuming set of steps and actions. 
 
 Wouldn't it be great if you could just quickly access Dynamics 365 or Dataverse data directly from Outlook?
 
 That is now possible with a simple configuration in the Power Platform admin center. You can quickly enable your users to access the records they have most recently used in their application. The records are available in the Outlook web client using a simple /mention gesture.
 
-Security is top of mind, and only records that a user has access to and has most recently used will show up in the Outlook web client.
+Security is top of mind, so only records that a user has access to and has most recently used are available in the Outlook web client.
 
 ## Turn on the /mention feature
 
@@ -33,15 +33,13 @@ Security is top of mind, and only records that a user has access to and has most
 2. Select **Settings** > **Product** > **Features**.
 3. Under the **Search** section, turn on the **Search for records in Microsoft 365 apps** setting.
 
-## Link to business records in Outlook web client
+## Link to business records in email messages in your Outlook web client
 
-After turning on the **Search for records in Microsoft 365 apps** setting, your users can open their Outlook web clients and quickly add a link to their most recently used records to be shared with colleagues.
-
-> [!Note]
-> It may take some time for records to be available in your outlook client.
+After turning on the **Search for records in Microsoft 365 apps** setting, your users can open their Outlook web clients and quickly add links to their most recently used records to be shared with colleagues.
 
 > [!Note]
-> This feature may not yet be available in your region. Come back soon if you do not see the option to enable sharing records in Microsoft365 apps.
+> - It may take some an hour or more for records to be available in your Outlook web client.
+> - This feature may not yet be available in your region.
 
 > [!Important]
 > The recipient of the email must be able to access the environment with security roles that allow the user to have access to the data and must be able to access the shared record.
@@ -50,7 +48,7 @@ After turning on the **Search for records in Microsoft 365 apps** setting, your 
 1. Create a new message.
 1. In the body of the email, type **/** and select the record you want to share with a colleague.
 
-    In this example, you can see that the **/** mention is followed by the account "Adventure Works". When the user presses **Enter**, a link to the record is inserted into the body of the email.
+    In this example, you can see that the **/** mention is followed by the account "Adventure Works". When you select a record, a link to the record is inserted into the body of the email.
 
     :::image type="content" source="media/adventure-works-link.png" alt-text="Insert a link into an Outlook web message.":::
 
