@@ -19,7 +19,7 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
-When you ask Project "Sophia" a question or upload data and inquire about the data, a workspace is generated. 
+You can ask Project "Sophia" a question or upload data and ask questions about the data.
 
 ## Ask a question
 
@@ -27,6 +27,7 @@ When you ask Project "Sophia" a question or upload data and inquire about the da
 2. From the Home screen select **New workspace**.
 3. Enter your question in the text box and then select **Generate**.
 
+An AI-powered blueprint is generated based on your question.
 
 ## Ask questions about your data
 
