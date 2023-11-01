@@ -19,7 +19,7 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
-You can ask Project "Sophia" a question or upload data and ask questions about the data.
+When you can ask Project "Sophia" a question or upload data and ask questions about your business data it generates a AI-powered blueprint.
 
 ## Ask a question
 
@@ -27,7 +27,6 @@ You can ask Project "Sophia" a question or upload data and ask questions about t
 2. From the Home screen select **New workspace**.
 3. Enter your question in the text box and then select **Generate**.
 
-An AI-powered blueprint is generated based on your question.
 
 ## Ask questions about your data
 
@@ -57,4 +56,5 @@ The following limitations apply to file uploads:
   - The file must contain selectable text. You can test this by trying to highlight text within the PDF. If you can’t select or highlight the text, then it won’t be processed.
   - Use original digital documents or PDF that is converted directly from word processors or other digital sources. A scanned PDF won’t work.
 -	Encrypted or password-protected files aren’t supported 
+
 
