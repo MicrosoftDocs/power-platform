@@ -1,10 +1,10 @@
 ---
 title: Install and configure the Awards and Recognition template for Power Platform
-description: Learn how to install and configure the Awards and Recognition template for Power Platform.
+description: Learn how to install, configure, and deploy the Awards and Recognition template for Microsoft Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: install-set-up-deploy
+ms.topic: how-to
 ms.date: 09/27/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -13,7 +13,7 @@ ms.subservice: solution-templates
 
 # Install and configure the Awards and Recognition template
 
-As a Power Platform admin, you can access, import, install, configure, and deploy the Awards and Recognition template for your organization. To get started, follow the steps to install and configure the Awards and Recognition template.
+As a Power Platform admin, you install, configure, and deploy the Awards and Recognition template's solutions for your organization. To get started, follow the steps.
 
 ## Step 1: Create connections
 
@@ -32,7 +32,13 @@ You can access the template on AppSource and install into the Power Platform env
 
 1. Agree to the Terms and Privacy Statements by checking the boxes.
 
-1. Select **Install**. You'll be taken to a screen where you can view the installation status. After the installation is complete, the status shows as *Installed*.
+1. Select **Install**. You'll be taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
+
+> [!IMPORTANT]
+> Two solutions will always be installed in your environment:
+>
+> - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Awards and Recognition**. Contains all the components needed to set up an Awards and Recognition program within an organization.
 
 > [!TIP]
 > You can log your questions and get support for the Awards and Recognition template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
@@ -75,8 +81,11 @@ Set up security roles in your solutions so admins can manage access to and the e
 
 Open the newly installed Awards and Recognition solution and verify that the cloud flow is set to the *on* status. If not, turn it on.
 
-1. Select the cloud flow that is turned off.
-1. Select **Turn on** located in the toolbar.
+1. Select **Solutions** on left-side panel.
+1. Select the **Awards and Recognition** solution from the list.
+1. Select **Cloud flows (1)** on the left-side panel.
+1. Select the *flow*.
+1. Select **Turn on** on the command bar if the flow is not already set to *on*.
 
 ## Step 5: Share the app
 
