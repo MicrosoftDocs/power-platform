@@ -72,9 +72,10 @@ If a user typed
 - **1979** in a text-input control named **HireYear**
 - **3** in a text-input control named **HireMonth**
 - **17** in a text-input control named **HireDay**
+
 this formula would return **3/17/1979**:
 
-**Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))**
+`Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))`
 
 ### Time
 
@@ -82,9 +83,10 @@ If a user typed
 - **14** in a text-input control named **BirthHour**
 - **50** in a text-input control named **BirthMinute**
 - **24** in a text-input control named **BirthSecond**
-this formula would return **02:50:24 P**.
 
-**Text(Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss A/P")**
+this formula would return **02:50:24 P**:
+
+`Text(Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss A/P")`
 
 ### DateTime
 
@@ -96,8 +98,9 @@ If a user typed
 - **14** in a text-input control named **EclipseMinute**
 - **5** in a text-input control named **EclipseSecond**
 - **231** in a text-input control named **EclipseMillisecond**
-this formula would return **10/28/23 01:14:05.231 PM**.
 
-**Text(DateTime(Value(EclipseYear.Text), Value(EclipseMonth.Text), Value(EclipseDate.Text), Value(EclipseHour.Text), Value(EclipseMinute.Text), Value(EclipseSecond.Text), Value(EclipseSecond.Millisecond)), "yy/mm/dd hh:mm:ss.000 AM/PM")**
+this formula would return **10/28/23 01:14:05.231 PM**:
+
+`Text(DateTime(Value(EclipseYear.Text), Value(EclipseMonth.Text), Value(EclipseDate.Text), Value(EclipseHour.Text), Value(EclipseMinute.Text), Value(EclipseSecond.Text), Value(EclipseSecond.Millisecond)), "yy/mm/dd hh:mm:ss.000 AM/PM")`
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
