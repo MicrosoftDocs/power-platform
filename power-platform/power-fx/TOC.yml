@@ -123,7 +123,7 @@
           - name: DateDiff
             href: reference/function-dateadd-datediff.md
           - name: DateTime
-            href: reference/function-datetime.md
+            href: reference/function-date-time.md
           - name: DateTimeValue
             href: reference/function-datevalue-timevalue.md
           - name: DateValue
@@ -131,7 +131,7 @@
           - name: Day
             href: reference/function-datetime-parts.md
           - name: Dec2Hex
-            href: reference/function-dec2hex-hex2dec.md
+            href: reference/function-hexdec.md
           - name: Decimal
             href: reference/function-decimal.md
           - name: Defaults
@@ -147,7 +147,7 @@
           - name: DropColumns
             href: reference/function-table-shaping.md
           - name: EDate
-            href: reference/function-edate.md
+            href: reference/function-edate-eomonth.md
           - name: EditForm
             href: reference/function-form.md
           - name: Enable
@@ -157,7 +157,7 @@
           - name: EndsWith
             href: reference/function-startswith.md
           - name: EOMonth
-            href: reference/function-eomonth.md
+            href: reference/function-edate-eomonth.md
           - name: Error
             href: reference/function-iferror.md
           - name: Errors
@@ -189,7 +189,7 @@
           - name: Help
             href: reference/function-help.md
           - name: Hex2Dec
-            href: reference/function-dec2hex-hex2dec.md
+            href: reference/function-hexdec.md
           - name: Host
             href: reference/object-host.md
           - name: Hour

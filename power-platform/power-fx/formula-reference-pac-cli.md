@@ -120,7 +120,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[DateDiff](reference/function-dateadd-datediff.md)** – Subtracts two date values, and shows the result in days, months, quarters, or years.
 
-**[DateTime](reference/function-datetime.md)** - TODO: Add description
+**[DateTime](reference/function-date-time.md)** - Returns a date/time value, based on both date and time components.
 
 **[DateTimeValue](reference/function-datevalue-timevalue.md)** – Converts a date and time string to a date/time value.
 
@@ -128,7 +128,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[Day](reference/function-datetime-parts.md)** – Retrieves the day portion of a date/time value.
 
-**[Dec2Hex](reference/function-dec2hex-hex2dec.md)** - TODO: Add description
+**[Dec2Hex](reference/function-hexdec.md)** - Convert a number to a hexadecimal text string.
    
 **[Decimal](reference/function-decimal.md)** - TODO: Add description
 
@@ -146,7 +146,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 ## E
 
-**[EDate](reference/function-edate.md)** - TODO: Add description
+**[EDate](reference/function-edate-eomonth.md)** - Adds or subtracts months to a date, without changing the day of the month.
 
 
 <!-- **[EditForm](reference/function-form.md)** – Resets a form control for editing of an item. -->
@@ -157,7 +157,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
 
-**[EOMonth](reference/function-eomonth.md)** - TODO: Add description
+**[EOMonth](reference/function-edate-eomonth.md)** - Adds or subtracts months to a date, returning the last day of that month.
 
 **[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
@@ -197,7 +197,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 <!-- **[Host](reference/object-host.md)** - Provides information about the current host running the app. -->
 
-**[Hex2Dec](reference/function-dec2hex-hex2dec.md)** - TODO: Add description
+**[Hex2Dec](reference/function-hexdec.md)** - Convert a hexadecimal text string to a number.
 
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
 

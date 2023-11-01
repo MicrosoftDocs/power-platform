@@ -1,6 +1,6 @@
 ---
-title: EDate function
-description: Reference information including syntax and examples for the EDate function.
+title: EDate and EOMonth functions
+description: Reference information including syntax and examples for the EDate and EOMonth functions.
 author: snizar007
 ms.topic: reference
 ms.reviewer: jdaly
@@ -15,7 +15,7 @@ contributors:
   - jorisdg
   - JimDaly
 ---
-# EDate function
+# EDate and EOMonth functions
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: [PAC CLI](/power-platform/developer/cli/reference/power-fx)
 

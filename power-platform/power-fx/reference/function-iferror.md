@@ -155,11 +155,6 @@ The return value is a boolean _true_ or _false_.
 
 Using **IsBlankOrError** will prevent any further processing of the error.
 
-## Error
-
-> [!NOTE]
-> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support the **Error** function.
-
 Use the **Error** function to create and report a custom error. For example, you might have logic to determine whether any given value is valid for your context or not&mdash;something not checked for a problem automatically. You can create and return your own error, complete with **Kind** and **Message**, using the same record described above for the **IfError** function.
 
 In the context of **IfError**, use the **Error** function to rethrow or pass through an error. For example, your logic in **IfError** may decide that in some cases an error can be safely ignored, but in other cases the error is important to send through. Within **IfError** or **App.OnError**, use **Error( FirstError )** to pass through an error.
