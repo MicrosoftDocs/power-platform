@@ -178,6 +178,8 @@
             href: reference/function-guid.md
           - name: HashTags
             href: reference/function-hashtags.md
+          - name: Help
+            href: reference/function-help.md            
           - name: Host
             href: reference/object-host.md
           - name: Hour
