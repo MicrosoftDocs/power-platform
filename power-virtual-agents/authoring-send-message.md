@@ -14,7 +14,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Send a message (preview)
+# Send a message
 
 The **Message** node sends a message from the bot to the user. Messages are usually simple text messages, but can also include richer components, such as images, videos, quick replies, and cards.
 
