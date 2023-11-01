@@ -2,11 +2,10 @@
 title: EDate and EOMonth functions
 description: Reference information including syntax and examples for the EDate and EOMonth functions.
 author: gregli-msft
-
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 10/27/2023
+ms.date: 11/01/2023
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
