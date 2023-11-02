@@ -66,14 +66,14 @@ Since we are using a host that has **Decimal** as the default, **Value** and **D
 
 | Formula                         | Description                                                                                    | Result  |
 | ------------------------------- | ---------------------------------------------------------------------------------------------- | ------- |
-| **Value( "123.456" )**<br>**Decimal( "123.456" )**          | The default language of "en-US" will be used, which uses a period as the decimal separator.    | 123.456 **Decimal** |
-| **Value( "123.456", "es-ES" )**<br>**Decimal( "123.456", "es-ES" )** | "es-ES" is the language tag for Spanish in Spain. In Spain, a period is a thousands separator. | 123456 **Decimal** |
-| **Value( "123,456" )**<br>**Decimal( "123,456" )**        | The default language of "en-US" will be used, which uses a comma as a thousands separator.     | 123456 **Decimal** |
-| **Value( "123,456", "es-ES" )**<br>**Decimal( "123,456", "es-ES" )** | "es-ES" is the language tag for Spanish in Spain. In Spain, a comma is the decimal separator.  | 123.456 **Decimal** |
-| **Value( "12.34%" )**<br>**Decimal( "12.34%" )**           | The percentage sign at the end of the string indicates that this is a percentage.              | 0.1234 **Decimal** |
-| **Value( "$ 12.34" )**<br>**Decimal( "$ 12.34" )**          | The currency symbol for the current language is ignored.                                       | 12.34 **Decimal**  |
-| **Value( "24e3" )**<br>**Decimal( "24e3" )**             | Scientific notation for 24 x 10<sup>3</sup>.                                                   | 24000 **Decimal**  |
-| **Value( true )**<br>**Decimal( true )**               | Converts a Boolean to a number, 0 for *false* and 1 for *true* | 1 **Decimal** |
+| **Value(&nbsp;"123.456"&nbsp;)**<br>**Decimal(&nbsp;"123.456"&nbsp;)**          | The default language of "en-US" will be used, which uses a period as the decimal separator.    | 123.456 (**Decimal**) |
+| **Value(&nbsp;"123.456",&nbsp;"es-ES"&nbsp;)**<br>**Decimal(&nbsp;"123.456",&nbsp;"es-ES"&nbsp;)** | "es-ES" is the language tag for Spanish in Spain. In Spain, a period is a thousands separator. | 123456 (**Decimal**) |
+| **Value(&nbsp;"123,456"&nbsp;)**<br>**Decimal(&nbsp;"123,456"&nbsp;)**        | The default language of "en-US" will be used, which uses a comma as a thousands separator.     | 123456 (**Decimal**) |
+| **Value(&nbsp;"123,456",&nbsp;"es-ES"&nbsp;)**<br>**Decimal(&nbsp;"123,456",&nbsp;"es-ES"&nbsp;)** | "es-ES" is the language tag for Spanish in Spain. In Spain, a comma is the decimal separator.  | 123.456 (**Decimal**) |
+| **Value(&nbsp;"12.34%"&nbsp;)**<br>**Decimal(&nbsp;"12.34%"&nbsp;)** | The percentage sign at the end of the string indicates that this is a percentage.              | 0.1234 (**Decimal**) |
+| **Value(&nbsp;"$&nbsp;12.34"&nbsp;)**<br>**Decimal(&nbsp;"$&nbsp;12.34"&nbsp;)**          | The currency symbol for the current language is ignored.                                       | 12.34 (**Decimal**) |
+| **Value(&nbsp;"24e3"&nbsp;)**<br>**Decimal(&nbsp;"24e3"&nbsp;)**             | Scientific notation for 24 x 10<sup>3</sup>.                                                   | 24000 (**Decimal**)  |
+| **Value(&nbsp;true&nbsp;)**<br>**Decimal(&nbsp;true&nbsp;)**               | Converts a Boolean to a number, 0 for *false* and 1 for *true* | 1 **Decimal** |
 
 ### Float
 
@@ -83,11 +83,11 @@ Where things diverge is if larger or smaller numbers are used.
 
 | Formula | Description | Result |
 |---------|-------------|--------|
-| **Float( 1e100 )** | Because the literal number `1e100` is beyond the range of a **Decimal**, this results in an error before ever calling the **Float** function.  | *error (overflow)* | 
-| **Decimal( 1e100 )** | Same problem as with the **Float** function.  | *error (overflow)* |
-| **Float( "1e100" )** | The number in the text string is within the range of **Float** numbers.  | 1e100 **Float** |
-| **Decimal( "1e100" )** |  The number in the text string is beyond the range of **Decimal** numbers. | *error (overflow)* |
-| **Float( "10000000000.0000000001" )** | The number in the text string is within the range of **Float** numbers.  However, the number requires more precision than a **Float** can provide and will be truncated. | 1 **Float** |
-| **Decimal( "10000000000.0000000001" )** |  The number in the text string is within both the range and precision of a **Decimal** numbers. | 10000000000.0000000001 **Decimal** |
+| **Float(&nbsp;1e100&nbsp;)** | Because the literal number `1e100` is beyond the range of a **Decimal**, this results in an error before ever calling the **Float** function.  | *error (overflow)* | 
+| **Decimal(&nbsp;1e100&nbsp;)** | Same problem as with the **Float** function.  | *error (overflow)* |
+| **Float(&nbsp;"1e100"&nbsp;)** | The number in the text string is within the range of **Float** numbers.  | 1e100 **Float** |
+| **Decimal(&nbsp;"1e100"&nbsp;)** |  The number in the text string is beyond the range of **Decimal** numbers. | *error (overflow)* |
+| **Float(&nbsp;"10000000000.0000000001"&nbsp;)** | The number in the text string is within the range of **Float** numbers.  However, the number requires more precision than a **Float** can provide and will be truncated. | 1 (**Float**) |
+| **Decimal(&nbsp;"10000000000.0000000001"&nbsp;)** |  The number in the text string is within both the range and precision of a **Decimal** numbers. | 10000000000.0000000001 (**Decimal**) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
