@@ -18,7 +18,7 @@ contributors:
 
 # Help function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: PAC CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Displays help information for command line Power Fx hosts.
 
