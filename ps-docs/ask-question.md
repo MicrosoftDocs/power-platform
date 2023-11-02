@@ -27,7 +27,7 @@ When you can ask Project "Sophia" a question or upload data and ask questions ab
 2. From the Home screen select **New workspace**.
 3. Enter your question in the text box and then select **Generate**.
 
-You'll get more information about your question including a an overivew and suggested next steps.
+You'll get more information about your question including a an overview and suggested next steps.
 
 > [!div class="mx-imgBorder"]
 > ![Ask a question in Project "Sophia".](media/ask-question.png)
@@ -43,7 +43,7 @@ You can upload a data file and ask questions about the data. The [supported file
 2. Select the file name and then select **Open**.
 3. Select **Generate** or enter your question in the text box and then select **Generate**.
 
-A tailored template is generated based on the data that includes insights, charts, and next actions.
+Your data is analyzed to create a customized template that provides valuable insights, charts, and actionable steps.
 
 > [!div class="mx-imgBorder"]
 > ![Ask a question about your data in Project "Sophia".](media/ask-question-about-data.png)
