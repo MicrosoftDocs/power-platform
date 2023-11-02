@@ -139,6 +139,8 @@ Other elements include:
 
 **[Day](reference/function-datetime-parts.md)** – Retrieves the day portion of a date/time value.
 
+**[Dec2Hex](reference/function-hexdec.md)** – Convert a number to a hexadecimal text string.
+
 **[Defaults](reference/function-defaults.md)** – Returns the default values for a data source.
 
 **[Degrees](reference/function-trig.md)** - Converts radians to degrees.
@@ -196,6 +198,8 @@ Other elements include:
 ## H
 
 **[HashTags](reference/function-hashtags.md)** – Extracts the hashtags (#strings) from a string.
+
+**[Hex2Dec](reference/function-hexdec.md)** – Convert a hexadecimal text string to a number.
 
 **[Host](reference/object-host.md)** - Provides information about the current host running the app.
 
