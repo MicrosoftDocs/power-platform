@@ -96,6 +96,7 @@ The guest user must have a Power Apps license assigned through one of the follow
 - The tenant hosting the app being shared
 - The home tenant of the guest user
 
+However, when using the Microsoft Dataverse as the data source, ensure that the guest user is licensed from the same tenant where you have Dataverse data located, [srouce link](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/share-app-guests#:~:text=When%20using%20the%20Microsoft%20Dataverse%20as%20the%20data%20source%2C%20ensure%20that%20the%20guest%20user%20is%20licensed%20from%20the%20same%20tenant%20where%20you%20have%20Dataverse%20data%20located.).
 Also, the guest must have the same license that's required for non-guests to run an app. A collection of examples is available in [Frequently asked questions](/powerapps/maker/canvas-apps/share-app-guests#frequently-asked-questions).
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
