@@ -15,7 +15,7 @@ contributors:
   - mikkelsen2000
 ---
 
-# Workspace? (preview)
+# What is a workspace? (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
