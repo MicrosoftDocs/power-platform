@@ -282,8 +282,6 @@
             href: reference/operators.md
           - name: Or
             href: reference/function-logicals.md
-          - name: OptionSetInfo
-            href: reference/function-optionsetinfo.md
           - name: Param
             href: reference/function-param.md
           - name: Parent

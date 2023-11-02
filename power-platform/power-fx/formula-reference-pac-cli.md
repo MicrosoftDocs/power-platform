@@ -305,7 +305,7 @@ Guid them to the tutorial (link below) for more details:
 ## O
 
 
-**[OptionSetInfo](reference/function-optionsetinfo.md)** - TODO: Add description
+<!-- **[OptionSetInfo](reference/function-optionsetinfo.md)** - TODO: Add description -->
 
 **[Or](reference/function-logicals.md)** – Boolean logic OR. Returns **true** if any of its arguments are **true**. You can also use the [**||** operator](reference/operators.md).
 
