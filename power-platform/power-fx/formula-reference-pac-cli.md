@@ -7,7 +7,6 @@ ms.reviewer: jdaly
 ms.date: 11/5/2023
 ms.subservice: power-fx
 ms.author: snizar
-ms.subservice: developer
 search.audienceType:
   - developer
 contributors:
@@ -18,7 +17,16 @@ contributors:
 
 # Formula reference - Power Platform CLI
 
-In this article, learn about all the functions available in Microsoft Power Platform CLI [pac power-fx commands](/power-platform/developer/cli/reference/power-fx).
+In this article lists all the functions available in Microsoft Power Platform CLI [pac power-fx commands](/power-platform/developer/cli/reference/power-fx).
+
+<!-- 
+
+TODO: Need a few introductory sentences to make people see why this is interesting and useful 
+Guid them to the tutorial (link below) for more details:
+
+-->
+
+[Learn to use pac power-fx commands](../developer/cli/use-pac-power-fx.md)
 
 ## A
 
