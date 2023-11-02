@@ -1,12 +1,14 @@
-- name: Overview (preview)
-  href: overview.md
-- name: Explore a topic
-  href: ask-question.md
-- name: Account planning guide
-  href: account-planning-guide.md
-- name: What is a workspace?
-  href: workspace.md
-- name: Work with generated content
-  href: work-with-content.md
-- name: Ask questions using the AI cursor
-  href: ai-cursor.md
+- name: Project Sophia (preview)
+  items: 
+  - name: Overview 
+    href: overview.md
+  - name: Explore a topic
+    href: ask-question.md
+  - name: Account planning guide
+    href: account-planning-guide.md
+  - name: What is a workspace?
+    href: workspace.md
+  - name: Work with generated content
+    href: work-with-content.md
+  - name: Ask questions using the AI cursor
+    href: ai-cursor.md
