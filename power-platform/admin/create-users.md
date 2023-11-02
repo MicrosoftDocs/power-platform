@@ -103,7 +103,7 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
 <tr><td>AzureActiveDirectoryObjectId****     </td><td>ObjectId   </td></tr>
-<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress is a specil case and can be updated by customers.<br>**** ObjectID of a user or a service principal in Azure Active Directory.<br /></td></tr>
+<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.<br>**** ObjectID of a user or a service principal in Azure Active Directory.<br /></td></tr>
 </tbody>
 </table>
 
