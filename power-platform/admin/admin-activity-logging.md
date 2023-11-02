@@ -3,10 +3,10 @@ title: View Power Platform administrative logs using auditing solutions in Micro
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/20/2023
+ms.date: 11/01/2023
 author: StephenRauchPM
 ms.subservice: admin
-ms.author: stephenrauch 
+ms.author: johnev
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
