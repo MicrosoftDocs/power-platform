@@ -4,11 +4,11 @@ description: About integration with Application Insights
 services: powerapps
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 04/20/2023
-author: tjvass
+ms.date: 09/12/2023
+author: StephenRauchPM
 ms.subservice: admin
-ms.author: tjvass
-ms.reviewer: jimholtz
+ms.author: stephenrauch
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -17,18 +17,7 @@ search.audienceType:
 
 Application Insights, a feature of Azure Monitor, is widely used within the enterprise landscape for monitoring and diagnostics. Data that has already been collected from a specific tenant or environment is pushed to your own Application Insights environment. The data is stored in Azure Monitor logs by Application Insights, and visualized in [Performance](/azure/azure-monitor/learn/tutorial-performance) and [Failures](/azure/azure-monitor/learn/tutorial-runtime-exceptions) panels under **Investigate** on the left pane. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. The support, developer, and admin personas can use this feature to triage and resolve issues.
 
-## What telemetry and which tables are being populated in Application Insights?
-
-|Telemetry type  |Application Insights table name  |
-|---------|---------|
-|Unified Interface page loads      | pageViews        |
-|Unified Interface outbound network requests     | Dependency        |
-|Dataverse API incoming calls     | Request        |
-|Plug-in executions     | Dependency        |
-|SDK executions (*Retrieve*, *RetrieveMultiple*, *FetchXML* transformation, and so on)     | Dependency        |
-|Exceptions during the execution of plug-in and SDK calls     | Exceptions       |
-
-Application Insights has a wide range of features to help you use this data:
+Application Insights has a wide range of features to help you use telemetry data:
 
 - [Create a dashboard](/azure/azure-monitor/visualize/tutorial-logs-dashboards) for an overview of the health of your org.
 - Perform proactive monitoring by using [Smart Detection](/azure/azure-monitor/app/proactive-diagnostics).
@@ -110,7 +99,7 @@ In Application Insights, go to the **Logs** panel under **Monitoring** on the le
 
 ## Common fields
 
-All the [tables](#what-telemetry-and-which-tables-are-being-populated-in-application-insights) populated in Application Insights have these common fields:
+All the tables populated in Application Insights have these common fields:
 
 - **cloud_RoleInstance**: For events emitted as a part of this effort, this field will be set to **CDS Data Export** to ensure that they can be distinguished from other events in the same Application Insights environment.
 - **operation_Id**: This links together all the operations in a single interaction&mdash;which is one way to get all related events to a failing event.<br/>

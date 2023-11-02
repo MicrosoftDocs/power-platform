@@ -4,7 +4,7 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/27/2023
+ms.date: 09/11/2023
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -23,25 +23,11 @@ An environment is a space in which to store, manage, and share your organization
 
 Your license determines whether you can create environments.
 
-| License | Trial | Production | Developer |
-| --- | --- | --- | --- |
-| Microsoft 365 Plans |No | No | Yes |
-| Dynamics 365 Teams Plans   |No | No | Yes |
-| Power Apps Developer Plan   |No | No | Yes |
-| Dynamics 365 trial | Yes (one) | No| Yes |
-| Dynamics 365 Plans |Yes (one)| Yes | Yes |
-| Power Apps plan |Yes (one)| Yes | Yes |
-| Power Automate plan |Yes (one)| Yes | Yes |
-| Power Automate trial |Yes (one)| Yes | Yes |
-| Power Apps trial |Yes (one)| Yes | Yes |
-| Power Virtual Agents trial plan |Yes | No | Yes |
-| Power Virtual Agents plan | No | Yes | Yes |
-
 To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true).
 
 To create an environment, all the following must be true:
 
-1. The user has a license (Yes below) that allows environment creation. This requirement is waived for Global admins and Power Platform admins except for trial (standard) environments; see #2.c later.
+1. The user has a license that allows environment creation. This requirement is waived for Global admins and Power Platform admins except for trial (standard) environments; see #2.c later.
 
    | License | Trial | Production | Developer |
    | --- | --- | --- | --- |

@@ -21,19 +21,19 @@ Here are some frequently asked questions about Power Automate standalone license
 
 ## How do Power Automate license plans work?
 
-Each user and flow has a license plan. If a flow is set to the Power Automate Process plan, then it has the highest limits and always uses the process plan request limits, regardless of who runs the flow.
+If a flow is set to the Power Automate process plan, then it can access premium connectors, has the highest limits and always uses the process plan request limits, regardless of who runs the flow.
 
 If the flow is set to the Power Automate Premium user plan, then it gets the plan of its primary owner if the flow is an automated or scheduled flow. If the flow is an instant/button flow, it uses the license of the user running the flow. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow uses the request limits from both plans.
 
-The standard user license plan for Power Automate is the Power Automate Premium plan, but users have a range of other license plan options. Users with the free plan or one of the Microsoft 365 license plans can only access standard connectors, but most of the other license plans provide access to premium connectors.
+The user license plan for Power Automate is the Power Automate premium plan, but users have a range of other license plan options. Users with the free plan or one of the Microsoft 365 license plans can only access standard connectors, but most of the other license plans and trials provide access to premium connectors.
 
 To learn more about license plans that include Power Automate capabilities, go to [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types) and the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). To learn more about the limits and performance profile of license plans, go to [Limits for automated, scheduled, and instant flows](/power-automate/limits-and-config).
 
 ### When should I choose Power Automate 'Process' versus 'Premium'?
 
-Microsoft recommends that most organizations buy the Power Automate Premium license for every user in their organization. Purchase the Power Automate Process license for every machine that runs unattended automation. 
+Microsoft recommends that most organizations buy the Power Automate premium license for every user in their organization. Purchase the Power Automate process license for every machine that runs unattended automation.
 
-The Premium user plan is intended for human user to support the broad adoption of an automation culture in an organization.
+The Premium user plan is intended for a human user to support the broad adoption of an automation culture in an organization.
 
 The Process plan is intended for core enterprise process automations that are typically automated backend activities (not run manually by a person). For example, every organization needs processes for Invoice processing or HR onboarding that are mandatory to the normal operation of the business. These processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they are all handling an invoice through multiple steps to closure.
 
@@ -43,24 +43,35 @@ You need a Process license if your flow meets **one of the following criteria**:
 
 - Your flows use unattended RPA (Robotic Process Automation) to run desktop flows on machines without user interaction.
 - Your flows are running under Application user (flow owner is a Service Principal). Organizations with multiple environments (Dev/Test/Prod) use DevOps pipelines to export and deploy flows into other environments for healthy ALM (Application lifecycle management). They run their flows using service principal to avoid giving access to users in production environments.
-- Your flows process large data or need to run frequently, thereby needing high volume of Power platform requests.
+- Your flows processes large data or need to run frequently, thereby needing high volume of Power Platform requests.
 - Your premium flow is invoked by multiple users. In this case, either everyone needs a Premium license, or the flow needs a Process license. If a flow has a Process license, it doesn't require any user to have a license. It provides an organization with the flexibility to pay for licenses based on the number of flows. Larger organizations or solutions that affect many people, can benefit from the fixed monthly cost.
 - Your flow uses premium connectors, and your organization has many guest users using the flow, but you don't know if the guest users' home tenant provides them with Premium licenses.
 
 ### How many Power Automate Process licenses do I need?
 
-- Your process has unattended RPA (Robotic Process Automation): how many machine sessions do you need?
+- Your process has unattended RPA (robotic process automation): how many machine sessions do you need?
    Purchase one Process license for each machine. You can add more Process licenses if you need concurrent execution on the machine. All desktop flows (RPA) running on the machine and cloud flows (DPA) that are part of the business process are covered by the Process license.
- 
-- Your process only needs DPA (Digital Process Automation): how many core business processes do you want to automate?  
 
-    Purchase one process for every core business process. Some examples of core business processes are invoice processing or HR onboarding. All cloud flows related to the same business process are included in the license. 
+- Your process only needs DPA (digital process automation): how many core business processes do you want to automate?  
 
-### My process has multiple flows. Will I need multiple Process licenses?
+    Purchase one process for every core business process. Some examples of core business processes are invoice processing or human resources (HR) onboarding. All cloud flows related to the same business process are included in the license.
+
+### How many Process licenses do I need if I have multiple cloud flows, each of them invoking its own RPA flows in unattended mode on a machine?
+
+With one Process license, you can run multiple cloud flows by queueing them. For example, if have four (4) independent cloud flows, and each one of them invokes its own desktop flow running on the same machine, you can run the first one at 09:00 AM, the second one at 11:00 AM, and so on, in the same virtual machine.
+
+In the following screenshot, all cloud flows are covered by one Process license, as they have a desktop flow running on the same machine. Any parent, child flows, in context flows of these cloud flows are also covered by the Process license on the machine.
+
+:::image type="content" source="../media/faqs/many-flows-one-machine.png" alt-text="Screenshot of >":::
+
+### My DPA process has multiple cloud flows. Will I need multiple Process licenses?
 
 Core business processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they are all handling an invoice through multiple steps to closure. You only need one Process license for a core business process. This encourages microservices architecture best practices where flows can be small with fine grained functionality resulting in better maintainability.
 
-Identify the flow that starts the process and assign the Process license to that flow. Tag all the flows as in context of the flow wit a Process license. The flows must be in the same solution and be using the same data sources. The flows organized as parent, child flows, in context flows are all treated as one process with one Process license assigned to the main flow.
+Identify the flow that starts the process and assign a Process license to that flow. Parent and child flows of the flow with Process license are covered by the Process license. These flows can be in the same solution or in different solution. 
+Non parent/child flows can manually be assosciated to the flow with a Process license. These flows must be in the same solution and be using the same data sources. 
+
+The flows organized as parent, child flows, in context flows are all treated as one process with one Process license assigned to the main flow and share Power Platform Request limits of Process license. 
 
 ### My solution has multiple processes. Do I need multiple Process licenses?
 
@@ -70,7 +81,7 @@ Yes. A solution can have multiple processes with a Process license assigned to e
 
 - The Power Automate Process plan has the highest priority among all licenses. This means if a Process license is assigned to a flow, the flow always uses this license and doesn't need an owner or running user to have a Premium license.
 - Automated and scheduled flows always run in the context of the flow owner regardless of who starts the flow or what accounts are used for connections inside of the flow. Instant flows (button, hybrid triggers) run in the context of the user who invokes them, regardless of the connections used in the flow. If an automated or scheduled flow uses a premium connector, only the owner needs to have a Premium license.
-- If an instant flow has premium connectors, every user who runs the flow needs a Power Automate Premium license. In such cases, instead of licensing every user, you can license the flow with a Process license. One exception to this rule is that the HTTP trigger runs in the context of the owner, even if it's used in an instant flow.
+- If an instant flow has premium connectors, every user who runs the flow needs a Power Automate Premium license. In such cases, instead of licensing every user, you can license the flow with a Process license. 
 - If the flow doesn't use a premium connector, you don't need a Premium license. You can use Microsoft 365 license.
 
 To find out what type (automated/manual/scheduled) of flow you have, select a flow to see its 'type' in the details.
@@ -150,9 +161,8 @@ Yes, they can use Power Automate for the desktop (they have usage rights for it)
 
 ## Legacy license questions
 
-> [!NOTE]
-> Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from pricing page. They will be removed from the price list on February 1, 2024. Power Automate process, an all-encompassing license that is easier to manage, licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month.
->
+Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from pricing page. They will be removed from the price list on February 1, 2024. Power Automate process, an all-encompassing license that is easier to manage, licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month.
+
 ### How is Process license different from per flow license 
 
 For unattended RPA, previously customers will need to buy a per flow license for the cloud flow and an unattended RPA add-on. Now they can purchase a Process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the Process license. 
@@ -310,55 +320,89 @@ In this example, the flow created using Power Automate is being used outside the
 
 #### Second example of Power Automate use outside of an app created using Power Apps context
 
-An environment has multiple apps. There are flows for data management that don't directly support the app but ensure the data quality. The user needs a standalone Power Automate license. 
+An environment has multiple apps. There are flows for data management that don't directly support the app but ensure the data quality. The user needs a standalone Power Automate license.
 
-## Enforcement 
+## Enforcement
 
-Dynamics 365 and Power Apps licenses include a limited set of Power Automate capabilities that allow users to run flows that allow for in context flows. To learn more, go to Power Automate use rights included with Dynamics licenses. Premium automated or scheduled flows not linked to an app require a Power Automate license, and the owner has 90 days to get a license before the flows turn off. Admins can find these flows and assign a Process license to the flow or a Power Automate premium  license to the owner to keep the flow running. Alternatively, if the flow is supporting a Power App/D365 app, associate the flow to the app. Starting September 1, 2023, new flows using premium features without a license will be turned off by default. Owners and co-owners of flows created before September 1, 2023 will be notified, have a 90-day grace period, and will be turned off if no action is taken. The enforcements are deployed by region so the notifications can be at a later time based on the region. Admins have 90 days since notification to act on the flows.
+Dynamics 365 and Power Apps licenses include a limited set of Power Automate capabilities that allow users to run flows that allow for in context flows. To learn more, go to [What Power Automate capabilities are included in Dynamics 365 licenses?](faqs.md#what-power-automate-capabilities-are-included-in-dynamics-365-licenses). Flows not in context of apps are subject to enforcement. Below are the enforcement timelines:
+  - Admins with flows that need licenses will first get notifications in Power Platform Admin center.
+  - Admins can find these flows using PowerShell and assign a Process/per-flow license to the flow or a Power Automate premium/per-user license to the owner to avoid any interruptions. Admins have 30 days to act on these flows before makers start receiving notifications.
+  - After 30 days from admin notifications, flow owners and co-owners get email notifications and in product banners in Power Automate portal about the flows that need their attention. Admins will get email notifications about the flows.
+  - Flow owner can start trial or request admin for a license or buy their own license. Alternatively, if the flow is supporting a Power App/D365 app, they can associate the flow to the app. Flow owners and co-owners have 90 days to take action.
+  - Once enforcement notifications are sent to  makers, new flows using premium features without a license will be turned off by default.
+  - If no action is taken in 90 days, the flows will be turned off and the flow owners and co-owners will get email and in product notifications. Turning on these flows requires a premium Power Automate license or association with the corresponding app. 
 
-Turning on these flows requires a premium Power Automate license or association with the corresponding app. 
+### What are the different enforcements?
 
-Power Apps licensed user flows that are triggered from the canvas apps or that use Dataverse "For a select record" trigger in model driven app are automatically considered as being in context of the Power App and are excluded from enforcement. If a premium flow isn't triggered by an app and is not linked to any app created using Power Apps, you must purchase a standalone Power Automate license.
+Admins have a Powershell command to see the flows that need their attention like the following:
 
-Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics entities in the environment or using First party Dynamics connectors like F&O are automatically considered as being in context of the D365 app in the environment and are excluded from enforcement. If the environment doesn't have Dynamics 365 app installed or if a premium flow isn't using Dynamics entities and is not linked to any D365 app, you must purchase a standalone Power Automate license.
+Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics 365 entities in the environment or using first party Dynamics 365 connectors like finance and operations are automatically considered as being in context of the Dynamics 365 app in the environment and are excluded from enforcement. If the environment doesn't have Dynamics 365 app installed or if a premium flow isn't using Dynamics 365 entities and is not linked to any Dynamics 365 app, you must purchase a standalone Power Automate license.
 
-### How can I easily determine if my flow is in context of a Power Apps/Dynamics 365 app
+| Enforcement Type | Exceptions | Admin notifications | Maker notification (+30 days) | Grace period | Recommended Action | Enforcement - Flow turn off |
+|--------------|-------------------|--------|----------|---------|-------|------|
+| Premium flows where flow owner left the organization | Manual flows and flows whose owners have grandfathered licenses(P1,P2) will not be enforced  | September 1, 2022 | October 1, 2022 | 14 days | Assign a Power Automate license to the flow owner or per-flow/process license to the flow | October 15, 2022 |
+|Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now)|Manual flows and flows whose owners have grandfathered licenses(P1,P2) will not be enforced  | September 1, 2022| October 1, 2022 | 14 days | Assign a Power Automate license to the flow owner or per-flow/process license to the flow | October 15, 2022 |
+|Premium flows created by flow owner with Power Apps license but the flow isn't triggered by the Power App|Power Apps licensed user flows that are triggered from the canvas apps or that use Dataverse "For a select record" trigger in model driven app are automatically considered as being in context of the Power App and are excluded from enforcement|October 13, 2023| November 13, 2023|120 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Power App, [associate the flow to the app](faqs.md#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps).| March 13, 2024 |
+|Premium flows created by flow owner with D365 license but the flow isn't in a Dynamics environment or the flow isn't interacting with Dynamics entities|Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics entities in the environment or using First party Dynamics connectors like finance and operations are automatically considered as being in context of the D365 app in the environment and are excluded from enforcement.|October 13, 2023| November 13, 2023|120 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Dynamics 365 app, [associate the flow to the app](faqs.md#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps).| March 13, 2024 |
+|Premium Sevice principal flows without a per flow/ Process licenses| Service principal flows in context of Dynamics 365 app are excluded from enforcement | March 15, 2024| April 15, 2024|90 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Dynamics 365 app, associate the flow to the app.| Aug 15, 2024 |
 
-Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be deleted if the corresponding apps are deleted? Is the flow talking to the same data sources as the app? If so, the flow is in context. 
+> [!NOTE]
+> Enforcements are deployed a geo region at a time, dates above are for earliest region. If you dont see notifications in Power Platform Admin center or Power Automate portal even though the date listed in the table passed, it means the enforcement is not deployed in your region yet.
 
-### How can I identify flows that need Premium licenses to avoid interruptions
-Admins have a Powershell command to see the flows that need their attention like the following: 
+### How can I identify flows that need Premium licenses to avoid interruptions due to enforcement?
+Admins will need to run the PowerShell per environment. If no results are returned, there are no flows that need your attention. When there are any licensing changes in your environment or new users/flows added to the environment, run the PowerShell command to identify if any flows need your attention. When new enforcements are launched, admins and makers will get notifications in Power Platform admin center, Power Automate portal and emails. If you receive a notification, update the version and rerun the PowerShell to identify any new flows need your attention.  
 
-1. Premium flows where flow owner left the organization.
+If you previously installed PowerShell, check for the installed version using below command, 
+Get-InstalledModule -Name  Microsoft.PowerApps.Administration.PowerShell
 
-1. Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now).
-
-1. Premium flows created by flow owner with Power Apps license but the flow isn't triggered by the Power App.
-
-1. Premium flows created by flow owner with D365 license but the flow isn't in a Dynamics environment or the flow isn't interacting with Dynamics entities.
-
-1. Environments where there are more per flow plans assigned to the flows than active per flow licenses assigned to the environment. 
-
-Admins will need to run the power shell per environment. If no results are returned, there are no flows that need your attention. When there are any licensing changes in your environment or new users/flows added to the environment, run the power shell command to identify if any flows need your attention. When new enforcements are launched, admins and makers will get notifications in Power Platform admin center, Power Automate portal and emails. If you receive a notification, rerun the powershell to identify any flows that need your attention.  
-
-Assign a Power Automate premium  license to the owner of the flow or assign a Process license to the flow to avoid the flow being turned off. To learn more, go to [flow expiration limits](/power-automate/limits-and-config#expiration-limits).
-
-Once a license is assigned/flow is associated to an app, edit and save the flow. It can take up to 24 hours for the PowerShell to refresh and remove the flow from the PowerShell response.
-
-To update the modules:
+The latest version deployed in August 2023 is 2.0.174. If you are on a previous version, use below command to update the PowerShell module.
 
 ```powershell
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force
 Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Force 
 ``````
-
+> [!NOTE]
+> In August 2023, we made multiple enhancements and performance improvements to the Powershell module. Please update to the latest version
+>
 Command: `Get-AdminFlowAtRiskOfSuspension`
- 
+
 Command example with export:
 
 `Get-AdminFlowAtRiskOfSuspension -EnvironmentName  <ENV_NAME> -ApiVersion '2016-11-01' | Export-Csv -Path suspensionList.csv -NoTypeInformation`
 
-Makers can find a premium icon next to the name of a premium flow.
+### I have many evironments. How can I get the flows that need my attention across tenant?
+
+If the number of environments in the tenant is less than 500, use the following script to get all the flows that need licenses across the tenant:
+
+```powershell
+$environments = Get-AdminPowerAppEnvironment
+
+$allFlows = @()
+foreach ($env in $environments) {
+    Write-Host "Getting flows at risk of suspension for environment $($env.DisplayName)..."
+    $flows = Get-AdminFlowAtRiskOfSuspension -EnvironmentName $env.EnvironmentName
+    Write-Host "Found $($flows.Count) flows at risk of suspension."
+    $allFlows += $flows
+}
+```
+
+#### Write all flows to a CSV file
+
+$allFlows | Export-Csv -Path "flows.csv" -NoTypeInformation
+
+Write-Host "All flows at risk of suspension written to flows.csv"
+
+If there are more than 500 environments in the tenant, raise a support ticket so our support team can run the report for you. 
+
+### I assigned a license but I still see the flow in flows that need my attention in PowerShell. Why?
+Once a license is assigned/flow is associated to an app, edit and save the flow. It can take up to 24 hours for the PowerShell to refresh and remove the flow from the PowerShell response.
+
+### I assigned a license but I still see the banners that my flows need attention in Power Automate portal. Why?
+Once a license is assigned/flow is associated to an app, it may take up to seven (7) days for the premium license to appear in the Power Automate portal. To refresh the latest license status, edit and save a flow.
+
+### How can I easily determine if my flow is in context of a Power Apps/Dynamics 365 app?
+
+Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be deleted if the corresponding apps are deleted? Is the flow talking to the same data sources as the app? If so, the flow is in context.
 
 ### How can I associate in context flows to Power Apps/Dynamics365 apps 
 
@@ -368,7 +412,7 @@ Makers can also associate their flows to apps from Power Automate portal, to lea
 
 ### Power Automate capabilities included with per app plans
 
-A Power Apps per app plan gives users the ability to run Power Automate flows that use premium features. The flows will either need to be triggered by Power App or  associated to an app via power shell or Power Automate portal.
+A Power Apps per app plan gives users the ability to run Power Automate flows that use premium features. The flows either need to be triggered by Power Apps or associated to an app through PowerShell or the Power Automate portal.
 
 To learn more, go to [Associate in context flows to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
 
@@ -382,7 +426,7 @@ Using multiplexing as a mechanism to reduce the number of licenses to be purchas
 
 Here are a few examples of what multiplexing is or isn't:
 
-1. If the premium flow is only moving data from Dataverse into a shared location or sending an email to colleagues, it doesn't fall under multiplexing because the users consume the data, rather than trigger the flow. 
+1. If the premium flow is only moving data from Dataverse into a shared location or sending an email to colleagues, it doesn't fall under multiplexing because the users consume the data, rather than trigger the flow.
 
 1. If a premium flow triggers when a new item is added to a SharePoint list, saves the details in Dataverse, and then sends an email to the owner of the flow, multiple people can upload items into the list but the email is only sent to the owner. In this case, only the owner needs a license because they're the only person who gets value from the flow.
 
@@ -409,17 +453,17 @@ If you want to run your flow under a service account, here is how to avoid multi
   - The service account is used by a limited set of users. In this case, licensing all the users and the service account is enough. 
   - The service account is used by many users. In this case, it's recommended to assign a Process license to the flow to ensure any new users adding to the account are automatically compliant. 
 
-- If the flow is a manually or app-triggered flow/Dataverse ‘Run as user’ flow, all users who run the flow will need a Premium license or the flow needs a Process license. Check out this FAQ on [who needs to purchase a Premium license](faqs.md#who-needs-to-purchase-a-premium-license).   
+- If the flow is a manually or app-triggered flow/Dataverse ‘Run as user’ flow, all users who run the flow will need a Premium license or the flow needs a Process license. Check out this FAQ on [who needs to purchase a Premium license](faqs.md#who-needs-to-purchase-a-premium-license).
 
 - Premium flow is in context (the flow shares the data sources of the app) of an app created using Power Apps/Dynamics 365 app: 
   - All the users who have the credentials for the service account and the service account need a Power Apps/Dynamics 365 license. 
   - If they don’t have a Power Apps/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
-  - Alternatively, the flow can be licensed with a Process license and none of the users/service account needs a license. 
+  - Alternatively, the flow can be licensed with a Process license and none of the users/service account needs a license.
 
-- Multiple users sharing credentials of a service account and using premium flows with one Power Automate premium  license assigned to the service account is considered multiplexing and the flow isn't compliant.
+- Multiple users sharing credentials of a service account and using premium flows with one Power Automate premium license assigned to the service account is considered multiplexing and the flow isn't compliant.
 
 > [!NOTE]
-> The guidance is specific to service accounts used as flow owners or run-only users. Flows using service accounts as connections or co-owners aren't impacted by this guidance. We recommed running the flows with service principal as the owner inatead of service account to avoid security risks
+> The guidance is specific to service accounts used as flow owners or run-only users. Flows using service accounts as connections or co-owners aren't impacted by this guidance. We recommed running the flows with service principal as the owner instead of service account to avoid security risks
 >
 > This is guidance only and not hard enforcement. Admins are responsible for licensing all the flows correctly to stay compliant.
 

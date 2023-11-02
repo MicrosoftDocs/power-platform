@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/14/2020
+ms.date: 09/05/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -54,19 +54,13 @@ The Power Platform communication site is a SharePoint Online template, designed 
 
 More information: [Get starter with the Power Platform communication site template](../adoption/wiki-community.md#get-started-with-the-power-platform-communication-site-template)
 
-### Center of Excellence – theming components
-
-A frequent ask from organizations in which makers create canvas apps is the ability to apply themes&mdash;specifically, the ability to create apps that match the organizational brand. The assets in this solution will help you create, manage, and share themes.
-
-The theming components solution contains assets that are relevant to makers and designers. More information: [Set up theming components](setup-theming.md) and [Use theming components](theming-components.md)
-
 ### Center of Excellence – application lifecycle management components  
 
 The application lifecycle management (ALM) components are intended to provide Power Platform makers guidance on creating healthy ALM practices for their solutions as part of their overall DevOps strategy.
 
 - **ALM Accelerator for Power Platform (AA4PP)** - Contains assets that are relevant to makers, advanced makers, maker teams, and admins. The ALM Accelerator for Power Platform provides an App and Azure Pipelines to enable Makers to source control their solutions and promote their solutions from one environment to another. Promotion of solutions can be configured to ensure the correct approvals take place at every step in the process. The user experience in the AA4PP App is configurable to allow for targeting specific user personas and roles. More information: [Set up ALM Accelerator for Power Platform components](setup-almacceleratorpowerplatform-cli.md) and [Use ALM Accelerator for Power Platform components](almacceleratorpowerplatform-components.md)
 
-- **ALM Accelerator for Makers (AA4M)** - Contains a reference app and GitHub workflows to demonstrate allow makers to source control and deploy their solutions in a limited fashion. For more robust deployment configurations including components that need to be configured as part of or after the solution deployment, it's recommended to use the ALM Accelerator for Power Platform. The GitHub integration in the ALM Accelerator for Makers will eventually be replaced by functionality in the ALM Accelerator for Power Platform, but remains as part of the CoE Starter Kit for reference. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md) and [Use ALM Accelerator for Makers components](almaccelerator-components.md)
+- **ALM Accelerator for Makers (AA4M)** - Contains a reference app and GitHub workflows to allow makers to source control and deploy their solutions in a limited fashion. For more robust deployment configurations, including components that need to be configured as part of or after the solution deployment, it's recommended to use the ALM Accelerator for Power Platform. The GitHub integration in the ALM Accelerator for Makers will eventually be replaced by functionality in the ALM Accelerator for Power Platform, but remains as part of the CoE Starter Kit for reference. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md) and [Use ALM Accelerator for Makers components](almaccelerator-components.md)
 
 ### Center of Excellence – Innovation Backlog components
 

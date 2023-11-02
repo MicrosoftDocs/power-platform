@@ -14,12 +14,24 @@ ms.reviewer: iawilt
 
 ## Create and organize topics in a way that's manageable and maintainable for your context
 
-Power Virtual Agents offers much flexibility when it comes to topic management. While there's no _one size fits all_, given how topics can be triggered, it's a good practice to distinguish between:
+Power Virtual Agents offers much flexibility when it comes to topic management. While there's no _one size fits all_, it's a good practice to keep in mind the different ways that topics can be triggered:
 > [!div class="checklist"]
 >
-> - **Topics that will trigger based on the user utterance** and the natural language understanding (NLU) model. These can almost be seen as your **entry points topics**. <br> If you have trigger phrases that overlap multiple topics, it's good to have a catch-all topic (or _disambiguation topic_) and then redirect to other topics through slot filling and clarifying questions. Thanks to entity extraction, clarifying questions can be skipped and the conversation will directly flow to the appropriate topic, without further input from the user.
-> - **Topics that will trigger when called from a redirect action**. These can contain conversation and logic nodes, can be called by multiple topics, and can have input and output variables. They're ideally **reusable, bite-size, topics**.
-> - **A topic can also be both**, triggered through intent recognition or by an explicit redirect.
+> - **Topics can trigger based on the user utterance** and the natural language understanding (NLU) model.  
+>   These topics can almost be seen as your **entry points topics**.  
+>   If you have trigger phrases that overlap multiple topics, it's good to have a catch-all topic (or _disambiguation topic_) and then redirect to other topics through slot filling and clarifying questions.  
+>   Thanks to entity extraction, clarifying questions can be skipped and the conversation will directly flow to the appropriate topic, without further input from the user.  
+>  
+> - **Topics can trigger when called from a redirect action**.  
+>   These topics can contain conversation and logic nodes, can be called by multiple topics, and can have input and output variables. They're ideally **reusable, bite-size, topics**.  
+>  
+> - **A topic can also be both**.  
+>   For example, topics triggered through intent recognition or by an explicit redirect.
+>    
+>  - **Topics can be triggered by other events**.  
+>    For example, custom events, inactivity, and so on.  
+
+See [the full list of topic triggers](/power-virtual-agents/authoring-triggers) for more information.
 
 > [!TIP]
 > In the following example, trigger phrases are associated to two main topics, that then break down their logic into multiple topics that are called with redirect actions.

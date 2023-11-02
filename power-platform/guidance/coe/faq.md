@@ -1,10 +1,10 @@
 ---
-title: "Frequently asked questions | MicrosoftDocs"
-description: "Frequently asked questions, tips, and how-to's about getting the CoE Starter Kit set up"
+title: Frequently asked questions | MicrosoftDocs
+description: Frequently asked questions, tips, and how-to's about getting the CoE Starter Kit set up.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 09/05/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -66,7 +66,7 @@ You may want to monitor and govern only certain environments with the CoE Starte
 
 ## Running a full inventory
 
-To reduce API calls, the inventory flows do not update all objects with every sync flow, they only update objects which have been modified since the object was last inventoried.
+To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects which have been modified since the object was last inventoried.
 
 The inventory flows also don't check each object every day to see if its modified date is more recent than what is in inventory. Instead these flows:
 
@@ -80,8 +80,33 @@ If your sync flows were turned off for longer than 7 days, you can only get the 
 If you want to fully update your entire inventory again, you can do that by changing the **Full inventory** environment variable:
 
 1. Set the value of the **Full inventory** environment variable to **Yes**. Learn more: [Update environment variables](#update-environment-variables)).
-1. Run the **Admin | Sync Template v3** flow.
+1. Run the **Admin | Sync Template v3 (Driver)** flow.
 1. Set the **Full inventory** environment variable to **No**.
+
+## Update inventory for a selected app or flow
+
+To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects which have been modified since the object was last inventoried.
+
+If you want to force the inventory for an app or flow, for example to make sure all the information is up-to-date, you can use the **Inventory Me** flag.
+
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
+1. Open the **Power Platform Admin View** app.
+1. Select **Apps** or **Flows**.
+1. Select the app or flow you want to inventory from the view.
+1. Select **Settings**.
+1. Change the **Inventory Me** flag to **Yes**.
+
+Once this flag has been set to **Yes**, the next inventory run updates the object, even if it hasn't recently been modified. The flag is then set back to **No**.
+
+## Customize emails
+
+All emails that are sent as part of the CoE Starter Kit are stored in the **Customized Emails** table. To customize the emails, you don't need to modify the flows or apps that send the emails. Instead, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app.
+
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
+1. Open the **CoE Admin Command Center** app.
+1. Select **Customized Emails**.
+1. Select the email you want to customize, and then select **Edit**.
+1. By default, all emails are provided in English. You can also add localized versions of the email by selecting **Add language**.
 
 ## Update environment variables
 
@@ -89,21 +114,30 @@ The following limitations apply when updating environment variables:
 
 - You can't update the values for environment variables from within the imported solution.
 - You need to always add or update a current value, not the default value, because the default value will be overwritten when you install an upgrade.
+- You can't update Azure Key Vault secret environment variables using the CoE Admin Command Center. Instead, update them via the **Default Solution**.
 
 To update environment variables, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center)
 
-1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
 1. Open the **CoE Admin Command Center** app.
 1. Select **Environment Variables**, and update the current value.
 
     ![Update environment variable values in the CoE Admin Command Center app.](media/tips-command1.png "Update environment variable values in the CoE Admin Command Center app")
 
-If you aren't using the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, do the following to update environment variables:
+If you aren't using the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, update environment variables directly in the environment. This is also the only way to update Azure Key Vault secret environment variables.
 
 1. Go to [Power Automate](https://make.powerautomate.com).
 1. On the left pane, select **Solutions**.
 1. Select the **Default Solution**, and change the filter to show **Environment variables**.
 1. Select a variable that you want to update, and then configure its **Current Value**.
+1. If you are updating an Azure Key Vault secret environment variable, enter the following information:
+    - **Azure Subscription ID**: The Azure subscription ID associated with the key vault.
+    - **Resource Group Name**: The Azure resource group where the key vault that contains the secret is located.
+    - **Azure Key Vault Name**: The name of the key vault that contains the secret.
+    - **Secret Name**: The name of the secret located in Azure Key Vault.
+
+  > [!TIP]
+  > The subscription ID, resource group name, and key vault name can be found on the Azure portal **Overview** page of the key vault. The secret name can be found on the key vault page in the Azure portal by selecting **Secrets** under **Settings**.
 
 ## Update connection references
 

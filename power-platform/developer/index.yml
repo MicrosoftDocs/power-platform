@@ -92,7 +92,7 @@ landingContent:
             url: tools-alm.md 
           - text: Dataverse developer tools
             url: tools-dataverse.md
-          - text: Visual Studio connected service (Preview)
+          - text: Visual Studio connected service
             url: visual-studio-connected-service.md                          
       
   # Card

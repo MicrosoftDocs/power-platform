@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 09/05/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -32,7 +32,7 @@ This set of functionality allows you to detect frequently used apps and chatbots
 1. This app provides a guided step by step experience through the configuration steps.
         :::image type="content" source="media/setupwizard-compliance.png" alt-text="CoE Starter Kit Setup Wizard":::
 
->[!NOTE]
+> [!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
 ## Set up the Developer Compliance  request components manually
@@ -41,12 +41,12 @@ This set of functionality allows you to detect frequently used apps and chatbots
 
 This step will be completed after you import the solution. Environment variables are used to store application and flow configuration data. Using environment variables means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
 
->[!TIP]
->Learn how to update environment variables: [Update Environment Variables](faq.md#update-environment-variables).
+> [!TIP]
+> Learn how to update environment variables: [Update Environment Variables](faq.md#update-environment-variables).
 
 | Name | Description |
 |------|---------------|
-| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) |
+| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** app. More information: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) |
 
 ### Exempt environments from the compliance process
 
@@ -79,11 +79,11 @@ Turn on these flows that are installed as part of the Core components solution:
 
 ### Share apps with makers
 
-The Governance Components solution contains the [**Developer Compliance Center**](governance-components.md#developer-compliance-center) canvas app, which is used by makers to update the compliance details of their applications. Share these apps with your Power Platform makers and assign them the **Power Platform Maker SR** security role.
+The Governance Components solution contains the [**Developer Compliance Center**](governance-components.md#developer-compliance-center) app, which is used by makers to update the compliance details of their applications. Share these apps with your Power Platform makers and assign them the **Power Platform Maker SR** security role.
 
 More information:
 
-- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+- [Share an app in Power Apps](faq.md#share-an-app-from-a-production-environment)
 
 Your app, flow, and bot makers will use the Developer Compliance Center app to provide further information about the resources they're building. Get familiar with the [audit process](example-processes.md) and share the app with your makers.
 
@@ -100,7 +100,7 @@ Environment variables are used to store application and flow configuration data 
 
 | Name | Description | Default Value |
 |------|---------------|------|
-| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) | n/a |
+| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** app. More information: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) | n/a |
 | Compliance – Apps – Number Days Since Published | If an app is broadly shared and was last published this many days ago or older, makers are asked to republish the app to stay compliant | 60 |
 | Compliance – Apps – Number Groups Shared | If the app is shared with this many or more groups, makers are asked for a business justification | 1 |
 | Compliance – Apps – Number Launches Last 30 Days | If the app was launched at least this many times in the last 30 days, makers are asked for a business justification | 30 |
