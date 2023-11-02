@@ -13,6 +13,7 @@ search.audienceType:
 ms.contributors:
 - matleon
 - swatim
+- alvaror
 ---
 # General availability deployment
 
@@ -29,6 +30,12 @@ Each notification from the Message Center includes dates, the maintenance window
 > If you have enabled the early access updates in your environments, you'll continue getting updates throughout the release wave.
 >
 >If you did not opt in for the early access updates in your environments, your environment will be automatically updated to receive the new release based on the general availability deployment schedule for your region.  
+
+> [!NOTE]
+> The wave release is a mandatory update and cannot be postponed.
+> The wave release will process as part of the weekly Dataverse update during your dark hours.
+> The exact duration and timing of the wave release is not known in advance. It depends on the time to process weekly updates.
+> Bonus - SPL needs to be added to the GA page for schedule.
 
 ## Deployment schedule  
 
