@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 09/10/2022
+ms.date: 11/1/2023
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -131,6 +131,8 @@ Other elements include:
 
 **[DateDiff](reference/function-dateadd-datediff.md)** – Subtracts two date values, and shows the result in days, months, quarters, or years.
 
+**[DateTime](reference/function-date-time.md)** – Returns a date/time value, based on both date and time components.
+
 **[DateTimeValue](reference/function-datevalue-timevalue.md)** – Converts a date and time string to a date/time value.
 
 **[DateValue](reference/function-datevalue-timevalue.md)** – Converts a date-only string to a date/time value.
@@ -151,6 +153,8 @@ Other elements include:
 
 ## E
 
+**[EDate](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, without changing the day of the month.
+
 **[EditForm](reference/function-form.md)** – Resets a form control for editing of an item.
 
 **[Enable](reference/function-enable-disable.md)** – Enables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
@@ -158,6 +162,8 @@ Other elements include:
 **[EncodeUrl](reference/function-encode-decode.md)** – Encodes special characters using URL encoding.
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
+
+**[EOMonth](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, returning the last day of that month.
 
 **[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
