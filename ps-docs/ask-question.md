@@ -35,7 +35,7 @@ You'll get more information about your question including a an overivew and sugg
 
 ## Ask questions about your data
 
-You can upload a data file and ask questions about the data. The supported file formats are .csv, .xlsx, and .pdf. For preview, the **connect to data** option isn’t available.
+You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. For preview, the **connect to data** option isn’t available.
 
 1. Use one of the following methods to ask questions about your data:
    - From the Home screen, on the **Onboarding** section, select **Go** > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
@@ -43,11 +43,10 @@ You can upload a data file and ask questions about the data. The supported file 
 2. Select the file name and then select **Open**.
 3. Select **Generate** or enter your question in the text box and then select **Generate**.
 
-You'll get more information about your question including a an overivew and suggested next steps.
+A tailored template is generated based on the data that includes insights, charts, and next actions.
 
 > [!div class="mx-imgBorder"]
 > ![Ask a question about your data in Project "Sophia".](media/ask-question-about-data.png)
-
 
 
 ### Supported data files
