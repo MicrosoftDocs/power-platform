@@ -27,4 +27,4 @@ When content is generated, follow these steps to use the AI cursor:
 3. Select **Generate** or press **Enter**.
 
    > [!div class="mx-imgBorder"]
-   > ![Use the AI cursor.](media/ai-cursor-plan.png)
+   > ![Use the AI cursor.](media/ai-cursor.png)
