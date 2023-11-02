@@ -25,7 +25,11 @@
         - name: Formula reference
           items:
           - name: Overview
+            href: formula-reference-overview.md
+          - name: Power Apps formula reference
             href: formula-reference.md
+          - name: Dataverse formula reference
+            href: formula-reference-dataverse.md
           - name: Abs
             href: reference/function-numericals.md
           - name: Acceleration
@@ -116,12 +120,16 @@
             href: reference/function-dateadd-datediff.md
           - name: DateDiff
             href: reference/function-dateadd-datediff.md
+          - name: DateTime
+            href: reference/function-date-time.md            
           - name: DateTimeValue
             href: reference/function-datevalue-timevalue.md
           - name: DateValue
             href: reference/function-datevalue-timevalue.md
           - name: Day
             href: reference/function-datetime-parts.md
+          - name: Dec2Hex
+            href: reference/function-hexdec.md
           - name: Defaults
             href: reference/function-defaults.md
           - name: Degrees
@@ -134,6 +142,8 @@
             href: reference/function-download.md
           - name: DropColumns
             href: reference/function-table-shaping.md
+          - name: EDate
+            href: reference/function-edate-eomonth.md
           - name: EditForm
             href: reference/function-form.md
           - name: Enable
@@ -142,6 +152,8 @@
             href: reference/function-encode-decode.md
           - name: EndsWith
             href: reference/function-startswith.md
+          - name: EOMonth
+            href: reference/function-edate-eomonth.md
           - name: Error
             href: reference/function-iferror.md
           - name: Errors
@@ -168,6 +180,10 @@
             href: reference/function-guid.md
           - name: HashTags
             href: reference/function-hashtags.md
+          - name: Hex2Dec
+            href: reference/function-hexdec.md
+          - name: Help
+            href: reference/function-help.md            
           - name: Host
             href: reference/object-host.md
           - name: Hour

@@ -61,6 +61,9 @@ Make sure you have the System Administrator or System Customizer security role o
 ### Set the telephony provider
 Choose which provider to enable outbound calls from within customer engagement apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.
 
+> [!Note]
+> This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)
+
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Use Skype|  More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)| Enabled |

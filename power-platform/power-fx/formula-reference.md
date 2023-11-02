@@ -1,11 +1,11 @@
 ---
-title: Power Fx formula reference for Power Apps
-description: Reference information for functions, signals, and enumerations in Power Apps.
+title: Formula reference - Power Apps
+description: Reference information for all functions in Power Apps.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 09/10/2022
+ms.date: 11/1/2023
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -16,9 +16,11 @@ contributors:
   - jorisdg
 ---
 
-# Power Fx formula reference for Power Apps
+# Formula reference - Power Apps
 
-Formulas combine many elements. Listed below are:
+In this article, learn about all the functions available in Power Apps.
+
+Formulas in Power Apps combine many elements. Listed below are:
 
 - **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are modeled after Microsoft Excel functions. Some functions have side effects, such as **SubmitForm**, which are appropriate only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) such as **Button.OnSelect**.
 - **Signals** return information about the environment. For example, **[Location](reference/signals.md)** returns the device's current GPS coordinates. Signals don't take parameters or have side effects.
@@ -129,11 +131,15 @@ Other elements include:
 
 **[DateDiff](reference/function-dateadd-datediff.md)** – Subtracts two date values, and shows the result in days, months, quarters, or years.
 
+**[DateTime](reference/function-date-time.md)** – Returns a date/time value, based on both date and time components.
+
 **[DateTimeValue](reference/function-datevalue-timevalue.md)** – Converts a date and time string to a date/time value.
 
 **[DateValue](reference/function-datevalue-timevalue.md)** – Converts a date-only string to a date/time value.
 
 **[Day](reference/function-datetime-parts.md)** – Retrieves the day portion of a date/time value.
+
+**[Dec2Hex](reference/function-hexdec.md)** – Convert a number to a hexadecimal text string.
 
 **[Defaults](reference/function-defaults.md)** – Returns the default values for a data source.
 
@@ -149,6 +155,8 @@ Other elements include:
 
 ## E
 
+**[EDate](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, without changing the day of the month.
+
 **[EditForm](reference/function-form.md)** – Resets a form control for editing of an item.
 
 **[Enable](reference/function-enable-disable.md)** – Enables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
@@ -157,11 +165,13 @@ Other elements include:
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
 
+**[EOMonth](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, returning the last day of that month.
+
 **[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
 **[Errors](reference/function-errors.md)** – Provides error information for previous changes to a data source.
 
-**[exactin](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
+**[exactin](reference/operators.md #in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
 
 **[Exit](reference/function-exit.md)** – Exits the currently running app and optionally signs out the current user.
 
@@ -189,6 +199,8 @@ Other elements include:
 
 **[HashTags](reference/function-hashtags.md)** – Extracts the hashtags (#strings) from a string.
 
+**[Hex2Dec](reference/function-hexdec.md)** – Convert a hexadecimal text string to a number.
+
 **[Host](reference/object-host.md)** - Provides information about the current host running the app.
 
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
@@ -200,7 +212,7 @@ Other elements include:
 
 **[IfError](reference/function-iferror.md)** - Detects errors and provides an alternative value or takes action.
 
-**[in](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
+**[in](reference/operators.md #in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
 
 **[Index](reference/function-first-last.md)** – Returns a record from a table based on ordered position.
 
@@ -294,7 +306,7 @@ Other elements include:
 
 **[Param](reference/function-param.md)** – Access parameters passed to a canvas app when launched.
 
-**[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
+**[Parent](reference/operators.md #self-and-parent-operators)** – Provides access to a container control's properties.
 
 **[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
 
@@ -362,7 +374,7 @@ Other elements include:
 
 **[Select](reference/function-select.md)** – Simulates a select action on a control, causing the **OnSelect** formula to be evaluated.
 
-**[Self](reference/operators.md#self-and-parent-operators)** – Provides access to the properties of the current control.
+**[Self](reference/operators.md #self-and-parent-operators)** – Provides access to the properties of the current control.
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
 
@@ -408,9 +420,9 @@ Other elements include:
 
 **[Text](reference/function-text.md)** – Converts any value and formats a number or date/time value to a string of text.
 
-**[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a gallery or form control.
+**[ThisItem](reference/operators.md #thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a gallery or form control.
 
-**[ThisRecord](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a record scope function, such as **ForAll**, **With**, and **Sum**.
+**[ThisRecord](reference/operators.md #thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a record scope function, such as **ForAll**, **With**, and **Sum**.
 
 **[Time](reference/function-date-time.md)** – Returns a date/time value, based on **Hour**, **Minute**, and **Second** values.
 
@@ -470,4 +482,4 @@ Other elements include:
 
 **[Year](reference/function-datetime-parts.md)** – Retrieves the year portion of a date/time value.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

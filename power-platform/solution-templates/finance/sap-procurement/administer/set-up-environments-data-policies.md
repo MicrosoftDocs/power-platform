@@ -1,6 +1,6 @@
 ---
 title: Set up environments and data policies
-description: Learn best practices for setting up environments and data policies to support the deployment of the SAP Procurement Accelerator solutions.
+description: Learn best practices for setting up environments and data policies to support the deployment of the SAP Procurement solutions.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -14,7 +14,7 @@ contributors:
   - scottwoodallmsft
   - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: install-set-up-deploy
+ms.topic: how-to
 ms.date: 08/18/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -40,12 +40,7 @@ First, make certain that members of your team are assigned admin roles:
 - Microsoft Power Platform System admin
 - Dynamics 365 Global admin
 
-More information:
-
-- [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
-- [Use service admin roles to manage your tenant](/power-platform/admin/use-service-admin-role-manage-tenant)
-- [Management and monitoring](/power-platform/admin/wp-management-monitoring)
-- [Working with the admin portals](/power-platform/admin/wp-work-with-admin-portals)
+As an admin, please review [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation). You can also review [Use service admin roles to manage your tenant](/power-platform/admin/use-service-admin-role-manage-tenant), [Management and monitoring](/power-platform/admin/wp-management-monitoring), and [Working with the admin portals](/power-platform/admin/wp-work-with-admin-portals) to gain more insight on how your organization can best secure and manage an SAP + Power Platform deployment.
 
 Next, review your organization's current Power Platform administration and governance practices with your team. Identify strengths and opportunities for improvement. This is also a good time to review [Microsoft Power Platform best practices](/power-platform/guidance/adoption/methodology).
 
@@ -64,11 +59,7 @@ Installing, configuring, testing, and running [solutions](/power-apps/maker/data
 > [!NOTE]
 > Each environment requires that a [Microsoft Dataverse database](/power-platform/admin/create-database) be created for it.
 
-More information:
-
-- [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy)
-- [Manage Microsoft Dataverse settings](/power-platform/admin/admin-settings)
-- [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)
+More information: [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy), [Manage Microsoft Dataverse settings](/power-platform/admin/admin-settings), [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)
 
 ## Enable managed environments
 
