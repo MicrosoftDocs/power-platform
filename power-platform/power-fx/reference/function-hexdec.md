@@ -49,15 +49,15 @@ If the input value is out of range or includes invalid hexadecimal characters, a
 
 | Formula | Result |
 | --- | --- |
-| `Hex2Dec( "A5" )` | 165 |
-| `Hex2Dec( "FFFFFFFF5B")` | -165 |
-| `Hex2Dec( "c8d" )` | 3213 |
-| `Hex2Dec( "fffffff373" )` | -3213 |
-| `Hex2Dec( "ffffffffff" )` | -1 |
-| `Hex2Dec( "ffffffffffff" )` | *error* (out of range) |
-| `Hex2Dec( "43j" )` | *error* (invalid hexadecimal character) |
-| `Hex2Dec( [ "A", "12", "FFFF" ] )` | [ 10, 18, 65535 ] |
-| `Hex2Dec( [ "3", "E", "I", "B" ] )` | [ 3, 14, *error* (invalid hexadecimal character), 11 ]
+| `Hex2Dec( "A5" )` | `165` |
+| `Hex2Dec( "FFFFFFFF5B")` | `-165` |
+| `Hex2Dec( "c8d" )` | `3213` |
+| `Hex2Dec( "fffffff373" )` | `-3213` |
+| `Hex2Dec( "ffffffffff" )` | `-1` |
+| `Hex2Dec( "ffffffffffff" )` | `error (out of range)` |
+| `Hex2Dec( "43j" )` | `error (invalid hexadecimal character)` |
+| `Hex2Dec( [ "A", "12", "FFFF" ] )` | `[ 10, 18, 65535 ]` |
+| `Hex2Dec( [ "3", "E", "I", "B" ] )` | `[ 3, 14, error (invalid hexadecimal character), 11 ]` |
 
 ### Basic usage of Dec2Hex
 
@@ -97,3 +97,5 @@ If the input value is out of range or includes invalid hexadecimal characters, a
 | `Dec2Hex( [ 10, 255, -16 ], [ 1, 2, 3 ] )`      | `[ "A", "FF", "FFFFFFFFF0" ]` |
 | `Dec2Hex( [ 10, 255, -16 ], 4 )`   | `[ "000A", "00FF", "FFFFFFFFF0" ]` |
 | `Dec2Hex( 255, [0, 1, 2, 3] )`   | `[ error (not enough space), error (not enough space), "FF", "0FF" ]` |
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
