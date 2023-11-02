@@ -10,9 +10,10 @@ ms.reviewer: iawilt
 ---
 # Add feedback for every response 
 
+
 As a bot owner, obtaining feedback from users is a vital step in improving the effectiveness and reliability of your conversational agent. It allows you to gain valuable insights into how well your bot is performing, identify areas for enhancement, and ultimately deliver a more satisfying user experience. 
-In this article, we will show you how to use Adaptive Cards to collect user feedback after every interaction with your chatbot without being annoying to the user. Whether you're building a customer support bot, an informational assistant, or any other type of conversational agent, implementing this feedback mechanism will allow you to assess and enhance the quality of responses while ensuring user satisfaction. For this tutorial, I’m using a “Generative Answer” but this approach can be used for any response type as well.
-Final output of this tutorial will look like below:
+In this article, we show you how to use Adaptive Cards to collect user feedback after every interaction with your chatbot without being annoying to the user. Whether you're building a customer support bot, an informational assistant, or any other type of conversational agent, implementing this feedback mechanism will allow you to assess and enhance the quality of responses while ensuring user satisfaction. For this tutorial, I’m using a “Generative Answer” but this approach can be used for any response type as well.
+The final output of this tutorial shows a message after the bot's response that says "Generated answer, please rate it".
 
 ![FinalOutput](./media/AdaptiveCard/FinalOutput.png)
 
@@ -21,7 +22,7 @@ Final output of this tutorial will look like below:
 
 2.	Under Advanced, select Generative answers.
 
-3.	A new node, called Create generative answers will be added to your topic, and will open the Properties pane automatically. 
+3.	A new node, called Create generative answers, is added to your topic, and the Properties pane is automatically opened. 
 
 4.	Under Data Source  Public website add any public website, like https://learn.microsoft.com/
 

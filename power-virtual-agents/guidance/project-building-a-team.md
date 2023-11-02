@@ -25,7 +25,7 @@ Most customers treat a Chatbot implementation like any other project. It usually
 
 **3rd party Delivery partner (where applicable)** 
 
-This is typically a System Integrator that leads various activities: 
+The 3rd party delivery partner is typically a System Integrator that leads various activities: 
     
 1. **Project management** including setting up workstreams and reviews with customer
     
@@ -59,17 +59,17 @@ This is typically a System Integrator that leads various activities:
 
 ## Training your team 
 
-For organizations that are new to building PVA chatbots, it is likely there are some training needs required for the 
+For organizations that are new to building Power Virtual Agents chatbots, it is likely there are some training needs required for the 
 customer to be familiar with the technology. The following resources can be leveraged to assist customers with 
-building PVA chatbots, [aka.ms/LearnPVA.](https://powervirtualagents.microsoft.com/blog/new-years-resolution-build-powerful-conversational-bots/)
+building Power Virtual Agents chatbots, [aka.ms/LearnPVA.](https://powervirtualagents.microsoft.com/blog/new-years-resolution-build-powerful-conversational-bots/)
 
 Training can be delivered through various channels. These channels include Technical Sales Professionals (TSPs), 
 Microsoft Technology Center (MTC) Architects and Microsoft certified partners. In exceptional circumstances, 
 engineering resources like Power CAT may be able to facilitate these sessions. 
 
-| **PVA in a Day** |
+| **Power Virtual Agents in a Day** |
 |---|
-| **[PVA in a Day](https://powervirtualagents.microsoft.com/blog/power-virtual-agents-in-a-day-update-new-canvas-new-content/) is an instructor led, hands-on course that will familiarize chatbot makers with Power Virtual Agents. The content includes:** 
+| **[Power Virtual Agents in a Day](https://powervirtualagents.microsoft.com/blog/power-virtual-agents-in-a-day-update-new-canvas-new-content/) is an instructor led, hands-on course that familiarizes chatbot makers with Power Virtual Agents. The content includes:** 
 - Build your first chatbot
 - Topic suggestions
 - Improve your chatbot with entitiesvariables and topic redirect 
@@ -82,13 +82,13 @@ engineering resources like Power CAT may be able to facilitate these sessions.
 - Extend your bot using Bot Framework Skill (Optional) 
 - Add a telephone number to your bot using AudioCodes (Optional)
 
-| **PVA Architecture Series** |
+| **Power Virtual Agents Architecture Series** |
 |---|
-**The [PVA Architecture Series](https://www.youtube.com/playlist?list=PLi9EhCY4z99Xrdvy3Ya8wx-8KzsOpMj0S) is another resource that can be consumed on-demand. This content focuses on considerations that customers should account for when embarking on a chatbot project. The content includes:** |
+**The [Power Virtual Agents Architecture Series](https://www.youtube.com/playlist?list=PLi9EhCY4z99Xrdvy3Ya8wx-8KzsOpMj0S) is another resource that can be consumed on-demand. This content focuses on considerations that customers should account for when embarking on a chatbot project. The content includes:** |
 - Planning your first chatbot
 - Building your first chatbot
-- Extending your PVA chatbot with the Power Platform 
-- Extending your PVA chatbot with the Bot Framework (not sure)
+- Extending your Power Virtual Agents chatbot with the Power Platform 
+- Extending your Power Virtual Agents chatbot with the Bot Framework (not sure)
 - Advanced topics
 - Security and Governance.
    

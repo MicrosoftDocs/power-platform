@@ -11,9 +11,9 @@ ms.reviewer: iawilt
 # Display Data from Arrays in Adaptive Cards
 
 Adaptive Cards are a versatile tool that can be used to create interactive and engaging conversations in Power Virtual Agents. 
-In this document, we will learn how to display array items in Adaptive Cards in Power Virtual Agents. We will use a hard-coded example for simplicity, but in a real-life scenario, you would likely get the data from a more dynamic source like SharePoint list etc. by leveraging Power Automate.
+In this document, you'll learn how to display array items in Adaptive Cards in Power Virtual Agents. We will use a hard-coded example for simplicity, but in a real-life scenario, you would likely get the data from a more dynamic source like SharePoint list etc. by leveraging Power Automate.
 
-Let’s say that you have a list of tasks in an array, and you want to show the list of tasks in the bot like below: 
+Let’s say that you have a list of tasks in an array, and you want to show the list of tasks in the bot. 
 
 ![Finaloutput](./media/AdaptiveCard/EMPtask.png)
 
@@ -52,7 +52,7 @@ Let’s say that you have a list of tasks in an array, and you want to show the 
 ```
 ## Parse the JSON Data into a Table
 
-Use Parse value node to convert the JSON string into Table. Copy and paste the same JSON into the “From sample data” section of the data type settings. This will automatically generate the schema and datatype. 
+Use Parse value node to convert the JSON string into Table. Copy and paste the same JSON into the “From sample data” section of the data type settings. This automatically generates the schema and datatype. 
 Save the parsed table as a variable, which you can reference later. For example, save it as a variable named TaskTable.
 
 ![Task Table](./media/AdaptiveCard/TaskTable.png)
@@ -113,7 +113,7 @@ Paste the following JSON code
 
 1.	Now we can refer the JSON record properties using expressions like "Topic.TaskTable.employeeName." 
 
-1.	To display array items in an Adaptive Card, use the Container element with the items property. The items property takes an array of elements as its value. Each element in the array will be displayed in the Adaptive Card, using  ['ForAll'](https://learn.microsoft.com/power-platform/power-fx/reference/function-forall) function. Reference the "Topic.TaskTable.employeeTasks" array, it will  allow to access each of its properties.
+1.	To display array items in an Adaptive Card, use the Container element with the items property. The items property takes an array of elements as its value. Each element in the array is displayed in the Adaptive Card, using  ['ForAll'](https://learn.microsoft.com/power-platform/power-fx/reference/function-forall) function. Reference the "Topic.TaskTable.employeeTasks" array, it will  allow to access each of its properties.
 
 Paste the YAML code in the code editor view. You can access this option at the top right corner of a new topic. 
 

@@ -13,10 +13,10 @@ ms.reviewer: iawilt
 
 Engagement Principles 
 Adoption of low-code technologies like Power Virtual Agents can help customers envision and deliver quickly, with 
-lower management and maintenance costs. Even with those benefits, it is beneficial to be clear on the reasons you are 
-adopting this technology, and how it will show its value. 
+lower management and maintenance costs. Even with those benefits, it is beneficial to be clear on the reasons you're 
+adopting this technology, and how it shows its value. 
 Customers approaching a Power Virtual Agents project should align project delivery with their own company culture 
-and objectives. However, there are some core principles that we see adopted again and again amongst successful PVA 
+and objectives. However, there are some core principles that we see adopted again and again amongst successful Power Virtual Agents 
 projects: 
 ## <center>Principles</center> 
 
@@ -26,13 +26,13 @@ projects:
 
  | **Engage your flywheel** | **Keep it simple** | **Keep goals in focus** |
  |---|---|---|
- |Many customers are surprised when their PVA bot goes live how quickly the “customer feedback flywheel” takes effect. Actionable customer feedback comes in almost instantly.Delaying for additional topics or processes means missing out on this valuable feedback. Encourage the team to see the go-live as the beginning of your project, not the finale.|One of the core value propositions of Power Virtual Agents is iteratively delivering a conversational AI experience quickly. After the go-live by a project team, who is familiar with how the bot has been developed, maintainability is key to staying agile. While the tooling can allow users to create complex conversation flows, and extensibility with Bot Framework can achieve very flexible interactions, there should be careful consideration if complexity is always necessary.|It’s very easy when implementing new technology like a chatbot, to get wrapped in the minor details of implementation. Defining what your key business goals are (e.g., deflect 30% customer queries, score above 4.0 customer satisfaction), can help keep the project moving and ensure correct feature prioritization.|
+ |Many customers are surprised when their Power Virtual Agents bot goes live how quickly the “customer feedback flywheel” takes effect. Actionable customer feedback comes in almost instantly.Delaying for additional topics or processes means missing out on this valuable feedback. Encourage the team to see the go-live as the beginning of your project, not the finale.|One of the core value propositions of Power Virtual Agents is iteratively delivering a conversational AI experience quickly. After the go-live by a project team, who is familiar with how the bot has been developed, maintainability is key to staying agile. While the tooling can allow users to create complex conversation flows, and extensibility with Bot Framework can achieve flexible interactions, there should be careful consideration if complexity is always necessary.|It’s easy when implementing new technology like a chatbot, to get wrapped in the minor details of implementation. Defining what your key business goals are (e.g., deflect 30% customer queries, score above 4.0 customer satisfaction), can help keep the project moving and ensure correct feature prioritization.|
 
  ## Best Practices - Summary 
-Here is a short breakdown of the best practices we view as most important and will become clearer throughout the document. 
+Here is a short breakdown of the best practices we view as most important and that we discuss further in this article. 
 1. **Focus on delivering immediate value.** 
 
-      Building chatbots is an iterative initiative. You will learn from your users what they are looking for. Use these signals to drive further    investment. 
+      Building chatbots is an iterative initiative. You'll learn from your users what they are looking for. Use these signals to drive further    investment. 
 2. **Establish role clarity**  
 
       Make it clear who is on point to make decisions and there is no ambiguity in delivery. 
