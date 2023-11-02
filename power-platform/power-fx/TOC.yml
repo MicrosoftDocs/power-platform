@@ -133,7 +133,7 @@
           - name: Dec2Hex
             href: reference/function-hexdec.md
           - name: Decimal
-            href: reference/function-decimal.md
+            href: reference/function-value.md
           - name: Defaults
             href: reference/function-defaults.md
           - name: Degrees
@@ -177,7 +177,7 @@
           - name: FirstN
             href: reference/function-first-last.md
           - name: Float
-            href: reference/function-float.md
+            href: reference/function-value.md
           - name: ForAll
             href: reference/function-forall.md
           - name: GroupBy

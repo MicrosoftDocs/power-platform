@@ -191,7 +191,7 @@ As a best practice, hold data in memory only as long as necessary. Upload images
 ## Numbers
 
 > [!NOTE]
-> Power Apps only supports **Float** today and it is the type of all numbers.  **Decimal** support will be added by the end of 2024.
+> Power Apps only supports **Float** today and it is the type of all numbers.  **Decimal** support will be added soon.
 
 Power Fx supports two kinds of numbers: **Decimal** and **Float** (with synonyms **Number** and **Currency**).
 
@@ -220,7 +220,7 @@ Database systems often store currencies and perform calculations by using decima
 ### Defaults and conversions
 
 > [!NOTE]
-> Power Apps only supports **Float** today and it is the type of all numbers.  **Decimal** support will be added by the end of 2024.
+> Power Apps only supports **Float** today and it is the type of all numbers.  **Decimal** support will be added soon.
 
 Most Power Fx hosts use **Decimal** by default.  This impacts:
 - Literal numbers in formulas.  The number `1.234` will be interpreted as a **Decimal** value.  For example, the formula `1.234 * 2` will interpret the `1.234` and `2` as **Decimal** and return a **Decimal** result.
