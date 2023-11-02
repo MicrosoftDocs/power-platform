@@ -111,10 +111,35 @@ Make sure you have the System Administrator permission to update the setting.
   
 3. On the menu bar, select **Change Business Unit**.  
   
-4. In the **Change Business Unit** dialog box, select a business unit. Enable **Move records to new business unit** to move to a new business unit. Select **OK**. 
-  
-    In the legacy web client, in the **Change Business Unit** dialog box, use the **Lookup** button (![Lookup button.](media/lookup-4.png)) to select a business unit.  
+4. In the **Change Business Unit** dialog box, select a business unit. Select **OK**.
 
+   The default setting is to **Move records to new business unit**. You can change this option by changing the [**AlwaysMoveRecordToOwnerBusinessUnit** database setting](#role-assignment-removal-and-user-records-business-unit-movement-database-settings)  .
+
+ > [!IMPORTANT] 
+>   You can also change the user's business unit in the legacy User web client on:
+>
+>   1.  User detail form
+>      
+>       a. Scroll down to the **Organization Information** section.
+>       
+>       b. Click on the Business Unit **Lookup** button (![Lookup button.](media/lookup-4.png)) and select a different business unit.
+>       
+>        **Note**
+>        Changing the user's business unit on this User detail form will honor the [role assignment removal and/or user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
+>        
+>   2.  User detail form's Action bar **CHANGE BUSINESS UNIT** action
+>      
+>       a. Click on **CHANGE BUSINESS UNIT** action.
+>       
+>       b. A **Change Business Unit** dialog box will appear.
+>       
+>       c. Click on the Business Unit **Lookup** button (![Lookup button.](media/lookup-4.png)) and select a different business unit. 
+>
+>       **Note**
+>        Changing the user's business unit on this dialog box will **not** honor the [role assignment removal and/or user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings. 
+>        The user's role assignments will be removed and the user records' business unit will be moved to new business unit.
+   
+#### Role assignment removal and user records' business unit movement database settings
 > [!NOTE] 
 > If you have enabled [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use the following [environment database settings](environment-database-settings.md) to manage your user security role and how you want to move the user’s records when you are changing the user’s business unit.
 > 
