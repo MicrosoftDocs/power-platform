@@ -1,4 +1,9 @@
 - name: Overview (preview)
   href: overview.md
-  - name: Explore a topic
-    href: ask-question.md
+- name: Explore a topic
+  href: ask-question.md
+- name: Account planning guide
+  href: account-planning-guide.md
+- name: What is a workspace?
+  href: workspace.md
+
