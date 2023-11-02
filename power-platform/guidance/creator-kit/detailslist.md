@@ -248,7 +248,7 @@ This will give the following result:
 Using a cell type of `tag` or `indicatortag` you can create inline colored tags to display the cell content.
 
 - `tag` - This will show a tag box with a colored background and border
-- `tagindicator` - Shows a tag box with a colored circle indicator
+- `indicatortag` - Shows a tag box with a colored circle indicator
 
 The colors can vary by row, and so the column metadata dataset simply provides the name of the columns that holds the colors for the tags.
 
@@ -273,7 +273,7 @@ ClearCollect(
 );
 ```
 
-You could then add the column metadata to add two columns, one displayed as a tag and the other as a tagindicator - each using the TagColor and TagBorderColor columns to determine the colors:
+You could then add the column metadata to add two columns, one displayed as a tag and the other as a indicatortag - each using the TagColor and TagBorderColor columns to determine the colors:
 
 ```powerapps-dot
 {
