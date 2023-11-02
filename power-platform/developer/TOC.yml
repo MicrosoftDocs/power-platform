@@ -89,7 +89,7 @@
           items:
             - name: What is Power Platform CLI
               href: cli\introduction.md
-            - name: pac power-fx commands
+            - name: Use Power Fx with Power Platform CLI
               href: cli\use-pac-power-fx.md
             - name: Power Platform CLI reference
               href: cli\reference\index.md
