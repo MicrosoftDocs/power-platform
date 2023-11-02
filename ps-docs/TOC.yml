@@ -1,6 +1,6 @@
 - name: Project "Sophia" (preview)
-  items: 
-  - name: Overview 
+  items:
+  - name: Project "Sophia" (preview) 
     href: overview.md
   - name: Explore a topic
     href: ask-question.md
