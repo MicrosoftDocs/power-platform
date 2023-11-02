@@ -27,6 +27,12 @@ When you can ask Project "Sophia" a question or upload data and ask questions ab
 2. From the Home screen select **New workspace**.
 3. Enter your question in the text box and then select **Generate**.
 
+You'll get more information about your question including a an overivew and suggested next steps.
+
+> [!div class="mx-imgBorder"]
+> ![Ask a question in Project "Sophia".](media/ask-question.png)
+
+
 ## Ask questions about your data
 
 You can upload a data file and ask questions about the data. The supported file formats are .csv, .xlsx, and .pdf. For preview, the **connect to data** option isn’t available.
@@ -36,6 +42,12 @@ You can upload a data file and ask questions about the data. The supported file 
    - From the Home screen select, **New workspace** > **Upload or connect to data** > **Upload a file**.
 2. Select the file name and then select **Open**.
 3. Select **Generate** or enter your question in the text box and then select **Generate**.
+
+You'll get more information about your question including a an overivew and suggested next steps.
+
+> [!div class="mx-imgBorder"]
+> ![Ask a question about your data in Project "Sophia".](media/ask-question-about-data.png)
+
 
 
 ### Supported data files
