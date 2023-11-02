@@ -1,19 +1,19 @@
 ---
 title: OptionSetInfo function
 description: Reference information including syntax and examples for the OptionSetInfo function.
-author: snizar007
+author: gregli-msft
 ms.topic: reference
-ms.reviewer: jdaly
-ms.date: 11/5/2023
+ms.custom: canvas
+ms.reviewer: mkaur
+ms.date: 11/05/2023
 ms.subservice: power-fx
-ms.author: snizar
+ms.author: gregli
 search.audienceType:
-  - developer
+  - maker
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
-  - JimDaly
 ---
 # OptionSetInfo function
 

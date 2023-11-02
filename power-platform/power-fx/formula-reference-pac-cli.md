@@ -1,13 +1,13 @@
 ---
 title: Formula reference - Pac CLI
-description: Reference information for functions, signals, and enumerations in Pac CLI.
+description: Reference information for functions, signals, and enumerations in Pac CLI pac power-fx commands.
 author: snizar007
 ms.topic: reference
-ms.custom: canvas
 ms.reviewer: jdaly
 ms.date: 11/5/2023
 ms.subservice: power-fx
 ms.author: snizar
+ms.subservice: developer
 search.audienceType:
   - developer
 contributors:
@@ -130,7 +130,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[Dec2Hex](reference/function-hexdec.md)** - Convert a number to a hexadecimal text string.
    
-**[Decimal](reference/function-decimal.md)** - TODO: Add description
+**[Decimal](reference/function-value.md)** - Converts a string to a [decimal number](data-types.md#decimal-numbers).
 
 <!-- **[Defaults](reference/function-defaults.md)** – Returns the default values for a data source. -->
 
@@ -179,7 +179,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 **[FirstN](reference/function-first-last.md)** – Returns the first set of records (N records) of a table.
 
-**[Float](reference/function-float.md)** - TODO: Add description
+**[Float](reference/function-value.md)** - Converts a string to a [floating point number](data-types.md#floating-point-numbers).
 
 **[ForAll](reference/function-forall.md)** – Calculates values and performs actions for all records of a table.
 
@@ -193,7 +193,7 @@ In this article, learn about all the functions available in Microsoft Power Plat
 
 <!-- **[HashTags](reference/function-hashtags.md)** – Extracts the hashtags (#strings) from a string. -->
 
-**[Help](reference/function-help.md)** - TODO: Add description
+**[Help](reference/function-help.md)** - Displays help information for command line Power Fx hosts.
 
 <!-- **[Host](reference/object-host.md)** - Provides information about the current host running the app. -->
 
