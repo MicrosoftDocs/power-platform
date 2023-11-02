@@ -5,6 +5,7 @@ The following examples show the use of the `pac power-fx run` command.
 - [Example some scenario a](#example-some-scenario-a)
 - [Example some other scenario b](#example-some-other-scenario-b)
 
+<!-- Replace these placeholder examples with real examples -->
 ### Example some scenario a
 
 ```powershell
