@@ -6,4 +6,7 @@
   href: account-planning-guide.md
 - name: What is a workspace?
   href: workspace.md
-
+- name: Work with generated content
+  href: work-with-content.md
+- name: Ask questions using the AI cursor
+  href: ai-cursor.md
