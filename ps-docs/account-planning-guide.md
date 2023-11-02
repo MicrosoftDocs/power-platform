@@ -15,7 +15,9 @@ contributors:
   - mikkelsen2000
 ---
 
-# Account planning guides
+# Account planning guide (preview)
+
+[This article is prerelease documentation and is subject to change.]
 
 Use the account planning guide in Project "Sophia" to help you execute your sales plans and meet your revenue goals.
 
