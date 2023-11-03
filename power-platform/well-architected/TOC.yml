@@ -13,8 +13,6 @@
           href: pillars.md
         - name: Reliability
           items: 
-          - name: Quick links
-            href: ./overview.md
           - name: Design principles
             href: ./overview.md
           - name: Checklist
