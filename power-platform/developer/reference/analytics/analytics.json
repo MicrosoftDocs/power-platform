@@ -10,7 +10,7 @@
     "https"
   ],
   "paths": {
-    "/analytics/powerAdvisorRecommendations": {
+    "/analytics/advisorRecommendations": {
       "get": {
         "tags": [
           "Recommendations"
@@ -24,6 +24,14 @@
         "parameters": [
           {
             "in": "query",
+            "name": "$skipToken",
+            "description": "Skip token for the next page of recommendations",
+            "type": "string",
+            "x-ms-visibility": "internal",
+            "x-ms-summary": "Skip Token"
+          },
+          {
+            "in": "query",
             "name": "api-version",
             "description": "The API version",
             "required": true,
@@ -35,7 +43,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/PowerAdvisorRecommendationIEnumerableResponseWithContinuation"
+              "$ref": "#/definitions/AdvisorRecommendationIEnumerableResponseWithContinuation"
             }
           },
           "400": {
@@ -58,7 +66,7 @@
         }
       }
     },
-    "/analytics/powerAdvisorRecommendations/{scenario}/resources": {
+    "/analytics/advisorRecommendations/{scenario}/resources": {
       "get": {
         "tags": [
           "Recommendations"
@@ -111,6 +119,7 @@
             "name": "$skipToken",
             "description": "Skip token for the next page of resources",
             "type": "string",
+            "x-ms-visibility": "internal",
             "x-ms-summary": "Skip Token"
           },
           {
@@ -126,7 +135,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/PowerAdvisorRecommendationResourceIEnumerableResponseWithContinuation"
+              "$ref": "#/definitions/AdvisorRecommendationResourceIEnumerableResponseWithContinuation"
             }
           },
           "400": {
@@ -157,9 +166,9 @@
         "tags": [
           "Recommendations"
         ],
-        "summary": "Execute action",
-        "description": "Execute a recommended action on a set of resource(s).",
-        "operationId": "ExcuteRecommendationAction",
+        "summary": "Execute recommendation action",
+        "description": "Execute a recommended action on a set of recommendation resource(s).",
+        "operationId": "ExecuteRecommendationAction",
         "consumes": [
           "application/json"
         ],
@@ -217,7 +226,7 @@
             "description": "Request body for the action to execute",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/PowerAdvisorActionRequest"
+              "$ref": "#/definitions/AdvisorActionRequest"
             }
           }
         ],
@@ -225,7 +234,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/PowerAdvisorActionResponse"
+              "$ref": "#/definitions/AdvisorActionResponse"
             }
           },
           "400": {
@@ -241,25 +250,26 @@
             "description": "Too Many Requests"
           }
         },
-        "x-ms-summary": "Execute action"
+        "x-ms-summary": "Execute recommendation action"
       }
     }
   },
   "definitions": {
-    "PowerAdvisorActionRequest": {
+    "AdvisorActionRequest": {
+      "description": "The request with details to carry out an action on resource(s)",
       "required": [
         "scenario",
-        "actionDetails"
+        "actionParameters"
       ],
       "type": "object",
       "properties": {
         "scenario": {
-          "$ref": "#/definitions/PowerAdvisorRecommendationScenario"
+          "$ref": "#/definitions/AdvisorRecommendationScenario"
         },
-        "actionDetails": {
-          "description": "The collection of key value pairs required to carry out the action",
-          "type": "object",
-          "additionalProperties": {
+        "actionParameters": {
+          "description": "The collection of parameters to carry out the action for a resource",
+          "type": "array",
+          "items": {
             "type": "object",
             "additionalProperties": {
               "type": "string"
@@ -269,18 +279,20 @@
         }
       }
     },
-    "PowerAdvisorActionResponse": {
+    "AdvisorActionResponse": {
+      "description": "The response for action performed on resources",
       "type": "object",
       "properties": {
         "results": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/PowerAdvisorActionResult"
+            "$ref": "#/definitions/AdvisorActionResult"
           }
         }
       }
     },
-    "PowerAdvisorActionResult": {
+    "AdvisorActionResult": {
+      "description": "The result of an action performed on a resource",
       "type": "object",
       "properties": {
         "resourceId": {
@@ -288,11 +300,11 @@
           "type": "string",
           "x-ms-summary": "Resource ID"
         },
-        "HttpStatusCode": {
+        "statusCode": {
           "format": "int32",
-          "description": "The HttpStatus code of the action request for the given resource",
+          "description": "The status code of the action request for the given resource",
           "type": "integer",
-          "x-ms-summary": "HTTP Status Code"
+          "x-ms-summary": "Status Code"
         },
         "actionFinalResult": {
           "description": "Final status of the action request",
@@ -308,15 +320,10 @@
           "description": "The error message associated with any error encountered during the action execution",
           "type": "string",
           "x-ms-summary": "Error Message"
-        },
-        "innerErrors": {
-          "description": "Any additional error details if available",
-          "type": "object",
-          "x-ms-summary": "Inner Errors"
         }
       }
     },
-    "PowerAdvisorActionType": {
+    "AdvisorActionType": {
       "description": "Available action types which can be taken on a resource",
       "enum": [
         "DeleteApp",
@@ -350,18 +357,20 @@
         }
       ]
     },
-    "PowerAdvisorRecommendation": {
+    "AdvisorRecommendation": {
+      "description": "Information for a recommendation",
       "type": "object",
       "properties": {
         "scenario": {
-          "$ref": "#/definitions/PowerAdvisorRecommendationScenario"
+          "$ref": "#/definitions/AdvisorRecommendationScenario"
         },
         "details": {
-          "$ref": "#/definitions/PowerAdvisorRecommendationDetails"
+          "$ref": "#/definitions/AdvisorRecommendationDetails"
         }
       }
     },
-    "PowerAdvisorRecommendationDetails": {
+    "AdvisorRecommendationDetails": {
+      "description": "Details for a recommendation",
       "type": "object",
       "properties": {
         "resourceCount": {
@@ -384,14 +393,15 @@
         }
       }
     },
-    "PowerAdvisorRecommendationIEnumerableResponseWithContinuation": {
+    "AdvisorRecommendationIEnumerableResponseWithContinuation": {
+      "description": "Paged list of recommendations",
       "type": "object",
       "properties": {
         "value": {
           "description": "List of recommendations",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/PowerAdvisorRecommendation"
+            "$ref": "#/definitions/AdvisorRecommendation"
           }
         },
         "nextLink": {
@@ -401,7 +411,8 @@
         }
       }
     },
-    "PowerAdvisorRecommendationResource": {
+    "AdvisorRecommendationResource": {
+      "description": "Details of a resource included in a recommendation",
       "type": "object",
       "properties": {
         "resourceName": {
@@ -430,7 +441,7 @@
           "x-ms-summary": "Resource type"
         },
         "resourceSubType": {
-          "description": "The sub-type of the resource",
+          "description": "The sub type of the resource",
           "type": "string",
           "x-ms-summary": "Resource sub type"
         },
@@ -474,14 +485,15 @@
         }
       }
     },
-    "PowerAdvisorRecommendationResourceIEnumerableResponseWithContinuation": {
+    "AdvisorRecommendationResourceIEnumerableResponseWithContinuation": {
+      "description": "Paged list of recommendation resources",
       "type": "object",
       "properties": {
         "value": {
           "description": "List of recommendation resources",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/PowerAdvisorRecommendationResource"
+            "$ref": "#/definitions/AdvisorRecommendationResource"
           }
         },
         "nextLink": {
@@ -491,7 +503,7 @@
         }
       }
     },
-    "PowerAdvisorRecommendationScenario": {
+    "AdvisorRecommendationScenario": {
       "description": "The recommendation name",
       "enum": [
         "OrphanedApps",
@@ -531,7 +543,6 @@
       "type": "oauth2",
       "flow": "implicit",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
-      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
       "description": "Azure Active Directory OAuth2"
     }
   },
