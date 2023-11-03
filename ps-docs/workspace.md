@@ -19,7 +19,7 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
-When a [new journey](ask-questions.cm) or [guide](account-planning-guide.md) is created, a workspace is automatically created and saved. 
+When a [new journey](ask-questions.md) or [guide](account-planning-guide.md) is created, a workspace is automatically created and saved. 
 
 > [!div class="mx-imgBorder"]
 > ![Workspaces.](media/workspace-1.png)
