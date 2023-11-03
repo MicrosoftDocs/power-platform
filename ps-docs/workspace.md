@@ -31,7 +31,7 @@ Legend
 
 A blueprint is created when you ask a question or upload data and select **Generate**. You can also generate a new blueprint by selecting an action in the  **Suggested next steps** block.
 
-Use the [AI cursor](ai-cursor.md) to ask questions about the content on a blueprint, you can generate it as new blueprint or as a new block.
+Use the [AI cursor](ai-cursor.md) to ask questions about the content on a blueprint.
 
 The following outlines the types of blocks that are generated in a blueprint:
 
