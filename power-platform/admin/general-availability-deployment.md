@@ -32,10 +32,15 @@ Each notification from the Message Center includes dates, the maintenance window
 >If you did not opt in for the early access updates in your environments, your environment will be automatically updated to receive the new release based on the general availability deployment schedule for your region.  
 
 > [!NOTE]
-> The wave release is a mandatory update and cannot be postponed.
-> The wave release will process as part of the weekly Dataverse update during your dark hours.
-> The exact duration and timing of the wave release is not known in advance. It depends on the time to process weekly updates.
-> Bonus - SPL needs to be added to the GA page for schedule.
+> The wave release is a necessary update and cannot be postponed. It is essential for maintaining system integrity and security.
+>
+> The wave release will be seamlessly integrated as part of the weekly Dataverse update, which occurs during your scheduled dark hours. This ensures minimal disruption to your operations.
+>
+> It is important to note that the exact duration and timing of the wave release are not predetermined. These variate depending on the time required to process the weekly updates efficiently. We aim to minimize any inconvenience during this process.
+>
+> SPL Integration: As and additional benefit, the SPL scale group will be incorporated into the GA page to help you stay informed about the schedule.
+>
+> This policies are designed to optimize your system's performance and security while offering the flexibility needed for seamless update process.
 
 ## Deployment schedule  
 
