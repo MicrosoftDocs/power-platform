@@ -6,7 +6,7 @@ ms.topic: Overview
 ms.custom: 
 ms.reviewer: mkaur
 ms.date: 10/31/2023
-ms.subservice: power-platform
+ms.service: power-platform
 ms.author: pemikkel
 search.audienceType:
   - maker
