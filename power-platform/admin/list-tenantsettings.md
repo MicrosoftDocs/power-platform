@@ -105,12 +105,12 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the Share With Everyone capability in all Power Apps.  Default is false.|
 |powerPlatform.powerApps.DisableConnectionSharingWithEveryone | Boolean | Gets or sets a value indicating whether non-admin users in the tenant can share connections with everyone. Default is false. |
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps.  Default is false.|
-|powerPlatform.powerApps.disableMembersIndicator | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.powerApps.disableMakerMatch | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.powerApps.disableUnusedLicenseAssignment | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.powerApps.disableCreateFromImage | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.powerApps.disableCreateFromFigma | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.powerApps.disableConnectionSharingWithEveryone | Boolean | NEEDS DESCRIPTION.|
+|powerPlatform.powerApps.disableMembersIndicator | Boolean | This setting is not currently used by the Platform but may be used in the future..|
+|powerPlatform.powerApps.disableMakerMatch | Boolean | This setting is not currently used by the Platform but may be used in the future..|
+|powerPlatform.powerApps.disableUnusedLicenseAssignment | Boolean | This setting is not currently used by the Platform but may be used in the future..|
+|powerPlatform.powerApps.disableCreateFromImage | Boolean | This setting is not currently used by the Platform but may be used in the future..|
+|powerPlatform.powerApps.disableCreateFromFigma | Boolean | This setting is not currently used by the Platform but may be used in the future..|
+|powerPlatform.powerApps.disableConnectionSharingWithEveryone | Boolean | This setting is not currently used by the Platform but may be used in the future..|
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams.  Default is 10000 but can be increased or decreased as required.|
 |powerPlatform.powerAutomate.disableCopilot | Boolean | •	Disables Cloud flows Copilot in Power Automate. Does not control ability to add AI-related connectors/actions in flow designer (ex. Skills connector or AiBuilder Create text with GPT action). Default value is false.|
 |powerPlatform.powerAutomate.disableCopilotWithBing | Boolean | Disables the Copilot-enhanced help feature within Power Automate to enhance answers on product documentation through Bing Search. Default value is false.|
@@ -127,12 +127,12 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.licensing.storageCapacityConsumptionWarningThreshold | INT | This setting is not currently used by the Platform but may be used in the future.|
 |powerPlatform.licensing.EnableTenantLicensingReportForEnvironmentAdmins | Boolean | Ability to allow admins (tenant/power platform/dynamics 365) to grant permissions to environment administrator to view the tenant scoped license reports (Power Apps/Finance and Operations etc.). Default is False.|
 |powerPlatform.licensing.ApplyAutoClaimToOnlyManagedEnvironments | Boolean | Allows the admins to choose if the license auto-claim policies are applied on managed environments or all environments (including standard ones). Default is True.|
-|powerPlatform.champions.disableChampionsInvitationReachout | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.champions.disableSkillsMatchInvitationReachout | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.intelligence.disableCopilot | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.intelligence.enableOpenAiBotPublishing | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.intelligence.disableCopilotFeedback | Boolean | NEEDS DESCRIPTION.|
-|powerPlatform.intelligence.disableCopilotFeedbackMetadata | Boolean | NEEDS DESCRIPTION.|
+|powerPlatform.champions.disableChampionsInvitationReachout | Boolean | This setting is not currently used by the Platform but may be used in the future..|
+|powerPlatform.champions.disableSkillsMatchInvitationReachout | Boolean | This setting is not currently used by the Platform but may be used in the future..|
+|powerPlatform.intelligence.disableCopilot | Boolean | This setting is not currently used by the Platform but may be used in the future..|
+|powerPlatform.intelligence.enableOpenAiBotPublishing | Boolean | This setting is not currently used by the Platform but may be used in the future..|
+|powerPlatform.intelligence.disableCopilotFeedback | Boolean | This setting is not currently used by the Platform but may be used in the future..|
+|powerPlatform.intelligence.disableCopilotFeedbackMetadata | Boolean | This setting is not currently used by the Platform but may be used in the future..|
 |powerPlatform.modelExperimentation.enableModelDataSharing | Boolean | Ability to allow Microsoft to read Power Automate Copilot AI feature customer data (inputs and outputs) and provide improved models.  Default is false.|
 |powerPlatform.modelExperimentation.disableDataLogging | Boolean | Ability to disable data logging and remove all data logged for Power Automate Copilot AI feature customer data (inputs and outputs).  Default is false.|
 |powerPlatform.catalogSettings.powerCatalogAudienceSetting | Enum |This setting is reserved for future use. No enforcement is driven by this setting at the current time.|
