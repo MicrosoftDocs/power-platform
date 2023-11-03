@@ -6,7 +6,7 @@ author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
 ms.custom: ""
-ms.date: 06/05/2020
+ms.date: 10/12/2023
 ms.reviewer: "pehecke"
 
 ms.topic: "article"
@@ -115,9 +115,27 @@ It's possible to add the step to the solution before (or without) adding the rel
 Note that removing the plug-in assembly from the solution won't
 remove any steps that depend on it. You must remove those steps individually.
 
+## Delete a plug-in from a solution by updating the assembly
+
+Sometimes you may need to delete a plug-in from a solution, however you cannot do so with a solution upgrade.
+Instead, you can delete an assembly with a solution upgrade, and end up with the desired result.
+
+The details of this workaround are described in these instructions.
+
+1. Start by updating the "major" version number of the assembly which has the target plug-in types removed.
+
+   After this version change, you will not be able to update the assembly using the Plug-in Registration tool (PRT). However, you will be able to register the assembly as a new assembly side-by-side with the old assembly.
+3. Register your new assembly side by side with the old assembly using the PRT.
+4. Migrate any existing steps for the old plug-in types to the corresponding plug-in types in the new assembly.
+5. Delete the old assembly.
+6. Export the unmanaged solution as a managed solution with a new solution version number.
+7. Import the new managed solution, as an upgrade, into an environment where the old assembly is registered.
+   The solution upgrade should delete the old assembly, and the unwanted types with it.
+
 ### See also
 
+[Update a solution](update-solutions-alm.md#update-a-solution)  
+[Assembly versioning](/power-apps/developer/data-platform/register-plug-in#assembly-versioning)  
 [Web resources](web-resource-component.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

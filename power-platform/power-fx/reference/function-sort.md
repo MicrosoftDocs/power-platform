@@ -1,6 +1,6 @@
 ---
-title: Sort and SortByColumns functions in Power Apps
-description: Reference information including syntax and examples for the Sort and SortByColumns functions in Power Apps.
+title: Sort and SortByColumns functions
+description: Reference information including syntax and examples for the Sort and SortByColumns functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Sort and SortByColumns functions in Power Apps
+# Sort and SortByColumns functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 Sorts a [table](/power-apps/maker/canvas-apps/working-with-tables).
 

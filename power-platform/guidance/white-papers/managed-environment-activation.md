@@ -15,7 +15,10 @@ contributors:
 
 # Activating Managed Environments
 
-This article addresses the key features of Managed Environments and how organizations and administrators can be benefited activating these capabilities.
+This white paper addresses the key features of Managed Environments and how organizations and administrators can be benefited activating these capabilities.
+
+> [!NOTE]
+> You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
 
 ## Managed Environments overview
 
@@ -23,7 +26,7 @@ Managed Environments is a suite of premium governance capabilities that allows I
 
 You'll learn about each of the features and examples based on organizations that have activated Managed Environments, including:
 
- - **Pipelines in Power Platform** bring application lifecycle management (AML) automation to streamline development processes with reduced effort.
+ - **Pipelines in Power Platform** bring application lifecycle management (ALM) automation to streamline development processes with reduced effort.
  - **Maker welcome content** provides customized welcome message to help makers in the organization get started with Power Apps.
  - **Limit Sharing** adds guardrail on how broadly users can share canvas apps.
  - **Usage Insights** keeps admins informed about apps usage and users activities via weekly digest email.

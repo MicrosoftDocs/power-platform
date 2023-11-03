@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 9/18/2023
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -27,6 +27,8 @@ Operating with Power Apps .msapp files
 |Command|Description|
 |---------|---------|
 |[pac canvas create](#pac-canvas-create)|Generate a canvas app from a custom connector|
+|[pac canvas download](#pac-canvas-download)|Download canvas app as .msapp file|
+|[pac canvas list](#pac-canvas-list)|List canvas apps|
 |[pac canvas pack](#pac-canvas-pack)|(Preview) Pack sources into an msapp file|
 |[pac canvas unpack](#pac-canvas-unpack)|(Preview) Extract an msapp file into sources|
 
@@ -60,6 +62,53 @@ The ID of the Connector to generate the Power App from.
 The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [canvas-create-remarks](includes/canvas-create-remarks.md)]
+
+## pac canvas download
+
+Download canvas app as .msapp file
+
+[!INCLUDE [canvas-download-intro](includes/canvas-download-intro.md)]
+
+
+### Required Parameters for canvas download
+
+#### `--name` `-n`
+
+Canvas app exact, partial name, or App ID
+
+
+### Optional Parameters for canvas download
+
+#### `--environment` `-env`
+
+Environment (ID, org ID, url, unique name, or partial name).
+
+#### `--file-name` `-f`
+
+File name (usually with .msapp extension). If not provided file is saved in current directory with 'appname'.msapp
+
+#### `--overwrite` `-o`
+
+Allow file overwrite
+
+This parameter requires no value. It's a switch.
+
+[!INCLUDE [canvas-download-remarks](includes/canvas-download-remarks.md)]
+
+## pac canvas list
+
+List canvas apps
+
+[!INCLUDE [canvas-list-intro](includes/canvas-list-intro.md)]
+
+
+### Optional Parameters for canvas list
+
+#### `--environment` `-env`
+
+Environment (ID, org ID, url, unique name, or partial name).
+
+[!INCLUDE [canvas-list-remarks](includes/canvas-list-remarks.md)]
 
 ## pac canvas pack
 
