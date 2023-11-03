@@ -27,7 +27,7 @@ Use the account planning guide in Project "Sophia" to help you execute your sale
 4.	Select the file name and then select **Open**.
 5.	Select **Generate**.
 
-Project "Sophia" will generate a tailored account plan based on your data. You can upload more data to refine your account planning or continue exploring your data.
+Project "Sophia" will generate a tailored account plan based on your data. You can upload more data and refine your account plann or continue exploring your data.
 
 > [!div class="mx-imgBorder"]
 > ![Accounting planning guide.](media/account-plan.png)
