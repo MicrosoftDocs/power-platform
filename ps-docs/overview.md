@@ -6,7 +6,7 @@ ms.topic: Overview
 ms.custom: 
 ms.reviewer: mkaur
 ms.date: 10/31/2023
-ms.subservice: power-platform
+ms.service: power-platform
 ms.author: pemikkel
 search.audienceType:
   - maker
@@ -53,7 +53,7 @@ After your first sign in, the next time you sign in to Project "Sophia", it will
 
 
 > [!div class="mx-imgBorder"]
-> ![Project "Sophia" main screen.](media/ps-home-screen.png)
+> ![Project "Sophia" Home screen.](media/ps-home-screen.png)
 
 Legend
 
