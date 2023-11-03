@@ -11,7 +11,7 @@ ms.date: 12/25/2023
 
 # Performance Efficiency tradeoffs
 
-During the design phase of a workload, it's important to consider how decisions based on the [Performance Efficiency design principles](./principles.md) and recommendations in the [Design review checklist for OPerformance Efficiency](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for experience optimzation.
+During the design phase of a workload, it's important to consider how decisions based on the [Performance Efficiency design principles](./principles.md) and recommendations in the [Design review checklist for Performance Efficiency](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for experience optimzation.
 
 ## Performance Efficiency tradeoffs with Reliability
 
