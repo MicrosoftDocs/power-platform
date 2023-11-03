@@ -22,7 +22,7 @@ contributors:
 When a new journey or guide is created, a workspace is automatically created and saved. 
 
 > [!div class="mx-imgBorder"]
-> ![Workspaces.](media/workplace-1.png)
+> ![Workspaces.](media/workspace-1.png)
 
 Legend
 
@@ -35,7 +35,7 @@ When you use the AI cursor to ask a question about the content on a blueprint, y
 The following outlines the types of blocks that are generated in a blueprint:
 
 > [!div class="mx-imgBorder"]
-> ![Workspace blocks.](media/workplace-blocks.png)
+> ![Workspace blocks.](media/workspace-blocks.png)
 
 Legend
 
