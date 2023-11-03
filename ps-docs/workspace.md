@@ -37,6 +37,7 @@ The following outlines the types of blocks that are generated in a blueprint:
 > [!div class="mx-imgBorder"]
 > ![Workspace blocks.](media/workspace-blocks.png)
 
+
 Legend
 
 1. **Text Overview**: Provides a summary and key insights at a glance.
