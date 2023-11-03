@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 9/18/2023
+ms.date: 10/17/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac connection
 
-(Preview) Commands for working with Dataverse connection.
+Commands for working with Dataverse connection.
 
 [!INCLUDE [connection-intro](includes/connection-intro.md)]
 
@@ -26,15 +26,15 @@ Use the include files to add additional content to this topic.
 
 |Command|Description|
 |---------|---------|
-|[pac connection create](#pac-connection-create)|(Preview) Create new Dataverse connection.|
-|[pac connection delete](#pac-connection-delete)|(Preview) Delete Dataverse connection.|
-|[pac connection list](#pac-connection-list)|(Preview) List all Connections.|
-|[pac connection update](#pac-connection-update)|(Preview) Update Dataverse connection.|
+|[pac connection create](#pac-connection-create)|Create new Dataverse connection.|
+|[pac connection delete](#pac-connection-delete)|Delete Dataverse connection.|
+|[pac connection list](#pac-connection-list)|List all Connections.|
+|[pac connection update](#pac-connection-update)|Update Dataverse connection.|
 
 
 ## pac connection create
 
-(Preview) Create new Dataverse connection.
+Create new Dataverse connection.
 
 [!INCLUDE [connection-create-intro](includes/connection-create-intro.md)]
 
@@ -68,7 +68,7 @@ Environment (ID, org ID, url, unique name, or partial name).
 
 ## pac connection delete
 
-(Preview) Delete Dataverse connection.
+Delete Dataverse connection.
 
 [!INCLUDE [connection-delete-intro](includes/connection-delete-intro.md)]
 
@@ -90,7 +90,7 @@ Environment (ID, org ID, url, unique name, or partial name).
 
 ## pac connection list
 
-(Preview) List all Connections.
+List all Connections.
 
 [!INCLUDE [connection-list-intro](includes/connection-list-intro.md)]
 
@@ -105,7 +105,7 @@ Environment (ID, org ID, url, unique name, or partial name).
 
 ## pac connection update
 
-(Preview) Update Dataverse connection.
+Update Dataverse connection.
 
 [!INCLUDE [connection-update-intro](includes/connection-update-intro.md)]
 

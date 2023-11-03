@@ -1,6 +1,6 @@
 ---
-title: Install the SAP Procurement solution template
-description: Steps to access and install the SAP Procurement solution template.
+title: Install the SAP Procurement template
+description: Steps to access and install the SAP Procurement template.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -14,27 +14,27 @@ contributors:
   - scottwoodallmsft
   - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: install-set-up-deploy
+ms.topic: how-to
 ms.date: 06/06/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Install SAP Procurement solution template files
+# Install the SAP Procurement template
 
 As a Power Platform admin, go to [Templates for Power Platform](https://aka.ms/TemplatesforPowerPlatform) on GitHub to access all the template assets.
 
-Download the SAP Procurement solution from GitHub and install it in the development environment you prepared for it.
+Download the SAP Procurement template files from GitHub and install them in the development environment you prepared for it.
 
 > [!IMPORTANT]
 >
-> Two solutions will always be installed in your environment:
+> The template files contain two solutions. You need to install both to your prepared environment:
 >
 > - **SAP Base solution** contains the base Power Platform components required for the SAP Procurement solutions. The base solution also supports other SAP-related solutions that will be released later.
-> - **SAP Procurement solution template** contains Power Platform components specific to the procure-to-pay process domain.
+> - **SAP Procurement solution** contains Power Platform components specific to the procure-to-pay process domain.
 
-## Install the SAP Base solution template
+## Install the SAP Base solution
 
 1. In the _Power Apps Maker Portal_, select the developer (sandbox) _environment_ that you want to install the solutions in and then select the **Solutions** menu option.
 
@@ -48,7 +48,7 @@ Download the SAP Procurement solution from GitHub and install it in the developm
 >
 > It may take several minutes for the solution to import.
 
-## Install the SAP Procurement solution template
+## Install the SAP Procurement solution
 
 1. After the **SAP Base** solution successfully installs, navigate back to the **Solutions** menu option.
 
@@ -61,12 +61,6 @@ Download the SAP Procurement solution from GitHub and install it in the developm
 > [!TIP]
 > You can log your questions and get support for the SAP Procurement solution template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
-## Next steps
-
-- [Set up connections for solutions](set-up-connections.md)
-- [Configure environment variables](configure-environment-variables.md)
-
 ## See also
 
-- [Overview](../overview.md)
-- [Get started](get-started.md)
+[Get started with the SAP Procurement template](get-started.md)

@@ -619,7 +619,7 @@
           "type": "boolean"
         },
         "applicationUserAadAppId": {
-          "description": "Azure Active Directory (AAD) object unique identifier (ID)",
+          "description": "Microsoft Entra ID object unique identifier (ID)",
           "type": "string"
         },
         "ownerId": {
