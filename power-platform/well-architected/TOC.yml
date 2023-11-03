@@ -1,12 +1,6 @@
 - name: Power Platform Well-Architected
-  href: index.yml
+  href: pillars.md
   items:
-      - name: About
-        items:
-        - name: Power Platform Well-Architected
-          href: ./overview.md
-        - name: How to use this documentation
-          href: ./overview.md
       - name: Pillars
         items:
         - name: Overview

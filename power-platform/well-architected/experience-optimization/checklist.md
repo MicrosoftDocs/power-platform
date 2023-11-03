@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: sericks
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/25/2023
+ms.date: 11/30/2023
 ---
 # Design review checklist for Experience Optimization
 

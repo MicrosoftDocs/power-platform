@@ -1,15 +1,15 @@
 ---
-title: Design review checklist for Experience Optimization
+title: Design review checklist for Security
 description: Use this checklist for Security to identify the best approach for secure, governed, and compliant workloads.
 author: robstand
 ms.author: rstand
 ms.reviewer: sericks
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/25/2023
+ms.date: 11/30/2023
 ---
 
-# Design review checklist for Experience Optimization
+# Design review checklist for Security
 
 This checklist presents a set of security recommendations to help you ensure your low-code workload is secure.
 
