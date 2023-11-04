@@ -1,6 +1,6 @@
 ---
-title: Power Well-Architected stub
-description: Power Well-Architected stub
+title: Power Well-Architected pillars
+description: Power Well-Architected pillars
 author: robstand
 ms.author: rstand
 ms.reviewer: sericks
