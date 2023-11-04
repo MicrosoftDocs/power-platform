@@ -1,0 +1,28 @@
+### YamlMime:Landing
+
+title: Reliability quick links
+summary: Apply resiliency guidance to your architecture to make a workload resilient to malfunction and returns to a fully functioning state after a failure occurs.
+
+metadata:
+  title: Reliability quick links
+  description: Apply resiliency guidance to your architecture to make a workload resilient to malfunction and returns to a fully functioning state after a failure occurs.
+  ms.service: waf
+  ms.subservice: waf-pillar-reliability
+  ms.topic: landing-page
+  author: robstand
+  ms.author: rstand
+  ms.date: 11/30/2023
+
+landingContent:
+  - title: Key points
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Design principles
+            url: principles.md
+          - text: Checklist
+            url: checklist.md
+          - text: Tradeoffs
+            url: tradeoffs.md
+          - text: Reliability patterns
+            url: design-patterns.md

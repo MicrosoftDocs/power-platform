@@ -1,0 +1,28 @@
+### YamlMime:Landing
+
+title: Operational excellence quick links
+summary: Apply operational excellence guidance to your workload to assure workload quality through standardized processes and team cohesion.
+
+metadata:
+  title: Operational excellence quick links
+  description: Apply operational excellence guidance to your workload to assure workload quality through standardized processes and team cohesion.
+  ms.service: waf
+  ms.subservice: waf-pillar-excellence
+  ms.topic: landing-page
+  author: robstand
+  ms.author: rstand
+  ms.date: 11/30/2023
+
+landingContent:
+  - title: Key points
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Design principles
+            url: principles.md
+          - text: Checklist
+            url: checklist.md
+          - text: Tradeoffs
+            url: tradeoffs.md
+          - text: Reliability patterns
+            url: design-patterns.md

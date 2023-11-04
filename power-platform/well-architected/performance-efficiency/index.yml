@@ -1,0 +1,29 @@
+### YamlMime:Landing
+
+title: Performance efficiency quick links
+summary: Apply performance efficiency guidance to your architecture to meet workload demands efficiently.
+
+metadata:
+  title: Performance efficiency quick links
+  description: Apply performance efficiency guidance to your architecture to meet workload demands efficiently.
+  ms.service: waf
+  ms.subservice: waf-pillar-efficiency
+  ms.topic: landing-page
+  author: robstand
+  ms.author: rstand
+  ms.date: 11/30/2023
+
+landingContent:
+  - title: Key points
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Design principles
+            url: principles.md
+          - text: Checklist
+            url: checklist.md
+          - text: Tradeoffs
+            url: tradeoffs.md
+          - text: Performance efficiency patterns
+            url: design-patterns.md
+     

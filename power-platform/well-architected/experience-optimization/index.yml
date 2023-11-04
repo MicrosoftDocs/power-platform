@@ -1,0 +1,29 @@
+### YamlMime:Landing
+
+title: Experience optimization quick links
+summary: Apply experience optimization guidance to your architecture to provide meaningful and effective experiences for users of your workload.
+
+metadata:
+  title: Experience optimization quick links
+  description: Apply experience optimization guidance to your architecture to provide meaningful and effective experiences for users of your workload.
+  ms.service: waf
+  ms.subservice: waf-pillar-efficiency
+  ms.topic: landing-page
+  author: robstand
+  ms.author: rstand
+  ms.date: 11/30/2023
+
+landingContent:
+  - title: Key points
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Design principles
+            url: principles.md
+          - text: Checklist
+            url: checklist.md
+          - text: Tradeoffs
+            url: tradeoffs.md
+          - text: Performance efficiency patterns
+            url: design-patterns.md
+     

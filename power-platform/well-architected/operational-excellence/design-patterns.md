@@ -1,5 +1,5 @@
 ---
-title: Cloud design patterns that support operational excellence
+title: Design patterns that support operational excellence
 description: Learn about industry patterns that support operational excellence and can help you address common challenges in low-code workloads.  
 author: robstand
 ms.author: rstand

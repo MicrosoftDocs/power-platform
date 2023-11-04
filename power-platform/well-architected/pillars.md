@@ -25,25 +25,18 @@ Use this matrix to familiarize yourself with the key concepts:
 
 > [!IMPORTANT]
 >
-> The reference architectures have been designed with the principles in mind. The architecture articles describe a prescriptive path by applying the design principles that provide a holistic view on the architectures. 
+> The reference architectures have been designed with the principles in mind. The architecture articles describe a prescriptive path by applying the design principles that provide a holistic view on the architectures.
 
 ## Assessment review tool
 
 Assess your workload using the core pillars to **identify and prioritize opportunities** to improve the posture of your workloads.
 
-> [!TIP]
-> 
-> Start your assessment with [**Azure Well-Architected Review**](/assessments/?id=azure-architecture-review&mode=pre-assessment).
-
 ## Integration with Power Platform guidance
 
 TBD
-
-
-
 <!-- pillars -->
 [experience-pillar]: ./experience-optimization/index.yml
 [security-pillar]: ./security/index.yml
-[resiliency-pillar]: ./resiliency/index.yml
+[resiliency-pillar]: ./reliability/index.yml
 [scalability-pillar]: ./scalability/index.yml
 [devops-pillar]: ./devops/index.yml
