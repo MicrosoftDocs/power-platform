@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 11/30/2023
 ---
 
-# Reliability design principles 
+# Security design principles 
 
 The **design principles** are intended to provide guidance for aspects of Security that you should consider throughout the development lifecycle. Start with the recommended approaches and **justify the benefits for a set of requirements**. After you set your strategy, drive actions by using the [**Security checklist**](./checklist.md).
 

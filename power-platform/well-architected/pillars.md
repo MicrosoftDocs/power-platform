@@ -20,7 +20,7 @@ Use this matrix to familiarize yourself with the key concepts:
 | [**Reliability**][resiliency-pillar] | Resiliency, availability, recovery| Design for business requirements, resilience, recovery, operations, while keeping it simple. <br> [Design principles](reliability/principles.md) | [Tradeoffs](./reliability/tradeoffs.md)
 | [**Operational Excellence**][devops-pillar] | Holistic observability, DevOps practices |Streamline operations with standards, comprehensive monitoring, and safe deployment practices. <br> [Design principles](operational-excellence/principles.md)|[Tradeoffs](./operational-excellence/tradeoffs.md)|
 | [**Performance Efficiency**][scalability-pillar] |Scalability, load testing| Scale horizontally, test early and often, and monitor health of the solution. <br>[Design principles](./performance-efficiency/principles.md)|[Tradeoffs](performance-efficiency/tradeoffs.md)|
-| [**Experience Optimization**][experience-pillar] | Usability, relevance, composition | Create seamless, intuitive, and meaningful experiences. <br> [Design principles](./cexperience-optimization/principles.md)|[Tradeoffs](experience-optimization/tradeoffs.md)|
+| [**Experience Optimization**][experience-pillar] | Usability, relevance, composition | Create seamless, intuitive, and meaningful experiences. <br> [Design principles](./experience-optimization/principles.md)|[Tradeoffs](experience-optimization/tradeoffs.md)|
 | [**Security**][security-pillar] | Data protection, threat detection, mitigation |Protect confidentiality, integrity, and availability. <br> [Design principles](security/principles.md)|[Tradeoffs](security/tradeoffs.md)
 
 > [!IMPORTANT]
@@ -38,5 +38,5 @@ TBD
 [experience-pillar]: ./experience-optimization/index.yml
 [security-pillar]: ./security/index.yml
 [resiliency-pillar]: ./reliability/index.yml
-[scalability-pillar]: ./scalability/index.yml
-[devops-pillar]: ./devops/index.yml
+[scalability-pillar]: ./performance-efficiency/index.yml
+[devops-pillar]: ./operational-excellence/index.yml

@@ -46,7 +46,7 @@
           - name: Recommendations   
             items:
               - name: Performance efficiency patterns
-                href: ./operational-excellence/design-patterns.md
+                href: ./performance-efficiency/design-patterns.md
         - name: Experience optimization
           items:
           - name: Quick links
