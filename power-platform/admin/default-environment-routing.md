@@ -46,7 +46,7 @@ Default environment routing is a tenant-level, admin setting that:
 
 ## Enable the Default environment routing setting
 
-The **Default environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com) or [PowerShell](/powershell/).
+The **Default environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), [PowerShell](/powershell/) or Power Platform CLI(/powerapps/developer/data-platform/powerapps-cli).
 
 ### Before you begin
 
@@ -58,37 +58,56 @@ Before you enable the **Default environment routing** feature, consider the foll
 
 -   By default, all developer environments created through environment routing are managed.
 
-### Enable the feature in Power Platform admin center
+### Enable the feature
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), in navigation pane, select **Settings**.
-1. On the **Tenent settings** page, select **Environment routing (preview)**.
-1. In the **Environment routing** pane, turn on the **Create personal developer enviroments for new makers** option.
+# [Power Platform admin center](#tab/ppac)
+a. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), in navigation pane, select **Settings**.
+b. On the **Tenent settings** page, select **Environment routing (preview)**.
+c. In the **Environment routing** pane, turn on the **Create personal developer enviroments for new makers** option.
 
    :::image type="content" source="media/environment-routing.png" alt-text="Turn on the 'Create personal developer environments for new makers' option.":::
 
-### Enable the feature with PowerShell
+# [PowerShell](#tab/PowerShell)
+a. Log in to your tenant account.
 
-1. Run the following commands in PowerShell.
+  ```PowerShell
+  $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
+  ```
 
-    a. Log in to your tenant account.
+b. Retrieve and store your tenant settings in tenantSettings.
 
-      ```PowerShell
-      $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
-      ```
+  ```PowerShell
+  $tenantSettings = Get-TenantSettings  
+  ```
+  
+c. Set the **enableDefaultEnvironmentRouting** flag to **True**.
 
-    b. Retrieve and store your tenant setting in tenantSettings.
+  ```PowerShell
+  $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
+  
+  Set-TenantSettings -RequestBody $tenantSettings
+  ```
 
-      ```PowerShell
-      $tenantSettings = Get-TenantSettings  
-      ```
-      
-    c. Set the **enableDefaultEnvironmentRouting** flag to **True**.
+# [Power Platform CLI](#tab/pacCLI)
+a. Create an authentication profile.
+```cmd
+pac auth create
+```
 
-      ```PowerShell
-      $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
-      
-      Set-TenantSettings -RequestBody $tenantSettings
-      ```
+b. Retrieve and store your tenant settings in JSON file.
+```cmd
+pac admin list-tenant-settings --settings-file <settings_file_path>
+```
+
+c. Set the **enableDefaultEnvironmentRouting** flag to **true** in the JSON file.
+:::image type="content" source="media/environment-routing2.png" alt-text="Set the enableDefaultEnvironmentRouting flag to true.":::
+
+d. Update the tenant settings.
+```cmd
+pac admin update-tenant-settings --settings-file <settings_file_path>
+```
+
+---
 
 When trying to enable an environment routing tenant setting, keep the following points in mind: 
 

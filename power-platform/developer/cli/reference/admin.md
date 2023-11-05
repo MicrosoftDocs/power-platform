@@ -649,12 +649,15 @@ Update tenant settings.
 
 [!INCLUDE [admin-update-tenant-settings-intro](includes/admin-update-tenant-settings-intro.md)]
 
-
 ### Required Parameters for admin update-tenant-settings
 
 #### `--settings-file` `-s`
 
 The .json file with tenant settings.
+
+### Example
+
+[Enable the Default environment routing feature](../../../admin/default-environment-routing.md#tab/pacCLI)
 
 [!INCLUDE [admin-update-tenant-settings-remarks](includes/admin-update-tenant-settings-remarks.md)]
 
