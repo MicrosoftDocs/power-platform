@@ -16,9 +16,13 @@ contributors:
 
 # List tenant settings (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 You can list settings applicable to your tenant.
+
+> [!Important]
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Authentication
 
@@ -138,4 +142,4 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.catalogSettings.powerCatalogAudienceSetting | Enum |This setting is reserved for future use. No enforcement is driven by this setting at the current time.|
 
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
