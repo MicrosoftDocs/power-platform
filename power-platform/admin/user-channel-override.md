@@ -29,22 +29,22 @@ The release channel for a user based on the environment channel and the user cha
 1. Select the user's name.
 1. Note the value in the **Model apps channel** field.
 
-## Override a user's release channel 
+## Override a user's release channel
+
 Only admins can change the release channel for a user. Complete the following steps to do so.
 
-1. [View a user's release channel](#view-a-users-release-channel].
+1. [View a user's release channel](#view-a-users-release-channel).
 1. Under the **Model apps channel** field, select **Change channel**.
 1. Select a channel from **User channel override** dropdown list.
 
     | Option | Description |
-    | -- | -- |
-    | None | There is no user channel override. The envrionemnt or app channel value is used. |
+    |--|--|
+    | None | There's no user channel override. The environment or app channel value is used. |
     | Semi-annual channel |  Users get new features twice a year, starting early April and early October. |
     | Monthly channel | Users get new features once a month, on the first release for the month. |
    
-1. Click **Submit**.
+1. Select **Submit**.
 
+## See also
 
-
-
-
+[Release channels for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview)
