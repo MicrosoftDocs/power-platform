@@ -182,7 +182,7 @@
                   href: managed-environment-usage-insights.md
                 - name: Data policies
                   href: managed-environment-data-policies.md
-                - name: Solution checker enforcement (preview)
+                - name: Solution checker enforcement
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
@@ -690,6 +690,8 @@
               href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
+            - name: View Power Platform administrative logs in Microsoft Purview (preview)
+              href: admin-activity-logging.md
         - name: Programmability and extensibility
           items:
             - name: Overview

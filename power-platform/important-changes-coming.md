@@ -38,17 +38,17 @@ Admins can turn the **Switch to classic** option back on in the Power Platform a
 
 Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
 
-## Deprecating support of unregistered MSA and External Azure Active Directory users in Dataverse
+## Deprecating support of unregistered MSA and External Microsoft Entra users in Dataverse
 
-As part of our ongoing efforts to enhance the security and performance of Dataverse platform, we are announcing deprecation of support to unregistered MSA and externals Azure Active Directory (AAD) users in Dataverse due to its relative obscurity and complexity associated with this feature in authorization scenario.
+As part of our ongoing efforts to enhance the security and performance of Dataverse platform, we are announcing deprecation of support to unregistered MSA and externals Microsoft Entra users in Dataverse due to its relative obscurity and complexity associated with this feature in authorization scenario.
 
 ### What is changing?
 
-If a [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Azure Active Directory (AAD ) accounts](/azure/active-directory/external-identities/default-account) that are not registered in your AAD tenant, you will not be able to access Dataverse on the common endpoint. You will see an error message like "AADSTS50020: user account 'contoso@contoso.com; from identity provider 'https://sts.windows.net/{tenant Id}/' does not exist in tenant '{tenant name}' and cannot access the application '{application Id}'(Dataverse org name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Azure Active Directory user account.". Previously, Dataverse would deny access to these accounts, but now they will be blocked at the AAD tenant level. This change does not affect [GDAP](/partner-center/gdap-introduction) or CSP users.
+If a [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Microsoft Entra accounts](/azure/active-directory/external-identities/default-account) that are not registered in your Microsoft Entra tenant, you will not be able to access Dataverse on the common endpoint. You will see an error message like "Microsoft EntraSTS50020: user account 'contoso@contoso.com; from identity provider 'https://sts.windows.net/{tenant Id}/' does not exist in tenant '{tenant name}' and cannot access the application '{application Id}'(Dataverse org name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra user account.". Previously, Dataverse would deny access to these accounts, but now they will be blocked at the Microsoft Entra tenant level. This change does not affect [GDAP](/partner-center/gdap-introduction) or CSP users.
 
 ### What do you need to do?
 
-If a user who is not part of your Azure Active Directory (AAD) needs access to Dataverse organization, the User needs to be added to the Tenant as an external User or Guest User. For detailed steps, see [Add B2B collaboration users in the Microsoft Entra admin center](/azure/active-directory/external-identities/add-users-administrator). Additionally, you can restrict access to the Dataverse organization by reviewing the access granted to external users by following the steps below.
+If a user who is not part of your Microsoft Entra ID needs access to Dataverse organization, the User needs to be added to the Tenant as an external User or Guest User. For detailed steps, see [Add B2B collaboration users in the Microsoft Entra admin center](/azure/active-directory/external-identities/add-users-administrator). Additionally, you can restrict access to the Dataverse organization by reviewing the access granted to external users by following the steps below.
 
 **Disable sharing apps with everyone:** You can assess if sharing applications with everyone (including guests) is a requirement for cross-team collaboration.  If it is not, then you can disable share with everyone using the following PowerShell script:
 
@@ -68,7 +68,7 @@ Set-TenantSettings $tenantSettings
   
 ### When is this change coming into effect?
 
-By **October 2023**, we will be removing support of unregistered MSA and external AAD users in the Dataverse.
+By **October 2023**, we will be removing support of unregistered MSA and external Microsoft Entra users in the Dataverse.
 
 <a name="#jquery-211-to-be-removed-in-model-driven-apps" ></a>
 
@@ -504,7 +504,7 @@ More information:
 
 ## Old Dataverse environment URL redirector service is deprecated
 
-When you access your Dataverse environment for the first time or every time after you have signed out from a prior session, you're directed to Azure AD for signing in. In the sign-in page URL, it contains a set of internal values/codes that include a link to the URL redirector service. Upon successful login, the URL redirector service directs you to your Dataverse environment.
+When you access your Dataverse environment for the first time or every time after you have signed out from a prior session, you're directed to Microsoft Entra ID signing in. In the sign-in page URL, it contains a set of internal values/codes that include a link to the URL redirector service. Upon successful login, the URL redirector service directs you to your Dataverse environment.
 
 The old URL redirector service, cloudredirector.crm.dynamics.com, was replaced in September 2019 with the new one, bn1--namcrlivesg614.crm.dynamics.com (just an example; the URL will differ based on your environment region). The old URL redirector service is deprecated, and will be removed on **March 31, 2020**. 
 
@@ -536,7 +536,7 @@ Multi-Factor Authentication and conditional access controls to customer data.
 
 With this change, the intent is to guide developers away from this
 authentication flow and help application developers to utilize the capabilities
-of Azure Active Directory to secure and protect access to their applications and
+of Microsoft Entra to secure and protect access to their applications and
 customers in Dataverse.
 
 To allow for transition of customers and partner applications: 
