@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 11/03/2023
+ms.date: 11/06/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -97,7 +97,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |disableTrialEnvironmentCreationByNonAdminusers | Boolean | Restrict all trial environments to be created by tenant admins, Power Platform admins, or Dynamics 365 service admins.  Default value is false.|
 |disableCapacityAllocationByEnvironmentAdmins | Boolean | Ability to disable capacity allocation by environment administrators. Default value is false.|
 |disableSupportTicketsVisibleByAllUsers | Boolean | Ability to disable support ticket creation by non-admin users in the tenant. Default value is false.|
-|powerPlatform.search.disableDocsSearch | Boolean | When this setting is true, users in the environment can see a message that Microsoft Learn and documentation search categories have been turned off by the administrator in the search results page.  Default value is false.|
+|powerPlatform.search.disableDocsSearch | Boolean | When this setting is true, users in the environment can see a message that indicates Microsoft Learn and documentation search categories have been turned off by the administrator.  Default value is false.|
 |powerPlatform.search.disableCommunitySearch | Boolean | When this setting is true, users in the environment can see a message that community and blog search categories have been turned off by the administrator in the search results page.  Default value is false.|
 |powerPlatform.search.disableBingVideoSearch | Boolean | When this setting is true, users in the environment can see a message that video search categories have been turned off by the administrator in the search results page.  Default value is false.|
 |powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability for non-admin users in all Power Apps.  Default value is false.|
