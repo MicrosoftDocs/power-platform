@@ -8,12 +8,12 @@ ms.custom: guidance
 ms.author: nesrivastava
 ms.reviewer: iawilt
 ---
-
+11/6/2023
 # Project Planning
 
 ## **Sample Project Overview and Timelines**
 
-![Project planning](./media/topics/Project_Planning.png)
+:::image type="content" source="./media/topics/Project_Planning.png" alt-text="Project planning":::
 
 Chatbot projects based on Power Virtual Agents, like any technology, can have wildly different timelines and 
 specifications depending on the needs of the particular use case and organization. However, one advantage that low 
@@ -26,7 +26,7 @@ choosing a rapid delivery timeline as your initial project phase include:
 Whether this approach is right for your use case depends on organizational need, support, and the ability to align the necessary workstreams.
 
 ## **Project Workstreams**
-![Prject Workstrearms](./media/topics/ProjectWorkstreams.png)
+:::image type="content" source="./media/topics/ProjectWorkstreams.png" alt-text="Project Workstreams":::
 
 Setting up an adoption platform requires several workstreams that can execute in parallel, each with their own goals, timelines, and owners. These workstreams are as follows, with summary callouts on responsibilities: 
 
@@ -58,7 +58,7 @@ A Rhythm of Business (ROB) meeting allows all participants, involved in the proj
   - Monthly exec reviews
   - Scorecard review with progress, risks, blockers, and feedback
   - Forum for demos as appropriate
-    
+  
   ### **Testing**
 
   User acceptance testing will likely take up a significant portion of delivering your Power Virtual Agents chatbot – ensuring not only the integration of the complete solution (with backends/handoff clients/APIs), but also of the chatbots responses to customer input. More information on testing, refer to the testing strategy section.
