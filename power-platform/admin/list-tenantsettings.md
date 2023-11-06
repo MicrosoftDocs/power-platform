@@ -100,21 +100,21 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |disableSurveyFeedback | Boolean | Ability to disable all NPS survey feedback prompts in Power Platform.  Default value is false.|
 |disableTrialEnvironmentCreationByNonAdminusers | Boolean | Restrict all trial environments to be created by tenant admins, Power Platform admins, or Dynamics 365 service admins.  Default value is false.|
 |disableCapacityAllocationByEnvironmentAdmins | Boolean | Ability to disable capacity allocation by environment administrators. Default value is false.|
-|disableSupportTicketsVisibleByAllUsers | Boolean | Ability to disable support ticket creation by non-admin users in the tenant. Default value is false.|
+|disableSupportTicketsVisibleByAllUsers | Boolean | Ability to disable support ticket creation by nonadmin users in the tenant. Default value is false.|
 |powerPlatform.search.disableDocsSearch | Boolean | When this setting is true, users in the environment can see a message that indicates Microsoft Learn and documentation search categories have been turned off by the administrator.  Default value is false.|
 |powerPlatform.search.disableCommunitySearch | Boolean | When this setting is true, users in the environment can see a message that indicates community and blog search categories have been turned off by the administrator.  Default value is false.|
 |powerPlatform.search.disableBingVideoSearch | Boolean | When this setting is true, users in the environment can see a message that indicates video search categories have been turned off by the administrator.  Default value is false.|
-|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability for non-admin users in all Power Apps.  Default value is false.|
+|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability for nonadmin users in all Power Apps.  Default value is false.|
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams.  Default value is 10000, but can be increased or decreased, as required.|
 |powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability in all Power Apps.  Default value is false.|
 |powerPlatform.powerApps.DisableConnectionSharingWithEveryone | Boolean | Gets or sets a value indicating whether non-admin users in the tenant can share connections with everyone. Default value is false. |
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps.  Default value is false.|
-|powerPlatform.powerApps.disableMembersIndicator | Boolean | This setting is not currently used by the platform, but may be used in the future.|
-|powerPlatform.powerApps.disableMakerMatch | Boolean | This setting is not currently used by the platform, but may be used in the future.|
-|powerPlatform.powerApps.disableUnusedLicenseAssignment | Boolean | This setting is not currently used by the platform, but may be used in the future.|
+|powerPlatform.powerApps.disableMembersIndicator | Boolean | This setting isn't currently used by the platform, but may be used in the future.|
+|powerPlatform.powerApps.disableMakerMatch | Boolean | This setting isn't currently used by the platform, but may be used in the future.|
+|powerPlatform.powerApps.disableUnusedLicenseAssignment | Boolean | This setting isn't currently used by the platform, but may be used in the future.|
 |powerPlatform.powerApps.disableCreateFromImage | Boolean | Allow people to use AI to generate an app based on an image. Default value is false.|
 |powerPlatform.powerApps.disableCreateFromFigma | Boolean | Allow people to create a canvas app based on a Figma file. Default value is false.|
-|powerPlatform.powerApps.disableConnectionSharingWithEveryone | Boolean | This setting is not currently used by the platform, but may be used in the future.|
+|powerPlatform.powerApps.disableConnectionSharingWithEveryone | Boolean | This setting isn't currently used by the platform, but may be used in the future.|
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams.  Default value is 10000, but can be increased or decreased, as required.|
 |powerPlatform.powerAutomate.disableCopilot | Boolean | Disables cloud flows Copilot in Power Automate.<br><br>It doesn't control the ability to add AI-related connectors or actions in the flow designer. For example, the Skills connector or AI Builder creates text with a GPT action. Default value is false.|
 |powerPlatform.powerAutomate.disableCopilotWithBing | Boolean | Disables the Copilot-enhanced help feature within Power Automate to enhance answers on product documentation through Bing Search. Default value is false.|
@@ -124,17 +124,17 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.governance.disableDeveloperEnvironmentCreationByNonAdminusers | Boolean | Restrict all developer environments to be created by tenant admins, Power Platform admins, or Dynamics 365 service admins.  Default is false.|
 |powerPlatform.governance.enableDefaultEnvironmentRouting | Boolean | Enables the Default Environment routing feature that creates personal, developer environments for new makers. Default value is false. |
 |powerPlatform.governance.policy.enableDesktopFlowDataPolicyManagement | Boolean | When this setting is true, admins can view and manage desktop flow action groups in DLP policies in the Power Platform admin center.  Default value is false.|
-|powerPlatform.governance.policy.enableAzureCommercialConnectionsFromUsGov | Boolean | This setting is not currently used by the platform, but may be used in the future.|
+|powerPlatform.governance.policy.enableAzureCommercialConnectionsFromUsGov | Boolean | This setting isn't currently used by the platform, but may be used in the future.|
 |powerPlatform.licensing.disableUseOfUnassignedAIBuilderCredits| Boolean | Ability to use unallocated AI Builder credits in environments without allocated credits. Default value is true. |
 |powerPlatform.licensing.disableBillingPolicyCreationByNonAdminUsers | Boolean | This is a legacy setting that is no longer used by the platform.  Default value is false.|
 |powerPlatform.licensing.enableTenantCapacityReportForEnvironmentAdmins | Boolean | Ability to allow tenant, Power Platform, or Dynamics 365 admins to grant permissions to an environment administrator to view the **Capacity summary** tab. Default value is false.|
-|powerPlatform.licensing.storageCapacityConsumptionWarningThreshold | INT | This setting is not currently used by the platform, but may be used in the future.|
+|powerPlatform.licensing.storageCapacityConsumptionWarningThreshold | INT | This setting isn't currently used by the platform, but may be used in the future.|
 |powerPlatform.licensing.EnableTenantLicensingReportForEnvironmentAdmins | Boolean | Ability to allow tenant, Power Platform, or Dynamics 365 admins to grant permissions to an environment administrator to view the tenant-scoped license reports. Default value is false.|
-|powerPlatform.licensing.ApplyAutoClaimToOnlyManagedEnvironments | Boolean | Allows admins to choose if the license auto-claim policies are applied on Managed Environments or all environments, including standard ones. Default is true.|
-|powerPlatform.champions.disableChampionsInvitationReachout | Boolean | This setting is not currently used by the platform, but may be used in the future.|
-|powerPlatform.champions.disableSkillsMatchInvitationReachout | Boolean | This setting is not currently used by the platform, but may be used in the future.|
+|powerPlatform.licensing.ApplyAutoClaimToOnlyManagedEnvironments | Boolean | Allows admins to choose if the license autoclaim policies are applied on Managed Environments or all environments, including standard ones. Default is true.|
+|powerPlatform.champions.disableChampionsInvitationReachout | Boolean | This setting isn't currently used by the platform, but may be used in the future.|
+|powerPlatform.champions.disableSkillsMatchInvitationReachout | Boolean | This setting isn't currently used by the platform, but may be used in the future.|
 |powerPlatform.intelligence.disableCopilot | Boolean | Allow canvas editors and admins to get AI-powered answers to how-to questions. Currently in preview. Default value is false.|
-|powerPlatform.intelligence.enableOpenAiBotPublishing | Boolean | This setting is not currently used by the platform, but may be used in the future.|
+|powerPlatform.intelligence.enableOpenAiBotPublishing | Boolean | This setting isn't currently used by the platform, but may be used in the future.|
 |powerPlatform.intelligence.disableCopilotFeedback | Boolean | When using Copilot in Power Apps, allow users to submit feedback to Microsoft. Default value is false.|
 |powerPlatform.intelligence.disableCopilotFeedbackMetadata | Boolean | When using Copilot in Power Apps, allow users to share their prompts, questions, and requests with Microsoft. Default value is true.|
 |powerPlatform.modelExperimentation.enableModelDataSharing | Boolean | Ability to allow Microsoft to read Power Automate Copilot AI feature customer data (inputs and outputs) and provide improved models.  Default value is false.|
