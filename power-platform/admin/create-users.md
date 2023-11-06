@@ -8,9 +8,11 @@ ms.author: kvivek
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/06/2023
+ms.date: 11/02/2023
 search.audienceType: 
   - admin
+contributors:
+- srpoduri 
 ---
 # Create users
 
@@ -92,6 +94,7 @@ The following table shows the fields that are managed in the **Users** section o
  <tr><td>First Name </td><td>First Name </td></tr>
  <tr><td>Last Name </td><td>Last Name </td></tr>
 <tr><td>Primary Email** </td><td>Email </td></tr>
+<tr><td>InternalEmailAddress*** </td><td>Mail </td></tr>
 <tr><td>Main Phone </td><td>Office phone</td></tr>
 <tr><td>Mobile Phone  </td><td>Mobile phone</td></tr>
 <tr><td>Fax  </td><td>Fax number  </td></tr>
@@ -99,8 +102,8 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>Address   </td><td>City   </td></tr>
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
-<tr><td>AzureActiveDirectoryObjectId***     </td><td>ObjectId   </td></tr>
-<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br />** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br />*** object ID of a user or a service principal in Azure Active Directory.<br /></td></tr>
+<tr><td>AzureActiveDirectoryObjectId****     </td><td>ObjectId   </td></tr>
+<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.<br>**** ObjectID of a user or a service principal in Azure Active Directory.<br /></td></tr>
 </tbody>
 </table>
 

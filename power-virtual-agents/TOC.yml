@@ -112,6 +112,8 @@
       href: authoring-test-bot.md
     - name: Supported languages
       href: authoring-language-support.md
+    - name: Configure and create multilingual chatbots (Preview)
+      hred: multilingual.md
     - name: Troubleshoot error codes
       href: error-codes.md
 - name: Enhance and improve
@@ -173,7 +175,7 @@
       href: publication-connect-bot-to-azure-bot-service-channels.md
     - name: Integrate with question answering
       href: integrate-with-question-answering.md
-    - name: Integrate with conversational language understanding (preview)
+    - name: Integrate with conversational language understanding
       items:
         - name: Conversational language understanding integration overview
           href: advanced-clu-integration.md
