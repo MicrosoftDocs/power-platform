@@ -29,9 +29,6 @@ Following the steps below to ask a question:
 
 You'll get more AI-powered information about your question including an overview and suggested next steps.
 
-> [!div class="mx-imgBorder"]
-> ![Ask a question in Project "Sophia".](media/ask-question.png)
-
 
 ## Ask questions about your data
 
@@ -44,10 +41,6 @@ You can upload a data file and ask questions about the data. The [supported file
 3. Select **Generate** or enter your question in the text box and then select **Generate**.
 
 Your data is analyzed to create a customized template that provides valuable insights, charts, and actionable steps.
-
-> [!div class="mx-imgBorder"]
-> ![Ask a question about your data in Project "Sophia".](media/ask-question-about-data.png)
-
 
 ### Supported data files
 
