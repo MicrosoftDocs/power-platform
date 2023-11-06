@@ -46,7 +46,7 @@ Default environment routing is a tenant-level, admin setting that:
 
 ## Enable the Default environment routing setting
 
-The **Default environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), [PowerShell](/powershell/) or Power Platform CLI(/powerapps/developer/data-platform/powerapps-cli).
+The **Default environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), [PowerShell](/powershell/) or [Power Platform CLI](../developer/cli/introduction.md).
 
 ### Before you begin
 
@@ -60,50 +60,57 @@ Before you enable the **Default environment routing** feature, consider the foll
 
 ### Enable the feature
 
-# [Power Platform admin center](#tab/ppac)
-a. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), in navigation pane, select **Settings**.
-b. On the **Tenent settings** page, select **Environment routing (preview)**.
-c. In the **Environment routing** pane, turn on the **Create personal developer enviroments for new makers** option.
+#### [Power Platform admin center](#tab/ppac)
+
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), in navigation pane, select **Settings**.
+1. On the **Tenent settings** page, select **Environment routing (preview)**.
+1. In the **Environment routing** pane, turn on the **Create personal developer enviroments for new makers** option.
 
    :::image type="content" source="media/environment-routing.png" alt-text="Turn on the 'Create personal developer environments for new makers' option.":::
 
-# [PowerShell](#tab/PowerShell)
-a. Log in to your tenant account.
+#### [PowerShell](#tab/powershell)
 
-  ```PowerShell
+1. Log in to your tenant account.
+
+  ```powershell
   $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
   ```
 
-b. Retrieve and store your tenant settings in tenantSettings.
+1. Retrieve and store your tenant settings in tenantSettings.
 
-  ```PowerShell
+  ```powershell
   $tenantSettings = Get-TenantSettings  
   ```
   
-c. Set the **enableDefaultEnvironmentRouting** flag to **True**.
+1. Set the **enableDefaultEnvironmentRouting** flag to **True**.
 
-  ```PowerShell
+  ```powershell
   $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
   
   Set-TenantSettings -RequestBody $tenantSettings
   ```
 
-# [Power Platform CLI](#tab/pacCLI)
-a. Create an authentication profile.
-```cmd
+#### [Power Platform CLI](#tab/pacCLI)
+
+1. Create an authentication profile.
+
+```powershell
 pac auth create
 ```
 
-b. Retrieve and store your tenant settings in JSON file.
-```cmd
+1. Retrieve and store your tenant settings in JSON file.
+
+```powershell
 pac admin list-tenant-settings --settings-file <settings_file_path>
 ```
 
-c. Set the **enableDefaultEnvironmentRouting** flag to **true** in the JSON file.
-:::image type="content" source="media/environment-routing2.png" alt-text="Set the enableDefaultEnvironmentRouting flag to true.":::
+1. Set the **enableDefaultEnvironmentRouting** flag to **true** in the JSON file.
 
-d. Update the tenant settings.
-```cmd
+   :::image type="content" source="media/environment-routing2.png" alt-text="Set the enableDefaultEnvironmentRouting flag to true.":::
+
+1. Update the tenant settings.
+
+```powershell
 pac admin update-tenant-settings --settings-file <settings_file_path>
 ```
 
@@ -119,7 +126,7 @@ When trying to enable an environment routing tenant setting, keep the following 
 
 To disable environment routing for your tenant, run the following PowerShell commands:
 
-```PowerShell
+```powershell
 $tenantSettings = Get-TenantSettings  
 
 $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
@@ -131,7 +138,7 @@ Set-TenantSettings -RequestBody $tenantSettings
 
 Admins can run the following cmdlet to confirm if environment routing is enabled for their tenant's default environment. The **enableDefaultEnvironmentRouting** flag should be set to **True**.
 
-```PowerShell
+```powershell
 $Get-TenantSettings
 
 $tenantSettings = Get-TenantSettings
