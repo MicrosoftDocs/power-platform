@@ -24,8 +24,6 @@ Managing user settings can be done in the Power Platform admin center. Use the f
 
 4. Select a user setting from the top menu bar.
 
-    :::image type="content" source="media/user-settings-menu-bar.png" alt-text="User settings menu bar":::
-
     |Setting  |Description  |
     |---------|---------|
     |Run diagnostics     | Access diagnostics on a user in an environment. See [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics).    |
