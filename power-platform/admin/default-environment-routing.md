@@ -72,37 +72,37 @@ Before you enable the **Default environment routing** feature, consider the foll
 
 1. Log in to your tenant account.
 
-  ```powershell
-  $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
-  ```
+   ```powershell
+   $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
+   ```
 
 1. Retrieve and store your tenant settings in tenantSettings.
 
-  ```powershell
-  $tenantSettings = Get-TenantSettings  
-  ```
+   ```powershell
+   $tenantSettings = Get-TenantSettings  
+   ```
   
 1. Set the **enableDefaultEnvironmentRouting** flag to **True**.
 
-  ```powershell
-  $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
-  
-  Set-TenantSettings -RequestBody $tenantSettings
-  ```
+   ```powershell
+   $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
+   
+   Set-TenantSettings -RequestBody $tenantSettings
+   ```
 
 #### [Power Platform CLI](#tab/pacCLI)
 
 1. Create an authentication profile.
 
-```powershell
-pac auth create
-```
+   ```powershell
+   pac auth create
+   ```
 
 1. Retrieve and store your tenant settings in JSON file.
 
-```powershell
-pac admin list-tenant-settings --settings-file <settings_file_path>
-```
+   ```powershell
+   pac admin list-tenant-settings --settings-file <settings_file_path>
+   ```
 
 1. Set the **enableDefaultEnvironmentRouting** flag to **true** in the JSON file.
 
@@ -110,17 +110,16 @@ pac admin list-tenant-settings --settings-file <settings_file_path>
 
 1. Update the tenant settings.
 
-```powershell
-pac admin update-tenant-settings --settings-file <settings_file_path>
-```
+   ```powershell
+   pac admin update-tenant-settings --settings-file <settings_file_path>
+   ```
 
 ---
 
-When trying to enable an environment routing tenant setting, keep the following points in mind: 
+When trying to enable an environment routing tenant setting, keep the following points in mind:
 
--  If the **Developer environment assignments** property is set for only _specific admins_, the command fails and an error message is displayed. To change this, go to Power Platform admin center > **Tenant settings** > **Developer environment assignments** and set it to **Everyone**.
-
--  If the tenant's default environment isn't managed, the command fails and an error message is displayed. For more information, see [Enable or edit Managed Environments in the admin center](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center).
+- If the **Developer environment assignments** property is set for only _specific admins_, the command fails and an error message is displayed. To change this, go to Power Platform admin center > **Tenant settings** > **Developer environment assignments** and set it to **Everyone**.
+- If the tenant's default environment isn't managed, the command fails and an error message is displayed. For more information, see [Enable or edit Managed Environments in the admin center](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center).
 
 ## Disable the feature
 
@@ -213,4 +212,3 @@ A premium license isn't required for the creation or preview of an app or flow i
 ### Does the default environment need to be managed to enable environment routing?
 
 No, the default environment doesn't need to be managed to enable environment routing. 
-
