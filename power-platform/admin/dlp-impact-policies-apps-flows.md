@@ -3,14 +3,15 @@ title: "Impact of DLP policies on apps and flows  | MicrosoftDocs"
 description: About the impact of DLP policies on apps and flows.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/15/2022
+ms.date: 11/06/2023
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - mikferland-msft
   - mihaelablendea
+  - amchern 
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -49,7 +50,7 @@ Users who use a resource that's in violation of the latest DLP policy will see a
 Similarly, Power Automate makers and users won't be able to start a flow that uses connectors that don't belong together or have been blocked by DLP policies. A background system process marks the flow as **Suspended**, and the flow won't be executed until the maker resolves the DLP policy violation.
 
 > [!NOTE]
-> The flow and app suspension process works in a polling mode. This change isn't instantaneous. For flows, it takes about five minutes for the latest DLP policy changes to be assessed against active flows to mark them as suspended due to DLP policy violations. For apps, the number of apps in the tenant will impact the time it take for the policy changes to take effect. In some in cases it may take several hours when there are a lot of apps.
+> The flow and app suspension process works in a polling mode. This change isn't instantaneous. For flows, it takes about five minutes for the latest DLP policy changes to be assessed against active flows to mark them as suspended due to DLP policy violations. For apps, the number of apps in the tenant impacts the time it takes for policy changes to take effect. In some cases, it may take several hours when there are a lot of apps.
 
 > [!div class="mx-imgBorder"] 
 > ![Flow suspension.](media/dlp-flow-suspension.png "Flow suspension")
