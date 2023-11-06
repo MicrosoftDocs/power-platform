@@ -1,6 +1,6 @@
 ---
 title: User channel override
-description: Changing the user release channel override
+description: Learn how to override the release channel for a user.
 author: adrianorth 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -15,29 +15,36 @@ search.audienceType:
 
 With [release channels](/power-apps/maker/model-driven-apps/channel-overview), you can control how often the users in your organization get new features by specifying the release channel.
 
-Admins can override the release channel for a user, and this is called _user channel override_. _User channel override_ takes precedence over the org release channel or app release channel. Only the [browser session URL](/power-apps/maker/model-driven-apps/channel-change#changing-the-browser-session-channel) overrides the user channel override.
+Admins can override the release channel for a user and this is called _user channel override_. User channel override takes precedence over the environment channel and app channel. Only the [browser session URL](/power-apps/maker/model-driven-apps/channel-change#changing-the-browser-session-channel) overrides the user channel override.
 
-## Viewing a user's release channel
+## View a user's release channel
 
-An admin can see the release channel for a user based on the org release channel and the user channel override only. The app channel is not considered here because the app release channel is only available when the app is running and needs to be checked from the **Settings** > **About** dialog. 
+To view the release channel for a user, complete the following steps. 
 
-1. Open Power Platform Admin center to the environment
-1. Click **Users** > **See all**
-1. Search for the user
-1. Click the user name link to open the dialog
-1. Find **Model apps channel** and it is effective value of org + user
+The release channel for a user based on the environment channel and the user channel override. The release channel for a user isn't based on the app channel because the app channel is only available when the app is running and needs to be checked from the **Settings** > **About** pane. 
 
-## Changing a user's release channel
+1. Open the Power Platform admin center and select an environment.
+1. Select **Users** > **See all**.
+1. Search for a user.
+1. Select the user's name.
+1. Note the value in the **Model apps channel** field.
 
-Only admins can change the user release channel override.  
+## Override a user's release channel 
+Only admins can change the release channel for a user. Complete the following steps to do so.
 
-| User channel override | Behavior |
-| -- | -- |
-| None | No user override, use the org or app release channel value |
-| Semi-annual channel | Explicitly set the user channel to be semi-annual, overriding both org or app |
-| Monthly channel | Explicitly set the user channel to be monthly, overriding both org or app |
+1. [View a user's release channel](#view-a-users-release-channel].
+1. Under the **Model apps channel** field, select **Change channel**.
+1. Select a channel from **User channel override** dropdown list.
 
-1. Find the user's current release channel using above steps
-1. Click **Change channel**
-1. Select a channel from **User channel override**
-1. Click **Submit**
+    | Option | Description |
+    | -- | -- |
+    | None | There is no user channel override. The envrionemnt or app channel value is used. |
+    | Semi-annual channel |  Users get new features twice a year, starting early April and early October. |
+    | Monthly channel | Users get new features once a month, on the first release for the month. |
+   
+1. Click **Submit**.
+
+
+
+
+
