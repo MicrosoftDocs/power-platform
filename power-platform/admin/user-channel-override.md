@@ -23,7 +23,7 @@ To view the release channel for a user, complete the following steps.
 
 The release channel for a user based on the environment channel and the user channel override. The release channel for a user isn't based on the app channel because the app channel is only available when the app is running and needs to be checked from the **Settings** > **About** pane. 
 
-1. Open the Power Platform admin center and select an environment.
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select an environment.
 1. Select **Users** > **See all**.
 1. Search for a user.
 1. Select the user's name.
