@@ -63,7 +63,7 @@ Before you enable the **Default environment routing** feature, consider the foll
 #### [Power Platform admin center](#tab/ppac)
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), in navigation pane, select **Settings**.
-1. On the **Tenent settings** page, select **Environment routing (preview)**.
+1. On the **Tenant settings** page, select **Environment routing (preview)**.
 1. In the **Environment routing** pane, turn on the **Create personal developer enviroments for new makers** option.
 
    :::image type="content" source="media/environment-routing.png" alt-text="Turn on the 'Create personal developer environments for new makers' option.":::
