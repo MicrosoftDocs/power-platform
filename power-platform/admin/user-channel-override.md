@@ -1,22 +1,23 @@
 ---
 title: User channel override
 description: Changing the user release channel override
-author: sericks007
+author: adrianorth 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2023
+ms.date: 11/06/2023
 ms.subservice: admin
-ms.author: sericks
+ms.reviewer: sericks
+ms.author: aorth
 search.audienceType: 
   - admin 
 ---
 # User channel override
 
-The release channel allows controlling the cadence that end user impacting features are received. See [Release channels for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview).
+With [release channels](/power-apps/maker/model-driven-apps/channel-overview), you can control how often the users in your organization get new features by specifying the release channel.
 
-Admins can override the release channel for a user which takes precedence over the org release channel or app release channel. Only the browser session URL overrides the user channel override.  For more information see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
+Admins can override the release channel for a user, and this is called _user channel override_. _User channel override_ takes precedence over the org release channel or app release channel. Only the [browser session URL](/power-apps/maker/model-driven-apps/channel-change#changing-the-browser-session-channel) overrides the user channel override.
 
-## Viewing user's release channel
+## Viewing a user's release channel
 
 An admin can see the release channel for a user based on the org release channel and the user channel override only. The app channel is not considered here because the app release channel is only available when the app is running and needs to be checked from the **Settings** > **About** dialog. 
 
