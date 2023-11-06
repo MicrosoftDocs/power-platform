@@ -125,12 +125,14 @@ To download from GitHub and manually install:
 
 1. Download the following Managed or Unmanaged solution files:
 
-- Managed
-  - mpa_ITBase_managed.zip
-  - mpa_HardwareRequestAndManagement_managed.zip
-- Unmanaged
-  - mpa_ITBase.zip
-  - mpa_HardwareRequestAndManagement.zip
+    - [Managed](https://aka.ms/HardwareRequestAndManagementManagedSolution)
+      - mpa_ITBase_managed.zip
+      - mpa_HardwareRequestAndManagement_managed.zip
+    - [Unmanaged](https://aka.ms/HardwareRequestAndManagementUnManagedSolution)
+      - mpa_ITBase.zip
+      - mpa_HardwareRequestAndManagement.zip
+
+    Go to [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) to submit issues.
 
 1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 1. Select **Solutions** in the left-side panel
