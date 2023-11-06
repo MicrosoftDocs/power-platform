@@ -128,8 +128,7 @@
               "$ref": "#/definitions/ErrorMessage"
             }
           }
-        },
-        "x-codegen-request-body-name": "NewWebsiteRequest"
+        }
       }
     },
     "/powerpages/environments/{environmentId}/websites/{id}": {
@@ -384,8 +383,7 @@
             "schema": {
               "$ref": "#/definitions/ErrorMessage"
             }
-          },
-          "x-codegen-request-body-name": "PortalDataModelDto"
+          }
         }
       }
     }
