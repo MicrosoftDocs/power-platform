@@ -1,6 +1,6 @@
 ---
 title: "Responding to GDPR Data Subject Discovery Requests"
-description: "Learn how to respond to GDPR Data Subject Requests for Power Virtual Agents."
+description: "Learn how to respond to GDPR Data Subject Requests for Microsoft Copilot Studio."
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 The first step in responding to a data subject rights request is to search for and identify the customer data that is the subject of the request. Microsoft provides capabilities that assist you in responding to data subject rights requests, and thereby accessing customer data. However, it is your responsibility to ensure that personal data is located and classified appropriately.
 
-The following table summarizes the types of Power Virtual Agents resources that contain personal data for a specific user.
+The following table summarizes the types of Microsoft Copilot Studio resources that contain personal data for a specific user.
 
 | Resources containing personal data | Purpose                                                     |
 | ---------------------------------- | ----------------------------------------------------------- |
@@ -29,6 +29,6 @@ The following table summarizes the types of Power Virtual Agents resources that 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: "Responding to GDPR Data Subject Export Requests"
-description: "Learn how to respond to GDPR Data Subject Export Requests for Power Virtual Agents."
+description: "Learn how to respond to GDPR Data Subject Export Requests for Microsoft Copilot Studio."
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -12,13 +12,13 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Export data to respond to requests for copies of personal data in Power Virtual Agents
+# Export data to respond to requests for copies of personal data in Microsoft Copilot Studio
 
-This topic discusses the Power Virtual Agents capabilities to find or export personal data for a specific user.
+This topic discusses the Microsoft Copilot Studio capabilities to find or export personal data for a specific user.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Export customer data
 
@@ -48,7 +48,7 @@ This topic discusses the Power Virtual Agents capabilities to find or export per
 
 ### Bot sessions (as bot author)
 
-You can download session data for the last 30 days from the [sessions analytics page](analytics-sessions.md) in Power Virtual Agents.
+You can download session data for the last 30 days from the [sessions analytics page](analytics-sessions.md) in Microsoft Copilot Studio.
 
 You can also [export data from the ConversationTranscripts table](analytics-sessions-transcripts.md#export-conversation-transcripts).
 

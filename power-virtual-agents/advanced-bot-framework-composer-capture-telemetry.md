@@ -1,6 +1,6 @@
 ---
 title: "Capture telemetry with Application Insights"
-description: "Use Bot Framework Composer with Power Virtual Agents to send event data to a telemetry service."
+description: "Use Bot Framework Composer with Microsoft Copilot Studio to send event data to a telemetry service."
 keywords: "composer, adaptive card"
 ms.date: 03/24/2023
 
@@ -15,9 +15,9 @@ ms.collection: virtualagent
 
 # Capture telemetry with Application Insights
 
-This article discusses how you can capture telemetry data from your Power Virtual Agents bot for use in [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview). 
+This article discusses how you can capture telemetry data from your Microsoft Copilot Studio bot for use in [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview). 
 
-In addition to the native analytics features within Power Virtual Agents, you can send telemetry data to Application Insights. Telemetry offers insights into your bot by tracking: 
+In addition to the native analytics features within Microsoft Copilot Studio, you can send telemetry data to Application Insights. Telemetry offers insights into your bot by tracking: 
 
 - Logged messages and events sent to and from your bot 
 - Topics to be triggered during user conversations
@@ -28,7 +28,7 @@ In addition to the native analytics features within Power Virtual Agents, you ca
 
 # [Web App](#tab/webApp)
 
-## Connect your Power Virtual Agents bot to Application Insights
+## Connect your Microsoft Copilot Studio bot to Application Insights
 
 To connect your bot to Application Insights, you first need to add your instrumentation key to the project.
 
@@ -46,13 +46,13 @@ To connect your bot to Application Insights, you first need to add your instrume
 
 ## Analyze bot telemetry with Application Insights
 
-After you've connected your bot to Application Insights, telemetry data is logged when users interact with the bot, including testing within Power Virtual Agents. To see the logged telemetry data, navigate to the **Logs** section of your Application Insights resource in Azure.
+After you've connected your bot to Application Insights, telemetry data is logged when users interact with the bot, including testing within Microsoft Copilot Studio. To see the logged telemetry data, navigate to the **Logs** section of your Application Insights resource in Azure.
 
 From here, you can use [Kusto queries](/azure/data-explorer/kusto/query) to query and analyze your data. See [example queries](#example-queries).
 
 ### Example queries
 
-A query can be as simple as specifying a single table, such as `customEvents`, which shows all custom telemetry events logged from Power Virtual Agents. But you can also use [Kusto queries](/azure/data-explorer/kusto/query) to narrow down your results further, including;
+A query can be as simple as specifying a single table, such as `customEvents`, which shows all custom telemetry events logged from Microsoft Copilot Studio. But you can also use [Kusto queries](/azure/data-explorer/kusto/query) to narrow down your results further, including;
 
 - Adding a time interval
 - Extending your results using [custom dimensions](#custom-dimensions). Custom dimensions are custom properties that are logged, along with the prebuilt fields, such as timestamp or the event name
@@ -77,7 +77,7 @@ customEvents
 
 ## Excluding telemetry from test conversations from your queries
 
-Your bot logs telemetry for all conversations, including those that happen within the Power Virtual Agents test canvas. If you want to exclude telemetry gathered during testing, you can extend your query with the `designMode` custom dimension that is captured on all events, and use a *where* clause in your query.
+Your bot logs telemetry for all conversations, including those that happen within the Microsoft Copilot Studio test canvas. If you want to exclude telemetry gathered during testing, you can extend your query with the `designMode` custom dimension that is captured on all events, and use a *where* clause in your query.
 
 The following example shows all custom events, excluding those captured through the test canvas.
 
@@ -88,7 +88,7 @@ customEvents
 ```
 ## Custom Dimensions
 
-Much of the specific activity data received from Power Virtual Agents is stored in the `customDimensions` field. You can [see a custom dimension field being used](#excluding-telemetry-from-test-conversations-from-your-queries) in a query to exclude telemetry from test conversations.
+Much of the specific activity data received from Microsoft Copilot Studio is stored in the `customDimensions` field. You can [see a custom dimension field being used](#excluding-telemetry-from-test-conversations-from-your-queries) in a query to exclude telemetry from test conversations.
 
 | Field        | Description                     | Sample Values                                           |
 |--------------|---------------------------------|--------------------------------------------------------|
@@ -104,9 +104,9 @@ Much of the specific activity data received from Power Virtual Agents is stored 
 
 # [Classic](#tab/classic)
 
-[!INCLUDE [Composer integrated with Power Virtual Agents](includes/composer-integrated-with-pva.md)]
+[!INCLUDE [Composer integrated with Microsoft Copilot Studio](includes/composer-integrated-with-pva.md)]
 
-You can use Bot Framework Composer with Power Virtual Agents to send event data to a telemetry service in [Application Insights](/azure/azure-monitor/app/app-insights-overview). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior, and provides data on availability, performance, and usage.
+You can use Bot Framework Composer with Microsoft Copilot Studio to send event data to a telemetry service in [Application Insights](/azure/azure-monitor/app/app-insights-overview). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior, and provides data on availability, performance, and usage.
 
 > [!IMPORTANT]
 > Application Insights is a feature of [Azure Monitor](/azure/azure-monitor/overview), an extensible Application Performance Management (APM) tool that allows you to monitor your live applications. It requires a subscription to [Microsoft Azure](https://azure.microsoft.com/).

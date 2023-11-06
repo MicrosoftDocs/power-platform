@@ -1,5 +1,5 @@
 ---
-title: "Use system topics in Power Virtual Agents"
+title: "Use system topics in Microsoft Copilot Studio"
 description: "Learn how system topics are used in conversations."
 keywords: "PVA"
 ms.date: 03/24/2023
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ms.reviewer: ggupta
 ---
 
-# Use system topics in Power Virtual Agents
+# Use system topics in Microsoft Copilot Studio
 
 System topics are common topics used in conversations with a bot.
 
@@ -24,7 +24,7 @@ When you first create a bot, all system topics are configured to trigger at the 
 
 # [Web app](#tab/webApp)
 
-Unlike topics that you create, system topics are built into Power Virtual Agents. They're added to a bot automatically when you create it. System topics help your bot respond to common system events, such as escalation, or carry out essential behavior, such as ending a conversation. You can't delete system topics. You can disable ones that you don't need, however.
+Unlike topics that you create, system topics are built into Microsoft Copilot Studio. They're added to a bot automatically when you create it. System topics help your bot respond to common system events, such as escalation, or carry out essential behavior, such as ending a conversation. You can't delete system topics. You can disable ones that you don't need, however.
 
 When you create a bot, all system topics are configured to trigger at the appropriate times, in response to related events. However, you can manually trigger system topics by [redirecting](authoring-create-edit-topics.md#redirect-to-another-topic) to them. Some also have trigger phrases that you can customize to fit your needs.
 
@@ -56,7 +56,7 @@ Informs customers about how they can speak to a human.
 Triggers when a trigger phrase such as "talk to agent" is matched or when the Escalate system event is triggered. For example, **Question** nodes can be configured to escalate if they don't receive a valid answer from the customer.
 
 > [!NOTE]
-> If using Power Virtual Agents with [hand off to OmniChannel](configuration-hand-off-omnichannel.md) configured, follow the instructions on the [Hand off to a live agent](advanced-hand-off.md#configuring-the-escalate-system-topic) to ensure proper hand-off to Dynamics 365 Customer Service.
+> If using Microsoft Copilot Studio with [hand off to OmniChannel](configuration-hand-off-omnichannel.md) configured, follow the instructions on the [Hand off to a live agent](advanced-hand-off.md#configuring-the-escalate-system-topic) to ensure proper hand-off to Dynamics 365 Customer Service.
 
 ### Fallback
 

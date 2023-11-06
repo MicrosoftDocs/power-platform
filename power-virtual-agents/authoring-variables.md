@@ -23,7 +23,7 @@ Variables can also be passed to, and returned from, [other topics](authoring-var
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Web app](#tab/webApp)
@@ -57,7 +57,7 @@ Order of variables is determined from top to bottom of the authoring canvas. Tha
 
 ### Entities
 
-Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to identify a specific type of information from a user's responses. The identified information is saved in a variable of the type that's appropriate for the information. The following table lists the variable base type that's associated with prebuilt entities.
+Microsoft Copilot Studio uses [entities](advanced-entities-slot-filling.md) to identify a specific type of information from a user's responses. The identified information is saved in a variable of the type that's appropriate for the information. The following table lists the variable base type that's associated with prebuilt entities.
 
 | Entity                  | Variable Base Type |
 | ----------------------- | ------------------ |
@@ -149,7 +149,7 @@ The **Variables** pane is where you can view all the variables that are availabl
 
 To open the **Variables** pane, in the topic's menu bar, select **Variables**.
 
-:::image type="content" source="media/authoring-variables/authoring-variables-open-variable-pane.png" alt-text="Screenshot of the Variables pane in the Power Virtual Agents authoring canvas, with the Variables button highlighted.":::
+:::image type="content" source="media/authoring-variables/authoring-variables-open-variable-pane.png" alt-text="Screenshot of the Variables pane in the Microsoft Copilot Studio authoring canvas, with the Variables button highlighted.":::
 
 ### Variable properties pane
 
@@ -306,7 +306,7 @@ When you're returning a variable to a topic, the destination topic is the topic 
 
 ### Entity and variable type
 
-Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to identify a specific type of information from a user's responses. A variable type is associated with the identified information when it's saved. The variable type is analogous with the entity.
+Microsoft Copilot Studio uses [entities](advanced-entities-slot-filling.md) to identify a specific type of information from a user's responses. A variable type is associated with the identified information when it's saved. The variable type is analogous with the entity.
 
 Each entity or variable type maps to a base type, as listed in the following table. The base type determines the operators that you can use when you construct a logical expression with the corresponding variable. It also determines whether you can [feed a variable to a flow](advanced-flow-input-output.md) or [Bot Framework skill](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as an input parameter.
 
@@ -390,7 +390,7 @@ The Parse Value node allows you to convert a value of one type, to a value of an
 
 Key scenarios using the Parse Value node focus on converting raw JSON or untyped variables (whose value or structure isn’t know until runtime; for example ChannelData) to concrete types.
 
-The process starts when a Flow is called, which in turn calls an API. The API then returns a result. Typically, you would need to parse this response and return one or more primitive variables to Power Virtual Agents. With the Parse Value node, you can send the entire API result as a string:
+The process starts when a Flow is called, which in turn calls an API. The API then returns a result. Typically, you would need to parse this response and return one or more primitive variables to Microsoft Copilot Studio. With the Parse Value node, you can send the entire API result as a string:
 
 ```json
 {

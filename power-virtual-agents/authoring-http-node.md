@@ -16,11 +16,11 @@ ms.collection: virtual-agent
 
 # Making HTTP requests
 
-In Power Virtual Agents, you can extend the bot's capabilities by calling external REST APIs using the **HTTP request** node. This can be helpful when you need to retrieve data from an external system or manipulate data on that system.
+In Microsoft Copilot Studio, you can extend the bot's capabilities by calling external REST APIs using the **HTTP request** node. This can be helpful when you need to retrieve data from an external system or manipulate data on that system.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Create and edit topics](authoring-create-edit-topics.md)
 
 ## Using the HTTP request node

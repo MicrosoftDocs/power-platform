@@ -26,14 +26,14 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1.
 - Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine).
-- A bot created in Power Virtual Agents that you want to connect to your app.
+- A bot created in Microsoft Copilot Studio that you want to connect to your app.
 
 ## Connect your bot to a web-based app
 
-1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Channels**.
+1. In Microsoft Copilot Studio, in the navigation menu under **Settings**, select **Channels**.
 
 1. Select the **Mobile app** tile to open the configuration window.
 
@@ -66,11 +66,11 @@ The instructions in this document reference the following:
 - [Contextual variables available upon hand-off](advanced-hand-off.md#contextual-variables-available-upon-hand-off)
 - [Microsoft Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
 
-### Retrieve your Power Virtual Agents bot parameters
+### Retrieve your Microsoft Copilot Studio bot parameters
 
-To connect to the bot you have built with Power Virtual Agents, you'll need to retrieve your bot's name and token endpoint to identify it.
+To connect to the bot you have built with Microsoft Copilot Studio, you'll need to retrieve your bot's name and token endpoint to identify it.
 
-1. Copy your bot's name in Power Virtual Agents.
+1. Copy your bot's name in Microsoft Copilot Studio.
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
 
@@ -86,7 +86,7 @@ To connect to the bot you have built with Power Virtual Agents, you'll need to r
 
 ### Get Direct Line token
 
-To start a conversation with your Power Virtual Agents bot, you need a Direct Line token. You need to add code that retrieves a Direct Line token with the Token Endpoint from the previous section to your app.
+To start a conversation with your Microsoft Copilot Studio bot, you need a Direct Line token. You need to add code that retrieves a Direct Line token with the Token Endpoint from the previous section to your app.
 
 To request a Direct Line token, issue a GET request to the endpoint below:
 
@@ -109,7 +109,7 @@ If the request is successful, a Direct Line token will be returned for the reque
 
 #### Sample code example
 
-The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to get a Direct Line token for a Power Virtual Agents bot.
+The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to get a Direct Line token for a Microsoft Copilot Studio bot.
 
 ```C#
 /// <summary>
@@ -154,9 +154,9 @@ The response will be:
 
 ### Use Direct Line to communicate with the bot
 
-After retrieving the Direct Line token, you are ready to have a conversation with your Power Virtual Agents bot with Direct Line. Follow the instructions at [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0&preserve-view=true) to start a conversation and send and receive messages.
+After retrieving the Direct Line token, you are ready to have a conversation with your Microsoft Copilot Studio bot with Direct Line. Follow the instructions at [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0&preserve-view=true) to start a conversation and send and receive messages.
 
-The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to start a conversation and send and receive messages from a Power Virtual Agents bot.
+The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to start a conversation and send and receive messages from a Microsoft Copilot Studio bot.
 
 1. Initialize a DirectLineClient instance with the Direct Line token and start a conversation:
 
@@ -223,7 +223,7 @@ The following example uses samples from the [Connector sample code](https://gith
 
 You may need to add code to refresh the Direct Line token if your application has a lengthy conversation with the bot. The token expires but can be refreshed before it expires; learn more at [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens&preserve-view=true).
 
-The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to refresh the token for an existing Power Virtual Agents conversation:
+The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to refresh the token for an existing Microsoft Copilot Studio conversation:
 
 ```C#
   // DirectLine provides a token refresh method

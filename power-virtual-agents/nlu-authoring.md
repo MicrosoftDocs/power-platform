@@ -16,7 +16,7 @@ searchScope:
 
 # Create (and edit) with Copilot
 
-In addition to the traditional method for [creating and editing topics](authoring-create-edit-topics.md), Power Virtual Agents lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
+In addition to the traditional method for [creating and editing topics](authoring-create-edit-topics.md), Microsoft Copilot Studio lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
 
 This means you can quickly create and deploy a functional bot, without having to first manually author multiple topics.
 
@@ -32,11 +32,11 @@ See the [AI-based chatbot authoring overview](nlu-gpt-overview.md) for more exam
 >  
 > Other regions, and languages other than English, aren't currently supported.
 
-- You'll need an account for Power Virtual Agents. 
+- You'll need an account for Microsoft Copilot Studio. 
 
     > [!NOTE]
     >  
-    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
+    > If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Microsoft Copilot Studio before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
 
 - Review the [AI response generation training, model, and usage FAQ](faqs-copilot.md) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
 
@@ -48,13 +48,13 @@ When creating a new topic, you can select **Create with Copilot** and ask the AI
 
 1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic** and then **Create with Copilot**.
 
-    :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the New topics button highlighted.":::
 
     > [!NOTE]
     >  
     > If you don't see the **Copilot** option, you may need to enable **Intelligent authoring support**:
     > 1. Select the **Settings** icon on the top menu and then **General settings**.
-    >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents menu with the Settings icon open.":::
+    >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Microsoft Copilot Studio menu with the Settings icon open.":::
     >  
     > 2. Set the switch under **Intelligent authoring support** to **On**.
 
@@ -81,7 +81,7 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 
 1. Open your bot and select **Topics**. Select the topic you want to modify, and then **Edit with Copilot** on the menu bar just above the topic's conversation path.
 
-    :::image type="content" source="media/nlu-gpt/describe-it-toolbar.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it button highlighted.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-toolbar.png" alt-text="Screenshot of the Microsoft Copilot Studio authoring window with the Describe it button highlighted.":::
 
     > [!TIP]
     >
@@ -91,7 +91,7 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
    
 2. In the **What do you want to do** field, describe what you want to change or add in the topic. 
 
-    :::image type="content" source="media/nlu-gpt/describe-it-modify.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it side panel open.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-modify.png" alt-text="Screenshot of the Microsoft Copilot Studio authoring window with the Describe it side panel open.":::
 
     Use simple, plain English to direct the AI with what you want it to do, as in the these examples:
 
@@ -111,7 +111,7 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
     
     If you don't like the changes, select the **Undo** button. You can then change your directions and try again.
 
-    :::image type="content" source="media/nlu-gpt/describe-it-modify-undo.png" alt-text="Screenshot of the Power Virtual Agents Describe it side panel open, showing the Undo button.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-modify-undo.png" alt-text="Screenshot of the Microsoft Copilot Studio Describe it side panel open, showing the Undo button.":::
 
     You can always see the last thing you asked Copilot to do under the **What you asked for** label.
 
@@ -120,7 +120,7 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 > You can provide feedback on how well the AI did by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Edit with Copilot** panel.  
 > If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback to improve the quality of the AI.
 >  
-> :::image type="content" source="media/nlu-gpt/describe-it-feedback.png" alt-text="Screenshot of the Power Virtual Agents Describe it feedback panel.":::
+> :::image type="content" source="media/nlu-gpt/describe-it-feedback.png" alt-text="Screenshot of the Microsoft Copilot Studio Describe it feedback panel.":::
 
 ## What's supported
 

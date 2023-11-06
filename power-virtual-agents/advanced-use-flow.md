@@ -16,18 +16,18 @@ ms.collection: virtual-agent
 
 # Call a flow as an action
 
-Learn how to use a cloud flow in Power Virtual Agents by giving a bot the ability to produce a weather forecast on request. In the previous example, you [created a flow](advanced-flow-create.md) that fetches a weather forecast. In this example, you'll use a **Call an action** node in a bot topic to call the flow when a customer asks about the weather.
+Learn how to use a cloud flow in Microsoft Copilot Studio by giving a bot the ability to produce a weather forecast on request. In the previous example, you [created a flow](advanced-flow-create.md) that fetches a weather forecast. In this example, you'll use a **Call an action** node in a bot topic to call the flow when a customer asks about the weather.
 
 If you haven't already [created the weather forecast flow](advanced-flow-create.md), do that now.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Create a flow](advanced-flow-create.md).
 
 ## Call a flow from a topic
 
-1. In Power Virtual Agents, go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
+1. In Microsoft Copilot Studio, go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
 
 1. Create a new topic, and name it **Get weather**.
 
@@ -69,7 +69,7 @@ If you haven't already [created the weather forecast flow](advanced-flow-create.
 
 ## Manage a flow used in a bot topic
 
-After you've called a flow from an action node in a bot topic, you can use the node menu to manage the flow. The Power Virtual Agents authoring canvas gives you three options:
+After you've called a flow from an action node in a bot topic, you can use the node menu to manage the flow. The Microsoft Copilot Studio authoring canvas gives you three options:
 
 - **Delete**: Select to permanently delete the node, and the flow, from the topic.  
 
@@ -77,7 +77,7 @@ After you've called a flow from an action node in a bot topic, you can use the n
 
 - **Replace flow**: Select to open the action picker, where you can select or create a different flow.
 
-:::image type="content" source="media/advanced-use-flow/advanced-flow-nodemanage.png" alt-text="Screenshot of flow options in the Power Virtual Agents authoring canvas.":::
+:::image type="content" source="media/advanced-use-flow/advanced-flow-nodemanage.png" alt-text="Screenshot of flow options in the Microsoft Copilot Studio authoring canvas.":::
 
 ## Test your flow and topic
 

@@ -16,18 +16,18 @@ ms.collection: virtual-agent
 
 # Configure hand off to any generic engagement hub
 
-Power Virtual Agents lets you hand over bot conversations seamlessly and contextually to a human agent through an engagement hub.
+Microsoft Copilot Studio lets you hand over bot conversations seamlessly and contextually to a human agent through an engagement hub.
 
 With some custom development, you can configure your bot to hand off conversations to any engagement hub. This guide describes how you can do this.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- You need to have [built a bot using Power Virtual Agents](authoring-first-bot.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- You need to have [built a bot using Microsoft Copilot Studio](authoring-first-bot.md).
 - You need an engagement hub that can interact programmatically using APIs or SDK.
 
 > [!IMPORTANT]
-> Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs who are looking to integrate third-party engagement hubs with Power Virtual Agents.
+> Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs who are looking to integrate third-party engagement hubs with Microsoft Copilot Studio.
 
 ## Overview
 
@@ -39,9 +39,9 @@ A full hand-off to an engagement hub follows this pattern:
 
 1. The engagement hub routes the incoming chat through built-in chat routing capabilities to a bot.
 
-1. A custom adapter relays the incoming chat messages from the engagement hub to a Power Virtual Agents bot.
+1. A custom adapter relays the incoming chat messages from the engagement hub to a Microsoft Copilot Studio bot.
 
-1. Once the end user [triggers hand-off](advanced-hand-off.md#triggering-hand-off-to-a-live-agent), Power Virtual Agents starts hand-off with full conversational context.
+1. Once the end user [triggers hand-off](advanced-hand-off.md#triggering-hand-off-to-a-live-agent), Microsoft Copilot Studio starts hand-off with full conversational context.
 
 1. The custom adapter intercepts the hand-off message, parses the full conversation context, and seamlessly routes the escalated conversation to a skilled human agent, based on availability.
 
@@ -55,7 +55,7 @@ An adapter bridges conversations to and from your agent engagement hub by relayi
 
 Most popular agent engagement hubs provide SDKs or document their APIs publicly, enabling you to build such adapters.
 
-While it is outside the scope of this document to cover what a custom adapter could contain, the following sample hand-off message, based on what Power Virtual Agents generates as part of our [standard hand-off to a live agent experience](advanced-hand-off.md), can help get you started.
+While it is outside the scope of this document to cover what a custom adapter could contain, the following sample hand-off message, based on what Microsoft Copilot Studio generates as part of our [standard hand-off to a live agent experience](advanced-hand-off.md), can help get you started.
 
 These code snippets and samples allow you to extract context from the bot conversation to seamlessly and contextually hand off bot conversations to any generic engagement hub.
 

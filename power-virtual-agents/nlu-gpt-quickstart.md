@@ -1,6 +1,6 @@
 ---
 title: Quickstart guide for building bots with GPT
-description: Build bots quickly and provide the most relevant information to your customers with natural language understanding advancements in Power Virtual Agents.
+description: Build bots quickly and provide the most relevant information to your customers with natural language understanding advancements in Microsoft Copilot Studio.
 keywords: "PVA, GPT, NLU"
 ms.date: 7/30/2023
 ms.topic: how-to
@@ -16,7 +16,7 @@ searchScope:
 
 # Quickstart guide for building bots with GPT
 
-Microsoft has made bot building even simpler with AI-powered capabilities in Power Virtual Agents. Whether you're new to conversational AI or a seasoned developer, our intelligence platform is with you and your team every step of the way. 
+Microsoft has made bot building even simpler with AI-powered capabilities in Microsoft Copilot Studio. Whether you're new to conversational AI or a seasoned developer, our intelligence platform is with you and your team every step of the way. 
 
 This quickstart guide introduces you to the minimal steps necessary to get started quickly in creating and boosting a chatbot with expanded natural language understanding (NLU) capabilities. Using the intelligent authoring of AI-powered bots, you can now create a new topic or edit an existing one by describing what you want to happen or have your bot generate conversational responses even if there isn't a matching topic.
 
@@ -29,10 +29,10 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 > Other regions, and languages other than English, aren't supported.
 
 
-- You'll need an account for Power Virtual Agents. 
+- You'll need an account for Microsoft Copilot Studio. 
 
     > [!NOTE]
-    > If you don't have a Power Virtual Agents account, you can go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA), select **Start free**, and then sign in with your work email address. Also see the [Quickstart guide for creating a Power Virtual Agents bot](fundamentals-get-started.md).
+    > If you don't have a Microsoft Copilot Studio account, you can go to the [Microsoft Copilot Studio introduction website](https://aka.ms/TryPVA), select **Start free**, and then sign in with your work email address. Also see the [Quickstart guide for creating a Microsoft Copilot Studio bot](fundamentals-get-started.md).
     >  
     > Personal Microsoft accounts aren't supported. 
     >  
@@ -40,7 +40,7 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 
 - [Review AI response generation training, model, and usage FAQ](faqs-generative-answers.md) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
-- You must be using the [current version of Power Virtual Agents](overview-preview.md), and the bot type must not be **Classic**. Classic chatbots have **(classic)** added to their name.  
+- You must be using the [current version of Microsoft Copilot Studio](overview-preview.md), and the bot type must not be **Classic**. Classic chatbots have **(classic)** added to their name.  
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-bots.png" alt-text="Screenshot of the list of chatbots with one bot with clasic added to its name.":::
 
@@ -61,19 +61,19 @@ When a customer asks a question such as "When do you open?" or "What are your op
 
 The bot then follows the _conversation flow_ that you've defined in the **Store hours** topic, which might be a series of questions that use if/else arguments, or logic gates, to ask the customer which store location they're interested in. The final output of the topic might be to then display the hours and contact information for that location.  
 
-However, you may not be able to anticipate all the types of questions your customers ask. To help mitigate this, Power Virtual Agents incorporates a powerful new AI-powered capability that uses the latest advancements in NLU models. When you have **Boost conversations** enabled in your bot, and linked to a publicly available, Bing-indexed website, your bot can provide automatically generated, conversationally friendly, plain language responses without depending upon the bot builder to create topics for every eventuality. 
+However, you may not be able to anticipate all the types of questions your customers ask. To help mitigate this, Microsoft Copilot Studio incorporates a powerful new AI-powered capability that uses the latest advancements in NLU models. When you have **Boost conversations** enabled in your bot, and linked to a publicly available, Bing-indexed website, your bot can provide automatically generated, conversationally friendly, plain language responses without depending upon the bot builder to create topics for every eventuality. 
 
-Also, with Power Virtual Agents new Copilot feature, your chatbot uses AI, powered by the Azure OpenAI GPT model (which is also used in Bing), to create bot topics based upon a simple description of what you want to achieve. You can also modify and update any topic in your bot in the same manner, by describing the changes you want to make.
+Also, with Microsoft Copilot Studio new Copilot feature, your chatbot uses AI, powered by the Azure OpenAI GPT model (which is also used in Bing), to create bot topics based upon a simple description of what you want to achieve. You can also modify and update any topic in your bot in the same manner, by describing the changes you want to make.
 
 Ready to get started? The first step is to create your bot.
 
 ## Create a boosted bot 
 
-1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/). 
+1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/). 
 
 1. In the side navigation menu, select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
 
-   :::image type="content" source="media/nlu-gpt/nlu-quickstart-home.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-home.png" alt-text="Screenshot of the Microsoft Copilot Studio home page.":::
 
 1. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic, and select **Create**.
 
@@ -92,13 +92,13 @@ See the [Boost conversations](nlu-boost-conversations.md) topic for more details
 
 1. With your bot open, select **Topics**. On the **Topics** page, select **+ New topic** and then **Create with Copilot**.
 
-    :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the New topics button highlighted.":::
 
     > [!NOTE]
     >  
     > If you don't see the **Copilot** option, you may need to enable **Intelligent authoring support**:
     >1. Select the **Settings** icon on the top menu and then **General settings**.
-    >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents menu with the Settings icon open.":::  
+    >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Microsoft Copilot Studio menu with the Settings icon open.":::  
     >  
     >2. Set the switch under **Intelligent authoring support** to **On**.
 
@@ -119,7 +119,7 @@ You can explore ways to extend and enhance your boosted bot and topic in [Create
 ## Test your bot's boosted conversational reach
 
 Once you create a bot, you can immediately test the bot and try out different phrases for your bot to reply to. 
-The **Test bot** pane shows how a bot conversation plays out at every step and you can fine-tune a topic directly within the **Power Virtual Agents** portal:
+The **Test bot** pane shows how a bot conversation plays out at every step and you can fine-tune a topic directly within the **Microsoft Copilot Studio** portal:
  
 1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the side navigation menu.
    
@@ -142,5 +142,5 @@ You can return to the authoring canvas at any time to revise the conversation pa
 
 ## Add features to further develop your bot 
 It's easy to take your bot's conversations up a notch by giving your bot a voice of its own. You can add images and video clips, as well as adaptive cards, entities, and variable expressions. 
-See the [Key concepts - Enhanced authoring](advanced-fundamentals.md) for more details, or continue your bot-building journey by checking out the rest of the [Power Virtual Agents documentation](index.yml).
+See the [Key concepts - Enhanced authoring](advanced-fundamentals.md) for more details, or continue your bot-building journey by checking out the rest of the [Microsoft Copilot Studio documentation](index.yml).
 

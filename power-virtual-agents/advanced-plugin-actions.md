@@ -1,5 +1,5 @@
 ---
-title: Use plugin actions in Power Virtual Agents (preview)
+title: Use plugin actions in Microsoft Copilot Studio (preview)
 description: Use plugin actions to extend the capabilities of your bots.
 keywords: "PVA, plugin, connector, flow, automate"
 ms.date: 09/29/2023
@@ -13,7 +13,7 @@ ms.custom: plugin, connector, flow, advanced-authoring
 ms.collection: virtual-agent
 ---
 
-# Use plugin actions in Power Virtual Agents (preview)
+# Use plugin actions in Microsoft Copilot Studio (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -43,7 +43,7 @@ To add a plugin action:
 
 1. Open your bot and select **Topics**. On the **Topics** page, select **+ Add**, and then select **Plugin action (preview)**. 
 
-    :::image type="content" source="media/advanced-plugin-actions/add-plugin-action.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the plugin action button highlighted.":::
+    :::image type="content" source="media/advanced-plugin-actions/add-plugin-action.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the plugin action button highlighted.":::
 
 1. On the **Add an action (preview)** wizard that is now open, you can search for what you want to use as a plugin action within your bot. The default list shown when you open the wizard contains Power Automate Flows and custom connectors that are available within the environment, commonly used pre-built connectors, and Bot Framework Skills that have been registered with your bot.
 
@@ -99,7 +99,7 @@ You call a plugin action explicitly from within a topic, just as when calling ot
 
 To call a plugin action:
 
-1. In Power Virtual Agents, go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
+1. In Microsoft Copilot Studio, go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
 
 1. Create a new topic, and name it **Get weather**.
 

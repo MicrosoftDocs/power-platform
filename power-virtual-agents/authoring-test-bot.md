@@ -1,5 +1,5 @@
 ---
-title: "Test your Power Virtual Agents bot"
+title: "Test your Microsoft Copilot Studio bot"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
 keywords: "PVA"
 ms.date: 04/14/2023
@@ -13,15 +13,15 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Test your Power Virtual Agents bot
+# Test your Microsoft Copilot Studio bot
 
-As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation.
+As you design your bot in Microsoft Copilot Studio, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation.
 
 To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step, and go to the corresponding node in the authoring canvas.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Web app](#tab/webApp)
@@ -109,7 +109,7 @@ Use the **Test bot** pane to walk through your bot conversations as the user. It
 
 1. If the **Test bot** pane is hidden, select **Test your bot** at the bottom of the left side panel to open it.
 
-   :::image type="content" source="media/authoring-test-bot/test-bot-menu.png" alt-text="Screenshot of the Power Virtual Agents left side panel, with the Test your bot button highlighted.":::
+   :::image type="content" source="media/authoring-test-bot/test-bot-menu.png" alt-text="Screenshot of the Microsoft Copilot Studio left side panel, with the Test your bot button highlighted.":::
 
 1. Select **Reset** at the top of the **Test bot** pane to clear previous conversations.
 
@@ -150,7 +150,7 @@ The bot's content and conversational diagnostics are saved in a .zip archive fil
 
 ### Report issues with your bot conversations
 
-Help us improve Power Virtual Agents by using the **Flag an issue** command in the **Test bot** pane to tell us about issues with your conversations.
+Help us improve Microsoft Copilot Studio by using the **Flag an issue** command in the **Test bot** pane to tell us about issues with your conversations.
 
 1. At the top of the **Test bot** pane, select the flag icon (**Flag an issue**)
 
@@ -212,4 +212,4 @@ If the conversation path in the **Test your bot** pane moves from one topic to a
 ---
 
 > [!NOTE]
-> Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the **Test bot** pane. This submits your conversation ID to Microsoft; the ID is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as is stored in the *DSAT.zip* file, is not sent when you flag an issue. All information collected remains anonymous and will be used to help improve bot quality. 
+> Help us improve Microsoft Copilot Studio by flagging issues with the **Flag an issue** command on the **Test bot** pane. This submits your conversation ID to Microsoft; the ID is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as is stored in the *DSAT.zip* file, is not sent when you flag an issue. All information collected remains anonymous and will be used to help improve bot quality. 

@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Configure the system fallback topic
 
-During a conversation, a Power Virtual Agents bot [triggers the appropriate topic based on the user's input](authoring-create-edit-topics.md). If the bot can't determine the user's intent, it prompts the user again. After two prompts, the bot escalates to a live agent through the system **Escalate** topic.
+During a conversation, a Microsoft Copilot Studio bot [triggers the appropriate topic based on the user's input](authoring-create-edit-topics.md). If the bot can't determine the user's intent, it prompts the user again. After two prompts, the bot escalates to a live agent through the system **Escalate** topic.
 
 In some scenarios, you might want to customize how the bot behaves when user input doesn't trigger any topic. For example, you can build a catchall topic to capture unrecognized user intent, or use a topic to call back-end systems or route to existing services.
 
@@ -25,7 +25,7 @@ This topic also includes the unique variable `UnrecognizedTriggerPhrase` to capt
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Add a system fallback topic
 

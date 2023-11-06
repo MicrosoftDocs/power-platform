@@ -1,6 +1,6 @@
 ---
 title: Ask a question
-description: Use a Question node to ask the user a question and store their response in a variable in Power Virtual Agents preview.
+description: Use a Question node to ask the user a question and store their response in a variable in Microsoft Copilot Studio preview.
 keywords: "PVA"
 ms.date: 04/13/2023
 
@@ -58,7 +58,7 @@ Question behavior properties allow you to control other aspects of the **Questio
 
     The **Question behavior** pane opens.
 
-    :::image type="content" source="media/authoring-ask-a-question/question-properties.png" alt-text="Screenshot of the Power Virtual Agents Question behavior pane.":::
+    :::image type="content" source="media/authoring-ask-a-question/question-properties.png" alt-text="Screenshot of the Microsoft Copilot Studio Question behavior pane.":::
 
 ### Skip behavior
 

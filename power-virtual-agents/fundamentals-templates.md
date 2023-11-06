@@ -1,6 +1,6 @@
 ---
 title: "Chatbot templates for Teams"
-description: "Use templates to quickly get up and running with Power Virtual Agents chatbots in Microsoft Teams."
+description: "Use templates to quickly get up and running with Microsoft Copilot Studio chatbots in Microsoft Teams."
 keywords: "PVA, teams, templates"
 ms.date: 03/24/2023
 
@@ -18,11 +18,11 @@ searchScope:
 # Use prebuilt chatbot templates in Microsoft Teams
 
 > [!NOTE]
-> This topic applies to chatbots created in the Power Virtual Agents app in Microsoft Teams only. Templates are not currently supported for the Power Virtual Agents web app.
+> This topic applies to chatbots created in the Microsoft Copilot Studio app in Microsoft Teams only. Templates are not currently supported for the Microsoft Copilot Studio web app.
 
 Bots are great at helping your employees to self-serve human resources (HR), IT, and other internal employee functions by providing automated responses and taking meaningful actions. This increases an employee's efficiency and saves your organization money and time.
 
-Sometimes, however, it's hard to know where to start. You can use templates created by the Power Virtual Agents team to help you create and customize bots to your needs.
+Sometimes, however, it's hard to know where to start. You can use templates created by the Microsoft Copilot Studio team to help you create and customize bots to your needs.
 
 ## Employee frequently asked questions (FAQ) template
 
@@ -36,7 +36,7 @@ The template comes with a built-in capability to log an employee's escalation re
 
 It also obtains employee feedback so you can make improvements to the bot over time.
 
-As it's built with Power Virtual Agents, it can easily be customized and extended to suit your needs with no developer and data science background required.
+As it's built with Microsoft Copilot Studio, it can easily be customized and extended to suit your needs with no developer and data science background required.
 
 Whether it's HR, IT or other internal employee functions, the Employee FAQ bot template is a great place to start on your bot-building journey.
 

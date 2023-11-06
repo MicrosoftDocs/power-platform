@@ -1,6 +1,6 @@
 ---
 title: "Begin the bot topic design process"
-description: "You use bot topics in Power Virtual Agents to provide answers and information for your customers or bot users. Considering the types of questions and tasks that your bot users have assists in the development of your chatbot design plan."
+description: "You use bot topics in Microsoft Copilot Studio to provide answers and information for your customers or bot users. Considering the types of questions and tasks that your bot users have assists in the development of your chatbot design plan."
 author: HenryJammes
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -67,19 +67,19 @@ For instance, if a user asks a retail bot whether there are any stores nearby, t
 
 ## Use native generative AI capabilities
 
-When designing a chatbot, you may not be able to anticipate all the types of questions your bot users ask. To help mitigate this, Power Virtual Agents incorporates a powerful AI-powered capability that uses the latest advancements in natural language understanding (NLU) models.
+When designing a chatbot, you may not be able to anticipate all the types of questions your bot users ask. To help mitigate this, Microsoft Copilot Studio incorporates a powerful AI-powered capability that uses the latest advancements in natural language understanding (NLU) models.
 
 When you enable the [Boost conversations](/power-virtual-agents/nlu-boost-conversations) option for your bot and link your chatbot to a publicly available,  Bing-indexed website, your bot can provide automatically generated, conversationally friendly, plain language responses without the need for you to create topics for every eventuality or "edge-case".
 
 ## Offload large volumes of single-turn question and answer pairs
 
-Power Virtual Agents limits a chatbot to 1,000 topics.
+Microsoft Copilot Studio limits a chatbot to 1,000 topics.
 
-If you have large numbers of FAQs or knowledgebases, you can avoid creating one topic for each question and answer pair by offloading them outside of Power Virtual Agents topics, while offering a single user experience in Power Virtual Agents by [using the Fallback topic](./fallback-topic.md).
+If you have large numbers of FAQs or knowledgebases, you can avoid creating one topic for each question and answer pair by offloading them outside of Microsoft Copilot Studio topics, while offering a single user experience in Microsoft Copilot Studio by [using the Fallback topic](./fallback-topic.md).
 
 > [!TIP]
 > [Question answering in Azure Cognitive Service for Language](/azure/cognitive-services/language-service/question-answering/overview) provides cloud-based NLP that allows you to create a natural conversational layer over your data. It is used to find the most appropriate answer for any input from your custom KB of information.
-> [Learn how to integrate question answering in Power Virtual Agents](/power-virtual-agents/integrate-with-question-answering).
+> [Learn how to integrate question answering in Microsoft Copilot Studio](/power-virtual-agents/integrate-with-question-answering).
 
 > [!div class="nextstepaction"]
 > [Topic authoring best practices](topic-authoring-best-practices.md)

@@ -19,8 +19,8 @@ By default, topics use the **Phrases** trigger, meaning they are triggered when 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- [Create and edit topics in your Power Virtual Agents bot](authoring-create-edit-topics.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- [Create and edit topics in your Microsoft Copilot Studio bot](authoring-create-edit-topics.md).
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

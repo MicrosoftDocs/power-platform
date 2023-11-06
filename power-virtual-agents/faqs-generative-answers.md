@@ -1,6 +1,6 @@
 ---
 title: FAQ for generative answers
-description: This FAQ provides information about the AI technology used for the generative answers capability in Power Virtual Agents, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+description: This FAQ provides information about the AI technology used for the generative answers capability in Microsoft Copilot Studio, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 7/30/2023
 ms.custom: 
   - responsible-ai-faqs
@@ -11,7 +11,7 @@ ms.reviewer: iawilt
 ---
 
 # FAQ for generative answers
-These frequently asked questions (FAQ) describe the AI impact of the generative answers feature in Power Virtual Agents.
+These frequently asked questions (FAQ) describe the AI impact of the generative answers feature in Microsoft Copilot Studio.
 
 ## What is generative answers?
 Generative answers make your bot valuable out-of-the-box and increase the number of topics your bot is conversational in, without requiring any manual dialog tree authoring. 
@@ -48,7 +48,7 @@ Additional evaluation is performed over custom datasets for offensive and malici
 
 - Your admin can disable the ability to publish bots with generative answers for your tenant in the **Power Platform admin center**. 
 
-  :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
+  :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Microsoft Copilot Studio boost conversation.":::
 
 ### What data does the capability collect? How is the data used?
 The capability collects user prompts, the responses returned by the system, and any feedback you provide. 

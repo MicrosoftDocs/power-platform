@@ -13,9 +13,9 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Use entities and slot filling in Power Virtual Agents bots
+# Use entities and slot filling in Microsoft Copilot Studio bots
 
-A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working, even if that exact phrase isn't listed as a trigger phrase.
+A big part of bot conversations in Microsoft Copilot Studio is natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working, even if that exact phrase isn't listed as a trigger phrase.
 
 One fundamental aspect of natural language understanding is to identify _entities_ in a user dialog. Watch the video to get started with entities.
 
@@ -28,19 +28,19 @@ An entity can be thought of as a unit of information that represents a certain t
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Prebuilt entities
 
 Entities in chatbots let you store information in similar groups.
 
-Out of the box, Power Virtual Agents comes with a set of prebuilt entities, which represent the most commonly used stereotype information in real-world dialogs, such as age, colors, numbers, and names.
+Out of the box, Microsoft Copilot Studio comes with a set of prebuilt entities, which represent the most commonly used stereotype information in real-world dialogs, such as age, colors, numbers, and names.
 
 With the knowledge granted by entities, a bot can smartly recognize the relevant information from a user input and save it for later use.
 
 To help understand that notion, the **Money** entity can be used as an example.
 
-1. In Power Virtual Agents, in the navigation menu, select **Entities**.
+1. In Microsoft Copilot Studio, in the navigation menu, select **Entities**.
 
    :::image type="content" source="media/advanced-entities-slot-filling/entities-menu.png" alt-text="Go to the Entities tab.":::
 
@@ -64,7 +64,7 @@ For instance, let's say you want to build a bot for an outdoor store. In this ca
 
 To do this, you need to create a custom entity. In this case, you can create an entity that gives the bot the knowledge of all outdoor product categories.
 
-1. In Power Virtual Agents, in the navigation menu, select **Entities**.
+1. In Microsoft Copilot Studio, in the navigation menu, select **Entities**.
 
    :::image type="content" source="media/advanced-entities-slot-filling/entities-menu.png" alt-text="Go to the Entities tab to create a new entity.":::
 
@@ -116,7 +116,7 @@ Selecting this option when creating an entity will show a pane where you can spe
 
 :::image type="content" source="media/advanced-entities-slot-filling/edit-regex-list.png" alt-text="Screenshot of the regex entity pane.":::
 
-A Power Virtual Agents regex entity uses the [.NET regular expressions syntax](/dotnet/standard/base-types/regular-expressions).
+A Microsoft Copilot Studio regex entity uses the [.NET regular expressions syntax](/dotnet/standard/base-types/regular-expressions).
 
 By default, pattern matching is case sensitive, to make it case insensitive use the `(?i)` regular expression option in your pattern string. Some basic examples are included in the regex entity pane, and additional information on the syntax and more examples can be found in the [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) topic.
 
@@ -150,7 +150,7 @@ Now that you've done the work of giving the bot the knowledge about outdoor gear
 
 ## Slot filling
 
-_Slot filling_ is a natural language understanding concept that means saving an extracted entity to an object. However, in Power Virtual Agents, slot filling means placing the extracted entity value into a variable.
+_Slot filling_ is a natural language understanding concept that means saving an extracted entity to an object. However, in Microsoft Copilot Studio, slot filling means placing the extracted entity value into a variable.
 
 We will continue to use the outdoor gear topic as an example, which is triggered by typing "I want to buy something" in the test chat.
 

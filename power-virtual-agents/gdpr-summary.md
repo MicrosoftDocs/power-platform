@@ -1,6 +1,6 @@
 ---
 title: "Overview of GDPR compliance"
-description: "Review GDPR compliance information Power Virtual Agents."
+description: "Review GDPR compliance information Microsoft Copilot Studio."
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -12,7 +12,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# GDPR compliance for Power Virtual Agents
+# GDPR compliance for Microsoft Copilot Studio
 
 The EU Data Protection Regulation (GDPR) gives rights to people (known in the regulation as _data subjects_) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the _data controller_ or just _controller_). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called in this document a _Data Subject Rights Request_ or DSR request.
 
@@ -33,7 +33,7 @@ Each section in this guide outlines the technical procedures that a data control
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## GDPR terminology
 
@@ -69,6 +69,6 @@ When data subjects exercise their rights and make requests, consider the followi
 
 If a data subject asks you to rectify their personal data that resides in your organization, you and your organization must determine if it's appropriate to honor the request. Rectifying the data might include taking actions such as editing, redacting, or removing personal data.
 
-You can use Azure AD to manage Power Virtual Agents users' identities. Enterprise customers can manage DSR rectify requests, including limited editing features, per the nature of a given Microsoft service. As a data processor, Microsoft doesn't offer the ability to correct system-generated logs because these logs reflect factual activities and constitute a historical record of events within Microsoft services.
+You can use Azure AD to manage Microsoft Copilot Studio users' identities. Enterprise customers can manage DSR rectify requests, including limited editing features, per the nature of a given Microsoft service. As a data processor, Microsoft doesn't offer the ability to correct system-generated logs because these logs reflect factual activities and constitute a historical record of events within Microsoft services.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

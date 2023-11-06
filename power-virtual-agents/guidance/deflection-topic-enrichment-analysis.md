@@ -1,6 +1,6 @@
 ---
 title: "Deflection topic enrichment analysis"
-description: "Set of best practices based on topic enrichment to improve the deflection rate of a Power Virtual Agents chatbot"
+description: "Set of best practices based on topic enrichment to improve the deflection rate of a Microsoft Copilot Studio chatbot"
 author: athinesh
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.reviewer: iawilt
 
 ## Analyzing the Fallback topic conversations
 
-Power Virtual Agents has a built-in [Fallback](/power-virtual-agents/preview/authoring-system-topics#fallback) system topic that is set to trigger when the NLU model isn't able to find a matching topic for a given user query.
+Microsoft Copilot Studio has a built-in [Fallback](/power-virtual-agents/preview/authoring-system-topics#fallback) system topic that is set to trigger when the NLU model isn't able to find a matching topic for a given user query.
 
 If most Fallback topic conversations are escalated to a human agent – that is, not deflected – there's an opportunity to improve the deflection by addressing the usage patterns of the user that triggers fallback consistently.
 
 > [!TIP]
-> Topic enrichment is an offline data analysis exercise, focusing on repurposing such user queries that triggered the Fallback topic into triggering relevant topics in Power Virtual Agents.
+> Topic enrichment is an offline data analysis exercise, focusing on repurposing such user queries that triggered the Fallback topic into triggering relevant topics in Microsoft Copilot Studio.
 
 The analyzed user queries from the Fallback topic typically fall into these buckets:
 
@@ -33,7 +33,7 @@ Of the four categories, the first and the second are immediately actionable. Bas
 
 ## Topic enrichment through out-of-the-box analytics
 
-Power Virtual Agents provides advanced AI capabilities out-of-the-box, to identify a list of suggested new topics, by enabling the [advanced AI features](/power-virtual-agents/advanced-ai-features) for [topic suggestion from chat transcripts](/power-virtual-agents/advanced-ai-features#topic-suggestion-from-chat-transcripts-preview), when the author doesn't want to enable the Fallback topic.
+Microsoft Copilot Studio provides advanced AI capabilities out-of-the-box, to identify a list of suggested new topics, by enabling the [advanced AI features](/power-virtual-agents/advanced-ai-features) for [topic suggestion from chat transcripts](/power-virtual-agents/advanced-ai-features#topic-suggestion-from-chat-transcripts-preview), when the author doesn't want to enable the Fallback topic.
 
 This information can also be used to create new topics to improve deflection rate.
 

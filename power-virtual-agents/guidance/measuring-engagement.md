@@ -1,6 +1,6 @@
 ---
 title: "Measuring chatbot engagement"
-description: "Guidance for measuring chatbot engagement in Power Virtual Agents."
+description: "Guidance for measuring chatbot engagement in Microsoft Copilot Studio."
 author: HenryJammes
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -15,7 +15,7 @@ Tracking conversation engagement rates and outcomes are crucial to measure the c
 
 ## Understanding conversations and analytics sessions
 
- **A single conversation** between an end user and a Power Virtual Agents chatbot can generate one or multiple analytics sessions, typically happening when a user has new questions after an initial topic conversation path completed.
+ **A single conversation** between an end user and a Microsoft Copilot Studio chatbot can generate one or multiple analytics sessions, typically happening when a user has new questions after an initial topic conversation path completed.
 
 > [!NOTE]
 > Analytics sessions and [billed sessions](/power-virtual-agents/preview/analytics-billed-sessions) are distinct concepts.
@@ -24,7 +24,7 @@ Tracking conversation engagement rates and outcomes are crucial to measure the c
 
 Analytics sessions are either **unengaged** (default) or **engaged**.
 
-This notion is used in the Power Virtual Agents [analytics dashboard](/power-virtual-agents/preview/analytics-summary).
+This notion is used in the Microsoft Copilot Studio [analytics dashboard](/power-virtual-agents/preview/analytics-summary).
 
 > [!TIP]
 > Analytics session engagement is also tracked in [conversation transcript records in Dataverse](../analytics-sessions-transcripts.md), if you have a [custom analytics strategy](./custom-analytics-strategy.md).

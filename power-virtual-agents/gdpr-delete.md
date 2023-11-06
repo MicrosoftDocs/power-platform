@@ -1,6 +1,6 @@
 ---
 title: "Responding to GDPR Data Subject Delete Requests"
-description: "Respond to GDPR Data Subject Delete Requests for Power Virtual Agents."
+description: "Respond to GDPR Data Subject Delete Requests for Microsoft Copilot Studio."
 keywords: "PVA, GDPR, delete data"
 ms.date: 03/24/2023
 
@@ -13,31 +13,31 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Responding to requests to delete data from Power Virtual Agents
+# Responding to requests to delete data from Microsoft Copilot Studio
 
-This topic discusses the experiences that Power Virtual Agents offers when deleting personal data for a specific user.
+This topic discusses the experiences that Microsoft Copilot Studio offers when deleting personal data for a specific user.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
-## Delete Power Virtual Agents bot chat logs
+## Delete Microsoft Copilot Studio bot chat logs
 
 All bot chat logs are deleted when the bot is deleted. See [Delete a bot](authoring-first-bot.md#delete-a-bot) for more information.
 
-## Delete Power Virtual Agents bot including all content
+## Delete Microsoft Copilot Studio bot including all content
 
 All bot content is deleted when the bot is deleted. See [Delete a bot](authoring-first-bot.md#delete-a-bot) for more information.
 
-## Delete Power Virtual Agents telemetry
+## Delete Microsoft Copilot Studio telemetry
 
-All Power Virtual Agents telemetry data is automatically deleted within 29 days. No action from the user is needed.
+All Microsoft Copilot Studio telemetry data is automatically deleted within 29 days. No action from the user is needed.
 
-## Delete Power Virtual Agents metrics
+## Delete Microsoft Copilot Studio metrics
 
 To delete metrics data, you must delete your bot. See [Delete a bot](authoring-first-bot.md#delete-a-bot) for more information.
 
-## Delete Power Virtual Agents system telemetry
+## Delete Microsoft Copilot Studio system telemetry
 
 All bot system telemetry is automatically deleted within 29 days. No action from the user is needed.
 

@@ -14,17 +14,17 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Configure user authentication in Power Virtual Agents
+# Configure user authentication in Microsoft Copilot Studio
 
 Authentication allows users to sign in, giving your bot access to a restricted resource or information. Users can sign in with [Azure Active Directory (Azure AD)](configuration-authentication-azure-ad.md), or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
 
 
 >[!NOTE]
-> In Microsoft Teams, you can configure a Power Virtual Agents bot to provide authentication capabilities, so that users can sign in with an Azure Active Directory or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft or Facebook account. 
+> In Microsoft Teams, you can configure a Microsoft Copilot Studio bot to provide authentication capabilities, so that users can sign in with an Azure Active Directory or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft or Facebook account. 
 
 You can [add user authentication to your bot](advanced-end-user-authentication.md) when you edit a topic.
 
-Power Virtual Agents supports the following authentication providers:
+Microsoft Copilot Studio supports the following authentication providers:
 
 - Azure Active Directory v1
 - Azure Active Directory v2
@@ -39,11 +39,11 @@ Power Virtual Agents supports the following authentication providers:
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Choose an authentication option
 
-Power Virtual Agents supports several authentication options. Choose the one that meets your needs.
+Microsoft Copilot Studio supports several authentication options. Choose the one that meets your needs.
 
 To change your bot's authentication settings, in the navigation menu under **Settings**, go to the **Security** tab and select the **Authentication** card.
 
@@ -77,7 +77,7 @@ If you select the **Only for Teams** option, the following variables are availab
 - `UserID`
 - `UserDisplayName`
 
-For more information about these variables and how to use them, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md#authentication-variables).
+For more information about these variables and how to use them, see [Add user authentication to a Microsoft Copilot Studio bot](advanced-end-user-authentication.md#authentication-variables).
 
 `AuthToken` and `IsLoggedIn` variables aren't available with this option. If you need an authentication token, use the **Manual** option.
 
@@ -92,7 +92,7 @@ You can configure any Azure AD, Azure AD V2, or OAuth2-compatible identity provi
 - `AuthToken`
 - `IsLoggedIn`
 
-For more information about these variables and how to use them, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md#authentication-variables).
+For more information about these variables and how to use them, see [Add user authentication to a Microsoft Copilot Studio bot](advanced-end-user-authentication.md#authentication-variables).
 
 Once the configuration is saved, make sure to publish your bot so the changes take effect.
 
