@@ -1,6 +1,6 @@
 ---
-title: SAP Vendor Payment management app
-description: Learn about Microsoft's SAP Vendor Payment Management app for Power Platform.
+title: Use the SAP Vendor Payment management app
+description: Learn how you can search for and view SAP vendor payment data using Microsoft's SAP Vendor Payment Management app for Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -11,16 +11,16 @@ contributors:
   - ryanb58
   - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: concept-article
+ms.topic: conceptual
 ms.date: 08/14/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# SAP Vendor Payment management app
+# Get started using the SAP Vendor Payment management app
 
-The SAP Vendor Payment Management app is part of the SAP Procurement solution. It allows you to search for and view a vendor payment quickly and easily.
+The SAP Vendor Payment Management app is part of the SAP Procurement solution for Microsoft Power Platform. It allows you to search for and view a vendor payment quickly and easily.
 
 ## View a vendor payment
   

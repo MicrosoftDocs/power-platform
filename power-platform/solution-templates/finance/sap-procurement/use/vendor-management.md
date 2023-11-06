@@ -1,6 +1,6 @@
 ---
-title: SAP Vendor Management app
-description: Learn about the SAP Vendor Management app for Microsoft Power Platform.
+title: Use the SAP Vendor Management app
+description: Learn how you can view, update, and create a vendor in SAP using Microsoft's SAP Vendor Management app for Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -11,18 +11,20 @@ contributors:
   - ryanb58
   - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: concept-article
-ms.date: 08/14/2023
+ms.topic: conceptual
+ms.date: 10/26/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# SAP Vendor Management app
+# Get started using the SAP Vendor Management app
 
-The SAP Vendor Management app is part of the SAP Procurement solution. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view, update, and create a vendor.
+The SAP Vendor Management app is part of the SAP Procurement solution for Microsoft Power Platform. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view, update, and create a vendor.
 
-See how you can manage your SAP vendor data using the SAP Vendor Management app.
+## Watch the demo
+
+ Watch the demo to see how you can manage your SAP vendor data using the SAP Vendor Management app.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18F9g]
 
@@ -118,7 +120,7 @@ Once the changes are complete, you can select either the **Save** or **Cancel** 
 
 ## Field mappings
 
-The table provides vendor screen to function module field mappings.
+The tables provide vendor screen to function module field mappings.
 
 ### RFC_READ_TABLE mapping
 

@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 09/16/2022
+ms.date: 11/01/2023
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -13,8 +13,12 @@ contributors:
   - gregli-msft
   - mduelae
   - jorisdg
+ms.contributors:
+- anuitz
 ---
 # App object in Power Apps
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 Provides information about the currently running app and control over the app's behavior.
 
@@ -34,6 +38,10 @@ The **ActiveScreen** property identifies the screen that's showing.
 This property returns a screen object, which you can use to reference properties of the screen or compare to another screen to determine which screen is showing. You can also use the expression **App.ActiveScreen.Name** to retrieve the name of the screen that's showing.
 
 Use the **[Back](function-navigate.md)** or **[Navigate](function-navigate.md)** function to change the screen that's showing.
+
+## BackEnabled property
+
+The **BackEnabled** property changes how the app responds to the device back gesture (swipe or use the hardware back button on Android devices, swipe from left on iOS devices) when running in [Power Apps mobile](/power-apps/mobile/run-powerapps-on-mobile). When enabled, the device back gesture navigates back to the screen that was most recently displayed, which is similar to the [**Back**](function-navigate.md#back) formula. When disabled, the device back gesture returns the user to the app list. 
 
 ## ConfirmExit properties
 
@@ -107,11 +115,6 @@ In a browser, the confirmation dialog box might appear with a generic message fr
 
 ## Formulas property
 
-> [!NOTE]
-> - Formulas is an experimental feature and is subject to change. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview).
-> - The behavior that this article describes is available only when the *Named formulas* experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
-> - Your feedback is very valuable to us - please let us know what you think in the [Power Apps experimental features community forums](https://powerusers.microsoft.com/t5/Power-Apps-Experimental-Features/bd-p/PA_ExperimentalFeatures).
-
 Use named formulas, in the **Formulas** property, to define a formula that can be reused throughout your app.  
 
 In Power Apps, control properties are driven by formulas.  For example, to set the background color consistently across an app, you might set the **Fill** property for each to a common formula:
@@ -168,11 +171,6 @@ Some limitations of named formulas:
 - They can't create a circular reference.  Having **a = b;** and **b = a;** in the same app isn't allowed.
 
 ## OnError property
-
-> [!NOTE]
-> - OnError is part of an experimental feature and is subject to change. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview).
-> - The behavior that this article describes is available only when the *Formula-level error management* experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
-> - Your feedback is very valuable to us - please let us know what you think in the [Power Apps community forums](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To).
 
 Use **OnError** to take action after an error has been detected.  It provides a global opportunity to intercept an error banner before it's displayed to the end user.  It can also be used to log an error with the [**Trace** function](function-trace.md) or write to a database or web service.
 
