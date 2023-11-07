@@ -35,7 +35,7 @@ This article is intended for system administrators or IT professionals who are f
 > 
 > If you're using [Bot Framework Composer](/composer/) it's strongly recommended that you use Composer 2.x. If you want to use an existing Composer 1.x bot, [first migrate it to Composer 2.x](/composer/how-to-migrate-bot-to-2-0) before using it as a skill.
 > 
-> To configure a skill, the associated app-registration in AAD for your skill should be set to Multi-tenant configuration. 
+> To configure a skill, the associated app-registration in Microsoft Entra ID for your skill should be set to Multi-tenant configuration. 
 
 ## Compare use of Flows and skills actions
 
@@ -78,7 +78,7 @@ You can get your bot's ID from the **Add skill** window.
 
 ## Compliance considerations
 
-To protect user privacy, we require skills to be registered as an app in the signed-in user's Azure Active Directory tenant.
+To protect user privacy, we require skills to be registered as an app in the signed-in user's Microsoft Entra ID tenant.
 
 ### Troubleshooting errors during skill registration
 
@@ -88,8 +88,8 @@ A series of validation checks are made against the URL. These checks ensure comp
 | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | We ran into problems getting the skill manifest.</br>(`MANIFEST_FETCH_FAILED`)                             | Try opening your manifest URL in a web browser. If the URL renders the page within 10 seconds, re-register your skill.                                                                                                                                                          |
 | The manifest is incompatible. </br>(`MANIFEST_MALFORMED`)                                                  | (a) Check if the manifest is a valid JSON file.</br>(b) Check if the manifest contains required properties </br>For example, (`name`, `msaAppId`, single `endpoint`, `activities`/`id`, `activities`/`description`, `activities`/`type` (only `event` or `message` supported)). |
-| There is a mismatch in your endpoints </br>(`MANIFEST_ENDPOINT_ORIGIN_MISMATCH`)                           | Check if your skill endpoint matches your Azure AD application registration's `Publisher domain` (preferred) or `Home page URL` field. [Learn more about setting the home page for endpoints](/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page).  |
-| To add a skill, it must first be registered </br>(`APPID_NOT_IN_TENANT`)                                   | Check if your skill's application ID is registered in your organization's Azure AD tenant.                                                                                                                                                                                      |
+| There is a mismatch in your endpoints </br>(`MANIFEST_ENDPOINT_ORIGIN_MISMATCH`)                           | Check if your skill endpoint matches your Microsoft Entra ID application registration's `Publisher domain` (preferred) or `Home page URL` field. [Learn more about setting the home page for endpoints](/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page).  |
+| To add a skill, it must first be registered </br>(`APPID_NOT_IN_TENANT`)                                   | Check if your skill's application ID is registered in your organization's Microsoft Entra ID tenant.                                                                                                                                                                                      |
 | The link isn't valid; The link must begin with https:// </br>(`URL_MALFORMED`, `URL_NOT_HTTPS`)            | Re-enter the link as a secure URL.                                                                                                                                                                                                                                              |
 | The manifest is too large; </br>(`MANIFEST_TOO_LARGE`)                                                     | Check size of the manifest. It must be less than or equal to 500KB.                                                                                                                                                                                                             |
 | This skill has already been added to your bot. </br>(`MANIFEST_ALREADY_IMPORTED`)                          | Delete the skill and try registering again.                                                                                                                                                                                                                                     |

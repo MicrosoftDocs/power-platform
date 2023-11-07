@@ -84,7 +84,7 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
   
   - The Dynamics 365 home page, which stores application names, descriptions, and logos globally for performance.
 
-  - [Azure Active Directory](/azure/active-directory/active-directory-whatis) (Azure AD), which might store Azure AD data globally.
+  - [Microsoft Entra ID](/azure/active-directory/active-directory-whatis) (Microsoft Entra ID), which might store Microsoft Entra ID data globally.
 
   - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks), which might store multi-factor authentication data globally.
 

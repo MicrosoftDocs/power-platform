@@ -24,7 +24,7 @@ You can share your bots with others to grant them special permissions. There are
 ## Prerequisites
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
-- The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization.
+- The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Microsoft Entra ID** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization.
 
 # [Web app](#tab/web)
 
@@ -324,7 +324,7 @@ Your permissions are determined by your [Microsoft Teams roles](/microsoftteams/
 - Team Members can create, edit, and configure bots they have created. They can view other member's bots in the team.
 
 > [!NOTE]
-> If you are an owner of an Azure Active Directory group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Microsoft Copilot Studio apps in Microsoft Teams.
+> If you are an owner of an Microsoft Entra ID group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Microsoft Copilot Studio apps in Microsoft Teams.
 >
 > You can add yourself as a member to the team and it will resolve the issue after a few minutes.
 

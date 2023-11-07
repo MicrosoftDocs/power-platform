@@ -19,7 +19,7 @@ If a Microsoft Copilot Studio chatbot isn't configured to require end-user authe
 
 You can use data loss prevention (DLP) policies to block your bot makers from configuring and publishing chatbots that aren't configured for authentication to help prevent data exfiltration.
 
-Bot makers will need to [configure end-user authentication with Teams or Azure AD v2 in Microsoft Copilot Studio](configuration-end-user-authentication.md)if you use this connector in an enforced DLP policy.
+Bot makers will need to [configure end-user authentication with Teams or Microsoft Entra ID in Microsoft Copilot Studio](configuration-end-user-authentication.md)if you use this connector in an enforced DLP policy.
 
 See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](admin-data-loss-prevention.md) topic for information about other DLP-related connectors.
 
@@ -29,9 +29,9 @@ See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](a
 
 ### Add the connector
 
-1. Use the search box to find the **Chat without Azure AD authentication in Microsoft Copilot Studio** connector.
+1. Use the search box to find the **Chat without Microsoft Entra ID authentication in Microsoft Copilot Studio** connector.
 
-    :::image type="content" source="media/dlp-example-3/chat-connector.png" alt-text="Screenshot of the Chat without Azure AD authentication in Microsoft Copilot Studio connector.":::
+    :::image type="content" source="media/dlp-example-3/chat-connector.png" alt-text="Screenshot of the Chat without Microsoft Entra ID authentication in Microsoft Copilot Studio connector.":::
 
 1. Select the connector's **More actions** menu (**&vellip;**), and then select **Block**.
 

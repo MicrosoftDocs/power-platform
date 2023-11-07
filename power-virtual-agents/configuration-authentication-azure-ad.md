@@ -1,7 +1,7 @@
 ---
-title: Configure user authentication with Azure Active Directory
-description: Use Azure Active Directory as your service provider for user authentication.
-keywords: "Authentication, IdP, PVA, AAD"
+title: Configure user authentication with Microsoft Entra ID
+description: Use Microsoft Entra ID as your service provider for user authentication.
+keywords: "Authentication, IdP, PVA, Microsoft Entra ID"
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -14,11 +14,11 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Configure user authentication with Azure Active Directory
+# Configure user authentication with Microsoft Entra ID
 
 Adding authentication to your bot allows users to sign in, giving your bot access to a restricted resource or information.
 
-This article covers how to configure Azure Active Directory (Azure AD) as your service provider. To learn about other service providers and user authentication in general, see [Configure user authentication](configuration-end-user-authentication.md).
+This article covers how to configure Microsoft Entra ID as your service provider. To learn about other service providers and user authentication in general, see [Configure user authentication](configuration-end-user-authentication.md).
 
 If you have tenant administration rights, you can [configure API permissions](#configure-api-permissions). Otherwise, you'll need to ask a tenant administrator to do it for you.
 
@@ -41,7 +41,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
     It can be helpful later to use the name of your bot. For example, if your bot is called "Contoso sales help," you might name the app registration "ContosoSalesReg".
 
-1. Under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
+1. Under **Supported account types**, select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 
 1. Leave the **Redirect URI** section blank for now. You'll enter that information in the next steps.
 
@@ -101,7 +101,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Enter the values for the following properties:
 
-    - **Service provider**: Select **Azure Active Directory V2**.
+    - **Service provider**: Select **Microsoft Entra ID**.
 
     - **Client ID**: Enter the application (client) ID that you copied earlier from the Azure portal.
 
@@ -170,7 +170,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
    | Property                   | Value                                      |
    | -------------------------- | ------------------------------------------ |
-   | Service provider           | Select **Azure Active Directory V2**       |
+   | Service provider           | Select **Microsoft Entra ID**       |
    | Client ID                  | Enter the application (client) ID that you copied earlier in the Azure portal |
    | Client secret              | Enter the client secret you generated earlier in the Azure portal             |
    | Scopes                     | Enter `profile openid`                     |
@@ -188,7 +188,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. When the bot responds, select **Login**.
 
-    :::image type="content" source="media/configure-web-sso/test-bot.png" alt-text="Screenshot of testing a Microsoft Copilot Studio bot with Azure AD user authentication.":::
+    :::image type="content" source="media/configure-web-sso/test-bot.png" alt-text="Screenshot of testing a Microsoft Copilot Studio bot with Microsoft Entra ID user authentication.":::
 
     A new browser tab opens, asking you to sign in.
 

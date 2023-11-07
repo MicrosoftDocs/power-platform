@@ -1,7 +1,7 @@
 ---
 title: "Add user authentication to chatbot topics"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
-keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
+keywords: "User Authentication, Authentication, Microsoft Entra ID, MSA, Identity Provider, PVA"
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -36,11 +36,11 @@ You can also configure single sign-on (SSO) so your users don't need to sign in 
 
 Add user authentication to a topic to allow your customers to sign in right in the conversation. You can then personalize the conversation with user variables and access back-end systems on the user's behalf.
 
-### Configure manual authentication with Azure AD
+### Configure manual authentication with Microsoft Entra ID
 
-You need to configure user authentication with Azure AD before you can use authentication in your topics.
+You need to configure user authentication with Microsoft Entra ID before you can use authentication in your topics.
 
-1. Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md).
+1. Follow the instructions in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
 1. Return to this article.
 
 ### Add user authentication with the Signin system topic
@@ -155,12 +155,12 @@ The following table compares authentication variable availability by authenticat
 
 The ```UserDisplayName``` variable contains the user's display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
 
-This field value is obtained from the Azure Active Directory (Azure AD) ```name``` claim. For OAuth providers, this is the value stored in the ```name``` claim. Microsoft Copilot Studio automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
+This field value is obtained from the Microsoft Entra ID ```name``` claim. For OAuth providers, this is the value stored in the ```name``` claim. Microsoft Copilot Studio automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
 
 #### UserID variable
 
 The ```UserID``` variable contains the user's ID stored in the identity provider. This value can be used by Power Automate flows to call APIs that take the UserID as a value.
-This field value is obtained from the Azure AD ```sub``` claim. For OAuth providers, this is the value stored in the ```sub``` claim. Microsoft Copilot Studio automatically extracts this field into the variable.
+This field value is obtained from the Microsoft Entra ID ```sub``` claim. For OAuth providers, this is the value stored in the ```sub``` claim. Microsoft Copilot Studio automatically extracts this field into the variable.
 
 > [!WARNING]
 > The ```UserDisplayName``` and ```UserID``` variables are not guaranteed to be filled, and might be empty strings depending on the user configuration in the identity provider. Test with a user from your identification provider to ensure your topics work correctly, even if these variables are empty.

@@ -42,7 +42,7 @@ Beginning February 2022, eligible customers can choose to deploy Microsoft Copil
 
 Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework.  
 
-This option enables and requires the customer to use Azure AD Government for customer identities, in contrast to GCC, which uses the public Azure AD.
+This option enables and requires the customer to use Microsoft Entra ID for Government for customer identities, in contrast to GCC, which uses the public Microsoft Entra ID.
 
 For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
 
@@ -131,7 +131,7 @@ Microsoft Copilot Studio US Government plans provide the ability to integrate th
 
 ## Microsoft Copilot Studio US Government and Azure Services
 
-The Microsoft Copilot Studio US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the Microsoft Copilot Studio US Government accreditation boundary, but takes reliance on a customer's [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
+The Microsoft Copilot Studio US Government services are deployed to Microsoft Azure Government. Microsoft Entra ID is not part of the Microsoft Copilot Studio US Government accreditation boundary, but takes reliance on a customer's [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
 When a user of an organization employing ADFS attempts to access the Microsoft Copilot Studio US Government service, the user is redirected to a login page hosted on the organization's ADFS server.
 
@@ -139,13 +139,13 @@ The user provides credentials to their organization's ADFS server. The organizat
 
 If authentication is successful, the organization's ADFS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user's identity and group membership.
 
-The customer's ADFS server signs this ticket using one half of an asymmetric key pair and then sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
+The customer's ADFS server signs this ticket using one half of an asymmetric key pair and then sends the ticket to Microsoft Entra ID via encrypted TLS. Microsoft Entra ID validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
 
-The user's identity and group membership information remain encrypted in Azure AD. In other words, only limited user-identifiable information is stored in Azure AD.
+The user's identity and group membership information remain encrypted in Microsoft Entra ID. In other words, only limited user-identifiable information is stored in Microsoft Entra ID.
 
-You can find full details of the Azure AD security architecture and control implementation in the Azure SSP.
+You can find full details of the Microsoft Entra ID security architecture and control implementation in the Azure SSP.
 
-The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
+The Microsoft Entra ID account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Microsoft Entra ID.
 
 ## Microsoft Copilot Studio US Government service URLs
 

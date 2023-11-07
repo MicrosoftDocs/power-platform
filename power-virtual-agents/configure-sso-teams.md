@@ -1,7 +1,7 @@
 ---
 title: "Configure single sign-on for the Microsoft Copilot Studio app in Teams"
 description: "Enable your bot to authenticate an already-signed-in Teams user"
-keywords: "Single Sign-on, Teams SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
+keywords: "Single Sign-on, Teams SSO, User Authentication, Authentication, Microsoft Entra ID, MSA, Identity Provider, PVA"
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -14,11 +14,11 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Configure single sign-on with Azure Active Directory for Microsoft Copilot Studio bots in Microsoft Teams
+# Configure single sign-on with Microsoft Entra ID for Microsoft Copilot Studio bots in Microsoft Teams
 
 The Microsoft Copilot Studio app in Microsoft Teams supports single sign-on (SSO), which means bots can automatically sign-in users with their Microsoft Teams credentials.
 
-SSO in the Microsoft Copilot Studio app in Teams is only supported when using Azure Active Directory (Azure AD) v2. Other service providers, such as Azure AD v1, don't support SSO in the Microsoft Copilot Studio app in Microsoft Teams.
+SSO in the Microsoft Copilot Studio app in Teams is only supported when using Microsoft Entra ID. Other service providers, such as Azure AD v1, don't support SSO in the Microsoft Copilot Studio app in Microsoft Teams.
 
 > [!IMPORTANT]
 > SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
@@ -38,14 +38,14 @@ SSO in the Microsoft Copilot Studio app in Teams is only supported when using Az
 
 ## Configure an app registration
 
-Before configuring SSO for Teams, you'll first need to configure user authentication with Azure AD. During this process, you'll create an app registration which you'll use to setup SSO.
+Before configuring SSO for Teams, you'll first need to configure user authentication with Microsoft Entra ID. During this process, you'll create an app registration which you'll use to setup SSO.
 
-1. Create an app registration. See the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md).
+1. Create an app registration. See the instructions in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
 1. Add the redirect URL.
 1. Generate a client secret.
 1. Configure manual authentication.
 
-Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md) then return to this article.
+Follow the instructions in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md) then return to this article.
 
 ## Locate your Microsoft Teams channel app ID
 
@@ -149,7 +149,7 @@ The admin consent option may be greyed out if it's not enabled by your tenant ad
 
 ## Add token exchange URL
 
-To update the Azure AD authentication settings in Microsoft Copilot Studio, you'll need to add the token exchange URL to allow Microsoft Teams and Microsoft Copilot Studio to share information.
+To update the Microsoft Entra ID authentication settings in Microsoft Copilot Studio, you'll need to add the token exchange URL to allow Microsoft Teams and Microsoft Copilot Studio to share information.
 
 1. In the Azure portal on your app registration blade, go to **Expose an API**.
 

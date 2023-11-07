@@ -63,12 +63,12 @@ When data subjects exercise their rights and make requests, consider the followi
 - Verify that you have the information that is related to the request.
 
 > [!NOTE]
-> Because access to your bot is managed by your Azure Active Directory (Azure AD) tenant administrator, other users with admin permissions have access to your bot content.
+> Because access to your bot is managed by your Microsoft Entra ID tenant administrator, other users with admin permissions have access to your bot content.
 
 ## A note about requests to rectify personal data
 
 If a data subject asks you to rectify their personal data that resides in your organization, you and your organization must determine if it's appropriate to honor the request. Rectifying the data might include taking actions such as editing, redacting, or removing personal data.
 
-You can use Azure AD to manage Microsoft Copilot Studio users' identities. Enterprise customers can manage DSR rectify requests, including limited editing features, per the nature of a given Microsoft service. As a data processor, Microsoft doesn't offer the ability to correct system-generated logs because these logs reflect factual activities and constitute a historical record of events within Microsoft services.
+You can use Microsoft Entra ID to manage Microsoft Copilot Studio users' identities. Enterprise customers can manage DSR rectify requests, including limited editing features, per the nature of a given Microsoft service. As a data processor, Microsoft doesn't offer the ability to correct system-generated logs because these logs reflect factual activities and constitute a historical record of events within Microsoft services.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

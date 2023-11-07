@@ -157,7 +157,7 @@ Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.
     - Switzerland
     - United Kingdom
     - United States
-- [Register an application with Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application).
+- [Register an application with Microsoft Entra ID](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application).
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
 
 ## Connect your bot to Omnichannel for Customer Service

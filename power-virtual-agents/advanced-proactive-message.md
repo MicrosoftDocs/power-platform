@@ -299,7 +299,7 @@ When the flow runs, each user in the team will receive the proactive message in 
 
 In this example, the bot will send a reminder to a security group to complete their online training.
 
-1. Add the **Azure AD** connector and select the **Get group members** action in your Power Automate flow.
+1. Add the **Microsoft Entra ID** connector and select the **Get group members** action in your Power Automate flow.
 
 1. For **Group Id**, enter the security group's GUID.
 

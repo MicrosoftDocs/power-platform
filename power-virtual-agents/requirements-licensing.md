@@ -70,7 +70,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 Repeat these steps to add more users, or exit the Microsoft 365 admin center if you're finished.
 
   > [!NOTE]
-  > To simplify user license management, you can assign licenses to an Azure Active Directory (Azure AD) security group. More information: [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
+  > To simplify user license management, you can assign licenses to an Microsoft Entra ID security group. More information: [Assign licenses to users by group membership in Microsoft Entra ID](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
 The users can now sign in to the [Microsoft Copilot Studio portal](https://web.powerva.microsoft.com).
 
