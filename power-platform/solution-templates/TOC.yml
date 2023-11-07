@@ -100,13 +100,13 @@
   - name: Appointment Booking
     items:
     - name: Overview
-      href: hr/appointment-booking/overview.md
+      href: it/appointment-booking/overview.md
     - name: Install and configure
-      href: hr/appointment-booking/install-and-configure.md
+      href: it/hardware-request-and-management/install-and-configure.md
     - name: Manage
-      href: hr/appointment-booking/manage.md
+      href: it/appointment-booking/manage.md
     - name: Use
-      href: hr/appointment-booking/use.md
+      href: it/appointment-booking/use.md
 - name: Related content
   items:
   - name: Power Apps documentation

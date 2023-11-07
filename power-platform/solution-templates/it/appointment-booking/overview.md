@@ -5,7 +5,7 @@ author: tverhasselt
 ms.author: tverhasselt
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/27/2023
+ms.date: 11/07/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
