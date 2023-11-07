@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Configure data loss prevention for Microsoft Copilot Studio chatbots
 
-[!INCLUDE [Entra ID update](/shared/azure-ad-to-microsoft-entra-id.md)]
+[!INCLUDE [Entra ID update](~/../shared/azure-ad-to-microsoft-entra-id.md)]
 
 Organizational data is the most important asset administrators are responsible for safeguarding. The ability to build automation to use that data is a large part of their company's success.
 
