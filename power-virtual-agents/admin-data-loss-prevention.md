@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Configure data loss prevention for Microsoft Copilot Studio chatbots
 
+[!INCLUDE [Entra ID update](/shared/azure-ad-to-microsoft-entra-id.md)]
+
 Organizational data is the most important asset administrators are responsible for safeguarding. The ability to build automation to use that data is a large part of their company's success.
 
 Users can rapidly build and roll out their high-value bots for their end-users. They can connect connect their bots with many data sources and services. Some of these sources and services might be external, third-party services, and might even include some social networks.
@@ -47,7 +49,7 @@ The following Microsoft Copilot Studio connectors are available in the Power Pla
 | Connector name | Description |
 |-------------------------|-------------------------|
 | Skills with Microsoft Copilot Studio | Block bot makers from using skills in Microsoft Copilot Studio chatbots. </br>See [Example 1: Use DLP to block skills in Microsoft Copilot Studio chatbots](dlp-example-1.md) and [Example 2: Use DLP to block HTTP requests from Microsoft Copilot Studio chatbots](dlp-example-2.md) for more details. |
-| Chat without Azure AD authentication in Microsoft Copilot Studio | Block bot makers from publishing chatbots that aren't configured for authentication. </br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot. </br>See [Example 3: Use DLP to require end-user authentication for Microsoft Copilot Studio chatbots](dlp-example-3.md) for more details. |
+| Chat without Microsoft Entra ID authentication in Microsoft Copilot Studio | Block bot makers from publishing chatbots that aren't configured for authentication. </br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot. </br>See [Example 3: Use DLP to require end-user authentication for Microsoft Copilot Studio chatbots](dlp-example-3.md) for more details. |
 | Microsoft Teams channel in Microsoft Copilot Studio | Block bot makers from enabling or using the Teams channel. |
 | Direct Line channels in Microsoft Copilot Studio | Block any Direct Line channel. </br>For example, the Demo website, Custom website, and Mobile app channels would be blocked. |
 | Facebook channel in Microsoft Copilot Studio | Block bot makers from enabling or using the Facebook channel. |
