@@ -14,7 +14,7 @@ search.audienceType:
 
 # Auto-claim for Power Apps licenses
 
-In the role of an administrator, you traditionally assign licenses to users manually. [Auto-claim for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide&WT.mc_id=365AdminCSH_inproduct#auto-claim-policies-for-microsoft-power-apps) enables administrators to easily establish policies within the Microsoft 365 admin center, much like they can for other Microsoft products and services. Once the policy is configured, any user in the organization who requires an individual Power Apps license is automatically granted one under the following circumstances:
+In the role of an administrator, you traditionally assign licenses to users manually. [Auto-claim for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide&WT.mc_id=365AdminCSH_inproduct#auto-claim-policies-for-microsoft-power-apps&preserve-view=true) enables administrators to easily establish policies within the Microsoft 365 admin center, much like they can for other Microsoft products and services. Once the policy is configured, any user in the organization who requires an individual Power Apps license is automatically granted one under the following circumstances:
 
 - If a user lacks a standalone Power Apps license and launches an app that demands a premium license, the system automatically assigns a Power Apps per user license to that user.
 - If a user without a standalone Power Apps license launches an app within a Managed environment, they are automatically granted a Power Apps per user license.
@@ -25,10 +25,10 @@ You can create and manage these auto-claim policies in the [Microsoft 365 admin 
 
 Here are the steps to enable an auto-claim policy for Power Apps:
 
-For more information on managing auto-claim policies in the Microsoft 365 admin center, visit [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide).
+For more information on managing auto-claim policies in the Microsoft 365 admin center, visit [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide&preserve-view=true).
 
 ## Who can create and manage auto-claim policies?
-To create and manage auto-claim policies, you must have Global admin privileges. For more information, visit [About admin roles in the Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+To create and manage auto-claim policies, you must have Global admin privileges. For more information, visit [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
 ## Enabling the Auto-Claim Policy Feature
 Before you can use the feature, you must first turn it on in the Microsoft 365 admin center. After you turn on the feature, you can create an auto-claim policy. Below are the steps 
