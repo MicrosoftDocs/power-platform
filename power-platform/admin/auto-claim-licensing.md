@@ -68,6 +68,53 @@ Additionally, in the Power Platform admin center, administrators can decide whet
 
 Auto-claiming supports individual license assignment, meaning licenses are assigned to individual users. If your organization already has an existing process for license assignment, administrators can still make use of the auto-claim policy while maintaining their current workflow. Administrators can review the list of users to whom licenses were assigned via the auto-claim policy in the Microsoft 365 admin center. They can then adjust as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to leverage Entra group-based licensing. For more information about group based licensing, see [Group-based licensing additional scenarios](/entra/identity/users/licensing-group-advanced).
 
+```PowerShell
+##
+#Install and import AzureAD PowerShell module prior to running these commands
+##
+##You may be able to get a list of users, that have been auto-assigned a 
+##license directly, via Microsoft Admin Center. Follow instructions at 
+##https://learn.microsoft.com/en-us/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide#view-an-auto-claim-policy-report
+##
+##Once you have a list of users, you can use the following commands to remove 
+##the direct license assignment and add the user to a licensed group, or 
+##you may tweak the script to iterate through a list of users and 
+##perform this in bulk
+##
+##Please note that adding a user to a licensed group may not result in an 
+##immediate license assignment. Refer to https://learn.microsoft.com/en-us/entra/identity/users/licensing-group-advanced for more information
+#############################################>
+
+$Credential = Get-Credential
+
+# Connect to Azure AD
+Connect-AzureAD -Credential $Credential
+
+#The user that will get a group based license
+$LicensedUser = Get-AzureADUser -SearchString "<UPN, display name or object ID of the user for which you want to assign a license>"
+
+#The group that has the license assigned
+$LicensedGroup = Get-AzureADGroup -SearchString "<Object ID or name of the group that has a relevant license assigned>"
+
+#SKU part number of the sku that needs to be unassigned (Power Apps Premium)
+$SkuPartName = "POWERAPPS_PER_USER"
+
+#Get the SkuID of the license that needs to be unassigned from the user
+$LicenseSku = Get-AzureADSubscribedSku | Where-Object {$_.SkuPartNumber -eq $SkuPartName}
+
+#Create the AssignedLicenses Object, used for removing direct license assignment from the user
+$LicensesToRemove = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToRemove.RemoveLicenses = $LicenseSku.SkuId
+
+#Remove directly assigned license from the user
+#Note that this command will result in an error if the user does not have the relevant license assigned directly
+Set-AzureADUserLicense -ObjectId $LicensedUser.ObjectId -AssignedLicenses $LicensesToRemove
+
+#Add user to a licensed group
+Add-AzureADGroupMember -ObjectId $LicensedGroup.ObjectId -RefObjectId $LicensedUser.ObjectId
+
+```
+
 Here are some commands that can assist in unassigning licenses and adding users to the required Entra group.
 
 
