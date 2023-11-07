@@ -1,6 +1,6 @@
 ---
 title: Create a preview bot from the content of an existing bot (preview)
-description: Create a preview bot by cloning the content of an existing bot in Microsoft Microsoft Copilot Studio preview.
+description: Create a preview bot by cloning the content of an existing bot in Microsoft Copilot Studio preview.
 ms.date: 03/24/2023
 ms.topic: how-to
 author: iaanw
