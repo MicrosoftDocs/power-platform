@@ -79,10 +79,6 @@ Some user profile information is maintained and managed in the [!INCLUDE [pn-off
 The following table shows the fields that are managed in the **Users** section of the [!INCLUDE [pn-office-365-admin-center](../includes/pn-office-365-admin-center.md)].
 
 <table>
-<colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
-</colgroup>
 <thead>
 <tr class="header">
 <th><p>Customer engagement apps user form </th><th>Microsoft 365/Azure AD user</th></tr>
