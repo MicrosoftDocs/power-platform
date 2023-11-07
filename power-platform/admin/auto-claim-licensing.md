@@ -21,16 +21,16 @@ As an administrator, you traditionally assign licenses to users manually. [Auto-
 - 
 You can create and manage these auto-claim policies in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
-## Steps for creating an auto-claim policy for Power Apps
+## Create an auto-claim policy for Power Apps licenses
 
 Here are the steps to enable an auto-claim policy for Power Apps:
 
 For more information on managing auto-claim policies in the Microsoft 365 admin center, see [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide&preserve-view=true).
 
-## Who can create and manage auto-claim policies?
+### Who can create and manage auto-claim policies?
 To create and manage auto-claim policies, you must have global admin privileges. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
-## Turn on the auto-claim policy feature
+### Turn on the auto-claim policy feature
 Before you can create an auto-claim policy, you must first turn on the feature in the Microsoft 365 admin center.  
 
 1.	Go to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
@@ -40,7 +40,7 @@ Before you can create an auto-claim policy, you must first turn on the feature i
 
 After you turn on the feature, you can create an auto-claim policy.
 
-## Create an auto-claim policy for Power Apps
+### Create an auto-claim policy for Power Apps
 The [auto-claim policy](https://admin.microsoft.com/adminportal/home?#/licenses/autoclaimpolicies) tab displays the policies you've created. Here, you can view the policy's name, the associated app, the assigned product, the available licenses, and the policy's status. To create a new policy, complete the following procedure.
 
 1.	In the admin center, select **Billing** > **Licenses**.
@@ -52,21 +52,21 @@ The [auto-claim policy](https://admin.microsoft.com/adminportal/home?#/licenses/
 7.	On the **Review and finish** page, verify the new policy information, make any necessary changes, then select **Create policy**.
 
 ## Auto-claim policy enabled by default 
-To simplify license management for administrators, in tenants with managed environments, auto-claim policies will no longer require manual activation by admins. These policies will be automatically created. Starting in December 2023, a license auto-claim policy for Power Apps per-user licenses, titled 'Auto-Created Policy for PowerApps,' will be generated in the M365 admin center for tenants with managed environments. Under this policy, if a user without a Power Apps per-user license launches an app in a managed environment, they will automatically receive a Power Apps per-user license if one is available in your tenant.
+To simplify license management for administrators, in tenants with Managed Environments, auto-claim policies will no longer require manual activation by admins. Auto-claim policies will be automatically created. Starting in December 2023, a license auto-claim policy for Power Apps per-user licenses, titled **Auto-Created Policy for PowerApps**, will be generated in the Microsoft 365 admin center for tenants with Managed Environments. Under this policy, if a user without a Power Apps per-user license launches an app in a Managed Environment, they will automatically receive a Power Apps per-user license if one is available in your tenant.
 
-By default, this policy will be applied when users launch Power Apps in managed environments. However, administrators can choose to extend this policy to cover Power Apps launches in standard environments as well through a setting in the Power Platform admin center.
+By default, this policy will be applied when users launch Power Apps in Managed Environments. However, administrators can choose to extend this policy to cover Power Apps launches in standard environments, as well through a setting in the Power Platform admin center.
 
 ## Can administrators update the policy?
-Yes, administrators can manage the policy in the M365 admin center just like any other auto-claim policy. This includes the ability to disable the policy, delete it, and view reports on which users were assigned licenses.
+Yes, administrators can manage the policy in the Microsoft 365 admin center, just like any other auto-claim policy. This includes the ability to disable the policy, delete it, and view reports on which users were assigned licenses.
 
-Additionally, in the Power Platform admin center, administrators can decide whether the policy should apply to managed environments only or all environments:
+Additionally, in the Power Platform admin center, administrators can decide whether the policy should apply to Managed Environments only or all environments:
 
 1.	In the Power Platform admin center, go to **Settings** > select the **Licenses** setting, and then choose the policy name.
-2.	Select whether the policy should be applicable to 'All Environments' or 'Managed Environments.'
+2.	Select whether the policy should be applicable to **All Environments** or **Managed Environments**.
 
 ## Support for group-based license assignment
 
-Auto-claiming supports individual license assignment, meaning licenses are assigned to individual users. If your organization already has an existing process for license assignment, administrators can still make use of the auto-claim policy while maintaining their current workflow. Administrators can review the list of users to whom licenses were assigned via the auto-claim policy in the M365 admin center. They can then adjust as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to leverage Entra group-based licensing. More information about group based licensing can be found here : Group-based licensing additional scenarios | Microsoft Learn
+Auto-claiming supports individual license assignment, meaning licenses are assigned to individual users. If your organization already has an existing process for license assignment, administrators can still make use of the auto-claim policy while maintaining their current workflow. Administrators can review the list of users to whom licenses were assigned via the auto-claim policy in the Microsoft 365 admin center. They can then adjust as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to leverage Entra group-based licensing. For more information about group based licensing, see [Group-based licensing additional scenarios](/entra/identity/users/licensing-group-advanced).
 
 Here are some commands that can assist in unassigning licenses and adding users to the required Entra group.
 
