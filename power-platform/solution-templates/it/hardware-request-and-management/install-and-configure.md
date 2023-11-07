@@ -7,7 +7,7 @@ contributors:
   - microsoft-george
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/06/2023
+ms.date: 11/07/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -125,35 +125,33 @@ To download from GitHub and manually install:
 
 1. Download the following Managed or Unmanaged solution files:
 
-    - [Managed](https://aka.ms/HardwareRequestAndManagementManagedSolution)
-      - mpa_ITBase_managed.zip
-      - mpa_HardwareRequestAndManagement_managed.zip
-    - [Unmanaged](https://aka.ms/HardwareRequestAndManagementUnManagedSolution)
-      - mpa_ITBase.zip
-      - mpa_HardwareRequestAndManagement.zip
-
-    Go to [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) to submit issues.
+    - Managed
+      - [mpa_ITBase_managed.zip](https://aka.ms/ITBaseManagedSolution)
+      - [mpa_HardwareRequestAndManagement_managed.zip](https://aka.ms/HardwareRequestAndManagementManagedSolution)
+    - Unmanaged
+      - [mpa_ITBase.zip](https://aka.ms/ITBaseUnManagedSolution)
+      - [mpa_HardwareRequestAndManagement.zip](https://aka.ms/HardwareRequestAndManagementUnManagedSolution)
+  
+   > [!TIP]
+  >
+  > You can log your questions and get support for the Hardware Request & Management template at the [Templates-for-Power-Platform](https://github.com/microsoft/Templates-for-Power-Platform/issues) GitHub project site.
 
 1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 1. Select **Solutions** in the left-side panel
 1. Select **Import solution**
-1. Browse for and select either the *managed* or *unmanaged version* of the *mpa_ITBase* file downloaded in previous step
+1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_ITBase* file downloaded in previous step
 1. Select **Next**
 1. Select **Import**. This starts the import process of the *IT Base* solution
 1. Wait for the *IT Base* solution to finish importing. The import process can take a few minutes at which point you will be notified with a *Success* message
-1. Browse for and select either the *managed* or *unmanaged* version of the *mpa_HardwareRequestAndManagement* file downloaded in previous step
+1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_HardwareRequestAndManagement* file downloaded in previous step
 1. Select **Next** and **Next** again
-1. For each of the Connections listed, select the *existing connection that was created in the previous step*
+1. For each of the connections listed, select the *existing connection that was created in the previous step*
 1. Select **Next**
 1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment
 1. Select **Import** which will start the import process of the *Hardware Request and Management* solution
 Wait for the "Hardware Request and Management" solution to finish importing which can take a few minutes at which point you will be notified with a *Success* message
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
-
-> [!TIP]
->
-> You can log your questions and get support for the Hardware Request & Management template at the [Templates-for-Power-Platform](https://github.com/microsoft/Templates-for-Power-Platform/issues) GitHub project site.
 
 ## Step 5: Update environment variables and connection references
 
