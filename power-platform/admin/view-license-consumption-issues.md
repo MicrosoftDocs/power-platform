@@ -54,7 +54,7 @@ The **Power Apps licensing summary** tile provides details of how many Power App
 
 | Setting | Description |
 | ------- | ----------- |
-| **Power Apps licensing overview** | The number of users actively using licenses by virtue of launching Power App in the last 30 days. This section also provides details of how many power app licenses have been available and how many of those have been assigned to users . |
+| **Power Apps licensing overview** | The number of users actively using licenses by virtue of opening Power Apps in the last 30 days. This section also provides details of how many Power Apps licenses have been available and how many of those licenses have been assigned to users. |
 | License type | The type of license&mdash;Dynamics 365, Microsoft 365, per app, per user, pay-as-you-go, trial, or developer&mdash;the actual license is mapped to. |
 | Active users | The number of unique users who opened apps in any of the the environment in your tenant at least once in the last 30 days. |
 | Assigned Licenses | The number of unique users who have been assigned a license.|
