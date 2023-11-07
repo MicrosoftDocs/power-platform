@@ -64,7 +64,7 @@ The **Power Apps licensing summary** tile provides details of how many Power App
 | License | The license SKU. |
 | Last active date | The date when an app was last opened by a user within last 30 days. |
 | Environment | The name of environment in which a user has last opened an app. |
-| **License Type: Power App Per App** | If the selected environment has per app licenses assigned, a list of apps consuming app pass licenses, the number of users the app has been shared with, and the number of users who have opened the app using perapp licenses. |
+| **License Type: Power App Per App** | If the selected environment has per app licenses assigned, a list of apps consuming app pass licenses, the number of users the app has been shared with, and the number of users who have opened the app using per app licenses is displayed. |
 | Download | Downloads the information in CSV format. Select a specific license type to start the download. After a CSV file is generated, you can download the same file again within five days without having to start a new download. The download process is asynchronous, which allows you to start the download and return after a few minutes to monitor its progress. |
 
 
