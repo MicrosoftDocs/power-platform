@@ -31,13 +31,15 @@ Follow the instructions in this article to install the marketplace extension: [W
 After you have installed the Power Platform Tools extension for Visual Studio, follow these instructions to connect Visual Studio to your unified developer-focused environment.
 
 1. Launch Visual Studio if not already running.
-1. In the **Tools** menu, select **Connect to Dataverse**.
+1. In the **Tools** menu, select **Connect to Dataverse** or **Download FinOps assets**. The former only downloads assets if not already downloaded once while the latter will download even if you had downloaded earlier.
 1. Select the desired options in the dialog and select **Login**.  
     Choose not to use the signed-in user if you need to use another account with a Visual Studio license. Enter the credentials as necessary to match your development user account.
 1. When presented with a dialog to select a solution, select an available solution and then choose **Done**.
 1. You will be presented with a list of Dataverse organizations (databases deployed). Find the sandbox environment created for online development and connect to it.
     > [!NOTE]
     > If you have only one online development environment, the organization list dialog may not be shown as you would automatically connect to the environment.
+    > :::image type="content" source="../media/UnoVSConnect.png" alt-text="menu for connecting to unified environment from visual studio.":::
+    > :::image type="content" source="../media/UnoLogin.png" alt-text="login dialog when connecting to unified environment from visual studio.":::
 
 ## Download and install the finance and operations extension and metadata
 
