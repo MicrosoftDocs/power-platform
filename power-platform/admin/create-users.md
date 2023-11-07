@@ -214,7 +214,7 @@ For users to have access to applications and data in an environment, at a minimu
 
 2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
 
-3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) to add or update users in Dataverse on demand. 
+3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest&preserve-view=true) to add or update users in Dataverse on demand. 
 
 4. Administrators can leverage the Power Platform admin center user management experience to [add users in Dataverse on demand](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
@@ -386,11 +386,6 @@ When you create a new user or update an existing user in Dynamics 365 Customer E
 The following table shows the fields that are populated on the user form (user record) from the Azure AD user account.
 
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th><p>User form</p></th>
