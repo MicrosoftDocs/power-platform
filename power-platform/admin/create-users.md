@@ -8,7 +8,7 @@ ms.author: kvivek
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2023
+ms.date: 11/07/2023
 search.audienceType: 
   - admin
 contributors:
@@ -106,9 +106,9 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.<br>**** ObjectID of a user or a service principal in Azure Active Directory.<br /></td></tr>
 </tbody>
 </table>
-> [!NOTE]
-> Custom fields are NEVER syncronized between Microsoft 365/Entra ID and Power Platform.
 
+> [!NOTE]
+> Custom fields are **never** syncronized between Microsoft 365, Microsoft Entra ID, and Power Platform.
 
 The following image shows Microsoft 365 user contact fields.
 
