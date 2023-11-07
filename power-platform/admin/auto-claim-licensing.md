@@ -58,7 +58,7 @@ To simplify license management for administrators, in tenants with Managed Envir
 
 By default, this policy will be applied when users open Power Apps in Managed Environments. However, administrators can choose to extend this policy to cover Power Apps opened in standard environments, as well through a setting in the Power Platform admin center.
 
-## Can administrators update the policy?
+### Can administrators update the policy?
 Yes, administrators can manage the policy in the Microsoft 365 admin center, just like any other auto-claim policy. Administrators can disable the policy, delete it, and view reports on which users were assigned licenses.
 
 In the Power Platform admin center, administrators can decide whether the policy should apply to Managed Environments only or all environments.
@@ -66,7 +66,7 @@ In the Power Platform admin center, administrators can decide whether the policy
 1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Settings** and select the **Auto-claim policies** option.
 2.	In the **Auto-claim policies** pane, select whether the policy should be applicable to **All Environments** or **Only Managed Environments**.
 
-## Support for group-based license assignment
+### Support for group-based license assignment
 
 Auto-claim policies support individual license assignment, which means that licenses are assigned to individual users. If your organization already has an existing process for license assignment, administrators can still make use of the auto-claim policy while maintaining their current workflow. 
 
