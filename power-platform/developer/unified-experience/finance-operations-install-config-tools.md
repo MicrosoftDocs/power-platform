@@ -38,8 +38,8 @@ After you have installed the Power Platform Tools extension for Visual Studio, f
 1. You will be presented with a list of Dataverse organizations (databases deployed). Find the sandbox environment created for online development and connect to it.
     > [!NOTE]
     > If you have only one online development environment, the organization list dialog may not be shown as you would automatically connect to the environment.
-    > :::image type="content" source="../media/UnoVSConnect.png" alt-text="Menu for connecting to unified environment from Visual Studio.":::
-    > :::image type="content" source="../media/UnoLogin.png" alt-text="Login dialog when connecting to unified environment from Visual Studio.":::
+    > :::image type="content" source="../media/unified-experience/UnoVSConnect.png" alt-text="Menu for connecting to unified environment from Visual Studio.":::
+    > :::image type="content" source="../media/unified-experience/UnoLogin.png" alt-text="Login dialog when connecting to unified environment from Visual Studio.":::
 
 ## Download and install the finance and operations extension and metadata
 
