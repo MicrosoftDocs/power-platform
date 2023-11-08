@@ -2,7 +2,7 @@
 title: "Install and configure development tools (preview)"
 description: Set up required finance and operations app development tools on your local computer.
 author: pvillads
-ms.date: 08/23/2023
+ms.date: 11/08/2023
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pathaku
@@ -20,7 +20,7 @@ This article describes how to install and configure required Visual Studio finan
 >
 > The user account you'll be using for development in the sandbox environment must be assigned the System Administrator role.
 > 
-> The development machine running Microsoft Windows must have Visual Studio 2019 installed with at least the .NET desktop development workload and the Modeling SDK. This SDK can be selected under individual components in the Visual Studio installer. Refer [required Visual Studio components](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017#required-visual-studio-components). The development machine also must have SQL Server or SQL Server Express LocalDB installed.
+> The development machine running Microsoft Windows must have Visual Studio 2019 installed with at least the .NET desktop development workload and the Modeling SDK. This SDK can be selected under individual components in the Visual Studio installer. Refer to [required Visual Studio components](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017#required-visual-studio-components). The development machine also must have Microsoft SQL Server or SQL Server Express LocalDB installed.
 
 ## Install the Power Platform extension for Visual Studio
 
@@ -38,8 +38,8 @@ After you have installed the Power Platform Tools extension for Visual Studio, f
 1. You will be presented with a list of Dataverse organizations (databases deployed). Find the sandbox environment created for online development and connect to it.
     > [!NOTE]
     > If you have only one online development environment, the organization list dialog may not be shown as you would automatically connect to the environment.
-    > :::image type="content" source="../media/UnoVSConnect.png" alt-text="menu for connecting to unified environment from visual studio.":::
-    > :::image type="content" source="../media/UnoLogin.png" alt-text="login dialog when connecting to unified environment from visual studio.":::
+    > :::image type="content" source="../media/UnoVSConnect.png" alt-text="Menu for connecting to unified environment from Visual Studio.":::
+    > :::image type="content" source="../media/UnoLogin.png" alt-text="Login dialog when connecting to unified environment from Visual Studio.":::
 
 ## Download and install the finance and operations extension and metadata
 
