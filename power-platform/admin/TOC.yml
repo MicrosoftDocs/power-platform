@@ -86,6 +86,8 @@
                   href: signup-for-powerapps-admin.md
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
+                - name: Auto-claim policies for Power Apps licenses
+                  href: auto-claim-licensing.md
             - name: Power Automate
               items:
                 - name: Overview
