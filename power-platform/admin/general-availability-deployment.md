@@ -7,7 +7,7 @@ ms.author: samathur
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/22/2023
+ms.date: 11/07/2023
 search.audienceType: 
   - admin
 ms.contributors:
@@ -17,30 +17,30 @@ ms.contributors:
 ---
 # General availability deployment
 
-After a release cycle has been made "generally available" to users, environments are typically automatically turned on. This is so users can receive ongoing mandatory updates. These updates enable early access features, and the current available features that are included in a release.  
+After a release cycle has been made _generally available_ to users, environments are typically automatically turned on. This is so users can receive ongoing mandatory updates. These updates enable early access features, and the current available features that are included in a release.  
 
 > [!TIP]
 > Check out [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) to learn more about new features to be released in the release waves.
 
 Throughout a release cycle, your environments are updated over the scheduled weekend. These scheduled windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center). The specific time when the updates for an environment complete, within the scheduled weekend, can't be predetermined.
 
-Each notification from the Message Center includes dates, the maintenance window, and the Release Plan reference. In addition, included is a list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).  
+Each notification from the Message Center includes dates, the maintenance window, and the Release Plan reference. In addition, included is a list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. For more information, see [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).  
 
 > [!NOTE]
 > If you have enabled the early access updates in your environments, you'll continue getting updates throughout the release wave.
 >
->If you did not opt in for the early access updates in your environments, your environment will be automatically updated to receive the new release based on the general availability deployment schedule for your region.  
+> If you did not opt in for the early access updates in your environments, your environment will be automatically updated to receive the new release based on the general availability deployment schedule for your region.  
 
 > [!NOTE]
-> The wave release is a necessary update and cannot be postponed. It is essential for maintaining system integrity and security.
+> A release wave is a necessary update and can't be postponed. It is essential for maintaining system integrity and security.
 >
-> The wave release will be seamlessly integrated as part of the weekly Dataverse update, which occurs during your scheduled dark hours. This ensures minimal disruption to your operations.
+> A release wave will be seamlessly integrated as part of the weekly Dataverse update, which occurs during your scheduled dark hours. This ensures minimal disruption to your operations.
 >
-> It is important to note that the exact duration and timing of the wave release are not predetermined. These variate depending on the time required to process the weekly updates efficiently. We aim to minimize any inconvenience during this process.
+> It is important to note that the exact duration and timing of a relase wave can't be predetermined. Duration and timing vary depending on the time required to process the weekly updates efficiently. We aim to minimize any inconvenience during this process.
 >
-> SPL Integration: As and additional benefit, the SPL scale group will be incorporated into the GA page to help you stay informed about the schedule.
+> As an additional benefit, the Special (SPL) scale group will be incorporated into the general availability page to help you stay informed about the schedule.
 >
-> This policies are designed to optimize your system's performance and security while offering the flexibility needed for seamless update process.
+> These policies are designed to optimize your system's performance and security while offering the flexibility needed for seamless update process.
 
 ## Deployment schedule  
 
