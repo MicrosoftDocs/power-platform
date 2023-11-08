@@ -135,6 +135,9 @@ Make sure your reverse proxy is configured to send the client IP address in the 
 ### Some of the calls from Power BI are failing after i enabled the IP firewall on the Power Platform environment.
 Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features.md#tds-endpoint), you will need to disable IP firewall in the environment.
 
+### IP firewall audit functionality is not working in my environment(s).
+If your environment is using bring-your-own-key, we recommend you to migrate to [customer-managed-key](https://learn.microsoft.com/en-us/power-platform/admin/customer-managed-key) CMKv2 from BYOK (bring-your-own-key). To migrate from BYOK to customer-managed key CMKv2, you can follow the steps documented [here](https://learn.microsoft.com/en-us/power-platform/admin/cmk-migrate-from-byok)
+
 ## Next steps
 
 [Security in Microsoft Dataverse](wp-security.md)
