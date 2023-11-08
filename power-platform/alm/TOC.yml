@@ -62,7 +62,9 @@
       href: admins-makers.md
       items:
         - name: Manage solutions using PowerShell
-          href: powershell-api.md
+          href: powershell-api.md          
+        - name: Block unmanaged customizations
+          href: block-unmanaged-customizations.md
         - name: Deploy solutions using pipelines
           items:
             - name: What are pipelines?
