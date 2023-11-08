@@ -2,10 +2,9 @@
 title: "Create or edit business units  | MicrosoftDocs"
 description: Learn how to create or edit business units 
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/20/2023
+ms.date: 11/08/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -128,9 +127,9 @@ Make sure you have the System Administrator permission to update the setting.
   >        
   >   2.  On the **User detail** form's Action bar, select **CHANGE BUSINESS UNIT**.
   >       
-  >       b. A **Change Business Unit** dialog box is displayed.
+  >       a. A **Change Business Unit** dialog box is displayed.
   >       
-  >       c. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit. 
+  >       b. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit. 
   >
   >       **Note**: Changing the user's business unit on this dialog box will **not** honor the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
   >         
