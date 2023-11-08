@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments (preview)
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 11/01/2023
+ms.date: 11/08/2023
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -128,15 +128,15 @@ Use the Dataverse OData API to download the audit log data in JSON format. The f
 
 In the IP firewall settings, allow the service tags listed in [Managed connectors outbound IP addresses](/connectors/common/outbound-ip-addresses).
 
-### I have configured the reverse proxy address correctly, but the IP firewall isn't working
+### I have configured the reverse proxy address correctly, but the IP firewall isn't working. What should I do?
 
 Make sure your reverse proxy is configured to send the client IP address in the forwarded header.
 
-### Some of the calls from Power BI are failing after i enabled the IP firewall on the Power Platform environment.
+### Some of the calls from Power BI are failing after I enabled the IP firewall on the Power Platform environment. What should I do?
 Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features.md#tds-endpoint), you will need to disable IP firewall in the environment.
 
-### IP firewall audit functionality is not working in my environment(s).
-If your environment is using bring-your-own-key, we recommend you to migrate to [customer-managed-key](https://learn.microsoft.com/en-us/power-platform/admin/customer-managed-key) CMKv2 from BYOK (bring-your-own-key). To migrate from BYOK to customer-managed key CMKv2, you can follow the steps documented [here](https://learn.microsoft.com/en-us/power-platform/admin/cmk-migrate-from-byok)
+### IP firewall audit functionality is not working in my environment. What should I do?
+If your environment is using bring-your-own-key (BYOK) functionality, we recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
 
 ## Next steps
 
