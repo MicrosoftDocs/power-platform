@@ -4,7 +4,7 @@ description: The records will now be available in the Outlook Web client using a
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2023
+ms.date: 11/08/2023
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -26,6 +26,12 @@ Wouldn't it be great if you could just quickly access Dynamics 365 or Dataverse 
 That is now possible with a simple configuration in the Power Platform admin center. You can quickly enable your users to access the records they have most recently used in their application. The records are available in the Outlook web client using a simple /mention gesture.
 
 Security is top of mind, so only records that a user has access to and has most recently used are available in the Outlook web client.
+
+## Geo, service, and compliance boundaries
+
+A small set of data from Dataverse will be synced with Microsoft 365 data.  This may cross geo boundaries for multi-geo organizations where the Dataverse data may be in a different geographic region than the data stored for a user in Microsoft 365. Be aware that this also crosses service and compliance boundaries between the two platforms. Synced data includes the table name, primary name for the column for the table, and a link  to the most recently used record.
+
+If there are any changes to the synced data including updates or deletes, the record will be updated or deleted in Microsoft 365.
 
 ## Turn on the /mention feature
 
