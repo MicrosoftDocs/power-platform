@@ -53,6 +53,11 @@ Be sure to check back often for new templates that become available.
       ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> [Onboarding Buddy](https://aka.ms/AccessOnboardingBuddyTemplate) <br> Match new employees to _Buddies_
    :::column-end:::
 :::row-end:::
+:::row:::
+   :::column span="":::
+      ![Hardware Request and Management](media/overview/hrm-icon-sq.png "Hardware Request and Management") <br> [Hardware Request and Management](https://aka.ms/AccessHardwareRequestandManagementTemplate) <br> Manage your company's hardware and requests
+   :::column-end:::
+:::row-end:::
 
 ## Benefits of using enterprise templates
 
