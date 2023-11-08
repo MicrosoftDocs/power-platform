@@ -86,6 +86,8 @@
                   href: signup-for-powerapps-admin.md
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
+                - name: Auto-claim policies for Power Apps licenses
+                  href: auto-claim-licensing.md
             - name: Power Automate
               items:
                 - name: Overview
@@ -266,6 +268,8 @@
                       href: create-team-template-add-entity-form.md
                     - name: Users
                       href: users-settings.md
+                    - name: User channel override
+                      href: user-channel-override.md
                     - name: Plug-in steps
                       href: plug-ins.md
                 - name: Audit and logs
@@ -690,6 +694,8 @@
               href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
+            - name: View Power Platform administrative logs in Microsoft Purview (preview)
+              href: admin-activity-logging.md
         - name: Programmability and extensibility
           items:
             - name: Overview
