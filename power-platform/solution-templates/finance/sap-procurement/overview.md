@@ -6,7 +6,7 @@ ms.author: jongilman
 contributors:
   - microsoft-george
   - EllenWehrle
-  - thoverh
+  - tverhasselt
   - galitskyd
   - microsoft-dustin
   - ryanb58

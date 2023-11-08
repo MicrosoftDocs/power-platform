@@ -85,6 +85,18 @@
       href: hr/onboarding-buddy/manage.md
     - name: Use
       href: hr/onboarding-buddy/use.md
+- name: Information Technology
+  items:
+  - name: Hardware Request and Management
+    items:
+    - name: Overview
+      href: it/hardware-request-and-management/overview.md
+    - name: Install and configure
+      href: it/hardware-request-and-management/install-and-configure.md
+    - name: Manage
+      href: it/hardware-request-and-management/manage.md
+    - name: Use
+      href: it/hardware-request-and-management/use.md
 - name: Related content
   items:
   - name: Power Apps documentation
