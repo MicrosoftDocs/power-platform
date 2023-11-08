@@ -29,7 +29,7 @@ Each notification from the Message Center includes dates, the maintenance window
 > [!NOTE]
 > If you have enabled the early access updates in your environments, you'll continue getting updates throughout the release wave.
 >
-> If you did not opt in for the early access updates in your environments, your environment will be automatically updated to receive the new release based on the general availability deployment schedule for your region.  
+> If you didn't opt in for the early access updates in your environments, your environment will be automatically updated to receive the new release based on the general availability deployment schedule for your region.  
 
 > [!NOTE]
 > A release wave is a necessary update and can't be postponed. It is essential for maintaining system integrity and security.
