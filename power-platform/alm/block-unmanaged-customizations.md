@@ -24,7 +24,7 @@ This feature will allow system administrators to lock down production environmen
   - Import of unmanaged solution will be blocked.
   - Creation of new entities like Apps, Tables, Forms will be blocked.
   - Adding unmanaged changes to existing managed components will be blocked.
-- Any unmanaged changes will result in exception like: “This environment is blocked for unmanaged customization by your system administrator using 'Block unmanaged customizations' environment setting in Power Platform Admin Center.”
+- Any unmanaged changes will result in exception like: “This environment doesn't allow unmanaged customizations. This was a choice made by your admin, and certain actions won't be available or will be view only. Learn more: https://go.microsoft.com/fwlink/?linkid=2251006”
 
 Please note, following operations are not blocked by this feature:
 
