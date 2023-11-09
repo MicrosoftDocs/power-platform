@@ -1,0 +1,554 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/analytics/advisorRecommendations": {
+      "get": {
+        "tags": [
+          "Recommendations"
+        ],
+        "summary": "Get recommendations",
+        "description": "Gets the list of recommendations for the tenant.",
+        "operationId": "GetRecommendations",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "$skipToken",
+            "description": "Skip token for the next page of recommendations",
+            "type": "string",
+            "x-ms-visibility": "internal",
+            "x-ms-summary": "Skip Token"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AdvisorRecommendationIEnumerableResponseWithContinuation"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "x-ms-summary": "Get recommendations",
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink",
+          "operationName": "GetRecommendations"
+        }
+      }
+    },
+    "/analytics/advisorRecommendations/{scenario}/resources": {
+      "get": {
+        "tags": [
+          "Recommendations"
+        ],
+        "summary": "Get recommendation resources",
+        "description": "Gets the list of resources for a recommendation for the tenant.",
+        "operationId": "GetRecommendationResources",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "scenario",
+            "description": "The recommendation name",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "OrphanedApps",
+              "UnusedApps",
+              "HighValueNonSolutionApps",
+              "SharedWithEveryoneApps"
+            ],
+            "x-ms-summary": "Recommendation Name",
+            "x-ms-enum": [
+              {
+                "value": "OrphanedApps",
+                "description": "Apps without a valid owner",
+                "name": "Orphaned apps"
+              },
+              {
+                "value": "UnusedApps",
+                "description": "Apps not used in recent past",
+                "name": "Unused apps"
+              },
+              {
+                "value": "HighValueNonSolutionApps",
+                "description": "Apps which are highly used but not part of a solution",
+                "name": "High value non-solution apps"
+              },
+              {
+                "value": "SharedWithEveryoneApps",
+                "description": "Apps which are shared with everyone in the tenant",
+                "name": "Apps shared with everyone"
+              }
+            ]
+          },
+          {
+            "in": "query",
+            "name": "$skipToken",
+            "description": "Skip token for the next page of resources",
+            "type": "string",
+            "x-ms-visibility": "internal",
+            "x-ms-summary": "Skip Token"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AdvisorRecommendationResourceIEnumerableResponseWithContinuation"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        },
+        "x-ms-summary": "Get recommendation resources",
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink",
+          "operationName": "GetRecommendationResources"
+        }
+      }
+    },
+    "/analytics/actions/{actionName}": {
+      "post": {
+        "tags": [
+          "Recommendations"
+        ],
+        "summary": "Execute recommendation action",
+        "description": "Execute a recommended action on a set of recommendation resource(s).",
+        "operationId": "ExecuteRecommendationAction",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "actionName",
+            "description": "The name of the action to execute",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "DeleteApp",
+              "AssignAppOwner",
+              "QuarantineApp",
+              "AssignAppToCoOwner"
+            ],
+            "x-ms-summary": "Action Name",
+            "x-ms-enum": [
+              {
+                "value": "DeleteApp",
+                "description": "Delete an existing app",
+                "name": "Delete app"
+              },
+              {
+                "value": "AssignAppOwner",
+                "description": "Assign a new owner to the app",
+                "name": "Assign new app owner"
+              },
+              {
+                "value": "QuarantineApp",
+                "description": "Quarantine an existing app",
+                "name": "Qurantine app"
+              },
+              {
+                "value": "AssignAppToCoOwner",
+                "description": "Promote co-owner of the app as an owner",
+                "name": "Assign app to co-owner"
+              }
+            ]
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body for the action to execute",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AdvisorActionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AdvisorActionResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Too Many Requests"
+          }
+        },
+        "x-ms-summary": "Execute recommendation action"
+      }
+    }
+  },
+  "definitions": {
+    "AdvisorActionRequest": {
+      "description": "The request with details to carry out an action on resource(s)",
+      "required": [
+        "scenario",
+        "actionParameters"
+      ],
+      "type": "object",
+      "properties": {
+        "scenario": {
+          "$ref": "#/definitions/AdvisorRecommendationScenario"
+        },
+        "actionParameters": {
+          "description": "The collection of parameters to carry out the action for a resource",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "x-ms-summary": "Parameters"
+        }
+      }
+    },
+    "AdvisorActionResponse": {
+      "description": "The response for action performed on resources",
+      "type": "object",
+      "properties": {
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AdvisorActionResult"
+          }
+        }
+      }
+    },
+    "AdvisorActionResult": {
+      "description": "The result of an action performed on a resource",
+      "type": "object",
+      "properties": {
+        "resourceId": {
+          "description": "The unique ID of the resource for which the action was performed",
+          "type": "string",
+          "x-ms-summary": "Resource ID"
+        },
+        "statusCode": {
+          "format": "int32",
+          "description": "The status code of the action request for the given resource",
+          "type": "integer",
+          "x-ms-summary": "Status Code"
+        },
+        "actionFinalResult": {
+          "description": "Final status of the action request",
+          "type": "string",
+          "x-ms-summary": "Action Result"
+        },
+        "errorCode": {
+          "description": "The error code associated with any error encountered during the action execution",
+          "type": "string",
+          "x-ms-summary": "Error Code"
+        },
+        "error": {
+          "description": "The error message associated with any error encountered during the action execution",
+          "type": "string",
+          "x-ms-summary": "Error Message"
+        }
+      }
+    },
+    "AdvisorActionType": {
+      "description": "Available action types which can be taken on a resource",
+      "enum": [
+        "DeleteApp",
+        "AssignAppOwner",
+        "QuarantineApp",
+        "AssignAppToCoOwner"
+      ],
+      "type": "string",
+      "example": "DeleteApp",
+      "x-ms-summary": "Action Name",
+      "x-ms-enum": [
+        {
+          "value": "DeleteApp",
+          "description": "Delete an existing app",
+          "name": "Delete app"
+        },
+        {
+          "value": "AssignAppOwner",
+          "description": "Assign a new owner to the app",
+          "name": "Assign new app owner"
+        },
+        {
+          "value": "QuarantineApp",
+          "description": "Quarantine an existing app",
+          "name": "Qurantine app"
+        },
+        {
+          "value": "AssignAppToCoOwner",
+          "description": "Promote co-owner of the app as an owner",
+          "name": "Assign app to co-owner"
+        }
+      ]
+    },
+    "AdvisorRecommendation": {
+      "description": "Information for a recommendation",
+      "type": "object",
+      "properties": {
+        "scenario": {
+          "$ref": "#/definitions/AdvisorRecommendationScenario"
+        },
+        "details": {
+          "$ref": "#/definitions/AdvisorRecommendationDetails"
+        }
+      }
+    },
+    "AdvisorRecommendationDetails": {
+      "description": "Details for a recommendation",
+      "type": "object",
+      "properties": {
+        "resourceCount": {
+          "format": "int32",
+          "description": "The number of resources",
+          "type": "integer",
+          "x-ms-summary": "Resource count"
+        },
+        "lastRefreshedTimestamp": {
+          "format": "date-time",
+          "description": "Time when the recommendation was refreshed",
+          "type": "string",
+          "x-ms-summary": "Last refresh timestamp"
+        },
+        "expectedNextRefreshTimestamp": {
+          "format": "date-time",
+          "description": "Time when the recommendation will be refreshed again",
+          "type": "string",
+          "x-ms-summary": "Expected next refresh timestamp"
+        }
+      }
+    },
+    "AdvisorRecommendationIEnumerableResponseWithContinuation": {
+      "description": "Paged list of recommendations",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "List of recommendations",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AdvisorRecommendation"
+          }
+        },
+        "nextLink": {
+          "description": "Link to get the next page of recommendations",
+          "type": "string",
+          "x-ms-summary": "Next link"
+        }
+      }
+    },
+    "AdvisorRecommendationResource": {
+      "description": "Details of a resource included in a recommendation",
+      "type": "object",
+      "properties": {
+        "resourceName": {
+          "description": "The resource display name",
+          "type": "string",
+          "x-ms-summary": "Resource display name"
+        },
+        "resourceId": {
+          "description": "The resource unique ID",
+          "type": "string",
+          "x-ms-summary": "Resource ID"
+        },
+        "resourceOwnerId": {
+          "description": "The resource owner object ID",
+          "type": "string",
+          "x-ms-summary": "Owner ID"
+        },
+        "resourceOwner": {
+          "description": "The resource owner display name",
+          "type": "string",
+          "x-ms-summary": "Owner name"
+        },
+        "resourceType": {
+          "description": "The type of resource",
+          "type": "string",
+          "x-ms-summary": "Resource type"
+        },
+        "resourceSubType": {
+          "description": "The sub type of the resource",
+          "type": "string",
+          "x-ms-summary": "Resource sub type"
+        },
+        "resourceDescription": {
+          "description": "The resource description",
+          "type": "string",
+          "x-ms-summary": "Resource description"
+        },
+        "resourceUsage": {
+          "format": "double",
+          "description": "Number of unique users who used the resource in last 30 days",
+          "type": "number",
+          "x-ms-summary": "Resource usage"
+        },
+        "environmentName": {
+          "description": "The environment display name",
+          "type": "string",
+          "x-ms-summary": "Environment name"
+        },
+        "environmentId": {
+          "description": "The environment unique ID",
+          "type": "string",
+          "x-ms-summary": "Environment ID"
+        },
+        "lastModifiedDate": {
+          "format": "date-time",
+          "description": "Time when the resource was last modified",
+          "type": "string",
+          "x-ms-summary": "Last modfified date"
+        },
+        "lastAccessedDate": {
+          "format": "date-time",
+          "description": "Time when the resource was last used",
+          "type": "string",
+          "x-ms-summary": "Last used date"
+        },
+        "resourceActionStatus": {
+          "description": "Current status of any action taken since the last refresh time",
+          "type": "string",
+          "x-ms-summary": "Action Status"
+        }
+      }
+    },
+    "AdvisorRecommendationResourceIEnumerableResponseWithContinuation": {
+      "description": "Paged list of recommendation resources",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "List of recommendation resources",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AdvisorRecommendationResource"
+          }
+        },
+        "nextLink": {
+          "description": "Link to get the next page of resources",
+          "type": "string",
+          "x-ms-summary": "Next link"
+        }
+      }
+    },
+    "AdvisorRecommendationScenario": {
+      "description": "The recommendation name",
+      "enum": [
+        "OrphanedApps",
+        "UnusedApps",
+        "HighValueNonSolutionApps",
+        "SharedWithEveryoneApps"
+      ],
+      "type": "string",
+      "example": "OrphanedApps",
+      "x-ms-summary": "Recommendation Name",
+      "x-ms-enum": [
+        {
+          "value": "OrphanedApps",
+          "description": "Apps without a valid owner",
+          "name": "Orphaned apps"
+        },
+        {
+          "value": "UnusedApps",
+          "description": "Apps not used in recent past",
+          "name": "Unused apps"
+        },
+        {
+          "value": "HighValueNonSolutionApps",
+          "description": "Apps which are highly used but not part of a solution",
+          "name": "High value non-solution apps"
+        },
+        {
+          "value": "SharedWithEveryoneApps",
+          "description": "Apps which are shared with everyone in the tenant",
+          "name": "Apps shared with everyone"
+        }
+      ]
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [ ]
+    }
+  ]
+}
