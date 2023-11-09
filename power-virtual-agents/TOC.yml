@@ -14,8 +14,6 @@
       items:
         - name: Migrate to the unified canvas
           href: unified-authoring-conversion.md
-        - name: Quickstart for what's new
-          href: quickstart-preview.md
         - name: Key concepts for Composer users
           href: composer-concepts-preview.md
 - name: Get started
@@ -34,8 +32,6 @@
       href: nlu-gpt-overview.md
     - name: Quickstart guide for building bots with GPT
       href: nlu-gpt-quickstart.md
-    - name: Use plugin actions in Microsoft Copilot Studio (preview)
-      href: advanced-plugin-actions.md
     - name: Generative answers
       href: nlu-boost-conversations.md
     - name: Generative answers with Search and summarize
@@ -54,6 +50,22 @@
       href: nlu-authoring.md
     - name: AI features for Teams and Classic bots
       href: advanced-ai-features.md
+- name: Create and edit copilot plugins
+  items:
+    - name: Plugins overview
+      href: copilot-plugins-overview.md
+    - name: Create conversational plugins for Microsoft Copilot (preview)
+      href: copilot-conversational-plugins.md
+    - name: Create AI plugins for Microsoft Copilot (preview)
+      href: copilot-ai-plugins.md
+    - name: Use plugin actions in Microsoft Copilot Studio (preview)
+      href: advanced-plugin-actions.md
+    - name: Power Platform connectors
+      href: copilot-connector-plugins.md
+    - name: OpenAI plugins
+      href: copilot-openai-plugins.md
+    - name: Power Automate plugins
+      href: copilot-flow-plugins.md
 - name: Administer and manage
   items:
     - name: Assign licenses
