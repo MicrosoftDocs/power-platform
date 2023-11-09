@@ -58,7 +58,7 @@ Depending on your environment region, you may need to enable data movement acros
 
     :::image type="content" source="media/ai-not-allowed.svg" alt-text="Select **Edit** on the **Generative AI features** card.":::
 
-1. Review the information in the **Generative AI features** pane and select the **Move data across regions** checkbox.
+1. Review the terms of use and select the **Move data across regions** checkbox.
 
     :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use.":::
 
@@ -80,7 +80,7 @@ More copilots and generative AI features will be available in the future.
 | Power Automate | Power Automate designer copilot | [Get started with Copilot in cloud flows (preview)](/power-automate/get-started-with-copilot) |
 
 ## Region and language support for Dynamics 365 copilots and generative AI features
-Copilot and generative AI features of Power Platform and Dynamics 365 are supported differently in different regions.
+Copilot and generative AI features of Power Platform and Dynamics 365 are supported differently in different regions. Review the following information about Dynamics 365 products.
 
 - For Dynamics 36 Customer Insights - Data, see [Give consent to use Copilot in Customer Insights – Data](/dynamics365/customer-insights/data/copilot-global-consent).
 - For Dynamics 365 Customer Service, see [Copilot data movement across geographies (preview)](/dynamics365/customer-service/copilot-data-movement).
@@ -88,7 +88,3 @@ Copilot and generative AI features of Power Platform and Dynamics 365 are suppor
 
 To learn about the languages that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/en-us/availability-reports/copilotreport/).
 
-
-### See also
-
-[Troubleshoot missing environments](troubleshoot-missing-environments.md)
