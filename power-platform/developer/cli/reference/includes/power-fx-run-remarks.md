@@ -3,4 +3,3 @@
 <!-- Link to the section of the tutorial about the run command -->
 [Learn to use the pac power-fx run command](../../use-pac-power-fx.md#use-pac-power-fx-run)
 
-You can visit this GitHub Repository for Samples: [microsoft/power-fx-host-samples](https://github.com/microsoft/power-fx-host-samples/tree/main/Samples/ConsoleREPL)

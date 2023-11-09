@@ -32,9 +32,9 @@ Use the include files to add additional content to this topic.
 
 ## pac power-fx repl
 
-(Preview) Launch interactive Power Fx Read-Eval-Print Loop
+(Preview) Launch interactive Power Fx Read-Eval-Print-Loop. This is a Shell  where you can use formulas from the link on the top of the page **Formula reference - Power Platform CLI**.
 
-[!INCLUDE [power-fx-repl-remarks](includes/power-fx-repl-remarks.md)]
+
 
 ## pac power-fx run
 
