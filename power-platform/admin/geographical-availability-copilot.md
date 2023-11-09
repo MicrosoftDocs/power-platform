@@ -63,7 +63,7 @@ Depending on your environment region, you may need to enable data movement acros
     After you consent to the terms of use, the status of the **Move data across regions** field on the **Generative AI features** card shows **Allowed**. Copilots and generative AI features are enabled in the environment.
 
    > [!Note]
-   > Data movement across regions is GDPR and EUDB compliant. Data movement can’t be reversed by clearing the **Move data across regions** checkbox.
+   > Movement of data across regions complies with all applicable privacy laws and regulations. Data movement can’t be reversed by clearing the **Move data across regions** checkbox.
 
 ## Copilots and generative AI features that are available when you enable data movement across regions
 The following table lists copilots and generative AI features that are available in Power Platform environments when the **Move data across regions** checkbox is selected.
