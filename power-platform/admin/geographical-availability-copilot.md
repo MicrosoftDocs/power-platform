@@ -24,7 +24,7 @@ ms.custom:
 
 # Data movement across regions for copilots and generative AI features
 
-With copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/), you can build apps, flows, pages, chatbots, ask questions about your data, summarize information, reply to chat and email messages, generate content ideas, and more.
+With copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/), you can build apps, flows, chatbots, ask questions about your data, summarize information, reply to messages, generate content ideas, and more.
 
 Copilots and generative AI features of Power Platform and Dynamics 365 are supported differently in different regions. See your product’s documentation for details.
 
