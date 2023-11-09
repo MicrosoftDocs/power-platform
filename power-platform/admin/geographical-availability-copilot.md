@@ -43,9 +43,11 @@ The following table indicates when data moves across regions.
 | France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in the "Enable data movement across regions" section. |
 | Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in the "Enable data movement across regions" section. |
 
- 
+Depending on your environment region, as outlined in the above table, you may need to enable data to move across regions so that your users can take advantage of the copilot and generative AI features. The following section explains how to enable data movement across regions.
 
-To enable copilots and generative AI features in your Power Platform environments outside the United States, complete the following steps.
+
+## Enable data movement across regions
+Depending on your environment region, you may need to enable data movement across regions. The following procedure explains how to do so.
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -53,57 +55,25 @@ To enable copilots and generative AI features in your Power Platform environment
 
 1. Select your environment.
 
-1. On the right side of the screen, select **Edit** on the **Generative AI features** card.
+1. Select **Edit** on the **Generative AI features** card.
 
     :::image type="content" source="media/ai-not-allowed.svg" alt-text="Select **Edit** on the **Generative AI features** card.":::
 
-1. Read the information in the **Generative AI features** pane and select the check mark to consent to the terms of use.
+1. Review the information in the **Generative AI features** pane and select the **Move data across regions** checkbox.
 
     :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use.":::
 
 1. Select **Enable**.
 
-    After you consent, the status on the **Generative AI features** card shows **Allowed** and copilots and generative AI features are enabled in the environment.
+    After you consent to the terms of use, the status on the **Generative AI features** card shows **Allowed** and copilots and generative AI features are enabled in the environment.
 
-## Data storage and processing regions
+   > [!Note]
+   > Data movement across regions is GDPR and EUDB compliant. Data movement can’t be reversed by clearing the **Move data across regions** checkbox.
 
-The following table provides information about the data storage and processing region depending on your Power Platform environment region where you have enabled data movement for copilot capabilities using the steps described in this article above.
+## Copilots and generative AI features that are available when you enable data movement across regions
+The following table lists copilots and generative AI features that are available in Power Platform environments when the **Move data across regions** checkbox is selected.
 
-| Power Platform environment region | Data storage and processing region |
-| - | - |
-| Australia, United Kingdom, United States | Within the respective geographical region |
-| Europe, France, Germany, Norway, Switzerland  | Sweden or Switzerland |
-| Asia, Brazil, Canada, India, Japan, Singapore, South Africa, South Korea, United Arab Emirates  | United States |
-
-## Disable copilots and generative AI outside United States
-
-You can disable copilots and generative AI features in Power Platform environment regions outside United States by following these steps.
-
-> [!IMPORTANT]
-> Any data movement that happened while this feature was enabled cannot be reversed by removing your consent.
-
-1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-
-1. Select **Environments** in the navigation pane.
-
-1. Select your environment.
-
-1. On the right side of the screen, select **Edit** on the **Generative AI features** card.
-
-1. Clear the terms of use check mark.
-
-1. Select **Disable**.
-
-    After you remove your consent, the status on the **Generative AI features** card shows **Not allowed** disabling copilots and generative AI features in the environment.
-
-## Available copilot and generative AI features outside United States
-
-Currently all the Power Platform and Dynamics 365 copilots and generative AI features are available only in the United States. As the required infrastructure is available across other regions, copilots and generative AI features can be accessed from the same data boundary and opt-in consent isn't required.
-
-The following table lists all copilot and generative AI features available in Power Platform environments outside the United States when the consent is set to **Allowed**.
-
-> [!NOTE]
-> Copilot and generative AI features only work with the English language unless explicitly mentioned in the respective feature documentation.
+More copilots and generative AI features will be available in the future.
 
 | Product | Feature  | Documentation
 |-------------------------|-------------------------|-------------------------|
