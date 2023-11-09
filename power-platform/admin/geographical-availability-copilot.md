@@ -28,7 +28,7 @@ With copilots and generative AI features in [Microsoft Power Platform](/power-pl
 
 Copilots and generative AI features of Power Platform and Dynamics 365 are supported differently in different regions. See your product’s documentation for details.
 
-When you use copilots and generative AI features, your business data never moves outside of your tenant. However, **your inputs (prompts) and outputs (results) might move outside of your region**. That data is protected and secured at every step in ways that comply with all applicable privacy laws and regulations. We might store it for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region**. That data is protected and secured at every step in ways that comply with all applicable privacy laws and regulations. We might store it for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
 
 The following table indicates when data moves across regions.
 
