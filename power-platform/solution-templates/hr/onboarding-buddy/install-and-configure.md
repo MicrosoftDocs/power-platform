@@ -103,7 +103,7 @@ You have two options to consider for installing the Onboarding Buddy template to
 1. Select the developer environment that you prepared for the template.
    :::image type="content" source="media/install/ob-install-env.png" alt-text="Select the environment in which to install the template.":::
 1. Agree to the *Terms and Privacy* statements by selecting the boxes.
-1. Select **Install**. You'll be taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
+1. Select **Install**. You are taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
 
 > [!IMPORTANT]
 > Two solutions will always be installed in your environment:
@@ -129,15 +129,15 @@ You also have the option to download *managed* or *unmanaged* solution files to 
 1. Select **Import solution**.
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_EmployeeExperienceBase* file downloaded in previous step.
 1. Select **Next**.
-1. Select **Import**. This starts the import process of the *Employee Experience Base* solution
+1. Select **Import**. This starts the import process of the *Employee Experience Base* solution.
 1. Wait for the *Employee Experience Base* solution to finish importing. The import process can take a few minutes at which point you will be notified with a *Success* message.
 1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_Onboarding Buddy* file downloaded in previous step.
 1. Select **Next** and **Next** again.
-1. For each of the connections listed, select the *existing connection that was created in the previous step*
-1. Select **Next**
-1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment
-1. Select **Import** which will start the import process of the *Onboarding Buddy* solution
-Wait for the *Onboarding Buddy* solution to finish importing which can take a few minutes at which point you will be notified with a *Success* message
+1. For each of the connections listed, select the *existing connection that was created in the previous step*.
+1. Select **Next**.
+1. Ignore entering values for the environment variables as this is completed in another step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment.
+1. Select **Import** which starts the import process of the *Onboarding Buddy* solution.
+Wait for the *Onboarding Buddy* solution to finish importing. The import often takes a few minutes at which point you are notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
@@ -167,7 +167,7 @@ More information:
 
 ## Step 5: Share the apps with program admins
 
-You may have program managers who need to contribute to the configuration steps. In this case, follow the directions in [step eight](#step-8-share-the-onboarding-buddy-app) to share both the Onboarding Buddy Admin app and the Onboarding Buddy app specifically with them.
+You may have program managers who need to contribute to the configuration steps. In this case, follow the directions in [step nine](#step-9-share-the-onboarding-buddy-app) to share both the Onboarding Buddy Admin app and the Onboarding Buddy app specifically with them.
 
 ## Step 6: Configure program parameters
 
@@ -201,7 +201,7 @@ You can run the New Onboarders Sync flow manually to populate all new employees 
 
 ### Manually create onboarder records
 
-If you have existing employees that you wish to add to the Onboarders table that have been in Entra ID for more than a week, you can manually add them.
+You can manually add existing employees that have been set up in Entra ID for more than a week to the Onboarders table.
 
 1. Select **Onboarders** in the Onboarding Buddy Admin app.
 1. Select **+New** from the top menu.
@@ -232,7 +232,7 @@ Share the Onboarding Buddy app with the users in your organization.
 
 > [!NOTE]
 >
-> You'll share the app with the Onboarding Buddy program manager(s) first so they can configure the app to meet your organization's needs. Once that configuration is complete, you can deploy the app to the wider organization.
+> Share the app with the Onboarding Buddy program manager(s) first so they can configure the app to meet your organization's needs. Once that configuration is complete, deploy the app to the wider organization.
 
 1. Go to [Power Apps](https://make.powerapps.com/).
 1. Select **Apps** on the left-side panel.
@@ -243,11 +243,11 @@ Share the Onboarding Buddy app with the users in your organization.
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
-## Step 9: Turn on Auditing
+## Step 10: Turn on Auditing
 
 While auditing is not required, we recommend enabling the audit setting on the system, so it's easy to see who creates and updates records in the future.
 
-To do this:
+Take these steps to enable the audit settings:
 
 1. Go to [Power Platform admin center](https://gcc.admin.powerplatform.microsoft.us/home)
 1. Select **Environments** on the left-side menu and select the environment where the solution is installed.
