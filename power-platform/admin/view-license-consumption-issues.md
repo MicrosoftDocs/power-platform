@@ -2,7 +2,7 @@
 title: View license consumption for Power Apps and Power Automate (preview)
 description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
 author: amiyapatr-zz
-ms.date: 07/20/2023
+ms.date: 11/07/2023
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -20,6 +20,8 @@ search.audienceType:
 
 Use the **Billings (preview)** > **Licenses (preview)** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to monitor the consumption of your organization's Power Apps licenses and easily spot environments that might have licensing issues. Get answers to questions like these:
 
+- How many Power Apps licenses are purchased?
+- How many of those Power Apps licenses are assigned to users? 
 - What types of licenses are being used to launch apps?
 - What licenses are being used to execute flows?
 - How many users are actively consuming Power Apps or Power Automate licenses in a specific environment?
@@ -43,7 +45,26 @@ The **Summary** tab on the **Licenses (preview)** page displays a summary of any
 | Environments requiring attention | The number of environments that have a licensing issue and need your attention. |
 | Environment | A list of environments that have a licensing issue. |
 | License issues | The number of licensing issues for an environment. |
-| Recommended actions | A list of possible actions to resolve the licensing issues |
+
+### Power Apps licensing summary 
+From the **Product** dropdown list, select **Power Apps** to view license consumption information for Power Apps.
+
+The **Power Apps licensing summary** section provides details of how many Power Apps licenses have been purchased, how many of those licenses are assigned, and how many of those licenses are being actively utilized. This view is available for users with global admin, Power Platform admin, and Dynamics 365 admins roles.
+
+| Setting | Description |
+| ------- | ----------- |
+| **Power Apps licensing overview** | The number of users actively using licenses by virtue of opening Power Apps in the last 30 days. This section also provides details of how many Power Apps licenses have been available and how many of those licenses have been assigned to users. |
+| License type | The type of license&mdash;Dynamics 365, Microsoft 365, per app, per user, pay-as-you-go, trial, or developer&mdash;the actual license is mapped to. |
+| Active users | The number of unique users who opened apps in any of the environments in your tenant at least once in the last 30 days. |
+| Assigned licenses | The number of unique users who have been assigned a license.|
+| Purchased licenses | The number of Power App licenses available for your tenant. |
+| Usage details for a license type | Select a license type in the **Power Apps licensing overview** section to view a list of the users who are consuming a specific license type. |
+| Email | The email ID or user principal name (UPN) of the user who opened an app in any of the environments. Select the email link to open the Microsoft 365 admin portal. |
+| License | The license SKU. |
+| Last active date | The date when an app was last opened by a user within last 30 days. |
+| Environment | The name of environment in which a user has last opened an app. |
+| **License type: Power App Per App** | If the selected environment has per app licenses assigned, a list of apps consuming app pass licenses, the number of users the app has been shared with, and the number of users who have opened the app using per app licenses is displayed. |
+| Download | Downloads the information in CSV format. Select a specific license type to start the download. After a CSV file is generated, you can download the same file again within five days without having to start a new download. The download process is asynchronous, which allows you to start the download and return after a few minutes to monitor its progress. |
 
 ## Environments tab
 
