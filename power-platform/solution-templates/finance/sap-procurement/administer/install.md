@@ -52,7 +52,7 @@ Follow these steps to install either the *managed* or *unmanaged* **SAP Base** s
 1. Select **Solutions** on the left-side panel.
 1. Select **Import solution**.
 1. Browse for and select either the managed *or* unmanaged version of the **mpa_SAPBase** file downloaded in previous step.
-1. Enter the environment variables when prompted, using the [Configure environment variables](/configure-environment-variables) guidance.
+1. Enter the environment variables when prompted, using the [Configure environment variables](configure-environment-variables.md) guidance.
 1. Select **Import**. This starts the import process of the *SAP Base* solution
 1. Wait for the *SAP Base* solution to finish importing. The import process can take a few minutes at which point you will be notified with a *Success* message.
 
