@@ -136,7 +136,7 @@ Make sure your reverse proxy is configured to send the client IP address in the 
 Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features.md#tds-endpoint), you will need to disable IP firewall in the environment.
 
 ### IP firewall audit functionality is not working in my environment. What should I do?
-If your environment is using bring-your-own-key (BYOK) functionality, we recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
+IP firewall audit logs are not supported in bring-your-own-key [(BYOK)](https://learn.microsoft.com/en-us/power-platform/admin/manage-encryption-key) enabled tenant. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK enabled tenant are ‘locked’ down to SQL only, therefore Audit can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
 
 ## Next steps
 
