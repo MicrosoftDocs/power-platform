@@ -40,8 +40,8 @@ The following table indicates when data moves across regions.
 |-------------------------|-------------------------|-------------------------|-------------------------|
 | Australia (availability starting Nov 10, 2023)</br>United Kingdom (availability starting Nov 10, 2023)</br>United States | Within the respective geographical region | No | No action required. |
 | Europe | Sweden or Switzerland | Yes | No action required. |
-| France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in the "Enable data movement across regions" section. |
-| Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in the "Enable data movement across regions" section. |
+| France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in the [Enable data movement across regions](#enable-data-movement-across-regions) section. |
+| Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in the [Enable data movement across regions](#enable-data-movement-across-regions) section. |
 
 Depending on your environment region, as outlined in the above table, you may need to enable data to move across regions so that your users can take advantage of the copilot and generative AI features. The following section explains how to enable data movement across regions.
 
