@@ -34,8 +34,8 @@ The following table indicates when data moves across regions.
 
 | Your environment region | Region where data storage and processing occurs | Does data move across regions? | Action you must take to enable data movement|
 |-------------------------|-------------------------|-------------------------|-------------------------|
-| Australia (availability starting Nov 10, 2023)</br>United Kingdom (availability starting Nov 10, 2023)</br>United States | Within the respective geographical region | No | No action required. |
-| Europe | Sweden or Switzerland | Yes | No action required. |
+| Australia (availability starting Nov 10, 2023)</br>United Kingdom (availability starting Nov 10, 2023)</br>United States | Within the respective geographical region | No | No action required. Data doesn't move across regions in this scenario.|
+| Europe | Sweden or Switzerland | Yes | No action required. Data doesn't move outside the [EU Data Boundary](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb).  |
 | France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 | Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 
