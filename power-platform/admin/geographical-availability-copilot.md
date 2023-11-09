@@ -40,11 +40,10 @@ The following table indicates when data moves across regions.
 |-------------------------|-------------------------|-------------------------|-------------------------|
 | Australia (availability starting Nov 10, 2023)</br>United Kingdom (availability starting Nov 10, 2023)</br>United States | Within the respective geographical region | No | No action required. |
 | Europe | Sweden or Switzerland | Yes | No action required. |
-| France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in the [Enable data movement across regions](#enable-data-movement-across-regions) section. |
-| Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in the [Enable data movement across regions](#enable-data-movement-across-regions) section. |
+| France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
+| Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 
 Depending on your environment region, as outlined in the above table, you may need to enable data to move across regions so that your users can take advantage of the copilot and generative AI features. The following section explains how to enable data movement across regions.
-
 
 ## Enable data movement across regions
 Depending on your environment region, you may need to enable data movement across regions. The following procedure explains how to do so.
@@ -79,6 +78,16 @@ More copilots and generative AI features will be available in the future.
 |-------------------------|-------------------------|-------------------------|
 | Microsoft Dataverse | Excel to table for new makers | [Upload an Excel file (preview)](/power-apps/maker/data-platform/create-edit-entities-portal#upload-an-excel-file-preview) |
 | Power Automate | Power Automate designer copilot | [Get started with Copilot in cloud flows (preview)](/power-automate/get-started-with-copilot) |
+
+## Region and language support for Dynamics 365 copilots and generative AI features
+Copilot and generative AI features of Power Platform and Dynamics 365 are supported differently in different regions.
+
+- For Dynamics 36 Customer Insights - Data, see [Give consent to use Copilot in Customer Insights – Data](/dynamics365/customer-insights/data/copilot-global-consent).
+- For Dynamics 365 Customer Service, see [Copilot data movement across geographies (preview)](/dynamics365/customer-service/copilot-data-movement).
+- For Dynamics 365 Sales, see [Copilot data movement across geographies](/dynamics365/sales/sales-copilot-data-movement).
+
+To learn about the languages that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/en-us/availability-reports/copilotreport/).
+
 
 ### See also
 
