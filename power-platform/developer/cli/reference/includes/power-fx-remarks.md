@@ -1,8 +1,6 @@
-<!-- 
-Instructions: Remove comments and this line. Add any general remarks for this command group below.
+`pac power-fx repl`
 
-### Remarks
+`>>`
 
-Add content here...
+`>> Sum(5, 10)`
 
--->

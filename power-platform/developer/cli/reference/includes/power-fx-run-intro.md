@@ -2,18 +2,54 @@
 
 The following examples show the use of the `pac power-fx run` command.
 
-- [Example some scenario a](#example-some-scenario-a)
-- [Example some other scenario b](#example-some-other-scenario-b)
+- [Example scenario 1](#example-scenario-1)
+- [Example scenario 2](#example-scenario-2)
 
 <!-- Replace these placeholder examples with real examples -->
-### Example some scenario a
+### Example Scenario 1
+
+For example, you have a file called "test-pfx.txt" with Power Fx expressions, that are:
+
+// Show first 5 records in Contacts table
+
+FirstN(Contacts, 5)
+
+// Use Help() for additional formaulas to use
+
+Help()
+
+// To leave, type Exit() which is case sensitive
+
+Exit()
+
+You will type below command to run the file.
 
 ```powershell
-pac power-fx run
+pac power-fx run --file test-pfx.txt
 ```
 
-### Example some other scenario b
+### Example Scenario 2
+
+For example, you have a file called "test-pfx.txt" with Power Fx expressions, that are:
+
+// Show first 5 records in Contacts table
+
+Set(x, 1)
+
+Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
 
 ```powershell
-pac power-fx run
+pac power-fx run --file test-pfx.txt --echo
 ```
+
+**Result will be:**
+
+\>\> Set(x, 1)
+
+x: 1
+
+true
+
+\>\> Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
+
+Result: "X"

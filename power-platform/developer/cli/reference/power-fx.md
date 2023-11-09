@@ -54,9 +54,9 @@ Path of file to execute
 
 #### `--echo` `-e`
 
-True if input commands should echo back to output
+If input file commands should echo back to output
 
-This parameter requires no value. It's a switch.
+This parameter requires **NO** value. It's a switch.
 
 [!INCLUDE [power-fx-run-remarks](includes/power-fx-run-remarks.md)]
 
