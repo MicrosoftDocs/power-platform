@@ -64,7 +64,7 @@ Depending on your environment region, you may need to enable data movement acros
 
 1. Select **Enable**.
 
-    After you consent to the terms of use, the status on the **Generative AI features** card shows **Allowed** and copilots and generative AI features are enabled in the environment.
+    After you consent to the terms of use, the status of the **Move data across regions** field on the **Generative AI features** card shows **Allowed**. Copilots and generative AI features are enabled in the environment.
 
    > [!Note]
    > Data movement across regions is GDPR and EUDB compliant. Data movement can’t be reversed by clearing the **Move data across regions** checkbox.
