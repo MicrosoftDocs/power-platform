@@ -10,17 +10,14 @@ The following examples show the use of the `pac power-fx run` command.
 
 For example, you have a file called "test-pfx.txt" with Power Fx expressions, that are:
 
+```text
 // Show first 5 records in Contacts table
-
 FirstN(Contacts, 5)
-
 // Use Help() for additional formaulas to use
-
 Help()
-
 // To leave, type Exit() which is case sensitive
-
 Exit()
+```
 
 You will type below command to run the file.
 
@@ -32,24 +29,22 @@ pac power-fx run --file test-pfx.txt
 
 For example, you have a file called "test-pfx.txt" with Power Fx expressions, that are:
 
-// Show first 5 records in Contacts table
-
+```text
 Set(x, 1)
-
 Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
+```
 
 ```powershell
 pac power-fx run --file test-pfx.txt --echo
 ```
 
-**Result will be:**
+**Result with --echo flag are:**
 
-\>\> Set(x, 1)
-
+```text
+>> Set(x, 1)
 x: 1
-
 true
 
-\>\> Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
-
+>> Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
 Result: "X"
+```
