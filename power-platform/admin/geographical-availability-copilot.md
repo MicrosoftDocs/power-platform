@@ -1,10 +1,10 @@
 ---
-title: Enable copilots and generative AI features outside the United States
-description: Learn about how to enable copilot and generative AI features in Power Platform environments.
+title: Data movement across regions for copilots and generative AI features
+description: Learn about how to enable data movement across regions for copilots and generative AI features.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/01/2023
+ms.date: 11/09/2023
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -22,18 +22,28 @@ ms.custom:
   - ai-seo-date:09/07/2023
 ---
 
-# Enable copilots and generative AI features outside the United States
+# Data movement across regions for copilots and generative AI features
 
-With copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/), you can build apps, flows, pages, chatbots, ask questions about your data, summarize information, reply to chat and email messages, generate content ideas, get general answers related to the product, and do more.
+With copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/), you can build apps, flows, pages, chatbots, ask questions about your data, summarize information, reply to chat and email messages, generate content ideas, and more.
 
-Copilots and generative AI features are currently available in environments in the United States and support the English language. They're starting to be available in Sweden (October 31, 2023), Australia, and United Kingdom (mid-November 2023) progressively. 
+Copilots and generative AI features of Power Platform and Dynamics 365 are supported differently in different regions. See your product’s documentation for details.
 
-> [!NOTE]
-> - The underlying infrastructure for copilots and generative AI is currently available only in the Power Platform environment regions located in the United States and the above listed regions. Accessing copilots and generative AI features from regions outside the United States or one of the above listed regions results in **data movement across regional boundaries**. Any data movement that happens while this feature is enabled can't be reversed by [removing your consent](#disable-copilots-and-generative-ai-outside-united-states).
-> - All data from the copilots and generative AI features in the Europe region (including France and Germany) are handled by the underlying infrastructure hosted in the Sweden region. For all other Power Platform environment regions, the requests are handled by the infrastructure hosted in the United States region.
-> - Copilots and generative AI features are only available in a Power Platform environment that is created in regions other than **United States - Default** and **Preview (United States)**. To enable or disable copilot features in environments created in **United States – Default** and **Preview (United States)** regions, refer to the respective product documentation for the applicable product.
-> - To enable copilot for Dynamics 365 Customer Service outside United States, refer to [Copilot data movement across geographies (preview)](/dynamics365/customer-service/copilot-data-movement).
-> - To enable copilot for Dynamics 365 Sales outside North America, refer to [Sales Copilot data movement across geographies](/dynamics365/sales/sales-copilot-data-movement).
+Accessing copilots and generative AI features from different regions can result in data movement across regions. Note the following points about this data movement:
+- The data movement is GDPR and EUDB compliant.
+- The data movement includes user prompts (inputs) and completions (outputs).
+- Data is stored for up to 30 days for abuse monitoring and is accesses by authorized Microsoft personnel only when flagged by automated systems. For more information, see [Abuse monitoring](/azure/ai-services/openai/concepts/abuse-monitoring).
+- Your business data is never moved out of your tenant.
+
+The following table indicates when data moves across regions.
+
+| Your environment region | Region where data storage and processing occurs | Does data move across regions? | Action you must take to enable data movement|
+|-------------------------|-------------------------|-------------------------|-------------------------|
+| Australia (availability starting Nov 10, 2023)</br>United Kingdom (availability starting Nov 10, 2023)</br>United States | Within the respective geographical region | No | No action required. |
+| Europe | Sweden or Switzerland | Yes | No action required. |
+| France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in the "Enable data movement across regions" section. |
+| Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in the "Enable data movement across regions" section. |
+
+ 
 
 To enable copilots and generative AI features in your Power Platform environments outside the United States, complete the following steps.
 
