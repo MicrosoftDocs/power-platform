@@ -1,6 +1,6 @@
 ---
-title: Back and Navigate functions in Power Apps
-description: Reference information including syntax and examples for the Back and Navigate functions in Power Apps.
+title: Back and Navigate functions
+description: Reference information including syntax and examples for the Back and Navigate functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,7 @@ contributors:
   - jorisdg
 ---
 
-# Back and Navigate functions in Power Apps
+# Back and Navigate functions
 
 Changes which screen is displayed.
 
@@ -34,6 +34,8 @@ Use the **App** object's [**StartScreen**](object-app.md#startscreen-property) p
 You can use either function only within a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 ## Navigate
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 In the first argument, specify the name of the screen to display.
 
@@ -58,6 +60,8 @@ Context variables for navigation are explained in the article [navigate between 
 
 ## Back
 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps 
+
 The **Back** function returns to the screen that was most recently displayed.
 
 For each **Navigate** call, the app tracks the screen that appeared and the transition. You can use successive **Back** calls to return all the way to the screen that appeared when the user started the app.
@@ -74,7 +78,7 @@ When the **Back** function runs, the inverse transition is used by default. For 
 
 **Navigate**( _Screen_ [, _Transition_ [, *UpdateContextRecord* ] ] )
 
-- _Screen_ - Required. The screen to display.
+- _Screen_ - Required. The screen to display. In place of _Screen_, you can also use a control that is on the screen you wish to navigate to.
 - _Transition_ - Optional. The visual transition to use between the current screen and the next screen. See the list of valid values for this argument earlier in this article. The default value is **None**.
 - _UpdateContextRecord_ - Optional. A record that contains the name of at least one column and a value for each column. This record updates the [context variables](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable) of the new screen as if passed to the **[UpdateContext](function-updatecontext.md)** function.
 

@@ -1,97 +1,116 @@
 ---
-title: "Configuring and using the ALM accelerator for Power Apps portal and Power Pages | MicrosoftDocs"
-description: "Committing Power Apps Portal/Power Pages website can be achieved by including the website during solution commit. This document describes how to commit Power Apps Portal/Power Pages website and deploy to test environments."
-author: rajeevpentyala
-ms.topic: conceptual
+title: Use the ALM Accelerator with Power Pages sites
+description: Learn how to use the ALM Accelerator for Power Platform to apply source-control strategies and automate builds and deployment for your Power Pages sites. 
+ms.topic: how-to
 ms.date: 04/10/2023
 ms.subservice: guidance
+author: rajeevpentyala
 ms.author: rajeevpe
 ms.reviewer: sericks
+ms.custom: bap-template
 ---
 
-# Configuring and using the ALM accelerator for Power Pages
+# Use the ALM Accelerator with Power Pages sites
 
-ALM Accelerator components enable makers to apply source-control strategies with Azure DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
+Makers can use ALM Accelerator components to apply source control strategies with Azure DevOps, including fully automated builds and deployments, without needing intimate knowledge of downstream technologies or manual intervention by the maker, administrator, developer, or tester. You can switch quickly from developing to source-controlling solutions and, ultimately, push apps to other environments with as few interruptions to your work as possible.
 
-With the ALM Accelerator, you can source control your Power Pages websites, transport them to downstream environments, and include them during solution commit.
+With the ALM Accelerator, you can source-control your Power Pages websites, transport them to downstream environments, and include them during solution commits.
 
 ## Prerequisites for Power Pages website ALM
 
-- An active website created using [Power Pages](/power-pages/introduction).
-- [ALM Accelerator for Power Platform app](overview.md)
+- Have an active [Power Pages](/power-pages/introduction) site.
+- Install the [ALM Accelerator for Power Platform app](overview.md).
 
-## Include the website during solution commit
+## Include a website when you commit a solution
 
-Follow these steps to include Power Pages website during solution commit:
+1. In the ALM Accelerator app, on the **COMMIT SOLUTION** pane, select **Include Power Pages**.
 
-1. During the solution commit, on the **COMMIT SOLUTION** pane, enable **Include Power Pages**.
-1. Select the website from the **Website** list and select **COMMIT SOLUTION**.
+1. Select the website from the **Website** list, and then select **COMMIT SOLUTION**.
 
-   :::image type="content" source="media/setup-almacceleratorpowerplatform/IncludingPortalWebsite-solution-commit.png" alt-text="Include Power Apps portal or Power Pages website":::
+   :::image type="content" source="media/setup-almacceleratorpowerplatform/IncludingPortalWebsite-solution-commit.png" alt-text="Screenshot of the Commit Solution pane in the ALM Accelerator, with the Include Power Apps setting and website highlighted.":::<!-- EDITOR'S NOTE: Please include the Include Power Pages setting in the red box. -->
 
-1. After the commit is successful, a folder with downloaded website contents with convention "Solution_name\PowerPages\Site_Name" gets created under the Repository branch.
+   After the commit succeeds, the website components are contained in a folder named *{SolutionName}\PowerPages\{SiteName}* under the repository branch.
 
-   ![Power Pages Website commit.](media/setup-almacceleratorpowerplatform/Portal-Committed-Website.png)
+## Upload changes using a deployment profile
 
-## Upload the changes using deployment profile
+When you're working with multiple environments, consider using deployment profiles to make sure your changes are uploaded to the correct environment. You can provide deployment profiles to the ALM Accelerator in either of two ways: upload a deployment profile or add it to the solution branch.
 
-When working with multiple different environments, you may consider using deployment profiles to ensure the changes are uploaded to the correct environment using deployment profiles.
+### Upload deployment profiles in the deployment settings
 
-There are two ways you can provide deployment profile(s) in ALM Accelerator.
+1. In the ALM Accelerator app, open a solution's deployment settings.
 
-### Upload deployment profiles from the Deployment Settings of ALM Accelerator
+1. Select an environment, and then select the **Power Pages** tab.
 
-From the ALM Accelerator application, open the **Deployment Settings** of a solution and upload the deployment profile file for each environment.
+1. Find and select the YAML file that contains the deployment profile.
 
-:::image type="content" source="media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png" alt-text="Upload the deployment profile.":::
+1. Select **Upload File**.
 
-### Add deployment profiles manually to the solution branch
+:::image type="content" source="media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png" alt-text="Screenshot of uploading a deployment profile.":::<!-- EDITOR'S NOTE: Please highlight the Power Pages tab. -->
 
-Follow these steps to use deployment profiles, along with the Power Pages website, in the ALM Accelerator:
+### Add deployment profiles to the solution branch
 
-1. After committing the solution by including Power Pages website, open the solution branch.
-1. Create a folder named **deployment-profiles**, under **PowerPages** folder > **Website** folder.
-1. In the **deployment-profiles** folder, create a deployment YAML file that contains environment-specific changes. The deployment YAML filename must start with your [Environment] name. For example, a development environment can be called "dev.deployment.yml" and a validation environment can be called "validation.deployment.yml".
+1. Commit the solution and [include the Power Pages website](#include-a-website-when-you-commit-a-solution).
 
-   :::image type="content" source="media/setup-almacceleratorpowerplatform/deployment-profile-yml-files.png" alt-text="Power Pages website deployment profiles":::
+1. Open the solution branch.
 
-Go to [Portal CLI documentation](../../developer/cli/reference/paportal.md) on the usage and preparation of deployment profiles.
+1. Create a folder named *deployment-profiles* in the **PowerPages** > **Website** folder.
 
-When the **deployment-profiles** folder is present in your repository, the ALM Accelerator automatically checks for the deployment YAML file starting with the environment name during deployment.
+1. In the *deployment-profiles* folder, create a deployment YAML file that contains environment-specific changes. The file name must start with your environment name; for example, *dev.deployment.yml* or *validation.deployment.yml*.
 
-## Upload website to downstream environments
+   :::image type="content" source="media/setup-almacceleratorpowerplatform/deployment-profile-yml-files.png" alt-text="Screenshot of the folder structure for Power Pages website deployment profiles.":::
 
-No other steps are required to upload Power Pages website to downstream environments. Use the [ALM Accelerator for Power Platform app](overview.md) **DEPLOY SOLUTION** option to upload the website to your downstream environments.
+When the *deployment-profiles* folder is present in your repository, the ALM Accelerator automatically looks for the appropriate profile during deployment.
 
-## Complete website setup post deployment
+## Upload a website to downstream environments
 
-Follow these steps to update the website record once the website has been deployed to your downstream environments:
+Use the **DEPLOY SOLUTION** option in the [ALM Accelerator app](overview.md) to upload a Power Pages website to your downstream environments.
 
-1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select the downstream environment, and under **Resources**, select **Power Pages sites**.
-1. You are redirected to **Power Pages sites** page. Select the website and select **Manage**.
-1. Under the **Site Details** section, select **Edit**.
-1. From **Website Record** list, select the website that got transported from your maker/ or dev environment, and select **Save**.
+## Complete website setup after deployment
 
-   :::image type="content" source="media/setup-almacceleratorpowerplatform/Portal-Update-Bindings.png" alt-text="Power Pages website update website":::
+Update the website record after the site has been deployed to your downstream environments.
 
-## Be aware of configuration cache
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and select the downstream environment.
 
-If your changes aren't reflected on the website post deployment, you'll need to clear the configuration cache. There are multiple options to clear the configuration cache.
+1. Under **Resources**, select **Power Pages sites**.
+
+1. On the **Power Pages sites** page, select the website, and then select **Manage**.
+
+1. In the **Site Details** section, select **Edit**.
+
+1. In the **Website Record** list, select the website that was transported from your maker or development environment.
+
+1. Select **Save**.
+
+   :::image type="content" source="media/setup-almacceleratorpowerplatform/Portal-Update-Bindings.png" alt-text="Screenshot of updating the details of a Power Pages website in the Power Platform admin center.":::<!-- EDITOR'S NOTE: Please crop and highlight the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
+
+## Clear the configuration cache
+
+If your changes aren't reflected on the website after deployment, clear the configuration cache. You can clear the cache in a couple of ways.
 
 ### Restart the portal in the Power Apps portal admin center
 
 If you're an administrator, this is the easiest option.
 
-1. Open **[Power Apps portals admin center](/power-apps/maker/portals/overview)**.
+1. Open the **[Power Apps portals admin center](/power-apps/maker/portals/overview)**.
+
 1. Navigate to **Portal Actions** > **Restart**.
 
-### Service page for site administrator users
+### Clear the cache on the service page
 
-This requires more setup and planning but is the safest option.
+Site administrators can use this method. It requires more setup and planning but is the safest way to clear the configuration cache.
 
-1. Authenticate to the site and assign the resulting contact record the Administrator Web Role. Navigate to the Site URL + **/_services/about** in your web browser where you can select the **Clear cache** button.
+1. Authenticate to the site.
 
-   :::image type="content" source="media/setup-almacceleratorpowerplatform/Portal-Clear-Cache.png" alt-text="Power Apps portal or Power Pages website clear cache":::
+1. Assign the resulting contact record the Administrator Web role.
+
+1. In your web browser, navigate to the **{site URL}/_services/about** page.
+
+1. Select **Clear cache**.
+
+   :::image type="content" source="media/setup-almacceleratorpowerplatform/Portal-Clear-Cache.png" alt-text="Screenshot of the Portal Details page, with the Clear cache option highlighted.":::
 
 1. Refresh the website in your browser to see the changes.
+
+### See also
+
+[Learn more about deployment profiles in the portal CLI documentation](../../developer/cli/reference/paportal.md)

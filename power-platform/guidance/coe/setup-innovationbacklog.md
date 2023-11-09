@@ -1,6 +1,6 @@
 ---
 title: "Set up Innovation Backlog components | MicrosoftDocs"
-description: "The Innovation Backlog components contain a canvas app that can be used for managing an idea backlog, estimating ROI and voting on ideas."
+description: "The Innovation Backlog components contain a canvas app that can be used for managing an idea backlog, estimating ROI, and voting on ideas."
 author: manuelap-msft
 
 ms.component: pa-admin
@@ -17,14 +17,14 @@ search.audienceType:
 
 Use the Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
 
-Pick the most impactful ideas to for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
+Pick the most impactful ideas for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
-The Innovation Backlog solution contains assets that are relevant to all users in your organization, and can be installed in [Production](../../admin/environments-overview.md#types-of-environments) or [Dataverse for Teams](/powerapps/teams/overview-data-platform) environments.
+The Innovation Backlog solution contains assets that are relevant to all users in your organization, and can be installed in [production](../../admin/environments-overview.md#types-of-environments) or [Dataverse for Teams](/powerapps/teams/overview-data-platform) environments.
 
 > [!IMPORTANT]
 > The Innovation Backlog components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
-## Option 1: Import the solution into a Production environment
+## Option 1: Import the solution into a production environment
 
 Before you begin, review the [prerequisites](setup.md) for using the starter kit solution.
 
@@ -51,7 +51,7 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
-1. Establish connections to the Microsoft Dataverse (Current Environment), Microsoft Dataverse, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
+1. Establish connections to the Microsoft Dataverse (Current Environment), Microsoft Dataverse, Power Apps for Makers, and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
      ![Establish connections to activate your solution.](media/ibteams-2.png "Establish connections to activate your solution.")
 
@@ -73,28 +73,46 @@ To populate some of the tables with default values, turn on the following flows:
 Learn more: [Turn flows on](/power-automate/disable-flow#turn-flows-on)
 
 1. Now, run the flows to populate some of the tables with default values.
-    1. Open the **Add pain points** cloud flow and select **Run** > **Run Flow**.
-        ![Run Add Pain points cloud flow.](media/ib-2.png "Run Add Pain points cloud flow")
-    1. Open the **Update Software Tools** cloud flow and select **Run** > **Run Flow**.
-        ![Run Update Software Tools cloud flow.](media/ib-3.png "Run Update Software Tools cloud flow")
-    1. Wait for both of them to finish (This might take 10 mins.)
 
-1. Extract the **ToolIcons.zip**. You can find this file in the initial download.
+    1. Open the **Add pain points** cloud flow and select **Run** > **Run Flow**.
+
+       ![Run Add pain points cloud flow.](media/ib-2.png "Run Add pain points cloud flow")
+    
+    1. Open the **Update Software Tools** cloud flow and select **Run** > **Run Flow**.
+
+        ![Run Update Software Tools cloud flow.](media/ib-3.png "Run Update Software Tools cloud flow")
+    
+    1. Wait for both of them to finish. (This might take 10 minutes.)
+
+1. Extract **ToolIcons.zip**. You can find this file in the initial download.
 
 1. Open the **Innovation Backlog Admin** app.
+
     ![Open the Innovation Backlog Admin app.](media/ib-4.png "Open the Innovation Backlog Admin app")
+
 1. Select **Go Icon**.
-        ![Select Go Icons to update icons.](media/ib-5.png "Select Go Icons to update icons")
+
+    ![Select Go Icon to update icons.](media/ib-5.png "Select Go Icons to update icons")
+
 1. Select each non-software tool, add an icon from the **ToolIcons** folder, and select **Add** to save the icon.
-    ![Add an icon for a non-software tool in the Admin app.](media/ib-10.png "Add an icon for a non-software tool in the Admin app")
+
+   ![Add an icon for a non-software tool in the Admin app.](media/ib-10.png "Add an icon for a non-software tool in the Admin app")
+
 1. Go back to the Center of Excellence - Innovation Backlog solution and select the **Innovation Backlog** canvas app.
-    ![Open the Innovation Backlog app.](media/ib-6.png "Open the Innovation Backlog app")
-1. Copy the **Web Link**
-        ![Copy the Web Link.](media/ib-9.png "Copy the Web Link")
-1. Go to [make.powerapps.com](<https://make.powerapps.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**
-    ![Open the Default Solution and filter to only show Environment Variables.](media/ib-7.png "Open the Default Solution and filter to only show Environment Variables")
+
+   ![Open the Innovation Backlog app.](media/ib-6.png "Open the Innovation Backlog app")
+
+1. Copy the **Web Link**.
+
+   ![Copy the Web Link.](media/ib-9.png "Copy the Web Link")
+
+1. Go to [make.powerapps.com](<https://make.powerapps.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**.
+
+   ![Open the Default Solution and filter to only show Environment Variables.](media/ib-7.png "Open the Default Solution and filter to only show Environment Variables")
+
 1. Select the **InnovationBacklogAppURL** variable and paste in the URL for the Innovation Backlog app.
-    ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
+
+   ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
 
 You can now [use the Innovation Backlog app](innovationbacklog-components.md).
 
@@ -102,21 +120,21 @@ You can now [use the Innovation Backlog app](innovationbacklog-components.md).
 
 Before you begin:
 
-- decide which team to add the Innovation Backlog app to or create a new team.
-- [install the Power Apps app](/powerapps/teams/install-personal-app) in Teams.
-- [create your first app](/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
+- Decide which team to add the Innovation Backlog app to or create a new team.
+- [Install the Power Apps app](/powerapps/teams/install-personal-app) in Teams.
+- [Create your first app](/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
 
 1. Download the CoE Starter Kit compressed file from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload).
 
-1. Extract the zip file.
+1. Extract the .zip file.
 
 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you want to add the solution to.
 
-1. Select **See All**
+1. Select **See All**.
 
     ![Open the Power Apps app in Teams to import a new solution.](media/ibteams-1.png "Open the Power Apps app in Teams to import a new solution.")
 
-1. Select **Import**
+1. Select **Import**.
 
 1. In the pop-up window, select **Choose File**.
 
@@ -124,7 +142,7 @@ Before you begin:
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
-1. Establish connections to the Microsoft Dataverse (Current Environment), Microsoft Dataverse, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
+1. Establish connections to the Microsoft Dataverse (Current Environment), Microsoft Dataverse, Power Apps for Makers, and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
      ![Establish connections to activate your solution.](media/ibteams-2.png "Establish connections to activate your solution.")
 
@@ -137,40 +155,58 @@ Before you begin:
 1. When the import succeeds, select **Installed Apps**.
 
     ![Select Installed Apps to view your solution.](media/ibteams-4.png "Select Installed Apps to view your solution")
+
 1. Select **See All** to see the apps, flows, and tables part of the Center of Excellence - Innovation Backlog solution.
 
-     ![View apps, flows and tables part of the Innovation Backlog solution.](media/ibteams-5.png "View apps, flows and tables part of the Innovation Backlog solution")
+     ![View apps, flows, and tables part of the Innovation Backlog solution.](media/ibteams-5.png "View apps, flows and tables part of the Innovation Backlog solution")
 
 1. Now, populate some of the tables with default values by running instant cloud flows.
+
     1. Open the **Add pain points** cloud flow and select **Run** > **Run Flow**.
-        ![Run Add Pain points cloud flow.](media/ib-2.png "Run Add Pain points cloud flow")
+
+       ![Run Add pain points cloud flow.](media/ib-2.png "Run Add pain points cloud flow")
+    
     1. Open the **Update Software Tools** cloud flow and select **Run** > **Run Flow**.
-        ![Run Update Software Tools cloud flow.](media/ib-3.png "Run Update Software Tools cloud flow")
-    1. Wait for both of them to finish (This might take 10 mins.)
+
+       ![Run Update Software Tools cloud flow.](media/ib-3.png "Run Update Software Tools cloud flow")
+    
+    1. Wait for both of them to finish. (This might take 10 minutes.)
 
 1. Extract the **ToolIcons.zip**. You can find this file in the initial download.
 
-1. Open the **Innovation Backlog Admin** app and select **Preview**. There's no need to publish this app as you will only use it for some admin tasks.
-1. Select **Go Icon**.
-        ![Select Go Icons to update icons.](media/ib-5.png "Select Go Icons to update icons")
-1. Select each non-software tool, add an icon from the **ToolIcons** folder, and select **Add** to save the icon.
-    ![Add an icon for a non-software tool in the Admin app.](media/ib-10.png "Add an icon for a non-software tool in the Admin app")
+1. Open the **Innovation Backlog Admin** app and select **Preview**. There's no need to publish this app because you will only use it for some admin tasks.
 
-1. Open the **Innovation Backlog** canvas app and select **Publish**
-     ![Publish the Innovation Backlog to Teams.](media/ibteams-6.png "Publish the Innovation Backlog to Teams")
+1. Select **Go Icon**.
+
+    ![Select Go Icon to update icons.](media/ib-5.png "Select Go Icon to update icons")
+
+1. Select each non-software tool, add an icon from the **ToolIcons** folder, and select **Add** to save the icon.
+
+   ![Add an icon for a non-software tool in the Admin app.](media/ib-10.png "Add an icon for a non-software tool in the Admin app")
+
+1. Open the **Innovation Backlog** canvas app and select **Publish**.
+
+    ![Publish the Innovation Backlog to Teams.](media/ibteams-6.png "Publish the Innovation Backlog to Teams")
+
 1. Select **Next** and add the channels to which the app should be added.
-    ![Choose where the app will be added as a tab in a channel.](media/ibteams-7.png "Choose where the app will be added as a tab in a channel")
+
+   ![Choose where the app will be added as a tab in a channel.](media/ibteams-7.png "Choose where the app will be added as a tab in a channel")
 
 1. Go to the Teams channel, open the Innovation Backlog tab, select the **Web Link**, and copy the app link from the new browser window.
-          ![Copy the Innovation Backlog web link.](media/ibteams-8.png "Copy the Innovation Backlog web link")
-1. Go to [Power Automate](<https://make.powerautomate.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**
-    ![Open the Default Solution and filter to only show Environment Variables.](media/ib-7.png "Open the Default Solution and filter to only show Environment Variables")
+
+    ![Copy the Innovation Backlog web link.](media/ibteams-8.png "Copy the Innovation Backlog web link")
+
+1. Go to [Power Automate](<https://make.powerautomate.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**.
+
+   ![Open the Default Solution and filter to only show Environment Variables.](media/ib-7.png "Open the Default Solution and filter to only show Environment Variables")
+
 1. Select the **InnovationBacklogAppURL** variable and paste in the URL for the Innovation Backlog app.
-    ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
+
+   ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
 
 You can now [use the Innovation Backlog app](innovationbacklog-components.md).
 
-## It looks like I found a bug with the CoE Starter Kit; where should I go?
+## I found a bug with the CoE Starter Kit; where should I go?
 
 To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 

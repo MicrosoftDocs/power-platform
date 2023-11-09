@@ -76,6 +76,9 @@ The **Delete disabled users** feature must be enabled in the environment where y
 1. Set the **Enable delete disabled users** setting to **On**. 
 1. Select **Save** to save your changes.
 
+> [Note]
+> This feature flag is to enable the **Delete disabled users** functionality for the environment on the Power Platform admin center. You don't need to enable this feature flag if you are using the client's **User** form.
+
 ## Delete users in Power Platform
 
 Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in Power Platform environments with a **Disabled** status. These users can be deleted permanently from Power Platform environments. Deleting users from Power Platform environments goes through the similar deletion stages as in Azure AD. When you first delete the user in the Power Platform environment, the disabled user is first *soft deleted*, and then you can *permanently delete* the user.

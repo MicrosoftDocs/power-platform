@@ -4,13 +4,16 @@ description: This article provides information about Microsoft Power Platform an
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/23/2023
+ms.date: 09/25/2023
 ms.subservice: admin
 ms.author: sericks
 ms.contributors:
 - macarrer
 - pvayner
 - shailesn
+- ahothur
+contributors:
+- Akshay-Koushik-Hothur 
 ---
 # Power Platform and Dynamics 365 apps operated by 21Vianet in China
 
@@ -36,6 +39,12 @@ Microsoft strives to maintain functional parity across our localized datacenter 
 ## Enable server-side synchronization functionality for Exchange Online in China
 
 To connect Dynamics 365 with your Exchange Online tenant in China and use server-side synchronization functionality, go to [Enable server-side synchronization functionality for Exchange Online in China](connect-exchange-online.md#enable-server-side-synchronization-functionality-for-exchange-online-in-china).
+
+## Telemetry for model-driven apps
+
+The following URL must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
+
+https://browser.pipe.aria.microsoft.com
 
 ## Expansion and transition to "China 3" datacenters
 

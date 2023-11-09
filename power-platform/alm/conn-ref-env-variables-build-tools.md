@@ -1,14 +1,13 @@
 ---
-title: "Pre-populate connection references and environment variables for automated deployments using Power Platform Build Tools  | Microsoft Docs"
-description: "Learn about pre-populating connection references and environment variables to truly automate your deployments."
+title: Pre-populate connection references and environment variables for automated deployments using Power Platform Build Tools
+description: Learn about pre-populating connection references and environment variables to truly automate your deployments.
 author: kkanakas
 ms.author: kartikka
 ms.custom: ""
 ms.date: 08/20/2021
-ms.reviewer: "pehecke"
-
+ms.reviewer: angieandrews
 ms.subservice: alm
-ms.topic: "article"
+ms.topic: conceptual
 search.audienceType: 
   - developer
 ---
@@ -192,6 +191,10 @@ solution into the target environment. This will create the required connection r
 When using the [Import Solution task](devops-build-tool-tasks.md#power-platform-import-solution) in Power Platform Build Tools, select **Use deployment settings file** and provide the path to the deployment settings file. Next, initiate the pipeline.
 
 :::image type="content" source="media/cref-evar-figure13.png" alt-text="Using the deployment settings file" lightbox="media/cref-evar-figure13.png":::
+
+## Validation
+
+During solution import, the connection references are validated to ensure that the connections placed inside them will be usable by the owner of the connection reference. Ensure that the connections are owned by the owner of the connection references or that the [connections are shared](/power-apps/maker/data-platform/create-connection-reference#share-connections-with-another-user-so-flows-can-be-enabled).
 
 ### See also
 

@@ -34,10 +34,22 @@
       href: nlu-gpt-overview.md
     - name: Quickstart guide for building bots with GPT
       href: nlu-gpt-quickstart.md
+    - name: Use plugin actions in Power Virtual Agents (preview)
+      href: advanced-plugin-actions.md
     - name: Generative answers
       href: nlu-boost-conversations.md
     - name: Generative answers with Search and summarize
       href: nlu-boost-node.md
+    - name: Use a Bing Custom Search to search a number of websites
+      href: nlu-generative-answers-bing.md
+    - name: Use a connection to Azure OpenAI on your data
+      href: nlu-generative-answers-azure-openai.md
+    - name: Use uploaded documents (preview)
+      href: nlu-documents.md
+    - name: Use content on SharePoint or OneDrive for Business
+      href: nlu-generative-answers-sharepoint-onedrive.md
+    - name: Use a custom data source
+      href: nlu-generative-answers-custom-data.md
     - name: Create (and edit) with Copilot
       href: nlu-authoring.md
     - name: AI features for Teams and Classic bots
@@ -78,6 +90,8 @@
       href: authoring-system-topics.md
     - name: Create and edit topics
       href: authoring-create-edit-topics.md
+    - name: Use topic triggers
+      href: authoring-triggers.md
     - name: Start with sample topics
       href: authoring-template-topics.md
     - name: Start from existing content
@@ -98,6 +112,8 @@
       href: authoring-test-bot.md
     - name: Supported languages
       href: authoring-language-support.md
+    - name: Configure and create multilingual chatbots (Preview)
+      href: multilingual.md
     - name: Troubleshoot error codes
       href: error-codes.md
 - name: Enhance and improve
@@ -108,6 +124,8 @@
       href: advanced-entities-slot-filling.md
     - name: Use variables
       href: authoring-variables.md
+    - name: Make HTTP requests
+      href: authoring-http-node.md
     - name: Sending event activities
       href: authoring-send-event-activities.md
     - name: Reuse variables across topics
@@ -157,7 +175,7 @@
       href: publication-connect-bot-to-azure-bot-service-channels.md
     - name: Integrate with question answering
       href: integrate-with-question-answering.md
-    - name: Integrate with conversational language understanding (preview)
+    - name: Integrate with conversational language understanding
       items:
         - name: Conversational language understanding integration overview
           href: advanced-clu-integration.md
@@ -239,3 +257,12 @@
       href: personal-data-delete.md
     - name: Requests to discover data
       href: personal-data-discovery.md
+- name: Responsible AI
+  items:
+    - name: Overview
+      href: responsible-ai-overview.md
+    - name: FAQ for generative answers
+      href: faqs-generative-answers.md
+    - name: FAQ for copilot
+      href: faqs-copilot.md
+

@@ -86,7 +86,7 @@ To connect to the bot you have built with Power Virtual Agents, you'll need to r
 
 ### Get Direct Line token
 
-To start a conversation with your Power Virtual Agents bot, you need a Direct Line token. You need to add code that retrieves a Direct Line token with the Bot ID and Tenant ID from the previous section to your app.
+To start a conversation with your Power Virtual Agents bot, you need a Direct Line token. You need to add code that retrieves a Direct Line token with the Token Endpoint from the previous section to your app.
 
 To request a Direct Line token, issue a GET request to the endpoint below:
 
@@ -96,13 +96,13 @@ GET /api/botmanagement/v1/directline/directlinetoken
 
 | Query Parameter | Required |
 | --------------- | -------- |
-| `botId`         | yes      |
-| `tenantId`      | yes      |
+| `TokenEndPoint` | yes      |
+
 
 Example:
 
 ```rest-api
-GET https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=<ENTER-YOUR-BOTID>&tenantId=<ENTER-YOUR-TENANTID>
+GET <BOT TOKEN ENDPOINT>
 ```
 
 If the request is successful, a Direct Line token will be returned for the requested bot.
@@ -111,20 +111,28 @@ If the request is successful, a Direct Line token will be returned for the reque
 
 The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to get a Direct Line token for a Power Virtual Agents bot.
 
-  ```C#
+```C#
+/// <summary>
+/// Get directline token for connecting bot
+/// </summary>
+/// <returns>directline token as string</returns>
+public async Task<string> GetTokenAsync()
+{
+  string token;
   using (var httpRequest = new HttpRequestMessage())
-  {   
+  {
       httpRequest.Method = HttpMethod.Get;
       UriBuilder uriBuilder = new UriBuilder(TokenEndPoint);
-      uriBuilder.Query = $"botId={BotId}&tenantId={TenantId}";
       httpRequest.RequestUri = uriBuilder.Uri;
       using (var response = await s_httpClient.SendAsync(httpRequest))
       {
           var responseString = await response.Content.ReadAsStringAsync();
-          string token = SafeJsonConvert.DeserializeObject<DirectLineToken>(responseString).Token;
+          token = SafeJsonConvert.DeserializeObject<DirectLineToken>(responseString).Token;
       }
   }
-  ```
+  return token;
+}
+```
   
   ```C#
   /// <summary>

@@ -1,20 +1,22 @@
 ---
-title: "Learning catalog for ALM Accelerator for Power Platform | MicrosoftDocs"
-description: "Learning catalog for ALM Accelerator for Power Platform. "
-author: rsantos00
+title: Learn more about the ALM Accelerator
+description: Learn about the resources available to help you become familiar with the ALM Accelerator for Power Platform.
 ms.topic: conceptual
 ms.date: 05/22/2023
 ms.subservice: guidance
+author: rsantos00
 ms.author: rusant
 ms.reviewer: sericks
+ms.custom: bap-template
 ---
-# ALM Accelerator for Power Platform: Learning Catalog
 
-The  ALM Accelerator for Power Platform  includes a canvas app that sits on top of Azure DevOps Pipelines and Git source control. The app provides a simplified interface for makers to regularly export the components in their  [Power Platform Solutions](/power-platform/alm/solution-concepts-alm)  to source control and create deployment requests to have their work reviewed before deploying to target environments.
+# Learn more about the ALM Accelerator
 
-The ALM Accelerator for Power Platform complements the ALM guidance available under [Overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm). It was originally developed to facilitate ALM for the CoE Starter Kit team. We are now sharing what we’ve built for our own use and open sourcing it to help you understand how you can apply ALM patterns and practices with the Power Platform. You can use the ALM Accelerator as-is, customize it to meet your requirements, or as a reference implementation to see how we’ve addressed ALM scenarios.
+The ALM Accelerator for Power Platform includes a canvas app that sits on top of Azure Pipelines and Git source control. The app provides a simplified interface for makers to export their [Power Platform solutions](/power-platform/alm/solution-concepts-alm) to source control and have their work reviewed before deploying to target environments as part of an organization's application lifecycle management (ALM) strategy.
 
-The shortcut for this page is [https://aka.ms/AA4PPLearning](https://aka.ms/AA4PPLearning).
+The ALM Accelerator complements our [Power Platform ALM guidance](/power-platform/alm/overview-alm) and was originally developed to facilitate ALM for our own CoE Starter Kit team. We're sharing and open-sourcing it to help you apply ALM patterns and practices to your Power Platform solutions. You can use the ALM Accelerator as-is, customize it to meet your requirements, or as a reference implementation to see how we addressed ALM scenarios.
+
+To get back to this page easily, use the shortcut: [https://aka.ms/AA4PPLearning](https://aka.ms/AA4PPLearning).
 
 ## Blogs
 
@@ -29,19 +31,19 @@ The shortcut for this page is [https://aka.ms/AA4PPLearning](https://aka.ms/AA4P
 
 ## Docs
 
-- [How to use ALM Accelerator for Power Platform](overview.md)
-- [Set up ALM accelerator for Microsoft Power Platform components](setup-admin-tasks.md)
-- [How to update ALM Accelerator for Power Platform](setup-pipeline-sync.md)
-- [Configuring the ALM Accelerator for Power Platform hook extensions](setup-hook-extensions.md)
+- [ALM Accelerator for Power Platform](overview.md)
+- [Configure the ALM Accelerator using the admin app](setup-admin-tasks.md)
+- [Configure pipeline sync](setup-pipeline-sync.md)
+- [Configure pipeline extension points](setup-hook-extensions.md)
 
 ## Labs
 
-- [Hands-on Lab Step-by-Step for demo tenant](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceALMAccelerator/Labs/Demo%20tenant%20setup/)
+- [Hands-on Lab Step-by-Step](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceALMAccelerator/Labs/Demo%20tenant%20setup/)
 
 ## Collaboration in GitHub
 
-- [Center of Excellence ALM Accelerator](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceALMAccelerator) - Includes the full solution of AA4PP
-- [Center of Excellence ALM Accelerator Templates](https://github.com/microsoft/coe-alm-accelerator-templates) - Includes the pipelines and PowerShell scripts used in Azure DevOps for AA4PP
+- [Center of Excellence ALM Accelerator](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceALMAccelerator): Includes the full ALM Accelerator for Power Platform solution.
+- [Center of Excellence ALM Accelerator Templates](https://github.com/microsoft/coe-alm-accelerator-templates): Includes the pipelines and PowerShell scripts used in Azure DevOps for the ALM Accelerator for Power Platform.
 
 ## FAQ
 
@@ -50,10 +52,10 @@ The shortcut for this page is [https://aka.ms/AA4PPLearning](https://aka.ms/AA4P
 
 ## Release notes
 
-- The release notes / change log is part of each release, find the [latest here](https://github.com/microsoft/coe-starter-kit/releases/)
+- Release notes and change log are part of each release. [CoE Starter Kit releases](https://github.com/microsoft/coe-starter-kit/releases/)
 
-## Customer Stories
+<!-- ## Customer Stories
 
-- Soon
+- Soon -->
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]

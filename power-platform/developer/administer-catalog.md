@@ -29,7 +29,7 @@ Administering the catalog includes the following tasks:
 
 ## Setup users
 
-The **Catalog Manager** application includes the following security roles you can associate to users, Microsoft Azure Active Directory groups, and modern teams:
+The **Catalog Manager** application includes the following security roles you can associate to users, Microsoft Entra ID groups, and modern teams:
 
 |Role |Description  |
 |---------|---------|

@@ -52,6 +52,8 @@
               href: get-help-support.md
             - name: Support overview
               href: support-overview.md
+            - name: View known issues (preview)
+              href: view-known-issues.md
             - name: Support environments and the consent process
               href: support-environment.md
             - name: Determine your organization ID and name
@@ -84,6 +86,8 @@
                   href: signup-for-powerapps-admin.md
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
+                - name: Auto-claim policies for Power Apps licenses
+                  href: auto-claim-licensing.md
             - name: Power Automate
               items:
                 - name: Overview
@@ -180,10 +184,14 @@
                   href: managed-environment-usage-insights.md
                 - name: Data policies
                   href: managed-environment-data-policies.md
-                - name: Solution checker enforcement (preview)
+                - name: Solution checker enforcement
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
+                - name: Block cookie replay attacks
+                  href: block-cookie-replay-attack.md
+                - name: Configure IP firewall (preview)
+                  href: ip-firewall.md
             - name: Environment updates
               items:
                 - name: Opt in to early access updates
@@ -202,6 +210,8 @@
                   href: admin-settings.md
                 - name: Environment database settings
                   href: environment-database-settings.md
+                - name: Default environment routing (preview)
+                  href: default-environment-routing.md
                 - name: Product
                   items:
                     - name: Behavior
@@ -212,10 +222,12 @@
                       href: settings-features.md
                     - name: Enable languages
                       href: enable-languages.md
-                    - name: Privacy preferences
+                    - name: Manage privacy and security settings
                       href: settings-privacy-security.md
                     - name: Configure Dataverse search
                       href: configure-relevance-search-organization.md
+                    - name: Use /mention to link to records in Outlook web client
+                      href: link-records-Outlook-web.md
                 - name: Business
                   items:
                     - name: Business closures
@@ -258,6 +270,8 @@
                       href: create-team-template-add-entity-form.md
                     - name: Users
                       href: users-settings.md
+                    - name: User channel override
+                      href: user-channel-override.md
                     - name: Plug-in steps
                       href: plug-ins.md
                 - name: Audit and logs
@@ -452,11 +466,7 @@
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors
                   href: block-forwarded-email-from-power-automate.md
-                - name: Block cookie replay attacks
-                  href: block-cookie-replay-attack.md
-                - name: IP firewall (preview)
-                  href: ip-firewall.md
-                - name: Continuous access evaluation integration (preview)
+                - name: Continuous access evaluation (preview)
                   href: continuous-access-evaluation.md
                 - name: Configure environment security
                   items:
@@ -604,7 +614,7 @@
                   href: analytics-ui-flow.md
             - name: Reports
               items:
-                - name: Tenant-level analytics (preview)
+                - name: Tenant-level analytics
                   href: tenant-level-analytics.md
                 - name: Power Apps analytics
                   href: powerapps-analytics-reports.md
@@ -628,8 +638,12 @@
                   href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
-                - name: Set up export to Application Insights
+                - name: Export data to Application Insights
                   href: set-up-export-application-insights.md
+                - name: Set up Application Insights with Power Automate (preview)
+                  href: app-insights-cloud-flow.md
+                - name: Conversation diagnostics in Azure Application Insights (preview)
+                  href: conversation-diagnostics-application-insights.md
         - name: Storage
           items:
             - name: What's new for storage
@@ -682,6 +696,8 @@
               href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
+            - name: View Power Platform administrative logs in Microsoft Purview (preview)
+              href: admin-activity-logging.md
         - name: Programmability and extensibility
           items:
             - name: Overview
@@ -702,6 +718,10 @@
                   href: programmability-tutorial-create-daily-capacity-report.md
                 - name: "Install an application to a target environment (preview)"
                   href: programmability-tutorial-install-application-environment.md
+                - name: "Tutorial: Allocate add-ons to environments (preview)"
+                  href: programmability-tutorial-allocate-capacity-addons.md
+                - name: "Tutorial: Create cross tenant isolation reports (preview)"
+                  href: programmability-tutorial-cross-tenant-reporting.md
             - name: PowerShell
               items:
                 - name: Getting started
@@ -1005,6 +1025,17 @@
                   href: connect-onedrive-business.md
                 - name: Connect to Yammer
                   href: connect-yammer.md
+        - name: Unified admin experience for finance and operations apps (preview)
+          items:
+            - name: Overview
+              href: unified-experience/finance-operations-apps-overview.md
+              displayName: Overview of unified admin experience for finance and operations apps
+            - name: "Tutorial: Provision a new environment with an ERP-based template"
+              href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
+            - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
+              href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
+            - name: "Admin trials for finance and operations apps"
+              href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization
           items:
             - name: Overview
@@ -1015,24 +1046,24 @@
               href: analyze-improve-data-query-performance.md
         - name: Compliance and data privacy
           href: wp-compliance-data-privacy.md
-        - name: GDPR - Responding to DSR requests
+        - name: Responding to DSR requests
           items:
-            - name: About GDPR
-              href: about-gdpr.md
+            - name: About privacy
+              href: about-privacy.md
             - name: System-generated logs
-              href: powerapps-gdpr-dsr-guide-systemlogs.md
+              href: powerapps-privacy-dsr-guide-systemlogs.md
             - name: Data integrations for Dataverse
-              href: data-integration-gdpr-dsr-guide.md
+              href: data-integration-privacy-dsr-guide.md
             - name: Power Apps customer data
               items:
                 - name: Overview
-                  href: powerapps-gdpr-dsr-guide.md
+                  href: powerapps-privacy-dsr-guide.md
                 - name: Export data
-                  href: powerapps-gdpr-export-dsr.md
+                  href: powerapps-privacy-export-dsr.md
                 - name: Delete data
-                  href: powerapps-gdpr-delete-dsr.md
+                  href: powerapps-privacy-delete-dsr.md
                 - name: Dataverse customer data
-                  href: common-data-service-gdpr-dsr-guide.md
+                  href: dataverse-privacy-dsr-guide.md
         - name: Datacenter regions
           href: new-datacenter-regions.md
           items:
@@ -1076,8 +1107,6 @@
       items:
         - name: Overview
           href: about-ce-guide.md
-        - name: Sales territories
-          href: set-up-sales-territories-organize-business-markets-geographical-area.md
         - name: Define subjects to categorize cases, products, and articles
           href: define-subjects-categorize-cases-products-articles.md
         - name: Enhanced service level agreements

@@ -87,7 +87,7 @@ Use the following PowerShell cmdlets to customize the [governance policy message
 
 ### Block new connectors in the default environment
 
-New connectors are added to the nonbusiness group by default. You can force new connectors to default to the business group or blocked data group instead. For the default environment, we recommend that you select the blocked data group to make sure that new connectors remain unusable until a tenant admin manually unblocks it.
+By default, all new connectors are placed in the Non-business group of your DLP policy. You can always [change the default group to either Business or Blocked](/power-platform/admin/prevent-data-loss#change-the-default-data-group). For a DLP policy that is applied to the default environment, we recommend that you configure the Blocked group as the default to make sure that new connectors remain unusable until they have been reviewed by one of your administrators.
 
 ### Limit makers to prebuilt connectors
 

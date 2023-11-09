@@ -1,5 +1,5 @@
 ---
-title: Programmability and Extensibility - PowerShell - Installation | Microsoft Docs
+title: Programmability and Extensibility - PowerShell - Installation
 description: PowerShell for Power Platform Administrators installation
 author: laneswenka
 ms.reviewer: sericks
@@ -33,12 +33,12 @@ To run the PowerShell cmdlets for app creators, do the following:
    > [!div class="mx-imgBorder"] 
    > ![Run PowerShell as an administrator.](media/open-powershell-as-admin75.png "Run PowerShell as an administrator")
 
-2. Import or update the necessary module using one of the following commands:
+2. Import or update the necessary module by using one of the following commands:
 
     ```powershell
     Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
     ```
-    
+
     ```powershell
     Update-Module -Name Microsoft.PowerApps.Administration.PowerShell
     ```

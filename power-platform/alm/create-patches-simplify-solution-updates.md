@@ -21,11 +21,11 @@ If you add an entity to a solution and export the solution, the entity and all o
 ## Patches  
  You can apply patches to either managed or unmanaged solutions and include only changes to entities and related entity assets. Patches do not contain any non-customized system components or relationships that it dependents upon because these components already exist in the deployed-to organization. At some point in your development cycle, you can roll up all the patches into a new solution version to replace the original solution that the patches were created from.  
   
- Patches are stored in the Dataverse database as `Solution` entity records. A non-null `ParentSolutionId` attribute indicates that the solution is a patch. Patches can be created and managed through the Organization Service or Web APIs, which are useful for developing automation such as a product install script. However, the Dataverse web application provides various web forms that enable you to interactively create and manage patches.  
+ Patches are stored in the Dataverse database as `Solution` entity records. A non-null `ParentSolutionId` attribute indicates that the solution is a patch. Patches can be created and managed through the SDK for .NET or Web APIs, which are useful for developing automation such as a product install script. However, the Dataverse web application provides various web forms that enable you to interactively create and manage patches.  
   
 - Patches can only be created from a parent solution using <xref:Microsoft.Crm.Sdk.Messages.CloneAsPatchRequest> or <xref href="Microsoft.Dynamics.CRM.CloneAsPatch?text=CloneAsPatch Action" />.  
   
-- The patch parent can’t be a patch.  
+- The patch parent can't be a patch.  
   
 - Patches can only have one parent solution.  
   
@@ -33,7 +33,7 @@ If you add an entity to a solution and export the solution, the entity and all o
   
 - You can only install a patch if the parent solution is present.  
   
-- You can’t install a patch unless the unique name and major/minor version number of the parent solution, as identified by `ParentSolutionId`, do not match those of the parent solution installed in the target organization.  
+- You can't install a patch unless the unique name and major/minor version number of the parent solution, as identified by `ParentSolutionId`, do not match those of the parent solution installed in the target organization.  
   
 - A patch version must have the same major and minor number, but a higher build and release number, than the parent solution version number. The display name can be different.  
   
@@ -43,17 +43,17 @@ If you add an entity to a solution and export the solution, the entity and all o
   
 - Patches exported as managed must be imported on top of a managed parent solution. The rule is that patch protection (managed or unmanaged) must match its parent.  
   
-- Don’t use unmanaged patches for production purposes.  
+- Don't use unmanaged patches for production purposes.  
   
 - Patches are only supported in Dataverse organizations of version 8.0 or later.  
   
   The SolutionPackager and PackageDeployer tools in this release support solution patches. Refer to the tool's online help for any command-line options that are related to patches.  
   
 ## Create a patch  
- Create a patch from an unmanaged solution in an organization by using the <xref:Microsoft.Crm.Sdk.Messages.CloneAsPatchRequest> message or the <xref href="Microsoft.Dynamics.CRM.CloneAsPatch?text=CloneAsPatch Action" />, or by using the web application. Once you create the patch, the original solution becomes locked and you can’t change or export it as long as there are dependent patches that exist in the organization that identify the solution as the parent solution. Patch versioning is similar to solution versioning and specified in the following format: *major.minor.build.release*. You can’t make changes to the existing major or minor solution versions when you create a patch.  
+ Create a patch from an unmanaged solution in an organization by using the <xref:Microsoft.Crm.Sdk.Messages.CloneAsPatchRequest> message or the <xref href="Microsoft.Dynamics.CRM.CloneAsPatch?text=CloneAsPatch Action" />, or by using the web application. Once you create the patch, the original solution becomes locked and you can't change or export it as long as there are dependent patches that exist in the organization that identify the solution as the parent solution. Patch versioning is similar to solution versioning and specified in the following format: *major.minor.build.release*. You can't make changes to the existing major or minor solution versions when you create a patch.  
   
 ## Export and import a patch  
- You can use the Organization Service or Web APIs, the web application, or the Package Deployer tool to export and import a patch. The relevant Organization Service message requests are <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> and <xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest>. The relevant actions For the Web API are <xref href="Microsoft.Dynamics.CRM.ImportSolution?text=ImportSolution Action" /> and <xref href="Microsoft.Dynamics.CRM.ExportSolution?text=ExportSolution Action" />.  
+ You can use the SDK for .NET or Web APIs, the web application, or the Package Deployer tool to export and import a patch. The relevant SDK for .NET request classes are <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> and <xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest>. The relevant actions For the Web API are <xref href="Microsoft.Dynamics.CRM.ImportSolution?text=ImportSolution Action" /> and <xref href="Microsoft.Dynamics.CRM.ExportSolution?text=ExportSolution Action" />.  
   
 ### Patching examples  
  The following table lists the details of a patching example. Note that in this example, the solution and patches are imported in numerical order and are additive, which is consistent with solution import in general.  

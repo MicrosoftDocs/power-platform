@@ -1,12 +1,12 @@
 ---
 title: "Administrator analytics and reports for Microsoft Power Apps"
 description: "Admins can view Microsoft Power Apps analytics in the Power Platform admin center, including reports on environment-level usage, errors, and service performance."
-author: tjvass
+author: StephenRauchPM
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/04/2023
+ms.date: 08/03/2023
 ms.subservice: admin
-ms.author: tjvass
+ms.author: stephenrauch
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -30,9 +30,9 @@ Admins with the following roles and a [license](pricing-billing-skus.md) can vie
 
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
-## Where is my data stored? 
+## Data Storage 
 
-When a user first creates an environment from a region, the environment is always hosted in that region. The data is stored only in the region that an environment is hosted in. Data is stored for a maximum of 28 days. The data refresh cycle is about 3 hours and the last refresh time in UTC time standard is displayed on the upper-right corner of the page. 
+When a user first creates an environment from a region, the environment is always hosted in that region. The data is stored only in the region that an environment is hosted in. Data is stored for a maximum of 28 days. The data refresh cycle is about 24 hours and the last refresh time in UTC time standard is displayed on the upper-right corner of the page. 
 
 ## What are the available reports? 
 

@@ -4,11 +4,13 @@ description: "This page explains how to reset a Power Platform environment if yo
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2022
+ms.date: 10/09/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- iscohen-microsoft 
 ---
 # Reset environment 
 
@@ -19,7 +21,7 @@ Reset a sandbox environment to delete and reprovision it. Consider a reset when 
 - Remove an environment containing personal data  
   
 > [!IMPORTANT]
-> - You can only reset sandbox environments. 
+> - You can only reset sandbox and developer environments. 
 > - A reset will permanently delete environment components such as canvas apps, flows, custom connectors, connections and back ups
 
  **An example scenario**  

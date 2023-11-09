@@ -1,14 +1,16 @@
 ---
 title: "Capacity add-ons for Power Apps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 03/24/2022
-ms.reviewer: 
+ms.date: 08/01/2023
+ms.reviewer: sericks
 ms.topic: conceptual
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.contributors:
+- laneswenka
 ---
 # Capacity add-ons
 
@@ -64,6 +66,8 @@ To allocate capacity to an environment:
    - If you want to create 5 flows in an environment which are going to be used for business process flows, assign a capacity of 5 for **flow per business process**.
   - If a company has created a portal and anticipate 50,000 views of the portal, they should allocate 50,000 **portal page views**.
 
+> [!NOTE]
+> If you want to update many add-on allocations across environments at scale, see [Tutorial: Allocate add-ons to environments (preview)](./programmability-tutorial-allocate-capacity-addons.md) for more information.
 
 ## Control who can allocate add-on capacity
 

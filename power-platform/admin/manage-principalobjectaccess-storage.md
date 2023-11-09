@@ -4,7 +4,7 @@ description: Information about managing PrincipalObjectAccess storage.
 author: paulliew 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/01/2023
+ms.date: 09/20/2023
 ms.subservice: admin
 ms.author: paulliew 
 ms.reviewer: sericks 
@@ -20,10 +20,11 @@ Users in an environment with the Microsoft Dataverse database can collaborate wi
 To manage this record-level collaboration and to provide user access to shared records, all sharing of records and their permissions are stored in the PrincipalObjectAccess (POA) table. Whenever users try to access a record that they don’t own or don't have the appropriate privilege in their security role, the system checks the POA table to authorize the user’s access. 
 
 ## Sources of POA
+The following topics outline the settings or usage that create POA records, as they enable record sharing. The settings should be reviewed and updated accordingly to avoid over-sharing and the increase in POA storage. 
 
 ### Share reassigned records with original owner
 
-When this setting is set to **Yes**, then record would be created in the POA table whenever a user assigns a record to another user or team. The original owner is automatically added as **Share** to.
+By-default, the **Set whether reassigned records are shared with original owner** setting is **No**. This is where the original owner of the record no longer has access to the record when the record ownership is reassigned to another user. When this setting is set to **Yes**, then a record is created in the POA table whenever a user assigns a record to another user or team. The original owner is automatically added as **Share** to.
 
 :::image type="content" source="media/manage-principalobjectaccess-storage.png" alt-text="Manage PrincipalObjectAccess storage.":::
 
@@ -70,7 +71,13 @@ The RetrieveAccessOrigin API can be used to determine where a user or team’s a
 ## Deleting POA records
 The POA table is managed by the system to ensure proper access of users or teams to respective records. Direct deletion on this table is not supported since it can break the security model defined for the organization. The correct way to clean up the POA table is by adjusting the security model, and revoking access that was previously given.
 
-Create a [support ticket](https://dynamics.microsoft.com/support/) to understand how your POA table is distributed and what kind of actions can be done to optimize the storage.
+## Troubleshooting guides
+When the cascade configuration of a table relationship is [changed from **Reparent** or **Share** to **No Cascade**](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior#inherited-access-repair), use this article to clean up the inherited access. This removes unnecessary POA records. More information: [How to clean up inherited access](/troubleshoot/power-platform/power-apps/dataverse/cleanup-inherited-access?tabs=sdk).
+
+Inherited access rights cleanup is a system job that cleans up the legacy, inherited access rights that remain after the cascading behavior is changed to **Cascade None**. More information: [Inherited acccess rights cleanup](/power-apps/maker/data-platform/create-edit-entity-relationships#inherited-access-rights-cleanup)
+
+To learn whether user access was granted because of POA, see [Determine why a user has access](/power-apps/developer/data-platform/security-sharing-assigning?tabs=sdk#determine-why-a-user-has-access). 
+
 
 ### See also
 [Dataverse storage capacity](capacity-storage.md)

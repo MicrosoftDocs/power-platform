@@ -1,9 +1,7 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac admin create-service-principal
-``` 
--->
+pac admin create-service-principal  --environment <environment id>
+```
+
+More information: [Configure service connections using a service principal](../../../../alm/devops-build-tools.md#configure-service-connections-using-a-service-principal)
