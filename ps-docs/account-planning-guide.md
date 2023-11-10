@@ -21,11 +21,12 @@ contributors:
 
 Use the account planning guide in Project "Sophia" to help you execute your sales plans and meet your revenue goals.
 
-1.	Go to [https://projectsophia.preview.microsoft.com]( https://projectsophia.preview.microsoft.com).
-2.	From the **Home** screen, select **Guides** > **Account planning**.
-3.	Select **Upload or connect to data** > **Upload a file**.
-4.	Select the file name and then select **Open**.
-5.	Select **Generate**.
+1. Go to [https://projectsophia.preview.microsoft.com]( https://projectsophia.preview.microsoft.com).
+1. From the **Home** screen, select **Guides** > **Account planning**.
+1. From the top right, select **Domains** to optimize responses your specific area of interest.
+1. Select **Add data** > **Upload files**.
+1. Select the file name and then select **Open**.
+1. Select **Generate**.
 
 Project "Sophia" will generate a tailored account plan based on your data. You can upload more data and refine your account plann or continue exploring your data.
 
