@@ -67,7 +67,7 @@ Legend
 
 ## Waiting room
 
-If Project "Sophia" reaches its full capacity during the preview period, you'll be placed in a waiting room queue until there's more capacity. You have the option to remain in the waiting room or ign up to be notified when Project Sophia becomes available. However, once the product is released to the public, there won't no waiting room.
+If Project "Sophia" reaches its full capacity during the preview period, you'll be placed in a waiting room queue until there's more capacity. You have the option to remain in the waiting room or sign up to be notified when Project "Sophia" is available. When the product is released to the public, there won't no waiting room.
 
 
 > [!Note]

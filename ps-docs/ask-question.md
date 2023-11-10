@@ -21,11 +21,14 @@ contributors:
 
 When you can ask Project "Sophia" a question or upload data and ask questions about the data, it generates a AI-powered blueprint. 
 
+It's also important to select **Domains** when you use Project “Sophia”. Choosing a domain provides a better understanding of the context of your question. For instance, in the context of sales and marketing, the terms *hunters* and *farmers* hold distinct meanings that may not be apparent without that context. Similarly, there's commons acronyms that mean something different based on context.
+
 Following the steps below to ask a question:
 
 1. Go to [https://projectsophia.preview.microsoft.com](https://projectsophia.preview.microsoft.com).
-2. From the Home screen, select **New workspace**.
-3. Enter your question in the text box and then select **Generate**.
+1. From the Home screen, select **New workspace**.
+1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
+1. Enter your question in the text box and then select **Generate**.
 
 You'll get more AI-powered information about your question including an overview and suggested next steps.
 
@@ -36,9 +39,11 @@ You can upload a data file and ask questions about the data. The [supported file
 
 1. Use one of the following methods to ask questions about your data:
    - On the Home screen, select **go** on the **Onboarding** tile > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
-   - On the Home screen, select **New workspace** > **Upload or connect to data** > **Upload a file**.
-2. Select the file name and then select **Open**.
-3. Select **Generate** or enter your question in the text box and then select **Generate**.
+   - On the Home screen, select **New workspace** > **Add data** > **Upload files**
+
+1. Select the file name and then select **Open**.
+1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
+1. Select **Generate** or enter your question in the text box and then select **Generate**.
 
 Your data is analyzed to create a customized template that provides valuable insights, charts, and actionable steps.
 
