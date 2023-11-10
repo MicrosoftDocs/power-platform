@@ -21,7 +21,7 @@ contributors:
 
 When you can ask Project "Sophia" a question or upload data and ask questions about the data, it generates a AI-powered blueprint. 
 
-It can also be beneficial to select **Domains** when you use Project “Sophia”. Choosing a domain provides a better understanding of the context of your question. For instance, in the context of sales and marketing, the terms "hunters" and "farmers" hold distinct meanings that might not be apparent without that context. Similarly, there are commons acronyms that can mean something different based on context.
+It's also beneficial to select **Domains** when you use Project “Sophia.” Choosing a domain provides a better understanding of the context of your question. For instance, in the context of sales and marketing, the terms "hunters" and "farmers" hold distinct meanings that might not be apparent without that context. Similarly, there are commons acronyms that can mean something different based on context.
 
 Follow these steps to ask a question:
 
@@ -35,7 +35,7 @@ You'll get an AI-powered blueprint in response to your question including an ove
 
 ## Ask questions about your data
 
-You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. In future releases, you will also be able to simply **connect to data** instead of uploading.
+You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. In future releases, you will be able to **connect to data** instead of uploading data.
 
 1. Use one of the following methods to ask questions about your data:
    - On the Home screen, select **go** on the **Onboarding** tile > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia."
