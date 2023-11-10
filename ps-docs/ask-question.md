@@ -62,6 +62,8 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following li
   - The file must contain selectable text. You can test this by trying to highlight text within the PDF. If you can’t select or highlight the text, then it won’t be processed.
   - Use original digital documents or PDF that are converted directly from word processors or other digital sources. A scanned PDF won’t work.
 -	Encrypted or password-protected files aren’t supported.
+- If a PDF contains tables make sure the borders are clearly outlined. Avoid using any contrasting colors to differentiate between rows and columns.
+
 
 ### Work with content
 

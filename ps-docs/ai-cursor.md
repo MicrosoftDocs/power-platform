@@ -26,6 +26,11 @@ When content is generated, follow these steps to use the AI cursor:
 1. Select the AI cursor or use the keyboard shortcut **Alt + C**.
 2. Select an area or block of content to ask a question about and enter your question.
 3. Press **Enter**. Or, select **Generate** > **Generate as new blueprint** or **Generate in place of existing block** to regenerate content in the selected block.
+
+
+> [!TIP]
+>- You can upload additional data to an existing workspace at any time using the AI cursor.
+>- If you experience unexpected results, you ask Project "Sophia" to adjust the results. For example, update an existing block to use another chart type, group by something else, or explain what an acronym means in your source data to help get better results.  
    
    > [!div class="mx-imgBorder"]
    > ![Use the AI cursor.](media/ai-cursor.png)

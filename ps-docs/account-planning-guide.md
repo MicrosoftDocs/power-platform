@@ -21,6 +21,9 @@ contributors:
 
 Use the account planning guide in Project "Sophia" to help you execute your sales plans and meet your revenue goals.
 
+> [!NOTE]
+> Data strengths indicator is a useful tool for gaining insight into data and improving outcomes. Its purpose is to assist users who are unsure where to begin by providing guidance on which data to use for optimal results. The data indicator shouldn't be viewed as the sole source of data or the only data that should be provided.
+
 1. Go to [https://projectsophia.preview.microsoft.com]( https://projectsophia.preview.microsoft.com).
 1. From the **Home** screen, select **Guides** > **Account planning**.
 1. From the top right, select **Domains** to optimize responses your specific area of interest.
