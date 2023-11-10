@@ -1,6 +1,6 @@
 ---
 title: "Add feedback for every response"
-description: "Guidance on Adaptive Card in Power Virtual Agents."
+description: "Guidance on how to collect user feedback with an Adaptive Card in Power Virtual Agents."
 author: nesrivastavaMS
 ms.date: 10/18/2023
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.author: nesrivastava
 ms.reviewer: iawilt
 ---
 
-# Add feedback for every response 
+# Add feedback for every response
 
 As a bot owner, obtaining feedback from users is a vital step in improving the effectiveness and reliability of your conversational agent. You gain valuable insights into how well your bot is performing, identify areas for enhancement, and ultimately deliver a more satisfying user experience.
 
@@ -17,21 +17,21 @@ In this article, you learn how to use Adaptive Cards to collect user feedback af
 
 The final output of this tutorial shows a message after the bot's response that says "Generated answer, please rate it."
 
-![FinalOutput](./media/AdaptiveCard/FinalOutput.png)
+![The location of the bot response prompt in the chat window.](./media/AdaptiveCard/FinalOutput.png)
 
 ## Add a generative answer node
 
 1. Open the authoring canvas for your topic and select the plus icon to open the new node menu.
 
-2. Under **Advanced**, select **Generative answers**.
+1. Under **Advanced**, select **Generative answers**.
 
-3. A new node called **Create generative answers** is added to your topic, and the Properties pane is automatically opened.
+1. A new node called **Create generative answers** is added to your topic, and the Properties pane is automatically opened.
 
-4. Under **Data Source** > **Public website** add any public website, like https://learn.microsoft.com/
+1. Under **Data Source** > **Public website** add any public website, like `https://learn.microsoft.com/`.
 
-5. Under **Advanced** create a [Variable](https://learn.microsoft.com/power-virtual-agents/authoring-variables), store the generative answers generated in response to user queries and give this variable a meaningful name, such as "VarStoreAnswer."
+1. Under **Advanced** create a [Variable](../authoring-variables), store the generative answers generated in response to user queries and give this variable a meaningful name, such as "VarStoreAnswer."
 
-6. Uncheck the **Send a message** box.
+1. Uncheck the **Send a message** box.
 
  ![GA Node](./media/AdaptiveCard/GANode.png)
 
@@ -41,7 +41,7 @@ The final output of this tutorial shows a message after the bot's response that 
 
    ![Adaptive Card](./media/AdaptiveCard/AdaptiveCardpng.png)
 
-2. Paste the following JSON to the **Adaptive Edit** Formula.
+1. Paste the following JSON to the **Adaptive Edit** Formula.
 
     ``` json
     {
@@ -118,13 +118,13 @@ The final output of this tutorial shows a message after the bot's response that 
     }
     ```
 
-3. At the end of the response, you can give an option to the user to rate every response.
+1. At the end of the response, you can give an option to the user to rate every response.
 
-   ![FinalOutput](./media/AdaptiveCard/FinalOutput.png)
+   ![Screenshot that shows a bot prompt, asking the user to rate the bot response.](./media/AdaptiveCard/FinalOutput.png)
 
    To capture the thumbs up and down, trigger the specific topic to get more feedback. Based on up or down selections, the topic catches phrases.
 
-   ![topic](./media/AdaptiveCard/topic.png)
+   ![Screenshot of a thumbs down customer selection with a bot response asking the customer why the response wasn't useful.](./media/AdaptiveCard/topic.png)
 
    Here's the YAML file to redirect to this topic to capture those responses.
 

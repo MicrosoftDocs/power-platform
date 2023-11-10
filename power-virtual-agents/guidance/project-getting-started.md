@@ -25,7 +25,7 @@ Here's an example of the goals a customer defines at project inception.
 
     1. The bot can answer your target use cases, using a script of test phrases.
 
-2. **Business goals after you go live**
+1. **Business goals after you go live**
 
     1. *Resolved* session percentage: the project team aims to increase this number over time. This figure is often referred to as the *deflection* amount.
 
@@ -37,7 +37,7 @@ Here's an example of the goals a customer defines at project inception.
 
     1. Monthly Active Users (MAU).
 
-3. **Establish Chatbot governance and management model**
+1. **Establish Chatbot governance and management model**
 
     1. The Application Lifecycle process and automation setup.
 
@@ -52,15 +52,15 @@ Creating inspiring use cases is a key part of beginning your bot building journe
 The program includes:
 
 1. Interested employees participate in a [Power Virtual Agents in a Day](https://learn.microsoft.com/training/paths/power-virtual-agents-workshop/) training where they learn the fundamentals of conversational bot building.
-2. Once attendees have experience building bots, split the training group into small teams of two to three people.
-3. Allow teams to identify moments in the use case they could solve using a chatbot.
-4. Each team should establish milestones over a four-week period that includes activities for each team member. This practice is similar to a project plan.
-5. After two weeks, each team of the training group presents their chatbot, demonstrates their progress, and identifies any challenges or gaps.
-6. After four weeks, each team of the training group reveals their final product to the rest of the group and leaders from the respective business areas.
-7. When possible, provide some level of reward to the participants of this initiative. Incentives can vary from recognition to monetary rewards.
-8. Include a *path to production* period to ensure all chatbots are finalized into production.
-9. Share success with the rest of the organization. Inspire others to do more.
-10. Rinse and repeat. You now have a program you can run on a regular cycle to promote chatbot development within your organization.
+1. Once attendees have experience building bots, split the training group into small teams of two to three people.
+1. Allow teams to identify moments in the use case they could solve using a chatbot.
+1. Each team should establish milestones over a four-week period that includes activities for each team member. This practice is similar to a project plan.
+1. After two weeks, each team of the training group presents their chatbot, demonstrates their progress, and identifies any challenges or gaps.
+1. After four weeks, each team of the training group reveals their final product to the rest of the group and leaders from the respective business areas.
+1. When possible, provide some level of reward to the participants of this initiative. Incentives can vary from recognition to monetary rewards.
+1. Include a *path to production* period to ensure all chatbots are finalized into production.
+1. Share success with the rest of the organization. Inspire others to do more.
+1. Rinse and repeat. You now have a program you can run on a regular cycle to promote chatbot development within your organization.
 
 > [!TIP]
 >
@@ -85,11 +85,11 @@ Here are three ways that customers can get Power Virtual Agents licenses.
 
     1. Dataverse capacity: 10 GB DB, 10 GB File, 2 GB Log.
 
-2. **Add-on license** Billed monthly, capacity pooled at Tenant.
+1. **Add-on license** Billed monthly, capacity pooled at Tenant.
 
     1000 sessions with no limits on channel.
 
-3. **User license** Grants permission to author bots.
+1. **User license** Grants permission to author bots.
 
     1. Currently available for no cost, but should be purchased in the same transaction as the Tenant license.
 

@@ -1,6 +1,6 @@
 ---
 title: "Display Data from Arrays in Adaptive Cards"
-description: "Guidance on Adaptive Card in Power Virtual Agents."
+description: "Guidance on displaying arrays in Adaptive Card in Power Virtual Agents."
 author: nesrivastavaMS
 ms.date: 10/18/2023
 ms.topic: conceptual
@@ -11,8 +11,7 @@ ms.reviewer: iawilt
 
 # Display data from arrays in Adaptive Cards
 
-Adaptive Cards are a versatile tool that can be used to create interactive and engaging conversations in Power Virtual Agents.
-In this document, you learn how to display array items in Adaptive Cards in Power Virtual Agents. We use a hard-coded example for simplicity, but in a real-life scenario, you would likely get the data from a more dynamic source like a SharePoint list etc. by using Power Automate.
+Adaptive Cards are a versatile tool that can be used to create interactive and engaging conversations in Power Virtual Agents. In this document, you learn how to display array items in Adaptive Cards in Power Virtual Agents. We use a hard-coded example for simplicity, but in a real-life scenario, you would likely get the data from a more dynamic source like a SharePoint list etc. by using Power Automate.
 
 Let’s say that you have a list of tasks in an array, and you want to show the list of tasks in the bot.
 
@@ -120,7 +119,7 @@ Let’s say that you have a list of tasks in an array, and you want to show the 
 
     1. To display array items in an Adaptive Card, use the **Container** element with the items property.
 
-       The items property accepts an array of elements as its value. Each element in the array is displayed in the Adaptive Card, using the ['ForAll'](https://learn.microsoft.com/power-platform/power-fx/reference/function-forall) function. Reference the "Topic.TaskTable.employeeTasks" array, as it allows access to each of its properties.
+       The items property accepts an array of elements as its value. Each element in the array is displayed in the Adaptive Card, using the ['ForAll'](/power-platform/power-fx/reference/function-forall) function. Reference the "Topic.TaskTable.employeeTasks" array, as it allows access to each of its properties.
 
     Paste the YAML code in the code editor view. You can access this option at the top right corner of a new topic.
 
