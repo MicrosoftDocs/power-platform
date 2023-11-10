@@ -17,9 +17,9 @@ ms.collection: virtual-agent
 
 A **plugin** is a reusable piece of code that can perform a specific task or provide specific functionality for a copilot. For example, a plugin can help a copilot answer a natural language query, execute a workflow, connect to an external system, or provide topic-specific guidance. A **copilot** is a conversational or UX-based assistant that helps users accomplish their tasks and goals in a specific domain or application.
 
-A plugin, in this context, is created in the plugin authoring experience in the Microsoft Copilot Studio. This feature allows users to create and edit plugins using a graphical user interface and publish them to Biz Apps Registry.
+A plugin, in this context, is created in the plugin authoring experience in the Microsoft Copilot Studio. This feature allows users to create and edit plugins using a graphical user interface and publish them to the plugins registry.
 
-The main goal of the Pl registry is to enable users to create a plugin once and use it in multiple copilots by providing storage and management for metadata and execution information of plugins. This way, users can leverage the power and flexibility of plugins to enhance the capabilities and functionality of copilots without writing code for each copilot separately. The various copilots interact with the Biz Apps Registry to discover plugins and execution information that are available for a user. This capability enables AI plugins to be created once and reused many times.
+The main goal of the Pl registry is to enable users to create a plugin once and use it in multiple copilots by providing storage and management for metadata and execution information of plugins. This way, users can leverage the power and flexibility of plugins to enhance the capabilities and functionality of copilots without writing code for each copilot separately. The various copilots interact with the plugins registry to discover plugins and execution information that are available for a user. This capability enables AI plugins to be created once and reused many times.
 
 # A plugin is born
 
@@ -45,7 +45,7 @@ The plugin registry stores and manages the plugin metadata and execution informa
 
 ## Copilot samples
 
-This is a sample set of the various copilots that integrate with the Biz Apps registry to consume plugins. These include Microsoft copilots for Dynamics 365 apps, Microsoft copilots for Teams, and custom copilots authored using Microsoft Copilot Studio. The list is expected to grow in the future as more first-party and third-party copilots are developed.
+This is a sample set of the various copilots that integrate with the plugins registry to consume plugins. These include Microsoft copilots for Dynamics 365 apps, Microsoft copilots for Teams, and custom copilots authored using Microsoft Copilot Studio. The list is expected to grow in the future as more first-party and third-party copilots are developed.
 
 # A plugin in Microsoft Copilot 
 
@@ -53,7 +53,7 @@ This is a sample set of the various copilots that integrate with the Biz Apps re
 
 ## Admin Layer
 
-The administration layer is where administrators can use the Microsoft Admin Center to choose the integrated apps available for their tenant and allow, deploy or block them for specific or all users. An integrated app can be comprised of multiple plugins. The apps available from Microsoft Copilot Studio-created plugins are retrieved from the Biz Apps plugin registry and include:
+The administration layer is where administrators can use the Microsoft Admin Center to choose the integrated apps available for their tenant and allow, deploy or block them for specific or all users. An integrated app can be comprised of multiple plugins. The apps available from Microsoft Copilot Studio-created plugins are retrieved from the plugins registry and include:
 
 - **Dynamics 365 and Microsoft Copilot Studio**: Includes Dynamics 365 plugins from various dynamics teams including Microsoft Dynamics 365 Sales, Microsoft Dynamics 365 Field Services as well as custom created prompt and topic plugins.
 
@@ -65,7 +65,7 @@ The administration layer is where administrators can use the Microsoft Admin Cen
 
 ## Plugin Discovery and Execution
 
-The Biz Apps plugin available to a user is a net of the plugins assigned to the user via deployed integrated apps and the ones the user has access to. The plugins available to a user are discovered using the Biz Apps plugin registry for each user. Users are free to further customize the plugins based on how they want to use the plugin flyout experience. The plugin execution information is also retrieved from the Biz Apps registry and carries with it the details on the runtime path to execute a plugin.
+The plugins available to a user includes he plugins assigned to the user via deployed integrated apps and the ones the user has access to. The plugins available to a user are discovered using the plugins registry for each user. Users are free to further customize the plugins based on how they want to use the plugin flyout experience. The plugin execution information is also retrieved from the plugins registry and carries with it the details on the runtime path to execute a plugin.
 
 There are two runtime execution paths supported today:
 
