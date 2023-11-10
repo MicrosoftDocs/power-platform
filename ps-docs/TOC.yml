@@ -1,22 +1,14 @@
 - name: Project "Sophia" (preview)
   items:
-  - name: Project "Sophia" (preview) 
-    href: overview.md
-  - name: Explore a topic
-    href: ask-question.md
-  - name: Use the account planning guide
-    href: account-planning-guide.md
-  - name: What is a workspace?
-    href: workspace.md
-  - name: Ask questions using the AI cursor
-    href: ai-cursor.md
-  - name: Wating room
-    href: waiting-room.md
-  - name: Auth vs un-auth
-    href: auth-unauth.md
-  - name: Domains
-    href: domains.md
-  - name: Journey
-    href: journey.md
-  - name: How to update a chart
-    href: single-chart.md
+      - name: Project "Sophia" (preview)
+        items:
+        - name: Project "Sophia" (preview) 
+          href: overview.md
+        - name: Explore a topic
+          href: ask-question.md
+        - name: Use the account planning guide
+          href: account-planning-guide.md
+        - name: What is a workspace?
+          href: workspace.md
+        - name: Ask questions using the AI cursor
+          href: ai-cursor.md
