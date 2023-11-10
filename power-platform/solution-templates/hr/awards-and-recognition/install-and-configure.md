@@ -50,12 +50,12 @@ It's important to have a cohesive environment and data policy strategy and setup
   
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
-- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in setting up and managing environments. Also consider:
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
-  - A Power Platform Environment with a Dataverse database installed is set up
-  - Environment Maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
+  - A Power Platform environment with a Dataverse database installed is set up
+  - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
-  More information: [Environment overview](/power-platform/admin/environments-overview)
+  More information: [Environments overview](/power-platform/admin/environments-overview)
 
 - **Data loss prevention policies** - Ensure the environment has access to the Dataverse connector used by the template.
 
@@ -88,6 +88,8 @@ There are two solution installation options available for you to consider:
 > Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Awards and Recognition template.
 
 ### Install from AppSource
+
+You can easily access and install the Awards and Recognition template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
 1. Go to the [Awards and Recognition solution template on AppSource](https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa_awardsandrecognition?tab=Overview) and select **Get it now**. This takes you to the *Install Awards and Recognition Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 :::image type="content" source="media/install/ar-install-env.png" alt-text="AScreenshot of the modal dialog window where you select the environment you set up for the template.":::

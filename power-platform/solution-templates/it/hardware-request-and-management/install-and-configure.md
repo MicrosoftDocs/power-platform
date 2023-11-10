@@ -56,12 +56,12 @@ It's important to have a cohesive environment and data policy strategy and setup
 
     More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
-- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in setting up and managing environments. Also consider:
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
   - A Power Platform Environment with a Dataverse database installed is set up
   - Environment Maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
-    More information: [Environment overview](/power-platform/admin/environments-overview)
+    More information: [Environments overview](/power-platform/admin/environments-overview)
 
 - **Data loss prevention policies** - Ensure the environment has access to connectors used by the template:
 

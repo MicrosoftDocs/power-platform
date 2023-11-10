@@ -36,6 +36,8 @@ Download **either** the *managed* or *unmanaged* SAP Base and SAP Procurement so
   - [mpa_SAPBase_unmanaged.zip](https://aka.ms/SAPBaseUnmanagedSolution)
   - [mpa_SAPProcurement_unmanaged.zip](https://aka.ms/SAPProcurementUnmanagedSolution)
 
+More information: [Managed and unmanaged solutions](power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
+
 > [!TIP]
 >
 > Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the SAP Procurement template.
