@@ -19,9 +19,9 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
-Project “Sophia” is a new generation of AI-first business app that helps users with complex, cross functional tasks and offers a new way to discover, visualize, and interact with business data. 
+Project “Sophia” is a new generation of AI-first business app that helps users with complex, cross functional tasks, and offers a new way to discover, visualize, and interact with business data. 
 
-Project “Sophia” offers has an AI- powered, user-friendly research canvas and large language model powered blueprints. The research canvas helps you create exploratory journeys and understand business data with AI-generated charts and insights without the need for data mining and creating visuals. The app provides quick insights and recommends the next steps. You can start with a question and explore different options. Or you can continue iterating until you get the best possible outcome. 
+Project “Sophia” offers has an AI- powered, user-friendly research canvas and large language model powered blueprints. The research canvas helps you create exploratory journeys and understand business data with AI-generated charts and insights without the need to mine data and create visuals. The app provides quick insights and recommends the next steps. You can start with a question and explore different options. Or you can continue iterating until you get the best possible outcome. 
 
 > [!IMPORTANT]
 > - Project “Sophia” is only available in the US region.
@@ -32,7 +32,7 @@ Project “Sophia” offers has an AI- powered, user-friendly research canvas an
 
 ## Onboarding screen
 
-The first time you sign in, you'll see the **Onboarding** screen where you can interact with Project "Sophia" using the **Exploratory** and **Guides** options. The following screenshot provides more details about the interaction: 
+The first time you sign in, you see the **Onboarding** screen where you can interact with Project "Sophia" using the **Exploratory** and **Guides** options. The following screenshot provides more details about the interaction: 
 
 > [!div class="mx-imgBorder"]
 > ![Project "Sophia" main screen.](media/ps-main-screen.png)
@@ -49,7 +49,7 @@ Legend
 
 ## Home screen
 
-The next time you sign in to Project "Sophia", you'll see the Home screen. The following screenshot shows how to navigate it:
+The next time you sign in to Project "Sophia," you'll see the Home screen. The following screenshot shows how to navigate it:
 
 
 > [!div class="mx-imgBorder"]
@@ -67,12 +67,12 @@ Legend
 
 ## Waiting room
 
-If Project "Sophia" reaches its full capacity during the preview period, you'll be placed in a waiting room queue until there's more capacity. You have the option to remain in the waiting room or sign up to be notified when Project "Sophia" is available. When the product is released to the public, there won't no waiting room.
+If Project "Sophia" reaches its full capacity during the preview period, you're placed in a waiting room queue until there's more capacity. You can remain in the waiting room or sign up to be notified when Project "Sophia" is available. When the product is released to the public, there will be no waiting room.
 
 
 > [!Note]
 > If you chose to stay in the waiting room, don't refresh your browser as this will put you at the back of the queue.
 
-## Authenticated and un-authenticated experience
+## Authenticated and unauthenticated experience
 
-If you haven't signed in to Project "Sophia", you won't be able to ask questions or upload any data. However, you can still access a limited unauthenticated experience that lets you to use sample data and get a feel for the look and layout of Project "Sophia", and view suggested next steps.
+If you don't sign in to Project "Sophia," you can't ask questions or upload any data. However, you can still access a limited unauthenticated experience where you can use sample data and get a feel for of Project "Sophia," and view suggested next steps.

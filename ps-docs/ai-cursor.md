@@ -1,6 +1,6 @@
 ---
 title: Use the AI cursor in Project “Sophia” 
-description: Use the AI Cursor to interact with generated content in Project “Sophia”.
+description: Use the AI Cursor to interact with generated content in Project “Sophia.”
 author: mikkelsen2000
 ms.topic: Overview
 ms.custom: 
@@ -37,8 +37,8 @@ When content is generated, follow these steps to use the AI cursor:
 
 ## Journey lines
 
-As you explore a subject in depth, it can be beneficial to review the questions you asked along the way during your research journey. This can provide you with a clearer comprehension of what led you to the conclusion of your research journey.
+As you explore a subject in depth, it can be beneficial to review the questions you asked along the way during your research journey. It can provide you with a clearer comprehension of what led you to the conclusion of your research journey.
 
-As you ask questions, journey lines display the questions you asked. By zooming out to view an overview of all your blueprints, you can use the journey lines to see the path that led to your conclusion.
+As you ask questions, journey lines display the questions that you asked. By zooming out to view an overview of all your blueprints, you can use the journey lines to see the path that led to your conclusion.
 
 :::image type="content" source="media/journey.png" alt-text="Journey lines":::

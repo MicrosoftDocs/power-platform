@@ -1,6 +1,6 @@
 ---
 title: Overview of an account planning guide
-description: Learn how to generate a account planning guide in Project “Sophia”.
+description: Learn how to generate an account planning guide in Project “Sophia.”
 author: mikkelsen2000
 ms.topic: Overview
 ms.custom: 
@@ -31,7 +31,7 @@ Use the account planning guide in Project "Sophia" to help you execute your sale
 1. Select the file name and then select **Open**.
 1. Select **Generate**.
 
-Project "Sophia" will generate a tailored account plan based on your data. You can upload more data and refine your account plann or continue exploring your data.
+Project "Sophia" is going to generate a tailored account plan based on your data. You can upload more data and refine your account plan or continue exploring your data.
 
 > [!div class="mx-imgBorder"]
 > ![Accounting planning guide.](media/account-plan.png)
