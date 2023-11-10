@@ -77,7 +77,7 @@ More copilots and generative AI features will be available in the future.
 ## Region and language support
 Copilot and generative AI features of Power Platform and Dynamics 365 are supported differently in different regions.
 
-For information about regions where Dynamics 365 copilots and generative AI features are available, see the following documentation:
+For information about regions supported by Dynamics 365 copilots and generative AI features, see the following documentation:
 
 - For Dynamics 36 Customer Insights - Data, see [Give consent to use Copilot in Customer Insights – Data](/dynamics365/customer-insights/data/copilot-global-consent).
 - For Dynamics 365 Customer Service, see [Copilot data movement across geographies (preview)](/dynamics365/customer-service/copilot-data-movement).
