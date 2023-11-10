@@ -89,8 +89,6 @@
           items:
             - name: What is Power Platform CLI
               href: cli\introduction.md
-            - name: Use Power Fx with Power Platform CLI
-              href: cli\use-pac-power-fx.md
             - name: Create and register a plug-in package
               href: howto\cli-create-package.md
             - name: Power Platform CLI reference

@@ -58,7 +58,7 @@ The following examples show the use of the `pac power-fx run` command.
    Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
    ```
 
-   This example shows how to use [Mid](../../../../power-fx/reference/function-left-mid-right.md), [If](../../../../power-fx/reference/function-if.md), and [Set](../../../../power-fx/reference/function-set.md) Power Fx functions.
+   This example uses the [Mid](../../../../power-fx/reference/function-left-mid-right.md), [If](../../../../power-fx/reference/function-if.md), and [Set](../../../../power-fx/reference/function-set.md) Power Fx functions.
 
 1. Run the following command:
 
