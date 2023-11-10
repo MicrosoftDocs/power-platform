@@ -9,144 +9,121 @@ ms.author: nesrivastava
 ms.reviewer: iawilt
 ---
 
-# Getting Started/Ideation
+# Getting started
 
-## Setting Goals 
-We normally recommend customers separate the project goals around 3 distinct areas – core delivery, business 
-metrics, and governance. If chatbots are brand-new to your organization, then the examples in this article are a good starting 
-point. One clear trend we see with goals – once you go live you'll learn quickly what is important, how your 
-customers behave, and where you would like to improve.
+## Setting goals
 
-### Project goals 
-The following is an example of the goals a customer may define at project inception
+We recommend customers separate the project goals into three distinct areas: core delivery, business metrics, and governance. If chatbots are brand-new to your organization, then the examples in this article are a good starting point. Once you go live, you learn quickly what is important, how your customers behave, and where you would like to improve.
 
-1. **Delivery goals (Minimum Viable Project (MVP))**
+### Project goals
 
-    a. Go-live with chatbot on target date - target less than 3 months
-    
-    b. Bot can answer top target use cases - using a script of test phrases
-    
-    c. Target complex use cases with back-end integration - doing so helps with deflection
+Here's an example of the goals a customer defines at project inception.
 
-2. **Business goals (driven toward once live)**
-    
-    a. Resolved session % - normally the project team aims to increase this number
-       over time. This figure is often referred to as the ‘Deflection’ amount.
-    
-    b. Escalated session % - normally the project team aims to reduce this number over time.
-    
-    c. Abandoned session %
-    
-    d. Deflection/resolution – value (based on business value per session calculation)
-    
-    e. Monthly Active Users (often referred to as MAU)
+1. **Delivery goals - Minimum Viable Project (MVP)**
 
-3. **Establish Chatbot governance and management model.**
-    
-    a. Application Lifecycle process & automation setup
-    
-    b. Chatbot author onboarding process in place
-    
-    c. Reporting & review cadence arranged
+    1. Go-live with a chatbot on a target date fewer than three months.
 
-## Usecase building
-Inspiring usecases is a key part to beginning your bot building journey. 
-The program includes the following:
+    1. The bot can answer your target use cases, using a script of test phrases.
 
-1. Interested employees participate in a
-[Power Virtual Agents in a Day](https://learn.microsoft.com/training/paths/power-virtual-agents-workshop/) training where they learn the fundamentals of conversational bot building.
+2. **Business goals after you go live**
 
-2. Once attendees have experience building bots,
-   split the training group into small teams of 2-3 people.
-3. Allow teams to identify opportunities that they feel they could
-solve using a chatbot.
-4. Each team should then establish milestones over a 4-week
-period that includes activities for each team member. This practice is similar to a project plan.
-5. After 2 weeks, bring the entire training group together
-and have each team present their chatbot. This group meeting provides an
-opportunity for each team to demonstrate their progress and
-identify any challenges/gaps.
-6. After 4 weeks, bring the entire training group back together
-to show off their final product to the rest of the group and
-leaders from the respective business areas.
-7. When possible, provide some level of rewards to the
-participants of this initiative. Incentives can vary from
-recognition, all the way to monetary rewards.
-8. Include a “path to production” period to ensure all chatbots
-make it into production.
-9. Share success with the rest of the organization.
-Inspire others to do more.
-10. Rinse and repeat. You have now acquired a program that
-you can run on a regular cycle to further promote chatbot
-development within your organization.
+    1. *Resolved* session percentage: the project team aims to increase this number over time. This figure is often referred to as the *deflection* amount.
+
+    1. *Escalated* session percentage: the project team aims to reduce this number over time.
+
+    1. *Abandoned* session percentage.
+
+    1. *Deflection* or *Resolution*: the business value per session.
+
+    1. Monthly Active Users (MAU).
+
+3. **Establish Chatbot governance and management model**
+
+    1. The Application Lifecycle process and automation setup.
+
+    1. The chatbot author onboarding process.
+
+    1. The reporting and review cadence.
+
+## Use case building
+
+Creating inspiring use cases is a key part of beginning your bot building journey.
+
+The program includes:
+
+1. Interested employees participate in a [Power Virtual Agents in a Day](https://learn.microsoft.com/training/paths/power-virtual-agents-workshop/) training where they learn the fundamentals of conversational bot building.
+2. Once attendees have experience building bots, split the training group into small teams of two to three people.
+3. Allow teams to identify moments in the use case they could solve using a chatbot.
+4. Each team should establish milestones over a four-week period that includes activities for each team member. This practice is similar to a project plan.
+5. After two weeks, each team of the training group presents their chatbot, demonstrates their progress, and identifies any challenges or gaps.
+6. After four weeks, each team of the training group reveals their final product to the rest of the group and leaders from the respective business areas.
+7. When possible, provide some level of reward to the participants of this initiative. Incentives can vary from recognition to monetary rewards.
+8. Include a *path to production* period to ensure all chatbots are finalized into production.
+9. Share success with the rest of the organization. Inspire others to do more.
+10. Rinse and repeat. You now have a program you can run on a regular cycle to promote chatbot development within your organization.
 
 > [!TIP]
 >
-> Hackathons encourage organizations to learn and apply what they’ve learnt in real-world use cases to develop bots
+> Hackathons encourage organizations to learn and apply what they’ve learnt in real-world use cases to develop bots.
 
+## Licensing
 
-## Licensing 
-Make sure you scope out how much you expect your project to cost. Speak to your Microsoft account team to confirm 
-you’re using accurate pricing for your organization. The licensing of Power Virtual Agents is relatively simple with a few 
-key components. Most important to understand is that the license is based on chatbot sessions. A session is defined as:
+Scope out how much you expect your project to cost. Speak to your Microsoft account team to confirm you’re using accurate pricing for your organization. The licensing of Power Virtual Agents is relatively simple with a few key components. Most importantly, understand that the license is based on chatbot sessions.
 
-“The session begins when a user topic is triggered and ends when one of these conditions is met—either the user’s questions are answered, or the conversation exceeds 60 minutes or 100 turns.”
+A session is defined as:
+>The time between when a user topic is triggered and ends. The end is when either the user's questions have been answered or the conversation exceeds 60 minutes or 100 turns.
 
+Here are three ways that customers can get Power Virtual Agents licenses.
 
-There are 3 main ways in which customers acquire Power Virtual Agents licenses: 
+### Power Virtual Agents licensing
 
-**Power Virtual Agents**
+1. **Tenant license** Billed monthly, capacity pooled at Tenant.
 
-1. **Tenant license (billed monthly, capacity pooled at Tenant)**
+    1. 2000 sessions with no limits on channel.
 
-    a. 2000 sessions (no limits on channel)
-    
-    b. Power Automate rights included (with higher throttling limits), including Premium connectors (All flows must start and end with Power Virtual Agents connectors)
-    
-    c. Dataverse capacity (10GB DB, 10GB File, 2GB Log)
+    1. Power Automate rights included with higher throttling limits, including Premium connectors. All flows must start and end with Power Virtual Agents connectors.
 
-2. **Add-on license (billed monthly, capacity pooled at Tenant)**
-    
-    a. 1000 sessions (no limits on channel)
- 
-3. **User license (Grants permission to author bots)**
-        
-    a. Currently available for no cost, but should be purchased in the same transaction as the Tenant license
+    1. Dataverse capacity: 10 GB DB, 10 GB File, 2 GB Log.
 
-    b. Assigned to users in the admin portal
+2. **Add-on license** Billed monthly, capacity pooled at Tenant.
 
-    c. One license required for each bot author
+    1000 sessions with no limits on channel.
+
+3. **User license** Grants permission to author bots.
+
+    1. Currently available for no cost, but should be purchased in the same transaction as the Tenant license.
+
+    1. Assigned to users in the admin portal.
+
+    1. One license required for each bot author.
 
 >[!TIP]
 >
->Customer who expects up to 10000 sessions a month for their bot, which will be managed by 10 users, would purchase 1x Tenant license, 9x Add-on license, and 10x User licenses.
+> A customer who needs up to 10,000 sessions per month for their bot (managed by 10 users) would purchase a 1x Tenant license, 9x Add-on license, and 10x User licenses.
 
-
-**Power Virtual Agents for Teams**
+### Power Virtual Agents for Teams licensing
 
 1. **Microsoft 365 license**
 
-    a. Unlimited sessions (Teams channel only)
+    1. Unlimited sessions. Teams channel only.
 
-    b. Power Automate rights (Standard connectors only)
+    1. Power Automate rights. Standard connectors only.
 
-    Generally, if a customer is interested in using Power Virtual Agents for Teams, no further licensing is required (as they need Microsoft 
-    365 to use Teams) unless they wish to deploy their bot to additional channels (they'll need the standard Power Virtual Agents licenses 
-    detailed earlier in this article).
+    If a customer wants to use Power Virtual Agents for Teams, no further licensing is required since they have Microsoft 365. To deploy their bot to more channels, they need the standard Power Virtual Agents licenses.
 
- 
-  **Chat for Dynamics 365 Customer Service (Omnichannel)**
-    Customers deploying Power Virtual Agents with Dynamics 365 for Customer Service now receive a version of the Power Virtual Agents tenant license with their Dynamics 365 purchase:
+  **Chat for Dynamics 365 Customer Service** Omnichannel.
 
-1. **Tenant license (billed monthly, capacity pooled at Tenant)**
-    
-    a. 1000 sessions per tenant
-    
-    b. Power Automate rights included (with higher throttling limits), including Premium
-       connectors (All flows must start and end with Power Virtual Agents connectors)
-    
-    c. Dataverse capacity (10GB DB, 10GB File, 2GB Log)
-       Add-on and User licenses are still required, as detailed earlier in this article. Latest information on [Power Virtual Agents licensing.](https://powervirtualagents.microsoft.com/en-us/pricing/)
+   Customers deploying Power Virtual Agents with Dynamics 365 for Customer Service receives a version of the Power Virtual Agents tenant license with their Dynamics 365 purchase.
+
+1. **Tenant license** Billed monthly, capacity pooled at Tenant.
+
+    1. 1000 sessions per tenant.
+
+    1. Power Automate rights included with higher throttling limits, including Premium connectors. All flows must start and end with Power Virtual Agents connectors.
+
+    1. Dataverse capacity: 10 GB DB, 10 GB File, 2 GB Log.
+
+       Add-on and User licenses are still required. Here's pricing information on [Power Virtual Agents licensing](https://powervirtualagents.microsoft.com/en-us/pricing/).
 
 > [!div class="nextstepaction"]
 > [Building a team](project-building-a-team.md)

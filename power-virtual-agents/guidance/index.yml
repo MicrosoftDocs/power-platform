@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Power Virtual Agents guidance documentation
-summary: Power Virtual Agents guidance documentation provides best practices, implementation, and architecture guidance information from the team that works with our enterprise customers.
+summary: Power Virtual Agents guidance documentation provides best practices, implementation, and architecture information from the team that works with our enterprise customers.
 
 metadata:
   title: Power Virtual Agents guidance documentation
@@ -27,7 +27,7 @@ landingContent:
             url: trigger-phrases-best-practices.md
           - text: Slot filling best practices
             url: slot-filling-best-practices.md
-          - text: Display Data from Arrays
+          - text: Display data from arrays
             url: Adaptive-Cards-Display-Data-from-Arrays.md
           - text: Add feedback for every response 
             url: Adaptive-Card-Add-feedback-for-every-response.md
@@ -58,7 +58,7 @@ landingContent:
             url: project-getting-started.md
           - text: Building a team
             url: project-building-a-team.md
-          - text: Project Planning
+          - text: Project planning
             url: project-planning.md
 
   # Card

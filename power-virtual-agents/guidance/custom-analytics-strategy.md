@@ -12,7 +12,6 @@ ms.collection: virtual-agent
 
 # Custom analytics strategy
 
-
 Power Virtual Agents provides comprehensive [out-of-the-box analytics](/power-virtual-agents/preview/analytics-overview) that allow customers to understand a bot's usage and key performance indicators.
 
 Customers can view reports related to:
@@ -29,7 +28,7 @@ However, there are often scenarios where you'll need to create or use custom ana
 - Report on conversation transcripts data for a period longer than the default last 30 days.
 - Design a report not covered by out-of-the-box analytics.
 
-There are a few ways you can take the analytics data recorded by Power Virtual Agents and use it in customized reports. 
+There are a few ways you can take the analytics data recorded by Power Virtual Agents and use it in customized reports.
 
 ## Power Virtual Agents analytics sample template report
 
@@ -37,7 +36,7 @@ To create custom analytics, our recommended approach is to start with the [Power
 The sample template report is a set of open-source assets, distributed through GitHub, greatly accelerating the time it takes to create a report that renders in Power BI.
 
 > [!WARNING]
-> The solution is not part of the core Power Virtual Agents offering and will require configuration. 
+> The solution is not part of the core Power Virtual Agents offering and will require configuration.
 >   
 > The sample report is not supported by Microsoft, but you can raise issues in the GitHub repository to get help from the community.
 
