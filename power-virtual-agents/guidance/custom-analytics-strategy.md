@@ -22,9 +22,11 @@ Customers can view reports related to:
 - Topic usage.
 - Billed sessions.
 
-However, there are often scenarios where you'll need to create or use custom analytics. For example, you may need to:
+However, there are often scenarios where you need to create or use custom analytics.
 
-- Share analytics with non-makers or users.
+For example, you might need to:
+
+- Share analytics with stakeholders or users.
 - Report on conversation transcripts data for a period longer than the default last 30 days.
 - Design a report not covered by out-of-the-box analytics.
 
@@ -37,7 +39,7 @@ The sample template report is a set of open-source assets, distributed through G
 
 > [!WARNING]
 > The solution is not part of the core Power Virtual Agents offering and will require configuration.
->   
+>
 > The sample report is not supported by Microsoft, but you can raise issues in the GitHub repository to get help from the community.
 
 ### Dataverse
@@ -54,8 +56,8 @@ By default, both sources have a data retention of 30 days, but customers can [ch
 
 Power Virtual Agents uses the following tables for custom analytics in Dataverse:
 
-- [**Chatbot**](/power-apps/developer/data-platform/reference/entities/bot) (`Bot`). This table includes details of each bot in an environment. Generally this is a small amount of data.
-- [**Chatbot Subcomponent**](/power-apps/developer/data-platform/reference/entities/botcomponent) (`BotComponent`). This table lists the topics, entities, and dialogs associated with the bot in your environment. Generally this is a small amount of data.
+- [**Chatbot**](/power-apps/developer/data-platform/reference/entities/bot) (`Bot`). This table includes details of each bot in an environment. The details are often a small amount of data.
+- [**Chatbot Subcomponent**](/power-apps/developer/data-platform/reference/entities/botcomponent) (`BotComponent`). This table lists the topics, entities, and dialogs associated with the bot in your environment. The details are often a small amount of data.
 - [**Conversation Transcripts**](/power-apps/developer/data-platform/reference/entities/conversationtranscript) (`ConversationTranscript`). This table contains detailed conversation data for all the chatbots in your environment. The size of the data in this table is related to the use of the bot and can be large.
 
 ### Azure Synapse Link for Dataverse (Azure Data Lake Storage Gen2)
@@ -64,7 +66,7 @@ When bots generate large volumes of conversation transcripts (roughly more than 
 
 The export creates an incremental sync of configured Dataverse tables in the Azure data lake, using the Common Data Model format.
 
-There are additional steps you'll need to take in addition to what is configured in the base template:
+There are more steps you need to take, including what is configured in the base template:
 
 - [Create an Azure Data Lake Storage Gen2 and connect it to Dataverse](/power-apps/maker/data-platform/azure-synapse-link-synapse).
 - During configuration, select the *ConversationTranscript* table (_Chatbot_ and _Chatbot Subcomponent_ don't support incremental sync).
@@ -75,7 +77,7 @@ There are additional steps you'll need to take in addition to what is configured
 
 ### Power BI
 
-The custom analytics solution template includes a Power BI report that processes the raw transcript data (using Power Query) into a report that matches the Power Virtual Agents default analytics.
+The template for the custom analytics solution includes a Power BI report. This report processes the raw transcript data, using Power Query, and matches the Power Virtual Agents default analytics.
 
 In addition, users of the report have access to:
 

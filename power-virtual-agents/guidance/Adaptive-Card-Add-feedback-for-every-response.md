@@ -29,7 +29,7 @@ The final output of this tutorial shows a message after the bot's response that 
 
 1. Under **Data Source** > **Public website** add any public website, like `https://learn.microsoft.com/`.
 
-1. Under **Advanced** create a [Variable](../authoring-variables), store the generative answers generated in response to user queries and give this variable a meaningful name, such as "VarStoreAnswer."
+1. Under **Advanced** create a [Variable](../authoring-variables.md), store the generative answers generated in response to user queries and give this variable a meaningful name, such as "VarStoreAnswer."
 
 1. Uncheck the **Send a message** box.
 
