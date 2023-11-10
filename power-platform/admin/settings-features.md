@@ -132,7 +132,7 @@ Choose which provider to enable outbound calls from within customer engagement a
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Block unmanaged customizations |  Prevents the creation of unmanaged customizations in Microsoft Dataverse production environments, which facilitates healthy application lifecycle management. More information:  | Off |
+| Block unmanaged customizations |  Prevents the creation of unmanaged customizations in Microsoft Dataverse production environments, which facilitates healthy application lifecycle management. More information: [Block unmanaged customizations (preview)](../alm/block-unmanaged-customizations.md) | Off |
 
 ## Finance and Operations in Dataverse
 
