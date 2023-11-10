@@ -13,6 +13,9 @@ ms.service: virtual-agent
 
 
 # Overview of Customer Copilot
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 A Customer Copilot is a copilot is a end-customer facing copilot. It will provide your customers with generative AI-based self-help, which can will be based on content based on your company website, uploaded files, or your knowledge base sources. When necessary, the customer can be escalated to an agent through hand off to customer engagement hubs that you already have setup.
 
 Leveraging your existing content from external and internal data sources, and your existing customer support agents without having to create new content base, your copilot can be live and integrated with your business quickly. 

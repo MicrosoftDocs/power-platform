@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Automatically start a chatbot conversation
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can configure your bot to start a conversation conversation with a user. You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas.md).
 
 > [!IMPORTANT]

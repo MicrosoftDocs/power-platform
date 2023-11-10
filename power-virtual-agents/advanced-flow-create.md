@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Create a flow
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Learn how to use a cloud flow in Microsoft Copilot Studio by giving a bot the ability to produce a weather forecast on request. In this first example, you'll create a flow that fetches a weather forecast. In the next example, you'll [call the flow as an action](advanced-use-flow.md) so the bot can respond with the forecast when a customer asks about the weather.
 
 You can create a flow for use with a bot or modify an existing flow. To be suitable for bots, a Power Automate flow requires a special **Microsoft Copilot Studio** flow trigger and response action.

@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Configure a skill for use in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio enables you to extend your bot using [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true). If you have already built and deployed bots in your organization (using Bot Framework SDK and pro-code tools) for specific scenarios, you can convert those bots into a skill and register that skill in a Microsoft Copilot Studio bot.
 
 >[!NOTE]

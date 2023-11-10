@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Configure and create multilingual chatbots (Preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Multilingual bots are chatbots that can communicate with customers in different languages while keeping all the content in a single bot. In many cases, they can automatically detect the desired language and respond in the same language, providing a more personalized and engaging experience for customers. 
 
 For the list of supported languages, see our [Supported Languages article](authoring-language-support.md).

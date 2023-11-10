@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Using the Fallback topic
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 The Fallback topic gets triggered when Microsoft Copilot Studio doesn't understand a user utterance and doesn’t have sufficient confidence to trigger any of the existing topics.
 
 There are multiple ways to use the Fallback topic.

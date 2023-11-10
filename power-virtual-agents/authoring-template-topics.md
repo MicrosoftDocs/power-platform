@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Use lesson topics in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio includes sample topics with every new bot to help you understand the capabilities of bot topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md), [variables](authoring-variables.md), and [custom entities](advanced-entities-slot-filling.md).
 
 The topics are functional, but they aren't designed for production use. They're examples to help you learn how to create content for your bots.

@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Topic enrichment analysis  
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 ## Analyzing the Fallback topic conversations
 
 Microsoft Copilot Studio has a built-in [Fallback](/power-virtual-agents/preview/authoring-system-topics#fallback) system topic that is set to trigger when the NLU model isn't able to find a matching topic for a given user query.

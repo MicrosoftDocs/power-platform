@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Community help and support for Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can get support for Microsoft Copilot Studio on the community forums. Features that have been released for general availability are eligible for support through Microsoft Support.
 
 ## Microsoft Copilot Studio community forums

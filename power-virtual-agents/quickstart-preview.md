@@ -14,6 +14,8 @@ ms.custom: bap-template
 
 # Quickstart
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This quickstart walks you through making a bot that uses new features and improvements introduced in the Microsoft Copilot Studio preview. You'll create a bot that helps users make a reservation at a fictional restaurant.
 
 ## Prerequisites

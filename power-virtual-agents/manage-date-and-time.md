@@ -16,6 +16,8 @@ ms.custom: ceX, advanced-authoring, bap-template
 
 # Accommodate time zones
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 The **Date and time** entity captures a date and time in Coordinated Universal Time (UTC). However, you may want to display the date and time based on the user's location instead.
 
 ## Prerequisites

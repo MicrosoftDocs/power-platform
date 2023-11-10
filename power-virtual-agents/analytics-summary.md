@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Analyze bot performance and usage in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 The **Summary** tab on the **Analytics** page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate.
 
 >

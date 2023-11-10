@@ -16,6 +16,8 @@ ms.custom: handoff, ceX
 
 # Configure hand-off to Dynamics 365 Customer Service
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 When your customers need to speak with a human agent, your bot can seamlessly hand off the conversation. With the omnichannel capabilities of the [Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), you can connect both voice (Classic only, coming soon for all other bots) and text (messaging) conversations.
 
 > [!NOTE]

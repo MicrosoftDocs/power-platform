@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Get access to Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This topic includes details about Microsoft Copilot Studio Licensing. You can also review the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) to learn more.
 
 If you already have licenses, see the [Assign licenses and manage access to Microsoft Copilot Studio](requirements-licensing.md) topic.

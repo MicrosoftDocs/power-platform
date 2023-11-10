@@ -16,6 +16,8 @@ ms.custom: bap-template
 
 # Limitations of the Microsoft Copilot Studio preview (preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 The Microsoft Copilot Studio preview doesn't yet support some of the features you're used to in Microsoft Copilot Studio. Available features have some limitations.

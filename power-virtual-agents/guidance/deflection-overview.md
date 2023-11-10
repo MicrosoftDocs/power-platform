@@ -10,6 +10,8 @@ ms.reviewer: iawilt
 ---
 # Deflection overview
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 Return on investment (ROI) and improved customer satisfaction (CSAT) are top priorities for the organizations that implement Microsoft Copilot Studio chatbots.
 
 Optimizing the bot deflection rate is one of the top focus areas for organizations to achieve their business goals around ROI and CSAT, and to improve the bot's overall performance. There are major indicators in Microsoft Copilot Studio that help improve bot performance, such as resolution rate, escalation rate, and CSAT.

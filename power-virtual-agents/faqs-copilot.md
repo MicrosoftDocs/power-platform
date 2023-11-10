@@ -11,6 +11,9 @@ ms.reviewer: iawilt
 ---
 
 # FAQ for Copilot
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 These frequently asked questions (FAQ) describe the AI impact of the Copilot feature in Microsoft Copilot Studio.
 
 ## What is Copilot?

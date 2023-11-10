@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Configure web and Direct Line channel security
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 When you create a Microsoft Copilot Studio bot, it is immediately available in the **Demo website** and **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed.
 
 For the Microsoft Teams app, you can configure advanced web channel security options.

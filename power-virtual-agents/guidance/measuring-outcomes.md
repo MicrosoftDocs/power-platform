@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Measuring chatbot outcomes
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 Tracking conversation engagement and outcomes is crucial to measure the chatbot performance metrics and spot areas for improvements in the analytics dashboard.
 
 > [!IMPORTANT]

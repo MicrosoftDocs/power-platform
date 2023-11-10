@@ -16,6 +16,8 @@ searchScope:
 
 # Create and delete Microsoft Copilot Studio bots
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 To help get you started and tailor the bot to your specific needs, Microsoft Copilot Studio lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
 
 ## Prerequisites

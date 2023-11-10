@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Add bot to Facebook
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can add your bot to Facebook Messenger to use the Facebook experience to engage with your end users.
 
 Facebook Messenger and related services are subject to Facebook's own terms and conditions. For support related to Facebook Messenger, contact Facebook directly.

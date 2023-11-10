@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Test your Microsoft Copilot Studio bot
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 As you design your bot in Microsoft Copilot Studio, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation.
 
 To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step, and go to the corresponding node in the authoring canvas.

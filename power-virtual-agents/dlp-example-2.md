@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Data loss prevention example 2 - Block HTTP requests from Microsoft Copilot Studio chatbots
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Bot makers in your organization can make HTTP requests with the [Send HTTP request node](authoring-http-node.md) or by [extending (classic) bots with Bot Framework Composer](advanced-bot-framework-composer.md). 
 
 You can use data loss prevention policies to prevent bot makers from configuring HTTP requests to help prevent data exfiltration.

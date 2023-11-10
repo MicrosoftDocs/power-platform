@@ -15,6 +15,8 @@ ms.custom: "certification, ceX"
 
 # Microsoft Copilot Studio compliance offerings
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio is a Core Online Service, as defined in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1#coreui-contentrichblock-4khwhqo), and is compliant with or covered by:
 
 - Health Insurance Portability and Accountability Act (HIPAA) coverage

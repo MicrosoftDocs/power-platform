@@ -17,6 +17,8 @@ searchScope:
 
 # Use prebuilt chatbot templates in Microsoft Teams
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 > [!NOTE]
 > This topic applies to chatbots created in the Microsoft Copilot Studio app in Microsoft Teams only. Templates are not currently supported for the Microsoft Copilot Studio web app.
 

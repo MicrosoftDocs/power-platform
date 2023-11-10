@@ -16,6 +16,9 @@ searchScope:
 ---
 
 # Integration of PVA with LivePerson
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Integrating LivePerson with PVA presents a compelling opportunity for businesses seeking to enhance their customer support and engagement capabilities. This integration harmoniously merges PVA's conversational AI prowess with LivePerson's messaging platform, equipping organizations to deliver highly personalized and streamlined customer interactions across various communication channels. In practice, this integration effectively addresses real-world business challenges, such as efficiently scaling customer support operations, reducing response times, and ultimately elevating overall customer satisfaction levels. To embark on this integration journey, it's crucial to understand prerequisites, including the necessity of active LivePerson and PVA subscriptions and access to essential credentials. Moreover, explore related documentation to gain a comprehensive grasp of the integration process and its place within a broader customer engagement and automation strategy in your organization.
 
 ## Prerequisites

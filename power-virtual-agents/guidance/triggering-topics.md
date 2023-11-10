@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Triggering topics
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 There are two main ways to trigger a topic:
 > [!div class="checklist"]
 >

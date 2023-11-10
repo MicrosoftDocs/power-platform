@@ -15,6 +15,8 @@ ms.service: power-virtual-agents
 
 # Analyze your bot's customer satisfaction metrics
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 The **Customer Satisfaction** tab on the **Analytics** page provides a detailed view of customer satisfaction (CSAT) survey data, including the average CSAT score over time and the topics that are having the most impact on the CSAT score. This page includes various charts with graphical views of your bot's customer satisfaction indicators.
 
 The **Customer satisfaction drivers** chart shows you the topics that are having the most impact on customer satisfaction.

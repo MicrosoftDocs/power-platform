@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Using topic triggers
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 By default, topics use the **Phrases** trigger, meaning they are triggered when one or more of their trigger phrases match closely with an incoming message from a user. However, a number of additional triggers types are available, to determine when a topic should be executed.
 
 ## Prerequisites

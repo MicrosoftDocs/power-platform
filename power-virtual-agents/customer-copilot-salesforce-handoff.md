@@ -17,6 +17,8 @@ searchScope:
 
 # Creating and Connecting an Einstein Bot to a Power Virtual Agents (PVA) Bot
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This document provides step-by-step instructions on how to create and connect an Einstein Bot to a Power Virtual Agents (PVA) Bot. This integration allows you to leverage the capabilities of both platforms to enhance your chatbot experience.
 
 ## Prerequisites

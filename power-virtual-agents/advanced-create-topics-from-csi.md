@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Create bot topics from Customer Service Insights
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 If you use [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/overview), you can automatically create new [topics](authoring-create-edit-topics.md) in Microsoft Copilot Studio based on your existing [Customer Service Insights support topics](/dynamics365/ai/customer-service-insights/topics-page).
 
 You should review [recommendations for identifying topics for automation](/dynamics365/ai/customer-service-insights/automate-topics#identify-topics-for-automation) in the Customer Service Insights documentation before you begin.

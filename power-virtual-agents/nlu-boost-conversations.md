@@ -16,6 +16,8 @@ searchScope:
 
 # Generative answers
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Generative answers in Microsoft Copilot Studio allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query. As a result you can quickly create and deploy a functional bot, without having to manually author multiple topics that may not address your customer's questions.
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md). This document covers how to configure generative answers as a fallback topic when a user intent cannot be addressed by existing bot topics. [Generative answers with search and summarize](nlu-boost-node.md) discusses how your bot can query information sources by introducing generative answers in a node.

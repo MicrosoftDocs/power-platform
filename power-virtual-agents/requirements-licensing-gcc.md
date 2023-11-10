@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Microsoft Copilot Studio for US Government customers
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This article is for US government customers who are deploying Microsoft Copilot Studio as a part of a Microsoft Copilot Studio Government Community Cloud (GCC) plan. It provides you with an overview of features that are specific to these plans.
 
 Government plans are designed for the unique needs of organizations that must meet US compliance and security standards.

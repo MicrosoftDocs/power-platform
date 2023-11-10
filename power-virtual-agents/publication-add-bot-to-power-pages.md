@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Add a bot to Power Pages
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [Power Pages](/power-pages/) are external-facing websites that allow users outside their organizations to sign in with a wide variety of identities, create and view data in Microsoft Dataverse, or even browse content anonymously. You can add your bot to a portal so that visitors can interact with your bot directly on your portal's page.
 
 ## Prerequisites

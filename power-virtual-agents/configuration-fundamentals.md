@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Key concepts - Configure Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio has many advanced features that let you extend the capabilities of what bot conversations can do.
 
 These features allow you to personalize the look and feel of your bot and give you more flexibility in what your users can ask your bot to do.

@@ -17,6 +17,8 @@ searchScope:
 
 # Key concepts for Bot Framework Composer users
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 If you're used to designing bots in Bot Framework Composer, you'll find that some things are different in the Microsoft Copilot Studio preview, and some things are similar. The following table lists some key concepts in Composer and where to find similar concepts in Microsoft Copilot Studio preview.
 
 | Composer concept               | Microsoft Copilot Studio concept                        | Description                                                                                                                                                                                                                                        |

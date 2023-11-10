@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Topics in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 [Topics](/power-virtual-agents/authoring-fundamentals) are the core building blocks of a chatbot. Topics can be seen as the bot competencies: they define how a conversation dialog plays out. Topics are discrete conversation paths that, when used together, allow for users to have a conversation with a bot that feels natural and flows appropriately.
 
 To author topics, makers can:

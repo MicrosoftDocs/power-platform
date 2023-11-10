@@ -19,6 +19,8 @@ searchScope:
 
 # Quickstart: Create and deploy a Microsoft Copilot Studio bot
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience - all without the need for data scientists or developers.
 
 This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it's been deployed.

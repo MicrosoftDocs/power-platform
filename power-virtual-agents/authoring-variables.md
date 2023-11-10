@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Use variables
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can save customers' responses in a bot conversation to variables and reuse them later in the conversation. 
 
 You can also use variables to create logical expressions that dynamically route the customer down different conversation paths. For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.

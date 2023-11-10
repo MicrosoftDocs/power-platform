@@ -17,6 +17,8 @@ searchScope:
 
 # Setup Service Copilot ServiceNow Knowledge Base 
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 With Service Copilot, you can create a bot that connects to ServiceNow's Knowledge Base search. Service Copilot will automatically create a bot and use Generative Answers to summarize the Knowledge Base search to the user.
 
 

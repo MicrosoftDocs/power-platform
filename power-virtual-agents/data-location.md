@@ -14,6 +14,8 @@ ms.custom: "multi-geo, ce06102020"
 
 # Regional settings and data locations for organizations using Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio supports multiple globalization scenarios, and lets you choose where you want your data to live.
 
 ## Prerequisites

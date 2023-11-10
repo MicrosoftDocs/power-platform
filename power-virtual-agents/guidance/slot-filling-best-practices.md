@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Entities and slot filling best practices in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 ## What is slot filling?
 
 Slot filling is related to the use of [entities](/power-virtual-agents/advanced-entities-slot-filling) that let a chatbot acquire and use information more easily by identifying and extracting them from the user query.

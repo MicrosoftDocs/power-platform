@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Optimizing trigger phrases and natural language understanding
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 ## What are trigger phrases in Microsoft Copilot Studio
 
 - Trigger phrases train your chatbot's natural language understanding (NLU) model.

@@ -12,6 +12,8 @@ ms.reviewer: iawilt
 
 # Responsible AI FAQs for Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [!INCLUDE[responsible-ai-intro](includes/responsible-ai-intro.md)]
 
 [!INCLUDE[responsible-ai-features](includes/responsible-ai-features.md)]

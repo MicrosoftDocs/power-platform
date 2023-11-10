@@ -16,6 +16,8 @@ searchScope:
 
 # Quickstart guide for building bots with GPT
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft has made bot building even simpler with AI-powered capabilities in Microsoft Copilot Studio. Whether you're new to conversational AI or a seasoned developer, our intelligence platform is with you and your team every step of the way. 
 
 This quickstart guide introduces you to the minimal steps necessary to get started quickly in creating and boosting a chatbot with expanded natural language understanding (NLU) capabilities. Using the intelligent authoring of AI-powered bots, you can now create a new topic or edit an existing one by describing what you want to happen or have your bot generate conversational responses even if there isn't a matching topic.

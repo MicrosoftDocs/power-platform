@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Use Microsoft Bot Framework skills in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio enables you to extend your bot using Microsoft Bot Framework skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a skill and embed the skill within a Microsoft Copilot Studio bot.
 
 ## Prerequisites

@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Key concepts - Use Power Automate flows in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Extend the capabilities of your bot with [cloud flows](/power-automate/overview-cloud) that you build in [Power Automate](https://flow.microsoft.com) using low-code, drag-and-drop tools. You can use flows that already exist in your [Power Apps environment](environments-first-run-experience.md) or create a flow from the [Microsoft Copilot Studio authoring canvas](authoring-create-edit-topics.md). Call bot-ready flows from bot topics as a discrete **Call an action** node.
 
 [!INCLUDE [Requirements for Power Automate flows](includes/flow-requirements.md)]

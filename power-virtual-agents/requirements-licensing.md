@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Assign licenses and manage access to Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This topic is written for tenant admins. If you want to sign up for Microsoft Copilot Studio as an individual, see the [Sign up for a Microsoft Copilot Studio trial](sign-up-individual.md) topic.
 
 To create and manage bots with Microsoft Copilot Studio, you need:

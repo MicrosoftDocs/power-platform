@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Configure user authentication with Microsoft Entra ID
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Adding authentication to your bot allows users to sign in, giving your bot access to a restricted resource or information.
 
 This article covers how to configure Microsoft Entra ID as your service provider. To learn about other service providers and user authentication in general, see [Configure user authentication](configuration-end-user-authentication.md).

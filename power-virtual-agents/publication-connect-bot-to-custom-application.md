@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Add bot to mobile and custom apps
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can connect your bot to a custom app so that the app's users can interact with the bot directly from within your app.
 
 In most cases, your custom app will be a mobile-device app that is either a web-based app or a native app or adapter to other services that your business requires.

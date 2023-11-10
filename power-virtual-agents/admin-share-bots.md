@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Share your bot with other users
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can share your bots with others to grant them special permissions. There are two different sharing methods:
 
 1. Grant security groups, or your whole organization, permission to chat with the bot.

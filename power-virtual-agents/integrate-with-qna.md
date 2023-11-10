@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Integrate with QnA Maker
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 > [!NOTE]
 > [Azure QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/). Beginning 1 October 2022, you won't be able to create new QnA Maker resources or knowledge bases. Custom question answering, a feature of Azure Cognitive Service for Language, is the updated version of the QnA Maker service.
 

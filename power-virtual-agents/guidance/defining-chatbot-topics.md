@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Defining chatbot topics
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 
 Defining the best topics for your bot requires an understanding of the questions users might ask or the tasks they try to accomplish, and the kind of information and automation you need to provide.
 

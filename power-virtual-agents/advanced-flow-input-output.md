@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Add input and output variables
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Use variables as input and output parameters to pass information between Power Automate flows and Microsoft Copilot Studio bots.
 
 > [!IMPORTANT]

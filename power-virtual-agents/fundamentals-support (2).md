@@ -17,6 +17,8 @@ searchScope:
 
 # Community help and support for Service Copilot
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can get support for Service Copilot on the community forums. Features that have been released for general availability are eligible for support through Microsoft Support.
 
 ## Service Copilot community forums

@@ -16,6 +16,8 @@ searchScope:
 
 # Use content on SharePoint or OneDrive for Business for generative answers
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can use generative answers with content stored on SharePoint sites and OneDrive for Business. This capability works by pairing your bot with a specific site URL, such as _contoso.sharepoint.com/sites/policies_. When a bot user asks a question or makes a statement where the bot doesn't have a manually configured topic to use, it will search for relevant content from that site URL and all sub-paths and will use generative answers technology to help summarize this content into a targeted response.
 
 > [!CAUTION]

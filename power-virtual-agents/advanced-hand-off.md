@@ -16,6 +16,8 @@ ms.custom: handoff, ceX, advanced-authoring
 
 # Hand off to a live agent
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 With Microsoft Copilot Studio, you can hand off conversations to live agents seamlessly and contextually.
 
 When you hand off a conversation, you share the full history of the conversation (the context) and all user-defined variables. With this context, a live agent that uses a connected engagement hub can be: notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.

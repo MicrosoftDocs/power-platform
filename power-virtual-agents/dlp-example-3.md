@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Data loss prevention example 3 - Require end-user authentication for Microsoft Copilot Studio chatbots
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 If a Microsoft Copilot Studio chatbot isn't configured to require end-user authentication, then anyone on the internet can chat with the bot.
 
 You can use data loss prevention (DLP) policies to block your bot makers from configuring and publishing chatbots that aren't configured for authentication to help prevent data exfiltration.

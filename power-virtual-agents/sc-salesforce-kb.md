@@ -17,6 +17,8 @@ searchScope:
 
 # Setup Service Copilot Salesforce Knowledge Base 
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 With Service Copilot, you can create a bot that connects to Salesforce's Knowledge Base search. Service Copilot will automatically create a bot and use Generative Answers to summarize the Knowledge Base search to the user.
 
 ## Prerequisites

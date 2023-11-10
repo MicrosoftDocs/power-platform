@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Call a flow as an action
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Learn how to use a cloud flow in Microsoft Copilot Studio by giving a bot the ability to produce a weather forecast on request. In the previous example, you [created a flow](advanced-flow-create.md) that fetches a weather forecast. In this example, you'll use a **Call an action** node in a bot topic to call the flow when a customer asks about the weather.
 
 If you haven't already [created the weather forecast flow](advanced-flow-create.md), do that now.

@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Integrate with question answering
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [Question answering](/azure/cognitive-services/language-service/question-answering/overview) provides cloud-based Natural Language Processing (NLP) that allows you to create a natural conversational layer over your data. It is used to find the most appropriate answer for any input from your custom knowledge base of information.
 
 ## Prerequisites

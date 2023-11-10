@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Create topics from existing online support content
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can use content from existing webpages when creating a Microsoft Copilot Studio bot. This is useful if you already have help or support content, such as FAQ pages or support sites.
 
 Rather than copying and pasting or manually re-creating this content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing online resources into your bot.

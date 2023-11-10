@@ -15,6 +15,8 @@ ms.collection: virtualagent
 
 # Capture telemetry with Application Insights
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This article discusses how you can capture telemetry data from your Microsoft Copilot Studio bot for use in [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview). 
 
 In addition to the native analytics features within Microsoft Copilot Studio, you can send telemetry data to Application Insights. Telemetry offers insights into your bot by tracking: 

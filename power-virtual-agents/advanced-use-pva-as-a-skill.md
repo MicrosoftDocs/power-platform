@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Use a Microsoft Copilot Studio bot as a skill
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 > [!NOTE]
 > This topic includes information applicable to Microsoft Copilot Studio Classic only. This feature is not available in the new Microsoft Copilot Studio experience.
 

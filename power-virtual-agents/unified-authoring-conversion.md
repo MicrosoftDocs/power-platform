@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Considerations for the latest Microsoft Copilot Studio unified authoring release 
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 The latest Microsoft Copilot Studio release is now here and generally available (GA). This release brings a major update to the Microsoft Copilot Studio product, introducing a significant number of updates and improvements so that organizations can build conversational experiences that are valuable and relevant to their customers and internal users.
 
 As we have released our latest version, this is the time to be considering migrating from your classic experience in Microsoft Copilot Studio to the latest version. At this time we have not released or set any dates when this is recommended to be completed by. This guide aims to help readers understand some of the significant improvements within this release and areas to consider when it comes to your organization migrating your classic Power Virtual Agent experience.

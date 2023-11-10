@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Add Microsoft Copilot Studio bot to Azure Bot Service channels
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can connect your bot to existing [Azure Bot Service channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0&preserve-view=true). This can be helpful if you want to connect your bot to end users on Azure Bot Service channels.
 
 Adding your bot to Azure Bot Service channels requires considerable developer expertise. This topic is written for IT admins or developers who have experience developing and writing code.

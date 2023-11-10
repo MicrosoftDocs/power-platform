@@ -1,5 +1,7 @@
 # Genesys Cloud Integration with PVA
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This guide provides supplemental information to the main Genesys documentation for this integration located on [Github](https://github.com/GenesysCloudBlueprints/bot-connector-for-ms-power-virtual-agent])
 
 ## Initial Integration

@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Get started with conversational language understanding integration 
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This topic includes the step-by-step procedures you need to get started with [conversational language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
 
 Below are the steps to create a bot using an existing CLU model:

@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Key concepts - Enhanced authoring in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can go beyond basic authoring in Microsoft Copilot Studio by taking advantage of a number of advanced features. 
 
 ## Prerequisites

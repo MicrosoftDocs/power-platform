@@ -19,6 +19,8 @@ searchScope:
 
 # Microsoft Copilot Studio overview
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 
 Microsoft Copilot Studio lets you create powerful AI-powered chatbots for a range of requests&mdash;from providing simple answers to common questions to resolving issues requiring complex conversations. Engage with customers and employees in multiple languages across websites, mobile apps, Facebook, Microsoft Teams, or any channel supported by the Azure Bot Framework.
 

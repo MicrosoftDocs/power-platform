@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 
 # Key concepts - Authoring Microsoft Copilot Studio bots
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 When you create bots with Microsoft Copilot Studio, you author and edit topics.
 
 Topics are discrete conversation paths that, when used together within a single bot, allow for users to have a conversation with a bot that feels natural and flows appropriately.

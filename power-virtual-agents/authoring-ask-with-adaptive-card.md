@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Ask with Adaptive Cards (preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 [Adaptive Cards](https://adaptivecards.io) enable you to add snippets of content to Microsoft Copilot Studio bots that can also be openly exchanged with other cloud apps and services. Formatted using JSON code, bot builders can include text, graphics, and buttons to provide rich conversation capability for your bot. Because they are platform-agnostic, you can easily tailor Adaptive Cards to your needs. 

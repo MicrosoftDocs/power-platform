@@ -15,6 +15,8 @@ ms.service: power-virtual-agents
 
 # Author using conditions (preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 You can use **Condition** nodes to add branches in your topic, comparing the value of one variable to that of another variable or to a specific value. For example, if the value of `isClubMember` is `True`, then the topic offers a discount; if the value is `False`, the topic presents the standard item price.

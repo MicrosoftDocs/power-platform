@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Key concepts – Analytics in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio has a comprehensive set of analytics that show you the key performance indicators for your bot.
 
 > [!NOTE]

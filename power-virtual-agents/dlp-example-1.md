@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Data loss prevention example 1 - Block skills in Microsoft Copilot Studio chatbots
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Bot makers in your organization can [extend their bots with skills](configuration-add-skills.md). Skills can be a useful way of extending the functionality of your bots, however you may want to restrict their use to help prevent data exfiltration.
 
 You can use the Skills with Microsoft Copilot Studio connector in Power Platform data loss prevention (DLP) policies to stop bot makers from adding skills to their bot.

@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Analyze session information in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 By default, you can download up to seven days of bot chat transcript sessions from the past 30 days directly from the Microsoft Copilot Studio portal.
 
 You can also download and view conversation transcripts in the Power Apps portal.

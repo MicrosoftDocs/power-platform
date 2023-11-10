@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Send a message (preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 The **Message** node sends a message from the bot to the user. Messages are usually simple text messages, but can also include richer components, such as images, videos, quick replies, and cards.
 
 > [!TIP]

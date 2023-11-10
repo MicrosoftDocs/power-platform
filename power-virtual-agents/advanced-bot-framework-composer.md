@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Overview of Bot Framework Composer
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
 
 Enhance your bot by developing custom topics with [Bot Framework Composer](/composer/) and then adding them to your Microsoft Copilot Studio bot.

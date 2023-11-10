@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Create a privacy statement and terms of use in Microsoft Teams
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 When you want to publish your bot so other Microsoft Teams users can access it, you need to provide the following information about your bot:
 
 - A link to a compliant privacy statement

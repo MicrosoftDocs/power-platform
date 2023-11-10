@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Configure single sign-on with Microsoft Entra ID for Microsoft Copilot Studio bots in Microsoft Teams
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 The Microsoft Copilot Studio app in Microsoft Teams supports single sign-on (SSO), which means bots can automatically sign-in users with their Microsoft Teams credentials.
 
 SSO in the Microsoft Copilot Studio app in Teams is only supported when using Microsoft Entra ID. Other service providers, such as Azure AD v1, don't support SSO in the Microsoft Copilot Studio app in Microsoft Teams.

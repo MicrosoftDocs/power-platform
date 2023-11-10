@@ -10,6 +10,8 @@ ms.reviewer: iawilt
 ---
 # Alternate escalation paths
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 > [!TIP]
 > There are a few strategies you can use to deflect the user from reaching the human agent when the bot user decides to escalate, without deprecating the user experience.
 

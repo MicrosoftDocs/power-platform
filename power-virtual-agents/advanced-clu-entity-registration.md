@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 
 # Entity registration for conversational language understanding integration 
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This article discusses adding conversational language understanding (CLU) entities to Microsoft Copilot Studio bots. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). In most cases, you can use [Power Virtual Agent Prebuilt Entities](advanced-entities-slot-filling.md) for your projects, but should you want to use CLU entity types with custom JSON resolutions, the following schema examples are provided as a reference. 
 
 To set up your environment for mapping CLU entities to Microsoft Copilot Studio bots, see [Get started with language understanding](advanced-clu-get-started.md).

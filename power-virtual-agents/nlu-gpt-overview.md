@@ -15,6 +15,8 @@ searchScope:
 ---
 # AI-based chatbot authoring overview
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 By leveraging recent advancements in AI large language models, Microsoft Copilot Studio transforms how you build chatbots, increasing a chatbot's usefulness and significantly reducing manual authoring and configuration. You can:
 
 - **Create an instantly useful chatbot.** With no manual authoring, an "empty" chatbot can respond to your users with relevant information, even if you haven't manually created a topic for it. 

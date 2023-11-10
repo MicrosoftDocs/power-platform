@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Analyze topic usage in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 The topic analytics pane provides a view into the performance of an individual topic and how it can be improved.
 
 To display the topic analytics pane, select the **Detail** link for the topic in one of the following charts on the [Summary](analytics-summary.md) or [Customer Satisfaction](analytics-CSAT.md) tab:

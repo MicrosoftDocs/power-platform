@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Key concepts - Publish your bot
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 With Microsoft Copilot Studio, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
 
 After you've published at least once, you can connect your bot to more channels.

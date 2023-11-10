@@ -11,6 +11,9 @@ ms.reviewer: iawilt
 ---
 
 # FAQ for generative answers
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 These frequently asked questions (FAQ) describe the AI impact of the generative answers feature in Microsoft Copilot Studio.
 
 ## What is generative answers?

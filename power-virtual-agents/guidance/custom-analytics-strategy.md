@@ -12,6 +12,8 @@ ms.collection: virtual-agent
 
 # Custom analytics strategy
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 
 Microsoft Copilot Studio provides comprehensive [out-of-the-box analytics](/power-virtual-agents/preview/analytics-overview) that allow customers to understand a bot's usage and key performance indicators.
 

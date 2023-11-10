@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Topic authoring best practices in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 
 ## Create and organize topics in a way that's manageable and maintainable for your context
 

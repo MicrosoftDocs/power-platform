@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Supported languages
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can create chatbots in Microsoft Copilot Studio in a number of languages. This means that your bots can reach a much broader audience and engage with more markets all around the world.
 
 > [!CAUTION] 

@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 ---
 # Working with environments in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 With Microsoft Copilot Studio, you can create bots in different environments and easily switch between them.
 
 An environment is a space to store, manage, and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. See the following topics for more information:

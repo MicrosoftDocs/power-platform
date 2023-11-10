@@ -18,6 +18,8 @@ searchScope:
 
 # Overview
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio is evolving. The new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer's "pro-code" capabilities with the simplicity of the Microsoft Copilot Studio low-code platform. It's even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot-building studio.
 
 This evolution brings several exciting new features:

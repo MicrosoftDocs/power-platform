@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Configure user authentication in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Authentication allows users to sign in, giving your bot access to a restricted resource or information. Users can sign in with [Microsoft Entra ID](configuration-authentication-azure-ad.md), or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
 
 

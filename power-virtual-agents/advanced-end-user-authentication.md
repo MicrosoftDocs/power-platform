@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Add end-user authentication to a Microsoft Copilot Studio bot
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can enable user authentication directly within a Microsoft Copilot Studio bot conversation. User authentication means you can get a user's basic properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
 
 >[!NOTE]

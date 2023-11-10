@@ -13,6 +13,8 @@ ms.service: power-virtual-agents
 
 # View topic status (preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
 
 ## Topic errors

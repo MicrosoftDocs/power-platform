@@ -9,6 +9,9 @@ ms.author: athinesh
 ms.reviewer: iawilt
 ---
 # Topic escalation analysis
+
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
   
 Escalation is the conversation flow during which the bot couldn’t handle the conversation and escalated to a human agent. When a chatbot is able to answer the user query without having to escalate to a human agent, it's considered a deflection. The ideal goal is to increase the deflection rate of a bot by reducing the number of escalations.
 

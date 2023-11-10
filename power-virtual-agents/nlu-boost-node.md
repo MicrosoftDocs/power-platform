@@ -16,6 +16,8 @@ searchScope:
 
 # Generative answers with Search and summarize content
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 When you created your bot, you were invited to [enter a URL from which your bot could generate responses](nlu-boost-conversations.md). This URL is used across the bot, however you can further boost your bot's conversations by using multiple internal and external information sources within individual topics.
 
 Within a bot's topic, you can add a  **Create generative answers** node. This node allows you to specify additional sources that the node will search based on the inputs you give it. 

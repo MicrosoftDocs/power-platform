@@ -16,6 +16,8 @@ ms.reviewer: ggupta
 
 # Use system topics in Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 System topics are common topics used in conversations with a bot.
 
 When you first create a bot, all system topics are configured to trigger at the appropriate times. However, you can manually trigger system topics by [redirecting](authoring-create-edit-topics.md#redirect-to-another-topic) to them.

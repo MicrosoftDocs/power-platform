@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Making HTTP requests
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 In Microsoft Copilot Studio, you can extend the bot's capabilities by calling external REST APIs using the **HTTP request** node. This can be helpful when you need to retrieve data from an external system or manipulate data on that system.
 
 ## Prerequisites

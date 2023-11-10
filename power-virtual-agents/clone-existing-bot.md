@@ -14,6 +14,8 @@ ms.custom: bap-template
 
 # Create a preview bot from the content of an existing bot (preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Use familiar content to explore preview features of Microsoft Copilot Studio by cloning an existing non-preview bot.
 
 ## Eligibility

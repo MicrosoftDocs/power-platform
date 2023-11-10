@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Sign up for a Microsoft Copilot Studio trial
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This article explains how to sign up for Microsoft Copilot Studio as an individual. If you're an admin, see [Assign user licenses and manage access to Microsoft Copilot Studio](requirements-licensing.md).
 
 Follow the instructions below to sign up for a Microsoft Copilot Studio trial. After you complete the process you'll be able to use Microsoft Copilot Studio to create and publish bots.

@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Use plugin actions in Microsoft Copilot Studio (preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 You can extend the capabilities of your bot by adding one or more plugin actions, which you can call from a topic. 

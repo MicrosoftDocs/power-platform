@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Quotas, limits, app registration, certificates, and configuration values for Microsoft Copilot Studio
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 This topic contains quotas, limits, app registration usage, certificate rotation, and configuration values for Microsoft Copilot Studio.
 
 ## Quotas

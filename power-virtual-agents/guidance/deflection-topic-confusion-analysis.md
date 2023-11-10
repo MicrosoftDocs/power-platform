@@ -10,6 +10,8 @@ ms.reviewer: iawilt
 ---
 # Topic confusion analysis
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 Using semantically similar trigger phrases for two different topics can lead to confusion, as the chatbot may not know which topic to open and will need to ask follow-up questions to the end-user.
 
 > [!TIP]

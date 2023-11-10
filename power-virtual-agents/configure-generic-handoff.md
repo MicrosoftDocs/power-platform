@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Configure hand off to any generic engagement hub
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot Studio lets you hand over bot conversations seamlessly and contextually to a human agent through an engagement hub.
 
 With some custom development, you can configure your bot to hand off conversations to any engagement hub. This guide describes how you can do this.

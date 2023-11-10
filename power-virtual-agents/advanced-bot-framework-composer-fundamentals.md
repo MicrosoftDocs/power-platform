@@ -15,6 +15,8 @@ ms.collection: virtualagent
 
 # Getting started with Bot Framework Composer
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
 
 To use Bot Framework Composer to extend your Microsoft Copilot Studio bot, you'll need to first import your bot into a Composer project.

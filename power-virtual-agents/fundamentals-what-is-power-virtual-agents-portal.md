@@ -19,6 +19,8 @@ searchScope:
 
 # Microsoft Copilot Studio portal overview
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 
 Microsoft Copilot Studio lets you create powerful chatbots that can be created with a guided, no-code graphical interface - and without the need for data scientists or developers.
 

@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # AI features for Teams and Classic bots
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 If you create bots in the Microsoft Copilot Studio app in Teams, or if you have bots marked **Classic** in the Microsoft Copilot Studio web app, you can enable additional features for those bots that improve how the core AI in Microsoft Copilot Studio works.
 
 The unified authoring canvas includes a raft of improvements to the types of AI used by Microsoft Copilot Studio which build upon these features. Bots created with the unified authoring canvas include next-generation AI features that supersede or replace the features listed in this topic.

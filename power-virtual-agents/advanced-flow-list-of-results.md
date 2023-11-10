@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Return a list of results
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 It's common to ask a bot to look for data in an external system and return a list of results. To do that, Microsoft Copilot Studio can call a Power Automate flow to:
 
 - authenticate and connect to an external solution

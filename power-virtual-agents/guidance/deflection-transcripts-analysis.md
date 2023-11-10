@@ -11,6 +11,8 @@ ms.reviewer: iawilt
 
 # Agent transcript analysis
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 > [!TIP]
 > Analyzing the agent transcripts can provide insights on what new topics or self-service actions can be added to the chatbot to reduce escalation and improve deflection.
 
