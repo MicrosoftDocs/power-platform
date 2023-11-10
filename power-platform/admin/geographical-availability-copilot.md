@@ -25,7 +25,7 @@ ms.custom:
 # Enable copilots and generative AI features
 Copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/) help you build apps, flows, and chatbots, analyze your data, summarize information, reply to messages, generate ideas, and more.
 
-However, these features aren't available in all regions and languages. Depending on where your environment is hosted, you may need to enable data movement across regions to use them. This article explains how to do that.
+However, these features aren't available in all regions and languages. Depending on where your environment is hosted, you might need to enable data movement across regions to use them. This article explains how to do that.
 
 ## How data movement across regions works
 
