@@ -27,10 +27,9 @@ When content is generated, follow these steps to use the AI cursor:
 2. Select an area or block of content to ask a question about and enter your question.
 3. Select **Generate** > **Generate as new blueprint** to create a new blueprint, or **Generate in place of existing block** to regenerate content in the selected block. Pressing **Enter** instead of manually selecting one of the two options will always generate a new blueprint. 
 
-
 > [!TIP]
->- Update an existing block: If you experience unexpected results, you can always ask Project "Sophia" to adjust the results. For example, update an existing block to use another chart type, group by something else, or explain what an acronym means in your source data to help get better results. Keep in mind that press **Enter** will generate a new blueprint as opposed to letting you update an existing block on your current blueprint.   
->- Add Data: You can upload additional data to an existing workspace at any time using the AI cursor.
+> - **Update an existing block**: If you experience unexpected results, you can ask Project "Sophia" to adjust the results. For example, update an existing block to use another chart type, group by something else, or explain what an acronym means in your source data to help get better results. When you press **Enter** it generates a new blueprint instead of updating an existing block on the current blueprint.
+> - **Add data**: You can upload additional data to an existing workspace at any time using the AI cursor.
    
    > [!div class="mx-imgBorder"]
    > ![Use the AI cursor.](media/ai-cursor.png)

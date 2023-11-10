@@ -43,7 +43,7 @@ Legend
 
 1. **Exploratory**: Offers a blank canvas where you can explore and ask questions related to your business. Or you can upload business data and ask questions about the data. Project "Sophia" uses the uploaded data to generate insights and suggests next actions.
 2. **Guides**: Helps you through the process of gathering relevant data to tackle specific role-based business tasks. For preview. only the account planning guide is supported. Guides for sales territory planning, supply chain optimization, and others are coming soon.
-3. **Question**: Enter your question in the prompt box and then select **Generate**.
+3. **Question**: Enter your question in the text box and then select **Generate**.
 4. **Blueprint**: The results that are generated when you ask a question or upload data. You can also generate a new blueprint by selecting on of the suggested next steps.
 5. **Block**: Example of the different blocks of content that is generated.
 
