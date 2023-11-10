@@ -23,7 +23,7 @@ ms.subservice: solution-templates
 
 # Install the SAP Procurement template
 
-This article provides links to the SAP Procurement solution files and provides the steps to manually import them into your environment according to your organization's requirements.
+This article provides links to the SAP Procurement solution files and gives the steps to manually import them into a developer environment you prepared for them.
 
 ## Download the solution files
 
@@ -38,11 +38,11 @@ Download **either** the *managed* or *unmanaged* SAP Base and SAP Procurement so
 
 > [!TIP]
 >
-> You can log your questions and get support for the SAP Procurement template at the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the SAP Procurement template.
 
 ## Install the solution files
 
-Once you have downloaded **either** the *managed* or *unmanaged* solution files, you can install them into the developer (sandbox) environment that you prepared for it.
+Once you have downloaded **either** the *managed* or *unmanaged* solution files, you can install them into the developer (sandbox) environment that you prepared for them.
 
 ### Install the SAP Base solution
 
@@ -53,8 +53,8 @@ Follow these steps to install either the *managed* or *unmanaged* **SAP Base** s
 1. Select **Import solution**.
 1. Browse for and select either the managed *or* unmanaged version of the **mpa_SAPBase** file downloaded in previous step.
 1. Enter the environment variables when prompted, using the [Configure environment variables](configure-environment-variables.md) guidance.
-1. Select **Import**. This starts the import process of the *SAP Base* solution
-1. Wait for the *SAP Base* solution to finish importing. The import process can take a few minutes at which point you will be notified with a *Success* message.
+1. Select **Import** to start the import process of the *SAP Base* solution.
+1. Wait for the *SAP Base* solution to finish importing. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
 
 ### Install the SAP Procurement solution
 
@@ -64,7 +64,7 @@ Follow these steps to install either the *managed* or *unmanaged* **SAP Procurem
 1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_SAPProcurement* file downloaded in previous step.
 1. Select **Next** and **Next** again.
 1. When prompted, populate the *connection references* by either creating new or selecting existing connections as described in [Set up connections for solutions](set-up-connections.md).
-1. Select **Import** which will start the import process of the *SAP Procurement* solution. Wait for the *SAP Procurement* solution to finish importing. This can take a few minutes at which point you will be notified with a *Success* message.
+1. Select **Import** which will start the import process of the *SAP Procurement* solution. Wait for the *SAP Procurement* solution to finish importing. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 

@@ -88,28 +88,30 @@ To create the connections in advance, take these steps:
 
 ## Step 3: Install solution files
 
-You have two options to consider for installing the Onboarding Buddy template to the environment you prepared for it:
+There are two solution installation options available for you to consider:
 
-- You can access the template on [AppSource](https://appsource.microsoft.com/home) where selecting the *Get it now* button automatically takes you to an *install window* in the Power Platform admin center.
+- You can select the *Get it now* button on the template's AppSource offer page and it automatically takes you to an *install window* in the Power Platform admin center.
 - You can download either a *managed* or an *unmanaged* version of the solution files and manually import them into your environment according to your organization's requirements.
 
 > [!TIP]
 >
-> You can log your questions and get support for the Onboarding Buddy template at the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Onboarding Buddy template.
 
 ### Install from AppSource
+
+You can easily access and install the Onboarding Buddy template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
 1. Go to the [Onboarding Buddy template in AppSource](<https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa-onboardingbuddy?exp=ubp8&tab=Overview>) and select **Get it now**.
 1. Select the developer environment that you prepared for the template.
    :::image type="content" source="media/install/ob-install-env.png" alt-text="Select the environment in which to install the template.":::
 1. Agree to the *Terms and Privacy* statements by selecting the boxes.
-1. Select **Install**. You are taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
+1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
 
 > [!IMPORTANT]
-> Two solutions will always be installed in your environment:
+> Two solutions are always installed in your environment:
 >
 > - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-> - **Onboarding Buddy**. Contains all the components needed to enable the implementation of an Onboarding Buddy program within an organization.
+> - **Onboarding Buddy**. Contains all the components needed to enable the implementation of the Onboarding Buddy program within an organization.
 
 ### Download and manually install solution files
 
@@ -136,8 +138,7 @@ You also have the option to download *managed* or *unmanaged* solution files to 
 1. For each of the connections listed, select the *existing connection that was created in the previous step*.
 1. Select **Next**.
 1. Ignore entering values for the environment variables as this is completed in another step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment.
-1. Select **Import** which starts the import process of the *Onboarding Buddy* solution.
-Wait for the *Onboarding Buddy* solution to finish importing. The import often takes a few minutes at which point you are notified with a *Success* message.
+1. Select **Import** which starts the import process of the *Onboarding Buddy* solution. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 

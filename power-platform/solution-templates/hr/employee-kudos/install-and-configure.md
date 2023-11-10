@@ -84,28 +84,30 @@ More information: [Manage connections in canvas apps](/power-apps/maker/canvas-a
 
 ## Step 3: Install solution files
 
-You have two options to consider for installing the template to the environment you prepared for it:
+There are two solution installation options available for you to consider:
 
-- You can access the template on [AppSource](https://appsource.microsoft.com/home) where selecting the *Get it now* button automatically takes you to an *install window* in the Power Platform admin center.
+- You can select the *Get it now* button on the template's AppSource offer page and it automatically takes you to an *install window* in the Power Platform admin center.
 - You can download either a *managed* or an *unmanaged* version of the solution files and manually import them into your environment according to your organization's requirements.
 
 > [!TIP]
 >
-> You can log your questions and get support for the Employee Kudos template at the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Employee Kudos template.
 
 ### Install from AppSource
 
-1. Go to the [Kudos template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
+You can easily access and install the Employee Kudos template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
+
+1. Go to the [Employee Kudos template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
 1. Select the environment that you prepared for the template.
    :::image type="content" source="media/install/appsource-install-template.png" alt-text="Select the environment in which to install the template.":::
 1. Agree to the *Terms and Privacy* statements by selecting the boxes.
-1. Select **Install**. You'll be taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
+1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
 
 > [!IMPORTANT]
-> Two solutions will always be installed in your environment:
+> Two solutions are always installed in your environment:
 >
 > - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-> - **Employee Kudos**. Contains all the components needed to enable the implementation of an Employee Kudos program within an organization.
+> - **Employee Kudos**. Contains all the components needed to enable the implementation of the Employee Kudos program within an organization.
 
 ### Download and manually install solution files
 
@@ -125,15 +127,15 @@ You also have the option to download *managed* or *unmanaged* solution files to 
 1. Select **Import solution**.
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_EmployeeExperienceBase* file downloaded in previous step.
 1. Select **Next**.
-1. Select **Import**. This starts the import process of the *Employee Experience Base* solution
+1. Select **Import**. This starts the import process of the *Employee Experience Base* solution.
 1. Wait for the *Employee Experience Base* solution to finish importing. The import process can take a few minutes at which point you will be notified with a *Success* message.
 1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_Kudos* file downloaded in previous step.
 1. Select **Next** and **Next** again.
-1. For each of the connections listed, select the *existing connection that was created in the previous step*
-1. Select **Next**
-1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment
-1. Select **Import** which will start the import process of the *Kudos* solution
-Wait for the *Kudos* solution to finish importing which can take a few minutes at which point you will be notified with a *Success* message
+1. For each of the connections listed, select the *existing connection that was created in the previous step*.
+1. Select **Next**.
+1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment.
+1. Select **Import** which will start the import process of the *Kudos* solution.
+The import process takes a few minutes and once it's complete you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 

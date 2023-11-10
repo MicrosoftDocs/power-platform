@@ -124,32 +124,38 @@ More information: [Get started with Power Automate approvals](/power-automate/ge
 
 ## Step 4: Install solution files
 
-You have two options to consider for installing the template to the environment you prepared for it:
+There are two solution installation options available for you to consider:
 
-- You can access the template on [AppSource](https://appsource.microsoft.com/home) where selecting the *Get it now* button automatically takes you to an *install window* in the Power Platform admin center.
+- You can select the *Get it now* button on the template's AppSource offer page and it automatically takes you to an *install window* in the Power Platform admin center.
 - You can download either a *managed* or an *unmanaged* version of the solution files and manually import them into your environment according to your organization's requirements.
 
 > [!TIP]
 >
-> You can log your questions and get support for the Hardware Request & Management template at the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Hardware Request and Management template.
 
 ### Install from AppSource
 
-You can easily access and install the Hardware Request and Management template from AppSource, a Microsoft digital storefront.
+You can easily access and install the Hardware Request and Management template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
 1. Go to the [Hardware Request and Management template on AppSource](https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa-hardwarerequest-andmanagement-preview?flightCodes=e238631598a84d98974a43115813366d&tab=Overview) and select **Get it now**. This takes you to the *Install Hardware Request and Management Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 :::image type="content" source="media/install/hrm-install-env.png" alt-text="Screenshot of the modal dialog window where you select the environment you set up for the template.":::
 1. Select the developer *environment* that you prepared for the template.
 1. Agree to the *Terms and Privacy Statements* by checking the boxes.
-1. Select **Install** and view the installation status. After the installation is complete, the status shows as *Installed*
+1. Select **Install** and view the installation status. After the installation is complete, the status shows as *Installed*.
 
 More information: [AppSource](https://appsource.microsoft.com/en-US/)
+
+> [!IMPORTANT]
+> Two solutions are always installed in your environment:
+>
+> - **IT Base**. Contains common foundational components that all information technology (IT) solutions use. This includes components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Hardware Request and Management**. Contains all the components needed to enable the implementation of the Hardware Request and Management program within an organization.
 
 ### Download and manually install solution files
 
 You also have the option to download *managed* or *unmanaged* solution files and manually install into your prepared environment according to your organization's requirements:
 
-1. Download the following Managed or Unmanaged solution files:
+1. Download the following Managed *or* Unmanaged solution files:
 
     - Managed
       - [mpa_ITBase_managed.zip](https://aka.ms/ITBaseManagedSolution)
@@ -158,19 +164,19 @@ You also have the option to download *managed* or *unmanaged* solution files and
       - [mpa_ITBase.zip](https://aka.ms/ITBaseUnManagedSolution)
       - [mpa_HardwareRequestAndManagement.zip](https://aka.ms/HardwareRequestAndManagementUnManagedSolution)
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment where you want to install the solution.
+1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the *environment* you prepared for the solution.
 1. Select **Solutions** on the left-side panel.
 1. Select **Import solution**.
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_ITBase* file downloaded in previous step.
 1. Select **Next**.
 1. Select **Import**. This starts the import process of the *IT Base* solution
-1. Wait for the *IT Base* solution to finish importing. The import process can take a few minutes at which point you will be notified with a *Success* message.
+1. Wait for the *IT Base* solution to finish importing. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
 1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_HardwareRequestAndManagement* file downloaded in previous step.
 1. Select **Next** and **Next** again.
 1. For each of the connections listed, select the *existing connection that was created in the previous step*.
 1. Select **Next**.
 1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment.
-1. Select **Import** which will start the import process of the *Hardware Request and Management* solution. Wait for the *Hardware Request and Management* solution to finish importing. This can take a few minutes at which point you will be notified with a *Success* message.
+1. Select **Import** which will start the import process of the *Hardware Request and Management* solution. Wait for the *Hardware Request and Management* solution to finish importing. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
@@ -183,17 +189,17 @@ Additionally, connection references allow makers to configure flows that allow t
 To update environment variables, take these steps:
 
 1. Go to Power Apps studio and select the environment you installed the solution in
-1. Select **apps** on the left-side panel
-1. Select the *Hardware Request canvas app* row, **vertical ellipsis** > **Details** > Details and copy the URL to a notepad or something similar
-1. Repeat the same step for the *Hardware Request and Management Model-driven app*
-1. Select **Solutions** on the left-side panel
+1. Select **apps** on the left-side panel.
+1. Select the *Hardware Request canvas app* row, **vertical ellipsis** > **Details** > *Hardware Request Details*. Copy the URL to a notepad.
+1. Repeat the same step for the *Hardware Request and Management Model-driven app*.
+1. Select **Solutions** on the left-side panel.
 
    > [!NOTE]
    >
-   > If you manually installed unmanaged version of Hardware Request and Management solution file from GitHub, there is no need to create a new solution to add the environment variable and connection references to. You can simply edit these components directly in the existing unmanaged solution file and can skip to step eight.
+   > If you manually installed an *unmanaged version of Hardware Request and Management solution file* from GitHub, there is no need to create a new solution to add the environment variable and connection references to. Simply edit these components directly in the existing unmanaged solution file.
 
-1. Select **+ New solution** and populate the properties
-1. Select **Add existing** > **More** > **Environment variable**
+1. Select **+ New solution** and populate the properties.
+1. Select **Add existing** > **More** > **Environment variable**.
 1. Select both the *Hardware Request and Management* URL and *Hardware Request App* URL variables
 1. Select **Next** and then **Add**
 

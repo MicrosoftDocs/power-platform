@@ -78,14 +78,14 @@ More information: [Manage connections in canvas apps](/power-apps/maker/canvas-a
 
 ## Step 3: Install solution files
 
-You have two options to consider for installing the template to the environment you prepared for it:
+There are two solution installation options available for you to consider:
 
-- You can access the template on [AppSource](https://appsource.microsoft.com/home) where selecting the *Get it now* button automatically takes you to an *install window* in the Power Platform admin center.
+- You can select the *Get it now* button on the template's AppSource offer page and it automatically takes you to an *install window* in the Power Platform admin center.
 - You can download either a *managed* or an *unmanaged* version of the solution files and manually import them into your environment according to your organization's requirements.
 
 > [!TIP]
 >
-> You can log your questions and get support for the Awards and Recognition template at the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Awards and Recognition template.
 
 ### Install from AppSource
 
@@ -96,13 +96,13 @@ You have two options to consider for installing the template to the environment 
 
 1. Agree to the *Terms and Privacy* statements by checking the boxes.
 
-1. Select **Install**. You'll be taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
+1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
 
 > [!IMPORTANT]
-> Two solutions will always be installed in your environment:
+> Two solutions are always installed in your environment:
 >
 > - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-> - **Awards and Recognition**. Contains all the components needed to set up an Awards and Recognition program within an organization.
+> - **Awards and Recognition**. Contains all the components needed to set up the Awards and Recognition program within an organization.
 
 ### Download and manually install solution files
 
@@ -129,7 +129,7 @@ You also have the option to download *managed* or *unmanaged* solution files to 
 1. For each of the connections listed, select the *existing connection that was created in the previous step*.
 1. Select **Next**.
 1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment.
-1. Select **Import** which will start the import process of the *Awards and Recognition* solution. Wait for the *Awards and Recognition* solution to finish importing. This can take a few minutes at which point you will be notified with a *Success* message.
+1. Select **Import** which will start the import process of the *Awards and Recognition* solution. Wait for the *Awards and Recognition* solution to finish importing. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
