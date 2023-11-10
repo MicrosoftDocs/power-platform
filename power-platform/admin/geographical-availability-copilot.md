@@ -36,7 +36,7 @@ The following table describes when and how data can move across regions for copi
 | Region where your environment is hosted | Region where data is stored and processed | Does data move across regions? | How to allow data to move across regions|
 |-------------------------|-------------------------|-------------------------|-------------------------|
 | Australia (availability starting Nov 10, 2023)</br>United Kingdom (availability starting Nov 10, 2023)</br>United States | Within the respective geographical region | No | No action required. Data doesn't move across regions in this scenario.|
-| Europe | Sweden or Switzerland | Yes | No action required. Data doesn't move outside the [EU Data Boundary](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb) in this scenario.  |
+| Europe | Sweden or Switzerland | Yes | No action required. Data doesn't move outside the [EU Data Boundary](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb) in this scenario.<br><br>Admins can clear the **Move data across regions** checkbox, if they want to. |
 | France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 | Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 
