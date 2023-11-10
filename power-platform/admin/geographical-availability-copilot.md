@@ -25,11 +25,11 @@ ms.custom:
 # Enable copilots and generative AI features
 Copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/) help you build apps, flows, and chatbots, analyze your data, summarize information, reply to messages, generate ideas, and more.
 
-However, these features aren't available in all regions and languages. Depending on where your enviroment is hosted, you may need to enable data movement across regions to use them. This article explains how to do that.
+However, these features aren't available in all regions and languages. Depending on where your environment is hosted, you may need to enable data movement across regions to use them. This article explains how to do that.
 
 ## How data movement across regions works
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region**. That data is protected and secured at every step in ways that comply with all applicable privacy laws and regulations, such as the Europen Union data boundary. We might store it for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region**. That data is protected and secured at every step in ways that comply with all applicable privacy laws and regulations, such as the European Union data boundary. We might store it for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
 
 The following table describes when and how data can move across regions for copilots and generative AI features.
 
