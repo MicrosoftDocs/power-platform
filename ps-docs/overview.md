@@ -21,7 +21,7 @@ contributors:
 
 Project “Sophia” is a new generation of AI-first business app that helps users with complex, cross functional tasks and offers a new way to discover, visualize, and interact with business data. 
 
-Project “Sophia” offers has an AI- powered, user-friendly research canvas and large language model powered blueprints. The research canvas helps users create exploratory journeys and understand business data with AI-generated charts and insights without the need for data mining and creating visuals. The app provides quick insights and recommends the next steps. You can start with a question and explore different options. Or you can continue iterating until you get the best possible outcome. 
+Project “Sophia” offers has an AI- powered, user-friendly research canvas and large language model powered blueprints. The research canvas helps you create exploratory journeys and understand business data with AI-generated charts and insights without the need for data mining and creating visuals. The app provides quick insights and recommends the next steps. You can start with a question and explore different options. Or you can continue iterating until you get the best possible outcome. 
 
 > [!IMPORTANT]
 > - Project “Sophia” is only available in the US region.
