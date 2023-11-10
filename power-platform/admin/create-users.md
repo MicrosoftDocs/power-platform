@@ -8,7 +8,7 @@ ms.author: kvivek
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2023
+ms.date: 11/07/2023
 search.audienceType: 
   - admin
 contributors:
@@ -79,10 +79,6 @@ Some user profile information is maintained and managed in the [!INCLUDE [pn-off
 The following table shows the fields that are managed in the **Users** section of the [!INCLUDE [pn-office-365-admin-center](../includes/pn-office-365-admin-center.md)].
 
 <table>
-<colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
-</colgroup>
 <thead>
 <tr class="header">
 <th><p>Customer engagement apps user form </th><th>Microsoft 365/Azure AD user</th></tr>
@@ -106,6 +102,9 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.<br>**** ObjectID of a user or a service principal in Azure Active Directory.<br /></td></tr>
 </tbody>
 </table>
+
+> [!NOTE]
+> Custom fields are **never** syncronized between Microsoft 365, Microsoft Entra ID, and Power Platform.
 
 The following image shows Microsoft 365 user contact fields.
 
@@ -215,7 +214,7 @@ For users to have access to applications and data in an environment, at a minimu
 
 2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
 
-3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) to add or update users in Dataverse on demand. 
+3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest&preserve-view=true) to add or update users in Dataverse on demand. 
 
 4. Administrators can leverage the Power Platform admin center user management experience to [add users in Dataverse on demand](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
@@ -387,11 +386,6 @@ When you create a new user or update an existing user in Dynamics 365 Customer E
 The following table shows the fields that are populated on the user form (user record) from the Azure AD user account.
 
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th><p>User form</p></th>

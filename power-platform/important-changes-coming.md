@@ -110,7 +110,7 @@ The impact of the deprecation of this capability is that you'll no longer be abl
 
 ## Model-driven app controls deprecation
 
-Effective January 2023, the following controls for model-driven apps are deprecated: auto-complete, input mask, multimedia player, number input, option set, and star rating.
+Effective January 2023, the following controls for model-driven apps are deprecated: auto-complete, input mask, multimedia player, number input, flip, and star rating.
 
 #### Why is this needed? 
 
