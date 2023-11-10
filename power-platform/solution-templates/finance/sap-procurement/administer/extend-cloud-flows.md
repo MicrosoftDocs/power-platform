@@ -1,6 +1,6 @@
 ---
 title: Extend cloud flows
-description: Apply customizations to the cloud flows to enable local business requirements.
+description: Extend cloud flows to meet your organization's unique needs. Learn how to extend the cloud flows in your SAP template solutions by adding and mapping new fields to the SAP ERP connector.
 author: tverhasselt
 ms.author: thoverh
 contributors:
@@ -21,7 +21,9 @@ ms.subservice: solution-templates
 
 # How cloud flows are developed and used
 
-Power Apps integrate with SAP through a portfolio of preconfigured cloud flows. By orchestrating a series of transformations and using the [SAP enterprise resource planning (ERP) connector](/connectors/saperp/), these cloud flows greatly simplify the process of integrating data with SAP. Each SAP object managed from the canvas app is mapped to a series of _search_, _create_, _read_, and _update_ flows. As an example, four cloud flows exist for vendor object:
+Power Apps integrate with SAP through a portfolio of pre-configured cloud flows. By orchestrating a series of transformations and using the [SAP enterprise resource planning (ERP) connector](/connectors/saperp/), these cloud flows greatly simplify the process of integrating data with SAP.
+
+Each SAP object managed from the canvas app is mapped to a series of _search_, _create_, _read_, and _update_ flows. As an example, four cloud flows exist for vendor object:
 
 - **ReadVendor**: Read a single vendor based upon vendor number and key related information.
 - **ReadVendorList**: Search for a list of vendors based upon search criteria passed.
@@ -30,7 +32,7 @@ Power Apps integrate with SAP through a portfolio of preconfigured cloud flows. 
 
 ## Extend cloud flows
 
-Similar to the canvas apps, you can extend cloud flows according to your local business requirements. With the help of your SAP business analyst, you can add and map new fields to the SAP ERP connector and go back and forth to the apps through the JSON payloads.
+You can extend cloud flows according to your local business requirements. With the help of your SAP business analyst, you can add and map new fields to the SAP ERP connector and go back and forth to the apps through the JSON payloads.
 
 Creating a new purchase requisition offers a typical transaction scenario between canvas apps, cloud flows, and SAP:
 
@@ -134,5 +136,4 @@ These errors can be seen in the _SAP Administrator_ app as described in the [Mon
 
 ### See also
 
-- [Overview](../overview.md)
-- [Get started](get-started.md)
+[Get started with the SAP Procurement template](get-started.md)

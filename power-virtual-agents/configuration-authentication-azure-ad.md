@@ -91,9 +91,6 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 ### Configure manual authentication
 
-> [!IMPORTANT]
-> You can only manually configure authentication if the bot is labelled as a classic bot.
-
 1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Security**. Then select the **Authentication** card.
 
     :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of selecting the Authentication card.":::

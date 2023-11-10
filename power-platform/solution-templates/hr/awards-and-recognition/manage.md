@@ -1,6 +1,6 @@
 ---
 title: Manage the Awards and Recognition app
-description: Get started configuring and using the Awards and Recognition app.
+description: Get started creating custom experiences for your users in the Awards and Recognition app.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
