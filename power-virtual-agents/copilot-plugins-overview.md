@@ -63,7 +63,7 @@ Now when the copilot user asks to create a lead, the flow plugin will be trigger
 There are two categories of plugin:
 
 - Conversational plugins, which are similar to standard topics in Copilot Studio that you use to create a functional copilot. 
-- AI plugins, which let you connect your copilot to data or perform activities . <!--as [plugin actions within Copilot Studio](advanced-plugin-actions.md).-->
+- AI plugins, which let you connect your copilot to data or perform activities. 
 
 Both categories of plugin can be authored and edited in Copilot Studio. 
 
@@ -71,21 +71,37 @@ You can also create and edit some types of AI plugins in Power Apps, indicated i
 
 AI plugin type | Creation in Copilot Studio | Creation in Power Platform
 - | - | -
-AI builder dynamic prompts | [Create AI plugins for Microsoft Copilot](copilot-ai-plugins.md) | [Create a custom prompt (preview) in Power Automate or Power Apps](/ai-builder/create-a-custom-prompt?branch=pr-en-us-766) 
-Power Automate flows | [Create Power Automate flow plugins in Copilot Studio](copilot-flow-plugins.md) | Not available
-Power Platform custom connectors | [Create a connector AI plugin (preview) in](/connectors/create-a-connector-ai-plugin?branch=pr-en-us-1461)
-OpenAI plugins | [Create OpenAI plugins in Copilot Studio](copilot-openai-plugins.md) | Not available |
+AI builder dynamic prompts | [Generate content or extract insights with AI Builder dynamic prompts](copilot-ai-plugins.md#prompts) | [Create a custom prompt (preview) in Power Automate or Power Apps](/ai-builder/create-a-custom-prompt?branch=pr-en-us-766) 
+Power Automate flows | [Create custom automation with Power Automate flows](copilot-ai-plugins.md#flow) | Not available
+Power Platform custom connectors | [Update or get answers about external data with connectors](copilot-ai-plugins.md#connectors) | [Create a connector AI plugin (preview) in Power Automate or Power Apps](/connectors/create-a-connector-ai-plugin?branch=pr-en-us-1461)
+OpenAI plugins | [Add an OpenAI plugin](copilot-ai-plugins.md#openai) | Not available |
 
 During this preview, you can use plugins in Microsoft Copilot. You can't use plugins in custom copilots that you build with Microsoft Copilot Studio.
 
 ## Use plugins in Microsoft Copilot
 
 
-End users in your tenant can use the plugins you've created in their chats with Microsoft Copilot if:
+End users in your tenant can use the plugins in their chats with Microsoft Copilot if:
 
 1. Your Microsoft 365 tenant admin has <mark>[deployed the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](#).</mark>
 1. Your Power Platform environment admin has <mark>[enabled the M365 Copilot setting in the Power Platform admin center](#).</mark>
 1. The <mark>[end user has enabled the connection from within their chat with Microsoft Copilot](#)</mark>.
+
+**To deploy the Dynamics 365 and Copilot Studio app:**
+
+1. Sign in to the Microsoft 365 admin center with your admin account.
+2.	Expand **Settings** on the side navigation pane and select **Integrated apps**.
+3.	Go to the **Available apps** tab and select the entry **Dynamics 365 and Copilot Studio**. The app's details pane opens.
+4. Select **Deploy** to enable the app in chats with Microsoft Copilot.
+
+**To enable the M365 Copilot setting:**
+
+1. Sign in to the Power Platform admin center at https\://admin.powerplatform.microsoft.com with your admin account.
+2.	Select **Environments** on the side navigation pane and select **Integrated apps**.
+3.	Go to the **Available apps** tab and select the entry **Dynamics 365 and Copilot Studio**. The app's details pane opens.
+4. Select **Deploy** to enable the app in chats with Microsoft Copilot.
+
+
 <mark>
 If not, the user will need to create a connection. This can be done by directly visiting the Power platform Copilot plugins configuration portal.
 In addition, the user can ask Copilot about plugins, which will return a response with a link to the portal:
