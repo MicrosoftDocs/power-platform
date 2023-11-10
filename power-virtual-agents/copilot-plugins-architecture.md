@@ -23,7 +23,7 @@ The main goal of the Pl registry is to enable users to create a plugin once and 
 
 # A plugin is born
 
-![A screenshot of a computer Description automatically generated](media/image1.png)
+![A screenshot of a computer Description automatically generated](media/copilot-plugins-architecture/image1.png)
 
 Figure Plugin Authoring using Microsoft Copilot Studio
 
@@ -49,7 +49,7 @@ This is a sample set of the various copilots that integrate with the Biz Apps re
 
 # A plugin is used in Microsoft Copilot 
 
-![A screenshot of a computer Description automatically generated](media/image2.png)
+![A screenshot of a computer Description automatically generated](media/copilot-plugins-architecture/image2.png)
 
 Figure Plugin used in Microsoft Copilot
 
@@ -85,19 +85,19 @@ This represents the various data stores and systems where the data and business 
 
 For all the below flows, as a pre-requisite, an administrator uses the Microsoft Admin Center to configure the corresponding Integrated Apps and assigns them to users including the Copilot user referenced here. In these flows, we first see the **configuration phase** for a copilot user in Copilot for Teams. After the user signs in, the plugins applicable for that user are retrieved from the Plugin registry. The plugins that the user sees in their flyout will be the plugins that belong to the Integrated Apps their administrator has configured for them and the ones they have access to in the plugin registry. The user can then configure the plugins they want to use in the copilot experience in the flyout in their Copilot for Teams experience.
 
-![A screenshot of a computer program Description automatically generated](media/image3.png)
+![A screenshot of a computer program Description automatically generated](media/copilot-plugins-architecture/image3.png)
 
 Figure Flows for Dynamics 365 plugins
 
 In the runtime flow for the Dynamics 365 plugins, the copilot user's utterance of *"Get opportunities for ACME corp"* is mapped by the orchestrator to a set of candidate plugins. A plugin from the Dyanmics 365 is found to be best candidate and then executed translating the user's utterance to SQL against the Dynamic data the user has access to. The results are then returned to the user. Teams copilot can additionally add data from M365 and summarize the results.
 
-![A screenshot of a computer program Description automatically generated](media/image4.png)
+![A screenshot of a computer program Description automatically generated](media/copilot-plugins-architecture/image4.png)
 
 Figure Flow for Microsoft Copilot Studio plugins
 
 In the runtime flow for MCS prompt plugins, the user's utterance is again mapped to a plugin. In this case however the matching plugin is a prompt authored in Microsoft Copilot Studio. The prompt grounds data in Dataverse table Orders and calls into Open AI to summarize the results for order 123 and returns the summary to the user.
 
-![A screenshot of a computer program Description automatically generated](media/image5.png)
+![A screenshot of a computer program Description automatically generated](media/copilot-plugins-architecture/image5.png)
 
 Figure Flow for connector plugins
 
@@ -109,7 +109,7 @@ The configuration flow for Salesforce or other connector based plugins starts wi
 
 Microsoft Copilot Studio can be used to create copilots in addition to plugins. These copilots can be built by Dynamics 365 teams as well as third parties.
 
-![A screenshot of a computer Description automatically generated](media/image6.png)
+![A screenshot of a computer Description automatically generated](media/copilot-plugins-architecture/image6.png)
 
 Figure A plugin is used in Microsoft Copilot Studio copilots
 
@@ -117,7 +117,7 @@ The creator layer has been discussed before. If one looks closely, the plugin di
 
 ### Data and Control flows for some plugin types
 
-![A screenshot of a computer program Description automatically generated](media/image7.png)
+![A screenshot of a computer program Description automatically generated](media/copilot-plugins-architecture/image7.png)
 
 Figure Flow for prompt plugin types in MCS
 

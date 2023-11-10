@@ -13,44 +13,19 @@ ms.custom: plugin, connector, flow, advanced-authoring
 ms.collection: virtual-agent
 ---
 
-# Create and configure plugins (preview)
+Update or get answers about external data  
+Connector plugins let you define connector actions that can be invoked from AI surfaces in Power platform. Connector plugins require identification of actions that are enabled for use in copilot as well as capture of information that large language models require to effectively identify and utilize the plugin such as Summary and Description fields. 
+Follow these steps in order to create your connector plugin. Please note at this time, connector plugins are required to be certified before they can be used in M365 copilot. 
+1.	Select New Plugin on the Power Platform AI plugin page
+2.	Select Update or get answers about external data to get started creating a plugin using a connector
+ 
+3.	This automatically places you within the Custom connector editor page where you can open your connector from the available list or you can create a new one using the many options available including import of OpenAPI specs etc.
+ 
+4.	You will notice a new AI plugin tab in the custom connector wizard. Under Manifest details, add plugin information such as a summary and description. Now select the connector actions you would like to enable for copilot one at a time and provide helpful text descriptions to help LLM identify and utilize said actions.
+ 
+5.	Click on the input parameter in the “Request” section of the action. Type in the Description here. For selected action, where the input parameters don’t have descriptive names and descriptions, it is helpful to add human readable text to aid LLM to use these effectively. For example, a field “id” can be better described as the “Account Identifier” or b_date can be described as “Birth Day of Contact in MM/DD/YYYY format.”  Such descriptions help LLMs interact effectively with the plugin.
+ 
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-Create plugins in Microsoft Copilot Studio that can be used in your copilots to call connected services, perform actions, and provide answers for your copilot users without needing to manually author complex conversation flows. 
-
-
-Plugins are discrete, reusable building blocks that work across Power Platform, Dynamics 365, and Microsoft 365. All of the plugins within your <mark>environment? tenant? dataverse environment?</mark> are shared from a central plugin registry. This means that when you create or change a plugin and publish it, the changes are pushed to all of your copilots that use the plugin (unless you have [created a local override for individual copilots](#)).
-
-When you create a plugin, you use simple language to describe what the plugin should do, and then provide a data source or additional connection that the copilot should use when it determines the plugin should be used in a conversation. The copilot uses the plugin's description to determine when the plugin would be most useful, and will automatically ask the user for any additional information it needs for the plugin to work.
-
-
-This means you can create complex-seeming conversations without needing to manually create and design complex conversation flows with multiple question nodes in the authoring canvas.
-
-There are two categories of plugin:
-
-- Conversational plugins, which are similar to standard topics in Copilot Studio that you use to create a functional copilot. Admins enable these plugins in your tenant's instance of Microsoft Copilot so they can be used across your entire tenant.
-- AI plugins, which let you connect your copilot to data or perform activities as [plugin actions within Copilot Studio](advanced-plugin-actions.md).
-
-Both categories of plugin can be authored and edited in Copilot Studio. You can also [create and edit AI plugins in Power Apps](#aib doc, Angie).
-
-During this preview, you can create AI plugins from:
-
-- <mark>AI Builder dynamic prompts</mark>
-- <mark>Power Automate flows</mark>
-- [Power Platform connectors](/connectors/connectors)
-- <mark>OpenAI plugins</mark>
-
-
-
-## Related topics
-
-| Topic | Description |
-|-|-|
-| [Create conversational plugins for Microsoft Copilot (preview)](copilot-conversational-plugins.md)| Create plugins that can respond to a user's question with additional data.|
-| [Create AI plugins for Microsoft Copilot (preview)](copilot-ai-plugins.md)
-| [Use plugin actions in Microsoft Copilot Studio (preview)](advanced-plugin-actions.md) | 
-| [Power Platform connectors](copilot-connector-plugins.md) | Doc on this from AI plugins.docx
-| [OpenAI plugins](copilot-openai-plugins.md) | Doc on this
-| [Power Automate plugins](copilot-flow-plugins.md) | Docs on this
-| [AI Builder dynamic prompts] | Doc on this
+6.	Click "Create/Update Connector", and the connector's Swagger will be updated with appropriate annotations. 
+7.	Follow the instructions to certify the connector so that the plugin is available to use in M365 copilot. 
+Internal notes Additional information : <Link to public doc> based on Public documentation Connector Plugin Dev Experience for ISVs.docx Authoring section. Also, we should place link to certification section here. 
