@@ -64,3 +64,15 @@ Legend
 5. **Onboarding**: Select **Go** to go to the [**Onboarding**](overview.md#onboarding-screen) screen.
 6. **Workspace**: When you ask a question or upload data and inquire about the data, a workspace is generated. You can access all your workspaces from the Home screen.
 7. **Workspace name**: The name of your workspace. The default title of a workspace is **Untitled**. You can select the title and rename it.
+
+## Waiting room
+
+If Project "Sophia" reaches its full capacity during the preview period, you'll be placed in a waiting room queue until there's more capacity. You have the option to remain in the waiting room or ign up to be notified when Project Sophia becomes available. However, once the product is released to the public, there won't no waiting room.
+
+
+> [!Note]
+> If you chose to stay in the waiting room, don't refresh your browser as this will put you at the back of the queue.
+
+## Authenticated and un-authenticated experience
+
+If you haven't signed in to Project "Sophia", you won't be able to ask questions or upload any data. However, you can still access a limited unauthenticated experience that lets you to use sample data and get a feel for the look and layout of Project "Sophia", and view suggested next steps.
