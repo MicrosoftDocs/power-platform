@@ -38,7 +38,7 @@ The following operations are not blocked by this feature:
 
 ## Enable block unmanaged customizations
 
-This feature can be enabled or disabled from the **Features** area of the environment settings for production environments in the Power Platform admin center. By default, this setting is disabled. More information: 
+This feature can be enabled or disabled from the **Features** area of the environment settings for production environments in the Power Platform admin center. By default, this setting is disabled. More information: [Block unmanaged customizations](../admin/settings-features.md#block-unmanaged-customizations)
 
 ## See also
 
