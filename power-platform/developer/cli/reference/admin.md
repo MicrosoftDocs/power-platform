@@ -26,7 +26,9 @@ Work with your Power Platform Admin Account
 
 |Command|Description|
 |---------|---------|
-|[pac admin application](#pac-admin-application)|Work with Microsoft Entra ID applications.|
+|[pac admin application list](#pac-admin-application-list)|List Microsoft Entra ID applications registered under your tenant.|
+
+
 |[pac admin assign-group](#pac-admin-assign-group)|Assign group to target Dataverse environment with specified security role.|
 |[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target Dataverse environment with specified security role.|
 |[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
@@ -47,11 +49,39 @@ Work with your Power Platform Admin Account
 |[pac admin update-tenant-settings](#pac-admin-update-tenant-settings)|Update tenant settings.|
 
 
-## pac admin application
+## pac admin application list
 
-Work with Microsoft Entra ID applications.
+List Microsoft Entra ID applications registered under your tenant.
 
-[!INCLUDE [admin-application-remarks](includes/admin-application-remarks.md)]
+[!INCLUDE [admin-application-list-remarks](includes/admin-application-list-remarks.md)]
+
+## pac admin application register
+
+Register Microsoft Entra ID application with your tenant.
+
+[!INCLUDE [admin-application-register-intro](includes/admin-application-register-intro.md)]
+
+### Required Parameters for admin application register
+
+#### `application-id` `-id`
+
+Application Id
+
+[!INCLUDE [admin-application-register-remarks](includes/admin-application-register-remarks.md)]
+
+## pac admin application unregister
+
+Unregister Microsoft Entra ID application with your tenant.
+
+[!INCLUDE [admin-application-unregister-intro](includes/admin-application-unregister-intro.md)]
+
+### Required Parameters for admin application unregister
+
+#### `application-id` `-id`
+
+Application Id
+
+[!INCLUDE [admin-application-unregister-remarks](includes/admin-application-unregister-remarks.md)]
 
 ## pac admin assign-group
 
