@@ -35,7 +35,7 @@ The following examples show the use of the `pac power-fx run` command.
 
    This is the output you can expect:
 
-   ```text
+   ```powershell
    Connected to... Your Organization
    Connected as you@yourorg.onmicrosoft.com
 
