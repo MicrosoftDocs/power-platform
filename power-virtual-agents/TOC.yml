@@ -50,9 +50,9 @@
       href: nlu-authoring.md
     - name: AI features for Teams and Classic bots
       href: advanced-ai-features.md
-- name: Create and edit copilot plugins
+- name: Expand copilots with plugins
   items:
-    - name: Plugins overview
+    - name: Create and configure copilot plugins
       href: copilot-plugins-overview.md
     - name: Create conversational plugins for Microsoft Copilot (preview)
       href: copilot-conversational-plugins.md
@@ -60,12 +60,6 @@
       href: copilot-ai-plugins.md
     - name: Use plugin actions in Microsoft Copilot Studio (preview)
       href: advanced-plugin-actions.md
-    - name: Power Platform connectors
-      href: copilot-connector-plugins.md
-    - name: OpenAI plugins
-      href: copilot-openai-plugins.md
-    - name: Power Automate plugins
-      href: copilot-flow-plugins.md
 - name: Administer and manage
   items:
     - name: Assign licenses
