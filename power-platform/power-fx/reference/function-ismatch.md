@@ -19,7 +19,7 @@ contributors:
 
 # IsMatch, Match, and MatchAll functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: [PAC CLI](/power-platform/developer/cli/reference/power-fx)
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Tests for a match or extracts portions of a text string based on a pattern.
 
