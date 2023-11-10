@@ -125,7 +125,17 @@ Choose which provider to enable outbound calls from within customer engagement a
 |---------|-------------|---------------|
 | Preferred solution | Lets makers set which unmanaged solution will maintain their created and edited components that occur anywhere in Power Apps. If not set, all components for all makers not already in the context of an unmanaged solution are maintained in the Common Data Services Default Solution. More information: [Set the preferred solution](/power-apps/maker/data-platform/preferred-solution) | Off |
 
+## Block unmanaged customizations
+
+> [!IMPORTANT]
+> This is a preview feature.
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Block unmanaged customizations |  Prevents the creation of unmanaged customizations in Microsoft Dataverse production environments, which facilitates healthy application lifecycle management. More information:  | Off |
+
 ## Finance and Operations in Dataverse
+
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Enable Finance and Operations user impersonation in Dataverse | When enabled, the Finance and Operations application in this environment has permissions to impersonate Dataverse users. This allows users of Finance and Operations to make calls to Dataverse which run as that same user in Dataverse, using the Dataverse permissions assigned to that user. Only select this option if the Finance and Operations administrator is trusted with the same level of permissions in Dataverse as the Dataverse administrator. | Off |
