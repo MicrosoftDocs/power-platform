@@ -19,7 +19,7 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
-Use the account planning guide in Project "Sophia" to help you execute your sales plans and meet your revenue goals.
+Use the account planning guide in Project "Sophia" to help you generate account plans and meet your revenue goals.
 
 > [!NOTE]
 > Data strengths indicator is a useful tool for gaining insight into data and improving outcomes. Its purpose is to assist users who are unsure where to begin by providing guidance on which data to use for optimal results. The data indicator shouldn't be viewed as the sole source of data or the only data that should be provided.
