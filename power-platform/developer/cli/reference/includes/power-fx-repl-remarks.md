@@ -1,3 +1,1 @@
-### Remarks
-
-<!-- Add some comments specifically about the repl command and include links to the section of the tutorial and the formula reference -->
+This command provides a shell to use formulas listed in [Formula reference - Power Platform CLI](../../../../power-fx/formula-reference-pac-cli.md).

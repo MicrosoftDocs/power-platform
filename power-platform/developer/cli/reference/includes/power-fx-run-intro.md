@@ -2,68 +2,90 @@
 
 The following examples show the use of the `pac power-fx run` command.
 
-- [How to query Dataverse table](#How-to-query-Dataverse-table)
-- [Example scenario 2](#example-scenario-2)
-- [Here we use MID, IF, and Set functions](#Here-we-use-MID,-IF,-and-Set-functions)
+- [Query a Dataverse table](#query-a-dataverse-table)
+- [Use PowerFx functions](#use-powerfx-functions)
 
-<!-- Replace these placeholder examples with real examples -->
-### How to query Dataverse table
 
-For example, you have a file called "test-pfx.txt" with Power Fx expressions to query table Contacts, that are:
+> [!NOTE]
+> In both of these examples, you need to: 
+> 
+> 1. Create a file named `test-pfx.txt` with Power Fx expressions in a folder on your computer, like `c:\test`.
+>
+> 1. [Open a Windows PowerShell window](/powershell/scripting/windows-powershell/starting-windows-powershell), navigate to the `test` folder and run a command.
 
-```text
-// Show first 5 records in Contacts table
-FirstN(Contacts, 5)
-// To leave, type Exit() which is case sensitive
-Exit()
-```
 
-You will type below command to run the file without outputing Power Fx commands.
+### Query a Dataverse table
 
-```powershell
-pac power-fx run --file test-pfx.txt
-```
+> [!NOTE]
+> To query a Dataverse table, you have to create and select an auth profile. See [pac auth create](../auth.md#pac-auth-create) and [pac auth select](../auth.md#pac-auth-select).
 
-**Result you would get:**
+1. Add the following text to `test-pfx.txt` and save the file.
 
-```text
->> FirstN(Contacts, 5)
+   ```text
+   FirstN(Contacts, 5)
+   ```
 
-  contactid                                      fullname    ...
- ============================================== =========== =====
-  GUID("e03fa2ef-bd30-ee11-bdf3-000d3a5a7956")   Sh Nizar
-  GUID("386dc912-f52c-ee11-bdf4-000d3a5a7956")   Shafqat N
-  GUID("90a4fe1c-f52c-ee11-bdf4-000d3a5a7956")   Nizar S
-  GUID("e1f83423-f52c-ee11-bdf4-000d3a5a7956")   Al N
-  GUID("285c8d2b-f52c-ee11-bdf4-000d3a5a7956")   Sara H
+   This command will retrieve the first five contacts from Dataverse.
 
->>
+1. Run the following command:
 
-PS C:\Users\snizar>
-```
+   ```powershell
+   PS C:\test> pac power-fx run --file test-pfx.txt
+   ```
 
-### Here we use MID, IF, and Set functions
+   This is the output you can expect:
 
-For example, you have a file called "test-pfx.txt" with Power Fx expressions, that are:
+   ```text
+   Connected to... Your Organization
+   Connected as you@yourorg.onmicrosoft.com
 
-```text
-Set(x, 1)
-Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
-```
+   contactid                                      fullname           ...
+   ============================================== ================== =====
+   GUID("eeb27495-d127-ed11-9db1-00224804f8e2")   Yvonne McKay (sample)
+   GUID("cba0ed9e-d127-ed11-9db1-00224804f8e2")   Susanna Stubberod (sample)
+   GUID("cea0ed9e-d127-ed11-9db1-00224804f8e2")   Nancy Anderson (sample)
+   GUID("6cc7483c-7a77-ee11-8179-00224809f375")   Maria Campbell (sample)
+   GUID("49b0be2e-d01c-ed11-b83e-000d3a572421")   Sidney Higa (sample)
+   PS C:\test>
+   ```
 
-You will type below command to run the file outputing Power Fx commands by using --echo switch.
+### Use PowerFx functions
 
-```powershell
-pac power-fx run --file test-pfx.txt --echo
-```
+1. Add the following text to `test-pfx.txt` and save the file.
 
-**Result you would get:**
+   ```text
+   Set(x, 1)
+   Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
+   ```
 
-```text
->> Set(x, 1)
-x: 1
-true
+   This example shows how to use [Mid](../../../../power-fx/reference/function-left-mid-right.md), [If](../../../../power-fx/reference/function-if.md), and [Set](../../../../power-fx/reference/function-set.md) Power Fx functions.
 
->> Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
-Result: "X"
-```
+1. Run the following command:
+
+   ```powershell
+   PS C:\test> pac power-fx run --file test-pfx.txt
+   ```
+
+   This is the output you can expect:
+
+   ```powershell
+   PS C:\test> pac power-fx run --file test-pfx.txt
+   x: 1
+   true
+   Result: "X"
+   PS C:\test>
+   ```
+
+1. Add the `--echo` parameter and you can expect this output:
+
+   ```powershell
+   PS C:\test> pac power-fx run --file test-pfx.txt --echo
+   Set(x, 1)
+
+   x: 1
+   true
+   Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
+
+   Result: "X"
+   PS C:\test>
+   ```

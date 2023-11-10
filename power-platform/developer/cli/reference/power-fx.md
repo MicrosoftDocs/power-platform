@@ -32,9 +32,9 @@ Use the include files to add additional content to this topic.
 
 ## pac power-fx repl
 
-(Preview) Launch interactive Power Fx Read-Eval-Print-Loop. This is a Shell  where you can use formulas from the link on the top of the page **Formula reference - Power Platform CLI**.
+(Preview) Launch interactive Power Fx Read-Eval-Print Loop
 
-
+[!INCLUDE [power-fx-repl-remarks](includes/power-fx-repl-remarks.md)]
 
 ## pac power-fx run
 
@@ -54,9 +54,9 @@ Path of file to execute
 
 #### `--echo` `-e`
 
-If input file commands should echo back to output
+True if input commands should echo back to output
 
-This parameter requires **NO** value. It's a switch.
+This parameter requires no value. It's a switch.
 
 [!INCLUDE [power-fx-run-remarks](includes/power-fx-run-remarks.md)]
 
