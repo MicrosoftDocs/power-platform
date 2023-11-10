@@ -27,7 +27,7 @@ Copilots and generative AI features in [Microsoft Power Platform](/power-platfor
 
 However, these features aren't available in all regions and languages. Depending on where your enviroment is hosted, you may need to enable data movement across regions to use them. This article explains how to do that.
 
-## How data moveent across regions works
+## How data movement across regions works
 
 When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region**. That data is protected and secured at every step in ways that comply with all applicable privacy laws and regulations, such as the Europen Union data boundary. We might store it for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
 
