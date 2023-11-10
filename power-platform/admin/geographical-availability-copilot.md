@@ -40,18 +40,16 @@ The following table describes when and how data can move across regions for copi
 | France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 | Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 
-Depending on your environment region, as outlined in the above table, you may need to enable data to move across regions so that your users can take advantage of the copilot and generative AI features. The following section explains how to enable data movement across regions.
-
 ## Enable data movement across regions
-Depending on your environment region, you may need to enable data movement across regions. The following procedure explains how to do so.
+If your environment is hosted in a region that requires data movement across regions to use copilots and generative AI features, you need to consent to the terms of use on the Move data across regions option in the Power Platform admin center.
 
-1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-1. Select **Environments** in the navigation pane.
+1. In the left side panel, select **Environments**.
 
 1. Select your environment.
 
-1. Select **Edit** on the **Generative AI features** card.
+1. On the **Generative AI features** card, select **Edit**.
 
     :::image type="content" source="media/ai-not-allowed.svg" alt-text="Select **Edit** on the **Generative AI features** card.":::
 
@@ -79,7 +77,7 @@ More copilots and generative AI features will be available in the future.
 ## Region and language support
 Copilot and generative AI features of Power Platform and Dynamics 365 are supported differently in different regions.
 
-For more information about regions supported by Dynamics 365 copilots and generative AI features, see the following documentation:
+For information about regions where Dynamics 365 copilots and generative AI features are available, see the following documentation:
 
 - For Dynamics 36 Customer Insights - Data, see [Give consent to use Copilot in Customer Insights – Data](/dynamics365/customer-insights/data/copilot-global-consent).
 - For Dynamics 365 Customer Service, see [Copilot data movement across geographies (preview)](/dynamics365/customer-service/copilot-data-movement).
