@@ -86,6 +86,8 @@
                   href: signup-for-powerapps-admin.md
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
+                - name: Auto-claim policies for Power Apps licenses
+                  href: auto-claim-licensing.md
             - name: Power Automate
               items:
                 - name: Overview
@@ -224,6 +226,8 @@
                       href: settings-privacy-security.md
                     - name: Configure Dataverse search
                       href: configure-relevance-search-organization.md
+                    - name: Use /mention to link to records in Outlook web client
+                      href: link-records-Outlook-web.md
                 - name: Business
                   items:
                     - name: Business closures
