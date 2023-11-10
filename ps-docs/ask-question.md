@@ -21,21 +21,21 @@ contributors:
 
 When you can ask Project "Sophia" a question or upload data and ask questions about the data, it generates a AI-powered blueprint. 
 
-It's also important to select **Domains** when you use Project “Sophia.” Choosing a domain provides a better understanding of the context of your question. For instance, in the context of sales and marketing, the terms "hunters" and "farmers" hold distinct meanings that might not be apparent without that context. Similarly, there's commons acronyms that mean something different based on context.
+It can also be beneficial to select **Domains** when you use Project “Sophia”. Choosing a domain provides a better understanding of the context of your question. For instance, in the context of sales and marketing, the terms "hunters" and "farmers" hold distinct meanings that might not be apparent without that context. Similarly, there are commons acronyms that can mean something different based on context.
 
-Following these steps to ask a question:
+Follow these steps to ask a question:
 
 1. Go to [https://projectsophia.preview.microsoft.com](https://projectsophia.preview.microsoft.com).
 1. From the Home screen, select **New workspace**.
 1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
 1. Enter your question in the text box and then select **Generate**.
 
-You'll get more AI-powered information about your question including an overview and suggested next steps.
+You'll get an AI-powered blueprint in response to your question including an overview and suggested next steps.
 
 
 ## Ask questions about your data
 
-You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. For preview, the **connect to data** option isn’t available.
+You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. In future releases, you will also be able to simply **connect to data** instead of uploading.
 
 1. Use one of the following methods to ask questions about your data:
    - On the Home screen, select **go** on the **Onboarding** tile > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia."
@@ -45,7 +45,7 @@ You can upload a data file and ask questions about the data. The [supported file
 1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
 1. Select **Generate** or enter your question in the text box and then select **Generate**.
 
-Your data is analyzed to create a customized template that provides valuable insights, charts, and actionable steps.
+Your data is analyzed to create a blueprint that provides valuable insights, charts, and actionable steps.
 
 ### Supported data files
 
@@ -60,7 +60,7 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following li
   - Elements such as images, charts and macros can't be processed.
 - PDF:
   - The file must contain selectable text. You can test it by trying to highlight text within the PDF. If you can’t select or highlight the text, then it can't be processed.
-  - Use original digital documents or PDF that are converted directly from word processors or other digital sources. A scanned PDF doesn't work.
+  - Use original digital documents or PDF that are converted directly from word processors or other digital sources. A scanned PDF will not work.
 -	Encrypted or password-protected files aren’t supported.
 - If a PDF contains tables make sure the borders are clearly outlined. Avoid using any contrasting colors to differentiate between rows and columns.
 
