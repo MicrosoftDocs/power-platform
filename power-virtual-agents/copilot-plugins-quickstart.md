@@ -19,30 +19,9 @@ ms.collection: virtual-agent
 
 
 
-Create plugins in Microsoft Copilot Studio that can be used in your copilots across Microsoft products to call connected services, perform actions, and provide answers for your copilot users without needing to manually author complex conversation flows. 
+Create plugins in Microsoft Copilot Studio that can be used in your copilots to call connected services, perform actions, and provide answers for your copilot users without needing to manually author complex conversation flows. 
 
-Due to the cross-functional nature of copilot plugin building, the Microsoft 365 tenant and the Power Platform environment are connected when you [enable the M365 Copilot setting in the Power Platform admin center](#). 
-
-This allows you to use plugins in Microsoft Copilot for Microsoft 365 that leverage data and connections across Dynamics 365, Power Platform, and Microsoft 365.
-
-This article gives an overview of the ways you can create and use copilot plugins, and provides links for individual configuration steps.
-
-To get started creating, publishing, and using plugins in Microsoft Copilot, see the [Quickstart guide for creating plugins in Microsoft Copilot Studio](copilot-plugins-quickstart.md).
-
-## Prerequisites
-
-- You'll need an account for Microsoft Copilot Studio. 
-
-    > [!NOTE]
-    >  
-    > If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Microsoft Copilot Studio before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
-
-- You'll also need:
-  - Admin access to [A Microsoft 365 tenant](/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide) <mark>need roles</mark>
-  - Admin access to [A Power Platform environment](/power-platform/admin/environments-overview) <mark>need roles</mark>
-
-
-  ## Copilot plugins
+This article gives an overview of the ways you can create and use copilot plugins. To see the end to end work flow for creating, publishing, and using plugins in Microsoft Copilot
 
 Plugins are discrete, reusable building blocks that work across Power Platform, Dynamics 365, and Microsoft 365. All of the plugins within your [Microsoft 365 tenant](/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide#a-microsoft-365-tenant-defined) are shared from a central plugin registry in Dataverse. This means that when you create or change a plugin and publish it, the changes are pushed to all of your copilots that use the plugin.
 
@@ -58,16 +37,19 @@ Instead of manually designing a conversation flow within the copilot to account 
 
 Now when the copilot user asks to create a lead, the flow plugin will be triggered and the lead will be created from the data already provided by the user. The use can also ask for an abstract or summary, which will trigger the prompt plugin and return a summary of actions.
 
-### Plugin categories and types
+## Plugin categories
 
 There are two categories of plugin:
 
 - Conversational plugins, which are similar to standard topics in Copilot Studio that you use to create a functional copilot. 
 - AI plugins, which let you connect your copilot to data or perform activities . <!--as [plugin actions within Copilot Studio](advanced-plugin-actions.md).-->
 
-Both categories of plugin can be authored and edited in Copilot Studio. 
+Both categories of plugin can be authored and edited in Copilot Studio. You can also create and edit some types of AI plugins in Power Apps.
 
-You can also create and edit some types of AI plugins in Power Apps, indicated in the following table:
+
+## Create plugins
+
+During this preview, you can create AI plugins in multiple places across Power Platform and Microsoft Copilot Studio.
 
 AI plugin type | Creation in Copilot Studio | Creation in Power Platform
 - | - | -
@@ -76,9 +58,8 @@ Power Automate flows | [Create Power Automate flow plugins in Copilot Studio](co
 Power Platform custom connectors | [Create a connector AI plugin (preview) in](/connectors/create-a-connector-ai-plugin?branch=pr-en-us-1461)
 OpenAI plugins | [Create OpenAI plugins in Copilot Studio](copilot-openai-plugins.md) | Not available |
 
-During this preview, you can use plugins in Microsoft Copilot. You can't use plugins in custom copilots that you build with Microsoft Copilot Studio.
 
-## Use plugins in Microsoft Copilot
+## Enable plugins for use in Microsoft Copilot
 
 
 End users in your tenant can use the plugins you've created in their chats with Microsoft Copilot if:
