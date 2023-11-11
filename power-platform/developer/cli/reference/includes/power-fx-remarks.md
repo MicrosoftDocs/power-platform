@@ -1,6 +1,6 @@
 ## Troubleshooting
 
-The following are steps to troubleshoot errors you may encounter when using `pac power-fx` commands.
+The following are steps to troubleshoot errors you might encounter when using `pac power-fx` commands.
 
 ### Error when no Dataverse authentication profile exists
 
@@ -22,13 +22,13 @@ Error 18-63: The specified column 'firstname' does not exist.
 Error 0-64: The function 'Collect' has some invalid arguments.
 ```
 
-To resolve this, create a universal authentication profile associated with a Dataverse environment .
+To resolve errors like these, create a universal authentication profile associated with a Dataverse environment.
 
 1. Run the command [pac auth list](../auth.md#pac-auth-list).
 
-   You may see a result like the following that includes a `UNIVERSAL` authentication profile with no Url indicating it is associated with a Dataverse environment.
+   You might see a result like the following that includes a `UNIVERSAL` authentication profile with no Url indicating it's associated with a Dataverse environment.
    
-   ```
+   ```powershell
    Index Active Kind      Name Friendly Name Url User                Cloud  Type
    [1]   *      UNIVERSAL                        you@yourcompany.com Public OperatingSystem
    ```

@@ -12,7 +12,7 @@ The following examples show the use of the `pac power-fx run` command.
 > 
 > 1. Create a file named `test-pfx.txt` with Power Fx expressions in a folder on your computer, like `c:\test`.
 >
-> 1. [Open a Windows PowerShell window](/powershell/scripting/windows-powershell/starting-windows-powershell), navigate to the `test` folder and use the `run` command specifying the file that contains the commands: `pac power-fx run --file test-pfx.txt`.`
+> 1. [Open a Windows PowerShell window](/powershell/scripting/windows-powershell/starting-windows-powershell), navigate to the `test` folder and use the `run` command specifying the file that contains the commands: `pac power-fx run --file test-pfx.txt`.
 >
 > To use Dataverse tables, you have to create and select an auth profile. See [pac auth create](../auth.md#pac-auth-create) and [pac auth select](../auth.md#pac-auth-select).
 > 
@@ -29,13 +29,13 @@ The following examples show the use of the `pac power-fx run` command.
    Collect(Contacts, { firstname: "Patti", lastname: "Fernandez" })
    ```
    
-1. Run the following command:
+1. Run this command:
 
    ```powershell
    PS C:\test> pac power-fx run --file test-pfx.txt
    ```
    
-   This is the output you can expect:
+   You can expect output like the following:
 
    ```powershell
    {contactid:GUID("80eb0c02-9180-ee11-8179-0022482a40c7"), fullname:"Megan Bowen", ...}
@@ -47,21 +47,21 @@ The following examples show the use of the `pac power-fx run` command.
 ### Query a Dataverse table
 
 
-1. Add the following text to `test-pfx.txt` and save the file.
+1. Add this text to `test-pfx.txt` and save the file.
 
    ```powerapps-dot
    FirstN(Contacts, 5)
    ```
 
-   This command will retrieve the first five contacts from Dataverse.
+   This command retrieves the first five contacts from Dataverse.
 
-1. Run the following command:
+1. Run this command:
 
    ```powershell
    PS C:\test> pac power-fx run --file test-pfx.txt
    ```
 
-   This is the output you can expect:
+   You can expect output like the following:
 
    ```powershell
    Connected to... Your Organization
@@ -94,7 +94,7 @@ The following examples show the use of the `pac power-fx run` command.
    PS C:\test> pac power-fx run --file test-pfx.txt
    ```
 
-   This is the output you can expect:
+   You can expect output like the following:
 
    ```powershell
    PS C:\test> pac power-fx run --file test-pfx.txt

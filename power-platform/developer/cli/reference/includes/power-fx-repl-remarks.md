@@ -38,7 +38,7 @@ Run the following command to get help about all the commands that are available 
 Help()
 ```
 
-The Power Fx repl responds with the following:
+The Power Fx repl responds with the following output:
 
 ```text
   Abs             Acos            Acot            AddColumns      And
@@ -72,7 +72,7 @@ The Power Fx repl responds with the following:
 ```
 
 > [!NOTE]
-> These commands will change over time to include more commands. It should be synchronized with the documented [currently available commands](../../../../power-fx/formula-reference-pac-cli.md)
+> These commands will change over time to include more commands. It should be synchronized with the documented [currently available commands](../../../../power-fx/formula-reference-pac-cli.md).
 
 ##### Exit
 
