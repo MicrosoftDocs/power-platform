@@ -30,9 +30,6 @@ The Power Fx repl responds with the following:
 {contactid:GUID("118d7b47-8f80-ee11-8179-0022482a40c7"), fullname:"Patti Fernandez", ...}
 ```
 
-> [!NOTE]
-> Please note the known issue: [All data operations use default environment](power-fx-remarks.md#all-data-operations-use-default-environment)
-
 ##### Help
 
 Run the following command to get help about all the commands that are available in Power Fx repl:
