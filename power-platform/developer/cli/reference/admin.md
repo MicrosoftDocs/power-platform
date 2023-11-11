@@ -27,8 +27,8 @@ Work with your Power Platform Admin Account
 |Command|Description|
 |---------|---------|
 |[pac admin application list](#pac-admin-application-list)|List Microsoft Entra ID applications registered under your tenant.|
-
-
+|[pac admin application register](#pac-admin-application-register)|Register Microsoft Entra ID application with your tenant.|
+|[pac admin application unregister](#pac-admin-application-unregister)|Unregister Microsoft Entra ID application with your tenant.|
 |[pac admin assign-group](#pac-admin-assign-group)|Assign group to target Dataverse environment with specified security role.|
 |[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target Dataverse environment with specified security role.|
 |[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
