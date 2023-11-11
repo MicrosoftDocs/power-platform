@@ -2,26 +2,55 @@
 
 The following examples show the use of the `pac power-fx run` command.
 
+- [Create Dataverse records](#create-dataverse-records)
 - [Query a Dataverse table](#query-a-dataverse-table)
 - [Use PowerFx functions](#use-powerfx-functions)
 
 
 > [!NOTE]
-> In both of these examples, you need to: 
+> In each of these examples, you need to:
 > 
 > 1. Create a file named `test-pfx.txt` with Power Fx expressions in a folder on your computer, like `c:\test`.
 >
-> 1. [Open a Windows PowerShell window](/powershell/scripting/windows-powershell/starting-windows-powershell), navigate to the `test` folder and run a command.
+> 1. [Open a Windows PowerShell window](/powershell/scripting/windows-powershell/starting-windows-powershell), navigate to the `test` folder and use the `run` command specifying the file that contains the commands: `pac power-fx run --file test-pfx.txt`.`
+>
+> To use Dataverse tables, you have to create and select an auth profile. See [pac auth create](../auth.md#pac-auth-create) and [pac auth select](../auth.md#pac-auth-select).
+
+Please note the known issue: [All data operations use default environment](power-fx-remarks.md#all-data-operations-use-default-environment)
+
+### Create Dataverse records
+
+1. Add the following text to `test-pfx.txt` and save the file.
+
+   ```powerapps-dot
+   Collect(Contacts, { firstname: "Megan", lastname: "Bowen" })
+   Collect(Contacts, { firstname: "Garth", lastname: "Forth" })
+   Collect(Contacts, { firstname: "Adele", lastname: "Vance" })
+   Collect(Contacts, { firstname: "Patti", lastname: "Fernandez" })
+   ```
+   
+1. Run the following command:
+
+   ```powershell
+   PS C:\test> pac power-fx run --file test-pfx.txt
+   ```
+   
+   This is the output you can expect:
+
+   ```powershell
+   {contactid:GUID("80eb0c02-9180-ee11-8179-0022482a40c7"), fullname:"Megan Bowen", ...}
+   {contactid:GUID("81eb0c02-9180-ee11-8179-0022482a40c7"), fullname:"Garth Forth", ...}
+   {contactid:GUID("82eb0c02-9180-ee11-8179-0022482a40c7"), fullname:"Adele Vance", ...}
+   {contactid:GUID("83eb0c02-9180-ee11-8179-0022482a40c7"), fullname:"Patti Fernandez", ...}
+   ```
 
 
 ### Query a Dataverse table
 
-> [!NOTE]
-> To query a Dataverse table, you have to create and select an auth profile. See [pac auth create](../auth.md#pac-auth-create) and [pac auth select](../auth.md#pac-auth-select).
 
 1. Add the following text to `test-pfx.txt` and save the file.
 
-   ```text
+   ```powerapps-dot
    FirstN(Contacts, 5)
    ```
 
@@ -53,7 +82,7 @@ The following examples show the use of the `pac power-fx run` command.
 
 1. Add the following text to `test-pfx.txt` and save the file.
 
-   ```text
+   ```powerapps-dot
    Set(x, 1)
    Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
    ```

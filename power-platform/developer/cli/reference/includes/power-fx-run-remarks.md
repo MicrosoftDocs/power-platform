@@ -1,6 +1,3 @@
-<!-- 
-### Remarks
+## Remarks
 
-This is a good place to put general information links that aren't essential to success, but need to be documented.
-
--->
+Please note the known issue: [All data operations use default environment](power-fx-remarks.md#all-data-operations-use-default-environment)
