@@ -64,17 +64,17 @@ To resolve this, create an authentication profile associated with a Dataverse en
    PS C:\test> pac auth list
    Index Active Kind      Name           Friendly Name        Url                                   User                  Cloud  Type
    [1]   *      UNIVERSAL                                                                           you@yourcompany.com   Public OperatingSystem
-   [2]   *      DATAVERSE ConnectionName YourOrganization     https://yourcompany.crm.dynamics.com/ you@yourcompany.com Public User
+   [2]   *      DATAVERSE ConnectionName YourOrganization     https://yourcompany.crm.dynamics.com/ you@yourcompany.com   Public User
    
    PS C:\test>
    ```
 
 1. Select the DATAVERSE environment to make it the default profile using the [pac auth select](../auth.md#pac-auth-select) command.
 
-```powershell
-PS C:\test> pac auth select --index 2
-New default profile:
-    * DATAVERSE ConnectionName                 https://yourcompany.crm.dynamics.com/          : you@yourcompany.com              Public
+   ```powershell
+   PS C:\test> pac auth select --index 2
+   New default profile:
+      * DATAVERSE ConnectionName                 https://yourcompany.crm.dynamics.com/          : you@yourcompany.com              Public
 
-PS C:\test>
-```
+   PS C:\test>
+   ```

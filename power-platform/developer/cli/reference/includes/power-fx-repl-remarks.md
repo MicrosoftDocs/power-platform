@@ -75,7 +75,7 @@ The Power Fx repl responds with the following:
 ```
 
 > [!NOTE]
-> These commands will change overtime to include more commands. It should be synchronized with the documented [currently available commands](../../../../power-fx/formula-reference-pac-cli.md)
+> These commands will change over time to include more commands. It should be synchronized with the documented [currently available commands](../../../../power-fx/formula-reference-pac-cli.md)
 
 ##### Exit
 
