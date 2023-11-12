@@ -107,7 +107,7 @@ Other elements include:
 
 **[Connection](reference/signals.md)** – Returns information about your network connection.
 
-**[Copy](reference/function-copy.md)** - Copies text to the clipboard on the device where the app is running.
+**[Copy](reference/function-copy.md)** – Copies text to the clipboard on the device where the app is running.
 
 **[Count](reference/function-table-counts.md)** – Counts table records that contain numbers.
 
@@ -143,7 +143,7 @@ Other elements include:
 
 **[Defaults](reference/function-defaults.md)** – Returns the default values for a data source.
 
-**[Degrees](reference/function-trig.md)** - Converts radians to degrees.
+**[Degrees](reference/function-trig.md)** – Converts radians to degrees.
 
 **[Disable](reference/function-enable-disable.md)** – Disables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
 
@@ -175,7 +175,7 @@ Other elements include:
 
 **[Exit](reference/function-exit.md)** – Exits the currently running app and optionally signs out the current user.
 
-**[Exp](reference/function-numericals.md)** - Returns _e_ raised to a power.
+**[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
 
 ## F
 
@@ -201,7 +201,7 @@ Other elements include:
 
 **[Hex2Dec](reference/function-hexdec.md)** – Convert a hexadecimal text string to a number.
 
-**[Host](reference/object-host.md)** - Provides information about the current host running the app.
+**[Host](reference/object-host.md)** – Provides information about the current host running the app.
 
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
 
@@ -210,7 +210,7 @@ Other elements include:
 
 **[If](reference/function-if.md)** – Returns one value if a condition is true and another value if not.
 
-**[IfError](reference/function-iferror.md)** - Detects errors and provides an alternative value or takes action.
+**[IfError](reference/function-iferror.md)** – Detects errors and provides an alternative value or takes action.
 
 **[in](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
 
@@ -240,7 +240,7 @@ Other elements include:
 
 ## J
 
-**[JSON](reference/function-json.md)** - Generates a JSON text string for a table, a record, or a value.
+**[JSON](reference/function-json.md)** – Generates a JSON text string for a table, a record, or a value.
 
 ## L
 
@@ -312,7 +312,7 @@ Other elements include:
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
-**[PDF](reference/function-pdf.md)** - Export contents from the current screen to an object for use in multiple scenarios.
+**[PDF](reference/function-pdf.md)** – Export contents from the current screen to an object for use in multiple scenarios.
 
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
 
@@ -324,7 +324,7 @@ Other elements include:
 
 ## R
 
-**[Radians](reference/function-trig.md)** - Converts degrees to radians.
+**[Radians](reference/function-trig.md)** – Converts degrees to radians.
 
 **[Rand](reference/function-rand.md)** – Returns a pseudo-random number between 0 and 1.
 
@@ -416,7 +416,7 @@ Other elements include:
 
 **[Table](reference/function-table.md)** – Creates a temporary table.
 
-**[Tan](reference/function-trig.md)** - Returns the tangent of an angle specified in radians.
+**[Tan](reference/function-trig.md)** – Returns the tangent of an angle specified in radians.
 
 **[Text](reference/function-text.md)** – Converts any value and formats a number or date/time value to a string of text.
 
@@ -432,7 +432,7 @@ Other elements include:
 
 **[Today](reference/function-now-today-istoday.md)** – Returns the current date-only value.
 
-**[Trace](reference/function-trace.md)** - Provide additional information in your test results.
+**[Trace](reference/function-trace.md)** – Provide additional information in your test results.
 
 **[Trim](reference/function-trim.md)** – Removes extra spaces from the ends and interior of a string of text.
 
