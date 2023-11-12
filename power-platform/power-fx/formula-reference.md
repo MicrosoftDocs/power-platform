@@ -171,7 +171,7 @@ Other elements include:
 
 **[Errors](reference/function-errors.md)** – Provides error information for previous changes to a data source.
 
-**[exactin](reference/operators.md #in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
+**[exactin](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
 
 **[Exit](reference/function-exit.md)** – Exits the currently running app and optionally signs out the current user.
 
@@ -212,7 +212,7 @@ Other elements include:
 
 **[IfError](reference/function-iferror.md)** - Detects errors and provides an alternative value or takes action.
 
-**[in](reference/operators.md #in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
+**[in](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
 
 **[Index](reference/function-first-last.md)** – Returns a record from a table based on ordered position.
 
@@ -306,7 +306,7 @@ Other elements include:
 
 **[Param](reference/function-param.md)** – Access parameters passed to a canvas app when launched.
 
-**[Parent](reference/operators.md #self-and-parent-operators)** – Provides access to a container control's properties.
+**[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
 
 **[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
 
@@ -374,7 +374,7 @@ Other elements include:
 
 **[Select](reference/function-select.md)** – Simulates a select action on a control, causing the **OnSelect** formula to be evaluated.
 
-**[Self](reference/operators.md #self-and-parent-operators)** – Provides access to the properties of the current control.
+**[Self](reference/operators.md#self-and-parent-operators)** – Provides access to the properties of the current control.
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
 
@@ -420,9 +420,9 @@ Other elements include:
 
 **[Text](reference/function-text.md)** – Converts any value and formats a number or date/time value to a string of text.
 
-**[ThisItem](reference/operators.md #thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a gallery or form control.
+**[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a gallery or form control.
 
-**[ThisRecord](reference/operators.md #thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a record scope function, such as **ForAll**, **With**, and **Sum**.
+**[ThisRecord](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a record scope function, such as **ForAll**, **With**, and **Sum**.
 
 **[Time](reference/function-date-time.md)** – Returns a date/time value, based on **Hour**, **Minute**, and **Second** values.
 
