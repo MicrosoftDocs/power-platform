@@ -8,7 +8,7 @@ contributors:
 - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/26/2023
+ms.date: 11/10/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -39,23 +39,23 @@ Be sure to check back often for new templates that become available.
 
 :::row:::
    :::column span="":::
-      ![SAP Procurement](media/overview/sap-procure-icon-sq.png "SAP Procurement") <br> [SAP Procurement](https://aka.ms/AccessSAPProcurementTemplate) <br> Transform your view of SAP procurement data
+      ![SAP Procurement](media/overview/sap-procure-icon-sq.png "SAP Procurement") <br> Transform the view of SAP procurement data <br> [SAP Procurement Learn documentation](https://aka.ms/LearnSAPProcurementTemplate) <br> [SAP Procurement on AppSource](https://aka.ms/AccessSAPProcurementTemplate)  
    :::column-end:::
    :::column span="":::
-      ![Employee Kudos](media/overview/kudos-icon-sq.png "Employee Kudos") <br> [Employee Kudos](https://aka.ms/AccessEmployeeKudosTemplate) <br> Give and receive recognition for work
+      ![Employee Kudos](media/overview/kudos-icon-sq.png "Employee Kudos") <br> Enable an employee recognition program <br> [Employee Kudos Learn documentation](https://aka.ms/LearnEmployeeKudosTemplate) <br> [Employee Kudos on AppSource](https://aka.ms/AccessEmployeeKudosTemplate)
            :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Awards and Recognition](media/overview/awards-req-icon-sq.png "Awards and Recognition") <br> [Awards and Recognition](https://aka.ms/AccessAwardsandRecognitionTemplate) <br> Facilitate an employee awards program
+      ![Awards and Recognition](media/overview/awards-req-icon-sq.png "Awards and Recognition") <br> Facilitate an employee awards program <br>[Awards and Recognition Learn documentation](https://aka.ms/LearnAwardsAndRecognitionTemplate) <br> [Awards and Recognition on AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate)
    :::column-end:::
    :::column span="":::
-      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> [Onboarding Buddy](https://aka.ms/AccessOnboardingBuddyTemplate) <br> Match new employees to _Buddies_
+      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> Match new employees to _Buddies_ <br> [Onboarding Buddy Learn documentation](https://aka.ms/LearnOnboardingBuddyTemplate)<br> [Onboarding Buddy on AppSource](https://aka.ms/AccessOnboardingBuddyTemplate) <br> 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Hardware Request and Management](media/overview/hrm-icon-sq.png "Hardware Request and Management") <br> [Hardware Request and Management](https://aka.ms/AccessHardwareRequestandManagementTemplate) <br> Manage your company's hardware and requests
+      ![Hardware Request and Management](media/overview/hrm-icon-sq.png "Hardware Request and Management") <br> Manage hardware requests and assets<br> [Hardware Request and Management Learn documentation](https://aka.ms/LearnHardwareRequestManagement) <br>[Hardware Request and Management on AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
    :::column-end:::
 :::row-end:::
 
