@@ -23,7 +23,7 @@ Review the requirements, identify opportunities and develop a plan of action tha
 
 ### Confirm licensing
 
-Confirm your organization has the necessary licensing to use the template. You will need one of the specified Power Apps plans and
+Confirm your organization has the necessary licensing to use enterprise templates. You need:
 
 - One of the following Power Apps plans:
 
@@ -38,10 +38,12 @@ Confirm your organization has the necessary licensing to use the template. You w
 
 - A Power BI Pro or higher license. More information: [Pricing and Product Comparison](https://powerbi.microsoft.com/pricing/)
 
-More license details are available in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
+More information: [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 > [!TIP]
-> A free Developer Plan combined with a free Power BI in Microsoft Fabric free account is a great way to install the template for evaluation purposes. More information: [Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/)
+> A free Developer Plan combined with a free Power BI in Microsoft Fabric free account is a great way to install the template for evaluation purposes.
+>
+> More information: [Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/)
 
 ### Set up environments and data policies
 
@@ -52,54 +54,66 @@ It's important to have a cohesive environment and data policy strategy and setup
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
   - Power Platform Administrator to create environments if needed
 
-- **Environments** - Follow best practices in setting up and managing environments[Environment overview]
+    More information: [Microsoft Power Platform admin](/power-platform/admin/)
+
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
   - A Power Platform Environment with a Dataverse database installed is set up
   - Environment Maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
+    More information: [Environments overview](/power-platform/admin/environments-overview)
+
 - **Data loss prevention policies** - Ensure the environment has access to connectors used by the template:
 
-  - Dataverse
-  - Office 365 Outlook
-  - Office 365 Users
-  - Approvals
-  - Teams
-  - Cards for Power Apps
+  - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
+  - [Office 365 Outlook connector](/connectors/office365/)
+  - [Office 365 Users connector](/connectors/office365users/)
+  - [Approvals](/connectors/approvals/)
+  - [Teams](/connectors/teams/)
+  - [Cards for Power Apps](/connectors/cardsforpowerapps/)
   
-More information: [Environment overview], [Data loss prevention policies]
+  More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
 
 ## Step 2: Create connections
 
+Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be manually set up.
+
 The installation requires several connections. It's best to create connections before importing the template to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows. Existing connections can also be used.
 
-If you want to create the connection in advance, go to **Connections**, and select **+ New Connection** for the following connections:
+To create connections in advance, take these steps:
 
-- Dataverse
-- Office 365 Outlook
-- Office 365 Users
-- Approvals
-- Teams
-- Cards for Power Apps
+1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/)
+1. Go to **Connections** and select **+ New Connection** for the following connections:
 
-After setup, your list will look like this:
+    - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
+    - [Office 365 Outlook connector](/connectors/office365/)
+    - [Office 365 Users connector](/connectors/office365users/)
+    - [Approvals](/connectors/approvals/)
+    - [Teams](/connectors/teams/)
+    - [Cards for Power Apps](/connectors/cardsforpowerapps/)
+
+After you create all your connections, your list should look like this example:
+
+:::image type="content" source="media/install/hrm-install-connect.png" alt-text="Screenshot of list of connectors created for your app.":::
+More information: [Manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
 
 ## Step 3: Install Approvals solution
 
-The Hardware Request & Management enterprise template leverages Power Automate Approvals to approve or reject the request. By default, Power Platform environments are not setup with the required Approvals database that gets created the first time a flow with the Approvals connector is run in that environment by an administrator. Perform these steps to create the Approvals database:
+The Hardware Request and Management template leverages Power Automate Approvals to approve or reject the request. By default, Power Platform environments are not setup with the required Approvals database that gets created the first time a flow with the Approvals connector is run in that environment by an administrator. Perform these steps to create the Approvals database:
 
-1. Go to the Power Automate maker portal and select your targeted deployment environment
-1. Select **+ Create** in left-side panel
-1. Select **Instant cloud flow** underneath the *Start from blank* section
-1. Choose **Manually trigger a flow** and then **Create**
-1. Select **+ New step**
-1. Search on *Approvals* and choose **Create an approval**
+1. Go to the [Power Automate maker portal](https://make.preview.powerautomate.com/environments/) and select your targeted deployment environment.
+1. Select **+ Create** on left-side panel.
+1. Select **Instant cloud flow** underneath the *Start from blank* section.
+1. Choose **Manually trigger a flow** and then select **Create**.
+1. Select **+ New step**.
+1. Search on *Approvals* and choose **Create an approval**.
 1. Enter the following properties on the *Create an approval* step:
     - **Approval type** – *Approve/Reject – First to respond*
     - **Title** – *Test*
     - **Assigned to** – *select your email address*
-1. Select **Save**
-1. Select **Test Manually** and then **Test** again
-1. Select **Continue** and then **Run flow**, followed by **Done**
+1. Select **Save**.
+1. Select **Test Manually** and then **Test** again.
+1. Select **Continue** and then **Run flow**, followed by **Done**.
 1. *Delete* the flow you just created, as it is no longer needed.
 
 > [!NOTE]
@@ -110,20 +124,38 @@ More information: [Get started with Power Automate approvals](/power-automate/ge
 
 ## Step 4: Install solution files
 
-You can access the template on AppSource and install it into the Power Platform environment you set up for it. Additionally, both managed and unmanaged versions of the solution files can be downloaded from the Templates for Power Platform GitHub site and manually imported into your environment according to your organization's requirements.
+There are two solution installation options available for you to consider:
 
-To install from AppSource:
+- You can select the *Get it now* button on the template's AppSource offer page and it automatically takes you to an *install window* in the Power Platform admin center.
+- You can download either a *managed* or an *unmanaged* version of the solution files and manually import them into your environment according to your organization's requirements.
 
-1. Go to the *Hardware Request & Management template in AppSource* and select **Get it now**
-1. Select the *environment* that you want to install the template into
-1. Agree to the *Terms and Privacy Statements* by checking the boxes
-1. Select **Install** and view the installation status. After the installation is complete, the status shows as *Installed*
+> [!TIP]
+>
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Hardware Request and Management template.
+
+### Install from AppSource
+
+You can easily access and install the Hardware Request and Management template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
+
+1. Go to the [Hardware Request and Management template on AppSource](https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa-hardwarerequest-andmanagement-preview?flightCodes=e238631598a84d98974a43115813366d&tab=Overview) and select **Get it now**. This takes you to the *Install Hardware Request and Management Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+:::image type="content" source="media/install/hrm-install-env.png" alt-text="Screenshot of the modal dialog window where you select the environment you set up for the template.":::
+1. Select the developer *environment* that you prepared for the template.
+1. Agree to the *Terms and Privacy Statements* by checking the boxes.
+1. Select **Install** and view the installation status. After the installation is complete, the status shows as *Installed*.
 
 More information: [AppSource](https://appsource.microsoft.com/en-US/)
 
-To download from GitHub and manually install:
+> [!IMPORTANT]
+> Two solutions are always installed in your environment:
+>
+> - **IT Base**. Contains common foundational components that all information technology (IT) solutions use. This includes components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Hardware Request and Management**. Contains all the components needed to enable the implementation of the Hardware Request and Management program within an organization.
 
-1. Download the following Managed or Unmanaged solution files:
+### Download and manually install solution files
+
+You also have the option to download *managed* or *unmanaged* solution files and manually install into your prepared environment according to your organization's requirements:
+
+1. Download the following Managed *or* Unmanaged solution files:
 
     - Managed
       - [mpa_ITBase_managed.zip](https://aka.ms/ITBaseManagedSolution)
@@ -131,25 +163,20 @@ To download from GitHub and manually install:
     - Unmanaged
       - [mpa_ITBase.zip](https://aka.ms/ITBaseUnManagedSolution)
       - [mpa_HardwareRequestAndManagement.zip](https://aka.ms/HardwareRequestAndManagementUnManagedSolution)
-  
-   > [!TIP]
-  >
-  > You can log your questions and get support for the Hardware Request & Management template at the [Templates-for-Power-Platform](https://github.com/microsoft/Templates-for-Power-Platform/issues) GitHub project site.
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
-1. Select **Solutions** in the left-side panel
-1. Select **Import solution**
-1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_ITBase* file downloaded in previous step
-1. Select **Next**
+1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the *environment* you prepared for the solution.
+1. Select **Solutions** on the left-side panel.
+1. Select **Import solution**.
+1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_ITBase* file downloaded in previous step.
+1. Select **Next**.
 1. Select **Import**. This starts the import process of the *IT Base* solution
-1. Wait for the *IT Base* solution to finish importing. The import process can take a few minutes at which point you will be notified with a *Success* message
-1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_HardwareRequestAndManagement* file downloaded in previous step
-1. Select **Next** and **Next** again
-1. For each of the connections listed, select the *existing connection that was created in the previous step*
-1. Select **Next**
-1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment
-1. Select **Import** which will start the import process of the *Hardware Request and Management* solution
-Wait for the "Hardware Request and Management" solution to finish importing which can take a few minutes at which point you will be notified with a *Success* message
+1. Wait for the *IT Base* solution to finish importing. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
+1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_HardwareRequestAndManagement* file downloaded in previous step.
+1. Select **Next** and **Next** again.
+1. For each of the connections listed, select the *existing connection that was created in the previous step*.
+1. Select **Next**.
+1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment.
+1. Select **Import** which will start the import process of the *Hardware Request and Management* solution. Wait for the *Hardware Request and Management* solution to finish importing. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
@@ -162,17 +189,17 @@ Additionally, connection references allow makers to configure flows that allow t
 To update environment variables, take these steps:
 
 1. Go to Power Apps studio and select the environment you installed the solution in
-1. Select **apps** on the left-side panel
-1. Select the *Hardware Request canvas app* row, **vertical ellipsis** > **Details** > Details and copy the URL to a notepad or something similar
-1. Repeat the same step for the *Hardware Request and Management Model-driven app*
-1. Select **Solutions** on the left-side panel
+1. Select **apps** on the left-side panel.
+1. Select the *Hardware Request canvas app* row, **vertical ellipsis** > **Details** > *Hardware Request Details*. Copy the URL to a notepad.
+1. Repeat the same step for the *Hardware Request and Management Model-driven app*.
+1. Select **Solutions** on the left-side panel.
 
    > [!NOTE]
    >
-   > If you manually installed unmanaged version of Hardware Request and Management solution file from GitHub, there is no need to create a new solution to add the environment variable and connection references to. You can simply edit these components directly in the existing unmanaged solution file and can skip to step eight.
+   > If you manually installed an *unmanaged version of Hardware Request and Management solution file* from GitHub, there is no need to create a new solution to add the environment variable and connection references to. Simply edit these components directly in the existing unmanaged solution file.
 
-1. Select **+ New solution** and populate the properties
-1. Select **Add existing** > **More** > **Environment variable**
+1. Select **+ New solution** and populate the properties.
+1. Select **Add existing** > **More** > **Environment variable**.
 1. Select both the *Hardware Request and Management* URL and *Hardware Request App* URL variables
 1. Select **Next** and then **Add**
 
@@ -218,7 +245,7 @@ Perform these steps to ensure certain flows run under the user's context:
     1. Ensure the *Connections Used* all say **Provided by run-only user**
     1. Select **Save**
 
-   Flows to perform this step on:
+   Configure *run-only* user privileges for each of these flows:
 
     - Create Initial Assets From Request
     - New Hardware Request Submitted For Approval
@@ -260,7 +287,7 @@ To turn on cloud flows that were not on by default when installing the solution 
     1. Select the flow row
     1. Select **Turn on** at the top of the screen
 
-    Flows to perform this step on:
+    *Turn on* cloud flows for each of these flows:
 
     - New Hardware Request Submitted For Approval
     - Notify Asset Refresh Eligible
@@ -275,7 +302,9 @@ To turn on cloud flows that were not on by default when installing the solution 
 
 ## Step 7: Share the apps
 
-Access to both the Hardware Request and Hardware Request and Management apps can be controlled by either assigning directly to user(s) or security groups. Perform the following steps for each of the apps:
+Access to both the Hardware Request and the Hardware Management apps can be controlled by either assigning directly to user(s) or security groups.
+
+Take the following steps to share the Hardware Request app with users:
 
 1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 
@@ -283,32 +312,36 @@ Access to both the Hardware Request and Hardware Request and Management apps can
 
 1. Select **Apps**
 
-1. Select the **Hardware Request app** row and then the **ellipsis** (3 vertical dots) > **Share**
+1. Select the **Hardware Request app** row and then the **ellipsis** (3 vertical dots)
+
+1. Select **Share**
 
 1. Search for either the *users* in your environment and/or *Microsoft Entra ID Security Group* that contains the members you want to share the app with.
 
 1. Under the *Data permissions* section, assign the following security roles next to the Dataverse connection:
 
-    1. Approvals User
-    1. Basic User (Under Standard roles at the bottom)
-    1. Cards Basic Role
-    1. IT Base User
-    1. Hardware Request and Management – Employee
+    1. **Approvals User**
+    1. **Basic User** (Under Standard roles at the bottom)
+    1. **Cards Basic Role**
+    1. **IT Base User**
+    1. **Hardware Request and Management – Employee**
 
 1. Select **Share**
 
    :::image type="content" source="media/install/hrm-install-sharehrapp.png" alt-text="Screenshot of how to share the Hardware Request app.":::
 
+Take the following steps to share the Hardware Management app with users:
+
 1. Select the **Hardware Request and Management app** row and next the **ellipsis (three vertical dots)** and then select **Share**
 
 1. Search for either the *users* in your environment and/or *Microsoft Entra ID Security Group* that contain the members you want to share the app with
 1. Under the Data permissions section, assign the following security roles next to the Dataverse connection:
-    1. Approvals User
-    1. Basic User
-    1. Cards Basic Role
-    1. IT Base User
-    1. Power BI workspace viewer
-    1. Hardware Request and Management – Business Administrator
+    1. **Approvals User**
+    1. **Basic User**
+    1. **Cards Basic Role**
+    1. **IT Base User**
+    1. **Power BI workspace viewer**
+    1. **Hardware Request and Management – Business Administrator**
 1. Select **Share**
 
 > [!IMPORTANT]
