@@ -1,6 +1,6 @@
 ---
 title: "Agent transcripts analysis"
-description: "Guidance and best practices based on agent transcript analysis to improve the deflection rate of a Power Virtual Agents chatbot."
+description: "Guidance and best practices based on agent transcript analysis to improve the deflection rate of a Microsoft Copilot Studio chatbot."
 author: athinesh
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -26,6 +26,6 @@ The agent transcript review process is similar to the [chatbot transcript review
 
 1. List out the resolution paths identified for each session and group them as per the resolution paths.
 
-1. For each resolution path group, come up with a recommendation to implement in Power Virtual Agents as a topic or a self-service action and so on.
+1. For each resolution path group, come up with a recommendation to implement in Microsoft Copilot Studio as a topic or a self-service action and so on.
 
 1. Implement the recommendations in the chatbot topics and observe the change in the escalation rate and deflection.

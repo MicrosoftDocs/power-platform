@@ -1,6 +1,6 @@
 ---
 title: Use topics to design a chatbot conversation
-description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
+description: Use conversation topics in the Microsoft Copilot Studio authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
 ms.date: 03/24/2023
 ms.service: power-virtual-agents
@@ -15,15 +15,15 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Create and edit topics in your Power Virtual Agents bot
+# Create and edit topics in your Microsoft Copilot Studio bot
 
-In Power Virtual Agents, a topic defines a how a bot conversation plays out.
+In Microsoft Copilot Studio, a topic defines a how a bot conversation plays out.
 
 To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
 
-In Power Virtual Agents, a _topic_ represents some portion of a conversational thread between a user and a chatbot. You define and work with topics on an _authoring canvas_. A topic contains one or more _conversation nodes_, which together define the conversational paths that that topic can take. Each node performs an action, such as sending a message or asking a question.
+In Microsoft Copilot Studio, a _topic_ represents some portion of a conversational thread between a user and a chatbot. You define and work with topics on an _authoring canvas_. A topic contains one or more _conversation nodes_, which together define the conversational paths that that topic can take. Each node performs an action, such as sending a message or asking a question.
 
-Often, a topic also has a set of _trigger phrases_&mdash;phrases, keywords, and questions that a customer is likely to use that are related to a specific issue. The Power Virtual Agents AI uses natural language understanding, your customer's message, and the trigger phrases for all your topics to find the most appropriate topic to trigger. The message doesn't need to exactly match a topic's trigger phrases to trigger the topic. For example, a topic about store hours might include the trigger phrase `check store hours`. If a customer sends, "see store opening hours," Power Virtual Agents can still trigger your store hours topic.
+Often, a topic also has a set of _trigger phrases_&mdash;phrases, keywords, and questions that a customer is likely to use that are related to a specific issue. The Microsoft Copilot Studio AI uses natural language understanding, your customer's message, and the trigger phrases for all your topics to find the most appropriate topic to trigger. The message doesn't need to exactly match a topic's trigger phrases to trigger the topic. For example, a topic about store hours might include the trigger phrase `check store hours`. If a customer sends, "see store opening hours," Microsoft Copilot Studio can still trigger your store hours topic.
 
 ## Natural language understanding
  
@@ -31,13 +31,13 @@ The AI uses natural language understanding (NLU) to parse what a customer typed 
 
 For example, a user might type "Open hours" into your bot. The AI matches that to the **Store hours** topic, begins a conversation that asks which store the customer is interested in, and then displays the hours the store is open.
 
-The **Test bot** pane shows how the bot conversation plays out at every step. You can use the **Test bot** pane to fine-tune a topic without having to exit the Power Virtual Agents portal.
+The **Test bot** pane shows how the bot conversation plays out at every step. You can use the **Test bot** pane to fine-tune a topic without having to exit the Microsoft Copilot Studio portal.
 
 For bot and topic limits, see [Quotas, limits, and configuration values](requirements-quotas.md).
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Web app](#tab/webApp)
@@ -63,7 +63,7 @@ A bot can include two types of topics, _system_ and _custom_. Every new bot star
 
 1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic**.
 
-   :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the New topics button highlighted.":::
 
 1. The **Trigger phrases** pane should already be open. If not, select the **Trigger phrases** node to open it.
 
@@ -100,7 +100,7 @@ When you create a topic, a **Trigger phrases** node is inserted for you. Add mor
 
 1. To add a node, select **Add node** (**+**) on the line or branch between or after a node.
 
-   :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of the Add node button in the Power Virtual Agents authoring canvas.":::
+   :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of the Add node button in the Microsoft Copilot Studio authoring canvas.":::
 
 1. Select a node type to insert the node.
 
@@ -154,7 +154,7 @@ Question behavior properties allow you to control other aspects of the **Questio
 
     The **Question behavior** pane opens.
 
-    :::image type="content" source="media/authoring-ask-a-question/question-properties.png" alt-text="Screenshot of the Power Virtual Agents Question behavior pane.":::
+    :::image type="content" source="media/authoring-ask-a-question/question-properties.png" alt-text="Screenshot of the Microsoft Copilot Studio Question behavior pane.":::
 
 #### Skip behavior
 
@@ -300,7 +300,7 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
 
 1. Select **Save**, and then select **Close code editor**.
 
-    :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot of a conversation created from YAML in the Power Virtual Agents code editor.":::
+    :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot of a conversation created from YAML in the Microsoft Copilot Studio code editor.":::
 
 ### Test and publish your bot
 
@@ -331,7 +331,7 @@ These automatically created topics fall into two categories:
 
 1. In the navigation menu, select **Topics**.
 
-   :::image type="content" source="media/authoring-create-edit-topics/topics-menu-teams.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-menu-teams.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane, highlighting Topics.":::
 
 1. Select **New topic**.
 
@@ -367,7 +367,7 @@ These automatically created topics fall into two categories:
 
 1. In the topic list, select the topic you want to edit.
 
-    Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
+    Microsoft Copilot Studio opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
     For existing or system topics, several nodes are created automatically. You can edit these nodes just as you would edit other nodes.
 
@@ -518,7 +518,7 @@ After you've designed and tested your bot, [publish it to the web, mobile or nat
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-details-canvas-teams.png" alt-text="Selecting a topic will take you to the authoring canvas":::
 
-1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
+1. Microsoft Copilot Studio opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
 1. For existing or system topics, a number of nodes will automatically be created. You can edit these nodes just as you can for other nodes.
 

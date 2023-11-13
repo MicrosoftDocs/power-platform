@@ -1,6 +1,6 @@
 ---
 title: "Alternate Escalation Paths"
-description: "Set of best practices based on alternate escalation paths to improve the deflection rate of a Power Virtual Agents chatbot."
+description: "Set of best practices based on alternate escalation paths to improve the deflection rate of a Microsoft Copilot Studio chatbot."
 author: athinesh
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.reviewer: iawilt
 
 ## Check for operating hours and queue size during escalation
 
-In this approach, you can have a self-service action inside Power Virtual Agents, for example, a Power Automate cloud flow. 
+In this approach, you can have a self-service action inside Microsoft Copilot Studio, for example, a Power Automate cloud flow. 
 
 The action that checks for the operating hours of the human agent and agent queue size from the engagement hub using, for example, Dynamics 365 Omnichannel for Customer Service. It then transfers the chat only if the agent is available in the current hour or if the queue isn't full. 
 

@@ -15,11 +15,11 @@ ms.collection: virtual-agent
 
 # Key concepts - Publish your bot
 
-With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
+With Microsoft Copilot Studio, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
 
 After you've published at least once, you can connect your bot to more channels.
 
-Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. Publishing your bot will update the bot across all the channels where you've inserted or connected your bot.
+Each time you want to update your bot, you publish it again from within the Microsoft Copilot Studio app itself. Publishing your bot will update the bot across all the channels where you've inserted or connected your bot.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGa9]
@@ -27,7 +27,7 @@ Each time you want to update your bot, you publish it again from within the Powe
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Preview](#tab/preview)
@@ -129,7 +129,7 @@ Different channels have different end-user experiences. The following table show
 | [Did-You-Mean](advanced-ai-features.md) | Supported     | Supported                                                                                               | Supported                                                                                                  | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams), [Chat](/dynamics365/customer-service/set-up-chat-widget), Facebook, and text-only channels (SMS via [TeleSign](/dynamics365/customer-service/configure-sms-channel) and [Twilio](/dynamics365/customer-service/configure-sms-channel-twilio), [WhatsApp](/dynamics365/customer-service/configure-whatsapp-channel), [WeChat](/dynamics365/customer-service/configure-wechat-channel), and [Twitter](/dynamics365/customer-service/configure-twitter-channel)).</br>Suggested actions will be presented as a text-only list; users will need to retype an option to respond |
 
 > [!IMPORTANT]
-> Users can't send attachments to Power Virtual Agents chatbots. If they try to upload a file (including media, such as images), the bot will say:
+> Users can't send attachments to Microsoft Copilot Studio chatbots. If they try to upload a file (including media, such as images), the bot will say:
 >
 > *Looks like you tried to send an attachment. Currently, I can only process text. Please try sending your message again without the attachment.*
 >
@@ -152,7 +152,7 @@ Different channels have different end-user experiences. The following table show
 
 Once you're satisfied with your bot's content and quality, you can publish your bot to allow users to engage with your bot. You must publish your bot at least once for the user to chat with the bot in Microsoft Teams.
 
-Each time you want to update your bot's content, you publish it again from within the Power Virtual Agents app in Microsoft Teams. This will update the bot's content with the latest changes you have made.
+Each time you want to update your bot's content, you publish it again from within the Microsoft Copilot Studio app in Microsoft Teams. This will update the bot's content with the latest changes you have made.
 
 ### Publish the latest bot content
 

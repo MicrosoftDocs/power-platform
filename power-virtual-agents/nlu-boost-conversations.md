@@ -16,7 +16,7 @@ searchScope:
 
 # Generative answers
 
-Generative answers in Power Virtual Agents allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query. As a result you can quickly create and deploy a functional bot, without having to manually author multiple topics that may not address your customer's questions.
+Generative answers in Microsoft Copilot Studio allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query. As a result you can quickly create and deploy a functional bot, without having to manually author multiple topics that may not address your customer's questions.
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md). This document covers how to configure generative answers as a fallback topic when a user intent cannot be addressed by existing bot topics. [Generative answers with search and summarize](nlu-boost-node.md) discusses how your bot can query information sources by introducing generative answers in a node.
 
@@ -68,11 +68,11 @@ In addition to [URL considerations](nlu-boost-conversations.md#url-consideration
 >  
 > Other regions, and languages other than English, aren't supported.
 
-- An account for Power Virtual Agents.
+- An account for Microsoft Copilot Studio.
 
     > [!NOTE]
     >
-    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
+    > If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Microsoft Copilot Studio before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
 
 - You must enable the **generative answers** option for each bot.
 
@@ -84,7 +84,7 @@ In addition to [URL considerations](nlu-boost-conversations.md#url-consideration
 
 ## Increasing your bot's reach
 
-1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/). 
+1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/). 
 
 1. In the side navigation menu, select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
 
@@ -107,7 +107,7 @@ You can also change the URL, disable generative answers, or change the level of 
 
     1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](#url-considerations) as when enabling the capability when you create a bot.
 
-    :::image type="content" source="media/nlu-gpt/ai-capabilities-highlight-22May23.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
+    :::image type="content" source="media/nlu-gpt/ai-capabilities-highlight-22May23.png" alt-text="Screenshot of the Microsoft Copilot Studio AI capabilities page with Generative Answers enabled and highlighted.":::
 
     1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers are more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
 

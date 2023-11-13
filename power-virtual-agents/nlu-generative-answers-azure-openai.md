@@ -1,5 +1,5 @@
 ---
-title: Generative answers with Azure OpenAI on your data
+title: Generative answers with Azure OpenAI on your data (preview)
 description: "Boost conversations using Azure OpenAI on your data."
 keywords: "PVA"
 ms.date: 07/31/2023
@@ -16,15 +16,15 @@ searchScope:
 
 # Use a connection to Azure OpenAI on your data for generative answers
 
-By connecting Power Virtual Agents with Azure OpenAI on your data, your bots can leverage resources from Azure through the Generative answers node. [Azure OpenAI on your data](/azure/ai-services/openai/concepts/use-your-data) works with the powerful language models in OpenAI and Azure Cognitive Search to index your data and provide responses while complying with your organizational policies. 
+By connecting Microsoft Copilot Studio with Azure OpenAI on your data (preview), your bots can leverage resources from Azure through the Generative answers node. [Azure OpenAI on your data](/azure/ai-services/openai/concepts/use-your-data) works with the powerful language models in OpenAI and Azure Cognitive Search to index your data and provide responses while complying with your organizational policies. 
 
 ## Prerequisites
 
 - Connect your data source using [Azure OpenAI Studio](https://openai.studio-ppe.azure.com/).
 
-  :::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text="Screenshot showing the Azuree OpenAI Studio.":::
+  :::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text="Screenshot showing the Azure OpenAI Studio.":::
 
-- Connect a Power Virtual Agents bot to your data by selecting **Deploy to** and then **A new Power Virtual Agents bot**. The bot is created and automatically connected to your Azure resource in your default environment.
+- Connect a Microsoft Copilot Studio bot to your data by selecting **Deploy to** and then **A new Microsoft Copilot Studio bot**. The bot is created and automatically connected to your Azure resource in your default environment.
 
   :::image type="content" source="media/nlu-gpt/aoai-default-instance.png" alt-text="Screenshot showing deployment of the bot into the default environment.":::
 
@@ -42,7 +42,7 @@ By connecting Power Virtual Agents with Azure OpenAI on your data, your bots can
 
 To use Azure OpenAI:
 
-1. In Power Virtual Agents, open the **Data source** configuration pane for your [topic's generative answers node](nlu-boost-node.md):
+1. In Microsoft Copilot Studio, open the **Data source** configuration pane for your [topic's generative answers node](nlu-boost-node.md):
 
     - Open the **Properties** pane for the **Create generative answers** node and select **Data source**.
     - On the **Create generative answers** node, select **Edit** under **Data sources**.

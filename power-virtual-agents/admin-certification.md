@@ -1,6 +1,6 @@
 ---
 title: "Review ISO, SOC, and HIPAA compliance"
-description: "Power Virtual Agents is compliant with a number of standards and is covered under HIPAA."
+description: "Microsoft Copilot Studio is compliant with a number of standards and is covered under HIPAA."
 ms.date: 03/24/2023
 ms.keywords: "PVA, ISO, SOC, certification, compliance"
 
@@ -13,9 +13,9 @@ ms.collection: virtual-agent
 ms.custom: "certification, ceX"
 ---
 
-# Power Virtual Agents compliance offerings
+# Microsoft Copilot Studio compliance offerings
 
-Power Virtual Agents is a Core Online Service, as defined in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1#coreui-contentrichblock-4khwhqo), and is compliant with or covered by:
+Microsoft Copilot Studio is a Core Online Service, as defined in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1#coreui-contentrichblock-4khwhqo), and is compliant with or covered by:
 
 - Health Insurance Portability and Accountability Act (HIPAA) coverage
 - Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
@@ -34,7 +34,7 @@ Power Virtual Agents is a Core Online Service, as defined in the [Online Service
 
 [HIPAA](https://www.hhs.gov/hipaa/index.html) is a United States healthcare law that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities&mdash;doctors' offices, hospitals, health insurers, and other healthcare companies&mdash;that have access to patients' protected health information (PHI), in addition to business associates&mdash;such as cloud service and IT providers&mdash;that process PHI on their behalf.
 
-Power Virtual Agents is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement (BAA).
+Microsoft Copilot Studio is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement (BAA).
 
 You can create chatbots that handle protected health information when your organization is bound by HIPAA, as in the following scenarios where the chatbot can:
 
@@ -42,7 +42,7 @@ You can create chatbots that handle protected health information when your organ
 - Capture health information and personally identifying information, such as the customer's IP address or email address.
 
 > [!NOTE]
-> Although Power Virtual Agents is covered under HIPAA, it still isn't intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents.md#important-information).
+> Although Microsoft Copilot Studio is covered under HIPAA, it still isn't intended for use as a medical device. See the disclaimer on [the intended use of Microsoft Copilot Studio and medical devices](fundamentals-what-is-power-virtual-agents.md#important-information).
 
 [Learn more about HIPAA](/compliance/regulatory/offering-hipaa-hitech).
 
@@ -70,7 +70,7 @@ By deploying protected services including Azure Government, Office 365 US Govern
 
 ## SOC compliance
 
-SOC is a method for assuring control regulation within a service. Power Virtual Agents has been audited to be compliant with SOC.
+SOC is a method for assuring control regulation within a service. Microsoft Copilot Studio has been audited to be compliant with SOC.
 
 SOC audit reports are available from the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_SOC_/_SSAE_16_Reports).
 
@@ -78,7 +78,7 @@ SOC audit reports are available from the [Microsoft Service Trust Portal](https:
 
 ## ISO compliance
 
-Power Virtual Agents is compliant with the ISO standards listed in the following table. Audit reports for each are available from the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports).
+Microsoft Copilot Studio is compliant with the ISO standards listed in the following table. Audit reports for each are available from the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports).
 
 | Standard         | Name of report and certificate                                                                                                                                                                                                                                                                                                                                                                                                                               | Link to standard (www.iso.org)                                  |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
@@ -114,7 +114,7 @@ From the [CSA STAR website](https://cloudsecurityalliance.org/star/):
 
   The STAR registry documents the security and privacy controls provided by popular cloud computing offerings. This publicly accessible registry allows cloud customers to assess their security providers in order to make the best procurement decisions.
 
-Power Virtual Agents has been audited to be compliant with CSA STAR.
+Microsoft Copilot Studio has been audited to be compliant with CSA STAR.
 
 [Learn more about CSA STAR](/compliance/regulatory/offering-csa-star-attestation).
 
@@ -134,7 +134,7 @@ Inclusion in the Digital Marketplace requires a self-attestation of compliance, 
 
 The OSPAR framework was established by the Association of Banks in Singapore (ABS), which formulated IT security guidelines for outsourced service providers (OSPs) that seek to provide services to Singapore's financial institutions. The ABS Guidelines are intended to assist financial institutions in understanding approaches to due diligence, vendor management, and key technical and organizational controls that should be implemented in cloud outsourcing arrangements, particularly for material workloads.
 
-Power Virtual Agents has OSPAR attestation.
+Microsoft Copilot Studio has OSPAR attestation.
 
 [Learn more about the ABS OSPR](/compliance/regulatory/offering-abs-ospar).
 

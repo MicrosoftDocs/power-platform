@@ -1,6 +1,6 @@
 ---
 title: "Getting started with Bot Framework Composer"
-description: "Import your Power Virtual Agents bot into a Composer project to extend your bot's capabilities."
+description: "Import your Microsoft Copilot Studio bot into a Composer project to extend your bot's capabilities."
 keywords: "composer"
 ms.date: 03/24/2023
 
@@ -17,7 +17,7 @@ ms.collection: virtualagent
 
 [!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
 
-To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll need to first import your bot into a Composer project.
+To use Bot Framework Composer to extend your Microsoft Copilot Studio bot, you'll need to first import your bot into a Composer project.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll ne
 ## Open your bot in Composer
 
 > [!IMPORTANT]
-> You should always open Composer from within Power Virtual Agents. This will ensure that Composer has all the necessary plug-ins needed for integration with Power Virtual Agents.
+> You should always open Composer from within Microsoft Copilot Studio. This will ensure that Composer has all the necessary plug-ins needed for integration with Microsoft Copilot Studio.
 
 1. Go to the **Topics** page for the bot you want to edit and select the down-arrow symbol next to **+ New topic**.
 
@@ -42,16 +42,16 @@ To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll ne
 
     1. In the **Download Bot Framework Composer** window, select **Download Composer**.
 
-        :::image type="content" source="media/advanced-bot-framework-composer-fundamentals/download-composer.png" alt-text="Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.":::
+        :::image type="content" source="media/advanced-bot-framework-composer-fundamentals/download-composer.png" alt-text="Screenshot of the Microsoft Copilot Studio Composer window indicating that Composer is not installed.":::
 
     1. When the download completes, run it to install Composer.
 
-    1. Once you've installed Composer, go back to Power Virtual Agents. Go to the **Topics** page and select the down-arrow symbol next to **+ New topic**.
+    1. Once you've installed Composer, go back to Microsoft Copilot Studio. Go to the **Topics** page and select the down-arrow symbol next to **+ New topic**.
 
         > [!NOTE]
         > In some cases, a firewall might be blocking some features in Composer and you might need to explicitly allow access. Check with your admin for details.
 
-1. If Power Virtual Agents is unable to launch Composer automatically, you can launch it manually:
+1. If Microsoft Copilot Studio is unable to launch Composer automatically, you can launch it manually:
 
     1. Select **Copy Link** to copy the link to your clipboard.
 
@@ -59,7 +59,7 @@ To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll ne
 
     1. Open a new tab and paste the link in your web browser's address bar.
 
-1. The first time you open a Power Virtual Agents bot in Composer, it will be imported into a new Composer project. The name you specified in Power Virtual Agents will automatically be used as the name for the project, but you can also enter a custom name.
+1. The first time you open a Microsoft Copilot Studio bot in Composer, it will be imported into a new Composer project. The name you specified in Microsoft Copilot Studio will automatically be used as the name for the project, but you can also enter a custom name.
 
     :::image type="content" source="media/advanced-bot-framework-composer-fundamentals/ComposerUI_CreateProject.png" alt-text="Screenshot of the import screen in Composer.":::
 
@@ -67,9 +67,9 @@ To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll ne
 
     :::image type="content" source="media/advanced-bot-framework-composer-fundamentals/ComposerUI_Open_initialView.png" alt-text="Screenshot of the import screen in Composer with the create button highlighted.":::
 
-## Test Composer content within Power Virtual Agents
+## Test Composer content within Microsoft Copilot Studio
 
-You can't use the Bot Framework Emulator to test Composer content created for Power Virtual Agents bots. Instead you'll need to publish your Composer content to your Power Virtual Agents bot, then use the [Test bot pane](authoring-test-bot.md).
+You can't use the Bot Framework Emulator to test Composer content created for Microsoft Copilot Studio bots. Instead you'll need to publish your Composer content to your Microsoft Copilot Studio bot, then use the [Test bot pane](authoring-test-bot.md).
 
 [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
@@ -85,16 +85,16 @@ You can't use the Bot Framework Emulator to test Composer content created for Po
 
     :::image type="content" source="media/advanced-bot-framework-composer-fundamentals/publish-window.png" alt-text="Screenshot of the publish window.":::
 
-1. Once publishing completes, go to Power Virtual Agents. You may need to refresh the page to see the new topics you've added in Composer.
+1. Once publishing completes, go to Microsoft Copilot Studio. You may need to refresh the page to see the new topics you've added in Composer.
 
 1. Open the **Test bot** pane and start a conversation by typing in a trigger phrase.
 
 ## View the publish log
 
-If you're having trouble publishing your Composer content to Power Virtual Agents, you can troubleshoot by reviewing the publish log. The publish log provides a detailed description of any warnings or errors encountered during validation and suggestions on how to fix them.
+If you're having trouble publishing your Composer content to Microsoft Copilot Studio, you can troubleshoot by reviewing the publish log. The publish log provides a detailed description of any warnings or errors encountered during validation and suggestions on how to fix them.
 
 > [!NOTE]
-> If you're having trouble with your Power Virtual Agents bot, use the [topic checker](authoring-topic-management.md#topic-errors) instead.
+> If you're having trouble with your Microsoft Copilot Studio bot, use the [topic checker](authoring-topic-management.md#topic-errors) instead.
 
 1. In Composer, go to the **Publish** page.
 
@@ -120,9 +120,9 @@ If you encounter issues developing in Composer, you can:
 
 To help you get started using Composer, we've created four examples that detail different scenarios:
 
-- [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md)
-- [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
-- [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
-- [Example 4 - Display a form with a Submit button in Power Virtual Agents](advanced-bot-framework-composer-example4.md)
+- [Example 1 - Show an Adaptive Card in Microsoft Copilot Studio](advanced-bot-framework-composer-example1.md)
+- [Example 2 - Display a multi-select options list in Microsoft Copilot Studio](advanced-bot-framework-composer-example2.md)
+- [Example 3 - Use Bing Search as a fallback in Microsoft Copilot Studio](advanced-bot-framework-composer-example3.md)
+- [Example 4 - Display a form with a Submit button in Microsoft Copilot Studio](advanced-bot-framework-composer-example4.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

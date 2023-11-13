@@ -1,7 +1,7 @@
 ---
 title: Configure user authentication
 description: Configure authentication with your identity provider to enable users to sign in when having a bot conversation.
-keywords: "Authentication, IdP, PVA, AAD"
+keywords: "Authentication, IdP, PVA, Microsoft Entra ID"
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -14,20 +14,20 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Configure user authentication in Power Virtual Agents
+# Configure user authentication in Microsoft Copilot Studio
 
-Authentication allows users to sign in, giving your bot access to a restricted resource or information. Users can sign in with [Azure Active Directory (Azure AD)](configuration-authentication-azure-ad.md), or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
+Authentication allows users to sign in, giving your bot access to a restricted resource or information. Users can sign in with [Microsoft Entra ID](configuration-authentication-azure-ad.md), or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
 
 
 >[!NOTE]
-> In Microsoft Teams, you can configure a Power Virtual Agents bot to provide authentication capabilities, so that users can sign in with an Azure Active Directory or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft or Facebook account. 
+> In Microsoft Teams, you can configure a Microsoft Copilot Studio bot to provide authentication capabilities, so that users can sign in with a Microsoft Entra ID or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft or Facebook account. 
 
 You can [add user authentication to your bot](advanced-end-user-authentication.md) when you edit a topic.
 
-Power Virtual Agents supports the following authentication providers:
+Microsoft Copilot Studio supports the following authentication providers:
 
 - Azure Active Directory v1
-- Azure Active Directory v2
+- Microsoft Entra ID
 - Any identity provider that complies with the [OAuth2 standard](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 > [!IMPORTANT]
@@ -39,11 +39,11 @@ Power Virtual Agents supports the following authentication providers:
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Choose an authentication option
 
-Power Virtual Agents supports several authentication options. Choose the one that meets your needs.
+Microsoft Copilot Studio supports several authentication options. Choose the one that meets your needs.
 
 To change your bot's authentication settings, in the navigation menu under **Settings**, go to the **Security** tab and select the **Authentication** card.
 
@@ -68,7 +68,7 @@ No authentication is the standard configuration for bots that aren't created fro
 >
 > Additionally, the **Only for Teams** option is not available if your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
-Teams authentication, optimized for the Teams channel, is the standard configuration for bots that are created from Teams. It automatically sets up Azure AD authentication for Teams without the need for any manual configuration. Since Teams authentication itself identifies the user, users aren't prompted to sign in while they're in Teams, unless your bot needs expanded scope.
+Teams authentication, optimized for the Teams channel, is the standard configuration for bots that are created from Teams. It automatically sets up Microsoft Entra ID authentication for Teams without the need for any manual configuration. Since Teams authentication itself identifies the user, users aren't prompted to sign in while they're in Teams, unless your bot needs expanded scope.
 
 Only the Teams channel is available if you select this option. If you need other channels but still want authentication for your bot, choose **Manual** authentication.
 
@@ -77,7 +77,7 @@ If you select the **Only for Teams** option, the following variables are availab
 - `UserID`
 - `UserDisplayName`
 
-For more information about these variables and how to use them, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md#authentication-variables).
+For more information about these variables and how to use them, see [Add user authentication to a Microsoft Copilot Studio bot](advanced-end-user-authentication.md#authentication-variables).
 
 `AuthToken` and `IsLoggedIn` variables aren't available with this option. If you need an authentication token, use the **Manual** option.
 
@@ -85,14 +85,14 @@ If you change from **Manual** to **Only for Teams** authentication, and your top
 
 ### Manual (for any channel including Teams)
 
-You can configure any Azure AD, Azure AD V2, or OAuth2-compatible identity provider with this option. The following variables are available in the authoring canvas after you configure manual authentication:
+You can configure any Microsoft Entra ID v1, Microsoft Entra ID, or OAuth2-compatible identity provider with this option. The following variables are available in the authoring canvas after you configure manual authentication:
 
 - `UserID`
 - `UserDisplayName`
 - `AuthToken`
 - `IsLoggedIn`
 
-For more information about these variables and how to use them, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md#authentication-variables).
+For more information about these variables and how to use them, see [Add user authentication to a Microsoft Copilot Studio bot](advanced-end-user-authentication.md#authentication-variables).
 
 Once the configuration is saved, make sure to publish your bot so the changes take effect.
 
@@ -125,7 +125,7 @@ Your bot's authentication and **Require user to sign in** setting in combination
 
 - **Manual (for any channel including Teams)**:
   
-  - If the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can turn on **Require users to sign in** to control who in your organization can chat with the bot using bot sharing.
+  - If the service provider is either **Azure Active Directory** or **Microsoft Entra ID**, you can turn on **Require users to sign in** to control who in your organization can chat with the bot using bot sharing.
   
   - If the service provider is **Generic OAuth2**, you can turn **Require users to sign in** on or off. When it's turned on, a user who signs in can chat with the bot. You can't control which specific users in your organization may chat with the bot using bot sharing.
 
@@ -149,7 +149,7 @@ The following are all the fields you may see when you're configuring manual auth
 | Scope list delimiter                    | The separator character for the scope list. Empty spaces aren't supported in this field.<sup>1</sup>                                                                                                                                           |
 | Scopes                                  | The list of [scopes][1] that you want users to have after they've signed in. Use the **Scope list delimiter** to separate multiple scopes.<sup>1</sup> Only set necessary scopes and follow the [least privilege access control principle][5]. |
 | Service provider                        | The service provider you want to use for authentication. For more information, see [OAuth generic providers][4].                                                                                                                               |
-| Tenant ID                               | Your Azure AD tenant ID. Refer to [Use an existing Azure AD tenant][2] to learn how to find your tenant ID.                                                                                                                                    |
+| Tenant ID                               | Your Microsoft Entra ID tenant ID. Refer to [Use an existing Microsoft Entra ID tenant][2] to learn how to find your tenant ID.                                                                                                                                    |
 | Token body template                     | The template for the token body.                                                                                                                                                                                                               |
 | Token exchange URL (required for SSO)   | This is an optional field used when you're [configuring single sign-on][3].                                                                                                                                                                    |
 | Token URL template                      | The URL template for tokens, as provided by your identity provider; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`.                                                                                                 |

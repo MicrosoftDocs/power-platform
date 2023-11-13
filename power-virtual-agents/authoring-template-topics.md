@@ -1,6 +1,6 @@
 ---
 title: "Use lesson topics to understand capabilities"
-description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
+description: "Use specific template topics to understand the capabilities when authoring topics for use in Microsoft Copilot Studio bots."
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -13,15 +13,15 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Use lesson topics in Power Virtual Agents
+# Use lesson topics in Microsoft Copilot Studio
 
-Power Virtual Agents includes sample topics with every new bot to help you understand the capabilities of bot topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md), [variables](authoring-variables.md), and [custom entities](advanced-entities-slot-filling.md).
+Microsoft Copilot Studio includes sample topics with every new bot to help you understand the capabilities of bot topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md), [variables](authoring-variables.md), and [custom entities](advanced-entities-slot-filling.md).
 
 The topics are functional, but they aren't designed for production use. They're examples to help you learn how to create content for your bots.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - If you're using a bot that has **Classic** added to the name, you'll need to upgrade your bot to see the latest versions of the sample topics. If you can't upgrade, see the [archived version of this content](#).
 
 
@@ -36,7 +36,7 @@ The topics are functional, but they aren't designed for production use. They're 
 
     The flow includes the bot's comments, expected user responses, decision points, and entity references used in each topic. Review these and the topic's title, description, and trigger phrases.
 
-   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of sample topics in Power Virtual Agents.":::
+   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of sample topics in Microsoft Copilot Studio.":::
 
 ### Available sample topics
 

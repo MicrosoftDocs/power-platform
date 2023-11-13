@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
-title: Microsoft Power Virtual Agents documentation # < 60 chars
-summary: Discover how to build AI-driven chatbots easily with Power Virtual Agents with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site.
+title: Microsoft Copilot Studio documentation # < 60 chars
+summary: Discover how to build AI-driven chatbots easily with Microsoft Copilot Studio with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: power-virtual-agents
 
 metadata:
-  title: Official Microsoft Power Virtual Agents documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Discover how to build AI-driven chatbots easily with Power Virtual Agents with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site. # Required; article description that is displayed in search results. < 160 chars.
+  title: Official Microsoft Copilot Studio documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Discover how to build AI-driven chatbots easily with Microsoft Copilot Studio with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
@@ -22,17 +22,17 @@ highlightedContent:
 
   items:
     # Card
-  - title: What is Power Virtual Agents?
+  - title: What is Microsoft Copilot Studio?
     itemType: get-started
     url: ./fundamentals-what-is-power-virtual-agents.md
 
   # Card
-  - title: What's new in Power Virtual Agents?
+  - title: What's new in Microsoft Copilot Studio?
     itemType: whats-new
     url: https://go.microsoft.com/fwlink/?linkid=2082154
 
   # Card
-  - title: Power Virtual Agents training
+  - title: Microsoft Copilot Studio training
     itemType: training
     url: https://learn.microsoft.com/training/browse/?expanded=power-platform&products=power-virtual-agents
 
@@ -92,7 +92,7 @@ additionalContent:
 
     - title: Administer and extend
       items:
-        - title: Administer Power Virtual Agents
+        - title: Administer Microsoft Copilot Studio
           links:
             - text: Assign licenses
               url: ./requirements-licensing.md

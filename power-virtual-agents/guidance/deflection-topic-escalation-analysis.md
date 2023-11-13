@@ -1,6 +1,6 @@
 ---
 title: "Deflection topic escalation analysis"
-description: "Set of best practices based on escalation to improve the deflection rate of a Power Virtual Agents chatbot."
+description: "Set of best practices based on escalation to improve the deflection rate of a Microsoft Copilot Studio chatbot."
 author: athinesh
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -12,7 +12,7 @@ ms.reviewer: iawilt
   
 Escalation is the conversation flow during which the bot couldn’t handle the conversation and escalated to a human agent. When a chatbot is able to answer the user query without having to escalate to a human agent, it's considered a deflection. The ideal goal is to increase the deflection rate of a bot by reducing the number of escalations.
 
-Power Virtual Agents has multiple ways to handle escalation:
+Microsoft Copilot Studio has multiple ways to handle escalation:
 
 - The direct way of initiating an escalation to human agent is through the Escalate system topic. This system topic is triggered when the bot is no longer able to address the customer request and needs to escalate to a human agent. Through the Escalate topic, one can enable the bot to transfer the conversation to an agent service desk tool like Dynamics 365 Omnichannel for Customer Service for the live agent transfer or an asynchronous support experience like creating a ticket, scheduling a call back, and so on.
 - Another way of triggering this escalation is through the Transfer Conversation node in the authoring canvas.
@@ -21,7 +21,7 @@ Power Virtual Agents has multiple ways to handle escalation:
 
 ## Escalation types
 
-Power Virtual Agents has two types of escalations:
+Microsoft Copilot Studio has two types of escalations:
 
 1. **Direct escalation**: in this case, the user comes to the bot and directly wants to talk to a human agent. These kinds of escalations can't be avoided as the intent of the end-user is to trigger the Escalate topic directly.
 Examples end-user queries:

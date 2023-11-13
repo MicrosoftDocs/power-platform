@@ -14,14 +14,14 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Add Power Virtual Agents bot to Azure Bot Service channels
+# Add Microsoft Copilot Studio bot to Azure Bot Service channels
 
 You can connect your bot to existing [Azure Bot Service channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0&preserve-view=true). This can be helpful if you want to connect your bot to end users on Azure Bot Service channels.
 
 Adding your bot to Azure Bot Service channels requires considerable developer expertise. This topic is written for IT admins or developers who have experience developing and writing code.
 
 > [!TIP]
-> You do not need to follow this document to add your Power Virtual Agents bot to your [website, Facebook, or Microsoft Teams](publication-fundamentals-publish-channels.md).
+> You do not need to follow this document to add your Microsoft Copilot Studio bot to your [website, Facebook, or Microsoft Teams](publication-fundamentals-publish-channels.md).
 >If your goal is to connect to a custom web-based or native app, your developers can learn more at [Add bot to mobile and custom apps](publication-connect-bot-to-custom-application.md).
 
 > [!IMPORTANT]
@@ -29,12 +29,12 @@ Adding your bot to Azure Bot Service channels requires considerable developer ex
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - An [Azure Bot Service subscription](https://azure.microsoft.com/services/bot-service/).
 - An Azure Bot Service bot using v4 SDK.
 - [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1.
 - Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine).
-- A bot created in Power Virtual Agents that you want to connect to an Azure Bot Service channel.
+- A bot created in Microsoft Copilot Studio that you want to connect to an Azure Bot Service channel.
 - [Connect your bot to mobile and custom apps](publication-connect-bot-to-custom-application.md).
 
 ### Code samples
@@ -51,19 +51,19 @@ The instructions in this document reference the following:
 
 ## Create or use an existing Azure Bot Service bot
 
-You need an Azure Bot Service bot that can relay conversations between your Power Virtual Agents bot and Azure Bot Service channels.
+You need an Azure Bot Service bot that can relay conversations between your Microsoft Copilot Studio bot and Azure Bot Service channels.
 
 :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-relay-bot-diagram.png" alt-text="Relay bot diagram.":::
 
 The [relay bot sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/RelayBotSample) is a good starting point if you do not have an existing Azure Bot Service bot. It is built from Microsoft Bot Framework bot [sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore) that can be compiled and deployed to the Azure Bot Service. The sample code is meant to be used as a starting point and not intended to be used in production directly. You will need to add code and optimization to match your business needs.  
 
-If you already have an Azure Bot Service bot, you need to add a Power Virtual Agents connector and code to manage conversation sessions. You can then deploy the bot to the Azure Bot Service and connect to channels with the Azure portal.
+If you already have an Azure Bot Service bot, you need to add a Microsoft Copilot Studio connector and code to manage conversation sessions. You can then deploy the bot to the Azure Bot Service and connect to channels with the Azure portal.
 
-## Get your Power Virtual Agents bot parameters
+## Get your Microsoft Copilot Studio bot parameters
 
-To connect to the bot you have built with Power Virtual Agents, you'll need to retrieve your bot's name and token endpoint.
+To connect to the bot you have built with Microsoft Copilot Studio, you'll need to retrieve your bot's name and token endpoint.
 
-1. Copy your bot's name in Power Virtual Agents.
+1. Copy your bot's name in Microsoft Copilot Studio.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
 
@@ -77,17 +77,17 @@ To connect to the bot you have built with Power Virtual Agents, you'll need to r
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-parameters-slack.png" alt-text="Get bot parameters." border="false":::
 
-## Manage conversation sessions with your Power Virtual Agents bot
+## Manage conversation sessions with your Microsoft Copilot Studio bot
 
-There can be multiple conversations between the Azure Bot Service channels and the Direct Line connection with your Power Virtual Agents bot.
+There can be multiple conversations between the Azure Bot Service channels and the Direct Line connection with your Microsoft Copilot Studio bot.
 
-Your Azure Bot Service bot will need to map and relay the conversation from the Azure Bot Service channel to the Direct Line conversation with the Power Virtual Agents bot and vice versa.
+Your Azure Bot Service bot will need to map and relay the conversation from the Azure Bot Service channel to the Direct Line conversation with the Microsoft Copilot Studio bot and vice versa.
 
 ### Sample code example
 
 The following example uses samples from the [relay bot sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/RelayBotSample).  
 
-1. On every new external Azure Bot Service channel conversation start, start a Power Virtual Agents conversation. Refer to [Get Direct Line token](publication-connect-bot-to-custom-application.md#get-direct-line-token) and [Use Direct Line to communicate with the bot](publication-connect-bot-to-custom-application.md#use-direct-line-to-communicate-with-the-bot) for instructions on starting a new conversation with the bot.
+1. On every new external Azure Bot Service channel conversation start, start a Microsoft Copilot Studio conversation. Refer to [Get Direct Line token](publication-connect-bot-to-custom-application.md#get-direct-line-token) and [Use Direct Line to communicate with the bot](publication-connect-bot-to-custom-application.md#use-direct-line-to-communicate-with-the-bot) for instructions on starting a new conversation with the bot.
 
     ```C#
     using (var httpRequest = new HttpRequestMessage())
@@ -120,21 +120,21 @@ The following example uses samples from the [relay bot sample code](https://gith
      }
     ```
 
-1. To manage multiple sessions, you need to maintain a mapping of external Azure Bot Service channel conversations to corresponding Power Virtual Agents conversations. A Power Virtual Agents conversation can be identified with and connected with two properties: `ConversationtId` and `Token`.
+1. To manage multiple sessions, you need to maintain a mapping of external Azure Bot Service channel conversations to corresponding Microsoft Copilot Studio conversations. A Microsoft Copilot Studio conversation can be identified with and connected with two properties: `ConversationtId` and `Token`.
 
     ```C#
     Dictionary<string, PowerVirtualAgentsConversation> ConversationRouter = new Dictionary<string, PowerVirtualAgentsConversation>();  
     ```
 
-    To manage the conversation lifecycle, refresh the Direct Line tokens or clean up idled conversations. Learn more about token refresh at [Refresh Direct Line token](publication-connect-bot-to-custom-application.md#refresh-direct-line-token). A Power Virtual Agents conversation to support those is defined as following:
+    To manage the conversation lifecycle, refresh the Direct Line tokens or clean up idled conversations. Learn more about token refresh at [Refresh Direct Line token](publication-connect-bot-to-custom-application.md#refresh-direct-line-token). A Microsoft Copilot Studio conversation to support those is defined as following:
   
     ```C#
     /// <summary>
-    /// Data model class for Power Virtual Agents conversation
+    /// Data model class for Microsoft Copilot Studio conversation
     /// </summary>
     public class PowerVirtualAgentsConversation
     {
-        public string ConversationtId { get; set; } // The Power Virtual Agents conversation ID retrieved from step 1
+        public string ConversationtId { get; set; } // The Microsoft Copilot Studio conversation ID retrieved from step 1
 
         public string Token { get; set; } // The DirectLine token retrieved from step 1
 
@@ -146,10 +146,10 @@ The following example uses samples from the [relay bot sample code](https://gith
     }
     ```
 
-1. When a new Power Virtual Agents conversation starts, add a key value pair (`external_Azure_Bot_Service_channel_conversationID`, `PowerVirtualAgentsConversation`) to the mapping table.
+1. When a new Microsoft Copilot Studio conversation starts, add a key value pair (`external_Azure_Bot_Service_channel_conversationID`, `PowerVirtualAgentsConversation`) to the mapping table.
 
     ```C#
-    // After new Power Virtual Agents conversation starts
+    // After new Microsoft Copilot Studio conversation starts
     ConversationRouter[external_Azure_Bot_Service_channel_conversationID] = new PowerVirtualAgentsConversation()
       {
         Token = token,
@@ -160,17 +160,17 @@ The following example uses samples from the [relay bot sample code](https://gith
       }; 
     ```
 
-1. To continue on an existing conversation, upon a new external Azure Bot Service channel message received, retrieve the existing conversation from the mapping table, relay the external conversation activity to your Power Virtual Agents bot, and get a response.
+1. To continue on an existing conversation, upon a new external Azure Bot Service channel message received, retrieve the existing conversation from the mapping table, relay the external conversation activity to your Microsoft Copilot Studio bot, and get a response.
 
     The following sample shows relaying conversation by overriding the [ActivityHandler.OnMessageActivityAsync((ITurnContext\<IMessageActivity\>, CancellationToken) method](/dotnet/api/microsoft.bot.builder.activityhandler.onmessageactivityasync?view=botbuilder-dotnet-stable&preserve-view=true)
 
     ```C#
     // Invoked when a message activity is received from the user
-    // Send the user message to Power Virtual Agents bot and get response
+    // Send the user message to Microsoft Copilot Studio bot and get response
     protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
     {
         // Retrieve bot conversation from mapping table
-        // If not exists for the given external conversation ID, start a new Power Virtual Agents conversation
+        // If not exists for the given external conversation ID, start a new Microsoft Copilot Studio conversation
         ConversationRouter.TryGetValue(externalCID, out PowerVirtualAgentsConversation currentConversation) ?
                 currentConversation : /*await StartBotConversationAsync(externalCID)*/;
                 
@@ -192,7 +192,7 @@ The following example uses samples from the [relay bot sample code](https://gith
     }  
     ```
 
-1. Refer to [Use Direct Line to communicate with the bot](publication-connect-bot-to-custom-application.md#use-direct-line-to-communicate-with-the-bot) for how to get the Power Virtual Agents bot's response. When the Power Virtual Agents bot's response is received, refer to [Parse conversation payload from the bot](publication-connect-bot-to-custom-application.md#parse-conversation-payload-from-the-bot) for how to parse the response to the external Azure Bot Service channel response.
+1. Refer to [Use Direct Line to communicate with the bot](publication-connect-bot-to-custom-application.md#use-direct-line-to-communicate-with-the-bot) for how to get the Microsoft Copilot Studio bot's response. When the Microsoft Copilot Studio bot's response is received, refer to [Parse conversation payload from the bot](publication-connect-bot-to-custom-application.md#parse-conversation-payload-from-the-bot) for how to parse the response to the external Azure Bot Service channel response.
 
 An example of response parsing can be found in the [relay bot sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/RelayBotSample) ResponseConverter.cs.
 

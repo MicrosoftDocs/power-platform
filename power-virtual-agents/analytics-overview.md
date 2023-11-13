@@ -1,6 +1,6 @@
 ---
 title: "Fundamentals - Analyze chatbot usage (contains video)"
-description: "Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents."
+description: "Analyze customer satisfaction, topic usage, and bot performance in Microsoft Copilot Studio."
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -13,12 +13,12 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Key concepts – Analytics in Power Virtual Agents
+# Key concepts – Analytics in Microsoft Copilot Studio
 
-Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
+Microsoft Copilot Studio has a comprehensive set of analytics that show you the key performance indicators for your bot.
 
 > [!NOTE]
-> Conversation transcripts in Dataverse are unavailable for download on the Power Virtual Agents app in Teams. To review and export transcripts in Dataverse, you'll need to sign up for the [Power Virtual Agents web app](requirements-licensing-subscriptions.md). Session chat transcripts can be downloaded via the Power Virtual Agents app. For more details, refer to [Download bot session transcripts](analytics-sessions.md#download-bot-session-transcripts).
+> Conversation transcripts in Dataverse are unavailable for download on the Microsoft Copilot Studio app in Teams. To review and export transcripts in Dataverse, you'll need to sign up for the [Microsoft Copilot Studio web app](requirements-licensing-subscriptions.md). Session chat transcripts can be downloaded via the Microsoft Copilot Studio app. For more details, refer to [Download bot session transcripts](analytics-sessions.md#download-bot-session-transcripts).
 
 Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest impact on your bot's performance.
 
@@ -28,14 +28,14 @@ Multiple charts show you trends and usage for your bot's topics. These charts us
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
-As a bot maker, your job isn't done when you publish your bot for use. You'll want to know how well your bot is performing its intended duties. The comprehensive analytics in Power Virtual Agents keep your bot's key performance indicators front and center. Multiple charts show trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest effect on your bot's performance.
+As a bot maker, your job isn't done when you publish your bot for use. You'll want to know how well your bot is performing its intended duties. The comprehensive analytics in Microsoft Copilot Studio keep your bot's key performance indicators front and center. Multiple charts show trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest effect on your bot's performance.
 
-### Analytics in Power Virtual Agents
+### Analytics in Microsoft Copilot Studio
 
-In Power Virtual Agents, in the navigation menu, select **Analytics**.
+In Microsoft Copilot Studio, in the navigation menu, select **Analytics**.
 
 The analytics section is divided into a number of pages to give you multiple ways to understand bot performance.
 
@@ -46,13 +46,13 @@ The following terms are used in this section.
 - _Billed sessions_ are used to measure resource consumption. Billed sessions are independent of analytics sessions.
 
 > [!NOTE]
-> Transcripts are available for download about 20 minutes after an analytic session _ends_, as conversation transcripts in Dataverse via the Power Apps portal and as session chat transcripts via the Power Virtual Agents app. It can take up to an hour after the analytic session _ends_  before the appearing in the analytics dashboard.
+> Transcripts are available for download about 20 minutes after an analytic session _ends_, as conversation transcripts in Dataverse via the Power Apps portal and as session chat transcripts via the Microsoft Copilot Studio app. It can take up to an hour after the analytic session _ends_  before the appearing in the analytics dashboard.
 
 > [!Note]
-> In the classic version of Power Virtual Agents, conversation transcripts in Dataverse are available approximately 6 hours after the analytic session _starts_.
+> In the classic version of Microsoft Copilot Studio, conversation transcripts in Dataverse are available approximately 6 hours after the analytic session _starts_.
 
 > [!NOTE]
-> Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. In the meantime, you can use a [custom analytics solution to create a Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get analytics in these plans.
+> Bot analytics in Microsoft Copilot Studio US Government Cloud plans will be released at a later date. In the meantime, you can use a [custom analytics solution to create a Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get analytics in these plans.
 
 ### View analytics
 
@@ -77,6 +77,6 @@ In *Microsoft Teams*, from the navigation menu, select **Analytics**.
 | [Analyze topic usage](analytics-topic-details.md)                  | See how individual topics are doing and how well they're working at resolving issues.                      |
 | [Analyze session information](analytics-sessions.md)               | Review and monitor how sessions are doing, including analytics from the topics triggered during a session. |
 | [Analyze billed session information](analytics-billed-sessions.md) | Understand how sessions are being billed, based on their usage.                                            |
-
+| [Work with conversation transcripts](power-virtual-agents/analytics-sessions-transcripts.md)                         | Export conversation transcripts from Dataverse and create custom reports.                                  |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

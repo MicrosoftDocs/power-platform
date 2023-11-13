@@ -1,6 +1,6 @@
 ---
 title: Add input and output variables
-description: Pass variables between a Power Automate flow and a Power Virtual Agents bot.
+description: Pass variables between a Power Automate flow and a Microsoft Copilot Studio bot.
 keywords: "PVA, flow, automate"
 ms.date: 03/24/2023
 
@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # Add input and output variables
 
-Use variables as input and output parameters to pass information between Power Automate flows and Power Virtual Agents bots.
+Use variables as input and output parameters to pass information between Power Automate flows and Microsoft Copilot Studio bots.
 
 > [!IMPORTANT]
 > A bot can only _receive_ up to 1 MB of data from a flow in a single action. However, there's no limit on the amount of data a bot can send or how many variables a bot can pass.
@@ -25,8 +25,8 @@ In this example, you'll create a flow with an input parameter and return it to a
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- Understand how to [create a flow](advanced-flow-create.md) from the Power Virtual Agents authoring canvas.
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- Understand how to [create a flow](advanced-flow-create.md) from the Microsoft Copilot Studio authoring canvas.
 
 ## Supported parameter types
 
@@ -70,9 +70,9 @@ The following types aren't supported:
 
 ## Add input parameters to the flow
 
-1. In the **Power Virtual Agents** flow trigger, select **Add an input**.
+1. In the **Microsoft Copilot Studio** flow trigger, select **Add an input**.
 
-    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Inputs_1.png" alt-text="Screenshot of a Power Virtual Agents flow trigger, with Add an input highlighted.":::
+    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Inputs_1.png" alt-text="Screenshot of a Microsoft Copilot Studio flow trigger, with Add an input highlighted.":::
 
 1. Select **Text** and enter the name **String_Input**.
 
@@ -80,7 +80,7 @@ The following types aren't supported:
 
 ## Add output parameters to the flow
 
-1. In the **Return value(s) to Power Virtual Agents** response action, select **Add an output**.
+1. In the **Return value(s) to Microsoft Copilot Studio** response action, select **Add an output**.
 
     :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Output_1.png" alt-text="Screenshot of the flow response action, with Add an output highlighted.":::
 
@@ -96,7 +96,7 @@ The following types aren't supported:
 
 ## Select variables in the bot topic
 
-1. On the Power Virtual Agents authoring canvas, select **Add node** (**+**), and then select **Call an action**.
+1. On the Microsoft Copilot Studio authoring canvas, select **Add node** (**+**), and then select **Call an action**.
 
 1. Select the flow you created earlier, **Echo parameter**.
 

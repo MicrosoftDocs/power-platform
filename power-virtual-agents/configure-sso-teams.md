@@ -1,7 +1,7 @@
 ---
-title: "Configure single sign-on for the Power Virtual Agents app in Teams"
+title: "Configure single sign-on for the Microsoft Copilot Studio app in Teams"
 description: "Enable your bot to authenticate an already-signed-in Teams user"
-keywords: "Single Sign-on, Teams SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
+keywords: "Single Sign-on, Teams SSO, User Authentication, Authentication, Microsoft Entra ID, MSA, Identity Provider, PVA"
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -14,11 +14,11 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Configure single sign-on with Azure Active Directory for Power Virtual Agents bots in Microsoft Teams
+# Configure single sign-on with Microsoft Entra ID for Microsoft Copilot Studio bots in Microsoft Teams
 
-The Power Virtual Agents app in Microsoft Teams supports single sign-on (SSO), which means bots can automatically sign-in users with their Microsoft Teams credentials.
+The Microsoft Copilot Studio app in Microsoft Teams supports single sign-on (SSO), which means bots can automatically sign-in users with their Microsoft Teams credentials.
 
-SSO in the Power Virtual Agents app in Teams is only supported when using Azure Active Directory (Azure AD) v2. Other service providers, such as Azure AD v1, don't support SSO in the Power Virtual Agents app in Microsoft Teams.
+SSO in the Microsoft Copilot Studio app in Teams is only supported when using Microsoft Entra ID. Other service providers, such as Azure AD v1, don't support SSO in the Microsoft Copilot Studio app in Microsoft Teams.
 
 > [!IMPORTANT]
 > SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
@@ -28,28 +28,28 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 > 
 > For more information, see [Download the bot's Teams app manifest](publication-add-bot-to-microsoft-teams.md#download-the-bots-teams-app-manifest-advanced).
 > 
-> Other configurations such as authentications options beside Manual, or through Teams deployment using Power Virtual Agents one-click will not work.
+> Other configurations such as authentications options beside Manual, or through Teams deployment using Microsoft Copilot Studio one-click will not work.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Learn how to use user authentication in a topic](advanced-end-user-authentication.md).
 - [Add your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
 
 ## Configure an app registration
 
-Before configuring SSO for Teams, you'll first need to configure user authentication with Azure AD. During this process, you'll create an app registration which you'll use to setup SSO.
+Before configuring SSO for Teams, you'll first need to configure user authentication with Microsoft Entra ID. During this process, you'll create an app registration which you'll use to setup SSO.
 
-1. Create an app registration. See the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md).
+1. Create an app registration. See the instructions in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
 1. Add the redirect URL.
 1. Generate a client secret.
 1. Configure manual authentication.
 
-Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md) then return to this article.
+Follow the instructions in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md) then return to this article.
 
 ## Locate your Microsoft Teams channel app ID
 
-1. In Power Virtual Agents, open the bot that you want to configure SSO for.
+1. In Microsoft Copilot Studio, open the bot that you want to configure SSO for.
 
 1. In the navigation menu under **Settings**, select **Channels**. Select the **Microsoft Teams** tile.
 
@@ -149,7 +149,7 @@ The admin consent option may be greyed out if it's not enabled by your tenant ad
 
 ## Add token exchange URL
 
-To update the Azure AD authentication settings in Power Virtual Agents, you'll need to add the token exchange URL to allow Microsoft Teams and Power Virtual Agents to share information.
+To update the Microsoft Entra ID authentication settings in Microsoft Copilot Studio, you'll need to add the token exchange URL to allow Microsoft Teams and Microsoft Copilot Studio to share information.
 
 1. In the Azure portal on your app registration blade, go to **Expose an API**.
 
@@ -157,23 +157,23 @@ To update the Azure AD authentication settings in Power Virtual Agents, you'll n
 
     :::image type="content" source="media/configure-sso-teams/copy-scope.png" alt-text="Screenshot of the Copy to clipboard button..":::
 
-1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Security**, and then select the **Authentication** tile.
+1. In Microsoft Copilot Studio, in the navigation menu under **Settings**, select **Security**, and then select the **Authentication** tile.
 
 1. For **Token exchange URL (required for SSO)**, paste the scope you copied earlier.
 
-    :::image type="content" source="media/configure-sso-teams/token-exchange-url.png" alt-text="Screenshot of the Application ID URI entered as the Token exchange URL in Power Virtual Agents.":::
+    :::image type="content" source="media/configure-sso-teams/token-exchange-url.png" alt-text="Screenshot of the Application ID URI entered as the Token exchange URL in Microsoft Copilot Studio.":::
 
 1. Select **Save**.
 
 ## Add SSO to your bot's Microsoft Teams channel
 
-1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Channels**.
+1. In Microsoft Copilot Studio, in the navigation menu under **Settings**, select **Channels**.
 
 1. Select the **Microsoft Teams** tile. Select **Edit details** and expand **More**.
 
 1. For **AAD application's client ID**, enter the **Application (client) ID** from your app registration.
 
-   :::image type="content" source="media/configure-sso-teams/add-sso-application-id.png" alt-text="Screenshot of the Application (client) ID entered as the AAD application's client ID in Power Virtual Agents.":::
+   :::image type="content" source="media/configure-sso-teams/add-sso-application-id.png" alt-text="Screenshot of the Application (client) ID entered as the AAD application's client ID in Microsoft Copilot Studio.":::
 
     To obtain this value, open the Azure portal. Then on your app registration blade, go to **Overview**. Copy the value in the **Application (client) ID** box.
 
@@ -181,7 +181,7 @@ To update the Azure AD authentication settings in Power Virtual Agents, you'll n
 
 1. For **Resource URI**, enter the **Application ID URI** from your app registration.
 
-   :::image type="content" source="media/configure-sso-teams/add-sso-resource-uri.png" alt-text="Screenshot of the Application ID URI entered as the Resource URI in Power Virtual Agents.":::
+   :::image type="content" source="media/configure-sso-teams/add-sso-resource-uri.png" alt-text="Screenshot of the Application ID URI entered as the Resource URI in Microsoft Copilot Studio.":::
 
     To obtain this value, open the Azure portal. Then on your app registration blade, go to **Expose an API**. Copy the value in the **Application ID URI** box.
 

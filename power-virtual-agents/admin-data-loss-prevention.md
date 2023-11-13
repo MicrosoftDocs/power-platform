@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Configure data loss prevention for Power Virtual Agents chatbots
+# Configure data loss prevention for Microsoft Copilot Studio chatbots
 
 Organizational data is the most important asset administrators are responsible for safeguarding. The ability to build automation to use that data is a large part of their company's success.
 
@@ -21,15 +21,15 @@ Users can rapidly build and roll out their high-value bots for their end-users. 
 
 Users generally have good intentions, but they can easily overlook the potential for exposure. This sort of exposure can result from data leakage or connections to services and audiences that shouldn't have access to the data.
 
-Administrators can govern chatbots in your organization using data loss prevention (DLP) policies with existing and Power Virtual Agents connectors. DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). To create a DLP policy, you need to be a [tenant admin](/power-platform/admin/use-service-admin-role-manage-tenant) or have the [Environment Admin role](/power-platform/admin/environments-overview#environment-permissions).
+Administrators can govern chatbots in your organization using data loss prevention (DLP) policies with existing and Microsoft Copilot Studio connectors. DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). To create a DLP policy, you need to be a [tenant admin](/power-platform/admin/use-service-admin-role-manage-tenant) or have the [Environment Admin role](/power-platform/admin/environments-overview#environment-permissions).
 
 ## Prerequisites
 
 - Review concepts about [DLP policies](/power-platform/admin/wp-data-loss-prevention)
 
-## Power Virtual Agents connectors
+## Microsoft Copilot Studio connectors
 
-Power Virtual Agents connectors can be classified within a DLP policy under the following data groups, which are presented in the Power Platform admin center when reviewing DLP policies:
+Microsoft Copilot Studio connectors can be classified within a DLP policy under the following data groups, which are presented in the Power Platform admin center when reviewing DLP policies:
 
 - Business
 - Non-business
@@ -40,26 +40,26 @@ You can use the connectors in DLP policies to protect your organization's data f
 > [!IMPORTANT]
 > The connectors need to be in a single data group as data can't be shared among connectors that are in different groups.
 
-The following Power Virtual Agents connectors are available in the Power Platform admin center.
+The following Microsoft Copilot Studio connectors are available in the Power Platform admin center.
 
-:::image type="content" source="media/admin-data-loss-prevention/image1.png" alt-text="Screenshot of a list of the connectors available for Power Virtual Agents":::
+:::image type="content" source="media/admin-data-loss-prevention/image1.png" alt-text="Screenshot of a list of the connectors available for Microsoft Copilot Studio":::
 
 | Connector name | Description |
 |-------------------------|-------------------------|
-| Skills with Power Virtual Agents | Block bot makers from using skills in Power Virtual Agents chatbots. </br>See [Example 1: Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md) and [Example 2: Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md) for more details. |
-| Chat without Azure AD authentication in Power Virtual Agents | Block bot makers from publishing chatbots that aren't configured for authentication. </br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot. </br>See [Example 3: Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md) for more details. |
-| Microsoft Teams channel in Power Virtual Agents | Block bot makers from enabling or using the Teams channel. |
-| Direct Line channels in Power Virtual Agents | Block any Direct Line channel. </br>For example, the Demo website, Custom website, and Mobile app channels would be blocked. |
-| Facebook channel in Power Virtual Agents | Block bot makers from enabling or using the Facebook channel. |
-| Omnichannel in Power Virtual Agents | Block bot makers from enabling or using the Omnichannel channel. |
+| Skills with Microsoft Copilot Studio | Block bot makers from using skills in Microsoft Copilot Studio chatbots. </br>See [Example 1: Use DLP to block skills in Microsoft Copilot Studio chatbots](dlp-example-1.md) and [Example 2: Use DLP to block HTTP requests from Microsoft Copilot Studio chatbots](dlp-example-2.md) for more details. |
+| Chat without Microsoft Entra ID authentication in Microsoft Copilot Studio | Block bot makers from publishing chatbots that aren't configured for authentication. </br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot. </br>See [Example 3: Use DLP to require end-user authentication for Microsoft Copilot Studio chatbots](dlp-example-3.md) for more details. |
+| Microsoft Teams channel in Microsoft Copilot Studio | Block bot makers from enabling or using the Teams channel. |
+| Direct Line channels in Microsoft Copilot Studio | Block any Direct Line channel. </br>For example, the Demo website, Custom website, and Mobile app channels would be blocked. |
+| Facebook channel in Microsoft Copilot Studio | Block bot makers from enabling or using the Facebook channel. |
+| Omnichannel in Microsoft Copilot Studio | Block bot makers from enabling or using the Omnichannel channel. |
 
 ## Example DLP policy configurations
 
-To help you get started with Power Virtual Agents chatbot governance, we created the following examples that detail different scenarios:
+To help you get started with Microsoft Copilot Studio chatbot governance, we created the following examples that detail different scenarios:
 
-- [Example 1: Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md)
-- [Example 2: Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md)
-- [Example 3: Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md)
+- [Example 1: Use DLP to block skills in Microsoft Copilot Studio chatbots](dlp-example-1.md)
+- [Example 2: Use DLP to block HTTP requests from Microsoft Copilot Studio chatbots](dlp-example-2.md)
+- [Example 3: Use DLP to require end-user authentication for Microsoft Copilot Studio chatbots](dlp-example-3.md)
 
 ## Use PowerShell to enable and administer DLP enforcement for chatbots in your organization
 
@@ -71,7 +71,7 @@ You can:
 - Enable or disable DLP in an auditing mode (`-Mode SoftEnabled`) so bot makers can see errors, but aren't prevented from performing actions that would be blocked if DLP enforcement was fully enabled.
 - Enable or disable DLP enforcement, which will show DLP enforcement errors, and prevent bot makers from publishing DLP-affected bots or configuring DLP-related settings.
 - Exempt specific bots from DLP enforcement.
-- Add and update the learn-more and contact email links that are shown to bot makers when they encounter DLP in the Power Virtual Agents web and Teams apps.
+- Add and update the learn-more and contact email links that are shown to bot makers when they encounter DLP in the Microsoft Copilot Studio web and Teams apps.
 
 > [!IMPORTANT]
 > Before using the PowerShell cmdlets, or the example scripts shown here, ensure you [Install all necessary modules using PowerShell](/power-platform/admin/powerapps-powershell#installation).
@@ -84,7 +84,7 @@ Typically, you would use these cmdlets in accordance with a DLP rollout process,
 
 1. Determine which (if any) bots currently have DLP policy enforcement enabled.
 
-1. Use auditing or "soft" mode so makers can see DLP errors in the Power Virtual Agents web and Teams apps.
+1. Use auditing or "soft" mode so makers can see DLP errors in the Microsoft Copilot Studio web and Teams apps.
 
 1. Mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
 
@@ -96,7 +96,7 @@ You may also decide to exempt one or more bots from DLP policy enforcement, depe
 
 You can configure an email and learn-more link using the `Set-PowerAppDlpErrorSettings` PowerShell cmdlet. Your bot makers will see this information when they experience DLP errors.
 
-:::image type="content" source="media/admin-data-loss-prevention/image2.png" alt-text="Screenshot of the Power Virtual Agents web app showing a DLP related error  with error text highlighted ":::
+:::image type="content" source="media/admin-data-loss-prevention/image2.png" alt-text="Screenshot of the Microsoft Copilot Studio web app showing a DLP related error  with error text highlighted ":::
 
 To add the email and learn-more link for the first time, run the following PowerShell script, replacing the values for the `<email>`, `<URL>`, and `<tenant ID>` parameters with your own.
 
@@ -123,7 +123,7 @@ To update an existing configuration, use the same PowerShell script, and replace
 
 ### Enable and configure DLP enforcement for chatbots
 
-You can enable, disable, configure, and audit DLP enforcement within Power Virtual Agents with the `PowerVirtualAgentsDlpEnforcement` cmdlet.
+You can enable, disable, configure, and audit DLP enforcement within Microsoft Copilot Studio with the `PowerVirtualAgentsDlpEnforcement` cmdlet.
 
 In any of the following examples, replace (or declare) `<tenant ID>` with your tenant's ID.
 
@@ -133,18 +133,18 @@ You can scope to bots created after a certain date by replacing `<date>` with a 
 
 By default, DLP enforcement for chatbots is disabled in all tenants.
 
-You can run the following PowerShell cmdlet to check if DLP for Power Virtual Agents is enabled for a tenant.
+You can run the following PowerShell cmdlet to check if DLP for Microsoft Copilot Studio is enabled for a tenant.
 
 ```PowerShell
 Get-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID>
 ```
 
 > [!NOTE]
-> If you haven't configured Power Virtual Agents DLP, the results from the cmdlet will be empty.
+> If you haven't configured Microsoft Copilot Studio DLP, the results from the cmdlet will be empty.
 
-#### Use auditing or "soft" mode to see DLP errors in the Power Virtual Agents web or Teams apps
+#### Use auditing or "soft" mode to see DLP errors in the Microsoft Copilot Studio web or Teams apps
 
-Run the following PowerShell script to enable DLP policies in auditing mode. Bot makers will see DLP-related errors when configuring bots in the Power Virtual Agents web and Teams apps, but they won't be blocked from performing DLP-related actions. They can also publish bots as usual.
+Run the following PowerShell script to enable DLP policies in auditing mode. Bot makers will see DLP-related errors when configuring bots in the Microsoft Copilot Studio web and Teams apps, but they won't be blocked from performing DLP-related actions. They can also publish bots as usual.
 
 ```PowerShell
 Set-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID> -Mode SoftEnabled
@@ -152,11 +152,11 @@ Set-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID> -Mode SoftEnabled
 
 To find chatbots that could be impacted by your organization's existing DLP policies, you can:
 
-1. Use the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/power-bi) to get a list of chatbots in your organization. Go to the Power Virtual Agents Overview page on the CoE Dashboard to see the chatbots and environment names in your organization.
+1. Use the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/power-bi) to get a list of chatbots in your organization. Go to the Microsoft Copilot Studio Overview page on the CoE Dashboard to see the chatbots and environment names in your organization.
 
-    :::image type="content" source="media/admin-data-loss-prevention/coe-dashboard.png" alt-text="Screenshot of the CoE Starter Kit dashboard opened to the Power Virtual Agents overview.":::
+    :::image type="content" source="media/admin-data-loss-prevention/coe-dashboard.png" alt-text="Screenshot of the CoE Starter Kit dashboard opened to the Microsoft Copilot Studio overview.":::
 
-1. Run a campaign with the bot makers in your organization to address DLP errors or updated DLP policies. You can download all DLP errors thrown by a chatbot by selecting **Download details** on the error notification banner in Power Virtual Agents.
+1. Run a campaign with the bot makers in your organization to address DLP errors or updated DLP policies. You can download all DLP errors thrown by a chatbot by selecting **Download details** on the error notification banner in Microsoft Copilot Studio.
 
     :::image type="content" source="media/admin-data-loss-prevention/download-dlp-error-details.png" alt-text="Screenshot of the error notification banner showing the option to download details of the error.":::
 
@@ -167,7 +167,7 @@ To find chatbots that could be impacted by your organization's existing DLP poli
 >  
 > If you run into issues, you can exempt a bot from DLP policies or disable DLP enforcement while your makers fix the bot to comply with DLP policies.
 
-You can run the following PowerShell command to enforce DLP policies in Power Virtual Agents. Bot makers will be blocked or prevented from performing DLP-affected actions, and end users will see errors if they try to interact with the DLP-impacted features in a bot.
+You can run the following PowerShell command to enforce DLP policies in Microsoft Copilot Studio. Bot makers will be blocked or prevented from performing DLP-affected actions, and end users will see errors if they try to interact with the DLP-impacted features in a bot.
 
 ```PowerShell
 Set-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID> -Mode Enabled -OnlyForBotsCreatedAfter <date>
@@ -182,7 +182,7 @@ Make sure to replace `<environment ID>`, `<bot ID>`, `<tenant ID>`, and `<policy
 >[!TIP]
 > You can find the `<environment ID>` and `<bot ID>` from the chatbot's URL.
 >  
-> The `<policy ID>` is listed alongside the error details in the **Download details** file. You can download that file by selecting **Download details** on the error notification banner in Power Virtual Agents.
+> The `<policy ID>` is listed alongside the error details in the **Download details** file. You can download that file by selecting **Download details** on the error notification banner in Microsoft Copilot Studio.
 
 ```PowerShell
 $environmentId = "<environment ID>" 

@@ -13,11 +13,11 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Manage topics in Power Virtual Agents
+# Manage topics in Microsoft Copilot Studio
 
-There are a number of ways you can manage your topics. Power Virtual Agents includes a topic checker that lets you know if there are errors in your topics, you can turn topics on or off so they don't appear to people chatting with your bot, and you can copy or duplicate topics to make it easier to create new ones.
+There are a number of ways you can manage your topics. Microsoft Copilot Studio includes a topic checker that lets you know if there are errors in your topics, you can turn topics on or off so they don't appear to people chatting with your bot, and you can copy or duplicate topics to make it easier to create new ones.
 
-- [Manage topics in Power Virtual Agents](#manage-topics-in-power-virtual-agents)
+- [Manage topics in Microsoft Copilot Studio](#manage-topics-in-power-virtual-agents)
   - [Prerequisites](#prerequisites)
   - [Topic errors](#topic-errors)
     - [Types of errors](#types-of-errors)
@@ -26,16 +26,16 @@ There are a number of ways you can manage your topics. Power Virtual Agents incl
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Web app](#tab/webApp)
 
-Power Virtual Agents offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
+Microsoft Copilot Studio offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
 
 ### Topic errors
 
-When you save a topic, Power Virtual Agents notifies you if it contains an error or raises a warning. Errors will stop your bot from working. You must fix them before you can publish your bot. Warnings won't stop your bot from working, but they may cause individual topics not to work as expected. You should fix them when you see them.
+When you save a topic, Microsoft Copilot Studio notifies you if it contains an error or raises a warning. Errors will stop your bot from working. You must fix them before you can publish your bot. Warnings won't stop your bot from working, but they may cause individual topics not to work as expected. You should fix them when you see them.
 
 :::image type="content" source="media/authoring-topic-status/topics-errors-save.png" alt-text="Screenshot of the message that indicates a topic has errors that you must fix.":::
 
@@ -125,14 +125,14 @@ By default, a redirected conversation returns to the original topic at the end o
 
     To signal to the user's channel that the bot thinks the conversation has ended, add an **End Conversation** node before the **End all topics** node.
 
-Many of the system topics use these nodes to control how conversations end or start over. Learn how to [use system topics in Power Virtual Agents](authoring-system-topics.md).
+Many of the system topics use these nodes to control how conversations end or start over. Learn how to [use system topics in Microsoft Copilot Studio](authoring-system-topics.md).
 
 > [!TIP]
 > The **End all topics** node doesn't clear or reset any global variables. To clear global variables, use a **Clear all variables** node first. For an example, see the default [Reset Conversation system topic](authoring-system-topics.md#reset-conversation).
 
 # [Classic](#tab/classic)
 
-Power Virtual Agents offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
+Microsoft Copilot Studio offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
 
 ### Topic errors
 

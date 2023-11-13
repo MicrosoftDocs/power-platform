@@ -13,21 +13,21 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Use Microsoft Bot Framework skills in Power Virtual Agents
+# Use Microsoft Bot Framework skills in Microsoft Copilot Studio
 
-Power Virtual Agents enables you to extend your bot using Microsoft Bot Framework skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a skill and embed the skill within a Power Virtual Agents bot.
+Microsoft Copilot Studio enables you to extend your bot using Microsoft Bot Framework skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a skill and embed the skill within a Microsoft Copilot Studio bot.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- [Review restrictions and validation for skills used in Power Virtual Agents](/azure/bot-service/skill-pva)
-- [A standalone Power Virtual Agents subscription](requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription). If you have a [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan), you can't use Bot Framework skills.
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- [Review restrictions and validation for skills used in Microsoft Copilot Studio](/azure/bot-service/skill-pva)
+- [A standalone Microsoft Copilot Studio subscription](requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription). If you have a [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan), you can't use Bot Framework skills.
 
 ## Add a skill to bot conversations
 
-First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy the skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
+First, [create a Microsoft Copilot Studio bot](authoring-first-bot.md) and [create and deploy the skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
-Next, [register a skill in Power Virtual Agents](configuration-add-skills.md).
+Next, [register a skill in Microsoft Copilot Studio](configuration-add-skills.md).
 
 **Add a skill into a conversation:**
 

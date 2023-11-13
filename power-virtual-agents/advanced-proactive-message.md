@@ -41,13 +41,13 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 - [Publish your bot](publication-fundamentals-publish-channels.md).
 - [Add your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
 - [Getting started with Power Automate](/power-automate/getting-started).
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Known limitations
 
 - You can't send proactive messages in Teams if you've created your bot [with the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-power-virtual-agents).
 - If the bot is disconnected and reconnected to Microsoft Teams, users won't receive proactive messages until after they re-install the bot.
-- All proactive messages from Power Virtual Agents are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
+- All proactive messages from Microsoft Copilot Studio are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
 - Proactive messages won't be logged in conversation transcripts or [Analytics sessions](analytics-overview.md).
 - Proactive messages must be in the same environment as the Power Automate flow.
 - Proactive messages can only be posted to a personal chat with the bot.
@@ -56,7 +56,7 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 
 1. In Power Automate, open the flow that you want to send a proactive message. Add the Microsoft Teams connector action **Post message in a chat or channel**.
 
-1. For **Post as**, choose **Power Virtual Agents (Preview)**.
+1. For **Post as**, choose **Microsoft Copilot Studio (Preview)**.
 
 1. For **Post in**, choose **Chat with bot**.
 
@@ -88,7 +88,7 @@ In this example, you'll send an order summary card for the user to review.
 
 1. In Power Automate, add the Microsoft Teams connector action **Post adaptive card in a chat or channel** at the step where you want to send card in your flow.
 
-1. For **Post as**, choose **Power Virtual Agents (Preview)**.
+1. For **Post as**, choose **Microsoft Copilot Studio (Preview)**.
 
 1. For **Post in**, choose **Chat with bot**.
 
@@ -171,7 +171,7 @@ In this example, you'll send an order confirmation card that allows the user to 
 
 1. In Power Automate, add the Microsoft Teams connector action **Post adaptive card and wait for a response** at the step where you want to send card in your flow.
 
-1. For **Post as**, choose **Power Virtual Agents (Preview)**.
+1. For **Post as**, choose **Microsoft Copilot Studio (Preview)**.
 
 1. For **Post in**, choose **Chat with bot**.
 
@@ -281,7 +281,7 @@ In this example, the bot will send a reminder to the members of a team to comple
 
 1. Add the **Microsoft Teams** connector and select the **Post message in a chat or channel** action.
 
-1. For **Post as**, choose **Power Virtual Agents (Preview)**.
+1. For **Post as**, choose **Microsoft Copilot Studio (Preview)**.
 
 1. For **Post in**, choose **Chat with bot**.
 
@@ -299,13 +299,13 @@ When the flow runs, each user in the team will receive the proactive message in 
 
 In this example, the bot will send a reminder to a security group to complete their online training.
 
-1. Add the **Azure AD** connector and select the **Get group members** action in your Power Automate flow.
+1. Add the **Microsoft Entra ID** connector and select the **Get group members** action in your Power Automate flow.
 
 1. For **Group Id**, enter the security group's GUID.
 
 1. Add the **Microsoft Teams** connector and select the **Post message in a chat or channel** action.
 
-1. For **Post as**, choose **Power Virtual Agents (Preview)**.
+1. For **Post as**, choose **Microsoft Copilot Studio (Preview)**.
 
 1. For **Post in**, choose **Chat with bot**.
 
@@ -325,7 +325,7 @@ Normally when sending a proactive message to multiple recipients, your bot will 
 
 > [!WARNING]
 >   
-> All proactive messages from Power Virtual Agents are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
+> All proactive messages from Microsoft Copilot Studio are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
 >
 > If you are sending messages to a large group of recipients, you'll see errors if you hit the throttling limit. You can reduce the degree of parallelism, or reduce the number of recipients in the group.
 
@@ -339,7 +339,7 @@ Normally when sending a proactive message to multiple recipients, your bot will 
 
 ## Configure advanced options for proactive messages
 
-Power Virtual Agents allows you to control detail behavior on your bot under **Show advanced options** in the Microsoft Teams connector.
+Microsoft Copilot Studio allows you to control detail behavior on your bot under **Show advanced options** in the Microsoft Teams connector.
 
 :::image type="content" source="media/advanced-proactive-message/advanced-options.png" alt-text="Expanded options pane in the connector.":::
 

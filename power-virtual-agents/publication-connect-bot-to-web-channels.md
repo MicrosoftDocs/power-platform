@@ -28,7 +28,7 @@ When publishing the bot to the web, you can publish to a prebuilt demo website (
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Preview](#tab/preview)

@@ -1,6 +1,6 @@
 ---
 title: Analyze your bot's customer satisfaction metrics (preview)
-description: Use AI-driven analytics to understand how well customers are interacting with your bot and identify areas for improvement in Power Virtual Agents preview.
+description: Use AI-driven analytics to understand how well customers are interacting with your bot and identify areas for improvement in Microsoft Copilot Studio preview.
 keywords: "PVA"
 ms.date: 03/24/2023
 ms.topic: how-to
@@ -27,7 +27,7 @@ The **Customer satisfaction drivers** chart uses AI to group related support cas
 
 | Description | Details |
 | --- | --- |
-| Topic | A Power Virtual Agents topic. |
+| Topic | A Microsoft Copilot Studio topic. |
 | Engaged sessions | The number of engaged sessions for the topic within the specified time period. |
 | Resolution rate | The percentage of engaged sessions for the topic that are resolved. |
 | Abandon rate | The percentage of engaged sessions for the topic that are abandoned. |

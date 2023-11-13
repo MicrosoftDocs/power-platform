@@ -1,6 +1,6 @@
 ---
-title: Responsible AI FAQs for Power Virtual Agents
-description: Responsible AI FAQs provide information about the AI technology used in Power Virtual Agents, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+title: Responsible AI FAQs for Microsoft Copilot Studio
+description: Responsible AI FAQs provide information about the AI technology used in Microsoft Copilot Studio, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 7/30/2023
 ms.custom: 
   - responsible-ai-faqs
@@ -10,7 +10,7 @@ ms.author: iawilt
 ms.reviewer: iawilt
 ---
 
-# Responsible AI FAQs for Power Virtual Agents
+# Responsible AI FAQs for Microsoft Copilot Studio
 
 [!INCLUDE[responsible-ai-intro](includes/responsible-ai-intro.md)]
 

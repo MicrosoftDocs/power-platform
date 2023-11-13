@@ -1,6 +1,6 @@
 ---
 title: Configure and create multilingual chatbots (Preview)
-description: Add multilingual support to your Power Virtual Agents chatbots so your bot users and customers can ask questions and get answers in their language.
+description: Add multilingual support to your Microsoft Copilot Studio chatbots so your bot users and customers can ask questions and get answers in their language.
 keywords: "Multilingual, Languages, Localization, Translation"
 ms.date: 10/25/2023
 
@@ -24,7 +24,7 @@ For the list of supported languages, see our [Supported Languages article](autho
 
 > [!NOTE]
 > Multilingual bots are not suported for the following scenarios:
-> * Power Virtual Agents classic bots
+> * Microsoft Copilot Studio classic bots
 > * Voice bots with Dynamics Omnichannel
 
 

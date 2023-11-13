@@ -1,6 +1,6 @@
 ---
 title: "Chatbot authoring"
-description: "Discover how to create bots and topics easily in Power Virtual Agents with no coding or long deployment times."
+description: "Discover how to create bots and topics easily in Microsoft Copilot Studio with no coding or long deployment times."
 keywords: "PVA"
 ms.date: 05/22/2023
 ms.topic: article
@@ -12,13 +12,13 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Key concepts - Authoring Power Virtual Agents bots
+# Key concepts - Authoring Microsoft Copilot Studio bots
 
-When you create bots with Power Virtual Agents, you author and edit topics.
+When you create bots with Microsoft Copilot Studio, you author and edit topics.
 
 Topics are discrete conversation paths that, when used together within a single bot, allow for users to have a conversation with a bot that feels natural and flows appropriately.
 
-Creating a bot with Power Virtual Agents is easy to do with the [no-code authoring canvas](authoring-create-edit-topics.md), and there are a number of ways you can [manage how topics interact](authoring-topic-management.md), how you want the conversation to flow, and what it should feel like.
+Creating a bot with Microsoft Copilot Studio is easy to do with the [no-code authoring canvas](authoring-create-edit-topics.md), and there are a number of ways you can [manage how topics interact](authoring-topic-management.md), how you want the conversation to flow, and what it should feel like.
 
 It's also easy to [test the bot](authoring-test-bot.md) without having to fully deploy the bot whenever you make a small change.
 
@@ -28,7 +28,7 @@ Finally, you can [choose what language you want your bot to use](authoring-langu
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Accessibility
 
@@ -60,7 +60,7 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 | [Create and edit topics](authoring-create-edit-topics.md)       | Create and edit topics using the no-code authoring canvas.                                                                |
 | [Use system fallback topic](authoring-system-fallback-topic.md) | Use a system fallback topic for when your bot can't find an answer.                                                       |
 | [Manage topics](authoring-topic-management.md)                  | Copy, edit, and manage which topics should be available in your bot.                                                      |
-| [Test your bot](authoring-test-bot.md)                          | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.                    |
+| [Test your bot](authoring-test-bot.md)                          | Test your bot directly within the Microsoft Copilot Studio portal without needing to deploy or publish it.                    |
 | [Supported languages](authoring-language-support.md)            | Choose from a number of languages when you create your bot, with user interface, system, and template topic localization. |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

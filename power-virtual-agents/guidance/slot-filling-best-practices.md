@@ -1,6 +1,6 @@
 ---
 title: "Slot filling best practices"
-description: "Guidance and best practices for slot filling and entity extraction in Power Virtual Agents."
+description: "Guidance and best practices for slot filling and entity extraction in Microsoft Copilot Studio."
 author: HenryJammes
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -9,18 +9,18 @@ ms.author: hejammes
 ms.reviewer: iawilt
 ---
 
-# Entities and slot filling best practices in Power Virtual Agents
+# Entities and slot filling best practices in Microsoft Copilot Studio
 
 ## What is slot filling?
 
 Slot filling is related to the use of [entities](/power-virtual-agents/advanced-entities-slot-filling) that let a chatbot acquire and use information more easily by identifying and extracting them from the user query.
 
-A chatbot typically needs several pieces of information from a user to do its job. To acquire this information, you would typically ask separate questions, one for each fact the chatbot needs. When you use entities in your questions, Power Virtual Agents detects the required information and skips the questions where the information could be identified in the triggering user query.
+A chatbot typically needs several pieces of information from a user to do its job. To acquire this information, you would typically ask separate questions, one for each fact the chatbot needs. When you use entities in your questions, Microsoft Copilot Studio detects the required information and skips the questions where the information could be identified in the triggering user query.
 
 For example, when a user asks:
  > **I’d like to order 3 large blue t-shirts**
 
- Power Virtual Agents Natural Language Understanding (NLU) can immediately understand:
+ Microsoft Copilot Studio Natural Language Understanding (NLU) can immediately understand:
  >
  > - Topic is **Order**.
  > - Quantity is **3**.
@@ -33,9 +33,9 @@ You first define which entities you want to use, and their types.
 
 ## Defining entities
 
-Power Virtual Agents provides several built-in entities for the most common use cases, such as *Email*, *Date and time*, *Person name*, *Phone number*, *Color*, *Country*, *City*, *Number*, *Money*, and more.
+Microsoft Copilot Studio provides several built-in entities for the most common use cases, such as *Email*, *Date and time*, *Person name*, *Phone number*, *Color*, *Country*, *City*, *Number*, *Money*, and more.
 
-Built-in entities are powerful as they can handle many variations of the form an information can take. For example, when using *Money* in a conversation, the user might enter a value as "$100" or "a hundred dollars" or "100 dollars". The NLU model in Power Virtual Agents figures out that the value is a monetary value of 100 dollars.
+Built-in entities are powerful as they can handle many variations of the form an information can take. For example, when using *Money* in a conversation, the user might enter a value as "$100" or "a hundred dollars" or "100 dollars". The NLU model in Microsoft Copilot Studio figures out that the value is a monetary value of 100 dollars.
 
 > [!TIP]
 > However values are entered, as long as they're requested with questions in your conversation flow, they're stored in variables that you can re-use.
@@ -47,7 +47,7 @@ You can also define your own custom entities, such as *Item Type* from the previ
 
 ## Improving the user experience
 
-Using entities makes your life simpler by letting Power Virtual Agents more intelligently gather information from user queries. More importantly, it makes life better for users, since entities can find and store information from user queries, then make that information available later in the conversation. Entities improve the user experience—they make your chatbot seem smarter—and using them whenever possible is definitely a best practice.
+Using entities makes your life simpler by letting Microsoft Copilot Studio more intelligently gather information from user queries. More importantly, it makes life better for users, since entities can find and store information from user queries, then make that information available later in the conversation. Entities improve the user experience—they make your chatbot seem smarter—and using them whenever possible is definitely a best practice.
 
 ## Entity best practices
 
@@ -83,7 +83,7 @@ Using the built-in *Number* entity would be confused between 2, 1, and 101. To w
 
 ## Alternatives to entities to store referential data
 
-For large or evolving datasets (for example a list of products or customers), instead of using Power Virtual Agents closed list entities, you might want to check external sources. You need to pass the user utterance to the external service using a Power Automate cloud flow.
+For large or evolving datasets (for example a list of products or customers), instead of using Microsoft Copilot Studio closed list entities, you might want to check external sources. You need to pass the user utterance to the external service using a Power Automate cloud flow.
 
 Your topic logic can then validate the accuracy of the result (or ask the user to validate it) before moving forward in the conversation.
 

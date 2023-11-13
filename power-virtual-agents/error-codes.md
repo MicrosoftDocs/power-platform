@@ -11,7 +11,7 @@ ms.reviewer: clmori
 ms.service: power-virtual-agents
 ---
 
-# Error codes: Power Virtual Agents
+# Error codes: Microsoft Copilot Studio
 
 When a bot encounters a problem during a conversation, it will respond with an error message.
 
@@ -30,7 +30,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Web app](#tab/webApp)
@@ -65,7 +65,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md), wh
 | [LatestPublishedVersionNotFound](#latestpublishedversionnotfound) | Unable to retrieve the published version of the bot.                |
 | [RedirectToDisabledDialog](#redirecttodisableddialog)             | A topic is [redirecting][1] to a disabled topic.                    |
 | [RedirectToNonExistentDialog](#redirecttononexistentdialog)       | A topic is [redirecting][1] to another topic that no longer exists. |
-| [SystemError](#systemerror)                                       | A system error occurred in Power Virtual Agents.                    |
+| [SystemError](#systemerror)                                       | A system error occurred in Microsoft Copilot Studio.                    |
 
 [1]: authoring-topic-management.md#redirect-to-another-topic
 [2]: advanced-flow.md
@@ -89,7 +89,7 @@ Common problems include:
 **Resolution:**
 
 - Your environment's data loss prevention (DLP) policies require that users sign in. See [Configure user authentication](advanced-end-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
-- One or more connectors that are used in the bot aren't in the same data group. See [Power Virtual Agents connectors](admin-data-loss-prevention.md#power-virtual-agents-connectors).
+- One or more connectors that are used in the bot aren't in the same data group. See [Microsoft Copilot Studio connectors](admin-data-loss-prevention.md#power-virtual-agents-connectors).
 - One or more connectors that are used in the bot are blocked by the tenant administrator.
 
 #### FlowActionException
@@ -117,7 +117,7 @@ Common problems include:
 
 **Error message:** "The flow with id {FlowId} has timed out . Error Code: {FlowErrorCode}"
 
-**Resolution:** [Check the flow for errors](/power-automate/error-checker) to understand why the cloud flow took more than 100 seconds to run before it returned to Power Virtual Agents. Try to optimize the query and the data you return from any other backend system. If some of the cloud flow logic can continue to run after a result is sent to the bot, place these actions after the 'Return value(s) to Power Virtual Agents' step in your cloud flow.
+**Resolution:** [Check the flow for errors](/power-automate/error-checker) to understand why the cloud flow took more than 100 seconds to run before it returned to Microsoft Copilot Studio. Try to optimize the query and the data you return from any other backend system. If some of the cloud flow logic can continue to run after a result is sent to the bot, place these actions after the 'Return value(s) to Microsoft Copilot Studio' step in your cloud flow.
 
 #### InvalidContent
 
@@ -171,7 +171,7 @@ Common problems include:
 | **2006** | "We couldn't find your bot."                                                                                                                                          | Your bot couldn't be found because the bot, or its environment, was deleted. To configure a new bot, see [Create and delete bots](authoring-first-bot.md). To configure a new environment, see [Working with environments](environments-first-run-experience.md).                      |
 | **2007** | "The bot contains too much content to be able to work."                                                                                                               | Reduce message lengths or number of topics, then try again. Read more about [content limits](requirements-quotas.md#power-virtual-agents-web-and-teams-apps-limits).                                                                                                                   |
 | **2008** | "We couldn't find the user's token."                                                                                                                                  | Check your bot's [authorization configuration](advanced-end-user-authentication.md) for errors.                                                                                                                                                                                        |
-| **2009** | "To use this bot, publish it in Power Virtual Agents."                                                                                                                | To use this bot, [publish it in Power Virtual Agents](publication-fundamentals-publish-channels.md).                                                                                                                                                                                   |
+| **2009** | "To use this bot, publish it in Microsoft Copilot Studio."                                                                                                                | To use this bot, [publish it in Microsoft Copilot Studio](publication-fundamentals-publish-channels.md).                                                                                                                                                                                   |
 | **2010** | "We can't retrieve your bot content."                                                                                                                                 | Content couldn't be found because it was deleted. To configure a new bot, see [Create and delete bots](authoring-first-bot.md). To configure a new environment, see [Working with environments](environments-first-run-experience.md).                                                 |
 | **2011** | "We couldn't find `{Skill Name}` in `{Topic Name}`. Please check your content."                                                                                       | Skill couldn't be found because it was deleted. To create a new skill, see [Configure a Skill](configuration-add-skills.md).                                                                                                                                                           |
 | **2012** | "We couldn't find `{Flow Name}` in `{Topic Name}`. Please check your content."                                                                                        | Your Power Automate Flow couldn't be found because it was deleted. To create a new flow, see [Add actions using Power Automate](advanced-flow-create.md).                                                                                                                              |
@@ -179,7 +179,7 @@ Common problems include:
 | **2015** | "You're not authorized to call `{Skill Name}`. Please check the skill and its usage for any issues."                                                                  | Check your [skill's configuration](configuration-add-skills.md) and ensure your bot is [added to the skill's allowlist](/azure/bot-service/skill-implement-skill).                                                                                                                     |
 | **2016** | "Sorry, we couldn't find your bot."                                                                                                                                   | There was a problem with a [Azure Bot Service channel](publication-connect-bot-to-azure-bot-service-channels.md). The channel may have been deleted or configured incorrectly.                                                                                                         |
 | **2017** | "Sorry, we couldn't access your bot."                                                                                                                                 | The [Azure Bot Service channel](publication-connect-bot-to-azure-bot-service-channels.md) couldn't be accessed. Check the channel configuration for authentication issues.                                                                                                             |
-| **2018** | "The user is typing too fast."                                                                                                                                        | You sent messages too quickly. Read more about [quotas and limits within Power Virtual Agents](requirements-quotas.md).                                                                                                                                                                |
+| **2018** | "The user is typing too fast."                                                                                                                                        | You sent messages too quickly. Read more about [quotas and limits within Microsoft Copilot Studio](requirements-quotas.md).                                                                                                                                                                |
 | **2019** | "We couldn't find your environment. It may have been deleted."                                                                                                        | Your environment was deleted. To configure a new environment, see [Working with environments](environments-first-run-experience.md).                                                                                                                                                   |
 | **2020** | "Something happened, and `{Flow Name}` isn't working in `{Topic Name}`. Try again later. If the issue persists, check your flow's setup and run history."             | Your Power Automate flow isn't working. Try again later. If the issue persists, [check the flow for errors](/power-automate/error-checker).                                                                                                                                            |
 | **2021** | "Number of dialogs executed in the current turn exceeded the maximum of `{Dialog Limit}`."                                                                            | By default, the maximum number of topics is 50. Reduce the number of topics, then try again.                                                                                                                                                                                           |

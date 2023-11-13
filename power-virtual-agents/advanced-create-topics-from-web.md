@@ -1,6 +1,6 @@
 ---
 title: "Get topic suggestions from online content (contains video)"
-description: "Use existing help and support content to quickly generate new topics for your Power Virtual Agents bot."
+description: "Use existing help and support content to quickly generate new topics for your Microsoft Copilot Studio bot."
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Create topics from existing online support content
 
-You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you already have help or support content, such as FAQ pages or support sites.
+You can use content from existing webpages when creating a Microsoft Copilot Studio bot. This is useful if you already have help or support content, such as FAQ pages or support sites.
 
 Rather than copying and pasting or manually re-creating this content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing online resources into your bot.
 
@@ -34,7 +34,7 @@ You can [test the topics in the test chat](authoring-test-bot.md), but you'll ne
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Supported content
 
@@ -78,7 +78,7 @@ You can enter more than one question (separated by new lines) in a first-column 
 
 ## Single-turn and multi-turn topic suggestions
 
-When Power Virtual Agents extracts content, it generates single-turn or multi-turn topic suggestions, based on the structure of the document.
+When Microsoft Copilot Studio extracts content, it generates single-turn or multi-turn topic suggestions, based on the structure of the document.
 
 A **single-turn topic** has a trigger phrase that contains a single answer. Topics such as these are typically generated if your online content has simple "question-and-answer" pairs, such as an FAQ page.
 
@@ -136,15 +136,15 @@ The tool provides explicit feedback about errors so that you can understand and 
 
 ### How the AI creates topic suggestions
 
-The Power Virtual Agents AI engine applies a number of steps to the content when it extracts topics and generates suggestions. These steps utilize AI to identify and parse visual and semantic cues from the content.
+The Microsoft Copilot Studio AI engine applies a number of steps to the content when it extracts topics and generates suggestions. These steps utilize AI to identify and parse visual and semantic cues from the content.
 
-1. _Document parsing:_ the Power Virtual Agents engine identifies and extracts the basic components of the document, such as text and image blocks.
+1. _Document parsing:_ the Microsoft Copilot Studio engine identifies and extracts the basic components of the document, such as text and image blocks.
 
 1. _Layout understanding:_ the document is segmented into different zones that consist of the blocks of content.
 
-1. _Structure understanding:_ the logical structure of the content is analyzed by determining the "role" of each zone (for example, what is actual content and what are headings). Power Virtual Agents creates a hierarchical map or "heading tree" of the content, based on the headings and their associated content.
+1. _Structure understanding:_ the logical structure of the content is analyzed by determining the "role" of each zone (for example, what is actual content and what are headings). Microsoft Copilot Studio creates a hierarchical map or "heading tree" of the content, based on the headings and their associated content.
 
-1. _Augmentation:_ the Power Virtual Agents AI engine adds context to the tree by analyzing how the headings relate to each other and their content. At this point, it generates single-turn topics from identified simple "question-and-answer" pairs of headings and content.
+1. _Augmentation:_ the Microsoft Copilot Studio AI engine adds context to the tree by analyzing how the headings relate to each other and their content. At this point, it generates single-turn topics from identified simple "question-and-answer" pairs of headings and content.
 
 1. _Dialog generation:_ multi-turn topics are generated from the augmented knowledge tree, depending on whether the topic's intent is a simple answer from a group of many, or if the topic has multiple solutions that are equally different, and are chosen based on a user's input or choices.
 

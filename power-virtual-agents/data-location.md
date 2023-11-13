@@ -12,17 +12,17 @@ ms.collection: virtual-agent
 ms.custom: "multi-geo, ce06102020"
 ---
 
-# Regional settings and data locations for organizations using Power Virtual Agents
+# Regional settings and data locations for organizations using Microsoft Copilot Studio
 
-Power Virtual Agents supports multiple globalization scenarios, and lets you choose where you want your data to live.
+Microsoft Copilot Studio supports multiple globalization scenarios, and lets you choose where you want your data to live.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Supported locales and formats
 
-Chatbots built with Power Virtual Agents will understand and display content that's locally relevant to the user. Localized handling and formatting are based on the user's browser locale setting, and include the following elements within a chat conversation:
+Chatbots built with Microsoft Copilot Studio will understand and display content that's locally relevant to the user. Localized handling and formatting are based on the user's browser locale setting, and include the following elements within a chat conversation:
 
 - Date and time
 - Numbers
@@ -30,7 +30,7 @@ Chatbots built with Power Virtual Agents will understand and display content tha
 - Currency
 - Speed
 
-Power Virtual Agents supports the following display formatting locales:
+Microsoft Copilot Studio supports the following display formatting locales:
 
 - en-AU
 - en-CA
@@ -42,7 +42,7 @@ For example, if the user's browser locale setting is _en-GB_, the bot knows that
 
 # [Web app](#tab/web)
 
-Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as "regions") listed here. You can create a bot in your tenant's location by default, or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
+Microsoft Copilot Studio can be deployed into the Microsoft Azure datacenters (also referred to as "regions") listed here. You can create a bot in your tenant's location by default, or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 
 ### Data locations
 
@@ -72,7 +72,7 @@ Data will be stored in the United States if a bot author's tenant location isn't
 
 ### Customer data
 
-Microsoft won't transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when:
+Microsoft won't transfer customer data outside the selected Azure geographic location (geos) for Microsoft Copilot Studio except when:
 
 - The geo is South America.
 
@@ -84,7 +84,7 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
   
   - The Dynamics 365 home page, which stores application names, descriptions, and logos globally for performance.
 
-  - [Azure Active Directory](/azure/active-directory/active-directory-whatis) (Azure AD), which might store Azure AD data globally.
+  - [Microsoft Entra ID](/azure/active-directory/active-directory-whatis) (Microsoft Entra ID), which might store Microsoft Entra ID data globally.
 
   - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks), which might store multi-factor authentication data globally.
 
@@ -94,25 +94,25 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
 
   - Additionally, certain types of customer data (specifically the application name, application description, and application logo) will be stored globally, rather than in the primary storage geographic location.
 
-- Customers configure external services to extend Power Virtual Agents. Such customer configurations might cause customer data to be transferred outside of the selected geographic location. Examples of customer configurable external services include:
+- Customers configure external services to extend Microsoft Copilot Studio. Such customer configurations might cause customer data to be transferred outside of the selected geographic location. Examples of customer configurable external services include:
 
   - [Customer Service Hand-off](advanced-hand-off.md), Configurable external services that hand-off bot escalations to a human agent.
 
-  - Multi-channel, Configurable to external channels such as Facebook and internal, non Power Virtual Agents services, such as Microsoft Teams.
+  - Multi-channel, Configurable to external channels such as Facebook and internal, non Microsoft Copilot Studio services, such as Microsoft Teams.
 
     - [Facebook documentation](publication-add-bot-to-facebook.md)
 
     - [Microsoft Teams documentation](publication-add-bot-to-microsoft-teams.md)
 
-  - [Dynamics 365 Customer Service Insights Topic suggestion](advanced-create-topics-from-csi.md), Topic suggestions from Customer Service Insights are automated into Power Virtual Agents with a single click. Data might go to a bot in a different geographic region than the workspace region in Customer Service Insights.
+  - [Dynamics 365 Customer Service Insights Topic suggestion](advanced-create-topics-from-csi.md), Topic suggestions from Customer Service Insights are automated into Microsoft Copilot Studio with a single click. Data might go to a bot in a different geographic region than the workspace region in Customer Service Insights.
 
 # [Teams](#tab/teams)
 
-Microsoft Teams supports a larger set of languages than the Web app. If the selected language for Microsoft Teams is not supported by Power Virtual Agents, the displayed language will be en-US.
+Microsoft Teams supports a larger set of languages than the Web app. If the selected language for Microsoft Teams is not supported by Microsoft Copilot Studio, the displayed language will be en-US.
 
 ### Data locations
 
-Power Virtual Agents in Teams can be created in the [supported data locations](data-location.md). You can create a bot if your tenant's location is supported, or you can use the Power Virtual Agents web app by choosing the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
+Microsoft Copilot Studio bots in Teams can be created in the [supported data locations](data-location.md). You can create a bot if your tenant's location is supported, or you can use the Microsoft Copilot Studio web app by choosing the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 
 ---
 

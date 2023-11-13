@@ -19,9 +19,9 @@ ms.collection: virtual-agent
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Create a Power Page](/powerapps/maker/portals/create-portal).
-- [Create a Power Virtual Agents bot](authoring-first-bot.md).
+- [Create a Microsoft Copilot Studio bot](authoring-first-bot.md).
 
 ## Add a bot to your Power Pages
 
