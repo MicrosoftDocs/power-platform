@@ -45,7 +45,7 @@ Unlike a traditional component model, instead of creating a hard-coded integrati
 > 1. All users of Microsoft Copilot within your organization will be able to interact with the copilot, the copilot will not support authenticting the user itself
 > 1. If your Dataverse Environment has a security group assigned, users not within that Security Group will not be able to access the plugin in Microsoft Copilot
 
-## Creating a basic Topic to publish as a plugin
+## Creating a basic Converational Plugin to publish to Microsoft Copilot
 
 Your topic that will be used within Microsoft Copilot chat will use the System variable **Activity.Text** as an input that represents the user's question in Microsoft Copilot, process it in some way (such as passing it to **Generative Answers**), and then returning the result via one or more messages. These could include the response that comes from **Generative Answers**, or **Send a Message** nodes. Multiple messages can be included sent separately to form the output.
 
@@ -67,7 +67,7 @@ The steps below will take you through creating a new Conversational Plugin withi
 1. If you wish, you send one or more messages to the user as a response. You can use a **Send a Message** node, or another **Generate Answer** node call, or multiple of these actions as your topic needs.
 1. Finally, the topic can be saved with the Save/Floppy Disk icon in the top right corner of the page
 
-## Publishing your Topic to Microsoft Copilot
+## Publishing your Conversational Plugin to Microsoft Copilot
 
 Publishing your Topic will create a new Copilot Enabled App in the Dataverse registry for your Tenant. Once available there, your tenant admin will need to approve your Copilot Enabled App to be available to users in the Microsoft Copilot plugins catalog.
 
@@ -83,8 +83,8 @@ To publish your topic:
 1. First, create and save your topic as described in the prior section
 1. Navigate to the Publish panel on the left side menu of the Copilot Studio shell
 1. Choose publish, which will start the publish process. The publish should complete quickly; however actual availability in the Microsoft Admin Center may take up to 4 hours.
-1. The plugin should now should appear in your Microsoft Admin Center in M365 console to be reviewed and approved
-1. Once your Tenant admin has approved the plugin, it should appear in the user's list of plugins in their Microsoft Copilot UI
+1. Your Admin can find the Dataverse and Microsoft Copilot Studio integrated app in the Microsoft Admin Center under Settings->Integrations to be reviewed and approved.  In this preview, Deploy/Block is that this category level only.
+1. Once your Tenant admin has approved the Dataverse and Microsoft Copilot Studio integrated app, it should appear in the user's list of plugins in their Microsoft Copilot UI
 
 Once enabled, your user should be able to ask questions of the Microsoft Copilot, and where your plugin is deemed to most likely be able to provide the most relevant results, it will be invoked.
 
