@@ -78,7 +78,7 @@ You should test the IP firewall to verify that it's working.
 
    You should have the access to the environment that's defined by your security role.
 
-We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before ennforcing the IP firewall on your Production environment.
+We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before enforcing the IP firewall on your Production environment.
 
 ## Frequently asked questions (FAQ)
 
