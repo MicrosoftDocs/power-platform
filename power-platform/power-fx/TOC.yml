@@ -186,8 +186,6 @@
             href: reference/function-guid.md
           - name: HashTags
             href: reference/function-hashtags.md
-          - name: Hex2Dec
-            href: reference/function-hexdec.md
           - name: Help
             href: reference/function-help.md
           - name: Hex2Dec
