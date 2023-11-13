@@ -77,6 +77,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "power-fx-host-samples",
+      "url": "https://github.com/microsoft/power-fx-host-samples",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "shared-content",
       "url": "https://github.com/MicrosoftDocs/powerapps-docs-pr",
       "branch": "main",

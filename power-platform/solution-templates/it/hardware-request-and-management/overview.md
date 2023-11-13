@@ -73,6 +73,8 @@ More information: [Cards for Power Apps overview](/power-apps/cards/overview)
 
 Get your questions answered and mange your organization's hardware data with an AI-powered assistant.
 
+:::image type="content" source="media/overview/hrm-overview-copilot.png" alt-text="Screenshot of Copilot in the Hardware Request and Management app.":::
+
 More information: [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
 
 ### Interactive dashboards
