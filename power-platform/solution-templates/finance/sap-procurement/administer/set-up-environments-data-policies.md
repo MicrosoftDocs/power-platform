@@ -59,7 +59,7 @@ Installing, configuring, testing, and running [solutions](/power-apps/maker/data
 > [!NOTE]
 > Each environment requires that a [Microsoft Dataverse database](/power-platform/admin/create-database) be created for it.
 
-More information: [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy), [Manage Microsoft Dataverse settings](/power-platform/admin/admin-settings), [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)
+More information: [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy), [Create an environment in the Power Platform admin center](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center), [Manage Microsoft Dataverse settings](/power-platform/admin/admin-settings), [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)
 
 ## Enable managed environments
 

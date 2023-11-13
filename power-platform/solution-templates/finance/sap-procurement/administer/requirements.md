@@ -98,11 +98,11 @@ Be sure admin centers are set up and ready to support an enterprise-level deploy
 
 - [Microsoft Entra admin center](<https://entra.microsoft.com/>). As an [Entra Global admin](/entra/identity/role-based-access-control/permissions-reference#global-administrator), you need to:
 
-  - Access [Microsoft Entra ID (Azure AD)](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView) from the Microsoft Entra admin center.
+  - Access [Microsoft Entra ID](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView) from the Microsoft Entra admin center.
   - Set up a new [tenant](/entra/identity-platform/quickstart-create-new-tenant) or reconfigure an existing tenant. The tenant will need to have at least 1 GB of database storage capacity available for the environments within it.
-  - Set up additional [Entra ID (Azure AD) admin roles](/entra/identity/role-based-access-control/permissions-reference#global-administrator).
-  - Set up [Entra ID (Azure AD) single sign-on (SSO) for gateway](/fabric/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) having constrained delegation to support SSO.
-  - Create [security groups](configure-security-groups.md) within the Entra ID (Azure AD) tenant created to support conditional access to solution components.
+  - Set up additional [Entra ID admin roles](/entra/identity/role-based-access-control/permissions-reference#global-administrator).
+  - Set up [Entra ID single sign-on (SSO) for gateway](/fabric/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) having constrained delegation to support SSO.
+  - Create [security groups](configure-security-groups.md) within the Entra ID tenant created to support conditional access to solution components.
 
 - [Power Platform admin center](https://admin.powerplatform.microsoft.com/). As a Global admin or Power Platform System admin, you need to:
   - Set up the admin center's [management and admin connectors](/power-platform/admin/wp-management-monitoring).

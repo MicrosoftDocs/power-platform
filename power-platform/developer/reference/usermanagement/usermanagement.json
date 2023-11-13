@@ -1,0 +1,71 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/usermanagement/environments/{environmentId}/user/applyAdminRole": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Grants requesting tenant admin user the system admin role within Dataverse in the environment.",
+        "operationId": "ApplyAdminRole",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "SyncReport": {
+      "description": "Organization Sync report contains last sync information from kepler",
+      "type": "object",
+      "properties": {
+        "lastSyncTime": {
+          "description": "Last sync time for the org",
+          "type": "string",
+          "example": ""
+        },
+        "additionalProperties": null
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [ ]
+    }
+  ]
+}
