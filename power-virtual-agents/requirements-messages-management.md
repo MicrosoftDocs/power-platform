@@ -21,7 +21,7 @@ ms.custom:
 
 A _message_ is an interaction between a customer and a bot. It represents one unit of consumption and is defined as any request or message sent to the bot that triggers an action or a response from the bot. 
 
-The purchase of a Power Virtual Agents license includes a specific number of billed messages capacity. This capacity is pooled across the entire tenant but it must be assigned to an environment in to enable Power Virtual Agents features for bots in the environment.
+The purchase of a Microsoft Service Copilot license includes a specific number of billed messages capacity. This capacity is pooled across the entire tenant but it must be assigned to an environment in to enable Microsoft Service Copilot features for bots in the environment.
 
 Allocation happens in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/) when you select Resources > Capacity > Summary tab, and then select Assign to an environment in the upper-left menu. Additional information can be found in the [Power Platform capacity add-ons article](/power-platform/admin/capacity-add-on).
 
