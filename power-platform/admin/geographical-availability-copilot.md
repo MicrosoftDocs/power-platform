@@ -4,7 +4,7 @@ description: Learn about how to enable data movement across regions for copilots
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 11/13/2023
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -29,13 +29,13 @@ However, these features aren't available in all regions and languages. Depending
 
 ## How data movement across regions works
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region**. That data is protected and secured at every step in ways that comply with all applicable privacy laws and regulations, such as the European Union data boundary. We might store it for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region** to the location where the Azure OpenAI Service endpoint that powers these features is hosted. We might store it for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
 
 The following table describes when and how data can move across regions for copilots and generative AI features.
 
-| Region where your environment is hosted | Region where data is stored and processed | Does data move across regions? | How to allow data to move across regions|
+| Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure Open AI Service is hosted | Does data move across regions? | How to allow data to move across regions|
 |-------------------------|-------------------------|-------------------------|-------------------------|
-| Australia (availability starting Nov 10, 2023)</br>United Kingdom (availability starting Nov 10, 2023)</br>United States | Within the respective geographical region | No | No action required. Data doesn't move across regions in this scenario.|
+| Australia (availability starting Nov 10, 2023)</br>United Kingdom (availability starting Nov 10, 2023)</br>United States | Within the respective geographical region of your Power Platform or Dynamics 365 environment | No | No action required. Data doesn't move across regions in this scenario.|
 | Europe | Sweden or Switzerland | Yes | No action required. Data doesn't move outside the [EU Data Boundary](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb) in this scenario.<br><br>Admins can clear the [**Move data across regions**](#enable-data-movement-across-regions) checkbox, if they want to. |
 | France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 | Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
@@ -62,7 +62,7 @@ If your environment is hosted in a region that requires data movement across reg
     After you consent to the terms of use, the status of the **Move data across regions** field on the **Generative AI features** card shows **Allowed**. Copilots and generative AI features are enabled in the environment.
 
    > [!Note]
-   > Movement of data across regions complies with all applicable privacy laws and regulations. Data movement can’t be reversed by clearing the **Move data across regions** checkbox.
+   > Data movement that occurred while your environment was enabled to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox. We might store the data for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
 
 ## Copilots and generative AI features that are available when you enable data movement across regions
 The following table lists copilots and generative AI features that are available in Power Platform environments when the **Move data across regions** checkbox is selected.
