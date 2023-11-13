@@ -13,7 +13,7 @@ ms.custom: plugin, connector, flow, advanced-authoring
 ms.collection: virtual-agent
 ---
 
-# Introduction
+# Microsoft Copilot Studio plugin architecture
 
 A **plugin** is a reusable piece of code that can perform a specific task or provide specific functionality for a copilot. For example, a plugin can help a copilot answer a natural language query, execute a workflow, connect to an external system, or provide topic-specific guidance. A **copilot** is a conversational or UX-based assistant that helps users accomplish their tasks and goals in a specific domain or application.
 
