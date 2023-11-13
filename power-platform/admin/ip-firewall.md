@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments (preview)
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 11/08/2023
+ms.date: 11/13/2023
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -78,7 +78,7 @@ You should test the IP firewall to verify that it's working.
 
    You should have the access to the environment that's defined by your security role.
 
-We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before ennforcing the IP firewall on your Production environment.
+We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before enforcing the IP firewall on your Production environment.
 
 ## Frequently asked questions (FAQ)
 
@@ -133,10 +133,10 @@ In the IP firewall settings, allow the service tags listed in [Managed connector
 Make sure your reverse proxy is configured to send the client IP address in the forwarded header.
 
 ### Some of the calls from Power BI are failing after I enabled the IP firewall on the Power Platform environment. What should I do?
-Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features.md#tds-endpoint), you will need to disable IP firewall in the environment.
+Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features.md#tds-endpoint), you must disable IP firewall in the environment.
 
-### IP firewall audit functionality is not working in my environment. What should I do?
-If your environment is using bring-your-own-key (BYOK) functionality, we recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
+### IP firewall audit functionality isn't working in my environment. What should I do?
+IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key [(BYOK)](manage-encryption-key.md) encryption keys. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK-enabled tenant are locked down to SQL only, therefore audit logs can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
 
 ## Next steps
 
