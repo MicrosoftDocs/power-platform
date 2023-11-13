@@ -128,14 +128,13 @@ You also have the option to download *managed* or *unmanaged* solution files to 
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_EmployeeExperienceBase* file downloaded in previous step.
 1. Select **Next**.
 1. Select **Import**. This starts the import process of the *Employee Experience Base* solution.
-1. Wait for the *Employee Experience Base* solution to finish importing. The import process can take a few minutes at which point you will be notified with a *Success* message.
+1. Select **Import** to start the import process of the *Employee Experience Base* solution. Once the import is complete, you're notified with a *Success* message.
 1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_Kudos* file downloaded in previous step.
 1. Select **Next** and **Next** again.
 1. For each of the connections listed, select the *existing connection that was created in the previous step*.
 1. Select **Next**.
 1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment.
-1. Select **Import** which will start the import process of the *Kudos* solution.
-The import process takes a few minutes and once it's complete you're notified with a *Success* message.
+1. 1. Select **Import** to start the import process of the *Employee Kudos* solution. Once the import is complete, you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 

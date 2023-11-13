@@ -13,9 +13,9 @@ ms.subservice: solution-templates
 
 # Install and configure the Onboarding Buddy template
 
-As a Power Platform admin, you install, configure, and deploy the Onboarding Buddy template's solutions for your organization. To get started, follow the steps.
+As a Power Platform admin, you install, configure, and deploy the Onboarding Buddy template's solutions for your organization.
 
-To get started, follow the steps to install and configure the Onboarding Buddy template.
+To get started, follow the steps.
 
 ## Step 1: Review prerequisites
 
@@ -41,11 +41,11 @@ More license details are available in the [Microsoft Power Platform Licensing Gu
 > [!TIP]
 > A free Developer Plan is a great way to install the template for evaluation purposes. More information: [Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/)
 
-### Set up environments and data policies
+### Create environments and data policies
 
-It's important to have a cohesive environment and data policy strategy and setup for enterprise templates to securely deploy your solutions. To successfully install and manage the Onboarding Buddy template, confirm these resources and practices are in place.
+It's important to have a cohesive environment and data policy strategy for enterprise templates to securely deploy your solutions. To successfully install and manage the Onboarding Buddy template, confirm these resources and practices are in place.
 
-- **Administrators** - Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments.
+- **Administrators** - Be sure admins with the necessary privileges are available to coordinate and assign licensing and create environments.
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
   - Power Platform Administrator to create environments if needed
@@ -131,14 +131,13 @@ You also have the option to download *managed* or *unmanaged* solution files to 
 1. Select **Import solution**.
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_EmployeeExperienceBase* file downloaded in previous step.
 1. Select **Next**.
-1. Select **Import**. This starts the import process of the *Employee Experience Base* solution.
-1. Wait for the *Employee Experience Base* solution to finish importing. The import process can take a few minutes at which point you will be notified with a *Success* message.
+1. Select **Import** to start the import process of the *Employee Experience Base* solution. Once the import is complete, you're notified with a *Success* message.
 1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_Onboarding Buddy* file downloaded in previous step.
 1. Select **Next** and **Next** again.
 1. For each of the connections listed, select the *existing connection that was created in the previous step*.
 1. Select **Next**.
-1. Ignore entering values for the environment variables as this is completed in another step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment.
-1. Select **Import** which starts the import process of the *Onboarding Buddy* solution. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
+1. Skip the environment variable setup for now because the required URL values only become available after the apps are imported into the environment.
+1. Select **Import** to start the import process of the *Onboarding Buddy* solution. Once the import is complete, you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
@@ -188,9 +187,9 @@ Open the Onboarding Buddy Admin App and select **Configurations** to set the par
 
 ## Step 7: Populate the Onboarders table
 
-For a new employee to show up in the app as an Onbaorder who can be matched, you must first enter them into the Onbaorders table.
+For a new employee to show up in the app as an new employee who can be matched, you must first enter them into the Onboarders table.
 
-The *New Onboarders Sync* flow is set to run every Saturday. It automatically imports new employees set up in AAD in the last week into the Onboarding table. Initially, though, you may have to populate existing employees that you want to be a part of the program right away.
+The *New Onboarders Sync* flow is set to run every Saturday. It automatically imports new employees set up in Entra ID in the last week into the Onboarding table. Initially, though, you may have to populate existing employees that you want to be a part of the program right away.
 
 ### Manually run the flow
 

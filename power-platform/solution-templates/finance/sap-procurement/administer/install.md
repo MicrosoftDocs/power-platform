@@ -36,7 +36,7 @@ Download **either** the *managed* or *unmanaged* SAP Base and SAP Procurement so
   - [mpa_SAPBase_unmanaged.zip](https://aka.ms/SAPBaseUnmanagedSolution)
   - [mpa_SAPProcurement_unmanaged.zip](https://aka.ms/SAPProcurementUnmanagedSolution)
 
-More information: [Managed and unmanaged solutions](power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
+More information: [Managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
 
 > [!TIP]
 >
@@ -55,18 +55,17 @@ Follow these steps to install either the *managed* or *unmanaged* **SAP Base** s
 1. Select **Import solution**.
 1. Browse for and select either the managed *or* unmanaged version of the **mpa_SAPBase** file downloaded in previous step.
 1. Enter the environment variables when prompted, using the [Configure environment variables](configure-environment-variables.md) guidance.
-1. Select **Import** to start the import process of the *SAP Base* solution.
-1. Wait for the *SAP Base* solution to finish importing. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
+1. Select **Import** to start the import process of the *SAP Base* solution. Once the import is complete, you're notified with a *Success* message.
 
 ### Install the SAP Procurement solution
 
 Follow these steps to install either the *managed* or *unmanaged* **SAP Procurement** solution:
 
-1. Go to **Solutions** in the left-side panel of the Power Apps maker portal after the SAP Base solution successfully installs.
-1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_SAPProcurement* file downloaded in previous step.
+1. Go to **Solutions** on the left-side panel of the *Power Apps maker portal* after the SAP Base solution successfully installs.
+1. Browse for and select either the managed or unmanaged version of the *mpa_SAPProcurement* solution file downloaded in previous step.
 1. Select **Next** and **Next** again.
 1. When prompted, populate the *connection references* by either creating new or selecting existing connections as described in [Set up connections for solutions](set-up-connections.md).
-1. Select **Import** which will start the import process of the *SAP Procurement* solution. Wait for the *SAP Procurement* solution to finish importing. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
+1. Select **Import** to start the import process of the *SAP Procurement* solution. Once the import is complete, you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
