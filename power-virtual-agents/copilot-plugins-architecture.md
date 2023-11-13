@@ -1,6 +1,6 @@
 ---
-title: The lifecycle of a plugin- from creation in Microsoft Copilot Studio to use in various copilots
-description: Use plugin actions to extend the capabilities of your bots.
+title: Create and edit plugins with Microsoft Copilot Studio
+description: Create and edit plugins using Microsoft Copilot Studio's plugin authoring experience.
 keywords: "PVA, plugin, connector, flow, automate"
 ms.date: 09/29/2023
 ms.service: power-virtual-agents
@@ -9,8 +9,13 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: gapretty
-ms.custom: plugin, connector, flow, advanced-authoring
 ms.collection: virtual-agent
+ms.custom:
+  - plugin, connector, flow, advanced-authoring
+  - ai-gen-docs-bap
+  - ai-gen-title
+  - ai-seo-date:11/13/2023
+  - ai-gen-desc
 ---
 
 # Microsoft Copilot Studio plugin architecture
