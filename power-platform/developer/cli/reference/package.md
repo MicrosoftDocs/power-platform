@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 10/17/2023
+ms.date: 11/10/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -207,13 +207,6 @@ Deploys package to Dataverse
 [!INCLUDE [package-deploy-intro](includes/package-deploy-intro.md)]
 
 
-### Required Parameters for package deploy
-
-#### `--package` `-p`
-
-Path to a package dll or zip file with a package.
-
-
 ### Optional Parameters for package deploy
 
 #### `--logConsole` `-c`
@@ -226,11 +219,19 @@ This parameter requires no value. It's a switch.
 
 Log file path
 
+#### `--package` `-p`
+
+Path to a package dll or zip file with a package.
+
 #### `--settings` `-s`
 
 Runtime Package Settings that are passed to the package that is being deployed. The format of the string must be `key=value|key=value`.
 
 **Note**: The format of the string must be `key=value|key=value`.
+
+#### `--solution` `-sz`
+
+Path to the Dataverse solution file. The file must be a compressed ZIP or CAB file.
 
 #### `--verbose` `-vdbg`
 
