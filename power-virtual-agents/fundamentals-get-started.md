@@ -1,6 +1,6 @@
 ---
-title: "Quickstart: Create and deploy a bot on the portal (contains video)"
-description: "Create and publish a Microsoft Copilot Studio bot on the online portal in minutes."
+title: "Quickstart: Create and deploy a copilot on the portal (contains video)"
+description: "Create and publish a Microsoft Copilot Studio copilot on the online portal in minutes."
 keywords: "PVA, online, web, portal, quickstart"
 ms.date: 03/24/2023
 
@@ -17,35 +17,34 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Quickstart: Create and deploy a Microsoft Copilot Studio bot
+# Quickstart: Create and deploy a Microsoft Copilot Studio copilot
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Microsoft Copilot Studio empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience - all without the need for data scientists or developers.
+Microsoft Copilot Studio empowers teams to quickly and easily create powerful copilots using a guided no-code graphical experience - all without the need for data scientists or developers.
 
-This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it's been deployed.
+This quickstart guide takes you through the end-to-end experience of creating a copilot for the first time, adding topics to your bot, testing content changes in real time, deploying your copilot to a test page, and analyzing the performance of your copilot after it's been deployed.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-copilot-studio.md).
 
 # [Web app](#tab/web)
 
 ### Explore the home page
 
-Microsoft Copilot Studio has an app-level home page that isn't specific to any bot. On this page you can create a new bot, view recent bots, and access learning resources like videos, documentation, and learning paths.
+Microsoft Copilot Studio has an app-level home page that isn't specific to any copilot. On this page you can create a new copilot, view recent copilots, and access learning resources like videos, documentation, and learning paths.
 
 :::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
-<!--- IMAGE NEEDS UPDATE --->
 
-In the navigation menu, select **Chatbots** to open the **Chatbots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these bots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another bot that you have access to.
+In the navigation menu, select **Copilots** to open the **Copilots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these copilots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another copilot that you have access to.
 
 :::image type="content" source="media/fundamentals-get-started/chatbot-list.png" alt-text="Screenshot of the list of chatbots.":::
 
-<!--- IMAGE NEEDS UPDATE --->
 
-### Create a bot
+
+### Create a copilot
 
 1. Go to the [Microsoft Copilot Studio introduction website](https://aka.ms/TryPVA). Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
@@ -56,49 +55,45 @@ In the navigation menu, select **Chatbots** to open the **Chatbots** page and vi
     :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the environment picker.":::
 
     > [!NOTE]
-    > Microsoft Copilot Studio is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
+    > Microsoft Copilot Studio is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your copilot.  
     > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
-4. Once signed up, you will land on the App Homepage. In the left navigation menu, select **Home** then select **Create a bot**.
-5. A whole page wizard will start with a couple steps to get your bot created very quickly. A default bot name is there. You can change this to be something generic to your company or specific to the scenario you are tailoring your bot to.
-6. For **What language do you want your bot to speak?**, select the language you want your bot to speak. The langugage dropdown is prepopulated with the browser locale.
+4. Once signed up, you will land on the App Homepage. In the left navigation menu, select **Home** then select **Create a copilot**.
+5. A whole page wizard will start with a couple steps to get your copilot created very quickly. A default copilot name is there. You can change this to be something generic to your company or specific to the scenario you are tailoring your copilot to.
+6. For **What language do you want your copilot to speak?**, select the language you want your copilot to speak. The langugage dropdown is prepopulated with the browser locale.
 
     :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
 
-<!--- IMAGE NEEDS UPDATE --->
 
-7. (Optional) You can choose to Boost Conversations be providing a URL to generate AI answers from. With a bot name and langauge selected, you can select Create and create your bot.
+7. (Optional) You can choose to Boost Conversations be providing a URL to generate AI answers from. With a bot name and langauge selected, you can select Create and create your copilot.
 
-<!--- LET'S ADD POINTERS AND TEXT FROM THE GPT ANSWERS FEATURE HERE --->
-  
-There are optional customizations and enhancements you can make before getting your bot created.
-  
-  a. Choose **Edit advanced options** on the bottom left to see and edit advanced options. You can continue with bot creation without going into these advanced options.
-  
-  b. Here you can choose a bot icon to give your bot a personality and represent your business scenarios better. You can select from the pre-populated list if icons or upload a custom icon for your bot. This is the icon used in the chat window when the bot responds.
-  
-  c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with bot topics.
 
-  <!--- link to lesson topic doc page --->
+There are optional customizations and enhancements you can make before getting your copilot created.
   
-  d. There are a couple more advanced options to select the solution your bot will be in and the schema name. These are advanced options which can be changed later, but provided upfront for specific customization.
+  a. Choose **Edit advanced options** on the bottom left to see and edit advanced options. You can continue with copilot creation without going into these advanced options.
+  
+  b. Here you can choose a copilot icon to give your copilot a personality and represent your business scenarios better. You can select from the pre-populated list if icons or upload a custom icon for your copilot. This is the icon used in the chat window when the copilot responds.
+  
+  c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with copilot topics.
+  
+  d. There are a couple more advanced options to select the solution your copilot will be in and the schema name. These are advanced options which can be changed later, but provided upfront for specific customization.
  
-8. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
+8. Select **Create**. The process of creating your first copilot in a new environment can take up to 15 minutes; subsequent copilots will be created much faster.
 
   
   
-1. After a few minutes, you'll be redirected to the bot's overview page. Certain operations like Publish and Authentication configuration may take a few more minutes to be ready for your bot, but you can go ahead and:
+1. After a few minutes, you'll be redirected to the copilot's overview page. Certain operations like Publish and Authentication configuration may take a few more minutes to be ready for your copilot, but you can go ahead and:
     - explore the overall user interface
     - explore topics and start creating and editing topics
     - experiment with the preloaded user topics and system topics
-    - interact with your bot using the Test Canvas
-    - review [additional documentation on authoring topics](authoring-fundamentals.md) in your bot
+    - interact with your copilot using the Test Canvas
+    - review [additional documentation on authoring topics](authoring-fundamentals.md) in your copilot
 
 
 > [!TIP]
-> To navigate back to the app-level home page from your bot, in the navigation menu, select **Chatbots**.
+> To navigate back to the app-level home page from your copilot, in the navigation menu, select **Home**.
 >
->:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Chatbots button in the navigation menu.":::
+>:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Home button in the navigation menu.":::
 
 ### Create a topic
 
