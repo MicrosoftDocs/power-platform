@@ -58,6 +58,8 @@
       href: copilot-ai-plugins.md
     - name: Use plugin actions in Microsoft Copilot Studio
       href: advanced-plugin-actions.md
+    - name: Microsoft Copilot Studio architecture
+      href: copilot-plugins-architecture.md
 - name: Administer and manage
   items:
     - name: Assign licenses
