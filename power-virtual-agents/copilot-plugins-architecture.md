@@ -1,6 +1,6 @@
 ---
-title: Create and edit plugins with Microsoft Copilot Studio
-description: Create and edit plugins using Microsoft Copilot Studio's plugin authoring experience.
+title: Microsoft Copilot Studio plugin architecture
+description: Microsoft Copilot Studio is built upon advanced AI technology, and works across Microsoft services.
 keywords: "PVA, plugin, connector, flow, automate"
 ms.date: 09/29/2023
 ms.service: power-virtual-agents
