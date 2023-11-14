@@ -1,8 +1,6 @@
 <!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+## Remarks 
 
-### Remarks
-
-Add remarks here...
-
+Remove the comments an add any necessary remarks for the power-fx run command here
 -->
+
