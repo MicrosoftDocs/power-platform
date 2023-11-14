@@ -30,7 +30,7 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. For more informa
 
 
 ## 4. The page never loads when I select next actions:
-This might happen if you select multiple **next actions** while a previous next action is loading. We're aware of the issue and are working on a fix in an upcoming release, but until then you can click **cancel** and try the action again.
+This might happen if you select multiple **next actions** while a previous next action is loading. We're aware of the issue and are working on a fix in an upcoming release, but until then select **cancel** and try the action again.
 
 ## 5. How can I refine a single block instead of the entire blueprint?
 If you're using the AI cursor and press enter after entering your prompt, your prompt will automatically create a new blueprint. You can choose to update only a single block on a blueprint by selecting **Generate** and then select **Generate in place of existing block**. This replaces or updates the content of an existing block based on the content you enter.
