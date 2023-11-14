@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-virtual-agents/fundamentals-what-is-power-virtual-agents.md",
+      "redirect_url": "/power-virtual-agents/fundamentals-what-is-copilot-studio",
+      "redirect_document_id": "true"
+    },
+    {
       "source_path": "power-virtual-agents/gdpr-discovery.md",
       "redirect_url": "/power-virtual-agents/personal-data-discovery",
       "redirect_document_id": "true"

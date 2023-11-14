@@ -3,9 +3,7 @@
 - name: Overview
   items:
     - name: What is Microsoft Copilot Studio
-      href: fundamentals-what-is-power-virtual-agents.md
-    - name: Microsoft Copilot Studio portal
-      href: fundamentals-what-is-power-virtual-agents-portal.md
+      href: fundamentals-what-is-copilot-studio.md
     - name: Compliance offerings
       href: admin-certification.md
     - name: Quotas, limits, and configuration values

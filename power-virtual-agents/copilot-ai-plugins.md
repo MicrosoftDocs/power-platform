@@ -2,7 +2,7 @@
 title: Create AI plugins for Microsoft Copilot (preview)
 description: Use plugin actions to extend the capabilities of your bots.
 keywords: "PVA, plugin, connector, flow, automate"
-ms.date: 09/29/2023
+ms.date: 11/13/2023
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -75,57 +75,62 @@ After you've created your plugin, you'll need to [enable it for use in Microsoft
 ## Update or get answers about external data with connectors
 
 
-Connector plugins let you define connector actions that can be invoked from AI surfaces in Power platform. Connector plugins require identification of actions that are enabled for use in copilot as well as capture of information that large language models require to effectively identify and utilize the plugin such as Summary and Description fields. 
-Follow these steps in order to create your connector plugin. Please note at this time, connector plugins are required to be certified before they can be used in M365 copilot. 
-1.	Select New Plugin on the Power Platform AI plugin page
-2.	Select Update or get answers about external data to get started creating a plugin using a connector
- 
-3.	This automatically places you within the Custom connector editor page where you can open your connector from the available list or you can create a new one using the many options available including import of OpenAPI specs etc.
- ![Create Connector Editor](media/copilot-ai-plugins/create-connector-editor.png)
-4.	You will notice a new AI plugin tab in the custom connector wizard. Under Manifest details, add plugin information such as a summary and description. Now select the connector actions you would like to enable for copilot one at a time and provide helpful text descriptions to help LLM identify and utilize said actions.
- ![Create Connectror Details](media/copilot-ai-plugins/create-connectror-details.png)
-5.	Click on the input parameter in the “Request” section of the action. Type in the Description here. For selected action, where the input parameters don’t have descriptive names and descriptions, it is helpful to add human readable text to aid LLM to use these effectively. For example, a field “id” can be better described as the “Account Identifier” or b_date can be described as “Birth Day of Contact in MM/DD/YYYY format.”  Such descriptions help LLMs interact effectively with the plugin.
- ![Create Connector Description](media/copilot-ai-plugins/create-connector-description.png)
+Connector plugins let you define connector actions that can be invoked from AI surfaces in Power Platform. Connector plugins require identification of actions that are enabled for use in Microsoft Copilot as well as the capture of information that large language models require to effectively identify and utilize the plugin, such as **Summary** and **Description** fields. 
 
-6.	Click "Create/Update Connector", and the connector's Swagger will be updated with appropriate annotations. 
-7.	Follow the instructions to certify the connector so that the plugin is available to use in M365 copilot. 
-Internal notes Additional information : <Link to public doc> based on Public documentation Connector Plugin Dev Experience for ISVs.docx Authoring section. Also, we should place link to certification section here. 
+>[!NOTE]
+>Connector plugins are required to be certified before they can be used in Microsoft Copilot. 
 
-After you've created your plugin, you'll need to [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot).
+**To create connector plugins:**
+
+1. Log in to Copilot Studio and select **Plugins (preview)** on the side navigattion pane.
+1. Select **Add a Power Platform component as an AI plugin**.
+2. Select **Update or get answers about external data** to get started creating a plugin using a connector.
+3. This automatically places you within the **Custom connector** editor page where you can open your connector from the available list or you can create a new one.
+    ![Create Connector Editor](media/copilot-ai-plugins/create-connector-editor.png)
+4. On the **AI plugin** tab, add your plugin information such as a summary and description under **Manifest details**. Select the connector actions you would like to enable one at a time, and provide helpful text descriptions to help the copilot identify and use your actions.
+     ![Create Connector Details](media/copilot-ai-plugins/create-connectror-details.png)
+5. Select the input parameter in the **Request** section of the action and enter a description. For actions where the input parameters don’t have descriptive names and descriptions, it's helpful to add human readable text to aid the AI in using the actions effectively. For example, a field "id" can be better described as the "Account Identifier" or b_date can be described as "Birth Day of Contact in MM/DD/YYYY format". Such descriptions help large language models interact effectively with the plugin.
+     ![Create Connector Description](media/copilot-ai-plugins/create-connector-description.png)
+
+6. Select **Create/Update Connector** and the connector's Swagger will be updated with appropriate annotations. 
+7. Follow the instructions to certify the connector so that the plugin can be used in Microsoft Copilot. 
+
+After you've created your plugin, you'll need to [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).
 
 ## Add an OpenAI plugin
 
 
-Open AI plugins provide the ability for Large Language Models to access data that normally would not be available to them based on their available training data. This can include:
-•	Personal information
-•	Specific product, feature, content details not available publicly
-•	Access to line of business application records
-•	Data accessed as part of an integration with specific websites, software, or services
-Depending on the plugin, users can also perform actions against the data such as make updates, additions, or deletion of content.
-Once an Open AI plugin is created ISVs and Developers can use them to implement AI functionality within their apps, bots, and more. 
-Users can create Open AI plugins and use them to generate connectors to integrate the data sources with the Power Platform, as well as create CoPilot plugins that can be used to integrate AI chat capabilities in Microsoft products like Microsoft Teams.
-To turn an Open AI plugin into a connector and a copilot plugin follow these steps:
-1.	From https://make.powerapps.com click on More in the left hand panel
- 
-2.	Scroll down to locate AI Plugins  and select it (You can select to pin this to your left hand navigation list if you wish).
- 
-3.	In the AI Plugins page, select Add an OpenAI Plugin
- 
-4.	A wizard will appear, provide your manifest for the Open AI plugin. This can be done by providing a link to the location of the manifest file, or by manually selecting and uploading the manifest from a local machine.
- ![Create Openai Manifest](media/copilot-ai-plugins/create-openai-manifest.png)
-5.	After providing your manifest, click Next
-6.	Select the authentication type for your plugin from the available options, depending on the type selected you may be asked to provide authentication details. 
- ![Create Openai Auth](media/copilot-ai-plugins/create-openai-auth.png)
-	The following Authentication types are supported:
-•	No Auth – This is used for anonymous plugins and require no additional credentials.
-•	API Key - This will require you to provide a Parameter label and name, as well as the location for the label. Later, when creating a connection to toe connector or plugin, you will be prompted to provide your API Key.
-•	OAuth 2.0 – This will require a client ID< client secret, authentication URL, token URL, refresh URL, and scope
-7.	Click Add Plugin
- ![Create Openai Added](media/copilot-ai-plugins/create-openai-added.png)
- 
-Your CoPilot plugin has now been generated along with your custom connector for the plugin. Both are available for use within your organization and can be included in solutions that you export
-Additional information: https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition
+OpenAI plugins provide the ability for the AI to access data that normally would not be available to them based on their available training data. This can include:
+- Personal information.
+- Specific product, feature, or content details that aren't available publicly.
+- Access to line of business application records.
+- Data accessed as part of an integration with specific websites, software, or services.
 
-After you've created your plugin, you'll need to [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot).
+Depending on the plugin, end users of the copilot can also perform actions against the data such as make updates, additions, or delete content.
+
+Users can create OpenAI plugins and use them to generate connectors to integrate data sources with the Power Platform and to integrate AI chat capabilities in Microsoft products like Microsoft Teams.
+
+**To create an OpenAI plugin:**
+
+1. Log in to Copilot Studio and select **Plugins (preview)** on the side navigattion pane.
+1. Select **Add an OpenAI plugin**. 
+4. Provide your manifest for the Open AI plugin. You can add a link to the location of the manifest file, or by manually selecting and uploading the manifest file from a local machine.
+     ![Create Openai Manifest](media/copilot-ai-plugins/create-openai-manifest.png)
+5. After providing your manifest, select **Next**.
+6. Select the authentication type for your plugin from the available options. You might be asked to provide authentication details, if required for the connection. 
+     ![Create Openai Auth](media/copilot-ai-plugins/create-openai-auth.png)
+ 
+    The following suthentication types are supported:
+
+    - **No Auth** – This is used for anonymous plugins and require no additional credentials.
+    - **API Key** - This will require you to provide a parameter label and name, as well as the location for the label. Later, when creating a connection to the connector or plugin, you will be prompted to provide your API Key.
+    - **OAuth 2.0** – This will require a client ID, client secret, authentication URL, token URL, refresh URL, and scope.
+
+7. Select **Add Plugin**.
+     ![Create Openai Added](media/copilot-ai-plugins/create-openai-added.png)
+ 
+Your copilot plugin is generated along with your custom connector for the plugin. Both are available for use within your organization and can be included in solutions that you export. For more information, see [Create a custom connector from an OpenAI definition](/connectors/custom-connectors/define-openapi-definition).
+
+After you've created your plugin, you'll need to [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).
 
 
