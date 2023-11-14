@@ -45,30 +45,36 @@ The experience to create prompt plugins in Copilot Studio is the same as in Powe
 3. Expand the **Test your prompt** section and enter sample data for each dynamic value. Select **Test prompt** to evaluate how well the prompt works.
 4.Select **Save custom prompt**.
 
-After you've created your plugin, you'll need to [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot).
+After you've created your plugin, you'll need to [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).
 
-See [AI Builder dynamic prompts](/ai-builder/create-a-custom-prompt?branch=pr-en-us-766) for more information about building and using prompt plugins.
+See [AI Builder prompts](/ai-builder/create-a-custom-prompt?branch=pr-en-us-766) for more information about building and using prompt plugins.
 
 ## Custom automation with Power Automate flows
 
-Power Automate flow plugins let you define flows that can be called from AI surfaces in Power platform. Flow plugins leverage the new Run from Copilot trigger and Respond to copilot action to define custom processes that can be invoked via natural language. Follow these steps in order to create your own flow plugin
-1.	Select New Plugin on the Power Platform AI plugin page
-2.	Select Custom Automation to get started creating a plugin using flow
-3.	This automatically places you within the flow editor with the Run from Copilot trigger and Respond to copilot action present.
-4.	You can add inputs to your trigger for information you might want to collect from your users, provide helpful text descriptions for each input so the LLM can make best use of it
-5.	Add actions to your flow such as the Create an approval and Post a message to Teams chat to create a simple Approval process 
- ![Create Flow Plugin](media/copilot-ai-plugins/create-flow-plugin.png)
-6.	Optionally add parameters to the Respond to copilot action for any output you want to send back to the bot.
-7.	Save your flow with a meaningful flow name and test or run it at least once. The LLM uses the title and description of the flow to determine when to invoke the flow plugins. Ensure flows run as only tested flows show up as available plugins in Copilot.
-The following screenshot shows an example of a simple approval flow with a Teams notification built in. 
-![Create Flow Plugin Path](media/copilot-ai-plugins/create-flow-plugin-path.png)
+Power Automate flow plugins let you define flows that can be called from AI surfaces in Power Platform. Flow plugins leverage the new **Run from Copilot** trigger and **Respond to copilot** action to define custom processes that can be invoked with natural language. 
 
-After you've created your plugin, you'll need to [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot).
+**To create automation plugins:**
+
+1. Log in to Copilot Studio and select **Plugins (preview)** on the side navigattion pane.
+1. Select **Add a Power Platform component as an AI plugin**.
+2. Select **Custom Automation**.
+3. This automatically places you within the flow editor with the **Run from Copilot** trigger and **Respond to copilot** action present.
+4. You can add inputs to your trigger for information you might want to collect from your users. Provide helpful text descriptions for each input so the AI can correctly identify what to extract from a user's data or inputs.
+      ![Create Flow Plugin](media/copilot-ai-plugins/create-flow-plugin.png)
+5. Add actions to your flow such as the **Create an approval** and **Post a message to Teams chat** to create a simple approval process 
+
+6. Optionally add parameters to the **Respond to copilot** action for any output you want to send back to the bot.
+
+    ![Create Flow Plugin Path](media/copilot-ai-plugins/create-flow-plugin-path.png)
+7. Save your flow with a meaningful flow name and test or run it at least once. The AI uses the title and description of the flow to determine when to invoke the flow plugins. Ensure your flows run correctly, as only tested flows show up as available plugins in Microsoft Copilot.
+
+
+
+After you've created your plugin, you'll need to [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).
 
 ## Update or get answers about external data with connectors
 
 
-Update or get answers about external data  
 Connector plugins let you define connector actions that can be invoked from AI surfaces in Power platform. Connector plugins require identification of actions that are enabled for use in copilot as well as capture of information that large language models require to effectively identify and utilize the plugin such as Summary and Description fields. 
 Follow these steps in order to create your connector plugin. Please note at this time, connector plugins are required to be certified before they can be used in M365 copilot. 
 1.	Select New Plugin on the Power Platform AI plugin page
