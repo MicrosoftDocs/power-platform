@@ -183,21 +183,22 @@
       href: publication-connect-bot-to-azure-bot-service-channels.md
     - name: Integrate with question answering
       href: integrate-with-question-answering.md
-
-
     - name: Integrate and hand off conversations
       items:
+        - name: Configure hand-off to a generic engagement hub
+          href: configure-generic-handoff.md  
         - name: Configure voice and text hand off to Dynamics 365 Customer Service
           href: configuration-hand-off-omnichannel.md
-        - name: Get started with conversational language understanding integration
-          href: advanced-clu-get-started.md
-        - name: Entity registration for conversational language understanding integration
-          href: advanced-clu-entity-registration.md
-          - name: 
-      href: 
-
-
-
+        - name: Overview of Customer Copilot hand off
+          href: customer-copilot-overview.md
+        - name: Hand off to Genesys
+          href: customer-copilot-genesys-handoff.md
+        - name: Hand off to LivePerson
+          href: customer-copilot-liveperson-handoff.md
+        - name: Hand off to Salesforce Einstein bot 
+          href: customer-copilot-salesforce-handoff.md
+        - name: Hand off to ServiceNow
+          href: customer-copilot-servicenow.md
     - name: Integrate with conversational language understanding
       items:
         - name: Conversational language understanding integration overview
@@ -262,8 +263,6 @@
       href: configure-sso.md
     - name: Configure single sign-on for Teams
       href: configure-sso-teams.md
-    - name: Configure hand-off to a generic engagement hub
-      href: configure-generic-handoff.md
     - name: Configure the bot to automatically start the conversation
       href: configure-bot-greeting.md
     - name: Customize the look and feel of the bot

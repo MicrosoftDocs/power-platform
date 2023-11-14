@@ -14,22 +14,22 @@ ms.service: virtual-agent
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Integrating LivePerson with PVA presents a compelling opportunity for businesses seeking to enhance their customer support and engagement capabilities. This integration harmoniously merges PVA's conversational AI prowess with LivePerson's messaging platform, equipping organizations to deliver highly personalized and streamlined customer interactions across various communication channels. In practice, this integration effectively addresses real-world business challenges, such as efficiently scaling customer support operations, reducing response times, and ultimately elevating overall customer satisfaction levels. To embark on this integration journey, it's crucial to understand prerequisites, including the necessity of active LivePerson and PVA subscriptions and access to essential credentials. Moreover, explore related documentation to gain a comprehensive grasp of the integration process and its place within a broader customer engagement and automation strategy in your organization.
+Integrating LivePerson with Copilot Studio presents a compelling opportunity for businesses seeking to enhance their customer support and engagement capabilities. 
 
 ## Prerequisites
 
 Before you begin, ensure that you have the following prerequisites in place:
 
 1. An active LivePerson account.
-2. A Power Virtual Agents (PVA) bot created in Microsoft Power Platform.
-3. Admin or developer access to both LivePerson and Microsoft Power Platform.
+2. A Copilot Studio bot.
+3. Admin or developer access to both LivePerson and Power Platform.
 
 ### Steps
 
-Follow these steps to create and connect LivePerson to a Power Virtual Agents (PVA) Bot:
+Follow these steps to create and connect LivePerson to a Copilot Studio bot:
 
-1. Retrieve your <a href="https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0" target="_blank">Direct Line Secret</a> for your bot.
+1. [Retrieve the Direct Line secret](azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0) for your bot.
 
-2. Confirm the following steps <a href="https://developers.liveperson.com/third-party-bots-microsoft-direct-line-introduction.html" target="_blank">LivePerson</a> document.
+2. Follow the instructions at the [LivePerson documentation site](https://developers.liveperson.com/third-party-bots-microsoft-direct-line-introduction.html).
 
-3. To setup handoff back to LivePerson follow this documentation <a href="https://developers.liveperson.com/third-party-bots-microsoft-direct-line-pva.html#transfer-to-agent">Transfer to agent</a>
+3. To set up hand off back to LivePerson, see the [LivePerson documentation - Transfer to agent](https://developers.liveperson.com/third-party-bots-microsoft-direct-line-pva.html#transfer-to-agent).
