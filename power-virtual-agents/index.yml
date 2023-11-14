@@ -61,7 +61,7 @@ additionalContent:
           links:
             - text: Use the web app
               url: ./fundamentals-what-is-power-virtual-agents-portal.md
-            - text: Use the unified canvas to build bots
+            - text: Use the unified canvas to build copilots
               url: ./unified-authoring-conversion.md
         - title: Create copilots with generative AI
           links:
@@ -73,7 +73,7 @@ additionalContent:
               url: ./nlu-boost-conversations.md
             - text: Build a copilot with generative AI from the ground up
               url: ./nlu-gpt-quickstart.md
-        - title: Enhance and improve your bots
+        - title: Enhance and improve your copilots
           links:
             - text: Use entities and slot filling
               url: ./advanced-entities-slot-filling.md
@@ -87,7 +87,7 @@ additionalContent:
               url: guidance/topics-overview.md
             - text: Trigger phrases best practices
               url: guidance/trigger-phrases-best-practices.md
-            - text: Measuring chatbot engagement
+            - text: Measuring copilot engagement
               url: guidance/measuring-engagement.md
             - text: Microsoft Copilot Studio architecture
               url: ./copilot-plugins-architecture.md
@@ -100,7 +100,7 @@ additionalContent:
               url: ./requirements-licensing.md
             - text: Working with environments
               url: ./environments-first-run-experience.md
-            - text: Export and import bots using solutions
+            - text: Export and import copilots using solutions
               url: ./authoring-export-import-bots.md
         - title: Publish and integrate
           links:
@@ -112,9 +112,9 @@ additionalContent:
               url: ./publication-add-bot-to-facebook.md
         - title: Monitor and diagnose
           links:
-            - text: Use analytics to improve your bot
+            - text: Use analytics to improve your copilot
               url: ./analytics-overview.md
-            - text: Analyze bot performance and usage
+            - text: Analyze copilot performance and usage
               url: ./analytics-summary.md
             - text: Analyze topic usage
               url: ./analytics-topic-details.md
