@@ -63,7 +63,7 @@ additionalContent:
               url: ./fundamentals-what-is-power-virtual-agents-portal.md
             - text: Use the unified canvas to build bots
               url: ./unified-authoring-conversion.md
-        - title: Create bots with generative AI
+        - title: Create copilots with generative AI
           links:
             - text: Use generative AI to build copilots fast
               url: ./nlu-gpt-overview.md
