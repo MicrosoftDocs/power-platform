@@ -20,9 +20,9 @@ ms.collection: virtual-agent
 > [!NOTE]
 > This topic includes information applicable to Microsoft Copilot Studio Classic only. This feature is not available in the new Microsoft Copilot Studio experience.
 
-When you use a Microsoft Copilot Studio bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) with a Bot Framework bot, the Bot Framework bot determines if anything the user says matches the Microsoft Copilot Studio bot's [trigger phrases](authoring-create-edit-topics.md). If there's a match, the Bot Framework bot [passes the conversation to the Microsoft Copilot Studio bot](#call-a-power-virtual-agents-skill-topic). The Microsoft Copilot Studio bot extracts any [entities](advanced-entities-slot-filling.md) and triggers the matching topic.
+When you use a Microsoft Copilot Studio bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) with a Bot Framework bot, the Bot Framework bot determines if anything the user says matches the Microsoft Copilot Studio bot's [trigger phrases](authoring-create-edit-topics.md). If there's a match, the Bot Framework bot [passes the conversation to the Microsoft Copilot Studio bot](#call-a-microsoft-copilot-studio-skill-topic). The Microsoft Copilot Studio bot extracts any [entities](advanced-entities-slot-filling.md) and triggers the matching topic.
 
-You can also [pass a variable to a Microsoft Copilot Studio skill topic as an input](#pass-an-input-variable-to-a-power-virtual-agents-skill-topic) from Bot Framework Composer and [use the outputs it returns](#receive-an-output-variable-from-a-power-virtual-agents-skill-topic).
+You can also [pass a variable to a Microsoft Copilot Studio skill topic as an input](#pass-an-input-variable-to-a-microsoft-copilot-studio-skill-topic) from Bot Framework Composer and [use the outputs it returns](#receive-an-output-variable-from-a-microsoft-copilot-studio-skill-topic).
 
 > [!IMPORTANT]
 > You must have a [trial](sign-up-individual.md) or full Microsoft Copilot Studio license to use Microsoft Copilot Studio bots as skills.
@@ -30,10 +30,10 @@ You can also [pass a variable to a Microsoft Copilot Studio skill topic as an in
 
 To set up your Microsoft Copilot Studio bot as a skill:
 
-1. [Add the Bot Framework bot to the allowlist for the Microsoft Copilot Studio bot](#add-your-bot-framework-bot-to-the-allowlist-for-your-power-virtual-agents-bot).
-1. [Download the skill manifest for the Microsoft Copilot Studio bot](#download-the-bot-skill-manifest-for-your-power-virtual-agents-bot).
-1. [Use the downloaded skill manifest in Bot Framework Composer to create a connection between the bots](#connect-to-a-power-virtual-agents-skill-in-composer).
-1. [Use the Bot Framework Emulator to confirm the bot works as a skill](#test-your-power-virtual-agents-bot-as-a-skill-with-a-bot-framework-bot).
+1. [Add the Bot Framework bot to the allowlist for the Microsoft Copilot Studio bot](#add-your-bot-framework-bot-to-the-allowlist-for-your-microsoft-copilot-studio-bot).
+1. [Download the skill manifest for the Microsoft Copilot Studio bot](#download-the-bot-skill-manifest-for-your-microsoft-copilot-studio-bot).
+1. [Use the downloaded skill manifest in Bot Framework Composer to create a connection between the bots](#connect-to-a-microsoft-copilot-studio-skill-in-composer).
+1. [Use the Bot Framework Emulator to confirm the bot works as a skill](#test-your-microsoft-copilot-studio-bot-as-a-skill-with-a-bot-framework-bot).
 
 ## Prerequisites
 

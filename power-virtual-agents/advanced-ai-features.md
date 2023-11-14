@@ -32,7 +32,7 @@ This topic provides details and instructions for using these AI features for bac
 > - You create a **Classic** bot
 > - You created your bot before May 23, 2023
 >
-> [Generative AI features](nlu-gpt-overview.md) (such as [generative answers](nlu-boost-conversations.md) and [Copilot](nlu-authoring.md)) are only available if you create or convert a bot [using the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-power-virtual-agents) in the Microsoft Copilot Studio web app.
+> [Generative AI features](nlu-gpt-overview.md) (such as [generative answers](nlu-boost-conversations.md) and [Copilot](nlu-authoring.md)) are only available if you create or convert a bot [using the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-microsoft-copilot-studio) in the Microsoft Copilot Studio web app.
 
 
 ## Prerequisites

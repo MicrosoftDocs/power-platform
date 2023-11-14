@@ -91,7 +91,7 @@ Common problems include:
 **Resolution:**
 
 - Your environment's data loss prevention (DLP) policies require that users sign in. See [Configure user authentication](advanced-end-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
-- One or more connectors that are used in the bot aren't in the same data group. See [Microsoft Copilot Studio connectors](admin-data-loss-prevention.md#power-virtual-agents-connectors).
+- One or more connectors that are used in the bot aren't in the same data group. See [Microsoft Copilot Studio connectors](admin-data-loss-prevention.md#microsoft-copilot-studio-connectors).
 - One or more connectors that are used in the bot are blocked by the tenant administrator.
 
 #### FlowActionException

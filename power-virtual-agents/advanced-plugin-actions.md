@@ -1,6 +1,6 @@
 ---
 title: Use plugin actions in Microsoft Copilot Studio (preview)
-description: Use plugin actions to extend the capabilities of your bots.
+description: Use plugin actions in Microsoft Copilot Studio to extend the capabilities of your bots.
 keywords: "PVA, plugin, connector, flow, automate"
 ms.date: 09/29/2023
 ms.service: power-virtual-agents
@@ -36,7 +36,7 @@ Plugin actions are based on one of the following core action types:
 
 >[!IMPORTANT]
 >  
-> You can't use [conversational plugins that you've created in Microsoft Copilot Studio](copilot-conversational-plugin.mds) as a plugin action.
+> You can't use [conversational plugins that you've created in Microsoft Copilot Studio](copilot-conversational-plugins.md) as a plugin action.
 
 The core action is marked up with additional information that describes its purpose, allowing the bot to use GPT to generate the questions required to fill the inputs needed to perform the action. This means that instead of needing to manually author Question nodes to gather all of the input values needed, such as the inputs on a Flow, this is handled for you during runtime.
 
