@@ -50,13 +50,13 @@
       href: advanced-ai-features.md
 - name: Expand copilots with plugins
   items:
-    - name: Create and configure copilot plugins
+    - name: Create and configure copilot plugins (preview)
       href: copilot-plugins-overview.md
-    - name: Create conversational plugins for Microsoft Copilot (preview)
+    - name: Create conversational plugins for Microsoft Copilot
       href: copilot-conversational-plugins.md
-    - name: Create AI plugins for Microsoft Copilot (preview)
+    - name: Create AI plugins for Microsoft Copilot
       href: copilot-ai-plugins.md
-    - name: Use plugin actions in Microsoft Copilot Studio (preview)
+    - name: Use plugin actions in Microsoft Copilot Studio
       href: advanced-plugin-actions.md
 - name: Administer and manage
   items:

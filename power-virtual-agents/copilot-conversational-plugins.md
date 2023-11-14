@@ -14,6 +14,8 @@ searchScope:
 
 # Create conversational plugins for Microsoft Copilot (preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Microsoft Copilot provides out of the box experiences to engage with content and resources from across your organization. In some situations answers and interaction with external systems are required. With Microsoft Copilot Studio, you can author a conversational topic that can be published to the Microsoft Copilot catalog as a Copilot Enabled App, and once approved by your Tenant Admin, can be added to you and your orgnization's Microsoft Copilot Chat experiences.
 
 For this preview, you will be able to create a conversational plugin that recieves the user's query (stored in the **Activity.Text** variable), processes it by completing one or more operations and then send one or more responses back to the user in the Microsoft Copilot chat.

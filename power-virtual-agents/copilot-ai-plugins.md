@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 ---
 # Create AI plugins for Microsoft Copilot (preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can create multiple types of AI plugins in Microsoft Copilot Studio, which let you customize how Microsoft Copilot responds to your end users:
 
 - Prompt plugins, which use AI Builder and natural language understanding to target the specific scenarios and workflows within your business.

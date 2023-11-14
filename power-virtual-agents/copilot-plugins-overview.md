@@ -12,26 +12,14 @@ ms.custom: plugin, connector, flow, advanced-authoring
 ms.collection: virtual-agent
 ---
 
-<!--TOC-->
-- [Create and configure copilot plugins (preview)](#create-and-configure-copilot-plugins-preview)
-  - [Prerequisites](#prerequisites)
-  - [Copilot plugins](#copilot-plugins)
-    - [Plugin categories and types](#plugin-categories-and-types)
-      - [Conversational plugins](#conversational-plugins)
-      - [AI plugins](#ai-plugins)
-  - [Use plugins in Microsoft Copilot](#use-plugins-in-microsoft-copilot)
-    - [Deploy the Dynamics 365 and Copilot Studio app (admin)](#deploy-the-dynamics-365-and-copilot-studio-app-admin)
-    - [Enable the M365 Copilot setting (admin)](#enable-the-m365-copilot-setting-admin)
-    - [Enable the connection in Microsoft Copilot (user)](#enable-the-connection-in-microsoft-copilot-user)
-  - [Share AI plugins](#share-ai-plugins)
-  - [Related topics](#related-topics)
-<!--/TOC-->
 
 # Create and configure copilot plugins (preview)
 
+
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-
 
 Create plugins in Microsoft Copilot Studio that can be used in your copilots across Microsoft products to call connected services, perform actions, and provide answers for your copilot users without needing to manually author complex conversation flows. 
 
