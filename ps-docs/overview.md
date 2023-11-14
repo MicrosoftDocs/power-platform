@@ -43,9 +43,9 @@ You can also go back to the **Onboarding** screen, by going to the Home screen a
 Legend
 
 1. **Exploratory**: Offers a blank canvas where you can explore and ask questions related to your business. Or you can upload business data and ask questions about the data. Project "Sophia" uses the uploaded data to generate insights and suggests next actions.
-2. **Guides**: Helps you through the process of gathering relevant data to tackle specific role-based business tasks. For preview. only the account planning guide is supported. Guides for sales territory planning, supply chain optimization, and others are coming soon.
+2. **Guides**: Helps you through the process of gathering relevant data to tackle specific role-based business tasks. For preview, only the account planning guide is available. Guides for sales territory planning, supply chain optimization, and others are coming soon.
 3. **Question**: Enter your question in the text box and then select **Generate**.
-4. **Blueprint**: The results that are generated when you ask a question or upload data. You can also generate a new blueprint by selecting on of the suggested next steps.
+4. **Blueprint**: The results that are generated when you ask a question or upload data. You can also generate a new blueprint by selecting one of the suggested next steps.
 5. **Block**: Example of the different blocks of content that is generated.
 
 ## Home screen
@@ -68,12 +68,12 @@ Legend
 
 ## Waiting room
 
-If Project "Sophia" reaches its full capacity during the preview period, you're placed in a waiting room queue until there's more capacity. You can remain in the waiting room or sign up to be notified when Project "Sophia" is available to everyone without ever getting redirected to the waiting room. 
+If Project "Sophia" reaches its full capacity during the preview period, you're placed in a waiting room queue until there's more capacity. You can remain in the waiting room or sign up to be notified when Project "Sophia" is available to everyone without getting redirected to the waiting room. 
 
 
 > [!Note]
-> If you chose to stay in the waiting room, don't refresh your browser as this will put you at the back of the queue.
+> If you choose to stay in the waiting room, don't refresh your browser as this will put you at the back of the queue.
 
 ## Authenticated and unauthenticated experience
 
-If you don't sign in to Project "Sophia", you can't ask questions or upload any data. However, you can still access a limited unauthenticated experience where you can use sample data and get a feel for of Project "Sophia", and view suggested next steps.
+If you don't sign in to Project "Sophia", you can't ask questions or upload any data. However, you can still access a limited unauthenticated experience where you can use sample data and get a feel for Project "Sophia", and view suggested next steps.
