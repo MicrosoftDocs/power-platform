@@ -1,5 +1,5 @@
 ---
-title: Generative answers with Azure OpenAI on your data
+title: Generative answers with Azure OpenAI on your data (preview)
 description: "Boost conversations using Azure OpenAI on your data."
 keywords: "PVA"
 ms.date: 07/31/2023
@@ -16,15 +16,16 @@ searchScope:
 
 # Use a connection to Azure OpenAI on your data for generative answers
 
+
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-By connecting Microsoft Copilot Studio with Azure OpenAI on your data, your bots can leverage resources from Azure through the Generative answers node. [Azure OpenAI on your data](/azure/ai-services/openai/concepts/use-your-data) works with the powerful language models in OpenAI and Azure Cognitive Search to index your data and provide responses while complying with your organizational policies. 
+By connecting Microsoft Copilot Studio with Azure OpenAI on your data, your bots can leverage resources from Azure through the Generative answers node. [Azure OpenAI on your data](/azure/ai-services/openai/concepts/use-your-data) works with the powerful language models in OpenAI and Azure Cognitive Search to index your data and provide responses while complying with your organizational policies.
 
 ## Prerequisites
 
 - Connect your data source using [Azure OpenAI Studio](https://openai.studio-ppe.azure.com/).
 
-  :::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text="Screenshot showing the Azuree OpenAI Studio.":::
+  :::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text="Screenshot showing the Azure OpenAI Studio.":::
 
 - Connect a Microsoft Copilot Studio bot to your data by selecting **Deploy to** and then **A new Microsoft Copilot Studio bot**. The bot is created and automatically connected to your Azure resource in your default environment.
 

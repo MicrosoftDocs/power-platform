@@ -81,7 +81,7 @@ Label1.Text: $"Provide session ID { Host.SessionID } to your administrator."
 
 ## TenantID property
 
-The **TenantID** property provides the Globally Unique Identifier (GUID) that specifies the Azure Active Directory (AAD) tenant associated with the presently authenticated user.
+The **TenantID** property provides the Globally Unique Identifier (GUID) that specifies the Microsoft Entra tenant associated with the presently authenticated user.
 
 > [!NOTE]
 > Similar to **SessionID**, in embedded scenarios such as Power Apps in Power BI, the tenant ID is the tenant used for the Power Apps session authentication.
