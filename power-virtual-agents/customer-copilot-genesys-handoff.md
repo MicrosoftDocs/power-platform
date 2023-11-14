@@ -1,4 +1,17 @@
-# Genesys Cloud Integration with PVA
+---
+title: Hand off to Genesys
+description: Integrate with LivePerson, enabling you to enhance your customer support and engagement capabilities. Learn how to set up this integration to leverage the strengths of both platforms, empowering your organization to deliver more personalized, efficient, and effective customer interactions.
+ms.reviewer: pswimm
+ms.date: 11/14/2023
+ms.topic: how-to
+author: iaanw
+ms.author: iawilt
+ms.collection: power-virtual-agents
+ms.service: virtual-agent
+---
+
+
+# Hand off to Genesys
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 

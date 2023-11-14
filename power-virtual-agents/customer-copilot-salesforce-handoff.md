@@ -1,21 +1,16 @@
 ---
-title: "Creating and Connecting an Einstein Bot to a Power Virtual Agents"
-description: "Instructions and references to setup Salesforce to connect with Service Copilot PVA"
-ms.reviewer: pm-alias
-ms.date: 09/27/2023
-
-<!-- Do not update the following fields; the docs team uses them for content management -->
+title: Hand off to Salesforce Einstein bot 
+description: Integrate with LivePerson, enabling you to enhance your customer support and engagement capabilities. Learn how to set up this integration to leverage the strengths of both platforms, empowering your organization to deliver more personalized, efficient, and effective customer interactions.
+ms.reviewer: pswimm
+ms.date: 11/14/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-ms.collection: TBU
-ms.service: TBU
-searchScope:
-  - "TBU"
-<!-- End of content management section -->
+ms.collection: power-virtual-agents
+ms.service: virtual-agent
 ---
 
-# Creating and Connecting an Einstein Bot to a Power Virtual Agents (PVA) Bot
+# Hand off to Salesforce Einstein bot 
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
