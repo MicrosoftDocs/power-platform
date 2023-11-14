@@ -6,14 +6,14 @@
       href: fundamentals-what-is-copilot-studio.md
     - name: Compliance offerings
       href: admin-certification.md
+    - name: Security and governance in Copilot Studio
+      href: security-and-governance.md
     - name: Quotas, limits, and configuration values
       href: requirements-quotas.md
-    - name: What's new in Microsoft Copilot Studio
-      items:
-        - name: Migrate to the unified canvas
-          href: unified-authoring-conversion.md
-        - name: Key concepts for Composer users
-          href: composer-concepts-preview.md
+    - name: Migrate to the unified canvas
+       href: unified-authoring-conversion.md
+    - name: Key concepts for Composer users
+      href: composer-concepts-preview.md
 - name: Get started
   items:
     - name: Get access to Microsoft Copilot Studio
@@ -70,6 +70,8 @@
       href: sign-up-individual.md
     - name: Working with environments
       href: environments-first-run-experience.md
+    - name: Configure data movement across geographic locations
+      href: manage-data-movement-outside-us.md
     - name: Apply and configure data loss prevention policies
       items:
         - name: Manage data loss prevention for chatbots
