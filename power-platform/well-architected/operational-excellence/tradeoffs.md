@@ -17,11 +17,11 @@ During the design phase of a workload, it's important to consider how decisions 
 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description.
 
-## Operational Excellence tradeoffs with Operational Excellence
+## Operational Excellence tradeoffs with Performance Efficiency
 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description.
 
-## Operational Excellence tradeoffs with Performance Efficiency
+## Operational Excellence tradeoffs with Experience Optimization
 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description.
 
