@@ -54,11 +54,11 @@ The plugin registry stores and manages the plugin metadata and execution informa
 
 This is a sample set of the various copilots that integrate with the plugins registry to consume plugins. These include Microsoft copilots for Dynamics 365 apps, Microsoft copilots for Teams, and custom copilots authored using Microsoft Copilot Studio. The list is expected to grow in the future as more first-party and third-party copilots are developed.
 
-# A plugin in Microsoft Copilot 
+## A plugin in Microsoft Copilot 
 
 ![Plugins used in a copilot](media/copilot-plugins-architecture/image2.png)
 
-## Admin Layer
+### Admin Layer
 
 The administration layer is where administrators can use the Microsoft Admin Center to choose the integrated apps available for their tenant and allow, deploy or block them for specific or all users. An integrated app can be comprised of multiple plugins. The apps available from Microsoft Copilot Studio-created plugins are retrieved from the plugins registry and include:
 
@@ -70,7 +70,7 @@ The administration layer is where administrators can use the Microsoft Admin Cen
 
 (Note that these app names are subject to modification.)
 
-## Plugin Discovery and Execution
+### Plugin Discovery and Execution
 
 The plugins available to a user includes he plugins assigned to the user via deployed integrated apps and the ones the user has access to. The plugins available to a user are discovered using the plugins registry for each user. Users are free to further customize the plugins based on how they want to use the plugin flyout experience. The plugin execution information is also retrieved from the plugins registry and carries with it the details on the runtime path to execute a plugin.
 
@@ -82,27 +82,27 @@ There are two runtime execution paths supported today:
 
 If a user does not find a suitable plugin for their task, they can choose to navigate to the Microsoft Copilot Studio to continue their authoring experience and create a plugin that addresses their needs.
 
-## Data/AI Layer
+### Data/AI Layer
 
 This represents the various data stores and systems where the data and business logic reside. They include Sales, Field Service and other Dynamics 365 products, Microsoft Copilot Studio, Power Automate, and external systems such as Salesforce, SAP, and others.
 
-### Data and control flows for some plugin types
+#### Data and control flows for some plugin types
 
 As a prerequisite for all the flows listed below, an administrator uses the Microsoft Admin Center to configure the corresponding integrated apps and assigns them to users, including the Copilot user referenced here. In these flows, we first see the **configuration phase** for a copilot user in Copilot for Teams. After the user signs in, the plugins applicable for that user are retrieved from the plugin registry. The plugins that the user sees in their flyout will be the plugins that belong to the integrated apps their administrator has configured for them and the ones they have access to in the plugin registry. The user can then configure the plugins they want to use in the copilot experience in the flyout in their Copilot for Teams experience.
 
-#### Dynamics 365 plugins
+##### Dynamics 365 plugins
 
 ![Flows for Dynamics 365 plugins](media/copilot-plugins-architecture/image3.png)
 
 In the runtime flow for the Dynamics 365 plugins, the copilot user's utterance of *"Get opportunities for ACME corp"* is mapped by the orchestrator to a set of candidate plugins. A plugin from  Dynamics 365 is found to be best candidate and then executed, translating the user's utterance to SQL against the dynamic data the user has access to. The results are then returned to the user. Teams copilot can additionally add data from M365 and summarize the results.
 
-#### Microsoft Copilot Studio plugins
+##### Microsoft Copilot Studio plugins
 
 ![Flow for Microsoft Copilot Studio plugins](media/copilot-plugins-architecture/image4.png)
 
 In the runtime flow for Copilot Studio prompt plugins, the user's utterance is again mapped to a plugin. In this case however the matching plugin is a prompt authored in Microsoft Copilot Studio. The prompt grounds data in Dataverse table _orders_ and calls into Open AI to summarize the results for order 123 and returns the summary to the user.
 
-#### Connector plugins
+##### Connector plugins
 
 ![Flow for connector plugins](media/copilot-plugins-architecture/image5.png)
 
