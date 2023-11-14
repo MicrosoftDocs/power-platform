@@ -25,17 +25,17 @@ You can create multiple types of AI plugins in Microsoft Copilot Studio, which l
 
 This article provides instructions for creating, sharing, or publishing plugins.
 
-After you create plugins, you'll need to [enable them for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot).
+After you create plugins, [enable them for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot).
 
 AI plugins can be created on the **AI plugins (preview)** page in Copilot Studio, under **Plugins (preview)** on the side navigation pane:
 
-![Ai Plugins Page](media/copilot-ai-plugins/ai-plugins-page.png)
+![AI Plugins Page](media/copilot-ai-plugins/ai-plugins-page.png)
 
 The remainder of this article describes how to create each type of plugin.
 
 ## Generate content or extract insights with AI Builder dynamic prompts
 
-The experience to create prompt plugins in Copilot Studio is the same as in Power Apps. Any plugins, you create in either Copilot Studio or Power Apps, go to the plugin registry and populate in both apps.
+The experience to create prompt plugins in Copilot Studio is the same as in Power Apps. Any plugins you create in either Copilot Studio or Power Apps go to the plugin registry and populate in both apps.
 
 **To create prompt plugins:**
 
@@ -49,11 +49,11 @@ The experience to create prompt plugins in Copilot Studio is the same as in Powe
 
 After you create your plugin, you need to [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).
 
-For more information about building and using prompt plugins, see [AI Builder prompts](/ai-builder/create-a-custom-prompt?branch=pr-en-us-766).
+For more information about building and using prompt plugins, see [AI Builder prompts](/ai-builder/create-a-custom-prompt).
 
 ## Custom automation with Power Automate flows
 
-Power Automate flow plugins let you define flows that can be called from AI surfaces in Power Platform. Flow plugins use the new **Run from Copilot** trigger and **Respond to copilot** action to define custom processes that can be invoked with natural language. 
+Power Automate flow plugins let you define flows that can be called from AI surfaces in Power Platform. Flow plugins use the new **Run from Copilot** trigger and **Respond to Copilot** action to define custom processes that can be invoked with natural language.
 
 **To create automation plugins:**
 
@@ -130,4 +130,4 @@ Users can create OpenAI plugins and use them to generate connectors to integrate
 
 Your copilot plugin is generated along with your custom connector for the plugin. Both are available for use within your organization and can be included in solutions that you export. For more information, see [Create a custom connector from an OpenAI definition](/connectors/custom-connectors/define-openapi-definition).
 
-After you create your plugin, you'll need to [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).
+After you create your plugin, [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).
