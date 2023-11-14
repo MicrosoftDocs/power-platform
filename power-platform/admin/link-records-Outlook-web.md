@@ -44,7 +44,7 @@ If there are any changes to the synced data including updates or deletes, the re
 After turning on the **Search for records in Microsoft 365 apps** setting, your users can open their Outlook web clients and quickly add links to their most recently used records to be shared with colleagues.
 
 > [!Note]
-> - It may take some an hour or more for records to be available in your Outlook web client.
+> - It may take an hour or more for records to be available in your Outlook web client.
 > - This feature may not yet be available in your region.
 
 > [!Important]

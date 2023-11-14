@@ -19,9 +19,12 @@ contributors:
 
 # Now, Today, IsToday, UTCNow, UTCToday, IsUTCToday functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Returns the current date and time, and tests whether a date/time value is today.
+
+> [!NOTE]
+> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support the **UTCNow**, **UTCToday**, and **IsUTCToday** functions.
 
 ## Description
 
