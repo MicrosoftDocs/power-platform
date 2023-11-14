@@ -29,7 +29,7 @@ However, these features aren't available in all regions and languages. Depending
 
 ## How data movement across regions works
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint that powers these features is hosted**. That data is protected and secured at every step in ways that comply with all applicable privacy laws and regulations, such as the European Union data boundary. We might store prompt and output data for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint that powers these features is hosted**. We might store prompt and output data for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
 
 The following table describes when and how data can move across regions for copilots and generative AI features.
 
