@@ -42,7 +42,7 @@ In the navigation menu, select **Copilots** to open the **Copilots** page and vi
 
 :::image type="content" source="media/fundamentals-get-started/chatbot-list.png" alt-text="Screenshot of the list of chatbots.":::
 
-<!--- IMAGE NEEDS UPDATE --->
+
 
 ### Create a copilot
 
@@ -64,38 +64,34 @@ In the navigation menu, select **Copilots** to open the **Copilots** page and vi
 
     :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
 
-<!--- IMAGE NEEDS UPDATE --->
 
-7. (Optional) You can choose to Boost Conversations be providing a URL to generate AI answers from. With a bot name and langauge selected, you can select Create and create your bot.
+7. (Optional) You can choose to Boost Conversations be providing a URL to generate AI answers from. With a bot name and langauge selected, you can select Create and create your copilot.
 
-<!--- LET'S ADD POINTERS AND TEXT FROM THE GPT ANSWERS FEATURE HERE --->
-  
-There are optional customizations and enhancements you can make before getting your bot created.
-  
-  a. Choose **Edit advanced options** on the bottom left to see and edit advanced options. You can continue with bot creation without going into these advanced options.
-  
-  b. Here you can choose a bot icon to give your bot a personality and represent your business scenarios better. You can select from the pre-populated list if icons or upload a custom icon for your bot. This is the icon used in the chat window when the bot responds.
-  
-  c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with bot topics.
 
-  <!--- link to lesson topic doc page --->
+There are optional customizations and enhancements you can make before getting your copilot created.
   
-  d. There are a couple more advanced options to select the solution your bot will be in and the schema name. These are advanced options which can be changed later, but provided upfront for specific customization.
+  a. Choose **Edit advanced options** on the bottom left to see and edit advanced options. You can continue with copilot creation without going into these advanced options.
+  
+  b. Here you can choose a copilot icon to give your copilot a personality and represent your business scenarios better. You can select from the pre-populated list if icons or upload a custom icon for your copilot. This is the icon used in the chat window when the copilot responds.
+  
+  c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with copilot topics.
+  
+  d. There are a couple more advanced options to select the solution your copilot will be in and the schema name. These are advanced options which can be changed later, but provided upfront for specific customization.
  
-8. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
+8. Select **Create**. The process of creating your first copilot in a new environment can take up to 15 minutes; subsequent copilots will be created much faster.
 
   
   
-1. After a few minutes, you'll be redirected to the bot's overview page. Certain operations like Publish and Authentication configuration may take a few more minutes to be ready for your bot, but you can go ahead and:
+1. After a few minutes, you'll be redirected to the copilot's overview page. Certain operations like Publish and Authentication configuration may take a few more minutes to be ready for your copilot, but you can go ahead and:
     - explore the overall user interface
     - explore topics and start creating and editing topics
     - experiment with the preloaded user topics and system topics
-    - interact with your bot using the Test Canvas
-    - review [additional documentation on authoring topics](authoring-fundamentals.md) in your bot
+    - interact with your copilot using the Test Canvas
+    - review [additional documentation on authoring topics](authoring-fundamentals.md) in your copilot
 
 
 > [!TIP]
-> To navigate back to the app-level home page from your bot, in the navigation menu, select **Chatbots**.
+> To navigate back to the app-level home page from your copilot, in the navigation menu, select **Copilots**.
 >
 >:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Chatbots button in the navigation menu.":::
 
