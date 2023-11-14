@@ -13,7 +13,7 @@ ms.custom: plugin
 ms.collection: virtual-agent
 ---
 
-# Copilot Studio Security and Governance
+# Copilot Studio security and governance
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
