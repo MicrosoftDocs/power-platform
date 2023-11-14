@@ -22,9 +22,9 @@ searchScope:
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 
-Microsoft Copilot Studio lets you create powerful AI-powered chatbots for a range of requests&mdash;from providing simple answers to common questions to resolving issues requiring complex conversations. Engage with customers and employees in multiple languages across websites, mobile apps, Facebook, Microsoft Teams, or any channel supported by the Azure Bot Framework.
+Microsoft Copilot Studio lets you create powerful AI-powered copilots for a range of requests&mdash;from providing simple answers to common questions to resolving issues requiring complex conversations. Engage with customers and employees in multiple languages across websites, mobile apps, Facebook, Microsoft Teams, or any channel supported by the Azure Bot Framework.
 
-These bots can be created easily without the need for data scientists or developers. Some of the ways that Microsoft Copilot Studio bots have been used include:
+These copilots can be created easily without the need for data scientists or developers. Some of the ways that Microsoft Copilot Studio copilots have been used include:
 
 - COVID-19 infection rate and tracking information
 - Sales help and support issues
@@ -36,7 +36,7 @@ Microsoft Copilot Studio is available as both a standalone web app, and as a dis
 
 | Microsoft Copilot Studio version                 | Use cases                                                                                                                                                                                                                                                                                                                                                                          | More information                                                                                                                             |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Web app at https://web.powerva.microsoft.com | <ul><li>You're an IT admin and want to create bots for your customers to engage with</li><li>You've used chatbot services in the past, and want to trial or test Microsoft Copilot Studio</li><li>You're familiar with advanced chatbot concepts, such as entities and variables, and want to create complex chatbots</li></ul>                                                        | <div class="nextstepaction">[Explore the Microsoft Copilot Studio demo](https://web.test.powerva.microsoft.com/tryit?azure-portal=true)</div>      |
+| Web app at https://web.powerva.microsoft.com | <ul><li>You're an IT admin and want to create copilots for your customers to engage with</li><li>You've used chatbot services in the past, and want to trial or test Microsoft Copilot Studio</li><li>You're familiar with advanced copilots concepts, such as entities and variables, and want to create complex copilots</li></ul>                                                        | <div class="nextstepaction">[Explore the Microsoft Copilot Studio demo](https://web.test.powerva.microsoft.com/tryit?azure-portal=true)</div>      |
 | Microsoft Teams app                          | <ul><li>You're an employee or member of an organization or team and want to create chatbots to answer common questions posed by other employees or teammates</li><li>You want to use advanced concepts, such as entities and variables, but have the chatbot available only internally</li><li>You want to create and distribute a chatbot in the shortest time possible</li></ul> | <div class="nextstepaction">[Open or add the Microsoft Copilot Studio app in Teams](https://aka.ms/PVATeamsApp?azure-portal=true)</div>|
 
 ## Important information
@@ -47,11 +47,11 @@ Microsoft Copilot Studio is available as both a standalone web app, and as a dis
 
 ## Related topics
 
-- [Use GPT-based capabilities to expand your bot's reach](nlu-gpt-overview.md)
-- [Create your first bot](authoring-first-bot.md)
+- [Use GPT-based capabilities to expand your copilot's reach](nlu-gpt-overview.md)
+- [Create your first copilot](authoring-first-bot.md)
 - [Create and edit topics](authoring-create-edit-topics.md)
-- [Enhance your bot](advanced-fundamentals.md)
-- [Publish your bot](publication-fundamentals-publish-channels.md)
-- [Using analytics to improve your bot](analytics-overview.md)
+- [Enhance your copilot](advanced-fundamentals.md)
+- [Publish your copilot](publication-fundamentals-publish-channels.md)
+- [Using analytics to improve your copilot](analytics-overview.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
