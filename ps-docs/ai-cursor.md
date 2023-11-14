@@ -1,6 +1,6 @@
 ---
 title: Use the AI cursor in Project “Sophia” 
-description: Use the AI Cursor to interact with generated content in Project “Sophia.”
+description: Use the AI Cursor to interact with generated content in Project “Sophia”,
 author: mikkelsen2000
 ms.topic: Overview
 ms.custom: 

@@ -50,7 +50,7 @@ Legend
 
 ## Home screen
 
-The next time you sign in to Project "Sophia," you'll see the Home screen. The following screenshot shows how to navigate it:
+The next time you sign in to Project "Sophia", you'll see the Home screen. The following screenshot shows how to navigate it:
 
 
 > [!div class="mx-imgBorder"]
@@ -76,4 +76,4 @@ If Project "Sophia" reaches its full capacity during the preview period, you're 
 
 ## Authenticated and unauthenticated experience
 
-If you don't sign in to Project "Sophia," you can't ask questions or upload any data. However, you can still access a limited unauthenticated experience where you can use sample data and get a feel for of Project "Sophia," and view suggested next steps.
+If you don't sign in to Project "Sophia", you can't ask questions or upload any data. However, you can still access a limited unauthenticated experience where you can use sample data and get a feel for of Project "Sophia", and view suggested next steps.

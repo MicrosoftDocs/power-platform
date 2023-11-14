@@ -23,7 +23,7 @@ contributors:
 Project "Sophia" is only available in North America. If you're trying to access it while you're in North America and still get a notification stating **Project Sophia is not yet available your region**, then it's because the data residency of the tenant you're trying to access from is based outside of North America. You can sign up for product news and to be notified when Project "Sophia" is available in new regions, [here](https://aka.ms/projectsophianews). 
 
 ## 2. Can I provide feedback to the product team?
-Submit your feedback on Project “Sophia," [here](https://aka.ms/projectsophiafeedback).
+Submit your feedback on Project “Sophia", [here](https://aka.ms/projectsophiafeedback).
 
 ## 3. Why do I get an error when trying to upload a file?
 You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. For more information, see [Supported data files and limitations](ask-question.md#supported-data-files).
