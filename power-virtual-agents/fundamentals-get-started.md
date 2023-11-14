@@ -1,6 +1,6 @@
 ---
-title: "Quickstart: Create and deploy a bot on the portal (contains video)"
-description: "Create and publish a Microsoft Copilot Studio bot on the online portal in minutes."
+title: "Quickstart: Create and deploy a copilot on the portal (contains video)"
+description: "Create and publish a Microsoft Copilot Studio copilot on the online portal in minutes."
 keywords: "PVA, online, web, portal, quickstart"
 ms.date: 03/24/2023
 
@@ -17,29 +17,28 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Quickstart: Create and deploy a Microsoft Copilot Studio bot
+# Quickstart: Create and deploy a Microsoft Copilot Studio copilot
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Microsoft Copilot Studio empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience - all without the need for data scientists or developers.
+Microsoft Copilot Studio empowers teams to quickly and easily create powerful copilots using a guided no-code graphical experience - all without the need for data scientists or developers.
 
-This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it's been deployed.
+This quickstart guide takes you through the end-to-end experience of creating a copilot for the first time, adding topics to your bot, testing content changes in real time, deploying your copilot to a test page, and analyzing the performance of your copilot after it's been deployed.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-copilot-studio.md).
 
 # [Web app](#tab/web)
 
 ### Explore the home page
 
-Microsoft Copilot Studio has an app-level home page that isn't specific to any bot. On this page you can create a new bot, view recent bots, and access learning resources like videos, documentation, and learning paths.
+Microsoft Copilot Studio has an app-level home page that isn't specific to any copilot. On this page you can create a new copilot, view recent copilots, and access learning resources like videos, documentation, and learning paths.
 
 :::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
-<!--- IMAGE NEEDS UPDATE --->
 
-In the navigation menu, select **Chatbots** to open the **Chatbots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these bots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another bot that you have access to.
+In the navigation menu, select **Copilots** to open the **Copilots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these copilots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another copilot that you have access to.
 
 :::image type="content" source="media/fundamentals-get-started/chatbot-list.png" alt-text="Screenshot of the list of chatbots.":::
 
