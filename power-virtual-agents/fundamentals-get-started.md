@@ -44,7 +44,7 @@ In the navigation menu, select **Copilots** to open the **Copilots** page and vi
 
 <!--- IMAGE NEEDS UPDATE --->
 
-### Create a bot
+### Create a copilot
 
 1. Go to the [Microsoft Copilot Studio introduction website](https://aka.ms/TryPVA). Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
@@ -55,12 +55,12 @@ In the navigation menu, select **Copilots** to open the **Copilots** page and vi
     :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the environment picker.":::
 
     > [!NOTE]
-    > Microsoft Copilot Studio is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
+    > Microsoft Copilot Studio is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your copilot.  
     > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
-4. Once signed up, you will land on the App Homepage. In the left navigation menu, select **Home** then select **Create a bot**.
-5. A whole page wizard will start with a couple steps to get your bot created very quickly. A default bot name is there. You can change this to be something generic to your company or specific to the scenario you are tailoring your bot to.
-6. For **What language do you want your bot to speak?**, select the language you want your bot to speak. The langugage dropdown is prepopulated with the browser locale.
+4. Once signed up, you will land on the App Homepage. In the left navigation menu, select **Home** then select **Create a copilot**.
+5. A whole page wizard will start with a couple steps to get your copilot created very quickly. A default copilot name is there. You can change this to be something generic to your company or specific to the scenario you are tailoring your copilot to.
+6. For **What language do you want your copilot to speak?**, select the language you want your copilot to speak. The langugage dropdown is prepopulated with the browser locale.
 
     :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
 
