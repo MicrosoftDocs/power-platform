@@ -11,7 +11,7 @@
     - name: Quotas, limits, and configuration values
       href: requirements-quotas.md
     - name: Migrate to the unified canvas
-       href: unified-authoring-conversion.md
+      href: unified-authoring-conversion.md
     - name: Key concepts for Composer users
       href: composer-concepts-preview.md
 - name: Get started
