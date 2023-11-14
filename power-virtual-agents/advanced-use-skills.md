@@ -23,7 +23,7 @@ Microsoft Copilot Studio enables you to extend your bot using Microsoft Bot Fram
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Review restrictions and validation for skills used in Microsoft Copilot Studio](/azure/bot-service/skill-pva)
-- [A standalone Microsoft Copilot Studio subscription](requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription). If you have a [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan), you can't use Bot Framework skills.
+- [A standalone Microsoft Copilot Studio subscription](requirements-licensing-subscriptions.md#standalone-microsoft-copilot-studio-subscription). If you have a [Teams plan](requirements-licensing-subscriptions.md#microsoft-copilot-studio-for-microsoft-teams-plan), you can't use Bot Framework skills.
 
 ## Add a skill to bot conversations
 
