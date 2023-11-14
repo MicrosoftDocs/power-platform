@@ -23,7 +23,7 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 - Providing reminders or news updates. For example, the bot could send a reminder message to complete online training.
 
 > [!IMPORTANT]
-> Bots created or converted with the [unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-power-virtual-agents) can't send proactive messages in Teams. Your bot can only send proactive messages if:
+> Bots created or converted with the [unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-microsoft-copilot-studio) can't send proactive messages in Teams. Your bot can only send proactive messages if:
 > 
 > - You create your bot in the Teams app.
 > - You create a **Classic** bot.
@@ -47,7 +47,7 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 
 ## Known limitations
 
-- You can't send proactive messages in Teams if you've created your bot [with the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-power-virtual-agents).
+- You can't send proactive messages in Teams if you've created your bot [with the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-microsoft-copilot-studio).
 - If the bot is disconnected and reconnected to Microsoft Teams, users won't receive proactive messages until after they re-install the bot.
 - All proactive messages from Microsoft Copilot Studio are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
 - Proactive messages won't be logged in conversation transcripts or [Analytics sessions](analytics-overview.md).
