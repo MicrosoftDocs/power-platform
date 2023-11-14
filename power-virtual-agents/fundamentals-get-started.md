@@ -91,9 +91,9 @@ There are optional customizations and enhancements you can make before getting y
 
 
 > [!TIP]
-> To navigate back to the app-level home page from your copilot, in the navigation menu, select **Copilots**.
+> To navigate back to the app-level home page from your copilot, in the navigation menu, select **Home**.
 >
->:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Chatbots button in the navigation menu.":::
+>:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Home button in the navigation menu.":::
 
 ### Create a topic
 
