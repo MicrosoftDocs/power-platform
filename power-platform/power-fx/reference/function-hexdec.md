@@ -16,7 +16,7 @@ search.app:
 ---
 # Dec2Hex and Hex2Dec functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Convert between hexadecimal text strings and numbers.
 
