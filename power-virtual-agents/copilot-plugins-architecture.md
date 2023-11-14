@@ -28,13 +28,13 @@ A plugin, in this context, is created in the plugin authoring experience in the 
 
 The main goal of the Pl registry is to enable users to create a plugin once and use it in multiple copilots by providing storage and management for metadata and execution information of plugins. This way, users can leverage the power and flexibility of plugins to enhance the capabilities and functionality of copilots without writing code for each copilot separately. The various copilots interact with the plugins registry to discover plugins and execution information that are available for a user. This capability enables AI plugins to be created once and reused many times.
 
-# A plugin is born
+## A plugin is born
 
 ![Figure of plugin authoring in Microsoft Copilot Studio](media/copilot-plugins-architecture/image1.png)
 
 Figure: Plugin Authoring using Microsoft Copilot Studio
 
-## Creator Layer
+### Creator Layer
 
 The Creator Layer is where users can create and edit plugins using Microsoft Copilot Studio. These Microsoft Copilot Studio supports four types of plugins: Prompt, Flow, Connector, and Topic.
 
@@ -46,11 +46,11 @@ The Creator Layer is where users can create and edit plugins using Microsoft Cop
 
 - **Topic** plugins are single-turn conversational threads between a user and a copilot that can be created to answer a specific user utterance. For example: a topic about store hours with a trigger phrase *check store hours* can return the store hours. These topics can still handle user utterances such as "see store opening hours" due to the power of LLMs.
 
-## Business applications and Power Platform plugin registry
+### Business applications and Power Platform plugin registry
 
 The plugin registry stores and manages the plugin metadata and execution information. The main goal of the registry is to act as the single source for discovery of plugins authored from the Microsoft Copilot Studio. The registry can be used to discover integrated apps available at a tenant level, used in Microsoft Admin center by Microsoft 365 Teams, and plugins available to a user, used by copilots in Microsoft Copilot Studio. The registry surfaces plugins that the user can access, because a plugin's security is the same as that of the underlying artifact such as that of a flow, and can provide a customized list of plugins to a user based on their role.
 
-## Copilot samples
+### Copilot samples
 
 This is a sample set of the various copilots that integrate with the plugins registry to consume plugins. These include Microsoft copilots for Dynamics 365 apps, Microsoft copilots for Teams, and custom copilots authored using Microsoft Copilot Studio. The list is expected to grow in the future as more first-party and third-party copilots are developed.
 
@@ -86,23 +86,23 @@ If a user does not find a suitable plugin for their task, they can choose to nav
 
 This represents the various data stores and systems where the data and business logic reside. They include Sales, Field Service and other Dynamics 365 products, Microsoft Copilot Studio, Power Automate, and external systems such as Salesforce, SAP, and others.
 
-#### Data and control flows for some plugin types
+## Data and control flows for some plugin types
 
 As a prerequisite for all the flows listed below, an administrator uses the Microsoft Admin Center to configure the corresponding integrated apps and assigns them to users, including the Copilot user referenced here. In these flows, we first see the **configuration phase** for a copilot user in Copilot for Teams. After the user signs in, the plugins applicable for that user are retrieved from the plugin registry. The plugins that the user sees in their flyout will be the plugins that belong to the integrated apps their administrator has configured for them and the ones they have access to in the plugin registry. The user can then configure the plugins they want to use in the copilot experience in the flyout in their Copilot for Teams experience.
 
-##### Dynamics 365 plugins
+#### Dynamics 365 plugins
 
 ![Flows for Dynamics 365 plugins](media/copilot-plugins-architecture/image3.png)
 
 In the runtime flow for the Dynamics 365 plugins, the copilot user's utterance of *"Get opportunities for ACME corp"* is mapped by the orchestrator to a set of candidate plugins. A plugin from  Dynamics 365 is found to be best candidate and then executed, translating the user's utterance to SQL against the dynamic data the user has access to. The results are then returned to the user. Teams copilot can additionally add data from M365 and summarize the results.
 
-##### Microsoft Copilot Studio plugins
+#### Microsoft Copilot Studio plugins
 
 ![Flow for Microsoft Copilot Studio plugins](media/copilot-plugins-architecture/image4.png)
 
 In the runtime flow for Copilot Studio prompt plugins, the user's utterance is again mapped to a plugin. In this case however the matching plugin is a prompt authored in Microsoft Copilot Studio. The prompt grounds data in Dataverse table _orders_ and calls into Open AI to summarize the results for order 123 and returns the summary to the user.
 
-##### Connector plugins
+#### Connector plugins
 
 ![Flow for connector plugins](media/copilot-plugins-architecture/image5.png)
 
