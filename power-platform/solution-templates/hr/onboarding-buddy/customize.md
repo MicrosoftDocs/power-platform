@@ -4,7 +4,7 @@ description: You can customize the Onboarding Buddy app to fit how you want to r
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: get-started
+ms.topic: conceptual
 ms.date: 09/29/2023
 ms.custom: bap-template
 ms.service: power-platform

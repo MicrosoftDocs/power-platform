@@ -4,7 +4,7 @@ description: Get started using the Awards and Recognition app. Learn how you can
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: get-started
+ms.topic: conceptual
 ms.date: 09/25/2023
 ms.custom: bap-template
 ms.service: power-platform

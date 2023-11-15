@@ -4,7 +4,7 @@ description: Program admins manage the Onboarding Buddy app. Learn how to add ne
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: get-started
+ms.topic: conceptual
 ms.date: 09/29/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -41,10 +41,13 @@ Take these steps in the Onboarding Buddy Admin app to update the configuration:
 1. *Edit* and select **Save & Close**.
 :::image type="content" source="media/manage/ob-manage-new-config.png" alt-text="Power Apps screenshot of editing the configuration.":::
 
-## Support additional languages
+## Support more languages
 
-Take these steps in the Onboarding Buddy Admin app to localize the strings to support more languages:
+You can localize all the strings in the Onboarding Buddy app to support the diverse set of languages that may be spoken at your organization. The app contains default strings for all text, but checks to see if there's a localized version in the *Employee Experience Localization* table that's installed alongside the Onboarding Buddy solution. The Employee Experience base solution and the Onboarding Buddy solution are accessed together from AppSource.
 
+To localize app strings, users must have the **Employee Experience Localizer** security role assigned to them by a Power Platform admin. Once assigned, a user can take these steps:
+
+1. Go to the *Employee Experience Admin app*.
 1. Select **Employee Experience Localizations** on the left-side menu.
 1. Select **+New**.
 1. Fill out the form.

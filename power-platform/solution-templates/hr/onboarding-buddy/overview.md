@@ -65,10 +65,10 @@ The *Onboarding Buddy* solution is composed of two apps, three tables, two secur
   - **Set Default fields in Onboarding table** - Uses the configuration information to update the fields related to the length of the buddy program and when emails should be sent when an Onboarder is matched to a Buddy.
   - **Update Onboarders on update of Configurations record** - Updates the program-driven columns on the Onboarders table with new values based on configuration updates.
 - **Four connection references**:
-  - **Onboarding Buddy app - [Dataverse](/connectors/commondataserviceforapps/)** - Connection reference to Dataverse
-  - **Onboarding Buddy app - [Office 365 Outlook](/connectors/office365/)** - Connection reference to Outlook
-  - **Onboarding Buddy app - [Office 365 Users](/connectors/office365users/)** - Connection reference to Office 365
-  - **Onboarding Buddy app - [Office 365 Groups](/connectors/office365groups/)** - Connection reference to Office Groups
+  - **Onboarding Buddy app - [Dataverse](/connectors/commondataserviceforapps/)** - Connection reference to Microsoft Dataverse
+  - **Onboarding Buddy app - [Office 365 Outlook](/connectors/office365/)** - Connection reference to Microsoft Office 365 Outlook
+  - **Onboarding Buddy app - [Office 365 Users](/connectors/office365users/)** - Connection reference to Microsoft Office 365 Users
+  - **Onboarding Buddy app - [Office 365 Groups](/connectors/office365groups/)** - Connection reference to Microsoft Office 365 Groups
 
 ## Next steps
 

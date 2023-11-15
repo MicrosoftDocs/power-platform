@@ -13,7 +13,7 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Install and configure the Hardware Request and Management template for Power Platform
+# Install and configure the Hardware Request and Management template
 
 As a Microsoft Power Platform admin, you need to prepare, install, configure, and deploy the Hardware Request and Management template's solutions for your organization. To get started, follow the steps.
 
@@ -47,7 +47,7 @@ More information: [Microsoft Power Platform Licensing Guide](https://go.microsof
 
 ### Set up environments and data policies
 
-It's important to have a cohesive environment and data policy strategy and setup for enterprise templates to securely deploy your solutions. To successfully install and manage the Hardware Request and Management template, confirm these resources and practices are in place.
+It's important to have a cohesive environment and data policy strategy for enterprise templates to securely deploy your solutions. To successfully install and manage the Hardware Request and Management template, confirm these resources and practices are in place.
 
 - **Administrators** - Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments.
 
@@ -65,11 +65,11 @@ It's important to have a cohesive environment and data policy strategy and setup
 
 - **Data loss prevention policies** - Ensure the environment has access to connectors used by the template:
 
-  - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
-  - [Office 365 Outlook connector](/connectors/office365/)
-  - [Office 365 Users connector](/connectors/office365users/)
+  - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
+  - [Office 365 Outlook](/connectors/office365/)
+  - [Office 365 Users](/connectors/office365users/)
   - [Approvals](/connectors/approvals/)
-  - [Teams](/connectors/teams/)
+  - [Microsoft Teams](/connectors/teams/)
   - [Cards for Power Apps](/connectors/cardsforpowerapps/)
   
   More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
@@ -85,9 +85,9 @@ To create connections in advance, take these steps:
 1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/)
 1. Go to **Connections** and select **+ New Connection** for the following connections:
 
-    - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
-    - [Office 365 Outlook connector](/connectors/office365/)
-    - [Office 365 Users connector](/connectors/office365users/)
+    - [Dataverse](/connectors/commondataserviceforapps/)
+    - [Office 365 Outlook](/connectors/office365/)
+    - [Office 365 Users](/connectors/office365users/)
     - [Approvals](/connectors/approvals/)
     - [Teams](/connectors/teams/)
     - [Cards for Power Apps](/connectors/cardsforpowerapps/)
@@ -205,18 +205,18 @@ To update environment variables, take these steps:
 
    > [!NOTE]
    >
-   > If you manually imported either the managed or unmanaged version of the *Hardware Request and Management solution file from GitHub*, there is no need to add and update Connection References as those were set during the original import process.
+   > If you manually imported either the managed or unmanaged version of the Hardware Request and Management solution file from GitHub, there is no need to add and update Connection References as those were set during the original import process.
    >
    > Only Add and update connection references if you installed from AppSource. Skip to step 13 in this section.
 
 1. Select **Add existing** > **More** > **Connection References**
 1. Multiselect the following connection references:
 
-    1. Hardware Request and Management – Approvals
-    1. Hardware Request and Management – Cards for Power Apps
-    1. Hardware Request and Management – Dataverse
-    1. Hardware Request and Management – Microsoft Teams
-    1. Hardware Request and Management – Office 365 Outlook
+    1. **Hardware Request and Management – [Approvals](/connectors/approvals/)**
+    1. **Hardware Request and Management – [Cards for Power Apps](/connectors/cardsforpowerapps/)**
+    1. **Hardware Request and Management – [Dataverse](/connectors/commondataserviceforapps/)**
+    1. **Hardware Request and Management – [Teams](/connectors/teams/)**
+    1. **Hardware Request and Management – [Office 365 Outlook](connectors/office365/)**
 1. Select **Next** and then **Add**
 1. Select the **Hardware Request and Management URL** environment variable
 1. Select **+ New value** under the *Current Value* section

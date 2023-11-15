@@ -6,7 +6,7 @@ ms.author: georgenewton
 contributors:
   - tverhasselt
 ms.reviewer: ellenwehrle
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 11/06/2023
 ms.custom: bap-template
 ms.service: power-platform

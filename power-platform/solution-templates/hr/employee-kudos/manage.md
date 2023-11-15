@@ -4,7 +4,7 @@ description: Get started managing the Employee Kudos app. Learn how to create cu
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: get-started
+ms.topic: conceptual
 ms.date: 06/06/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -41,14 +41,15 @@ If a user doesn't want to be part of the program, you can add them to the opt-ou
 
 The user is no longer eligible to receive Kudos in the app and a background flow deletes all previous Kudos the user received.
 
-## Localize application strings
+## Support more languages
 
-All of the strings in the Kudos app can be localized to support the diverse set of languages that may be spoken in your company. The app contains default strings for all text, but checks to see if there's a localized version in the *Employee Experience Localization* table. The table is included in the Employee Experience base solution that gets installed alongside the Kudos solution. The Employee Experience base solution and the Kudos solution are accessed together from AppSource.
+You can localize all the strings in the Employee Kudos app to support the diverse set of languages that may be spoken at your organization. The app contains default strings for all text, but checks to see if there's a localized version in the *Employee Experience Localization* table. The table is included in the Employee Experience base solution that gets installed alongside the Kudos solution. The Employee Experience base solution and the Kudos solution are accessed together from AppSource.
 
 The [*Kudos Localization Data Import*](https://aka.ms/KudosLocalization) instructions guide you through importing all of the English localization strings into the *Employee Experience Localization* table. You'll also get a full list of English values that you can then use as a reference to do your localization into other languages.
 
-To grant users the ability to localize app strings, you must assign the *Employee Experience Localizer* security role to them. Once assigned, a user can open the *Employee Experience Localization Admin App* and follow these steps:
+To localize app strings, users must have the **Employee Experience Localizer** security role assigned to them by a Power Platform admin. Once assigned, the user takes these steps:
 
+1. Go to the *Employee Experience Admin app*.
 1. Select **+ New**.
 
    :::image type="content" source="media/use/Localize1.png" alt-text="Grant users ability to localize app strings.":::
@@ -58,4 +59,4 @@ To grant users the ability to localize app strings, you must assign the *Employe
     - *Language* is the language you want to provide a localized value for.
     - *Localized Value* is the translated text.
     - *String Type* is the type of string you're replacing. This field is optional.
-1. Select **Save**.
+1. Select **Save & Close**.

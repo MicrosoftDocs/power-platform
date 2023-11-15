@@ -258,7 +258,7 @@ Take these steps to enable the audit settings:
 
 - [Learn how to customize the Onboarding Buddy app](customize.md)
 
-## See also
+### See also
 
 - [Get started managing the Onboarding Buddy app](manage.md)
 - [Get started using the Onboarding Buddy app](use.md)

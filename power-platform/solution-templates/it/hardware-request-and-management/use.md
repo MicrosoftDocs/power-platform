@@ -6,7 +6,7 @@ ms.author: georgenewton
 contributors:
   - tverhasselt
 ms.reviewer: ellenwehrle
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 11/06/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -19,7 +19,7 @@ Once configuration and setup steps are completed the apps are ready to use.
 
 ## Use the Hardware Request app
 
-The hardware request app is very streamlined, to eliminate any specialized user training for the request process.  The app has minimal flexibility to minimize confusion.  The goal is to let the app guide the user through creating and submitting their request to initiate the workflow for the approval in the management app.  The following is a brief overview of the supported functions.
+The Hardware Request app is very streamlined, to eliminate any specialized user training for the request process.  The app has minimal flexibility to minimize confusion.  The goal is to let the app guide the user through creating and submitting their request to initiate the workflow for the approval in the management app.  The following is a brief overview of the supported functions.
 
 :::image type="content" source="media/use/hrm-use-home.png" alt-text="Screenshot of the Hardware Request app home page.":::
 

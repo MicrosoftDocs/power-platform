@@ -4,7 +4,7 @@ description: Get started using the Onboarding Buddy app. Learn how you can use t
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: get-started
+ms.topic: conceptual
 ms.date: 09/29/2023
 ms.custom: bap-template
 ms.service: power-platform
