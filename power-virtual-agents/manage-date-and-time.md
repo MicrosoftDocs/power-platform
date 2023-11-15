@@ -48,7 +48,7 @@ Use these system-level variables to get information about the user's time zone:
 
 ## Manually set the user's time zone
 
-Microsoft Copilot Studio [automatically determines the user's time zone](#how-power-virtual-agents-determines-the-users-time-zone) when your bot prompts the user for a date and time. You can also manually set the timezone.
+Microsoft Copilot Studio [automatically determines the user's time zone](#how-microsoft-copilot-studio-determines-the-users-time-zone) when your bot prompts the user for a date and time. You can also manually set the timezone.
 
 1. Open the topic in which you want to set the user's time zone.
 
