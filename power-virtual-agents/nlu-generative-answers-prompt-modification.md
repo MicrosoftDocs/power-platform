@@ -1,7 +1,7 @@
 ---
 title: "Enhance your copilot's responses with prompt modification"
 description: Expand on the capabilities of generative answers by using prompt modification to provide custom instructions to your copilot.
-keywords: "PVA", "Service Copilot"
+keywords: "PVA, Service Copilot"
 ms.date: 11/15/2023
 ms.topic: how-to
 author: KendalBond007
