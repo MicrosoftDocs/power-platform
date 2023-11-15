@@ -7,7 +7,7 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.collection: power-virtual-agents
-ms.service: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 
@@ -25,7 +25,7 @@ This guide provides supplemental information to the main Genesys documentation f
 
 ## Agent Handoff
 
-- Refer to existing [documentation for transfering the conversation](https://learn.microsoft.com/en-us/dynamics365/customer-service/set-up-multilingual-pva-bot#configure-the-transfer-to-agent-node-by-using-the-escalate-topic).
+- Refer to existing [documentation for transfering the conversation](/dynamics365/customer-service/set-up-multilingual-pva-bot#configure-the-transfer-to-agent-node-by-using-the-escalate-topic).
 - If passing a message to the agent in the transfer
   - Set the message in Copilot Studio:
     
