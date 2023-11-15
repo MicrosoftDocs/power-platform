@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 10/17/2023
+ms.date: 11/10/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -82,6 +82,10 @@ Canvas app exact, partial name, or App ID
 #### `--environment` `-env`
 
 Environment (ID, org ID, url, unique name, or partial name).
+
+#### `--extract-to-directory` `-d`
+
+Directory name to extract canvas app to
 
 #### `--file-name` `-f`
 
