@@ -81,7 +81,7 @@ Copilot and generative AI features of Power Platform and Dynamics 365 are suppor
 
 For information about regions supported by Dynamics 365 copilots and generative AI features, see the following documentation:
 
-- For Dynamics 36 Customer Insights - Data, see [Give consent to use Copilot in Customer Insights – Data](/dynamics365/customer-insights/data/copilot-global-consent).
+- For Dynamics 365 Customer Insights - Data, see [Give consent to use Copilot in Customer Insights – Data](/dynamics365/customer-insights/data/copilot-global-consent).
 - For Dynamics 365 Customer Service, see [Copilot data movement across geographies (preview)](/dynamics365/customer-service/copilot-data-movement).
 - For Dynamics 365 Sales, see [Copilot data movement across geographies](/dynamics365/sales/sales-copilot-data-movement).
 
