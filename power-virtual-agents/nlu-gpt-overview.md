@@ -25,11 +25,6 @@ By leveraging recent advancements in AI large language models, Microsoft Copilot
 
 ## Prerequisites
 
-> [!CAUTION] 
-> Your bot must be created in the US region. 
->  
-> Other regions, and languages other than English, aren't supported.
-
 - You'll need an account for Microsoft Copilot Studio. 
 
     > [!NOTE]
