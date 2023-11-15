@@ -37,7 +37,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Chat for Dynamics 365
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
 - Dynamics 365 Customer Service
-- [Dynamics 365 Customer Insights - Data](/customer-insights/blob/main/ci-docs/data/overview.md#product-overview-for-dynamics-365-customer-insights---data)
+- [Dynamics 365 Customer Insights - Data](/dynamics365/customer-insights/data/overview)
 - Dynamics 365 Field Service
 - Dynamics 365 Retail
 - Dynamics 365 Finance (Finance and operations)
