@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Configure the demo website and add the bot to your live website
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 When publishing the bot to the web, you can publish to a prebuilt demo website (which you can use to share the bot with your teammates and stakeholders) and to your own live website.
   
 >  
@@ -28,7 +30,7 @@ When publishing the bot to the web, you can publish to a prebuilt demo website (
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Preview](#tab/preview)
