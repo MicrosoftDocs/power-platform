@@ -7,7 +7,7 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.collection: power-virtual-agents
-ms.service: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 
@@ -28,15 +28,15 @@ To configure offline files as data source, please see [offline files](data-manag
 ## Configuring knowledge bases as data source
 To configure a knowledge base (KB) as a data source for your customer copilot, please refer to one of the providers below:
 - Dynamics 365
-- [ServiceNow](servicenow/sc-servicenow-kb.md)
-- [Salesforce](salesforce/sc-salesforce-kb.md)
+- [ServiceNow](sc-servicenow-kb.md)
+- [Salesforce](sc-salesforce-kb.md)
 - [Zen Desk](zendesk/sc-zendesk-mb.md)
 
 ## Configuring hand off to Customer Engagement Hubs
 - [Dynamics 365](customer-copilot-dynamics.md)
 - [ServiceNow](customer-copilot-servicenow.md)
-- [Salesforce](customer-copilit-salesforce.md)
-- [Live Person](customer-copilot-liveperson.md)
+- [Salesforce](customer-copilit-salesforce-handoff.md)
+- [Live Person](customer-copilot-liveperson-handoff.md)
 - [Generic customer engagement hub](customer-copilot-generic-hub.md)
 
 ## Configuring Copilot behavior
