@@ -35,7 +35,8 @@ Unlike a traditional component model that creates a hard-coded integration point
 ## Prerequisites
 
 - End users must have a license to use Microsoft Copilot for Microsoft 365.
-- Microsoft Copilot Studio application must be a Microsoft Copilot Studio copilot, not a Power Virtual Agents "Classic" bot.
+- Your M365 Tenant must also be participating in the [Microsoft Copilot Plugins Preview](https://aka.ms/Copilot_Plugin_Preview)
+- Microsoft Copilot Studio application m)ust be a Microsoft Copilot Studio copilot, not a Power Virtual Agents "Classic" bot.
 - Before end-to-end works, the Microsoft 365 Tenant Admin needs to enable the **Dynamics and Microsoft Copilot Studio** Integrated Apps category in the Microsoft Admin Center.
 
 > [!IMPORTANT]
