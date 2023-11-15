@@ -23,7 +23,7 @@ The Appointment Booking app allows:
 
 The Appointment Booking AppSource template package consists of two solutions:
 
-**IT Base**: Contains components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+**IT Base**: Contains components that enable localization capabilities. By sharing the components across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
 
 **Appointment Booking**: Contains all the components to enable users to manage appointment slots and bookings.
 
@@ -37,7 +37,7 @@ The *IT Base* solution contains various components that allow an admin to set up
 
 - **Two tables**
 
-  - **IT Localization**: Records the app string replacements for every language into which the app is localized
+  - **IT Localization**: Records the app string replacements for every localized version of the app
   - **IT Error**: Records all errors from app and flows
 - **One choice**: **ISO Language Code** - Stores the abbreviation for available language codes
 
@@ -68,16 +68,16 @@ The *IT Base* solution contains various components that allow an admin to set up
 
 - **Ten Power Automate flows**:
 
-  - **Add New Contact** - Adds new record in Contact table if Requestor is not yet added
-  - **Appointment Booking Email Notification** – Sends email notifications when an appointment booking has been created
-  - **Contact Outlook Invites** – Creates meeting invites in Outlook when an appointment booking has been created
+  - **Add New Contact** - Adds new record in Contact table if Requestor isn't added yet
+  - **Appointment Booking Email Notification** – Sends email notifications whenever a Requestor books an appointment
+  - **Contact Outlook Invites** – Creates meeting invites in Outlook whenever a Requestor books an appointment
   - **Rescheduled Outlook Invite** – Reschedules the appointment
   - **Cancelled Outlook Invites** – Cancels the meeting invites in Outlook and sends email notifications to the Requestor and Meeting Provider
-  - **Delete Event** – Child flow that's connected to Cancelled Outlook Invites
+  - **Delete Event child flow** – Connects to Cancelled Outlook Invites
   - **Email Reminder** – Scheduled flow that runs once a day
-  - **Contact Changed Email Notification** – Sends notifications when Meeting Provider has been changed.
-  - **Update Initial Contact** - Child flow that's connected to Contact Changed Email Notification
-  - **Get Time Zone** - Child flow that's connected to:
+  - **Contact Changed Email Notification** – Sends notifications whenever the Meeting Provider changes.
+  - **Update Initial Contact child flow** - Connects to Contact Changed Email Notification
+  - **Get Time Zone child flow** - Connects to these flows:
     - Appointment Booking Email Notification
     - Cancelled Outlook Invites
     - Contact Changed Email Notification
