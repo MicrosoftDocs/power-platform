@@ -96,7 +96,7 @@ To publish your conversational plugin:
 1. Your Admin can find the **Dataverse and Microsoft Copilot Studio** integrated app in the Microsoft Admin Center under **Settings**, then **Integrations to be reviewed and approved**. In this preview, Deploy/Block is at this category level only.
 1. Once your Tenant admin approves the Dataverse and Microsoft Copilot Studio integrated app, it should appear in the user's list of plugins in their Microsoft Copilot UI.
 
-    ![Flyout](media/copilot-conversational-plugins/flyout.png)
+    ![Conversational plugins flyout](media/copilot-conversational-plugins/flyout.png)
 
 Once enabled, your user can ask questions to Microsoft Copilot and see the plugin invoked and return the most relevant results.
 
