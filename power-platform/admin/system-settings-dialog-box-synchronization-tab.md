@@ -4,11 +4,13 @@ description: System Settings Synchronization tab
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/19/2022
+ms.date: 11/15/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- DanaMartens 
 ---
 # System Settings Synchronization tab 
 
