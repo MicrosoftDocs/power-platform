@@ -24,7 +24,7 @@
       href: fundamentals-get-started.md
     - name: Community help and support
       href: fundamentals-support.md
-- name: AI capabilities in Microsoft Copilot Studio
+- name: Generative AI in Microsoft Copilot Studio
   items:
     - name: AI-based chatbot authoring overview
       href: nlu-gpt-overview.md
