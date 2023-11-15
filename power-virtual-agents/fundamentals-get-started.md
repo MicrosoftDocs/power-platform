@@ -1,4 +1,4 @@
----
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/50497762/513e2da2-b3a4-4697-b7b1-2ea09fa67d7d)---
 title: "Quickstart: Create and deploy a copilot on the portal (contains video)"
 description: "Create and publish a Microsoft Copilot Studio copilot on the online portal in minutes."
 keywords: "PVA, online, web, portal, quickstart"
@@ -97,23 +97,23 @@ There are optional customizations and enhancements you can make before getting y
 
 ### Create a topic
 
-Now that you have full functionality within your bot, you can create your own topic, which is a dialog tree that describes how your bot responds to a user's question.
+Now that you have full functionality within your copilot, you can create your own topic, which is a dialog tree that describes how your copilot responds to a user's question.
 
-1. In the navigation menu, select **Topics**, then select **New topic** at the top of the page.
+1. In the navigation menu, select **Topics**, then select **Add** at the top of the page. Then select **Topic**, and then **From blank**.
 
-    :::image type="content" source="media/fundamentals-get-started/topics-new.png" alt-text="New topic." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/topics-new.png" alt-text="Add topic" border="false":::
 
-1. Name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the bot when to respond with this dialog.
+1. Name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the copilot when to respond with this dialog.
 
     As an example, let's create a topic called 'Personal Hello World' and add 'hello world' as a trigger phrase.
 
     :::image type="content" source="media/fundamentals-get-started/hello-world-topic.png" alt-text="Name topic and add trigger phrase.":::
 
-1. Select **Save topic** to add the topic to the topics list.
+1. Select **Save** to add the topic to the topics list.
 
-1. Select **Go to authoring canvas**. This is the graphical dialog tree editor that allows you to define bot responses and the overall bot conversation.
+1. Now click the **Add node** (**+**) under the 'Trigger' node and select **Send a message**
 
-    Enter 'Hello! I'll create a personalized greeting for you.' into the first **Message** node.
+    Enter 'Hello! I'll create a personalized greeting for you.' into the newly added **Message** node.
 
     :::image type="content" source="media/fundamentals-get-started/quickstart-add-node.png" alt-text="Add node." border="false":::
 
@@ -145,25 +145,25 @@ You now have a very simple branching dialog tree, congratulations! You can begin
 
 ### Test your content in real time
 
-Now that you have some content authored into a dialog tree, it's time to test this out in real time to see if it's working as you expected. For this, you'll use the test bot pane.
+Now that you have some content authored into a dialog tree, it's time to test this out in real time to see if it's working as you expected. For this, you'll use the test copilot pane.
 
-:::image type="content" source="media/fundamentals-get-started/test-bot-panel.png" alt-text="Start bot with latest content." border="false":::
+:::image type="content" source="media/fundamentals-get-started/test-bot-panel.png" alt-text="Start copilot with latest content." border="false":::
 
-1. If the test bot pane is not showing on your screen, in the navigation menu, select **Test your bot**.
+1. If the test bot pane is not showing on your screen, in the navigation menu, select **Test your copilot**.
 
-    :::image type="content" source="media/fundamentals-get-started/test-bot-menu.png" alt-text="Test bot control." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/test-bot-menu.png" alt-text="Test copilot control." border="false":::
 
-1. Try out your newly authored dialog tree by typing into the test bot pane.
+1. Try out your newly authored dialog tree by typing into the test copilot pane.
 
-1. Turn on **Track between topics** at the top, which enables you to follow along with the bot as it executes your dialog. You'll start to see parts of your dialog tree highlighted as the bot gets to that portion of the dialog.
+1. Turn on **Track between topics** at the top, which enables you to follow along with the copilot as it executes your dialog. You'll start to see parts of your dialog tree highlighted as the copilot gets to that portion of the dialog.
 
     :::image type="content" source="media/fundamentals-get-started/test-bot-track.png" alt-text="Start conversation." border="false":::
 
-1. Type "hello world" in the chat window, and send the message to the bot. You'll see the top portion of your dialog tree highlighted in green, and you'll see **Seattle** and **Bellevue** presented as user options in the test bot pane.
+1. Type "hello world" in the chat window, and send the message to the copilot. You'll see the top portion of your dialog tree highlighted in green, and you'll see **Seattle** and **Bellevue** presented as user options in the test copilot pane.
 
-    The bot is now waiting for you to respond and has provided suggestions on how to respond. These suggestion buttons reflect what you authored within your dialog tree in the 'Ask a question' node.
+    The copilot is now waiting for you to respond and has provided suggestions on how to respond. These suggestion buttons reflect what you authored within your dialog tree in the 'Ask a question' node.
 
-    In the test bot, you can either select these suggestion buttons to continue, or you can enter your response into the chat window.
+    In the test copilot, you can either select these suggestion buttons to continue, or you can enter your response into the chat window.
 
     :::image type="content" source="media/fundamentals-get-started/quickstart-test-bot-03.png" alt-text="Tracing conversation." border="false":::
 
@@ -171,7 +171,7 @@ Now that you have some content authored into a dialog tree, it's time to test th
 
     You'll see the chat stop once you've reached the bottom of this branch. If you author more content, the dialog will continue, but since we've only created a very simple and small dialog tree, we can reach the end of the content very quickly.
 
-This test experience empowers you to quickly create and test a conversation to ensure that the conversation will flow as anticipated. If the dialog does not reflect your intention, you can change the dialog, and save it. The latest content will be pushed into the test bot, and you can try it out again. None of this changes the published version of the bot, so feel free to play around with your content until you are happy with it.
+This test experience empowers you to quickly create and test a conversation to ensure that the conversation will flow as anticipated. If the dialog does not reflect your intention, you can change the dialog, and save it. The latest content will be pushed into the test copilot, and you can try it out again. None of this changes the published version of the copilot, so feel free to play around with your content until you are happy with it.
 
 ### Publish your bot
 
