@@ -221,20 +221,20 @@ To update environment variables, take these steps:
 1. Select the **Hardware Request and Management URL** environment variable
 1. Select **+ New value** under the *Current Value* section
 1. Paste the *URL value* copied from Step 3 of this section in the current value field and select **Save**
-1. Repeat steps 11-13 of this section for the *Hardware Request App URL* environment variable
+1. Repeat steps 12-15 of this section for the *Hardware Request App URL* environment variable
 
 :::image type="content" source="media/install/hrm-install-variables.png" alt-text="Screenshot of how to set up environment variables for your app.":::
 More information: [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
 
 ## Step 6: Share and set cloud flows to on
 
-Some of the cloud flows will be off by default because the environment variables set in step 4 were not populated yet. Additionally, it is important for some flows to run under a user's context when invoking actions like starting a Teams group chat, generating an approval or sending an email notification.
+Some of the cloud flows may be off by default because the environment variables set in Step 5 are not populated yet. Additionally, it is important for some flows to run under a user's context when invoking actions like starting a Teams group chat, generating an approval or sending an email notification.
 
 ### Configure run-only user privileges
 
 Perform these steps to ensure certain flows run under the user's context:
 
-1. Go to Power Apps Studio and select the environment you installed the solution in
+1. Go to Power Apps maker portal and select the environment you installed the solution in
 1. Select **Solutions** on the left-side panel and select the **Hardware Request and Management** solution
 1. Select **Cloud flows**
 1. Take these steps for each flow:
@@ -276,13 +276,13 @@ To turn on cloud flows that were not on by default when installing the solution 
 
 1. Select **Add**
 
-1. For each of the Connection References, select to edit the properties and choose the *Connection* in the drop-down list that was previously created.
+1. For each of the Connection References, select to edit the properties and choose the *Connection* in the drop-down list previously created.
 
 1. Go back to *Solutions* in the left-side panel and select the **Hardware Request and Management** solution.
 
 1. Select **Cloud flows**.
 
-1. Perform the following steps for each of the below flows whose status is *Off*:
+1. Perform the following steps for each of the flows whose status is *Off*:
 
     1. Select the flow row
     1. Select **Turn on** at the top of the screen

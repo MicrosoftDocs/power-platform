@@ -2,7 +2,7 @@
 title: Manage the Appointment Booking template for Power Platform
 description: Learn how to manage the Appointment Booking template for Power Platform.
 author: tverhasselt
-ms.author: tverhasselt
+ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
 ms.date: 11/13/2023
