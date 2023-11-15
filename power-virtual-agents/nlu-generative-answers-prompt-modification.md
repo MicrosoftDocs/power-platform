@@ -6,7 +6,7 @@ ms.date: 11/15/2023
 ms.topic: how-to
 author: KendalBond007
 ms.author: iawilt
-ms.reviewer:
+ms.reviewer: leeclontz
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ms.search.region: USA
