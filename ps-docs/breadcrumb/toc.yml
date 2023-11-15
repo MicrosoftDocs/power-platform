@@ -1,11 +1,7 @@
 - name: Learn
   href: /
   topicHref: /
-  items:
-  - name: Power Platform
-    href: /power-platform/
-    topicHref: /power-platform/
-    items:
-    - name: Project “Sophia” 
-      tocHref: /project-sophia/
-      topicHref: /project-sophia/overview
+  items:  
+  - name: Project “Sophia” 
+    tocHref: /project-sophia/
+    topicHref: /project-sophia/overview
