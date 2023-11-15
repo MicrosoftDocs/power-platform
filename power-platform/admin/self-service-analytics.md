@@ -5,13 +5,15 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/15/2023
 ms.subservice: admin
-author: StephenRauchPM
-ms.author: stephenrauch
+author: sericks007
+ms.author: sericks
 ms.reviewer: sericks
 contributors:
 - StephenRauchPM
 search.audienceType: 
   - admin
+ms.contributors:
+- johnev
 ---
 
 # Set up Microsoft Power Platform self-service analytics to export Power Platform inventory and usage data (preview)
