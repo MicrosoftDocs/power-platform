@@ -7,7 +7,7 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.collection: power-virtual-agents
-ms.service: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 # Hand off to Salesforce Einstein bot 
