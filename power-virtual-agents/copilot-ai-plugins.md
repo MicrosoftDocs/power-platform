@@ -75,7 +75,7 @@ After you create your plugin, [enable it for use in Microsoft Copilot](copilot-p
 Connector plugins let you define connector actions that can be invoked from AI surfaces in Power Platform. Connector plugins require identification of actions that are enabled for use in Microsoft Copilot and the capture of information that large language models require to effectively identify and utilize the plugin, such as **Summary** and **Description** fields.
 
 >[!NOTE]
->Connector plugins are required to be certified before they can be used in Microsoft Copilot.
+>Connector plugins are required to be certified before they can be used in Microsoft Copilot. [Learn more](/connectors/create-a-connector-ai-plugin#submit-the-ai-plugin-enabled-connector-for-certification).
 
 **To create connector plugins:**
 
@@ -90,7 +90,7 @@ Connector plugins let you define connector actions that can be invoked from AI s
      ![Create Connector Description](media/copilot-ai-plugins/create-connector-description.png)
 
 1. Select **Create/Update Connector** and the connector's Swagger gets updated with appropriate annotations.
-1. Follow the instructions to certify the connector so that the plugin can be used in Microsoft Copilot.
+1. Follow the instructions to certify the connector so that the plugin can be used in Microsoft Copilot. [Learn more](/connectors/create-a-connector-ai-plugin#submit-the-ai-plugin-enabled-connector-for-certification).
 
 After you create your plugin, [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).
 
