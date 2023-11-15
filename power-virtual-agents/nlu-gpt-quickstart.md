@@ -2,7 +2,7 @@
 title: Quickstart guide for building bots with GPT
 description: Build bots quickly and provide the most relevant information to your customers with natural language understanding advancements in Microsoft Copilot Studio.
 keywords: "PVA, GPT, NLU"
-ms.date: 7/30/2023
+ms.date: 11/15/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -23,13 +23,6 @@ Microsoft has made bot building even simpler with AI-powered capabilities in Mic
 This quickstart guide introduces you to the minimal steps necessary to get started quickly in creating and boosting a chatbot with expanded natural language understanding (NLU) capabilities. Using the intelligent authoring of AI-powered bots, you can now create a new topic or edit an existing one by describing what you want to happen or have your bot generate conversational responses even if there isn't a matching topic.
 
 ## Prerequisites 
-
-> [!CAUTION] 
->  
-> Your bot must be created in the US region. 
->  
-> Other regions, and languages other than English, aren't supported.
-
 
 - You'll need an account for Microsoft Copilot Studio. 
 
