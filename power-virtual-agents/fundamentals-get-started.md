@@ -1,4 +1,4 @@
-![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/50497762/513e2da2-b3a4-4697-b7b1-2ea09fa67d7d)---
+---
 title: "Quickstart: Create and deploy a copilot on the portal (contains video)"
 description: "Create and publish a Microsoft Copilot Studio copilot on the online portal in minutes."
 keywords: "PVA, online, web, portal, quickstart"
