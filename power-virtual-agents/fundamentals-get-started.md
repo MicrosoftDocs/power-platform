@@ -173,41 +173,39 @@ Now that you have some content authored into a dialog tree, it's time to test th
 
 This test experience empowers you to quickly create and test a conversation to ensure that the conversation will flow as anticipated. If the dialog does not reflect your intention, you can change the dialog, and save it. The latest content will be pushed into the test copilot, and you can try it out again. None of this changes the published version of the copilot, so feel free to play around with your content until you are happy with it.
 
-### Publish your bot
+### Publish your copilot
 
-Once you're fine with the content authored in your bot, you can publish your bot to a website.
+Once you're fine with the content authored in your copilot, you can publish your copilot to a website.
 
 1. In the navigation menu, select the **Publish**.
 
-1. Select **Publish** to activate your bot with a single click. If the publish is successful, you'll see a green banner on the top of the page.
+1. Select **Publish** to activate your copilot with a single click. If the publish is successful, you'll see a green banner on the top of the page.
 
-    :::image type="content" source="media/fundamentals-get-started/channel-publish-latest-content.png" alt-text="Deploy bot to demo website." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/channel-publish-latest-content.png" alt-text="Deploy copilot to demo website." border="false":::
 
-1. Select the demo website link under **Share your bot** to see it in action on a demo website.
+1. Select the demo website link under **Share your copilot** to see it in action on a demo website.
 
     This will open a new window in your browser. If this doesn't happen automatically, check if a pop-up blocker has been activated and, if so, allow the window to be opened. Usually, you can allow pop-ups from the URL field directly.
 
-    The webpage demonstrates what your bot looks like to an end-user who comes to your webpage. The bot canvas is at the bottom. You can interact with it by typing into the window or by selecting a starter phrase from the provided options.
+    The webpage demonstrates what your copilot looks like to an end-user who comes to your webpage. The copilot canvas is at the bottom. You can interact with it by typing into the window or by selecting a starter phrase from the provided options.
 
-    :::image type="content" source="media/fundamentals-get-started/channel-go-to-demo-website.png" alt-text="Share your bot." border="false":::
+   For more information on publishing your copilot to other channels, see the documentation under [Publication key concepts](publication-fundamentals-publish-channels.md).
 
-For more information on publishing your bot to other channels, see the documentation under [Publication key concepts](publication-fundamentals-publish-channels.md).
+### Analyze the performance of your copilot
 
-### Analyze the performance of your bot
+When your copilot completes interactions with users, the statistics are recorded in your copilot's analytics. To view analytics, in the navigation menu select **Analytics**. Here, you can find key performance indicators (KPIs) showing:
 
-When your bot completes interactions with users, the statistics are recorded in your bot's analytics. To view analytics, in the navigation menu select **Analytics**. Here, you can find key performance indicators (KPIs) showing:
-
-- the volume of sessions your bot has handled
-- how effectively your bot was able to engage end-users and resolve issues
+- the volume of sessions your copilot has handled
+- how effectively your copilot was able to engage end-users and resolve issues
 - escalation rates to human agents
 - abandonment rates during conversations
 
 You'll also find customer satisfaction information at the KPI level as well as in the **Customer Satisfaction** tab.
 
 > [!NOTE]
-> There is up to a 1-hour delay between when the conversations occur and when the statistics for those conversations appear in the analytics views. Also, all interactions with the bot are logged in analytics, including interactions from your demo website, custom website, or test bot.
+> There is up to a 1-hour delay between when the conversations occur and when the statistics for those conversations appear in the analytics views. Also, all interactions with the copilot are logged in analytics, including interactions from your demo website, custom website, or test copilot.
 
-You can also view detailed session history and transcripts by selecting **Analytics** > **Sessions**. Here, you can download a CSV file with the full session transcript. This can be a helpful way for you to tune the performance of your bot and change the content in your topics to improve your bot's efficiency.
+You can also view detailed session history and transcripts by selecting **Analytics** > **Sessions**. Here, you can download a CSV file with the full session transcript. This can be a helpful way for you to tune the performance of your copilot and change the content in your topics to improve your copilot's efficiency.
 
 :::image type="content" source="media/fundamentals-get-started/analytics-sessions.png" alt-text="Download sessions." border="false":::
 
