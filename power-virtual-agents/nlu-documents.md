@@ -14,6 +14,8 @@ searchScope:
 
 # Use uploaded documents for generative answers (preview)
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 You can upload your own documents that your chatbot can use to [generate answers with generative AI](nlu-boost-conversations.md). When you upload documents, they'll be used across your bot, but you can [specify individual nodes that shouldn't use uploaded documents](#disable-documents-as-a-data-source-for-a-generative-answers-node).
