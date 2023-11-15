@@ -15,25 +15,27 @@ ms.collection: virtual-agent
 
 # Create a flow
 
-Learn how to use a cloud flow in Power Virtual Agents by giving a bot the ability to produce a weather forecast on request. In this first example, you'll create a flow that fetches a weather forecast. In the next example, you'll [call the flow as an action](advanced-use-flow.md) so the bot can respond with the forecast when a customer asks about the weather.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-You can create a flow for use with a bot or modify an existing flow. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** flow trigger and response action.
+Learn how to use a cloud flow in Microsoft Copilot Studio by giving a bot the ability to produce a weather forecast on request. In this first example, you'll create a flow that fetches a weather forecast. In the next example, you'll [call the flow as an action](advanced-use-flow.md) so the bot can respond with the forecast when a customer asks about the weather.
 
-- Flow trigger:  **When Power Virtual Agents calls a flow**  
+You can create a flow for use with a bot or modify an existing flow. To be suitable for bots, a Power Automate flow requires a special **Microsoft Copilot Studio** flow trigger and response action.
 
-    :::image type="content" source="media/advanced-flow-create/PVAConnectorTrigger.JPG" alt-text="Screenshot of the Power Virtual Agents flow trigger.":::
+- Flow trigger:  **When Microsoft Copilot Studio calls a flow**  
 
-- Response action:  **Return value(s) to Power Virtual Agents**  
+    :::image type="content" source="media/advanced-flow-create/PVAConnectorTrigger.JPG" alt-text="Screenshot of the Microsoft Copilot Studio flow trigger.":::
 
-    :::image type="content" source="media/advanced-flow-create/PVAConnectorResponse.JPG" alt-text="Screenshot of the Power Virtual Agents response action.":::
+- Response action:  **Return value(s) to Microsoft Copilot Studio**  
 
-When you [create a flow](#create-a-flow-to-use-with-a-bot) from the Power Virtual Agents authoring canvas, the trigger and the action are added for you. When you [modify an existing flow](#modify-an-existing-flow-to-use-with-a-bot) for use with a bot, you must add the **Power Virtual Agents** trigger and response action.
+    :::image type="content" source="media/advanced-flow-create/PVAConnectorResponse.JPG" alt-text="Screenshot of the Microsoft Copilot Studio response action.":::
+
+When you [create a flow](#create-a-flow-to-use-with-a-bot) from the Microsoft Copilot Studio authoring canvas, the trigger and the action are added for you. When you [modify an existing flow](#modify-an-existing-flow-to-use-with-a-bot) for use with a bot, you must add the **Microsoft Copilot Studio** trigger and response action.
 
 [!INCLUDE [Requirements for Power Automate flows](includes/flow-requirements.md)]
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Get started with Power Automate](/power-automate/getting-started).
 
 ## Create a flow to use with a bot
@@ -50,17 +52,17 @@ When you [create a flow](#create-a-flow-to-use-with-a-bot) from the Power Virtua
 
     The [Power Automate portal](https://flow.microsoft.com) opens in a new tab, with a starter flow template open for editing. The portal opens in the same environment as the bot and uses the same user credentials.
 
-    :::image type="content" source="media/advanced-flow-create/PVAConnectorTemplate.JPG" alt-text="Screenshot of the Power Automate flow template called from Power Virtual Agents.":::
+    :::image type="content" source="media/advanced-flow-create/PVAConnectorTemplate.JPG" alt-text="Screenshot of the Power Automate flow template called from Microsoft Copilot Studio.":::
 
 1. Continue to [author the flow in Power Automate](#author-the-flow-on-the-power-automate-portal).
 
 ## Modify an existing flow to use with a bot
 
-What if you already have a flow and don't want to create one from scratch to use with your bot? Add the special **Power Virtual Agents** flow trigger and response action yourself. You can open an existing flow for modification in a couple of ways.
+What if you already have a flow and don't want to create one from scratch to use with your bot? Add the special **Microsoft Copilot Studio** flow trigger and response action yourself. You can open an existing flow for modification in a couple of ways.
 
 ### Open a flow from the authoring canvas
 
-1. In a topic that's open in the Power Virtual Agents authoring canvas, select **Add node** (**+**).
+1. In a topic that's open in the Microsoft Copilot Studio authoring canvas, select **Add node** (**+**).
 
 1. Select **Call an action**.
 
@@ -70,7 +72,7 @@ What if you already have a flow and don't want to create one from scratch to use
 
 ### Open a flow from an Action node
 
-1. In a topic that's open in the Power Virtual Agents authoring canvas, select the relevant **Action** node.
+1. In a topic that's open in the Microsoft Copilot Studio authoring canvas, select the relevant **Action** node.
 
 1. Select **View flow details**.
 
@@ -88,17 +90,17 @@ What if you already have a flow and don't want to create one from scratch to use
 
     :::image type="content" source="media/advanced-flow-create/open-flow-in-solution.png" alt-text="Screenshot of the Get weather forecast flow in the Default Solution.":::
 
-### Add the Power Virtual Agents flow trigger and response action
+### Add the Microsoft Copilot Studio flow trigger and response action
 
-If your flow doesn't already include the special **Power Virtual Agents** flow trigger and response action, you'll need to add them before you can use the flow with your bot.
-
-1. Select **New step**.
-
-1. Search for the **Power Virtual Agents** connector and select **When Power Virtual Agents calls a flow**.
+If your flow doesn't already include the special **Microsoft Copilot Studio** flow trigger and response action, you'll need to add them before you can use the flow with your bot.
 
 1. Select **New step**.
 
-1. Search for the **Power Virtual Agents** connector and select **Return value(s) to Power Virtual Agents**.
+1. Search for the **Microsoft Copilot Studio** connector and select **When Microsoft Copilot Studio calls a flow**.
+
+1. Select **New step**.
+
+1. Search for the **Microsoft Copilot Studio** connector and select **Return value(s) to Microsoft Copilot Studio**.
 
 1. Select **Save**.
 
@@ -110,14 +112,14 @@ Now add actions to your flow. In the current example, the action you'll add fetc
 
     :::image type="content" source="media/advanced-flow-create/RenameFlow.png" alt-text="Screenshot of flow name selected.":::
 
-1. Add the following input parameters to the **Power Virtual Agents** flow trigger:
+1. Add the following input parameters to the **Microsoft Copilot Studio** flow trigger:
 
     - City (Text)
     - Zipcode (Number)
 
     :::image type="content" source="media/advanced-flow-create/input-params.png" alt-text="Screenshot of input parameters for Power Automate flow.":::
 
-1. Select **Add an action** to create a new action below the **Power Virtual Agents** flow trigger.
+1. Select **Add an action** to create a new action below the **Microsoft Copilot Studio** flow trigger.
 
     :::image type="content" source="media/advanced-flow-create/AddAction.png" alt-text="Screenshot of the Add flow action button.":::
 
@@ -129,7 +131,7 @@ Now add actions to your flow. In the current example, the action you'll add fetc
 
     :::image type="content" source="media/advanced-flow-create/AddLocationForMSN.png" alt-text="Screenshot of variables added to the Get forecast for today action":::
 
-1. In the **Return value(s) to Power Virtual Agents** action, add the following output parameters and variables:
+1. In the **Return value(s) to Microsoft Copilot Studio** action, add the following output parameters and variables:
 
     | Output Parameter Name | Type   | Variable        |
     | --------------------- | ------ | --------------- |
@@ -175,9 +177,9 @@ To be available to bots in your environment, flows must be stored in a [solution
 
 Flows that you want to use in a bot must return values in real time, or [synchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). Flows that run in the background, or asynchronously, may cause an error when your bot tries to run them. Instead of running the flow, the bot will say, "Something unexpected happened. We're looking into it. Error code: 3000."
 
-When you create a flow from Power Virtual Agents, [asynchronous responses](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior) are turned off by default. If you modified an existing flow that has asynchronous responses turned on, you'll need to change the setting.
+When you create a flow from Microsoft Copilot Studio, [asynchronous responses](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior) are turned off by default. If you modified an existing flow that has asynchronous responses turned on, you'll need to change the setting.
 
-1. [Open your flow](#modify-an-existing-flow-to-use-with-a-bot) and find the **Return value(s) to Power Virtual Agents** step.
+1. [Open your flow](#modify-an-existing-flow-to-use-with-a-bot) and find the **Return value(s) to Microsoft Copilot Studio** step.
 
 1. Select the **Menu** (**...**) icon, and then select **Settings**.
 

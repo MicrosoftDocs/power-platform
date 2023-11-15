@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 
 # Reuse variables across topics
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 [Variables](authoring-variables.md) store your customers' responses to questions from your bot. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
 By default, a variable's value can only be used in the topic where the variable is created. However, it's possible to reuse the same value across topics. For example, a Welcome topic asks for the customer's name and email address. In the Appointment Booking topic, you want the bot to remember what the customer entered and not ask again.
@@ -22,7 +24,7 @@ One way to reuse a variable is to [pass the variable between topics](authoring-v
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Web app](#tab/webApp)
@@ -304,7 +306,7 @@ Topics with nodes that contain references to deleted bot variables might stop wo
 
 ### Authentication-related bot variables
 
-Depending on the bot's authentication setup, you will have a set of bot variables associated with the authentication provider available to you. For details about which set of variables are available and how to use them, see the [Add end-user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) documentation topic.
+Depending on the bot's authentication setup, you will have a set of bot variables associated with the authentication provider available to you. For details about which set of variables are available and how to use them, see the [Add end-user authentication to a Microsoft Copilot Studio bot](advanced-end-user-authentication.md) documentation topic.
 
 
 # [Teams](#tab/teams)
@@ -333,7 +335,7 @@ Topics with nodes that contain references to deleted bot variables might stop wo
 
 ### Advanced use of bot variables
 
-For more details on complex and advanced scenarios using bot variables, including authentication, external sources, and initialization flows, [see the Power Virtual Agents web app version of this topic](authoring-variables-bot.md).
+For more details on complex and advanced scenarios using bot variables, including authentication, external sources, and initialization flows, [see the Microsoft Copilot Studio web app version of this topic](authoring-variables-bot.md).
 
 ---
 

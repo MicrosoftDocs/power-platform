@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of the bot's default canvas
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Your bot's look and feel is defined by its canvas. To customize your bot, you must customize its canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
 
 - [Customize the default canvas](#customize-the-default-canvas-simple) with JavaScript styling in the HTML code of the website where you deploy your bot.  
@@ -24,13 +26,13 @@ Your bot's look and feel is defined by its canvas. To customize your bot, you mu
     This approach requires extensive developer knowledge. It's useful for organizations that want a completely custom experience.
 
 > [!IMPORTANT]
-> You may install and use the sample code included in this article only for use with Microsoft Power Virtual Agents. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
+> You may install and use the sample code included in this article only for use with Microsoft Copilot Studio. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
 >
 > Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Web app](#tab/web)
@@ -253,20 +255,20 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 ### Customize and host your chat canvas (advanced)
 
-You can connect your Power Virtual Agents bot with a custom canvas that is hosted as a standalone web app. This option is best if you need to embed a customized iFrame across multiple web pages.
+You can connect your Microsoft Copilot Studio bot with a custom canvas that is hosted as a standalone web app. This option is best if you need to embed a customized iFrame across multiple web pages.
 
 > [!NOTE]
 > Hosting a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a good understanding of developer tools, utilities, and IDEs.
 
 #### Pick a sample to customize
 
-We recommend starting with one of these samples custom-built to work with Power Virtual Agents:
+We recommend starting with one of these samples custom-built to work with Microsoft Copilot Studio:
 
-- [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Power Virtual Agents. For example:
+- [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Microsoft Copilot Studio. For example:
 
   :::image type="content" source="media/customize-default-canvas/custom-canvas-full-bundle.png" alt-text="Full bundle custom canvas." border="false":::
 
-- [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) is a custom canvas capable of getting a user's location and sending it to a bot using Power Virtual Agents. For example:
+- [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) is a custom canvas capable of getting a user's location and sending it to a bot using Microsoft Copilot Studio. For example:
 
   :::image type="content" source="media/customize-default-canvas/custom-canvas-location-file-upload.png" alt-text="Location and file uploading custom canvas." border="false":::
 

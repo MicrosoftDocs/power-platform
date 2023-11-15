@@ -15,12 +15,14 @@ ms.collection: virtual-agent
 
 # Using topic triggers
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 By default, topics use the **Phrases** trigger, meaning they are triggered when one or more of their trigger phrases match closely with an incoming message from a user. However, a number of additional triggers types are available, to determine when a topic should be executed.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- [Create and edit topics in your Power Virtual Agents bot](authoring-create-edit-topics.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- [Create and edit topics in your Microsoft Copilot Studio bot](authoring-create-edit-topics.md).
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
