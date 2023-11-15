@@ -121,6 +121,8 @@ End users in your tenant can use conversational and AI plugins in their chats wi
 
 1. Scroll to the end of the **Features** page and select **Save**.
 
+![Enabling the Microsoft 365 Copilot setting](media/copilot-plugins-overview/enable-microsoft-365-copilot-setting.png)
+
 ### Enable the connection in Microsoft Copilot (user)
 
 Microsoft Copilot end users need to create a connection between their chat instance and the plugin registry. They only need to create a connection once, then they can interact with all existing and any future plugins that are available to do them.
