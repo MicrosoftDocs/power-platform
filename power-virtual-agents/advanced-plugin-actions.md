@@ -36,7 +36,7 @@ Plugin actions are based on one of the following core action types:
 
 >[!IMPORTANT]
 >  
-> You can't use [conversational plugins that you've created in Microsoft Copilot Studio](copilot-conversational-plugin.md) as a plugin action.
+> You can't use [conversational plugins that you've created in Microsoft Copilot Studio](copilot-conversational-plugins.md) as a plugin action.
 
 The core action is marked up with additional information that describes its purpose, allowing the bot to use GPT to generate the questions required to fill the inputs needed to perform the action. This means that instead of needing to manually author Question nodes to gather all of the input values needed, such as the inputs on a Flow, this is handled for you during runtime.
 

@@ -6,14 +6,14 @@
       href: fundamentals-what-is-copilot-studio.md
     - name: Compliance offerings
       href: admin-certification.md
+    - name: Security and governance in Copilot Studio
+      href: security-and-governance.md
     - name: Quotas, limits, and configuration values
       href: requirements-quotas.md
-    - name: What's new in Microsoft Copilot Studio
-      items:
-        - name: Migrate to the unified canvas
-          href: unified-authoring-conversion.md
-        - name: Key concepts for Composer users
-          href: composer-concepts-preview.md
+    - name: Migrate to the unified canvas
+      href: unified-authoring-conversion.md
+    - name: Key concepts for Composer users
+      href: composer-concepts-preview.md
 - name: Get started
   items:
     - name: Get access to Microsoft Copilot Studio
@@ -70,6 +70,8 @@
       href: sign-up-individual.md
     - name: Working with environments
       href: environments-first-run-experience.md
+    - name: Configure data movement across geographic locations
+      href: manage-data-movement-outside-us.md
     - name: Apply and configure data loss prevention policies
       items:
         - name: Manage data loss prevention for chatbots
@@ -181,6 +183,22 @@
       href: publication-connect-bot-to-azure-bot-service-channels.md
     - name: Integrate with question answering
       href: integrate-with-question-answering.md
+    - name: Integrate and hand off conversations
+      items:
+        - name: Configure hand-off to a generic engagement hub
+          href: configure-generic-handoff.md  
+        - name: Configure voice and text hand off to Dynamics 365 Customer Service
+          href: configuration-hand-off-omnichannel.md
+        - name: Overview of Customer Copilot hand off
+          href: customer-copilot-overview.md
+        - name: Hand off to Genesys
+          href: customer-copilot-genesys-handoff.md
+        - name: Hand off to LivePerson
+          href: customer-copilot-liveperson-handoff.md
+        - name: Hand off to Salesforce Einstein bot 
+          href: customer-copilot-salesforce-handoff.md
+        - name: Hand off to ServiceNow
+          href: customer-copilot-servicenow.md
     - name: Integrate with conversational language understanding
       items:
         - name: Conversational language understanding integration overview
@@ -245,10 +263,6 @@
       href: configure-sso.md
     - name: Configure single sign-on for Teams
       href: configure-sso-teams.md
-    - name: Configure hand-off to a generic engagement hub
-      href: configure-generic-handoff.md
-    - name: Configure voice and text hand off to Dynamics 365 Customer Service
-      href: configuration-hand-off-omnichannel.md
     - name: Configure the bot to automatically start the conversation
       href: configure-bot-greeting.md
     - name: Customize the look and feel of the bot

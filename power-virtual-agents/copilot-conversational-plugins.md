@@ -35,33 +35,33 @@ Unlike a traditional component model that creates a hard-coded integration point
 ## Prerequisites
 
 - End users must have a license to use Microsoft Copilot.
-- Microsoft Copilot Studio application must be a Microsoft Copilot Studio copilot, not a PVA "Classic" bot.
-- Before end-to-end works, Microsoft 365 Tenant Admin needs to enable the **Dynamics and Microsoft Copilot Studio** Integrated Apps category in the Microsoft Admin Center.
+- Microsoft Copilot Studio application must be a Microsoft Copilot Studio copilot, not a Power Virtual Agents "Classic" bot.
+- Before end-to-end works, the Microsoft 365 Tenant Admin needs to enable the **Dynamics and Microsoft Copilot Studio** Integrated Apps category in the Microsoft Admin Center.
 
 > [!IMPORTANT]
 > In this preview, there are some limitations:
 >
 > 1. Your topic will not be able to interact (ask questions of) the user, and can only process the incoming query from the user (in the variable **Activity.Text**) and send a response.
 > 1. Responses will be limited to text, no media or adaptive cards will be supported
-> 1. In this preview Copilot Studio will not be able to authenticate the user, so sharepoint/onedrive sources for generative answers will not be functional.
+> 1. In this preview Copilot Studio will not be able to authenticate the user, so SharePoint and Onedrive sources for generative answers will not be functional.
 > 1. This preview will be limited to English language copilots.
 > 1. All users of Microsoft Copilot within your organization will be able to interact with the copilot, the copilot will not support authenticting the user itself
 > 1. If your Dataverse Environment has a security group assigned, users not within that Security Group will not be able to access the plugin in Microsoft Copilot
 
-## Creating a basic Conversational Plugin to publish to Microsoft Copilot
+## Creating a basic conversational plugin to publish to Microsoft Copilot
 
 Your topic used within Microsoft Copilot chat uses the System variable **Activity.Text** as an input that represents the user's question in Microsoft Copilot. The chat processes it, such as passing it to **Generative Answers**, and returns the result as one or more messages. These messages could include the response that comes from **Generative Answers** or **Send a Message** nodes. Multiple messages can be included and sent separately to form the output.
 
-The following steps help you create a new Conversational Plugin within Microsoft Copilot Studio. You author basic capabilities and publish them to the Microsoft Admin Center. You can choose and enable the plugin in the UI.
+The following steps help you create a new conversational plugin within Microsoft Copilot Studio. You author basic capabilities and publish them to the Microsoft Admin Center. You can choose and enable the plugin in the UI.
 
-1. From the left navigation pane in Copilot Studio, choose the **Extend Microsoft Copilot (preview)** option, and then **Conversational plugins**
-1. From this page, choose **Add conversational plugin** affordance in the bar above the authoring canvas, which opens the authoring canvas with a new conversational plugin
+1. From the left navigation pane in Copilot Studio, choose the **Extend Microsoft Copilot (preview)** option, and then **Conversational plugins**.
+1. From this page, choose **Add conversational plugin** affordance in the bar above the authoring canvas, which opens the authoring canvas with a new conversational plugin.
 1. The authoring canvas appears with a new **Microsoft Copilot (preview)** trigger node on it.
 1. Before authoring further, set the name of the toipc in the top panel above the authoring canvas. This name is visible to the user and admin in the Microsoft Copilot and Microsoft Admin Center respectively.
 1. In the Trigger node’s description, provide a clear description of how the conversational plugin can help the user and what it can do. Unlike other descriptions, this one has functional purpose and is used by the Microsoft Copilot to determine whether to invoke your plugin or not. Use clear sentences to describe what your plugin does for the user and what it returns.
-1. In the conversational plugin, create any type of logic that doesn't require user interaction (no buttons, questions, cards, or other prompts). The authoring canvas menu for Conversational Plugins is limited to remove options that could require user interaction.
+1. In the conversational plugin, create any type of logic that doesn't require user interaction (no buttons, questions, cards, or other prompts). The authoring canvas menu for conversational plugins is limited to remove options that could require user interaction.
 1. For this example, we use the **Generative Answers** node to execute a search for web content and provide an answer to the user in Microsoft Copilot.
-1. To use the Generate Answers node as shown in the screenshot, select the plus on the canvas under the trigger node, then select **Generative answers** under the Advanced tab of the popup menu.
+1. To use the Generate Answers node, select the plus on the canvas under the trigger node, then select **Generative answers** under the Advanced tab of the popup menu.
 1. For the **Input** field, invoke the variable picker by selecting the arrow in the **Input** box.
 1. Choose the system variable **Activity.Text** which represents the user’s last query to Microsoft 365 Copilot. This query caused Microsoft 365 Copilot to invoke the plugin.
 1. Select the **Data Sources** link in the center of the **Generative Answers** tile.
@@ -72,9 +72,9 @@ The following steps help you create a new Conversational Plugin within Microsoft
    >
 1. Once the link is added (don't forget to hit "+" once entering the URL), the properties panel can be closed
 1. If you wish, you send one or more messages to the user as a response. You can use a **Send a Message** node, or another **Generate Answer** node call, or multiple of these actions as your conversational plugin needs.
-1. Finally, the conversational plugin can be saved with the Save/Floppy Disk icon in the top right corner of the page
+1. Finally, the conversational plugin can be saved with save icon in the top right corner of the page.
 
-## Publishing your Conversational Plugin to Microsoft Copilot
+## Publishing your conversational plugin to Microsoft Copilot
 
 Publishing your conversational plugin creates a new plugin in the Dataverse registry for your Tenant. Once available there, your tenant admin needs to approve your plugin to be available to users in the Microsoft Copilot plugins catalog.
 
@@ -88,10 +88,15 @@ In Microsoft Copilot, your conversational plugin is labeled as *Conversational p
 To publish your conversational plugin:
 
 1. First, create and save your conversational plugin as described in the prior section
-1. Navigate to the Publish panel on the left side menu of the Copilot Studio shell
-1. Choose publish. The publish should complete quickly. The actual availability in the Microsoft Admin Center can take up to 4 hours.
-1. Your Admin can find the Dataverse and Microsoft Copilot Studio integrated app in the Microsoft Admin Center under Settings->Integrations to be reviewed and approved.  In this preview, Deploy/Block is that this category level only.
-1. Once your Tenant admin approves the Dataverse and Microsoft Copilot Studio integrated app, it should appear in the user's list of plugins in their Microsoft Copilot UI
+1. Go to **Publish** on the side navigation pane of Copilot Studio.
+1. Choose **Publish**. The publish should complete quickly. The actual availability in the Microsoft Admin Center can take up to 4 hours.
+
+    ![Publish Plugin](media/copilot-conversational-plugins/publish-plugin.png)
+
+1. Your Admin can find the Dataverse and Microsoft Copilot Studio integrated app in the Microsoft Admin Center under **Settings**, then **Integrations to be reviewed and approved**. In this preview, Deploy/Block is at this category level only.
+1. Once your Tenant admin approves the Dataverse and Microsoft Copilot Studio integrated app, it should appear in the user's list of plugins in their Microsoft Copilot UI.
+
+    ![Flyout](media/copilot-conversational-plugins/flyout.png)
 
 Once enabled, your user can ask questions to Microsoft Copilot and see the plugin invoked and return the most relevant results.
 

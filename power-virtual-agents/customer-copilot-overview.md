@@ -3,7 +3,6 @@ title: Overview of Customer Copilot
 description: Overview of Customer Copilot  
 ms.reviewer: clmori
 ms.date: 10/24/2023
-
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -12,7 +11,7 @@ ms.service: virtual-agent
 ---
 
 
-# Overview of Customer Copilot
+# Overview of Customer Copilot hand off
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 

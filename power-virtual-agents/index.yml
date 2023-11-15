@@ -1,18 +1,18 @@
 ### YamlMime:Hub
 
 title: Microsoft Copilot Studio documentation # < 60 chars
-summary: Discover how to build AI-driven chatbots easily with Microsoft Copilot Studio with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site.
+summary: Discover how to build AI-driven copilots easily with Microsoft Copilot Studio with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: power-virtual-agents
 
 metadata:
   title: Official Microsoft Copilot Studio documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Discover how to build AI-driven chatbots easily with Microsoft Copilot Studio with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site. # Required; article description that is displayed in search results. < 160 chars.
+  description: Discover how to build AI-driven copilots easily with Microsoft Copilot Studio with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
   ms.author: iawilt #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/21/2023 #Required; mm/dd/yyyy format.
+  ms.date: 11/14/2023 #Required; mm/dd/yyyy format.
   ms.collection: get-started
   ms.custom: bap-template
   hide_bc: false
@@ -61,19 +61,19 @@ additionalContent:
           links:
             - text: Use the web app
               url: ./fundamentals-what-is-power-virtual-agents-portal.md
-            - text: Use the unified canvas to build bots
+            - text: Use the unified canvas to build copilots
               url: ./unified-authoring-conversion.md
-        - title: Create bots with generative AI
+        - title: Create copilots with generative AI
           links:
-            - text: Use generative AI to build bots fast
+            - text: Use generative AI to build copilots fast
               url: ./nlu-gpt-overview.md
-            - text: Tell your bot what it should do
+            - text: Tell your copilot what it should do
               url: ./nlu-authoring.md
-            - text: Make your bot useful from day one
+            - text: Make your copilot useful from day one
               url: ./nlu-boost-conversations.md
-            - text: Build a bot with generative AI from the ground up
+            - text: Build a copilot with generative AI from the ground up
               url: ./nlu-gpt-quickstart.md
-        - title: Enhance and improve your bots
+        - title: Enhance and improve your copilots
           links:
             - text: Use entities and slot filling
               url: ./advanced-entities-slot-filling.md
@@ -87,8 +87,10 @@ additionalContent:
               url: guidance/topics-overview.md
             - text: Trigger phrases best practices
               url: guidance/trigger-phrases-best-practices.md
-            - text: Measuring chatbot engagement
+            - text: Measuring copilot engagement
               url: guidance/measuring-engagement.md
+            - text: Microsoft Copilot Studio architecture
+              url: ./copilot-plugins-architecture.md
 
     - title: Administer and extend
       items:
@@ -98,7 +100,7 @@ additionalContent:
               url: ./requirements-licensing.md
             - text: Working with environments
               url: ./environments-first-run-experience.md
-            - text: Export and import bots using solutions
+            - text: Export and import copilots using solutions
               url: ./authoring-export-import-bots.md
         - title: Publish and integrate
           links:
@@ -110,11 +112,21 @@ additionalContent:
               url: ./publication-add-bot-to-facebook.md
         - title: Monitor and diagnose
           links:
-            - text: Use analytics to improve your bot
+            - text: Use analytics to improve your copilot
               url: ./analytics-overview.md
-            - text: Analyze bot performance and usage
+            - text: Analyze copilot performance and usage
               url: ./analytics-summary.md
             - text: Analyze topic usage
+              url: ./analytics-topic-details.md
+        - title: Expand copilots with plugins
+          links:
+            - text: Create and configure copilot plugins
+              url: ./copilot-plugins-overview.md
+            - text: Create conversational plugins
+              url: ./copilot-conversational-plugins.md
+            - text: Create AI plugins
+              url: ./advanced-plugin-actions.md
+            - text: Use plugin actions
               url: ./analytics-topic-details.md
     #   - title: Use
     #   items:

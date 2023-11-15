@@ -250,7 +250,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
 ## Publish your content
 
-1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-power-virtual-agents) to make it available in your Microsoft Copilot Studio bot.
+1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-microsoft-copilot-studio) to make it available in your Microsoft Copilot Studio bot.
 
     [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
