@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, rapidly design, configure, and publish modern websites using Power Pages, and build intelligent bots with a no-code interface using Power Virtual Agents.
+summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, and rapidly design, configure, and publish modern websites using Power Pages.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Official Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Leverage Microsoft Power Platform to analyze data, build custom apps, automate workflows, build chatbots and websites with Power BI, Power Apps, Power Automate, Power Virtual Agents, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
+  description: Leverage Microsoft Power Platform to analyze data, build custom apps, automate workflows, build chatbots and websites with Power BI, Power Apps, Power Automate, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
@@ -89,17 +89,6 @@ conceptualContent:
             - url: /power-pages/training-videos
               itemType: video
               text: Power Pages videos
-        - title: Power Virtual Agents
-          links:
-            - url: /power-virtual-agents/
-              itemType: overview
-              text: Power Virtual Agents documentation
-            - url: /training/browse/?expanded=power-platform&products=power-virtual-agents
-              itemType: learn
-              text: Power Virtual Agents training and learning paths
-            - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
-              itemType: video
-              text: Power Virtual Agents videos
         - title: Administer and extend Power Platform
           links:
             - url: ./admin/index.yml
@@ -144,10 +133,7 @@ conceptualContent:
               text: AI-driven features in Power Automate
             - url: /power-pages/responsible-ai-overview
               itemType: overview
-              text: AI-driven features in Power Pages 
-            - url: /power-virtual-agents/responsible-ai-overview
-              itemType: overview
-              text: AI-driven features in Power Virtual Agents       
+              text: AI-driven features in Power Pages    
 
 additionalContent:
   # Supports up to 3 sections
