@@ -16,6 +16,8 @@ searchScope:
 
 # Use a custom data source for generative answers
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 In some cases, your data may not exist in one of the supported data sources. However, you can provide your own data - possibly by accessing one of your own preferred data stores through Power Automate Flows, and then formatting the results into a JSON object that can be passed as a variable or expression to generate answers.
 
 The custom data field takes a JSON array of objects representing a set of ContentLocation/Content pairs, as in the following exmaple:

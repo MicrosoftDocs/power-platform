@@ -1,6 +1,6 @@
 ---
 title: "Use Bot Framework Composer to display an options list in chatbots"
-description: "Use Bot Framework Composer to add multi-select options to your Power Virtual Agents chatbot."
+description: "Use Bot Framework Composer to add multi-select options to your Microsoft Copilot Studio chatbot."
 keywords: "composer, adaptive card"
 ms.date: 03/24/2023
 
@@ -14,23 +14,25 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Example 2 - Display a multi-select options list in Power Virtual Agents
+# Example 2 - Display a multi-select options list in Microsoft Copilot Studio
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 [!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
 
-Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
+Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Microsoft Copilot Studio bot.
 
-In this example, you'll learn how to display a multi-select list in Power Virtual Agents by using Composer.
+In this example, you'll learn how to display a multi-select list in Microsoft Copilot Studio by using Composer.
 
 [!INCLUDE [Composer License](includes/composer-license.md)]
 
 ## Prerequisites
 
-- [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md).
+- [Example 1 - Show an Adaptive Card in Microsoft Copilot Studio](advanced-bot-framework-composer-example1.md).
 
 ## Create a new dialog
 
-1. In Power Virtual Agents, open the bot you created in Example 1. If you haven't completed Example 1 yet, see [Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md).
+1. In Microsoft Copilot Studio, open the bot you created in Example 1. If you haven't completed Example 1 yet, see [Show an Adaptive Card in Microsoft Copilot Studio](advanced-bot-framework-composer-example1.md).
 
 1. Open your bot in Composer. For instructions on how to do so, see [Getting started with Bot Framework Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
@@ -163,20 +165,20 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 ## Test your bot
 
-1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-power-virtual-agents) to make it available in your Power Virtual Agents bot.
+1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-microsoft-copilot-studio) to make it available in your Microsoft Copilot Studio bot.
 
     [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
-1. Go to the Power Virtual Agents **Topics** page to see your new **Specials** and **DailySpecials** topics.
+1. Go to the Microsoft Copilot Studio **Topics** page to see your new **Specials** and **DailySpecials** topics.
 
-    :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_inPVA.png" alt-text="Screenshot of the topics added in Composer in the list of topics on Power Virtual Agents.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_inPVA.png" alt-text="Screenshot of the topics added in Composer in the list of topics on Microsoft Copilot Studio.":::
 
 1. Open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `Do you have any specials?` to start your conversation.
 
-    :::image type="content" source="media/advanced-bot-framework-composer-example2/Example2._cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example2/Example2._cropped.png" alt-text="Screenshot of the Microsoft Copilot Studio test bot pane.":::
 
 ## Next Steps
 
-[Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md).
+[Example 3 - Use Bing Search as a fallback in Microsoft Copilot Studio](advanced-bot-framework-composer-example3.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

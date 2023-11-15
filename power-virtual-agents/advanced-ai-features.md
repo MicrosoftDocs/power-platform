@@ -1,6 +1,6 @@
 ---
 title: "AI features for Teams and Classic bots (contains video)"
-description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users. These features are available in the Teams app for Power Virtual Agents and for Classic bots."
+description: "Use advanced AI features in Microsoft Copilot Studio to improve how your bots interact with your bot users. These features are available in the Teams app for Microsoft Copilot Studio and for Classic bots."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
 ms.date: 07/25/2023
 ms.topic: how-to
@@ -15,9 +15,11 @@ ms.collection: virtual-agent
 
 # AI features for Teams and Classic bots
 
-If you create bots in the Power Virtual Agents app in Teams, or if you have bots marked **Classic** in the Power Virtual Agents web app, you can enable additional features for those bots that improve how the core AI in Power Virtual Agents works.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-The unified authoring canvas includes a raft of improvements to the types of AI used by Power Virtual Agents which build upon these features. Bots created with the unified authoring canvas include next-generation AI features that supersede or replace the features listed in this topic.
+If you create bots in the Microsoft Copilot Studio app in Teams, or if you have bots marked **Classic** in the Microsoft Copilot Studio web app, you can enable additional features for those bots that improve how the core AI in Microsoft Copilot Studio works.
+
+The unified authoring canvas includes a raft of improvements to the types of AI used by Microsoft Copilot Studio which build upon these features. Bots created with the unified authoring canvas include next-generation AI features that supersede or replace the features listed in this topic.
 
 This topic provides details and instructions for using these AI features for backwards compatibility with older bots and to support some specific support scenarios. In most cases, you should [create or convert your bots with the unified authoring canvas](unified-authoring-conversion.md) to get the best implementation of multiple AI technologies.
 
@@ -30,26 +32,26 @@ This topic provides details and instructions for using these AI features for bac
 > - You create a **Classic** bot
 > - You created your bot before May 23, 2023
 >
-> [Generative AI features](nlu-gpt-overview.md) (such as [generative answers](nlu-boost-conversations.md) and [Copilot](nlu-authoring.md)) are only available if you create or convert a bot [using the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-power-virtual-agents) in the Power Virtual Agents web app.
+> [Generative AI features](nlu-gpt-overview.md) (such as [generative answers](nlu-boost-conversations.md) and [Copilot](nlu-authoring.md)) are only available if you create or convert a bot [using the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-microsoft-copilot-studio) in the Microsoft Copilot Studio web app.
 
 
 ## Prerequisites
 
 - Your bot must be marked **Classic**, or it must be a bot you created in the Teams app.
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
-## AI models in Power Virtual Agents - background
+## AI models in Microsoft Copilot Studio - background
 
-:::image type="content" source="media/advanced-ai-features/nlu-models.png" alt-text="In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.":::
+:::image type="content" source="media/advanced-ai-features/nlu-models.png" alt-text="In Microsoft Copilot Studio conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.":::
 
-Power Virtual Agents hosts multiple AI models and AI capabilities on a single service, the core of which is a transformer-based natural language understanding (NLU) model.
+Microsoft Copilot Studio hosts multiple AI models and AI capabilities on a single service, the core of which is a transformer-based natural language understanding (NLU) model.
 
 Traditionally, intent triggering (how an AI model determines the intent of a question posed to it, by using NLU to understand what a user is asking) is formalized as a multi-class classification problem, in which the model is highly associated with known categories; any change to these categories will result in the need to build a new AI model.
 
-Power Virtual Agents, however, employs a language understanding model that uses an example-based approach, powered by a deep neural model. This type of large-scale model only needs to be trained once with large amounts of data using AI supercomputing, and can then be used for specific tasks with few examples without further training. The use of this model is part of the [AI at Scale](https://innovation.microsoft.com/ai-at-scale) initiative by Microsoft, and means the way AI is developed and used is changing. Specifically for Power Virtual Agents, the use of this model allows for an intuitive way for bot makers to work on their bot content confidently, without having to involve AI experts.
+Microsoft Copilot Studio, however, employs a language understanding model that uses an example-based approach, powered by a deep neural model. This type of large-scale model only needs to be trained once with large amounts of data using AI supercomputing, and can then be used for specific tasks with few examples without further training. The use of this model is part of the [AI at Scale](https://innovation.microsoft.com/ai-at-scale) initiative by Microsoft, and means the way AI is developed and used is changing. Specifically for Microsoft Copilot Studio, the use of this model allows for an intuitive way for bot makers to work on their bot content confidently, without having to involve AI experts.
 
-With the Power Virtual Agents model, you only need to provide a few examples when you craft trigger phrases for a topic. The examples for a single topic usually consist of 5 to 10 phrases.
+With the Microsoft Copilot Studio model, you only need to provide a few examples when you craft trigger phrases for a topic. The examples for a single topic usually consist of 5 to 10 phrases.
 
 Shorter trigger phrases are better, and you should aim for 2 to 10 words. You just need to make sure trigger phrases are semantically different: changing a single verb or noun could be enough to expand a topic's coverage. Adding things like new articles (changing or adding 'the' or 'a' or 'an'), changing capitalization, adding contractions (you're or don't), or adding plurals won't improve the triggering because contractions are already accounted for in the AI model.
 
@@ -62,7 +64,7 @@ Entities used in corresponding topics will automatically be identified in user i
 Topic overlap detection helps improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
 
 > [!TIP]
-> Topic overlap detection is in general availability and supports [all languages supported in Power Virtual Agents](authoring-language-support.md).
+> Topic overlap detection is in general availability and supports [all languages supported in Microsoft Copilot Studio](authoring-language-support.md).
 
 [After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), you can view a list of overlapped topics. In the navigation menu, select **Analytics**, then select the **Topic triggering** tab.
 
@@ -107,17 +109,17 @@ After reviewing the suggested trigger phrases, you can choose to delete the enti
 ### Conversation personalization (preview)
 
 > [!IMPORTANT]
-> The conversation personalization (preview) capability will be **retired on 28 Septempter 2023**. From that date onwards, you won't be able to enable this capability in any new or existing bots. The capability will also be disabled for any existing bots that have it enabled.
+> The conversation personalization (preview) capability will be **retired on 28 September 2023**. From that date onwards, you won't be able to enable this capability in any new or existing bots. The capability will also be disabled for any existing bots that have it enabled.
 >  
-> The unified authoring canvas includes a raft of improvements to the types of AI used by Power Virtual Agents. Wherever possible, we recommend you [create and convert your bots with the unified authoring canvas](unified-authoring-conversion.md).
+> The unified authoring canvas includes a raft of improvements to the types of AI used by Microsoft Copilot Studio. Wherever possible, we recommend you [create and convert your bots with the unified authoring canvas](unified-authoring-conversion.md).
 
-For this capability, the bot reuses information from Microsoft Graph and Azure Active Directory (Azure AD) throughout the conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
+For this capability, the bot reuses information from Microsoft Graph and Microsoft Entra ID throughout the conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
 
-Specifically, with this feature enabled, when the bot asks questions such as those in the following table, the corresponding user information is pulled from Microsoft Graph and Azure AD (for authenticated users) and provided as prompts for the user to choose as an option.
+Specifically, with this feature enabled, when the bot asks questions such as those in the following table, the corresponding user information is pulled from Microsoft Graph and Microsoft Entra ID (for authenticated users) and provided as prompts for the user to choose as an option.
 
 :::image type="content" source="media/advanced-ai-features/improvements-authoring.png" alt-text="Screenshot of the triggering improvements highlighted as part of topic authoring.":::
 
-| Sample bot questions                                                                                                                                                                                                                                                                            | User property automatically filled from Microsoft Graph or Azure AD |
+| Sample bot questions                                                                                                                                                                                                                                                                            | User property automatically filled from Microsoft Graph or Microsoft Entra ID |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | <ul></br><li>`Where do you live?`</li></br><li>`For assistance with this matter you'll need to provide your address.`</li></br><li>`Thank you for that. Please give me 2-3 minutes to review your previous case. May I know your address?`</li></br></ul>                                       | Address                                                             |
 | <ul></br><li>`OK. I'll need you to enter your annual income in order to assist.`</li></br><li>`OK. Can I get your annual income so I can help with that?`</li></br></ul>                                                                                                                        | Annual income                                                       |
@@ -147,11 +149,11 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 > [!IMPORTANT]
 > You can't enable these features for bots aren't marked **Classic**. This includes any bots created (or converted) in the web app after May 23, 2023, or any bots that weren't created with the unified authoring canvas (such as those you created specifically for certain scenarios, which you chose when you created the bot).
 >
-> The conversation personalization (preview) capability will be **retired on 28 Septempter 2023**. From that date onwards, you won't be able to enable this capability in any new or existing bots. The capability will also be disabled for any existing bots that have it enabled, and it will be removed from the **AI capabilities** page in Power Virtual Agents.
+> The conversation personalization (preview) capability will be **retired on 28 September 2023**. From that date onwards, you won't be able to enable this capability in any new or existing bots. The capability will also be disabled for any existing bots that have it enabled, and it will be removed from the **AI capabilities** page in Microsoft Copilot Studio.
 >  
-> The unified authoring canvas includes a raft of improvements to the types of AI used by Power Virtual Agents. Wherever possible, we recommend you [create and convert your bots with the unified authoring canvas](unified-authoring-conversion.md).
+> The unified authoring canvas includes a raft of improvements to the types of AI used by Microsoft Copilot Studio. Wherever possible, we recommend you [create and convert your bots with the unified authoring canvas](unified-authoring-conversion.md).
 
-To enable these older AI capabilities in Power Virtual Agents:
+To enable these older AI capabilities in Microsoft Copilot Studio:
 
 1. Open the bot you want to enable the features for:
   - In the web app, the bot must be marked with **Classic**.
