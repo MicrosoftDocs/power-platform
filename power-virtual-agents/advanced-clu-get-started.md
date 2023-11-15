@@ -1,6 +1,6 @@
 ---
 title: Get started with conversational language understanding integration
-description: Create bots that use Azure conversational language understanding in Power Virtual Agents.
+description: Create bots that use Azure conversational language understanding in Microsoft Copilot Studio.
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
 ms.date: 7/11/2023
 ms.topic: article
@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 ---
 
 # Get started with conversational language understanding integration 
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 This topic includes the step-by-step procedures you need to get started with [conversational language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
 
@@ -29,16 +31,16 @@ Below are the steps to create a bot using an existing CLU model:
 ## Prepare your environment
 
 Before you begin, make sure that you have your CLU model project name and deployment name.
-1. Create a new [Power Virtual Agents](authoring-first-bot.md) bot.
+1. Create a new [Microsoft Copilot Studio](authoring-first-bot.md) bot.
 
    > [!NOTE]
-   > Ensure the [environment for your bot](environments-first-run-experience.md) has been created in a [region supported by Power Virtual Agents](data-location.md?tabs=web#data-locations) and which has an [equivalent CLU region](/azure/cognitive-services/language-service/conversational-language-understanding/service-limits#regional-availability).
+   > Ensure the [environment for your bot](environments-first-run-experience.md) has been created in a [region supported by Microsoft Copilot Studio](data-location.md?tabs=web#data-locations) and which has an [equivalent CLU region](/azure/cognitive-services/language-service/conversational-language-understanding/service-limits#regional-availability).
    >
-   > Not all regions supported by Power Virtual Agents have an equivalent CLU region.
+   > Not all regions supported by Microsoft Copilot Studio have an equivalent CLU region.
 
 2. With your bot open, expand the **Settings** tab on the side menu pane and select **Language**.
 
-   :::image type="content" source="media/advanced-clu-integration/clu-enable-language.png" alt-text="Screenshot of the Power Virtual Agents web app with the Settings and Language menu options highlighted." border="false":::
+   :::image type="content" source="media/advanced-clu-integration/clu-enable-language.png" alt-text="Screenshot of the Microsoft Copilot Studio web app with the Settings and Language menu options highlighted." border="false":::
 
    >[!NOTE]
    > If you have already enabled a CLU connection, skip to step 4.
@@ -58,12 +60,12 @@ Before you begin, make sure that you have your CLU model project name and deploy
 > :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected-27Jun23.png" alt-text="Language option menu when not connected to Azure Congintive Service for Language." border="false":::
 
 5. Select the **+ (plus sign)** on the to the right of the connector name, to display the authentication settings page. 
-6. Enter the display name, API key, account key, site URL, then select **Save**. Once Power Apps creates the connector, return to your Power Virtual Agents bot.
+6. Enter the display name, API key, account key, site URL, then select **Save**. Once Power Apps creates the connector, return to your Microsoft Copilot Studio bot.
     :::image type="content" source="media/advanced-clu-integration/clu-image3.png" alt-text="Enter display name, authentication type, account key, and Site URL." border="false"::: 
 
 7. To view it in the **Connections** list, right click the **Azure Cognitive Service for Language** connector and select **Edit**. 
 9. Change the display name to something else to distinguish it from other CLU connectors. The name you enter to change can be any name you choose.
-8. From the left navigation in Power Virtual Agents, choose **Language**, then in the **NLU Resource** drop-down list, choose [*the name you typed in the last step*], then select **Save**.
+8. From the left navigation in Microsoft Copilot Studio, choose **Language**, then in the **NLU Resource** drop-down list, choose [*the name you typed in the last step*], then select **Save**.
 9. In the **Delete example trigger phrases?** option, select **Save snapshot**. This saves the bot content, including trigger phrases and bot dialogues into a backlog file in YAML format.
 
     :::image type="content" source="media/advanced-clu-integration/clu-image4.png" alt-text="Select Save snapshot to delete example trigger phrases." border="false"::: 
@@ -71,9 +73,9 @@ Before you begin, make sure that you have your CLU model project name and deploy
 10. Enter your project name and deployment information, and select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image5.png" alt-text="Choose a project and model in Azure Cognitive Service for Language." border="false"::: 
 
-Next, switch back to Power Virtual Agents. Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
+Next, switch back to Microsoft Copilot Studio. Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
 
-:::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Power Virtual Agents NLU." border="false"::: 
+:::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Microsoft Copilot Studio NLU." border="false"::: 
 
 Now that you’ve completed preparing your environment, you’re ready to map intents and entities to CLU model data. 
 
@@ -82,15 +84,15 @@ Now that you’ve completed preparing your environment, you’re ready to map in
 1. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 2. Then create a language resource in [Language Studio](https://language.cognitive.azure.com/), with the [conversational language understanding](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio) feature enabled.
 3. Note, to ensure PVA functions correctly, you will need to create intents for [Power Virtual Agent's system topics](authoring-system-topics.md) and for [any custom topics](authoring-create-edit-topics.md) you may want to author.
-4. Author [any custom entities](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components) you want to use in your Power Virtual Agents project.
-5. Train and deploy the project in the same region as your Power Virtual Agents resource.
+4. Author [any custom entities](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components) you want to use in your Microsoft Copilot Studio project.
+5. Train and deploy the project in the same region as your Microsoft Copilot Studio resource.
 
-## Map CLU intents and entities to Power Virtual Agents prebuilt data types
+## Map CLU intents and entities to Microsoft Copilot Studio prebuilt data types
 
-You create a new Power Virtual Agents bot by mapping existing topics to CLU intents. You can manually map intents and entities, or for bulk mapping, see [Use the Bulk tool wizard](#use-the-bulk-tool-wizard).
+You create a new Microsoft Copilot Studio bot by mapping existing topics to CLU intents. You can manually map intents and entities, or for bulk mapping, see [Use the Bulk tool wizard](#use-the-bulk-tool-wizard).
 ### Manually map intents:
 
-1.	Open your [Power Virtual Agents](authoring-first-bot.md) bot.
+1.	Open your [Microsoft Copilot Studio](authoring-first-bot.md) bot.
 
 1. From the left navigation, select **Topics**.
 
@@ -111,7 +113,7 @@ You create a new Power Virtual Agents bot by mapping existing topics to CLU inte
  
 ### Manually map entities:
 
-1. Open your [Power Virtual Agents](authoring-first-bot.md) bot.	
+1. Open your [Microsoft Copilot Studio](authoring-first-bot.md) bot.	
 
 1. From the left navigation, select **Entities**.
 
@@ -130,7 +132,7 @@ You create a new Power Virtual Agents bot by mapping existing topics to CLU inte
 
 You create a new bot by bulk mapping existing topics to CLU intents using the **Map intents and entities** wizard. With the wizard, your bot can automatically utilize existing intents from your CLU model rather than trigger phrases to determine which topic to map to. 
 
-Begin by uploading your CLU model data file and automatically map CLU intents to your Power Virtual Agents bot.
+Begin by uploading your CLU model data file and automatically map CLU intents to your Microsoft Copilot Studio bot.
 
 1.	From the left navigation, select **Language**, then **Add topics and entities from model data**. 
 1.	In the **File name** option, select **Choose file** to select the data file that you want to upload your CLU model from.
@@ -148,10 +150,10 @@ Begin by uploading your CLU model data file and automatically map CLU intents to
     > [!NOTE]
     > Any fields that you leave blank are ignored by the wizard.
 
-1.	Once all CLU intents and entities are mapped to Power Virtual Agents topics, select **Done**.
+1.	Once all CLU intents and entities are mapped to Microsoft Copilot Studio topics, select **Done**.
     :::image type="content" source="media/advanced-clu-integration/clu-image8.png" alt-text="Add intents and entities and select Done to finish." border="false"::: 
 
-Once you’ve competed this procedure, your bot topics now appear in the Power Virtual Agents **Topics** pane. For more information, see [Managing topics](authoring-topic-management.md).
+Once you’ve competed this procedure, your bot topics now appear in the Microsoft Copilot Studio **Topics** pane. For more information, see [Managing topics](authoring-topic-management.md).
 
 ## Related topics
 

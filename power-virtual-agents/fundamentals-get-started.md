@@ -1,6 +1,6 @@
 ---
-title: "Quickstart: Create and deploy a bot on the portal (contains video)"
-description: "Create and publish a Power Virtual Agents bot on the online portal in minutes."
+title: "Quickstart: Create and deploy a copilot on the portal (contains video)"
+description: "Create and publish a Microsoft Copilot Studio copilot on the online portal in minutes."
 keywords: "PVA, online, web, portal, quickstart"
 ms.date: 03/24/2023
 
@@ -17,35 +17,36 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Quickstart: Create and deploy a Power Virtual Agents bot
+# Quickstart: Create and deploy a Microsoft Copilot Studio copilot
 
-Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience - all without the need for data scientists or developers.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it's been deployed.
+Microsoft Copilot Studio empowers teams to quickly and easily create powerful copilots using a guided no-code graphical experience - all without the need for data scientists or developers.
+
+This quickstart guide takes you through the end-to-end experience of creating a copilot for the first time, adding topics to your bot, testing content changes in real time, deploying your copilot to a test page, and analyzing the performance of your copilot after it's been deployed.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-copilot-studio.md).
 
 # [Web app](#tab/web)
 
 ### Explore the home page
 
-Power Virtual Agents has an app-level home page that isn't specific to any bot. On this page you can create a new bot, view recent bots, and access learning resources like videos, documentation, and learning paths.
+Microsoft Copilot Studio has an app-level home page that isn't specific to any copilot. On this page you can create a new copilot, view recent copilots, and access learning resources like videos, documentation, and learning paths.
 
 :::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
-<!--- IMAGE NEEDS UPDATE --->
 
-In the navigation menu, select **Chatbots** to open the **Chatbots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these bots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another bot that you have access to.
+In the navigation menu, select **Copilots** to open the **Copilots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these copilots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another copilot that you have access to.
 
 :::image type="content" source="media/fundamentals-get-started/chatbot-list.png" alt-text="Screenshot of the list of chatbots.":::
 
-<!--- IMAGE NEEDS UPDATE --->
 
-### Create a bot
 
-1. Go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA). Supported browsers include Microsoft Edge, Chrome, and Firefox.
+### Create a copilot
+
+1. Go to the [Microsoft Copilot Studio introduction website](https://aka.ms/TryPVA). Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
 2. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts are currently not supported.
 
@@ -54,49 +55,45 @@ In the navigation menu, select **Chatbots** to open the **Chatbots** page and vi
     :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the environment picker.":::
 
     > [!NOTE]
-    > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
+    > Microsoft Copilot Studio is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your copilot.  
     > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
-4. Once signed up, you will land on the App Homepage. In the left navigation menu, select **Home** then select **Create a bot**.
-5. A whole page wizard will start with a couple steps to get your bot created very quickly. A default bot name is there. You can change this to be something generic to your company or specific to the scenario you are tailoring your bot to.
-6. For **What language do you want your bot to speak?**, select the language you want your bot to speak. The langugage dropdown is prepopulated with the browser locale.
+4. Once signed up, you will land on the App Homepage. In the left navigation menu, select **Home** then select **Create a copilot**.
+5. A whole page wizard will start with a couple steps to get your copilot created very quickly. A default copilot name is there. You can change this to be something generic to your company or specific to the scenario you are tailoring your copilot to.
+6. For **What language do you want your copilot to speak?**, select the language you want your copilot to speak. The langugage dropdown is prepopulated with the browser locale.
 
     :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
 
-<!--- IMAGE NEEDS UPDATE --->
 
-7. (Optional) You can choose to Boost Conversations be providing a URL to generate AI answers from. With a bot name and langauge selected, you can select Create and create your bot.
+7. (Optional) You can choose to Boost Conversations be providing a URL to generate AI answers from. With a bot name and langauge selected, you can select Create and create your copilot.
 
-<!--- LET'S ADD POINTERS AND TEXT FROM THE GPT ANSWERS FEATURE HERE --->
-  
-There are optional customizations and enhancements you can make before getting your bot created.
-  
-  a. Choose **Edit advanced options** on the bottom left to see and edit advanced options. You can continue with bot creation without going into these advanced options.
-  
-  b. Here you can choose a bot icon to give your bot a personality and represent your business scenarios better. You can select from the pre-populated list if icons or upload a custom icon for your bot. This is the icon used in the chat window when the bot responds.
-  
-  c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with bot topics.
 
-  <!--- link to lesson topic doc page --->
+There are optional customizations and enhancements you can make before getting your copilot created.
   
-  d. There are a couple more advanced options to select the solution your bot will be in and the schema name. These are advanced options which can be changed later, but provided upfront for specific customization.
+  a. Choose **Edit advanced options** on the bottom left to see and edit advanced options. You can continue with copilot creation without going into these advanced options.
+  
+  b. Here you can choose a copilot icon to give your copilot a personality and represent your business scenarios better. You can select from the pre-populated list if icons or upload a custom icon for your copilot. This is the icon used in the chat window when the copilot responds.
+  
+  c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with copilot topics.
+  
+  d. There are a couple more advanced options to select the solution your copilot will be in and the schema name. These are advanced options which can be changed later, but provided upfront for specific customization.
  
-8. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
+8. Select **Create**. The process of creating your first copilot in a new environment can take up to 15 minutes; subsequent copilots will be created much faster.
 
   
   
-1. After a few minutes, you'll be redirected to the bot's overview page. Certain operations like Publish and Authentication configuration may take a few more minutes to be ready for your bot, but you can go ahead and:
+1. After a few minutes, you'll be redirected to the copilot's overview page. Certain operations like Publish and Authentication configuration may take a few more minutes to be ready for your copilot, but you can go ahead and:
     - explore the overall user interface
     - explore topics and start creating and editing topics
     - experiment with the preloaded user topics and system topics
-    - interact with your bot using the Test Canvas
-    - review [additional documentation on authoring topics](authoring-fundamentals.md) in your bot
+    - interact with your copilot using the Test Canvas
+    - review [additional documentation on authoring topics](authoring-fundamentals.md) in your copilot
 
 
 > [!TIP]
-> To navigate back to the app-level home page from your bot, in the navigation menu, select **Chatbots**.
+> To navigate back to the app-level home page from your copilot, in the navigation menu, select **Home**.
 >
->:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Chatbots button in the navigation menu.":::
+>:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Home button in the navigation menu.":::
 
 ### Create a topic
 
@@ -218,14 +215,14 @@ For more information, see [Analytics key concepts](analytics-overview.md).
 
 # [Teams](#tab/teams)
 
-Power Virtual Agents empowers anyone in the organization to build chatbots in Microsoft Teams with our built-in natural language processing (NLP) and no-code graphical interface. With our latest Teams integration, you can create, author, test, and publish your bot into Teams all within the Microsoft Teams interface.
+Microsoft Copilot Studio empowers anyone in the organization to build chatbots in Microsoft Teams with our built-in natural language processing (NLP) and no-code graphical interface. With our latest Teams integration, you can create, author, test, and publish your bot into Teams all within the Microsoft Teams interface.
 
 When you create chatbots, there are lots of things you need to think about, such as the sorts of questions someone might ask it, the different ways they might ask the question, and what the answer should be. You should also consider if the person has follow-up questions or concerns.
 
 To help you get started making bots, we've created an end-to-end guide that takes you through all the steps needed to make a human resources bot. The guide covers:
 
 - The scenario and how to map what your needs are to what a chatbot can do
-- How to create a bot in the Power Virtual Agents app in Microsoft Teams
+- How to create a bot in the Microsoft Copilot Studio app in Microsoft Teams
 - How to build and enhance topics that answer common HR-style questions
 - How to test, publish, and share the bot with the organization
 
@@ -241,23 +238,23 @@ Once this bot is published, Contoso employees can access HR information in Micro
 
 ### Bot building steps
 
-See the [Quickstart: Create and deploy a human resources Power Virtual Agents bot in Teams](quickstart-preview.md).
+See the [Quickstart: Create and deploy a human resources Microsoft Copilot Studio bot in Teams](quickstart-preview.md).
 
 This next section of the guide looks at how you - as the bot author - can create and publish a bot.
 
 ### Install the Power Virtual Agents app in Microsoft Teams
 
-Start by launching the Power Virtual Agents app in Microsoft Teams:
+Start by launching the Microsoft Copilot Studio app in Microsoft Teams:
 
-1. Go to the Microsoft Teams app store and search for *power virtual agents*. You'll see the Power Virtual Agents app from Microsoft Corporation in the search results.
-1. Select the Power Virtual Agents app and then **Add for me**.
+1. Go to the Microsoft Teams app store and search for *power virtual agents*. You'll see the Microsoft Copilot Studio app from Microsoft Corporation in the search results.
+1. Select the Microsoft Copilot Studio app and then **Add for me**.
 
-    :::image type="content" source="media/fundamentals-get-started/get-started-install-app.png" alt-text="Add the Power Virtual Agents app.":::
+    :::image type="content" source="media/fundamentals-get-started/get-started-install-app.png" alt-text="Add the Microsoft Copilot Studio app.":::
 
-The app is added and visible in the side pane in Teams, and the app opens to the Power Virtual Agents Home page. This is where Teams users can come and build bots without needing to leave the Microsoft Teams interface.
+The app is added and visible in the side pane in Teams, and the app opens to the Microsoft Copilot Studio Home page. This is where Teams users can come and build bots without needing to leave the Microsoft Teams interface.
 
 > [!TIP]
-> To make it easier to get back to, select and hold (or right-click) the Power Virtual Agents icon and select **Pin**.
+> To make it easier to get back to, select and hold (or right-click) the Microsoft Copilot Studio icon and select **Pin**.
 >  
 > :::image type="content" source="media/fundamentals-get-started/first-bot-pin.png" alt-text="A menu pops up with options to learn about the app, Pin it or uninstall it":::
 
@@ -279,7 +276,7 @@ Now that the bot is created, we can go ahead and start adding content to the bot
 
 Go to the topic list by selecting **Topics** in the navigation menu.
 
-A bot comes with a collection of topics that defines the bot's interaction with end users. The core of building a bot in Power Virtual Agents is to build topics that can respond to different user inquiries. Let's build a topic to answer employee questions about taking time-off.
+A bot comes with a collection of topics that defines the bot's interaction with end users. The core of building a bot in Microsoft Copilot Studio is to build topics that can respond to different user inquiries. Let's build a topic to answer employee questions about taking time-off.
 
 1. Select **+ New topic** on the top menu bar to create a new topic.
 
@@ -293,11 +290,11 @@ A bot comes with a collection of topics that defines the bot's interaction with 
    - What are the national holidays
    - I need extended leave
 
-    Power Virtual Agents comes with built-in natural language capabilities. You only need to define a few trigger phrases about time-off - phrases that you expect employees to use - and the bot can accurately trigger the topic based on the employee's input.
+    Microsoft Copilot Studio comes with built-in natural language capabilities. You only need to define a few trigger phrases about time-off - phrases that you expect employees to use - and the bot can accurately trigger the topic based on the employee's input.
 
 1. Select **Save** to add it to the topic list.
 
-Now that the trigger phrases are defined, you can proceed to define the bot's interaction with the user when this topic is engaged. The graphical interface in Power Virtual Agents lets you build the topic without needing to write a single line of code.
+Now that the trigger phrases are defined, you can proceed to define the bot's interaction with the user when this topic is engaged. The graphical interface in Microsoft Copilot Studio lets you build the topic without needing to write a single line of code.
 
 First, let's give the employee a message that the bot is here to help with time-off questions using a message node.
 
@@ -347,13 +344,13 @@ This is what your topic should look like now:
 
 ### Test bot for expected behavior
 
-Power Virtual Agents comes with a built-in test bot that lets you test the bot in real time. Let's test the bot by launching the test bot canvas and providing the employee's input. When you save the topic, the test bot will be refreshed with the latest content. You can now test the bot with the latest content changes.
+Microsoft Copilot Studio comes with a built-in test bot that lets you test the bot in real time. Let's test the bot by launching the test bot canvas and providing the employee's input. When you save the topic, the test bot will be refreshed with the latest content. You can now test the bot with the latest content changes.
 
 1. Select the purple bot icon at the bottom of the screen to launch the test bot canvas.
 
 1. Type in *I need time off information*.
 
-    Even though *I need time off information* does not match the trigger phrases directly, Power Virtual Agents is able to process the user's input and triggers the employee time off topic.
+    Even though *I need time off information* does not match the trigger phrases directly, Microsoft Copilot Studio is able to process the user's input and triggers the employee time off topic.
 
     As you chat with the bot in the test bot canvas, you can see where the bot is in the conversation in real-time in the authoring canvas by following the green highlights.
 
@@ -365,7 +362,7 @@ Now the topic branches off based on the user's response. You can also open the v
 
 1. Type in *Need information on national holidays*
 
-    As you can see, the bot is able to bypass the question on vacation type and directly provide information on national holidays. This is because Power Virtual Agents supports [entity extraction](advanced-entities-slot-filling.md) and was able to determine the user is asking about national holidays.
+    As you can see, the bot is able to bypass the question on vacation type and directly provide information on national holidays. This is because Microsoft Copilot Studio supports [entity extraction](advanced-entities-slot-filling.md) and was able to determine the user is asking about national holidays.
 
     :::image type="content" source="media/fundamentals-get-started/get-started-test-bot.png" alt-text="The test bot shows how the AI knew what the user was asking.":::
 
@@ -382,7 +379,7 @@ Now that we have the basics out of the way, let's add a more complex option to t
 
 2. Add a message node that says *Extended leave needs HR expert approval. Let me connect you with them.*.
 
-Power Virtual Agents bots can take actions by [adding Power Automate flows into a topic](advanced-flow.md). In this instance, you could add a flow that you've previously created that notifies a HR expert. This flow sends an adaptive card to the HR expert channel in Teams to let experts know a user needs them to reach out.
+Microsoft Copilot Studio bots can take actions by [adding Power Automate flows into a topic](advanced-flow.md). In this instance, you could add a flow that you've previously created that notifies a HR expert. This flow sends an adaptive card to the HR expert channel in Teams to let experts know a user needs them to reach out.
 
 First, let's create the flow to send a message to a Teams channel and then call it with the appropriate input.
 
@@ -392,7 +389,7 @@ First, let's create the flow to send a message to a Teams channel and then call 
 
 2. Add a node under the question and select **Call an action**.
 
-3. Select **Create a flow**. This launches Power Automate within the Power Virtual Agents app in Teams. We will use a built-in template to send a message to a channel, which makes it very easy to get started.
+3. Select **Create a flow**. This launches Power Automate within the Microsoft Copilot Studio app in Teams. We will use a built-in template to send a message to a channel, which makes it very easy to get started.
 
 4. Choose the template **Send a message to a Teams channel**, then select **Continue**.  
     The flow template takes in two inputs from the bot, the **Subject** (title for the message) and **Message text** (actual message) to post to the channel.
@@ -410,7 +407,7 @@ First, let's create the flow to send a message to a Teams channel and then call 
 6. Pass in the variable you created earlier called *TimeOffType* for the **Subject** and the **Description** gathered in the chat. This way, when the flow posts a message on the Expert channel, it will state **Extended leave** as the title and the message defined in the flow.
 
     > [!TIP]
-    > Power Virtual Agents is now directly integrated with Microsoft Teams so the bot knows which user from Teams it is chatting with it. This allows bot makers to use the information to build personal and customized bot responses.
+    > Microsoft Copilot Studio is now directly integrated with Microsoft Teams so the bot knows which user from Teams it is chatting with it. This allows bot makers to use the information to build personal and customized bot responses.
     >
     > To use the name of the person chatting with the bot, there is a pre-defined variable named *bot.UserDisplayName* that be used [like any other variable](authoring-variables.md).
 
@@ -537,7 +534,7 @@ You've now created a bot, created your own topic, tested it out, published it to
 
 For questions not covered in the product documentation or for feature ideas, please [visit our community](https://aka.ms/PowerVirtualAgentsForum) and post questions.
 
-We would also like to hear your ideas on Power Virtual Agents. Please [visit our Ideas board](https://aka.ms/PowerVirtualAgentsIdeas) and post your ideas.
+We would also like to hear your ideas on Microsoft Copilot Studio. Please [visit our Ideas board](https://aka.ms/PowerVirtualAgentsIdeas) and post your ideas.
 
 ---
 

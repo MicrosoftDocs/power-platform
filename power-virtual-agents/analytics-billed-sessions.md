@@ -1,6 +1,6 @@
 ---
 title: View billed sessions (preview)
-description: View your billed sessions in Power Virtual Agents preview.
+description: View your billed sessions in Microsoft Copilot Studio preview.
 keywords: "PVA"
 ms.date: 03/24/2023
 ms.topic: how-to
@@ -14,7 +14,9 @@ ms.service: power-virtual-agents
 
 # View billed sessions
 
-A _billed session_ is an interaction between a customer and a bot. It represents one unit of consumption. The purchase of a Power Virtual Agents license includes a specific number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. How much of your capacity you've consumed isn't reported at the tenant level. However, you can view consumption for individual bots.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+A _billed session_ is an interaction between a customer and a bot. It represents one unit of consumption. The purchase of a Microsoft Copilot Studio license includes a specific number of billed sessions. Microsoft Copilot Studio pools this capacity across the entire tenant. How much of your capacity you've consumed isn't reported at the tenant level. However, you can view consumption for individual bots.
 
 A billed session begins when a user topic or premium functionality is triggered. A billed session ends when one of the following conditions is met:
 
@@ -31,13 +33,13 @@ Sessions that use the [embedded test chat](authoring-test-bot.md) don't count to
 
 ## View your bot's billed sessions
 
-1. In Power Virtual Agents, in the navigation menu, select **Analytics**.
+1. In Microsoft Copilot Studio, in the navigation menu, select **Analytics**.
 
 1. Select the **Billing** tab.
 
 By default, the page displays billed sessions for the last seven days. To change the time period shown, select a period start date and (optionally) a period end date in the calendar controls.
 
-The Billed Session report doesn't distinguish between sessions that are included in the Power Virtual Agents for Microsoft Teams plan and sessions that aren't included. The report might show an inflated number of billed sessions.
+The Billed Session report doesn't distinguish between sessions that are included in the Microsoft Copilot Studio for Microsoft Teams plan and sessions that aren't included. The report might show an inflated number of billed sessions.
 
 ## Common scenarios
 
