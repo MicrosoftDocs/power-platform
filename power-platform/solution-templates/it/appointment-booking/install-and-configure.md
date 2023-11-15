@@ -101,7 +101,6 @@ You can easily access and install the Appointment Booking template from AppSourc
 
 1. Go to the [Appointment Booking template in AppSource](<https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa-onboardingbuddy?exp=ubp8&tab=Overview>) and select **Get it now**.
 1. Select the developer environment that you prepared for the template.
-   :::image type="content" source="media/install/ob-install-env.png" alt-text="Select the environment in which to install the template.":::
 1. Agree to the *Terms and Privacy* statements by selecting the boxes.
 1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
 

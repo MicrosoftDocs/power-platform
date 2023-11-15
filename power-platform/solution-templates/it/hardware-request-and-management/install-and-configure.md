@@ -190,7 +190,7 @@ To update environment variables, take these steps:
 
 1. Go to Power Apps studio and select the environment you installed the solution in
 1. Select **apps** on the left-side panel.
-1. Select the *Hardware Request canvas app* row, **vertical ellipsis** > **Details** > *Hardware Request Details*. Copy the URL to a notepad.
+1. Select the **Hardware Request canvas app** row, **vertical ellipsis** > **Details** > **Hardware Request Details**. Copy the *URL* to a notepad.
 1. Repeat the same step for the *Hardware Request and Management Model-driven app*.
 1. Select **Solutions** on the left-side panel.
 
@@ -200,8 +200,8 @@ To update environment variables, take these steps:
 
 1. Select **+ New solution** and populate the properties.
 1. Select **Add existing** > **More** > **Environment variable**.
-1. Select both the *Hardware Request and Management* URL and *Hardware Request App* URL variables
-1. Select **Next** and then **Add**
+1. Select both the **Hardware Request and Management URL** and **Hardware Request App URL** variables.
+1. Select **Next** and then **Add**.
 
    > [!NOTE]
    >
@@ -212,16 +212,16 @@ To update environment variables, take these steps:
 1. Select **Add existing** > **More** > **Connection References**
 1. Multiselect the following connection references:
 
-    1. **Hardware Request and Management – [Approvals](/connectors/approvals/)**
-    1. **Hardware Request and Management – [Cards for Power Apps](/connectors/cardsforpowerapps/)**
-    1. **Hardware Request and Management – [Dataverse](/connectors/commondataserviceforapps/)**
-    1. **Hardware Request and Management – [Teams](/connectors/teams/)**
-    1. **Hardware Request and Management – [Office 365 Outlook](connectors/office365/)**
-1. Select **Next** and then **Add**
-1. Select the **Hardware Request and Management URL** environment variable
-1. Select **+ New value** under the *Current Value* section
-1. Paste the *URL value* copied from Step 3 of this section in the current value field and select **Save**
-1. Repeat steps 12-15 of this section for the *Hardware Request App URL* environment variable
+    - **Hardware Request and Management – [Approvals](/connectors/approvals/)**
+    - **Hardware Request and Management – [Cards for Power Apps](/connectors/cardsforpowerapps/)**
+    - **Hardware Request and Management – [Dataverse](/connectors/commondataserviceforapps/)**
+    - **Hardware Request and Management – [Teams](/connectors/teams/)**
+    - **Hardware Request and Management – [Office 365 Outlook](/connectors/office365/)**
+1. Select **Next** and then **Add**.
+1. Select the **Hardware Request and Management URL** environment variable.
+1. Select **+ New value** under the *Current Value* section.
+1. Paste the *URL value* copied from Step 3 of this section in the current value field and select **Save**.
+1. Repeat steps 12-15 of this section for the Hardware Request App URL environment variable.
 
 :::image type="content" source="media/install/hrm-install-variables.png" alt-text="Screenshot of how to set up environment variables for your app.":::
 More information: [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
@@ -260,7 +260,7 @@ More information: [Share a cloud flow](/power-automate/create-team-flows#share-a
 
 ### Turn on cloud flows
 
-To turn on cloud flows that were not on by default when installing the solution from AppSource, perform these steps:
+To turn on cloud flows that were not on by default when installing the solution from AppSource, take these steps:
 
 1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 
@@ -278,7 +278,7 @@ To turn on cloud flows that were not on by default when installing the solution 
 
 1. For each of the Connection References, select to edit the properties and choose the *Connection* in the drop-down list previously created.
 
-1. Go back to *Solutions* in the left-side panel and select the **Hardware Request and Management** solution.
+1. Select **Solutions** in the left-side panel and select the **Hardware Request and Management** solution.
 
 1. Select **Cloud flows**.
 

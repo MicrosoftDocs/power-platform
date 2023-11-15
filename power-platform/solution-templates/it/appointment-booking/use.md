@@ -7,8 +7,11 @@ contributors:
   - tverhasselt
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 11/06/2023
+ms.date: 11/15/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
+
+# Get started using the Appointment Booking template for Power Platform
+
