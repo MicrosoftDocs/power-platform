@@ -107,6 +107,8 @@ End users in your tenant can use conversational and AI plugins in their chats wi
 
 1. Select **Deploy** to enable the app in chats with Microsoft Copilot.
 
+![Deploying the Dynamics 365 and Copilot Studio app](media/copilot-plugins-overview/deploy-dynamics365-and-copilot-studio.png)
+
 ### Enable the Microsoft 365 Copilot setting (admin)
 
 1. Sign in to the Power Platform admin center at https\://admin.powerplatform.microsoft.com with your admin account.
