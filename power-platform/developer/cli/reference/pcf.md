@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 9/18/2023
+ms.date: 11/10/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -93,10 +93,7 @@ Import the Power Apps component framework project into the current Dataverse org
 
 #### `--force-import` `-f`
 
-Force a full update of the control as part of a temporary solution
-
-This parameter requires no value. It's a switch.
-
+**Deprecated**: This parameter is ignored.
 #### `--incremental` `-inc`
 
 Pushes only files which are diifferent using entity updates.
@@ -114,6 +111,10 @@ This parameter requires no value. It's a switch.
 Customization prefix value for the Dataverse solution publisher
 
 **Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and can't start with 'mscrm'.
+
+#### `--solution-unique-name`
+
+The unique name of the solution to add the component to.
 
 #### `--verbosity` `-v`
 

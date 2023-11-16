@@ -1,0 +1,16 @@
+- name: Project "Sophia" (preview)
+  items:
+      - name: Project "Sophia" (preview)
+        items:
+        - name: Overview
+          href: overview.md
+        - name: Explore a topic
+          href: ask-question.md
+        - name: Use the account planning guide
+          href: account-planning-guide.md
+        - name: What is a workspace?
+          href: workspace.md
+        - name: Ask questions using the AI cursor
+          href: ai-cursor.md
+        - name: FAQ about Project "Sophia"
+          href: faq-ps.md 

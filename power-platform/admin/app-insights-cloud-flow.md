@@ -27,19 +27,18 @@ Power Automate telemetry flows into two tables on Application Insights – **Req
 | **Requests**     | Contains *cloud flow runs*                              |
 | **Dependencies** | Contains *cloud flow triggers* and *cloud flow actions* |
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
-
-> [!NOTE]
-> Export of Power Automate and Dynamics 365 Customer Service data is not available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud - High (GCC High), and Department of Defense (DoD), at this time.
 
 > [!IMPORTANT]
-> When this feature transitions to General Availability (GA), the feature is planned for Managed Environments only.  For this preview only, the Managed Environment restriction doesn't apply.
-
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - When this feature transitions to General Availability (GA), the feature is planned for Managed Environments only. For this preview only, the Managed Environment restriction doesn't apply.
 
 While Application Insights capabilities can be used for comprehensive monitoring of your applications, including custom diagnostics, and performance monitoring, this article focuses on how to use the existing features within Application Insights to create monitoring and alerting capabilities for your automation. To learn about how to open and work with Application Insights dashboard, see [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
 
-> [!TIP]
-> Consider bookmarking the selected Application Insights dashboard for fast and easy access to the insights information.
+> [!NOTE]
+> - Export of Power Automate and Dynamics 365 Customer Service data isn't available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud - High (GCC High), and Department of Defense (DoD), currently.
+> - The logs powering the Power Automate telemetry in Application Insights aren't transactional data and hence are not 100% lossless. Small data losses on this telemetry data might happen due to temporary, non-repeating service issues. Flow execution history available within the flow details in the Power Automate portal is transactional, and therefore provides full view of events, in case of transient missing log data on Application Insights.
+> - Consider bookmarking the selected Application Insights dashboard for fast and easy access to the insights information.
 
 ## Monitor cloud flow executions
 

@@ -670,7 +670,7 @@
       "flow": "implicit",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
       "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
-      "description": "Azure Active Directory OAuth2"
+      "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [

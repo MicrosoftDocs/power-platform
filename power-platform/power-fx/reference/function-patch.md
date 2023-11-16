@@ -1,6 +1,6 @@
 ---
-title: Patch function in Power Apps (contains video)
-description: Reference information including syntax and examples for the Patch function in Power Apps.
+title: Patch function (contains video)
+description: Reference information including syntax and examples for the Patch function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Patch function in Power Apps
+# Patch function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Modifies or creates one or more [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources), or merges records outside of a data source.
 
@@ -158,16 +160,16 @@ ForAll(
                 OrderId = A[@OrderId]
             ),
             {
-		OrderName: "val1"
-	    }
-	),
-	Patch(
+      OrderName: "val1"
+       }
+   ),
+   Patch(
             '[dbo].[Orders1]',
             Defaults('[dbo].[Orders1]'),
             {
-		OrderName: "val2"
-	    }
-	)
+      OrderName: "val2"
+       }
+   )
     )
 )
 ```
@@ -203,16 +205,16 @@ ForAll(
                 C.OrderId = A[@OrderId]
             ),
             {
-		OrderName: "val1"
-	    }
-	),
-	Patch(
+      OrderName: "val1"
+       }
+   ),
+   Patch(
             '[dbo].[Orders1]',
             Defaults('[dbo].[Orders1]'),
             {
-		OrderName: "val2"
-	    }
-	)
+      OrderName: "val2"
+       }
+   )
     )
 )
 ```
@@ -242,16 +244,16 @@ ForAll(
                 ThisRecord.OrderId = A[@OrderId]
             ),
             {
-		OrderName: "val1"
-	    }
-	),
-	Patch(
+      OrderName: "val1"
+       }
+   ),
+   Patch(
             '[dbo].[Orders1]',
             Defaults('[dbo].[Orders1]'),
             {
-		OrderName: "val2"
-	    }
-	)
+      OrderName: "val2"
+       }
+   )
     )
 )
 ```

@@ -1,6 +1,6 @@
 ---
-title: Collect, Clear, and ClearCollect functions in Power Apps
-description: Reference information including syntax and examples for the Collect, Clear, and ClearCollect functions in Power Apps.
+title: Collect, Clear, and ClearCollect functions
+description: Reference information including syntax and examples for the Collect, Clear, and ClearCollect functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,13 +17,13 @@ contributors:
   - jorisdg
 ---
 
-# Collect, Clear, and ClearCollect functions in Power Apps
+# Collect, Clear, and ClearCollect functions
 
 Creates and clears [collections](/power-apps/maker/canvas-apps/working-with-data-sources#collections) and adds [records](/power-apps/maker/canvas-apps/working-with-tables#records) to any [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
-## Description
+## Collect
 
-### Collect
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Cards :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 The **Collect** function adds records to a data source. The items to be added can be:
 
@@ -41,7 +41,9 @@ You can also use the **[Patch](function-patch.md)** function to create records i
 
 **Collect** returns the modified data source as a table. **Collect** can only be used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
-### Clear
+## Clear
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
 The **Clear** function deletes all the records of a collection. The columns of the collection will remain.
 
@@ -51,7 +53,9 @@ You can use the **[Remove](function-remove-removeif.md)** function to selectivel
 
 **Clear** has no return value. It can only be used in a behavior formula.
 
-### ClearCollect
+## ClearCollect
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 The **ClearCollect** function deletes all the records from a collection. And then adds a different set of records to the same collection. With a single function, **ClearCollect** offers the combination of **Clear** and then **Collect**.
 

@@ -1,6 +1,6 @@
 ---
 title: "Topic authoring best practices"
-description: "Guidance and  best practices for topic authoring in Power Virtual Agents."
+description: "Guidance and  best practices for topic authoring in Microsoft Copilot Studio."
 author: HenryJammes
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -9,17 +9,31 @@ ms.author: hejammes
 ms.reviewer: iawilt
 ---
 
-# Topic authoring best practices in Power Virtual Agents
+# Topic authoring best practices in Microsoft Copilot Studio
+
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
 
 
 ## Create and organize topics in a way that's manageable and maintainable for your context
 
-Power Virtual Agents offers much flexibility when it comes to topic management. While there's no _one size fits all_, given how topics can be triggered, it's a good practice to distinguish between:
+Microsoft Copilot Studio offers much flexibility when it comes to topic management. While there's no _one size fits all_, it's a good practice to keep in mind the different ways that topics can be triggered:
 > [!div class="checklist"]
 >
-> - **Topics that will trigger based on the user utterance** and the natural language understanding (NLU) model. These can almost be seen as your **entry points topics**. <br> If you have trigger phrases that overlap multiple topics, it's good to have a catch-all topic (or _disambiguation topic_) and then redirect to other topics through slot filling and clarifying questions. Thanks to entity extraction, clarifying questions can be skipped and the conversation will directly flow to the appropriate topic, without further input from the user.
-> - **Topics that will trigger when called from a redirect action**. These can contain conversation and logic nodes, can be called by multiple topics, and can have input and output variables. They're ideally **reusable, bite-size, topics**.
-> - **A topic can also be both**, triggered through intent recognition or by an explicit redirect.
+> - **Topics can trigger based on the user utterance** and the natural language understanding (NLU) model.  
+>   These topics can almost be seen as your **entry points topics**.  
+>   If you have trigger phrases that overlap multiple topics, it's good to have a catch-all topic (or _disambiguation topic_) and then redirect to other topics through slot filling and clarifying questions.  
+>   Thanks to entity extraction, clarifying questions can be skipped and the conversation will directly flow to the appropriate topic, without further input from the user.  
+>  
+> - **Topics can trigger when called from a redirect action**.  
+>   These topics can contain conversation and logic nodes, can be called by multiple topics, and can have input and output variables. They're ideally **reusable, bite-size, topics**.  
+>  
+> - **A topic can also be both**.  
+>   For example, topics triggered through intent recognition or by an explicit redirect.
+>    
+>  - **Topics can be triggered by other events**.  
+>    For example, custom events, inactivity, and so on.  
+
+See [the full list of topic triggers](/power-virtual-agents/authoring-triggers) for more information.
 
 > [!TIP]
 > In the following example, trigger phrases are associated to two main topics, that then break down their logic into multiple topics that are called with redirect actions.
@@ -28,7 +42,7 @@ Power Virtual Agents offers much flexibility when it comes to topic management. 
 >  
 > Thanks to slot filling and entity extraction, if a user says "_I need to unblock my credit card_", the `Card` topic will get triggered and both `Debit/Credit` and `Block/Unblock` questions will be skipped, as the `CardType` and `OperationType` will be deduced from the trigger phrase. That way, the appropriate `Credit Card` child topic will automatically be called, without the user providing any additional input.
 
-![Diagram showing Power Virtual Agents topics being triggered by trigger phrases but also by other topics.](./media/topics/topic-authoring-best-practices.png)
+![Diagram showing Microsoft Copilot Studio topics being triggered by trigger phrases but also by other topics.](./media/topics/topic-authoring-best-practices.png)
 
 ## Create bite-size topics
 
@@ -49,7 +63,7 @@ Whenever conversation messages or logic nodes are shared by multiple topics, it'
 That way, a single update to that topic reflects on all the topics redirecting to it.
 
 > [!TIP]
-> If you call the same Power Automate cloud flows from multiple Power Virtual Agents topics with the same or similar before and after nodes, it's a good idea to group them in a dedicated topic.
+> If you call the same Power Automate cloud flows from multiple Microsoft Copilot Studio topics with the same or similar before and after nodes, it's a good idea to group them in a dedicated topic.
 
 ## Avoid topic overlap
 
@@ -68,7 +82,7 @@ You can avoid these issues by reducing the overlap in intent meaning between the
 > There are multiple ways to monitor topic overlap:
 >
 > - Analyze the user utterances that trigger a "did you mean" topic, as it’s a key indicator that you have overlap
-> - Power Virtual Agents offers a [topic overlap detection](/power-virtual-agents/advanced-ai-features#topic-overlap-detection) feature, that lets bot authors discover overlapping topics to resolve accordingly (deleting/moving trigger phrases between topics).
+> - Microsoft Copilot Studio offers a [topic overlap detection](/power-virtual-agents/advanced-ai-features#topic-overlap-detection) feature, that lets bot authors discover overlapping topics to resolve accordingly (deleting/moving trigger phrases between topics).
 
 ### Create a disambiguation topic
 

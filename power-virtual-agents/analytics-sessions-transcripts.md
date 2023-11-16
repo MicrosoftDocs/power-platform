@@ -15,7 +15,9 @@ ms.collection: virtual-agent
 
 # Work with conversation transcripts
 
-You can view, export and download transcripts of customer interactions with your bot in both Power Apps and Power Virtual Agents. The information that each app exports is slightly different. This article covers downloading conversation transcripts in Power Apps and using them to create reports in Power BI. [Download bot session transcripts in Power Virtual Agents](analytics-sessions.md).
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+You can view, export and download transcripts of customer interactions with your bot in both Power Apps and Microsoft Copilot Studio. The information that each app exports is slightly different. This article covers downloading conversation transcripts in Power Apps and using them to create reports in Power BI. [Download bot session transcripts in Microsoft Copilot Studio](analytics-sessions.md).
 
 By default, Power Apps downloads conversation transcripts from the last 30 days. [You can change the retention period](#change-the-default-retention-period).
 
@@ -24,7 +26,7 @@ By default, Power Apps downloads conversation transcripts from the last 30 days.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 ### View and export bot conversation transcripts from the Power Apps portal
@@ -95,7 +97,7 @@ The conversation transcript is a CSV (comma-separated values) file. The followin
 | ConversationStartTime | The time the conversation started (not the time the transcript record was written to the data store) | `2021-04-19T20:39:09Z` |
 | ConversationTranscript | The unique identifier of the row in the Dataverse table | `28eccb77-xxxx-4a63-985f-ffaaadd6f391` |
 | Metadata | JSON that includes the bot ID, tenant ID, and bot name | `{"BotId": "198eca5f-xxxx-4ae6-8c08-835d884a8688", "AADTenantId": "72f988bf-xxxx-41af-91ab-2d7cd011db47", "BotName": "Test Bot"}` |
-| Name | The name of the custom row that's created from `ConversationId` followed by `BotId` | `8YYe8iif49ZKkycZLe7HUO-o_198eca5f-xxxx-4ae6-8c08-835d884a8688` |
+| Name | The name of the custom row that's created from `ConversationId` followed by `BotId` followed by a `batch number`. The batch number indicates the order when there are multiple analytic sessions for the conversation. Classic bots do not include the batch number. | `8YYe8iif49ZKkycZLe7HUO-o_198eca5f-xxxx-4ae6-8c08-835d884a8688_0` |
 | Bot_ConversationTranscript | The bot ID | `198eca5f-xxxx-4ae6-8c08-835d884a8688` |
 | Created on | The date and time the transcript record was created | `2021-04-20T02:40:13Z` |
 
@@ -130,7 +132,7 @@ The following table describes some of the key fields in the Content JSON:
 
 | **Activity value type** | **Description** |
 | --- | --- |
-| `ConversationInfo`  | Whether the conversation is from the Power Virtual Agents test pane (`isDesignMode`) and the locale of the conversation |
+| `ConversationInfo`  | Whether the conversation is from the Microsoft Copilot Studio test pane (`isDesignMode`) and the locale of the conversation |
 | `CSATSurveyRequest`| The user is presented with a customer satisfaction (CSAT) survey |
 | `CSATSurveyResponse` | The user responds to a CSAT survey |
 | `DialogRedirect` | The user is redirected to another topic |

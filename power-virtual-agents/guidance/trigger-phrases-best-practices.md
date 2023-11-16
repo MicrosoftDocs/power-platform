@@ -1,6 +1,6 @@
 ---
 title: "Trigger phrases best practices"
-description: "Guidance and best practices for topic trigger phrases in Power Virtual Agents."
+description: "Guidance and best practices for topic trigger phrases in Microsoft Copilot Studio."
 author: HenryJammes
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -11,7 +11,9 @@ ms.reviewer: iawilt
 
 # Optimizing trigger phrases and natural language understanding
 
-## What are trigger phrases in Power Virtual Agents
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
+## What are trigger phrases in Microsoft Copilot Studio
 
 - Trigger phrases train your chatbot's natural language understanding (NLU) model.
 
@@ -25,7 +27,7 @@ ms.reviewer: iawilt
 
 ## The importance of the triggering context
 
-Power Virtual Agents NLU behaves differently based on the conversation state, which can sometimes lead to different behaviors for the same user utterance.
+Microsoft Copilot Studio NLU behaves differently based on the conversation state, which can sometimes lead to different behaviors for the same user utterance.
 
 The following are the different conversation states:
 
@@ -69,7 +71,7 @@ When updating trigger phrases, or when merging or splitting topics, there are mu
 > [!div class="checklist"]
 >
 > - An immediate change in chatbot behavior, which can be observed through the "test bot" canvas (for example, a topic that is now triggering or not based on trigger phrase updates).
-> - A change after bot deployment and facing traffic, which translates to higher or lower deflection (non-escalation) rates. This can be observed from the analytics tab in Power Virtual Agents.
+> - A change after bot deployment and facing traffic, which translates to higher or lower deflection (non-escalation) rates. This can be observed from the analytics tab in Microsoft Copilot Studio.
 
 > [!TIP]
 > You can test topic triggering and how your NLU model performs against test data in bulk, by leveraging the [Bot Test Framework](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotTestFramework).

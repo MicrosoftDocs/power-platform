@@ -1,6 +1,6 @@
 ---
-title: Error, IfError, IsError, and IsBlankOrError functions in Power Apps
-description: Reference information including syntax and examples for the Error, IfError, IsError, IsBlankOrError functions in Power Apps.
+title: Error, IfError, IsError, and IsBlankOrError functions
+description: Reference information including syntax and examples for the Error, IfError, IsError, IsBlankOrError functions.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -16,7 +16,9 @@ contributors:
   - jorisdg
 ---
 
-# Error, IfError, IsError, IsBlankOrError functions in Power Apps
+# Error, IfError, IsError, IsBlankOrError functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Detects errors and provides an alternative value or takes action. Create a custom error or pass through an error.
 
@@ -152,8 +154,6 @@ When enabling error handling for existing apps, consider replacing **IsBlank** w
 The return value is a boolean _true_ or _false_.
 
 Using **IsBlankOrError** will prevent any further processing of the error.
-
-## Error
 
 Use the **Error** function to create and report a custom error. For example, you might have logic to determine whether any given value is valid for your context or not&mdash;something not checked for a problem automatically. You can create and return your own error, complete with **Kind** and **Message**, using the same record described above for the **IfError** function.
 
