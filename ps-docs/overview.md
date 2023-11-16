@@ -5,7 +5,7 @@ author: mikkelsen2000
 ms.topic: Overview
 ms.custom: 
 ms.reviewer: mkaur
-ms.date: 11/10/2023
+ms.date: 11/16/2023
 ms.service: power-platform
 ms.author: pemikkel
 search.audienceType:
@@ -24,8 +24,8 @@ Project “Sophia” is a new generation of AI-first business app that helps use
 Project “Sophia” offers an AI- powered, user-friendly research canvas and large language model powered blueprints. The research canvas helps you create exploratory journeys and understand business data with AI-generated charts and insights without the need to manually mine data and create visuals. The app provides quick insights and recommends the next steps. You can start with a question and explore different options and can continue to iterate until you get the best possible outcome. 
 
 > [!IMPORTANT]
-> - Project “Sophia” is only available in the US region.
-> -While Project "Sophia" is based on large language models that work with multiple languages, the product has been validated only in US-English. Other languages are not currently supported.
+> - Project “Sophia” is only available in the United States region.
+> - While Project "Sophia" is based on large language models that work with multiple languages, the product has been validated only in English (United States). Other languages are not currently supported.
 > - This is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - By accessing or using the Project “Sophia”, you accept the [Microsoft Preview Terms of Service](https://go.microsoft.com/fwlink/?linkid=2242556).
 > - Project “Sophia” uses Microsoft Bing and your research queries will be directed to Bing, which is governed by the Bing section of the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
