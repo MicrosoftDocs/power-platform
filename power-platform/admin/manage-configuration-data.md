@@ -68,6 +68,7 @@ The Configuration Migration tool is available as a [NuGet package](https://www.n
 ## Limitations
 
 - Migrating the Calendar entity is not supported.
+- Migrating Image column is not supported.
 
 
 ### See also  
