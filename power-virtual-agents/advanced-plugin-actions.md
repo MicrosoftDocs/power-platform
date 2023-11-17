@@ -60,7 +60,7 @@ Plugins are always executed in the Microsoft Copilot runtime in the end-user con
 
 1. Allow your app to use delegation to [fetch a token on behalf of the user](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory Opens in new window or tab). Be sure to add any necessary scopes.
 
-![Authentication setup](authentication-allow-app-to-use-delegation.png)
+![Authentication setup](media/advanced-plugin-actions/authentication-allow-app-to-use-delegation.png)
 
 ## Add a plugin action
 
