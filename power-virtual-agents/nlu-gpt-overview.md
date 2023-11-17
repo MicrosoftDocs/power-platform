@@ -75,7 +75,7 @@ See the [Create (and edit) with Copilot](nlu-authoring.md) topic for how to set 
 
 ## Next steps
 
-- Get up and running with the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md)
+- Get up and running with the [Quickstart guide for building copilots with generative AI](nlu-gpt-quickstart.md)
 - Dive in and start using the [Boost conversations](nlu-boost-conversations.md) capability in your chatbots
 - Have a conversation with the AI to [Create (and edit) with Copilot](nlu-authoring.md)
 

@@ -3,27 +3,27 @@
     {
       "source_path": "power-virtual-agents/fundamentals-what-is-power-virtual-agents.md",
       "redirect_url": "/power-virtual-agents/fundamentals-what-is-copilot-studio",
-      "redirect_document_id": "true"
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-virtual-agents/gdpr-discovery.md",
       "redirect_url": "/power-virtual-agents/personal-data-discovery",
-      "redirect_document_id": "true"
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-virtual-agents/gdpr-delete.md",
       "redirect_url": "/power-virtual-agents/personal-data-delete",
-      "redirect_document_id": "true"
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-virtual-agents/gdpr-summary.md",
       "redirect_url": "/power-virtual-agents/personal-data-summary",
-      "redirect_document_id": "true"
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-virtual-agents/gdpr-export.md",
       "redirect_url": "/power-virtual-agents/personal-data-export",
-      "redirect_document_id": "true"
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-virtual-agents/advanced-use-dispatcher.md",
