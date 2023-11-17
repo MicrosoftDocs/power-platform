@@ -1,11 +1,7 @@
-- name: Docs
+- name: Learn
   href: /
   topicHref: /
-  items:
-  - name: Power Platform
-    href: /power-platform/
-    topicHref: /power-platform/
-    items:
-    - name: Microsoft Copilot Studio
-      tocHref: /power-virtual-agents/
-      topicHref: /power-virtual-agents/
+  items:  
+  - name: Microsoft Copilot Studio 
+    tocHref: /microsoft-copilot-studio/
+    topicHref: /microsoft-copilot-studio/
