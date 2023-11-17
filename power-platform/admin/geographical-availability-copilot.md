@@ -4,7 +4,7 @@ description: Learn about how to enable data movement across regions for copilots
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/14/2023
+ms.date: 11/17/2023
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -88,3 +88,5 @@ For information about regions supported by Dynamics 365 copilots and generative 
 ## Languages availability
 To learn about the languages that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/en-us/availability-reports/copilotreport/).
 
+## See also
+[Configure data movement across geographic locations for generative AI features outside United States](/microsoft-copilot-studio/manage-data-movement-outside-us)
