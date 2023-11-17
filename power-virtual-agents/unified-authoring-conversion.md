@@ -15,7 +15,7 @@ ms.reviewer: iawilt
 
 The latest Microsoft Copilot Studio release is now here and generally available (GA). This release brings a major update to the Microsoft Copilot Studio product, introducing a significant number of updates and improvements so that organizations can build conversational experiences that are valuable and relevant to their customers and internal users.
 
-As we have released our latest version, this is the time to be considering migrating from your classic experience in Microsoft Copilot Studio to the latest version. At this time we have not released or set any dates when this is recommended to be completed by. This guide aims to help readers understand some of the significant improvements within this release and areas to consider when it comes to your organization migrating your classic Power Virtual Agent experience.
+As we have released our latest version, this is the time to be considering migrating from your classic experience in Microsoft Copilot Studio to the latest version. This guide aims to help readers understand some of the significant improvements within this release and areas to consider when it comes to your organization migrating your classic Power Virtual Agent experience.
 
 ## Upgrading to Microsoft Copilot Studio unified authoring
 
@@ -45,11 +45,11 @@ This feature will clone the selected Microsoft Copilot Studio classic bot and cr
 > [!NOTE]
 > In the future there may be additional tools available to assist with migration of bots and we would appreciate your feedback on this topic. [Please submit feature requests](https://portal.productboard.com/fdeco3ykgkwvchtg4qbdowug/tabs/1-under-consideration)
 
-It should not be understated that while today there is a process of a migration, by migrating your bot from Microsoft Copilot Studio classic to unified authoring, companies are then able to leverage all of the latest features within Microsoft Copilot Studio unified authoring. This includes GPT-enabled features, variable management and Power FX, code view, events and so much more. Companies will be able to take this opportunity to add additional value to your bot and, as a result, an improved experience for your customers.
+By migrating your bot from Microsoft Copilot Studio classic to unified authoring, you can access the latest features within Microsoft Copilot Studio unified authoring. This includes GPT-enabled features, variable management and Power FX, code view, events and so much more. Companies can take this opportunity to add additional value to your bot and, as a result, an improved experience for your customers.
 
 ## What is new or has been updated in the latest Microsoft Copilot Studio 
 
-Below is an overview, and not an exhaustive list, of what has changed in Microsoft Copilot Studio unified authoring. It aims to highlight the significant new capabilities now available within the authoring experience of Microsoft Copilot Studio, or significant changes that should be brought to the attention of readers. 
+The following overview is not an exhaustive list of what's changed in Microsoft Copilot Studio unified authoring. It aims to highlight the significant new capabilities now available within the authoring experience of Microsoft Copilot Studio, or significant changes that should be brought to the attention of readers. 
 
 > [!IMPORTANT]
 > To review more detail about the core capabilities and features of Microsoft Copilot Studio, check out the [Getting Started Guide](fundamentals-get-started.md)
