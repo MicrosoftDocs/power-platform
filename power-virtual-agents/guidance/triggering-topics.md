@@ -1,6 +1,6 @@
 ---
 title: "Triggering topics"
-description: "Guidance for the different ways to trigger topics in Power Virtual Agents."
+description: "Guidance for the different ways to trigger topics in Microsoft Copilot Studio."
 author: HenryJammes
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -10,6 +10,8 @@ ms.reviewer: iawilt
 ---
 
 # Triggering topics
+
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
 
 There are two main ways to trigger a topic:
 > [!div class="checklist"]
@@ -23,7 +25,7 @@ There are two main ways to trigger a topic:
 >
 > - Example: The "_Store Locations_" topic gets triggered based on the user utterance and the matching **trigger phrases**.
 
-![Diagram showing a Power Virtual Agents being triggered with a matching trigger phrase](./media/topics/topic-triggering-with-trigger-phrases.png)
+![Diagram showing a Microsoft Copilot Studio being triggered with a matching trigger phrase](./media/topics/topic-triggering-with-trigger-phrases.png)
 
 > [!TIP]
 > Review [trigger phrases best practices](./trigger-phrases-best-practices.md).
@@ -34,7 +36,7 @@ There are two main ways to trigger a topic:
 >
 > - Example: the "_Request New Location_" topic gets triggered when it is explicitly called from an existing topic, with a **redirect** node.
 
-![Diagram showing a Power Virtual Agents topic being triggered by a redirect from another topic](./media/topics/topic-triggering-with-redirect.png)
+![Diagram showing a Microsoft Copilot Studio topic being triggered by a redirect from another topic](./media/topics/topic-triggering-with-redirect.png)
 
 > [!div class="nextstepaction"]
 > [Define chatbot topics](defining-chatbot-topics.md)

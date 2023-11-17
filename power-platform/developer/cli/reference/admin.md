@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 10/17/2023
+ms.date: 11/10/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,6 +26,9 @@ Work with your Power Platform Admin Account
 
 |Command|Description|
 |---------|---------|
+|[pac admin application list](#pac-admin-application-list)|List Microsoft Entra ID applications registered under your tenant.|
+|[pac admin application register](#pac-admin-application-register)|Register Microsoft Entra ID application with your tenant.|
+|[pac admin application unregister](#pac-admin-application-unregister)|Unregister Microsoft Entra ID application with your tenant.|
 |[pac admin assign-group](#pac-admin-assign-group)|Assign group to target Dataverse environment with specified security role.|
 |[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target Dataverse environment with specified security role.|
 |[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
@@ -45,6 +48,40 @@ Work with your Power Platform Admin Account
 |[pac admin status](#pac-admin-status)|This command lists the status of all the operations in progress.|
 |[pac admin update-tenant-settings](#pac-admin-update-tenant-settings)|Update tenant settings.|
 
+
+## pac admin application list
+
+List Microsoft Entra ID applications registered under your tenant.
+
+[!INCLUDE [admin-application-list-remarks](includes/admin-application-list-remarks.md)]
+
+## pac admin application register
+
+Register Microsoft Entra ID application with your tenant.
+
+[!INCLUDE [admin-application-register-intro](includes/admin-application-register-intro.md)]
+
+### Required Parameters for admin application register
+
+#### `application-id` `-id`
+
+Application Id
+
+[!INCLUDE [admin-application-register-remarks](includes/admin-application-register-remarks.md)]
+
+## pac admin application unregister
+
+Unregister Microsoft Entra ID application with your tenant.
+
+[!INCLUDE [admin-application-unregister-intro](includes/admin-application-unregister-intro.md)]
+
+### Required Parameters for admin application unregister
+
+#### `application-id` `-id`
+
+Application Id
+
+[!INCLUDE [admin-application-unregister-remarks](includes/admin-application-unregister-remarks.md)]
 
 ## pac admin assign-group
 
@@ -275,11 +312,11 @@ Sets the name of the environment.
 
 Sets the environment's region name. [defaults to unitedstates]
 
-#### `--team-id` `-tid`
+#### `--security-group-id` `-sgid`
 
-Team ID as Guid
+Microsoft Entra ID Security Group Id or Microsoft 365 Group Id (required for Teams environment).
 
-**Note**: The Team Id must be a valid Guid.
+**Note**: The Security Group Id must be a valid Guid.
 
 #### `--templates` `-tm`
 
@@ -306,7 +343,7 @@ Environment (ID, org ID, url, unique name, or partial name).
 
 #### `--name` `-n`
 
-Application name to create in Microsoft Entra ID.
+Application name to create in Entra ID.
 
 #### `--role` `-r`
 
