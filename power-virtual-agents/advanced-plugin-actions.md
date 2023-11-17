@@ -48,11 +48,19 @@ The core action is marked up with additional information that describes its purp
 
 Plugins are always executed in the Microsoft Copilot runtime in the end-user context and can't be executed unless authentication has been enabled. Two types of authentication methods are supported.
 
-1. **Integrated Authentication (Teams and Power Apps)**: This authentication setup can be employed if your bot is being consumed from the Teams channel or if you are bot is embedded in any Power Platform surface which uses tokens built with the PPAPI standard.
-
-1. **Manual Authentication (3P bots)**: This authentication method involves the setup of an AAD app and providing the right scope to access Dataverse Org Url. Following 3 steps guide through the Manual Authentication via AAD setup process.
-
 ![Enable AI authentication](media/advanced-plugin-actions/authentication-setup-required.png)
+
+- **Integrated authentication (Teams and Power Apps)**: This authentication setup can be employed if your bot is being consumed from the Teams channel or if you are bot is embedded in any Power Platform surface which uses tokens built with the PPAPI standard.
+
+- **Manual authentication (third-party bots)**: This authentication method involves the setup of an Entra ID connection. To create a manual authentication connection:
+
+1. Set up an [Entra ID app](advanced-end-user-authentication?tabs=preview#authentication-variables).
+
+1. Set up [manual authentication on your Copilot Studio copilot](configuration-authentication-azure-ad). 
+
+1. Allow your app to use delegation to [fetch a token on behalf of the user](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory Opens in new window or tab). Be sure to add any necessary scopes.
+
+![Authentication setup](authentication-allow-app-to-use-delegation.png)
 
 ## Add a plugin action
 
