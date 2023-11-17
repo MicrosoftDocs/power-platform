@@ -47,8 +47,6 @@ The *IT Base* solution contains various components that allow an admin to set up
 
 - **One model-driven app**: **Appointment Booking Administrator** - Where an admin can manage all data
 
-[Screenshot] - AB-ModelDrivenApp
-
 - **Seven tables**:
 
   - **Appointment Booking**
@@ -69,9 +67,9 @@ The *IT Base* solution contains various components that allow an admin to set up
 - **Ten Power Automate flows**:
 
   - **Add New Contact** - Adds new record in Contact table if Requestor isn't added yet
-  - **Appointment Booking Email Notification** – Sends email notifications whenever a Requestor books an appointment
-  - **Contact Outlook Invites** – Creates meeting invites in Outlook whenever a Requestor books an appointment
-  - **Rescheduled Outlook Invite** – Reschedules the appointment
+  - **Appointment Booking Email Notification** – Sends email notifications to both the Requestor and Meeting Provider when an appointment is created
+  - **Contact Outlook Invites** – Creates meeting invites for both Requestor and Meeting Provider when an appointment is booked
+  - **Rescheduled Outlook Invite** – Reschedules the meeting invites in Outlook and sends email notifications to both the Requestor and Meeting Provider
   - **Cancelled Outlook Invites** – Cancels the meeting invites in Outlook and sends email notifications to the Requestor and Meeting Provider
   - **Delete Event child flow** – Connects to Cancelled Outlook Invites
   - **Email Reminder** – Scheduled flow that runs once a day
