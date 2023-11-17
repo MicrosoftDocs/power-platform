@@ -144,7 +144,7 @@ With any application, it is vital that companies ensure there is enough time wit
 
 There are a range of resources available to assist with business application technology deployments, and specifically best practices around conversational projects using Microsoft Copilot Studio. Check out the links below to learn more:
 
-- [Success By Design](/dynamics365/fasttrack/success-by-design-overview)
+- [Success By Design](dynamics365/guidance/implementation-guide/success-by-design)
 
 - [PowerCAT Microsoft Copilot Studio Playbook](https://powervirtualagents.microsoft.com/en-us/blog/announcing-power-virtual-agents-customer-playbook/)
 
