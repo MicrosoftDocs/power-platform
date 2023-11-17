@@ -16,6 +16,8 @@ searchScope:
 
 # Search public data or use a Bing Custom Search for generative answers
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can search publicly available data by using the Bing search engine API. 
 
 You can use the default Bing search configuration, or you can connect to a [Bing Custom Search](https://www.customsearch.ai/), which allows you to build a tailored search for specific content. 

@@ -1,6 +1,6 @@
 ---
-title: Overview of the Power Virtual Agents
-description: Overview of new features and improvements in Power Virtual Agents preview.
+title: Overview of Microsoft Copilot Studio
+description: Overview of new features and improvements in Microsoft Copilot Studio preview.
 ms.date: 03/24/2023
 
 ms.topic: overview
@@ -18,7 +18,9 @@ searchScope:
 
 # Overview
 
-Power Virtual Agents is evolving. The new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer's "pro-code" capabilities with the simplicity of the Power Virtual Agents low-code platform. It's even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot-building studio.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+Microsoft Copilot Studio is evolving. The new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer's "pro-code" capabilities with the simplicity of the Microsoft Copilot Studio low-code platform. It's even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot-building studio.
 
 This evolution brings several exciting new features:
 
@@ -37,7 +39,7 @@ This evolution brings several exciting new features:
 
 Check out the [Quickstart](quickstart-preview.md) for a guided tutorial on how to use the new features.
 
-The Power Virtual Agents preview doesn't yet support some of the features you're used to in Power Virtual Agents, such as agent transfers and bot authoring in Teams.
+The Microsoft Copilot Studio preview doesn't yet support some of the features you're used to in Microsoft Copilot Studio, such as agent transfers and bot authoring in Teams.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

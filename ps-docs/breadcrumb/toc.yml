@@ -1,3 +1,7 @@
-- name: '<please enter product name here>'
-  tocHref: /
+- name: Learn
+  href: /
   topicHref: /
+  items:  
+  - name: Project “Sophia” 
+    tocHref: /project-sophia/
+    topicHref: /project-sophia/overview
