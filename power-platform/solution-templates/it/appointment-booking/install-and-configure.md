@@ -138,7 +138,40 @@ You also have the option to download *managed* or *unmanaged* solution files to 
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
-## Step 4: Assign security roles
+## Step 4: Create shared calendar
+
+As an Outlook admin, take these steps to create a shared Outlook calendar and set users up as Meeting Providers:
+
+1. Open your organization's Outlook app.
+1. Go to the **calendar icon** on the left-side panel.
+1. Select **Add calendar**.
+1. Select **Create blank calendar**.
+1. Enter a name for the new shared calendar.
+1. Add the new calendar to **Other calendars**.
+:::image type="content" source="media/install/ab-install-cal.png" alt-text="Screenshot of setting up a shared Outlook calendar for appointment bookings.":::
+1. Select **Save**.
+1. Select **Share**.
+1. Search for the email or name of a user who needs to be set up as a Meeting Provider.
+1. Select **Can edit** for permission.
+1. Select **Save**.
+1. Select **Share**.
+1. Repeat steps 9-11 until all intended users who need to be set up as Meeting Providers are granted access with edit permissions to the shared calendar.
+1. Once all Meeting Providers have been set up, select the **X** to close the dialog box and return to the calendar.
+
+More information: [Create, view, or delete a calendar group](<https://support.microsoft.com/office/create-view-or-delete-a-calendar-group-04fc64f2-b658-450b-8dce-dd27ed660570>)
+
+## Step 5: Update environment variable
+
+Environment variables support your application lifecycle management (ALM) strategy as you migrate the template across environments. Environment variables store keys and values for information that is contextual to the environment the solution is in. Take these steps to update an environment variable for the Appointment Booking solution in Power Apps.
+
+1. Go to Go to Power Apps maker portal and select the environment that contains the Appointment Booking solution.
+1. Select the Appointment Booking solution.
+1. Go to **Environment Variable**.
+1. Select the *Shared Calendar Name* or select the three dots and select **Edit**.
+1. On Default Value, enter the shared calendar name created in Outlook.
+1. Select **Save**.
+
+## Step 6: Assign security roles
 
 Set up security roles in your solutions so admins can manage access to and the experiences in the app.
 
@@ -168,7 +201,7 @@ More information:
 - [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users)
 - [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
 
-## Step 5: Set cloud flows to *on*
+## Step 7: Set cloud flows to *on*
 
 Open the newly installed Appointment Booking solutions and verify that the cloud flows are set to the *on* status. If not, turn the status to *on*.
 
@@ -178,7 +211,7 @@ Open the newly installed Appointment Booking solutions and verify that the clo
 1. Select *each cloud flow* to verify that it is turned on.
 1. Select **Turn on** on the command bar if the flow is not already set to *on*.
 
-## Step 6: Share the apps
+## Step 8: Share the apps
 
 Take the following steps to share the apps with your users:
 
@@ -205,7 +238,20 @@ Take the following steps to share the apps with your users:
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
-## Step 7: Turn on Auditing
+## Step 9: Enable Copilot
+
+Microsoft Copilot for model-driven apps in Power Apps is a next-generation AI assistant for app users to get insights about the data in their apps through conversation in natural language. As an Appointment Booking admin, you can leverage Copilot to help you get insights on appointment booking data while taking action. Follow these steps to turn Copilot on within your environment:
+
+1. [Go to Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. Select **Environments** on the left-side panel and then select the environment where the solution was installed.
+1. Ensure the environment *Release Channel* is set to **Monthly** channel following the [Changing release channels for model-driven apps guidance](/power-apps/maker/model-driven-apps/channel-change).
+1. Select **Settings**.
+1. Expand the *Product* section and select **Features**.
+1. Underneath the Copilot section, change the *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**.
+
+More information: [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
+
+## Step 10: Turn on Auditing
 
 While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created/updated records in the future.
 

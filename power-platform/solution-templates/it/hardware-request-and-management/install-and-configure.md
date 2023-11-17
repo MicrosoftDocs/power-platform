@@ -188,7 +188,7 @@ Additionally, connection references allow makers to configure flows that allow t
 
 To update environment variables, take these steps:
 
-1. Go to Power Apps studio and select the environment you installed the solution in
+1. Go to Power Apps maker portal and select the environment that contains the Hardware Request and Management solutions.
 1. Select **apps** on the left-side panel.
 1. Select the **Hardware Request canvas app** row, **vertical ellipsis** > **Details** > **Hardware Request Details**. Copy the *URL* to a notepad.
 1. Repeat the same step for the *Hardware Request and Management Model-driven app*.
@@ -366,12 +366,12 @@ More information: [Configure Dataverse search to improve search results and perf
 
 Copilot for model-driven apps in Power Apps is a next-generation AI assistant for app users to get insights about the data in their apps through conversation in natural language. As a hardware request and management program administrator or reviewer, leverage Copilot to help you get insights on the hardware request and asset data while taking action. Follow these steps to turn Copilot on within your environment:
 
-1. [Go to Power Platform admin center](https://admin.powerplatform.microsoft.com/home)
-1. Select **Environments** on the left-side panel and then select the environment where the solution was installed
-1. Ensure the environment *Release Channel* is set to **Monthly** channel following the [Changing release channels for model-driven apps guidance](/power-apps/maker/model-driven-apps/channel-change)
-1. Select the **Settings** button at the top of the screen
-1. Expand the *Product* section and select **Features**
-1. Underneath the Copilot section, change the *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**
+1. [Go to Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. Select **Environments** on the left-side panel and then select the environment where the solution was installed.
+1. Ensure the environment *Release Channel* is set to **Monthly** channel following the [Changing release channels for model-driven apps guidance](/power-apps/maker/model-driven-apps/channel-change).
+1. Select **Settings**.
+1. Expand the *Product* section and select **Features**.
+1. Underneath the Copilot section, change the *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**.
 
 More information: [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
 
