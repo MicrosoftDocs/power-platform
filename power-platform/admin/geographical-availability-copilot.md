@@ -88,5 +88,5 @@ For information about regions supported by Dynamics 365 copilots and generative 
 ## Languages availability
 To learn about the languages that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/en-us/availability-reports/copilotreport/).
 
-## See also
+### See also
 [Configure data movement across geographic locations for generative AI features outside United States](/microsoft-copilot-studio/manage-data-movement-outside-us)
