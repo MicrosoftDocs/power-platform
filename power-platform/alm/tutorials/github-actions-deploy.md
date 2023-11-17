@@ -8,7 +8,6 @@ ms.author: pemikkel
 ms.custom: ""
 ms.date: 10/14/2020
 ms.reviewer: "pehecke"
-
 ms.topic: "tutorial"
 search.audienceType: 
   - maker
@@ -159,8 +158,8 @@ In this section, we will call the reusable workflow on the [release event](https
 4. Update the following variables in the new workflow file:
     - Update `<BUILD_ENVIRONMENT>` with the URL for the build environment you are using to generate the managed solution. For example: `https://poweractionsbuild.crm.dynamics.com`.
     - Update `<PROD_ENVIRONMENT>` with the URL for the production environment you are deploying to. For example: https://poweractionsprod.crm.dynamics.com.
-    - Update `<APP_ID>` with the Application (Client) ID that can be found in the [App registrations blade of the Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_Microsoft Entra ID_RegisteredApps/ApplicationsListBlade) by clicking into the registration created previously in this tutorial.
-    - Update `<TENANT_ID>` with the Directory (tenant) ID that can be found in the [App registrations blade of the Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_Microsoft Entra ID_RegisteredApps/ApplicationsListBlade) by clicking into the registration created previously in this tutorial.
+    - Update `<APP_ID>` with the Application (Client) ID that can be found in the [App registrations blade of the Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) by clicking into the registration created previously in this tutorial.
+    - Update `<TENANT_ID>` with the Directory (tenant) ID that can be found in the [App registrations blade of the Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) by clicking into the registration created previously in this tutorial.
 
 5. Commit the changes. Choose **Start commit** and then add a title (optional) and description (optional). Next, select **Commit new file**.
 
