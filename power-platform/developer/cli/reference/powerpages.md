@@ -27,7 +27,6 @@ Commands for working with Power Pages website.
 |Command|Description|
 |---------|---------|
 |[pac powerpages bootstrap-migrate](#pac-powerpages-bootstrap-migrate)|Migrates HTML code from bootstrap V3 to V5.|
-|[pac powerpages datamodel-migrate](#pac-powerpages-datamodel-migrate)|Manage data model migration for your Power Pages website.|
 |[pac powerpages download](#pac-powerpages-download)|Download Power Pages website content from the current Dataverse environment.|
 |[pac powerpages list](#pac-powerpages-list)|List all Power Pages websites from the current Dataverse environment.|
 |[pac powerpages upload](#pac-powerpages-upload)|Upload Power Pages website content to current Dataverse environment.|
@@ -47,58 +46,6 @@ Migrates HTML code from bootstrap V3 to V5.
 Path of website content.
 
 [!INCLUDE [powerpages-bootstrap-migrate-remarks](includes/powerpages-bootstrap-migrate-remarks.md)]
-
-## pac powerpages datamodel-migrate
-
-Manage data model migration for your Power Pages website.
-
-[!INCLUDE [powerpages-datamodel-migrate-intro](includes/powerpages-datamodel-migrate-intro.md)]
-
-
-### Required Parameters for powerpages datamodel-migrate
-
-#### `--templateName` `-t`
-
-Name of the template for the site being migrated.
-
-#### `--webSiteId` `-id`
-
-Power Pages website ID to update the site.
-
-
-### Optional Parameters for powerpages datamodel-migrate
-
-#### `--checkMigrationStatus` `-s`
-
-To check the status of the site with migration in progress.
-
-This parameter requires no value. It's a switch.
-
-#### `--downloadCustomizationReportPath` `-p`
-
-Local path to store the site customization report.
-
-#### `--mode` `-m`
-
-Choose from configurationData / configurationDataRefrences / all - based on your requirement.
-
-#### `--portalId` `-pid`
-
-Portal ID for the website under migration.
-
-#### `--revertToStandardDataModel` `-r`
-
-Revert site from enhanced to standard data model.
-
-This parameter requires no value. It's a switch.
-
-#### `--updateDataModelVersion` `-u`
-
-Update data model version for the site once the data is migrated successfully.
-
-This parameter requires no value. It's a switch.
-
-[!INCLUDE [powerpages-datamodel-migrate-remarks](includes/powerpages-datamodel-migrate-remarks.md)]
 
 ## pac powerpages download
 

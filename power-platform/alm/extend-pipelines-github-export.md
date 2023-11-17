@@ -38,11 +38,11 @@ The following workflow inputs are required or optional:
 
 ## Workflow secrets
 
-The following secrets are required to connect to Dataverse using an Application User configured in Dataverse and in Azure Active Directory (AD). Configure these secrets in the GitHub repository settings.
+The following secrets are required to connect to Dataverse using an Application User configured in Dataverse and in Microsoft Entra ID (AD). Configure these secrets in the GitHub repository settings.
 
-- `CLIENT_ID`: The client ID of the registered Azure AD application.
-- `TENANT_ID`: The tenant ID of the Azure AD directory associated with the Azure AD application.
-- `CLIENT_SECRET`: The client secret of the registered Azure AD application.
+- `CLIENT_ID`: The client ID of the registered Microsoft Entra application.
+- `TENANT_ID`: The tenant ID of the Microsoft Entra directory associated with the Microsoft Entra application.
+- `CLIENT_SECRET`: The client secret of the registered Microsoft Entra application.
 
 For more information see [Creating and using encrypted secrets](https://docs.github.com/actions/reference/encrypted-secrets) and [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
 
