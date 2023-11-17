@@ -103,3 +103,6 @@ Disable data movement across geographic locations by following these steps:
 6.  Select **Save**.
 
 After you remove your consent, the status on the **Generative AI features** card shows **Not allowed**, disabling Copilot Studio generative AI features in the environment.
+
+### See also
+[Enable copilots and generative AI features](../admin/geographical-availability-copilot.md)
