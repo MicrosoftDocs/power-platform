@@ -386,7 +386,7 @@ While not required, we recommend enabling the audit setting in your environment 
 
 :::image type="content" source="media/install/hrm-install-audit.png" alt-text="Screenshot of how to enable auditing.":::
 
-## Step 11: String localization administration (optional)
+## Step 11: Support more languages (optional)
 
 All fields are globalized so that they display date, time and number formats according to your browser's language setting. All strings in the Hardware Request canvas app are defaulted to English. However, the canvas apps are localization ready. This means all Text, Accessible Label, Tool Tip, HintText, InputPlaceHolderText, and Notifications have Power Fx functions built in to check whether a localized string is present for the user's logged-in browser language code. These strings are administered and maintained via one of the administrator apps. The most efficient way to load and maintain these values is by using the Export to Excel Online capability available in the administrator app in bulk rather than manually entering each one.  
 

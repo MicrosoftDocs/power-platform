@@ -97,18 +97,18 @@ There are two solution installation options available for you to consider:
 
 ### Install from AppSource
 
-You can easily access and install the Appointment Booking template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
+You can access and install the Appointment Booking template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Appointment Booking template in AppSource](<https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa-onboardingbuddy?exp=ubp8&tab=Overview>) and select **Get it now**.
+1. Go to the [Appointment Booking template](<https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa-onboardingbuddy?exp=ubp8&tab=Overview>) in AppSource and select **Get it now**.
 1. Select the developer environment that you prepared for the template.
-1. Agree to the *Terms and Privacy* statements by selecting the boxes.
+1. Agree to the *Terms and Privacy* statements by checking the boxes.
 1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
 
 > [!IMPORTANT]
 > Two solutions are always installed in your environment:
 >
-> - **IT Base**. Contains common foundational components that all information technology (IT) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-> - **Appointment Booking**. Contains all the components needed to enable the implementation of the Appointment Booking program within an organization.
+> - **IT Base**. Contains components that enable localization capabilities. By sharing the components across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Appointment Booking**. Contains all the necessary components to enable the implementation of the Appointment Booking program within an organization.
 
 ### Download and manually install solution files
 
@@ -184,43 +184,34 @@ Take the following steps to share the apps with your users:
 
 1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 
-1. Go back to *Solutions* and select the **Appointment Booking** solution.
+1. Select **Solutions** and select the **Appointment Booking** solution.
 
-1. Select **Apps**
+1. Select **Apps**.
 
-1. Select the **Appointment Booking app** row and then the **ellipsis** (3 vertical dots)
+1. Select the **Appointment Booking app** row and then the **ellipsis** (3 vertical dots).
 
-1. Select **Share**
+1. Select **Share**.
 
-1. Search for and add the users with whom you want to share the app.
-    - For users who should be able to edit the app, select the *Co-owner* box.
+1. Search for and add the users you want to share the app with.
+    - For users who should be able to edit the app, select the **Co-owner** box.
     - For regular users of the app, leave that checkbox empty.
-    - If everyone in the organization should be able to use the app, select *Everyone* in the *Enter a name* box.
+    - If everyone in the organization should be able to use the app, select **Everyone** in the *Enter a name* box.
 1. In the *Data permission* area, you can select roles from a dropdown list. It's next to the Microsoft Dataverse tables that the Appointment Booking app uses. Be sure to select the correct Appointment Booking role (Administrator or User) for each user.
 1. Add an optional email message.
 1. Select **Share**.
 
 > [!NOTE]
->If you didn't install the Kudos solution and it hasn't been shared with you, then you'll have to go to the Kudos solution and find the app there.
+>If you didn't install the Appointment Booking solution and it isn't shared with you, go to the Appointment Booking solution in the [Power Apps maker portal](https://make.preview.powerapps.com/) to find the app.
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
-## Step 7: Populate the tables
-
-Populate the following tables by accessing the Appointment Booking Administrator app based on your organization requirements:
-
-- Appointment Types
-- Locations
-- Room Numbers
-- Localizations
-
-## Step 8: Turn on Auditing
+## Step 7: Turn on Auditing
 
 While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created/updated records in the future.
 
 Take these steps to enable the audit settings:
 
-1. Go to [Power Platform admin center](https://gcc.admin.powerplatform.microsoft.us/home)
+1. Go to [Power Platform admin center](https://gcc.admin.powerplatform.microsoft.us/home).
 1. Select **Environments** on the left-side menu and select the *environment* where the solution is installed.
 1. Select **Settings**.
 1. Select **Start Auditing**.

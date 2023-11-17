@@ -17,7 +17,7 @@ As an administrator, go to the *Appointment Booking Admin app* to set up and man
 
 :::image type="content" source="media/manage/ab-manage-apptref.png" alt-text="Screenshot of setting up appointment locations,types, and room numbers in the Appointment Booking Admin app.":::
 
-You can also support multiple languages by localizing application strings in the Appointment Booking Admin app.
+You can also support multiple languages by localizing application strings, view data, and monitor for errors in the Appointment Booking Admin app.
 
 ## Set up appointment location options
 
