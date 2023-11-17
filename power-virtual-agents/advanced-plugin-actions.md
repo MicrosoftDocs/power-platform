@@ -54,9 +54,9 @@ Plugins are always executed in the Microsoft Copilot runtime in the end-user con
 
 - **Manual authentication (third-party bots)**: This authentication method involves the setup of an Entra ID connection. To create a manual authentication connection:
 
-1. Set up an [Entra ID app](advanced-end-user-authentication?tabs=preview#authentication-variables).
+1. Set up an [Entra ID app](advanced-end-user-authentication.md?tabs=preview#authentication-variables).
 
-1. Set up [manual authentication on your Copilot Studio copilot](configuration-authentication-azure-ad). 
+1. Set up [manual authentication on your Copilot Studio copilot](configuration-authentication-azure-ad.md). 
 
 1. Allow your app to use delegation to [fetch a token on behalf of the user](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory Opens in new window or tab). Be sure to add any necessary scopes.
 
