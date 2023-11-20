@@ -22,8 +22,8 @@ The templates are built for centralized teams to locally install, extend, and de
 
 Enterprise templates for Power Platform help you:
 
-- See how your system's data can be easily accessed and organized in a streamlined view in Power Apps.
-- Realize how workflows can be automated by Power Automate cloud flows operating behind the scenes.
+- Access and organize your data in a streamlined view in Power Apps.
+- Automate workflows with Power Automate cloud flows operating behind the scenes.
 
 Additionally, you can:
 
