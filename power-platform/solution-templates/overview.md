@@ -58,7 +58,7 @@ Be sure to check back often for new templates that become available.
       ![Hardware Request and Management](media/overview/hrm-sq-icon.png "Hardware Request and Management") <br> Manage hardware requests and assets <br> [Hardware Request and Management Learn documentation](https://aka.ms/LearnHardwareRequestManagement) <br>[Hardware Request and Management on AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
    :::column-end:::
    :::column span="":::
-      ![Onboarding Buddy](media/overview/ab-icon-304.png "Appointment Booking") <br> Organize the appointment booking process <br> [Appointment Booking Learn documentation](https://aka.ms/LearnAppointmentBooking) <br> [Appointment Booking on AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
+      ![Appointment Booking](media/overview/ab-icon-304.png "Appointment Booking") <br> Organize the appointment booking process <br> [Appointment Booking Learn documentation](https://aka.ms/LearnAppointmentBooking) <br> [Appointment Booking on AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
    :::column-end:::
 :::row-end:::
 
