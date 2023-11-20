@@ -1,11 +1,11 @@
 ---
 title: Appointment Booking template for Power Platform
-description: Learn about the Appointment Booking template for Power Platform.
+description: Learn about the Appointment Booking template for Power Platform and how it can organize the appointment booking process for your organization.
 author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 11/07/2023
+ms.date: 11/20/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -14,14 +14,15 @@ ms.subservice: solution-templates
 # Appointment Booking template for Power Platform
 
 The Appointment Booking template helps your organization set up, manage, and automate appointment bookings. One group of people such as students, employees, or club members can easily and clearly book appointments with people such as professors, and organization leaders, or scheduled sessions.
+:::image type="content" source="media/overview/ab-canvas-model.png" alt-text="Screenshot of the Appointment Booking canvas app's Appointment Slot's screen and a screenshot of the model-driven app with the Microsoft Copilot panel open.":::
 
 The Appointment Booking app allows:
 
-- App manager to create appointment availability
-- Users to book the availabilities
+- Meeting Providers to create appointment availability
+- Requestors to book the availabilities
 - Automated email notifications to keep everyone in sync
 
-The Appointment Booking AppSource template package consists of two solutions:
+The Appointment Booking template package consists of two solutions:
 
 **IT Base**: Contains components that enable localization capabilities. By sharing the components across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
 
