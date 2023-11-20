@@ -27,7 +27,7 @@ The Awards and Recognition AppSource template package consists of two solutions:
 
 - **Awards and Recognition** - Contains all the components needed to enable the Awards & Recognition experience in your organization.
 
-You can access the Awards and Recognition solution template on [AppSource](https://aka.ms/AccessAwardsAndRecognitionTemplate).
+You can access the Awards and Recognition template on AppSource at: <https://aka.ms/AccessAwardsAndRecognitionTemplate>
 
 ## Employee Experience base solution components
 
