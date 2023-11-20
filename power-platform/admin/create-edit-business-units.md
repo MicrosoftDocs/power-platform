@@ -4,7 +4,7 @@ description: Learn how to create or edit business units
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/08/2023
+ms.date: 11/20/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -119,11 +119,11 @@ Make sure you have the System Administrator permission to update the setting.
 
   1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
      
-  2. Select the checkbox for a user name and click on the user.
+  2. Select the checkbox for a user name and select the user.
 
-  3. On the user form, click on the ellipsis **'...'**, and click on **Manage user in Dynamics 365**.
+  3. On the user form, select the ellipsis **...** (the ellipsis), and then select **Manage user in Dynamics 365**.
   
-     For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Security** > **Users**.
+     For [Unified Interface](about-unified-interface.md), select **Settings** (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner and then select **Advanced Settings** > **Settings** > **Security** > **Users**.
 
      On the legacy **User detail** form.
   >      
