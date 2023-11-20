@@ -1,6 +1,6 @@
 ---
 title: "Create conversational chatbots"
-description: "You can easily create new bots using the bot-builder wizard in Power Virtual Agents."
+description: "You can easily create new bots using the bot-builder wizard in Microsoft Copilot Studio."
 keywords: "PVA"
 ms.date: 03/24/2023
 ms.topic: article
@@ -14,20 +14,22 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Create and delete Power Virtual Agents bots
+# Create and delete Microsoft Copilot Studio bots
 
-To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+To help get you started and tailor the bot to your specific needs, Microsoft Copilot Studio lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Web app](#tab/web)
 
-You can only see bots in the version of Power Virtual Agents where you created them.  
+You can only see bots in the version of Microsoft Copilot Studio where you created them.  
 
-This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at https://web.powerva.microsoft.com.
+This means if you create a bot with the Microsoft Copilot Studio app in Microsoft Teams, you will not see the bot in the web app of Microsoft Copilot Studio at https://web.powerva.microsoft.com.
 
 > [!WARNING]
 > New bots are configured with "No authentication" and without [web channel security](configure-web-security.md), and can be accessed by anyone with a link to it. Ensure you have the right [authentication](configuration-end-user-authentication.md), [access](configuration-end-user-authentication.md), and [security](configure-web-security.md) configurations set for your particular usage.
@@ -35,9 +37,9 @@ This means if you create a bot with the Power Virtual Agents app in Microsoft Te
 ### Create a bot
 
 > [!NOTE]
-> If this is your first time creating a bot in Power Virtual Agents, please see [Create your first bot](fundamentals-get-started.md)
+> If this is your first time creating a bot in Microsoft Copilot Studio, please see [Create your first bot](fundamentals-get-started.md)
 
-1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/).
+1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/).
 
 1. In the navigation menu select **Create**. You can also select **Home** then select **Create a bot**.
 
@@ -60,7 +62,7 @@ This means if you create a bot with the Power Virtual Agents app in Microsoft Te
 
 You can delete bots to remove them from your environment.
 
-1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/).
+1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/).
 
 1. In the navigation menu, select **Chatbots**. Select the bot you want to delete, then select **Delete**.
 
@@ -82,17 +84,17 @@ You will need to [create a new environment](environments-first-run-experience.md
 
 # [Teams](#tab/teams)
 
-You can create chatbots in the Power Virtual Agents app in Teams and then share them with other people in your team, company, or organization.
+You can create chatbots in the Microsoft Copilot Studio app in Teams and then share them with other people in your team, company, or organization.
 
-The very first step is to add the Power Virtual Agents app. Then you can create bots.
+The very first step is to add the Microsoft Copilot Studio app. Then you can create bots.
 
 > [!NOTE]
-> You can only see bots in the version of Power Virtual Agents where you created them.  
+> You can only see bots in the version of Microsoft Copilot Studio where you created them.  
 >
-> This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com).
+> This means if you create a bot with the Microsoft Copilot Studio app in Microsoft Teams, you will not see the bot in the web app of Microsoft Copilot Studio at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com).
 
 
-### Add the Power Virtual Agents app in Microsoft Teams
+### Add the Microsoft Copilot Studio app in Microsoft Teams
 
 1. Select **Apps** at the bottom of the side pane in Microsoft Teams
 
@@ -102,7 +104,7 @@ The very first step is to add the Power Virtual Agents app. Then you can create 
 
     :::image type="content" source="media/authoring-first-bot-teams/first-bot-add-app.png" alt-text="Screenshot of the app search box.":::
 
-1. To make it easier to get back to, select and hold (or right-click) the Power Virtual Agents icon and select **Pin**.
+1. To make it easier to get back to, select and hold (or right-click) the Microsoft Copilot Studio icon and select **Pin**.
 
     :::image type="content" source="media/authoring-first-bot-teams/first-bot-pin.png" alt-text="Screenshot of the popup menu with options to learn about the app, pin it, or uninstall it.":::
 
@@ -117,7 +119,7 @@ All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/g
 
 The first time you create a bot in a team, it will take 1 to 10 minutes to build the necessary systems in the backend, but every bot after that will take much less time (around 1 or 2 minutes).
 
-1. Select the **Power Virtual Agents** icon to open the app.
+1. Select the **Microsoft Copilot Studio** icon to open the app.
 1. You can create a new bot two ways:
    - Select **Start now** and then choose the team you want to use.
    - Go to the **Chatbots** tab, select the team you want to use, and then **New chatbot**.
