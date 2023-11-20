@@ -54,7 +54,7 @@ It's important to have a cohesive environment and data policy strategy for enter
 
 - **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
-  - A Power Platform environment with a Dataverse database installed is set up
+  - A Power Platform environment is set up with a Dataverse database
   - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
   More information: [Environments overview](/power-platform/admin/environments-overview)
@@ -234,9 +234,9 @@ Share the Onboarding Buddy app with the users in your organization.
 >
 > Share the app with the Onboarding Buddy program manager(s) first so they can configure the app to meet your organization's needs. Once that configuration is complete, deploy the app to the wider organization.
 
-1. Go to [Power Apps](https://make.powerapps.com/).
-1. Select **Apps** on the left-side panel.
-1. Select the **three dots** to the right of the app you want to share.
+1. Go to [Power Apps maker portal](https://make.powerapps.com/) and select the environment that contains the solution.
+1. Select **Solutions** on the left-side panel and then select **Onboarding Buddy app** from the list.
+1. Select the **three dots** to the right of the Onboarding Buddy app.
 1. Select **Share**.
 1. Search for and select the appropriate security group (or individuals) that contains the members who need access to the app. You can also verify user security roles from the *Share* screen.
 1. Select **Share**. You can also choose whether or not to include an email invitation (not required).

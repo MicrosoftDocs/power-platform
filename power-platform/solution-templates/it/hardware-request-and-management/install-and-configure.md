@@ -58,7 +58,7 @@ It's important to have a cohesive environment and data policy strategy for enter
 
 - **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
-  - A Power Platform Environment with a Dataverse database installed is set up
+  - A Power Platform environment is set up with a Dataverse database
   - Environment Maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
     More information: [Environments overview](/power-platform/admin/environments-overview)
@@ -188,7 +188,7 @@ Additionally, connection references allow makers to configure flows that allow t
 
 To update environment variables, take these steps:
 
-1. Go to Power Apps maker portal and select the environment that contains the Hardware Request and Management solutions.
+1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment that contains the Hardware Request and Management solutions.
 1. Select **apps** on the left-side panel.
 1. Select the **Hardware Request canvas app** row, **vertical ellipsis** > **Details** > **Hardware Request Details**. Copy the *URL* to a notepad.
 1. Repeat the same step for the *Hardware Request and Management Model-driven app*.
@@ -234,7 +234,7 @@ Some of the cloud flows may be off by default because the environment variables 
 
 Perform these steps to ensure certain flows run under the user's context:
 
-1. Go to Power Apps maker portal and select the environment you installed the solution in
+1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in
 1. Select **Solutions** on the left-side panel and select the **Hardware Request and Management** solution
 1. Select **Cloud flows**
 1. Take these steps for each flow:
@@ -308,7 +308,7 @@ Take the following steps to share the Hardware Request app with users:
 
 1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 
-1. Go back to *Solutions* and select the **Hardware Request and Management** solution.
+1. Select **Solutions** on the left-side panel and select the **Hardware Request and Management** solution from the list.
 
 1. Select **Apps**
 

@@ -54,7 +54,7 @@ It's important to have a cohesive environment and data policy strategy for enter
 
 - **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
-  - A Power Platform environment with a Dataverse database installed is set up
+  - A Power Platform environment is set up with a Dataverse database
   - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
   More information: [Environments overview](/power-platform/admin/environments-overview)
@@ -164,7 +164,7 @@ More information: [Create, view, or delete a calendar group](<https://support.mi
 
 Environment variables support your application lifecycle management (ALM) strategy as you migrate the template across environments. Environment variables store keys and values for information that is contextual to the environment the solution is in. Take these steps to update an environment variable for the Appointment Booking solution in Power Apps.
 
-1. Go to Go to Power Apps maker portal and select the environment that contains the Appointment Booking solution.
+1. Go to Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment that contains the Appointment Booking solution.
 1. Select the Appointment Booking solution.
 1. Go to **Environment Variable**.
 1. Select the *Shared Calendar Name* or select the three dots and select **Edit**.
@@ -204,7 +204,8 @@ More information:
 
 Open the newly installed Appointment Booking solutions and verify that the cloud flows are set to the *on* status. If not, turn the status to *on*.
 
-1. Select **Solutions** on left-side panel.
+1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left-side panel.
 1. Select the **Appointment Booking** solution from the list.
 1. Select **Cloud flows** on the left-side panel.
 1. Select *each cloud flow* to verify that it is turned on.
@@ -215,15 +216,10 @@ Open the newly installed Appointment Booking solutions and verify that the clo
 Take the following steps to share the apps with your users:
 
 1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
-
-1. Select **Solutions** and select the **Appointment Booking** solution.
-
+1. Select **Solutions** on the left-side panel and select the **Appointment Booking** solution from the list.
 1. Select **Apps**.
-
 1. Select the **Appointment Booking app** row and then the **ellipsis** (3 vertical dots).
-
 1. Select **Share**.
-
 1. Search for and add the users you want to share the app with.
     - For users who should be able to edit the app, select the **Co-owner** box.
     - For regular users of the app, leave that checkbox empty.

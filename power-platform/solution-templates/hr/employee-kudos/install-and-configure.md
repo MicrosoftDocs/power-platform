@@ -52,7 +52,7 @@ It's important to have a cohesive environment and data policy strategy and setup
 
 - **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
-  - A Power Platform environment with a Dataverse database installed is set up
+  - A Power Platform environment is set up with a Dataverse database
   - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
 
   More information: [Environments overview](/power-platform/admin/environments-overview)
@@ -273,14 +273,15 @@ To create your own badges, refer to [Create Custom Badges](manage.md#create-cust
 
 ## Step 10: Share the App
 
-1. Select **Apps** in the environment that Kudos is installed in.
-1. Locate the *Kudos App*.
-1. Select the **three dots** to the right of the Kudos app.
+1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment that contains the solution.
+1. Select **Solutions** on the left-side panel and select the **Kudos** solution from the list.
+1. Select **Apps** on the left-side panel.
+1. Locate the *Kudos App* and select the **three dots** to the right.
 1. Select **Share**.
 1. Search for and add the users with whom you want to share the app.
-    - For users who should be able to edit the app, select the *Co-owner* box.
+    - For users who should be able to edit the app, select the **Co-owner** box.
     - For regular users of the app, leave that checkbox empty.
-    - If everyone in the organization should be able to use the app, select *Everyone* in the *Enter a name* box.
+    - If everyone in a security group should be able to use the app, select *Everyone* in the *Enter a name* box.
 1. In the *Data permission* area, you can select roles from a dropdown list. It's next to the Microsoft Dataverse tables that the Kudos app uses. Be sure to select the correct Kudos role (Employee, Manager, Program Admin) along with *Basic User*.
 1. Add an optional email message.
 1. Select **Share**.

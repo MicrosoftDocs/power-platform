@@ -52,7 +52,7 @@ It's important to have a cohesive environment and data policy strategy and setup
 
 - **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
-  - A Power Platform environment with a Dataverse database installed is set up
+  - A Power Platform environment is set up with a Dataverse database
   - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
   More information: [Environments overview](/power-platform/admin/environments-overview)
@@ -187,24 +187,28 @@ Once the app admin configurations are complete you are ready to share the app wi
 
 Set the Awards and Recognition program manager up first so they can configure awards, award assessment ratings, nomination periods, groups, and group membership and make sure the. Take these steps:
 
-1. Select **Apps** in the environment in which Awards and Recognition is installed.
-1. Locate the Awards and Recognition app.
-1. Go to the *three dots* to the right of the Awards and Recognition app and select **Share**.
+1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left-side panel and select the **Awards and Recognition** solution from the list.
+1. Select **Apps**.
+1. Select the **Awards and Recognition app** row and then the **ellipsis** (3 vertical dots).
+1. Select **Share**.
 1. Search for and add the user who is the Awards and Recognition program manager.
 1. Check the **Co-owner** checkbox so the program manager has *edit* access to the app.
-1. Select *roles* from a drop-down list in the *Data permission* area. It's next to the *Microsoft Dataverse tables* that the Awards and Recognition app uses. Be sure to assign these two roles:
+1. Select **roles** from a drop-down list in the *Data permission* area. It's next to the *Microsoft Dataverse tables* that the Awards and Recognition app uses. Be sure to assign these two roles:
     1. Select **Basic User**
     1. Select **Awards and Recognition - Program Admin**
-1. Add an optional email message to let the program manager know the app program is ready to be set up.
+1. Add an email message to let the program manager know the app program is ready to be set up.
 1. Select **Share**.
 
 ### Share the app with the program participants
 
 When the program manager is done configuring the Awards and Recognition program for your organization, it is ready to be deployed to the program participants in your organization. Take these steps:
 
-1. Select **Apps** in the environment in which Awards and Recognition is installed.
-1. Locate the Awards and Recognition app.
-1. Go to the *three dots* to the right of the Awards and Recognition app and select **Share**.
+1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left-side panel and select the **Awards and Recognition** solution from the list.
+1. Select **Apps**.
+1. Locate the *Awards and Recognition app* and select the **three dots** to the right of the Awards and Recognition app.
+1. Select **Share**.
 1. Search for and add the users who you want to share the app with. Select **Everyone** from the *Enter a name* field's drop-down if everyone in the organization should be able to use the app.
 1. Leave the *Co-owner* checkbox empty for regular users of the app. Check the **Co-owner** checkbox for all users who should have *edit* access to the app. There could people in  addition to the program manager who need this access.
 1. Select *roles* from a drop-down list in the *Data permission* area. It's next to the *Microsoft Dataverse tables* that the Awards and Recognition app uses. Be sure to assign two roles to each user:
