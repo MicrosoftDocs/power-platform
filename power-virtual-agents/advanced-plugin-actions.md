@@ -46,13 +46,15 @@ The core action is marked up with additional information that describes its purp
 
 ## Enable authentication for plugins
 
-Plugins are always executed in the Microsoft Copilot runtime in the end-user context and can't be executed unless authentication has been enabled. Two types of authentication methods are supported.
+Plugins are always run in the Microsoft Copilot runtime in the end-user context and can't be run unless authentication has been enabled. Two types of authentication methods are supported:
 
 ![Enable AI authentication](media/advanced-plugin-actions/authentication-setup-required.png)
 
-- **Integrated authentication (Teams and Power Apps)**: This authentication setup can be employed if your bot is being consumed from the Teams channel or if you are bot is embedded in any Power Platform surface which uses tokens built with the PPAPI standard.
+- **Integrated authentication (Teams and Power Apps)**: This authentication setup can be employed if your copilot is in the Teams channel or if you're copilot is embedded in any Power Platform app which uses tokens built with the PPAPI standard.
 
-- **Manual authentication (third-party bots)**: This authentication method involves the setup of an Entra ID connection. To create a manual authentication connection:
+- **Manual authentication (third-party bots)**: This authentication method involves the setup of an Entra ID connection.
+
+To create a manual authentication connection:
 
 1. Set up an [Entra ID app](advanced-end-user-authentication.md?tabs=preview#authentication-variables).
 
