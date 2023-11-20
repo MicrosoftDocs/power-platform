@@ -94,13 +94,13 @@ To interact with the Microsoft Power Platform environment, you must establish a 
 
 ## Configure service connections using a service principal
 
-To configure a connection using service principal, you must first have a Power Platform profile authenticated with the required permissions. You must add a Microsoft Azure Active Directory application and associated application user to the Dataverse environment.
+To configure a connection using service principal, you must first have a Power Platform profile authenticated with the required permissions. You must add a Microsoft Entra ID application and associated application user to the Dataverse environment.
 
 ### Create service principal and client secret
 
 Use the [pac admin create-service-principal](../developer/cli/reference/admin.md#pac-admin-create-service-principal) command to create and configure the service principal to be used with the Microsoft Power Platform Build Tools tasks.
 
-This command first registers an Application object and corresponding Service Principal Name (SPN) in Azure Active Directory.
+This command first registers an Application object and corresponding Service Principal Name (SPN) in Microsoft Entra ID.
 Then it adds the application as an administrator user to the Microsoft Power Platform tenant.
 
 This command has two parameters:

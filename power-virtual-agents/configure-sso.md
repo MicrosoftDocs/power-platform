@@ -1,7 +1,7 @@
 ---
-title: "Configure single sign-on with Azure Active Directory "
+title: "Configure single sign-on with Microsoft Entra ID "
 description: "Enable your bot to authenticate an already-signed-in user"
-keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
+keywords: "Single Sign-on, SSO, User Authentication, Authentication, Microsoft Entra ID, MSA, Identity Provider, PVA"
 ms.date: 03/24/2023
 ms.topic: article
 author: iaanw
@@ -13,28 +13,30 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Configure single sign-on with Azure Active Directory 
+# Configure single sign-on with Microsoft Entra ID 
 
-Power Virtual Agents supports single sign-on (SSO), so chatbots on your website can sign customers in if they're already signed in to the page or app where the bot is deployed.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+Microsoft Copilot Studio supports single sign-on (SSO), so chatbots on your website can sign customers in if they're already signed in to the page or app where the bot is deployed.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- [Enable end-user authentication with Azure Active Directory](configuration-authentication-azure-ad.md).
-  - SSO is only supported for Azure Active Directory (Azure AD) V2. Other account types such as Microsoft Account or other OAuth accounts are not supported.
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- [Enable end-user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
+  - SSO is only supported for Microsoft Entra ID. Other account types such as Microsoft Account or other OAuth accounts are not supported.
 - [Add an authentication topic to your bot](advanced-end-user-authentication.md).
 - [Use a custom canvas](customize-default-canvas.md).
 
 
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
-There are four main steps to configuring SSO for Power Virtual Agents:
+There are four main steps to configuring SSO for Microsoft Copilot Studio:
 
-1. Create an app registration in Azure AD for your custom canvas.
+1. Create an app registration in Microsoft Entra ID for your custom canvas.
 
 1. Define a custom scope for your bot.
 
-1. Configure authentication in Power Virtual Agents to enable SSO.
+1. Configure authentication in Microsoft Copilot Studio to enable SSO.
 
 1. Configure your custom canvas HTML code to enable SSO.
 
@@ -47,7 +49,7 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 
 ## Supported channels
 
-The following table details the [channels](publication-fundamentals-publish-channels.md) that currently support SSO. You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
+The following table details the [channels](publication-fundamentals-publish-channels.md) that currently support SSO. You can suggest support for additional channels [at the Microsoft Copilot Studio ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 | Channel                                           | Supported     |
 |---------------------------------------------------|:-------------:|
@@ -78,12 +80,12 @@ The following table details the [channels](publication-fundamentals-publish-chan
 
 To enable SSO, you'll need to create two separate app registrations:
 
-- An _authentication app registration_, which enables Azure Active Directory (Azure AD) user authentication for your bot
+- An _authentication app registration_, which enables Microsoft Entra ID user authentication for your bot
 - A _canvas app registration_, which enables SSO for your custom web page
 
 We don't recommend reusing the same app registration for both your bot and your custom website for security reasons.
 
-1. Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md) to create an authentication app registration.
+1. Follow the instructions in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md) to create an authentication app registration.
 1. Follow the same instructions again to create a second app registration, which will serve as your canvas app registration.
 1. Return to this article.
 
@@ -103,17 +105,17 @@ We don't recommend reusing the same app registration for both your bot and your 
 
 ### Find your bot's token endpoint URL
 
-1. In Power Virtual Agents, go to **Settings**, and then select **Channels**.
+1. In Microsoft Copilot Studio, go to **Settings**, and then select **Channels**.
 
 1. Select **Mobile app**.
 
 1. Under **Token Endpoint**, select **Copy**.
 
-    :::image type="content" source="media/configure-web-sso/pva-bot-id.png" alt-text="Screenshot of copying the token endpoint URL in Power Virtual Agents.":::
+    :::image type="content" source="media/configure-web-sso/pva-bot-id.png" alt-text="Screenshot of copying the token endpoint URL in Microsoft Copilot Studio.":::
 
 ## Configure SSO in your web page
 
-Use the code provided in the [Power Virtual Agents GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html) to create a web page for the redirect URL. Copy the code from the GitHub repo and modify it using the instructions below.
+Use the code provided in the [Microsoft Copilot Studio GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html) to create a web page for the redirect URL. Copy the code from the GitHub repo and modify it using the instructions below.
 
 1. Go to the **Overview** page in Azure portal and copy the **Application (client) ID** and **Directory (tenant) ID** from your canvas app registration.
 
@@ -179,23 +181,23 @@ Use the code provided in the [Power Virtual Agents GitHub repo](https://github.c
 
 ### Technical overview
 
-The following illustration shows how a user is signed in without seeing a login prompt (SSO) in Power Virtual Agents:
+The following illustration shows how a user is signed in without seeing a login prompt (SSO) in Microsoft Copilot Studio:
 
 :::image type="content" source="media/configure-sso/sso-illustration.png" alt-text="Illustration of SSO authentication flow.":::
 
 1. The bot user enters a phrase that [triggers a sign-in topic](advanced-end-user-authentication.md). The sign-in topic is designed to sign the user in and use the user's [authenticated token (`AuthToken` variable)](advanced-end-user-authentication.md#authtoken-variable).
 
-1. Power Virtual Agents sends a login prompt to allow the user to sign in with their configured identity provider.
+1. Microsoft Copilot Studio sends a login prompt to allow the user to sign in with their configured identity provider.
 
-1. The bot's [custom canvas](customize-default-canvas.md) intercepts the sign-in prompt and requests an on-behalf-of (OBO) token from Azure AD. The canvas sends the token to the bot.
+1. The bot's [custom canvas](customize-default-canvas.md) intercepts the sign-in prompt and requests an on-behalf-of (OBO) token from Microsoft Entra ID. The canvas sends the token to the bot.
 
 1. On receipt of the OBO token, the bot exchanges the OBO token for an "access token" and fills in the `AuthToken` variable using the access token's value. The `IsLoggedIn` variable is also set at this time.
 
-### Create an app registration in Azure AD for your custom canvas
+### Create an app registration in Microsoft Entra ID for your custom canvas
 
 To enable SSO, you'll need two separate app registrations:
 
-- [One for your bot to enable user authentication with Azure AD](configuration-authentication-azure-ad.md).
+- [One for your bot to enable user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
 - One for your custom canvas to enable SSO.
 
 > [!IMPORTANT]
@@ -217,7 +219,7 @@ To enable SSO, you'll need two separate app registrations:
 
     For example, if your bot is called "Contoso sales help", you might name the app registration as "ContosoSalesCanvas" or something similar.
 
-1. Select the account type under **Supported account types**. We recommend you select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (for example Skype, Xbox)**.
+1. Select the account type under **Supported account types**. We recommend you select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant) and personal Microsoft accounts (for example Skype, Xbox)**.
 
 1. Leave the **Redirect URI** section blank for now, as you'll enter that information in the next steps. Select **Register**.
 
@@ -275,13 +277,13 @@ This step creates a trust relationship between the authentication app registrati
 
 1. Select **Add application**.
 
-## Configure authentication in Power Virtual Agents to enable SSO
+## Configure authentication in Microsoft Copilot Studio to enable SSO
 
-The **Token Exchange URL** in the Power Virtual Agents authentication configuration page is used to exchange the OBO token for the requested access token through the bot framework.
+The **Token Exchange URL** in the Microsoft Copilot Studio authentication configuration page is used to exchange the OBO token for the requested access token through the bot framework.
 
-Power Virtual Agents calls into Azure AD to perform the actual exchange.
+Microsoft Copilot Studio calls into Microsoft Entra ID to perform the actual exchange.
 
-1. Sign in to Power Virtual Agents.
+1. Sign in to Microsoft Copilot Studio.
 
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the correct bot.
 
@@ -340,7 +342,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
            activity.attachments[0] &&
            activity.attachments[0].contentType === 'application/vnd.microsoft.card.oauth' &&
            activity.attachments[0].content.tokenExchangeResource) {
-             // asking for token exchange with AAD
+             // asking for token exchange with Microsoft Entra ID
              return activity.attachments[0].content.tokenExchangeResource.uri;
        }
     }
@@ -368,7 +370,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
 
 1. Insert the following \<script\> in the \<body\> section. Within the `main` method, this code adds a conditional to your `store`, with your bot's unique identifier. It also generates a unique ID as your `userId` variable.
 
-1. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Power Virtual Agents portal.
+1. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Microsoft Copilot Studio portal.
 
     :::image type="content" source="media/configure-sso/sso-pva-botid.png" alt-text="Bot ID shown on the Mobile app channel configuration page." border="false":::
 

@@ -1,6 +1,6 @@
 ---
 title: Return a list of results
-description: Return a list of results from a Power Automate flow to a Power Virtual Agents bot.
+description: Return a list of results from a Power Automate flow to a Microsoft Copilot Studio bot.
 keywords: "PVA, flow, automate"
 ms.date: 03/24/2023
 
@@ -16,19 +16,21 @@ ms.collection: virtual-agent
 
 # Return a list of results
 
-It's common to ask a bot to look for data in an external system and return a list of results. To do that, Power Virtual Agents can call a Power Automate flow to:
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+It's common to ask a bot to look for data in an external system and return a list of results. To do that, Microsoft Copilot Studio can call a Power Automate flow to:
 
 - authenticate and connect to an external solution
 - run a query based on the user's inputs
 - format the results
 - return the results to the bot
 
-In this example, you'll use the Dataverse connector in Power Automate to search for accounts. Then you'll return a list of results that includes the account name, city, and account number to Power Virtual Agents.
+In this example, you'll use the Dataverse connector in Power Automate to search for accounts. Then you'll return a list of results that includes the account name, city, and account number to Microsoft Copilot Studio.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- Understand how to [create a flow](advanced-flow-create.md) from the Power Virtual Agents authoring canvas.
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- Understand how to [create a flow](advanced-flow-create.md) from the Microsoft Copilot Studio authoring canvas.
 - [Add input and output variables](advanced-flow-input-output.md).
 - [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization).
 
@@ -165,15 +167,15 @@ The **Search rows** action returns the **List of rows** variable, which contains
 
     :::image type="content" source="media/advanced-flow-set-of-results/apply-to-each.png" alt-text="Screenshot of the Apply to each action.":::
 
-1. In the **Return value(s) to Power Virtual Agents** action, add a **Text** output. For **Name**, enter **FoundAccounts**. For **Value**, select **ListOfAccounts**.
+1. In the **Return value(s) to Microsoft Copilot Studio** action, add a **Text** output. For **Name**, enter **FoundAccounts**. For **Value**, select **ListOfAccounts**.
 
-    :::image type="content" source="media/advanced-flow-set-of-results/return-to-pva-action.png" alt-text="Screenshot of the Return values(s) to Power Virtual Agents action.":::
+    :::image type="content" source="media/advanced-flow-set-of-results/return-to-pva-action.png" alt-text="Screenshot of the Return values(s) to Microsoft Copilot Studio action.":::
 
 1. Select **Save**.
 
-## Call the flow from Power Virtual Agents
+## Call the flow from Microsoft Copilot Studio
 
-1. On the Power Virtual Agents authoring canvas, select **Add node** (**+**), and then select **Call an action**.
+1. On the Microsoft Copilot Studio authoring canvas, select **Add node** (**+**), and then select **Call an action**.
 
 1. Select the flow you created earlier, **Search Account**.
 
