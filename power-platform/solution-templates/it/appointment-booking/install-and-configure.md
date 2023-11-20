@@ -177,7 +177,7 @@ Set up security roles in your solutions so admins can manage access, language su
 
 There are three security roles:
 
-- **Appointment Booking - IT Template Admin** - Assign this role to an admin who needs to perform specific admin tasks such as localizing strings and monitoring for errors.
+- **IT Base - IT Template Admin** - Assign this role to an admin who needs to perform specific admin tasks such as localizing strings and monitoring for errors.
 
 - **Appointment Booking – Admin** - Assign this role to the manager who needs to manage your organization's shared calendars and appointment data. This security role has access to both the Appointment Booking Administrator app and the Appointment Booking app.
 
