@@ -78,7 +78,7 @@ As a  Requestor or Meeting Provider, you can cancel an appointment booking. To c
 1. Select **Show booked appointments**.
 1. Choose the appointment booking you want to cancel and select **Manage Appointment**.
 1. On the Appointment Details screen, select **Cancel Appointment**.
-:::image type="content" source="media/use/ab-use-apptdetails.png" alt-text="Screenshot of selecting requestor name on the Manage Booking page in the Appointment Booking app.":::
+:::image type="content" source="media/use/ab-use-apptdetails.png" alt-text="Screenshot of the Appointment Details screen in the Appointment Booking app.":::
 1. On the Confirmation screen there is an option to enter a reason for the cancellation. Select **Yes, Cancel** to confirm the cancellation. This triggers the *Cancelled Outlook Invites flow* that cancels the Outlook meeting invites and sends email notifications to both the Requestor and Meeting Provider.
 1. On the Success screen, select **Return Home**.
 
