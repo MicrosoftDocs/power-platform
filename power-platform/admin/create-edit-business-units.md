@@ -116,8 +116,16 @@ Make sure you have the System Administrator permission to update the setting.
 
   > [!IMPORTANT] 
   >  You can also change the user's business unit in the legacy user web client. To do so, complete the following steps.
-  >
-  >   1.  Go to the **User detail** form.
+
+  1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
+     
+  2. Select the checkbox for a user name and click on the user.
+
+  3. On the user form, click on the ellipsis **'...'**, and click on **Manage user in Dynamics 365**.
+  
+     For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Security** > **Users**.
+
+     On the legacy **User detail** form.
   >      
   >       a. Scroll down to the **Organization Information** section.
   >       
@@ -129,7 +137,7 @@ Make sure you have the System Administrator permission to update the setting.
   >       
   >       a. A **Change Business Unit** dialog box is displayed.
   >       
-  >       b. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit. 
+  >       b. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit.
   >
   >       **Note**: Changing the user's business unit on this dialog box will **not** honor the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
   >         
