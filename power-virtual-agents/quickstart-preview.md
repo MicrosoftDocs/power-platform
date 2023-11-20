@@ -1,6 +1,6 @@
 ---
-title: Power Virtual Agents preview quickstart
-description: Discover the new features introduced in the Power Virtual Agents preview.
+title: Microsoft Copilot Studio preview quickstart
+description: Discover the new features introduced in the Microsoft Copilot Studio preview.
 ms.date: 03/24/2023
 
 ms.topic: how-to
@@ -14,7 +14,9 @@ ms.custom: bap-template
 
 # Quickstart
 
-This quickstart walks you through making a bot that uses new features and improvements introduced in the Power Virtual Agents preview. You'll create a bot that helps users make a reservation at a fictional restaurant.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+This quickstart walks you through making a bot that uses new features and improvements introduced in the Microsoft Copilot Studio preview. You'll create a bot that helps users make a reservation at a fictional restaurant.
 
 ## Prerequisites
 
@@ -22,11 +24,11 @@ This quickstart walks you through making a bot that uses new features and improv
 
 ## Create your bot
 
-Power Virtual Agents has an app-level home page that isn't specific to any bot. On this page, you can create a bot and view a list of bots you've worked on recently. You can also find learning resources, such as videos, documentation, and learning paths.
+Microsoft Copilot Studio has an app-level home page that isn't specific to any bot. On this page, you can create a bot and view a list of bots you've worked on recently. You can also find learning resources, such as videos, documentation, and learning paths.
 
 1. In the navigation menu, select **Home**, and then select **Create a bot**.
 
-    :::image type="content" source="media/quickstart/new-bot1.png" alt-text="Screenshot of the Power Virtual Agents app-level home page, with the Create buttons highlighted.":::
+    :::image type="content" source="media/quickstart/new-bot1.png" alt-text="Screenshot of the Microsoft Copilot Studio app-level home page, with the Create buttons highlighted.":::
    
 2. A whole page wizard will start with a couple steps to get your bot created very quickly. A default bot name is there. Instead of the default name, name the bot `Reservation Bot` and select **Create**. 
 

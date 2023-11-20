@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Export and import bots using solutions
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can export and import bots using [solutions](/power-platform/alm/solution-concepts-alm) so you can move your bots across multiple [environments](/power-platform/admin/environments-overview).
 
 This can be useful if you use different environments for different purposes, or you employ ring-deployment methodologies. For example, you might have a specific environment where you internally test and validate bots, another environment where you test bots for only a subset of users, and a final production environment where you share bots with customers and end users.
@@ -29,7 +31,7 @@ This can be useful if you use different environments for different purposes, or 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - A maker will require the minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](/power-platform/admin/database-security).
 
 # [Web app](#tab/webApp)
@@ -48,7 +50,7 @@ Move your bots across [environments](/power-platform/admin/environments-overview
     >
     > Don't remove unmanaged bot components, such as bot topics, directly from the Power Apps portal unless you've removed the bot from the solution.  
     >
-    > You should only make changes to topics from Power Virtual Agents. Removing or changing a bot's components from Power Apps will cause the export and import to fail.
+    > You should only make changes to topics from Microsoft Copilot Studio. Removing or changing a bot's components from Power Apps will cause the export and import to fail.
 
 - You can't export managed solutions. When you create a solution, it's unmanaged by default. If you change it to a managed solution, you won't be able to export it. You'll need to create a new solution.
 
@@ -61,14 +63,14 @@ Move your bots across [environments](/power-platform/admin/environments-overview
 
 You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots. You can export and import multiple bots in one solution.
 
-1. In Power Virtual Agents, open the bot you want to export.
+1. In Microsoft Copilot Studio, open the bot you want to export.
 
 > [!NOTE]
 > If you are using a **Classic** bot, in the navigation menu select **Chatbots** to open the **Chatbots** page and view all the bots you have access to in this environment.
 
 2. In the navigation menu, under **Settings**, select **Bot details**, and then select **Export**.
 
-    :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the Bot details settings page in Power Virtual Agents, with the Export button highlighted.":::
+    :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the Bot details settings page in Microsoft Copilot Studio, with the Export button highlighted.":::
 
 > [!NOTE]
 > If you ar using a **Classic** bot, select the bot you want to export, then select **Export chatbot**.
@@ -115,7 +117,7 @@ You use solutions to export bots from one environment and import them into anoth
 > [!WARNING]
 > Don't remove any unmanaged chatbot subcomponents (such as bot topics) directly from the Power Apps portal, unless you have removed the bot itself from the solution.  
 >
-> You should only make changes to topics from within the Power Virtual Agents portal.  
+> You should only make changes to topics from within the Microsoft Copilot Studio portal.  
 >
 > Removing or changing the chatbot subcomponents from within Power Apps will cause the export and import to fail.
 
@@ -137,7 +139,7 @@ You export and import bots by exporting and importing the solutions that contain
 
     | Option         | Description  |
     | -------------- | ------------ |
-    | Version number | Power Virtual Agents automatically increments your solution version. You can accept the default or enter your own. |
+    | Version number | Microsoft Copilot Studio automatically increments your solution version. You can accept the default or enter your own. |
     | Export as      | Select the package type, either **Managed** or **Unmanaged**. Learn more about [managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions). |
 
 1. Select **Export**.
@@ -164,11 +166,11 @@ The export can take several minutes to complete. Watch the status message at the
 
 1. If your bot has [user authentication](configuration-end-user-authentication.md) enabled, you'll need to configure it again.
 
-1. In the **Objects** pane select **Chatbot**. Then select the bot's name to open the bot in the Power Virtual Agents portal.
+1. In the **Objects** pane select **Chatbot**. Then select the bot's name to open the bot in the Microsoft Copilot Studio portal.
 
-    :::image type="content" source="media/authoring-export-import-bots/select-bot.png" alt-text="Screenshot of a list of bots and environments in Power Virtual Agents.":::
+    :::image type="content" source="media/authoring-export-import-bots/select-bot.png" alt-text="Screenshot of a list of bots and environments in Microsoft Copilot Studio.":::
 
-    You can also open Power Virtual Agents directly and then open your bot in the environment you imported it to.
+    You can also open Microsoft Copilot Studio directly and then open your bot in the environment you imported it to.
 
 > [!IMPORTANT]
 >
@@ -177,7 +179,7 @@ The export can take several minutes to complete. Watch the status message at the
 
 ### Add components to a chatbot in a custom solution
 
-If you add components, such as topics or flows, to your bot in Power Virtual Agents, you'll also need to add them to the bot in your unmanaged solution.
+If you add components, such as topics or flows, to your bot in Microsoft Copilot Studio, you'll also need to add them to the bot in your unmanaged solution.
 
 1. Open your solution in the Power Apps portal.
 
@@ -227,7 +229,7 @@ The chatbot will be saved into the **Downloads** folder on your PC.
 
 Follow the instructions in the section titled **Import customizations into Dataverse for Teams** in the [Move customizations between environments](/powerapps/teams/import-solution-in-teams#import-customizations-into-dataverse-for-teams) topic.
 
-Your imported bot will now appear in the Power Virtual Agents app in Teams, under the team you imported it into.
+Your imported bot will now appear in the Microsoft Copilot Studio app in Teams, under the team you imported it into.
 
 ---
 

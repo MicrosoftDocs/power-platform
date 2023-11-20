@@ -627,7 +627,7 @@ steps:
 |------------------|---------------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment that you want to assign the user to (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `User`<br/>Power Platform user name | Azure AD object ID or user's principal name to assign to the target environment. |
+| `User`<br/>Power Platform user name | Microsoft Entra object ID or user's principal name to assign to the target environment. |
 | `Role`<br/>Security role name or ID | Security role name or ID to be assigned to the user. |
 | `ApplicationUser`<br/>Power Platform application user name | Specifies whether the input user is an application user (true\|false). |
 
