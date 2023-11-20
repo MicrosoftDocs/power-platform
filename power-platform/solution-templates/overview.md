@@ -1,6 +1,6 @@
 ---
 title: Overview of Enterprise templates for Power Platform
-description: Learn how Enterprise templates for Power Platform can help you build, extend, and deploy solutions quickly.
+description: Learn how Enterprise templates for Power Platform can help you quickly build, extend, and deploy solutions that improve common organizational workflows.
 author: kaagar
 ms.author: kaagar
 contributors: 
