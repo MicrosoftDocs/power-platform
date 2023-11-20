@@ -125,7 +125,7 @@ Make sure you have the System Administrator permission to update the setting.
   
      For [Unified Interface](about-unified-interface.md), select **Settings** (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner and then select **Advanced Settings** > **Settings** > **Security** > **Users**.
 
-     On the legacy **User detail** form.
+     On the legacy **User detail** form, complete the following steps:
   >      
   >       a. Scroll down to the **Organization Information** section.
   >       
