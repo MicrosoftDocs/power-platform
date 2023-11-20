@@ -185,12 +185,12 @@
       href: integrate-with-question-answering.md
     - name: Integrate and hand off conversations
       items:
-        - name: Configure hand-off to a generic engagement hub
-          href: configure-generic-handoff.md  
-        - name: Configure voice and text hand off to Dynamics 365 Customer Service
-          href: configuration-hand-off-omnichannel.md
-        - name: Overview of Customer Copilot hand off
+        - name: Create copilots for customer engagement and hand off
           href: customer-copilot-overview.md
+        - name: Hand off to a generic engagement hub
+          href: configure-generic-handoff.md  
+        - name: Hand off to Dynamics 365 Customer Service
+          href: configuration-hand-off-omnichannel.md
         - name: Hand off to Genesys
           href: customer-copilot-genesys-handoff.md
         - name: Hand off to LivePerson
