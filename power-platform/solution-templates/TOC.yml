@@ -102,7 +102,7 @@
     - name: Overview
       href: it/appointment-booking/overview.md
     - name: Install and configure
-      href: it/hardware-request-and-management/install-and-configure.md
+      href: it/appointment-booking/install-and-configure.md
     - name: Manage
       href: it/appointment-booking/manage.md
     - name: Use

@@ -392,10 +392,10 @@ All fields are globalized so that they display date, time and number formats acc
 
 To create localized strings:
 
-1. Navigate to Power Apps maker portal
-1. Select Apps
-1. Open either the IT Template Administrator or Hardware Request and Management Model-driven app
-1. Select Export to Excel | Open in Excel Online
+1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/).
+1. Select **Apps**.
+1. Open either the IT Template Administrator or Hardware Request and Management Model-driven app.
+1. Select **Export to Excel** and then open in Excel Online.
 1. Create or update rows with the following attributes:
 
 | Field           | Examples  |Description                                                           |
@@ -407,7 +407,7 @@ To create localized strings:
 
 > [!TIP]
 >
-> A CSV file available on GitHub contains all the app default English strings. You ca n import the CSV file into your environment using the Import data capability that is part of the administrator app. Although not required for English-only deployments, importing this file helps you quickly identify the localization strings that you need to prepare for your required language.
+> A CSV file available on GitHub contains all the app default English strings. You can import the CSV file into your environment using the Import data capability that is part of the administrator app. Although not required for English-only deployments, importing this file helps you quickly identify the localization strings that you need to prepare for your required language.
 >
 > To further accelerate the string localization creation process, create a cloud flow to trigger off the Dataverse English imported localization records selected in the Administrator app. This flow can use AI Builder action steps to automatically translate the English records to your target language and directly load them into the Localizations table.
 >

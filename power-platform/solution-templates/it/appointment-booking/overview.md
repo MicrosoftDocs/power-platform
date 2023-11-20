@@ -19,7 +19,7 @@ The Appointment Booking app allows:
 
 - App manager to create appointment availability
 - Users to book the availabilities
-- Communications through email notifications sent by Microsoft Power Automate flows
+- Automated email notifications to keep everyone in sync
 
 The Appointment Booking AppSource template package consists of two solutions:
 

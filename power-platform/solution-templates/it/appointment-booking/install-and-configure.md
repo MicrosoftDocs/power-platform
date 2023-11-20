@@ -173,16 +173,17 @@ Environment variables support your application lifecycle management (ALM) strate
 
 ## Step 6: Assign security roles
 
-Set up security roles in your solutions so admins can manage access to and the experiences in the app.
+Set up security roles in your solutions so admins can manage access to and experiences in the app.
 
-The solution includes two security roles:
+The solution includes three security roles:
 
-- **Appointment Booking – Administrator** - Users in this role act as the administrator of the Appointment Booking app. Assign this role to users who manage shared calendars in your organization through the canvas app. This security role grants access to the canvas app and model-driven app where an admin can:
-  - View all appointment data
-  - Create new Appointment Types, Locations, Room Numbers
-  - Delete appointment data
+- **Appointment Booking – Admin** - Assign this role to the manager who needs to manage your organization's shared calendars and appointment data. This security role has access to these apps:
+  - Appointment Booking Administrator app
+  - IT Template Admin app
+  - Appointment Booking app
 
-- **Appointment Booking – User** - This security role grants access to the canvas app, where users can see their own appointment slots and bookings.
+- **Appointment Booking - IT Admin** - Assign this role to those who assist the manager with specific admin tasks such as localizing strings and monitoring for errors. This security role has access to the IT Template Admin app in addition to the Appointment Booking app.
+- **Appointment Booking – User** - Assign this role to everyone in your organization who needs access to the Appointment Booking canvas app, where appointment slots are managed and appointment bookings are made.
 
 Roles can be assigned from the admin portal.
 
