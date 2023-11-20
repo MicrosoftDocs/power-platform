@@ -14,7 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Quickstart guide for building bots with GPT
+# Quickstart guide for building copilots with generative AI
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
