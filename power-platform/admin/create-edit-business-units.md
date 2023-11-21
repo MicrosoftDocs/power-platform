@@ -4,7 +4,7 @@ description: Learn how to create or edit business units
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/20/2023
+ms.date: 11/21/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -125,21 +125,21 @@ Make sure you have the System Administrator permission to update the setting.
   
      For [Unified Interface](about-unified-interface.md), select **Settings** (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner and then select **Advanced Settings** > **Settings** > **Security** > **Users**.
 
-     On the legacy **User detail** form, complete the following steps:
+  >   On the legacy **User detail** form, complete the following steps:
   >      
-  >       a. Scroll down to the **Organization Information** section.
+  >   1. Scroll down to the **Organization Information** section.
   >       
-  >       b. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit.
+  >   2. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit.
   >       
-  >        **Note**: Changing the user's business unit on the **User detail** form will honor the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
+  >        **Note**: Changing the user's business unit on the **User detail** form honors the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
   >        
-  >   2.  On the **User detail** form's Action bar, select **CHANGE BUSINESS UNIT**.
+  >   3.  On the **User detail** form's Action bar, select **CHANGE BUSINESS UNIT**.
   >       
   >       a. A **Change Business Unit** dialog box is displayed.
   >       
   >       b. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit.
   >
-  >       **Note**: Changing the user's business unit on this dialog box will **not** honor the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
+  >       **Note**: Changing the user's business unit on this dialog box does **not** honor the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
   >         
   >        The user's role assignments will be removed and the user records' business unit will be moved to new business unit.
    
