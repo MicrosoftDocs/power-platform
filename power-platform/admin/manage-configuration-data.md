@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/23/2021
+ms.date: 11/21/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -68,7 +68,7 @@ The Configuration Migration tool is available as a [NuGet package](https://www.n
 ## Limitations
 
 - Migrating the Calendar entity is not supported.
-- Migrating Image column is not supported.
+- Migrating the Image column is not supported.
 
 
 ### See also  
