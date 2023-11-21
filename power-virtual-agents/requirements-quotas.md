@@ -56,7 +56,7 @@ This can impact scenarios such as [transfering to Omnichannel](configuration-han
 
 <sup>1</sup> If you're approaching limits in Dataverse for Teams environments, you can [upgrade Dataverse for Teams](admin-upgrade-dataverse-teams.md) to continue adding topics.
 
-<sup>2</sup> You must have a [Microsoft Copilot Studio standalone subscription](requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription) to use skills in a bot you've created in the Teams app. Skills are not available in the [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan).
+<sup>2</sup> You must have a [Microsoft Copilot Studio standalone subscription](requirements-licensing-subscriptions.md) to use skills in a bot you've created in the Teams app. Skills are not available in the [Teams plan](requirements-licensing-subscriptions.md).
 
 ### Microsoft Copilot Studio subscription limits
 
@@ -65,7 +65,7 @@ This can impact scenarios such as [transfering to Omnichannel](configuration-han
 | Sessions                            | N/A                                | Chat sessions are unlimited per tenant every month, but a service limit of 10 sessions per user every 24 hours across all bots in a tenant will be enforced.<sup>1</sup> |
 | Power Platform requests<sup>2</sup> | 250,000 every 24 hours<sup>3</sup> | 6,000 every 24 hours                                                                                                                                                     |
 
-<sup>1</sup> Microsoft Copilot Studio [sessions](analytics-sessions.md) that are included with [Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) aren't pooled.  
+<sup>1</sup> Microsoft Copilot Studio [sessions](analytics-sessions.md) that are included with [Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#) aren't pooled.  
 <sup>2</sup> These requests are consumed by Power Automate flows that are triggering by Microsoft Copilot Studio chatbots. Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations).  
 <sup>3</sup> You can contact your admin to increase the Microsoft Copilot Studio Power Platform requests limits by purchasing the Microsoft Copilot Studio Chat Session add-on. For more information, see the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
