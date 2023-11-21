@@ -75,7 +75,7 @@ The installation requires you to set up four new connections for the Appointment
 
 To create the connections in advance, take these steps:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/)
+1. Go to [Power Apps](https://make.preview.powerapps.com/)
 1. Go to **Connections** and select **+ New Connection** to create new connections with each of these Microsoft connectors:
 
     - [Dataverse](/connectors/commondataserviceforapps/)
@@ -123,8 +123,8 @@ You also have the option to download *managed* or *unmanaged* solution files to 
       - [mpa_ITBase_unmanaged.zip](https://aka.ms/ITBaseUnManagedSolution)
       - [mpa_AppointmentBooking_unmanaged.zip](https://aka.ms/AppointmentBookingUnmanagedSolution)
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
-1. Select **Solutions** on the left-side panel.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
+1. Select **Solutions** on the left pane.
 1. Select **Import solution**.
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_ITBase* file downloaded in previous step.
 1. Select **Next**.
@@ -143,7 +143,7 @@ More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 As an Outlook admin, take these steps to create a shared Outlook calendar and set users up as Meeting Providers:
 
 1. Open your organization's Outlook app.
-1. Go to the **calendar icon** on the left-side panel.
+1. Go to the **calendar icon** on the left pane.
 1. Select **Add calendar**.
 1. Select **Create blank calendar**.
 1. Enter a name for the new shared calendar.
@@ -164,7 +164,7 @@ More information: [Create, view, or delete a calendar group](<https://support.mi
 
 Environment variables support your application lifecycle management (ALM) strategy as you migrate the template across environments. Environment variables store keys and values for information that is contextual to the environment the solution is in. Take these steps to update an environment variable for the Appointment Booking solution in Power Apps.
 
-1. Go to Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment that contains the Appointment Booking solution.
+1. Go to Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment that contains the Appointment Booking solution.
 1. Select the Appointment Booking solution.
 1. Go to **Environment Variable**.
 1. Select the *Shared Calendar Name* or select the three dots and select **Edit**.
@@ -204,10 +204,10 @@ More information:
 
 Open the newly installed Appointment Booking solutions and verify that the cloud flows are set to the *on* status. If not, turn the status to *on*.
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
-1. Select **Solutions** on the left-side panel.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left pane.
 1. Select the **Appointment Booking** solution from the list.
-1. Select **Cloud flows** on the left-side panel.
+1. Select **Cloud flows** on the left pane.
 1. Select *each cloud flow* to verify that it is turned on.
 1. Select **Turn on** on the command bar if the flow is not already set to *on*.
 
@@ -215,10 +215,10 @@ Open the newly installed Appointment Booking solutions and verify that the clo
 
 Take the following steps to share the apps with your users:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
-1. Select **Solutions** on the left-side panel and select the **Appointment Booking** solution from the list.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left pane and select the **Appointment Booking** solution from the list.
 1. Select **Apps**.
-1. Select the **Appointment Booking app** row and then the **ellipsis** (3 vertical dots).
+1. Go to the *Appointment Booking canvas app** in the list and select the **three dots** to see a list of actions.
 1. Select **Share**.
 1. Search for and add the users you want to share the app with.
     - For users who should be able to edit the app, select the **Co-owner** box.
@@ -229,7 +229,7 @@ Take the following steps to share the apps with your users:
 1. Select **Share**.
 
 > [!NOTE]
->If you didn't install the Appointment Booking solution and it isn't shared with you, go to the Appointment Booking solution in the [Power Apps maker portal](https://make.preview.powerapps.com/) to find the app.
+>If you didn't install the Appointment Booking solution and it isn't shared with you, go to the Appointment Booking solution in the [Power Apps](https://make.preview.powerapps.com/) to find the app.
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
@@ -238,7 +238,7 @@ More information: [Share a canvas app with your organization](/power-apps/maker/
 Microsoft Copilot for model-driven apps in Power Apps is a next-generation AI assistant for app users to get insights about the data in their apps through conversation in natural language. As an Appointment Booking admin, you can leverage Copilot to help you get insights on appointment booking data while taking action. Follow these steps to turn Copilot on within your environment:
 
 1. [Go to Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. Select **Environments** on the left-side panel and then select the environment where the solution was installed.
+1. Select **Environments** on the left pane and then select the environment where the solution was installed.
 1. Ensure the environment *Release Channel* is set to **Monthly** channel following the [Changing release channels for model-driven apps guidance](/power-apps/maker/model-driven-apps/channel-change).
 1. Select **Settings**.
 1. Expand the *Product* section and select **Features**.

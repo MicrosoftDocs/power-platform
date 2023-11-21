@@ -71,7 +71,7 @@ Create a new connection with the [Microsoft Dataverse connector](/connectors/com
 
 To create connections in advance, take these steps:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/)
+1. Go to [Power Apps](https://make.preview.powerapps.com/)
 1. Go to **Connections** and select **+ New Connection** for the *Microsoft Dataverse connector* and create a connection.
 
 More information: [Manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
@@ -119,8 +119,8 @@ You also have the option to download *managed* or *unmanaged* solution files to 
       - [mpa_EmployeeExperienceBase_unmanaged.zip](https://aka.ms/EEBaseUnmanagedSolution)
       - [mpa_AwardsAndRecognition_unmanaged.zip](https://aka.ms/AwardsAndRecognitionUnmanagedSolution)
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
-1. Select **Solutions** on the left-side panel.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
+1. Select **Solutions** on the left pane.
 1. Select **Import solution**.
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_ITBase* file downloaded in previous step.
 1. Select **Next**.
@@ -173,9 +173,9 @@ Set up security roles in your solutions so admins can manage access to and the e
 
 Open the newly installed Awards and Recognition solution and verify that the cloud flow is set to the *on* status. If not, turn it on.
 
-1. Select **Solutions** on left-side panel.
+1. Select **Solutions** on left pane.
 1. Select the **Awards and Recognition** solution from the list.
-1. Select **Cloud flows (1)** on the left-side panel.
+1. Select **Cloud flows (1)** on the left pane.
 1. Select the *flow*.
 1. Select **Turn on** on the command bar if the flow is not already set to *on*.
 
@@ -185,12 +185,12 @@ Once the app admin configurations are complete you are ready to share the app wi
 
 ### Share the app with the program manager
 
-Set the Awards and Recognition program manager up first so they can configure awards, award assessment ratings, nomination periods, groups, and group membership and make sure the. Take these steps:
+Set the Awards and Recognition program manager up first so they can configure awards, award assessment ratings, nomination periods, groups, and group memberships. Take these steps:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
-1. Select **Solutions** on the left-side panel and select the **Awards and Recognition** solution from the list.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left pane and select the **Awards and Recognition** solution from the list.
 1. Select **Apps**.
-1. Select the **Awards and Recognition app** row and then the **ellipsis** (3 vertical dots).
+1. Go to the *Awards and Recognition app* in the list and select the **three dots** to the right to see a list of actions.
 1. Select **Share**.
 1. Search for and add the user who is the Awards and Recognition program manager.
 1. Check the **Co-owner** checkbox so the program manager has *edit* access to the app.
@@ -199,17 +199,18 @@ Set the Awards and Recognition program manager up first so they can configure aw
     1. Select **Awards and Recognition - Program Admin**
 1. Add an email message to let the program manager know the app program is ready to be set up.
 1. Select **Share**.
+:::image type="content" source="media/install/share-app.png" alt-text="Screenshot of the window where you add users and co-owners to your app.":::
 
 ### Share the app with the program participants
 
 When the program manager is done configuring the Awards and Recognition program for your organization, it is ready to be deployed to the program participants in your organization. Take these steps:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
-1. Select **Solutions** on the left-side panel and select the **Awards and Recognition** solution from the list.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left pane and select the **Awards and Recognition** solution from the list.
 1. Select **Apps**.
-1. Locate the *Awards and Recognition app* and select the **three dots** to the right of the Awards and Recognition app.
+1. Go to the *Awards and Recognition canvas app* in the list and select the **three dots** to the right to see a list of actions.
 1. Select **Share**.
-1. Search for and add the users who you want to share the app with. Select **Everyone** from the *Enter a name* field's drop-down if everyone in the organization should be able to use the app.
+1. Search for and add the users you want to share the app with. Select **Everyone** from the *Enter a name* field's drop-down if everyone in the organization should be able to use the app.
 1. Leave the *Co-owner* checkbox empty for regular users of the app. Check the **Co-owner** checkbox for all users who should have *edit* access to the app. There could people in  addition to the program manager who need this access.
 1. Select *roles* from a drop-down list in the *Data permission* area. It's next to the *Microsoft Dataverse tables* that the Awards and Recognition app uses. Be sure to assign two roles to each user:
 
@@ -218,21 +219,18 @@ When the program manager is done configuring the Awards and Recognition program 
 1. Add an optional email message.
 1. Select **Share**.
 
-> [!NOTE]
-> If you didn't install the Awards and Recognition solution and it hasn't been shared with you, then you'll have to go into the Awards and Recognition solution to find the app there.
-
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
 ## Step 7: Turn on auditing (optional)
 
-While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created/updated records in the future. To do this:
+While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created and updated records in the future. To do this:
 
 1. Go to [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/home).
-1. Select **Environment** to select the environment where the solution is installed.
+1. Select **Environment** on the left pane then select the environment that contains the solution.
 1. Select **Audit settings**.
 1. Select **Start auditing**.
 
 ## Next steps
 
-[Manage the Awards and Recognition app](manage.md)
+[Manage the Awards and Recognition app](manage.md),
 [Use the Awards and Recognition app](use.md)

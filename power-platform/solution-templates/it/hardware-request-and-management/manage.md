@@ -6,7 +6,7 @@ ms.author: georgenewton
 contributors:
   - tverhasselt
 ms.reviewer: ellenwehrle
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/06/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -15,7 +15,9 @@ ms.subservice: solution-templates
 
 # Get started managing hardware assets and requests
 
-Before requests can be processed and assets can be managed, certain configuration and migration steps must be completed.  In the Administrator app, use the left navigation pane to reach the following areas to complete the steps in the below sections:
+Before requests can be processed and assets can be managed, certain configuration and migration steps must be completed.
+
+As an administrator or program manager, you need to complete set up in the Hardware Request and Management Admin model-driven app for these components:
 
 - Business groups
 - Budgets

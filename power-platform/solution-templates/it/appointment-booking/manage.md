@@ -4,7 +4,7 @@ description: Learn how to manage the Appointment Booking template for Power Plat
 author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/13/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -65,7 +65,7 @@ You can localize all the strings in the Appointment Booking app to support the d
 To localize app strings, users must have the **IT Template Admin** security role assigned to them by a Power Platform admin. Once assigned, a user can take these steps:
 
 1. Go to the **IT Template Administrator app**.
-1. Select **Localizations** on left-side panel.
+1. Select **Localizations** on the left pane.
 1. Select **+New**.
 1. Fill out the form:
 

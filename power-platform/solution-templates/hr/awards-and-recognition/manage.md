@@ -4,7 +4,7 @@ description: Get started creating custom experiences for your users in the Award
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/27/2023
 ms.custom: bap-template
 ms.service: power-platform

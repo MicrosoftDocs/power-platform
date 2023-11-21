@@ -23,10 +23,7 @@ The remainder of the documentation assumes that:
 - You've added the components from the *managed* Onboarding Buddy App that you want to modify into your new *unmanaged* solution.
 - You're editing those components in the unmanaged solution.
 
-More information:
-
-- [Solution concepts](/power-platform/alm/solution-concepts-alm)
-- [Solution layers](/power-platform/alm/solution-layers-alm)
+More information: [Create a solution](/power-apps/maker/data-platform/create-solution), [Solution concepts](/power-platform/alm/solution-concepts-alm), [Solution layers](/power-platform/alm/solution-layers-alm)
 
 ## Tailor program emails
 
@@ -69,7 +66,7 @@ These screens allow you to introduce the buddy program and offer related details
 
 Customizations take place in a new, unmanaged solution. Follow the steps to customize:
 
-1. Add **Onboarding Buddy** to your new, unmanaged solution where you plan to perform all your customizations.
+1. Add the **Onboarding Buddy canvas app** to your new, unmanaged solution where you plan to perform all your customizations.
 1. Change the graphics and text to meet your program's needs.
 1. Edit two screens in the app. They are:
     1. FP Landing Screen

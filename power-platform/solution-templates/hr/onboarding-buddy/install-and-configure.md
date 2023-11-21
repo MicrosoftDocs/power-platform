@@ -76,7 +76,7 @@ The installation requires you to set up four new connections for the Onboarding 
 
 To create the connections in advance, take these steps:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/)
+1. Go to [Power Apps](https://make.preview.powerapps.com/)
 1. Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
 
     - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
@@ -126,8 +126,8 @@ You also have the option to download *managed* or *unmanaged* solution files to 
       - [mpa_EmployeeExperienceBase_unmanaged.zip](<https://aka.ms/EEBaseUnmanagedSolution>)
       - [mpa_OnboardingBuddy_unmanaged.zip](https://aka.ms/OnboardingBuddyUnmanagedSolution)
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
-1. Select **Solutions** on the left-side panel.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
+1. Select **Solutions** on the left pane.
 1. Select **Import solution**.
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_EmployeeExperienceBase* file downloaded in previous step.
 1. Select **Next**.
@@ -220,9 +220,9 @@ You can manually add existing employees that have been set up in Entra ID for mo
 
 Open the newly installed Onboarding Buddy solutions and verify that the cloud flows are set to the *on* status. If not, turn the status to *on*.
 
-1. Select **Solutions** on left-side panel.
+1. Select **Solutions** on left pane.
 1. Select the **Onboarding Buddy** solution from the list.
-1. Select **Cloud flows (4)** on the left-side panel.
+1. Select **Cloud flows (4)** on the left pane.
 1. Select *each of the four flows* in the list to verify that each one is turned on.
 1. Select **Turn on** on the command bar if the flow is not already set to *on*.
 
@@ -234,12 +234,15 @@ Share the Onboarding Buddy app with the users in your organization.
 >
 > Share the app with the Onboarding Buddy program manager(s) first so they can configure the app to meet your organization's needs. Once that configuration is complete, deploy the app to the wider organization.
 
-1. Go to [Power Apps maker portal](https://make.powerapps.com/) and select the environment that contains the solution.
-1. Select **Solutions** on the left-side panel and then select **Onboarding Buddy app** from the list.
-1. Select the **three dots** to the right of the Onboarding Buddy app.
+1. Go to [Power Apps](https://make.powerapps.com/) and select the environment that contains the solution.
+1. Select **Solutions** on the left pane and select **Onboarding Buddy** from the list.
+1. Select **Apps** on the left pane.
+1. Go to the *Onboarding Buddy canvas app* and select the **three dots** to the right to see a list of actions.
 1. Select **Share**.
 1. Search for and select the appropriate security group (or individuals) that contains the members who need access to the app. You can also verify user security roles from the *Share* screen.
-1. Select **Share**. You can also choose whether or not to include an email invitation (not required).
+1. Add an optional email message.
+1. Select **Share**.
+:::image type="content" source="media/install/share-app.png" alt-text="Screenshot of the window where you add users and co-owners to your app.":::
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
@@ -250,7 +253,7 @@ While auditing is not required, we recommend enabling the audit setting on the s
 Take these steps to enable the audit settings:
 
 1. Go to [Power Platform admin center](https://gcc.admin.powerplatform.microsoft.us/home)
-1. Select **Environments** on the left-side menu and select the environment where the solution is installed.
+1. Select **Environments** on the left pane and select the environment where the solution is installed.
 1. Select **Settings**.
 1. Select **Start Auditing**.
 

@@ -4,7 +4,7 @@ description: Get started managing the Employee Kudos app. Learn how to create cu
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/06/2023
 ms.custom: bap-template
 ms.service: power-platform

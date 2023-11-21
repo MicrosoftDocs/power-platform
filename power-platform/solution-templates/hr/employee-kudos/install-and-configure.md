@@ -73,7 +73,7 @@ The installation requires you to set up three new connections. It's best to crea
 
 To create the connections in advance, take these steps:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/)
+1. Go to [Power Apps](https://make.preview.powerapps.com/)
 1. Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
 
 - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
@@ -122,8 +122,8 @@ You also have the option to download *managed* or *unmanaged* solution files to 
       - [mpa_EmployeeExperienceBase_unmanaged.zip](<https://aka.ms/EEBaseUnmanagedSolution>)
       - [mpa_Kudos_unmanaged.zip](https://aka.ms/KudosUnmanagedSolution)
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
-1. Select **Solutions** on the left-side panel.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
+1. Select **Solutions** on the left pane.
 1. Select **Import solution**.
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_EmployeeExperienceBase* file downloaded in previous step.
 1. Select **Next**.
@@ -192,7 +192,7 @@ The solution includes three new security roles:
 Roles can be assigned from the Power Platform admin center.
 
 1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
-1. Select **Environment** on the left-side panel and then select the environment where the solution was installed.
+1. Select **Environment** on the left pane and then select the environment where the solution was installed.
 1. Select **Users** > **See all**.
 1. Select the user(s).
 1. Select **Manage security roles**, and then select the appropriate roles.
@@ -222,7 +222,7 @@ Follow these steps for each flow:
 
 ## Step 7: Set flow connections
 
-1. In [Power Apps Studio](https://make.powerapps.com), select **Solutions** on the left-side panel.
+1. In [Power Apps Studio](https://make.powerapps.com), select **Solutions** on the left pane.
 1. Select **Kudos** from your list of solutions.
 1. Select **Cloud Flows**. Two cloud flows require editing:
 
@@ -231,7 +231,7 @@ Follow these steps for each flow:
 
 1. Edit the *Kudo app - Share Kudo with Sender, Assign to Recipient* by taking these steps:
 
-    1. In the Kudos solution, select *Cloud Flows* on the left-side panel.
+    1. In the Kudos solution, select *Cloud Flows* on the left pane.
     1. Select the *flow* to open the flow's overview screen.
 
     1. On the flow overview screen, select **Edit** on the command bar to connect the to the Microsoft Dataverse connector.
@@ -241,7 +241,7 @@ Follow these steps for each flow:
 
 1. Edit the *Kudos app - Notification Email* by taking these steps:
 
-    1. In the Kudos solution, select *Cloud Flows* on the left-side panel.
+    1. In the Kudos solution, select *Cloud Flows* on the left pane.
     1. Select the *flow* to open the flow's overview screen.
     1. Select **Edit** on the command bar.
     1. Select the first flows step with a warning on it.
@@ -259,9 +259,9 @@ Follow these steps for each flow:
 
 Open the newly installed *Kudos solution* and verify that the four cloud flows are set to the *on* status. If they aren't, turn them on.
 
-1. 1. Select **Solutions** on left-side panel.
+1. 1. Select **Solutions** on left pane.
 1. Select the **Kudos** solution from the list.
-1. Select **Cloud flows (4)** on the left-side panel.
+1. Select **Cloud flows (4)** on the left pane.
 1. Select *each of the four flows* in the list to verify that each one is turned on.
 1. Select **Turn on** on the command bar if the flow  is not already set to *on*.
 
@@ -273,22 +273,19 @@ To create your own badges, refer to [Create Custom Badges](manage.md#create-cust
 
 ## Step 10: Share the App
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment that contains the solution.
-1. Select **Solutions** on the left-side panel and select the **Kudos** solution from the list.
-1. Select **Apps** on the left-side panel.
-1. Locate the *Kudos App* and select the **three dots** to the right.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment that contains the solution.
+1. Select **Solutions** on the left pane and select the **Kudos** solution from the list.
+1. Select **Apps** on the left pane.
+1. Go to the *Kudos canvas app* and select the **three dots** to the right to see a list of actions.
 1. Select **Share**.
 1. Search for and add the users with whom you want to share the app.
     - For users who should be able to edit the app, select the **Co-owner** box.
     - For regular users of the app, leave that checkbox empty.
-    - If everyone in a security group should be able to use the app, select *Everyone* in the *Enter a name* box.
+    - If everyone in a security group needs to be an app user, select *Everyone* in the *Enter a name* box.
 1. In the *Data permission* area, you can select roles from a dropdown list. It's next to the Microsoft Dataverse tables that the Kudos app uses. Be sure to select the correct Kudos role (Employee, Manager, Program Admin) along with *Basic User*.
 1. Add an optional email message.
 1. Select **Share**.
-
-> [!NOTE]
->If you didn't install the Kudos solution and it hasn't been shared with you, then you'll have to go to the Kudos solution and find the app there.
-
+:::image type="content" source="media/install/share-app.png" alt-text="Screenshot of the window where you add users and co-owners to your app.":::
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
 ## Step 11: Turn on auditing (optional)

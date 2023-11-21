@@ -4,7 +4,7 @@ description: Program admins manage the Onboarding Buddy app. Learn how to add ne
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/29/2023
 ms.custom: bap-template
 ms.service: power-platform
