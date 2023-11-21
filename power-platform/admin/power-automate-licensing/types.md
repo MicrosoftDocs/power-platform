@@ -396,9 +396,8 @@ Follow these steps to get started.
 After the free trial starts, go to **Billing** > **Licenses** to see the 25 new licenses available for you to assign to users.
 
 > [!NOTE]
-> Trials are different from free licenses. Once you start a trial, the sku name might not say Trial.
+> Trials are different from free licenses. Once you start a trial, the SKU name might not say Trial.
 
-![View trial licenses](../media/power-automate-licensing/trial-licenses.png)
 
 ### User trial
 
