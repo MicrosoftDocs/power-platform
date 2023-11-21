@@ -315,9 +315,9 @@ No. Power Platform requests aren't pooled at the environment nor tenant level. T
 
 ### Best practices
 
-A [guide to building enterprise ready flows](https://clouddamcdnprodep.azureedge.net/gdc/gdc5fzAoK/original) contains great tips and best practices.
+#### Best practices for design
 
-Best practice for design. Use the fewest number of actions possible to achieve your automation.
+Use the fewest number of actions possible to achieve your automation.
 
 - If you have 'Do until' or 'Apply to each' loops in your flow, see if you can reduce the number of loop iterations, possibly by retrieving fewer items to iterate through.
 
@@ -329,7 +329,7 @@ Best practice for design. Use the fewest number of actions possible to achieve y
 
 - If you need to reuse a single property returned by an action with large output size multiple times, consider using 'Initialize Variable' to store that property, and use the variable in later actions. Even if only one property is used from an output of an earlier action, all outputs of that action that will be passed into the later action as inputs.
 
-Best practices to scale your flow.
+#### Best practices to scale your flow
 
 - If your flow runs thousands of actions daily, you should consider purchasing a Per Flow license to get better throughput and higher quotas. Per Flow plan provides the best performance quota available (250K actions/day). Contact your tenant administrator to purchase the license and assign it to the flow. Once the license is purchased and assigned, the author of the flow should save it again. Alternatively, flows will be updated in the background once per week to reflect current plans.
 
