@@ -119,7 +119,7 @@ The key vault administrator then grants the respective Power Platform/Dynamics 3
 
 ##### Prerequisites
 
-- An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules (preview).
+- An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules.
 - Global tenant admin or an  Azure AD with contributor permission to the Azure AD subscription and permission to create an Azure Key Vault and key. This is required to set up the key vault.
 
 ##### Create the key and grant access using Azure Key Vault
@@ -186,7 +186,7 @@ In Azure, perform the following steps:
 #### Import protected keys for Hardware Security Modules (HSM)
 You can use your protected keys for hardware security modules (HSM) to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. For more information, see [Supported HSMs](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) [Import HSM-protected keys to Key Vault (BYOK)](/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
 
-#### Create a key in the Azure Key Vault Managed HSM - Preview
+#### Create a key in the Azure Key Vault Managed HSM
 You can use an encryption key created from the Azure Key Vault Managed HSM to encrypt your environment data. This gives you FIPS 140-2 Level 3 support. 
 
 ##### Create RSA-HSM keys
