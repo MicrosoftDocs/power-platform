@@ -114,7 +114,7 @@ The [on-premises data gateway](/power-automate/gateway-reference) acts as a brid
 
 With [AI builder](/power-automate/use-ai-builder), you to add intelligence to your automated processes, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits". Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic OCR extractions with _text recognition_.
 
-Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Each per user with attended RPA license grants you 5000 credits, allowing you to assess the capabilities in AI Builder. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq).
+Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Each Power Automate Premium license grants you 5000 credits, allowing you to assess the capabilities in AI Builder. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq).
 
 ### Dataverse database and file capacity
 
@@ -373,7 +373,7 @@ Power Automate trials are available for 90 days. There are two types of trials a
 
 ### Admin managed trial
 
-Global admins use the Microsoft 365 admin center to start these trials and assign them to users.  These trials are for 30 days. Tenant admins can add a trial (subscription-based) environment to their tenant, or new organizations can sign up for a new tenant and become the global admin. For new organizations, an admin-managed subscription is created with a specific number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended once (another 30 days). Admins can get Power Automate attended RPA trial or Power Automate unattended RPA trial.
+Global admins use the Microsoft 365 admin center to start these trials and assign them to users.  These trials are for 30 days. Tenant admins can add a trial (subscription-based) environment to their tenant, or new organizations can sign up for a new tenant and become the global admin. For new organizations, an admin-managed subscription is created with a specific number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended once (another 30 days). Admins can get Power Automate Premium, Power Automate Process or the Power Automate hosted RPA trial.
 
 Follow these steps to get started.
 
@@ -401,11 +401,7 @@ After the free trial starts, go to **Billing** > **Licenses** to see the 25 new 
 
 ### User trial
 
-Users start these types of trials, either from the [pricing](https://flow.microsoft.com/pricing/?ef_id=dd65eaf79fda13e945118bbef5cc361a:G:s&amp;OCID=AID2200054_SEM_dd65eaf79fda13e945118bbef5cc361a:G:s&amp;msclkid=dd65eaf79fda13e945118bbef5cc361a) page or from within Power Automate. This trial gives premium connector access, attended RPA, and unattended RPA. This trial is for 90 days.
-
-![The Power Automate pricing page](../media/power-automate-licensing/pricing.png)
-
-User trials can also be started by user from within Power Automate. For example, when user tries to create a desktop flow without a Power Automate per user with attended RPA plan, the user is prompted to start a trial that includes usage of premium connectors, attended RPA, and unattended RPA.
+User trials are started by user from within Power Automate. For example, when user tries to create a desktop flow without a Power Automate Premium plan, the user is prompted to start a trial that includes usage of premium connectors, attended RPA, and unattended RPA. This trial lasts for 90 days.
 
 ![Start free trial from within Power Automate](../media/power-automate-licensing/free-trial-inline.png)
 
