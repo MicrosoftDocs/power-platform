@@ -30,7 +30,7 @@ When employees make requests for new hardware, the requests are reviewed and pro
 The Hardware Request and Management template is available two ways.
 
 - [Microsoft AppSource](<https://aka.ms/HardwareRequestAndManagementTemplate>).
-- [Templates for Power Platform on GitHub](<https://github.com/microsoft/Templates-for-Power-Platform>)
+- [Templates for Power Platform] project site on GitHub(<https://aka.ms/PowerPlatformTemplateSupport>)
 
 The template package consists of two solutions:
 

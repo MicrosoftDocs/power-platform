@@ -65,7 +65,7 @@ It's important to have a cohesive environment and data policy strategy and setup
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be manually set up.
 
-The installation of the Awards and Recognition template requires a Microsoft Dataverse connection. It's best to create connections before importing the template to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
+The installation requires a Microsoft Dataverse connection. It's best to create connections before you install the template to avoid having to jump back and forth between browser windows.
 
 Create a new connection with the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/).
 

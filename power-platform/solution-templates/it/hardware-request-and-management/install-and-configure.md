@@ -148,8 +148,8 @@ More information: [AppSource](https://appsource.microsoft.com/en-US/)
 > [!IMPORTANT]
 > Two solutions are always installed in your environment:
 >
-> - **IT Base**. Contains common foundational components that all information technology (IT) solutions use. This includes components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-> - **Hardware Request and Management**. Contains all the components needed to enable the implementation of the Hardware Request and Management program within an organization.
+> - **IT Base** contains common foundational components that all information technology (IT) solutions use. This includes components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Hardware Request and Management** contains all the components needed to enable the implementation of the Hardware Request and Management program within an organization.
 
 ### Download and manually install solution files
 
@@ -190,14 +190,13 @@ To update environment variables, take these steps:
 
 1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment that contains the Hardware Request and Management solutions.
 1. Select **apps** on the left pane.
-1. Select the **Hardware Request canvas app** row, **vertical ellipsis** > **Details** > **Hardware Request Details**. Copy the *URL* to a notepad.
-1. Repeat the same step for the *Hardware Request and Management Model-driven app*.
-1. Select **Solutions** on the left pane.
+1. Go to the *Hardware Request canvas app* row, **vertical ellipsis** > **Details** > **Hardware Request Details**. Copy the *URL* to a notepad.
+1. Repeat the same process to copy the *Hardware Request and Management Model-driven app* URL to a notepad.
 
    > [!NOTE]
    >
    > If you manually installed an *unmanaged version of Hardware Request and Management solution file* from GitHub, there is no need to create a new solution to add the environment variable and connection references to. Simply edit these components directly in the existing unmanaged solution file.
-
+1. Select **Solutions** on the left pane.
 1. Select **+ New solution** and populate the properties.
 1. Select **Add existing** > **More** > **Environment variable**.
 1. Select both the **Hardware Request and Management URL** and **Hardware Request App URL** variables.
@@ -220,7 +219,7 @@ To update environment variables, take these steps:
 1. Select **Next** and then **Add**.
 1. Select the **Hardware Request and Management URL** environment variable.
 1. Select **+ New value** under the *Current Value* section.
-1. Paste the *URL value* copied from Step 3 of this section in the current value field and select **Save**.
+1. Paste the *URL value* previously copied to your notepad in the current value field and select **Save**.
 1. Repeat steps 12-15 of this section for the Hardware Request App URL environment variable.
 
 :::image type="content" source="media/install/hrm-install-variables.png" alt-text="Screenshot of how to set up environment variables for your app.":::
@@ -308,9 +307,9 @@ Take the following steps to share the Hardware Request app with users:
 
 1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 1. Select **Solutions** on the left pane and select the **Hardware Request and Management** solution from the list.
-1. Select **Apps**
-1. Select the **Hardware Request app** row and then the **ellipsis** (3 vertical dots)
-1. Select **Share**
+1. Select **Apps**.
+1. Go to the *Hardware Request app* row and then the **three dots**.
+1. Select **Share**.
 1. Search for either the *users* in your environment and/or *Microsoft Entra ID Security Group* that contains the members you want to share the app with.
 1. Under the *Data permissions* section, assign the following security roles next to the Dataverse connection:
 

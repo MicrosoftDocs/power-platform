@@ -121,7 +121,7 @@ You also have the option to download *managed* or *unmanaged* solution files to 
       - [mpa_AppointmentBooking_managed.zip](https://aka.ms/AppointmentBookingManagedSolution)
     - Unmanaged
       - [mpa_ITBase_unmanaged.zip](https://aka.ms/ITBaseUnManagedSolution)
-      - [mpa_AppointmentBooking_unmanaged.zip](https://aka.ms/AppointmentBookingUnmanagedSolution)
+      - [mpa_AppointmentBooking_unmanaged.zip](https://aka.ms/AppointmentBookingUnManagedSolution)
 
 1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
 1. Select **Solutions** on the left pane.
@@ -160,7 +160,7 @@ As an Outlook admin, take these steps to create a shared Outlook calendar and se
 
 More information: [Create, view, or delete a calendar group](<https://support.microsoft.com/office/create-view-or-delete-a-calendar-group-04fc64f2-b658-450b-8dce-dd27ed660570>)
 
-## Step 5: Update environment variable
+## Step 5: Update environment variables
 
 Environment variables support your application lifecycle management (ALM) strategy as you migrate the template across environments. Environment variables store keys and values for information that is contextual to the environment the solution is in. Take these steps to update an environment variable for the Appointment Booking solution in Power Apps.
 
@@ -177,7 +177,7 @@ Set up security roles in your solutions so admins can manage access, language su
 
 There are three security roles:
 
-- **IT Base - IT Template Admin** - Assign this role to an admin who needs to perform specific admin tasks such as localizing strings and monitoring for errors.
+- **IT Base - IT Base User** - Assign this role to an admin who needs to perform specific admin tasks such as localizing strings and monitoring for errors.
 
 - **Appointment Booking – Admin** - Assign this role to the manager who needs to manage your organization's shared calendars and appointment data. This security role has access to both the Appointment Booking Administrator app and the Appointment Booking app.
 
@@ -218,14 +218,14 @@ Take the following steps to share the apps with your users:
 1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 1. Select **Solutions** on the left pane and select the **Appointment Booking** solution from the list.
 1. Select **Apps**.
-1. Go to the *Appointment Booking canvas app** in the list and select the **three dots** to see a list of actions.
+1. Go to the *Appointment Booking canvas app* in the list and select the **three dots** to see a list of actions.
 1. Select **Share**.
 1. Search for and add the users you want to share the app with.
     - For users who should be able to edit the app, select the **Co-owner** box.
     - For regular users of the app, leave that checkbox empty.
     - If everyone in the organization should be able to use the app, select **Everyone** in the *Enter a name* box.
-1. In the *Data permission* area, you can select roles from a dropdown list. It's next to the Microsoft Dataverse tables that the Appointment Booking app uses. Be sure to select the correct Appointment Booking role (Administrator or User) for each user.
-1. Add an optional email message.
+1. In the *Data permission* area, select the roles from a dropdown list. It's next to the Microsoft Dataverse tables that the Appointment Booking app uses. Be sure to select the correct Appointment Booking role (Administrator or User) for each user.
+1. Add an email message.
 1. Select **Share**.
 
 > [!NOTE]
