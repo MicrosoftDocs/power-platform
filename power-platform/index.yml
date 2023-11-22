@@ -1,18 +1,18 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Discover and learn how to make the most of Microsoft Power Platform products using documentation and training. Quickly and easily build apps using Power Apps, automate business tasks using Power Automate, rapidly design, configure and publish modern websites using Power Pages, view and analyze insights using Power BI.
+summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, and rapidly design, configure, and publish modern websites using Power Pages.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Official Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Leverage Microsoft Power Platform to build apps using Power Apps, websites using Power Pages, automate tasks using Power Automate, analyze data using Power BI. # Required; article description that is displayed in search results. < 160 chars.
+  description: Leverage Microsoft Power Platform to analyze data, build custom apps, automate workflows, build chatbots and websites with Power BI, Power Apps, Power Automate, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/15/2023 #Required; mm/dd/yyyy format.
+  ms.date: 10/25/2023 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -103,9 +103,6 @@ additionalContent:
     - title: Related products and capabilities
       items:
         # Card
-        - title: Common Data Model
-          summary: "Unify data across all your business processes and enable interoperability among apps"
-          url: /common-data-model/
         - title: Connectors
           summary: "Connect to hundreds of data sources using a library of connectors"
           url: /connectors/

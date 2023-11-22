@@ -3,10 +3,11 @@ title: Manage your customer-managed encryption key in Power Platform
 description: Learn how to manage your encryption key. 
 author: paulliew
 ms.author: paulliew
-ms.reviewer: matp, ratrtile
+ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 07/17/2023
+ms.date: 11/15/2023
 ms.custom: template-how-to
+
 ---
 # Manage your customer-managed encryption key
 
@@ -14,7 +15,7 @@ Customers have data privacy and compliance requirements to secure their data by 
 
 All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
-To learn more about customer managed key in Power Platform, watch the following video.<p/>
+To learn more about customer managed key in Power Platform, watch the customer-managed key video.<p/>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW14O4G]
 
 These encryption key operations are available with customer-managed key (CMK):
@@ -22,7 +23,6 @@ These encryption key operations are available with customer-managed key (CMK):
 - Create a RSA (RSA-HSM) key from your Azure Key vault.
 - Create a Power Platform enterprise policy for your key.
 - Grant the Power Platform enterprise policy permission to access your key vault.
-- Grant the Power Platform service admin to read the enterprise policy.
 - Grant the Power Platform service admin to read the enterprise policy.
 - Apply encryption key to your environment.
 - Revert/remove environment’s CMK encryption to Microsoft-managed key.
@@ -37,8 +37,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Chat for Dynamics 365
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
 - Dynamics 365 Customer Service
-- Dynamics 365 Customer Insights
-- Dynamics 365 Commerce (Finance and operations)
+- [Dynamics 365 Customer Insights - Data](/dynamics365/customer-insights/data/overview)
 - Dynamics 365 Field Service
 - Dynamics 365 Retail
 - Dynamics 365 Finance (Finance and operations)
@@ -48,6 +47,11 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Fraud Protection (Finance and operations)
 
 <sup>1</sup> When you apply the customer managed key to an environment that has existing Power Automate flows, the flows data continues to be encrypted with Microsoft-managed key. More information: [Power Automate customer manged key](/power-automate/customer-managed-keys).
+
+> [!Note]
+> Nuance Conversational IVR is excluded from customer-managed key encryption.
+
+[Power Apps](/power-apps/powerapps-overview) and [Power Virtual Agent](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) store its data in their own storage and in [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro). When you apply the customer-managed key to these environments, only the data stores in **Microsoft Dataverse** are encrypted with your key. The non-Microsoft Dataverse data, including Power Apps source code and canvas apps icons, continue to be encrypted with the Microsoft-managed key.
 
 > [!NOTE]
 >
@@ -115,10 +119,10 @@ The key vault administrator then grants the respective Power Platform/Dynamics 3
 
 ##### Prerequisites
 
-- An Azure subscription that includes Azure Key Vault.
+- An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules (preview).
 - Global tenant admin or an  Azure AD with contributor permission to the Azure AD subscription and permission to create an Azure Key Vault and key. This is required to set up the key vault.
 
-##### Create the key and grant access overview
+##### Create the key and grant access using Azure Key Vault
 
 The Azure Key Vault administrator performs these tasks in Azure.
 
@@ -141,7 +145,7 @@ The Power Platform administrator manages customer-managed key tasks related to t
 
 1. Add the Power Platform environments to the enterprise policy to encrypt data with the customer-managed key. More information: [Add an environment to the enterprise policy to encrypt data](#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
 1. Remove environments from enterprise policy to return encryption to Microsoft managed key. More information: [Remove environments from policy to return to Microsoft managed key](#remove-environments-from-policy-to-return-to-microsoft-managed-key)
-1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy. More information: [Change the environment's encryption key](#change-the-environments-encryption-key)
+1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy. More information: [Create encryption key and grant access](#change-the-environments-encryption-key-with-a-new-enterprise-policy-and-key)
 1. Migrate from BYOK. If you are using the earlier self-managed encryption key feature, you can migrate your key to customer managed key. More information: [Migrate bring-your-own-key environments to customer-managed key](cmk-migrate-from-byok.md)
 
 ## Create encryption key and grant access
@@ -179,10 +183,33 @@ In Azure, perform the following steps:
       - **Key type**: **RSA**
       - **RSA key size**: **2048**
 
-##### Import protected keys for hardware security modules (HSM)
+#### Import protected keys for Hardware Security Modules (HSM)
 You can use your protected keys for hardware security modules (HSM) to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. For more information, see [Supported HSMs](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) [Import HSM-protected keys to Key Vault (BYOK)](/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
 
-#### Encrypt your environment with key from Azure Key Vault with private link (preview)
+#### Create a key in the Azure Key Vault Managed HSM - Preview
+You can use an encryption key created from the Azure Key Vault Managed HSM to encrypt your environment data. This gives you FIPS 140-2 Level 3 support. 
+
+##### Create RSA-HSM keys
+1. Make sure you've met the [prerequisites](#prerequisites).
+1. Go to the [Azure portal](https://ms.portal.azure.com/).
+1. Create a [Managed HSM](/azure/key-vault/managed-hsm/quick-create-cli#create-a-managed-hsm):
+   1.	[Provision the Managed HSM](/azure/key-vault/managed-hsm/quick-create-cli#provision-a-managed-hsm).
+   1.	[Activate the Managed HSM](/azure/key-vault/managed-hsm/quick-create-cli#activate-your-managed-hsm). 
+1.	Enable **Purge Protection** in your Managed HSM.
+1. Grant the **Managed HSM Crypto User** role to the person who created the Managed HSM key vault.
+   1.	Access the Managed HSM key vault on the [Azure portal](https://portal.azure.com/).
+   1.	Navigate to **Local RBAC** and select **+ Add**.
+   1.	In the **Role** drop-down list, select the **Managed HSM Crypto User** role on the **Role assignment** page.
+   1.	Select **All keys** under **Scope**.
+   1.	Select **Select security principal**, and then select the admin on the **Add Principal** page.
+   1.	Select **Create**.
+1.	Create a RSA-HSM key:
+      - **Options**: **Generate**
+      - **Name**: Provide a name for the key
+      - **Key type**: **RSA-HSM**
+      - **RSA key size**: **2048**
+
+#### Encrypt your environment with key from Azure Key Vault with private link
 
 You can update your Azure Key vault's networking by enabling a [private endpoint](/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-key-vault-using-the-azure-portal) and use the key in the key vault to encrypt your Power Platform environments.
 
@@ -194,7 +221,7 @@ You can either create a [new key vault and establish a private link connection](
    - Enable **Purge Protection**
    - Key type: RSA 
    - Key size: 2048
-1. Copy down the key vault URL and the encryption key URL and version to be used for creating the enterprise policy.
+1. Copy the key vault URL and the encryption key URL to be used for creating the enterprise policy.
 
    > [!NOTE]
    > Once you've added a private endpoint to your key vault or disabled the public access network, you won’t be able to see the key unless you have the appropriate permission.
@@ -223,7 +250,7 @@ Register Power Platform as a resource provider. You only need to do this task on
 1. After the PowerShell MSI is installed, go back to [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure.
 1. Select the **Build your own template in the editor** link.
 1. Copy the JSON template into a text editor such as Notepad. More information: [Enterprise policy json template](#enterprise-policy-json-template)
-1. Replace the values in the JSON template for: *EnterprisePolicyName*, *location where EnterprisePolicy needs to be created*, *keyVaultId*, *keyName*, and *keyVersion*. More information: [Field definitions for json template](#field-definitions-for-json-template)
+1. Replace the values in the JSON template for: *EnterprisePolicyName*, *location where EnterprisePolicy needs to be created*, *keyVaultId*, and *keyName*. More information: [Field definitions for json template](#field-definitions-for-json-template)
 1. Copy the updated template from your text editor then paste it into the **Edit template** of the **Custom deployment** in Azure, and select **Save**.
    :::image type="content" source="media/cmk-keyvault-template.png" alt-text="Azure key vault template":::
 1. Select a **Subscription** and **Resource group** where the enterprise policy is to be created.
@@ -256,8 +283,7 @@ A deployment is started. When it's done, the enterprise policy is created.
                     "keyVault": {
                         "id": {keyVaultId},
                         "key": {
-                            "name": {keyName},
-                            "version": {keyVersion}
+                            "name": {keyName}
                         }
                     }
                 },
@@ -293,8 +319,7 @@ A deployment is started. When it's done, the enterprise policy is created.
 - Copy these values from your key vault properties in the Azure portal:
   - **keyVaultId**: Go to **Key vaults** > select your key vault > **Overview**. Next to **Essentials** select **JSON View**. Copy the **Resource ID** to the clipboard and paste the entire contents into your JSON template.
   - **keyName**: Go to **Key vaults** > select your key vault > **Keys**. Notice the key **Name** and type the name into your JSON template.
-  - **keyVersion**: Go to **Key vaults** > select your key vault > **Keys**. Select the key, copy the **CURRENT VERSION** number, and then paste it into your JSON template.
-
+  
 ### Grant enterprise policy permissions to access key vault
 
 Once the enterprise policy is created, the key vault administrator grants the enterprise policy’s managed identity access to the encryption key.
@@ -367,8 +392,9 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Select **Save**, and then select **Confirm**.
 
 > [!IMPORTANT]
-> - The environment is disabled temporarily during this process and re-enabled to allow users access while the encryption process continues. It can take up to a day or two to complete the encryption process.
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
+> - The encryption can take up to four days to complete, but the environment might be enabled before the **Add environments** operation completes.
+> - The operation might not complete and if it fails, your data continues to be encrypted with Microsoft managed key. You can re-run the **Add environments** operation again.
 
 > [!NOTE]
 > You can only add environments that are enabled as Managed Environments. Trial and Teams environment types can't be added to the enterprise policy.
@@ -390,13 +416,13 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
   > [!IMPORTANT]
   > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enteprise policy's permissions to the key vault.** The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
-### Change the environment's encryption key
+### Change the environment's encryption key with a new enterprise policy and key
 
 To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
  > [!NOTE]
-   > Using **New key version** and setting **Rotation policy** to rotate your encryption key is not supported. Activating new key version and disabling the current version will lock the environment.
+   > Using **New key version** and setting **Rotation policy** to rotate your encryption key is now supported (preview).
 
-1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create the key and grant access](#create-the-key-and-grant-access-overview) and [Create an enterprise policy](#create-enterprise-policy)
+1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
 1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
 1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
@@ -414,6 +440,25 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 
 > [!IMPORTANT]
 > The environment will be disabled when it's added to the new enterprise policy. 
+
+### Change the environment's encryption key with a new key version (preview)
+You can change the environment’s encryption key by creating a new key version. When you create a new key version, the new key version is automatically enabled. All the storage resources detect the new key version and start applying it to encrypt your data. 
+
+When you modify the key or the key version, the protection of the root encryption key changes, but the data in the storage always remains encrypted with your key. There is no additional action required on your part to ensure that your data is protected. Rotating the key version doesn't impact performance. There is no downtime associated with rotating the key version. It can take 24 hours for all the resource providers to apply the new key version in the background. The previous key version must not be disabled as it's required for the service to use it for the re-encryption and for the support of database restoration. 
+
+To rotate the encryption key by creating a new key version, use the following steps.
+
+1.	Go to the [Azure portal](https://ms.portal.azure.com/) > **Key Vaults** and locate the key vault where you want to create a new key version.
+1.	Navigate to **Keys**.
+1. Select the current, enabled key.
+1.	Select **+ New Version**.
+1.	Note that the **Enabled** setting defaults to **Yes**, which means that the new key version is automatically enabled upon creation.
+1.	Select **Create**.
+
+You can also rotate the encryption key using the [Rotation policy](/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy) by either configuring a rotation policy or rotate, on demand, by invoking [Rotate now](/azure/key-vault/keys/how-to-configure-key-rotation#rotation-on-demand).
+
+> [!IMPORTANT]
+> The new key version is automatically rotated in the background and there is no action required by the Power Platform admin. It is important that the previous key version must not be disabled or deleted for, at least, 28 days to support database restoration. Disabling or deleting the previous key version too early can take your environment offline.
 
 ### View the list of encrypted environments
 

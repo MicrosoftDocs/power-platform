@@ -1,6 +1,6 @@
 ---
 title: Apply seed data
-description: Apply and manage key seed data that supports the SAP procurement apps and flows.
+description: Learn how you can populate a database with an initial set of data for your SAP Procurement apps and flows that run on Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -14,7 +14,7 @@ contributors:
   - Wrighttyler
   - EllenWehrle
 ms.reviewer: ellenwehrle
-ms.topic: install-set-up-deploy
+ms.topic: how-to
 ms.date: 06/06/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -27,7 +27,7 @@ Data seeding is the process of populating a database with an initial set of data
 
 ## Manage menu options
 
-You can manage the menu options for one or more of the following apps that are part of the SAP Procurement solution template:
+You can manage the menu options for one or more of the following apps that are part of the SAP Procurement template:
 
 - SAP Vendor Management
 - SAP Purchase Requisitions
@@ -39,7 +39,7 @@ You need to have _Data_.
 
 You can store and manage menu items in Dataverse and associate them with configured [Dataverse Group Teams](configure-security-groups.md#create-dataverse-group-teams) to control access and visibility to apps and components.
 
-:::image type="content" source="media/apply-seed-data/sap-admin-menu-items.png" alt-text="Manage menu options in Dataverse.":::
+:::image type="content" source="media/apply-seed-data/sap-base-menu-items.png" alt-text="Manage menu options in Dataverse.":::
 
 ### Set up application menus
 
@@ -75,7 +75,7 @@ The constrained list of values varies according to what business process is bein
 >
 > The _Export to Excel Online_ capability available in the administrator app is the most efficient way to load and maintain these values in bulk.
 
-:::image type="content" source="media/apply-seed-data/sap-admin-list-values.png" alt-text="Manage list values in the SAP Administrator app.":::
+:::image type="content" source="media/apply-seed-data/sap-base-list-of-values.png" alt-text="Manage list values in the SAP Administrator app.":::
 
 ### Create and manage list of values
 
@@ -87,7 +87,6 @@ The constrained list of values varies according to what business process is bein
 
    To help you create and manage the list of values, a list of the fields with examples and descriptions are provided in this table.
 
-
    | Field | Examples| Description |
    | ----------- | ----------- | ----------- |
    | Display Value | "United States", "German", "Mexico" | The localized version of the display value the user will see in combo box app controls. |
@@ -96,7 +95,6 @@ The constrained list of values varies according to what business process is bein
    | Domain | "Country", "State", "Payment Terms" | Constrained value representing the domain that the list of values is mapped to. The app combo box controls filter the appropriate values based on mapped domain. More domains can be added by extending the Dataverse choice values. |
    | Parent Value |  | Allows for parent-child relationships of values. For example, specific state/province domain values can be parented to a single country domain value. |
    | Description |  | General description of what the value represents. |
-
 
 1. Select **Save** and monitor the import progress.
 
@@ -114,7 +112,7 @@ All strings in the canvas apps are defaulted to English. However, the canvas app
 
 More information: [Localization and global app support](extend-canvas-apps.md#localization-and-global-app-support)
 
-:::image type="content" source="media/apply-seed-data/sap-localizations.png" alt-text="Manage SAP string localizations.":::
+:::image type="content" source="media/apply-seed-data/sap-base-localizations.png" alt-text="Manage SAP string localizations.":::
 
 ### Create localization strings
 
@@ -148,8 +146,7 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 - [Monitor errors](monitor-errors.md)
 - [Customize solutions](customize-solutions.md)
 
-### See also
+## See also
 
 - [Overview](../overview.md)
 - [Get started](get-started.md)
-

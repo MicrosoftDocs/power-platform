@@ -1,6 +1,6 @@
 ---
-title: Text function in Power Apps
-description: Reference information including syntax and examples for the Text function in Power Apps.
+title: Text function
+description: Reference information including syntax and examples for the Text function.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -14,7 +14,9 @@ contributors:
   - jorisdg
 ---
 
-# Text function in Power Apps
+# Text function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Converts any value and formats a number or date/time value to a string of text.
 

@@ -66,6 +66,8 @@ productDirectory:
           text: Real-world solution architecture examples
         - url: /power-platform/guidance/expressroute/overview
           text: Azure ExpressRoute and Power Platform
+        - url: /power-platform/guidance/white-papers
+          text: White papers
         - url: /power-platform/guidance/icons
           text: Power Platform icons
 

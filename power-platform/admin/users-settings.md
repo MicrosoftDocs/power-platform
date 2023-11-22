@@ -4,11 +4,13 @@ description: "Learn how to manage user settings and security roles when administ
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/28/2022
+ms.date: 11/06/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
-  - admin 
+  - admin
+contributors:
+- adrianorth 
 ---
 # User settings
 
@@ -22,18 +24,17 @@ Managing user settings can be done in the Power Platform admin center. Use the f
 
 4. Select a user setting from the top menu bar.
 
-:::image type="content" source="media/user-settings-menu-bar.png" alt-text="User settings menu bar":::
-
-|Setting  |Description  |
-|---------|---------|
-|Run diagnostics     | Access diagnostics on a user in an environment. See [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics).        |
-|Manage security roles     | Assign security roles to control a user's access to data through a set of access levels and permissions. See [Assign a security role to a user](assign-security-roles.md).        |
-|Refresh user     | Re-sync the **User** page from Azure Active Directory.        |
-|Change position     | Specify the position that you want to assign a user. See [Hierarchy security to control access](hierarchy-security.md).   |
-|Change manager     | Specify the manager you want to assign to a user. See [Hierarchy security to control access](hierarchy-security.md).    |
-|Reassign records     | Assign all the records owned by the current user or team to a user or team.       |
-|Change business unit     | Change the business unit a user is assigned to. See [Change the business unit for a user](create-edit-business-units.md#change-the-business-unit-for-a-user).        |
-|Manage teams     | Add or remove a user from a team. See [Microsoft Dataverse teams management](manage-teams.md).        |
+    |Setting  |Description  |
+    |---------|---------|
+    |Run diagnostics     | Access diagnostics on a user in an environment. See [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics).    |
+    |Manage security roles     | Assign security roles to control a user's access to data through a set of access levels and permissions. See [Assign a security role to a user](assign-security-roles.md).        |
+    |Refresh user     | Re-sync the **User** page from Azure Active Directory.        |
+    |Change position     | Specify the position that you want to assign a user. See [Hierarchy security to control access](hierarchy-security.md).   |
+    |Change manager     | Specify the manager you want to assign to a user. See [Hierarchy security to control access](hierarchy-security.md).    |
+    |Reassign records     | Assign all the records owned by the current user or team to a user or team.       |
+    |Change business unit     | Change the business unit a user is assigned to. See [Change the business unit for a user](create-edit-business-units.md#change-the-business-unit-for-a-user).        |
+    |Manage teams     | Add or remove a user from a team. See [Microsoft Dataverse teams management](manage-teams.md).        |
+    |Change channel    | Change the release channel for a user which overrides the environment or app release channel. More information: [User channel override](user-channel-override.md).        |
 
 ### See also
 [Create users](create-users.md)

@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 09/06/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -17,6 +17,9 @@ search.audienceType:
 The components in the Center of Excellence (CoE) Starter Kit are designed for multiple uses. The example process in this article, which uses the starter kit components, is meant to showcase common patterns other organizations have found useful and&mdash;hopefully&mdash;act as inspiration for defining your own processes.
 
 The app auditing sample process showcases how your CoE department or IT administrators can automate an auditing process on an app-level basis to gather additional information about an app, like business justification and the impact of an outage, from the maker.
+
+> [!NOTE]
+> Follow the [setup compliance components](setup-governance-components.md) steps to configure this process. More information: [Compliance process](governance-components.md#compliance-processes)
 
 ## Process description
 

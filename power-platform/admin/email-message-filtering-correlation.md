@@ -3,7 +3,7 @@ title: Specify which emails are automatically tracked
 description: Use email message filtering and correlation to specify which emails are tracked in Dynamics 365 customer engagement apps. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/17/2023
+ms.date: 10/02/2023
 ms.subservice: admin
 ms.author: sericks
 author: sericks007
@@ -84,6 +84,21 @@ Organization-wide settings and settings for individual users and queues determin
 | Correlated Activity ID | Indicates whether an email was associated with a previously tracked email. For example, if an email was sent from Dynamics 365 and a reply was automatically tracked, the Correlated Activity ID of the reply would refer to the original email.
 | Correlation Method | The correlation method that was used to automatically track an email. It's not available for Advanced Find or other views and forms, but you can use the Web API to view it. Use this URL format: <br><br>`https://YourDynamics365URL/api/data/v9.2/emails(IDofEmail)?$select=subject,correlationmethod` <br><br>For example, if your Dynamics 365 URL is `https://contoso.crm.dynamics.com` and the email ID is `fd372987-7fac-ed11-aad1-0022480819b5`, you can use this URL to view the correlation method:<br><br>`https://**contoso.crm.dynamics.com**/api/data/v9.2/emails(**fd372987-7fac-ed11-aad1-0022480819b5**)?$select=subject,correlationmethod`<br><br>To find the ID of an email, open the email in a web browser. The ID is everything after `&id=` in the URL. In the example, it was `&id=fd372987-7fac-ed11-aad1-0022480819b5`.<br><br>The value of Correlation Method is an integer that corresponds to a specific correlation method. Refer to the table in the correlation method section of the [email EntityType](/power-apps/developer/data-platform/webapi/reference/email?view=dataverse-latest#properties&preserve-view=true). For example, a value of 3 indicates that the email was correlated using the InReplyTo method. |
 | Parent Activity ID | Refers to a previously tracked email if the current email is correlated with it. However, the column is populated only if the email was correlated using the InReplyTo or ConversationIndex method. If the email was correlated using a different method, such as Tracking Token, the Parent Activity ID is empty. |
+
+## Identify Automatic Replies
+
+Auto-generated email responses can sometimes be triggered by automatic features. For instance, Microsoft Outlook's [Automatic Replies](https://support.microsoft.com/office/send-automatic-out-of-office-replies-from-outlook-for-windows-9742f476-5348-4f9f-997f-5e208513bd67) (Out of Office) feature can be set up to respond to emails when the recipient is away. Presently, Server-Side Sync does not actively assess whether an incoming email is an auto-generated response when determining whether it should be automatically tracked.
+
+You can use the `InternetMessageHeaders` attribute in the **Email** table to identify such auto-generated responses. The `InternetMessageHeaders` attribute is populated for incoming emails only if an email includes `Auto-Submitted` or `Reply-To` headers. These header values are captured in a JSON format.
+
+To check the value of `InternetMessageHeaders` attribute, parse the JSON data to access specific header names and values. You can also check if the column contains the header name you're interested in. For example, if the `InternetMessageHeaders` column contains `Auto-Submitted`, it signifies that the email was generated automatically.
+
+The following table provides more information about the headers in automatic replies.
+
+| Header | Description | Examples
+|---------------|----------|----------------|
+| Auto-Submitted | If this header is present, it means that the email is an auto-reply. Different email providers may use different values for this header. More information: [RFC - Recommendations for Automatic Responses to Electronic Mail](https://www.rfc-editor.org/rfc/rfc3834).  |Gmail - `Auto-Submitted : auto-replied` </BR></BR>Outlook - `Auto-Submitted : auto-generated` |
+| Reply-To | If this header is present, it means the email has a reply-to setup. The value in this header will show the reply-to email address. The format of the value may vary depending on mail providers and other configurations. More information: [RFC - Reply-To field](https://www.rfc-editor.org/rfc/rfc3834#section-3.1.2). |`Reply-To : “Test email <example@contoso.com>”` </BR></BR>`Reply-To : “<example@contoso.com>”` |
 
 ## Automatic population of Regarding column
 

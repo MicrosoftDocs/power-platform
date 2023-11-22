@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/developer/cli/reference/tests.md",
+      "redirect_url": "test",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "power-platform/developer/cli/reference/paportal.md",
+      "redirect_url": "powerpages",
+      "redirect_document_id": "false"
+    }, 
+    {
       "source_path": "power-platform/alm/maintain-managed-solutions.md",
       "redirect_url": "/power-apps/maker/data-platform/update-solutions",
       "redirect_document_id": "false"
@@ -8,6 +18,11 @@
     {
       "source_path": "power-platform/admin/managed-environment-weekly-digests.md",
       "redirect_url": "managed-environment-usage-insights",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/set-up-sales-territories-organize-business-markets-geographical-area.md",
+      "redirect_url": "/dynamics365/sales/set-up-sales-territories",
       "redirect_document_id": "false"
     },
     {
@@ -626,8 +641,58 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "power-platform/solution-templates/hr/awards-and-recognition/install.md",
+      "redirect_url": "/power-platform/solution-templates/hr/awards-and-recognition/install-and-configure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/solution-templates/hr/employee-kudos/install.md",
+      "redirect_url": "/power-platform/solution-templates/hr/employee-kudos/install-and-configure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/solution-templates/hr/employee-kudos/use.md",
+      "redirect_url": "/power-platform/solution-templates/hr/employee-kudos/manage",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/admin-powerapps-enterprise-deployment.md",
       "redirect_url": "https://aka.ms/powerappsadminwhitepaper",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/about-gdpr.md",
+      "redirect_url": "/power-platform/admin/about-privacy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/common-data-service-gdpr-dsr-guide.md",
+      "redirect_url": "/power-platform/admin/dataverse-privacy-dsr-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/powerapps-gdpr-export-dsr.md",
+      "redirect_url": "/power-platform/admin/powerapps-privacy-export-dsr",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/powerapps-gdpr-delete-dsr.md",
+      "redirect_url": "/power-platform/admin/powerapps-privacy-delete-dsr",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/powerapps-gdpr-dsr-guide.md",
+      "redirect_url": "/power-platform/admin/powerapps-privacy-dsr-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs.md",
+      "redirect_url": "/power-platform/admin/powerapps-privacy-dsr-guide-systemlogs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/data-integration-gdpr-dsr-guide.md",
+      "redirect_url": "/power-platform/admin/data-integration-privacy-dsr-guide",
       "redirect_document_id": "false"
     }
   ]

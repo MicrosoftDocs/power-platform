@@ -1,6 +1,6 @@
 ---
-title: Char function in Power Apps
-description: Reference information including syntax and examples for the Char function in Power Apps.
+title: Char function
+description: Reference information including syntax and examples for the Char function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Char function in Power Apps
+# Char function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Translates a character code into a string.
 

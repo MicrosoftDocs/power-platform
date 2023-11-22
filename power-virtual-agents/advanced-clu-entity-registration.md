@@ -1,8 +1,8 @@
 ---
-title: Entity registration for conversational language understanding (preview)
-description: Add language understanding entities to a Power Virtual Agents bot.
+title: Entity registration for conversational language understanding 
+description: Add language understanding entities to a Microsoft Copilot Studio bot.
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
-ms.date: 6/6/2023
+ms.date: 9/26/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -12,13 +12,13 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Entity registration for conversational language understanding integration (preview)
+# Entity registration for conversational language understanding integration 
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-This article discusses adding conversational language understanding (CLU) entities to Power Virtual Agents bots. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). In most cases, you can use [Power Virtual Agent Prebuilt Entities](advanced-entities-slot-filling.md) for your projects, but should you want to use CLU entity types with custom JSON resolutions, the following schema examples are provided as a reference. 
+This article discusses adding conversational language understanding (CLU) entities to Microsoft Copilot Studio bots. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). In most cases, you can use [Power Virtual Agent Prebuilt Entities](advanced-entities-slot-filling.md) for your projects, but should you want to use CLU entity types with custom JSON resolutions, the following schema examples are provided as a reference. 
 
-To set up your environment for mapping CLU entities to Power Virtual Agents bots, see [Get started with language understanding](advanced-clu-get-started.md).
+To set up your environment for mapping CLU entities to Microsoft Copilot Studio bots, see [Get started with language understanding](advanced-clu-get-started.md).
 
 The following datatypes are available for mapping CLU entities: 
 
@@ -31,7 +31,7 @@ The following datatypes are available for mapping CLU entities:
 
 ## Schema table
 
-Bot creators can use sample JSON code to register [entities](advanced-entities-slot-filling.md). Entities resolve to complex data types. You can manually map CLU entities to Power Virtual Agents data types by copying and pasting the following JSON code blocks for the relevant entity.
+Bot creators can use sample JSON code to register [entities](advanced-entities-slot-filling.md). Entities resolve to complex data types. You can manually map CLU entities to Microsoft Copilot Studio data types by copying and pasting the following JSON code blocks for the relevant entity.
 
 
 ### Age

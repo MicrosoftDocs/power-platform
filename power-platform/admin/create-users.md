@@ -8,9 +8,11 @@ ms.author: kvivek
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/26/2022
+ms.date: 11/07/2023
 search.audienceType: 
   - admin
+contributors:
+- srpoduri 
 ---
 # Create users
 
@@ -77,10 +79,6 @@ Some user profile information is maintained and managed in the [!INCLUDE [pn-off
 The following table shows the fields that are managed in the **Users** section of the [!INCLUDE [pn-office-365-admin-center](../includes/pn-office-365-admin-center.md)].
 
 <table>
-<colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
-</colgroup>
 <thead>
 <tr class="header">
 <th><p>Customer engagement apps user form </th><th>Microsoft 365/Azure AD user</th></tr>
@@ -92,6 +90,7 @@ The following table shows the fields that are managed in the **Users** section o
  <tr><td>First Name </td><td>First Name </td></tr>
  <tr><td>Last Name </td><td>Last Name </td></tr>
 <tr><td>Primary Email** </td><td>Email </td></tr>
+<tr><td>InternalEmailAddress*** </td><td>Mail </td></tr>
 <tr><td>Main Phone </td><td>Office phone</td></tr>
 <tr><td>Mobile Phone  </td><td>Mobile phone</td></tr>
 <tr><td>Fax  </td><td>Fax number  </td></tr>
@@ -99,10 +98,13 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>Address   </td><td>City   </td></tr>
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
-<tr><td>AzureActiveDirectoryObjectId***     </td><td>ObjectId   </td></tr>
-<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br />** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br />*** object ID of a user or a service principal in Azure Active Directory.<br /></td></tr>
+<tr><td>AzureActiveDirectoryObjectId****     </td><td>ObjectId   </td></tr>
+<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.<br>**** ObjectID of a user or a service principal in Azure Active Directory.<br /></td></tr>
 </tbody>
 </table>
+
+> [!NOTE]
+> Custom fields are **never** syncronized between Microsoft 365, Microsoft Entra ID, and Power Platform.
 
 The following image shows Microsoft 365 user contact fields.
 
@@ -212,7 +214,7 @@ For users to have access to applications and data in an environment, at a minimu
 
 2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
 
-3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) to add or update users in Dataverse on demand. 
+3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest&preserve-view=true) to add or update users in Dataverse on demand. 
 
 4. Administrators can leverage the Power Platform admin center user management experience to [add users in Dataverse on demand](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
@@ -255,19 +257,19 @@ Adding users to Dataverse has different implications depending on the environmen
 
 
 ## Create a Read-Write user account
+
 By default, all licensed users are created with an access mode of **Read-Write**. This access mode provides full access rights to the user based on the security privileges that are assigned.
 
 **To update the access mode of a user**
 
 1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
-  
-2. Select **Enabled Users**, and then select a user's full name.  
-  
-3. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Read-Write**.  
-
-4. Select the **Save** icon.
+1. Select **Enabled Users**, and then open a user from the list.  
+1. On the user pane command bar select **...** > **Manage user in Dynamics 365**.
+1. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Read-Write**.  
+1. Select the **Save** icon.
 
 ## Create an Administrative user account
+
 An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the functionality. Use this account to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, and so on). Because an administrative user doesn't have access to customer data nor any functionality, the user doesn't require a license (after setup).
 
 You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you'll create a user account in Microsoft 365, and then in to the customer engagement app, select the **Administrative** access mode for the account.
@@ -294,24 +296,27 @@ You need to have the System Administrator security role or equivalent permission
 
 6. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
   
-7. Select **Enabled Users**, and then select a user's full name.  
+7. Select **Enabled Users**, and then open a user from the list.  
+
+8. On the user pane command bar select **...** > **Manage user in Dynamics 365**.
   
-8. In the user form, scroll down under **Administration** to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Administrative**.  
+9. In the user form, scroll down under **Administration** to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Administrative**.  
 
    Now you need to remove the license from the account.  
   
-9. Go to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
+10. Go to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
-10. Select **Users** > **Active Users**.  
+11. Select **Users** > **Active Users**.  
   
-11. Select the Administrative user account, and then select the **Licenses and Apps** tab.  
+12. Select the Administrative user account, and then select the **Licenses and Apps** tab.  
   
-12. Clear the license box(es), and then select **Save changes**.
+13. Clear the license box(es), and then select **Save changes**.
 
-## Create a non-interactive user account  
- The non-interactive user isn't a "user" in the typical sense&mdash;it doesn't represent a person, it's an access mode that's created by means of a user account. It's used for programmatic access to and from customer engagement apps between applications. A non-interactive user account lets these applications or tools&mdash;such as a connector from customer engagement apps to ERP&mdash;authenticate and access customer engagement apps without requiring a license. For each environment, you can create up to seven non-interactive user accounts.  
+## Create a non-interactive user account
+
+The non-interactive user isn't a "user" in the typical sense&mdash;it doesn't represent a person, it's an access mode that's created by means of a user account. It's used for programmatic access to and from customer engagement apps between applications. A non-interactive user account lets these applications or tools&mdash;such as a connector from customer engagement apps to ERP&mdash;authenticate and access customer engagement apps without requiring a license. For each environment, you can create up to seven non-interactive user accounts.  
   
- You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you'll create a user account in Microsoft 365. Then, in customer engagement apps, select the non-interactive access mode for the account.  
+You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you'll create a user account in Microsoft 365. Then, in customer engagement apps, select the non-interactive access mode for the account.  
   
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
@@ -319,21 +324,22 @@ You need to have the System Administrator security role or equivalent permission
   
 2. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
   
-3. Select **Enabled Users**, and then select a user's full name.  
-  
-4. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Non-interactive**.  
+3. Select **Enabled Users**, and then open a user from the list.  
+
+4. On the user pane command bar select **...** > **Manage user in Dynamics 365**.
+5. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Non-interactive**.  
   
    You then need to remove the license from the account.  
   
-5. Go to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
+6. Go to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
-6. Select **Users** > **Active Users**.  
+7. Select **Users** > **Active Users**.  
   
-7. On the **Licenses and Apps** tab, select the non-interactive user account.  
+8. On the **Licenses and Apps** tab, select the non-interactive user account.  
   
-8. Clear the license box(es), and then select **Save changes**.  
+9. Clear the license box(es), and then select **Save changes**.  
   
-9. Go back to the customer engagement app and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
+10. Go back to the customer engagement app and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
 
 ## Create an application user  
 You can use server-to-server (S2S) authentication to securely and seamlessly communicate between Dataverse and your web applications and services. S2S authentication is the common way that apps registered on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] use to access the Dataverse data of their subscribers. All operations performed by your application or service by using S2S will be performed as the application user you provide, rather than the user who's accessing your application.  
@@ -361,6 +367,9 @@ We are in the process of moving application user management from the legacy web 
 ## How stub users are created
 A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in customer engagement apps. This user can't sign in, can't be enabled, and can't be synchronized to Microsoft 365. This type of user can only be created through data import. 
 
+> [!CAUTION]
+> To prevent creating duplicate user records with the same UPN or throw errors during data import workflows, synchronize the users from Entra ID to Dataverse before running data import.
+
 A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Basic User** security role is assigned in a Power Apps environment.
 
 > [!NOTE]
@@ -377,11 +386,6 @@ When you create a new user or update an existing user in Dynamics 365 Customer E
 The following table shows the fields that are populated on the user form (user record) from the Azure AD user account.
 
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th><p>User form</p></th>

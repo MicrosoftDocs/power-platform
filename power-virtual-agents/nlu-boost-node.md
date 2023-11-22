@@ -4,7 +4,7 @@ description: "Use the Search and summarize content to boost conversations."
 keywords: "PVA"
 ms.date: 5/23/2023
 ms.topic: how-to
-author: KendalBond007
+author: iaanw
 ms.author: iawilt
 ms.reviewer: iawilt
 ms.collection: virtual-agent
@@ -15,6 +15,8 @@ searchScope:
 ---
 
 # Generative answers with Search and summarize content
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 When you created your bot, you were invited to [enter a URL from which your bot could generate responses](nlu-boost-conversations.md). This URL is used across the bot, however you can further boost your bot's conversations by using multiple internal and external information sources within individual topics.
 
@@ -30,6 +32,7 @@ These sources include:
 
 - Internal resources:
   - Azure OpenAI on your data
+  - Documents uploaded to Dataverse
   - SharePoint
   - OneDrive for Business
   - Custom data (internal or external): Supply your own content from any source, for example, from a Power Automate Flow, a Skill, or other source.
@@ -38,17 +41,8 @@ These sources include:
 
 Different information sources have different capabilities, such as the number of inputs, the type or format of the data, and how (or if) the source needs authentication to access it.
 
+[!INCLUDE[node-sources](includes/blocks/node-sources-table.md)]
 
-| Name | Source | Description | Number of Inputs | Authentication |
-| --- | --- | --- | --- | --- |
-| Bing Search | External | Searches the query input on Bing; returning results only from provided websites | 4 public URLs (for example, _microsoft.com_) | None |
-| Bing Custom Search | External | Query input filtered based on a website configuration external to Power Virtual Agents | Each search ID can use more than 4 URLs (Bing Custom Search also provides other functionality) but you can only connect to one search ID | None |
-| Azure OpenAI on your data | Internal |  | Defined by your Azure OpenAI Service connection. | Bot user's Azure Active Directory (Azure AD) authentication |
-| SharePoint | Internal | Connects to a SharePoint URL, uses GraphSearch to return results | 4 URLs | Bot user's Azure Active Directory (Azure AD) authentication |
-| OneDrive for Business | Internal | Connects to a OneDrive for Business URL, uses GraphSearch to return results | 4 URLs | Bot user's Azure Active Directory (Azure AD) authentication |
-| Custom data | Internal | Uses a JSON code block to define the URLs and content to use | One variable, populated with the JSON results to be summarized | Dependent on source |
-
-Bot user authentication for information sources means that when a specific user asks a question of the bot, the bot will only surface content that that specific user can access.
 
 
 
@@ -71,6 +65,7 @@ You'll now be able to specify and configure data sources, described in these art
 
 - [Use a Bing Custom Search to search a number of websites](nlu-generative-answers-bing.md)
 - [Use a connection to Azure OpenAI on your data](nlu-generative-answers-azure-openai.md)
+- [Upload documents to use as a data source (preview)](nlu-documents.md)
 - [Use content on SharePoint or OneDrive for Business](nlu-generative-answers-sharepoint-onedrive.md)
 - [Use a custom data source](nlu-generative-answers-custom-data.md)
 
@@ -79,10 +74,10 @@ You'll now be able to specify and configure data sources, described in these art
 Some of the sources require authentication, since the bot makes calls on behalf of the user interaction with the chat window. 
 
 When you use the test chat, it will make calls using the account used to sign in to _powerva.microsoft.com_. 
-If you publish your bot or want to use another account, you need to configure manual authentication using Azure AD. 
-Instructions for how to do this can be found in [Configure user authentication in Power Virtual Agents](configuration-end-user-authentication.md).
+When you publish your bot, the calls are made on behalf of the user chatting with the bot, using the authentication settings configured in the bot, which must use manual authentication with the **Service Provider** type of **Microsoft Entra ID**. 
+Instructions for how to do this can be found in [Configure user authentication in Microsoft Copilot Studio](configuration-end-user-authentication.md).
 
-You can find instructions for how to create the needed Azure AD application registration in [Configure user authentication with Azure Active Directory](configuration-authentication-azure-ad.md)
+You can find instructions for how to create the needed Microsoft Entra ID application registration in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md)
 
 You'll need to include these delegated permissions for **Microsoft Graph**:
 

@@ -1,6 +1,6 @@
 ---
 title: Set up environments and data policies
-description: Learn best practices for setting up environments and data policies to support the deployment of the SAP Procurement Accelerator solutions.
+description: Learn best practices for setting up environments and data policies to support the deployment of the SAP Procurement solutions.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -14,8 +14,8 @@ contributors:
   - scottwoodallmsft
   - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: install-set-up-deploy
-ms.date: 06/06/2023
+ms.topic: how-to
+ms.date: 08/18/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -40,12 +40,7 @@ First, make certain that members of your team are assigned admin roles:
 - Microsoft Power Platform System admin
 - Dynamics 365 Global admin
 
-More information:
-
-- [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
-- [Use service admin roles to manage your tenant](/power-platform/admin/use-service-admin-role-manage-tenant)
-- [Management and monitoring](/power-platform/admin/wp-management-monitoring)
-- [Working with the admin portals](/power-platform/admin/wp-work-with-admin-portals)
+As an admin, please review [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation). You can also review [Use service admin roles to manage your tenant](/power-platform/admin/use-service-admin-role-manage-tenant), [Management and monitoring](/power-platform/admin/wp-management-monitoring), and [Working with the admin portals](/power-platform/admin/wp-work-with-admin-portals) to gain more insight on how your organization can best secure and manage an SAP + Power Platform deployment.
 
 Next, review your organization's current Power Platform administration and governance practices with your team. Identify strengths and opportunities for improvement. This is also a good time to review [Microsoft Power Platform best practices](/power-platform/guidance/adoption/methodology).
 
@@ -55,7 +50,7 @@ More information: [Security and governance considerations](/power-platform/admin
 
 [Environments](/power-platform/admin/environments-overview) serve as containers to separate applications that might have different roles, security requirements, stages of deployment, or target audiences.
 
-Installing, configuring, testing, and running [solutions](/power-apps/maker/data-platform/solutions-overview) on Power Platform requires [application lifecycle management](/power-platform/alm/overview-alm). This three-environment strategy supports ALM:
+Installing, configuring, testing, and running [solutions](/power-apps/maker/data-platform/solutions-overview) on Power Platform requires [application lifecycle management](/power-platform/alm/overview-alm). A three-environment strategy supports ALM:
 
 - **Development**: The development sandbox environment is where the SAP Procurement solution template should first be installed and copied so it can be extended to meet your business requirements. This environment is connected to an SAP developer environment.
 - **Test**: The test sandbox environment is where configurations layered on top of the SAP Procurement solutions should be staged and validated by technical and business experts. This environment is connected to an SAP test environment.
@@ -64,15 +59,17 @@ Installing, configuring, testing, and running [solutions](/power-apps/maker/data
 > [!NOTE]
 > Each environment requires that a [Microsoft Dataverse database](/power-platform/admin/create-database) be created for it.
 
-More information:
+More information: [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy), [Create an environment in the Power Platform admin center](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center), [Manage Microsoft Dataverse settings](/power-platform/admin/admin-settings), [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)
 
-- [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy)
-- [Manage Microsoft Dataverse settings](/power-platform/admin/admin-settings)
-- [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)
+## Enable managed environments
 
-## Use the managed environment capability
+[Managed environments](/power-platform/admin/managed-environment-overview) give admins more control when running mission-critical processes—such as your procure-to-pay processes. You can:
 
-[Managed environments](/power-platform/admin/managed-environment-overview) give admins more control when running mission-critical processes, such as your procure-to-pay processes. Your admins can put tighter controls on accessing SAP data, view a managed environment's [data policies](/power-platform/admin/managed-environment-data-policies), and take advantage of other capabilities that support solutions running enterprise scenarios.
+- Put tighter controls on accessing SAP data by setting [data policies](/power-platform/admin/managed-environment-data-policies) and limiting sharing.
+- Get adoption insights by viewing usage.
+- Take advantage of other capabilities that support solutions running enterprise scenarios.
+
+:::image type="content" source="media/set-up-environments-data-policies/enable-managed-env.png" alt-text="Reuse environment variables in the SAP ERP connector's actions":::
 
 ## Set up data policies
 

@@ -1,6 +1,6 @@
 ---
-title: Relate and Unrelate functions in Power Apps
-description: Reference information including syntax and examples for the Relate and Unrelate functions in Power Apps.
+title: Relate and Unrelate functions
+description: Reference information including syntax and examples for the Relate and Unrelate functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Relate and Unrelate functions in Power Apps
+# Relate and Unrelate functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 Relate and unrelate records of two tables through a one-to-many or many-to-many relationship.
 
@@ -87,7 +89,7 @@ or:
 
 The walk through that follows does exactly these operations on these tables using an app with **Gallery** and **Combo box** controls for selecting the records involved.
 
-These examples depend on the sample data being installed in your environment. Either [create a trial environment including sample data](/power-apps/maker/model-driven-apps/overview-model-driven-samples.md#get-sample-apps) or [add sample data to an existing environment](/power-apps/maker/model-driven-apps/overview-model-driven-samples#install-or-uninstall-sample-data).
+These examples depend on the sample data being installed in your environment. Either [create a trial environment including sample data](/power-apps/maker/model-driven-apps/overview-model-driven-samples#get-sample-apps) or [add sample data to an existing environment](/power-apps/maker/model-driven-apps/overview-model-driven-samples#install-or-uninstall-sample-data).
 
 ### One-to-many
 

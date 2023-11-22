@@ -1,6 +1,6 @@
 ---
 title: "Create and use Power Apps environments"
-description: "Environments store all the data and resources associated with the bots you create in Power Virtual Agents."
+description: "Environments store all the data and resources associated with the bots you create in Microsoft Copilot Studio."
 keywords: "onboarding, environments, PVA"
 ms.date: 03/24/2023
 
@@ -12,9 +12,11 @@ ms.custom: onboarding, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
-# Working with environments in Power Virtual Agents
+# Working with environments in Microsoft Copilot Studio
 
-With Power Virtual Agents, you can create bots in different environments and easily switch between them.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+With Microsoft Copilot Studio, you can create bots in different environments and easily switch between them.
 
 An environment is a space to store, manage, and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. See the following topics for more information:
 
@@ -23,7 +25,7 @@ An environment is a space to store, manage, and share your organization's busine
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Leverage environments
 
@@ -46,7 +48,7 @@ When you first sign in and create a new bot, a default environment is created fo
 
 You can, however, create additional environments by using the [Power Platform Admin Center](/power-platform/admin/create-environment).
 
-1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and sign in using your work account. Use the same tenant that you use for Power Virtual Agents.
+1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and sign in using your work account. Use the same tenant that you use for Microsoft Copilot Studio.
 
 1. Go to the **Environments** tab and select **+ New** to open the **New environment** pane.
 
@@ -57,7 +59,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 
       > [!NOTE]
       > A production environment is intended for production scenarios and won't be subject to the same restrictions as a [trial environment](#trial-environments).
-      > If you are trying out Power Virtual Agents for free, you'll need to make sure you set the environment to **Trial**. The standard limitations for [trial environments](#trial-environments) apply.
+      > If you are trying out Microsoft Copilot Studio for free, you'll need to make sure you set the environment to **Trial**. The standard limitations for [trial environments](#trial-environments) apply.
 
    - For **Region** select the [support data region](data-location.md) where you want the environment to be created.
    - Set **Create a database for this environment?** to **Yes**
@@ -73,7 +75,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 
 1. You'll be returned to the **Environments** tab. Select **Refresh** to see the environment. You'll also see a notice explaining that it may take a few minutes to fully create the environment.
 
-1. After the environment is created, you can return to the [Power Virtual Agents portal](https://go.microsoft.com/fwlink/?linkid=2093067) and use the environment to create a new bot.
+1. After the environment is created, you can return to the [Microsoft Copilot Studio portal](https://go.microsoft.com/fwlink/?linkid=2093067) and use the environment to create a new bot.
 
 ## Create a bot in an existing environment
 
@@ -85,11 +87,11 @@ To create a bot in an existing environment, select the environment in the [bot c
 
 To create a bot in an environment where you don't have access, you'll need to be a system administrator or contact the system administrator. You then need to complete the following:
 
-1. Create a bot in the environment (this step will install the necessary Power Virtual Agents solutions).
+1. Create a bot in the environment (this step will install the necessary Microsoft Copilot Studio solutions).
 
 1. Assign the security role of "bot author" to you in the environment. More information: [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
-You can then return to the [Power Virtual Agents portal](https://web.powerva.microsoft.com) and create a bot in the environment.
+You can then return to the [Microsoft Copilot Studio portal](https://web.powerva.microsoft.com) and create a bot in the environment.
 
 More information:
 
@@ -98,14 +100,14 @@ More information:
 
 ## Trial environments
 
-When you trial Power Virtual Agents, you can create trial environments that expire after 30 days. When the environment expires, all the bots in the environment will be deleted. The data associated with the bot, including any flows and resources you have been using, will be lost.
+When you trial Microsoft Copilot Studio, you can create trial environments that expire after 30 days. When the environment expires, all the bots in the environment will be deleted. The data associated with the bot, including any flows and resources you have been using, will be lost.
 
-If you have created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Power Virtual Agents portal, you'll also see a notification if you have bots created in a trial environment that is going to expire in less than two weeks.
+If you have created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Microsoft Copilot Studio portal, you'll also see a notification if you have bots created in a trial environment that is going to expire in less than two weeks.
 
 :::image type="content" source="media/environments-first-run-experience/ennvironemnt_expiration_notification.png" alt-text="Environment expiration notification.":::
 
 > [!NOTE]
-> Note that there is a difference between an expiring environment and an expiring license. If your license is expiring, you will be able to extend it without losing any data. More information: [Sign up for a Power Virtual Agents trial](sign-up-individual.md#trial-expiration).
+> Note that there is a difference between an expiring environment and an expiring license. If your license is expiring, you will be able to extend it without losing any data. More information: [Sign up for a Microsoft Copilot Studio trial](sign-up-individual.md#trial-expiration).
 
 ## Converting a trial environment to a production environment
 
@@ -113,7 +115,7 @@ When using a trial environment and you want to retain the bots for longer than 3
 
 ## Supported operations
 
-Power Virtual Agents supports the following environment lifecycle operations, as described in [Power Platform environments overview](/power-platform/admin/environments-overview):
+Microsoft Copilot Studio supports the following environment lifecycle operations, as described in [Power Platform environments overview](/power-platform/admin/environments-overview):
 
 - [Back up and restore](/power-platform/admin/backup-restore-environments)
 - [Delete](/power-platform/admin/delete-environment)
@@ -135,7 +137,7 @@ In this case, you see this error: "You do not have permissions to any environmen
 
 You will need to [create a new environment](environments-first-run-experience.md). Use that environment to create your bot.
 
-### The environment doesn't show up in the drop-down menu of Power Virtual Agents
+### The environment doesn't show up in the drop-down menu of Microsoft Copilot Studio
 
 Your environment might not show up in the drop-down menu due to one of the following:
 

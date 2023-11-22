@@ -74,11 +74,13 @@
               items:
                 - name: Overview of extending pipelines
                   href: extend-pipelines.md
+                - name: Deploy with a service principal or other user (preview)
+                  href: delegated-deployments-setup.md
                 - name: Extend pipelines using GitHub Actions
                   href: extend-pipelines-github-export.md
             - name: Run pipelines
               href: run-pipeline.md
-            - name: Use Copilot to generate deployment notes in pipelines (preview)
+            - name: Use Copilot to generate deployment notes in pipelines
               href: copilot-deployment-notes-pipelines.md
     - name: ALM for developers
       href: alm-for-developers.md

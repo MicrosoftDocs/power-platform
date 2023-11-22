@@ -1,6 +1,6 @@
 ---
-title: AddColumns, DropColumns, RenameColumns, and ShowColumns functions in Power Apps
-description: Reference information including syntax and examples for the AddColumns, DropColumns, RenameColumns, and ShowColumns functions in Power Apps.
+title: AddColumns, DropColumns, RenameColumns, and ShowColumns functions
+description: Reference information including syntax and examples for the AddColumns, DropColumns, RenameColumns, and ShowColumns functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# AddColumns, DropColumns, RenameColumns, and ShowColumns functions in Power Apps
+# AddColumns, DropColumns, RenameColumns, and ShowColumns functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Shapes a [table](/power-apps/maker/canvas-apps/working-with-tables) by adding, dropping, renaming, and selecting its [columns](/power-apps/maker/canvas-apps/working-with-tables#columns).
 
@@ -55,8 +57,8 @@ The arguments to these functions support delegation. For example, a **Filter** f
 
 ```powerapps-dot
 AddColumns( RealEstateAgents,
-	"Listings",
-	Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName )
+   "Listings",
+   Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName )
 )
 ```
 
@@ -113,11 +115,11 @@ Let's try some of the examples from earlier in this topic.
 
    ```powerapps-dot
    ClearCollect( IceCreamSales,
-   	Table(
-       	{ Flavor: "Strawberry", UnitPrice: 1.99, QuantitySold: 20 },
-       	{ Flavor: "Chocolate", UnitPrice: 2.99, QuantitySold: 45 },
-       	{ Flavor: "Vanilla", UnitPrice: 1.50, QuantitySold: 35 }
-   	)
+      Table(
+          { Flavor: "Strawberry", UnitPrice: 1.99, QuantitySold: 20 },
+          { Flavor: "Chocolate", UnitPrice: 2.99, QuantitySold: 45 },
+          { Flavor: "Vanilla", UnitPrice: 1.50, QuantitySold: 35 }
+      )
    )
    ```
 
@@ -127,7 +129,7 @@ Let's try some of the examples from earlier in this topic.
 
    ```powerapps-dot
    ClearCollect( FirstExample,
-   	AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )
+      AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )
    )
    ```
 

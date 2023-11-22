@@ -1,13 +1,15 @@
 ---
 title: "View and download Dataverse analytics"
 description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
-author: tjvass
+author: StephenRauchPM
 ms.topic: conceptual
 ms.date: 03/22/2022
 ms.subservice: admin
-ms.author: tjvass
+ms.author: stephenrauch
 ms.reviewer: sericks
+
 ---
+
 # Microsoft Dataverse analytics
 
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization. 

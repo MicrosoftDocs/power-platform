@@ -131,7 +131,7 @@ When publishing applications on AppSource, you must get your application certifi
 The ID of your tenant is needed to interact with the APIs that require a token. Refer to [this article](/onedrive/find-your-office-365-tenant-id) for details on how to obtain the tenant ID. You can also use PowerShell commands to retrieve the tenant ID. The following example leverages the cmdlets in the [AzureAD module](/powershell/module/azuread/).
 
 ```powershell
-# Login to AAD as your user
+# Login to Microsoft Entra ID as your user
 Connect-AzureAD
 
 # Establish your tenant ID
@@ -156,8 +156,8 @@ Once you have this information, you can choose to use the Microsoft Authenticati
 // Substitute your own environment URL here.
 string resource = "https://<env-name>.api.<region>.dynamics.com";
 
-// Example Azure Active Directory app registration.
-// For your custom apps, you will need to register them with Azure AD yourself.
+// Example Microsoft Entra app registration.
+// For your custom apps, you will need to register them with Microsoft Entra ID yourself.
 // See https://docs.microsoft.com/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory
 var clientId = "51f81489-12ee-4a9e-aaae-a2591f45987d";
 var redirectUri = "http://localhost"; // Loopback required for the interactive login.

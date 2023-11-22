@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 06/20/2023
+ms.date: 10/19/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
 ---
@@ -27,7 +27,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
 
 - Lower total cost of ownership:
   - Pipelines significantly improve maker, developer, and admin productivity. Pipelines enable your business solutions to come to market faster, with higher quality, through a safe and governed process.
-  - Minimal effort to implement custom-tailored change management processes across your organization or team.
+  - Minimal effort to implement a secure and custom-tailored change management processes across your organization or team.
 
 - Save time and money:
   - The system handles the heavy lifting and ongoing maintenance so you don't have to.
@@ -35,6 +35,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
 - Scale ALM at your own pace:
   - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI](../developer/cli/introduction.md)
 - Achieve compliance, safety, monitoring, and automation goals with:
+  - Secure production environments with approval based [delegated deployments](delegated-deployments-setup.md).
   - Customizations and audit logs saved automatically and are easily accessible.
   - Out-of-the-box analytics provides better visibility within a central location.
   - The ability to view out-of-the-box Power BI reports within the pipelines app or create your own. More information: [Reporting overview for model-driven apps](/power-apps/maker/model-driven-apps/reporting-overview)
@@ -82,8 +83,10 @@ No. Solutions are exported as soon as a deployment request is submitted (when th
 
 ### Are standalone licenses required to use pipelines?
 
-- Both source and target environments must be enabled as Managed Environments. Managed Environments isn't required for the pipelines host. 
-- Standalone licenses aren't required to enable Managed Environments for developer and trial type environments.
+- Developer environments aren't required to be Managed Environments. They can be used for development and testing with the developer plan.
+- The pipelines host should be a production environment, but the pipelines host doesn't have to be a Managed Environment.
+- All other environments used in pipelines must be enabled as Managed Environments.
+- Licenses granting premium use rights are required for all Managed Environments.
 
 A common setup example:
 
@@ -96,7 +99,22 @@ A common setup example:
 
 ### Can I configure approvals for deployments?
 
-Yes. You can use the pipelines extensibility feature with Power Automate and other approval systems. Notice that to run pipelines, you currently need permission to import solutions to the target environment.
+Yes. See [delegated deployments](delegated-deployments-setup.md).
+
+### Can I use different service principals for diffent pipelines and stages?
+Yes. 
+
+### What connections can be used?
+
+Similar to authoring experiences, makers running pipelines can either provide their own connections or connections they have access to. Service principal connections can also be used for connectors that support service principal authentication, including custom connectors. 
+
+### Why can't I update existing environment variables or connection references?
+
+Currently, environment variables without a value in the solution or targeted environment can't be updated during deployment. If a value was deployed previously, it can be updated in the targeted environment. The same is true for updating connection references. 
+
+### Who owns deployed solution objects?
+
+The deploying identity. For standard deployments, the owner is the requesting maker. For delegated deployments, the owner is the delegated service principal or user. 
 
 ### Can pipelines deploy to a different tenant?
 
@@ -120,7 +138,7 @@ Yes, together these tools are powerful while keeping maker experiences simple. M
 
 ### Can I roll back to a previous version?
 
-Not currently. The same is true when manually importing solutions.
+Currently, only higher solution versions can be deployed or imported. As a work-around, admins download the artifact from the pipelines host, increment the solution version in the solution.xml file, then manually import it into the target environment. 
 
 ### Can I set retention policies for pipelines data?
 
@@ -140,7 +158,7 @@ Not currently. However, intentional extension hooks are available to customize p
 
 ### Where can I view and run pipelines?
 
-Currently within any development environments associated with a pipeline. Pipelines can't be viewed or run from within target environments. Notice you can also retrieve and run pipelines from the Power Platform CLI.
+Navigate to an unmanaged solution in development to an environment associated with your pipeline. Pipelines can't be viewed or run from the default solution, managed solutions, or in target environments. Notice you can also retrieve and run pipelines from the Power Platform CLI.
 
 ### Can I deploy across regions?
 
@@ -164,7 +182,7 @@ This is a valid configuration and should be evaluated based on the needs and pol
 
 ### Can I deploy unmanaged solutions?
 
-No. We recommend that you always deploy managed solutions to non-development environments. Notice unmanaged solutions are automatically exported and stored in the pipelines host so you can download and import them to other development environments or put them in source control. 
+No. We recommend that you always deploy managed solutions to nondevelopment environments. Notice unmanaged solutions are automatically exported and stored in the pipelines host so you can download and import them to other development environments or put them in source control. 
 
 ### Can I deploy multiple solutions at once?
 
@@ -188,8 +206,6 @@ While there are many additional functional differences, the fundamental differen
 
 We encourage customers to use pipelines for core deployment functionality, and when needed, extend pipelines to integrate with other CI/CD tools. When used together, the workloads required within CI/CD tools often become less complicated and costly to maintain. 
 
-### Can I use impersonation to deploy on behalf of another user?
-This is not supported.
 
 ## Next steps
 

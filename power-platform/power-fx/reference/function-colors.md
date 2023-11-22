@@ -1,6 +1,6 @@
 ---
-title: Color enumeration and ColorFade, ColorValue, and RGBA functions in Power Apps
-description: Reference information including syntax and examples for the Color enumeration and ColorFade, ColorValue, and RGBA functions in Power Apps.
+title: Color enumeration and ColorFade, ColorValue, and RGBA functions
+description: Reference information including syntax and examples for the Color enumeration and ColorFade, ColorValue, and RGBA functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,9 +17,14 @@ contributors:
   - jorisdg
 ---
 
-# Color enumeration and ColorFade, ColorValue, and RGBA functions in Power Apps
+# Color enumeration and ColorFade, ColorValue, and RGBA functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Use built-in color values, define custom colors, and use the alpha channel.
+
+> [!NOTE]
+> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support the **Color** enumeration.
 
 ## Description
 

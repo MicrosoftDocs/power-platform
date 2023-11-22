@@ -3,7 +3,7 @@ title: Use core components
 description: "The CoE Starter Kit core components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment."
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 08/01/2023
+ms.date: 09/05/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -173,12 +173,6 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Environment
   - Is desktop flow orphaned (yes/no)
   
-  > [!IMPORTANT]
-  >
-  > - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
-  > - Windows recorder (V1) is deprecated and no longer works.
-  > - Migrate your flows created with these solutions to Power Automate for desktop or delete them.
-
 - **RPA Session** represents a desktop flow session. The following information is available for each bot:
   - ID
   - Desktop Flow
@@ -339,10 +333,6 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 ### Apps
 
 #### CoE Admin Command Center
-
-> [!NOTE]
-> - In the February 2023 release, the **Admin - Command Center** canvas app has been replaced with the CoE Admin Command Center model-driven app. The new app uses model-driven app features and custom pages. The Admin - Command Center app has been renamed to [deprecated] Admin - Command Center and will be removed from the solution by June 2023.
-> - The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
 A canvas app used by admins as a starting point to launch other apps in the CoE Starter Kit and review content relevant to admins.
 

@@ -1,6 +1,6 @@
 ---
-title: Len function in Power Apps
-description: Reference information including syntax and examples for the Len function in Power Apps.
+title: Len function
+description: Reference information including syntax and examples for the Len function.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# Len function in Power Apps
+# Len function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Returns the length of a string of text.
 
