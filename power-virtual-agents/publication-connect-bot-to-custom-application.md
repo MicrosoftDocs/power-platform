@@ -86,7 +86,7 @@ To connect to the bot you have built with Power Virtual Agents, you'll need to r
 
 ### Get Direct Line token
 
-To start a conversation with your Power Virtual Agents bot, you need a Direct Line token. This can be obtained by making a GET request to the endpoint indicated within the PVA screen. This token must then be used as the header for subsequent calls to the directline API. 
+To start a conversation with your bot, you need a Direct Line token. This can be obtained by making a GET request to the endpoint indicated within the Copilot Studio screen. This token must then be used as the header for subsequent calls to the directline API. 
 
 Example:
 
