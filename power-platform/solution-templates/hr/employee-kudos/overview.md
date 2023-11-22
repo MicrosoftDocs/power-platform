@@ -16,12 +16,10 @@ Employees can recognize others for attributes or actions they are grateful for b
 
 :::image type="content" source="media/overview/kudos-screens-small.png" alt-text="Screenshots of Employee Kudos." lightbox="media/overview/kudos-screens-large.png":::
 
-The Kudos AppSource template package consists of two solutions:
+The Kudos template is available in [Microsoft AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>). The template package consists of two solutions:
 
-- **Employee Experience Base** - Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-- **Kudos** - Contains all the components needed to enable the Kudos experience within a company.
-
-You can access the template on AppSource at: <https://aka.ms/AccessEmployeeKudosTemplate>
+- **Employee Experience Base** contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+- **Kudos** contains all the components needed to enable the Kudos experience within a company.
 
 ## Employee Experience base solution components
 

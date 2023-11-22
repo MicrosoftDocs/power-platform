@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/26/2023
+ms.date: 11/22/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -28,12 +28,10 @@ The Onboarding Buddy app allows:
 
 As a program administrator, you can configure both the match and email timing. You can also customize the email content to help your Onboarders and Buddies accomplish the onboarding activities.
 :::image type="content" source="media/overview/ob-configure-match-and-emails.png" alt-text="Displays a visual of how match and email timing can be configured as well as customizing the email content .":::
-The Onboarding Buddy AppSource package consists of two solutions:
+The Onboarding Buddy template is available in [Microsoft AppSource](<https://aka.ms/AccessOnboardingBuddyTemplate>). The template package consists of two solutions:
 
-- **Employee Experience Base**: Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-- **Onboarding Buddy**: Contains all the components needed to enable the implementation of an Onboarding Buddy program within an organization.
-
-You can access the templates on AppSource at: <https://aka.ms/AccessOnboardingBuddyTemplate>
+- **Employee Experience Base** contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+- **Onboarding Buddy** contains all the components needed to enable the implementation of an Onboarding Buddy program within an organization.
 
 ## Employee Experience base solution components
 

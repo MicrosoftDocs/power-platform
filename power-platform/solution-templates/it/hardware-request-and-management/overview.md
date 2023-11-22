@@ -27,17 +27,20 @@ Program admins or managers can perform several functions, such as:
 
 When employees make requests for new hardware, the requests are reviewed and processed by program admins leveraging insights, AI (copilot), and Microsoft Teams embedded capabilities.
 
-The Hardware Request and Management template consists of two Power Platform solutions:
+The Hardware Request and Management template is available two ways.
 
-**IT Base**: Contains common foundational components that all IT template solutions use. For now, this is limited to components that limit localization and integration error handling capabilities. By sharing this across solutions, common strings can be localized once the base solution and all dependent solutions get the benefit. Errors across all IT solutions can also be monitored.
+- [Microsoft AppSource](<https://aka.ms/HardwareRequestAndManagementTemplate>).
+- [Templates for Power Platform on GitHub](<https://github.com/microsoft/Templates-for-Power-Platform>)
 
-**Hardware Request and Management**: Contains all the components needed to enable the Hardware Request and Management experience in your organization.
+The template package consists of two solutions:
 
-You can access the template on AppSource at: <https://aka.ms/HardwareRequestAndManagementTemplate>
+- **IT Base** contains common foundational components that all IT template solutions use. For now, this is limited to components that limit localization and integration error handling capabilities. By sharing this across solutions, common strings can be localized once the base solution and all dependent solutions get the benefit. Errors across all IT solutions can also be monitored.
+
+- **Hardware Request and Management** contains all the components needed to enable the Hardware Request and Management experience in your organization.
 
 ## Hardware Request and Management solution components
 
-The Hardware Request and Management solution file, which is also available for download and manual installation from [GitHub](https://github.com/microsoft/Templates-for-Power-Platform), contains the following Power Platform capabilities that can easily be customized to fit your own organizational requirements:
+The Hardware Request and Management solution file contains the following Power Platform capabilities that can easily be customized to fit your own organizational requirements:
 
 ### Hardware Request app
 

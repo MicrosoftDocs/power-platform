@@ -22,13 +22,11 @@ The Appointment Booking app allows:
 - Requestors to book the availabilities
 - Automated email notifications to keep everyone in sync
 
-The Appointment Booking template package consists of two solutions:
+The Appointment Booking template is available in [Microsoft AppSource](<https://aka.ms/AccessAppointmentBookingTemplate>). The package consists of two solutions:
 
-**IT Base**: Contains components that enable localization capabilities. By sharing the components across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+- **IT Base** contains components that enable localization capabilities. By sharing the components across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
 
-**Appointment Booking**: Contains all the components to enable users to manage appointment slots and bookings.
-
-You can access the template on AppSource at: <https://aka.ms/AccessAppointmentBookingTemplate>
+- **Appointment Booking** contains all the components to enable users to manage appointment slots and bookings.
 
 ## IT Base solution components
 

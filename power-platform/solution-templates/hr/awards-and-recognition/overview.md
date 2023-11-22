@@ -21,13 +21,11 @@ Program admins have the ability to define nomination periods and the available a
 
 :::image type="content" source="media/overview/ar-four-screens.png" alt-text="Screenshots of Awards and Recognition." lightbox="media/overview/ar-four-screens.png":::
 
-The Awards and Recognition AppSource template package consists of two solutions:
+The Awards and Recognition template is available in [Microsoft AppSource](<https://aka.ms/AccessAwardsAndRecognitionTemplate>). The template package consists of two solutions:
 
-- **Employee Experience Base** - Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+- **Employee Experience Base** contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
 
-- **Awards and Recognition** - Contains all the components needed to enable the Awards & Recognition experience in your organization.
-
-You can access the Awards and Recognition template on AppSource at: <https://aka.ms/AccessAwardsAndRecognitionTemplate>
+- **Awards and Recognition** contains all the components needed to enable the Awards & Recognition experience in your organization.
 
 ## Employee Experience base solution components
 
