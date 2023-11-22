@@ -1,6 +1,6 @@
 ---
-title: Power Platform licensing FAQs
-description: Learn FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
+title: Power Platform Licensing FAQs
+description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: conceptual
 ms.date: 07/31/2023
 author: chrisgarty
@@ -45,13 +45,13 @@ You can buy more data storage, file storage, and flow runs. To learn more, go to
 
 Any customer can sign up for a [free trial](try-powerapps-dynamics-365.md). Microsoft 365 admins can buy Power Platform apps plans for their teams or organization. Contact your Microsoft 365 admin when you're ready to buy.
 
-### Are there limits on the number of API requests users can make?
+### Are there limits on the number of Power Platform Requests users can make?
 
-Yes. To help ensure service levels, availability and quality, there are limits to the number of API requests users can make across Power Platform. Service limits are set against normal usage patterns in both 5-minute and per 24-hour intervals, and most customers won't reach them.
+Yes. To help ensure service levels, availability and quality, there are limits to the number of Power Platform Requests users can make across Power Platform. Service limits are set against normal usage patterns in both 5-minute and per 24-hour intervals, and most customers won't reach them.
 
-API capacity is tracked based on consumption at an individual, user level, and the daily limits can't be pooled at any other level.
+Power Platform Requests capacity is tracked based on consumption at an individual, user level, and the daily limits can't be pooled at any other level.
 
-API limits are also applicable to application users, non-interactive users, and administrative users in Dataverse.
+Power Platform Requests limits are also applicable to application users, non-interactive users, and administrative users in Dataverse.
 
 More information: [Requests limits and allocations](api-request-limits-allocations.md)
 
@@ -61,7 +61,7 @@ More information: [Requests limits and allocations](api-request-limits-allocatio
 
 - **Power Apps Premium** is licensed per user and entitles the licensed user to build, modernize, and run unlimited custom applications and access unlimited websites for $20/user/month (or $12 per user/month with 2,000+ new user licenses).
 
-- **Power Apps per app** enables individual users to run applications (one app or one portal) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
+- **Power Apps per app** enables individual users to run (one custom app or access one Power Pages website) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
 
 - **Power Apps pay-as-you-go** allows individual users to run applications (one app) without any licenses via an Azure subscription. You postpay only for the number of users who used the app in a month. See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
@@ -71,17 +71,17 @@ More information: [Power Apps pricing](https://powerapps.microsoft.com/pricing/)
 
 There's no difference between these two offers. Power Apps per user has been renamed *Power Apps Premium*.
 
-### How do I use Power Apps per app plans?
+### How do I use Power Apps per app?
 
 More information: [About Power Apps per app plans](about-powerapps-perapp.md)
 
-### How do I use Power Apps pay-as-you-go plan?
+### How do I use Power Apps pay-as-you-go?
 
 More information: [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md)
 
-### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
+### Power Apps per app allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
-The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each *per app* license provides an individual user with rights to one app (canvas and/or model-driven) within a single environment. A single user might be covered by multiple *per app* licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the *per app* license is stackable.
+Power Apps per app is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each *per app* license provides an individual user with rights to one app (canvas and/or model-driven) within a single environment. A single user might be covered by multiple *per app* licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the *per app* license is stackable.
 
 An important part of this feature simplification is that we'll no longer require any standalone plans for maker or admin capabilities. Previously admins required a Power Apps P2 license for certain management operations; this will no longer be the case.
 
@@ -101,7 +101,7 @@ Also, the guest must have the same license that's required for non-guests to run
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
 
-Power Apps licenses continue to include Power Automate capabilities. However, flows need to run within the context of the app, which refers to using the same data sources for triggers or actions as the app. Consuming standalone Power Automate flows unrelated to the app(s) requires purchase of a standalone Power Automate license.
+Power Apps licenses continue to include Power Automate capabilities. However, flows need to run within the context of the app, which refers to using the same data sources for triggers or actions as the app. Consuming standalone Power Automate flows unrelated to the app(s) requires purchase of a Power Automate license.
 
 ### Do all my users need to be licensed with the same types of Power Apps licenses, or can I mix licenses?
 
@@ -128,7 +128,7 @@ This new offer includes all the benefits of Power Automate per user with attende
 
 #### What are the pricing and licensing details for Power Automate Process?
 
--  **List Price (USD)**: $150 per user/month
+-  **List Price (USD)**: $150 per bot/month
 -   **Entitlements**: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization.
 
 > [!Note]
@@ -147,10 +147,10 @@ No, there are no licensing prerequisites required for eligibility to purchase Po
 #### What are the pricing and licensing details for Power Automate Process Mining?
 
 -   **List Price (USD)**: $5,000 for 100 GB of data stored/month
--   **Required pre-requisite**: Power Automate Premium. Multiple add-ons can be applied to a single pre-requisite.
+-   **Required prerequisite**: Power Automate Premium. Multiple add-ons can be applied to a single prerequisite.
 -   **More entitlements per capacity pack**:
-    -   Dataverse database capacity 2 GB/capacity pack
-    -   Dataverse file capacity 1 TB/capacity pack
+    -   Dataverse Database capacity 2 GB/capacity pack
+    -   Dataverse File capacity 1 TB/capacity pack
     -   250k Power Platform Requests/24 hrs
 
 #### When will Process Mining be available to purchase?
@@ -191,12 +191,12 @@ Customers that purchase the Power Automate Premium license are able to use entit
 
 The Power Automate Premium trial will include 100 MB of Process Mining stored data per process.
 
-### Power Automate hosted RPA add-on
+### Power Automate Hosted RPA add-on
 
-#### What are the pricing and licensing details for Power Automate hosted RPA?
+#### What are the pricing and licensing details for Power Automate Hosted RPA?
 
 -   **List Price (USD)**: $215 per bot/month
--   **Entitlements**: Licensed per bot, the Power Automate hosted RPA add-on license provides capacity for a single Microsoft RPA bot and a virtual machine for running automations.
+-   **Entitlements**: Licensed per bot, the Power Automate Hosted RPA add-on license provides capacity for a single Microsoft RPA bot and a virtual machine for running automations.
 -   **Qualifying prerequisite**: Power Automate Premium, Power Automate Process
     -   Multiple hosted RPA add-on licenses can be added with a single qualifying base license.
     -   Concurrent instances of a singular process require an extra unattended bot for each instance.
@@ -204,9 +204,9 @@ The Power Automate Premium trial will include 100 MB of Process Mining stored da
 > [!Note]
 >  Any software automated with an unattended bot may require extra licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. Please see the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
 
-#### Is per flow an eligible pre-requisite for the Hosted RPA add-on?
+#### Is Power Automate per flow an eligible prerequisite for the Hosted RPA add-on?
 
-Yes, per flow is eligible until February 1, 2024.
+Yes, per flow is eligible.
 
 #### How are the bots hosted?
 
@@ -216,11 +216,11 @@ The bots are hosted with Azure virtual machines leveraging Virtual Machine Scale
 
 Yes, the hosted RPA add-on will be available to all geographies worldwide except for UAE, due to capacity restrictions.
 
-#### Is there a trial version of Power Automate hosted RPA?
+#### Is there a trial version of Power Automate Hosted RPA?
 
 Yes, trial users can create up to 10 hosted RPA bots groups and have up to two bots running in parallel in a given environment. To start a trial, customers can go to the Power Automate pricing page and select the **Try free** link, under Power Automate per user with attended RPA or navigate to the Power Automate portal desktop flow page.
 
-#### Are Power Automate per user, Power Automate per flow, and the Power Automate unattended RPA add-on still available?
+#### Are Power Automate per user and the Power Automate unattended RPA add-on still available?
 
 These offers are available until February 1, 2024.
 
@@ -237,73 +237,68 @@ Follow these steps to apply unattended RPA add-ons for your flows.
 > [!Note]
 > The unattended add-on is environment-specific. If you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. If you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
 
-## Power Virtual Agents
+## Microsoft Copilot Studio
 
 Learn more: [Assign licenses and manage access to Power Virtual Agents](/power-virtual-agents/requirements-licensing)
 
-### What are the pricing and licensing details for Power Virtual Agents?
+### What are the pricing and licensing details for Microsoft Copilot Studio?
+Licensed by tenant, Microsoft Copilot Studio entitles a tenant to 25,000 messages per tenant/month enabling the tenant to create and iterate on topics by describing them and AI will build them. Generative answers can be used as primary information sources in the chatbots, or as fallback when authored topics are unable to address a users's query. As a result functional bots can be quickly created and deployed without having to manually author multiple topics that don't address customers' questions. Power Automate for Copilot Studio enables the tenant create cloud flows within the context of Microsoft Copilot Studio bots.  
 
 - **List Price (USD)**: $200 per tenant/month
 
-    Limited Time Offers available through December 31, 2023. To learn more, go to [pricing and explore](https://powervirtualagents.microsoft.com/pricing/).
+- **Entitlements**: Customers who purchase the new Microsoft Copilot Studio receive the following entitlements. 
+   -   Messages - 25,000 messages per tenant/month   
+   -   Billed messages definition: Microsoft Copilot Studio messages are the common currency across Microsoft Copilot Studio capabilities. A billed message is a request or message sent to the copilot triggering an action and/or response. Examples: a) user asks copilot when a store is open, and copilot replies with store hours = 1 billed message b) copilot proactively greets the user on a website = 1 billed message, c) user asks copilot for store hours for the upcoming holiday, copilot responds using GenAnswers = 2 billed messages. 
+   -   Message Consumption rates: 1) Regular (Non-generative AI) = 1 message, 2) Generative AI (Gen AI) answers over your data = 2 messages. Customers can use a mix of Regular and Generative AI messages. 
+   -   Gen AI
+   -    – AI-enabled conversations (Consumption rate of 2 messages when Generative AI is used) 
+   -   Copilot – Create and iterate chatbot topics using expanded natural language capabilities   
+Power Automate for Microsoft Copilot:Create cloud flows (Automated, instant and scheduled flows) within the context of Microsoft Copilot Studio bots   
+   -   Connectors - Standard, Premium and Custom connectors   
+   -   Dataverse for Microsoft Copilot (Dataverse default capacity) 5 GB Database, 20 GB File, 2  GB Log  
 
-- **Entitlements**: Licensed by tenant, Power Virtual Agents entitles a tenant to 2,000 chat sessions per tenant/month enabling the tenant to deploy chatbots and create cloud flows within the context of the Power Virtual Agents bots.
-
-### Power Virtual Agents capacity add-on
-
-#### What are the pricing and licensing details for Power Virtual Agents capacity add-on?
-
-- **List Price (USD)**: $100 per tenant/month
-
-    Limited Time Offers available through December 31, 2023. To learn more, go to the [pricing page](https://powervirtualagents.microsoft.com/pricing/).
-
-- **Entitlements**: Licensed by tenant, the capacity add-on adds 1,000 chat sessions per tenant/month increasing the number of chat bot sessions per tenant.
-
-### Power Virtual Agents per user
-
-#### What are the pricing and licensing details for Power Virtual Agents capacity add-on?
+### Microsoft Copilot Studio User License
 
 - **List Price (USD)**: $0 per user/month
-- **Entitlements**: Licensed by user, the Power Virtual Agents per user license is required for each user authoring bots. It is recommended to acquire the tenant license (with the capacity add-on, if needed) and user licenses as part of a single transaction to simplify onboarding to Power Virtual Agents.
+- **Entitlements**: Licensed by user, the Copilot Studio User License is required for each user authoring bots. It is recommended to acquire the tenant license and user licenses as part of a single transaction to simplify onboarding to Microsoft Copilot Studio.
 
-#### How do Power Virtual Agents use rights that come with Microsoft 365 or Office 365 licenses compare with use rights for the full Power Virtual Agents licenses?
+#### How do Microsoft Copilot Studio use rights that come with Microsoft 365 or Office 365 licenses compare with use rights for the full Microsoft Copilot Studio licenses?
 
-Power Virtual Agents for Teams enables customers with select Microsoft 365 or Office 365 licenses to build and deploy custom chatbots directly within Teams, using Dataverse for Teams, as opposed to Dataverse. Additionally, chat sessions are unlimited per tenant/month. A service limit of 10 sessions per user/24 hours across all bots in a tenant is enforced.
+Microsoft Copilot Studio for Teams enables customers with select Microsoft 365 or Office 365 licenses to build and deploy custom chatbots directly within Teams, using Dataverse for Teams, as opposed to Dataverse. Additionally, chat sessions are unlimited per tenant/month. A service limit of 10 sessions per user/24 hours across all bots in a tenant is enforced.
 
-#### Are there additional Power Virtual Agents licensing requirements to create and edit with Copilot?
+#### Are there additional Microsoft Copilot Studio licensing requirements to create and edit with Copilot?
 
-- Your bot must be created in the US region.
-- You need a Power Virtual Agents license and you must create an account.
-    - If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, go to the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
+- You need a Microsoft Copilot Studio license and you must create an account.
+    - If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Copilot Studio or Power Virtual Agents or before, go to the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
 - This capability might be subject to usage limits or capacity throttling.
 
 ## Power Pages
 
 ### How is Power Pages licensed?
 
-Power Pages (formerly Power Apps portals) licensing is capacity based and offers two types of capacities based on user type: **authenticated users per website per month** and **anonymous users per website per month**.
+Power Pages (formerly Power Apps portals) licensing is capacity based and offers two types of capacities based on user type: **Authenticated users per website/month** and **Anonymous users per website/month**.
 
 - **Authenticated users**
-    -  The **authenticated user capacity** subscription license can be purchased for the anticipated number of unique, authenticated users. For example, **employees (internal)** or **non-employees (external)** accessing a website during a month. 
-    -  The **authenticated user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of authenticated users who have accessed a website in a month.
+    -  The **Authenticated user capacity** subscription license can be purchased for the anticipated number of unique, authenticated users. For example, **employees (internal)** or **non-employees (external)** accessing a website during a month. 
+    -  The **Authenticated user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of authenticated users who have accessed a website in a month.
 
-**Meter Definition:** Power Pages authenticated user pay-as-you-go meter: A measure of the number of unique authenticated users per website per month.
+**Meter Definition:** Power Pages Authenticated user pay-as-you-go meter: A measure of the number of unique authenticated users per website per month.
 
 - **Anonymous users**
-    -  The **anonymous user monthly capacity** subscription license can be purchased for the anticipated number of unique, anonymous users accessing a website in a month.
-    -  The **anonymous user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of anonymous users who have accessed a website in a month.
+    -  The **Anonymous user monthly capacity** subscription license can be purchased for the anticipated number of unique, anonymous users accessing a website in a month.
+    -  The **Anonymous user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of anonymous users who have accessed a website in a month.
 
-### What is an authenticated user and how are authenticated users/website/month calculated?
+### What is an authenticated user and how are authenticated users per website/month calculated?
 
 Authenticated users are users who obtain secure access to a website by logging in through an authentication provider.
 
-Authenticated user/website/month are calculated as unique users who log into the website in a calendar month duration. Even if a user logs in multiple times to a website in a calendar month, then that user is counted as one user. Uniqueness is determined by using the ID of the contact record (Microsoft Dataverse contact table) to which the user is mapped.
+Authenticated users per website/month are calculated as unique users who log into the website in a calendar month duration. Even if a user logs in multiple times to a website in a calendar month, then that user is counted as one user. Uniqueness is determined by using the ID of the contact record (Microsoft Dataverse contact table) to which the user is mapped.
 
-### What is an anonymous user and how are anonymous users/website/month calculated?
+### What is an anonymous user and how are anonymous users per website/month calculated?
 
 Anonymous users are users who browse a website and don't log in.
 
-Anonymous users/website/month are calculated as unique users who access one or more anonymous pages of the website in a calendar month duration. Uniqueness is determined through a unique anonymous user ID stored in a browser cookie. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new anonymous user ID is generated and the user would be counted as a different user.
+Anonymous users per website/month are calculated as unique users who access one or more anonymous pages of the website in a calendar month duration. Uniqueness is determined through a unique anonymous user ID stored in a browser cookie. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new anonymous user ID is generated and the user would be counted as a different user.
 
 ### What are the scenarios in which a user isn't counted as an anonymous user, even though the user browses an anonymous page on the website?
 
@@ -356,7 +351,7 @@ Prices quoted above are list prices for commercial channel. Special prices are o
 
 ### Do Power Pages licenses include Dataverse storage?
 
-Yes, Dataverse database and Dataverse file capacity is included with the authenticated per user/website and the anonymous per user/website licenses. Allocated capacities differ between subscription plans and pay-as-you-go plans as detailed below.
+Yes, Dataverse Database and Dataverse File capacity is included with the authenticated per user/website and the anonymous per user/website licenses. Allocated capacities differ between subscription plans and pay-as-you-go plans as detailed below.
 
 ### Dataverse default capacity - subscription plans
 
@@ -460,21 +455,21 @@ Power Pages are licensed at a monthly rate that is based on a customer's anticip
 
 ### What Dataverse capacity is included with the Power Apps and Power Automate plans?
 
-Every tenant with a Power Apps license gets default capacity. In addition, for each license there's additional capacity (pooled) added to the tenant.
+Every tenant with a Power Apps license gets default capacity. In addition, for each license there's additional accrued (pooled) capacity added to the tenant.
 
 | Power Apps capacity limits | Per license entitlement (Power Apps per app plan) | Per license entitlement (Power Apps per user plan)|
 |--------------------------------|-------------------------------------------------------|--------------------------------------------------------|
-| Dataverse database capacity    | \+ 50 MB                                              | \+ 250 MB                                              |
-| Dataverse log capacity         | \+ 0                                                  | \+ 0                                                   |
-| Dataverse file capacity        | \+ 400 MB                                             | \+ 2 GB                                                |
+| Dataverse Database capacity    | \+ 50 MB                                              | \+ 250 MB                                              |
+| Dataverse Log capacity         | \+ 0                                                  | \+ 0                                                   |
+| Dataverse File capacity        | \+ 400 MB                                             | \+ 2 GB                                                |
 
-Since flows, as well as certain Power Automate features like approvals, run inside of the Dataverse, every tenant with a Power Automate license gets default capacity. In addition, for each per-user or per-flow license there is additional capacity added to the tenant.
+Since flows, as well as certain Power Automate features like approvals, run inside of the Dataverse, every tenant with a Power Automate license gets default capacity. In addition, for each per-user or per-flow license there is additional accrued capacity added to the tenant.
 
 | Power Automate capacity limits | + Per user | + Per flow |
 |------------------------------------|----------------|----------------|
-| Dataverse database capacity        | \+ 250 MB      | \+ 50 MB       |
-| Dataverse log capacity             | \+ 0           | \+ 0           |
-| Dataverse file capacity            | \+ 2 GB        | \+ 200 MB      |
+| Dataverse Database capacity        | \+ 250 MB      | \+ 50 MB       |
+| Dataverse Log capacity             | \+ 0           | \+ 0           |
+| Dataverse File capacity            | \+ 2 GB        | \+ 200 MB      |
 
 ### Dataverse for Teams
 
@@ -486,17 +481,17 @@ Dataverse for Teams is a built-in flexible datastore that provides data storage 
 
 - Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams. This includes using custom [APIs built using Azure API Management](/azure/api-management/export-api-power-platform).
 
-- Additionally, Power Virtual Agents capabilities are being introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams only.
+- Additionally, Microsoft Copilot Studio capabilities have been introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams only.
 
 The existing Microsoft Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
 
 #### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
 
-Yes. With Dataverse for Teams, users now can build flows using Power Automate portal and that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
+Yes. With Dataverse for Teams, users now can build flows that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
 
-#### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
+#### Which Microsoft 365 subscriptions include Dataverse for Teams and Microsoft Copilot Studio capabilities with Teams?
 
-Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for EDU A1 and SUB SKUs. To learn more, go to the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+Dataverse for Teams and Microsoft Copilot Studio for Teams capabilities are available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for EDU A1 and SUB SKUs. To learn more, go to the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 #### How is a Dataverse for Teams environment created?
 
@@ -536,9 +531,9 @@ In both cases:
 
 - Existing solutions within the environment can be updated.
 
-- Certain options within each solution (Power Apps/Power Automate/Power Virtual Agents) will be hidden or unavailable.
+- Certain options within each solution (Power Apps/Power Automate/Copilot Studio) will be hidden or unavailable.
 
-#### Can customers with Power Apps, Power Automate, and Power Virtual Agents subscriptions use premium connectors with Dataverse for Teams?
+#### Can customers with Power Apps, Power Automate, and Microsoft Copilot Studio subscriptions use premium connectors with Dataverse for Teams?
 
 Yes. Accessing premium connectors in a specific Dataverse for Teams environment requires users in that environment to be licensed accordingly.
 
@@ -560,8 +555,8 @@ Custom connectors aren't supported in Dataverse for Teams, but [support for Azu
 
 No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots continue to work when a Dataverse for Teams environment reaches the per environment limit (2 GB), users who want to create a new app, flow, chatbot, or table in the environment must:
 
-1. Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in an environment.
-1. [Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
+1. Purchase Power Apps, Power Automate, and Copilot Studio subscriptions based on their needs and start building their new app, flow, or chatbot in an environment.
+1. [Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Copilot Studio subscriptions based on their needs.
 
 #### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into an environment (assuming they have the corresponding license including access rights to Dataverse)?
 
@@ -581,7 +576,7 @@ This capability isn't available yet, but is included in our roadmap.
 
 #### Why do I see a Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
-No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. To learn more about this feature, go to [Dataverse capabilities with Microsoft 365 licenses](pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses).
+No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Copilot Studio plan is still needed to run apps/flows/bots with Dataverse. To learn more about this feature, go to [Dataverse capabilities with Microsoft 365 licenses](pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses).
 
 > [!Note]
 > There's a service plan called *Dataverse for Teams* that's related to the Dataverse for Teams capabilities. Our platform uses this service plan for granting customer tenants Dataverse for Teams storage capacity. Don't deactivate it.
@@ -650,7 +645,7 @@ More information:
 
 The following list provides add-ons applicable to all standalone Power Apps and Power Automate plans:
 
-- **Power Platform Requests add-on (formally Power Apps and Power Automate capacity add-on**) increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
+- **Power Platform Requests add-on (formally the Power Apps and Power Automate capacity add-on**) increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
 - Dataverse Database Capacity (1 GB) $40 per month
 - Dataverse File Capacity (1 GB) $2 per month
 - Dataverse Log Capacity (1 GB) $10 per month
