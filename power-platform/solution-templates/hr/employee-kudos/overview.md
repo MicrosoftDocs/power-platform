@@ -23,37 +23,37 @@ The Kudos template is available in [Microsoft AppSource](<https://aka.ms/AccessE
 
 ## Employee Experience base solution components
 
-- **One model-driven app**: **Employee Experience Localization Admin** - The app allows you to see and edit localized string values as an admin.
-- **One table**: **Employee Experience Localization** - Records the app string replacements for every localized version of the app.
+- **One model-driven app**: **Employee Experience Localization Admin** is the app allows you to see and edit localized string values as an admin.
+- **One table**: **Employee Experience Localization** records the app string replacements for every localized version of the app.
 - **Two security roles**:
-  - **Employee Experience Localization Reader** - Provides *read* access to the table.
-  - **Employee Experience Localizer** - Provides *create*, *read*, *update*, and *delete* access to the table.
-- **One Choice**: **ISO Employee Experience Language Code** - Stores the abbreviation for available language codes.
+  - **Employee Experience Localization Reader** provides *read* access to the table.
+  - **Employee Experience Localizer** provides *create*, *read*, *update*, and *delete* access to the table.
+- **One Choice**: **ISO Employee Experience Language Code** stores the abbreviation for available language codes.
 
 ## Kudos solution components
 
-- **One canvas app**: **Employee Kudos** - The app where the users can:
+- **One canvas app**: **Employee Kudos** is the app where the users can:
 
   - send Kudos
   - review their sent and received Kudos.
-- **One model-driven app**: **Kudos Administration** - The app where an admin can:
+- **One model-driven app**: **Kudos Administration** is the app where an admin can:
 
   - see all Kudos
   - create or edit badges
   - add or remove users from the *Opt Out User list*.
 - **Three tables**:
-  - **Kudos**: Stores the Kudos given.
-  - **Badges**: Defines the Kudos types that are available in the experience.
-  - **Opt-out User**: Records users who have opted out of the program.
+  - **Kudos** stores the Kudos given.
+  - **Badges** defines the Kudos types that are available in the experience.
+  - **Opt-out User** records users who have opted out of the program.
 - **Three security roles**:
   - **Kudos - program admin**
   - **Kudos - manager**
   - **Kudos - employee**
 - **Four Power Automate flows**:
-  - **Kudo app** – Shares Kudos with sender or assigns to a recipient.
-  - **Kudos** – Deactivates received Kudos when an employee leaves the company.
-  - **Kudos** – Deletes Kudos when a user opts out.
-  - **Kudos app** – Sends notification email.
+  - **Kudo app** shares Kudos with sender or assigns to a recipient.
+  - **Kudos** deactivates received Kudos when an employee leaves the company.
+  - **Kudos** deletes Kudos when a user opts out.
+  - **Kudos app** sends notification email.
 - **Three connection references**:
   - **Kudos - [Dataverse](/connectors/commondataserviceforapps/)** - Connection reference to Dataverse
   - **Kudos - [Office 365 Outlook](/connectors/office365/)** - Connection reference to Outlook

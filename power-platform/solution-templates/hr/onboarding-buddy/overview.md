@@ -37,31 +37,31 @@ The Onboarding Buddy template is available in [Microsoft AppSource](<https://aka
 
 The *Employee Experience Base* solution contains various components that allow an admin to set up and manage the language preferences.
 
-- **One model-driven app**: **Employee Experience Localization Admin** - Allows you to see and edit localized string values as an admin.
-- **One table**: **Employee Experience Localization** - Records the app string replacements for every localized version of the app.
+- **One model-driven app**: **Employee Experience Localization Admin** allows you to see and edit localized string values as an admin.
+- **One table**: **Employee Experience Localization** records the app string replacements for every localized version of the app.
 - **Two security roles**:
-  - **Employee Experience Localization Reader** - Provides read access to the table.
-  - **Employee Experience Localizer** - Provides *create*, *read*, *update*, and *delete* access to the table.
+  - **Employee Experience Localization Reader** provides read access to the table.
+  - **Employee Experience Localizer** provides *create*, *read*, *update*, and *delete* access to the table.
 - **One Choice**: **ISO Employee Experience Language Code** - Stores the abbreviation for available language codes.
 
 ## Onboarding Buddy solution components
 
 The *Onboarding Buddy* solution is composed of two apps, three tables, two security roles, four Power Automate flows, and four connections references for an admin to configure.
 
-- **One canvas app**: **Onboarding Buddy** - The app designed for the employees (Buddies) and managers to use. Onboarder information is added to the app for matching.
-- **One model-driven app**: **Onboarding Buddy Admin** - The app that allows Power Platform and program administrators to configure the program, manage, and view the status of all Onboarders and Buddies. In addition, with the required security role, administrators can also localize application strings.
+- **One canvas app**: **Onboarding Buddy** is the app designed for the employees (Buddies) and managers to use. Onboarder information is added to the app for matching.
+- **One model-driven app**: **Onboarding Buddy Admin** is the app that allows Power Platform and program administrators to configure the program, manage, and view the status of all Onboarders and Buddies. In addition, with the required security role, administrators can also localize application strings.
 - **Three tables**:
-  - **Buddy List** - Stores information and status about Buddies.
-  - **Onboarders** - Stores information and status about people onboarding to the organization.
-  - **Configuration** - Stores program settings.
+  - **Buddy List** stores information and status about Buddies.
+  - **Onboarders** stores information and status about people onboarding to the organization.
+  - **Configuration** stores program settings.
 - **Two security roles**:
   - **Onboarding Buddy - administrator**
   - **Onboarding Buddy - user**
 - **Four Power Automate flows**:
-  - **Buddy Onboarder Emails** - Manages state transitions and sends the appropriate emails. Edit this flow to customize your email content.
-  - **New Onboarders Sync** - Grabs all the new employee records in the last week and creates a record in the Onboarders table if it doesn't exist already.
-  - **Set Default fields in Onboarding table** - Uses the configuration information to update the fields related to the length of the buddy program and when emails should be sent when an Onboarder is matched to a Buddy.
-  - **Update Onboarders on update of Configurations record** - Updates the program-driven columns on the Onboarders table with new values based on configuration updates.
+  - **Buddy Onboarder Emails** manages state transitions and sends the appropriate emails. Edit this flow to customize your email content.
+  - **New Onboarders Sync** grabs all the new employee records in the last week and creates a record in the Onboarders table if it doesn't exist already.
+  - **Set Default fields in Onboarding table** uses the configuration information to update the fields related to the length of the buddy program and when emails should be sent when an Onboarder is matched to a Buddy.
+  - **Update Onboarders on update of Configurations record** updates the program-driven columns on the Onboarders table with new values based on configuration updates.
 - **Four connection references**:
   - **Onboarding Buddy app - [Dataverse](/connectors/commondataserviceforapps/)** - Connection reference to Microsoft Dataverse
   - **Onboarding Buddy app - [Office 365 Outlook](/connectors/office365/)** - Connection reference to Microsoft Office 365 Outlook

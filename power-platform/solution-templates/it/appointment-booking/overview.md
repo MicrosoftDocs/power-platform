@@ -14,6 +14,7 @@ ms.subservice: solution-templates
 # Appointment Booking template for Power Platform
 
 The Appointment Booking template helps your organization set up, manage, and automate appointment bookings. One group of people such as students, employees, or club members can easily and clearly book appointments with people such as professors, and organization leaders, or scheduled sessions.
+
 :::image type="content" source="media/overview/ab-canvas-model.png" alt-text="Screenshot of the Appointment Booking canvas app's Appointment Slot's screen and a screenshot of the model-driven app with the Microsoft Copilot panel open.":::
 
 The Appointment Booking app allows:
@@ -32,19 +33,19 @@ The Appointment Booking template is available in [Microsoft AppSource](<https://
 
 The *IT Base* solution contains various components that allow an admin to set up and manage the language preferences.
 
-- **One model-driven app**: **IT Template Administration** - Lets an admin create, view, and edit localized string values
+- **One model-driven app**: **IT Template Administration** lets an admin create, view, and edit localized string values
 
 - **Two tables**
 
-  - **IT Localization**: Records the app string replacements for every localized version of the app
-  - **IT Error**: Records all errors from app and flows
-- **One choice**: **ISO Language Code** - Stores the abbreviation for available language codes
+  - **IT Localization** records the app string replacements for every localized version of the app
+  - **IT Error** records all errors from app and flows
+- **One choice**: **ISO Language Code** stores the abbreviation for available language codes
 
 ## Appointment Booking solution components
 
-- **One canvas app**: **Appointment Booking app** - Where users manage appointment slots and bookings
+- **One canvas app**: **Appointment Booking app** is where users manage appointment slots and bookings
 
-- **One model-driven app**: **Appointment Booking Administrator** - Where an admin can manage all data
+- **One model-driven app**: **Appointment Booking Administrator** is where an admin can manage all data
 
 - **Seven tables**:
 
@@ -56,25 +57,25 @@ The *IT Base* solution contains various components that allow an admin to set up
   - **User**  
 
 - **Two security roles**:
-  - **Appointment Booking - Administrator** - Provides access to model-driven app and canvas app
-  - **Appointment Booking - User** - Provides access to canvas app
+  - **Appointment Booking - Administrator** provides access to model-driven app and canvas app
+  - **Appointment Booking - User** provides access to canvas app
 
 - **Two choices**:
-  - **Appointment Location** - Stores the available meeting modes (for example, *In Person*, *Online*, *Phone*)
-  - **Attendance** - Stores the available status for appointments (for example, *Attended*, *No Show*, *Cancelled*)
+  - **Appointment Location** stores the available meeting modes (for example, *In Person*, *Online*, *Phone*)
+  - **Attendance** stores the available status for appointments (for example, *Attended*, *No Show*, *Cancelled*)
 
 - **Ten Power Automate flows**:
 
-  - **Add New Contact** - Adds new record in Contact table if Requestor isn't added yet
-  - **Appointment Booking Email Notification** – Sends email notifications to both the Requestor and Meeting Provider when an appointment is created
-  - **Contact Outlook Invites** – Creates meeting invites for both Requestor and Meeting Provider when an appointment is booked
-  - **Rescheduled Outlook Invite** – Reschedules the meeting invites in Outlook and sends email notifications to both the Requestor and Meeting Provider
-  - **Cancelled Outlook Invites** – Cancels the meeting invites in Outlook and sends email notifications to the Requestor and Meeting Provider
-  - **Delete Event child flow** – Connects to Cancelled Outlook Invites
-  - **Email Reminder** – Scheduled flow that runs once a day
-  - **Contact Changed Email Notification** – Sends notifications whenever the Meeting Provider changes.
-  - **Update Initial Contact child flow** - Connects to Contact Changed Email Notification
-  - **Get Time Zone child flow** - Connects to these flows:
+  - **Add New Contact** adds new record in Contact table if Requestor isn't added yet
+  - **Appointment Booking Email Notification** sends email notifications to both the Requestor and Meeting Provider when an appointment is created
+  - **Contact Outlook Invites** creates meeting invites for both Requestor and Meeting Provider when an appointment is booked
+  - **Rescheduled Outlook Invite** reschedules the meeting invites in Outlook and sends email notifications to both the Requestor and Meeting Provider
+  - **Cancelled Outlook Invites** cancels the meeting invites in Outlook and sends email notifications to the Requestor and Meeting Provider
+  - **Delete Event child flow** connects to Cancelled Outlook Invites
+  - **Email Reminder** scheduled flow that runs once a day
+  - **Contact Changed Email Notification** sends notifications whenever the Meeting Provider changes.
+  - **Update Initial Contact child flow** connects to Contact Changed Email Notification
+  - **Get Time Zone child flow** connects to these flows:
     - Appointment Booking Email Notification
     - Cancelled Outlook Invites
     - Contact Changed Email Notification
