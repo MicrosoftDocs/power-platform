@@ -18,7 +18,7 @@ contributors:
 ---
 # Invite users with Azure Active Directory B2B collaboration
 
-You can invite other users to access your environment. The [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Global admin can do this through the [Azure portal](https://portal.azure.com). Invited users can access your environment using their own login credentials once a license and a security role are assigned to them. You don’t need to create a new user account and temporary password for these invited users in your own [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
+You can invite other users to access your environment. The [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Global admin can do this through the [Azure portal](https://portal.azure.com). Invited users can access your environment using their own login credentials once a license and a security role are assigned to them. The use of the apps created using Power Apps, customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Operations), and finance and operations apps are granted. You don’t need to create a new user account and temporary password for these invited users in your own [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
   
 ## Requirements  
   
