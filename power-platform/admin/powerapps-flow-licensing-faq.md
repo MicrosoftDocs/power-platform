@@ -239,8 +239,6 @@ Follow these steps to apply unattended RPA add-ons for your flows.
 
 ## Microsoft Copilot Studio
 
-Learn more: [Assign licenses and manage access to Power Virtual Agents](/power-virtual-agents/requirements-licensing)
-
 ### What are the pricing and licensing details for Microsoft Copilot Studio?
 Licensed by tenant, Microsoft Copilot Studio entitles a tenant to 25,000 messages per tenant/month enabling the tenant to create and iterate on topics by describing them and AI will build them. Generative answers can be used as primary information sources in the chatbots, or as fallback when authored topics are unable to address a users's query. As a result functional bots can be quickly created and deployed without having to manually author multiple topics that don't address customers' questions. Power Automate for Copilot Studio enables the tenant create cloud flows within the context of Microsoft Copilot Studio bots.  
 
