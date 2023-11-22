@@ -26,7 +26,7 @@ Managed Environments is a suite of premium governance capabilities that allows I
 
 You'll learn about each of the features and examples based on organizations that have activated Managed Environments, including:
 
- - **Pipelines in Power Platform** bring application lifecycle management (AML) automation to streamline development processes with reduced effort.
+ - **Pipelines in Power Platform** bring application lifecycle management (ALM) automation to streamline development processes with reduced effort.
  - **Maker welcome content** provides customized welcome message to help makers in the organization get started with Power Apps.
  - **Limit Sharing** adds guardrail on how broadly users can share canvas apps.
  - **Usage Insights** keeps admins informed about apps usage and users activities via weekly digest email.
@@ -56,7 +56,7 @@ To deploy a solution from one environment to another via pipelines, typically sp
 :::image type="content" source="media/mae/image1.png" alt-text="A screenshot of the Pipelines screen in Power Apps.":::
 
 > [!NOTE]
-> Is recomended to enable all environments, within a pipeline, as Managed Environments but the **Developer type environment are optional** and can be used in the pipeline without being activated as Managed Environment. 
+> Is recommended to enable all environments, within a pipeline, as Managed Environments but the **Developer type environment are optional** and can be used in the pipeline without being activated as Managed Environment. 
 
 It's a best practice for personal productivity solutions to be developed in a personal, development environment, which then can be deployed to target environment via pipelines. You may also consider settings up pipelines when creating new environments to facilitate ALM for citizen-led and pro-dev-led projects at scale. 
 
@@ -65,7 +65,7 @@ It's a best practice for personal productivity solutions to be developed in a pe
 
 In Managed Environments, admins can provide customized, welcome content to help their makers get started with [Power Apps](https://make.powerapps.com/). More information: [Enable maker welcome content](../../admin/welcome-content.md).
 
-A customized welcome content allows admins to inform makers about the company rules and what can be done in each environment or group of environments when first time a maker visit [Power Apps](https://make.powerapps.com). Here are some suggestions on how your organization could use the welcome message for each of the environment types.
+A customized welcome content allows admins to inform makers about the company rules and what can be done in each environment or group of environments when first time a maker visits [Power Apps](https://make.powerapps.com). Here are some suggestions on how your organization could use the welcome message for each of the environment types.
 
 #### Default environment 
 The default environment is often the most restricted environment with DLPs and sharing controls. To ensure your makers know about the possible limitations, a good starting point is to create a customized welcome message and include a link to your organization’s policy website or document.
@@ -142,7 +142,7 @@ Here are common scenarios of sharing limits in the different environment types:
 |Sandbox| Choose **Exclude sharing with security groups** and leave the **Limit total individuals who can share to** checkbox clear. This option also enables IT to manage a particular Security Group that includes all users authorized to run the application. <br><br>If the maker, user, or team has the ability to manage which users are permitted to test, choose **Don't set limits (default)**.|
 |Production|Choose **Don't set limits (default)**. If you want to control based on a specific Security Group, choose **Exclude sharing with security groups** and leave the **Limit total individuals who can share to** checkbox clear. |
 
-Currently the limit sharing capabilities are for canvas apps only. 
+Currently, the limit sharing capabilities are for canvas apps only. 
 
 
 ### Usage insights
@@ -167,7 +167,7 @@ It's common for environments to have multiple DLPs applied, particularly in scen
 
 In Managed Environments, admins can easily enforce rich static analysis checks on your solutions against a set of best practice rules and identify problematic patterns. More information: [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker)
 
-Users with permission to install solutions in environments, such as those with the Environment Maker role, can import solutions using various methods, including manually import solution form the maker portal or using pac command line input(CLI). It's common for a Center of Excellence (CoE) team to set up guardrails to reduce the risk of noncompliant solutions in the environment. In organizations with decentralized CoEs, it's often necessary to activate this feature along with sending an email to proactively reach out to makers and offer support.
+Users with permission to install solutions in environments, such as those with the Environment Maker role, can import solutions using various methods, including manually import solution from the maker portal or using pac command line input(CLI). It's common for a Center of Excellence (CoE) team to set up guardrails to reduce the risk of noncompliant solutions in the environment. In organizations with decentralized CoEs, it's often necessary to activate this feature along with sending an email to proactively reach out to makers and offer support.
 
 This feature allows for different levels of control, including None, Warn, and Block. Each level allows administrators to configure the impact of the check, whether it's to provide a warning but allow the import, or to block the import altogether, while also providing information to the maker about the result of the import.
 
@@ -177,8 +177,8 @@ Organizations using this feature have different configurations depending on the 
 |Environment Type|Solution checker|
 |------------------|-------------|
 |Default |Choose **Block** and select the **Send emails**  check box.|
-|Developer|Choose **Warm** and leave the **Send emails** check box clear.|
-| Sandbox | Choose **Warm** and leave the **Send emails** check box clear.|
+|Developer|Choose **Warn** and leave the **Send emails** check box clear.|
+| Sandbox | Choose **Warn** and leave the **Send emails** check box clear.|
 | Production| Choose **Block** and select the **Send emails** check box.|
 |Teams Environment|Choose **Block** and select the **Send emails** check box.|
 
@@ -222,7 +222,7 @@ This feature has been highly anticipated by customers with Dynamics 365 environm
 
 ### Lockbox
 
-Most operations, support, and troubleshooting performed by Microsoft personnel (including sub-processors) don't require access to customer data. However, in rare situations, accessing limited customer data is required for investigation purposes. Microsoft has a multi-layered internal approval process to grant access to customer data in these cases. Customers that are following compliance and regulatory requirement need extra control over who or when Microsoft can access their data. With Power Platform Customer Lockbox, customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. That gives full control over the data access to the customer.
+Most operations, support, and troubleshooting performed by Microsoft personnel (including sub-processors) don't require access to customer data. However, in rare situations, accessing limited customer data is required for investigation purposes. Microsoft has a multi-layered internal approval process to grant access to customer data in these cases. Customers who are following compliance and regulatory requirements need extra control over who or when Microsoft can access their data. With Power Platform Customer Lockbox, customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. That gives full control over the data access to the customer.
 
 With Lockbox activated, when data access is required for a ticket resolution, the Global administrators and Power Platform administrators receive a Lockbox request for approval. After the approval, the Microsoft personnel will have access to the data within the boundary of the environment that the request came for. Access is time bound and it isn't automatically renewed - every time data access is needed, a new Lockbox request is sent to the administrators. All updates to Lockbox requests are automatically recorded in the audit log. More information:[Lockbox in Power Platform](/power-platform/admin/about-lockbox)
 
@@ -234,7 +234,7 @@ For production environments that don't have Dynamics 365 applications enabled, t
 
 The ability to change the back-up retention period is useful for Managed Environments that don't have Dynamics 365 applications enabled. Organizations are using this extension to retain the back-up for a longer period, getting more flexibility and security for their data. It also helps with accidental data deletion scenarios or restores the system after a complex deployment that failed.
 
-The following PowerShell command can be used to extend the back-up to different retentions periods.
+The following PowerShell command can be used to extend the back-up to different retention periods.
 
 ```PowerShell
 Set-AdminPowerAppEnvironmentBackupRetentionPeriod -EnvironmentName 6B29FC40-CA47-1067-B31D-00DD010662DA -NewBackupRetentionPeriodInDays 28
@@ -258,7 +258,7 @@ To assess the impact on your desktop flows, you can use the DLP impact analysis 
 
 Application Insights can be set up to receive telemetry on diagnostics and performance captured by the Dataverse platform. This telemetry provides information that can be used to diagnose and troubleshoot issues related to errors and performance. Application Insights is part of the Azure Monitor ecosystem and is widely used by enterprises for monitoring and diagnostics. More information: [Overview of integration with Application Insights](/power-platform/admin/overview-integration-application-insights)
 
-Organizations that have widely used app or Power Automate flows are using this feature to get more control of their assets. The following image shows the count and average duration of each operation for a model-driven app. This information is useful to identify those operations that most affect users.
+Organizations that have widely used apps or Power Automate flows are using this feature to get more control of their assets. The following image shows the count and average duration of each operation for a model-driven app. This information is useful to identify those operations that most affect users.
 
 :::image type="content" source="media/mae/image18.png" alt-text="Application Insights Performance panel.":::
 
@@ -394,7 +394,7 @@ The following table offers a simple comparison between features of Managed Envir
 
 ## Conclusion
 
-Managed Environments with premium governance capabilities stand as a pivotal solution for IT admins tasked with managing and governing at scale. By providing a robust suite of tools and controls, it empowers governance teams in the organizations to maintain a delicate balance between innovation and security. With granular access controls, streamlined solution deployment, and policy enforcement, Managed Environments offer the foundation for organizations to confidently harness the full potential of the Power Platform while ensuring compliance, data integrity, and optimal performance. In an era where data governance is paramount, these capabilities elevate the platform to be a cornerstone in modern enterprise IT strategies, fostering efficiency and peace of mind for administrators and stakeholders alike. 
+Managed Environments with premium governance capabilities stand as a pivotal solution for IT admins tasked with managing and governing at scale. By providing a robust suite of tools and controls, it empowers governance teams in organizations to maintain a delicate balance between innovation and security. With granular access controls, streamlined solution deployment, and policy enforcement, Managed Environments offer the foundation for organizations to confidently harness the full potential of the Power Platform while ensuring compliance, data integrity, and optimal performance. In an era where data governance is paramount, these capabilities elevate the platform to be a cornerstone in modern enterprise IT strategies, fostering efficiency and peace of mind for administrators and stakeholders alike. 
 
 ### See also
 

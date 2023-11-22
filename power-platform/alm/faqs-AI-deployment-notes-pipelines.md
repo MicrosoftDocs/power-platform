@@ -51,7 +51,7 @@ The following are requirements to access the feature:
 
     1. On the **General** settings page, under **Pipeline Details**, enable or disable **AI deployment notes**.
 
-More information: [Use Copilot to generate deployment notes in pipelines (preview)](copilot-deployment-notes-pipelines.md). 
+More information: [Use Copilot to generate deployment notes in pipelines](copilot-deployment-notes-pipelines.md). 
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 
@@ -62,4 +62,4 @@ Complete these tasks to make the most of this feature:
 
 ## See also
 
-- [Use Copilot to generate deployment notes in pipelines (preview)](copilot-deployment-notes-pipelines.md)
+- [Use Copilot to generate deployment notes in pipelines](copilot-deployment-notes-pipelines.md)

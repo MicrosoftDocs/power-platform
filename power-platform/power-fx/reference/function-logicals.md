@@ -1,6 +1,6 @@
 ---
-title: And, Or, and Not functions in Power Apps
-description: Reference information including syntax and examples for the And, Or, and Not functions in Power Apps.
+title: And, Or, and Not functions
+description: Reference information including syntax and examples for the And, Or, and Not functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# And, Or, and Not functions in Power Apps
+# And, Or, and Not functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Boolean logic functions, commonly used to manipulate the results of comparisons and tests.
 

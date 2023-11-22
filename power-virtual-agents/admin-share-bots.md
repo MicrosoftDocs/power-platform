@@ -1,6 +1,6 @@
 ---
 title: "Share and collaborate on chatbots with other users (contains video)"
-description: "Share Power Virtual Agents chatbots with other users, assign security roles, and work together."
+description: "Share Microsoft Copilot Studio chatbots with other users, assign security roles, and work together."
 keywords: "Administration, share, multi-author, PVA"
 ms.date: 03/24/2023
 
@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Share your bot with other users
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can share your bots with others to grant them special permissions. There are two different sharing methods:
 
 1. Grant security groups, or your whole organization, permission to chat with the bot.
@@ -23,8 +25,8 @@ You can share your bots with others to grant them special permissions. There are
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization.
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Microsoft Entra ID** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization.
 
 # [Web app](#tab/web)
 
@@ -79,7 +81,7 @@ You can share your bot to allow everyone in the same organization the bot to cha
    :::image type="content" source="media/admin-share-bots/sharing-share-everyone-in-org.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
 
    > [!NOTE]
-   > Power Virtual Agents will not send email invitations to everyone in the organization. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md) and share it with users directly so they can chat with the bot.
+   > Microsoft Copilot Studio will not send email invitations to everyone in the organization. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md) and share it with users directly so they can chat with the bot.
 
 1. Select **Share** to share the bot with everyone in the organization.
 
@@ -120,11 +122,11 @@ Individual users that you share a bot with can view, edit, configure, share, and
 >
 
 > [!NOTE]
-> You can only share a bot with users who have a Power Virtual Agents per user license. Users who don't have a license can [sign up for a free trial](sign-up-individual.md).
+> You can only share a bot with users who have a Microsoft Copilot Studio per user license. Users who don't have a license can [sign up for a free trial](sign-up-individual.md).
 
-1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's overview page.
+1. To share a bot, sign in to Microsoft Copilot Studio and select **Share** at the top of the bot's overview page.
 
-    :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Power Virtual Agents bot overview page with the Share button highlighted." border="false":::
+    :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Microsoft Copilot Studio bot overview page with the Share button highlighted." border="false":::
 
 1. Specify the name or email address of each user that you would like to share the bot with.  
 
@@ -180,7 +182,7 @@ To let other users edit or add flows you'll need to share them in Power Automate
 
 You can stop sharing a bot with a user, and any shared user can stop the bot from being shared with other users, except for the owner. The owner will always have access to the bot.
 
-1. Sign in to Power Virtual Agents and select **Share** at the top of the bot's overview page.
+1. Sign in to Microsoft Copilot Studio and select **Share** at the top of the bot's overview page.
 
 1. Select **X** next to the users that you want to stop sharing the bot with.
 
@@ -192,7 +194,7 @@ You can stop sharing a bot with a user, and any shared user can stop the bot fro
 
 If you're a **System administrator**, you can assign and manage environment security roles when sharing a bot.
 
-The **Environment security roles** section shows when you share a bot and only if you're a **System administrator**. It lets you share bots with users who don't have sufficient environment permissions to use Power Virtual Agents.
+The **Environment security roles** section shows when you share a bot and only if you're a **System administrator**. It lets you share bots with users who don't have sufficient environment permissions to use Microsoft Copilot Studio.
 
 You must be a **System administrator** of the environment where the bot is located to view and add security roles.
 
@@ -203,9 +205,9 @@ You must be a **System administrator** of the environment where the bot is locat
 
 ### Assign the Environment maker security role during bot sharing
 
-You can assign the **Environment maker** security role when sharing a bot with a user who does not have sufficient environment permissions to run Power Virtual Agents.
+You can assign the **Environment maker** security role when sharing a bot with a user who does not have sufficient environment permissions to run Microsoft Copilot Studio.
 
-When [sharing the bot for chat](#share-a-bot-for-chat), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that the **Environment maker** security role will be assigned to the user so they can use the bot.
+When [sharing the bot for chat](#share-a-bot-for-chat), if the specified user does not have sufficient permissions to use Microsoft Copilot Studio in the environment, you'll be notified that the **Environment maker** security role will be assigned to the user so they can use the bot.
 
 :::image type="content" source="media/admin-share-bots/sharing-input-invitee-no-permission.png" alt-text="Share panel with permission notice bubble." border="false":::
 
@@ -235,7 +237,7 @@ Share your bot with other users so they can chat with the bot or collaborate tog
 
 ### Share bots for users to chat with
 
-A user can always chat with a bot if it was created in the same team. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
+A user can always chat with a bot if it was created in the same team. You can share bots with users outside of the team with the **Share** options available in Microsoft Copilot Studio.
 
 
 ### Share bot with security groups
@@ -281,7 +283,7 @@ You can share your bot to allow everyone in the same organization as the bot to 
     :::image type="content" source="media/admin-share-bots/sharing-share-everyone-in-org-teams.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
 
     > [!NOTE]
-    > Power Virtual Agents will not send an email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
+    > Microsoft Copilot Studio will not send an email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
 
 1. Select **Share** to share the bot with everyone in the organization.
 
@@ -324,14 +326,14 @@ Your permissions are determined by your [Microsoft Teams roles](/microsoftteams/
 - Team Members can create, edit, and configure bots they have created. They can view other member's bots in the team.
 
 > [!NOTE]
-> If you are an owner of an Azure Active Directory group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Power Virtual Agents apps in Microsoft Teams.
+> If you are an owner of an Microsoft Entra ID group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Microsoft Copilot Studio apps in Microsoft Teams.
 >
 > You can add yourself as a member to the team and it will resolve the issue after a few minutes.
 
 To share your bot with other users for collaboration, you need to [add them to your team](https://support.microsoft.com/office/add-members-to-a-team-in-teams-aff2249d-b456-4bc3-81e7-52327b6b38e9).
 
 > [!NOTE]
-> It could take up to 15 minutes before the new team member sees the team in the Power Virtual Agents app.
+> It could take up to 15 minutes before the new team member sees the team in the Microsoft Copilot Studio app.
 
 You can see a list of the teams you belong to, and each bot within that team by going to the **Chatbots** tab on the top bar. Teams are listed on the left, selecting a team shows the chatbots in that team. Where ever you are in the app, you can always get back to the list of chatbots by selecting **Chatbots** at the top.
 
@@ -350,7 +352,7 @@ If you select the menu icon next the bot's name you can then select **Edit** to 
 
 :::image type="content" source="media/admin-share-bots/admin-share-bots-hamburger.png" alt-text="The bot's menu lets you edit details, topics, and see analytics":::
 
-If you rename, restore, or delete a team, it could take up to 2 hours for the changes to be reflected in the Power Virtual Agents app.
+If you rename, restore, or delete a team, it could take up to 2 hours for the changes to be reflected in the Microsoft Copilot Studio app.
 
 ---
 
@@ -366,7 +368,7 @@ In the **Topics** list, you can see who's working on a topic under the **Editing
 
 This can help prevent conflicts if multiple people are working on the same topic.
 
-:::image type="content" source="media/admin-share-bots/sharing-multi-authors.png" alt-text="Screenshot showing the Power Virtual Agents list of topics with the Currently editing column highlighted.":::
+:::image type="content" source="media/admin-share-bots/sharing-multi-authors.png" alt-text="Screenshot showing the Microsoft Copilot Studio list of topics with the Currently editing column highlighted.":::
 
 > [!NOTE]
 > The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
@@ -379,7 +381,7 @@ If an author does not make any changes to the topic, or disconnects their comput
 
 Occasionally, multiple people might make changes to a topic and attempt to save their changes concurrently. For example, you might open and start editing a topic. Your coworker opens the same topic, makes a small change, and saves it. Then, when you've finished editing the topic, you go to save it, only to find yourself in a conflict state.
 
-Power Virtual Agents will detect this and prevent you from overwriting your coworker by prompting you with an option - you can reload the content with the latest changes (discarding your work), or you can save a copy of the topic (keeping your changes in a new, duplicate copy of the topic).
+Microsoft Copilot Studio will detect this and prevent you from overwriting your coworker by prompting you with an option - you can reload the content with the latest changes (discarding your work), or you can save a copy of the topic (keeping your changes in a new, duplicate copy of the topic).
 
 :::image type="content" source="media/admin-share-bots/sharing-multi-conflict.png" alt-text="Screenshot showing a prompt that says Updated content available and gives you options to discard your changes or save a copy." border="false":::
 

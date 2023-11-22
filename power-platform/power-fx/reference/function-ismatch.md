@@ -1,6 +1,6 @@
 ---
-title: IsMatch, Match, and MatchAll functions in Power Apps
-description: Reference information including syntax and examples for the IsMatch, Match, and MatchAll functions in Power Apps.
+title: IsMatch, Match, and MatchAll functions
+description: Reference information including syntax and examples for the IsMatch, Match, and MatchAll functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,7 +17,9 @@ contributors:
   - jorisdg
 ---
 
-# IsMatch, Match, and MatchAll functions in Power Apps
+# IsMatch, Match, and MatchAll functions
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Tests for a match or extracts portions of a text string based on a pattern.
 
@@ -207,7 +209,7 @@ Let's drill into that last example. If you wanted to convert this string to a da
 ```powerapps-dot
 With(
     Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
-	Time( Value( hours ), Value( minutes ), Value( seconds ) )
+   Time( Value( hours ), Value( minutes ), Value( seconds ) )
 )
 ```
 
