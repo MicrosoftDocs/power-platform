@@ -33,7 +33,7 @@ Additional evaluation is performed over custom datasets for offensive and malici
 ## What are the limitations of generative answers? How can users minimize the impact of limitations when using generative answers?
 - You must enable the **generative answers** option for each bot.
 
-- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported. Inaccurate responses may be returned when users converse with the system in languages other than English.
+- Languages other than English, aren't supported. Inaccurate responses may be returned when users converse with the system in languages other than English.
 
 - This capability may be subject to usage limits or capacity throttling.
 
