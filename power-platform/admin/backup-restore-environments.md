@@ -261,6 +261,14 @@ No for canvas apps. The app ID for a canvas app is different in a restored envir
 ### If I restore my environment, will previous backups remain available? 
 Yes, all backups within the organization's retention period will remain available. 
 
+### How can I restore records after a bulk deletion without restoring over an org?
+In order to restore after a bulk deletion without restoring over an org, there are two steps that have to be followed:
+
+1) Create a new, empty org
+2) Restore the backup from the current org, to the new org
+
+This will keep the original org with all of the records that have been added since the backup while also creating a new org with the records that were deleted.
+
 ## Troubleshooting
 
 ### Don't see your environment to restore to? 
