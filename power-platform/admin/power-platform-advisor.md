@@ -74,36 +74,23 @@ An admin can share the entire recommendation or share specific rows within the r
 
 ![A screenshot of a chat Description automatically generated](media/image4.png)
 
- 
-
 When an entire recommendation or multiple rows within the recommendation is shared, the sharing card will provide a link to that recommendation for the admin.
 
-When a specific app/resource is shared, the sharing card will provide a link to the recommendation as well as a link to that app in the maker portal.
-
- 
+When a specific app or resource is shared, the sharing card provides a link to the recommendation, as well as a link to that app in the maker portal.
 
 ![A screenshot of a computer Description automatically generated](media/image5.png)
 
- 
-
-- **Advisor summary card in Microsoft Teams**:
+### Advisor summary card in Microsoft Teams
 
 Once a week, Power Platform Advisor sends a summary card in Microsoft Teams highlighting the top 2 recommendations the admin should focus on for that week. This helps admins invest their time on the most important recommendations.
 
 To get this summary card, admins should install the "Power Apps" app in Microsoft Teams.
 
- 
-
 ![A screenshot of a computer Description automatically generated](media/image6.png)
-
- 
 
 Once installed, admin can view these summary cards in their Teams chats.
 
 ![A screenshot of a computer Description automatically generated](media/image7.png)
-
- 
-
 
 ## Categories of Recommendations
 
