@@ -42,7 +42,7 @@ The following table describes when and how data can move across regions for copi
 
 \* For your Power Platform environment regions hosted within the EU Data Boundary, we use an Azure OpenAI endpoint within the EU Data Boundary.
 
-[Learn more about how data movement across regions works for Dynamics 365 apps](copilot-data-movement-across-geographies-for-dynamics-365). 
+[Learn more about how data movement across regions works for Dynamics 365 apps](#copilot-data-movement-across-geographies-for-dynamics-365). 
 
 
 ## Enable data movement across regions
