@@ -1,3 +1,1 @@
-> 
-> Languages other than English aren't supported. 
->   
+Languages other than English aren't supported.
