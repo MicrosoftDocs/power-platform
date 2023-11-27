@@ -4,7 +4,7 @@ description: Learn how to create or edit business units
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/21/2023
+ms.date: 11/27/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -104,7 +104,7 @@ Make sure you have the System Administrator permission to update the setting.
   
 1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
   
-   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Security** > **Users**.
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner and then select **Advanced Settings** > **Settings** > **Security** > **Users**.
 
 2. Select the checkbox for a user name.  
   
@@ -116,24 +116,22 @@ Make sure you have the System Administrator permission to update the setting.
 
   > [!IMPORTANT] 
   >  You can also change the user's business unit in the legacy user web client. To do so, complete the following steps.
-
-  1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
-     
-  2. Select the checkbox for a user name and select the user.
-
-  3. On the user form, select the ellipsis **...** (the ellipsis), and then select **Manage user in Dynamics 365**.
-  
-     For [Unified Interface](about-unified-interface.md), select **Settings** (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner and then select **Advanced Settings** > **Settings** > **Security** > **Users**.
-
-  >   On the legacy **User detail** form, complete the following steps:
+  >
+  >  1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
+  >  
+  >  2. Select the checkbox for a user name and select the user.
+  >
+  >  3. On the user form, select the ellipsis **...** (the ellipsis), and then select **Manage user in Dynamics 365**.
+  >
+  >  4. On the legacy **User detail** form, complete the following steps:
   >      
-  >   1. Scroll down to the **Organization Information** section.
+  >  5. Scroll down to the **Organization Information** section.
   >       
-  >   2. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit.
+  >  6. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit.
   >       
   >        **Note**: Changing the user's business unit on the **User detail** form honors the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
   >        
-  >   3.  On the **User detail** form's Action bar, select **CHANGE BUSINESS UNIT**.
+  >  7.  On the **User detail** form's Action bar, select **CHANGE BUSINESS UNIT**.
   >       
   >       a. A **Change Business Unit** dialog box is displayed.
   >       
