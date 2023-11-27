@@ -91,7 +91,7 @@ There are two solution installation options available for you to consider:
 
 You can easily access and install the Awards and Recognition template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Awards and Recognition solution template on AppSource](https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa_awardsandrecognition?tab=Overview) and select **Get it now**. This takes you to the *Install Awards and Recognition Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Go to the [Awards and Recognition solution template on AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate) and select **Get it now**. This takes you to the *Install Awards and Recognition Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 :::image type="content" source="media/install/ar-install-env.png" alt-text="AScreenshot of the modal dialog window where you select the environment you set up for the template.":::
 
 1. Select the environment that you prepared for the template.

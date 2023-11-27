@@ -39,7 +39,7 @@ Be sure to check back often for new templates that become available.
 
 :::row:::
    :::column span="":::
-      ![SAP Procurement](media/overview/sap-procure-icon-sq.png "SAP Procurement") <br> Transform the view of SAP procurement data <br> [SAP Procurement Learn documentation](https://aka.ms/LearnSAPProcurementTemplate) <br> [SAP Procurement on AppSource](https://aka.ms/AccessSAPProcurementTemplate)  
+      ![SAP Procurement](media/overview/sap-procure-icon-sq.png "SAP Procurement") <br> Transform SAP procurement data <br> [SAP Procurement Learn documentation](https://aka.ms/LearnSAPProcurementTemplate) <br> [SAP Procurement on AppSource](https://aka.ms/AccessSAPProcurementTemplate)  
    :::column-end:::
    :::column span="":::
       ![Employee Kudos](media/overview/kudos-icon-sq.png "Employee Kudos") <br> Enable an employee recognition program <br> [Employee Kudos Learn documentation](https://aka.ms/LearnEmployeeKudosTemplate) <br> [Employee Kudos on AppSource](https://aka.ms/AccessEmployeeKudosTemplate)
@@ -58,7 +58,7 @@ Be sure to check back often for new templates that become available.
       ![Hardware Request and Management](media/overview/hrm-sq-icon.png "Hardware Request and Management") <br> Manage hardware requests and assets <br> [Hardware Request and Management Learn documentation](https://aka.ms/LearnHardwareRequestAndManagementTemplate) <br>[Hardware Request and Management on AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
    :::column-end:::
    :::column span="":::
-      ![Appointment Booking](media/overview/ab-icon-304.png "Appointment Booking") <br> Organize the appointment booking process <br> [Appointment Booking Learn documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [Appointment Booking on AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
+      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> Organize the appointment booking process <br> [Appointment Booking Learn documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [Appointment Booking on AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
    :::column-end:::
 :::row-end:::
 

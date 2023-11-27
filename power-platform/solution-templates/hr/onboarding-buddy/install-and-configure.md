@@ -101,7 +101,7 @@ There are two solution installation options available for you to consider:
 
 You can easily access and install the Onboarding Buddy template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Onboarding Buddy template in AppSource](<https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa-onboardingbuddy?exp=ubp8&tab=Overview>) and select **Get it now**.
+1. Go to the [Onboarding Buddy template in AppSource](<https://aka.ms/AccessOnboardingBuddyTemplate>) and select **Get it now**.
 1. Select the developer environment that you prepared for the template.
    :::image type="content" source="media/install/ob-install-env.png" alt-text="Select the environment in which to install the template.":::
 1. Agree to the *Terms and Privacy* statements by selecting the boxes.

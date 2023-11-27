@@ -23,7 +23,7 @@ Review the requirements, identify opportunities and develop a plan of action tha
 
 ### Confirm licensing
 
-Confirm your organization has the necessary licensing to use enterprise templates. You need:
+Confirm your organization has the necessary licensing to carry out an enterprise template implementation. You need:
 
 - One of the following Power Apps plans:
 
@@ -99,7 +99,7 @@ There are two solution installation options available for you to consider:
 
 You can access and install the Appointment Booking template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Appointment Booking template](<https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa-onboardingbuddy?exp=ubp8&tab=Overview>) in AppSource and select **Get it now**.
+1. Go to the [Appointment Booking template](<https://aka.ms/AccessAppointmentBookingTemplate>) in AppSource and select **Get it now**.
 1. Select the developer environment that you prepared for the template.
 1. Agree to the *Terms and Privacy* statements by checking the boxes.
 1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.

@@ -137,7 +137,7 @@ There are two solution installation options available for you to consider:
 
 You can easily access and install the Hardware Request and Management template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Hardware Request and Management template on AppSource](https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa-hardwarerequest-andmanagement-preview?flightCodes=e238631598a84d98974a43115813366d&tab=Overview) and select **Get it now**. This takes you to the *Install Hardware Request and Management Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Go to the [Hardware Request and Management template on AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate) and select **Get it now**. This takes you to the *Install Hardware Request and Management Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 :::image type="content" source="media/install/hrm-install-env.png" alt-text="Screenshot of the modal dialog window where you select the environment you set up for the template.":::
 1. Select the developer *environment* that you prepared for the template.
 1. Agree to the *Terms and Privacy Statements* by checking the boxes.
