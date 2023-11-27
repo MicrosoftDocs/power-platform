@@ -29,7 +29,7 @@ See the [AI-based chatbot authoring overview](nlu-gpt-overview.md) for more exam
 ## Prerequisites
 
 > [!CAUTION] 
-[!INCLUDE[prereq-lote](includes/prereq-lote.md)]
+> [!INCLUDE[prereq-lote](includes/prereq-lote.md)]
 
 - You'll need an account for Microsoft Copilot Studio. 
 
