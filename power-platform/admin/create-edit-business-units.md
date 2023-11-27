@@ -121,13 +121,11 @@ Make sure you have the System Administrator permission to update the setting.
   >  
   >  2. Select the checkbox for a user name and select the user.
   >
-  >  3. On the user form, select the ellipsis **...** (the ellipsis), and then select **Manage user in Dynamics 365**.
+  >  3. On the user form, select **...** (the ellipsis), and then select **Manage user in Dynamics 365**.
   >
-  >  4. On the legacy **User detail** form, complete the following steps:
-  >      
-  >  5. Scroll down to the **Organization Information** section.
+  >  4. On the legacy **User detail** form, scroll down to the **Organization Information** section.
   >       
-  >  6. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit.
+  >  6. Select the lookup button next to the **Business Unit** field and select a different business unit.
   >       
   >        **Note**: Changing the user's business unit on the **User detail** form honors the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
   >        
@@ -135,9 +133,9 @@ Make sure you have the System Administrator permission to update the setting.
   >       
   >       a. A **Change Business Unit** dialog box is displayed.
   >       
-  >       b. Select the lookup button (![Lookup button.](media/lookup-4.png)) next to the **Business Unit** field and select a different business unit.
+  >       b. Select the lookup button next to the **Business Unit** field and select a different business unit.
   >
-  >       **Note**: Changing the user's business unit on this dialog box does **not** honor the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
+  >       **Note**: Changing the user's business unit on this dialog box **does not** honor the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
   >         
   >        The user's role assignments will be removed and the user records' business unit will be moved to new business unit.
    
