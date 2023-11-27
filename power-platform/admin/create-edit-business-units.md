@@ -127,7 +127,7 @@ Make sure you have the System Administrator permission to update the setting.
   >       
   >  6. Select the lookup button next to the **Business Unit** field and select a different business unit.
   >       
-  >        **Note**: Changing the user's business unit on the **User detail** form honors the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
+  >        **Note**: Changing the user's business unit on the **User detail** form honors the [role assignment removal and business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
   >        
   >  7.  On the **User detail** form's Action bar, select **Change Business Unit**.
   >       
@@ -135,11 +135,11 @@ Make sure you have the System Administrator permission to update the setting.
   >       
   >       b. Select the lookup button next to the **Business Unit** field and select a different business unit.
   >
-  >       **Note**: Changing the user's business unit on this dialog box **does not** honor the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
+  >       **Note**: Changing the user's business unit on this dialog box **does not** honor the [role assignment removal and business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
   >         
   >        The user's role assignments will be removed and the user records' business unit will be moved to new business unit.
    
-#### Role assignment removal and user records' business unit movement database settings
+#### Role assignment removal and business unit movement database settings
 > [!NOTE] 
 > If you have enabled [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use the following [environment database settings](environment-database-settings.md) to manage your user security role and how you want to move the user’s records when you are changing the user’s business unit.
 > 
