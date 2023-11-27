@@ -1,6 +1,6 @@
 ---
 title: FAQ for generative answers
-description: This FAQ provides information about the AI technology used for the generative answers capability in Microsoft Copilot Studio, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+description: This FAQ provides information about the AI used for generative answers in Microsoft Copilot Studio. It includes key considerations and details about how the AI is used, how it is tested and evaluated, and any specific limitations.
 ms.date: 7/30/2023
 ms.custom: 
   - responsible-ai-faqs
@@ -20,15 +20,14 @@ These frequently asked questions (FAQ) describe the AI impact of the generative 
 Generative answers make your bot valuable out-of-the-box and increase the number of topics your bot is conversational in, without requiring any manual dialog tree authoring. 
 
 ## What are generative answers's capabilities? 
-When a user asks the bot a question for which no topic is configured, instead of defaulting to a fallback, the bot can optionally search for relevant content on a content source of your choosing, including public websites, SharePoint, or your own custom data source and then use generative AI to summarize that information into a response that is returned to the user. 
+When a user asks the bot a question for which no topic is configured the bot can optionally search for relevant content from a source of your choosing. This includes public websites, SharePoint, or your own custom data sources. The bot uses generative AI to summarize that information into a response that is returned to the bot user. 
 
 ## What is generative answers's intended use?
 Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query.
 
 ## How were generative answers evaluated? What metrics are used to measure performance?
 The capability is continually evaluated on a collection of manually curated question-and-answer datasets, covering multiple industries. 
-
-Additional evaluation is performed over custom datasets for offensive and malicious prompts and responses, both automatedly and through deidcated manual session designed to expand the test suite.
+Further evaluation is performed over custom datasets for offensive and malicious prompts and responses, through both automated and dedicated manual sessions designed to expand the test suite.
 
 ## What are the limitations of generative answers? How can users minimize the impact of limitations when using generative answers?
 - You must enable the **generative answers** option for each bot.
@@ -41,17 +40,17 @@ Additional evaluation is performed over custom datasets for offensive and malici
 
   The system is designed to query knowledge from the website of your choosing and to package relevant findings into an easily consumable response. However, it's important to keep in mind some characteristics of the AI that may lead to unexpected responses:
 
-  - The corpus upon which the model has been trained doesn't include data created after 2021.  
-    We have implemented mitigations to prevent the model from using its training corpus as a source for answers, however it is possible for answers to include content from websites other than the one you selected. 
+  - The corpus upon which the model was trained doesn't include data created after 2021.  
+    There are mitigations to prevent the model from using its training corpus as a source for answers, however it's possible for answers to include content from websites other than the one you selected. 
 
-  - The system doesn't perform an accuracy check, so if the selected data source contains inaccurate information it could be shown to your chatbot users. We have implemented mitigations to filter out irrelevant and offensive responses, and the feature is designed not to respond when offensive language is detected. These filters and mitigations are not foolproof.  
+  - The system doesn't perform an accuracy check, so if the selected data source contains inaccurate information it could be shown to your chatbot users. We have implemented mitigations to filter out irrelevant and offensive responses, and the feature is designed not to respond when offensive language is detected. These filters and mitigations aren't foolproof.  
 
   > [!NOTE]
   > You should always test and review your bots before publishing them, and consider collecting feedback from your bot's users.
 
 - Your admin can disable the ability to publish bots with generative answers for your tenant in the **Power Platform admin center**. 
 
-  :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Microsoft Copilot Studio boost conversation.":::
+  :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Microsoft Copilot Studio disable option.":::
 
 ### What data does the capability collect? How is the data used?
 The capability collects user prompts, the responses returned by the system, and any feedback you provide. 
@@ -59,9 +58,9 @@ The capability collects user prompts, the responses returned by the system, and 
 We use this data to evaluate and improve the quality of the capability. More information on what data is collected is available in the [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520). 
 
 ## What operational factors and settings allow for effective and responsible use of generative answers?
-Generative answers work best when you designate a trusted and valid website as the "source of truth" from which content should be queried. This may be your company website, for example www.microsoft.com. All webpages that belong to this domain will be searched for a match against the user’s question.
+Generative answers work best when you designate a trusted and valid source from which content should be queried. This source may be your company website, for example www.microsoft.com. All webpages that belong to this domain would be searched for a match against the user’s question.
 
-Feedback you provide on your satisfaction with generated responses will be used to improve system quality. You can provide feedback by selecting the thumbs up or thumbs down icon for generated responses. You can also include more feedback in free text.
+Feedback you provide on your satisfaction with generated responses is used to improve system quality. You can provide feedback by selecting the thumbs-up or thumbs-down icons for generated responses. You can also include more feedback in free text.
 
 ## See also
 
