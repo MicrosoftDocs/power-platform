@@ -63,17 +63,14 @@ While building cloud flows using this connector, you can get Power Platform Advi
 -   **Get Recommendation Resources**: This returns all the resources for a specific recommendation.
 -   **Execute Recommendation Action**: This executes a specific action for a specific resource listed in a recommendation.
 
-
 ### Share recommendations
 
 All recommendations in Power Platform Advisor can be shared in Microsoft Teams with other users for team collaboration.
 
 ![A screenshot of a computer Description automatically generated](media/image3.png)
-:::image type="content" source="media/recommentations.png" alt-text="Get proactive, best practice recommendations.":::
+:::image type="content" source="media/share-in-teams.png" alt-text="Share in Teams option.":::
 
-An admin can share the entire recommendation or share specific rows within the recommendation to another user by entering their name in the "Share to" textbox in the sharing panel. Shared recommendations or details will be sent to the user as an adaptive card in a personal Teams chat.
-
- 
+An admin can share the entire recommendation or share specific rows within the recommendation to another user by entering their name in the **Share to** textbox in the sharing panel. Shared recommendations or details are sent to the user as an adaptive card in a personal Teams chat.
 
 ![A screenshot of a chat Description automatically generated](media/image4.png)
 
