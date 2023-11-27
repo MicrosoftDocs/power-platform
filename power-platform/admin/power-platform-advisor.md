@@ -55,24 +55,21 @@ Admins can select a recommendation from the **Power Platform Advisor** page to v
 For each recommendation, Power Platform Advisor presents one or more relevant actions that can be taken from the recommendation panel. Depending on the recommendation, an admin can take relevant action for a specific resource or take bulk action by selecting up to 10 resources from the recommendation panel and taking an action. For certain recommendations that require action by a non-admin user, detailed instructions will be presented. To learn more, see [recommendations](#categories-of-recommendations).
 
 ### Automated actions
-In addition to the inline actions, Power Platform Advisor supports automated actions via the Power Platform Admin v2 connector. This is a very useful way to build a process for remediations. For example, instead of deleting an unused app - admin can first send an email/chat to the owner of the app informing about an impending action. If they don't receive any correspondence from the owner, the app can then be deleted.
+Power Platform Advisor supports automated actions made through [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. This is a very useful way to build a process for remediations. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app informing them about an impending action. If they don't receive any correspondence from the owner, the app can then be deleted.
 
-You can learn more about the Power Platform Admin v2 connector here. [<u>Power Platform Admin v2 connector (microsoft.com)</u>](https://learn.microsoft.com/en-us/connectors/powerplatformadminv2/).
+While building cloud flows using this connector, you can get Power Platform Advisor recommendations and actions using the following actions:
 
-While building the cloud flows using this connector, you can get the Power Platform Advisor recommendations and actions using the below actions -
-
--   Get Recommendations - This returns all the valid recommendations in your tenant.
-
--   Get Recommendation Resources - This returns all the resources for a specific recommendation.
-
--   Execute Recommendation Action - This executes a specific action for a specific resource listed in a recommendation.
+-   **Get Recommendations**: This returns all the valid recommendations in your tenant.
+-   **Get Recommendation Resources**: This returns all the resources for a specific recommendation.
+-   **Execute Recommendation Action**: This executes a specific action for a specific resource listed in a recommendation.
 
 
-### Share Recommendations**:
+### Share recommendations
 
-All recommendations in Power Platform Advisor can be shared in Microsoft Teams, with other users for team collaboration.
+All recommendations in Power Platform Advisor can be shared in Microsoft Teams with other users for team collaboration.
 
 ![A screenshot of a computer Description automatically generated](media/image3.png)
+:::image type="content" source="media/recommentations.png" alt-text="Get proactive, best practice recommendations.":::
 
 An admin can share the entire recommendation or share specific rows within the recommendation to another user by entering their name in the "Share to" textbox in the sharing panel. Shared recommendations or details will be sent to the user as an adaptive card in a personal Teams chat.
 
