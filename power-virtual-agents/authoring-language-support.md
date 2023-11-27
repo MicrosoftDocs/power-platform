@@ -19,12 +19,6 @@ ms.collection: virtual-agent
 
 You can create chatbots in Microsoft Copilot Studio in a number of languages. This means that your bots can reach a much broader audience and engage with more markets all around the world.
 
-> [!CAUTION] 
->  
-> Your bot must be created in the US region. 
->  
-> Other regions, and languages other than English, aren't currently supported.
-
 ## Prerequisites
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
