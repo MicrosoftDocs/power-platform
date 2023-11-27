@@ -209,6 +209,9 @@ You can use an encryption key created from the Azure Key Vault Managed HSM to en
       - **Key type**: **RSA-HSM**
       - **RSA key size**: **2048**
 
+  > [!NOTE]
+   > Supported [RSA-HSM key sizes:](https://learn.microsoft.com/azure/key-vault/keys/about-keys#hsm-protected-keys) 2048-bit, 3072-bit, 4096-bit.
+
 #### Encrypt your environment with key from Azure Key Vault with private link
 
 You can update your Azure Key vault's networking by enabling a [private endpoint](/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-key-vault-using-the-azure-portal) and use the key in the key vault to encrypt your Power Platform environments.
