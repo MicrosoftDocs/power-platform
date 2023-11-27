@@ -79,7 +79,7 @@ In addition to [URL considerations](nlu-boost-conversations.md#url-consideration
 
 - [Review AI response generation training, model, and usage FAQ](faqs-generative-answers.md) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
-- Languages other than English, aren't supported. 
+- [!INCLUDE[prereq-lote](includes/prereq-lote.md)] 
 
 - This capability may be subject to usage limits or capacity throttling.
 
