@@ -55,8 +55,6 @@ When you've created your own topic in the target language, you can test the bot 
 
 Microsoft Copilot Studio supports languages in three stages. The stage indicates how well the bot can understand user input in that language, with general availability being the strongest, followed by preview, and then experimental.
 
-<mark>What is the delta between the two prods in terms of support (noting before the next table it mentions that c4s solns have different experience)</mark>
-
 | Language               | Support              |
 | ---------------------- | -------------------- |
 | Chinese (Simplified)   | General availability |
@@ -83,33 +81,7 @@ Microsoft Copilot Studio supports languages in three stages. The stage indicates
 | Thai                   | General availability |
 | Turkish                | General availability |
 
-Service Copilot supports languages in three stages. The stage indicates how well the bot can understand user input in that language, with General availability being the strongest, followed by preview, and then experimental. Additional Service Copilot solutions contain content designed for each language, currently it only supports authoring bots for the English languages, with other languages coming soon.
 
-| Language               | Support              |
-| ---------------------- | -------------------- |
-| Chinese (Simplified)   | Authoring support only (Full support coming soon) |
-| Chinese (Traditional)  | Authoring support only (Full support coming soon) |
-| Czech                  | Authoring support only (Full support coming soon) |
-| Danish                 | Authoring support only (Full support coming soon) |
-| Dutch                  | Authoring support only (Full support coming soon) |
-| English                | General Availability |
-| Finnish                | Authoring support only (Full support coming soon) |
-| French                 | Authoring support only (Full support coming soon) |
-| German                 | Authoring support only (Full support coming soon) |
-| Greek                  | Authoring support only (Full support coming soon) |
-| Hindi                  | Authoring support only (Full support coming soon) |
-| Indonesian             | Authoring support only (Full support coming soon) |
-| Italian                | Authoring support only (Full support coming soon) |
-| Japanese               | Authoring support only (Full support coming soon) |
-| Korean                 | Authoring support only (Full support coming soon) |
-| Norwegian              | Authoring support only (Full support coming soon) |
-| Polish                 | Authoring support only (Full support coming soon) |
-| Portuguese (Brazilian) | Authoring support only (Full support coming soon) |
-| Russian                | Authoring support only (Full support coming soon) |
-| Spanish                | Authoring support only (Full support coming soon) |
-| Swedish                | Authoring support only (Full support coming soon) |
-| Thai                   | Authoring support only (Full support coming soon) |
-| Turkish                | Authoring support only (Full support coming soon) |
 
 ### Related topics
 
