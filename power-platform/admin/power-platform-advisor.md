@@ -43,4 +43,6 @@ Power Platform tenant admins can view the top recommendations on the Power Platf
 
 If the homepage is customized or you don't see the Power Platform Advisor card or you removed the card from the homepage, you can click on "+Add cards" command to add the card to the homepage. 
 
+:::image type="content" source="media/add-cards.png" alt-text="Add the Power Platform Advisor card to the homepage.":::
+
 
