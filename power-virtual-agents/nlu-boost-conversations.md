@@ -65,7 +65,9 @@ In addition to [URL considerations](nlu-boost-conversations.md#url-consideration
 ## Prerequisites
 
 > [!CAUTION] 
-[!INCLUDE[prereq-lote](includes/prereq-lote.md)]
+> 
+> [!INCLUDE[prereq-lote](includes/prereq-lote.md)]
+>  
 
 - An account for Microsoft Copilot Studio.
 
