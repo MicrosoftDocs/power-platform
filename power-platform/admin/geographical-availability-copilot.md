@@ -31,16 +31,19 @@ However, these features aren't available in all regions and languages. Depending
 
 When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint that powers these features is hosted**. We might store prompt and output data for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
 
-The following table describes when and how data can move across regions for copilots and generative AI features.\*
+The following table describes when and how data can move across regions for copilots and generative AI features in Power Platform.\*
 
-| Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Does data move across regions? | How to allow data to move across regions|
+| Region where your Power Platform environment is hosted | Region where Azure OpenAI Service is hosted | Does data move across regions? | How to allow data to move across regions|
 |-------------------------|-------------------------|-------------------------|-------------------------|
 | Australia</br>United Kingdom</br>United States | Within the respective geographical region of your Power Platform or Dynamics 365 environment | No | No action required. Data doesn't move across regions in this scenario.|
 | Europe | Sweden or Switzerland | Yes | No action required. Data doesn't move outside the [EU Data Boundary](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb) in this scenario.<br><br>Admins can clear the [**Move data across regions**](#enable-data-movement-across-regions) checkbox, if they want to. |
 | France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 | Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 
-\* For your Power Platform and Dynamics 365 environment regions hosted within the EU Data Boundary, we use an Azure OpenAI endpoint within the EU Data Boundary.
+\* For your Power Platform environment regions hosted within the EU Data Boundary, we use an Azure OpenAI endpoint within the EU Data Boundary.
+
+[Learn more about how data movement across regions works for Dynamics 365 apps](copilot-data-movement-across-geographies-for-dynamics-365). 
+
 
 ## Enable data movement across regions
 If your environment is hosted in a region that requires data movement across regions to use copilots and generative AI features, you need to consent to the terms of use on the **Move data across regions** checkbox in the Power Platform admin center.
