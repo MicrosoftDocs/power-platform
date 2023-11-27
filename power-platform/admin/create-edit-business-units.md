@@ -131,7 +131,7 @@ Make sure you have the System Administrator permission to update the setting.
   >       
   >        **Note**: Changing the user's business unit on the **User detail** form honors the [role assignment removal and user records' business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
   >        
-  >  7.  On the **User detail** form's Action bar, select **CHANGE BUSINESS UNIT**.
+  >  7.  On the **User detail** form's Action bar, select **Change Business Unit**.
   >       
   >       a. A **Change Business Unit** dialog box is displayed.
   >       
