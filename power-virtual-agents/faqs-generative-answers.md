@@ -17,7 +17,7 @@ ms.reviewer: iawilt
 These frequently asked questions (FAQ) describe the AI impact of the generative answers feature in Microsoft Copilot Studio.
 
 ## What is generative answers?
-Generative answers make your bot valuable out-of-the-box and increase the number of topics your bot is conversational in, without requiring any manual dialog tree authoring. 
+[Generative answers make your bot valuable out-of-the-box](nlu-boost-conversations.md) and increase the number of topics your bot is conversational in, without requiring any manual dialog tree authoring. 
 
 ## What are generative answers's capabilities? 
 When a user asks the bot a question for which no topic is configured the bot can optionally search for relevant content from a source of your choosing. This includes public websites, SharePoint, or your own custom data sources. The bot uses generative AI to summarize that information into a response that is returned to the bot user. 
@@ -32,7 +32,7 @@ Further evaluation is performed over custom datasets for offensive and malicious
 ## What are the limitations of generative answers? How can users minimize the impact of limitations when using generative answers?
 - You must enable the **generative answers** option for each bot.
 
-- Languages other than English, aren't supported. Inaccurate responses may be returned when users converse with the system in languages other than English.
+- [Languages other than English aren't supported](authoring-language-support.md). Inaccurate responses may be returned when users converse with the system in languages other than English.
 
 - This capability may be subject to usage limits or capacity throttling.
 
@@ -48,7 +48,7 @@ Further evaluation is performed over custom datasets for offensive and malicious
   > [!NOTE]
   > You should always test and review your bots before publishing them, and consider collecting feedback from your bot's users.
 
-- Your admin can disable the ability to publish bots with generative answers for your tenant in the **Power Platform admin center**. 
+- Your admin can [disable the ability to publish bots with generative answers](security-and-governance.md) for your tenant in the **Power Platform admin center**. 
 
   :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Microsoft Copilot Studio disable option.":::
 
