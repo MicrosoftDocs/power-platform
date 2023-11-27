@@ -112,7 +112,7 @@ Make sure you have the System Administrator permission to update the setting.
   
 4. In the **Change Business Unit** dialog box, select a business unit. Select **OK**.
 
-   The default setting is to **Move records to new business unit**. You can change this option by changing the [**AlwaysMoveRecordToOwnerBusinessUnit** database setting](#role-assignment-removal-and-user-records-business-unit-movement-database-settings)  .
+   The default setting is to **Move records to new business unit**. You can change this option by changing the [**AlwaysMoveRecordToOwnerBusinessUnit** database setting](#role-assignment-removal-and-business-unit-movement-database-settings)  .
 
   > [!IMPORTANT] 
   >  You can also change the user's business unit in the legacy user web client. To do so, complete the following steps.
@@ -127,7 +127,7 @@ Make sure you have the System Administrator permission to update the setting.
   >       
   >  6. Select the lookup button next to the **Business Unit** field and select a different business unit.
   >       
-  >        **Note**: Changing the user's business unit on the **User detail** form honors the [role assignment removal and business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
+  >        **Note**: Changing the user's business unit on the **User detail** form honors the [role assignment removal and business unit movement](#role-assignment-removal-and-business-unit-movement-database-settings) database settings.
   >        
   >  7.  On the **User detail** form's Action bar, select **Change Business Unit**.
   >       
@@ -135,7 +135,7 @@ Make sure you have the System Administrator permission to update the setting.
   >       
   >       b. Select the lookup button next to the **Business Unit** field and select a different business unit.
   >
-  >       **Note**: Changing the user's business unit on this dialog box **does not** honor the [role assignment removal and business unit movement](#role-assignment-removal-and-user-records-business-unit-movement-database-settings) database settings.
+  >       **Note**: Changing the user's business unit on this dialog box **does not** honor the [role assignment removal and business unit movement](#role-assignment-removal-and-business-unit-movement-database-settings) database settings.
   >         
   >        The user's role assignments will be removed and the user records' business unit will be moved to new business unit.
    
