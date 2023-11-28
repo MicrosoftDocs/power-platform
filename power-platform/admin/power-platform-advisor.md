@@ -32,7 +32,7 @@ With Power Platform Advisor, administrators can:
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Turn on Power Platform Advisor
-Power Platform Advisor is turned on, by default, for all [Managed Environments](managed-environment-overview.md), however, recommendations are only available after you turn on [tenant-level analytics](tenant-level-analytics.md).
+Power Platform Advisor is turned on by default for all [Managed Environments](managed-environment-overview.md), however, recommendations are only available after you turn on [tenant-level analytics](tenant-level-analytics.md).
 
 ## Key capabilities
 
