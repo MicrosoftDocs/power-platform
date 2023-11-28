@@ -37,17 +37,17 @@ Power Platform Advisor is turned on, by default, for all [Managed Environments](
 ## Key capabilities
 
 ### Recommendations
-Power Platform tenant admins can view the top recommendations on the **Power Platform Advisor** card. If the Power Platform admin center homepage is not customized, this card is automatically pinned on the homepage. Your tenant is scanned for recommendations weekly. 
+Power Platform tenant admins can view the top recommendations on the **Advisor (Preview)** card. If the Power Platform admin center homepage is not customized, this card is automatically pinned on the homepage. Your tenant is scanned for recommendations weekly. 
 
-:::image type="content" source="media/advisor-card.svg" alt-text="Power Platform Advisor card on the homepage.":::
+:::image type="content" source="media/advisor-card.svg" alt-text="Advisor card on the homepage.":::
 
-If the homepage is customized or you don't see the **Power Platform Advisor** card or you removed the card from the homepage, you can select **+ Add cards** to add the card to the homepage. 
+If the homepage is customized or you don't see the **Advisor (Preview)** card or you removed the card from the homepage, you can select **+ Add cards** to add the card to the homepage. 
 
-The Power Platform Advisor card will show the top 4 recommendations. You can select **View details** for any of the recommendations to view the details for that recommendation. You can select the **View recommendations** button to view all the recommendations in the **Power Platform Advisor** page.
+The **Advisor (Preview)** card shows the top 4 recommendations. You can select **View details** for any of the recommendations to view the details for that recommendation. You can select the **View recommendations** button to view all the recommendations in the **Advisor (Preview)** page.
  
-Power Platform Advisor can also be accessed using the **Advisor (preview)** option in the navigation panel of the Power Platform admin center. This option takes you to the **Power Platform Advisor** page, where you can view all the recommendations.
+Power Platform Advisor can also be accessed using the **Advisor (Preview)** option in the navigation panel of the Power Platform admin center. This option takes you to the **Advisor (Preview)** page, where you can view all the recommendations.
  
-Admins can select a recommendation from the **Power Platform Advisor** page to view the associated details for that recommendation in the recommendation panel. In this panel, admins can learn more about the recommendation, its impact, and associated resources and details.
+Admins can select a recommendation from the **Advisor (Preview)** page to view the associated details for that recommendation in the recommendation panel. In this panel, admins can learn more about the recommendation, its impact, and associated resources and details.
  
 ### Inline actions
 For each recommendation, Power Platform Advisor presents one or more relevant actions that can be taken from the recommendation panel. Depending on the recommendation, an admin can take relevant action for a specific resource or take bulk action by selecting up to 10 resources from the recommendation panel and taking an action. For certain recommendations that require action by a non-admin user, detailed instructions will be presented. To learn more, see [recommendations](#categories-of-recommendations).
