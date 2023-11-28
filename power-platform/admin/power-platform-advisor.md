@@ -81,8 +81,6 @@ Once a week, Power Platform Advisor sends a summary card in Microsoft Teams high
 
 To get this summary card, admins should install the **Power Apps** app in Microsoft Teams.
 
-:::image type="content" source="media/install-PowerAppsapp-teams.png" alt-text="Install the Power Apps app in Teams.":::
-
 Once installed, admin can view the summary cards in their Teams chats.
 
 ## Categories of Recommendations
