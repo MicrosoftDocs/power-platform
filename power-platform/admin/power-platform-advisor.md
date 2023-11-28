@@ -46,6 +46,8 @@ If the homepage is customized or you don't see the **Advisor (Preview)** card or
 The **Advisor (Preview)** card shows the top 4 recommendations. You can select **View details** for any of the recommendations to view the details for that recommendation. You can select the **View recommendations** button to view all the recommendations in the **Advisor (Preview)** page.
  
 Power Platform Advisor can also be accessed using the **Advisor (Preview)** option in the navigation panel of the Power Platform admin center. This option takes you to the **Advisor (Preview)** page, where you can view all the recommendations.
+
+:::image type="content" source="media/advisor-page.svg" alt-text="Advisor (Preview) page":::
  
 Admins can select a recommendation from the **Advisor (Preview)** page to view the associated details for that recommendation in the recommendation panel. In this panel, admins can learn more about the recommendation, its impact, and associated resources and details.
  
