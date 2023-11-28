@@ -85,7 +85,7 @@ To get this summary card, admins should install the **Power Apps** app in Micros
 
 Once installed, admin can view the summary cards in their Teams chats.
 
-## Categories of Recommendations
+## Categories of recommendations
 
 During the public preview, the recommendations focus on security and operational efficiency. You can view these recommendations by category and learn about actions to resolve issues or seize opportunities.
 
@@ -99,15 +99,15 @@ It is important that resources have valid owners to make necessary changes or to
 
 - **Assign to new owner:** To assign an app to a new owner, select the app from the list of apps, and then select **Assign to new owner**. Enter the new owner's name in the text box below the app list and select **Assign**.
 
-Once assigned, you'll see a success message in the panel and the **Action State** column for that row will display **Completed**. You cannot retake actions for completed rows.
+    Once assigned, you'll see a success message in the panel and the **Action State** column for that row will display **Completed**. You cannot retake actions for completed rows.
 
-Note the following points:
+    Note the following points:
 
-- New owner information will not be updated in the list.
+    - New owner information will not be updated in the list.
 
-- The app continues to be shown in the list until the next planned scan.
+    - The app continues to be shown in the list until the next planned scan.
 
-- Assigning a new owner for the app doesn't automatically provide necessary permissions to the environment or the underlying data sources used in the app. Admins should separately provision the user with necessary permissions to this user.
+    - Assigning a new owner for the app doesn't automatically provide necessary permissions to the environment or the underlying data sources used in the app. Admins should separately provision the user with necessary permissions to this user.
 
 - **Promote co-owner to owner:** If there are multiple co-owners for an app, admins can use this action to promote one of the co-owners to an owner. To do this, select an app and select **Promote co-owner to owner**.
 
