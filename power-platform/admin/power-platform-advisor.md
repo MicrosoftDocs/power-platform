@@ -111,13 +111,12 @@ It's important that resources have valid owners to make necessary changes or to 
 
 - **Promote co-owner to owner:** If there are multiple co-owners for an app, admins can use this action to promote one of the co-owners to an owner. To do so, select an app and select **Promote co-owner to owner**.
 
-If you select multiple apps, Power Platform Advisor displays any shared co-owners for the selected apps. Selecting **Assign app** makes the selected co-owner the new owner for all the selected apps.
+    If you select multiple apps, Power Platform Advisor displays any shared co-owners for the selected apps. Selecting **Assign app** makes the selected co-owner the new owner for all the selected apps.
 
 ### Apps that haven't been used in last 60 days
 This recommendation lists apps in all Managed Environments within your Power Platform tenant that haven't been used in the last 60 days. It's important that unused and unnecessary resources be removed periodically, to reduce the risk of exposure of your resources and to maintain proper hygiene of the tenant.
- 
+
 #### Supported actions  
- 
 - **Quarantine:** To quarantine unused apps, select one or more apps from the list and select **Quarantine**. Once you confirm the quarantine operation, the selected apps are quarantined. After apps have been quarantined, you can make them active again using the [Set-AppAsUnquarantined PowerShell command](../guidance/adoption/manage-default-environment.md#quarantine-apps).
 
 - **Delete:** To delete unwanted apps, select one or more apps from the list and select **Delete**. After you confirm the delete operation, the selected apps are deleted.
