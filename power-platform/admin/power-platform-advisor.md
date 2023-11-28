@@ -24,7 +24,7 @@ Currently, Power Platform Advisor is available for all tenant-level admin users.
 With Power Platform Advisor, administrators can: 
 
 - Get proactive, best practice recommendations. 
-- Improve the of overall health of your Power Platform tenant. 
+- Improve the overall health of your Power Platform tenant. 
 - Take inline actions or automate actions using cloud flows. 
 
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ Power Platform Advisor is turned on, by default, for all [Managed Environments](
 ## Key capabilities
 
 ### Recommendations
-Power Platform tenant admins can view the top recommendations on the **Advisor (Preview)** card. If the Power Platform admin center homepage is not customized, this card is automatically pinned on the homepage. Your tenant is scanned for recommendations weekly. 
+Power Platform tenant admins can view the top recommendations on the **Advisor (Preview)** card. If the Power Platform admin center homepage isn't customized, this card is automatically pinned on the homepage. Your tenant is scanned for recommendations weekly. 
 
 :::image type="content" source="media/advisor-card.svg" alt-text="Advisor card on the homepage.":::
 
@@ -91,15 +91,15 @@ During the public preview, the recommendations focus on security and operatio
 
 ### Apps without valid owners
 
-This type of recommendation lists apps in all the Managed Environments within your Power Platform tenant that do not have a valid owner. Currently this list contains apps that have been active in the last 90 days.
+This type of recommendation lists apps in all the Managed Environments within your Power Platform tenant that don't have a valid owner. Currently this list contains apps that have been active in the last 90 days.
 
-It is important that resources have valid owners to make necessary changes or to support users when an issue arises. If an app doesn't have a valid owner, it may pose business continuity risk.
+It's important that resources have valid owners to make necessary changes or to support users when an issue arises. If an app doesn't have a valid owner, it may pose business continuity risk.
  
 #### Supported actions
 
 - **Assign to new owner:** To assign an app to a new owner, select the app from the list of apps, and then select **Assign to new owner**. Enter the new owner's name in the text box below the app list and select **Assign**.
 
-    Once assigned, you see a success message in the panel and the **Action State** column for that row displays **Completed**. You cannot retake actions for completed rows.
+    Once assigned, you see a success message in the panel and the **Action State** column for that row displays **Completed**. You can't retake actions for completed rows.
 
     Note the following points:
 
@@ -128,7 +128,7 @@ This type of recommendation lists apps in all Managed Environments within your P
 
 It is important that only those apps that are required for the entire organization are shared with **Everyone**. Oversharing apps beyond the intended users poses a significant security risk as it increases the risk exposure of your assets and could lead to potential misuse. It is important to periodically review the apps that are overshared and adjust the sharing permissions.
 
-### Apps that are not part of a solution
+### Apps that aren't part of a solution
 
 This type of recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used, but not part of a solution. An app that's not part of a solution means that the app was developed in the same environment in which it's being used.
 
