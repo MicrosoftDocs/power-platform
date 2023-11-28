@@ -37,11 +37,11 @@ Power Platform Advisor is turned on, by default, for all [Managed Environments](
 ## Key capabilities
 
 ### Recommendations
-Power Platform tenant admins can view the top recommendations on the **Advisor (Preview)** card. If the Power Platform admin center homepage isn't customized, this card is automatically pinned on the homepage. Your tenant is scanned for recommendations weekly. 
+Power Platform tenant admins can view the top recommendations on the **Advisor (Preview)** card. If the Power Platform admin center home page isn't customized, this card is automatically pinned on the home page. Your tenant is scanned for recommendations weekly. 
 
-:::image type="content" source="media/advisor-card.svg" alt-text="Advisor card on the homepage.":::
+:::image type="content" source="media/advisor-card.svg" alt-text="Advisor card on the home page.":::
 
-If the homepage is customized or you don't see the **Advisor (Preview)** card or you removed the card from the homepage, you can select **+ Add cards** to add the card to the homepage. 
+If the home page is customized or you don't see the **Advisor (Preview)** card or you removed the card from the home page, you can select **+ Add cards** to add the card to the homepage. 
 
 The **Advisor (Preview)** card shows the top four recommendations. You can select **View details** for any of the recommendations to view the details for that recommendation. You can select the **View recommendations** button to view all the recommendations in the **Advisor (Preview)** page.
  
