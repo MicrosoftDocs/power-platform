@@ -17,7 +17,7 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
-Power Platform Advisor is your guide to personalized, recommendations to optimize your Power Platform tenant. It analyzes all Managed Environments and the apps in these environments within your Power Platform tenant, and offers solutions to enhance security, reliability, and overall health. 
+Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. It analyzes all Managed Environments and the apps in these environments within your Power Platform tenant, and offers solutions to enhance security, reliability, and overall health. 
 
 Currently, Power Platform Advisor is available for all tenant-level admin users. These include users with the Power Platform admin role, Dynamics 365 admin role, or a Global admin role within the Power Platform tenant. 
 
@@ -37,17 +37,17 @@ Power Platform Advisor is turned on, by default, for all [Managed Environments](
 ## Key capabilities
 
 ### Recommendations
-Power Platform tenant admins can view the top recommendations on the Power Platform Advisor card. If the Power Platform admin center homepage is not customized, this card is automatically pinned on the homepage. Your tenant is scanned for recommendations weekly. 
+Power Platform tenant admins can view the top recommendations on the **Power Platform Advisor** card. If the Power Platform admin center homepage is not customized, this card is automatically pinned on the homepage. Your tenant is scanned for recommendations weekly. 
 
 :::image type="content" source="media/recommentations.png" alt-text="Get proactive, best practice recommendations.":::
 
-If the homepage is customized or you don't see the Power Platform Advisor card or you removed the card from the homepage, you can select **+ Add cards** to add the card to the homepage. 
+If the homepage is customized or you don't see the **Power Platform Advisor** card or you removed the card from the homepage, you can select **+ Add cards** to add the card to the homepage. 
 
 :::image type="content" source="media/add-cards.png" alt-text="Add the Power Platform Advisor card to the homepage.":::
 
 The Power Platform Advisor card will show the top 4 recommendations. You can select **View details** for any of the recommendations to view the details for that recommendation. You can select the **View recommendations** button to view all the recommendations in the **Power Platform Advisor** page.
  
-Power Platform Advisor can also be accessed using the **Advisor (preview)** option in the navigation pane of the Power Platform admin center. This option takes you to the **Power Platform Advisor** page, where you can view all the recommendations.
+Power Platform Advisor can also be accessed using the **Advisor (preview)** option in the navigation panel of the Power Platform admin center. This option takes you to the **Power Platform Advisor** page, where you can view all the recommendations.
  
 Admins can select a recommendation from the **Power Platform Advisor** page to view the associated details for that recommendation in the recommendation panel. In this panel, admins can learn more about the recommendation, its impact, and associated resources and details.
  
@@ -67,30 +67,29 @@ While building cloud flows using this connector, you can get Power Platform Advi
 
 All recommendations in Power Platform Advisor can be shared in Microsoft Teams with other users for team collaboration.
 
-![A screenshot of a computer Description automatically generated](media/image3.png)
 :::image type="content" source="media/share-in-teams.png" alt-text="Share in Teams option.":::
 
 An admin can share the entire recommendation or share specific rows within the recommendation to another user by entering their name in the **Share to** textbox in the sharing panel. Shared recommendations or details are sent to the user as an adaptive card in a personal Teams chat.
 
-![A screenshot of a chat Description automatically generated](media/image4.png)
+:::image type="content" source="media/share-to.png" alt-text="Enter a name in the Share to textbox.":::
 
-When an entire recommendation or multiple rows within the recommendation is shared, the sharing card will provide a link to that recommendation for the admin.
+When an entire recommendation or multiple rows within the recommendation is shared, the sharing card provides a link to that recommendation for the admin.
 
 When a specific app or resource is shared, the sharing card provides a link to the recommendation, as well as a link to that app in the maker portal.
 
-![A screenshot of a computer Description automatically generated](media/image5.png)
+:::image type="content" source="media/recommendation-shared.png" alt-text="A recommendation that is shared.":::
 
 ### Advisor summary card in Microsoft Teams
 
 Once a week, Power Platform Advisor sends a summary card in Microsoft Teams highlighting the top 2 recommendations the admin should focus on for that week. This helps admins invest their time on the most important recommendations.
 
-To get this summary card, admins should install the "Power Apps" app in Microsoft Teams.
+To get this summary card, admins should install the **Power Apps** app in Microsoft Teams.
 
-![A screenshot of a computer Description automatically generated](media/image6.png)
+:::image type="content" source="media/install-PowerAppsapp-teams.png" alt-text="Install the Power Apps app in Teams.":::
 
-Once installed, admin can view these summary cards in their Teams chats.
+Once installed, admin can view the summary cards in their Teams chats.
 
-![A screenshot of a computer Description automatically generated](media/image7.png)
+:::image type="content" source="media/summary-card-teams.png" alt-text="A summary card in Teams.":::
 
 ## Categories of Recommendations
 
