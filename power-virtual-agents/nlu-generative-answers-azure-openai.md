@@ -33,10 +33,9 @@ By connecting Microsoft Copilot Studio with Azure OpenAI on your data, your bots
 
 
 > [!IMPORTANT]
+> 
+> [!INCLUDE[prereq-lote](includes/prereq-lote.md)]
 >  
-> Your bot must be created in the US region. 
->  
-> Other regions, and languages other than English, aren't supported.
 
 > [!NOTE]
 > A Conversational boosting system topic is automatically generated when the bot is created from Azure OpenAI Studio.
