@@ -43,7 +43,7 @@ Power Platform tenant admins can view the top recommendations on the **Advisor (
 
 If the homepage is customized or you don't see the **Advisor (Preview)** card or you removed the card from the homepage, you can select **+ Add cards** to add the card to the homepage. 
 
-The **Advisor (Preview)** card shows the top 4 recommendations. You can select **View details** for any of the recommendations to view the details for that recommendation. You can select the **View recommendations** button to view all the recommendations in the **Advisor (Preview)** page.
+The **Advisor (Preview)** card shows the top four recommendations. You can select **View details** for any of the recommendations to view the details for that recommendation. You can select the **View recommendations** button to view all the recommendations in the **Advisor (Preview)** page.
  
 Power Platform Advisor can also be accessed using the **Advisor (Preview)** option in the navigation panel of the Power Platform admin center. This option takes you to the **Advisor (Preview)** page, where you can view all the recommendations.
 
