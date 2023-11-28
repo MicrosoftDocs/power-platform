@@ -43,8 +43,6 @@ Power Platform tenant admins can view the top recommendations on the **Power Pla
 
 If the homepage is customized or you don't see the **Power Platform Advisor** card or you removed the card from the homepage, you can select **+ Add cards** to add the card to the homepage. 
 
-:::image type="content" source="media/add-cards.png" alt-text="Add the Power Platform Advisor card to the homepage.":::
-
 The Power Platform Advisor card will show the top 4 recommendations. You can select **View details** for any of the recommendations to view the details for that recommendation. You can select the **View recommendations** button to view all the recommendations in the **Power Platform Advisor** page.
  
 Power Platform Advisor can also be accessed using the **Advisor (preview)** option in the navigation panel of the Power Platform admin center. This option takes you to the **Power Platform Advisor** page, where you can view all the recommendations.
@@ -88,8 +86,6 @@ To get this summary card, admins should install the **Power Apps** app in Micros
 :::image type="content" source="media/install-PowerAppsapp-teams.png" alt-text="Install the Power Apps app in Teams.":::
 
 Once installed, admin can view the summary cards in their Teams chats.
-
-:::image type="content" source="media/summary-card-teams.png" alt-text="A summary card in Teams.":::
 
 ## Categories of Recommendations
 
