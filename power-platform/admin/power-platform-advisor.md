@@ -75,8 +75,6 @@ When an entire recommendation or multiple rows within the recommendation is shar
 
 When a specific app or resource is shared, the sharing card provides a link to the recommendation, as well as a link to that app in the maker portal.
 
-:::image type="content" source="media/recommendation-shared.png" alt-text="A recommendation that is shared.":::
-
 ### Advisor summary card in Microsoft Teams
 
 Once a week, Power Platform Advisor sends a summary card in Microsoft Teams highlighting the top 2 recommendations the admin should focus on for that week. This helps admins invest their time on the most important recommendations.
