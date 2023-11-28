@@ -57,7 +57,7 @@ For each recommendation, Power Platform Advisor presents one or more relevant ac
 ### Automated actions
 Power Platform Advisor supports automated actions made through [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. This is a useful way to build a process for remediations. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app informing them about an impending action. If they don't receive any correspondence from the owner, the app can then be deleted.
 
-While building cloud flows using this connector, you can get Power Platform Advisor recommendations and actions using the following actions:
+While building cloud flows using the connector, you can get Power Platform Advisor recommendations and actions using the following actions:
 
 -   **Get Recommendations**: This returns all the valid recommendations in your tenant.
 -   **Get Recommendation Resources**: This returns all the resources for a specific recommendation.
@@ -79,9 +79,9 @@ When a specific app or resource is shared, the sharing card provides a link to t
 
 ### Advisor summary card in Microsoft Teams
 
-Once a week, Power Platform Advisor sends a summary card in Microsoft Teams highlighting the top 2 recommendations the admin should focus on for that week. This helps admins invest their time on the most important recommendations.
+Once a week, Power Platform Advisor sends a summary card in Microsoft Teams highlighting the top two recommendations the admin should focus on for that week. This helps admins invest their time on the most important recommendations.
 
-To get this summary card, admins should install the **Power Apps** app in Microsoft Teams.
+To get the summary card, admins should install the **Power Apps** app in Microsoft Teams.
 
 Once installed, admin can view the summary cards in their Teams chats.
 
@@ -109,7 +109,7 @@ It's important that resources have valid owners to make necessary changes or to 
 
     - Assigning a new owner for the app doesn't automatically provide necessary permissions to the environment or the underlying data sources used in the app. Admins should separately provision the user with necessary permissions to this user.
 
-- **Promote co-owner to owner:** If there are multiple co-owners for an app, admins can use this action to promote one of the co-owners to an owner. To do this, select an app and select **Promote co-owner to owner**.
+- **Promote co-owner to owner:** If there are multiple co-owners for an app, admins can use this action to promote one of the co-owners to an owner. To do so, select an app and select **Promote co-owner to owner**.
 
 If you select multiple apps, Power Platform Advisor displays any shared co-owners for the selected apps. Selecting **Assign app** makes the selected co-owner the new owner for all the selected apps.
 
@@ -126,10 +126,10 @@ This recommendation lists apps in all Managed Environments within your Power Pla
 
 This type of recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used and are shared with **Everyone**. **Everyone** includes any guest users in your Microsoft Entra tenant.
 
-It is important that only those apps that are required for the entire organization are shared with **Everyone**. Oversharing apps beyond the intended users poses a significant security risk as it increases the risk exposure of your assets and could lead to potential misuse. It is important to periodically review the apps that are overshared and adjust the sharing permissions.
+It's important that only those apps that are required for the entire organization are shared with **Everyone**. Oversharing apps beyond the intended users poses a significant security risk as it increases the risk exposure of your assets and could lead to potential misuse. It's important to periodically review the apps that are overshared and adjust the sharing permissions.
 
 ### Apps that aren't part of a solution
 
 This type of recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used, but not part of a solution. An app that's not part of a solution means that the app was developed in the same environment in which it's being used.
 
-It's important that apps follow application lifecycle management (ALM) best practices. Not following a proper ALM process could result in a single change breaking the app for several users without an easy way to recover. The new pipelines feature makes it very simple for citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
+It's important that apps follow application lifecycle management (ALM) best practices. Not following a proper ALM process could result in a single change breaking the app for several users without an easy way to recover. The new pipelines feature makes it simple for citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
