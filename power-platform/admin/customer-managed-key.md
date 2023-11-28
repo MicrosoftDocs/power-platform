@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 11/15/2023
+ms.date: 11/28/2023
 ms.custom: template-how-to
 
 ---
@@ -209,8 +209,8 @@ You can use an encryption key created from the Azure Key Vault Managed HSM to en
       - **Key type**: **RSA-HSM**
       - **RSA key size**: **2048**
 
-  > [!NOTE]
-   > Supported [RSA-HSM key sizes:](https://learn.microsoft.com/azure/key-vault/keys/about-keys#hsm-protected-keys) 2048-bit, 3072-bit, 4096-bit.
+      > [!NOTE]
+      > Supported [RSA-HSM key sizes:](/azure/key-vault/keys/about-keys#hsm-protected-keys) 2048-bit, 3072-bit, 4096-bit.
 
 #### Encrypt your environment with key from Azure Key Vault with private link
 
