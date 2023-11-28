@@ -93,127 +93,49 @@ Once installed, admin can view the summary cards in their Teams chats.
 
 ## Categories of Recommendations
 
-During the public preview, the recommendations focus on **Security** and **Operational Efficiency**. You can view these recommendations by category and learn about actions to resolve issues or seize opportunities.
+During the public preview, the recommendations focus on security and operational efficiency. You can view these recommendations by category and learn about actions to resolve issues or seize opportunities.
 
-1. **Apps without valid owners**:
+### Apps without valid owners
 
-This recommendation lists apps in all the Managed Environments within your Power Platform tenant that do not have a valid owner. Currently this list contains apps that have been active in the last 90 days.
+This type of recommendation lists apps in all the Managed Environments within your Power Platform tenant that do not have a valid owner. Currently this list contains apps that have been active in the last 90 days.
 
+It is important that resources have valid owners to make necessary changes or to support users when an issue arises. If an app doesn't have a valid owner it may pose business continuity risk.
  
+#### Supported actions
 
-It is important that resources have valid owners to make necessary changes or to support the users when an issue arises, else it may pose business continuity risk.
+- **Assign to new owner:** To assign an app to a new owner, select the app from the list of apps, and then select **Assign to new owner**. Enter the new owner's name in the text box below the app list and select **Assign**.
 
+Once assigned, you'll see a success message in the panel and the **Action State** column for that row will display **Completed**. You cannot retake actions for completed rows.
+
+Note the following points:
+
+- New owner information will not be updated in the list.
+
+- The app continues to be shown in the list until the next planned scan.
+
+- Assigning a new owner for the app doesn't automatically provide necessary permissions to the environment or the underlying data sources used in the app. Admins should separately provision the user with necessary permissions to this user.
+
+- **Promote co-owner to owner:** If there are multiple co-owners for an app, admins can use this action to promote one of the co-owners to an owner. To do this, select an app and select **Promote co-owner to owner**.
+
+If you select multiple apps, Power Platform Advisor displays any shared co-owners for the selected apps. Selecting **Assign app** makes the selected co-owner the new owner for all the selected apps.
+
+### Apps that haven't been used in last 60 days
+This recommendation lists apps in all Managed Environments within your Power Platform tenant that haven't been used in the last 60 days. It's important that unused and unnecessary resources be removed periodically, to reduce the risk of exposure of your resources and to maintain proper hygiene of the tenant.
  
-
-![A screenshot of a computer Description automatically generated](media/image8.png)
-
+#### Supported actions  
  
+- **Quarantine:** To quarantine unused apps, select one or more apps from the list and select **Quarantine**. Once you confirm the quarantine operation, the selected apps are quarantined. After apps have been quarantined, you can make them active again using the [Set-AppAsUnquarantined PowerShell command](../guidance/adoption/manage-default-environment.md#quarantine-apps).
 
-**Supported actions:**  
- 
+- **Delete:** To delete unwanted apps, select one or more apps from the list and select **Delete**. After you confirm the delete operation, the selected apps will be deleted.
 
-**Assign to new owner:** To assign app(s) to a new owner, select one or more apps from the list of apps and click "Assign to new owner". Then enter the new owner's name in the text box below the app list and click "Assign"
+### Apps that are shared with everyone
 
- 
+This type of recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used and are shared with **Everyone**. **Everyone** includes any guest users in your Microsoft Entra tenant.
 
-![A screenshot of a computer Description automatically generated](media/image9.png)
+It is important that only those apps that are required for the entire organization are shared with **Everyone**. Oversharing apps beyond the intended users poses a significant security risk as it increases the risk exposure of your assets and could lead to potential misuse. It is important to periodically review the apps that are overshared and adjust the sharing permissions.
 
- 
+### Apps that are not part of a solution
 
-Once assigned, you'll see a success message in the panel and the Action State column for that row will show "Completed". You cannot re-take actions for completed rows.
+This type of recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used, but not part of a solution. An app that's not part of a solution means that the app was developed in the same environment in which it's being used.
 
-Please note:
-
--   New owner information will not be updated in the list.
-
--   The app will continue to be shown in the list until the next planned scan.
-
--   Assigning a new owner for the app doesn't automatically provide necessary permissions to the environment or the underlying data sources used in the app. Admins should separately provision the user with necessary permissions to this user.
-
- 
-
-![A screenshot of a computer Description automatically generated](media/image10.png)
-
- 
-
-**Promote co-owner to owner:**
-
-If there are co-owners for an app, admins can use this action to promote one of the co-owners to an owner. To do this, select an app and click "Promote co-owner to owner" command. This should all co-owners for the selected app. You can select one of the co-owners and assign them as the new owner.
-
-![A screenshot of a computer Description automatically generated](media/image11.png)
-
- 
-
-If you select multiple apps, Power Platform Advisor will show any shared co-owners for the selected apps. Clicking on "Assign app" will then make the selected co-owner the new owner for all the selected apps.
-
- 
-
-**Delete:**
-
-To delete unwanted apps, select one or more apps from the list and click the "Delete command". Once you confirm the delete operation, the selected apps will be deleted.
-
-![A screenshot of a computer error Description automatically generated](media/image12.png)
-
- 
-
-2. **Apps that are not used in last 60 days**: Detailed steps for handling apps that are not used in the last 60 days will be provided here.
-
-This recommendation lists apps in all the Managed Environments within your Power Platform tenant that were not used in the last 60 days.
-
- 
-
-It is important that unused and unnecessary resources be removed periodically, to reduce the risk exposure of your resources and to maintain proper hygiene of the tenant.
-
-![A screenshot of a computer Description automatically generated](media/image13.png)
-
- 
-
-**Supported actions:**  
- 
-
-**Quarantine:** To quarantine unused apps, select one or more apps from the list and click the "Quarantine" command. Once you confirm the quarantine operation, the selected apps will be quarantined. Once quarantined, you can make them active again using the Set-AppAsUnquarantined PowerShell command ([<u>https://learn.microsoft.com/en-us/power-platform/guidance/adoption/manage-default-environment\#quarantine-apps</u>](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/manage-default-environment#quarantine-apps))
-
-![A screenshot of a computer error message Description automatically generated](media/image14.png)
-
- 
-
-**Delete:**
-
-To delete unwanted apps, select one or more apps from the list and click the "Delete" command. Once you confirm the delete operation, the selected apps will be deleted.
-
-![A screenshot of a computer error Description automatically generated](media/image12.png)
-
- 
-
- 
-
-3. **Apps that are shared with Everyone**:
-
-This recommendation lists apps in all the Managed Environments within your Power Platform tenant that are actively used and are shared with 'Everyone'. 'Everyone' includes any guest users in your Microsoft Entra tenant.
-
- 
-
-It is important that only those apps that are required for the entire organization are shared with 'Everyone'. Oversharing apps beyond the intended users poses a significant security risk as it increases the risk exposure of your assets and could lead to potential misuse. It is important to periodically review the apps that are overshared and adjust the sharing permissions.
-
- 
-
-![A screenshot of a computer Description automatically generated](media/image15.png)
-
- 
-
- 
-
-4. **Apps that are not part of a solution**:
-
-This recommendation lists apps in all the Managed Environments within your Power Platform tenant that are actively used but is not part of a solution. An app not being part of a solution means that the app was developed in the same environment as it's being used.
-
- 
-
-It is important that apps follow Application Lifecycle Management (ALM) best practices while developing your important apps. Not following a proper ALM process could result in a single change breaking the app for several users without an easy way to recover. The new pipelines feature makes it very simple for citizen developers without prior ALM experience to safely deploy their apps and dependent assets to a production environment.
-
- 
-
-![A screenshot of a computer Description automatically generated](media/image16.png)
-
- 
-
+It's important that apps follow application lifecycle management (ALM) best practices. Not following a proper ALM process could result in a single change breaking the app for several users without an easy way to recover. The new pipelines feature makes it very simple for citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
