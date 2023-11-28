@@ -78,6 +78,7 @@ More copilots and generative AI features will be available in the future.
 |-------------------------|-------------------------|-------------------------|
 | Microsoft Dataverse | Excel to table for new makers | [Upload an Excel file (preview)](/power-apps/maker/data-platform/create-edit-entities-portal#upload-an-excel-file-preview) |
 | Power Automate | Power Automate designer copilot | [Get started with Copilot in cloud flows (preview)](/power-automate/get-started-with-copilot) |
+| Microsoft Copilot Studio | Generative AI in copilots | [AI-based copilot authoring overview](/microsoft-copilot-studio/nlu-gpt-overview) and [Configure data movement for Copilot Studio generative AI features outside the United States](/microsoft-copilot-studio/manage-data-movement-outside-us) |
 
 ## Copilot data movement across geographies for Dynamics 365
 Copilot and generative AI features of Power Platform and Dynamics 365 are supported differently in different regions.
@@ -90,6 +91,3 @@ For information about regions supported by Dynamics 365 copilots and generative 
 
 ## Languages availability
 To learn about the languages that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/en-us/availability-reports/copilotreport/).
-
-### See also
-[Configure data movement across geographic locations for generative AI features outside United States](/microsoft-copilot-studio/manage-data-movement-outside-us)
