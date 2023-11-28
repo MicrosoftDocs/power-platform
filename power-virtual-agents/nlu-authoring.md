@@ -28,11 +28,10 @@ See the [AI-based chatbot authoring overview](nlu-gpt-overview.md) for more exam
 
 ## Prerequisites
 
-> [!CAUTION] 
->  
-> Your bot must be created in the US region. 
->  
-> Other regions, and languages other than English, aren't currently supported.
+> [!CAUTION]
+> 
+> [!INCLUDE[prereq-lote](includes/prereq-lote.md)]
+>   
 
 - You'll need an account for Microsoft Copilot Studio. 
 
