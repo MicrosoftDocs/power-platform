@@ -52,10 +52,10 @@ Power Platform Advisor can also be accessed using the **Advisor (Preview)** opti
 Admins can select a recommendation from the **Advisor (Preview)** page to view the associated details for that recommendation in the recommendation panel. In this panel, admins can learn more about the recommendation, its impact, and associated resources and details.
  
 ### Inline actions
-For each recommendation, Power Platform Advisor presents one or more relevant actions that can be taken from the recommendation panel. Depending on the recommendation, an admin can take relevant action for a specific resource or take bulk action by selecting up to 10 resources from the recommendation panel and taking an action. For certain recommendations that require action by a non-admin user, detailed instructions will be presented. To learn more, see [recommendations](#categories-of-recommendations).
+For each recommendation, Power Platform Advisor presents one or more relevant actions that can be taken from the recommendation panel. Depending on the recommendation, an admin can take relevant action for a specific resource or take bulk action by selecting up to 10 resources from the recommendation panel and taking an action. For certain recommendations that require action by a non-admin user, detailed instructions are displayed. To learn more, see [recommendations](#categories-of-recommendations).
 
 ### Automated actions
-Power Platform Advisor supports automated actions made through [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. This is a very useful way to build a process for remediations. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app informing them about an impending action. If they don't receive any correspondence from the owner, the app can then be deleted.
+Power Platform Advisor supports automated actions made through [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. This is a useful way to build a process for remediations. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app informing them about an impending action. If they don't receive any correspondence from the owner, the app can then be deleted.
 
 While building cloud flows using this connector, you can get Power Platform Advisor recommendations and actions using the following actions:
 
@@ -75,7 +75,7 @@ An admin can share the entire recommendation or share specific rows within the r
 
 When an entire recommendation or multiple rows within the recommendation is shared, the sharing card provides a link to that recommendation for the admin.
 
-When a specific app or resource is shared, the sharing card provides a link to the recommendation, as well as a link to that app in the maker portal.
+When a specific app or resource is shared, the sharing card provides a link to the recommendation and a link to that app in the maker portal.
 
 ### Advisor summary card in Microsoft Teams
 
@@ -93,17 +93,17 @@ During the public preview, the recommendations focus on security and operatio
 
 This type of recommendation lists apps in all the Managed Environments within your Power Platform tenant that do not have a valid owner. Currently this list contains apps that have been active in the last 90 days.
 
-It is important that resources have valid owners to make necessary changes or to support users when an issue arises. If an app doesn't have a valid owner it may pose business continuity risk.
+It is important that resources have valid owners to make necessary changes or to support users when an issue arises. If an app doesn't have a valid owner, it may pose business continuity risk.
  
 #### Supported actions
 
 - **Assign to new owner:** To assign an app to a new owner, select the app from the list of apps, and then select **Assign to new owner**. Enter the new owner's name in the text box below the app list and select **Assign**.
 
-    Once assigned, you'll see a success message in the panel and the **Action State** column for that row will display **Completed**. You cannot retake actions for completed rows.
+    Once assigned, you see a success message in the panel and the **Action State** column for that row displays **Completed**. You cannot retake actions for completed rows.
 
     Note the following points:
 
-    - New owner information will not be updated in the list.
+    - New owner information isn't updated in the list.
 
     - The app continues to be shown in the list until the next planned scan.
 
@@ -120,7 +120,7 @@ This recommendation lists apps in all Managed Environments within your Power Pla
  
 - **Quarantine:** To quarantine unused apps, select one or more apps from the list and select **Quarantine**. Once you confirm the quarantine operation, the selected apps are quarantined. After apps have been quarantined, you can make them active again using the [Set-AppAsUnquarantined PowerShell command](../guidance/adoption/manage-default-environment.md#quarantine-apps).
 
-- **Delete:** To delete unwanted apps, select one or more apps from the list and select **Delete**. After you confirm the delete operation, the selected apps will be deleted.
+- **Delete:** To delete unwanted apps, select one or more apps from the list and select **Delete**. After you confirm the delete operation, the selected apps are deleted.
 
 ### Apps that are shared with everyone
 
