@@ -14,7 +14,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Send a message (preview)
+# Send a message
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
