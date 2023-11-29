@@ -256,7 +256,7 @@ Licensed by tenant, Microsoft Copilot Studio entitles a tenant to 25,000 message
    -   Gen AI
    -   AI-enabled conversations: Consumption rate of 2 messages when Generative AI is used 
    -   Copilot: Create and iterate chatbot topics using expanded natural language capabilities   
-   -   Power Automate for Microsoft Copilot: Create cloud flows (Automated, instan,t and scheduled flows) within the context of Microsoft Copilot Studio bots   
+   -   Power Automate for Microsoft Copilot: Create cloud flows (Automated, instant, and scheduled flows) within the context of Microsoft Copilot Studio bots   
    -   Connectors: Standard, Premium, and Custom connectors   
    -   Dataverse for Microsoft Copilot (Dataverse default capacity): 5 GB Database, 20 GB File, 2 GB Log  
 
