@@ -16,7 +16,9 @@ ms.collection: virtual-agent
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-You can create multiple types of AI plugins in Microsoft Copilot Studio, which let you customize how Microsoft Copilot responds to your end users:
+AI Plugins can be used to extend Microsoft Copilot, or used within a custom copilot as a Plugin Action.
+
+You can create multiple types of AI plugins in Microsoft Copilot Studio:
 
 - Prompt plugins, which use AI Builder and natural language understanding to target the specific scenarios and workflows within your business.
 - Flow plugins, which use Power Automate flows to perform actions, and retrieve and work with data.
@@ -25,7 +27,7 @@ You can create multiple types of AI plugins in Microsoft Copilot Studio, which l
 
 This article provides instructions for creating, sharing, or publishing plugins.
 
-After you create plugins, [enable them for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot).
+After you create plugins, [enable them for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot), or [add them to a custom copilot as a Plugin Action](./advanced-plugin-actions.md).
 
 AI plugins can be created on the **AI plugins (preview)** page in Copilot Studio, under **Plugins (preview)** on the side navigation pane:
 

@@ -2,7 +2,7 @@
 title: Use Generative Actions in Microsoft Copilot Studio (preview)
 description: Use Generative Actions in Microsoft Copilot Studio to provide GPT driven conversation for your copilot.
 keywords: "PVA, plugin, connector, flow, automate"
-ms.date: 09/29/2023
+ms.date: 11/29/2023
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -19,7 +19,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Generative Actions allows you to replace the traditional natural language based approach for Topic triggering (using the trigger phrases you have defined on each Topic). Instead, your copilot uses GPT to select one or more Topics or Plugin Actions to respond to a user's query. All Topics and Plugin Actions have an associated description and this is the primary piece of information used when selecting which item(s) should be selected. 
+Generative Actions allows you to replace the traditional natural language based approach for Topic triggering (using the trigger phrases you have defined on each Topic). Instead, your copilot uses GPT to select one or more [Topics](./authoring-create-edit-topics.md) or [Plugin Actions](./advanced-plugin-actions.md) to respond to a user's query. All Topics and Plugin Actions have an associated description and this is the primary piece of information used when selecting which item(s) should be selected. 
 
 > [!IMPORTANT]
 >  
@@ -46,9 +46,11 @@ Once Generative Actions is enabled, the **Topics** page in the left hand navigat
 
 ## How your copilot responds to user queries with Generative Actions
 
-When enabled, Generative Actions, is responsible for orchestrating the conversations users have with your copilot. When a message is received from a user, GPT is used to select one or more Plugin Actions or Topics that can be used to respond. A number of factors are used to determine which Topics and Plugin Actions are used. The primary factor used is the associated description with each item, but additional factors, such as the name and any inputs / outputs (and their associated names & descriptions) are also used.
+When enabled, Generative Actions, is responsible for orchestrating the conversations users have with your copilot, which can help provide users with a more natural and fluid conversation.
 
-Once the appropriate Plugin Actions and Topics have been selected, a plan is generated which determines the order in which they will be executed. The copilot will also attempt to pre-populate any inputs required by the Plugin Actions and Topics, either by extracting values from the user's query, or by identifying values from the previous conversation context.
+When a message is received from a user, GPT is used to select one or more [Plugin Actions](./advanced-plugin-actions.md) or [Topics](./authoring-create-edit-topics.md) that can be used to respond. A number of factors are used to determine which Topics and Plugin Actions are used. The primary factor used is the associated description with each item, but additional factors, such as the name and any inputs / outputs (and their associated names & descriptions) are also used.
+
+Once the appropriate [Plugin Actions](./advanced-plugin-actions.md) and [Topics](./authoring-create-edit-topics.md) have been selected, a plan is generated which determines the order in which they will be executed. The copilot will also attempt to pre-populate any inputs required by the Plugin Actions and Topics, either by extracting values from the user's query, or by identifying values from the previous conversation context.
 
 The plan is re-assessed and, if necessary, updated after each new message is received from the user, which allows for scenarios such as interruption (additional items added within the plan), or cancellation.
 
@@ -64,7 +66,7 @@ Now, when you ask your copilot a question in your test canvas, you can see a vis
 
 ## Authoring descriptions
 
-Once Generative Actions has been enabled, each of the Topics and Plugin Actions within your copilot must have a high quality description in order to ensure your copilot selects the right ones to respond to a user. 
+Once Generative Actions has been enabled, each of the [Plugin Actions](./advanced-plugin-actions.md) and [Topics](./authoring-create-edit-topics.md) within your copilot must have a high quality description in order to ensure your copilot selects the right ones to respond to a user. 
 
 For Plugin Actions, authoring a description is part of the wizard used to add them to the copilot. They are often pre-populate for you, but you can make changes to this as appropriate. You can find more details about how to add and manage Plugin Actions in your copilot [here](advanced-plugin-actions.md).
 
