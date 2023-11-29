@@ -1,6 +1,6 @@
 ---
 title: Hardware Request and Management template for Power Platform
-description: Learn about Microsoft's Hardware Request and Management template for Power Platform.
+description: Learn about Microsoft's Hardware Request and Management template for Microsoft Power Platform.
 author: tverhasselt
 ms.author: thoverh
 contributors:

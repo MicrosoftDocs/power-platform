@@ -11,7 +11,7 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Install and configure the Awards and Recognition template
+# Install and set up the Awards and Recognition template
 
 Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
 
