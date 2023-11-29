@@ -378,7 +378,7 @@ Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assis
 1. Expand the **Product** section and select **Behavior** to manage behavior settings.
 1. In the *Release channel* section, select **Monthly channel** from the dropdown.
 1. Select **Save**.
-   :::image type="content" source="media/install/ppadmin-release-channel.png" alt-text="Screenshot of how to share the Hardware Request app.":::
+   :::image type="content" source="media/install/ppadmin-release-channel.png" alt-text="Screenshot of how to manage behavior settings in the Power Platform admin center.":::
 
 ## Step 10: Enable auditing
 

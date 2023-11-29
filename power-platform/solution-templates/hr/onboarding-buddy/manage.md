@@ -59,5 +59,5 @@ To localize app strings, users must have the **Employee Experience Localizer**
 
 ## See also
 
-- [Install and configure the Onboarding Buddy template](install-and-configure.md)
+- [Install and set up the Onboarding Buddy template](install-and-set-up.md)
 - [Get started using the Onboarding Buddy app](use.md)
