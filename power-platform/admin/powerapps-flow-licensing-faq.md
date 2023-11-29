@@ -243,7 +243,6 @@ Follow these steps to apply unattended RPA add-ons for your flows.
 ### What are the pricing and licensing details for Microsoft Copilot Studio?
 Licensed by tenant, Microsoft Copilot Studio entitles a tenant to 25,000 messages per tenant/month. Users in the tenant can create and iterate on topics by describing them, and AI features build them. Generative answers can be used as primary information sources in the chatbots, or used when authored topics are unable to address a users's query. As a result, functional bots can be quickly created and deployed without users having to manually author multiple topics. Power Automate for Copilot Studio enables the tenant create cloud flows within the context of Microsoft Copilot Studio bots.  
 
-- **List Price (USD)**: $200 per tenant/month
 - **Entitlements**: Customers who purchase the new Microsoft Copilot Studio receive the following entitlements. 
    -   Messages: 25,000 messages per tenant/month   
    -   Billed messages definition: Microsoft Copilot Studio messages are the common currency across Microsoft Copilot Studio capabilities. A billed message is a request or message sent to the copilot triggering an action or response. Examples:
@@ -253,8 +252,7 @@ Licensed by tenant, Microsoft Copilot Studio entitles a tenant to 25,000 message
    -   Message Consumption rates: Customers can use a mix of Regular and Generative AI messages.
        - Regular (non-generative AI) = 1 message
        - Generative AI (Gen AI) answers over your data = 2 messages
-   -   Gen AI
-   -   AI-enabled conversations: Consumption rate of 2 messages when Generative AI is used 
+   -   Gen AI-enabled conversations: Consumption rate of 2 messages when Generative AI is used 
    -   Copilot: Create and iterate chatbot topics using expanded natural language capabilities   
    -   Power Automate for Microsoft Copilot: Create cloud flows (Automated, instant, and scheduled flows) within the context of Microsoft Copilot Studio bots   
    -   Connectors: Standard, Premium, and Custom connectors   
