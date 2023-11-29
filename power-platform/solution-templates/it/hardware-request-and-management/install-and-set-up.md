@@ -1,6 +1,6 @@
 ---
 title: Install and set up the Hardware Request and Management template for Power Platform
-description: Learn how to install and set up the Hardware Request and Management template for Microsoft Power Platform.
+description: Learn how to install, set up, and deploy the Hardware Request and Management template for Microsoft Power Platform.
 author: tverhasselt
 ms.author: thoverh
 contributors:
