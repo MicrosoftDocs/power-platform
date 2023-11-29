@@ -1,11 +1,11 @@
 ---
-title: Install and configure the Employee Kudos template for Power Platform
-description: Learn how to install and configure the Employee Kudos template for Microsoft Power Platform.
+title: Install and set up the Employee Kudos template for Power Platform
+description: Learn how to install, set up, and deploy the Employee Kudos template for Microsoft Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 10/26/2023
+ms.date: 11/29/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -13,7 +13,13 @@ ms.subservice: solution-templates
 
 # Install and configure the Employee Kudos template
 
-As a Power Platform admin, you install, configure, and deploy the Employee Kudos template's solutions for your organization. To get started, follow the steps.
+Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
+
+Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
+
+More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+
+As a Microsoft Power Platform admin, follow the steps outlined in this article to install and configure the Employee Kudos template.
 
 ## Step 1: Review prerequisites
 
@@ -41,12 +47,12 @@ More license details are available in the [Microsoft Power Platform Licensing Gu
 
 ### Set up environments and data policies
 
-It's important to have a cohesive environment and data policy strategy and setup for enterprise templates to securely deploy your solutions. To successfully install and manage the Employee Kudos template, confirm these resources and practices are in place.
+It's important to have a cohesive environment and data policy strategy for enterprise templates. To successfully install and manage the Employee Kudos template, confirm these resources and practices are in place.
 
 - **Administrators** - Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments.
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
-  - Power Platform Administrator to create environments if needed
+  - Power Platform Administrator to create environments
 
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
@@ -97,9 +103,9 @@ There are two solution installation options available for you to consider:
 
 You can easily access and install the Employee Kudos template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Employee Kudos template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
-1. Select the environment that you prepared for the template.
+1. Go to the [Employee Kudos template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**. This takes you to the *Install Employees Kudos Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
    :::image type="content" source="media/install/appsource-install-template.png" alt-text="Select the environment in which to install the template.":::
+1. Select the environment that you prepared for the template.
 1. Agree to the *Terms and Privacy* statements by selecting the boxes.
 1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
 
@@ -287,6 +293,9 @@ To create your own badges, refer to [Create Custom Badges](manage.md#create-cust
 1. Select **Share**.
 :::image type="content" source="media/install/share-app.png" alt-text="Screenshot of the window where you add users and co-owners to your app.":::
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
+
+> [!NOTE]
+>If Employee Kudos apps aren't shared with you and you cannot access them directly from Power Apps, please contact your admin.
 
 ## Step 11: Turn on auditing (optional)
 

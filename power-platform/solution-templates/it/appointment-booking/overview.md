@@ -1,11 +1,11 @@
 ---
 title: Appointment Booking template for Power Platform
-description: Learn about the Appointment Booking template for Power Platform and how it can organize the appointment booking process for your organization.
+description: The Appointment Booking template for Microsoft Power Platform enables you to set up an app that organizes the appointment booking process for your organization.
 author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 11/20/2023
+ms.date: 11/29/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -59,6 +59,7 @@ The *IT Base* solution contains various components that allow an admin to set up
 - **Two security roles**:
   - **Appointment Booking - Administrator** provides access to model-driven app and canvas app
   - **Appointment Booking - User** provides access to canvas app
+  - **IT Base - User** provides access to the IT Base model-driven app
 
 - **Two choices**:
   - **Appointment Location** stores the available meeting modes (for example, *In Person*, *Online*, *Phone*)
@@ -88,3 +89,7 @@ The *IT Base* solution contains various components that allow an admin to set up
   - **Appointment Booking – [Dataverse](/connectors/commondataserviceforapps/)** - Connection reference to Microsoft Dataverse
   - **Appointment Booking – [Office 365 Outlook](/connectors/office365/)** - Connection reference to Microsoft Office 365 Outlook
   - **Appointment Booking – [Teams](/connectors/teams/)** - Connection reference to Microsoft Teams
+
+## Next steps
+
+[Install and set up the Appointment Booking template](install-and-set-up.md)

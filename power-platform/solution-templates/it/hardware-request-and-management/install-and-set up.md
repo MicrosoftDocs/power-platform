@@ -1,13 +1,13 @@
 ---
-title: Install and configure the Hardware Request and Management template for Power Platform
-description: Learn how to install and configure the Hardware Request and Management template for Microsoft Power Platform.
+title: Install and set up the Hardware Request and Management template for Power Platform
+description: Learn how to install and set up the Hardware Request and Management template for Microsoft Power Platform.
 author: tverhasselt
 ms.author: thoverh
 contributors:
   - microsoft-george
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/07/2023
+ms.date: 11/29/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -15,7 +15,13 @@ ms.subservice: solution-templates
 
 # Install and configure the Hardware Request and Management template
 
-As a Microsoft Power Platform admin, you need to prepare, install, configure, and deploy the Hardware Request and Management template's solutions for your organization. To get started, follow the steps.
+Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
+
+Establish a centralized team that consists of key stakeholders, product owners, and Power Platform admins and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
+
+More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+
+As a Microsoft Power Platform admin, follow the steps outlined in this article to install and configure the Hardware Request and Management template.
 
 ## Step 1: Review prerequisites
 
@@ -47,18 +53,18 @@ More information: [Microsoft Power Platform Licensing Guide](https://go.microsof
 
 ### Set up environments and data policies
 
-It's important to have a cohesive environment and data policy strategy for enterprise templates to securely deploy your solutions. To successfully install and manage the Hardware Request and Management template, confirm these resources and practices are in place.
+It's important to have a cohesive environment and data policy strategy for enterprise templates. To successfully install and manage the Hardware Request and Management template, confirm these resources and practices are in place.
 
 - **Administrators** - Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments.
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
-  - Power Platform Administrator to create environments if needed
+  - Power Platform Administrator to create environments
 
     More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
-- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Hardware Request and Management solution files. Also consider:
 
-  - A Power Platform environment is set up with a Dataverse database
+  - The Power Platform environment is set up with a Dataverse database
   - Environment Maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
     More information: [Environments overview](/power-platform/admin/environments-overview)
@@ -184,7 +190,7 @@ More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
 Environment variables support your application lifecycle management (ALM) strategy as you migrate the template across environments. Environment variables store keys and values for information that is contextual to the environment the solution is in. Two environment variables holding a reference to the Power Apps URL's need to be populated to support Outlook and Teams notifications.
 
-Additionally, connection references allow makers to configure flows that allow to manage connections centrally vs. coupled to the flow. This also supports your ALM strategy such that you do not need to introduce customizations or solution layers as your flows migrate across environments due to updated connections that are relevant to that environment.
+Additionally, connection references allow makers to configure flows that allow connections to be managed centrally vs. coupled to the flow. This also supports your ALM strategy since you don't need to introduce customizations or solution layers as your flows migrate across environments.
 
 To update environment variables, take these steps:
 
@@ -341,6 +347,9 @@ Take the following steps to share the Hardware Management app with users:
 >
 > Be sure to **uncheck** the *Send an email* invitation to new users if you do not want to send an email notification once broadly shared.
 
+> [!NOTE]
+>If Hardware Request and Management apps aren't shared with you and you cannot access them directly from Power Apps, please contact your admin.
+
 ## Step 8: Enable Dataverse search (optional)
 
 Dataverse search delivers fast and comprehensive search results in a single list, sorted by relevance. Find hardware request and asset data quickly by enabling Dataverse search in the environment that you deploy the template in. To enable Dataverse search, follow these steps:
@@ -357,27 +366,29 @@ More information: [Configure Dataverse search to improve search results and perf
 
 ## Step 9: Enable copilot (optional)
 
-Copilot for model-driven apps in Power Apps is a next-generation AI assistant for app users to get insights about the data in their apps through conversation in natural language. As a hardware request and management program administrator or reviewer, leverage Copilot to help you get insights on the hardware request and asset data while taking action. Follow these steps to turn Copilot on within your environment:
+Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assistant for app admins to get insights about the data in their apps through conversation in natural language. As an Hardware Request and Management admin, you can leverage Copilot to help you get insights on appointment booking data. As a Power Platform admin, take these steps to [enable Copilot](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-feature-for-your-environment) and [manage behavior settings](/power-platform/admin/settings-behavior) for all users in the selected environment:
 
-1. [Go to Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. Select **Environments** on the left pane and then select the environment where the solution was installed.
-1. Ensure the environment *Release Channel* is set to **Monthly** channel following the [Changing release channels for model-driven apps guidance](/power-apps/maker/model-driven-apps/channel-change).
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. Select **Environments** on the left pane and then select the environment where you want to enable copilot for model-driven app users.
 1. Select **Settings**.
-1. Expand the *Product* section and select **Features**.
-1. Underneath the Copilot section, change the *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**.
+1. Expand the **Product** section and select **Features** to turn on Copilot.
+1. In the *Copilot* section, set the value for *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**.
+1. Select **Save**.
+1. Next, go back to **Settings**.
+1. Expand the **Product** section and select **Behavior** to manage behavior settings.
+1. In the *Release channel* section, select **Monthly channel** from the dropdown.
+1. Select **Save**.
 
-More information: [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
+## Step 10: Enable auditing
 
-## Step 10: Enable auditing (optional)
+While not required, we recommend enabling the audit setting in your environment so it's easy to see who creates and updates records. To do this:
 
-While not required, we recommend enabling the audit setting in your environment so it's easy to see who created/updated records. To do this:
-
-1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/home)
-1. Select **Environments** on the left pane and then select the environment where the solution was installed
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. Select **Environments** on the left pane and then select the environment where the solution was installed.
 1. Expand *Audit and logs* and select **Audit settings**
-1. Select **Start Auditing**
+1. In the *Auditing* section,select **Start Auditing**
 
-:::image type="content" source="media/install/hrm-install-audit.png" alt-text="Screenshot of how to enable auditing.":::
+:::image type="content" source="media/install/start-auditing.png" alt-text="Screenshot of how to enable auditing.":::
 
 ## Step 11: Support more languages (optional)
 
@@ -407,3 +418,7 @@ To create localized strings:
 > More information: [Use the text translation prebuilt model in Power Automate](/ai-builder/flow-text-translation)
 
 More information: [Build global support into canvas apps](/power-apps/maker/canvas-apps/global-apps)
+
+## Next steps
+
+[Get started managing hardware assets and requests](manage.md)

@@ -1,6 +1,6 @@
 ---
 title: Onboarding Buddy template for Power Platform
-description: The Onboarding Buddy template for Power Platform enables you to quickly set up an app that allows you to match new employees to Buddies who help with the onboarding process.
+description: The Onboarding Buddy template for Microsoft Power Platform enables you to quickly set up an app that allows you to match new employees to Buddies who help with the onboarding process.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
@@ -70,4 +70,4 @@ The *Onboarding Buddy* solution is composed of two apps, three tables, two secur
 
 ## Next steps
 
-[Install and configure the Onboarding Buddy template](install-and-configure.md)
+[Install and set up the Onboarding Buddy template](install-and-set-up.md)

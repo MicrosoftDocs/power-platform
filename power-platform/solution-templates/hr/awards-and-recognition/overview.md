@@ -70,4 +70,4 @@ The *Awards and Recognition* solution contains various components that an admin 
 
 ## Next steps
 
-[Install and configure the Awards and Recognition template](install-and-configure.md)
+[Install and set up the Awards and Recognition template](install-and-set-up.md)

@@ -1,6 +1,6 @@
 ---
 title: Employee Kudos template for Power Platform
-description:  Empower your employees celebrate coworkers for their contributions. Learn about the Employee Kudos template for Power Platform.
+description:  Empower your employees celebrate coworkers for their contributions. Learn about the Employee Kudos template for Microsoft Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
@@ -61,7 +61,7 @@ The Kudos template is available in [Microsoft AppSource](<https://aka.ms/AccessE
 
 ## Next steps
 
-[Install and configure the Employee Kudos template](install-and-configure.md)
+[Install and set up the Employee Kudos template](install-and-set-up.md)
 
 ## See also
 

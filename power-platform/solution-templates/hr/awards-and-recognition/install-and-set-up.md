@@ -1,11 +1,11 @@
 ---
-title: Install and configure the Awards and Recognition template for Power Platform
-description: Learn how to install, configure, and deploy the Awards and Recognition template for Microsoft Power Platform.
+title: Install and set up the Awards and Recognition template for Power Platform
+description: Learn how to install, set up, and deploy the Awards and Recognition template for Microsoft Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 09/27/2023
+ms.date: 11/29/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -13,7 +13,13 @@ ms.subservice: solution-templates
 
 # Install and configure the Awards and Recognition template
 
-As a Power Platform admin, you install, configure, and deploy the Awards and Recognition template's solutions for your organization. To get started, follow the steps.
+Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
+
+Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
+
+More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+
+As a Microsoft Power Platform admin, follow the steps outlined in this article to install and configure the Awards and Recognition template.
 
 ## Step 1: Review prerequisites
 
@@ -41,12 +47,12 @@ More license details are available in the [Microsoft Power Platform Licensing Gu
 
 ### Set up environments and data policies
 
-It's important to have a cohesive environment and data policy strategy and setup for enterprise templates to securely deploy your solutions. To successfully install and manage the Hardware Request and Management template, confirm these resources and practices are in place.
+It's important to have a cohesive environment and data policy strategy for enterprise templates. To successfully install and manage the Awards and Recognition template, confirm these resources and practices are in place.
 
 - **Administrators** - Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments.
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
-  - Power Platform Administrator to create environments if needed
+  - Power Platform Administrator to create environments
   
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
@@ -93,11 +99,8 @@ You can easily access and install the Awards and Recognition template from AppSo
 
 1. Go to the [Awards and Recognition solution template on AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate) and select **Get it now**. This takes you to the *Install Awards and Recognition Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 :::image type="content" source="media/install/ar-install-env.png" alt-text="AScreenshot of the modal dialog window where you select the environment you set up for the template.":::
-
 1. Select the environment that you prepared for the template.
-
 1. Agree to the *Terms and Privacy* statements by checking the boxes.
-
 1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
 
 > [!IMPORTANT]
@@ -199,7 +202,6 @@ Set the Awards and Recognition program manager up first so they can configure aw
     1. Select **Awards and Recognition - Program Admin**
 1. Add an email message to let the program manager know the app program is ready to be set up.
 1. Select **Share**.
-:::image type="content" source="media/install/share-app.png" alt-text="Screenshot of the window where you add users and co-owners to your app.":::
 
 ### Share the app with the program participants
 
@@ -218,8 +220,12 @@ When the program manager is done configuring the Awards and Recognition program 
     - Select **Awards and Recognition - User**
 1. Add an optional email message.
 1. Select **Share**.
+:::image type="content" source="media/install/share-app.png" alt-text="Screenshot of the window where you add users and co-owners to your app.":::
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
+
+> [!NOTE]
+>If Awards and Recognition apps aren't shared with you and you cannot access them directly from Power Apps, please contact your admin.
 
 ## Step 7: Turn on auditing (optional)
 

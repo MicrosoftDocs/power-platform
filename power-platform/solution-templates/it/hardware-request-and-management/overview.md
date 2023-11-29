@@ -103,3 +103,7 @@ More information: [Overview of the cloud flows](/power-automate/overview-cloud)
 Dataverse storage powering intelligent search and role based security access to data in an effortless way.
 
 More information: [What is Microsoft Dataverse?](/power-apps/maker/data-platform/data-platform-intro)
+
+## Next steps
+
+[Install and set up the Hardware Request and Management template](install-and-set-up.md)

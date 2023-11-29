@@ -13,13 +13,17 @@ ms.subservice: solution-templates
 
 # Install and configure the Appointment Booking template
 
-As a Power Platform admin, you install, configure, and deploy the Appointment Booking template's solutions for your organization.
+Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
 
-To get started, follow the steps.
+Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
+
+More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+
+As a Microsoft Power Platform admin, follow the steps outlined in this article to install and configure the Appointment Booking template.
 
 ## Step 1: Review prerequisites
 
-Review the requirements, identify opportunities and develop a plan of action that suits your organization's needs.
+Review the licensing and administration requirements, identify opportunities, and develop a plan of action that suits your organization's needs.
 
 ### Confirm licensing
 
@@ -48,13 +52,13 @@ It's important to have a cohesive environment and data policy strategy for enter
 - **Administrators** - Be sure admins with the necessary privileges are available to coordinate and assign licensing and create environments.
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
-  - Power Platform Administrator to create environments if needed
+  - Power Platform Administrator to create environments
 
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
-- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Appointment Booking solution files. Also consider:
 
-  - A Power Platform environment is set up with a Dataverse database
+  - The Power Platform environment is set up with a Dataverse database
   - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
   More information: [Environments overview](/power-platform/admin/environments-overview)
@@ -99,7 +103,7 @@ There are two solution installation options available for you to consider:
 
 You can access and install the Appointment Booking template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Appointment Booking template](<https://aka.ms/AccessAppointmentBookingTemplate>) in AppSource and select **Get it now**.
+1. Go to the [Appointment Booking template](<https://aka.ms/AccessAppointmentBookingTemplate>) in AppSource and select **Get it now**. This takes you to the *Install Appointment Booking Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select the developer environment that you prepared for the template.
 1. Agree to the *Terms and Privacy* statements by checking the boxes.
 1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
@@ -164,6 +168,8 @@ More information: [Create, view, or delete a calendar group](<https://support.mi
 
 Environment variables support your application lifecycle management (ALM) strategy as you migrate the template across environments. Environment variables store keys and values for information that is contextual to the environment the solution is in. Take these steps to update an environment variable for the Appointment Booking solution in Power Apps.
 
+Additionally, connection references allow makers to configure flows that allow connections to be managed centrally vs. coupled to the flow. This also supports your ALM strategy since you don't need to introduce customizations or solution layers as your flows migrate across environments.
+
 1. Go to Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment that contains the Appointment Booking solution.
 1. Select the Appointment Booking solution.
 1. Go to **Environment Variable**.
@@ -227,32 +233,42 @@ Take the following steps to share the apps with your users:
 1. In the *Data permission* area, select the roles from a dropdown list. It's next to the Microsoft Dataverse tables that the Appointment Booking app uses. Be sure to select the correct Appointment Booking role (Administrator or User) for each user.
 1. Add an email message.
 1. Select **Share**.
+:::image type="content" source="media/install/share-app.png" alt-text="Screenshot of sharing the appointment booking app with users.":::
 
 > [!NOTE]
->If you didn't install the Appointment Booking solution and it isn't shared with you, go to the Appointment Booking solution in the [Power Apps](https://make.preview.powerapps.com/) to find the app.
+>If Appointment Booking apps aren't shared with you and you cannot access them directly from Power Apps, please contact your admin.
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
 ## Step 9: Enable Copilot
 
-Microsoft Copilot for model-driven apps in Power Apps is a next-generation AI assistant for app users to get insights about the data in their apps through conversation in natural language. As an Appointment Booking admin, you can leverage Copilot to help you get insights on appointment booking data while taking action. Follow these steps to turn Copilot on within your environment:
+Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assistant for app admins to get insights about the data in their apps through conversation in natural language. As an Appointment Booking admin, you can leverage Copilot to help you get insights on appointment booking data. As a Power Platform admin, take these steps to [enable Copilot](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-feature-for-your-environment) and [manage behavior settings](/power-platform/admin/settings-behavior) for all users in the selected environment:
 
-1. [Go to Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. Select **Environments** on the left pane and then select the environment where the solution was installed.
-1. Ensure the environment *Release Channel* is set to **Monthly** channel following the [Changing release channels for model-driven apps guidance](/power-apps/maker/model-driven-apps/channel-change).
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. Select **Environments** on the left pane and then select the environment where you want to enable copilot for model-driven app users.
 1. Select **Settings**.
-1. Expand the *Product* section and select **Features**.
-1. Underneath the Copilot section, change the *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**.
-
-More information: [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
+1. Expand the **Product** section and select **Features** to turn on Copilot.
+1. In the *Copilot* section, set the value for *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**.
+1. Select **Save**.
+1. Next, go back to **Settings**.
+1. Expand the **Product** section and select **Behavior** to manage behavior settings.
+1. In the *Release channel* section, select **Monthly channel** from the dropdown.
+1. Select **Save**.
+:::image type="content" source="media/install/ppadmin-release-channel.png" alt-text="Screenshot of managing behavior settings in the Release channel section in the Power Platform admin center.":::
+More information: [Changing release channels for model-driven apps guidance](/power-apps/maker/model-driven-apps/channel-change).
 
 ## Step 10: Turn on Auditing
 
-While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created/updated records in the future.
+While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who creates and updates records.
 
 Take these steps to enable the audit settings:
 
 1. Go to [Power Platform admin center](https://gcc.admin.powerplatform.microsoft.us/home).
-1. Select **Environments** on the left-side menu and select the *environment* where the solution is installed.
+1. Select **Environments** on the left pane and select the *environment* where the solution is installed.
 1. Select **Settings**.
 1. Select **Start Auditing**.
+:::image type="content" source="media/install/start-auditing.png" alt-text="Screenshot of turning on auditing in the Power Platform admin center.":::
+
+## Next steps
+
+[Get started managing the appointment bookings](manage.md)
