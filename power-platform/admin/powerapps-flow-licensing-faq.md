@@ -241,25 +241,29 @@ Follow these steps to apply unattended RPA add-ons for your flows.
 ## Microsoft Copilot Studio
 
 ### What are the pricing and licensing details for Microsoft Copilot Studio?
-Licensed by tenant, Microsoft Copilot Studio entitles a tenant to 25,000 messages per tenant/month enabling the tenant to create and iterate on topics by describing them and AI will build them. Generative answers can be used as primary information sources in the chatbots, or as fallback when authored topics are unable to address a users's query. As a result functional bots can be quickly created and deployed without having to manually author multiple topics that don't address customers' questions. Power Automate for Copilot Studio enables the tenant create cloud flows within the context of Microsoft Copilot Studio bots.  
+Licensed by tenant, Microsoft Copilot Studio entitles a tenant to 25,000 messages per tenant/month. Users in the tenant can create and iterate on topics by describing them, and AI features build them. Generative answers can be used as primary information sources in the chatbots, or used when authored topics are unable to address a users's query. As a result, functional bots can be quickly created and deployed without users having to manually author multiple topics. Power Automate for Copilot Studio enables the tenant create cloud flows within the context of Microsoft Copilot Studio bots.  
 
 - **List Price (USD)**: $200 per tenant/month
-
 - **Entitlements**: Customers who purchase the new Microsoft Copilot Studio receive the following entitlements. 
-   -   Messages - 25,000 messages per tenant/month   
-   -   Billed messages definition: Microsoft Copilot Studio messages are the common currency across Microsoft Copilot Studio capabilities. A billed message is a request or message sent to the copilot triggering an action and/or response. Examples: a) user asks copilot when a store is open, and copilot replies with store hours = 1 billed message b) copilot proactively greets the user on a website = 1 billed message, c) user asks copilot for store hours for the upcoming holiday, copilot responds using GenAnswers = 2 billed messages. 
-   -   Message Consumption rates: 1) Regular (Non-generative AI) = 1 message, 2) Generative AI (Gen AI) answers over your data = 2 messages. Customers can use a mix of Regular and Generative AI messages. 
+   -   Messages: 25,000 messages per tenant/month   
+   -   Billed messages definition: Microsoft Copilot Studio messages are the common currency across Microsoft Copilot Studio capabilities. A billed message is a request or message sent to the copilot triggering an action or response. Examples:
+       - User asks copilot when a store is open, and copilot replies with store hours = 1 billed message
+       - Copilot proactively greets the user on a website = 1 billed message
+       - User asks copilot for store hours for the upcoming holiday, and copilot responds using GenAnswers = 2 billed messages. 
+   -   Message Consumption rates: Customers can use a mix of Regular and Generative AI messages.
+       - Regular (non-generative AI) = 1 message
+       - Generative AI (Gen AI) answers over your data = 2 messages
    -   Gen AI
-   -    – AI-enabled conversations (Consumption rate of 2 messages when Generative AI is used) 
-   -   Copilot – Create and iterate chatbot topics using expanded natural language capabilities   
-Power Automate for Microsoft Copilot:Create cloud flows (Automated, instant and scheduled flows) within the context of Microsoft Copilot Studio bots   
-   -   Connectors - Standard, Premium and Custom connectors   
-   -   Dataverse for Microsoft Copilot (Dataverse default capacity) 5 GB Database, 20 GB File, 2  GB Log  
+   -   AI-enabled conversations: Consumption rate of 2 messages when Generative AI is used 
+   -   Copilot: Create and iterate chatbot topics using expanded natural language capabilities   
+   -   Power Automate for Microsoft Copilot: Create cloud flows (Automated, instan,t and scheduled flows) within the context of Microsoft Copilot Studio bots   
+   -   Connectors: Standard, Premium, and Custom connectors   
+   -   Dataverse for Microsoft Copilot (Dataverse default capacity): 5 GB Database, 20 GB File, 2 GB Log  
 
 ### Microsoft Copilot Studio User License
 
 - **List Price (USD)**: $0 per user/month
-- **Entitlements**: Licensed by user, the Copilot Studio User License is required for each user authoring bots. It is recommended to acquire the tenant license and user licenses as part of a single transaction to simplify onboarding to Microsoft Copilot Studio.
+- **Entitlements**: Licensed by user. The Copilot Studio User License is required for each user authoring bots. It is recommended to acquire the tenant license and user licenses as part of a single transaction to simplify onboarding to Microsoft Copilot Studio.
 
 #### How do Microsoft Copilot Studio use rights that come with Microsoft 365 or Office 365 licenses compare with use rights for the full Microsoft Copilot Studio licenses?
 
