@@ -6,7 +6,7 @@ To list all AI Builder models, use the following example:
 pac copilot list
 ```
 
-That leads to the following output:
+Returns output like the following:
 
 ```Text
 Id                                   State    Name
