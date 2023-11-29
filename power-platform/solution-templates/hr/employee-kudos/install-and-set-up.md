@@ -19,7 +19,7 @@ Establish a centralized team that consists of key stakeholders, product owners, 
 
 More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
-As a Microsoft Power Platform admin, follow the steps outlined in this article to install and configure the Employee Kudos template.
+As a Microsoft Power Platform admin, follow the steps outlined in this article to install and set up the Employee Kudos template.
 
 ## Step 1: Review prerequisites
 

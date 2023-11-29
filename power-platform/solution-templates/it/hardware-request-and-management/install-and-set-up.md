@@ -21,7 +21,7 @@ Establish a centralized team that consists of key stakeholders, product owners, 
 
 More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
-As a Microsoft Power Platform admin, follow the steps outlined in this article to install and configure the Hardware Request and Management template.
+As a Microsoft Power Platform admin, follow the steps outlined in this article to install and set up the Hardware Request and Management template.
 
 ## Step 1: Review prerequisites
 
@@ -364,7 +364,7 @@ Dataverse search delivers fast and comprehensive search results in a single list
 
 More information: [Configure Dataverse search to improve search results and performance](/power-platform/admin/configure-relevance-search-organization)
 
-## Step 9: Enable copilot (optional)
+## Step 9: Enable copilot
 
 Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assistant for app admins to get insights about the data in their apps through conversation in natural language. As an Hardware Request and Management admin, you can leverage Copilot to help you get insights on appointment booking data. As a Power Platform admin, take these steps to [enable Copilot](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-feature-for-your-environment) and [manage behavior settings](/power-platform/admin/settings-behavior) for all users in the selected environment:
 
@@ -378,6 +378,7 @@ Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assis
 1. Expand the **Product** section and select **Behavior** to manage behavior settings.
 1. In the *Release channel* section, select **Monthly channel** from the dropdown.
 1. Select **Save**.
+   :::image type="content" source="media/install/ppadmin-release-channel.png" alt-text="Screenshot of how to share the Hardware Request app.":::
 
 ## Step 10: Enable auditing
 
@@ -390,9 +391,11 @@ While not required, we recommend enabling the audit setting in your environment 
 
 :::image type="content" source="media/install/start-auditing.png" alt-text="Screenshot of how to enable auditing.":::
 
-## Step 11: Support more languages (optional)
+## Step 11: Support more languages
 
-All fields are globalized so that they display date, time and number formats according to your browser's language setting. All strings in the Hardware Request canvas app are defaulted to English. However, the canvas apps are localization ready. This means all Text, Accessible Label, Tool Tip, HintText, InputPlaceHolderText, and Notifications have Power Fx functions built in to check whether a localized string is present for the user's logged-in browser language code. These strings are administered and maintained via one of the administrator apps. The most efficient way to load and maintain these values is by using the Export to Excel Online capability available in the administrator app in bulk rather than manually entering each one.  
+All fields are globalized so that they display date, time and number formats according to your browser's language setting. All strings in the Hardware Request canvas app are defaulted to English. However, the canvas apps are localization ready. This means all Text, Accessible Label, Tool Tip, HintText, InputPlaceHolderText, and Notifications have Power Fx functions built in to check whether a localized string is present for the user's logged-in browser language code. These strings are administered and maintained via one of the administrator apps.
+
+The most efficient way to load and maintain these values is by using the Export to Excel Online capability available in the administrator app in bulk rather than manually entering each one.  
 
 To create localized strings:
 
@@ -411,7 +414,7 @@ To create localized strings:
 
 > [!TIP]
 >
-> A CSV file available on GitHub contains all the app default English strings. You can import the CSV file into your environment using the Import data capability that is part of the administrator app. Although not required for English-only deployments, importing this file helps you quickly identify the localization strings that you need to prepare for your required language.
+> A CSV file is available for download on the [GitHub Templates for Power Platform site](https://github.com/microsoft/Templates-for-Power-Platform/). It contains all the app default English strings. You can import the CSV file into your environment using the *Import data* capability that is part of the administrator app. Although not required for English-only deployments, importing this file helps you quickly identify the localization strings that you need to prepare for your required language.
 >
 > To further accelerate the string localization creation process, create a cloud flow to trigger off the Dataverse English imported localization records selected in the Administrator app. This flow can use AI Builder action steps to automatically translate the English records to your target language and directly load them into the Localizations table.
 >
