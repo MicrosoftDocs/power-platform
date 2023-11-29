@@ -230,7 +230,7 @@ These offers are available until February 1, 2024.
 
 ### Power Automate unattended RPA add-on
 
-### How can I apply unattended RPA add-ons to my flows?
+#### How can I apply unattended RPA add-ons to my flows?
 
 Follow these steps to apply unattended RPA add-ons for your flows.
 
@@ -656,12 +656,12 @@ More information:
 
 The following list provides add-ons applicable to all standalone Power Apps and Power Automate plans:
 
-- **Power Platform Requests add-on (formally Power Apps and Power Automate capacity add-on**) increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
-- Dataverse Database Capacity (1 GB) $40 per month
-- Dataverse File Capacity (1 GB) $2 per month
-- Dataverse Log Capacity (1 GB) $10 per month
+- **Power Platform Requests add-on (formally Power Apps and Power Automate capacity add-on)** increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
+- **Dataverse Database Capacity** (1 GB) $40 per month
+- **Dataverse File Capacity** (1 GB) $2 per month
+- **Dataverse Log Capacity** (1 GB) $10 per month
 
-### Trial Licenses
+### Trial licenses
 
 #### How long is the free trial period?
 
@@ -736,7 +736,7 @@ The extended transition period allows for using the connectors listed above but 
 
 Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector doesn't provide Dataverse capacity. Dataverse capacity is a prerequisite for Power Apps and Power Automate workflows to use Dataverse.
 
-#### How many apps I can run with Microsoft 365 plans?
+#### How many apps can I run with Microsoft 365 plans?
 
 There's no limit on the number of applications. Customers can continue to run standalone apps to extend and customize Microsoft 365 using standard connectors.
 
