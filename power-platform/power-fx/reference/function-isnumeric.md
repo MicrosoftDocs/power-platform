@@ -38,9 +38,9 @@ The return value is a Boolean **true** or **false**.
 ## Examples
 
 | Formula | Description | Result |
-| **Isnumeric(1)** | Evaluates if the number 1 is a number | _true_ |
-| **Isnumeric("1")** | Evaluates if the text "1" is a number | _true_ |
-| **Isnumeric("A")** | Evaluates if the text A is a number | _false_ |
+| **IsNumeric(1)** | Evaluates if the number 1 is a number | _true_ |
+| **IsNumeric("1")** | Evaluates if the text "1" is a number | _true_ |
+| **IsNumeric("A")** | Evaluates if the text A is a number | _false_ |
 | **IsNumeric(1+1)** | Evaluates if the outcome of 1+1 is a number | _true_ |
 | **IsNumeric("1+1")** | Evaluates if the text 1+1 is a number | _false_ |
 
