@@ -51,7 +51,7 @@ Once you have downloaded **either** the *managed* or *unmanaged* solution files,
 Follow these steps to install either the *managed* or *unmanaged* **SAP Base** solution:
 
 1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment where you want to install the solution.
-1. Select **Solutions** on the left-side panel.
+1. Select **Solutions** on the left pane.
 1. Select **Import solution**.
 1. Browse for and select either the managed *or* unmanaged version of the **mpa_SAPBase** file downloaded in previous step.
 1. Enter the environment variables when prompted, using the [Configure environment variables](configure-environment-variables.md) guidance.
@@ -61,7 +61,7 @@ Follow these steps to install either the *managed* or *unmanaged* **SAP Base** s
 
 Follow these steps to install either the *managed* or *unmanaged* **SAP Procurement** solution:
 
-1. Go to **Solutions** on the left-side panel of the *Power Apps maker portal* after the SAP Base solution successfully installs.
+1. Go to **Solutions** on the left pane of the *Power Apps maker portal* after the SAP Base solution successfully installs.
 1. Browse for and select either the managed or unmanaged version of the *mpa_SAPProcurement* solution file downloaded in previous step.
 1. Select **Next** and **Next** again.
 1. When prompted, populate the *connection references* by either creating new or selecting existing connections as described in [Set up connections for solutions](set-up-connections.md).
