@@ -256,6 +256,9 @@ You can delete and remove users with disabled status in Power Platform. You may 
 
 1. Select **Refresh list** to update the list and confirm deletion.
 
+> [!NOTE]
+> Once users are permanently deleted in Entra ID, any new user record created with the details of the deleted user is a new user object in Entra ID. Such user IDs cannot be updated to gain access to the deleted/disabled user records in Dataverse. Please [re-assign records](https://learn.microsoft.com/en-us/power-apps/user/assign-or-share-records) from the disabled user to the new user. 
+
 #### Audit log after user is permanently deleted
 
 Once permanently deleted, the name of the deleted user no longer shows in the audit log records when the user was the owner, creator, or modifier of the record. For the record owner, the name is replaced with  **Record Unavailable** in these audit records. For the record creator or modifier, the name is replaced with  **No Name** in these audit records.
