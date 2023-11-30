@@ -88,7 +88,7 @@ Templates for Power Platform offer the following benefits:
 
 ## Get started
 
-Learn how to get started working with Enterprise templates for Power Platform. More information: [Get started with SAP Procurement template](finance/sap-procurement/administer/get-started.md), [Install and set up the Employee Kudos template](hr/employee-kudos/install-and-set-up.md), [Install and set up the Awards and Recognition template](hr/awards-and-recognition/install-and-set-up.md), [Install and set up the Onboarding Buddy template](hr/onboarding-buddy/install-and-set-up.md), [Install and set up the Hardware Request and Management template](/power-platform/solution-templates/it/hardware-request-and-management/install-and-set-up.md),[Install and set up the Appointment Booking template](/power-platform/solution-templates/it/appointment-booking/install-and-set-up.md)
+Learn how to get started working with Enterprise templates for Power Platform. More information: [Get started with SAP Procurement template](finance/sap-procurement/administer/get-started.md), [Install and set up the Employee Kudos template](hr/employee-kudos/install-and-set-up.md), [Install and set up the Awards and Recognition template](hr/awards-and-recognition/install-and-set-up.md), [Install and set up the Onboarding Buddy template](hr/onboarding-buddy/install-and-set-up.md), [Install and set up the Hardware Request and Management template](it/hardware-request-and-management/install-and-set-up.md),[Install and set up the Appointment Booking template](it/appointment-booking/install-and-set-up.md)
 
 ## Support
 
