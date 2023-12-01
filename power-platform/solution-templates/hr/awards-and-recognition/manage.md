@@ -4,7 +4,7 @@ description: Get started creating custom experiences for your users in the Award
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: get-started
+ms.topic: how-to
 ms.date: 09/27/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -155,12 +155,13 @@ Follow these steps to review the nominations and approve or reject:
 >
 > You need to set up your own organizational process to notify award recipients after the entire review process is complete. For example, you could send out an official communication that acknowledges the award recipients or have an awards ceremony.
 
-## Localize application strings
+## Support more languages
 
-The strings in the Awards and Recognition app can be localized to support the diverse set of languages that may be spoken in your company. The app contains default strings for all text, but checks to see if there's a localized version in the Employee Experience Localization table. The table is included in the Employee Experience Base solution that gets installed alongside the Awards and Recognition solution. The Employee Experience Base solution and the Awards and Recognition solution are accessed together from AppSource.
+ You can localize all the strings in the Awards and Recognition app to support the diverse set of languages that may be spoken at your organization. The app contains default strings for all text, but checks to see if there's a localized version in the Employee Experience Localization table. The table is included in the Employee Experience Base solution that gets installed alongside the Awards and Recognition solution. The Employee Experience Base solution and the Awards and Recognition solution are accessed together from AppSource.
 
-To grant users the ability to localize app strings, they must have the **Employee Experience Localizer** security role assigned to them by a Power Platform admin. Once assigned, the user can open the Employee Experience Localization Admin app and follow these steps:
+To localize app strings, users must have the **Employee Experience Localizer** security role assigned to them by a Power Platform admin. Once assigned, a user takes these steps:
 
+1. Go to the *Employee Experience Admin app*.
 1. Select **+New**.
 1. Fill out the form:
 
@@ -169,7 +170,7 @@ To grant users the ability to localize app strings, they must have the **Emplo
     - *Localized Value* is the translated text.
     - *String Type* is the type of string you're replacing. This field is optional.
 
-1. Select **Save**.
+1. Select **Save & Close**.
 
 ## Next step
 
