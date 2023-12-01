@@ -102,12 +102,6 @@ To find out what type (automated/manual/scheduled) of flow you have, select a fl
 
 During the [transition period](types.md#transition-period), the parent flow license is not inherited by the child flow. The child flow uses the owner's license. However, after the transition period ends, only the parent flow license (owner's license/parent flow's Process license) will be used, unless the child flow has a Process license.
 
-
-
-
-
-
-
 ### We have three environments (development, test, and production) to align with best practices and we need flows in several environments. Do we need to buy a Process license for every environment?
 
 Each flow exists in a specific environment. This means if a flow is imported into a different environment, each instance is a separate flow and needs a separate license. Parent flows, child flows, and all the flows that are tagged as in context of the flow are treated as one flow and one Process license covers the usage of all of them in one environment.   
@@ -116,7 +110,7 @@ Each flow exists in a specific environment. This means if a flow is imported int
 
 The Power Automate Premium license is a user level license. All user level licenses (Power Automate Premium, Microsoft 365, Dynamics 365) are tenant level licenses. The user can use the flow in all environments without having to buy a separate license.
 
-### Can Power Automate Hosted RPA add-on be used as a Power Automate Unattended RPA add-on?
+### Can a Power Automate Hosted RPA add-on be used as a Power Automate Unattended RPA add-on?
 
 Yes, you can use the Power Automate Hosted RPA add-on capacity in two ways:
 - For hosted machines and hosted machine groups
@@ -159,6 +153,20 @@ Power Automate—included with Office, Power Automate premium, Power Apps premiu
 - In Azure national or sovereign clouds, these plans are recognized across tenants in guest scenarios. More information: [National clouds](/azure/active-directory/develop/authentication-national-cloud), [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies)
 
 - Licenses aren't recognized across tenants in different Azure clouds.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### What Power Automate capabilities are included in Windows licenses?
 
