@@ -4,10 +4,10 @@ description: About Power Apps per app plans
 author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/18/2022
+ms.date: 12/01/2023
 ms.subservice: admin
 ms.author: alaug
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
