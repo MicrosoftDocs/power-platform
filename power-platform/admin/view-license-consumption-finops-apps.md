@@ -69,13 +69,13 @@ Select the specific **User license level** to see a list, and additional details
 
 The following is a screenshot of the **Licenses (preview)** page displaying **User license level**.
 
-:::image type="content" source="media/admin-view-user-licenses/finops-apps-drill-down.png" alt-text="Screenshot of the Licenses (preview) page, including User license level.":::
+:::image type="content" source="media/user-license-level.png" alt-text="Screenshot of the Licenses (preview) page, including User license level.":::
 
 You can filter the view using **Environment, Security role, Role license** and **Assigned license** filters.
 
 Select an **Email/User ID** to view the details of all roles assigned to the selected user across all finance and operations environments in the tenant. This view also provides recommendations on what licenses should be assigned to the user based on the user's assigned roles. This can be seen in the following image.
 
-:::image type="content" source="media/admin-view-user-licenses/finops-apps-email-userid-sort.png" alt-text="Screenshot of the details of all roles assigned to a selected user across all finance and operations environments in a tenant.":::
+:::image type="content" source="media/user-license-level-details.png" alt-text="Screenshot of the details of all roles assigned to a selected user across all finance and operations environments in a tenant.":::
 
 ## Download
 
