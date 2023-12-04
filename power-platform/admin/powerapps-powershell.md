@@ -1,25 +1,26 @@
 ---
-title: PowerShell support
+title: PowerShell support for Power Apps and Power Automate
 description: Learn about the PowerShell cmdlets and get a tutorial of how to install and run them.
 author: laneswenka
+contributors:
+  - ChrisGarty
+  - v-aangie
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 10/02/2023
 ms.subservice: admin
-ms.author: laswenka
+ms.author: cgarty
 search.audienceType: 
   - admin
-ms.contributors:
- - jopanchal
- - amijh
 ---
 
 # PowerShell support for Power Apps and Power Automate
 
-With [PowerShell](/powershell/scripting/overview) cmdlets for Power Platform creators and administrators, you can automate many of the monitoring and management tasks that are only possible manually today in [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [Power Automate](https://make.powerautomate.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), or the [Power Platform Activity Center (PPAC)](https://admin.powerplatform.microsoft.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+With [PowerShell](/powershell/scripting/overview) cmdlets for Power Platform creators and administrators, you can automate many of the monitoring and management tasks that are only possible manually today in [Power Apps](https://make.powerapps.com/), [Power Automate](https://make.powerautomate.com/), or the [Power Platform activity center](https://admin.powerplatform.microsoft.com/).
 
 ## Cmdlets
+
 [Cmdlets](/powershell/scripting/developer/cmdlet/cmdlet-overview) are functions written in the [PowerShell](/powershell/scripting/overview) script language that execute commands in PowerShell. Running these Power Apps cmdlets allows you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. You can still use the cmdlets if you're not an admin on the tenant, but you're limited to the resources you own. Cmdlets that start with the word 'Admin' are designed to be used by an administrative user account.
 
 Cmdlets are available on the PowerShell gallery as two separate modules: 
@@ -29,10 +30,10 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 For information on the Power Apps admin module, see [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin) and [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell).
 
 > [!NOTE]
-> **Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:**
+> Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:
 > 
 > The default endpoint is "prod". If a user wants to run a PowerShell script targeting a GCC environment, the -Endpoint parameter needs to be changed to "usgov" for GCC Moderate, or "usgovhigh" for GCC High, or "dod" for GCC DOD.
-> 
+>
 > ```powershell
 > Add-PowerAppsAccount -Endpoint "usgov" 
 > ```
@@ -223,7 +224,7 @@ Returns a list of all Power Apps across the tenant, with details of each (for ex
 Get-AdminPowerApp 'DisplayName'
 ```
 
-Returns a list of all the Power Apps in your tenant that match the display name. 
+Returns a list of all the Power Apps in your tenant that match the display name.
 
 **Note**: Use quotation characters (") around input values that contain spaces.
 
@@ -303,7 +304,7 @@ Changes the owner role of a PowerApp to the current user, and replaces the origi
 Get-AdminDeletedPowerAppsList -EnvironmentName 'EnvironmentName'
 ```
 
-This displays all canvas apps that were recently deleted and may still be recovered. 
+This displays all canvas apps that were recently deleted and may still be recovered.
 
 ### Recover a deleted canvas app
 
@@ -461,12 +462,12 @@ Displays a list of all API connections you have in the default environment. Nati
 Get-AdminPowerAppConnector
 ```
 
-Returns a list of all custom connector details in the tenant. 
+Returns a list of all custom connector details in the tenant.
 
 > [!Note]
 > `Get-AdminPowerAppConnector` does not list custom connectors that are in a solution. This is a known limitation.
 
-## Data loss prevention (DLP) policy commands 
+## Data loss prevention (DLP) policy commands
 
 These cmdlets control the DLP policies on your tenant.
 
@@ -508,46 +509,46 @@ Remove-DlpPolicy
 
 Deletes a DLP policy.
 
-## DLP resource exemption cmdlets 
+## DLP resource exemption cmdlets
 
-These cmdlets allow you to exempt or unexempt a specific resource from a DLP policy. 
+These cmdlets allow you to exempt or unexempt a specific resource from a DLP policy.
 
-### Retrieve existing exempt resource list for a DLP policy 
+### Retrieve existing exempt resource list for a DLP policy
 
 ```powershell
 Get-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
 ```
 
-### Create a new exempt resource list for a DLP policy 
+### Create a new exempt resource list for a DLP policy
 
 ```powershell
 New-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -NewDlpPolicyExemptResources 
 ```
 
-### Update the exempt resource list for a DLP policy 
+### Update the exempt resource list for a DLP policy
 
 ```powershell
 Set-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -UpdatedExemptResources 
 ```
 
-### Remove the exempt resource list for a DLP policy 
+### Remove the exempt resource list for a DLP policy
 
 ```powershell
 Remove-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
 ```
 
-To exempt a resource from a DLP policy, you need the following information: 
+To exempt a resource from a DLP policy, you need the following information:
 
-- Tenant ID (GUID) 
-- DLP policy ID (GUID) 
-- Resource ID (ends with a GUID) 
-- Resource type 
+- Tenant ID (GUID)
+- DLP policy ID (GUID)
+- Resource ID (ends with a GUID)
+- Resource type
 
-You can retrieve the resource ID and type using PowerShell cmdlets Get-PowerApp for apps and Get-Flow for flows. 
+You can retrieve the resource ID and type using PowerShell cmdlets Get-PowerApp for apps and Get-Flow for flows.
 
 **Example** 
 
-To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 06002625-7154-4417-996e-21d7a60ad624 we can run the following cmdlets: 
+To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 06002625-7154-4417-996e-21d7a60ad624 we can run the following cmdlets:
 
 ```
 1. PS D:\> $flow = Get-Flow -FlowName f239652e-dd38-4826-a1de-90a2aea584d9 
@@ -597,7 +598,7 @@ New-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{
 } 
 ``` 
 
-The governance error message URL and email can be shown independently or together. Each value’s presence in the governance error message is controlled by the ‘enabled’ field. 
+The governance error message URL and email can be shown independently or together. Each value’s presence in the governance error message is controlled by the ‘enabled’ field.
 
 #### This governance error message content appears in the following experiences.
 
@@ -610,13 +611,13 @@ The governance error message URL and email can be shown independently or togethe
 |     5    |     Maker saves a Power Automate flow that’s not DLP compliant                                                     |     Generally available    |
 |     6    |     User launches an app without security group membership to the security group associated to Dataverse environment|     Generally available    |
 
-#### Display governance error message content 
+#### Display governance error message content
 
 ```powershell 
 Get-PowerAppDlpErrorSettings -TenantId 'TenantId' 
 ``` 
 
-#### Update governance error message content 
+#### Update governance error message content
 
 ```powershell 
 Set-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{  
@@ -677,7 +678,8 @@ It is important to know that when using *Remove-AllowedConsentPlans*, all existi
 
 If you have any comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
 
-## See also
+### See also
+
 [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin) <br />
 [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell) <br />
 [Preview: Programmability and extensibility overview](programmability-extensibility-overview.md)
