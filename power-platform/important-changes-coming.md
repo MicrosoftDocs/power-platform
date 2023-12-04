@@ -188,7 +188,7 @@ When the Power Apps read-only grid is originally enabled, the jump bar row isn't
 
 ## Dynamics 365 (Preview) app for Windows is deprecated
 
-The [Microsoft Dynamics 365 (Preview)](https://apps.microsoft.com/store/detail/microsoft-dynamics-365-preview/9N0RWZ9KZZT8?hl=en-us&gl=US) app for Windows was deprecated on June 20, 2022. The app is no longer supported.  
+The Microsoft Dynamics 365 (Preview) app for Windows was deprecated on June 20, 2022. The app is no longer supported.  
 
 You can still run your Dynamics 365 apps on Powers Apps for Windows with the same set of features and capabilities. For more information, see [Install Powers Apps for Windows](/power-apps/mobile/windows-app-install).
 
