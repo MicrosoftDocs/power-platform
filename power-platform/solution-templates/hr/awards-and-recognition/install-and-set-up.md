@@ -1,19 +1,25 @@
 ---
-title: Install and configure the Awards and Recognition template for Power Platform
-description: Learn how to install, configure, and deploy the Awards and Recognition template for Microsoft Power Platform.
+title: Install and set up the Awards and Recognition template for Power Platform
+description: Learn how to install, set up, and deploy the Awards and Recognition template for Microsoft Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 09/27/2023
+ms.date: 11/29/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Install and configure the Awards and Recognition template
+# Install and set up the Awards and Recognition template
 
-As a Power Platform admin, you install, configure, and deploy the Awards and Recognition template's solutions for your organization. To get started, follow the steps.
+Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
+
+Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
+
+More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+
+As a Microsoft Power Platform admin, follow the steps outlined in this article to install and set up the Awards and Recognition template.
 
 ## Step 1: Review prerequisites
 
@@ -41,18 +47,18 @@ More license details are available in the [Microsoft Power Platform Licensing Gu
 
 ### Set up environments and data policies
 
-It's important to have a cohesive environment and data policy strategy and setup for enterprise templates to securely deploy your solutions. To successfully install and manage the Hardware Request and Management template, confirm these resources and practices are in place.
+It's important to have a cohesive environment and data policy strategy for enterprise templates. To successfully install and manage the Awards and Recognition template, confirm these resources and practices are in place.
 
 - **Administrators** - Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments.
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
-  - Power Platform Administrator to create environments if needed
+  - Power Platform Administrator to create environments
   
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
 - **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
-  - A Power Platform environment with a Dataverse database installed is set up
+  - A Power Platform environment is set up with a Dataverse database
   - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
   More information: [Environments overview](/power-platform/admin/environments-overview)
@@ -65,13 +71,13 @@ It's important to have a cohesive environment and data policy strategy and setup
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be manually set up.
 
-The installation of the Awards and Recognition template requires a Microsoft Dataverse connection. It's best to create connections before importing the template to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
+The installation requires a Microsoft Dataverse connection. It's best to create connections before you install the template to avoid having to jump back and forth between browser windows.
 
 Create a new connection with the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/).
 
 To create connections in advance, take these steps:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/)
+1. Go to [Power Apps](https://make.preview.powerapps.com/)
 1. Go to **Connections** and select **+ New Connection** for the *Microsoft Dataverse connector* and create a connection.
 
 More information: [Manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
@@ -91,13 +97,10 @@ There are two solution installation options available for you to consider:
 
 You can easily access and install the Awards and Recognition template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Awards and Recognition solution template on AppSource](https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa_awardsandrecognition?tab=Overview) and select **Get it now**. This takes you to the *Install Awards and Recognition Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Go to the [Awards and Recognition solution template on AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate) and select **Get it now**. This takes you to the *Install Awards and Recognition Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 :::image type="content" source="media/install/ar-install-env.png" alt-text="AScreenshot of the modal dialog window where you select the environment you set up for the template.":::
-
 1. Select the environment that you prepared for the template.
-
 1. Agree to the *Terms and Privacy* statements by checking the boxes.
-
 1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
 
 > [!IMPORTANT]
@@ -119,8 +122,8 @@ You also have the option to download *managed* or *unmanaged* solution files to 
       - [mpa_EmployeeExperienceBase_unmanaged.zip](https://aka.ms/EEBaseUnmanagedSolution)
       - [mpa_AwardsAndRecognition_unmanaged.zip](https://aka.ms/AwardsAndRecognitionUnmanagedSolution)
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
-1. Select **Solutions** on the left-side panel.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
+1. Select **Solutions** on the left pane.
 1. Select **Import solution**.
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_ITBase* file downloaded in previous step.
 1. Select **Next**.
@@ -173,9 +176,9 @@ Set up security roles in your solutions so admins can manage access to and the e
 
 Open the newly installed Awards and Recognition solution and verify that the cloud flow is set to the *on* status. If not, turn it on.
 
-1. Select **Solutions** on left-side panel.
+1. Select **Solutions** on left pane.
 1. Select the **Awards and Recognition** solution from the list.
-1. Select **Cloud flows (1)** on the left-side panel.
+1. Select **Cloud flows (1)** on the left pane.
 1. Select the *flow*.
 1. Select **Turn on** on the command bar if the flow is not already set to *on*.
 
@@ -185,27 +188,31 @@ Once the app admin configurations are complete you are ready to share the app wi
 
 ### Share the app with the program manager
 
-Set the Awards and Recognition program manager up first so they can configure awards, award assessment ratings, nomination periods, groups, and group membership and make sure the. Take these steps:
+Set the Awards and Recognition program manager up first so they can configure awards, award assessment ratings, nomination periods, groups, and group memberships. Take these steps:
 
-1. Select **Apps** in the environment in which Awards and Recognition is installed.
-1. Locate the Awards and Recognition app.
-1. Go to the *three dots* to the right of the Awards and Recognition app and select **Share**.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left pane and select the **Awards and Recognition** solution from the list.
+1. Select **Apps**.
+1. Go to the *Awards and Recognition app* in the list and select the **three dots** to the right to see a list of actions.
+1. Select **Share**.
 1. Search for and add the user who is the Awards and Recognition program manager.
 1. Check the **Co-owner** checkbox so the program manager has *edit* access to the app.
-1. Select *roles* from a drop-down list in the *Data permission* area. It's next to the *Microsoft Dataverse tables* that the Awards and Recognition app uses. Be sure to assign these two roles:
+1. Select **roles** from a drop-down list in the *Data permission* area. It's next to the *Microsoft Dataverse tables* that the Awards and Recognition app uses. Be sure to assign these two roles:
     1. Select **Basic User**
     1. Select **Awards and Recognition - Program Admin**
-1. Add an optional email message to let the program manager know the app program is ready to be set up.
+1. Add an email message to let the program manager know the app program is ready to be set up.
 1. Select **Share**.
 
 ### Share the app with the program participants
 
 When the program manager is done configuring the Awards and Recognition program for your organization, it is ready to be deployed to the program participants in your organization. Take these steps:
 
-1. Select **Apps** in the environment in which Awards and Recognition is installed.
-1. Locate the Awards and Recognition app.
-1. Go to the *three dots* to the right of the Awards and Recognition app and select **Share**.
-1. Search for and add the users who you want to share the app with. Select **Everyone** from the *Enter a name* field's drop-down if everyone in the organization should be able to use the app.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left pane and select the **Awards and Recognition** solution from the list.
+1. Select **Apps**.
+1. Go to the *Awards and Recognition canvas app* in the list and select the **three dots** to the right to see a list of actions.
+1. Select **Share**.
+1. Search for and add the users you want to share the app with. Select **Everyone** from the *Enter a name* field's drop-down if everyone in the organization should be able to use the app.
 1. Leave the *Co-owner* checkbox empty for regular users of the app. Check the **Co-owner** checkbox for all users who should have *edit* access to the app. There could people in  addition to the program manager who need this access.
 1. Select *roles* from a drop-down list in the *Data permission* area. It's next to the *Microsoft Dataverse tables* that the Awards and Recognition app uses. Be sure to assign two roles to each user:
 
@@ -213,22 +220,23 @@ When the program manager is done configuring the Awards and Recognition program 
     - Select **Awards and Recognition - User**
 1. Add an optional email message.
 1. Select **Share**.
-
-> [!NOTE]
-> If you didn't install the Awards and Recognition solution and it hasn't been shared with you, then you'll have to go into the Awards and Recognition solution to find the app there.
+:::image type="content" source="media/install/share-app.png" alt-text="Screenshot of the window where you add users and co-owners to your app.":::
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
+> [!NOTE]
+>If Awards and Recognition apps aren't shared with you and you cannot access them directly from Power Apps, please contact your admin.
+
 ## Step 7: Turn on auditing (optional)
 
-While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created/updated records in the future. To do this:
+While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created and updated records in the future. To do this:
 
 1. Go to [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/home).
-1. Select **Environment** to select the environment where the solution is installed.
+1. Select **Environment** on the left pane then select the environment that contains the solution.
 1. Select **Audit settings**.
 1. Select **Start auditing**.
 
 ## Next steps
 
-[Manage the Awards and Recognition app](manage.md)
+[Manage the Awards and Recognition app](manage.md),
 [Use the Awards and Recognition app](use.md)

@@ -3,7 +3,7 @@ title: Default environment routing (preview)
 description: Default environment routing is a premium, governance feature that allows Power Platform admins to automatically direct their *new makers* into their own, personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) for the first time. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/25/2023
+ms.date: 12/01/2023
 author: hasharaf 
 ms.author: hasharaf 
 ms.reviewer: sericks
@@ -119,7 +119,6 @@ Before you enable the **Default environment routing** feature, consider the foll
 When trying to enable an environment routing tenant setting, keep the following points in mind:
 
 - If the **Developer environment assignments** property is set for only _specific admins_, the command fails and an error message is displayed. To change this, go to Power Platform admin center > **Tenant settings** > **Developer environment assignments** and set it to **Everyone**.
-- If the tenant's default environment isn't managed, the command fails and an error message is displayed. For more information, see [Enable or edit Managed Environments in the admin center](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center).
 
 ## Disable the feature
 
