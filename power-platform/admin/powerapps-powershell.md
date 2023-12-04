@@ -672,7 +672,7 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 
 By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command and disabling the setting *AllowAdHocSubscriptions* in Azure AD. 
 
-It is important to know that when using *Remove-AllowedConsentPlans*, all existing plans of the specified type are removed from all users in the tenant and aren't be recoverable. In addition, it blocks all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
+It's important to know that when using *Remove-AllowedConsentPlans*, all existing plans of the specified type are removed from all users in the tenant and aren't recoverable. In addition, it blocks all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
 
 ## If you have questions
 
