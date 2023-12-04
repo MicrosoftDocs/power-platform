@@ -24,7 +24,7 @@ Requires manual review and deletion |    Automatically deleted when the user is 
 | --- | ---| 
 | Environment\** | Gateway| 
 | Environment permissions\*** | Gateway permissions| 
-| Canvas app\** | Power Apps notifications| 
+| Canvas app / Custom Page\** | Power Apps notifications| 
 | Canvas-app permissions | Power Apps user settings| 
 | Connection\** | Power Apps user-app settings| 
 | Connection permissions | | 
@@ -47,7 +47,7 @@ Here is the breakdown of which experiences are available to delete each type of 
 |--- | --- | ---|
 |Environment    | Power Platform admin center |     Power Apps cmdlets|
 |Environment permissions**    | Power Platform admin center | Power Apps cmdlets|
-|Canvas app    | Power Platform admin center <br /> Power Apps| Power Apps cmdlets|
+|Canvas app / Custom Page   | Power Platform admin center <br /> Power Apps| Power Apps cmdlets|
 |Canvas-app permissions    | Power Platform admin center | Power Apps cmdlets|
 |Connection | | App creator: Available <br> Admin: Available|
 |Connection permissions | | App creator: Available <br> Admin: Available|

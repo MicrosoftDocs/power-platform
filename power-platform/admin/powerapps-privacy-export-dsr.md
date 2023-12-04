@@ -26,7 +26,7 @@ Resources containing personal data | Website access |    PowerShell access
 --- | --- | --
 Environment    | Power Platform admin center |     Power Apps cmdlets
 Environment permissions**    | Power Platform admin center     | Power Apps cmdlets
-Canvas App    | Power Apps Portal |     Power Apps cmdlets
+Canvas App / Custom Page   | Power Apps Portal |     Power Apps cmdlets
 Canvas App permissions    | Power Apps Portal    | Power Apps cmdlets
 Gateway | Power Apps Portal***    | On-premises gateway cmdlets
 Gateway permissions    | Power Apps Portal***    |
