@@ -37,7 +37,7 @@ This topic discusses the Power Virtual Agents capabilities to find or export per
 
 1. Select **Chatbot** or **Chatbot subcomponent** from the table list, then select **Export data**. Your data will take a couple of minutes to be compiled for export. 
 
-   :::image type="content" source="media/personal-data-export/exportchatbotandchatbotsubcomponent-2023" alt-text="Select entities for export.":::
+   :::image type="content" source="media/personal-data-export/exportchatbotandchatbotsubcomponent-2023.png" alt-text="Select entities for export.":::
 
 1. When your export is ready, select **Download exported data** to download the content.
 
