@@ -1,4 +1,2 @@
-<!-- 
-Instructions: Remove comments and this line. Add any content needed to introduce this command group
-
--->
+> [!NOTE]
+> With pac cli version 1.27, the `pac env` alias was introduced for the `pac org` command group. This means that you can use, for instance, `pac env list` instead of `pac org list` and `pac env select` instead of `pac org select`.
