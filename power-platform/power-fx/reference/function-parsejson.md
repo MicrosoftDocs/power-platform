@@ -1,6 +1,6 @@
 ---
-title: ParseJSON function in Power Apps
-description: Reference information including syntax and examples for the ParseJSON function in Power Apps.
+title: ParseJSON function
+description: Reference information including syntax and examples for the ParseJSON function.
 author: jorisdg
 
 ms.topic: reference
@@ -15,13 +15,16 @@ contributors:
   - jorisdg
   - mduelae
 ---
-# ParseJSON function in Power Apps
+# ParseJSON function
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 Interprets a JSON string and returns an [untyped object](../untyped-object.md).
 
 ## Description
 The ParseJSON function will parse a valid JSON string and return an [untyped object](../untyped-object.md) representing the JSON structure. 
 
-The ParseJSON function may return errors if the text isn't valid JSON according to the JavaScript Object Notation (JSON) format described in [ECMA-404](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259).
+The ParseJSON function may return errors if the text isn't valid JSON according to the JavaScript Object Notation (JSON) format described in [ECMA-404](https://www.ecma-international.org/publications-and-standards/standards/ecma-404) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259).
 
 ## Syntax
 **ParseJSON**( *JSONString* )

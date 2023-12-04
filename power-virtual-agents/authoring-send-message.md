@@ -1,6 +1,6 @@
 ---
 title: Send a message (preview)
-description: Use the Message node to send a message from the bot to a user in Power Virtual Agents preview.
+description: Use the Message node to send a message from the bot to a user in Microsoft Copilot Studio preview.
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -14,7 +14,9 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Send a message (preview)
+# Send a message
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 The **Message** node sends a message from the bot to the user. Messages are usually simple text messages, but can also include richer components, such as images, videos, quick replies, and cards.
 
@@ -33,7 +35,7 @@ The **Message** node sends a message from the bot to the user. Messages are usua
 
 1. Optionally, use the tools in the node's menu bar to add basic formatting, [variables](authoring-variables.md), and [message variations](#use-message-variations).
 
-    :::image type="content" source="media/authoring-send-message/message-node.png" alt-text="Screenshot of a text Message node in the Power Virtual Agents authoring canvas.":::
+    :::image type="content" source="media/authoring-send-message/message-node.png" alt-text="Screenshot of a text Message node in the Microsoft Copilot Studio authoring canvas.":::
 
 ## Use message variations
 
@@ -98,7 +100,7 @@ A basic card is a general-purpose card that you can use to add text, images, and
 [Adaptive Cards](https://adaptivecards.io) are platform-agnostic cards that you can tailor to your needs. You can design Adaptive Cards using the [Adaptive Cards Designer](https://adaptivecards.io/designer/) or author the JSON directly.
 
 > [!IMPORTANT]
-> Power Virtual Agents supports AdaptiveCard schema version 1.3 or lower.
+> Microsoft Copilot Studio supports AdaptiveCard schema version 1.3 or lower.
 
 1. [Add a **Message** node](#send-a-text-message).
 
@@ -177,7 +179,7 @@ On voice-enabled channels such as Omnichannel for Customer Service, the message 
 
 ### Use SSML to customize speech responses
 
-Speech Synthesis Markup Language (SSML) is an XML-based markup language that specifies how text is converted into synthesized speech. It's one of the many ways Power Virtual Agents makes your bot's responses sound like natural speech.
+Speech Synthesis Markup Language (SSML) is an XML-based markup language that specifies how text is converted into synthesized speech. It's one of the many ways Microsoft Copilot Studio makes your bot's responses sound like natural speech.
 
 In the message, select **SSML tags**, and then select the tags you want to add. You can add multiple tags to a single speech variation.
 

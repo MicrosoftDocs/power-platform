@@ -1,6 +1,6 @@
 ---
-title: XSendAppNotification and related functions in Power Apps
-description: Reference information including syntax and examples for the XSendAppNotification, XCreateUrlAction, XCreateSidePaneActionForDashboard, XCreateSidePaneActionForEntity, XCreateSidePaneActionForEntityList, and XCreateTeamsChatAction functions in Power Apps.
+title: XSendAppNotification and related functions
+description: Reference information including syntax and examples for the XSendAppNotification, XCreateUrlAction, XCreateSidePaneActionForDashboard, XCreateSidePaneActionForEntity, XCreateSidePaneActionForEntityList, and XCreateTeamsChatAction functions.
 author: jaredha
 ms.topic: reference
 ms.custom: canvas
@@ -13,7 +13,9 @@ search.audienceType:
 contributors:
 ---
 
-# XSendAppNotification and related action functions in Power Apps (preview)
+# XSendAppNotification and related action functions (preview)
+
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -106,7 +108,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 | --------- | ---- | -------- | ----------- |
 | Title | String | Yes | The title that displays for the action. |
 | Chat ID | String | No | If opening an existing chat, the ID of the chat session to be opened. |
-| Member IDs | GUID | No | If creating a new chat, an array of Azure AD Object ID values of the participants to be included in the chat. |
+| Member IDs | GUID | No | If creating a new chat, an array of Microsoft Entra Object ID values of the participants to be included in the chat. |
 | Record ID | GUID | No | If linking to a Dynamics 365 record, the ID of the record to which the chat should be linked. |
 | Entity Name | String | No | If linking to a Dynamics 365 record, the logical name of the entity of the record to which the chat should be linked. |
 | Initial Message | String | No | An introductory message of the new chat. |
@@ -147,7 +149,7 @@ XSendAppNotification(
 		),
 	XCreateTeamsChatAction(
 		"Chat with account manager",
-		[AsType(AsType(ThisRecord.Regarding, Accounts).Owner, Users).'Azure AD Object ID'],
+		[AsType(AsType(ThisRecord.Regarding, Accounts).Owner, Users).'Microsoft Entra Object ID'],
 		AsType(ThisRecord.Regarding, Accounts).Account, 
 		"account", 
 		ThisRecord.Description

@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 10/19/2023
+ms.date: 11/16/2023
 ms.custom: 
 ---
 # Deploy pipelines as a service principal or pipeline owner (preview)
@@ -27,11 +27,10 @@ For a delegated deployment with a service principal, follow these steps.
     > [!IMPORTANT]
     > Add the pipeline stage owner as an owner of the enterprise application in Entra ID. This can be a standard user or service principal as long as the same identity owns the pipeline stage and enterprise application.
 1. Add the enterprise application as a server-to-server (S2S) user in your pipelines host environment and each target environment it deploys to.
-1. Assign the Pipelines Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments.
-    Lower permission security roles cannot deploy plug-ins and other code components.
+1. Assign the Deployment Pipeline Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments. Lower permission security roles can't deploy plug-ins and other code components.
 1. Choose (check) **Is delegated deployment** on a pipeline stage, select **Service Principal**, and enter the Client ID. Click **Save**.
 1. Create a cloud flow within the pipelines host environment. Alternative systems can be integrated using pipelines' Dataverse API's.
-1. Select the **OnApprovalStarted** trigger. **OnDeploymentRequested** can also be used if **Pre-Export Step Required** is disabled on the pipeline stage.
+1. Select the **OnApprovalStarted** trigger.
 1. Add steps for your desired custom logic.
 1. Insert an approval step. Use Dynamic content for sending deployment request information to the approver(s).
 1. Insert a condition.
@@ -67,7 +66,7 @@ Regular users, including those used as service accounts, can also serve as deleg
 
 To deploy as the pipeline stage owner, follow these steps.
 
-1.	Assign the Pipelines Administrator security role to the pipeline stage owner within the pipelines host, and assign System Administrator security role within target environments.
+1.	Assign the Deployment Pipeline Administrator security role to the pipeline stage owner within the pipelines host, and assign System Administrator security role within target environments.
     
     Lower permission security roles cannot deploy plug-ins and other code components.
 
@@ -75,7 +74,7 @@ To deploy as the pipeline stage owner, follow these steps.
     - The pipeline stage owner’s identity will be used for all deployments to this stage.
     - Similarly, this identity must be used to approve deployments.
 1.	Create a cloud flow in a solution within the pipelines host environment.
-    1. Select the **OnApprovalStarted** trigger. **OnDeploymentRequested** can also be used if **Pre-Export Step Required** is disabled on the pipeline stage.
+    1. Select the **OnApprovalStarted** trigger.
     1. Insert actions as desired. For example, an approval.
     1. Add Dataverse **Perform an unbound action**.  
       Action Name: UpdateApprovalStatus (20 = completed, 30 = rejected)

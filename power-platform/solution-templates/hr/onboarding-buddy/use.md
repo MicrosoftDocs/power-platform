@@ -1,10 +1,10 @@
 ---
 title: Use the Onboarding Buddy app
-description: Get started using the Onboarding Buddy app.
+description: Get started using the Onboarding Buddy app. Learn how you can use the Onboarding Buddy app to sign up as a Buddy or, as a manager, use the app to match Buddies to new employees.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: get-started
+ms.topic: how-to
 ms.date: 09/29/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -38,10 +38,11 @@ Sign up to be a Buddy in the Onboarding Buddy app.
 
 1. Select **Sign Up** on the first screen.
 1. Read about the Onboarding Buddy program and select **Next**.
+    :::image type="content" source="media/use/ob-use-start.png" alt-text="Screenshots of the Onboarding Buddy app's signup and welcome screens.":::
 1. Read more about the program and select **Next**.
-:::image type="content" source="media/use/ob-use-welcome.png" alt-text="Screenshot of the Onboarding Buddy app's welcome screens.":::
 1. Fill out the *buddy details* form. Select **yes** to the *Available as a buddy* option.
-:::image type="content" source="media/use/ob-use-buddy-details.png" alt-text="Screenshot of the Onboarding Buddy app's Update your buddy details screen.":::
+
+    :::image type="content" source="media/use/ob-use-available.png" alt-text="Screenshot of the Onboarding Buddy app's Update your buddy details screen.":::
 
 ### Update your Buddy profile
 
@@ -49,7 +50,6 @@ Update your Buddy profile in the Onboarding Buddy app.
 
 1. From your *Buddy Matching Profile* screen, select **Edit My Profile**.
 1. Update your profile information and select **Save**.
-:::image type="content" source="media/use/ob-use-update.png" alt-text="Screenshots of the Onboarding Buddy app's profile screens.":::
 
 ## Match Onboarders to Buddies
 
@@ -67,7 +67,6 @@ As a manager, you need to also go through the Buddy sign-up process. Once you do
 1. Select the *Onboarder* you wish to match. Your selection takes you to the matching screen.
 1. Select the *Buddy* you wish to match to the *Onboarder* and review their profile to confirm it's a good match.
 1. Select **Match**.
-:::image type="content" source="media/use/ob-use-match.png" alt-text="Screenshots of the Onboarding Buddy app's profile matching screens.":::
 
 ### View matched Onboarders and Buddies
 
@@ -75,4 +74,3 @@ As a manager, you can view Onboarders and Buddies in the Onboarding Buddy app wh
 
 1. On the main screen of the Onboarding Buddy app, select **View Current Matches** to display matched Onboarders.
 1. Select **Matched Buddies** to toggle the view to see matched buddies.
-:::image type="content" source="media/use/ob-use-view-matched.png" alt-text="Screenshots of the Onboarding Buddy app's matched profiles.":::

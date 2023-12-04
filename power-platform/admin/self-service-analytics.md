@@ -3,15 +3,17 @@ title: "Microsoft Power Platform self-service analytics export Power Platform in
 description: Export Power Apps canvas apps inventory and usage data to use with your organization's line-of-business scenarios.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2023
+ms.date: 11/15/2023
 ms.subservice: admin
-author: StephenRauchPM
-ms.author: stephenrauch
+author: sericks007
+ms.author: sericks
 ms.reviewer: sericks
 contributors:
 - StephenRauchPM
 search.audienceType: 
   - admin
+ms.contributors:
+- johnev
 ---
 
 # Set up Microsoft Power Platform self-service analytics to export Power Platform inventory and usage data (preview)
@@ -73,7 +75,7 @@ Admins should use the Power Platform admin center to set up the data export. Bef
 
 Follow these steps to set up the data lake.
 
-1. Sign in to the Power Platform admin center as an Azure AD Global Admin, select **Export to Azure Data Lake**, and then select **Power Apps** or **Cloud flows**.  The Global Admin user must have specific roles described in the section First-time setup of data export below.
+1. Sign in to the Power Platform admin center as an Azure AD Global Admin, select **Export to Azure Data Lake**, and then select **Power Apps** or **Power Automate**.  The Global Admin user must have specific roles described in [First-time setup of data export](#first-time-setup-of-a-data-export).
 
 2. Set **Enable tenant-level analytics** to **On**.
 

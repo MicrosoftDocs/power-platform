@@ -1,6 +1,6 @@
 ---
 title: "Use Bot Framework Composer to display a form in chatbots"
-description: "Use Bot Framework Composer to add a form with a Submit button to your Power Virtual Agents chatbot."
+description: "Use Bot Framework Composer to add a form with a Submit button to your Microsoft Copilot Studio chatbot."
 keywords: "composer, adaptive card"
 ms.date: 03/24/2023
 
@@ -14,25 +14,27 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Example 4 - Display a form with a Submit button in Power Virtual Agents
+# Example 4 - Display a form with a Submit button in Microsoft Copilot Studio
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 [!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
 
-Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
+Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Microsoft Copilot Studio bot.
 
-In this example, you'll learn how to display a form with a Submit button in Power Virtual Agents by using Composer.
+In this example, you'll learn how to display a form with a Submit button in Microsoft Copilot Studio by using Composer.
 
 [!INCLUDE [Composer License](includes/composer-license.md)]
 
 ## Prerequisites
 
-- [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md).
-- [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md).
-- [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md).
+- [Example 1 - Show an Adaptive Card in Microsoft Copilot Studio](advanced-bot-framework-composer-example1.md).
+- [Example 2 - Display a multi-select options list in Microsoft Copilot Studio](advanced-bot-framework-composer-example2.md).
+- [Example 3 - Use Bing Search as a fallback in Microsoft Copilot Studio](advanced-bot-framework-composer-example3.md).
 
 ## Create a new trigger
 
-1. In Power Virtual Agents, open the bot from Example 3. If you haven't completed Example 3 yet, see [Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md).
+1. In Microsoft Copilot Studio, open the bot from Example 3. If you haven't completed Example 3 yet, see [Use Bing Search as a fallback in Microsoft Copilot Studio](advanced-bot-framework-composer-example3.md).
 
 1. Open your bot in Composer. For instructions on how to do so, see [Getting started with Bot Framework Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
@@ -167,24 +169,24 @@ In this example, you'll learn how to display a form with a Submit button in Powe
 
     :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_formSubmit_confirm.png" alt-text="Screenshot of the confirmation response.":::
 
-1. On the authoring canvas, select **Add** (**+**) then **Begin a Power Virtual Agents Topic**.
+1. On the authoring canvas, select **Add** (**+**) then **Begin a Microsoft Copilot Studio Topic**.
 
 1. In the properties pane, for **Dialog name**, select **End of conversation**.
 
-    :::image type="content" source="media/advanced-bot-framework-composer-example4/e4_call_pva_end_of_conversation.png" alt-text="Screenshot of the Begin a Power Virtual Agents topic action.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/e4_call_pva_end_of_conversation.png" alt-text="Screenshot of the Begin a Microsoft Copilot Studio topic action.":::
 
 ## Test your bot
 
-1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-power-virtual-agents) to make it available in your Power Virtual Agents bot.
+1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-microsoft-copilot-studio) to make it available in your Microsoft Copilot Studio bot.
 
     [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
-1. Go to the Power Virtual Agents **Topics** page to see your new **StartTrial** topic.
+1. Go to the Microsoft Copilot Studio **Topics** page to see your new **StartTrial** topic.
 
-    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_StartTrial_inTopicsList.png" alt-text="Screenshot of the new topic visible in Power Virtual Agents.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_StartTrial_inTopicsList.png" alt-text="Screenshot of the new topic visible in Microsoft Copilot Studio.":::
 
 1. Open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `How do I sign up for a trial?` to start your conversation.
 
-    :::image type="content" source="media/advanced-bot-framework-composer-example4/Example4_cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/Example4_cropped.png" alt-text="Screenshot of the Microsoft Copilot Studio test bot pane.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

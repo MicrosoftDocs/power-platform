@@ -15,11 +15,13 @@ ms.collection: virtual-agent
 
 # Supported languages
 
-You can create chatbots in Power Virtual Agents in a number of languages. This means that your bots can reach a much broader audience and engage with more markets all around the world.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+You can create chatbots in Microsoft Copilot Studio in a number of languages. This means that your bots can reach a much broader audience and engage with more markets all around the world.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Specify a language for your bot
 
@@ -45,7 +47,7 @@ When you've created your own topic in the target language, you can test the bot 
 
 ## List of supported languages
 
-Power Virtual Agents supports languages in three stages. The stage indicates how well the bot can understand user input in that language, with general availability being the strongest, followed by preview, and then experimental.
+Microsoft Copilot Studio supports languages in three stages. The stage indicates how well the bot can understand user input in that language, with general availability being the strongest, followed by preview, and then experimental.
 
 | Language               | Support              |
 | ---------------------- | -------------------- |
@@ -73,6 +75,9 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 | Thai                   | General availability |
 | Turkish                | General availability |
 
+
+
 ### Related topics
 
-- [Data locations for organizations using Power Virtual Agents](data-location.md)
+- [Data locations for organizations using Microsoft Copilot Studio](data-location.md)
+- [Multilingual bots](multilingual.md)
