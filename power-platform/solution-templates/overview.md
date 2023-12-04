@@ -1,6 +1,6 @@
 ---
 title: Overview of Enterprise templates for Power Platform
-description: Learn how Enterprise templates for Power Platform can help you build, extend, and deploy solutions quickly.
+description: Learn how Enterprise templates for Power Platform can help you quickly build, extend, and deploy solutions that improve common organizational workflows.
 author: kaagar
 ms.author: kaagar
 contributors: 
@@ -8,7 +8,7 @@ contributors:
 - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 11/10/2023
+ms.date: 11/29/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -16,20 +16,20 @@ ms.subservice: solution-templates
 
 # Enterprise templates for Power Platform
 
-Enterprise templates for [Power Platform](/power-platform/) are solutions that serve as starting points for specific use cases and outcomes. They accelerate time to value by allowing you to quickly digitize new processes or extend your technology investments in enterprise resource planning (ERP), customer relationship management (CRM), and human resource (HR) systems.
+Enterprise templates for [Power Platform](/power-platform/) are solutions that serve as starting points for specific use cases and outcomes. They accelerate time to value by allowing you to quickly digitize new processes or extend your technology investments in enterprise resource planning (ERP), customer relationship management (CRM), information technology (IT), and human resource (HR) systems.
 
-The templates are built for centralized teams to locally install, extend, and deploy. You can organize an internal information technology (IT) and business operations team or select an external partner team to implement a Power Platform template project.
+Enterprise templates are built for centralized teams to locally install, extend, and deploy. You can organize an internal information technology (IT) and business operations team or select an external partner team to implement a Power Platform template project.
 
 Enterprise templates for Power Platform help you:
 
-- See how your system's data can be easily accessed and organized in a streamlined view in Power Apps.
-- Realize how workflows can be automated by Power Automate cloud flows operating behind the scenes.
+- Access and organize your data in a streamlined view in Power Apps.
+- Automate workflows with Power Automate cloud flows operating behind the scenes.
 
 Additionally, you can:
 
 - Customize your solutions
 - Integrate your system of record with other features, applications, and systems
-- Incorporate other controls over how your users interact with data
+- Incorporate more controls over how your users interact with data
 
 ## Available enterprise templates
 
@@ -39,7 +39,7 @@ Be sure to check back often for new templates that become available.
 
 :::row:::
    :::column span="":::
-      ![SAP Procurement](media/overview/sap-procure-icon-sq.png "SAP Procurement") <br> Transform the view of SAP procurement data <br> [SAP Procurement Learn documentation](https://aka.ms/LearnSAPProcurementTemplate) <br> [SAP Procurement on AppSource](https://aka.ms/AccessSAPProcurementTemplate)  
+      ![SAP Procurement](media/overview/sap-procure-icon-sq.png "SAP Procurement") <br> Transform SAP procurement data <br> [SAP Procurement Learn documentation](https://aka.ms/LearnSAPProcurementTemplate) <br> [SAP Procurement on AppSource](https://aka.ms/AccessSAPProcurementTemplate)  
    :::column-end:::
    :::column span="":::
       ![Employee Kudos](media/overview/kudos-icon-sq.png "Employee Kudos") <br> Enable an employee recognition program <br> [Employee Kudos Learn documentation](https://aka.ms/LearnEmployeeKudosTemplate) <br> [Employee Kudos on AppSource](https://aka.ms/AccessEmployeeKudosTemplate)
@@ -47,15 +47,18 @@ Be sure to check back often for new templates that become available.
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Awards and Recognition](media/overview/awards-req-icon-sq.png "Awards and Recognition") <br> Facilitate an employee awards program <br>[Awards and Recognition Learn documentation](https://aka.ms/LearnAwardsAndRecognitionTemplate) <br> [Awards and Recognition on AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate)
+      ![Awards and Recognition](media/overview/awards-req-icon-sq.png "Awards and Recognition") <br> Facilitate an employee awards program <br> [Awards and Recognition Learn documentation](https://aka.ms/LearnAwardsAndRecognitionTemplate) <br> [Awards and Recognition on AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate)
    :::column-end:::
    :::column span="":::
-      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> Match new employees to _Buddies_ <br> [Onboarding Buddy Learn documentation](https://aka.ms/LearnOnboardingBuddyTemplate)<br> [Onboarding Buddy on AppSource](https://aka.ms/AccessOnboardingBuddyTemplate) <br> 
+      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> Match new employees to _Buddies_ <br> [Onboarding Buddy Learn documentation](https://aka.ms/LearnOnboardingBuddyTemplate) <br> [Onboarding Buddy on AppSource](https://aka.ms/AccessOnboardingBuddyTemplate) <br> 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Hardware Request and Management](media/overview/hrm-icon-sq.png "Hardware Request and Management") <br> Manage hardware requests and assets<br> [Hardware Request and Management Learn documentation](https://aka.ms/LearnHardwareRequestManagement) <br>[Hardware Request and Management on AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
+      ![Hardware Request and Management](media/overview/hrm-sq-icon.png "Hardware Request and Management") <br> Manage hardware requests and assets <br> [Hardware Request and Management Learn documentation](https://aka.ms/LearnHardwareRequestAndManagementTemplate) <br>[Hardware Request and Management on AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
+   :::column-end:::
+   :::column span="":::
+      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> Organize the appointment booking process <br> [Appointment Booking Learn documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [Appointment Booking on AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
    :::column-end:::
 :::row-end:::
 
@@ -71,7 +74,7 @@ Templates for Power Platform offer the following benefits:
   - Gain new business insights through digitized and connected processes.
 
 - **Maximize existing IT investments**
-  - Continue to drive value out of existing major IT investments like ERP, CRM, and HR systems.
+  - Continue to drive value out of existing major IT investments like ERP, CRM, IT, and HR systems.
   - Protect and maintain systems of record and data sources of truth.
 
 - **Productivity**
@@ -85,7 +88,7 @@ Templates for Power Platform offer the following benefits:
 
 ## Get started
 
-Learn how to get started working with Enterprise templates for Power Platform. More information: [Get started with SAP Procurement template](finance/sap-procurement/administer/get-started.md), [Install and configure the Employee Kudos template](hr/employee-kudos/install-and-configure.md), [Install and configure the Awards and Recognition template](hr/awards-and-recognition/install-and-configure.md), [Install and configure the Onboarding Buddy template](hr/onboarding-buddy/install-and-configure.md)
+Learn how to get started working with Enterprise templates for Power Platform. More information: [Get started with SAP Procurement template](finance/sap-procurement/administer/get-started.md), [Install and set up the Employee Kudos template](hr/employee-kudos/install-and-set-up.md), [Install and set up the Awards and Recognition template](hr/awards-and-recognition/install-and-set-up.md), [Install and set up the Onboarding Buddy template](hr/onboarding-buddy/install-and-set-up.md), [Install and set up the Hardware Request and Management template](it/hardware-request-and-management/install-and-set-up.md),[Install and set up the Appointment Booking template](it/appointment-booking/install-and-set-up.md)
 
 ## Support
 
