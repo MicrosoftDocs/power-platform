@@ -78,7 +78,7 @@ Windows licenses|Not included|Not Included|Not Included |Limited RPA via Power A
 
 1. Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, and Dynamics 365 Customer Engagement plan.
 
-1. In Dataverse for Teams environments (included in [select Office licenses)](../powerapps-flow-licensing-faq.md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-power-virtual-agents-capabilities-with-teams) customers can use custom connectors built on Azure and Dataverse capabilities.
+1. In Dataverse for Teams environments (included in [select Office licenses)](../powerapps-flow-licensing-faq.md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-microsoft-copilot-studio-capabilities-with-teams) customers can use custom connectors built on Azure and Dataverse capabilities.
 
 ## License entitlements
 
