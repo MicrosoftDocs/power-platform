@@ -385,6 +385,14 @@ Update the custom canvas page where the bot is located to intercept the login ca
             const {
                 token
             } = await fetchJSON(theURL);
+    
+            var directline = await fetchJSON(regionalChannelSettingsURL).then(res=> res.channelUrlsById.directline); 
+
+            const directLine = window.WebChat.createDirectLine({
+                domain: `${directline}v3/directline`,
+                token
+            });
+    
             const directLine = window.WebChat.createDirectLine({
                 token
             });
