@@ -31,7 +31,7 @@ It's recommended that an [executive sponsor](/power-platform/guidance/adoption/e
 
 Once established, your team can get started with its SAP + Power Platform administration journey by reviewing the Power Platform resource links and following the SAP integration and administration steps.
 
-More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
+More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
 ## Integrate SAP with Power Platform
 

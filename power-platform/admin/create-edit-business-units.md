@@ -2,10 +2,9 @@
 title: "Create or edit business units  | MicrosoftDocs"
 description: Learn how to create or edit business units 
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/20/2023
+ms.date: 11/27/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -105,16 +104,42 @@ Make sure you have the System Administrator permission to update the setting.
   
 1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
   
-   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Security** > **Users**.
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner and then select **Advanced Settings** > **Settings** > **Security** > **Users**.
 
 2. Select the checkbox for a user name.  
   
 3. On the menu bar, select **Change Business Unit**.  
   
-4. In the **Change Business Unit** dialog box, select a business unit. Enable **Move records to new business unit** to move to a new business unit. Select **OK**. 
-  
-    In the legacy web client, in the **Change Business Unit** dialog box, use the **Lookup** button (![Lookup button.](media/lookup-4.png)) to select a business unit.  
+4. In the **Change Business Unit** dialog box, select a business unit. Select **OK**.
 
+   The default setting is to **Move records to new business unit**. You can change this option by changing the [**AlwaysMoveRecordToOwnerBusinessUnit** database setting](#role-assignment-removal-and-business-unit-movement-database-settings)  .
+
+  > [!IMPORTANT] 
+  >  You can also change the user's business unit in the legacy user web client. To do so, complete the following steps.
+  >
+  >  1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
+  >  
+  >  2. Select the checkbox for a user name and select the user.
+  >
+  >  3. On the user form, select **...** (the ellipsis), and then select **Manage user in Dynamics 365**.
+  >
+  >  4. On the legacy **User detail** form, scroll down to the **Organization Information** section.
+  >       
+  >  6. Select the lookup button next to the **Business Unit** field and select a different business unit.
+  >       
+  >        **Note**: Changing the user's business unit on the **User detail** form honors the [role assignment removal and business unit movement](#role-assignment-removal-and-business-unit-movement-database-settings) database settings.
+  >        
+  >  7.  On the **User detail** form's Action bar, select **Change Business Unit**.
+  >       
+  >       a. A **Change Business Unit** dialog box is displayed.
+  >       
+  >       b. Select the lookup button next to the **Business Unit** field and select a different business unit.
+  >
+  >       **Note**: Changing the user's business unit on this dialog box **does not** honor the [role assignment removal and business unit movement](#role-assignment-removal-and-business-unit-movement-database-settings) database settings.
+  >         
+  >        The user's role assignments will be removed and the user records' business unit will be moved to new business unit.
+   
+#### Role assignment removal and business unit movement database settings
 > [!NOTE] 
 > If you have enabled [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use the following [environment database settings](environment-database-settings.md) to manage your user security role and how you want to move the user’s records when you are changing the user’s business unit.
 > 

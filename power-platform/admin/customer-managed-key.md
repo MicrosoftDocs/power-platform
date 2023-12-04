@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 11/15/2023
+ms.date: 11/28/2023
 ms.custom: template-how-to
 
 ---
@@ -47,6 +47,9 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Fraud Protection (Finance and operations)
 
 <sup>1</sup> When you apply the customer managed key to an environment that has existing Power Automate flows, the flows data continues to be encrypted with Microsoft-managed key. More information: [Power Automate customer manged key](/power-automate/customer-managed-keys).
+
+> [!Note]
+> Nuance Conversational IVR is excluded from customer-managed key encryption.
 
 [Power Apps](/power-apps/powerapps-overview) and [Power Virtual Agent](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) store its data in their own storage and in [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro). When you apply the customer-managed key to these environments, only the data stores in **Microsoft Dataverse** are encrypted with your key. The non-Microsoft Dataverse data, including Power Apps source code and canvas apps icons, continue to be encrypted with the Microsoft-managed key.
 
@@ -205,6 +208,9 @@ You can use an encryption key created from the Azure Key Vault Managed HSM to en
       - **Name**: Provide a name for the key
       - **Key type**: **RSA-HSM**
       - **RSA key size**: **2048**
+
+      > [!NOTE]
+      > Supported [RSA-HSM key sizes:](/azure/key-vault/keys/about-keys#hsm-protected-keys) 2048-bit, 3072-bit, 4096-bit.
 
 #### Encrypt your environment with key from Azure Key Vault with private link
 
