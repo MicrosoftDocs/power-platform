@@ -1,20 +1,14 @@
 ---
 title: Manage Microsoft Service Copilot messages and capacity
 description: Learn about Microsoft Service Copilot messages and capacity management and billing
-keywords: "PVA", "Service Copilot"
-ms.date: 11/15/2023
+ms.date: 12/4/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.collection: virtual-agent
+ms.reviewer: mainguy
 ms.service: power-virtual-agents
-ms.custom:
-  - analysis, licensing, ceX, bap-template
-  - ai-gen-docs-bap
-  - ai-gen-title
-  - ai-seo-date:11/13/2023
-  - ai-gen-desc
 ---
 
 # Microsoft Service Copilot messages and capacity management
