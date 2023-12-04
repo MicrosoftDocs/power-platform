@@ -1,21 +1,27 @@
 ---
-title: Install and configure the Hardware Request and Management template for Power Platform
-description: Learn how to install and configure the Hardware Request and Management template for Microsoft Power Platform.
+title: Install and set up the Hardware Request and Management template for Power Platform
+description: Learn how to install, set up, and deploy the Hardware Request and Management template for Microsoft Power Platform.
 author: tverhasselt
 ms.author: thoverh
 contributors:
   - microsoft-george
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/07/2023
+ms.date: 11/29/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Install and configure the Hardware Request and Management template for Power Platform
+# Install and set up the Hardware Request and Management template
 
-As a Microsoft Power Platform admin, you need to prepare, install, configure, and deploy the Hardware Request and Management template's solutions for your organization. To get started, follow the steps.
+Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
+
+Establish a centralized team that consists of key stakeholders, product owners, and Power Platform admins and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
+
+More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+
+As a Microsoft Power Platform admin, follow the steps outlined in this article to install and set up the Hardware Request and Management template.
 
 ## Step 1: Review prerequisites
 
@@ -47,29 +53,29 @@ More information: [Microsoft Power Platform Licensing Guide](https://go.microsof
 
 ### Set up environments and data policies
 
-It's important to have a cohesive environment and data policy strategy and setup for enterprise templates to securely deploy your solutions. To successfully install and manage the Hardware Request and Management template, confirm these resources and practices are in place.
+It's important to have a cohesive environment and data policy strategy for enterprise templates. To successfully install and manage the Hardware Request and Management template, confirm these resources and practices are in place.
 
 - **Administrators** - Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments.
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
-  - Power Platform Administrator to create environments if needed
+  - Power Platform Administrator to create environments
 
     More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
-- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Hardware Request and Management solution files. Also consider:
 
-  - A Power Platform Environment with a Dataverse database installed is set up
+  - The Power Platform environment is set up with a Dataverse database
   - Environment Maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
     More information: [Environments overview](/power-platform/admin/environments-overview)
 
 - **Data loss prevention policies** - Ensure the environment has access to connectors used by the template:
 
-  - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
-  - [Office 365 Outlook connector](/connectors/office365/)
-  - [Office 365 Users connector](/connectors/office365users/)
+  - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
+  - [Office 365 Outlook](/connectors/office365/)
+  - [Office 365 Users](/connectors/office365users/)
   - [Approvals](/connectors/approvals/)
-  - [Teams](/connectors/teams/)
+  - [Microsoft Teams](/connectors/teams/)
   - [Cards for Power Apps](/connectors/cardsforpowerapps/)
   
   More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
@@ -82,12 +88,12 @@ The installation requires several connections. It's best to create connections b
 
 To create connections in advance, take these steps:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/)
+1. Go to [Power Apps](https://make.preview.powerapps.com/)
 1. Go to **Connections** and select **+ New Connection** for the following connections:
 
-    - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
-    - [Office 365 Outlook connector](/connectors/office365/)
-    - [Office 365 Users connector](/connectors/office365users/)
+    - [Dataverse](/connectors/commondataserviceforapps/)
+    - [Office 365 Outlook](/connectors/office365/)
+    - [Office 365 Users](/connectors/office365users/)
     - [Approvals](/connectors/approvals/)
     - [Teams](/connectors/teams/)
     - [Cards for Power Apps](/connectors/cardsforpowerapps/)
@@ -102,7 +108,7 @@ More information: [Manage connections in canvas apps](/power-apps/maker/canvas-a
 The Hardware Request and Management template leverages Power Automate Approvals to approve or reject the request. By default, Power Platform environments are not setup with the required Approvals database that gets created the first time a flow with the Approvals connector is run in that environment by an administrator. Perform these steps to create the Approvals database:
 
 1. Go to the [Power Automate maker portal](https://make.preview.powerautomate.com/environments/) and select your targeted deployment environment.
-1. Select **+ Create** on left-side panel.
+1. Select **+ Create** on left pane.
 1. Select **Instant cloud flow** underneath the *Start from blank* section.
 1. Choose **Manually trigger a flow** and then select **Create**.
 1. Select **+ New step**.
@@ -137,7 +143,7 @@ There are two solution installation options available for you to consider:
 
 You can easily access and install the Hardware Request and Management template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Hardware Request and Management template on AppSource](https://appsource.microsoft.com/product/dynamics-365/powerplatformtemplates.mpa-hardwarerequest-andmanagement-preview?flightCodes=e238631598a84d98974a43115813366d&tab=Overview) and select **Get it now**. This takes you to the *Install Hardware Request and Management Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Go to the [Hardware Request and Management template on AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate) and select **Get it now**. This takes you to the *Install Hardware Request and Management Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 :::image type="content" source="media/install/hrm-install-env.png" alt-text="Screenshot of the modal dialog window where you select the environment you set up for the template.":::
 1. Select the developer *environment* that you prepared for the template.
 1. Agree to the *Terms and Privacy Statements* by checking the boxes.
@@ -148,8 +154,8 @@ More information: [AppSource](https://appsource.microsoft.com/en-US/)
 > [!IMPORTANT]
 > Two solutions are always installed in your environment:
 >
-> - **IT Base**. Contains common foundational components that all information technology (IT) solutions use. This includes components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-> - **Hardware Request and Management**. Contains all the components needed to enable the implementation of the Hardware Request and Management program within an organization.
+> - **IT Base** contains common foundational components that all information technology (IT) solutions use. This includes components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Hardware Request and Management** contains all the components needed to enable the implementation of the Hardware Request and Management program within an organization.
 
 ### Download and manually install solution files
 
@@ -164,8 +170,8 @@ You also have the option to download *managed* or *unmanaged* solution files and
       - [mpa_ITBase.zip](https://aka.ms/ITBaseUnManagedSolution)
       - [mpa_HardwareRequestAndManagement.zip](https://aka.ms/HardwareRequestAndManagementUnManagedSolution)
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the *environment* you prepared for the solution.
-1. Select **Solutions** on the left-side panel.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the *environment* you prepared for the solution.
+1. Select **Solutions** on the left pane.
 1. Select **Import solution**.
 1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_ITBase* file downloaded in previous step.
 1. Select **Next**.
@@ -184,58 +190,57 @@ More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
 Environment variables support your application lifecycle management (ALM) strategy as you migrate the template across environments. Environment variables store keys and values for information that is contextual to the environment the solution is in. Two environment variables holding a reference to the Power Apps URL's need to be populated to support Outlook and Teams notifications.
 
-Additionally, connection references allow makers to configure flows that allow to manage connections centrally vs. coupled to the flow. This also supports your ALM strategy such that you do not need to introduce customizations or solution layers as your flows migrate across environments due to updated connections that are relevant to that environment.
+Additionally, connection references allow makers to configure flows that allow connections to be managed centrally vs. coupled to the flow. This also supports your ALM strategy since you don't need to introduce customizations or solution layers as your flows migrate across environments.
 
 To update environment variables, take these steps:
 
-1. Go to Power Apps studio and select the environment you installed the solution in
-1. Select **apps** on the left-side panel.
-1. Select the *Hardware Request canvas app* row, **vertical ellipsis** > **Details** > *Hardware Request Details*. Copy the URL to a notepad.
-1. Repeat the same step for the *Hardware Request and Management Model-driven app*.
-1. Select **Solutions** on the left-side panel.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment that contains the Hardware Request and Management solutions.
+1. Select **apps** on the left pane.
+1. Go to the *Hardware Request canvas app* row, **vertical ellipsis** > **Details** > **Hardware Request Details**. Copy the *URL* to a notepad.
+1. Repeat the same process to copy the *Hardware Request and Management Model-driven app* URL to a notepad.
 
    > [!NOTE]
    >
    > If you manually installed an *unmanaged version of Hardware Request and Management solution file* from GitHub, there is no need to create a new solution to add the environment variable and connection references to. Simply edit these components directly in the existing unmanaged solution file.
-
+1. Select **Solutions** on the left pane.
 1. Select **+ New solution** and populate the properties.
 1. Select **Add existing** > **More** > **Environment variable**.
-1. Select both the *Hardware Request and Management* URL and *Hardware Request App* URL variables
-1. Select **Next** and then **Add**
+1. Select both the **Hardware Request and Management URL** and **Hardware Request App URL** variables.
+1. Select **Next** and then **Add**.
 
    > [!NOTE]
    >
-   > If you manually imported either the managed or unmanaged version of the *Hardware Request and Management solution file from GitHub*, there is no need to add and update Connection References as those were set during the original import process.
+   > If you manually imported either the managed or unmanaged version of the Hardware Request and Management solution file from GitHub, there is no need to add and update Connection References as those were set during the original import process.
    >
    > Only Add and update connection references if you installed from AppSource. Skip to step 13 in this section.
 
 1. Select **Add existing** > **More** > **Connection References**
 1. Multiselect the following connection references:
 
-    1. Hardware Request and Management – Approvals
-    1. Hardware Request and Management – Cards for Power Apps
-    1. Hardware Request and Management – Dataverse
-    1. Hardware Request and Management – Microsoft Teams
-    1. Hardware Request and Management – Office 365 Outlook
-1. Select **Next** and then **Add**
-1. Select the **Hardware Request and Management URL** environment variable
-1. Select **+ New value** under the *Current Value* section
-1. Paste the *URL value* copied from Step 3 of this section in the current value field and select **Save**
-1. Repeat steps 11-13 of this section for the *Hardware Request App URL* environment variable
+    - **Hardware Request and Management – [Approvals](/connectors/approvals/)**
+    - **Hardware Request and Management – [Cards for Power Apps](/connectors/cardsforpowerapps/)**
+    - **Hardware Request and Management – [Dataverse](/connectors/commondataserviceforapps/)**
+    - **Hardware Request and Management – [Teams](/connectors/teams/)**
+    - **Hardware Request and Management – [Office 365 Outlook](/connectors/office365/)**
+1. Select **Next** and then **Add**.
+1. Select the **Hardware Request and Management URL** environment variable.
+1. Select **+ New value** under the *Current Value* section.
+1. Paste the *URL value* previously copied to your notepad in the current value field and select **Save**.
+1. Repeat steps 12-15 of this section for the Hardware Request App URL environment variable.
 
 :::image type="content" source="media/install/hrm-install-variables.png" alt-text="Screenshot of how to set up environment variables for your app.":::
 More information: [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
 
 ## Step 6: Share and set cloud flows to on
 
-Some of the cloud flows will be off by default because the environment variables set in step 4 were not populated yet. Additionally, it is important for some flows to run under a user's context when invoking actions like starting a Teams group chat, generating an approval or sending an email notification.
+Some of the cloud flows may be off by default because the environment variables set in Step 5 are not populated yet. Additionally, it is important for some flows to run under a user's context when invoking actions like starting a Teams group chat, generating an approval or sending an email notification.
 
 ### Configure run-only user privileges
 
 Perform these steps to ensure certain flows run under the user's context:
 
-1. Go to Power Apps Studio and select the environment you installed the solution in
-1. Select **Solutions** on the left-side panel and select the **Hardware Request and Management** solution
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in
+1. Select **Solutions** on the left pane and select the **Hardware Request and Management** solution
 1. Select **Cloud flows**
 1. Take these steps for each flow:
     1. Select the flow and select **Edit** under the *Run only users* section in the lower right corner
@@ -260,11 +265,11 @@ More information: [Share a cloud flow](/power-automate/create-team-flows#share-a
 
 ### Turn on cloud flows
 
-To turn on cloud flows that were not on by default when installing the solution from AppSource, perform these steps:
+To turn on cloud flows that were not on by default when installing the solution from AppSource, take these steps:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 
-1. Select **Solutions** on the left-side panel and select the *unmanaged solution* you created in the previous step for the environment variables.
+1. Select **Solutions** on the left pane and select the *unmanaged solution* you created in the previous step for the environment variables.
 
 1. Select **Add Existing** > **More** > **Connection Reference** and select the following connection references:  
 
@@ -276,13 +281,13 @@ To turn on cloud flows that were not on by default when installing the solution 
 
 1. Select **Add**
 
-1. For each of the Connection References, select to edit the properties and choose the *Connection* in the drop-down list that was previously created.
+1. For each of the Connection References, select to edit the properties and choose the *Connection* in the drop-down list previously created.
 
-1. Go back to *Solutions* in the left-side panel and select the **Hardware Request and Management** solution.
+1. Select **Solutions** in the left pane and select the **Hardware Request and Management** solution.
 
 1. Select **Cloud flows**.
 
-1. Perform the following steps for each of the below flows whose status is *Off*:
+1. Perform the following steps for each of the flows whose status is *Off*:
 
     1. Select the flow row
     1. Select **Turn on** at the top of the screen
@@ -306,18 +311,12 @@ Access to both the Hardware Request and the Hardware Management apps can be cont
 
 Take the following steps to share the Hardware Request app with users:
 
-1. Go to [Power Apps maker portal](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
-
-1. Go back to *Solutions* and select the **Hardware Request and Management** solution.
-
-1. Select **Apps**
-
-1. Select the **Hardware Request app** row and then the **ellipsis** (3 vertical dots)
-
-1. Select **Share**
-
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left pane and select the **Hardware Request and Management** solution from the list.
+1. Select **Apps**.
+1. Go to the *Hardware Request app* row and then the **three dots**.
+1. Select **Share**.
 1. Search for either the *users* in your environment and/or *Microsoft Entra ID Security Group* that contains the members you want to share the app with.
-
 1. Under the *Data permissions* section, assign the following security roles next to the Dataverse connection:
 
     1. **Approvals User**
@@ -348,12 +347,15 @@ Take the following steps to share the Hardware Management app with users:
 >
 > Be sure to **uncheck** the *Send an email* invitation to new users if you do not want to send an email notification once broadly shared.
 
+> [!NOTE]
+>If Hardware Request and Management apps aren't shared with you and you cannot access them directly from Power Apps, please contact your admin.
+
 ## Step 8: Enable Dataverse search (optional)
 
 Dataverse search delivers fast and comprehensive search results in a single list, sorted by relevance. Find hardware request and asset data quickly by enabling Dataverse search in the environment that you deploy the template in. To enable Dataverse search, follow these steps:
 
 1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. Select **Environments** on the left-side panel and then select the environment where the solution was installed.
+1. Select **Environments** on the left pane and then select the environment where the solution was installed.
 1. Select **Settings** at the top of the screen.
 1. Expand the *Product* section and select **Features**.
 1. Underneath the *Search* section:
@@ -362,40 +364,45 @@ Dataverse search delivers fast and comprehensive search results in a single list
 
 More information: [Configure Dataverse search to improve search results and performance](/power-platform/admin/configure-relevance-search-organization)
 
-## Step 9: Enable copilot (optional)
+## Step 9: Enable copilot
 
-Copilot for model-driven apps in Power Apps is a next-generation AI assistant for app users to get insights about the data in their apps through conversation in natural language. As a hardware request and management program administrator or reviewer, leverage Copilot to help you get insights on the hardware request and asset data while taking action. Follow these steps to turn Copilot on within your environment:
+Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assistant for app admins to get insights about the data in their apps through conversation in natural language. As an Hardware Request and Management admin, you can leverage Copilot to help you get insights on appointment booking data. As a Power Platform admin, take these steps to [enable Copilot](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-feature-for-your-environment) and [manage behavior settings](/power-platform/admin/settings-behavior) for all users in the selected environment:
 
-1. [Go to Power Platform admin center](https://admin.powerplatform.microsoft.com/home)
-1. Select **Environments** on the left-side panel and then select the environment where the solution was installed
-1. Ensure the environment *Release Channel* is set to **Monthly** channel following the [Changing release channels for model-driven apps guidance](/power-apps/maker/model-driven-apps/channel-change)
-1. Select the **Settings** button at the top of the screen
-1. Expand the *Product* section and select **Features**
-1. Underneath the Copilot section, change the *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. Select **Environments** on the left pane and then select the environment where you want to enable copilot for model-driven app users.
+1. Select **Settings**.
+1. Expand the **Product** section and select **Features** to turn on Copilot.
+1. In the *Copilot* section, set the value for *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**.
+1. Select **Save**.
+1. Next, go back to **Settings**.
+1. Expand the **Product** section and select **Behavior** to manage behavior settings.
+1. In the *Release channel* section, select **Monthly channel** from the dropdown.
+1. Select **Save**.
+   :::image type="content" source="media/install/ppadmin-release-channel.png" alt-text="Screenshot of how to manage behavior settings in the Power Platform admin center.":::
 
-More information: [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
+## Step 10: Enable auditing
 
-## Step 10: Enable auditing (optional)
+While not required, we recommend enabling the audit setting in your environment so it's easy to see who creates and updates records. To do this:
 
-While not required, we recommend enabling the audit setting in your environment so it's easy to see who created/updated records. To do this:
-
-1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/home)
-1. Select **Environments** on the left-side panel and then select the environment where the solution was installed
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. Select **Environments** on the left pane and then select the environment where the solution was installed.
 1. Expand *Audit and logs* and select **Audit settings**
-1. Select **Start Auditing**
+1. In the *Auditing* section,select **Start Auditing**
 
-:::image type="content" source="media/install/hrm-install-audit.png" alt-text="Screenshot of how to enable auditing.":::
+:::image type="content" source="media/install/start-auditing.png" alt-text="Screenshot of how to enable auditing.":::
 
-## Step 11: String localization administration (optional)
+## Step 11: Support more languages
 
-All fields are globalized so that they display date, time and number formats according to your browser's language setting. All strings in the Hardware Request canvas app are defaulted to English. However, the canvas apps are localization ready. This means all Text, Accessible Label, Tool Tip, HintText, InputPlaceHolderText, and Notifications have Power Fx functions built in to check whether a localized string is present for the user's logged-in browser language code. These strings are administered and maintained via one of the administrator apps. The most efficient way to load and maintain these values is by using the Export to Excel Online capability available in the administrator app in bulk rather than manually entering each one.  
+All fields are globalized so that they display date, time and number formats according to your browser's language setting. All strings in the Hardware Request canvas app are defaulted to English. However, the canvas apps are localization ready. This means all Text, Accessible Label, Tool Tip, HintText, InputPlaceHolderText, and Notifications have Power Fx functions built in to check whether a localized string is present for the user's logged-in browser language code. These strings are administered and maintained via one of the administrator apps.
+
+The most efficient way to load and maintain these values is by using the Export to Excel Online capability available in the administrator app in bulk rather than manually entering each one.  
 
 To create localized strings:
 
-1. Navigate to Power Apps maker portal
-1. Select Apps
-1. Open either the IT Template Administrator or Hardware Request and Management Model-driven app
-1. Select Export to Excel | Open in Excel Online
+1. Go to [Power Apps](https://make.preview.powerapps.com/).
+1. Select **Apps**.
+1. Open either the IT Template Administrator or Hardware Request and Management Model-driven app.
+1. Select **Export to Excel** and then open in Excel Online.
 1. Create or update rows with the following attributes:
 
 | Field           | Examples  |Description                                                           |
@@ -407,10 +414,14 @@ To create localized strings:
 
 > [!TIP]
 >
-> A CSV file available on GitHub contains all the app default English strings. You ca n import the CSV file into your environment using the Import data capability that is part of the administrator app. Although not required for English-only deployments, importing this file helps you quickly identify the localization strings that you need to prepare for your required language.
+> A CSV file is available for download on the [GitHub Templates for Power Platform site](https://github.com/microsoft/Templates-for-Power-Platform/). It contains all the app default English strings. You can import the CSV file into your environment using the *Import data* capability that is part of the administrator app. Although not required for English-only deployments, importing this file helps you quickly identify the localization strings that you need to prepare for your required language.
 >
 > To further accelerate the string localization creation process, create a cloud flow to trigger off the Dataverse English imported localization records selected in the Administrator app. This flow can use AI Builder action steps to automatically translate the English records to your target language and directly load them into the Localizations table.
 >
 > More information: [Use the text translation prebuilt model in Power Automate](/ai-builder/flow-text-translation)
 
 More information: [Build global support into canvas apps](/power-apps/maker/canvas-apps/global-apps)
+
+## Next steps
+
+[Get started managing hardware assets and requests](manage.md)
