@@ -13,6 +13,10 @@ ms.service: power-virtual-agents
 
 # Microsoft Service Copilot messages and capacity management
 
+> [!NOTE]
+> 
+> This article is for billed messages in the Microsoft Copilot Studio license, available for purchase starting December 1, 2023.
+
 A _message_ is an interaction between a customer and a bot, representing one unit of consumption. A message is defined as any request or message sent to the bot that triggers an action or a response from the bot.
 
 The purchase of a Microsoft Service Copilot license includes a specific number of billed messages capacity. This capacity is pooled across the entire tenant but it must be assigned to an environment in to enable Microsoft Service Copilot features for bots in the environment.
