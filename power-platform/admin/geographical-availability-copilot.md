@@ -4,7 +4,7 @@ description: Learn about how to enable data movement across regions for copilots
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/28/2023
+ms.date: 12/01/2023
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
