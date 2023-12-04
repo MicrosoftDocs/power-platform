@@ -89,6 +89,13 @@
           items:
             - name: What is Power Platform CLI
               href: cli\introduction.md
+              items:
+              - name: Install Visual Studio Code extension
+                href: howto\install-vs-code-extension.md
+              - name: Install with .NET Tool
+                href: howto\install-cli-net-tool.md
+              - name: Install for Windows
+                href: howto\install-cli-msi.md
             - name: Create and register a plug-in package
               href: howto\cli-create-package.md
             - name: Power Platform CLI reference

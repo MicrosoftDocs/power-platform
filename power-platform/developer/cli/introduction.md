@@ -20,10 +20,32 @@ Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers d
 - Code components
 - and more.
 
-Microsoft Power Platform CLI is available for use in the GCC and GCC High (US Sovereign cloud) regions. See the [`--cloud`](reference/auth.md#--cloud--ci) parameter for the [pac auth create](reference/auth.md#pac-auth-create) command to find out about supported US Sovereign cloud environments.
+## Provide feedback
+
+Use [github.com/microsoft/powerplatform-build-tools/discussions](https://github.com/microsoft/powerplatform-build-tools/discussions) to view and submit feedback for PAC CLI.
 
 ## Install Microsoft Power Platform CLI
 
+There are three ways to install the Power Platform CLI.
+
+|Method|OS Support|Description|
+|---------|---------|---------|
+|[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows,Linux,MacOS|Simple install from Visual Studio Code market place.|
+|[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows,Linux,MacOS|Install using [dotnet tool](/dotnet/core/tools/global-tools)|
+|[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Install this when you need to use [pac data](reference/data.md) or certain [pac package](reference/package.md) commands |
+
+
+## Manage auth profiles
+
+Most PAC CLI commands require authenticated access to resources. You will need to create and use auth portals.
+
+TODO: 
+
+- Describe the Visual Studio Code Extension Auth Profiles UI
+- Describe the corresponding [pac auth](reference/auth.md) commands
+
+
+<!-- 
 You can install Microsoft Power Platform CLI using either or both of the following methods:
 
 |Installation Method |Description|
@@ -133,10 +155,14 @@ The default location for a tool's binaries depends on the operating system:
 
 This location is added to the user's path when the SDK is first run. So global tools can be invoked from any directory without specifying the tool location.
 
-Tool access is user-specific, not machine global. A global tool is only available to the user that installed the tool.
+Tool access is user-specific, not machine global. A global tool is only available to the user that installed the tool. -->
+
+## US Sovereign cloud availability
+
+Microsoft Power Platform CLI is available for use in the GCC and GCC High (US Sovereign cloud) regions. See the [`--cloud`](reference/auth.md#--cloud--ci) parameter for the [pac auth create](reference/auth.md#pac-auth-create) command to find out about supported US Sovereign cloud environments.
 
 
-## Common commands
+<!-- ## Common commands
 
 This table lists some of the common commands used in the PAC CLI.
 
@@ -155,11 +181,9 @@ This table lists some of the common commands used in the PAC CLI.
 |[pac telemetry](reference/telemetry.md)|Manages the telemetry settings.|
 
 > [!TIP]
-> For the complete list of supported commands, see [Microsoft Power Platform CLI Command Groups](reference/index.md) or  run the `pac` command or `pac` \<subcommand> - for example: `pac solution`.
+> For the complete list of supported commands, see [Microsoft Power Platform CLI Command Groups](reference/index.md) or  run the `pac` command or `pac` \<subcommand> - for example: `pac solution`. -->
 
-## Provide feedback
 
-Use [github.com/microsoft/powerplatform-build-tools/discussions](https://github.com/microsoft/powerplatform-build-tools/discussions) to view and submit feedback for PAC CLI.
 
 ### See also
 
