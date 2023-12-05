@@ -103,7 +103,7 @@ You can also change the **Identify as** option to a specific entity type, depend
 
 By default, each input is set to **Dynamically fill with the best option**, which means the copilot tries to populate the value from available context, such as extracting a value from the user's message. If no appropriate value is found, it generates a question to ask the user for a value. You can choose to override an input, specifying a value to always use, instead of asking the user. To do this, change the **How will the bot fill this input?** dropdown to **Set a value** and then enter the value you wish to use. This value can be a literal value, an existing variable or a Power Fx formula.
 
-    :::image type="content" source="media/advanced-plugin-actions/wizard-inputs.png" alt-text="Screenshot of the inputs section for plugin action configuration.":::
+:::image type="content" source="media/advanced-plugin-actions/wizard-inputs.png" alt-text="Screenshot of the inputs section for plugin action configuration.":::
 
 ### Outputs
 
@@ -111,7 +111,7 @@ By default, your plugin action is configured to automatically generate a context
    
 Alternatively, you can choose to author a specific response for your plugin action to return. As with the confirmation editor, you can insert references to output variables from the action using the variable picker, as shown in this example.
 
-    :::image type="content" source="media/advanced-plugin-actions/wizard-outputs-response.png" alt-text="Screenshot of the output response editor with the variable picker open.":::
+:::image type="content" source="media/advanced-plugin-actions/wizard-outputs-response.png" alt-text="Screenshot of the output response editor with the variable picker open.":::
 
 
 ## Calling a plugin action from within a topic
