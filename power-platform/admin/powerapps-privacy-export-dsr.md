@@ -5,11 +5,13 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/07/2022
+ms.date: 12/05/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- royshea 
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
@@ -26,7 +28,7 @@ Resources containing personal data | Website access |    PowerShell access
 --- | --- | --
 Environment    | Power Platform admin center |     Power Apps cmdlets
 Environment permissions**    | Power Platform admin center     | Power Apps cmdlets
-Canvas App / Custom Page   | Power Apps Portal |     Power Apps cmdlets
+Canvas App / Custom page   | Power Apps Portal |     Power Apps cmdlets
 Canvas App permissions    | Power Apps Portal    | Power Apps cmdlets
 Gateway | Power Apps Portal***    | On-premises gateway cmdlets
 Gateway permissions    | Power Apps Portal***    |
