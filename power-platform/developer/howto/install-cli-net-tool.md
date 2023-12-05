@@ -15,9 +15,72 @@ ms.custom: bap-template
 ---
 # Install Power Platform CLI with .NET Tool
 
+**Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Windows :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Linux   :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: MacOS
+
+You can install, update, and uninstall the Power Platform CLI using these commands:
+
+- [dotnet tool install](/dotnet/core/tools/dotnet-tool-install)
+- [dotnet tool update](/dotnet/core/tools/dotnet-tool-update)
+- [dotnet tool uninstall](/dotnet/core/tools/dotnet-tool-uninstall)
+
+These commands manage installing the PAC CLI from this NuGet package: [Microsoft.PowerApps.CLI.Tool](https://www.nuget.org/packages/Microsoft.PowerApps.CLI.tool)
+
+The default location for a tool's binaries depends on the operating system:
+
+| OS          | Path                          |
+|-------------|-------------------------------|
+| Linux/macOS | `$HOME/.dotnet/tools`         |
+| Windows     | `%USERPROFILE%\.dotnet\tools` |
+
+This location is added to the user's path when the SDK is first run. So global tools can be invoked from any directory without specifying the tool location.
+
+Tool access is user-specific, not machine global. A global tool is only available to the user that installed the tool.
+
+## Prerequisites
+
+You must have .NET installed. .NET 6.0 is recommended.
+
+# [Windows](#tab/windows)
+
+[Install .NET on Windows](/dotnet/core/install/windows)
+
+# [Linux](#tab/linux)
+
+[Install .NET on Linux](/dotnet/core/install/linux)
+
+# [MacOS](#tab/macos)
+
+[Install .NET on MacOS](/dotnet/core/install/macos)
+
+---
+
+## Install
+
+Install Power Platform CLI by using the [dotnet tool install](/dotnet/core/tools/dotnet-tool-install) command:
+
+```dotnetcli
+dotnet tool install --global Microsoft.PowerApps.CLI.Tool
+```
+
+## Update
+
+Update Power Platform CLI by using the [dotnet tool update](/dotnet/core/tools/dotnet-tool-update) command:
+
+```dotnetcli
+dotnet tool update --global Microsoft.PowerApps.CLI.Tool
+```
+
+## Uninstall
+
+Uninstall Power Platform CLI by using the [dotnet tool uninstall](/dotnet/core/tools/dotnet-tool-uninstall) command:
+
+```dotnetcli
+dotnet tool uninstall --global Microsoft.PowerApps.CLI.Tool
+```
 
 ### See also
 
 [What is Microsoft Power Platform CLI?](../cli/introduction.md)   
 [Install the Power Platform Tools Visual Studio Code extension](install-vs-code-extension.md)   
 [Install Power Platform Tools for Windows](install-cli-msi.md)   
+[How to manage .NET tools](/dotnet/core/tools/global-tools)

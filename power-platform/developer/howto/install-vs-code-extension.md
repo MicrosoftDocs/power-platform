@@ -15,7 +15,9 @@ ms.custom: bap-template
 ---
 # Install the Power Platform Tools Visual Studio Code extension
 
-The Visual Studio Code extension is the recommended way to install Power Platform CLI. This extension will upgrade automatically when new versions are released. You also have the option to install a previous version.
+**Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Windows :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Linux   :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: MacOS 
+
+The Visual Studio Code extension is the recommended way to install Power Platform CLI. This extension will upgrade automatically when new versions are released. You also have the options to install a previous version or side-load the extension.
 
 ## Prerequisites
 
