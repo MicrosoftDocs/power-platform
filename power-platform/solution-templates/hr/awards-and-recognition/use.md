@@ -4,7 +4,7 @@ description: Get started using the Awards and Recognition app. Learn how you can
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
-ms.topic: get-started
+ms.topic: how-to
 ms.date: 09/25/2023
 ms.custom: bap-template
 ms.service: power-platform
@@ -14,9 +14,9 @@ ms.subservice: solution-templates
 
 # Get started using the Awards and Recognition app
 
-As a user, use the Awards and Recognition app to submit nominations to recognize individual coworkers and teams, view your own recognitions, and update your user settings.
+Use the Awards and Recognition app to submit nominations to recognize individual coworkers and teams, view your own recognitions, and update your user settings.
 
-Some users also have the ability to update the apps language setting if the **Employee Experience Localizer** security role is assigned to them by a Power Platform admin.
+If the **Employee Experience Localizer** security role is assigned to you by a Power Platform admin, you also have the ability to update the language settings in the apps.
 
 ## Nominate coworkers for awards
 
