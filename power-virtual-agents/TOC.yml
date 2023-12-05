@@ -245,6 +245,8 @@
       href: analytics-sessions-transcripts.md
     - name: Analyze topic usage
       href: analytics-topic-details.md
+    - name: Analyze and manage billed messages and capacity
+      href: requirements-messages-management.md
     - name: Analyze billed session information
       href: analytics-billed-sessions.md
 - name: Configure and customize
