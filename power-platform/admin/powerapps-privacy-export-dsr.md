@@ -144,15 +144,6 @@ An administrator can export apps created by a user starting from the [Power Plat
 
 5. Once you have access to each of the user's apps you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
 
-### PowerShell cmdlets for admins
-Administrators can export apps created by a user by using the **Get-AdminApp** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
-
-```powershell
-Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
-Get-AdminApp -Owner $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-```
-
 ## Step 4: Export the user's permissions to canvas apps
 Whenever an app is shared with a user, Power Apps stores a record called a *role assignment* that describes the user's permissions (CanEdit or CanUser) to the application. For more information, see [Share an app](/powerapps/maker/canvas-apps/share-app#share-an-app).
 
