@@ -5,11 +5,13 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/22/2022
+ms.date: 12/05/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- royshea 
 ---
 
 # Responding to Data Subject Rights (DSR) requests to delete Power Apps customer data
