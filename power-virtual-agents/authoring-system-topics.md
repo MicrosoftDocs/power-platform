@@ -24,7 +24,7 @@ When you first create a bot, all system topics are configured to trigger at the 
 
 ## System topics
 
-# [Web app](#tab/webApp)
+### [Web app](#tab/webApp)
 
 Unlike topics that you create, system topics are built into Microsoft Copilot Studio. They're added to a bot automatically when you create it. System topics help your bot respond to common system events, such as escalation, or carry out essential behavior, such as ending a conversation. You can't delete system topics. You can disable ones that you don't need, however.
 
