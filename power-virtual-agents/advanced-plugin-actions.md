@@ -47,26 +47,26 @@ Plugin actions can generate a contextual response to a user's query, using the r
 
 ## Add a plugin action
 
-1. Open your copilot and select **Topics**. On the **Topics** page.
+1. Open your copilot and select **Topics** from the menu.
 1. Select **+ Add**.
 1. Select **Plugin action (preview)**.
 
-:::image type="content" source="media/advanced-plugin-actions/add-plugin-action.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the plugin action button highlighted.":::
+   :::image type="content" source="media/advanced-plugin-actions/add-plugin-action.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the plugin action button highlighted.":::
 
-1. On the **Add an action (preview)** wizard that is now open, you can search for what you want to use as a plugin action within your bot. The default list shown when you open the wizard contains Power Automate Flows and custom connectors that are available within the environment, commonly used pre-built connectors, and Bot Framework Skills that have been registered with your bot. You may also see [AI Plugins that have been created in Copilot Studio](copilot-ai-plugins.md).
+1. In the **Add an action (preview)** wizard, search for what you want to use as a plugin action within your copilot. The default list shown has Power Automate Flows and custom connectors that are available within your environment. This list also includes commonly used pre-built connectors and Bot Framework Skills that are registered with your copilot. You might also see [AI Plugins that have been created in Copilot Studio](copilot-ai-plugins.md).
 
-     :::image type="content" source="media/advanced-plugin-actions/wizard-start.png" alt-text="Screenshot of the first page in the plugin action wizard with the action type filter open.":::
+   :::image type="content" source="media/advanced-plugin-actions/wizard-start.png" alt-text="Screenshot of the first page in the plugin action wizard with the action type filter open.":::
 
 >[!IMPORTANT]
-> You can also create a Plugin Action based on some [AI Plugins created in Copilot Studio](copilot-ai-plugins.md). Eligible AI Plugins will appear within the search results when adding a Plugin Action. Note that some Plugin Actions created from an AI Plugins, specifically Dynamic Prompts and those based on Dataverse APIs, will require your bot to have [authentication configured](#enable-authentication-for-ai-plugins) in order to work properly.
+> Eligible AI Plugins appear within the search results when adding a Plugin Action. Some Plugin Actions created from a AI Plugins, sucha as Dynamic Prompts and those based on Dataverse APIs, require [authentication](#enable-authentication-for-ai-plugins) in order to work properly.
 
 1. Select the action you want to use. You'll move to the next step of the wizard to configure the connection for the action. Here your connection may be automatically configured for you, as shown in the example, or you may be required to configure the connection by following the instructions shown. Once your connection has been successfully configured, select **Next**.
 
-     :::image type="content" source="media/advanced-plugin-actions/wizard-connection.png" alt-text="Screenshot of the first page in the plugin action wizard on the connection page.":::   
+   :::image type="content" source="media/advanced-plugin-actions/wizard-connection.png" alt-text="Screenshot of the first page in the plugin action wizard on the connection page.":::
 
 1. You can now review and, if needed, [make changes to your Plugin Actions configuration](#making-changes-to-your-plugin-action-configuration). Finally clicking **Save** will add your Plugin Action to your copilot.
 
-:::image type="content" source="media/advanced-plugin-actions/wizard-review.png" alt-text="Screenshot of the Review and Finish page within the wizard.":::
+   :::image type="content" source="media/advanced-plugin-actions/wizard-review.png" alt-text="Screenshot of the Review and Finish page within the wizard.":::
 
 ## Call a plugin action
 
