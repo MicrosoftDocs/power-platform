@@ -128,8 +128,8 @@ For full access users:
 1. Access the source environment.
 2. Use Advanced Find (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")) and look for users.
 3. Select **Use Saved View** > **Full Access Users**, and then select **Edit Columns**.
-4. Remove all columns except **Full Name**.
-5. Select **Add Columns** > **Windows Live ID**.
+4. Remove all columns except **Display Name** (formerly **Full Name**).
+5. Select **Add Columns** > **User Principal Name** (formerly **Windows Live ID**).
 6. Select **OK** > **Results** to see the list of full access users.
 7. Select all the records, select **Export Users** in the ribbon, and then choose **Static Worksheet**. 
 8. Follow steps 1-7 above for the destination tenant, if possible. You should now have two separate Excel sheets—one for source and one for target tenant.
