@@ -46,7 +46,7 @@ Resources containing personal data |    Purpose
 --- | ---
 Environment |    An environment is a space to store, manage, and share your organization's business data, apps, and flows. [Learn more](./environments-overview.md)
 Environment permissions    | Users are assigned to environments roles to be granted maker and administrative privileges within an environment. [Learn more](./environments-overview.md)
-Canvas app / Custom Page   | Cross-platform business apps that can be built from a power of a blank canvas and connected to over 200 data sources. [Learn more](/powerapps/maker/)
+Canvas app / Custom page   | Cross-platform business apps that can be built from a power of a blank canvas and connected to over 200 data sources. [Learn more](/powerapps/maker/)
 Canvas-app permissions    | Canvas apps can be shared with users within an organization. [Learn more](/powerapps/maker/canvas-apps/share-app)
 Connection    | Used by connectors and allow for connectivity to APIs, systems, databases, etc. [Learn more](/powerapps/maker/canvas-apps/add-manage-connections)
 Connection permissions    | Certain types of connections can be shared with users within an organization. [Learn more](/powerapps/maker/canvas-apps/share-app-resources)
