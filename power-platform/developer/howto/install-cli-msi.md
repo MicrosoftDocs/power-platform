@@ -17,7 +17,7 @@ ms.custom: bap-template
 
 **Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Windows only
 
-The [pac data](reference/data.md) and certain [pac package](reference/package.md) commands are only available for Windows because they currently have dependencies on .NET Framework, which isn't cross-platform compatible.
+The [pac data](../cli/reference/data.md) and certain [pac package](../cli/reference/package.md) commands are only available for Windows because they currently have dependencies on .NET Framework, which isn't cross-platform compatible.
 
 Power Platform Tools for Windows is installed from this NuGet package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
 
