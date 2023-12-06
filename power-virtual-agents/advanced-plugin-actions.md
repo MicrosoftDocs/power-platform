@@ -53,38 +53,44 @@ Plugin actions can generate a contextual response to a user's query, using the r
 
    :::image type="content" source="media/advanced-plugin-actions/add-plugin-action.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the plugin action button highlighted.":::
 
-1. In the **Add an action (preview)** wizard, search for what you want to use as a plugin action within your copilot. The default list shown has Power Automate Flows and custom connectors that are available within your environment. This list also includes commonly used pre-built connectors and Bot Framework Skills that are registered with your copilot. You might also see [AI Plugins that have been created in Copilot Studio](copilot-ai-plugins.md).
+1. In the **Add an action (preview)** wizard, search for a plugin action you want to use and select it.
+
+   The default list shown has Power Automate Flows and custom connectors available within your environment. This list also includes commonly used pre-built connectors and Bot Framework Skills that are registered with your copilot. You might also see [AI Plugins that have been created in Copilot Studio](copilot-ai-plugins.md).
 
    :::image type="content" source="media/advanced-plugin-actions/wizard-start.png" alt-text="Screenshot of the first page in the plugin action wizard with the action type filter open.":::
 
->[!IMPORTANT]
-> Eligible AI Plugins appear within the search results when adding a Plugin Action. Some Plugin Actions created from a AI Plugins, sucha as Dynamic Prompts and those based on Dataverse APIs, require [authentication](#enable-authentication-for-ai-plugins) in order to work properly.
+   > [!IMPORTANT]
+   > Some plugin actions created from AI Plugins, such as Dynamic Prompts and those based on Dataverse APIs, require [authentication](#enable-authentication-for-ai-plugins).
 
-1. Select the action you want to use. You'll move to the next step of the wizard to configure the connection for the action. Here your connection may be automatically configured for you, as shown in the example, or you may be required to configure the connection by following the instructions shown. Once your connection has been successfully configured, select **Next**.
+1. Configure the connection for the action.
+
+   Depending on the plugin, your connection is automatically configured, as shown in the example. Alternatively, you're required to configure the connection if instructions are given in the wizard. Once your connection is successfully configured, select **Next**.
 
    :::image type="content" source="media/advanced-plugin-actions/wizard-connection.png" alt-text="Screenshot of the first page in the plugin action wizard on the connection page.":::
 
-1. You can now review and, if needed, [make changes to your Plugin Actions configuration](#making-changes-to-your-plugin-action-configuration). Finally clicking **Save** will add your Plugin Action to your copilot.
+1. Review and [make changes to your plugin actions configuration](#making-changes-to-your-plugin-action-configuration) if needed. Select **Finish** to add the plugin action to your copilot.
 
-   :::image type="content" source="media/advanced-plugin-actions/wizard-review.png" alt-text="Screenshot of the Review and Finish page within the wizard.":::
+   :::image type="content" source="media/advanced-plugin-actions/wizard-review.png" alt-text="Screenshot of the Review and finish popup within the wizard.":::
 
 ## Call a plugin action
 
-If you have enabled [Generative Actions](./advanced-generative-actions.md), then you're Plugin Action can be called automatically in order to respond to a relevant user query.
+If you enabled [generative actions](./advanced-generative-actions.md), your plugin action is called automatically in response to a relevant user query.
 
-Alternatively, you [call a plugin action explicitly from within a topic](#calling-a-plugin-action-from-within-a-topic).
+Alternatively, you can [call a plugin action explicitly from within a topic](#calling-a-plugin-action-from-within-a-topic).
 
 ## Test your plugin action
 
-If you're using [Generative Actions](./advanced-generative-actions.md), once your Plugin Actions has been added, you can just try asking your copilot a relevant question within the test chat. Your copilot should select and run your Plugin Action, based on the name / description. You can find more details about authoring high quality descriptions and using the dedicated tracing mode to see which Plugin Actions your copilot has selected on the [Generative Actions](./advanced-generative-actions.md) page.
+Ask your copilot a relevant question, using the test chat. You can toggle (show or hide) the view for the chat pane at the bottom of the menu.
 
-Alternatively, if you have [added a plugin action to a topic](#calling-a-plugin-action-from-within-a-topic), you can test it by entering a message similar to one of the trigger phrases for that Topic. 
+Your copilot selects and runs your plugin action based on the name and description. You can author high quality descriptions, using the dedicated tracing mode to see which plugin actions your copilot selected.  on the [generative actions](./advanced-generative-actions.md) page.
+
+Alternatively, if you have [added a plugin action to a topic](#calling-a-plugin-action-from-within-a-topic), you can test it by entering a message similar to one of the trigger phrases for that Topic.
 
 You can see a weather plugin action being tested in this screenshot:
 
 :::image type="content" source="media/advanced-plugin-actions/weather-topic-test-plugin-action.png" alt-text="Screenshot of the plugin action being tested.":::
 
-GPT-driven conversations can be more fluid than traditionally authored questions, allowing a user to answer more than one question in a single turn or amending values that they entered previously. 
+GPT-driven conversations can be more fluid than traditionally authored questions, allowing a user to answer more than one question in a single turn or amending values that they entered previously.
 
 In this example, you can see that the bot user first chose to check the weather for **Orlando, FL** but then, at the confirmation stage, they indicated that they wanted to change their location to **Seattle**. This change to the input value can be done at any time, not just at the confirmation stage.
 
@@ -96,13 +102,13 @@ There are a number of ways in which you can configure your Plugin Action. On the
 
 Here you can configure details about your action, including the **Model display name** and **Model description** for your plugin action. Usually, these have been pre-populated for you based on the action you selected. On this page you can also choose if you would like your users to confirm the information they have provided before the plugin action is executed, which can often be useful, especially for actions that make changes for a user such as inserting or updating a record in a table.
 
-To configure a confirmation, check the **Ask the user before running this action** box. You can then choose to either author a message or a card for your confirmation. In both cases you can use the variable picker to insert references to the input values that the user has entered. 
+To configure a confirmation, check the **Ask the user before running this action** box. You can then choose to either author a message or a card for your confirmation. In both cases you can use the variable picker to insert references to the input values that the user has entered.
 
 ### Inputs
 
-The **Inputs** section allows you to manage the **Display name** and **Description** for each input on your action. These are used to help the bot generate a question when your plugin runs, so it can ask the bot user for a value for the input. For example, a generated question for the location input shown in the example could be, *What is the location you would like to check the weather for? You can enter a City, Region, State, Country, Landmark or Postal Code"* 
+The **Inputs** section allows you to manage the **Display name** and **Description** for each input on your action. These are used to help the bot generate a question when your plugin runs, so it can ask the bot user for a value for the input. For example, a generated question for the location input shown in the example could be, _What is the location you would like to check the weather for? You can enter a City, Region, State, Country, Landmark or Postal Code"_
 
-You can also change the **Identify as** option to a specific entity type, depending on the input being collected, which can help the bot to accurately extract a value for the input from a user's response. 
+You can also change the **Identify as** option to a specific entity type, depending on the input being collected, which can help the bot to accurately extract a value for the input from a user's response.
 
 By default, each input is set to **Dynamically fill with the best option**, which means the copilot will try to populate the value from available context, such as extracting a value from the user's message, but will then, if no appropriate value is found, generate a question to ask the user for a value. You can choose to override an input, specifying a value to always use, instead of asking the user. To do this, change the **How will the bot fill this input?** dropdown to **Set a value** and then enter the value you wish to use. This value can be a literal value, an existing variable or a Power Fx formula.
 

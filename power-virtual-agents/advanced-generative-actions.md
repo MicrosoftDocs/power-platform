@@ -19,7 +19,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Generative Actions allows you to replace the traditional natural language based approach for Topic triggering (using the trigger phrases you have defined on each Topic). Instead, your copilot uses GPT to select one or more [Topics](./authoring-create-edit-topics.md) or [Plugin Actions](./advanced-plugin-actions.md) to respond to a user's query. All Topics and Plugin Actions have an associated description and this is the primary piece of information used when selecting which item(s) should be selected. 
+Generative actions allows you to replace the traditional natural language based approach for topic triggering (using the trigger phrases you have defined on each Topic). Instead, your copilot uses GPT to select one or more [topics](./authoring-create-edit-topics.md) or [plugin actions](./advanced-plugin-actions.md) to respond to a user's query. All topics and plugin actions have an associated description and this is the primary piece of information used when selecting which item(s) should be selected.
 
 > [!IMPORTANT]
 >  
@@ -44,19 +44,19 @@ Once Generative Actions is enabled, the **Topics** page in the left hand navigat
 
 :::image type="content" source="media/advanced-generative-actions/generative-ai-page.png" alt-text="Screenshot of the Generative AI page with Generative Actions enabled.":::
 
-## How your copilot responds to user queries with Generative Actions
+## How your copilot responds to user queries with generative actions
 
-When enabled, Generative Actions, is responsible for orchestrating the conversations users have with your copilot, which can help provide users with a more natural and fluid conversation.
+Generative actions create more natural and fluid conversations for users in your copilot.
 
-When a message is received from a user, GPT is used to select one or more [Plugin Actions](./advanced-plugin-actions.md) or [Topics](./authoring-create-edit-topics.md) that can be used to respond. A number of factors are used to determine which Topics and Plugin Actions are used. The primary factor used is the associated description with each item, but additional factors, such as the name and any inputs / outputs (and their associated names & descriptions) are also used.
+When a user sends a message, GPT selects one or more [plugin actions](./advanced-plugin-actions.md) or [topics](./authoring-create-edit-topics.md) in its response. Various factors determine which topics and plugin actions are used. The primary factor comes from the description with each item. Other factors include the name and any inputs or outputs (and their names and descriptions).
 
-Once the appropriate [Plugin Actions](./advanced-plugin-actions.md) and [Topics](./authoring-create-edit-topics.md) have been selected, a plan is generated which determines the order in which they will be executed. The copilot will also attempt to pre-populate any inputs required by the Plugin Actions and Topics, either by extracting values from the user's query, or by identifying values from the previous conversation context.
+Once [plugin actions](./advanced-plugin-actions.md) and [topics](./authoring-create-edit-topics.md) are selected, a plan is generated that determines the order they get executed. The copilot prepopulates any inputs required by the plugin actions and topics. These inputs are extracted values from the user's query or identified values from the previous conversation context.
 
-The plan is re-assessed and, if necessary, updated after each new message is received from the user, which allows for scenarios such as interruption (additional items added within the plan), or cancellation.
+The plan is reassessed and updated, if needed, after each new message is received from the user. The reassessment allows for scenarios such as interruption, where additional items are added to the plan, or cancellation.
 
-## Testing your copilot using Generative Actions
+## Testing your copilot using generative actions
 
-When testing your copilot with Generative Actions enabled, you can open the new tracing mode, by selecting the tracing mode button at the top of the test canvas pane.
+When testing your copilot with generative actions enabled, you can open the new tracing mode, by selecting the tracing mode button at the top of the test canvas pane.
 
 :::image type="content" source="media/advanced-generative-actions/open-tracing-mode.png" alt-text="Screenshot of the test canvas, showing the tracing mode button with the tracing mode window open.":::
 
@@ -66,7 +66,7 @@ Now, when you ask your copilot a question in your test canvas, you can see a vis
 
 ## Authoring descriptions
 
-Once Generative Actions has been enabled, each of the [Plugin Actions](./advanced-plugin-actions.md) and [Topics](./authoring-create-edit-topics.md) within your copilot must have a high quality description in order to ensure your copilot selects the right ones to respond to a user. 
+Once Generative Actions has been enabled, each of the [Plugin Actions](./advanced-plugin-actions.md) and [Topics](./authoring-create-edit-topics.md) within your copilot must have a high quality description in order to ensure your copilot selects the right ones to respond to a user.
 
 For Plugin Actions, authoring a description is part of the wizard used to add them to the copilot. They are often pre-populate for you, but you can make changes to this as appropriate. You can find more details about how to add and manage Plugin Actions in your copilot [here](advanced-plugin-actions.md).
 
@@ -88,7 +88,7 @@ Here are some best practices for drafting clear, concise, and relevant descripti
 - For the description, write a short and informative summary of the plugin's functionality. The summary should be one or two sentences long and explain what the plugin does and how it benefits the user.  
 - As well as a good description, use a descriptive and unique name for the plugin that is a short phrase. Avoid using generic or ambiguous names that could be confusing. For example, instead of naming the plugin "Weather", name it "Weather Forecast" or "Weather Report".
 
-Here is an example of a description for a Topic that can provide information about current weather conditions. 
+Here is an example of a description for a Topic that can provide information about current weather conditions.
 
 Name: Weather Forecast 
 Description: This Topic provides weather information for any location in the world. You can ask for the current weather, the hourly forecast, or the daily forecast.  
@@ -114,6 +114,3 @@ In this example, the user asks, "I need to get store hours and find my nearest s
 In this example, the user has already found their nearest store, which was identified as Kirkland, earlier within the conversation. The user has then asked, "what's the weather like there?". Here the copilot selects the current weather Plugin Action, but pre-populates the location with `Kirkland`, based on the recent conversation context.
 
 :::image type="content" source="media/advanced-generative-actions/example-3.png" alt-text="Screenshot of example 3, showing the conversation history and the weather plugin within tracing mode.":::
-
-
-
