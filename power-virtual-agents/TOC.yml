@@ -58,6 +58,8 @@
       href: copilot-ai-plugins.md
     - name: Use plugin actions in Microsoft Copilot Studio
       href: advanced-plugin-actions.md
+    - name: Use Generative Actions in Microsoft Copilot Studio
+      href: advanced-generative-actions.md
     - name: Microsoft Copilot Studio architecture
       href: copilot-plugins-architecture.md
 - name: Administer and manage
@@ -245,6 +247,8 @@
       href: analytics-sessions-transcripts.md
     - name: Analyze topic usage
       href: analytics-topic-details.md
+    - name: Analyze and manage billed messages and capacity
+      href: requirements-messages-management.md
     - name: Analyze billed session information
       href: analytics-billed-sessions.md
 - name: Configure and customize
