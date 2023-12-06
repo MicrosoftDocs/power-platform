@@ -21,77 +21,83 @@ searchScope:
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Microsoft Copilot Studio empowers teams to quickly and easily create powerful copilots using a guided no-code graphical experience - all without the need for data scientists or developers.
+Microsoft Copilot Studio empowers teams to quickly and easily create powerful copilots using a guided, no-code graphical experience without needing data scientists or developers.
 
-This quickstart guide takes you through the end-to-end experience of creating a copilot for the first time, adding topics to your bot, testing content changes in real time, deploying your copilot to a test page, and analyzing the performance of your copilot after it's been deployed.
+This quickstart article helps you create a copilot for the first time. You learn how to add topics to your copilot, test content changes in real-time, and deploy your copilot to a test page. Once deployed, you can analyze the performance of your copilot.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-copilot-studio.md).
+[Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-copilot-studio.md).
 
 # [Web app](#tab/web)
 
 ### Explore the home page
 
-Microsoft Copilot Studio has an app-level home page that isn't specific to any copilot. On this page you can create a new copilot, view recent copilots, and access learning resources like videos, documentation, and learning paths.
+Microsoft Copilot Studio has an app-level home page, listing all your copilots. On this page you can create a new copilot, view recent copilots, and access learning resources like videos, documentation, and learning paths.
 
-:::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
+:::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page." lightbox="media/fundamentals-get-started/new-bot1.png":::
 
-
-In the navigation menu, select **Copilots** to open the **Copilots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these copilots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another copilot that you have access to.
-
-:::image type="content" source="media/fundamentals-get-started/chatbot-list.png" alt-text="Screenshot of the list of chatbots.":::
-
-
+In the navigation menu, select **Copilots** to open the **Copilots** page. All copilots you create in a given environment appear here. In your list of copilots, you can see metadata such as owner, when it was last published, and who last modified the copilot.
 
 ### Create a copilot
 
 1. Go to the [Microsoft Copilot Studio introduction website](https://aka.ms/TryPVA). Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
-2. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts are currently not supported.
+1. On the website, select **Try free** and sign in with your work email address.
 
-3. When you first sign up, a default [Power Apps environment](environments-first-run-experience.md) is made for you. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment, select a different environment from the environment picker.
+   > [!NOTE]
+   > Personal Microsoft accounts are currently not supported.
 
-    :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the environment picker.":::
+   :::image type="content" source="media/fundamentals-get-started/try-free-copilot-studio.png" alt-text="Screenshot of the try free button location on the Microsoft Copilot Studio introduction website.":::
 
-    > [!NOTE]
-    > Microsoft Copilot Studio is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your copilot.  
-    > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
+1. After you sign up, a default [Power Apps environment](environments-first-run-experience.md) is made for you. For most users, this default is sufficient. However, to specify a custom Power Apps environment, select another one, using the environment picker.
 
-4. Once signed up, you will land on the App Homepage. In the left navigation menu, select **Home** then select **Create a copilot**.
-5. A whole page wizard will start with a couple steps to get your copilot created very quickly. A default copilot name is there. You can change this to be something generic to your company or specific to the scenario you are tailoring your copilot to.
-6. For **What language do you want your copilot to speak?**, select the language you want your copilot to speak. The langugage dropdown is prepopulated with the browser locale.
+   :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the environment picker." lightbox="media/fundamentals-get-started/environment-picker.png":::
 
-    :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
+   > [!NOTE]
+   > Microsoft Copilot Studio is only [supported in these data locations](data-location.md). Outside of these locations, create a custom environment with **Region** set to a supported data location before you create your copilot.  
+   >
+   > For more information on creating a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
+1. Once signed up, you land on the **Home** page. Select **Create a copilot**.
+1. A wizard starts. Give your copilot a name.
+1. In the **What language do you want your copilot to speak?** field, select a language. The langugage dropdown is prepopulated with the browser locale.
 
-7. (Optional) You can choose to Boost Conversations be providing a URL to generate AI answers from. With a bot name and langauge selected, you can select Create and create your copilot.
+   :::image type="content" source="media/fundamentals-get-started/create-new-copilot-screen.png" alt-text="Screenshot of the Create a copilot page with name and language fields." lightbox="media/fundamentals-get-started/create-new-copilot-screen.png":::
 
+1. (Optional) To boost conversations with AI-generated responses, add a URL to the **Boost your conversations with generative answers** field.
 
-There are optional customizations and enhancements you can make before getting your copilot created.
+1. (Optional) You can make customizations and enhancements before finalizing your copilot.
+
+   Choose **Edit advanced options** at the bottom of the page.
   
-  a. Choose **Edit advanced options** on the bottom left to see and edit advanced options. You can continue with copilot creation without going into these advanced options.
+   1. Select a copilot icon to give your copilot a personality and represent your business scenario. You can select from the pre-populated list of icons or upload a custom icon. This icon gets displayed in the chat window when the copilot responds.
   
-  b. Here you can choose a copilot icon to give your copilot a personality and represent your business scenarios better. You can select from the pre-populated list if icons or upload a custom icon for your copilot. This is the icon used in the chat window when the copilot responds.
+   1. Choose prepopulated **Lesson topics** to provide starter content and familiarize yourself with copilot topics.
   
-  c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with copilot topics.
-  
-  d. There are a couple more advanced options to select the solution your copilot will be in and the schema name. These are advanced options which can be changed later, but provided upfront for specific customization.
- 
-8. Select **Create**. The process of creating your first copilot in a new environment can take up to 15 minutes; subsequent copilots will be created much faster.
+   1. Select the solution your copilot will be in and the schema name.
 
-  
-  
-1. After a few minutes, you'll be redirected to the copilot's overview page. Certain operations like Publish and Authentication configuration may take a few more minutes to be ready for your copilot, but you can go ahead and:
-    - explore the overall user interface
-    - explore topics and start creating and editing topics
-    - experiment with the preloaded user topics and system topics
-    - interact with your copilot using the Test Canvas
-    - review [additional documentation on authoring topics](authoring-fundamentals.md) in your copilot
+   These are all advanced options which can be changed later.
 
+1. Select **Create**. Creating your first copilot in a new environment can take up to 15 minutes. Additional copilots get created much faster.
+
+1. You are redirected to the copilot's **Overview** page.
+
+   > [!NOTE]
+   > Copilot operations like publish and authentication configurations might take a few more minutes to be ready for use.
+
+#### Familiarize yourself with Copilot Studio
+
+While waiting for processing, you might want to:
+
+- Explore the overall user interface.
+- Explore topics and start creating and editing topics.
+- Experiment with the preloaded user topics and system topics.
+- Interact with your copilot using the **Test copilot** chat pane.
+- Review [Key concepts - Authoring Microsoft Copilot Studio copilots](authoring-fundamentals.md) to understand authoring better.
 
 > [!TIP]
-> To navigate back to the app-level home page from your copilot, in the navigation menu, select **Home**.
+> Select **Home**, in the navigation menu, to go back to the app-level home page from your copilot.
 >
 >:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Home button in the navigation menu.":::
 
