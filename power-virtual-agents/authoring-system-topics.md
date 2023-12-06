@@ -1,14 +1,11 @@
 ---
 title: "Use system topics in Microsoft Copilot Studio"
 description: "Learn how system topics are used in conversations."
-keywords: "PVA"
 ms.date: 03/24/2023
-
 ms.topic: article
-author: KendalBond007
+author: iaanw
 ms.author: iawilt
 manager: leeclontz
-ms.custom: authoring, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.reviewer: ggupta
