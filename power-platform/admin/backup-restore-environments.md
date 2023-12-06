@@ -98,7 +98,7 @@ About **system backups**:
    > ![Enter backup details.](media/restore-backup.png "Enter backup details")
 
    > [!NOTE]
-   > - Only sandbox environments can be restored to. Check [Switch an environment](switch-environment.md) for more details about the effects of changing environment type.
+   > - Only sandbox environments can be restored to. Check [Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details about the effects of changing environment type.
    > - Under **Edit details**, you can change the environment name.
 
 6. Confirm overwrite of the environment. 
@@ -139,7 +139,7 @@ There's no status as the backup is processing. When the backup is completed, the
 You can only restore to sandbox environments. To restore to a production environment, first switch it to a sandbox environment. 
 
 > [!IMPORTANT]
-> Note that changing an environment type to sandbox will affect database retention, check [Switch an environment](switch-environment.md) for more details about the effects of changing environment type.
+> Note that changing an environment type to sandbox will affect database retention, check [Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details about the effects of changing environment type.
 
 1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
@@ -241,7 +241,8 @@ We don't have any restriction on database size (or storage capacity/entitlement)
 To be compliant with storage usage requirements, customers can always [free up storage](free-storage-space.md), [archive data](recover-database-space-deleting-audit-logs.md), [delete unwanted environments](delete-environment.md), or buy more capacity. To learn more about capacity add-ons, see the Add-ons section in the Dynamics 365 Licensing Guide or the Power Apps and Power Automate Licensing Guide. You can work through your organization’s standard procurement process to purchase capacity add-ons.
  
 ### Can I restore to a production environment?
-In order to prevent accidental overwrites, we don't allow users to directly restore to a production environment. To restore to a production environment, first switch it to a sandbox environment. See [Switch an environment](switch-environment.md) for more information. Changing an environment type to sandbox immediately reduces backup retention to seven days. If you don't need backups (restore points) older than seven days, then you can safely switch the type. If you think you may need restore points older than seven days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
+> [!IMPORTANT]
+> In order to prevent accidental overwrites, we don't allow users to directly restore to a production environment. To restore to a production environment, first switch it to a sandbox environment. See [Switch an environment](switch-environment.md) for more information. If you want to restore a backup (restore point) from the past seven days, then you can safely switch the type. If you think you may need to restore to a backup older than seven days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox. If you do switch a production environment to a sandbox environment for a manual restore you will only be able to choose a back up within the past seven days, make sure that once the restore is completed successfully that you change the environment back to a production environment to prevent the loss of any backups older than seven days.
 
 ### Why is my organization in administration mode after a restore and how do I disable it?
 The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](admin-mode.md#set-administration-mode). You can set administration mode in sandbox or production environments.  
