@@ -30,6 +30,8 @@ With Power Platform Advisor, administrators can:
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - Power Platform Advisor currently scans only the managed environments in the tenant for recommendations. Scanning is done once a week.
+> - Please submit [this form](https://aka.ms/padvisorfeedback) for any feedback and suggestions.
 
 ## Turn on Power Platform Advisor
 Power Platform Advisor is turned on by default for all [Managed Environments](managed-environment-overview.md), however, recommendations are only available after you turn on [tenant-level analytics](tenant-level-analytics.md).
