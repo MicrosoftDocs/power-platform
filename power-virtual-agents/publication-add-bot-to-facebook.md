@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Add bot to Facebook
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 You can add your bot to Facebook Messenger to use the Facebook experience to engage with your end users.
 
 Facebook Messenger and related services are subject to Facebook's own terms and conditions. For support related to Facebook Messenger, contact Facebook directly.
@@ -29,19 +31,19 @@ Facebook Messenger and related services are subject to Facebook's own terms and 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Add bot to Facebook Messenger
 
-You need a Facebook app, and an associated developer account, to connect your Power Virtual Agents bot to Facebook Messenger on your Facebook pages.
+You need a Facebook app, and an associated developer account, to connect your Microsoft Copilot Studio bot to Facebook Messenger on your Facebook pages.
 
 These are the steps involved in this process:
 
 1. Configure Facebook app settings: retrieve your Facebook app information, enable API access, add Facebook Messenger to your app, and configure the Facebook pages your app should appear on.
 
-1. Configure the Facebook publication channel in Power Virtual Agents.
+1. Configure the Facebook publication channel in Microsoft Copilot Studio.
 
-1. Connect your Facebook app to Power Virtual Agents using webhooks.
+1. Connect your Facebook app to Microsoft Copilot Studio using webhooks.
 
 You will then need to submit your app for Facebook review before you can publish your app and make it public.
 
@@ -53,7 +55,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 1. Under **Settings** on the side menu pane, select **Basic** .
 
-1. Copy the _App ID_ and _App Secret_. You will need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
+1. Copy the _App ID_ and _App Secret_. You will need these when you [configure the Facebook channel in Microsoft Copilot Studio](#configure-the-facebook-channel-in-microsoft-copilot-studio).
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-get-app-id-secret.png" alt-text="Get Facebook App ID and secret.":::
 
@@ -91,13 +93,13 @@ You will then need to submit your app for Facebook review before you can publish
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-page-messenger-capability.png" alt-text="Messenger permission for page." border="false":::
 
-1. Copy the _Page ID_ and _Token_ for each of the pages that you want to add the bot to. You'll need to select **Generate Token** for each page. You'll need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
+1. Copy the _Page ID_ and _Token_ for each of the pages that you want to add the bot to. You'll need to select **Generate Token** for each page. You'll need these when you [configure the Facebook channel in Microsoft Copilot Studio](#configure-the-facebook-channel-in-microsoft-copilot-studio).
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-get-page-id-token.png" alt-text="Get page ID and token." border="false":::
 
-### Configure the Facebook channel in Power Virtual Agents
+### Configure the Facebook channel in Microsoft Copilot Studio
 
-1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Channels**.
+1. In Microsoft Copilot Studio, in the navigation menu under **Settings**, select **Channels**.
 
 1. Select the **Facebook** tile to open the configuration window.
 
@@ -111,11 +113,11 @@ You will then need to submit your app for Facebook review before you can publish
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-add-pages.png" alt-text="Provide multiple Facebook pages' information." border="false":::
 
-1. Select **Add** and wait for the success confirmation message. Once successful, copy the _Callback URL_ and _Verify token_. You'll need these when you [connect your Facebook app to Power Virtual Agents](#connect-your-facebook-app-to-power-virtual-agents).
+1. Select **Add** and wait for the success confirmation message. Once successful, copy the _Callback URL_ and _Verify token_. You'll need these when you [connect your Facebook app to Microsoft Copilot Studio](#connect-your-facebook-app-to-microsoft-copilot-studio).
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-get-callback-info.png" alt-text="Get callback information for Facebook." border="false":::
 
-### Connect your Facebook app to Power Virtual Agents
+### Connect your Facebook app to Microsoft Copilot Studio
 
 1. Sign in to the Facebook app that you want to add your bot to at [Facebook for Developers](https://developers.facebook.com/).
 
@@ -125,7 +127,7 @@ You will then need to submit your app for Facebook review before you can publish
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-add-callbackurl.png" alt-text="Set up webhooks for Facebook app." border="false":::
 
-1. Provide the _Callback URL_ and _Verify token_ from the [Configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents) section and select **Verify and Save**.
+1. Provide the _Callback URL_ and _Verify token_ from the [Configure the Facebook channel in Microsoft Copilot Studio](#configure-the-facebook-channel-in-microsoft-copilot-studio) section and select **Verify and Save**.
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-webhook-setting.png" alt-text="Add Callback URL and Verify Token." border="false":::
 
@@ -161,7 +163,7 @@ After the review is successful, in the app's **Dashboard** under **App Review**,
 
 When you do not want the bot to be reachable in Facebook Messenger, you can remove the bot from Facebook.
 
-1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Channels**.
+1. In Microsoft Copilot Studio, in the navigation menu under **Settings**, select **Channels**.
 
 1. Select the **Facebook** tile and then **Delete**.
 

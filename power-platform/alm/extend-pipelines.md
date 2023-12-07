@@ -46,7 +46,7 @@ The tables below indicate triggers and actions required for each extension. Outp
 | Gated extension | Step started trigger  | Step completed trigger | Unbound action | Connection to use |
 | --- | --- | --- | --- | --- |
 | Pre-export step required | OnDeploymentRequested | N/A | UpdatePreExportStepStatus | Any identity with access to update the deployment stage run record |
-| Is delegated deployment | OnApprovalStarted | OnDeploymentCompleted | Create a connection as the service principal or or pipeline stage owner as configured on the pipeline stage. The pipeline stage owner must be an owner of the service principal in Microsoft Azure Active Directory. |
+| Is delegated deployment | OnApprovalStarted | OnDeploymentCompleted | Create a connection as the service principal or or pipeline stage owner as configured on the pipeline stage. The pipeline stage owner must be an owner of the service principal in Microsoft Entra ID. |
 | Pre-deployment step required | OnPreDeploymentStarted | OnPreDeploymentCompleted | UpdatePreDeploymentStepStatus | Any identity with access to update the deployment stage run record |
 
 > [!NOTE]

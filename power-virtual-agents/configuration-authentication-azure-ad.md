@@ -1,7 +1,7 @@
 ---
-title: Configure user authentication with Azure Active Directory
-description: Use Azure Active Directory as your service provider for user authentication.
-keywords: "Authentication, IdP, PVA, AAD"
+title: Configure user authentication with Microsoft Entra ID
+description: Use Microsoft Entra ID as your service provider for user authentication.
+keywords: "Authentication, IdP, PVA, Microsoft Entra ID"
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -14,20 +14,22 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Configure user authentication with Azure Active Directory
+# Configure user authentication with Microsoft Entra ID
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 Adding authentication to your bot allows users to sign in, giving your bot access to a restricted resource or information.
 
-This article covers how to configure Azure Active Directory (Azure AD) as your service provider. To learn about other service providers and user authentication in general, see [Configure user authentication](configuration-end-user-authentication.md).
+This article covers how to configure Microsoft Entra ID as your service provider. To learn about other service providers and user authentication in general, see [Configure user authentication](configuration-end-user-authentication.md).
 
 If you have tenant administration rights, you can [configure API permissions](#configure-api-permissions). Otherwise, you'll need to ask a tenant administrator to do it for you.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Learn how to use user authentication in a topic](advanced-end-user-authentication.md).
 
-You'll complete the first several steps in the Azure portal. You'll complete the final two steps in Power Virtual Agents.
+You'll complete the first several steps in the Azure portal. You'll complete the final two steps in Microsoft Copilot Studio.
 
 ### Create an app registration
 
@@ -41,7 +43,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
     It can be helpful later to use the name of your bot. For example, if your bot is called "Contoso sales help," you might name the app registration "ContosoSalesReg".
 
-1. Under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
+1. Under **Supported account types**, select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 
 1. Leave the **Redirect URI** section blank for now. You'll enter that information in the next steps.
 
@@ -64,7 +66,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect` and `https://europe.token.botframework.com/.auth/web/redirect`.
 
 > [!NOTE]
-> The authentication configuration pane in Power Virtual Agents might show the following redirect URL instead of the ones listed above: ` https://unitedstates.token.botframework.com/.auth/web/redirect`. Using that URL will make the authentication fail. Please use the URI listed above instead,
+> The authentication configuration pane in Microsoft Copilot Studio might show the following redirect URL instead of the ones listed above: ` https://unitedstates.token.botframework.com/.auth/web/redirect`. Using that URL will make the authentication fail. Please use the URI listed above instead,
 
 1. In the **Implicit grant and hybrid flows** section, turn on both **Access tokens (used for implicit flows)** and **ID tokens (used for implicit and hybrid flows)**.
 
@@ -91,7 +93,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 ### Configure manual authentication
 
-1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Security**. Then select the **Authentication** card.
+1. In Microsoft Copilot Studio, in the navigation menu under **Settings**, select **Security**. Then select the **Authentication** card.
 
     :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of selecting the Authentication card.":::
 
@@ -101,7 +103,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Enter the values for the following properties:
 
-    - **Service provider**: Select **Azure Active Directory V2**.
+    - **Service provider**: Select **Microsoft Entra ID**.
 
     - **Client ID**: Enter the application (client) ID that you copied earlier from the Azure portal.
 
@@ -156,11 +158,11 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Select **Add scope**.
 
-### Configure authentication in Power Virtual Agents
+### Configure authentication in Microsoft Copilot Studio
 
-1. In Power Virtual Agents, under **Settings**, select **Security**, and then select **Authentication**.
+1. In Microsoft Copilot Studio, under **Settings**, select **Security**, and then select **Authentication**.
 
-    :::image type="content" source="media/configure-web-sso/pva-security-auth.png" alt-text="Screenshot of the Power Virtual Agents Security page with Settings, Security, and Authentication highlighted.":::
+    :::image type="content" source="media/configure-web-sso/pva-security-auth.png" alt-text="Screenshot of the Microsoft Copilot Studio Security page with Settings, Security, and Authentication highlighted.":::
 
 1. Select **Manual (for custom website)**.
 
@@ -170,7 +172,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
    | Property                   | Value                                      |
    | -------------------------- | ------------------------------------------ |
-   | Service provider           | Select **Azure Active Directory V2**       |
+   | Service provider           | Select **Microsoft Entra ID**       |
    | Client ID                  | Enter the application (client) ID that you copied earlier in the Azure portal |
    | Client secret              | Enter the client secret you generated earlier in the Azure portal             |
    | Scopes                     | Enter `profile openid`                     |
@@ -188,7 +190,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. When the bot responds, select **Login**.
 
-    :::image type="content" source="media/configure-web-sso/test-bot.png" alt-text="Screenshot of testing a Power Virtual Agents bot with Azure AD user authentication.":::
+    :::image type="content" source="media/configure-web-sso/test-bot.png" alt-text="Screenshot of testing a Microsoft Copilot Studio bot with Microsoft Entra ID user authentication.":::
 
     A new browser tab opens, asking you to sign in.
 

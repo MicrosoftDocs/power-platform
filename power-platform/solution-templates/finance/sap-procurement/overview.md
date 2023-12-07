@@ -6,7 +6,7 @@ ms.author: jongilman
 contributors:
   - microsoft-george
   - EllenWehrle
-  - thoverh
+  - tverhasselt
   - galitskyd
   - microsoft-dustin
   - ryanb58
@@ -50,7 +50,7 @@ The solution template's starter apps, flows, and other components are ready to b
 
 :::image type="content" source="media/overview/sap-base-building-blocks.png" alt-text="Image of Microsoft's SAP Procurement vendor app for Power Platform.":::
 
-## Benefits of the SAP Procurement template
+## Experience the benefits
 
 The SAP solution template is a framework designed to help you quickly and easily configure, deploy, and manage SAP solutions on Power Platform so your organization can experience a swift return on investment.
 
@@ -67,9 +67,12 @@ Once deployed, you'll see your procurement team members quickly and easily adapt
 - Fewer errors
 - Greater insights into data
 
-## Access the SAP Procurement template from AppSource
+## Access the SAP Procurement template
 
-You can [access the SAP Procurement template from AppSource](<https://aka.ms/AccessSAPProcurementTemplate>).
+You can access the SAP Procurement template two ways:
+
+- [Microsoft AppSource](<https://aka.ms/AccessSAPProcurementTemplate>)
+- [Template for Power Platform on GitHub](<https://aka.ms/TemplatesforPowerPlatform>)
 
 > [!IMPORTANT]
 > Before accessing SAP solution templates, you must [integrate SAP with Power Platform](administer/get-started.md#integrate-sap-with-power-platform).

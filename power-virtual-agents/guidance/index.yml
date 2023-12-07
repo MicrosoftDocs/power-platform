@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Power Virtual Agents guidance documentation
-summary: Power Virtual Agents guidance documentation provides best practices, implementation, and architecture information from the team that works with our enterprise customers.
+title: Microsoft Copilot Studio guidance documentation
+summary: Microsoft Copilot Studio guidance documentation provides best practices, implementation, and architecture guidance information from the team that works with our enterprise customers.
 
 metadata:
-  title: Power Virtual Agents guidance documentation
-  description: Provides best practice guidance information for Power Virtual Agents.
+  title: Microsoft Copilot Studio guidance documentation
+  description: Provides best practice guidance information for Microsoft Copilot Studio.
   ms.topic: landing-page
   ms.collection: collection
   author: HenryJammes
@@ -72,5 +72,5 @@ landingContent:
             url: /power-apps/guidance
           - text: Power Pages guidance center
             url: /power-pages/guidance
-          - text: Power Virtual Agents docs
+          - text: Microsoft Copilot Studio docs
             url: /power-virtual-agents

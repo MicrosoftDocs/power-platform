@@ -16,25 +16,27 @@ ms.collection: virtual-agent
 
 # Configure web and Direct Line channel security
 
-When you create a Power Virtual Agents bot, it is immediately available in the **Demo website** and **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+When you create a Microsoft Copilot Studio bot, it is immediately available in the **Demo website** and **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed.
 
 For the Microsoft Teams app, you can configure advanced web channel security options.
 
 > [!NOTE]
 > If you have a [Teams-only license, you can't generate secrets to enable secure access](requirements-licensing-subscriptions.md). Secure access tokens are created automatically for you and secure access is enabled by default.
 
-Users can find the bot ID directly from within Power Virtual Agents or by receiving it from someone. But, depending on the bot's capability and sensitivity that might not be desirable.
+Users can find the bot ID directly from within Microsoft Copilot Studio or by receiving it from someone. But, depending on the bot's capability and sensitivity that might not be desirable.
 
 With Direct Line-based security, you can enable access only to locations that you control by enabling secured access with Direct Line secrets or tokens.
 
 You can also swap and regenerate secrets and refresh tokens, and you can easily disable secured access if you no longer want to use it.
 
 > [!NOTE]
-> Power Virtual Agents uses the [Bot Framework Direct Line channel]( /azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0&preserve-view=true) to connect your web page or app to the bot.
+> Microsoft Copilot Studio uses the [Bot Framework Direct Line channel]( /azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0&preserve-view=true) to connect your web page or app to the bot.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Enable or disable web channel security
 
@@ -74,7 +76,7 @@ Choose the security model that works best for your situation.
 > [!WARNING]
 > We strongly discourage exposing the secret in any code that runs in the browser, either hard-coded or transferred through a network call.  
 >
-> Acquiring the token using the secret in your service code is the most secured way to protect your Power Virtual Agents bot.
+> Acquiring the token using the secret in your service code is the most secured way to protect your Microsoft Copilot Studio bot.
 
 ## Obtain the secrets
 
@@ -88,7 +90,7 @@ You'll need the secret so you can specify it in your app's authorization header 
 
 If you need to change the secret being used by your bot, you can do so without any downtime or interruption.
 
-Power Virtual Agents provides you with two secrets, which work simultaneously. You can swap the secret being used with the other one. Once the secrets are swapped and your users are all connected using the new secret, you're safe to regenerate the secret.
+Microsoft Copilot Studio provides you with two secrets, which work simultaneously. You can swap the secret being used with the other one. Once the secrets are swapped and your users are all connected using the new secret, you're safe to regenerate the secret.
 
 ### Regenerating the secret
 

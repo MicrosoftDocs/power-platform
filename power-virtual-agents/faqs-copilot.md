@@ -1,6 +1,6 @@
 ---
 title: FAQ for Copilot
-description: This FAQ provides information about the AI technology used for the Copilot capability in Power Virtual Agents, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+description: This FAQ provides information about the AI technology used for the Copilot capability in Microsoft Copilot Studio, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 7/30/2023
 ms.custom: 
   - responsible-ai-faqs
@@ -11,14 +11,17 @@ ms.reviewer: iawilt
 ---
 
 # FAQ for Copilot
-These frequently asked questions (FAQ) describe the AI impact of the Copilot feature in Power Virtual Agents.
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+These frequently asked questions (FAQ) describe the AI impact of the Copilot feature in Microsoft Copilot Studio.
 
 ## What is Copilot?
 The system is designed to generate a single bot topic from a human-written description.
 
 ## What are Copilot's capabilities?
 
- It combines the natural language understanding models already in Power Virtual Agents with Azure OpenAI to:
+ It combines the natural language understanding models already in Microsoft Copilot Studio with Azure OpenAI to:
 
 - Understand what the bot maker wants to achieve by parsing their request
 - Apply knowledge of how nodes within a topic work together, and how a topic should be constructed for the best effect
@@ -26,7 +29,7 @@ The system is designed to generate a single bot topic from a human-written descr
 - Use plain language in any node that contains user-facing text that corresponds with the bot maker's request
 
 ## What is Copilot's intended use?
-The **Create with Copilot** option in the Power Virtual Agents canvas lets bot makers simply describe what they want to achieve, and then produces a topic path that achieves that goal.
+The **Create with Copilot** option in the Microsoft Copilot Studio canvas lets bot makers simply describe what they want to achieve, and then produces a topic path that achieves that goal.
 
 ## How was Copilot evaluated? What metrics are used to measure performance?
 
@@ -52,7 +55,7 @@ The system only supports English. Inaccurate responses may be returned when user
   > You should always test and review your bots before publishing them.
 
 ## What operational factors and settings allow for effective and responsible use of Copilot?
-To get the most out of Copilot, include granular instructions in your description and limit the scope of the description to a single topic. If the generated topic is not what you had in mind or if you’d like to further workshop it, you can modify the topic, also using natural language. 
+To get the most out of Copilot, include granular instructions in your description and limit the scope of the description to a single topic. If the generated topic is not what you had in mind or if youï¿½d like to further workshop it, you can modify the topic, also using natural language. 
 
 We also recommend you carefully review generated topics for accuracy, either in the authoring canvas or code editor. 
 

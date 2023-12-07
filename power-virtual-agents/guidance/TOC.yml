@@ -1,10 +1,10 @@
-- name: Power Virtual Agents guidance
+- name: Microsoft Copilot Studio guidance
   href: index.yml
 - name: Building chatbots
   items:
     - name: Topics best practices
       items:
-      - name: Topics in Power Virtual Agents
+      - name: Topics in Microsoft Copilot Studio
         href: topics-overview.md
       - name: Triggering topics
         href: triggering-topics.md
