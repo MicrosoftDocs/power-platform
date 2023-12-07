@@ -13,7 +13,7 @@ ms.reviewer: sericks
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Administrators, partners, and ISVs historically have had to use cloud-hosted environments in Lifecycle Services (LCS) to create demo or trial environments for finance and operations apps. This was to demonstrate the software capabilities and try out new features of the product on a low-cost basis.
+Administrators, partners, and ISVs historically have had to use cloud-hosted environments in Lifecycle Services to create demo or trial environments for finance and operations apps. This was to demonstrate the software capabilities and try out new features of the product on a low-cost basis.
 
 To improve this experience, Microsoft has made available free subscription-based trial environments for finance and operations apps, including Dynamics 365 Finance, Supply Chain Management, Project Operations, and Commerce apps.
 
@@ -43,7 +43,7 @@ After the product is purchased, assign the license to an admin who can sign in t
 1. In the dropdown menu, select the template that is related to the trial license you were given, such as **Finance (Preview)**.
 1. Select **Save** to start the deployment, which may take an hour to complete.  
 
-After the deployment is finished, you may use both Dataverse and finance and operations apps capabilities in a unified trial environment. This includes add-ins, such as **Export to Data Lake**, **Planning Optimization**, and **Finance Insights**, which were previously only available to paid customer environments in LCS.
+After the deployment is finished, you may use both Dataverse and finance and operations apps capabilities in a unified trial environment. This includes add-ins, such as **Export to Data Lake**, **Planning Optimization**, and **Finance Insights**, which were previously only available to paid customer environments in Lifecycle Services.
 
 ### Related articles
 
