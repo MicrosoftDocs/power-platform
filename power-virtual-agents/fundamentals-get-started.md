@@ -79,9 +79,11 @@ In the navigation menu, select **Copilots** to open the **Copilots** page. All c
 
    These are all advanced options which can be changed later.
 
-1. Select **Create**. Creating your first copilot in a new environment can take up to 15 minutes. Additional copilots get created much faster.
+1. Select **Create**.
 
-1. You are redirected to the copilot's **Overview** page.
+   Creating your first copilot in a new environment can take up to 15 minutes. Additional copilots get created much faster.
+
+1. You're redirected to the copilot's **Overview** page.
 
    > [!NOTE]
    > Copilot operations like publish and authentication configurations might take a few more minutes to be ready for use.
@@ -90,11 +92,11 @@ In the navigation menu, select **Copilots** to open the **Copilots** page. All c
 
 While waiting for processing, you might want to:
 
-- Explore the overall user interface.
+- Explore the overall user interface for Copilot Studio.
 - Explore topics and start creating and editing topics.
 - Experiment with the preloaded user topics and system topics.
 - Interact with your copilot using the **Test copilot** chat pane.
-- Review [Key concepts - Authoring Microsoft Copilot Studio copilots](authoring-fundamentals.md) to understand authoring better.
+- Review [Key concepts - Authoring Microsoft Copilot Studio copilots](authoring-fundamentals.md) to better understand authoring.
 
 > [!TIP]
 > Select **Home**, in the navigation menu, to go back to the app-level home page from your copilot.
@@ -103,49 +105,57 @@ While waiting for processing, you might want to:
 
 ### Create a topic
 
-Now that you have full functionality within your copilot, you can create your own topic, which is a dialog tree that describes how your copilot responds to a user's question.
+With a new copilot, you can start creating topics. A topic is a dialog tree that describes how your copilot responds to a user's question.
 
-1. In the navigation menu, select **Topics**, then select **Add** at the top of the page. Then select **Topic**, and then **From blank**.
+1. In the navigation menu, select **Topics**, then select **Add** at the top of the page. From **Add**, select **Topic**, and then **From blank**.
 
-    :::image type="content" source="media/fundamentals-get-started/topics-new.png" alt-text="Add topic" border="false":::
+    :::image type="content" source="media/fundamentals-get-started/topics-new.png" alt-text="Screenshot that shows you how to add a topic to your copilot." lightbox="media/fundamentals-get-started/topics-new.png":::
 
-1. Name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the copilot when to respond with this dialog.
+1. Here you build a topic by giving it a name and configuring a trigger. Trigger phrases are examples of user questions or utterances that teach the copilot to respond when the questions or utterances are detected.
 
-    As an example, let's create a topic called 'Personal Hello World' and add 'hello world' as a trigger phrase.
+    1. Name your topic 'Personal Hello World'.
+    1. In the **Trigger** box under **Phrases**, select **Edit**. The **On Recognized Intent** pane appears.
+    1. Add 'hello world' text, also called an utterance, under **Add phrases**.
+    1. Select the **+** icon next to the phrase box to add it to your trigger.
+    1. Select the **Save** icon at the top to save your trigger.
 
-    :::image type="content" source="media/fundamentals-get-started/hello-world-topic.png" alt-text="Name topic and add trigger phrase.":::
+    :::image type="content" source="media/fundamentals-get-started/hello-world-topic.png" alt-text="Screenshot that shows how to name a topic and add a trigger phrase." lightbox="media/fundamentals-get-started/hello-world-topic.png":::
 
-1. Select **Save** to add the topic to the topics list.
+1. Select the (**+**) icon below your trigger node and select **Send a message**.
 
-1. Now click the **Add node** (**+**) under the 'Trigger' node and select **Send a message**
+   1. Enter 'Hello! I'll create a personalized greeting for you.' into the newly added **Message** node.
 
-    Enter 'Hello! I'll create a personalized greeting for you.' into the newly added **Message** node.
+      :::image type="content" source="media/fundamentals-get-started/quickstart-add-node.png" alt-text="Screenshot that shows how to add a message node and create message text.":::
 
-    :::image type="content" source="media/fundamentals-get-started/quickstart-add-node.png" alt-text="Add node." border="false":::
+   1. Select the **Save** icon at the top to save your trigger.
 
-1. Select **Add node** (**+**) below the node, and add an **Ask a question** node.
+1. Select the (**+**) icon below your new message node and add an **Ask a question** node.
 
-    Enter the question text, 'Where do you live?', in the **Ask a question** box. To give the customer a choice between different responses, select **Multiple choice options** under **Identify**.
+    Enter the question text, 'Where do you live?', in the **Ask a message** box. Select **Multiple choice options** under **Identify** to give the customer a choice in responses.
 
-    :::image type="content" source="media/fundamentals-get-started/quickstart-create-topic-02.png" alt-text="Bot answer." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/quickstart-create-topic-02.png" alt-text="Screenshot that shows how to add a question to a question node.":::
 
-1. Add two options for the user, by selecting **+ New option**.
+   With **Multiple choice options** selected, you need to add more options.
 
-    Enter 'Seattle' and 'Bellevue' in the text boxes called 'Options for user'. Each option is presented as a multiple choice button to the user.
+1. Add two options for the user, by selecting **+ New option** under **Options for user** in the **Question** node, then enter 'Seattle' as the text. Add another option and enter 'Bellevue'.
 
-    The authoring canvas creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each user response.
+    Each option is presented in the copilot chat as a multiple choice button to the user.
 
-    :::image type="content" source="media/fundamentals-get-started/quickstart-options.png" alt-text="Branching options are created automatically." border="false":::
+1. View the whole dialog tree in the authoring canvas to understand the conversation flow.
 
-1. In the forked conversation path, each node automatically checks for 'Seattle' in one path, and 'Bellevue' in the other to take the appropriate next step.
+   The dialog tree creates separate paths in the conversation, depending on the customer's response. This path leads the customer to the best resolution for each user response.
 
-1. Finally, select **Add node** (**+**) below each of the Condition nodes to add a **Message** node in each branch.
+   :::image type="content" source="media/fundamentals-get-started/quickstart-options.png" alt-text="Screenshot showing the whole dialog tree. The branching options are created automatically." lightbox="media/fundamentals-get-started/quickstart-options.png":::
 
-    Add a simple message like 'Hello Seattle!' in the Seattle branch, and 'Hello Bellevue!' in the Bellevue branch.
+   In the forked conversation path, the nodes automatically check for 'Seattle' in one path and 'Bellevue' in the other path to take the best next step.
+
+1. Finally, select the (**+**) icon below each of the **Condition** nodes to add a **Message** node in each branch.
+
+    Add a simple message like 'Hello Seattle!' in the Seattle branch and 'Hello Bellevue!' in the Bellevue branch.
 
     :::image type="content" source="media/fundamentals-get-started/quickstart-create-topic-03.png" alt-text="Complete conversation." border="false":::
 
-1. Select **Save** at the top.
+1. Select the **Save** icon at the top to save your trigger.
 
 You now have a very simple branching dialog tree, congratulations! You can begin to create more complex versions of this tree by incorporating [variables](authoring-variables.md), [entities](advanced-entities-slot-filling.md), and [Power Automate flows](advanced-flow.md).
 
