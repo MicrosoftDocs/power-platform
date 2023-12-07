@@ -154,20 +154,6 @@ Power Automate—included with Office, Power Automate premium, Power Apps premiu
 
 - Licenses aren't recognized across tenants in different Azure clouds.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### What Power Automate capabilities are included in Windows licenses?
 
 Windows 11 users can try desktop flows in attended RPA for personal productivity in the default environment. They can't share the desktop flows or create desktop flows in a different environment other than the default environment. Windows users don't have access to cloud flows. To get full cloud flows and RPA features, purchase the Power Automate premium plan.
@@ -180,13 +166,13 @@ Yes, they can use Power Automate for the desktop (they have usage rights for it)
 
 ## Legacy license questions
 
-Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from pricing page. They will be removed from the price list on February 1, 2024. Power Automate process, an all-encompassing license that is easier to manage, licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month.
+Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from the pricing page. They will be removed from the price list on February 1, 2024. Power Automate process, an all-encompassing license that is easier to manage, licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month.
 
 ### How is Process license different from per flow license 
 
-For unattended RPA, previously customers will need to buy a per flow license for the cloud flow and an unattended RPA add-on. Now they can purchase a Process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the Process license. 
+For unattended RPA, previously customers needed to buy a per flow license for the cloud flow and an unattended RPA add-on. Now they can purchase a Process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the Process license. 
 
-For cloud flows, one per flow license allows a parent flow and its child flows. One Process license allows the parent flow, its child flows and any flows that are tagged as in context of the flow. Per flow had a minimum of 5 pack to be purchased to get started. There is no minimum purchase quantity requirement for Process license.
+For cloud flows, one per flow license allows a parent flow and its child flows. One Process license allows the parent flow, its child flows and any flows that are tagged as in context of the flow. Per flow had a minimum of 5 packs to be purchased to get started. There is no minimum purchase quantity requirement for Process license.
 
 ### How is Power Automate Premium license different from Power Automate per user with attended RPA license?
 
@@ -383,11 +369,11 @@ Once a license is assigned/flow is associated to an app, it may take up to seven
 
 Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be deleted if the corresponding apps are deleted? Is the flow talking to the same data sources as the app? If so, the flow is in context.
 
-### How can I associate in context flows to Power Apps/Dynamics365 apps 
+### How can I associate in-context flows to Power Apps/Dynamics 365 apps? 
 
-Flows created to support apps built with Power Apps/Dynamics365  must run within the context of the app. This means the flow must use the same data sources for triggers or actions as the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the apps using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app). Once the flow is linked, a dependency is established between the app and the flow and they can be managed together. If the linked app is deleted or unused, the flow will be turned off.
+Flows created to support apps built with Power Apps/Dynamics 365  must run within the context of the app. This means the flow must use the same data sources for triggers or actions as the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the apps using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app). Once the flow is linked, a dependency is established between the app and the flow and they can be managed together. If the linked app is deleted or unused, the flow will be turned off.
 
-Makers can also associate their flows to apps from Power Automate portal, to learn more go to [Associate flows to apps](/power-automate/associate-flow-to-app).
+Makers can also associate their flows to apps from the Power Automate portal. To learn more, go to [Associate flows to apps](/power-automate/associate-flow-to-app).
 
 ### Power Automate capabilities included with per app plans
 
@@ -413,8 +399,7 @@ Here are a few examples of what multiplexing is or isn't:
 
 ### I have multiple flows running under a shared service account. What licenses do I need?
 
-- **Service account**: Azure Active Directory (Azure AD) user account used as a service account. Service accounts are a special type of account that's intended to represent a nonhuman entity, such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, pose a security risk and difficult to track who made changes to a flow if multiple people have access to service account. Managing their passwords is also a challenge.  When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. Service accounts are not recommended as a best practice. 
-In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. In such cases, use Service principal to resolve security threats.
+- **Service account**: Azure Active Directory (Azure AD) user account used as a service account. Service accounts are a special type of account that's intended to represent a nonhuman entity, such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, pose a security risk and it's difficult to track who made changes to a flow if multiple people have access to the service account. Managing their passwords is also a challenge.  When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. Service accounts are not recommended as a best practice. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. In such cases, use Service principal to resolve security threats.
 
 - **Service principal**: Azure AD service principal functions as the identity of the application instance. Service principals define who can access the application and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object. 
 
@@ -442,7 +427,7 @@ If you want to run your flow under a service account, here is how to avoid multi
 - Multiple users sharing credentials of a service account and using premium flows with one Power Automate premium license assigned to the service account is considered multiplexing and the flow isn't compliant.
 
 > [!NOTE]
-> The guidance is specific to service accounts used as flow owners or run-only users. Flows using service accounts as connections or co-owners aren't impacted by this guidance. We recommend running the flows with service principal as the owner instead of service account to avoid security risks
+> The guidance is specific to service accounts used as flow owners or run-only users. Flows using service accounts as connections or co-owners aren't impacted by this guidance. We recommend running the flows with service principal as the owner instead of service account to avoid security risks.
 >
 > This is guidance only and not hard enforcement. Admins are responsible for licensing all the flows correctly to stay compliant.
 
@@ -452,7 +437,7 @@ Users who respond to approval requests don't need a Premium license.
 
 ### Automated flow - User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL database (Premium). Multiple people can add items to the list created using Microsoft Lists. Do users need a Premium license?
 
-The flow runs in the context of owner's license for automated or scheduled flows and the invoking user's license for instant, Power Apps, or Dataverse-triggered flows. So, the person who added the item to the list created using Microsoft Lists doesn't need a Premium license.
+The flow runs in the context of the owner's license for automated or scheduled flows and the invoking user's license for instant, Power Apps, or Dataverse-triggered flows. So, the person who added the item to the list created using Microsoft Lists doesn't need a Premium license.
 
 ### We have an instant flow with run-only users and it uses premium connectors. The maker shares that flow with their team and allows them to run that flow. Does everyone need a Premium license?
 
