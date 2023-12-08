@@ -1,30 +1,27 @@
 ---
 title: "Use DLP to block Power Platform Connectors"
-description: "Block Power Platform Connectors from being used by Microsoft Copilot Studio chatbots."
-keywords: "Copilot Studio"
+description: "Block Power Platform Connectors from being used by Microsoft Copilot Studio copilots."
 ms.date: 12/08/2023
-
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
-ms.custom: admin, dlp
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Data loss prevention example 4 - Block Power Platform Connectors from Microsoft Copilot Studio chatbots
+# Data loss prevention example 4 - Block Power Platform Connectors from Microsoft Copilot Studio copilots
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 
-You can use data loss prevention policies to prevent bot makers from configuring HTTP requests to help prevent data exfiltration.
+You can use data loss prevention (DLP) policies to prevent bot makers from configuring HTTP requests. This can help prevent data exfiltration.
 
-See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](admin-data-loss-prevention.md) topic for information about other DLP-related connectors.
+See the [Configure data loss prevention for Microsoft Copilot Studio](admin-data-loss-prevention.md) article for information about other DLP policy configurations.
 
 ## Configure DLP to block Power Platform connectors in the Power Platform admin center
 
-[!INCLUDE [Preview documentation notice](includes/dlp-basic-config.md)]
+[!INCLUDE [DLP policy starting instructions](includes/dlp-basic-config.md)]
 
 ### Add the connector
 
@@ -36,17 +33,17 @@ See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](a
 
 1. Review your policy, then select **Update policy** to apply the DLP changes.
 
-    :::image type="content" source="media/dlp-example-3/DLPConnectorsUpdatePolicy.png" alt-text="Screenshot of the review screen when creating a DLP policy ":::
+    :::image type="content" source="media/dlp-example-3/DLPConnectorsUpdatePolicy.png" alt-text="Screenshot of the review screen when creating a DLP policy.":::
 
 ## Confirm policy enforcement
 
 # [Web App](#tab/webapp)
 
-You can confirm that this connector is being used in the DLP policy from the Microsoft Copilot Studio.
+You can confirm that this connector is being used in the DLP policy from Microsoft Copilot Studio.
 
-First, open your bot from the environment where the DLP policy is applied. Go to the authoring canvas, create a new topic, add a **Call an action** node, select **Connectors Preview**, choose your blocked connection and then Save your Topic.
+First, open your bot from the environment where the DLP policy is applied. Go to the authoring canvas, create a new topic, add a **Call an action** node, select **Connectors Preview**, choose your blocked connection and then save your topic.
 
-Navigate to the **Publish** page and, if the policy is enforced, you'll see an error (you may need to refresh the page if you do not see the error immediately) indicating that "Your bot may not work as intended right now due to your organization's data loss prevention policies".
+Navigate to the **Publish** page and, if the policy is enforced, you'll see an error (you may need to refresh the page if you do not see the error immediately). The error says "Your bot may not work as intended right now due to your organization's data loss prevention policies."
 
 :::image type="content" source="media/dlp-example-3/DLPWeather.png.png" alt-text="Screenshot of the Publish page with an error message indicating a violation with organization DLP policies.":::
 
@@ -56,5 +53,3 @@ You can choose to click the **Download details** button in the error banner to s
 # [Classic](#tab/classic)
 
 Power Platform connectors are not currently supported in the classic experience.
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
