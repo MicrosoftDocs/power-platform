@@ -87,6 +87,7 @@
         - name: Example 3 - Require end-user authentication
           href: dlp-example-3.md
         - name: Example 4 - Block Power Platform Connectors
+          href: dlp-example-4.md
     - name: Export and import bots using solutions
       href: authoring-export-import-bots.md
     - name: Regional settings and data locations for organizations
