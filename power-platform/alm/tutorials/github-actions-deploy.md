@@ -8,7 +8,6 @@ ms.author: pemikkel
 ms.custom: ""
 ms.date: 10/14/2020
 ms.reviewer: "pehecke"
-
 ms.topic: "tutorial"
 search.audienceType: 
   - maker
@@ -48,7 +47,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 ### Creating a new secret for Service Principal Authentication
 1. Navigate to to you repository and click **Settings**, then expand **Secrets**, and then and click **Actions**.
 
-2. On the *Secrets* page, name the secret ‘PowerPlatformSPN’. Use the client secret from the application registration created in Azure Active Directory and enter it into the **Value** field, and then select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab.
+2. On the *Secrets* page, name the secret ‘PowerPlatformSPN’. Use the client secret from the application registration created in Microsoft Entra and enter it into the **Value** field, and then select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab.
 
     ![Create the service principal secret](../media/github-actions-tutorial/spn-secret-setup.gif "Create the service principal secret")
 

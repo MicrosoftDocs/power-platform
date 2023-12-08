@@ -13,15 +13,17 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Data loss prevention example 3 - Require end-user authentication for Power Virtual Agents chatbots
+# Data loss prevention example 3 - Require end-user authentication for Microsoft Copilot Studio chatbots
 
-If a Power Virtual Agents chatbot isn't configured to require end-user authentication, then anyone on the internet can chat with the bot.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+If a Microsoft Copilot Studio chatbot isn't configured to require end-user authentication, then anyone on the internet can chat with the bot.
 
 You can use data loss prevention (DLP) policies to block your bot makers from configuring and publishing chatbots that aren't configured for authentication to help prevent data exfiltration.
 
-Bot makers will need to [configure end-user authentication with Teams or Azure AD v2 in Power Virtual Agents](configuration-end-user-authentication.md)if you use this connector in an enforced DLP policy.
+Bot makers will need to [configure end-user authentication with Teams or Microsoft Entra ID in Microsoft Copilot Studio](configuration-end-user-authentication.md)if you use this connector in an enforced DLP policy.
 
-See the [Configure data loss prevention for Power Virtual Agents chatbots](admin-data-loss-prevention.md) topic for information about other DLP-related connectors.
+See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](admin-data-loss-prevention.md) topic for information about other DLP-related connectors.
 
 ## Configure DLP to require authentication in the Power Platform admin center
 
@@ -29,9 +31,9 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 ### Add the connector
 
-1. Use the search box to find the **Chat without Azure AD authentication in Power Virtual Agents** connector.
+1. Use the search box to find the **Chat without Microsoft Entra ID authentication in Microsoft Copilot Studio** connector.
 
-    :::image type="content" source="media/dlp-example-3/chat-connector.png" alt-text="Screenshot of the Chat without Azure AD authentication in Power Virtual Agents connector.":::
+    :::image type="content" source="media/dlp-example-3/chat-connector.png" alt-text="Screenshot of the Chat without Microsoft Entra ID authentication in Microsoft Copilot Studio connector.":::
 
 1. Select the connector's **More actions** menu (**&vellip;**), and then select **Block**.
 
@@ -50,9 +52,9 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
     :::image type="content" source="media/dlp-example-3/update-policy.png" alt-text="Screenshot of the review screen when creating a DLP policy.":::
 
-## Confirm policy enforcement in Power Virtual Agents
+## Confirm policy enforcement in Microsoft Copilot Studio
 
-You can confirm that this connector is being used in the DLP policy from the Power Virtual Agents web app.
+You can confirm that this connector is being used in the DLP policy from the Microsoft Copilot Studio web app.
 
 First, open your bot from the environment where the DLP policy is applied.
 
