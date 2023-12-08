@@ -30,8 +30,8 @@ There are three ways to install the Power Platform CLI.
 
 |Method|OS Support|Description|
 |---------|---------|---------|
-|[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows,Linux,MacOS|Simple install from Visual Studio Code market place.|
-|[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows,Linux,MacOS|Install using [dotnet tool](/dotnet/core/tools/global-tools)|
+|[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows,Linux,MacOS|Install from Visual Studio Code market place or Visual Studio Code extensions|
+|[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows,Linux,MacOS|Install using [.NET tool commands](/dotnet/core/tools/global-tools)|
 |[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Install this when you need to use [pac data](reference/data.md) or certain [pac package](reference/package.md) commands |
 
 

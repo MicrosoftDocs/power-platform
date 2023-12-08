@@ -52,5 +52,5 @@ pac install latest
 ### See also
 
 [What is Microsoft Power Platform CLI?](../cli/introduction.md)   
-[Install the Power Platform Tools Visual Studio Code extension](install-vs-code-extension.md)
+[Install the Power Platform Tools Visual Studio Code extension](install-vs-code-extension.md)   
 [Install Power Platform CLI with .NET Tool](install-cli-net-tool.md)   

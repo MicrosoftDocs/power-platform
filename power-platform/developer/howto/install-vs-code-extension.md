@@ -35,7 +35,7 @@ You can install the Microsoft Power Platform CLI using the Visual Studio Code ex
 1. Select **Open** if the **This site is trying to open Visual Studio Code dialog** appears.
 1. In Visual Studio Code, select **Install**.
 
-### Install from Visual Studio
+### Install from Visual Studio Code extensions
 
 1. In Visual Studio Code, select the **Extensions** icon in the navigation bar.
 1. Search for 'power platform tools'

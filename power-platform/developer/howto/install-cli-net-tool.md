@@ -17,11 +17,7 @@ ms.custom: bap-template
 
 **Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Windows :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Linux   :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: MacOS
 
-You can install, update, and uninstall the Power Platform CLI using these commands:
-
-- [dotnet tool install](/dotnet/core/tools/dotnet-tool-install)
-- [dotnet tool update](/dotnet/core/tools/dotnet-tool-update)
-- [dotnet tool uninstall](/dotnet/core/tools/dotnet-tool-uninstall)
+You can install, update, and uninstall the Power Platform CLI using [.NET tool commands](/dotnet/core/tools/global-tools).
 
 These commands manage installing the PAC CLI from this NuGet package: [Microsoft.PowerApps.CLI.Tool](https://www.nuget.org/packages/Microsoft.PowerApps.CLI.tool)
 
