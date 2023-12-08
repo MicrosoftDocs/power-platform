@@ -62,6 +62,7 @@ To help you get started with Microsoft Copilot Studio chatbot governance, we cre
 - [Example 1: Use DLP to block skills in Microsoft Copilot Studio chatbots](dlp-example-1.md)
 - [Example 2: Use DLP to block HTTP requests from Microsoft Copilot Studio chatbots](dlp-example-2.md)
 - [Example 3: Use DLP to require end-user authentication for Microsoft Copilot Studio chatbots](dlp-example-3.md)
+- [Example 4: Use DLP to block Power Platform Connectors](dlp-example-4.md)
 
 ## Use PowerShell to enable and administer DLP enforcement for chatbots in your organization
 
