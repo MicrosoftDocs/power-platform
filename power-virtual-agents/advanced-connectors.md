@@ -26,7 +26,7 @@ There are [many connectors available](/connectors/connector-reference/), ranging
 
 - **Premium Connectors**, which require specific Power Automate plans
  
-- **Custom Connectors**, which let you connect to any publicly available API for services not covered by existing connectors.
+- **Custom Connectors**, which let you connect to any publicly available API for services not covered by existing connectors
 
 ### Integration with Microsoft Copilot Studio
 
