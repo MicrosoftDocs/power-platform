@@ -25,7 +25,9 @@ See the [Configure data loss prevention for Microsoft Copilot Studio](admin-data
 
 ### Add the connector
 
-1. Use the search box to find the connector you are looking to block.
+1. Use the search box to find the connector you are looking to block. You can see connectors that are already blocked on the **Blocked** tab.
+
+   :::image type="content" source="media/dlp-example-4/DLPConnectors.png" alt-text="Screenshot of the Assign connectors page in Power Platform admin center.":::
 
 1. Select the connector's **More actions** menu (**&vellip;**), and then select **Block**.
 
