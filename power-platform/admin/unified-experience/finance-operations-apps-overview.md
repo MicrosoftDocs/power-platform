@@ -85,7 +85,7 @@ When it comes to environment lifecycle operations, there are some terminology an
 
 The following list of continually updated scenario tutorials provides a walkthrough for administrators in these new experiences.
 
-- [Provision a new environment with an ERP-based template (preview)](./tutorial-deploy-new-environment-with-ERP-template.md)
+- [Tutorial: Provision a new environment with an ERP-based template (preview)](./tutorial-deploy-new-environment-with-ERP-template.md)
 - [Tutorial: Copy a Lifecycle Services environment to a unified environment (preview)](./tutorial-copy-lifecycle-services-environment-unified-environment.md)
 - [Unified admin trials (preview)](admin-trials.md)
 - [Manage storage and capacity](../finance-operations-storage-capacity.md)
