@@ -2,9 +2,9 @@
 title: "Package Deployer tool | Microsoft Docs"
 description: "Learn about migrating configuration data, solutions, and more from one environment to another."
 keywords: 
-author: mikkelsen2000
+author: marcelbf
+ms.author: marcelbf
 ms.subservice: alm
-ms.author: pemikkel
 ms.custom: ""
 ms.date: 10/20/2022
 ms.reviewer: "pehecke"
