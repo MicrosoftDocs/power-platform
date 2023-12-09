@@ -1,6 +1,6 @@
 ---
-title: "Use DLP to block skills in chatbots"
-description: "Block skills from being used in Microsoft Copilot Studio chatbots."
+title: "Use DLP to block skills in copilots"
+description: "Block skills from being used in Microsoft Copilot Studio copilots."
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Data loss prevention example 1 - Block skills in Microsoft Copilot Studio chatbots
+# Data loss prevention example - Block skills in Microsoft Copilot Studio copilots
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
