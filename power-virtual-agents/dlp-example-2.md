@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Data loss prevention example 2 - Block HTTP requests from Microsoft Copilot Studio chatbots
+# Data loss prevention example - Block HTTP requests from Microsoft Copilot Studio chatbots
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
