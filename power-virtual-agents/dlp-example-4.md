@@ -10,7 +10,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Data loss prevention example 4 - Block Power Platform Connectors from Microsoft Copilot Studio copilots
+# Data loss prevention example - Block Power Platform Connectors from Microsoft Copilot Studio copilots
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
