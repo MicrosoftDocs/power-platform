@@ -28,11 +28,11 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 ## Prerequisites  
 
 - Ensure that you have all the solution and other files ready that you want to include in the package.  
-- Visual Studio 2019 or later, or Visual Studio Code
+- Visual Studio 2019 or later, or Visual Studio Code.
 
 ## Process overview  
 
-To create a Package Deployer package, you will perform the following steps.
+To create a Package Deployer package, perform the following steps.
 > [!div class="checklist"]
 >
 > * Create a Visual Studio or MSBuild project
@@ -42,11 +42,11 @@ To create a Package Deployer package, you will perform the following steps.
 > * Define custom code for the package
 > * Build and deploy the package
 
-These steps are described in detail in this topic.
+These steps are described in detail in this article.
 
 ## Create a package project
 
-The first step is to create a Visual Studio or MSBuild project for the package. To do that, you must have one of two available tool extensions installed on your development computer. If using Visual Studio Code, install [Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli). Otherwise, if using Visual Studio 2019, install [Power Platform tools for Visual Studio](/power-apps/developer/data-platform/tools/devtools-install). Note that the Power Platform tools extension is currently only available for Visual Studio 2019. However, the created project can be built using Visual Studio 2019 or later.
+The first step is to create a Visual Studio or MSBuild project for the package. To do that, you must have one of two available tool extensions installed on your development computer. If using Visual Studio Code, install [Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli). Otherwise, if using Visual Studio 2019, install [Power Platform tools for Visual Studio](/power-apps/developer/data-platform/tools/devtools-install). The Power Platform tools extension is currently only available for Visual Studio 2019. However, the created project can be built using Visual Studio 2019 or later.
 
 Select the appropriate tab below to find out how to create a project using the desired tool extension. Both tools output the project in a similar format.
 
@@ -72,18 +72,18 @@ C:.
             manifest.ppkg.json
 ```
 
-In the created project, you will find the ImportConfig.xml configuration file in the PkgAssets folder and the PackageImportExtension.cs file. You will be modifying these files as described later in this topic.
+In the created project, find the ImportConfig.xml configuration file in the PkgAssets folder and the PackageImportExtension.cs file. You'll modify these files as described later in this article.
 
 ### [Power Platform tools](#tab/pptools)
 
-You can create a Visual Studio project using the Power Platform Solution Template and later add a package project using the Power Platform Package Deployment Project template, or simply create a project directly using the Power Platform Package Deployment Project template.
+You can create a Visual Studio project using the Power Platform Solution Template and later add a package project using the Power Platform Package Deployment Project template, or create a project directly using the Power Platform Package Deployment Project template.
 
 :::image type="content" source="media/pptools-add-package-project.png" alt-text="Add a package project.":::
 
 > [!NOTE]
 > Do not choose the Power Platform Package template. That template is for plug-in packages.
 
-The resulting Visual Studio solution and project contains the folders and files shown below. The "Deployment-package" name was used here as an example. The contents of the Content folder is not shown here for brevity.
+The resulting Visual Studio solution and project contains the folders and files shown below. The "Deployment-package" name was used here as an example. The contents of the Content folder isn't shown here for brevity.
 
 ```bash
 C:.
@@ -98,7 +98,7 @@ C:.
 │   └───Content
 ```
 
-In the created project, you will find the ImportConfig.xml configuration file in the PkgFolder folder and the PackageTemplate.cs file. You will be modifying these files as described later in this topic.
+In the created project, find the ImportConfig.xml configuration file in the PkgFolder folder and the PackageTemplate.cs file. You'll modify these files as described later in this article.
 
 More information about using the Power Platform tools extension: [Quickstart: Create a Power Platform Tools project](/power-apps/developer/data-platform/tools/devtools-create-project)
 
@@ -131,7 +131,7 @@ The item was added successfully.
 
 Next, update the HTML language specific files.  
 
-1. In the **Solution Explorer** pane, expand **PkgFolder** > **Content** > **en-us**. You'll find two folders called `EndHTML` and `WelcomeHTML`. These folders contain the  HTML and associated files that enable you to display (to the user) information at the end and beginning of the package deployment process. Edit the files in the HTML folder of these folders to add information to display for your package.
+1. In the **Solution Explorer** pane, expand **PkgFolder** > **Content** > **en-us**. Find two folders called `EndHTML` and `WelcomeHTML`. These folders contain the  HTML and associated files that enable you to display (to the user) information at the end and beginning of the package deployment process. Edit the files in the HTML folder of these folders to add information to display for your package.
 
 2. You can also add the HTML files in your package in other languages so that the content in the HTML appears in the language based on the locale settings of the user's computer. To do so:  
 
@@ -167,9 +167,9 @@ Next, update the HTML language specific files.
     `crmmigdataimportfile`  
     File name of the default configuration data file (.zip) exported using the Configuration Migration tool.  
 
-   - You can also import a localized version of the configuration data file based on the locale ID (LCID) specified using new runtime settings while running the package deployer. Use the `<cmtdatafile>` node (explained later) to specify the localized versions of the configuration data file in a package and then use the  `OverrideConfigurationDataFileLanguage` method (explained later) to specify the logic for importing the configuration data file based on the locale ID specified using the runtime settings. You cannot import more than one configuration data file using a package at a time.  
+   - You can also import a localized version of the configuration data file based on the locale ID (LCID) specified using new runtime settings while running the package deployer. Use the `<cmtdatafile>` node (explained later) to specify the localized versions of the configuration data file in a package and then use the  `OverrideConfigurationDataFileLanguage` method (explained later) to specify the logic for importing the configuration data file based on the locale ID specified using the runtime settings. You can't import more than one configuration data file using a package at a time.  
 
-   - For Dataverse (on-premises), if your configuration data file contains user information, and both the source and target Dataverse instances are on the same Active Directory Domain, user information will be imported to the target Dataverse instance. To import user information to a Dataverse (on-premises) instance on a different domain, you must include the user map file (.xml) generated using the Configuration Migration tool in your project, and specify it along with the configuration data file using the `usermapfilename` attribute in the `<cmtdatafile>` node explained later. User information cannot be imported to Dataverse instances.  
+   - For Dataverse (on-premises), if your configuration data file contains user information, and both the source and target Dataverse instances are on the same Active Directory Domain, user information is imported to the target Dataverse instance. To import user information to a Dataverse (on-premises) instance on a different domain, you must include the user map file (.xml) generated using the Configuration Migration tool in your project, and specify it along with the configuration data file using the `usermapfilename` attribute in the `<cmtdatafile>` node explained later. User information can't be imported to Dataverse instances.  
      `<solutions>` node  
      Contains an array of `<configsolutionfile>` nodes that describe the solutions to import. The order of the solutions under this node indicates the order in which the solutions will be imported on the target Dataverse instance.  
 
@@ -178,9 +178,9 @@ Next, update the HTML language specific files.
 
    - `solutionpackagefilename`: Specify the .zip file name of your solution. Required.  
 
-   - `overwriteunmanagedcustomizations`: Specify whether to overwrite any unmanaged customizations when importing a solution that already exists in the target Dynamics 365 instance. This attribute is optional, and if you do not specify this attribute, by default the unmanaged customizations in the existing solution are maintained on the target Dynamics 365 instance.  
+   - `overwriteunmanagedcustomizations`: Specify whether to overwrite any unmanaged customizations when importing a solution that already exists in the target Dynamics 365 instance. This attribute is optional, and if you don't specify this attribute, by default the unmanaged customizations in the existing solution are maintained on the target Dynamics 365 instance.  
 
-   - `publishworkflowsandactivateplugins`: Specify whether to publish workflows and activate plug-ins in the target Dynamics 365 instance after the solution is imported. This attribute is optional, and if you do not specify not specify this attribute, by default the workflows are published and plug-ins are activated after the solution is imported on the target Dynamics 365 instance.  
+   - `publishworkflowsandactivateplugins`: Specify whether to publish workflows and activate plug-ins in the target Dynamics 365 instance after the solution is imported. This attribute is optional, and if you don't specify not specify this attribute, by default the workflows are published and plug-ins are activated after the solution is imported on the target Dynamics 365 instance.  
 
      You can add multiple solution file names in a package by adding as many `<configsolutionfile>` nodes. For example, if you want three solution files to be imported, add them as shown below:  
 
@@ -242,8 +242,8 @@ Next, update the HTML language specific files.
    |`filetype`|This value can be csv, xml, or zip.          |
    |`associatedmap`|Name of the Dataverse import data map to use with this file. If blank, attempts to use the system determined import data map name for this file.|
    |`importtoentity`| Can be the name of the exe in the zip file, a URL, or an .msi file to provide a link to invoke at the end of the process.|
-   |`datadelimiter`| Name of the data delimiter used in the import file. Valid values are singlequote or doublequotes.|
-   |`fielddelimiter`|Name of the field delimiter used in the import file. Valid values are comma or colon, or singlequote.|
+   |`datadelimiter`| Name of the data delimiter used in the import file. Valid values are single quote or double quotes.|
+   |`fielddelimiter`|Name of the field delimiter used in the import file. Valid values are comma or colon, or single quote.|
    |`enableduplicatedetection`|Indicates whether to enable duplicate detections rules on data import. Valid values are **true** or **false**.|
    |`isfirstrowheader`|Used to denote that the first row of the import file contains the field names. Valid values are `true` or `false`. |
    |`isrecordownerateam`|Indicates whether the owner of the record on import should be a team. Valid values are `true` or `false`.|
@@ -277,7 +277,7 @@ Next, update the HTML language specific files.
    |`importtoentity`|Can be the name of the exe in the zip file, a url, or an .msi file to provide a link to invoke at the end of the process.|  
 
     `<filesmapstoimport>` node  
-    This node contains an array of `<configmapimportfile>` nodes to import. The order of the map files in this node indicates the order in which they are imported. For information about data maps, see [Create data maps for import](/powerapps/developer/common-data-service/create-data-maps-for-import).  
+    This node contains an array of `<configmapimportfile>` nodes to import. The order of the map files in this node indicates the order in which they're imported. For information about data maps, see [Create data maps for import](/powerapps/developer/common-data-service/create-data-maps-for-import).  
 
     `<configimportmapfile>` node  
     Use this node under the `<filesmapstoimport>` node to provide information about an individual map file to import in Dataverse.  
@@ -289,7 +289,7 @@ Next, update the HTML language specific files.
    ```  
 
     `<cmtdatafiles>` node  
-    This node contains an array of `<cmtdatafile>` nodes that containslocalized version of the configuration data file to be imported.  
+    This node contains an array of `<cmtdatafile>` nodes that contains localized version of the configuration data file to be imported.  
 
     `<cmtdatafile>` node  
     Use this node under the `<cmtdatafiles>` node to specify the localized configuration data files along with locale ID (required) and user information map file (optional). For example:  
@@ -303,9 +303,9 @@ Next, update the HTML language specific files.
 
     You can define your custom logic in the `OverrideConfigurationDataFileLanguage` method (explained later) to import  a localized configuration data file instead of the default one (specified in crmmigdataimportfile) based on the locale ID (LCID) value specified using the runtime settings (explained later).  
 
-2. Click **Save All**.  
+2. Select **Save All**.  
 
-    The following represents the contents of a sample `ImportConfig.xml` file.  
+    The following xml represents the contents of a sample `ImportConfig.xml` file.  
 
    ```xml  
    <?xml version="1.0" encoding="utf-16"?>  
@@ -417,7 +417,7 @@ You can add custom code that executes before, during, and after the package is i
 
    2. Enter custom code to execute before the solutions are imported in  the override method definition of `PreSolutionImport` to specify whether to maintain or overwrite customizations while updating the specified solution in a target Dataverse instance, and whether to automatically activate plug-ins and workflows.  
 
-   3. Use the override method definition of `RunSolutionUpgradeMigrationStep` to perform data transformation or upgrade between two versions of a solution This method is called only if the solution you are importing is already present in the target Dataverse instance.  
+   3. Use the override method definition of `RunSolutionUpgradeMigrationStep` to perform data transformation or upgrade between two versions of a solution This method is called only if the solution you're importing is already present in the target Dataverse instance.  
 
         This function expects the following parameters:  
 
@@ -432,13 +432,13 @@ You can add custom code that executes before, during, and after the package is i
 
    4. Enter custom code to execute before the solution import completes in the override definition of the `BeforeImportStage` method. The sample data and some flat files for solutions specified in the `ImportConfig.xml` file are imported before the solution import completes.  
 
-   5. Override the currently-selected language for configuration data import using the override method definition of `OverrideConfigurationDataFileLanguage`. If the specified locale ID (LCID) of the specified language is not found in the list of available languages in the package, the default data file is imported.  
+   5. Override the currently selected language for configuration data import using the override method definition of `OverrideConfigurationDataFileLanguage`. If the specified locale ID (LCID) of the specified language isn't found in the list of available languages in the package, the default data file is imported.  
 
        You specify the available languages for the configuration data in the `<cmtdatafiles>` node in the `ImportConfig.xml` file. The default configuration data import file is specified in the `crmmigdataimportfile` attribute in the `ImportConfig.xml` file.  
 
-       Skipping data checks (<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> = true) can be effective here if you are sure that the target Dataverse instance does not contain any data.  
+       Skipping data checks (<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> = true) can be effective here if you're sure that the target Dataverse instance doesn't contain any data.  
 
-   6. Enter custom code to execute after the import completes in the override definition of `AfterPrimaryImport`>method. The remaining flat files that were not imported earlier, before the solution import started, are imported now.  
+   6. Enter custom code to execute after the import completes in the override definition of `AfterPrimaryImport`>method. The remaining flat files that weren't imported earlier, before the solution import started, are imported now.  
 
    7. Change the default name of your package folder to the package name that you want. To do so, rename the `PkgFolder` (or **PkgAssets**) folder in the **Solution Explorer** pane, and then edit the return value under the `GetImportPackageDataFolderName` property.  
 
@@ -463,7 +463,7 @@ You can add custom code that executes before, during, and after the package is i
       }  
       ```  
 
-       This returned value is the name of your package that will appear on the package selection page in the Dynamics 365 Package Deployer wizard.  
+       This returned value is the name of your package that appears on the package selection page in the Dynamics 365 Package Deployer wizard.  
 
    9. Change the package description by editing the return value under the `GetImportPackageDescriptionText` property.  
 
@@ -476,7 +476,7 @@ You can add custom code that executes before, during, and after the package is i
 
        ```  
 
-        This returned value is the package description that will appear alongside the package name on the on the package selection page in the Package Deployer wizard.  
+        This returned value is the package description that appears alongside the package name on the package selection page in the Package Deployer wizard.  
 
    10. Change the package long name by editing the return value under the `GetLongNameOfImport` property.  
 
@@ -502,24 +502,24 @@ You can add custom code that executes before, during, and after the package is i
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.IsRoleAssoicatedWithTeam(System.Guid,System.Guid)>|Function|Used to determine if a role is associated with a specified team.|
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.IsWorkflowActive(System.Guid)>|Function|Used to determine if a specified workflow is active. |
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.PackageLog>| Class Pointer|A pointer to the initialized logging interface for the package. This interface is used by a package to log messages and exceptions to the package log file.|
-   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RootControlDispatcher>|Property|A dispatcher interface used to allow your control to render its own UI during package deployment. Use this interface to wrap any UI elements or commands. It is important to check this variable for null values before using it as it may or may not be set to a value.  |
+   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RootControlDispatcher>|Property|A dispatcher interface used to allow your control to render its own UI during package deployment. Use this interface to wrap any UI elements or commands. It's important to check this variable for null values before using it as it might not be set to a value.  |
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.CrmSvc>|Property |A pointer to <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> class that allows for a package to address Dynamics 365 from within the package. Use this pointer to execute SDK methods and other actions in the overridden methods.|
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.DataImportBypass> |Property|Specify whether Dynamics 365 Package Deployer skips all data import operations such as importing Dataverse sample data, flat file data, and data exported from the Configuration Migration tool. Specify true or false. Default is `false`.|
-   | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |Property|Specify whether Dynamics 365 Package Deployer will bypass some of its safety checks, which helps in improving the import performance. Specify `true` or `false`. Default is `false`.<br /><br /> You should set this property to `true` only if the target Dataverse instance does not contain any data.|
+   | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |Property|Specify whether Dynamics 365 Package Deployer bypasses some of its safety checks, which helps in improving the import performance. Specify `true` or `false`. Default is `false`.<br /><br /> You should set this property to `true` only if the target Dataverse instance doesn't contain any data.|
 
 4. Save your project. The next step is to build the package.   
   
 ## Build and deploy  
 
-In the following sections we will describe how to build and deploy a package.
+The following sections describe how to build and deploy a package.
 
 ### Build
 
-Building your package is describe below depending on which tool you are using.
+Building your package is described below depending on which tool you're using.
 
 #### [Power Platform CLI](#tab/cli)
 
-To build a package created with the CLI, you could load the .csproj file into Visual Studio, but instead we are going to use the dotnet command and MSBuild. The example below assumes the working directory contains the *.csproj file.
+To build a package created with the CLI, you could load the .csproj file into Visual Studio, but instead we're going to use the dotnet command and MSBuild. The example below assumes the working directory contains the *.csproj file.
 
 ```bash
 > dotnet publish
@@ -535,7 +535,7 @@ You can optionally look at the details of the built package.
 
 #### [Power Platform tools](#tab/pptools)
 
-To build the package, simply press F5 in Visual Studio or select **Build** > **Build solution**.
+To build the package, press F5 in Visual Studio or select **Build** > **Build solution**.
 
 ---
 
@@ -552,7 +552,7 @@ Your package is made of the following files under the *\<Project>*\Bin\Debug fol
 
  After you create a package, you can deploy it on the Dataverse instance by using the Package Deployer tool, Windows PowerShell, or a CLI command.
 
-- To deploy using the Package Deployer tool, first download the tool as described in [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget). Next, follow the detailed information on package deployment in the topic [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).
+- To deploy using the Package Deployer tool, first download the tool as described in [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget). Next, follow the detailed information on package deployment in the article [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).
 
 - To deploy using the CLI, use the `pac package deploy` command.
 
@@ -578,7 +578,7 @@ When creating packages, developers must:
 When deploying packages, Dataverse administrators must:  
 
 - *Insist on signed package assemblies* so that you can track an assembly back to its source.  
-- *Test the package on a pre-production instance*, preferably a mirror image of the production instance, before running it on a production instance.  
+- *Test the package on a preproduction instance*, preferably a mirror image of the production instance, before running it on a production instance.  
 - *Back up the production instance* before deploying the package.  
 
 ### See also
