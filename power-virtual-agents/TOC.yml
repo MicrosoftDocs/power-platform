@@ -80,12 +80,14 @@
       items:
         - name: Manage data loss prevention for chatbots
           href: admin-data-loss-prevention.md
-        - name: Example 1 - Use DLP to block skills
-          href: dlp-example-1.md
-        - name: Example 2 - Use DLP to block HTTP requests
-          href: dlp-example-2.md
-        - name: Example 3 - Use DLP to require end-user authentication
+        - name: Example - Require end-user authentication
           href: dlp-example-3.md
+        - name: Example - Block Power Platform Connectors
+          href: dlp-example-4.md
+        - name: Example - Block HTTP requests
+          href: dlp-example-2.md
+        - name: Example - Block skills
+          href: dlp-example-1.md
     - name: Export and import bots using solutions
       href: authoring-export-import-bots.md
     - name: Regional settings and data locations for organizations
@@ -161,6 +163,8 @@
       items:
         - name: Key Concepts - Flows
           href: advanced-flow.md
+        - name: Use Power Automate connectors (Preview)
+          href: advanced-connectors.md
         - name: Create a flow
           href: advanced-flow-create.md
         - name: Call a flow as an action
