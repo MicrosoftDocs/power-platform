@@ -16,7 +16,7 @@ searchScope: "Power Virtual Agents"
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-With large AI language models, Microsoft Copilot Studio transforms how you build copilots. A copilot can significantly reducing manual authoring and configuration.
+With large AI language models, Microsoft Copilot Studio transforms how you build copilots. A copilot can significantly reduce manual authoring and configuration.
 
 - **Create an instantly useful copilot.** With no manual authoring of topics required, an "empty" copilot can respond to your users with relevant information.
 
@@ -39,9 +39,9 @@ With large AI language models, Microsoft Copilot Studio transforms how you build
 
 Copilot Studio uses a natural language understanding model to analyze the user's question and determine the right topic. Typically, [you create multiple topics](authoring-create-edit-topics.md) within a copilot to account for what a user might ask.
 
-Sometimes, a copilot user asks a question that has no built topic. By default, the copilot prompts the user to rephrase their query. If, after two prompts, the copilot still can't determine the user's intent, the copilot escalates to a live agent through the [system **Escalate** topic](authoring-system-topics.md).
+Sometimes, a copilot user asks a question that has no built topic. By default, the copilot prompts the user to rephrase their query. After two prompts, if the copilot still can't determine the user's intent, the copilot escalates to a live agent through the [system **Escalate** topic](authoring-system-topics.md).
 
-You can specify a [system **Fallback** topic](authoring-system-fallback-topic.md) to customize the response and actions the copilot takes, but this isn't always helpful for the user.
+You can specify a [system **Fallback** topic](authoring-system-fallback-topic.md) to customize the response and actions the copilot takes, but this topic isn't always helpful for the user.
 
 The **Boost conversations** option in Copilot Studio helps solve that issue by using the natural language processing capabilities of Azure OpenAI. OpenAI's GPT technology with [the AI already in Copilot Studio](advanced-ai-features.md) include transformer-based natural language understanding that helps the copilot to:
 
@@ -49,7 +49,7 @@ The **Boost conversations** option in Copilot Studio helps solve that issue by u
 - Find, collate, and parse relevant information from a URL you specify.
 - Create a plain language response for the copilot user.
 
-In other words, if the copilot doesn't have an answer for the user's question, it can get the information and create an answer "on-the-fly".
+In other words, if the copilot doesn't have an answer for the user's question, it can get the information and create an "on-the-fly" answer.
 
 See the [Boost conversations](nlu-boost-conversations.md) article for how to set up and use **Boost conversations**. You also learn how to select effective URLs.
 
@@ -57,7 +57,7 @@ See the [Boost conversations](nlu-boost-conversations.md) article for how to set
 
 A copilot author usually creates multiple, [individual topics](authoring-create-edit-topics.md), with each topic relating to an issue or action.
 
-Topic authoring can take a lot of time, which often requires specialized knowledge in conversational user experiences and deep technical or domain knowledge. These requirements aren't always possible in every organization. For example, [fusion teams](../power-platform/developer/fusion-development.md) work in multiple disciplines directly in the Copilot Studio authoring canvas.
+Topic authoring can take time, which often requires specialized knowledge in conversational user experiences and deep technical or domain knowledge. These requirements aren't always possible in every organization. For example, [fusion teams](../power-platform/developer/fusion-development.md) work in multiple disciplines directly in the Copilot Studio authoring canvas.
 
 The **Create with Copilot** option in the Copilot Studio canvas lets you describe what you want, then the AI produces a topic path that achieves your goal. Copilot Studio combines natural language understanding models with Azure OpenAI to:
 
