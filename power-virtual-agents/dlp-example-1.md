@@ -1,6 +1,6 @@
 ---
-title: "Use DLP to block skills in chatbots"
-description: "Block skills from being used in Microsoft Copilot Studio chatbots."
+title: "Use DLP to block skills in copilots"
+description: "Block skills from being used in Microsoft Copilot Studio copilots."
 keywords: "PVA"
 ms.date: 03/24/2023
 
