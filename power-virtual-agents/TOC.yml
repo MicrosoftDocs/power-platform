@@ -34,6 +34,8 @@
       href: nlu-boost-conversations.md
     - name: Generative answers with Search and summarize
       href: nlu-boost-node.md
+    - name: Use prompt modification to provide custom instructions to your copilot
+      href: nlu-generative-answers-prompt-modification.md
     - name: Use a Bing Custom Search to search a number of websites
       href: nlu-generative-answers-bing.md
     - name: Use a connection to Azure OpenAI on your data
@@ -58,6 +60,8 @@
       href: copilot-ai-plugins.md
     - name: Use plugin actions in Microsoft Copilot Studio
       href: advanced-plugin-actions.md
+    - name: Use Generative Actions in Microsoft Copilot Studio
+      href: advanced-generative-actions.md
     - name: Microsoft Copilot Studio architecture
       href: copilot-plugins-architecture.md
 - name: Administer and manage
@@ -245,6 +249,8 @@
       href: analytics-sessions-transcripts.md
     - name: Analyze topic usage
       href: analytics-topic-details.md
+    - name: Analyze and manage billed messages and capacity
+      href: requirements-messages-management.md
     - name: Analyze billed session information
       href: analytics-billed-sessions.md
 - name: Configure and customize
