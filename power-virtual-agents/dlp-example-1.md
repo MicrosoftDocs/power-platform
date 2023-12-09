@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Data loss prevention example - Block skills in Microsoft Copilot Studio chatbots
+# Data loss prevention example - Block skills in Microsoft Copilot Studio copilots
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
