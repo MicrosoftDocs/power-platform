@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 
-You can use data loss prevention (DLP) policies to prevent bot makers from configuring HTTP requests. This can help prevent data exfiltration.
+You can use data loss prevention (DLP) policies to prevent copilot authors from configuring connectors. This can help prevent data exfiltration.
 
 See the [Configure data loss prevention for Microsoft Copilot Studio](admin-data-loss-prevention.md) article for information about other DLP policy configurations.
 
