@@ -70,7 +70,7 @@ In the Power Platform admin center, administrators can decide whether the policy
 
 Auto-claim policies support individual license assignment, which means that licenses are assigned to individual users. If your organization already has an existing process for license assignment, administrators can still make use of the auto-claim policy while maintaining their current workflow. 
 
-Administrators can review the list of users to whom licenses were assigned through the auto-claim policy in the Microsoft 365 admin center. They can then make changes, as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to leverage Microsoft Entra group-based licensing. For more information about group based licensing, see [Group-based licensing additional scenarios](/entra/identity/users/licensing-group-advanced).
+Administrators can review the list of users to whom licenses were assigned through the auto-claim policy in the Microsoft 365 admin center. Then, they can make changes, as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to leverage Microsoft Entra group-based licensing. For more information about group based licensing, go to [Group-based licensing additional scenarios](/entra/identity/users/licensing-group-advanced).
 
 Here are some commands that can assist in unassigning licenses and adding users to the required Microsoft Entra group.
 
