@@ -15,8 +15,6 @@ search.audienceType:
   - admin
 ---
 
-<!-- Incomplete alt text in line 69. -->
-
 
 # Frequently asked questions about Power Automate licensing
 
@@ -66,7 +64,7 @@ With one Process license, you can run multiple cloud flows by queueing them. For
 
 In the following screenshot, all cloud flows are covered by one Process license, as they have a desktop flow running on the same machine. Any parent, child flows, in context flows of these cloud flows are also covered by the Process license on the machine.
 
-:::image type="content" source="../media/faqs/many-flows-one-machine.png" alt-text="Screenshot of >":::
+:::image type="content" source="../media/faqs/many-flows-one-machine.png" alt-text="All cloud flows are covered by one Process license, as they have a desktop flow running on the same machine.":::
 
 ### My DPA process has multiple cloud flows. Will I need multiple Process licenses?
 
