@@ -694,6 +694,26 @@
       "source_path": "power-platform/admin/data-integration-gdpr-dsr-guide.md",
       "redirect_url": "/power-platform/admin/data-integration-privacy-dsr-guide",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/solution-templates/hr/awards-and-recognition/install-and-configure.md",
+      "redirect_url": "/power-platform/solution-templates/hr/awards-and-recognition/install-and-set-up",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/solution-templates/hr/employee-kudos/install-and-configure.md",
+      "redirect_url": "/power-platform/solution-templates/hr/employee-kudos/install-and-set-up",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/solution-templates/hr/onboarding-buddy/install-and-configure.md",
+      "redirect_url": "/power-platform/solution-templates/hr/onboarding-buddy/install-and-set-up",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/solution-templates/it/hardware-request-and-management/install-and-configure.md",
+      "redirect_url": "/power-platform/solution-templates/it/hardware-request-and-management/install-and-set-up",
+      "redirect_document_id": "false"
     }
   ]
 }
