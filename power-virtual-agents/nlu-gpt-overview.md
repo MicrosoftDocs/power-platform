@@ -57,7 +57,7 @@ See the [Boost conversations](nlu-boost-conversations.md) article for how to set
 
 A copilot author usually creates multiple, [individual topics](authoring-create-edit-topics.md), with each topic relating to an issue or action.
 
-Topic authoring can take time, which often requires specialized knowledge in conversational user experiences and deep technical or domain knowledge. These requirements aren't always possible in every organization. For example, [fusion teams](../power-platform/developer/fusion-development.md) work in multiple disciplines directly in the Copilot Studio authoring canvas.
+Topic authoring can take time, which often requires specialized knowledge in conversational user experiences and deep technical or domain knowledge. These requirements aren't always possible in every organization. For example, [fusion teams](/power-platform/developer/fusion-development) work in multiple disciplines directly in the Copilot Studio authoring canvas.
 
 The **Create with Copilot** option in the Copilot Studio canvas lets you describe what you want, then the AI produces a topic path that achieves your goal. Copilot Studio combines natural language understanding models with Azure OpenAI to:
 
