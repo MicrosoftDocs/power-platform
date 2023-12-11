@@ -33,7 +33,7 @@ Make sure you have the System Administrator or System Customizer security role o
 ## Copilot (preview)
 
 > [!NOTE]
-> Turning off Copilot for your tenant will only disable Copilot for makers. It won't disable [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot), [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot), or [Copilot in Dynamics 365 Sales](https://learn.microsoft.com/en-us/dynamics365/sales/enable-setup-copilot). 
+> Turning off Copilot for your tenant will only disable [Copilot for makers](https://learn.microsoft.com/en-ca/power-apps/maker/canvas-apps/ai-conversations-create-app). It won't disable [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot), [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot), or [Copilot in Dynamics 365 Sales](https://learn.microsoft.com/en-us/dynamics365/sales/enable-setup-copilot). 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
