@@ -16,7 +16,6 @@ ms.contributors:
 - v-kgallagher
 ---
 
-<!-- Should the question in line 47 say "Microsoft Power Platform"? In line 217, the second sentence reads as if it's missing something after "providing". Should line 716 say just "Finance and operations"? -->
 
 
 # Power Platform licensing FAQs
@@ -45,7 +44,7 @@ Yes, we have a free Developer Plan to learn and build skills on Power Apps, Powe
 
 You can buy more data storage, file storage, and flow runs. To learn more, go to [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
-### Who can buy Microsoft Platform apps plans?
+### Who can buy Microsoft Power Platform apps plans?
 
 Any customer can sign up for a [free trial](try-powerapps-dynamics-365.md). Microsoft 365 admins can buy Power Platform apps plans for their teams or organization. Contact your Microsoft 365 admin when you're ready to buy.
 
@@ -722,7 +721,7 @@ Premium connectors list:
 - Azure Table Storage
 - Dynamics 365
 - Dynamics 365 Customer Insights
-- Dynamics 365 Finance & Operations
+- Finance and operations
 - Dynamics 365 Sales Insights
 - Dynamics 365 Business Central
 - Dynamics 365 Business Central (on-premises)
