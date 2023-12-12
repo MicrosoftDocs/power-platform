@@ -4,8 +4,8 @@ description: "App builders must be members of Microsoft Partner Network (MPN) to
 ms.date: 04/03/2023
 ms.reviewer: pehecke
 ms.topic: article
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 ms.subservice: developer
 search.audienceType: 
   - developer
