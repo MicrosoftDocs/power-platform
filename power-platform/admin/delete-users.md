@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 12/01/2023
+ms.date: 12/12/2023
 search.audienceType: 
   - admin
 ---
@@ -19,8 +19,9 @@ This article covers the various levels and methods of user deletion in Microsoft
 Watch this video for a detailed walkthrough of how to delete users from your environment:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE5ddyh]
+
 > [!NOTE]
-> Before deleting a user from an environment, you must delete them from Microsoft 365 admin center or Microsoft Entra ID.
+> Before deleting a user from an environment, you must delete the user from Microsoft 365 admin center or Microsoft Entra ID.
 
 ## Delete users in Microsoft 365 admin center
 
