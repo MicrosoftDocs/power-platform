@@ -18,6 +18,10 @@ ms.service: power-virtual-agents
 
 A _billed session_ is an interaction between a customer and a bot. It represents one unit of consumption. The purchase of a Microsoft Copilot Studio license includes a specific number of billed sessions. Microsoft Copilot Studio pools this capacity across the entire tenant. How much of your capacity you've consumed isn't reported at the tenant level. However, you can view consumption for individual bots.
 
+> [!NOTE]
+> 
+> This article is for billed sessions in the legacy Power Virtual Agents license. This legacy license is no longer avilable for purchase starting on January 1, 2024.
+
 A billed session begins when a user topic or premium functionality is triggered. A billed session ends when one of the following conditions is met:
 
 - The user ends the chat session.  
