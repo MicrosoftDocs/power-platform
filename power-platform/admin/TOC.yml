@@ -662,14 +662,14 @@
               href: view-self-service-capacity.md
             - name: Free up storage
               items:
+                - name: Manage PrincipalObjectAccess storage
+                  href: manage-principalobjectaccess-storage.md
                 - name: Recover storage space
                   href: free-storage-space.md
                 - name: Clean up AsyncOperationBase and WorkflowLogBase tables
                   href: cleanup-asyncoperationbase-table.md
             - name: Add storage capacity
               href: add-storage.md
-            - name: Manage PrincipalObjectAccess storage
-              href: manage-principalobjectaccess-storage.md
             - name: Access storage with SAS token
               href: storage-sas-token.md
         - name: Resources
