@@ -5,26 +5,28 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/22/2022
+ms.date: 12/05/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- royshea 
 ---
 
 # Responding to Data Subject Rights (DSR) requests to delete Power Apps customer data
 
 The "right to erasure" by the removal of personal data from an organization's customer data is a key protection in the European Union (EU) General Data Protection Regulation (GDPR). Removing personal data includes removing system-generated logs but not audit log information.
 
-Power Apps allows users to build line-of-business applications that are a critical part of your organization's day-to-day operations. When a user leaves your organization, you'll need to manually review and determine whether to delete certain data and resources that the user created. Other personal data will be automatically deleted whenever the user's account is deleted from Microsoft Entra ID.
+Power Apps allows users to build line-of-business applications that are a critical part of your organization's day-to-day operations. When a user leaves your organization, you'll need to manually review and determine whether to delete certain data and resources that the user created. Other personal data will be automatically deleted whenever the user's account is deleted from Microsoft Entra.
 
 Here is the breakdown between which personal data will be automatically deleted and which data will require your manual review and deletion:
 
-Requires manual review and deletion |    Automatically deleted when the user is deleted from Microsoft Entra ID
+Requires manual review and deletion |    Automatically deleted when the user is deleted from Microsoft Entra
 | --- | ---| 
 | Environment\** | Gateway| 
 | Environment permissions\*** | Gateway permissions| 
-| Canvas app\** | Power Apps notifications| 
+| Canvas app / Custom page\** | Power Apps notifications| 
 | Canvas-app permissions | Power Apps user settings| 
 | Connection\** | Power Apps user-app settings| 
 | Connection permissions | | 
@@ -47,7 +49,7 @@ Here is the breakdown of which experiences are available to delete each type of 
 |--- | --- | ---|
 |Environment    | Power Platform admin center |     Power Apps cmdlets|
 |Environment permissions**    | Power Platform admin center | Power Apps cmdlets|
-|Canvas app    | Power Platform admin center <br /> Power Apps| Power Apps cmdlets|
+|Canvas app / Custom page   | Power Platform admin center <br /> Power Apps| Power Apps cmdlets|
 |Canvas-app permissions    | Power Platform admin center | Power Apps cmdlets|
 |Connection | | App creator: Available <br> Admin: Available|
 |Connection permissions | | App creator: Available <br> Admin: Available|
@@ -62,7 +64,7 @@ Here is the breakdown of which experiences are available to delete each type of 
 Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps](https://make.powerapps.com) or [PowerShell cmdlets for app creators](./powerapps-powershell.md).
 
 #### Unmanaged tenant
-If you are a member of an [unmanaged tenant](/azure/active-directory/domains-admin-takeover), meaning that your Microsoft Entra tenant does not have global administrator, then you will still be able to follow the steps outlined in this art to remove your own personal data.  However, since there is no global administrator for your tenant you will need to follow the instructions outlined in [Step 11: Delete the user from Microsoft Entra ID](#step-11-delete-the-user-from-azure-active-directory) below to delete your own account from the tenant.
+If you are a member of an [unmanaged tenant](/azure/active-directory/domains-admin-takeover), meaning that your Microsoft Entra tenant does not have global administrator, then you will still be able to follow the steps outlined in this art to remove your own personal data.  However, since there is no global administrator for your tenant you will need to follow the instructions outlined in [Step 11: Delete the user from Microsoft Entra](#step-11-delete-the-user-from-microsoft-entra) below to delete your own account from the tenant.
 
 In order to determine if you are a member of an unmanaged tenant please follow these steps:
 
@@ -87,7 +89,7 @@ To perform the administrative operations outlined in this document using the Pow
 
 * A paid Power Apps plan or a Power Apps plan trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
-* [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or [Microsoft Entra Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
+* [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
 
 ## Step 1: Delete or reassign all environments created by the user
 As an administrator, you have two decisions to make when processing a DSR delete request for each environment that the user created:
@@ -120,7 +122,7 @@ An admin can review and delete environments created by a specific user by follow
 > ![Delete environment.](media/environment-delete.png "Delete environment")
 
 ### Give access to a user's environments using PowerShell
-An administrator can assign themselves (or another user within their organization) access to all environments created by a user by using the **Set-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](./powerapps-powershell.md):
+An administrator can assign themselves (or another user within their organization) access to all environments created by a user by using the **Set-AdminPowerAppEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
@@ -128,24 +130,24 @@ $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 $myUserId = $global:currentSession.UserId
 
 #Assign yourself as an admin to each environment created by the user
-Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Set-AdminEnvironmentRoleAssignment -RoleName EnvironmentAdmin -PrincipalType User -PrincipalObjectId $myUserId
+Get-AdminPowerAppEnvironment -CreatedBy $deleteDsrUserId | Set-AdminPowerAppEnvironmentRoleAssignment -RoleName EnvironmentAdmin -PrincipalType User -PrincipalObjectId $myUserId
 
 #Retrieve the environment role assignments to confirm
-Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Get-AdminEnvironmentRoleAssignment
+Get-AdminPowerAppEnvironment -CreatedBy $deleteDsrUserId | Get-AdminPowerAppEnvironmentRoleAssignment
 ```
 
 > [!IMPORTANT]
 > This function works only in environments that do not have an environment of a database in Dataverse.
 
 ### Delete environments created by a user using PowerShell
- An administrator can delete all environments created by a user by using the **Remove-AdminEnvironment** function in the [PowerShell cmdlets for Power Apps administrators](./powerapps-powershell.md):
+ An administrator can delete all environments created by a user by using the **Remove-AdminPowerAppEnvironment** function in the [PowerShell cmdlets for Power Apps administrators](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
 # Retrieve all environments created by the user and then delete them
-Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Remove-AdminEnvironment
+Get-AdminPowerAppEnvironment -CreatedBy $deleteDsrUserId | Remove-AdminPowerAppEnvironment
 ```
 
 ## Step 2: Delete the user's permissions to all other environments
@@ -159,7 +161,7 @@ An administrator can delete a user's environment permissions starting from the [
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
 
-   You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Microsoft Entra Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
+   You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments that have been created within your organization.
 
 2. If your environment does not have a Dataverse database, you will see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
 
@@ -169,26 +171,26 @@ An administrator can delete a user's environment permissions starting from the [
 3. Select a user, select **Remove** to remove their permission, and then select **Continue**.
 
 #### PowerShell
-An administrator can delete all environment role assignments for a user across all environments without a Dataverse database by using the **Remove-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](./powerapps-powershell.md):
+An administrator can delete all environment role assignments for a user across all environments without a Dataverse database by using the **Remove-AdminPowerAppEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
 #find all environment role assignments for the user for environments without a Dataverse database and delete them
-Get-AdminEnvironmentRoleAssignment -UserId $deleteDsrUserId | Remove-AdminEnvironmentRoleAssignment
+Get-AdminPowerAppEnvironmentRoleAssignment -UserId $deleteDsrUserId | Remove-AdminPowerAppEnvironmentRoleAssignment
 ```
 
 > [!IMPORTANT]
 > This function works only for environments that do not have an environment of a Dataverse database.
 
 ### For environments WITH a Dataverse database
-With the introduction of the Dataverse, if a database is created within the environment, these "role assignments" are stored as records within the environment of that database. Please refer to the following documentation on how to remove personal data from an environment of a database in Dataverse: Common Data Serviice User personal data removal
+With the introduction of the Dataverse, if a database is created within the environment, these "role assignments" are stored as records within the environment of that database. Please refer to the following documentation on how to remove personal data from an environment of a database in Dataverse: Common Data Service User personal data removal
 
 ## Step 3: Delete or reassign all canvas apps owned by a user
 
 ### Reassign a user's canvas apps using the Power Apps Admin PowerShell cmdlets
-If an admin decides not to delete a user's canvas apps, they can reassign the apps owned by a user by using the **Set-AdminAppOwner** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
+If an admin decides not to delete a user's canvas apps, they can reassign the apps owned by a user by using the **Set-AdminPowerAppOwner** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
@@ -196,7 +198,7 @@ $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 $newAppOwnerUserId = "72c272b8-14c3-4f7a-95f7-a76f65c9ccd8"
 
 #find all apps owned by the DSR user and assigns them a new owner
-Get-AdminApp -Owner $deleteDsrUserId | Set-AdminAppOwner -AppOwner $newAppOwnerUserId
+Get-AdminPowerApp -Owner $deleteDsrUserId | Set-AdminPowerAppOwner -AppOwner $newAppOwnerUserId
 ```
 
 ### Delete a user's canvas app using the Power Apps site
@@ -207,7 +209,7 @@ An admin can delete apps created by a user by following these steps:
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
 
-   You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Microsoft Entra Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
+   You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments that have been created within your organization.
 
 2. Under **Resources**, select **Power Apps**. 
 
@@ -221,7 +223,7 @@ Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
 #find all apps owned by the DSR user and deletes them
-Get-AdminApp -Owner "0ecb1fcc-6782-4e46-a4c4-738c1d3accea" | Remove-AdminApp
+Get-AdminPowerApp -Owner $deleteDsrUserId | Remove-AdminPowerApp
 ```
 
 ## Step 4: Delete the user's permissions to canvas apps
@@ -234,14 +236,14 @@ Whenever an app is shared with a user, Power Apps stores a record called a "role
 To delete user permissions to a canvas app, see [Preview: Share a model-driven app](/powerapps/maker/model-driven-apps/share-model-driven-app). For step 5, remove rather than add a role from the list.
 
 ### PowerShell cmdlets for admins
-An admin can delete all of a user's canvas-app role assignments by using the **Remove-AdminAppRoleAssignmnet** function in the [Power Apps Admin PowerShell cmdlets](./powerapps-powershell.md):
+An admin can delete all of a user's canvas-app role assignments by using the **Remove-AdminPowerAppRoleAssignment** function in the [Power Apps Admin PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
 #find all app role assignments for the DSR user and deletes them
-Get-AdminAppRoleAssignment -UserId $deleteDsrUserId | Remove-AdminAppRoleAssignment
+Get-AdminPowerAppRoleAssignment -UserId $deleteDsrUserId | Remove-AdminPowerAppRoleAssignment
 ```
 
 ## Step 5: Delete connections created by a user
@@ -258,14 +260,14 @@ Get-AdminPowerAppConnection | Remove-AdminPowerAppConnection
 ```
 
 ### PowerShell cmdlets for Power Apps administrators
-An admin can delete all of a user's connections by using the **Remove-AdminConnection** function in the [Power Apps Admin PowerShell cmdlets](./powerapps-powershell.md):
+An admin can delete all of a user's connections by using the **Remove-AdminPowerAppConnection** function in the [Power Apps Admin PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
 #Retrieves all connections for the DSR user and deletes them
-Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection
+Get-AdminPowerAppConnection -CreatedBy $deleteDsrUserId | Remove-AdminPowerAppConnection
 ```
 
 ## Step 6: Delete the user's permissions to shared connections
@@ -283,65 +285,64 @@ Get-AdminPowerAppConnectionRoleAssignment | Remove-AdminPowerAppConnectionRoleAs
 > Owner role assignments cannot be deleted without deleting the connection resource.
 
 ### PowerShell cmdlets for admins
-An admin can delete all of a user's connection role assignments by using the **Remove-AdminConnectionRoleAssignment** function in the [Power Apps Admin PowerShell cmdlets](./powerapps-powershell.md):
+An admin can delete all of a user's connection role assignments by using the **Remove-AdminPowerAppConnectionRoleAssignment** function in the [Power Apps Admin PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
 #Retrieves all connection role assignments for the DSR user and deletes them
-Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectionRoleAssignment
+Get-AdminPowerAppConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminPowerAppConnectionRoleAssignment
 ```
 
 ## Step 7: Delete custom connectors created by the user
 Custom Connectors supplement the existing out of box connectors and allow for connectivity to other APIs, SaaS and custom-developed systems. You may want to transfer Custom Connector ownership to other users in the organization or delete the Custom Connector.
 
 ### PowerShell cmdlets for app creators
-A user can delete all of their custom connectors by using the **Remove-ConnectionRoleAssignment** function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
+A user can delete all of their custom connectors by using the **Remove-AdminPowerAppConnector** function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 
 #Retrieves all custom connectors for the calling user and deletes them
-Get-ConnectionRoleAssignment -FilterNonCustomConnectors | Remove-ConnectionRoleAssignment
-
+Get-AdminPowerAppConnector | Remove-AdminPowerAppConnector
 ```
 
 ### PowerShell cmdlets for admins
-An admin can delete all custom connectors created by a user using the **Remove-AdminConnector** function in the [Power Apps Admin PowerShell cmdlets](./powerapps-powershell.md):
+An admin can delete all custom connectors created by a user using the **Remove-AdminPowerAppConnector** function in the [Power Apps Admin PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
 #Retrieves all custom connectors created by the DSR user and deletes them
-Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
+Get-AdminPowerAppConnector -CreatedBy $deleteDsrUserId | Remove-AdminPowerAppConnector
 ```
 
 ## Step 8: Delete the user's permissions to shared custom connectors
 
 ### PowerShell cmdlets for app creators
-A user can delete all of their connector role assignments for shared custom connectors with the **Remove-ConnectorRoleAssignment** function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
+A user can delete all of their connector role assignments for shared custom connectors with the **Remove-AdminPowerAppConnectorRoleAssignment** function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 
 #Retrieves all connector role assignments for the calling users and deletes them
-Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
+Get-AdminPowerAppConnectorRoleAssignment | Remove-AdminPowerAppConnectorRoleAssignment
 ```
 
 > [!NOTE]
 > Owner role assignments cannot be deleted without deleting the connection resource.
 
 ### PowerShell cmdlets for admins
-An admin can delete all custom connector role assignments for a user using the **Remove-AdminConnectorRoleAssignment** function in the [Power Apps Admin PowerShell cmdlets](./powerapps-powershell.md):
+An admin can delete all custom connector role assignments for a user using the **Remove-AdminPowerAppConnectorRoleAssignment** function in the [Power Apps Admin PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
 #Retrieves all custom connector role assignments for the DSR user and deletes them
-Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectorRoleAssignment
+Get-AdminPowerAppConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminPowerAppConnectorRoleAssignment
 ```
 
 ## Step 9: Delete the user's personal data in Power Automate
@@ -358,8 +359,8 @@ For guidance on how to respond to DSRs for users who use Dataverse, see [Respond
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.
 
-## Step 11: Delete the user from Microsoft Entra ID
-Once the above steps have been complete the final step is to delete the user's account for Microsoft Entra ID.
+## Step 11: Delete the user from Microsoft Entra
+Once the above steps have been complete the final step is to delete the user's account for Microsoft Entra.
 
 ### Managed tenant
 As an admin of a managed Microsoft Entra tenant you can delete the user's account by following the steps outlined in the Azure Data Subject Request GDPR documentation that can be found on the [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).

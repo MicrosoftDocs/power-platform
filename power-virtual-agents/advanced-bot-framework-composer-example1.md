@@ -1,6 +1,6 @@
 ---
 title: "Use Bot Framework Composer adaptive cards in chatbots"
-description: "Use Bot Framework Composer to add Adaptive Cards to your Power Virtual Agents chatbot."
+description: "Use Bot Framework Composer to add Adaptive Cards to your Microsoft Copilot Studio chatbot."
 keywords: "composer, adaptive card"
 ms.date: 03/24/2023
 
@@ -14,25 +14,27 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Example 1 - Show an Adaptive Card in Power Virtual Agents
+# Example 1 - Show an Adaptive Card in Microsoft Copilot Studio
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 [!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
 
-Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
+Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Microsoft Copilot Studio bot.
 
-In this example, you'll learn how to show an Adaptive Card in Power Virtual Agents by using Composer.
+In this example, you'll learn how to show an Adaptive Card in Microsoft Copilot Studio by using Composer.
 
 [!INCLUDE [Composer License](includes/composer-license.md)]
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Introduction to Bot Framework Composer](/composer/introduction).
 - [Composer fundamentals](advanced-bot-framework-composer-fundamentals.md).
 
 ## Create a new topic
 
-1. In Power Virtual Agents, create a new bot named `Contoso Meal Delivery Service`.
+1. In Microsoft Copilot Studio, create a new bot named `Contoso Meal Delivery Service`.
 
 1. Go to the **Topics** page and create a new topic called `Meal delivery options`.
 
@@ -61,7 +63,7 @@ In this example, you'll learn how to show an Adaptive Card in Power Virtual Agen
 
 1. Select **Save**.
 
-:::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
+:::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Dialog2.png" alt-text="Microsoft Copilot Studio variable.":::
 
 ## Create an adaptive card
 
@@ -240,40 +242,40 @@ Next, you'll display meal choice images that are available in the user's city us
     - ${AdaptiveCardMeals(virtualagent.user_city)}
     ```
 
-    Power Virtual Agents global variables are accessed in Composer by using the `virtualagent` scope. This scope won't appear in Composer's property reference menu, but you can access it by entering an expression directly.
+    Microsoft Copilot Studio global variables are accessed in Composer by using the `virtualagent` scope. This scope won't appear in Composer's property reference menu, but you can access it by entering an expression directly.
 
-    In this example, `${virtualagent.user_city}` refers to the `user_city` global variable that was created in the Power Virtual Agents bot.
+    In this example, `${virtualagent.user_city}` refers to the `user_city` global variable that was created in the Microsoft Copilot Studio bot.
 
     :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_AddResponse.png" alt-text="Composer Begin Dialog - add Send a response action.":::
 
 ## Publish your content
 
-1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-power-virtual-agents) to make it available in your Power Virtual Agents bot.
+1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-microsoft-copilot-studio) to make it available in your Microsoft Copilot Studio bot.
 
     [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
-1. Go to the Power Virtual Agents **Topics** page to see your new **Meals** topic.
+1. Go to the Microsoft Copilot Studio **Topics** page to see your new **Meals** topic.
 
-    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_in_PVA_Topics.png" alt-text="Power Virtual Agents Topics page - new Bot Framework dialog.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_in_PVA_Topics.png" alt-text="Microsoft Copilot Studio Topics page - new Bot Framework dialog.":::
 
 1. Open the **Meal delivery options** topic.
 
 1. Under the **Question** node, select **Add node** (**+**). Select **Redirect to another topic** then choose **Meals**.
 
-    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_MealsDelivery_RedirectToMeals.png" alt-text="Power Virtual Agents - redirect to Bot Framework dialog.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_MealsDelivery_RedirectToMeals.png" alt-text="Microsoft Copilot Studio - redirect to Bot Framework dialog.":::
 
 1. Select **Save** to save the changes to your topic.
 
 ## Test your bot
 
-To test your changes in Power Virtual Agents, open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `What meals do you deliver?` to start your conversation.
+To test your changes in Microsoft Copilot Studio, open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `What meals do you deliver?` to start your conversation.
 
 Your bot will trigger the **Meal delivery options** topic, which asks the user for their current city. Then the bot will redirect to the Composer dialog **Meals** to display an Adaptive Card.
 
-:::image type="content" source="media/advanced-bot-framework-composer-example1/Example1_cropped.png" alt-text="Power Virtual Agents Example 1 test.":::
+:::image type="content" source="media/advanced-bot-framework-composer-example1/Example1_cropped.png" alt-text="Microsoft Copilot Studio Example 1 test.":::
 
 ## Next Steps
 
-[Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md).
+[Example 2 - Display a multi-select options list in Microsoft Copilot Studio](advanced-bot-framework-composer-example2.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,26 +1,22 @@
-- name: Power Virtual Agents documentation
+- name: Microsoft Copilot Studio documentation
   href: index.yml
 - name: Overview
   items:
-    - name: What is Power Virtual Agents
-      href: fundamentals-what-is-power-virtual-agents.md
-    - name: Power Virtual Agents portal
-      href: fundamentals-what-is-power-virtual-agents-portal.md
+    - name: What is Microsoft Copilot Studio
+      href: fundamentals-what-is-copilot-studio.md
     - name: Compliance offerings
       href: admin-certification.md
+    - name: Security and governance in Copilot Studio
+      href: security-and-governance.md
     - name: Quotas, limits, and configuration values
       href: requirements-quotas.md
-    - name: What's new in Power Virtual Agents
-      items:
-        - name: Migrate to the unified canvas
-          href: unified-authoring-conversion.md
-        - name: Quickstart for what's new
-          href: quickstart-preview.md
-        - name: Key concepts for Composer users
-          href: composer-concepts-preview.md
+    - name: Migrate to the unified canvas
+      href: unified-authoring-conversion.md
+    - name: Key concepts for Composer users
+      href: composer-concepts-preview.md
 - name: Get started
   items:
-    - name: Get access to Power Virtual Agents
+    - name: Get access to Microsoft Copilot Studio
       href: requirements-licensing-subscriptions.md
     - name: Use prebuilt chatbot templates in Microsoft Teams
       href: fundamentals-templates.md
@@ -28,18 +24,18 @@
       href: fundamentals-get-started.md
     - name: Community help and support
       href: fundamentals-support.md
-- name: AI capabilities in Power Virtual Agents
+- name: Generative AI in Microsoft Copilot Studio
   items:
     - name: AI-based chatbot authoring overview
       href: nlu-gpt-overview.md
     - name: Quickstart guide for building bots with GPT
       href: nlu-gpt-quickstart.md
-    - name: Use plugin actions in Power Virtual Agents (preview)
-      href: advanced-plugin-actions.md
     - name: Generative answers
       href: nlu-boost-conversations.md
     - name: Generative answers with Search and summarize
       href: nlu-boost-node.md
+    - name: Use prompt modification to provide custom instructions to your copilot
+      href: nlu-generative-answers-prompt-modification.md
     - name: Use a Bing Custom Search to search a number of websites
       href: nlu-generative-answers-bing.md
     - name: Use a connection to Azure OpenAI on your data
@@ -54,26 +50,44 @@
       href: nlu-authoring.md
     - name: AI features for Teams and Classic bots
       href: advanced-ai-features.md
+- name: Expand copilots with plugins
+  items:
+    - name: Create and configure copilot plugins (preview)
+      href: copilot-plugins-overview.md
+    - name: Create conversational plugins for Microsoft Copilot
+      href: copilot-conversational-plugins.md
+    - name: Create AI plugins for Microsoft Copilot
+      href: copilot-ai-plugins.md
+    - name: Use plugin actions in Microsoft Copilot Studio
+      href: advanced-plugin-actions.md
+    - name: Use Generative Actions in Microsoft Copilot Studio
+      href: advanced-generative-actions.md
+    - name: Microsoft Copilot Studio architecture
+      href: copilot-plugins-architecture.md
 - name: Administer and manage
   items:
     - name: Assign licenses
       href: requirements-licensing.md
-    - name: Power Virtual Agents for US Government customers
+    - name: Microsoft Copilot Studio for US Government customers
       href: requirements-licensing-gcc.md
     - name: Sign up for a trial account
       href: sign-up-individual.md
     - name: Working with environments
       href: environments-first-run-experience.md
+    - name: Configure data movement across geographic locations
+      href: manage-data-movement-outside-us.md
     - name: Apply and configure data loss prevention policies
       items:
         - name: Manage data loss prevention for chatbots
           href: admin-data-loss-prevention.md
-        - name: Example 1 - Use DLP to block skills
-          href: dlp-example-1.md
-        - name: Example 2 - Use DLP to block HTTP requests
-          href: dlp-example-2.md
-        - name: Example 3 - Use DLP to require end-user authentication
+        - name: Example - Require end-user authentication
           href: dlp-example-3.md
+        - name: Example - Block Power Platform Connectors
+          href: dlp-example-4.md
+        - name: Example - Block HTTP requests
+          href: dlp-example-2.md
+        - name: Example - Block skills
+          href: dlp-example-1.md
     - name: Export and import bots using solutions
       href: authoring-export-import-bots.md
     - name: Regional settings and data locations for organizations
@@ -112,6 +126,8 @@
       href: authoring-test-bot.md
     - name: Supported languages
       href: authoring-language-support.md
+    - name: Configure and create multilingual chatbots (Preview)
+      href: multilingual.md
     - name: Troubleshoot error codes
       href: error-codes.md
 - name: Enhance and improve
@@ -147,6 +163,8 @@
       items:
         - name: Key Concepts - Flows
           href: advanced-flow.md
+        - name: Use Power Automate connectors (Preview)
+          href: advanced-connectors.md
         - name: Create a flow
           href: advanced-flow-create.md
         - name: Call a flow as an action
@@ -165,6 +183,8 @@
       href: publication-add-bot-to-power-pages.md
     - name: Add bot to Microsoft Teams
       href: publication-add-bot-to-microsoft-teams.md
+    - name: Create a privacy statement and terms of use for Teams
+      href: publication-terms-of-use-teams.md
     - name: Add bot to Facebook
       href: publication-add-bot-to-facebook.md
     - name: Add bot to mobile or custom apps
@@ -173,7 +193,23 @@
       href: publication-connect-bot-to-azure-bot-service-channels.md
     - name: Integrate with question answering
       href: integrate-with-question-answering.md
-    - name: Integrate with conversational language understanding (preview)
+    - name: Integrate and hand off conversations
+      items:
+        - name: Create copilots for customer engagement and hand off
+          href: customer-copilot-overview.md
+        - name: Hand off to a generic engagement hub
+          href: configure-generic-handoff.md  
+        - name: Hand off to Dynamics 365 Customer Service
+          href: configuration-hand-off-omnichannel.md
+        - name: Hand off to Genesys
+          href: customer-copilot-genesys-handoff.md
+        - name: Hand off to LivePerson
+          href: customer-copilot-liveperson-handoff.md
+        - name: Hand off to Salesforce Einstein bot 
+          href: customer-copilot-salesforce-handoff.md
+        - name: Hand off to ServiceNow
+          href: customer-copilot-servicenow.md
+    - name: Integrate with conversational language understanding
       items:
         - name: Conversational language understanding integration overview
           href: advanced-clu-integration.md
@@ -183,11 +219,11 @@
           href: advanced-clu-entity-registration.md
     - name: Integrate with Bot Framework skills
       items:
-        - name: Configure a skill for use in Power Virtual Agents
+        - name: Configure a skill for use in Microsoft Copilot Studio
           href: configuration-add-skills.md
         - name: Use Bot Framework Skills
           href: advanced-use-skills.md
-        - name: Use a Power Virtual Agents bot as a skill
+        - name: Use a Microsoft Copilot Studio bot as a skill
           href: advanced-use-pva-as-a-skill.md
     - name: Extend with Bot Framework Composer
       items:
@@ -219,6 +255,8 @@
       href: analytics-sessions-transcripts.md
     - name: Analyze topic usage
       href: analytics-topic-details.md
+    - name: Analyze and manage billed messages and capacity
+      href: requirements-messages-management.md
     - name: Analyze billed session information
       href: analytics-billed-sessions.md
 - name: Configure and customize
@@ -229,7 +267,7 @@
       href: admin-share-bots.md
     - name: Configure user authentication
       href: configuration-end-user-authentication.md
-    - name: Configure user authentication with Azure Active Directory
+    - name: Configure user authentication with Microsoft Entra ID
       href: configuration-authentication-azure-ad.md
     - name: Configure web and Direct Line channel security
       href: configure-web-security.md
@@ -237,24 +275,20 @@
       href: configure-sso.md
     - name: Configure single sign-on for Teams
       href: configure-sso-teams.md
-    - name: Configure hand-off to a generic engagement hub
-      href: configure-generic-handoff.md
-    - name: Configure voice and text hand off to Dynamics 365 Customer Service
-      href: configuration-hand-off-omnichannel.md
     - name: Configure the bot to automatically start the conversation
       href: configure-bot-greeting.md
     - name: Customize the look and feel of the bot
       href: customize-default-canvas.md
-- name: Respond to GDPR Data Subject Rights (DSR) requests
+- name: Respond to personal data requests
   items:
-    - name: Key concepts - GDPR compliance
-      href: gdpr-summary.md
+    - name: Personal data requests overview
+      href: personal-data-summary.md
     - name: Requests to export and download data
-      href: gdpr-export.md
+      href: personal-data-export.md
     - name: Requests to delete data
-      href: gdpr-delete.md
+      href: personal-data-delete.md
     - name: Requests to discover data
-      href: gdpr-discovery.md
+      href: personal-data-discovery.md
 - name: Responsible AI
   items:
     - name: Overview
@@ -263,3 +297,4 @@
       href: faqs-generative-answers.md
     - name: FAQ for copilot
       href: faqs-copilot.md
+

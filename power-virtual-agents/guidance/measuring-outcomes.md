@@ -1,6 +1,6 @@
 ---
 title: "Measuring chatbot outcomes"
-description: "Guidance for measuring chatbot outcomes in Power Virtual Agents"
+description: "Guidance for measuring chatbot outcomes in Microsoft Copilot Studio"
 author: HenryJammes
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -11,10 +11,12 @@ ms.reviewer: iawilt
 
 # Measuring chatbot outcomes
 
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
+
 Tracking conversation engagement and outcomes is crucial to measure the chatbot performance metrics and spot areas for improvements in the analytics dashboard.
 
 > [!IMPORTANT]
-> A Power Virtual Agents conversation between an end-user and a chatbot generates one or multiple analytics sessions. [All analytics sessions are either **Engaged** or **Unengaged**](./measuring-engagement.md).
+> A Microsoft Copilot Studio conversation between an end-user and a chatbot generates one or multiple analytics sessions. [All analytics sessions are either **Engaged** or **Unengaged**](./measuring-engagement.md).
 
 ## Understanding analytics sessions outcomes
 

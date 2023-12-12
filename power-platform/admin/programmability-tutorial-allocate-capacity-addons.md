@@ -16,9 +16,9 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can utilize. These capabilities can be assigned at the environment-level in the Power Platform admin center and are made available based on prior license purchases. To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
+Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can use. These capabilities can be assigned at the environment level in the Power Platform admin center and are made available based on prior license purchases. To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
 
-In this tutorial, you learn to:
+In this tutorial, you'll learn to:
 
 - Manually allocate an add-on to an environment in the Power Platform admin center.
 - Allocate add-ons, at scale, using PowerShell.
@@ -34,7 +34,7 @@ As an example of this scenario, a customer who has purchased AI Builder credits 
 
 To start, sign in as a Power Platform administrator and allocate AI Builder credits to the environment where they'll be used.
 
-Not all add-ons are available in the Power Platform admin center UI. As new add-ons become available, they're often first surfaced using API and programmability tools to get customer feedback before making them more generally available in the UI.  Such an example is the Power Automate per Process add-on, which can be allocated using PowerShell, as shown in the following PowerShell example.
+Not all add-ons are available in the Power Platform admin center UI. As new add-ons become available, they're often first surfaced using API and programmability tools to get customer feedback before making them more generally available in the UI. Such an example is the Power Automate per Process add-on, which can be allocated using PowerShell, as shown in the following PowerShell example.
 
 # [Power Platform admin center](#tab/PPAC)
 

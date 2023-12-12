@@ -13,9 +13,11 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Analyze session information in Power Virtual Agents
+# Analyze session information in Microsoft Copilot Studio
 
-By default, you can download up to seven days of bot chat transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+By default, you can download up to seven days of bot chat transcript sessions from the past 30 days directly from the Microsoft Copilot Studio portal.
 
 You can also download and view conversation transcripts in the Power Apps portal.
 
@@ -23,12 +25,12 @@ See [Work with conversation transcripts](analytics-sessions-transcripts.md) for 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 ### Download bot session transcripts
 
-1. In the Power Virtual Agents navigation menu, select **Analytics**.
+1. In the Microsoft Copilot Studio navigation menu, select **Analytics**.
 
 1. Select the **Sessions** tab.
 
@@ -36,7 +38,7 @@ See [Work with conversation transcripts](analytics-sessions-transcripts.md) for 
 
 1. Select a row to download.
 
-    :::image type="content" source="media/analytics-sessions/analytics-sessions-billing.png" alt-text="Screenshot of the Sessions page in Power Virtual Agents analytics, with a session highlighted.":::
+    :::image type="content" source="media/analytics-sessions/analytics-sessions-billing.png" alt-text="Screenshot of the Sessions page in Microsoft Copilot Studio analytics, with a session highlighted.":::
 
 The download starts immediately. The file is saved to your browser's default download location.
 

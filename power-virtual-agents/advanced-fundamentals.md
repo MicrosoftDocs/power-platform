@@ -13,13 +13,15 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Key concepts - Enhanced authoring in Power Virtual Agents
+# Key concepts - Enhanced authoring in Microsoft Copilot Studio
 
-You can go beyond basic authoring in Power Virtual Agents by taking advantage of a number of advanced features. 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+You can go beyond basic authoring in Microsoft Copilot Studio by taking advantage of a number of advanced features. 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Web app](#tab/web)

@@ -5,11 +5,13 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/16/2021
+ms.date: 12/05/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- royshea 
 ---
 
 # Responding to Data Subject Rights (DSR) requests for Power Apps customer data
@@ -44,7 +46,7 @@ Resources containing personal data |    Purpose
 --- | ---
 Environment |    An environment is a space to store, manage, and share your organization's business data, apps, and flows. [Learn more](./environments-overview.md)
 Environment permissions    | Users are assigned to environments roles to be granted maker and administrative privileges within an environment. [Learn more](./environments-overview.md)
-Canvas app    | Cross-platform business apps that can be built from a power of a blank canvas and connected to over 200 data sources. [Learn more](/powerapps/maker/)
+Canvas app / Custom page   | Cross-platform business apps that can be built from a power of a blank canvas and connected to over 200 data sources. [Learn more](/powerapps/maker/)
 Canvas-app permissions    | Canvas apps can be shared with users within an organization. [Learn more](/powerapps/maker/canvas-apps/share-app)
 Connection    | Used by connectors and allow for connectivity to APIs, systems, databases, etc. [Learn more](/powerapps/maker/canvas-apps/add-manage-connections)
 Connection permissions    | Certain types of connections can be shared with users within an organization. [Learn more](/powerapps/maker/canvas-apps/share-app-resources)

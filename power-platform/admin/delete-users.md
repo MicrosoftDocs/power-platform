@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 05/26/2023
+ms.date: 12/12/2023
 search.audienceType: 
   - admin
 ---
@@ -19,6 +19,9 @@ This article covers the various levels and methods of user deletion in Microsoft
 Watch this video for a detailed walkthrough of how to delete users from your environment:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE5ddyh]
+
+> [!NOTE]
+> Before deleting a user from an environment, you must delete the user from Microsoft 365 admin center or Microsoft Entra ID.
 
 ## Delete users in Microsoft 365 admin center
 
@@ -255,6 +258,9 @@ You can delete and remove users with disabled status in Power Platform. You may 
 1. On the user form, select **Delete**.
 
 1. Select **Refresh list** to update the list and confirm deletion.
+
+> [!NOTE]
+> After users are permanently deleted in Entra ID, any new user record created with the details of a deleted user is a new user object in Entra ID. Such user IDs can't be updated to gain access to the deleted user records in Dataverse. You can [re-assign records](/power-apps/user/assign-or-share-records) from the deleted user to the new user. 
 
 #### Audit log after user is permanently deleted
 

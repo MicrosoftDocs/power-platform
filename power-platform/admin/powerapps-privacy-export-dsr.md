@@ -5,11 +5,13 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/07/2022
+ms.date: 12/05/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- royshea 
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
@@ -26,7 +28,7 @@ Resources containing personal data | Website access |    PowerShell access
 --- | --- | --
 Environment    | Power Platform admin center |     Power Apps cmdlets
 Environment permissions**    | Power Platform admin center     | Power Apps cmdlets
-Canvas App    | Power Apps Portal |     Power Apps cmdlets
+Canvas App / Custom page   | Power Apps Portal |     Power Apps cmdlets
 Canvas App permissions    | Power Apps Portal    | Power Apps cmdlets
 Gateway | Power Apps Portal***    | On-premises gateway cmdlets
 Gateway permissions    | Power Apps Portal***    |
@@ -50,7 +52,7 @@ To perform the administration operations outlined in this document using the Pow
 
 * A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
-* [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or [Microsoft Entra Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
+* [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
 
 ## Step 1: Export personal data contained within environments created by the user
 
@@ -73,12 +75,12 @@ Get-PowerAppEnvironment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 ### PowerShell cmdlets for admins
-Administrators can export all of the environments that have been created by a user by using the **Get-AdminEnvironment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
+Administrators can export all of the environments that have been created by a user by using the **Get-AdminPowerAppEnvironment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $userId = "7557f390-5f70-4c93-8bc4-8c2faabd2ca0"
-Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
  
 ## Step 2: Export the user's environment permissions
@@ -90,7 +92,7 @@ Users can be assigned permissions (such as Environment Admin, Environment Maker,
 #### Power platform admin center
 Administrators can export a user's environment permissions from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
 
 2. Select both **Environment Admin** and **Environment Maker** separately, and then using the search bar, search for the user's name.
 
@@ -103,12 +105,12 @@ Administrators can export a user's environment permissions from the [Power Platf
 3. If the user has access to either role, go to the **Users** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
 #### PowerShell cmdlets for admins
-Administrators can export all environment role assignments for a user across all environments without a Dataverse database by using the **Get-AdminEnvironmentRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
+Administrators can export all environment role assignments for a user across all environments without a Dataverse database by using the **Get-AdminPowerAppEnvironmentRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
-Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 > [!IMPORTANT]
@@ -125,7 +127,7 @@ A user can export an app from the [Power Apps portal](https://make.powerapps.com
 ### Power Platform admin center
 An administrator can export apps created by a user starting from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
 
 2. Select **Resources**, and then select **Power Apps**.
 
@@ -144,30 +146,21 @@ An administrator can export apps created by a user starting from the [Power Plat
 
 5. Once you have access to each of the user's apps you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
 
-### PowerShell cmdlets for admins
-Administrators can export apps created by a user by using the **Get-AdminApp** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
-
-```powershell
-Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
-Get-AdminApp -Owner $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-```
-
 ## Step 4: Export the user's permissions to canvas apps
 Whenever an app is shared with a user, Power Apps stores a record called a *role assignment* that describes the user's permissions (CanEdit or CanUser) to the application. For more information, see [Share an app](/powerapps/maker/canvas-apps/share-app#share-an-app).
 
 ### PowerShell cmdlets for app creators
-Users can export the app role assignments for all apps that they have access to by using the **Get-RoleAssignment** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export the app role assignments for all apps that they have access to by using the **Get-PowerAppRoleAssignment** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
-Get-AdminPowerAppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-PowerAppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 ### Power Platform admin center 
 Administrators can export app roles assignments for a user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
 
 2. For each environment, select **Resources**, and then select **Power Apps**.
 
@@ -182,12 +175,12 @@ Administrators can export app roles assignments for a user from the [Power Platf
    > ![Admin app share page.](media/admin-share-page.png "Admin app share page")
 
 ### PowerShell cmdlets for admins
-Administrators can export all app role assignments for a user across all apps in their tenant by using the **Get-AdminAppRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
+Administrators can export all app role assignments for a user across all apps in their tenant by using the **Get-AdminPowerAppRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
-Get-AdminAppRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 ## Step 5: Export personal data contained within connections created by the user 
@@ -202,12 +195,12 @@ Get-AdminPowerAppConnection | ConvertTo-Json | out-file -FilePath "UserDetails.j
 ```
 
 ### PowerShell cmdlets for admins
-Administrators can export all connections created by the user using the  **Get-AdminConnection** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
+Administrators can export all connections created by the user using the  **Get-AdminPowerAppConnection** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
-Get-AdminConnection -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppConnection -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
  
 ## Step 6: Export the user's permissions to shared connections
@@ -221,12 +214,12 @@ Get-AdminPowerAppConnectionRoleAssignment | ConvertTo-Json | Out-file -FilePath 
 ```
 
 ### PowerShell cmdlets for admins
-Administrators can export all connection role assignments for a user using the  **Get-AdminConnectionRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
+Administrators can export all connection role assignments for a user using the  **Get-AdminPowerAppConnectionRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
-Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 ## Step 7: Export personal data contained within custom connectors created by the user
@@ -237,35 +230,35 @@ Users can export all custom connectors they've created by using the **Get-AdminP
 
 ```powershell
 Add-PowerAppsAccount  
-Get-AdminPowerAppConnector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppConnector | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 ### PowerShell cmdlets for admins
-Administrators can export all custom connectors created by a user using the  **Get-AdminConnector** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
+Administrators can export all custom connectors created by a user using the  **Get-AdminPowerAppConnector** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
-Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 ## Step 8: Export the user's permissions to custom connectors
 
 ### PowerShell cmdlets for app creators
-Users can export all connector role assignments for the custom connectors to which they have access by using the **Get-ConnectorRoleAssignment** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export all connector role assignments for the custom connectors to which they have access by using the **Get-AdminPowerAppConnectorRoleAssignment** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount  
-Get-ConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 ### PowerShell cmdlets for admins
-Administrators can export all custom connector role assignments for a user using the  **Get-AdminConnectorRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
+Administrators can export all custom connector role assignments for a user using the  **Get-AdminPowerAppConnectorRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
-Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
  
 ## Step 9: Export Power Apps Notifications, User Settings, and User-App Settings
@@ -278,7 +271,7 @@ Users can export their own Power Apps notifications, user settings, and user-app
 
 ```powershell
 Add-PowerAppsAccount  
-Get-AdminPowerAppsUserDetails -WriteToFile -OutputFilePath "UserDetails.json"
+Get-AdminPowerAppsUserDetails -OutputFilePath "UserDetails.json"
 ```
 
 ### PowerShell cmdlets for admins
@@ -287,7 +280,7 @@ Administrators can export the Power Apps notifications, user settings, and user-
 ```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
-Get-AdminPowerAppsUserDetails -WriteToFile -OutputFilePath "UserDetails.json" -UserPrincipalName name@microsoft.com
+Get-AdminPowerAppsUserDetails -OutputFilePath "UserDetails.json" -UserPrincipalName name@microsoft.com
 ```
 
 ## Step 10: Export personal data contained for a user-stored gateway or in the user's gateway permissions

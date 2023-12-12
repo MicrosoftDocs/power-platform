@@ -4,7 +4,7 @@ description: Manage feature settings to adjust how features appear and function 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/28/2023
+ms.date: 12/12/2023
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -33,12 +33,12 @@ Make sure you have the System Administrator or System Customizer security role o
 ## Copilot (preview)
 
 > [!NOTE]
-> Turning off Copilot for your tenant will only disable Copilot for makers. It won't disable [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot) or [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot).
+> Turning off Copilot for your tenant turns off [Copilot for makers](/power-apps/maker/canvas-apps/ai-conversations-create-app). It doesn't turn off [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot), [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot), or [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot). 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Allow canvas editors to get AI-powered answers to how-to questions and AI Builder GPT experiences. Currently in preview. (preview)  |When **On**, enables Copilot to create apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. More information: [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview) | On |
-| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. (preview)<br>Note: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas and model-driven apps for app users to ask questions and have a natural language conversation about data in the app. More information: [Add Copilot control to a canvas app (preview)](/power-apps/maker/canvas-apps/add-ai-copilot) and [Add Copilot to model-driven apps (preview)](/power-apps/maker/model-driven-apps/add-ai-copilot) | Off |
+| Allow canvas editors to get AI-powered answers to how-to questions and AI Builder GPT experiences. Currently in preview. (preview)  |When **On**, enables Copilot to create apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. More information: [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). | On |
+| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. (preview)<br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. More information: [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot). When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is enabled. | Off |
 
 
 ## AI Builder
@@ -144,6 +144,7 @@ Choose which provider to enable outbound calls from within customer engagement a
 |Prevent slow keyword filter for quick find terms on view pages |  If **On**, users will be prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message will be displayed in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip will be displayed indicating the search might be slow. More information: [Grid search](/power-apps/user/grid-filters#grid-search) | Off|
 |Quick Find record limits| If **On**, if more than 10,000 records are found, a message will be displayed that suggests a more selective search. More information: [Configure Dataverse search for the organization](configure-relevance-search-organization.md)| On |
 | Use quick find view of an entity for searching on grids and sub-grids|  Select **Yes** to show the traditional Quick Find search in an entity grid. The traditional Quick Find search applies the [Quick Find View](/powerapps/maker/model-driven-apps/create-edit-views#system-views) filters and displays the Quick Find columns after searching.  |Off|
+| Search for records in Microsoft 365 apps | You can quickly enable your users to access the records they have most recently used in their application.  The records are available in the Outlook Web client using a simple /mention gesture.  | On |
 
 ## Map and address services
 | Setting | Description | Default value |

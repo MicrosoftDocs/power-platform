@@ -1,6 +1,6 @@
 ---
 title: "Deflection overview"
-description: "Guidance best practices to improve deflection rate in a Power Virtual Agents chatbot."
+description: "Guidance best practices to improve deflection rate in a Microsoft Copilot Studio chatbot."
 author: athinesh
 ms.date: 05/23/2023
 ms.topic: conceptual
@@ -10,9 +10,11 @@ ms.reviewer: iawilt
 ---
 # Deflection overview
 
-Return on investment (ROI) and improved customer satisfaction (CSAT) are top priorities for the organizations that implement Power Virtual Agents chatbots.
+[!INCLUDE[pva-rebrand](../includes/pva-rebrand.md)]
 
-Optimizing the bot deflection rate is one of the top focus areas for organizations to achieve their business goals around ROI and CSAT, and to improve the bot's overall performance. There are major indicators in Power Virtual Agents that help improve bot performance, such as resolution rate, escalation rate, and CSAT.
+Return on investment (ROI) and improved customer satisfaction (CSAT) are top priorities for the organizations that implement Microsoft Copilot Studio chatbots.
+
+Optimizing the bot deflection rate is one of the top focus areas for organizations to achieve their business goals around ROI and CSAT, and to improve the bot's overall performance. There are major indicators in Microsoft Copilot Studio that help improve bot performance, such as resolution rate, escalation rate, and CSAT.
 
 While the metrics continue to evolve, there are several things you can do as a bot builder to improve the deflection rate of your bot. In these articles, we cover the importance of deflection in conversational AI and general techniques/considerations that are universal for optimizing deflection for chatbots.  
 
@@ -26,9 +28,9 @@ While the metrics continue to evolve, there are several things you can do as a b
 > - **Better customer experience**: more customers or employees can get their issues resolved by the bot instead of waiting for a human agent in chat or phone. This leads to a better customer experience and higher CSAT scores. While this helps reduce wait time, live agents can also focus on more complex, higher-value tasks.
 > - **Cost savings**: one of the key ways the ROI of the bot is determined is by using deflection rates. Human agent call support typically costs around $5 to $10 in the contact center industry. However, a bot session that resolves a customer request costs around 50 cents. This means that higher deflection rates lead to higher cost savings.
 
-## Understanding the key components of Power Virtual Agents analytics to improve deflection
+## Understanding the key components of Microsoft Copilot Studio analytics to improve deflection
 
-A basic understanding of available analytics is required to be able to determine what deflection means for your organization. The following table describes the key metrics from Power Virtual Agents:
+A basic understanding of available analytics is required to be able to determine what deflection means for your organization. The following table describes the key metrics from Microsoft Copilot Studio:
 
 |Description                     |Details                           |
 |--------------------------------|----------------------------------|

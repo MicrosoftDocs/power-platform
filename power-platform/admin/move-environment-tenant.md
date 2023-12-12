@@ -41,7 +41,7 @@ There are no user interface changes or version changes as part of this move. You
 
 | Supported | Not fully supported<sup>*</sup> |
 |-------------------------|-------------------------|
-| <ul><li>Dataverse</li><li>Dynamics 365 apps</li></ul> | <ul><li>Canvas app</li><li>[Component library](/power-apps/maker/canvas-apps/component-library)</li><li>[Custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)</li><li>Power Automate</li><li>Power Virtual Agents</li><li>[Dynamics 365 Customer Voice](/dynamics365/customer-voice/cv-faq#i-migrated-my-microsoft-dataverse-environment-from-one-tenant-to-another-but-i-dont-see-my-existing-projects-when-i-login-to-dynamics-365-customer-voice-in-the-new-tenant)</li></ul> |
+| <ul><li>Dataverse</li><li>Dynamics 365 apps</li></ul> | <ul><li>Canvas app</li><li>[Component library](/power-apps/maker/canvas-apps/component-library)</li><li>[Custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)</li><li>Power Automate</li><li>Power Virtual Agents</li><li>[Dynamics 365 Customer Voice](/dynamics365/customer-voice/cv-faq#i-migrated-my-microsoft-dataverse-environment-from-one-tenant-to-another-but-i-dont-see-my-existing-projects-when-i-login-to-dynamics-365-customer-voice-in-the-new-tenant)</li><li>Omnichannel for Customer Service</li> </ul> |
 
 <sup>*</sup>There may be potential data loss during migration and additional steps required. [Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support.](#confirm-if-any-of-the-solutions-below-are-installed-in-the-environments-to-be-migrated-as-these-may-require-additional-steps-either-from-you-or-support)
 

@@ -1,6 +1,6 @@
 ---
 title: Analyze your bot's customer satisfaction metrics (preview)
-description: Use AI-driven analytics to understand how well customers are interacting with your bot and identify areas for improvement in Power Virtual Agents preview.
+description: Use AI-driven analytics to understand how well customers are interacting with your bot and identify areas for improvement in Microsoft Copilot Studio preview.
 keywords: "PVA"
 ms.date: 03/24/2023
 ms.topic: how-to
@@ -15,6 +15,8 @@ ms.service: power-virtual-agents
 
 # Analyze your bot's customer satisfaction metrics
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 The **Customer Satisfaction** tab on the **Analytics** page provides a detailed view of customer satisfaction (CSAT) survey data, including the average CSAT score over time and the topics that are having the most impact on the CSAT score. This page includes various charts with graphical views of your bot's customer satisfaction indicators.
 
 The **Customer satisfaction drivers** chart shows you the topics that are having the most impact on customer satisfaction.
@@ -27,7 +29,7 @@ The **Customer satisfaction drivers** chart uses AI to group related support cas
 
 | Description | Details |
 | --- | --- |
-| Topic | A Power Virtual Agents topic. |
+| Topic | A Microsoft Copilot Studio topic. |
 | Engaged sessions | The number of engaged sessions for the topic within the specified time period. |
 | Resolution rate | The percentage of engaged sessions for the topic that are resolved. |
 | Abandon rate | The percentage of engaged sessions for the topic that are abandoned. |
