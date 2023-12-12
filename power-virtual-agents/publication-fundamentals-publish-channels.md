@@ -21,7 +21,7 @@ With Microsoft Copilot Studio, you can publish bots to engage with your customer
 
 After you've published at least once, you can connect your bot to more channels.
 
-Each time you want to update your bot, you publish it again from within the Microsoft Copilot Studio app itself. Publishing your bot will update the bot across all the channels where you've inserted or connected your bot.
+Each time you want to update your bot, you publish it again from within the Microsoft Copilot Studio app itself. Publishing your bot will update the bot across all the channels where you've inserted or connected your bot. 
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGa9]
@@ -32,13 +32,15 @@ Each time you want to update your bot, you publish it again from within the Micr
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# [Web app](#tab/web)
 
 You need to publish your bot before your customers can engage with it. You can publish your bot on multiple platforms, or channels.
 
 After you've published your bot to at least one channel, you can connect it to more channels. Remember to publish your bot again after you make any changes to it. Publishing your bot updates it across all the channels it's connected to. If you don't, your customers won't be engaging with the latest content.
+
+The bot comes with the **Only for Teams and Power Apps** authentication option turned on. The bot automatically uses Microsoft Entra ID authentication for Teams and Power Apps without requiring any manual setup and only lets you chat with your bot on Teams. If you want to allow anyone to chat with your bot, select **No authentication** authentication. If you want to use other channels and still have authentication for your bot, select **Manual** authentication.
+
+   :::image type="content" source="media/publication-fundamentals-publish-channels/CopilotDefaultAuthenticationOptions.jpg" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
 
 ### Publish the latest bot content
 
@@ -52,7 +54,9 @@ Publishing can take up to a few minutes.
 
 ### Test your bot
 
-Test your bot after it's published. Select the **demo website** link to open a prebuilt website in a new browser tab, where you and your teammates can interact with the bot. The demo website is also useful to gather feedback from stakeholders before you roll your bot out to customers. Learn how to [configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md).
+Test your bot after it's published. When publish is successful, you can [make the bot available to users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md) with the installation link or from various places in the Microsoft Teams app store. You can share your bot later by selecting **Make bot available to others** from the Publish page. You can also install the bot for your own use in Microsoft Teams by selecting **Open the bot**.
+
+If you selected **No authentication** or **Manual** authentication options. Select the **demo website** link to open a prebuilt website in a new browser tab, where you and your teammates can interact with the bot. The demo website is also useful to gather feedback from stakeholders before you roll your bot out to customers. Learn how to [configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md).
 
 > [!TIP]
 > **What's the difference between the test chat and the demo website?**  
@@ -61,7 +65,7 @@ Test your bot after it's published. Select the **demo website** link to open a p
 > Share the demo website URL with members of your team or other stakeholders to try out the bot. The demo website isn't intended for production use. You shouldn't share the URL with customers.  
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 ### Publish the latest bot content
 
