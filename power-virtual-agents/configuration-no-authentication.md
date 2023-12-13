@@ -32,11 +32,7 @@ The bot comes with the **Only for Teams and Power Apps** authentication option t
 
 If you want to allow anyone to chat with your bot, select **No authentication** in the **Security** settings for your bot or copilot. If you want to use other channels and still have authentication for your bot, select **Manual** authentication.
 
->[!WARNING]
->
-> Selecting the **No authentication** option will allow anyone who has the link to chat and interact with your bot or copilot.
->
-> We recommend you apply authentication, especially if you are using your bot or copilot within your organization or for specific users, along with [other security and governance controls like data loss prevention (DLP) and application lifecycle management (ALM)](security-and-governance.md).
+[!INCLUDE[no-auth-warning-note](includes/blocks/no-auth-warning.md)
 
 :::image type="content" source="media/dlp-example-3/CopilotDefaultAuthenticationOptions.png" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
 
