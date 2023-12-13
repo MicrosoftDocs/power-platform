@@ -48,7 +48,7 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 |Flow permissions | Deleted permissions | Every time a user's permissions to the flow is removed|
 |Trials | Started a paid trial | When a user starts a paid trial|
 |Trials | Renewed a paid trial | When a user renews a paid trial|
-|Hosted RPA | Microsoft Entra ID joined | When a hosted bot is joined to the customer's tenant Microsoft Entra ID|
+|Hosted RPA | Microsoft Entra ID joined | When a Hosted RPA bot is joined to the customer's tenant Microsoft Entra ID|
 
 ## Get details on base schema for logging
 
