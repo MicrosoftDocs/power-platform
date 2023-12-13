@@ -1,6 +1,6 @@
 ---
-title: "Add anyone to chat with Microsoft Copilot Studio bot"
-description: "Add anyone to chat with Microsoft Copilot Studio bot with out authentication."
+title: "Add no authentication for anyone to chat with Microsoft Copilot Studio bot"
+description: "Add no authentication for anyone to chat with Microsoft Copilot Studio bot with out authentication."
 keywords: "User Authentication, Authentication, Microsoft Entra ID, MSA, Identity Provider, PVA"
 ms.date: 03/24/2023
 
@@ -14,7 +14,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Add anyone to chat with Microsoft Copilot Studio bot
+# Add no authentication for anyone to chat with Microsoft Copilot Studio bot
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
