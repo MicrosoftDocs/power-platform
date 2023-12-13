@@ -115,7 +115,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 6. If the team type is Microsoft Entra Security group or Microsoft Entra Office group, you must also enter these fields:
 
    - **Group name:** Start entering text to select an existing Microsoft Entra group name. These groups are precreated in Microsoft Entra ID.
-   - **Membership type:** Select the membership type from the dropdown list. See [How Microsoft Entra security group members match to Dataverse group team members](#how-azure-ad-security-group-members-match-to-dataverse-group-team-members).
+   - **Membership type:** Select the membership type from the dropdown list. See [How Microsoft Entra security group members match to Dataverse group team members](#how-microsoft-entra-security-group-members-match-to-dataverse-group-team-members).
    
    :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="Screenshot of settings for a new Microsoft Entra team.":::
 
