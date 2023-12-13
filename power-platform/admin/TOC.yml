@@ -254,7 +254,7 @@
                       href: add-resources-site.md
                 - name: Users + permissions
                   items:
-                    - name: Create or edit business unit
+                    - name: Create or edit business units (preview)
                       href: create-edit-business-units.md
                     - name: Update record owner
                       href: update-record-owner.md
@@ -598,9 +598,9 @@
                   href: add-remove-territory-members.md
                 - name: User session management
                   href: user-session-management.md
-                - name: Conditional access with Azure AD
+                - name: Conditional access with Microsoft Entra ID
                   href: restrict-access-online-trusted-ip-rules.md
-                - name: B2B collaboration with Azure AD
+                - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
             - name: Security FAQs
               href: security/faqs.md
@@ -662,14 +662,14 @@
               href: view-self-service-capacity.md
             - name: Free up storage
               items:
+                - name: Manage PrincipalObjectAccess storage
+                  href: manage-principalobjectaccess-storage.md
                 - name: Recover storage space
                   href: free-storage-space.md
                 - name: Clean up AsyncOperationBase and WorkflowLogBase tables
                   href: cleanup-asyncoperationbase-table.md
             - name: Add storage capacity
               href: add-storage.md
-            - name: Manage PrincipalObjectAccess storage
-              href: manage-principalobjectaccess-storage.md
             - name: Access storage with SAS token
               href: storage-sas-token.md
         - name: Resources

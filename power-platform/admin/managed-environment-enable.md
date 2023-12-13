@@ -20,7 +20,7 @@ Admins can enable, disable, and edit Managed Environments in the Power Platform 
 
 ## Permissions
 
-- You must be an admin to enable or edit Managed Environments. That is, you must have the role of global admin, Power Platform service admin, or Dynamics 365 admin Azure Active Directory.
+- You must be an admin to enable or edit Managed Environments. That is, you must have the role of global admin, Power Platform service admin, or Dynamics 365 admin Microsoft Entra ID.
 - Any user with permission to see environment details can view the Managed Environments property for an environment.  
 - Users with the Delegated Admin role or the Environment Admin security role aren't allowed to change the Managed Environments property in an environment.
 
