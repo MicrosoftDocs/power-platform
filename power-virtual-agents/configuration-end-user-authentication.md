@@ -2,7 +2,7 @@
 title: Configure user authentication
 description: Configure authentication with your identity provider to enable users to sign in when having a bot conversation.
 keywords: "Authentication, IdP, PVA, Microsoft Entra ID"
-ms.date: 03/24/2023
+ms.date: 12/13/2023
 
 ms.topic: article
 author: iaanw
