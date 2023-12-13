@@ -34,7 +34,6 @@ Microsoft Copilot Studio supports the following authentication providers:
 
 > [!IMPORTANT]
 > Changes to the authentication configuration will only take effect after you publish your bot. Make sure to plan ahead before you make authentication changes to your bot.
-
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n4G2]
 >
@@ -54,27 +53,27 @@ To change your bot's authentication settings, in the navigation menu under **Set
 The following authentication options are available:
 
 - No authentication
-- Only for Teams
+- Only for Teams and Power Apps
 - Manual (for any channel including Teams)
 
-:::image type="content" source="media/configuration-end-user-authentication/security-authentication-pane.png" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
+:::image type="content" source="media/publication-fundamentals-publish-channels/CopilotDefaultAuthenticationOptions.jpg" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
 
 ### No Authentication
 
 No authentication is the standard configuration for bots that aren't created from Teams. Users can't sign in, and your bot can access only public information and resources.
 
-### Only for Teams
+### Only for Teams and Power Apps
 
 > [!IMPORTANT]
-> When the **Only for Teams** option is selected, all channels except the Teams channel will be disabled.
+> When the **Only for Teams and Power Apps** option is selected, all channels except the Teams channel will be disabled.
 >
-> Additionally, the **Only for Teams** option is not available if your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
+> Additionally, the **Only for Teams and Power Apps** option is not available if your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 Teams authentication, optimized for the Teams channel, is the standard configuration for bots that are created from Teams. It automatically sets up Microsoft Entra ID authentication for Teams without the need for any manual configuration. Since Teams authentication itself identifies the user, users aren't prompted to sign in while they're in Teams, unless your bot needs expanded scope.
 
 Only the Teams channel is available if you select this option. If you need other channels but still want authentication for your bot, choose **Manual** authentication.
 
-If you select the **Only for Teams** option, the following variables are available in the authoring canvas:
+If you select the **Only for Teams and Power Apps** option, the following variables are available in the authoring canvas:
 
 - `UserID`
 - `UserDisplayName`
@@ -83,7 +82,7 @@ For more information about these variables and how to use them, see [Add user au
 
 `AuthToken` and `IsLoggedIn` variables aren't available with this option. If you need an authentication token, use the **Manual** option.
 
-If you change from **Manual** to **Only for Teams** authentication, and your topics contain the variables `AuthToken` or `IsLoggedIn`, they're displayed as **Unknown** variables after the change. Make sure to correct any topics with errors before you publish your bot.
+If you change from **Manual** to **Only for Teams and Power Apps** authentication, and your topics contain the variables `AuthToken` or `IsLoggedIn`, they're displayed as **Unknown** variables after the change. Make sure to correct any topics with errors before you publish your bot.
 
 ### Manual (for any channel including Teams)
 
