@@ -21,7 +21,7 @@ ms.collection: virtual-agent
 You can enable user authentication directly within a Microsoft Copilot Studio bot conversation. User authentication means you can get a user's basic properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
 
 >[!NOTE]
-> Bots created in Web app and Microsoft Teams come with authentication pre-configured to use **Only for Teams and Power Apps** authentication.
+> Bots created in the web app and in Microsoft Teams come with authentication pre-configured to use **Only for Teams and Power Apps** authentication.
 
 You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md).
 
