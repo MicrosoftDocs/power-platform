@@ -395,7 +395,7 @@ Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses
 | **Licenses required for anonymous users** | Power Apps portals page view capacity | Anonymous per user/website subscription<br /></br>|
 | **Dataverse storage** | Not included with Power Apps portals logins and page view capacity | Included with Power Pages subscription<br /></br>Included with Power Pages  |
 
-### If I'm building a Power Pages website for my employees who log in using their Azure AD credentials, what Power Pages licenses do I need?
+### If I'm building a Power Pages website for my employees who log in using their Microsoft Entra credentials, what Power Pages licenses do I need?
 
 Internal authenticated users of a Power Pages website can use one of the following type of licenses:
 

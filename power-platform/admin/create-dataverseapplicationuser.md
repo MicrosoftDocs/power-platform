@@ -60,7 +60,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 }
 ```
 
-After performing this action, you can confirm that the service principal from your Azure Active Directory (Azure AD) tenant was added to the environment as an application user.  This can be validated by going to the Power Platform admin center, select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Application users**.  This always adds the application user as a System Administrator.
+After performing this action, you can confirm that the service principal from your Microsoft Entra tenant was added to the environment as an application user.  This can be validated by going to the Power Platform admin center, select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Application users**.  This always adds the application user as a System Administrator.
 
 
 
