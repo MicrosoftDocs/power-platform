@@ -81,7 +81,7 @@ Set host to `https://app.vssps.visualstudio.com` policy:
 | ----- | ----- |
 | Name | Set host to `https://app.vssps.visualstudio.com` |
 | Template | Set host URL |
-| Operations | GetOrganizations |
+| Operations | GetOrganizations, GetUserCurrentProfile |
 | URL Template | `https://app.vssps.visualstudio.com` |
 
 Convert Build Definition Variables to Array policy:
