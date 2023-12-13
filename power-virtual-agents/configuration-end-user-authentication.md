@@ -62,7 +62,7 @@ The following authentication options are available:
 
 No authentication means your bot won't require your users to sign in when interacting with bot. An unauthenticated configuration means your copilot or bot can only access public information and resources.
 
-[!INCLUDE[no-auth-warning-note](includes/blocks/no-auth-warning.md)
+[!INCLUDE[no-auth-warning-note](includes/blocks/no-auth-warning.md)]
 
 ### Only for Teams and Power Apps
 
