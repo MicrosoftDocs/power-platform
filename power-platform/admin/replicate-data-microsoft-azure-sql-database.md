@@ -566,7 +566,7 @@ EXEC SP_EXECUTESQL @sql;
 2. Select **Settings > Customizations**, and then select **Solutions**.
 3. Choose **DataExportService** published by Microsoft Dynamics 365, and then select **Delete**.
 
-## Find the Azure Active Directory tenant Id for your tenant
+## Find the Microsoft Entra tenant Id for your tenant
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 2. Under **Azure services** select **Tenant properties**. 

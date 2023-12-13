@@ -120,7 +120,7 @@ The following table describes which resources each security role can author.
 
 ## Assign security roles to users in an environment that has no Dataverse database
 
-For environments with no Dataverse database, a user who has the Environment Admin role in the environment can assign security roles to individual users or groups from Azure AD.
+For environments with no Dataverse database, a user who has the Environment Admin role in the environment can assign security roles to individual users or groups from Microsoft Entra ID.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -130,7 +130,7 @@ For environments with no Dataverse database, a user who has the Environment Admi
 
     :::image type="content" source="media/assign-security-role-nodb.png" alt-text="Screenshot of selecting a security role in the Power Platform admin center.":::
 
-1. Select **Add people**, and then specify the name or email address of one or more users or groups from Azure AD.
+1. Select **Add people**, and then specify the name or email address of one or more users or groups from Microsoft Entra ID.
 
     :::image type="content" source="media/assign-security-role-nodb-action.png" alt-text="Screenshot of adding users to the Environment Maker role in the Power Platform admin center.":::
 
@@ -138,7 +138,7 @@ For environments with no Dataverse database, a user who has the Environment Admi
 
 ## Assign security roles to users in an environment that has a Dataverse database
 
-Security roles can be assigned to individual users, [owner teams](manage-teams.md#types-of-teams), and [Azure AD group teams](manage-group-teams.md). Before you assign a role to a user, [verify the user's account has been added to and is enabled in the environment](troubleshooting-user-needs-read-write-access-organization.md).
+Security roles can be assigned to individual users, [owner teams](manage-teams.md#types-of-teams), and [Microsoft Entra group teams](manage-group-teams.md). Before you assign a role to a user, [verify the user's account has been added to and is enabled in the environment](troubleshooting-user-needs-read-write-access-organization.md).
 
 In general, a security role can only be assigned to users whose accounts are enabled in the environment. To assign a security role to a user account that's disabled in the environment, turn on **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings.
 
@@ -152,7 +152,7 @@ In general, a security role can only be assigned to users whose accounts are ena
 
 1. Make sure the correct business unit is selected in the list, and then select a role from the list of roles in the environment.
 
-1. Select **Add people**, and then specify the name or email address of one or more users or groups from Azure AD.
+1. Select **Add people**, and then specify the name or email address of one or more users or groups from Microsoft Entra ID.
 
 1. Select **Add**.
 
