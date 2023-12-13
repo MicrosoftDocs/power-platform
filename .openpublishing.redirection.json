@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/power-virtual-agents/overview-preview.md",
+      "redirect_url": "power-platform/power-virtual-agents/fundamentals-what-is-copilot-studio.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "power-platform/developer/cli/reference/tests.md",
       "redirect_url": "test",
       "redirect_document_id": "false"
