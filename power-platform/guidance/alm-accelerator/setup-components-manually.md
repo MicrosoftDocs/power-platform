@@ -634,6 +634,15 @@ You can allow all pipelines to access required service connections.
 1. Scroll down to **Pipeline permissions**.
 1. Select **More actions** (**&hellip;**), select **Open access**, and then confirm when prompted.
 
+### Set Job authorization scope
+
+Job authorization scope can be set for the entire Azure DevOps organization or for a specific project. Disable the **Limit job authorization scope to current project for release pipelines** setting, if you choose a different Azure DevOps project to install the templates.
+
+To set job authorization scope at the organization level for all projects
+
+1. In Azure DevOps,choose **Organization settings > Pipelines > Settings**.
+1. Disable the **Limit job authorization scope to current project for release pipelines** setting.
+
 ### Create a deployment configuration (optional)
 
 You need to create several configurations in a target environment after a solution is deployed. These configurations are specific to the environment and include connection references, environment variables, and permissions for Azure AD groups and Dataverse teams, in addition to sharing canvas apps and updating the ownership of solution components such as Power Automate flows. Along with these configurations, a target environment often needs sample or configuration data that's associated with Dataverse tables in the solution to provide a full end-to-end ALM experience.
