@@ -268,7 +268,7 @@
     - name: Configure user authentication
       href: configuration-end-user-authentication.md
     - name: Disable default authentication
-      href: configureation-no-authentication.md
+      href: configuration-no-authentication.md
     - name: Configure user authentication with Microsoft Entra ID
       href: configuration-authentication-azure-ad.md
     - name: Configure web and Direct Line channel security
