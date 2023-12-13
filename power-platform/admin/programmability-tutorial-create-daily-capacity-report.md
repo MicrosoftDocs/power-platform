@@ -61,14 +61,14 @@ Next, we'll need to initialize five variables as detailed below:
 > [!div class="mx-imgBorder"] 
 > ![Create five variables.](media/capacity3.png "Create five variables")
 
-Next we'll authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication - legacy](programmability-authentication.md).
+Next we'll authenticate with Microsoft Microsoft Entra and retrieve a token for calling the Power Platform API.  If you haven’t completed your Microsoft Entra setup, see [Authentication - legacy](programmability-authentication.md).
 
-In this tutorial, we're using a key vault to store our service principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Azure AD to retrieve the token as shown:
+In this tutorial, we're using a key vault to store our service principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Microsoft Entra to retrieve the token as shown:
 
 > [!div class="mx-imgBorder"] 
-> ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/capacity4.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
+> ![Authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API.](media/capacity4.png "Authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API")
 
-We then parse the Azure AD token response into a typed object using this JSON schema in the 'Parse JSON' action:
+We then parse the Microsoft Entra token response into a typed object using this JSON schema in the 'Parse JSON' action:
 
 ```json
 {
@@ -91,7 +91,7 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Parse the Azure AD token response into a strongly typed object.](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
+> ![Parse the Microsoft Entra token response into a strongly typed object.](media/capacity5.png "Parse the Microsoft Entra token response into a strongly typed object")
 
 # [PowerShell](#tab/PowerShell)
 
@@ -103,7 +103,7 @@ Use the below script to initialize some variables that we'll use throughout the 
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 
 # Set variables for your session
-$TenantId = "YOUR_TENANT_GUID_FROM_AAD"
+$TenantId = "YOUR_TENANT_GUID_FROM_Microsoft Entra ID"
 $SPNId = "YOUR_AZURE_APPLICATION_REGISTRATION_CLIENT_ID"
 $ClientSecret = "YOUR_AZURE_APPLICATION_CLIENT_SECRET"
 $capacityDetailsList = @()
@@ -121,7 +121,7 @@ In this section, we'll fetch the environment list that you administer.  This can
 
 ### Call the List Environments endpoint
 
-Now is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context, you can also enter that Bearer Token at this step as well.
+Now is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Microsoft Entra ID.  If you used username/password context, you can also enter that Bearer Token at this step as well.
 
 > [!div class="mx-imgBorder"] 
 > ![Use the List Environments endpoint to retrieve all environments and their metadata.](media/capacity6.png "Use the List Environments endpoint to retrieve all environments and their metadata")

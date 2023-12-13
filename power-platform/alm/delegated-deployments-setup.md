@@ -81,7 +81,7 @@ To deploy as the pipeline stage owner, follow these steps.
     - The pipeline stage owner’s identity will be used for all deployments to this stage.
     - Similarly, this identity must be used to approve deployments.
 1.	Create a cloud flow in a solution within the pipelines host environment.
-    1. Select the **OnApprovalStarted** trigger. **OnDeploymentRequested** can also be used if **Pre-Export Step Required** is disabled on the pipeline stage.
+    1. Select the **OnApprovalStarted** trigger.
     1. Insert actions as desired. For example, an approval.
     1. Add Dataverse **Perform an unbound action**.  
       Action Name: UpdateApprovalStatus (20 = completed, 30 = rejected)

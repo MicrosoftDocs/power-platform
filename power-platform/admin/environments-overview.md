@@ -21,7 +21,7 @@ A *Power Platform environment* is a space to store, manage, and share your organ
 
 ## Environment scope
 
-Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
+Each environment is created under a Microsoft Entra tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
 
 Every environment can have zero or one Microsoft Dataverse database, which provides storage for your apps and chatbots. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
 
@@ -66,7 +66,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 
 ## The default environment
 
-A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. No users will be automatically added to the Environment Admin role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant, and is named as follows: "{Azure AD tenant name} (default)".
+A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. No users will be automatically added to the Environment Admin role of the default environment. The default environment is created in the region closest to the default region of the Microsoft Entra tenant, and is named as follows: "{Microsoft Entra tenant name} (default)".
 
 You can't delete the default environment. You can't manually back up the default environment; system backups are done continuously. 
 
@@ -83,7 +83,7 @@ Microsoft 365 Power Platform administrators are automatically assigned the Datav
 
 ### Rename the default environment
 
-The default environment is created using the naming convention {Azure AD tenant name} (default).  Power Platform administrators should consider renaming the default environment to something more descriptive, such as *Personal Productivity Environment* that clearly calls out the intent of the environment. 
+The default environment is created using the naming convention {Microsoft Entra tenant name} (default).  Power Platform administrators should consider renaming the default environment to something more descriptive, such as *Personal Productivity Environment* that clearly calls out the intent of the environment. 
 
 > [!NOTE]
 > After you change the name of the default environment, you can still identify it from the Power Platform admin center as the only environment with the environment **Type** of **Default**.

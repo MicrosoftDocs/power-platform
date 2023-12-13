@@ -1,6 +1,6 @@
 ---
 title: Use /mention to link to records in Outlook web client
-description: The records will now be available in the Outlook Web client using a simple /mention gesture. 
+description: Records are now available in the Outlook web client using a simple /mention gesture. 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
@@ -19,19 +19,19 @@ ms.contributors:
 
 # Use /mention to link to records in Outlook web client
 
-One of the most time-consuming tasks, for any person that uses email, is easily sharing information in your line of business applications with colleagues. You have to jump out of your Outlook web experience, open your line of business app, navigate to a record, and then copy and paste the link of the record into your email. This is an incredibly time-consuming set of steps and actions. 
+One of the most time-consuming tasks when using email is sharing information in your line-of-business applications with colleagues. You have to jump out of your Outlook web experience, open your line-of-business app, navigate to a record, and then copy and paste the link of the record into your email.  
 
 Wouldn't it be great if you could just quickly access Dynamics 365 or Dataverse data directly from Outlook?
 
-That is now possible with a simple configuration in the Power Platform admin center. You can quickly enable your users to access the records they have most recently used in their application. The records are available in the Outlook web client using a simple /mention gesture.
+That's now possible with a simple configuration in the Power Platform admin center. You can quickly enable your users to access the records they've used most recently in their application. The records are available in the Outlook web client using a simple /mention gesture.
 
 Security is top of mind, so only records that a user has access to and has most recently used are available in the Outlook web client.
 
 ## Geo, service, and compliance boundaries
 
-A small set of data from Dataverse will be synced with Microsoft 365 data.  This may cross geo boundaries for multi-geo organizations where the Dataverse data may be in a different geographic region than the data stored for a user in Microsoft 365. Be aware that this also crosses service and compliance boundaries between the two platforms. Synced data includes the table name, primary name for the column for the table, and a link  to the most recently used record.
+A small set of data from Dataverse will be synced with Microsoft 365 data.  This may cross geo boundaries for multi-geo organizations where the Dataverse data may be in a different geographic region than the data stored for a user in Microsoft 365. Be aware that this also crosses service and compliance boundaries between the two platforms. Synced data includes the table name, primary name of the column for the table, and a link  to the most recently used record.
 
-If there are any changes to the synced data including updates or deletes, the record will be updated or deleted in Microsoft 365.
+If there are any changes to the synced data including updates or deletions, the record will be updated or deleted in Microsoft 365.
 
 ## Turn on the /mention feature
 
@@ -60,4 +60,4 @@ After turning on the **Search for records in Microsoft 365 apps** setting, your 
 
     After selecting a record in the /mention form, a link to the record is added to the email in the Outlook web client. The recipient of the email can select the link and open the record, assuming the recipient has access to the environment, the app, and the record.
 
-     :::image type="content" source="media/final-email.png" alt-text="The email messsage the receipient receives.":::
+     :::image type="content" source="media/final-email.png" alt-text="The email message the recipient receives.":::

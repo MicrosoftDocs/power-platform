@@ -52,7 +52,7 @@ Schemas define which fields are sent to the Microsoft Purview compliance portal.
 |CorrelationId     |Edm.Guid         |No         |A unique value used to associate related rows (e.g., when a large row is split)          |
 |CreationTime     |Edm.Date         |No         |Date and time of when the log was generated in UTC          |
 |Operation     |Edm.Date         |No         |Name of the message called in the SDK          |
-|UserKey     |Edm.String         |No         |Unique Identifier of the User in AAD. AKA User PUID          |
+|UserKey     |Edm.String         |No         |Unique Identifier of the User in Microsoft Entra ID. AKA User PUID          |
 |UserType     |Self.UserType         |No         |The Microsoft 365 audit type (Regular, System)          |
 |User     |Edm.String        |No         |Primary email of the user          |
 

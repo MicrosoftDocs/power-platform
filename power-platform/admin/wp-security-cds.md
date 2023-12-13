@@ -74,19 +74,19 @@ You can assign a user as record owner in any business unit without the need to a
 > [!NOTE]
 > This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** setting and can be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
-### Associate a business unit with an Azure AD security group
+### Associate a business unit with a Microsoft Entra security group
 
-You can use an Azure AD security group to map your business unit for streamlining your user administration and role assignment.  
+You can use a Microsoft Entra security group to map your business unit for streamlining your user administration and role assignment.  
 
-**Create an Azure AD security group for each business unit and assign the respective business unit security role to each group team.**
+**Create a Microsoft Entra security group for each business unit and assign the respective business unit security role to each group team.**
 
-:::image type="content" source="media/business-unit-with-aad-sec-group2.png" alt-text="Create an Azure AD security group for each business unit.":::
+:::image type="content" source="media/business-unit-with-aad-sec-group2.png" alt-text="Create a Microsoft Entra security group for each business unit.":::
 
-For each business unit, create an Azure AD security group. Create a [Dataverse group team](manage-group-teams.md) for each Azure AD security group. Assign the respective security role from the business unit to each Dataverse group team. The user in the above diagram will be created in the root business unit when the user accesses the environment. It's fine to have the user and the Dataverse group teams to be in the root business unit. They only have access to data in the business unit where the security role is assigned.  
+For each business unit, create a Microsoft Entra security group. Create a [Dataverse group team](manage-group-teams.md) for each Microsoft Entra security group. Assign the respective security role from the business unit to each Dataverse group team. The user in the above diagram will be created in the root business unit when the user accesses the environment. It's fine to have the user and the Dataverse group teams to be in the root business unit. They only have access to data in the business unit where the security role is assigned.  
 
-Add users into the respective Azure AD security group to grant them access to the business unit. The users can immediately run the app and access its resources/data. 
+Add users into the respective Microsoft Entra security group to grant them access to the business unit. The users can immediately run the app and access its resources/data. 
 
-In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), where users can work and access data from multiple business units, add the users to the Azure AD security groups that mapped to those business units.  
+In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), where users can work and access data from multiple business units, add the users to the Microsoft Entra security groups that mapped to those business units.  
 
 ### Owning Business Unit
 
