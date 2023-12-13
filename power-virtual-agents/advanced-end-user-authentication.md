@@ -21,7 +21,7 @@ ms.collection: virtual-agent
 You can enable user authentication directly within a Microsoft Copilot Studio bot conversation. User authentication means you can get a user's basic properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
 
 >[!NOTE]
-> Bots created in Microsoft Teams come with authentication pre-configured to use Teams authentication.
+> Bots created in Web app and Microsoft Teams come with authentication pre-configured to use **Only for Teams and Power Apps** authentication.
 
 You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md).
 
@@ -32,9 +32,7 @@ You can also configure single sign-on (SSO) so your users don't need to sign in 
 - [Configure end-user authentication](configuration-end-user-authentication.md).
 
 
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# [Web app](#tab/web)
 
 Add user authentication to a topic to allow your customers to sign in right in the conversation. You can then personalize the conversation with user variables and access back-end systems on the user's behalf.
 
@@ -84,7 +82,7 @@ When customers enter their username and password, they might be prompted to ente
 
 When you've configured user authentication for your bot, you can use authentication variables in your topics. The following table compares the availability of these variables based on the authentication option you chose.
 
-| Authentication Variable | No Authentication | Only for Teams | Manual    |
+| Authentication Variable | No Authentication | Only for Teams and Power Apps  | Manual    |
 |-------------------------|:-----------------:|:--------------:|:---------:|
 | [User.DisplayName][1]   | not available     | not available  | available |
 | [User.Id][2]            | not available     | not available  | available |
@@ -138,15 +136,15 @@ Don't use `User.AccessToken` in **Message** nodes or in flows that you don't tru
 - `Initializer` indicates that if the user hasn't signed in yet, and they reach a point in the conversation that uses authentication variables, they'll be prompted to sign in.
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 ### Authentication variables
 
-If your bot is configured with either "Only for Teams" or "Manual" authentication options, you will have a set of authentication variables available in your topics. Check the [authentication configuration documentation](configuration-end-user-authentication.md) for more information on how to configure authentication in your bot.
+If your bot is configured with either **Only for Teams and Power Apps** or **Manual** authentication options, you will have a set of authentication variables available in your topics. Check the [authentication configuration documentation](configuration-end-user-authentication.md) for more information on how to configure authentication in your bot.
 
 The following table compares authentication variable availability by authentication configuration option:
 
-| Authentication Variable | No Authentication |   Only for Teams   |       Manual       |
+| Authentication Variable | No Authentication |   Only for Teams and Power Apps  |       Manual       |
 | ----------------------- | :---------------: | :----------------: | :----------------: |
 | ```UserDisplayName```   |        :x:        | :heavy_check_mark: | :heavy_check_mark: |
 | ```UserID```            |        :x:        | :heavy_check_mark: | :heavy_check_mark: |
@@ -202,12 +200,12 @@ If you reset the **Test bot** pane (or you make changes to a topic that cause th
 > [!IMPORTANT]
 > You can't populate the `UserID` variable with a custom value (other than an empty or blank value) due to security reasons.
 
-### Authentication when using "Only for Teams" configuration
+### Authentication when using "Only for Teams and Power Apps" configuration
 
-If your authentication option is set to **Only for Teams**, you don't need to explicitly add authentication to your topics. In this configuration, any user in Microsoft Teams is automatically signed in via their Teams credentials and they don't need to explicitly sign in with an authentication card. If your authentication option is set to Manual, then you will need to add the authentication node (even for the Teams channel).
+If your authentication option is set to **Only for Teams and Power Apps**, you don't need to explicitly add authentication to your topics. In this configuration, any user in Microsoft Teams is automatically signed in via their Teams credentials and they don't need to explicitly sign in with an authentication card. If your authentication option is set to Manual, then you will need to add the authentication node (even for the Teams channel).
 
 > [!NOTE]
-> If your authentication option is set to "Only for Teams", you don't have the option to explicitly add authentication to your topics.
+> If your authentication option is set to **Only for Teams and Power Apps**, you don't have the option to explicitly add authentication to your topics.
 
 ### Add user authentication to a topic
 
