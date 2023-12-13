@@ -56,7 +56,7 @@ The following authentication options are available:
 - Only for Teams and Power Apps
 - Manual (for any channel including Teams)
 
-:::image type="content" source="media/publication-fundamentals-publish-channels/CopilotDefaultAuthenticationOptions.jpg" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
+:::image type="content" source="media/dlp-example-3/CopilotDefaultAuthenticationOptions.png" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
 
 ### No Authentication
 
