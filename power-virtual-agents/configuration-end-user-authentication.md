@@ -60,7 +60,7 @@ The following authentication options are available:
 
 ### No Authentication
 
-No authentication is the standard configuration for bots that aren't created from Teams. Users can't sign in, and your bot can access only public information and resources.
+No authentication means you bot or copilot users can't sign in when interacting with the copilot or bot, and your copilot or bot can only access public information and resources.
 
 ### Only for Teams and Power Apps
 
@@ -69,7 +69,9 @@ No authentication is the standard configuration for bots that aren't created fro
 >
 > Additionally, the **Only for Teams and Power Apps** option is not available if your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
-Teams authentication, optimized for the Teams channel, is the standard configuration for bots that are created from Teams. It automatically sets up Microsoft Entra ID authentication for Teams without the need for any manual configuration. Since Teams authentication itself identifies the user, users aren't prompted to sign in while they're in Teams, unless your bot needs expanded scope.
+Teams and Power Apps authentication is enabled by default for bots and copilots that you create in Microsoft Copilot Studio. 
+
+This configuration automatically sets up Microsoft Entra ID authentication for Teams without the need for any manual configuration. Since Teams authentication itself identifies the user, users aren't prompted to sign in while they're in Teams, unless your bot needs expanded scope.
 
 Only the Teams channel is available if you select this option. If you need other channels but still want authentication for your bot, choose **Manual** authentication.
 
