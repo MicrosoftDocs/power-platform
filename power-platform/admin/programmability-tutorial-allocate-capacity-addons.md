@@ -66,7 +66,7 @@ For a list of all add-on types, see [Definitions: External Currency Type](/rest/
 Install-Module -Name Az.Accounts
 
 # Set variables for your session
-$TenantId = "YOUR_TENANT_GUID_FROM_AAD"
+$TenantId = "YOUR_TENANT_GUID_FROM_Microsoft Entra ID"
 $EnvironmentId = "YOUR_POWER_PLATFORM_ENVIRONMENT_ID_HERE"
 
 Write-Host "Creating a session against the Power Platform API"
@@ -111,7 +111,7 @@ Use the following script to unassign an add-on.  You must change the **environme
 Install-Module -Name Az.Accounts
 
 # Set variables for your session
-$TenantId = "YOUR_TENANT_GUID_FROM_AAD"
+$TenantId = "YOUR_TENANT_GUID_FROM_Microsoft Entra ID"
 $EnvironmentId = "YOUR_POWER_PLATFORM_ENVIRONMENT_ID_HERE"
 
 Write-Host "Creating a session against the Power Platform API"

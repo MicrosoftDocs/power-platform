@@ -26,7 +26,7 @@ You can find logs of Power Automate activities in the [Microsoft Purview compli
 Power Platform admins can search the **Audit** screen for details from the following popular services.
 
 - Power BI
-- Azure AD
+- Microsoft Entra ID
 - Microsoft Teams
 - Dynamics 365
 - Power Apps,
@@ -63,7 +63,7 @@ Schemas define the Power Automate fields that are sent to the Microsoft Purview 
 |Organization ID | OrganizationId | Edm.Guid | Yes | A unique identifier of the organization from which the log was generated|
 |Operation | Operation | Edm.String | No | Name of an operation|
 |Workload | Workload | Edm.String | No | Workload of an operation|
-|User | UserKey | Edm.String | No | A unique identifier of the user in Azure AD|
+|User | UserKey | Edm.String | No | A unique identifier of the user in Microsoft Entra ID|
 |User type | UserType | Edm.String | No | The audit type (admin, regular, or system)|
 |Flow connector names | FlowConnectorNames | Edm.String | No | Connector names listed in the flow|
 |SharingPermission | SharingPermission | Edm.String | No | Type of permission shared with another user (3 = “Owner”/ReadWrite, 2 = "Run-only user"/Read)|
