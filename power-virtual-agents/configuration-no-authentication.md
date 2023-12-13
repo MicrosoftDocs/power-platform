@@ -1,6 +1,6 @@
 ---
 title: "Disable default authentication for Microsoft Copilot Studio copilots"
-description: "Microsoft Copilot Studio enables user authentication for copilots and bots by default. When you create a bot, authentication is configured automatically for the "Only for Teams and Power Apps" scope to help manage and protect your data. You can remove or change the type of authentication directly within Copilot Studio for any of your bots or copilots you've created there."
+description: Microsoft Copilot Studio enables user authentication for copilots and bots by default. When you create a bot, authentication is configured automatically for the "Only for Teams and Power Apps" scope to help manage and protect your data. You can remove or change the type of authentication directly within Copilot Studio for any of your bots or copilots you've created there.
 keywords: "User Authentication, Authentication, Microsoft Entra ID, MSA, Identity Provider, PVA"
 ms.date: 12/13/2023
 ms.topic: article
