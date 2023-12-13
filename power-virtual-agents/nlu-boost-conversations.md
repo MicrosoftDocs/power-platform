@@ -18,35 +18,36 @@ searchScope:
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Generative answers in Microsoft Copilot Studio allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query. As a result you can quickly create and deploy a functional bot, without having to manually author multiple topics that may not address your customer's questions.
+Generative answers in Microsoft Copilot Studio allow your copilot to find and present information from multiple sources, internal or external, without created topics. Generative answers can be used as primary information sources or as a fallback source when authored topics can't answer a user's query. As a result, you can quickly create and deploy a functional copilot. You won't need to manually author multiple topics that may not address all customer questions.
 
-In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md). This document covers how to configure generative answers as a fallback topic when a user intent cannot be addressed by existing bot topics. [Generative answers with search and summarize](nlu-boost-node.md) discusses how your bot can query information sources by introducing generative answers in a node.
+In the past, when a copilot can't determine a user's intent, it asks the user to rephrase their question. If, after two prompts, the copilot still can't determine the user's intent, the copilot escalates to a live agent, using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
-Now, before involving a live agent, the bot uses natural language processing (NLP) to:
-- Parse what a user types to determine what they're asking
-- Find, collate, and parse relevant information from a specified source (for example, your company's website) or from multiple sources, including Sharepoint and OneDrive for Business.
-- Summarize search results into plain language that is delivered to the bot user
+Today, before involving a live agent, the copilot uses natural language processing (NLP) to:
 
-Your workflow might be like this:
+- Parse what a user types to determine what they're asking.
+- Find, collate, and parse relevant information from a specified source, like your company's website, or from multiple sources, including Sharepoint and OneDrive for Business.
+- Summarize search results into plain language that's delivered to the copilot user.
 
-1. You create a bot and enable this capability. You test it thoroughly.
+This article helps you get started, using generative answers as a fallback topic, when a user's intent can't be addressed by existing copilot topics.
 
-1. After testing it, you publish your bot so you can instantly provide answers, help, and guidance to your customers or bot users.
+> [!NOTE]
+> [Generative answers with search and summarize](nlu-boost-node.md) discuss how your copilot can query information sources, using generative answers in a single topic node.
 
-1. You create individual topics for the most important or most often-asked questions from your customers (which you might have developed based on [analytics from previous bots](analytics-overview.md) or existing support issues).
+Your workflow might look like:
 
-This workflow could take a while and some specialized knowledge - but with generative answers enabled you're up and running from day one.
+1. You create a copilot and enable generative answers. You test it thoroughly.
+
+1. After testing, you publish your copilot to instantly provide answers, help, and guidance to your copilot users.
+
+1. You create individual topics for frequently asked questions. These topics might develop from [analytics from previous copilots](analytics-overview.md) or existing support issues.
 
 ## Generative answers as a fallback
 
-When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. If a matching intent isn't found in the topics, the bot can use generative answers to attempt answering the query. This behavior is called "Generative Answers for fallback".
-Finally, if the user's intent isn't matched by topics or generative answers, the Fallback [system topic](authoring-system-topics.md) is called.
+When a copilot can't find a matching intent (topic) for the user's query, it uses generative answers and tries to answer a question. This behavior is called "Generative Answers for fallback". If the user's intent isn't matched by topics or generative answers, the fallback [system topic](authoring-system-topics.md) is used. System topics can escalate a query for the copilot.
 
-This document is focused on _getting you started_ using generative answers to augment your bot's ability to help customers.
+Generative answers isn't limited to fallback scenarios. Your copilot can also use other web sites, external or internal web sources, and knowledge sources such as SharePoint or OneDrive for Business.
 
-While generative answers serves as a fallback in this situation, it isn't limited to fallback scenarios. Your bot's ability to answer user questions can also use other web sites, external or internal web sources, and knowledge sources such as SharePoint or OneDrive for Business. 
-
-Details and examples on how you can expand your bot's ability to use generative answers can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md). These sources can be used by generative answers:
+These sources can be used by generative answers:
 
 - External resources include:
   - Bing Search
@@ -55,48 +56,47 @@ Details and examples on how you can expand your bot's ability to use generative 
   - SharePoint
   - OneDrive for Business
   - Documents uploaded to Dataverse
-  - Custom data (internal or external): supply your own content from any source; for instance, from a Power Automate Flow, Skill, or other source
+  - Custom data (internal or external): supply your own source, such as a Power Automate Flow or from Skill.
 
+> [!NOTE]
+> You can expand your copilot's use of generative answers in [Generative Answers with Search and Summarize](nlu-boost-node.md).
 
 ### Source authentication
 
-In addition to [URL considerations](nlu-boost-conversations.md#url-considerations), you'll also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote as a source for **generative answers**. More details can be found in [Information sources](nlu-boost-node.md#information-sources).
+In addition to [URL considerations](nlu-boost-conversations.md#url-considerations), you might need to authentication for your sources. For example, if you use an internal SharePoint site or OneNote as a source for **generative answers**.
+
+For more information, see [Information sources](nlu-boost-node.md#information-sources).
 
 ## Prerequisites
 
-> [!CAUTION] 
-> 
-> [!INCLUDE[prereq-lote](includes/prereq-lote.md)]
->  
-
 - An account for Microsoft Copilot Studio.
 
-    > [!NOTE]
-    >
-    > If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Microsoft Copilot Studio before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
+  > [!NOTE]
+  > If you don't have a Microsoft Copilot Studio account, or you haven't created copilots before, see the [Quickstart guide for building copilots with generative AI](nlu-gpt-quickstart.md).
 
-- You must enable the **generative answers** option for each bot.
+- If you already have a copilot created, enable the **generative answers** option in the **Generative AI** page.
 
-- [Review AI response generation training, model, and usage FAQ](faqs-generative-answers.md) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
+- Review AI response generation training, model, and usage in the [FAQ for generative answers](faqs-generative-answers.md) and [Learn more about Azure OpenAI](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note).
 
-- [!INCLUDE[prereq-lote](includes/prereq-lote.md)] 
+- Generative answers may be subject to usage limits or capacity throttling.
 
-- This capability may be subject to usage limits or capacity throttling.
+- [!INCLUDE[prereq-lote](includes/prereq-lote.md)]
 
-## Increasing your bot's reach
+## Increasing your copilot's reach
 
-1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/). 
+1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/).
 
-1. In the side navigation menu, select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
+1. Select **Create a copilot** on the **Home** page or **New copilot** from the **Copilots** page.
 
-1. Enter a name for the bot.
+1. Enter a name for your copilot.
 
-1. Select the language you want your bot to speak from the menu.
+1. Select a language for your copilot.
 
-3. Provide a website you'd like the bot to use for generating answers, and click **Create**. See the [URL considerations](#url-considerations) section for what types of URLs you can use. 
+1. Provide a website you'd like the copilot to use for generating answers, and click **Create**.
 
-    :::image type="content" source="media/nlu-gpt/create-bot-highlight-22May23.png" alt-text="Screenshot of the bot creation screen with the option highlighted.":::
-
+   See the [URL considerations](#url-considerations) section for the types of URLs you can use.
+   <!-- IMAGE NEEDS TO BE CHANGED -->
+   :::image type="content" source="media/nlu-gpt/create-bot-highlight-22May23.png" alt-text="Screenshot of the bot creation screen with the option highlighted.":::
 
 After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that generative answers is enabled. From the **Overview** page, you can navigate to the **AI Capabilities** page if you want to change the URL you want to use.
 
