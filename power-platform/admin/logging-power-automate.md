@@ -29,15 +29,15 @@ Power Platform admins can search the **Audit** screen for details from the fol
 - Microsoft Entra ID
 - Microsoft Teams
 - Dynamics 365
-- Power Apps,
+- Power Apps
 - Power Automate
-- Dataverse.
+- Dataverse
 
 Admins can filter for specific activities via the **Activities** list. You'll find the Power Automate activities in this list.
 
 ## See audited events
 
-All logging is done at the SDK layer, so a single action can trigger multiple logged events. Here's a list of the user events that you can audit.
+All logging is done at the SDK layer, so a single action can trigger multiple logged events. Here's a list of events that you can audit.
 
 | Category | Event | Description |
 |-|-|-|
@@ -48,6 +48,7 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 |Flow permissions | Deleted permissions | Every time a user's permissions to the flow is removed|
 |Trials | Started a paid trial | When a user starts a paid trial|
 |Trials | Renewed a paid trial | When a user renews a paid trial|
+|Hosted RPA | Microsoft Entra ID joined | When a hosted bot is joined to the customer's tenant Microsoft Entra ID|
 
 ## Get details on base schema for logging
 
