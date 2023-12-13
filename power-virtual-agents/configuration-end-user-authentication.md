@@ -60,7 +60,9 @@ The following authentication options are available:
 
 ### No Authentication
 
-No authentication means you bot or copilot users can't sign in when interacting with the copilot or bot, and your copilot or bot can only access public information and resources.
+No authentication means your bot won't require your users to sign in when interacting with bot. An unauthenticated configuration means your copilot or bot can only access public information and resources.
+
+[!INCLUDE[no-auth-warning-note](includes/blocks/no-auth-warning.md)
 
 ### Only for Teams and Power Apps
 
@@ -73,7 +75,7 @@ Teams and Power Apps authentication is enabled by default for bots and copilots 
 
 This configuration automatically sets up Microsoft Entra ID authentication for Teams without the need for any manual configuration. Since Teams authentication itself identifies the user, users aren't prompted to sign in while they're in Teams, unless your bot needs expanded scope.
 
-Only the Teams channel is available if you select this option. If you need other channels but still want authentication for your bot, choose **Manual** authentication.
+Only the Teams channel is available if you select this option. If you need other channels but still want authentication for your bot (such as when [using generative AI features](nlu-gpt-overview.md), choose **Manual** authentication.
 
 If you select the **Only for Teams and Power Apps** option, the following variables are available in the authoring canvas:
 
