@@ -2,8 +2,7 @@
 title: "Fundamentals - Publish a chatbot to various channels (contains video)"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels, PVA"
-ms.date: 03/24/2023
-
+ms.date: 12/13/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -34,17 +33,23 @@ Each time you want to update your bot, you publish it again from within the Micr
 
 # [Web app](#tab/web)
 
-You need to publish your bot before your customers can engage with it. You can publish your bot on multiple platforms, or channels.
+You need to publish your bot before your customers can engage with it. You can publish your bot on multiple platforms, or "channels".
 
-After you've published your bot to at least one channel, you can connect it to more channels. Remember to publish your bot again after you make any changes to it. Publishing your bot updates it across all the channels it's connected to. If you don't, your customers won't be engaging with the latest content.
+After you've published your bot to at least one channel, you can connect it to more channels. Remember to publish your bot again after you make any changes to it. 
 
-The bot comes with the **Only for Teams and Power Apps** authentication option turned on. The bot automatically uses Microsoft Entra ID authentication for Teams and Power Apps without requiring any manual setup and only lets you chat with your bot on Teams. If you want to allow anyone to chat with your bot, select **No authentication** authentication. If you want to use other channels and still have authentication for your bot, select **Manual** authentication.
+Publishing your bot updates it across all the channels it's connected to. If you don't, your customers won't be engaging with the latest content.
 
-   :::image type="content" source="media/publication-fundamentals-publish-channels/CopilotDefaultAuthenticationOptions.jpg" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
+The bot comes with the **Only for Teams and Power Apps** authentication option turned on. The bot automatically uses Microsoft Entra ID authentication for Teams and Power Apps without requiring any manual setup and only lets you chat with your bot on Teams. 
 
-### Publish the latest bot content
+If you want to allow anyone to chat with your bot, select **No authentication** authentication. 
 
-1. With your bot open for editing, in the navigation menu, select **Publish**.
+If you want to use other channels and still have authentication for your bot, select **Manual** authentication.
+
+:::image type="content" source="media/publication-fundamentals-publish-channels/CopilotDefaultAuthenticationOptions.jpg" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
+
+### Publish the latest content
+
+1. With your bot or copilot open for editing, in the navigation menu, select **Publish**.
 
 1. Select **Publish**, and then confirm.
 
@@ -54,43 +59,23 @@ Publishing can take up to a few minutes.
 
 ### Test your bot
 
-Test your bot after it's published. When publish is successful, you can [make the bot available to users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md) with the installation link or from various places in the Microsoft Teams app store. You can share your bot later by selecting **Make bot available to others** from the Publish page. You can also install the bot for your own use in Microsoft Teams by selecting **Open the bot**.
+Test your bot after it's published. After it's published, you can [make the bot available to users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md) with the installation link or from various places in the Microsoft Teams app store. 
 
-If you selected **No authentication** or **Manual** authentication options. Select the **demo website** link to open a prebuilt website in a new browser tab, where you and your teammates can interact with the bot. The demo website is also useful to gather feedback from stakeholders before you roll your bot out to customers. Learn how to [configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md).
+You can share your bot later by selecting **Make bot available to others** from the **Publish** page. 
+
+You can also install the bot for your own use in Microsoft Teams by selecting **Open the bot**.
+
+If you selected the **No authentication** or **Manual** authentication option, select the **Demo website** link to open a prebuilt website in a new browser tab, where you and your teammates can interact with the bot. 
+
+The demo website is also useful to gather feedback from stakeholders before you roll your bot out to customers. Learn how to [configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md).
 
 > [!TIP]
 > **What's the difference between the test chat and the demo website?**  
-> Use the test chat (the **Test bot** pane) while you're building your bot to make sure conversation flows as you expect and to spot errors.
+> Use the test chat (the **Test copilot** pane) while you're building your bot to make sure conversation flows as you expect and to spot errors.
 >
-> Share the demo website URL with members of your team or other stakeholders to try out the bot. The demo website isn't intended for production use. You shouldn't share the URL with customers.  
-
-
-# [Classic](#tab/classic)
-
-### Publish the latest bot content
-
-You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you'd like your customers to engage with the latest bot content.
-
-1. In the navigation menu, select the **Publish** tab.
-
-1. Select **Publish** to make the latest bot content available to your customers.
-
-    :::image type="content" source="media/publication-fundamentals-publish-channels/channel-publish-latest-content.png" alt-text="Publish latest bot content." border="false":::
-
-    The publishing process will take less than a few minutes as it checks for errors in the latest bot content.
-
-    :::image type="content" source="media/publication-fundamentals-publish-channels/channel-publish-validation.png" alt-text="Validate latest bot content for publish." border="false":::
-
-1. After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. The demo website is useful to gather feedback from stakeholders involved in the bot.
+> Share the demo website URL with members of your team or other stakeholders to try out the bot. The demo website isn't intended for production use. You shouldn't share the URL with customers.
 
 :::image type="content" source="media/publication-fundamentals-publish-channels/channel-go-to-demo-website.png" alt-text="Go to demo website." border="false":::
-
-For details on updating the welcome message and help text on the demo website, go to [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md).
-
-> [!TIP]
-> **What's the difference between the test chat and the demo website?**  
-> On the demo website, you can share a URL with members of your team, or other stakeholders who want to try out the bot.  However, the website isn't intended for production use, and you shouldn't use it directly with customers.  
-> You can use the test chat to see whether conversation flows as expected, and to spot any errors during the bot creation process.
 
 ### Configure channels
 
@@ -156,23 +141,7 @@ Different channels have different end-user experiences. The following table show
 
 # [Teams](#tab/teams)
 
-Once you're satisfied with your bot's content and quality, you can publish your bot to allow users to engage with your bot. You must publish your bot at least once for the user to chat with the bot in Microsoft Teams.
-
-Each time you want to update your bot's content, you publish it again from within the Microsoft Copilot Studio app in Microsoft Teams. This will update the bot's content with the latest changes you have made.
-
-### Publish the latest bot content
-
-You need to publish the bot at least once before you can share it with your teammates.
-
-After the first publish, you can do subsequent publishes whenever you would like your customers to see the latest bot content.
-
-1. In the navigation menu, select **Publish**.
-
-1. Select **Publish** to make the latest bot content available to your customers.
-
-    :::image type="content" source="media/publication-fundamentals-publish-channels/channel-publish-latest-content-teams.png" alt-text="Publish latest bot content.":::
-
-The publishing process will check for errors in the latest bot content.
+See the [web app instructions for publishing latest bot content](#publish-the-latest-bot-content) as they are the same in the Teams app.
 
 When publication is successful, you can [make the bot available to users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md) with the installation link or from various places in the Microsoft Teams app store. You can share your bot later by selecting **Make bot available to others** from the Publish page.
 
@@ -200,5 +169,3 @@ You can also install the bot for your own use in Microsoft Teams by selecting **
 | [Create a privacy statement and terms of use](publication-terms-of-use-teams.md) | Create and link to a privacy statement and terms of use for bots you create. |
 
 ---
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
