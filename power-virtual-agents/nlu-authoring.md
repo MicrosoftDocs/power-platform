@@ -14,7 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Create (and edit) with Copilot
+# Create and edit with Copilot
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
