@@ -203,7 +203,7 @@ The user still exists in the environment as disabled and continues to show in th
 
    :::image type="content" source="media/filteruser.png" alt-text="Select Filter from the top menu.":::
 
-1. From the drop-down menu, select **Users not in Microsoft Entra but exist in the environment**.
+1. From the drop-down menu, select **Users not in AAD but exist in the environment**.
 
 1. Select the disabled user you want to delete.
 
@@ -251,7 +251,7 @@ You can delete and remove users with disabled status in Power Platform. You may 
 
    :::image type="content" source="media/filteruser.png" alt-text="Select Filter from the top menu.":::
 
-1. From the drop-down menu, select **Users not in Microsoft Entra and soft deleted in the environment**.
+1. From the drop-down menu, select **Users not in AAD and soft deleted in the environment**.
 
 1. Select a soft deleted user to delete the user permanently in the Power Platform environment. Only users who were soft deleted can be deleted permanently.
 

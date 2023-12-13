@@ -188,7 +188,7 @@ When manually assigning a record or sharing a record using the built-in form, th
 
 2.	Select **Dataverse** > **Tables** > **Team** > **Views** > **Teams Lookup View** > **Edit Filters**
 
-3.	Set **Team Type**, **Equals** to:  **Microsoft Entra Office Group**, **Microsoft Entra Security Group**, **Owner**
+3.	Set **Team Type**, **Equals** to:  **AAD Office Group**, **AAD Security Group**, **Owner**
 
    :::image type="content" source="media/team-type-edit-filters.png" alt-text="Add Microsoft Entra Office Group and Microsoft Entra Security Group to the Team type.":::
     

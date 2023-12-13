@@ -157,7 +157,7 @@ After admins associate authentication contexts to Conditional Access policies in
 End users that do not meet Conditional Access policy requirements will observe the following dialog after signing in to access an app. 
 
 > [!div class="mx-imgBorder"] 
-> ![Conditional Access enforcement experience](media/admin-manage-apps/power_apps_conditional_access_Microsoft Entra_dialog.png "Conditional Access enforcement experience" )
+> ![Conditional Access enforcement experience](media/admin-manage-apps/power_apps_conditional_access_AAD_dialog.png "Conditional Access enforcement experience" )
 
 The following table reflects conditional access on granular apps support:
 
