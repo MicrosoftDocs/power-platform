@@ -45,7 +45,7 @@ If you want to allow anyone to chat with your bot, select **No authentication** 
 
 If you want to use other channels and still have authentication for your bot, select **Manual** authentication.
 
-:::image type="content" source="media/publication-fundamentals-publish-channels/CopilotDefaultAuthenticationOptions.jpg" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
+:::image type="content" source="media/dlp-example-3/CopilotDefaultAuthenticationOptions.png" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
 
 ### Publish the latest content
 
@@ -141,7 +141,7 @@ Different channels have different end-user experiences. The following table show
 
 # [Teams](#tab/teams)
 
-See the [web app instructions for publishing latest bot content](#publish-the-latest-bot-content) as they are the same in the Teams app.
+See the [web app instructions for publishing latest content](#publish-the-latest-content) as they are the same in the Teams app.
 
 When publication is successful, you can [make the bot available to users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md) with the installation link or from various places in the Microsoft Teams app store. You can share your bot later by selecting **Make bot available to others** from the Publish page.
 
