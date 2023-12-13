@@ -4,8 +4,8 @@ description: Microsoft Copilot Studio enables user authentication for copilots a
 keywords: "User Authentication, Authentication, Microsoft Entra ID, MSA, Identity Provider, PVA"
 ms.date: 12/13/2023
 ms.topic: article
-author: digantak
-ms.author: iawilt
+author: iaan
+ms.author: digantak
 manager: leeclontz
 ms.reviewer: clmori
 ms.custom: authentication, ceX
