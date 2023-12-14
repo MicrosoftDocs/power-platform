@@ -19,7 +19,7 @@ searchScope: "Power Virtual Agents"
 
 Generative answers in Microsoft Copilot Studio allow your copilot to find and present information from multiple sources, internal or external, without created topics. Generative answers can be used as primary information sources or as a fallback source when authored topics can't answer a user's query. As a result, you can quickly create and deploy a functional copilot. You don't need to manually author multiple topics that might not address all customer questions.
 
-In the past, when a copilot can't determine a user's intent, it asks the user to rephrase their question. If, after two prompts, the copilot still can't determine the user's intent, the copilot escalates to a live agent, using the [system **Escalate** topic](authoring-system-fallback-topic.md).
+In the past, when a copilot can't determine a user's intent, it asks the user to rephrase their question. If after two prompts, the copilot still can't determine the user's intent, the copilot escalates to a live agent, using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
 Today, before involving a live agent, the copilot uses natural language processing (NLP) to:
 
@@ -49,7 +49,7 @@ Generative answers aren't limited to fallback scenarios. Your copilot can also u
 Generative answers can use these sources:
 
 - External resources:
-  - Bing Search
+  - [Bing Web Search](https://learn.microsoft.com/bing/search-apis/bing-web-search/overview)
   - [Bing Custom Search](https://www.customsearch.ai/)
 - Internal resources:
   - SharePoint
@@ -103,7 +103,7 @@ For more information, see [Information sources](nlu-boost-node.md#information-so
 
 ### Change your URL or toggle generative answers
 
-You can customize further after your copilot is created from the **Generative AI** page.
+You can customize further, after your copilot is created, from the **Generative AI** page.
 
 - To enable or disable generative answers, toggle the option in the **Boost conversational coverage with generative answers** section.
 - To change the URL, add more websites or remove them in the **Websites** section.
@@ -132,7 +132,7 @@ The URL used in your copilot represents the scope of content for generating resp
 
 #### URL type and structure
 
-- The URL can have up to two levels of depth—subpaths indicated by  forward slash `/`. A trailing forward slash, however, is allowed.
+- The URL can have up to two levels of depth—subpaths indicated by a forward slash `/`. A trailing forward slash, however, is allowed.
 
   | Valid | Not valid |
   | ----- | --------- |
@@ -195,18 +195,18 @@ However, some types might produce less helpful responses, including:
 
 - To learn more about how Bing interprets the question against the URL you specify, add `site: \<your URL here>` to the end of your question to see the top Bing results for the question.  
 
-- You might need to disable the sample topics that automatically come with a new copilot.
+- You might need to disable the sample topics, lessons 1-3, that automatically come with a new copilot. They're used before any URLs are accessed.
 
-  Select the `...` next to a sample topic on your **Topics** page and toggle to enable or disable.
+  Select the `...` next to a sample topic on your **Topics** page and toggle the **Status** to enable or disable.
 
   :::image type="content" source="media/nlu-gpt/disable-sample-topics.png" alt-text="Location of the sample topic toggle where you can enable or disable a sample topic.":::
 
 For more information, see [Use lesson topics in Microsoft Copilot Studio](authoring-template-topics.md).
 
 > [!TIP]
-> In your chat window, you can provide feedback on how well the AI does by selecting the "thumbs up" or "thumbs down" icon underneath the generated response.
+> In your chat window, you can provide feedback on how well the AI does by selecting the "thumbs up" or "thumbs down" icon underneath the generated answer.
 >  
-> If you encounter irrelevant or inappropriate generated response, select the thumbs down icon to let us know. You can also include more verbose feedback.
+> If you see an irrelevant or inappropriate generated response, select the thumbs down icon to let us know. You can also include more detailed feedback.
 >  
 > We'll use this feedback to improve the quality of the AI.
 
