@@ -6,11 +6,12 @@ ms.subservice: admin
 ms.author: samathur
 ms.reviewer: kvivek
 ms.topic: conceptual
-ms.date: 09/22/2023
+ms.date: 12/14/2023
 search.audienceType: 
   - admin
 ms.contributors:
 - swatim
+- matleon
 ---
 # Opt in to early access updates 
 
@@ -21,17 +22,24 @@ Because the major releases include features that affect the user experience, you
 > [!TIP]
 > Check out the early access features for Microsoft [Power Platform](/power-platform-release-plan/2021wave1/features-ready-early-access) and [Dynamics 365](/dynamics365-release-plan/2021wave1/features-ready-early-access) to know the features that will roll out to the users automatically when you opt in for an update.
 
-## Early access availability  
-For each of the major releases, you can opt-in for early access updates approximately two months before the major release is automatically enabled in your region. 
+## Early access availability
+You may opt-in to the early access period approximately two months before general availability of each wave release in your region.
 
-There are two major releases, Wave 1 and Wave 2:
-- For the Wave 1 release, that's planned for general availablility starting in the first week of April, you can opt-in for early access updates on the first Monday of February.
-- For the Wave 2 release, that's planned for general availablility starting in the first week of October, you can opt-in for early access updates on the first Monday of August.
-- 
-The specific schedule for each wave release is updated in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule) before early access starts for each wave release.
+Release Wave 1:
+- Early Access: First Monday of February
+- Sovereign Early Access: Second Monday of February
+
+Release Wave 2:
+- Early Access: First Monday of August
+- Sovereign Early Access: Second Monday of August
 
 > [!NOTE]
-> Early access is not granted automatically.
+> Sovereign regions begin early access one week after production regions
+
+General availability dates may be found in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule). These dates are updated with each release wave.
+
+> [!NOTE]
+> You must explicitly opt-in to the Early Access
 > - For each _release wave_, you must opt-in for early access updates.
 > - For each _environment that you want updated_, you must opt-in for early access updates.
 
@@ -81,7 +89,7 @@ The early access updates are available for all types of environments, including 
 > - All available updates to your environment will be initiated at once. 
 > - After they're enabled, the updates can't be reverted. Be sure to update your sandbox or trial environment before updating the production environment.  
 > - Only the apps that you currently have licenses for will be updated; no new apps will be installed. 
-> - It might take a few hours to complete the updates. All applications in the environment will still be available during the update, though you might experience slightly reduced performance.  
+> - It might take a few hours to complete the updates. All applications in the environment will still be available during the update, though you might experience slightly reduced performance.
 
 ## Additional requirements to enable early access updates  
 Some apps require additional steps to enable early access features. If you have any of the following apps, after enabling the early access updates on the Power Platform admin center, you'll need to take the following manual steps.
