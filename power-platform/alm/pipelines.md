@@ -8,6 +8,8 @@ ms.custom: ""
 ms.date: 10/19/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
+contributors:
+  - asheehi1
 ---
 # Overview of pipelines in Power Platform
 
@@ -108,9 +110,9 @@ Yes.
 
 Similar to authoring experiences, makers running pipelines can either provide their own connections or connections they have access to. Service principal connections can also be used for connectors that support service principal authentication, including custom connectors. 
 
-### Why can't I update existing environment variables or connection references?
+### Why can't I update existing connection references?
 
-Currently, environment variables without a value in the solution or targeted environment can't be updated during deployment. If a value was deployed previously, it can be updated in the targeted environment. The same is true for updating connection references. 
+Currently, connection references without a value in the solution or targeted environment can't be updated during deployment. If a value was deployed previously, it can be updated in the targeted environment.
 
 ### Who owns deployed solution objects?
 
