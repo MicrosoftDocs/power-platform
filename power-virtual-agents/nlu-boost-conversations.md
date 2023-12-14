@@ -49,7 +49,7 @@ Generative answers aren't limited to fallback scenarios. Your copilot can also u
 Generative answers can use these sources:
 
 - External resources:
-  - [Bing Web Search](https://learn.microsoft.com/bing/search-apis/bing-web-search/overview)—doesn't require external configuration
+  - [Bing Web Search](/bing/search-apis/bing-web-search/overview)—doesn't require external configuration
   - [Bing Custom Search](https://www.customsearch.ai/)—requires external configuration
 - Internal resources:
   - SharePoint
@@ -75,7 +75,7 @@ For more information, see [Information sources](nlu-boost-node.md#information-so
 
 - If you already have a copilot created, enable the **generative answers** option in the **Generative AI** page.
 
-- Review AI response generation training, model, and usage in the [FAQ for generative answers](faqs-generative-answers.md) and [Learn more about Azure OpenAI](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note).
+- Review AI response generation training, model, and usage in the [FAQ for generative answers](faqs-generative-answers.md) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
 - Generative answers might be subject to usage limits or capacity throttling.
 
@@ -83,7 +83,7 @@ For more information, see [Information sources](nlu-boost-node.md#information-so
 
 ## Increasing your copilot's reach
 
-1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/).
+1. Go to the [Microsoft Copilot Studio home page](https://copilotstudio.microsoft.com/).
 
 1. Select **Create a copilot** on the **Home** page or **New copilot** from the **Copilots** page.
 
