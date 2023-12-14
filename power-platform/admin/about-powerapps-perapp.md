@@ -67,9 +67,9 @@ Follow these steps to turn on assigning per app plans for users when an app is s
 
    ![App settings.](media/app-settings2.png "App settings")
 
-3. Under **Pass assignment**, change the **Auto assign per app passes** toggle to **Yes**. The **Auto assign per app passes** toggle appears in all app setting.
+3. Under **Per-app licensing**, change the toggle to **On**. The toggle appears in all app setting.
 
-   ![Pass assignment.](media/pass-assignment2.png "Pass assignment")
+   ![Per app licensing.](media/per-app-licensing.png "Per app licensing")
 
 > [!IMPORTANT]
 > If per app plans are not allocated to the environment the app is installed in, the toggle is disabled. 
