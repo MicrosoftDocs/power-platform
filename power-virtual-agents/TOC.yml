@@ -18,7 +18,7 @@
   items:
     - name: Get access to Microsoft Copilot Studio
       href: requirements-licensing-subscriptions.md
-    - name: Use prebuilt copilots templates in Microsoft Teams
+    - name: Use prebuilt chatbot templates in Microsoft Teams
       href: fundamentals-templates.md
     - name: Quickstart - Create and deploy a copilot
       href: fundamentals-get-started.md
@@ -181,7 +181,7 @@
       href: publication-connect-bot-to-web-channels.md
     - name: Add copilot to Power Pages
       href: publication-add-bot-to-power-pages.md
-    - name: Add copilot to Microsoft Teams
+    - name: Add chatbots to Microsoft Teams
       href: publication-add-bot-to-microsoft-teams.md
     - name: Create a privacy statement and terms of use for Teams
       href: publication-terms-of-use-teams.md
