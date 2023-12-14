@@ -92,109 +92,133 @@ For more information, see [Information sources](nlu-boost-node.md#information-so
 
 1. Select a language for your copilot.
 
-1. Provide a website you'd like the copilot to use for generating answers, and click **Create**.
+1. Provide a website you'd like the copilot to use for generating answers.
 
    See the [URL considerations](#url-considerations) section for the types of URLs you can use.
-   <!-- IMAGE NEEDS TO BE CHANGED -->
-   :::image type="content" source="media/nlu-gpt/create-bot-highlight-22May23.png" alt-text="Screenshot of the bot creation screen with the option highlighted.":::
 
-After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that generative answers is enabled. From the **Overview** page, you can navigate to the **AI Capabilities** page if you want to change the URL you want to use.
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-copilot-create.png" alt-text="Screenshot of the bot creation screen with the option highlighted.":::
 
-You can also change the URL, disable generative answers, or change the level of content moderation in the settings for the bot:
+1. Select **Create**.
 
-1. With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
+   You now see your copilot's **Overview** page.
 
-    1. Under **Boost conversational coverage**, use the checkbox for generative answers to enable or disable the capability.
+### Change your URL or toggle generative answers
 
-    1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](#url-considerations) as when enabling the capability when you create a bot.
+You can customize further after your copilot is created from the **Generative AI** page.
 
-    :::image type="content" source="media/nlu-gpt/ai-capabilities-highlight-22May23.png" alt-text="Screenshot of the Microsoft Copilot Studio AI capabilities page with Generative Answers enabled and highlighted.":::
+- To enable or disable generative answers, toggle the option in the **Boost conversational coverage with generative answers** section.
+- To change the URL, add more websites or remove them in the **Websites** section.
 
-    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers are more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
+:::image type="content" source="media/nlu-gpt/boost-generative-ai-change-url.png" alt-text="Screenshot of the Microsoft Copilot Studio AI capabilities page with Generative Answers enabled and highlighted." lightbox="media/nlu-gpt/boost-generative-ai-change-url.png":::
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-content-moderation.png" alt-text="Screenshot of the bot content moderation menu.":::    
+### Content moderation
 
-1. Select **Save** at the top of the **AI capabilities** page.
+Adjust the content moderation settings from the **Generative AI** page.
 
-You can now test your bot to see how well it responds to questions related to the content on the URL you specified.
+1. Under **Copilot content moderation**, select the level you want for your copilot.
+
+   | High | Medium | Low |
+   | -------------- | ------ | --- |
+   | Copilot’s answers are more relevant. (default)  | Copilot generates more answers, but might be irrelevant or undesirable. | Copilot generates the most answers, but might be inaccurate. |
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-content-moderation.png" alt-text="Screenshot of the copilot's content moderation menu, showing high (default), medium, and low options.":::
+
+1. Select **Save** at the top of the page.
+
+Test your copilot to see how well it responds to questions related to the content from your website. You might want to test edge case questions to decide if you need a lower moderation to be more inclusive.
 
 ### URL considerations
 
-The URL you provide represents the scope of content that is used for generating responses. 
+The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
 
-There are some requirements on the type and structure of the URL you use:
+#### URL type and structure
 
-The URL can have up to two levels of depth (or "subpaths", indicated by forward slashes (/)). Your URL can have a trailing forward slash, which isn't included in the limit of two slashes: 
-- The URLs *<span>www</span>.contoso.com*, *<span>www</span>.fabrikam.com/engines/rotary*, or *<span>www</span>.fabrikam.com/engines/rotary/* would be valid. 
-    The URL *<span>www</span>.fabrikam.com/engines/rotary/dual-shaft* wouldn't.
+- The URL can have up to two levels of depth—subpaths indicated by  forward slash `/`. A trailing forward slash, however, is allowed.
 
-If the URL you specify redirects to another top-level site, that content isn't included in results:
-- If, when visited in a browser, *<span>www</span>.fabrikam.com* redirected to *<span>www</span>.contoso.fabrikam.com*, then the bot wouldn't generate responses from content on either of those URLs.  
+  | Valid | Not valid |
+  | ----- | --------- |
+  | www.contoso.com <br> www.fabrikam.com/engines/rotary <br> www.fabrikam.com/engines/rotary/ | www.fabrikam.com/engines/rotary/dual-shaft
+
+- If the URL redirects to another top-level site, the content isn't included in results:
+
+  For example, if _www.fabrikam.com_ redirects to _www.contoso.fabrikam.com_, your copilot won't generate responses from content on either of those URLs.  
   
+- URLs that point to a website, requiring authentication or ones not indexed by Bing.
 
-The capability won't generate responses from a URL that points to a website that requires authentication or that isn't indexed by Bing:
-- Wikis, SharePoint sites, and other types of websites that require authentication, for example *<span>fabrikam</span>.visualstudio.com/project/_wiki* or *<span>fabrikam</span>.sharepoint.com*, can't be used.  
+  For example, wikis and SharePoint sites require authentication, therefore can't be used:
+
+  - fabrikam.visualstudio.com/project/_wiki
+  - fabrikam.sharepoint.com
   
-
-You should also be aware of the following characteristics of the capability:
+#### URL domain structure
   
-The bot generates responses from any publicly viewable content under the URL you specify, including subdomains under a top-level domain:
-- If you were to use the URL *<span>www</span>.fabrikam.com/engines/rotary*, the content on *<span>www</span>.fabrikam.com/engines/rotary/dual-shaft* would also be used by the bot to generate responses.  
-Content from *<span>www</span>.fabrikam.com/tools* wouldn't be used.  
+Any publicly viewable content in the URL you specify, including subdomains under a top-level domain, generate content for your copilot.
 
-- If you were to use *<span>www</span>.fabrikam.com*, the bot wouldn't generate responses from content on *<span>news</spam>.fabrikam.com*, as *news.* is a subdomain under the top-level domain *<span>fabrikam</span>.com*.  
- 
-- If you were to use *<span>fabrikam</span>.com*, then content from *<span>www</span>.fabrikam.com* and *<span>news</span>.fabrikam.com* would be used, as they sit "under" the top-level domain *<span>fabrikam</span>.com*.  
+Examples of what's included and what's not:
 
-The bot may generate nonsensical, irrelevant, or inappropriate answers if you use a forum or social network site as your URL:  
-- Community content on social networks can often increase the risk of more answers being rejected due to inappropriate, offensive, and malicious content that is more common on those sites.  
-For more information, see the [AI response generation training, model, and usage FAQ](faqs-generative-answers.md) for more information on how the AI is trained to avoid generating malicious and offensive responses.
+- If you use _www.fabrikam.com/engines/rotary_, the content on _www.fabrikam.com/engines/rotary/dual-shaft_ is also used by the copilot to generate responses.  
 
-The URL you specify should host the content you want the bot to generate answers from; it shouldn't be the URL for a search engine:
--  Using *<span>bing</span>.com* or other search engines in the URL won't provide useful responses.
+  Content on _www.fabrikam.com/tools_ isn't used, since _tools_ is not a subdomain of _rotary_.  
 
-## Test your bot's generative answers reach
+- If you use _www.fabrikam.com_ (the _www_ exists), the content on _news.fabrikam.com_ (the _www_ doesn't exist) isn't used, since _news._ is a subdomain under the top-level domain _fabrikam.com_.  
 
-1. Click on **Test your bot** at the bottom of the side navigation pane. 
+- If you use _fabrikam.com_, then content on _www.fabrikam.com_ and _news.fabrikam.com_ is used, since they sit under the top-level domain _fabrikam.com_.  
 
-1. In the **Test bot** panel, ask the bot questions that take advantage of generative answers capability.
+#### Social network & forum URLs
 
-**Generative answers** works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
+Your copilot might generate nonsensical, irrelevant, or inappropriate answers if you use a forum or social network site as your URL. Therefore, community content on social networks often increases the risk of more answers being rejected.  
 
-- personal questions 
-- questions that require authenticated access to content
-- questions for each there's no related content at the specified URL
- 
-You should also be aware of some of the characteristics of the AI, and how to get the most out of the questions you ask:
+For more information, see the [FAQ for generative answers](faqs-generative-answers.md). AI is trained to avoid generating malicious and offensive responses.
 
-- The bot can have difficulty answering questions that require calculations, comparisons, or form submissions to provide answers. This includes questions that use comparative and superlative terms such as better or best, latest, or cheapest.
+#### Search engine URLs
 
-- If the bot can't generate an answer to a question, it will ask you to rephrase the question. After two of these prompts, the bot will initiate the [system **Escalate** topic](authoring-system-fallback-topic.md).
+Don't include URLs of search engines like _bing.com_, as they won't provide useful responses.
 
-- To learn more about how the question is interpreted by Bing against the URL you specify, add "site: \<your URL here>" to the end of your question to see the top Bing results for the question.  
+## Test your copilot's generative answers reach
 
-- You may need to disable the [sample topics that are created automatically](authoring-template-topics.md) when you create a bot. 
+1. Select **Test your copilot** at the bottom of the navigation pane.
+
+1. In the **Test copilot** pane, ask your copilot questions that take advantage of the generative answers capability.
+
+**Generative answers** works well with a large variety of question types.
+
+However, some types might produce less helpful responses, including:
+
+- Personal questions.
+- Questions that require authenticated access to content.
+- Questions that have no related content at a specified URL.
+
+### Forming questions
+
+- Your copilot has difficulty answering questions that require calculations, comparisons, or form submissions. Your copilot might not understand omparative and superlative terms such as better or best, latest, or cheapest in a question.
+
+- If the copilot can't generate an answer to a question, it prompts you to rephrase the question. After two of these prompts, the copilot initiates the [system **Escalate** topic](authoring-system-fallback-topic.md). System topics are topics automatically included with each copilot.
+
+- To learn more about how the question is interpreted by Bing against the URL you specify, add `site: \<your URL here>` to the end of your question to see the top Bing results for the question.  
+
+- You may need to disable the sample topics that automatically come with a new copilot.
+
+  Select the `...` next to a sample topic on your **Topics** page and toggle to enable or disable.
+
+  :::image type="content" source="media/nlu-gpt/disable-sample-topics.png" alt-text="Location of the sample topic toggle where you can enable or disable a sample topic.":::
+
+For more information, see [Use lesson topics in Microsoft Copilot Studio](authoring-template-topics.md).
 
 > [!TIP]
+> In your chat window, you can provide feedback on how well the AI does by selecting the "thumbs up" or "thumbs down" icon underneath the generated response.
 >  
-> You can provide feedback on how well the AI does by selecting the "thumbs up" or "thumbs down" icon underneath the generated response.
->  
-> If you encounter irrelevant or inappropriate generated response, select the thumbs down icon to let us know. You can also include more verbose feedback. 
+> If you encounter irrelevant or inappropriate generated response, select the thumbs down icon to let us know. You can also include more verbose feedback.
 >  
 > We'll use this feedback to improve the quality of the AI.
-
-
 
 ## What's supported
 
 ### Quotas
 
-Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. 
+Quotas are default constraints applied to copilots that limit how often messages can be sent to a copilot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage.
 
-Bots with generative answers enabled have a limit on the number of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas)
-
+Copilots with generative answers enabled have a limit on the number of queries they can make derive answers from the URL you specified. Normal conversations that use copilot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas).
 
 ### Pricing
 
 The use of the boosted conversations capability isn't billable and follows the [usual quotas and limitations](requirements-quotas.md#quotas).
-
