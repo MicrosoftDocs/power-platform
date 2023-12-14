@@ -49,8 +49,8 @@ Generative answers aren't limited to fallback scenarios. Your copilot can also u
 Generative answers can use these sources:
 
 - External resources:
-  - [Bing Web Search](https://learn.microsoft.com/bing/search-apis/bing-web-search/overview)
-  - [Bing Custom Search](https://www.customsearch.ai/)
+  - [Bing Web Search](https://learn.microsoft.com/bing/search-apis/bing-web-search/overview)—doesn't require external configuration
+  - [Bing Custom Search](https://www.customsearch.ai/)—requires external configuration
 - Internal resources:
   - SharePoint
   - OneDrive for Business
