@@ -1,8 +1,8 @@
 ---
 title: Generative answers
-description: Provide answers and information for your bot users, even if you haven't created a topic for their issue.
+description: Provide answers and information for your copilot users, even if you have no  topic for their issue.
 keywords: "PVA"
-ms.date: 7/30/2023
+ms.date: 12/13/2023
 ms.topic: how-to
 author: KendalBond007
 ms.author: iawilt
@@ -10,23 +10,22 @@ ms.reviewer:
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+searchScope: "Power Virtual Agents"
 ---
 
 # Generative answers
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Generative answers in Microsoft Copilot Studio allow your copilot to find and present information from multiple sources, internal or external, without created topics. Generative answers can be used as primary information sources or as a fallback source when authored topics can't answer a user's query. As a result, you can quickly create and deploy a functional copilot. You won't need to manually author multiple topics that may not address all customer questions.
+Generative answers in Microsoft Copilot Studio allow your copilot to find and present information from multiple sources, internal or external, without created topics. Generative answers can be used as primary information sources or as a fallback source when authored topics can't answer a user's query. As a result, you can quickly create and deploy a functional copilot. You don't need to manually author multiple topics that might not address all customer questions.
 
 In the past, when a copilot can't determine a user's intent, it asks the user to rephrase their question. If, after two prompts, the copilot still can't determine the user's intent, the copilot escalates to a live agent, using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
 Today, before involving a live agent, the copilot uses natural language processing (NLP) to:
 
 - Parse what a user types to determine what they're asking.
-- Find, collate, and parse relevant information from a specified source, like your company's website, or from multiple sources, including Sharepoint and OneDrive for Business.
-- Summarize search results into plain language that's delivered to the copilot user.
+- Find, collate, and parse relevant information from a specified source. This source can be your company's website, or from multiple sources, including Sharepoint and OneDrive for Business.
+- Summarize search results into plain language delivered to the copilot user.
 
 This article helps you get started, using generative answers as a fallback topic, when a user's intent can't be addressed by existing copilot topics.
 
@@ -43,16 +42,16 @@ Your workflow might look like:
 
 ## Generative answers as a fallback
 
-When a copilot can't find a matching intent (topic) for the user's query, it uses generative answers and tries to answer a question. This behavior is called "Generative Answers for fallback". If the user's intent isn't matched by topics or generative answers, the fallback [system topic](authoring-system-topics.md) is used. System topics can escalate a query for the copilot.
+When a copilot can't find a matching intent (topic) for the user's query, it uses generative answers and tries to answer a question. This behavior is called "Generative Answers for fallback." If the user's intent isn't matched to topics or generative answers, the fallback [system topic](authoring-system-topics.md) is used. System topics can escalate a query for the copilot.
 
-Generative answers isn't limited to fallback scenarios. Your copilot can also use other web sites, external or internal web sources, and knowledge sources such as SharePoint or OneDrive for Business.
+Generative answers aren't limited to fallback scenarios. Your copilot can also use other web sites, external or internal web sources, and knowledge sources such as SharePoint or OneDrive for Business.
 
-These sources can be used by generative answers:
+Generative answers can use these sources:
 
-- External resources include:
+- External resources:
   - Bing Search
   - [Bing Custom Search](https://www.customsearch.ai/)
-- Internal resources include:
+- Internal resources:
   - SharePoint
   - OneDrive for Business
   - Documents uploaded to Dataverse
@@ -78,7 +77,7 @@ For more information, see [Information sources](nlu-boost-node.md#information-so
 
 - Review AI response generation training, model, and usage in the [FAQ for generative answers](faqs-generative-answers.md) and [Learn more about Azure OpenAI](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note).
 
-- Generative answers may be subject to usage limits or capacity throttling.
+- Generative answers might be subject to usage limits or capacity throttling.
 
 - [!INCLUDE[prereq-lote](includes/prereq-lote.md)]
 
@@ -141,7 +140,7 @@ The URL used in your copilot represents the scope of content for generating resp
 
 - If the URL redirects to another top-level site, the content isn't included in results:
 
-  For example, if _www.fabrikam.com_ redirects to _www.contoso.fabrikam.com_, your copilot won't generate responses from content on either of those URLs.  
+  For example, if _www.fabrikam.com_ redirects to _www.contoso.fabrikam.com_, your copilot doesn't generate responses from content on either of those URLs.  
   
 - URLs that point to a website, requiring authentication or ones not indexed by Bing.
 
@@ -154,11 +153,11 @@ The URL used in your copilot represents the scope of content for generating resp
   
 Any publicly viewable content in the URL you specify, including subdomains under a top-level domain, generate content for your copilot.
 
-Examples of what's included and what's not:
+Examples of useful or unuseful domains:
 
 - If you use _www.fabrikam.com/engines/rotary_, the content on _www.fabrikam.com/engines/rotary/dual-shaft_ is also used by the copilot to generate responses.  
 
-  Content on _www.fabrikam.com/tools_ isn't used, since _tools_ is not a subdomain of _rotary_.  
+  Content on _www.fabrikam.com/tools_ isn't used, since _tools_ isn't a subdomain of _rotary_.  
 
 - If you use _www.fabrikam.com_ (the _www_ exists), the content on _news.fabrikam.com_ (the _www_ doesn't exist) isn't used, since _news._ is a subdomain under the top-level domain _fabrikam.com_.  
 
@@ -172,7 +171,7 @@ For more information, see the [FAQ for generative answers](faqs-generative-answe
 
 #### Search engine URLs
 
-Don't include URLs of search engines like _bing.com_, as they won't provide useful responses.
+Don't include URLs of search engines like _bing.com_, as they don't provide useful responses.
 
 ## Test your copilot's generative answers reach
 
@@ -190,13 +189,13 @@ However, some types might produce less helpful responses, including:
 
 ### Forming questions
 
-- Your copilot has difficulty answering questions that require calculations, comparisons, or form submissions. Your copilot might not understand omparative and superlative terms such as better or best, latest, or cheapest in a question.
+- Your copilot has difficulty answering questions that require calculations, comparisons, or form submissions. Your copilot might not understand comparative and superlative terms such as better or best, latest, or cheapest in a question.
 
 - If the copilot can't generate an answer to a question, it prompts you to rephrase the question. After two of these prompts, the copilot initiates the [system **Escalate** topic](authoring-system-fallback-topic.md). System topics are topics automatically included with each copilot.
 
-- To learn more about how the question is interpreted by Bing against the URL you specify, add `site: \<your URL here>` to the end of your question to see the top Bing results for the question.  
+- To learn more about how Bing interprets the question against the URL you specify, add `site: \<your URL here>` to the end of your question to see the top Bing results for the question.  
 
-- You may need to disable the sample topics that automatically come with a new copilot.
+- You might need to disable the sample topics that automatically come with a new copilot.
 
   Select the `...` next to a sample topic on your **Topics** page and toggle to enable or disable.
 
