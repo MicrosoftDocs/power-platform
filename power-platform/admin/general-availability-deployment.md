@@ -7,7 +7,7 @@ ms.author: samathur
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/07/2023
+ms.date: 12/14/2023
 search.audienceType: 
   - admin
 ms.contributors:
@@ -17,7 +17,8 @@ ms.contributors:
 ---
 # General availability deployment
 
-After a release cycle has been made _generally available_ to users, environments are typically automatically turned on. This is so users can receive ongoing mandatory updates. These updates enable early access features, and the current available features that are included in a release.  
+Each release wave will become _generally available_ twice a year. Your environments will automatically receive these mandatory updates.
+- You may test the upcoming updates during [Early Access optional enrollment](/power-platform/admin/opt-in-early-access-updates)
 
 > [!TIP]
 > Check out [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) to learn more about new features to be released in the release waves.
@@ -31,31 +32,53 @@ Each notification from the Message Center includes dates, the maintenance window
 >
 > If you didn't opt in for the early access updates in your environments, your environment will be automatically updated to receive the new release based on the general availability deployment schedule for your region.  
 
-> [!NOTE]
-> A release wave is a necessary update and can't be postponed. It is essential for maintaining system integrity and security.
->
-> A release wave will be seamlessly integrated as part of the weekly Dataverse update, which occurs during your scheduled dark hours. This ensures minimal disruption to your operations.
->
-> It is important to note that the exact duration and timing of a relase wave can't be predetermined. Duration and timing vary depending on the time required to process the weekly updates efficiently. We aim to minimize any inconvenience during this process.
->
-> As an additional benefit, the Special (SPL) scale group will be incorporated into the general availability page to help you stay informed about the schedule.
->
-> These policies are designed to optimize your system's performance and security while offering the flexibility needed for seamless update process.
+## Deployment Cadence
+
+A release wave is a mandatory update. Release wave updates cannot be postponed. These updates are essential for maintaining system integrity and security.
+
+You will receive the release wave as part of your weekly Dataverse update during your scheduled dark hours. This ensures minimal disruption to your operations.
+
+The exact duration and timing of each release wave cannot be predetermined. The duration of updates may vary based on the Dataverse update and may occur at any point during your weekend dark hours. This process has been optimized to minimize any inconvenience.
 
 ## Deployment schedule  
 
-The general availability deployment is based on the regions where environments are created.
+You will receive release wave updates as part of your Dataverse weekly updates. This depends on the region where your environment has been created.
 
-|Regions  |Schedule for 2023 wave 2 general availability deployment|
+The general availability deployment is based on the regions where environments are created.
+- For each region listed below, deployment will begin as early as the Friday dark hours before the listed date
+
+|Region  | Schedule for 2024 wave 1 general availability |
 |---------|---------|
-| Canada<br />South America<br />India<br />France<br />South Africa <br />Germany<br />Switzerland<br />Norway<br />Korea<br>Singapore  | Friday, September 29, 2023 to Monday, October 2, 2023 |
-|United Arab Emirates<br /> Japan<br />Asia Pacific<br />Great Britain<br>Australia<br>GCC High\*     | Friday, October 6, 2023 to Monday, October 9, 2023   |
-|Europe    | Friday, October 13, 2023 to Monday, October 16, 2023      |
-|North America     |  Friday, October 20, 2023 to Monday, October 23, 2023            |
-|GCC\*<br>DoD\* | Friday, October 27, 2023 to Monday, October 30, 2023  |
-|China | Friday, October 27, 2023 to Monday, October 30, 2023   |
+| First Release | March 25, 2024 |
+| Canada        | April 1, 2024 |
+| South America | April 1, 2024  |
+| India         | April 1, 2024  |
+| France        | April 1, 2024  |
+| South Africa  | April 1, 2024  |
+| Germany       | April 1, 2024  |
+| Switzerland   | April 1, 2024  |
+| Norway        | April 1, 2024  |
+| Korea         | April 1, 2024  |
+| Singapore     | April 1, 2024  |
+| United Arab Emirates | April 8, 2024 |
+| Japan                | April 8, 2024 |
+| Asia Pacific         | April 8, 2024 |
+| Great Britain        | April 8, 2024 |
+| Australia            | April 8, 2024 |
+| GCC High\*           | April 8, 2024 |
+| Europe | April 15, 2024 |
+| North America | April 22, 2024 |
+| Dedicated Scale Groups (SPL)| April 29, 2024 |
+| GCC\* | April 29, 2024 |
+| DoD\* | April 29, 2024 |
+| China\* | April 29, 2024 |
+| GCC\* | April 29, 2024 |
 
 \*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
+
+## Release wave FAQ
+
+For frequency asked questions, please refer to [Release wave FAQ](/power-platform/admin/opt-in-early-access-updates#early-access-updates-faq) 
 
 ### See also
 
