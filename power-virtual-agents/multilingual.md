@@ -1,5 +1,5 @@
 ---
-title: Configure and create multilingual chatbots (Preview)
+title: Configure and create multilingual chatbots
 description: Add multilingual support to your Microsoft Copilot Studio chatbots so your bot users and customers can ask questions and get answers in their language.
 keywords: "Multilingual, Languages, Localization, Translation"
 ms.date: 10/25/2023
@@ -13,29 +13,25 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Configure and create multilingual chatbots (Preview)
+# Configure and create multilingual chatbots
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Multilingual bots are chatbots that can communicate with customers in different languages while keeping all the content in a single bot. In many cases, they can automatically detect the desired language and respond in the same language, providing a more personalized and engaging experience for customers. 
+Multilingual bots are chatbots that can communicate with customers in different languages while keeping all the content in a single bot. In many cases, they can automatically detect the desired language based on the user's browser's setting and respond in the same language, providing a more personalized and engaging experience for customers. 
 
 For the list of supported languages, see our [Supported Languages article](authoring-language-support.md).
-
-> [!IMPORTANT]
-> This is a preview feature. Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 > [!NOTE]
 > Multilingual bots are not suported for the following scenarios:
 > * Microsoft Copilot Studio classic bots
 > * Voice bots with Dynamics Omnichannel
 
-
 ## Configuring a multilingual bot
 When a bot is initially created, it's created with a primary language. (See the [Supported Languages article](authoring-language-support.md) for more details on how to select the bot's primary language). 
 
 To enable a multilingual bot:
 
-1. With a bot open, expand **Languages (Preview)** on the side navigation pane, and select **Add languages**.   
+1. With a bot open, expand **Languages** on the side navigation pane, and select **Add languages**.   
 
     :::image type="content" source="media/multilingual-bot/configuration-1.png" alt-text="Setting up a multilingual bot.":::
 
