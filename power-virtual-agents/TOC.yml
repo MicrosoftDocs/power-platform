@@ -177,19 +177,19 @@
   items:
     - name: Key concepts - Publish your copilots
       href: publication-fundamentals-publish-channels.md
-    - name: Add copilot to your live website
+    - name: Add a copilot to your live website
       href: publication-connect-bot-to-web-channels.md
-    - name: Add copilot to Power Pages
+    - name: Add a copilot to Power Pages
       href: publication-add-bot-to-power-pages.md
     - name: Add chatbots to Microsoft Teams
       href: publication-add-bot-to-microsoft-teams.md
     - name: Create a privacy statement and terms of use for Teams
       href: publication-terms-of-use-teams.md
-    - name: Add copilot to Facebook
+    - name: Add a copilot to Facebook
       href: publication-add-bot-to-facebook.md
-    - name: Add copilot to mobile or custom apps
+    - name: Add a copilot to mobile or custom apps
       href: publication-connect-bot-to-custom-application.md
-    - name: Add copilot to Azure Bot Service channels
+    - name: Add a copilot to Azure Bot Service channels
       href: publication-connect-bot-to-azure-bot-service-channels.md
     - name: Integrate with question answering
       href: integrate-with-question-answering.md
@@ -277,7 +277,7 @@
       href: configure-sso.md
     - name: Configure single sign-on for Teams
       href: configure-sso-teams.md
-    - name: Configure copilot to automatically start the conversation
+    - name: Configure your copilot to automatically start the conversation
       href: configure-bot-greeting.md
     - name: Customize the look and feel of your copilot
       href: customize-default-canvas.md
