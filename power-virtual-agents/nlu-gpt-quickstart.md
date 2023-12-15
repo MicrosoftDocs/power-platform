@@ -95,7 +95,7 @@ For more information, see the [Generative answers](nlu-boost-conversations.md). 
    > [!NOTE]
    > If you don't see the **Create from description** option, you may need to enable **Intelligent authoring support**:
    > 1. Select the **Settings** icon in the top menu, then **General settings**.
-   >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Copilot Studio menu with the Settings icon open.":::  
+   >:::image type="content" source="media/nlu-gpt/nlu-quickstart-describe-it-enable.png" alt-text="Screenshot of the Copilot Studio menu with the Settings icon open.":::  
    >  
    > 1. Turn the switch **On** under **Build and iterate on your topics by describing what you want**.
 
@@ -103,7 +103,7 @@ For more information, see the [Generative answers](nlu-boost-conversations.md). 
 
 1. In the **Create a topic to...** field, describe your topic in simple, plain English. See the examples in the **Or try one of these examples to get started** section to understand the structure of a description. Select **View more examples** to generate new examples.
 
-   :::image type="content" source="media/nlu-gpt/describe-it-create-topic.png" alt-text="Screenshot of the Create it with Copilot pop-up window." lightbox="media/nlu-gpt/describe-it-create-topic.png":::
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-describe-it-create-topic.png" alt-text="Screenshot of the Create it with Copilot pop-up window." lightbox="media/nlu-gpt/nlu-quickstart-describe-it-create-topic.png":::
 
    > [!NOTE]
    > Normally, to test the basic chat functionality, you can select an example to use it. But this quickstart helps you use a fallback website. The examples don't have a fallback website.
