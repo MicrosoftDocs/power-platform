@@ -2,7 +2,7 @@
 title: Configure and create multilingual copilots
 description: Add multilingual support to your Microsoft Copilot Studio copilots so your copilot users and customers can ask questions and get answers in their language.
 keywords: "Multilingual, Languages, Localization, Translation"
-ms.date: 10/25/2023
+ms.date: 12/15/2023
 
 ms.topic: article
 author: clmori
@@ -17,14 +17,14 @@ ms.collection: virtual-agent
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Multilingual copilots are copilots that can communicate with customers in different languages while keeping all the content in a single copilot. In many cases, they can automatically detect the desired language based on the user's browser's setting and respond in the same language, providing a more personalized and engaging experience for customers. 
+Multilingual copilots are copilots that can communicate with customers in different languages while keeping all the content in a single copilot. In many cases, they can automatically detect the desired language based on the copilot user's web browser setting and respond in the same language, providing a more personalized and engaging experience for customers. 
 
 For the list of supported languages, see our [Supported Languages article](authoring-language-support.md).
 
 > [!NOTE]
 > Multilingual copilots are not suported for the following scenarios:
-> * Microsoft Copilot Studio classic copilots
-> * Voice copilots with Dynamics Omnichannel
+> * Microsoft Copilot Studio classic bots
+> * Voice bots with Dynamics Omnichannel
 
 ## Configuring a multilingual copilot
 When a copilot is initially created, it's created with a primary language. (See the [Supported Languages article](authoring-language-support.md) for more details on how to select the copilot's primary language). 
