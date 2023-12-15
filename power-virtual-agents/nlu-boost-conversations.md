@@ -108,7 +108,7 @@ You can customize further, after your copilot is created, from the **Generative 
 - To enable or disable generative answers, toggle the option in the **Boost conversational coverage with generative answers** section.
 - To change the URL, add more websites or remove them in the **Websites** section.
 
-:::image type="content" source="media/nlu-gpt/boost-generative-ai-change-url.png" alt-text="Screenshot of the Microsoft Copilot Studio AI capabilities page with Generative Answers enabled and highlighted." lightbox="media/nlu-gpt/boost-generative-ai-change-url.png":::
+:::image type="content" source="media/nlu-gpt/nlu-boost-gen-ai-change-url.png" alt-text="Screenshot of the Microsoft Copilot Studio AI capabilities page with Generative Answers enabled and highlighted." lightbox="media/nlu-gpt/nlu-boost-gen-ai-change-url.png":::
 
 ### Content moderation
 
@@ -120,7 +120,7 @@ Adjust the content moderation settings from the **Generative AI** page.
    | -------------- | ------ | --- |
    | Copilot’s answers are more relevant. (default)  | Copilot generates more answers, but might be irrelevant or undesirable. | Copilot generates the most answers, but might be inaccurate. |
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-content-moderation.png" alt-text="Screenshot of the copilot's content moderation menu, showing high (default), medium, and low options.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-content-moderation.png" alt-text="Screenshot of the copilot's content moderation menu, showing high (default), medium, and low options." lightbox="media/nlu-gpt/nlu-generative-ans-content-moderation.png":::
 
 1. Select **Save** at the top of the page.
 
@@ -199,7 +199,7 @@ However, some types might produce less helpful responses, including:
 
   Select the `...` next to a sample topic on your **Topics** page and toggle the **Status** to enable or disable.
 
-  :::image type="content" source="media/nlu-gpt/disable-sample-topics.png" alt-text="Location of the sample topic toggle where you can enable or disable a sample topic.":::
+  :::image type="content" source="media/nlu-gpt/nlu-boost-disable-sample-topics.png" alt-text="Location of the sample topic toggle where you can enable or disable a sample topic.":::
 
 For more information, see [Use lesson topics in Microsoft Copilot Studio](authoring-template-topics.md).
 
