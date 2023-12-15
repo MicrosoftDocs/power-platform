@@ -94,6 +94,9 @@ Microsoft business applications work across multiple underlying technologies. Da
 
 Finance and operations entitlement includes default capacity entitlement plus accrued capacity entitlement based on each operations base enterprise and activity license. For more information, go to the Capacity Licenses section of the [Dynamics 365 License Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365).
 
+### Why did the Finance Operations Database Base User Subscription License (USL) Entitlement calculation change?
+This is due to a change in December 2023, where the Operations Database Capacity (Accrued/USL) was increased from 1.5GB to 4 GB. For more details on how base entitlement calculation works, go to the Capacity Licenses section of the [Dynamics 365 License Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365).
+
 ### Why don’t I see which tables are causing the overage?  
 
 Details at the table level aren't available in the initial launch of reporting. Table analytics will be available in a future release.
