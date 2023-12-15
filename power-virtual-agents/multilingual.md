@@ -100,7 +100,7 @@ If a copilot user has their browser configured for a language that is not config
 
 ## Multilingual copilot behavior for missing translations
 
-If the copilot author makes a change to the copilot in the primary language and doesn't [upload the translations](#managing-localization-in-a-multilingual-bot), the copilot will show the untranslated changes in the copilot's primary language. This leads to a confusing dual-language experience. Always make sure the translations are up-to-date after making changes to the copilot in the primary language.
+If the copilot author makes a change to the copilot in the primary language and doesn't [upload the translations](#managing-localization-in-a-multilingual-copilot), the copilot will show the untranslated changes in the copilot's primary language. This leads to a confusing dual-language experience. Always make sure the translations are up-to-date after making changes to the copilot in the primary language.
 
 ## Related topics
 - [Supported Languages](authoring-language-support.md)
