@@ -37,7 +37,7 @@ This quickstart helps you get started quickly to create and boost a copilot with
 
 - Your copilot must be created in the US region. View the list of [Supported languages](authoring-language-support.md).
 
-- Generative AI might be subject to [usage limits](https://learn.microsoft.com/microsoft-copilot-studio/requirements-quotas#limits) or capacity throttling.
+- Generative AI might be subject to [usage limits](requirements-quotas.md#limits) or capacity throttling.
 
 > [!IMPORTANT]
 > To enable **Boost conversations**, your admin can turn on **Boost conversational coverage with generative answers**.
