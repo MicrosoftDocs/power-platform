@@ -55,7 +55,7 @@ When creating a new topic, you can select **Create with Copilot** and ask the AI
     >  
     > If you don't see the **Copilot** option, you may need to enable **Intelligent authoring support**:
     > 1. Select the **Settings** icon on the top menu and then **General settings**.
-    >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Microsoft Copilot Studio menu with the Settings icon open.":::
+    >:::image type="content" source="media/nlu-gpt/nlu-quickstart-describe-it-enable.png" alt-text="Screenshot of the Microsoft Copilot Studio menu with the Settings icon open.":::
     >  
     > 2. Set the switch under **Intelligent authoring support** to **On**.
 
@@ -64,7 +64,7 @@ When creating a new topic, you can select **Create with Copilot** and ask the AI
 
 3. In the **Create a topic to...** field, describe the topic you want to create in simple, plain English. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.
 
-    :::image type="content" source="media/nlu-gpt/describe-it-create-topic.png" alt-text="Screenshot of the Describe it to build it pop-up window.":::
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-describe-it-create-topic.png" alt-text="Screenshot of the Describe it to build it pop-up window.":::
    
     You can select any of the examples to automatically insert them into the **Create a topic to...** field. Select **View more examples** to generate new suggestions. 
       
