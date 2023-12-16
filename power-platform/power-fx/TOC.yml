@@ -308,6 +308,8 @@
             href: reference/function-rand.md
           - name: RandBetween
             href: reference/function-rand.md    
+          - name: ReadCell
+            href: reference/function-readcell.md
           - name: ReadNFC
             href: reference/function-readnfc.md
           - name: RecordInfo
@@ -344,6 +346,8 @@
             href: reference/function-round.md
           - name: SaveData
             href: reference/function-savedata-loaddata.md
+          - name: SCountIn
+            href: reference/function-scountin.md
           - name: Search
             href: reference/function-filter-lookup.md
           - name: Second

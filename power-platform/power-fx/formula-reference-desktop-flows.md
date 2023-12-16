@@ -214,7 +214,7 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[RandBetween](reference/function-rand.md)** – Returns a pseudo-random number between two numbers.
 
-**ReadCell**
+**[ReadCell](reference/function-readcell.md)** – <mark> Enter description here </mark>
 
 **[Replace](reference/function-replace-substitute.md)** – Replaces part of a string with another string, by starting position of the string.
 
@@ -228,7 +228,7 @@ In this article, learn about all the functions available in [Power Automate for 
 
 ## S
 
-**Scountin**
+**[SCountIn](reference/function-scountin.md)** – <mark> Enter description here </mark>
 
 **[Second](reference/function-datetime-parts.md)** – Retrieves the second portion of a date/time value.
 
