@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 012/18/2023
+ms.date: 12/18/2023
 ms.subservice: power-fx
 ms.author: gregli
 contributors:
