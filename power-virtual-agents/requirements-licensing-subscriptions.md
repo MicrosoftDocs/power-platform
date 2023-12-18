@@ -57,11 +57,11 @@ To access the full range of Copilot Studio capabilities, upgrade your plan to a 
 
 After you upgrade your license, you can continue using the same copilot in the same environment. Capabilities that were previously only available in a standalone license are now be available. These capabilities might include [billed sessions that require Copilot Studio capacity](analytics-billed-sessions.md).
 
-You can upgrade from within the Copilot Studio app for Teams when prompted, as in the following example when publishing to other channels:
+You can upgrade within the Copilot Studio app for Teams from **Settings** >  **Channels**. Select the apps you want to publish to and you're prompted to upgrade.
 
-:::image type="content" source="media/requirements-licensing-subscriptions/upgrade-channels.png" alt-text="Screenshot showing little diamond icons in the upper right of each channel. These icons show you what could be available as a publishing channel for your copilot if you upgrade. You need an upgraded license to publish to channels other than Teams.":::
+:::image type="content" source="media/requirements-licensing-subscriptions/upgrade-channels.png" alt-text="Screenshot showing where the Channels section is located. You need an upgraded license to publish to channels other than Teams." lightbox="media/requirements-licensing-subscriptions/upgrade-channels.png":::
 
-You can also [start a 60 day free trial of Microsoft Copilot Studio](https://aka.ms/trypva) to try out all the capabilities. You'll be prompted to sign up for a trial if you try to create a copilot without a license.
+You can [start a 60 day free trial of Microsoft Copilot Studio](https://aka.ms/trypva) to try out all the capabilities. You're prompted to sign up for a trial if you try to create a copilot without a license.
 
 :::image type="content" source="media/requirements-licensing-subscriptions/upgrade-create.png" alt-text="Screenshot that shows a prompt to start a free trial or upgrade to premium when creating a copilot without a license.":::
 
