@@ -23,7 +23,7 @@ Microsoft is dedicated to ensuring the highest [service availability](https://se
 
 - Enabling geo redundancy, where in, all data from production environments (excluding Default environments) is backed up to the paired/secondary region. These replicas are referred to as geo-secondary replicas that are set up during the time the primary environment is deployed.
 
-- Geo-secondary replicas are kept synchronized with the primary environment through continuous data replication. While at any given point, a secondary region might be slightly behind the primary region, the data on a secondary is guaranteed to be transactionally consistent. For more information on geo replication, visit [Active geo-replication - Azure SQL Database](/azure/azure-sql/database/active-geo-replication-overview?view=azuresql)
+- Geo-secondary replicas are kept synchronized with the primary environment through continuous data replication. While at any given point, a secondary region might be slightly behind the primary region, the data on a secondary is guaranteed to be transactionally consistent. For more information on geo replication, visit [Active geo-replication - Azure SQL Database](/azure/azure-sql/database/active-geo-replication-overview)
 
 :::image type="content" source="media/bcdr.png" alt-text="Diagram illustrating a geo-secondary replica of data storage and compute infrastructure.":::
 
@@ -47,11 +47,11 @@ As part of Microsoft's business continuity and disaster recovery (BCDR) standard
 
 In the event of an unanticipated region-wide outage, such as a natural disaster that affects the entire Azure region, the following are the sequence of steps and processes that will take place
  
-| **Microsoft's responsibility**  | **Customers responsibilities**  |
+| Microsoft's responsibility  | Customers responsibilities  |
 |-------------------------|-------------------------|
 | If Microsoft detects an outage and sees customers being impacted, then Microsoft's communication team will send out the necessary communications and keep the Service Health Dashboard up to date with the necessary information | None |
 | If in the event of an outage, Microsoft will perform an automatic failover of the **production instances** to the secondary region if there is NO DATA LOSS to the customer. | None |
-| If in the event of an outage, Microsoft determines that there's DATA LOSS, then failing over the environment isn't initiated without customer consent/approval. | Once the customer is aware of the ongoing outage, and sees IMPACT, then it's the customer's responsibility.</br><ul></br><li>To reach out to Microsoft via support and find out the level of data loss that would occur if a failover is initiated.</li></br><li>If the data loss is at an acceptable level to their organization standards, then customers should provide their **consent** via support, for Microsoft to initiate a failover</li></br></ul> |
+| If in the event of an outage, Microsoft determines that there's DATA LOSS, then failing over the environment isn't initiated without customer consent/approval. | Once the customer is aware of the ongoing outage, and sees IMPACT, then it's the customer's responsibility. <ul><li>To reach out to Microsoft via support and find out the level of data loss that would occur if a failover is initiated.</li><li>If the data loss is at an acceptable level to their organization standards, then customers should provide their **consent** via support, for Microsoft to initiate a failover</li></ul> |
 | When Microsoft determines that the primary region is back online and is fully operational, a **FAILBACK** is performed on the production instances. There's no data loss or a full downtime during the planned failback process but users could experience brief interruptions or disconnects during this window. | None |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
