@@ -1,7 +1,7 @@
 ---
 title: Create copilot plugins - overview (preview)
 description: Use Microsoft Copilot Studio to create plugins that can be called directly from within chats with Microsoft Copilot.
-ms.date: 11/10/2023
+ms.date: 12/19/2023
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -111,21 +111,7 @@ End users in your tenant can use conversational and AI plugins in their chats wi
 
 ![Deploying the Dynamics 365 and Copilot Studio app](media/copilot-plugins-overview/deploy-dynamics365-and-copilot-studio.png)
 
-### Enable the Microsoft 365 Copilot setting (admin)
-
-1. Sign in to the Power Platform admin center at https\://admin.powerplatform.microsoft.com with your admin account.
-
-1. Select **Environments** on the side navigation pane and then select the environment where you want your plugins to be used.
-
-1. Expand the **Product** section, and select **Features**.
-
-1. Set the switch for **M365 Copilot** to **On**.
-
-1. Scroll to the end of the **Features** page and select **Save**.
-
-![Enabling the Microsoft 365 Copilot setting](media/copilot-plugins-overview/enable-microsoft-365-copilot-setting.png)
-
-### Enable the connection in Microsoft Copilot (user)
+### Enable the connection in Microsoft Copilot
 
 Microsoft Copilot end users need to create a connection between their chat instance and the plugin registry. They only need to create a connection once, then they can interact with all existing and any future plugins that are available to do them.
 
