@@ -92,8 +92,6 @@ End users in your tenant can use conversational and AI plugins in their chats wi
 
 1. Your Microsoft 365 tenant admin deploys the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center.
 
-1. Your Power Platform environment admin enables the Microsoft 365 Copilot setting in the Power Platform admin center.
-
 1. The end user enables the connection from within their chat with Microsoft Copilot.
 
 ### Deploy the Dynamics 365 and Copilot Studio app (admin)
@@ -125,12 +123,11 @@ Users can also ask directed questions about data connections or how to perform c
 - *How can I get data from an external system?*
 - *How can I get data from Salesforce?*
 
-  ## Share AI plugins
+## Share AI plugins
 
 By default, plugins are only visible and usable in Copilot Studio by the person who authored them.
 
 However, the plugin author can share their plugins in the portal where they created them. For example, you can share an AI Builder prompt from the **AI prompts** page by selecting **Share** for the prompt. The same applies for Power Automate flows (from the **Flows** page in Power Automate) or for custom connectors from the **Custom connectors** page.
-  
  
 ## Related topics
 
