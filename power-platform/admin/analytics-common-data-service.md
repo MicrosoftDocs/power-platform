@@ -216,7 +216,7 @@ For more information on the different roles for managing your tenant across the 
 > |   Total API Calls   | This chart shows how many API calls have been made in total in the environment with a Dataverse database over the specified time.     | 
 > |    Most Used API    | This chart shows top 10 most executed API calls in the environment with a Dataverse database database. Adding the individual counts here will provide the total of the top 10 API calls. This will not be the same as the all up Total API Calls metric above.       | 
 > |      API Calls      | This chart shows how many API calls have been made over time in the environment with a Dataverse database over the specified time. Adding up the individual counts will equal the Total API Calls count.  |
-> |      API peak call rate      | This chart shows capacity consumption relative to the API call limit.   |
+> |      API peak call rate      | This chart shows capacity consumption relative to the API call limit. More information: [API peak call rate report](#api-peak-call-rate-report)   |
 
 ### Update frequency  
  API Call Statistics chart data is updated as follows.  
