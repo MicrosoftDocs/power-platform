@@ -13,7 +13,7 @@ search.audienceType:
 
 # Power Pages activity logging
 
-Power Pages activities are tracked from the [Microsoft Purview compliance portal](https://learn.microsoft.com/purview/purview).
+Power Pages activities are tracked from the [Microsoft Purview compliance portal](/purview/purview).
 
 Follow these steps.
 
