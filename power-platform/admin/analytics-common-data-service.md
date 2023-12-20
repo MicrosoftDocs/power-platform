@@ -1,13 +1,14 @@
 ---
 title: "View and download Dataverse analytics"
 description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
-author: StephenRauchPM
+author: Zeffin 
 ms.topic: conceptual
-ms.date: 03/22/2022
+ms.date: 01/15/2024
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: johnev
 ms.reviewer: sericks
-
+ms.contriutors:
+ - mbajwa
 ---
 
 # Microsoft Dataverse analytics
@@ -215,6 +216,7 @@ For more information on the different roles for managing your tenant across the 
 > |   Total API Calls   | This chart shows how many API calls have been made in total in the environment with a Dataverse database over the specified time.     | 
 > |    Most Used API    | This chart shows top 10 most executed API calls in the environment with a Dataverse database database. Adding the individual counts here will provide the total of the top 10 API calls. This will not be the same as the all up Total API Calls metric above.       | 
 > |      API Calls      | This chart shows how many API calls have been made over time in the environment with a Dataverse database over the specified time. Adding up the individual counts will equal the Total API Calls count.  |
+> |      API peak call rate      | This chart shows capacity consumption relative to the API call limit.   |
 
 ### Update frequency  
  API Call Statistics chart data is updated as follows.  
@@ -226,6 +228,43 @@ For more information on the different roles for managing your tenant across the 
 |Most Used API|24 hours|  
 |Total API Calls|24 hours|  
 |API Calls|24 hours|  
+
+### API peak call rate report
+
+The API peak call rate report shows API usage graph with the number of requests per user/application for the selected interval. This report helps you monitor the API usage, and avoid hitting the service protection limits.
+
+#### Analyze API peak call rate
+
+To help interpret and act on the capacity, the graph also shows the API peak limit. The bars show the max number of API requests by app/users within a 5-minute interval. The maximum is the number of requests per user per five minutes that is based on your licenses and capacity add-ons.
+  
+You can also have a direct view of where your actual use of capacity is relative to the limit so you can be sure that you are within the limit.
+
+When the graph shows that your requests per user/app are beyond the peak limit (identified with a red line), it means that you have reached a peak and your requests are being throttled.
+
+API peak call rate is calculated as the maximum of either:
+
+- The peak requests per second (RPS) recorded by the request count API limit. This is a measure of request count per unit time.
+- The peak cumulative execution time recorded by the time API limit. Each 150 ms of request execution time is counted as one API call, and then summed up for every 5-minute interval. This is a measure of compute time, converted to an equivalent number of API calls per unit time.
+
+Report shows data using a single unit of measure to make it easy to get an overview of API utilization. For more information about the API count and time limits, refer to the service protection limits documentation .
+
+Example scenarios:
+
+1. Client sends 150,000 web API calls in 5 minutes that each execute for 50 ms. 150,000 per 5 minutes is 30,000 per minute, or 500 requests per second. The time recorded is 750,000 ms, equivalent to 5000 API calls per 5 minutes(750,000 / 150), or 17 requests per second. The burst limit records a higher value in this case, so the peak rate displayed is 500 API calls per second.
+1. Client sends 300 web API calls in 5 minutes that each execute for 10 seconds. The burst API limit records an incoming rate of one request per second. The time recorded is 3,000 seconds or 3,000,000 ms, equivalent to 20,000 API calls per 5 minutes (3,000,000 / 150), or 67 API calls per second. The time limit records a higher value in this case, so the peak rate displayed is 67 API calls per second.
+
+:::image type="content" source="media\analytics-common-data-service\api-peak-call-rate.png" alt-text="A screenshot of API peak call rate graph" :::
+
+| Chart	element | Description |
+| - | - |
+| SDSService and OData|	The bars show the max number of API requests by app/users within 5-min interval. The maximum is the number of requests per user per five minutes that is based on your licenses and capacity add-ons. |
+| API Peak limit | The peak requests per second recorded by the request count API limit. This is a measure of request count per unit time. |
+
+#### Optimize API peak call rate
+
+The usage graph can help you identify what users/applications are approaching or exceeding the service protection limits and take actions to mitigate it as necessary.
+
+To optimize limit, consider reducing the number of API requests by user/app or increase the limit by adding more capacity and bring the peak limit (identified with a red line) higher.
 
 <a name="BKMK_MailboxUsage"></a>   
 
