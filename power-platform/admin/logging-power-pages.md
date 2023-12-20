@@ -23,7 +23,7 @@ Follow these steps:
 
 :::image type="content" source="media/admin-activity-logging/logging-power-pages/audit-new-search.png" alt-text="A screenshot of the New Search options for Audit.":::
 
-From the Audit screen, an administrator can filter for specific activities by using the 'Activities – friendly names' dropdown and choosing from the available options.
+From the Audit screen, an administrator can filter for specific activities by selecting the **Activities – friendly names** dropdown and choosing from the available options.
 
 To filter or search for Power Pages admin activities, select **PowerPlatformAdministratorActivity** as the value for **Record types**. 
 
