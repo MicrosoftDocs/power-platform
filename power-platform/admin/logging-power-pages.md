@@ -59,9 +59,8 @@ The following are some of the user events you can audit.
 | Update custom certificates                     | CustomCertificateUpdated               | When a custom certificate associated with the site is updated                 |
 | Enable maintenance mode                        | MaintenanceModeEnabled                 | When site is put in maintenance mode                                          |
 | Disable maintenance mode                       | MaintenanceModeDisabled                | When site if taken off of maintenance mode                                    |
-| disableAnonymousAccess exception list changed | AnonymousSettingExceptionListChanged\* | When anonymous access governance control is changed                           |
+| disableAnonymousAccess exception list changed | AnonymousSettingExceptionListChanged | When anonymous access governance control is changed<br /><br />These operations take time to complete from the point they are initiated. The audit logs are captured when the action is initiated. It is not necessary that the action is successfully completed.                           |
 
-\* These operations take time to complete from the point they are initiated. The audit logs are captured when the action is initiated. It is not necessary that the action is successfully completed.
 
 ## Review your audit data using reports in Microsoft Purview compliance portal
 
