@@ -43,6 +43,8 @@ If you're an administrator of your Microsoft Copilot Studio tenant, you can use 
 
 1. In the side pane, select **Help + Support**, and then select **New support request**.
 
+   :::image type="content" source="media/fundamentals-support/new-support-request.png" alt-text="Screenshot showing how to submit a new request to Microsoft support." lightbox="media/fundamentals-support/new-support-request.png":::
+
 For more information about help and support in the Power Platform admin center, see [Get Help + Support](/power-platform/admin/get-help-support) at the Microsoft Power Platform admin documentation library.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
