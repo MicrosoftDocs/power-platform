@@ -15,7 +15,7 @@ search.audienceType:
 
 Power Pages activities are tracked from the [Microsoft Purview compliance portal](/purview/purview).
 
-Follow these steps.
+Follow these steps:
 
 1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a tenant admin.
 
@@ -23,7 +23,7 @@ Follow these steps.
 
 :::image type="content" source="media/admin-activity-logging/logging-power-pages/audit-new-search.png" alt-text="A screenshot of the New Search options for Audit.":::
 
-Once the Audit screen is accessed, an administrator can filter for specific activities by using the 'Activities – friendly names' dropdown and searching through the available options.
+From the Audit screen, an administrator can filter for specific activities by using the 'Activities – friendly names' dropdown and choosing from the available options.
 
 To filter or search for Power Pages admin activities, select the Record types as 'PowerPlatformAdministratorActivity'
 
@@ -47,7 +47,7 @@ The following are some of the user events you can audit.
 | Shut down site                                 | SiteShutDown                           | When site is shut down                                                        |
 | Delete site                                    | SiteDeleted                            | Site is deleted                                                               |
 | Add custom domain name                         | CustomDomainConnected                  | When site is connected to a custom domain                                     |
-| Remove custom domain name                      | CustomDomainDeleted                    | When custom domain has been removed from the site                             |
+| Remove custom domain name                      | CustomDomainDeleted                    | When custom domain is removed from the site                             |
 | Change site visibility                         | SiteVisibilityUpdated                  | When site visibility is changed (private to public, or public to private)     |
 | Update site visibility permissions             | SiteVisibilityPermissionsUpdated       | When site visibility permissions (who can change site visibility) are updated |
 | convert trial to production                    | ConvertedToProduction                  | When site is converted from trial to production                               |
@@ -59,7 +59,7 @@ The following are some of the user events you can audit.
 | Update custom certificates                     | CustomCertificateUpdated               | When a custom certificate associated with the site is updated                 |
 | Enable maintenance mode                        | MaintenanceModeEnabled                 | When site is put in maintenance mode                                          |
 | Disable maintenance mode                       | MaintenanceModeDisabled                | When site if taken off of maintenance mode                                    |
-| disableAnonymousAccess exception list changed | AnonymousSettingExceptionListChanged | When anonymous access governance control is changed<br /><br />These operations take time to complete from the point they are initiated. The audit logs are captured when the action is initiated. It is not necessary that the action is successfully completed.                           |
+| disableAnonymousAccess exception list changed | AnonymousSettingExceptionListChanged | When anonymous access governance control is changed<br /><br />These operations take time to complete from the point they're initiated. The audit logs are captured when the action is initiated. It isn't necessary that the action is successfully completed.                           |
 
 
 ## Review your audit data using reports in Microsoft Purview compliance portal
