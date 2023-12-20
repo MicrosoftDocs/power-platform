@@ -29,7 +29,7 @@ Check community forums to find user solutions that might help you.
 
 - [Submit an idea](https://go.microsoft.com/fwlink/?linkid=2064961)
 
-   Do you have a great idea that will make Copilot Studio even better? We'd love to hear from you!
+   Do you have a great idea that makes Copilot Studio even better? We'd love to hear from you!
 
 ## Prerequisites
 
