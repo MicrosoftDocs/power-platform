@@ -19,11 +19,15 @@ Follow these steps.
 
 1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a tenant admin.
 
-1. Select **Search** &gt; **Audit log search**.
+1. Under **Solutions**, select **Audit**.
+
+:::image type="content" source="media/admin-activity-logging/logging-power-pages/audit-new-search.png" alt-text="A screenshot of the New Search options for Audit.":::
 
 Once the Audit screen is accessed, an administrator can filter for specific activities by using the 'Activities – friendly names' dropdown and searching within that.
 
 To filter or search for Power Pages admin activities, select the Record types as 'PowerPlatformAdministratorActivity'
+
+:::image type="content" source="media/admin-activity-logging/logging-power-pages/new-search-record-types.png" alt-text="A screenshot of the New Search page with Record types emphasized. The value PowerPlatformAdministratorActivity is emphasized.":::
 
 ## What events are audited?
 
