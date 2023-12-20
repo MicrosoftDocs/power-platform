@@ -37,9 +37,7 @@ The template can log an employee's escalation request, notify a human expert, an
 
 The copilot obtains employee feedback so you can make improvements to the copilot over time.
 
-As copilot can be customized and extended to suit your needs with no developer and data science background required.
-
-Whether it's HR, IT, or other internal employee functions, the Employee FAQ copilot template is a great place to start on your copilot-building journey.
+A copilot can be customized and extended to suit your needs with no developer and data science background required.
 
 Download the copilot template from GitHub:
 
