@@ -21,13 +21,9 @@ Follow these steps.
 
 1. Select **Search** &gt; **Audit log search**.
 
-![](media/image1.png)
-
 Once the Audit screen is accessed, an administrator can filter for specific activities by using the 'Activities – friendly names' dropdown and searching within that.
 
 To filter or search for Power Pages admin activities, select the Record types as 'PowerPlatformAdministratorActivity'
-
-![](media/image2.png)
 
 ## What events are audited?
 
