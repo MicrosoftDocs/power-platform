@@ -306,7 +306,7 @@ A deployment is started. When it's done, the enterprise policy is created.
   - `"southafrica"`
   - `"switzerland”`
   - `"germany"`
-  - `"unitedarabemirates"`
+  - `"uae"`
   - `"france"`
   - `"uk”`
   - `"japan"`
