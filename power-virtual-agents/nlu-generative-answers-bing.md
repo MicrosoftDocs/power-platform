@@ -49,5 +49,5 @@ To use Bing search or Bing Custom Search:
 
 1. Save changes to your topic.
 
-> [!CAUTION]
-> Information sources defined in the **Generative answers** node override sources at the copilot level. Copilot level sources function as a fallback.
+> [!IMPORTANT]
+> Information sources defined in the **Generative answers** node take priority at the copilot level. Copilot level sources function as a fallback.

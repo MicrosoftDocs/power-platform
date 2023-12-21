@@ -53,5 +53,5 @@ When you connect data through Azure OpenAI in Microsoft Copilot Studio, your cop
 
 The topic now generates answers from the information sources defined by your Azure OpenAI connection.
 
-> [!CAUTION]
-> Information sources defined in the **Generative answers** node override sources at the copilot level. Copilot level sources function as a fallback.
+> [!IMPORTANT]
+> Information sources defined in the **Generative answers** node take priority at the copilot level. Copilot level sources function as a fallback.
