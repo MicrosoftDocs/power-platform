@@ -14,12 +14,11 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Use a connection to Azure OpenAI on your data for generative answers
-
+# Connect your data to Azure OpenAI for generative answers
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-By connecting Microsoft Copilot Studio with Azure OpenAI on your data, your bots can leverage resources from Azure through the Generative answers node. [Azure OpenAI on your data](/azure/ai-services/openai/concepts/use-your-data) works with the powerful language models in OpenAI and Azure Cognitive Search to index your data and provide responses while complying with your organizational policies.
+When you connect data through Azure OpenAI in Microsoft Copilot Studio, your copilots can use resources from Azure through the generative answers node. [Azure OpenAI on your data](/azure/ai-services/openai/concepts/use-your-data) works with the powerful language models. The models of OpenAI and Azure Cognitive Search index your data and provide responses while complying with your organizational policies.
 
 ## Prerequisites
 
@@ -27,41 +26,32 @@ By connecting Microsoft Copilot Studio with Azure OpenAI on your data, your bots
 
   :::image type="content" source="media/nlu-gpt/generative-answers-azure-connect.png" alt-text="Screenshot showing the Azure OpenAI Studio.":::
 
-- Connect a Microsoft Copilot Studio bot to your data by selecting **Deploy to** and then **A new Microsoft Copilot Studio bot**. The bot is created and automatically connected to your Azure resource in your default environment.
+- Connect a Copilot Studio copilot to your data by selecting **Deploy to** and then **A new Microsoft Copilot Studio bot**. The copilot is created and automatically connects to your Azure resource in your default environment.
 
-  :::image type="content" source="media/nlu-gpt/aoai-default-instance.png" alt-text="Screenshot showing deployment of the bot into the default environment.":::
-
-
-> [!IMPORTANT]
-> 
-> [!INCLUDE[prereq-lote](includes/prereq-lote.md)]
->  
+  :::image type="content" source="media/nlu-gpt/aoai-default-instance.png" alt-text="Screenshot showing deployment of the copilot into the default environment.":::
 
 > [!NOTE]
-> A Conversational boosting system topic is automatically generated when the bot is created from Azure OpenAI Studio.
+> A **Conversational boosting** system topic is automatically generated when the copilot is created from Azure OpenAI Studio.
 >  
 > :::image type="content" source="media/nlu-gpt/generative-answers-azure-topic.png" alt-text="Screenshot showing the conversational boosting topic in the list of topics."::: boosted topic
 
-To use Azure OpenAI:
+## Use Azure OpenAI in Copilot Studio
 
-1. In Microsoft Copilot Studio, open the **Data source** configuration pane for your [topic's generative answers node](nlu-boost-node.md):
+1. Open the **Data source** configuration pane from one of two places:
 
-    - Open the **Properties** pane for the **Create generative answers** node and select **Data source**.
-    - On the **Create generative answers** node, select **Edit** under **Data sources**.
-    
-    :::image type="content" source="media/nlu-gpt/create-gen-ans-node-image-highlight-22May23.png" alt-text="Screenshot of the Search and summarize content node properties.":::
+   1. On the **Create generative answers** node, select **Edit** under **Data sources**.
+
+      :::image type="content" source="media/nlu-gpt/select-properties-from gen-ans.png" alt-text="Screenshot that shows where to select the Properties pane.":::
+
+   1. Alternatively, select the `...` in the **Create generative answers** node, then select **Properties** to open a pane, and finally select **Data source**.
 
 1. Edit the connection to the Azure OpenAI Service.
 
-    :::image type="content" source="media/nlu-gpt/generative-answers-azure-source.png" alt-text="Screenshot showing the Azure OpenAI source."::: 
+   :::image type="content" source="media/nlu-gpt/generative-answers-azure-source.png" alt-text="Screenshot showing the Azure OpenAI source." lightbox="media/nlu-gpt/generative-answers-azure-source.png":::
 
 1. When you're done entering sources, close the menu. Make sure to save any changes to your topic.
 
-The topic will now generate answers from the information sources defined by your Azure OpenAI connection.
+The topic now generates answers from the information sources defined by your Azure OpenAI connection.
 
->[!CAUTION]
-> Information sources defined in the **Generative answers** node will override those you have specified at the bot level, which will then function as a fallback.
->
-
-
-
+> [!CAUTION]
+> Information sources defined in the **Generative answers** node override sources at the copilot level. Copilot level sources function as a fallback.
