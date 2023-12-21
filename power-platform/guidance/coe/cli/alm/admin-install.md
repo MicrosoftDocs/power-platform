@@ -102,7 +102,7 @@ More information: [COE ALM generate install](https://aka.ms/coe-cli/help/alm/ins
 
 More information: [CoE ALM generate install](https://aka.ms/coe-cli/help/alm/install)
 
-If you're prompted to create an HTTP with Microsoft Entra ID connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Microsoft Entra Resource URI**.
+If you're prompted to create an HTTP with Microsoft Entra ID connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. [Update permissions for the project build service](../../setup-almacceleratorpowerplatform.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 
