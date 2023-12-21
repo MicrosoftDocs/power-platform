@@ -33,7 +33,7 @@ The [OWASP top 10](https://owasp.org/www-project-top-ten/) is a standard awarene
 [A01:2021 Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
 
 - The Power Platform security model is built on Least Privileged Access (LPA). LPA enables customers to build applications with more granular access control.
-- Power Platform uses Azure Active Directory's (Azure AD) [Microsoft Identity Platform](/azure/active-directory/develop/v2-overview) for authorization of all API calls with the industry-standard OAuth 2.0 protocol.  
+- Power Platform uses Microsoft Entra ID's (Microsoft Entra ID) [Microsoft Identity Platform](/azure/active-directory/develop/v2-overview) for authorization of all API calls with the industry-standard OAuth 2.0 protocol.  
 - Dataverse, which provides the underlying data for Power Platform, has a rich security model that includes environment-level, role-based, and record- and field-level security.
 
 [A02:2021 Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/)  
@@ -80,9 +80,9 @@ Power Platform uses industry-standard best practices to prevent injection attack
 
 [A07:2021 Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
 
-- Power Platform is built on and depends on Azure AD for identification and authentication.
-- Azure AD helps Power Platform to enable [secure features](https://azure.microsoft.com/services/active-directory/#features). These features include single sign-on, multi-factor authentication, and a single platform to engage with internal and external users more securely.
-- With Power Platform's upcoming implementation of Azure AD [Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) (CAE), user identification and authentication will be even more secure and reliable.
+- Power Platform is built on and depends on Microsoft Entra ID identification and authentication.
+- Microsoft Entra helps Power Platform to enable [secure features](https://azure.microsoft.com/services/active-directory/#features). These features include single sign-on, multi-factor authentication, and a single platform to engage with internal and external users more securely.
+- With Power Platform's upcoming implementation of Microsoft Entra ID [Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) (CAE), user identification and authentication will be even more secure and reliable.
 
 [A08:2021 Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/)
 
@@ -140,15 +140,15 @@ Power Platform scopes session cookies to the parent domain to allow authenticati
 
 ### How can we set the application session to time out after, say, 15 minutes?
 
-Power Platform uses Azure AD for identity and access management. It follows [Azure AD's recommended session management configuration](/azure/active-directory/develop/access-tokens#access-token-lifetime) for an optimal user experience.
+Power Platform uses Microsoft Entra ID identity and access management. It follows [Microsoft Entra ID's recommended session management configuration](/azure/active-directory/develop/access-tokens#access-token-lifetime) for an optimal user experience.
 
 However, you can customize environments to have explicit session and/or activity timeouts.  For more information, see [User session and access management](../user-session-management.md).  
 
-With Power Platform's upcoming implementation of Azure AD [Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation), user identification and authentication will be even more secure and reliable.
+With Power Platform's upcoming implementation of Microsoft Entra ID [Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation), user identification and authentication will be even more secure and reliable.
 
 ### The application allows the same user to access from more than one machine or browser at the same time. How can we prevent that?
 
-Accessing the application from more than one device or browser at the same time is a convenience for users. Power Platform's upcoming implementation of Azure AD [Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) will help to ensure that access is from authorized devices and browsers and is still valid.
+Accessing the application from more than one device or browser at the same time is a convenience for users. Power Platform's upcoming implementation of Microsoft Entra ID [Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) will help to ensure that access is from authorized devices and browsers and is still valid.
 
 ### Why do some Power Platform services expose server headers with verbose information?
 
@@ -177,7 +177,7 @@ The Power Apps security model doesn't include the concept of disabled controls. 
 The latest penetration tests and security assessments can be found on the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/viewpage/PenTest). 
 
 > [!NOTE]
-> To access some of the resources on the Service Trust Portal, you must sign in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft non-disclosure agreement for compliance materials.
+> To access some of the resources on the Service Trust Portal, you must sign in as an authenticated user with your Microsoft cloud services account (Microsoft Entra organization account) and review and accept the Microsoft non-disclosure agreement for compliance materials.
 
 ### Related articles
 
@@ -191,7 +191,7 @@ The latest penetration tests and security assessments can be found on the [Micro
 - [Microsoft Identity Platform](/azure/active-directory/develop/v2-overview)  
 - [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/practices)  
 - [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling)  
-- [Azure AD Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)  
+- [Microsoft Entra Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)  
 - [Content Security Policy](../content-security-policy.md) 
 - [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-standard-features)  
 - [Intune's compliance policy settings](/mem/intune/protect/device-compliance-get-started#compliance-policy-settings)
