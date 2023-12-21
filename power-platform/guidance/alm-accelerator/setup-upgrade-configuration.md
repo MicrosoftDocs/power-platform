@@ -50,9 +50,9 @@ Download the latest managed solution file from [GitHub](https://github.com/micro
 1. On the **Security** tab, select **Edit**, and then set the following values:
 
    - **Identity provider**: **Microsoft Entra ID**
-   - **Client ID**: The **Application (client) ID** from [the app registration](setup-admin-tasks.md#create-an-app-registration-in-your-azure-ad-environment)
-   - **Client secret**: The **Application (client) secret value** from [the app registration](setup-admin-tasks.md#create-an-app-registration-in-your-azure-ad-environment)<!-- EDITOR'S NOTE: Users can't copy the client secret value except after it's first created. They need to create a new one to copy. How does that change these instructions? -->
-   - **Resource URL**: The **DevOps Application (client) ID** from [the app registration](setup-admin-tasks.md#create-an-app-registration-in-your-azure-ad-environment)
+   - **Client ID**: The **Application (client) ID** from [the app registration](setup-admin-tasks.md#create-an-app-registration-in-your-microsoft-entra-environment)
+   - **Client secret**: The **Application (client) secret value** from [the app registration](setup-admin-tasks.md#create-an-app-registration-in-your-microsoft-entra-environment)
+   - **Resource URL**: The **DevOps Application (client) ID** from [the app registration](setup-admin-tasks.md#create-an-app-registration-in-your-microsoft-entra-environment)
 
 1. On the **Test** tab, select **Test operation**.
 
