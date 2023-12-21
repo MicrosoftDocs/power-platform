@@ -50,11 +50,11 @@ Different information sources have different capabilities, such as the number of
 
    :::image type="content" source="media/nlu-gpt/nlu-boost-add-gen-ai-node.png" alt-text="Screening showing the location of the generative answers node option when adding a new node." lightbox="media/nlu-gpt/nlu-boost-add-gen-ai-node.png":::
 
-1. A new node, called **Create generative answers** will be added to your topic, and will open the **Properties** pane automatically. Or, access the **Properties** pane by selecting the node's `...` then **Properties**.
+1. A new node called **Create generative answers** is added to your topic and opens the **Properties** pane automatically. Or, access the **Properties** pane by selecting the node's `...` then **Properties**.
 
    You can specify and configure your new data sources:
 
-   - [Use a Bing Custom Search to search a number of websites](nlu-generative-answers-bing.md)
+   - [Use a Bing Custom Search to search many websites](nlu-generative-answers-bing.md)
    - [Use a connection to Azure OpenAI on your data](nlu-generative-answers-azure-openai.md)
    - [Upload documents to use as a data source (preview)](nlu-documents.md)
    - [Use content on SharePoint or OneDrive for Business](nlu-generative-answers-sharepoint-onedrive.md)
@@ -79,7 +79,7 @@ Include delegated permissions for **Microsoft Graph**:
 
 ## Supported content
 
-Generative answers obtains content stored in these formats:
+Generative answers obtain content stored in these formats:
 
 - SharePoint pages (aspx pages)
 - Word documents (docx)
