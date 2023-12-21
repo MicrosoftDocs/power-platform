@@ -85,9 +85,9 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 |------|------------|---------|
 | Audit Logs - Audience | The audience parameter for the HTTP calls. | Commercial (Default): https://<span>manage</span>.office.com<br><br>GCC: https://<span>manage-gcc</span>.office.com<br><br>GCC High: https://<span>manage</span>.office365.us><br><br>DoD: https://<span>manage</span>.protection.apps.mil|
 | Audit Logs - Authority | The authority field in the HTTP calls. | Commercial (Default): https://<span>login</span>.windows.net<br><br>GCC: https://<span>login</span>.windows.net<br><br>GCC High: https://<span>login</span>.microsoftonline.us<br><br>DoD: https://<span>login</span>.microsoftonline.us |
-| Audit Logs - ClientID | App registration Client ID. | The application client ID from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-an-microsoft-entra-app-registration-for-the-office-365-management-api) step. |
-| Audit Logs - Client Secret | App registration client secret in plain text. | The application client secret from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-an-microsoft-entra-app-registration-for-the-office-365-management-api) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
-| Audit Logs - Client Azure Secret | Azure Key Vault reference of the App registration client secret.  | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-an-microsoft-entra-app-registration-for-the-office-365-management-api) step. Leave empty if you're storing your client ID in plain text in the **Audit Logs - Client Secret** environment variable. This variable expects the Azure Key Vault reference, not the secret. Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)|
+| Audit Logs - ClientID | App registration Client ID. | The application client ID from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api) step. |
+| Audit Logs - Client Secret | App registration client secret in plain text. | The application client secret from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
+| Audit Logs - Client Azure Secret | Azure Key Vault reference of the App registration client secret.  | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api) step. Leave empty if you're storing your client ID in plain text in the **Audit Logs - Client Secret** environment variable. This variable expects the Azure Key Vault reference, not the secret. Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)|
 
 ### Start a subscription to audit log content
 
@@ -106,7 +106,7 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 >
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check by seeing if you can search in [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
-> - Validate that you correctly followed the steps in [Microsoft Entra app registration](#create-an-microsoft-entra-app-registration-for-the-office-365-management-api).
+> - Validate that you correctly followed the steps in [Microsoft Entra app registration](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api).
 > - Validate that you correctly updated the environment variables for these flows.
 
 ### Turn on flows
