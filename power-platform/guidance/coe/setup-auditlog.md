@@ -177,7 +177,7 @@ You should see a (200) status returned, which means the query was successful.
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Microsoft Entra app registration?
 > - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
-> - Validate that you correctly followed the steps in [Microsoft Entra app registration](#create-an-microsoft-entra-app-registration-for-the-office-365-management-api).
+> - Validate that you correctly followed the steps in [Microsoft Entra app registration](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api).
 > - Validate that you correctly updated the security settings of the custom connector, as described in [step 6 of the custom connector setup](#set-up-the-custom-connector) procedure earlier in this article.
 >
 > If you are still seeing failures, your connection may be in a bad state. Learn more: [Step-by-step instructions to repair Audit Log connection](https://github.com/microsoft/coe-starter-kit/issues/4961)
