@@ -130,6 +130,6 @@ Users can create OpenAI plugins and use them to generate connectors to integrate
 1. Select **Add Plugin**.  
    ![Create Openai Added](media/copilot-ai-plugins/create-openai-added.png)
 
-Your copilot plugin is generated along with your custom connector for the plugin. Both are available for use within your organization and can be included in solutions that you export. For more information, see [Create a custom connector from an OpenAI definition](/connectors/custom-connectors/define-openapi-definition).
+Your copilot plugin is generated along with your custom connector for the plugin. Both are available for use within your organization and can be included in solutions that you export. For more information, see [Create a custom connector from an OpenAPI definition](/connectors/custom-connectors/define-openapi-definition).
 
 After you create your plugin, [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).
