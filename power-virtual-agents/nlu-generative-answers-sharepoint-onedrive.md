@@ -21,7 +21,7 @@ searchScope:
 This capability works by pairing your copilot with a URL, such as _contoso.sharepoint.com/sites/policies_. When a copilot user asks a question and the copilot doesn't have a topic to use for an answer, the copilot searches the URL and all sub-paths. For example, a URL such as _contoso.sharepoint.com/sites_ also includes subpaths like _contoso.sharepoint.com/sites/policies_. Generative answers summarize this content into a targeted response.
 
 > [!IMPORTANT]
-> Content analysis and retrieval requires authentication. To authenticate your copilot, see [Authentication](nlu-boost-node#authentication). The **No authentication** and **Only for Teams** authentication options can't retrieve information from Sharepoint or OneDrive for Business.
+> Content analysis and retrieval requires authentication. To authenticate your copilot, see [Authentication](nlu-boost-node.md#authentication). The **No authentication** and **Only for Teams** authentication options can't retrieve information from Sharepoint or OneDrive for Business.
 >
 > When configuring authentication, scopes control user access. Specify **Sites.Read.All**, **Files.Read.All** in the scopes field near the existing **profile** and **openid** values. These scopes don't give users increased permissions when using the copilot, but allow their permissible content from the Sharepoint site as configured for generative answers.
 
