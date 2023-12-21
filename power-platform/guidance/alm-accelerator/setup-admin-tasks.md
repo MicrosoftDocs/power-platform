@@ -217,7 +217,7 @@ Import the ALM Accelerator canvas app into your Power Platform environment, and 
 
 1. Confirm that the **Redirect URL** on the **Security** page is `https://global.consent.azure-apim.net/redirect`.
 
-    If it isn't, copy the URL. [Return to the app registration you created](#create-an-app-registration-in-your-azure-ad-environment) earlier and replace the redirect URI there with the copied URL.
+    If it isn't, copy the URL. [Return to the app registration you created](#create-an-app-registration-in-your-microsoft-entra-environment) earlier and replace the redirect URI there with the copied URL.
 
 #### Test the custom connector
 
