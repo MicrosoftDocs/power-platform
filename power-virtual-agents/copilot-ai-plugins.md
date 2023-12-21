@@ -27,7 +27,7 @@ You can create multiple types of AI plugins in Microsoft Copilot Studio:
 
 This article provides instructions for creating, sharing, or publishing plugins.
 
-After you create plugins, [enable them for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot), or [add them to a custom copilot as a plugin action](./advanced-plugin-actions.md).
+After you create plugins, [enable them for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot), or [add them to a custom copilot as a plugin action](./advanced-plugin-actions.md).
 
 AI plugins can be created on the **AI plugins (preview)** page in Copilot Studio, under **Plugins (preview)** on the side navigation pane:
 
