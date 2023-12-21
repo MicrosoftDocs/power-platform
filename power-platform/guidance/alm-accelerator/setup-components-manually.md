@@ -681,7 +681,7 @@ Import the ALM Accelerator canvas app into your Power Platform environment, and 
    | Name | Value |
    |--|--|
    | **Authentication Type** | **OAuth 2.0** |
-   | **Identity provider** | **Microsoft Entra ID** |
+   | **Identity provider** | **Azure Active Directory** |
    | **Client ID** | The **Application (client) ID** you copied when you [created the app registration](#create-the-app-registration) |
    | **Client secret** | The **Application (client) secret value** you copied when you [created the app registration](#create-the-app-registration) |
    | **Tenant ID** | Leave the default value, **common** |
