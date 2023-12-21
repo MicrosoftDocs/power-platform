@@ -146,9 +146,9 @@ PeoplePicker1.SelectedPeople
 
       Add Users or specific users(using below code) from table to the items collection(under `Suggestions_Items` property) of `PeoplePicker`.
 
-    -**`Microsoft Entra Users` table**
+    -**`AAD Users` table**
       ```powerapps-dot
-      Search('Microsoft Entra Users', Self.SearchText,"displayname" ,"mail")
+      Search('AAD Users', Self.SearchText,"displayname" ,"mail")
       ```
    -**`Users` table**
       ```powerapps-dot
@@ -157,7 +157,7 @@ PeoplePicker1.SelectedPeople
 
 1. Map the columns according to your need using AddColumns(). Below is an example of Column-Property Mapping:
 
-    |Property Name|Microsoft EntraUser Table Column|User Table Column|
+    |Property Name|AADUser Table Column|User Table Column|
     |-------------|--------------------|-----------------|
     |SuggestionKey|"mail"|"internalemailaddress"|
     |SuggestionName|"displayname"|"fullname"|
