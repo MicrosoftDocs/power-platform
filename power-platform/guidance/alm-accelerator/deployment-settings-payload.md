@@ -34,7 +34,7 @@ The following tables describe the deployment settings that are included in the p
   | Setting | Required | Description |
   | ------- | -------- | ----------- |
   | environmentvariable.environment-variable-schema-name | No | Sets the value of environment variables in an environment during deployment. |
-  | canvasshare.aadGroupId.canvas-app-schema-name | No | Sets the Microsoft Microsoft Entra group ID for sharing the canvas app. When the canvas app is to be shared with multiple Microsoft Entra groups, a unique identifier of .1 or .2 can be added to the end of the setting. |
+  | canvasshare.aadGroupId.canvas-app-schema-name | No | Sets the Microsoft Entra group ID for sharing the canvas app. When the canvas app is to be shared with multiple Microsoft Entra groups, a unique identifier of .1 or .2 can be added to the end of the setting. |
   | canvasshare.roleName.canvas-app-schema-name | No | Sets the role to assign to the Microsoft Entra group. Valid options are **CanView**, **CanViewAndShare**, and **CanEdit**. When the canvas app is to be shared with multiple Microsoft Entra groups, a unique identifier of .1 or .2 can be added to the end of the setting. |
   | owner.ownerEmail.flow-name.flow-id | No | Sets the owner of the flow assigned after the solution is imported into the deployment environment. |
   | flow.sharing.flow-name.flow-id  | No | Sets the Dataverse Microsoft Entra Group Team to share the process record associated with the flow after the solution is imported into the deployment environment. |
