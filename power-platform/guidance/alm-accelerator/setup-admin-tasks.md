@@ -15,7 +15,7 @@ ms.custom: bap-template
 You can configure the components of the ALM Accelerator for Power Platform either using its administration app or [manually](setup-components-manually.md). This article guides you through using the admin app and is structured in seven sections:
 
 - [**Prerequisites**](#prerequisites)
-- [**Configure Microsoft Entra app registrations**](#configure-azure-ad-app-registrations)
+- [**Configure Microsoft Entra app registrations**](#configure-microsoft-entra-app-registrations)
 - [**Install Azure DevOps extensions**](#install-azure-devops-extensions)
 - [**Import the solution and configure the app**](#import-the-solution-and-configure-the-app)
 - [**Set up your first Azure DevOps project for use with the ALM Accelerator**](#set-up-your-first-azure-devops-project-for-use-with-the-alm-accelerator)
@@ -208,10 +208,10 @@ Import the ALM Accelerator canvas app into your Power Platform environment, and 
    |--|--|
    | **Authentication Type** | **OAuth 2.0** |
    | **Identity provider** | **Microsoft Entra ID** |
-   | **Client ID** | The **Application (client) ID** you copied when you [created the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
-   | **Client secret** | The **Application (client) secret value** you copied when you [created the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
+   | **Client ID** | The **Application (client) ID** you copied when you [created the app registration](#create-an-app-registration-in-your-microsoft-entra-environment) |
+   | **Client secret** | The **Application (client) secret value** you copied when you [created the app registration](#create-an-app-registration-in-your-microsoft-entra-environment) |
    | **Tenant ID** | Leave the default value, **common** |
-   | **Resource URL** | The **DevOps Application (client) ID** you copied when you [added permissions to your app registration](#create-an-app-registration-in-your-azure-ad-environment) |
+   | **Resource URL** | The **DevOps Application (client) ID** you copied when you [added permissions to your app registration](#create-an-app-registration-in-your-microsoft-entra-environment) |
 
 1. Select **Update connector**.
 
@@ -233,7 +233,7 @@ Import the ALM Accelerator canvas app into your Power Platform environment, and 
 
 1. Confirm the **Response Status** returned is **200** and that the **Response Body** is a JSON representation of your Azure DevOps organization.
 
-    :::image type="content" source="media/almacceleratorpowerplatform-components/image-20210222135128137.png" alt-text="Screenshot of test security settings for a custom Azure DevOps connector.":::<!-- EDITOR'S NOTE: Please crop and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
+    :::image type="content" source="media/almacceleratorpowerplatform-components/image-20210222135128137.png" alt-text="Screenshot of test security settings for a custom Azure DevOps connector.":::
 
 ## Set up your first Azure DevOps project for use with the ALM Accelerator
 
