@@ -20,7 +20,6 @@ You can configure the components of the ALM Accelerator for Power Platform eithe
 - [**Solution setup**](#solution-setup)
 - [**Import the solution and configure the app**](#import-the-solution-and-configure-the-app)
 - [**Set up makers to use the ALM Accelerator app**](#set-up-makers-to-use-the-alm-accelerator-app)
-<!-- - **Troubleshooting** -- Missing from this article-->
 
 ## Prerequisites
 
@@ -104,7 +103,7 @@ The following steps show how to create a single app registration with permission
 
    You'll use it as the **DevOps Application (client) ID**, which is different from the **Application (client) ID** you'll copy later in this procedure.
 
-    :::image type="content" source="media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png" alt-text="Screenshot of the Request API permissions window, with the APIs my organization uses tab and Application (client) ID highlighted.":::<!-- EDITOR'S NOTE: Please crop and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
+    :::image type="content" source="media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png" alt-text="Screenshot of the Request API permissions window, with the APIs my organization uses tab and Application (client) ID highlighted.":::
 
     If you can't find the Azure DevOps permission on the **APIs my organization uses** tab, follow these steps to get the **DevOps Application (client) ID**:
 
