@@ -227,11 +227,12 @@ For more information on the different roles for managing your tenant across the 
 |Top API by Failures|24 hours|  
 |Most Used API|24 hours|  
 |Total API Calls|24 hours|  
-|API Calls|24 hours|  
+|API Calls|24 hours|
+|API peak call rate |24 hours|
 
 ### API peak call rate report
 
-The API peak call rate report shows API usage graph with the number of requests per user/application for the selected interval. This report helps you monitor the API usage, and avoid hitting the service protection limits.
+The API peak call rate report shows API usage graph with the number of requests per user/application for the selected interval. This report helps you monitor the API usage, and avoid hitting the [service protection limits](/power-apps/developer/data-platform/api-limits).
 
 :::image type="content" source="media\analytics-common-data-service\api-peak-call-rate.png" alt-text="A screenshot of API peak call rate graph" :::
 
@@ -253,7 +254,7 @@ API peak call rate is calculated as the maximum of one of the following:
 - The peak requests per second (RPS) recorded by the request count API limit. This is a measure of request count per unit time.
 - The peak cumulative execution time recorded by the time API limit. Each 150 ms of request execution time is counted as one API call, and then summed up for every 5-minute interval. This is a measure of compute time, converted to an equivalent number of API calls per unit time.
 
-For more information about the API count and time limits, refer to the service protection limits documentation.
+For more information about the API count and time limits, refer to [service protection API limits](/power-apps/developer/data-platform/api-limits).
 
 ##### Example scenarios
 
