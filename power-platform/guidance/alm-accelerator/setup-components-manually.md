@@ -245,7 +245,7 @@ To make sure the values of specific default environment variables are set during
 
     | Name | Description | Value |
     | --- | --- | --- |
-    | Microsoft EntraHost | The Microsoft Entra authorization endpoint | For public clouds, use *login.microsoftonline.com*. For government clouds, use the appropriate authorization URL. |
+    | AADHost | The Microsoft Entra authorization endpoint | For public clouds, use *login.microsoftonline.com*. For government clouds, use the appropriate authorization URL. |
     | ProcessCanvasApps | Whether canvas apps are unpacked during export or packed during builds | If False, then the canvas apps aren't unpacked during export or packed during builds. The [canvas app unpack and pack functionality is in preview](https://aka.ms/paccanvas) and isn't recommended for use in production environments at this time. However, you can't view canvas source code in source control unless you set this variable to True. |
 
 1. (**Optional**) If you use canvas studio test automation in your pipelines, add the following variables to the variable group:
