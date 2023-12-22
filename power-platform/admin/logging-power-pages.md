@@ -3,7 +3,7 @@ title: Power Pages activity logging
 description: Learn how to view Power Pages logs in the Microsoft Purview compliance portal.
 author: vamseedillimsft
 ms.topic: conceptual
-ms.date: 12/20/2023
+ms.date: 12/22/2023
 ms.subservice: admin
 ms.author: vamseedilli
 ms.reviewer: kkendrick
@@ -64,4 +64,4 @@ The following are some of the user events you can audit.
 
 ## Review your audit data using reports in Microsoft Purview compliance portal
 
-You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search).
