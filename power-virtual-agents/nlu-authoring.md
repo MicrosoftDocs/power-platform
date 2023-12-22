@@ -1,8 +1,8 @@
 ---
-title: Create (and edit) with Copilot
-description: Use AI powered by GPT to create and edit bot topics, and get your chatbot ready for your users in minutes.
+title: Create and edit with Copilot
+description: Use AI powered by GPT to create and edit copilot topics, and get your copilot ready for your users in minutes.
 keywords: "PVA"
-ms.date: 7/30/2023
+ms.date: 12/22/2023
 ms.topic: how-to
 author: KendalBond007
 ms.author: iawilt
@@ -10,8 +10,7 @@ ms.reviewer:
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+searchScope: "Power Virtual Agents"
 ---
 
 # Create and edit with Copilot Studio
@@ -22,7 +21,7 @@ Normally, you can manually [create and edit topics](authoring-create-edit-topics
 
 AI understands what you want to do, then automatically creates a topic with different node types and conversational responses.
 
-See the [AI-based copilot authoring overview](nlu-gpt-overview.md) to see how this capability works and how to use it with [Boost conversations](nlu-boost-conversations.md).
+The [AI-based copilot authoring overview](nlu-gpt-overview.md) shows how this capability works. You can also use copilot authoring with [Generative answers](nlu-boost-conversations.md) to boost conversations.
 
 ## Prerequisites
 
