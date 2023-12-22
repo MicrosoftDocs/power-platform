@@ -1,33 +1,41 @@
 ﻿---
-title: Power Pages activity logging
+title: Power Pages activity logging (preview)
 description: Learn how to view Power Pages logs in the Microsoft Purview compliance portal.
-author: vamseedillimsft
 ms.topic: conceptual
 ms.date: 12/22/2023
+author: vamseedillimsft
 ms.subservice: admin
 ms.author: vamseedilli
-ms.reviewer: kkendrick
+ms.reviewer: kkendrick 
 search.audienceType: 
   - admin
 ---
 
-# Power Pages activity logging
+# Power Pages activity logging (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Power Pages activities are tracked from the [Microsoft Purview compliance portal](/purview/purview).
 
-Follow these steps:
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+To view Power Pages activities in Microsoft Purview:
 
 1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a tenant admin.
 
 1. Under **Solutions**, select **Audit**.
 
-:::image type="content" source="media/admin-activity-logging/logging-power-pages/audit-new-search.png" alt-text="A screenshot of the New Search options for Audit.":::
+    :::image type="content" source="media/admin-activity-logging/logging-power-pages/audit-new-search.png" alt-text="A screenshot of the New Search options for Audit.":::
 
 From the Audit screen, an administrator can filter for specific activities by selecting the **Activities – friendly names** dropdown and choosing from the available options.
 
 To filter or search for Power Pages admin activities, select **PowerPlatformAdministratorActivity** as the value for **Record types**. 
 
 :::image type="content" source="media/admin-activity-logging/logging-power-pages/new-search-record-types.png" alt-text="A screenshot of the New Search page with Record types emphasized. The value PowerPlatformAdministratorActivity is emphasized.":::
+
+For more information about how to search audit logs in Microsoft Purview, see [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search). 
 
 ## What events are audited?
 
@@ -61,7 +69,7 @@ The following are some of the user events you can audit.
 | Disable maintenance mode                       | MaintenanceModeDisabled                | When site if taken off of maintenance mode                                    |
 | disableAnonymousAccess exception list changed | AnonymousSettingExceptionListChanged | When anonymous access governance control is changed<br /><br />These operations take time to complete from the point they're initiated. The audit logs are captured when the action is initiated. It isn't necessary that the action is successfully completed.                           |
 
+### See also
 
-## Review your audit data using reports in Microsoft Purview compliance portal
-
-You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search).
+- [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search)
+- [View Power Platform administrative logs in Microsoft Purview (preview)](admin-activity-logging.md)
