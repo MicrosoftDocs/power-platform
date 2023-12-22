@@ -28,7 +28,7 @@ To set up the ALM accelerator for Microsoft Power Platform, you'll need to first
 
 ## Quick start
 
-For an administrator, the quick start guide should take about 30 minutes. By the guide's end, you will have configured Azure Active Directory (Azure AD), Azure DevOps, and the Microsoft Power Platform environments.
+For an administrator, the quick start guide should take about 30 minutes. By the guide's end, you will have configured Microsoft Entra ID, Azure DevOps, and the Microsoft Power Platform environments.
 
 1. Validate the organization's [maturity model](./maturity/overview.md#quick-start) for ALM.
 
@@ -89,7 +89,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
    Deploying to your enterprise? For more information, go to [Enterprise deployment](./scenarios/tenant-deployments.md#enterprise-deployment).
 
-   If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter **https&colon;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Azure AD Resource URI**.
+   If you're prompted to create an HTTP with Microsoft Entra ID connection, enter **https&colon;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Microsoft Entra Resource URI**.
 
 1. [Update permissions for the project build service](../../setup-almacceleratorpowerplatform.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 
