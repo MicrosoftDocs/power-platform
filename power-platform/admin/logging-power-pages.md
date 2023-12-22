@@ -1,27 +1,33 @@
 ﻿---
-title: Power Pages activity logging
+title: Power Pages activity logging (preview)
 description: Learn how to view Power Pages logs in the Microsoft Purview compliance portal.
-author: vamseedillimsft
 ms.topic: conceptual
 ms.date: 12/22/2023
+author: vamseedillimsft
 ms.subservice: admin
 ms.author: vamseedilli
-ms.reviewer: kkendrick
+ms.reviewer: kkendrick 
 search.audienceType: 
   - admin
 ---
 
-# Power Pages activity logging
+# Power Pages activity logging (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Power Pages activities are tracked from the [Microsoft Purview compliance portal](/purview/purview).
 
-Follow these steps:
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+To view Power Pages activities in Microsoft Purview:
 
 1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a tenant admin.
 
 1. Under **Solutions**, select **Audit**.
 
-:::image type="content" source="media/admin-activity-logging/logging-power-pages/audit-new-search.png" alt-text="A screenshot of the New Search options for Audit.":::
+    :::image type="content" source="media/admin-activity-logging/logging-power-pages/audit-new-search.png" alt-text="A screenshot of the New Search options for Audit.":::
 
 From the Audit screen, an administrator can filter for specific activities by selecting the **Activities – friendly names** dropdown and choosing from the available options.
 
