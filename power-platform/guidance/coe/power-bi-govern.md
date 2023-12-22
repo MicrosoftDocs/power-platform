@@ -55,12 +55,12 @@ Set **Shared with tenant** to **True**, or select the **App Shared with (Total)*
 
 - Widely shared resources (shared with the entire tenant or many individual users) might need a stronger support model, or you might need to review the number of people they're shared with.
 
-- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise:
+- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up a Microsoft Entra group to share their app. Otherwise:
 
   - Your entire org sees the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them).
   - If a user doesn't have access to the underlying data source, they receive an error message when they try to open the app, which can cause an increase in support tickets and confusion.
 
-- Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user leaves the department or job role they'll still see the app and be able to access the information. Therefore, it's recommended to share role-specific apps with an Azure AD group instead.
+- Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user leaves the department or job role they'll still see the app and be able to access the information. Therefore, it's recommended to share role-specific apps with a Microsoft Entra group instead.
 
 ### Identify orphaned apps
 
@@ -72,7 +72,7 @@ Orphaned apps, where the app owner has left the organization, will still work fo
 
 - Some connectors, like the SQL Connector used with SQL Server Authentication, can be [shared implicitly with users](/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the app is published, the connection is also published and available to your users. Your users can then also create apps by using any connection that uses SQL Server authentication that's shared with them.
 
-- Identify apps that use the SQL Server Connector. Ensure that users are aware of the risks, and help them mitigate it by enabling Azure AD authentication for SQL Server.
+- Identify apps that use the SQL Server Connector. Ensure that users are aware of the risks, and help them mitigate it by enabling Microsoft Entra authentication for SQL Server.
 
 Select **SQL Server** in the **Connector Name** drop-down list on the rightmost filter pane to find apps that use the SQL Server Connector.
 
@@ -117,7 +117,7 @@ Set **Is Orphaned** to **True** in the filter pane to find orphaned apps.
 
 - Some connectors, like the SQL Connector used with SQL Server Authentication, are [shared implicitly with users](/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the flow is shared, the connection is also published and available to your users. Your users can also create flows by using any connection that uses SQL Server authentication that's shared with them.
 
-- Identify flows that use the SQL Server Connector. Ensure that users are aware of the risk, and help them mitigate it by enabling Azure AD authentication for SQL Server.
+- Identify flows that use the SQL Server Connector. Ensure that users are aware of the risk, and help them mitigate it by enabling Microsoft Entra authentication for SQL Server.
 
 Select **SQL Server** in the **Connector Name** drop-down list on the rightmost filter pane to find flows that use the SQL Server Connector.
 

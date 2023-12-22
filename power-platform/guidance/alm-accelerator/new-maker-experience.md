@@ -52,7 +52,7 @@ The ALM Accelerator administration app was used to configure the following user 
 
 1. Create connections and grant consent when prompted.
 
-1. If prompted to create an HTTP with Azure Active Directory (Azure AD) connection, enter `https://graph.microsoft.com` for both the **Base Resource URL** and **Azure AD Resource URI**.
+1. If prompted to create an HTTP with Microsoft Entra connection, enter `https://graph.microsoft.com` for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. Select **Create** for each connection when prompted.
 
@@ -110,9 +110,9 @@ The ALM Accelerator administration app was used to configure the following user 
 
       :::image type="content" source="media/aa4pp-deployment-settings-app-sharing.png" alt-text="Screenshot of App Sharing configuration in the ALM Accelerator.":::<!-- EDITOR'S NOTE: Please crop the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
-      - All the apps in your solution are listed. Users can share them in their downstream environments with an Azure AD group.
+      - All the apps in your solution are listed. Users can share them in their downstream environments with a Microsoft Entra group.
       - Use the dropdown list to select the **Azure AAD group** with which you'd like to share the app.
-      - To view the group details, select **Details**. A new browser tab opens with a link to the Azure AD group in the Azure portal.
+      - To view the group details, select **Details**. A new browser tab opens with a link to the Microsoft Entra group in the Azure portal.
       - Use the permissions dropdown list to set the permissions to **Can View**, **Can Edit**, or **Can View and Share**.
 
    - **Group Teams**
