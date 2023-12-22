@@ -14,7 +14,7 @@ search.audienceType:
 ---
 # Admin and governance best practices
 
-What sets Microsoft Power Platform apart from other low-code options already in use in your organization (through Excel or Access) or other shadow IT, point-solution SaaS providers, is that everything is governed and authenticated through Azure Active Directory (Azure AD)—you need to sign in with your work or school Azure AD account in order to use this service. This means that as an admin, you have full visibility of everything your makers and users do—it's governable, automatable, auditable, and manageable by default.
+What sets Microsoft Power Platform apart from other low-code options already in use in your organization (through Excel or Access) or other shadow IT, point-solution SaaS providers, is that everything is governed and authenticated through Microsoft Entra—you need to sign in with your work or school Microsoft Entra account in order to use this service. This means that as an admin, you have full visibility of everything your makers and users do—it's governable, automatable, auditable, and manageable by default.
 
 In this section, we'll explore some best practices to follow when establishing admin and governance for Microsoft Power Platform.
 
@@ -34,7 +34,7 @@ In this section, we'll explore some best practices to follow when establishing a
 
 > [!div class="checklist"]
 > * [Establish tenant and environment level DLP Policies](dlp-strategy.md)
-> * [Set up Azure AD conditional access](conditional-access.md)
+> * [Set up Microsoft Entra conditional access](conditional-access.md)
 > * [Enable cross-tenant isolation](../../admin/cross-tenant-restrictions.md)
    :::column-end:::
    :::column span="":::
