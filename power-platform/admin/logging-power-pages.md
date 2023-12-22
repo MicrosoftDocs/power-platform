@@ -35,6 +35,8 @@ To filter or search for Power Pages admin activities, select **PowerPlatformAdmi
 
 :::image type="content" source="media/admin-activity-logging/logging-power-pages/new-search-record-types.png" alt-text="A screenshot of the New Search page with Record types emphasized. The value PowerPlatformAdministratorActivity is emphasized.":::
 
+For more information about how to search audit logs in Microsoft Purview, see [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search). 
+
 ## What events are audited?
 
 The following are some of the user events you can audit.
@@ -67,11 +69,7 @@ The following are some of the user events you can audit.
 | Disable maintenance mode                       | MaintenanceModeDisabled                | When site if taken off of maintenance mode                                    |
 | disableAnonymousAccess exception list changed | AnonymousSettingExceptionListChanged | When anonymous access governance control is changed<br /><br />These operations take time to complete from the point they're initiated. The audit logs are captured when the action is initiated. It isn't necessary that the action is successfully completed.                           |
 
-
-## Review your audit data using reports in Microsoft Purview compliance portal
-
-You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search).
-
 ### See also
 
-[View Power Platform administrative logs in Microsoft Purview (preview)](admin-activity-logging.md)
+- [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search)
+- [View Power Platform administrative logs in Microsoft Purview (preview)](admin-activity-logging.md)
