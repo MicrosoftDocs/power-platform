@@ -71,3 +71,7 @@ The following are some of the user events you can audit.
 ## Review your audit data using reports in Microsoft Purview compliance portal
 
 You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search).
+
+### See also
+
+[View Power Platform administrative logs in Microsoft Purview (preview)](admin-activity-logging.md)
