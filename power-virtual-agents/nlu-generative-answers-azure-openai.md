@@ -49,7 +49,7 @@ When you connect data through Azure OpenAI in Microsoft Copilot Studio, your cop
 
    :::image type="content" source="media/nlu-gpt/generative-answers-azure-source.png" alt-text="Screenshot showing the Azure OpenAI source." lightbox="media/nlu-gpt/generative-answers-azure-source.png":::
 
-1. When you're done entering sources, close the menu. Make sure to save any changes to your topic.
+1. Select **Save** to save any changes to your topic.
 
 The topic now generates answers from the information sources defined by your Azure OpenAI connection.
 
