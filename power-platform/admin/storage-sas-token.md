@@ -13,10 +13,13 @@ search.audienceType:
   - admin
 ---
 
+# What is Dataverse storage and how is it used 
+Dataverse provisions and manages internal storage for the use of Dynamics applications. If you are using Dynamics apps, they may store transient data in this storage account. This storage account may be empty if you are not using Dynamics apps or if the apps are not using storage. The document provides a way to access this data for system administrators for audit and trouble-shooting purposes. 
+
 # Access your storage with a SAS token
+A SAS token provides secure, delegated access to data in your storage for verification and audit purposes. A SAS token obtained via this approach by a System administrator expires within a short time and is not intended for data integration or reporting scenarios where you will need to access storage account on a continuous basis.
 
-Storage has important data from your environment. An SAS token provides secure, delegated access to resources in your storage. This article covers:
-
+This article covers:
 - Accessing your storage with the SAS token
 - View and understand your data
 
