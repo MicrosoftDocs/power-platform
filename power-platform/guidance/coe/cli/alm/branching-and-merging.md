@@ -75,7 +75,7 @@ The same Azure DevOps project with a different repository from the HR team. For 
 
 - A separate Azure DevOps project and repository. This approach of separate projects and repositories could allow different role-based security rights to be defined for team department.
 
-- A separate Azure DevOps organization, project, and repository. This configuration would allow different Azure Active Directory tenants to be used.
+- A separate Azure DevOps organization, project, and repository. This configuration would allow different Microsoft Entra tenants to be used.
 
 #### Finance steps
 
