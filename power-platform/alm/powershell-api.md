@@ -1,14 +1,12 @@
 ---
 title: "Manage solutions using PowerShell | Microsoft Docs"
 description: "Learn about the PowerShell APIs, service, and module that are available to analyze solutions against a set of best practice rules."
-keywords: 
-author: mikkelsen2000
+author: marcelbf
+ms.author: marcelbf
 ms.subservice: alm
-ms.author: pemikkel
-ms.custom: ""
 ms.date: 12/23/2022
-ms.reviewer: "pehecke"
-ms.topic: "article"
+ms.reviewer: pehecke
+ms.topic: article
 search.audienceType: 
   - developer
 ---

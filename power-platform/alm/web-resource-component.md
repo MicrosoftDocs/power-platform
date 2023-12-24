@@ -1,14 +1,11 @@
 ---
 title: "How to add web resources to a solution"
 description: "Developers implementing ALM can use solutions to package and deploy web resources to other environments. Follow these steps to add a resource to a solution."
-keywords: 
-author: mikkelsen2000
+author: marcelbf
+ms.author: marcelbf
 ms.subservice: alm
-ms.author: pemikkel
-ms.custom: ""
 ms.date: 05/05/2020
-ms.reviewer: "pehecke"
-
+ms.reviewer: pehecke
 ms.topic: "article"
 search.audienceType: 
   - developer
