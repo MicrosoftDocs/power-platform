@@ -58,9 +58,9 @@ Other changes or additions between phrases can be:
 - Capitalization
 - Contractions such as _you're_ or _don't_
 
-Plurals won't improve the triggering because contractions are already accounted for in the AI model.
+Plurals don't improve the triggering because contractions are already accounted for in the AI model.
 
-Entities used in related topics automatically identify in user intents when matched with their trigger phrases. For example, the user intent "I want to book a ticket to Boston" matches with the trigger phrase "I want to book a ticket to Paris".
+Entities used in related topics automatically identify in user intents when matched with their trigger phrases. For example, the user intent "I want to book a ticket to Boston" matches with the trigger phrase "I want to book a ticket to Paris."
 
 ### Topic overlap detection
 
@@ -69,15 +69,15 @@ Topic overlap detection helps improve topic triggering accuracy by finding overl
 > [!TIP]
 > Topic overlap detection is in general availability and supports [all languages supported in Microsoft Copilot Studio](authoring-language-support.md).
 
-[After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), you can view a list of overlapped topics. In the navigation menu, select **Analytics**, then select the **Topic triggering** tab.
+[After you enable advanced AI capabilities](#enable-or-disable-generative-ai), you can view a list of overlapped topics. In the navigation menu, select **Analytics**, then select the **Topic triggering** tab.
 
 :::image type="content" source="media/advanced-ai-features/overlapped-topics.png" alt-text="Screenshot showing the overlapping topics with their similarity scores.":::
 
-The list shows each overlapping topic along with a similarity score. This score represents the overall overlapped status for a topic and the number of topics that overlap with the listed one. The similarity score is determined by the AI as it evaluates how semantically similar the overlapping trigger phrases are to each other. A higher score means a topic has one or more trigger phrases close to another topic's trigger phrases.
+The list shows each overlapping topic along with a similarity score. This score represents the overall overlapped status for a topic and the number of topics that overlap with the listed one. The AI determines the similarity score as it evaluates how semantically similar the overlapping trigger phrases are to each other. A higher score means a topic has one or more trigger phrases close to another topic's trigger phrases.
 
 You can sort the list by its similarity score, topic name, or number of trigger phrase overlaps.
 
-If you select an item in the list, the **Topic overlap details** pane will open.
+If you select an item in the list, the **Topic overlap details** pane opens.
 
 :::image type="content" source="media/advanced-ai-features/topic-overlap-details.png" alt-text="Screenshot of the Topic overlap details pane showing overlaps related to Microsoft 365 language topics.":::
 
@@ -85,11 +85,11 @@ In this example, there's one trigger phrase in the "Languages supported in Micro
 
 Using semantically similar trigger phrases for two different topics can lead to confusion. The bot might not know which topic to open and asks follow-up questions to the bot user.
 
-Identifying semantically similar trigger phrases can also help you consolidate _topics_ if they are too similar. You can edit the topics to make them more distinct.
+Identifying semantically similar trigger phrases can also help you consolidate _topics_ if they're too similar. You can edit the topics to make them more distinct.
 
 On the **Topic overlap details** pane, you can select the link to go directly to a topic. You can also make changes to the trigger phrase or delete it. Select **Save** to apply any changes.
 
-After saving your changes, the overlapping status automatically refreshes. You can manually refresh the topic overlap status, using the refresh icon in the **Overlapping topics** section.
+After you save your changes, the overlapping status automatically refreshes. You can manually refresh the topic overlap status, using the refresh icon in the **Overlapping topics** section.
 
 :::image type="content" source="media/advanced-ai-features/refresh-overlaps.png" alt-text="Screenshot of the refresh icon, which looks like an arrow bent into a circle.":::
 
@@ -97,7 +97,7 @@ After saving your changes, the overlapping status automatically refreshes. You c
 
 This feature analyzes sessions between your bot and users and gives suggestions based on unmatched user input.
 
-[Once enabled](#enable-or-disable-ai-capabilities), go to **Analytics** > **Topic triggering (preview)**. A list of potential topics will be shown, with the number of times a query about this topic was made by users of the bot. The top 200 suggestions will be shown.
+[Once enabled](#enable-or-disable-generative-ai), go to **Analytics** > **Topic triggering (preview)**. A list of potential topics are shown with the number of times a query about this topic was made by users of the bot. The top 200 suggestions are shown.
 
 :::image type="content" source="media/advanced-ai-features/topic-suggestions.png" alt-text="Screenshot of the Topic suggestions tile showing a list of suggestions.":::
 
@@ -161,7 +161,7 @@ To enable these older AI capabilities in Microsoft Copilot Studio:
 1. Open your bot:
    - In the web app, the bot must be marked with **Classic**.
    - In the Teams app, the bot can be any bot.
-1. From the navigation menu, select **Gernative AI**.
+1. From the navigation menu, select **Generative AI**.
 1. For each feature, select the checkbox to turn it on or off.
 1. Select **Save** at the top of the tab.
 
