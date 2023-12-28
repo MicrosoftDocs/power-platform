@@ -21,7 +21,7 @@ ms.contributors:
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 With the Power Platform admin center, you can export Power Platform inventory and usage data directly into [Azure Data Lake Storage](https://azure.microsoft.com/solutions/data-lake/) for your organization's business needs. Having the data in your own data lake means you can store data for the durations specified in your organization's data retention policies.
-You can also create custom reports with Power BI, including views at the business unit level and detailed app reports at the tenant and environment level.
+You can also create custom reports with Power BI, with views at the business unit level and detailed app reports at the tenant and environment level.
 
 > [!IMPORTANT]
 >
@@ -32,9 +32,9 @@ You can also create custom reports with Power BI, including views at the busines
 Data Lake Storage is a key part of Cortana Intelligence and seamlessly integrates with Azure Synapse Analytics, Power BI, and Azure Data Factory. Data Lake Storage offers a comprehensive cloud platform designed for handling large-scale data and advanced analytics.
 Architected from the ground up for cloud scale and performance, Data Lake Storage is a cost-effective solution to run big data workloads. With Data Lake Storage, your organization can analyze all its data in a single place with no artificial constraints.
 
-Enablement of data export will be limited to customers with a paid, premium Microsoft Dataverse license available for the tenant. Details of additional licensing requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). Additional details about minimum Dataverse capacity requirements to access the data export features will be announced in advance of general availability.
+The enablement of data export is limited to customers with a paid, premium Microsoft Dataverse license available for the tenant. Details of other licensing requirements are provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). More details about minimum Dataverse capacity requirements to access the data export features are announced in advance of general availability.
 
-For Government Community Cloud (GCC) customers who need to configure integration to Data Lake storage hosted in an Azure Government subscription, please open a [support request](get-help-support.md).
+For Government Community Cloud (GCC) customers who need to configure integration to Data Lake storage hosted in an Azure Government subscription, open a [support request](get-help-support.md).
 
 ## Prerequisites
 
@@ -43,11 +43,12 @@ For Government Community Cloud (GCC) customers who need to configure integration
 - [Create a storage account](/azure/storage/blobs/create-data-lake-storage-account) to use with Azure Data Lake Storage Gen2. Make sure you select the same location for the data lake storage account as your Power BI tenant. To learn more about how to determine your Power BI tenant location, see [Where is my Power BI tenant located](/power-bi/admin/service-admin-where-is-my-tenant-located)?
 
 The following Azure Data Lake Storage Gen2 configurations are supported for this preview feature:
- - Storage Account Types: Standard general-purpose v2 or Premium block blobs.
- - Hierarchical Namespace: **Enable hierarchical namespace** must be selected.
- - Network Connectivity, Network Access: **Enable public access from all networks** must be selected.
- - Network Routing, Routing Preference: **Microsoft network routing** is recommended.
- - Security: **Require secure transfer for REST API operations** must be selected.
+
+- Storage Account Types: Standard general-purpose v2 or Premium block blobs.
+- Hierarchical Namespace: **Enable hierarchical namespace** must be selected.
+- Network Connectivity, Network Access: **Enable public access from all networks** must be selected.
+- Network Routing, Routing Preference: **Microsoft network routing** is recommended.
+- Security: **Require secure transfer for REST API operations** must be selected.
 
 ## Simplify data with Data Lake Storage
 
@@ -87,7 +88,7 @@ Follow these steps to set up your data lake:
 
 6. Select **Create** to set up the connection to Data Lake Storage Gen2.
 
-Customers can expect to see resource inventory and 30 days of historical usage data being exported to the Azure Data Lake Storage account within the 12 hours upon successful setup of a data export process.
+Customers can expect to see resource inventory and 30 days of historical usage data being exported to the Azure Data Lake Storage account and within the 12 hours upon successful setup of a data export process.
 
 ### First-time setup of a data export
 
@@ -98,7 +99,6 @@ When setting up the first data export to your organization's data lake, Microsof
 
 ### See also
 
-[Create custom dashboards by using Power Platform inventory and usage data](build-custom-reports.md) <br />
-
+[Create custom dashboards by using Power Platform inventory and usage data](build-custom-reports.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
