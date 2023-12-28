@@ -1,14 +1,12 @@
 ---
-title: "Organize your solutions (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
-description: "This document lists down some strategies to organize your solutions" # 115-145 characters including spaces. This abstract displays in the search result.
-ms.custom: ""
+title: "Organize your solutions (Microsoft Dataverse) | Microsoft Docs"
+description: "This document lists down some strategies to organize your solutions"
+author: marcelbf
+ms.author: marcelbf
 ms.date: 07/09/2021
-ms.reviewer: "pehecke"
-
-ms.topic: "article"
-author: mikkelsen2000
+ms.reviewer: pehecke
+ms.topic: article
 ms.subservice: alm
-ms.author: pemikkel
 search.audienceType: 
   - developer
 ---
@@ -17,7 +15,7 @@ search.audienceType:
 
 Before you create solutions, take some time to plan ahead. For example, think about how many solutions you want to release and whether the solutions will share components.  
   
- Also, determine how many Microsoft Dataverse environments you’ll need to develop your line of solutions. You can use a single environment for most strategies described in this article. However, if you decide to have only one environment and later realize that you need more, it can be challenging to change the solutions if people have already installed them. Using multiple environments, although introducing more complexity, can provide better flexibility.  
+ Also, determine how many Microsoft Dataverse environments you'll need to develop your line of solutions. You can use a single environment for most strategies described in this article. However, if you decide to have only one environment and later realize that you need more, it can be challenging to change the solutions if people have already installed them. Using multiple environments, although introducing more complexity, can provide better flexibility.  
   
 The following sections describe different strategies for managing solutions listed in order from simple to more complex.  
   
@@ -29,18 +27,18 @@ The following sections describe different strategies for managing solutions list
 
 ## Multiple solutions
 
- If you have two unrelated solutions that don’t share components, the most direct approach is to create two unmanaged solutions.  
+ If you have two unrelated solutions that don't share components, the most direct approach is to create two unmanaged solutions.  
   
 > [!NOTE]
 > It is very common in solutions to modify the application ribbons or the site map. If both of your solutions modify these solution components, they are shared components. See the following section to see how to work with shared components.
 
 ## Multiple solution layering and dependencies
 
-When you import different solutions into your target environment, you are often creating layers where the existing solution lies underneath the one being imported. When it comes to solution layering, it is important that you don’t have cross-solution dependencies. Having multiple solutions in the same environment using the same unmanaged component should be avoided. This is especially true with tables.
+When you import different solutions into your target environment, you are often creating layers where the existing solution lies underneath the one being imported. When it comes to solution layering, it is important that you don't have cross-solution dependencies. Having multiple solutions in the same environment using the same unmanaged component should be avoided. This is especially true with tables.
 
-Segment your solutions by component type when there are no cross-dependency risks.  For example, have one solution that includes all of your tables, another solution that has all of your plug-ins, and a third  solution that has all of your flows. These different components don’t have risks of cross-solution dependencies. Therefore, it is safe to have multiple solutions formed this way in the same environment.
+Segment your solutions by component type when there are no cross-dependency risks.  For example, have one solution that includes all of your tables, another solution that has all of your plug-ins, and a third  solution that has all of your flows. These different components don't have risks of cross-solution dependencies. Therefore, it is safe to have multiple solutions formed this way in the same environment.
 
-Don’t have two different solutions in an environment where both contain tables. This is because there are frequently risks of a single relationship between tables, which creates a cross-solution dependency and causes solution upgrade or delete issues in the target environment at a later point in time.
+Don't have two different solutions in an environment where both contain tables. This is because there are frequently risks of a single relationship between tables, which creates a cross-solution dependency and causes solution upgrade or delete issues in the target environment at a later point in time.
 
 When you are designing your solution layers and you want to have a structured approach for apps you should start with a base layer. Later, you import additional solutions that will reside on top of the base layer. Subsequently, you have a base layer and extension layers on top that extend that base layer.
 
@@ -55,7 +53,7 @@ When you manage your projects this way, we recommend that you use a separate env
 
 You can now extend the data model by adding additional tables, columns, table relationships, and so on, into the app solution. Then, export the app solution as managed. Notice that the app solution will have dependencies on the base layer solution.
 
-In your production environment, you import the managed base layer and then import the managed app layer. This creates two managed layers in the environment with clear dependencies between the two managed solutions.  Managing multiple solutions this way won’t create cross-solution dependencies, which can cause solution maintenance issues, such as removing the top layer if needed.  
+In your production environment, you import the managed base layer and then import the managed app layer. This creates two managed layers in the environment with clear dependencies between the two managed solutions.  Managing multiple solutions this way won't create cross-solution dependencies, which can cause solution maintenance issues, such as removing the top layer if needed.  
 
 Repeat this segmentation pattern to have as many different solutions as you need to maintain. Although we recommend that you keep the number of solutions as small as possible to keep your solution layering manageable.
 
