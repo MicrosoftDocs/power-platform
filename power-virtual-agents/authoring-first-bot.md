@@ -1,8 +1,8 @@
 ---
-title: "Create conversational chatbots"
-description: "You can easily create new bots using the bot-builder wizard in Microsoft Copilot Studio."
+title: "Create and delete Microsoft Copilot Studio copilots"
+description: "You can easily create new copilots using the copilot-builder wizard in Microsoft Copilot Studio."
 keywords: "PVA"
-ms.date: 03/24/2023
+ms.date: 12/28/2023
 ms.topic: article
 author: KendalBond007
 ms.author: iawilt
@@ -10,89 +10,73 @@ manager: leeclontz
 ms.custom: onboarding, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
-searchScope:
-  - "Power Virtual Agents"
+searchScope: "Power Virtual Agents"
 ---
 
-# Create and delete Microsoft Copilot Studio bots
+# Create and delete Microsoft Copilot Studio copilots
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-To help get you started and tailor the bot to your specific needs, Microsoft Copilot Studio lets you create a bot using built-in content building blocks containing topics, trigger phrases, and preauthored bot conversations.
+Copilot Studio lets you create a copilot, using built-in content building blocks containing topics, trigger phrases, and preauthored copilot conversations.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+[Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
+To create your first copilot, see [Quickstart: Create and deploy a Microsoft Copilot Studio copilot](fundamentals-get-started.md).
 
 # [Web app](#tab/web)
 
-You can only see bots in the version of Microsoft Copilot Studio where you created them.  
-
-This means if you create a bot with the Microsoft Copilot Studio app in Microsoft Teams, you won't see the bot in the web app of Microsoft Copilot Studio at https://web.powerva.microsoft.com.
+If you create a copilot with the Copilot Studio app in Microsoft Teams, you won't see the copilot in the [web app of Copilot Studio](https://web.powerva.microsoft.com).
 
 > [!WARNING]
-> New bots are configured with "No authentication" and without [web channel security](configure-web-security.md), and can be accessed by anyone with a link to it. Ensure you have the right [authentication](configuration-end-user-authentication.md), [access](configuration-end-user-authentication.md), and [security](configure-web-security.md) configurations set for your particular usage.
+> New copilots are configured with "No authentication" and without [web channel security](configure-web-security.md), therefore they can be accessed by anyone with a link to it. Ensure you have the right [authentication](configuration-end-user-authentication.md), [access](configuration-end-user-authentication.md), and [security](configure-web-security.md) configurations set up.
 
-### Create a bot
-
-> [!NOTE]
-> If this is your first time creating a bot in Microsoft Copilot Studio, please see [Create your first bot](fundamentals-get-started.md)
+### Create a copilot
 
 1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/).
 
-1. In the navigation menu, select **Create**. You can also select **Home** then select **Create a bot**.
+1. Select **+ New copilot** from the **Copilots** page, or select **Home** then choose **+ Create a copilot**.
 
-1. Choose the type of bot you want to create:
+1. For **Copilot name**, enter a name for your copilot.
 
-    - Use **Build for production** to create production bots that are intended to be deployed to your customers.
-
-    - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use.
-
-    > [!IMPORTANT]
-    > If you choose to create a preview bot, please refer to the [preview documentation](fundamentals-get-started.md).
-
-1. For **Name your bot**, enter a name for your bot.
-
-1. For **What language will your bot speak**, select the language you want your bot to speak.
+1. For **What language do you want your copilot to speak?**, select the language you want your copilot to speak. For more information, see [Supported languages](authoring-language-support.md).
 
 1. Select **Create**.
 
-### Delete a bot
+### Delete a copilot
 
-You can delete bots to remove them from your environment.
+You can delete copilots to remove them from your environment.
 
 1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/).
 
-1. In the navigation menu, select **Chatbots**. Select the bot you want to delete, then select **Delete**.
+1. In the navigation menu, select **Copilots**.
+1. Select the copilot you want to delete, then select **Delete** at the top. Alternatively, select the `...` of the copilot you want to delete then select **Delete** from the dropdown menu.
 
-    :::image type="content" source="media/authoring-first-bot/delete-bot.png" alt-text="General settings." border="false":::
+    :::image type="content" source="media/authoring-first-bot/select-delete-copilot.png" alt-text="Screenshot that shows where to delete your copilot." lightbox="media/authoring-first-bot/select-delete-copilot.png":::
 
-1. Confirm the deletion of the bot by typing the bot's name. Once you confirm, all bot content will be deleted after a few minutes.
+1. Confirm the deletion of the copilot by typing the copilot's name. Once you confirm, all copilot content will be deleted after a few minutes.
 
-If your license is expired, you can delete your bot(s) by selecting **Permanently delete your bots**.
+If your license is expired, you can delete your copilot(s) by selecting **Permanently delete your copilots**.
 
-### Known issues with creating a bot
+### Known issues with creating a copilot
 
-When you're creating your bot, you might encounter the following issues.
+When you're creating your copilot, you might encounter these issues.
 
-### Insufficient permissions for the selected environment
+#### Insufficient permissions for the selected environment
 
-In this case, you see this error: "You don't have permissions to any environments. Get access from an administrator."
+You might this error: "You don't have permissions to any environments, Get access from an administrator." To resolve the error, [create a new environment](environments-first-run-experience.md). Use that environment to create your copilot again.
 
-You need to [create a new environment](environments-first-run-experience.md). Use that environment to create your bot.
+For more information about troubleshooting, see [Error codes: Microsoft Copilot Studio](error-codes.md).
 
 # [Teams](#tab/teams)
 
-You can create chatbots in the Microsoft Copilot Studio app in Teams and then share them with other people in your team, company, or organization.
+You can create chatbots in the Microsoft Copilot Studio app in Teams and then share them with other people in your team, company, or organization. Bots created in Teams are all **classic** bots, using older versions of Copilot Studio.
 
-The first step is to add the Microsoft Copilot Studio app. Then you can create bots.
+The first step is to add the Copilot Studio app. Then you can create bots.
 
 > [!NOTE]
-> You can only see bots in the version of Microsoft Copilot Studio where you created them.  
->
-> This means if you create a bot with the Microsoft Copilot Studio app in Microsoft Teams, you won't see the bot in the web app of Microsoft Copilot Studio at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com).
-
+> If you create a bot with the Copilot Studio app in Teams, you won't see the bot in the web app of Copilot Studio at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com).
 
 ### Add the Microsoft Copilot Studio app in Microsoft Teams
 
@@ -110,42 +94,49 @@ The first step is to add the Microsoft Copilot Studio app. Then you can create b
 
 ### Create a bot
 
-When you create a bot, it has to go into a team - everyone in that team can see and use the bot (but you can share it with people in other teams later on). If you want other people to have access to edit the bot, you need to [add them to your team](admin-share-bots.md).
+When you create a bot, it must belong to a team. Everyone in that team can see and use the bot. You can share your bots with people in other teams after creation. If you want other people to edit the bot, [add them to your team](admin-share-bots.md).
 
-All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team) if necessary, before you add a bot to it.
+You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team), if necessary, before you add a bot to it.
 
 > [!IMPORTANT]
-> You can't create a bot in a hidden membership team (a team where members can't see the details of other members). If you try to do so, you'll see an error message, and you'll need to create your bot in another team that doesn't have the [hiddenmembership](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#group-visibility-options) setting.
+> You can't create a bot in a hidden membership team. Hidden membership is where members can't see the details of other members. If you try adding a bot to a hidden team, you see an error message.
+>
+> For more information about hidden membership, see [Group visibility options](https://learn.microsoft.com/graph/api/resources/group?view=graph-rest-1.0#group-visibility-options).
 
-The first time you create a bot in a team, it will take 1 to 10 minutes to build the necessary systems in the backend, but every bot after that takes much less time (around 1 or 2 minutes).
+The first time you create a bot in a team, it takes 1 to 10 minutes to build the necessary systems in the backend. Every bot you create after your first bot takes only 1 or 2 minutes to create.
 
-1. Select the **Microsoft Copilot Studio** icon to open the app.
-1. You can create a new bot two ways:
-   - Select **Start now** and then choose the team you want to use.
-   - Go to the **Chatbots** tab, select the team you want to use, and then **New chatbot**.
+1. Select the **Power Virtual Agents** icon In Teams to open the Microsoft Copilot Studio app.
 
-    The first time you create a bot in your team, you see a notice explaining that it takes some time (from 1 to 10 minutes):
-
-   :::image type="content" source="media/authoring-first-bot-teams/first-bot-delay.png" alt-text="Screenshot of a message that says 'You're the first person to create a bot in this team. You need to do some setting up, so loading time is a little longer than usual'.":::
+1. You can create a new bot in one of two ways:
+   - Select **Start now**, then choose the team you want to use.
+   - From the **Copilots** tab, select a team to use, then choose **New copilot**.
 
    > [!NOTE]
-   > If you were just recently added to a team that already has a bot, you may still see this message as Microsoft Teams is still adding you to the team. You should wait 15 minutes and then create your bot. You should also wait for 15 minutes before finding the team in the **Chatbots** tab.
+   > If you were recently added to a team that already has a bot, you might see a message about it, since Teams is still adding you to the team. If so, create your bot in 15 minutes. Seeing a new team appear in the **Copilots** tab might also take 15 minutes.
+
+1. Give your copilot a name and choose a language.
+
+   :::image type="content" source="media/authoring-first-bot/create-new-bot-screen.png" alt-text=Screenshot that shows the Create a copilot window." lightbox="media/authoring-first-bot/create-new-bot-screen.png":::
 
 1. Select **Create** to begin the initial bot-building process for your team, which can take a few minutes.
 
    You can close the loading window, the bot creation process continues in the background.
 
-1. After the building process is finished, you can create a bot in your team. In the list of teams, select your team and then **New chatbot** to make your bot.
-
-   :::image type="content" source="media/authoring-first-bot-teams/first-bot-name.png" alt-text="Screenshot of the Create a new bot window.":::
-
 ### Delete a bot
 
-You can delete bots to remove them from your team. In the navigation menu, under **Settings**, select **Details**. Then select **Delete**.
+You can delete bots to remove them from your team.
 
-:::image type="content" source="media/authoring-first-bot-teams/delete-bot.png" alt-text="Screenshot of the deleted bot button.":::
+1. Open your copilot.
 
-You'll be asked to confirm the deletion of the bot by entering the bot's name, after which all bot content is immediately deleted.
+1. Under **Settings**, select **Details**.
+
+1. Select **Delete**.
+
+   :::image type="content" source="media/authoring-first-bot-teams/delete-bot.png" alt-text="Screenshot of the deleted bot button.":::
+
+1. Confirm the deletion of the bot by entering the bot's name.
+
+   All bot content is immediately deleted.
 
 ---
 
