@@ -101,7 +101,7 @@ You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-f
 > [!IMPORTANT]
 > You can't create a bot in a hidden membership team. Hidden membership is where members can't see the details of other members. If you try adding a bot to a hidden team, you see an error message.
 >
-> For more information about hidden membership, see [Group visibility options](https://learn.microsoft.com/graph/api/resources/group?view=graph-rest-1.0#group-visibility-options).
+> For more information about hidden membership, see [Group visibility options](https://learn.microsoft.com/graph/api/resources/group#group-visibility-options).
 
 The first time you create a bot in a team, it takes 1 to 10 minutes to build the necessary systems in the backend. Every bot you create after your first bot takes only 1 or 2 minutes to create.
 
@@ -116,7 +116,7 @@ The first time you create a bot in a team, it takes 1 to 10 minutes to build the
 
 1. Give your copilot a name and choose a language.
 
-   :::image type="content" source="media/authoring-first-bot/create-new-bot-screen.png" alt-text=Screenshot that shows the Create a copilot window." lightbox="media/authoring-first-bot/create-new-bot-screen.png":::
+   :::image type="content" source="media/authoring-first-bot/create-new-bot-screen.png" alt-text="Screenshot that shows the Create a copilot window." lightbox="media/authoring-first-bot/create-new-bot-screen.png":::
 
 1. Select **Create** to begin the initial bot-building process for your team, which can take a few minutes.
 
