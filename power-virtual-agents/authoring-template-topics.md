@@ -2,7 +2,7 @@
 title: "Use lesson topics in Microsoft Copilot Studio"
 description: "Use template topics for Microsoft Copilot Studio copilots."
 keywords: "PVA"
-ms.date: 03/24/2023
+ms.date: 12/29/2023
 
 ms.topic: article
 author: iaanw
