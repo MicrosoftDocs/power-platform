@@ -4,8 +4,8 @@ description: "Learn about how to create an AppSource package (.zip file) to incl
 ms.date: 05/22/2023
 ms.reviewer: pehecke
 ms.topic: article
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 ms.subservice: developer
 search.audienceType: 
   - developer
