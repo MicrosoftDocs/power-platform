@@ -18,54 +18,51 @@ searchScope:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-You can upload your own documents that your chatbot can use to [generate answers with generative AI](nlu-boost-conversations.md). When you upload documents, they'll be used across your bot, but you can [specify individual nodes that shouldn't use uploaded documents](#disable-documents-as-a-data-source-for-a-generative-answers-node).
+You can upload your own documents for your copilot to [generate answers with generative AI](nlu-boost-conversations.md). The documents are used across your copilot, but you can [specify individual nodes that shouldn't use uploaded documents](#disable-documents-as-a-data-source-for-a-generative-answers-node).
 
-When a bot user asks a question, and the bot doesn't have a defined topic that it can use, it will generate an answer from the content within the documents that you uploaded. It uses generative AI to find information in the documents that best answers the user's question, and then provides that information in a conversational style.
+When a copilot user asks a question, and the copilot doesn't have a defined topic to use, the copilot generates an answer from your uploaded documents. The copilot uses generative AI to answer the user's question and provides an answer in a conversational style.
 
-Uploaded documents will be stored securely in Dataverse, and the number of documents that can be uploaded is only limited by the available file storage for your Dataverse environment. 
+Uploaded documents are stored securely in Dataverse. The number of documents you can upload is only limited by the available file storage for your Dataverse environment.
 
-Image, audio, video, and executable files are not supported. See [Supported document types]() for a full list.
+Image, audio, video, and executable files are not supported. See [Supported document types](#supported-document-types) for a full list.
 
 > [!IMPORTANT]
 >  
 > This is a preview feature.
 > Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-
-
-## Uploading a document 
+## Uploading a document
 
 > [!WARNING]
->  
-> Contents of the files you upload will be available to all users. 
+> Contents of the files you upload will be available to all users.
 >
-> This means uploaded file content is available to anyone chatting with the bot, regardless of file permissions or access controls.
+> Uploaded file content is available to anyone chatting with the copilot, regardless of file permissions or access controls.
 
-To upload a document to be used to generate answers:
+To upload a document:
 
-1. With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
+1. With a copilot open, expand **Settings** on the side navigation pane, and select **Generative AI**.
 
 1. Under **Upload a document (preview)**, upload your documents in one of two ways:
 
     - Drag and drop files and folders onto the field that says **Drag and drop files here or click to browse**.
     - Select **click to browse** to open a file window where you can select the files you want.
 
-    :::image type="content" source="media/nlu-gpt/nlu-document-upload.png" alt-text="Screenshot of interface to upload a document":::
+    :::image type="content" source="media/nlu-gpt/nlu-document-upload.png" alt-text="Screenshot of the Copilot Studio interface to upload a document":::
 
-1. Select **Save** at the top of the **AI capabilities** page.
+1. Select **Save** at the top of the **Generative AI** page.
 
+### After uploading your documents
 
-Once uploaded, it can take a few minutes for the content of the document to be ready for use by the bot.
+- Once uploaded, your content in the document might take a few minutes to be ready for use by the copilot.
 
-Uploaded documents create new copies and don't overwrite existing documents, even if they have the same name. 
+- Uploaded documents create new copies and don't overwrite existing documents, even if they have the same name.
 
-> [!TIP] 
->  
-> Uploading documents with the same name can result in duplicate files.
->
-> Therefore, when updating an existing file, you might want to add a version number to the file name before uploading it to distinguish it from the previous version.
+   > [!TIP]
+   > Uploading documents with the same name can result in duplicate files.
+   >
+   > Therefore, when updating an existing file, you might want to add a version number to the file name before uploading it to distinguish it from the previous version.
 
-The uploaded document becomes part of the bot solution. Exporting and importing a bot solution will include the documents. 
+- The uploaded document becomes part of the copilot solution, therefore exporting and importing a copilot solution includes the documents.
 
 ## Downloading or deleting a document
 
@@ -75,40 +72,38 @@ To download or delete an uploaded document, hover over the document name and sel
 
 ## Disable documents as a data source for a generative answers node
 
-Documents used as a data source for the bot are used as a data source by default for all generative answers nodes. 
+Documents used as a data source for the copilot are used as a data source by default for all generative answers nodes.
 
 To exclude a specific generative answers node from using documents as a data source:
 
-1.	Open the topic with the generative answers node you want to exclude.  
-2.	On the top menu bar, select the **More options** icon, and then select **Open code editor**.
-   
-3.	Insert the following lines of code immediately after the line `variable: Topic.Answer`:
+1. Open the topic with the generative answers node you want to exclude.  
+1. On the top menu bar, select **More options** > **Open code editor**.
+1. Insert the following lines of code immediately after the line `variable: Topic.   Answer`:
+
     ```yml
     fileSearchDataSource:
         searchFilesMode: 
            kind: DoNotSearchFiles
     ```
 
-4.	Select **Save** on the top menu bar. You can now close the code editor and continue editing your bot's topics.
+1. Select **Save** at the top of the page.
 
 ## Supported document types
 
-The following file types are supported:
+- Word (doc, docx)
+- Excel (xls, xlsx)
+- PowerPoint (ppt, pptx)
+- PDF (pdf)
+- Text (.txt, .md, .log)
+- HTML (html, htm)
+- CSV (csv)
+- XML (xml)
+- OpenDocument (odt, ods, odp)
+- EPUB (epub)
+- Rich Text Format (rtf)
+- Apple iWork (pages, key, numbers)
+- JSON (json)
+- YAML (yml, yaml)
+- LaTeX (tex)
 
-* Word documents (doc, docx)
-* Excel spreadsheets (xls, xlsx)
-* PowerPoint documents (ppt, pptx)
-* PDF documents (pdf)
-* Text documents (.txt, .md, .log)
-* HTML files (html, htm)
-* CSV files (csv)
-* XML files (xml)
-* OpenDocument files (odt, ods, odp)
-* EPUB documents (epub)
-* Rich Text Format documents (rtf)
-* Apple iWork documents (pages, key, numbers)
-* JSON files (json)
-* YAML files (yml, yaml)
-* LaTeX files (tex)
-
-Certain file types, such as images, video, executable files, and audio, can't be used as an uploaded document.
+File types, such as images, video, executable files, and audio, can't be used as an uploaded document.

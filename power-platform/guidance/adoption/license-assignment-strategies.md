@@ -96,7 +96,7 @@ Learn more about the Microsoft Graph SDK:
 
 Learn more about group-based licensing:
 
-- [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)
+- [Assign licenses to users by group membership in Microsoft Entra ID](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 ### By request using access packages
 
