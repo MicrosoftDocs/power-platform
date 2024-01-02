@@ -82,7 +82,7 @@ In the navigation menu, select **Copilots** to open the **Copilots** page. All c
 
    Creating your first copilot in a new environment can take up to 15 minutes. Additional copilots get created faster.
 
-1. You're redirected to the copilot's **Overview** page.
+   You're redirected to the copilot's **Overview** page.
 
    > [!NOTE]
    > Copilot operations like publish and authentication configurations might take a few more minutes to be ready for use.
@@ -167,8 +167,6 @@ With content authored into a dialog tree, test the conversation in real time to 
 1. If the test copilot pane isn't showing on your screen, select **Test your copilot** at the bottom of the navigation menu.
 
     :::image type="content" source="media/fundamentals-get-started/test-bot-menu.png" alt-text="Test copilot control." border="false":::
-
-1. Try out your newly authored dialog tree by typing into the test copilot pane.
 
 1. Turn on **Track between topics** at the top, which enables you to follow along with the copilot as it executes your dialog. You see parts of your dialog tree highlighted as the copilot gets to that portion of the dialog.
 
@@ -286,7 +284,7 @@ The app opens to the Microsoft Copilot Studio home page. Teams users can build c
 
 1. Select **Create**.
 
-   :::image type="content" source="media/fundamentals-get-started/get-started-create.png" alt-text="Create a new copilot.":::
+   :::image type="content" source="media/fundamentals-get-started/get-started-create.png" alt-text="Screenshot that shows how to create a new copilot." lightbox="media/fundamentals-get-started/get-started-create.png":::
 
 ### Build an employee time-off topic for common time-off queries
 
@@ -294,11 +292,19 @@ Go to the topic list by selecting **Topics** in the navigation menu.
 
 A copilot comes with a collection of topics that defines the copilot's interaction with end users. Let's build a topic to answer employee questions about taking time-off.
 
-1. Select **+ New topic** on the menu bar to create a new topic.
+1. Select **+ New topic** > **From blank** on the menu bar to create a new topic.
 
-1. Name the topic **Employee time off** and give it an appropriate description.
+   :::image type="content" source="media/fundamentals-get-started/create-new-topic.png" alt-text="Screenshot that shows how to create a new topic." lightbox="media/fundamentals-get-started/create-new-topic.png":::
 
-1. Create these trigger phrases:
+1. Select **Details** on the **Overview** menu and name the topic **Employee time off**. Give it an appropriate description.
+
+1. Select **Save** at the top. Close your **Details** pane.
+
+1. Select the **Trigger Phrases** box to add phrases.
+
+   :::image type="content" source="media/fundamentals-get-started/select-trigger-phrases.png" alt-text="Screenshot that shows where to select the Trigger Phrases box." lightbox="media/fundamentals-get-started/select-trigger-phrases.png":::
+
+1. Create several trigger phrases in the **Add phrases** fields:
 
    - Need information on time off
    - I need help with time off
@@ -310,7 +316,7 @@ A copilot comes with a collection of topics that defines the copilot's interacti
 
    Copilot Studio comes with built-in natural language capabilities. You only need to define a few trigger phrases about time-off and the copilot can accurately trigger the topic based on the employee's input.
 
-1. Select **Save** to add it to the topic list.
+1. Select **Save** to add the phrases to your topic list.
 
 #### Define the copilot's interaction with a user topic
 
