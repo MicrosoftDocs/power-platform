@@ -12,7 +12,7 @@ ms.custom:
   - bap-template
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/23/2023
+ms.date: 01/02/2024
 search.audienceType: 
   - admin
 ---
@@ -50,7 +50,7 @@ The following table describes the predefined security roles in an environment th
 
 | Security role | Description |
 |---------|--------|
-| App Opener | Has [minimum privileges for common tasks](create-edit-security-role.md#minimum-privileges-for-common-tasks). This role is primarily used as a template to [create a custom security role](#create-or-configure-a-custom-security-role) for model-driven apps. It doesn't have any privileges to the core business tables, such as Account, Contact, and Activity. However, it has **Organization** level read to system tables like **Process** to support reading system supplied work flows. Note that this security role is used when [new custom security role is created](main/power-platform/admin/create-edit-security-role.md#create-a-security-role).  |
+| App Opener | Has [minimum privileges for common tasks](create-edit-security-role.md#minimum-privileges-for-common-tasks). This role is primarily used as a template to [create a custom security role](#create-or-configure-a-custom-security-role) for model-driven apps. It doesn't have any privileges to the core business tables, such as Account, Contact, and Activity. However, it has **Organization**-level read access to system tables, such as **Process**, to support reading system-supplied workflows. Note that this security role is used when a [new, custom security role is created](create-edit-security-role.md#create-a-security-role).  |
 | Basic User |  For out-of-the-box entities only, can run an app in the environment and perform common tasks on the records they own. It has privileges to the core business tables, such as Account, Contact, and Activity.<br/><br/>**Note**: The Common Data Service **User** security role was renamed **Basic User**. Only the name was changed; user privileges and role assignment are the same. If you have a solution with the Common Data Service **User** security role, you should update the solution before you import it again. Otherwise, you might inadvertently change the security role name back to **User** when you import the solution. |
 | Delegate | Allows code to [*impersonate*, or run as, another user](/powerapps/developer/common-data-service/impersonate-another-user). Typically used with another security role to allow access to records. |
 | Dynamics 365 Administrator | *Dynamics 365 administrator* is a Microsoft Power Platform service admin role. This role can do admin functions on Microsoft Power Platform because they have the system administrator role.  |
