@@ -140,7 +140,7 @@ At this point the control is functioning and selected members can be obtained fr
 PeoplePicker1.SelectedPeople
 ```
 
-### With Dataverse tables - AAD Users or Users
+### With Dataverse tables - Microsoft Entra Users or Users
 
 1. Set up the `Suggestions_Items` Property by specifying the below code snippet.
 

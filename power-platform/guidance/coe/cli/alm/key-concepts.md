@@ -19,16 +19,16 @@ As you deploy and use the ALM CLI, it's important to understand the following ke
 > [!NOTE]
 > The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
-## Azure Active Directory
+## Microsoft Entra ID
 
-### Azure Active Directory application
+### Microsoft Entra application
 
-The CoE CLI application can create an Azure Active Directory application that automates the following key steps:
+The CoE CLI application can create a Microsoft Entra application that automates the following key steps:
 
 1. User is authenticated via Azure CLI.
    - [Azure Login](/cli/azure/reference-index?#az_login)
 
-1. Create an Azure Active Directory application using Azure CLI.
+1. Create a Microsoft Entra application using Azure CLI.
    - [Create AD Application](/cli/azure/ad/app?#az_ad_app_create)
    - [Create Service Principal](/cli/azure/ad/sp?#az_ad_sp_create)
 
@@ -46,9 +46,9 @@ The CoE CLI application can create an Azure Active Directory application that au
 
    - After new keys are generated, old keys should be removed.
 
-### Azure Active Directory group
+### Microsoft Entra group
 
-The CoE CLI application can create an Azure Active Directory group that is used for Azure DevOps and Power Platform authentication and role-based access security.
+The CoE CLI application can create a Microsoft Entra group that is used for Azure DevOps and Power Platform authentication and role-based access security.
 
 - Group created via Azure CLI.
 - [Create Group](/cli/azure/ad/group?#az_ad_group_create)
@@ -81,10 +81,10 @@ The install performs the following key steps:
 
    - More information: [Variable groups](/azure/devops/pipelines/library/variable-groups)
 
-1. Create service connections to Power Platform environments using the Azure Active Directory service principal.
+1. Create service connections to Power Platform environments using the Microsoft Entra service principal.
 
    > [!NOTE]
-   > Each service connection will receive a separate Azure Active Directory secret.
+   > Each service connection will receive a separate Microsoft Entra secret.
 
    More information: [Service connections](/azure/devops/pipelines/library/service-endpoints)
 
@@ -122,9 +122,9 @@ The CoE CLI provides the following key steps:
 
 1. Connect a flow to Dataverse.
 
-1. Add the user to the Azure Active Directory service principal to the Power Platform environments.
+1. Add the user to the Microsoft Entra service principal to the Power Platform environments.
 
-1. Share the canvas application with the maker Azure Active Directory group.
+1. Share the canvas application with the maker Microsoft Entra group.
 
 ### Environments
 
@@ -132,7 +132,7 @@ The CoE CLI commands assume the following environments have been created [https:
 
 - Dataverse is enabled.
 
-- Azure Active Directory service principal is granted administration role rights.
+- Microsoft Entra service principal is granted administration role rights.
 
 ### Assumed environments
 

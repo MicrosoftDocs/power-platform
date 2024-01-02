@@ -36,7 +36,7 @@ The pipelines handle the following actions.
 - Configure connection references and create connections in target deployment environments.
 - Configure environment variable values in target deployment environments.
 - Configure solution component ownership in target deployment environments.
-- Configure and create teams in Dataverse for Azure Active Directory (Azure AD) groups in target deployment environments.
+- Configure and create teams in Dataverse for Microsoft Entra groups in target deployment environments.
 - Configure custom connector sharing in target deployment environments.
 - Configure webHooks in target deployment environments.
 - Configure Power Pages site settings in target deployment environments.
@@ -63,9 +63,9 @@ The pipelines handle the following actions.
   - Deploy configuration data.
   - Update connection references.
   - Update environment variable values.
-  - Share apps with Azure AD Groups.
+  - Share apps with Microsoft Entra Groups.
   - Activate flows.
-  - Create teams in Dataverse for Azure AD Groups.
+  - Create teams in Dataverse for Microsoft Entra Groups.
   - Update solution component ownership.
 
 ## ALM Accelerator maker app

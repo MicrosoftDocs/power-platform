@@ -176,7 +176,7 @@ Where applicable, repeat these steps for each solution and pipeline you create.
 
 ## Create a custom deployment settings JSON file
 
-The custom deployment settings JSON file contains settings that activate flows on behalf of a user, specify ownership of flows, share canvas apps with Azure AD groups, and create Dataverse group teams after deployment.
+The custom deployment settings JSON file contains settings that activate flows on behalf of a user, specify ownership of flows, share canvas apps with Microsoft Entra groups, and create Dataverse group teams after deployment.
 
 ```json
 {
@@ -272,19 +272,19 @@ The property `DefaultEnvironmentVariables` in the *customDeploymentConfiguration
 
 Where applicable, repeat these steps for each solution and pipeline you create.
 
-### Create Azure AD group canvas configuration JSON
+### Create Microsoft Entra group canvas configuration JSON
 
-The property `AadGroupCanvasConfiguration` in the *customDeploymentConfiguration.json* file shares canvas apps in your solution with specific Azure AD groups after the solution is imported into an environment.
+The property `AadGroupCanvasConfiguration` in the *customDeploymentConfiguration.json* file shares canvas apps in your solution with specific Microsoft Entra groups after the solution is imported into an environment.
 
-1. Copy the IDs for the canvas app and Azure AD group.
+1. Copy the IDs for the canvas app and Microsoft Entra group.
 
    - Get the schema name for the canvas app from the canvas app component in your solution.
 
       :::image type="content" source="media/setup-almacceleratorpowerplatform-deployment-config/canvasschemaname.png" alt-text="Screenshot of a canvas app label schema name, highlighted in a disabled text field below the Name label.":::<!-- EDITOR'S NOTE: Please crop the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
-   - Get the Azure AD group ID from the **Group** page in the Azure portal.
+   - Get the Microsoft Entra group ID from the **Group** page in the Azure portal.
 
-      :::image type="content" source="media/setup-almacceleratorpowerplatform-deployment-config/aadobjectid.png" alt-text="Screenshot of an Azure AD group ID, highlighted in a disabled text box next to the Object ID label.":::<!-- EDITOR'S NOTE: Please crop the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
+      :::image type="content" source="media/setup-almacceleratorpowerplatform-deployment-config/aadobjectid.png" alt-text="Screenshot of a Microsoft Entra group ID, highlighted in a disabled text box next to the Object ID label.":::<!-- EDITOR'S NOTE: Please crop the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
 1. Edit the *customDeploymentSettings.json* file and paste the IDs in the `AadGroupCanvasConfiguration` property, as in the following example code:
 
@@ -306,23 +306,23 @@ The property `AadGroupCanvasConfiguration` in the *customDeploymentConfiguration
 
 1. On the **Pipeline Variables** screen, create a pipeline variable for each token in your configuration; for example, `canvasshare.aadGroupId`.
 
-1. Set the value to the Azure AD group ID to which the app must be shared for that specific environment.
+1. Set the value to the Microsoft Entra group ID to which the app must be shared for that specific environment.
 
 1. To make sure the value isn't saved as plain text, select **Keep this value secret**.
 
 Where applicable, repeat these steps for each solution and pipeline you create.
 
-### Create Azure AD group and team configuration JSON
+### Create Microsoft Entra group and team configuration JSON
 
-The property `AadGroupTeamConfiguration` in the *customDeploymentConfiguration.json* file maps Dataverse teams and roles to Azure AD groups in your solution after the solution is imported into an environment.
+The property `AadGroupTeamConfiguration` in the *customDeploymentConfiguration.json* file maps Dataverse teams and roles to Microsoft Entra groups in your solution after the solution is imported into an environment.
 
 Security roles must be added to your solution if they aren't manually created in the target environment. One or more roles can be applied to a team. The roles provide permissions to solution components required by the users in the group.
 
-1. The Dataverse team name can be of an existing team or a new team to be created in Dataverse and mapped to an Azure AD group after the solution is imported.
+1. The Dataverse team name can be of an existing team or a new team to be created in Dataverse and mapped to a Microsoft Entra group after the solution is imported.
 
 1. The Dataverse roles can be any security role in Dataverse that would be applied to the team after the solution is imported. The roles must have privileges to the resources the solution requires, such as tables and processes.
 
-1. Get the Azure AD group ID from the **Group** page in the Azure portal as in the previous section.
+1. Get the Microsoft Entra group ID from the **Group** page in the Azure portal as in the previous section.
 
 1. Edit the *customDeploymentSettings.json* file and paste the JSON in the `AadGroupTeamConfiguration` property, as in the following example code:
 
@@ -344,7 +344,7 @@ Security roles must be added to your solution if they aren't manually created in
 
 1. On the **Pipeline Variables** screen, create a pipeline variable for each token in your configuration; for example, `team.aadSecurityGroupId`.
 
-1. Set the value to the Azure AD group ID to associate with the team in Dataverse.
+1. Set the value to the Microsoft Entra group ID to associate with the team in Dataverse.
 
 1. To make sure the value isn't saved as plain text, select **Keep this value secret**.
 

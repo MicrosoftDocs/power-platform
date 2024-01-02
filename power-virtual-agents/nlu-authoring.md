@@ -1,8 +1,8 @@
 ---
-title: Create (and edit) with Copilot
-description: Use AI powered by GPT to create and edit bot topics, and get your chatbot ready for your users in minutes.
+title: Create and edit with Copilot
+description: Use AI powered by GPT to create and edit copilot topics, and get your copilot ready for your users in minutes.
 keywords: "PVA"
-ms.date: 7/30/2023
+ms.date: 12/22/2023
 ms.topic: how-to
 author: KendalBond007
 ms.author: iawilt
@@ -10,134 +10,116 @@ ms.reviewer:
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+searchScope: "Power Virtual Agents"
 ---
 
-# Create and edit with Copilot
+# Create and edit with Copilot Studio
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-In addition to the traditional method for [creating and editing topics](authoring-create-edit-topics.md), Microsoft Copilot Studio lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
+Normally, you can manually [create and edit topics](authoring-create-edit-topics.md), but Microsoft Copilot Studio lets you create and iterate on topics with a description. By describing what you want and having AI build it for you, time is saved in creating and updating copilot topics.
 
-This means you can quickly create and deploy a functional bot, without having to first manually author multiple topics.
+AI understands what you want to do, then automatically creates a topic with different node types and conversational responses.
 
-The capability uses AI to understand what you want to do, and then automatically creates a functioning topic, complete with different node types and conversational responses.
-
-See the [AI-based chatbot authoring overview](nlu-gpt-overview.md) for more examples and descriptions of how this capability works, and how to use it with the [Boost conversations](nlu-boost-conversations.md) capability.
+The [AI-based copilot authoring overview](nlu-gpt-overview.md) shows how this capability works. You can also use copilot authoring with [Generative answers](nlu-boost-conversations.md) to boost conversations.
 
 ## Prerequisites
 
-> [!CAUTION]
-> 
-> [!INCLUDE[prereq-lote](includes/prereq-lote.md)]
->   
+- An account for Microsoft Copilot Studio.
+  
+  > [!NOTE]
+  >  
+  > To create an account or get more familiar with Copilot Studio, see the [Quickstart guide for building copilots with generative AI](nlu-gpt-quickstart.md).
 
-- You'll need an account for Microsoft Copilot Studio. 
+- Review the [AI response generation training, model, and usage FAQ](faqs-copilot.md) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
-    > [!NOTE]
-    >  
-    > If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Microsoft Copilot Studio before, see the [Quickstart guide for building bots with GPT](nlu-gpt-quickstart.md).
+- This capability might be subject to usage limits or capacity throttling.
 
-- Review the [AI response generation training, model, and usage FAQ](faqs-copilot.md) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
+- To see the language support, go to [Supported languages](authoring-language-support.md).
 
-- This capability may be subject to usage limits or capacity throttling.
+## Use Copilot Studio to create a topic
 
-## Use Copilot to create a topic
+You can create a new topic from a description on the **Topics** page in your copilot.
 
-When creating a new topic, you can select **Create with Copilot** and ask the AI to make it for you. You need to do this for each topic you want to create, and you can't create multiple topics in one description.
+1. Select **+ Add** > **Topic** > **Create from description**.
 
-1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic** and then **Create with Copilot**.
+   :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the New topics button highlighted.":::
 
-    :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the New topics button highlighted.":::
+   > [!NOTE]
+   >  
+   > If you don't see the **Create from description** option, enable **Intelligent authoring support**:
+   >
+   > 1. Select the **Settings** icon on the top menu and then **General settings**.
+    >:::image type="content" source="media/nlu-gpt/nlu-authoring-general-settings.png" alt-text="Screenshot of the Microsoft Copilot Studio menu with the Settings icon open.":::
+   > 1. Set the switch under **Intelligent authoring support** to **On**.
 
-    > [!NOTE]
-    >  
-    > If you don't see the **Copilot** option, you may need to enable **Intelligent authoring support**:
-    > 1. Select the **Settings** icon on the top menu and then **General settings**.
-    >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Microsoft Copilot Studio menu with the Settings icon open.":::
-    >  
-    > 2. Set the switch under **Intelligent authoring support** to **On**.
+1. In the **Create it with Copilot** window, add a name in the **Name your topic** field.
 
+1. In the **Create a topic to...** field, describe the topic you want to create in simple, plain English. You can include questions you want the copilot to ask, messages it should show, and details of the behavior you want the copilot to take.
 
-2. In the **Create it with Copilot** window that appears, enter a name for your topic in the **Name your topic** field. 
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-describe-it-create-topic.png" alt-text="Screenshot of the Describe it to build it pop-up window.":::
 
-3. In the **Create a topic to...** field, describe the topic you want to create in simple, plain English. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.
+   You can select any of the examples to automatically insert them into the **Create a topic to...** field. Select **View more examples** to generate new suggestions.
 
-    :::image type="content" source="media/nlu-gpt/describe-it-create-topic.png" alt-text="Screenshot of the Describe it to build it pop-up window.":::
-   
-    You can select any of the examples to automatically insert them into the **Create a topic to...** field. Select **View more examples** to generate new suggestions. 
-      
-4. Select **Create**.
-   
-5. The authoring canvas will generate and open a new topic, with trigger phrases and one or more nodes, based on what you asked for. You can [use Copilot to further refine and update the topic](#use-copilot-to-edit-a-topic), in addition to the [usual ways of editing topics](authoring-create-edit-topics.md).
+1. Select **Create**.
 
+   The authoring canvas generates and opens a new topic. The topic includes trigger phrases, and one or more nodes, based on your description.
+
+> [!TIP]
+> For more information on editing topics manually, see [Create and edit topics in your Microsoft Copilot Studio copilot](authoring-create-edit-topics.md).
 
 ## Use Copilot to edit a topic
 
-With the new **Edit with Copilot** pane, you can make changes to your topic using the power of NLU. For example, if you want to make updates to your bot, such as moving and updating the nodes, all you need to do is describe what you want with Copilot.
-Think of this new capability as a powerful wizard-like feature that walks you through the editing a topic process to fine-tune your bot's topics without having to work directly in the authoring canvas. You can also make additions and changes to existing nodes, and tell Copilot what you want it to do.
+You can make changes to any topic using the power of natural language understanding (NLU). For example, if you want to move or update the nodes, you can describe what you want in the **Edit with Copilot** pane.
 
-You can use AI to help you modify any topic in your bot. The topic doesn't need to have been created with Copilot.
+1. From the **Topics** page in your copilot, select the topic you want to modify.
+1. Choose **Edit with Copilot** on the menu bar.
 
-1. Open your bot and select **Topics**. Select the topic you want to modify, and then **Edit with Copilot** on the menu bar just above the topic's conversation path.
-
-    :::image type="content" source="media/nlu-gpt/describe-it-toolbar.png" alt-text="Screenshot of the Microsoft Copilot Studio authoring window with the Describe it button highlighted.":::
+    :::image type="content" source="media/nlu-gpt/edit-with-copilot-on-toolbar.png" alt-text="Screenshot of the Copilot Studio authoring window with the Edit with Copilot button highlighted.":::
 
     > [!TIP]
-    >
-    >If you have selected any nodes on the canvas, they will be used to scope your request.  
-    >For example, if you have a **Question** node selected, you could write _add a speech response_, instead of _add a speech response to the question node_.
-    > You can see the nodes you've selected next to the **Update** button.
-   
-2. In the **What do you want to do** field, describe what you want to change or add in the topic. 
+    > When describing a task for your copilot, there's no need to mention canvas elements. For example, adding _ask the user their full name_ to a question node, you don't have to direct the AI with _ask the user their full name in the question node_.
 
-    :::image type="content" source="media/nlu-gpt/describe-it-modify.png" alt-text="Screenshot of the Microsoft Copilot Studio authoring window with the Describe it side panel open.":::
+1. In the **What do you want to do?** field, describe the change or addition to the topic.
 
-    Use simple, plain English to direct the AI with what you want it to do, as in the these examples:
+   :::image type="content" source="media/nlu-gpt/edit-with-copilot-modify.png" alt-text="Screenshot of the Copilot Studio authoring window showing the What do you want to do box where you can add a description of your change or addition to a topic.":::
 
-    - _add a question to ask the user for their date of birth_
-    - _add 2 message variations to all questions in the topic_
-    - _summarize the information collected from the user in an Adaptive Card_
+   Use simple, plain English to direct the AI, like in these examples:
 
-    > [!TIP]
-    >
-    >If you have any nodes selected on your canvas, they will be used to scope your request.  
-    >For example, if you have a question node selected, you could write, _add a speech response_, instead of _add a speech response to the question node_.
-    > You can see the nodes you've selected next to the **Update** button.
+   - _add a question to ask the user for their date of birth_
+   - _add 2 message variations to all questions in the topic_
+   - _summarize the information collected from the user in an [Adaptive Card](authoring-send-message.md#add-an-adaptive-card)_
 
-3. Click **Update**. The AI will make updates based on your directions.
-   
-4. Once the update has been applied, you can review the changes and continue to edit your topic, either in the [usual ways of editing topics](authoring-create-edit-topics.md) or by describing more things you want to change. 
-    
-    If you don't like the changes, select the **Undo** button. You can then change your directions and try again.
+1. Select **Update**.
 
-    :::image type="content" source="media/nlu-gpt/describe-it-modify-undo.png" alt-text="Screenshot of the Microsoft Copilot Studio Describe it side panel open, showing the Undo button.":::
+   You can continue to [edit topics](authoring-create-edit-topics.md) or describe more changes.
 
-    You can always see the last thing you asked Copilot to do under the **What you asked for** label.
+    If you don't like the changes, select the **Undo** button and try again.
+
+    :::image type="content" source="media/nlu-gpt/undo-button.png" alt-text="Screenshot of the location of the Copilot Studio undo button.":::
+
+    You can update your description under the **What you asked for** label on the **Edit with Copilot** pane.
 
 > [!TIP]
 >  
-> You can provide feedback on how well the AI did by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Edit with Copilot** panel.  
-> If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback to improve the quality of the AI.
+> To give feedback on the AI, select the "thumbs up" or "thumbs down" icon at the bottom of the **Edit with Copilot** panel.  
+> :::image type="content" source="media/nlu-gpt/thumbs-up-or-down.png" alt-text="Screenshot of the location of the thumbs up or down buttons.":::
+> Select the thumbs down icon to see the **Send feedback** pane and add detailed feedback. We'll use this feedback to improve the quality of the AI.
 >  
-> :::image type="content" source="media/nlu-gpt/describe-it-feedback.png" alt-text="Screenshot of the Microsoft Copilot Studio Describe it feedback panel.":::
+> :::image type="content" source="media/nlu-gpt/submit-feedback.png" alt-text="Screenshot of the Send feedback pane.":::
 
 ## What's supported
 
 ### Topic node support
 
-Copilot can create Message, Question, and Condition nodes when building and iterating on topics. Other node types aren't currently supported.
+Copilot can create **Message**, **Question**, and **Condition** nodes when building and iterating on topics. Other node types aren't currently supported.
 
-There are some additional limitations on how Copilot works with nodes:
+There are some limitations on how Copilot Studio works with nodes:
 
-- Copilot understands the required properties on Message, Question, and Condition nodes, such as the text to use when prompting the user, or generating appropriate output variables. However, Copilot doesn't understand all of the more advanced properties that can be configured in these nodes, such as the reprompt and interruption settings on a Question node. 
-    - You can still configure these properties manually by editing the generated topic in the authoring canvas, just as you would when [normally creating topics](authoring-create-edit-topics.md).
+- Copilot understands the required properties on **Message**, **Question**, and **Condition** nodes, such as text to prompt the user or the appropriate output variables. However, Copilot doesn't understand advanced properties of these nodes, such as the reprompt and interruption settings on a Question node.
+  - You can still manually edit these properties.
 
-- Condition nodes that are created by Copilot, to branch a topic following a multiple choice question, will show errors in the generated conditions. 
-    - You'll need to resolve these errors manually in the [authoring canvas](authoring-create-edit-topics.md).
+- **Condition** nodes created by Copilot Studio that branch a topic from a multiple choice question show errors in the generated conditions.
+  - You can [troubleshoot these errors](error-codes.md) manually.
 
-
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)] 
+[!INCLUDE[footer-include](includes/footer-banner.md)]
