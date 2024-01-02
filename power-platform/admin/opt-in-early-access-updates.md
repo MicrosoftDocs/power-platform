@@ -15,15 +15,16 @@ ms.contributors:
 ---
 # Opt in to early access updates 
 
-Microsoft Power Platform and customer engagement apps teams can choose to deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
+Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
 
-Because the major releases include features that affect the user experience, you can opt in for early access to self-update to the new release, and start testing and validating the new features before they're automatically enabled for your users.
+Each major release includes features that may affect the user experience. You may opt in for early access to update to the new release. Use the early enrollment period to validate the new functionality.
 
 > [!TIP]
 > Check out the early access features for Microsoft [Power Platform](/power-platform-release-plan/2021wave1/features-ready-early-access) and [Dynamics 365](/dynamics365-release-plan/2021wave1/features-ready-early-access) to know the features that will roll out to the users automatically when you opt in for an update.
 
 ## Early access availability
-You may opt-in to the early access period approximately two months before general availability of each wave release in your region.
+
+Opt in to the early access period begins approximately two months before general availability of each wave release in your region.
 
 Release Wave 1:
 - Early Access: First Monday of February
@@ -39,16 +40,16 @@ Release Wave 2:
 General availability dates may be found in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule). These dates are updated with each release wave.
 
 > [!NOTE]
-> You must explicitly opt-in to the Early Access
-> - For each _release wave_, you must opt-in for early access updates.
-> - For each _environment that you want updated_, you must opt-in for early access updates.
+> You must explicitly opt in to the Early Access
+> - For each _release wave_, you must opt in for early access updates.
+> - For each _environment that you want updated_, you must opt in for early access updates.
 
-The following is an example of an early update availability timeline.
+Here is an example of an early update availability timeline.
 
-![Opt-in timeline for 2020.](media/opt-in-2020-timeline.png "Opt-in timeline for 2020")
+![Opt in timeline for 2020.](media/opt-in-2020-timeline.png "Opt in timeline for 2020")
 
 > [!NOTE]
-> Once a release wave is generally available, the updates status in your environments will be set to **On** to automatically receive all planned features and updates throughout the release.  
+> Once a release wave is generally available, the updates status in your environments become **On** to automatically receive all planned features and updates throughout the release.  
 >
 > To learn more, see [release schedule and early access](/dynamics365/get-started/release-schedule).
 
@@ -71,33 +72,33 @@ The early access updates are available for all types of environments, including 
 
 2. Select the environment to update. 
 
-3. Under **Updates**, you'll see that the new release wave is available. Select **Manage**. 
+3. Under **Updates**, the new release wave is available. Select **Manage**. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Manage opt-in update.](media/update-manage.png "Manage opt-in update")
+   > ![Manage opt in update.](media/update-manage.png "Manage opt-in update")
    > <br />An example screenshot. May not be current wave. 
 
 4. Select **Update now**, and then proceed through the confirmation dialog boxes to enable the new features and capabilities of the release wave.  
  
    > [!div class="mx-imgBorder"] 
-   > ![Opt-in update now.](media/new-update.png "Opt-in update now")
+   > ![Opt in update now.](media/new-update.png "Opt in update now")
    > <br />An example screenshot. May not be current wave. 
 
 5. After the update is complete, all early access features will be enabled for your model-driven apps in your environment.  
 
 > [!NOTE]
-> - All available updates to your environment will be initiated at once. 
+> - All available updates to your environment initiate at once. 
 > - After they're enabled, the updates can't be reverted. Be sure to update your sandbox or trial environment before updating the production environment.  
-> - Only the apps that you currently have licenses for will be updated; no new apps will be installed. 
-> - It might take a few hours to complete the updates. All applications in the environment will still be available during the update, though you might experience slightly reduced performance.
+> - Only the apps that you currently have licenses for update. Applications that have not been installed before do not update. 
+> - It might take a few hours to complete the updates. All applications in the environment are still available during the update, though you might experience slightly reduced performance.
 
-## Additional requirements to enable early access updates  
-Some apps require additional steps to enable early access features. If you have any of the following apps, after enabling the early access updates on the Power Platform admin center, you'll need to take the following manual steps.
+## Other requirements to enable early access updates  
+Some apps require more steps to enable early access features. If you have any of the following apps, after enabling the early access updates on the Power Platform admin center, you need to take the following manual steps.
 
 |Early access apps  |Description of manual steps  |
 |---------|---------|
-|Microsoft Cloud for Healthcare | If you have Microsoft Cloud for Healthcare solutions powered by Dynamics 365, you will need to update or deploy from the [Microsoft Cloud Solution Center](https://solutions.microsoft.com/Microsoft%20Cloud%20for%20Healthcare#). For detailed instructions, see [Deploy Microsoft Cloud for Healthcare](/dynamics365/industry/healthcare/deploy). | 
-| Dynamics 365 Service Scheduling | Once you opt-in to early access: <br /> 1. Sign in to the Power Platform admin center as a tenant admin. <br />2. Select **Dynamics 365 Service Scheduling**. <br /> 3. Select **Install** and follow the steps. |
+|Microsoft Cloud for Healthcare | If you have Microsoft Cloud for Healthcare solutions powered by Dynamics 365, you must update or deploy from the [Microsoft Cloud Solution Center](https://solutions.microsoft.com/Microsoft%20Cloud%20for%20Healthcare#). For detailed instructions, see [Deploy Microsoft Cloud for Healthcare](/dynamics365/industry/healthcare/deploy). | 
+| Dynamics 365 Service Scheduling | Once you opt in to early access: <br /> 1. Sign in to the Power Platform admin center as a tenant admin. <br />2. Select **Dynamics 365 Service Scheduling**. <br /> 3. Select **Install** and follow the steps. |
 
 > [!IMPORTANT]
 > Be sure to enable the early access updates in the Power Platform admin center first. If you run the Dynamics 365 Marketing setup wizard to update your Marketing app to a new release wave before activating the early access updates in the Power Platform admin center, you must [run the Dynamics 365 Marketing setup wizard again](/dynamics365/customer-engagement/marketing/re-run-setup) after opting in to install and enable the early access features. 
@@ -105,23 +106,23 @@ Some apps require additional steps to enable early access features. If you have 
 
 ## Update status and Retry 
 
-To check the update status, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select the environment. From **Updates**, you'll see the update process of each of the applications. 
+To check the update status, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select the environment. From **Updates**, you see the update process of each of the applications. 
 
 ### Retry 
-If an application update failed during the opt-in update, you can use the **Retry** button to restart the update for the failed application.
+If an application update failed during the opt in update, you can use the **Retry** button to restart the update for the failed application.
  
-The retry will only restart the update for the failed application. If multiple applications failed during the update, you'll need to retry for each of the failed updates individually.  
+The retry restarts the update for the failed application. If multiple applications failed during the update, you need to retry for each of the failed updates individually.  
 The updates might take a few hours. If multiple retry attempts fail after 24 hours, contact [Support](https://dynamics.microsoft.com/support/) for assistance. 
 
 > [!NOTE]
-> The retry experience is only available for the early access opt-in updates. After a release wave is generally available, the updates of the release wave will be automatically enabled for all environments; thus, no manual action is required.   
+> The retry experience is only available for the early access opt in updates. After a release wave is generally available, the updates of the release wave will automatically enable for all environments; thus, no manual action is required.   
 
 ### Confirm update complete  
 To verify that a release wave is enabled, open the environment, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **About** to see the release wave that's enabled.
 
 |In Unified Interface  |In the web client interface  | 
 |---------|-------|
-|![Opt-in status](media/update-status.png "Opt-in status")<br /> An example screenshot. May not be current wave.        | ![Opt-in status webclient](media/update-status-webclient.png "Opt-in status webclient") <br /> An example screenshot. May not be current wave.         |
+|![Opt in status](media/update-status.png "Opt in status")<br /> An example screenshot. May not be current wave.        | ![Opt in status webclient](media/update-status-webclient.png "Opt in status webclient") <br /> An example screenshot. May not be current wave.         |
 
 > [!NOTE]
 > You need to select **About** from a Dynamics 365 apps page that's displayed in [Unified Interface](about-unified-interface.md), such as Sales Hub or Customer Service Hub pages. 
@@ -133,17 +134,17 @@ Each release wave includes features and functionality that are enabled for diffe
 
 - **Users, automatically**: These features include changes to the user experience for users and are enabled automatically.
 - **Admins, makers, or analysts, automatically**: These features are meant to be used by administrators, makers, or business analysts and are enabled automatically. 
-- **Users by admins, makers, or analysts**: These features must be enabled or configured by the administrators, makers, or business analysts to be available for their users.
+- **Users by admins, makers, or analysts**: Administrators, makers, or business users enable these features.
 
-By opting in for early access updates, you'll get features that are mandatory changes that are automatically enabled for users.
+By opting in for early access updates, you get features that are mandatory changes that are automatically enabled for users.
 For more details, check the **Enabled for** column in [Dynamics 365](/dynamics365-release-plan/2021wave1/) and Microsoft [Power Platform](/power-platform-release-plan/2021wave1/) release plans.
 
 ## Prepare for a release wave  
 The following checklist provides the general guidelines to help you prepare for a release wave. 
 
-1. Review the [release plans](/dynamics365/release-plans/) as soon as the early access updates are available. This will help you learn about the early access capability and features that will be automatically enabled for the end users.
+1. Review the [release plans](/dynamics365/release-plans/) as soon as the early access updates are available to learn about upcoming features.
 
-2. Create a sandbox environment from the production environment. After a new release wave is enabled for an environment, it can't be reverted. Thus, we strongly recommend enabling a new release wave in a sandbox environment that's a replica or copy of the existing production environment. This will allow you to test and validate the new features in the sandbox environment without affecting the current production environment.
+2. Create a sandbox environment from the production environment. After a new release wave is enabled for an environment, it can't be reverted. Thus, we strongly recommend enabling a new release wave in a sandbox environment that's a replica or copy of the existing production environment. Use this environment  to test and validate the new features in the sandbox environment without affecting the current production environment.
 
    > [!NOTE]
    > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center. 
@@ -151,7 +152,7 @@ The following checklist provides the general guidelines to help you prepare for 
 3. Opt in to the early access updates from the Power Platform admin center to enable the new release wave in the sandbox environment.    
 
 4. Validate that key scenarios work as expected in the sandbox environment after the update is completed. 
-   - Update the customizations in your applications, if any, to leverage or respond to the new capabilities as needed. 
+   - Update the customizations in your applications, if any, to respond to the new capabilities as needed. 
    - You might also need to update internal readiness materials (training and communications) for your organization based on new features or user experiences.
    - If you find any issues during the validation&mdash;such as regressions, or functional or performance issues&mdash;contact [Support](https://dynamics.microsoft.com/support/) or get help from [Dynamics 365 forum](https://community.dynamics.com/f). 
 
@@ -181,7 +182,7 @@ Create a [support ticket](https://dynamics.microsoft.com/support/).
 No. To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release as scheduled. 
 
 ### What happens to the environments after a release wave becomes generally available? 
-If you've enabled the early access updates in your environments, you'll continue to get updates throughout the release wave. 
+If you've enabled the early access updates in your environments, you continue to get updates throughout the release wave. 
 
 If you didn't opt in for the early access updates in your environments, after a release wave is generally available, all environments will be automatically turned on to receive mandatory updates of the release wave.  For regional deployment, see [General availability deployment](./general-availability-deployment.md)
  
