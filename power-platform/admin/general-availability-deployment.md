@@ -17,35 +17,35 @@ ms.contributors:
 ---
 # General availability deployment
 
-Each release wave will become _generally available_ twice a year. Your environments will automatically receive these mandatory updates.
-- You may test the upcoming updates during [Early Access optional enrollment](/power-platform/admin/opt-in-early-access-updates)
+Each release wave becomes _generally available_ twice a year. Your environments automatically receives these mandatory updates.
+- To test the upcoming updates, enroll in early access: [Early Access optional enrollment](/power-platform/admin/opt-in-early-access-updates)
 
 > [!TIP]
 > Check out [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) to learn more about new features to be released in the release waves.
 
-Throughout a release cycle, your environments are updated over the scheduled weekend. These scheduled windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center). The specific time when the updates for an environment complete, within the scheduled weekend, can't be predetermined.
+Throughout a release cycle, your environments update over the scheduled weekend. These scheduled windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center). The specific time when the updates for an environment complete, within the scheduled weekend, cannot be predetermined.
 
 Each notification from the Message Center includes dates, the maintenance window, and the Release Plan reference. In addition, included is a list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. For more information, see [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).  
 
 > [!NOTE]
 > If you have enabled the early access updates in your environments, you'll continue getting updates throughout the release wave.
 >
-> If you didn't opt in for the early access updates in your environments, your environment will be automatically updated to receive the new release based on the general availability deployment schedule for your region.  
+> If you didn't opt in for the early access updates in your environments, your environment automatically updates to receive the new release based on the general availability deployment schedule for your region.  
 
 ## Deployment Cadence
 
 A release wave is a mandatory update. Release wave updates cannot be postponed. These updates are essential for maintaining system integrity and security.
 
-You will receive the release wave as part of your weekly Dataverse update during your scheduled dark hours. This ensures minimal disruption to your operations.
+You receive the release wave as part of your weekly Dataverse update during your scheduled dark hours. This ensures minimal disruption to your operations.
 
-The exact duration and timing of each release wave cannot be predetermined. The duration of updates may vary based on the Dataverse update and may occur at any point during your weekend dark hours. This process has been optimized to minimize any inconvenience.
+The exact duration and timing of each release wave cannot be predetermined. The duration of updates may vary based on the Dataverse update and may occur at any point during your weekend dark hours.
 
 ## Deployment schedule  
 
-You will receive release wave updates as part of your Dataverse weekly updates. This depends on the region where your environment has been created.
+You receive release wave updates as part of your Dataverse weekly updates. This depends on the region where your environment has been created.
 
 The general availability deployment is based on the regions where environments are created.
-- For each region listed below, deployment will begin as early as the Friday dark hours before the listed date
+- For each region listed, deployment begins as early as the Friday dark hours before the listed date
 
 |Region  | Schedule for 2024 wave 1 general availability |
 |---------|---------|
