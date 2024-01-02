@@ -75,7 +75,7 @@ Admins should use the Power Platform admin center to set up the data export. Bef
 
 Follow these steps to set up the data lake.
 
-1. Sign in to the Power Platform admin center as an Azure AD Global Admin, select **Export to Azure Data Lake**, and then select **Power Apps** or **Power Automate**.  The Global Admin user must have specific roles described in [First-time setup of data export](#first-time-setup-of-a-data-export).
+1. Sign in to the Power Platform admin center as an Microsoft Entra Global Admin, select **Export to Azure Data Lake**, and then select **Power Apps** or **Power Automate**.  The Global Admin user must have specific roles described in [First-time setup of data export](#first-time-setup-of-a-data-export).
 
 2. Set **Enable tenant-level analytics** to **On**.
 
@@ -92,10 +92,10 @@ Follow these steps to set up the data lake.
 
 ### First-time setup of a data export
 
-Microsoft requires that the first time you set up a data export to your organization's data lake, your Azure AD global admin must be the person who sets up the connection.
+Microsoft requires that the first time you set up a data export to your organization's data lake, your Microsoft Entra global admin must be the person who sets up the connection.
 
 > [!IMPORTANT]
-> A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, a [Data Lake Storage Gen2 account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration).  A one-time connection setup must be performed by a user who is a member of your organization's Azure Active Directory (Azure AD) Global Admin built-in role [with elevated access](/azure/role-based-access-control/elevate-access-global-admin#elevate-access-for-a-global-administrator) to subscriptions. Or a Global Admin who has at least a "Contributor" Azure RBAC role on the Azure Subscription with a "User Access Administrator" and "Contributor" Azure RBAC role on the target Azure Storage account. This is required because the tenant must allow the service to access and assign specific permissions on the Data Lake Storage account.
+> A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, a [Data Lake Storage Gen2 account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration).  A one-time connection setup must be performed by a user who is a member of your organization's Microsoft Entra (Microsoft Entra ID) Global Admin built-in role [with elevated access](/azure/role-based-access-control/elevate-access-global-admin#elevate-access-for-a-global-administrator) to subscriptions. Or a Global Admin who has at least a "Contributor" Azure RBAC role on the Azure Subscription with a "User Access Administrator" and "Contributor" Azure RBAC role on the target Azure Storage account. This is required because the tenant must allow the service to access and assign specific permissions on the Data Lake Storage account.
 
 
 

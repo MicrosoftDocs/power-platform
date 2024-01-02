@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 11/01/2023
+ms.date: 12/18/2023
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -18,7 +18,7 @@ contributors:
 
 # EDate and EOMonth functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
 
 Adds or subtracts months to a Date/Time value, with optional adjustment to the day of the month.
 

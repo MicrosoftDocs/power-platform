@@ -1,6 +1,6 @@
 ---
 title: Restrict cross-tenant inbound and outbound access
-description: "Use tenant restrictions to control access to SaaS cloud applications based on the Azure AD tenant. You can also enforce tenant isolation for Power Platform connections."  
+description: "Use tenant restrictions to control access to SaaS cloud applications based on the Microsoft Entra tenant. You can also enforce tenant isolation for Power Platform connections."  
 ms.date: 10/12/2023
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -19,16 +19,16 @@ search.audienceType:
 
 # Cross-tenant inbound and outbound restrictions
 
-Microsoft Power Platform has a rich ecosystem of connectors based on Azure Active Directory (Azure AD) that allow authorized Azure AD users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Azure AD authorized data sources to and from their tenant. 
+Microsoft Power Platform has a rich ecosystem of connectors based on Microsoft Entra that allow authorized Microsoft Entra users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. 
 
-Note that Power Platform tenant isolation is different from Azure AD-wide tenant restriction. It *doesn't* impact Azure AD-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or SharePoint. 
+Note that Power Platform tenant isolation is different from Microsoft Entra ID-wide tenant restriction. It *doesn't* impact Microsoft Entra ID-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Microsoft Entra ID-based authentication such as Office 365 Outlook or SharePoint. 
 
 > [!WARNING]
 > There is a [known issue](#known-issues) with [Azure DevOps connector](/connectors/visualstudioteamservices/) that results in tenant isolation policy to not be enforced for connections established using this connector. If an insider attack vector is a concern, it is recommended to limit using the connector or its actions using data policies.
 
-The default configuration in Power Platform with tenant isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Azure AD credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn tenant isolation **On**. 
+The default configuration in Power Platform with tenant isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Microsoft Entra credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn tenant isolation **On**. 
 
-With tenant isolation **On**, **all** tenants are restricted. Inbound (connections to the tenant from external tenants) and outbound (connections from the tenant to external tenants) cross-tenant connections are blocked by Power Platform even if the user presents valid credentials to the Azure AD-secured data source. You can use rules to add exceptions.  
+With tenant isolation **On**, **all** tenants are restricted. Inbound (connections to the tenant from external tenants) and outbound (connections from the tenant to external tenants) cross-tenant connections are blocked by Power Platform even if the user presents valid credentials to the Microsoft Entra-secured data source. You can use rules to add exceptions.  
 
 Admins can specify an explicit allowlist of tenants that they want to enable **inbound**, **outbound**, or both, which will bypass tenant isolation controls when configured. Admins can use a special pattern “\*”  to allow *all* tenants in a specific direction when tenant isolation is turned on. All other cross-tenant connections except the ones in the allowlist are rejected by Power Platform. 
 
@@ -51,9 +51,9 @@ Two-way tenant isolation will block connection establishment attempts to your te
 
 In this scenario, the tenant admin has enabled two-way tenant isolation on the Contoso tenant while the external Fabrikam tenant hasn't been added to the allowlist.  
 
-Users signed in to Power Platform in the Contoso tenant can’t establish outbound Azure AD-based connections to data sources in the Fabrikam tenant despite presenting appropriate Azure AD credentials to establish the connection. This is outbound tenant isolation for the Contoso tenant.  
+Users signed in to Power Platform in the Contoso tenant can’t establish outbound Microsoft Entra ID-based connections to data sources in the Fabrikam tenant despite presenting appropriate Microsoft Entra credentials to establish the connection. This is outbound tenant isolation for the Contoso tenant.  
 
-Similarly, users signed in to Power Platform in the Fabrikam tenant can’t establish inbound Azure AD-based connections to data sources in the Contoso tenant despite presenting appropriate Azure AD credentials to establish the connection. This is inbound tenant isolation for the Contoso tenant. 
+Similarly, users signed in to Power Platform in the Fabrikam tenant can’t establish inbound Microsoft Entra ID-based connections to data sources in the Contoso tenant despite presenting appropriate Microsoft Entra credentials to establish the connection. This is inbound tenant isolation for the Contoso tenant. 
 
 |Connection creator tenant   |Connection sign-in tenant   | Access allowed?   |
 |---------|---------|---------|
@@ -75,9 +75,9 @@ One-way tenant isolation or inbound isolation will block connection establishmen
 
 In this scenario, the admin adds the Fabrikam tenant in the outbound allowlist while tenant isolation is **On**.   
 
-Users signed in to Power Platform in the Contoso tenant can establish outbound Azure AD-based connections to data sources in the Fabrikam tenant if they present appropriate Azure AD credentials to establish the connection. Outbound connection establishment to the Fabrikam tenant is permitted by virtue of the configured allowlist entry. 
+Users signed in to Power Platform in the Contoso tenant can establish outbound Microsoft Entra ID-based connections to data sources in the Fabrikam tenant if they present appropriate Microsoft Entra credentials to establish the connection. Outbound connection establishment to the Fabrikam tenant is permitted by virtue of the configured allowlist entry. 
 
-However, users signed in to Power Platform in the Fabrikam tenant still can't establish inbound Azure AD-based connections to data sources in the Contoso tenant despite presenting appropriate Azure AD credentials to establish the connection. Inbound connection establishment from the Fabrikam tenant is still disallowed even as the allowlist entry is configured and permits outbound connections. 
+However, users signed in to Power Platform in the Fabrikam tenant still can't establish inbound Microsoft Entra ID-based connections to data sources in the Contoso tenant despite presenting appropriate Microsoft Entra credentials to establish the connection. Inbound connection establishment from the Fabrikam tenant is still disallowed even as the allowlist entry is configured and permits outbound connections. 
 
 |Connection creator tenant   |Connection sign-in tenant | Access allowed?   |
 |---------|---------|---------|
@@ -123,7 +123,7 @@ You can also enter the value of the allowed tenant as either tenant domain or te
 
 :::image type="content" source="media/new-tenant-rule-select-tenant-domain-id.png" alt-text="Select tenant domain or tenant ID for the new tenant rule.":::
 
-Once the entry appears in the list, **Tenant ID** and **Azure AD tenant name** fields are displayed. Note that in Azure AD, tenant name is different from the tenant domain. The tenant name is unique for the tenant, but a tenant may have more than one domain name. 
+Once the entry appears in the list, **Tenant ID** and **Microsoft Entra tenant name** fields are displayed. Note that in Microsoft Entra ID, tenant name is different from the tenant domain. The tenant name is unique for the tenant, but a tenant may have more than one domain name. 
 
 :::image type="content" source="media/new-tenant-rule-in-allow-list.png" alt-text="New tenant rule appears in allowlist.":::
 
@@ -164,7 +164,7 @@ Selecting the failed run will show details of the failed flow run.
 
 ## Known issues
 
-[Azure DevOps connector](/connectors/visualstudioteamservices) uses Azure AD authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration is not from Azure AD, the tenant isolation policy is not enforced. As a mitigation, we recomend using other types of [data policies](wp-data-loss-prevention.md) to limit the use of the connector or its actions.
+[Azure DevOps connector](/connectors/visualstudioteamservices) uses Microsoft Entra authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration is not from Microsoft Entra ID, the tenant isolation policy is not enforced. As a mitigation, we recomend using other types of [data policies](wp-data-loss-prevention.md) to limit the use of the connector or its actions.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

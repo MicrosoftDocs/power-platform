@@ -3,8 +3,8 @@ title: Introduction to Microsoft Power Platform ISV Studio app usage analytics| 
 description: Measure an app's performance and get insights.
 ms.date: 04/03/2023
 ms.reviewer: jdaly
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 suite: powerapps
 ms.topic: article
 ms.subservice: developer

@@ -70,7 +70,7 @@ coe alm generate install -o quickstart.json
 coe alm install -f quickstart.json
 ```
 
-If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
+If you're prompted to create an HTTP with Microsoft Entra ID connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 More information: [CoE ALM generate install](https://aka.ms/coe-cli/help/alm/generate/install)
 
@@ -105,7 +105,7 @@ More information: [maker add](https://aka.ms/coe-cli/help/alm/maker/add)
 
 #### Azure tenant administrator
 
-Manages the Azure Active Directory tenant. Common tasks include create users, groups,  applications, and service principals (Microsoft 365 or Azure administrators).
+Manages the Microsoft Entra tenant. Common tasks include create users, groups,  applications, and service principals (Microsoft 365 or Azure administrators).
 
 ```bash
 coe alm install -c aad
@@ -145,7 +145,7 @@ This section provides a brief overview of each CoE command.
 
 |Outcome|Frequency|Persona|Components|
 |-------|---------|-------|----------|
-|Create a service connection and add maker to security group|Run once per maker|User who is owner of Azure Active Directory Group and Azure DevOps project administrator|Azure DevOps|
+|Create a service connection and add maker to security group|Run once per maker|User who is owner of Microsoft Entra Group and Azure DevOps project administrator|Azure DevOps|
 
 [Read ALM maker add help](https://aka.ms/coe-cli/help/alm/maker/add)
 
@@ -153,7 +153,7 @@ This section provides a brief overview of each CoE command.
 
 |Outcome|Frequency|Persona|Components|
 |-------|---------|-------|----------|
-|Import managed solution and set up security|Run once per organization|Azure Active Directory Group, Azure DevOps and Power Platform administrator|Azure Active directory, Azure DevOps, Power Platform|
+|Import managed solution and set up security|Run once per organization|Microsoft Entra Group, Azure DevOps and Power Platform administrator|Azure Active directory, Azure DevOps, Power Platform|
 
 [Read ALM install help](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/help/alm/install.md)
 
@@ -181,7 +181,7 @@ More information: [branch](https://aka.ms/coe-cli/help/alm/branch)
 
 ## Administrator set-up
 
-Each development environment used by makers needs to be registered with Azure DevOps and granted rights to the Azure Active Directory application.
+Each development environment used by makers needs to be registered with Azure DevOps and granted rights to the Microsoft Entra application.
 
 ```bash
 coe alm maker add \
@@ -194,7 +194,7 @@ coe alm maker add \
 ```
 
 > [!NOTE]
-> The user running this command requires project administrator rights in Azure DevOps and owner rights of the Azure Active Directory application.
+> The user running this command requires project administrator rights in Azure DevOps and owner rights of the Microsoft Entra application.
 
 More information: [maker add](https://aka.ms/coe-cli/help/alm/maker/add)
 
@@ -226,9 +226,9 @@ More information: [connection add](https://aka.ms/coe-cli/help/alm/connection/ad
 
 To deploy an instance of AA4PP in your organization, the **generate install** and **install** commands are used once to deploy the managed solution. The install automates these key elements:
 
-1. Azure Active Directory
-    - New Azure Active Directory application used by Azure DevOps for service connection access to Power Platform.
-    - New Azure Active Directory group to provide access to Azure DevOps resources and share the maker canvas application.
+1. Microsoft Entra ID
+    - New Microsoft Entra application used by Azure DevOps for service connection access to Power Platform.
+    - New Microsoft Entra group to provide access to Azure DevOps resources and share the maker canvas application.
 1. Azure DevOps resources
     - Import Azure Pipelines.
     - Create variable groups.

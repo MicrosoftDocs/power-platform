@@ -25,7 +25,7 @@ One of the unique things about Power Automate is you can use it to manage itself
 |Microsoft 365 Users connector<br/> [Office 365 Users](/connectors/office365users/)     |Useful for automating actions around users. For example, you could use the connector to get the manager of a user who owns an environment to be able to send them an email for approval.         |
 |Approvals connector<br/> [Approvals](/connectors/approvals/)    | Often administrators need to get approvals and Power Automate offers a rich approval set of tasks that enable you to automate this process.        |
 |Microsoft Forms <br/> [Microsoft Forms](/connectors/microsoftforms/)   | Forms is an easy way to collect information to start an admin task. This can be combined with the Approval connector to get manager approval.        |
-|Azure AD connector <br/> [Azure AD](/connectors/azuread/)   |Useful to perform tasks such as adding a user to a group or even creating the group.         |
+|Microsoft Entra connector <br/> [Microsoft Entra ID](/connectors/azuread/)   |Useful to perform tasks such as adding a user to a group or even creating the group.         |
 
 ## Common Power Automate tasks
 
