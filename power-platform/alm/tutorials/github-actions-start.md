@@ -1,17 +1,14 @@
 ---
 title: "Tutorial: Get started with GitHub Actions for Microsoft Power Platform | Microsoft Docs"
 description: "In this first part of a three part tutorial, get started with GitHub Actions for Microsoft Power Platform by creating three environments for use in the other tutorials."
-keywords: 
-author: mikkelsen2000
+author: marcelbf
+ms.author: marcelbf
 ms.subservice: alm
-ms.author: pemikkel
-ms.custom: ""
 ms.date: 05/11/2023
-ms.reviewer: "pehecke"
-ms.topic: "tutorial"
+ms.reviewer: pehecke
+ms.topic: tutorial
 search.audienceType: 
   - maker
-#Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 
 # Tutorial: Get started with GitHub Actions for Microsoft Power Platform
@@ -41,7 +38,7 @@ You will need to create, or have access to, three Dataverse environments in your
 
     ![New environment.](../media/github-actions-tutorial/gh-lab-0.10.png "New environment")
 
-4. The first environment should be named “Your Name – dev”, set the region to “United States (default)”, set the Environment type to **Sandbox** (if available), if not use “Trial”.
+4. The first environment should be named "Your Name – dev", set the region to "United States (default)", set the Environment type to **Sandbox** (if available), if not use "Trial".
 
     - Ensure the ***Create a database for this environment*** radio toggle is set to **Yes**
 
@@ -53,7 +50,7 @@ You will need to create, or have access to, three Dataverse environments in your
 
     ![Set currency.](../media/github-actions-tutorial/gh-lab-0.70.png "Set currency")
 
-7. Your development environment has been created, follow steps 2 – 7 above to create a second environment called “Your Name – build” , and then finally, create a third environment called “Your Name – prod”
+7. Your development environment has been created, follow steps 2 – 7 above to create a second environment called "Your Name – build" , and then finally, create a third environment called "Your Name – prod"
 
 Now you have the environments that we will need for this and ready to begin the next modules of this Hands-on lab.
 

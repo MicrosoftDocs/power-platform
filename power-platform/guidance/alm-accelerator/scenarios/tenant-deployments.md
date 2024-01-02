@@ -41,7 +41,7 @@ As you plan your tenant deployment model, the following factors may help you det
 
 Attributes:
 
-- Separated from the enterprise environment in a demo Azure Active Directory (Azure AD) tenant.
+- Separated from the enterprise environment in a demo Microsoft Entra tenant.
 - Uses trial environment and licenses.
 - Demonstrates an end-to-end ALM process.
 - May be used for learning and exploring.
@@ -54,41 +54,41 @@ Attributes:
 
 Attributes:
 
-- Integrated into a single enterprise Azure AD tenant.
+- Integrated into a single enterprise Microsoft Entra tenant.
 - Supports multiple environments for development, test, and production.
 - Has an end-to-end ALM process for enterprise-wide applications with thousands of users.
 - Has fusion development teams of makers, professional developers, and administrators.
 
 In this scenario, the aim is to install the ALM Accelerator in an enterprise tenant. The following configuration is expected:
 
-- Likely to have different administration teams; for example, Azure AD administrators; Power Platform administrators, global or environment; and Azure DevOps administrators.
+- Likely to have different administration teams; for example, Microsoft Entra administrators; Power Platform administrators, global or environment; and Azure DevOps administrators.
 - Configuration files for the ALM Accelerator installation can be shared among the administration teams.
 - Makers have separate development environments to work on changes.
 - An ALM Accelerator pipeline is used to validate and promote to test and production environments.
 
 The tenant administration team needs to:
 
-1. Create an Azure AD application to be used as a service principal in Azure DevOps and Power Platform environments.
-1. Create an Azure AD group to be used to grant access to makers to Azure DevOps resources, canvas applications, and Microsoft Dataverse tables.
-1. Grant tenant consent for the Azure AD application, because the pipeline uses APIs with no interactive user involved.
+1. Create a Microsoft Entra application to be used as a service principal in Azure DevOps and Power Platform environments.
+1. Create a Microsoft Entra group to be used to grant access to makers to Azure DevOps resources, canvas applications, and Microsoft Dataverse tables.
+1. Grant tenant consent for the Microsoft Entra application, because the pipeline uses APIs with no interactive user involved.
 
 ## Multi-tenant deployment scenario
 
-To support multi-tenant deployments, the Azure AD application must be manually configured to support multi-tenant authentication.
+To support multi-tenant deployments, the Microsoft Entra application must be manually configured to support multi-tenant authentication.
 
 - Example tenants: <https://contoso-dev.onmicrosoft.com>, <https://contoso.onmicrosoft.com>
 - Azure DevOps: <https://dev.azure.com/contoso>, <https://dev.azure.com/contoso-dev>
 
 Attributes:
 
-- Has multiple Azure AD tenants, internal to organization or with partners.
+- Has multiple Microsoft Entra tenants, internal to organization or with partners.
 - Supports multiple environments for development, test, and production.
 - Has an end-to-end ALM process for enterprise-wide applications with thousands of users or applications shared across organizations.
 - Has fusion development teams of makers, professional developers, and administrators inside and outside the organization.
 
-This deployment type involves different Azure AD deployments that separate development, test, and production systems. The following configuration is expected:
+This deployment type involves different Microsoft Entra deployments that separate development, test, and production systems. The following configuration is expected:
 
-- Has multiple Azure AD tenants.
+- Has multiple Microsoft Entra tenants.
 - Power Platform environments for development, validation, test, and production might be in different tenants.
 - The Azure DevOps environment might be in the development tenant.
 - Users of the main tenant might use Azure business-to-business authentication to access the development tenant.
@@ -96,6 +96,6 @@ This deployment type involves different Azure AD deployments that separate devel
 
 ### See also
 
-[Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps)
+[Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps)
 
 [!INCLUDE [footer-include](../../../includes/footer-banner.md)]
