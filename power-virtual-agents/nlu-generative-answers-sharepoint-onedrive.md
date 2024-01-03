@@ -24,6 +24,8 @@ This capability works by pairing your copilot with a URL, such as _contoso.share
 > Content analysis and retrieval requires authentication. To authenticate your copilot, see [Authentication](nlu-boost-node.md#authentication). The **No authentication** and **Only for Teams** authentication options can't retrieve information from Sharepoint or OneDrive for Business.
 >
 > When configuring authentication, scopes control user access. Specify **Sites.Read.All**, **Files.Read.All** in the scopes field near the existing **profile** and **openid** values. These scopes don't give users increased permissions when using the copilot, but allow their permissible content from the Sharepoint site as configured for generative answers.
+>
+> Generative Answers from Sharepoint will not include content from **aspx**.
 
 Due to memory limits, we recommend you limit the size of the files you want to use on SharePoint. If a file is unusually large, consider splitting it into multiple smaller files.
 
