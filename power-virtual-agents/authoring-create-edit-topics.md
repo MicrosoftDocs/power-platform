@@ -1,8 +1,8 @@
 ---
-title: Use topics to design a chatbot conversation
-description: Use conversation topics in the Microsoft Copilot Studio authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
+title: Use topics to design a copilot conversation
+description: Use conversation topics in the Microsoft Copilot Studio authoring canvas for an intuitive, no-code way to create a copilot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 03/24/2023
+ms.date: 1/2/2023
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -15,179 +15,185 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Create and edit topics in your Microsoft Copilot Studio bot
+# Create and edit topics in your Microsoft Copilot Studio copilot
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-In Microsoft Copilot Studio, a topic defines a how a bot conversation plays out.
+In Copilot Studio, a topic defines a how a copilot conversation progresses.
 
 To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
 
-In Microsoft Copilot Studio, a _topic_ represents some portion of a conversational thread between a user and a chatbot. You define and work with topics on an _authoring canvas_. A topic contains one or more _conversation nodes_, which together define the conversational paths that that topic can take. Each node performs an action, such as sending a message or asking a question.
+In Copilot Studio, a _topic_ represents some portion of a conversational thread between a user and a copilot. You define and work with topics on an _authoring canvas_, which is the app itself. A topic contains one or more _conversation nodes_, which together define the conversational paths that a topic can take. Each node performs an action, such as sending a message or asking a question.
 
-Often, a topic also has a set of _trigger phrases_&mdash;phrases, keywords, and questions that a customer is likely to use that are related to a specific issue. The Microsoft Copilot Studio AI uses natural language understanding, your customer's message, and the trigger phrases for all your topics to find the most appropriate topic to trigger. The message doesn't need to exactly match a topic's trigger phrases to trigger the topic. For example, a topic about store hours might include the trigger phrase `check store hours`. If a customer sends, "see store opening hours," Microsoft Copilot Studio can still trigger your store hours topic.
+Often, a topic has a set of _trigger phrases_—phrases, keywords, and questions that a customer is likely to use that are related to a specific issue. The Copilot Studio AI uses natural language understanding, your customer's message, and the trigger phrases for all your topics to find the best topic to trigger. The message doesn't need to exactly match a topic's trigger phrases to trigger the topic. For example, a topic about store hours might include the trigger phrase `check store hours`. If a customer sends, "see store opening hours," Copilot Studio triggers your store hours topic.
 
 ## Natural language understanding
- 
-The AI uses natural language understanding (NLU) to parse what a customer typed and find the most appropriate trigger phrase or node.
 
-For example, a user might type "Open hours" into your bot. The AI matches that to the **Store hours** topic, begins a conversation that asks which store the customer is interested in, and then displays the hours the store is open.
+The AI uses natural language understanding (NLU) to parse what a customer typed and find the best trigger phrase or node.
 
-The **Test bot** pane shows how the bot conversation plays out at every step. You can use the **Test bot** pane to fine-tune a topic without having to exit the Microsoft Copilot Studio portal.
+For example, a user might type "Open hours" into your copilot. The AI matches that to the **Store hours** topic, begins a conversation that asks which store the customer is interested in, and then displays the hours the store is open.
 
-For bot and topic limits, see [Quotas, limits, and configuration values](requirements-quotas.md).
+The **Test copilot** pane shows how the copilot conversation progresses at every step. You can use the **Test copilot** pane to fine-tune a topic without having to exit the Copilot Studio portal.
+
+For copilot and topic limits, see [Quotas, limits, and configuration values](requirements-quotas.md).
 
 ## Prerequisites
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- An existing copilot. To create one, see [Quickstart: Create and deploy a Microsoft Copilot Studio copilot](fundamentals-get-started.md).
 
+## Topics
 
 # [Web app](#tab/webApp)
 
 ### Topic types
 
-A bot can include two types of topics, _system_ and _custom_. Every new bot starts with a set of system and custom topics.
+A copilot can include two types of topics, _system_ and _custom_. Every new copilot starts with a set of system and custom topics.
 
-- _System_ topics are ones that support essential behaviors, such as a custom request to speak to a person or end the conversation. Some system topics have trigger phrases, which you can customize to fit your bot's needs.
+- _System_ topics support essential behaviors, such as a custom request to speak to a person or end the conversation. Some system topics have trigger phrases, which you can customize to fit your copilot's needs.
 
   - You can't create system topics.
   - You can't delete system topics, but you can disable them.
-  - You can make changes to system topics. However, until you're comfortable creating end-to-end bot conversations, you shouldn't edit the system topics.
+  - You can make changes to system topics. However, until you're comfortable creating end-to-end copilot conversations, we don't recommend editing the system topics.
 
   For more information, see [Use system topics](authoring-system-topics.md).
 
-- _Custom_ topics cover common behaviors, such as greeting a customer, ending a conversation, or starting a conversation over.
+- _Custom_ topics cover common behaviors, such as greeting a customer, ending a conversation, or restarting conversation.
 
-  - You can make changes to the custom topics that your bot starts with or remove them from your bot entirely.
+  - You can make changes to the starting custom topics or remove them from your copilot entirely.
   - All topics that you create are custom topics.
 
 ### Create a topic
 
-1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic**.
+1. Open your copilot from the list on the **Copilot** page. For better visibility,  close the **Test copilot** window for now.
 
-   :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the New topics button highlighted.":::
+1. From the **Topics & Plugins** page, select **+ Add** > **Topic** > **From blank**.
 
-1. The **Trigger phrases** pane should already be open. If not, select the **Trigger phrases** node to open it.
+   :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Copilot Studio Topics & Plugins page with +Add highlighted.":::
 
-    :::image type="content" source="media/authoring-create-edit-topics/trigger-phrases-button.png" alt-text="Screenshot of the topic authoring canvas with Trigger phrases highlighted.":::
+1. On the **Trigger** node, select **Edit** under **Phrases** twice to see the **Add phrases** section.
 
-1. Under **Add phrases**, type a trigger phrase for your topic.
+    :::image type="content" source="media/authoring-create-edit-topics/edit-phrases.png" alt-text="Screenshot of the topic authoring canvas showing the Trigger node and the Add phrases section." lightbox="media/authoring-create-edit-topics/edit-phrases.png":::
 
-    Your bot needs 5 to 10 trigger phrases to train the AI to understand your customers' responses. To add more trigger phrases, you can either:
+1. Under **Add phrases**, enter text to add a trigger phrase for your topic.
 
-    - Select the **+** button.
+    Your copilot needs 5 to 10 trigger phrases to train the AI to understand your customers' responses. To add more trigger phrases, you can either:
+
+    - Select the "**+**" next to the text field.
     - Paste a set of trigger phrases, each one on a separate line.
-    - Type a set of trigger phrases, pressing Shift+Enter after each one to place it on a separate line.
+    - Type a set of trigger phrases, pressing **Shift**+**Enter** after each one to place it on a separate line.
+    - Select **Enter** to complete adding the phrase(s).
 
     You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
-1. Select **Details** to open the topic details pane.
+1. Select **Details** to open the **Topic details** pane.
 
-    :::image type="content" source="media/authoring-create-edit-topics/open-details-pane.png" alt-text="Screenshot of the topic authoring canvas with Details highlighted.":::
+   :::image type="content" source="media/authoring-create-edit-topics/open-details-pane.png" alt-text="Screenshot of the topic authoring canvas with Details highlighted.":::
 
-1. Enter a **Name** for your topic and, optionally, a **Description**.
+1. Add your copilot topic details:
 
-    - Use the name to identify the topic. The **Topics** page lists all the topics defined in your bot, by name.
-      A customer might see the topic name if the bot can't determine which topic matches the customer's message.
+    - Add a **Name** to identify the topic, such as "Store hours". The **Topics** page lists all the topics defined in your copilot, by this name.
+      A customer might see the topic name if the copilot can't determine which topic matches the customer's message.
 
-    - The **Description** is never shown to users. Use it to describe the purpose of the topic for yourself and other bot makers on your team.
+    - The **Description** is never shown to users. Use it to describe the purpose of the topic for yourself and other copilot makers on your team.
 
-1. Select **Save** to save your changes and add the topic to the topics list.
+1. Select **Save** at the top of the page to save your changes and add the topic to the topics list.
 
 ### Design a topic conversation path
 
-When you create a topic, a **Trigger phrases** node is inserted for you. Add more nodes to control the conversation.
+When you create a topic, a **Trigger** node is inserted for you on the **Topics & Plugins** page. You can add more nodes to control the conversation.
 
-1. Open your bot and select **Topics**, and then select a topic.
+1. Select a topic from the **Topics & Plugins** page of your copilot.
 
-1. To add a node, select **Add node** (**+**) on the line or branch between or after a node.
+1. Select the "**+**" to add another node, which might be shown before or after any node. The locations you can add a node give you flexibility to edit any part of a conversation.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of the Add node button in the Microsoft Copilot Studio authoring canvas.":::
 
 1. Select a node type to insert the node.
 
-The following table lists the types of nodes you can insert in a topic:
+   Here are the types of nodes you can insert in a topic:
 
-| Option | Description |
-| --- | --- |
-| [**Send a message**](authoring-send-message.md) | Send the customer a message. |
-| [**Add a condition**](authoring-using-conditions.md) | Branch your conversation based on a condition. |
-| [**Set a variable value**](authoring-variables.md#set-a-variable) | Set a value for a new or existing variable. |
-| [**Topic management**](authoring-topic-management.md) | Redirect, transfer, or end the topic or conversation. |
-| [**Call an action**](advanced-flow.md) | Call a Power Automate flow. |
+   | Option | Description |
+   | --- | --- |
+   | [Send a message](authoring-send-message.md) | Send the customer a message. |
+   | [Ask a question](authoring-ask-a-question.md) | Ask the customer a question. |
+   | [Ask with adaptive card](authoring-send-message.md#add-an-adaptive-card) | Create a JSON snippet to exchange with other apps. |
+   | [Add a condition](authoring-using-conditions.md) | Branch your conversation based on a condition. |
+   | [Variable management](authoring-variables.md#set-a-variable) | Set a value or parse a new or existing variable. |
+   | [Topic management](authoring-topic-management.md) | Redirect, transfer, or end the topic or conversation. |
+   | [Call an action](advanced-flow-create.md) | Call a flow like Power Automate or Excel Online. |
+   | Advanced| [Generative answers](nlu-boost-conversations.md), [HTTP requests](authoring-http-node), [events](authoring-send-event-activities.md), and more. |
 
-:::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of node types to insert after a Trigger Phrases node.":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of node types to insert after a Trigger node.":::
 
 ### Add a question node
 
-The **Question** node allows you to prompt a user for information and store their response in a variable for use later on in the conversation.
+The **Question** node can prompt a user for information and store their response in a variable for use later in the conversation.
 
 The node allows you to choose the type of information to collect, such as a multiple-choice answer, a prebuilt entity, or a custom entity. [Question behavior properties](#configure-question-behavior) allow you to control the behavior of the node, such as what to do when the user enters an invalid response.
 
 Just like **Message** nodes, **Question** nodes can include images, videos, cards, quick replies, and message variations. For more information, see [Send a message](authoring-send-message.md).
 
-1. Select **Add node** (**+**), and then select **Ask a question**.
+Here's how to build a **Question** node:
+
+1. Select the "**+**" on any node, then select **Ask a question**. The **Question** node form appears.
 
    :::image type="content" source="media/authoring-ask-a-question/topics-question.png" alt-text="Screenshot of a new Question mode.":::
 
 1. In the **Enter a message** box, type the question you want to ask.
 
-1. Select the box under **Identify**, then either create or select an entity to determine what the bot should listen for in the user's response. [Learn how to use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
+1. Select the menu under **Identify**, then either create or select an option. Your chosen entity determines what the copilot should listen for in the user's response. For more information on entities, see [Learn how to use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
 
 1. Depending which **Identify** option you selected, you may have more properties you need to set.
 
-   For example, for **Multiple choice options**, you need to enter the choices the user can specify in **Options for user**. Each choice is presented as a multiple-choice button, but users can also type their answers.
+   For example, if you choose **Multiple choice options**, select **+ New option** under **Options for user** to add choices the user can select. Each choice is presented as a multiple-choice button in a conversation, but users can also type their answers.
 
-1. Select the box under **Save response as** and change the name of the default variable to something meaningful, like **customerName** or **bookingDate**.
+1. Select the variable name under **Save response as** and change the name of the default variable to something meaningful, like **customerName** or **bookingDate**. You can set the scope of the variable in the **Variable properties** pane as well.
 
-    To choose a different variable, select **>**, and then select a variable.
-
-    :::image type="content" source="media/authoring-ask-a-question/question-variable-button.png" alt-text="Screenshot of a new variable created for a Question node.":::
+   :::image type="content" source="media/authoring-ask-a-question/question-variable-button.png" alt-text="Screenshot of a new variable created for a Question node.":::
 
 ### Configure question behavior
 
-Question behavior properties allow you to control other aspects of the **Question** node, such as how the bot responds to an invalid response or how it validates user input.
+Question behavior properties allow you to control how the copilot responds to an invalid response or how it validates user input.
 
-1. On the **Question** node, select the _Node Menu_ (**&vellip;**), and then select **Properties**.
+1. On the **Question** node, select the `...` to see the the _Node Menu_, and then select **Properties**. The **Question properties** pane appears.
 
-1. In the **Question properties** pane, select **Question behavior**.
+1. In the **Question properties** pane, select **Question behavior** to open the **Question behavior** pane.
 
-    :::image type="content" source="media/authoring-ask-a-question/properties-pane.png" alt-text="Screenshot of properties pane.":::
+   :::image type="content" source="media/authoring-ask-a-question/properties-pane.png" alt-text="Screenshot of properties pane.":::
 
-    The **Question behavior** pane opens.
-
-    :::image type="content" source="media/authoring-ask-a-question/question-properties.png" alt-text="Screenshot of the Microsoft Copilot Studio Question behavior pane.":::
+The **Question behavior** pane is where you can adjust behaviors like prompts, validations, and interruptions. Let's examine a few behaviors.
 
 #### Skip behavior
 
-**Skip behavior** determines what the bot should do if the question node's variable already has a value from earlier in the conversation.
+**Skip behavior** determines what the copilot should do if the question node's variable already has a value from earlier in the conversation.
 
 - **Allow question to be skipped**: Skip the question if the variable has a value.
 - **Ask every time**: Ask the question even if the variable has a value.
 
 #### Reprompt
 
-**Reprompt** determines how your bot will react if it doesn't get a valid answer from the user. You can tell it to try again once, twice, or move on without getting an answer. To customize what your bot does when it moves on, see [No valid entity found](#no-valid-entity-found). You can also change the prompt to give the user more context.
+**Reprompt** determines how your copilot reacts if it doesn't get a valid answer from the user. You can tell it to try again once, twice, or move on without getting an answer. To customize what your copilot does when it moves on, see [No valid entity found](#no-valid-entity-found) in the **Question behavior** pane. You can also change the prompt to give the user more context.
 
-- **How many reprompts**: The number of times your bot tries to get a valid answer. **Repeat up to 2 times** is the default. You can also select **Repeat once** or **Don't repeat**.
+- **How many reprompts**: The number of times your copilot tries to get a valid answer. **Repeat up to 2 times** is the default. You can also select **Repeat once** or **Don't repeat**.
 
 - **Retry prompt**: To change the message, select **Customize**, and then enter the new prompt.
 
 #### Additional entity validation
 
-By default, the **Question** node checks for a valid response based only on the entity you selected. **Additional entity validation** allows you to add criteria to the basic test. For example, the **Question** node accepts any numeric value when it identifies a number, but you might want to make sure it's less than 10. You can also change the prompt to help the user enter a valid response.
+By default, the **Question** node checks for a valid response based only on the entity you selected. **Additional entity validation** allows you to add criteria to the basic test. For example, the **Question** node accepts any numeric value when it identifies a number, but you might want to set it to less than 10. You can also change the prompt to help the user enter a valid response.
 
 - **Condition**: Enter a Power Fx formula that returns a boolean value (`true` or `false`); for example, `Topic.Var1 < 10`
 
-- **Condition not met prompt**: To change the message, select **Customize**, and then enter the new prompt.
+- **Condition not met prompt**: When the condition is not met, you can provide a message. Select **Customize** and enter the new prompt.
 
 #### No valid entity found
 
-**No valid entity found** determines what happens when your bot stops trying to get a valid response from the user. You can escalate to a human agent or provide a default value for now. You can also change the prompt to let the user know.
+**No valid entity found** determines what happens when your copilot stops trying to get a valid response from the user. You can escalate to a human agent or provide a default value. You can also change the prompt to let the user know.
 
 - **Action if no entity found**:
 
-  - **Escalate**: Redirect the user to the _Escalate_ system topic. This is the default.
+  - **Escalate**: Redirect the user to the _Escalate_ system topic. Escalate is the default.
   - **Set variable to value**: Set the output variable to a value and move on to the next node. Enter or select the value in **Default entity value**.
   - **Set variable to empty (no value)**: Set the output variable to `Blank` and move on to the next node. You can use a [**Condition**](authoring-using-conditions.md) node later to check whether the variable has a value.
 
@@ -195,19 +201,19 @@ By default, the **Question** node checks for a valid response based only on the 
 
 #### Interruptions
 
-**Interruptions** determines whether the user can switch to a different topic during the question.
+**Interruptions** determine whether the user can switch to a different topic during the question.
 
 - **Allow switching to another topic**: The user can abandon the question for a new topic.
 
 ### Delete a node
 
-Select the node's Node Menu (**&vellip;**), and then select **Delete**.
+Select the `...` to see the the _Node Menu_, and then select **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the Node Menu button and the Delete button.":::
 
 ### Controls for editing nodes on the canvas
 
-You can use the authoring canvas toolbar to quickly rename the topic. Select the topic name in the toolbar, type the new name, and then press Enter.
+You can use the authoring canvas toolbar to quickly rename the topic. Select the topic name in the toolbar, type the new name, then press Enter.
 
 :::image type="content" source="media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Screenshot of the topic authoring canvas with the topic name highlighted.":::
 
@@ -215,7 +221,7 @@ You can use controls on the toolbar to cut, copy, paste, and delete the selected
 
 :::image type="content" source="media/authoring-create-edit-topics/toolbar-edit-controls.png" alt-text="Screenshot of the toolbar controls for editing nodes on the authoring canvas.":::
 
-The toolbar also has a control for undo. Open the Undo menu to revert all actions back to the last save or to redo the previous action.
+The toolbar also has a control to undo an edit. Open the **Undo** menu to revert all actions back to the last save or to redo the previous action.
 
 :::image type="content" source="media/authoring-create-edit-topics/undo-menu.png" alt-text="Screenshot of the Undo menu.":::
 
@@ -225,7 +231,7 @@ Once you've used the **Cut** or **Copy** tools to place one or more nodes on the
 
 - If you select a node and then select **Paste**, the nodes on the clipboard are inserted after the selected node.
 
-- If you select the _Add node_ (**+**) menu and then select **Paste**, the nodes on the clipboard are inserted at that point.
+- If you select the "**+**" to see the _Add node_ menu, then select **Paste**, the node on the clipboard is inserted at that location.
 
 ### Edit topics with the code editor
 
@@ -238,9 +244,9 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
 
 1. On the **Topics** page, select **+ New topic**.
 
-1. In the upper-right corner of the authoring canvas, select _More options_ (**&hellip;**), and then select **Open code editor**.
+1. In the upper-right corner of the authoring canvas, select the `...` to see _More options_, then select **Open code editor**.
 
-    :::image type="content" source="media/authoring-create-edit-topics/code-editor-open.png" alt-text="Screenshot of how to open the code editor.":::
+   :::image type="content" source="media/authoring-create-edit-topics/code-editor-open.png" alt-text="Screenshot of how to open the code editor.":::
 
 1. Select and delete the contents of the code editor. Then copy and paste the following YAML code:
 
@@ -300,16 +306,15 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
                   message: Thank you and please come again.
     ```
 
-1. Select **Save**, and then select **Close code editor**.
+1. Select **Save**, and then select **Close code editor**. The **Question** node now has many conditions to the question about shipping.
 
-    :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot of a conversation created from YAML in the Microsoft Copilot Studio code editor.":::
+   :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot of a conversation created from YAML in the Microsoft Copilot Studio code editor." lightbox="media/authoring-create-edit-topics/code-editor-conversation.png":::
 
-### Test and publish your bot
+### Test and publish your copilot
 
-[Test your bot](authoring-test-bot.md) when you make changes to your topics, to make sure that everything is working as expected.
+[Test your copilot](authoring-test-bot.md) when you make changes to your topics, to make sure everything works as expected.
 
-After you've designed and tested your bot, [publish it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
-
+After you design and test your copilot, [publish it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
 # [Classic](#tab/classic)
 
@@ -317,7 +322,7 @@ After you've designed and tested your bot, [publish it to the web, mobile or nat
 
 When you create a bot, several topics are created for you.
 
-:::image type="content" source="media/authoring-create-edit-topics/topics-system.png" alt-text="Screenshot of the Topics list showing lesson topics and system topics.":::
+:::image type="content" source="media/authoring-create-edit-topics/topics-system.png" alt-text="Screenshot of the Topics list showing lesson topics and system topics." lightbox="media/authoring-create-edit-topics/topics-system.png":::
 
 These automatically created topics fall into two categories:
   
@@ -331,37 +336,29 @@ These automatically created topics fall into two categories:
 
 ### Create a topic
 
-1. In the navigation menu, select **Topics**.
+1. From the navigation menu, select **Topics**, then **+ New topic**, then **From blank**.
 
-   :::image type="content" source="media/authoring-create-edit-topics/topics-menu-teams.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane, highlighting Topics.":::
+   The **Trigger phrases** pane opens.
 
-1. Select **New topic**.
+1. Add several trigger phrases for your topic in the **Add phrases** section.
 
-1. The **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
+    :::image type="content" source="media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Screenshot of the topic authoring canvas, highlighting Add phrases of the Trigger phrases pane." lightbox="media/authoring-create-edit-topics/topics-details-triggers.png":::
 
-    :::image type="content" source="media/authoring-create-edit-topics/trigger-phrases-button.png" alt-text="Screenshot of the topic authoring canvas, highlighting Trigger phrases.":::
+    You can specify more than one trigger phrase for a topic, using a new line for each phrase. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
-1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
+1. In the top bar, edit the title of your topic to give it a name.
 
-    :::image type="content" source="media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Screenshot of the topic authoring canvas, highlighting adding trigger phrases.":::
+    :::image type="content" source="media/authoring-create-edit-topics/name-your-topic-classic.png" alt-text="Screenshot of the topic authoring canvas, highlighting Details.":::
 
-    You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
+1. Press **Enter**  or select the **Save** icon to save your changes.
 
-1. Select **Details** to open the topic details pane.
+1. Select the **Details** icon. Here you can alternatively edit the **Name** and add a **Display name** and **Description**.
 
-    :::image type="content" source="media/authoring-create-edit-topics/open-details-pane.png" alt-text="Screenshot of the topic authoring canvas, highlighting Details.":::
+   The **Display name** tells the bot which topic the person is asking about.
 
-1. Enter a **Name** for your topic and, optionally, a **Display name** and **Description**.
+   The **Description** describes the purpose of the topic to yourself and other bot makers. This description isn't shown to users.
 
-    The bot uses the **Display name** when it needs to know which topic the person is asking about.
-
-    The **Description** is never shown to users. Use it to describe the purpose of the topic to yourself and other bot makers.
-
-    :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="Screenshot of the topic details pane showing Name, Display name, and Description.":::
-
-    You can also rename the topic by selecting its name and entering a new value.
-
-    :::image type="content" source="media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Screenshot of the topic authoring canvas, highlighting the topic name.":::
+    :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="Screenshot of the topic details pane showing Name, Display name, and Description." lightbox="media/authoring-create-edit-topics/details-pane.png":::
 
 1. Select **Save** to add the topic to the topics list.
 
