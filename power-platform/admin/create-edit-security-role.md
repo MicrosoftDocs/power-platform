@@ -50,8 +50,8 @@ Create security roles or edit the privileges associated with an existing securit
 
 1. Select your table and set the **Permission settings**. Then select the **Save** button.
 
-> [!Note]
-> You may need to repeat the last two steps of this procedure if there is more than one table in your app.
+    > [!Note]
+    > You may need to repeat the last two steps of this procedure if there is more than one table in your app.
 
 ## Create a security role by Copy Role
 
