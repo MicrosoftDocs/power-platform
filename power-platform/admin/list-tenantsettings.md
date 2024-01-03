@@ -115,6 +115,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.powerApps.disableCreateFromImage | Boolean | Allow people to use AI to generate an app based on an image. Default value is false.|
 |powerPlatform.powerApps.disableCreateFromFigma | Boolean | Allow people to create a canvas app based on a Figma file. Default value is false.|
 |powerPlatform.powerApps.disableConnectionSharingWithEveryone | Boolean | This setting isn't currently used by the platform but might be used in the future.|
+|powerPlatform.powerApps.AllowNewOrgChannelDefault | Boolean | Enables new environment to default the release channel attribute to Monthly Channel. This affects feature cadence for model driven apps.|
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams. Default value is 10000 but can be increased or decreased, as required.|
 |powerPlatform.powerAutomate.disableCopilot | Boolean | Disables cloud flows copilot in Power Automate.<br><br>It doesn't control the ability to add AI-related connectors or actions in the flow designer. For example, the Skills connector or AI Builder creates text with a GPT action. Default value is false.|
 |powerPlatform.powerAutomate.disableCopilotWithBing | Boolean | Disables the copilot-enhanced help feature within Power Automate to enhance answers on product documentation through Bing Search. Default value is false.|
