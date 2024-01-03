@@ -41,10 +41,10 @@ Create security roles or edit the privileges associated with an existing securit
 
 1. Use the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to specify privileges for the security role.
 
-1. Select **Save**.
+1. Select **Save**. The properties of the new role are displayed.
 
    > [!NOTE]
-    > You must grant your app's table privileges to this newly created security role. You also need to review and update the default privileges that were copied from the [App Opener security role's minimum privileges for common tasks](#minimum-privileges-for-common-tasks). There are some privileges that were granted with an **Organization**-level read access, such as Process (Flows), that allow the user to run system-supplied flows. If your app or user doesn't need to run system-supplied flows, you can change this privilege to **User** (basic) level.
+   > You must grant your app's table privileges to this newly created security role. You also need to review and update the default privileges that were copied from the [App Opener security role's minimum privileges for common tasks](#minimum-privileges-for-common-tasks). There are some privileges that were granted with an **Organization**-level read access, such as Process (Flows), that allow the user to run system-supplied flows. If your app or user doesn't need to run system-supplied flows, you can change this privilege to **User** (basic) level.
 
 1. Enter your table name in the **Search** input field to find your app's table.
 
