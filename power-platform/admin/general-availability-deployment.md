@@ -19,7 +19,7 @@ ms.contributors:
 
 Each release wave becomes _generally available_ twice a year. Your environments automatically receives these mandatory updates.
 
-To test the upcoming updates, [opt in to early access updates](opt-in-early-access-updates).
+To test the upcoming updates, [opt in to early access updates](opt-in-early-access-updates.md).
 
 > [!TIP]
 > Check out [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) to learn more about new features to be released in the release waves.
@@ -77,7 +77,7 @@ For each region listed, deployment begins as early as the Friday dark hours befo
 
 ## Early access updates FAQ
 
-For frequency asked questions about early access, see [Early access updates FAQ](opt-in-early-access-update.mds#early-access-updates-faq) 
+For frequency asked questions about early access, see [Early access updates FAQ](opt-in-early-access-updates.md#early-access-updates-faq) 
 
 ### See also
 
