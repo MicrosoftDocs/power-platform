@@ -65,6 +65,14 @@ To view the **Finance and Operations** page, sign in to the [Power Platform admi
 
 :::image type="content" source="media/finance-operations-storage-finops-tab.png" alt-text="Screenshot of the Finance and Operations page with capacity data by environment.":::
 
+### Table-Level Drill-Down into Storage Consumption Details for Finance and Operations Environments
+Click on the Finance and Operation database  usage entry for the F&O environment on the Finance and Operation tab to to see a table-level drill down view of how each table in your F&O environment is using capacity.You have the ability to obtain a near real-time snapshot of the table-level storage consumption. Additionally, you can track the time series trend, gaining insights into the evolution of storage across Finance and Operation tables. You also have the option to download the details in csv format for streamlined data analysis and reporting.
+
+:::image type="content" source="media/finance-operations-storage-capacity/Finance and Operation Database Usage.png " alt-text="Screenshot of the F&O page showing storage consumption for each environment .":::
+
+:::image type="content" source="media/finance-operations-storage-capacity/Finance and Operation Table Level Usage.png " alt-text="Screenshot of the table level storage consumption for each table .":::
+
+
 ## Address a storage capacity deficit
 
 The **Summary** tab shows whether your organization is using more finance and operations storage than it's entitled to.
