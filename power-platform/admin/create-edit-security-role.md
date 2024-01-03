@@ -10,7 +10,7 @@ ms.custom:
 - bap-template
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 search.audienceType: 
 - admin
 ---
@@ -35,7 +35,7 @@ Create security roles or edit the privileges associated with an existing securit
 
 1. Select a business unit.
 
-1. To allow team members to inherit the privileges of this role when it's assigned to a team, accept the default **Member's privilege inheritance** setting, which is **Direct User (Basic) access level and Team privileges**.
+1. To allow team members to inherit the privileges of this role when it is assigned to a team, accept the default **Member's privilege inheritance** setting, which is **Direct User (Basic) access level and Team privileges**.
 
 1. To use the new role to run model-driven apps, accept the default **Include App Opener privileges for running Model-Driven apps** setting, which is set to **On**.
 
