@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Provides information on how to back up and restore Power Platform environments
 ms.topic: conceptual
-ms.date: 12/08/2023
+ms.date: 01/03/2024
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
@@ -273,7 +273,7 @@ Yes, all backups within the organization's retention period will remain availabl
 ### Don't see your environment to restore to? 
 Only sandbox environments can be restored to.
 
-A [managed environment](managed-environment-overview.md) can only be restored to a managed environment.
+A [Managed Environment](managed-environment-overview.md) can only be restored to a Managed Environment.
 
 ### See also
 [Automatic environment cleanup](automatic-environment-cleanup.md) <br />
