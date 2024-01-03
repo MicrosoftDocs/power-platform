@@ -273,6 +273,8 @@ Yes, all backups within the organization's retention period will remain availabl
 ### Don't see your environment to restore to? 
 Only sandbox environments can be restored to.
 
+A [managed environment](managed-environment-overview.md) can only be restored to a managed environment.
+
 ### See also
 [Automatic environment cleanup](automatic-environment-cleanup.md) <br />
 [Manage sandbox environments](sandbox-environments.md) <br />
