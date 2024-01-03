@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: samathur
 ms.reviewer: kvivek
 ms.topic: conceptual
-ms.date: 12/14/2023
+ms.date: 01/03/2024
 search.audienceType: 
   - admin
 ms.contributors:
@@ -24,29 +24,29 @@ Each major release includes features that may affect the user experience. You ma
 
 ## Early access availability
 
-Opt in to the early access period begins approximately two months before general availability of each wave release in your region.
+Early access begins approximately two months before general availability of each release wave in your region.
 
-Release Wave 1:
-- Early Access: First Monday of February
-- Sovereign Early Access: Second Monday of February
+**Release wave 1**
+- Early access: First Monday of February
+- Sovereign early access: Second Monday of February
 
-Release Wave 2:
-- Early Access: First Monday of August
-- Sovereign Early Access: Second Monday of August
-
-> [!NOTE]
-> Sovereign regions begin early access one week after production regions
-
-General availability dates may be found in [General availability deployment](/power-platform/admin/general-availability-deployment#deployment-schedule). These dates are updated with each release wave.
+**Release wave 2**
+- Early access: First Monday of August
+- Sovereign early access: Second Monday of August
 
 > [!NOTE]
-> You must explicitly opt in to the Early Access
+> Sovereign regions begin early access one week after production regions.
+
+General availability dates are listed in [General availability deployment](general-availability-deployment.md#deployment-schedule). These dates are updated with each release wave.
+
+> [!NOTE]
+> You must explicitly opt in for early access.
 > - For each _release wave_, you must opt in for early access updates.
 > - For each _environment that you want updated_, you must opt in for early access updates.
 
-Here is an example of an early update availability timeline.
+The following image is an example of an early update availability timeline.
 
-![Opt in timeline for 2020.](media/opt-in-2020-timeline.png "Opt in timeline for 2020")
+:::image type="content" source="media/opt-in-2020-timeline.png" alt-text="Opt in timeline example for 2020.":::
 
 > [!NOTE]
 > Once a release wave is generally available, the updates status in your environments become **On** to automatically receive all planned features and updates throughout the release.  
@@ -89,11 +89,11 @@ The early access updates are available for all types of environments, including 
 > [!NOTE]
 > - All available updates to your environment initiate at once. 
 > - After they're enabled, the updates can't be reverted. Be sure to update your sandbox or trial environment before updating the production environment.  
-> - Only the apps that you currently have licenses for update. Applications that have not been installed before do not update. 
+> - Only the apps that you currently have licenses for update. Applications that haven't been installed before do not update. 
 > - It might take a few hours to complete the updates. All applications in the environment are still available during the update, though you might experience slightly reduced performance.
 
 ## Other requirements to enable early access updates  
-Some apps require more steps to enable early access features. If you have any of the following apps, after enabling the early access updates on the Power Platform admin center, you need to take the following manual steps.
+Some apps require more steps to enable early access features. If you have any of the following apps, after enabling the early access updates in the Power Platform admin center, you must complete the following manual steps.
 
 |Early access apps  |Description of manual steps  |
 |---------|---------|
@@ -115,7 +115,7 @@ The retry restarts the update for the failed application. If multiple applicatio
 The updates might take a few hours. If multiple retry attempts fail after 24 hours, contact [Support](https://dynamics.microsoft.com/support/) for assistance. 
 
 > [!NOTE]
-> The retry experience is only available for the early access opt in updates. After a release wave is generally available, the updates of the release wave will automatically enable for all environments; thus, no manual action is required.   
+> The retry experience is only available for early access updates. The retry experience doesn't apply to general availability updates.  
 
 ### Confirm update complete  
 To verify that a release wave is enabled, open the environment, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **About** to see the release wave that's enabled.
@@ -136,8 +136,7 @@ Each release wave includes features and functionality that are enabled for diffe
 - **Admins, makers, or analysts, automatically**: These features are meant to be used by administrators, makers, or business analysts and are enabled automatically. 
 - **Users by admins, makers, or analysts**: Administrators, makers, or business users enable these features.
 
-By opting in for early access updates, you get features that are mandatory changes that are automatically enabled for users.
-For more details, check the **Enabled for** column in [Dynamics 365](/dynamics365-release-plan/2021wave1/) and Microsoft [Power Platform](/power-platform-release-plan/2021wave1/) release plans.
+By opting in for early access updates, you get features that are mandatory changes that are automatically enabled for users. For more details, check the **Enabled for** column in [Dynamics 365](/dynamics365-release-plan/2021wave1/) and Microsoft [Power Platform](/power-platform-release-plan/2021wave1/) release plans.
 
 ## Prepare for a release wave  
 The following checklist provides the general guidelines to help you prepare for a release wave. 
