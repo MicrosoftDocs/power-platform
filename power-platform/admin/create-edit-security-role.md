@@ -105,7 +105,7 @@ and assign the following privilege on the Business Management tab: Read User.
 
 - To render navigation for customer engagement apps and all buttons: assign the min prv apps use security role or a copy of this security role to your user
 
-- To render an table grid: assign Read privilege on the table
+- To render a table grid: assign Read privilege on the table
 
 - To render tables: assign Read privilege on the table
 
