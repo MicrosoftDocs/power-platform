@@ -71,9 +71,10 @@ For each region listed, deployment begins as early as the Friday dark hours befo
 | Dedicated Scale Groups (SPL) | April 29, 2024 |
 | GCC\*                        | April 29, 2024 |
 | DoD\*                        | April 29, 2024 |
-| China\*                      | April 29, 2024 |
+| China\**                      | April 29, 2024 |
 
 \*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
+\**For more information about environments in China, see [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
 
 ## Early access updates FAQ
 
