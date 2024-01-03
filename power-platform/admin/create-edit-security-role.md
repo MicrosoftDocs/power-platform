@@ -35,9 +35,9 @@ Create security roles or edit the privileges associated with an existing securit
 
 1. Select a business unit.
 
-1. To allow team members to inherit the privileges of this role when it's assigned to a team, use the default **Member's privilege inheritance** setting.
+1. To allow team members to inherit the privileges of this role when it's assigned to a team, accept the default **Member's privilege inheritance** setting, which is **Direct User (Basic) access level and Team privileges**.
 
-1. To use the new role to run model-driven apps, use the default **Include App Opener privileges for running Model-Driven apps** setting.
+1. To use the new role to run model-driven apps, accept the default **Include App Opener privileges for running Model-Driven apps** setting, which is set to **On**.
 
 1. Use the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to specify privileges for the security role.
 
