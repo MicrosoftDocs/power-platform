@@ -179,13 +179,13 @@ The **Question behavior** pane is where you can adjust behaviors like prompts, v
 
 - **Retry prompt**: To change the message, select **Customize**, and then enter the new prompt.
 
-#### Additional entity validation
+#### Entity validation
 
 By default, the **Question** node checks for a valid response based only on the entity you selected. **Additional entity validation** allows you to add criteria to the basic test. For example, the **Question** node accepts any numeric value when it identifies a number, but you might want to set it to less than 10. You can also change the prompt to help the user enter a valid response.
 
 - **Condition**: Enter a Power Fx formula that returns a boolean value (`true` or `false`); for example, `Topic.Var1 < 10`
 
-- **Condition not met prompt**: When the condition is not met, you can provide a message. Select **Customize** and enter the new prompt.
+- **Condition not met prompt**: When the condition isn't met, you can provide a message. Select **Customize** and enter the new prompt.
 
 #### No valid entity found
 
@@ -207,7 +207,7 @@ By default, the **Question** node checks for a valid response based only on the 
 
 ### Delete a node
 
-Select the `...` to see the the _Node Menu_, and then select **Delete**.
+Select the `...` to see the _Node Menu_, and then select **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the Node Menu button and the Delete button.":::
 
@@ -227,7 +227,7 @@ The toolbar also has a control to undo an edit. Open the **Undo** menu to revert
 
 ### Paste nodes
 
-Once you've used the **Cut** or **Copy** tools to place one or more nodes on the clipboard, there are a couple of ways to paste them in the canvas:
+Once you use the **Cut** or **Copy** tools to place one or more nodes on the clipboard, there are two ways to paste them in the canvas:
 
 - If you select a node and then select **Paste**, the nodes on the clipboard are inserted after the selected node.
 
@@ -240,7 +240,7 @@ The code editor shows the topic in [YAML](https://yaml.org/), a markup language 
 > [!IMPORTANT]
 > Designing a topic entirely in the code editor and pasting complex topics isn't fully supported.
 
-In this example, you'll copy and paste YAML into the code editor to quickly add a topic that asks the customer for shipping information.
+In this example, you copy and paste YAML into the code editor to quickly add a topic that asks the customer for shipping information.
 
 1. On the **Topics** page, select **+ New topic**.
 
@@ -364,105 +364,89 @@ These automatically created topics fall into two categories:
 
 ### Design the topic's conversation path
 
-1. In the topic list, select the topic you want to edit.
-
-    Microsoft Copilot Studio opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
+1. In the topic list, select the topic you want to edit. You see the topic's trigger phrases. Here you define the conversation path between a customer and the copilot.
 
     For existing or system topics, several nodes are created automatically. You can edit these nodes just as you would edit other nodes.
 
-    When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you.
+    When you create a new topic, a **Trigger Phrases** node and a blank **Message** node are inserted for you.
 
-1. To add a node, select **Add node** (**+**) on the line or branch between or after nodes.
+1. To add a node, select "**+**", _Add node_, located between or after nodes.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 
-1. To move or change the paths between a node, drag the node anchor. It looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
+1. To change the paths between nodes, drag the small circle on top of the node—its node anchor—to a new location in the canvas. The dotted line represents the original path.
 
    :::image type="content" source="media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 
 ### Insert nodes
 
-You have several options when you add a node. Each option has a specific node or nodes that will be inserted in the conversation path.
-
-When you add a node after the **Trigger Phrases** node or between **Message nodes**, you can:
+When you add a node after the **Trigger Phrases** node or between **Message** nodes, you can:
 
 - Ask a question
 - Call an action
 - Show a message
-- Go to another topic
-
-:::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
-
-After the last node, you can also:
-
+- Redirect to another topic
 - End the conversation
 
-Additionally, you can **Add a condition** when you insert a node after a **Question** node.
+:::image type="content" source="media/authoring-create-edit-topics/topics-node-options.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
 
 #### Ask a question
 
-1. To have the bot ask a question and get a response from the user, select **Add node** (**+**) to add a node, and then select **Ask a question** to add a new **Question** node.
+1. Select the **Ask a question** option of the "**+**" _Add node_ menu to add a new **Question** node. A question node appears.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-question.png" alt-text="Screenshot of adding a new question mode.":::
 
-1. Enter the question phrase in **Ask a question**.
+1. Enter the question phrase in the **Ask a question** field.
 
-1. In the **Identify** list, select an option for the user's response.
+   For example, if the user wants to know store hours, the bot's question might be _Which store location do you need?_
 
-   The options determine what the bot should listen for when the user responds. For more information, see [Use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
+1. Under **Identify**, select an option for the user's response, such as **Multiple choice options**.
 
-1. Depending on what you selected in **Identify**, enter the options the user should have.
+   This option determines what the bot should listen for when the user responds. For more information, see [Use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
 
-   For example, if you selected **Multiple choice options**, enter the choices the user can specify in **Options for user**. Each choice is presented to the user as a multiple choice button, but users can also type their answer.
+1. Under **Options for user**, enter expected responses to the bot's question.
 
-   The conversation editor creates separate paths in the conversation depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each response. You can add nodes to create branching logic, and specify what the bot should respond with for each variable.
+   For example, if you chose **Multiple choice options** in **Identify**, the options might include store locations such as _Seattle_, _Bellevue_, or _Kirkland_.
+
+   :::image type="content" source="media/authoring-create-edit-topics/adding-options-for-question-node.png" alt-text="Screenshot of possible options for the user based on the multiple choice selection in Identify.":::
+
+   Each choice is presented to the user as a multiple choice button in the chat, but users can also type their answer.
 
 1. (Optional) [Save the user response in a variable](authoring-variables.md) to be used later.
 
-> [!TIP]
-> Define synonyms for each option to help the bot determine the correct one if it isn't clear what the user's response should map to.
->
-> 1. Select the menu icon at the top of the **Question** node, and then select **Options for user**.
->
->    :::image type="content" source="media/authoring-create-edit-topics/topics-question-options.png" alt-text="Screenshot of selecting options for users.":::
->
-> 1. Select the **Synonyms** icon for the option you want to add additional keywords to.
->
->    :::image type="content" source="media/authoring-create-edit-topics/topics-question-synonyms.png" alt-text="Screenshot highlighting the synonyms icon.":::
->
-> 1. Add the keywords individually. When you've entered all the synonyms you want, select **Done**.
+The conversation editor creates separate paths in the conversation depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each response. You can add nodes to create branching logic, and specify what the bot should respond with for each path or variable.
 
 #### Call an action
 
-To [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md), select **Call an action**.
+To [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md), select **Call an action** from the "+" _Add node_ menu.
 
-If you've enabled voice-based capabilities for your bot, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
+If voice-based capabilities are enabled for your bot, you see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
 
 #### Show a message
 
-1. To specify a response from the bot, select **Add node** (**+**) to add a node, and then select **Show a message** to add a new **Message** node.
+1. To specify a response from the bot, select the "**+**" _Add node_ to add a node, and then select **Show a message** to add a new **Message** node.
 
-1. Enter what you want the bot to say in the text box.
+1. Enter the message you want the bot to say in the text box.
 
-    You can apply some basic formatting, such as bold, italics, and numbering. You can also [use variables](authoring-variables.md) that you defined elsewhere in your bot conversation.
+    You can apply some basic formatting, such as bold, italics, and numbering. You can also [use variables](authoring-variables.md) that you define elsewhere in your bot conversation.
 
 #### Redirect to another topic
 
-1. To have the bot move to a different topic, select **Add node** (**+**) to add a node, and then select **Redirect to another topic**.
+1. To have the bot move to a different topic, select the "**+**" _Add node_ to add a node, and then select **Redirect to another topic**. A list of topics appears.
 
-1. Select the topic that the bot should divert to. For example, you might send the user to a topic about the closure of a store if they ask about the store's hours.
+1. Select the topic the bot should divert to. For example, you might send the user to a topic about the closure of a store if they ask about the store's hours.
 
-    :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-other-topic-flyout.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-other-topic-flyout.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
 
-You can consider the redirected topic as a "subtopic".
+The redirected topic is a subtopic.
 
-In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node.
+You can insert more nodes under the subtopic's node.
 
-When the path for the subtopic is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the subtopic's node.
+When the conversation path for the subtopic is finished, the bot returns to the original topic. The bot then follows the nodes that are under the subtopic's node.
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](authoring-system-topics.md), however, the entire conversation will end:
+If you redirect to any of these [system topics](authoring-system-topics.md), however, the entire conversation ends.
 
 - End of Conversation
 - Confirmed Success
@@ -477,13 +461,13 @@ When the conversation ends, you can have a survey ask users if their question or
 
 You can also have the conversation [handed over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service.
 
-1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
+1. At the end of a response that resolves the user's issue or answers the question, add an **End the conversation** node.
 
     :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-end.png" alt-text="Screenshot showing options for ending a conversation.":::
 
     - To end with a customer satisfaction survey, select **End with survey**.
 
-    - To insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel.md), select **Transfer To Agent**.
+    - To insert a hand-off node that links with your [configured hand-off product](configuration-hand-off-omnichannel.md), select **Transfer to agent**.
 
         (Optional) Enter a private message to the agent.
 
@@ -491,126 +475,128 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 #### Add a condition
 
-1. To add branching logic based on [variables](authoring-variables.md), select **Add node** (**+**) to add a node, select **Add a condition**, and then select **Branch based on a condition**.
+1. To add branching logic based on [variables](authoring-variables.md), select the "**+**" _Add node_ to add a node.
+1. Select **Add a condition**.
+1. Select **Branch based on a condition**.
+1. Select the variable that determines whether the bot conversation should branch at this point.
 
-1. Select the variable that will determine whether the bot conversation should branch at this point.
-
-    For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+   For example, if you set up [user authentication](advanced-end-user-authentication.md), you might want a different message if the user is signed in.
 
 ### Delete nodes
 
-Select the menu icon at the top of the node's title, and then select **Delete**.
+Select the `...` menu of your node and then select **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
 
 ### Test and publish your bot
 
-[Test your bot](authoring-test-bot.md) when you make changes to your topics, to make sure that everything is working as expected.
+[Test your bot](authoring-test-bot.md) when you make changes to your topics to insure everything works as expected.
 
-After you've designed and tested your bot, [publish it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
+After you design and test your bot, [publish it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
 # [Teams](#tab/teams)
 
-### Design the topic's conversation path
+### Design the topic's conversation path - Teams
 
-1. In the topic list, select the topic you want to edit.
+1. In the topic list of your copilot, select the topic you want to edit. For example, you might want to edit the topic _Store Hours_.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-details-canvas-teams.png" alt-text="Selecting a topic will take you to the authoring canvas":::
 
-1. Microsoft Copilot Studio opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
+   Once open, you see the topic's trigger phrases. This authoring canvas is where you define the conversation path between a customer and the bot.
 
-1. For existing or system topics, a number of nodes will automatically be created. You can edit these nodes just as you can for other nodes.
+   When you create a new topic, a **Trigger Phrases** node and a blank **Message** node are inserted for you.
 
-1. When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you.
+   For existing or system topics, several nodes are automatically created with each new topic. You can edit these nodes if needed.
 
-1. You can add additional nodes by selecting **Add node** (**+**) on the line or branch between or after a node.
+1. You can add more nodes by selecting "**+**" _Add node_ between nodes or after a node.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node-teams.png" alt-text="Screenshot of adding a node." border="false":::
 
-1. To move or change the paths between a node, drag the node anchor. It looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
+1. To change the paths between nodes, drag the node anchor—a small circle on top of the node. You see a dotted line indicating the original path.
 
    :::image type="content" source="media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 
-### Insert nodes
+### Insert nodes - Teams
 
-When adding a node, you can choose from five options. Each option has a specific node or nodes that will be inserted into the conversation path.
-
-You can:
+When adding a node to a trigger phrases node, choose from five different options:
 
 - **Ask a question**
-- **Add a condition**
 - **Call an action**
 - **Show a message**
-- **End with survey**
+- **Redirect to another topic**
+- **End the conversation**
 
-:::image type="content" source="media/authoring-create-edit-topics/topics-nodes-teams.png" alt-text="When adding a node, you can choose from five options":::
+:::image type="content" source="media/authoring-create-edit-topics/topics-nodes-teams.png" alt-text="Screenshot that shows the five options available when you add a node to the trigger phrases node.":::
 
-If the node you are adding is the last in a topic, you can also add a **Go to another topic** node.
+If you want to redirect a topic, you can go to another topic.
 
-:::image type="content" source="media/authoring-create-edit-topics/topics-nodes-other-topic-teams.png" alt-text="Go to another topic.":::
+:::image type="content" source="media/authoring-create-edit-topics/topics-nodes-other-topic-flyout.png" alt-text="Go to another topic.":::
 
-#### Ask a question
+#### Ask a question - Teams
 
-1. To have the bot ask a question and get a response from the user, select **Add node** (**+**) to add a node, and then **Ask a question** to add a new **Question** node.
+1. Select the **Ask a question** option of the "**+**" _Add node_ menu to add a new **Question** node. A question node appears.
 
-    :::image type="content" source="media/authoring-create-edit-topics/topics-question-teams.png" alt-text="Add a new question mode." border="false":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-question.png" alt-text="Screenshot of adding a new question mode.":::
 
-1. Enter the question phrase in the first text box, **Ask a question**.
+1. Enter the question phrase in the **Ask a question** field.
 
-1. Choose from several options for the user's response in the **Identify** field.
+   For example, if the user wants to know store hours, the bot's question might be _Which store location do you need?_
 
-   These options determine what the bot should be listening for in the user's response. For example, they could be multiple choice options, a number, or a specific string. To understand more about the different options, see [Use entities in a conversation](advanced-entities-slot-filling.md).
+1. Under **Identify**, select an option for the user's response, such as **Multiple choice options**.
 
-1. Depending on what you choose in the **Identify** field, you can enter what options the user should have.
+   This option determines what the bot should listen for when the user responds. For more information, see [Use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
 
-   For example, if you select **Multiple choice options**, you can then enter the options the user can specify in the **Options for user** field. Each option is presented as a multiple choice button to the user, but users can also type in their answer in the bot.
+1. Under **Options for user**, enter expected responses to the bot's question.
 
-   The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate path for each user response. You can add additional nodes to create branching logic, and specify what the bot should respond with for each variable.
+   For example, if you chose **Multiple choice options** in **Identify**, the options might include store locations such as _Seattle_, _Bellevue_, or _Kirkland_.
 
-1. You can [save the user response in a variable](authoring-variables.md) to be used later.
+   :::image type="content" source="media/authoring-create-edit-topics/adding-options-for-question-node.png" alt-text="Screenshot of possible options for the user based on the multiple choice selection in Identify.":::
 
-> [!TIP]
-> You can define synonyms for each option. This can help the bot to determine the correct option in case it isn't clear what the user's response should be mapped to.
->
-> 1. Select the menu icon on the top of the **Question** node, and then select **Options for user**.
->
->    :::image type="content" source="media/authoring-create-edit-topics/topics-question-options-teams.png" alt-text="Select options for users." border="false":::
->
-> 1. Select the **Synonyms** icon for the option you want to add additional keywords to.
->
->    :::image type="content" source="media/authoring-create-edit-topics/topics-question-synonyms-teams.png" alt-text="Select the synonyms icon." border="false":::
->
-> 1. Add the keywords individually, and then once you're done, select **Done** to return to the **Authoring canvas**.
+   Each choice is presented to the user as a multiple choice button in the chat, but users can also type their answer.
 
-#### Add a condition
+1. (Optional) [Save the user response in a variable](authoring-variables.md) to be used later.
 
-1. To add branching logic based on [variables](authoring-variables.md), select **Add node** (**+**) to add a node, and then **Add a condition**.
+The conversation editor creates separate paths in the conversation depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each response. You can add nodes to create branching logic, and specify what the bot should respond with for each path or variable.
+
+#### Add a condition - Teams
+
+On some node types, you can add a condition.
+
+1. To add branching logic based on [variables](authoring-variables.md), select the "**+**" _Add node_ menu, then select **Add a condition** to add a new node. A couple of condition nodes appear.
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point.
 
-    :::image type="content" source="media/authoring-create-edit-topics/topics-branch-teams.png" alt-text="Choose a variable." border="false":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-branch-teams.png" alt-text="Screenshot that shows two condition nodes where you can choose a variable.":::
 
-#### Call an action
+#### Call an action - Teams
 
-You can [call Power Automate Flows](advanced-flow.md) by selecting **Call an action**.
+You can [call Power Automate Flows](advanced-flow.md) by selecting **Call an action** in the "**+**" _Add node_ menu.
 
-#### Show a message
+:::image type="content" source="media/authoring-create-edit-topics/call-an-action.png" alt-text="Screenshot that shows how to call an action when adding a new node.":::
 
-1. To specify a response from the bot, select **Add node** (**+**) to add a node, and then **Show a message** to add a new **Message** node.
+#### Show a message - Teams
+
+A message can specify a response from your bot to the user.
+
+1. Select the "**+**" _Add node_ menu, then select **Show a message** to add a new **Message** node.
 
 1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, and numbering.
 
-   You can also [use variables that you have defined elsewhere](authoring-variables.md) in your bot conversation.
+   You can also [use variables that you defined elsewhere](authoring-variables.md) in your bot conversation.
 
-#### End with survey
+#### End the conversation - Teams
 
-When you end the conversation, you can have a survey appear that asks the user if their question or issue was answered or resolved correctly. This information is collected under the [customer satisfaction analytics page](analytics-csat.md).
+You can choose to **End the conversation** as a final node to your bot's conversation.
 
-1. At the end of a response that resolves the user's issue or answers the question, select **End with survey**.
+There are two options:
 
-    :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-survey-teams.png" alt-text="End with survey." border="false":::
+1. **End with survey** shows a survey that asks the user if their question or issue was answered or resolved correctly. This information is collected under the [customer satisfaction analytics page](analytics-csat.md).
 
-#### Redirect to another topic
+    :::image type="content" source="media/authoring-create-edit-topics/end-with-survey.png" alt-text="End with survey." border="false":::
+
+1. **Transfer to agent** allows you to type a private message to an agent that initiates their contact with the user.
+
+#### Redirect to another topic - Teams
 
 1. To automatically have the bot move to a separate topic, select **Add node** (**+**) to add a node, and then **Redirect to another topic**.
 
@@ -618,38 +604,36 @@ When you end the conversation, you can have a survey appear that asks the user i
 
     :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics.":::
 
-When the bot goes to another topic, the bot will go through the conversation path for that topic and then return to the original topic, at the place where it left.
+When the bot goes to another topic, the bot goes through the conversation path for that topic and then returns to the original topic—the place where it left.
 
-You can consider the redirected topic as a "subtopic".
+You can consider the redirected topic as a subtopic.
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](authoring-system-topics.md), however, the entire conversation will end:
+If you redirect to any of the following [system topics](authoring-system-topics.md), however, the entire conversation ends:
 
-- End of Conversation
-- Confirmed Success
-- Confirmed Failure
-- Goodbye
+- Start over (resets any [global variables](authoring-variables-bot.md))
 - Escalate
-- Start over (this will also reset any [global variables](authoring-variables-bot.md))
+- End of Conversation
+- Confirmed Failure
+- Confirmed Success
+- Goodbye
 
 #### Use variables
 
-You can also [use variables that you have defined elsewhere](authoring-variables.md) in your bot conversation.
+You can [use variables that you defined elsewhere](authoring-variables.md) in your bot conversation.
 
-### Delete nodes
+### Delete nodes - Teams
 
-1. Select the menu icon on the top of the node's title.
+Select the `...` menu of your node and then select **Delete**.
 
-1. Select **Delete**.
+:::image type="content" source="media/authoring-create-edit-topics/topics-delete-teams.png" alt-text="Select the menu icon and then the delete button." border="false":::
 
-    :::image type="content" source="media/authoring-create-edit-topics/topics-delete-teams.png" alt-text="Select the menu icon and then the delete button." border="false":::
+### Test and publish your bot - Teams
 
-### Test and publish your bot
+After you make changes to your topics, [Test your bot](authoring-test-bot.md) to ensure everything is working as expected.
 
-[Test your bot](authoring-test-bot.md) when you make changes to your topics, to ensure everything is working as expected.
-
-Once you've finished designing and testing your bot, you can consider [publishing it](publication-fundamentals-publish-channels.md) so other team members can use it.
+Once you finish designing and testing your bot, you can [publish it](publication-fundamentals-publish-channels.md), so other team members can use it.
 
 ---
 
