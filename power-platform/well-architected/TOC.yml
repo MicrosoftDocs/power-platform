@@ -75,3 +75,29 @@
             items:
               - name: Security patterns
                 href: ./security/design-patterns.md
+              - name: SE:01 Security baseline
+                href: security/establish-baseline.md
+              - name: SE:02 Secured development lifecycle
+                href: security/secure-development-lifecycle.md
+              - name: SE:02 Threat analysis
+                href: security/threat-model.md              
+              - name: SE:03 Data classification
+                href: security/data-classification.md
+              - name: SE:04 Segmentation
+                href: security/segmentation.md
+              - name: SE:05 Identity and access management
+                href: security/identity-access.md
+              - name: SE:06 Network controls
+                href: security/networking.md
+              - name: SE:07 Encryption
+                href: security/encryption.md
+              - name: SE:08 Hardening resources
+                href: security/harden-resources.md              
+              - name: SE:09 Application secrets
+                href: security/application-secrets.md
+              - name: SE:10 Monitoring and threat detection
+                href: security/monitor-threats.md
+              - name: SE:11 Testing and validation
+                href: security/test.md              
+              - name: SE:12 Incident response 
+                href: security/incident-response.md
