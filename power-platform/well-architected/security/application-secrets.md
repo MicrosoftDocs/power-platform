@@ -22,7 +22,7 @@ Credentials, such as API keys, Open Authorization (OAuth) tokens, and Secure She
 
 **Definitions** 
 
-| Term** | **Definition** |
+| Term** | Definition |
 |---|---|
 | Certificates | Digital files that hold the public keys for encryption or decryption. |
 | Credentials | Information that's used to verify the identity of the publisher or consumer in a communication channel. |

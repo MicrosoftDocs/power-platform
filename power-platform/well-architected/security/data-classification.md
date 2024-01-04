@@ -1,18 +1,30 @@
 ---
-author: Manuela Pichler
-ms.date: 12/07/2023
+title: Data classification recommendations
+description: Learn about data classification and how to apply it to your workloads. Categorize data based on its sensitivity levels, information type, and scope of compliance so that you can apply the correct level of protection.
+author: RobStand
+ms.author: mpichler
+ms.reviewer: sericks
+ms.date: 03/31/2024
+ms.subservice: guidance
+ms.topic: conceptual
 ---
+
 # Recommendations for data classification
+
+**Applies to Power Well-Architected Security checklist recommendation:**
+
+|[SE:03](checklist.md)|Classify and consistently apply sensitivity labels on all workload data and systems involved in data processing. Use classification to influence workload design, implementation, and security prioritization.|
+|---|---|
 
 This guide provides recommendations for classifying data based on its sensitivity. Different types of data have different levels of sensitivity, and most workloads store various types of data. Data classification helps you categorize data by how sensitive it is, what kind of information it contains, and what compliance rules it needs to follow. This way, you can apply the right level of protection – such as access controls, retention policies for different information types, and so on.
 
 **Definitions**
 
-| **Term** | **Definition** |
+| Term | Definition |
 |---|---|
-| **Classification** | A process to categorize workload assets by sensitivity levels, information type, compliance requirements, and other criteria provided by the organization. |
-| **Metadata** | An implementation for applying taxonomy to assets. |
-| **Taxonomy** | A system to organize classified data by using an agreed upon structure. Typically, a hierarchical depiction of data classification. It has named entities that indicate categorization criteria. |
+| Classification | A process to categorize workload assets by sensitivity levels, information type, compliance requirements, and other criteria provided by the organization. |
+| Metadata | An implementation for applying taxonomy to assets. |
+| Taxonomy | A system to organize classified data by using an agreed upon structure. Typically, a hierarchical depiction of data classification. It has named entities that indicate categorization criteria. |
 
 ## Key design strategies
 
@@ -20,7 +32,7 @@ Data classification helps you correctly size security assurances and helps the t
 
 Classifying data can be a tedious task. You can use tools that can find data assets and recommend classifications. But don’t just depend on tools. Make sure your team members do the exercises carefully. Then use tools to automate when it makes sense.
 
-Along with these best practices, see [Create a well-designed data classification framework](https://review.learn.microsoft.com/en-us/compliance/assurance/assurance-create-data-classification-framework).
+Along with these best practices, see [Create a well-designed data classification framework](https://earn.microsoft.com/compliance/assurance/assurance-create-data-classification-framework).
 
 ### Understand organization-defined taxonomy
 
@@ -28,14 +40,15 @@ _Taxonomy_ is a hierarchical depiction of data classification. It has named enti
 
 Different organizations may have different data classification frameworks, but they usually consist of 3-5 levels with names, descriptions, and examples. Here are some data classification taxonomy examples:
 
-| **Sensitivity** | **Information type** | **Description** |
+| Sensitivity | Information type | Description |
 |---|---|---|
-| **Public** | Public marketing material, information available on your website | Information that is freely accessible and not sensitive |
-| **Internal** | Policies, procedures, or budgets that relate to your organization | Information that relates to a specific organization |
-| **Confidential** | Trade secrets, customer data, or final records | Information that is sensitive and requires protection |
-| **Highly confidential** | Sensitive Personally Identifiable Information (Sensitive PII)Cardholder DataProtected Health Information (PHI)Bank Account Data | Information that is highly sensitive and requires the highest level of security. May require legal notifications if breached or otherwise disclosed. |
+| Public | Public marketing material, information available on your website | Information that is freely accessible and not sensitive |
+| Internal | Policies, procedures, or budgets that relate to your organization | Information that relates to a specific organization |
+| Confidential | Trade secrets, customer data, or final records | Information that is sensitive and requires protection |
+| Highly confidential | Sensitive Personally Identifiable Information (Sensitive PII)Cardholder DataProtected Health Information (PHI)Bank Account Data | Information that is highly sensitive and requires the highest level of security. May require legal notifications if breached or otherwise disclosed. |
 
-### As a workload owner, you should follow the taxonomy that your organization has established. All workload roles should agree on the structure, names, and meanings of the sensitivity levels. Don’t create your own classification system.
+> [!IMPORTANT]
+> As a workload owner, you should follow the taxonomy that your organization has established. All workload roles should agree on the structure, names, and meanings of the sensitivity levels. Don’t create your own classification system.
 
 ### Define the classification scope
 
@@ -45,19 +58,13 @@ Make sure you know which data assets and components belong to each sensitivity l
 
 Start with these simple questions and expand as necessary based on your system complexity:
 
-What's the origin of data and information type?
-
-What's the expected restriction based on access? For example, is it public information data, regulatory, or other expected use cases?
-
-What's the data footprint? Where is data stored? How long should the data be retained?
-
-Which components of the architecture interact with the data?
-
-How does the data move through the system?
-
-What information is expected in the audit reports?
-
-Do you need to classify preproduction data?
+1. What's the origin of data and information type?
+1. What's the expected restriction based on access? For example, is it public information data, regulatory, or other expected use cases?
+1. What's the data footprint? Where is data stored? How long should the data be retained?
+1. Which components of the architecture interact with the data?
+1. How does the data move through the system?
+1. What information is expected in the audit reports?
+1. Do you need to classify preproduction data?
 
 #### Take inventory of your data stores
 
@@ -121,7 +128,7 @@ Empower data consumers to discover valuable, trustworthy data.
 
 Enable data curators and security administrators to manage and keep data estate secure, reduce data exposure, and better protect sensitive data.
 
-![Microsoft Purview configuration screen for Microsoft Dataverse tables](media/image1.png)
+![Microsoft Purview configuration screen for Microsoft Dataverse tables](media/data-classification/image1.png)
 
 ## Example
 
