@@ -11,7 +11,7 @@ ms.date: 11/30/2023
 
 # Design review checklist for Security
 
-This checklist presents a set of security recommendations to help you ensure your low-code workload is secure.
+This checklist presents a set of security recommendations to help you ensure your workload is secure. If you don't review the checklist and weigh the associated tradeoffs, you may expose your design to potential risks. Thoroughly assess all the aspects outlined in the checklist to enhance your confidence in the security of your workload.
 
 ## Checklist
 
