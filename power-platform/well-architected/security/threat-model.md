@@ -58,7 +58,7 @@ Analyze each component from an outside-in perspective. For example, how easily c
 
 ### Classify the threats by using an industry methodology
 
-One methodology for classifying threats is [STRIDE](https:///azure/security/develop/threat-modeling-tool-threats), which the Microsoft Security Development Lifecycle uses. Classifying threats helps you understand the nature of each threat and use appropriate security controls.
+One methodology for classifying threats is [STRIDE](/azure/security/develop/threat-modeling-tool-threats), which the Microsoft Security Development Lifecycle uses. Classifying threats helps you understand the nature of each threat and use appropriate security controls.
 
 ### Mitigate the threats
 
@@ -97,15 +97,15 @@ Power Platform is built on a culture and methodology of secure design. Both cult
 
 The Threat Modeling review process ensures that threats are identified during the design phase, mitigated, and validated to make sure they've been mitigated.
 
-Threat Modeling also accounts for all changes to services that are already live through continuous regular reviews. Relying on the [STRIDE model](https:///azure/security/develop/threat-modeling-tool-threats) helps to address the most common issues with insecure design.
+Threat Modeling also accounts for all changes to services that are already live through continuous regular reviews. Relying on the [STRIDE model](/azure/security/develop/threat-modeling-tool-threats) helps to address the most common issues with insecure design.
 
 Microsoft's SDL is equivalent to the [OWASP Software Assurance Maturity Model](https://owaspsamm.org/) (SAMM). Both are built on the premise that secure design is integral to web application security.
 
-Learn more: [OWASP top 10 risks: Mitigations in Power Platform](https:///power-platform/admin/security/faqs)
+Learn more: [OWASP top 10 risks: Mitigations in Power Platform](/power-platform/admin/security/faqs)
 
 ## Example
 
-This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](https:///azure/well-architected/security/establish-baseline). This approach provides a broad understanding of the threat landscape across different IT scenarios.
+This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](/azure/well-architected/security/establish-baseline). This approach provides a broad understanding of the threat landscape across different IT scenarios.
 
 **Development Lifecycle personas**. There are many personas involved in a development life cycle, including developers, testers, final users, and administrators. All of them may be compromised and put your environment at risk through vulnerabilities or threats created intentionally.
 
@@ -121,13 +121,13 @@ This example builds on the Information Technology (IT) environment established i
 
 ## Related links
 
-- [STRIDE](https:///azure/security/develop/threat-modeling-tool-threats)
+- [STRIDE](/azure/security/develop/threat-modeling-tool-threats)
 - [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling)
-- [Power Platform security FAQs - Power Platform | Microsoft Learn](https:///power-platform/admin/security/faqs)
-- [Microsoft Identity Platform](https:///azure/active-directory/develop/v2-overview)
+- [Power Platform security FAQs - Power Platform | Microsoft Learn](/power-platform/admin/security/faqs)
+- [Microsoft Identity Platform](/azure/active-directory/develop/v2-overview)
 - [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/practices)
-- [Azure AD Continuous Access Evaluation](https:///azure/active-directory/conditional-access/concept-continuous-access-evaluation)
-- [Content Security Policy](https:///power-platform/admin/content-security-policy)
-- [Azure DDoS Protection](https:///azure/ddos-protection/ddos-protection-standard-features)
-- [Intune's compliance policy settings](https:///mem/intune/protect/device-compliance-get-started)
+- [Azure AD Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
+- [Content Security Policy](/power-platform/admin/content-security-policy)
+- [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-standard-features)
+- [Intune's compliance policy settings](/mem/intune/protect/device-compliance-get-started)
 

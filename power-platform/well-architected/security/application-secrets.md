@@ -77,11 +77,11 @@ A dedicated secret management system makes it easy to store, distribute, and con
 
 **Have a process in place that maintains secret hygiene.** The longevity of a secret influences the management of that secret. To reduce attack vectors, secrets should be retired and replaced with new secrets as frequently as possible.
 
-Handle OAuth access tokens carefully, taking into consideration their time to live. Consider if the exposure window needs to be adjusted to a shorter period. Refresh tokens must be stored securely with limited exposure to the application. Renewed certificates should also use a new key. For information about refresh tokens, see [Secure OAuth 2.0 On-Behalf-Of refresh tokens](https:///azure/architecture/example-scenario/secrets/secure-refresh-tokens).
+Handle OAuth access tokens carefully, taking into consideration their time to live. Consider if the exposure window needs to be adjusted to a shorter period. Refresh tokens must be stored securely with limited exposure to the application. Renewed certificates should also use a new key. For information about refresh tokens, see [Secure OAuth 2.0 On-Behalf-Of refresh tokens](/azure/architecture/example-scenario/secrets/secure-refresh-tokens).
 
 **Replace secrets after they reach their end of life, are no longer used by the workload, or if they've been compromised.** Conversely, don't retire active secrets unless it's an emergency. You can determine a secret's status by viewing access logs. Secret rotation processes shouldn't affect the reliability or performance of the workload. Use strategies that build redundancy in secrets, consumers, and access methods for smooth rotation.
 
-For more information on how Azure Storage handles rotation, see [Manage account access keys](https:///azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+For more information on how Azure Storage handles rotation, see [Manage account access keys](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
 
 Rotation processes should be automated and deployed without any human interaction. Storing secrets in a secret management store that natively supports rotation concepts can simplify this operational task.
 
@@ -117,11 +117,11 @@ The actual secrets are stored in Azure Key Vault and the environment variable re
 
 _Use Solution Checker_
 
-With the solution checker feature, you can perform a rich static analysis check on your solutions against a set of best practice rules and quickly identify these problematic patterns. After the check completes, you receive a detailed report that lists the issues identified, the components and code affected, and links to documentation that describes how to resolve each issue. Review the available solution checker rules in the Security category: [Use solution checker to validate your solutions - Power Apps | Microsoft Learn](https:///power-apps/maker/data-platform/use-powerapps-checker)
+With the solution checker feature, you can perform a rich static analysis check on your solutions against a set of best practice rules and quickly identify these problematic patterns. After the check completes, you receive a detailed report that lists the issues identified, the components and code affected, and links to documentation that describes how to resolve each issue. Review the available solution checker rules in the Security category: [Use solution checker to validate your solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/use-powerapps-checker)
 
 ## Related links
 
-[Use environment variables in solutions - Power Apps | Microsoft Learn](https:///power-apps/maker/data-platform/environmentvariables)
+[Use environment variables in solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/environmentvariables)
 
-[Use solution checker to validate your solutions - Power Apps | Microsoft Learn](https:///power-apps/maker/data-platform/use-powerapps-checker)
+[Use solution checker to validate your solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/use-powerapps-checker)
 

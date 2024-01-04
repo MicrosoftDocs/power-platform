@@ -80,9 +80,9 @@ Role-based access control (RBAC) also results in management overhead. Keeping tr
 
  > :::image type="icon" source="../_images/risk.svg"::: **Risk**: Identity settings can be complex. Misconfigurations can affect the reliability of the workload. For example, suppose there's a misconfigured role assignment that's denied access to a database. The requests start failing, eventually causing reliability issues that can't otherwise be detected until runtime.
 
-For information about identity controls, see [Identity and access management](https:///azure/well-architected/security/identity-access).
+For information about identity controls, see [Identity and access management](/azure/well-architected/security/identity-access).
 
-In contrast to network access controls, identity validates access control at access time. It's highly recommended to conduct regular access review and require an approval workflow to obtain privileges for critical impact accounts. For example, see [Identity segmentation patterns](https:///azure/well-architected/security/segmentation).
+In contrast to network access controls, identity validates access control at access time. It's highly recommended to conduct regular access review and require an approval workflow to obtain privileges for critical impact accounts. For example, see [Identity segmentation patterns](/azure/well-architected/security/segmentation).
 
 ### Networking as a perimeter
 
@@ -102,7 +102,7 @@ Create micro-segmentation within your private network by grouping parts of the w
 
 Create boundaries based on intent. For example, segment workload functional networks from operational networks.
 
-For common patterns related to networking segmentation, see [Networking segmentation patterns](https:///azure/well-architected/security/segmentation).
+For common patterns related to networking segmentation, see [Networking segmentation patterns](/azure/well-architected/security/segmentation).
 
  > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Network security controls are often expensive because they're included with the premium SKUs. Configuring rules on firewalls often results in overwhelming complexity requiring broad exceptions.
 
@@ -112,7 +112,7 @@ Because network perimeters are based on control points, or hops, on the network,
 
  > :::image type="icon" source="../_images/risk.svg"::: **Risk**: Network controls are rule-based and there's a significant chance of misconfiguration, which is a reliability concern.
 
-For information about network controls, see [Networking and connectivity](https:///azure/well-architected/security/networking).
+For information about network controls, see [Networking and connectivity](/azure/well-architected/security/networking).
 
 ### Roles and responsibilities
 
@@ -132,7 +132,7 @@ Polyglot persistence involves a combination of data storing technologies instead
 
 Allocate one service for each server when organizing your compute. This level of isolation minimizes complexity and can help contain an attack.
 
-Azure provides built-in isolation for some services, for example separation of compute from storage. For other examples, see [Isolation in the Azure public cloud](https:///azure/security/fundamentals/isolation-choices).
+Azure provides built-in isolation for some services, for example separation of compute from storage. For other examples, see [Isolation in the Azure public cloud](/azure/security/fundamentals/isolation-choices).
 
  > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Resource isolation might result in an increase in total cost of ownership (TCO). For data stores, there might be added complexity and coordination during disaster recovery.
 
@@ -144,23 +144,23 @@ Certain Azure services are available for use in implementing a segmentation stra
 
 Azure RBAC supports segmentation by isolating access by job function. Only certain actions are allowed for certain roles and scopes. For example, job functions that only need to observe the system can be assigned reader permissions versus contributor permissions that allow the identity to manage resources.
 
-For more information, see [Best practices for RBAC](https:///azure/role-based-access-control/best-practices).
+For more information, see [Best practices for RBAC](/azure/role-based-access-control/best-practices).
 
 ### Networking
 
-[Virtual networks](https:///azure/virtual-network/virtual-networks-overview): Virtual networks provide network-level containment of resources without adding traffic between two virtual networks. Virtual networks are created in private address spaces within a subscription
+[Virtual networks](/azure/virtual-network/virtual-networks-overview): Virtual networks provide network-level containment of resources without adding traffic between two virtual networks. Virtual networks are created in private address spaces within a subscription
 
-Network security groups (NSG): An access control mechanism for controlling traffic between resources in virtual networks and external networks, such as the internet. Implement user-defined routes (UDR) to control the next hop for traffic. NSGs can take your segmentation strategy to a granular level by creating perimeters for a subnet, a virtual machine (VM), or a group of VMs. For information about possible operations with subnets in Azure, see [Subnets](https:///rest/api/virtualnetwork/subnets).
+Network security groups (NSG): An access control mechanism for controlling traffic between resources in virtual networks and external networks, such as the internet. Implement user-defined routes (UDR) to control the next hop for traffic. NSGs can take your segmentation strategy to a granular level by creating perimeters for a subnet, a virtual machine (VM), or a group of VMs. For information about possible operations with subnets in Azure, see [Subnets](/rest/api/virtualnetwork/subnets).
 
-[Application security groups (ASGs)](https:///azure/virtual-network/application-security-groups): ASGs allow you to group a set of VMs under an application tag and define traffic rules that are then applied to each of the underlying VMs.
+[Application security groups (ASGs)](/azure/virtual-network/application-security-groups): ASGs allow you to group a set of VMs under an application tag and define traffic rules that are then applied to each of the underlying VMs.
 
-[Azure Firewall](https:///azure/firewall/): A cloud-native service, which can be deployed in your virtual network or in [Azure Virtual WAN](https:///azure/virtual-wan/virtual-wan-about) hub deployments. Use Azure Firewall to filter traffic flowing between cloud resources, the internet, and on-premises resources. Use Azure Firewall or [Azure Firewall Manager](https:///azure/firewall-manager/overview) to create rules or policies that allow or deny traffic using layer 3 to layer 7 controls. Filter internet traffic using Azure Firewall and third parties by directing traffic through third-party security providers for advanced filtering and user protection. Azure supports network virtual appliance deployment, which helps segmentation from third-party firewalls.
+[Azure Firewall](/azure/firewall/): A cloud-native service, which can be deployed in your virtual network or in [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) hub deployments. Use Azure Firewall to filter traffic flowing between cloud resources, the internet, and on-premises resources. Use Azure Firewall or [Azure Firewall Manager](/azure/firewall-manager/overview) to create rules or policies that allow or deny traffic using layer 3 to layer 7 controls. Filter internet traffic using Azure Firewall and third parties by directing traffic through third-party security providers for advanced filtering and user protection. Azure supports network virtual appliance deployment, which helps segmentation from third-party firewalls.
 
 ## Example
 
 Here are some common patterns for segmenting a workload in Azure. Choose a pattern based on your needs.
 
-This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](https:///azure/well-architected/security/establish-baseline). The diagram below shows segmentation at the management group level done by an organization.
+This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](/azure/well-architected/security/establish-baseline). The diagram below shows segmentation at the management group level done by an organization.
 
 ### Identity segmentation patterns
 
@@ -228,15 +228,15 @@ Consider the principle of least privilege when you define access control policie
 
 ## Related links
 
-[Isolation in the Azure public cloud](https:///azure/security/fundamentals/isolation-choices)
+[Isolation in the Azure public cloud](/azure/security/fundamentals/isolation-choices)
 
-[Recommendations for RBAC](https:///azure/role-based-access-control/best-practices)
+[Recommendations for RBAC](/azure/role-based-access-control/best-practices)
 
-[Virtual networks overview](https:///azure/virtual-network/virtual-networks-overview)
+[Virtual networks overview](/azure/virtual-network/virtual-networks-overview)
 
-[ASGs](https:///azure/virtual-network/application-security-groups)
+[ASGs](/azure/virtual-network/application-security-groups)
 
-[Azure Firewall](https:///azure/firewall/)
+[Azure Firewall](/azure/firewall/)
 
-[Firewall Manager overview](https:///azure/firewall-manager/overview)
+[Firewall Manager overview](/azure/firewall-manager/overview)
 
