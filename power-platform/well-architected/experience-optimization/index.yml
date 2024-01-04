@@ -24,6 +24,6 @@ landingContent:
             url: checklist.md
           - text: Tradeoffs
             url: tradeoffs.md
-          - text: Performance efficiency patterns
+          - text: Experience optimization patterns
             url: design-patterns.md
      
