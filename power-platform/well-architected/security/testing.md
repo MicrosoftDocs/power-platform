@@ -58,7 +58,7 @@ SDL includes several types of tests that catch vulnerabilities in code, verify r
 
 Testing in production environments gives you the best information but causes the most disruption. You tend to do only nondestructive tests in production environments. Testing in nonproduction environments is typically less disruptive but might not accurately represent the production environment's configuration in ways that are important to security.
 
-You can create an isolated clone of your production environment by using the Environment copy feature [Copy an environment - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/copy-environment). If you have deployment pipelines set up, you can also deploy your solution(s) to a dedicated testing environment. 
+You can create an isolated clone of your production environment by using the Environment copy feature [Copy an environment - Power Platform | Microsoft Learn](https:///power-platform/admin/copy-environment). If you have deployment pipelines set up, you can also deploy your solution(s) to a dedicated testing environment. 
 
 **Always evaluate the test results.** Testing is a wasted effort if the results aren't used to prioritize actions and make improvements upstream. Document the security guidelines, including best practices, that you uncover. Documentation that captures results and remediation plans educates the team about the various ways that attackers might try to breach security. Conduct regular security training for developers, admins, and testers.
 
@@ -160,7 +160,7 @@ Security experts who aren't part of the organization's IT or application teams c
 
  > :::image type="icon" source="../_images/risk.svg"::: **Risk**: A pentesting exercise might affect the runtime environment and might disrupt the availability for normal traffic.
 
-The practitioners might need access to sensitive data in the entire organization. Follow the rules of engagement to ensure that access isn't misused. See the resources listed in [Related links](https://learn.microsoft.com/azure/well-architected/security/test).
+The practitioners might need access to sensitive data in the entire organization. Follow the rules of engagement to ensure that access isn't misused. See the resources listed in [Related links](https:///azure/well-architected/security/test).
 
 ##### Tests that simulate attacks through war game exercises
 
@@ -172,9 +172,9 @@ The _blue_ team is the workload team that defends against the attacks. They test
 
 If they're conducted as routine tests, war game exercises can provide ongoing visibility and assurance that your defenses work as designed. War game exercises can potentially test across levels within your workloads.
 
-A popular choice to simulate realistic attack scenarios is the Microsoft Defender for Office 365 [Attack simulation training](https://learn.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-get-started).
+A popular choice to simulate realistic attack scenarios is the Microsoft Defender for Office 365 [Attack simulation training](https:///microsoft-365/security/office-365-security/attack-simulation-training-get-started).
 
-For more information, see [Insights and reports for Attack simulation training](https://learn.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights).
+For more information, see [Insights and reports for Attack simulation training](https:///microsoft-365/security/office-365-security/attack-simulation-training-insights).
 
 For information about red-team and blue-team setup, see [Microsoft Cloud Red Teaming](https://download.microsoft.com/download/C/1/9/C1990DBA-502F-4C2A-848D-392B93D9B9C3/Microsoft_Enterprise_Cloud_Red_Teaming.pdf).
 
@@ -182,13 +182,13 @@ For information about red-team and blue-team setup, see [Microsoft Cloud Red Tea
 
 Microsoft Sentinel is a native control that combines security information event management (SIEM) and security orchestration automated response (SOAR) capabilities. It analyzes events and logs from various connected sources. Based on data sources and their alerts, Microsoft Sentinel creates incidents and performs threat analysis for early detection. Through intelligent analytics and queries, you can proactively hunt for security issues. If there's an incident, you can automate workflows. Also, with workbook templates, you can quickly gain insights through visualization.
 
-For product documentation, see [Hunting capabilities in Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/hunting).
+For product documentation, see [Hunting capabilities in Microsoft Sentinel](https:///azure/sentinel/hunting).
 
-Microsoft Defender for Cloud offers vulnerability scanning for various technology areas. For details, see [Enable vulnerability scanning with Microsoft Defender Vulnerability Management - Microsoft Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud/deploy-vulnerability-assessment-defender-vulnerability-management).
+Microsoft Defender for Cloud offers vulnerability scanning for various technology areas. For details, see [Enable vulnerability scanning with Microsoft Defender Vulnerability Management - Microsoft Defender for Cloud](https:///azure/defender-for-cloud/deploy-vulnerability-assessment-defender-vulnerability-management).
 
-The practice of DevSecOps integrates security testing as part of an ongoing and continuous improvement mindset. War game exercises are a common practice that's integrated into the rhythm of business at Microsoft. For more information, see [Security in DevOps (DevSecOps)](https://learn.microsoft.com/devops/operate/security-in-devops).
+The practice of DevSecOps integrates security testing as part of an ongoing and continuous improvement mindset. War game exercises are a common practice that's integrated into the rhythm of business at Microsoft. For more information, see [Security in DevOps (DevSecOps)](https:///devops/operate/security-in-devops).
 
-Azure DevOps supports third-party tools that can be automated as part of the continuous integration/continuous deployment pipelines. For details, see [Enable DevSecOps with Azure and GitHub - Azure DevOps](https://learn.microsoft.com/devops/devsecops/enable-devsecops-azure-github).
+Azure DevOps supports third-party tools that can be automated as part of the continuous integration/continuous deployment pipelines. For details, see [Enable DevSecOps with Azure and GitHub - Azure DevOps](https:///devops/devsecops/enable-devsecops-azure-github).
 
 ## Related links
 
@@ -200,7 +200,7 @@ Follow the rules of engagement to make sure that access isn't misused. For guida
 
 [Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement)
 
-[Penetration testing](https://learn.microsoft.com/azure/security/fundamentals/pen-testing)
+[Penetration testing](https:///azure/security/fundamentals/pen-testing)
 
-You can simulate denial of service (DoS) attacks in Azure. Be sure to follow the policies laid out in [Azure DDoS Protection simulation testing](https://learn.microsoft.com/azure/ddos-protection/test-through-simulations).
+You can simulate denial of service (DoS) attacks in Azure. Be sure to follow the policies laid out in [Azure DDoS Protection simulation testing](https:///azure/ddos-protection/test-through-simulations).
 

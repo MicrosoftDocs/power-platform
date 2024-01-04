@@ -77,7 +77,7 @@ To ensure that this guidance is followed, maintain a list of approved and/or una
 
 **Determine the security design patterns that the application code should implement.** Patterns can support security concerns like segmentation and isolation, strong authorization, uniform application security, and modern protocols.
 
-For more information, see [Cloud design patterns that support security](https://learn.microsoft.com/azure/well-architected/security/design-patterns).
+For more information, see [Cloud design patterns that support security](https:///azure/well-architected/security/design-patterns).
 
 **Store application secrets securely.**
 
@@ -133,7 +133,7 @@ It's not enough to just secure code. If it runs in exploitable pipelines, all se
 
 Every new component that's integrated into an application increases the attack surface. To ensure proper accountability and alerting when new components are added or updated, you should have an inventory of these components. **On a regular basis, check that your manifest matches what's in your build process.** Doing so helps ensure that no new components that contain back doors or other malware are added unexpectedly.
 
-**We recommend using** [Pipelines for Power Platform](https://learn.microsoft.com/power-platform/alm/set-up-pipelines)** for** **your deployments. Extend pipelines using GitHub Actions.** If you use GitHub workflows, prefer Microsoft-authored tasks. Also, validate tasks because they run in the security context of your pipeline.
+**We recommend using** [Pipelines for Power Platform](https:///power-platform/alm/set-up-pipelines)** for** **your deployments. Extend pipelines using GitHub Actions.** If you use GitHub workflows, prefer Microsoft-authored tasks. Also, validate tasks because they run in the security context of your pipeline.
 
 Explore the use of service principals for deployment. 
 
@@ -181,24 +181,24 @@ Power Platform is built on a culture and methodology of secure design. Both cult
 
 The Threat Modeling review process ensures that threats are identified during the design phase, mitigated, and validated to make sure they've been mitigated.
 
-Threat Modeling also accounts for all changes to services that are already live through continuous regular reviews. Relying on the [STRIDE model](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats) helps to address the most common issues with insecure design.
+Threat Modeling also accounts for all changes to services that are already live through continuous regular reviews. Relying on the [STRIDE model](https:///azure/security/develop/threat-modeling-tool-threats) helps to address the most common issues with insecure design.
 
-Microsoft's SDL is equivalent to the [OWASP Software Assurance Maturity Model](https://owaspsamm.org/) (SAMM). Both are built on the premise that secure design is integral to web application security. Learn more: [OWASP Top 10 Risks: Mitigations in Power Platform](https://learn.microsoft.com/power-platform/admin/security/faqs)
+Microsoft's SDL is equivalent to the [OWASP Software Assurance Maturity Model](https://owaspsamm.org/) (SAMM). Both are built on the premise that secure design is integral to web application security. Learn more: [OWASP Top 10 Risks: Mitigations in Power Platform](https:///power-platform/admin/security/faqs)
 
 Microsoft Security Development Lifecycle (SDL) recommends secure practices that you can apply to your development lifecycle. For more information, see [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/).
 
 Defender for DevOps and the SAST tools are included as part of GitHub Advanced Security or Azure DevOps. These tools can help you track a security score for your organization.
 
-With the solution checker feature, you can perform a rich static analysis check on your solutions against a set of best practice rules and quickly identify these problematic patterns. [Use solution checker to validate your solutions - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/maker/data-platform/use-powerapps-checker)
+With the solution checker feature, you can perform a rich static analysis check on your solutions against a set of best practice rules and quickly identify these problematic patterns. [Use solution checker to validate your solutions - Power Apps | Microsoft Learn](https:///power-apps/maker/data-platform/use-powerapps-checker)
 
 ## Related links
 
-- [Application lifecycle management (ALM) with Microsoft Power Platform - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/alm/)
-- [Overview of pipelines in Power Platform - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/alm/pipelines)
-- [Application lifecycle management for the Power Platform - Training | Microsoft Learn](https://learn.microsoft.com/training/paths/application-lifecycle-management/)
-- [Solution Architect series: Plan application lifecycle management for Power Platform - Training | Microsoft Learn](https://learn.microsoft.com/training/modules/application-lifecycle-management-architect/)
-- [Use environment variables in solutions - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/maker/data-platform/environmentvariables)
-- [Use solution checker to validate your solutions - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/maker/data-platform/use-powerapps-checker)
+- [Application lifecycle management (ALM) with Microsoft Power Platform - Power Platform | Microsoft Learn](https:///power-platform/alm/)
+- [Overview of pipelines in Power Platform - Power Platform | Microsoft Learn](https:///power-platform/alm/pipelines)
+- [Application lifecycle management for the Power Platform - Training | Microsoft Learn](https:///training/paths/application-lifecycle-management/)
+- [Solution Architect series: Plan application lifecycle management for Power Platform - Training | Microsoft Learn](https:///training/modules/application-lifecycle-management-architect/)
+- [Use environment variables in solutions - Power Apps | Microsoft Learn](https:///power-apps/maker/data-platform/environmentvariables)
+- [Use solution checker to validate your solutions - Power Apps | Microsoft Learn](https:///power-apps/maker/data-platform/use-powerapps-checker)
 
   
 

@@ -107,7 +107,7 @@ The decision to use native features as opposed to partner solutions should be ba
 
  > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Partner capabilities often provide advanced features that can protect against sophisticated, but typically uncommon, attacks. The configuration of partner solutions can be complex and fragile, because these solutions don't integrate with the cloud's fabric controllers. From a cost perspective, native control is preferred because it's cheaper than partner solutions.
 
-Any technological options that you consider should provide security controls and monitoring for both ingress and egress flows. To see options that are available for Azure, see the [Edge security](https://learn.microsoft.com/azure/well-architected/security/networking) section in this article.
+Any technological options that you consider should provide security controls and monitoring for both ingress and egress flows. To see options that are available for Azure, see the [Edge security](https:///azure/well-architected/security/networking) section in this article.
 
 ### Design virtual network and subnet security
 
@@ -127,15 +127,15 @@ You can segment virtual networks by creating subnets. The criteria for division 
 
 You can base your segmentation on many factors. For example, you can place different application tiers in dedicated segments. Another approach is to plan your subnets based on common roles and functions that use well-known protocols.
 
-For more information, see [Segmentation strategies](https://learn.microsoft.com/azure/well-architected/security/segmentation).
+For more information, see [Segmentation strategies](https:///azure/well-architected/security/segmentation).
 
 ##### Subnet firewalls
 
-It's important to inspect each subnet's inbound and outbound traffic. Use the three main strategies discussed earlier in this article, in [Key design strategies](https://learn.microsoft.com/azure/well-architected/security/networking). Check whether the flow is expected, allowed, and safe. To verify this information, **define firewall rules that are based on the protocol, source, and destination** of the traffic.
+It's important to inspect each subnet's inbound and outbound traffic. Use the three main strategies discussed earlier in this article, in [Key design strategies](https:///azure/well-architected/security/networking). Check whether the flow is expected, allowed, and safe. To verify this information, **define firewall rules that are based on the protocol, source, and destination** of the traffic.
 
-On Azure, you set firewall rules in network security groups. For more information, see the [Network security groups](https://learn.microsoft.com/azure/well-architected/security/networking) section in this article.
+On Azure, you set firewall rules in network security groups. For more information, see the [Network security groups](https:///azure/well-architected/security/networking) section in this article.
 
-For an example of a subnet design, see [Azure Virtual Network subnets](https://learn.microsoft.com/azure/virtual-network/quick-create-portal).
+For an example of a subnet design, see [Azure Virtual Network subnets](https:///azure/virtual-network/quick-create-portal).
 
 ### Use controls at the component level
 
@@ -159,7 +159,7 @@ A tunnel from the PaaS service into one of your subnets creates a private channe
 
 In this example, the image on the left shows the flow for publicly exposed endpoints. On the right, that flow is secured by using private endpoints.
 
-For more information, see the [Private endpoints](https://learn.microsoft.com/azure/well-architected/security/networking) section in this article.
+For more information, see the [Private endpoints](https:///azure/well-architected/security/networking) section in this article.
 
 ** Note**
 
@@ -186,7 +186,7 @@ The web front-end cluster applies to any service that displays a web user interf
 
 ![A diagram of a computer  Description automatically generated](images/networking/image1.png)
 
-When a user accesses the service, the client’s DNS service gets the most appropriate (typically nearest) datacenter from Azure Traffic Manager. Azure Traffic Manager [routing methods](https://learn.microsoft.com/azure/traffic-manager/traffic-manager-routing-methods) handle all the routing decisions for the traffic. Azure Content Delivery Network is used to deliver static resources to the user’s browser except for in sovereign government deployments. 
+When a user accesses the service, the client’s DNS service gets the most appropriate (typically nearest) datacenter from Azure Traffic Manager. Azure Traffic Manager [routing methods](https:///azure/traffic-manager/traffic-manager-routing-methods) handle all the routing decisions for the traffic. Azure Content Delivery Network is used to deliver static resources to the user’s browser except for in sovereign government deployments. 
 
 The token from authentication is used to determine the organization to which the user belongs. A global backend service then identifies which backend cluster houses the organization’s tenant.  
 
@@ -206,7 +206,7 @@ Power Platform services connect to external data sources in various ways, but th
 
 ![A screenshot of a computer  Description automatically generated](images/networking/image3.png)
 
-For other external data sources Power Platform services use connectors. The external service is accessed through an [Azure API Management (APIM)](https://learn.microsoft.com/azure/api-management/api-management-key-concepts) connector as illustrated in the following diagram. 
+For other external data sources Power Platform services use connectors. The external service is accessed through an [Azure API Management (APIM)](https:///azure/api-management/api-management-key-concepts) connector as illustrated in the following diagram. 
 
 ![A diagram of a computer program  Description automatically generated](images/networking/image4.png)
 
@@ -218,7 +218,7 @@ Authentication to a data source is specific to that data source depending on the
 
 **Implicit** authentication means the credentials the app maker provided when creating the connection are used. 
 
-When possible, explicit authentication is recommended as it is more secure and does not provide the application user with the ability to have elevated permissions when using the apps. This [article](https://learn.microsoft.com/power-apps/maker/canvas-apps/connections/sql-server-security) on the differences provides some good detailed examples of the two methods so you can gain a deeper understanding. 
+When possible, explicit authentication is recommended as it is more secure and does not provide the application user with the ability to have elevated permissions when using the apps. This [article](https:///power-apps/maker/canvas-apps/connections/sql-server-security) on the differences provides some good detailed examples of the two methods so you can gain a deeper understanding. 
 
 **Mobile platforms** 
 
@@ -234,9 +234,9 @@ You can add an additional layer of protection by configuring the Azure Web Appli
 
 Web Application Firewall is powered by Azure Front Door (AFD), and the policy is configured using an AFD profile with prevention mode enabled. In prevention mode, requests matching the rules defined in the managed rule set are blocked. 
 
-Web Application Firewall can be enabled for production sites from the Power Platform admin center. Follow these [steps](https://learn.microsoft.com/power-pages/security/configure-web-application-firewall) to enable or disable Web Application Firewall. 
+Web Application Firewall can be enabled for production sites from the Power Platform admin center. Follow these [steps](https:///power-pages/security/configure-web-application-firewall) to enable or disable Web Application Firewall. 
 
-Power Pages makes available a [subset](https://learn.microsoft.com/power-pages/security/web-application-firewall-rule-groups) of the Azure-managed [DRS 2.0 rule sets](https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-drs?tabs=drs20). These rules are targeted to provide a higher level of protection against OWASP top 10 security risks and common attacks. 
+Power Pages makes available a [subset](https:///power-pages/security/web-application-firewall-rule-groups) of the Azure-managed [DRS 2.0 rule sets](https:///azure/web-application-firewall/afds/waf-front-door-drs?tabs=drs20). These rules are targeted to provide a higher level of protection against OWASP top 10 security risks and common attacks. 
 
  
 
@@ -256,9 +256,9 @@ The following are the Power Platform and Dynamics 365 related service tags publi
 
  
 
-You can also refer to the [full list of available service tags](https://learn.microsoft.com/azure/virtual-network/service-tags-overview) to find other service tags for the broader set of Azure services that might also be helpful in configuring your network security rules. 
+You can also refer to the [full list of available service tags](https:///azure/virtual-network/service-tags-overview) to find other service tags for the broader set of Azure services that might also be helpful in configuring your network security rules. 
 
-If you are using connectors, your environment or firewall must allow access to the outbound IP addresses used by the connectors in your datacenter region; otherwise, requests sent by these connectors will fail. Most connectors use the HTTPS protocol and use HTTPS port 443 as the default. Some connectors use other protocols, so evaluating the actual connectors you use is important. Requests use IP addresses and service tags that depend on the region and the environment the app or flow is located. A [full list of Power Platform IP addresses and service tags](https://learn.microsoft.com/connectors/common/outbound-ip-addresses) is available to allow you to properly configure your allow list to facilitate Power Platform requests. 
+If you are using connectors, your environment or firewall must allow access to the outbound IP addresses used by the connectors in your datacenter region; otherwise, requests sent by these connectors will fail. Most connectors use the HTTPS protocol and use HTTPS port 443 as the default. Some connectors use other protocols, so evaluating the actual connectors you use is important. Requests use IP addresses and service tags that depend on the region and the environment the app or flow is located. A [full list of Power Platform IP addresses and service tags](https:///connectors/common/outbound-ip-addresses) is available to allow you to properly configure your allow list to facilitate Power Platform requests. 
 
  
 
@@ -276,7 +276,7 @@ Since the IP firewall works at the network layer, this will apply to both intera
 
 IP firewall is configured at the environment level, so you have the flexibility to enable it only on specific environments that are more sensitive. For example, you might allow open access to your development environments, but your test and production environments are restricted. 
 
-For more information on how to enable IP firewall in an environment, review the article [Enable the IP firewall](https://learn.microsoft.com/power-platform/admin/ip-firewall). 
+For more information on how to enable IP firewall in an environment, review the article [Enable the IP firewall](https:///power-platform/admin/ip-firewall). 
 
 **Protect against cookie replay** **attacks** 
 
@@ -286,7 +286,7 @@ Not all detections of a difference in IP address are indicative of an attack. Mo
 
 **Connecting Power Platform to on-premises resources** 
 
-The on-premises gateway allows Power Platform cloud applications and automations to securely use on-premises resources. With a gateway, you can connect to on-premises data from sources like file system, DB2, Oracle, SAP ERP, SQL Server, SharePoint, and more. The gateway uses [Azure Relay](https://learn.microsoft.com/azure/azure-relay/relay-what-is-it) technology to securely allow access to on-premises resources. Azure Relay is able to securely expose services that run inside your organization’s network to the public cloud without having to open a port on your firewall. The gateway communicates on the following outbound ports: TCP 443, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports. 
+The on-premises gateway allows Power Platform cloud applications and automations to securely use on-premises resources. With a gateway, you can connect to on-premises data from sources like file system, DB2, Oracle, SAP ERP, SQL Server, SharePoint, and more. The gateway uses [Azure Relay](https:///azure/azure-relay/relay-what-is-it) technology to securely allow access to on-premises resources. Azure Relay is able to securely expose services that run inside your organization’s network to the public cloud without having to open a port on your firewall. The gateway communicates on the following outbound ports: TCP 443, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports. 
 
 ![A diagram of a cloud computing system  Description automatically generated](images/networking/image7.png)
 
@@ -322,19 +322,19 @@ Using virtual network data gateways allows Power BI and Power Platform Dataflows
 
 ![VNet overview.](images/networking/image11.png)
 
-For Power BI, you can find a list of supported data services for Power BI datasets available in [Supported Azure data services](https://learn.microsoft.com/data-integration/vnet/use-data-gateways-sources-power-bi). A list of supported data sources for Power Platform dataflows is available in [Supported data sources](https://learn.microsoft.com/data-integration/vnet/data-gateway-power-platform-dataflows). A list of supported data sources for Power BI paginated reports is available in [Supported data sources](https://learn.microsoft.com/power-bi/paginated-reports/paginated-reports-data-sources) for Power BI paginated reports 
+For Power BI, you can find a list of supported data services for Power BI datasets available in [Supported Azure data services](https:///data-integration/vnet/use-data-gateways-sources-power-bi). A list of supported data sources for Power Platform dataflows is available in [Supported data sources](https:///data-integration/vnet/data-gateway-power-platform-dataflows). A list of supported data sources for Power BI paginated reports is available in [Supported data sources](https:///power-bi/paginated-reports/paginated-reports-data-sources) for Power BI paginated reports 
 
 **Azure Private Link** 
 
-[Azure private Link](https://learn.microsoft.com/power-bi/enterprise/service-security-private-links)<sup>2</sup> and Azure Networking private endpoints to enable Power BI to be accessed securely. Private endpoints are used to send data traffic privately using Microsoft's backbone network infrastructure instead of going across the internet. Private endpoints ensure that traffic going into your Power BI resources, such as reports or workspaces, always follow your configured private link network path.  
+[Azure private Link](https:///power-bi/enterprise/service-security-private-links)<sup>2</sup> and Azure Networking private endpoints to enable Power BI to be accessed securely. Private endpoints are used to send data traffic privately using Microsoft's backbone network infrastructure instead of going across the internet. Private endpoints ensure that traffic going into your Power BI resources, such as reports or workspaces, always follow your configured private link network path.  
 
 **Microsoft Azure ExpressRoute** 
 
-[Microsoft Azure ExpressRoute](https://learn.microsoft.com/power-platform/guidance/expressroute/overview)<sup>3</sup> provides an advanced way to connect your on-premises network to Microsoft cloud services by using private connectivity. A single ExpressRoute connection can be used to access multiple online services, for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure. Using this connectivity, a user can access Power Platform and other Microsoft cloud services without traversing the public internet. ExpressRoute requires significant planning and configuration and involves more cost for the ExpressRoute service and the connectivity provider.  
+[Microsoft Azure ExpressRoute](https:///power-platform/guidance/expressroute/overview)<sup>3</sup> provides an advanced way to connect your on-premises network to Microsoft cloud services by using private connectivity. A single ExpressRoute connection can be used to access multiple online services, for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure. Using this connectivity, a user can access Power Platform and other Microsoft cloud services without traversing the public internet. ExpressRoute requires significant planning and configuration and involves more cost for the ExpressRoute service and the connectivity provider.  
 
 ![A diagram of a computer  Description automatically generated](images/networking/image12.png)
 
-ExpressRoute itself doesn't encrypt or filter traffic natively (with the exception of [ExpressRoute Direct with MACsec enabled](https://learn.microsoft.com/azure/expressroute/expressroute-about-encryption)); it simply establishes a private, rather than shared, connection directly between the Microsoft and customer datacenters through their connectivity provider. 
+ExpressRoute itself doesn't encrypt or filter traffic natively (with the exception of [ExpressRoute Direct with MACsec enabled](https:///azure/expressroute/expressroute-about-encryption)); it simply establishes a private, rather than shared, connection directly between the Microsoft and customer datacenters through their connectivity provider. 
 
 Any request from any Microsoft online service or Azure service to the subnet advertised through an ExpressRoute circuit will be routed via that circuit, regardless of the service or customer. Because the request is routed at the network layer, there's no application-level control to determine whether that's an appropriate requester for that destination service. 
 
@@ -356,7 +356,7 @@ Microsoft Power Platform uses Azure Content Delivery Network (CDN) to optimize p
 
 ### How does Power Platform protect against Distributed Denial of Service (DDoS) attacks?
 
-Power Platform is built on Microsoft Azure and uses [Azure DDoS Protection](https://learn.microsoft.com/azure/ddos-protection/ddos-protection-standard-features) to guard against [DDoS attacks](https://owasp.org/www-project-automated-threats-to-web-applications/assets/oats/EN/OAT-015_Denial_of_Service.html)
+Power Platform is built on Microsoft Azure and uses [Azure DDoS Protection](https:///azure/ddos-protection/ddos-protection-standard-features) to guard against [DDoS attacks](https://owasp.org/www-project-automated-threats-to-web-applications/assets/oats/EN/OAT-015_Denial_of_Service.html)
 
 Prevent injection attacks
 
@@ -417,7 +417,7 @@ Here are some examples that demonstrate the use of network controls recommended 
 
 ### IT environment
 
-This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](https://learn.microsoft.com/azure/well-architected/security/establish-baseline). This approach provides a broad understanding of network controls applied at various perimeters to restrict traffic.
+This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](https:///azure/well-architected/security/establish-baseline). This approach provides a broad understanding of network controls applied at various perimeters to restrict traffic.
 
 **Network attack personas**. Several personas may be considered in a network attack, including Admins, employees, customer’s clients and anonymous attackers.
 
@@ -459,6 +459,6 @@ Network security groups at the subnet level of the compute resources restrict eg
 
 ## Related links
 
-[IP firewall in Power Platform environments (preview) - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/ip-firewall)
-[Block cookie replay attacks in Dataverse - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/block-cookie-replay-attack)
-[Overview of using Azure ExpressRoute with Microsoft Power Platform - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/guidance/expressroute/overview)
+[IP firewall in Power Platform environments (preview) - Power Platform | Microsoft Learn](https:///power-platform/admin/ip-firewall)
+[Block cookie replay attacks in Dataverse - Power Platform | Microsoft Learn](https:///power-platform/admin/block-cookie-replay-attack)
+[Overview of using Azure ExpressRoute with Microsoft Power Platform - Power Platform | Microsoft Learn](https:///power-platform/guidance/expressroute/overview)

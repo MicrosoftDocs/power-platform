@@ -144,13 +144,13 @@ By combining several smaller tools, you can emulate some functions of a SIEM sys
 
 **Be proactive about threat detection** and be vigilant for signs of abuse, like identity brute force attacks on an SSH component or an RDP endpoint. Although external threats might generate a lot of noise, especially if the application is exposed to the internet, **internal threats are often a greater concern**. An unexpected brute force attack from a trusted network source or an inadvertent misconfiguration, for instance, should be investigated immediately.
 
-**Keep up with your hardening practices.** Monitoring isn't a substitute for proactively hardening your environment. A larger surface area is prone to more attacks. Tighten controls as much as practice. Detect and disable unused accounts, remove unused ports, and use a web application firewall, for example. For more information about hardening techniques, see [Recommendations on security hardening](https://learn.microsoft.com/azure/well-architected/security/harden-resources).
+**Keep up with your hardening practices.** Monitoring isn't a substitute for proactively hardening your environment. A larger surface area is prone to more attacks. Tighten controls as much as practice. Detect and disable unused accounts, remove unused ports, and use a web application firewall, for example. For more information about hardening techniques, see [Recommendations on security hardening](https:///azure/well-architected/security/harden-resources).
 
 **Signature-based detection** can inspect a system in detail. It involves looking for signs or correlations between activities that might indicate a potential attack. A detection mechanism might identify certain characteristics that are indicative of a specific type of attack. It might not always be possible to directly detect the command-and-control mechanism of an attack. However, there are often hints or patterns associated with a particular command-and-control process. For example, an attack might be indicated by a certain flow rate from a request perspective, or it might frequently access domains that have specific endings.
 
 Detect **anomalous user access patterns** so that you can identify and investigate deviations from expected patterns. This involves comparing current user behavior with past behavior to spot anomalies. Although it might not be feasible to perform this task manually, you can use threat intelligence tools to do it. Invest in **User and Entity Behavior Analytics (UEBA) tools** that collect user behavior from monitoring data and analyze it. These tools can often perform predictive analysis that maps suspicious behaviors to potential types of attack.
 
-**Detect threats during pre-deployment and post-deployment stages.** During the predeployment phase, incorporate vulnerability scanning into pipelines and take necessary actions based on the results. Post-deployment, continue to conduct vulnerability scanning. You can use tools like Microsoft Defender for Containers, which scans container images. Include the results in the collected data. For information about secure development practices, see [Recommendations for using safe deployment practices](https://learn.microsoft.com/azure/well-architected/operational-excellence/safe-deployments).
+**Detect threats during pre-deployment and post-deployment stages.** During the predeployment phase, incorporate vulnerability scanning into pipelines and take necessary actions based on the results. Post-deployment, continue to conduct vulnerability scanning. You can use tools like Microsoft Defender for Containers, which scans container images. Include the results in the collected data. For information about secure development practices, see [Recommendations for using safe deployment practices](https:///azure/well-architected/operational-excellence/safe-deployments).
 
 **Take advantage of platform-provided detection mechanisms and measures.** For example, Azure Firewall can analyze traffic and block connections to untrusted destinations. Azure also provides ways to detect and protect against distributed denial-of-service (DDoS) attacks.
 
@@ -167,7 +167,7 @@ Available via Microsoft Purview
 - Environment lifecycle operations
 - Environment property and setting change activities
 
-Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](https://learn.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema). The schema defines the payload of metadata that is unique for each activity.
+Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](https:///office/office-365-management-api/office-365-management-activity-api-schema). The schema defines the payload of metadata that is unique for each activity.
 
 ### Dataverse auditing
 
@@ -175,7 +175,7 @@ The Dataverse auditing feature is designed to meet the external and internal aud
 
 Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. Audit logs can be viewed in the Audit History tab for a single record and in the Audit Summary view for all audited operations in a single environment. Audit logs can also be retrieved using the Web API or the SDK for .NET.
 
-[Manage Dataverse auditing - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/manage-dataverse-auditing)
+[Manage Dataverse auditing - Power Platform | Microsoft Learn](https:///power-platform/admin/manage-dataverse-auditing)
 
 ### Model Driven Apps auditing
 
@@ -183,7 +183,7 @@ Protecting data, preserving privacy, and complying with [privacy regulations](ht
 
 This topic covers how you can set Power Apps, Power Automate, and customer engagement apps to audit a broad range of data processing activities and use the [Microsoft Purview compliance portal](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
 
-[Microsoft Dataverse and model-driven apps activity logging - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing)
+[Microsoft Dataverse and model-driven apps activity logging - Power Platform | Microsoft Learn](https:///power-platform/admin/enable-use-comprehensive-auditing)
 
 ### Microsoft Sentinel
 
@@ -209,15 +209,15 @@ You can subscribe to receive telemetry about operations that applications perfor
 
 You don't need to write any code to enable this telemetry. You can enable or disable the telemetry feed at any time.
 
-[Application Insights](https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview) is part of the Azure Monitor ecosystem. It's widely used by enterprises for monitoring and diagnostics. Many customers have added code to their extensions to capture this data into their Application Insights environments. This additional code has a cost, however—not only the cost to write and maintain, but also a performance cost at runtime. These costs can be avoided by using Application Insights built-in integration.
+[Application Insights](https:///azure/azure-monitor/app/app-insights-overview) is part of the Azure Monitor ecosystem. It's widely used by enterprises for monitoring and diagnostics. Many customers have added code to their extensions to capture this data into their Application Insights environments. This additional code has a cost, however—not only the cost to write and maintain, but also a performance cost at runtime. These costs can be avoided by using Application Insights built-in integration.
 
-[Overview of integration with Application Insights - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/overview-integration-application-insights)
+[Overview of integration with Application Insights - Power Platform | Microsoft Learn](https:///power-platform/admin/overview-integration-application-insights)
 
 ### Identity
 
 Monitor identity-related risk events on potentially compromised identities and remediate those risks. Review the reported risk events in these ways:
 
-Use Microsoft Entra ID reporting. For more information, see [What is Identity Protection?](https://learn.microsoft.com/azure/active-directory/reports-monitoring/concept-user-at-risk) and [Identity Protection](https://learn.microsoft.com/azure/active-directory/active-directory-identityprotection).
+Use Microsoft Entra ID reporting. For more information, see [What is Identity Protection?](https:///azure/active-directory/reports-monitoring/concept-user-at-risk) and [Identity Protection](https:///azure/active-directory/active-directory-identityprotection).
 
 Use Identity Protection risk detection API members to get programmatic access to security detections via Microsoft Graph. For more information, see riskDetection and riskyUser.
 
@@ -229,13 +229,13 @@ DevOps advocates change management of workloads via continuous integration and c
 
 ## Related links
 
-[What is Microsoft Sentinel?](https://learn.microsoft.com/azure/sentinel/overview)
+[What is Microsoft Sentinel?](https:///azure/sentinel/overview)
 
-[Threat intelligence integration in Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/threat-intelligence-integration)
+[Threat intelligence integration in Microsoft Sentinel](https:///azure/sentinel/threat-intelligence-integration)
 
-[Identify advanced threats with User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/identify-threats-with-entity-behavior-analytics) 
+[Identify advanced threats with User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel](https:///azure/sentinel/identify-threats-with-entity-behavior-analytics) 
 
-<https://learn.microsoft.com/purview/audit-solutions-overview>
+<https:///purview/audit-solutions-overview>
 
-[https://learn.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype](https://learn.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)
+[https:///office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype](https:///office/office-365-management-api/office-365-management-activity-api-schema)
 

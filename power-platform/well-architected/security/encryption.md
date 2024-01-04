@@ -73,7 +73,7 @@ Administrators can provide their own encryption key using their own key generato
 
 2048-bit RSA
 
-[HSM BYOK](https://learn.microsoft.com/azure/key-vault/keys/hsm-protected-keys)
+[HSM BYOK](https:///azure/key-vault/keys/hsm-protected-keys)
 
 Administrators also can revert the encryption key back to a Microsoft managed key at any time.
 
@@ -105,7 +105,7 @@ You can use separate encryption keys to encrypt different Dataverse environments
 
 Your organization can revoke the encryption key access to Power Platform services anytime. Microsoft’s service access to your customer data ends immediately when this occurs. Since you can use separate encryption keys to encrypt different Microsoft Dataverse environments, you can separately lock these environments by revoking key vault access to the respective enterprise policy. Locking key vault or key access can only be done by the Azure Key Vault admin. 
 
-You can trigger key access revocation by completing a few different tasks, including deleting the encryption or key vault. The [complete list of tasks](https://learn.microsoft.com/power-platform/admin/cmk-lock-unlock) should be reviewed and should only occur with the intent to lock the environment.  
+You can trigger key access revocation by completing a few different tasks, including deleting the encryption or key vault. The [complete list of tasks](https:///power-platform/admin/cmk-lock-unlock) should be reviewed and should only occur with the intent to lock the environment.  
 
 You should never revoke key access as part of your normal business process. When you revoke key access, all environments associated with the enterprise policy will be taken completely offline immediately, and your users who were active in the environment will experience unplanned downtime, including data loss. If you decide to leave the service, locking the environment can ensure that your customer data can never be accessed again by anyone, including Microsoft. 
 
@@ -113,7 +113,7 @@ To unlock the environments, you must restore all key access permissions for the 
 
 **Risk when you manage your** **key** 
 
-Customer-managed key is a powerful tool to put you in control of protecting your data. Before you use the key management feature, you should understand the risk when you manage your database encryption keys. It's conceivable that a malicious administrator (a person who is granted or has gained administrator-level access with intent to harm an organization's security or business processes) working within your organization might use the manage keys feature to create a key and use it to lock your environments in the tenant. Azure Key Vault has built-in safeguards that assist in restoring the key, which require the soft delete and purge protection key vault settings enabled. Another safeguard you can implement is to make sure that there is [separation of tasks](https://learn.microsoft.com/power-platform/admin/customer-managed-key) where the Azure Key Vault administrator isn't granted access to the Power Platform admin center. 
+Customer-managed key is a powerful tool to put you in control of protecting your data. Before you use the key management feature, you should understand the risk when you manage your database encryption keys. It's conceivable that a malicious administrator (a person who is granted or has gained administrator-level access with intent to harm an organization's security or business processes) working within your organization might use the manage keys feature to create a key and use it to lock your environments in the tenant. Azure Key Vault has built-in safeguards that assist in restoring the key, which require the soft delete and purge protection key vault settings enabled. Another safeguard you can implement is to make sure that there is [separation of tasks](https:///power-platform/admin/customer-managed-key) where the Azure Key Vault administrator isn't granted access to the Power Platform admin center. 
 
 ## Data residency
 
@@ -123,7 +123,7 @@ Some organizations have a global presence. For example, a business may be headqu
 
 Microsoft may replicate data to other regions for data resiliency. We don't replicate or move personal data outside the geo, however. Data replicated to other regions may include non-personal data such as employee authentication information.
 
-Power Platform services are available in specific Azure geographies. For more information about where Power Platform services are available, where your data is stored, and how it's used, go to [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31). Microsoft also provides data centers for [sovereign entities](https://learn.microsoft.com/power-platform/admin/regions-overview).
+Power Platform services are available in specific Azure geographies. For more information about where Power Platform services are available, where your data is stored, and how it's used, go to [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31). Microsoft also provides data centers for [sovereign entities](https:///power-platform/admin/regions-overview).
 
 ### Data at rest
 
@@ -139,11 +139,11 @@ Data is in processing when it's being used as part of an interactive scenario, o
 
 Power Platform requires all incoming HTTP traffic to be encrypted using TLS 1.2 or higher. Requests that try to use TLS 1.1 or lower are rejected.
 
-Learn more [About data encryption - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/about-encryption)
+Learn more [About data encryption - Power Platform | Microsoft Learn](https:///power-platform/admin/about-encryption)
 
 ##### Secret management
 
-You can use [Key Vault](https://azure.microsoft.com/services/key-vault/) to securely store and control access to tokens, passwords, certificates, API keys, and other secrets. Use Key Vault as a key and certificate management solution. Use environment variables to access secrets from Key Vault [Use environment variables in solutions - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/maker/data-platform/environmentvariables)
+You can use [Key Vault](https://azure.microsoft.com/services/key-vault/) to securely store and control access to tokens, passwords, certificates, API keys, and other secrets. Use Key Vault as a key and certificate management solution. Use environment variables to access secrets from Key Vault [Use environment variables in solutions - Power Apps | Microsoft Learn](https:///power-apps/maker/data-platform/environmentvariables)
 
 ## Example
 
@@ -151,9 +151,9 @@ The following example shows encryption solutions that you can use to manage keys
 
 ## Related links
 
-[Use environment variables in solutions - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/maker/data-platform/environmentvariables)
+[Use environment variables in solutions - Power Apps | Microsoft Learn](https:///power-apps/maker/data-platform/environmentvariables)
 
-[Power Platform security FAQs - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/security/faqs)
+[Power Platform security FAQs - Power Platform | Microsoft Learn](https:///power-platform/admin/security/faqs)
 
-[Manage your customer-managed encryption key in Power Platform - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/customer-managed-key)
+[Manage your customer-managed encryption key in Power Platform - Power Platform | Microsoft Learn](https:///power-platform/admin/customer-managed-key)
 

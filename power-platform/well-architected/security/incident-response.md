@@ -147,41 +147,41 @@ For more information about security, see [Trust Center](https://www.microsoft.co
 
 ### Manage your maintenance window
 
-Microsoft regularly performs updates and maintenance on customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) to ensure security, performance, availability, and to provide new features and functionality. This update process delivers security and minor service improvements on a weekly basis, with each update rolling out region-by-region according to a safe deployment schedule, arranged in [Stations](https://learn.microsoft.com/dynamics365/released-versions/dynamics-365ce). For information about your default maintenance window for environments, see [Policies and Communications for service incidents](https://learn.microsoft.com/power-platform/admin/policies-communications).
+Microsoft regularly performs updates and maintenance on customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) to ensure security, performance, availability, and to provide new features and functionality. This update process delivers security and minor service improvements on a weekly basis, with each update rolling out region-by-region according to a safe deployment schedule, arranged in [Stations](https:///dynamics365/released-versions/dynamics-365ce). For information about your default maintenance window for environments, see [Policies and Communications for service incidents](https:///power-platform/admin/policies-communications).
 
-Learn more: [Manage your maintenance window - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/manage-maintenance-window)
+Learn more: [Manage your maintenance window - Power Platform | Microsoft Learn](https:///power-platform/admin/manage-maintenance-window)
 
-Ensure that the Azure enrollment portal includes administrator contact information so security operations can be notified directly via an internal process. For more information, see [Update notification settings](https://learn.microsoft.com/azure/cost-management-billing/manage/ea-portal-administration).
+Ensure that the Azure enrollment portal includes administrator contact information so security operations can be notified directly via an internal process. For more information, see [Update notification settings](https:///azure/cost-management-billing/manage/ea-portal-administration).
 
-To learn more about establishing a designated point of contact that receives Azure incident notifications from Microsoft Defender for Cloud, see [Configure email notifications for security alerts](https://learn.microsoft.com/azure/security-center/security-center-provide-security-contact-details).
+To learn more about establishing a designated point of contact that receives Azure incident notifications from Microsoft Defender for Cloud, see [Configure email notifications for security alerts](https:///azure/security-center/security-center-provide-security-contact-details).
 
 ## Organizational alignment
 
-Cloud Adoption Framework for Azure provides guidance about incident response planning and security operations. For more information, see [Security operations](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/security-operations).
+Cloud Adoption Framework for Azure provides guidance about incident response planning and security operations. For more information, see [Security operations](https:///azure/cloud-adoption-framework/secure/security-operations).
 
 ## Related links
 
-[Automatically create incidents from Microsoft security alerts](https://learn.microsoft.com/azure/sentinel/create-incidents-from-alerts)
+[Automatically create incidents from Microsoft security alerts](https:///azure/sentinel/create-incidents-from-alerts)
 
-[Conduct end-to-end threat hunting by using the hunts feature](https://learn.microsoft.com/azure/sentinel/hunts)
+[Conduct end-to-end threat hunting by using the hunts feature](https:///azure/sentinel/hunts)
 
-[Configure email notifications for security alerts](https://learn.microsoft.com/azure/security-center/security-center-provide-security-contact-details)
+[Configure email notifications for security alerts](https:///azure/security-center/security-center-provide-security-contact-details)
 
-[Incident response overview](https://learn.microsoft.com/security/operations/incident-response-overview)
+[Incident response overview](https:///security/operations/incident-response-overview)
 
-[Microsoft Azure incident readiness](https://learn.microsoft.com/services-hub/unified/health/ir-azure)
+[Microsoft Azure incident readiness](https:///services-hub/unified/health/ir-azure)
 
-[Navigate and investigate incidents in Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/investigate-incidents)
+[Navigate and investigate incidents in Microsoft Sentinel](https:///azure/sentinel/investigate-incidents)
 
-[Security control: Incident response](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response)
+[Security control: Incident response](https:///security/benchmark/azure/mcsb-incident-response)
 
-[SOAR solutions in Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/automation)
+[SOAR solutions in Microsoft Sentinel](https:///azure/sentinel/automation)
 
-[Training: Introduction to Azure incident readiness](https://learn.microsoft.com/training/technical-support/intro-to-azure-incident-readiness/)
+[Training: Introduction to Azure incident readiness](https:///training/technical-support/intro-to-azure-incident-readiness/)
 
-[Update Azure portal notification settings](https://learn.microsoft.com/azure/cost-management-billing/manage/ea-portal-administration)
+[Update Azure portal notification settings](https:///azure/cost-management-billing/manage/ea-portal-administration)
 
 [What's an SOC?](https://www.microsoft.com/security/business/security-101/what-is-a-security-operations-center-soc)
 
-[What's Microsoft Sentinel?](https://learn.microsoft.com/azure/sentinel/overview)
+[What's Microsoft Sentinel?](https:///azure/sentinel/overview)
 
