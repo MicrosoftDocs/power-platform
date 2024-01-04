@@ -1,6 +1,13 @@
 - name: Power Platform Well-Architected
   href: ./index.yml
   items:
+    - name: About
+      items:
+      - name: What's new
+        href: whats-new.md
+      - name: What is Power Well-Architected
+        href: what-is-power-well-architected.md
+  items:
       - name: Pillars
         items:
         - name: Overview
