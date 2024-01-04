@@ -32,7 +32,7 @@ Data classification helps you correctly size security assurances and helps the t
 
 Classifying data can be a tedious task. You can use tools that can find data assets and recommend classifications. But don’t just depend on tools. Make sure your team members do the exercises carefully. Then use tools to automate when it makes sense.
 
-Along with these best practices, see [Create a well-designed data classification framework](https://earn.microsoft.com/compliance/assurance/assurance-create-data-classification-framework).
+Along with these best practices, see [Create a well-designed data classification framework](https:/learn.microsoft.com/compliance/assurance/assurance-create-data-classification-framework).
 
 ### Understand organization-defined taxonomy
 
