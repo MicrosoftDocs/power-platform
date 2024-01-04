@@ -1,8 +1,20 @@
 ---
-author: Manuela Pichler
-ms.date: 12/08/2023
+title: Recommendations for identity and access management 
+description: Learn about recommendations for authenticating and authorizing identities that are attempting to access workload resources.
+author: RobStand
+ms.author: mpichler
+ms.reviewer: sericks
+ms.date: 03/31/2024
+ms.subservice: guidance
+ms.topic: conceptual
 ---
+
 # Recommendations for identity and access management
+
+**Applies to this Power Well-Architected Security checklist recommendation:**
+
+|[SE:05](checklist.md)|Implement strict, conditional, and auditable identity and access management (IAM) across all workload users, team members, and system components. Limit access exclusively to *as necessary*. Use modern industry standards for all authentication and authorization implementations. Restrict and rigorously audit access that's not based on identity.|
+|---|---|
 
 This guide describes the recommendations for authenticating and authorizing identities that are attempting to access your workload resources.
 
@@ -16,48 +28,44 @@ From a technical control perspective, **identity is always the primary perimeter
 
 **Definitions** 
 
-| **Terms** | **Definition** |
+| Terms | Definition |
 |---|---|
-| **Authentication (AuthN)** | A process that verifies that an identity is who or what it says it is. |
-| **Authorization (AuthZ)** | A process that verifies whether an identity has permission to perform a requested action. |
-| **Conditional access** | A set of rules that allows actions based on specified criteria. |
-| **IdP** | An identity provider, like Microsoft Entra ID. |
-| **Persona** | A job function or a title that has a set of responsibilities and actions. |
-| **Preshared keys** | A type of secret that's shared between a provider and consumer and used through a secure and agreed upon mechanism. |
-| **Resource identity** | An identity defined for cloud resources that's managed by the platform. |
-| **Role** | A set of permissions that define what a user or group can do. |
-| **Scope** | Different levels of organizational hierarchy where a role is permitted to operate. Also a group of features in a system. |
-| **Security principal** | An identity that provides permissions. It can be a user, a group, or a service principal. Any group members get the same level of access. |
-| **User identity** | An identity for a person, like an employee or an external user. |
-| **Workload identity** | A system identity for an application, service, script, container, or other component of a workload that's used to authenticate itself to other services and resources. |
+| Authentication (AuthN) | A process that verifies that an identity is who or what it says it is. |
+| Authorization (AuthZ) | A process that verifies whether an identity has permission to perform a requested action. |
+| Conditional access | A set of rules that allows actions based on specified criteria. |
+| IdP | An identity provider, like Microsoft Entra ID. |
+| Persona | A job function or a title that has a set of responsibilities and actions. |
+| Preshared keys | A type of secret that's shared between a provider and consumer and used through a secure and agreed upon mechanism. |
+| Resource identity | An identity defined for cloud resources that's managed by the platform. |
+| Role | A set of permissions that define what a user or group can do. |
+| Scope | Different levels of organizational hierarchy where a role is permitted to operate. Also a group of features in a system. |
+| Security principal | An identity that provides permissions. It can be a user, a group, or a service principal. Any group members get the same level of access. |
+| User identity | An identity for a person, like an employee or an external user. |
+| Workload identity | A system identity for an application, service, script, container, or other component of a workload that's used to authenticate itself to other services and resources. |
 
-** Note**
-
-An identity can be grouped with other, similar identities under a parent called a _security principal_. A security group is an example of a security principal. This hierarchical relationship simplifies maintenance and improves consistency. Because identity attributes aren't handled at the individual level, chances of errors are also reduced. In this article, the term _identity_ is inclusive of security principals.
+> [!Note]
+> An identity can be grouped with other, similar identities under a parent called a _security principal_. A security group is an example of a security principal. This hierarchical relationship simplifies maintenance and improves consistency. Because identity attributes aren't handled at the individual level, chances of errors are also reduced. In this article, the term _identity_ is inclusive of security principals.
 
 ### Microsoft Entra ID is the identity provider for Power Platform
 
-#### All Power Platform products use Microsoft Entra ID (formerly Azure Active Directory or Azure AD) for identity and access management. Entra ID enables organizations to secure and manage identity for their hybrid and multi-cloud environments. Entra ID is also essential for managing business guests needing access to Power Platform resources. Power Platform also uses Entra ID to manage other applications that need to integrate with Power Platform APIs using the service principal capabilities. By using Entra ID, the Power Platform can leverage Entra ID more advanced security features like Conditional Access and continuous access evaluation.
+All Power Platform products use Microsoft Entra ID (formerly Azure Active Directory or Azure AD) for identity and access management. Entra ID enables organizations to secure and manage identity for their hybrid and multi-cloud environments. Entra ID is also essential for managing business guests needing access to Power Platform resources. Power Platform also uses Entra ID to manage other applications that need to integrate with Power Platform APIs using the service principal capabilities. By using Entra ID, the Power Platform can leverage Entra ID more advanced security features like Conditional Access and continuous access evaluation.
 
 #### Authentication
 
 Authentication is a process that verifies identities. The requesting identity is required to provide some form of verifiable identification. For example:
 
-A user name and password.
+- A user name and password.
+- A preshared secret, like an API key that grants access.
+- A shared access signature (SAS) token.
+- A certificate that's used in TLS mutual authentication.
 
-A preshared secret, like an API key that grants access.
+Power Platform authentication involves a sequence of requests, responses, and redirects between the user's browser and Power Platform or Azure services. The sequence follows the [Microsoft Entra ID auth code grant flow](https://learn.microsoft.com//azure/active-directory/develop/v2-oauth2-auth-code-flow). 
 
-A shared access signature (SAS) token.
-
-A certificate that's used in TLS mutual authentication.
-
-Power Platform authentication involves a sequence of requests, responses, and redirects between the user's browser and Power Platform or Azure services. The sequence follows the [Microsoft Entra ID auth code grant flow](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow). 
-
-Connecting and authenticating to a data source is done separately from authenticating to a Power Platform service. Learn more: [Connecting and authenticating to data sources - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/security/connect-data-sources)
+Connecting and authenticating to a data source is done separately from authenticating to a Power Platform service. Learn more: [Connecting and authenticating to data sources - Power Platform | Microsoft Learn](https://learn.microsoft.com//power-platform/admin/security/connect-data-sources)
 
 #### Authorization
 
-Power Platform uses Azure Active Directory's (Azure AD) [Microsoft Identity Platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-overview) for authorization of all API calls with the industry-standard OAuth 2.0 protocol.
+Power Platform uses Azure Active Directory's (Azure AD) [Microsoft Identity Platform](https://learn.microsoft.com//azure/active-directory/develop/v2-overview) for authorization of all API calls with the industry-standard OAuth 2.0 protocol.
 
 ## Key design strategies
 
@@ -69,15 +77,15 @@ You need to log the identity access trail. Doing so helps validate the controls,
 
 ### Determine all identities for authentication
 
-**Outside-in access**. Power Platform authentication involves a sequence of requests, responses, and redirects between the user's browser and Power Platform or Azure services. The sequence follows the [Azure Active Directory (Azure AD) auth code grant flow](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow). Power Platform automatically authenticates all users that access the workload for various purposes. 
+**Outside-in access**. Power Platform authentication involves a sequence of requests, responses, and redirects between the user's browser and Power Platform or Azure services. The sequence follows the [Azure Active Directory (Azure AD) auth code grant flow](https://learn.microsoft.com//azure/active-directory/develop/v2-oauth2-auth-code-flow). Power Platform automatically authenticates all users that access the workload for various purposes. 
 
 **Inside-out access**. Your workload will need to access other resources. For example, reading from or writing to the data platform, retrieving secrets from the secret store, and logging telemetry to monitoring services. It might even need to access third-party services. These access needs require **workload identity**, which enables the application to authenticate itself against the other resources.
 
-The concept applies at the component level. In the following example, the container might need access to deployment pipelines to get its configuration. These access needs require **resource identity**. Learn more: [Connecting and authenticating to data sources - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/security/connect-data-sources)
+The concept applies at the component level. In the following example, the container might need access to deployment pipelines to get its configuration. These access needs require **resource identity**. Learn more: [Connecting and authenticating to data sources - Power Platform | Microsoft Learn](https://learn.microsoft.com//power-platform/admin/security/connect-data-sources)
 
 Here's an example of how identity can be implemented in an architecture: 
 
-![A diagram that shows Power Platform back-end services working with an API Hub/API Management connector to reach external data connectors.](media/image1.png)
+![A diagram that shows Power Platform back-end services working with an API Hub/API Management connector to reach external data connectors.](media/identity-access/image1.png)
 
 ### Determine actions for authorization
 
@@ -179,7 +187,7 @@ Be sure that you have the **ability to revoke secrets**.
 
 Apply operational practices that handle tasks like **key rotation and expiration**.
 
-For information about rotation policies, see [Automate the rotation of a secret for resources that have two sets of authentication credentials](https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation-dual) and [Tutorial: Updating certificate auto-rotation frequency in Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/certificates/tutorial-rotate-certificates).
+For information about rotation policies, see [Automate the rotation of a secret for resources that have two sets of authentication credentials](https://learn.microsoft.com//azure/key-vault/secrets/tutorial-rotation-dual) and [Tutorial: Updating certificate auto-rotation frequency in Key Vault](https://learn.microsoft.com//azure/key-vault/certificates/tutorial-rotate-certificates).
 
 ### Keep development environments safe
 
@@ -207,21 +215,21 @@ Power Platform access control is a vital part of its overall security architectu
 
 All Power Platform products use Microsoft Entra ID (formerly Azure Active Directory or Azure AD) for identity and access management. Entra ID enables organizations to secure and manage identity for their hybrid and multi-cloud environments. Entra ID is also essential for managing business guests needing access to Power Platform resources. Power Platform also uses Entra ID to manage other applications that need to integrate with Power Platform APIs using the service principal capabilities. By using Entra ID, the Power Platform can leverage Entra ID more advanced security features like Conditional Access and continuous access evaluation. 
 
-![A diagram of a cloud computing system  Description automatically generated](media/image2.png)
+![A diagram of a cloud computing system  Description automatically generated](media/identity-access/image2.png)
 
 ### Azure RBAC
 
-Azure RBAC represents security principals in Microsoft Entra ID. All role assignments are done via Azure RBAC. Take advantage of built-in roles that provide most of the permissions that you need. For more information, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+Azure RBAC represents security principals in Microsoft Entra ID. All role assignments are done via Azure RBAC. Take advantage of built-in roles that provide most of the permissions that you need. For more information, see [Microsoft Entra built-in roles](https://learn.microsoft.com//azure/active-directory/roles/permissions-reference).
 
 Here are some use cases:
 
-By assigning users to roles, you can control access to Azure resources. For more information, see [Overview of role-based access control in Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/active-directory/roles/custom-overview).
+By assigning users to roles, you can control access to Azure resources. For more information, see [Overview of role-based access control in Microsoft Entra ID](https://learn.microsoft.com//azure/active-directory/roles/custom-overview).
 
-You can use Privileged Identity Management to provide time-based and approval-based role activation for roles that are associated with high-impact identities. For more information, see [What is Privileged Identity Management?](https://learn.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure).
+You can use Privileged Identity Management to provide time-based and approval-based role activation for roles that are associated with high-impact identities. For more information, see [What is Privileged Identity Management?](https://learn.microsoft.com//azure/active-directory/privileged-identity-management/pim-configure).
 
-For more information about RBAC, see [Best practices for Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices).
+For more information about RBAC, see [Best practices for Azure RBAC](https://learn.microsoft.com//azure/role-based-access-control/best-practices).
 
-For information about attribute-based controls, see [What is Azure ABAC?](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-overview).
+For information about attribute-based controls, see [What is Azure ABAC?](https://learn.microsoft.com//azure/role-based-access-control/conditions-overview).
 
 ### Conditional access policies
 
@@ -231,17 +239,17 @@ Granting access to resources unconditionally without regard to the knowledge you
 
 The following diagram illustrates how signals are used to determine what action must be performed to access the target apps and data. 
 
-![Conceptual Conditional Access process flow.](media/image3.png)
+![Conceptual Conditional Access process flow.](media/identity-access/image3.png)
 
 Organizations should plan how they intend to use policies to implement their security guidelines. For example, you could use a policy only to let a subset of users use Power Platform, or policies could ensure users can only use Power Platform with specific conditions. For example, the following conditions are part of a policy and could restrict the use of Power Platform when the user is at a higher risk or block it altogether from non-browser clients. 
 
-![A screenshot of a computer screen  Description automatically generated](media/image4.png)
+![A screenshot of a computer screen  Description automatically generated](media/identity-access/image4.png)
 
-Conditional access is very flexible, but that flexibility can also allow you to create policies that have undesirable results or even lock your own admins out. The [planning guide](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access) can help your organization think through how to plan for implementing conditional access. 
+Conditional access is very flexible, but that flexibility can also allow you to create policies that have undesirable results or even lock your own admins out. The [planning guide](https://learn.microsoft.com//azure/active-directory/conditional-access/plan-conditional-access) can help your organization think through how to plan for implementing conditional access. 
 
-For more information, see [Conditional access: Users, groups, and workload identities](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-users-groups).
+For more information, see [Conditional access: Users, groups, and workload identities](https://learn.microsoft.com//azure/active-directory/conditional-access/concept-conditional-access-users-groups).
 
-[Conditional access and multi-factor authentication in Flow - Power Automate | Microsoft Learn](https://learn.microsoft.com/en-us/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow)
+[Conditional access and multi-factor authentication in Flow - Power Automate | Microsoft Learn](https://learn.microsoft.com//troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow)
 
 ### Continuous access
 
@@ -249,23 +257,23 @@ Continuous access accelerates when certain events are evaluated to determine if 
 
 Currently, with Power Platform, only Dataverse supports continuous access evaluation. Microsoft is working to add support to other Power Platform services and clients. 
 
-As organizations continue to embrace hybrid work locations and deploy cloud applications, Entra ID is an essential primary security perimeter protecting users and resources. Conditional access extends that perimeter beyond a network perimeter to include user and device identity. Continuous access ensures that as events or user locations change, access is re-evaluated. Power Platform products' use of Entra ID allows you to implement organization-level security governance that applies consistently across your application portfolio. Review [these](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices) identity management best practices for more guidance you can include in building your own plan for using Entra ID with the Power Platform. 
+As organizations continue to embrace hybrid work locations and deploy cloud applications, Entra ID is an essential primary security perimeter protecting users and resources. Conditional access extends that perimeter beyond a network perimeter to include user and device identity. Continuous access ensures that as events or user locations change, access is re-evaluated. Power Platform products' use of Entra ID allows you to implement organization-level security governance that applies consistently across your application portfolio. Review [these](https://learn.microsoft.com//azure/security/fundamentals/identity-management-best-practices) identity management best practices for more guidance you can include in building your own plan for using Entra ID with the Power Platform. 
 
 ### Group access management
 
 Instead of granting permissions to specific users, assign access to groups in Microsoft Entra ID. If a group doesn't exist, work with your identity team to create one. You can then add and remove group members outside of Azure and make sure that permissions are current. You can also use the group for other purposes, like mailing lists.
 
-For more information, see [Secure access control using groups in Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/active-directory/develop/secure-group-access-control).
+For more information, see [Secure access control using groups in Microsoft Entra ID](https://learn.microsoft.com//azure/active-directory/develop/secure-group-access-control).
 
 ### Threat detection
 
-Microsoft Entra ID Protection can help you detect, investigate, and remediate identity-based risks. For more information, see [What is Identity Protection?](https://learn.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection).
+Microsoft Entra ID Protection can help you detect, investigate, and remediate identity-based risks. For more information, see [What is Identity Protection?](https://learn.microsoft.com//azure/active-directory/identity-protection/overview-identity-protection).
 
-Threat detection can take the form of reacting to an alert of suspicious activity or proactively searching for anomalous events in activity logs. User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel makes it easy to detect suspicious activities. For more information, see [Identify advanced threats with UEBA](https://learn.microsoft.com/en-us/azure/sentinel/identify-threats-with-entity-behavior-analytics).
+Threat detection can take the form of reacting to an alert of suspicious activity or proactively searching for anomalous events in activity logs. User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel makes it easy to detect suspicious activities. For more information, see [Identify advanced threats with UEBA](https://learn.microsoft.com//azure/sentinel/identify-threats-with-entity-behavior-analytics).
 
 ### Identity logging
 
-Activity Logging – Power Apps, Power Automate, Connectors and Data Loss Prevention activity logging are tracked and viewed from the Microsoft Purview compliance portal. [Learn about Microsoft Purview | Microsoft Learn](https://learn.microsoft.com/en-us/purview/purview)
+Activity Logging – Power Apps, Power Automate, Connectors and Data Loss Prevention activity logging are tracked and viewed from the Microsoft Purview compliance portal. [Learn about Microsoft Purview | Microsoft Learn](https://learn.microsoft.com//purview/purview)
 
 · Dataverse Auditing - Logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. This auditing is enabled at the environment level, and additional configuration is required for individual tables and columns.
 
@@ -277,9 +285,9 @@ Entra ID contains a set of pre-established admin roles that can be assigned to a
 
 **Dynamics 365 administrator** - Can perform admin functions in Microsoft Power Platform but are affected by security group membership at the environment level. These admins need to be explicitly added to the environment’s security group to allow them to administer the environment. 
 
-Both service admin roles cannot do functions that are restricted to the Microsoft 365 global admin, such as managing user accounts, managing subscriptions and access settings for Microsoft 365 apps like Microsoft Exchange or SharePoint. Admins will need additional roles if they need to perform those tasks. You can review the [permission matrix](https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant) for a more granular breakdown of each role’s privileges. 
+Both service admin roles cannot do functions that are restricted to the Microsoft 365 global admin, such as managing user accounts, managing subscriptions and access settings for Microsoft 365 apps like Microsoft Exchange or SharePoint. Admins will need additional roles if they need to perform those tasks. You can review the [permission matrix](https://learn.microsoft.com//power-platform/admin/use-service-admin-role-manage-tenant) for a more granular breakdown of each role’s privileges. 
 
-Privileged Identity Management (PIM), a feature of Microsoft Entra ID, can enable you to manage, control, and monitor the use of these high-privilege roles. PIM can provide just-in-time access to these roles and can incorporate your policies and procedures, including approvals and justifications. Using PIM with Power Platform is in public preview, and you can follow its general availability target on the [release plan](https://learn.microsoft.com/en-us/power-platform/release-plan/2023wave2/power-platform-governance-administration/improve-security-privileged-identity-management). 
+Privileged Identity Management (PIM), a feature of Microsoft Entra ID, can enable you to manage, control, and monitor the use of these high-privilege roles. PIM can provide just-in-time access to these roles and can incorporate your policies and procedures, including approvals and justifications. Using PIM with Power Platform is in public preview, and you can follow its general availability target on the [release plan](https://learn.microsoft.com//power-platform/release-plan/2023wave2/power-platform-governance-administration/improve-security-privileged-identity-management). 
 
 The [CoE Starter Kit](https://aka.ms/coestarterkit) can help you identify users with elevated permissions (system administrators) across all environments in one place, and with this overview allows you to audit if all permissions are still relevant and required or if they could be removed. 
 
@@ -333,23 +341,23 @@ Access logs are enabled across all components via Azure Diagnostics, or via code
 
 ## Related links
 
-[Connecting and authenticating to data sources - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/security/connect-data-sources)
+[Connecting and authenticating to data sources - Power Platform | Microsoft Learn](https://learn.microsoft.com//power-platform/admin/security/connect-data-sources)
 
-[Authenticating to Power Platform services - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/security/authenticate-services)
+[Authenticating to Power Platform services - Power Platform | Microsoft Learn](https://learn.microsoft.com//power-platform/admin/security/authenticate-services)
 
-[Microsoft identity platform and OAuth 2.0 authorization code flow | Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow)
+[Microsoft identity platform and OAuth 2.0 authorization code flow | Microsoft Learn](https://learn.microsoft.com//entra/identity-platform/v2-oauth2-auth-code-flow)
 
-[What's new in Microsoft Entra ID?](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/whats-new)
+[What's new in Microsoft Entra ID?](https://learn.microsoft.com//azure/active-directory/fundamentals/whats-new)
 
-[Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
+[Microsoft Entra built-in roles](https://learn.microsoft.com//azure/active-directory/roles/permissions-reference)
 
-[Overview of role-based access control in Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/active-directory/roles/custom-overview)
+[Overview of role-based access control in Microsoft Entra ID](https://learn.microsoft.com//azure/active-directory/roles/custom-overview)
 
-[What are workload identities?](https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identities-overview)
+[What are workload identities?](https://learn.microsoft.com//azure/active-directory/workload-identities/workload-identities-overview)
 
-[What are managed identities for Azure resources?](https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview)
+[What are managed identities for Azure resources?](https://learn.microsoft.com//azure/active-directory/managed-identities-azure-resources/overview)
 
-[Conditional access: Users, groups, and workload identities](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-users-groups)
+[Conditional access: Users, groups, and workload identities](https://learn.microsoft.com//azure/active-directory/conditional-access/concept-conditional-access-users-groups)
 
-[Microsoft Entra Connect Sync: Configure filtering](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/connect/how-to-connect-sync-configure-filtering)
+[Microsoft Entra Connect Sync: Configure filtering](https://learn.microsoft.com//azure/active-directory/hybrid/connect/how-to-connect-sync-configure-filtering)
 
