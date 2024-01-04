@@ -1,8 +1,20 @@
 ---
-author: Manuela Pichler
-ms.date: 11/28/2023
+title: Recommendations for security testing
+description: Learn about the key design strategies for security testing, including the tools and methodologies you can use to test the security posture of your workload.
+author: RobStand
+ms.author: mpichler
+ms.reviewer: sericks
+ms.date: 03/31/2024
+ms.subservice: guidance
+ms.topic: conceptual
 ---
+
 # Recommendations for security testing
+
+**Applies to this Power Well-Architected Security checklist recommendation:**
+
+|[SE:11](checklist.md)|Establish a comprehensive testing regimen that combines approaches to prevent security issues, validate threat prevention implementations, and test threat detection mechanisms.|
+|---|---|
 
 Rigorous testing is the foundation of good security design. Testing is a tactical form of validation to make sure controls are working as intended. Testing is also a proactive way to detect vulnerabilities in the system.
 
@@ -12,16 +24,16 @@ This guide provides recommendations for testing the security posture of your wor
 
 **Definitions**
 
-| **Term** | **Definition** |
+| Term | Definition |
 |---|---|
-| **Application security testing (AST)** | A Microsoft Security Development Lifecycle (SDL) technique that uses white-box and black-box testing methodologies to check for security vulnerabilities in code. |
-| **Black-box testing** | A testing methodology that validates the externally visible application behavior without knowledge of the internals of the system. |
-| **Blue team** | A team that defends against the attacks of the red team in a war game exercise. |
-| **Penetration testing** | A testing methodology that uses ethical hacking techniques to validate the security defenses of a system. |
-| **Red team** | A team that plays the role of an adversary and attempts to hack the system in a war game exercise. |
-| **Security Development Lifecycle (SDL)** | A set of practices provided by Microsoft that supports security assurance and compliance requirements. |
-| **Software development lifecycle (SDLC)** | A multistage, systematic process for developing software systems. |
-| **White-box testing** | A testing methodology where the structure of the code is known to the practitioner. |
+| Application security testing (AST) | A Microsoft Security Development Lifecycle (SDL) technique that uses white-box and black-box testing methodologies to check for security vulnerabilities in code. |
+| Black-box testing | A testing methodology that validates the externally visible application behavior without knowledge of the internals of the system. |
+| Blue team | A team that defends against the attacks of the red team in a war game exercise. |
+| Penetration testing | A testing methodology that uses ethical hacking techniques to validate the security defenses of a system. |
+| Red team | A team that plays the role of an adversary and attempts to hack the system in a war game exercise. |
+| Security Development Lifecycle (SDL) | A set of practices provided by Microsoft that supports security assurance and compliance requirements. |
+| Software development lifecycle (SDLC) | A multistage, systematic process for developing software systems. |
+| White-box testing | A testing methodology where the structure of the code is known to the practitioner. |
 
 ## Key design strategies
 
@@ -29,9 +41,8 @@ Testing is a nonnegotiable strategy, especially for security. It allows you to p
 
 The scope of testing must include the application, infrastructure, and automated and human processes.
 
-** Note**
-
-This guidance makes a distinction between testing and incident response. Although testing is a detection mechanism that ideally fixes issues prior to production, it shouldn't be confused with the remediation or investigation that's done as part of incident response. The aspect of recovering from security incidents is described in **Incident Response recommendations**.
+> ![NOTE]
+> This guidance makes a distinction between testing and incident response. Although testing is a detection mechanism that ideally fixes issues prior to production, it shouldn't be confused with the remediation or investigation that's done as part of incident response. The aspect of recovering from security incidents is described in **Incident Response recommendations**.
 
 SDL includes several types of tests that catch vulnerabilities in code, verify runtime components, and use ethical hacking to test the security resilience of the system. SDL is a key shift-left activity. You should run tests like static code analysis and automated scanning of infrastructure as code (IaC) as early in the development process as possible.
 
@@ -47,7 +58,7 @@ SDL includes several types of tests that catch vulnerabilities in code, verify r
 
 Testing in production environments gives you the best information but causes the most disruption. You tend to do only nondestructive tests in production environments. Testing in nonproduction environments is typically less disruptive but might not accurately represent the production environment's configuration in ways that are important to security.
 
-You can create an isolated clone of your production environment by using the Environment copy feature [Copy an environment - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/copy-environment). If you have deployment pipelines set up, you can also deploy your solution(s) to a dedicated testing environment. 
+You can create an isolated clone of your production environment by using the Environment copy feature [Copy an environment - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/copy-environment). If you have deployment pipelines set up, you can also deploy your solution(s) to a dedicated testing environment. 
 
 **Always evaluate the test results.** Testing is a wasted effort if the results aren't used to prioritize actions and make improvements upstream. Document the security guidelines, including best practices, that you uncover. Documentation that captures results and remediation plans educates the team about the various ways that attackers might try to breach security. Conduct regular security training for developers, admins, and testers.
 
@@ -149,7 +160,7 @@ Security experts who aren't part of the organization's IT or application teams c
 
  **Risk**: A pentesting exercise might affect the runtime environment and might disrupt the availability for normal traffic.
 
-The practitioners might need access to sensitive data in the entire organization. Follow the rules of engagement to ensure that access isn't misused. See the resources listed in [Related links](https://learn.microsoft.com/en-us/azure/well-architected/security/test).
+The practitioners might need access to sensitive data in the entire organization. Follow the rules of engagement to ensure that access isn't misused. See the resources listed in [Related links](https://learn.microsoft.com/azure/well-architected/security/test).
 
 ##### Tests that simulate attacks through war game exercises
 
@@ -161,9 +172,9 @@ The _blue_ team is the workload team that defends against the attacks. They test
 
 If they're conducted as routine tests, war game exercises can provide ongoing visibility and assurance that your defenses work as designed. War game exercises can potentially test across levels within your workloads.
 
-A popular choice to simulate realistic attack scenarios is the Microsoft Defender for Office 365 [Attack simulation training](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/attack-simulation-training-get-started).
+A popular choice to simulate realistic attack scenarios is the Microsoft Defender for Office 365 [Attack simulation training](https://learn.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-get-started).
 
-For more information, see [Insights and reports for Attack simulation training](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/attack-simulation-training-insights).
+For more information, see [Insights and reports for Attack simulation training](https://learn.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights).
 
 For information about red-team and blue-team setup, see [Microsoft Cloud Red Teaming](https://download.microsoft.com/download/C/1/9/C1990DBA-502F-4C2A-848D-392B93D9B9C3/Microsoft_Enterprise_Cloud_Red_Teaming.pdf).
 
@@ -171,25 +182,25 @@ For information about red-team and blue-team setup, see [Microsoft Cloud Red Tea
 
 Microsoft Sentinel is a native control that combines security information event management (SIEM) and security orchestration automated response (SOAR) capabilities. It analyzes events and logs from various connected sources. Based on data sources and their alerts, Microsoft Sentinel creates incidents and performs threat analysis for early detection. Through intelligent analytics and queries, you can proactively hunt for security issues. If there's an incident, you can automate workflows. Also, with workbook templates, you can quickly gain insights through visualization.
 
-For product documentation, see [Hunting capabilities in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/hunting).
+For product documentation, see [Hunting capabilities in Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/hunting).
 
-Microsoft Defender for Cloud offers vulnerability scanning for various technology areas. For details, see [Enable vulnerability scanning with Microsoft Defender Vulnerability Management - Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/deploy-vulnerability-assessment-defender-vulnerability-management).
+Microsoft Defender for Cloud offers vulnerability scanning for various technology areas. For details, see [Enable vulnerability scanning with Microsoft Defender Vulnerability Management - Microsoft Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud/deploy-vulnerability-assessment-defender-vulnerability-management).
 
-The practice of DevSecOps integrates security testing as part of an ongoing and continuous improvement mindset. War game exercises are a common practice that's integrated into the rhythm of business at Microsoft. For more information, see [Security in DevOps (DevSecOps)](https://learn.microsoft.com/en-us/devops/operate/security-in-devops).
+The practice of DevSecOps integrates security testing as part of an ongoing and continuous improvement mindset. War game exercises are a common practice that's integrated into the rhythm of business at Microsoft. For more information, see [Security in DevOps (DevSecOps)](https://learn.microsoft.com/devops/operate/security-in-devops).
 
-Azure DevOps supports third-party tools that can be automated as part of the continuous integration/continuous deployment pipelines. For details, see [Enable DevSecOps with Azure and GitHub - Azure DevOps](https://learn.microsoft.com/en-us/devops/devsecops/enable-devsecops-azure-github).
+Azure DevOps supports third-party tools that can be automated as part of the continuous integration/continuous deployment pipelines. For details, see [Enable DevSecOps with Azure and GitHub - Azure DevOps](https://learn.microsoft.com/devops/devsecops/enable-devsecops-azure-github).
 
 ## Related links
 
 The latest penetration tests and security assessments can be found on the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/viewpage/PenTest).
 
-Microsoft performs extensive testing of the Microsoft Cloud services. This testing includes penetration testing, with results published on the Service Trust Portal for your review. Your organization may perform your own penetration test against Microsoft Power Platform and Microsoft Dynamics 365 services. All penetration testing must follow the [Microsoft Cloud Penetration Testing Rules of Engagement](https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement). It is important to remember that in many cases, the Microsoft Cloud uses shared infrastructure to host your assets and assets belonging to other customers. You must limit all penetration tests to your assets and avoid unintended consequences for other customers around you. 
+Microsoft performs extensive testing of the Microsoft Cloud services. This testing includes penetration testing, with results published on the Service Trust Portal for your review. Your organization may perform your own penetration test against Microsoft Power Platform and Microsoft Dynamics 365 services. All penetration testing must follow the [Microsoft Cloud Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement). It is important to remember that in many cases, the Microsoft Cloud uses shared infrastructure to host your assets and assets belonging to other customers. You must limit all penetration tests to your assets and avoid unintended consequences for other customers around you. 
 
 Follow the rules of engagement to make sure that access isn't misused. For guidance about planning and executing simulated attacks, see the following articles:
 
 [Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement)
 
-[Penetration testing](https://learn.microsoft.com/en-us/azure/security/fundamentals/pen-testing)
+[Penetration testing](https://learn.microsoft.com/azure/security/fundamentals/pen-testing)
 
-You can simulate denial of service (DoS) attacks in Azure. Be sure to follow the policies laid out in [Azure DDoS Protection simulation testing](https://learn.microsoft.com/en-us/azure/ddos-protection/test-through-simulations).
+You can simulate denial of service (DoS) attacks in Azure. Be sure to follow the policies laid out in [Azure DDoS Protection simulation testing](https://learn.microsoft.com/azure/ddos-protection/test-through-simulations).
 
