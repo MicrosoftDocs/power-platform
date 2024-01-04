@@ -106,7 +106,7 @@ There are also specialized classification tools that can detect and apply labels
 
 **Review data classification regularly**. Classification maintenance should be built into operations, otherwise stale metadata can lead to erroneous results for the identified objectives and compliance issues.
 
- **Tradeoff**: Be mindful of the cost tradeoff on tooling. Classification tools require training and can be complex.
+ > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Be mindful of the cost tradeoff on tooling. Classification tools require training and can be complex.
 
 Ultimately, classification must roll up to the organization through central teams. Get input from them about the expected report structure. Also, take advantage of centralized tools and processes to have organizational alignment and also alleviate operational costs.
 

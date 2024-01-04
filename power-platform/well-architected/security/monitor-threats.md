@@ -92,7 +92,7 @@ Capturing DNS flows is a significant requirement for many organizations. For ins
 
 It's important to monitor unexpected DNS requests or DNS requests that are directed toward known command and control endpoints.
 
- **Tradeoff**: **Logging all network activities can result in a large amount of data.** Every request from layer 3 can be recorded in a flow log, including every transaction that crosses a subnet boundary. Unfortunately, it's not possible to capture only adverse events because they can only be identified after they occur. Make strategic decisions about the type of events to capture and how long to store them. If you're not careful, managing the data can be overwhelming. There's also a tradeoff on the cost of storing that data.
+ > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: **Logging all network activities can result in a large amount of data.** Every request from layer 3 can be recorded in a flow log, including every transaction that crosses a subnet boundary. Unfortunately, it's not possible to capture only adverse events because they can only be identified after they occur. Make strategic decisions about the type of events to capture and how long to store them. If you're not careful, managing the data can be overwhelming. There's also a tradeoff on the cost of storing that data.
 
 Because of the tradeoffs, you should consider whether the benefit of network monitoring of your workload is sufficient to justify the costs. If you have a web application solution with a high request volume and your system makes extensive use of managed Azure resources, the cost might outweigh the benefits. On the other hand, if you have a solution that's designed to use virtual machines with various ports and applications, it might be important to capture and analyze network logs.
 
@@ -132,7 +132,7 @@ You can use a system like security information and event management (SIEM) to **
 
 A SIEM system can **generate alerts** based on correlated and normalized data. These alerts are a significant resource during an incident response process.
 
- **Tradeoff**: SIEM systems can be expensive, complex, and require specialized skills. However, if you don't have one, you might need to correlate data on your own. This can be a time-consuming and complex process.
+ > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: SIEM systems can be expensive, complex, and require specialized skills. However, if you don't have one, you might need to correlate data on your own. This can be a time-consuming and complex process.
 
 SIEM systems are usually managed by an organization's central teams. If your organization doesn't have one, consider advocating for it. It could alleviate the burden of manual log analysis and correlation to allow more efficient and effective security management.
 

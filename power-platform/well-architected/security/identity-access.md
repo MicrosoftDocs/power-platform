@@ -127,7 +127,7 @@ Is hierarchical access based on the business unit the user is in required?
 
 **Avoid permissions that** **target individual** **users.** Granular and custom permissions create complexity and confusion and can become difficult to maintain as users change roles and move across the business, or as new users with similar authentication requirements join the team. This can create a complex legacy configuration that's difficult to maintain and negatively impact both security and reliability.
 
- **Tradeoff**: A granular access control approach enables better auditing and monitoring of user activities.
+ > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: A granular access control approach enables better auditing and monitoring of user activities.
 
 **Grant roles that start with least privilege and add more based your operational or data access needs**. Your technical teams must have clear guidance to implement permissions.
 
