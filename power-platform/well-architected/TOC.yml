@@ -7,102 +7,101 @@
         href: whats-new.md
       - name: What is Power Well-Architected
         href: what-is-power-well-architected.md
-  items:
-      - name: Pillars
+    - name: Pillars
+      items:
+      - name: Overview
+        href: pillars.md
+      - name: Reliability
         items:
-        - name: Overview
-          href: pillars.md
-        - name: Reliability
+        - name: Quick links
+          href: ./reliability/index.yml
+        - name: Design principles
+          href: ./reliability/principles.md
+        - name: Checklist
+          href: ./reliability/checklist.md
+        - name: Tradeoffs
+          href: ./reliability/tradeoffs.md
+        - name: Recommendations   
           items:
-          - name: Quick links
-            href: ./reliability/index.yml
-          - name: Design principles
-            href: ./reliability/principles.md
-          - name: Checklist
-            href: ./reliability/checklist.md
-          - name: Tradeoffs
-            href: ./reliability/tradeoffs.md
-          - name: Recommendations   
-            items:
-              - name: Reliability patterns
-                href: ./reliability/design-patterns.md
-        - name: Operational excellence
-          items: 
-          - name: Quick links
-            href: ./operational-excellence/index.yml
-          - name: Design principles
-            href: ./operational-excellence/principles.md
-          - name: Checklist
-            href: ./operational-excellence/checklist.md
-          - name: Tradeoffs
-            href: ./operational-excellence/tradeoffs.md
-          - name: Recommendations   
-            items:
-              - name: Operational excellence patterns
-                href: ./operational-excellence/design-patterns.md
-        - name: Performance efficiency
+            - name: Reliability patterns
+              href: ./reliability/design-patterns.md
+      - name: Operational excellence
+        items: 
+        - name: Quick links
+          href: ./operational-excellence/index.yml
+        - name: Design principles
+          href: ./operational-excellence/principles.md
+        - name: Checklist
+          href: ./operational-excellence/checklist.md
+        - name: Tradeoffs
+          href: ./operational-excellence/tradeoffs.md
+        - name: Recommendations   
           items:
-          - name: Quick links
-            href: ./performance-efficiency/index.yml
-          - name: Design principles
-            href: ./performance-efficiency/principles.md
-          - name: Checklist
-            href: ./performance-efficiency/checklist.md
-          - name: Tradeoffs
-            href: ./performance-efficiency/tradeoffs.md
-          - name: Recommendations   
-            items:
-              - name: Performance efficiency patterns
-                href: ./performance-efficiency/design-patterns.md
-        - name: Experience optimization
+            - name: Operational excellence patterns
+              href: ./operational-excellence/design-patterns.md
+      - name: Performance efficiency
+        items:
+        - name: Quick links
+          href: ./performance-efficiency/index.yml
+        - name: Design principles
+          href: ./performance-efficiency/principles.md
+        - name: Checklist
+          href: ./performance-efficiency/checklist.md
+        - name: Tradeoffs
+          href: ./performance-efficiency/tradeoffs.md
+        - name: Recommendations   
           items:
-          - name: Quick links
-            href: ./experience-optimization/index.yml
-          - name: Design principles
-            href: ./experience-optimization/principles.md
-          - name: Checklist
-            href: ./experience-optimization/checklist.md
-          - name: Tradeoffs
-            href: ./experience-optimization/tradeoffs.md
-          - name: Recommendations   
-            items:
-              - name: Experience optimization patterns
-                href: ./experience-optimization/design-patterns.md
-        - name: Security
-          items: 
-          - name: Quick links
-            href: ./security/index.yml
-          - name: Design principles
-            href: ./security/principles.md
-          - name: Checklist
-            href: ./security/checklist.md
-          - name: Tradeoffs
-            href: ./security/tradeoffs.md
-          - name: Recommendations   
-            items:
-              - name: Security patterns
-                href: ./security/design-patterns.md
-              - name: SE:01 Security baseline
-                href: security/establish-baseline.md
-              - name: SE:02 Secured development lifecycle
-                href: security/secure-development-lifecycle.md
-              - name: SE:02 Threat analysis
-                href: security/threat-model.md              
-              - name: SE:03 Data classification
-                href: security/data-classification.md
-              - name: SE:04 Segmentation
-                href: security/segmentation.md
-              - name: SE:05 Identity and access management
-                href: security/identity-access.md
-              - name: SE:06 Network controls
-                href: security/networking.md
-              - name: SE:07 Encryption
-                href: security/encryption.md             
-              - name: SE:09 Application secrets
-                href: security/application-secrets.md
-              - name: SE:10 Monitoring and threat detection
-                href: security/monitor-threats.md
-              - name: SE:11 Testing and validation
-                href: security/testing.md              
-              - name: SE:12 Incident response 
-                href: security/incident-response.md
+            - name: Performance efficiency patterns
+              href: ./performance-efficiency/design-patterns.md
+      - name: Experience optimization
+        items:
+        - name: Quick links
+          href: ./experience-optimization/index.yml
+        - name: Design principles
+          href: ./experience-optimization/principles.md
+        - name: Checklist
+          href: ./experience-optimization/checklist.md
+        - name: Tradeoffs
+          href: ./experience-optimization/tradeoffs.md
+        - name: Recommendations   
+          items:
+            - name: Experience optimization patterns
+              href: ./experience-optimization/design-patterns.md
+      - name: Security
+        items: 
+        - name: Quick links
+          href: ./security/index.yml
+        - name: Design principles
+          href: ./security/principles.md
+        - name: Checklist
+          href: ./security/checklist.md
+        - name: Tradeoffs
+          href: ./security/tradeoffs.md
+        - name: Recommendations   
+          items:
+            - name: Security patterns
+              href: ./security/design-patterns.md
+            - name: SE:01 Security baseline
+              href: security/establish-baseline.md
+            - name: SE:02 Secured development lifecycle
+              href: security/secure-development-lifecycle.md
+            - name: SE:02 Threat analysis
+              href: security/threat-model.md              
+            - name: SE:03 Data classification
+              href: security/data-classification.md
+            - name: SE:04 Segmentation
+              href: security/segmentation.md
+            - name: SE:05 Identity and access management
+              href: security/identity-access.md
+            - name: SE:06 Network controls
+              href: security/networking.md
+            - name: SE:07 Encryption
+              href: security/encryption.md             
+            - name: SE:09 Application secrets
+              href: security/application-secrets.md
+            - name: SE:10 Monitoring and threat detection
+              href: security/monitor-threats.md
+            - name: SE:11 Testing and validation
+              href: security/testing.md              
+            - name: SE:12 Incident response 
+              href: security/incident-response.md
