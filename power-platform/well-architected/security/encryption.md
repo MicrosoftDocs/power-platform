@@ -2,9 +2,9 @@
 title: Encryption strategy recommendations
 description: Learn about recommendations for encryption, including encryption mechanisms, encryption keys, encryption algorithms, hashes, checksums, and secret management.
 author: RobStand
-ms.author: mpichler
+ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 03/31/2024
+ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -55,7 +55,7 @@ Encryption mechanisms likely need to secure the data in three stages:
 
 By default, Microsoft stores and manages the database encryption key for your environments using a Microsoft-managed key. However, Power Platform provides a customer-managed encryption key (CMK) for added data protection control, where you can self-manage the database encryption key. The encryption key resides in your own Azure key vault, which allows you to rotate or swap the encryption key on demand. It also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
-![Encryption of data at rest](media/encryption/image1.png)
+![Encryption of data at rest](./images/encryption/image1.png)
 
 ### Encryption keys
 
@@ -85,7 +85,7 @@ The following sections describe Power Platform services and features that you ca
 
 All customer data stored in Power Platform is encrypted using a strong Microsoft-managed encryption key by default. Organizations with data privacy and compliance requirements to secure their data and manage their own keys can use the customer managed key capability. The customer managed key provides added data protection where you self-manage the data encryption key associated with your Dataverse environment. Using this capability enables you to rotate or swap encryption keys on demand. Also, it prevents Microsoft from being able to access your data when you revoke the key from the service at any time. 
 
-![A computer screen shot of a diagram  Description automatically generated](media/encryption/image2.png)
+![A computer screen shot of a diagram  Description automatically generated](images/encryption/image2.png)
 
 Power Apps store their data in their own storage and in Microsoft Dataverse. When you apply the customer managed key to environments, only the data stored in Microsoft Dataverse are encrypted with your key. The non-Microsoft Dataverse data, including Power Apps source code and canvas apps icons, continue to be encrypted with the Microsoft-managed key. 
 

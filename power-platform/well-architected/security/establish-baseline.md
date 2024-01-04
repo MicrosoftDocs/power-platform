@@ -2,9 +2,9 @@
 title: Recommendations for establishing a security baseline
 description: Learn about hardening resources recommendations for security. Reduce the attack surface and increase attackers' costs in the remaining area to limit the opportunities for malicious actors to exploit vulnerabilities.
 author: RobStand
-ms.author: mpichler
+ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 03/31/2024
+ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -100,7 +100,7 @@ Example of regulatory compliance is GxP:
 
 The baseline needs prescriptive recommendations for the main components of the workload. These usually include technical controls for networking, identity, and data. 
 
-Refer to [Example](https://review.learn.microsoft.com/en-us/azure/well-architected/security/establish-baseline?branch=main).
+Refer to [Example](https://learn.microsoft.com/azure/well-architected/security/establish-baseline?branch=main).
 
 #### Development processes
 
@@ -154,7 +154,7 @@ Explore Microsoft Purview for Power Platform, Microsoft Power Platform Security 
 
 ### Evaluate the baseline regularly
 
-Continuously improve security standards towards the ideal state to ensure continual risk reduction. Stay up to date with security enhancements coming to Microsoft Power Platform by following the [roadmap](https://learn.microsoft.com/en-us/dynamics365/release-plans/) and announcements, and evaluate which new features are relevant to your security baseline and how you will implement them. Any change to the baseline must be formal, agreed upon, and sent through proper change management processes.
+Continuously improve security standards towards the ideal state to ensure continual risk reduction. Stay up to date with security enhancements coming to Microsoft Power Platform by following the [roadmap](https://learn.microsoft.com/dynamics365/release-plans/) and announcements, and evaluate which new features are relevant to your security baseline and how you will implement them. Any change to the baseline must be formal, agreed upon, and sent through proper change management processes.
 
 Measure the system against the new baseline and prioritize remediations based on their relevance and effect on the workload.
 
@@ -166,7 +166,7 @@ Power Platform builds on this strong foundation. It uses the same security stack
 
 The Power Platform service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Microsoft Online Services Terms and the [Data Protection Addendum](https://www.microsoft.com/download/details.aspx?id=101581).
 
-The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform compliance information. Learn more at [Microsoft Compliance Offerings](https://learn.microsoft.com/en-us/compliance/regulatory/offering-home).
+The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform compliance information. Learn more at [Microsoft Compliance Offerings](https://learn.microsoft.com/compliance/regulatory/offering-home).
 
 The Power Platform service follows the Security Development Lifecycle (SDL). The SDL is a set of strict practices that support security assurance and compliance requirements. Learn more at [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices).
 
@@ -174,7 +174,7 @@ The Power Platform service follows the Security Development Lifecycle (SDL). The
 
 The Microsoft cloud security benchmark (MCSB) is a comprehensive security best practice framework that you can use as a starting point for your security baseline. Use it along with other resources that provide input to your baseline.
 
-For more information, see [Introduction to the Microsoft cloud security benchmark](https://review.learn.microsoft.com/en-us/security/benchmark/azure/introduction).
+For more information, see [Introduction to the Microsoft cloud security benchmark](https://learn.microsoft.com/security/benchmark/azure/introduction).
 
 Use the Microsoft Power Platform Security Center regulatory compliance dashboard to track those baselines and be alerted if a pattern outside of a baseline is detected. 
 
@@ -204,15 +204,15 @@ Ensure the security baseline you establish for Microsoft Power Platform is well 
 
 Cloud Adoption Framework provides guidance for central teams about establishing a baseline with a suggested template:
 
-[Security Baseline discipline overview](https://review.learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/security-baseline/)
+[Security Baseline discipline overview](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/)
 
-[Security Baseline discipline template](https://review.learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/security-baseline/template)
+[Security Baseline discipline template](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/template)
 
 ## Related links
 
-- [Microsoft Compliance | Microsoft Learn](https://review.learn.microsoft.com/en-us/compliance/?branch=main)
-- [Microsoft Power Platform security and governance documentation - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/security)
-- [Overview of the Microsoft cloud security benchmark | Microsoft Learn](https://review.learn.microsoft.com/en-us/security/benchmark/azure/overview?branch=main)
+- [Microsoft Compliance | Microsoft Learn](https://learn.microsoft.com/compliance/?branch=main)
+- [Microsoft Power Platform security and governance documentation - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/security)
+- [Overview of the Microsoft cloud security benchmark | Microsoft Learn](https://learn.microsoft.com/security/benchmark/azure/overview?branch=main)
 
 
 

@@ -2,9 +2,9 @@
 title: Application threat analysis
 description: Use threat modeling to identify threats, attacks, vulnerabilities, and countermeasures that can affect an application.
 author: RobStand
-ms.author: mpichler
+ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 03/31/2024
+ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -58,7 +58,7 @@ Analyze each component from an outside-in perspective. For example, how easily c
 
 ### Classify the threats by using an industry methodology
 
-One methodology for classifying threats is [STRIDE](https://review.learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats), which the Microsoft Security Development Lifecycle uses. Classifying threats helps you understand the nature of each threat and use appropriate security controls.
+One methodology for classifying threats is [STRIDE](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats), which the Microsoft Security Development Lifecycle uses. Classifying threats helps you understand the nature of each threat and use appropriate security controls.
 
 ### Mitigate the threats
 
@@ -105,7 +105,7 @@ Learn more: [OWASP top 10 risks: Mitigations in Power Platform](https://learn.mi
 
 ## Example
 
-This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](https://review.learn.microsoft.com/azure/well-architected/security/establish-baseline). This approach provides a broad understanding of the threat landscape across different IT scenarios.
+This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](https://learn.microsoft.com/azure/well-architected/security/establish-baseline). This approach provides a broad understanding of the threat landscape across different IT scenarios.
 
 **Development Lifecycle personas**. There are many personas involved in a development life cycle, including developers, testers, final users, and administrators. All of them may be compromised and put your environment at risk through vulnerabilities or threats created intentionally.
 
@@ -121,7 +121,7 @@ This example builds on the Information Technology (IT) environment established i
 
 ## Related links
 
-- [STRIDE](https://review.learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats)
+- [STRIDE](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats)
 - [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling)
 - [Power Platform security FAQs - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/security/faqs)
 - [Microsoft Identity Platform](https://learn.microsoft.com/azure/active-directory/develop/v2-overview)

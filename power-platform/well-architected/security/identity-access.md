@@ -2,9 +2,9 @@
 title: Recommendations for identity and access management 
 description: Learn about recommendations for authenticating and authorizing identities that are attempting to access workload resources.
 author: RobStand
-ms.author: mpichler
+ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 03/31/2024
+ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -85,7 +85,7 @@ The concept applies at the component level. In the following example, the contai
 
 Here's an example of how identity can be implemented in an architecture: 
 
-![A diagram that shows Power Platform back-end services working with an API Hub/API Management connector to reach external data connectors.](media/identity-access/image1.png)
+![A diagram that shows Power Platform back-end services working with an API Hub/API Management connector to reach external data connectors.](images/identity-access/image1.png)
 
 ### Determine actions for authorization
 
@@ -215,7 +215,7 @@ Power Platform access control is a vital part of its overall security architectu
 
 All Power Platform products use Microsoft Entra ID (formerly Azure Active Directory or Azure AD) for identity and access management. Entra ID enables organizations to secure and manage identity for their hybrid and multi-cloud environments. Entra ID is also essential for managing business guests needing access to Power Platform resources. Power Platform also uses Entra ID to manage other applications that need to integrate with Power Platform APIs using the service principal capabilities. By using Entra ID, the Power Platform can leverage Entra ID more advanced security features like Conditional Access and continuous access evaluation. 
 
-![A diagram of a cloud computing system  Description automatically generated](media/identity-access/image2.png)
+![A diagram of a cloud computing system  Description automatically generated](images/identity-access/image2.png)
 
 ### Azure RBAC
 
@@ -239,11 +239,11 @@ Granting access to resources unconditionally without regard to the knowledge you
 
 The following diagram illustrates how signals are used to determine what action must be performed to access the target apps and data. 
 
-![Conceptual Conditional Access process flow.](media/identity-access/image3.png)
+![Conceptual Conditional Access process flow.](images/identity-access/image3.png)
 
 Organizations should plan how they intend to use policies to implement their security guidelines. For example, you could use a policy only to let a subset of users use Power Platform, or policies could ensure users can only use Power Platform with specific conditions. For example, the following conditions are part of a policy and could restrict the use of Power Platform when the user is at a higher risk or block it altogether from non-browser clients. 
 
-![A screenshot of a computer screen  Description automatically generated](media/identity-access/image4.png)
+![A screenshot of a computer screen  Description automatically generated](images/identity-access/image4.png)
 
 Conditional access is very flexible, but that flexibility can also allow you to create policies that have undesirable results or even lock your own admins out. The [planning guide](https://learn.microsoft.com//azure/active-directory/conditional-access/plan-conditional-access) can help your organization think through how to plan for implementing conditional access. 
 
