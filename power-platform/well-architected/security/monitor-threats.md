@@ -1,6 +1,6 @@
 ---
-title: Recommendations for security incident response
-description: Learn how to reduce the time that's required to identify, manage, and mitigate security incidents that threaten the confidentiality and integrity of software systems.
+title: Recommendations for monitoring and threat detection
+description: Learn how to get information about events, capture information about the workload, and gain awareness of suspicious activities. 
 author: RobStand
 ms.author: mapichle
 ms.reviewer: sericks
