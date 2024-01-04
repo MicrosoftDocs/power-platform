@@ -1,5 +1,5 @@
 - name: Power Platform Well-Architected
-  href: pillars.md
+  href: ./index.yml
   items:
       - name: Pillars
         items:
