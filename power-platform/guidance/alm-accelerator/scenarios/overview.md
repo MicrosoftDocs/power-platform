@@ -20,7 +20,7 @@ search.app:
 
 As you plan your ALM Accelerator for Power Platform deployment, one or more of the following scenarios might apply to you:
 
-- [Tenant deployments](./tenant-deployments.md) discusses Azure Active Directory (Azure AD) configurations across demo, single Azure AD, and multiple Azure AD deployment models.
+- [Tenant deployments](./tenant-deployments.md) discusses Microsoft Entra configurations across demo, single Microsoft Entra ID, and multiple Microsoft Entra deployment models.
 
 - [DevOps deployment model](./devops-deployment-model.md) discusses the relationship between ALM Accelerator deployments and one or more Azure DevOps organizations.
 

@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Provides information on how to back up and restore Power Platform environments
 ms.topic: conceptual
-ms.date: 12/08/2023
+ms.date: 01/03/2024
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
@@ -24,7 +24,7 @@ The ability to change the backup retention period is useful for managed environm
 - This ability to extend the backup retention period beyond seven days is supported only for [managed environments](managed-environment-overview.md).
 - If you change the backup retention period, the new setting applies to all existing and future backups. Because the change might take up to 24 hours to go into effect on the existing backups, some backups might be deleted sooner than expected.
 
-To change the backup retention period, you must be an admin who has one of these roles in Azure Active Directory (Azure AD):
+To change the backup retention period, you must be an admin who has one of these roles in Microsoft Entra ID:
 
 - Global admin
 - Power Platform admin
@@ -272,6 +272,8 @@ Yes, all backups within the organization's retention period will remain availabl
 
 ### Don't see your environment to restore to? 
 Only sandbox environments can be restored to.
+
+A [Managed Environment](managed-environment-overview.md) can only be restored to a Managed Environment.
 
 ### See also
 [Automatic environment cleanup](automatic-environment-cleanup.md) <br />

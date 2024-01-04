@@ -1,18 +1,14 @@
 ---
 title: "Tutorial: Build a model-driven app for deployment using GitHub Actions for Microsoft Power Platform | Microsoft Docs"
 description: "In this tutorial, build a Microsoft Dataverse model-driven app for later deployment using GitHub Actions for Microsoft Power Platform."
-keywords: 
-author: mikkelsen2000
+author: marcelbf
+ms.author: marcelbf
 ms.subservice: alm
-ms.author: pemikkel
-ms.custom: ""
 ms.date: 10/14/2020
-ms.reviewer: "pehecke"
-
-ms.topic: "tutorial"
+ms.reviewer: pehecke
+ms.topic: tutorial
 search.audienceType: 
   - maker
-#Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 
 # Tutorial: Build a model-driven app for deployment using GitHub Actions for Microsoft Power Platform

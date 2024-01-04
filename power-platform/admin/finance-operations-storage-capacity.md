@@ -94,17 +94,20 @@ Microsoft business applications work across multiple underlying technologies. Da
 
 Finance and operations entitlement includes default capacity entitlement plus accrued capacity entitlement based on each operations base enterprise and activity license. For more information, go to the Capacity Licenses section of the [Dynamics 365 License Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365).
 
+### Why did the Finance Operations Database Base User Subscription License (USL) Entitlement calculation change?
+This is due to a change in December 2023, where the Operations Database Capacity (Accrued/USL) was increased from 1.5GB to 4 GB. For more details on how base entitlement calculation works, go to the Capacity Licenses section of the [Dynamics 365 License Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365).
+
 ### Why don’t I see which tables are causing the overage?  
 
 Details at the table level aren't available in the initial launch of reporting. Table analytics will be available in a future release.
 
 ### Is there any reporting for file capacity?
 
-File capacity reporting is in public preview. Capacity reports for Finance and Operations File is not generally available. 
+File capacity reporting is in public preview. Capacity reports for Finance and operations File is not generally available. 
 
 :::image type="content" source="media/finance-operations-storage-capacity/finance-operations-database.png" alt-text="Screenshot of the Finance and operations File.":::
 
-A new report will provide Log, and File consumption analytics for Finance and Operations and is expected to be available during the calendar year 2023. The new report will provide enhanced precision for file consumption analytics.
+A new report will provide Log and File consumption analytics for Finance and Operations and is expected to be available during the calendar year 2023. The new report will provide enhanced precision for file consumption analytics.
 
 ### What happens if my consumption is over the entitled limit?
 
@@ -116,8 +119,8 @@ For File and Log capacity analytics for Finance and Operations, you're not expec
 
 For now, your account team will work with you to stay within your entitlement limit.  
 
-### We have multiple Lifecycle Services (LCS) Projects in our tenant with each having its own production and sandbox environment. How does storage reporting work in this case?
+### We have multiple Lifecycle Services projects in our tenant with each having its own production and sandbox environment. How does storage reporting work in this case?
 
-Storage reporting covers usage at the tenant and environment level. All environments in all LCS Projects on the tenant will be included in storage reporting.
+Storage reporting covers usage at the tenant and environment level. All environments in all Lifecycle Services projects on the tenant will be included in storage reporting.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

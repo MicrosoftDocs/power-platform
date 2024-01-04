@@ -2,8 +2,8 @@
 title: Introduction to the AppSource checker | Microsoft Docs
 description: Learn how to use AppSource checker
 ms.date: 04/03/2023
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 ms.reviewer: jdaly
 ms.topic: article
 ms.subservice: developer
