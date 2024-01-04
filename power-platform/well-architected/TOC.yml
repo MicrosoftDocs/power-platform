@@ -90,14 +90,12 @@
               - name: SE:06 Network controls
                 href: security/networking.md
               - name: SE:07 Encryption
-                href: security/encryption.md
-              - name: SE:08 Hardening resources
-                href: security/harden-resources.md              
+                href: security/encryption.md             
               - name: SE:09 Application secrets
                 href: security/application-secrets.md
               - name: SE:10 Monitoring and threat detection
                 href: security/monitor-threats.md
               - name: SE:11 Testing and validation
-                href: security/test.md              
+                href: security/testing.md              
               - name: SE:12 Incident response 
                 href: security/incident-response.md
