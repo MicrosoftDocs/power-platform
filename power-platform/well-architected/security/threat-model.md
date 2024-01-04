@@ -1,8 +1,20 @@
 ---
-author: Manuela Pichler
-ms.date: 12/07/2023
+title: Application threat analysis
+description: Use threat modeling to identify threats, attacks, vulnerabilities, and countermeasures that can affect an application.
+author: RobStand
+ms.author: mpichler
+ms.reviewer: sericks
+ms.date: 03/31/2024
+ms.subservice: guidance
+ms.topic: conceptual
 ---
+
 # Recommendations for threat analysis
+
+**Applies to this Power Well-Architected Security checklist recommendation:**
+
+|[SE:02](checklist.md)|Establish a security baseline that's aligned to compliance requirements, industry standards, and platform recommendations. Regularly measure your workload architecture and operations against the baseline to sustain or improve your security posture over time.|
+|---|---|
 
 A comprehensive analysis to identify threats, attacks, vulnerabilities, and counter measures is crucial during the design phase of a workload. _Threat modeling_ is an engineering exercise that includes defining security requirements, identifying, and mitigating threats, and validating those mitigations. You can use this technique at any stage of application development or production, but it's most effective during the design stages of new functionality.
 
@@ -10,11 +22,11 @@ This guide describes the recommendations for doing threat modeling so that you c
 
 **Definitions** 
 
-| **Term** | **Definition** |
+| Term | Definition |
 |---|---|
-| **Software development lifecycle (SDLC)** | A multistage, systematic process for developing software systems. |
-| **STRIDE** | A Microsoft-defined taxonomy for categorizing types of threats. |
-| **Threat modeling** | A process for identifying potential security vulnerabilities in the application and system, mitigating risks, and validating security controls. |
+| Software development lifecycle (SDLC) | A multistage, systematic process for developing software systems. |
+| STRIDE | A Microsoft-defined taxonomy for categorizing types of threats. |
+| Threat modeling | A process for identifying potential security vulnerabilities in the application and system, mitigating risks, and validating security controls. |
 
 ## Key design strategies
 
@@ -46,7 +58,7 @@ Analyze each component from an outside-in perspective. For example, how easily c
 
 ### Classify the threats by using an industry methodology
 
-One methodology for classifying threats is [STRIDE](https://review.learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats), which the Microsoft Security Development Lifecycle uses. Classifying threats helps you understand the nature of each threat and use appropriate security controls.
+One methodology for classifying threats is [STRIDE](https://review.learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats), which the Microsoft Security Development Lifecycle uses. Classifying threats helps you understand the nature of each threat and use appropriate security controls.
 
 ### Mitigate the threats
 
@@ -56,16 +68,16 @@ Use the _assume breach_ approach. It can help identify controls needed in the de
 
 Here's an example:
 
-| **Ask this question** | **To determine controls that...** |
+| Ask this question | To determine controls that... |
 |---|---|
-| **Are connections authenticated through Microsoft** **Entra ID,** **and use modern security protocols that the security team approved:**<br><br>**- Between users and the application?**<br><br>**- Between application components and services?** | Prevent unauthorized access to the application components and data. |
-| **Are you** **limiting access to only accounts that need to write or modify data in the application?** | Prevent unauthorized data tampering or alteration. |
-| **Is the application activity logged and fed into a security information and event management (SIEM) system through Azure Monitor or a similar solution?** | Detect and investigate attacks quickly. |
-| **Is critical data protected with encryption that the security team approved?** | Prevent unauthorized copying of data at rest. |
-| **Is inbound and outbound network traffic** **isolated to** **domains approved by the security teams?** | Prevent unauthorized copying of data. |
-| **Is the application protected against** **access from external/public locations such as coffee shops by using IP firewalls on the environment?** | Prevent access from unauthorized public locations. |
-| **Does the application store sign-in credentials or keys to access other applications, databases, or services?** | Identify whether an attack can use your application to attack other systems. |
-| **Do the application controls allow you to fulfill regulatory requirements?** | Protect users' private data and avoid compliance fines. |
+| Are connections authenticated through Microsoft Entra ID, and use modern security protocols that the security team approved:<br><br>- Between users and the application?<br><br>- Between application components and services? | Prevent unauthorized access to the application components and data. |
+| Are you limiting access to only accounts that need to write or modify data in the application? | Prevent unauthorized data tampering or alteration. |
+| Is the application activity logged and fed into a security information and event management (SIEM) system through Azure Monitor or a similar solution? | Detect and investigate attacks quickly. |
+| Is critical data protected with encryption that the security team approved? | Prevent unauthorized copying of data at rest. |
+| Is inbound and outbound network traffic isolated to domains approved by the security teams? | Prevent unauthorized copying of data. |
+| Is the application protected against access from external/public locations such as coffee shops by using IP firewalls on the environment? | Prevent access from unauthorized public locations. |
+| Does the application store sign-in credentials or keys to access other applications, databases, or services? | Identify whether an attack can use your application to attack other systems. |
+| Do the application controls allow you to fulfill regulatory requirements? | Protect users' private data and avoid compliance fines. |
 
 ### Track threat modeling results
 
@@ -85,15 +97,15 @@ Power Platform is built on a culture and methodology of secure design. Both cult
 
 The Threat Modeling review process ensures that threats are identified during the design phase, mitigated, and validated to make sure they've been mitigated.
 
-Threat Modeling also accounts for all changes to services that are already live through continuous regular reviews. Relying on the [STRIDE model](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats) helps to address the most common issues with insecure design.
+Threat Modeling also accounts for all changes to services that are already live through continuous regular reviews. Relying on the [STRIDE model](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats) helps to address the most common issues with insecure design.
 
 Microsoft's SDL is equivalent to the [OWASP Software Assurance Maturity Model](https://owaspsamm.org/) (SAMM). Both are built on the premise that secure design is integral to web application security.
 
-Learn more: [OWASP top 10 risks: Mitigations in Power Platform](https://learn.microsoft.com/en-us/power-platform/admin/security/faqs)
+Learn more: [OWASP top 10 risks: Mitigations in Power Platform](https://learn.microsoft.com/power-platform/admin/security/faqs)
 
 ## Example
 
-This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](https://review.learn.microsoft.com/en-us/azure/well-architected/security/establish-baseline). This approach provides a broad understanding of the threat landscape across different IT scenarios.
+This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](https://review.learn.microsoft.com/azure/well-architected/security/establish-baseline). This approach provides a broad understanding of the threat landscape across different IT scenarios.
 
 **Development Lifecycle personas**. There are many personas involved in a development life cycle, including developers, testers, final users, and administrators. All of them may be compromised and put your environment at risk through vulnerabilities or threats created intentionally.
 
@@ -109,13 +121,13 @@ This example builds on the Information Technology (IT) environment established i
 
 ## Related links
 
-- [STRIDE](https://review.learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats)
+- [STRIDE](https://review.learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats)
 - [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling)
-- [Power Platform security FAQs - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/security/faqs)
-- [Microsoft Identity Platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-overview)
+- [Power Platform security FAQs - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/security/faqs)
+- [Microsoft Identity Platform](https://learn.microsoft.com/azure/active-directory/develop/v2-overview)
 - [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/practices)
-- [Azure AD Continuous Access Evaluation](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
-- [Content Security Policy](https://learn.microsoft.com/en-us/power-platform/admin/content-security-policy)
-- [Azure DDoS Protection](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-standard-features)
-- [Intune's compliance policy settings](https://learn.microsoft.com/en-us/mem/intune/protect/device-compliance-get-started)
+- [Azure AD Continuous Access Evaluation](https://learn.microsoft.com/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
+- [Content Security Policy](https://learn.microsoft.com/power-platform/admin/content-security-policy)
+- [Azure DDoS Protection](https://learn.microsoft.com/azure/ddos-protection/ddos-protection-standard-features)
+- [Intune's compliance policy settings](https://learn.microsoft.com/mem/intune/protect/device-compliance-get-started)
 
