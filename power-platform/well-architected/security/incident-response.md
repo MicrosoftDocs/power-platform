@@ -1,14 +1,26 @@
 ---
-author: Manuela Pichler
-ms.date: 11/28/2023
+title: Recommendations for security incident response
+description: Learn how to reduce the time that's required to identify, manage, and mitigate security incidents that threaten the confidentiality and integrity of software systems.
+author: RobStand
+ms.author: mpichler
+ms.reviewer: sericks
+ms.date: 03/31/2024
+ms.subservice: guidance
+ms.topic: conceptual
 ---
+
 # Recommendations for security incident response
+
+**Applies to Power Well-Architected Security checklist recommendation:**
+
+|[SE:12](checklist.md)|Define and test effective incident response procedures that cover a spectrum of incidents, from localized issues to disaster recovery. Clearly define which team or individual runs a procedure.|
+|---|---|
 
 This guide describes the recommendations for implementing a security incident response for a workload. If there's a security compromise to a system, a systematic incident response approach helps to reduce the time that it takes to identify, manage, and mitigate security incidents. These incidents can threaten the confidentiality, integrity, and availability of software systems and data.
 
 Most enterprises have a central security operation team (also known as Security Operations Center (SOC), or SecOps). The responsibility of the security operation team is to rapidly detect, prioritize, and triage potential attacks. The team also monitors security-related telemetry data and investigates security breaches.
 
-![Conceptual art that shows collaborative approach to mitigate potential and realized risk.](media/image1.png)
+![Conceptual art that shows collaborative approach to mitigate potential and realized risk.](media/incident-response/image1.png)
 
 However, you also have a responsibility to protect your workload. It's important that any communication, investigation, and hunting activities are a collaborative effort between workload team and SecOps team.
 
@@ -16,14 +28,14 @@ This guide provides recommendations for you and your workload team to help you r
 
 **Definitions**
 
-| **Term** | **Definition** |
+| Term | Definition |
 |---|---|
-| **Alert** | A notification that contains information about an incident. |
-| **Alert fidelity** | The accuracy of the data that determines an alert. High-fidelity alerts contain the security context that's needed to take immediate actions. Low-fidelity alerts lack information or contain noise. |
-| **False positive** | An alert that indicates an incident that didn't happen. |
-| **Incident** | An event that indicates unauthorized access to a system. |
-| **Incident response** | A process that detects, responds to, and mitigates risks that are associated with an incident. |
-| **Triage** | An incident response operation that analyzes security issues and prioritizes their mitigation. |
+| Alert | A notification that contains information about an incident. |
+| Alert fidelity | The accuracy of the data that determines an alert. High-fidelity alerts contain the security context that's needed to take immediate actions. Low-fidelity alerts lack information or contain noise. |
+| False positive | An alert that indicates an incident that didn't happen. |
+| Incident | An event that indicates unauthorized access to a system. |
+| Incident response | A process that detects, responds to, and mitigates risks that are associated with an incident. |
+| Triage | An incident response operation that analyzes security issues and prioritizes their mitigation. |
 
 ## Key design strategies
 
@@ -135,41 +147,41 @@ For more information about security, see [Trust Center](https://www.microsoft.co
 
 ### Manage your maintenance window
 
-Microsoft regularly performs updates and maintenance on customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) to ensure security, performance, availability, and to provide new features and functionality. This update process delivers security and minor service improvements on a weekly basis, with each update rolling out region-by-region according to a safe deployment schedule, arranged in [Stations](https://learn.microsoft.com/en-us/dynamics365/released-versions/dynamics-365ce). For information about your default maintenance window for environments, see [Policies and Communications for service incidents](https://learn.microsoft.com/en-us/power-platform/admin/policies-communications).
+Microsoft regularly performs updates and maintenance on customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) to ensure security, performance, availability, and to provide new features and functionality. This update process delivers security and minor service improvements on a weekly basis, with each update rolling out region-by-region according to a safe deployment schedule, arranged in [Stations](https://learn.microsoft.com/dynamics365/released-versions/dynamics-365ce). For information about your default maintenance window for environments, see [Policies and Communications for service incidents](https://learn.microsoft.com/power-platform/admin/policies-communications).
 
-Learn more: [Manage your maintenance window - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/manage-maintenance-window)
+Learn more: [Manage your maintenance window - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/manage-maintenance-window)
 
-Ensure that the Azure enrollment portal includes administrator contact information so security operations can be notified directly via an internal process. For more information, see [Update notification settings](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/ea-portal-administration).
+Ensure that the Azure enrollment portal includes administrator contact information so security operations can be notified directly via an internal process. For more information, see [Update notification settings](https://learn.microsoft.com/azure/cost-management-billing/manage/ea-portal-administration).
 
-To learn more about establishing a designated point of contact that receives Azure incident notifications from Microsoft Defender for Cloud, see [Configure email notifications for security alerts](https://learn.microsoft.com/en-us/azure/security-center/security-center-provide-security-contact-details).
+To learn more about establishing a designated point of contact that receives Azure incident notifications from Microsoft Defender for Cloud, see [Configure email notifications for security alerts](https://learn.microsoft.com/azure/security-center/security-center-provide-security-contact-details).
 
 ## Organizational alignment
 
-Cloud Adoption Framework for Azure provides guidance about incident response planning and security operations. For more information, see [Security operations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/security-operations).
+Cloud Adoption Framework for Azure provides guidance about incident response planning and security operations. For more information, see [Security operations](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/security-operations).
 
 ## Related links
 
-[Automatically create incidents from Microsoft security alerts](https://learn.microsoft.com/en-us/azure/sentinel/create-incidents-from-alerts)
+[Automatically create incidents from Microsoft security alerts](https://learn.microsoft.com/azure/sentinel/create-incidents-from-alerts)
 
-[Conduct end-to-end threat hunting by using the hunts feature](https://learn.microsoft.com/en-us/azure/sentinel/hunts)
+[Conduct end-to-end threat hunting by using the hunts feature](https://learn.microsoft.com/azure/sentinel/hunts)
 
-[Configure email notifications for security alerts](https://learn.microsoft.com/en-us/azure/security-center/security-center-provide-security-contact-details)
+[Configure email notifications for security alerts](https://learn.microsoft.com/azure/security-center/security-center-provide-security-contact-details)
 
-[Incident response overview](https://learn.microsoft.com/en-us/security/operations/incident-response-overview)
+[Incident response overview](https://learn.microsoft.com/security/operations/incident-response-overview)
 
-[Microsoft Azure incident readiness](https://learn.microsoft.com/en-us/services-hub/unified/health/ir-azure)
+[Microsoft Azure incident readiness](https://learn.microsoft.com/services-hub/unified/health/ir-azure)
 
-[Navigate and investigate incidents in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/investigate-incidents)
+[Navigate and investigate incidents in Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/investigate-incidents)
 
-[Security control: Incident response](https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-incident-response)
+[Security control: Incident response](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response)
 
-[SOAR solutions in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/automation)
+[SOAR solutions in Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/automation)
 
-[Training: Introduction to Azure incident readiness](https://learn.microsoft.com/en-us/training/technical-support/intro-to-azure-incident-readiness/)
+[Training: Introduction to Azure incident readiness](https://learn.microsoft.com/training/technical-support/intro-to-azure-incident-readiness/)
 
-[Update Azure portal notification settings](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/ea-portal-administration)
+[Update Azure portal notification settings](https://learn.microsoft.com/azure/cost-management-billing/manage/ea-portal-administration)
 
 [What's an SOC?](https://www.microsoft.com/security/business/security-101/what-is-a-security-operations-center-soc)
 
-[What's Microsoft Sentinel?](https://learn.microsoft.com/en-us/azure/sentinel/overview)
+[What's Microsoft Sentinel?](https://learn.microsoft.com/azure/sentinel/overview)
 
