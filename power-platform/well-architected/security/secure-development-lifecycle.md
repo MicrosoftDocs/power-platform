@@ -1,8 +1,20 @@
 ---
-author: Manuela Pichler
-ms.date: 12/08/2023
+title: Recommendations for securing a development lifecycle
+description: Learn about Well-Architected Framework Security recommendations for securing a development lifecycle. 
+author: RobStand
+ms.author: mpichler
+ms.reviewer: sericks
+ms.date: 03/31/2024
+ms.subservice: guidance
+ms.topic: conceptual
 ---
+
 # Recommendations for securing a development lifecycle
+
+**Applies to this Power Well-Architected Security checklist recommendation:**
+
+|[SE:02](checklist.md)|Maintain a secure development lifecycle by using a hardened, mostly automated, and auditable software supply chain. Incorporate a secure design by using threat modeling to safeguard against security-defeating implementations.|
+|--|---|
 
 This guide describes the **recommendations for** **securing your code and development** **environment** by applying security best practices throughout the development cycle. 
 
@@ -12,10 +24,10 @@ It's not enough to secure just the infrastructure plane by using controls on ide
 
 **Definitions**
 
-| **Term** | **Definition** |
+| Term | Definition |
 |---|---|
-| **Security Development Lifecycle (SDL)** | A set of practices provided by Microsoft that supports security assurance and compliance requirements. |
-| **Software development lifecycle (SDLC)** | A multistage, systematic process for developing software systems. |
+| Security Development Lifecycle (SDL) | A set of practices provided by Microsoft that supports security assurance and compliance requirements. |
+| Software development lifecycle (SDLC) | A multistage, systematic process for developing software systems. |
 
 ## Key design strategies
 
@@ -59,11 +71,11 @@ It's important to understand the **division of responsibility between you and** 
 
 For example, 
 
-**Choose only trusted reference implementations, templates, code components, scripts,** **and** **libraries.** Your design should also specify secure version control. Application dependencies should be sourced from trusted parties. **Third-party vendors should be able to meet your security requirements** and share their responsible disclosure plan. Any security incident should be promptly reported so that you can take necessary actions. Also, certain libraries or reference implementations might be prohibited by your organization. For example, it might be secure from vulnerabilities but still disallowed because it’s using features not yet approved by your organization, licensing restrictions or because of the support model of the reference implementation. 
+**Choose only trusted reference implementations, templates, code components, scripts, and libraries.** Your design should also specify secure version control. Application dependencies should be sourced from trusted parties. Third-party vendors should be able to meet your security requirements and share their responsible disclosure plan. Any security incident should be promptly reported so that you can take necessary actions. Also, certain libraries or reference implementations might be prohibited by your organization. For example, it might be secure from vulnerabilities but still disallowed because it’s using features not yet approved by your organization, licensing restrictions or because of the support model of the reference implementation. 
 
-To ensure that this guidance is followed, **maintain a list of approved and/or unapproved frameworks, libraries, and vendors** **and ensure your makers are familiar with this list**. When possible, place guardrails in the development pipelines to support the list. As much as possible, **automate the use of tools to scan dependencies** for vulnerabilities.
+To ensure that this guidance is followed, maintain a list of approved and/or unapproved frameworks, libraries, and vendors and ensure your makers are familiar with this list**. When possible, place guardrails in the development pipelines to support the list. As much as possible, automate the use of tools to scan dependencies for vulnerabilities.
 
-**Determine the security** **design patterns that the application code should implement.** Patterns can support security concerns like segmentation and isolation, strong authorization, uniform application security, and modern protocols.
+**Determine the security design patterns that the application code should implement.** Patterns can support security concerns like segmentation and isolation, strong authorization, uniform application security, and modern protocols.
 
 For more information, see [Cloud design patterns that support security](https://review.learn.microsoft.com/en-us/azure/well-architected/security/design-patterns).
 
@@ -71,13 +83,13 @@ For more information, see [Cloud design patterns that support security](https://
 
 Securely implement the use of application secrets and pre-shared keys that your application uses. **Credentials and application secrets should never be stored in the source** **code of the workload (app or flow).** Use external resources like Azure Key Vault to ensure that, if your source code becomes available to a potential attacker, no further access can be obtained.
 
-**Connect to your data securely.** **Use** **connectors that support secure authentication methods. Use** **Dataverse with xyz benefits to security. Don’t use implicit connection sharing. Don’t use queries where username and password** **are stored in plain text. Don’t use HTTP.**  <br>
+**Connect to your data securely.** Use connectors that support secure authentication methods. Use Dataverse with xyz benefits to security. Don’t use implicit connection sharing. Don’t use queries where username and password are stored in plain text. Don’t use HTTP.
 
-**Define** **how** **end users will interact with** **the workload and data.** **Will they have direct access to the data, will you use application users to surface data in the app, where will they access the app (e.g. do you need conditional access policies), how will apps be shared (e.g. with security groups).** **Avoid complex security models that encourage work arounds to avoid security blockers.**<br>
+**Define how end users will interact with the workload and data.** Will they have direct access to the data, will you use application users to surface data in the app, where will they access the app (e.g. do you need conditional access policies), how will apps be shared (e.g. with security groups). Avoid complex security models that encourage work arounds to avoid security blockers.<br>
 
-**Avoid hard coding.** **Avoid hard-coding of URLs and keys. For example, avoid hard coding in a Power Automate HTTP action the URL or key to the backend service. Instead use a custom connector or use an environment variable for the URL, and Azure Key Vault for the API key.**<br>
+**Avoid hard coding.** Avoid hard-coding of URLs and keys. For example, avoid hard coding in a Power Automate HTTP action the URL or key to the backend service. Instead use a custom connector or use an environment variable for the URL, and Azure Key Vault for the API key.<br>
 
-**Define test plans.** Define clear test cases for security requirements. Evaluate whether you can **automate those tests in your pipelines**. If your team has processes for manual testing, include security requirements for those tests.
+**Define test plans.** Define clear test cases for security requirements. Evaluate whether you can automate those tests in your pipelines. If your team has processes for manual testing, include security requirements for those tests.
 
 ** Note**
 
@@ -99,9 +111,9 @@ Developers should be required to complete this training before they can start wo
 
 You should also perform internal peer code reviews to promote continuous learning.
 
-**Use** **code analysis tools.** **Solution Checker** **should be used for Power Platform resources and source code of any traditional code could be checked for potential security flaws, including the presence of credentials in code.** **Identify possible instances of credential and secret exposure in source code and configuration files. This is a good time to review how connection credentials will be handled in production.**<br>
+**Use code analysis tools.** Solution Checker should be used for Power Platform resources and source code of any traditional code could be checked for potential security flaws, including the presence of credentials in code. Identify possible instances of credential and secret exposure in source code and configuration files. This is a good time to review how connection credentials will be handled in production.<br>
 
-**Perform fuzz testing - Use malformed and unexpected data to check for vulnerabilities and validate error handling. This can be particularly important with solutions that include Power Pages.**
+**Perform fuzz testing.** Use malformed and unexpected data to check for vulnerabilities and validate error handling. This can be particularly important with solutions that include Power Pages.
 
 **Write just enough code.**
 
@@ -109,7 +121,7 @@ When you reduce your code footprint, you also reduce the chances of security def
 
 **Protect developer environments.**
 
-**Developer workstations need to be protected** with strong network and identity controls to prevent exposure. Make sure security updates are applied diligently.
+Developer workstations need to be protected with strong network and identity controls to prevent exposure. Make sure security updates are applied diligently.
 
 **The source code repository must be safeguarded** as well. Grant access to code repositories on a need-to-know basis and reduce exposure of vulnerabilities as much as possible to avoid attacks. **Have a thorough process to review code** for security vulnerabilities. Use security groups for that purpose, and implement an approval process that's based on business justifications.
 
@@ -143,11 +155,11 @@ A release is typically associated with multiple approval gates. Consider creatin
 
 Always prioritize security fixes over convenience. A security fix shouldn't introduce a regression or bug. If you want to accelerate the fix through an emergency pipeline, carefully consider which automated tests can be bypassed. Evaluate the value of each test against the execution time. For example, unit tests usually complete quickly. Integration or end-to-end tests can run for a long time.
 
-**Keep different environments** **separate.**
+**Keep different environments separate.**
 
 Data used in different environments must be kept separate. **Production data shouldn't be used in lower environments** because those environments might not have the strict security controls that production has. Avoid connecting from a non-production application to a production database, and avoid connecting non-production components to production networks.
 
-**Progressive** **exposure.**
+**Progressive exposure.**
 
 Use progressive exposure to **release features to a subset of users** based on chosen criteria. If there are issues, the impact is minimized to those users. This approach is a common risk mitigation strategy because it reduces surface area. As the feature matures and you have more confidence in security assurances, you can gradually release it to a broader set of users.
 
