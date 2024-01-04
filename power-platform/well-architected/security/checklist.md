@@ -27,7 +27,7 @@ This checklist presents a set of security recommendations to help you ensure you
 |&#9744;|[SE:08](./harden-resources.md)|**Harden all workload components** by reducing extraneous surface area and tightening configurations to increase attacker cost.|
 |&#9744;|[SE:09](./application-secrets.md)|**Protect application secrets** by hardening their storage and restricting access and manipulation and by auditing those actions. Run a reliable and regular rotation process that can improvise rotations for emergencies.|
 |&#9744;|[SE:10](./monitor-threats.md)|**Implement a holistic monitoring strategy** that relies on modern threat detection mechanisms that can be integrated with the platform. Mechanisms should reliably alert for triage and send signals into existing SecOps processes.|
-|&#9744;|[SE:11](./test.md)|**Establish a comprehensive testing regimen** that combines approaches to prevent security issues, validate threat prevention implementations, and test threat detection mechanisms.|
+|&#9744;|[SE:11](./testing.md)|**Establish a comprehensive testing regimen** that combines approaches to prevent security issues, validate threat prevention implementations, and test threat detection mechanisms.|
 |&#9744;|[SE:12](./incident-response.md)|**Define and test effective incident response procedures** that cover a spectrum of incidents, from localized issues to disaster recovery. Clearly define which team or individual runs a procedure.|
 
 
