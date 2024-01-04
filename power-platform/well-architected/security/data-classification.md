@@ -32,7 +32,7 @@ Data classification helps you correctly size security assurances and helps the t
 
 Classifying data can be a tedious task. You can use tools that can find data assets and recommend classifications. But don’t just depend on tools. Make sure your team members do the exercises carefully. Then use tools to automate when it makes sense.
 
-Along with these best practices, see [Create a well-designed data classification framework](https:/learn.microsoft.com/compliance/assurance/assurance-create-data-classification-framework).
+Along with these best practices, see [Create a well-designed data classification framework](/compliance/assurance/assurance-create-data-classification-framework).
 
 ### Understand organization-defined taxonomy
 
@@ -114,7 +114,7 @@ Ultimately, classification must roll up to the organization through central team
 
 Classification should influence your architectural decisions. 
 
-Microsoft Purview provides visibility into data assets throughout your organization. For more information, see [What is Microsoft Purview?](https://learn.microsoft.com/purview/purview)
+Microsoft Purview provides visibility into data assets throughout your organization. For more information, see [What is Microsoft Purview?](/purview/purview)
 
 Microsoft Purview Data Map will enable automated data discovery and sensitive data classification. The integration between Microsoft Purview and Microsoft Dataverse will help you better understand and govern your business applications data estate, safeguard that data, and improve their risk and compliance posture.
 
@@ -132,7 +132,7 @@ Enable data curators and security administrators to manage and keep data estate 
 
 ## Example
 
-This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](https://learn.microsoft.com/azure/well-architected/security/establish-baseline). The example diagram below shows data stores where data is classified.
+This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](/azure/well-architected/security/establish-baseline). The example diagram below shows data stores where data is classified.
 
 Data stored on databases and disks should only be accessible to a few users, such as Administrators, Database administrators. Then, it's usual that common users or customers' final clients have access only to layers that are exposed to the internet, such as applications or jump boxes.
 
@@ -158,17 +158,17 @@ Microsoft Defender for Cloud provides a solution that helps your company to trac
 
 Cloud Adoption Framework provides guidance for central teams about how to classify data so that workload teams can follow the organizational taxonomy.
 
-For more information, see [What is data classification? - Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/data-classification).
+For more information, see [What is data classification? - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification).
 
 ## Related links
 
-[Data classification and sensitivity label taxonomy - Microsoft Service Assurance](https://learn.microsoft.com/compliance/assurance/assurance-data-classification-and-labels)
+[Data classification and sensitivity label taxonomy - Microsoft Service Assurance](/compliance/assurance/assurance-data-classification-and-labels)
 
-[Create a well-designed data classification framework - Microsoft Service Assurance](https://learn.microsoft.com/compliance/assurance/assurance-create-data-classification-framework)
+[Create a well-designed data classification framework - Microsoft Service Assurance](/compliance/assurance/assurance-create-data-classification-framework)
 
-<https://learn.microsoft.com/purview/purview> 
+</purview/purview> 
 
-[Manage the encryption key - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/manage-encryption-key)
+[Manage the encryption key - Power Platform | Microsoft Learn](/power-platform/admin/manage-encryption-key)
 
-[Connect to and manage Microsoft Dataverse in Microsoft Purview | Microsoft Learn](https://learn.microsoft.com/purview/register-scan-dataverse?tabs=MI)
+[Connect to and manage Microsoft Dataverse in Microsoft Purview | Microsoft Learn](/purview/register-scan-dataverse?tabs=MI)
 
