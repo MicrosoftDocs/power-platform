@@ -460,5 +460,7 @@ Network security groups at the subnet level of the compute resources restrict eg
 ## Related links
 
 [IP firewall in Power Platform environments (preview) - Power Platform | Microsoft Learn](/power-platform/admin/ip-firewall)
+
 [Block cookie replay attacks in Dataverse - Power Platform | Microsoft Learn](/power-platform/admin/block-cookie-replay-attack)
+
 [Overview of using Azure ExpressRoute with Microsoft Power Platform - Power Platform | Microsoft Learn](/power-platform/guidance/expressroute/overview)
