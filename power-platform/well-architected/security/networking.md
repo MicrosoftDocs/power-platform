@@ -184,7 +184,7 @@ Power Platform services are built on Microsoft Azure and use internally many of 
 
 The web front-end cluster applies to any service that displays a web user interface. Clients of the user interface are authenticated using Microsoft Entra ID and tokens are provided for subsequent client connections to the Power Platform back-end services. 
 
-![A diagram of a computer  Description automatically generated](images/networking/image1.png)
+![An architecture diagram of the web front-end cluster](images/networking/image1.png)
 
 When a user accesses the service, the client’s DNS service gets the most appropriate (typically nearest) datacenter from Azure Traffic Manager. Azure Traffic Manager [routing methods](/azure/traffic-manager/traffic-manager-routing-methods) handle all the routing decisions for the traffic. Azure Content Delivery Network is used to deliver static resources to the user’s browser except for in sovereign government deployments. 
 
@@ -198,17 +198,17 @@ Tenant metadata and data are stored within cluster limits. The exception is data
 
 Micro-services running on different machines in the cluster's virtual network also serve back-end functionality. Only the gateway service and API management are accessible from the public internet. 
 
-![A screenshot of a computer  Description automatically generated](images/networking/image2.png)
+![An architecture diagram of the back-end cluster](images/networking/image2.png)
 
 **Data source connections** 
 
 Power Platform services connect to external data sources in various ways, but the general pattern is similar. From a maker’s perspective, building an app or automation, they access data and services by establishing a connection with a connector. Under the covers, Power Apps canvas and model-driven apps connect directly to Dataverse without the need for a separate connector. This allows the Power Apps back-end service to request data directly from Dataverse using a Power Apps resource provider. Power Automate authenticates using an API Hub, but all data interactions after that are also direct to Dataverse. 
 
-![A screenshot of a computer  Description automatically generated](images/networking/image3.png)
+![An architecture diagram of the data source connections](images/networking/image3.png)
 
 For other external data sources Power Platform services use connectors. The external service is accessed through an [Azure API Management (APIM)](/azure/api-management/api-management-key-concepts) connector as illustrated in the following diagram. 
 
-![A diagram of a computer program  Description automatically generated](images/networking/image4.png)
+![An architecture diagram of the back-end cluster with Azure API Management](images/networking/image4.png)
 
 Users authenticate to the Power Platform service first. Then, separately, users authenticate to a data source using the credentials the connector requires. The API Hub credentials service always stores and manages credentials. 
 
@@ -230,7 +230,7 @@ Power Pages is unique from some of the other Power Platform services because it 
 
 You can add an additional layer of protection by configuring the Azure Web Application Firewall to monitor, filter and block malicious requests from a Power Pages website. 
 
-![A diagram of a diagram of a software application  Description automatically generated](images/networking/image5.png)
+![An architecture diagram of the Azure Web Application Firewall and Power Pages](images/networking/image5.png)
 
 Web Application Firewall is powered by Azure Front Door (AFD), and the policy is configured using an AFD profile with prevention mode enabled. In prevention mode, requests matching the rules defined in the managed rule set are blocked. 
 
@@ -266,7 +266,7 @@ If you are using connectors, your environment or firewall must allow access to t
 
 IP firewall is a feature you can enable and configure for Power Platform managed environments. The IP firewall protection works in real-time at the network layer. Requests are evaluated after the authentication request is completed. The IP firewall helps to protect your data by limiting user access to Dataverse from only allowed IP locations.  
 
-![A diagram of a computer security system  Description automatically generated](images/networking/image6.png)
+![A diagram of IP firewall for Power Platform environments](images/networking/image6.png)
 
 You can use the IP firewall feature to help protect data from data exfiltration from unapproved network locations. For example, if the IP firewall was enabled and allowed access only to Dataverse from your office network IP addresses, a user could not access Dataverse to exfiltrate data from other locations. 
 
@@ -288,7 +288,7 @@ Not all detections of a difference in IP address are indicative of an attack. Mo
 
 The on-premises gateway allows Power Platform cloud applications and automations to securely use on-premises resources. With a gateway, you can connect to on-premises data from sources like file system, DB2, Oracle, SAP ERP, SQL Server, SharePoint, and more. The gateway uses [Azure Relay](/azure/azure-relay/relay-what-is-it) technology to securely allow access to on-premises resources. Azure Relay is able to securely expose services that run inside your organization’s network to the public cloud without having to open a port on your firewall. The gateway communicates on the following outbound ports: TCP 443, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports. 
 
-![A diagram of a cloud computing system  Description automatically generated](images/networking/image7.png)
+![A diagram of the on-premises data gateway](images/networking/image7.png)
 
 One gateway can allow multiple users to access multiple data sources. You can restrict access to who can install an on-premises data gateway. This restriction occurs at the tenant level, not the environment level. Gateway roles manage the security of the on-premises data gateway. The following are the three roles: 
 
@@ -300,19 +300,19 @@ One gateway can allow multiple users to access multiple data sources. You can re
 
 For connections created for Power Apps and Power Automate, you can limit the connection types available to those users when you assign the role. For example, you could limit it to only SQL Server. 
 
-![A screenshot of a computer  Description automatically generated](images/networking/image8.png)
+![A diagram of on-premises data sources connected to cloud services](images/networking/image8.png)
 
 For more granular control on what data sources the gateway can access, you can use your standard network controls to limit what the gateway server on-premises can access. 
 
 For business-critical gateways, you can configure them as a cluster for higher availability and performance.   
 
-![A close-up of a sign  Description automatically generated](images/networking/image9.png)
+![A diagram of development and business-critical gateway cluster scenarios](images/networking/image9.png)
 
 You can also use separate clusters to support the lifecycle of the applications or segment them by the different parts of your organization. You could also use this approach to isolate services having a separate cluster to access SharePoint and one to access SQL Server. This approach can effectively handle differing compliance or data security requirements across different data sources. 
 
  
 
-![A diagram of a diagram  Description automatically generated](images/networking/image10.png)
+![An organizational diagram showing gateway clusters for each org unit](images/networking/image10.png)
 
  
 
@@ -332,7 +332,7 @@ For Power BI, you can find a list of supported data services for Power BI datase
 
 [Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview)<sup>3</sup> provides an advanced way to connect your on-premises network to Microsoft cloud services by using private connectivity. A single ExpressRoute connection can be used to access multiple online services, for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure. Using this connectivity, a user can access Power Platform and other Microsoft cloud services without traversing the public internet. ExpressRoute requires significant planning and configuration and involves more cost for the ExpressRoute service and the connectivity provider.  
 
-![A diagram of a computer  Description automatically generated](images/networking/image12.png)
+![A diagram showing Azure ExpresRoute used with Azure and Microsoft cloud services](images/networking/image12.png)
 
 ExpressRoute itself doesn't encrypt or filter traffic natively (with the exception of [ExpressRoute Direct with MACsec enabled](/azure/expressroute/expressroute-about-encryption)); it simply establishes a private, rather than shared, connection directly between the Microsoft and customer datacenters through their connectivity provider. 
 
