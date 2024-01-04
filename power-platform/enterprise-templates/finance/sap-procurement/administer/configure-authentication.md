@@ -33,10 +33,10 @@ The SAP ERP connector supports the following authentication types:
 |--------------|--------------|----------------|
 | [SAP authentication](/connectors/saperp/#sap-authentication)     | Use SAP user name and password to access SAP server.  | Step 4        |
 | [Windows authentication](/connectors/saperp/#windows-authentication)     | Use Windows user name and password to access SAP server. |   Steps 1, 2, 3, 4      |
-| [Entra ID (Azure AD) authentication](/connectors/saperp/#azure-ad-integrated)    | Use Entra ID to access SAP server. | Steps 1, 2, 3, 4     |
+| [Entra ID authentication](/connectors/saperp/#azure-ad-integrated)    | Use Entra ID to access SAP server. | Steps 1, 2, 3, 4     |
 
 > [!NOTE]
-> Specific administrative privileges are required to set up SSO in Azure and SAP. Be sure to obtain the necessary admin privileges for each system before setting up SSO.
+> Specific administrative privileges are required to set up SSO in Entra ID and SAP. Be sure to obtain the necessary admin privileges for each system before setting up SSO.
 More information:
 
 - [Microsoft Entra documentation](/entra/)
@@ -44,7 +44,7 @@ More information:
 
 ## Step 1: Configure Kerberos constrained delegation
 
-[Kerberos constrained delegation (KCD)](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) provides secure user or service access to resources permitted by administrators without multiple requests for credentials. Kerberos constrained delegation needs to be configured for Windows and Entra ID (Azure AD) authentication.
+[Kerberos constrained delegation (KCD)](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) provides secure user or service access to resources permitted by administrators without multiple requests for credentials. Kerberos constrained delegation needs to be configured for Windows and Entra ID authentication.
 
 Run the gateway Windows service as a domain account with Service Principal Names (SPNs) (SetSPN).
 
@@ -88,7 +88,7 @@ To use SSO to access your SAP server, make sure:
 
     The `.ini` file contains configuration information required by CommonCryptoLib to enable SSO in the gateway scenario. Ensure that the path (such as,`c:\sapcryptolib\`) contains both `sapcrypto.ini` and `sapcrypto.dll`. The `.dll` and `.ini` files must exist in the same location.
 
-1. Grant permissions to both the `.ini` and `.dll` files to the _Authenticated Users_ group. Both the gateway service user and the Active Directory (AD) user that the service user impersonates need _read_ and _execute_ permissions for both files.
+1. Grant permissions to both the `.ini` and `.dll` files to the _Authenticated Users_ group. Both the gateway service user and the Active Directory user that the service user impersonates need _read_ and _execute_ permissions for both files.
 
 1. Create a `CCL_PROFILE` system environment variable and set its value to the path `sapcrypto.ini`.
 

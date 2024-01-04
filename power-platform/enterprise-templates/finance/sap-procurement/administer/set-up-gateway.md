@@ -15,7 +15,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/18/2023
+ms.date: 01/04/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -47,8 +47,6 @@ Gateways are set up by [administrators](/power-platform/admin/admin-documentatio
 
 1. Install [SAP Connector for Microsoft .NET 3.1 (NCo3.1)](https://support.sap.com/en/product/connectors/msnet.html) on the machine.
 
-      - Select [Install assemblies to GAC](/dotnet/framework/app-domains/install-assembly-into-gac) in the Optional setup steps window during the installation of NCo3.1.
-
 > [!IMPORTANT]
 >
 > To avoid error messages, make sure you enable network connectivity from the host of the SAP .NET Connector (NCo) library and that the required ports are open on the firewalls and network security groups. Common error messages are:
@@ -58,7 +56,9 @@ Gateways are set up by [administrators](/power-platform/admin/admin-documentatio
 >
 > For more information about SAP services and ports, review [TCP/IP Ports of All SAP Products](https://help.sap.com/docs/Security/575a9f0e56f34c6e8138439eefc32b16/616a3c0b1cc748238de9c0341b15c63c.html).
 
-The installed gateway runs as the default machine-local service account, _NT Service\PBIEgwService_. Update the service account to a domain account if setting up Windows or Azure single sign-on (SSO). Additional information is provided in [Step 1](configure-authentication.md#step-1-configure-kerberos-constrained-delegation) in the _Configure authentication_ article.
+> [!NOTE]
+>
+> The installed gateway runs as the default machine-local service account, _NT Service\PBIEgwService_. Update the service account to a domain account if setting up Windows or Entra ID single sign-on (SSO). Additional information is provided in [Step 1](configure-authentication.md#step-1-configure-kerberos-constrained-delegation) in the _Configure authentication_ article.
 
 ## Gateway cluster configuration
 
@@ -66,7 +66,7 @@ On-premises data gateway clusters can be created to avoid single points of failu
 
 The gateway uses the SAP NCo connector and it maintains an internal state of the connection to SAP. For example, if you have _Step A_ in a flow do something in SAP and _Step A_ uses _Gateway 1_ to make that call, then _Gateway 1_ knows about the changes you are trying to make.
 
-Because the connector maintains an internal state of the connection to SAP, you want all of your calls to be forced to the primary gateway in the cluster. A call is only directed to the second gateway when the primary gateway call fails. To support this scenario, **ensure that random load balancing is turned off**.
+Because the connector maintains an internal state of the connection to SAP, you want all your calls to be forced to the primary gateway in the cluster. A call is only directed to the second gateway when the primary gateway call fails. To support this scenario, **ensure that random load balancing is turned off**.
 
 ### Turn off random load balancing
 
