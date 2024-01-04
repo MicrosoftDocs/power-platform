@@ -88,7 +88,7 @@ A copilot can include two types of topics, _system_ and _custom_. Every new copi
 
 1. Select **Details** to open the **Topic details** pane.
 
-   :::image type="content" source="media/authoring-create-edit-topics/open-details-pane.png" alt-text="Screenshot of the topic authoring canvas with Details highlighted.":::
+   :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="Screenshot of the topic authoring canvas with Details highlighted.":::
 
 1. Add your copilot topic details:
 
@@ -122,7 +122,7 @@ When you create a topic, a **Trigger** node is inserted for you on the **Topics 
    | [Variable management](authoring-variables.md#set-a-variable) | Set a value or parse a new or existing variable. |
    | [Topic management](authoring-topic-management.md) | Redirect, transfer, or end the topic or conversation. |
    | [Call an action](advanced-flow-create.md) | Call a flow like Power Automate or Excel Online. |
-   | Advanced| [Generative answers](nlu-boost-conversations.md), [HTTP requests](authoring-http-node), [events](authoring-send-event-activities.md), and more. |
+   | Advanced| [Generative answers](nlu-boost-conversations.md), [HTTP requests](authoring-http-node.md), [events](authoring-send-event-activities.md), and more. |
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of node types to insert after a Trigger node.":::
 
