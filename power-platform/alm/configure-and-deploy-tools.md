@@ -1,11 +1,9 @@
 ---
 title: "Configuration Migration tool | Microsoft Docs"
 description: "Learn about transporting configuration data and test data from one environment to another."
-keywords: 
-author: mikkelsen2000
+author: marcelbf
+ms.author: marcelbf
 ms.subservice: alm
-ms.author: pemikkel
-ms.custom: ""
 ms.date: 06/09/2020
 ms.reviewer: "pehecke"
 

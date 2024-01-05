@@ -107,7 +107,7 @@ See [Responding to Data Subject Rights (DSR) requests to export Power Apps custo
 ## Delete
 The "right to erasure" by the removal of personal data from an organization's customer data is a key privacy protection. Removing personal data includes system-generated logs but not audit-log information.
 
-Power Apps allows users to build line-of-business applications that are a critical part of your organization's day-to-day operations. When a user leaves your organization, you will need to manually review and determine whether to delete certain data and resources that they have created. Other customer data will be automatically deleted whenever the user's account is deleted from Microsoft Entra.
+Power Apps allows users to build line-of-business applications that are a critical part of your organization's day-to-day operations. When a user leaves your organization, you will need to manually review and determine whether to delete certain data and resources that they have created. Other customer data will be automatically deleted whenever the user's account is deleted from Microsoft Entra ID.
 
 See [Responding to Data Subject Rights (DSR) requests to delete Power Apps customer data](powerapps-privacy-delete-dsr.md) for details.
 

@@ -31,7 +31,7 @@ In addition to the features and capabilities of Power Apps, organizations that u
 - Access to your organization's customer content is restricted to screened Microsoft personnel.
 - Power Apps US Government complies with certifications and accreditations that are required for US public sector customers.
 
-Beginning September, 2019, eligible customers may now choose to deploy Power Apps US Government to the "GCC High" environment, which enables single sign-on and seamless integration with Microsoft 365 GCC High deployments. Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft 365 GCC High to use the Power Apps US Government GCC High deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages Public Azure AD. For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
+Beginning September, 2019, eligible customers may now choose to deploy Power Apps US Government to the "GCC High" environment, which enables single sign-on and seamless integration with Microsoft 365 GCC High deployments. Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft 365 GCC High to use the Power Apps US Government GCC High deployment option, which enables and requires the customer to leverage Microsoft Entra Government for customer identities, in contrast to GCC which leverages Public Microsoft Entra ID. For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
 
 Beginning April, 2021, eligible customers may now choose to deploy Power Apps US Government to the "DoD" environment, which enables single sign-on and seamless integration with Microsoft 365 DoD deployments. Microsoft has designed the platform and our operational procedures in accordance with the DISA SRG IL5 compliance framework.  A Provisional Authority to Operate has been granted by DISA.
 
@@ -100,7 +100,7 @@ Power Apps US Government is designed to support the Federal Risk and Authorizati
 
 Power Apps US Government has features designed to support customer's CJIS Policy requirements for law enforcement agencies. Visit the Power Apps US Government products page in Trust Center for more detailed information related to certifications and accreditations.
 
-Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 and IL5 compliance frameworks and have received requisite DISA Provisional Authorities to Operate. We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft 365 GCC High to use the Power Apps US Government GCC High deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages Public Azure AD. For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations. Likewise, we expect our US Department of Defense customer base currently leveraging Microsoft 365 DoD to use the Power Apps US Government DoD deployment option.  
+Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 and IL5 compliance frameworks and have received requisite DISA Provisional Authorities to Operate. We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft 365 GCC High to use the Power Apps US Government GCC High deployment option, which enables and requires the customer to leverage Microsoft Entra Government for customer identities, in contrast to GCC which leverages Public Microsoft Entra ID. For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations. Likewise, we expect our US Department of Defense customer base currently leveraging Microsoft 365 DoD to use the Power Apps US Government DoD deployment option.  
 
 ## Power Apps US Government and other Microsoft services
 
@@ -118,18 +118,18 @@ We recommend that you review the privacy and compliance statements provided by t
 
 ## Power Apps US Government and Azure services
 
-The Power Apps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the Power Apps US Government accreditation boundary, but takes a reliance on a customer's [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
+The Power Apps US Government services are deployed to Microsoft Azure Government. Microsoft Entra is not part of the Power Apps US Government accreditation boundary, but takes a reliance on a customer's [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
 When a user of an organization employing AD FS attempts to access Power Apps US Government, the user is redirected to a login page hosted on the organization's AD FS server.
 The user provides their credentials to their organization's AD FS server. The organization's AD FS server attempts to authenticate the credentials using the organization's Active Directory infrastructure.
 
 If authentication is successful, the organization's AD FS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user's identity and group membership.
 
-The customer's AD FS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Azure AD via encrypted Transport Layer Security (TLS). Azure AD validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
+The customer's AD FS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Microsoft Entra via encrypted Transport Layer Security (TLS). Microsoft Entra ID validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
 
-The user's identity and group membership information remain encrypted in Azure AD. In other words, only limited user-identifiable information is stored in Azure AD.
+The user's identity and group membership information remain encrypted in Microsoft Entra ID. In other words, only limited user-identifiable information is stored in Microsoft Entra ID.
 
-You can find full details of the Azure AD security architecture and control implementation in the Azure SSP.  End-users do not interact directly with Azure AD.
+You can find full details of the Microsoft Entra security architecture and control implementation in the Azure SSP.  End-users do not interact directly with Microsoft Entra ID.
 
 ## Power Apps US Government service URLs
 

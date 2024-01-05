@@ -53,7 +53,7 @@
               items:
                 - name: Establish DLP policies
                   href: adoption/dlp-strategy.md
-                - name: Set up Azure AD Conditional Access
+                - name: Set up Microsoft Entra Conditional Access
                   href: adoption/conditional-access.md
                 - name: Enable cross-tenant isolation
                   href: /power-platform/admin/cross-tenant-restrictions

@@ -2,8 +2,8 @@
 title: App page of ISV Studio | Microsoft Docs
 description: Learn about the App page capabilities provided by the ISV Studio portal.
 ms.date: 04/03/2023
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 ms.reviewer: jdaly
 suite: powerapps
 ms.topic: article
