@@ -47,7 +47,7 @@ Make sure you have the System Administrator permission to update the setting.
   
 For information about how to implement bulk delete in code, see [Delete data in bulk](/powerapps/developer/common-data-service/delete-data-bulk). 
 
-To restore data after a bulk deletion, see [Restore backup environments](/power-platform/admin/backup-restore-environments.md).
+To restore data after a bulk deletion, see [Restore backup environments](backup-restore-environments.md).
   
 ### See also  
  [Manage your data](add-remove-sample-data.md)   
