@@ -119,7 +119,7 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [Approvals](/connectors/approvals/)
 - [Azure Resource Manager](/connectors/arm/)
 - HTTP
-- [HTTP with Azure AD](/connectors/webcontents/)
+- [HTTP with Microsoft Entra ID](/connectors/webcontents/)
 - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
 - [Microsoft Dataverse (legacy)](/connectors/commondataservice/)
 - [Microsoft Teams](/connectors/teams/)
@@ -136,16 +136,16 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [SharePoint](/connectors/sharepointonline/)
 
 > [!NOTE]
-> The CoE Starter Kit collects information about who owns a resource, such as an app or a flow. If the resource is owned by an interactive user, the [Office 365 Users](/connectors/office365users/) connector is used to get those details. If the resource is owned by a service principal (application user), the [HTTP with Azure AD](/connectors/webcontents/) connector is used to make a call to [Microsoft Graph](https://developer.microsoft.com/graph) to get the name of the application user to correctly mark ownership of resources and avoid resources being marked as orphaned (without an owner).
+> The CoE Starter Kit collects information about who owns a resource, such as an app or a flow. If the resource is owned by an interactive user, the [Office 365 Users](/connectors/office365users/) connector is used to get those details. If the resource is owned by a service principal (application user), the [HTTP with Microsoft Entra ID](/connectors/webcontents/) connector is used to make a call to [Microsoft Graph](https://developer.microsoft.com/graph) to get the name of the application user to correctly mark ownership of resources and avoid resources being marked as orphaned (without an owner).
 
-- The HTTP and HTTP with Azure AD connectors connect to [https://graph.microsoft.com](https://developer.microsoft.com/graph) for commercial tenants; if your tenant is in GCC, GCC High or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints). <br>
+- The HTTP and HTTP with Microsoft Entra connectors connect to [https://graph.microsoft.com](https://developer.microsoft.com/graph) for commercial tenants; if your tenant is in GCC, GCC High or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints). <br>
 You can't set up [DLP endpoint filtering](../../admin/connector-endpoint-filtering.md) for these connectors, as dynamic endpoint evaluation isn't supported by DLP Policies.
 
 - If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business group. Configure the [https://manage.office.com/](/office/office-365-management-api/office-365-management-apis-overview) endpoint in the business group of your tenant-level policy. Learn more: [Configure custom connector endpoints in tenant-level policies](../../admin/dlp-connector-classification.md#tenant-level-dlp-policies).
 
 - Check that no other DLP policies apply to this environment. Learn more: [Combined effect of multiple DLP policies](../../admin/dlp-combined-effect-multiple-policies.md)
 
-- If you're using the [ALM Accelerator for Power Platform](almacceleratorpowerplatform-components.md) components, the environment must have a DLP policy that allows [Dataverse (legacy)](/connectors/commondataservice/), [Power Apps for Makers](/connectors/powerappsforappmakers/), [HTTP with Azure AD](/connectors/webcontents/), and the ALM Accelerator Custom DevOps connector to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
+- If you're using the [ALM Accelerator for Power Platform](almacceleratorpowerplatform-components.md) components, the environment must have a DLP policy that allows [Dataverse (legacy)](/connectors/commondataservice/), [Power Apps for Makers](/connectors/powerappsforappmakers/), [HTTP with Microsoft Entra ID](/connectors/webcontents/), and the ALM Accelerator Custom DevOps connector to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
 
 ## Download the solution
 

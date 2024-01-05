@@ -67,7 +67,7 @@ Example Power Fx formula for `Items` (uses the [Office 365 Users](/connectors/of
 
 ### Generate `Items` collection with photos using the Office 365 Users connector
 
-A list of users can come from any data source, but the image must be provided to the component. If your data source doesn't have images for the users, you can use the AddColumns() Power Fx function to add the correct attributes to the list and retrieve the user's image, from a list of user Ids or user principal names that map to an active user in your Azure Active Directory.
+A list of users can come from any data source, but the image must be provided to the component. If your data source doesn't have images for the users, you can use the AddColumns() Power Fx function to add the correct attributes to the list and retrieve the user's image, from a list of user Ids or user principal names that map to an active user in your Microsoft Entra.
 
 Generate a collection called `UserPersonas` using [Office 365 Users connector](/connectors/office365users/), by referring to the below sample code, then pass the collection into the `Items` property of the control.
 

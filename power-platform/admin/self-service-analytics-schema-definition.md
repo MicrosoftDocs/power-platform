@@ -37,7 +37,7 @@ The data export file includes:
 
 - Usage data comprising data starting from the time that the export starts.
 
-After the first time you generate a data export, Power Automate generates incremental daily updates. Each daily update includes details about all new and existing apps, including connector information. The data export contains the Azure Active Directory (Azure AD) *principal object ID (userid)*. Optionally, you can further use Azure AD to retrieve actual usernames and business units, such as marketing, sales, or finance.
+After the first time you generate a data export, Power Automate generates incremental daily updates. Each daily update includes details about all new and existing apps, including connector information. The data export contains the Microsoft Entra *principal object ID (userid)*. Optionally, you can further use Microsoft Entra to retrieve actual usernames and business units, such as marketing, sales, or finance.
 
 ## Power Apps folder structure
 The main root folder for Power Apps has the following folder structure:
@@ -91,14 +91,14 @@ The following tables detail the schema definitions of the data. Metadata are con
 | DocumentUri             | Longtext           | App information URI                         |
 | IconUri                 | Longtext           | App icon URI                                  |
 | Owner                   | Longtext           | Name of the app owner                         |
-| createdPrincipalId      | Guid               | Azure AD object ID of the app creator principal        |
+| createdPrincipalId      | Guid               | Microsoft Entra object ID of the app creator principal        |
 | CreatedTime             | Datetime           | Date the app was created                          |
-| lastModifiedPrincipalId | Guid               | Azure AD object ID of last modified user           |
+| lastModifiedPrincipalId | Guid               | Microsoft Entra object ID of last modified user           |
 | lastModifiedTime        | Datetime           | Date the app was last updated          |
-| lastenabledprincipalId   | Guid               | Azure AD object ID of last published user          |
+| lastenabledprincipalId   | Guid               | Microsoft Entra object ID of last published user          |
 | lastEnabledTime         | Datetime           | Date the app was last published        |
 | DeletedTime             | Datetime           | Date the app was last deleted                 |
-| DeletedprincipalId       | Longtext           | Azure AD object ID of the user who deleted the app          |
+| DeletedprincipalId       | Longtext           | Microsoft Entra object ID of the user who deleted the app          |
 | sharedUsers             | Int                | Number of users the app is shared with        |
 | sharedGroups            | Int                | Number of groups the app is shared with       |
 | Solution                | Longtext           | Solution ID the app belongs to             |
@@ -128,7 +128,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 | EnvironmentId      | Longtext           | Environment ID                                             |
 | Displayname        | Longtext           | URI of the connection                                      |
 | isCustomApi        | Longtext           | Yes \| No                                                  |
-| createdPrincipalId | Guid               | Azure AD object ID of the app creator principal                     |
+| createdPrincipalId | Guid               | Microsoft Entra object ID of the app creator principal                     |
 | CreatedTime        | Datetime           | Date the app was created                                       |
 | Swaggerurl         | Longtext           | Swagger URL for custom API                                 |
 | tenantId           | Guid               | Customer tenant ID                                          |
@@ -149,12 +149,12 @@ The following tables detail the schema definitions of the data. Metadata are con
 | isDefault               | Longtext           | Boolean value to indicate whether this is the default environment  |
 | CdsInstanceURL          | Longtext           | Environment URI                                          |
 | CdsInstanceId           | Guid               | Environment identifier                                      |
-| createdPrincipalId      | Guid               | Azure AD object ID of the app creator principal                       |
+| createdPrincipalId      | Guid               | Microsoft Entra object ID of the app creator principal                       |
 | CreatedTime             | Datetime           | Date the app was created                                         |
-| lastModifiedPrincipalId | Guid               | Azure AD object ID of the user who last modified the app          |
+| lastModifiedPrincipalId | Guid               | Microsoft Entra object ID of the user who last modified the app          |
 | lastModifiedTime        | Datetime           | Date the app was last updated                         |
 | DeletedTime             | Datetime           | Date the app was last deleted                                |
-| DeletedprincipalId      | Longtext           | Azure AD object ID of the user who deleted the app                         |
+| DeletedprincipalId      | Longtext           | Microsoft Entra object ID of the user who deleted the app                         |
 
 ### Usage
 
@@ -163,7 +163,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 | AppId              | Guid              | Unique app ID (can be used to join tables)                     |
 | environmentId      | Guid              | Environment ID                                      |
 | tenantId            | Guid               | Customer tenant ID                                            |
-| ObjectID           | Guid              | Azure AD user object ID                        |
+| ObjectID           | Guid              | Microsoft Entra user object ID                        |
 | SessionId          | Guid              | Session ID                                               |
 | timeaccessed       | Datetime           | Time the user opened or accessed the app                         |
 | Country            | Longtext           | The country from which the app is opened; is filter            |
@@ -187,7 +187,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 |resourceVersion	              |LongText	          |Flow version |
 |lifecycleState	                |LongText	          |Draft, Published |
 |events_created_timestamp	      |Datetime 	        |Date the flow was created |
-|events_created_principalId	    |Guid	              |Azure AD object ID of the flow creator principal |
+|events_created_principalId	    |Guid	              |Microsoft Entra object ID of the flow creator principal |
 |events_lastModified_timestamp 	|Datetime 	        |Date the flow was last updated |
 |sharedUsers	                  |int	              |Number of users the flow is shared with |
 |sharedGroups	                  |int	              |Number of groups the flow is shared with |
@@ -228,4 +228,3 @@ The following tables detail the schema definitions of the data. Metadata are con
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

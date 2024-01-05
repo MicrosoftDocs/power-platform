@@ -57,7 +57,7 @@ The following table summarizes accessing and exporting system-generated logs for
 >
 
 ## Deleting system-generated logs for Managed Tenants
-To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions on how to permanently delete a user, see the **Deleting a user** section in the *Azure Data Subject Request privacy documentation* that can be found on the [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR). It's important to note that permanently deleting a user account is irreversible once initiated.
+To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Microsoft Entra account. For instructions on how to permanently delete a user, see the **Deleting a user** section in the *Azure Data Subject Request privacy documentation* that can be found on the [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR). It's important to note that permanently deleting a user account is irreversible once initiated.
 
 Permanently deleting a user account removes the user's data from system-generated logs for Power Apps, Power Automate, and Dataverse services within 30 days.
 

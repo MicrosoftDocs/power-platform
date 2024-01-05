@@ -5,11 +5,13 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/16/2021
+ms.date: 12/05/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- royshea 
 ---
 
 # Responding to Data Subject Rights (DSR) requests for Power Apps customer data
@@ -44,7 +46,7 @@ Resources containing personal data |    Purpose
 --- | ---
 Environment |    An environment is a space to store, manage, and share your organization's business data, apps, and flows. [Learn more](./environments-overview.md)
 Environment permissions    | Users are assigned to environments roles to be granted maker and administrative privileges within an environment. [Learn more](./environments-overview.md)
-Canvas app    | Cross-platform business apps that can be built from a power of a blank canvas and connected to over 200 data sources. [Learn more](/powerapps/maker/)
+Canvas app / Custom page   | Cross-platform business apps that can be built from a power of a blank canvas and connected to over 200 data sources. [Learn more](/powerapps/maker/)
 Canvas-app permissions    | Canvas apps can be shared with users within an organization. [Learn more](/powerapps/maker/canvas-apps/share-app)
 Connection    | Used by connectors and allow for connectivity to APIs, systems, databases, etc. [Learn more](/powerapps/maker/canvas-apps/add-manage-connections)
 Connection permissions    | Certain types of connections can be shared with users within an organization. [Learn more](/powerapps/maker/canvas-apps/share-app-resources)
@@ -84,7 +86,7 @@ For guidance on how to discover personal data stored by Dataverse, see [Respondi
 ## Rectify
 If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
 
-You can use Azure Active Directory to manage the identities (personal data) of your users within Power Apps. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
+You can use Microsoft Entra to manage the identities (personal data) of your users within Power Apps. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
 
 ## Restrict
 Data subjects may request that you restrict processing of their personal data.  We provide both pre-existing application programming interfaces (APIs) and user interfaces (UIs).  These experiences provide the enterprise customer's Power Platform admin the capability to manage such DSRs through a combination of data export and data deletion. A customer may request:
@@ -105,7 +107,7 @@ See [Responding to Data Subject Rights (DSR) requests to export Power Apps custo
 ## Delete
 The "right to erasure" by the removal of personal data from an organization's customer data is a key privacy protection. Removing personal data includes system-generated logs but not audit-log information.
 
-Power Apps allows users to build line-of-business applications that are a critical part of your organization's day-to-day operations. When a user leaves your organization, you will need to manually review and determine whether to delete certain data and resources that they have created. Other customer data will be automatically deleted whenever the user's account is deleted from Azure Active Directory.
+Power Apps allows users to build line-of-business applications that are a critical part of your organization's day-to-day operations. When a user leaves your organization, you will need to manually review and determine whether to delete certain data and resources that they have created. Other customer data will be automatically deleted whenever the user's account is deleted from Microsoft Entra ID.
 
 See [Responding to Data Subject Rights (DSR) requests to delete Power Apps customer data](powerapps-privacy-delete-dsr.md) for details.
 

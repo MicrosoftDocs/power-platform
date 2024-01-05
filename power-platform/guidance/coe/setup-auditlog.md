@@ -39,19 +39,19 @@ The Center of Excellence (CoE) Starter Kit works without this flow, but the usag
 
 1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
-1. A Global Admin is required to configure the Azure Active Directory (Azure AD) app registration.
+1. A Global Admin is required to configure the Microsoft Entra app registration.
 
-The Office 365 Management APIs use Azure AD to provide authentication services that you can use to grant rights for your application to access them.
+The Office 365 Management APIs use Microsoft Entra ID to provide authentication services that you can use to grant rights for your application to access them.
 
-### Create an Azure AD app registration for the Office 365 Management API
+### Create a Microsoft Entra app registration for the Office 365 Management API
 
-Using these steps, you set up an Azure AD app registration that is used in a custom connector and Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)
+Using these steps, you set up a Microsoft Entra app registration that is used in a custom connector and Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
-1. Go to **Azure Active Directory** > **App registrations**.
+1. Go to **Microsoft Entra ID** > **App registrations**.
 
-   ![Azure AD app registration.](media/coe33.png "Azure AD app registration")
+   ![Microsoft Entra app registration.](media/coe33.png "Microsoft Entra app registration")
 
 1. Select **+ New Registration**.
 
@@ -109,9 +109,9 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
    ![Edit OAuth configuration.](media/coe42.png "Edit OAuth configuration")
 
-1. Change the **Identity Provider** to Azure Active Directory.
+1. Change the **Identity Provider** to Microsoft Entra ID.
 
-    :::image type="content" source="media/auditlogcc.png" alt-text="Change the identity provider to Azure Active Directory.":::
+    :::image type="content" source="media/auditlogcc.png" alt-text="Change the identity provider to Microsoft Entra ID.":::
 
 1. Paste the application (client) ID you copied from the app registration into **Client Id**.
 
@@ -130,7 +130,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 > [!NOTE]
 > If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy.
 
-### Update Azure AD app registration with the redirect URL
+### Update Microsoft Entra app registration with the redirect URL
 
 1. Go to the Azure portal and your app registrations.
 
@@ -157,7 +157,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription.](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the **directory (tenant) ID**—copied earlier from the **App Registration** overview page in Azure AD—into the **Tenant** field.
+1. Paste the **directory (tenant) ID**—copied earlier from the **App Registration** overview page in Microsoft Entra ID—into the **Tenant** field.
 1. Paste the **directory (tenant) ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
@@ -171,13 +171,13 @@ You should see a (200) status returned, which means the query was successful.
 > 
 > If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
-> - Validate that the identity provider on the **Security** tab is set to Azure Active Directory.
+> - Validate that the identity provider on the **Security** tab is set to Microsoft Entra ID.
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check by seeing if you can search in the [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
-> - Have you pasted in the correct tenant ID from your Azure AD app registration?
+> - Have you pasted in the correct tenant ID from your Microsoft Entra app registration?
 > - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
-> - Validate that you correctly followed the steps in [Azure AD app registration](#create-an-azure-ad-app-registration-for-the-office-365-management-api).
+> - Validate that you correctly followed the steps in [Microsoft Entra app registration](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api).
 > - Validate that you correctly updated the security settings of the custom connector, as described in [step 6 of the custom connector setup](#set-up-the-custom-connector) procedure earlier in this article.
 >
 > If you are still seeing failures, your connection may be in a bad state. Learn more: [Step-by-step instructions to repair Audit Log connection](https://github.com/microsoft/coe-starter-kit/issues/4961)

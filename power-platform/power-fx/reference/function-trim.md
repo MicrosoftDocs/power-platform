@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 09/09/2016
+ms.date: 12/18/2023
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -19,7 +19,7 @@ contributors:
 
 # Trim and TrimEnds functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Removes extra spaces from a string of text.
 
