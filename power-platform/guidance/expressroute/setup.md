@@ -129,7 +129,7 @@ phones. Where this is a concern, you can choose from a number of approaches:
 -   Where federated authentication is used, ensure that access to Active Directory Federation Services (AD FS) is only
     possible after a VPN connection to the corporate network is established.
 
--   Azure Active Directory conditional access and Intune can be used to control which
+-   Microsoft Entra conditional access and Intune can be used to control which
     devices and locations are allowed access, and to control the device
     configuration, such as proxies, VPN, and routing.
 

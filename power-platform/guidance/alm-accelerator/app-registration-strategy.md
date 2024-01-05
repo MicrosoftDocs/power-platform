@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # App registration considerations
 
-The ALM Accelerator for Power Platform relies on Azure Active Directory (Azure AD) app registrations to communicate with required services. This article discusses considerations you should keep in mind and approaches you can take when you design an app registration strategy for the ALM Accelerator.
+The ALM Accelerator for Power Platform relies on Microsoft Entra app registrations to communicate with required services. This article discusses considerations you should keep in mind and approaches you can take when you design an app registration strategy for the ALM Accelerator.
 
 ## Required API permissions
 
@@ -45,7 +45,7 @@ From a maintenance perspective, consider a strategy that requires you to do the 
 
 ## Azure app registration strategies
 
-Strategies for registering apps with Azure AD for use by the ALM Accelerator range from the very simple to the very granular.
+Strategies for registering apps with Microsoft Entra ID use by the ALM Accelerator range from the very simple to the very granular.
 
 ### One app registration for everything
 

@@ -30,9 +30,9 @@ Integrating continuous access evaluation in your Power Platform solutions offers
 
 - **Make Power Platform services more resilient**: With continuous access evaluation, clients get long-lived tokens. Fewer token refreshes improve the overall resiliency of the services.
 
-- **Prevent unauthorized access to Power Platform services**: When a user account password is compromised, the Azure AD administrator can reset it or disable the account in near real time to prevent unauthorized access to Power Platform services.
+- **Prevent unauthorized access to Power Platform services**: When a user account password is compromised, the Microsoft Entra administrator can reset it or disable the account in near real time to prevent unauthorized access to Power Platform services.
 
-- **Remove user access in near real time**: Organizations have an obligation to instantly remove a user's access because of security threats, termination of employment, policy violations, or legal requirements. With continuous access evaluation, the Azure AD administrator can instantly disable user accounts and revoke access to organization resources in near real time.
+- **Remove user access in near real time**: Organizations have an obligation to instantly remove a user's access because of security threats, termination of employment, policy violations, or legal requirements. With continuous access evaluation, the Microsoft Entra administrator can instantly disable user accounts and revoke access to organization resources in near real time.
 
 ## Limitations
 
@@ -55,7 +55,7 @@ Continuous access evaluation supports two types of events:
 
 ## Supported Power Platform clients
 
-Power Platform clients that are enabled for continuous access evaluation support *claim challenges*. A claim challenge is a redirect of a user's session to Azure AD for reauthentication when a continuous access evaluation-enabled service like Dataverse rejects a cached user token. Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation support continuous access evaluation claims, with more clients planned to onboard in the future.
+Power Platform clients that are enabled for continuous access evaluation support *claim challenges*. A claim challenge is a redirect of a user's session to Microsoft Entra ID reauthentication when a continuous access evaluation-enabled service like Dataverse rejects a cached user token. Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation support continuous access evaluation claims, with more clients planned to onboard in the future.
 
 For clients that don't support continuous access evaluation, the access token lifetime remains the same as configured or set to the default value.
 
