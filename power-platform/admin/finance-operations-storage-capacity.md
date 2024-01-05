@@ -1,5 +1,5 @@
 ---
-title: Finance and operations storage capacity
+title: Finance and operations storage capacity (preview)
 description: Learn to use the finance and operations storage capacity report to understand your storage usage vs. your entitlement and get answers to frequently asked questions.
 author: sericks007
 ms.component: pa-admin
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Finance and operations storage capacity
+# Finance and operations storage capacity (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
