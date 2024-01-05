@@ -74,7 +74,7 @@
               href: wp-license-management.md
             - name: View license consumption for Power Apps and Power Automate (preview)
               href: view-license-consumption-issues.md
-            - name: View license consumption for finance and operations apps (preview)
+            - name: View license consumption for finance and operations apps
               href: view-license-consumption-finops-apps.md
             - name: Manage licenses in your org
               href: signup-question-and-answer.md
@@ -84,6 +84,8 @@
               items:
                 - name: Purchase Power Apps
                   href: signup-for-powerapps-admin.md
+                - name: Request a Power Apps license for yourself
+                  href: /power-apps/user/request-license
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
                 - name: Auto-claim policies for Power Apps licenses
@@ -656,7 +658,7 @@
               href: capacity-storage.md
             - name: Legacy capacity storage model
               href: legacy-capacity-storage.md
-            - name: Finance and operations storage capacity
+            - name: Finance and operations storage capacity (preview)
               href: finance-operations-storage-capacity.md
             - name: View self-service capacity
               href: view-self-service-capacity.md
@@ -666,7 +668,7 @@
                   href: manage-principalobjectaccess-storage.md
                 - name: Recover storage space
                   href: free-storage-space.md
-                - name: Clean up AsyncOperationBase and WorkflowLogBase tables
+                - name: Clean up System Job and Process Log tables
                   href: cleanup-asyncoperationbase-table.md
             - name: Add storage capacity
               href: add-storage.md
@@ -692,6 +694,8 @@
               href: logging-powerapps.md
             - name: Power Automate activity logging
               href: logging-power-automate.md
+            - name: Power Pages activity logging (preview)
+              href: logging-power-pages.md
             - name: Power Platform connector activity logging (preview)
               href: connector-events-power-platform.md
             - name: Data loss prevention activity logging

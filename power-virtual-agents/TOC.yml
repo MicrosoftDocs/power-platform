@@ -46,7 +46,7 @@
       href: nlu-generative-answers-sharepoint-onedrive.md
     - name: Use a custom data source
       href: nlu-generative-answers-custom-data.md
-    - name: Create (and edit) with Copilot
+    - name: Create and edit with Copilot
       href: nlu-authoring.md
     - name: AI features for Teams and Classic bots
       href: advanced-ai-features.md
