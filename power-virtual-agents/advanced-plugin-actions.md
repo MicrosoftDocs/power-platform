@@ -1,5 +1,6 @@
 ---
 title: Use plugin actions in Microsoft Copilot Studio (preview) copilot.
+description: Extend your copilot with plugin actions to automatically respond to users with generative answers.
 ms.date: 12/04/2023
 ms.service: power-virtual-agents
 ms.topic: article
