@@ -1,6 +1,6 @@
 ---
 title: "Using Topic Triggers"
-description: "Use topic triggers to control when a topic is executed, such as when a message or event is received by the copilot."
+description: "Use topic triggers to control when a topic is executed, like when the copilot receives a message or event."
 keywords: "PVA"
 ms.date: 1/4/2024
 ms.service: power-virtual-agents
@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-By default, topics use the **Phrases** trigger, which activates when one or more of their trigger phrases match closely with an incoming message from a user. There are other trigger types are available that determine when a topic should be executed.
+By default, topics use the **Phrases** trigger, which activates when one or more of their trigger phrases match closely with an incoming message from a user. There are other trigger types available that determine when a topic should be executed.
 
 ## Prerequisites
 
@@ -38,13 +38,13 @@ Triggers allow you to intercept and handle activities of different types. The fo
 
 | Type     | Description |
 | -------- | ----------- |
-| Phrases  | When one or more of the trigger phrases match with the incoming message from a user. |
-| Activity received | When an Activity of any type is received. |
-| Message received  | When an Activity of type _**message**_ is received. The most common type of Activity. Received when a user types or says something to the copilot. |
-| Event received | When an Activity of type _**event**_ is received. |
-| Conversation update received | When an Activity of type _**conversationUpdate**_ is received. For example, Teams sends an activity of this type when a user joins a conversation. |
-| Invoke received | When an Activity of type _**invoke**_ is received. Most commonly received from the Teams channel. For example, when the user interacts with a Message or Search extension in the Teams app. |
-| Inactivity | When a user has not interacted with the copilot for a period of time. The time period can be configured. |
+| Phrases  | When one or more of the trigger phrases match with the incoming message from a user |
+| Activity received | When an Activity of any type is received |
+| Message received  | When an Activity of type _**message**_ is received<br>The most common type of Activity.<br>Received when a user types or says something to the copilot. |
+| Event received | When an Activity of type _**event**_ is received |
+| Conversation update received | When an Activity of type _**conversationUpdate**_ is received<br>For example, Teams sends an activity of this type when a user joins a conversation. |
+| Invoke received | When an Activity of type _**invoke**_ is received<br>Most commonly received from the Teams channel. For example, when the user interacts with a Message or Search extension in the Teams app. |
+| Inactivity | When a user hasn't interacted with the copilot over time. The time period can be configured. |
 
 ## Changing the trigger for a topic
 
@@ -84,7 +84,7 @@ Order of execution:
 1. Message / Event / Conversation Update / Invoke Received
 1. Phrases
 
-If there is more than one qualifying trigger of the same type, the triggers get executed in the order of creation (oldest first).
+If there's more than one qualifying trigger of the same type, the triggers get executed in the order of creation (oldest first).
 
 You can use the **Priority** property on a node's **Properties** pane to explicitly determine the order of execution.
 
