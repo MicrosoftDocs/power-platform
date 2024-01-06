@@ -1,10 +1,10 @@
 ---
-title: Finance and operations storage capacity
+title: Finance and operations storage capacity (preview)
 description: Learn to use the finance and operations storage capacity report to understand your storage usage vs. your entitlement and get answers to frequently asked questions.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 01/05/2024
 ms.subservice: admin
 ms.author: sericks 
 ms.reviewer: 
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Finance and operations storage capacity
+# Finance and operations storage capacity (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -64,6 +64,14 @@ The **Finance and Operations** page provides an environment-level view of where 
 To view the **Finance and Operations** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select **Resources** > **Capacity** > **Finance and Operations** tab.
 
 :::image type="content" source="media/finance-operations-storage-finops-tab.png" alt-text="Screenshot of the Finance and Operations page with capacity data by environment.":::
+
+### Table-level, drill-down view into storage consumption details for finance and operations environments
+Select the finance and operations database usage entry on the **Finance and operations** tab to to see a table-level, drill-down view of how each table in your finance and operations environment is using capacity. You have the ability to obtain a near real-time snapshot of the table-level storage consumption. Additionally, you can track the time series trend, gaining insights into the evolution of storage across finance and operation tables. You also have the option to download the details in csv format for streamlined, data analysis and reporting.
+
+:::image type="content" source="media/finance-operations-storage-capacity/fno-database-usage.png " alt-text="Screenshot of the tab showing storage consumption for each finance and operations environment.":::
+
+:::image type="content" source="media/finance-operations-storage-capacity/fno-table-level-usage.png " alt-text="Screenshot of the table-level storage consumption for each finance and operations table.":::
+
 
 ## Address a storage capacity deficit
 
