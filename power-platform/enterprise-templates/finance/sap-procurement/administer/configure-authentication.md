@@ -50,7 +50,7 @@ Run the gateway Windows service as a domain account with Service Principal Names
 
 Configuration tasks:
 
-1. [Configure an SPN for the gateway service account](/power-bi/connect-data/service-gateway-sso-kerberos#configure-an-spn-for-the-gateway-service-account). A domain  administrator uses the [Setspn tool](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)) that comes with Windows to enable delegation.
+1. [Configure an SPN for the gateway service account](/power-bi/connect-data/service-gateway-sso-kerberos#configure-an-spn-for-the-gateway-service-account). As a domain administrator, use the [Setspn tool](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)) that comes with Windows to enable delegation.
 
 1. [Adjust communication settings for the gateway](/data-integration/gateway/service-gateway-communication). Enable outbound Microsoft Entra ID connections and review your firewall and port setups to ensure communication.
 
@@ -73,7 +73,7 @@ More information:
 
 To use SSO to access your SAP server, make sure:
 
-- You configure your SAP server for Kerberos SSO using CommonCryptoLib as its Secure Network Communication (SNC) library.
+- You configure your SAP server for Kerberos SSO using **CommonCryptoLib** as its Secure Network Communication (SNC) library.
 - Your SNC name starts with _CN_.
 
 > [!IMPORTANT]
