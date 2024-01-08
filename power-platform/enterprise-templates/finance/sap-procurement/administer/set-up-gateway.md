@@ -58,7 +58,7 @@ The on-premises data gateway installation encompasses multiple components instal
 
 > [!NOTE]
 >
-> The installed gateway runs as the default machine-local service account, _NT Service\PBIEgwService_. Update the service account to a domain account if setting up Windows or Microsoft Entra ID single sign-on (SSO). Additional information is provided in [Step 1](configure-authentication.md#step-1-configure-kerberos-constrained-delegation) in the _Configure authentication_ article.
+> If setting up Windows server AD or Microsoft Entra ID SSO, you need to update the service account to a domain account. The installed gateway runs as the default machine-local service account, _NT Service\PBIEgwService_. Additional information is provided in [Step 1](configure-authentication.md#step-1-configure-kerberos-constrained-delegation) in the _Configure authentication_ article.
 
 ## Gateway cluster configuration
 
