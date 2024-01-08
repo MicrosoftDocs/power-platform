@@ -24,53 +24,46 @@ ms.custom:
 
 # Enable copilots and generative AI features
 
-In [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/), Copilots and generative AI assist with:
+Copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/) help you build apps, flows, and chatbots, analyze your data, summarize information, reply to messages, and generate ideas.
 
-- app creation
-- workflow design
-- chatbot development
-- data analysis
-- summarizing information
-- message response
-- generating ideas
-
-However, these features might not be available in all regions or languages. Depending on the hosting location of  your environment, you might need to enable data movement across regions to use them. This article provides guidance on how to enable data movement across regions.
+However, these features aren't available in all regions and languages. Depending on where your environment is hosted, you might need to allow data movement across regions to use them. This article explains how to do that.
 
 ## How data movement across regions works
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint supporting these features is hosted**. We might store prompt and output data for a maximum of 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring). However, we only examine the data if our automated systems flag it for review.
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint that supports these features is hosted**. We might store prompt and output data for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
 
 The following table describes when and how data can move across regions for copilots and generative AI features.
 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Does data move across regions? | How to allow data to move across regions|
 |-------------------------|-------------------------|-------------------------|-------------------------|
 | Australia</br>United Kingdom</br>United States | Within the respective geographical region of your Power Platform or Dynamics 365 environment | No | No action required. Data doesn't move across regions in this scenario.|
-| Europe | Sweden or Switzerland | Yes\* | No action required. Data doesn't move outside the [EU Data Boundary](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb) in this scenario.<br><br>Admins can clear the [**Move data across regions**](#enable-data-movement-across-regions) checkbox, if they want to. |
+| Europe | Sweden or Switzerland | Yes\* | No action required. Data doesn't move outside the [EU Data Boundary](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb) in this scenario.</br></br>Admins can clear the [**Move data across regions**](#enable-data-movement-across-regions) checkbox, if they want to. |
 | France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 | Asia</br>Canada</br>India</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 
-If your Power Platform and Dynamics 365 are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
+If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
 
 ## Enable data movement across regions
 
 If your environment is hosted in a region that requires data movement across regions to use copilots and generative AI features, you need to consent to the terms of use on the **Move data across regions** checkbox in the Power Platform admin center.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select **Environments**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the left side panel, select **Environments**.
+1. Select your environment.
 
 1. On the **Generative AI features** card, select **Edit**.
 
     :::image type="content" source="media/ai-not-allowed.svg" alt-text="Select **Edit** on the **Generative AI features** card.":::
 
-1. Review the terms of use and check the box labeled **Move data across regions**.
+1. Review the terms of use and select the **Move data across regions** checkbox.
 
     :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use.":::
 
 1. Select **Enable**.
 
-    Once you agree to the terms of use, the **Move data across regions** field on the **Generative AI features** card shows **Allowed**. Copilots and generative AI features are now enabled in the environment.
+    After you consent to the terms of use, the status of **Move data across regions** field on the **Generative AI features** card shows **Allowed**. Copilots and generative AI features are enabled in the environment.
 
-   > [!Note]
-   > Data movement that occurred while your environment was enabled to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox. The data might be stored by the Azure OpenAI Service for up to 30 days to monitor for abuse.
+     Data movement that occurred while your environment was enabled to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox. The data might be stored by the Azure OpenAI Service for up to 30 days to monitor for abuse.
 
 ## Copilots and generative AI features that are available when you enable data movement across regions
 
