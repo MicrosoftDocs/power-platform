@@ -35,7 +35,7 @@ The on-premises data gateway installation encompasses multiple components instal
 
 ## Gateway setup steps
 
-Gateways are set up by [administrators](/power-platform/admin/admin-documentation). To set up the gateway:
+[Administrators](/power-platform/admin/admin-documentation)set up gateways. To set up the gateway:
 
 1. Create a new [Windows VM](/azure/virtual-machines/overview) or provision a new or repurposed server specifically for SAP integration with Power Platform.
 
@@ -62,11 +62,11 @@ Gateways are set up by [administrators](/power-platform/admin/admin-documentatio
 
 ## Gateway cluster configuration
 
-On-premises data gateway clusters can be created to avoid single points of failure when accessing on-premises data resources, but it is important to understand how gateway clusters need to be configured when working with SAP.
+You can create on-premises data gateway clusters to avoid single points of failure when accessing on-premises data resources, but it's important to understand how to configure gateway clusters when working with SAP.
 
-The gateway uses the SAP NCo connector and it maintains an internal state of the connection to SAP. For example, if you have _Step A_ in a flow do something in SAP and _Step A_ uses _Gateway 1_ to make that call, then _Gateway 1_ knows about the changes you are trying to make.
+The gateway uses the SAP NCo connector and it maintains an internal state of the connection to SAP. For example, if you have _Step A_ in a flow do something in SAP and _Step A_ uses _Gateway 1_ to make that call, then _Gateway 1_ knows about the changes you're trying to make.
 
-Because the connector maintains an internal state of the connection to SAP, you want all your calls to be forced to the primary gateway in the cluster. A call is only directed to the second gateway when the primary gateway call fails. To support this scenario, **ensure that random load balancing is turned off**.
+Because the connector maintains an internal state of the connection to SAP, you want all your calls to be forced to the primary gateway in the cluster. A call is only directed to the second gateway when the primary gateway call fails. To support this scenario, **turn off random load balancing**.
 
 ### Turn off random load balancing
 
