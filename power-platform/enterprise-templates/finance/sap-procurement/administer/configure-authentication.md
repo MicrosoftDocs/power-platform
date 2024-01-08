@@ -1,6 +1,6 @@
 ---
 title: Configure authentication for SAP Procurement solutions
-description: Learn how to streamline access management to SAP for your Microsoft Power Platform users by enabling SSO.
+description: Set up SSO for your Microsoft Power Platform users to streamline access management to SAP.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -15,7 +15,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/06/2023
+ms.date: 01/08/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
