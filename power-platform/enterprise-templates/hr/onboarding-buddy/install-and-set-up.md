@@ -193,7 +193,7 @@ Open the Onboarding Buddy Admin App and select **Configurations** to set the par
 
 For a new employee to show up in the app as an new employee who can be matched, you must first enter them into the Onboarders table.
 
-The *New Onboarders Sync* flow is set to run every Saturday. It automatically imports new employees set up in Entra ID in the last week into the Onboarding table. Initially, though, you may have to populate existing employees that you want to be a part of the program right away.
+The *New Onboarders Sync* flow is set to run every Saturday. It automatically imports new employees set up in Microsoft Entra ID in the last week into the Onboarding table. Initially, though, you may have to populate existing employees that you want to be a part of the program right away.
 
 ### Manually run the flow
 
@@ -205,7 +205,7 @@ You can run the New Onboarders Sync flow manually to populate all new employees 
 
 ### Manually create onboarder records
 
-You can manually add existing employees that have been set up in Entra ID for more than a week to the Onboarders table.
+You can manually add existing employees that have been set up in Microsoft Entra ID for more than a week to the Onboarders table.
 
 1. Select **Onboarders** in the Onboarding Buddy Admin app.
 1. Select **+New** from the top menu.

@@ -23,7 +23,7 @@ ms.subservice: solution-templates
 
 # Configure authentication for SAP Procurement solution
 
-The [SAP ERP connector](/connectors/saperp/) is designed for use by multiple users of an application; therefore, the connections aren't shared. The user credentials are provided in the connection, while other details required to connect to the SAP system (like server details and security configuration) are provided as part of the action.
+The [SAP ERP connector](/connectors/saperp/) is designed so multiple people can access and use an application at once; therefore, the connections aren't shared. The user credentials are provided in the connection, while other details required to connect to the SAP system (like server details and security configuration) are provided as part of the action.
 
 Enabling single sign-on (SSO) makes it easy to refresh data from SAP while adhering to user-level permissions configured in SAP. There are several ways you can set up SSO for streamlined identity and access management.
 
@@ -33,10 +33,10 @@ The SAP ERP connector supports the following authentication types:
 |--------------|--------------|----------------|
 | [SAP authentication](/connectors/saperp/#sap-authentication)     | Use SAP user name and password to access SAP server.  | Step 4        |
 | [Windows authentication](/connectors/saperp/#windows-authentication)     | Use Windows user name and password to access SAP server. |   Steps 1, 2, 3, 4      |
-| [Entra ID authentication](/connectors/saperp/#azure-ad-integrated)    | Use Entra ID to access SAP server. | Steps 1, 2, 3, 4     |
+| [Microsoft Entra ID authentication](/connectors/saperp/#azure-ad-integrated)    | Use Microsoft Entra ID to access SAP server. | Steps 1, 2, 3, 4     |
 
 > [!NOTE]
-> Specific administrative privileges are required to set up SSO in Entra ID and SAP. Be sure to obtain the necessary admin privileges for each system before setting up SSO.
+> Specific administrative privileges are required to set up SSO in Microsoft Entra ID and SAP. Be sure to obtain the necessary admin privileges for each system before setting up SSO.
 More information:
 
 - [Microsoft Entra documentation](/entra/)
@@ -44,7 +44,7 @@ More information:
 
 ## Step 1: Configure Kerberos constrained delegation
 
-[Kerberos constrained delegation (KCD)](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) provides secure user or service access to resources permitted by administrators without multiple requests for credentials. Kerberos constrained delegation needs to be configured for Windows and Entra ID authentication.
+[Kerberos constrained delegation (KCD)](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) provides secure user or service access to resources permitted by administrators without multiple requests for credentials. Configure Kerberos constrained delegation for Windows and Microsoft Entra ID authentication.
 
 Run the gateway Windows service as a domain account with Service Principal Names (SPNs) (SetSPN).
 
@@ -52,9 +52,9 @@ Configuration tasks:
 
 1. [Configure an SPN for the gateway service account](/power-bi/connect-data/service-gateway-sso-kerberos#configure-an-spn-for-the-gateway-service-account). A domain  administrator uses the [Setspn tool](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)) that comes with Windows to enable delegation.
 
-1. [Adjust communication settings for the gateway](/data-integration/gateway/service-gateway-communication). Enable outbound Entra (Azure) connections and review your firewall and port setups to ensure communication.
+1. [Adjust communication settings for the gateway](/data-integration/gateway/service-gateway-communication). Enable outbound Microsoft Entra ID connections and review your firewall and port setups to ensure communication.
 
-1. [Configure for standard Kerberos constrained delegation](/power-bi/connect-data/service-gateway-sso-kerberos#option-a-standard-kerberos-constrained-delegation). A domain administrator is required to configure a domain account for a service and it restricts the account to run on a single domain.
+1. [Configure for standard Kerberos constrained delegation](/power-bi/connect-data/service-gateway-sso-kerberos#option-a-standard-kerberos-constrained-delegation). As a domain administrator, configure a domain account for a service so it restricts the account to run on a single domain.
 
 1. [Grant the gateway service account local policy rights on the gateway machine](/power-bi/connect-data/service-gateway-sso-kerberos#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
@@ -98,7 +98,7 @@ More information: [Use Kerberos single sign-on for SSO to SAP BW using CommonCry
 
 ## Step 3: Enable SAP SNC for Azure AD and Windows authentication
 
-The SAP ERP connector supports Entra ID, formerly Azure AD, and Windows server AD authentication by enabling SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so secure single sign-on to SAP environments can be established. The following property guidance helps with setup.
+The SAP ERP connector supports Microsoft Entra ID, and Windows server AD authentication by enabling SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so secure single sign-on to SAP environments can be established. The following property guidance helps with setup.
 
 | Property | Description |
 |---------|---------|
@@ -108,11 +108,11 @@ The SAP ERP connector supports Entra ID, formerly Azure AD, and Windows server A
 | SNC Partner Name     | The name of the back-end SNC server. Example, `p:CN=SAPserver`. |
 | SNC Quality of Protection     |  The quality of service used for SNC communication of this particular destination or server. The default value is defined by the back-end system. The maximum value is defined by the security product used for SNC. |
 
-The SAP SNC name for the user must equal the user's Active Directory fully qualified domain name. For example `p:CN=JANEDOE@REDMOND.CORP.CONTOSO.COM` must equal `JANEDOE@REDMOND.CORP.CONTOSO.COM`.
+The SAP SNC name for the user must equal the user's Active Directory fully qualified domain name. For example, `p:CN=JANEDOE@REDMOND.CORP.CONTOSO.COM` must equal `JANEDOE@REDMOND.CORP.CONTOSO.COM`.
 
 > [!NOTE]
 >
-> Entra ID (Azure AD) auth only—the _Active DirectorySAP Service Principal_ account must have AES 128 or AES 256 defined on the _msDS-SupportedEncryptionType_ attribute.
+> Microsoft Entra ID auth only—the _Active DirectorySAP Service Principal_ account must have AES 128 or AES 256 defined on the _msDS-SupportedEncryptionType_ attribute.
 
 ## Step 4: Set up SAP server and user accounts to allow actions
 
