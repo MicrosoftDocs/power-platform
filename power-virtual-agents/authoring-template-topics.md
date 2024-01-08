@@ -1,8 +1,8 @@
 ---
 title: "Use lesson topics in Microsoft Copilot Studio"
-description: "Use template topics to understand their capabilities in Microsoft Copilot Studio copilots."
+description: "Use template topics for Microsoft Copilot Studio copilots."
 keywords: "PVA"
-ms.date: 1/5/2023
+ms.date: 12/29/2023
 
 ms.topic: article
 author: iaanw
@@ -18,25 +18,31 @@ ms.collection: virtual-agent
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 Copilot Studio includes sample topics with every new copilot to help you understand the capabilities of copilot topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md), [variables](authoring-variables.md), and [custom entities](advanced-entities-slot-filling.md).
+Copilot Studio includes sample topics with every new copilot to help you understand the capabilities of copilot topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md), [variables](authoring-variables.md), and [custom entities](advanced-entities-slot-filling.md).
 
 The topics are functional but aren't designed for production use. These examples help you learn how to create content for your copilots.
 
 ## Prerequisites
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- If you need to create a copilot, see [Quickstart: Create and deploy a Microsoft Copilot Studio copilot](fundamentals-get-started.md).
 - If you're using a bot that has **classic** added to the name, you can [upgrade your bot](unified-authoring-conversion.md) to see the latest versions of the sample topics. All bots made in the Teams app are classic bots.
 
 # [Web app](#tab/web)
 
 ### Use sample topics to understand how topics work
 
-1. Open your copilot, or [create one](fundamentals-get-started.md), and go to the **Topics & Plugins** tab.
+1. Open your copilot, or [create one](fundamentals-get-started.md), and go to the **Topics & Plugins** page.
 
-1. To view the copilot's conversation flow, select each topic to open it.
+1. Review the copilot's details for name and description. The copilot derives topic phrases from the description (if any). In this case, they were added manually to the **Trigger** node.
 
-    The flow includes the copilot's comments, expected user responses, decision points, and entity references used in each topic. Review these lessons and the topic's title, description, and trigger phrases.
+   :::image type="content" source="media/authoring-template-topics/topic-details.png" alt-text="Screenshot of sample topics in Copilot Studio.":::
 
-   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of sample topics in Microsoft Copilot Studio.":::
+1. To view the copilot's conversation flow, select each topic from the **Topics & Plugins** page to open it.
+
+    The flow includes the copilot's comments, expected user responses, decision points, and entity references used in each topic.
+
+   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of sample topics in Copilot Studio.":::
 
 #### Available sample topics
 
@@ -44,7 +50,7 @@ Each sample lesson topic is designed to teach you how to create basic and advanc
 
 ##### Lesson 1 - A simple topic
 
-This sample shows you how to create a topic that responds to a question about store hours.
+This sample template is a topic that responds to a question about store hours.
 
 ##### Lesson 2 - A simple topic with a condition and a variable
 
@@ -85,7 +91,7 @@ This lesson shows you how to create a simple topic with one conditional branch.
 
 ##### Lesson 2 - A simple topic with a condition and variable - Teams
 
-This lesson shows you how you can create a simple topic with one conditional branch and [a variable](authoring-variables.md).
+This lesson shows you how to create a simple topic with a [a variable](authoring-variables.md) and conditions.
 
 A variable is a name for an item that is used later in the topic flow. In this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
 
@@ -103,7 +109,7 @@ In this lesson, the bot uses the **State** entity and recognizes any US state th
 
 This lesson shows a topic with a conditional branch, [a variable](authoring-variables.md), and [a custom entity](advanced-entities-slot-filling.md#custom-entities).
 
-You can see the bot bypass a follow-up question. For example, try testing with "I want a business laptop."
+You can see the bot bypass a follow-up question. For example, try testing with the phrase "I want a business laptop" in the testing pane.
 
 ---
 
