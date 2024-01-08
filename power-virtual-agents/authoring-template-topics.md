@@ -36,13 +36,13 @@ The topics are functional but aren't designed for production use. These examples
 
 1. Review the copilot's details for name and description. The copilot derives topic phrases from the description (if any). In this case, they were added manually to the **Trigger** node.
 
-   :::image type="content" source="media/authoring-template-topics/topic-details.png" alt-text="Screenshot of sample topics in Copilot Studio.":::
+   :::image type="content" source="media/authoring-template-topics/topic-details.png" alt-text="Screenshot of the location of the details button in Copilot Studio.":::
 
 1. To view the copilot's conversation flow, select each topic from the **Topics & Plugins** page to open it.
 
     The flow includes the copilot's comments, expected user responses, decision points, and entity references used in each topic.
 
-   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of sample topics in Copilot Studio.":::
+   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of sample topics on the Topics & Plugins page of Copilot Studio.":::
 
 #### Available sample topics
 
