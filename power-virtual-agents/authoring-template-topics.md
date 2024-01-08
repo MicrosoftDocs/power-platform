@@ -1,6 +1,6 @@
 ---
 title: "Use lesson topics in Microsoft Copilot Studio"
-description: "Use template topics for Microsoft Copilot Studio copilots."
+description: "Use template sample topics for Microsoft Copilot Studio copilots."
 keywords: "PVA"
 ms.date: 12/29/2023
 
@@ -17,15 +17,14 @@ ms.collection: virtual-agent
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Copilot Studio includes sample topics with every new copilot to help you understand the capabilities of copilot topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md), [variables](authoring-variables.md), and [custom entities](advanced-entities-slot-filling.md).
-Copilot Studio includes sample topics with every new copilot to help you understand the capabilities of copilot topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md), [variables](authoring-variables.md), and [custom entities](advanced-entities-slot-filling.md).
+Copilot Studio includes sample topics with every new copilot. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md), [variables](authoring-variables.md), and [custom entities](advanced-entities-slot-filling.md).
 
 The topics are functional but aren't designed for production use. These examples help you learn how to create content for your copilots.
 
 ## Prerequisites
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
-- If you need to create a copilot, see [Quickstart: Create and deploy a Microsoft Copilot Studio copilot](fundamentals-get-started.md).
+- An existing copilot, or if you need to create one, see [Quickstart: Create and deploy a Microsoft Copilot Studio copilot](fundamentals-get-started.md).
 - If you're using a bot that has **classic** added to the name, you can [upgrade your bot](unified-authoring-conversion.md) to see the latest versions of the sample topics. All bots made in the Teams app are classic bots.
 
 # [Web app](#tab/web)
@@ -34,15 +33,15 @@ The topics are functional but aren't designed for production use. These examples
 
 1. Open your copilot, or [create one](fundamentals-get-started.md), and go to the **Topics & Plugins** page.
 
-1. Review the copilot's details for name and description. The copilot derives topic phrases from the description (if any). In this case, they were added manually to the **Trigger** node.
+1. Review the copilot's details for name and description. The copilot derives topic phrases from the description (if any). In this case, trigger phrases were added manually to the **Trigger** node.
 
    :::image type="content" source="media/authoring-template-topics/topic-details.png" alt-text="Screenshot of the location of the details button in Copilot Studio.":::
 
 1. To view the copilot's conversation flow, select each topic from the **Topics & Plugins** page to open it.
 
-    The flow includes the copilot's comments, expected user responses, decision points, and entity references used in each topic.
+    The flow includes the copilot's comments, expected user responses, decision points, and entity references used in each topic. This sample flow is for Lesson 3.
 
-   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of sample topics on the Topics & Plugins page of Copilot Studio.":::
+   :::image type="content" source="media/authoring-template-topics/template-flow.png" alt-text="Screenshot of lesson topic 3 on the Topics & Plugins page of Copilot Studio." lightbox="media/authoring-template-topics/template-flow.png":::
 
 #### Available sample topics
 
