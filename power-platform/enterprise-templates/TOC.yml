@@ -107,6 +107,16 @@
       href: it/appointment-booking/manage.md
     - name: Use
       href: it/appointment-booking/use.md
+  - name: Expense Reimbursement
+    items:
+    - name: Overview
+      href: it/expense-reimbursement/overview.md
+    - name: Install and set up
+      href: it/expense-reimbursement/install-and-set-up.md
+    - name: Manage
+      href: it/expense-reimbursement/manage.md
+    - name: Use
+      href: it/expense-reimbursement/use.md
 - name: Related content
   items:
   - name: Power Apps documentation
