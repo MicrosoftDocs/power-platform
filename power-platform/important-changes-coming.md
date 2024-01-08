@@ -102,8 +102,7 @@ Replace the reference to `/_static/_common/scripts/jquery-2.1.1.min.js` with the
 
 As part of a service update designed to improve security within Power Apps, we removed the deprecated Activity Editor control, and recommend the use of the [rich text editor control](/power-apps/maker/model-driven-apps/rich-text-editor-control). This change will be rolling out through January and February 2024.
 
-Learn more about [adding the rich text editor control to a model-driven app](/maker/model-driven-apps/rich-text-editor-control). If you are using the Activity Editor control in a customized email or appointment experience in a model-driven app, learn more about [switching to the rich text editor control](/dynamics365/customer-service/administer/customer-service-hub-user-guide-email-font-admin#enable-the-rte-control-in-the-email-form).
-
+Learn more about [adding the rich text editor control to a model-driven app](/power-apps/maker/model-driven-apps/rich-text-editor-control). If you are using the Activity Editor control in a customized email or appointment experience in a model-driven app, learn more about [switching to the rich text editor control](/dynamics365/customer-service/administer/customer-service-hub-user-guide-email-font-admin#enable-the-rte-control-in-the-email-form).
 ## AI Builder image classification model by Lobe is deprecated
 
 Effective January 2023, the image classification model by Lobe (preview) was deprecated.
