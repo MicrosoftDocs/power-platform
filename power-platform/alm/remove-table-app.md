@@ -9,7 +9,7 @@ ms.date: 01/09/2023
 ---
 # Remove dependencies between tables and model-driven apps
 
-To remove dependencies between tables and model-driven apps, open the app in the app designer, remove it from the app navigation, and then remove it from the app.
+To remove dependencies between tables and model-driven apps, open the app in the app designer, remove the component, such as a table, from the app navigation, and then remove the component from the app.
 
 1. Sign into Power Apps (make.powerapps.com) and then go to in the **Apps** on the left navigation pane.
 1. Open the model-driven app in the app designer, then find the the component you no longer want the app to depend on. In this example, you see the table **Custom table** in the **Pages** left pane. Select **...** next to the item, and then select **Remove from navigation**.
