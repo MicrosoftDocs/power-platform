@@ -36,7 +36,7 @@ For a delegated deployment with a service principal, follow these steps.
 1. Assign the Deployment Pipeline Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments. Lower permission security roles can't deploy plug-ins and other code components.
 1. Choose (check) **Is delegated deployment** on a pipeline stage, select **Service Principal**, and enter the Client ID. Select **Save**.
 1. Create a cloud flow within the pipelines host environment. Alternative systems can be integrated using pipelines' Dataverse APIs.
-1. Select the **OnApprovalStarted** trigger. **OnDeploymentRequested** can also be used if **Pre-Export Step Required** is disabled on the pipeline stage.
+1. Select the **OnApprovalStarted** trigger. 
 1. Add steps for your desired custom logic.
 1. Insert an approval step. Use Dynamic content for sending deployment request information to the approver(s).
 1. Insert a condition.
@@ -91,3 +91,36 @@ To deploy as the pipeline stage owner, follow these steps.
 ### I'm getting an error _The deployment stage is not an owner of the service principal (<AppId>). Only owners of the service principal may use it for delegated deployments._
 
 Ensure you’re the owner of the Enterprise Application (Service Principal) in Microsoft Entra ID (formerly AAD). You may only be the owner of the App Registration, and not the Enterprise Application.
+
+:::image type="content" source="media/enterprise-applications.png" alt-text="Enterprise applications":::
+
+### For stage owner based delegated deployments, why can't I assign another user as the deployer?
+
+For security reasons, you must login as the user that will be set as the pipeline stage owner. This prevents adding a non-consenting user as the deployer.
+
+### Why are my delegated deployments stuck in a pending state?
+
+All delegated deployments are pending until approved. Ensure your admin has configured a Power Automate approval flow or other automation, that it's working properly, and that the deployment was approved. 
+
+### Who owns deployed solution objects?
+The deploying identity. For delegated deployments, the owner is the delegated service principal or pipeline stage owner.
+
+### How can makers access deployed objects within target environments?
+
+Admins must assign security roles and share deployed apps, flows, etc within the admin center. Alternatively, admins may build automations to manage access. 
+
+### Can I add custom approval steps?
+
+Yes. For example, Power Automate approvals can be customized to meet the needs to your organization. You may also integrate other approval systems.
+
+### I'm getting an error _Delegated deployments of type 'ServicePrincipal' may only be approved or rejected by the Service Principal configured in the deployment stage._
+
+Ensure the Dataverse custom action UpdateApprovalStatus is called by the service principal. If using Power Automate approvals, ensure this action is configured to use the delegate service principal's connection. 
+
+### I'm getting an error _Delegated deployments of type 'Owner' may only be approved or rejected by the owner of the deployment stage._
+
+Ensure the Dataverse custom action UpdateApprovalStatus is called by the pipeline stage owner. If using Power Automate approvals, ensure this action is configured to use the delegate pipeline stage owner's connection. 
+
+### Can I use different service principals for diffent pipelines and stages?
+
+Yes.
