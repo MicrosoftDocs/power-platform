@@ -60,31 +60,31 @@ This section covers how to use the ALM Accelerator administration app to configu
 
 ## Share user settings with the ALM Accelerator administration app
 
-To share user settings created for a particular user profile, we recommend that you share the user setting row with an Azure Active Directory (Azure AD) group team. Sharing with an Azure AD group team allows you to manage access to user settings and deployment profiles by adding the user to the group in Azure AD.
+To share user settings created for a particular user profile, we recommend that you share the user setting row with a Microsoft Entra group team. Sharing with a Microsoft Entra group team allows you to manage access to user settings and deployment profiles by adding the user to the group in Microsoft Entra ID.
 
-### Create an Azure AD group team
+### Create a Microsoft Entra group team
 
-If you already have an Azure AD group team in Microsoft Dataverse to share user settings, skip this section.
+If you already have a Microsoft Entra group team in Microsoft Dataverse to share user settings, skip this section.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com), and then select the environment in which you installed the ALM Accelerator app.
 
 1. Under **Access -Teams**, select **See all**, and then select **Create Team**.
 
-1. Enter the required fields, and then select **AAD Group Team** as the **Team Type**.
+1. Enter the required fields, and then select **Microsoft Entra Group Team** as the **Team Type**.
 
-1. Select the **AAD Group** to use for this team, and then select **Next**.
+1. Select the **Microsoft Entra Group** to use for this team, and then select **Next**.
 
 1. Select **ALM Power App Access** and **Basic User** as the roles for the team.
 
 1. Select **Save**.
 
-### Share user settings with an Azure AD group team
+### Share user settings with a Microsoft Entra group team
 
 1. Open the ALM Accelerator administration app and go to **Deployment User Settings**.
 
 1. Open the user setting that you want to share with your team, and then select **Share**.
 
-1. Use **Advanced lookup** to search for and select your Azure AD group team in your organization's Azure AD security group teams.
+1. Use **Advanced lookup** to search for and select your Microsoft Entra group team in your organization's Microsoft Entra security group teams.
 
 1. Select **Done**.
 

@@ -14,7 +14,7 @@ search.audienceType:
 ---
 
 # Permission reference (preview)
-This article provides an overview of the Power Platform API (preview) granular permissions.  These permissions will be initially available for registering client applications in Azure Active Directory (Azure AD) and may become available in security role form in the future.
+This article provides an overview of the Power Platform API (preview) granular permissions.  These permissions will be initially available for registering client applications in Microsoft Entra and may become available in security role form in the future.
 
 > [!IMPORTANT]
 > The Power Platform API is in preview. The permission names are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final permission details.
@@ -49,5 +49,3 @@ Name | Display Name | Description |
 `Governance.LockboxRequests.Read` | Read Lockbox Requests | Allows reading lockbox requests | 
 `Governance.LockboxRequests.Approve` | Approve Lockbox Requests | Allows approving lockbox requests | 
 `Governance.LockboxRequests.Deny` | Deny Lockbox Requests | Allows denying lockbox requests |
-
-

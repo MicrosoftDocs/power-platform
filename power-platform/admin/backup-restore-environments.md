@@ -2,13 +2,15 @@
 title: Back up and restore environments
 description: Provides information on how to back up and restore Power Platform environments
 ms.topic: conceptual
-ms.date: 10/12/2023
+ms.date: 01/05/2024
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
 ms.reviewer: sericks
 contributors:
-- Funken1766 
+- Funken1766
+- Daniel2327 
+- elijohnson-ms 
 
 
 ---
@@ -23,7 +25,7 @@ The ability to change the backup retention period is useful for managed environm
 - This ability to extend the backup retention period beyond seven days is supported only for [managed environments](managed-environment-overview.md).
 - If you change the backup retention period, the new setting applies to all existing and future backups. Because the change might take up to 24 hours to go into effect on the existing backups, some backups might be deleted sooner than expected.
 
-To change the backup retention period, you must be an admin who has one of these roles in Azure Active Directory (Azure AD):
+To change the backup retention period, you must be an admin who has one of these roles in Microsoft Entra ID:
 
 - Global admin
 - Power Platform admin
@@ -98,7 +100,7 @@ About **system backups**:
    > ![Enter backup details.](media/restore-backup.png "Enter backup details")
 
    > [!NOTE]
-   > - Only sandbox environments can be restored to.
+   > - Only sandbox environments can be restored to. Check [Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details about the effects of changing environment type.
    > - Under **Edit details**, you can change the environment name.
 
 6. Confirm overwrite of the environment. 
@@ -136,10 +138,10 @@ About **manual backups**:
 There's no status as the backup is processing. When the backup is completed, the following message is displayed: "*The [backup name] backup was successfully created.*" 
 
 ### Restore a manual backup  
-You can only restore to sandbox environments. To restore to a production environment, first switch it to a sandbox environment. See [Switch an environment](switch-environment.md).
+You can only restore to sandbox environments. To restore to a production environment, first switch it to a sandbox environment. 
 
 > [!IMPORTANT]
-> Note that changing an environment type to sandbox will immediately reduce backup retention to seven days. If you don't need backups (restore points) older than seven days, then you can safely switch the type. If you think you may need restore points older than seven days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
+> Note that changing an environment type to sandbox affects database retention. See [Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details about the effects of changing the environment type.
 
 1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
@@ -241,7 +243,13 @@ We don't have any restriction on database size (or storage capacity/entitlement)
 To be compliant with storage usage requirements, customers can always [free up storage](free-storage-space.md), [archive data](recover-database-space-deleting-audit-logs.md), [delete unwanted environments](delete-environment.md), or buy more capacity. To learn more about capacity add-ons, see the Add-ons section in the Dynamics 365 Licensing Guide or the Power Apps and Power Automate Licensing Guide. You can work through your organization’s standard procurement process to purchase capacity add-ons.
  
 ### Can I restore to a production environment?
-In order to prevent accidental overwrites, we don't allow users to directly restore to a production environment. To restore to a production environment, first switch it to a sandbox environment. See [Switch an environment](switch-environment.md) for more information. Changing an environment type to sandbox immediately reduces backup retention to seven days. If you don't need backups (restore points) older than seven days, then you can safely switch the type. If you think you may need restore points older than seven days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
+In order to prevent accidental overwrites, you can't directly restore to a production environment. 
+
+To restore to a production environment, you must first switch it to a sandbox environment. See [Switch an environment](switch-environment.md) for more information. 
+
+If you want to restore a system backup or restore point from the past seven days, then you can safely switch the type. If you think you may need to restore to a backup older than seven days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox. 
+
+If you do switch a production environment to a sandbox environment for a manual restore, you can only choose a backup from the past seven days. Make sure that after the restore is completed, you change the environment back to a production environment **as soon as possible** to prevent the loss of any backups older than seven days.
 
 ### Why is my organization in administration mode after a restore and how do I disable it?
 The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](admin-mode.md#set-administration-mode). You can set administration mode in sandbox or production environments.  
@@ -261,10 +269,20 @@ No for canvas apps. The app ID for a canvas app is different in a restored envir
 ### If I restore my environment, will previous backups remain available? 
 Yes, all backups within the organization's retention period will remain available. 
 
+### How can I restore records after a bulk deletion without restoring over an organization?
+In order to restore records after a bulk deletion, without restoring over an organization, there are two steps that have to be followed:
+
+1. Create a new, empty organization.
+2. Restore the backup from the current organization to the new organization.
+
+This will keep the original organization with all of the records that have been added since the backup, while also creating a new organization with the records that were deleted.
+
 ## Troubleshooting
 
 ### Don't see your environment to restore to? 
 Only sandbox environments can be restored to.
+
+A [Managed Environment](managed-environment-overview.md) can only be restored to a Managed Environment.
 
 ### See also
 [Automatic environment cleanup](automatic-environment-cleanup.md) <br />
