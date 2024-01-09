@@ -107,7 +107,7 @@ The deploying identity. For delegated deployments, the owner is the delegated se
 
 ### How can makers access deployed objects within target environments?
 
-Admins must assign security roles and share deployed apps, flows, etc within the admin center. Alternatively, admins may build automations to manage access. 
+Requesting makers may not have access to deployed resources in target environments. Admins must assign security roles and share deployed apps, flows, etc within the admin center. Alternatively, admins may build automations to manage access. 
 
 ### Can I add custom approval steps?
 
@@ -120,6 +120,10 @@ Ensure the Dataverse custom action UpdateApprovalStatus is called by the service
 ### I'm getting an error _Delegated deployments of type 'Owner' may only be approved or rejected by the owner of the deployment stage._
 
 Ensure the Dataverse custom action UpdateApprovalStatus is called by the pipeline stage owner. If using Power Automate approvals, ensure this action is configured to use the delegate pipeline stage owner's connection. 
+
+### I'm getting an error in my approval flow _Unable to find approval status attribute for stage run record._
+
+This happens when the approval status is not yet in the pending state. Make sure this is a delegated deployment and you're using the OnApprovalStarted trigger in your approval flow.
 
 ### Can I use different service principals for diffent pipelines and stages?
 
