@@ -21,7 +21,7 @@ To remove dependencies between tables and model-driven apps, open the app in the
 1. Save and publish the app.
 
 > [!NOTE]
-> After removing components from app designer, components can be added to unmanaged solutions and then exported as managed solutions to other environments to remove managed dependencies.
+> After removing the component from app designer in your developer environment, the component can be added to an unmanaged solution and then exported as a managed solution to other environments, such as production, to remove the managed dependency.
 
 - [Removing dependencies overview](removing-dependencies.md)
 - [Remove dependencies between fields and workflows](remove-field-workflow.md)
