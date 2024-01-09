@@ -85,3 +85,9 @@ To deploy as the pipeline stage owner, follow these steps.
     1. Insert actions as desired. For example, an approval.
     1. Add Dataverse **Perform an unbound action**.  
       Action Name: UpdateApprovalStatus (20 = completed, 30 = rejected)
+
+## Frequently asked questions
+
+### I'm getting an error _The deployment stage is not an owner of the service principal (<AppId>). Only owners of the service principal may use it for delegated deployments._
+
+Ensure you’re the owner of the Enterprise Application (Service Principal) in Microsoft Entra ID (formerly AAD). You may only be the owner of the App Registration, and not the Enterprise Application.
