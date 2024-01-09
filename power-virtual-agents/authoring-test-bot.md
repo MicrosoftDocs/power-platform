@@ -25,7 +25,6 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
-
 # [Web app](#tab/webApp)
 
 Use the **Test bot** pane to walk through your bot conversations as the user. It's a good way to make sure your topics are working and that conversations flow as you expect.

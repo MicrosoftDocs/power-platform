@@ -84,6 +84,8 @@
               items:
                 - name: Purchase Power Apps
                   href: signup-for-powerapps-admin.md
+                - name: Request a Power Apps license for yourself
+                  href: /power-apps/user/request-license
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
                 - name: Auto-claim policies for Power Apps licenses
@@ -666,7 +668,7 @@
                   href: manage-principalobjectaccess-storage.md
                 - name: Recover storage space
                   href: free-storage-space.md
-                - name: Clean up AsyncOperationBase and WorkflowLogBase tables
+                - name: Clean up System Job and Process Log tables
                   href: cleanup-asyncoperationbase-table.md
             - name: Add storage capacity
               href: add-storage.md
