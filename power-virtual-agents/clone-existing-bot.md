@@ -1,7 +1,7 @@
 ---
-title: Create a preview bot from the content of an existing bot (preview)
-description: Create a preview bot by cloning the content of an existing bot in Microsoft Copilot Studio preview.
-ms.date: 03/24/2023
+title: Create a copilot from the content of an existing copilot
+description: Create a pcopilot by cloning the content of an existing copilot in Microsoft Copilot Studio.
+ms.date: 1/8/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -12,31 +12,29 @@ ms.collection: virtual-agent
 ms.custom: bap-template
 ---
 
-# Create a preview bot from the content of an existing bot (preview)
+# Create a copilot from the content of an existing copilot
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Use familiar content to explore preview features of Microsoft Copilot Studio by cloning an existing non-preview bot.
+Use familiar content to explore features of Microsoft Copilot Studio by cloning an existing copilot.
 
 ## Eligibility
 
-Bots that use any of the following features aren't eligible to be cloned:
+Copilots that use any of these features aren't eligible to be cloned:
 
 - Languages other than English
 - Hand-off to Omnichannel for Customer Service
 - Knowledge Management extensions
 
-If your non-preview bot isn't eligible for cloning, [create a preview bot](quickstart-preview.md) to explore Microsoft Copilot Studio preview features.
-
 ## Limitations
 
-When you clone the content of a non-preview bot, any topic that was authored using Bot Framework Composer is created as an empty topic, with none of the content or nodes in the original topic. You'll need to add content to those topics after your preview bot has been created. However, the cloned topic will have the same input and output variables as the original.
+When you clone the content of a copilot, any topic that's authored using Bot Framework Composer is created as an empty topic with none of the content or nodes in the original topic. You need to add content to those topics after your copilot is created. However, the cloned topic has the same input and output variables as the original.
 
-## Clone a bot
+## Clone a copilot
 
-1. Open your non-preview bot in Microsoft Copilot Studio.
+1. Open your copilot in Copilot Studio.
 
-1. On the bot **Overview** page, select **Try the preview**.
+1. On the **Overview** page, select **Try the preview**.
 
    :::image type="content" source="media/clone-existing-bot/preview-tile.png" alt-text="Screenshot of tile with invitation to try the new Microsoft Copilot Studio preview.":::
 
