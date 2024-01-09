@@ -132,7 +132,7 @@ Yes. However, using the default environment as the pipelines host isn't recommen
 
 ### Can I deploy using my own service principal?
 
-Not currently. 
+Yes. See delegated deployments.
 
 ### Can pipelines be used with Azure DevOps, GitHub, or the ALM Accelerator?
 
