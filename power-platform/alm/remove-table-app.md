@@ -3,7 +3,6 @@ title: Remove dependencies between tables and model-driven apps
 description: "Dependencies sometimes can block operations. This article describes how table and model-driven app dependencies can be removed."
 author: ccdietrich
 ms.author: cdietric
-ms.service: powerapps
 ms.subservice: alm
 ms.topic: how-to
 ms.date: 06/17/2020
