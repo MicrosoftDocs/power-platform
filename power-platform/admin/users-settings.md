@@ -16,7 +16,7 @@ contributors:
 
 Manage user setting in the Power Platform admin center. complete the following steps to change user settings.
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 2. Select **Settings** > **Users + permissions** > **Users**.  
 
@@ -37,12 +37,7 @@ Manage user setting in the Power Platform admin center. complete the following s
     |Change channel    | Change the release channel for a user which overrides the environment or app release channel. More information: [User channel override](user-channel-override.md).        |
 
 ### See also
+
 [Create users](create-users.md)
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
