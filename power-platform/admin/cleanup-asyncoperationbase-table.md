@@ -13,7 +13,7 @@ contributors:
 search.audienceType: 
   - admin
 ---
-# Clean up records from System Job (AsyncOperation) and Process Log (WorkflowLog) tables
+# Clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables
 
 The [System Job (AsyncOperation) table](/power-apps/developer/data-platform/reference/entities/asyncoperation) stores system jobs. The name of the actual database table is `AsyncOperationBase`. System jobs represent asynchronous extensions, such as asynchronous registered workflows and plug-ins, and other background operations such as bulk deletion, bulk import, and rollup operations. After an event occurs and any synchronous extensions are processed, the platform serializes the context for any asynchronous extensions and saves it to the database as an AsyncOperation record.
 
