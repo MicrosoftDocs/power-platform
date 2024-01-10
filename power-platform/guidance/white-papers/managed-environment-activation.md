@@ -4,7 +4,7 @@ description: Learn how your organization can use Power Platform Managed Environm
 author: rsantos00
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 12/06/2023
+ms.date: 01/10/2024
 ms.author: rstand
 ms.reviewer: sericks
 ms.subservice: guidance
@@ -93,7 +93,7 @@ If you're not sure you're in the right place, follow [this guidance**](#).
 
 Here's the rendered welcome message:
 
-:::image type="content" source="media/mae/image2.png" alt-text="Screenshot of the Welcome message for the default environment created by the first example.":::<!-- EDITOR'S NOTE: If it's possible, please recreate the screenshot using the edited welcome content for a more professional illustration. -->
+:::image type="content" source="media/mae/image2.png" alt-text="Screenshot of the Welcome message for the default environment created by the first example.":::
 
 #### Production environments
 
@@ -117,8 +117,7 @@ Before you start, be aware of these limitations:
 If you're not sure you're in the right place, follow [this guidance**](#).
 ```
 
-:::image type="content" source="media/mae/image4.png" alt-text="Screenshot of the Welcome message for a production environment created by the second example.":::<!-- EDITOR'S NOTE: If it's possible, please recreate the screenshot using the edited welcome content for a more professional illustration. -->
-
+:::image type="content" source="media/mae/image4.png" alt-text="Screenshot of the Welcome message for a production environment created by the second example.":::
 #### Developer environments
 
 Developer environments are most often where developers build their solutions. Since the developers are working on the applications, they aren't in production and scalability is limited. Normally, dev environments have more relaxed DLPs due to the nature of the makers. To avoid developers using production assets in their dev environments, limit sharing capabilities and use a specific DLP for this type of environment. Here's an example of a welcome message for a development environment:
@@ -224,7 +223,7 @@ By default, all Dataverse data can be accessed through the API from any IP addre
 Organizations often configure the IP firewall to allow connections from office premises and restrict connections coming from outside. The best practice is to use it together with conditional access to avoid inconsistent policies and dependencies.
 
 > [!TIP]
-> If you misconfigure these policies, you might need to request assistance from Microsoft Support. You might limit access in Power Apps from users outside of the allowed IPs and limit Power Automate actions that have been previously allowed.<!-- EDITOR'S NOTE: This isn't super-clear. Under what circumstances might readers need to get help from Microsoft? When you say "You might..." are you giving this as a reason to ask for help or suggesting something readers might want to do? -->
+> If you misconfigure these policies, you might need to request assistance from Microsoft Support. You might limit access in Power Apps from users outside of the allowed IPs and limit Power Automate actions that have been previously allowed.
 
 ### IP cookie binding (block cookie replay attacks)
 
@@ -435,7 +434,7 @@ Part of the CoE Starter Kit is another kit called **ALM Accelerator for Power Pl
 **Managed Environments feature:** Solution checker enforcement
 **Available in CoE Starter Kit:** No
 
-Since these solutions <!-- EDITOR'S NOTE: Which solutions? --> are tightly integrated with the product, the CoE Starter Kit has no way to check them.
+Since these solutions are tightly integrated with the product, the CoE Starter Kit has no way to check them.
 
 **Managed Environments feature:** IP firewall
 **Available in CoE Starter Kit:** No
