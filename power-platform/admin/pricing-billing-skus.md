@@ -3,7 +3,7 @@ title: Licensing overview for Microsoft Power Platform | Microsoft Docs
 description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, Power Pages, Power BI, AI Builder, Dataverse).
 author: dileepsinghmicrosoft
 ms.topic: overview
-ms.date: 07/26/2023
+ms.date: 01/10/2024
 ms.subservice: admin
 ms.author: dileeps
 ms.reviewer: sericks
@@ -21,7 +21,7 @@ This article provides detailed information about Microsoft Power Platform licens
 
 Power Apps, Power Automate, Power Virtual Agents, and Power Pages provide users the ability to create and run apps, bots, and custom websites across data sources that extend beyond Microsoft 365, such as Salesforce and on-premises and custom data sources. These plans also include access to [Dataverse](/power-apps/maker/data-platform/data-platform-intro) to store and manage data. 
 
-[AI Builder](https://go.microsoft.com/fwlink/?linkid=2103071) proposes AI features which can be used in Power Apps, Power Automate and Power Virtual Agents.
+[AI Builder](https://go.microsoft.com/fwlink/?linkid=2103071) proposes AI features which can be used in Power Apps, Power Automate, and Microsoft Copilot Studio.
 
 More details around capabilities and pricing of the Power Platform offers can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
