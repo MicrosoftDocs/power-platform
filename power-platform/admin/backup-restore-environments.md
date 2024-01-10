@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Provides information on how to back up and restore Power Platform environments
 ms.topic: conceptual
-ms.date: 12/08/2023
+ms.date: 01/05/2024
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
@@ -10,6 +10,7 @@ ms.reviewer: sericks
 contributors:
 - Funken1766
 - Daniel2327 
+- elijohnson-ms 
 
 
 ---
@@ -268,10 +269,20 @@ No for canvas apps. The app ID for a canvas app is different in a restored envir
 ### If I restore my environment, will previous backups remain available? 
 Yes, all backups within the organization's retention period will remain available. 
 
+### How can I restore records after a bulk deletion without restoring over an organization?
+In order to restore records after a bulk deletion, without restoring over an organization, there are two steps that have to be followed:
+
+1. Create a new, empty organization.
+2. Restore the backup from the current organization to the new organization.
+
+This will keep the original organization with all of the records that have been added since the backup, while also creating a new organization with the records that were deleted.
+
 ## Troubleshooting
 
 ### Don't see your environment to restore to? 
 Only sandbox environments can be restored to.
+
+A [Managed Environment](managed-environment-overview.md) can only be restored to a Managed Environment.
 
 ### See also
 [Automatic environment cleanup](automatic-environment-cleanup.md) <br />
