@@ -1,6 +1,6 @@
 ---
-title: "Manage user settings as a Microsoft Power Platform administrator"
-description: "Learn how to manage user settings and security roles when administering Microsoft Power Platform."
+title: Manage user settings as a Microsoft Power Platform administrator
+description: Learn how to manage user settings and security roles when administering Microsoft Power Platform.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
@@ -14,15 +14,15 @@ contributors:
 ---
 # User settings
 
-Managing user settings can be done in the Power Platform admin center. Use the following steps to change user settings.
+Manage user setting in the Power Platform admin center. complete the following steps to change user settings.
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
 2. Select **Settings** > **Users + permissions** > **Users**.  
 
-3. Select the check mark to the left of a user name. 
+3. To the left of a user name select the check mark.
 
-4. Select a user setting from the top menu bar.
+4. From the top menu bar select a user setting.
 
     |Setting  |Description  |
     |---------|---------|
