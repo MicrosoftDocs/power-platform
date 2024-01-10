@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 10/19/2023
+ms.date: 01/10/2024
 ms.reviewer: "matp"
 ms.topic: "overview"
 contributors:
@@ -38,7 +38,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
   - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI](../developer/cli/introduction.md)
 - Achieve compliance, safety, monitoring, and automation goals with:
   - Secure production environments with approval based [delegated deployments](delegated-deployments-setup.md).
-  - Customizations and audit logs saved automatically and are easily accessible.
+  - Customizations and audit log saved automatically and are easily accessible.
   - Out-of-the-box analytics provides better visibility within a central location.
   - The ability to view out-of-the-box Power BI reports within the pipelines app or create your own. More information: [Reporting overview for model-driven apps](/power-apps/maker/model-driven-apps/reporting-overview)
   - Custom tailor pipelines to the needs of your organization with [pipelines extensibility](extend-pipelines.md) and Power Automate. 
@@ -132,7 +132,7 @@ Yes. However, using the default environment as the pipelines host isn't recommen
 
 ### Can I deploy using my own service principal?
 
-Yes. See delegated deployments.
+Yes. More information: [Deploy pipelines as a service principal or pipeline owner](delegated-deployments-setup.md).
 
 ### Can pipelines be used with Azure DevOps, GitHub, or the ALM Accelerator?
 
@@ -168,7 +168,7 @@ Not currently. The host and all environments associated with pipelines in a host
 
 ### Can I deploy the same solution using different pipelines?
 
-Yes, this is possible, although we recommend starting with the same pipeline for a given solution. This helps avoid confusion and inadvertent mistakes. Pipeline run information is displayed in the context of one pipeline and one solution (within the solution experience). Therefore other pipelines may not show the latest deployed solution version or other important run information associated with different pipelines. Notice that the Deployment Pipeline Configuration app shows run information across all pipelines and all solutions for the current host.
+Yes, this is possible, although we recommend starting with the same pipeline for a given solution. This helps avoid confusion and inadvertent mistakes. Pipeline run information is displayed in the context of one pipeline and one solution (within the solution experience). Therefore other pipelines might not show the latest deployed solution version or other important run information associated with different pipelines. Notice that the Deployment Pipeline Configuration app shows run information across all pipelines and all solutions for the current host.
 
 ### Can the host environment also be used as a development or target environment?
 
