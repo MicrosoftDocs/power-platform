@@ -21,7 +21,8 @@ This article provides detailed information about Microsoft Power Platform licens
 
 Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages provide users the ability to create and run apps, bots, and custom websites across data sources that extend beyond Microsoft 365, such as Salesforce and on-premises and custom data sources. These plans also include access to [Dataverse](/power-apps/maker/data-platform/data-platform-intro) to store and manage data. 
 
-[AI Builder](https://go.microsoft.com/fwlink/?linkid=2103071) proposes AI features which can be used in Power Apps, Power Automate, and Microsoft Copilot Studio.
+> [!Note]
+> [AI Builder](https://go.microsoft.com/fwlink/?linkid=2103071) proposes AI features which can be used in Power Apps, Power Automate, and Microsoft Copilot Studio.
 
 More details around capabilities and pricing of the Power Platform offers can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
