@@ -4,7 +4,7 @@ description: Instructions to install, update, and uninstall the Power Platform T
 author: snizar007
 ms.author: snizar
 ms.reviewer: jdaly
-ms.date: 12/05/2023
+ms.date: 01/15/2024
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
