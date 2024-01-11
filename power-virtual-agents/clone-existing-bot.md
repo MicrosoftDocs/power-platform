@@ -28,7 +28,7 @@ Copilots that use any of these features aren't eligible to be cloned:
 
 ## Limitations
 
-When you clone the contents of a classic copilot, any topic that's authored using Bot Framework Composer is created as an empty topic with none of the content or nodes in the original topic. You need to add content to those topics after your copilot is created. However, the cloned topic has the same input and output variables as the original.
+When you clone the contents of a classic copilot, any topic authored using Bot Framework Composer is created as an empty topic with none of the content or nodes in the original topic. You need to add content to those topics after your copilot is created. However, the cloned topic has the same input and output variables as the original.
 
 ## Clone a copilot
 
@@ -58,4 +58,3 @@ When you clone the contents of a classic copilot, any topic that's authored usin
 [Create and edit topics in your Microsoft Copilot Studio copilot](authoring-create-edit-topics.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
-
