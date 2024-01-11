@@ -71,7 +71,8 @@ pac auth list
 Running the `pac auth list` command returns all authentication profiles:
 
 ```text
-TODO: add response
+Index Active Kind      Name Friendly Name                   Url                                 User                                     Cloud  Type
+[1]   *      UNIVERSAL      Personal Productivity (Default) https://x.crm.dynamics.com/         user@contoso.onmicrosoft.com             Public User
 ```
 
 Now, select a different authentication profile by using the following example:
