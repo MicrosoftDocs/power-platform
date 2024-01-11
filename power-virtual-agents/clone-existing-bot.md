@@ -1,6 +1,6 @@
 ---
-title: Create a copilot from the content of an existing copilot
-description: Create a pcopilot by cloning the content of an existing copilot in Microsoft Copilot Studio.
+title: Create a copilot from an existing classic copilot
+description: Create a copilot by cloning an existing, classic copilot in Microsoft Copilot Studio.
 ms.date: 1/8/2023
 ms.topic: how-to
 author: iaanw
@@ -12,11 +12,11 @@ ms.collection: virtual-agent
 ms.custom: bap-template
 ---
 
-# Create a copilot from the content of an existing copilot
+# Create a copilot from an existing classic copilot
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Use familiar content to explore features of Microsoft Copilot Studio by cloning an existing copilot.
+You can clone an existing, classic copilot into an updated copilot to explore the latest features of Microsoft Copilot Studio.
 
 ## Eligibility
 
@@ -28,41 +28,34 @@ Copilots that use any of these features aren't eligible to be cloned:
 
 ## Limitations
 
-When you clone the content of a copilot, any topic that's authored using Bot Framework Composer is created as an empty topic with none of the content or nodes in the original topic. You need to add content to those topics after your copilot is created. However, the cloned topic has the same input and output variables as the original.
+When you clone the contents of a classic copilot, any topic that's authored using Bot Framework Composer is created as an empty topic with none of the content or nodes in the original topic. You need to add content to those topics after your copilot is created. However, the cloned topic has the same input and output variables as the original.
 
 ## Clone a copilot
 
-1. Open your copilot in Copilot Studio.
+1. Open your classic copilot in Copilot Studio.
 
-1. On the **Overview** page, select **Try the preview**.
+1. On the **Overview** page, select **Copy this bot**.
 
-   :::image type="content" source="media/clone-existing-bot/preview-tile.png" alt-text="Screenshot of tile with invitation to try the new Microsoft Copilot Studio preview.":::
+   :::image type="content" source="media/clone-existing-bot/copy-this-bot-tile.png" alt-text="Screenshot of tile with the Copy this bot button.":::
 
-   A window opens with a description of preview features.
+   A **Chatbots** window opens, giving you the option to **Copy and convert this bot** or **Try out the new studio experience**.
 
-1. Select **Continue**.
+1. Select **Copy and convert this bot** and give your copy a name or use the default name.
 
-   > [!IMPORTANT]
-   > If your [bot isn't eligible for cloning](#eligibility), Microsoft Copilot Studio prompts you to create a preview bot instead.
-
-1. Select **Copy and convert this bot**.
-
-1. (Optional) Give your preview bot a new **Bot name**.
+   :::image type="content" source="media/clone-existing-bot/copy-bot-create-tile.png" alt-text="Screenshot of tile with two options to either copy the bot or to create a new bot in Copilot Studio.":::
 
 1. Select **Create**.
 
-    :::image type="content" source="media/clone-existing-bot/modal-step2.png" alt-text="Screenshot of the Chatbots (preview) tile where an existing bot can be copied and converted for use in the Microsoft Copilot Studio preview.":::
+   > [!IMPORTANT]
+   > If your [bot isn't eligible for cloning](#eligibility), Copilot Studio prompts you to create a new bot instead.
 
-    > [!TIP]
-    > There are some limitations on the types of content that can be copied from an existing bot. Microsoft Copilot Studio notifies you before it creates your preview bot if any limitations apply to your existing bot.
-
-1. Wait for Microsoft Copilot Studio to create your preview bot. When it's ready, select **Go to your bot**.
+1. Wait for Microsoft Copilot Studio to create your new copilot copy. When it's ready, select **Go to your bot**. You see your new copy copilot opened in Copilot Studio.
 
     :::image type="content" source="media/clone-existing-bot/modal-complete.png" alt-text="Screenshot of the completion screen.":::
 
 ## Related topics
 
-[Create and edit topics in your Microsoft Copilot Studio bot](authoring-create-edit-topics.md).
+[Create and edit topics in your Microsoft Copilot Studio copilot](authoring-create-edit-topics.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
 
