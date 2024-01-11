@@ -1,8 +1,8 @@
 ---
-title: "Use a system fallback topic"
+title: "Configure the system fallback topic"
 description: "A system fallback topic can be triggered when the copilot doesn't understand the user's questions."
 keywords: "PVA"
-ms.date: 03/24/2023
+ms.date: 1/10/2024
 
 ms.topic: article
 author: iaanw
