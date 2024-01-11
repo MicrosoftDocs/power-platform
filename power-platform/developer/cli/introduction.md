@@ -34,16 +34,51 @@ There are three ways to install the Power Platform CLI.
 |[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows,Linux,MacOS|Install using [.NET tool commands](/dotnet/core/tools/global-tools)|
 |[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Install this when you need to use [pac data](reference/data.md) or certain [pac package](reference/package.md) commands |
 
-
 ## Manage auth profiles
 
 Most PAC CLI commands require authenticated access to resources. You will need to create and use auth portals.
 
-TODO: 
+### Connect to your tenant
 
-- Describe the Visual Studio Code Extension Auth Profiles UI
-- Describe the corresponding [pac auth](reference/auth.md) commands
+The `pac auth create` command is what you should use to connect to your tenant. Running `pac auth create` creates an authentication profile on your machine. You can have multiple authentication profiles available. Having multiple authentication profiles is interesting when you work with multiple tenants. For instance, when your company uses multiple tenants (a production tenant and a test / QA tenant) or when you are a consultant that works for multiple customers.
 
+The `pac auth create` command has a couple of helpful parameters. The first one is the `--environment` parameter. The `--environment` parameter enables you to automatically connect to the right environment. If you omit the `--environment` parameter, you are connected to the default environment, but with the `--environment` parameter added to it, you can connect to a different one. You can use the environment ID, url, unique name, or partial name as the value.
+
+The second one is the `--deviceCode` parameter. In environments where you don't have the ability to use an interactive experience, adding the `--deviceCode` parameter will make sure you can still connect. In, for instance, GitHub Codespaces, the `--deviceCode` parameter automatically gets added when you run `pac auth create`.
+
+#### Example
+
+To connect to the `HR-Dev` environment, you can use the following example:
+
+```powershell
+pac auth create --environment "HR-Dev"
+```
+
+### Switch to another authentication profile
+
+When you have multiple authentication profiles, you can easily switch using the `pac auth list` and `pac auth select` commands.
+
+The `pac auth list` command can be used to list all authentication profiles on your machine. The `pac auth select` command selects a different command.
+
+#### Example
+
+To list all authentication profiles, use the following example:
+
+```powershell
+pac auth list
+```
+
+Running the `pac auth list` command returns all authentication profiles:
+
+```text
+TODO: add response
+```
+
+Now, select a different authentication profile by using the following example:
+
+```powershell
+pac auth select --index 2
+```
 
 <!-- 
 You can install Microsoft Power Platform CLI using either or both of the following methods:
@@ -161,7 +196,6 @@ Tool access is user-specific, not machine global. A global tool is only availabl
 
 Microsoft Power Platform CLI is available for use in the GCC and GCC High (US Sovereign cloud) regions. See the [`--cloud`](reference/auth.md#--cloud--ci) parameter for the [pac auth create](reference/auth.md#pac-auth-create) command to find out about supported US Sovereign cloud environments.
 
-
 <!-- ## Common commands
 
 This table lists some of the common commands used in the PAC CLI.
@@ -182,8 +216,6 @@ This table lists some of the common commands used in the PAC CLI.
 
 > [!TIP]
 > For the complete list of supported commands, see [Microsoft Power Platform CLI Command Groups](reference/index.md) or  run the `pac` command or `pac` \<subcommand> - for example: `pac solution`. -->
-
-
 
 ### See also
 
