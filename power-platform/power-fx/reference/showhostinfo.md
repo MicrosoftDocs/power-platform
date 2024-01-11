@@ -26,7 +26,7 @@ The **ShowHostInfo** function is used to display information to the user in the 
 
 **ShowHostInfo(HostInfo)**
 
-•	HostInfo – Required. The type of information to display.
+HostInfo – Required. The type of information to display.
 
 ## Examples
 
