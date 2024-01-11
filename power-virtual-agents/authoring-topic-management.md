@@ -44,11 +44,11 @@ You can see if a topic has errors, and the number of errors, in the **Errors** c
 
 1. Select **Topic checker**.
 
-   :::image type="content" source="media/authoring-topic-management/open-topic-checker.png" alt-text="Screenshot of the Topic checker and the list of errors in the topic.":::
+   :::image type="content" source="media/authoring-topic-management/open-topic-checker.png" alt-text="Screenshot of the Topic checker button location.":::
 
    You see the **Topic checker** pane open that reveals a list of the topic's errors and warnings.
 
-   :::image type="content" source="media/authoring-topic-management/topic-checker-pane.png" alt-text="Screenshot of the Topic checker and the list of errors in the topic.":::
+   :::image type="content" source="media/authoring-topic-management/topic-checker-pane.png" alt-text="Screenshot of the Topic checker list of errors in the topic.":::
 
 1. Select an error to go directly to the node that contains the error.  
 
@@ -117,13 +117,13 @@ To shift the conversation from the current topic to another topic without starti
 
 You can insert more nodes after the **Redirect** node if needed. When the topic from the redirection ends, the copilot returns to the original topic and continues with any nodes that continue after the **Redirect** node.
 
-:::image type="content" source="media/authoring-topic-management/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes that follow a redirected topic node." lightbox="media/authoring-topic-management/authoring-subtopic-redirect.png":::
+:::image type="content" source="media/authoring-topic-management/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing the flow of nodes from a question that follow a redirected topic node." lightbox="media/authoring-topic-management/authoring-subtopic-redirect.png":::
 
 ### End the current topic or all topics
 
 By default, a redirected conversation returns to the original topic at the end of the called topic. Use the **End current topic** or **End all topics** nodes to exit a topic—or the conversation—at any time.
 
-:::image type="content" source="media/authoring-topic-management/end-topic.png" alt-text="Screenshot of the authoring canvas showing nodes that follow a redirected topic node.":::
+:::image type="content" source="media/authoring-topic-management/end-topic.png" alt-text="Screenshot that shows where the End current topic and End all topics selections are located.":::
 
 - An **End current topic** node ends the current topic. If the current topic is called from another topic, the conversation returns to the original topic immediately. A common use of this node is in a condition branch. One branch exits the topic early, while another branch continues the current topic.
 - An **End all topics** node ends all active topics immediately. Your copilot considers the next message from the user as the first message in a new conversation.
