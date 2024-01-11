@@ -93,6 +93,12 @@ If you choose to [install a previous version](#install-a-previous-version), you 
 1. Search for 'power platform tools'.
 1. In the main window, select **Uninstall**.
 
+## Authentication profile management
+
+When you install the Visual Studio Code extension, you can view and manage authentication profiles.
+
+<!-- TODO: Details & Screenshots -->
+
 
 ### See also
 
