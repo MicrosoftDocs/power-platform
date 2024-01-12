@@ -325,6 +325,22 @@ In this example, the flow created using Power Automate is being used outside the
 
 An environment has multiple apps. There are flows for data management that don't directly support the app but ensure the data quality. The user needs a standalone Power Automate license.
 
+## AI Builder license questions
+
+Find global AI Builder licensing documentation [here](https://go.microsoft.com/fwlink/?linkid=2101001) and FAQ [here](https://go.microsoft.com/fwlink/?linkid=2246312).
+
+### How are licensed AI Builder actions within a Power Automate flow?
+
+In order to add and run AI Builder actions within a flow, you need specific AI Builder licensing: AI Builder actions consume AI Builder credits, which can be obtained within Power Automate premium licenses, within other Power Platform premium licenses, or, mainly, within AI Builder capacity Add-on. 
+
+Credits must be [available in flow's environment](https://go.microsoft.com/fwlink/?linkid=2238930).
+
+You can also use [AI Builder trial](https://go.microsoft.com/fwlink/?linkid=2246833).
+
+### How many credits are included in Power Automate premium licenses?
+
+Detail of seeded credits can be found [here](https://go.microsoft.com/fwlink/?linkid=2239020).
+
 ## Enforcement
 
 ### Why is my flow turned off?
