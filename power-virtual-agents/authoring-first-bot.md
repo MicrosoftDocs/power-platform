@@ -19,6 +19,11 @@ searchScope: "Power Virtual Agents"
 
 Copilot Studio lets you create a copilot, using built-in content building blocks containing topics, trigger phrases, and preauthored copilot conversations.
 
+>[!NOTE]
+> Bots created in the web app and in Microsoft Teams come with authentication pre-configured to use **Only for Teams and Power Apps** authentication.
+
+You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md).
+
 ## Prerequisites
 
 [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
@@ -29,8 +34,7 @@ To create your first copilot, see [Quickstart: Create and deploy a Microsoft Cop
 
 If you create a copilot with the Copilot Studio app in Microsoft Teams, you won't see the copilot in the [web app of Copilot Studio](https://web.powerva.microsoft.com).
 
-> [!WARNING]
-> New copilots are configured with "No authentication" and without [web channel security](configure-web-security.md), therefore they can be accessed by anyone with a link to it. Ensure you have the right [authentication](configuration-end-user-authentication.md), [access](configuration-end-user-authentication.md), and [security](configure-web-security.md) configurations set up.
+New copilots created in the web app and in Teams are configured with **Only for Teams and Power Apps** authentication.
 
 ### Create a copilot
 
@@ -101,7 +105,7 @@ You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-f
 > [!IMPORTANT]
 > You can't create a bot in a hidden membership team. Hidden membership is where members can't see the details of other members. If you try adding a bot to a hidden team, you see an error message.
 >
-> For more information about hidden membership, see [Group visibility options](https://learn.microsoft.com/graph/api/resources/group#group-visibility-options).
+> For more information about hidden membership, see [Group visibility options](/graph/api/resources/group#group-visibility-options).
 
 The first time you create a bot in a team, it takes 1 to 10 minutes to build the necessary systems in the backend. Every bot you create after your first bot takes only 1 or 2 minutes to create.
 
