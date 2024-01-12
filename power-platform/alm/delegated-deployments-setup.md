@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 12/13/2023
+ms.date: 01/10/2024
 ms.custom: 
 ---
 # Deploy pipelines as a service principal or pipeline owner (preview)
@@ -35,15 +35,15 @@ For a delegated deployment with a service principal, follow these steps.
 1. Add the enterprise application as a server-to-server (S2S) user in your pipelines host environment and each target environment it deploys to.
 1. Assign the Deployment Pipeline Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments. Lower permission security roles can't deploy plug-ins and other code components.
 1. Choose (check) **Is delegated deployment** on a pipeline stage, select **Service Principal**, and enter the Client ID. Select **Save**.
-1. Create a cloud flow within the pipelines host environment. Alternative systems can be integrated using pipelines' Dataverse APIs.
-1. Select the **OnApprovalStarted** trigger. **OnDeploymentRequested** can also be used if **Pre-Export Step Required** is disabled on the pipeline stage.
+1. Create a cloud flow within the pipelines host environment. Alternative systems can be integrated using pipelines' Microsoft Dataverse APIs.
+1. Select the **OnApprovalStarted** trigger. 
 1. Add steps for your desired custom logic.
 1. Insert an approval step. Use Dynamic content for sending deployment request information to the approver(s).
 1. Insert a condition.
-1. Create a Dataverse connection for the service principal. You’ll need a client ID and secret.
-1. Add Dataverse **Perform an unbound action** using the settings shown below.  
+1. Create a Dataverse connection for the service principal. You need a client ID and secret.
+1. Add Dataverse **Perform an unbound action** using the settings shown here.  
     Action Name: UpdateApprovalStatus
-    ApprovalComments: Insert Dynamic Content. Comments will be visible to the requestor of the deployment.
+    ApprovalComments: Insert Dynamic Content. Comments are visible to the requestor of the deployment.
     ApprovalStatus: 20 = approved, 30 = rejected
     ApprovalProperties: Insert Dynamic Content. Admin information accessible from within the pipelines host.
 
@@ -57,7 +57,7 @@ For a delegated deployment with a service principal, follow these steps.
     
 1. Save, and then test the pipeline.
 
-Below is a screenshot of a canonical approval flow.
+Here's a screenshot of a canonical approval flow.
 
 :::image type="content" source="media/canonical-approval-flow.png" alt-text="Canonical Approval Flow":::
 
@@ -78,10 +78,54 @@ To deploy as the pipeline stage owner, follow these steps.
 
 1. Sign in as the pipeline stage owner. Only the owner can enable or modify these settings. Team ownership isn't allowed.
 2.	Select **Is delegated deployment** on a pipeline stage, and select **Stage Owner**.
-    - The pipeline stage owner’s identity will be used for all deployments to this stage.
+    - The pipeline stage owner’s identity is used for all deployments to this stage.
     - Similarly, this identity must be used to approve deployments.
 1.	Create a cloud flow in a solution within the pipelines host environment.
     1. Select the **OnApprovalStarted** trigger.
     1. Insert actions as desired. For example, an approval.
     1. Add Dataverse **Perform an unbound action**.  
       Action Name: UpdateApprovalStatus (20 = completed, 30 = rejected)
+
+## Frequently asked questions
+
+### I'm getting an error _The deployment stage isn't an owner of the service principal (&lt;AppId&gt;). Only owners of the service principal may use it for delegated deployments._
+
+Ensure you’re the owner of the Enterprise Application (Service Principal) in Microsoft Entra ID (formerly Azure AD). You might only be the owner of the App Registration, and not the Enterprise Application.
+
+:::image type="content" source="media/enterprise-applications.png" alt-text="Enterprise applications" lightbox="media/enterprise-applications.png":::
+
+### For stage owner based delegated deployments, why can't I assign another user as the deployer?
+
+For security reasons, you must sign in as the user that will be set as the pipeline stage owner. This prevents adding a nonconsenting user as the deployer.
+
+### Why are my delegated deployments stuck in a pending state?
+
+All delegated deployments are pending until approved. Ensure your admin has configured a Power Automate approval flow or other automation, that it's working properly, and that the deployment was approved.
+
+### Who owns deployed solution objects?
+
+The deploying identity. For delegated deployments, the owner is the delegated service principal or pipeline stage owner.
+
+### How can makers access deployed objects within target environments?
+
+Requesting makers might not have access to deployed resources in target environments. Admins must assign security roles and share deployed apps, flows, and so on, within the Power Platform admin center. Alternatively, admins can build automations to manage access.
+
+### Can I add custom approval steps?
+
+Yes. For example, Power Automate approvals can be customized to meet the needs of your organization. You might also integrate other approval systems.
+
+### I'm getting an error _Delegated deployments of type 'ServicePrincipal' may only be approved or rejected by the Service Principal configured in the deployment stage._
+
+Ensure the Dataverse custom action `UpdateApprovalStatus` is called by the service principal. If using Power Automate approvals, ensure this action is configured to use the delegate service principal's connection.
+
+### I'm getting an error _Delegated deployments of type 'Owner' may only be approved or rejected by the owner of the deployment stage._
+
+Ensure the Dataverse custom action `UpdateApprovalStatus` is called by the pipeline stage owner. If using Power Automate approvals, ensure this action is configured to use the delegate pipeline stage owner's connection.
+
+### I'm getting an error in my approval flow _Unable to find approval status attribute for stage run record._
+
+This happens when the approval status isn't yet in the pending state. Make sure this is a delegated deployment and you're using the `OnApprovalStarted` trigger in your approval flow.
+
+### Can I use different service principals for different pipelines and stages?
+
+Yes.
