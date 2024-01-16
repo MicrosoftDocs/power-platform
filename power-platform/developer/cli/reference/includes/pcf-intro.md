@@ -1,4 +1,1 @@
-<!-- 
-Instructions: Remove comments and this line. Add any content needed to introduce this command group
-
--->
+[Create and build a code component](/power-apps/developer/component-framework/create-custom-controls-using-pcf) explains how to use these commands.

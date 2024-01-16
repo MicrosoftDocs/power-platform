@@ -1,4 +1,1 @@
-<!-- 
-Instructions: Remove comments and this line. Add any content needed to introduce this command group
-
--->
+[Learn how to create and register a plug-in package using PAC CLI](../../../howto/cli-create-package.md)
