@@ -4,17 +4,20 @@ description: "Learn how to restore a recently deleted environment by using Micro
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/01/2021
+ms.date: 01/17/2024
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- matapg007 
 ---
+
 # Recover environment
 
-You can recover a recently deleted environment ([within 7 days of deletion](backup-restore-environments.md#how-long-are-my-manualon-demand-backups-and-system-backups-retained)), by using the Microsoft Power Platform admin center or the Power Apps cmdlet [Recover-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/recover-adminpowerappenvironment?view=pa-ps-latest).Production type environments with Dynamics 365 applications enabled will be available for up to 28 days.
+You can recover a recently deleted environment ([within 7 days of deletion](backup-restore-environments.md#how-long-are-my-manualon-demand-backups-and-system-backups-retained)), by using the Microsoft Power Platform admin center or the Power Apps cmdlet [Recover-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/recover-adminpowerappenvironment?view=pa-ps-latest). Production environments with Dynamics 365 applications will be available for up to 28 days.
 
 > [!NOTE]
 > Available storage capacity might be required in order to successfully recover an environment depending on the type of environment being recovered. For information on viewing your current storage capacity, see [Microsoft Dataverse storage capacity](capacity-storage.md). 
