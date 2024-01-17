@@ -35,7 +35,7 @@ Copilot Studio is available as both a standalone web app, and as a discrete app 
 
 | Copilot Studio version | Use cases | More information |
 | -------------------------------- | --------- | ---------------- |
-| Web app at https://web.powerva.microsoft.com | - An IT admin who wants to create copilots for customers. <br> - Familiar with chatbot services, you want to trial or test Copilot Studio.<br> - A copilot user who wants to explore advanced copilot concepts, such as entities and variables, and create complex copilots. | [Explore the Copilot Studio demo](https://web.test.powerva.microsoft.com/tryit?azure-portal=true) |
+| Web app at https://web.powerva.microsoft.com | - An IT admin who wants to create copilots for customers. <br> - Familiar with chatbot services, you want to trial or test Copilot Studio.<br> - A copilot user who wants to explore advanced copilot concepts, such as entities and variables, and create complex copilots. | [Explore the Copilot Studio demo](https://web.powerva.microsoft.com/tryit?azure-portal=true) |
 | Teams app | An employee or member of an organization who wants to use copilots to answer common employee questions. <br> - You want to use advanced concepts, such as entities and variables, and have an internally-available copilot in Teams.<br> - You want to create and distribute a copilot in the shortest time possible. | [Open or add the Microsoft Copilot Studio app in Teams](https://aka.ms/PVATeamsApp?azure-portal=true) |
 
 ## Important information
