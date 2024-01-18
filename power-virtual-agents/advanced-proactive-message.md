@@ -23,12 +23,8 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 - Providing reminders or news updates. For example, the bot could send a reminder message to complete online training.
 
 > [!IMPORTANT]
-> Bots created or converted with the [unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-microsoft-copilot-studio) can't send proactive messages in Teams. Your bot can only send proactive messages if:
+> Proactive Messages are now available in Copilot Studio in addition to the feature available to classic Power Virtual Agents bots.
 > 
-> - You create your bot in the Teams app.
-> - You create a **Classic** bot.
-> - You created your bot before May 23, 2023.
->
 > A bot can't deliver messages if the recipient:
 >
 > - Doesn't have the bot installed in Microsoft Teams.
