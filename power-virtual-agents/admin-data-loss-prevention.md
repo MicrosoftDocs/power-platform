@@ -48,13 +48,12 @@ The following Microsoft Copilot Studio connectors are available in the Power Pla
 
 | Connector name | Description |
 |-------------------------|-------------------------|
-| Chat without Microsoft Entra ID authentication in Copilot Studio | Block bot makers from publishing chatbots that aren't configured for authentication. </br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot. </br>See [Example 3: Use DLP to require end-user authentication for Microsoft Copilot Studio chatbots](dlp-example-3.md) for more details. |
+| Chat without Microsoft Entra ID authentication in Copilot Studio | Block bot makers from publishing chatbots that aren't configured for authentication. </br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot. </br>See [Example: Use DLP to require end-user authentication for Microsoft Copilot Studio chatbots](dlp-example-3.md) for more details. |
 | Direct Line channels in Copilot Studio | Block any Direct Line channel. </br>For example, the Demo website, Custom website, and Mobile app channels would be blocked. |
 | Facebook channel in Copilot Studio | Block bot makers from enabling or using the Facebook channel. |
-1.md) and [Example 2: Use DLP to block HTTP requests from Microsoft Copilot Studio chatbots](dlp-example-2.md) for more details. |
 | Microsoft Teams channel in Copilot Studio | Block bot makers from enabling or using the Teams channel. |
 | Omnichannel in Copilot Studio | Block bot makers from enabling or using the Omnichannel channel. |
-| Skills with Copilot Studio | Block bot makers from using skills in Microsoft Copilot Studio chatbots. </br>See [Example 1: Use DLP to block skills in Microsoft Copilot Studio chatbots](dlp-example-
+| Skills with Copilot Studio | Block bot makers from using skills in Microsoft Copilot Studio chatbots. </br>See [Example: Use DLP to block skills in Microsoft Copilot Studio chatbots](dlp-example-1.md) and [Example: Use DLP to block HTTP requests from Microsoft Copilot Studio chatbots](dlp-example-2.md) for more details. |
 
 ## Example DLP policy configurations
 
