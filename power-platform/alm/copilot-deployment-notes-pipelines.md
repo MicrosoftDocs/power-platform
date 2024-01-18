@@ -5,6 +5,7 @@ author: ASheehi1
 ms.author: matp
 ms.topic: how-to
 ms.date: 09/28/2023
+ms.collection: bap-ai-copilot
 contributors:
    - ASheehi1
 ms.custom: template-how-to

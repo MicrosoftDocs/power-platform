@@ -7,6 +7,7 @@ ms.custom:
 ms.topic: article
 author: ASheehi1
 ms.author: matp
+ms.collection: bap-ai-copilot
 ---
 
 # FAQ for use Copilot to generate deployment notes in pipelines
