@@ -35,13 +35,13 @@ See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](a
 
 1. Select the connector's **More actions** menu (**&vellip;**), and then select **Block**.
 
-    :::image type="content" source="media/dlp-example-1/block-connector.png" alt-text="Screenshot of the Power Platform admin center  showing the contextual menu for a connector available from the more menu icon.":::
+    :::image type="content" source="media/dlp-example-1/CopilotStudioDLPSkillsConnector.png" alt-text="Screenshot of the Power Platform admin center  showing the contextual menu for a connector available from the more menu icon.":::
 
 1. Select **Next**.
 
 1. Review your policy, then select **Update policy** to apply the DLP changes.
 
-    :::image type="content" source="media/dlp-example-1/update-policy.png" alt-text="Screenshot of the review screen when creating a DLP policy ":::
+    :::image type="content" source="media/dlp-example-1/CopilotStudioDLPSkillsConnectorBlock.png" alt-text="Screenshot of the review screen when creating a DLP policy ":::
 
 ## Confirm policy enforcement in Microsoft Copilot Studio
 
