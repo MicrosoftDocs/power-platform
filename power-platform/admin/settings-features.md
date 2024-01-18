@@ -49,7 +49,7 @@ Make sure you have the System Administrator or System Customizer security role o
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| AI suggestions for formula columns  | If **On**, app makers will be able to describe what the formula should do and get AI generated results. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns&tabs=type-or-paste#get-formula-suggestions-preview-1)  | Off |
+| AI suggestions for formula columns  | If **On**, app makers will be able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns&tabs=type-or-paste#get-formula-suggestions-preview-1)  | Off |
 
 ## Embedded content
 | Setting | Description | Default value |
