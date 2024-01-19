@@ -13,12 +13,12 @@ search.audienceType:
 ---
 
 # Creating a service principal application using PowerShell
-Authenticating via username and password is often not ideal, especially with the rise of multifactor authentication.  In such cases, service principal (or client credentials flow) authentication is preferred.  This can be done by both registering a new service principal application in your own Azure Active Directory (Azure AD) tenant and then registering that same application with Power Platform.
+Authenticating via username and password is often not ideal, especially with the rise of multifactor authentication.  In such cases, service principal (or client credentials flow) authentication is preferred.  This can be done by both registering a new service principal application in your own Microsoft Entra tenant and then registering that same application with Power Platform.
 
 ## Registering an admin management application
-First, the client application needs to be registered in your Azure Active Directory (Azure AD) tenant.  To set this, review the [Authentication](programmability-authentication.md) article for Power Platform APIs because the same application setup is required for PowerShell.
+First, the client application needs to be registered in your Microsoft Entra tenant.  To set this, review the [Authentication](programmability-authentication.md) article for Power Platform APIs because the same application setup is required for PowerShell.
 
-After your client application is registered in Azure AD, it also needs to be registered with Microsoft Power Platform.  Today, there's no way to do this via the Power Platform admin center; it must be done programmatically via Power Platform API or PowerShell for Power Platform administrators.  A service principal can't register itself—by design, the application must be registered by an **administrator username and password context**.  This ensures that the application is created by someone who is an administrator for the tenant.
+After your client application is registered in Microsoft Entra ID, it also needs to be registered with Microsoft Power Platform.  Today, there's no way to do this via the Power Platform admin center; it must be done programmatically via Power Platform API or PowerShell for Power Platform administrators.  A service principal can't register itself—by design, the application must be registered by an **administrator username and password context**.  This ensures that the application is created by someone who is an administrator for the tenant.
 
 To register a new management application, use the following script:
 
@@ -44,6 +44,6 @@ Get-AdminPowerAppEnvironment
 ```
 
 ## Limitations of service principals
-Currently, service principal authentication works for environment management, tenant settings, and Power Apps management.  Cmdlets related to Flow are supported for service principal authentication in situations where a license isn't required, as it isn't possible to assign licenses to service principal identities in Azure Active Directory.
+Currently, service principal authentication works for environment management, tenant settings, and Power Apps management.  Cmdlets related to Flow are supported for service principal authentication in situations where a license isn't required, as it isn't possible to assign licenses to service principal identities in Microsoft Entra ID.
 
-Service principal applications are treated within Power Platform similar to how normal users are with the Power Platform Administrator role assigned.  Granular roles and permissions can't be assigned to limit their capabilities.  The application doesn't get any special role assigned in Azure AD, as this is how platform services treat requests made by service principals.
+Service principal applications are treated within Power Platform similar to how normal users are with the Power Platform Administrator role assigned.  Granular roles and permissions can't be assigned to limit their capabilities.  The application doesn't get any special role assigned in Microsoft Entra ID, as this is how platform services treat requests made by service principals.

@@ -83,7 +83,7 @@ The following table describes the miscellaneous privileges, which in the new, mo
 | Reparent user | prvReparentUser | [Create users](create-users.md) |
 | Search Availability | prvSearchAvailability | Not applicable |
 | Send Email as Another User | prvSendAsUser  | [Delegate users](use-outlook-category-track-appointments-emails.md#delegate-users) |
-| Send Invitation | prvSendInviteForLive | [Invite users with Azure Active Directory B2B collaboration](invite-users-azure-active-directory-b2b-collaboration.md) |
+| Send Invitation | prvSendInviteForLive | [Invite users with Microsoft Entra B2B collaboration](invite-users-azure-active-directory-b2b-collaboration.md) |
 | Turn On Tracing | Not applicable | [Plug-in and custom workflow activity tracing](system-settings-dialog-box-customization-tab.md) |
 | Use internet marketing module | prvUseInternetMarketing | [Create a quick campaign using in-app marketing (Sales)](/dynamics365/customerengagement/on-premises/developer/sample-distribute-a-quick-campaign) |
 | View Audit History | prvReadRecordAuditHistory | [Audit history](dataverse-privacy-dsr-guide.md#audit-history) |

@@ -12,7 +12,7 @@ ms.custom:
   - bap-template
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/23/2023
+ms.date: 01/02/2024
 search.audienceType: 
   - admin
 ---
@@ -50,7 +50,7 @@ The following table describes the predefined security roles in an environment th
 
 | Security role | Description |
 |---------|--------|
-| App Opener | Has [minimum privileges for common tasks](create-edit-security-role.md#minimum-privileges-for-common-tasks). This role is primarily used as a template to [create a custom security role](#create-or-configure-a-custom-security-role) for model-driven apps. It doesn't have any privileges to the core business tables, such as Account, Contact, and Activity. |
+| App Opener | Has [minimum privileges for common tasks](create-edit-security-role.md#minimum-privileges-for-common-tasks). This role is primarily used as a template to [create a custom security role](#create-or-configure-a-custom-security-role) for model-driven apps. It doesn't have any privileges to the core business tables, such as Account, Contact, and Activity. However, it has **Organization**-level read access to system tables, such as **Process**, to support reading system-supplied workflows. Note that this security role is used when a [new, custom security role is created](create-edit-security-role.md#create-a-security-role).  |
 | Basic User |  For out-of-the-box entities only, can run an app in the environment and perform common tasks on the records they own. It has privileges to the core business tables, such as Account, Contact, and Activity.<br/><br/>**Note**: The Common Data Service **User** security role was renamed **Basic User**. Only the name was changed; user privileges and role assignment are the same. If you have a solution with the Common Data Service **User** security role, you should update the solution before you import it again. Otherwise, you might inadvertently change the security role name back to **User** when you import the solution. |
 | Delegate | Allows code to [*impersonate*, or run as, another user](/powerapps/developer/common-data-service/impersonate-another-user). Typically used with another security role to allow access to records. |
 | Dynamics 365 Administrator | *Dynamics 365 administrator* is a Microsoft Power Platform service admin role. This role can do admin functions on Microsoft Power Platform because they have the system administrator role.  |
@@ -120,7 +120,7 @@ The following table describes which resources each security role can author.
 
 ## Assign security roles to users in an environment that has no Dataverse database
 
-For environments with no Dataverse database, a user who has the Environment Admin role in the environment can assign security roles to individual users or groups from Azure AD.
+For environments with no Dataverse database, a user who has the Environment Admin role in the environment can assign security roles to individual users or groups from Microsoft Entra ID.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -130,7 +130,7 @@ For environments with no Dataverse database, a user who has the Environment Admi
 
     :::image type="content" source="media/assign-security-role-nodb.png" alt-text="Screenshot of selecting a security role in the Power Platform admin center.":::
 
-1. Select **Add people**, and then specify the name or email address of one or more users or groups from Azure AD.
+1. Select **Add people**, and then specify the name or email address of one or more users or groups from Microsoft Entra ID.
 
     :::image type="content" source="media/assign-security-role-nodb-action.png" alt-text="Screenshot of adding users to the Environment Maker role in the Power Platform admin center.":::
 
@@ -138,7 +138,7 @@ For environments with no Dataverse database, a user who has the Environment Admi
 
 ## Assign security roles to users in an environment that has a Dataverse database
 
-Security roles can be assigned to individual users, [owner teams](manage-teams.md#types-of-teams), and [Azure AD group teams](manage-group-teams.md). Before you assign a role to a user, [verify the user's account has been added to and is enabled in the environment](troubleshooting-user-needs-read-write-access-organization.md).
+Security roles can be assigned to individual users, [owner teams](manage-teams.md#types-of-teams), and [Microsoft Entra group teams](manage-group-teams.md). Before you assign a role to a user, [verify the user's account has been added to and is enabled in the environment](troubleshooting-user-needs-read-write-access-organization.md).
 
 In general, a security role can only be assigned to users whose accounts are enabled in the environment. To assign a security role to a user account that's disabled in the environment, turn on **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings.
 
@@ -152,7 +152,7 @@ In general, a security role can only be assigned to users whose accounts are ena
 
 1. Make sure the correct business unit is selected in the list, and then select a role from the list of roles in the environment.
 
-1. Select **Add people**, and then specify the name or email address of one or more users or groups from Azure AD.
+1. Select **Add people**, and then specify the name or email address of one or more users or groups from Microsoft Entra ID.
 
 1. Select **Add**.
 

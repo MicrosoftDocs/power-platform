@@ -25,7 +25,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 - You have a security role that is enabled for creating support requests. Users having one of these security roles can create support requests:
 
-  - AAD Role Admin  
+  - Microsoft Entra Role Admin  
   - Environment Administrator (or System Administrator role in Dataverse)
   - Company Admin
   - Billing Admin

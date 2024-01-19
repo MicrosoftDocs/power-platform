@@ -113,14 +113,14 @@ This section describes the customer-managed key feature duties that each admin r
 
 #### Azure Key Vault and Power Platform/Dynamics 365 service admin tasks
 
-To enable customer-managed keys, first the key vault administrator creates a key in the Azure key vault and creates a Power Platform enterprise policy. When the enterprise policy is created, a special Azure Active Directory (Azure AD) managed identity is created. Next, the key vault administrator returns to the Azure key vault and grants the enterprise policy/managed identity access to the encryption key.
+To enable customer-managed keys, first the key vault administrator creates a key in the Azure key vault and creates a Power Platform enterprise policy. When the enterprise policy is created, a special Microsoft Entra ID managed identity is created. Next, the key vault administrator returns to the Azure key vault and grants the enterprise policy/managed identity access to the encryption key.
 
 The key vault administrator then grants the respective Power Platform/Dynamics 365 service admin read access to the enterprise policy. Once read permission is granted, the Power Platform/Dynamics 365 service admin can go to the Power Platform Admin Center and add environments to the enterprise policy. All added environments customer data is then encrypted with the customer-managed key linked to this enterprise policy.
 
 ##### Prerequisites
 
-- An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules.
-- Global tenant admin or an  Azure AD with contributor permission to the Azure AD subscription and permission to create an Azure Key Vault and key. This is required to set up the key vault.
+- An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules (preview).
+- Global tenant admin or an  Microsoft Entra ID with contributor permission to the Microsoft Entra subscription and permission to create an Azure Key Vault and key. This is required to set up the key vault.
 
 ##### Create the key and grant access using Azure Key Vault
 
@@ -137,7 +137,7 @@ The Azure Key Vault administrator performs these tasks in Azure.
 
 ##### Prerequisite
 
-- Power Platform administrator must be assigned to either the Power Platform or Dynamics 365 Service administrator Azure AD role.
+- Power Platform administrator must be assigned to either the Power Platform or Dynamics 365 Service administrator Microsoft Entra role.
 
 ##### Manage environment's encryption in Power Platform admin center
 
@@ -371,8 +371,8 @@ Administrators who have Azure global, Dynamics 365, and Power Platform administr
 
 To manage the environment's encryption, you need the following permission:
 
-- Azure AD active user who has a Power Platform and/or Dynamics 365 admin security role.
-- Azure AD user who has either a global tenant admin, Power Platform or Dynamics 365 service admin role.
+- Microsoft Entra active user who has a Power Platform and/or Dynamics 365 admin security role.
+- Microsoft Entra user who has either a global tenant admin, Power Platform or Dynamics 365 service admin role.
 
 The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer-managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data, and encrypt it with the customer-managed key.
 
@@ -423,7 +423,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 
 To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
  > [!NOTE]
-   > Using **New key version** and setting **Rotation policy** to rotate your encryption key is now supported (preview).
+   > Using **New key version** and setting **Rotation policy** to rotate your encryption key is now supported.
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
@@ -444,10 +444,10 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 > [!IMPORTANT]
 > The environment will be disabled when it's added to the new enterprise policy. 
 
-### Change the environment's encryption key with a new key version (preview)
+### Change the environment's encryption key with a new key version
 You can change the environment’s encryption key by creating a new key version. When you create a new key version, the new key version is automatically enabled. All the storage resources detect the new key version and start applying it to encrypt your data. 
 
-When you modify the key or the key version, the protection of the root encryption key changes, but the data in the storage always remains encrypted with your key. There is no additional action required on your part to ensure that your data is protected. Rotating the key version doesn't impact performance. There is no downtime associated with rotating the key version. It can take 24 hours for all the resource providers to apply the new key version in the background. The previous key version must not be disabled as it's required for the service to use it for the re-encryption and for the support of database restoration. 
+When you modify the key or the key version, the protection of the root encryption key changes, but the data in the storage always remains encrypted with your key. There is no additional action required on your part to ensure that your data is protected. Rotating the key version doesn't impact performance. There is no downtime associated with rotating the key version. It can take 24 hours for all the resource providers to apply the new key version in the background. The previous key version **must not be disabled** as it's required for the service to use it for the re-encryption and for the support of database restoration. 
 
 To rotate the encryption key by creating a new key version, use the following steps.
 

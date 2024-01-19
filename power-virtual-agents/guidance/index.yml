@@ -27,6 +27,11 @@ landingContent:
             url: trigger-phrases-best-practices.md
           - text: Slot filling best practices
             url: slot-filling-best-practices.md
+          - text: Display data from arrays
+            url: Adaptive-Cards-Display-Data-from-Arrays.md
+          - text: Add feedback for every response 
+            url: Adaptive-Card-Add-feedback-for-every-response.md
+            
 
   # Card
   - title: Measuring and improving chatbots
@@ -41,6 +46,20 @@ landingContent:
             url: deflection-overview.md
           - text: Custom analytics strategy
             url: custom-analytics-strategy.md
+
+  # Card
+  - title: Planning a conversational AI project
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Projects best practices
+            url: project-best-practices.md
+          - text: Getting started
+            url: project-getting-started.md
+          - text: Building a team
+            url: project-building-a-team.md
+          - text: Project planning
+            url: project-planning.md
 
   # Card
   - title: Related content

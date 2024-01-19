@@ -3,8 +3,8 @@ title: Connector certification from ISV Studio | Microsoft Docs
 description: Learn how to submit a custom connector for certification by using ISV Studio.
 ms.date: 04/03/2023
 ms.reviewer: pehecke
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 ms.subservice: developer
 search.audienceType: 
   - developer
