@@ -50,7 +50,7 @@ A few variations are:
 - Include a lookup of the ruleset or rules as a pre-step. However, it would be slightly faster to pass in a configured or hard coded ruleset ID. It is recommended that you use a ruleset that meets your needs.
 - You can opt to not use the upload mechanism (see the upload for limitations).
 
-You need to determine the following:
+You need to determine the following requirements:
 
 - [Which geography?](#determine-a-geography)
 - [Which version?](#versioning)
@@ -69,7 +69,7 @@ Refer to the following topics for documentation on the individual APIs:
 
 ## Determine a geography
 
-When interacting with the Power Apps checker service, files are temporarily stored in Azure along with the reports that are generated. By using a geography specific API, you can control where the data is stored. Requests to a geography endpoint are routed to a regional instance based on best performance (latency to the requestor). Once a request enters a regional service instance, all processing and persisted data remains within that particular region. Certain API responses return regional instance URLs for subsequent requests once an analysis job is routed to a specific region. Be aware that each geography may have a different version of the service deployed at any given point in time due to the multi-stage safe deployment process, which ensures full version compatibility. Thus, the same geography should be used for each API call in the analysis lifecycle and may reduce overall execution time as the data may not have to travel as far over the wire. The following are the available geographies:
+When interacting with the Power Apps checker service, files are temporarily stored in Azure along with the reports that are generated. By using a geography specific API, you can control where the data is stored. Requests to a geography endpoint are routed to a regional instance based on best performance (latency to the requestor). Once a request enters a regional service instance, all processing and persisted data remains within that particular region. Certain API responses return regional instance URLs for subsequent requests once an analysis job is routed to a specific region. Be aware that each geography may have a different version of the service deployed at any given point in time. This is due to the multi-stage safe deployment process, which ensures full version compatibility. Thus, the same geography should be used for each API call in the analysis lifecycle and may reduce overall execution time as the data may not have to travel as far over the wire. The following are the available geographies:
 
 |Azure datacenter|Name|Geography|Base URI|
 |---|---|---|---|
@@ -103,11 +103,11 @@ When interacting with the Power Apps checker service, files are temporarily stor
 
 ## Versioning
 
-While not required, it is recommended to include the api-version query string parameter with the desired API version. The current API version is 2.0 for Rulesets and rules and 1.0 for all other requests. For example, below is a ruleset HTTP request specifying to use the 2.0 API version:
+While not required, it is recommended to include the api-version query string parameter with the desired API version. The current API version is 2.0 for Rulesets and rules and 1.0 for all other requests. For example, the following is a ruleset HTTP request specifying to use the 2.0 API version:
 
 `https://unitedstatesfirstrelease.api.advisor.powerapps.com/api/ruleset?api-version=2.0`
 
-If not provided, the latest API version is used by default. Using an explicit version number is recommended as the version will be incremented if breaking changes are introduced. If the version number is specified in a request, backward compatibility support in later (numerically greater) versions will be maintained.
+If not provided, the latest API version is used by default. Using an explicit version number is recommended as the version is incremented if breaking changes are introduced. If the version number is specified in a request, backward compatibility support in later (numerically greater) versions will be maintained.
 
 <a name="bkmk_rules"></a>
 
@@ -144,13 +144,13 @@ The tenant ID is the value of the `ObjectId` property that is returned from `Get
 
 ## Authentication and authorization
 
- Querying for rules and rulesets do not require an OAuth token, but all of the other APIs do require the token. The APIs do support authorization discovery by calling any of the APIs that require a token. The response will be an unauthorized HTTP status code of 401 with a WWW-Authenticate header, the authorization URI, and the resource ID. You should also provide your tenant ID in the `x-ms-tenant-id` header. Refer to [Power Apps Checker authentication and authorization](/powershell/powerapps/get-started-powerapps-checker#powerapps-checker-authentication-and-authorization) for more information. Below is an example of the response header returned from an API request:
+ Querying for rules and rulesets do not require an OAuth token, but all of the other APIs do require the token. The APIs do support authorization discovery by calling any of the APIs that require a token. The response will be an unauthorized HTTP status code of 401 with a WWW-Authenticate header, the authorization URI, and the resource ID. You should also provide your tenant ID in the `x-ms-tenant-id` header. Refer to [Power Apps Checker authentication and authorization](/powershell/powerapps/get-started-powerapps-checker#powerapps-checker-authentication-and-authorization) for more information. The following is an example of the response header returned from an API request:
 
 ```http
 WWW-Authenticate →Bearer authorization_uri="https://login.microsoftonline.com/0082fff7-33c5-44c9-920c-c2009943fd1e", resource_id="https://api.advisor.powerapps.com/"
 ```
 
-Once you have this information, you can choose to use the Microsoft Authentication Library (MSAL) or some other mechanism to acquire the token. Below is an example of how this can be done using C# and the [MSAL .NET](https://www.nuget.org/packages/Microsoft.Identity.Client/) library:
+Once you have this information, you can choose to use the Microsoft Authentication Library (MSAL) or some other mechanism to acquire the token. The following is an example of how this can be done using C# and the [MSAL .NET](https://www.nuget.org/packages/Microsoft.Identity.Client/) library:
 
 ```c#
 // Substitute your own environment URL here.
