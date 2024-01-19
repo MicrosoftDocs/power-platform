@@ -31,13 +31,13 @@ For information about using the checker service from PowerShell code see [Work w
 
 ## Alternative approaches
 
-Before reading through the details of how to interact at the lowest level with the web APIs, consider leveraging our PowerShell module, Microsoft.PowerApps.Checker.PowerShell, instead. It is a fully supported tool that is available in the [PowerShell Gallery](https://www.powershellgallery.com). The current restriction is that it does require Windows PowerShell. If unable to meet this requirement, then interacting with the APIs directly will likely be the best approach.
+Before reading through the details of how to interact at the lowest level with the web APIs, consider using our PowerShell module, Microsoft.PowerApps.Checker.PowerShell, instead. It is a fully supported tool that is available in the [PowerShell Gallery](https://www.powershellgallery.com). The current restriction is that it does require Windows PowerShell. If unable to meet this requirement, then interacting with the APIs directly will likely be the best approach.
 
 <a name="bkmk_getStarted"></a>
 
 ## Getting started
 
-It is important to note that a solution analysis can result in a long running process. It can typically take sixty seconds to upwards of five minutes depending on a variety of factors, such as number, size, and complexity of customizations and code. The analysis flow is multi-step and asynchronous beginning with initiating an analysis job with the status API being used to query for job completion. An example flow for an analysis is as follows: 
+It is important to note that a solution analysis can result in a long running process. It can typically take 60 seconds to upwards of five minutes depending on a various factors, such as number, size, and complexity of customizations and code. The analysis flow is multi-step and asynchronous beginning with initiating an analysis job with the status API being used to query for job completion. An example flow for an analysis is as follows: 
 
 1. Obtain an OAuth token
 2. Call upload (for each file in parallel)
@@ -50,7 +50,7 @@ A few variations are:
 - Include a lookup of the ruleset or rules as a pre-step. However, it would be slightly faster to pass in a configured or hard coded ruleset ID. It is recommended that you use a ruleset that meets your needs.
 - You can opt to not use the upload mechanism (see the upload for limitations).
 
-You will need to determine the following:
+You need to determine the following:
 
 - [Which geography?](#determine-a-geography)
 - [Which version?](#versioning)
@@ -69,7 +69,7 @@ Refer to the following topics for documentation on the individual APIs:
 
 ## Determine a geography
 
-When interacting with the Power Apps checker service, files are temporarily stored in Azure along with the reports that are generated. By using a geography specific API, you can control where the data is stored. Requests to a geography endpoint are routed to a regional instance based on best performance (latency to the requestor). Once a request enters a regional service instance, all processing and persisted data remains within that particular region. Certain API responses will return regional instance URLs for subsequent requests once an analysis job has been routed to a specific region. Be aware that each geography may have a different version of the service deployed at any given point in time due to the multi-stage safe deployment process, which ensures full version compatibility. Thus, the same geography should be used for each API call in the analysis lifecycle and may reduce overall execution time as the data may not have to travel as far over the wire. The following are the available geographies:
+When interacting with the Power Apps checker service, files are temporarily stored in Azure along with the reports that are generated. By using a geography specific API, you can control where the data is stored. Requests to a geography endpoint are routed to a regional instance based on best performance (latency to the requestor). Once a request enters a regional service instance, all processing and persisted data remains within that particular region. Certain API responses return regional instance URLs for subsequent requests once an analysis job has been routed to a specific region. Be aware that each geography may have a different version of the service deployed at any given point in time due to the multi-stage safe deployment process, which ensures full version compatibility. Thus, the same geography should be used for each API call in the analysis lifecycle and may reduce overall execution time as the data may not have to travel as far over the wire. The following are the available geographies:
 
 |Azure datacenter|Name|Geography|Base URI|
 |---|---|---|---|
@@ -107,13 +107,13 @@ While not required, it is recommended to include the api-version query string pa
 
 `https://unitedstatesfirstrelease.api.advisor.powerapps.com/api/ruleset?api-version=2.0`
 
-If not provided, the latest API version will be used by default. Using an explicit version number is recommended as the version will be incremented if breaking changes are introduced. If the version number is specified in a request, backward compatibility support in later (numerically greater) versions will be maintained.
+If not provided, the latest API version is used by default. Using an explicit version number is recommended as the version will be incremented if breaking changes are introduced. If the version number is specified in a request, backward compatibility support in later (numerically greater) versions will be maintained.
 
 <a name="bkmk_rules"></a>
 
 ## Rulesets and rules
 
-Power Apps checker requires a list of rules when run. These rules can be provided in the form of individual rules or a grouping of rules, referred to as a *ruleset*. A ruleset is a convenient way to specify a group of rules instead of having to specify each rule individually. For example, the solution checker feature uses a ruleset named *Solution Checker*. As new rules are added or removed, the service will include these changes automatically without requiring any change by the consuming application. If you require that the list of rules not change automatically as described above, then the rules can be specified individually.
+Power Apps checker requires a list of rules when run. These rules can be provided in the form of individual rules or a grouping of rules, referred to as a *ruleset*. A ruleset is a convenient way to specify a group of rules instead of having to specify each rule individually. For example, the solution checker feature uses a ruleset named *Solution Checker*. As new rules are added or removed, the service includes these changes automatically without requiring any change by the consuming application. If you require that the list of rules not change automatically as described above, then the rules can be specified individually.
 Rulesets can have one or more rules with no limit. A rule can be in no or multiple rulesets. You can get a list of all rulesets by calling the API as follows: `[Geographical URL]/api/ruleset`. This endpoint now requires authentication.
 
 ### Solution checker ruleset
@@ -186,7 +186,7 @@ For best-in-class encryption, the checker service only supports communications u
 
 ## Report format
 
-The result of the solution analysis is a zip file containing one or more reports in a standardized JSON format. The report format is based on static analysis results referred to as Static Analysis Results Interchange Format (SARIF). There are tools available to view and interact with SARIF documents. Refer to this [web site](https://sarifweb.azurewebsites.net/) for details. The service leverages version two of the [OASIS standard](https://docs.oasis-open.org/sarif/sarif/v2.0/sarif-v2.0.html).
+The result of the solution analysis is a zip file containing one or more reports in a standardized JSON format. The report format is based on static analysis results referred to as Static Analysis Results Interchange Format (SARIF). There are tools available to view and interact with SARIF documents. Refer to this [web site](https://sarifweb.azurewebsites.net/) for details. The service uses version two of the [OASIS standard](https://docs.oasis-open.org/sarif/sarif/v2.0/sarif-v2.0.html).
 
 
 ### See also
