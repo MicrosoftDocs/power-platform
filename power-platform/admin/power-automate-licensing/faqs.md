@@ -9,7 +9,7 @@ contributors:
 ms.component: pa-admin
 ms.topic: faq
 ms.date: 07/31/2023
-ms.author: prkoduku
+ms.author: tapanm
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
@@ -60,7 +60,7 @@ You need a Process license if your flow meets **one of the following criteria**:
 
 ### How many Process licenses do I need if I have multiple cloud flows, each of them invoking its own RPA flows in unattended mode on a machine?
 
-With one Process license, you can run multiple cloud flows by queueing them. For example, if have four independent cloud flows, and each one of them invokes its own desktop flow running on the same machine, you can run the first one at 09:00 AM, the second one at 11:00 AM, and so on, in the same virtual machine.
+With one Process license, you can run multiple cloud flows by queueing them. For example, if you have four independent cloud flows, and each one of them invokes its own desktop flow running on the same machine, you can run the first one at 09:00 AM, the second one at 11:00 AM, and so on, in the same virtual machine.
 
 In the following screenshot, all cloud flows are covered by one Process license, as they have a desktop flow running on the same machine. Any parent, child flows, in context flows of these cloud flows are also covered by the Process license on the machine.
 
@@ -324,6 +324,24 @@ In this example, the flow created using Power Automate is being used outside the
 #### Second example of Power Automate use outside of an app created using Power Apps context
 
 An environment has multiple apps. There are flows for data management that don't directly support the app but ensure the data quality. The user needs a standalone Power Automate license.
+
+## AI Builder license questions
+
+Find global AI Builder licensing information in the following articles:
+- [AI Builder licensing summary](https://go.microsoft.com/fwlink/?linkid=2101001)
+- [AI Builder licensing FAQ](https://go.microsoft.com/fwlink/?linkid=2246312).
+
+### How are licensed AI Builder actions within a Power Automate flow?
+
+In order to add and run AI Builder actions within a flow, you need specific AI Builder licensing: AI Builder actions consume AI Builder credits, which can be obtained within Power Automate premium licenses, within other Power Platform premium licenses, or, mainly, within AI Builder capacity add-on. 
+
+Credits must be [available in flow's environment](https://go.microsoft.com/fwlink/?linkid=2238930).
+
+You can also use [AI Builder trial](https://go.microsoft.com/fwlink/?linkid=2246833).
+
+### How many credits are included in Power Automate premium licenses?
+
+To find details of seeded credits, go to [Get entitlement to AI Builder credits](https://go.microsoft.com/fwlink/?linkid=2239020).
 
 ## Enforcement
 
