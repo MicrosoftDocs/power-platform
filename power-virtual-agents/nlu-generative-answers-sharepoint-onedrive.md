@@ -21,11 +21,11 @@ searchScope:
 You can use generative answers with content stored on SharePoint sites and OneDrive for Business. This capability works by pairing your bot with a specific site URL, such as _contoso.sharepoint.com/sites/policies_. When a bot user asks a question or makes a statement where the bot doesn't have a manually configured topic to use, it will search for relevant content from that site URL and all sub-paths and will use generative answers technology to help summarize this content into a targeted response.
 
 > [!CAUTION]
-> When you publish your bot, the calls are made on behalf of the user chatting with the bot, using the authentication settings configured in the bot, which must use manual authentication with the **Service Provider** type of **Microsoft Entra ID** (formerly Azure Active Directory).
+> When you publish your copilot, the calls are made on behalf of the user chatting with the copilot, using the authentication settings configured in the copilot, which must use manual authentication with the **Service Provider** type of **Microsoft Entra ID** (formerly Azure Active Directory).
 > Instructions for how to do this can be found in [Configure user authentication in Microsoft Copilot Studio](configuration-end-user-authentication.md)
 > You can find instructions for how to create the needed Microsoft Entra ID application registration in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md)
 >
-> Selecting **No authentication** and **Only for Teams** authentication options will not retrieve information from Sharepoint or OneDrive for Business.
+> Selecting **No authentication** and **Only for Teams** authentication options mean your copilot won't retrieve information from Sharepoint or OneDrive for Business.
 >
   
 
