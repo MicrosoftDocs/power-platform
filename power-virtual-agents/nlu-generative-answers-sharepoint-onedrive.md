@@ -26,15 +26,9 @@ This capability works by pairing your copilot with a URL, such as _contoso.share
 > - To authenticate your copilot, see [Authentication](nlu-boost-node.md#authentication).
 > - You can find instructions for how to create the needed Microsoft Entra ID application registration in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
 >
-> - Selecting **No authentication** and **Only for Teams** authentication options mean your copilot won't retrieve information from Sharepoint or OneDrive for Business.
+> - Selecting **No authentication** and **Only for Teams** authentication options mean your copilot won't retrieve information from SharePoint or OneDrive for Business.
 >
 > - When configuring authentication, scopes control user access. Specify **Sites.Read.All**, **Files.Read.All** in the scopes field near the existing **profile** and **openid** values. These scopes don't give users increased permissions when using the copilot, but allow their permissible content from the SharePoint site as configured for generative answers.
-
-  
-
-> [!IMPORTANT]
-> Content analysis and retrieval requires authentication. . The **No authentication** and **Only for Teams** authentication options can't retrieve information from Sharepoint or OneDrive for Business.
->
 
 
 
@@ -58,6 +52,7 @@ Due to memory limits, we recommend you limit the size of the files you want to u
    >
    > A best practice is to omit _https://_ from the URL. Recognized SharePoint URLs will be from the _sharepoint.com_ domain.
    > Sharepoint site URLs cannot be more than two levels deep.
+   > Content from **aspx** files on SharePoint won't be used to generate answers.
 
 1. Select **Save** at the top to save your topic changes.
 
