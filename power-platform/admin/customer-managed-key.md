@@ -186,7 +186,7 @@ In Azure, perform the following steps:
 #### Import protected keys for Hardware Security Modules (HSM)
 You can use your protected keys for hardware security modules (HSM) to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. For more information, see [Supported HSMs](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) [Import HSM-protected keys to Key Vault (BYOK)](/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
 
-#### Create a key in the Azure Key Vault Managed HSM
+#### Create a key in the Azure Key Vault Managed HSM (Preview)
 You can use an encryption key created from the Azure Key Vault Managed HSM to encrypt your environment data. This gives you FIPS 140-2 Level 3 support. 
 
 ##### Create RSA-HSM keys
