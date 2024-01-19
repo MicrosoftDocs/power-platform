@@ -9,7 +9,7 @@ contributors:
 ms.component: pa-admin
 ms.topic: faq
 ms.date: 07/31/2023
-ms.author: prkoduku
+ms.author: tapanm
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
@@ -327,11 +327,13 @@ An environment has multiple apps. There are flows for data management that don't
 
 ## AI Builder license questions
 
-Find global AI Builder licensing documentation [here](https://go.microsoft.com/fwlink/?linkid=2101001) and FAQ [here](https://go.microsoft.com/fwlink/?linkid=2246312).
+Find global AI Builder licensing information in the following articles:
+- [AI Builder licensing summary](https://go.microsoft.com/fwlink/?linkid=2101001)
+- [AI Builder licensing FAQ](https://go.microsoft.com/fwlink/?linkid=2246312).
 
 ### How are licensed AI Builder actions within a Power Automate flow?
 
-In order to add and run AI Builder actions within a flow, you need specific AI Builder licensing: AI Builder actions consume AI Builder credits, which can be obtained within Power Automate premium licenses, within other Power Platform premium licenses, or, mainly, within AI Builder capacity Add-on. 
+In order to add and run AI Builder actions within a flow, you need specific AI Builder licensing: AI Builder actions consume AI Builder credits, which can be obtained within Power Automate premium licenses, within other Power Platform premium licenses, or, mainly, within AI Builder capacity add-on. 
 
 Credits must be [available in flow's environment](https://go.microsoft.com/fwlink/?linkid=2238930).
 
@@ -339,7 +341,7 @@ You can also use [AI Builder trial](https://go.microsoft.com/fwlink/?linkid=2246
 
 ### How many credits are included in Power Automate premium licenses?
 
-Detail of seeded credits can be found [here](https://go.microsoft.com/fwlink/?linkid=2239020).
+To find details of seeded credits, go to [Get entitlement to AI Builder credits](https://go.microsoft.com/fwlink/?linkid=2239020).
 
 ## Enforcement
 
