@@ -103,9 +103,9 @@ When interacting with the Power Apps checker service, files are temporarily stor
 
 ## Versioning
 
-While not required, it is recommended to include the api-version query string parameter with the desired API version. The current API version is 1.0. For example, below is a ruleset HTTP request specifying to use the 1.0 API version:
+While not required, it is recommended to include the api-version query string parameter with the desired API version. The current API version is 2.0 for Rulesets and rules and 1.0 for all other requests. For example, below is a ruleset HTTP request specifying to use the 2.0 API version:
 
-`https://unitedstatesfirstrelease.api.advisor.powerapps.com/api/ruleset?api-version=1.0`
+`https://unitedstatesfirstrelease.api.advisor.powerapps.com/api/ruleset?api-version=2.0`
 
 If not provided, the latest API version will be used by default. Using an explicit version number is recommended as the version will be incremented if breaking changes are introduced. If the version number is specified in a request, backward compatibility support in later (numerically greater) versions will be maintained.
 
@@ -114,7 +114,7 @@ If not provided, the latest API version will be used by default. Using an explic
 ## Rulesets and rules
 
 Power Apps checker requires a list of rules when run. These rules can be provided in the form of individual rules or a grouping of rules, referred to as a *ruleset*. A ruleset is a convenient way to specify a group of rules instead of having to specify each rule individually. For example, the solution checker feature uses a ruleset named *Solution Checker*. As new rules are added or removed, the service will include these changes automatically without requiring any change by the consuming application. If you require that the list of rules not change automatically as described above, then the rules can be specified individually.
-Rulesets can have one or more rules with no limit. A rule can be in no or multiple rulesets. You can get a list of all rulesets by calling the API as follows: `[Geographical URL]/api/ruleset`. This endpoint is open and does not require authentication.
+Rulesets can have one or more rules with no limit. A rule can be in no or multiple rulesets. You can get a list of all rulesets by calling the API as follows: `[Geographical URL]/api/ruleset`. This endpoint now requires authentication.
 
 ### Solution checker ruleset
 
