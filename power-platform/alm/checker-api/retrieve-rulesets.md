@@ -53,7 +53,7 @@ This example returns data for all of the rulesets available.
 **Request**
 
 ```http
-GET [Geographical URI]/api/ruleset?api-version=1.0
+GET [Geographical URI]/api/ruleset?api-version=2.0
 Accept: application/json
 x-ms-correlation-id: 9E378E56-6F35-41E9-BF8B-C0CC88E2B832
 Content-Type: application/json; charset=utf-8
