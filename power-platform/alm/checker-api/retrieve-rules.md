@@ -23,7 +23,7 @@ search.audienceType:
 Rules are grouped together using a ruleset. A rule can be in no ruleset, or multiple rulesets. Use a `GET` request to obtain a list of all rules available, rules in a ruleset, or rulesets by calling the API `[Geographical URI]/api/rule`. There are a few variations to calling this API, however, the most common usage is to retrieve the list of rules for a specific ruleset.
 
 > [!NOTE]
-> This API does not require an OAuth token, but can accept one if provided.
+> This API now requires an OAuth token.
 
 <a name="bkmk_headers"></a>
 
@@ -50,6 +50,7 @@ Rules are grouped together using a ruleset. A rule can be in no ruleset, or mult
 |---|---|---|
 |200|One or more results were found|See the example below. One or more results may be returned.|
 |204|No results were found|No results in the response body.|
+|401|Authentication Failed|No results in the response body.|
 
 ### Expected response body
 
@@ -76,7 +77,7 @@ This example returns data for all of the rules in the *Solution Checker* ruleset
 **Request**
 
 ```http
-GET [Geographical URI]/api/rule?ruleset=083A2EF5-7E0E-4754-9D88-9455142DC08B&api-version=1.0
+GET [Geographical URI]/api/rule?ruleset=083A2EF5-7E0E-4754-9D88-9455142DC08B&api-version=2.0
 x-ms-correlation-id: 9E378E56-6F35-41E9-BF8B-C0CC88E2B832
 Accept: application/json
 Content-Type: application/json; charset=utf-8
@@ -123,7 +124,7 @@ This example returns data for all of the rules available.
 **Request**
 
 ```http
-GET [Geographical URI]/api/rule?api-version=1.0
+GET [Geographical URI]/api/rule?api-version=2.0
 Accept: application/json
 Content-Type: application/json; charset=utf-8
 ```
@@ -168,7 +169,7 @@ This example returns data for all of the rules in the *Solution Checker* ruleset
 **Request**
 
 ```http
-GET [Geographical URI]/api/rule?ruleset=083A2EF5-7E0E-4754-9D88-9455142DC08B&includeMessageFormats=true&api-version=1.0
+GET [Geographical URI]/api/rule?ruleset=083A2EF5-7E0E-4754-9D88-9455142DC08B&includeMessageFormats=true&api-version=2.0
 Accept: application/json
 Content-Type: application/json; charset=utf-8
 ```
