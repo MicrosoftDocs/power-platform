@@ -23,7 +23,7 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 - Providing reminders or news updates. For example, the bot could send a reminder message to complete online training.
 
 > [!IMPORTANT]
-> Proactive Messages are now available in Copilot Studio in addition to the feature available to classic Power Virtual Agents bots.
+> Proactive messages can be configured for copilots and classic bots created and customized in Copilot Studio.
 > 
 > A bot can't deliver messages if the recipient:
 >
