@@ -22,7 +22,7 @@ search.audienceType:
 
 The Power Apps checker web API provides a mechanism to run static analysis checks against customizations and extensions to the Microsoft Dataverse platform. It is available for makers and developers to perform rich static analysis checks on their solutions against a set of best practice rules to quickly identify problematic patterns. The service provides the logic for the [solution checker feature](/powerapps/maker/common-data-service/use-powerapps-checker) in the Power Apps maker [portal](https://make.powerapps.com) and is included as part of the automation for [applications submitted to AppSource](/powerapps/developer/common-data-service/publish-app-appsource). Interacting with the service directly in this manner allows for analysis of solutions that are included as part of on-premise (all supported versions) and online environments.
 
-For information about using the checker service from PowerShell code see [Work with solutions using PowerShell](../powershell-api.md).
+For information about using the checker service from PowerShell code, refer to [Work with solutions using PowerShell](../powershell-api.md).
 
 > [!NOTE]
 > - Use of Power Apps checker does not guarantee that a solution import will be successful. The static analysis checks performed against the solution do not know the configured state of the destination environment and import success may be dependent on other solutions or configurations in the environment. 
@@ -31,7 +31,7 @@ For information about using the checker service from PowerShell code see [Work w
 
 ## Alternative approaches
 
-Before reading through the details of how to interact at the lowest level with the web APIs, consider using our PowerShell module, Microsoft.PowerApps.Checker.PowerShell, instead. It is a fully supported tool that is available in the [PowerShell Gallery](https://www.powershellgallery.com). The current restriction is that it does require Windows PowerShell. If unable to meet this requirement, then interacting with the APIs directly will likely be the best approach.
+Before reading through the details of how to interact at the lowest level with the web APIs, consider using our PowerShell module, Microsoft.PowerApps.Checker.PowerShell, instead. It is a fully supported tool that is available in the [PowerShell Gallery](https://www.powershellgallery.com). The current restriction is that it does require Windows PowerShell. If unable to meet this requirement, then interacting with the APIs directly is the best approach.
 
 <a name="bkmk_getStarted"></a>
 
@@ -69,7 +69,7 @@ Refer to the following topics for documentation on the individual APIs:
 
 ## Determine a geography
 
-When interacting with the Power Apps checker service, files are temporarily stored in Azure along with the reports that are generated. By using a geography specific API, you can control where the data is stored. Requests to a geography endpoint are routed to a regional instance based on best performance (latency to the requestor). Once a request enters a regional service instance, all processing and persisted data remains within that particular region. Certain API responses return regional instance URLs for subsequent requests once an analysis job has been routed to a specific region. Be aware that each geography may have a different version of the service deployed at any given point in time due to the multi-stage safe deployment process, which ensures full version compatibility. Thus, the same geography should be used for each API call in the analysis lifecycle and may reduce overall execution time as the data may not have to travel as far over the wire. The following are the available geographies:
+When interacting with the Power Apps checker service, files are temporarily stored in Azure along with the reports that are generated. By using a geography specific API, you can control where the data is stored. Requests to a geography endpoint are routed to a regional instance based on best performance (latency to the requestor). Once a request enters a regional service instance, all processing and persisted data remains within that particular region. Certain API responses return regional instance URLs for subsequent requests once an analysis job is routed to a specific region. Be aware that each geography may have a different version of the service deployed at any given point in time due to the multi-stage safe deployment process, which ensures full version compatibility. Thus, the same geography should be used for each API call in the analysis lifecycle and may reduce overall execution time as the data may not have to travel as far over the wire. The following are the available geographies:
 
 |Azure datacenter|Name|Geography|Base URI|
 |---|---|---|---|
@@ -118,7 +118,7 @@ Rulesets can have one or more rules with no limit. A rule can be in no or multip
 
 ### Solution checker ruleset
 
-The solution checker ruleset contains a set of impactful rules that have limited chances for false positives. If running analysis against an existing solution, it is recommended that you start with this ruleset. This is the ruleset used by the [solution checker feature](/powerapps/maker/common-data-service/use-powerapps-checker).
+The solution checker ruleset contains a set of impactful rules that have limited chances for false positives. If running analysis against an existing solution, it is recommended that you start with this ruleset. This ruleset is used by the [solution checker feature](/powerapps/maker/common-data-service/use-powerapps-checker).
 
 ### AppSource certification ruleset
 
