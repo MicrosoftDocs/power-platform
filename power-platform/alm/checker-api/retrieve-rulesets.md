@@ -23,7 +23,7 @@ search.audienceType:
 Rules are grouped together using a ruleset. Rulesets can have one or more rules with no limit. A rule can be in no ruleset, or multiple rulesets. Use a `GET` request to obtain a list of all rulesets available by calling the API, [Geographical URI]/api/ruleset.
 
 > [!NOTE]
-> This API does not require an OAuth token, but can accept one if provided.
+> This API does require an OAuth token.
 
 <a name="bkmk_responses"></a>
 
@@ -33,6 +33,7 @@ Rules are grouped together using a ruleset. Rulesets can have one or more rules 
 |---|---|---|
 |200|One or more results were found|See example below. One or more results may be returned.|
 |204|No results were found|No results response body is returned.|
+|401|Authentication Failed|No results in the response body.|
 
 ### Expected response body
 
