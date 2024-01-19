@@ -60,7 +60,7 @@ You need a Process license if your flow meets **one of the following criteria**:
 
 ### How many Process licenses do I need if I have multiple cloud flows, each of them invoking its own RPA flows in unattended mode on a machine?
 
-With one Process license, you can run multiple cloud flows by queueing them. For example, if have four independent cloud flows, and each one of them invokes its own desktop flow running on the same machine, you can run the first one at 09:00 AM, the second one at 11:00 AM, and so on, in the same virtual machine.
+With one Process license, you can run multiple cloud flows by queueing them. For example, if you have four independent cloud flows, and each one of them invokes its own desktop flow running on the same machine, you can run the first one at 09:00 AM, the second one at 11:00 AM, and so on, in the same virtual machine.
 
 In the following screenshot, all cloud flows are covered by one Process license, as they have a desktop flow running on the same machine. Any parent, child flows, in context flows of these cloud flows are also covered by the Process license on the machine.
 
