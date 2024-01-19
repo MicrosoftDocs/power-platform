@@ -75,7 +75,7 @@ To reduce risk to data, the types of connectors used in your apps and flows shou
 
 #### Power user environment
 
-While the default environment covers many use cases, some power users will have more advanced needs for their apps and flows, like integrating with Microsoft Teams, Azure Active Directory (Azure AD), or Azure DevOps.
+While the default environment covers many use cases, some power users will have more advanced needs for their apps and flows, like integrating with Microsoft Teams, Microsoft Entra ID, or Azure DevOps.
 
 For this purpose, we recommend creating a power user environment. This shared environment should use more permissive DLP policies and admins should control the maker list to this environment.
 
@@ -123,7 +123,7 @@ Based on successful experience with customer engagements, here is a list of addi
 - **Reduce the number of shared development environments**
 
   Have separate environments for separate project development, especially when dealing with secure data. Environments are containers for resources such as connections to data, and in development environments there might be multiple people with environment maker access. If makers have access to a shared data connection and can create apps and flows, there is a risk that someone will create a new interface to read, update, and delete data they might have been given access to. This is especially important to keep in mind for the default environment—you should always have important data connections, custom connectors, and other assets that need security in isolated environments to protect them.
-- **Share resources with Azure AD security groups**
+- **Share resources with Microsoft Entra security groups**
 
   Security groups can be used to manage access to Power Apps, flows, Dataverse security roles, and other Office 365 services such as SharePoint Online. This removes the admin’s burden to update access to individual end users for each component (especially if multiple are involved)—the app owners can modify that at the security group level without IT (unless IT restricts access to security group management).
 - **Automate environment creation**

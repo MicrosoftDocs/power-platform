@@ -37,7 +37,7 @@ As you plan your Azure DevOps deployment model, the following factors may help y
 
 - How will common assets like Azure DevOps templates and shared components be shared and managed between multiple teams?
 
-- Will each team manage and maintain Azure Active Directory (Azure AD) applications and service principals? Or will Azure AD applications and service principals be shared across different Power Platform environments and Azure DevOps organizations?
+- Will each team manage and maintain Microsoft Entra applications and service principals? Or will Microsoft Entra applications and service principals be shared across different Power Platform environments and Azure DevOps organizations?
 
 ## 1:1 Power Platform to Azure DevOps
 

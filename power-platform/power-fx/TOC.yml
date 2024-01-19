@@ -30,6 +30,8 @@
             href: formula-reference.md
           - name: Dataverse formula reference
             href: formula-reference-dataverse.md
+          - name: Desktop flows formula reference
+            href: formula-reference-desktop-flows.md
           - name: Power Platform CLI formula reference
             href: formula-reference-pac-cli.md
           - name: Abs

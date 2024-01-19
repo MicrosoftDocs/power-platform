@@ -1,10 +1,10 @@
 ---
-title: Finance and operations storage capacity
+title: Finance and operations storage capacity (preview)
 description: Learn to use the finance and operations storage capacity report to understand your storage usage vs. your entitlement and get answers to frequently asked questions.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 01/10/2024
 ms.subservice: admin
 ms.author: sericks 
 ms.reviewer: 
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Finance and operations storage capacity
+# Finance and operations storage capacity (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -65,6 +65,14 @@ To view the **Finance and Operations** page, sign in to the [Power Platform admi
 
 :::image type="content" source="media/finance-operations-storage-finops-tab.png" alt-text="Screenshot of the Finance and Operations page with capacity data by environment.":::
 
+### Table-level, drill-down view into storage consumption details for finance and operations environments
+Select the finance and operations database usage entry on the **Finance and operations** tab to to see a table-level, drill-down view of how each table in your finance and operations environment is using capacity. You have the ability to obtain a near real-time snapshot of the table-level storage consumption. Additionally, you can track the time series trend, gaining insights into the evolution of storage across finance and operation tables. You also have the option to download the details in csv format for streamlined, data analysis and reporting.
+
+:::image type="content" source="media/finance-operations-storage-capacity/fno-database-usage.png " alt-text="Screenshot of the tab showing storage consumption for each finance and operations environment.":::
+
+:::image type="content" source="media/finance-operations-storage-capacity/fno-table-level-usage.png " alt-text="Screenshot of the table-level storage consumption for each finance and operations table.":::
+
+
 ## Address a storage capacity deficit
 
 The **Summary** tab shows whether your organization is using more finance and operations storage than it's entitled to.
@@ -94,6 +102,9 @@ Microsoft business applications work across multiple underlying technologies. Da
 
 Finance and operations entitlement includes default capacity entitlement plus accrued capacity entitlement based on each operations base enterprise and activity license. For more information, go to the Capacity Licenses section of the [Dynamics 365 License Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365).
 
+### Why did the Finance Operations Database Base User Subscription License (USL) Entitlement calculation change?
+This is due to a change in December 2023, where the Operations Database Capacity (Accrued/USL) was increased from 1.5GB to 4 GB. For more details on how base entitlement calculation works, go to the Capacity Licenses section of the [Dynamics 365 License Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365).
+
 ### Why don’t I see which tables are causing the overage?  
 
 Details at the table level aren't available in the initial launch of reporting. Table analytics will be available in a future release.
@@ -104,7 +115,7 @@ File capacity reporting is in public preview. Capacity reports for Finance and o
 
 :::image type="content" source="media/finance-operations-storage-capacity/finance-operations-database.png" alt-text="Screenshot of the Finance and operations File.":::
 
-A new report will provide Log and File consumption analytics for Finance and Operations and is expected to be available during the calendar year 2023. The new report will provide enhanced precision for file consumption analytics.
+A new report will provide log and file consumption analytics for finance and operations apps and is expected to be available during the calendar year 2024. The new report will provide enhanced precision for file consumption analytics.
 
 ### What happens if my consumption is over the entitled limit?
 

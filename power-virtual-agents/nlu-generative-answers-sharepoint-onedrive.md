@@ -18,40 +18,52 @@ searchScope:
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-You can use generative answers with content stored on SharePoint sites and OneDrive for Business. This capability works by pairing your bot with a specific site URL, such as _contoso.sharepoint.com/sites/policies_. When a bot user asks a question or makes a statement where the bot doesn't have a manually configured topic to use, it will search for relevant content from that site URL and all sub-paths and will use generative answers technology to help summarize this content into a targeted response.
+This capability works by pairing your copilot with a URL, such as _contoso.sharepoint.com/sites/policies_. When a copilot user asks a question and the copilot doesn't have a topic to use for an answer, the copilot searches the URL and all sub-paths. For example, a URL such as _contoso.sharepoint.com/sites_ also includes subpaths like _contoso.sharepoint.com/sites/policies_. Generative answers summarize this content into a targeted response.
+
 
 > [!CAUTION]
 > When you publish your copilot, the calls are made on behalf of the user chatting with the copilot, using the authentication settings configured in the copilot, which must use manual authentication with the **Service Provider** type of **Microsoft Entra ID** (formerly Azure Active Directory).
-> Instructions for how to do this can be found in [Configure user authentication in Microsoft Copilot Studio](configuration-end-user-authentication.md)
-> You can find instructions for how to create the needed Microsoft Entra ID application registration in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md)
+> - To authenticate your copilot, see [Authentication](nlu-boost-node.md#authentication).
+> - You can find instructions for how to create the needed Microsoft Entra ID application registration in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
 >
-> Selecting **No authentication** and **Only for Teams** authentication options mean your copilot won't retrieve information from Sharepoint or OneDrive for Business.
+> - Selecting **No authentication** and **Only for Teams** authentication options mean your copilot won't retrieve information from Sharepoint or OneDrive for Business.
 >
+> - When configuring authentication, scopes control user access. Specify **Sites.Read.All**, **Files.Read.All** in the scopes field near the existing **profile** and **openid** values. These scopes don't give users increased permissions when using the copilot, but allow their permissible content from the SharePoint site as configured for generative answers.
+
   
+
+> [!IMPORTANT]
+> Content analysis and retrieval requires authentication. . The **No authentication** and **Only for Teams** authentication options can't retrieve information from Sharepoint or OneDrive for Business.
+>
+
+
 
 Due to memory limits, we recommend you limit the size of the files you want to use on SharePoint. If a file is unusually large, consider splitting it into multiple smaller files.
 
-To use SharePoint or OneDrive for Business:
+## Use SharePoint or OneDrive for Business
 
-1. Open the **Data source** configuration pane for your topic's node:
+1. Open the **Data source** configuration pane from one of two places:
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the Generative answers node data sources menu.":::
+   1. On the **Create generative answers** node, select **Edit** under **Data sources**.
 
-    - Open the **Properties** pane for the **Create generative answers** node and select **Data source**.
-    - On the **Create generative answers** node, select **Edit** under **Data sources**.
-    
-    :::image type="content" source="media/nlu-gpt/create-gen-ans-node-image-highlight-22May23.png" alt-text="Screenshot of the Search and summarize content node properties.":::
+      :::image type="content" source="media/nlu-gpt/select-properties-from gen-ans.png" alt-text="Screenshot that shows where to select the Properties pane.":::
 
-1. Under **SharePoint**, add the SharePoint or OneDrive for Business URLs you want to use. Separate multiple URLs with manual line breaks (with **Shift** + **Enter**).
+   1. Alternatively, select the `...` in the **Create generative answers** node, then select **Properties** to open a pane, and finally select **Data source**.
 
-    > [!NOTE]
-    >
-    > A best practice is to omit *https://* from the URL. Recognized SharePoint URLs will be from the _sharepoint.com_ domain.
+1. Under **SharePoint** in the **Data source** pane, add the SharePoint or OneDrive for Business URLs you want to use. Separate multiple URLs with manual line breaks (with **Shift** + **Enter**).
 
-1. When you're done entering sources, close the menu. Make sure to save any changes to your topic.
+   :::image type="content" source="media/nlu-gpt/sharepoint-in-data-source-pane.png" alt-text="Screenshot that shows the SharePoint field in the Data source pane.":::
 
-Once your bot has been saved, you can send it messages in the test bot pane. Test it with some phrases that you would expect to return content. If the user account you used to sign in to _powerva.microsoft.com_ doesn't have access to the SharePoint site you won't get content or you might see a system error.
+   > [!NOTE]
+   >
+   > A best practice is to omit _https://_ from the URL. Recognized SharePoint URLs will be from the _sharepoint.com_ domain.
+   > Sharepoint site URLs cannot be more than two levels deep.
 
->[!CAUTION]
-> Information sources defined in the **Generative answers** node will override those you have specified at the bot level, which will then function as a fallback. 
+1. Select **Save** at the top to save your topic changes.
 
+1. Test your copilot with phrases that you expect to return content.
+
+   If the user account you used to sign in to _powerva.microsoft.com_ doesn't have access to the SharePoint site, you won't get content or you might see a system error.
+
+> [!IMPORTANT]
+> Information sources defined in the **Generative answers** node take priority at the copilot level. Copilot level sources function as a fallback.
