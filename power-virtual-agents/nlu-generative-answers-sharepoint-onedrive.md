@@ -50,8 +50,8 @@ Due to memory limits, we recommend you limit the size of the files you want to u
 
    > [!NOTE]
    >
-   > A best practice is to omit _https://_ from the URL. Recognized SharePoint URLs will be from the _sharepoint.com_ domain.
-   > Sharepoint site URLs cannot be more than two levels deep.
+   > A best practice is to omit _https://_ from the URL. Recognized SharePoint URLs will be from the _sharepoint.com_ domain.  
+   > Sharepoint site URLs cannot be more than two levels deep.  
    > Content from **aspx** files on SharePoint won't be used to generate answers.
 
 1. Select **Save** at the top to save your topic changes.
