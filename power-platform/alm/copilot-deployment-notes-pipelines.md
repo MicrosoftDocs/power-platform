@@ -19,7 +19,6 @@ When you deploy solutions in a pipeline in Power Platform, you can [deploy with 
 > [!IMPORTANT]
 >
 > - This capability is powered by [ Azure OpenAI Service](/azure/cognitive-services/openai/overview).
-> - For more information, go to our [terms](https://dynamics.microsoft.com/legaldocs/supp-azure-openai-features/)
 > - Learn more with our [FAQ for Copilot data security and privacy in Dynamics 365](/dynamics365/transparency-note-copilot-data-security-privacy).
 > - This capability is in process of rolling out, and may not be available in your region yet.
 > - This capability  may be subject to usage limits or capacity throttling.
