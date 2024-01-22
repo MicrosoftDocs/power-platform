@@ -93,9 +93,9 @@ Require your workload team to understand the security practices related to devel
 - [Test Studio](/power-apps/maker/canvas-apps/test-studio) allows you to build end-to-end UI tests for your canvas app using Test Studio.
 - [Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
 - Power CAT Code Review Tool allows you to perform code reviews.
-- [ALM Accelerator](https://learn.microsoft.com/power-platform/guidance/coe/setup-almaccelerator) is an open source tool that consists of a set of applications, scripts and pipelines designed to automate the continuous integration/continuous delivery process.
+- [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is an open source tool that consists of a set of applications, scripts and pipelines designed to automate the continuous integration/continuous delivery process.
 
-[Microsoft Power Platform CLI](https://learn.microsoft.com/power-platform/developer/cli/introduction) (`PAC CLI`) is a command-line tool that supports, among other things, the import and export of Power Platform Solutions, and packing to and unpacking from Power Platform Solutions source files. `PAC CLI` is available as a [stand-alone command line tool](https://aka.ms/PowerAppsCLI) or as an [extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode).
+[Microsoft Power Platform CLI](/power-platform/developer/cli/introduction) (`PAC CLI`) is a command-line tool that supports, among other things, the import and export of Power Platform Solutions, and packing to and unpacking from Power Platform Solutions source files. `PAC CLI` is available as a [stand-alone command line tool](https://aka.ms/PowerAppsCLI) or as an [extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode).
 
 
 ## Related links

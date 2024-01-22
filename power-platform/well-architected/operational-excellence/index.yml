@@ -80,8 +80,6 @@ landingContent:
         links:
           - text: Design for observability
             url: observability.md
-          - text: Use infrastructure as code
-            url: infrastructure-as-code-design.md
           - text: Design a reliable workload supply chain
             url: workload-supply-chain.md
           - text: Handle deployment failures

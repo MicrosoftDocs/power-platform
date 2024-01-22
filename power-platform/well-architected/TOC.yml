@@ -45,8 +45,8 @@
               href: operational-excellence/formalize-operations-tasks.md
             - name: OE:03 Formalize software development practices
               href: operational-excellence/formalize-development-practices.md
-            - name: OE:04 Optimize development practices
-              href: operational-excellence/optimize-development-practices.md
+            - name: OE:04 Standardize tools and processes
+              href: operational-excellence/tools-processes.md
             - name: OE:06 Supply chain for workload development
               href: operational-excellence/workload-supply-chain.md
             - name: OE:07 Developing an observability framework

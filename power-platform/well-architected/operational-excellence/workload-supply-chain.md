@@ -55,10 +55,10 @@ Also integrate approval workflows into your quality gates. Clearly define and au
 - [Pipelines in Power Platform](/power-platform/alm/pipelines) aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.
 - [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools) can be used to automate common build and deployment tasks related to apps built on Microsoft Power Platform. 
 - [GitHub Actions for Power Platform](/power-platform/alm/devops-github-actions) enable developers to build automated software development lifecycle workflows. With [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions), you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Microsoft Power Platform.
-- [ALM Accelerator](https://learn.microsoft.com/power-platform/guidance/coe/setup-almaccelerator) is an open source tool that consists of a set of applications, scripts and pipelines designed to automate the continuous integration/continuous delivery process.
+- [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is an open source tool that consists of a set of applications, scripts and pipelines designed to automate the continuous integration/continuous delivery process.
 - [Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
 - [Power Apps checker Web API](/power-platform/alm/checker-api/overview) provides a mechanism to run static analysis checks against customizations and extensions to the Microsoft Dataverse platform.
-- [Microsoft Power Platform CLI](https://learn.microsoft.com/power-platform/developer/cli/introduction) (`PAC CLI`) is a command-line tool that supports, among other things, the import and export of Power Platform Solutions, and packing to and unpacking from Power Platform Solutions source files. `PAC CLI` is available as a [stand-alone command line tool](https://aka.ms/PowerAppsCLI) or as an [extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode).
+- [Microsoft Power Platform CLI](/power-platform/developer/cli/introduction) (`PAC CLI`) is a command-line tool that supports, among other things, the import and export of Power Platform Solutions, and packing to and unpacking from Power Platform Solutions source files. `PAC CLI` is available as a [stand-alone command line tool](https://aka.ms/PowerAppsCLI) or as an [extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode).
 
 You can use Terraform, Bicep, and Azure Resource Manager for IaC deployments. Depending on your requirements and your team's familiarity with the tools, you might use one or more of these tools for your deployments and management of the resources.
 
@@ -78,9 +78,9 @@ TODO
 - [Pipelines in Power Platform](/power-platform/alm/pipelines)
 - [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools)
 - [GitHub Actions for Power Platform](/power-platform/alm/devops-github-actions)
-- [ALM Accelerator](https://learn.microsoft.com/power-platform/guidance/coe/setup-almaccelerator)
+- [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator)
 - [Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
-- [Microsoft Power Platform CLI](https://learn.microsoft.com/power-platform/developer/cli/introduction)
+- [Microsoft Power Platform CLI](/power-platform/developer/cli/introduction)
 - Performance Efficiency pillar
 - Reliability pillar
 - Security pillar
