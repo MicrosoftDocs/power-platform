@@ -123,5 +123,5 @@ It’s important to measure your security posture, enforce policies to maintain 
 
 ## Next steps
 
-[!div class=“nextstepaction”] [Security checklist](checklist.md)
-
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)
