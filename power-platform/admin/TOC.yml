@@ -564,6 +564,8 @@
                       href: opt-out-automatic-license.md
                     - name: Use service admin roles to manage your tenant
                       href: use-service-admin-role-manage-tenant.md
+                    - name: Manage high privileged admin roles
+                      href: manage-high-privileged-admin-roles.md
                     - name: Miscellaneous privileges
                       href: miscellaneous-privileges.md
                     - name: Privacy-related privileges
