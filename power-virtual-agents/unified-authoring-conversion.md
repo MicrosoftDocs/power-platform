@@ -3,7 +3,7 @@ title: "Unified authoring canvas migration guidance"
 description: "Guidance to migrate your Microsoft Copilot Studio bots to the updated unified authoring canvas. "
 ms.date: 05/23/2023
 ms.topic: how-to
-author: sarahc916
+author: iaanw
 manager: leeclontz
 ms.author: scritchley
 ms.reviewer: iawilt
