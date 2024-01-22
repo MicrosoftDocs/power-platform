@@ -1,7 +1,7 @@
 ---
 title: Recommendations for security testing
 description: Learn about the key design strategies for security testing, including the tools and methodologies you can use to test the security posture of your workload.
-author: RobStand
+author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: sericks
 ms.date: 01/31/2024

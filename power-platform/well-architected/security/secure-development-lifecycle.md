@@ -1,7 +1,7 @@
 ---
 title: Recommendations for securing a development lifecycle
 description: Learn about Well-Architected Framework Security recommendations for securing a development lifecycle. 
-author: RobStand
+author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: sericks
 ms.date: 01/31/2024

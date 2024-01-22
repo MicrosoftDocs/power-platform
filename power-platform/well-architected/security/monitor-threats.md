@@ -1,7 +1,7 @@
 ---
 title: Recommendations for monitoring and threat detection
 description: Learn how to get information about events, capture information about the workload, and gain awareness of suspicious activities. 
-author: RobStand
+author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: sericks
 ms.date: 01/31/2024

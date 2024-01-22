@@ -39,6 +39,26 @@
           items:
             - name: Operational excellence patterns
               href: ./operational-excellence/design-patterns.md
+            - name: OE:01 Fostering a DevOps culture
+              href: operational-excellence/devops-culture.md
+            - name: OE:02 Formalize tasks
+              href: operational-excellence/formalize-operations-tasks.md
+            - name: OE:03 Formalize software development practices
+              href: operational-excellence/formalize-development-practices.md
+            - name: OE:04 Optimize development practices
+              href: operational-excellence/optimize-development-practices.md
+            - name: OE:06 Supply chain for workload development
+              href: operational-excellence/workload-supply-chain.md
+            - name: OE:07 Developing an observability framework
+              href: operational-excellence/observability.md
+            - name: OE:08 Emergency response
+              href: operational-excellence/emergency-response.md
+            - name: OE:09 Automating tasks
+              href: operational-excellence/automate-tasks.md
+            - name: OE:10 Enabling automation
+              href: operational-excellence/enable-automation.md
+            - name: OE:12 Failure mitigation
+              href: operational-excellence/mitigation-strategy.md
       - name: Performance efficiency
         items:
         - name: Quick links

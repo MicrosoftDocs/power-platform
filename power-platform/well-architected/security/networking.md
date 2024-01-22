@@ -1,7 +1,7 @@
 ---
 title: Recommendations for networking and connectivity
 description: Learn about network security controls that can filter, block, and detect adversaries who cross network boundaries at various depths of your architecture.
-author: RobStand
+author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: sericks
 ms.date: 01/31/2024
