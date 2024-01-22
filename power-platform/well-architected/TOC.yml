@@ -37,8 +37,6 @@
           href: ./operational-excellence/tradeoffs.md
         - name: Recommendations   
           items:
-            - name: Operational excellence patterns
-              href: ./operational-excellence/design-patterns.md
             - name: OE:01 Fostering a DevOps culture
               href: operational-excellence/devops-culture.md
             - name: OE:02 Formalize tasks
@@ -101,8 +99,6 @@
           href: ./security/tradeoffs.md
         - name: Recommendations   
           items:
-            - name: Security patterns
-              href: ./security/design-patterns.md
             - name: SE:01 Security baseline
               href: security/establish-baseline.md
             - name: SE:02 Secured development lifecycle
