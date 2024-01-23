@@ -364,6 +364,8 @@
             href: reference/function-sequence.md
           - name: ShowColumns
             href: reference/function-table-shaping.md
+          - name: ShowHostInfo
+            href: reference/showhostinfo.md
           - name: Shuffle
             href: reference/function-shuffle.md
           - name: Sin
