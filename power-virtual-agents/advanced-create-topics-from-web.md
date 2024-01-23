@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: authoring, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Create topics from existing online support content

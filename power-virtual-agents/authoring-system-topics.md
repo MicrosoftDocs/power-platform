@@ -7,7 +7,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ms.reviewer: ggupta
 ---
 

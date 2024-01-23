@@ -9,7 +9,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: jameslew
 ms.custom: plugin, connector, flow, advanced-authoring
-ms.collection: virtual-agent
+
 ---
 
 

@@ -388,6 +388,8 @@ Other elements include:
 
 **[ShowColumns](reference/function-table-shaping.md)** – Returns a table with only selected columns.
 
+**[ShowHostInfo](reference/showhostinfo.md)** – Displays information to the user in the app. 
+
 **[Shuffle](reference/function-shuffle.md)** – Randomly reorders the records of a table.
 
 **[Sin](reference/function-trig.md)** – Returns the sine of an angle specified in radians.

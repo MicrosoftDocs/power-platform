@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "teams, publication, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Create a privacy statement and terms of use in Microsoft Teams
