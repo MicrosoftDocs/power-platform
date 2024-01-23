@@ -11,7 +11,7 @@ ms.reviewer: clmori
 manager: leeclontz
 ms.custom: quotas, admin, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Quotas, limits, app registration, certificates, and configuration values for Microsoft Copilot Studio

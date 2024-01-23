@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "authoring, fundamentals, ce06092020"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Supported languages

@@ -10,7 +10,7 @@ manager: leeclontz
 ms.reviewer: clmori
 ms.custom: authentication, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Disable default authentication for Microsoft Copilot Studio copilots
