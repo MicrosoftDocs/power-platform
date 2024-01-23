@@ -3,7 +3,7 @@ title: "Use Entra Privileged Identity Management in Power Platform admin center 
 description: Use Microsoft Entra Privileged Identity Management to manage high-privileged admin roles.
 author: srpoduri 
 ms.subservice: admin
-ms.author: srpoduri 
+ms.author: sripod 
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
@@ -15,48 +15,39 @@ search.audienceType: admin
 
 # Manage admin roles with Microsoft Entra Privileged Identity Management
 
-With Microsoft Entra Privileged Identity Management (PIM), you can manage high-privileged admin roles in the Power Platform admin center.
+Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileged admin roles in the Power Platform admin center.
 
 ## Prerequisites
 
-- Remove old system administrator role assignments in your environments.
+- Remove old system administrator role assignments in your environments. You can use PowerShell scripts to inventory and remove unwanted users from the **System Administrator** role in one or more Power Platform environment.
 
-  You can use PowerShell scripts, provided by Microsoft, to inventory and remove unwanted users from the system administrator role in one or more Power Platform environments.
-
-- Respond to the Private Preview request through [Microsoft Forms](https://forms.office.com/r/3Mp38A0TDA).
-
-  Wait for confirmation from the Product Group, confirming the feature is enabled on your tenant.
+- Respond to the private preview request through [Microsoft Forms](https://forms.office.com/r/3Mp38A0TDA). Then wait for confirmation from Microsoft, confirming the feature is enabled on your tenant.
 
 ## Changes to feature support
 
-Microsoft doesn't automatically assign the system administrator role for users with these Entra ID roles, also known as tenant admins:
-- Global Administrator
-- Power Platform Administrator
-- Dynamics 365 Administrator
+Microsoft doesn't automatically assign the **System Sdministrator** role for users with these Entra ID roles, also known as tenant admins:
+- Global administrator
+- Power Platform administrator
+- Dynamics 365 administrator
 
-Tenant admins can continue to sign in to Power Platform admin center. These privileges include:
-- Enabling or disabling tenant level settings
-- Viewing analytics information for environments
-- Viewing capacity consumption
+Tenant admins can continue to sign in to Power Platform admin center, witht the following privileges:
+- Enable or disable tenant level settings
+- View analytics information for environments
+- View capacity consumption
 
-Tenant admins can't perform activities that require direct access to Dataverse data.Examples of these activities include:
+Tenant admins can't perform activities that require direct access to Dataverse data. Examples of these activities include:
 - Updating the security role for a user in an environment
-- Installing apps into the environment
+- Installing apps for an environment
 
 > [!IMPORTANT]
-> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the system administrator role in the environment where they need access.
+> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access.
 
 ## Self-elevate to the system administrator role
 
 Currently, we only support elevation, using PowerShell. Future updates will include more enhancements in Power Platform admin center.
 
 > [!NOTE]
-> Users who call the self-elevation API must be a:
-> - Global admin,
-> - Power Platform admin, or
-> - D365 admin
->
-> All _other_ users who call the API get an access denied message.
+> Users who call the self-elevation API must be a global admin, Power Platform admin, or Dynamic 365 admin; Otherwise you'll get an access denied message.
 
 ### Step 1: Authenticate using Power Platform API
 
@@ -129,20 +120,20 @@ Write-Host $output
 
 ### Step 4: Clean up activity
 
-Run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) `Remove-RoleAssignmentFromUsers` to remove users from the system administrator role after the assignment expires in PIM.
+Run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) `Remove-RoleAssignmentFromUsers` to remove users from the **System Administrator** role after the assignment expires in Privileged Identity Management (PIM).
 
 ## Known limitations
 
-- If the user is already a system administrator, the call to self-elevate returns a success instead of informing the caller that the user already exists as a system administrator.
+- When the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
 
-- Calling user must be a tenant admin. Refer to the [Changes to feature support](#changes-to-feature-support) section for a full list of users who meet the tenant admin criteria.
+- The user making the call must have tenant admint. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
-- Calling user can only elevate themselves. You can't call the elevation API on-behalf of another user.
+- The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
 
-- Calls to elevate aren't logged during the Private Preview. However, logging support will be added in the future.
+- Calls to elevate aren't logged during the private preview. However, logging support will be added in the future.
 
-- If you're using the CoE Starter kit, the kit no longer works. However, the CoE Starter kit will be updated in the future.
+- The Microsoft Power Platform CoE Starter Kit no longer works and we're working on updating the kit.
 
-- Once you elevate a user through Azure/Entra PIM, wait for two hours for the changes to sync from AAD/Entra to Power Platform before logging in to Power Platform admin center.
+- Once you elevate a user through Entra Privileged Identity Management, wait for two hours for the changes to sync from Entra to Power Platform before you sign in to Power Platform admin center.
 
-- Role assignments through Groups aren't currently supported. Be sure to assign roles directly to the user.
+- Role assignments through groups aren't supported. Make sure that you assign roles directly to the user.
