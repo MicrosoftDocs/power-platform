@@ -20,13 +20,13 @@ The **SubscriptionTrackingDeletedObject** table is linked to the **DeletionServi
 
 
 
-# FAQ
+## FAQ
 
 
-## What changed related to Retention of Subscription Tracking Deleted Object Table enteries?
+### What changed related to Retention of Subscription Tracking Deleted Object Table enteries?
 In January 2024, the default retention for enteries added to the **dbo.SubscriptionTrackingDeletedObject**  table was reduced from 90 days to 7 days.
 
-### See also
+#### See also
 [Dataverse storage capacity](capacity-storage.md)
 
 
