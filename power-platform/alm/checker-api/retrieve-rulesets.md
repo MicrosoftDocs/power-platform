@@ -22,9 +22,6 @@ search.audienceType:
 
 Rules are grouped together using a ruleset. Rulesets can have one or more rules with no limit. A rule can be in no ruleset, or multiple rulesets. Use a `GET` request to obtain a list of all rulesets available by calling the API, [Geographical URI]/api/ruleset.
 
-> [!NOTE]
-> This API does require an OAuth token.
-
 <a name="bkmk_responses"></a>
 
 ## Expected responses
