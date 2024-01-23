@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 11/10/2023
+ms.date: 1/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -34,6 +34,15 @@ Use the include files to add additional content to this topic.
 
 (Preview) Launch interactive Power Fx Read-Eval-Print Loop
 
+[!INCLUDE [power-fx-repl-intro](includes/power-fx-repl-intro.md)]
+
+
+### Optional Parameters for power-fx repl
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
 [!INCLUDE [power-fx-repl-remarks](includes/power-fx-repl-remarks.md)]
 
 ## pac power-fx run
@@ -57,6 +66,10 @@ Path of file to execute
 True if input commands should echo back to output
 
 This parameter requires no value. It's a switch.
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [power-fx-run-remarks](includes/power-fx-run-remarks.md)]
 

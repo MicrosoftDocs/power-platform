@@ -8,7 +8,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: gapretty
-ms.collection: virtual-agent
+
 ---
 
 # Use plugin actions in Microsoft Copilot Studio (preview)

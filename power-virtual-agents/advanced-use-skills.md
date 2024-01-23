@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "Azure, advanced-authoring, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Use Microsoft Bot Framework skills in Microsoft Copilot Studio
