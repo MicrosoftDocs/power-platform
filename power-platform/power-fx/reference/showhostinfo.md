@@ -1,6 +1,6 @@
 ---
-title: Host object in Power Apps
-description: Reference information including syntax and examples for the Host object in Power Apps.
+title: ShowHostInfo object in Power Apps
+description: Reference information including syntax and examples for the ShowHostInfo object in Power Apps.
 author: jorisdg
 ms.topic: reference
 ms.custom: canvas
@@ -16,7 +16,7 @@ contributors:
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps 
 
-Show [Host object](/object-host.md) information to a user.
+Show [Host object](object-host.md) information to a user.
 
 ## Description
 
