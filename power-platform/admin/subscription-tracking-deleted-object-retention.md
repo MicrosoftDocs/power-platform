@@ -1,6 +1,6 @@
 ---
-title: "Manage PrincipalObjectAccess storage  | MicrosoftDocs"
-description: Information about managing Subscription Tracking Deleted Ojbect storage.
+title: "Subscription Tracking Deleted Object Table | MicrosoftDocs"
+description: Information about changes to retention enteries for Subscription Tracking Deleted Object Table.
 author: ceian
 ms.component: pa-admin
 ms.topic: conceptual
