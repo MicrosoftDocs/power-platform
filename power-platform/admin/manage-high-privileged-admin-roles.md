@@ -1,5 +1,5 @@
 ---
-title: " Use Entra Privileged Identity Management in Power Platform admin center to manage high-privileged admin roles  | MicrosoftDocs"
+title: "Use Entra Privileged Identity Management in Power Platform admin center to manage high-privileged admin roles  | MicrosoftDocs"
 description: Use Microsoft Entra Privileged Identity Management to manage high-privileged admin roles.
 author: srpoduri 
 ms.subservice: admin
@@ -29,7 +29,7 @@ With Microsoft Entra Privileged Identity Management (PIM), you can manage high-p
 
 ## Changes to feature support
 
-Microsoft doesn't automatically assign the _System Administrator_ role for users with these Entra ID roles, also known as _tenant admins_:
+Microsoft doesn't automatically assign the system administrator role for users with these Entra ID roles, also known as tenant admins:
 - Global Administrator
 - Power Platform Administrator
 - Dynamics 365 Administrator
@@ -44,7 +44,7 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 - Installing apps into the environment
 
 > [!IMPORTANT]
-> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the _System Administrator_ role in the environment where they need access.
+> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the system administrator role in the environment where they need access.
 
 ## Self-elevate to the system administrator role
 
@@ -133,7 +133,7 @@ Run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree
 
 ## Known limitations
 
-- If the user is already a System Administrator, the call to self-elevate returns a success instead of informing the caller that the user already exists as a System Administrator.
+- If the user is already a system administrator, the call to self-elevate returns a success instead of informing the caller that the user already exists as a system administrator.
 
 - Calling user must be a tenant admin. Refer to the [Changes to feature support](#changes-to-feature-support) section for a full list of users who meet the tenant admin criteria.
 
