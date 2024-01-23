@@ -237,9 +237,37 @@ While most organizations are likely to use just one catalog, it's possible to cr
 
 For the public preview, the catalog feature is available to be used without any licensing. While not required for the preview, when this feature is generally available it requires the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
-### Q: Where do I provide feedback on catalog
+### Q: Where do I provide feedback on catalog?
 
 You can reach the team and community using the Power Catalog for Pro dev on GitHub here: [https://github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)
+
+### Q: What are the items in the catalog? 
+
+The catalog items are actually packages. A package contains one or more solutions and some metadata. The maker portal experiences can submit individual solutions. The PAC CLI experience can be used to create a package containing multiple solutions.
+
+### Q: What are solution templates? What does it mean to install an unmanaged solution?
+
+The use of a [solution](/power-platform/alm/solution-concepts-alm) as a "solution template" is a new scenario being made available with the catalog. When a maker acquires a "solution template" they will get a new unmanaged copy of that solution. Multiple copies of that [unmanaged solution](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions) can exist in the same environment and each has a unique identifier. More detailed documentation on that scenario 
+
+### Q: Catalog item install looks a lot like solution import, are they the same thing?
+
+A catalog item is a package that contains one or more solutions. Installation of a package containing a single solution with no additional package configuration will look very similar to a solution import. 
+
+### Q: Will the catalog support PCF components within solutions? What about other solution component types?
+
+Yes, distribution of [PCF controls](/power-apps/developer/component-framework/overview) is made much easier through the use of a catalog. Any [solution component](/en-us/power-platform/alm/solution-concepts-alm#solution-components) can be contained in a solution in the catalog. 
+
+### Q: Can the templates have multiple owners so people know who to reach out to for more information?
+
+Yes, ownership information is part of the metadata for a catalog item. The ownership can be a group with multiple people in it. 
+
+### Q: Is there a way to add documentation such as a user guide when submitting a template? 
+
+Yes, documentation links are part of the metadata for a catalog item. 
+
+### Q: Can Catalogs be shared to security groups?
+
+Yes, catalog permissions can be targeted at [specific security groups](/power-platform/developer/administer-catalog#setup-users).
 
 ### See also
 
