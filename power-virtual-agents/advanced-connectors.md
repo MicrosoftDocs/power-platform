@@ -9,7 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: peterswimm
-ms.collection: virtual-agent
+
 ---
 
 # Key concepts - Use Power Automate connectors in Microsoft Copilot Studio (Preview)

@@ -10,7 +10,7 @@ ms.author: iawilt
 ms.reviewer: clmori
 manager: leeclontz
 ms.custom: authoring, ceX
-ms.collection: virtual-agent
+
 ---
 
 # Use variables

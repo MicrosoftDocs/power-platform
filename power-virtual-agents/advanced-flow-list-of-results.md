@@ -11,7 +11,7 @@ manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Return a list of results

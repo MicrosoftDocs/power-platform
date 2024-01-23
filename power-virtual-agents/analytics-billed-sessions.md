@@ -8,7 +8,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: analysis, licensing, ceX, bap-template
-ms.collection: virtual-agent
+
 ms.service: power-virtual-agents
 ---
 

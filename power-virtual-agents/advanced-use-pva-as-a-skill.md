@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtual-agent
+
 ---
 
 # Use a Microsoft Copilot Studio bot as a skill

@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "publication, authoring, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Add a bot to Power Pages
