@@ -9,7 +9,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: onboarding, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 searchScope: "Power Virtual Agents"
 ---
 

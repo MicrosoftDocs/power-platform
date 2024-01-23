@@ -11,7 +11,7 @@ manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Example 2 - Display a multi-select options list in Microsoft Copilot Studio

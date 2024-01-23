@@ -11,7 +11,7 @@ manager: leeclontz
 ms.reviewer: jameslew
 ms.custom: "publication, azure, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Add Microsoft Copilot Studio bot to Azure Bot Service channels

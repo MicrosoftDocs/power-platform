@@ -11,7 +11,7 @@ ms.reviewer: digantak
 manager: leeclontz
 ms.custom: "customization, ce06102020"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Automatically start a chatbot conversation

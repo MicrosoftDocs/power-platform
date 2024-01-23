@@ -8,7 +8,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Personal data requests for Power Virtual Agents

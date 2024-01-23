@@ -11,7 +11,7 @@ manager: leeclontz
 ms.reviewr: micchow
 ms.custom: authentication, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Configure user authentication in Microsoft Copilot Studio

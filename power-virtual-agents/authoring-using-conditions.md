@@ -9,7 +9,7 @@ ms.author: iawilt
 ms.reviewer: gapretty
 manager: leeclontz
 ms.custom: authoring, topics, message, question, bap-template
-ms.collection: virtual-agent
+
 ms.service: power-virtual-agents
 ---
 
