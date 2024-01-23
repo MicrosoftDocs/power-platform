@@ -13,7 +13,9 @@ ms.date: 01/22/2024
 search.audienceType: admin
 ---
 
-# Manage admin roles with Microsoft Entra Privileged Identity Management
+# Manage admin roles with Microsoft Entra Privileged Identity Management (preview)
+
+[This article is prerelease documentation and is subject to change.]
 
 Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileged admin roles in the Power Platform admin center.
 
@@ -21,7 +23,7 @@ Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileg
 
 - Remove old system administrator role assignments in your environments. You can use PowerShell scripts to inventory and remove unwanted users from the **System Administrator** role in one or more Power Platform environment.
 
-- Respond to the private preview request through [Microsoft Forms](https://forms.office.com/r/3Mp38A0TDA). Then wait for confirmation from Microsoft, confirming the feature is enabled on your tenant.
+- Respond to the preview request through [Microsoft Forms](https://forms.office.com/r/3Mp38A0TDA). Then wait for confirmation from Microsoft, confirming the feature is enabled on your tenant.
 
 ## Changes to feature support
 
@@ -130,7 +132,7 @@ Run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree
 
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
 
-- Calls to elevate aren't logged during the private preview. However, logging support will be added in the future.
+- Calls to elevate aren't logged during preview. However, logging support will be added in the future.
 
 - The Microsoft Power Platform CoE Starter Kit no longer works and we're working on updating the kit.
 
