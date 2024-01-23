@@ -19,9 +19,9 @@ With Microsoft Entra Privileged Identity Management (PIM), you can manage high-p
 
 ## Prerequisites
 
-- Remove old System Administrator role assignments in your environments.
+- Remove old system administrator role assignments in your environments.
 
-  You can use PowerShell scripts, provided by Microsoft, to inventory and remove unwanted users from the System Administrator role in one or more Power Platform environments.
+  You can use PowerShell scripts, provided by Microsoft, to inventory and remove unwanted users from the system administrator role in one or more Power Platform environments.
 
 - Respond to the Private Preview request through [Microsoft Forms](https://forms.office.com/r/3Mp38A0TDA).
 
@@ -29,26 +29,24 @@ With Microsoft Entra Privileged Identity Management (PIM), you can manage high-p
 
 ## Changes to feature support
 
-- Microsoft doesn't automatically assign the _System Administrator_ role for users with these Entra ID roles, also known as _tenant admins_:
-  - Global Administrator
-  - Power Platform Administrator
-  - Dynamics 365 Administrator
+Microsoft doesn't automatically assign the _System Administrator_ role for users with these Entra ID roles, also known as _tenant admins_:
+- Global Administrator
+- Power Platform Administrator
+- Dynamics 365 Administrator
 
-- Tenant admins can continue to sign in to PPAC. These privileges include:
-  - Enabling or disabling tenant level settings
-  - Viewing analytics information for environments
-  - Viewing capacity consumption
+Tenant admins can continue to sign in to PPAC. These privileges include:
+- Enabling or disabling tenant level settings
+- Viewing analytics information for environments
+- Viewing capacity consumption
 
-- Tenant admins can't perform activities that require direct access to Dataverse data.
+Tenant admins can't perform activities that require direct access to Dataverse data.Examples of these activities include:
+- Updating the security role for a user in an environment
+- Installing apps into the environment
 
-  Examples of these activities include:
-  - Updating the security role for a user in an environment
-  - Installing apps into the environment
+> [!IMPORTANT]
+> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the _System Administrator_ role in the environment where they need access.
 
-  > [!IMPORTANT]
-  > Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the _System Administrator_ role in the environment where they need access.
-
-## Self-elevate to the System Administrator role
+## Self-elevate to the system administrator role
 
 Currently, we only support elevation, using PowerShell. Future updates will include more enhancements in PPAC.
 
@@ -131,7 +129,7 @@ Write-Host $output
 
 ### Step 4: Clean up activity
 
-Run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) `Remove-RoleAssignmentFromUsers` to remove users from the System Administrator role after the assignment expires in PIM.
+Run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) `Remove-RoleAssignmentFromUsers` to remove users from the system administrator role after the assignment expires in PIM.
 
 ## Known limitations
 
