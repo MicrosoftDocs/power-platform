@@ -27,12 +27,12 @@ Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileg
 
 ## Changes to feature support
 
-Microsoft doesn't automatically assign the **System Sdministrator** role for users with these Entra ID roles, also known as tenant admins:
+Microsoft doesn't automatically assign the **System Administrator** role for users with these Microsoft Entra ID roles, also known as tenant admins:
 - Global administrator
 - Power Platform administrator
 - Dynamics 365 administrator
 
-Tenant admins can continue to sign in to Power Platform admin center, witht the following privileges:
+Tenant admins can continue to sign in to Power Platform admin center, with the following privileges:
 - Enable or disable tenant level settings
 - View analytics information for environments
 - View capacity consumption
@@ -46,7 +46,7 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 
 ## Self-elevate to the system administrator role
 
-Currently, we only support elevation, using PowerShell. Future updates will include more enhancements in Power Platform admin center.
+Currently, we only support elevation, using PowerShell. Future updates include more enhancements in Power Platform admin center.
 
 > [!NOTE]
 > Users who call the self-elevation API must be a global admin, Power Platform admin, or Dynamic 365 admin; Otherwise you'll get an access denied message.
@@ -128,7 +128,7 @@ Run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree
 
 - When the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
 
-- The user making the call must have tenant admint. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
+- The user making the call must have tenant admin. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
 
