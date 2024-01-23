@@ -34,7 +34,7 @@ Microsoft doesn't automatically assign the system administrator role for users w
 - Power Platform Administrator
 - Dynamics 365 Administrator
 
-Tenant admins can continue to sign in to PPAC. These privileges include:
+Tenant admins can continue to sign in to Power Platform admin center. These privileges include:
 - Enabling or disabling tenant level settings
 - Viewing analytics information for environments
 - Viewing capacity consumption
@@ -48,7 +48,7 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 
 ## Self-elevate to the system administrator role
 
-Currently, we only support elevation, using PowerShell. Future updates will include more enhancements in PPAC.
+Currently, we only support elevation, using PowerShell. Future updates will include more enhancements in Power Platform admin center.
 
 > [!NOTE]
 > Users who call the self-elevation API must be a:
@@ -143,6 +143,6 @@ Run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree
 
 - If you're using the CoE Starter kit, the kit no longer works. However, the CoE Starter kit will be updated in the future.
 
-- Once you elevate a user through Azure/Entra PIM, wait for two hours for the changes to sync from AAD/Entra to Power Platform before logging in to PPAC.
+- Once you elevate a user through Azure/Entra PIM, wait for two hours for the changes to sync from AAD/Entra to Power Platform before logging in to Power Platform admin center.
 
 - Role assignments through Groups aren't currently supported. Be sure to assign roles directly to the user.
