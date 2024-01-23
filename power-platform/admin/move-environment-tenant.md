@@ -211,7 +211,7 @@ After the migration:
 Before the migration: 
 1. Sign in to the environment.
 2. Open the [Power Apps Portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
-3. [Reset](/powerapps/maker/portals/admin/reset-portal) the portal.
+3. [Delete](/powerapps/maker/portals/admin/reset-portal) the portal.
 
 After the migration: 
 1. Sign in to the environment.

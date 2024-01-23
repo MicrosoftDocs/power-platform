@@ -68,6 +68,9 @@
       "ms.service": {
         "**.*": "power-virtual-agents"
       },
+      "ms.collection": {
+        "**.*": "bap-ai-copilot"
+      },
       "ms.subservice": {
         "guidance/**/*.md": "guidance"
       }
