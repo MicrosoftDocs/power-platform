@@ -103,7 +103,7 @@ When interacting with the Power Apps checker service, files are temporarily stor
 
 ## Versioning
 
-While not required, it is recommended to include the api-version query string parameter with the desired API version. The current API version is 2.0 for Rulesets and rules and 1.0 for all other requests. For example, the following is a ruleset HTTP request specifying to use the 2.0 API version:
+While not required, it is recommended to include the api-version query string parameter with the desired API version. The current API version is 2.0 for rulesets and rules and 1.0 for all other requests. For example, the following is a ruleset HTTP request specifying to use the 2.0 API version:
 
 `https://unitedstatesfirstrelease.api.advisor.powerapps.com/api/ruleset?api-version=2.0`
 
