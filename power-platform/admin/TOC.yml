@@ -560,20 +560,20 @@
                       href: security-roles-privileges.md
                     - name: Assign security roles
                       href: assign-security-roles.md
-                    - name: Create or edit a security role
-                      href: create-edit-security-role.md
-                    - name: Copy a security role
-                      href: copy-security-role.md
                     - name: Opt-out of automatic license-based user roles management
                       href: opt-out-automatic-license.md
                     - name: Use service admin roles to manage your tenant
                       href: use-service-admin-role-manage-tenant.md
                     - name: Manage high privileged admin roles
                       href: manage-high-privileged-admin-roles.md
-                    - name: Privacy-related privileges
-                      href: privacy-related-privileges.md
                     - name: Miscellaneous privileges
                       href: miscellaneous-privileges.md
+                    - name: Privacy-related privileges
+                      href: privacy-related-privileges.md
+                    - name: Create or edit a security role
+                      href: create-edit-security-role.md
+                    - name: Copy a security role
+                      href: copy-security-role.md
                 - name: Manage application users
                   href: manage-application-users.md
                 - name: Delete users
