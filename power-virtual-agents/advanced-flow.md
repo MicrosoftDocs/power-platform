@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring
-ms.collection: virtual-agent
+
 ---
 
 # Key concepts - Use Power Automate flows in Microsoft Copilot Studio

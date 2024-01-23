@@ -11,7 +11,7 @@ manager: leeclontz
 ms.reviewer: mboninco
 ms.custom: analysis, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Analyze topic usage in Microsoft Copilot Studio

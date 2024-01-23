@@ -10,7 +10,7 @@ manager: leeclontz
 ms.reviewer: micchow
 ms.custom: "teams, flow, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Send proactive messages Microsoft Teams
