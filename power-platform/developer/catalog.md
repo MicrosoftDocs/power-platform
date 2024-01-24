@@ -95,7 +95,7 @@ To get started, you need to complete the following tasks:
 
 1. [Install the **Catalog Manager** application](#install-the-catalog-manager-application)
 1. [Configure the catalog](#configure-the-catalog): Configure catalog settings including metadata management and enabling auto approvals
-1. [Administer the catalog)](administer-catalog.md): Perform ongoing catalog administration including: approving new submissions, reviewing submission and install failures
+1. [Administer the catalog](administer-catalog.md): Perform ongoing catalog administration including: approving new submissions, reviewing submission and install failures
 
 ## Install the **Catalog Manager** application
 
@@ -209,22 +209,7 @@ Even with auto approval, submission requests that get auto approved are availabl
 
 This capability is reserved for future use. More details of what components are supported in deployment type of Template will be shared in the future.
 
-## Next steps
 
-Learn how to administer the catalog.
-
-> [!div class="nextstepaction"]
-> [Administer the catalog](administer-catalog.md)<br/>
-
-Learn how to view, submit, and install catalog items.
-
-> [!div class="nextstepaction"]
-> [View, submit, and install catalog items](submit-catalog-items.md)<br/>
-
-Ask questions or contact the project team on GitHub.
-
-> [!div class="nextstepaction"]
-> [github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)<br/>
 
 ## Frequently asked questions (FAQ)
 
@@ -265,6 +250,23 @@ Yes, documentation links are part of the metadata for a catalog item.
 ### Q: Can Catalogs be shared to security groups?
 
 Yes, catalog permissions can be targeted at [specific security groups](administer-catalog.md#setup-users).
+
+## Next steps
+
+Learn how to administer the catalog.
+
+> [!div class="nextstepaction"]
+> [Administer the catalog](administer-catalog.md)<br/>
+
+Learn how to view, submit, and install catalog items.
+
+> [!div class="nextstepaction"]
+> [View, submit, and install catalog items](submit-catalog-items.md)<br/>
+
+Ask questions or contact the project team on GitHub.
+
+> [!div class="nextstepaction"]
+> [github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)<br/>
 
 ### See also
 
