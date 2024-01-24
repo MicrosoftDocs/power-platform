@@ -11,7 +11,7 @@ manager: leeclontz
 ms.reviewer: micchow
 ms.custom: "multi-author, admin, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Share your bot with other users

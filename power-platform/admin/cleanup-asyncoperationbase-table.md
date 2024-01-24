@@ -1,6 +1,6 @@
 ---
-title: "Clean up records from System Job (AsyncOperation) and Process Log (WorkflowLog) tables"
-description: "Learn how to clean up records from System Job (AsyncOperation) and Process Log (WorkflowLog) tables."
+title: "Clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables"
+description: "Learn how to clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables."
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/05/2024
@@ -13,11 +13,11 @@ contributors:
 search.audienceType: 
   - admin
 ---
-# Clean up records from System Job (AsyncOperation) and Process Log (WorkflowLog) tables
+# Clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables
 
-The [System Job (AsyncOperation) table](/power-apps/developer/data-platform/reference/entities/asyncoperation) stores system jobs. System jobs represent asynchronous extensions, such as asynchronous registered workflows and plug-ins, and other background operations such as bulk deletion, bulk import, and rollup operations. After an event occurs and any synchronous extensions are processed, the platform serializes the context for any asynchronous extensions and saves it to the database as an AsyncOperation record.
+The [System Job (AsyncOperation) table](/power-apps/developer/data-platform/reference/entities/asyncoperation) stores system jobs. The name of the actual database table is `AsyncOperationBase`. System jobs represent asynchronous extensions, such as asynchronous registered workflows and plug-ins, and other background operations such as bulk deletion, bulk import, and rollup operations. After an event occurs and any synchronous extensions are processed, the platform serializes the context for any asynchronous extensions and saves it to the database as an AsyncOperation record.
 
-When an asynchronous workflow is triggered in your Dataverse organization, a record is created in the AsyncOperation table to track the processing of the async job. More records also are created in the [Process Log (WorkflowLog) table](/power-apps/developer/data-platform/reference/entities/workflowlog) to maintain logs for the workflow execution. [Business process flows](/power-automate/business-process-flows-overview) (BPF) also store BPF stage transition and action logs for the BPF in the WorkflowLog table.
+When an asynchronous workflow is triggered in your Dataverse organization, a record is created in the AsyncOperation table to track the processing of the async job. More records also are created in the [Process Log (WorkflowLog) table](/power-apps/developer/data-platform/reference/entities/workflowlog) to maintain logs for the workflow execution. The name of the actual database table is `WorkflowLogBase`. [Business process flows](/power-automate/business-process-flows-overview) (BPF) also store BPF stage transition and action logs for the BPF in the WorkflowLog table.
 
 If your organization makes heavy use of workflows or business process flows, these tables will grow over time and eventually become large enough to introduce performance issues and consume excessive storage in your organization database.
 

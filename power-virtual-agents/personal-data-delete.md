@@ -8,7 +8,7 @@ ms.author: iawilt
 ms.custom: ceX
 manager: leeclontz
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Responding to personal data delete requests from data subjects

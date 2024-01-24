@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: admin, dlp
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Data loss prevention example - Require end-user authentication for Microsoft Copilot Studio copilots
@@ -35,11 +35,11 @@ See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](a
 
 1. Use the search box to find the **Chat without Microsoft Entra ID authentication in Microsoft Copilot Studio** connector.
 
-    :::image type="content" source="media/dlp-example-3/chat-connector.png" alt-text="Screenshot of the Chat without Microsoft Entra ID authentication in Microsoft Copilot Studio connector.":::
+    :::image type="content" source="media/dlp-example-3/CopilotStudioDLPChatWithoutEntraIDConnector.png" alt-text="Screenshot of the Chat without Microsoft Entra ID authentication in Microsoft Copilot Studio connector.":::
 
 1. Select the connector's **More actions** menu (**&vellip;**), and then select **Block**.
 
-    :::image type="content" source="media/dlp-example-3/block-connector.png" alt-text="Screenshot of the Power Platform admin center showing the contextual menu for a connector available from the menu icon.":::
+    :::image type="content" source="media/dlp-example-3/CopilotStudioDLPChatWithoutEntraIDConnectorBlock.png" alt-text="Screenshot of the Power Platform admin center showing the contextual menu for a connector available from the menu icon.":::
 
 1. Select **Next**.
 

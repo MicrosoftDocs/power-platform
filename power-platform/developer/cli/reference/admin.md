@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 11/10/2023
+ms.date: 1/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -28,7 +28,7 @@ Work with your Power Platform Admin Account
 |---------|---------|
 |[pac admin application list](#pac-admin-application-list)|List Microsoft Entra ID applications registered under your tenant.|
 |[pac admin application register](#pac-admin-application-register)|Register Microsoft Entra ID application with your tenant.|
-|[pac admin application unregister](#pac-admin-application-unregister)|Unregister Microsoft Entra ID application with your tenant.|
+|[pac admin application unregister](#pac-admin-application-unregister)|Unregister Microsoft Entra ID application from your tenant.|
 |[pac admin assign-group](#pac-admin-assign-group)|Assign group to target Dataverse environment with specified security role.|
 |[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target Dataverse environment with specified security role.|
 |[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
@@ -45,6 +45,7 @@ Work with your Power Platform Admin Account
 |[pac admin restore](#pac-admin-restore)|Restores an environment to a given backup.|
 |[pac admin set-backup-retention-period](#pac-admin-set-backup-retention-period)|Takes a manual backup of your environment.|
 |[pac admin set-governance-config](#pac-admin-set-governance-config)|Enable, disable, and edit managed environments.|
+|[pac admin set-runtime-state](#pac-admin-set-runtime-state)|Update environment administration mode.|
 |[pac admin status](#pac-admin-status)|This command lists the status of all the operations in progress.|
 |[pac admin update-tenant-settings](#pac-admin-update-tenant-settings)|Update tenant settings.|
 
@@ -61,9 +62,10 @@ Register Microsoft Entra ID application with your tenant.
 
 [!INCLUDE [admin-application-register-intro](includes/admin-application-register-intro.md)]
 
+
 ### Required Parameters for admin application register
 
-#### `application-id` `-id`
+#### `--application-id` `-id`
 
 Application Id
 
@@ -71,13 +73,14 @@ Application Id
 
 ## pac admin application unregister
 
-Unregister Microsoft Entra ID application with your tenant.
+Unregister Microsoft Entra ID application from your tenant.
 
 [!INCLUDE [admin-application-unregister-intro](includes/admin-application-unregister-intro.md)]
 
+
 ### Required Parameters for admin application unregister
 
-#### `application-id` `-id`
+#### `--application-id` `-id`
 
 Application Id
 
@@ -91,10 +94,6 @@ Assign group to target Dataverse environment with specified security role.
 
 
 ### Required Parameters for admin assign-group
-
-#### `--environment` `-env`
-
-ID or URL of the environment to assign a user to.
 
 #### `--group` `-g`
 
@@ -137,6 +136,10 @@ Use one of these values:
 
 ID of business unit to associate application user with.
 
+#### `--environment` `-env`
+
+ID or URL of the environment to assign a user to.
+
 [!INCLUDE [admin-assign-group-remarks](includes/admin-assign-group-remarks.md)]
 
 ## pac admin assign-user
@@ -147,10 +150,6 @@ Assign a user to a target Dataverse environment with specified security role.
 
 
 ### Required Parameters for admin assign-user
-
-#### `--environment` `-env`
-
-ID or URL of the environment to assign a user to.
 
 #### `--role` `-r`
 
@@ -175,6 +174,10 @@ This parameter requires no value. It's a switch.
 #### `--business-unit` `-bu`
 
 ID of business unit to associate application user with.
+
+#### `--environment` `-env`
+
+ID or URL of the environment to assign a user to.
 
 [!INCLUDE [admin-assign-user-remarks](includes/admin-assign-user-remarks.md)]
 
@@ -241,7 +244,6 @@ Environment URL or ID of the source environment that is being copied
 Environment URL or ID of the target environment.
 
 #### `--type` `-t`
-
 
 
 Use one of these values:
@@ -396,10 +398,6 @@ List all environments that contain given string in their name or ID.
 #### `--name` `-n`
 
 List all environments that contain given string in their name.
-
-#### `--organization-id` `-oi`
-
-List all environments that contain given string in their organization ID.
 
 #### `--type` `-t`
 
@@ -636,6 +634,18 @@ Use one of these values:
 
 ### Optional Parameters for admin set-governance-config
 
+#### `--checker-rule-overrides` `-cro`
+
+Solution checker rule overrides
+
+#### `--cloud-flows-limit` `-cfl`
+
+Number of people that makers can share solution cloud flows with
+
+#### `--cloud-flows-mode` `-cfm`
+
+Solution cloud flows limit sharing mode
+
 #### `--disable-group-sharing` `-dgs`
 
 Disable group sharing.
@@ -658,6 +668,14 @@ This parameter requires no value. It's a switch.
 
 Limit sharing mode.
 
+#### `--maker-onboarding-markdown` `-mom`
+
+Maker onboarding markdown
+
+#### `--maker-onboarding-url` `-mou`
+
+Maker onboarding URL
+
 #### `--max-limit-user-sharing` `-ml`
 
 If group sharing is disabled, specify the number of people that makers can share canvas apps with.
@@ -672,7 +690,59 @@ Use one of these values:
 - `warn`
 - `block`
 
+#### `--suppress-validation-emails` `-sve`
+
+Suppress validation emails
+
+This parameter requires no value. It's a switch.
+
 [!INCLUDE [admin-set-governance-config-remarks](includes/admin-set-governance-config-remarks.md)]
+
+## pac admin set-runtime-state
+
+Update environment administration mode.
+
+[!INCLUDE [admin-set-runtime-state-intro](includes/admin-set-runtime-state-intro.md)]
+
+
+### Required Parameters for admin set-runtime-state
+
+#### `--environment` `-env`
+
+URL or ID of the environment for which administration mode needs to be updated.
+
+#### `--runtime-state` `-rs`
+
+The environment runtime state
+
+Use one of these values:
+
+- `AdminMode`
+- `Enabled`
+
+
+### Optional Parameters for admin set-runtime-state
+
+#### `--async` `-a`
+
+Optional boolean argument to run pac verbs asynchronously, defaults to false.
+
+This parameter requires no value. It's a switch.
+
+#### `--background-operations` `-bo`
+
+The environment background operations state
+
+Use one of these values:
+
+- `Enabled`
+- `Disabled`
+
+#### `--max-async-wait-time` `-wt`
+
+Max asynchronous wait time in minutes. The default value is 60 minutes.
+
+[!INCLUDE [admin-set-runtime-state-remarks](includes/admin-set-runtime-state-remarks.md)]
 
 ## pac admin status
 
