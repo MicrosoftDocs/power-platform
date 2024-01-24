@@ -160,7 +160,6 @@ In Azure, perform the following steps:
    > [!IMPORTANT]
    >
    > - To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings. More information: [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview) More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
-   > - Your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet.
 
 #### Create a key in the key vault
 
@@ -186,7 +185,7 @@ In Azure, perform the following steps:
 #### Import protected keys for Hardware Security Modules (HSM)
 You can use your protected keys for hardware security modules (HSM) to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. For more information, see [Supported HSMs](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) [Import HSM-protected keys to Key Vault (BYOK)](/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
 
-#### Create a key in the Azure Key Vault Managed HSM - Preview
+#### Create a key in the Azure Key Vault Managed HSM (Preview)
 You can use an encryption key created from the Azure Key Vault Managed HSM to encrypt your environment data. This gives you FIPS 140-2 Level 3 support. 
 
 ##### Create RSA-HSM keys

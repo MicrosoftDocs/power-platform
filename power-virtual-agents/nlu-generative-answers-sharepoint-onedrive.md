@@ -7,7 +7,7 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: iawilt
-ms.collection: virtual-agent
+
 ms.service: power-virtual-agents
 ms.search.region: USA
 searchScope:
@@ -44,6 +44,7 @@ Due to memory limits, we recommend you limit the size of the files you want to u
    > [!NOTE]
    >
    > A best practice is to omit _https://_ from the URL. Recognized SharePoint URLs will be from the _sharepoint.com_ domain.
+   > Sharepoint site URLs cannot be more than two levels deep.
 
 1. Select **Save** at the top to save your topic changes.
 

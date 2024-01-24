@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: admin, dlp
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Data loss prevention example - Block skills in Microsoft Copilot Studio copilots
