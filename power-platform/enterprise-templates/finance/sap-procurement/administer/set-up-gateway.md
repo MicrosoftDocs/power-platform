@@ -15,7 +15,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/04/2024
+ms.date: 01/24/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -70,7 +70,7 @@ Because the connector maintains an internal state of the connection to SAP, you 
 
 ### Turn off random load balancing
 
-As an admin, you need to ensure that random load balancing is _off_ for an on-premises data gateway cluster set up with the SAP NCo 3.1 connector.
+As an admin, ensure that random load balancing is _off_ for an on-premises data gateway cluster set up with the SAP NCo 3.1 connector.
 
 Assuming your cluster is already set up, take these steps:
 

@@ -37,6 +37,7 @@ The SAP ERP connector supports the following authentication types:
 
 > [!NOTE]
 > Specific administrative privileges are required to set up SSO in Microsoft Entra ID and SAP. Be sure to obtain the necessary admin privileges for each system before setting up SSO.
+
 More information:
 
 - [Microsoft Entra documentation](/entra/)
