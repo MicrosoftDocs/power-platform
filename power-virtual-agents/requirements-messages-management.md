@@ -6,7 +6,7 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
-ms.collection: virtual-agent
+
 ms.reviewer: mainguy
 ms.service: power-virtual-agents
 ---

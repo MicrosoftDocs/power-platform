@@ -8,7 +8,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Responding to personal data discovery requests from data subjects

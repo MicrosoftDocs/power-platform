@@ -10,7 +10,7 @@ ms.author: iawilt
 ms.reviewer: iawilt
 manager: 
 ms.custom: authoring, ceX
-ms.collection: virtual-agent
+
 ---
 
 # Using topic triggers

@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: admin, dlp
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Data loss prevention example - Block HTTP requests from Microsoft Copilot Studio copilots

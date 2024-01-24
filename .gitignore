@@ -10,3 +10,4 @@ _repo.*/
 power-virtual-agents/.vscode/*
 .vscode/*
 .DS_Store
+/power-virtual-agents/.vs

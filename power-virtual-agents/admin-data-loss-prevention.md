@@ -9,7 +9,7 @@ author: iaanw
 ms.author: iawilt
 ms.custom: admin, dlp
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 
