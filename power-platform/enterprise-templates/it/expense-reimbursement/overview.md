@@ -8,7 +8,7 @@ ms.topic: overview
 ms.date: 01/08/2024
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: enterprise-templates
+ms.subservice: solution-templates
 ---
 
 # Expense Reimbursement template for Power Platform

@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 01/08/2024
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: enterprise-templates
+ms.subservice: solution-templates
 ---
 
 # Install and set up the Expense Reimbursement template
