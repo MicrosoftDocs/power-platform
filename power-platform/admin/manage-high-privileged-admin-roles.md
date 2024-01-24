@@ -28,16 +28,19 @@ Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileg
 ## Changes to feature support
 
 Microsoft doesn't automatically assign the **System Administrator** role for users with these Microsoft Entra ID roles, also known as tenant admins:
+
 - Global administrator
 - Power Platform administrator
 - Dynamics 365 administrator
 
 Tenant admins can continue to sign in to Power Platform admin center, with the following privileges:
+
 - Enable or disable tenant level settings
 - View analytics information for environments
 - View capacity consumption
 
 Tenant admins can't perform activities that require direct access to Dataverse data. Examples of these activities include:
+
 - Updating the security role for a user in an environment
 - Installing apps for an environment
 
@@ -46,83 +49,127 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 
 ## Self-elevate to the system administrator role
 
-Currently, we only support elevation, using PowerShell. Future updates include more enhancements in Power Platform admin center.
+Currently, we only support elevation using PowerShell. Future updates will include more enhancements in the Power Platform admin center.
+
+For more information about setting up PowerShell, see [Quick Start Web API with PowerShell and Visual Studio Code](/power-apps/developer/data-platform/webapi/quick-start-ps).
+
+### Set up PowerShell
+
+Install the [MSAL](https://www.powershellgallery.com/packages/MSAL.PS) PowerShell module. You only need to install the module once.
+
+```powershell
+Install-Module -Name MSAL.PS
+```
 
 > [!NOTE]
-> Users who call the self-elevation API must be a global admin, Power Platform admin, or Dynamic 365 admin; Otherwise you'll get an access denied message.
+> Users who call the self-elevation API must be a global admin, Power Platform admin, or Dynamic 365 admin. Otherwise, you get an access denied message.
 
-### Step 1: Authenticate using Power Platform API
+### Step 1: Run the script to elevate
 
-#### Prerequisite
+In this script, you:
 
-Install the [MSAL](https://www.powershellgallery.com/packages/MSAL.PS) PowerShell module:
+- Authenticate, using the Power Platform API.
+- Build an `http` query with your environment ID.
+- Call the API endpoint to request elevation.
 
-```powershell
-
-Install-Module MSAL.PS
-```
-
-You only need to install the module once.
-
-#### Authenticate
+After adding your unqiue `<environment id>`, copy and paste the script into a PowerShell console.
 
 ```powershell
+# Set your environment ID
+$environmentId = "<environment id>"
+
 Import-Module MSAL.PS
 
+# Authenticate
 $AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default' 
 
-$Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"} 
-```
 
-### Step 2: Build the `http` query with the environment endpoint
+$Headers = @{
+   Authorization  = "Bearer $($AuthResult.AccessToken)"
+   'Content-Type' = "application/json"
+} 
 
-```powershell
-$Headers.Add('Content-Type', 'application/json') 
+$uri = "https://api.powerplatform.com/usermanagement/environments/$environmentId/user/applyAdminRole?api-version=2022-03-01-preview";
 
-$uri = "https://api.powerplatform.com/usermanagement/environments/<environment id>/user/applyAdminRole?api-version=2022-03-01-preview"; 
-```
-
-### Step 3: Call the API endpoint to request elevation
-
-```powershell
 try { 
 
-$postRequestResponse = Invoke-RestMethod -Method Post -Headers $Headers -Uri $uri 
-
+   $postRequestResponse = Invoke-RestMethod -Method Post -Headers $Headers -Uri $uri 
+   
 } 
-
+   
 catch { 
-
-    # Dig into the exception to get the Response details. 
-
-    Write-Host "Response CorrelationId:" $_.Exception.Response.Headers["x-ms-correlation-id"] 
-
-    Write-Host "StatusCode:" $_.Exception.Response.StatusCode.value__  
-
-    Write-Host "StatusDescription:" $_.Exception.Response.StatusDescription 
-
-    $result = $_.Exception.Response.GetResponseStream() 
-
-        $reader = New-Object System.IO.StreamReader($result) 
-
-        $reader.BaseStream.Position = 0 
-
-        $reader.DiscardBufferedData() 
-
-        $responseBody = $reader.ReadToEnd(); 
-
-        Write-Host $responseBody 
-
+   
+   # Dig into the exception to get the Response details. 
+   
+   Write-Host "Response CorrelationId:" $_.Exception.Response.Headers["x-ms-correlation-id"] 
+   
+   Write-Host "StatusCode:" $_.Exception.Response.StatusCode.value__  
+   
+   Write-Host "StatusDescription:" $_.Exception.Response.StatusDescription 
+   
+   $result = $_.Exception.Response.GetResponseStream() 
+   
+   $reader = New-Object System.IO.StreamReader($result) 
+   
+   $reader.BaseStream.Position = 0 
+   
+   $reader.DiscardBufferedData() 
+   
+   $responseBody = $reader.ReadToEnd(); 
+   
+   Write-Host $responseBody 
+   
 } 
-
-$output = $postRequestResponse| ConvertTo-Json -Depth 2 
-
-Write-Host $output 
+   
+$output = $postRequestResponse | ConvertTo-Json -Depth 2 
+   
+Write-Host $output
 ```
 
-### Step 4: Clean up activity
+### Step 2: Confirm the result
 
-Run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) `Remove-RoleAssignmentFromUsers` to remove users from the **System Administrator** role after the assignment expires in Privileged Identity Management (PIM).
+<!-- WAITING FOR SCREENSHOT -->
+
+### Step 3: Clean up activity
+
+You can run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) `Remove-RoleAssignmentFromUsers` to remove users from the **System Administrator** role after the assignment expires in Privileged Identity Management (PIM).
+
+#### Retrieve your Dataverse information
+
+These steps help you get the required Dataverse information for use in the `Remove-RoleAssignmentFromUsers` command. Once you have everything together, you can run the command.
+
+1. Create a new text file with the Service Principal Name (SPN) for Azure Active Directory.
+1. Save the filepath to your text file. You need for a paramter to run the `Remove-RoleAssignmentFromUsers` command.
+1. Retrieve the localized name for the System Administrator account.
+1. Replace `yourorg` in the `environmentUrl` with your environment name and customize the query for your purposes in this script:
+
+   ```powershell
+   $environmentUrl = 'https://yourorg.crm.dynamics.com/' # change this
+   ## Sign in, if not already signed in
+   if ($null -eq (Get-AzTenant -ErrorAction SilentlyContinue)) {
+      Connect-AzAccount | Out-Null
+   }
+
+   # Get an access token
+   $token = (Get-AzAccessToken -ResourceUrl $environmentUrl).Token
+   # Common headers
+   $baseHeaders = @{
+      'Authorization'    = 'Bearer ' + $token
+      'Accept'           = 'application/json'
+      'OData-MaxVersion' = '4.0'
+      'OData-Version'    = '4.0'
+   }
+
+   # Retrieve data from the Dataverse aaduser table:
+   # $query = 'systemusers?$select=fullname,systemuserid,azurestate,issyncwithdirectory,userpuid'
+   $query = 'aadusers?$select=aaduserid,displayname,userprincipalname'
+   Invoke-RestMethod -Uri ($environmentUrl + "api/data/v9.2/$query") -Method Get -Headers $baseHeaders ConvertTo-Json
+   ```
+
+   > [!NOTE]
+   > You can change the query to pull data from other storage services, but this query pulls from Dataverse as an example.
+
+1. Run the script to retrieve your [aasusers](/power-apps/developer/data-platform/aaduser-entity) Dataverse information.
 
 ## Known limitations
 
