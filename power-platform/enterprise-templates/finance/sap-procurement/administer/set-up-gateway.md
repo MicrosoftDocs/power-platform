@@ -41,7 +41,7 @@ The on-premises data gateway installation encompasses multiple components instal
 
 1. Install the most recent [Microsoft .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) listed in the _System Requirements_ section on the [gateway download page](https://www.microsoft.com/download/details.aspx?id=53127) onto the machine.
 
-1. [Install](/data-integration/gateway/service-gateway-install) the [most recent version of the on-premises data gateway](/data-integration/gateway/service-gateway--monthly-updates) onto the machine. The on-premises data gateways are updated monthly. Be sure to develop a plan of action to regularly [update on-premises data gateways](/data-integration/gateway/service-gateway-update?source=recommendations) to ensure optimal performance.
+1. [Install](/data-integration/gateway/service-gateway-install) the [most recent version of the on-premises data gateway](/data-integration/gateway/service-gateway-monthly-updates) onto the machine. The on-premises data gateways are updated monthly. You should develop a plan to regularly monitor and [update on-premises data gateways](/data-integration/gateway/service-gateway-update?source=recommendations) to ensure optimal performance.
 
 1. Install most recent version of [Microsoft C++ Runtime DLLs](/cpp/windows/latest-supported-vc-redist?view=msvc-170&preserve-view=true). SAP's NCo 3.1 download requires this library to support the .NET Framework.
 
@@ -62,7 +62,7 @@ The on-premises data gateway installation encompasses multiple components instal
 
 ## Gateway cluster configuration
 
-You can [create on-premises data gateway clusters](data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster) to avoid single points of failure when accessing on-premises data resources, but it's important to understand how to configure gateway clusters when working with SAP.
+You can [create on-premises data gateway clusters](/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster) to avoid single points of failure when accessing on-premises data resources, but it's important to understand how to configure gateway clusters when working with SAP.
 
 The gateway uses the SAP NCo 3.1 connector and it maintains an internal state of the connection to SAP. For example, if you have _Step A_ in a flow do something in SAP and _Step A_ uses _Gateway 1_ to make that call, then _Gateway 1_ knows about the changes you're trying to make.
 
@@ -86,7 +86,7 @@ Assuming your cluster is already set up, take these steps:
 >
 > Your role determines what features are available to you and what operations you can perform in the Power Platform admin center.
 >
-> You need to be a Microsoft Entra Global admin, Power BI Service admin, or a Gateway admin to have access to the [gateway management capabilities](power-platform/admin/onpremises-data-gateway-management) that allow you to manage gateway details, settings, and users in the Power Platform admin center.
+> You need to be a Microsoft Entra Global admin, Power BI Service admin, or a Gateway admin to have access to the [gateway management capabilities](/power-platform/admin/onpremises-data-gateway-management) that allow you to manage gateway details, settings, and users in the Power Platform admin center.
 
 ## Related content
 
