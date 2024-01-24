@@ -250,12 +250,6 @@ The catalog items are actually packages. A package contains one or more solution
 
 The use of a [solution](../alm/solution-concepts-alm.md) as a *solution template* is a new scenario we're making available with the catalog. When a maker acquires a solution template, they'll get a new unmanaged  copy of that solution. Multiple copies of that [unmanaged solution](../alm/solution-concepts-alm.md#managed-and-unmanaged-solutions) can exist in the same environment and each has a unique identifier.
 
-<!-- 
-Did you want to add more here? This sentence didn't end.
-> More detailed documentation on that scenario  
-
--->
-
 ### Q: Catalog item install looks a lot like solution import. Are they the same thing?
 
 A catalog item is a package that contains one or more solutions. Installation of a package containing a single solution with no other package configuration looks similar to a solution import.
