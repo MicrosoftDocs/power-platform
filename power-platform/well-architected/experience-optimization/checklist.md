@@ -16,10 +16,18 @@ This checklist presents a set of recommendations to help you optimize experience
 
 |&nbsp;|Code  |Recommendation  |
 |-|-|-|
-| &#9744; | EO:01  | **Recommendation 01** TBD ....  |
-| &#9744; | EO:02 | **Recommendation 02** TBD ....   |
-| &#9744; | EO:03 | **Recommendation 03** TBD ....  |
-| &#9744; | EO:04 | **Recommendation 04** TBD ....  |
+| &#9744; | EO:00 | **Identify personas and create uses cases for them** TBD ....  |
+| &#9744; | EO:00 | **Define design standards** TBD ....   |
+| &#9744; | EO:00 | **Optimize processes** TBD ....  |
+| &#9744; | EO:00 | **Use established design patterns** TBD ....  |
+| &#9744; | EO:00 | **Map experiences to user roles** TBD ....  |
+| &#9744; | EO:00 | **Create engaging and useful forms** TBD ....  |
+| &#9744; | EO:00 | **Inform the user with meaningful notifications and messages** TBD ....  |
+| &#9744; | EO:00 | **Create accessible workloads** TBD ....  |
+| &#9744; | EO:00 | **Maintain consistency in navigation** TBD ....  |
+| &#9744; | EO:00 | **Organize information in a clear and logical manner** TBD ....  |
+| &#9744; | EO:00 | **Use customization to extend capabilities** TBD ....  |
+| &#9744; | EO:00 | **Leverage artificial intelligence to perform tasks and empower the user** TBD ....  |
 
 ## Next steps
 
