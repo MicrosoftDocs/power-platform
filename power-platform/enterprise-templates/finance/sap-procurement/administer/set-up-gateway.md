@@ -41,7 +41,7 @@ The on-premises data gateway installation encompasses multiple components instal
 
 1. Install the most recent [Microsoft .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) listed in the _System Requirements_ section on the [gateway download page](https://www.microsoft.com/download/details.aspx?id=53127) onto the machine.
 
-1. [Install](/data-integration/gateway/service-gateway-install) the [most recent version of the on-premises data gateway](/data-integration/gateway/service-gateway-monthly-updates) onto the machine. The on-premises data gateways are updated monthly. You should develop a plan to regularly monitor and [update on-premises data gateways](/data-integration/gateway/service-gateway-update?source=recommendations) to ensure optimal performance.
+1. [Install](/data-integration/gateway/service-gateway-install) the [most recent version of the on-premises data gateway](/data-integration/gateway/service-gateway-monthly-updates) onto the machine. Microsoft releases a new update for on-premises data gateways every month. You should develop a plan to regularly monitor and [update on-premises data gateways](/data-integration/gateway/service-gateway-update?source=recommendations) to ensure optimal performance and support.
 
 1. Install most recent version of [Microsoft C++ Runtime DLLs](/cpp/windows/latest-supported-vc-redist?view=msvc-170&preserve-view=true). SAP's NCo 3.1 download requires this library to support the .NET Framework.
 
