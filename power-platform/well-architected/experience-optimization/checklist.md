@@ -17,7 +17,7 @@ This checklist presents a set of recommendations to help you optimize experience
 |&nbsp;|Code  |Recommendation  |
 |-|-|-|
 | &#9744; | EO:00 | **Identify personas and create uses cases for them** TBD ....  |
-| &#9744; | EO:00 | **Define design standards** TBD ....   |
+| &#9744; | EO:00 | **Validate the design and align user expectations and needs with business value** TBD ....   |
 | &#9744; | EO:00 | **Optimize processes** TBD ....  |
 | &#9744; | EO:00 | **Use established design patterns** TBD ....  |
 | &#9744; | EO:00 | **Map experiences to user roles** TBD ....  |
