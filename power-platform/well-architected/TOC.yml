@@ -37,25 +37,25 @@
           href: ./operational-excellence/tradeoffs.md
         - name: Recommendations   
           items:
-            - name: OE:01 Fostering a DevOps culture
+            - name: OE:01 DevOps culture
               href: operational-excellence/devops-culture.md
-            - name: OE:02 Formalize tasks
+            - name: OE:02 Task execution process
               href: operational-excellence/formalize-operations-tasks.md
-            - name: OE:03 Formalize software development practices
+            - name: OE:03 Software development practices
               href: operational-excellence/formalize-development-practices.md
-            - name: OE:04 Standardize tools and processes
+            - name: OE:04 Tools and processes
               href: operational-excellence/tools-processes.md
             - name: OE:06 Supply chain for workload development
               href: operational-excellence/workload-supply-chain.md
-            - name: OE:07 Developing an observability framework
+            - name: OE:07 Monitoring system
               href: operational-excellence/observability.md
             - name: OE:08 Emergency response
               href: operational-excellence/emergency-response.md
-            - name: OE:09 Automating tasks
+            - name: OE:09 Task automation
               href: operational-excellence/automate-tasks.md
-            - name: OE:10 Enabling automation
+            - name: OE:10 Automation design
               href: operational-excellence/enable-automation.md
-            - name: OE:11 Safe deployment practices
+            - name: OE:11 Deployment practices
               href: operational-excellence/safe-deployments.md
             - name: OE:12 Failure mitigation
               href: operational-excellence/mitigation-strategy.md
