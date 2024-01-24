@@ -9,7 +9,7 @@ author: KendalBond007
 ms.author: iawilt
 ms.reviewer: clmori
 ms.custom: authoring, ceX
-ms.collection: virtual-agent
+
 ---
 
 # Sending event activities

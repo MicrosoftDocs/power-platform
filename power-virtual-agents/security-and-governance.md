@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: digantak
 ms.custom: plugin
-ms.collection: virtual-agent
+
 ---
 
 # Copilot Studio security and governance
