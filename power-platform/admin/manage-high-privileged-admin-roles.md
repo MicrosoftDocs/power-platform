@@ -132,44 +132,7 @@ Write-Host $output
 
 ### Step 3: Clean up activity
 
-You can run the [PowerShell command](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) `Remove-RoleAssignmentFromUsers` to remove users from the **System Administrator** role after the assignment expires in Privileged Identity Management (PIM).
-
-#### Retrieve your Dataverse information
-
-These steps help you get the required Dataverse information for use in the `Remove-RoleAssignmentFromUsers` command. Once you have everything together, you can run the command.
-
-1. Create a new text file with the Service Principal Name (SPN) for Azure Active Directory.
-1. Save the filepath to your text file. You need for a paramter to run the `Remove-RoleAssignmentFromUsers` command.
-1. Retrieve the localized name for the System Administrator account.
-1. Replace `yourorg` in the `environmentUrl` with your environment name and customize the query for your purposes in this script:
-
-   ```powershell
-   $environmentUrl = 'https://yourorg.crm.dynamics.com/' # change this
-   ## Sign in, if not already signed in
-   if ($null -eq (Get-AzTenant -ErrorAction SilentlyContinue)) {
-      Connect-AzAccount | Out-Null
-   }
-
-   # Get an access token
-   $token = (Get-AzAccessToken -ResourceUrl $environmentUrl).Token
-   # Common headers
-   $baseHeaders = @{
-      'Authorization'    = 'Bearer ' + $token
-      'Accept'           = 'application/json'
-      'OData-MaxVersion' = '4.0'
-      'OData-Version'    = '4.0'
-   }
-
-   # Retrieve data from the Dataverse aaduser table:
-   # $query = 'systemusers?$select=fullname,systemuserid,azurestate,issyncwithdirectory,userpuid'
-   $query = 'aadusers?$select=aaduserid,displayname,userprincipalname'
-   Invoke-RestMethod -Uri ($environmentUrl + "api/data/v9.2/$query") -Method Get -Headers $baseHeaders ConvertTo-Json
-   ```
-
-   > [!NOTE]
-   > You can change the query to pull data from other storage services, but this query pulls from Dataverse as an example.
-
-1. Run the script to retrieve your [aasusers](/power-apps/developer/data-platform/aaduser-entity) Dataverse information.
+Run the [PowerShell script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement) to remove the users from the System Administrator role after the assignment expires in PIM.
 
 ## Known limitations
 
