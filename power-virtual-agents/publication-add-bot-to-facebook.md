@@ -11,7 +11,7 @@ ms.reviewer: micchow
 manager: leeclontz
 ms.custom: "publication, authoring, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Add bot to Facebook

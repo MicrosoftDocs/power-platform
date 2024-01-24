@@ -217,7 +217,7 @@ Update the app ID, tenant ID, screen name, and record number as appropriate.
 <html>
   <body>
     <a
-      href="https://apps.powerapps.com/play/YOUR-APP-ID?tenantId=YOUR-TENANT-ID&Navigate=Second%20Screen&Record=34"
+      href="https://apps.powerapps.com/play/e/YOUR-APP-ENVIRONMENT-ID/a/YOUR-APP-ID?tenantId=YOUR-TENANT-ID&Navigate=Second%20Screen&Record=34"
     >
       Launch canvas app
     </a>

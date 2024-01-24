@@ -138,8 +138,6 @@
                 href: cli\reference\test.md
               - name: pac tool
                 href: cli\reference\tool.md
-              - name: pac virtual-agent
-                href: cli\reference\virtual-agent.md
         - name: Power Platform Tools for Visual Studio
           items:
             - name: What is Power Platform Tools for Visual Studio

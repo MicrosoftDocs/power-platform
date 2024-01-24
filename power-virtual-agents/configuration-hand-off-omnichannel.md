@@ -10,7 +10,7 @@ ms.author: iawilt
 ms.reviewer: clmori
 manager: leeclontz
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ms.custom: handoff, ceX
 ---
 
@@ -89,7 +89,7 @@ If your bot doesn't have omnichannel capabilities enabled, the message will alwa
 
 ## Configure inactivity timeout to close conversation
 
-Dynamics 365 Customer Service expects a conversation to end after a period of inactivity. This feature is important to ensure the supervisor view displays the correct ongoing conversations and manages agent loads and metrics correctly. When you create a bot from Dynamics 365 Customer Service, the default bot content includes two topics: **Session Timeout Reminder** and **Session Timeout**. These topics use the [Inactivity trigger](authoring-triggers.md?tabs=preview#inactivity) to first remind the user, and then close the conversation after a set inactivity timeout value, which can be configured in the topic. But if you create the bot from the Microsoft Copilot Studio portal, those topics aren't included in the bot. To create them, follow the steps below:
+Dynamics 365 Customer Service expects a conversation to end after a period of inactivity. This feature is important to ensure the supervisor view displays the correct ongoing conversations and manages agent loads and metrics correctly. When you create a bot from Dynamics 365 Customer Service, the default bot content includes two topics: **Session Timeout Reminder** and **Session Timeout**. These topics use the [Inactivity trigger](authoring-triggers.md#other-trigger-properties) to first remind the user, and then close the conversation after a set inactivity timeout value, which can be configured in the topic. But if you create the bot from the Microsoft Copilot Studio portal, those topics aren't included in the bot. To create them, follow the steps below:
 
 ### Create a Session Timeout topic
 

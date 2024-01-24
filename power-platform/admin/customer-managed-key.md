@@ -160,7 +160,6 @@ In Azure, perform the following steps:
    > [!IMPORTANT]
    >
    > - To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings. More information: [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview) More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
-   > - Your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet.
 
 #### Create a key in the key vault
 
@@ -186,7 +185,7 @@ In Azure, perform the following steps:
 #### Import protected keys for Hardware Security Modules (HSM)
 You can use your protected keys for hardware security modules (HSM) to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. For more information, see [Supported HSMs](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) [Import HSM-protected keys to Key Vault (BYOK)](/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
 
-#### Create a key in the Azure Key Vault Managed HSM - Preview
+#### Create a key in the Azure Key Vault Managed HSM (Preview)
 You can use an encryption key created from the Azure Key Vault Managed HSM to encrypt your environment data. This gives you FIPS 140-2 Level 3 support. 
 
 ##### Create RSA-HSM keys
@@ -423,7 +422,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 
 To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
  > [!NOTE]
-   > Using **New key version** and setting **Rotation policy** to rotate your encryption key is now supported (preview).
+   > Using **New key version** and setting **Rotation policy** to rotate your encryption key is now supported.
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
@@ -444,10 +443,10 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 > [!IMPORTANT]
 > The environment will be disabled when it's added to the new enterprise policy. 
 
-### Change the environment's encryption key with a new key version (preview)
+### Change the environment's encryption key with a new key version
 You can change the environment’s encryption key by creating a new key version. When you create a new key version, the new key version is automatically enabled. All the storage resources detect the new key version and start applying it to encrypt your data. 
 
-When you modify the key or the key version, the protection of the root encryption key changes, but the data in the storage always remains encrypted with your key. There is no additional action required on your part to ensure that your data is protected. Rotating the key version doesn't impact performance. There is no downtime associated with rotating the key version. It can take 24 hours for all the resource providers to apply the new key version in the background. The previous key version must not be disabled as it's required for the service to use it for the re-encryption and for the support of database restoration. 
+When you modify the key or the key version, the protection of the root encryption key changes, but the data in the storage always remains encrypted with your key. There is no additional action required on your part to ensure that your data is protected. Rotating the key version doesn't impact performance. There is no downtime associated with rotating the key version. It can take 24 hours for all the resource providers to apply the new key version in the background. The previous key version **must not be disabled** as it's required for the service to use it for the re-encryption and for the support of database restoration. 
 
 To rotate the encryption key by creating a new key version, use the following steps.
 

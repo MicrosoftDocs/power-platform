@@ -9,7 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: gapretty
-ms.collection: virtual-agent
+
 ms.custom:
   - plugin, connector, flow, advanced-authoring
   - ai-gen-docs-bap
