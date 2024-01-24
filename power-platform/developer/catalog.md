@@ -131,9 +131,9 @@ Here are instructions to install the catalog:
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you're asked to **Select an Environment** to install the ****Catalog Manager**** application.
 1. After you agree to the legal terms and privacy statements, select **Install**.
 
-This process requests that the application is installed. It takes a few minutes to complete.
+   It takes a few minutes to install the application.
 
-After the installation is complete, the ****Catalog Manager**** app is available in [Power Apps](https://make.powerapps.com/) > **Apps**. Select **Play** to launch the ****Catalog Manager**** App.
+1. After the installation is complete, the ****Catalog Manager**** app is available in [Power Apps](https://make.powerapps.com/) > **Apps**. Select **Play** to launch the ****Catalog Manager**** App.
 
 #### Validating successful install of the **Catalog Manager** application
 
