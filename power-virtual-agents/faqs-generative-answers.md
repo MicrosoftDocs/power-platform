@@ -32,7 +32,7 @@ Further evaluation is performed over custom datasets for offensive and malicious
 ## What are the limitations of generative answers? How can users minimize the impact of limitations when using generative answers?
 - You must enable the **generative answers** option for each bot.
 
-- [Languages other than English aren't supported](authoring-language-support.md). Inaccurate responses may be returned when users converse with the system in languages other than English.
+- Generative Answers currently supports the following languages: English, Danish, German, Spanish, French, Italian, Dutch, Portuguese (Brazil), Norwegian. Results with other unsupported languages may be inconsistent/not respond properly.  Additional Copilot Studio languages will be available soon.
 
 - This capability may be subject to usage limits or capacity throttling.
 
