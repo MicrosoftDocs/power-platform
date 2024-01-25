@@ -27,7 +27,7 @@ This checklist presents a set of recommendations to help you optimize experience
 | &#9744; | EO:00 | **Maintain consistency in navigation** TBD ....  |
 | &#9744; | EO:00 | **Organize information in a clear and logical manner** TBD ....  |
 | &#9744; | EO:00 | **Use customization to extend capabilities** TBD ....  |
-| &#9744; | EO:00 | **Leverage artificial intelligence to perform tasks and empower the user** TBD ....  |
+| &#9744; | EO:00 | **Leverage artificial intelligence to perform tasks and augment user capabilities** TBD ....  |
 
 ## Next steps
 
