@@ -5,6 +5,9 @@ author: carlosff
 
 ms.topic: reference
 ms.custom: canvas
+ms.date: 12/18/2023
+ms.subservice: power-fx
+ms.author: carlosff
 search.audienceType: 
   - maker
 contributors:
@@ -49,7 +52,7 @@ Given the following JSON string in a variable named `JsonString`
     ```powerapps-dot
     Value( Column( ParseJSON( JsonString ), "population" ) )
     ```
-    2.1. Notice that this is similar to the `.` operator for [untyped records](../untyped-object#record-types), but the column name does not have to be known beforehand.
+    2.1. Notice that this is similar to the `.` operator for [untyped records](../untyped-object.md#record-types), but the column name does not have to be known beforehand.
 
 3. The following formula returns the text value `"name: Seattle, population: 737000"`:
     ```powerapps-dot
