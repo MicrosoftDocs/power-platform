@@ -1,15 +1,10 @@
 ---
 title: "Retrieve the list of rulesets | Microsoft Docs"
 description: "Read how to form a GET request using the Power Apps checker web API to retrieve the list of rulesets available."
-ms.custom: ""
-ms.date: 06/09/2020
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.date: 01/25/2024
 ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
-ms.assetid: 23c9391c-1697-47a3-a8f2-eedd5c862874
-caps.latest.revision: 21
 author: "mhuguet" # GitHub ID
 ms.subservice: alm
 ms.author: "michu"
@@ -28,7 +23,7 @@ Rules are grouped together using a ruleset. Rulesets can have one or more rules 
 
 |HTTP status code|Scenario|Result|
 |---|---|---|
-|200|One or more results were found|See example below. One or more results may be returned.|
+|200|One or more results were found|See the example later in this article. One or more results may be returned.|
 |204|No results were found|No results response body is returned.|
 |401|Authentication Failed|No results in the response body.|
 
