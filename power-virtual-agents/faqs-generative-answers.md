@@ -33,15 +33,15 @@ Further evaluation is performed over custom datasets for offensive and malicious
 - You must enable the **generative answers** option for each bot.
 
 - Generative answers currently support the following languages. You may be able to use other lanagauges, but the answers generated might be inconsistent and the copilot might not respond properly or as you expect.
-  - English
   - Danish
-  - German
-  - Spanish
-  - French
-  - Italian
   - Dutch
+  - English
+  - French
+  - German
+  - Italian
+  - Norwegian
   - Portuguese (Brazil)
-  - Norwegian. 
+  - Spanish
 
 - This capability may be subject to usage limits or capacity throttling.
 
