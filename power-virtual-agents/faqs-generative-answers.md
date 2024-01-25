@@ -1,7 +1,7 @@
 ---
 title: FAQ for generative answers
 description: This FAQ provides information about the AI used for generative answers in Microsoft Copilot Studio. It includes key considerations and details about how the AI is used, how it is tested and evaluated, and any specific limitations.
-ms.date: 7/30/2023
+ms.date: 1/25/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
