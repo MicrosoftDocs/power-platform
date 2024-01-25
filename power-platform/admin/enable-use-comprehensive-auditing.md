@@ -123,7 +123,7 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 When [audit log search](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) is turned on in the Microsoft Purview compliance portal, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft Purview. For more information, see [Auditing solutions in Microsoft Purview](/microsoft-365/compliance/auditing-solutions-overview).
 
-To search for records in [Microsoft Purview compliance portal](https://compliance.microsoft.com/), choose **Record type** as **CRM**, and  **Activities** as **All Dynamics 365 activities.
+To search for records in [Microsoft Purview compliance portal](https://compliance.microsoft.com/), choose **Record type** as **CRM**, and  **Activities** as **All Dynamics 365 activities**.
 
 ## Create reports
 You can create your own reports to review your audit data. See [Search the audit log in the Purview compliance portal](https://support.office.com/article/search-the-audit-log-in-the-office-365-security-compliance-center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
