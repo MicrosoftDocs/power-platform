@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/developer/cli/reference/virtual-agent.md",
+      "redirect_url": "copilot",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-virtual-agents/quickstart-preview.md",
       "redirect_url": "/power-virtual-agents/fundamentals-get-started",
       "redirect_document_id": "false"

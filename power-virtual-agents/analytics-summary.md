@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: analysis, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Analyze bot performance and usage in Microsoft Copilot Studio

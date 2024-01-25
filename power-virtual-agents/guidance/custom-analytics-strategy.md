@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.custom: guidance
 ms.author: athinesh
 ms.reviewer: iawilt
-ms.collection: virtual-agent
+
 ---
 
 # Custom analytics strategy
