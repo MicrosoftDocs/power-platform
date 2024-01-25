@@ -35,6 +35,13 @@ When configuring the connector, use the side panel to allow or deny specific act
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
 ## Known limitations
+
+### Admins need to be consented users in the Power Apps portal 
+
+The list of connector actions is retrieved via call to Power Apps infrastructure on behalf of the admin user. Consequently, the user needs to have signed into the Power Apps portal and completed the user consent process. If the admin user is not known to the Power Apps portal, then the list of connector actions may not be able to be retrieved.
+
+### App re-publishing
+
 Some Power Apps published before October 1, 2020, need to be re-published for connector action rules for data loss prevention (DLP) to be enforced. The script below helps admins and makers identify the apps that must be re-published.
 
 ```powershell
