@@ -161,11 +161,11 @@ Here are some potential exceptions to the Exchange rules to block email to add f
 
 ## Apply cross-tenant isolation
 
-Power Platform has a system of connectors based on Azure Active Directory (Azure AD) that enable authorized Azure AD users to connect apps and flows to data stores. Tenant isolation governs the movement of data from Azure AD authorized data sources to and from their tenant.
+Power Platform has a system of connectors based on Microsoft Entra that enable authorized Microsoft Entra users to connect apps and flows to data stores. Tenant isolation governs the movement of data from Microsoft Entra authorized data sources to and from their tenant.
 
 Tenant isolation is applied at the tenant level and affects all environments in the tenant, including the default environment. Since all employees are makers in the default environment, configuring a robust tenant isolation policy is critical to securing the environment. We recommended that you explicitly configure the tenants that your employees can connect to. All the other tenants should be covered by default rules that block both inbound and outbound flow of data.
 
-Power Platform tenant isolation is different from Azure AD-wide tenant restriction. It doesn't affect Azure AD-based access outside of Power Platform. It works only for connectors using Azure AD-based authentication, such as the Office 365 Outlook and SharePoint connectors.
+Power Platform tenant isolation is different from Microsoft Entra ID-wide tenant restriction. It doesn't affect Microsoft Entra ID-based access outside of Power Platform. It works only for connectors using Microsoft Entra ID-based authentication, such as the Office 365 Outlook and SharePoint connectors.
 
 ### See also
 

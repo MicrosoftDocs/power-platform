@@ -16,6 +16,8 @@ ms.contributors:
 - v-kgallagher
 ---
 
+
+
 # Power Platform licensing FAQs
 
 This article lists common questions and answers for licensing and plan options.
@@ -42,7 +44,7 @@ Yes, we have a free Developer Plan to learn and build skills on Power Apps, Powe
 
 You can buy more data storage, file storage, and flow runs. To learn more, go to [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
-### Who can buy Microsoft Platform apps plans?
+### Who can buy Microsoft Power Platform apps plans?
 
 Any customer can sign up for a [free trial](try-powerapps-dynamics-365.md). Microsoft 365 admins can buy Power Platform apps plans for their teams or organization. Contact your Microsoft 365 admin when you're ready to buy.
 
@@ -76,13 +78,17 @@ There's no difference between these two offers. Power Apps per user has been ren
 
 More information: [About Power Apps per app plans](about-powerapps-perapp.md)
 
+
 ### How do I use Power Apps pay-as-you-go?
+
 
 More information: [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md)
 
 ### Power Apps per app allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
+
 Power Apps per app is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each *per app* license provides an individual user with rights to one app (canvas and/or model-driven) within a single environment. A single user might be covered by multiple *per app* licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the *per app* license is stackable.
+
 
 An important part of this feature simplification is that we'll no longer require any standalone plans for maker or admin capabilities. Previously admins required a Power Apps P2 license for certain management operations; this will no longer be the case.
 
@@ -98,6 +104,7 @@ The guest user must have a Power Apps license assigned through one of the follow
 - The home tenant of the guest user
 
 When using Microsoft Dataverse as the data source, be sure that the guest user is licensed from the same tenant where you have Dataverse data located. For more information, see [Share a canvas app with guest users](/power-apps/maker/canvas-apps/share-app-guests#:~:text=When%20using%20the%20Microsoft%20Dataverse%20as%20the%20data%20source%2C%20ensure%20that%20the%20guest%20user%20is%20licensed%20from%20the%20same%20tenant%20where%20you%20have%20Dataverse%20data%20located.).
+
 Also, the guest must have the same license that's required for non-guests to run an app. A collection of examples is available in [Frequently asked questions](/powerapps/maker/canvas-apps/share-app-guests#frequently-asked-questions).
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
@@ -146,6 +153,7 @@ No, there are no licensing prerequisites required for eligibility to purchase Po
 ### Power Automate Process Mining 
 
 #### What are the pricing and licensing details for Power Automate Process Mining?
+
 
 -   **List Price (USD)**: $5,000 for 100 GB of data stored/month
 -   **Required prerequisite**: Power Automate Premium. Multiple add-ons can be applied to a single prerequisite.
@@ -205,13 +213,15 @@ The Power Automate Premium trial will include 100 MB of Process Mining stored da
 > [!Note]
 >  Any software automated with an unattended bot may require extra licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. Please see the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
 
+
 #### Is Power Automate per flow an eligible prerequisite for the Hosted RPA add-on?
+
 
 Yes, per flow is eligible.
 
 #### How are the bots hosted?
 
-The bots are hosted with Azure virtual machines leveraging Virtual Machine Scale Sets (VMSS). VMSS is an Azure Compute resource which can be used to deploy and manage a set of identical VMs providing (up to 1000 VMs) by spreading VMs across fault domains in a region or within an Availability Zone.
+The bots are hosted with Azure virtual machines leveraging Virtual Machine Scale Sets. This is an Azure Compute resource which can be used to deploy and manage a set of identical VMs providing (up to 1,000 VMs) by spreading VMs across fault domains in a region or within an Availability Zone.
 
 #### Is this offer available worldwide?
 
@@ -227,7 +237,7 @@ These offers are available until February 1, 2024.
 
 ### Power Automate unattended RPA add-on
 
-### How can I apply unattended RPA add-ons to my flows?
+#### How can I apply unattended RPA add-ons to my flows?
 
 Follow these steps to apply unattended RPA add-ons for your flows.
 
@@ -314,19 +324,19 @@ There are several scenarios in which a user who has anonymously browsed the webs
     -  If a page returns an error response (http 5xx status).
     -  If a page returns 404, or any http 4xx response.
 -  Bots and crawler accessing anonymous pages of the website isn't counted.
--  If there's a monitoring system setup to test website availability periodically, it is removed if it sends a non-browser user agent. In case your monitoring system sends a user agent that is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend targeting **/\_services/about** page of your website to ensure that it isn't counted in anonymous user access.
--  If a user is accessing only static resources (CSS, JavaScript, and images) won't be counted.
+-  If there's a monitoring system set up to test website availability periodically, it is removed if it sends a non-browser user agent. In case your monitoring system sends a user agent that is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend targeting **/\_services/about** page of your website to ensure that it isn't counted in anonymous user access.
+-  If a user is accessing only static resources (CSS, JavaScript, and images), it won't be counted.
 -  If a user is browsing anonymously and later logs in to the website within the same day (UTC time zone), then that user will only be counted as an authenticated user and won't be counted as an anonymous user.
 
 ### If a user accesses a site anonymously and then logs in to the site in the same session, will the user be counted as both an anonymous and an authenticated user?
 
 If a user accesses a site in both an anonymous and an authenticated manner, in the same session or even within the same day (24 hours using UTC time zone), the user will be counted as an authenticated user.
 
-### Access to my website is authenticated, however it has an anonymous log in page. Do I need to purchase an anonymous user subscription?
+### Access to my website is authenticated, however it has an anonymous log-in page. Do I need to purchase an anonymous user subscription?
 
-No, log in page access isn't counted for calculating anonymous users. If the only anonymous page is the sign in page, then it will not require anonymous user subscription to be purchased.
+No, log-in page access isn't counted for calculating anonymous users. If the only anonymous page is the sign-in page, then it will not require an anonymous user subscription to be purchased.
 
-However, it's important to ensure that the rest of the site is made authenticated. This can be done by using page-level permissions on home page and only making it available for authenticated user roles. If any other method is used, like using a client-side (JavaScript) redirect to log in page, then it might lead to some pages being available anonymously.
+However, it's important to ensure that the rest of the site is made authenticated. This can be done by using page-level permissions on home page and only making it available for authenticated user roles. If any other method is used, like using a client-side (JavaScript) redirect to a log-in page, then it might lead to some pages being available anonymously.
 
 ### How much do these licenses cost?
 
@@ -363,12 +373,12 @@ Yes, Dataverse Database and Dataverse File capacity is included with the authent
 
 ### How many users are included in each capacity pack for Power Pages licenses?
 
-- **Power Pages authenticated user/website subscription**: Each pack consists of 100 users. This is same for all tiers.
-- **Power Pages anonymous user/website subscription**: Each pack consists of 500 users. This is same for all tiers.
+- **Power Pages authenticated user/website subscription**: Each pack consists of 100 users. This is the same for all tiers.
+- **Power Pages anonymous user/website subscription**: Each pack consists of 500 users. This is the same for all tiers.
 
 ### What are the Power Pages use rights included with Power Apps and Dynamics 365 enterprise licenses?
 
-Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses, are granted use rights for Power Pages as described below.
+Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses are granted use rights for Power Pages as described below.
 
 1.  Power Apps per app licensed users: One Power Pages website.
 2.  Power Apps per user licensed users: Unlimited Power Pages websites.
@@ -381,33 +391,39 @@ Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses
 | **Provisioning a website** | Every extra website in the environment requires 1 GB of Dataverse capacity | No Dataverse capacity is required to provision a website |
 | **Qualifying base offers** | Dynamics 365 and Power Apps licenses | No base offer is required and licenses can be purchased standalone |
 | **Licenses required for internal authenticated users** | Dynamics 365 enterprise licenses<br /></br>Power Apps per app plan<br /></br>Power Apps per user plan<br /></br>Power Apps per app pay-as-you-go meter | Dynamics 365 enterprise licenses<br /></br>Power Apps per app plan<br /></br>Power Apps per user plan<br /></br>(New) Authenticated per user/website subscription<br /></br> |
-| **Licenses required for external authenticated Users** | Power Apps portals logins capacity (one login = daily unique login) | Authenticated per user/website subscription<br /></br> |
+| **Licenses required for external authenticated users** | Power Apps portals logins capacity (one login = daily unique login) | Authenticated per user/website subscription<br /></br> |
 | **Licenses required for anonymous users** | Power Apps portals page view capacity | Anonymous per user/website subscription<br /></br>|
 | **Dataverse storage** | Not included with Power Apps portals logins and page view capacity | Included with Power Pages subscription<br /></br>Included with Power Pages  |
 
-### If I'm building a Power Pages website for my employees who log in using their Azure AD credentials. What Power Pages licenses do I need?
+### If I'm building a Power Pages website for my employees who log in using their Microsoft Entra credentials, what Power Pages licenses do I need?
 
 Internal authenticated users of a Power Pages website can use one of the following type of licenses:
 
 **Subscription based**
 
-1. **Power Apps per app**: Users can access one Power Pages website that should be part of environment to which Power Apps per app capacity licenses are assigned.
+1. **Power Apps per app**: Users can access one Power Pages website that should be part of the environment to which Power Apps per app capacity licenses are assigned.
 1. **Power Apps per user licensed users**: Users who have been assigned Power Apps per user licenses can use unlimited Power Pages websites.
 1. **Dynamics 365 enterprise licensed users**: Users who have been assigned Dynamics 365 enterprise licenses can use unlimited Power Pages websites. These websites must map to the licensed Dynamics 365 application context and map to the same environment as the licensed Dynamics 365 application.
 1. **Power Pages authenticated user/website subscription**: Users can access one Power Pages website to which Power Pages authenticated per user/website capacity is assigned. If a user accessing the website has a Power Apps per user or a Dynamics 365 enterprise license assigned, then that user won't be counted in Power Pages authenticated user/website capacity.
 
+In order for Power Apps per users/premium and Dynamics 365 enterprise licenses to be recognized:
+- Users should access the Power Pages site using their Entra ID and utilizing the out of the box Azure AD provider.
+- Users need a license assigned in the same tenant as the Power Pages site. If the user's license is assigned in a different tenant, it is not recognized.
+
 ### What is the difference between Power Apps portals login capacity and Power Pages authenticated per user/month capacity?
 
-Power Pages Authenticated per user/month capacity count the number of unique users in a month that have accessed the website in an authenticated manner whereas Power Apps login capacity counts the number of total logins all users had on the website over a 24-hour period.    
+Power Pages Authenticated per user/month capacity counts the number of unique users in a month that have accessed the website in an authenticated manner whereas Power Apps login capacity counts the number of total logins all users had on the website over a 24-hour period.    
     
-For example, in a scenario where a website was accessed by a total of 100 authenticated users in a month with each user logging in once every day to the website. In this scenario, if we apply both meters, here is how they work:
+For example, consider a scenario where a website was accessed by a total of 100 authenticated users in a month with each user logging in once every day to the website. In this scenario, if we apply both meters, here is how they work:
 
-1. **Power Pages authenticated per user**  
-    With Power Pages Authenticated per user per website monthly capacity, the total number of users would be 100 and the customer will need to purchase capacity for 100 users for the website.
-1. **Power Apps portal login**  
-    With Power Apps portal logins, total number of logins would be 100 \* 30 = 3000 (as each user is logging in once every day) and customer will need to purchase capacity for 3000 logins for the website.
+1. **Power Pages authenticated per user**
+ 
+    With Power Pages authenticated per user per website monthly capacity, the total number of users would be 100 and the customer will need to purchase capacity for 100 users for the website.
+1. **Power Apps portal login**
+ 
+    With Power Apps portal logins, total number of logins would be 100 \* 30 = 3,000 (as each user is logging in once every day) and customer will need to purchase capacity for 3,000 logins for the website.
 
-### Suppose I create a Power Pages website that can potentially be used by 100,000 authenticated users. However in a given month it will only be used by 5,000 users (out of the 100,000). Do I need to purchase authenticated per user capacity for 100,000 users or 5,000 users?
+### Suppose I create a Power Pages website that can potentially be used by 100,000 authenticated users. However, in a given month it will only be used by 5,000 users (out of the 100,000). Do I need to purchase authenticated per user capacity for 100,000 users or 5,000 users?
 
 Power Pages authenticated per user/website is licensed based on the number of unique authenticated users who access the site in a month. In this example, the customer should purchase capacity for 5,000 users.
 
@@ -436,11 +452,11 @@ No. Both CDN and WAF capabilities are included as part of Power Pages licensing 
 
 ### Can I still purchase Power Apps portals login and page view subscriptions?
 
-Power Apps portals login and page view subscriptions will be available for purchase during transition period.
+Power Apps portals login and page view subscriptions will be available for purchase during the transition period.
 
 - **Existing customers who have Power Apps portals login and page view subscriptions**
 
-    - Power Apps portals customers whose agreements expire before March 31, 2023, will have the option to renew their agreements using the existing Power Apps portals SKUs for one more agreement term.
+    - Power Apps portals customers whose agreements expired before March 31, 2023, will have the option to renew their agreements using the existing Power Apps portals SKUs for one more agreement term.
     - During this transition period, existing customers will also be able to purchase more capacity for existing SKUs to create new websites or augment capacity for existing websites.  
     - Power Apps portals customers whose agreements expire after March 31, 2023, will need to transition to the new Power Pages licensing upon expiration of their Power Apps portals subscription term.
 
@@ -482,13 +498,17 @@ Dataverse for Teams is a built-in flexible datastore that provides data storage 
 
 - Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams. This includes using custom [APIs built using Azure API Management](/azure/api-management/export-api-power-platform).
 
+
 - Additionally, Microsoft Copilot Studio capabilities have been introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams only.
+
 
 The existing Microsoft Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
 
 #### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
 
+
 Yes. With Dataverse for Teams, users now can build flows that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
+
 
 #### Which Microsoft 365 subscriptions include Dataverse for Teams and Microsoft Copilot Studio capabilities with Teams?
 
@@ -528,7 +548,7 @@ In both cases:
 
 - Users who want to create/install new apps, chatbots, flows, or tables in that environment will be notified that the capacity limit is reached, and they need to reduce storage usage or contact their admins.
 
-- Existing solutions in the environment will continue to work (CRUD allowed). The environments will be able to continue to grow beyond the 2GB limit. 
+- Existing solutions in the environment will continue to work (CRUD allowed). The environments will be able to continue to grow beyond the 2 GB limit. 
 
 - Existing solutions within the environment can be updated.
 
@@ -629,7 +649,7 @@ AI models available in public preview don't require paid AI Builder capacity.
 
 ### Is a trial available for AI Builder?
 
-Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane.
+Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30 days by signing in to the respective service and accessing AI Builder in the left navigation pane.
 
 More information: [AI Builder trial](https://go.microsoft.com/fwlink/?linkid=2134231)
 
@@ -646,12 +666,14 @@ More information:
 
 The following list provides add-ons applicable to all standalone Power Apps and Power Automate plans:
 
+
 - **Power Platform Requests add-on (formally the Power Apps and Power Automate capacity add-on**) increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
 - Dataverse Database Capacity (1 GB) $40 per month
 - Dataverse File Capacity (1 GB) $2 per month
 - Dataverse Log Capacity (1 GB) $10 per month
 
-### Trial Licenses
+
+### Trial licenses
 
 #### How long is the free trial period?
 
@@ -659,7 +681,7 @@ Free trials for Microsoft Power Apps last 30 days. For Power Automate, they're a
 
 #### Is there a way to develop my Power Apps and Power Automate skills for more than 90 days?
 
-Yes. With the Power Apps Developer Plan, you get a free environment for individual use with functionality including the Dataverse. In this environment, you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Developer Plan isn't intended for production use.
+Yes. With the Power Apps Developer Plan, you get a free environment for individual use with functionality including Dataverse. In this environment, you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Developer Plan isn't intended for production use.
 
 To learn more, go to [pricing and explore](https://powerapps.microsoft.com/pricing/).
 
@@ -703,7 +725,7 @@ Premium connectors list:
 - Azure Table Storage
 - Dynamics 365
 - Dynamics 365 Customer Insights
-- Dynamics 365 Finance & Operations
+- Finance and operations
 - Dynamics 365 Sales Insights
 - Dynamics 365 Business Central
 - Dynamics 365 Business Central (on-premises)
@@ -714,19 +736,19 @@ Premium connectors list:
 
 Power Automate plan-based limits on trigger frequency and the number of runs allocated to a tenant per month are being removed.
 
-Power Apps and Power Automate usage will be subject to service limits described in [Requests limits and allocations](api-request-limits-allocations.md). Per user service limits provide capacity assurance for users and alleviate the risk of one user exhausting the tenant wide quota.
+Power Apps and Power Automate usage will be subject to service limits described in [Requests limits and allocations](api-request-limits-allocations.md). Per user service limits provide capacity assurance for users and alleviate the risk of one user exhausting the tenant-wide quota.
 
-#### How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct 1, 2019? Will my existing apps and Power Automate workflows continue to work?
+#### How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct. 1, 2019? Will my existing apps and Power Automate workflows continue to work?
 
-Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Microsoft 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Microsoft 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.
+Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Microsoft 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020, or the expiration of their current Microsoft 365 subscription term, whichever is longer. During the transition period, customers can continue to create additional apps and flows using these connectors.
 
-In addition, apps and flows created prior to October 1, 2019 that are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors.
+In addition, apps and flows created prior to October 1, 2019, that are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors.
 
 The extended transition period allows for using the connectors listed above but it doesn't allow these connectors to use gateways. Gateways were a premium capability before the transition and they continue to be a premium capability.
 
 Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector doesn't provide Dataverse capacity. Dataverse capacity is a prerequisite for Power Apps and Power Automate workflows to use Dataverse.
 
-#### How many apps I can run with Microsoft 365 plans?
+#### How many apps can I run with Microsoft 365 plans?
 
 There's no limit on the number of applications. Customers can continue to run standalone apps to extend and customize Microsoft 365 using standard connectors.
 
@@ -736,7 +758,7 @@ There's no limit on the number of applications. Customers can continue to run st
 
 For Power Apps and Power Automate use rights for Microsoft 365 applications, go to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-#### Can I connect to Microsoft Dynamics for finance and operations apps?
+#### Can I connect to Microsoft Dynamics 365 for finance and operations apps?
 
 Yes, you can use the finance and operations apps connector to build canvas apps using this data.
 

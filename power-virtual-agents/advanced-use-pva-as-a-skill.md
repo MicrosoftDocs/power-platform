@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtual-agent
+
 ---
 
 # Use a Microsoft Copilot Studio bot as a skill
@@ -103,7 +103,7 @@ Microsoft Copilot Studio skill manifests are automatically generated and updated
 
 - **Published manifest**: Allows the Bot Framework bot to connect to the published version of your Microsoft Copilot Studio bot.  
   - The published manifest is only available for Microsoft Copilot Studio bots that have been published at least once.  
-  - It's automatically updated to reflect changes every time you [**publish** your bot](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content).
+  - It's automatically updated to reflect changes every time you [**publish** your bot](publication-fundamentals-publish-channels.md#publish-the-latest-content).
 
 > [!NOTE]
 > The **Published manifest** isn't available for Microsoft Copilot Studio bots that have never been published.  

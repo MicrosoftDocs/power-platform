@@ -9,7 +9,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: authoring, ce06122020
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Reuse variables across topics

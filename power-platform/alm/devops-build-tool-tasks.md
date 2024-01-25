@@ -1,14 +1,12 @@
 ---
 title: "Build tool tasks | Microsoft Docs"
 description: "Learn about what build tool tasks are available plus some examples of tasks in Azure Pipelines."
-keywords: 
-author: mikkelsen2000
+author: marcelbf
+ms.author: marcelbf
 ms.subservice: alm
-ms.author: pemikkel
-ms.custom: ""
 ms.date: 09/29/2023
-ms.reviewer: "pehecke"
-ms.topic: "article"
+ms.reviewer: pehecke
+ms.topic: article
 search.audienceType: 
   - developer
 ---

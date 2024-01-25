@@ -1,5 +1,5 @@
 ---
-title: "Use DLP to block HTTP requests in chatbots"
+title: "Use DLP to block HTTP requests in copilots"
 description: "Block HTTP requests from being used by Microsoft Copilot Studio chatbots."
 keywords: "PVA"
 ms.date: 03/24/2023
@@ -10,10 +10,10 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: admin, dlp
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
-# Data loss prevention example 2 - Block HTTP requests from Microsoft Copilot Studio chatbots
+# Data loss prevention example - Block HTTP requests from Microsoft Copilot Studio copilots
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 

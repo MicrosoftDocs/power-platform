@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: authoring, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Test your Microsoft Copilot Studio bot
@@ -24,7 +24,6 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 ## Prerequisites
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
-
 
 # [Web app](#tab/webApp)
 

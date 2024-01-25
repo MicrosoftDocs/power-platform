@@ -9,7 +9,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: mboninco
 ms.custom: analysis, ceX, bap-template
-ms.collection: virtual-agent
+
 ms.service: power-virtual-agents
 ---
 
