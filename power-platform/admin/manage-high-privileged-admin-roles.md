@@ -128,7 +128,25 @@ Write-Host $output
 
 ### Step 2: Confirm the result
 
-<!-- WAITING FOR SCREENSHOT -->
+Upon success, you see output similar to the following output:
+
+```powershell
+"Description":  "[\"SyncMode: Default\",\"Instance XXxXxXXX-8f46-ee11-be6a-000xXxXXXXXX exists\",\"Instance XXxXxXXX-8f46-ee11-be6a-000xXxXXXXXX  in enable
+
+d state\",\"Instance Url found
+https://yourenv.crm.dynamics.com\",\"User
+found in AD tenant\",\"User in enabled state in AD tenant\",\"SystemUser with Id:xXXxxXXx-1280-ee11-8179-0
+
+00d3a59c7b7, objectId:xXXxXXXX-2f05-467f-80b4-xXxXXXXxxxXX exists in instance\"]",
+```
+
+#### Errors
+
+You might see an error message if you don't have the right permissions.
+
+```powershell
+"Unable to assign System Administrator security role as the user is not either a Global admin, Power Platform admin, or Dynamics 365 admin. Please review your role assignments in Entra ID and try again later. For help, please reach out to your administrator."
+```
 
 ### Step 3: Clean up activity
 
