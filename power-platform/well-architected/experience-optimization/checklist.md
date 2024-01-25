@@ -23,7 +23,7 @@ This checklist presents a set of recommendations to help you optimize experience
 | &#9744; | EO:00 | **Map experiences to user roles** TBD ....  |
 | &#9744; | EO:00 | **Create engaging and useful forms** TBD ....  |
 | &#9744; | EO:00 | **Inform the user with meaningful notifications and messages** TBD ....  |
-| &#9744; | EO:00 | **Create accessible workloads** TBD ....  |
+| &#9744; | EO:00 | **Create accessible interfaces** TBD ....  |
 | &#9744; | EO:00 | **Maintain consistency in navigation** TBD ....  |
 | &#9744; | EO:00 | **Organize information in a clear and logical manner** TBD ....  |
 | &#9744; | EO:00 | **Use customization to extend capabilities** TBD ....  |
