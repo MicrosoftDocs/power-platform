@@ -14,6 +14,8 @@ ms.reviewer: angieandrews
 ms.contributors:
 - jessechen
 - v-kgallagher
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 
@@ -405,6 +407,10 @@ Internal authenticated users of a Power Pages website can use one of the followi
 1. **Power Apps per user licensed users**: Users who have been assigned Power Apps per user licenses can use unlimited Power Pages websites.
 1. **Dynamics 365 enterprise licensed users**: Users who have been assigned Dynamics 365 enterprise licenses can use unlimited Power Pages websites. These websites must map to the licensed Dynamics 365 application context and map to the same environment as the licensed Dynamics 365 application.
 1. **Power Pages authenticated user/website subscription**: Users can access one Power Pages website to which Power Pages authenticated per user/website capacity is assigned. If a user accessing the website has a Power Apps per user or a Dynamics 365 enterprise license assigned, then that user won't be counted in Power Pages authenticated user/website capacity.
+
+In order for Power Apps per users/premium and Dynamics 365 enterprise licenses to be recognized:
+- Users should access the Power Pages site using their Entra ID and utilizing the out of the box Azure AD provider.
+- Users need a license assigned in the same tenant as the Power Pages site. If the user's license is assigned in a different tenant, it is not recognized.
 
 ### What is the difference between Power Apps portals login capacity and Power Pages authenticated per user/month capacity?
 

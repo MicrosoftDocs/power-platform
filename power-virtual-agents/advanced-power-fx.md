@@ -10,7 +10,7 @@ ms.author: iawilt
 ms.reviewer: kamrani
 manager: leeclontz
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ms.custom: ceX, advanced-authoring, bap-template
 ---
 

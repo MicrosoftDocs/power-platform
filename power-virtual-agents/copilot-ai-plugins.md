@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: gapretty
 ms.custom: plugin, connector, flow, advanced-authoring
-ms.collection: virtual-agent
+
 ---
 # Create AI plugins for Microsoft Copilot (preview)
 
@@ -27,7 +27,7 @@ You can create multiple types of AI plugins in Microsoft Copilot Studio:
 
 This article provides instructions for creating, sharing, or publishing plugins.
 
-After you create plugins, [enable them for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot), or [add them to a custom copilot as a plugin action](./advanced-plugin-actions.md).
+After you create plugins, [enable them for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot), or [add them to a custom copilot as a plugin action](./advanced-plugin-actions.md).
 
 AI plugins can be created on the **AI plugins (preview)** page in Copilot Studio, under **Plugins (preview)** on the side navigation pane:
 
@@ -130,6 +130,6 @@ Users can create OpenAI plugins and use them to generate connectors to integrate
 1. Select **Add Plugin**.  
    ![Create Openai Added](media/copilot-ai-plugins/create-openai-added.png)
 
-Your copilot plugin is generated along with your custom connector for the plugin. Both are available for use within your organization and can be included in solutions that you export. For more information, see [Create a custom connector from an OpenAI definition](/connectors/custom-connectors/define-openapi-definition).
+Your copilot plugin is generated along with your custom connector for the plugin. Both are available for use within your organization and can be included in solutions that you export. For more information, see [Create a custom connector from an OpenAPI definition](/connectors/custom-connectors/define-openapi-definition).
 
 After you create your plugin, [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).

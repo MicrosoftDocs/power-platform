@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtualagent
+
 ---
 
 # Getting started with Bot Framework Composer

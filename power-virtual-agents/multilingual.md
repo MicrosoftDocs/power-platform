@@ -10,7 +10,7 @@ ms.author: iawilt
 ms.reviewer: clmori
 ms.custom: multilingual, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Configure and create multilingual copilots
