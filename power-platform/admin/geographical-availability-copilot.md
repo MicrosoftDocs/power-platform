@@ -20,6 +20,8 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title
   - ai-seo-date:09/07/2023
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 # Enable copilots and generative AI features

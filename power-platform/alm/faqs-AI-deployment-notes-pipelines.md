@@ -7,6 +7,7 @@ ms.custom:
 ms.topic: article
 author: ASheehi1
 ms.author: matp
+ms.collection: bap-ai-copilot
 ---
 
 # FAQ for use Copilot to generate deployment notes in pipelines
@@ -25,7 +26,7 @@ Using Azure OpenAI service as a foundation, deployment notes will be generated i
 
 ## What is the system’s intended use?
 
-AI-generated deployment notes help admins approve and manage deployments in their organization, providing insight into what a solution contains and its purpose. AI-generated content may have mistakes. Make sure it's accurate and appropriate before using it. For more information, read the full [terms](https://dynamics.microsoft.com/legaldocs/supp-azure-openai-features/).
+AI-generated deployment notes help admins approve and manage deployments in their organization, providing insight into what a solution contains and its purpose. AI-generated content may have mistakes. Make sure it's accurate and appropriate before using it.
 
 ## How was use Copilot to generate deployment notes in pipelines evaluated? What metrics are used to measure performance?
 
