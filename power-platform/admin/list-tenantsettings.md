@@ -12,6 +12,7 @@ search.audienceType:
   - admin
 contributors:
 - bibekTimalsina948 
+ms.collection: bap-ai-copilot
 ---
 
 # List tenant settings (preview)
