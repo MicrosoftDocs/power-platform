@@ -34,6 +34,16 @@ There are three ways to install the Power Platform CLI.
 |[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows,Linux,MacOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.|
 |[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Install this when you need to use [pac data](reference/data.md) or certain [pac package](reference/package.md) commands ([deploy](reference/package.md#pac-package-deploy) and [show](reference/package.md#pac-package-show)) that are only available for Windows.|
 
+### How to check if you already have Power Platform CLI installed?
+
+For Microsoft Windows system, open Windows PowerShell, type `Get-Command pac` at the prompt, and press Enter. If an error is returend then your system does not have Power Platform CLI installed. 
+
+### How to check which version of Power Platform CLI is installed on your system?
+
+Open the command prompt (on Microsoft Windows), or a Terminal session (in Linux), type `pac` and press Enter. You will see the installed version (second line at the top) listed.
+
+For the MSI install on Microsoft Windows, you can type `pac use` and press Enter to list the versions installed on your system.
+
 ## Manage auth profiles
 
 Most PAC CLI commands require authenticated access to resources. You will need to create and use auth profiles.
