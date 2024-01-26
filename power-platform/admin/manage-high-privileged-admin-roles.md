@@ -166,6 +166,26 @@ You might see an error message if you don't have the right permissions.
 
 Run the [PowerShell script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement) to remove the users from the System Administrator role after the assignment expires in PIM.
 
+- `-roleName`: "System Administrator" or another role
+- `-usersFilePath`: Path to CSV file with list of user principal names (one per line)
+- `-environmentUrl`: Found at [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/)
+- `-processAllEnvironments`: (Optional) Process all your environments
+- `-geo`: A valid GEO
+- `-outputLogsDirectory`: Path where log files are written
+
+#### Example script
+
+```powershell
+Remove-RoleAssignmentFromUsers
+-roleName "System Administrator" 
+-usersFilePath "C:\Users\<My-Name>\Desktop\<names.csv>"
+-environmentUrl "<my-name>-environment.crm.dynamics.com"
+# Or, include all your environments
+-processAllEnvironments $true
+-geo "NA"
+-outputLogsDirectory "C:\Users\<My-Name>\Desktop\<log-files>"
+```
+
 ## Known limitations
 
 - When the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
