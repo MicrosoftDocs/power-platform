@@ -19,7 +19,7 @@ ms.custom: bap-template
 
 The [pac data](../cli/reference/data.md) and certain [pac package](../cli/reference/package.md) commands are only available for Windows because they currently have dependencies on .NET Framework, which isn't cross-platform compatible.
 
-Power Platform CLI for Windows is installed from this NuGet package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
+Power Platform CLI for Windows is installed and updated from this NuGet package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
 
 ## Install
 
@@ -39,6 +39,10 @@ To get the latest updates for Power Platform Tools for Windows, run this command
 ```powershell
 pac install latest
 ```
+> [!NOTE]
+> All updates for Power Platform CLI require internet connection to access the latest Nuget package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
+>
+> 
 
 ## Uninstall
 
