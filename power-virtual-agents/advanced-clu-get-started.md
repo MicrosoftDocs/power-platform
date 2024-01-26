@@ -10,7 +10,7 @@ ms.reviewer: peterswimm
 manager: leeclontz
 ms.custom: "advanced-authoring, CLU, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Get started with conversational language understanding integration 
