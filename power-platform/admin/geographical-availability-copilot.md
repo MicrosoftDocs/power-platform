@@ -79,7 +79,8 @@ More copilots and generative AI features will be available in the future.
 | Microsoft Copilot Studio | Generative AI in copilots | [AI-based copilot authoring overview](/microsoft-copilot-studio/nlu-gpt-overview) and [Configure data movement for Copilot Studio generative AI features outside the United States](/microsoft-copilot-studio/manage-data-movement-outside-us) |
 | Microsoft Dataverse | Excel to table for new makers | [Upload an Excel file (preview)](/power-apps/maker/data-platform/create-edit-entities-portal#upload-an-excel-file-preview) |
 | Power Apps | Build apps through conversation | [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app) |
-| Power Apps | Describe a new table | [Describe the new table](/power-apps/maker/data-platform/create-edit-entities-portal#describe-the-new-table)
+| Power Apps | Describe a new table | [Describe the new table](/power-apps/maker/data-platform/create-edit-entities-portal#describe-the-new-table) |
+| Power Apps | Draft with Copilot | [Draft with Copilot](/power-apps/user/well-written-input-text-copilot) |
 | Power Automate | Power Automate designer copilot | [Get started with Copilot in cloud flows (preview)](/power-automate/get-started-with-copilot) |
 
 ## Copilot data movement across geographies for Dynamics 365
