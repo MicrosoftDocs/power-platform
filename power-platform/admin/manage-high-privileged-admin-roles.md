@@ -164,7 +164,7 @@ You might see an error message if you don't have the right permissions.
 
 ### Step 3: Clean up activity
 
-Run the [PowerShell script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement) to remove the users from the System Administrator role after the assignment expires in PIM.
+Run [Remove-RoleAssignmentFromUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) to remove users from the System Administrator security role after the assignment expires in PIM.
 
 - `-roleName`: "System Administrator" or another role
 - `-usersFilePath`: Path to CSV file with list of user principal names (one per line)
