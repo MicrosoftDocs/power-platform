@@ -4,7 +4,7 @@ description: Instructions to install, update, and uninstall the Power Platform C
 author: snizar007
 ms.author: snizar
 ms.reviewer: jdaly
-ms.date: 01/15/2024
+ms.date: 01/26/2024
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -19,7 +19,8 @@ ms.custom: bap-template
 
 The [pac data](../cli/reference/data.md) and certain [pac package](../cli/reference/package.md) commands are only available for Windows because they currently have dependencies on .NET Framework, which isn't cross-platform compatible.
 
-Power Platform CLI for Windows is installed and updated from this NuGet package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
+> [!NOTE]
+> An internet connection is required for install and update. Power Platform CLI for Windows is installed and updated from this NuGet package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
 
 ## Install
 
@@ -39,10 +40,6 @@ To get the latest updates for Power Platform Tools for Windows, run this command
 ```powershell
 pac install latest
 ```
-> [!NOTE]
-> All updates for Power Platform CLI require internet connection to access the latest Nuget package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
->
-> 
 
 ## Uninstall
 

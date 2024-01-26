@@ -5,7 +5,7 @@ keywords: Microsoft Power Platform CLI, code components, component framework, CL
 ms.author: snizar
 author: snizar007
 ms.reviewer: jdaly
-ms.date: 01/15/2024
+ms.date: 01/26/2024
 ms.topic: overview
 ---
 # What is Microsoft Power Platform CLI?
@@ -34,15 +34,52 @@ There are three ways to install the Power Platform CLI.
 |[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows,Linux,MacOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.|
 |[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Install this when you need to use [pac data](reference/data.md) or certain [pac package](reference/package.md) commands ([deploy](reference/package.md#pac-package-deploy) and [show](reference/package.md#pac-package-show)) that are only available for Windows.|
 
-### How to check if you already have Power Platform CLI installed?
+### Check whether Power Platform CLI is already installed
 
-For Microsoft Windows system, open Windows PowerShell, type `Get-Command pac` at the prompt, and press Enter. If an error is returend then your system does not have Power Platform CLI installed. 
+For Windows, open PowerShell, type `Get-Command pac | Format-List` at the prompt, and press <kbd>Enter<kbd>. 
 
-### How to check which version of Power Platform CLI is installed on your system?
+The results should look something like this:
 
-Open the command prompt (on Microsoft Windows), or a Terminal session (in Linux), type `pac` and press Enter. You will see the installed version (second line at the top) listed.
+```
+Name            : pac.exe
+CommandType     : Application
+Definition      : C:\Users\you\.dotnet\tools\pac.exe
+Extension       : .exe
+Path            : C:\Users\you\.dotnet\tools\pac.exe
+FileVersionInfo : File:             C:\Users\you\.dotnet\tools\pac.exe
+                  InternalName:     pac.dll
+                  OriginalFilename: pac.dll
+                  FileVersion:      1.29.11
+                  FileDescription:  Microsoft Power Platform CLI
+                  Product:          Microsoft Power Platform&copy;
+                  ProductVersion:   1.29.11+g9e2b163
+                  Debug:            False
+                  Patched:          False
+                  PreRelease:       False
+                  PrivateBuild:     False
+                  SpecialBuild:     False
+                  Language:         Language Neutral
+```
 
-For the MSI install on Microsoft Windows, you can type `pac use` and press Enter to list the versions installed on your system.
+When Power Platform CLI isn't installed, you will get this error:
+
+```
+Get-Command: The term 'pac' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+```
+
+### Check which version of Power Platform CLI is installed
+
+Open the command prompt (on Microsoft Windows), or a Terminal session (in Linux), type `pac` and press <kbd>Enter<kbd>. 
+
+You should see something like this where the version is on the second line.
+
+```
+Microsoft PowerPlatform CLI
+Version: 1.30.3+g0f0e0b9
+```
+
+For [Power Platform CLI for Windows](../howto/install-cli-msi.md), you can type `pac use` and press <kbd>Enter<kbd> to list the versions installed on your system.
 
 ## Manage auth profiles
 
