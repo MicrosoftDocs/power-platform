@@ -66,7 +66,8 @@
         ]
       },
       "ms.service": {
-        "**.*": "power-virtual-agents"
+        "**.*": "copilot-studio",
+        "guidance/**/*.md": "power-virtual-agents"
       },
       "ms.collection": {
         "**.*": "bap-ai-copilot"
