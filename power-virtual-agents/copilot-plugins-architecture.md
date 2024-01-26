@@ -9,7 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: gapretty
-ms.collection: virtual-agent
+
 ms.custom:
   - plugin, connector, flow, advanced-authoring
   - ai-gen-docs-bap
@@ -72,15 +72,15 @@ The administration layer is where administrators can use the Microsoft Admin Cen
 
 ### Plugin Discovery and Execution
 
-The plugins available to a user include plugins assigned through deployed integrated apps. The plugins available to a user are discovered through the plugins registry. Users are free to further customize the plugins based on how they want to use the plugin flyout experience. The plugin execution information gets retrieved from the plugins registry and includes the runtime path.
+The plugins available to a maker include plugins assigned through deployed integrated apps. The plugins available to a maker are discovered through the plugins registry. Makers are free to further customize the plugins based on how they want to use the plugin flyout experience. The plugin execution information gets retrieved from the plugins registry and includes the runtime path.
 
 There are two runtime execution paths supported today:
 
 1. **Plugins that are Dataverse-based**: Microsoft Dynamics 365 plugins that access or modify Dataverse data, Microsoft Copilot Studio topic plugins, and prompt plugins. This path supports Microsoft Entra ID authentication. The calls are made to the underlying system on behalf of the user.
 
-1. **Plugins that use the the Power Platform connector ecosystem**: This path helps execute connectors that provide access to internal and external systems of record. It supports explicit configuration of credentials per user such as Salesforce connection credentials that are then maintained per user.
+1. **Plugins that use the Power Platform connector ecosystem**: This path helps execute connectors that provide access to internal and external systems of record. It supports explicit configuration of credentials per user such as Salesforce connection credentials that are then maintained per user.
 
-If a user doesn't find a suitable plugin for their task, they can navigate to the Microsoft Copilot Studio and create a plugin that addresses their needs.
+If a maker doesn't find a suitable plugin for their task, they can navigate to the Microsoft Copilot Studio and create a plugin that addresses their needs.
 
 ### Data/AI Layer
 

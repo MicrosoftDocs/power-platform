@@ -10,7 +10,7 @@ manager: leeclontz
 ms.reviewer: pawant
 ms.custom: authentication, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Configure single sign-on with Microsoft Entra ID 
@@ -385,9 +385,14 @@ Update the custom canvas page where the bot is located to intercept the login ca
             const {
                 token
             } = await fetchJSON(theURL);
+    
+            var directline = await fetchJSON(regionalChannelSettingsURL).then(res=> res.channelUrlsById.directline); 
+
             const directLine = window.WebChat.createDirectLine({
+                domain: `${directline}v3/directline`,
                 token
             });
+
             var userID = clientApplication.account?.accountIdentifier != null ?
                 ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0, 64) :
                 (Math.random().toString() + Date.now().toString()).substr(0, 64); // Make sure this will not exceed 64 characters 

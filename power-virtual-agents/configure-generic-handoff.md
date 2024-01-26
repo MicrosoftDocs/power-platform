@@ -11,7 +11,7 @@ manager: leeclontz
 ms.custom: handoff, ceX
 ms.reviewer: pawant
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Configure hand off to any generic engagement hub

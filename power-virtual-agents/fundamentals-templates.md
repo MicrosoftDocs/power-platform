@@ -10,40 +10,37 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: fundamentals, teams, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 searchScope:
   - "Power Virtual Agents"
 ---
 
-# Use prebuilt chatbot templates in Microsoft Teams
+# Use prebuilt copilot templates in Microsoft Teams
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 > [!NOTE]
-> This topic applies to chatbots created in the Microsoft Copilot Studio app in Microsoft Teams only. Templates are not currently supported for the Microsoft Copilot Studio web app.
+> This topic applies to copilots created in the Microsoft Copilot Studio app in Microsoft Teams only. Templates aren't currently supported for the Copilot Studio web app.
 
-Bots are great at helping your employees to self-serve human resources (HR), IT, and other internal employee functions by providing automated responses and taking meaningful actions. This increases an employee's efficiency and saves your organization money and time.
+Copilots help your employees to self-serve human resources (HR), IT, and other internal employee functions by providing automated responses and taking meaningful actions. This copilot automation increases an employee's efficiency and saves your organization money and time.
 
-Sometimes, however, it's hard to know where to start. You can use templates created by the Microsoft Copilot Studio team to help you create and customize bots to your needs.
+You can use templates created by the Copilot Studio team to help you create and customize bots to your needs.
 
 ## Employee frequently asked questions (FAQ) template
 
-The Employee FAQ chatbot template helps you easily create a bot to handle your employee's most common questions by adding content that matches your business's needs.
+The Employee FAQ copilot template helps you create a bot to handle your employee's most common questions. The template adds content that matches your business needs.
 
->
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFMe0]
 >
 
-The template comes with a built-in capability to log an employee's escalation request, notify a human expert, and allow them to quickly respond to the employee - all within Microsoft Teams.
+The template can log an employee's escalation request, notify a human expert, and prompt a quick response to the employee—all within Teams.
 
-It also obtains employee feedback so you can make improvements to the bot over time.
+The copilot obtains employee feedback so you can make improvements to the copilot over time.
 
-As it's built with Microsoft Copilot Studio, it can easily be customized and extended to suit your needs with no developer and data science background required.
+A copilot can be customized and extended to suit your needs with no developer and data science background required.
 
-Whether it's HR, IT or other internal employee functions, the Employee FAQ bot template is a great place to start on your bot-building journey.
+Download the copilot template from GitHub:
 
-Download the bot template from GitHub:
-
-- [Employee FAQ chatbot template](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/Templates/Employee%20FAQ)
+- [Employee FAQ copilot template](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/Templates/Employee%20FAQ)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

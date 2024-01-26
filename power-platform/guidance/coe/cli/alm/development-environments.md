@@ -54,7 +54,7 @@ One approach to app development is for organizations is to manage and assign dev
 
 1. Complete the sign-up process using [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) by selecting **Get started free**.
 
-1. The license type **Microsoft Power Apps for Developers** can now be [assigned to users](/microsoft-365/admin/manage/assign-licenses-to-users) or [Azure Active Directory Groups](/azure/active-directory/enterprise-users/licensing-groups-assign)
+1. The license type **Microsoft Power Apps for Developers** can now be [assigned to users](/microsoft-365/admin/manage/assign-licenses-to-users) or [Microsoft Entra Groups](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 1. If the AllowAdHocSubscriptions value was changed to true, you can update to value to false.
 

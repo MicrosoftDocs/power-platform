@@ -8,7 +8,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Export data to respond to requests for copies of personal data in Power Virtual Agents
@@ -27,23 +27,21 @@ This topic discusses the Power Virtual Agents capabilities to find or export per
 
    :::image type="content" source="media/personal-data-export/export-1.png" alt-text="Sign in to powerapps.com." border="false":::
 
-1. In the side pane, select **Data** > **Tables**.
+1. In the side pane, select **Tables**.
 
-   :::image type="content" source="media/personal-data-export/open-table.png" alt-text="Open Data table.":::
+   :::image type="content" source="media/personal-data-export/open-table-2023.png" alt-text="Open Data table.":::
 
-1. Select the **Data** dropdown, then select **Export data**.
+1. Search for chatbot tables.
 
-   :::image type="content" source="media/personal-data-export/ExportDataMenu.png" alt-text="Export data.":::
+   :::image type="content" source="media/personal-data-export/SearchChatbotTables-2023.png" alt-text="Search chatbot tables.":::
 
-1. Select **Chatbot** and **Chatbot subcomponent** from the entity list, then select **Export data**. Your data will take a couple of minutes to be compiled for export.
+1. Select **Chatbot** or **Chatbot subcomponent** from the table list, then select **Export data**. Your data will take a couple of minutes to be compiled for export. 
 
-   :::image type="content" source="media/personal-data-export/ExportChatbotAndChatbotSubComponent.png" alt-text="Select entities for export.":::
-
-   :::image type="content" source="media/personal-data-export/export-data-button.png" alt-text="Select export data button.":::
+   :::image type="content" source="media/personal-data-export/exportchatbotandchatbotsubcomponent-2023.png" alt-text="Select entities for export.":::
 
 1. When your export is ready, select **Download exported data** to download the content.
 
-   :::image type="content" source="media/personal-data-export/DownloadExportedData.png" alt-text="Download exported data.":::
+   :::image type="content" source="media/personal-data-export/downloadexporteddata-2023.png" alt-text="Download exported data.":::
 
 ### Bot sessions (as bot author)
 

@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: digantak
 ms.custom: plugin
-ms.collection: virtual-agent
+
 ---
 
 # Copilot Studio security and governance
@@ -21,9 +21,9 @@ Microsoft Copilot Studio follows the Security Development Lifecycle (SDL). The S
 
 The Copilot Studio service is governed by your commercial license agreements, including the [Microsoft Product Terms](https://go.microsoft.com/fwlink/?linkid=2182773) and the [Data Protection Addendum](https://go.microsoft.com/fwlink/?linkid=2153219). For the location of data processing, refer to the [geographical availability documentation](https://dynamics.microsoft.com/availability-reports/).
 
-The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform compliance information. Learn more at [Copilot Studio Compliance Offerings](https://learn.microsoft.com/en-us/power-virtual-agents/admin-certification).
+The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform compliance information. Learn more at [Copilot Studio Compliance Offerings](admin-certification.md).
 
-Furthermore, Power Platform has an extensive set of [Data Loss Prevention features](https://learn.microsoft.com/en-us/power-platform/admin/prevent-data-loss) to help you manage the security of your data. Learn how to [Configure Data Loss Prevention policies for bots](https://learn.microsoft.com/en-us/power-virtual-agents/admin-data-loss-prevention) in your organization.
+Furthermore, Power Platform has an extensive set of [Data Loss Prevention features](/power-platform/admin/prevent-data-loss) to help you manage the security of your data. Learn how to [Configure Data Loss Prevention policies for bots](admin-data-loss-prevention.md) in your organization.
 
 To further govern and secure Copilot Studio using generative AI features in your organization, you can do the following,
 

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Hybrid Modern Authentication (HMA) for Exchange on-premises
 
-Dynamics 365 can connect to mailboxes hosted on Exchange Server (on-premises) by using Hybrid Modern Authentication (HMA). Server-side synchronization will authenticate against Azure Active Directory (Azure AD) by using a certificate you provide and stored securely in Azure Key Vault. You'll need to establish an application registration secured by a client secret to enable Dynamics 365 to access the certificate in Key Vault. After Dynamics 365 is able to retrieve the certificate, the certificate will be used to authenticate as a specific app and access the Exchange (on-premises) resource. 
+Dynamics 365 can connect to mailboxes hosted on Exchange Server (on-premises) by using Hybrid Modern Authentication (HMA). Server-side synchronization will authenticate against Microsoft Entra by using a certificate you provide and stored securely in Azure Key Vault. You'll need to establish an application registration secured by a client secret to enable Dynamics 365 to access the certificate in Key Vault. After Dynamics 365 is able to retrieve the certificate, the certificate will be used to authenticate as a specific app and access the Exchange (on-premises) resource. 
 
 ## Supported Exchange versions
 
@@ -23,12 +23,12 @@ HMA will only be available from Exchange 2013 (CU19+) or Exchange 2016 (CU8+). M
 
 To deploy HMA with Dynamics 365, you'll need to meet the following requirements:
 
-- **HMA must be enabled on Exchange by using Azure AD pass-through authentication**. More information:
+- **HMA must be enabled on Exchange by using Microsoft Entra ID pass-through authentication**. More information:
 
   - [Exchange Server hybrid deployments](/exchange/exchange-hybrid)
   - [Hybrid Configuration wizard](/exchange/hybrid-configuration-wizard)
-  - [What is Azure AD Connect?](/azure/active-directory/hybrid/whatis-azure-ad-connect)
-  - [Azure Active Directory Pass-through Authentication: Quickstart](/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
+  - [What is Microsoft Entra Connect?](/azure/active-directory/hybrid/whatis-azure-ad-connect)
+  - [Microsoft Entra ID Pass-through Authentication: Quickstart](/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
   - [How to configure Exchange Server on-premises to use Hybrid Modern Authentication](/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication?view=o365-worldwide)
  
 - **A certificate is required for this authentication scheme**. You must provide a valid certificate to configure server-side sync for HMA. It can be generated directly in Azure Key Vault or through your company's process for generating and uploading a certificate to Key Vault.
@@ -127,8 +127,8 @@ To allow HMA-App to have access to Exchange (on-premises), grant the **Office 36
 Before you [create an email server profile](connect-exchange-server-on-premises.md) on Dynamics 365 by using Exchange Hybrid Modern Auth (HMA), you need to collect the following information from the Azure portal:
 
 - EWS URL: The Exchange Web Services (EWS) endpoint where Exchange (on-premises) is located, which must be publicly accessible from Dynamics 365. 
-- AAD resource Id: The Azure resource ID to which the HMA app will request access. It's usually the host part of the EWS endpoint URL. 
-- TenantId: The tenant ID of the tenant where Exchange (on-premises) is configured with Azure AD pass-through authentication. 
+- Microsoft Entra resource Id: The Azure resource ID to which the HMA app will request access. It's usually the host part of the EWS endpoint URL. 
+- TenantId: The tenant ID of the tenant where Exchange (on-premises) is configured with Microsoft Entra ID pass-through authentication. 
 - HMA Application Id: The App ID for HMA-App. It can be found on the main page for the app registration of HMA-App.
 - Key Vault Uri: The URI of the Key Vault used for certificate storage. 
 - Key Vault KeyName: The certificate name used in Key Vault. 

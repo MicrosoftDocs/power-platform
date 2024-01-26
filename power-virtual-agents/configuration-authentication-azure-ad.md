@@ -11,7 +11,7 @@ manager: leeclontz
 ms.reviewr: micchow
 ms.custom: authentication, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Configure user authentication with Microsoft Entra ID
@@ -180,7 +180,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 1. Select **Save**.
 
 > [!TIP]
-> The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the requested access token. For more information, see [Configure single sign-on for your custom website (preview)](configure-sso.md).
+> The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the requested access token. For more information, see [Configure single sign-on for your custom website](configure-sso.md).
 
 ### Test your bot
 

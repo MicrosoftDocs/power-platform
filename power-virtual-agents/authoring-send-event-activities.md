@@ -9,7 +9,7 @@ author: KendalBond007
 ms.author: iawilt
 ms.reviewer: clmori
 ms.custom: authoring, ceX
-ms.collection: virtual-agent
+
 ---
 
 # Sending event activities
@@ -22,7 +22,7 @@ Microsoft Copilot Studio provides two nodes that allow you to send non-message a
 
 ## Sending events
 
-The Send an Event node is specifically designed for sending Event Activites. Event activities are sent from the bot and can be intercepted and used by the channel, which decides if and how to use the activities. When you send an event, you give it a name and then you can set a value on the event. This value can be in any format: a primitive literal value, a variable reference or a Power Fx formula. The value gets serialized as JSON and added to the outgoing activity.
+The Send an Event node is specifically designed for sending Event activities. Event activities are sent from the bot and can be intercepted and used by the channel, which decides if and how to use the activities. When you send an event, you give it a name and then you can set a value on the event. This value can be in any format: a primitive literal value, a variable reference or a Power Fx formula. The value gets serialized as JSON and added to the outgoing activity.
 
 :::image type="content" source="media/authoring-variables/authoring-send-activites-settings.png" alt-text="Screenshot showing the settings menu for an Event activity node.":::
 

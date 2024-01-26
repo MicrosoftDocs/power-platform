@@ -1,18 +1,14 @@
 ---
 title: "Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform | Microsoft Docs"
 description: "In this tutorial, learn how to automate solution export and deployment using GitHub Actions for Microsoft Power Platform."
-keywords: 
-author: mikkelsen2000
+author: marcelbf
+ms.author: marcelbf
 ms.subservice: alm
-ms.author: pemikkel
-ms.custom: ""
 ms.date: 10/14/2020
-ms.reviewer: "pehecke"
-
-ms.topic: "tutorial"
+ms.reviewer: pehecke
+ms.topic: tutorial
 search.audienceType: 
   - maker
-#Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 
 # Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform
@@ -41,14 +37,14 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     ![Create a new repository](../media/github-actions-tutorial/gh-lab-2.35.png "Create a new repository")
 
-3. Create your new repository and name it ‘poweractionslab’. Make sure you select **Add a README file** to initiate the repo and choose **Create repository**.
+3. Create your new repository and name it 'poweractionslab'. Make sure you select **Add a README file** to initiate the repo and choose **Create repository**.
 
     ![Initiate repo.](../media/github-actions-tutorial/gh-lab-2.40.png "Initiate repo")
 
 ### Creating a new secret for Service Principal Authentication
 1. Navigate to to you repository and click **Settings**, then expand **Secrets**, and then and click **Actions**.
 
-2. On the *Secrets* page, name the secret ‘PowerPlatformSPN’. Use the client secret from the application registration created in Azure Active Directory and enter it into the **Value** field, and then select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab.
+2. On the *Secrets* page, name the secret 'PowerPlatformSPN'. Use the client secret from the application registration created in Microsoft Entra and enter it into the **Value** field, and then select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab.
 
     ![Create the service principal secret](../media/github-actions-tutorial/spn-secret-setup.gif "Create the service principal secret")
 
@@ -66,7 +62,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     ![Sample YML file](../media/github-actions-tutorial/gh-lab-2.90.png "Sample YML file")
 
-3. Delete the pre-created content, paste the content from the [export-and-branch-solution-with-spn-auth.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution-with-spn-auth.yml) file, and then rename the file to ‘export-and-branch-solution’.yml.
+3. Delete the pre-created content, paste the content from the [export-and-branch-solution-with-spn-auth.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution-with-spn-auth.yml) file, and then rename the file to 'export-and-branch-solution'.yml.
 
     ![Rename and replace content.](../media/github-actions-tutorial/gh-lab-2.100.png "Rename and replace content")
 
@@ -89,7 +85,7 @@ Congratulations, you have just created your first GitHub workflow using the foll
 
 - **Who Am I**: Ensures that you can successfully connect to the environment you are exporting from.
 - **Export Solution**: Exports the solution file from your development environment.
-- **Unpack Solution**: The solution file that is exported from the server is a compressed (zip) file with consolidated configuration files. These initial files are not suitable for source code management as they are not structured to make it feasible for source code management systems to properly do differencing on the files and capture the changes you want to commit to source control. You need to ‘unpack’ the solution files to make them suitable for source control storage and processing.
+- **Unpack Solution**: The solution file that is exported from the server is a compressed (zip) file with consolidated configuration files. These initial files are not suitable for source code management as they are not structured to make it feasible for source code management systems to properly do differencing on the files and capture the changes you want to commit to source control. You need to 'unpack' the solution files to make them suitable for source control storage and processing.
 - **Branch Solution**: Creates a new branch to store the exported solution.
 
 ## Test the export and unpack workflow
@@ -132,7 +128,7 @@ In this section, we will create an additional workflow that:
 
     ![Set up a workflow.](../media/github-actions-tutorial/gh-lab-2.240.png "Set up a workflow")
 
-3. Rename the title of the workflow to ‘release-solution-to-prod-with-inputs’ and copy the content from the [release-solution-to-prod-with-inputs.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/release-solution-to-prod-with-inputs.yml) file and paste it into the **Edit new file** screen.
+3. Rename the title of the workflow to 'release-solution-to-prod-with-inputs' and copy the content from the [release-solution-to-prod-with-inputs.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/release-solution-to-prod-with-inputs.yml) file and paste it into the **Edit new file** screen.
 
     ![Rename and paste code.](../media/github-actions-tutorial/gh-lab-2.250.png "Rename, and paste code")
 
@@ -152,7 +148,7 @@ In this section, we will call the reusable workflow on the [release event](https
 
     ![Set up a workflow.](../media/github-actions-tutorial/gh-lab-2.240.png "Set up a workflow")
 
-3. Rename the title of the workflow to ‘release-action-call’ and copy the content from the [release-action-call.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/release-action-call.yml) file and paste it into the **Edit new file** screen.
+3. Rename the title of the workflow to 'release-action-call' and copy the content from the [release-action-call.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/release-action-call.yml) file and paste it into the **Edit new file** screen.
 
     ![Rename and paste code.](../media/github-actions-tutorial/gh-lab-2.251.png "Rename and paste code")
 

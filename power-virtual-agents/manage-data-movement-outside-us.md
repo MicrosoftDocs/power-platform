@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: digantak
 ms.custom: plugin
-ms.collection: virtual-agent
+
 ---
 
 # Configure data movement across geographic locations for generative AI features outside United States
@@ -78,9 +78,9 @@ The following table provides information about the location of the Azure OpenAI 
 
 | **Power Platform environment geographic region**                         | **Data storage and processing region for Azure OpenAI** | **Data storage and processing region for Bing Search** |
 |--------------------------------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------|
-| Australia, United Kingdom, United States                                 | Within the respective geographic region                 | United States                                          |
+| Australia, United Kingdom, United States, India                          | Within the respective geographic region                 | United States                                          |
 | Europe, France, Germany, Norway, Switzerland                             | Sweden or Switzerland                                   | United States                                          |
-| Asia, Brazil, Canada, India, Japan, Singapore, South Africa, South Korea | United States                                           | United States                                          |
+| Asia, Brazil, Canada, Japan, Singapore, South Africa, South Korea        | United States                                           | United States                                          |
 
 ## Disable data across geographic locations outside the United States
 
@@ -103,3 +103,6 @@ Disable data movement across geographic locations by following these steps:
 6.  Select **Save**.
 
 After you remove your consent, the status on the **Generative AI features** card shows **Not allowed**, disabling Copilot Studio generative AI features in the environment.
+
+### See also
+[Enable copilots and generative AI features in regions](/power-platform/admin/geographical-availability-copilot)

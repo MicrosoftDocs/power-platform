@@ -128,7 +128,7 @@ This query will return all the attribute details from the **exception** table.
 > [!div class="mx-imgBorder"] 
 > ![Application Insights exceptions table attribute details.](media/application-insights-exceptions-table-attribute-details.png "Application Insights exceptions table attribute details")
 
-If a user reports an error, you can use the user ID (Azure Active Directory ID) to understand details from the **exception** table.
+If a user reports an error, you can use the user ID (Microsoft Entra ID ID) to understand details from the **exception** table.
 
 ```kusto
 exceptions

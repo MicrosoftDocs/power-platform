@@ -62,11 +62,14 @@
     "fileMetadata": {
       "searchScope": {
         "**.*": [
-          "Power Virtual Agents"
+          "Microsoft Copilot Studio"
         ]
       },
       "ms.service": {
         "**.*": "power-virtual-agents"
+      },
+      "ms.collection": {
+        "**.*": "bap-ai-copilot"
       },
       "ms.subservice": {
         "guidance/**/*.md": "guidance"
