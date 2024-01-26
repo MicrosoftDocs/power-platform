@@ -65,6 +65,10 @@ Update Power Platform CLI by using the [dotnet tool update](/dotnet/core/tools/d
 ```dotnetcli
 dotnet tool update --global Microsoft.PowerApps.CLI.Tool
 ```
+> [!NOTE]
+> All updates for Power Platform CLI require internet connection to access the latest Nuget package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
+>
+> 
 
 ## Uninstall
 
