@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/25/2023
+ms.date: 01/21/2024
 ms.author: prkoduku
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -21,7 +21,7 @@ Dynamics 365 and Power Apps licenses include a limited set of Power Automate cap
 
 ## Enforcement
 
-Flows not in context of apps are subject to enforcement. The following list explains the enforcement timelines.
+Flows not in context of apps are subject to enforcement. The following list explains the enforcement timelines:
   - Admins with flows that need licenses will first get notifications in Power Platform Admin center.
   - Admins can find these flows using PowerShell and assign a Process/per-flow license to the flow or a Power Automate premium/per-user license to the owner to avoid any interruptions. Admins have 30 days to act on these flows before makers start receiving notifications.
   - After 30 days from admin notifications, flow owners and co-owners get email notifications and in product banners in Power Automate portal about the flows that need their attention. Admins get email notifications about the flows.
@@ -63,7 +63,7 @@ If you previously installed PowerShell, check for the installed version using th
 
 `Get-InstalledModule -Name  Microsoft.PowerApps.Administration.PowerShell`
 
-The latest version deployed in August 2023 is 2.0.174. If you're on a previous version, use the following command to update the PowerShell module.
+The latest version deployed in August 2023 is `2.0.174`. If you're on a previous version, use the following commands to update the PowerShell modules:
 
 ```powershell
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force
@@ -71,10 +71,13 @@ Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Force
 ``````
 
 > [!NOTE]
-> In August 2023, we made multiple enhancements and performance improvements to the Powershell module. You shoud update to the latest version.
+> In August 2023, we made multiple enhancements and performance improvements to the PowerShell module. You shoud update to the latest version.
 
 Command: `Get-AdminFlowAtRiskOfSuspension`
 
 Command example with export:
 
-`Get-AdminFlowAtRiskOfSuspension -EnvironmentName  <ENV_NAME> -ApiVersion '2016-11-01' | Export-Csv -Path suspensionList.c
+```powershell
+Get-AdminFlowAtRiskOfSuspension -EnvironmentName  <ENV_NAME> -ApiVersion '2016-11-01' | Export-Csv -Path suspensionList.c
+``````
+
