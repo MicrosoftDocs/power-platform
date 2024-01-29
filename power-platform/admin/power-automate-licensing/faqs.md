@@ -20,7 +20,7 @@ search.audienceType:
 
 Here are some frequently asked questions about Power Automate standalone licenses.
 
-## How do Power Automate license plans work?
+## How do Power Automate license plans work for flow runs?
 
 If a flow is set to the Power Automate process plan, then it can access premium connectors, has the highest limits, and always uses the process plan request limits, regardless of who runs the flow.
 
@@ -30,13 +30,13 @@ The user license plan for Power Automate is the Power Automate premium plan, but
 
 To learn more about license plans that include Power Automate capabilities, go to [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types) and the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). To learn more about the limits and performance profile of license plans, go to [Limits of automated, scheduled, and instant flows](/power-automate/limits-and-config).
 
-### When should I choose Power Automate 'Process' versus 'Premium'?
+### Which Power Automate licenses do I need?
 
-Microsoft recommends that most organizations buy the Power Automate premium license for every user in their organization. Purchase the Power Automate process license for every machine that runs unattended automation.
+Microsoft recommends that most organizations buy the Power Automate premium license for every user in their organization. Purchase the Power Automate process license for every business process or machines that runs unattended automation, and the Power Automate Hosted RPA add-on if you want to build, test and run your desktop flow automation with zero infrastructure.
 
-The Premium user plan is intended for a human user to support the broad adoption of an automation culture in an organization.
+The Premium user plan is intended for a human user to support the broad adoption of an automation culture in an organization and is required for RPA developers to build and manage desktop flows on the Power Automate portal.
 
-The Process plan is intended for core enterprise process automations that are typically automated back-end activities (not run manually by a person). For example, every organization needs processes for invoice processing or HR onboarding that are mandatory to the normal operation of the business. These processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, an invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they are all handling an invoice through multiple steps to closure.
+The Process license is intended for core enterprise process automations that are typically automated back-end activities (not run manually by a person). For example, every organization needs processes for invoice processing or HR onboarding that are mandatory to the normal operation of the business. These processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, an invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they are all handling an invoice through multiple steps to closure.
 
 By obtaining a Process license, organizations ensure that all the flows within the business process are appropriately licensed. This enables the deployment and management of interconnected flows as a cohesive unit, facilitating application lifecycle management (ALM) and optimized performance.
 
@@ -47,6 +47,9 @@ You need a Process license if your flow meets **one of the following criteria**:
 - Your flows process large data or need to run frequently, thereby needing a high volume of Power Platform requests.
 - Your premium flow is invoked by multiple users. In this case, either everyone needs a Premium license, or the flow needs a Process license. If a flow has a Process license, it doesn't require any user to have a license. It provides an organization with the flexibility to pay for licenses based on the number of flows. Larger organizations or solutions that affect many people can benefit from the fixed monthly cost.
 - Your flow uses premium connectors, and your organization has many guest users using the flow, but you don't know if the guest users' home tenant provides them with Premium licenses.
+
+> [!NOTE]
+> The Process license only licenses the flows and/or machines and not the user. The Premium user plan is required for RPA developers to build and manage desktop flows on the Power Automate portal. Refer to the [Premium RPA features](/power-automate/desktop-flows/premium-features.md) for more information on the Premium RPA features that comes with the Premium user plan.
 
 ### How many Power Automate Process licenses do I need?
 
@@ -82,6 +85,7 @@ Yes. A solution can have multiple processes with a Process license assigned to e
 
 ### Who needs to purchase a Premium license?
 
+- You need a Premium license for each RPA developer who builds and manages desktop flows on the Power Automate portal. Refer to the [Premium RPA features](/power-automate/desktop-flows/premium-features.md) for more information.
 - The Power Automate Process plan has the highest priority among all licenses. This means if a Process license is assigned to a flow, the flow always uses this license and doesn't need an owner or running user to have a Premium license.
 - Automated and scheduled flows always run in the context of the flow owner regardless of who starts the flow or what accounts are used for connections inside of the flow. Instant flows (button, hybrid triggers) run in the context of the user who invokes them, regardless of the connections used in the flow. If an automated or scheduled flow uses a premium connector, only the owner needs to have a Premium license.
 - If an instant flow has premium connectors, every user who runs the flow needs a Power Automate Premium license. In such cases, instead of licensing every user, you can license the flow with a Process license. 
