@@ -47,9 +47,9 @@ On the **Data policies** page:
 
 ## Known limitations
 
-### Make admins consented users in the Power Apps portal
+### Admins need to give users consent in Power Platform admin center
 
-The list of connector actions is retrieved when the admin user calls the Power Apps infrastructure. The admin user needs to sign into the [Power Apps portal](https://make.preview.powerapps.com/) and complete the user consent process. If the admin user isn't known to the Power Apps portal, then the list of connector action might not be retrieved.
+The list of connector actions is retrieved when a user calls the Power Apps infrastructure. The admin needs to sign into the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/) and complete the user consent process. If a user isn't known to Power Apps, then the list of connector actions might not be retrieved.
 
 ### Republish Power Apps
 
