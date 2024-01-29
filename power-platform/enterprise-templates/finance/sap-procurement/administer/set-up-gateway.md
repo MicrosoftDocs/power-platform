@@ -15,7 +15,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/24/2024
+ms.date: 01/29/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -72,14 +72,16 @@ Because the connector maintains an internal state of the connection to SAP, you 
 
 As an admin, ensure that random load balancing is _off_ for an on-premises data gateway cluster set up with the SAP NCo 3.1 connector.
 
-Assuming your cluster is already set up, take these steps:
+:::image type="content" source="media/set-up-gateway/gateway-clusters.png" alt-text="Select a gateway and access the Settings panel to ensure random load balancing is turned off.":::
+
+Assuming your gateways are already set up, take these steps:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. Select **Data** on the left panel.
-1. Select **Gateway clusters** to see a list of gateway clusters.
-1. View the list and select the gateway cluster set up with the SAP NCo 3.1 connector.
-1. Select [**Settings**](/power-platform/admin/onpremises-data-gateway-management#settings) to view the cluster's Settings panel.
-1. Make sure the checkbox next to _Distribute requests across all active gateways in this cluster_ **remains unchecked**.
+1. Select **Data** on the left navigation pane.
+1. Select **On-premises data gateways** to see a list of gateways.
+1. Select the gateway cluster set up with the SAP NCo 3.1 connector.
+1. Select [**Settings**](/power-platform/admin/onpremises-data-gateway-management#settings).
+1. On the _Settings_ panel, go to **General**. Make sure the checkbox next to _Distribute requests across all active gateways in this cluster_ **remains unchecked**.
 1. If you made a change, select **Save**.
 
 > [!NOTE]
