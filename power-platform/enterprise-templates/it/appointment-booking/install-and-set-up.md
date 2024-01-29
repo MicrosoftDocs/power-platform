@@ -9,6 +9,7 @@ ms.date: 11/29/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
+ms.collection: bap-ai-copilot
 ---
 
 # Install and set up the Appointment Booking template
