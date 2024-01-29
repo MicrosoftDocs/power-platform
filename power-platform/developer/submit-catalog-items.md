@@ -52,10 +52,10 @@ Use the [pac admin list](cli/reference/admin.md#pac-admin-list) command to view 
 > [!NOTE]
 > This command requires an administrator authentication profile.
 
-When using this command, you must use the following `--application-id` parameter with the value `83a35943-cb41-4266-b7d2-81d60f383695`.
+When using this command, you must use the following `--application` parameter with the value `83a35943-cb41-4266-b7d2-81d60f383695`.
 
 ```powershell
-pac admin list --application-id 83a35943-cb41-4266-b7d2-81d60f383695
+pac admin list --application 83a35943-cb41-4266-b7d2-81d60f383695
 ```
 
 `83a35943-cb41-4266-b7d2-81d60f383695` is the application ID associated with the catalog. The requirement to include this value will be removed in a future update.
