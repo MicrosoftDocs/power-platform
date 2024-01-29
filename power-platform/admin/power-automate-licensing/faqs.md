@@ -32,11 +32,11 @@ To learn more about license plans that include Power Automate capabilities, go t
 
 ### Which Power Automate licenses do I need?
 
-Microsoft recommends that most organizations buy the Power Automate premium license for every user in their organization. Purchase the Power Automate process license for every business process or machines that runs unattended automation, and the Power Automate Hosted RPA add-on if you want to build, test and run your desktop flow automation with zero infrastructure.
+Microsoft recommends that most organizations buy the Power Automate premium license for every user in their organization. Purchase the Power Automate process license for every business process or machines that run unattended automation, and the Power Automate Hosted RPA add-on if you want to build, test and run your desktop flow automation with zero infrastructure.
 
 The Premium user plan is intended for a human user to support the broad adoption of an automation culture in an organization. It's required for RPA developers to build and manage desktop flows on the Power Automate portal.
 
-The Process license is intended for core enterprise process automations that are typically automated back-end activities (not run manually by a person). For example, every organization needs processes for invoice processing or HR onboarding that are mandatory to the normal operation of the business. These processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, an invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they are all handling an invoice through multiple steps to closure.
+The Process license is intended for core enterprise process automations that are typically automated back-end activities (not run manually by a person). For example, every organization needs processes for invoice processing or HR onboarding that are mandatory to the normal operation of the business. These processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, an invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they're all handling an invoice through multiple steps to closure.
 
 By obtaining a Process license, organizations ensure that all the flows within the business process are appropriately licensed. This enables the deployment and management of interconnected flows as a cohesive unit, facilitating application lifecycle management (ALM) and optimized performance.
 
@@ -71,7 +71,7 @@ In the following screenshot, all cloud flows are covered by one Process license,
 
 ### My DPA process has multiple cloud flows. Will I need multiple Process licenses?
 
-Core business processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, the invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they are all handling an invoice through multiple steps to closure. You only need one Process license for a core business process. This encourages microservices architecture best practices where flows can be small with fine-grained functionality resulting in better maintainability.
+Core business processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, the invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they're all handling an invoice through multiple steps to closure. You only need one Process license for a core business process. This encourages microservices architecture best practices where flows can be small with fine-grained functionality resulting in better maintainability.
 
 Identify the flow that starts the process and assign a Process license to that flow. Parent and child flows of the flow with Process license are covered by the Process license. These flows can be in the same solution or in a different solution. 
 
@@ -102,7 +102,7 @@ To find out what type (automated/manual/scheduled) of flow you have, select a fl
     - The child flow uses premium connectors, and
     - The child flow doesn't have a Process license. If the child flow has a Process license, it uses the Process license and not the parent flow's license.
 
-During the [transition period](types.md#transition-period), the parent flow license is not inherited by the child flow. The child flow uses the owner's license. However, after the transition period ends, only the parent flow license (owner's license/parent flow's Process license) will be used, unless the child flow has a Process license.
+During the [transition period](types.md#transition-period), the parent flow license isn't inherited by the child flow. The child flow uses the owner's license. However, after the transition period ends, only the parent flow license (owner's license/parent flow's Process license) will be used, unless the child flow has a Process license.
 
 ### We have three environments (development, test, and production) to align with best practices and we need flows in several environments. Do we need to buy a Process license for every environment?
 
@@ -168,13 +168,13 @@ Yes, they can use Power Automate for the desktop (they have usage rights for it)
 
 ## Legacy license questions
 
-Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from the pricing page. They will be removed from the price list on February 1, 2024. Power Automate process, an all-encompassing license that is easier to manage, licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month.
+Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from the pricing page. They'll be removed from the price list on February 1, 2024. Power Automate process, an all-encompassing license that is easier to manage, licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month.
 
 ### How is Process license different from per flow license 
 
 For unattended RPA, previously customers needed to buy a per flow license for the cloud flow and an unattended RPA add-on. Now they can purchase a Process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the Process license. 
 
-For cloud flows, one per flow license allows a parent flow and its child flows. One Process license allows the parent flow, its child flows and any flows that are tagged as in context of the flow. Per flow had a minimum of 5 packs to be purchased to get started. There is no minimum purchase quantity requirement for Process license.
+For cloud flows, one per flow license allows a parent flow and its child flows. One Process license allows the parent flow, its child flows and any flows that are tagged as in context of the flow. Per flow had a minimum of 5 packs to be purchased to get started. There's no minimum purchase quantity requirement for Process license.
 
 ### How is Power Automate Premium license different from Power Automate per user with attended RPA license?
 
@@ -419,7 +419,7 @@ Here are a few examples of what multiplexing is or isn't:
 
 ### I have multiple flows running under a shared service account. What licenses do I need?
 
-- **Service account**: Microsoft Entra user account used as a service account. Service accounts are a special type of account that's intended to represent a nonhuman entity, such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, pose a security risk and it's difficult to track who made changes to a flow if multiple people have access to the service account. Managing their passwords is also a challenge.  When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. Service accounts are not recommended as a best practice. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. In such cases, use Service principal to resolve security threats.
+- **Service account**: Microsoft Entra user account used as a service account. Service accounts are a special type of account that's intended to represent a nonhuman entity, such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, pose a security risk and it's difficult to track who made changes to a flow if multiple people have access to the service account. Managing their passwords is also a challenge.  When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. Service accounts aren't recommended as a best practice. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. In such cases, use Service principal to resolve security threats.
 
 - **Service principal**: Microsoft Entra service principal functions as the identity of the application instance. Service principals define who can access the application and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object. 
 
@@ -429,7 +429,7 @@ Here are a few examples of what multiplexing is or isn't:
 
 This guidance is specific to flows that run under a service account as the owner of the flow. 
 
-If you want to run your flow under a service account, here is how to avoid multiplexing: 
+If you want to run your flow under a service account, here's how to avoid multiplexing: 
 
 - If the flow only uses standard connectors and no premium features, all the users who have the credentials of the service account can have a Microsoft/Office 365 license, Power Automate Free, or any Power Automate Premium license. 
 
