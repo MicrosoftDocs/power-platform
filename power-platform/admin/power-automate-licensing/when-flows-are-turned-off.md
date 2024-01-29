@@ -31,7 +31,7 @@ Flows not in context of apps are subject to enforcement. The following list expl
 
 ## Types of enforcements
 
-Admins can access the details of flows that need attention via either the environment level or tenant-level license usage reports. Alternatievly, Admins have a PowerShell command to find the flows that need their attention.
+Admins can access the details of flows that need attention via either the environment level or tenant-level license usage reports. Alternatively, Admins have a PowerShell command to find the flows that need their attention.
 
 Dynamics 365 licensed user flows are automatically considered as being in context of the Dynamics 365 app in the environment and are excluded from enforcement if they are:
 
