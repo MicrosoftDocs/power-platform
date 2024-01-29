@@ -18,22 +18,41 @@ searchScope:
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-In some cases, your data might not exist in a supported data source. However, you can provide your own data through Power Automate Flows. You then format the results into a JSON object  as a variable or expression to generate answers.
+In some cases, your data might not exist in a supported data source. However, you can provide your own data through Power Automate cloud flows or through HTTP requests. You then format the results into a JSON object as a `Table` variable or expression to generate answers.
 
-The custom data field takes a JSON array of objects, representing a set of `ContentLocation`/`Content` pairs, as in the following exmaple:
+The custom data field takes a `Table` as an input, with the below properties:
 
-```JSON
-[{
+| Name   | Required | Description |
+|----------|-----------|------------|
+| `Content` | True | Source content that is used to be summarized and answer the input question. |
+| `ContentLocation` |   | Optional URL for the citation of the source content |
+| `Title` |   | Optional title for the citation of the source content |
+
+Here's a sample table:
+
+```powerapps-dot
+[
+ {
+  Content: "This is a sample piece of text that was provided for testing purposes, to be replaced with content of your choice",
   ContentLocation: "https://contoso.com/p1.htm",
-  Content: "This is a sample piece of text that was provided for testing purposes, to be replaced with content of your choice"
+  Title: "Contoso Sample"
  },
  {
-  ContentLocation: "https://fabrikam.com/p2.htm",
-  Content: "This is a second bit of sample text that can be replaced with content of your choice"
-}]
+  Content: "This is a second bit of sample text that can be replaced with content of your choice",
+  ContentLocation: "https://fabrikam.com/p2.htm"
+ },
+ {
+  Content: "This is a third bit of sample text that can be replaced with content of your choice",
+  Title: "Adventure Works Cycles Sample"
+ },
+ {
+  Content: "This is a fourth bit of sample text that can be replaced with content of your choice"
+ }
+]
 ```
 
-Copilot answers are generated from `Content` and include the link to the data source in `ContentLocation`.
+Copilot answers are generated from `Content` and include the link to the data source in `ContentLocation`. If a `Title`, is it used for the citation.
+
 
 ## Use custom data
 
