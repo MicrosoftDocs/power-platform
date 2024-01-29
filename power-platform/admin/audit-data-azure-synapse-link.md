@@ -29,7 +29,7 @@ Microsoft Dataverse auditing is supported on all custom and most customizable ta
 
 Here are the high-level steps for creating the link in Azure:
 
-1. [Create n Azure Synapse Link](#create-n-azure-synapse-link)
+1. [Create n Azure Synapse Link](#create-an-azure-synapse-link)
    1. Create a resource group.
    1. Create an Azure Data Lake Storage Gen2 account with hierarchical directory enabled.
    1. Create a Synapse workspace.
@@ -43,7 +43,7 @@ Here are the high-level steps for creating the link in Azure:
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
 1. Create a resource group. More information: [Create resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
-1. Create a storage account. More information: [Create a storage account](https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal)
+1. Create a storage account. More information: [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal)
 Under the **Project** details:
    1. Select the **Subscription** where the resource group was created.
    1. Select the **Resource group** that you just created from above.
