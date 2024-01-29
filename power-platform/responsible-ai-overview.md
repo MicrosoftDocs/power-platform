@@ -8,6 +8,7 @@ ms.custom:
 ms.topic: article
 ms.author: kvivek
 ms.reviewer: kvivek
+ms.collection: bap-ai-copilot
 ---
 
 # Responsible AI FAQs for Microsoft Power Platform
