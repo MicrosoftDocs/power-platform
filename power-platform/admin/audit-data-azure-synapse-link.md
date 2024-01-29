@@ -116,7 +116,7 @@ You can access the audit data using serverless SQL in your Azure Synapse Analyti
 ### Use Serverless SQL to create reports
 
 1. Sign in to Power Apps and select the environment you want.
-1. In Click on the Go to Azure Synapse Analytics workspace action.
+1. In Click on the Go to Azure Synapse Analytics workspace action. <!-- Checking with PM of what this means-->
 
 ### Using Power BI Desktop
 
