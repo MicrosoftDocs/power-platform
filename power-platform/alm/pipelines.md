@@ -75,6 +75,10 @@ Pipelines deploy solutions as well as configuration for the target environment s
    > Power BI Dashboards (preview) and Power BI Datasets (preview) are not currently supported in pipelines. 
    >
 
+### Why can't I see my pipeline from my environment?
+
+First, ensure that your source and target environments are linked properly. You will only be able to view your pipeline in the assigned source environment(s) (i.e., your development environments). When linking each of your environments to your pipeline during configuration, you will have an option of **Development Environment** or **Target Environment** EnvironmentType. If your pipeline-associated environments are assigned their proper type, your pipeline will appear as an option in your source/development environment.
+
 ### Does pipelines automatically store solution backups?
 
 Yes. Both managed and unmanaged solutions are automatically exported and stored in the pipelines host for every deployment.
