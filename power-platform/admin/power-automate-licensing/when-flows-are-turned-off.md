@@ -3,7 +3,6 @@ title: When premium flows are turned off due to license issues
 description: Learn about why your flows are turned off, types of enforecements, and recommendations.
 author: PriyaKodukula
 contributors:
-  - PriyaKodukula
   - thomasjeffries11
   - v-aangie
 ms.component: pa-admin
