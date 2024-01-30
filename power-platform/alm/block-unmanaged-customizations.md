@@ -30,7 +30,7 @@ Once the setting is enabled these operations are blocked for the environment:
 - Adding unmanaged changes to existing managed components are blocked.
 - Any unmanaged changes result in an error returned to the user, such as: “This environment doesn't allow unmanaged customizations. This was a choice made by your admin, and certain actions won't be available or will be view only.”
 
-The following operations are not blocked by this feature:
+The following operations aren't blocked by this feature:
 
 - Change of environment variable, enabling or disabling components. For example, turning Power Automate flows on or off, assigning ownership, or sharing of table records.
 - Solutions operations like remove [Remove an unmanaged layer](/power-apps/maker/data-platform/solution-layers#remove-an-unmanaged-layer).
@@ -39,6 +39,14 @@ The following operations are not blocked by this feature:
 ## Enable block unmanaged customizations
 
 This feature can be enabled or disabled from the **Features** area of the environment settings for environments in the Power Platform admin center. By default, this setting is disabled. More information: [Block unmanaged customizations](../admin/settings-features.md#block-unmanaged-customizations)
+
+## Known limitations
+
+- Sales Accelerator
+  - Enabling Sales accelerator or modifying settings in an existing environment that have it enabled fail.
+  - Enabling Leads Data hygiene  
+
+<!-- Back to PM to add more detail in the resource sent for these -->
 
 ## See also
 
