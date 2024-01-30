@@ -124,7 +124,7 @@ Use the Azure Synapse Analytics workspace connection for smaller volumes of data
 1. Once signed in, select the workspace under the **Navigator** dialog pane.
 1. Expand the workspace and locate the Dataverse environment’s workspace. A list of Dataverse tables are displayed.
 1. Select the **audit** and the **systemuser** tables, and then select **Load**.
-   :::image type="content" source="media/select-audit-systemuser-tables-pbid.png" alt-text="Select the audit and systemuser tables in Power BI Desktop":::
+   :::image type="content" source="media/select-audit-systemuser-tables-pbid.png" alt-text="Select the audit and systemuser tables in Power BI Desktop" lightbox="media/select-audit-systemuser-tables-pbid.png":::
 1. With the tables selected, you can build Power BI visualizations.
 
 ### Create reports using the Azure Synapse Analytics SQL connection
@@ -136,6 +136,10 @@ Use the Azure Synapse Analytics SQL connection for larger volumes of data to bui
 1. Select **Connect**.
 1. Enter the **Server** and **Database** names.
    - The server name can be found in the Azure portal. Enter the workspace name in the **Search** bar, and then select the workspace. On the **Overview** page, copy the **Serverless SQL endpoint** and return to the **Power BI SQL Server database** page and paste it to the **Server** field.
-   :::image type="content" source="media/servless-sql-endp-pbid.png" alt-text="Copy Serverless SQL endpoint":::
+   :::image type="content" source="media/servless-sql-endp-pbid.png" alt-text="Copy Serverless SQL endpoint" lightbox="media/servless-sql-endp-pbid.png":::
    - The database name can be found in the Azure Synapse Link in [Power Apps (make.powerapps.com)](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Select **Azure Synapse Link for Dataverse** on the left navigation pane, select the Azure Synapse link, and then select **Go to Azure Synapse Analytics workspace** on the command bar. Your database name can be found under the **Lake database** folder on the **Data** page.
 1. Select **OK**.
+
+## See also
+
+[System Settings Auditing tab](system-settings-dialog-box-auditing-tab.md)
