@@ -30,6 +30,10 @@
             href: formula-reference.md
           - name: Dataverse formula reference
             href: formula-reference-dataverse.md
+          - name: Desktop flows formula reference
+            href: formula-reference-desktop-flows.md
+          - name: Power Platform CLI formula reference
+            href: formula-reference-pac-cli.md
           - name: Abs
             href: reference/function-numericals.md
           - name: Acceleration
@@ -121,7 +125,7 @@
           - name: DateDiff
             href: reference/function-dateadd-datediff.md
           - name: DateTime
-            href: reference/function-date-time.md            
+            href: reference/function-date-time.md
           - name: DateTimeValue
             href: reference/function-datevalue-timevalue.md
           - name: DateValue
@@ -130,6 +134,8 @@
             href: reference/function-datetime-parts.md
           - name: Dec2Hex
             href: reference/function-hexdec.md
+          - name: Decimal
+            href: reference/function-value.md
           - name: Defaults
             href: reference/function-defaults.md
           - name: Degrees
@@ -172,6 +178,8 @@
             href: reference/function-first-last.md
           - name: FirstN
             href: reference/function-first-last.md
+          - name: Float
+            href: reference/function-value.md
           - name: ForAll
             href: reference/function-forall.md
           - name: GroupBy
@@ -180,10 +188,10 @@
             href: reference/function-guid.md
           - name: HashTags
             href: reference/function-hashtags.md
+          - name: Help
+            href: reference/function-help.md
           - name: Hex2Dec
             href: reference/function-hexdec.md
-          - name: Help
-            href: reference/function-help.md            
           - name: Host
             href: reference/object-host.md
           - name: Hour
@@ -356,6 +364,8 @@
             href: reference/function-sequence.md
           - name: ShowColumns
             href: reference/function-table-shaping.md
+          - name: ShowHostInfo
+            href: reference/showhostinfo.md
           - name: Shuffle
             href: reference/function-shuffle.md
           - name: Sin

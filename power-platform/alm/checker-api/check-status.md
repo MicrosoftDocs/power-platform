@@ -32,7 +32,7 @@ A URL is returned as part of the `Location` header in response to a request to t
 
 |Name|Type|Expected value|Required?|
 |---|---|---|---|
-|Authorization|string|The OAuth 1 bearer token with AAD Application ID claim.|yes|
+|Authorization|string|The OAuth 1 bearer token with Microsoft Entra Application ID claim.|yes|
 |x-ms-tenant-id|GUID|The ID of the tenant for the application.|yes|
 |x-ms-correlation-id|GUID|The identifier for the analysis run. You should provide the same Id for the entire execution (upload, analyze, status)|yes|
 

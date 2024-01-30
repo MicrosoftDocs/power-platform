@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 10/17/2023
+ms.date: 1/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -52,7 +52,7 @@ The filename and path to read the Connector's API Properties file.
 
 #### `--environment` `-env`
 
-The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--icon-file` `-if`
 
@@ -92,7 +92,7 @@ The ID of the Connector
 
 #### `--environment` `-env`
 
-The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--outputDirectory` `-o`
 
@@ -150,7 +150,7 @@ List the Connectors registered in Dataverse.
 
 #### `--environment` `-env`
 
-The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [connector-list-remarks](includes/connector-list-remarks.md)]
 
@@ -179,7 +179,7 @@ The ID of the Connector
 
 #### `--environment` `-env`
 
-The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--icon-file` `-if`
 

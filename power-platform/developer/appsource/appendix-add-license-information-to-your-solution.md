@@ -2,8 +2,8 @@
 title: "Appendix: Add licensing information to your solution | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "This article outlines the required steps to take license service IDs created in Partner Center and add them to the table definitions of your Dataverse solution." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.date: 04/03/2023
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 ms.reviewer: pehecke
 ms.topic: article
 ms.subservice: developer

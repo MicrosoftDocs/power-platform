@@ -2,52 +2,52 @@
 title: Search public data or use a Bing Custom Search for generative answers
 description: Use Bing as a source for searching for answers.
 keywords: "PVA"
-ms.date: 8/7/2023
+ms.date: 12/20/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: iawilt
-ms.collection: virtual-agent
+
 ms.service: power-virtual-agents
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+searchScope: "Power Virtual Agents"
 ---
 
 # Search public data or use a Bing Custom Search for generative answers
 
-You can search publicly available data by using the Bing search engine API. 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-You can use the default Bing search configuration, or you can connect to a [Bing Custom Search](https://www.customsearch.ai/), which allows you to build a tailored search for specific content. 
+You can search publicly available data by using the Bing search engine API.
 
-This means you can use a large number of sources to boost your bot without having to enter each source individually. To use Bing Custom search as a source, you'll need a custom search instance that you connect to the **Create generative answers** node. 
+You can use the default Bing Search configuration or build a tailored search for specific content using [Bing Custom Search](https://www.customsearch.ai/). Bing Search helps you boost your copilot by including many sources without configuring each source individually. To use Bing Custom Search as a source, you need a custom search instance connected to the **Create generative answers** node.
 
-If you haven't created a Bing Custom Search, follow the [Quickstart: Create your first Bing Custom Search instance](/bing/search-apis/bing-custom-search/how-to/quick-start). 
+> [!NOTE]
+> To create a Bing Custom Search, see [Quickstart: Create your first Bing Custom Search instance](/bing/search-apis/bing-custom-search/how-to/quick-start).
 
-To use Bing search or a Bing Custom Search:
+To use Bing search or Bing Custom Search:
 
-1. Open the **Data source** configuration pane for your topic's node:
+1. Open the **Data source** configuration pane from one of two places:
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the Generative answers node data sources menu.":::
+   1. On the **Create generative answers** node, select **Edit** under **Data sources**.
 
-    - Open the **Properties** pane for the **Create generative answers** node and select **Data source**.
-    - On the **Create generative answers** node, select **Edit** under **Data sources**.
-    
-    :::image type="content" source="media/nlu-gpt/create-gen-ans-node-image-highlight-22May23.png" alt-text="Screenshot of the Search and summarize content node properties.":::
+      :::image type="content" source="media/nlu-gpt/select-properties-from gen-ans.png" alt-text="Screenshot that shows where to select the Properties pane.":::
+
+   1. Alternatively, select the `...` in the **Create generative answers** node, then select **Properties** to open a pane, and finally select **Data source**.
 
 1. Under **Search public data** you can choose how you want to search:
-   - To use Bing to search publicly available web content, choose **Search public websites**.
-   - To use a Bing Custom Search, choose **Search with Bing Custom Search**, and enter your Custom Configuration ID in the **Configuration ID** input box. To get the ID:  
-        1. On the Bing Custom Search web portal, open the search instance you want to use.
-        2. Select **Production** from the top menu, and then under the **Endpoints** section select the **Web API** tab.
-        3. Copy the **Custom Configuration ID**.
 
-    :::image type="content" source="media/nlu-gpt/generative-answers-bing-custom.png" alt-text="Screenshot showing the Search public data section and Configuration ID boxes highlighted in the generative answers property pane.":::
+   :::image type="content" source="media/nlu-gpt/select-search-websites.png" alt-text="Screenshot showing the Search public data section and Configuration ID boxes highlighted in the generative answers property pane.":::
 
-1. When you're done entering sources, close the menu. Make sure to save any changes to your topic.
+   - To use Bing Search, choose **Search public websites**.
+   - To use a Bing Custom Search, choose **Search with Bing Custom Search** and enter your Custom Configuration ID in the **Configuration ID** input box.
 
-The node will now retrieve content from the information sources in the Bing Custom Search instance you've linked the node to.
+     > [!TIP]
+     > To get the **Configuration ID**:  
+     > 1.From the [Bing Custom Search web portal](https://www.customsearch.ai/), open the search instance you want to use.
+     > 1. Select **Production** from the top menu, and then under the **Endpoints** section select the **Web API** tab.
+     > 1. Copy the **Custom Configuration ID**.
 
->[!CAUTION]
-> Information sources defined in the **Generative answers** node will override those you have specified at the bot level, which will then function as a fallback. 
+1. Save changes to your topic.
 
+> [!IMPORTANT]
+> Information sources defined in the **Generative answers** node take priority at the copilot level. Copilot level sources function as a fallback.

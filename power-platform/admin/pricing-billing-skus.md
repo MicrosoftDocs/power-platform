@@ -1,9 +1,9 @@
 ---
 title: Licensing overview for Microsoft Power Platform | Microsoft Docs
-description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, Power Pages, Power BI, AI Builder, Dataverse).
+description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, Power BI, AI Builder, Dataverse).
 author: dileepsinghmicrosoft
 ms.topic: overview
-ms.date: 07/26/2023
+ms.date: 01/10/2024
 ms.subservice: admin
 ms.author: dileeps
 ms.reviewer: sericks
@@ -11,15 +11,20 @@ contributors:
 - srpoduri 
 search.audienceType: 
   - admin
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 # Licensing overview for Microsoft Power Platform
 
 This article provides detailed information about Microsoft Power Platform licensing.
 
-## Power Apps, Power Automate, Power Virtual Agents, and Power Pages offers 
+## Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages offers 
 
-Power Apps, Power Automate, Power Virtual Agents, and Power Pages provide users the ability to create and run apps, bots, and custom websites across data sources that extend beyond Microsoft 365, such as Salesforce and on-premises and custom data sources. These plans also include access to [Dataverse](/power-apps/maker/data-platform/data-platform-intro) to store and manage data.
+Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages provide users the ability to create and run apps, bots, and custom websites across data sources that extend beyond Microsoft 365, such as Salesforce and on-premises and custom data sources. These plans also include access to [Dataverse](/power-apps/maker/data-platform/data-platform-intro) to store and manage data. 
+
+> [!Note]
+> [AI Builder](https://go.microsoft.com/fwlink/?linkid=2103071) proposes AI features which can be used in Power Apps, Power Automate, and Microsoft Copilot Studio.
 
 More details around capabilities and pricing of the Power Platform offers can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
@@ -56,7 +61,7 @@ Dataverse functionality required by other Microsoft 365 applications appears as 
 
 This new service plan allows select Microsoft 365 applications to take advantage of Dataverse as a platform for storing application data and use the underlying business logic tier as part of extending application capabilities. This extension also helps these applications to use Dataverse instances within the [default environment](environments-overview.md#the-default-environment). However, if you need to create a Dataverse instance within production or sandbox environments (other than the default environment), you're still required to have a premium Power Apps or Power Automate license.
 
-These limited capabilities of Dataverse are only available through select Microsoft 365 licenses and can't be used to run any custom apps or Power Automate flows, or run any Power Virtual Agent bots, or use any other data that doesn't belong to the Microsoft 365 applications that take advantage of these capabilities.
+These limited capabilities of Dataverse are only available through select Microsoft 365 licenses and can't be used to run any custom apps or Power Automate flows, or run any Microsoft Copilot Studio bots, or use any other data that doesn't belong to the Microsoft 365 applications that take advantage of these capabilities.
 
 These limited capabilities aren't the common set included with every Office application. They can be different, based on the Microsoft 365 applications that use these capabilities. For the complete list of various limited capabilities, customers should refer to the service description of these Microsoft 365 applications that contain these Dataverse plans. These limited capabilities of Dataverse don't entitle the licensed user to run standalone Power Apps or Power Automate, or any other Microsoft Power Platform applications that use Dataverse.
 

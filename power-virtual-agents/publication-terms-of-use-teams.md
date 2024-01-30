@@ -10,10 +10,12 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "teams, publication, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Create a privacy statement and terms of use in Microsoft Teams
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 When you want to publish your bot so other Microsoft Teams users can access it, you need to provide the following information about your bot:
 
@@ -24,14 +26,14 @@ When you want to publish your bot so other Microsoft Teams users can access it, 
 
 You should update each of these with your own information. See the Microsoft Teams documentation about [Privacy policy, terms of use, and support URLs](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist#privacy-policy-terms-of-use-and-support-urls) for some more ideas on what to include.
 
-The following table lists the default values that are provided in a Power Virtual Agents chatbot, and suggestions on what you should enter instead:
+The following table lists the default values that are provided in a Microsoft Copilot Studio chatbot, and suggestions on what you should enter instead:
 
 Requirement | Default value | Suggestions
 -|-|-
 Privacy statement | [Empty privacy statement and terms of use](#empty-privacy-statement-and-terms-of-use) | You should work with your manager or IT department to determine what you want to say in your privacy statement. This should follow your organization's privacy practices.
 Terms of use | [Empty privacy statement and terms of use](#empty-privacy-statement-and-terms-of-use) | Work with your manager or IT department to define the terms of use. Typically this would include any limitations you might have on how the information can be used. See [Teams privacy policy guidelines](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist#privacy-policy).
-Developer website | Link to the [Power Virtual Agents overview page](https://go.microsoft.com/fwlink/?linkid=2138949) | You could include a link to your Office profile, or a SharePoint site for your team.
-Developer's name | _Powered by Power Virtual Agents_ | You should include a name of someone who can be contacted in case someone has questions about the bot.
+Developer website | Link to the [Microsoft Copilot Studio overview page](https://go.microsoft.com/fwlink/?linkid=2138949) | You could include a link to your Office profile, or a SharePoint site for your team.
+Developer's name | _Powered by Microsoft Copilot Studio_ | You should include a name of someone who can be contacted in case someone has questions about the bot.
 
 ## Empty privacy statement and terms of use
 

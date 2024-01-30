@@ -10,12 +10,14 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "configuration, fundamentals, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
-# Key concepts - Configure Power Virtual Agents
+# Key concepts - Configure Microsoft Copilot Studio
 
-Power Virtual Agents has many advanced features that let you extend the capabilities of what bot conversations can do.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+Microsoft Copilot Studio has many advanced features that let you extend the capabilities of what bot conversations can do.
 
 These features allow you to personalize the look and feel of your bot and give you more flexibility in what your users can ask your bot to do.
 
@@ -24,7 +26,7 @@ These features allow you to personalize the look and feel of your bot and give y
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 ## Related topics

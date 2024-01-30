@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments (preview)
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 11/08/2023
+ms.date: 01/09/2024
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -57,7 +57,7 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 
    - **Service tags to be allowed by IP firewall**: From the list, select service tags that can bypass IP firewall restrictions.
    - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services like monitoring and [support user](support-environment.md) etc. to bypass the IP firewall restrictions to access the Power Platform environment with Dataverse. Enabled by default.
-   - **Allow access for all application users**: This setting allows [all application users](system-application-users.md) third-party and first-party access to Dataverse APIs. Enabled by default.
+   - **Allow access for all application users**: This setting allows [all application users](system-application-users.md) third-party and first-party access to Dataverse APIs. Enabled by default. If you clear this value, it will only block third-party application users.
    - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
    - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both IP-based cookie binding and the IP firewall.
 
@@ -78,7 +78,7 @@ You should test the IP firewall to verify that it's working.
 
    You should have the access to the environment that's defined by your security role.
 
-We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before ennforcing the IP firewall on your Production environment.
+We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before enforcing the IP firewall on your Production environment.
 
 ## Frequently asked questions (FAQ)
 
@@ -133,10 +133,10 @@ In the IP firewall settings, allow the service tags listed in [Managed connector
 Make sure your reverse proxy is configured to send the client IP address in the forwarded header.
 
 ### Some of the calls from Power BI are failing after I enabled the IP firewall on the Power Platform environment. What should I do?
-Currently, you can ony use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features.md#tds-endpoint), you will need to disable IP firewall in the environment.
+Currently, you can only use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features.md#tds-endpoint), you must disable IP firewall in the environment.
 
-### IP firewall audit functionality is not working in my environment. What should I do?
-If your environment is using bring-your-own-key (BYOK) functionality, we recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
+### IP firewall audit functionality isn't working in my environment. What should I do?
+IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key [(BYOK)](manage-encryption-key.md) encryption keys. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK-enabled tenant are locked down to SQL only, therefore audit logs can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
 
 ## Next steps
 

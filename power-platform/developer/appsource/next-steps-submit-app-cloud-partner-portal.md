@@ -4,8 +4,8 @@ description: "Learn about how to submit an app on Partner Center to be listed on
 ms.date: 04/03/2023
 ms.reviewer: pehecke
 ms.topic: article
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 ms.subservice: developer
 search.audienceType: 
   - developer

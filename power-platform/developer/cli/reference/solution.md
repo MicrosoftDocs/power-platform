@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 10/17/2023
+ms.date: 1/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -129,6 +129,10 @@ Upload a Dataverse solution project to run against the Power Apps Checker servic
 
 Specify a custom URL as the Power Apps Checker endpoint.
 
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
 #### `--excludedFiles` `-ef`
 
 Exclude Files from the Analysis. Pass as comma-separated values
@@ -211,6 +215,10 @@ The name of the solution to be exported.
 Exports the solution asynchronously.
 
 This parameter requires no value. It's a switch.
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--include` `-i`
 
@@ -295,6 +303,13 @@ Delete a solution from Dataverse in the current environment.
 
 Name of the solution.
 
+
+### Optional Parameters for solution delete
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
 [!INCLUDE [solution-delete-remarks](includes/solution-delete-remarks.md)]
 
 ## pac solution export
@@ -318,6 +333,10 @@ The name of the solution to be exported.
 Exports the solution asynchronously.
 
 This parameter requires no value. It's a switch.
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--include` `-i`
 
@@ -388,6 +407,10 @@ This parameter requires no value. It's a switch.
 Convert to a managed solution.
 
 This parameter requires no value. It's a switch.
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--force-overwrite` `-f`
 
@@ -480,7 +503,7 @@ List all Solutions from the current Dataverse organization
 
 #### `--environment` `-env`
 
-The target Environment ID or URL. The default value is the environment of your currently active Dataverse Auth Profile.
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
 
@@ -500,6 +523,13 @@ Name of the solution.
 #### `--solution-version` `-sv`
 
 Specify the solution version number.
+
+
+### Optional Parameters for solution online-version
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [solution-online-version-remarks](includes/solution-online-version-remarks.md)]
 
@@ -612,6 +642,10 @@ Publishes all customizations asynchronously
 
 This parameter requires no value. It's a switch.
 
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
 #### `--max-async-wait-time` `-wt`
 
 Max asynchronous wait time in minutes. The default value is 60 minutes.
@@ -632,6 +666,10 @@ Sync the current Dataverse solution project to the current state of the solution
 Exports the solution asynchronously.
 
 This parameter requires no value. It's a switch.
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--include` `-i`
 
@@ -793,6 +831,10 @@ Upgrades solution asynchronously
 
 This parameter requires no value. It's a switch.
 
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
 #### `--max-async-wait-time` `-wt`
 
 Max asynchronous wait time in minutes. The default value is 60 minutes.
@@ -812,7 +854,7 @@ Update build or revision version for the solution.
 
 Build version for the solution.
 
-**Note**: The value must be a positive integer.
+**Note**: The value must be an integer with minimum value of 0.
 
 #### `--filename` `-fn`
 
@@ -825,7 +867,7 @@ Tracker CSV file name to be used when using filetracking as a strategy. The defa
 
 Revision version for the solution.
 
-**Note**: The value must be a positive integer.
+**Note**: The value must be an integer with minimum value of 0.
 
 #### `--solutionPath` `-sp`
 

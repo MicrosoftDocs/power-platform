@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 11/07/2015
+ms.date: 12/18/2023
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -19,7 +19,7 @@ contributors:
 
 # Find function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Finds a string of text, if it exists, within another string.
 
@@ -36,5 +36,14 @@ The **Find** function looks for a string within another string and is case sensi
 - _FindString_ - Required. The string to find.
 - _WithinString_ - Required. The string to search within.
 - _StartingPosition_ - Optional. The starting position to start searching. Position 1 is the first character.
+
+## Examples
+
+| Formula                                          | Description                                                                    | Result                                                                                                         |
+| ------------------------------------------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **Find("World", "Hello World")**                  | Returns the starting position of **"World"**.                                      | 7                                                                         |
+| **Find("World", "Hello World, Hello World", 10)** | Returns the starting position of the first occurence of **"World"** after the 10th character. | 20                                                                         |
+| **Find("Mars", "Hello World")**                   | Returns blank since the FindString is not in the WithinString                   | Blank()                                                                        |
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

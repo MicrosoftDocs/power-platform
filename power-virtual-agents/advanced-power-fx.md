@@ -1,6 +1,6 @@
 ---
 title: Create expressions using Power Fx (preview)
-description: Use Power Fx to create complex bot logic using formulas to manipulate data in Power Virtual Agents preview.
+description: Use Power Fx to create complex bot logic using formulas to manipulate data in Microsoft Copilot Studio preview.
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -10,16 +10,18 @@ ms.author: iawilt
 ms.reviewer: kamrani
 manager: leeclontz
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ms.custom: ceX, advanced-authoring, bap-template
 ---
 
 # Create expressions using Power Fx
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Power Fx is a low-code language that uses Excel-like formulas. Use Power Fx to create complex logic that allows your bots to manipulate data. For instance, a Power Fx formula can set the value of a variable, parse a string, or use an expression in a condition. For more information, see the [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](/power-platform/power-fx/formula-reference).
 
 > [!NOTE]
-> Power Fx formulas in Power Virtual Agents use US-style numbering. That is, the decimal separator is a period or dot, as in `12,567.892`. This means [Power Fx parameters must be separated by commas (,)](/power-platform/power-fx/expression-grammar#separators).
+> Power Fx formulas in Microsoft Copilot Studio use US-style numbering. That is, the decimal separator is a period or dot, as in `12,567.892`. This means [Power Fx parameters must be separated by commas (,)](/power-platform/power-fx/expression-grammar#separators).
 
 ## Prerequisites
 

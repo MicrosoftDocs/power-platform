@@ -1,23 +1,25 @@
 ---
 title: View topic status
-description: Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time in Power Virtual Agents preview.
+description: Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time in Microsoft Copilot Studio preview.
 keywords: "PVA"
 ms.date: 04/13/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.custom: ceX, bap-template
-ms.collection: virtual-agent
+
 ms.service: power-virtual-agents
 ---
 
 # View topic status (preview)
 
-Power Virtual Agents offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+Microsoft Copilot Studio offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
 
 ## Topic errors
 
-When you save a topic, Power Virtual Agents notifies you if it contains an error or raises a warning. Errors will stop your bot from working. You must fix them before you can publish your bot. Warnings won't stop your bot from working, but they may cause individual topics not to work as expected. You should fix them when you see them.
+When you save a topic, Microsoft Copilot Studio notifies you if it contains an error or raises a warning. Errors will stop your bot from working. You must fix them before you can publish your bot. Warnings won't stop your bot from working, but they may cause individual topics not to work as expected. You should fix them when you see them.
 
 :::image type="content" source="media/authoring-topic-status/topics-errors-save.png" alt-text="Screenshot of the message that indicates a topic has errors that you must fix.":::
 

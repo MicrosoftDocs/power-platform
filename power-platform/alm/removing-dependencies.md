@@ -1,19 +1,17 @@
 ---
-title: "Removing dependencies (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
-description: "Dependencies sometimes can block operations. This article describes how dependencies can be removed." # 115-145 characters including spaces. This abstract displays in the search result.
+title: "Removing dependencies overview (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
+description: "Dependencies sometimes can block operations. This article describes how dependencies can be removed." 
 ms.custom: ""
 ms.date: 06/17/2020
 ms.reviewer: ""
-
 ms.topic: "article"
-author: "ccdietrich" # GitHub ID
+author: "ccdietrich" 
 ms.subservice: alm
-ms.author: "cdietric" # MSFT alias of Microsoft employees only
+ms.author: "cdietric" 
 search.audienceType: 
   - developer
 ---
-
-# Removing dependencies
+# Removing dependencies overview
 
 Solution components often depend on other solution components. You can’t delete any solution component that has dependencies from another solution component. Dependencies are records created automatically by the solutions framework to prevent required components from being deleted while one or more dependent components still include references to them. An example of a dependency is as follows: given a field is required for a form to function, if you ever try to execute an action that will result in the deletion of that field, the form will stop working.
 
@@ -199,50 +197,10 @@ The page of dependencies has two distinct parts:
 
 ![Component dependencies.](media/solution-dependency-layers-and-dependencies-component-dependency-dialog.png "Show Component")
 
-## Field and workflow
-
-To remove dependencies between fields (attributes) and workflows (processes), locate the workflow in the customizations page.
-
-When viewing the workflow details, find the reference to the component you no longer want the workflow to depend on. In this example, you can see the field **Number Field** being referenced in a process step.
-
-![Finding the workflow dependency.](media/solution-dependency-component-workflow.png "Finding the workflow dependency")
-
-Delete (or change) the step, and then save the workflow.
-
-## Field and view
-
-To remove dependencies between fields (attributes) and views (saved queries), locate the view in the customizations page.
-
-In the field editor, find the reference to the component you no longer want the view to depend on. In this example, you see the field **Number Field** being used as a select column and a filter.
-
-![Edit view.](media/solution-dependency-component-view.png "Edit view")
-
-Remove both, save, and then publish the view.
-
-## Entity and model-driven apps
-
-To remove dependencies between entities and model-driven apps (App Module), locate the app in the **Apps** list of the modern UI.
-
-![Apps list.](media/solution-dependency-component-appmodule-01.png "Apps list")
-
-In the app designer, find the reference to the component you no longer want the app to depend on. In this example, you see the entity **Custom Entity** under **Entity View**.
-
-![App designer.](media/solution-dependency-component-appmodule-02.png "App designer")
-
-Also, inspect the site map associated with the app, because it's likely that you'll find references there.
-
-![Sitemap designer.](media/solution-dependency-component-appmodule-03.png "Sitemap designer")
-
-Remove all references, and then save and publish both the app and the site map.
-
-> [!NOTE]
-> After being edited, components can be added to managed solutions and transported to other organizations to remove managed dependencies.
-  
 ### See also
 
- [Solution concepts](./solution-concepts-alm.md)  
- [Solution layers](./solution-layers-alm.md)  
- [Dependency tracking for solution components](dependency-tracking-solution-components.md)]
-
+- [Remove dependencies between fields and workflows](remove-field-workflow.md)
+- [Remove dependencies between fields and views](remove-field-view.md)
+- [Remove dependencies between tables and model-driven apps](remove-table-app.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

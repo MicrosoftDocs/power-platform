@@ -1,13 +1,13 @@
 ### YamlMime:Landing
 
-title: Power Virtual Agents guidance documentation
-summary: Power Virtual Agents guidance documentation provides best practices, implementation, and architecture guidance information from the team that works with our enterprise customers.
+title: Microsoft Copilot Studio guidance documentation
+summary: Microsoft Copilot Studio guidance documentation provides best practices, implementation, and architecture guidance information from the team that works with our enterprise customers.
 
 metadata:
-  title: Power Virtual Agents guidance documentation
-  description: Provides best practice guidance information for Power Virtual Agents.
+  title: Microsoft Copilot Studio guidance documentation
+  description: Provides best practice guidance information for Microsoft Copilot Studio.
   ms.topic: landing-page
-  ms.collection: collection
+  
   author: HenryJammes
   ms.author: hejammes
   ms.date: 05/23/2023
@@ -27,6 +27,11 @@ landingContent:
             url: trigger-phrases-best-practices.md
           - text: Slot filling best practices
             url: slot-filling-best-practices.md
+          - text: Display data from arrays
+            url: Adaptive-Cards-Display-Data-from-Arrays.md
+          - text: Add feedback for every response 
+            url: Adaptive-Card-Add-feedback-for-every-response.md
+            
 
   # Card
   - title: Measuring and improving chatbots
@@ -43,6 +48,20 @@ landingContent:
             url: custom-analytics-strategy.md
 
   # Card
+  - title: Planning a conversational AI project
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Projects best practices
+            url: project-best-practices.md
+          - text: Getting started
+            url: project-getting-started.md
+          - text: Building a team
+            url: project-building-a-team.md
+          - text: Project planning
+            url: project-planning.md
+
+  # Card
   - title: Related content
     linkLists:
       - linkListType: reference
@@ -53,5 +72,5 @@ landingContent:
             url: /power-apps/guidance
           - text: Power Pages guidance center
             url: /power-pages/guidance
-          - text: Power Virtual Agents docs
+          - text: Microsoft Copilot Studio docs
             url: /power-virtual-agents

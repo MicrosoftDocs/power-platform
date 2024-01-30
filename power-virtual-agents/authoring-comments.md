@@ -1,6 +1,6 @@
 ---
 title: "Create and reply to comments in bot topics"
-description: "Add new comments, reply to existing comments, and resolve or delete comments and comment threads for topics within a Power Virtual Agents chatbot."
+description: "Add new comments, reply to existing comments, and resolve or delete comments and comment threads for topics within a Microsoft Copilot Studio chatbot."
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -11,16 +11,18 @@ ms.reviewer: gitikag
 manager: leeclontz
 ms.custom: authoring, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 searchScope:
   - "Power Virtual Agents"
 ---
 
 # Add comments to bots
 
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
 Comments are notes that are associated with items in your bot. Use comments to help your team collaborate on the bot and provide feedback, or provide additional information on implementation details in your bot.  
 
-In Power Virtual Agents comments can be attached to topics and individual nodes within topics. The comments are stored in a table in Dataverse in the default solution.  
+In Microsoft Copilot Studio comments can be attached to topics and individual nodes within topics. The comments are stored in a table in Dataverse in the default solution.  
 
 Comments are commonly questions, feedback, or ideas that can provide important context for other makers who work on your bot's topics.
 
@@ -32,7 +34,7 @@ Comment threads are created when someone replies to an existing comment. Using t
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Manage comments
 

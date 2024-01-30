@@ -1,8 +1,8 @@
 ---
-title: "Fix errors, set status, and copy topics"
+title: "Manage topics in Microsoft Copilot Studio"
 description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time."
 keywords: "PVA"
-ms.date: 03/24/2023
+ms.date: 1/10/2024
 
 ms.topic: article
 author: iaanw
@@ -10,46 +10,45 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
-# Manage topics in Power Virtual Agents
+# Manage topics in Microsoft Copilot Studio
 
-There are a number of ways you can manage your topics. Power Virtual Agents includes a topic checker that lets you know if there are errors in your topics, you can turn topics on or off so they don't appear to people chatting with your bot, and you can copy or duplicate topics to make it easier to create new ones.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-- [Manage topics in Power Virtual Agents](#manage-topics-in-power-virtual-agents)
-  - [Prerequisites](#prerequisites)
-  - [Topic errors](#topic-errors)
-    - [Types of errors](#types-of-errors)
-  - [Topic status](#topic-status)
-  - [Copying a topic](#copying-a-topic)
+There are many ways you can manage your topics. Copilot Studio includes a topic checker that lets you know if there are errors in your topics. You can turn topics on or off so they don't appear to people chatting with your copilot. You can also copy or duplicate topics to make it easier to create new ones.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 # [Web app](#tab/webApp)
 
-Power Virtual Agents offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
-
 ### Topic errors
 
-When you save a topic, Power Virtual Agents notifies you if it contains an error or raises a warning. Errors will stop your bot from working. You must fix them before you can publish your bot. Warnings won't stop your bot from working, but they may cause individual topics not to work as expected. You should fix them when you see them.
+When you save a topic, Copilot Studio tells you if it contains an error or raises a warning.
 
 :::image type="content" source="media/authoring-topic-status/topics-errors-save.png" alt-text="Screenshot of the message that indicates a topic has errors that you must fix.":::
 
-You can see whether a topic has errors, and how many errors it has, in the Topics page. The Topics page only shows errors, not warnings, because errors will prevent your bot from working.
+- **Errors** stop your copilot from working. You must fix them before you can publish your copilot.
+- **Warnings** don't stop your copilot from working, but might cause individual topics not to work as expected. You should fix warnings when you see them.
 
-:::image type="content" source="media/authoring-topic-status/topics-errors.png" alt-text="Screenshot of the Topics page, with the number of errors in a topic highlighted.":::
+You can see if a topic has errors, and the number of errors, in the **Errors** column of your topic. This page only shows errors, not warnings, because errors prevent your copilot from working.
+
+:::image type="content" source="media/authoring-topic-management/topics-errors.png" alt-text="Screenshot of the Topics page, with the number of errors in a topic highlighted." lightbox="media/authoring-topic-management/topics-errors.png":::
 
 #### View topic errors
 
-1. In the **Topics** page, select the error count to open the authoring canvas to where the first error is.
+1. Open your topic from the **Topics & Plugins** page.
 
-1. Select **Topic checker** to view a list of the topic's errors and warnings.
+1. Select **Topic checker**.
 
-    :::image type="content" source="media/authoring-topic-status/topic-checker.png" alt-text="Screenshot of the Topic checker and the list of errors in the topic.":::
+   :::image type="content" source="media/authoring-topic-management/open-topic-checker.png" alt-text="Screenshot of the Topic checker button location.":::
+
+   You see the **Topic checker** pane open that reveals a list of the topic's errors and warnings.
+
+   :::image type="content" source="media/authoring-topic-management/topic-checker-pane.png" alt-text="Screenshot of the Topic checker list of errors in the topic.":::
 
 1. Select an error to go directly to the node that contains the error.  
 
@@ -57,33 +56,38 @@ You can see whether a topic has errors, and how many errors it has, in the Topic
 
 The topic checker flags four types of errors:
 
-- _Node_: The entire node is incorrect. It's highlighted in red.
-- _Field_: The field might be missing required data. It's highlighted in red.
-- _Expression_: The expression might be invalid. It's highlighted in red.
-- _Variable deletion_: A variable was deleted, causing it to become "orphaned." It must be either removed or replaced. It's highlighted in red wherever it was used.
+- _Node_: The entire node is incorrect. The node is highlighted in red.
+- _Field_: The field might be missing required data. The data is highlighted in red.
+- _Expression_: The expression might be invalid. The error is highlighted in red.
+- _Variable deletion_: A variable was deleted, causing it to become "orphaned." The variable must be removed or replaced. The error gets highlighted in red wherever the variable is used.
 
 ### Topic status
 
-Topics can have a status of **On** or **Off** to indicate whether they can be used or triggered in a bot conversation. By default, new topics are created with their status set to **On**. Change it using the toggle in the **Status** column in the Topics page.
+Topics can have a status of **On** or **Off** to indicate whether they can be used or triggered in a copilot conversation. By default, new topics are created with their status set to **On**. Change the status using the toggle in the **Status** column of the **Topics & Plugins** page.
 
-When a topic is **On**, it will trigger as expected, either as a result of its trigger phrases or when another topic redirects to it.
+When a topic is **On**, it triggers as expected. Topics get triggered as a result of its trigger phrases or when another topic redirects to it.
 
-When a topic is **Off**, it won't trigger at all. It won't trigger if its trigger phrases are used in a conversation or if another topic redirects to it. As far as your bot knows, the topic doesn't exist. The topic checker will identify an error if another topic redirects to an **Off** topic.
+When a topic is set to **Off**:
 
-When you publish your bot, all topics are published whether they're **On** or **Off**.
+- The topic doesn't trigger at all.
+- The topic doesn't trigger when trigger phrases are used in a conversation or if another topic redirects to it.
+- The topic checker identifies an error if another topic redirects to the **Off** topic.
+- All topics are published, when you're ready to publish your copilot, whether they're **On** or **Off**.
 
 > [!TIP]
 > Turn a topic **Off** to work on it in a draft state. Leave its status at **Off** while publishing changes to other topics that are ready to go live.
 
-:::image type="content" source="media/authoring-topic-status/topics-status.png" alt-text="Screenshot of the Topics page, with the Status column highlighted.":::
+To check or change your topic status, select the `...` **More options** next to your topic name and toggle the **Status** option.
+
+:::image type="content" source="media/authoring-topic-management/topics-status.png" alt-text="Screenshot of the Topics page, with the Status column highlighted.":::
 
 ### Copy a topic
 
-After you've created a few topics, you may want to use a previous topic as a baseline when creating new topics.
+After you create a few topics, you can use a previous topic as a baseline when creating new topics.
 
-In the **Topics** page, select the **More actions** menu (**&vellip;**), and then select **Make a copy**.
+In the **Topics & Plugins** page, select the `...` **More actions** menu, then select **Make a Copy**.
 
-:::image type="content" source="media/authoring-topic-status/topics-menu-icon.png" alt-text="Screenshot of a topic's More actions menu, with the Make a copy option highlighted.":::
+:::image type="content" source="media/authoring-topic-management/topics-copy.png" alt-text="Screenshot of a topic's More options menu, with the Make a Copy option highlighted.":::
 
 This option duplicates the selected topic with _(Copy)_ added to the name. All the topic content, such as the description, trigger phrases, and the entire conversation, is copied over to the new topic.
 
@@ -91,16 +95,15 @@ A copied topic is **Off** by default to avoid confusion with the original topic,
 
 When you're done editing the new topic, turn it **On** to [test it](authoring-test-bot.md). When it's ready, publish the new topic.
 
-There's no limit to the number of times you can copy a topic. A number will be added to the name and each topic will have its own internal ID.
+There's no limit to the number of times you can copy a topic. A number is added to the name and each topic has its own internal ID.
 
-
-To shift the conversation from the current topic to another topic without starting over, add a **Redirect** node. When the conversation reaches the end of the new topic, it resumes in the original topic by default. However, you can use two special nodes, **End current topic** and **End all topics**, to change the normal course of the conversation.
+To shift the conversation from the current topic to another topic without starting over, add a **Redirect** node. When the conversation reaches the end of the new topic, it resumes in the original topic by default.
 
 ### Redirect to another topic
 
 1. Open your topic in the authoring canvas.
 
-1. Where you want the transition to occur, select **+** to add a node, then select **Topic management**, and then select **Go to another topic**.
+1. Where you want the transition to occur, select **+** to add a node, then select **Topic management** and choose **Go to another topic**.
 
     :::image type="content" source="media/authoring-topic-management/topics-redirect-add-subtopic.png" alt-text="Screenshot of the Topic management menu, with Topic management highlighted.":::
 
@@ -110,100 +113,106 @@ To shift the conversation from the current topic to another topic without starti
 
 1. [Pass variables between topics](authoring-variables.md) if needed. If the topic you're redirecting to requires any input or output variables, enter or select a value for each one.
 
-1. Save your topic, and then use the **Test bot** pane to confirm that your bot successfully calls the redirect topic.
+1. Save your topic, and then use the **Test your copilot** pane to confirm that your copilot successfully calls the redirect topic.
 
-You can insert more nodes after the **Redirect** node if you need to. When the topic that's redirected to ends, the bot returns to the original topic and continues with any nodes that follow the **Redirect** node.
+You can insert more nodes after the **Redirect** node if needed. When the topic from the redirection ends, the copilot returns to the original topic and continues with any nodes that continue after the **Redirect** node.
 
-:::image type="content" source="media/authoring-topic-management/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes that follow a redirected topic node.":::
+:::image type="content" source="media/authoring-topic-management/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing the flow of nodes from a question that follow a redirected topic node." lightbox="media/authoring-topic-management/authoring-subtopic-redirect.png":::
 
 ### End the current topic or all topics
 
-By default, a redirected conversation returns to the original topic at the end of the called topic. Use the **End current topic** and **End all topics** nodes to exit a topic&mdash;or the conversation&mdash;early.
+By default, a redirected conversation returns to the original topic at the end of the called topic. Use the **End current topic** or **End all topics** nodes to exit a topic—or the conversation—at any time.
 
-- An **End current topic** node ends the current topic at that point. If the current topic was called from another topic, the conversation returns to the original topic immediately. A common use of this node is in a condition branch. One branch exits the topic early, while another branch continues the current topic.
-- An **End all topics** node ends all active topics immediately. Your bot treats the next message from the user as the first message in a new conversation.
+:::image type="content" source="media/authoring-topic-management/end-topic.png" alt-text="Screenshot that shows where the End current topic and End all topics selections are located.":::
 
-    To signal to the user's channel that the bot thinks the conversation has ended, add an **End Conversation** node before the **End all topics** node.
+- An **End current topic** node ends the current topic. If the current topic is called from another topic, the conversation returns to the original topic immediately. A common use of this node is in a condition branch. One branch exits the topic early, while another branch continues the current topic.
+- An **End all topics** node ends all active topics immediately. Your copilot considers the next message from the user as the first message in a new conversation.
 
-Many of the system topics use these nodes to control how conversations end or start over. Learn how to [use system topics in Power Virtual Agents](authoring-system-topics.md).
+  To let the user know that the copilot thinks the conversation ended, add an **End Conversation** node _before_ the **End all topics** node.
+
+Many of the system topics use these nodes to control how conversations end or start over. Learn how to [use system topics in Microsoft Copilot Studio](authoring-system-topics.md).
 
 > [!TIP]
 > The **End all topics** node doesn't clear or reset any global variables. To clear global variables, use a **Clear all variables** node first. For an example, see the default [Reset Conversation system topic](authoring-system-topics.md#reset-conversation).
 
 # [Classic](#tab/classic)
 
-Power Virtual Agents offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
-
 ### Topic errors
 
-When you save a topic, you'll be notified if there are errors or warnings. Warnings won't stop the bot from working, but they may cause individual topics to not work as expected, so you should fix them when you see them.
+When you save a topic, you're notified if there are errors or warnings. Warnings don't stop the copilot from working, but can cause individual topics to not work as expected, so you should fix them when you see them.
 
-Errors will prevent the bot from working and must be fixed before you can publish your bot.
+Errors prevent the copilot from working and must be fixed before you can publish your bot.
 
 :::image type="content" source="media/authoring-topic-management/topics-errors-save.png" alt-text="The message indicates you have errors you should fix.":::
 
 You can see the error state of a topic on the Topics page.
 
 > [!NOTE]
-> The Topics page only shows errors as they will stop your bot from working, unlike warnings.
+> The **Topics & Plugins** page only shows errors, since they stop your copilot from working, unlike warnings.
+
+You can find errors in the **Errors** column of the **Topics & Plugins** page.
 
 :::image type="content" source="media/authoring-topic-management/topics-errors.png" alt-text="The topics page identifies the number of errors in your topic.":::
 
-Select the error count to open the authoring canvas to where the first error is. Select **Topic checker** to see a list of the errors. Selecting each error goes directly to the error.  
+Select the error count to open the authoring canvas to go to the error location. Select **Topic checker** to see a list of the errors. Selecting each error goes directly to the error.  
 
 :::image type="content" source="media/authoring-topic-management/topics-checker.png" alt-text="The topic checker is on the top bar and shows all errors and warnings.":::
 
 > [!NOTE]
-> You can save topics with errors. Topics with errors can't be published.
+> You can save topics with errors, but topics with errors can't be published.
 
 ### Types of errors
 
 There are four types of errors that appear in the topic checker and in the authoring canvas:
 
-- _Node_: The entire node is incorrect and is highlighted red.
-- _Field_: The field might be missing required data and is highlighted red.
+- _Node_: The entire node is incorrect and highlighted red.
+- _Field_: The field is likely missing required data and highlighted red.
 - _Expression_: The expression might be invalid and is highlighted red.
-- _Variable deletion_: A variable in a topic was deleted and is highlighted red wherever it was used. This causes the variable to become "orphaned", and it must be either removed or replaced.
+- _Variable deletion_: A variable in a topic was deleted and the error is highlighted red wherever the variable is used. A deleted variable causes the variable to become "orphaned" and must be removed or replaced.
 
 ### Topic status
 
-Topics can have a status of **On** or **Off**. This refers to their ability to be used or triggered in a bot conversation.
+Topics can have a status of **On** or **Off** to indicate whether they can be used or triggered in a copilot conversation. By default, new topics are created with their status set to **On**. Change the status using the toggle in the **Status** column of the **Topics & Plugins** page.
 
-When a topic is **On**, it will trigger as expected, either as a result of its trigger phrases or when it is redirected to from another topic. The majority of your topics are likely to be in the **On** state.
+When a topic is **On**, it triggers as expected. Topics get triggered as a result of its trigger phrases or when another topic redirects to it.
 
-When a topic is **Off**, it will not trigger at all. This means that if its trigger phrases are used in a bot conversation, it will not trigger, just as if the topic doesn't exist. An **Off** topic will also not be redirected to, even if another topic has specified that it should be.
+When a topic is set to **Off**:
 
-When a bot is published, all topics (**On** or **Off**) will be published, but the **Off** topics will not trigger.
+- The topic doesn't trigger at all.
+- The topic doesn't trigger when trigger phrases are used in a conversation or if another topic redirects to it.
+- The topic checker identifies an error if another topic redirects to the **Off** topic.
+- All topics are published, when you're ready to publish your copilot, whether they're **On** or **Off**.
 
 > [!TIP]
-> Turning a topic to **Off** allows you to work on a particular topic and leave it in a draft state while publishing changes to other topics that are ready to go live.  
+> Turn a topic **Off** to work on it in a draft state. Leave its status at **Off** while publishing changes to other topics that are ready to go live.
 >
-> Leave the topic that you are still working on as **Off** before publishing the bot.
+> When ready, you can turn the status **On** before publishing the copilot.
 
-You can change this with the toggle in the **Status** column on the Topics page.
+Control the status from the **Status** column, toggling it **On** or **Off**.
 
-:::image type="content" source="media/authoring-topic-management/topics-status.png" alt-text="The Status column shows each topic with an On or Off toggle switch.":::
+:::image type="content" source="media/authoring-topic-management/topics-status-teams.png" alt-text="Screenshot that shows the Status column of each topic with an On or Off toggle switch." lightbox="media/authoring-topic-management/topics-status-teams.png":::
 
-By default new topics will be created with their status set to **On**.
+By default, new topics are created with their status **On**.
 
 > [!NOTE]
-> The Topic Checker will identify an error if a topic redirects to an 'off' topic.
+> The Topic Checker identifies an error if a topic redirects to an **Off** topic.
 
 ### Copying a topic
 
-Once you have created a few topics, you may want to use a previous topic as a baseline when creating new topics.
+After you create a few topics, you can use a previous topic as a baseline when creating new topics.
 
-On the Topics page, select the menu icon on a topic's name and then **Make a copy**.
+On the **Topics** page, select the `...` menu icon near a topic's name and choose **Make a copy**.
 
-:::image type="content" source="media/authoring-topic-management/topics-menu-icon.png" alt-text="Make a copy from the menu icon." border="false":::
+:::image type="content" source="media/authoring-topic-management/copy-topic-teams.png" alt-text="Screenshot that shows where the Make a copy button is located.":::
 
-This option creates a duplicate of the selected topic with _(Copy)_ added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
+This option creates a duplicate of the selected topic with _(Copy)_ added to the name. All the topic content—the description, trigger phrases, and entire conversation—is copied over to the new topic.
 
-A copied topic has a status of **Off** by default when it is copied to avoid confusion on which topic will trigger, since the trigger phrases are the same as the original topic.
+A copied topic has its status **Off** by default when copied to avoid confusion on which topic triggers, since the trigger phrases are the same as the original topic.
 
-Once you are done editing the new topic, you can turn it **On** to [test it in the Test bot](authoring-test-bot.md) and, when ready, publish the new topic.
+Once you're done editing the new topic, you can turn it **On** to [test it in the Test your copilot](authoring-test-bot.md) pane. When you're ready, publish the new topic.
 
-There is no limit to the number of times a topic can be copied. A number will be added to the name and each topic will have its own internal ID.
+> [!TIP]
+> There's no limit to topic copies. A number gets added to the name of the copy and each topic has its own internal ID.
 
 ---
 

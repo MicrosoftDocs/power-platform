@@ -4,14 +4,15 @@ description: View tenant-level analytics in various reports.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/03/2023
-author: andrewrooneymsft
+author: sericks007
 ms.subservice: admin
-ms.author: andrewrooney
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
 - StephenRauchPM
+- johnev
 ---
 
 # Tenant-level analytics

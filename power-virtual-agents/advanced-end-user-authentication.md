@@ -1,8 +1,8 @@
 ---
 title: "Add user authentication to chatbot topics"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
-keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 03/24/2023
+keywords: "User Authentication, Authentication, Microsoft Entra ID, MSA, Identity Provider, PVA"
+ms.date: 12/13/2023
 
 ms.topic: article
 author: iaanw
@@ -11,41 +11,41 @@ manager: leeclontz
 ms.reviewer: clmori
 ms.custom: authentication, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
-# Add end-user authentication to a Power Virtual Agents bot
+# Add end-user authentication to a Microsoft Copilot Studio bot
 
-You can enable user authentication directly within a Power Virtual Agents bot conversation. User authentication means you can get a user's basic properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+You can enable user authentication directly within a Microsoft Copilot Studio bot conversation. User authentication means you can get a user's basic properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
 
 >[!NOTE]
-> Bots created in Microsoft Teams come with authentication pre-configured to use Teams authentication.
+> Bots created in the web app and in Microsoft Teams come with authentication pre-configured to use **Only for Teams and Power Apps** authentication.
 
 You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md).
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Use variables](authoring-variables.md)
 - [Configure end-user authentication](configuration-end-user-authentication.md).
 
 
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# [Web app](#tab/web)
 
 Add user authentication to a topic to allow your customers to sign in right in the conversation. You can then personalize the conversation with user variables and access back-end systems on the user's behalf.
 
-### Configure manual authentication with Azure AD
+### Configure manual authentication with Microsoft Entra ID
 
-You need to configure user authentication with Azure AD before you can use authentication in your topics.
+You need to configure user authentication with Microsoft Entra ID before you can use authentication in your topics.
 
-1. Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md).
+1. Follow the instructions in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
 1. Return to this article.
 
 ### Add user authentication with the Signin system topic
 
-When you create a bot, Power Virtual Agents automatically adds a system topic called **Signin**. To use it, you must set your bot's authentication to manual and require users to sign in. When a customer starts a conversation with the bot, the **Signin** topic triggers and prompts the user to sign in. You can customize the **Signin** topic as appropriate for your bot.
+When you create a bot, Microsoft Copilot Studio automatically adds a system topic called **Signin**. To use it, you must set your bot's authentication to manual and require users to sign in. When a customer starts a conversation with the bot, the **Signin** topic triggers and prompts the user to sign in. You can customize the **Signin** topic as appropriate for your bot.
 
 1. In the navigation menu under **Settings**, select **Security**.
 
@@ -53,7 +53,7 @@ When you create a bot, Power Virtual Agents automatically adds a system topic ca
 
 1. Select **Manual (for custom website)**, and then select **Require users to sign in**.
 
-    :::image type="content" source="media/advanced-user-authentication/require-signin.png" alt-text="Screenshot of the Power Virtual Agents Authentication page with Require users to sign in selected and highlighted.":::
+    :::image type="content" source="media/advanced-user-authentication/require-signin.png" alt-text="Screenshot of the Microsoft Copilot Studio Authentication page with Require users to sign in selected and highlighted.":::
 
     :::image type="content" source="media/advanced-user-authentication/sign-in-card.png" alt-text="Screenshot of the sign-in prompt.":::
 
@@ -82,7 +82,7 @@ When customers enter their username and password, they might be prompted to ente
 
 When you've configured user authentication for your bot, you can use authentication variables in your topics. The following table compares the availability of these variables based on the authentication option you chose.
 
-| Authentication Variable | No Authentication | Only for Teams | Manual    |
+| Authentication Variable | No Authentication | Only for Teams and Power Apps  | Manual    |
 |-------------------------|:-----------------:|:--------------:|:---------:|
 | [User.DisplayName][1]   | not available     | not available  | available |
 | [User.Id][2]            | not available     | not available  | available |
@@ -103,7 +103,7 @@ When you've configured user authentication for your bot, you can use authenticat
 
 The `User.DisplayName` variable contains the display name that's stored in the identity provider. Use this variable to greet or refer to the user without their having to explicitly give their name to the bot, making the conversation more personalized.
 
-Power Virtual Agents automatically sets the value of `User.DisplayName` from the `name` claim provided by the identity provider, as long as the `profile` scope was defined when manual authentication was configured. For more information about scope, see [Add user authentication to chatbot topics](configuration-authentication-azure-ad.md).
+Microsoft Copilot Studio automatically sets the value of `User.DisplayName` from the `name` claim provided by the identity provider, as long as the `profile` scope was defined when manual authentication was configured. For more information about scope, see [Add user authentication to chatbot topics](configuration-authentication-azure-ad.md).
 
 #### User.Id
 
@@ -112,7 +112,7 @@ Power Virtual Agents automatically sets the value of `User.DisplayName` from the
 
 The `User.Id` variable contains the userID that's stored in the identity provider. Use this variable in [Power Automate flows](advanced-flow.md) to call APIs that take the UserID as a value.
 
-Power Virtual Agents automatically sets the value of `User.DisplayName` from the `sub` claim provided by the identity provider.
+Microsoft Copilot Studio automatically sets the value of `User.DisplayName` from the `sub` claim provided by the identity provider.
 
 #### User.IsLoggedIn
 
@@ -136,15 +136,15 @@ Don't use `User.AccessToken` in **Message** nodes or in flows that you don't tru
 - `Initializer` indicates that if the user hasn't signed in yet, and they reach a point in the conversation that uses authentication variables, they'll be prompted to sign in.
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 ### Authentication variables
 
-If your bot is configured with either "Only for Teams" or "Manual" authentication options, you will have a set of authentication variables available in your topics. Check the [authentication configuration documentation](configuration-end-user-authentication.md) for more information on how to configure authentication in your bot.
+If your bot is configured with either **Only for Teams and Power Apps** or **Manual** authentication options, you will have a set of authentication variables available in your topics. Check the [authentication configuration documentation](configuration-end-user-authentication.md) for more information on how to configure authentication in your bot.
 
 The following table compares authentication variable availability by authentication configuration option:
 
-| Authentication Variable | No Authentication |   Only for Teams   |       Manual       |
+| Authentication Variable | No Authentication |   Only for Teams and Power Apps  |       Manual       |
 | ----------------------- | :---------------: | :----------------: | :----------------: |
 | ```UserDisplayName```   |        :x:        | :heavy_check_mark: | :heavy_check_mark: |
 | ```UserID```            |        :x:        | :heavy_check_mark: | :heavy_check_mark: |
@@ -155,12 +155,12 @@ The following table compares authentication variable availability by authenticat
 
 The ```UserDisplayName``` variable contains the user's display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
 
-This field value is obtained from the Azure Active Directory (Azure AD) ```name``` claim. For OAuth providers, this is the value stored in the ```name``` claim. Power Virtual Agents automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
+This field value is obtained from the Microsoft Entra ID ```name``` claim. For OAuth providers, this is the value stored in the ```name``` claim. Microsoft Copilot Studio automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
 
 #### UserID variable
 
 The ```UserID``` variable contains the user's ID stored in the identity provider. This value can be used by Power Automate flows to call APIs that take the UserID as a value.
-This field value is obtained from the Azure AD ```sub``` claim. For OAuth providers, this is the value stored in the ```sub``` claim. Power Virtual Agents automatically extracts this field into the variable.
+This field value is obtained from the Microsoft Entra ID ```sub``` claim. For OAuth providers, this is the value stored in the ```sub``` claim. Microsoft Copilot Studio automatically extracts this field into the variable.
 
 > [!WARNING]
 > The ```UserDisplayName``` and ```UserID``` variables are not guaranteed to be filled, and might be empty strings depending on the user configuration in the identity provider. Test with a user from your identification provider to ensure your topics work correctly, even if these variables are empty.
@@ -200,12 +200,12 @@ If you reset the **Test bot** pane (or you make changes to a topic that cause th
 > [!IMPORTANT]
 > You can't populate the `UserID` variable with a custom value (other than an empty or blank value) due to security reasons.
 
-### Authentication when using "Only for Teams" configuration
+### Authentication when using "Only for Teams and Power Apps" configuration
 
-If your authentication option is set to **Only for Teams**, you don't need to explicitly add authentication to your topics. In this configuration, any user in Microsoft Teams is automatically signed in via their Teams credentials and they don't need to explicitly sign in with an authentication card. If your authentication option is set to Manual, then you will need to add the authentication node (even for the Teams channel).
+If your authentication option is set to **Only for Teams and Power Apps**, you don't need to explicitly add authentication to your topics. In this configuration, any user in Microsoft Teams is automatically signed in via their Teams credentials and they don't need to explicitly sign in with an authentication card. If your authentication option is set to Manual, then you will need to add the authentication node (even for the Teams channel).
 
 > [!NOTE]
-> If your authentication option is set to "Only for Teams", you don't have the option to explicitly add authentication to your topics.
+> If your authentication option is set to **Only for Teams and Power Apps**, you don't have the option to explicitly add authentication to your topics.
 
 ### Add user authentication to a topic
 

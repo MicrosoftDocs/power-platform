@@ -10,10 +10,12 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "publication, authoring, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Integrate with question answering
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 [Question answering](/azure/cognitive-services/language-service/question-answering/overview) provides cloud-based Natural Language Processing (NLP) that allows you to create a natural conversational layer over your data. It is used to find the most appropriate answer for any input from your custom knowledge base of information.
 
@@ -24,7 +26,7 @@ ms.collection: virtual-agent
 
 ## Use question answering in fallback topic
 
-You can use an existing knowledge base in Power Virtual Agents by using a Power Automate flow to connect it to any topic. However it's more useful to connect your knowledge base to your bot's system fallback topic. Questions users ask that aren't covered by other topics can _fallback_ to using content from your knowledge base.
+You can use an existing knowledge base in Microsoft Copilot Studio by using a Power Automate flow to connect it to any topic. However it's more useful to connect your knowledge base to your bot's system fallback topic. Questions users ask that aren't covered by other topics can _fallback_ to using content from your knowledge base.
 
 To learn how to use the Question Answering Connector in a fallback topic, see [Language - Question Answering](https://aka.ms/QuestionAnsweringConnectorWithPowerVirtualAgents).
 

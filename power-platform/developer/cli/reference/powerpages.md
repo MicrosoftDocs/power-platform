@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 10/17/2023
+ms.date: 1/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -67,6 +67,10 @@ Power Pages website ID to download
 
 ### Optional Parameters for powerpages download
 
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
 #### `--excludeEntities` `-xe`
 
 Comma separated list of entity logical names to exclude downloading
@@ -96,6 +100,10 @@ List all Power Pages websites from the current Dataverse environment.
 
 ### Optional Parameters for powerpages list
 
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
 #### `--verbose` `-v`
 
 Enables verbose mode to provide more details.
@@ -123,6 +131,10 @@ Path from where the Power Pages website content is uploaded.
 #### `--deploymentProfile` `-dp`
 
 Deployment profile name to be used. Defaults to 'default'
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--forceUploadAll` `-f`
 

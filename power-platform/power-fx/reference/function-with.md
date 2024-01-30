@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 02/07/2020
+ms.date: 12/18/2023
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -19,7 +19,7 @@ contributors:
 
 # With function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Calculates values and performs actions for a single [record](/power-apps/maker/canvas-apps/working-with-tables#records), including inline records of named values.
 
@@ -31,7 +31,7 @@ The **With** function evaluates a formula for a single record. The formula can c
 
 Use **With** to improve the readability of complex formulas by dividing it into smaller named sub-formulas. These named values act like simple local variables confined to the scope of the **With**. The same inline record syntax that is used with the [**UpdateContext** function](function-updatecontext.md) can be used with **With**. Using **With** is preferred over context or global variables as it is self contained, easy to understand, and can be used in any declarative formula context.
 
-Use **With** to access the fields of the record that are returned by functions such as such as [**Patch**](function-patch.md) or [**Match**](function-ismatch.md). **With** holds the value from these functions long enough to be used in further calculations or actions.
+Use **With** to access the fields of the record that are returned by functions such as [**Patch**](function-patch.md) or [**Match**](function-ismatch.md). **With** holds the value from these functions long enough to be used in further calculations or actions.
 
 If the _Record_ argument to **With** is an error, that error will be returned by the function and the _Formula_ will not be evaluated.
 

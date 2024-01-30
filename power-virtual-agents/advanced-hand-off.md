@@ -10,13 +10,15 @@ ms.author: iawilt
 ms.reviewer: pawant
 manager: leeclontz
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ms.custom: handoff, ceX, advanced-authoring
 ---
 
 # Hand off to a live agent
 
-With Power Virtual Agents, you can hand off conversations to live agents seamlessly and contextually.
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
+
+With Microsoft Copilot Studio, you can hand off conversations to live agents seamlessly and contextually.
 
 When you hand off a conversation, you share the full history of the conversation (the context) and all user-defined variables. With this context, a live agent that uses a connected engagement hub can be: notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
@@ -38,14 +40,14 @@ For more information about how to configure hand-off with [Omnichannel for Custo
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- A bot built with [Power Virtual Agents](https://aka.ms/TryPVA).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- A bot built with [Microsoft Copilot Studio](https://aka.ms/TryPVA).
 - An engagement hub that is being used by live agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 - If your bot does not have escalation to agent configured in the "Escalate" System topic, follow the instructions below to configure it 
 
 ## Configuring the Escalate system topic 
 
-When you create a bot from Dynamics 365 Customer Service, the default bot content includes the "Transfer conversation" node at the end of the **Escalate** system topic. But if you create if from the Power Virtual Agents portal, that configuration will not be done ahead of time. To configure, follow the steps below:
+When you create a bot from Dynamics 365 Customer Service, the default bot content includes the "Transfer conversation" node at the end of the **Escalate** system topic. But if you create if from the Microsoft Copilot Studio portal, that configuration will not be done ahead of time. To configure, follow the steps below:
 
 1. Go to Topics, then select the System tab and click on **Escalate** topic
 
@@ -60,7 +62,7 @@ When you create a bot from Dynamics 365 Customer Service, the default bot conten
 
 Customers engaging with the bot can ask for a live agent at any point in the conversation. This escalation can happen in two ways, with an implicit trigger or an explicit trigger.
 
-Upon triggering the hand-off topic, Power Virtual Agents starts the hand-off to the configured engagement hub and sends over all conversation context to find the next best live agent to ramp them up so they can resume the conversation.
+Upon triggering the hand-off topic, Microsoft Copilot Studio starts the hand-off to the configured engagement hub and sends over all conversation context to find the next best live agent to ramp them up so they can resume the conversation.
 
 ### Implicit triggers
 
@@ -125,8 +127,8 @@ The following table lists the context variables available by default.
 
 [1]: authoring-variables.md
 
-A customer may go through several topics prior to escalating. Power Virtual Agents gathers all contextual variables across topics and merges them before sending to the engagement hub.
+A customer may go through several topics prior to escalating. Microsoft Copilot Studio gathers all contextual variables across topics and merges them before sending to the engagement hub.
 
-If there are topics with similarly named context variables, Power Virtual Agents promotes the most recently defined topic variable.
+If there are topics with similarly named context variables, Microsoft Copilot Studio promotes the most recently defined topic variable.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

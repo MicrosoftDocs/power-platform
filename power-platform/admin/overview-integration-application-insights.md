@@ -110,7 +110,7 @@ All the tables populated in Application Insights have these common fields:
   ```
 
 - **session_Id** : This uniquely identifies all activities in a single user session. The session value is reset when a user opens a new tab, selects F5/refresh, or closes and reopens the mobile app.
-- **user_Id, user_AuthenticatedId**: These are both currently set to the Azure Active Directory ID of the user.
+- **user_Id, user_AuthenticatedId**: These are both currently set to the Microsoft Entra ID of the user.
 - **client_IP**: This field is always populated with `0.0.0.0` for compliance with privacy laws and regulations. The IP address provided is used to populate the **client_City**, **client_StateOrProvince**, and **client_CountryOrRegion** fields.
 - **client_Type**: The value here is **Browser** if the logs are coming from Unified Interface and **Server** if the logs are coming from Dataverse. Note that the userAgent can be found in the **requests** table under **customDimensions**, when available.
 

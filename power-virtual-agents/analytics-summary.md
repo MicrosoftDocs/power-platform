@@ -10,10 +10,12 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: analysis, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
-# Analyze bot performance and usage in Power Virtual Agents
+# Analyze bot performance and usage in Microsoft Copilot Studio
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 The **Summary** tab on the **Analytics** page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate.
 
@@ -42,7 +44,7 @@ The summary tab includes various charts with graphical views of your bot's key p
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Summary charts
 
@@ -84,7 +86,7 @@ The **Resolution rate drivers** chart displays topics in order of their impact o
 
 | Description | Details |
 |-------------|---|
-| Topic       | A Power Virtual Agents topic. |
+| Topic       | A Microsoft Copilot Studio topic. |
 | Rate        | The percentage of engaged sessions for the topic that were resolved. |
 | Impact      | The topic's resolution rate impact score. The resolution rate impact score is the overall resolution rate including the topic minus the overall resolution rate excluding the topic. |
 
@@ -100,7 +102,7 @@ The **Escalation rate drivers** chart displays topics in order of their impact o
 
 | Description | Details |
 |-------------|---|
-| Topic       | A Power Virtual Agents topic. |
+| Topic       | A Microsoft Copilot Studio topic. |
 | Rate        | The percentage of engaged sessions for the topic that were escalated. |
 | Impact      | The topic's escalation rate impact score. The escalation rate impact score is the overall escalation rate including the topic minus the overall escalation rate excluding the topic. |
 
@@ -116,7 +118,7 @@ The **Abandon rate drivers** chart displays topics in order of their impact on t
 
 | Description | Details |
 |-------------|---|
-| Topic       | A Power Virtual Agents topic. |
+| Topic       | A Microsoft Copilot Studio topic. |
 | Rate        | The percentage of engaged sessions for the topic that were abandoned. |
 | Impact      | The topic's abandon rate impact score. The abandon rate impact score is the overall abandon rate including the topic minus the overall abandon rate excluding the topic. |
 

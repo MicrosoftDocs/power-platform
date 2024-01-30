@@ -1,6 +1,6 @@
 ---
 title: Accommodate time zones (preview)
-description: Learn how Power Virtual Agents bots collect and store date and time. Learn how to adjust the user's time zone and to display dates and times correctly in their time zone.
+description: Learn how Microsoft Copilot Studio bots collect and store date and time. Learn how to adjust the user's time zone and to display dates and times correctly in their time zone.
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -10,11 +10,13 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: kamrani
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ms.custom: ceX, advanced-authoring, bap-template
 ---
 
 # Accommodate time zones
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 The **Date and time** entity captures a date and time in Coordinated Universal Time (UTC). However, you may want to display the date and time based on the user's location instead.
 
@@ -24,9 +26,9 @@ The **Date and time** entity captures a date and time in Coordinated Universal T
 - [Use conditions](authoring-using-conditions.md)
 - [Create expressions using Power Fx](advanced-power-fx.md)
 
-## How Power Virtual Agents determines the user's time zone
+## How Microsoft Copilot Studio determines the user's time zone
 
-Power Virtual Agents follows these steps, in order, to determine the user's time zone:
+Microsoft Copilot Studio follows these steps, in order, to determine the user's time zone:
 
 1. If the `Conversation.LocalTimeZone` system variable is set to a valid time zone from [Noda Time][], use that as the time zone.
 
@@ -46,7 +48,7 @@ Use these system-level variables to get information about the user's time zone:
 
 ## Manually set the user's time zone
 
-Power Virtual Agents [automatically determines the user's time zone](#how-power-virtual-agents-determines-the-users-time-zone) when your bot prompts the user for a date and time. You can also manually set the timezone.
+Microsoft Copilot Studio [automatically determines the user's time zone](#how-microsoft-copilot-studio-determines-the-users-time-zone) when your bot prompts the user for a date and time. You can also manually set the timezone.
 
 1. Open the topic in which you want to set the user's time zone.
 
@@ -70,7 +72,7 @@ Power Virtual Agents [automatically determines the user's time zone](#how-power-
 
 ## Display the date and time in the local time zone
 
-Power Virtual Agents stores the date and time in UTC. Before displaying a date and time to customers, add the time zone offset to convert the value to the user's local time zone.
+Microsoft Copilot Studio stores the date and time in UTC. Before displaying a date and time to customers, add the time zone offset to convert the value to the user's local time zone.
 
 In this example, we'll get the current date and time using the Power Fx `Now()` function, and then add the time zone offset. It isn't possible to use the `Conversation.LocalTimeZoneOffset` system variable directly in a Power Fx formula. Instead, we'll use a **Set Variable Value** node to create a variable and then assign it the value of `Conversation.LocalTimeZoneOffset`.
 

@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 10/17/2023
+ms.date: 1/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -29,7 +29,7 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac catalog](catalog.md)|Commands for working with Catalog in Power Platform|
 |[pac connection](connection.md)|Commands for working with Dataverse connection.|
 |[pac connector](connector.md)|Commands for working with Power Platform Connectors|
-|[pac copilot](copilot.md)|Tools and utilities for copilot scenarios|
+|[pac copilot](copilot.md)|Tools and utilities for copilot management|
 |[pac data](data.md)|Import and export data from Dataverse.|
 |[pac help](help.md)|Show help for the Microsoft Power Platform CLI.|
 |[pac modelbuilder](modelbuilder.md)|Code Generator for Dataverse APIs and Tables|
@@ -44,7 +44,6 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac telemetry](telemetry.md)|Manage telemetry settings.|
 |[pac test](test.md)|(Preview) Execution of automated tests for a Power App|
 |[pac tool](tool.md)|Power Platform tools that can be installed and launched.|
-|[pac virtual-agent](virtual-agent.md)|Commands for working with Power Virtual Agent bots|
 
 
 [!INCLUDE [index-remarks](includes/index-remarks.md)]

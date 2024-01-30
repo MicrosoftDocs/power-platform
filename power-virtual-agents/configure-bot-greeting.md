@@ -11,10 +11,12 @@ ms.reviewer: digantak
 manager: leeclontz
 ms.custom: "customization, ce06102020"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Automatically start a chatbot conversation
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 You can configure your bot to start a conversation conversation with a user. You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas.md).
 
@@ -25,12 +27,12 @@ You can configure your bot to start a conversation conversation with a user. You
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 # [Web app](#tab/web)
 
-By default, chatbots created with Power Virtual Agents and [published to a website](publication-connect-bot-to-web-channels.md) will load without a greeting, and will passively wait for the user to start the conversation.
+By default, chatbots created with Microsoft Copilot Studio and [published to a website](publication-connect-bot-to-web-channels.md) will load without a greeting, and will passively wait for the user to start the conversation.
 
 However, you can use custom CSS and JavaScript code to automatically have the bot start the conversation when the bot loads. For example, you could have your bot say, "Hi, I'm Botty, a virtual agent" as soon as the bot loads.
 
@@ -38,7 +40,7 @@ First, you'll need to deploy a custom canvas that includes arguments that trigge
 
 
 > [!IMPORTANT]
-> You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
+> You may install and use the sample code included in this documentation only for use with the Microsoft Copilot Studio product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
 >
 > Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
@@ -234,7 +236,7 @@ You can now test your bot by going to the webpage where you deployed your bot's 
 
 # [Teams](#tab/teams)
 
-By default, chatbots created with the Power Virtual Agents app in Microsoft Teams will automatically start the conversation when installed for the first time.
+By default, chatbots created with the Microsoft Copilot Studio app in Microsoft Teams will automatically start the conversation when installed for the first time.
 
 You can change what the bot says by updating the greeting topic. For example, you could have your bot say, "Hi, I'm Botty, a virtual agent" as soon as the bot loads.
 

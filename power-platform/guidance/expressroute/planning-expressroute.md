@@ -278,7 +278,7 @@ services hosted both in Microsoft 365 and Azure.
 | SharePoint integration | HTTPS outbound to Microsoft 365                | SharePoint web service requests to SharePoint Online from Microsoft Power Platform services      |
 | Service Bus            | HTTPS outbound to Azure Service Bus            | Push events to Azure Service Bus either as standard event registration or from custom plug-ins and workflow activities      |
 | Data sync              | HTTPS inbound from Azure         | Inbound change tracking requests for synchronization of data services, including search/offline/customer insight      |
-| Authentication         | HTTPS outbound to Azure Active Directory (Azure AD)   | Most authentication is done through passive redirects and claims tokens, but some data is synchronized Azure AD directly        |
+| Authentication         | HTTPS outbound to Microsoft Entra   | Most authentication is done through passive redirects and claims tokens, but some data is synchronized Microsoft Entra ID directly        |
 | Dataflows              | HTTPS outbound to Azure Data Lake Storage | Provides analytics capabilities and allows access to big data solutions incorporating data from both Microsoft Power Platform services and other sources, in addition to the resulting insight from analytics. |
 | Connectors             | HTTPS outbound to Azure PaaS services                | Connections to various Azure PaaS services             |
 | Desktop flows          | HTTPS outbound to Azure Relay                  | Direct connectivity between Power Automate cloud flows and desktop flows created in Power Automate for Desktop |

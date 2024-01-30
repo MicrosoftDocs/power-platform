@@ -13,7 +13,7 @@ ms.reviewer: sericks
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Users of finance and operations apps can now administer their environments, policies, licensing, and capacity in [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+Users of finance and operations apps can now administer their environments, policies, licensing, and capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 As part of the unification of admin experiences of finance and operations apps within Power Platform, the environment for finance and operations apps is now considered as an application within Power Platform. This means that multiple Dynamics 365 applications (such as Sales, Marketing, finance and operations) and apps, flows, and websites in Power Platform can be installed and hosted on the same Power Platform environment [with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database), providing a consistent and single set of lifecycle operations that an admin can perform across all of these artifacts.
 
@@ -24,7 +24,7 @@ As part of the unification of admin experiences of finance and operations apps w
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-This article provides an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services (LCS) and the new experience along with links to more resources and articles that provide detailed information for common tasks.
+This article provides an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services and the new experience along with links to more resources and articles that provide detailed information for common tasks.
 
 To learn more about the admin unification journey, watch the following video on Microsoft Dynamics 365 Community channel on YouTube: [Video: Unified admin experience for finance and operations apps](https://www.youtube.com/embed/VPQSmtgzfjM)
 
@@ -32,7 +32,7 @@ To learn more about the admin unification journey, watch the following video on 
 
 You won't see any new environment types in the Power Platform admin center. We have integrated the finance and operations apps into the Power Platform fabric.
 
-You can deploy the finance and operations apps within Power Platform admin center in one of the following two ways:
+You can deploy the finance and operations apps within the Power Platform admin center in one of the following two ways:
 
 - **Option A: Create a new environment through templates**: When you create a new environment in the Power Platform admin center, you have the option to add a Dataverse database and enable Dynamics 365 apps. When you choose these two options, a list of environment app templates becomes available in the **Automatically deploy these apps** list, which is a group of applications preinstalled on a Dataverse database.  
 
@@ -47,7 +47,7 @@ You can deploy the finance and operations apps within Power Platform admin cente
   > [!IMPORTANT]
   > For this option to work, the environment must have been created with the **Enable Dynamics 365 apps** toggle turned on. This toggle ensures that the environment was created with the underlying schema required by the Dynamics 365 apps.
 
-In either approach, notice that your environment has two runtime URLs: one for the customer engagement apps (**Environment URL**) and another one for finance and operations apps (**Finance and Operations URL**).
+In either approach, notice that your environment has two runtime URLs: one for the customer engagement apps (**Environment URL**) and another for finance and operations apps (**Finance and Operations URL**).
 
 :::image type="content" source="media/environment-urls.png" alt-text="Two URLs for customer engagement and finance and operations apps in your environment":::
 
@@ -57,24 +57,24 @@ When you purchase a license for any finance and operations app, such as Dynamics
 
 :::image type="content" source="media/PPI-Capacity.png" alt-text="Capacity view in Power Platform admin center":::
 
-A license is required to create or install any finance and operations app in Power Platform admin center. You must also have at least 1 GB available of both Operations and Dataverse database capacity to provision one more environment.  Beyond that, there are no strict limits on how many environments you can create. This differs from LCS where each sandbox and production environment slot had a predetermined purchase.
+A license is required to create or install any finance and operations app in the Power Platform admin center. You must also have at least 1 GB available of both Operations and Dataverse database capacity to provision one more environment.  Beyond that, there are no strict limits on how many environments you can create. This differs from Lifecycle Services where each sandbox and production environment slot had a predetermined purchase.
 
-As part of the capacity-based model, all environments are given the same level of compute performance be it sandbox or production environments.  This is based on the number of user licenses purchased and it dynamically scales up or down as your license quantities adjust.
+As part of the capacity-based model, all environments are given the same level of compute performance, whether they're sandbox or production environments.  This is based on the number of user licenses purchased and it dynamically scales up or down as your license quantities adjust.
 
 ## Development reimagined
 
-Administrators in LCS were accustomed to setting up an Azure subscription early in their implementation project. Once established, admins could deploy one or many developer virtual machines (VMs) hosted in Azure that were an all-in-one configuration with SQL Server, the Application Object Server, Visual Studio and the developer tools, the X++ source code, and more.  While simple to deploy, these VMs represented cost in addition to the purchase of licenses, and also were becoming more limited in their ability to use the full platform and connection to Dataverse that sandbox and production environment types enjoyed.
+Administrators in Lifecycle Services were accustomed to setting up an Azure subscription early in their implementation project. Once established, admins could deploy one or many developer virtual machines (VMs) hosted in Azure that were an all-in-one configuration with SQL Server, the Application Object Server, Visual Studio and the developer tools, the X++ source code, and more.  While simple to deploy, these VMs represented cost in addition to the purchase of licenses, and also were becoming more limited in their ability to use the full platform and connection to Dataverse that sandbox and production environment types enjoyed.
 
-With the unified experience, customers no longer deploy all-in-one VMs.  Instead, you can download the Power Platform and X++ developer tools on a computer with Visual Studio installed. Next, you can build new solutions that span the entire platform set of capabilities, and then deploy those to a sandbox environment that is provisioned through Power Platform admin center.  
+With the unified experience, customers no longer deploy all-in-one VMs.  Instead, you can download the Power Platform and X++ developer tools on a computer with Visual Studio installed. Next, you can build new solutions that span the entire platform set of capabilities, and then deploy those to a sandbox environment that is provisioned through the Power Platform admin center.  
 
 ## Terminology differences between Lifecycle Services and Power Platform admin center
 
-When it comes to environment lifecycle operations, there are some terminology and technical differences between similar activities that admins perform in the two, different admin centers. The table below is a quick reference for each operation type and explains any nuances between the two experiences.
+When it comes to environment lifecycle operations, there are some terminology and technical differences between similar activities that admins perform in the two different admin centers. The table below is a quick reference for each operation type and explains any nuances between the two experiences.
 
-| Lifecycle operation | LCS terminology | Power Platform terminology | Comments |
+| Lifecycle operation | Lifecycle Services terminology | Power Platform terminology | Comments |
 | ----------- | ----------- |----------- |----------- |
 | Create | Deploy | Provision | Not applicable |
-| Copy | Database refresh | Copy | In Power Platform, code is always copied along with the data, giving a full copy of the source environment.  This differs from LCS that only copied data. |
+| Copy | Database refresh | Copy | In Power Platform, code is always copied along with the data, giving a full copy of the source environment.  This differs from Lifecycle Services that only copied data. |
 |Backup | Database export | Backup (custom or system-defined)| In Power Platform, a backup is kept in the cloud and never downloaded as a SQL .bak or .bacpac file. |
 | Restore | Point-in-time restore | Restore (custom or system-defined)| Not applicable |
 | Reset | Not applicable | Reset| This operation isn't yet implemented for environments where **Dynamics 365 Finance and Operations Provisioning App** is installed. |
@@ -85,7 +85,7 @@ When it comes to environment lifecycle operations, there are some terminology an
 
 The following list of continually updated scenario tutorials provides a walkthrough for administrators in these new experiences.
 
-- [Provision a new environment with an ERP-based template (preview)](./tutorial-deploy-new-environment-with-ERP-template.md)
+- [Tutorial: Provision a new environment with an ERP-based template (preview)](./tutorial-deploy-new-environment-with-ERP-template.md)
 - [Tutorial: Copy a Lifecycle Services environment to a unified environment (preview)](./tutorial-copy-lifecycle-services-environment-unified-environment.md)
 - [Unified admin trials (preview)](admin-trials.md)
 - [Manage storage and capacity](../finance-operations-storage-capacity.md)
@@ -106,13 +106,13 @@ You can view the licenses assigned to you at [My Account - Subscriptions](https:
 
 #### I don't have any available capacity
 
-All Power Platform environments require Dataverse capacity to deploy. In addition, Finance and Operations apps experiences require both Dataverse and Operations database capacities to be available to deploy. You can review the [storage capacity deficit](../finance-operations-storage-capacity.md#address-a-storage-capacity-deficit).
+All Power Platform environments require Dataverse capacity to deploy. In addition, finance and operations apps experiences require both Dataverse and Operations database capacities to be available to deploy. You can review the [storage capacity deficit](../finance-operations-storage-capacity.md#address-a-storage-capacity-deficit).
 
-One of the best ways to reduce capacity is to review your sandboxes and see which can be cleaned up or removed.  We're  also building a new type of copy operation in Power Platform admin center that will truncate all of the transactional tables during the copy so that the resulting environment is as small as possible without sacrificing critical module configurations or master data. You can then use Data Import Export Framework (DIXF) to copy over a limited set of transactions for testing purposes. When this new copy operation is available we will update this FAQ with details on how to utilize it.
+One of the best ways to reduce capacity is to review your sandboxes and see which can be cleaned up or removed.  We're  also building a new type of copy operation in the Power Platform admin center that will truncate all of the transactional tables during the copy so that the resulting environment is as small as possible without sacrificing critical module configurations or master data. You can then use Data Import/Export Framework (DIXF) to copy over a limited set of transactions for testing purposes. When this new copy operation is available, we will update this FAQ with details on how to use it.
 
-#### How do I access SQL for these environments
+#### How do I access SQL for these environments?
 
-Direct SQL access is not available at this time, however We're working on providing a just-in-time access approach similar to what has been available earlier using Lifecycle Services. When this comes available, we will update this FAQ with details on how to utilize it.
+Direct SQL access is not available at this time; however, we're working on providing a just-in-time access approach similar to what has been available earlier using Lifecycle Services. When this becomes available, we will update this FAQ with details on how to use it.
 
 ### Related articles
 

@@ -1,6 +1,6 @@
 ---
 title: Author using conditions (preview)
-description: Learn how to add conditional branching to a topic and the conversational path in Power Virtual Agents preview.
+description: Learn how to add conditional branching to a topic and the conversational path in Microsoft Copilot Studio preview.
 keywords: "PVA"
 ms.date: 03/24/2023
 ms.topic: how-to
@@ -9,11 +9,13 @@ ms.author: iawilt
 ms.reviewer: gapretty
 manager: leeclontz
 ms.custom: authoring, topics, message, question, bap-template
-ms.collection: virtual-agent
+
 ms.service: power-virtual-agents
 ---
 
 # Author using conditions (preview)
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -79,7 +81,7 @@ The default condition editor is good for most scenarios. If you need more flexib
 
 1. To change the formula, select _Select variable_ (**>**) to open the Power Fx formula editor. The formula you enter here must return a Boolean (true or false) value.
 
-Learn how to use [Microsoft Power Fx in Power Virtual Agents](advanced-power-fx.md).
+Learn how to use [Microsoft Power Fx in Microsoft Copilot Studio](advanced-power-fx.md).
 
 To switch back to the simple condition editor, select the _Node Menu_ (**&vellip;**), and then select **Reset node**.
 

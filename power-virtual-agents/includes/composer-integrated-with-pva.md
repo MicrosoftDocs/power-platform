@@ -1,2 +1,2 @@
 > [!NOTE]
-> Power Virtual Agents now [supports these features](../overview-preview.md) without Composer.
+> Microsoft Copilot Studio now [supports these features](../fundamentals-get-started.md) without Composer.

@@ -18,7 +18,7 @@ This scenario aims at the legacy canvas app makers and flow makers in Power Apps
 
 You currently build canvas apps and flows that are *not* part of a solution, and
 share your apps and flows by specifying each user by name or specifying a
-security group in Azure Active Directory who can access your app or flow.
+security group in Microsoft Entra who can access your app or flow.
 
 The end goal is to move your legacy canvas app and flows to a managed application lifecycle management (ALM) model by creating apps and flows in a Dataverse solution.
 

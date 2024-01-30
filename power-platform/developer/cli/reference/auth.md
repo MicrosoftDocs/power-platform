@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 10/17/2023
+ms.date: 1/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -113,8 +113,7 @@ Tenant ID if using application ID/client secret or application ID/client certifi
 
 #### `--url` `-u`
 
-The resource URL to connect to
-
+**Deprecated**: Use `--environment` instead.
 #### `--username` `-un`
 
 Optional: The username to authenticate with; shows Microsoft Entra ID dialog if not specified.
@@ -134,7 +133,7 @@ Delete a particular authentication profile
 
 The index of the profile to be deleted
 
-**Note**: The value must be a positive integer.
+**Note**: The value must be an integer with minimum value of 1.
 
 #### `--name` `-n`
 
@@ -163,7 +162,7 @@ Name or rename an existing authentication profile
 
 The index of the profile to be named/renamed
 
-**Note**: The value must be a positive integer.
+**Note**: The value must be an integer with minimum value of 1.
 
 #### `--name` `-n`
 
@@ -186,7 +185,7 @@ Select which authentication profile should be active
 
 The index of the profile to be active.
 
-**Note**: The value must be a positive integer.
+**Note**: The value must be an integer with minimum value of 1.
 
 #### `--name` `-n`
 
@@ -209,7 +208,7 @@ Update name or target environment of an existing authentication profile
 
 The index of the profile to be named/renamed
 
-**Note**: The value must be a positive integer.
+**Note**: The value must be an integer with minimum value of 1.
 
 
 ### Optional Parameters for auth update

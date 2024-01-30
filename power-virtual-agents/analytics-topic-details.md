@@ -11,10 +11,12 @@ manager: leeclontz
 ms.reviewer: mboninco
 ms.custom: analysis, ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
-# Analyze topic usage in Power Virtual Agents
+# Analyze topic usage in Microsoft Copilot Studio
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 The topic analytics pane provides a view into the performance of an individual topic and how it can be improved.
 
@@ -40,7 +42,7 @@ The topic details page includes a variety of charts with graphical views of a to
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Topic summary charts
 

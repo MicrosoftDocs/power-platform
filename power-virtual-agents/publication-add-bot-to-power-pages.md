@@ -10,18 +10,20 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "publication, authoring, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Add a bot to Power Pages
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 [Power Pages](/power-pages/) are external-facing websites that allow users outside their organizations to sign in with a wide variety of identities, create and view data in Microsoft Dataverse, or even browse content anonymously. You can add your bot to a portal so that visitors can interact with your bot directly on your portal's page.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Create a Power Page](/powerapps/maker/portals/create-portal).
-- [Create a Power Virtual Agents bot](authoring-first-bot.md).
+- [Create a Microsoft Copilot Studio bot](authoring-first-bot.md).
 
 ## Add a bot to your Power Pages
 

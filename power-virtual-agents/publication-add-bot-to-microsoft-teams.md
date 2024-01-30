@@ -9,10 +9,12 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "publication, authoring, ceX, teams"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Add a chatbot to Microsoft Teams
+
+[!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
 Now that you have published your bot, you can make your bot available to users in Microsoft Teams so you, your teammates, and the broader organization can interact with it. You need to [publish the bot at least once](publication-fundamentals-publish-channels.md) before users can interact with the bot in Microsoft Teams.
 
@@ -31,7 +33,7 @@ When you add the bot to Microsoft Teams, some of your data, such as bot content 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 - [Share with users](admin-share-bots.md) so they can install and chat with the bot in Microsoft Teams.
 - Your organization needs to allow Microsoft Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Teams or find it in the **Built by your colleagues** section in the Teams app store. Work with your admin to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) if it has been disabled for your organization.
 - Bots that are approved for the **Built by your organization** section (after submission to an admin) are managed separately by admins in the Microsoft Teams admin center's [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
@@ -91,7 +93,7 @@ Providing the right description and appearance for the bot before making it avai
 
 ## Install a bot as an app in Microsoft Teams
 
-After you have published a bot, you can add the bot to your own version of Microsoft Teams directly from the Power Virtual Agents app.
+After you have published a bot, you can add the bot to your own version of Microsoft Teams directly from the Microsoft Copilot Studio app.
 
 > [!IMPORTANT]
 > New content in a freshly published bot won't appear in conversations that are currently ongoing. After 30 minutes of idle time, the bot will be updated.  
