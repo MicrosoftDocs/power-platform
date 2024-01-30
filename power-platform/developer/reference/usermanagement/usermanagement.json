@@ -1,13 +1,14 @@
 {
-  "swagger": "2.0",
+  "openapi": "3.0.1",
   "info": {
     "title": "Microsoft Power Platform REST API",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
     "version": "2022-03-01-preview"
   },
-  "host": "api.powerplatform.com",
-  "schemes": [
-    "https"
+  "servers": [
+    {
+      "url": "https://api.powerplatform.com"
+    }
   ],
   "paths": {
     "/usermanagement/environments/{environmentId}/user/applyAdminRole": {
@@ -19,18 +20,22 @@
         "operationId": "ApplyAdminRole",
         "parameters": [
           {
-            "in": "path",
             "name": "environmentId",
+            "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           },
           {
-            "in": "query",
             "name": "api-version",
+            "in": "query",
             "description": "The API version",
             "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
+            "schema": {
+              "type": "string",
+              "default": "2022-03-01-preview"
+            }
           }
         ],
         "responses": {
@@ -41,26 +46,32 @@
       }
     }
   },
-  "definitions": {
-    "SyncReport": {
-      "description": "Organization Sync report contains last sync information from kepler",
-      "type": "object",
-      "properties": {
-        "lastSyncTime": {
-          "description": "Last sync time for the org",
-          "type": "string",
-          "example": ""
+  "components": {
+    "schemas": {
+      "SyncReport": {
+        "type": "object",
+        "properties": {
+          "lastSyncTime": {
+            "type": "string",
+            "description": "Last sync time for the org",
+            "nullable": true,
+            "example": ""
+          }
         },
-        "additionalProperties": null
+        "description": "Organization Sync report contains last sync information from kepler"
       }
-    }
-  },
-  "securityDefinitions": {
-    "oauth2": {
-      "type": "oauth2",
-      "flow": "implicit",
-      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
-      "description": "Microsoft Entra ID OAuth2"
+    },
+    "securitySchemes": {
+      "oauth2": {
+        "type": "oauth2",
+        "description": "Azure Active Directory OAuth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+            "scopes": { }
+          }
+        }
+      }
     }
   },
   "security": [
