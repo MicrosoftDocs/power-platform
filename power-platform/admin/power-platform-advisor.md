@@ -1,60 +1,67 @@
 ---
 title: Use Power Platform Advisor (preview)
-description: Learn about how to use Power Platform Advisor to optimize your tenant.
+description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/08/2023
+ms.date: 1/29/2024
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
 search.audienceType:
   - admin
-
 ---
 
 # Use Power Platform Advisor (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. It analyzes all Managed Environments and the apps in these environments within your Power Platform tenant, and offers solutions to enhance security, reliability, and overall health. 
+Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health.
 
-Currently, Power Platform Advisor is available for all tenant-level admin users. These include users with the Power Platform admin role, Dynamics 365 admin role, or a Global admin role within the Power Platform tenant. 
+With Advisor, administrators can:
 
-With Power Platform Advisor, administrators can: 
+- Get proactive and offer best practice recommendations.
+- Improve the overall health of their Power Platform tenant.
+- Take inline actions or automate actions using cloud flows.
 
-- Get proactive, best practice recommendations. 
-- Improve the overall health of your Power Platform tenant. 
-- Take inline actions or automate actions using cloud flows. 
+## Access Power Platform Advisor
+
+All tenant admins can access Advisor in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by selecting **Advisor (Preview)** in the navigation menu.
+
+Tenant admins must have at least _one_ of the following roles:
+
+- Power Platform admin role
+- Dynamics 365 admin role
+- Global admin role within the Power Platform tenant
 
 > [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - Power Platform Advisor currently scans only the Managed Environments in the tenant for recommendations. Scanning is done once a week.
-> - To submit feedback and suggestions, use [this form](https://aka.ms/padvisorfeedback).
+>
+> - Power Platform Advisor is a preview feature and not meant for production use, therefore might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback.
+> - Advisor currently scans only the Managed Environments in the tenant for recommendations. Scanning is done once a week.
+> - To submit feedback and suggestions, use the [Power Platform Advisor - Feedback](https://aka.ms/padvisorfeedback) form.
 
 ## Turn on Power Platform Advisor
-Power Platform Advisor is turned on by default for all [Managed Environments](managed-environment-overview.md), however, recommendations are only available after you turn on [tenant-level analytics](tenant-level-analytics.md).
+
+Advisor is turned on by default for all [Managed Environments](managed-environment-overview.md). Recommendations are only available after you turn on [tenant-level analytics](tenant-level-analytics.md).
 
 ## Key capabilities
 
 ### Recommendations
-Power Platform tenant admins can view the top recommendations on the **Advisor (Preview)** card. If the Power Platform admin center home page isn't customized, this card is automatically pinned on the home page. Your tenant is scanned for recommendations weekly. 
 
-:::image type="content" source="media/advisor-card.svg" alt-text="Advisor card on the home page.":::
+Power Platform tenant admins can view the top recommendations on the **Advisor (Preview)** card. If the Power Platform admin center home page isn't customized, this card is automatically pinned on the **Home** page. Your tenant is scanned for recommendations weekly.
 
-If the home page is customized or you don't see the **Advisor (Preview)** card or you removed the card from the home page, you can select **+ Add cards** to add the card to the homepage. 
+- Select **View details** on any recommendation to view its details.
+- Select **View recommendations** to view all recommendations on the **Advisor (Preview)** page.
 
-The **Advisor (Preview)** card shows the top four recommendations. You can select **View details** for any of the recommendations to view the details for that recommendation. You can select the **View recommendations** button to view all the recommendations in the **Advisor (Preview)** page.
- 
-Power Platform Advisor can also be accessed using the **Advisor (Preview)** option in the navigation panel of the Power Platform admin center. This option takes you to the **Advisor (Preview)** page, where you can view all the recommendations.
+:::image type="content" source="media/power-platform-advisor/advisor-card.svg" alt-text="Advisor card on the home page.":::
 
-:::image type="content" source="media/advisor-page.svg" alt-text="Advisor (Preview) page":::
- 
-Admins can select a recommendation from the **Advisor (Preview)** page to view the associated details for that recommendation in the recommendation panel. In this panel, admins can learn more about the recommendation, its impact, and associated resources and details.
- 
+> [!TIP]
+> If the home page is customized, you don't see the **Advisor (Preview)** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
+> :::image type="content" source="media/power-platform-advisor/add-card.png" alt-text="Screenshot that shows how to add an advisor card to your home page in Power Platform admin center.":::
+
 ### Inline actions
-For each recommendation, Power Platform Advisor presents one or more relevant actions that can be taken from the recommendation panel. Depending on the recommendation, an admin can take relevant action for a specific resource or take bulk action by selecting up to 10 resources from the recommendation panel and taking an action. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [Categories of recommendations](#categories-of-recommendations).
+
+You can take action for each recommendation in the recommendation pane. Depending on the recommendation, an admin can take relevant action for a specific resource or take bulk action by selecting up to 10 resources from the recommendation panel and taking an action. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [Categories of recommendations](#categories-of-recommendations).
 
 ### Automated actions
 Power Platform Advisor supports automated actions made through [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. This is a useful way to build a process for remediations. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app informing them about an impending action. If they don't receive any correspondence from the owner, the app can then be deleted.
