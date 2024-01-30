@@ -25,31 +25,31 @@ search.app:
 
 You can use connector action control to allow or block individual actions within a given connector.
 
-On the **Data policies** page:
-
-1. Create a new policy or use an existing one, then on the **Assign connectors** page select the `...` next to your connector, for example **SQL Server**.
-1. Select **Configure connector** > **Connector actions**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
+1. On the left navigation pane, select **Policies** > **Data policies**.
+1. Select a policy and on the command bar, select **Edit Policy**.
+1. On the left, select **Prebuilt connectors**.
+1. Select **More actions** next to your connector and then select **Configure connector** > **Connector actions**.
 
    :::image type="content" source="media/connector-action-control/dlp-connector-actions.png" alt-text="Select Configure connector > Connector actions." lightbox="media/connector-action-control/dlp-connector-actions.png":::
 
-   A side pane appears.
+   
 
    > [!NOTE]
    > You can configure connector actions for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
 
-1. Use the side pane to allow or deny connector actions.
+1. Use the side panel to allow or deny specific actions.
 
-   You can **Allow** or **Block** any new connector actions added in the future by setting the **Default connector action settings**.
+   You can also set the **Default connector action settings** to allow or block for any new connector actions that will be added to the connector in the future.
 
    :::image type="content" source="media/connector-action-control/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
-1. **Save** your changes if you made any.
 
 ## Known limitations
 
-### Admins need to give users consent in Power Platform admin center
+### Admins need to have maker access to Power Apps
 
-The list of connector actions is retrieved when a user calls the Power Apps infrastructure. The admin needs to sign into the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/) and complete the user consent process. If a user isn't known to Power Apps, then the list of connector actions might not be retrieved.
+The list of connector actions is retrieved using calls to Power Apps on behalf of the admin. This means the admin must sign in to [Power Apps](https://make.powerapps.com) and have access to complete the user consent process. If the admin doesn't have acccess to [Power Apps](https://make.powerapps.com), then the list of connector actions won't be retrieved.
 
 ### Republish Power Apps
 
@@ -101,9 +101,10 @@ Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
 | TomorrowsForecast | Microsoft.ProcessSimple/apis/apiOperations | Get the forecast for tomorrow in the specified location. |
 | OnCurrentConditionsChange | Microsoft.ProcessSimple/apis/apiOperations | Triggers a new flow when the conditions change for a location.    |
 
-### Configure connector action rules for a policy
+#### Configure connector action rules for a policy
+The object that contains connector action rules for a policy is referred to below as the connector configurations.
 
-The connector configurations object contains connector action rules for a policy:
+The connector configurations object has the following structure:
 
 ```powershell
 $ConnectorConfigurations = @{ 
@@ -120,43 +121,31 @@ $ConnectorConfigurations = @{
     } 
   ) 
 }
-```
+``` 
 
-#### Retrieve existing connector configurations for a DLP policy
-
+**Retrieve existing connector configurations for a DLP policy**
 ```powershell
 Get-PowerAppDlpPolicyConnectorConfigurations 
-```
+``` 
 
-For more information, see [Get-PowerAppDlpPolicyConnectorConfigurations](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappdlppolicyconnectorconfigurations).
-
-#### Create connector configurations for a DLP policy
-
+**Create connector configurations for a DLP policy**
 ```powershell
 New-PowerAppDlpPolicyConnectorConfigurations
-```
+``` 
 
-For more information, see [New-PowerAppDlpPolicyConnectorConfigurations](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappdlppolicyconnectorconfigurations).
-
-#### Update connector configurations for a DLP policy
-
+**Update connector configurations for a DLP policy**
 ```powershell
 Set-PowerAppDlpPolicyConnectorConfigurations
-```
+``` 
 
-For more information, see [Set-PowerAppDlpPolicyConnectorConfigurations](/powershell/module/microsoft.powerapps.administration.powershell/set-powerappdlppolicyconnectorconfigurations).
+**Example**
 
-#### Connector configurations example
-
-| Permission | Action | Connector | Note |
-| ---------- | ------ | --------- | ---- |
-| Block | `TodaysForecast` and `CurrentWeather` | MSN Weather | You can allow all other actions. |
-| Allow actions | `GetRepositoryById` | GitHub | You can block all other actions. |
+Goal:
+-	Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions.
+-	Allow action GetRepositoryById of connector GitHub; block all other actions.
 
 > [!NOTE]
-> In the following cmdlet, `-PolicyName` refers to a unique GUID.
->
-> You can retrieve the DLP GUID by running `Get-DlpPolicy`.
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 
