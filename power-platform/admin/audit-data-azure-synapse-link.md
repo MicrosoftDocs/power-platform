@@ -13,9 +13,9 @@ search.audienceType:
 ---
 # Access audit data using Azure Synapse Link for Dataverse and Power BI
 
-Customers who use Synapse Link for Dataverse can export audit logs easily to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises.
+Customers who use Azure Synapse Link for Dataverse can export audit logs easily to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises.
 
-Microsoft Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. If you have Azure resources in the same region as the Dataverse environment, you can export audit logs to Azure Data Lake Storage Gen2 using Synapse Link for Dataverse and query the audit logs using Azure Synapse Analytics.
+Microsoft Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. If you have Azure resources in the same region as the Dataverse environment, you can export audit logs to an Azure storage account using Azure Synapse Link for Dataverse and query the audit logs using Azure Synapse Analytics and Power BI Desktop.
 
 ## Prerequisites
 
@@ -27,13 +27,13 @@ Microsoft Dataverse auditing is supported on all custom and most customizable ta
 
 ## Tasks to complete
 
-Here are the high-level steps for creating the link in Azure:
+Here are the high-level steps for creating the storage and workspace in Azure, then the Azure Synapse Link for Dataverse so you can create reports in Power BI:
 
 1. [Create n Azure Synapse Link](#create-an-azure-synapse-link)
    1. Create a resource group.
    1. Create an Azure Data Lake Storage Gen2 account with hierarchical directory enabled.
    1. Create a Synapse workspace.
-   1. Create an Apache Spark pool for the Synapse workspace. 
+   1. Create an Apache Spark pool for the Synapse workspace.
    1. To enable your app maker the ability to create an Azure Synapse Link for Dataverse, grant storage account and synapse workspace permissions to the Power Platform maker.
 1. [Connect Dataverse audit table to Synapse workspace](#connect-dataverse-audit-table-to-synapse-workspace)
    1. Verify the auditing table’s sync status.
@@ -46,12 +46,12 @@ Here are the high-level steps for creating the link in Azure:
 1. Create a storage account. More information: [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal)
 Under the **Project** details:
    1. Select the **Subscription** where the resource group was created.
-   1. Select the **Resource group** that you just created from above.
+   1. Select the **Resource group** that you created earlier.
    1. Enter a **Storage account name**.
    1. Select the **Advanced** tab and enable the **Hierarchical Namespace** option.
 
       :::image type="content" source="media/azure-storage-account.png" alt-text="Create an Azure storage account":::
-1. Grant **Storage account** access to the Power Apps admin who will be connecting the Dataverse tables to this storage account.
+1. Grant **Storage account** access to the Power Apps admin who is connecting the Dataverse tables to this storage account.
    1. On the left pane, select **Access control (IAM)**.
    1. Select **Role assignments** > **+ Add** > **Add role assignments**.
    1. Under **Add role assignment**, select the **Members** tab.
@@ -88,9 +88,9 @@ Under the **Project** details:
 
 To connect your Dataverse audit table to a Synapse workspace, you use the Azure Synapse Link that was created earlier in this article.
 
-1. With a user account that has the Dataverse system administrator security role, sign into Power Apps and then select then environment you want.
+1. With a user account that has the Dataverse system administrator security role, sign into Power Apps and then select the environment you want.
 1. Connect Dataverse to your Synapse workspace:
-  1. On the left navigation pane select select **Azure Synapse Link**. If the item isn't available, select **More** > **Discover all**. Select **New link**.
+  1. On the left navigation pane, select **Azure Synapse Link**. If the item isn't available, select **More** > **Discover all**. Select **New link**.
   1. On the **New link** page:
     - Select the **Connect to your Azure Synapse Analytics workspace** option.
     - Select the Azure **Subscription**, the **Resource group**, and the **Storage account**.
@@ -111,19 +111,12 @@ It takes a while for the Dataverse tables to get exported to the Synapse workspa
 
 ## Create reports and dashboards using Power BI
 
-You can access the audit data using serverless SQL in your Azure Synapse Analytics workspace or using Power BI desktop.
+Access the audit data using your Azure Synapse Analytics workspace with Power BI desktop. If you don't already have Power BI Desktop, download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) it. It's a free application that runs on your local computer.
 
-### Use Serverless SQL to create reports
-
-1. Sign in to Power Apps and select the environment you want.
-1. In Click on the Go to Azure Synapse Analytics workspace action. <!-- Checking with PM of what this means-->
-
-### Using Power BI Desktop
-
-If you don't already have Power BI Desktop, Download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) it. It's a free application that runs on your local computer.
+For larger volumes of data, you can use similar steps to connect using **Azure Synapse Analytics SQL**.
 
 1. Start Power BI Desktop, and then in a new Power BI session, select **Get data** > **More...**.
-1. In the left pane of the **Get Data** dialog pane, select **Azure** and then in the right pane select **Azure Synapse Analytics SQL**  for larger volumes of data or **Azure Synapse Analytics workspace (Beta)** for smaller volume of data.
+1. In the left pane of the **Get Data** dialog pane, select **Azure** and then in the right pane select **Azure Synapse Analytics workspace (Beta)**.
 1. Select **Connect**.
 1. Select **Sign in**, and enter or select your **Organizational account**, the account that has access to the Azure Synapse workspace that you created. Select **Connect**.
 1. Once signed in, select the workspace under the **Navigator** dialog pane.
