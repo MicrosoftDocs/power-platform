@@ -35,18 +35,7 @@ The following table helps illustrate when messages are billed, free, or included
 | Greeting topic gets information about the user using a Power Automate flow to present a customized experience. | Yes | Any topic type | Any channel | Yes (any connector) | Either used or not used | Any environment type |
 | User interacts with the bot on your website to ask about store hours, check order status, and so on. | Yes | Non-system | Any channel | Either used or not used | Either used or not used | Dataverse |
 
-## View your bot's messages consumption report
 
-To download and view an Excel file showing your billed messages consumption report:
-
-1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
-1. On the left pane, select **Resources** > **Capacity**.
-1. On the **Summary** tab, select **Download reports** in the **Add-ons** section.
-1. On the menu at the top, select **+ New**.
-1. In the **Choose a report** dropdown list, select **Power Virtual Agent**.
-1. Select **Submit**.
-1. After the new report is generated, select the report in the list.
-1. At the top of the screen, select **Download** to download the report as an Excel file.
 
 ## Overage
 
