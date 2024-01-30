@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 11/10/2023
+ms.date: 1/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -43,10 +43,6 @@ Start pipeline deployment.
 
 Current solution version
 
-#### `--environment` `-env`
-
-Deployment Environment
-
 #### `--newVersion` `-nv`
 
 New solution version
@@ -61,6 +57,10 @@ Deployment Stage ID
 
 
 ### Optional Parameters for pipeline deploy
+
+#### `--environment` `-env`
+
+Deployment Environment
 
 #### `--wait` `-w`
 
@@ -78,6 +78,10 @@ List Pipelines
 
 
 ### Optional Parameters for pipeline list
+
+#### `--environment` `-env`
+
+Deployment Environment
 
 #### `--pipeline` `-p`
 

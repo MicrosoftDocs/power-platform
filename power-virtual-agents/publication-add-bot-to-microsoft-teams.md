@@ -9,7 +9,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "publication, authoring, ceX, teams"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Add a chatbot to Microsoft Teams

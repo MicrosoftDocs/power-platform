@@ -8,6 +8,8 @@ ms.custom:
 ms.topic: article
 ms.author: amishastri
 ms.reviewer: kvivek
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 # FAQ for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform

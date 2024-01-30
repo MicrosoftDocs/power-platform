@@ -10,7 +10,7 @@ ms.author: iawilt
 ms.reviewer: gapretty
 ms.custom: authoring, topics, message, question, bap-template
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Ask a question (preview)

@@ -13,6 +13,8 @@ contributors:
     - jasongre
 search.audienceType: 
   - admin
+ms.collection: 
+    - bap-ai-copilot
 ---
 # Manage feature settings
 

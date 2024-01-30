@@ -9,7 +9,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "publication, fundamentals, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Key concepts - Publish your bot
