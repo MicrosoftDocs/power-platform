@@ -49,7 +49,7 @@ You can use connector action control to allow or block individual actions within
 
 ### Admins need to have maker access to Power Apps
 
-The list of connector actions is retrieved using calls to Power Apps on behalf of the admin. This means the admin must sign in to [Power Apps](https://make.powerapps.com) and have access to complete the user consent process. If the admin doesn't have acccess to [Power Apps](https://make.powerapps.com), then the list of connector actions won't be retrieved.
+The list of connector actions is retrieved using calls to Power Apps on behalf of the admin. The admin must sign in to [Power Apps](https://make.powerapps.com) and have access to complete the user consent process. If the admin doesn't have access to [Power Apps](https://make.powerapps.com), then the list of connector actions won't be retrieved.
 
 ### Republish Power Apps
 
