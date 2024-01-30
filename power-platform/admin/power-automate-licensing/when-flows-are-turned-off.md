@@ -44,7 +44,7 @@ Dynamics 365 licensed user flows are automatically considered as being in contex
 - The environment doesn't have Dynamics 365 app installed, or
 - A premium flow isn't using Dynamics 365 entities and isn't linked to any Dynamics 365 app.
 
-| Enforcement Type | Exceptions | Admin notifications | Maker notification (+30 days) | Grace period | Recommended Action | Enforcement start date
+| Enforcement type | Exceptions | Admin notifications | Maker notification (+30 days) | Grace period | Recommended action | Enforcement start date
 |--------------|-------------------|--------|----------|---------|-------|------|
 | Premium flows where flow owner left the organization | Manual flows and flows whose owners have grandfathered licenses(P1, P2) won't be enforced  | September 1, 2023 | October 1, 2023 | 14 days | Assign a Power Automate license to the flow owner or per-flow/process license to the flow | Q2 2024
 |Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now)|Manual flows and flows whose owners have grandfathered licenses(P1, P2) won't be enforced  | September 1, 2023| October 1, 2023 | 14 days | Assign a Power Automate license to the flow owner or per-flow/process license to the flow | Q2 2024
