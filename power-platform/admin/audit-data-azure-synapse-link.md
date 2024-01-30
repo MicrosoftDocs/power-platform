@@ -29,7 +29,7 @@ Microsoft Dataverse auditing is supported on all custom and most customizable ta
 
 Here are the high-level steps for creating the storage and workspace in Azure, then the Azure Synapse Link for Dataverse so you can create reports in Power BI:
 
-1. [Create an Azure Synapse Link](#create-an-azure-synapse-link)
+1. [Create n Azure Synapse Link](#create-an-azure-synapse-link)
    1. Create a resource group.
    1. Create an Azure Data Lake Storage Gen2 account with hierarchical directory enabled.
    1. Create a Synapse workspace.
@@ -37,15 +37,14 @@ Here are the high-level steps for creating the storage and workspace in Azure, t
    1. To enable your app maker the ability to create an Azure Synapse Link for Dataverse, grant storage account and synapse workspace permissions to the Power Platform maker.
 1. [Connect Dataverse audit table to Synapse workspace](#connect-dataverse-audit-table-to-synapse-workspace)
    1. Verify the auditing table’s sync status.
-1. [Create reports and dashboards using Power BI](#create-reports-and-dashboards-using-power-bi).
+1. [Create reports and dashboards using Power BI](#create-reports-and-dashboards-using-power-bi)
 
 ## Create an Azure Synapse Link
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
 1. Create a resource group. More information: [Create resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
-1. Create a storage account. More information: [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal).
-   
-   Under the **Project** details:
+1. Create a storage account. More information: [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal)
+Under the **Project** details:
    1. Select the **Subscription** where the resource group was created.
    1. Select the **Resource group** that you created earlier.
    1. Enter a **Storage account name**.
@@ -63,9 +62,7 @@ Here are the high-level steps for creating the storage and workspace in Azure, t
 1. Repeat the previous steps for these roles:
    - **Storage Blob Data contributor**
    - **Storage Blob Data owner**
-1. Create a Synapse workspace.
-
-   Under the **Project** details:
+1. Create a Synapse workspace. Under the **Project** details:
    1. Select the **Subscription** where the **Resource group** was created.
    1. Select the '**Resource group**' that you created previously.
    1. **Workspace name**. Choose any globally unique name.
@@ -75,8 +72,7 @@ Here are the high-level steps for creating the storage and workspace in Azure, t
    1. Enter a **Name** for the Data Lake Storage Gen2 file system.
 1. Create a Spark pool for the Synapse workspace.
    1. Go to the resource group of the Synapse workspace that was created earlier.
-   1. The storage account and the Synapse workspace are listed under **Resources**.
-   1. Select the Synapse workspace you created in the above step.
+   1. The storage account and the Synapse workspace are listed under **Resources**. Select the Synapse workspace you created in the above step.
    1. Select **+ New Apache Spark pool** to create a spark pool.
    1. On the new Apache Spark pool page:
      - Enter an Apache spark pool name.
@@ -92,17 +88,17 @@ Here are the high-level steps for creating the storage and workspace in Azure, t
 
 To connect your Dataverse audit table to a Synapse workspace, you use the Azure Synapse Link that was created earlier in this article.
 
-1. With a user account that has the Dataverse system administrator security role, sign into [Power Apps](https://make.powerapps.com) and then select the environment you want.
+1. With a user account that has the Dataverse system administrator security role, sign into Power Apps and then select the environment you want.
 1. Connect Dataverse to your Synapse workspace:
-  1. On the left navigation pane, select **Azure Synapse Link**. If the item isn't available, select **More** > **Discover all**. Select **New link**.
-  1. On the **New link** page:
-    - Select the **Connect to your Azure Synapse Analytics workspace** option.
-    - Select the Azure **Subscription**, the **Resource group**, and the **Storage account**.
-    - Select the **Use Spark pool for Delta Lake data conversion job** option.
-    - Select the **Spark pool** and **Storage account**.
-  1. Select **Next**.
-    - Expand the **Advanced** tab and enter *480* minutes in the **Time interval** field. Later, you can change the duration for how frequent you want to refresh the Dataverse tables in the Synapse workspace.
-    - Under the list of tables, select the **Auditing** and **User** tables.
+   1. On the left navigation pane, select **Azure Synapse Link**. If the item isn't available, select **More** > **Discover all**. Select **New link**.
+   1. On the **New link** page:
+      - Select the **Connect to your Azure Synapse Analytics workspace** option.
+      - Select the Azure **Subscription**, the **Resource group**, and the **Storage account**.
+      - Select the **Use Spark pool for Delta Lake data conversion job** option.
+      - Select the **Spark pool** and **Storage account**.
+   1. Select **Next**.
+   1. Expand the **Advanced** tab and enter *480* minutes in the **Time interval** field. Later, you can change the duration for how frequent you want to refresh the Dataverse tables in the Synapse workspace.
+   1. Under the list of tables, select the **Auditing** and **User** tables.
 
 The tables you select must have change tracking enabled. More information: [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization).
 
