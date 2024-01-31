@@ -1,12 +1,12 @@
 ---
 title: "Free up storage space  | MicrosoftDocs"
 description: Reduce storage space usage by deleting notes, attachments, import history, and other data with one-time or recurring jobs.
-author: peakerbl 
+author: ceian
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 2/28/2023
+ms.date: 1/31/2024
 ms.subservice: admin
-ms.author: peakerbl  
+ms.author: ceian 
 ms.reviewer: jimholtz
 contributors:
   - DanaMartens
@@ -18,15 +18,16 @@ search.audienceType:
 
 # Free up storage space
 
-You can reduce the amount of storage space used by removing or deleting information from customer engagement apps, such as:
+You can reduce the amount of storage space used by removing or deleting information from dynamics 365 apps, such as:
 
-- Dynamics 365 Sales
-- Dynamics 365 Customer Service
-- Dynamics 365 Field Service
-- Dynamics 365 Marketing
-- Dynamics 365 Project Service Automation
+- **Dynamics 365 Sales**
+- **Dynamics 365 Customer Service**
+- **Dynamics 365 Field Service**
+- **Dynamics 365 Marketing**
+- **Dynamics 365 Project Service Automation**
+- **Dynamics 365 Finance and Operations**
 
-This article gives you 15 methods to help with storage management.
+This article gives you 15 methods to better manage storage.
 
 Use one or more of these methods to control your total data storage usage. You can delete categories of data as the need arises or set up bulk deletion jobs to reoccur at set intervals. For example, you can delete notes, attachments, import history, and other data.
   
@@ -51,14 +52,6 @@ Use the following methods to free up storage for each of the capacity types.
 
 | Storage | Affected Table(s) |  Method |
 |---------|-------------------|---------|
-|**File** |                   |         |
-|         | Attachment        | **[Method 3](#method-3-remove-email-attachments-using-advanced-find)**: Remove email attachments using Advanced Find |
-|     | Attachment | **[Method 4](#method-4-remove-email-messages-with-attachments-using-a-bulk-deletion-job)**: Remove email messages with attachments using a bulk deletion job        | 
-|     | Attachment  | **[Method 5](#method-5-remove-notes-with-attachments-using-advanced-find)**: Remove notes with attachments using Advanced Find        | 
-|     | Attachment  | **[Method 6](#method-6-remove-notes-with-attachments-using-a-bulk-deletion-job)**: Remove notes with attachments using a bulk deletion job        | 
-|**Log**     |         | |
-|     | AuditBase | **[Method 10](#method-10-delete-audit-logs---legacy-process)**: Delete audit logs        | 
-|     | PluginTraceLogBase | Delete plug-in trace logs using a [bulk deletion job](delete-bulk-records.md) | 
 |**Database**     |         | |
 |     | WorkflowLogBase | **[Method 1](#method-1-delete-bulk-email-and-workflow-instances-using-a-bulk-deletion-job)**: Delete bulk email and workflow instances using a bulk deletion job        | 
 |     | AsyncOperationBase | **[Method 2](#method-2-evaluate-and-delete-suspended-workflows)**: Evaluate and delete suspended workflows        | 
@@ -70,6 +63,14 @@ Use the following methods to free up storage for each of the capacity types.
 |     | Postbase, PostCommentBase, PostFollowBase, PostLikeBase, PostRegardingBase, PostRoleBase  | **[Method 13](#method-13-remove-unrequired-activity-feeds-records)**: Remove unrequired Activity Feeds records |
 |     | ExchangeSyncIdMappingBase  | **[Method 14](#method-14-modify-item-level-monitoring-settings)**: Modify Item Level Monitoring Settings |
 |     | TraceLogBase  | **[Method 15](#method-15-remove-unrequired-alerts-trace-logs)**: Remove unrequired Trace (Alert) records |
+|**File** |                   |         |
+|         | Attachment        | **[Method 3](#method-3-remove-email-attachments-using-advanced-find)**: Remove email attachments using Advanced Find |
+|     | Attachment | **[Method 4](#method-4-remove-email-messages-with-attachments-using-a-bulk-deletion-job)**: Remove email messages with attachments using a bulk deletion job        | 
+|     | Attachment  | **[Method 5](#method-5-remove-notes-with-attachments-using-advanced-find)**: Remove notes with attachments using Advanced Find        | 
+|     | Attachment  | **[Method 6](#method-6-remove-notes-with-attachments-using-a-bulk-deletion-job)**: Remove notes with attachments using a bulk deletion job        | 
+|**Log**     |         | |
+|     | AuditBase | **[Method 10](#method-10-delete-audit-logs---legacy-process)**: Delete audit logs        | 
+|     | PluginTraceLogBase | Delete plug-in trace logs using a [bulk deletion job](delete-bulk-records.md) | 
 
 ## Reduce file storage
 
@@ -105,9 +106,11 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 > If you delete this data, attachments are no longer available in customer engagement apps. However, if you saved attachments in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they're still there.  
   
-1. In the Power Platform admin center, select an environment.
+1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
+
+   :::image type="content" source="media/free-storage-method9a-1.png" alt-text="Screenshot that shows where the New button is located in an environment." lightbox="media/free-storage-method9a-1.png":::
   
 1. Choose **Next**.  
   
@@ -179,7 +182,7 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 > If you delete this data, notes and their associated attachments are no longer available in customer engagement apps.  
   
-1. In the Power Platform admin center, select an environment.
+1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
@@ -256,7 +259,7 @@ When you enable auditing, customer engagement apps create audit logs to store th
 > [!WARNING]
 > When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
 
-1. Sign in to the Power Platform admin center, and then select an environment.
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), and then select an environment.
 
 1. Under **Auditing**, select **Delete logs**.
 
@@ -280,7 +283,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 #### Monitor the status of audit delete jobs in the Power Platform admin center
 
-1. In the Power Platform admin center, select an environment.
+1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Bulk deletion**.
 
@@ -295,7 +298,7 @@ To monitor the status of audit delete jobs, see the next section.
 > [!WARNING]
 > If you delete this data, you will no longer be able to tell if an email was sent through bulk email or if a workflow rule ran against a record. The emails that were sent and the actions that ran against the record in the workflow will remain.  
   
-1. In the Power Platform admin center, select an environment.
+1. In the[Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
@@ -374,7 +377,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 For example, if you have 100 duplicate records, every time that you run a duplicate detection job that finds these duplicates, whether it's manual or reoccurring, those 100 duplicate records are stored in the database under that instance of that duplicate job until the duplicates are merged or deleted, or until the instance of that duplicate detection job is deleted.  
   
-1. In the Power Platform admin center, select an environment.
+1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Duplicate Detection Jobs**.  
 
@@ -393,7 +396,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 > [!WARNING]
 > After you delete these bulk import jobs, you will not be able to see what data was imported and you cannot roll back the import.  
   
-1.	In the Power Platform admin center, select an environment.
+1.	In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
@@ -440,7 +443,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 > [!WARNING]
 > After you delete these jobs, you will lose the history of the prior bulk deletion jobs that you've run.  
   
-1. In the Power Platform admin center, select an environment.
+1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
