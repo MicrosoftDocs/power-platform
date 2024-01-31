@@ -48,21 +48,21 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Removed app as Featured    |Every time the app is unset as Featured  |
 |Patched app   |Every time the app is patched|
 |Deleted app version   |The version of the app when deleted|
-|Consented to the app's apis    | When the current user has consented to the application's apis|
+|Consented to the app's APIs    | When the current user has consented to the application's APIs|
 |Imported new canvas app |Every time new canvas app is imported |
 |Imported existing canvas app   |Every time existing canvas app is imported |
 |Published solution canvas app version |When canvas app version from solution is published |
 |Added DataLossPreventionEvaluationResult | When DLP evaluation occurs for the App |
-|Admin restored deleted app    |When the deleted app is restored by Admin|
-|Admin set desired logical name  |When the desired logical name of the app is set by Admin|
-|Admin modified app owner |When the app owner is modified by Admin  |
-|Admin modified app permissions |When the app permissions is modified by Admin   |
-|Admin deleted app |When the app is deleted  by Admin |
-|Admin set quarantine state |When the quarantine state of the app is set by Admin|
-|Admin set conditional access   |When the conditional access of the app is set by Admin|
-|Admin set bypass consent state |When the bypass consent state of the app is set by Admin |
-|Admin set app as featured |Every time the app is marked as Featured by Admin |
-|Admin allowed third party apps | When third party apps were allowed by Admin |
+|Admin restored deleted app    |When the deleted app is restored by the admin|
+|Admin set desired logical name  |When the desired logical name of the app is set by the admin|
+|Admin modified app owner |When the app owner is modified by the admin  |
+|Admin modified app permissions |When the app permissions is modified by admin   |
+|Admin deleted app |When the app is deleted by the admin |
+|Admin set quarantine state |When the quarantine state of the app is set by the admin|
+|Admin set conditional access   |When the conditional access of the app is set by the admin|
+|Admin set bypass consent state |When the bypass consent state of the app is set by the admin|
+|Admin set app as featured |Every time the app is marked as Featured by the admin |
+|Admin allowed third party apps | When third party apps were allowed by the admin |
 
 
 ## Base schema
