@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 03/07/2023
 author: StephenRauchPM
 ms.subservice: admin
-ms.author: stephenrauch 
+ms.author: sericks 
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
