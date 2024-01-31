@@ -1,7 +1,7 @@
 ---
-title: "Important changes (deprecations) coming in Power Apps and Power Automate"
-description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 01/08/2024
+title: "Important changes (deprecations) coming in Power Platform"
+description: Important changes (deprecations) coming in Power Platform 
+ms.date: 06/29/2023
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -13,7 +13,7 @@ ms.author: kvivek
 ms.reviewer: angieandrews
 ---
 
-# Important changes (deprecations) coming in Power Apps and Power Automate
+# Important changes (deprecations) coming in Power Platform
 
 The announcements and deprecations described in this article apply to Power Apps and Power Automate. Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
 
