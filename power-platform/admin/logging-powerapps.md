@@ -49,6 +49,9 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Patched app   |Every time the app is patched|
 |Deleted app version   |The version of the app when deleted|
 |Consented to the app's apis    | When the current user has consented to the application's apis|
+|Imported new canvas app |Every time new canvas app is imported |
+|Imported existing canvas app   |Every time existing canvas app is imported |
+|Published solution canvas app version |When canvas app version from solution is published |
 |Added DataLossPreventionEvaluationResult | When DLP evaluation occurs for the App |
 |Admin restored deleted app    |When the deleted app is restored by Admin|
 |Admin set desired logical name  |When the desired logical name of the app is set by Admin|
@@ -57,7 +60,7 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Admin deleted app |When the app is deleted  by Admin |
 |Admin set quarantine state |When the quarantine state of the app is set by Admin|
 |Admin set conditional access   |When the conditional access of the app is set by Admin|
-|Admin set bypass consent state |When the consent state of the app is set by Admin |
+|Admin set bypass consent state |When the bypass consent state of the app is set by Admin |
 |Admin set app as featured |Every time the app is marked as Featured by Admin |
 |Admin allowed third party apps | When third party apps were allowed by Admin |
 
