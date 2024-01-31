@@ -1,14 +1,13 @@
 {
-  "openapi": "3.0.1",
+  "swagger": "2.0",
   "info": {
     "title": "Microsoft Power Platform REST API",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
     "version": "2022-03-01-preview"
   },
-  "servers": [
-    {
-      "url": "https://api.powerplatform.com"
-    }
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
   ],
   "paths": {
     "/usermanagement/environments/{environmentId}/user/applyAdminRole": {
@@ -16,26 +15,22 @@
         "tags": [
           "Users"
         ],
-        "summary": "Grants the requesting tenant administrator user the system admin role within Dataverse in the environment.",
+        "summary": "Grants requesting tenant admin user the system admin role within Dataverse in the environment.",
         "operationId": "ApplyAdminRole",
         "parameters": [
           {
-            "name": "environmentId",
             "in": "path",
+            "name": "environmentId",
             "required": true,
-            "schema": {
-              "type": "string"
-            }
+            "type": "string"
           },
           {
-            "name": "api-version",
             "in": "query",
+            "name": "api-version",
             "description": "The API version",
             "required": true,
-            "schema": {
-              "type": "string",
-              "default": "2022-03-01-preview"
-            }
+            "type": "string",
+            "default": "2022-03-01-preview"
           }
         ],
         "responses": {
@@ -46,32 +41,25 @@
       }
     }
   },
-  "components": {
-    "schemas": {
-      "SyncReport": {
-        "type": "object",
-        "properties": {
-          "lastSyncTime": {
-            "type": "string",
-            "description": "Last synchronization time for the environment",
-            "nullable": true,
-            "example": ""
-          }
-        },
-        "description": "Organization Sync report contains last synchronization information from Kepler"
-      }
-    },
-    "securitySchemes": {
-      "oauth2": {
-        "type": "oauth2",
-        "description": "Microsoft Entra ID OAuth2",
-        "flows": {
-          "implicit": {
-            "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
-            "scopes": { }
-          }
+  "definitions": {
+    "SyncReport": {
+      "description": "Organization Sync report contains last sync information from kepler",
+      "type": "object",
+      "properties": {
+        "lastSyncTime": {
+          "description": "Last sync time for the org",
+          "type": "string",
+          "example": ""
         }
       }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [
