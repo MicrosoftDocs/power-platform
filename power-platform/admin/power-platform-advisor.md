@@ -61,36 +61,38 @@ Power Platform tenant admins can view the top recommendations on the **Advisor (
 
 ### Inline actions
 
-You can take action for each recommendation in the recommendation pane. Depending on the recommendation, an admin can take relevant action for a specific resource or take bulk action by selecting up to 10 resources from the recommendation panel and taking an action. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [Categories of recommendations](#categories-of-recommendations).
+You can take action for each recommendation in the recommendation pane. An admin can take relevant actions for a specific resource or take a bulk action by selecting up to 10 resources from the recommendation list. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [Categories of recommendations](#categories-of-recommendations).
 
 ### Automated actions
-Power Platform Advisor supports automated actions made through [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. This is a useful way to build a process for remediations. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app informing them about an impending action. If they don't receive any correspondence from the owner, the app can then be deleted.
 
-While building cloud flows using the connector, you can get Power Platform Advisor recommendations and actions using the following actions:
+Power Platform Advisor supports automated actions in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector, which are useful to build a process for remediations. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app. The message informs the owner about an impending action. If the admin doesn't receive a reply from the owner, the app can be deleted.
 
--   **Get Recommendations**: This returns all the valid recommendations in your tenant.
--   **Get Recommendation Resources**: This returns all the resources for a specific recommendation.
--   **Execute Recommendation Action**: This executes a specific action for a specific resource listed in a recommendation.
+While building cloud flows using the connector, you can get Power Platform Advisor recommendations and actions:
+
+- **Get Recommendations**: Returns all the valid recommendations in your tenant.
+- **Get Recommendation Resources**: Returns all the resources for a specific recommendation.
+- **Execute Recommendation Action**: Executes a specific action for a specific resource listed in a recommendation.
 
 ### Share recommendations
 
 All recommendations in Power Platform Advisor can be shared in Microsoft Teams with other users for team collaboration.
 
-:::image type="content" source="media/share-in-teams.png" alt-text="Share in Teams option.":::
+:::image type="content" source="media/power-platform-advisor/share-in-teams.png" alt-text="Screenshot showing the Share in Teams option to select." lightbox="media/power-platform-advisor/share-in-teams.png":::
 
-An admin can share the entire recommendation or share specific rows within the recommendation to another user by entering their name in the **Share to** textbox in the sharing panel. Shared recommendations or details are sent to the user as an adaptive card in a personal Teams chat.
+An admin can share the entire recommendation or share specific rows within the recommendation to another user by entering their name in the **Share to** textbox in the **Share this recommendation** pane.
 
-:::image type="content" source="media/share-to.png" alt-text="Enter a name in the Share to textbox.":::
+:::image type="content" source="media/power-platform-advisor/share-to.png" alt-text="Screenshot that shows where to enter a name in the Share to textbox.":::
 
-When an entire recommendation or multiple rows within the recommendation is shared, the sharing card provides a link to that recommendation for the admin.
-
-When a specific app or resource is shared, the sharing card provides a link to the recommendation and a link to that app in the maker portal.
+> [!NOTE]
+> - Shared recommendations are sent as an adaptive card in a personal Teams chat.
+> - When recommendations are shared, the sharing card provides a link to that recommendation for the admin.
+> - When an app or resource is shared, the sharing card provides a link to both the recommendation and the app in the maker portal.
 
 ### Advisor summary card in Microsoft Teams
 
-Once a week, Power Platform Advisor sends a summary card in Microsoft Teams highlighting the top two recommendations the admin should focus on for that week. This helps admins invest their time on the most important recommendations.
+Once per week, Power Platform Advisor sends a summary card in Teams highlighting the top two recommendations the admin should focus on for that week. These highlights help admins invest their time on the most important recommendations.
 
-To get the summary card, admins should install the **Power Apps** app in Microsoft Teams.
+To get the summary card, admins should install the **Power Apps** app in Teams.
 
 Once installed, admin can view the summary cards in their Teams chats.
 
@@ -100,44 +102,76 @@ During the public preview, the recommendations focus on security and operatio
 
 ### Apps without valid owners
 
-This type of recommendation lists apps in all the Managed Environments within your Power Platform tenant that don't have a valid owner. Currently this list contains apps that have been active in the last 90 days.
+This type of recommendation lists apps in all the Managed Environments within your Power Platform tenant that don't have a valid owner. Currently this list contains apps active in the last 90 days.
 
-It's important that resources have valid owners to make necessary changes or to support users when an issue arises. If an app doesn't have a valid owner, it may pose business continuity risk.
- 
-#### Supported actions
+> [!IMPORTANT]
+> Resources with valid owners can make necessary changes or support users when an issue arises. If an app doesn't have a valid owner, it might be a business continuity risk.
 
-- **Assign to new owner:** To assign an app to a new owner, select the app from the list of apps, and then select **Assign to new owner**. Enter the new owner's name in the text box below the app list and select **Assign**.
+#### Supported actions for apps without owners
 
-    Once assigned, you see a success message in the panel and the **Action State** column for that row displays **Completed**. You can't retake actions for completed rows.
+##### Assign to new owner
 
-    Note the following points:
+1. To assign an app to a new owner, select the app from the list.
+1. Select **Assign to new owner**.
+1. Enter the new owner's name in the text box near the app list and select **Assign**.
 
-    - New owner information isn't updated in the list.
+   Once assigned, you see a success message and the **Action State** column for that row displays **Completed**. You can't retake actions for completed rows.
 
-    - The app continues to be shown in the list until the next planned scan.
+> [!NOTE]
+>
+> - New owner information isn't updated in the list.
+> - The app is shown in the list until the next planned scan.
+> - New owners don't automatically get permissions to the environment or data sources used in the app. Admins must manually give owners permission.
 
-    - Assigning a new owner for the app doesn't automatically provide necessary permissions to the environment or the underlying data sources used in the app. Admins should separately provision the user with necessary permissions to this user.
+##### Promote co-owner to owner
 
-- **Promote co-owner to owner:** If there are multiple co-owners for an app, admins can use this action to promote one of the co-owners to an owner. To do so, select an app and select **Promote co-owner to owner**.
+With multiple co-owners of an app, admins can promote one of the co-owners to owner.
 
-    If you select multiple apps, Power Platform Advisor displays any shared co-owners for the selected apps. Selecting **Assign app** makes the selected co-owner the new owner for all the selected apps.
+1. Select an app and select **Promote co-owner to owner**.
 
-### Apps that haven't been used in last 60 days
-This recommendation lists apps in all Managed Environments within your Power Platform tenant that haven't been used in the last 60 days. It's important that unused and unnecessary resources be removed periodically, to reduce the risk of exposure of your resources and to maintain proper hygiene of the tenant.
+   If you select multiple apps, Power Platform Advisor displays any shared co-owners for the selected apps.
 
-#### Supported actions  
-- **Quarantine:** To quarantine unused apps, select one or more apps from the list and select **Quarantine**. Once you confirm the quarantine operation, the selected apps are quarantined. After apps have been quarantined, you can make them active again using the [Set-AppAsUnquarantined PowerShell command](../guidance/adoption/manage-default-environment.md#quarantine-apps).
+1. Select **Assign app** to promote the co-owner to owner for all selected apps.
 
-- **Delete:** To delete unwanted apps, select one or more apps from the list and select **Delete**. After you confirm the delete operation, the selected apps are deleted.
+### Unused apps in last 60 days
+
+This recommendation lists unused apps in all Managed Environments within your Power Platform tenant from the last 60 days.
+
+> [!IMPORTANT]
+> Unused or unnecessary resources should be removed periodically to:
+>
+> - Reduce the risk of exposing your resources.
+> - Maintain proper hygiene of the tenant.
+
+#### Supported actions for unused apps
+
+##### Quarantine
+
+Select one or more apps from the list and select **Quarantine**.
+
+Once you confirm the quarantine operation, the selected apps are quarantined. After apps are quarantined, you can make them active again using the [Set-AppAsUnquarantined PowerShell command](../guidance/adoption/manage-default-environment.md#quarantine-apps).
+
+##### Delete
+
+Select one or more apps from the list and select **Delete**.
+
+After you confirm the delete operation, the selected apps are deleted.
 
 ### Apps that are shared with everyone
 
-This type of recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used and are shared with **Everyone**. **Everyone** includes any guest users in your Microsoft Entra tenant.
+This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used and shared with **Everyone**, such as guest users in your Microsoft Entra tenant.
 
-It's important that only those apps that are required for the entire organization are shared with **Everyone**. Oversharing apps beyond the intended users poses a significant security risk as it increases the risk exposure of your assets and could lead to potential misuse. It's important to periodically review the apps that are overshared and adjust the sharing permissions.
+> [!IMPORTANT]
+>
+> - Only apps required for the entire organization are shared with **Everyone**.
+> - Oversharing apps can pose significant security risks by exposing assets or allowing potential misuse.
+> - Periodically review overshared apps and adjust permissions.
 
 ### Apps that aren't part of a solution
 
-This type of recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used, but not part of a solution. An app that's not part of a solution means that the app was developed in the same environment in which it's being used.
+This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used, but not part of a solution. An app that's not part of a solution means the app was both developed and used in the same environment.
 
-It's important that apps follow application lifecycle management (ALM) best practices. Not following a proper ALM process could result in a single change breaking the app for several users without an easy way to recover. The new pipelines feature makes it simple for citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
+> [!IMPORTANT]
+> Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM could cause a single change to break the app for several users with no easy way to recover.
+>
+> The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
