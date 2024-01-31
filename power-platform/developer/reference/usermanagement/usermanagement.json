@@ -16,7 +16,7 @@
         "tags": [
           "Users"
         ],
-        "summary": "Grants requesting tenant admin user the system admin role within Dataverse in the environment.",
+        "summary": "Grants the requesting tenant administrator user the system admin role within Dataverse in the environment.",
         "operationId": "ApplyAdminRole",
         "parameters": [
           {
@@ -53,18 +53,18 @@
         "properties": {
           "lastSyncTime": {
             "type": "string",
-            "description": "Last sync time for the org",
+            "description": "Last synchronization time for the environment",
             "nullable": true,
             "example": ""
           }
         },
-        "description": "Organization Sync report contains last sync information from kepler"
+        "description": "Organization Sync report contains last synchronization information from Kepler"
       }
     },
     "securitySchemes": {
       "oauth2": {
         "type": "oauth2",
-        "description": "Azure Active Directory OAuth2",
+        "description": "Microsoft Entra ID OAuth2",
         "flows": {
           "implicit": {
             "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
