@@ -201,7 +201,7 @@ Use the following methods to free up storage for each of the capacity types.
   
    2. With all three rows selected, choose **Group AND**.  
 
-      :::image type="content" source="media/free-storage-method6a.png" alt-text="Screenshot that shows where the Group AND option is located in the Define Search Criteria window." lightbox="media/free-storage-method6a.png" :::
+      :::image type="content" source="media/free-storage-method6a.png" alt-text="Screenshot that shows where the Group AND option is located in the Define Search Criteria window. Method 6." lightbox="media/free-storage-method6a.png" :::
   
 1. Choose **Next**.  
   
@@ -319,7 +319,7 @@ To monitor the status of audit delete jobs, see the next section.
   
    2. With all three rows selected, choose **Group AND**.  
 
-      :::image type="content" source="media/free-storage-method1b.png" alt-text="Screenshot that shows where the Group AND option is located in the Define Search Criteria window." lightbox="media/free-storage-method1b.png":::
+      :::image type="content" source="media/free-storage-method1b.png" alt-text="Screenshot that shows where the Group AND option is located in the Define Search Criteria window. Method 1." lightbox="media/free-storage-method1b.png":::
   
 1. Choose **Next**.  
   
@@ -417,7 +417,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
   
    1. With all three rows selected, choose **Group AND**.  
 
-      :::image type="content" source="media/free-storage-method8a.png" alt-text="Screenshot that shows where the Group AND option is located in the Define Search Criteria window." lightbox="media/free-storage-method8a.png":::
+      :::image type="content" source="media/free-storage-method8a.png" alt-text="Screenshot that shows where the Group AND option is located in the Define Search Criteria window. Method 8." lightbox="media/free-storage-method8a.png":::
 
 1. Choose **Next**.  
   
@@ -496,7 +496,7 @@ These tables store records for [activities](/power-apps/developer/data-platform/
 
 ### Method 13: Remove unrequired Activity Feeds records
 
-These tables store post related records for [Activity Feeds](/dynamics365/customerengagement/on-premises/basics/stay-up-date-with-customer-news-with-activity-feed?view=op-9-1) functionality. To free space, you can delete any Post records, which are no longer required.
+These tables store post related records for [Activity Feeds](/dynamics365/customerengagement/on-premises/basics/stay-up-date-with-customer-news-with-activity-feed) functionality. To free space, you can delete any Post records, which are no longer required.
 
 ### Method 14: Modify Item Level Monitoring Settings
 
