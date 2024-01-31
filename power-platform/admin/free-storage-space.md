@@ -11,6 +11,7 @@ ms.reviewer: jimholtz
 contributors:
   - DanaMartens
   - ProfessorKendrick
+  - IanCeicys
 search.audienceType: 
   - admin
 ---
@@ -171,6 +172,9 @@ Use the following methods to free up storage for each of the capacity types.
 1. In the Power Platform admin center, select an environment.
 
 2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
+
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 6.](media/free-storage-method9a-1.png "Free up storage method 6")  
   
 3. Choose **Next**.  
   
@@ -273,6 +277,9 @@ To monitor the status of audit delete jobs, see the next section.
 
 2. Select **Settings** > **Data management** > **Bulk deletion**.
 
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 8.](media/free-storage-method8a-1.png "Free up storage method 8")  
+
 3. Select the system job name to open details about your delete job.
 
 
@@ -286,6 +293,9 @@ To monitor the status of audit delete jobs, see the next section.
 1. In the Power Platform admin center, select an environment.
 
 2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
+
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 9.](media/free-storage-method9a-1.png "Free up storage method 9")  
   
 3. Choose **Next**.  
   
@@ -364,6 +374,9 @@ To monitor the status of audit delete jobs, see the next section.
 1.	In the Power Platform admin center, select an environment.
 
 2.	Select **Settings** > **Data management** > **Duplicate Detection Jobs**.  
+
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 7.](media/free-storage-method7a-1.png "Free up storage method 7")  
   
 3. Select the duplicate detection job instances you want to delete and then choose **Delete** (X).  
   
@@ -382,6 +395,9 @@ To monitor the status of audit delete jobs, see the next section.
 1.	In the Power Platform admin center, select an environment.
 
 2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
+
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 8.](media/free-storage-method8a-1.png "Free up storage method 8")  
   
 3. Choose **Next**.  
   
@@ -429,6 +445,9 @@ To monitor the status of audit delete jobs, see the next section.
 1. In the Power Platform admin center, select an environment.
 
 2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
+
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 9.](media/free-storage-method9a-1.png "Free up storage method 9")  
   
 3. Choose **Next**.  
   
