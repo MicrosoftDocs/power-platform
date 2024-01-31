@@ -54,7 +54,7 @@ This section provides a summary of key lifecycle operations that will be allowed
 |Restore     | Teams environments only support self-restore. Only point-in-time restores to the same environment will be possible. Note: if the environment has been upgraded, the point-in-time restore will only be available starting from the moment it was upgraded. | Yes        |
 |Copy     | Not available by default for Dataverse for Teams environments.        | No        |
 |Create     | Only through Microsoft Teams. Note: these Dataverse for Teams environments will be limited to a 1:1 mapping to the Microsoft Teams team it was created in and bound to the Microsoft 365 group associated with the team.        | No        |
-|Delete     | The environment can be deleted by the team owner. Note: the environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
+|Delete     | The environment can be deleted by the team owner. The environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
 |Reset     | Not available by default for Dataverse for Teams environments.        | No        |
 |Upgrade     | Unlocks all the functionality of Dataverse services for the environment.         | Yes        | 
 
