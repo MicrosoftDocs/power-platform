@@ -83,7 +83,7 @@ To create a new policy, complete the following steps:
 :::image type="content" source="../media/power-automate-licensing/auto-claim-policy.png" alt-text="Auto-claim policy configuration for Power AUtomate.":::
  
 
-### View license assignment in auto-claim policy report
+## View license assignment in auto-claim policy report
 The auto-claim policy report shows all licenses assignment from the auto-claim policy in the last 90 days.
 
 To view the auto-claim policy report:
@@ -91,13 +91,13 @@ To view the auto-claim policy report:
 1.	Select **View report**. The Auto-claim policy report page lists all licenses assigned from each policy in the last 90 days. By default, the page shows the past 90 days.
 1.	To change the time period shown, select the **Past 30 days** drop-down list. You can view reports for the past 1, 7, 30, and 90 days.
 
-### Limitations
+## Limitations
 This section presents all the limitation of the auto-claim policy for Power Automate.
 
-#### Auto-claim policy may take up to two hours to activate after creation
+### Auto-claim policy may take up to two hours to activate after creation
 When the Power Automate license auto-claim policy is created, it may take up to two hours before activation for the configured policy to be propagated across the relevant Microsoft services.
 
-#### Successful license auto-claim not immediately reflected in Power Automate Portal
+### Successful license auto-claim not immediately reflected in Power Automate Portal
 When a Power Automate user license is successfully auto-claimed, it may take some minutes to be reflected in in the Power Automate Portal. During this time, Power Automate Portal may still indicate that the user does not have the auto-claimed license. However, this does not affect the premium capability that the user have access to.
 
 
