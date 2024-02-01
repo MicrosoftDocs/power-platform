@@ -11,29 +11,34 @@ search.audienceType: admin
 ms.custom: "admin-security"
 ---
 
-## vNet support for Power Platform overview
+# vNet support for Power Platform overview
 
-Enterprises often want to integrate Dataverse and Power Platform with their own services. One of Enterprises' key integration scenarios is having Dataverse or Power Platform components call out to resources that the Enterprises own. These resources could either be Azure-hosted or on-premises. Often, Enterprises use plug-ins or connectors to make such outbound calls (for example: making a call from a Dataverse plug in to an Enterprises Snowflake instance hosted on Azure).
+vNet (virtual network) support in Power Platform integrates Power Platform services onboarded to [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview), which supports vNet for outbound traffic. Therefore, you don't need to route outbound traffic from Power Platform services to the internet.
 
-Today, since all Dataverse and Power Platform services run on public and sovereign Azure clouds, we require these Enterprise resources to be accessible, at the very least, from a list of Azure IP ranges or Service tags which describe public IP addresses. All such integrations happen on the public internet infrastructure.
+You can integrate Dataverse and Power Platform with your own services. For example, Dataverse or Power Platform components can call resources owned by an enterprise app. These resources can be either Azure-hosted or on-premises. You can use plug-ins or connectors to make outbound calls. For example, a call from a Dataverse plug-in to a Snowflake instance hosted on Azure.
 
-Some Enterprises want their resources to be entirely encapsulated within a private network and still want to be able to integrate with cloud services. Azure provides the ability to protect Azure services within an Enterprises virtual network (vNet) via Private Endpoints ([<u>What is a private endpoint? \| Microsoft Docs</u>](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview)). Enterprises are also able to bring their on-premises resources to the virtual network via [<u>Express Route</u>](https://docs.microsoft.com/en-us/azure/expressroute/). Enterprises are then able to protect and monitor the entire virtual network.
+> [!IMPORTANT]
+> Enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. These integrations happen on the public internet infrastructure.
 
-By doing this, Power Platform components currently lose the ability to connect to these protected resources as they are no longer accessible from the public internet. Only resources from within the virtual network can access these resources.
+## Private networks
 
-vNet support for Power Platform using [Subnet delegation](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-delegation-overview) will enable Enterprises to access their resources within their virtual networks from the Power Platform. By delegating, Subnet to Power Platform, you are asking Power Platform to run the vNet supported services in your delegated subnet at runtime. Since the services are running in your delegated subnet, you have full control over the egress traffic from Power Platform in your network. The egress traffic is subjected to network policies applied by your network administrator.
+Azure can protect Azure services within a virtual network (vNet) through private endpoints. [What's a private endpoint?](/azure/private-link/private-endpoint-overview). You can bring your on-premises resources to the virtual network through [Express Route](/azure/expressroute/), which allows you to protect and monitor the entire virtual network.
 
-![A diagram of a platform Description automatically generated](media/image1.png)
+With a vNet, Power Platform components lose the ability to connect to these protected resources, since they're no longer accessible from the public internet. Only resources from within the virtual network can access these resources.
 
-## Introduction to vNet support for Power Platform
+vNet support for Power Platform uses [subnet delegation](/azure/virtual-network/subnet-delegation-overview) to enable access to resources at runtime. You have full control over the egress traffic from Power Platform in your network. The traffic is subjected to network policies applied by your network administrator.
 
-vNet support in Power Platform will allow you to integrate Power Platform services onboarded on [Azure subnet delegation](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-delegation-overview) with your services within your vNet (virtual network) without routing the outbound traffic from Power Platform services to internet. Power Platform leverages [Azure subnet delegation](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-delegation-overview) to support vNet for outbound traffic. By configuring the vNet in Power Platform, you will be able to get all the control and [benefits](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-delegation-overview#advantages-of-subnet-delegation) that Azure subnet delegation provides. With vNet support, you will be able to solve following key problems.
+:::image type="content" source="media/vnet-support/vnet-support-traffic.png.png" alt-text="Screenshot that shows how vNet works in a network with resources.":::
 
-- You don't have to expose private end protected resources within your vNet to internet to allow Power Platform services to connect to these protected resources, thereby protecting your data.
+## vNet support for Power Platform benefits
 
-- You don't have to allow-list sets of Power Platform IP's ranges or service tags to allow Power Platform services to connect to resources within your vNet, thereby protecting the resources from unauthorized access.
+ With vNet support, you get all the [benefits](/azure/virtual-network/subnet-delegation-overview#advantages-of-subnet-delegation) that Azure subnet delegation provides.
 
-We will be supporting following scenarios initially with vNet support in Power Platform
+- **Data protection**: vNet allows Power Platform services to connect to your private and protected resources without exposing them to the internet.
+
+- **No unauthorized access**: vNet connects with your resources without needing Power Platform IP ranges or service tags in the connection.
+
+## Scenarios using vNet support in Power Platform
 
 You can use secured private outbound connectivity from custom 3rd party Dataverse/ISV plug-ins to enhance the security of data integration with external data sources within your secured private network from your Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
 
@@ -113,7 +118,7 @@ Refer this document [Setup and Configuration of vNet Support for Power Platform 
 
 1. Difference between vNet Data Gateway vs Azure vNet support in Power Platform
 
-   vNet data gateway is a managed gateway that allows you to access Azure/Power Platform services from within your virtual network without the need of an on-premises data gateway. You don't need to set up any On-Premises vNet Data Gateway. The managed gateway configuration is available [here](https://learn.microsoft.com/en-us/data-integration/vnet/data-gateway-architecture#hardware)
+   vNet data gateway is a managed gateway that allows you to access Azure/Power Platform services from within your virtual network without the need of an on-premises data gateway. You don't need to set up any On-Premises vNet Data Gateway. The managed gateway configuration is available [here](/data-integration/vnet/data-gateway-architecture#hardware)
 
    Azure vNet support in Power Platform uses Azure subnet delegation where you delegate subnet(s) to Power Platform environment (service) and subnet(s) are going to be used by workloads within the environment.
 
@@ -125,7 +130,7 @@ Refer this document [Setup and Configuration of vNet Support for Power Platform 
 
    vNet support in Power Platform ensures that one customer cannot access the vNet/Subnet of other customers by having following measures in place:
 
-   1. vNet support in Power Platform uses [Azure Subnet delegation](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-delegation-overview).
+   1. vNet support in Power Platform uses [Azure Subnet delegation](/azure/virtual-network/subnet-delegation-overview).
 
    1. Every Power Platform environment is linked to a particular vNet/subnet. Only calls from that environment are allowed to access that vNet.
 
@@ -137,7 +142,7 @@ Refer this document [Setup and Configuration of vNet Support for Power Platform 
 
 1. How can Power Platform Environment in one region connect to resources hosted in another region?
 
-   vNet linked to Power Platform environment must reside in the [Power Platform environment's regions](https://learn.microsoft.com/en-us/power-platform/admin/regions-overview#what-regions-are-available). If an existing vNet is in other region, one will need to create a new vNet in environment region and then use [vNet peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview) between vNet across regions.
+   vNet linked to Power Platform environment must reside in the [Power Platform environment's regions](/power-platform/admin/regions-overview#what-regions-are-available). If an existing vNet is in other region, one will need to create a new vNet in environment region and then use [vNet peering](/azure/virtual-network/virtual-network-peering-overview) between vNet across regions.
 
 1. Will I be able to monitor egress traffic from these delegated subnets?  
     Yes, you can use NSGs (National Security Group) and /or firewalls to monitor egress traffic from delegated subnets.
@@ -146,7 +151,7 @@ Refer this document [Setup and Configuration of vNet Support for Power Platform 
     We currently request at least /24 CIDR (Classless Inter-domain Routing) (255 IPs) in the subnet that will be delegated to Power Platform. If you are planning to delegate the same subnet to multiple environments, then you may need to provision more IPs within that subnet.
 
 1. Will I be able to make internet bound calls from plugins once my environment is subnet delegated?  
-    You will be able to make internet bound calls from plugins **<u>only</u>** if the subnet is configured with a [NAT Gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview)
+    You will be able to make internet bound calls from plugins **<u>only</u>** if the subnet is configured with a [NAT Gateway](/azure/nat-gateway/nat-overview)
 
 1. Can I use vNet Data Gateway for SQL connector and Custom Connector?
 

@@ -17,7 +17,7 @@ Enterprises often want to integrate Dataverse and Power Platform with their own 
 
 Today, since all Dataverse and Power Platform services run on public and sovereign Azure clouds, we require these Enterprise resources to be accessible, at the very least, from a list of Azure IP ranges or Service tags which describe public IP addresses. All such integrations happen on the public internet infrastructure.
 
-Some Enterprises want their resources to be entirely encapsulated within a private network and still want to be able to integrate with cloud services. Azure provides the ability to protect Azure services within a customer's virtual network (vNet) via Private Endpoints ([<u>What is a private endpoint? \| Microsoft Docs</u>](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview)). Customers are also able to bring their on-premises resources to the virtual network via [<u>Express Route</u>](https://docs.microsoft.com/en-us/azure/expressroute/). Customers are then able to protect and monitor the entire virtual network
+Some Enterprises want their resources to be entirely encapsulated within a private network and still want to be able to integrate with cloud services. Azure provides the ability to protect Azure services within a customer's virtual network (vNet) via Private Endpoints [What is a private endpoint?](/azure/private-link/private-endpoint-overview). Customers are also able to bring their on-premises resources to the virtual network via [Express Route](/azure/expressroute/). Customers are then able to protect and monitor the entire virtual network.
 
 By doing this, Power Platform components currently lose the ability to connect to these protected resources as they are no longer accessible from the public internet. Only resources from within the virtual network can access these resources.
 
@@ -39,11 +39,11 @@ Pre-requisites
 
 - An Azure subscription in which you have permissions to create a virtual network, subnet, and the Enterprise Policy resources. 
 
-- Download the PowerShell Scripts from this location ([<u>PowerApps-Samples/powershell/enterprisePolicies at master · microsoft/PowerApps-Samples · GitHub</u>](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies))
+- Download the PowerShell Scripts from this location [PowerApps-Samples/powershell/enterprisePolicies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
 
 - Privileges: The user must be in network administrator role to configure step \#1 to \#4 below.
 
-- Install PowerShell MSI. More information: [Install PowerShell on Windows, Linux, and macOS - PowerShell \| Microsoft Learn](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4)
+- Install PowerShell MSI. More information: [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell)
 
 ## Setup Steps
 
@@ -79,7 +79,7 @@ Users in Azure Network Administrator role need to setup virtual network and have
 
 *Note\*: Power Platform does not support CENTRAL US. Supported Power Platform regions are documented here [PowerApps-Samples/powershell/enterprisePolicies/SubnetInjection/ValidateVnetLocationForEnterprisePolicy.ps1 at master · microsoft/PowerApps-Samples (github.com)](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/SubnetInjection/ValidateVnetLocationForEnterprisePolicy.ps1)*
 
-1. Configure vNet, Subnets by referring to this article [Add or remove a subnet delegation in an Azure virtual network \| Microsoft Learn](https://learn.microsoft.com/en-us/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal)
+1. Configure vNet, Subnets by referring to this article [Add or remove a subnet delegation in an Azure virtual network \| Microsoft Learn](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal)
 
 1. **Delegate the subnet to the Power Platform enterprise policies:** Once you have provisioned two vNet and two subnets one in Primary and another in failover region in step \#A above, having at least /24 CIDR IPs in each primary and secondary subnet,
 
@@ -89,7 +89,7 @@ Users in Azure Network Administrator role need to setup virtual network and have
 
 *We currently request at least /24 [CIDR](https://datatracker.ietf.org/doc/html/rfc4632) (Classless Inter-domain Routing) (251 IP's + 5 IP's reserved) in the subnet that will be delegated to Power Platform. If you are planning to delegate the same subnet to multiple environments, then you may need to provision more Ips within that subnet.*
 
-*If you want to allow internet access within Power Platform containers then you will have to configure* [Azure NAT Gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview) *for delegated subnets.*
+*If you want to allow internet access within Power Platform containers then you will have to configure* [Azure NAT Gateway](/azure/nat-gateway/nat-overview) *for delegated subnets.*
 
 Before you execute step \#3 below, review the number of IP's allocated to each subnet to cater the load of the environment(s). Both primary and failover subnets must have same number of available IP's.
 
@@ -99,7 +99,7 @@ In this step, you will create enterprise policies using the vNet and Subnet prov
 
 ### Step 4: Grant the Power Platform admin privilege to read the enterprise policy
 
-In this step, you will be granting read access to the user in Power Platform Administrator role using this [article](https://learn.microsoft.com/en-us/power-platform/admin/customer-managed-key#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) under the section "**Grant the Power Platform admin privilege to read enterprise policy"**.
+In this step, you will be granting read access to the user in Power Platform Administrator role using this [article](/power-platform/admin/customer-managed-key#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) under the section "**Grant the Power Platform admin privilege to read enterprise policy"**.
 
 ### Step 5: Power Platform Configurations
 
@@ -130,14 +130,14 @@ Following table shows the currents status of services onboarded to Azure Subnet 
 | Area       | Power Platform Services                                                   | vNet support                  |
 |------------|---------------------------------------------------------------------------|-------------------------------|
 | Dataverse  | Dataverse 3P plug-ins                                                     | Public Preview is rolling out |
-| Connectors | [Azure SQL](https://learn.microsoft.com/en-us/connectors/sql/)            | Private Preview               |
-|            | [Azure Queue](https://learn.microsoft.com/en-us/connectors/azurequeues/)  | Private Preview               |
-|            | [Azure Key Vault](https://learn.microsoft.com/en-us/connectors/keyvault/) | Private Preview               |
+| Connectors | [Azure SQL](/connectors/sql/)            | Private Preview               |
+|            | [Azure Queue](/connectors/azurequeues/)  | Private Preview               |
+|            | [Azure Key Vault](/connectors/keyvault/) | Private Preview               |
 
 ### See also
 
-- Deploying enterprise policies: [Microsoft.PowerPlatform/enterprisePolicies - Bicep, ARM template & Terraform AzAPI reference \| Microsoft Learn](https://learn.microsoft.com/en-us/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
+- Deploying enterprise policies: [Microsoft.PowerPlatform/enterprisePolicies - Bicep, ARM template & Terraform AzAPI reference \| Microsoft Learn](/en-us/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
 
-- [Quickstart: Use the Azure portal to create a virtual network - Azure Virtual Network \| Microsoft Learn](https://learn.microsoft.com/en-us/azure/virtual-network/quick-create-portal)
+- [Quickstart: Use the Azure portal to create a virtual network - Azure Virtual Network \| Microsoft Learn](/azure/virtual-network/quick-create-portal)
 
-- [Use plug-ins to extend business processes (Microsoft Dataverse) - Power Apps \| Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins)
+- [Use plug-ins to extend business processes (Microsoft Dataverse) - Power Apps \| Microsoft Learn](/power-apps/developer/data-platform/plug-ins)
