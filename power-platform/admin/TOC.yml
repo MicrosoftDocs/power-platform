@@ -458,6 +458,10 @@
               href: about-lockbox.md
             - name: Connecting and authenticating to data sources
               href: security/connect-data-sources.md
+            - name: vNet support overview
+              href: vnet-support-overview.md
+            - name: Setup and configure vNet support
+              href: vnet-support-setup-configure.md
             - name: Security and governance considerations
               href: governance-considerations.md
             - name: Configure security for Dataverse
