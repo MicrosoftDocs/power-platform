@@ -20,9 +20,7 @@ Microsoft Dataverse auditing is supported on all custom and most customizable ta
 ## Prerequisites
 
 - An Azure subscription with admin permissions to create resource groups, workspace, and other Azure assets. More information: [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace](/power-apps/maker/data-platform/azure-synapse-link-synapse#prerequisites)
-- Dataverse requirements:
-  - You must have the Dataverse system administrator security role.
-  - The environment must be a Managed Environment. More information: [Enable Managed Environments](managed-environment-enable.md).
+- You must have the Dataverse system administrator security role.
 - Power BI.
 
 ## Tasks to complete
