@@ -71,6 +71,7 @@ To create a new policy, complete the following steps:
 1.	On the **Name this auto-claim policy** page, enter a name for the policy and click **Next**.
 1.	On the **Set an auto-claim app and product** page, select the following in the dropdown list based on the license type: 
 1.	On the Set an auto-claim app and product page, select the following in the dropdown list:
+
 | License Type | Auto-claim app | Product assigned |
 |--------------|----------------|------------------|
 | Power Automate per user plan | Power Automate per User Plan | Power Automate per user plan |
