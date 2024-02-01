@@ -1,7 +1,7 @@
 ---
-title: "Important changes (deprecations) coming in Power Apps and Power Automate"
-description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 01/08/2024
+title: "Important changes (deprecations) coming in Power Platform"
+description: Important changes (deprecations) coming in Power Platform 
+ms.date: 06/29/2023
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -13,7 +13,7 @@ ms.author: kvivek
 ms.reviewer: angieandrews
 ---
 
-# Important changes (deprecations) coming in Power Apps and Power Automate
+# Important changes (deprecations) coming in Power Platform
 
 The announcements and deprecations described in this article apply to Power Apps and Power Automate. Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
 
@@ -42,7 +42,7 @@ Admins can turn the **Switch to classic** option back on in the Power Platform a
 
 ## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
 
-Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
+Effective April 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
 
 ## Deprecating support of unregistered MSA and External Microsoft Entra users in Dataverse
 
