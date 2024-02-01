@@ -5,7 +5,7 @@ author: swatimadhukargit
 ms.subservice: alm
 ms.author: swatim
 ms.custom: ""
-ms.date: 11/08/2023
+ms.date: 02/01/2024
 ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
@@ -42,11 +42,22 @@ This feature can be enabled or disabled from the **Features** area of the enviro
 
 ## Known limitations
 
-- Sales Accelerator
-  - Enabling Sales accelerator or modifying settings in an existing environment that have it enabled fail.
-  - Enabling Leads Data hygiene  
+These features have known limitations and might not work as expected in an environment where block unmanaged customizations is enabled. Using these features can result in this error: “This environment doesn't allow unmanaged customizations. This was a choice made by your admin, and certain actions won't be available or will be view only."
 
-<!-- Back to PM to add more detail in the resource sent for these -->
+If you must use one of the below apps or features in an environment where block unmanaged customizations is enabled, we recommend you disable the setting during the preview.
+
+| App or feature  | Limitation  |
+|---------|---------|
+| Power Automate desktop flows     |  Hosted machine groups don't work.       |
+| Dynamics 365 Resource Scheduling Optimization    |   Install or upgrade don't work.       |
+|Automatic record creation     |  Activation, deactivation, and editing of automatic record creation doesn't work.        |
+| Legacy workflows     |  Enable and disable of legacy workflows doesn't work.       |
+|Field Service     |  Enabling or adjusting the enhanced auto-numbering doesn't work. However, default auto-numbering continues to work.   |
+|Connected Field Service   | Install doesn't work.         |
+|Field Service Mobile     |  Install of geofencing solution doesn't work. Update doesn't work when relationships created during initial install are deleted.        |
+|Resource Scheduling      | Enable of scheduling table and selection option to auto create relationships doesn't work.        |
+|Omnichannel voice settings     |  Updating or setting up omnichannel voice settings in CSAC doesn't work.       |
+|Sales Accelerator     |  Enabling Sales Accelerator or modifying settings, enabling leads data hygiene, creating or editing sequences, configuring work assignment, creating or editing segments, don't work.        |
 
 ## See also
 
