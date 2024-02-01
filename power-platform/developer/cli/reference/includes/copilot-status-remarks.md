@@ -1,8 +1,8 @@
 <!-- 
-Instructions: Remove comments and this line. Add any general remarks for this command group below.
+Instructions: Remove comments and this line. Add appropriate remarks below
 
 ### Remarks
 
-Add content here...
+Add remarks here...
 
 -->

@@ -1,6 +1,5 @@
 ### Example
 
-
 This command lists all AI Builder models.
 
 ```PowerShell
