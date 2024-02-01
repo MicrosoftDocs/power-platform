@@ -3,7 +3,7 @@ title: "Try Power Platform apps for free | MicrosoftDocs"
 description: Try Power Platform apps (Power Apps, Power Automate, Power BI, and Power Pages) for free before you buy  
 author: sericks007
 ms.topic: conceptual
-ms.date: 06/20/2023
+ms.date: 02/01/2024
 ms.author: sericks
 
 ---
