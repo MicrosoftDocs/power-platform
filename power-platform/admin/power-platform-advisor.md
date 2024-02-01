@@ -14,7 +14,7 @@ search.audienceType:
 
 # Use Power Platform Advisor (preview)
 
-[This article is prerelease documentation and is subject to change.]
+[This article is prerelease document and is subject to change.]
 
 Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health.
 
@@ -81,6 +81,8 @@ All recommendations in Power Platform Advisor can be shared in Microsoft Teams w
 
 An admin can share the entire recommendation or share specific rows within the recommendation to another user by entering their name in the **Share to** textbox in the **Share this recommendation** pane.
 
+When an entire recommendation or multiple rows in the recommendation is shared, the sharing card provides a link to that recommendation for the admin.
+
 :::image type="content" source="media/power-platform-advisor/share-to.png" alt-text="Screenshot that shows where to enter a name in the Share to textbox.":::
 
 > [!NOTE]
@@ -94,7 +96,7 @@ Once per week, Power Platform Advisor sends a summary card in Teams highlighting
 
 To get the summary card, admins should install the **Power Apps** app in Teams.
 
-Once installed, admin can view the summary cards in their Teams chats.
+Once installed, admins can view the summary cards in their Teams chats.
 
 ## Categories of recommendations
 
@@ -115,7 +117,7 @@ This type of recommendation lists apps in all the Managed Environments within yo
 1. Select **Assign to new owner**.
 1. Enter the new owner's name in the text box near the app list and select **Assign**.
 
-   Once assigned, you see a success message and the **Action State** column for that row displays **Completed**. You can't retake actions for completed rows.
+Once assigned, you see a success message and the **Action State** column for that row displays **Completed**. You can't retake actions for completed rows.
 
 > [!NOTE]
 >
@@ -133,9 +135,13 @@ With multiple co-owners of an app, admins can promote one of the co-owners to ow
 
 1. Select **Assign app** to promote the co-owner to owner for all selected apps.
 
-### Unused apps in last 60 days
+### Unused apps in the last 60 days
 
 This recommendation lists unused apps in all Managed Environments within your Power Platform tenant from the last 60 days.
+
+### Apps that aren't used in last 60 days
+
+This recommendation lists apps in all Managed Environments within your Power Platform tenant that aren't used in the last 60 days. It's important that unused and unnecessary resources be removed periodically, to reduce the risk of exposure of your resources and to maintain proper hygiene of the tenant.
 
 > [!IMPORTANT]
 > Unused or unnecessary resources should be removed periodically to:
@@ -157,7 +163,7 @@ Select one or more apps from the list and select **Delete**.
 
 After you confirm the delete operation, the selected apps are deleted.
 
-### Apps that are shared with everyone
+### Apps shared with everyone
 
 This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used and shared with **Everyone**, such as guest users in your Microsoft Entra tenant.
 
