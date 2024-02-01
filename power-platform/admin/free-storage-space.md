@@ -53,24 +53,24 @@ Use the following methods to free up storage for each of the capacity types.
 | Storage | Affected Table(s) |  Method |
 |---------|-------------------|---------|
 |**Database**     |         | |
-|     | WorkflowLogBase | **[Method 1](#method-1-delete-bulk-email-and-workflow-instances-using-a-bulk-deletion-job)**: Delete bulk email and workflow instances using a bulk deletion job        | 
-|     | AsyncOperationBase | **[Method 2](#method-2-evaluate-and-delete-suspended-workflows)**: Evaluate and delete suspended workflows        | 
-|     | DuplicateRecordBase| **[Method 7](#method-7-remove-bulk-duplicate-detection-jobs-and-associated-copies-of-duplicate-records)**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
-|     | ImportJobBase | **[Method 8](#method-8-delete-bulk-import-instances-using-a-bulk-deletion-job)**: Delete bulk import instances using a bulk deletion job        | 
-|     | BulkDeleteOperationBase| **[Method 9](#method-9-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**: Delete bulk deletion job instances using a bulk deletion job        | 
+|     | **WorkflowLogBase** | **[Method 1](#method-1-delete-bulk-email-and-workflow-instances-using-a-bulk-deletion-job)**: Delete bulk email and workflow instances using a bulk deletion job        | 
+|     | **AsyncOperationBase** | **[Method 2](#method-2-evaluate-and-delete-suspended-workflows)**: Evaluate and delete suspended workflows        | 
+|     | **DuplicateRecordBase**| **[Method 7](#method-7-remove-bulk-duplicate-detection-jobs-and-associated-copies-of-duplicate-records)**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
+|     | **ImportJobBase** | **[Method 8](#method-8-delete-bulk-import-instances-using-a-bulk-deletion-job)**: Delete bulk import instances using a bulk deletion job        | 
+|     | **BulkDeleteOperationBase**| **[Method 9](#method-9-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**: Delete bulk deletion job instances using a bulk deletion job        | 
 |     | various | **[Method 11](#method-11-remove-unrequired-tables-and-columns-from-dataverse-search)**: Remove unrequired tables and columns from Dataverse search        | 
-|     | ActivityPointerBase, EmailBase, ActivityPartyBase, and other activity tables | **[Method 12](#method-12-remove-unrequired-data-from-activity-tables)**: Remove unrequired data from activity tables |
-|     | Postbase, PostCommentBase, PostFollowBase, PostLikeBase, PostRegardingBase, PostRoleBase  | **[Method 13](#method-13-remove-unrequired-activity-feeds-records)**: Remove unrequired Activity Feeds records |
-|     | ExchangeSyncIdMappingBase  | **[Method 14](#method-14-modify-item-level-monitoring-settings)**: Modify Item Level Monitoring Settings |
-|     | TraceLogBase  | **[Method 15](#method-15-remove-unrequired-alerts-trace-logs)**: Remove unrequired Trace (Alert) records |
+|     | **ActivityPointerBase**, **EmailBase**, **ActivityPartyBase**, and other activity tables | **[Method 12](#method-12-remove-unrequired-data-from-activity-tables)**: Remove unrequired data from activity tables |
+|     | **Postbase**, **PostCommentBase**, **PostFollowBase**, **PostLikeBase**, **PostRegardingBase**, **PostRoleBase**  | **[Method 13](#method-13-remove-unrequired-activity-feeds-records)**: Remove unrequired Activity Feeds records |
+|     | **ExchangeSyncIdMappingBase**  | **[Method 14](#method-14-modify-item-level-monitoring-settings)**: Modify Item Level Monitoring Settings |
+|     | **TraceLogBase**  | **[Method 15](#method-15-remove-unrequired-alerts-trace-logs)**: Remove unrequired Trace (Alert) records |
 |**File** |                   |         |
-|         | Attachment        | **[Method 3](#method-3-remove-email-attachments-using-advanced-find)**: Remove email attachments using Advanced Find |
-|     | Attachment | **[Method 4](#method-4-remove-email-messages-with-attachments-using-a-bulk-deletion-job)**: Remove email messages with attachments using a bulk deletion job        | 
-|     | Attachment  | **[Method 5](#method-5-remove-notes-with-attachments-using-advanced-find)**: Remove notes with attachments using Advanced Find        | 
-|     | Attachment  | **[Method 6](#method-6-remove-notes-with-attachments-using-a-bulk-deletion-job)**: Remove notes with attachments using a bulk deletion job        | 
+|         | **Attachment**        | **[Method 3](#method-3-remove-email-attachments-using-advanced-find)**: Remove email attachments using Advanced Find |
+|     | **Attachment** | **[Method 4](#method-4-remove-email-messages-with-attachments-using-a-bulk-deletion-job)**: Remove email messages with attachments using a bulk deletion job        | 
+|     | **Attachment**  | **[Method 5](#method-5-remove-notes-with-attachments-using-advanced-find)**: Remove notes with attachments using Advanced Find        | 
+|     | **Attachment**  | **[Method 6](#method-6-remove-notes-with-attachments-using-a-bulk-deletion-job)**: Remove notes with attachments using a bulk deletion job        | 
 |**Log**     |         | |
-|     | AuditBase | **[Method 10](#method-10-delete-audit-logs---legacy-process)**: Delete audit logs        | 
-|     | PluginTraceLogBase | Delete plug-in trace logs using a [bulk deletion job](delete-bulk-records.md) | 
+|     | **AuditBase** | **[Method 10](#method-10-delete-audit-logs---legacy-process)**: Delete audit logs        | 
+|     | **PluginTraceLogBase** | Delete plug-in trace logs using a [bulk deletion job](delete-bulk-records.md) | 
 
 ## Reduce file storage
 
