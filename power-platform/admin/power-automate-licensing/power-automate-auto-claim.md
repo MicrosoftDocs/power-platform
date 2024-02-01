@@ -24,23 +24,23 @@ When the auto-claim policy is configured, the following scenarios will automatic
 
 1. Power Automate per user plan
 In the Power Automate Portal:
-o	User triggers a premium cloud flow 
-o	User saves a premium cloud flow
-o	User turns on a premium cloud flow
-o	User requests the Power Automate premium license (roadmap)
+- User triggers a premium cloud flow
+- User saves a premium cloud flow
+- User turns on a premium cloud flow
+- User requests the Power Automate premium license (roadmap)
 
 1. Power Automate premium	
 In addition to the scenarios listed for the Power Automate per user plan,
 
 In the Power Automate Portal:
-o	User triggers a premium cloud flow with Attended RPA
-o	User saves a premium cloud flow with Attended RPA
-o	User turns on a premium cloud flow with Attended RPA
-o	User requests the Power Automate premium license (roadmap)
+- User triggers a premium cloud flow with Attended RPA
+- User saves a premium cloud flow with Attended RPA
+- User turns on a premium cloud flow with Attended RPA
+- User requests the Power Automate premium license (roadmap)
 
 In the Power Automate for Desktop application
-o	User selects ‘Go Premium’ (roadmap)
-o	User has a self-assisted premium trial and is actively using RPA capabilities (roadmap)
+- User selects ‘Go Premium’ (roadmap)
+- User has a self-assisted premium trial and is actively using RPA capabilities (roadmap)
 
 ## Create an auto-claim policy for Power Automate licenses
 Use the following steps to set up an auto-claim policy for Power Automate.
@@ -65,19 +65,19 @@ The [auto-claim policy](https://admin.microsoft.com/adminportal/home?#/licenses/
 
 To create a new policy, complete the following steps:
 1.	In the Microsoft 365 admin center, click **Billing** > **Licenses**.
-1.	Click the [**Auto-claim policy**](https://admin.microsoft.com/adminportal/home?#/licenses/autoclaimpolicies) tab.
-1.	Click **Add a policy**.
-1.	On the **Name this auto-claim policy** page, enter a name for the policy and click **Next**.
-1.	On the **Set an auto-claim app and product** page, select the following in the dropdown list based on the license type: 
-1.	On the Set an auto-claim app and product page, select the following in the dropdown list:
+2.	Click the [**Auto-claim policy**](https://admin.microsoft.com/adminportal/home?#/licenses/autoclaimpolicies) tab.
+3.	Click **Add a policy**.
+4.	On the **Name this auto-claim policy** page, enter a name for the policy and click **Next**.
+5.	On the **Set an auto-claim app and product** page, select the following in the dropdown list based on the license type: 
+6.	On the Set an auto-claim app and product page, select the following in the dropdown list:
 
 | License Type | Auto-claim app | Product assigned |
 |--------------|----------------|------------------|
 | Power Automate per user plan | Power Automate per User Plan | Power Automate per user plan |
 | Power Automate premium | Power Automate RPA Attended | Power Automate Premium |
 
-1.	On the **Select apps** page, select or clear the checkboxes for the apps to include or exclude with the license.	Click **Next**.
-1.	On the **Review and finish** page, verify the new policy information, make any necessary changes, and click **Create policy**.
+7.	On the **Select apps** page, select or clear the checkboxes for the apps to include or exclude with the license.	Click **Next**.
+8.	On the **Review and finish** page, verify the new policy information, make any necessary changes, and click **Create policy**.
 
 :::image type="content" source="../media/power-automate-licensing/auto-claim-policy.png" alt-text="Auto-claim policy configuration for Power AUtomate.":::
  
