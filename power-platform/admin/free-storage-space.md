@@ -1,7 +1,7 @@
 ---
 title: "Free up storage space  | MicrosoftDocs"
 description: Reduce storage space usage by deleting notes, attachments, import history, and other data with one-time or recurring jobs.
-author: ceian
+author: ianceicts-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 1/31/2024
@@ -140,11 +140,11 @@ Use the following methods to free up storage for each of the capacity types.
   
 1. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
   
-1. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
+1. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.
+
+   :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
   
 1. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
-  
-   :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Send an email to me check box is located in the Select Options window." lightbox="media/free-storage-method6b.png":::
 
 1. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -214,9 +214,9 @@ Use the following methods to free up storage for each of the capacity types.
   
 1. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
+    :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
+
 1. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
-  
-    :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Send an email to me check box is located." lightbox="media/free-storage-method6b.png":::
   
 1. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
@@ -281,7 +281,7 @@ All data is deleted in an asynchronous background system job.
 
 To monitor the status of audit delete jobs, see the next section.
 
-#### Monitor the status of audit delete jobs in the Power Platform admin center
+#### Monitor the status of audit delete jobs in the Power Platform Admin center
 
 1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
@@ -331,10 +331,10 @@ To monitor the status of audit delete jobs, see the next section.
 1. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
   
 1. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
-  
-1. If you want a notification e-mail sent, select the **Send an e-mail to me (myemail@domain.com) when this job is finished** check box.  
 
-    :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Send and email to me check box is located." lightbox="media/free-storage-method6b.png":::
+    :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
+
+1. If you want a notification e-mail sent, select the **Send an e-mail to me (myemail@domain.com) when this job is finished** check box.  
 
 1. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -430,9 +430,9 @@ For example, if you have 100 duplicate records, every time that you run a duplic
   
 1. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
+    :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
+
 1. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
-  
-    :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Send an email to me check box is located." lightbox="media/free-storage-method6b.png":::
 
 1. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -478,11 +478,11 @@ For example, if you have 100 duplicate records, every time that you run a duplic
   
 1. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
   
-1. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
+1. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.
+
+   :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
   
 1. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
-  
-   :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Send an email to me checkbox is located in the Select Options window." lightbox="media/free-storage-method6b.png":::
 
 1. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
