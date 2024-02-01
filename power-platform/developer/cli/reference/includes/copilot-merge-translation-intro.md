@@ -18,4 +18,5 @@ Loading language German into bot 'ms_store_newTestCopilot' (New Test Copilot) fr
 
 Updated 16 out of 16 components.
 ```
-See [merge-translation errors](#merge-translation-errors)
+
+[Learn about how to manage errors from the merge-translation command ](#merge-translation-errors)
