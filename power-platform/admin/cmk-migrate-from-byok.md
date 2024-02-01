@@ -5,9 +5,8 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile, sericks
 ms.topic: how-to 
-ms.date: 10/25/2023
+ms.date: 02/01/2024
 ms.custom: template-how-to
-
 ---
 
 # Migrate bring-your-own-key (BYOK) environments to customer-managed key
@@ -22,7 +21,7 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 >
 > Upon completion of migrating your last BYOK environment, create a support ticket and request Microsoft to remove the BYOK option from your Power Platform admin center. Microsoft will also remove the SQL service restriction from all of your remaining environments and delete the BYOK key vaults from your tenant, after 28 days from the date the final BYOK environment was migrated.  
 >
-> Once an environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB and the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. The migrated environment cannot be re-encrypted with BYOK key. It also cannot be reverted to Microsoft managed key for at least 7 days.
+> Once an environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB and the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. The migrated environment can't be re-encrypted with the BYOK key. The environment also can't be reverted to Microsoft managed key for at least 7 days.
 >
 > When BYOK-enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
 >
