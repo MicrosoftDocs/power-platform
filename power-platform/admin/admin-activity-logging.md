@@ -3,7 +3,7 @@ title: View Power Platform administrative logs using auditing solutions in Micro
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/30/2024
+ms.date: 02/01/2024
 author: Zeffin
 ms.subservice: admin
 ms.author: johnev
@@ -85,6 +85,14 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | Trials | AssignLicenseToUser | Emitted when a trial license is assigned to a user. |
 | Licensing | DeveloperPlanConsent | Emitted when a tenant admin consents to usage of developer plans. |
 | Environment Lifecycle | EnvironmentDisabledByMiser | Emitted when an environment is automatically disabled due to insufficient database capacity. |
+
+## Activity category: Admin actions
+
+Each activity event contains a payload of metadata that is specific to the individual event. The following admin activities are delivered to Microsoft Purview.
+
+| **Event** | **Description** |
+|-------------------------|-------------------------|
+| Apply Admin Role | Emitted when a tenant admin requested the System administrator role in Dataverse in the environment. |
 
 ## View activities in Microsoft Purview
 
