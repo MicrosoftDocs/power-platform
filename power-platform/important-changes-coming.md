@@ -42,7 +42,7 @@ Admins can turn the **Switch to classic** option back on in the Power Platform a
 
 ## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
 
-Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
+Effective April 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
 
 ## Deprecating support of unregistered MSA and External Microsoft Entra users in Dataverse
 
