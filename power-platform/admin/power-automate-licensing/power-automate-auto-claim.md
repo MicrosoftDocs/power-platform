@@ -79,6 +79,9 @@ To create a new policy, complete the following steps:
 1.	On the **Select apps** page, select or clear the checkboxes for the apps to include or exclude with the license.	Click **Next**.
 1.	On the **Review and finish** page, verify the new policy information, make any necessary changes, and click **Create policy**.
 
+:::image type="content" source="../media/power-automate-licensing/auto-claim-policy.png" alt-text="Auto-claim policy configuration for Power AUtomate.":::
+ 
+
 ### View license assignment in auto-claim policy report
 The auto-claim policy report shows all licenses assignment from the auto-claim policy in the last 90 days.
 
