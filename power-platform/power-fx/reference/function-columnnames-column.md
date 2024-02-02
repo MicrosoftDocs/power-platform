@@ -20,20 +20,20 @@ contributors:
 Retrieves column names and values from an [untyped object](../untyped-object.md).
 
 ## Description
-The ColumnNames function will return the names of all columns from an [untyped record](../untyped-object.md), returning a table with all the names from that record.
+The ColumnNames function returns the names of all columns from an [untyped record](../untyped-object.md), returning a table with all the names from that record.
 
-The Column function will return the value of a property from an [untyped record](../untyped-object.md) with the given column name. The value will be returned as an [untyped object](../untyped-object.md)..
+The Column function returns the value of a property from an [untyped record](../untyped-object.md) with the given column name. The value is returned as an [untyped object](../untyped-object.md).
 
-The ColumnNames and Column functions will return errors if the [untyped object](../untyped-object.md) does not represent a record (i.e., if it represents a table or a scalar / primitive value).
+The ColumnNames and Column functions return errors if the [untyped object](../untyped-object.md) doesn't represent a record (that is, if it represents a table or a scalar or primitive value).
 
 ## Syntax
 **ColumnNames**( *UntypedRecord* )
 
-* *UntypedRecord* – Required. An [untyped object](../untyped-object.md) which represents a record.
+* *UntypedRecord* – Required. An [untyped object](../untyped-object.md) that represents a record.
 
 **Column**( *UntypedRecord*, *ColumnName* )
 
-* *UntypedRecord* – Required. An [untyped object](../untyped-object.md) which represents a record.
+* *UntypedRecord* – Required. An [untyped object](../untyped-object.md) that represents a record.
 * *ColumnName* - Required. The name of the column to be retrieved from the given record.
 
 ## Examples
@@ -52,7 +52,7 @@ Given the following JSON string in a variable named `JsonString`
     ```powerapps-dot
     Value( Column( ParseJSON( JsonString ), "population" ) )
     ```
-    2.1. Notice that this is similar to the `.` operator for [untyped records](../untyped-object.md#record-types), but the column name does not have to be known beforehand.
+    2.1. Notice that this is similar to the `.` operator for [untyped records](../untyped-object.md#record-types), but the column name doesn't have to be known beforehand.
 
 3. The following formula returns the text value `"name: Seattle, population: 737000"`:
     ```powerapps-dot
@@ -70,7 +70,7 @@ Given the following JSON string in a variable named `JsonString`
 { "text": "text value" , "number": 567, "empty": null }
 ```
 
-1. Attempting to access non-existing fields returns **Blank()**. The following formula returns `true`:
+1. Attempting to access nonexisting fields returns **Blank()**. The following formula returns `true`:
     ```powerapps-dot
     IsBlank( Column( ParseJSON( JsonString ), "does not exist" ) )
     ```
@@ -79,8 +79,8 @@ Given the following JSON string in a variable named `JsonString`
     IsBlank( Column( ParseJSON( JsonString ), "empty" ) )
     ```
 
-### Non-records
-Calling the Column or ColumnNames functions with untyped objects that do not represent records will return an error. All of those expressions below are erroneous:
+### Nonrecords
+Calling the Column or ColumnNames functions with untyped objects that don't represent records return an error. All of those expressions below are erroneous:
 
 | Formula                                          | Reason for error                                 |
 | ------------------------------------------------ | ------------------------------------------- |
