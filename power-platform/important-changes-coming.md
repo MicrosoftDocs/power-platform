@@ -133,21 +133,22 @@ Evaluate existing forms that include a deprecated control and replace them with 
 
 ## Microsoft Dataverse (legacy) connector for Power Automate flows is deprecated
 
-Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (also referred to as the CDS 2.0 connector) is deprecated.
+Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (previously referred to as the CDS 2.0 connector) is deprecated. The connector will continue to work in existing flows until a final date is announced in 2024. You'll have one year from the date of announcement to move to the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector.
+
 
 ### Why is this needed?
 
-
+The [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector has replaced the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) as the main connector for automating data, events, and actions in Microsoft Dataverse. It provides additional actions, triggers, and improvements to working with Dataverse, including better reliability and faster performance when used in then same Power Platform environment.
 
 ### Impact
 
-In January 2024, the migration assistant was updated to include support for flows with actions connecting to other environments, an improved connection creation experience, and support for flows in an older format.  
-
-Most flows using the Microsoft Dataverse (legacy) connector are now supported by the migration assistant in Power Automate. Flows triggering based on changes to other environments or using the 'When a row is selected' trigger aren't supported yet, and aren't yet recommended for migration until these features are generally available in the Microsoft Dataverse connector. An update will be shared in March 2024 on the public preview and general availability (GA) timelines for these features.
+Cloud flows that use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector need to be updated to use the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector instead.
 
 ### Action required by you
 
-The connector will continue to work for existing flows until a final date is announced in 2024. You'll have one year from the date of announcement to move to the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector.
+Review the cloud flows you own that use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector and identify which are ready to update. As of January 2024, most flows using the legacy connector are recommended for migration with the exception of flows using "When a row is selected" trigger or triggering based on changes in other environments. An update will be shared in March 2024 on the Public Preview and GA timelines for these to be supported in the Microsoft Dataverse connector. 
+
+A migration assistant is available on the detail page of cloud flows that are able to be automatically updated. The assistant creates a copy of the flow with the legacy connector's triggers, actions, and dynamic content references replaced. In January 2024, support was added for connection creation, migration to the latest connector for all non-solution and unmanaged solution flows, and actions connecting to other environments.
 
 ## Microsoft Dataverse (legacy) connector for Azure Logic Apps will be deprecated and replaced with another connector
 
@@ -394,7 +395,7 @@ Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline
 
 ### Why is this needed?
 
-We'll announce the timeline for final shutdown of the connector in 2024, after the remaining parity feature in the Microsoft Dataverse connector for triggering from other environments is generally available. You have one year from the date of the announcement to move to the new connector.
+We'll announce the timeline for final shutdown of the connector in 2024, after the remaining parity feature in the Microsoft Dataverse connector for triggering from other environments is generally available. You will have one year from the date of the announcement to move to the new connector.
 
 ### Impact
 
@@ -415,10 +416,10 @@ Canvas apps can no longer use the Power Apps player in Windows. All Canvas apps 
 - Dynamics 365 connector can't be selected for creating a new integration.
 - Editing an existing integration won't be allowed, if you attempt to edit you'll be required to choose a different connector.
 
-#### Automate
+#### Power Automate
 
-- Dynamics 365 connector can't be selected for creating a new flow.
-- Existing flows will continue to run until the Microsoft Dataverse connector is available in GA (date announcement in 2024)
+- Dynamics 365 connector can't be added to new or existing flows.
+- Existing flows will continue to run until the final deprecation date, which will be announced in 2024.
 
 #### Logic Apps
 
@@ -432,10 +433,9 @@ The Windows Player for canvas apps will no longer be able to be used.
 
 ### Action required by you
 
-You must replace Dynamics 365 connectors with a Microsoft Dataverse connector.
+You must replace usage of the Dynamics 365 connector with the Microsoft Dataverse connector.
 
-- **Microsoft Dataverse**: This is the newest connector and will become the only connector available for Dataverse usage. In 2024, the specific date of transition will be provided. All new features, performance work, and enhancements will be available on this connector.
-- **Microsoft Dataverse (legacy)**: This is the last generation connector for Microsoft Dataverse. It will be deprecated within the same timeline as the Dynamics 365 connector. It won't receive feature or enhancement updates.
+- **Microsoft Dataverse**: This is the newest connector and the main connector avilable for Dataverse usage. All new features, performance work, and enhancements will be available on this connector. A
 
 **Mapping of common actions**
 
