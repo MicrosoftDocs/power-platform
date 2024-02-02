@@ -1,6 +1,6 @@
 ﻿---
-title: vNet support for Power Platform overview
-description: Learn more about vNet support for Power Platform.
+title: Virtual Network support for Power Platform overview
+description: "Learn more about Azure Virtual Network support for Power Platform."
 ms.date: 2/1/2024
 ms.topic: overview
 ms.component: pa-admin
@@ -11,130 +11,148 @@ search.audienceType: admin
 ms.custom: "admin-security"
 ---
 
-# vNet support for Power Platform overview
+# Virtual Network support for Power Platform overview
 
-vNet (virtual network) support in Power Platform integrates Power Platform services onboarded to [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview), which supports vNet for outbound traffic. Therefore, you don't need to route outbound traffic from Power Platform services to the internet.
+[Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform integrates your Power Platform services to the [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview), which manages outbound traffic at runtime. Therefore, you don't need to route outbound traffic from Power Platform services to the internet.
 
-You can integrate Dataverse and Power Platform with your own services. For example, Dataverse or Power Platform components can call resources owned by an enterprise app. These resources can be either Azure-hosted or on-premises. You can use plug-ins or connectors to make outbound calls. For example, a call from a Dataverse plug-in to a Snowflake instance hosted on Azure.
+Using Virtual Network, you can:
 
-> [!IMPORTANT]
-> Enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. These integrations happen on the public internet infrastructure.
+- Integrate Dataverse and Power Platform with your own services.
+
+  For example, Dataverse or Power Platform components can call resources owned by your enterprise app. These resources can be either Azure-hosted or on-premises.
+- Use plug-ins or connectors to make outbound calls.
+
+  For example, a call from a Dataverse plug-in is made to a Snowflake instance hosted on Azure.
 
 ## Private networks
 
-Azure can protect Azure services within a virtual network (vNet) through private endpoints. [What's a private endpoint?](/azure/private-link/private-endpoint-overview). You can bring your on-premises resources to the virtual network through [Express Route](/azure/expressroute/), which allows you to protect and monitor the entire virtual network.
+With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. These integrations happen on the public internet infrastructure. But a virtual network allows you to use a private network, while still integrating with cloud services.
 
-With a vNet, Power Platform components lose the ability to connect to these protected resources, since they're no longer accessible from the public internet. Only resources from within the virtual network can access these resources.
+Azure services are protected within a virtual network through [private endpoints](/azure/private-link/private-endpoint-overview). You can bring your on-premise resources to the virtual network through [Express Route](/azure/expressroute/), which allows you to protect and monitor the entire virtual network.
 
-vNet support for Power Platform uses [subnet delegation](/azure/virtual-network/subnet-delegation-overview) to enable access to resources at runtime. You have full control over the egress traffic from Power Platform in your network. The traffic is subjected to network policies applied by your network administrator.
+In a virtual network, you have full control over the egress traffic from Power Platform. The traffic is subjected to network policies applied by your network administrator.
 
-:::image type="content" source="media/vnet-support/vnet-support-traffic.png.png" alt-text="Screenshot that shows how vNet works in a network with resources.":::
+:::image type="content" source="media/vnet-support/vnet-support-traffic.png" alt-text="Screenshot that shows how a virtual network interacts with resources." lightbox="media/vnet-support/vnet-support-traffic.png":::
 
-## vNet support for Power Platform benefits
+## Virtual network benefits
 
- With vNet support, you get all the [benefits](/azure/virtual-network/subnet-delegation-overview#advantages-of-subnet-delegation) that Azure subnet delegation provides.
+ With Virtual Network support, you get all the [benefits](/azure/virtual-network/subnet-delegation-overview#advantages-of-subnet-delegation) that Azure subnet delegation provides.
 
-- **Data protection**: vNet allows Power Platform services to connect to your private and protected resources without exposing them to the internet.
+- **Data protection**: Virtual Network allows Power Platform services to connect to your private and protected resources without exposing them to the internet.
 
-- **No unauthorized access**: vNet connects with your resources without needing Power Platform IP ranges or service tags in the connection.
+- **No unauthorized access**: Virtual Network connects with your resources without needing Power Platform IP ranges or service tags in the connection.
 
-## Scenarios using vNet support in Power Platform
+## Scenarios using Virtual Network support
 
-You can use secured private outbound connectivity from custom 3rd party Dataverse/ISV plug-ins to enhance the security of data integration with external data sources within your secured private network from your Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
+With a virtual network, you can use secured, private, outbound connectivity with partner software. For example, Dataverse plug-ins enhance data integration security with external data sources from your Power Apps, Power Automate, and Dynamics 365 apps.
 
-- Connect privately from Dataverse 3P plug-ins to your on-premises data sources such as SQL server, Oracle, or SAP without exposing them to the internet and protect your data from data breaches and other external threats.
+### Private connections to data sources
 
-- Connect privately from your 3P plug-ins to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault without exposing them to the internet and protect your data from data exfiltration and other incidents.
+- Use Dataverse plug-ins to connect to your on-premises data sources such as SQL server, Oracle, or SAP. You protect your data from data breaches and other external threats.
 
-You can use private outbound connectivity from Power Platform to securely access services, manipulate, and protect data from your apps. You can connect privately from Power Apps, Power Automate, and Dynamics 365 Apps using following connectors.
+- Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
 
-- Azure SQL: To Azure SQL or SQL server without exposing the traffic to the internet and protect your data from data exfiltration and other external threats.
+### Secure access using connectors
 
-- Azure File Storage/Blob Storage: To Azure File Storage or blob storage without exposing the files to the internet and protect your data from data breaches and other incidents.
+With these connectors in a virtual network, use Power Platform to securely access services or manipulate and protect data from your apps. You can connect from Power Apps, Power Automate, and Dynamics 365 Apps.
 
-- Azure Key Vault: To Azure Key Vault without exposing the secrets to the internet and protect your data from data leaks and other risks.
+- **Azure SQL**: Protects your data from data exfiltration and other external threats.
 
-- Http with Microsoft Entra ID: To your own services authenticated by Azure AD without exposing them to the internet and protect your data from external attacks and data leaks.
+- **Azure File Storage** or **Blob Storage**: Protects your data from data breaches and other incidents.
 
-- Azure Queue: To Azure Queue without exposing the endpoint to public internet.
+- **Azure Key Vault**: Doesn't expose secrets to the internet and protects your data from data leaks and other risks.
 
-- Custom: To your services hosted within your vNet.
+- **Http with Microsoft Entra ID**: Authenticates with Azure AD and protects your data from external attacks and data leaks.
 
-## Regions supported for vNet support for Power Platform
+- **Azure Queue**: Doesn't expose endpoints to the public internet.
 
-Power Platform region and Azure regions mapping is provided in below table. It is very important to ensure that Power Platform environment and enterprise policy are in supported Power Platform and Azure regions respectively. For example, if you have Power Platform environment in United States, then your vNet, Subnets and Enterprise Policy must be either in East US or West US azure region.
+- **Custom**: Connects any service hosted within your virtual network.
 
-| Power Platform Region | Azure Region                      |
+## Supported regions
+
+Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions, respectively. For example, if your Power Platform environment is in the United States, then your virtual network, subnets and enterprise policy must be either in the `eastus` or `westus` Azure region.
+
+| Power Platform region | Azure region                      |
 |-----------------------|-----------------------------------|
-| Unitedstates          | Eastus, westus                    |
-| Southafrica           | Southafricanorth, southafricawest |
-| Uk                    | Uksouth, ukwest                   |
-| Japan                 | Japaneast, japanwest              |
-| India                 | Centralindia, southindia          |
-| France                | Francecentral, francesouth        |
-| Europe                | Westeurope, northeurope           |
-| Germany               | Germanynorth, germanywestcentral  |
-| Switzerland           | Switzerlandnorth, switzerlandwest |
-| Canada                | Canadacentral, canadaeast         |
-| Brazil                | Brazilsouth, southcentralus       |
-| Australia             | Australiasoutheast, australiaeast |
-| Asia                  | Eastasia, southeastasia           |
-| Uae                   | Uaecentral, uaenorth              |
-| Korea                 | Koreasouth, koreacentral          |
-| Norway                | Norwaywest, norwayeast            |
+| United States         | eastus, westus                    |
+| South Africa          | eouthafricanorth, southafricawest |
+| Uk                    | uksouth, ukwest                   |
+| Japan                 | japaneast, japanwest              |
+| India                 | centralindia, southindia          |
+| France                | francecentral, francesouth        |
+| Europe                | westeurope, northeurope           |
+| Germany               | germanynorth, germanywestcentral  |
+| Switzerland           | switzerlandnorth, switzerlandwest |
+| Canada                | canadacentral, canadaeast         |
+| Brazil                | brazilsouth, southcentralus       |
+| Australia             | australiasoutheast, australiaeast |
+| Asia                  | eastasia, southeastasia           |
+| UAE                   | uaecentral, uaenorth              |
+| Korea                 | koreasouth, koreacentral          |
+| Norway                | norwaywest, norwayeast            |
 | Singapore             | southeastasia                     |
 | Sweden                | swedencentral                     |
 
-## Supported services on vNet in Power Platform
+## Supported services
 
-Following table shows the currents status of services onboarded to Azure Subnet delegation to support vNet for Power Platform.
-
-| Area       | Power Platform Services | vNet support   |
-|------------|-------------------------|----------------|
+The current status of services onboarded to the Azure subnet delegation in Virtual Network support for Power Platform.
+<!-- "COMING SOON" CAN HAVE NEGATIVE RAMIFICATIONS -->
+| Area       | Power Platform services | Virtual Network support |
+| ---------- | ----------------------- | ----------------------- |
 | Dataverse  | Dataverse 3P plug-ins   | Public Preview |
 | Connectors | Azure SQL connector     | Coming soon    |
 |            | Azure Key Vault         | Coming soon    |
 |            | Azure Queue             | Coming soon    |
 
-## Licensing requirements for vNet support for Power Platform
+## Licensing requirements
 
-Licensing requirements for vNet support for Power Platform will be announced near to General Availability.
+Licensing requirements for Virtual Network support for Power Platform are announced when the service is closer to general availability.
 
-## Understand the changes needed when you enable vNet support on a Power Platform Environment
+## How to enable Virtual Network support on a Power Platform environment
 
-When you enable vNet support in a Power Platform Environment, all the vNet supported services like Dataverse Plug-ins, SQL connector will start executing the requests at runtime in your delegated subnet i.e. now these services will be subjected to your network policies. Let's say that SQL connector is connecting to SQL available over public internet and your network policy does not allow to connect to SQL server over public internet from within your vNet. The call from SQL connector will start failing. To avoid this situation, you can first bring your SQL server in your vNet or if it is in azure, you can enable private endpoint on Azure SQL before you enable vNet support in a Power Platform environment.
+When you enable Virtual Network support in a Power Platform environment, all supported services, like a Dataverse plug-ins or a SQL connector, execute requests at runtime in your delegated subnet. Once enabled, your services are subjected to your network policies.
 
-Before enabling the vNet in Power Platform environment, we recommend
+For example, a SQL connector might try to connect to SQL through the public internet, but your network policy doesn't allow public connections to the SQL server in your virtual network. The call from the SQL connector fails.
 
-- Review your apps, flows and plug-ins code to ensure that they connect over your vNet, they are not reaching out to endpoints available over internet.
+To avoid a failed connection, you can add your SQL server to your virtual network. Alternatively, if the server is in Azure, you can enable a private endpoint on Azure SQL before you enable your virtual network support in a Power Platform environment.
 
-- If your apps, flow, and plug-ins etc. needs to connect to public endpoints, ensure that your firewall/network configuration allows such calls.
+### Prerequisites
 
-## Setup and Configuration experiences for enabling vNet support using Azure Subnet Delegation
+Before enabling Virtual Network support in Power Platform:
 
-Refer this document [Setup and Configuration of vNet Support for Power Platform environment.docx](https://microsoft.sharepoint.com/:w:/t/CDS-Sandbox/Ea8ss50L1opIppTmEZAbDgEBwYjvdh4vx0EICTGcG_qAiQ?e=IWriek)
+- Review your apps, flows and plug-ins code to ensure that they connect over your virtual network. Ensure they're not calling endpoints available over the public internet.
+
+- If your apps, flow, and plug-ins need to connect to public endpoints, ensure that your firewall or network configuration allows such calls.
+
+## Setup and configuration
+
+[Setup and configure Azure Virtual Network support for Power Platform](https://microsoft.sharepoint.com/:w:/t/CDS-Sandbox/Ea8ss50L1opIppTmEZAbDgEBwYjvdh4vx0EICTGcG_qAiQ?e=IWriek).
 
 ## FAQ
 
-1. Difference between vNet Data Gateway vs Azure vNet support in Power Platform
+### 1. What's the difference between a virtual network data gateway and Azure Virtual Network support in Power Platform?
 
-   vNet data gateway is a managed gateway that allows you to access Azure/Power Platform services from within your virtual network without the need of an on-premises data gateway. You don't need to set up any On-Premises vNet Data Gateway. The managed gateway configuration is available [here](/data-integration/vnet/data-gateway-architecture#hardware)
+#### Virtual network data gateway
 
-   Azure vNet support in Power Platform uses Azure subnet delegation where you delegate subnet(s) to Power Platform environment (service) and subnet(s) are going to be used by workloads within the environment.
+The virtual network data gateway is a managed gateway that allows you to access Azure and Power Platform services from within your virtual network without an on-premises data gateway. You don't need to set up an on-premises virtual network data gateway. For more information, see [Virtual network data gateway architecture](/data-integration/vnet/data-gateway-architecture#hardware).
 
-   1. vNet Data Gateway will continue to support ETL (extract, transform, load) workloads like Power BI and Power Platform Dataflows. vNet Data Gateway is optimized for ETL workloads.
+A virtual network data gateway continues to support ETL (extract, transform, load) workloads, for example Power BI and Power Platform dataflows. A virtual network data gateway is optimized for ETL workloads.
 
-   1. vNet support, which is based on Azure subnet delegation, will be used for Power Platform API (application programming interfaces) workloads as the requests are short lived and it is optimized for large number of requests.
+#### Azure Virtual Network support
 
-1. How do you ensure that vNet, subnet from one customer will not be used by another customer in Power Platform?
+Virtual Network support in Power Platform uses an Azure subnet delegation for your Power Platform environment. Subnets are used by workloads within the environment.
 
-   vNet support in Power Platform ensures that one customer cannot access the vNet/Subnet of other customers by having following measures in place:
+Virtual Network support is used for Power Platform API workloads as the requests are short lived and optimized for a large number of requests.
 
-   1. vNet support in Power Platform uses [Azure Subnet delegation](/azure/virtual-network/subnet-delegation-overview).
+### 2. How can you ensure a virtual network subnet or data gateway from one customer isn't used by another customer in Power Platform?
 
-   1. Every Power Platform environment is linked to a particular vNet/subnet. Only calls from that environment are allowed to access that vNet.
+Virtual Network support in Power Platform ensures that one customer cannot access the subnets of other customers by having following measures in place:
 
-   1. Azure Subnet delegation is a feature that allows you to designate a specific subnet for an Azure PaaS (platform as a service) service of your choice that needs to be injected into your virtual network. When you delegate the subnet to an Azure service (Power Platform Enterprise Policy), you allow that service to establish some basic network configuration rules for the subnet, which help the Azure service operate their instances in a stable manner. No other azure service can have access to this subnet. Even if someone tries to delegate a subnet which is used by other azure service, it will fail.
+- Virtual Network support in Power Platform uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview).
+
+- Every Power Platform environment is linked to a particular vNet/subnet. Only calls from that environment are allowed to access that vNet.
+
+- Azure Subnet delegation is a feature that allows you to designate a specific subnet for an Azure PaaS (platform as a service) service of your choice that needs to be injected into your virtual network. When you delegate the subnet to an Azure service (Power Platform Enterprise Policy), you allow that service to establish some basic network configuration rules for the subnet, which help the Azure service operate their instances in a stable manner. No other azure service can have access to this subnet. Even if someone tries to delegate a subnet which is used by other azure service, it will fail.
 
 1. Does it support failover?
 

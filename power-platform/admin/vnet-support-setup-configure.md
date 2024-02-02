@@ -11,7 +11,7 @@ search.audienceType: admin
 ms.custom: "admin-security"
 ---
 
-# Setup and configure vNet support for Power Platform
+# Setup and configure Azure Virtual Network support for Power Platform
 
 Enterprises often want to integrate Dataverse and Power Platform with their own services. One of Enterprises' key integration scenarios is having Dataverse or Power Platform components call out to resources that the Enterprises own. These resources could either be Azure-hosted or on-premises. Often, Enterprises use plug-ins or connectors to make such outbound calls (for example: making a call from a Dataverse plug in to a Enterprises Snowflake instance hosted on Azure).
 
