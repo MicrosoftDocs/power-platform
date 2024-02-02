@@ -6,7 +6,7 @@ ms.topic: overview
 ms.component: pa-admin
 ms.subservice: admin
 author: ritesp
-ms.author: ritesh.pandey
+ms.author: ritesp
 search.audienceType: admin
 ms.custom: "admin-security"
 ---

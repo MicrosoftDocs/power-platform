@@ -6,62 +6,40 @@ ms.topic: overview
 ms.component: pa-admin
 ms.subservice: admin
 author: ritesp
-ms.author: ritesh.pandey
+ms.author: ritesp
 search.audienceType: admin
 ms.custom: "admin-security"
 ---
 
-# Setup and configure Azure Virtual Network support for Power Platform (Preview)
+# Setup and configure Virtual Network support for Power Platform (preview)
 
-Enterprises often want to integrate Dataverse and Power Platform with their own services. One of Enterprises' key integration scenarios is having Dataverse or Power Platform components call out to resources that the Enterprises own. These resources could either be Azure-hosted or on-premises. Often, Enterprises use plug-ins or connectors to make such outbound calls (for example: making a call from a Dataverse plug in to a Enterprises Snowflake instance hosted on Azure).
+This article helps you enable Azure Virtual Network support for Power Platform environments.
 
-Today, since all Dataverse and Power Platform services run on public and sovereign Azure clouds, we require these Enterprise resources to be accessible, at the very least, from a list of Azure IP ranges or Service tags which describe public IP addresses. All such integrations happen on the public internet infrastructure.
+## Prerequisites
 
-Some Enterprises want their resources to be entirely encapsulated within a private network and still want to be able to integrate with cloud services. Azure provides the ability to protect Azure services within a customer's virtual network (vNet) via Private Endpoints [What is a private endpoint?](/azure/private-link/private-endpoint-overview). Customers are also able to bring their on-premises resources to the virtual network via [Express Route](/azure/expressroute/). Customers are then able to protect and monitor the entire virtual network.
+### Prepare your tenant
 
-By doing this, Power Platform components currently lose the ability to connect to these protected resources as they are no longer accessible from the public internet. Only resources from within the virtual network can access these resources.
+- Have an Azure subscription with permissions to create a virtual network, subnet, and the enterprise policy resources.
 
-vNet support for Power Platform using Subnet delegation will enable Enterprises to access their resources within their virtual networks from the Power Platform. This document will guide you through the steps to configure vNet support for Power Platform for Power Platform environments.
+- Download PowerShell scripts for [enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies).
 
-You can enable vNet Support for Power Platform environments using below steps.
+- Install MSI, using PowerShell. For more information, see [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell).
 
-Before you prepare your tenant for Subnet Delegation
+### Give permissions
 
-Subnet delegation requires configuration steps in both the Azure portal and in the Power Platform admin centner. Users configuring subnet delegation must have the appropriate permissions in each portal.
+Subnet delegation requires configuration steps in both the Azure portal and in the Power Platform Admin center. Users must have the appropriate permissions in each portal.
 
-- Users must be assigned the Azure Network Administrator role to complete the configuration steps in Azure.
+- Azure portal: Assign users the Azure Network Administrator role.
 
-- Users must be assigned the Power Platform Administrator role to complete the and configuration steps in the Power Platform admin center.
+- Power Platform Admin center: Assign users the Power Platform Administrator role.
 
-## Prepare Tenant for Subnet Delegation
+:::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot that shows the configurations for Virtual Network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
 
-### Pre-requisites
-
-- An Azure subscription in which you have permissions to create a virtual network, subnet, and the Enterprise Policy resources. 
-
-- Download the PowerShell Scripts from this location [PowerApps-Samples/powershell/enterprisePolicies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
-
-- Privileges: The user must be in network administrator role to configure step \#1 to \#4 below.
-
-- Install PowerShell MSI. More information: [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell)
-
-## Setup Steps
-
-The setup of vNet support for Power Platform Environment requires two distinct personas.
-
-- User in Azure Network Administrator role
-
-- User in Power Platform Administrator role
-
-Below diagram shows the steps required to configure the vNet support in Power Platform environment.
-
-![A diagram of a diagram Description automatically generated](media/image1.png)
-
-## Azure Configurations
+## Azure configurations
 
 ### Step 1: Register Microsoft.PowerPlatform as a resource provider
 
-On the Azure portal, sign in as a subscription owner and register Microsoft.PowerPlatform as a resource provider for the subscription that contains the VNet. This change enables your subscription to work with this resource provider.
+Here, you register Microsoft.PowerPlatform as a resource provider for the subscription that contains your Virtual Network.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
@@ -69,65 +47,65 @@ On the Azure portal, sign in as a subscription owner and register Microsoft.Powe
 
 1. Select Resource providers.
 
-1. Search for and select Microsoft.PowerPlatform, and then select Register.
+1. Search for and select **Microsoft.PowerPlatform**.
 
-![A screenshot of a computer Description automatically generated](media/image2.png)
+1. Select **Register**.
 
-### Step 2: Setup vNet, subnets
+:::image type="content" source="media/vnet-support/ms-pp-select.png" alt-text="Screenshot showing where to search for Microsoft.PowerPlatform and where the register button is located.":::
 
-Users in Azure Network Administrator role need to setup virtual network and have at least two subnets primary and failover. The failover subnet should be altogether in different region e.g. if primary subnet is in West US, then failover must be in EAST US.
+### Step 2: Setup Virtual Network and subnets
 
-*Note\*: Power Platform does not support CENTRAL US. Supported Power Platform regions are documented here [PowerApps-Samples/powershell/enterprisePolicies/SubnetInjection/ValidateVnetLocationForEnterprisePolicy.ps1 at master · microsoft/PowerApps-Samples (github.com)](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/SubnetInjection/ValidateVnetLocationForEnterprisePolicy.ps1)*
+Users in the Azure Network Administrator role need to setup a virtual network and have at least two subnets: primary and failover. The failover subnet must be in a different region. For example, if your primary subnet is in West US, then failover must be in EAST US.
 
-1. Configure vNet, Subnets by referring to this article [Add or remove a subnet delegation in an Azure virtual network \| Microsoft Learn](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal)
+> [!NOTE]
+> Power Platform doesn't support the CENTRAL US region.
+>
+> Find your [virtual network location](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/SubnetInjection/ValidateVnetLocationForEnterprisePolicy.ps1).
 
-1. **Delegate the subnet to the Power Platform enterprise policies:** Once you have provisioned two vNet and two subnets one in Primary and another in failover region in step \#A above, having at least /24 CIDR IPs in each primary and secondary subnet,
+1. Configure Virtual Network and subnets through the [Add or remove a subnet delegation in an Azure Virtual Network](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal) article.
 
-    1. Run [this](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) step for primary vNet and Subnet.
+1. Delegate the subnet to the Power Platform enterprise policies by [running a subnet injection script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for both your primary and failover virtual network subnet.
 
-    1. Run [this](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) step for failover vNet and Subnet.
+   > [!IMPORTANT]
+   > Have at least /24 [Classless Inter-Domain Routing (CIDR)](https://datatracker.ietf.org/doc/html/rfc4632), which is 251 IPs + 5 IPs reserved, in the subnet to delegate. To delegate the same subnet to multiple environments, you might need to provision more IPs within that subnet.
 
-*We currently request at least /24 [CIDR](https://datatracker.ietf.org/doc/html/rfc4632) (Classless Inter-domain Routing) (251 IP's + 5 IP's reserved) in the subnet that will be delegated to Power Platform. If you are planning to delegate the same subnet to multiple environments, then you may need to provision more Ips within that subnet.*
+   > [!TIP]
+   > To allow internet access within Power Platform containers, configure [Azure NAT Gateway](/azure/nat-gateway/nat-overview) for delegated subnets.
 
-*If you want to allow internet access within Power Platform containers then you will have to configure* [Azure NAT Gateway](/azure/nat-gateway/nat-overview) *for delegated subnets.*
-
-Before you execute step \#3 below, review the number of IP's allocated to each subnet to cater the load of the environment(s). Both primary and failover subnets must have same number of available IP's.
+1. Review the number of IPs allocated to each subnet to consider the load of the environment. Both primary and failover subnets must have the _same number_ of available IPs.
 
 ### Step 3: Create enterprise policy
 
-In this step, you will create enterprise policies using the vNet and Subnet provisioned in step 2 above. Refer to [this step](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy) to create enterprise policies.
+[Create subnet injection enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual network and subnet you delegated.
 
-### Step 4: Grant the Power Platform admin privilege to read the enterprise policy
+### Step 4: Grant read access to the Power Platform admin
 
-In this step, you will be granting read access to the user in Power Platform Administrator role using this [article](/power-platform/admin/customer-managed-key#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) under the section "**Grant the Power Platform admin privilege to read enterprise policy"**.
+[Grant read access]((/power-platform/admin/customer-managed-key#grant-the-power-platform-admin-privilege-to-read-enterprise-policy)) to the user in the Power Platform administrator role, so they can read the enterprise policy.
 
-### Step 5: Power Platform Configurations
+### Step 5: Configure your Power Platform environment
 
-To enable vNet support in Power Platform environments, user must be in Power Platform Administrator role and must have read permission to Enterprise Policy created for Power Platform.
-
-To configure on vNet support in Power Platform environment, user in Power Platform Administrator role must follow [this](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) step.
+Configure Virtual Network support in a Power Platform environment by [running the subnet injection script for your environment](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment).
 
 ### Validation
 
-You have enabled vNet support for your Power Platform environment.
+With Virtual Network support enabled for your Power Platform environment, you can validate the connection in the Power Platform admin center.
 
-To validate it,
+- Go to the [Power Platform admin center](https://aka.ms/ppac)
 
-- Go to the <https://aka.ms/ppac>
+- Select **Environments** from the navigation menu.
 
-- Browse to Environments
+- Select the environment where Virtual Network support is enabled.
 
-- Click on the environment where vNet support is enabled.
+- Select **History** from the menu bar.
 
-- Click on History, you will see something like below. It implies that linking of enterprise policies with environment is successful.
+  You see that the enterprise policies linked with your environment is successful.
 
-![A screenshot of a computer Description automatically generated](media/image3.png)
-
+  :::image type="content" source="media/vnet-support/vnet-success-linked.png" alt-text="Screenshot showing your virtual network is linked to your environment." lightbox="media/vnet-support/vnet-success-linked.png":::
 
 ### See also
 
-- Deploying enterprise policies: [Microsoft.PowerPlatform/enterprisePolicies - Bicep, ARM template & Terraform AzAPI reference \| Microsoft Learn](/en-us/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
+- Deploy enterprise policies with the [Microsoft.PowerPlatform/enterprisePolicies ARM template](/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template).
 
-- [Quickstart: Use the Azure portal to create a virtual network - Azure Virtual Network \| Microsoft Learn](/azure/virtual-network/quick-create-portal)
+- [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal).
 
-- [Use plug-ins to extend business processes (Microsoft Dataverse) - Power Apps \| Microsoft Learn](/power-apps/developer/data-platform/plug-ins)
+- [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins).
