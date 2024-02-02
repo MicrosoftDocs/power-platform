@@ -10,7 +10,6 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: jameslew
 ms.custom: "publication, azure, ceX"
-ms.service: power-virtual-agents
 
 ---
 
