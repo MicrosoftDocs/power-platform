@@ -5,9 +5,8 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile, sericks
 ms.topic: how-to 
-ms.date: 10/25/2023
+ms.date: 02/01/2024
 ms.custom: template-how-to
-
 ---
 
 # Migrate bring-your-own-key (BYOK) environments to customer-managed key
@@ -22,7 +21,9 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 >
 > Upon completion of migrating your last BYOK environment, create a support ticket and request Microsoft to remove the BYOK option from your Power Platform admin center. Microsoft will also remove the SQL service restriction from all of your remaining environments and delete the BYOK key vaults from your tenant, after 28 days from the date the final BYOK environment was migrated.  
 >
-> Once an environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB and the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. When BYOK-enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
+> Once an environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB and the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. The migrated environment can't be re-encrypted with the BYOK key. The environment also can't be reverted to Microsoft managed key for at least 7 days.
+>
+> When BYOK-enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
 >
 > In addition to having the ability to use different or multiple encryption keys for separate environments and better management of your encryption key in your own key vault, upgrading BYOK to customer-managed key opens up your environments to all other Power Platform services that use non-SQL storage. For example, Customer Insights and Analytics, larger file upload sizes, more cost effective audit storage with audit retention, elastic table services, Dataverse search, and long-term retention are available.
 
