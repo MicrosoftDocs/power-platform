@@ -8,7 +8,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: ceX
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Export data to respond to requests for copies of personal data in Power Virtual Agents

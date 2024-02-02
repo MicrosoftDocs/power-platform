@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: "licensing, admin, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Get access to Microsoft Copilot Studio

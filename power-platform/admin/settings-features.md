@@ -13,6 +13,8 @@ contributors:
     - jasongre
 search.audienceType: 
   - admin
+ms.collection: 
+    - bap-ai-copilot
 ---
 # Manage feature settings
 
@@ -40,11 +42,16 @@ Make sure you have the System Administrator or System Customizer security role o
 | Allow canvas editors to get AI-powered answers to how-to questions and AI Builder GPT experiences. Currently in preview. (preview)  |When **On**, enables Copilot to create apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. More information: [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). | On |
 | Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. (preview)<br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. More information: [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot). When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is enabled. | Off |
 
-
 ## AI Builder
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |AI Builder preview models  | If **Off**, the environment will not have access to AI Builder. Not all environments will have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](/ai-builder/administer)  | On |
+
+## AI suggestions for formula columns
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| AI suggestions for formula columns  | If **On**, app makers will be able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
 
 ## Embedded content
 | Setting | Description | Default value |

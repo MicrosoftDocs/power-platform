@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: gapretty
 ms.custom: plugin, connector, flow, advanced-authoring
-ms.collection: virtual-agent
+
 ---
 
 # Use Generative Actions in Microsoft Copilot Studio (preview)
