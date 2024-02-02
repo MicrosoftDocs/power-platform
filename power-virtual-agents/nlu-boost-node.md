@@ -9,7 +9,7 @@ ms.author: iawilt
 ms.reviewer: iawilt
 
 ms.search.region: USA
-searchScope: "Power Virtual Agents"
+
 ---
 
 # Generative answers with Search and summarize content

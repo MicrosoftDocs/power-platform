@@ -9,8 +9,7 @@ ms.author: iawilt
 ms.reviewer: leeclontz
 
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title

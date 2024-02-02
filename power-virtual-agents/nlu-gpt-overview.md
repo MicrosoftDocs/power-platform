@@ -9,7 +9,7 @@ ms.author: iawilt
 ms.reviewer: 
 
 ms.search.region: USA
-searchScope: "Power Virtual Agents"
+
 ---
 # AI-based copilot authoring overview
 

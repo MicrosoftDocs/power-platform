@@ -9,8 +9,7 @@ ms.author: iawilt
 ms.reviewer: iawilt
 
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+
 ---
 
 # Connect your data to Azure OpenAI for generative answers

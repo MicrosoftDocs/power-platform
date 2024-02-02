@@ -46,7 +46,7 @@ End users in your tenant can use conversational and AI plugins in their chats wi
 
 ## Copilot plugins
 
-Plugins are discrete, reusable building blocks that work across Power Platform, Dynamics 365, and Microsoft 365. All plugins within your [Microsoft 365 tenant](/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide#a-microsoft-365-tenant-defined) are shared from a central plugin registry in Dataverse. When you create or change a plugin and publish it, the changes are pushed to all your copilots that use the plugin.
+Plugins are discrete, reusable building blocks that work across Power Platform, Dynamics 365, and Microsoft 365. All plugins within your [Microsoft 365 tenant](/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide&preserve-view=true#a-microsoft-365-tenant-defined) are shared from a central plugin registry in Dataverse. When you create or change a plugin and publish it, the changes are pushed to all your copilots that use the plugin.
 
 When you create a plugin, you use simple language to describe what the plugin should do. Next, you provide a data source or other connection that the copilot uses when reading a description and determining the best plugin for a conversation. The copilot automatically asks the user for more information, if needed, for the plugin to work.
 

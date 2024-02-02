@@ -7,8 +7,7 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 
-searchScope:
-  - "Power Virtual Agents"
+
 ---
 
 # Use uploaded documents for generative answers (preview)

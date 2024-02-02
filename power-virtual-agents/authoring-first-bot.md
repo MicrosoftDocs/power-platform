@@ -9,7 +9,6 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: onboarding, ceX
 
-searchScope: "Power Virtual Agents"
 ---
 
 # Create and delete Microsoft Copilot Studio copilots

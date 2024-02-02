@@ -9,8 +9,7 @@ ms.author: iawilt
 ms.reviewer: iawilt
 
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+
 ---
 
 # Use a custom data source for generative answers

@@ -8,8 +8,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 
-searchScope:
-  - "Power Virtual Agents"
+
 ms.custom: bap-template
 ---
 

@@ -10,8 +10,7 @@ ms.reviewer: clmori
 manager: leeclontz
 ms.custom: authoring, topics, variables, ceX
 
-searchScope:
-  - "Power Virtual Agents"
+
 ---
 
 # Create and edit topics in your Microsoft Copilot Studio copilot

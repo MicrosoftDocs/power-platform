@@ -26,7 +26,7 @@ Before you begin, ensure that you have the following prerequisites in place:
 
 ### Step 1: Retrieve Direct Line secret for your bot
 
-1. Retrieve your [Direct LinesSecret](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0).
+1. Retrieve your [Direct LinesSecret](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0&preserve-view=true).
 
 
 ### Step 2: Configure Salesforce remote site settings
