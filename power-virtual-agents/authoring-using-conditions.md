@@ -10,7 +10,6 @@ ms.reviewer: gapretty
 manager: leeclontz
 ms.custom: authoring, topics, message, question, bap-template
 
-ms.service: power-virtual-agents
 ---
 
 # Author using conditions (preview)

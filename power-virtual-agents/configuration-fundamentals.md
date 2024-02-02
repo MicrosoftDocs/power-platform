@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "configuration, fundamentals, ceX"
-ms.service: power-virtual-agents
 
 ---
 
