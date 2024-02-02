@@ -8,7 +8,6 @@ author: mainguy70
 ms.author: iawilt
 ms.reviewer: iawilt
 
-ms.service: power-virtual-agents
 ms.search.region: USA
 searchScope:
   - "Power Virtual Agents"

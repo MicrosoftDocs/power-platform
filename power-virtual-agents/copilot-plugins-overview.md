@@ -2,7 +2,6 @@
 title: Create copilot plugins - overview (preview)
 description: Use Microsoft Copilot Studio to create plugins that can be called directly from within chats with Microsoft Copilot.
 ms.date: 12/19/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt

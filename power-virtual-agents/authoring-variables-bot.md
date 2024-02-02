@@ -8,7 +8,6 @@ author: KendalBond007
 ms.author: iawilt
 manager: leeclontz
 ms.custom: authoring, ce06122020
-ms.service: power-virtual-agents
 
 ---
 

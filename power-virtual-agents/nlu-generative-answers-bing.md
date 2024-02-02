@@ -8,7 +8,6 @@ author: iaanw
 ms.author: iawilt
 ms.reviewer: iawilt
 
-ms.service: power-virtual-agents
 ms.search.region: USA
 searchScope: "Power Virtual Agents"
 ---

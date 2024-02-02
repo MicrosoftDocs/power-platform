@@ -1,15 +1,12 @@
 ---
 title: Create conversational plugins for Microsoft Copilot (preview)
-description: "Using Microsoft Copilot Studio to publish a topic as a Microsoft Copilot Enabled App within Microsoft Copilot"
+description: "Use Microsoft Copilot Studio to publish a topic as a Microsoft Copilot enabled app in Microsoft Copilot"
 ms.reviewer: jameslew
-ms.date: 11/15/2023
+ms.date: 2/2/2024
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 
-ms.service: power-virtual-agents
-searchScope:
-  - "Power Virtual Agents"
 ---
 
 # Create conversational plugins for Microsoft Copilot (preview)

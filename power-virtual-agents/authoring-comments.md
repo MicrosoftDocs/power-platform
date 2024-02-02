@@ -10,7 +10,6 @@ ms.author: iawilt
 ms.reviewer: gitikag
 manager: leeclontz
 ms.custom: authoring, ceX
-ms.service: power-virtual-agents
 
 searchScope:
   - "Power Virtual Agents"

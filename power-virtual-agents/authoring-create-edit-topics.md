@@ -3,7 +3,6 @@ title: Use topics to design a copilot conversation
 description: Use conversation topics in the Microsoft Copilot Studio authoring canvas for an intuitive, no-code way to create a copilot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
 ms.date: 1/2/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
