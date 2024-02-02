@@ -1,6 +1,6 @@
 ---
-title: When premium flows are turned off due to license issues
-description: Learn about why your flows are turned off, types of enforcements, and recommendations.
+title: When premium flows are subject to license enforcement
+description: Learn about types of enforcements and recommendations.
 author: PriyaKodukula
 contributors:
   - rakrish84
@@ -15,19 +15,19 @@ search.audienceType:
   - admin
 ---
 
-# When premium flows are turned off due to license issues
+# When premium flows are subject to license enforcement
 
 Dynamics 365 and Power Apps licenses include a limited set of Power Automate capabilities that allow users to run flows that allow for in context flows. To learn more, go to [What Power Automate capabilities are included in Dynamics 365 licenses](faqs.md#what-power-automate-capabilities-are-included-in-dynamics-365-licenses).
 
 ## Enforcement
 
 Flows not in context of apps are subject to enforcement. The following list explains the enforcement timelines.
-  - Admins with flows that need licenses will first get notifications in Power Platform Admin center.
-  - Admins can find these flows using PowerShell and assign a Process/per-flow license to the flow or a Power Automate premium/per-user license to the owner to avoid any interruptions. Admins have 30 days to act on these flows before makers start receiving notifications.
-  - After 30 days from admin notifications, flow owners and co-owners get email notifications and in product banners in Power Automate portal about the flows that need their attention. Admins get email notifications about the flows.
-  - Flow owners can start a trial or ask an admin for a license or buy their own license. Alternatively, if the flow is supporting a Power App/D365 app, they can associate the flow to the app. Flow owners and co-owners have 90 days to take action.
-  - Once enforcement notifications are sent to makers, new flows using premium features without a license are turned off by default.
-  - If no action is taken in 90 days, certain admin operations like new environment creation, adding database to environment, and others, will be impacted.
+- Admins with flows that need licenses will first get notifications in Power Platform Admin center.
+- Admins can find these flows using PowerShell and assign a Process/per-flow license to the flow or a Power Automate premium/per-user license to the owner to avoid any interruptions. Admins have 30 days to act on these flows before makers start receiving notifications.
+- After 30 days from admin notifications, flow owners and co-owners get email notifications and in product banners in Power Automate portal about the flows that need their attention. Admins get email notifications about the flows.
+- Flow owners can start a trial or ask an admin for a license or buy their own license. Alternatively, if the flow is supporting a Power App/D365 app, they can associate the flow to the app. Flow owners and co-owners have 90 days to take action.
+- Once enforcement notifications are sent to makers, they can still save new flows with premium features; however, those flows will be suspended shortly.
+- If no action is taken in 90 days, certain admin operations like new environment creation, adding database to environment, and others, will be impacted.
 
 ## Types of enforcements
 
