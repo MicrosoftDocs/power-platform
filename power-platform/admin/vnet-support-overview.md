@@ -99,14 +99,21 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 
 ## Supported services
 
-The current status of services onboarded to the Azure subnet delegation in Virtual Network support for Power Platform.
+The current status of services onboarded to the Azure subnet delegation for Virtual Network support for Power Platform.
 <!-- "COMING SOON" CAN HAVE NEGATIVE RAMIFICATIONS -->
-| Area       | Power Platform services | Virtual Network support |
-| ---------- | ----------------------- | ----------------------- |
-| Dataverse  | Dataverse 3P plug-ins   | Public Preview |
-| Connectors | Azure SQL connector     | Coming soon    |
-|            | Azure Key Vault         | Coming soon    |
-|            | Azure Queue             | Coming soon    |
+| Area       | Power Platform Services                                                   | vNet support                  |
+|------------|---------------------------------------------------------------------------|-------------------------------|
+| Dataverse  | Dataverse Plug-ins                                                        | Public preview                |
+| Connectors | Azure SQL                                                                 | Coming soon                   |
+|            | Azure Queue                                                               | Coming soon                   |
+|            | Azure Key Vault                                                           | Coming soon                   |
+|            | Http with Microsoft Entra ID                                              | Coming soon                   |
+|            | Custom                                                                    | Coming soon                   |
+|            | Azure File Storage                                                        | Coming soon                   |
+|            | Azure Blob Storage                                                        | Coming soon                   |
+|            | SFTP-SSH                                                                  | Coming soon                   |
+|            | Azure SQL Data Warehouse                                                  | Coming soon                   |
+
 
 ## Licensing requirements
 
@@ -158,45 +165,45 @@ Virtual Network support in Power Platform ensures that one customer cannot acces
 
 - Azure Subnet delegation is a feature that allows you to designate a specific subnet for an Azure PaaS (platform as a service) service of your choice that needs to be injected into your virtual network. When you delegate the subnet to an Azure service (Power Platform Enterprise Policy), you allow that service to establish some basic network configuration rules for the subnet, which help the Azure service operate their instances in a stable manner. No other azure service can have access to this subnet. Even if someone tries to delegate a subnet which is used by other azure service, it will fail.
 
-1. Does it support failover?
+### 3. Does it support failover?
 
    Yes, vNet support in Power Platform supports failover. It will be mandatory for you to delegate a primary and failover vNet and Subnets during the configuration in public preview.
 
-1. How can Power Platform Environment in one region connect to resources hosted in another region?
+### 4. How can Power Platform Environment in one region connect to resources hosted in another region?
 
    vNet linked to Power Platform environment must reside in the [Power Platform environment's regions](/power-platform/admin/regions-overview#what-regions-are-available). If an existing vNet is in other region, one will need to create a new vNet in environment region and then use [vNet peering](/azure/virtual-network/virtual-network-peering-overview) between vNet across regions.
 
-1. Will I be able to monitor egress traffic from these delegated subnets?  
+### 5. Will I be able to monitor egress traffic from these delegated subnets?  
     Yes, you can use NSGs (National Security Group) and /or firewalls to monitor egress traffic from delegated subnets.
 
-1. How many IPs does Power Platform require in the subnet to be delegated?  
+### 6. How many IPs does Power Platform require in the subnet to be delegated?  
     We currently request at least /24 CIDR (Classless Inter-domain Routing) (255 IPs) in the subnet that will be delegated to Power Platform. If you are planning to delegate the same subnet to multiple environments, then you may need to provision more IPs within that subnet.
 
-1. Will I be able to make internet bound calls from plugins once my environment is subnet delegated?  
+### 7. Will I be able to make internet bound calls from plugins once my environment is subnet delegated?  
     You will be able to make internet bound calls from plugins **<u>only</u>** if the subnet is configured with a [NAT Gateway](/azure/nat-gateway/nat-overview)
 
-1. Can I use vNet Data Gateway for SQL connector and Custom Connector?
+### 8. Can I use vNet Data Gateway for SQL connector and Custom Connector?
 
    vNet using Azure Subnet Delegation is only supported option for SQL and Custom Connectors for outbound connectivity from Power Platform.
 
-1. Can I update the subnet IP address range after it has been delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
+### 9. Can I update the subnet IP address range after it has been delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
    No, you cannot update the IP address range of the subnet once it has been delegated to "Microsoft.PowerPlatform/enterprisePolicies".
 
    Dataverse Plugin and Subnet Delegation Specific questions
 
-1. My Vnet has custom DNS (Domain Name Service) configured. Will Power Platform use that?  
+### 10. My Vnet has custom DNS (Domain Name Service) configured. Will Power Platform use that?  
 
    Yes, Power Platform will use the custom DNS configured within the VNET (Virtual network) that holds the delegated subnet to resolve all the endpoints. This means that once the environment is delegated, you may need to update plugin code/ connector code to use the correct URL of the endpoint so that your custom DNS is able to resolve them.
 
-1. My environment has ISV provided plugins. Would they also be subjected to run in the delegated subnet?  
+### 11. My environment has ISV provided plugins. Would they also be subjected to run in the delegated subnet?  
 
    Yes, all customer plugins and ISV plugins will be run using your subnet. So, if the ISV plugins have outbound connectivity, those URLs might need to be allow listed in your firewall.
 
-1. I am planning to use this feature to connect to my on-premises endpoints and those endpoints TLS (Transport Layer Security) certificates are not signed by well-known Root CA (certification authorities). Do you support such scenarios?
+### 12. I am planning to use this feature to connect to my on-premises endpoints and those endpoints TLS (Transport Layer Security) certificates are not signed by well-known Root CA (certification authorities). Do you support such scenarios?
 
    No, even though the plugins/ connectors are running within customer subnet, we still need to ensure that the endpoint presents a TLS certificate with the complete chain and the Root CA is well-known and it is not possible to add your custom Root CA to our list of well-known CAs (certification authorities).
 
-1. Is there any recommendation on setup of vNet 's within customer tenant?
+### 13. Is there any recommendation on setup of vNet 's within customer tenant?
 
    No, we do not recommend any specific topology, however Hub and spoke topology is widely used by our customers.
