@@ -138,7 +138,7 @@ Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commond
 
 ### Why is this needed?
 
-The [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector has replaced the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) as the main connector for automating data, events, and actions in Microsoft Dataverse. It provides additional actions, triggers, and improvements to working with Dataverse, including better reliability and faster performance when used in then same Power Platform environment.
+The [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector has replaced the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) as the main connector for automating data, events, and actions in Microsoft Dataverse. It provides additional actions, triggers, and improvements to working with Dataverse, including better reliability and faster performance when used in the same Power Platform environment.
 
 ### Impact
 
