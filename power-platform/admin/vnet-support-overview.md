@@ -11,15 +11,19 @@ search.audienceType: admin
 ms.custom: "admin-security"
 ---
 
-# Virtual Network support for Power Platform overview
+# Virtual Network support for Power Platform overview (Preview)
 
-[Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform integrates your Power Platform services to the [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview), which manages outbound traffic at runtime. Therefore, you don't need to route outbound traffic from Power Platform services to the internet.
+The [Virtual Network](/azure/virtual-network/virtual-networks-overview) (VNet) support for Power Platform helps you integrate from Microsoft Cloud services to resources within your virtual network without the need of exposing your resources over public internet. VNet support for Power Platform is using [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manages outbound traffic at runtime from Power Platform. Therefore, you don't need to route outbound traffic from Power Platform services to the internet.
+
+vNet support for Power Platform is optimized to handle API workloads i.e. to handle high request volume, low execution time for requests and [VNet Data Gateway](https://learn.microsoft.com/en-us/data-integration/vnet/overview) is optimized to handle ETL workloads i.e. to handle low request volumne, high execution time for requests.
+
+vNet support for Power Platform is the only recommended option to secure outbound connectivity from Power Platform services except [Power BI](https://learn.microsoft.com/en-us/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform dataflows](https://learn.microsoft.com/en-us/data-integration/vnet/data-gateway-power-platform-dataflows) (PPDF). Power BI and PPDF will continue to use vNet Data Gateway.
 
 Using Virtual Network, you can:
 
-- Integrate Dataverse and Power Platform with your own services.
+- Integrate Dataverse and Power Platform with your own services within your network.
 
-  For example, Dataverse or Power Platform components can call resources owned by your enterprise app. These resources can be either Azure-hosted or on-premises.
+  For example, Dataverse or Power Platform components can call resources owned by your enterprise . These resources can be either Azure-hosted or on-premises.
 - Use plug-ins or connectors to make outbound calls.
 
   For example, a call from a Dataverse plug-in is made to a Snowflake instance hosted on Azure.
@@ -52,7 +56,7 @@ With a virtual network, you can use secured, private, outbound connectivity with
 
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
 
-### Secure access using connectors
+### Secure access using connectors (coming soon)
 
 With these connectors in a virtual network, use Power Platform to securely access services or manipulate and protect data from your apps. You can connect from Power Apps, Power Automate, and Dynamics 365 Apps.
 
@@ -106,7 +110,7 @@ The current status of services onboarded to the Azure subnet delegation in Virtu
 
 ## Licensing requirements
 
-Licensing requirements for Virtual Network support for Power Platform are announced when the service is closer to general availability.
+Licensing requirements for Virtual Network support for Power Platform will be announced when the service is closer to general availability.
 
 ## How to enable Virtual Network support on a Power Platform environment
 
