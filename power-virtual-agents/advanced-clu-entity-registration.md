@@ -8,7 +8,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "advanced-authoring, CLU, ceX"
-ms.service: power-virtual-agents
 
 ---
 
