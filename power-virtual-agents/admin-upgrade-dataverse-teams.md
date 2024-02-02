@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "environments, admin, ceX, teams"
-ms.service: power-virtual-agents
 
 ---
 
