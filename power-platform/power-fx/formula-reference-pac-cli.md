@@ -63,6 +63,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
+**[ColumnNames and Column functions](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+
 **[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
 
 **[Concatenate](reference/function-concatenate.md)** – Concatenates strings.
