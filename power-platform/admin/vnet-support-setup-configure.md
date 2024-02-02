@@ -11,7 +11,7 @@ search.audienceType: admin
 ms.custom: "admin-security"
 ---
 
-# Setup and configure Virtual Network support for Power Platform (preview)
+# Set up and configure Virtual Network support for Power Platform (preview)
 
 This article helps you enable Azure Virtual Network support for Power Platform environments.
 
@@ -55,7 +55,7 @@ Here, you register Microsoft.PowerPlatform as a resource provider for the subscr
 
 ### Step 2: Setup Virtual Network and subnets
 
-Users in the Azure Network Administrator role need to setup a virtual network and have at least two subnets: primary and failover. The failover subnet must be in a different region. For example, if your primary subnet is in West US, then failover must be in EAST US.
+Users in the Azure Network Administrator role need to set up a virtual network and have at least two subnets: primary and failover. The failover subnet must be in a different region. For example, if your primary subnet is in West US, then failover must be in EAST US.
 
 > [!NOTE]
 > Power Platform doesn't support the CENTRAL US region.
@@ -98,7 +98,7 @@ With Virtual Network support enabled for your Power Platform environment, you ca
 
 - Select **History** from the menu bar.
 
-  You see that the enterprise policies linked with your environment is successful.
+  You see the enterprise policies link with your environment is successful.
 
   :::image type="content" source="media/vnet-support/vnet-success-linked.png" alt-text="Screenshot showing your virtual network is linked to your environment." lightbox="media/vnet-support/vnet-success-linked.png":::
 
