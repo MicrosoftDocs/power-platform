@@ -7,7 +7,6 @@ author: iaanw
 ms.author: iawilt
 ms.custom: ceX
 manager: leeclontz
-ms.service: power-virtual-agents
 
 ---
 

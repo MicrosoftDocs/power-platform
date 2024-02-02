@@ -10,7 +10,6 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: mboninco
 ms.custom: analysis, ceX
-ms.service: power-virtual-agents
 
 ---
 
