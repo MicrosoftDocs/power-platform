@@ -15,7 +15,7 @@ ms.custom: "admin-security"
 
 The [Virtual Network](/azure/virtual-network/virtual-networks-overview) (VNet) support for Power Platform helps you integrate from Microsoft Cloud services to resources within your virtual network without the need of exposing your resources over public internet. VNet support for Power Platform is using [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manages outbound traffic at runtime from Power Platform. Therefore, you don't need to route outbound traffic from Power Platform services to the internet.
 
-vNet support for Power Platform is optimized to handle API workloads i.e. to handle high request volume, low execution time for requests and [VNet Data Gateway](https://learn.microsoft.com/en-us/data-integration/vnet/overview) is optimized to handle ETL workloads i.e. to handle low request volumne, high execution time for requests.
+vNet support for Power Platform is optimized to handle API (Application Programming Interface) workloads i.e. to handle high request volume, low execution time for requests and [VNet Data Gateway](https://learn.microsoft.com/en-us/data-integration/vnet/overview) is optimized to handle ETL (Extract, Transform, Load) workloads i.e. to handle low request volume, high execution time for requests.
 
 vNet support for Power Platform is the only recommended option to secure outbound connectivity from Power Platform services except [Power BI](https://learn.microsoft.com/en-us/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform dataflows](https://learn.microsoft.com/en-us/data-integration/vnet/data-gateway-power-platform-dataflows) (PPDF). Power BI and PPDF will continue to use vNet Data Gateway.
 
