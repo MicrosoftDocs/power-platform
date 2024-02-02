@@ -9,8 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "configuration, fundamentals, ceX"
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Key concepts - Configure Microsoft Copilot Studio

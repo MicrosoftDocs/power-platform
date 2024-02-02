@@ -10,8 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: clmori
 ms.custom: configuration, ceX
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Configure web and Direct Line channel security

@@ -8,6 +8,8 @@ ms.custom:
 ms.topic: article
 ms.author: sericks
 ms.reviewer: tapanm
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 # FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform 

@@ -9,8 +9,8 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: admin, dlp
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
+
 ---
 
 # Data loss prevention example - Require end-user authentication for Microsoft Copilot Studio copilots
@@ -29,7 +29,7 @@ See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](a
 
 ## Configure DLP to require authentication in the Power Platform admin center
 
-[!INCLUDE [Preview documentation notice](includes/dlp-basic-config.md)]
+[!INCLUDE [Shared DLP configuration instructions](includes/dlp-basic-config.md)]
 
 ### Add the connector
 

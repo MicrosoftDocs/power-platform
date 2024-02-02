@@ -3,7 +3,7 @@ title: "Unified authoring canvas migration guidance"
 description: "Guidance to migrate your Microsoft Copilot Studio bots to the updated unified authoring canvas. "
 ms.date: 05/23/2023
 ms.topic: how-to
-author: sarahc916
+author: iaanw
 manager: leeclontz
 ms.author: scritchley
 ms.reviewer: iawilt
@@ -144,11 +144,11 @@ With any application, it's vital that companies ensure there's enough time withi
 
 There are a range of resources available to assist with business application technology deployments, and best practices around conversational projects using Microsoft Copilot Studio. Check out the links below to learn more:
 
-- [Success By Design](dynamics365/guidance/implementation-guide/success-by-design)
+- [Success By Design](/dynamics365/guidance/implementation-guide/success-by-design)
 
 - [PowerCAT Microsoft Copilot Studio Playbook](https://powervirtualagents.microsoft.com/en-us/blog/announcing-power-virtual-agents-customer-playbook/)
 
-- [Microsoft Copilot Studio Bot Testing Framework by PowerCAT](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotTestFramework)
+- [Microsoft Copilot Studio Bot Testing Framework by PowerCAT](https://github.com/microsoft/CopilotStudioSamples/tree/master/PVATestFramework)
 
 >[!WARNING]
 >Ensure you have completed all of your testing and complied with your organizational policies before deploying your migrated bot to production.

@@ -10,6 +10,7 @@ ms.author: mihaelab
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.collection: bap-ai-copilot
 ---
 # Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365
 

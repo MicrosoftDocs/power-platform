@@ -3,14 +3,13 @@ title: Security and governance in Copilot Studio
 description: Use the security and governance controls in Power Platform and Microsoft 365 to manage the security of your data when creating, publishing, and using copilots built with Copilot Studio.
 keywords: "PVA"
 ms.date: 11/14/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: digantak
 ms.custom: plugin
-ms.collection: virtual-agent
+
 ---
 
 # Copilot Studio security and governance
@@ -35,7 +34,7 @@ To further govern and secure Copilot Studio using generative AI features in your
 
     -   Your admin can disable Copilot for your organization by creating a support request.
 
-2.  [Disable data movement across geographic locations for Copilot Studio generative AI features outside the United States](manage-data-movement-outside-us.md#disable-data-across-geographic-locations-outside-the-united-state)). 
+2.  [Disable data movement across geographic locations for Copilot Studio generative AI features outside the United States](manage-data-movement-outside-us.md#disable-data-across-geographic-locations-outside-the-united-states)). 
 
 3.  [Enable Copilot Studio conversational plugins](copilot-conversational-plugins.md).
 

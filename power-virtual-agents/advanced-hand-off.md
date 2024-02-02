@@ -9,8 +9,7 @@ author: iaanw
 ms.author: iawilt
 ms.reviewer: pawant
 manager: leeclontz
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ms.custom: handoff, ceX, advanced-authoring
 ---
 

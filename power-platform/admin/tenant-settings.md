@@ -8,6 +8,8 @@ ms.author: ampatra
 ms.reviewer: sericks
 contributors:
   - marcelbf
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 # Tenant settings

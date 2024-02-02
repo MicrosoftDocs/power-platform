@@ -9,11 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: fundamentals, portal, ceX
-ms.service: power-virtual-agents
-ms.collection:
-- virtual-agent
-- get-started
-searchScope: "Copilot Studio"
 ---
 
 # Quickstart: Create and deploy a Microsoft Copilot Studio copilot

@@ -6,8 +6,7 @@ ms.date: 10/24/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-ms.collection: power-virtual-agents
-ms.service: power-virtual-agents
+
 ---
 
 

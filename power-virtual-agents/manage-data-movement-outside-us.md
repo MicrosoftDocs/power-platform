@@ -3,14 +3,13 @@ title: Move data across geographic locations for generative AI features outside 
 description: Enable data movement outside the United States for generative AI features, such as boost conversations, generative answers, and plugins.
 keywords: "PVA"
 ms.date: 11/14/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: digantak
 ms.custom: plugin
-ms.collection: virtual-agent
+
 ---
 
 # Configure data movement across geographic locations for generative AI features outside United States

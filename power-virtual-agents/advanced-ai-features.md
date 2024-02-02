@@ -9,8 +9,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: "advanced-authoring, ceX"
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # AI features for Teams and Classic bots

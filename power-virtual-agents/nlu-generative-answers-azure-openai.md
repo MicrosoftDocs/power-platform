@@ -7,11 +7,9 @@ ms.topic: how-to
 author: mainguy70
 ms.author: iawilt
 ms.reviewer: iawilt
-ms.collection: virtual-agent
-ms.service: power-virtual-agents
+
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+
 ---
 
 # Connect your data to Azure OpenAI for generative answers

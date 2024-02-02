@@ -3,13 +3,12 @@ title: "Sending event activities"
 description: "Use nodes to send event activities."
 keywords: "PVA"
 ms.date: 04/05/2022
-ms.service: power-virtual-agents
 ms.topic: article
 author: KendalBond007
 ms.author: iawilt
 ms.reviewer: clmori
 ms.custom: authoring, ceX
-ms.collection: virtual-agent
+
 ---
 
 # Sending event activities

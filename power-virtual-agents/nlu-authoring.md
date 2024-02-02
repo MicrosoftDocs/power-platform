@@ -7,10 +7,8 @@ ms.topic: how-to
 author: KendalBond007
 ms.author: iawilt
 ms.reviewer: 
-ms.collection: virtual-agent
-ms.service: power-virtual-agents
+
 ms.search.region: USA
-searchScope: "Power Virtual Agents"
 ---
 
 # Create and edit with Copilot Studio

@@ -4,6 +4,6 @@ Instructions: Remove comments and this line. Add appropriate example below
 ### Example
 
 ```powershell
-pac copilot predict
+pac copilot model prepare-fetch
 ``` 
 -->

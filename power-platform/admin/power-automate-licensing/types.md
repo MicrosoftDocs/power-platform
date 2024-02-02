@@ -12,6 +12,7 @@ ms.author: prkoduku
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
+ms.collection: bap-ai-copilot
 ---
 
 # Types of Power Automate licenses

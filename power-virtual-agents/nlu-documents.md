@@ -6,10 +6,8 @@ ms.date: 09/29/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-ms.collection: virtual-agent
-ms.service: power-virtual-agents
-searchScope:
-  - "Power Virtual Agents"
+
+
 ---
 
 # Use uploaded documents for generative answers (preview)

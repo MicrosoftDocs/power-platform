@@ -8,8 +8,7 @@ author: KendalBond007
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "authoring, fundamentals, ce06092020"
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Key concepts - Authoring Microsoft Copilot Studio copilots
