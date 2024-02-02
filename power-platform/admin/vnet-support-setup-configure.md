@@ -80,7 +80,7 @@ Users in the Azure Network Administrator role need to set up a virtual network a
 
 ### Step 4: Grant read access to the Power Platform admin
 
-[Grant read access]((/power-platform/admin/customer-managed-key#grant-the-power-platform-admin-privilege-to-read-enterprise-policy)) to the user in the Power Platform administrator role, so they can read the enterprise policy.
+[Grant read access](customer-managed-key#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) to the user in the Power Platform administrator role, so they can read the enterprise policy.
 
 ### Step 5: Configure your Power Platform environment
 
