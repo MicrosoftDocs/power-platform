@@ -37,7 +37,7 @@ Unlike a traditional component model that creates a hard-coded integration point
 - End users must have a license to use Microsoft Copilot for Microsoft 365.
 - Your M365 Tenant must also be participating in the [Microsoft Copilot Plugins Preview](https://aka.ms/Copilot_Plugin_Preview)
 - Microsoft Copilot Studio application must be a Microsoft Copilot Studio copilot, not a Power Virtual Agents "Classic" bot.
-- Before end-to-end works, the Microsoft 365 Tenant Admin needs to enable the **Dynamics and Microsoft Copilot Studio** Integrated Apps category in the Microsoft Admin Center.
+- Before end-to-end works, the Microsoft 365 Tenant Admin needs to enable the **Dynamics 365 and Microsoft Copilot Studio** Integrated Apps category in the Microsoft Admin Center.
 
 > [!IMPORTANT]
 > In this preview, there are some limitations:
@@ -94,8 +94,8 @@ To publish your conversational plugin:
 
     ![Publish Plugin](media/copilot-conversational-plugins/publish-plugin.png)
 
-1. Your Admin can find the **Dataverse and Microsoft Copilot Studio** integrated app in the Microsoft Admin Center under **Settings**, then **Integrations to be reviewed and approved**. In this preview, Deploy/Block is at this category level only.
-1. Once your Tenant admin approves the Dataverse and Microsoft Copilot Studio integrated app, it should appear in the user's list of plugins in their Microsoft Copilot UI.
+1. Your Admin can find the **Dynamics 365 and Microsoft Copilot Studio** integrated app in the Microsoft Admin Center under **Settings**, then **Integrations to be reviewed and approved**. In this preview, Deploy/Block is at this category level only.
+1. Once your Tenant admin approves the integrated app, it should appear in the user's list of plugins in their Microsoft Copilot UI.
 
     ![Conversational plugins flyout](media/copilot-conversational-plugins/flyout.png)
 
