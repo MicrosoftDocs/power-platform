@@ -33,9 +33,9 @@ Subnet delegation requires configuration steps in both the Azure portal and in t
 
 - Users must be assigned the Power Platform Administrator role to complete the and configuration steps in the Power Platform admin center.
 
-Prepare Tenant for Subnet Delegation
+## Prepare Tenant for Subnet Delegation
 
-Pre-requisites
+### Pre-requisites
 
 - An Azure subscription in which you have permissions to create a virtual network, subnet, and the Enterprise Policy resources. 
 
@@ -105,7 +105,7 @@ In this step, you will be granting read access to the user in Power Platform Adm
 
 To enable vNet support in Power Platform environments, user must be in Power Platform Administrator role and must have read permission to Enterprise Policy created for Power Platform.
 
-To configure on vNet support in Power Platform environment, user in Power Platform Administrator role must follow [this](https://github.com/ritesp/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) step.
+To configure on vNet support in Power Platform environment, user in Power Platform Administrator role must follow [this](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) step.
 
 ### Validation
 
@@ -123,16 +123,6 @@ To validate it,
 
 ![A screenshot of a computer Description automatically generated](media/image3.png)
 
-## Supported services on vNet in Power Platform
-
-Following table shows the currents status of services onboarded to Azure Subnet delegation to support vNet in Power Platform.
-
-| Area       | Power Platform Services                                                   | vNet support                  |
-|------------|---------------------------------------------------------------------------|-------------------------------|
-| Dataverse  | Dataverse 3P plug-ins                                                     | Public Preview is rolling out |
-| Connectors | [Azure SQL](/connectors/sql/)            | Private Preview               |
-|            | [Azure Queue](/connectors/azurequeues/)  | Private Preview               |
-|            | [Azure Key Vault](/connectors/keyvault/) | Private Preview               |
 
 ### See also
 
