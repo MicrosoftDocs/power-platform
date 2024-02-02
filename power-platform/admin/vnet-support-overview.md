@@ -11,28 +11,33 @@ search.audienceType: admin
 ms.custom: "admin-security"
 ---
 
-# Virtual Network support for Power Platform overview (Preview)
+# Virtual Network support for Power Platform overview (preview)
 
-The [Virtual Network](/azure/virtual-network/virtual-networks-overview) (VNet) support for Power Platform helps you integrate from Microsoft Cloud services to resources within your virtual network without the need of exposing your resources over public internet. VNet support for Power Platform is using [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manages outbound traffic at runtime from Power Platform. Therefore, you don't need to route outbound traffic from Power Platform services to the internet.
+The [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform helps you integrate from Microsoft Cloud services to resources within your virtual network without exposing your resources over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic at runtime from Power Platform. Therefore, you don't need to manually route outbound traffic to the internet.
 
-vNet support for Power Platform is optimized to handle API (Application Programming Interface) workloads i.e. to handle high request volume, low execution time for requests and [VNet Data Gateway](https://learn.microsoft.com/en-us/data-integration/vnet/overview) is optimized to handle ETL (Extract, Transform, Load) workloads i.e. to handle low request volume, high execution time for requests.
+## Optimization
 
-vNet support for Power Platform is the only recommended option to secure outbound connectivity from Power Platform services except [Power BI](https://learn.microsoft.com/en-us/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform dataflows](https://learn.microsoft.com/en-us/data-integration/vnet/data-gateway-power-platform-dataflows) (PPDF). Power BI and PPDF will continue to use vNet Data Gateway.
+Virtual Network support for Power Platform is optimized to handle API workloads with a _high_ request volume and _low_ execution time for requests.
+
+[VNet data gateway](/data-integration/vnet/overview) is optimized to handle ETL (Extract, Transform, Load) workloads with a _low_ request volume and _high_ execution time for requests.
+
+> [!TIP]
+> Virtual Network support for Power Platform is the only recommended option to secure outbound connectivity from Power Platform services except [Power BI](/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform dataflows](/data-integration/vnet/data-gateway-power-platform-dataflows) (PPDF). Power BI and PPDF will continue to use VNet data gateway.
 
 Using Virtual Network, you can:
 
 - Integrate Dataverse and Power Platform with your own services within your network.
 
-  For example, Dataverse or Power Platform components can call resources owned by your enterprise . These resources can be either Azure-hosted or on-premises.
+  For example, Dataverse or Power Platform components can call resources owned by your enterprise. These resources can be either Azure-hosted or on-premises.
 - Use plug-ins or connectors to make outbound calls.
 
   For example, a call from a Dataverse plug-in is made to a Snowflake instance hosted on Azure.
 
 ## Private networks
 
-With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. These integrations happen on the public internet infrastructure. But a virtual network allows you to use a private network, while still integrating with cloud services.
+With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. These integrations happen on the public internet infrastructure. However, a virtual network allows you to use a private network _and_ integrate with cloud services.
 
-Azure services are protected within a virtual network through [private endpoints](/azure/private-link/private-endpoint-overview). You can bring your on-premise resources to the virtual network through [Express Route](/azure/expressroute/), which allows you to protect and monitor the entire virtual network.
+Azure services are protected within a virtual network through [private endpoints](/azure/private-link/private-endpoint-overview). You can bring your on-premises resources to the virtual network through [Express Route](/azure/expressroute/), which allows you to protect and monitor the entire virtual network.
 
 In a virtual network, you have full control over the egress traffic from Power Platform. The traffic is subjected to network policies applied by your network administrator.
 
@@ -66,7 +71,7 @@ With these connectors in a virtual network, use Power Platform to securely acces
 
 - **Azure Key Vault**: Doesn't expose secrets to the internet and protects your data from data leaks and other risks.
 
-- **Http with Microsoft Entra ID**: Authenticates with Azure AD and protects your data from external attacks and data leaks.
+- **Http with Microsoft Entra ID**: Authenticates with Microsoft Entra ID and protects your data from external attacks and data leaks.
 
 - **Azure Queue**: Doesn't expose endpoints to the public internet.
 
@@ -100,42 +105,43 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 ## Supported services
 
 The current status of services onboarded to the Azure subnet delegation for Virtual Network support for Power Platform.
-<!-- "COMING SOON" CAN HAVE NEGATIVE RAMIFICATIONS -->
-| Area       | Power Platform Services                                                   | vNet support                  |
-|------------|---------------------------------------------------------------------------|-------------------------------|
-| Dataverse  | Dataverse Plug-ins                                                        | Public preview                |
-| Connectors | Azure SQL                                                                 | Coming soon                   |
-|            | Azure Queue                                                               | Coming soon                   |
-|            | Azure Key Vault                                                           | Coming soon                   |
-|            | Http with Microsoft Entra ID                                              | Coming soon                   |
-|            | Custom                                                                    | Coming soon                   |
-|            | Azure File Storage                                                        | Coming soon                   |
-|            | Azure Blob Storage                                                        | Coming soon                   |
-|            | SFTP-SSH                                                                  | Coming soon                   |
-|            | Azure SQL Data Warehouse                                                  | Coming soon                   |
 
+| Area | Power Platform services | Virtual Network support |
+|------------|-------------------|--------------|
+| Dataverse  | Dataverse plug-ins | Public preview |
+| Connectors | Azure SQL | Coming soon |
+|            | Azure Queue | Coming soon |
+|            | Azure Key Vault | Coming soon |
+|            | Http with Microsoft Entra ID | Coming soon |
+|            | Custom | Coming soon  |
+|            | Azure File Storage | Coming soon |
+|            | Azure Blob Storage | Coming soon |
+|            | SFTP-SSH | Coming soon |
+|            | Azure SQL Data Warehouse | Coming soon |
 
 ## Licensing requirements
 
-Licensing requirements for Virtual Network support for Power Platform will be announced when the service is closer to general availability.
+Licensing requirements for Virtual Network support for Power Platform are announced when the service is closer to general availability.
 
 ## How to enable Virtual Network support on a Power Platform environment
-
-When you enable Virtual Network support in a Power Platform environment, all supported services, like a Dataverse plug-ins or a SQL connector, execute requests at runtime in your delegated subnet. Once enabled, your services are subjected to your network policies.
-
-For example, a SQL connector might try to connect to SQL through the public internet, but your network policy doesn't allow public connections to the SQL server in your virtual network. The call from the SQL connector fails.
-
-To avoid a failed connection, you can add your SQL server to your virtual network. Alternatively, if the server is in Azure, you can enable a private endpoint on Azure SQL before you enable your virtual network support in a Power Platform environment.
 
 ### Prerequisites
 
 Before enabling Virtual Network support in Power Platform:
 
-- Review your apps, flows and plug-ins code to ensure that they connect over your virtual network. Ensure they're not calling endpoints available over the public internet.
+- Review your apps, flows and plug-ins code to ensure that they connect over your virtual network. They shouldn't call endpoints available over the public internet.
 
 - If your apps, flow, and plug-ins need to connect to public endpoints, ensure that your firewall or network configuration allows such calls.
 
-## Setup and configuration
+### Considerations
+
+When you enable Virtual Network support in a Power Platform environment, all supported services, like a Dataverse plug-ins or a SQL connector, execute requests at runtime in your delegated subnet. Once enabled, your services are subjected to your network policies.
+
+For example, a SQL connector might try to connect to SQL through the public internet, but your network policy doesn't allow public connections to the SQL server in your virtual network. The call from the SQL connector fails.
+
+To avoid a failed connection, you can add a SQL server to your virtual network. Alternatively, if the server is in Azure, you can enable a private endpoint on Azure SQL before you enable your virtual network support in a Power Platform environment.
+
+### Setup and configuration
 
 [Setup and configure Azure Virtual Network support for Power Platform](https://microsoft.sharepoint.com/:w:/t/CDS-Sandbox/Ea8ss50L1opIppTmEZAbDgEBwYjvdh4vx0EICTGcG_qAiQ?e=IWriek).
 
@@ -157,53 +163,56 @@ Virtual Network support is used for Power Platform API workloads as the requests
 
 ### 2. How can you ensure a virtual network subnet or data gateway from one customer isn't used by another customer in Power Platform?
 
-Virtual Network support in Power Platform ensures that one customer cannot access the subnets of other customers by having following measures in place:
+Virtual Network support in Power Platform ensures customer privacy due to:
 
 - Virtual Network support in Power Platform uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview).
 
-- Every Power Platform environment is linked to a particular vNet/subnet. Only calls from that environment are allowed to access that vNet.
+- Each Power Platform environment is linked to one virtual network subnet. Only calls from that environment are allowed to access that virtual network.
 
-- Azure Subnet delegation is a feature that allows you to designate a specific subnet for an Azure PaaS (platform as a service) service of your choice that needs to be injected into your virtual network. When you delegate the subnet to an Azure service (Power Platform Enterprise Policy), you allow that service to establish some basic network configuration rules for the subnet, which help the Azure service operate their instances in a stable manner. No other azure service can have access to this subnet. Even if someone tries to delegate a subnet which is used by other azure service, it will fail.
+- Delegation allows you to designate a specific subnet for any Azure PaaS that needs to be injected into your virtual network.
 
-### 3. Does it support failover?
+### 3. Does Virtual Network support in Power Platform support failover?
 
-   Yes, vNet support in Power Platform supports failover. It will be mandatory for you to delegate a primary and failover vNet and Subnets during the configuration in public preview.
+   Yes. You're required to delegate a primary and failover virtual network and subnets during the configuration in public preview.
 
-### 4. How can Power Platform Environment in one region connect to resources hosted in another region?
+### 4. How can a Power Platform environment in one region connect to resources hosted in another region?
 
-   vNet linked to Power Platform environment must reside in the [Power Platform environment's regions](/power-platform/admin/regions-overview#what-regions-are-available). If an existing vNet is in other region, one will need to create a new vNet in environment region and then use [vNet peering](/azure/virtual-network/virtual-network-peering-overview) between vNet across regions.
+  Virtual Network linked to a Power Platform environment must reside in the [Power Platform environment's regions](/power-platform/admin/regions-overview#what-regions-are-available). If an existing Virtual Network is in another region, create a new Virtual Network in that region and use [virtual network peering](/azure/virtual-network/virtual-network-peering-overview) to bridge the two regions.
 
-### 5. Will I be able to monitor egress traffic from these delegated subnets?  
-    Yes, you can use NSGs (National Security Group) and /or firewalls to monitor egress traffic from delegated subnets.
+### 5. Can I monitor egress traffic from delegated subnets?
 
-### 6. How many IPs does Power Platform require in the subnet to be delegated?  
-    We currently request at least /24 CIDR (Classless Inter-domain Routing) (255 IPs) in the subnet that will be delegated to Power Platform. If you are planning to delegate the same subnet to multiple environments, then you may need to provision more IPs within that subnet.
+Yes. You can use National Security Group and/or firewalls to monitor egress traffic from delegated subnets.
 
-### 7. Will I be able to make internet bound calls from plugins once my environment is subnet delegated?  
-    You will be able to make internet bound calls from plugins **<u>only</u>** if the subnet is configured with a [NAT Gateway](/azure/nat-gateway/nat-overview)
+### 6. How many IPs does Power Platform require in the subnet to be delegated?
 
-### 8. Can I use vNet Data Gateway for SQL connector and Custom Connector?
+At least 24 Classless Inter-domain Routing (CIDR), or 255 IPs, is required in the subnet delegated to Power Platform. If you want to delegate the same subnet to multiple environments, you might need to provision more IPs within that subnet.
 
-   vNet using Azure Subnet Delegation is only supported option for SQL and Custom Connectors for outbound connectivity from Power Platform.
+### 7. Can I make internet bound calls from plug-ins once my environment is subnet delegated?
 
-### 9. Can I update the subnet IP address range after it has been delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
+Yes. You can make internet bound calls from plugins _only_ if the subnet is configured with a [NAT Gateway](/azure/nat-gateway/nat-overview).
 
-   No, you cannot update the IP address range of the subnet once it has been delegated to "Microsoft.PowerPlatform/enterprisePolicies".
+### 8. Can I use vNet data gateway for SQL connectors and custom connectors?
 
-   Dataverse Plugin and Subnet Delegation Specific questions
+Virtual Network using Azure subnet delegation is the only supported option for SQL and custom connectors for outbound connectivity from Power Platform.
 
-### 10. My Vnet has custom DNS (Domain Name Service) configured. Will Power Platform use that?  
+### 9. Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-   Yes, Power Platform will use the custom DNS configured within the VNET (Virtual network) that holds the delegated subnet to resolve all the endpoints. This means that once the environment is delegated, you may need to update plugin code/ connector code to use the correct URL of the endpoint so that your custom DNS is able to resolve them.
+No. You can't update the IP address range of the subnet once it's delegated to "Microsoft.PowerPlatform/enterprisePolicies."
 
-### 11. My environment has ISV provided plugins. Would they also be subjected to run in the delegated subnet?  
+## FAQ - Dataverse plug-in and subnet delegation questions
 
-   Yes, all customer plugins and ISV plugins will be run using your subnet. So, if the ISV plugins have outbound connectivity, those URLs might need to be allow listed in your firewall.
+### 1. My virtual network has a custom DNS configured. Does Power Platform use my custom DNS?  
 
-### 12. I am planning to use this feature to connect to my on-premises endpoints and those endpoints TLS (Transport Layer Security) certificates are not signed by well-known Root CA (certification authorities). Do you support such scenarios?
+Yes, Power Platform uses the custom DNS configured within the virtual network that holds the delegated subnet to resolve all the endpoints. Once the environment is delegated, you can update plug-in or connector code to use the correct endpoint so that your custom DNS is able to resolve them.
 
-   No, even though the plugins/ connectors are running within customer subnet, we still need to ensure that the endpoint presents a TLS certificate with the complete chain and the Root CA is well-known and it is not possible to add your custom Root CA to our list of well-known CAs (certification authorities).
+### 2. My environment has ISV-provided plugins. Would these plug-ins run in the delegated subnet?  
 
-### 13. Is there any recommendation on setup of vNet 's within customer tenant?
+Yes. All customer plug-ins and ISV plug-ins can run, using your subnet. If the ISV plug-ins have outbound connectivity, those URLs might need to be listed in your firewall.
 
-   No, we do not recommend any specific topology, however Hub and spoke topology is widely used by our customers.
+### 3. My on-premises endpoint TLS certificates aren't signed by well-known root certification authorities (CA). Do you support unknown certificates?
+
+No. We must ensure the endpoint presents a TLS certificate with the complete chain.  It's not possible to add your custom root CA to our list of well-known CAs.
+
+### 4. What's the recommended setup of a virtual network within a customer tenant?
+
+We don't recommend any specific topology, however the hub and spoke topology network model is widely used by our customers.
