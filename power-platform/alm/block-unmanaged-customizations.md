@@ -54,7 +54,7 @@ If you must use one of the below apps or features in an environment where block 
 | Legacy workflows     |  Enable and disable of legacy workflows doesn't work.       |
 |Field Service     |  Enabling or adjusting the enhanced auto-numbering doesn't work. However, default auto-numbering continues to work.   |
 |Connected Field Service   | Install doesn't work.         |
-|Field Service Mobile     |  Install of geofencing solution doesn't work. Update doesn't work when relationships created during initial install are deleted.        |
+|Field Service Mobile     |  Install of geofencing solution doesn't work. <br />Update doesn't work when relationships created during initial install are deleted.        |
 |Resource Scheduling      | Enable of scheduling table and selection option to auto create relationships doesn't work.        |
 |Sales Accelerator     |  Enabling Sales Accelerator or modifying settings, enabling leads data hygiene, creating or editing sequences, configuring work assignment, creating or editing segments, don't work.        |
 
