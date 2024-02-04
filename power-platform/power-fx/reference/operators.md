@@ -280,7 +280,7 @@ Some data sources such as SharePoint and Microsoft Dataverse have two different 
 
 Since display names are easier to understand, Canvas apps will suggest them as choices and not suggest logical names. Although logical names aren't suggested, they can still be used if typed indirectly.
 
-For example, imagine you've added a **Custom Field** to a table in Dataverse. A logical name will be assigned for you by the system, which you can modify only when creating the field. The result would look similar to:
+For example, imagine you've added **Custom Field** to a table in Dataverse. A logical name will be assigned for you by the system, which you can modify only when creating the field. The result would look similar to:
 
 > [!div class="mx-imgBorder"]  
 > ![Accounts table with Custom Field added, showing a display name of "Custom Field" and a logical name of "cr5e3_customfield."](media/operators/customfield_portal.png)
@@ -307,7 +307,7 @@ Behind the scenes, a mapping is maintained between the display names seen in for
 
 ## Name disambiguation
 
-Since display names aren't unique, the same display name may appear more than once in the same table. When this happens, the logical name will be added to the end of the display name in parenthesis for one of more of the conflicting names. Building on the example above, if there was a second field with the same display name of **Custom Field** with a logical name of **cra3a_customfieldalt** then the suggestions would show:
+Since display names aren't unique, the same display name may appear more than once in the same table. When this happens, the logical name will be added to the end of the display name in parenthesis for one or more of the conflicting names. Building on the example above, if there was a second field with the same display name of **Custom Field** with a logical name of **cra3a_customfieldalt** then the suggestions would show:
 
 > [!div class="mx-imgBorder"]  
 > ![Studio formula bar showing the use of the logical name cr5e3_customfieldalt to disambiguate the two versions of "Custom Field."](media/operators/customfield_suggest_alt.png)
@@ -316,7 +316,7 @@ Name disambiguation strings are added in other situations where name conflicts o
 
 ## Disambiguation operator
 
-Some functions create [record scopes](/power-apps/maker/canvas-apps/working-with-tables#record-scope) for accessing the fields of table while processing each record, such as **Filter**, **AddColumns**, and **Sum**. Field names added with the record scope override the same names from elsewhere in the app. When this happens, you can still access values from outside the record scope with the **@** disambiguation operator:
+Some functions create [record scopes](/power-apps/maker/canvas-apps/working-with-tables#record-scope) for accessing the fields of a table while processing each record, such as **Filter**, **AddColumns**, and **Sum**. Field names added with the record scope override the same names from elsewhere in the app. When this happens, you can still access values from outside the record scope with the **@** disambiguation operator:
 
 - To access values from nested record scopes, use the **@** operator with the name of the table being operated upon using this pattern:<br>_Table_**[@**_FieldName_**]**
 - To access global values, such as data sources, collections, and context variables, use the pattern **[@**_ObjectName_**]** (without a table designation).
