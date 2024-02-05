@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/20/2023
+ms.date: 02/05/2024
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -416,109 +416,10 @@ Several features use system jobs to perform tasks automatically, including workf
 
 Select the system job name to open details about your delete job.
 
-# Access audit data using Synapse
-You can use [Azure Synapse link for Dataverse](https://learn.microsoft.com/power-apps/maker/data-platform/azure-synapse-link-synapse) to link the audit table and create reports using Power BI to meet your external and internal auditing, compliance and governance needs. You create an Azure Data lake gen2 in the same region as your Dataverse environment and your audit table data is automatically pulled into your data lake.
+## Access audit data using Azure Synapse Link for Dataverse
 
-[Pre-requisites](https://learn.microsoft.com/power-apps/maker/data-platform/azure-synapse-link-synapse#prerequisites)
-1. Admin rights to an Azure subscription with permissions to create resource groups, workspace, etc.
-1. Dataverse administrator security role.
+You can use Azure Synapse link for Dataverse to link the audit table and create reports using Power BI to meet your external and internal auditing, compliance, and governance needs. More information: [Access audit data using Azure Synapse Link for Dataverse and Power BI](audit-data-azure-synapse-link.md)
 
-Azure admin steps (for creating an Azure Synapse link):
-1.	Create [Resource group](https://learn.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group) .
-1.	Create [Azure data lake storage Gen 2 account with hierarchical directory enabled](https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-introduction#data-lake-storage-gen2).
-1.	Create a **Synapse workspace**.
-1.	Create a [spark pool for the Synapse workspace](https://learn.microsoft.com/power-apps/maker/data-platform/azure-synapse-link-delta-lake#recommended-spark-pool-configuration) . 
-1.	Grant storage account and synapse workspace permissions to Power Platform Maker admin. [See prerequisites:](https://learn.microsoft.com/power-apps/maker/data-platform/azure-synapse-link-synapse#prerequisites)
-
-Power Platform Maker admin steps:
-1.	Connect Dataverse to your Synapse workspace
-2.	Verify the Auditing table’s sync status
-
-## Create an Azure Synapse link
-1.	Sign in to [Azure portal](https://portal.azure.com/).
-1.	Create a [Resource group](https://learn.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups ).
-1.	Create a [Storage account](https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal).
-   
-    Under the **Project details:**
-  	
-    a.	Select the Subscription that the Resource group was created from. 
-    
-    b.	Select the Resource group that you just created from above.
-    
-    c.	Enter a Storage account name.
-  	
-  	Click the **Advanced** tab and enable the **Hierarchical Namespace** option.
-<<1st diagram>> link here
-    
-1. 	Create a [Synapse workspace](https://learn.microsoft.com/azure/synapse-analytics/get-started-create-workspace).
-    Under the **Project details:**
-   	
-    a.	Select the Subscription that the Resource group was created from.
-   	
-    b.	Select the Resource group that you just created from above.
-   	
-    c.	Workspace name - Pick any globally unique name.
-   	
-    d.	Region - Pick the region where your Dataverse environment is in.
-   	
-    e.	Select the Storage account name that you have created above in the Account name.
-   	
-    f.	Click the Create new option under the File system name.
-   	
-    g.	Enter a Name for the Data Lake Storage Gen2 file system.
-
-1. Create a [spark pool for the Synapse workspace](https://learn.microsoft.com/azure/synapse-analytics/quickstart-create-apache-spark-pool-portal).
-    a.	Go to the resource group of the Synapse workspace that was created above.
-   
-    b.	The storage account and the Synapse workspace are listed under the Resources.
-   
-    c.	Select the Synapse workspace you created in the above step.
-   
-    d.	Click on the +New Apache Spark pool action to create a spark pool.
-   
-    On the new **Apache Spark pool page:**
-    i.	Enter an Apache spark pool name.
-   
-    ii.	Enter ‘5’ in the Number of nodes.
-   
-    iii.Click on the Additional settings tab.
-   
-    iv.	Enter ‘5’ in the Number of minutes idle.
-   
-  > [!NOTE]   
-  > There are no costs incurred with the creation of Spark pools. Charges are only incurred once a Spark job is executed on the target Spark pool and the Spark instance is instantiated on demand. These costs are related to the usage of Azure Synapse workspace Spark and are billed monthly. The cost of conducting Spark computing mainly depends on the time interval for incremental update and the data volumes. More information: [Azure Synapse Analytics pricing](https://azure.microsoft.com/pricing/details/synapse-analytics/).
-> 
-  > It's important to take these additional costs into consideration when deciding to use this feature as they are not optional and must be paid in order to continue using this feature.
->
-
-6. Grant Storage account access to the Power Apps admin who will be connecting the Dataverse tables to this storage account.
-   
-   a. Click on the Access control (IAM) option.
-   
-   b. Select the Role assignments tab.
-   
-   c. Click on the + Add button.
-   
-   d. Under the Add role assignment, select the Members tab.
-   
-   e. Select the Power Apps admin member.
-   
-   f. Click on the Privileged administrator roles tab.
-   
-   g. Enter owner in the Search box.
-   
-   h.Click on the **Storage Account contributor.**
-   
-   i.Check the Allow user to assign all roles (highly privileged) in What user can do.
-
-Repeat the above steps and assign the following roles:
-
-    i.Storage Blob Data contributor
-    
-    ii.Storage Blob Data owner
-
-
- 
 ### See also
 
 [Auditing overview](/power-apps/developer/data-platform/auditing-overview) <br />
