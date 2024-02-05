@@ -18,7 +18,7 @@ search.audienceType:
 
 Initial paragraph (introduction)
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Use environment groups
 
