@@ -76,7 +76,7 @@ The course includes:
 - Export and import copilots, using solutions
 - Create a copilot in Microsoft Teams
 - Topic design
-- Extend your copilot using Bot Framework Skill (optional)
+- Extend your copilot using Copilot Framework Skill (optional)
 - Add a telephone number to your copilot using AudioCodes (optional)
 
 ### Copilot Studio Architecture Series

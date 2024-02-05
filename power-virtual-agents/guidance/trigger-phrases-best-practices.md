@@ -70,7 +70,7 @@ When updating trigger phrases, or when merging or splitting topics, there are mu
 
 > [!div class="checklist"]
 >
-> - An immediate change in copilot behavior, which can be observed through the "test bot" canvas (for example, a topic that's now triggering or not based on trigger phrase updates).
+> - An immediate change in copilot behavior, which can be observed through the "test copilot" canvas (for example, a topic that's now triggering or not based on trigger phrase updates).
 > - A change after copilot deployment and facing traffic, which translates to higher or lower deflection (non-escalation) rates. This can be observed from the analytics tab in Microsoft Copilot Studio.
 
 > [!TIP]

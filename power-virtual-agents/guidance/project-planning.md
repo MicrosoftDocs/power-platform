@@ -33,7 +33,7 @@ Setting up an adoption platform requires several workstreams that can execute in
 
 The following five workstreams summarize and describe responsibilities:
 
-### Bot building
+### Copilot building
 
 1. Building out related content for copilot use cases.
 1. Content creation and development tasks.
