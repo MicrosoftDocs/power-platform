@@ -79,7 +79,25 @@ Microsoft PowerPlatform CLI
 Version: 1.30.3+g0f0e0b9
 ```
 
-For [Power Platform CLI for Windows](../howto/install-cli-msi.md), you can type `pac use` and press <kbd>Enter<kbd> to list the versions installed on your system.
+For [Power Platform CLI for Windows](../howto/install-cli-msi.md): 
+
+* You can type `pac use` and press <kbd>Enter</kbd> to list installed versions.
+* If you have multiple versions installed on your system then you can type `pac use <CLI version number>` and press <kbd>Enter</kbd> to use a specific version.
+
+```
+C:\Users\snizar> pac use
+  1.29.11 (In Use)
+  1.30.3
+  1.30.6 (Latest)
+C:\Users\snizar> pac use 1.30.6
+Now using version 1.30.6 of the Microsoft PowerApps CLI.
+C:\Users\snizar>
+C:\Users\snizar> pac use
+  1.29.11
+  1.30.3
+  1.30.6 (In Use) (Latest)
+C:\Users\snizar>
+```
 
 ## Manage auth profiles
 
