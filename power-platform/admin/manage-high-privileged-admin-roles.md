@@ -27,8 +27,7 @@ Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileg
 ## Prerequisites
 
 - Remove old system administrator role assignments in your environments. You can use PowerShell scripts to inventory and remove unwanted users from the **System Administrator** role in one or more Power Platform environments.
-
-- Respond to the preview request through [Microsoft Forms](https://forms.office.com/r/3Mp38A0TDA). Then wait for confirmation from Microsoft, confirming the feature is enabled on your tenant.
+- You must sign up for the preview by filling out the [preview sign-up form](https://go.microsoft.com/fwlink/?linkid=2259929).
 
 ## Changes to feature support
 
