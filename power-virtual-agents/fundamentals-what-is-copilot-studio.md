@@ -9,12 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: fundamentals, ceX
-ms.service: power-virtual-agents
-ms.collection:
-  - virtual-agent
-  - get-started
-searchScope:
-  - "Power Virtual Agents"
+
 ---
 
 # Microsoft Copilot Studio overview

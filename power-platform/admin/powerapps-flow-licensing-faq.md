@@ -14,6 +14,8 @@ ms.reviewer: angieandrews
 ms.contributors:
 - jessechen
 - v-kgallagher
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 

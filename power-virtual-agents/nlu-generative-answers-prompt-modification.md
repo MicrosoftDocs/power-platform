@@ -8,10 +8,8 @@ author: KendalBond007
 ms.author: iawilt
 ms.reviewer: leeclontz
 
-ms.service: power-virtual-agents
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title

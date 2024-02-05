@@ -158,7 +158,8 @@ You can only restore to sandbox environments. To restore to a production environ
 6. Select an environment to restore to (overwrite), and then select **Restore**.
 
    > [!NOTE]
-   > Only sandbox environments can be restored to.
+   > - Only sandbox environments can be restored to.
+   > - Teams environments only support self-restore.
 
 7. Confirm overwrite of the environment. 
 
