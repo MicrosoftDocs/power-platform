@@ -9,16 +9,20 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 01/22/2024
+ms.date: 02/05/2024
 search.audienceType: admin
 ---
 
 # Manage admin roles with Microsoft Entra Privileged Identity Management (preview)
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileged admin roles in the Power Platform admin center.
 
-> [!NOTE]
-> This article is prerelease documentation and is subject to change.
+> [!IMPORTANT]
+> This is a preview feature.
+> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> To sign up for this preview, fill out the [preview sign-up form](https://go.microsoft.com/fwlink/?linkid=2259929).
 
 ## Prerequisites
 
