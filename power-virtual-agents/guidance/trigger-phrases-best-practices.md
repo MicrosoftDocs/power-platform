@@ -41,7 +41,7 @@ The following are the different conversation states:
 
 ## Creating new trigger phrases
 
-If possible, start with real production data over making up your own trigger phrases. The best trigger phrases are the ones similar to actual data coming from end users. These phrases are the ones that users ask the copilot when it's deployed.
+If possible, start with real production data over making up your own trigger phrases. The best trigger phrases are the ones similar to actual data coming from end users. These phrases are the ones that users ask a deployed copilot.
 
 There's no need to leave specific words out: the model is designed to give less weight to unnecessary words, such as stop words (words that are filtered out before the processing of natural language data because they're insignificant).
 
