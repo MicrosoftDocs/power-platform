@@ -11,6 +11,8 @@ contributors:
 - srpoduri 
 search.audienceType: 
   - admin
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 # Licensing overview for Microsoft Power Platform
