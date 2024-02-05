@@ -10,8 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Example 3 - Use Bing Search as a fallback in Microsoft Copilot Studio

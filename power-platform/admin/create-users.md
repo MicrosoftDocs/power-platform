@@ -369,6 +369,7 @@ A stub user is a user record that has been created as a placeholder. For example
 
 > [!CAUTION]
 > To prevent creating duplicate user records with the same UPN or throw errors during data import workflows, synchronize the users from Entra ID to Dataverse before running data import.
+> If you must reassign records from a stub user to another user, use the [Add-BulkRecordsToUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#command-add-bulkrecordstousers).
 
 A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Basic User** security role is assigned in a Power Apps environment.
 

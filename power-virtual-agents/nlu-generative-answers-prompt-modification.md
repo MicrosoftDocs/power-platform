@@ -7,11 +7,9 @@ ms.topic: how-to
 author: KendalBond007
 ms.author: iawilt
 ms.reviewer: leeclontz
-ms.collection: virtual-agent
-ms.service: power-virtual-agents
+
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title

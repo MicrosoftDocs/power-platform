@@ -10,8 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Example 1 - Show an Adaptive Card in Microsoft Copilot Studio

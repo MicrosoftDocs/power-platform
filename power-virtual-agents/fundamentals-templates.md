@@ -9,10 +9,8 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: fundamentals, teams, ceX
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
-searchScope:
-  - "Power Virtual Agents"
+
+
 ---
 
 # Use prebuilt copilot templates in Microsoft Teams

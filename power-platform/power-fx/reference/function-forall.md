@@ -80,7 +80,7 @@ To create this data source as a collection, set the **OnSelect** property of a *
 
 | Formula                                                                                       | Description                                                                                                                                                                                                                      | Result                                                 |
 | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| **ForAll(&nbsp;Squares, Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** | For all the records of the input table, calculates the square root of the **Value** column. The **Sqrt** function can also be used with a single-column table, making it possible perform this example without using **ForAll**. | ![Example of Sqrt.](media/function-forall/sqrt.png)    |
+| **ForAll(&nbsp;Squares, Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** | For all the records of the input table, calculates the square root of the **Value** column. The **Sqrt** function can also be used with a single-column table, making it possible to perform this example without using **ForAll**. | ![Example of Sqrt.](media/function-forall/sqrt.png)    |
 | **ForAll(&nbsp;Squares, Power(&nbsp;Value,&nbsp;3&nbsp;)&nbsp;)**                             | For all the records of the input table, raises the **Value** column to the third power. The **Power** function does not support single-column tables. Therefore, **ForAll** must be used in this case.                           | ![Example of Power.](media/function-forall/power3.png) |
 
 ### Using a connection
@@ -215,7 +215,7 @@ ClearCollect( NewOrder,
 Finally, we can perform the **Collect** directly within the **ForAll**:
 
 ```powerapps-dot
-Clear( ProductsToOrder );
+Clear( NewOrder );
 ForAll( Products,
     If( 'Quantity Requested' > 'Quantity Available',
         Collect( NewOrder,

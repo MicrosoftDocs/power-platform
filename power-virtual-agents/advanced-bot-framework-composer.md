@@ -10,8 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Overview of Bot Framework Composer

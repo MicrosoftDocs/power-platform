@@ -9,8 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "environments, admin, ceX, teams"
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Upgrade a Dataverse for Teams environment for Microsoft Copilot Studio

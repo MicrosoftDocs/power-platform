@@ -3,13 +3,12 @@ title: Microsoft Copilot Studio plugin architecture
 description: Microsoft Copilot Studio is built upon advanced AI technology, and works across Microsoft services.
 keywords: "PVA, plugin, connector, flow, automate"
 ms.date: 09/29/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: gapretty
-ms.collection: virtual-agent
+
 ms.custom:
   - plugin, connector, flow, advanced-authoring
   - ai-gen-docs-bap
