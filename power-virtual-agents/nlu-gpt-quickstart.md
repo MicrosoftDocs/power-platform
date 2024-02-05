@@ -8,9 +8,7 @@ author: iaanw
 ms.author: iawilt
 ms.reviewer: 
 
-ms.service: power-virtual-agents
 ms.search.region: USA
-searchScope: "Power Virtual Agents"
 ---
 
 # Quickstart guide for building copilots with generative AI

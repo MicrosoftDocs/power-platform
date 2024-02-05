@@ -27,7 +27,7 @@ Microsoft Dataverse auditing is supported on all custom and most customizable ta
 
 Here are the high-level steps for creating the storage and workspace in Azure, then the Azure Synapse Link for Dataverse so you can create reports in Power BI:
 
-1. [Create n Azure Synapse Link](#create-an-azure-synapse-link)
+1. [Create an Azure Synapse Link](#create-an-azure-synapse-link)
    1. Create a resource group.
    1. Create an Azure Data Lake Storage Gen2 account with hierarchical directory enabled.
    1. Create a Synapse workspace.
@@ -42,7 +42,7 @@ Here are the high-level steps for creating the storage and workspace in Azure, t
 1. Sign into the [Azure portal](https://portal.azure.com/).
 1. Create a resource group. More information: [Create resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
 1. Create a storage account. More information: [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal)
-Under the **Project** details:
+<br/>Under the **Project** details:
    1. Select the **Subscription** where the resource group was created.
    1. Select the **Resource group** that you created earlier.
    1. Enter a **Storage account name**.
@@ -60,7 +60,8 @@ Under the **Project** details:
 1. Repeat the previous steps for these roles:
    - **Storage Blob Data contributor**
    - **Storage Blob Data owner**
-1. Create a Synapse workspace. Under the **Project** details:
+1. Create a Synapse workspace.
+<br/>Under the **Project** details:
    1. Select the **Subscription** where the **Resource group** was created.
    1. Select the '**Resource group**' that you created previously.
    1. **Workspace name**. Choose any globally unique name.
