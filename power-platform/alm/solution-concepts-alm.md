@@ -28,7 +28,7 @@ A solution is either *managed* or *unmanaged*.
 -   **Unmanaged solutions** are developed. Unmanaged solutions are used in development environments while you make
     changes to your application. Unmanaged solutions can be exported either as unmanaged or managed. Exported unmanaged versions of your solutions should be checked into your source control system. Unmanaged solutions should be considered your source for Microsoft Power Platform assets. When an unmanaged solution is deleted, only the solution container of any customizations included in it is deleted. All the unmanaged customizations remain in effect and belong to the default solution.
 
--   **Managed solutions** are deployed. Managed solutions used to deploy to any environment that isn't a
+-   **Managed solutions** are deployed. Managed solutions are deployed to any environment that isn't a
     development environment for that solution. This includes test, UAT, SIT, and
     production environments. Managed solutions can be serviced independently
     from other managed solutions in an environment. As an ALM best practice,
