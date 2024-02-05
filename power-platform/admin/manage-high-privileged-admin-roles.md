@@ -20,9 +20,9 @@ search.audienceType: admin
 Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileged admin roles in the Power Platform admin center.
 
 > [!IMPORTANT]
-> This is a preview feature.
-> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> To sign up for this preview, fill out the [preview sign-up form](https://go.microsoft.com/fwlink/?linkid=2259929).
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - To sign up for this preview, fill out the [preview sign-up form](https://go.microsoft.com/fwlink/?linkid=2259929).
 
 ## Prerequisites
 
