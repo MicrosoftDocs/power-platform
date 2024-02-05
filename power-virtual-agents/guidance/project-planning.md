@@ -1,6 +1,6 @@
 ---
 title: "Project Planning"
-description: "Project Planning for Power Virtual Agents projects."
+description: "Project Planning for Copilot Studio projects."
 author: nesrivastavaMS
 ms.date: 11/6/2023
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.reviewer: iawilt
 
 :::image type="content" source="./media/topics/Project_Planning.png" alt-text="Project planning":::
 
-Chatbot projects based on Power Virtual Agents can have wildly different timelines and specifications depending on the use case and organization. However, one advantage that low code technologies bring is the *rapid time to market* as shown in the 10-week timeline.
+Copilot projects based on Copilot Studio can have wildly different timelines and specifications depending on the use case and organization. However, one advantage that low code technologies bring is the *rapid time to market* as shown in the 10-week timeline.
 
 The advantages in choosing a rapid delivery timeline as your initial project phase include:
 
@@ -35,7 +35,7 @@ The following five workstreams summarize and describe responsibilities:
 
 ### Bot building
 
-1. Building out related content for chatbot use cases.
+1. Building out related content for copilot use cases.
 1. Content creation and development tasks.
 
 ### Rhythm of Business (ROB)
@@ -48,7 +48,7 @@ A Rhythm of Business (ROB) meeting allows all participants to provide status upd
 
    Activities and features for the meeting include:
 
-   - Standups for chatbot development, one or two times per week.
+   - Standup meetings for copilot development, one or two times per week.
    - Weekly demos to show progress.
    - Weekly status update emails, highlighting blockers.
    - Bi-weekly bug prioritization.
@@ -66,7 +66,7 @@ A Rhythm of Business (ROB) meeting allows all participants to provide status upd
   
 ### Testing
 
-User acceptance testing is a large part of delivering your Power Virtual Agents chatbot. Testing ensures the integration of the complete solution with the back-end, client API, and chatbot responses to customer input.
+User acceptance testing is a large part of delivering your Copilot Studio copilot. Testing ensures the integration of the complete solution with the back-end, client API, and copilot responses to customer input.
 
 ### Production deployment and readiness checklist
 

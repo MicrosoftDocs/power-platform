@@ -37,7 +37,7 @@ Here's an example of the goals a customer defines at project inception.
 
     1. Monthly Active Users (MAU).
 
-1. **Establish Copilot governance and management model**
+1. **Establish copilot governance and management model**
 
     1. The Application Lifecycle process and automation setup.
 
@@ -58,9 +58,9 @@ The program includes:
 1. After two weeks, each team of the training group presents their copilot, demonstrates their progress, and identifies any challenges or gaps.
 1. After four weeks, each team of the training group reveals their final product to the rest of the group and leaders from the respective business areas.
 1. When possible, provide some level of reward to the participants of this initiative. Incentives can vary from recognition to monetary rewards.
-1. Include a *path to production* period to ensure all chatbots are finalized into production.
+1. Include a *path to production* period to ensure all copilots are finalized into production.
 1. Share success with the rest of the organization. Inspire others to do more.
-1. Rinse and repeat. You now have a program you can run on a regular cycle to promote chatbot development within your organization.
+1. Rinse and repeat. You now have a program you can run on a regular cycle to promote copilot development within your organization.
 
 > [!TIP]
 >
@@ -105,7 +105,7 @@ Here are three ways that customers can get Copilot Studio licenses.
 
 1. **Microsoft 365 license**
 
-    1. Unlimited sessions. Teams channel only.
+    1. Unlimited sessions (Teams channel only).
 
     1. Power Automate rights. Standard connectors only.
 

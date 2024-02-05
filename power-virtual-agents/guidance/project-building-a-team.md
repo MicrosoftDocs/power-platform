@@ -13,9 +13,9 @@ ms.reviewer: iawilt
 
 Once you understand your customer use cases for your copilot, you can form a team and get them trained. Delivering a large copilot is a complex project with many different stakeholders within and beyond your organization. This section outlines the roles and responsibilities to align everyone in the project.
 
-## Internal Team
+## Internal team
 
-Most customers treat a Copilot implementation like any other project. It usually consists of the following roles:
+Most customers treat a copilot implementation like any other project. It usually consists of the following roles:
 
 ![Roles](./media/topics/Project-Building-Internal-Team.png)
 
@@ -88,7 +88,7 @@ The course includes:
 - Planning your first copilot
 - Building your first copilot
 - Extending your Copilot Studio copilot with the Power Platform
-- Extending your Copilot Studio copilot with the Bot Framework (to be announced)
+- Extending your Copilot Studio copilot with the Copilot Framework (to be announced)
 - Advanced topics
 - Security and Governance
 
