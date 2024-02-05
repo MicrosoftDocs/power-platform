@@ -26,7 +26,7 @@ Launches a webpage or a canvas app and provides access to launch parameters.
 
 Launches a webpage or a canvas app. The function supports:
 
-- **Address** (required), the URL of the webpage or App ID of the canvas app.
+- **Address** (required), the URL of the webpage or App URI (app id prefixed with `/providers/Microsoft.PowerApps/apps/`) of the canvas app.
 - **Parameters** (optional), named values to pass to the webpage or canvas app. In a canvas app, parameters can be read with the [**Param**](#param) function.
 - **Target** (optional), the browser tab in which to launch the webpage or canvas app.
 
@@ -40,7 +40,7 @@ Webpages are launched via a URL address. For example:
 Launch( "https://bing.com" )
 ```
 
-You can launch canvas apps with **Web link** or **App ID**. To find these values for an app:
+You can launch canvas apps with **Web link** or **App URI** (app id prefixed with `/providers/Microsoft.PowerApps/apps/`). To find these values for an app:
 
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select **Apps** from left navigation pane.
