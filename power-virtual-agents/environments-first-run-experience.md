@@ -87,7 +87,7 @@ To create a copilot in an environment where you don't have access, you'll need t
 
 1. Create a copilot in the environment (this step will install the necessary Microsoft Copilot Studio solutions).
 
-1. Assign the security role of "copilot author" to you in the environment. More information: [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
+1. Assign the security role of "bot author" to you in the environment. More information: [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
 You can then return to the [Microsoft Copilot Studio portal](https://web.powerva.microsoft.com) and create a copilot in the environment.
 
