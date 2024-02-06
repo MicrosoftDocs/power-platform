@@ -122,7 +122,7 @@ To avoid a failed connection, you can add a SQL server to your virtual network. 
 
 ### Setup and configuration
 
-[Setup and configure Azure Virtual Network support for Power Platform](https://microsoft.sharepoint.com/:w:/t/CDS-Sandbox/Ea8ss50L1opIppTmEZAbDgEBwYjvdh4vx0EICTGcG_qAiQ?e=IWriek).
+[Setup and configure Azure Virtual Network support for Power Platform](https://review.learn.microsoft.com/en-us/power-platform/admin/vnet-support-setup-configure?branch=pr-en-us-7510).
 
 ## FAQ
 
