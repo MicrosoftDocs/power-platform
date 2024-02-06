@@ -35,11 +35,13 @@ There are three ways to install the Power Platform CLI.
 |[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows only. You can [manage installed versions](../howto/install-cli-msi.md#manage-versions) with this installation method.|
 
 > [!NOTE]
-> The following commands are only available on Windows when you install Power Platform CLI using the [Visual Studio Code extension](../howto/install-vs-code-extension.md) or [Windows MSI](../howto/install-cli-msi.md)
+> The following commands are only available on Windows when you install Power Platform CLI using the [Visual Studio Code extension](../howto/install-vs-code-extension.md) or [Windows MSI](../howto/install-cli-msi.md):
 >
 > - [pac data](reference/data.md)
 > - [pac package deploy](reference/package.md#pac-package-deploy)
 > - [pac package show](reference/package.md#pac-package-show)
+>
+> You can't use these commands with Linux or macOS or when you use the [.NET Tool](../howto/install-cli-net-tool.md) install method.
 
 
 ### Check whether Power Platform CLI is already installed
