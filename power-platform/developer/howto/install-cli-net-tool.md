@@ -15,7 +15,7 @@ ms.custom: bap-template
 ---
 # Install Power Platform CLI with .NET Tool
 
-**Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Windows :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Linux   :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: MacOS
+**Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Windows :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Linux   :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: macOS
 
 You can install, update, and uninstall the Power Platform CLI using [.NET tool commands](/dotnet/core/tools/global-tools).
 
@@ -45,9 +45,9 @@ You must have .NET installed. .NET 6.0 is recommended.
 
 [Install .NET on Linux](/dotnet/core/install/linux)
 
-# [MacOS](#tab/macos)
+# [macOS](#tab/macos)
 
-[Install .NET on MacOS](/dotnet/core/install/macos)
+[Install .NET on macOS](/dotnet/core/install/macos)
 
 ---
 
