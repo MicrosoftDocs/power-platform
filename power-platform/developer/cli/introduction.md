@@ -13,12 +13,12 @@ ms.topic: overview
 Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to:
 
 - Environment lifecycle
-- Authentication
+- [Authentication](#manage-auth-profiles)
 - Microsoft Dataverse environments
 - Solution packages
-- Portals
-- Code components
-- and more.
+- [Power Pages](/power-pages/configure/power-platform-cli)
+- [Code components](/power-apps/developer/component-framework/create-custom-controls-using-pcf)
+- and more...
 
 ## Provide feedback
 
@@ -30,23 +30,25 @@ There are three ways to install the Power Platform CLI.
 
 |Method|OS Support|Description|
 |---------|---------|---------|
-|[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows,Linux,MacOS|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and macOS.|
-|[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows,Linux,MacOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.|
-|[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Install this when you need to use [pac data](reference/data.md) or certain [pac package](reference/package.md) commands ([deploy](reference/package.md#pac-package-deploy) and [show](reference/package.md#pac-package-show)) that are only available for Windows.|
+|[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and macOS.|
+|[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.<br />This installation method doesn't enable use of [pac data](reference/data.md) or certain [pac package](reference/package.md) commands ([deploy](reference/package.md#pac-package-deploy) and [show](reference/package.md#pac-package-show)) that are only available for Windows.|
+|[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows only. You can [manage installed versions](../howto/install-cli-msi.md#manage-versions) with this installation method.|
 
 > [!NOTE]
-> The following commands are only available for the .NET Full Framework version of the PAC CLI.
+> The following commands are only available on Windows when you install Power Platform CLI using the [Visual Studio Code extension](../howto/install-vs-code-extension.md) or [Windows MSI](../howto/install-cli-msi.md)
+>
 > - [pac data](reference/data.md)
 > - [pac package deploy](reference/package.md#deploy)
 > - [pac package show](reference/package.md#show)
->   
-> If you need to use these commands, use Power Platform Tools for Visual Studio Code on a Windows machine. Alternatively, you can get a full version from [nuget](https://www.nuget.org/packages/Microsoft.PowerApps.CLI).
 
-### Check whether Power Platform CLI is already installed OR which version is installed
+
+### Check whether Power Platform CLI is already installed
+
+How to determine whether the Power Platform CLI is installed depends on your operating system.
 
 ## [Windows](#tab/windows)
 
-For Windows, open PowerShell, type `Get-Command pac | Format-List` at the prompt, and press <kbd>Enter<kbd>. 
+For Windows, open PowerShell, type `Get-Command pac | Format-List` at the prompt, and press **Enter**.
 
 The results should look something like this:
 
@@ -71,7 +73,7 @@ FileVersionInfo : File:             C:\Users\you\.dotnet\tools\pac.exe
                   Language:         Language Neutral
 ```
 
-When Power Platform CLI isn't installed, you will get this error:
+When Power Platform CLI isn't installed, you'll get this error:
 
 ```powershell
 Get-Command: The term 'pac' is not recognized as a name of a cmdlet, function, script file, or executable program.
@@ -80,20 +82,18 @@ Check the spelling of the name, or if a path was included, verify that the path 
 
 ## [Linux/macOS](#tab/linux-macos)
 
-To see if Power Platform CLI is installed in **Linux or macOS**, open the Terminal/Command prompt, type `which pac` at the prompt, and press <kbd>Enter<kbd>. 
+To see if Power Platform CLI is installed in **Linux or macOS**, open the Terminal/Command prompt, type `which pac` at the prompt, and press **Enter**. 
 
 The results should look something like this:
 
 ```bash
 /home/you/.dotnet/tools/pac
 ```
-
-
 ---
 
 ### Check which version of Power Platform CLI is installed
 
-Open the command prompt (on Microsoft Windows), or a Terminal session (in Linux), type `pac` and press <kbd>Enter<kbd>. 
+Open the command prompt (on Microsoft Windows), or a Terminal session (in Linux), type `pac` and press **Enter**.
 
 You should see something like this where the version is on the second line.
 
@@ -102,81 +102,18 @@ Microsoft PowerPlatform CLI
 Version: 1.30.3+g0f0e0b9
 ```
 
-For [Power Platform CLI for Windows](../howto/install-cli-msi.md): 
-
-* You can type `pac use` and press <kbd>Enter</kbd> to list installed versions.
-* If you have multiple versions installed on your system then you can type `pac use <CLI version number>` and press <kbd>Enter</kbd> to use a specific version.
-
-```
-C:\> pac use
-  1.29.11 (In Use)
-  1.30.3
-  1.30.6 (Latest)
-C:\> pac use 1.30.6
-Now using version 1.30.6 of the Microsoft PowerApps CLI.
-C:\>
-C:\> pac use
-  1.29.11
-  1.30.3
-  1.30.6 (In Use) (Latest)
-C:\>
-```
-
-
-
 ### Do you need to add PAC to PATH variable in Microsoft Windows?
 
-Open command prompt as Administrator, type `setx /M PATH "%PATH%;C:\\<location of your pac command>"` and press <kbd>Enter </kbd>.
+Open command prompt as Administrator, type `setx /M PATH "%PATH%;C:\\<location of your pac command>"` and press **Enter**.
 
 ## Manage auth profiles
 
-Most PAC CLI commands require authenticated access to resources. You will need to create and use auth profiles.
+Most PAC CLI commands require authenticated access to resources. You'll need to create and use auth profiles.
 
 > [!NOTE]
-> With the Visual Studio Code extension, [you can view an manage authentication profiles](../howto/install-vs-code-extension.md#authentication-profile-management).
+> With the Visual Studio Code extension, [you can view and manage authentication profiles](../howto/install-vs-code-extension.md#authentication-profile-management).
 
-### Connect to your tenant
-
-The `pac auth create` command is what you should use to connect to your tenant. Running `pac auth create` creates an authentication profile on your machine. You can have multiple authentication profiles available. Having multiple authentication profiles is interesting when you work with multiple tenants. For instance, when your company uses multiple tenants (a production tenant and a test / QA tenant) or when you are a consultant that works for multiple customers.
-
-The `pac auth create` command has a couple of helpful parameters. The first one is the `--environment` parameter. The `--environment` parameter enables you to automatically connect to the right environment. If you omit the `--environment` parameter, you are connected to the default environment, but with the `--environment` parameter added to it, you can connect to a different one. You can use the environment ID, url, unique name, or partial name as the value.
-
-The second one is the `--deviceCode` parameter. In environments where you don't have the ability to use an interactive experience, adding the `--deviceCode` parameter will make sure you can still connect. In, for instance, GitHub Codespaces, the `--deviceCode` parameter automatically gets added when you run `pac auth create`.
-
-#### Example
-
-To connect to the `HR-Dev` environment, you can use the following example:
-
-```powershell
-pac auth create --environment "HR-Dev"
-```
-
-### Switch to another authentication profile
-
-When you have multiple authentication profiles, you can easily switch using the `pac auth list` and `pac auth select` commands.
-
-The `pac auth list` command can be used to list all authentication profiles on your machine. The `pac auth select` command selects a different command.
-
-#### Example
-
-To list all authentication profiles, use the following example:
-
-```powershell
-pac auth list
-```
-
-Running the `pac auth list` command returns all authentication profiles:
-
-```text
-Index Active Kind      Name Friendly Name                   Url                                 User                                     Cloud  Type
-[1]   *      UNIVERSAL      Personal Productivity (Default) https://x.crm.dynamics.com/         user@contoso.onmicrosoft.com             Public User
-```
-
-Now, select a different authentication profile by using the following example:
-
-```powershell
-pac auth select --index 2
-```
+[!INCLUDE [auth-intro](reference/includes/auth-intro.md)]
 
 ## US Sovereign cloud availability
 
