@@ -68,6 +68,8 @@ Get-Command: The term 'pac' is not recognized as a name of a cmdlet, function, s
 Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
 ```
 
+To see if Power Platform CLI is installed in Linux or macOS, open the Terminal/Command prompt, type `which pac ` at the prompt, and press <kbd>Enter<kbd>. 
+
 ### Check which version of Power Platform CLI is installed
 
 Open the command prompt (on Microsoft Windows), or a Terminal session (in Linux), type `pac` and press <kbd>Enter<kbd>. 
