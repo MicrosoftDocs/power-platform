@@ -117,7 +117,13 @@ These parameters are exposed across the actions for the corresponding gated exte
 
 ## Samples
 
-Download and then import this unmanaged solution into your pipelines host environment. The download contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https://aka.ms/DownloadPipelinesExtensibilitySamples)
+Download and then import the desired managed solution(s) into your pipelines host environment. These samples can be customized to fit the unique needs of your organization.
+
+### Pipelines extensibility samples
+This download contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https://aka.ms/DownloadPipelinesExtensibilitySamples)
+
+### Delegated deployment samples
+This download contains sample cloud flows for managing approvals and sharing deployed canvas apps and flows within the target environment. [Download sample solution](https://aka.ms/DownloadDelegatedDeploymentSamples)
 
 ## Next steps
 
