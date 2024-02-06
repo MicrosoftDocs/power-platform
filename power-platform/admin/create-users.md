@@ -2,9 +2,9 @@
 title: "Create users | MicrosoftDocs"
 description: About creating users.
 author: sericks007
-ms.reviewer: Kumarvivek
+ms.reviewer: sericks007
 ms.subservice: admin
-ms.author: kvivek
+ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
