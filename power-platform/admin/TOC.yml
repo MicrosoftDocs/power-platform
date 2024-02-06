@@ -292,6 +292,8 @@
                       href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
                     - name: Audit security roles
                       href: audit-security-roles.md
+                    - name: Access audit data using Azure Synapse Link for Dataverse
+                      href: audit-data-azure-synapse-link.md                
                     - name: System jobs
                       href: manage-dataverse-auditing.md#monitoring-system-jobs
                 - name: Templates
@@ -564,6 +566,8 @@
                       href: opt-out-automatic-license.md
                     - name: Use service admin roles to manage your tenant
                       href: use-service-admin-role-manage-tenant.md
+                    - name: Manage high privileged admin roles (preview)
+                      href: manage-high-privileged-admin-roles.md
                     - name: Miscellaneous privileges
                       href: miscellaneous-privileges.md
                     - name: Privacy-related privileges
@@ -670,6 +674,8 @@
                   href: free-storage-space.md
                 - name: Clean up System Job and Process Log tables
                   href: cleanup-asyncoperationbase-table.md
+                - name: Subscription Tracking Deleted Object table
+                  href: subscription-tracking-deleted-object-retention.md
             - name: Add storage capacity
               href: add-storage.md
             - name: Access storage with SAS token

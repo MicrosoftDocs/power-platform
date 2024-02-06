@@ -8,7 +8,6 @@ author: iaanw
 ms.author: iawilt
 ms.custom: ceX, bap-template
 
-ms.service: power-virtual-agents
 ---
 
 # View topic status (preview)
