@@ -92,7 +92,7 @@
           href: howto\install-vs-code-extension.md
         - name: Install with .NET Tool
           href: howto\install-cli-net-tool.md
-        - name: Install for Windows
+        - name: Install using Windows MSI
           href: howto\install-cli-msi.md
         - name: Create and register a plug-in package
           href: howto\cli-create-package.md

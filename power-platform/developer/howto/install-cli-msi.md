@@ -1,6 +1,6 @@
 ---
-title: Install Power Platform CLI for Windows
-description: Instructions to install, update, and uninstall the Power Platform CLI for Windows
+title: Install Power Platform CLI using Windows MSI
+description: Instructions to install, update, and uninstall the Power Platform CLI for Windows using an MSI.
 author: snizar007
 ms.author: snizar
 ms.reviewer: jdaly
@@ -13,7 +13,7 @@ contributors:
 - JimDaly
 ms.custom: bap-template
 ---
-# Install Power Platform CLI for Windows
+# Install Power Platform CLI using Windows MSI
 
 **Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Windows only
 

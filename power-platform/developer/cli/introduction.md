@@ -44,7 +44,7 @@ There are three ways to install the Power Platform CLI.
 
 ### Check whether Power Platform CLI is already installed OR which version is installed
 
-## [Windows](#tab/Windows)
+## [Windows](#tab/windows)
 
 For Windows, open PowerShell, type `Get-Command pac | Format-List` at the prompt, and press <kbd>Enter<kbd>. 
 
@@ -73,14 +73,23 @@ FileVersionInfo : File:             C:\Users\you\.dotnet\tools\pac.exe
 
 When Power Platform CLI isn't installed, you will get this error:
 
-```
+```powershell
 Get-Command: The term 'pac' is not recognized as a name of a cmdlet, function, script file, or executable program.
 Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
 ```
 
-## [Linux/macOS](#tab/Linux/macOS)
+## [Linux/macOS](#tab/linux-macos)
 
-To see if Power Platform CLI is installed in **Linux or macOS**, open the Terminal/Command prompt, type `which pac ` at the prompt, and press <kbd>Enter<kbd>. 
+To see if Power Platform CLI is installed in **Linux or macOS**, open the Terminal/Command prompt, type `which pac` at the prompt, and press <kbd>Enter<kbd>. 
+
+The results should look something like this:
+
+```bash
+/home/you/.dotnet/tools/pac
+```
+
+
+---
 
 ### Check which version of Power Platform CLI is installed
 
@@ -112,6 +121,8 @@ C:\> pac use
   1.30.6 (In Use) (Latest)
 C:\>
 ```
+
+
 
 ### Do you need to add PAC to PATH variable in Microsoft Windows?
 
