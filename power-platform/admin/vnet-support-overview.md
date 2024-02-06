@@ -13,9 +13,12 @@ ms.custom: "admin-security"
 
 # Virtual Network support for Power Platform overview (preview)
 
-The [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform helps you integrate from Microsoft Cloud services to resources within your virtual network without exposing your resources over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic at runtime from Power Platform. Therefore, you don't need to manually route outbound traffic to the internet.
+The [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform helps you integrate from Microsoft Power Platform to resources within your virtual network without exposing your resources over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic at runtime from Power Platform. Therefore, you don't need to expose your protected resources over internet to integrate with Power Platform.
 
-## Optimization
+Today Power Platform offers couple of ways to securely connect to enterprise resources,
+
+- Virtual network support for Power Platform
+- Virtual network (VNet) data gateway
 
 Virtual Network support for Power Platform is optimized to handle API workloads with a _high_ request volume and _low_ execution time for requests.
 
@@ -29,21 +32,22 @@ Using Virtual Network, you can:
 - Integrate Dataverse and Power Platform with your own services within your network.
 
   For example, Dataverse or Power Platform components can call resources owned by your enterprise. These resources can be either Azure-hosted or on-premises.
-- Use plug-ins or connectors to make outbound calls.
+- Use plug-ins to make outbound calls.
 
   For example, a call from a Dataverse plug-in is made to a Snowflake instance hosted on Azure.
 
-## Private networks
 
-With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. These integrations happen on the public internet infrastructure. However, a virtual network allows you to use a private network _and_ integrate with cloud services.
+## Introduction to virtual network support for Power Platfrom
 
-Azure services are protected within a virtual network through [private endpoints](/azure/private-link/private-endpoint-overview). You can bring your on-premises resources to the virtual network through [Express Route](/azure/expressroute/), which allows you to protect and monitor the entire virtual network.
+Power Platform integrates with enterprise resources over Public networks. With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. However, virtual network support for Power Platform allows you to use a private network _and_ integrate with cloud services or services hosted within your enterprise network.
+
+Azure services are protected within a virtual network through [private endpoints](/azure/private-link/private-endpoint-overview). You can bring your on-premises resources to the virtual network through [Express Route](/azure/expressroute/), which allows you to protect and monitor the entire virtual network. You need to delegate virtual networks and subnets to the Power Platform. Since you are delegating your virtual networks and subnets to Power Platform, Power Platform will use the delegated subnet to make outbound calls to enterprise resources over enterprise private network, thereby eliminating the need to egressing the traffic over public internet and exposing the enterprise resources to public internet.
 
 In a virtual network, you have full control over the egress traffic from Power Platform. The traffic is subjected to network policies applied by your network administrator.
 
 :::image type="content" source="media/vnet-support/vnet-support-traffic.png" alt-text="Screenshot that shows how a virtual network interacts with resources." lightbox="media/vnet-support/vnet-support-traffic.png":::
 
-## Virtual network benefits
+## Virtual network support benefits
 
  With Virtual Network support, you get all the [benefits](/azure/virtual-network/subnet-delegation-overview#advantages-of-subnet-delegation) that Azure subnet delegation provides.
 
@@ -51,31 +55,15 @@ In a virtual network, you have full control over the egress traffic from Power P
 
 - **No unauthorized access**: Virtual Network connects with your resources without needing Power Platform IP ranges or service tags in the connection.
 
-## Scenarios using Virtual Network support
+## Supported Scenarios using Virtual Network support
 
-With a virtual network, you can use secured, private, outbound connectivity with partner software. For example, Dataverse plug-ins enhance data integration security with external data sources from your Power Apps, Power Automate, and Dynamics 365 apps.
+Today Power Platform supports Dataverse plug-ins scenarios, we plan to extend the virtual network support to other scenarios within Power Platform. With a virtual network, you can use secured, private, outbound connectivity with partner software. For example, Dataverse plug-ins enhance data integration security with external data sources from your Power Apps, Power Automate, and Dynamics 365 apps.
 
-### Private connections to data sources
+### Private outbound connections to data sources
 
 - Use Dataverse plug-ins to connect to your on-premises data sources such as SQL server, Oracle, or SAP. You protect your data from data breaches and other external threats.
 
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
-
-### Secure access using connectors (coming soon)
-
-With these connectors in a virtual network, use Power Platform to securely access services or manipulate and protect data from your apps. You can connect from Power Apps, Power Automate, and Dynamics 365 Apps.
-
-- **Azure SQL**: Protects your data from data exfiltration and other external threats.
-
-- **Azure File Storage** or **Blob Storage**: Protects your data from data breaches and other incidents.
-
-- **Azure Key Vault**: Doesn't expose secrets to the internet and protects your data from data leaks and other risks.
-
-- **Http with Microsoft Entra ID**: Authenticates with Microsoft Entra ID and protects your data from external attacks and data leaks.
-
-- **Azure Queue**: Doesn't expose endpoints to the public internet.
-
-- **Custom**: Connects any service hosted within your virtual network.
 
 ## Supported regions
 
@@ -109,15 +97,6 @@ The current status of services onboarded to the Azure subnet delegation for Virt
 | Area | Power Platform services | Virtual Network support |
 |------------|-------------------|--------------|
 | Dataverse  | Dataverse plug-ins | Public preview |
-| Connectors | Azure SQL | Coming soon |
-|            | Azure Queue | Coming soon |
-|            | Azure Key Vault | Coming soon |
-|            | Http with Microsoft Entra ID | Coming soon |
-|            | Custom | Coming soon  |
-|            | Azure File Storage | Coming soon |
-|            | Azure Blob Storage | Coming soon |
-|            | SFTP-SSH | Coming soon |
-|            | Azure SQL Data Warehouse | Coming soon |
 
 ## Licensing requirements
 
