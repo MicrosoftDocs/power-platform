@@ -38,8 +38,8 @@ There are three ways to install the Power Platform CLI.
 > The following commands are only available on Windows when you install Power Platform CLI using the [Visual Studio Code extension](../howto/install-vs-code-extension.md) or [Windows MSI](../howto/install-cli-msi.md)
 >
 > - [pac data](reference/data.md)
-> - [pac package deploy](reference/package.md#deploy)
-> - [pac package show](reference/package.md#show)
+> - [pac package deploy](reference/package.md#pac-package-deploy)
+> - [pac package show](reference/package.md#pac-package-show)
 
 
 ### Check whether Power Platform CLI is already installed
