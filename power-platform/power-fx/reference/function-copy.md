@@ -33,7 +33,7 @@ The **Copy** function takes any text value and copies it to the clipboard. Regar
 ## Examples
 
 ### Text Input with Copy Button
-The **Copy** function can be used to create a style of input controls seen in many apps, where a button right now to the input text allows for a quick copy of the input's text to the clipboard.
+The **Copy** function can be used to create a style of input controls seen in many apps, where a button placed to the right of the input text allows for a quick copy of the input's text to the clipboard.
 
 1. Insert a **Text input** control on a screen. By default, the name will be **TextInput1**.
 2. Insert a **Button** control on the screen, next to the input control.
@@ -43,7 +43,7 @@ When the button is selected, the text from the text input control will be copied
 
 ### Processing text to put on clipboard
 
-The **Copy** function accepts text, which can be itself an expression that manipulates text from your app in some way. For example, an app may have an employee record that contain the employee's first name, last name, and title. A formula could put this information on the clipboard as one piece of text. The following example uses string interpolation to combine the data into one string:
+The **Copy** function accepts text, which can be itself an expression that manipulates text from your app in some way. For example, an app may have an employee record that contains the employee's first name, last name, and title. A formula could put this information on the clipboard as one piece of text. The following example uses string interpolation to combine the data into one string:
 
 ```powerapps-dot
 Copy( $"{employeeRecord.Name} {employeeRecord.LastName} ({employeeRecord.Title})" )
