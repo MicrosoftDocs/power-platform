@@ -1,6 +1,6 @@
 ---
 title: Install the Power Platform Tools Visual Studio Code extension
-description: Instructions to install, update, and uninstall the Power Platform Tools Visual Studio Code extension
+description: Instructions to install, update, and uninstall the Power Platform Tools Visual Studio Code extension.
 author: snizar007
 ms.author: snizar
 ms.reviewer: jdaly
@@ -17,7 +17,7 @@ ms.custom: bap-template
 
 **Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Windows :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Linux   :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: macOS 
 
-The Visual Studio Code extension is the recommended way to install Power Platform CLI. This extension will upgrade automatically when new versions are released. You also have the options to install a previous version or side-load the extension.
+The Visual Studio Code extension is the recommended way to install Power Platform CLI. This extension upgrades automatically when new versions are released. You also have the options to install a previous version or side-load the extension.
 
 ## Prerequisites
 
@@ -31,9 +31,9 @@ You can install the Microsoft Power Platform CLI using the Visual Studio Code ex
 
 1. Go to [Power Platform Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode)
 1. Select **Install**.
-1. Select **Continue** if the **Visual Studio Code is required to install this extension** dialog appears.
-1. Select **Open** if the **This site is trying to open Visual Studio Code dialog** appears.
-1. In Visual Studio Code, select **Install**.
+1. Select **Continue** if the **Visual Studio Code is required to install this extension** dialog appears
+1. Select **Open** if the **This site is trying to open Visual Studio Code dialog** appears
+1. In Visual Studio Code, select **Install**
 
 ### Install from Visual Studio Code extensions
 
@@ -43,23 +43,23 @@ You can install the Microsoft Power Platform CLI using the Visual Studio Code ex
 
 ### Install a previous version
 
-If there is an issue with the current version, you can revert to an earlier version.
+If there's an issue with the current version, you can revert to an earlier version.
 
 1. In Visual Studio Code, select **Extensions**
-1. Search for 'power platform tools'.
-1. In the main window, select the drop-down arrow on the **Uninstall** button.
-1. Select **Install Another version...**.
+1. Search for 'power platform tools'
+1. In the main window, select the drop-down arrow on the **Uninstall** button
+1. Select **Install Another version...**
    
    :::image type="content" source="media/install-another-version.png" alt-text="Option to install another version":::
    
-1. Select the previous version you want to install.
-1. After the installation is completed, select **Reload Required**.
+1. Select the previous version you want to install
+1. After the installation is completed, select **Reload Required**
 
 When you select this option, the extension gives you the option to **Update** and ignores automatic updates. To resume automatic updates:
 
 1. While viewing the Power Platform Tools extension in Visual Studio Code, select the drop-down arrow on the **Update** button.
 1. Clear the **Ignore Updates** check box
-1. Close and re-open Visual Studio Code to trigger the update.
+1. Close and reopen Visual Studio Code to trigger the update.
 
 ### Side-load install
 
@@ -68,7 +68,7 @@ In some organizations, downloading or initiating an install over the web is proh
 1. Go to [Power Platform Tools in the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode)
 1. On the right side, in the **Resources** group select the **Download Extension** link.
 
-   This will download a file named `microsoft-IsvExpTools.powerplatform-vscode-x.x.xx.vsix` where `x.x.xx` is the current version.
+   This downloads a file named `microsoft-IsvExpTools.powerplatform-vscode-x.x.xx.vsix` where `x.x.xx` is the current version.
 
 1. In Visual Studio Code select **Extensions** 
 1. Select the ellipsis on the **Extensions** side bar, and then select **Install from VSIX...**
@@ -76,16 +76,16 @@ In some organizations, downloading or initiating an install over the web is proh
    :::image type="content" source="media/install-from-vsix.png" alt-text="Select Install from VSIX":::
 
 1. Select the downloaded file.
-1. When installation is complete, you will see a notification saying **Completed installing Power Platform Tools extension from VSIX**.
+1. When installation is complete, you'll see a notification saying **Completed installing Power Platform Tools extension from VSIX**.
 
 ## Update
 
-There is usually no need to update. The extension will update automatically as new versions are released.
-When you open Visual Studio Code, you will see a notification like this:
+There's usually no need to update. The extension updates automatically as new versions are released.
+When you open Visual Studio Code, you'll see a notification like this:
 
 :::image type="content" source="media/pac-cli-updated.png" alt-text="Power Platform CLI update notification in Visual Studio code":::
 
-If you choose to [install a previous version](#install-a-previous-version), you will need to re-enable automatic updates.
+If you choose to [install a previous version](#install-a-previous-version), you'll need to re-enable automatic updates.
 
 ## Uninstall
 
