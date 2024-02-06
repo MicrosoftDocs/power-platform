@@ -28,7 +28,7 @@ Use [github.com/microsoft/powerplatform-build-tools/discussions](https://github.
 
 There are three ways to install the Power Platform CLI.
 
-|Method|OS Support|Description|
+Method|OS Support|Description|
 |---------|---------|---------|
 |[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows,Linux,MacOS|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and macOS.|
 |[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows,Linux,MacOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.|
@@ -36,13 +36,15 @@ There are three ways to install the Power Platform CLI.
 
 > [!NOTE]
 > The following commands are only available for the .NET Full Framework version of the PAC CLI.
-> - [pac data](references/data.md)
-> - [pac package deploy](references/package.md#deploy)
-> - [pac package show](references/package.md#show)
+> - [pac data](reference/data.md)
+> - [pac package deploy](reference/package.md#deploy)
+> - [pac package show](reference/package.md#show)
 >   
 > If you need to use these commands, use Power Platform Tools for Visual Studio Code on a Windows machine. Alternatively, you can get a full version from [nuget](https://www.nuget.org/packages/Microsoft.PowerApps.CLI).
 
-### Check whether Power Platform CLI is already installed
+### Check whether Power Platform CLI is already installed OR which version is installed
+
+## [Windows](#tab/Windows)
 
 For Windows, open PowerShell, type `Get-Command pac | Format-List` at the prompt, and press <kbd>Enter<kbd>. 
 
@@ -76,6 +78,8 @@ Get-Command: The term 'pac' is not recognized as a name of a cmdlet, function, s
 Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
 ```
 
+## [Linux/macOS](#tab/Linux/macOS)
+
 To see if Power Platform CLI is installed in **Linux or macOS**, open the Terminal/Command prompt, type `which pac ` at the prompt, and press <kbd>Enter<kbd>. 
 
 ### Check which version of Power Platform CLI is installed
@@ -95,21 +99,21 @@ For [Power Platform CLI for Windows](../howto/install-cli-msi.md):
 * If you have multiple versions installed on your system then you can type `pac use <CLI version number>` and press <kbd>Enter</kbd> to use a specific version.
 
 ```
-C:\Users\snizar> pac use
+C:\> pac use
   1.29.11 (In Use)
   1.30.3
   1.30.6 (Latest)
-C:\Users\snizar> pac use 1.30.6
+C:\> pac use 1.30.6
 Now using version 1.30.6 of the Microsoft PowerApps CLI.
-C:\Users\snizar>
-C:\Users\snizar> pac use
+C:\>
+C:\> pac use
   1.29.11
   1.30.3
   1.30.6 (In Use) (Latest)
-C:\Users\snizar>
+C:\>
 ```
 
-### How to add PAC to PATH variable in Microsoft Windows
+### Do you need to add PAC to PATH variable in Microsoft Windows?
 
 Open command prompt as Administrator, type `setx /M PATH "%PATH%;C:\\<location of your pac command>"` and press <kbd>Enter </kbd>.
 
