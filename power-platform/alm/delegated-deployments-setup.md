@@ -62,7 +62,7 @@ Here's a screenshot of a canonical approval flow.
 :::image type="content" source="media/canonical-approval-flow.png" alt-text="Canonical Approval Flow":::
 
 > [!IMPORTANT]
-> - Requesting makers may not have access to deployed resources in target environments. Resources can be shared after deployment. To automate sharing, you can use the ALM Accelerator extension as a reference implementation.
+> - Requesting makers may not have access to deployed resources in target environments. Resources can be shared after deployment. To automate sharing, you can use the below sample or the ALM Accelerator extension as a reference implementation.
 > - At a minimum, the Basic User security role is needed to deploy connection references and access the environment.
 > - When testing, if you remove your own security role, another administrator will need to restore it later. Power Platform admins can restore their own security role within the classic experience.
 
@@ -85,6 +85,11 @@ To deploy as the pipeline stage owner, follow these steps.
     1. Insert actions as desired. For example, an approval.
     1. Add Dataverse **Perform an unbound action**.  
       Action Name: UpdateApprovalStatus (20 = completed, 30 = rejected)
+
+## Delegated deployment samples
+This download contains sample cloud flows for managing approvals and sharing deployed canvas apps and flows within the target environment. [Download sample solution](https://aka.ms/DownloadDelegatedDeploymentSamples)
+
+Download and import the managed solution to your pipelines host environment. The solution can then be customized to fit the needs of your organization. 
 
 ## Frequently asked questions
 
