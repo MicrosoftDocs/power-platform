@@ -34,6 +34,14 @@ There are three ways to install the Power Platform CLI.
 |[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows,Linux,MacOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.|
 |[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Install this when you need to use [pac data](reference/data.md) or certain [pac package](reference/package.md) commands ([deploy](reference/package.md#pac-package-deploy) and [show](reference/package.md#pac-package-show)) that are only available for Windows.|
 
+> [!NOTE]
+> The following commands are only available for the .NET Full Framework version of the PAC CLI.
+> - [pac data](references/data.md)
+> - [pac package deploy](references/package.md#deploy)
+> - [pac package show](references/package.md#show)
+>   
+> If you need to use these commands, use Power Platform Tools for Visual Studio Code on a Windows machine. Alternatively, you can get a full version from [nuget](https://www.nuget.org/packages/Microsoft.PowerApps.CLI).
+
 ### Check whether Power Platform CLI is already installed
 
 For Windows, open PowerShell, type `Get-Command pac | Format-List` at the prompt, and press <kbd>Enter<kbd>. 
@@ -100,6 +108,10 @@ C:\Users\snizar> pac use
   1.30.6 (In Use) (Latest)
 C:\Users\snizar>
 ```
+
+### How to add PAC to PATH variable in Microsoft Windows
+
+Open command prompt as Administrator, type `setx /M PATH "%PATH%;C:\\<location of your pac command>"` and press <kbd>Enter </kbd>.
 
 ## Manage auth profiles
 
