@@ -134,7 +134,7 @@ We're launching a brand new Copilot Studio in a Day training on Microsoft Learn,
 
 ## Migrating your Power Virtual Agents classic bots
 
-See (Cloning an existing Power Virtual Agents classic bot to a Copilot Studio copilot)[#cloning-an-existing-power-virtual-agents-classic-bot-to-a-copilot-studio-copilot].
+See [Cloning an existing Power Virtual Agents classic bot to a Copilot Studio copilot](#cloning-an-existing-power-virtual-agents-classic-bot-to-a-copilot-studio-copilot).
 
 ## Testing guidance in Copilot Studio unified authoring
 

@@ -35,7 +35,7 @@ To further govern and secure Copilot Studio using generative AI features in your
 
     -   Your admin can disable Copilot for your organization by creating a support request.
 
-2.  [Disable data movement across geographic locations for Copilot Studio generative AI features outside the United States](manage-data-movement-outside-us.md#disable-data-across-geographic-locations-outside-the-united-state)). 
+2.  [Disable data movement across geographic locations for Copilot Studio generative AI features outside the United States](manage-data-movement-outside-us.md#disable-data-across-geographic-locations-outside-the-united-states). 
 
 3.  [Enable Copilot Studio conversational plugins](copilot-conversational-plugins.md).
 
