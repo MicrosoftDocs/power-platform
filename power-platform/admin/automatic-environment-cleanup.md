@@ -79,7 +79,7 @@ Here are some examples of the types of activities that are included in the measu
 
 - **User activity**: Launch an app, execute a flow (whether automatic or not), chat with a Power Virtual Agents bot
 - **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Power Virtual Agents bot, or custom connector
-- **Admin activity**: Environment operations such as copy, delete, back up, recover, and reset  
+- **Admin activity**: Environment operations such as copy, delete, recover, and reset  
 
 Activity includes automations such as scheduled flow runs. For example, if there's no user, maker, or admin activity in an environment, but it contains a cloud flow that runs daily, then the environment is considered active.
 

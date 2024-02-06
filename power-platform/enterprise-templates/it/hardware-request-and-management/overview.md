@@ -11,6 +11,7 @@ ms.date: 11/06/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
+ms.collection: bap-ai-copilot
 ---
 
 # Hardware Request and Management template for Power Platform

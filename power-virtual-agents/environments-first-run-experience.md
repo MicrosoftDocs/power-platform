@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: onboarding, ceX
-ms.service: power-virtual-agents
 
 ---
 # Working with environments in Microsoft Copilot Studio
