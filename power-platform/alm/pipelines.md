@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 01/10/2024
+ms.date: 02/06/2024
 ms.reviewer: "matp"
 ms.topic: "overview"
 contributors:
@@ -77,7 +77,7 @@ Pipelines deploy solutions as well as configuration for the target environment s
 
 ### Why can't I see my pipeline from my environment?
 
-First, ensure that your source and target environments are linked properly. You will only be able to view your pipeline in the assigned source environment(s) (i.e., your development environments). When linking each of your environments to your pipeline during configuration, you will have an option of **Development Environment** or **Target Environment** EnvironmentType. If your pipeline-associated environments are assigned their proper type, your pipeline will appear as an option in your source/development environment.
+First, ensure that your source and target environments are linked properly. You'll only be able to view your pipeline in the assigned source environments, such as your development environments. When linking each of your environments to your pipeline during configuration, you have an option of **Development Environment** or **Target Environment** environment type. If your pipeline-associated environments are assigned their proper type, your pipeline appears as an option in your source development environment.
 
 ### Does pipelines automatically store solution backups?
 
