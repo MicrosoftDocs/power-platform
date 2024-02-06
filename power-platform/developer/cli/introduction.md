@@ -28,7 +28,7 @@ Use [github.com/microsoft/powerplatform-build-tools/discussions](https://github.
 
 There are three ways to install the Power Platform CLI.
 
-Method|OS Support|Description|
+|Method|OS Support|Description|
 |---------|---------|---------|
 |[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows,Linux,MacOS|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and macOS.|
 |[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows,Linux,MacOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.|
