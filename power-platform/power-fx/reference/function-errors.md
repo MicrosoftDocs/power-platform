@@ -108,7 +108,7 @@ You can also add a **Reload** button on the form, so that the user can efficient
 
 - To show the button only when a conflict has occurred, set the button's **[Visible](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:<br>
   **!IsEmpty( Lookup( Errors( IceCream, EditRecord ), Error = ErrorKind.Conflict ) )**
-- To revert the change which the user selects the button, set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:<br>
+- To revert the change when the user selects the button, set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:<br>
   **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
