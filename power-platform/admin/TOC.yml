@@ -88,7 +88,7 @@
                   href: /power-apps/user/request-license
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
-                - name: Auto-claim policies for Power Apps licenses
+                - name: Autoclaim policies for Power Apps licenses
                   href: auto-claim-licensing.md
             - name: Power Automate
               items:
