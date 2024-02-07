@@ -3,7 +3,6 @@ title: Use Power Automate flows in Microsoft Copilot Studio
 description: Use Power Automate flows to extend the capabilities of your bots.
 keywords: "PVA, flow, automate"
 ms.date: 03/24/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt

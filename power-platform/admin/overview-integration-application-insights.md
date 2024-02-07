@@ -5,9 +5,9 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 09/12/2023
-author: StephenRauchPM
+author: Zeffin
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: johnev
 ms.reviewer: sericks
 search.audienceType: 
   - admin

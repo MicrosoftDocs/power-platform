@@ -10,7 +10,6 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: handoff, ceX
 ms.reviewer: pawant
-ms.service: power-virtual-agents
 
 ---
 

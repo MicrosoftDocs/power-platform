@@ -7,7 +7,7 @@ ms.date: 09/04/2020
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - paulliew
   - denisem-msft

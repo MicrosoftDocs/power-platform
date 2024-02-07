@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 09/07/2022
 ms.subservice: guidance
 ms.author: stjeffer
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

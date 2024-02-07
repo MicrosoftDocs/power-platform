@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: admin, dlp
-ms.service: power-virtual-agents
 
 ---
 
@@ -25,7 +24,7 @@ See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](a
 
 ## Configure DLP to block HTTP requests in the Power Platform admin center
 
-[!INCLUDE [Preview documentation notice](includes/dlp-basic-config.md)]
+[!INCLUDE [Shared DLP configuration instructions](includes/dlp-basic-config.md)]
 
 ### Add the connector
 
