@@ -8,7 +8,7 @@ ms.collection: get-started
 ms.date: 05/25/2022
 ms.subservice: admin
 ms.author: zakisama
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

@@ -1,11 +1,11 @@
 ---
 title: "Enable preview features to get early access"
 description: "Learn how to enable preview features in Power Platfiorm that have limited functionality to get early access and provide feedback."
-author: KumarVivek
+author: sericks007
 ms.topic: conceptual
 ms.date: 05/4/2023
 ms.subservice: admin
-ms.author: kvivek
+ms.author: sericks
 ---
 # What are preview features, and how do I enable them? 
 

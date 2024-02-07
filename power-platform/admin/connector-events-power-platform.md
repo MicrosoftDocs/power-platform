@@ -7,7 +7,6 @@ documentationcenter: na
 author: schabungbam
 editor: ''
 tags: ''
-ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na

@@ -6,7 +6,7 @@ ms.topic: conceptual
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
