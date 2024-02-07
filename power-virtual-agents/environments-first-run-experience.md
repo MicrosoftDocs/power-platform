@@ -87,7 +87,7 @@ To create a copilot in an environment where you don't have access, you'll need t
 
 1. Create a copilot in the environment (this step will install the necessary Microsoft Copilot Studio solutions).
 
-1. Assign the security role of "bot author" to you in the environment. More information: [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
+1. Assign the security role of "copilot author" to you in the environment. More information: [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
 You can then return to the [Microsoft Copilot Studio portal](https://web.powerva.microsoft.com) and create a copilot in the environment.
 
@@ -98,7 +98,7 @@ More information:
 
 ## Trial environments
 
-When you trial Microsoft Copilot Studio, you can create trial environments that expire after 30 days. When the environment expires, all the copilots in the environment will be deleted. The data associated with the bot, including any flows and resources you have been using, will be lost.
+When you trial Microsoft Copilot Studio, you can create trial environments that expire after 30 days. When the environment expires, all the copilots in the environment will be deleted. The data associated with the copilot, including any flows and resources you have been using, will be lost.
 
 If you have created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Microsoft Copilot Studio portal, you'll also see a notification if you have copilots created in a trial environment that is going to expire in less than two weeks.
 
