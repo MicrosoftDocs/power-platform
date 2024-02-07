@@ -63,12 +63,12 @@ Move your copilots across [environments](/power-platform/admin/environments-over
 
 You use solutions to export copilots from one environment and import them into another. The solution acts as a "carrier" for the copilots. You can export and import multiple bots in one solution.
 
-1. In Microsoft Copilot Studio, open the copilot you want to export.
+1. In Microsoft Copilot Studio, select **Copilots** in the navigation menu to bring up the list of copilots.
 
 > [!NOTE]
 > If you are using a **Classic** copilot, in the navigation menu select **Chatbots** to open the **Chatbots** page and view all the copilots you have access to in this environment.
 
-2. In the navigation menu, under **Settings**, select **Bot details**, and then select **Export**.
+2. Select the copilot you wish to export and select **Export copilot**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the Bot details settings page in Microsoft Copilot Studio, with the Export button highlighted.":::
 
