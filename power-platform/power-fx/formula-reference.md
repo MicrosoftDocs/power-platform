@@ -97,6 +97,10 @@ Other elements include:
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
+**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+
+**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+
 **[Compass](reference/signals.md)** – Returns your compass heading.
 
 **[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
@@ -107,7 +111,7 @@ Other elements include:
 
 **[Connection](reference/signals.md)** – Returns information about your network connection.
 
-**[Copy](reference/function-copy.md)** - Copies text to the clipboard on the device where the app is running.
+**[Copy](reference/function-copy.md)** – Copies text to the clipboard on the device where the app is running.
 
 **[Count](reference/function-table-counts.md)** – Counts table records that contain numbers.
 
@@ -143,7 +147,7 @@ Other elements include:
 
 **[Defaults](reference/function-defaults.md)** – Returns the default values for a data source.
 
-**[Degrees](reference/function-trig.md)** - Converts radians to degrees.
+**[Degrees](reference/function-trig.md)** – Converts radians to degrees.
 
 **[Disable](reference/function-enable-disable.md)** – Disables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
 
@@ -171,11 +175,11 @@ Other elements include:
 
 **[Errors](reference/function-errors.md)** – Provides error information for previous changes to a data source.
 
-**[exactin](reference/operators.md #in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
+**[exactin](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
 
 **[Exit](reference/function-exit.md)** – Exits the currently running app and optionally signs out the current user.
 
-**[Exp](reference/function-numericals.md)** - Returns _e_ raised to a power.
+**[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
 
 ## F
 
@@ -201,7 +205,7 @@ Other elements include:
 
 **[Hex2Dec](reference/function-hexdec.md)** – Convert a hexadecimal text string to a number.
 
-**[Host](reference/object-host.md)** - Provides information about the current host running the app.
+**[Host](reference/object-host.md)** – Provides information about the current host running the app.
 
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
 
@@ -210,9 +214,9 @@ Other elements include:
 
 **[If](reference/function-if.md)** – Returns one value if a condition is true and another value if not.
 
-**[IfError](reference/function-iferror.md)** - Detects errors and provides an alternative value or takes action.
+**[IfError](reference/function-iferror.md)** – Detects errors and provides an alternative value or takes action.
 
-**[in](reference/operators.md #in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
+**[in](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
 
 **[Index](reference/function-first-last.md)** – Returns a record from a table based on ordered position.
 
@@ -240,7 +244,7 @@ Other elements include:
 
 ## J
 
-**[JSON](reference/function-json.md)** - Generates a JSON text string for a table, a record, or a value.
+**[JSON](reference/function-json.md)** – Generates a JSON text string for a table, a record, or a value.
 
 ## L
 
@@ -306,13 +310,13 @@ Other elements include:
 
 **[Param](reference/function-param.md)** – Access parameters passed to a canvas app when launched.
 
-**[Parent](reference/operators.md #self-and-parent-operators)** – Provides access to a container control's properties.
+**[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
 
 **[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
-**[PDF](reference/function-pdf.md)** - Export contents from the current screen to an object for use in multiple scenarios.
+**[PDF](reference/function-pdf.md)** – Export contents from the current screen to an object for use in multiple scenarios.
 
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
 
@@ -324,7 +328,7 @@ Other elements include:
 
 ## R
 
-**[Radians](reference/function-trig.md)** - Converts degrees to radians.
+**[Radians](reference/function-trig.md)** – Converts degrees to radians.
 
 **[Rand](reference/function-rand.md)** – Returns a pseudo-random number between 0 and 1.
 
@@ -374,7 +378,7 @@ Other elements include:
 
 **[Select](reference/function-select.md)** – Simulates a select action on a control, causing the **OnSelect** formula to be evaluated.
 
-**[Self](reference/operators.md #self-and-parent-operators)** – Provides access to the properties of the current control.
+**[Self](reference/operators.md#self-and-parent-operators)** – Provides access to the properties of the current control.
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
 
@@ -387,6 +391,8 @@ Other elements include:
 **[SetProperty](reference/function-setproperty.md)** – Simulates interactions with input controls.
 
 **[ShowColumns](reference/function-table-shaping.md)** – Returns a table with only selected columns.
+
+**[ShowHostInfo](reference/showhostinfo.md)** – Displays information to the user in the app. 
 
 **[Shuffle](reference/function-shuffle.md)** – Randomly reorders the records of a table.
 
@@ -416,13 +422,13 @@ Other elements include:
 
 **[Table](reference/function-table.md)** – Creates a temporary table.
 
-**[Tan](reference/function-trig.md)** - Returns the tangent of an angle specified in radians.
+**[Tan](reference/function-trig.md)** – Returns the tangent of an angle specified in radians.
 
 **[Text](reference/function-text.md)** – Converts any value and formats a number or date/time value to a string of text.
 
-**[ThisItem](reference/operators.md #thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a gallery or form control.
+**[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a gallery or form control.
 
-**[ThisRecord](reference/operators.md #thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a record scope function, such as **ForAll**, **With**, and **Sum**.
+**[ThisRecord](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a record scope function, such as **ForAll**, **With**, and **Sum**.
 
 **[Time](reference/function-date-time.md)** – Returns a date/time value, based on **Hour**, **Minute**, and **Second** values.
 
@@ -432,7 +438,7 @@ Other elements include:
 
 **[Today](reference/function-now-today-istoday.md)** – Returns the current date-only value.
 
-**[Trace](reference/function-trace.md)** - Provide additional information in your test results.
+**[Trace](reference/function-trace.md)** – Provide additional information in your test results.
 
 **[Trim](reference/function-trim.md)** – Removes extra spaces from the ends and interior of a string of text.
 

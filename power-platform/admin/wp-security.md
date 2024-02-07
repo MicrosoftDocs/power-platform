@@ -22,10 +22,10 @@ This section provides information on how [**Microsoft Dataverse**](/powerapps/ma
 
 The following is a high-level overview of how security model is implemented in Dataverse.
 
-- Users are authenticated by Azure Active Directory (Azure AD).
+- Users are authenticated by Microsoft Entra ID.
 - Licensing is the first control-gate to allowing access to Power Apps components.
 - Ability to create applications and flows is controlled by security roles in the context of environments.
-- A user's ability to see and use apps is controlled by sharing the application with the user. Sharing of [canvas apps](/powerapps/maker/canvas-apps/getting-started) is done directly with a user or Azure AD group but is still subject to Dataverse security roles. Sharing of [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) is done via Dataverse security roles.
+- A user's ability to see and use apps is controlled by sharing the application with the user. Sharing of [canvas apps](/powerapps/maker/canvas-apps/getting-started) is done directly with a user or Microsoft Entra group but is still subject to Dataverse security roles. Sharing of [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) is done via Dataverse security roles.
 - Environments act as security boundaries allowing different security needs to be implemented in each environment.
 - Flows and Canvas apps use connectors, the specific connections credentials and associated service entitlements determine permissions when apps use the connectors.
 - Environments with Dataverse add support for more advanced security models that are specific to controlling access to data and services in the environment with a Dataverse database.
@@ -41,7 +41,7 @@ The following is a high-level overview of how security model is implemented in D
 [Security concepts in Dataverse](wp-security-cds.md)<br />
 [How access to a record is determined](how-record-access-determined.md)<br />
 [Data loss prevention policies](wp-data-loss-prevention.md)<br />
-[Block access by location with Azure AD Conditional Access](restrict-access-online-trusted-ip-rules.md)<br />
+[Block access by location with Microsoft Entra Conditional Access](restrict-access-online-trusted-ip-rules.md)<br />
 [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md)<br />
 [Control user access to environments: security groups and licenses](control-user-access.md)
 

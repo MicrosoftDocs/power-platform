@@ -369,17 +369,17 @@ If you have configured connections in the dataflow, but the **Publish** button r
 >[!IMPORTANT]
 > Only complete these steps if you want to review Power Platform–related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the **[CoE Admin Command Center](core-components.md#coe-admin-command-center)** canvas app. The **CoE Admin Command Center** app can be used without this configuration.
 
-### Create an Azure AD app registration to connect to Microsoft Graph
+### Create a Microsoft Entra app registration to connect to Microsoft Graph
 
 The [CoE Admin Command Center](core-components.md#coe-admin-command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates.
 
-Using these steps, you set up an Azure AD app registration that is used in a cloud flow to connect to the Graph API. More information: [Use the Microsoft Graph API](/graph/use-the-api)
+Using these steps, you set up a Microsoft Entra app registration that is used in a cloud flow to connect to the Graph API. More information: [Use the Microsoft Graph API](/graph/use-the-api)
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
-1. Go to **Azure Active Directory** > **App registrations**.
+1. Go to **Microsoft Entra ID** > **App registrations**.
 
-   :::image type="content" source="media/coe33.png" alt-text="Azure AD app registration":::
+   :::image type="content" source="media/coe33.png" alt-text="Microsoft Entra app registration":::
 
 1. Select **+ New Registration**.
 
@@ -417,9 +417,9 @@ Using these steps, you set up an Azure AD app registration that is used in a clo
 
 | Name | Description |
 |------|---------------|
-| Command Center - Application Client ID | The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. |
-| Command Center - Client Secret | The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
-| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. This variable expects the Azure Key Vault reference, not the secret. Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)|
+| Command Center - Application Client ID | The application client ID from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. |
+| Command Center - Client Secret | The application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. This variable expects the Azure Key Vault reference, not the secret. Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)|
 
 ### Modify the Command Center App > Get M365 Service Messages flow for a GCC High or DoD tenant
 
@@ -494,9 +494,9 @@ Environment variables are used to store application and flow configuration data 
 | Admin eMail Preferred Language | The preferred language for the emails sent to the admin email alias, which is specified in the Admin eMail environment variable. | en-US |
 |Also Delete from CoE | When running the "Admin \| Sync Template v2 (Check Deleted)" flow, delete the items from CoE (yes) or just mark deleted (no).  | Yes |
 | App Dataflow ID | Dataflow ID of the CoE BYODL Apps dataflow. Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory). | Not applicable |
-| Command Center - Application Client ID | (optional) The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
-| Command Center - Client Secret | (optional) The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
-| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable.  Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)| Not applicable |
+| Command Center - Application Client ID | (optional) The application client ID from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
+| Command Center - Client Secret | (optional) The application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable.  Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)| Not applicable |
 |CompanyName |The name of the company to be displayed in various apps and emails. Currently this is only used by the [Video Hub](nurture-components.md#video-hub) app. | Not applicable |
 | Current Environment | Current Dataflow Environment ID used by cloud flows to refresh dataflows. Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory). | Not applicable |
 | DelayInventory | If Yes, runs a delay step to assist with the Dataverse load balancing. Only set this to No for debugging. | Yes |

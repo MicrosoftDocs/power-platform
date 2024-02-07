@@ -38,7 +38,7 @@ Information available for chatbots:
 
 ## Power Apps (canvas apps) "shared with" information
 
-This version introduces new tables that store information on users canvas apps have been shared with. A new Admin | Sync Flow v3 (Power Apps User Shared With) has been added to retrieve role assignments per app. Group size is stored for apps shared with Azure AD security groups.
+This version introduces new tables that store information on users canvas apps have been shared with. A new Admin | Sync Flow v3 (Power Apps User Shared With) has been added to retrieve role assignments per app. Group size is stored for apps shared with Microsoft Entra security groups.
 
 Information available for users an app is shared with:
 

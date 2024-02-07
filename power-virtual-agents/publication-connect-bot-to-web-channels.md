@@ -9,8 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "publication, authoring, ceX"
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Configure the demo website and add the bot to your live website

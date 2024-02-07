@@ -9,8 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: analysis, ceX
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Key concepts – Analytics in Microsoft Copilot Studio

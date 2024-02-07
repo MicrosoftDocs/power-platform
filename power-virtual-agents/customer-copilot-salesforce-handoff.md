@@ -6,8 +6,7 @@ ms.date: 11/14/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-ms.collection: power-virtual-agents
-ms.service: power-virtual-agents
+
 ---
 
 # Hand off to Salesforce Einstein bot 
@@ -27,7 +26,7 @@ Before you begin, ensure that you have the following prerequisites in place:
 
 ### Step 1: Retrieve Direct Line secret for your bot
 
-1. Retrieve your [Direct LinesSecret](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0).
+1. Retrieve your [Direct LinesSecret](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0&preserve-view=true).
 
 
 ### Step 2: Configure Salesforce remote site settings

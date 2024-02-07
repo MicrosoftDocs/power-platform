@@ -1,13 +1,11 @@
 ---
 title: "Work with solutions using the Dataverse SDK | Microsoft Docs"
 description: "Learn about the .NET APIs that are available to manage Microsoft Dataverse solutions."
-keywords: 
-author: mikkelsen2000
-ms.author: pemikkel
-ms.custom: ""
+author: marcelbf
+ms.author: marcelbf
 ms.date: 04/05/2022
 ms.reviewer: pehecke
-ms.topic: "article"
+ms.topic: article
 search.audienceType: 
   - developer
 ---

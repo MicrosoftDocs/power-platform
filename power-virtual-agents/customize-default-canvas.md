@@ -9,8 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "customization, ce06102020"
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Customize the look and feel of the bot's default canvas

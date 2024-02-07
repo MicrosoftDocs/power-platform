@@ -50,8 +50,7 @@
           "description": "Last sync time for the org",
           "type": "string",
           "example": ""
-        },
-        "additionalProperties": null
+        }
       }
     }
   },

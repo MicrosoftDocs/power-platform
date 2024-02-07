@@ -10,8 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: kamrani
 ms.custom: authentication, ceX
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Configure single sign-on with Microsoft Entra ID for Microsoft Copilot Studio bots in Microsoft Teams

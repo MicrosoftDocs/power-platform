@@ -3,8 +3,8 @@ title: The Home page of ISV Studio | Microsoft Docs
 description: Learn about the home page capabilities provided by the ISV Studio portal.
 ms.date: 04/03/2023
 ms.reviewer: pehecke
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 suite: powerapps
 ms.topic: article
 ms.subservice: developer

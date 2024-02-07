@@ -18,6 +18,12 @@
       href: trigger-phrases-best-practices.md
     - name: Slot filling best practices
       href: slot-filling-best-practices.md
+    - name: Adaptive Card best practices
+      items:
+      - name: Display data from arrays
+        href: Adaptive-Cards-Display-Data-from-Arrays.md
+      - name: Add feedback for every response 
+        href: Adaptive-Card-Add-feedback-for-every-response.md
 - name: Measuring and improving chatbots
   items:
     - name: Measuring engagement
@@ -40,3 +46,13 @@
         href: deflection-transcripts-analysis.md
     - name: Custom analytics strategy
       href: custom-analytics-strategy.md
+- name: Planning a conversational AI project
+  items:
+    - name: Project best practices
+      href: project-best-practices.md
+    - name: Getting started
+      href: project-getting-started.md
+    - name: Building a team
+      href: project-building-a-team.md
+    - name: Project planning
+      href: project-planning.md

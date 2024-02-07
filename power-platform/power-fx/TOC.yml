@@ -30,6 +30,8 @@
             href: formula-reference.md
           - name: Dataverse formula reference
             href: formula-reference-dataverse.md
+          - name: Desktop flows formula reference
+            href: formula-reference-desktop-flows.md
           - name: Power Platform CLI formula reference
             href: formula-reference-pac-cli.md
           - name: Abs
@@ -88,6 +90,10 @@
             href: reference/function-colors.md
           - name: ColorValue
             href: reference/function-colors.md
+          - name: Column
+            href: reference/function-columnnames-column.md
+          - name: ColumnNames
+            href: reference/function-columnnames-column.md
           - name: Compass
             href: reference/signals.md
           - name: Concat
@@ -362,6 +368,8 @@
             href: reference/function-sequence.md
           - name: ShowColumns
             href: reference/function-table-shaping.md
+          - name: ShowHostInfo
+            href: reference/showhostinfo.md
           - name: Shuffle
             href: reference/function-shuffle.md
           - name: Sin

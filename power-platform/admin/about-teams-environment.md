@@ -51,10 +51,10 @@ This section provides a summary of key lifecycle operations that will be allowed
 |Operations  |Feature description  |Available in GA  |
 |---------|---------|---------|
 |Backup     | Automated backups and labeled backups can be taken. Admins can view them in the Power Platform admin center. Backups will be available for up to 7 days.        |  Yes       |
-|Restore     | Only point-in-time restores to the same environment will be possible. Note: if the environment has been upgraded, the point-in-time restore will only be available starting from the moment it was upgraded. | Yes        |
+|Restore     | Teams environments only support self-restore. Only point-in-time restores to the same environment will be possible. Note: if the environment has been upgraded, the point-in-time restore will only be available starting from the moment it was upgraded. | Yes        |
 |Copy     | Not available by default for Dataverse for Teams environments.        | No        |
 |Create     | Only through Microsoft Teams. Note: these Dataverse for Teams environments will be limited to a 1:1 mapping to the Microsoft Teams team it was created in and bound to the Microsoft 365 group associated with the team.        | No        |
-|Delete     | The environment can be deleted by the team owner. Note: the environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
+|Delete     | The environment can be deleted by the team owner. The environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
 |Reset     | Not available by default for Dataverse for Teams environments.        | No        |
 |Upgrade     | Unlocks all the functionality of Dataverse services for the environment.         | Yes        | 
 
@@ -313,7 +313,7 @@ Follow these steps to apply a DLP policy:
 
 ## Known issues
 
-- The **Run diagnostics** feature in the Power Platform admin center for team owners, members, and guests who don't have Azure Active Directory admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
+- The **Run diagnostics** feature in the Power Platform admin center for team owners, members, and guests who don't have Microsoft Entra admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
 
 ### See also
 [Automatic deletion of inactive Microsoft Dataverse for Teams environments (preview)](inactive-teams-environment.md) <br />

@@ -7,8 +7,7 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.custom: ceX, bap-template
-ms.collection: virtual-agent
-ms.service: power-virtual-agents
+
 ---
 
 # View topic status (preview)

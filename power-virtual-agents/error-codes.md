@@ -8,7 +8,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: clmori
-ms.service: power-virtual-agents
 ---
 
 # Error codes: Microsoft Copilot Studio

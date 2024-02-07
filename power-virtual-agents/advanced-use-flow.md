@@ -10,8 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Call a flow as an action
