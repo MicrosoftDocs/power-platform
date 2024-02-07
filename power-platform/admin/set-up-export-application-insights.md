@@ -12,7 +12,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-- StephenRauchPM
+- Zeffin
 ---
 
 # Export data to Application Insights 

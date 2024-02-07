@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.date: 12/15/2022
 author: sericks007
 ms.subservice: admin
-ms.author: kvivek
-ms.reviewer: kvivek
+ms.author: sericks
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
 contributors:
   - alaug
   - tapanm-msft
-  - jimholtz
+  - sericks
 ---
 # Invite users with Microsoft Entra B2B collaboration
 
