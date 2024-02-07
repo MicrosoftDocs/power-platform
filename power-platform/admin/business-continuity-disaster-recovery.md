@@ -42,7 +42,7 @@ Failover and failback are the two main tasks accomplished during the business co
 **Failover** is the process of switching to a designated geo-secondary replica of all the systems and data from your primary production site. At the completion of failover operation your production environment will be accessible from the geo-secondary site.
 
 > [!IMPORTANT]
-> While the Finance and Operations apps are operating in the secondary region after a failover - maintenance, package deployments, Financial Reporting and Power BI reporting are unavailable.
+> While the Finance and Operations apps are operating in the secondary region after a failover maintenance, package deployments, Financial Reporting, and Power BI reporting are unavailable.
 
 **Failback** operation is the process of returning production to its original location after a disaster or a scheduled maintenance period.
 
