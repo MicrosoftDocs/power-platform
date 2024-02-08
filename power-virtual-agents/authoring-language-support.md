@@ -55,31 +55,34 @@ Copilot Studio supports languages in three stages. The stage indicates how well 
 - Generative Answers: A Copilot Studio feature that autogenerates chat responses.
 - Generative Actions: A Copilot Studio feature that uses plugins in a conversation.
 
+  > [!NOTE]
+  > Generative Actions is currently only in English.
+
 | Language              | Authoring canvas | End-user language | Generative answers | Generative actions |
 | --------------------- | ---------------- | ----------------- | ------------------ | ------------------ |
-| Chinese (Simplified)  | &check;          | &check;           | Coming soon        | Preview            |
-| Chinese (Traditional) | &check;          | &check;           | Coming soon        | Preview            |
-| Czech                 | &check;          | &check;           | Coming soon        | Preview            |
+| Chinese (Simplified)  | &check;          | &check;           |         | Preview            |
+| Chinese (Traditional) | &check;          | &check;           |         | Preview            |
+| Czech                 | &check;          | &check;           |         | Preview            |
 | Danish                | &check;          | &check;           | &check;            | Preview            |
 | Dutch                 | &check;          | &check;           | &check;            | Preview            |
 | English               | &check;          | &check;           | &check;            | Preview            |
-| Finnish               | &check;          | &check;           | Coming soon        | Preview            |
+| Finnish               | &check;          | &check;           |         | Preview            |
 | French                | &check;          | &check;           | &check;            | Preview            |
 | German                | &check;          | &check;           | &check;            | Preview            |
-| Greek                 | &check;          | &check;           | Coming soon        | Preview            |
-| Hindi                 | &check;          | &check;           | Coming soon        | Preview            |
-| Indonesian            | &check;          | &check;           | Coming soon        | Preview            |
+| Greek                 | &check;          | &check;           |         | Preview            |
+| Hindi                 | &check;          | &check;           |         | Preview            |
+| Indonesian            | &check;          | &check;           |         | Preview            |
 | Italian               | &check;          | &check;           | &check;            | Preview            |
-| Japanese              | &check;          | &check;           | Coming soon        | Preview            |
-| Korean                | &check;          | &check;           | Coming soon        | Preview            |
+| Japanese              | &check;          | &check;           |         | Preview            |
+| Korean                | &check;          | &check;           |         | Preview            |
 | Norwegian             | &check;          | &check;           | &check;            | Preview            |
-| Polish                | &check;          | &check;           | Coming soon        | Preview            |
+| Polish                | &check;          | &check;           |         | Preview            |
 | Portuguese (Brazil)   | &check;          | &check;           | &check;            | Preview            |
-| Russian               | &check;          | &check;           | Coming soon        | Preview            |
+| Russian               | &check;          | &check;           |         | Preview            |
 | Spanish               | &check;          | &check;           | &check;            | Preview            |
-| Swedish               | &check;          | &check;           | Coming soon        | Preview            |
-| Thai                  | &check;          | &check;           | Coming soon        | Preview            |
-| Turkish               | &check;          | &check;           | Coming soon        | Preview            |
+| Swedish               | &check;          | &check;           |         | Preview            |
+| Thai                  | &check;          | &check;           |         | Preview            |
+| Turkish               | &check;          | &check;           |         | Preview            |
 
 ### Related topics
 
