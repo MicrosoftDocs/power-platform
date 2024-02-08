@@ -29,7 +29,7 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 | Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, you can control the maximum number of users with whom a canvas app can be shared. |
 
 > [!NOTE]
-> Sharing rules are enforced when users try to share an app. This will not impact any existing users who already have access to the app prior to the application of the sharing rules. However, if an app is out of compliance after rules are set, only un-sharing will be allowed until the app is compliant with the new rules.
+> Sharing rules are enforced when users try to share an app. This won't impact any existing users who already have access to the app prior to the application of the sharing rules. However, if an app is out of compliance after rules are set, only un-sharing will be allowed until the app is compliant with the new rules.
 > 
 > After sharing rules are set in the Power Platform admin center, it may take up to an hour for them to start getting enforced.
 >
