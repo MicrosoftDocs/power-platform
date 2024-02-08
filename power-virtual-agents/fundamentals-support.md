@@ -1,8 +1,7 @@
 ---
 title: "Find community help and get support"
 description: "Use the Microsoft Copilot Studio community forums to ask and get help and trips and ideas, or get support directly from Microsoft."
-keywords: "PVA"
-ms.date: 03/24/2023
+ms.date: 02/08/2024
 
 ms.topic: article
 author: iaanw
