@@ -90,6 +90,10 @@
             href: reference/function-colors.md
           - name: ColorValue
             href: reference/function-colors.md
+          - name: Column
+            href: reference/function-columnnames-column.md
+          - name: ColumnNames
+            href: reference/function-columnnames-column.md
           - name: Compass
             href: reference/signals.md
           - name: Concat

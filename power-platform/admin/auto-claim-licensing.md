@@ -58,6 +58,8 @@ To simplify license management for administrators, in tenants with Managed Envir
 
 By default, this policy is applied when users open Power Apps in Managed Environments; however, administrators can choose to extend this policy to cover Power Apps opened in standard environments, as well through a setting in the Power Platform admin center.
 
+Starting February 2024, tenants that have a new Power Apps premium license will automatically have the auto-created policy for Power Apps set up in Microsoft 365 admin center. The auto-created policy ensures that any user that doesn't have a license and launches a Power Apps that requires a premium license, will automatically be granted a Power Apps premium license from the tenant's available licenses. This process facilitates smoother access and makes managing licenses more straightforward. By default, this policy is applied across all environments.
+
 ### Can administrators update the policy?
 Yes, administrators can manage the policy in the Microsoft 365 admin center just like any other auto-claim policy. Administrators can disable the policy, delete it, and view reports on which users were assigned licenses.
 

@@ -3,7 +3,6 @@ title: Security and governance in Copilot Studio
 description: Use the security and governance controls in Power Platform and Microsoft 365 to manage the security of your data when creating, publishing, and using copilots built with Copilot Studio.
 keywords: "PVA"
 ms.date: 11/14/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt

@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "customization, ce06102020"
-ms.service: power-virtual-agents
 
 ---
 

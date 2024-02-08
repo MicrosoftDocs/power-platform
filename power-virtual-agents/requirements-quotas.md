@@ -10,7 +10,6 @@ ms.author: iawilt
 ms.reviewer: clmori
 manager: leeclontz
 ms.custom: quotas, admin, ceX
-ms.service: power-virtual-agents
 
 ---
 

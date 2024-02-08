@@ -7,7 +7,6 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 
-ms.service: power-virtual-agents
 ---
 
 # Hand off to LivePerson
@@ -28,7 +27,7 @@ Before you begin, ensure that you have the following prerequisites in place:
 
 Follow these steps to create and connect LivePerson to a Copilot Studio bot:
 
-1. [Retrieve the Direct Line secret](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0) for your bot.
+1. [Retrieve the Direct Line secret](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0&preserve-view=true) for your bot.
 
 2. Follow the instructions at the [LivePerson documentation site](https://developers.liveperson.com/third-party-bots-microsoft-direct-line-introduction.html).
 
