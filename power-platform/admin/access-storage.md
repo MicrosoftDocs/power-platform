@@ -14,8 +14,9 @@ search.audienceType:
 
 Storage has important data from your environment. As a Power Platform administrator, there are a few ways you can access your storage:
 
-- Access your storage using [SQL query](#sql-query), [Microsoft Fabric](#fabric) or [long term data retention](#long-term-data-retention).
-- View and understand your data.
+- [SQL query](#sql-query)
+- [Microsoft Fabric](#fabric)
+- [Long term data retention](#long-term-data-retention)
 
 > [!IMPORTANT]
 > Access to storage by using an SAS token is no longer available. Use one of the methods described here to securely access Microsoft Dataverse data for analysis and insights.
