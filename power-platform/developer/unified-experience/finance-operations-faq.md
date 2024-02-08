@@ -121,10 +121,6 @@ Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is
 
 Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. Choose the `-convertToUnifiedPackage` option and provide the package zip and output location as parameters.
 
-### Trace parser doesn't work on my Visual Studio client
-
-The trace parser is being updated to support working on unified clients. Analyze the trace using trace parser on existing finance and operations developer machines.
-
 ### Stopping debugging restarts the runtime
 
 Use **Detach All** to end debugging in place of **Stop Debugging**.
