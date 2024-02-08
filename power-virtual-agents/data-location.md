@@ -24,7 +24,7 @@ Microsoft Copilot Studio supports multiple globalization scenarios, and lets you
 
 ## Supported locales and formats
 
-Chatbots built with Microsoft Copilot Studio will understand and display content that's locally relevant to the user. Localized handling and formatting are based on the user's browser locale setting, and include the following elements within a chat conversation:
+Copilots built with Microsoft Copilot Studio will understand and display content that's locally relevant to the user. Localized handling and formatting are based on the user's browser locale setting, and include the following elements within a chat conversation:
 
 - Date and time
 - Numbers
@@ -40,11 +40,11 @@ Microsoft Copilot Studio supports the following display formatting locales:
 - en-IN
 - en-US
 
-For example, if the user's browser locale setting is _en-GB_, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is _en-US_, the same date equates to **February 3**.
+For example, if the user's browser locale setting is _en-GB_, the copilot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is _en-US_, the same date equates to **February 3**.
 
 # [Web app](#tab/web)
 
-Microsoft Copilot Studio can be deployed into the Microsoft Azure datacenters (also referred to as "regions") listed here. You can create a bot in your tenant's location by default, or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
+Microsoft Copilot Studio can be deployed into the Microsoft Azure datacenters (also referred to as "regions") listed here. You can create a copilot in your tenant's location by default, or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 
 ### Data locations
 
@@ -52,7 +52,7 @@ Microsoft might replicate customer data to other regions available within the sa
 
 No matter where customer data is stored, Microsoft doesn't control or limit the locations from which customers or their users can access customer data.
 
-Data will be stored in the United States if a bot author's tenant location isn't listed under the **Data locations** table below.
+Data will be stored in the United States if a copilot author's tenant location isn't listed under the **Data locations** table below.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mPmc ]
@@ -98,7 +98,7 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
 
 - Customers configure external services to extend Microsoft Copilot Studio. Such customer configurations might cause customer data to be transferred outside of the selected geographic location. Examples of customer configurable external services include:
 
-  - [Customer Service Hand-off](advanced-hand-off.md), Configurable external services that hand-off bot escalations to a human agent.
+  - [Customer Service Hand-off](advanced-hand-off.md), Configurable external services that hand-off copilot escalations to a human agent.
 
   - Multi-channel, Configurable to external channels such as Facebook and internal, non Microsoft Copilot Studio services, such as Microsoft Teams.
 
@@ -106,7 +106,7 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
 
     - [Microsoft Teams documentation](publication-add-bot-to-microsoft-teams.md)
 
-  - [Dynamics 365 Customer Service Insights Topic suggestion](advanced-create-topics-from-csi.md), Topic suggestions from Customer Service Insights are automated into Microsoft Copilot Studio with a single click. Data might go to a bot in a different geographic region than the workspace region in Customer Service Insights.
+  - [Dynamics 365 Customer Service Insights Topic suggestion](advanced-create-topics-from-csi.md), Topic suggestions from Customer Service Insights are automated into Microsoft Copilot Studio with a single click. Data might go to a copilot in a different geographic region than the workspace region in Customer Service Insights.
 
 # [Teams](#tab/teams)
 
@@ -114,7 +114,7 @@ Microsoft Teams supports a larger set of languages than the Web app. If the sele
 
 ### Data locations
 
-Microsoft Copilot Studio bots in Teams can be created in the [supported data locations](data-location.md). You can create a bot if your tenant's location is supported, or you can use the Microsoft Copilot Studio web app by choosing the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
+Microsoft Copilot Studio copilots in Teams can be created in the [supported data locations](data-location.md). You can create a copilot if your tenant's location is supported, or you can use the Microsoft Copilot Studio web app by choosing the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 
 ---
 
