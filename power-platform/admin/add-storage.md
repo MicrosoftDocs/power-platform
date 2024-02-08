@@ -4,7 +4,7 @@ description: "Learn about adding Microsoft Dataverse storage capacity."
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 
 ms.component: pa-admin

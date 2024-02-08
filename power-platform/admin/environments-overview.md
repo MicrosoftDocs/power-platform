@@ -109,7 +109,7 @@ You can sort and search the list of environments; this is useful if you have a l
 
 ### Environment details
 
-You can see some of the details of your environments by selecting an environment. Select **See all** to see more environment details.
+Select an environment to view the details of that environment, including the URL, region it is hosted in, and version. Select **See all** to see more environment details.
 
 > [!div class="mx-imgBorder"] 
 > ![Environment details.](media/environment-details-see-all.png "Environment details")

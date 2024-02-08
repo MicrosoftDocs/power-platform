@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ms.contributors:
 - rakrish
-- StephenRauchPM
+- Zeffin
 ---
 
 # Set up Application Insights with Power Automate (preview)

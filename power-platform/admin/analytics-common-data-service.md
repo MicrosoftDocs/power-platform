@@ -1,11 +1,11 @@
 ---
 title: "View and download Dataverse analytics"
 description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
-author: StephenRauchPM
+author: Zeffin
 ms.topic: conceptual
 ms.date: 03/22/2022
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: johnev
 ms.reviewer: sericks
 
 ---

@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 10/02/2023
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - mikferland-msft
   - mihaelablendea
