@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 10/12/2022
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 

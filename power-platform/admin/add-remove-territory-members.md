@@ -8,7 +8,7 @@ ms.date: 09/30/2017
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin

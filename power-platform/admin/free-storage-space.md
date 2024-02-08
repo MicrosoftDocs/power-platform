@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 1/31/2024
 ms.subservice: admin
 ms.author: ceian 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - DanaMartens
   - ProfessorKendrick

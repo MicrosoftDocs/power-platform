@@ -1,13 +1,3 @@
----
-title: "Basic DLP policy configuration"
-author: v-alarioza
-
-ms.date: 11/30/2022
-ms.topic: include
-ms.author: v-alarioza
-ms.service: power-virtual-agents
----
-
 ### Select or create a policy
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), under **Policies**, select **Data policies**.

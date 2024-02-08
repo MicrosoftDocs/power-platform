@@ -7,7 +7,6 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 
-ms.service: power-virtual-agents
 ---
 
 
