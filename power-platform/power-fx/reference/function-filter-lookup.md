@@ -101,7 +101,7 @@ The following example uses the **Account** table in Microsoft Dataverse as data 
 1. On the **Properties** tab of the right-hand pane, open **Data Source** and then select **Accounts**.
 1. (Optional) In the **Layout** list, select different options.
 1. On the **Insert** tab, select **Input** and then select **Combo box**. Repeat the step to add two more combo box controls.
-1. For each combo box control, on the **Properties** tab of the right-hand pane, open **Data Source** and then select **Accounts**. Select **Edit** next to **Fields** option and then select the **Primary text** and **SearchField** values. The **Primary text** should be the choices column you want to add to the combo box. Repeat the step for other two combo box controls.
+1. For each combo box control, on the **Properties** tab of the right-hand pane, open **Data Source** and then select **Accounts**. Select **Edit** next to **Fields** option and then select the **Primary text** and **SearchField** values. The **Primary text** should be the choices column you want to add to the combo box. Repeat the step for the other two combo box controls.
 
    ![Setting combo box values.](media/function-filter-lookup/setting-combobox-values.png "Setting combo box values")
 
