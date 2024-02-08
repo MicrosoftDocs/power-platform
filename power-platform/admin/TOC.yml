@@ -106,7 +106,7 @@
                   href: power-automate-licensing/add-ons.md
                 - name: Request a Power Automate premium license
                   href: power-automate-licensing/request-premium-license.md
-                - name: Auto-claim policies for Power Automate licenses (preview)
+                - name: Autoclaim policies for Power Automate licenses (preview)
                   href: power-automate-licensing/power-automate-auto-claim.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
