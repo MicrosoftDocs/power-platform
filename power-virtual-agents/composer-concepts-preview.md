@@ -1,6 +1,6 @@
 ---
-title: Key concepts for Copilot Framework Composer users
-description: Overview of how key concepts in Microsoft Copilot Framework Composer translate to concepts in Microsoft Copilot Studio preview.
+title: Key concepts for Bot Framework Composer users
+description: Overview of how key concepts in Microsoft Bot Framework Composer translate to concepts in Microsoft Copilot Studio preview.
 ms.date: 03/24/2023
 ms.topic: conceptual
 author: iaanw
