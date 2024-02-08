@@ -2,7 +2,7 @@
 title: Programmability and Extensibility - PowerShell - Getting started | Microsoft Docs
 description: PowerShell getting started with Microsoft Power Platform programmability tools.
 author: laneswenka
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ms.collection: get-started
 ms.topic: reference
 ms.date: 03/06/2022

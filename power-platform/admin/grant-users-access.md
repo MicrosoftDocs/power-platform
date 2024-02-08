@@ -4,7 +4,7 @@ description: "Learn to create users, assign licenses, and set administrative rol
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.collection: get-started
 ms.component: pa-admin
