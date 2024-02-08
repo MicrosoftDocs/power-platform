@@ -36,7 +36,8 @@ Tenant admins must have at least _one_ of the following roles:
 
 > [!IMPORTANT]
 >
-> - Power Platform Advisor is a preview feature and not meant for production use, therefore might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback.
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Advisor currently scans only the Managed Environments in the tenant for recommendations. Scanning is done once a week.
 > - To submit feedback and suggestions, use the [Power Platform Advisor - Feedback](https://aka.ms/padvisorfeedback) form.
 
