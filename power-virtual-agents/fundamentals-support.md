@@ -16,7 +16,9 @@ ms.custom: "fundamentals, ceX"
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-You can get support for Copilot Studio on the community forums. Features released for general availability are eligible for support through Microsoft Support.
+You can get support for Copilot Studio on the community forums, and features released for general availability are eligible for support through Microsoft Support.
+
+For training and certification preparation, see the [Copilot Studio training paths and modules](/training/paths/work-power-virtual-agents/), which include the [Create copilots with Microsoft Copilot Studio] learning path that can help prepare you for [Exam PL-200: Microsoft Power Platform Functional Consultant](/credentials/certifications/exams/pl-200/).
 
 ## Microsoft Copilot Studio community forums
 
@@ -29,10 +31,6 @@ Check community forums to find user solutions that might help you.
 - [Submit an idea](https://go.microsoft.com/fwlink/?linkid=2064961)
 
    Do you have a great idea that makes Copilot Studio even better? We'd love to hear from you!
-
-## Prerequisites
-
-[Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## Microsoft support
 
