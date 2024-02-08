@@ -11,7 +11,7 @@ search.audienceType: admin
 ms.custom: "admin-security"
 ---
 
-# Setup and configure Virtual Network support for Power Platform (preview)
+# Set up and configure Virtual Network support for Power Platform (preview)
 
 This article helps you enable Azure Virtual Network support for Power Platform environments.
 
@@ -77,8 +77,9 @@ Users in the Azure Network Administrator role need to set up a virtual network a
 ### Step 3: Create enterprise policy
 
 [Create subnet injection enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual network and subnet you delegated.
-   > [!IMPORTANT]
-   > Platform uses primary virtual network and subnet at runtime and falls back to secondary virtual network and subnet in case of failover.
+
+> [!IMPORTANT]
+> Power Platform uses a primary virtual network and subnet at runtime and falls back to a secondary virtual network and subnet in the case of a failover.
 
 ### Step 4: Grant read access to the Power Platform admin
 
