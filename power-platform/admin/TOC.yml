@@ -678,8 +678,8 @@
                   href: subscription-tracking-deleted-object-retention.md
             - name: Add storage capacity
               href: add-storage.md
-            - name: Access storage with SAS token
-              href: storage-sas-token.md
+            - name: Access storage
+              href: access-storage.md
         - name: Resources
           items:
             - name: Overview
