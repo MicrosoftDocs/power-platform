@@ -7,7 +7,6 @@ author: iaanw
 ms.author: iawilt
 ms.reviewer: gapretty
 manager: leeclontz
-ms.service: power-virtual-agents
 
 ms.custom: bap-template
 ---

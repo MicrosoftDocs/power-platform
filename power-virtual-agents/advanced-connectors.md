@@ -3,7 +3,6 @@ title: Use Power Automate connectors in Microsoft Copilot Studio (Preview)
 description: Use Power Automate connectors to extend the capabilities of your bots.
 keywords: "PVA, flow, automate"
 ms.date: 12/8/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt

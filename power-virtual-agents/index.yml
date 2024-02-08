@@ -34,7 +34,7 @@ highlightedContent:
   # Card
   - title: Microsoft Copilot Studio training
     itemType: training
-    url: https://learn.microsoft.com/training/browse/?expanded=power-platform&products=power-virtual-agents
+    url: https://learn.microsoft.com/training/browse/?terms=copilot%20studio&products=ms-copilot
 
   # Card
   - title: Troubleshoot

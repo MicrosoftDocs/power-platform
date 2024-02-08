@@ -2,9 +2,9 @@
 title: "Create users | MicrosoftDocs"
 description: About creating users.
 author: sericks007
-ms.reviewer: Kumarvivek
+ms.reviewer: sericks007
 ms.subservice: admin
-ms.author: kvivek
+ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
@@ -93,13 +93,12 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>InternalEmailAddress*** </td><td>Mail </td></tr>
 <tr><td>Main Phone </td><td>Office phone</td></tr>
 <tr><td>Mobile Phone  </td><td>Mobile phone</td></tr>
-<tr><td>Fax  </td><td>Fax number  </td></tr>
 <tr><td>Address  </td><td>Street address   </td></tr>
 <tr><td>Address   </td><td>City   </td></tr>
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
 <tr><td>AzureActiveDirectoryObjectId****     </td><td>ObjectId   </td></tr>
-<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.<br>**** ObjectID of a user or a service principal in Microsoft Entra ID.<br /></td></tr>
+<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.  After which, sync will no longer update this field.<br>**** ObjectID of a user or a service principal in Microsoft Entra ID.<br /></td></tr>
 </tbody>
 </table>
 
@@ -369,6 +368,7 @@ A stub user is a user record that has been created as a placeholder. For example
 
 > [!CAUTION]
 > To prevent creating duplicate user records with the same UPN or throw errors during data import workflows, synchronize the users from Entra ID to Dataverse before running data import.
+> If you must reassign records from a stub user to another user, use the [Add-BulkRecordsToUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#command-add-bulkrecordstousers).
 
 A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Basic User** security role is assigned in a Power Apps environment.
 

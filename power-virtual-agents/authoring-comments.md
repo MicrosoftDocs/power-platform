@@ -3,17 +3,12 @@ title: "Create and reply to comments in bot topics"
 description: "Add new comments, reply to existing comments, and resolve or delete comments and comment threads for topics within a Microsoft Copilot Studio chatbot."
 keywords: "PVA"
 ms.date: 03/24/2023
-
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: gitikag
 manager: leeclontz
 ms.custom: authoring, ceX
-ms.service: power-virtual-agents
-
-searchScope:
-  - "Power Virtual Agents"
 ---
 
 # Add comments to bots

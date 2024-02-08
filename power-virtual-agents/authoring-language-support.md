@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "authoring, fundamentals, ce06092020"
-ms.service: power-virtual-agents
 
 ---
 

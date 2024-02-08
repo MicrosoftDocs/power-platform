@@ -9,7 +9,6 @@ ms.author: iawilt
 ms.reviewer: peterswimm
 manager: leeclontz
 ms.custom: "advanced-authoring, CLU, ceX"
-ms.service: power-virtual-agents
 
 ---
 
