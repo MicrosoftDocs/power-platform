@@ -3,7 +3,7 @@ title: Recommendations for building a segmentation strategy
 description: Learn about the recommendations for building a unified segmentation strategy using perimeters and isolation boundaries. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

@@ -3,7 +3,7 @@ title: Design review checklist for Security
 description: Use this checklist for Security to identify the best approach for secure, governed, and compliant workloads.
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 11/30/2023

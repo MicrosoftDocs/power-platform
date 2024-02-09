@@ -3,7 +3,7 @@ title: What's new in Power Well-Architected
 description: Find out what's new in Power Well-Architected.
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 11/30/2023

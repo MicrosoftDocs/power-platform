@@ -3,7 +3,7 @@ title: Performance Efficiency design principles
 description: Understand the design principles of the Performance Efficiency pillar.
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 11/30/2023

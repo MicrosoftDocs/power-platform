@@ -3,7 +3,7 @@ title: Recommendations for designing a workload development supply chain
 description: Learn how to design a workload development supply chain based on CI/CD pipelines that ensure a predictable, efficient workload lifecycle. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

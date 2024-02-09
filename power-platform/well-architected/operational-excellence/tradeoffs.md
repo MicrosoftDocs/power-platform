@@ -3,7 +3,7 @@ title: Operational Excellence tradeoffs
 description: Learn about the Operational Excellence tradeoffs with other pillars.
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 11/30/2023

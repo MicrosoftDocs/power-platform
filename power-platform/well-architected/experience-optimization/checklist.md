@@ -3,7 +3,7 @@ title: Design review checklist for Experience Optimization
 description: Learn how to optimize the experiences for users of your low-code workload.
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 11/30/2023

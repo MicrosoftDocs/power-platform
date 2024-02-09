@@ -3,7 +3,7 @@ title: Recommendations for embracing DevOps culture
 description: Learn how to embrace DevOps culture principles and practices in your workload team to strengthen the team.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

@@ -3,7 +3,7 @@ title: Recommendations for security incident response
 description: Learn how to reduce the time that's required to identify, manage, and mitigate security incidents that threaten the confidentiality and integrity of software systems.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

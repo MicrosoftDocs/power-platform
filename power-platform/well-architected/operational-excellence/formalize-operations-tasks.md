@@ -3,7 +3,7 @@ title: Recommendations for formalizing routine and nonroutine tasks
 description: Learn how to formalize routine and nonroutine tasks by using documentation, checklists, or automation.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

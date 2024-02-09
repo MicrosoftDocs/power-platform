@@ -3,7 +3,7 @@ title: Recommendations for implementing automation
 description: Learn how to implement automation in your workload management. Automate tasks that are repetitive and prone to human error to gain efficiency and adhere to standards, making the management of the workload less complicated and more consistent.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

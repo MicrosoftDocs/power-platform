@@ -3,7 +3,7 @@ title: Recommendations for formalizing software development management practices
 description: Learn how to establish standards for managing your workload team's software development practices.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

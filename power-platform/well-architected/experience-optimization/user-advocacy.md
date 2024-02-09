@@ -3,7 +3,7 @@ title: Recommendations for advocating for the user
 description: Learn how to advocate for the user to ensure consistent success with user experience optimization.
 author: RobStand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

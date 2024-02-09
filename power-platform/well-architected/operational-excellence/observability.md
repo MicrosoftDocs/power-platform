@@ -3,7 +3,7 @@ title: Recommendations for designing and creating an observability framework
 description: Learn the recommendations for designing and creating an observability framework. The framework provides a foundation for monitoring, detection, and alerting.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

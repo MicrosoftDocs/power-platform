@@ -3,7 +3,7 @@ title: Cloud design patterns that support reliability
 description: Learn about industry patterns that support reliability and can help you address common challenges in low-code workloads.  
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 11/30/2023

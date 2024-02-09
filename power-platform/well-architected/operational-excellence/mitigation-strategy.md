@@ -3,7 +3,7 @@ title: Recommendations for designing a deployment failure mitigation strategy
 description: Learn how to design a standardized strategy to effectively handle deployment failures. Be proactive with a well-designed, intentional strategy to deal with deployment failures to enable your workload team to efficiently mitigate failures with as little impact as possible on your end users.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

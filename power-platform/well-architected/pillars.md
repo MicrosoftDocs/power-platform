@@ -3,7 +3,7 @@ title: Power Well-Architected pillars
 description: Power Well-Architected pillars
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 11/30/2023

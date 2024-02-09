@@ -3,7 +3,7 @@ title: Design review checklist for Performance Effiency
 description: Use this checklist to assess and verify the completeness of your design for performance efficiency.
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 11/30/2023

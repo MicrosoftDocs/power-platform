@@ -3,7 +3,7 @@ title: Design patterns that support operational excellence
 description: Learn about industry patterns that support operational excellence and can help you address common challenges in low-code workloads.  
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 11/30/2023

@@ -3,7 +3,7 @@ title: Reliability tradeoffs
 description: Learn about the Reliability tradeoffs with other pillars.
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 11/30/2023

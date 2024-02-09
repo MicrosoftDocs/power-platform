@@ -3,7 +3,7 @@ title: Recommendations for identity and access management
 description: Learn about recommendations for authenticating and authorizing identities that are attempting to access workload resources.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual

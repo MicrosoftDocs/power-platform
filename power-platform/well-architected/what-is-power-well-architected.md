@@ -3,7 +3,7 @@ title: How to use the Power Well-Architected documentation
 description: Learn about Power Well-Architected, the pillars of architectural excellence, and how the documentation is organized.
 author: robstand
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 1/31/2024

@@ -3,7 +3,7 @@ title: Operational Excellence cloud design principles
 description: Learn about industry principles that support operational excellence and help you address common challenges in cloud workloads.   
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual
