@@ -7,7 +7,7 @@ ms.date: 09/22/2022
 author: DanaMartens 
 ms.subservice: admin
 ms.author: dmartens 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

@@ -946,6 +946,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "power-platform/flow/stub.md",
+      "redirect_url": "/power-automate",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "power-platform/solution-templates/it/hardware-request-and-management/use.md",
       "redirect_url": "/power-platform/enterprise-templates/it/hardware-request-and-management/use",
       "redirect_document_id": false

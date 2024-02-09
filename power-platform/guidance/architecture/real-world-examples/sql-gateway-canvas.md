@@ -7,7 +7,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 08/10/2021
 ms.author: mehdis
-ms.reviewer: kvivek
+ms.reviewer: sericks
 
 ---
 # Using on-premises SQL Server with a canvas app through an on-premises data gateway 

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 01/24/2022
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

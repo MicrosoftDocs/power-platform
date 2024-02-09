@@ -9,7 +9,6 @@ author: KendalBond007
 ms.author: iawilt
 ms.reviewer: clmori
 manager: leeclontz
-ms.service: power-virtual-agents
 
 ms.custom: handoff, ceX
 ---

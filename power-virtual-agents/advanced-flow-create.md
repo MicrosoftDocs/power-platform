@@ -3,7 +3,6 @@ title: Create a flow
 description: Create a Power Automate flow that fetches a weather forecast for use with a bot.
 keywords: "PVA, flow, automate"
 ms.date: 03/24/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
