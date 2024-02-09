@@ -404,7 +404,7 @@ This parameter requires no value. It's a switch.
 
 #### `--convert-to-managed` `-cm`
 
-Convert to a managed solution.
+Convert into managed any unmanaged versions of objects found in the target Dataverse that exist in the solution being imported in a managed state.
 
 This parameter requires no value. It's a switch.
 
