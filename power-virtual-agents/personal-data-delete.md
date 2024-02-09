@@ -1,6 +1,6 @@
 ---
 title: "Responding to personal data delete requests from data subjects"
-description: "Respond to personal data delete equests for Power Virtual Agents."
+description: "Respond to personal data delete requests for Copilot Studio."
 ms.date: 07/28/2023
 ms.topic: article
 author: iaanw
@@ -13,31 +13,31 @@ ms.service: power-virtual-agents
 
 # Responding to personal data delete requests from data subjects
 
-This topic discusses the experiences that Power Virtual Agents offers when deleting personal data for a specific user.
+This article discusses the experiences that Copilot Studio offers when deleting personal data for a specific user.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-copilot-studio.md).
 
-## Delete Power Virtual Agents bot chat logs
+## Delete Copilot Studio copilot chat logs
 
-All bot chat logs are deleted when the bot is deleted. See [Delete a bot](authoring-first-bot.md#delete-a-bot) for more information.
+All copilot chat logs are deleted when the copilot is deleted. For more information, see [Delete a copilot](authoring-first-bot.md#delete-a-copilot).
 
-## Delete Power Virtual Agents bot including all content
+## Delete Copilot Studio copilot including all content
 
-All bot content is deleted when the bot is deleted. See [Delete a bot](authoring-first-bot.md#delete-a-bot) for more information.
+All copilot content is deleted when the copilot is deleted. For more information, see [Delete a copilot](authoring-first-bot.md#delete-a-copilot).
 
-## Delete Power Virtual Agents telemetry
+## Delete Copilot Studio telemetry
 
-All Power Virtual Agents telemetry data is automatically deleted within 29 days. No action from the user is needed.
+All Copilot Studio telemetry data is automatically deleted within 29 days. No action from the user is needed.
 
-## Delete Power Virtual Agents metrics
+## Delete Copilot Studio metrics
 
-To delete metrics data, you must delete your bot. See [Delete a bot](authoring-first-bot.md#delete-a-bot) for more information.
+To delete metrics data, you must delete your copilot. For more information, see [Delete a copilot](authoring-first-bot.md#delete-a-copilot).
 
-## Delete Power Virtual Agents system telemetry
+## Delete Copilot Studio system telemetry
 
-All bot system telemetry is automatically deleted within 29 days. No action from the user is needed.
+All copilot system telemetry is automatically deleted within 29 days. No action from the user is needed.
 
 > [!NOTE]
 > Removing personal data includes removing all personal data and system-generated logs except audit log information.
