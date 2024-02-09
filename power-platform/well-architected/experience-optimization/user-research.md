@@ -1,5 +1,5 @@
 ---
-title: Recommendations for advocating for the user
+title: Recommendations for conducting user research
 description: Learn how to advocate for the user to ensure consistent success with user experience optimization.
 author: RobStand
 ms.author: rstand
@@ -9,7 +9,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for developing a culture of user advocacy
+# Recommendations for conducting user research
 
 **Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
 

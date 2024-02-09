@@ -54,17 +54,3 @@ Description of principle.
 |Summary of approach|Summary of benefit.|
 |Summary of approach|Summary of benefit.|
 |Summary of approach|Summary of benefit.|
-
-## Design for inclusivity
-
-|![Goal icon](../_images/goal.svg) The workload should be usable by a diverse range of users. |
-|--|
-
-Description of principle.
-
-|Approach|Benefit|
-|-|-|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|

@@ -1,12 +1,12 @@
 ---
 title: Design review checklist for Experience Optimization
-description: Learn how to optimize the experiences for users of your low-code workload.
+description: Learn how to optimize the user experience of your low-code workload.
 author: robstand
 ms.author: rstand
 ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 11/30/2023
+ms.date: 3/1/2023
 ---
 # Design review checklist for Experience Optimization
 
@@ -16,16 +16,16 @@ This checklist presents a set of recommendations to help you optimize experience
 
 |&nbsp;|Code  |Recommendation  |
 |-|-|-|
-| &#9744; | EO:01 | **Develop a culture of user advocacy.**   |
-| &#9744; | EO:02 | **Conduct user research** to understand the needs and expectations of users.   |
-| &#9744; | EO:03 | **Follow established standards, conventions, and guidelines.**   |
-| &#9744; | EO:04 | **Implement a consistent information architecture.**   |
-| &#9744; | EO:05 | **Optimize user perception and aesthetics.**   |
-| &#9744; | EO:06 | **Follow interaction design best practices.**   |
-| &#9744; | EO:07 | **Prioritize ease of use during the design process.**   |
-| &#9744; | EO:08 | **Optimize for different platforms and devices.**   |
-| &#9744; | EO:09 | **Providing meaningful notifications and messages.**   |
-| &#9744; | EO:10 | **Leverage artificial intelligence** to perform tasks and augment user capabilities.   |
+| &#9744; | [XO:01](user-advocacy.md) | **Develop a culture of user advocacy.**   |
+| &#9744; | [XO:02](user-research.md) | **Conduct user research** to understand the needs and expectations of users.   |
+| &#9744; | [XO:03](design-standards.md) | **Follow design standards.**   |
+| &#9744; | [XO:04](information-architecture.md) | **Implement a consistent information architecture.**   |
+| &#9744; | [XO:05](visual-design.md) | **Optimize user perception and aesthetics.**   |
+| &#9744; | [XO:06](interaction-design.md) | **Follow interaction design best practices.**   |
+| &#9744; | [XO:07](usability.md) | **Prioritize ease of use during the design process.**   |
+| &#9744; | XO:08 | **Optimize for different platforms and devices.**   |
+| &#9744; | XO:09 | **Provide meaningful notifications and messages.**   |
+| &#9744; | XO:10 | **Leverage artificial intelligence** to perform tasks and augment user capabilities.   |
 
 ## Next steps
 
