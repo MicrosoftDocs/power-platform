@@ -17,7 +17,7 @@ This article discusses the experiences that Copilot Studio offers when deleting 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-copilot-studio.md).
+- [Learn more about what you can do with Copilot Studio](fundamentals-what-is-copilot-studio.md).
 
 ## Delete Copilot Studio copilot chat logs
 
