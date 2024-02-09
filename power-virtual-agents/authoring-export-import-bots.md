@@ -70,7 +70,7 @@ You use solutions to export copilots from one environment and import them into a
 
 2. Select the copilot you wish to export and select **Export copilot**.
 
-    :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the Bot details settings page in Microsoft Copilot Studio, with the Export button highlighted.":::
+    :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the Copilots page in Microsoft Copilot Studio, with the Export button highlighted.":::
 
 > [!NOTE]
 > If you are using a **Classic** copilot, select the copilot you want to export, then select **Export chatbot**.
