@@ -17,7 +17,7 @@ This topic discusses the Copilot Studio capabilities to find or export personal 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Copilot Studio](fundamentals-what-is-copilot-studio.md).
 
 ## Export customer data
 
