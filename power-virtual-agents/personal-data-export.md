@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 
 # Export data to respond to requests for copies of personal data in Copilot Studio
 
-This topic discusses the Copilot Studio capabilities to find or export personal data for a specific user.
+This article discusses the Copilot Studio capabilities to find or export personal data for a specific user.
 
 ## Prerequisites
 
