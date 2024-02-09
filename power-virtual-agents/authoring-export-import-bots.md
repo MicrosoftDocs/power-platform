@@ -75,7 +75,7 @@ You use solutions to export copilots from one environment and import them into a
 > [!NOTE]
 > If you are using a **Classic** copilot, select the copilot you want to export, then select **Export chatbot**.
 
-:::image type="content" source="media/authoring-export-import-bots/export-chatbot-list.png" alt-text="Screenshot of the export button on teh general setting page.":::
+:::image type="content" source="media/authoring-export-import-bots/export-chatbot-list.png" alt-text="Screenshot of the export button on the general setting page.":::
 
 3. Select **Go to Power Apps Solutions**.
 
