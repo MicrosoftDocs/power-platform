@@ -16,18 +16,16 @@ This checklist presents a set of recommendations to help you optimize experience
 
 |&nbsp;|Code  |Recommendation  |
 |-|-|-|
-| &#9744; | EO:00 | **Identify personas and create uses cases for them** TBD ....  |
-| &#9744; | EO:00 | **Validate the design and align user expectations and needs with business value** TBD ....   |
-| &#9744; | EO:00 | **Optimize processes** TBD ....  |
-| &#9744; | EO:00 | **Use established design patterns** TBD ....  |
-| &#9744; | EO:00 | **Map experiences to user roles** TBD ....  |
-| &#9744; | EO:00 | **Create engaging and useful forms** TBD ....  |
-| &#9744; | EO:00 | **Inform the user with meaningful notifications and messages** TBD ....  |
-| &#9744; | EO:00 | **Create accessible interfaces** TBD ....  |
-| &#9744; | EO:00 | **Maintain consistency in navigation** TBD ....  |
-| &#9744; | EO:00 | **Organize information in a clear and logical manner** TBD ....  |
-| &#9744; | EO:00 | **Use customization to extend capabilities** TBD ....  |
-| &#9744; | EO:00 | **Leverage artificial intelligence to perform tasks and augment user capabilities** TBD ....  |
+| &#9744; | EO:01 | **Develop a culture of user advocacy.**   |
+| &#9744; | EO:02 | **Conduct user research** to understand the needs and expectations of users.   |
+| &#9744; | EO:03 | **Follow established standards, conventions, and guidelines.**   |
+| &#9744; | EO:04 | **Implement a consistent information architecture.**   |
+| &#9744; | EO:05 | **Optimize user perception and aesthetics.**   |
+| &#9744; | EO:06 | **Follow interaction design best practices.**   |
+| &#9744; | EO:07 | **Prioritize ease of use during the design process.**   |
+| &#9744; | EO:08 | **Optimize for different platforms and devices.**   |
+| &#9744; | EO:09 | **Providing meaningful notifications and messages.**   |
+| &#9744; | EO:10 | **Leverage artificial intelligence** to perform tasks and augment user capabilities.   |
 
 ## Next steps
 

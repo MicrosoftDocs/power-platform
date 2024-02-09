@@ -26,7 +26,7 @@ The following recommendations can help you adopt and implement Fusion developmen
 
 ## Foster mutual respect
 
-**A team’s success is built on mutual respect and trus**t. A code of ethics that values individual expertise and recognizes it as a core tenet of the team culture can help foster a safe and inclusive environment. This allows individuals to share their honest opinions about workload operations and be treated respectfully.
+**A team’s success is built on mutual respect and trust**. A code of ethics that values individual expertise and recognizes it as a core tenet of the team culture can help foster a safe and inclusive environment. This allows individuals to share their honest opinions about workload operations and be treated respectfully.
 
 **Mutual respect fosters a blameless culture.** When issues arise, the workload team should take collaborative ownership and work together to find ways to improve, rather than assigning blame and risking the team’s cohesiveness.
 
