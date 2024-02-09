@@ -1,5 +1,5 @@
 ---
-title: Design review checklist for Performance Effiency
+title: Design review checklist for Performance Efficiency
 description: Use this checklist to assess and verify the completeness of your design for performance efficiency.
 author: robstand
 ms.author: rstand
@@ -16,10 +16,10 @@ This checklist presents a set of recommendations for you to scale your system so
 
 |&nbsp;|Code  |Recommendation  |
 |-|-|-|
-| &#9744; | PE:01  | **Recommendation 01** TBD ....  |
-| &#9744; | PE:02 | **Recommendation 02** TBD ....   |
-| &#9744; | PE:03 | **Recommendation 03** TBD ....  |
-| &#9744; | PE:04 | **Recommendation 04** TBD ....  |
+| &#9744; | PE:01  | **Recommendation 01** TBD |
+| &#9744; | PE:02 | **Recommendation 02** TBD  |
+| &#9744; | PE:03 | **Recommendation 03** TBD  |
+| &#9744; | PE:04 | **Recommendation 04** TBD  |
 
 ## Next steps
 
