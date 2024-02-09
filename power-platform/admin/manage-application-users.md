@@ -4,7 +4,7 @@ description: How to manage application users from the Power Platform admin cente
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/18/2022
