@@ -63,19 +63,21 @@ Move your copilots across [environments](/power-platform/admin/environments-over
 
 You use solutions to export copilots from one environment and import them into another. The solution acts as a "carrier" for the copilots. You can export and import multiple bots in one solution.
 
-1. In Microsoft Copilot Studio, select **Copilots** in the navigation menu to bring up the list of copilots.
+1. In Microsoft Copilot Studio, open the bot you want to export.
 
 > [!NOTE]
 > If you are using a **Classic** copilot, in the navigation menu select **Chatbots** to open the **Chatbots** page and view all the copilots you have access to in this environment.
 
-2. Select the copilot you wish to export and select **Export copilot**.
+2. In the navigation menu, under Settings, select **Copilot details**, and then select **Export**.
 
-    :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the Copilots page in Microsoft Copilot Studio, with the Export button highlighted.":::
+    :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the Copilot details page in Microsoft Copilot Studio, with the Export button highlighted.":::
 
 > [!NOTE]
-> If you are using a **Classic** copilot, select the copilot you want to export, then select **Export chatbot**.
+> If you are using a **Classic** bot, select the bot you want to export, then select **Export chatbot**.
 
-:::image type="content" source="media/authoring-export-import-bots/export-chatbot-list.png" alt-text="Screenshot of the export button on the general setting page.":::
+Alternatively, you can open the **Copilots** page, select the copilot you want to export, and then select **Export copilot**.  
+
+:::image type="content" source="media/authoring-export-import-bots/export-chatbot-list.png" alt-text="Screenshot of the Copilot details page in Microsoft Copilot Studio, with the Export button highlighted.":::
 
 3. Select **Go to Power Apps Solutions**.
 
