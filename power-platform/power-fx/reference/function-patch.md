@@ -260,4 +260,7 @@ ForAll(
 
 To learn more about the usage of **As** operator and **ThisRecord** see **[Operators](operators.md)** article.
 
+### Working with files and images
+For some data sources you need to first create a new record and then attach the file or image to the new record. In this case create two separate patch statements. One to create the record and one to upload the file or image.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
