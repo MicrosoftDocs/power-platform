@@ -52,8 +52,8 @@ Copilot Studio supports languages in three stages. The stage indicates how well 
 - General availability: &check; Language has full support.
 - Authoring canvas: Copilot creator sees the Copilot Studio UI in the target language.
 - End-user language: The language a user can type in chat to ask questions. Exceptions include copilots with generative AI features that aren't yet available in some languages.
-- Generative Answers: A Copilot Studio feature that autogenerates chat responses.
-- Generative Actions: A Copilot Studio feature that uses plugins in a conversation.
+- Generative answers: A Copilot Studio feature that autogenerates chat responses.
+- Generative actions: A Copilot Studio feature that uses plugins in a conversation.
 
   > [!NOTE]
   > Generative Actions is currently only in English.
