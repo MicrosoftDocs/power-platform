@@ -48,6 +48,11 @@ There are three ways to install the Power Platform CLI.
 
 How to determine whether the Power Platform CLI is installed depends on your operating system.
 
+> [!NOTE]
+> If you have installed Power Platform extension in Visual Studio Code, Power Platform CLI will ONLY be available in Visual Studio Code therefore, you can use `Get-Command pac | Format-List` in Visual Studio Code Terminal. Power Platform CLI will not be available outside of Visual Studio Code.
+>
+> Alternatively, if you installed Power Platform CLI using `dotnet tool` then you will also be able to use Power Platform CLI inside Visual Studio Code Terminal.
+
 ## [Windows](#tab/windows)
 
 For Windows, open PowerShell, type `Get-Command pac | Format-List` at the prompt, and press **Enter**.
@@ -106,7 +111,9 @@ Version: 1.30.3+g0f0e0b9
 
 ### Do you need to add PAC to PATH variable in Microsoft Windows?
 
-Open command prompt as Administrator, type `setx /M PATH "%PATH%;C:\\<location of your pac command>"` and press **Enter**.
+If you need to use PAC CLI that was installed using Visual Studio Code extension, which is only availalbe inside Visual Studio Code, you can add the path of PAC CLI (.exe) into an environment variable PATH. 
+
+Open PowerShell as Administrator, type `$env:Path += ";C:\<location of your pac command>"` and press **Enter**.
 
 ## Manage auth profiles
 
