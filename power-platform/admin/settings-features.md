@@ -148,6 +148,8 @@ Choose which provider to enable outbound calls from within customer engagement a
 |---------|-------------|---------------|
 | Enable Finance and Operations user impersonation in Dataverse | When enabled, the Finance and Operations application in this environment has permissions to impersonate Dataverse users. This allows users of Finance and Operations to make calls to Dataverse which run as that same user in Dataverse, using the Dataverse permissions assigned to that user. Only select this option if the Finance and Operations administrator is trusted with the same level of permissions in Dataverse as the Dataverse administrator. | Off |
 
+> [!IMPORTANT] Beginning March 1, 2024 the **Enable Finance and Operations user impersonation in Dataverse** toggle will be removed. With continued efforts to unify finance and operations (F&O) apps with the Power Platform through the [Power Platform Integration](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/overview) and [unified admin exeriences](unified-experience/finance-operations-apps-overview.md), F&O apps are now considered applications within the unified Business Application Platform (BAP) environment. In a unified environment, the capabilities granted by the toggle are now assumed to be true for any environment with F&O applications installed. Anyone who can deploy code to any part of the platform requires the same level of governance and oversight. All code deployers should be subject to the same level of scrutiny. 
+
 ## Data validation
 | Setting | Description | Default value |
 |---------|-------------|---------------|
