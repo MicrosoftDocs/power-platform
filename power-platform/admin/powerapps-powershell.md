@@ -236,7 +236,7 @@ Set-AdminPowerAppAsFeatured –AppName 'AppName'
 
 Featured applications are grouped and pushed to the top of the list in the Power Apps mobile player.
 
-**Note**: Like environments, the *AppName* field is a unique identifier, which is different from the *DisplayName*. If you want to perform operations based on the display name, some functions will let you use the pipeline (see next function).
+**Note**: You cannot use the display name here to feature an application. You should use the app GUID which you can find on the details page of your app. If you want to perform operations based on the display name, some functions will let you use the pipeline (see next function).
 
 ### Make an application a Hero app, using the pipeline
 
