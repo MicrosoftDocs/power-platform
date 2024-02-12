@@ -23,9 +23,9 @@ This checklist presents a set of recommendations to help you optimize experience
 | &#9744; | [XO:05](visual-design.md) | **Optimize user perception and aesthetics.**   |
 | &#9744; | [XO:06](interaction-design.md) | **Follow interaction design best practices.**   |
 | &#9744; | [XO:07](usability.md) | **Prioritize ease of use during the design process.**   |
-| &#9744; | XO:08 | **Optimize for different platforms and devices.**   |
-| &#9744; | XO:09 | **Provide meaningful notifications and messages.**   |
-| &#9744; | XO:10 | **Leverage artificial intelligence** to perform tasks and augment user capabilities.   |
+| &#9744; | [XO:08](notifications.md) | **Provide meaningful notifications and messages.**   |
+| &#9744; | [XO:09](responsive-design.md) | **Optimize for different platforms and devices.**   |
+| &#9744; | [XO:10](artificial-intelligence.md) | **Leverage artificial intelligence** to perform tasks and augment user capabilities.   |
 
 ## Next steps
 

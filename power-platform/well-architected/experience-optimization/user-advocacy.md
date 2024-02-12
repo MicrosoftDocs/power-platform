@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for developing a culture of user advocacy
 
-**Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
+**Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
 |[EO:01](checklist.md)| **TODO** Update with checklist details for this item |
 |---|---|
@@ -19,7 +19,6 @@ ms.topic: conceptual
 This guide describes the recommendations for creating, developing, and nurturing a culture of advocacy for the user
 
 ## Key design strategies
-
 
 - user-centric mindset
 - empathy and understanding
@@ -38,3 +37,7 @@ Related links here.
 
 ## Experience Optimization checklist
 
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"] 
+> [Experience Optimization checklist](checklist.md)

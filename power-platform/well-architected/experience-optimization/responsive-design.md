@@ -1,6 +1,6 @@
 ---
-title: Recommendations for implementing an information architecture
-description: Learn how to implement an information architecture to ensure consistent success with user experience optimization.
+title: Recommendations for optimizing for different platforms and devices.
+description: Learn how to optimize for different platforms and devices to ensure consistent success with user experience optimization.
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
@@ -9,7 +9,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for implementing an information architecture
+# Recommendations for optimizing for different platforms and devices
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
