@@ -90,6 +90,8 @@
               href: run-pipeline.md
             - name: Use Copilot to generate deployment notes in pipelines
               href: copilot-deployment-notes-pipelines.md
+        - name: Block unmanaged customizations (preview) 
+          href: block-unmanaged-customizations.md
     - name: ALM for developers
       href: alm-for-developers.md
       items:
