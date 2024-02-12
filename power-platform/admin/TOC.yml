@@ -88,7 +88,7 @@
                   href: /power-apps/user/request-license
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
-                - name: Auto-claim policies for Power Apps licenses
+                - name: Autoclaim policies for Power Apps licenses
                   href: auto-claim-licensing.md
             - name: Power Automate
               items:
@@ -106,6 +106,8 @@
                   href: power-automate-licensing/add-ons.md
                 - name: Request a Power Automate premium license
                   href: power-automate-licensing/request-premium-license.md
+                - name: Autoclaim policies for Power Automate licenses (preview)
+                  href: power-automate-licensing/power-automate-auto-claim.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
             - name: Pay-as-you-go plan
