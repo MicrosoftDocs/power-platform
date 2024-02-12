@@ -27,3 +27,14 @@ This guide describes the recommendations for creating, developing, and nurturing
 - user research
 - Leadership support and alignment
 - Continuous improvement
+
+## Power Platform facilitation
+
+Power Platform details here...
+
+## Related links
+
+Related links here.
+
+## Experience Optimization checklist
+
