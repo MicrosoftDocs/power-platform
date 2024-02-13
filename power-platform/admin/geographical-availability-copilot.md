@@ -1,12 +1,12 @@
 ---
 title: Enable copilots and generative AI features
 description: Learn how to enable data movement across regions for copilots and generative AI features.
-author: sidhartg
+author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/06/2023
+ms.date: 02/13/2024
 ms.subservice: admin
-ms.author: sidhartg
+ms.author: caitlinshaw
 ms.reviewer: sericks
 search.audienceType:
   - admin
@@ -32,7 +32,7 @@ However, these features aren't available in all regions and languages. Depending
 
 ## How data movement across regions works
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint that supports these features is hosted**. We do not use your customer data to train, retrain, or improve Azure OpenAI Service foundation models.
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint that supports these features is hosted**. We do not use your data to train, retrain, or improve Azure OpenAI Service foundation models.
 
 The following table describes when and how data can move across regions for copilots and generative AI features.
 
