@@ -4,7 +4,7 @@ description: Instructions to install, update, and uninstall the Power Platform C
 author: snizar007
 ms.author: snizar
 ms.reviewer: jdaly
-ms.date: 01/26/2024
+ms.date: 02/14/2024
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 

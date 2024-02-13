@@ -5,7 +5,7 @@ keywords: Microsoft Power Platform CLI, code components, component framework, CL
 ms.author: snizar
 author: snizar007
 ms.reviewer: jdaly
-ms.date: 01/26/2024
+ms.date: 02/14/2024
 ms.topic: overview
 ---
 # What is Microsoft Power Platform CLI?
@@ -26,36 +26,40 @@ Use [github.com/microsoft/powerplatform-build-tools/discussions](https://github.
 
 ## Install Microsoft Power Platform CLI
 
-There are three ways to install the Power Platform CLI.
+There are three ways to install the Power Platform CLI. You can use multiple installation methods on the same computer.
 
 |Method|OS Support|Description|
 |---------|---------|---------|
-|[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and macOS.|
-|[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.<br />This installation method doesn't enable use of [pac data](reference/data.md) or certain [pac package](reference/package.md) commands ([deploy](reference/package.md#pac-package-deploy) and [show](reference/package.md#pac-package-show)) that are only available for Windows.|
+|[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and macOS.<br /><br />When you install using ONLY this method, by default PAC CLI will only be available within a Visual Studio Code terminal unless you [enable PAC CLI in Command Prompt (CMD) and PowerShell terminals for Windows](../howto/install-vs-code-extension.md#enable-pac-cli-in-command-prompt-cmd-and-powershell-terminals-for-windows)|
+|[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.<br /><br />This installation method doesn't enable use of [pac data](reference/data.md) or certain [pac package](reference/package.md) commands ([deploy](reference/package.md#pac-package-deploy) and [show](reference/package.md#pac-package-show)) that are only available for Windows.|
 |[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows only. You can [manage installed versions](../howto/install-cli-msi.md#manage-versions) with this installation method.|
 
 > [!NOTE]
-> The following commands are only available on Windows when you install Power Platform CLI using the [Visual Studio Code extension](../howto/install-vs-code-extension.md) or [Windows MSI](../howto/install-cli-msi.md):
+> The following commands are only available on Windows:
 >
 > - [pac data](reference/data.md)
 > - [pac package deploy](reference/package.md#pac-package-deploy)
 > - [pac package show](reference/package.md#pac-package-show)
 >
-> You can't use these commands with Linux or macOS or when you use the [.NET Tool](../howto/install-cli-net-tool.md) install method.
-
+> To use these commands on Windows, install Power Platform CLI using either (or both) of these installation methods:
+>
+> - [Visual Studio Code extension](../howto/install-vs-code-extension.md)
+> - [Windows MSI](../howto/install-cli-msi.md)
+>
+> These commands aren't available on Windows if you only install using the [.NET Tool](../howto/install-cli-net-tool.md).
 
 ### Check whether Power Platform CLI is already installed
 
 How to determine whether the Power Platform CLI is installed depends on your operating system.
 
-> [!NOTE]
-> If you have installed Power Platform extension in Visual Studio Code, Power Platform CLI will ONLY be available in Visual Studio Code therefore, you can use `Get-Command pac | Format-List` in Visual Studio Code Terminal. Power Platform CLI will not be available outside of Visual Studio Code.
->
-> Alternatively, if you installed Power Platform CLI using `dotnet tool` then you will also be able to use Power Platform CLI inside Visual Studio Code Terminal.
-
 ## [Windows](#tab/windows)
 
-For Windows, open PowerShell, type `Get-Command pac | Format-List` at the prompt, and press **Enter**.
+1. Open a PowerShell terminal:
+
+   - If you ONLY installed the [Visual Studio Code extension](../howto/install-vs-code-extension.md), open a Visual Studio Code Powershell terminal window.
+   - If you installed using the [.NET Tool](../howto/install-cli-net-tool.md), open a Visual Studio Code Powershell terminal OR a Powershell terminal.
+
+1. Type `Get-Command pac | Format-List` at the prompt, and press **Enter**.
 
 The results should look something like this:
 
@@ -89,13 +93,14 @@ Check the spelling of the name, or if a path was included, verify that the path 
 
 ## [Linux/macOS](#tab/linux-macos)
 
-To see if Power Platform CLI is installed in **Linux or macOS**, open the Terminal/Command prompt, type `which pac` at the prompt, and press **Enter**. 
+To see if Power Platform CLI is installed in **Linux or macOS**, open the Terminal/Command prompt, type `which pac` at the prompt, and press **Enter**.
 
 The results should look something like this:
 
 ```bash
 /home/you/.dotnet/tools/pac
 ```
+
 ---
 
 ### Check which version of Power Platform CLI is installed
@@ -111,7 +116,7 @@ Version: 1.30.3+g0f0e0b9
 
 ### Do you need to add PAC to PATH variable in Microsoft Windows?
 
-If you need to use PAC CLI that was installed using Visual Studio Code extension, which is only availalbe inside Visual Studio Code, you can add the path of PAC CLI (.exe) into an environment variable PATH. 
+If you need to use PAC CLI that was installed using Visual Studio Code extension, which is only available inside Visual Studio Code, you can add the path of PAC CLI (.exe) into an environment variable PATH. 
 
 Open PowerShell as Administrator, type `$env:Path += ";C:\<location of your pac command>"` and press **Enter**.
 

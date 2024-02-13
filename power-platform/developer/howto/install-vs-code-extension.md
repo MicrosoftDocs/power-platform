@@ -4,7 +4,7 @@ description: Instructions to install, update, and uninstall the Power Platform T
 author: snizar007
 ms.author: snizar
 ms.reviewer: jdaly
-ms.date: 01/15/2024
+ms.date: 02/14/2024
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -92,6 +92,16 @@ If you choose to [install a previous version](#install-a-previous-version), you'
 1. In Visual Studio Code, select **Extensions**
 1. Search for 'power platform tools'.
 1. In the main window, select **Uninstall**.
+
+## Enable PAC CLI in Command Prompt (CMD) and PowerShell terminals for Windows
+
+By default, the Visual Studio Code extension only enables commands using the Visual Studio Code PowerShell terminal.
+
+To enable using PAC CLI in in Command Prompt (CMD) and PowerShell terminals for Windows, you can do any of the following:
+
+- [Install Power Platform CLI with .NET Tool](install-cli-net-tool.md)
+- [Install Power Platform CLI using Windows MSI](install-cli-msi.md)
+- Add the PAC CLI executable to the Windows environment PATH.
 
 ## Authentication profile management
 

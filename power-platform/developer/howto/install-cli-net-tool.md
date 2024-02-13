@@ -4,7 +4,7 @@ description: Instructions to install, update, and uninstall Power Platform CLI w
 author: snizar007
 ms.author: snizar
 ms.reviewer: jdaly
-ms.date: 01/26/2024
+ms.date: 02/14/2024
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -22,16 +22,7 @@ You can install, update, and uninstall the Power Platform CLI using [.NET tool c
 > [!NOTE]
 > An internet connection is required for install and update. Power Platform CLI with .NET Tool is installed and updated from this NuGet package: [Microsoft.PowerApps.CLI.Tool](https://www.nuget.org/packages/Microsoft.PowerApps.CLI.tool)
 
-The default location for a tool's binaries depends on the operating system:
 
-| OS          | Path                          |
-|-------------|-------------------------------|
-| Linux/macOS | `$HOME/.dotnet/tools`         |
-| Windows     | `%USERPROFILE%\.dotnet\tools` |
-
-This location is added to the user's path when the SDK is first run. So global tools can be invoked from any directory without specifying the tool location.
-
-Tool access is user-specific, not machine global. A global tool is only available to the user that installed the tool.
 
 ## Prerequisites
 
@@ -78,6 +69,20 @@ Uninstall Power Platform CLI by using the [dotnet tool uninstall](/dotnet/core/t
 ```dotnetcli
 dotnet tool uninstall --global Microsoft.PowerApps.CLI.Tool
 ```
+
+## File locations
+
+The default location for a tool's executable file depends on the operating system:
+
+| OS          | Path                          |
+|-------------|-------------------------------|
+| Linux/macOS | `$HOME/.dotnet/tools`         |
+| Windows     | `%USERPROFILE%\.dotnet\tools` |
+
+This location is added to the user's path when the SDK is first run. So global tools can be invoked from any directory without specifying the tool location.
+
+Tool access is user-specific, not machine global. A global tool is only available to the user that installed the tool.
+
 
 ### See also
 
