@@ -1,17 +1,15 @@
 ### YamlMime:Landing
 
 title: Operational excellence quick links
-summary: Apply operational excellence guidance to your workload to assure workload quality through standardized processes and team cohesion.
+summary: Apply operational excellence guidance to your workload to ensure workload quality through standardized processes and team cohesion.
 
 metadata:
   title: Operational excellence quick links
-  description: Apply operational excellence guidance to your workload to assure workload quality through standardized processes and team cohesion.
-  ms.service: power-platform
-  ms.subservice: guidance
+  description: Learn about resources that can help you apply operational excellence guidance to your architectures.
   ms.topic: landing-page
   author: robstand
   ms.author: rstand
-  ms.date: 1/31/2024
+  ms.date: 03/01/2024
 
 landingContent:
   - title: Learn key points
@@ -24,8 +22,14 @@ landingContent:
             url: checklist.md
           - text: Tradeoffs
             url: tradeoffs.md
-          - text: Operational excellence patterns
-            url: design-patterns.md    
+      - linkListType: learn
+        links:
+          - text: Operational excellence
+            url: /training/modules/azure-well-architected-operational-excellence/
+      - linkListType: video
+        links:
+          - text: Achieve Operational Excellence
+            url: /shows/azure-enablement/achieve-operational-excellence-with-azure-well-architected-framework
   - title: Review design principles
     linkLists:
       - linkListType: concept
@@ -76,3 +80,13 @@ landingContent:
             url: mitigation-strategy.md
           - text: Design an emergency response strategy 
             url: emergency-response.md
+  - title: Explore related resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: DevOps resource center
+            url: /devops/
+          - text: Azure DevOps
+            url: /azure/devops/
+          - text: GitHub
+            url: https://github.com/features
