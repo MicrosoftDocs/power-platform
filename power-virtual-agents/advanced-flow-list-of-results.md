@@ -1,6 +1,6 @@
 ---
 title: Return a list of results
-description: Return a list of results from a Power Automate flow to a Microsoft Copilot Studio bot.
+description: Return a list of results from a Power Automate flow to a Microsoft Copilot Studio copilot.
 keywords: "PVA, flow, automate"
 ms.date: 03/24/2023
 
@@ -18,12 +18,12 @@ ms.service: power-virtual-agents
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-It's common to ask a bot to look for data in an external system and return a list of results. To do that, Microsoft Copilot Studio can call a Power Automate flow to:
+It's common to ask a copilot to look for data in an external system and return a list of results. To do that, Microsoft Copilot Studio can call a Power Automate flow to:
 
 - authenticate and connect to an external solution
 - run a query based on the user's inputs
 - format the results
-- return the results to the bot
+- return the results to the copilot
 
 In this example, you'll use the Dataverse connector in Power Automate to search for accounts. Then you'll return a list of results that includes the account name, city, and account number to Microsoft Copilot Studio.
 
@@ -36,9 +36,9 @@ In this example, you'll use the Dataverse connector in Power Automate to search 
 
 ## Set up a Dataverse Account table
 
-The Account table is a [standard table](/power-apps/maker/data-platform/types-of-entities) that's included automatically in Power Platform environments. However, it doesn't come with account data. Before your bot can search for accounts, you'll need to populate the Account table.
+The Account table is a [standard table](/power-apps/maker/data-platform/types-of-entities) that's included automatically in Power Platform environments. However, it doesn't come with account data. Before your copilot can search for accounts, you'll need to populate the Account table.
 
-If you already have an Account table with data, skip this step and move on to [Create a topic](#create-a-topic). However, you'll need to use different search terms when you test your bot in later steps.
+If you already have an Account table with data, skip this step and move on to [Create a topic](#create-a-topic). However, you'll need to use different search terms when you test your copilot in later steps.
 
 1. Go to the [Power Apps portal](https://make.powerapps.com/).
 
@@ -56,7 +56,7 @@ If you already have an Account table with data, skip this step and move on to [C
 
 ## Create a topic
 
-1. Go to the [**Topics page**](authoring-create-edit-topics.md) for your bot.
+1. Go to the [**Topics page**](authoring-create-edit-topics.md) for your copilot.
 
 1. Create a topic called **Account Search**.
 
@@ -72,7 +72,7 @@ If you already have an Account table with data, skip this step and move on to [C
 
 1. For **Identify**, select **Organization**.
 
-    **User's entire response** will also work. However, selecting the **Organization** entity takes advantage of the bot's language understanding capabilities to extract the organization name from the response.
+    **User's entire response** will also work. However, selecting the **Organization** entity takes advantage of the copilot's language understanding capabilities to extract the organization name from the response.
 
     :::image type="content" source="media/advanced-flow-set-of-results/bot-setup.png" alt-text="Screenshot of a new topic with a message and question node.":::
 
@@ -185,12 +185,12 @@ The **Search rows** action returns the **List of rows** variable, which contains
 
 1. Add a second **Message** node. Select **Insert variable**, and then select **FoundAccounts**.
 
-    :::image type="content" source="media/advanced-flow-set-of-results/show-found-accounts.png" alt-text="Screenshot of a conversation with a bot that has responded with a list of found accounts.":::
+    :::image type="content" source="media/advanced-flow-set-of-results/show-found-accounts.png" alt-text="Screenshot of a conversation with a copilot that has responded with a list of found accounts.":::
 
 1. Select **Save**.
 
-1. Test your bot in the **Test bot** pane.
+1. Test your copilot in the **Test copilot** pane.
 
-    :::image type="content" source="media/advanced-flow-set-of-results/test-chat.png" alt-text="Screenshot of the bot conversation in the Test bot pane.":::
+    :::image type="content" source="media/advanced-flow-set-of-results/test-chat.png" alt-text="Screenshot of the copilot conversation in the Test copilot pane.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
