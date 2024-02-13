@@ -129,13 +129,13 @@ We recommend the following level of technical impact analysis, based on the use 
     **Target environment review (DLP, configuration)**
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -143,13 +143,13 @@ We recommend the following level of technical impact analysis, based on the use 
     **Code review** **tool**
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -163,7 +163,7 @@ We recommend the following level of technical impact analysis, based on the use 
     
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -174,10 +174,10 @@ We recommend the following level of technical impact analysis, based on the use 
     
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -191,7 +191,7 @@ We recommend the following level of technical impact analysis, based on the use 
     
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -202,10 +202,10 @@ We recommend the following level of technical impact analysis, based on the use 
     
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
+    :white_check_mark:
     :::column-end:::
 :::row-end:::
 
