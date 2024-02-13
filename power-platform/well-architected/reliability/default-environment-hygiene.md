@@ -31,7 +31,7 @@ This recommendation will address
 
 **Definitions**
 
-| **Default environment** | [**Environments overview - Power Platform &#124; Microsoft Learn**](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) |
+| **Default environment** | [**Environments overview - Power Platform &#124; Microsoft Learn**](/power-platform/admin/environments-overview) |
 |---|---|
 | | |
 | | |
@@ -100,7 +100,7 @@ Based on your use cases, we recommend the following approach for migration optio
 
 Before you migrate workloads to new environments, you need to perform a technical impact analysis. This will ensure workloads end up in environments that meet the workload requirements and where they can be well supported. 
 
-![A screenshot of a computer  Description automatically generated](media/image2.png)
+![A screenshot of a computer  Description automatically generated](media/default-environment-hygiene/image2.png)
 
 Here are some recommendations. These recommendations could be considered for self-service (for self-migration), or as migration as a service (assisted migration):
 
@@ -129,13 +129,13 @@ We recommend the following level of technical impact analysis, based on the use 
     **Target environment review (DLP, configuration)**
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -143,13 +143,13 @@ We recommend the following level of technical impact analysis, based on the use 
     **Code review** **tool**
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -163,7 +163,7 @@ We recommend the following level of technical impact analysis, based on the use 
     
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -174,10 +174,10 @@ We recommend the following level of technical impact analysis, based on the use 
     
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -191,7 +191,7 @@ We recommend the following level of technical impact analysis, based on the use 
     
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -202,10 +202,10 @@ We recommend the following level of technical impact analysis, based on the use 
     
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
     :::column:::
-    ![Checkbox Checked with solid fill](media/image4.svg)
+    ![Checkbox Checked with solid fill](media/default-environment-hygiene/image4.svg)
     :::column-end:::
 :::row-end:::
 
@@ -235,7 +235,7 @@ Testing – commonly test environments are shared.
 
 Production – sharing broad usage applications in a share production environment can simplify deployments.
 
-![A screenshot of a computer  Description automatically generated](media/image5.png)
+![A screenshot of a computer  Description automatically generated](media/default-environment-hygiene/image5.png)
 
 ### Provisioning prerequisites
 
@@ -344,20 +344,20 @@ Integrate governance principles into your organizational cultures. Policies need
 
 ## Power Platform facilitation
 
-- **Default Environment Routing** moves makers away from building in the default environment. By having a dedicated developer environment that they are routed to when launching make.powerapps.com they have the benefit of building in a safe space, rich with all of the premium features they need to develop great applications.   When they are ready, they benefit from the in-built ALM capabilities that pipelines delivers to them.  This means their ideas, when ready can be deployed to the correct downstream environments. This is great for makers, but also great for admins, who have now a far more mature ALM process that everyone is following, whether they know it or not. Learn More [Default environment routing (preview) - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/default-environment-routing?tabs=ppac)
-- **Pipelines in Power Platform** aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.  [Set up pipelines in Power Platform - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/alm/set-up-pipelines)
-- **Sharing Limits** limit how broadly makers can share canvas apps. Applying this to the default environment can ensure proactive governance and avoid oversharing of workloads. [Limit sharing - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-sharing-limits)
-- **Maker Welcome Content** allows you to configure na customized welcome content that helps makers get started with Power Apps. When the welcome content is enabled, upon signing in to Power Apps, makers will be greeted with customized getting started information. You can use this feature to educate makers about the purpose of the Default environment, and your environment strategy: [Enable maker welcome content (preview) - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/welcome-content)
-- Developer environments: [About the Power Apps Developer Plan - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/developer/plan)
+- **Default Environment Routing** moves makers away from building in the default environment. By having a dedicated developer environment that they are routed to when launching make.powerapps.com they have the benefit of building in a safe space, rich with all of the premium features they need to develop great applications.   When they are ready, they benefit from the in-built ALM capabilities that pipelines delivers to them.  This means their ideas, when ready can be deployed to the correct downstream environments. This is great for makers, but also great for admins, who have now a far more mature ALM process that everyone is following, whether they know it or not. Learn More [Default environment routing (preview) - Power Platform | Microsoft Learn](/power-platform/admin/default-environment-routing?tabs=ppac)
+- **Pipelines in Power Platform** aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.  [Set up pipelines in Power Platform - Power Platform | Microsoft Learn](/power-platform/alm/set-up-pipelines)
+- **Sharing Limits** limit how broadly makers can share canvas apps. Applying this to the default environment can ensure proactive governance and avoid oversharing of workloads. [Limit sharing - Power Platform | Microsoft Learn](/power-platform/admin/managed-environment-sharing-limits)
+- **Maker Welcome Content** allows you to configure na customized welcome content that helps makers get started with Power Apps. When the welcome content is enabled, upon signing in to Power Apps, makers will be greeted with customized getting started information. You can use this feature to educate makers about the purpose of the Default environment, and your environment strategy: [Enable maker welcome content (preview) - Power Platform | Microsoft Learn](/power-platform/admin/welcome-content)
+- Developer environments: [About the Power Apps Developer Plan - Power Platform | Microsoft Learn](/power-platform/developer/plan)
 - CoE Starter Kit 
 
 ## Related links
 
-[Default environment routing (preview) - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/default-environment-routing?tabs=ppac)
+[Default environment routing (preview) - Power Platform | Microsoft Learn](/power-platform/admin/default-environment-routing?tabs=ppac)
 
-[Microsoft Power Platform Center of Excellence Kit - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit)
+[Microsoft Power Platform Center of Excellence Kit - Power Platform | Microsoft Learn](/power-platform/guidance/coe/starter-kit)
 
-[Managed Environments overview - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview)
+[Managed Environments overview - Power Platform | Microsoft Learn](/power-platform/admin/managed-environment-overview)
 
-[Establishing an environment strategy - Microsoft Power Platform - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/environment-strategy)
+[Establishing an environment strategy - Microsoft Power Platform - Power Platform | Microsoft Learn](/power-platform/guidance/adoption/environment-strategy)
 

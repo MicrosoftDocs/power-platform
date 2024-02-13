@@ -82,7 +82,7 @@ Consider the likelihood of each type of failure mode. Some are very unlikely, li
 
 Mitigation strategies fall into two broad categories: building more resiliency and designing for degraded performance.
 
-Building more resiliency means ensuring that your application design follows best practices for durability, for example breaking up monolithic applications into isolated apps and microservices and using platform provided resiliency configurations, like retry policies. For more information, see [Recommendations for redundancy](https://learn.microsoft.com/en-us/azure/well-architected/reliability/redundancy) and [Recommendations for self-preservation](https://learn.microsoft.com/en-us/azure/well-architected/reliability/self-preservation).
+Building more resiliency means ensuring that your application design follows best practices for durability, for example breaking up monolithic applications into isolated apps and microservices and using platform provided resiliency configurations, like retry policies. For more information, see [Recommendations for redundancy](/azure/well-architected/reliability/redundancy) and [Recommendations for self-preservation](/azure/well-architected/reliability/self-preservation).
 
 To design for degraded performance, identify potential failure points that might disable one or more components of your flow but don't fully disable that flow. To maintain the functionality of the end-to-end flow, you might need to reroute one or more steps to other components or accept that a failed component runs a function, so the function is no longer available in the user experience. To return to the e-commerce application example, a failed component like a microservice might cause your recommendation engine to be unavailable, but the customers can still search for products and complete their transaction.
 
@@ -106,29 +106,29 @@ During your initial FMA exercise, the documents you produce will be mostly theor
 
 ## Power Platform facilitation
 
-[Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) is part of the [Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/overview) ecosystem and Power Platform integrates with Application Insights: 
+[Application Insights](/azure/azure-monitor/app/app-insights-overview) is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem and Power Platform integrates with Application Insights: 
 
-You can receive telemetry on diagnostics and performance captured by the [Dataverse platform in Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/overview-integration-application-insights). You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.  
+You can receive telemetry on diagnostics and performance captured by the [Dataverse platform in Application Insights](/power-platform/admin/overview-integration-application-insights). You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.  
 
-You can connect your [canvas apps to Application Insights](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/application-insights). You can use these analytics to diagnose issues and understand what users actually do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps. 
+You can connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights). You can use these analytics to diagnose issues and understand what users actually do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps. 
 
-You can configure [Power Automate telemetry](https://learn.microsoft.com/en-us/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this to monitor cloud flow executions and create alerts for cloud flow run failures.  
+You can configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this to monitor cloud flow executions and create alerts for cloud flow run failures.  
 
-Power Platform resources log activities in the [Microsoft Purview compliance portal](https://learn.microsoft.com/en-us/purview/purview). Most events are available within 24hrs of the activity, so this can’t be used for real-time monitoring. 
+Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24hrs of the activity, so this can’t be used for real-time monitoring. 
 
-[Power Apps](https://learn.microsoft.com/en-us/power-platform/admin/logging-powerapps) 
+[Power Apps](/power-platform/admin/logging-powerapps) 
 
-[Power Automate](https://learn.microsoft.com/en-us/power-platform/admin/logging-power-automate) 
+[Power Automate](/power-platform/admin/logging-power-automate) 
 
-[Power Pages](https://learn.microsoft.com/en-us/power-platform/admin/logging-power-pages) 
+[Power Pages](/power-platform/admin/logging-power-pages) 
 
-[Power Platform connectors](https://learn.microsoft.com/en-us/power-platform/admin/logging-power-pages) 
+[Power Platform connectors](/power-platform/admin/logging-power-pages) 
 
-[Data Loss Prevention](https://learn.microsoft.com/en-us/power-platform/admin/dlp-activity-logging)  
+[Data Loss Prevention](/power-platform/admin/dlp-activity-logging)  
 
-[Power Platform administrative logs](https://learn.microsoft.com/en-us/power-platform/admin/admin-activity-logging) 
+[Power Platform administrative logs](/power-platform/admin/admin-activity-logging) 
 
-[Dataverse auditing](https://learn.microsoft.com/en-us/power-platform/admin/manage-dataverse-auditing) 
+[Dataverse auditing](/power-platform/admin/manage-dataverse-auditing) 
 
 ## Example
 

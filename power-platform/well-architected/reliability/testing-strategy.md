@@ -52,7 +52,7 @@ Test your workload's ability to withstand transient failures. For more informati
 
 Test how your workload handles failures in dependent services or other dependencies by using fault injection.
 
-Test your [disaster recovery plan](https://learn.microsoft.com/en-us/azure/well-architected/reliability/disaster-recovery) to respond to catastrophic failures and other major incidents.
+Test your [disaster recovery plan](/azure/well-architected/reliability/disaster-recovery) to respond to catastrophic failures and other major incidents.
 
 Test your workload's ability to degrade gracefully and minimize the blast radius of component malfunction by using fault injection.
 
@@ -78,7 +78,7 @@ Use your findings to improve your testing strategy. Ensure that you have success
 
 ### Fault-injection and chaos engineering guidance
 
-Fault-injection testing follows the principles of chaos engineering by highlighting the workload's ability to react to component failures. Perform fault-injection testing in pre-production and production environments. Apply the information that you learned from [Recommendations for performing failure mode analysis](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis) to ensure that you test only faults that you prioritize and that you have mitigation strategies that address faults. The key guidelines of chaos engineering are:
+Fault-injection testing follows the principles of chaos engineering by highlighting the workload's ability to react to component failures. Perform fault-injection testing in pre-production and production environments. Apply the information that you learned from [Recommendations for performing failure mode analysis](/azure/well-architected/reliability/failure-mode-analysis) to ensure that you test only faults that you prioritize and that you have mitigation strategies that address faults. The key guidelines of chaos engineering are:
 
 **Be proactive.** Don't wait for failures to happen. Try to anticipate failures by conducting chaos experiments to discover and fix issues before they affect your production environment.
 
@@ -140,7 +140,7 @@ You can use static results in Power Automate to return a fixed result to test yo
 
 [microsoft/PowerApps-TestEngine (github.com)](https://github.com/microsoft/PowerApps-TestEngine) ? 
 
-[Azure Test Plans](https://learn.microsoft.com/en-us/azure/devops/test/overview) is an easy-to-use, browser-based test management solution that provides all the capabilities required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
+[Azure Test Plans](/azure/devops/test/overview) is an easy-to-use, browser-based test management solution that provides all the capabilities required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
 
 If your workload includes Azure resources, you can use [Azure Chaos Studio](https://azure.microsoft.com/services/chaos-studio). Azure Chaos Studio is a managed service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience. 
 

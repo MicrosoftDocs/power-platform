@@ -119,23 +119,23 @@ To prevent the loss of performance under load, you might implement logic so a si
 
 ### Power Automate
 
-[Power Automate cloud flows](https://learn.microsoft.com/en-us/power-automate/flow-types)
+[Power Automate cloud flows](/power-automate/flow-types)
 
 - Automated cloud flows: Create an automation that is triggered by an event such as arrival of an email from a specific person, or a mention of your company in social media.
 - Instant cloud flows: Start an automation with a click of a button. You can automate for repetitive tasks from your Desktop or Mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.
 - Scheduled flows: Schedule an automation such as daily data upload to SharePoint or a database.
 
-Get familiar with the [limits of automated, scheduled and instant flows](https://learn.microsoft.com/en-us/power-automate/limits-and-config) with regards to throughput and request limits, as well as concurrency, looping and debatching limits. Ensure you take these limits into consideration as you design your workflow.
+Get familiar with the [limits of automated, scheduled and instant flows](/power-automate/limits-and-config) with regards to throughput and request limits, as well as concurrency, looping and debatching limits. Ensure you take these limits into consideration as you design your workflow.
 
-Reduce the risk by planning for error handling. Learn more: [Reducing risk and planning for error handling in a Power Automate project - Power Automate | Microsoft Learn](https://learn.microsoft.com/en-us/power-automate/guidance/planning/reducing-risk)
+Reduce the risk by planning for error handling. Learn more: [Reducing risk and planning for error handling in a Power Automate project - Power Automate | Microsoft Learn](/power-automate/guidance/planning/reducing-risk)
 
 ### Microsoft Dataverse
 
-- [Microsoft Dataverse calculated columns and rollups](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/calculated-rollup-attributes)
-  - [Formula columns](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns?tabs=type-or-paste): Formula columns are columns that display a calculated value in a Microsoft Dataverse table. 
+- [Microsoft Dataverse calculated columns and rollups](/power-apps/developer/data-platform/calculated-rollup-attributes)
+  - [Formula columns](/power-apps/maker/data-platform/formula-columns?tabs=type-or-paste): Formula columns are columns that display a calculated value in a Microsoft Dataverse table. 
   - Calculated columns: Automate manual calculations used in your business process. For example, a salesperson might want to know the weighted revenue for an opportunity, which is based on the estimated revenue from an opportunity multiplied by the probability. Or, they want to automatically apply a discount, if an order is greater than $500. A calculated column can contain values resulting from simple math operations, or conditional operations, such as greater than or if-else, and many others. You can accomplish all this by using Power Apps, no need to write code.
   - Rollup columns: help users obtain insights into data by monitoring key business metrics. A rollup column contains an aggregate value computed over the rows related to a specified row. This includes regular tables and activity tables such as emails and appointments. In more complex scenarios, you can aggregate data over the hierarchy of rows. As an administrator or customizer, you can define rollup columns by using the customization tools in Power Apps, without needing to write code.
-- [Background operations](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations?tabs=sdk): Use background operations to send requests that Dataverse processes asynchronously. Background operations are useful when you don't want to maintain a connection while a request runs.
-- [Plug-ins](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins): A _plug-in_ is a custom event handler that executes in response to a specific event raised during processing of a Microsoft Dataverse data operation.
-- [Automated low-code plugin](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/low-code-plug-ins?tabs=automated): Microsoft Dataverse offers a powerful solution for achieving more efficient data architecture and reducing client-side workload through low-code plug-ins. These plug-ins are reusable, real-time workflows that execute a specific set of commands within Dataverse, running server-side and triggered by personalized event handlers.
+- [Background operations](/power-apps/developer/data-platform/background-operations?tabs=sdk): Use background operations to send requests that Dataverse processes asynchronously. Background operations are useful when you don't want to maintain a connection while a request runs.
+- [Plug-ins](/power-apps/developer/data-platform/plug-ins): A _plug-in_ is a custom event handler that executes in response to a specific event raised during processing of a Microsoft Dataverse data operation.
+- [Automated low-code plugin](/power-apps/maker/data-platform/low-code-plug-ins?tabs=automated): Microsoft Dataverse offers a powerful solution for achieving more efficient data architecture and reducing client-side workload through low-code plug-ins. These plug-ins are reusable, real-time workflows that execute a specific set of commands within Dataverse, running server-side and triggered by personalized event handlers.
 

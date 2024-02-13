@@ -76,15 +76,15 @@ As part of your architectural design, you will have to consider how to store you
 
 For more information, see:
 
-- [Power Apps architectural design - Where to place logic - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/guidance/planning/logic)
-- [Designing - Which type of app to make - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/guidance/planning/app-type)
-- [Designing your data structure - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/guidance/planning/data-modeling)
-- [Data design - Working with enterprise systems - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/guidance/planning/enterprise-systems)
+- [Power Apps architectural design - Where to place logic - Power Apps | Microsoft Learn](/power-apps/guidance/planning/logic)
+- [Designing - Which type of app to make - Power Apps | Microsoft Learn](/power-apps/guidance/planning/app-type)
+- [Designing your data structure - Power Apps | Microsoft Learn](/power-apps/guidance/planning/data-modeling)
+- [Data design - Working with enterprise systems - Power Apps | Microsoft Learn](/power-apps/guidance/planning/enterprise-systems)
 
 ## Related links
 
-- [Work with requirements for Microsoft Power Platform and Dynamics 365 - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/work-with-requirements/)
-- [Planning a Power Apps project - planning phase overview - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/guidance/planning/planning-phase)
-- [Use Dataverse low-code plug-ins - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant)
+- [Work with requirements for Microsoft Power Platform and Dynamics 365 - Training | Microsoft Learn](/training/modules/work-with-requirements/)
+- [Planning a Power Apps project - planning phase overview - Power Apps | Microsoft Learn](/power-apps/guidance/planning/planning-phase)
+- [Use Dataverse low-code plug-ins - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant)
 - [powerapps-tools/Tools/Apps/Microsoft.PowerApps.CodeReview/readme.md at master · microsoft/powerapps-tools (github.com)](https://github.com/microsoft/powerapps-tools/blob/master/Tools/Apps/Microsoft.PowerApps.CodeReview/readme.md)
 

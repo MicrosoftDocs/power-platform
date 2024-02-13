@@ -32,11 +32,11 @@ Before you create a monitoring and alerting strategy, perform the following task
 
 Identify critical and noncritical flows.
 
-Perform [failure mode analysis (FMA)](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis) for your flows.
+Perform [failure mode analysis (FMA)](/azure/well-architected/reliability/failure-mode-analysis) for your flows.
 
-Identify [reliability targets](https://learn.microsoft.com/en-us/azure/well-architected/reliability/metrics).
+Identify [reliability targets](/azure/well-architected/reliability/metrics).
 
-Design a robust [testing strategy](https://learn.microsoft.com/en-us/azure/well-architected/reliability/testing-strategy).
+Design a robust [testing strategy](/azure/well-architected/reliability/testing-strategy).
 
 Create a monitoring and alerting strategy to provide awareness to your operations teams so they're notified of changes in your workload's condition and can quickly address issues. The health model for your critical flows and workloads that include critical flows should define healthy, degraded, and unhealthy states. Design your monitoring posture to immediately catch changes in these states. When health states change from healthy to degraded or unhealthy, alerting mechanisms trigger should trigger automatic recovery measures, if available, and alerts to the responsible teams. 
 
@@ -44,17 +44,17 @@ Implement the following recommendations to design a monitoring and alerting stra
 
 ### General guidance
 
-Understand the difference between [metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-platform-metrics), [logs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs), and [traces](https://learn.microsoft.com/en-us/azure/azure-monitor/app/asp-net-trace-logs).
+Understand the difference between [metrics](/azure/azure-monitor/essentials/data-platform-metrics), [logs](/azure/azure-monitor/logs/data-platform-logs), and [traces](/azure/azure-monitor/app/asp-net-trace-logs).
 
-Enable [logging](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/resource-logs) for all cloud resources. Use automation and governance in your deployments to enable diagnostic logging throughout your environment.
+Enable [logging](/azure/azure-monitor/essentials/resource-logs) for all cloud resources. Use automation and governance in your deployments to enable diagnostic logging throughout your environment.
 
 Forward all diagnostic logs to a centralized data sink and analytics platform, like a Log Analytics workspace. If you have regional data sovereignty requirements, you must use local data sinks in the regions that are subject to those requirements.
 
 **Tradeoff**: There are cost implications for storing and querying logs. Notice how your log analysis and retention affects your budget, and determine the best balance of utilization to meet your requirements.
 
-If your workloads are subject to one or more compliance frameworks, some of the component logs that handle sensitive information are also subject to those frameworks. Send the relevant component logs to a security information and event management (SIEM) system, like [Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/overview).
+If your workloads are subject to one or more compliance frameworks, some of the component logs that handle sensitive information are also subject to those frameworks. Send the relevant component logs to a security information and event management (SIEM) system, like [Microsoft Sentinel](/azure/sentinel/overview).
 
-Create a [log retention policy](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-archive) that incorporates long-term retention requirements that the compliance frameworks impose on your workload.
+Create a [log retention policy](/azure/azure-monitor/logs/data-retention-archive) that incorporates long-term retention requirements that the compliance frameworks impose on your workload.
 
 Use [structured logging](https://stackify.com/what-is-structured-logging-and-why-developers-need-it) for all log messages to optimize querying the log data.
 
@@ -64,13 +64,13 @@ Threshold configuration is a practice of continuous improvement. As your workloa
 
 Consider using alerts when states improve, such as red to yellow or red to green, so that the operations teams can track these events for future reference.
 
-Visualize the real-time health of your environment by using [custom dashboards](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/tutorial-logs-dashboards).
+Visualize the real-time health of your environment by using [custom dashboards](/azure/azure-monitor/visualize/tutorial-logs-dashboards).
 
-Use data that's gathered during incidents to continuously improve your [health models](https://learn.microsoft.com/en-us/azure/well-architected/reliability/metrics) and your monitoring and alerting strategy.
+Use data that's gathered during incidents to continuously improve your [health models](/azure/well-architected/reliability/metrics) and your monitoring and alerting strategy.
 
-Incorporate cloud platform monitoring and alerting services, including platform-level health, like [How do I check my online service health? - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/check-online-service-health).
+Incorporate cloud platform monitoring and alerting services, including platform-level health, like [How do I check my online service health? - Power Platform | Microsoft Learn](/power-platform/admin/check-online-service-health).
 
-Incorporate purpose-built advanced monitoring and analytics that your cloud provider offers, like Azure Monitor [insight tools](https://learn.microsoft.com/en-us/azure/azure-monitor/overview).
+Incorporate purpose-built advanced monitoring and analytics that your cloud provider offers, like Azure Monitor [insight tools](/azure/azure-monitor/overview).
 
 Implement backup and recovery monitoring to capture:
 
@@ -78,7 +78,7 @@ The data replication status to ensure that your workload achieves recovery withi
 
 Successful and failed backups and recoveries.
 
-The recovery duration to inform your [disaster recovery planning](https://learn.microsoft.com/en-us/azure/well-architected/reliability/disaster-recovery).
+The recovery duration to inform your [disaster recovery planning](/azure/well-architected/reliability/disaster-recovery).
 
 ### Monitor applications
 
@@ -112,35 +112,35 @@ Locks
 
 ## Power Platform facilitation
 
-[Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) is part of the [Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/overview) ecosystem and Power Platform integrates with Application Insights: 
+[Application Insights](/azure/azure-monitor/app/app-insights-overview) is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem and Power Platform integrates with Application Insights: 
 
-You can receive telemetry on diagnostics and performance captured by the [Dataverse platform in Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/overview-integration-application-insights). You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.  
+You can receive telemetry on diagnostics and performance captured by the [Dataverse platform in Application Insights](/power-platform/admin/overview-integration-application-insights). You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.  
 
-You can connect your [canvas apps to Application Insights](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/application-insights). You can use these analytics to diagnose issues and understand what users actually do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps. 
+You can connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights). You can use these analytics to diagnose issues and understand what users actually do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps. 
 
-You can configure [Power Automate telemetry](https://learn.microsoft.com/en-us/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this to monitor cloud flow executions and create alerts for cloud flow run failures.  
+You can configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this to monitor cloud flow executions and create alerts for cloud flow run failures.  
 
-Power Platform resources log activities in the [Microsoft Purview compliance portal](https://learn.microsoft.com/en-us/purview/purview). Most events are available within 24hrs of the activity, so this can’t be used for real-time monitoring. 
+Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24hrs of the activity, so this can’t be used for real-time monitoring. 
 
-[Power Apps](https://learn.microsoft.com/en-us/power-platform/admin/logging-powerapps) 
+[Power Apps](/power-platform/admin/logging-powerapps) 
 
-[Power Automate](https://learn.microsoft.com/en-us/power-platform/admin/logging-power-automate) 
+[Power Automate](/power-platform/admin/logging-power-automate) 
 
-[Power Pages](https://learn.microsoft.com/en-us/power-platform/admin/logging-power-pages) 
+[Power Pages](/power-platform/admin/logging-power-pages) 
 
-[Power Platform connectors](https://learn.microsoft.com/en-us/power-platform/admin/logging-power-pages) 
+[Power Platform connectors](/power-platform/admin/logging-power-pages) 
 
-[Data Loss Prevention](https://learn.microsoft.com/en-us/power-platform/admin/dlp-activity-logging)  
+[Data Loss Prevention](/power-platform/admin/dlp-activity-logging)  
 
-[Power Platform administrative logs](https://learn.microsoft.com/en-us/power-platform/admin/admin-activity-logging) 
+[Power Platform administrative logs](/power-platform/admin/admin-activity-logging) 
 
-[Dataverse auditing](https://learn.microsoft.com/en-us/power-platform/admin/manage-dataverse-auditing) 
+[Dataverse auditing](/power-platform/admin/manage-dataverse-auditing) 
 
-Your Power Platform workload may include Azure resources, learn more about monitoring recommendations for Azure resources: [Recommendations for designing and creating a monitoring system - Microsoft Azure Well-Architected Framework | Microsoft Learn](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/observability) 
+Your Power Platform workload may include Azure resources, learn more about monitoring recommendations for Azure resources: [Recommendations for designing and creating a monitoring system - Microsoft Azure Well-Architected Framework | Microsoft Learn](/azure/well-architected/operational-excellence/observability) 
 
 CoE Starter Kit 
 
 ## Related Links
 
-[How do I check my online service health? - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/check-online-service-health)
+[How do I check my online service health? - Power Platform | Microsoft Learn](/power-platform/admin/check-online-service-health)
 

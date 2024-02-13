@@ -29,13 +29,13 @@ This guide describes recommendations for designing a reliable disaster recovery 
 
 This guide assumes that you have already performed the following tasks as part of your reliability planning:
 
-Identify [critical and noncritical flows](https://learn.microsoft.com/en-us/azure/well-architected/reliability/identify-flows).
+Identify [critical and noncritical flows](/azure/well-architected/reliability/identify-flows).
 
-Perform [failure mode analysis (FMA)](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis) for your flows.
+Perform [failure mode analysis (FMA)](/azure/well-architected/reliability/failure-mode-analysis) for your flows.
 
-Identify [reliability targets](https://learn.microsoft.com/en-us/azure/well-architected/reliability/metrics).
+Identify [reliability targets](/azure/well-architected/reliability/metrics).
 
-Design a robust [testing strategy](https://learn.microsoft.com/en-us/azure/well-architected/reliability/testing-strategy).
+Design a robust [testing strategy](/azure/well-architected/reliability/testing-strategy).
 
 A reliable workload architecture is the basis for a reliable disaster recovery (DR strategy. Consider reliability at every stage of creating your workload to make sure that you have the needed components for efficient recovery before you begin planning your DR strategy. This foundation ensures that your workload's reliability goals, such as recovery time objective (RTO) and recovery point objective (RPO) are practical and attainable.
 
@@ -105,7 +105,7 @@ As your DR drill practices mature, you learn which procedures you can run in par
 
 ## Power Platform facilitation
 
-Microsoft's Business Application Platform (BAP) provides Business Continuity and Disaster Recovery (BCDR) capabilities to all [production type](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform SAAS applications. Familiarize yourself with the  details and practices Microsoft takes to ensure your production data is resilient during regional outage, and include them in your disaster recovery plans: [Business continuity and disaster recovery for Dynamics 365 SaaS apps - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/business-continuity-disaster-recovery)
+Microsoft's Business Application Platform (BAP) provides Business Continuity and Disaster Recovery (BCDR) capabilities to all [production type](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform SAAS applications. Familiarize yourself with the  details and practices Microsoft takes to ensure your production data is resilient during regional outage, and include them in your disaster recovery plans: [Business continuity and disaster recovery for Dynamics 365 SaaS apps - Power Platform | Microsoft Learn](/power-platform/admin/business-continuity-disaster-recovery)
 
 Resiliency and continuity - Microsoft Service Assurance | Microsoft Learn
 

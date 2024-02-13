@@ -94,7 +94,7 @@ Create a mockup of the resource or service that returns a range of errors that t
 
 For custom services that you create and deploy, force transient errors to occur by temporarily disabling or overloading the service. (Don't attempt to overload any shared resources or shared services in Azure.)
 
-When testing a client web application's resiliency to transient faults, use the browser's developer tools or your testing framework's ability to [mock](https://playwright.dev/docs/network) or [block](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/) network requests.
+When testing a client web application's resiliency to transient faults, use the browser's developer tools or your testing framework's ability to [mock](https://playwright.dev/docs/network) or [block](/microsoft-edge/devtools-guide-chromium/network/) network requests.
 
 Perform high load factor and concurrent tests to ensure that the retry mechanism and strategy works correctly under these conditions. These tests also help ensure that the retry doesn't have an adverse effect on the operation of the client or cause cross-contamination between requests.
 
@@ -136,31 +136,31 @@ If you choose a retry scope that encompasses several operations, consider the to
 
 ## Power Platform facilitation
 
-- Power Automate provides you with a feature to retry an action if it fails – configure this on a per action level: [Reducing risk and planning for error handling in a Power Automate project - Power Automate | Microsoft Learn](https://learn.microsoft.com/en-us/power-automate/guidance/planning/reducing-risk)
+- Power Automate provides you with a feature to retry an action if it fails – configure this on a per action level: [Reducing risk and planning for error handling in a Power Automate project - Power Automate | Microsoft Learn](/power-automate/guidance/planning/reducing-risk)
 - Power Automate offers you actions to return custom errors and data to the calling Power App or calling Power Automate flow – you can use “respond to power apps” or “response” actions.
-- [Mobile offline for canvas apps (preview) - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/mobile/canvas-mobile-offline-overview)
-- [Mobile offline overview - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/mobile/mobile-offline-overview)
-- Power Apps canvas apps provides you with the capability to check the connection status, allowing your app to behave differently if the app is offline. [Acceleration, App, Compass, Connection, and Location signals in Power Apps - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/signals)
-- If your workload connects to Azure services, learn more: [Recommendations for handling transient faults - Microsoft Azure Well-Architected Framework | Microsoft Learn](https://learn.microsoft.com/en-us/azure/well-architected/reliability/handle-transient-faults)
-- Custom Connector responses: [Coding standards | Microsoft Learn](https://learn.microsoft.com/en-us/connectors/custom-connectors/coding-standards)
-- Detecting errors in canvas apps to decide what to do next [Error, IfError, IsError, and IsBlankOrError functions - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror)
-- Configure error and exception handling in cloud flows by using scopes and run-after settings [Best practices for error handling in Power Automate flows - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/error-handling/)
-- Use the App Insights integrations to log errors: [Set up Application Insights with Power Automate (preview) - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/app-insights-cloud-flow) and [Analyze system-generated logs using Application Insights - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/application-insights)
-- Some transient flows can be caused by throughput and request limits, get familiar with those: [Limits of automated, scheduled, and instant flows - Power Automate | Microsoft Learn](https://learn.microsoft.com/en-us/power-automate/limits-and-config) and [Requests limits and allocations - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations)
+- [Mobile offline for canvas apps (preview) - Power Apps | Microsoft Learn](/power-apps/mobile/canvas-mobile-offline-overview)
+- [Mobile offline overview - Power Apps | Microsoft Learn](/power-apps/mobile/mobile-offline-overview)
+- Power Apps canvas apps provides you with the capability to check the connection status, allowing your app to behave differently if the app is offline. [Acceleration, App, Compass, Connection, and Location signals in Power Apps - Power Platform | Microsoft Learn](/power-platform/power-fx/reference/signals)
+- If your workload connects to Azure services, learn more: [Recommendations for handling transient faults - Microsoft Azure Well-Architected Framework | Microsoft Learn](/azure/well-architected/reliability/handle-transient-faults)
+- Custom Connector responses: [Coding standards | Microsoft Learn](/connectors/custom-connectors/coding-standards)
+- Detecting errors in canvas apps to decide what to do next [Error, IfError, IsError, and IsBlankOrError functions - Power Platform | Microsoft Learn](/power-platform/power-fx/reference/function-iferror)
+- Configure error and exception handling in cloud flows by using scopes and run-after settings [Best practices for error handling in Power Automate flows - Training | Microsoft Learn](/training/modules/error-handling/)
+- Use the App Insights integrations to log errors: [Set up Application Insights with Power Automate (preview) - Power Platform | Microsoft Learn](/power-platform/admin/app-insights-cloud-flow) and [Analyze system-generated logs using Application Insights - Power Apps | Microsoft Learn](/power-apps/maker/canvas-apps/application-insights)
+- Some transient flows can be caused by throughput and request limits, get familiar with those: [Limits of automated, scheduled, and instant flows - Power Automate | Microsoft Learn](/power-automate/limits-and-config) and [Requests limits and allocations - Power Platform | Microsoft Learn](/power-platform/admin/api-request-limits-allocations)
 
 ## Related Links
 
-[Develop offline-capable canvas apps (contains video) - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/offline-apps)
+[Develop offline-capable canvas apps (contains video) - Power Apps | Microsoft Learn](/power-apps/maker/canvas-apps/offline-apps)
 
-[Mobile offline for canvas apps (preview) - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/mobile/canvas-mobile-offline-overview)
+[Mobile offline for canvas apps (preview) - Power Apps | Microsoft Learn](/power-apps/mobile/canvas-mobile-offline-overview)
 
-[Recommendations for handling transient faults - Microsoft Azure Well-Architected Framework | Microsoft Learn](https://learn.microsoft.com/en-us/azure/well-architected/reliability/handle-transient-faults)
+[Recommendations for handling transient faults - Microsoft Azure Well-Architected Framework | Microsoft Learn](/azure/well-architected/reliability/handle-transient-faults)
 
-[Coding standards | Microsoft Learn](https://learn.microsoft.com/en-us/connectors/custom-connectors/coding-standards)
+[Coding standards | Microsoft Learn](/connectors/custom-connectors/coding-standards)
 
-[Error, IfError, IsError, and IsBlankOrError functions - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror)
+[Error, IfError, IsError, and IsBlankOrError functions - Power Platform | Microsoft Learn](/power-platform/power-fx/reference/function-iferror)
 
-[Best practices for error handling in Power Automate flows - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/error-handling/)
+[Best practices for error handling in Power Automate flows - Training | Microsoft Learn](/training/modules/error-handling/)
 
-[Business continuity and disaster recovery for Dynamics 365 SaaS apps - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/business-continuity-disaster-recovery)
+[Business continuity and disaster recovery for Dynamics 365 SaaS apps - Power Platform | Microsoft Learn](/power-platform/admin/business-continuity-disaster-recovery)
 
