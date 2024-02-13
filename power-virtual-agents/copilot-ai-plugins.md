@@ -1,6 +1,6 @@
 ---
 title: Create AI plugins for Microsoft Copilot (preview)
-description: Use plugin actions to extend the capabilities of your bots.
+description: Use plugin actions to extend the capabilities of your copilots.
 keywords: "PVA, plugin, connector, flow, automate"
 ms.date: 11/15/2023
 ms.service: power-virtual-agents
@@ -66,7 +66,7 @@ Power Automate flow plugins let you define flows that can be called from AI surf
 1. You can add inputs to your trigger for information you might want to collect from your users. Provide helpful text descriptions for each input so the AI can correctly identify what to extract from a user's data or inputs.
    ![Create Flow Plugin](media/copilot-ai-plugins/create-flow-plugin.png)
 1. Add actions to your flow such as the **Create an approval** and **Post a message to Teams chat** to create an approval process.
-1. Optionally add parameters to the **Respond to copilot** action for any output you want to send back to the bot.
+1. Optionally add parameters to the **Respond to copilot** action for any output you want to send back to the copilot.
    ![Create Flow Plugin Path](media/copilot-ai-plugins/create-flow-plugin-path.png)
 1. Save your flow with a meaningful flow name and test or run it at least once. The AI uses the title and description of the flow to determine when to invoke the flow plugins. Ensure your flows run correctly, as only tested flows show up as available plugins in Microsoft Copilot.
 
