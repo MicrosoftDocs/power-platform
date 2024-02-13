@@ -1,6 +1,6 @@
 ---
-title: "AI features for Teams and Classic bots (contains video)"
-description: "Use advanced AI features in Microsoft Copilot Studio to improve how your bots interact with your bot users. These features are available in the Teams app for Microsoft Copilot Studio and for Classic bots."
+title: "AI features for Teams and Classic copilots (contains video)"
+description: "Use advanced AI features in Microsoft Copilot Studio to improve how your copilots interact with your copilot users. These features are available in the Teams app for Microsoft Copilot Studio and for Classic copilots."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
 ms.date: 07/25/2023
 ms.topic: how-to
@@ -13,32 +13,32 @@ ms.service: power-virtual-agents
 
 ---
 
-# AI features for Teams and Classic bots
+# AI features for Teams and Classic copilots
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-With bots in the Microsoft Copilot Studio app in Teams or **Classic** bots in the Copilot Studio web app, you can enable extra features that improve the core AI.
+With copilots in the Microsoft Copilot Studio app in Teams or **Classic** copilots in the Copilot Studio web app, you can enable extra features that improve the core AI.
 
 Copilots include next-generation AI features that supersede or replace the features listed in this article.
 
-You can use these AI features for backwards compatibility with older bots and support some scenarios. In most cases, you should [create or convert your bots with the unified authoring canvas](unified-authoring-conversion.md) to get the best implementation of multiple AI technologies.
+You can use these AI features for backwards compatibility with older copilots and support some scenarios. In most cases, you should [create or convert your copilots with the unified authoring canvas](unified-authoring-conversion.md) to get the best implementation of multiple AI technologies.
 
 > [!IMPORTANT]
-> [Generative AI features](nlu-gpt-overview.md), such as [generative answers](nlu-boost-conversations.md) and [natural language understanding](nlu-authoring.md), are only available if you create or convert a bot [using the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-microsoft-copilot-studio) in the Copilot Studio web app.
+> [Generative AI features](nlu-gpt-overview.md), such as [generative answers](nlu-boost-conversations.md) and [natural language understanding](nlu-authoring.md), are only available if you create or convert a copilot [using the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-microsoft-copilot-studio) in the Copilot Studio web app.
 
 ## Prerequisites
 
 You can use the AI features if:
 
-- Your bot is marked **Classic**.
-- Or, a bot you created in the Teams app.
-- You created your bot before May 23, 2023.
+- Your copilot is marked **Classic**.
+- Or, a copilot you created in the Teams app.
+- You created your copilot before May 23, 2023.
 
 [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 ## AI models in Microsoft Copilot Studio - background
 
-:::image type="content" source="media/advanced-ai-features/nlu-models.png" alt-text="Screenshot showing how conversational AI is infused in each step of the bot building journey." lightbox="media/advanced-ai-features/nlu-models.png":::
+:::image type="content" source="media/advanced-ai-features/nlu-models.png" alt-text="Screenshot showing how conversational AI is infused in each step of the copilot building journey." lightbox="media/advanced-ai-features/nlu-models.png":::
 
 Copilot Studio hosts multiple AI models and AI capabilities on a single service. The core feature is a transformer-based natural language understanding (NLU) model.
 
@@ -83,7 +83,7 @@ If you select an item in the list, the **Topic overlap details** pane opens.
 
 In this example, there's one trigger phrase in the "Languages supported in Microsoft 365" topic (_For which languages is Microsoft 365 available?_) that semantically overlaps with a trigger phrase in the "Use Microsoft 365 in other languages?" topic (_Can I use Microsoft 365 in languages other than the one I originally purchased?_). Here, the AI determines that both trigger phrases are semantically similar. The phrases have similar sentence structure, words, and grammar.
 
-Using semantically similar trigger phrases for two different topics can lead to confusion. The bot might not know which topic to open and asks follow-up questions to the bot user.
+Using semantically similar trigger phrases for two different topics can lead to confusion. The copilot might not know which topic to open and asks follow-up questions to the copilot user.
 
 Identifying semantically similar trigger phrases can also help you consolidate _topics_ if they're too similar. You can edit the topics to make them more distinct.
 
@@ -95,17 +95,17 @@ After you save your changes, the overlapping status automatically refreshes. You
 
 ### Topic suggestion from chat transcripts (preview)
 
-This feature analyzes sessions between your bot and users and gives suggestions based on unmatched user input.
+This feature analyzes sessions between your copilot and users and gives suggestions based on unmatched user input.
 
-[Once enabled](#enable-or-disable-generative-ai), go to **Analytics** > **Topic triggering (preview)**. A list of potential topics are shown with the number of times a query about this topic was made by users of the bot. The top 200 suggestions are shown.
+[Once enabled](#enable-or-disable-generative-ai), go to **Analytics** > **Topic triggering (preview)**. A list of potential topics are shown with the number of times a query about this topic was made by users of the copilot. The top 200 suggestions are shown.
 
 :::image type="content" source="media/advanced-ai-features/topic-suggestions.png" alt-text="Screenshot of the Topic suggestions tile showing a list of suggestions.":::
 
-The topic suggestion analyzer automatically runs once every one to two hours. The analyzer scans all new queries made since the analyzer last ran. The analyzer groups together queries that don't match an existing topic and shows them in the list. Your bot needs at least 100 new conversations from the last time any suggestion was generated to trigger the process. Suggestions with more than three user sessions are shown.
+The topic suggestion analyzer automatically runs once every one to two hours. The analyzer scans all new queries made since the analyzer last ran. The analyzer groups together queries that don't match an existing topic and shows them in the list. Your copilot needs at least 100 new conversations from the last time any suggestion was generated to trigger the process. Suggestions with more than three user sessions are shown.
 
-When you select an item in the suggestion list, a topic suggestion window appears, showing the topic with some suggested trigger phrases. The suggested trigger phrases are based on queries made by bot users that aren't matched to an existing topic.
+When you select an item in the suggestion list, a topic suggestion window appears, showing the topic with some suggested trigger phrases. The suggested trigger phrases are based on queries made by copilot users that aren't matched to an existing topic.
 
-You can choose to delete the entire suggested topic, for example if the topic is irrelevant to the bot, or add it to your list of topics by selecting **Add to topics**.
+You can choose to delete the entire suggested topic, for example if the topic is irrelevant to the copilot, or add it to your list of topics by selecting **Add to topics**.
 
 :::image type="content" source="media/advanced-ai-features/topic-editing.png" alt-text="Screenshot of the topic editing window.":::
 
@@ -113,17 +113,17 @@ You can choose to delete the entire suggested topic, for example if the topic is
 ### Conversation personalization (preview)
 
 > [!IMPORTANT]
-> The conversation personalization (preview) capability will be **retired on 28 September 2023**. From that date onwards, you won't be able to enable this capability in any new or existing bots. The capability will also be disabled for any existing bots that have it enabled.
+> The conversation personalization (preview) capability will be **retired on 28 September 2023**. From that date onwards, you won't be able to enable this capability in any new or existing copilots. The capability will also be disabled for any existing copilots that have it enabled.
 >  
-> The unified authoring canvas includes a raft of improvements to the types of AI used by Microsoft Copilot Studio. Wherever possible, we recommend you [create and convert your bots with the unified authoring canvas](unified-authoring-conversion.md).
+> The unified authoring canvas includes a raft of improvements to the types of AI used by Microsoft Copilot Studio. Wherever possible, we recommend you [create and convert your copilots with the unified authoring canvas](unified-authoring-conversion.md).
 
-For this capability, the bot reuses information from Microsoft Graph and Microsoft Entra ID throughout the conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
+For this capability, the copilot reuses information from Microsoft Graph and Microsoft Entra ID throughout the conversation. This feature allows the copilot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
 
-Specifically, with this feature enabled, when the bot asks questions such as those in the following table, the corresponding user information is pulled from Microsoft Graph and Microsoft Entra ID (for authenticated users) and provided as prompts for the user to choose as an option.
+Specifically, with this feature enabled, when the copilot asks questions such as those in the following table, the corresponding user information is pulled from Microsoft Graph and Microsoft Entra ID (for authenticated users) and provided as prompts for the user to choose as an option.
 
 :::image type="content" source="media/advanced-ai-features/improvements-authoring.png" alt-text="Screenshot of the triggering improvements highlighted as part of topic authoring.":::
 
-| Sample bot questions | User property automatically filled from Microsoft Graph or Microsoft Entra ID |
+| Sample copilot questions | User property automatically filled from Microsoft Graph or Microsoft Entra ID |
 | -------------------- | ------------------- |
 | - `Where do you live?`</br>- `For assistance with this matter you'll need to provide your address.`</br>- `Thank you for that. Please give me 2-3 minutes to review your previous case. May I know your address?` | Address |
 | - `OK. I'll need you to enter your annual income in order to assist.`</br>- `OK. Can I get your annual income so I can help with that?` | Annual income  |
@@ -152,15 +152,15 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 ### Enable or disable Generative AI
 
 > [!IMPORTANT]
-> You can't enable these features for bots _not_ marked **Classic**. This includes any bots created (or converted) in the web app after May 23, 2023, or any bots that aren't created with the unified authoring canvas.
+> You can't enable these features for copilots _not_ marked **Classic**. This includes any copilots created (or converted) in the web app after May 23, 2023, or any copilots that aren't created with the unified authoring canvas.
 >  
-> The unified authoring canvas includes improvements to the types of AI used by Microsoft Copilot Studio. We recommend you [create and convert your bots with the unified authoring canvas](unified-authoring-conversion.md).
+> The unified authoring canvas includes improvements to the types of AI used by Microsoft Copilot Studio. We recommend you [create and convert your copilots with the unified authoring canvas](unified-authoring-conversion.md).
 
 To enable these older AI capabilities in Microsoft Copilot Studio:
 
-1. Open your bot:
-   - In the web app, the bot must be marked with **Classic**.
-   - In the Teams app, the bot can be any bot.
+1. Open your copilot:
+   - In the web app, the copilot must be marked with **Classic**.
+   - In the Teams app, the copilot can be any copilot.
 1. From the navigation menu, select **Generative AI**.
 1. For each feature, select the checkbox to turn it on or off.
 1. Select **Save** at the top of the tab.
