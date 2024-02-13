@@ -23,8 +23,26 @@
           href: ./reliability/tradeoffs.md
         - name: Recommendations   
           items:
-            - name: Reliability patterns
-              href: ./reliability/design-patterns.md
+            - name: RE:01 Simplicity and efficiency
+              href: reliability/simplify.md
+            - name: RE:02 Critical flows
+              href: reliability/identify-flows.md
+            - name: RE:03 Failure mode analysis
+              href: reliability/failure-mode-analysis.md
+            - name: RE:07 Background jobs
+              href: reliability/background-jobs.md
+            - name: RE:07 Transient faults 
+              href: reliability/handle-transient-faults.md
+            - name: RE:07 Self-preservation
+              href: reliability/self-preservation.md
+            - name: RE:08 Testing
+              href: reliability/testing-strategy.md
+            - name: RE:09 Disaster recovery  
+              href: reliability/disaster-recovery.md
+            - name: RE:10 Monitoring and alerting
+              href: reliability/monitoring-alerting-strategy.md
+            - name: RE:10 Default environment hygiene
+              href: reliability/default-environment-hygiene.md
       - name: Security
         items: 
         - name: Quick links
