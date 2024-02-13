@@ -33,8 +33,6 @@
               href: reliability/background-jobs.md
             - name: RE:07 Transient faults 
               href: reliability/handle-transient-faults.md
-            - name: RE:07 Self-preservation
-              href: reliability/self-preservation.md
             - name: RE:08 Testing
               href: reliability/testing-strategy.md
             - name: RE:09 Disaster recovery  
