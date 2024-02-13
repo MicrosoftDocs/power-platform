@@ -213,21 +213,15 @@ We recommend the following level of technical impact analysis, based on the use 
 
 Before you start the decluttering process, you need to understand where your workloads need to be moved to. It’s important to have a strategy for managing environments, and that types of workloads that will reside in them. 
 
-Typically they are considered either dedicated, or shared. 
-
-
+Typically they are considered either dedicated, or shared.
 
 Reasons for dedicated environments:
-
-
 
 - Criticality – there may be business critical apps that should not have any other Power Platform asset reside in the same environment to mitigate the risk of an update or deployment outside the business critical app impacting performance or availability.
 - Security – access to data, or the app itself may have certain levels of sensitivity, meaning that to mitigate the risk of unauthorised access or data breach, it requires a dedicated environment. It could also require a combination of connectors that you would not want used outside the specific use case and requirements fo the solution.
 - Development – developer environments may be dedicated to a particular project
 
 Considerations for shared environments:
-
-
 
 Departmental – keeping all Power Platform resources required by a specific team or department can simplify user access, licensing and chargeback models.
 
@@ -312,8 +306,6 @@ Explain that aligning your message with their interests ensures engagement and b
 
 Governance is dynamic by nature. In a constantly evolving business and technological landscape, governance cannot be static.
 
-
-
 It needs to adapt and evolve continuously to remain effective.
 
 Establish a continuous governance cycle:
@@ -334,13 +326,9 @@ Track the effectiveness of your governance with OKRs:
 | **Improve user engagement and** **training** | Increase training completion rates for developers and users to 80% by Q3 | Elevates platform proficiency, leading to better and more secure usage |
 | **Streamline application development and** **deployment** | Create a template and component library by Q3 | Accelerates development and ensures consistency across applications |
 
-
-
 ### Implement governance
 
 Integrate governance principles into your organizational cultures. Policies need to be ingrained in organizational culture. Training programs and regular policy reviews ensure that principles are deeply embedded. Include these principles in maker/ user onboarding. Positive outcomes of effective governance include enhanced stakeholder trust, better risk management and platform sustainability. Focus on continuous governance cycle.
-
-
 
 ## Power Platform facilitation
 
@@ -360,4 +348,3 @@ Integrate governance principles into your organizational cultures. Policies need
 [Managed Environments overview - Power Platform | Microsoft Learn](/power-platform/admin/managed-environment-overview)
 
 [Establishing an environment strategy - Microsoft Power Platform - Power Platform | Microsoft Learn](/power-platform/guidance/adoption/environment-strategy)
-
