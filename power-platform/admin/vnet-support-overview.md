@@ -15,18 +15,6 @@ ms.custom: "admin-security"
 
 The [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform helps you integrate from Microsoft Power Platform to resources within your virtual network without exposing your resources over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic at runtime from Power Platform. Therefore, you don't need to expose your protected resources over the internet to integrate with Power Platform.
 
-Power Platform offers two ways to securely connect to enterprise resources:
-
-- Virtual network support for Power Platform
-  
-  Virtual Network support for Power Platform is optimized to handle API workloads with a _high_ request volume and _low_ execution time for requests.
-
-- Virtual network (VNet) data gateway
-
-  [VNet data gateway](/data-integration/vnet/overview) is optimized to handle ETL (Extract, Transform, Load) workloads with a _low_ request volume and _high_ execution time for requests.
-
-> [!TIP]
-> Virtual Network support for Power Platform is the only recommended option to secure outbound connectivity from Power Platform services except [Power BI](/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform dataflows](/data-integration/vnet/data-gateway-power-platform-dataflows) (PPDF). Power BI and PPDF will continue to use VNet data gateway.
 
 Using Virtual Network, you can:
 
