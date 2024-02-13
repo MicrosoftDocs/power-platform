@@ -1,6 +1,6 @@
 ---
 title: Call a flow as an action
-description: Call a Power Automate flow from a bot topic using an action node.
+description: Call a Power Automate flow from a copilot topic using an action node.
 keywords: "PVA, flow, automate"
 ms.date: 07/28/2022
 
@@ -18,7 +18,7 @@ ms.service: power-virtual-agents
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Learn how to use a cloud flow in Microsoft Copilot Studio by giving a bot the ability to produce a weather forecast on request. In the previous example, you [created a flow](advanced-flow-create.md) that fetches a weather forecast. In this example, you'll use a **Call an action** node in a bot topic to call the flow when a customer asks about the weather.
+Learn how to use a cloud flow in Microsoft Copilot Studio by giving a copilot the ability to produce a weather forecast on request. In the previous example, you [created a flow](advanced-flow-create.md) that fetches a weather forecast. In this example, you'll use a **Call an action** node in a copilot topic to call the flow when a customer asks about the weather.
 
 If you haven't already [created the weather forecast flow](advanced-flow-create.md), do that now.
 
@@ -29,7 +29,7 @@ If you haven't already [created the weather forecast flow](advanced-flow-create.
 
 ## Call a flow from a topic
 
-1. In Microsoft Copilot Studio, go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
+1. In Microsoft Copilot Studio, go to the [**Topics page**](authoring-create-edit-topics.md) for the copilot you want to edit.
 
 1. Create a new topic, and name it **Get weather**.
 
@@ -69,9 +69,9 @@ If you haven't already [created the weather forecast flow](advanced-flow-create.
 
 1. Select **Save**.
 
-## Manage a flow used in a bot topic
+## Manage a flow used in a copilot topic
 
-After you've called a flow from an action node in a bot topic, you can use the node menu to manage the flow. The Microsoft Copilot Studio authoring canvas gives you three options:
+After you've called a flow from an action node in a copilot topic, you can use the node menu to manage the flow. The Microsoft Copilot Studio authoring canvas gives you three options:
 
 - **Delete**: Select to permanently delete the node, and the flow, from the topic.  
 
@@ -85,13 +85,13 @@ After you've called a flow from an action node in a bot topic, you can use the n
 
 It's a good idea to test the flow and the topic that calls it.
 
-In the **Test bot** pane, type one of the topic's trigger phrases to start a conversation with the bot. Enter your city and zip code when the bot asks for them. Make sure the bot returns today's weather forecast and your message looks the way you expect.
+In the **Test copilot** pane, type one of the topic's trigger phrases to start a conversation with the copilot. Enter your city and zip code when the copilot asks for them. Make sure the copilot returns today's weather forecast and your message looks the way you expect.
 
-:::image type="content" source="media/advanced-use-flow/GetWeatherE2E.png" alt-text="Screenshot of testing a bot.":::
+:::image type="content" source="media/advanced-use-flow/GetWeatherE2E.png" alt-text="Screenshot of testing a copilot.":::
 
-## Troubleshoot your bot
+## Troubleshoot your copilot
 
-[Test your bot](authoring-test-bot.md) when you make changes to topics and flows to make sure everything is working. If the bot encounters a problem during a conversation, it will respond with an [error message](error-codes.md).
+[Test your copilot](authoring-test-bot.md) when you make changes to topics and flows to make sure everything is working. If the copilot encounters a problem during a conversation, it will respond with an [error message](error-codes.md).
 
 You'll find most flow-related issues in the [Flow Checker](/power-automate/error-checker). Any issues on the authoring canvas will appear in the [topic checker](authoring-topic-management.md#topic-errors).
 
