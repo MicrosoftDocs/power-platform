@@ -29,7 +29,7 @@ These sources include:
 - Internal resources:
   - Azure OpenAI on your data
   - Documents uploaded to Dataverse
-  - SharePoint
+  - SharePoint (.aspx is not supported)
   - OneDrive for Business
   - Custom data (internal or external): Supply your own content from any source. For example, a Power Automate Flow, a Skill, or other source.
 
