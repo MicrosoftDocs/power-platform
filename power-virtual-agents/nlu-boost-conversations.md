@@ -50,7 +50,7 @@ Generative answers can use these sources:
   - [Bing Web Search](/bing/search-apis/bing-web-search/overview)—doesn't require external configuration
   - [Bing Custom Search](https://www.customsearch.ai/)—requires external configuration
 - Internal resources:
-  - SharePoint
+  - SharePoint (.aspx is not support)
   - OneDrive for Business
   - Documents uploaded to Dataverse
   - Custom data (internal or external): supply your own source, such as a Power Automate Flow or from Skill.
