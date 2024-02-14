@@ -29,7 +29,7 @@ These sources include:
 - Internal resources:
   - Azure OpenAI on your data
   - Documents uploaded to Dataverse
-  - SharePoint
+  - SharePoint 
   - OneDrive for Business
   - Custom data (internal or external): Supply your own content from any source. For example, a Power Automate Flow, a Skill, or other source.
 
@@ -80,7 +80,7 @@ Include delegated permissions for **Microsoft Graph**:
 
 Generative answers obtain content stored in these formats:
 
-- SharePoint pages (aspx pages)
+- SharePoint pages (aspx pages not suppoerted)
 - Word documents (docx)
 - PowerPoint documents (pptx)
 - PDF documents (pdf)
