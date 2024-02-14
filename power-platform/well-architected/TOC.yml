@@ -39,7 +39,7 @@
               href: reliability/disaster-recovery.md
             - name: RE:10 Monitoring and alerting
               href: reliability/monitoring-alerting-strategy.md
-            - name: RE:10 Default environment hygiene
+            - name: RE:11 Default environment hygiene
               href: reliability/default-environment-hygiene.md
       - name: Security
         items: 
