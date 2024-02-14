@@ -5,7 +5,7 @@ description: Activity logging for Power Apps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/07/2023
-author: StephenRauchPM
+author: Zeffin
 ms.subservice: admin
 ms.author: sericks 
 ms.reviewer: sericks 
