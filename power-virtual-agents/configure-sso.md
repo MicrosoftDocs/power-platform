@@ -1,6 +1,6 @@
 ---
 title: "Configure single sign-on with Microsoft Entra ID "
-description: "Enable your bot to authenticate an already-signed-in user"
+description: "Enable your copilot to authenticate an already-signed-in user."
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, Microsoft Entra ID, MSA, Identity Provider, PVA"
 ms.date: 03/24/2023
 ms.topic: article
@@ -17,24 +17,24 @@ ms.service: power-virtual-agents
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Microsoft Copilot Studio supports single sign-on (SSO), so chatbots on your website can sign customers in if they're already signed in to the page or app where the bot is deployed.
+Microsoft Copilot Studio supports single sign-on (SSO). SSO allows copilots on your website to sign customers in if they're already signed in to the page or app where the copilot is deployed.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-copilot-studio.md).
 - [Enable end-user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
-  - SSO is only supported for Microsoft Entra ID. Other account types such as Microsoft Account or other OAuth accounts are not supported.
-- [Add an authentication topic to your bot](advanced-end-user-authentication.md).
+  - SSO is only supported for Microsoft Entra ID. Other account types such as Microsoft Account or other OAuth accounts aren't supported.
+- [Add an authentication topic to your copilot](advanced-end-user-authentication.md).
 - [Use a custom canvas](customize-default-canvas.md).
 
 
-For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
+For example, the copilot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
 There are four main steps to configuring SSO for Microsoft Copilot Studio:
 
 1. Create an app registration in Microsoft Entra ID for your custom canvas.
 
-1. Define a custom scope for your bot.
+1. Define a custom scope for your copilot.
 
 1. Configure authentication in Microsoft Copilot Studio to enable SSO.
 
@@ -42,14 +42,14 @@ There are four main steps to configuring SSO for Microsoft Copilot Studio:
 
 > [!IMPORTANT]
 >
-> SSO is currently not supported when a bot has been either:
+> SSO is currently not supported when a copilot has been either:
 >
 > - Published to a [SharePoint website](publication-connect-bot-to-web-channels.md#add-bot-to-your-website).
 > - Published to a [Power Apps portal](publication-add-bot-to-power-pages.md).
 
 ## Supported channels
 
-The following table details the [channels](publication-fundamentals-publish-channels.md) that currently support SSO. You can suggest support for additional channels [at the Microsoft Copilot Studio ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
+The following table details the [channels](publication-fundamentals-publish-channels.md) that currently support SSO. You can suggest support for extra channels [at the Microsoft Copilot Studio ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 | Channel                                           | Supported     |
 |---------------------------------------------------|:-------------:|
@@ -69,7 +69,7 @@ The following table details the [channels](publication-fundamentals-publish-chan
 [6]: publication-connect-bot-to-azure-bot-service-channels.md
 [7]: configuration-hand-off-omnichannel.md
 
-<sup>1</sup> If you also have the Teams channel enabled, you need to follow the configuration instructions on the [Configure SSO for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will cause your users to always fail authentication when using the Teams channel.
+<sup>1</sup> If you also have the Teams channel enabled, you need to follow the configuration instructions on the [Configure SSO for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page causes your users to always fail authentication when using the Teams channel.
 
 <sup>2</sup> Only the live chat channel is supported. For more information, see [Configure hand-off to Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
@@ -78,15 +78,15 @@ The following table details the [channels](publication-fundamentals-publish-chan
 
 ### Create app registrations for your custom website
 
-To enable SSO, you'll need to create two separate app registrations:
+To enable SSO, you need to create two separate app registrations:
 
-- An _authentication app registration_, which enables Microsoft Entra ID user authentication for your bot
+- An _authentication app registration_, which enables Microsoft Entra ID user authentication for your copilot
 - A _canvas app registration_, which enables SSO for your custom web page
 
-We don't recommend reusing the same app registration for both your bot and your custom website for security reasons.
+We don't recommend reusing the same app registration for both your copilot and your custom website for security reasons.
 
 1. Follow the instructions in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md) to create an authentication app registration.
-1. Follow the same instructions again to create a second app registration, which will serve as your canvas app registration.
+1. Follow the same instructions again to create a second app registration, which serves as your canvas app registration.
 1. Return to this article.
 
 ### Configure your canvas app registration
@@ -103,7 +103,7 @@ We don't recommend reusing the same app registration for both your bot and your 
 
 1. Select **Configure**.
 
-### Find your bot's token endpoint URL
+### Find your copilot's token endpoint URL
 
 1. In Microsoft Copilot Studio, go to **Settings**, and then select **Channels**.
 
@@ -155,7 +155,7 @@ Use the code provided in the [Microsoft Copilot Studio GitHub repo](https://gith
 
 1. Save your changes.
 
-### Test your bot using your web page
+### Test your copilot using your web page
 
 1. Open your web page in your browser.
 
@@ -164,15 +164,15 @@ Use the code provided in the [Microsoft Copilot Studio GitHub repo](https://gith
     :::image type="content" source="media/configure-web-sso/chat-canvas-test.png" alt-text="Screenshot of logging in using validation code":::
 
    > [!NOTE]
-   > If your browser blocks popups or you are using an incognito or private browsing window, you will be prompted to log in. Otherwise, the log in will complete using a validation code.
+   > If your browser blocks popups or you are using an incognito or private browsing window, you're prompted to log in. Otherwise, the log in completes using a validation code.
 
     A new browser tab opens.
 
 1. Switch to the new tab and copy the validation code.
 
-1. Switch back to the tab with your bot, and paste the validation code into the bot conversation.
+1. Switch back to the tab with your copilot, and paste the validation code into the copilot conversation.
 
-### Related topics
+### Related articles
 
 - [Azure App Registration](/azure/active-directory/develop/quickstart-register-app)
 
@@ -185,25 +185,25 @@ The following illustration shows how a user is signed in without seeing a login 
 
 :::image type="content" source="media/configure-sso/sso-illustration.png" alt-text="Illustration of SSO authentication flow.":::
 
-1. The bot user enters a phrase that [triggers a sign-in topic](advanced-end-user-authentication.md). The sign-in topic is designed to sign the user in and use the user's [authenticated token (`AuthToken` variable)](advanced-end-user-authentication.md#authtoken-variable).
+1. The copilot user enters a phrase that [triggers a sign-in topic](advanced-end-user-authentication.md). The sign-in topic is designed to sign the user in and use the user's [authenticated token (`AuthToken` variable)](advanced-end-user-authentication.md#authtoken-variable).
 
 1. Microsoft Copilot Studio sends a login prompt to allow the user to sign in with their configured identity provider.
 
-1. The bot's [custom canvas](customize-default-canvas.md) intercepts the sign-in prompt and requests an on-behalf-of (OBO) token from Microsoft Entra ID. The canvas sends the token to the bot.
+1. The copilot's [custom canvas](customize-default-canvas.md) intercepts the sign-in prompt and requests an on-behalf-of (OBO) token from Microsoft Entra ID. The canvas sends the token to the copilot.
 
-1. On receipt of the OBO token, the bot exchanges the OBO token for an "access token" and fills in the `AuthToken` variable using the access token's value. The `IsLoggedIn` variable is also set at this time.
+1. On receipt of the OBO token, the copilot exchanges the OBO token for an "access token" and fills in the `AuthToken` variable using the access token's value. The `IsLoggedIn` variable is also set at this time.
 
 ### Create an app registration in Microsoft Entra ID for your custom canvas
 
-To enable SSO, you'll need two separate app registrations:
+To enable SSO, you need two separate app registrations:
 
-- [One for your bot to enable user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
+- [One for your copilot to enable user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
 - One for your custom canvas to enable SSO.
 
 > [!IMPORTANT]
-> You can't reuse the same app registration for both your bot's user authentication and your custom canvas.
+> You can't reuse the same app registration for both your copilot's user authentication and your custom canvas.
 
-### Create an app registration for the bot's canvas
+### Create an app registration for the copilot's canvas
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -215,17 +215,17 @@ To enable SSO, you'll need two separate app registrations:
 
     :::image type="content" source="media/configure-sso/sso-new-registration.png" alt-text="Screenshot of the app registration blade with the New registration button highlighted." border="false":::
 
-1. Enter a name for the registration. It can be helpful to use the name of the bot whose canvas you're registering and include "canvas" to help separate it from the app registration for authentication.  
+1. Enter a name for the registration. It can be helpful to use the name of the copilot whose canvas you're registering and include "canvas" to help separate it from the app registration for authentication.  
 
-    For example, if your bot is called "Contoso sales help", you might name the app registration as "ContosoSalesCanvas" or something similar.
+    For example, if your copilot is called "Contoso sales help," you might name the app registration as "ContosoSalesCanvas" or something similar.
 
 1. Select the account type under **Supported account types**. We recommend you select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant) and personal Microsoft accounts (for example Skype, Xbox)**.
 
-1. Leave the **Redirect URI** section blank for now, as you'll enter that information in the next steps. Select **Register**.
+1. Leave the **Redirect URI** section blank for now, as you enter that information in the next steps. Select **Register**.
 
     :::image type="content" source="media/configure-sso/sso-new-registration-details.png" alt-text="Screenshot showing the registration form." border="false":::
 
-1. After the registration is completed, it will open to the **Overview** page. Go to **Manifest**. Confirm that `accessTokenAcceptedVersion` is set to `2`. If it isn't, change it to `2` and then select **Save**.
+1. After the registration is completed, it opens to the **Overview** page. Go to **Manifest**. Confirm that `accessTokenAcceptedVersion` is set to `2`. If it isn't, change it to `2` and then select **Save**.
 
 ### Add the redirect URL
 
@@ -250,7 +250,7 @@ To enable SSO, you'll need two separate app registrations:
 
     :::image type="content" source="media/configure-sso/sso-grant-consent.png" alt-text="Screenshot highlight the Grant admin consent for tenant-name button." border="false":::
 
-### Define a custom scope for your bot
+### Define a custom scope for your copilot
 
 Define a custom scope by exposing an API for the canvas app registration within the authentication app registration. [Scopes](/azure/active-directory/develop/developer-glossary#scopes) allow you to determine user and admin roles and access rights.
 
@@ -258,14 +258,14 @@ This step creates a trust relationship between the authentication app registrati
 
 1. Open the app registration that you created [when you configured authentication](configuration-authentication-azure-ad.md).
 
-1. Go to **API Permissions** and ensure that the correct permissions are added for your bot. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
+1. Go to **API Permissions** and ensure that the correct permissions are added for your copilot. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
   
     > [!IMPORTANT]
     > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
 
 1. Go to **Expose an API** and select **Add a scope**.
 
-    :::image type="content" source="media/configure-sso/sso-expose-an-api-scopes.png" alt-text="Screenshot showing Expose an api and then add a scope." border="false":::
+    :::image type="content" source="media/configure-sso/sso-expose-an-api-scopes.png" alt-text="Screenshot showing Expose an API and then add a scope." border="false":::
 
 1. Enter a name for the scope, along with the display information that should be shown to users when they come to the SSO screen. Select **Add scope**.
 
@@ -285,23 +285,23 @@ Microsoft Copilot Studio calls into Microsoft Entra ID to perform the actual exc
 
 1. Sign in to Microsoft Copilot Studio.
 
-1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the correct bot.
+1. Confirm you've selected the copilot you want to enable authentication for by selecting the copilot icon on the top menu and choosing the correct copilot.
 
 1. In the navigation menu, under **Settings**, select **Security**. Then select the **Authentication** card.
 
     :::image type="content" source="media/configure-sso/auth-manage-sm.png" alt-text="Go to Manage and then Authentication." border="false":::
 
-1. Enter the full scope URI from the **Expose an API** blade for the bot's authentication app registration in the **Token exchange URL** field. The URI will be in the format of `api://1234-4567/scope.name`.
+1. Enter the full scope URI from the **Expose an API** blade for the copilot's authentication app registration in the **Token exchange URL** field. The URI is in the format of `api://1234-4567/scope.name`.
 
     :::image type="content" source="media/configure-sso/sso-api.png" alt-text="Screenshot highlighting the scope's API." border="false":::  
 
     :::image type="content" source="media/configure-sso/sso-pva-token-url.png" alt-text="Screenshot showing the authentication tab with location for the API." border="false":::
 
-1. Select **Save** and then publish the bot content.
+1. Select **Save** and then publish the copilot content.
 
 ### Configure your custom canvas HTML code to enable SSO
 
-Update the custom canvas page where the bot is located to intercept the login card request and exchange the OBO token.
+Update the custom canvas page where the copilot is located to intercept the login card request and exchange the OBO token.
 
 1. Configure the Microsoft Authentication Library (MSAL) by adding the following code into a \<script\> tag in your \<head\> section.
 
@@ -368,17 +368,17 @@ Update the custom canvas page where the bot is located to intercept the login ca
     </script>
     ```
 
-1. Insert the following \<script\> in the \<body\> section. Within the `main` method, this code adds a conditional to your `store`, with your bot's unique identifier. It also generates a unique ID as your `userId` variable.
+1. Insert the following \<script\> in the \<body\> section. Within the `main` method, this code adds a conditional to your `store`, with your copilot's unique identifier. It also generates a unique ID as your `userId` variable.
 
-1. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Microsoft Copilot Studio portal.
+1. Update `<COPILOT ID>` with your copilot's ID. You can see your copilot's ID by going to the **Channels tab** for the copilot you're using, and selecting **Mobile app** on the Microsoft Copilot Studio portal.
 
-    :::image type="content" source="media/configure-sso/sso-pva-botid.png" alt-text="Bot ID shown on the Mobile app channel configuration page." border="false":::
+    :::image type="content" source="media/configure-sso/sso-pva-botid.png" alt-text="Copilot ID shown on the Mobile app channel configuration page." border="false":::
 
     ```HTML
     <script>
         (async function main() {
 
-            // Add your BOT ID below 
+            // Add your COPILOT ID below 
             var BOT_ID = "<BOT ID>";
             var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
 
@@ -438,7 +438,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
                                 }).subscribe(
                                     id => {
                                         if (id === 'retry') {
-                                            // bot was not able to handle the invoke, so display the oauthCard
+                                            // copilot was not able to handle the invoke, so display the oauthCard
                                             return next(action);
                                         }
                                         // else: tokenexchange successful and we do not display the oauthCard
@@ -478,7 +478,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
 
 ### Full sample code
 
-For reference, you can find the full sample code, with the MSAL and store conditional scripts already included [at our GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html).
+For more information, you can find the full sample code, with the MSAL and store conditional scripts already included [at our GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html).
 
 ---
 
