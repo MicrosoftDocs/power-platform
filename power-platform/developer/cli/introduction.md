@@ -114,12 +114,6 @@ Microsoft PowerPlatform CLI
 Version: 1.30.3+g0f0e0b9
 ```
 
-### Do you need to add PAC to PATH variable in Microsoft Windows?
-
-If you need to use PAC CLI that was installed using Visual Studio Code extension, which is only available inside Visual Studio Code, you can add the path of PAC CLI (.exe) into an environment variable PATH. 
-
-Open PowerShell as Administrator, type `$env:Path += ";C:\<location of your pac command>"` and press **Enter**.
-
 ## Manage auth profiles
 
 Most PAC CLI commands require authenticated access to resources. You'll need to create and use auth profiles.
