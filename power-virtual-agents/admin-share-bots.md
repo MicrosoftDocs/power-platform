@@ -207,7 +207,7 @@ You must be a **System administrator** of the environment where the copilot is l
 
 You can assign the **Environment maker** security role when sharing a copilot with a user who doesn't have sufficient environment permissions to run Microsoft Copilot Studio.
 
-When [sharing the copilot for chat](#share-a-bot-for-chat), if the specified user doesn't have sufficient permissions to use Microsoft Copilot Studio in the environment, you are notified that the **Environment maker** security role is assigned to the user so they can use the copilot.
+When [sharing the copilot for chat](#share-a-copilot-for-chat), if the specified user doesn't have sufficient permissions to use Microsoft Copilot Studio in the environment, you are notified that the **Environment maker** security role is assigned to the user so they can use the copilot.
 
 :::image type="content" source="media/admin-share-bots/sharing-input-invitee-no-permission.png" alt-text="Share panel with permission notice bubble." border="false":::
 
@@ -222,7 +222,7 @@ Based on the content and target audience of the copilot, you may want to give tr
 >
 > In the default environment, every user has the **Copilot transcript viewer** role assigned by default. We recommend you create an environment for copilots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your copilots](./environments-first-run-experience.md#create-a-new-environment-for-your-bots)
 
-When [sharing the copilot for chat](#share-a-bot-for-chat), you can assign the **Copilot transcript viewer** role by selecting the checkbox.
+When [sharing the copilot for chat](#share-a-copilot-for-chat), you can assign the **Copilot transcript viewer** role by selecting the checkbox.
 
 :::image type="content" source="media/admin-share-bots/sharing-assign-transcript-viewer.png" alt-text="Share panel with Copilot transcript viewer role selected." border="false":::
 
