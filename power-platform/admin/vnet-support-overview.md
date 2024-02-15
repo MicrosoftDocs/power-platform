@@ -55,6 +55,10 @@ Power Platform supports Dataverse plug-in scenarios. With a virtual network, you
 
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
 
+### Limitations
+- [Low code plug-ins](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant) using connectors will not be supported on virtual network until those connector types are onboarded to subnet delegation.
+- In few cases, [Dependent assemblies plug-ins](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/build-and-package#dependent-assemblies) may not work as expected. We are working on enabling support of it.
+  
 ## Supported regions
 
 Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions, respectively. For example, if your Power Platform environment is in the United States, then your virtual network, subnets and enterprise policy must be either in the `eastus` or `westus` Azure region.
@@ -126,13 +130,13 @@ A virtual network data gateway continues to support ETL (extract, transform, loa
 
 #### Azure Virtual Network support
 
-Virtual Network support in Power Platform uses an Azure subnet delegation for your Power Platform environment. Subnets are used by workloads within the environment.
+Virtual Network support in Power Platform uses an Azure subnet delegation for your Power Platform environment. Subnets are used by workloads within the Power Platform environment.
 
 Virtual Network support is used for Power Platform API workloads as the requests are short lived and optimized for a large number of requests.
 
 ### 2. How can you ensure a virtual network subnet or data gateway from one customer isn't used by another customer in Power Platform?
 
-Virtual Network support in Power Platform ensures customer privacy due to:
+Virtual Network support in Power Platform ensures customer connectivity privacy by ensuring that:
 
 - Virtual Network support in Power Platform uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview).
 
@@ -160,28 +164,22 @@ At least 24 Classless Inter-domain Routing (CIDR), or 255 IPs, is required in th
 
 Yes. You can make internet bound calls from plugins _only_ if the subnet is configured with a [NAT Gateway](/azure/nat-gateway/nat-overview).
 
-### 8. Can I use vNet data gateway for SQL connectors and custom connectors?
-
-Virtual Network using Azure subnet delegation is the only supported option for SQL and custom connectors for outbound connectivity from Power Platform.
-
-### 9. Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
+### 8. Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
 No. You can't update the IP address range of the subnet once it's delegated to "Microsoft.PowerPlatform/enterprisePolicies."
 
-## FAQ - Dataverse plug-in and subnet delegation questions
+### 9. My virtual network has a custom DNS configured. Does Power Platform use my custom DNS?  
 
-### 1. My virtual network has a custom DNS configured. Does Power Platform use my custom DNS?  
+Yes, Power Platform uses the custom DNS configured within the virtual network that holds the delegated subnet to resolve all the endpoints. Once the environment is delegated, you can update plug-in to use the correct endpoint so that your custom DNS is able to resolve them.
 
-Yes, Power Platform uses the custom DNS configured within the virtual network that holds the delegated subnet to resolve all the endpoints. Once the environment is delegated, you can update plug-in or connector code to use the correct endpoint so that your custom DNS is able to resolve them.
-
-### 2. My environment has ISV-provided plugins. Would these plug-ins run in the delegated subnet?  
+### 10. My environment has ISV-provided plugins. Would these plug-ins run in the delegated subnet?  
 
 Yes. All customer plug-ins and ISV plug-ins can run, using your subnet. If the ISV plug-ins have outbound connectivity, those URLs might need to be listed in your firewall.
 
-### 3. My on-premises endpoint TLS certificates aren't signed by well-known root certification authorities (CA). Do you support unknown certificates?
+### 11. My on-premises endpoint TLS certificates aren't signed by well-known root certification authorities (CA). Do you support unknown certificates?
 
 No. We must ensure the endpoint presents a TLS certificate with the complete chain.  It's not possible to add your custom root CA to our list of well-known CAs.
 
-### 4. What's the recommended setup of a virtual network within a customer tenant?
+### 12. What's the recommended setup of a virtual network within a customer tenant?
 
 We don't recommend any specific topology, however the hub and spoke topology network model is widely used by our customers.
