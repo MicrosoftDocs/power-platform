@@ -13,9 +13,13 @@ ms.custom: "admin-security"
 
 # Set up and configure Virtual Network support for Power Platform (preview)
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 This article helps you enable Azure Virtual Network support for Power Platform environments.
 
 ## Prerequisites
+
+In this section, learn about the prerequisites when enabling Azure Virtual Network support for your environment.
 
 ### Prepare your tenant
 

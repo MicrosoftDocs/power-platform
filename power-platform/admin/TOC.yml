@@ -610,7 +610,7 @@
                   href: restrict-access-online-trusted-ip-rules.md
                 - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
-            - name: Virtual Network support
+            - name: Virtual Network support (preview)
               items:
                 - name: Virtual Network support overview
                   href: vnet-support-overview.md

@@ -1,5 +1,5 @@
 ﻿---
-title: Virtual Network support for Power Platform overview
+title: Virtual Network support for Power Platform overview (preview)
 description: "Learn more about Azure Virtual Network support for Power Platform."
 ms.date: 2/15/2024
 ms.topic: overview
@@ -13,8 +13,9 @@ ms.custom: "admin-security"
 
 # Virtual Network support for Power Platform overview (preview)
 
-The [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform helps you integrate from Microsoft Power Platform to resources within your virtual network without exposing your resources over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic at runtime from Power Platform. Therefore, you don't need to expose your protected resources over the internet to integrate with Power Platform.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
+The [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform helps you integrate from Microsoft Power Platform to resources within your virtual network without exposing your resources over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic at runtime from Power Platform. Therefore, you don't need to expose your protected resources over the internet to integrate with Power Platform.
 
 Using Virtual Network, you can:
 
@@ -24,6 +25,8 @@ Using Virtual Network, you can:
 - Use plug-ins to make outbound calls.
 
   For example, a call from a Dataverse plug-in is made to a Snowflake instance hosted on Azure.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Introduction to virtual network support for Power Platform
 
