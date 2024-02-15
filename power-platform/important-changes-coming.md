@@ -8,9 +8,9 @@ searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-author: v-aangie
-ms.author: angieandrews
-ms.reviewer: angieandrews
+author: sericks007
+ms.author: sericks
+ms.reviewer: sericks
 ---
 
 # Important changes (deprecations) coming in Power Platform
