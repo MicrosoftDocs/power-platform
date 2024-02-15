@@ -92,21 +92,21 @@ OpenAI plugins | [Open AI plugins](https://platform.openai.com/docs/plugins/intr
 
 End users in your tenant can use conversational and AI plugins in their chats with Microsoft Copilot if:
 
-1. Your Microsoft 365 tenant admin deploys the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center.
+1. Your Microsoft 365 tenant admin deploys the Microsoft Copilot Studio app in the Microsoft 365 admin center.
 
 1. The end user enables the connection from within their chat with Microsoft Copilot.
 
-### Deploy the Dynamics 365 and Copilot Studio app (admin)
+### Deploy the Microsoft Copilot Studio app (admin)
 
 1. Sign in to the Microsoft 365 admin center with your admin account.
 
 1. Expand **Settings** on the side navigation pane and select **Integrated apps**.
 
-1. Go to the **Available apps** tab and select the entry **Dynamics 365 and Copilot Studio**. The app's details pane opens.
+1. Go to the **Available apps** tab and select the entry **Microsoft Copilot Studio**. The app's details pane opens.
 
 1. Select **Deploy** to enable the app in chats with Microsoft Copilot.
 
-![Deploying the Dynamics 365 and Copilot Studio app](media/copilot-plugins-overview/deploy-dynamics365-and-copilot-studio.png)
+![Deploying the Copilot Studio app](media/copilot-plugins-overview/deploy-dynamics365-and-copilot-studio.png)
 
 ### Enable the connection in Microsoft Copilot
 
