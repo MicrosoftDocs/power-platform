@@ -1,13 +1,13 @@
 ---
 title: "Responsible AI FAQs for Microsoft Power Platform"
 description: "Responsible AI FAQs discusses AI technology in Power Platform and the key considerations for making use of this technology responsibly."
-author: rickcatMSFT 
+author: tapanm-MSFT
 ms.date: 05/23/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
-ms.author: rickcatalano
-ms.reviewer: rickcatalano
+ms.author: tapanm
+ms.reviewer: tapanm
 ms.collection: bap-ai-copilot
 ---
 
