@@ -300,4 +300,10 @@ IfError( If( CustomConnector.APICall() = "Forest",
 ```
 Directs the app based on an API call to either `ForestScreen` or `OceanScreen`.  If the API fails for any reason, the `ErrorScreen` is used instead.
 
+## StudioVersion property
+
+Use the **StudioVersion** property to display or log the version of Power Apps Studio that was used to publish an app.  This can be useful when debugging and to ensure your app has been re-published with a recent version of Power Apps Studio.
+
+**StudioVersion** is returned as text. The format of the text may change over time and should be treated as a whole; avoid extracting individual portions.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
