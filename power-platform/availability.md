@@ -1,7 +1,7 @@
 ---
 title: "International availability of Microsoft Power Platform"
 description: "Learn about product availability, customer data locations, and languages for the Microsoft Power Platform family of applications by downloading the linked PDF."
-author: kvivek 
+author: rickcatMSFT
 ms.date: 12/05/2022
 ms.topic: article
 ms.subservice: admin

@@ -8,8 +8,8 @@ searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-author: KumarVivek
-ms.author: kvivek
+author: v-aangie
+ms.author: angieandrews
 ms.reviewer: angieandrews
 ---
 
