@@ -1,7 +1,7 @@
 ﻿---
 title: Setup and Configure vNet Support for Power Platform
 description: Learn how to setup and configure vNet support for Power Platform.
-ms.date: 2/1/2024
+ms.date: 2/15/2024
 ms.topic: overview
 ms.component: pa-admin
 ms.subservice: admin
