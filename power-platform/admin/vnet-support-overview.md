@@ -108,11 +108,11 @@ Before enabling Virtual Network support in Power Platform:
 
 ### Considerations
 
-When you enable Virtual Network support in a Power Platform environment, all supported services, like a Dataverse plug-ins or a SQL connector, execute requests at runtime in your delegated subnet. Once enabled, your services are subjected to your network policies.
+When you enable Virtual Network support in a Power Platform environment, all supported services, like a Dataverse plug-ins, execute requests at runtime in your delegated subnet. Once enabled, your services are subjected to your network policies.
 
-For example, a SQL connector might try to connect to SQL through the public internet, but your network policy doesn't allow public connections to the SQL server in your virtual network. The call from the SQL connector fails.
+For example, a Plugin might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your virtual network. The call from the plugin will be blocked as per your network policy.
 
-To avoid a failed connection, you can add a SQL server to your virtual network. Alternatively, if the server is in Azure, you can enable a private endpoint on Azure SQL before you enable your virtual network support in a Power Platform environment.
+To avoid a failure of call from your plugin, you can host the publicly available service within your virtual network. Alternatively, if your service is hosted in Azure, you can enable a private endpoint on service before you enable your virtual network support in a Power Platform environment.
 
 ### Setup and configuration
 
