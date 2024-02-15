@@ -8,7 +8,6 @@ ms.author: iawilt
 manager: leeclontz
 
 ms.reviewer: mainguy
-ms.service: power-virtual-agents
 ---
 
 # Microsoft Copilot Studio messages and capacity management

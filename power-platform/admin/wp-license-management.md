@@ -9,7 +9,7 @@ ms.collection: get-started
 ms.date: 11/02/2021
 ms.subservice: admin
 ms.author: dileeps
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

@@ -8,7 +8,6 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.custom: admin, dlp
-ms.service: power-virtual-agents
 
 ---
 

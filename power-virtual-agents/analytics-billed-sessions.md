@@ -9,7 +9,6 @@ ms.author: iawilt
 manager: leeclontz
 ms.custom: analysis, licensing, ceX, bap-template
 
-ms.service: power-virtual-agents
 ---
 
 # View billed sessions

@@ -2,7 +2,7 @@
 title: "Create a Dataverse application user (preview) | Microsoft Docs"
 description: Power Platform API Reference - Create a Dataverse application user
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference

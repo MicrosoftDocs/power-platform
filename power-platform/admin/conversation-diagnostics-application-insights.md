@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ms.contributors:
 - avkatiyar
-- StephenRauchPM
+- Zeffin
 ---
 
 # Conversation diagnostics in Azure Application Insights (preview)

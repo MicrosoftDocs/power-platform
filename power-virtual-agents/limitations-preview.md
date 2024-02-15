@@ -7,10 +7,8 @@ ms.topic: overview
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
-ms.service: power-virtual-agents
 
-searchScope:
-  - "Power Virtual Agents"
+
 ms.custom: bap-template
 ---
 
