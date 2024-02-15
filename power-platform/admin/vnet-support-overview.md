@@ -1,7 +1,7 @@
 ﻿---
 title: Virtual Network support for Power Platform overview
 description: "Learn more about Azure Virtual Network support for Power Platform."
-ms.date: 2/1/2024
+ms.date: 2/15/2024
 ms.topic: overview
 ms.component: pa-admin
 ms.subservice: admin
