@@ -63,7 +63,6 @@ Users in the Azure Network Administrator role need to set up a virtual network a
 
 > [!NOTE]
 > Power Platform doesn't support the CENTRAL US region.
->
 > Find your [virtual network location](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/SubnetInjection/ValidateVnetLocationForEnterprisePolicy.ps1).
 
 1. Configure Virtual Network and subnets through the [Add or remove a subnet delegation in an Azure Virtual Network](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal) article.
