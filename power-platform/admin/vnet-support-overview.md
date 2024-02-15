@@ -59,8 +59,8 @@ Power Platform supports Dataverse plug-in scenarios. With a virtual network, you
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
 
 ### Limitations
-- [Low code plug-ins](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant) using connectors will not be supported on virtual network until those connector types are onboarded to subnet delegation.
-- In few cases, [Dependent assemblies plug-ins](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/build-and-package#dependent-assemblies) may not work as expected. We are working on enabling support of it.
+- [Dataverse low code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins) using connectors will not be supported on virtual network until those connector types are onboarded to subnet delegation.
+- In few cases, [Dependent assemblies plug-ins](/power-apps/developer/data-platform/build-and-package#dependent-assemblies) may not work as expected. We are working on enabling support for it.
   
 ## Supported regions
 
