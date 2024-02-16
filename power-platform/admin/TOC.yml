@@ -710,7 +710,7 @@
               href: logging-power-automate.md
             - name: Power Pages activity logging (preview)
               href: logging-power-pages.md
-            - name: Power Platform connector activity logging (preview)
+            - name: Power Platform connector activity logging
               href: connector-events-power-platform.md
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
@@ -718,7 +718,7 @@
               href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
-            - name: View Power Platform administrative logs in Microsoft Purview (preview)
+            - name: View Power Platform administrative logs in Microsoft Purview
               href: admin-activity-logging.md
         - name: Programmability and extensibility
           items:

@@ -1,5 +1,5 @@
 ---
-title: View Power Platform administrative logs using auditing solutions in Microsoft Purview (preview)
+title: View Power Platform administrative logs using auditing solutions in Microsoft Purview
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -14,9 +14,7 @@ ms.contributors:
  - drkestel
 ---
 
-# View Power Platform administrative logs using auditing solutions in Microsoft Purview (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# View Power Platform administrative logs using auditing solutions in Microsoft Purview
 
 Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
 
@@ -26,8 +24,6 @@ In this article, you learn about activities that are performed on Power Platform
 - [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
 
 > [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Administrative activities for Power Platform environments are enabled by default on all tenants. You can't disable activity collection.
 > - At least one user with an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview. More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 
