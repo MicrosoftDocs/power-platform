@@ -610,6 +610,12 @@
                   href: restrict-access-online-trusted-ip-rules.md
                 - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
+            - name: Virtual Network support (preview)
+              items:
+                - name: Virtual Network support overview
+                  href: vnet-support-overview.md
+                - name: Set up and configure Virtual Network support
+                  href: vnet-support-setup-configure.md
             - name: Security FAQs
               href: security/faqs.md
         - name: Analytics
@@ -680,8 +686,8 @@
                   href: subscription-tracking-deleted-object-retention.md
             - name: Add storage capacity
               href: add-storage.md
-            - name: Access storage with SAS token
-              href: storage-sas-token.md
+            - name: Access storage
+              href: access-storage.md
         - name: Resources
           items:
             - name: Overview
@@ -704,7 +710,7 @@
               href: logging-power-automate.md
             - name: Power Pages activity logging (preview)
               href: logging-power-pages.md
-            - name: Power Platform connector activity logging (preview)
+            - name: Power Platform connector activity logging
               href: connector-events-power-platform.md
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
@@ -712,7 +718,7 @@
               href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
-            - name: View Power Platform administrative logs in Microsoft Purview (preview)
+            - name: View Power Platform administrative logs in Microsoft Purview
               href: admin-activity-logging.md
         - name: Programmability and extensibility
           items:
