@@ -147,7 +147,7 @@ Get-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID>
 
 #### Use auditing or "soft" mode to see DLP errors in the Microsoft Copilot Studio web or Teams apps
 
-Run the following PowerShell script to enable DLP policies in auditing mode. Bot makers will see DLP-related errors when configuring bots in the Microsoft Copilot Studio web and Teams apps, but they won't be blocked from performing DLP-related actions. They can also publish bots as usual.
+Run the following PowerShell script to enable DLP policies in auditing mode. Bot makers will see DLP-related errors when configuring bots in the Microsoft Copilot Studio web and Teams apps, but they won't be blocked from performing actions, however, publishing bots is not allowed.
 
 ```PowerShell
 Set-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID> -Mode SoftEnabled
