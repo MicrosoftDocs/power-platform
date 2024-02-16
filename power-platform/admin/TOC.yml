@@ -710,7 +710,7 @@
               href: logging-power-automate.md
             - name: Power Pages activity logging (preview)
               href: logging-power-pages.md
-            - name: Power Platform connector activity logging (preview)
+            - name: Power Platform connector activity logging
               href: connector-events-power-platform.md
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
