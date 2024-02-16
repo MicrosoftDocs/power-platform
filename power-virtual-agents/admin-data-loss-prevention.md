@@ -59,7 +59,7 @@ The following Microsoft Copilot Studio connectors are available in the Power Pla
 
 To help you get started with Microsoft Copilot Studio copilot governance, we created the following examples that detail different scenarios:
 
-- [Example: Use DLP to require end-user authentication for Microsoft Copilot Studio copilot](dlp-example-3.md)
+- [Example: Use DLP to require end-user authentication for Microsoft Copilot Studio copilots](dlp-example-3.md)
 - [Example: Use DLP to block Power Platform Connectors](dlp-example-4.md)
 - [Example: Use DLP to block HTTP requests from Microsoft Copilot Studio copilots](dlp-example-2.md)
 - [Example: Use DLP to block skills in Microsoft Copilot Studio copilots](dlp-example-1.md)
@@ -100,7 +100,7 @@ You may also decide to exempt one or more copilots from DLP policy enforcement, 
 
 You can configure an email and learn-more link using the `Set-PowerAppDlpErrorSettings` PowerShell cmdlet. Your copilot makers will see this information when they experience DLP errors.
 
-:::image type="content" source="media/admin-datacopilot-loss-prevention/image2.png" alt-text="Screenshot of the Microsoft Copilot Studio web app showing a DLP related error  with error text highlighted ":::
+:::image type="content" source="media/admin-data-loss-prevention/image2.png" alt-text="Screenshot of the Microsoft Copilot Studio web app showing a DLP related error with error text highlighted.":::
 
 To add the email and learn-more link for the first time, run the following PowerShell script, replacing the values for the `<email>`, `<URL>`, and `<tenant ID>` parameters with your own.
 
