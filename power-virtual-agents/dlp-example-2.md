@@ -17,7 +17,7 @@ ms.service: power-virtual-agents
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Copilot makers in your organization can make HTTP requests with the [Send HTTP request node](authoring-http-node.md) or by [extending (classic) copilots with Bot Framework Composer](advanced-bot-framework-composer.md). 
+Copilot makers in your organization can make HTTP requests with the [Send HTTP request node](authoring-http-node.md) or by [extending **Classic** chatbots with Bot Framework Composer](advanced-bot-framework-composer.md). 
 
 You can use data loss prevention policies to prevent copilot makers from configuring HTTP requests to help prevent data exfiltration.
 
