@@ -36,7 +36,16 @@ The capability is continually evaluated on a collection of manually curated ques
 
 - You must enable the **generative answers** option for each copilot.
 
-- [Languages other than English aren't supported](authoring-language-support.md). Inaccurate responses may be returned when users converse with the system in languages other than English.
+- Generative answers currently support the following languages. You may be able to use other lanagauges, but the answers generated might be inconsistent and the copilot might not respond properly or as you expect.
+  - Danish
+  - Dutch
+  - English
+  - French
+  - German
+  - Italian
+  - Norwegian
+  - Portuguese (Brazil)
+  - Spanish
 
 - This capability may be subject to usage limits or capacity throttling.
 
