@@ -23,7 +23,7 @@ Copilots include next-generation AI features that supersede or replace the featu
 You can use these AI features for backwards compatibility with older copilots and support some scenarios. In most cases, you should [create or convert your copilots with the unified authoring canvas](unified-authoring-conversion.md) to get the best implementation of multiple AI technologies.
 
 > [!IMPORTANT]
-> [Generative AI features](nlu-gpt-overview.md), such as [generative answers](nlu-boost-conversations.md) and [natural language understanding](nlu-authoring.md), are only available if you create or convert a copilot [using the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-microsoft-copilot-studio) in the Copilot Studio web app.
+> [Generative AI features](nlu-gpt-overview.md), such as [generative answers](nlu-boost-conversations.md) and [natural language understanding](nlu-authoring.md), are only available if you create or convert a copilot [using the unified authoring canvas](unified-authoring-conversion.md) in the Copilot Studio web app.
 
 ## Prerequisites
 
