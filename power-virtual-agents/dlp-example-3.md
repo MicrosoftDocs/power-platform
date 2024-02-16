@@ -1,6 +1,6 @@
 ---
-title: "Use DLP to require chatbot users to be authenticated"
-description: "Block unauthenticated end users from interacting with chatbots."
+title: "Use DLP to require copilot users to be authenticated"
+description: "Block unauthenticated end users from interacting with copilots."
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -17,15 +17,15 @@ ms.service: power-virtual-agents
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-The Microsoft Copilot Studio bot comes with the **Only for Teams and Power Apps** authentication option turned on. The bot automatically uses Microsoft Entra ID authentication for Teams and Power Apps without requiring any manual setup and only lets you chat with your bot on Teams. However, bot makers in your organization can select **No authentication** authentication option to allow anyone with the link to chat with your bot.
+The Microsoft Copilot Studio copilot comes with the **Only for Teams and Power Apps** authentication option turned on. The copilot automatically uses Microsoft Entra ID authentication for Teams and Power Apps without requiring any manual setup and only lets you chat with your copilot on Teams. However, copilot makers in your organization can select **No authentication** authentication option to allow anyone with the link to chat with your copilot.
 
 :::image type="content" source="media/dlp-example-3/update-auth1.png" alt-text="Screenshot of the authentication configuration panel with the 'Only for Teams' and 'Manual' options highlighted.":::
 
-You can use data loss prevention (DLP) policies to block your bot makers from configuring and publishing chatbots that aren't configured for authentication to help prevent data exfiltration.
+You can use data loss prevention (DLP) policies to block your copilot makers from configuring and publishing copilots that aren't configured for authentication to help prevent data exfiltration.
 
-Bot makers will need to [configure end-user authentication with Teams or Microsoft Entra ID in Microsoft Copilot Studio](configuration-end-user-authentication.md) if you use this connector in an enforced DLP policy.
+Copilot makers will need to [configure end-user authentication with Teams or Microsoft Entra ID in Microsoft Copilot Studio](configuration-end-user-authentication.md) if you use this connector in an enforced DLP policy.
 
-See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](admin-data-loss-prevention.md) topic for information about other DLP-related connectors.
+See the [Configure data loss prevention for Microsoft Copilot Studio copilots](admin-data-loss-prevention.md) topic for information about other DLP-related connectors.
 
 ## Configure DLP to require authentication in the Power Platform admin center
 
@@ -48,7 +48,7 @@ See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](a
     :::image type="content" source="media/dlp-example-3/scope-step.png" alt-text="Screenshot of the scope step where one or more environments are chosen.":::
 
     > [!NOTE]
-    > If the policy has a tenant scope, DLP policy will apply to all bots.
+    > If the policy has a tenant scope, DLP policy will apply to all copilots.
 
 1. Review your policy, then select **Update policy** to apply the DLP changes.
 
@@ -58,13 +58,13 @@ See the [Configure data loss prevention for Microsoft Copilot Studio chatbots](a
 
 You can confirm that this connector is being used in the DLP policy from the Microsoft Copilot Studio web app.
 
-First, open your bot from the environment where the DLP policy is applied.
+First, open your copilot from the environment where the DLP policy is applied.
 
 If the policy is enforced, you'll see an error banner with a **Go to Authentication** button, and a message advising you to contact an admin or configure authentication.
 
 :::image type="content" source="media/dlp-example-3/policy-enforcement-banner.png" alt-text="Screenshot of the banner that indicates DLP policies are in effect  and that authentication must be configured.":::
 
-The bot maker can select the **Go to Authentication** button to be taken directly to the **Authentication** configuration panel. Here, they'll need to configure **Only for Teams** or **Manual** (**Azure Active Directory** or **Azure Active Directory v2**) for the end-user to chat with the bot.
+The copilot maker can select the **Go to Authentication** button to be taken directly to the **Authentication** configuration panel. Here, they'll need to configure **Only for Teams** or **Manual** (**Azure Active Directory** or **Azure Active Directory v2**) for the end-user to chat with the copilot.
 
 :::image type="content" source="media/dlp-example-3/update-auth1.png" alt-text="Screenshot of the authentication configuration panel with the 'Only for Teams' and 'Manual' options highlighted.":::
 

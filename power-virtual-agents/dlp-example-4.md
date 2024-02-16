@@ -43,9 +43,9 @@ See the [Configure data loss prevention for Microsoft Copilot Studio](admin-data
 
 You can confirm that this connector is being used in the DLP policy from Microsoft Copilot Studio.
 
-First, open your bot from the environment where the DLP policy is applied. Go to the authoring canvas, create a new topic, add a **Call an action** node, select **Connectors Preview**, choose your blocked connection and then save your topic.
+First, open your copilot from the environment where the DLP policy is applied. Go to the authoring canvas, create a new topic, add a **Call an action** node, select **Connectors Preview**, choose your blocked connection and then save your topic.
 
-Navigate to the **Publish** page and, if the policy is enforced, you'll see an error. The error says "Your bot may not work as intended right now due to your organization's data loss prevention policies."
+Navigate to the **Publish** page and, if the policy is enforced, you'll see an error. The error says "Your copilot may not work as intended right now due to your organization's data loss prevention policies."
 
 :::image type="content" source="media/dlp-example-4/DLPWeather.png" alt-text="Screenshot of the Publish page with an error message indicating a violation with organization DLP policies.":::
 
