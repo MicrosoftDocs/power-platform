@@ -22,19 +22,19 @@ The Copilot Studio service is governed by your commercial license agreements, in
 
 The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform compliance information. Learn more at [Copilot Studio Compliance Offerings](admin-certification.md).
 
-Furthermore, Power Platform has an extensive set of [Data Loss Prevention features](/power-platform/admin/prevent-data-loss) to help you manage the security of your data. Learn how to [Configure Data Loss Prevention policies for bots](admin-data-loss-prevention.md) in your organization.
+Furthermore, Power Platform has an extensive set of [Data Loss Prevention features](/power-platform/admin/prevent-data-loss) to help you manage the security of your data. Learn how to [Configure Data Loss Prevention policies for copilots](admin-data-loss-prevention.md) in your organization.
 
 To further govern and secure Copilot Studio using generative AI features in your organization, you can do the following,
 
-1.  Disable bot publishing:
+1.  Disable copilot publishing:
 
-    -   Your admin can disable the ability to publish bots with generative answers and actions for your tenant in the **Power Platform admin center**.  
+    -   Your admin can disable the ability to publish copilots with generative answers and actions for your tenant in the **Power Platform admin center**.  
 
-        ![Screenshot showing the option to disable bot publishing.](media/security-governance/disable-bot-publishing.png)
+        ![Screenshot showing the option to disable copilot publishing.](media/security-governance/disable-bot-publishing.png)
 
     -   Your admin can disable Copilot for your organization by creating a support request.
 
-2.  [Disable data movement across geographic locations for Copilot Studio generative AI features outside the United States](manage-data-movement-outside-us.md#disable-data-across-geographic-locations-outside-the-united-states)). 
+2.  [Disable data movement across geographic locations for Copilot Studio generative AI features outside the United States](manage-data-movement-outside-us.md#disable-data-across-geographic-locations-outside-the-united-states). 
 
 3.  [Enable Copilot Studio conversational plugins](copilot-conversational-plugins.md).
 

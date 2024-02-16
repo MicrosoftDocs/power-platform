@@ -37,7 +37,7 @@ Microsoft Copilot Studio is a Core Online Service, as defined in the [Online Ser
 
 Microsoft Copilot Studio is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement (BAA).
 
-You can create chatbots that handle protected health information when your organization is bound by HIPAA, as in the following scenarios where the chatbot can:
+You can create copilots that handle protected health information when your organization is bound by HIPAA, as in the following scenarios where the copilot can:
 
 - Ask individuals to provide their health information (blood pressure, weight, and so on).
 - Capture health information and personally identifying information, such as the customer's IP address or email address.
@@ -158,4 +158,3 @@ In 2007, the Spanish government enacted Law 11/2007, which established a legal f
 The goal of the framework is to build trust in the provision of electronic services, and ensure the access, integrity, availability, authenticity, confidentiality, traceability, and preservation of data, information, and services.
 
 [Learn more about ENS](/compliance/regulatory/offering-ens-spain).
-
