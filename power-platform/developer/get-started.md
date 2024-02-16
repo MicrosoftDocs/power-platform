@@ -6,7 +6,7 @@ ms.subservice: developer
 ms.author: marcelbf
 ms.custom: ""
 ms.date: 11/09/2022
-ms.reviewer: kvivek
+ms.reviewer: jdaly
 ms.topic: "article"
 search.audienceType: 
   - developer

@@ -97,6 +97,10 @@ Other elements include:
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
+**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+
+**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+
 **[Compass](reference/signals.md)** – Returns your compass heading.
 
 **[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.

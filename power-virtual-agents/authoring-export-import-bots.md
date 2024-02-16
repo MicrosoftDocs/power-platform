@@ -10,7 +10,6 @@ ms.author: iawilt
 ms.reviewer: digantak
 manager: leeclontz
 ms.custom: "customization, ceX"
-ms.service: power-virtual-agents
 
 ---
 

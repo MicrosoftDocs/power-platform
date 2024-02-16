@@ -7,7 +7,6 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
-ms.service: power-virtual-agents
 
 ms.custom: "multi-geo, ce06102020"
 ---

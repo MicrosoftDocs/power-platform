@@ -2,7 +2,7 @@
 title: "Policies and Communications for Power Platform and Dynamics 365 Services | MicrosoftDocs"
 description: "Policies and Communications for incidents provided for Microsoft 365 services."
 author: astockli
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/03/2022
