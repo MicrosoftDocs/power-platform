@@ -71,7 +71,7 @@ You can, however, create additional environments by using the [Power Platform Ad
       > The environment needs to be created in a supported region, otherwise you won't be able to use it when creating a copilot.
       > More information: [Supported data locations](./data-location.md).
 
-1. Specify the details of the dataverse, such as the language, currency type, and security group and then select **Save**.
+1. Specify the details of the Dataverse data store, such as the language, currency type, and security group and then select **Save**.
 
 1. You'll be returned to the **Environments** tab. Select **Refresh** to see the environment. You'll also see a notice explaining that it may take a few minutes to fully create the environment.
 
@@ -79,7 +79,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 
 ## Create a copilot in an existing environment
 
-To create a copilot in an existing environment, select the environment in the  environment switcher near the right side of the header..
+1. Select the environment in the environment switcher on the top menu bar.
 
 ### Create a copilot in an existing environment where you don't have access
 
@@ -87,25 +87,21 @@ To create a copilot in an environment where you don't have access, you'll need t
 
 1. Create a copilot in the environment (this step will install the necessary Microsoft Copilot Studio solutions).
 
-1. Assign the security role of "copilot author" to you in the environment. More information: [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
+1. [Assign the security role of "copilot author" to yourself](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user) in the environment.
 
-You can then return to the [Microsoft Copilot Studio portal](https://web.powerva.microsoft.com) and create a copilot in the environment.
+1. Return to the [Microsoft Copilot Studio portal](https://copilotstudio.microsoft.com) and create a copilot in the environment.
 
-More information:
-
-- [Power Platform - Environments overview](/power-platform/admin/environments-overview)
-- [Power Platform - Configure environment security](/power-platform/admin/database-security)
 
 ## Trial environments
 
 When you trial Microsoft Copilot Studio, you can create trial environments that expire after 30 days. When the environment expires, all the copilots in the environment will be deleted. The data associated with the copilot, including any flows and resources you have been using, will be lost.
 
-If you have created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Microsoft Copilot Studio portal, you'll also see a notification if you have copilots created in a trial environment that is going to expire in less than two weeks.
+If you've created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Microsoft Copilot Studio portal, you'll also see a notification if you have copilots created in a trial environment that is going to expire in less than two weeks.
 
 :::image type="content" source="media/environments-first-run-experience/ennvironemnt_expiration_notification.png" alt-text="Environment expiration notification.":::
 
-> [!NOTE]
-> Note that there is a difference between an expiring environment and an expiring license. If your license is expiring, you will be able to extend it without losing any data. More information: [Sign up for a Microsoft Copilot Studio trial](sign-up-individual.md#trial-expiration).
+> [!IMPORTANT]
+> There's a difference between an expiring environment and an expiring license. If your license is expiring, you can [extend it without losing any data](sign-up-individual.md#trial-expiration).
 
 ## Converting a trial environment to a production environment
 
@@ -142,4 +138,8 @@ Your environment might not show up in the drop-down menu due to one of the follo
 - The environment doesn't have a database created. To resolve this issue, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
 - The environment is created in an unsupported region. More information: [Supported data locations](data-location.md).
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+
+## Related links
+
+- [Power Platform - Environments overview](/power-platform/admin/environments-overview)
+- [Power Platform - Configure environment security](/power-platform/admin/database-security)
