@@ -51,7 +51,7 @@ Creating inspiring use cases is a key part of beginning your copilot building jo
 
 The program includes:
 
-1. Interested employees participate in a [Copilot Studio in a Day](https://learn.microsoft.com/training/paths/power-virtual-agents-workshop/) training where they learn the fundamentals of conversational copilot building.
+1. Interested employees participate in a [Copilot Studio in a Day](/training/paths/power-virtual-agents-workshop/) training where they learn the fundamentals of conversational copilot building.
 1. Once attendees have experience building copilots, split the training group into small teams of two to three people.
 1. Allow teams to identify moments in the use case they could solve using a copilot.
 1. Each team should establish milestones over a four-week period that includes activities for each team member. This practice is similar to a project plan.
