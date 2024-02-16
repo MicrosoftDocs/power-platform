@@ -30,9 +30,6 @@ You can use templates created by the Copilot Studio team to help you create and 
 
 The Employee FAQ copilot template helps you create a copilot to handle your employee's most common questions. The template adds content that matches your business needs.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFMe0]
->
-
 The template can log an employee's escalation request, notify a human expert, and prompt a quick response to the employee—all within Teams.
 
 The copilot obtains employee feedback so you can make improvements to the copilot over time.
