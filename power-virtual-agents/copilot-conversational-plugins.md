@@ -43,7 +43,7 @@ Unlike a traditional component model that creates a hard-coded integration point
 > 1. Responses will be limited to text, no media or adaptive cards will be supported
 > 1. In this preview, Copilot Studio will not be able to authenticate the user, so SharePoint and Onedrive sources for generative answers will not be functional.
 > 1. This preview will be limited to English language copilots.
-> 1. All users of Microsoft Copilot within your organization will be able to interact with the copilot, the copilot will not support authenticating the user itself
+> 1. All users of Microsoft Copilot within your organization will be able to interact with the copilot, the copilot will not support authorizing the user itself
 > 1. If your Dataverse Environment has a security group assigned, the Plugin may not be visible or work in M365 Chat.
 
 ## Creating a basic conversational plugin to publish to Microsoft Copilot
