@@ -61,7 +61,7 @@ To add the localization strings to your multilingual copilot:
 
     > [!NOTE]
     > The downloaded file will contain the latest localization content for the copilot.
-    > If you need to download previous versions of the localization file, [open the copilot's solution in Power Apps to download previous versions](authoring-export-import-bots.md?tabs=webApp#add-components-to-a-chatbot-in-a-custom-solution).
+    > If you need to download previous versions of the localization file, [open the copilot's solution in Power Apps to download previous versions](authoring-export-import-bots.md?tabs=webApp#add-components-to-a-copilot-in-a-custom-solution).
 
 1. Open the downloaded file and replace the primary language strings with the appropriate translated text.
    

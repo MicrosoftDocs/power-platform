@@ -219,7 +219,7 @@ Based on the content and target audience of the bot, you may want to give transc
 > [!IMPORTANT]
 > Conversation transcript access is managed by environment security roles. After assigning the **Bot transcript viewer** security role to a user, that user can access conversation transcripts for all bots that they create or are shared with in the environment.  
 >
-> In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](./environments-first-run-experience.md#create-a-new-environment-for-your-bots)
+> In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](./environments-first-run-experience.md#create-a-new-environment-for-your-copilots)
 
 When [sharing the bot for chat](#share-a-bot-for-chat), you can assign the **Bot transcript viewer** role by selecting the check box.
 
