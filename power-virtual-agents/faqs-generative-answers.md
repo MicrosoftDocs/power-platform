@@ -1,7 +1,7 @@
 ---
 title: FAQ for generative answers
 description: This FAQ provides information about the AI used for generative answers in Microsoft Copilot Studio. It includes key considerations and details about how the AI is used, how it is tested and evaluated, and any specific limitations.
-ms.date: 7/30/2023
+ms.date: 1/25/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -32,7 +32,16 @@ Further evaluation is performed over custom datasets for offensive and malicious
 ## What are the limitations of generative answers? How can users minimize the impact of limitations when using generative answers?
 - You must enable the **generative answers** option for each bot.
 
-- [Languages other than English aren't supported](authoring-language-support.md). Inaccurate responses may be returned when users converse with the system in languages other than English.
+- Generative answers currently support the following languages. You may be able to use other lanagauges, but the answers generated might be inconsistent and the copilot might not respond properly or as you expect.
+  - Danish
+  - Dutch
+  - English
+  - French
+  - German
+  - Italian
+  - Norwegian
+  - Portuguese (Brazil)
+  - Spanish
 
 - This capability may be subject to usage limits or capacity throttling.
 
