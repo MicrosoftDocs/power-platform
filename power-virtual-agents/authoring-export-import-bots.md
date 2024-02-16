@@ -65,15 +65,15 @@ You use solutions to export copilots from one environment and import them into a
 
 1. In Microsoft Copilot Studio, open the bot you want to export.
 
-> [!NOTE]
-> If you are using a **Classic** copilot, in the navigation menu select **Chatbots** to open the **Chatbots** page and view all the copilots you have access to in this environment.
+    > [!NOTE]
+    > If you're using a **Classic** chatbot, in the navigation menu select **Chatbots** to open the **Chatbots** page and view all the bots you can access in this environment.
 
 2. In the navigation menu, under Settings, select **Copilot details**, and then select **Export**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the Copilot details page in Microsoft Copilot Studio, with the Export button highlighted.":::
 
-> [!NOTE]
-> If you're using a **Classic** bot, select the bot you want to export, then select **Export chatbot**.
+    > [!NOTE]
+    > If you're using a **Classic** bot, select the bot you want to export, then select **Export chatbot**.
 
 Alternatively, you can open the **Copilots** page, select the copilot you want to export, and then select **Export copilot**.  
 
@@ -107,7 +107,7 @@ Alternatively, you can open the **Copilots** page, select the copilot you want t
 1. In the **Add existing chatbots** list, select the copilot or copilots you want to export, and then select **Add**.
 
 > [!NOTE]
-> The following applies to **Classic** copilots.
+> The following applies to **Classic** chatbots.
 
 4. If you're using [skills](advanced-use-skills.md), remove the skill's environment variables **Current Value** by selecting **Remove from this solution**.
 
