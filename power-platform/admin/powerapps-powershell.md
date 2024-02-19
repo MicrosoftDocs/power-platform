@@ -445,7 +445,7 @@ Get-AdminFlow | Export-Csv -Path '.\FlowExport.csv'
 
 Exports all the flows in your tenant into a tabular view .csv file.
 
-### Add flows to Dataverse and into a solution
+### Add flows into Dataverse solutions
 
 ```powershell
 Add-AdminFlowsToSolution -EnvironmentName <String>
