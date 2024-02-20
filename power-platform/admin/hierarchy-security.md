@@ -34,9 +34,9 @@ Two security models can be used for hierarchies, the _manager hierarchy_ and the
 > 
 > **ManagersMustBeInSameOrParentBusinessUnitAsReports**
 > 
-> default = false   
+> default = true   
 >    
-> You can set it to true, and a manager's business unit does not need to be the same as the direct report's business unit.  
+> You can set it to false, and a manager's business unit does not need to be the same as the direct report's business unit.  
 >
 > In addition to the manager hierarchy security model, a manager must have at least the user level Read privilege on a table, to see the reports’ data. For example, if a manager doesn’t have Read access to the Case table, the manager can't see the cases that their reports have access to.  
 > 
