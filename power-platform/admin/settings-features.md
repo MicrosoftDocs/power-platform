@@ -4,7 +4,7 @@ description: Manage feature settings to adjust how features appear and function 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/12/2023
+ms.date: 02/12/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -13,6 +13,8 @@ contributors:
     - jasongre
 search.audienceType: 
   - admin
+ms.collection: 
+    - bap-ai-copilot
 ---
 # Manage feature settings
 
@@ -40,11 +42,16 @@ Make sure you have the System Administrator or System Customizer security role o
 | Allow canvas editors to get AI-powered answers to how-to questions and AI Builder GPT experiences. Currently in preview. (preview)  |When **On**, enables Copilot to create apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. More information: [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). | On |
 | Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. (preview)<br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. More information: [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot). When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is enabled. | Off |
 
-
 ## AI Builder
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |AI Builder preview models  | If **Off**, the environment will not have access to AI Builder. Not all environments will have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](/ai-builder/administer)  | On |
+
+## AI suggestions for formula columns
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| AI suggestions for formula columns  | If **On**, app makers will be able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
 
 ## Embedded content
 | Setting | Description | Default value |
@@ -89,6 +96,7 @@ Choose which provider to enable outbound calls from within customer engagement a
 | Enable the modern read-only grid experience. | If **On**, the Power Apps read-only grid control lets users view and open records from views and subgrids. | On |
 |Show the Edit columns button on views |  If **On**, users can create personal views by adding, removing, and reordering columns on a view accessible to them in a model-driven app. More information: [Edit columns on a grid page](/powerapps/user/grid-filters-advanced#column-editor). This setting only appears if you have enabled 2022 Release Wave 1. |  On| 
 |Show the Edit filters button on views | If **On**, users can create personal views by filtering data based on conditional expressions starting with a view accessible to them in a model-driven app. More information: [Edit filters on a grid page](/powerapps/user/grid-filters-advanced#filter-editor). This setting only appears if you have enabled 2022 Release Wave 1.| On |
+| Focused view | If enabled, focused view allows sellers to view and manage their records and their associated activities on one page. This view makes it easier for users to stay focused on their tasks, saving time by eliminating the need to navigate through multiple screens. Focused view can be [configured and set as default for required tables](/dynamics365/sales/set-focused-view-as-default#configure-as-default-for-other-entities) through [system customizations](/power-apps/maker/model-driven-apps/advanced-navigation).<br>Turn off the **Enable focused view for all records** toggle to disable focused view across your entire organization. If you need focused view for certain tables, re-enable this option and configure as necessary. More information: [Enable focused view for all records](/dynamics365/sales/enable-focused-view) | On |
 
 ## Advanced find options
 | Setting | Description | Default value |
@@ -125,10 +133,23 @@ Choose which provider to enable outbound calls from within customer engagement a
 |---------|-------------|---------------|
 | Preferred solution | Lets makers set which unmanaged solution will maintain their created and edited components that occur anywhere in Power Apps. If not set, all components for all makers not already in the context of an unmanaged solution are maintained in the Common Data Services Default Solution. More information: [Set the preferred solution](/power-apps/maker/data-platform/preferred-solution) | Off |
 
+## Block unmanaged customizations
+
+> [!IMPORTANT]
+> This is a preview feature.
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Block unmanaged customizations |  Prevents the creation of unmanaged customizations in Dataverse environments, which facilitates healthy application lifecycle management. More information: [Block unmanaged customizations (preview)](../alm/block-unmanaged-customizations.md) | Off |
+
 ## Finance and Operations in Dataverse
+
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Enable Finance and Operations user impersonation in Dataverse | When enabled, the Finance and Operations application in this environment has permissions to impersonate Dataverse users. This allows users of Finance and Operations to make calls to Dataverse which run as that same user in Dataverse, using the Dataverse permissions assigned to that user. Only select this option if the Finance and Operations administrator is trusted with the same level of permissions in Dataverse as the Dataverse administrator. | Off |
+
+> [!IMPORTANT]
+> Beginning March 1, 2024 the **Enable Finance and Operations user impersonation in Dataverse** toggle will be removed. With continued efforts to unify finance and operations apps with the Power Platform through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/overview) and [unified admin exeriences](unified-experience/finance-operations-apps-overview.md), finance and operations apps are now considered applications within the Power Platform environment. In a unified environment, the capabilities granted by the toggle are now assumed to be true for any environment with finance and operations apps installed with the same level of governance, oversight and scrutiny as all other apps in a Power Platform environment.
 
 ## Data validation
 | Setting | Description | Default value |

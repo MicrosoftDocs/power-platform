@@ -35,7 +35,7 @@ You can write formulas for some properties of the **App** object. At the top of 
 
 The **ActiveScreen** property identifies the screen that's showing.
 
-This property returns a screen object, which you can use to reference properties of the screen or compare to another screen to determine which screen is showing. You can also use the expression **App.ActiveScreen.Name** to retrieve the name of the screen that's showing.
+This property returns a screen object. Use it to reference properties of the currently displayed screen, such as the name with the formula **App.ActiveScreen.Name**. You can also compare this property to another screen object, such as with the comparison formula **App.ActiveScreen = Screen2** to test if **Screen2** is the currently displayed screen.
 
 Use the **[Back](function-navigate.md)** or **[Navigate](function-navigate.md)** function to change the screen that's showing.
 
@@ -55,7 +55,7 @@ Nobody wants to lose unsaved changes. Use the **ConfirmExit** and **ConfirmExitM
 
 **ConfirmExit** is a Boolean property that, when *true*, opens a confirmation dialog box before the app is closed. By default, this property is *false*, and no dialog box appears.
 
-Use this property to show a confirmation dialog box if the user has made changes but not saved them. Use a formula that can check variables and control properties (for example, the **Unsaved** property of the [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control).
+In situations where the user may have unsaved changes in the app, use this property to show a confirmation dialog box before exiting the app. Use a formula that can check variables and control properties (for example, the **Unsaved** property of the [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control).
 
 The confirmation dialog box appears in any situation where data could be lost, as in these examples:
 
@@ -150,7 +150,7 @@ The advantages of using named formulas include:
 - **The formula's value is always available.**  There's no timing dependency, no **OnStart** that must run first before the value is set, no time in which the formula's value is incorrect.  Named formulas can refer to each other in any order, so long as they don't create a circular reference.  They can be calculated in parallel. 
 - **The formula's value is always up to date.**  The formula can perform a calculation that is dependent on control properties or database records, and as they change, the formula's value automatically updates.  You don't need to manually update the value as you do with a variable.  And formulas only recalculate when needed.
 - **The formula's definition is immutable.**  The definition in **Formulas** is the single source of truth and the value can't be changed somewhere else in the app.  With variables, it's possible that some code unexpectedly changes a value, but this isn't possible with named formulas.
-- **The formula's calculation can be deferred.**  Because it's value it immutable, it can always be calculated when needed, which means it need not be calculated until it's needed.  Formula values that aren't used until **screen2** of an app is displayed need not be calculated until **screen2** is visible.  This can improve app load time.  Named formulas are declarative and provide opportunities for the system to optimize how and when they're computed.
+- **The formula's calculation can be deferred.**  Because its value is immutable, it can always be calculated when needed, which means it need not be calculated until it's needed.  Formula values that aren't used until **screen2** of an app is displayed need not be calculated until **screen2** is visible.  Deferring this work can improve app load time.  Named formulas are declarative and provide opportunities for the system to optimize how and when they're computed.
 - **Named formulas is an Excel concept.** Power Fx uses Excel concepts where possible since so many people know Excel well.  Named formulas are the equivalent of named cells and named formulas in Excel, managed with the Name Manager.  They recalculate automatically like a spreadsheet, just like control properties do.
 
 Named formulas are defined, one after another in the **Formulas** property, each ending with a semi-colon.  The type of the formula is inferred from the types of the expression, which is based on the types of the elements within the expression and how they're used together.  For example, these named formulas retrieve useful information about the current user from Dataverse:
@@ -299,5 +299,11 @@ IfError( If( CustomConnector.APICall() = "Forest",
 )
 ```
 Directs the app based on an API call to either `ForestScreen` or `OceanScreen`.  If the API fails for any reason, the `ErrorScreen` is used instead.
+
+## StudioVersion property
+
+Use the **StudioVersion** property to display or log the version of Power Apps Studio that was used to publish an app.  This can be useful when debugging and to ensure your app has been republished with a recent version of Power Apps Studio.
+
+**StudioVersion** is returned as text. The format of the text may change over time and should be treated as a whole; avoid extracting individual portions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

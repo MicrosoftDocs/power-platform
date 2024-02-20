@@ -3,7 +3,6 @@ title: "Using Topic Triggers"
 description: "Use topic triggers to control when a topic is executed, like when the copilot receives a message or event."
 keywords: "PVA"
 ms.date: 1/4/2024
-ms.service: power-virtual-agents
 ms.topic: article
 author: KendalBond007
 ms.author: iawilt

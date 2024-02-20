@@ -1,20 +1,20 @@
 ---
-title: View Power Platform administrative logs using auditing solutions in Microsoft Purview (preview)
+title: View Power Platform administrative logs using auditing solutions in Microsoft Purview
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/01/2023
-author: StephenRauchPM
+ms.date: 02/05/2024
+author: Zeffin
 ms.subservice: admin
 ms.author: johnev
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
+ms.contributors:
+ - drkestel
 ---
 
-# View Power Platform administrative logs using auditing solutions in Microsoft Purview (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# View Power Platform administrative logs using auditing solutions in Microsoft Purview
 
 Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
 
@@ -24,8 +24,6 @@ In this article, you learn about activities that are performed on Power Platform
 - [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
 
 > [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Administrative activities for Power Platform environments are enabled by default on all tenants. You can't disable activity collection.
 > - At least one user with an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview. More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 
@@ -60,6 +58,37 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | **Event** | **Description** |
 |-------------------------|-------------------------|
 | Changed property on environment | Communicates when a property on an environment has changed. In general, properties are metadata (names) that is associated with an environment. Includes changes to:<ul><li>Display name</li><li>Domain name</li><li>Security group ID</li><li>Admin mode</li><li>Background operations state</li></ul> |
+
+## Activity category: Business model and licensing
+
+Each activity event contains a payload of metadata that is specific to the individual event. The following business model and licensing activities are delivered to Microsoft Purview.
+
+| **Category** | **Event** | **Description** |
+|-------------------------|-------------------------|-------------------------|
+| Billing Policy | BillingPolicyCreate | Emitted when a new billing policy is created. |
+| Billing Policy | BillingPolicyDelete | Emitted when a billing policy is deleted. |
+| Billing Policy | BillingPolicyUpdate | Emitted when the environments linked to a billing policy change (added, removed). |
+| ISV | IsvContractConsent | Emitted when a tenant admin consents to an ISV contract. |
+| License Auto-claim | AssignLicenseAutoClaim | Emitted when a license is assigned to a user automatically via an auto-claim policy. |
+| License Auto-claim | AssignLicenseAutoClaimPolicyCreate | Emitted when a new auto-claim policy is created. |
+| Currency | CurrencyEnvironmentAllocate | Emitted when currency (add-on) is allocated or deallocated to an environment. |
+| Trials | TrialConvertToProduction | Emitted when a trial plan is converted to a production plan. |
+| Trials | TrialEnforce | Emitted when a customer attempts to provision environments beyond the trial limit. |
+| Trials | TrialExtend | Emitted when a trial is extended past its original expiration date. |
+| Trials | TrialProvision | Emitted when a new trial plan is provisioned. |
+| Trials | TrialSignUpEligibilityCheck | Emitted prior to trial provisioning when a check occurs to determine trial eligibility. |
+| Trials | TrialViralConsent | Emitted during trial provisioning. Includes a list of which trial plan types the customer has consented to. |
+| Trials | AssignLicenseToUser | Emitted when a trial license is assigned to a user. |
+| Licensing | DeveloperPlanConsent | Emitted when a tenant admin consents to usage of developer plans. |
+| Environment Lifecycle | EnvironmentDisabledByMiser | Emitted when an environment is automatically disabled due to insufficient database capacity. |
+
+## Activity category: Admin actions
+
+Each activity event contains a payload of metadata that is specific to the individual event. The following admin activities are delivered to Microsoft Purview.
+
+| **Event** | **Description** |
+|-------------------------|-------------------------|
+| Apply Admin Role | Emitted when a tenant admin requested the System administrator role in Dataverse in the environment. |
 
 ## View activities in Microsoft Purview
 

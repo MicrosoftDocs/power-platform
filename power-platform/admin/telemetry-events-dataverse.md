@@ -5,9 +5,9 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/12/2022
-author: StephenRauchPM
+author: Zeffin
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: johnev
 ms.reviewer: sericks
 search.audienceType: 
   - admin

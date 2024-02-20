@@ -25,7 +25,7 @@ It's also beneficial to select **Domains** when you use Project “Sophia”. Ch
 
 Follow these steps to ask a question:
 
-1. Go to [https://projectsophia.preview.microsoft.com](https://projectsophia.preview.microsoft.com).
+1. Go to [https://projectsophia.microsoft.com](https://projectsophia.microsoft.com).
 1. From the Home screen, select **New workspace**.
 1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
 1. Enter your question in the text box and then select **Generate**.
