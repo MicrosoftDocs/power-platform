@@ -16,13 +16,17 @@ search.audienceType:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Initial paragraph (introduction)
+IT teams today, whether in startups or enterprises, face the challenge of centrally governing the Power Platform at scale across hundreds, thousands, or even tens of thousands of environments.
+
+Much like folders for your documents, **environment groups** is designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location. Admins can then apply various **rules** related to security, compliance, and more to these groups to govern many environments in bulk, reducing manual effort and ensuring consistency.
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-## Use environment groups
+## Strategies for using environment groups
 
-Here's how you can route all to personal productivity toa group with sharing limit configure
+There are countless ways to manage pockets of environments within your tenant using environment groups. For instance, some global organizations may choose to create an environment group for each geographic location to ensure that all environments in a given region comply with legal and regulatory requirements. Others may prefer to organize environment groups by department or other criteria.
+
+In this article, we'll focus on how to augment your **default environment strategy** by combining *environment groups* with [*default environment routing*](https://learn.microsoft.com/en-us/power-platform/admin/default-environment-routing?tabs=ppac). Default environment routing provides each maker with their own personal Developer environment, a secure space to build with Microsoft Dataverse, much like [OneDrive](https://www.microsoft.com/en-ca/microsoft-365/onedrive/online-cloud-storage?rtc=1) for personal productivity. While enabling this feature may increase the number of environments to manage, automatically creating them in a single environment group ensures that they're all preconfigured with important baseline controls your organization requires.
 
 ## Create an environment group
 [Power Platform tenant administrators](https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant) can create as many environment groups as necessary to meet their organization's needs. In this tutorial, you will create a single environment group named *Personal Productivity*.
@@ -31,12 +35,12 @@ Here's how you can route all to personal productivity toa group with sharing lim
 2. Select **Environment groups** in the navigation pane.
 3. On the *Environment groups* page, select **New group**.
 4. In the **Create group** pane that appears, you can:
-  A. Enter a name for the group in the **Name** field such as "Personal Productivity".
+  A. Enter a name for the group in the **Name** field such as *Personal Productivity*.
   B. Enter a brief description of the group in the **Description** field.
   C. Select **Create**.
 
 ## Configure the rules for your environment group
-After creating the environment group, you can immediately add environments or configure its rules. Currently, there are six available rules, which are the same capabilities offered when upgrading an _individual_ environment to a [Managed Environment](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview). In this section, you''ll begin by configuring the *sharing limits* rule. Since the environment group is intended for personal productivity, makers will be restricted from sharing their canvas apps with other users. This will help ensure that each environment in the group remains a private space for individual work.
+After creating the environment group, Power Platform tenant administrators can immediately add environments or configure its rules. Currently, there are six available rules, which are the same capabilities offered when upgrading an _individual_ environment to a [Managed Environment](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview). In this section, you''ll begin by configuring the *sharing limits* rule. Since the environment group is intended for personal productivity, makers will be restricted from sharing their canvas apps with other users. This will help ensure that each environment in the group remains a private space for individual work.
 
 1. In the *Personal Productivity* group, select the **Rules** tab.
 2. Select the **Sharing Limits** rule to open its configuration panel.
@@ -50,41 +54,37 @@ After creating the environment group, you can immediately add environments or co
 > All rules are equally applied to all environments in the group.
 
 ## Route environments to your environment group
-With your environment group set up, it can now serve as the home for all new personal Developer environments that are created through environment routing. This provides the assurance that all of those new Developer environments that are created automatically are pre-configured and meet baseline requirements from the start.
+With your environment group set up, it can now serve as the home for all new personal Developer environments that are created by *default environment routing*. This provides the assurance that all newly created Developer environments are automatically pre-configured to meet baseline requirements from the start.
 
 1. Return to the **Environment groups** page.
 2. Select the **Environment Routing** button in the command bar.
-3. Under the *Environment group* section, select the group you want your new Developer environments to be located in.
+3. Under the *Environment group* section, select the group you want your new Developer environments to be created in.
 4. Click **Save**.
 
-[Screenshot of the Environment Routing panel]
-
 > [!NOTE]
-> For Developer environments in the 'Personal Productivity' group, the sharing limit cannot be changed within individual environment settings. The same applies to other rules. To make changes, adjust the rule and the change will apply to all environments in the group.
-
-[Screenshot of the disabled ME panel]
+> For Developer environments in the *Personal Productivity* group, the sharing limit cannot be changed within individual environment settings. The same applies to other rules. To make changes, adjust the rule and the change will apply to all environments in the group.
 
 ## Add environments to your environment group
-You can manually add environments to the 'Personal Productivity' group if you have existing developer environments that belong there.
+You can manually add environments to the *Personal Productivity* group if you have existing Developer environments that also belong there.
 
-1. Select the **Personal Productivity** group.
-2. Click the *Add environments* button in the command bar.
-3. Select the environment from the list of Managed Environments.
+1. Select the *Personal Productivity* group.
+2. Click the **Add environments** button in the command bar.
+3. Select a single environment from the list of Managed Environments.
 6. Click **Add**.
 
 > [!NOTE]
+> An environment can only belong to a single environment group.
 > Only Managed Environments can be added to an environment group.
+> Any environment type (ex. Production, Developer, Sandbox, etc.) can be added to an environment group.
 > It may take up to a minute for the environment to be added. You'll need to refresh the list manually to see it.
 
-You can also create environments into the group in the Power Platform admin center.
+You can also manually create environments into the group in the Power Platform admin center.
 
-1. Go to the *Environments* page.
+1. Go to the **Environments** page.
 2. Click *New* in the command bar.
-3. Select the **group** you want to create the environment is.
+3. Select the **group** where you want to create the environment in.
 4. Enter the other details.
 7. Click **Save**.
-
-[Screenshot of environment creation]
 
 ## Remove an environment from your environment group
 You always have the option to remove an environment from a group if it now warrants unique governance or if it was simply placed there by accident.
@@ -105,11 +105,6 @@ As you experiment with environment groups, you may end up with some leftover gro
 
 > [!NOTE]
 > To delete a group, you must first remove all of its environments and ensure that no developer environments are being routed to it. Otherwise, you'll receive a warning that prevents you from deleting the group.
-
-[Screenshot of the warning dialog]
-
-## Known limitations
-
 
 ### See also
 
