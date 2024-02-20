@@ -1,12 +1,12 @@
 ---
 title: Enable copilots and generative AI features
 description: Learn how to enable data movement across regions for copilots and generative AI features.
-author: sidhartg
+author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/06/2023
+ms.date: 02/13/2024
 ms.subservice: admin
-ms.author: sidhartg
+ms.author: caitlinshaw
 ms.reviewer: sericks
 search.audienceType:
   - admin
@@ -16,6 +16,7 @@ contributors:
   - sidhartg
   - sericks007
   - prvenka
+  - caitlinshaw1
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title
@@ -32,7 +33,7 @@ However, these features aren't available in all regions and languages. Depending
 
 ## How data movement across regions works
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint that supports these features is hosted**. We might store prompt and output data for up to 30 days to [monitor for abuse](/azure/ai-services/openai/concepts/abuse-monitoring), but we don't look at it unless our automated systems flag it for review.
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint that supports these features is hosted**. We do not use your data to train, retrain, or improve Azure OpenAI Service foundation models.
 
 The following table describes when and how data can move across regions for copilots and generative AI features.
 
@@ -65,7 +66,7 @@ If your environment is hosted in a region that requires data movement across reg
 
     After you consent to the terms of use, the status of **Move data across regions** field on the **Generative AI features** card shows **Allowed**. Copilots and generative AI features are enabled in the environment.
 
-     Data movement that occurred while your environment was enabled to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox. The data might be stored by the Azure OpenAI Service for up to 30 days to monitor for abuse.
+     Data movement that occurred while your environment was enabled to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox.
 
 ## Copilots and generative AI features that are available when you enable data movement across regions
 

@@ -1,6 +1,6 @@
 ---
 title: "Building a team"
-description: "Building a team for Power Virtual Agents projects."
+description: "Building a team for Copilot Studio projects."
 author: nesrivastavaMS
 ms.date: 09/26/2023
 ms.topic: conceptual
@@ -11,11 +11,11 @@ ms.reviewer: iawilt
 
 # Building your team
 
-Once you understand your customer use cases for your bot, you can form a team and get them trained. Delivering a large bot is a complex project with many different stakeholders within and beyond your organization. This section outlines the roles and responsibilities to align everyone in the project.
+Once you understand your customer use cases for your copilot, you can form a team and get them trained. Delivering a large copilot is a complex project with many different stakeholders within and beyond your organization. This section outlines the roles and responsibilities to align everyone in the project.
 
-## Internal Team
+## Internal team
 
-Most customers treat a Chatbot implementation like any other project. It usually consists of the following roles:
+Most customers treat a copilot implementation like any other project. It usually consists of the following roles:
 
 ![Roles](./media/topics/Project-Building-Internal-Team.png)
 
@@ -25,7 +25,7 @@ The **Third party delivery partner** is typically a System Integrator that leads
 
 1. **Project management** - Sets up workstreams and reviews with the customer.
 
-1. **Chatbot development** – Developers and analysts who have experience with Power Virtual Agents, chatbots, and related technologies.
+1. **Copilot development** – Developers and analysts who have experience with Copilot Studio, copilots, and related technologies.
 
 1. **Training**
 
@@ -35,7 +35,7 @@ The **Third party delivery partner** is typically a System Integrator that leads
 
 ## Microsoft
 
-**Microsoft delivers the Power Virtual Agents service.**  
+**Microsoft delivers the Copilot Studio service.**  
 
 1. **Account team** - Account Executive, Account Technical Strategist, Technical Specialist, and Customer Success Manager
 
@@ -57,38 +57,38 @@ The **Third party delivery partner** is typically a System Integrator that leads
 
 ## Training your team
 
-For organizations that are new to building Power Virtual Agents chatbots, training might be needed for the customer to become familiar with the technology. The following resources can assist customers with building Power Virtual Agents chatbots, [aka.ms/LearnPVA.](https://powervirtualagents.microsoft.com/blog/new-years-resolution-build-powerful-conversational-bots/).
+For organizations that are new to building Copilot Studio copilots, training might be needed for the customer to become familiar with the technology. The following resources can assist customers with building Copilot Studio copilots, [aka.ms/LearnPVA.](https://powervirtualagents.microsoft.com/blog/new-years-resolution-build-powerful-conversational-bots/).
 
 Training can be delivered through various channels. These channels include Technical Sales Professionals (TSPs), Microsoft Technology Center (MTC) architects, and Microsoft certified partners. In exceptional circumstances, engineering resources like Power CAT can facilitate these training sessions.
 
-### Power Virtual Agents in a Day
+### Copilot Studio in a Day
 
-[Power Virtual Agents in a Day](https://powervirtualagents.microsoft.com/blog/power-virtual-agents-in-a-day-update-new-canvas-new-content/) is an instructor led, hands-on course that familiarizes chatbot makers with Power Virtual Agents.
+[Copilot Studio in a Day](https://powervirtualagents.microsoft.com/blog/power-virtual-agents-in-a-day-update-new-canvas-new-content/) is an instructor led, hands-on course that familiarizes copilot makers with Copilot Studio.
 
 The course includes:
 
-- Build your first chatbot
+- Build your first copilot
 - Topic suggestions
-- Improve your chatbot with entities variables and topic redirect
+- Improve your copilot with entities variables and topic redirect
 - Integrate with prebuilt Power Automate flows
-- Build Power Automate flows for your chatbot
+- Build Power Automate flows for your copilot
 - Authentication
-- Export and import bots, using solutions
-- Create a chatbot in Microsoft Teams
+- Export and import copilots, using solutions
+- Create a copilot in Microsoft Teams
 - Topic design
-- Extend your bot using Bot Framework Skill (optional)
-- Add a telephone number to your bot using AudioCodes (optional)
+- Extend your copilot using Copilot Framework Skill (optional)
+- Add a telephone number to your copilot using AudioCodes (optional)
 
-### Power Virtual Agents Architecture Series
+### Copilot Studio Architecture Series
 
-The [Power Virtual Agents Architecture Series](https://www.youtube.com/playlist?list=PLi9EhCY4z99Xrdvy3Ya8wx-8KzsOpMj0S) can be consumed on-demand. This course focuses on considerations that customers should account for when embarking on a chatbot project.
+The [Copilot Studio Architecture Series](https://www.youtube.com/playlist?list=PLi9EhCY4z99Xrdvy3Ya8wx-8KzsOpMj0S) can be consumed on-demand. This course focuses on considerations that customers should account for when embarking on a copilot project.
 
 The course includes:
 
-- Planning your first chatbot
-- Building your first chatbot
-- Extending your Power Virtual Agents chatbot with the Power Platform
-- Extending your Power Virtual Agents chatbot with the Bot Framework (to be announced)
+- Planning your first copilot
+- Building your first copilot
+- Extending your Copilot Studio copilot with the Power Platform
+- Extending your Copilot Studio copilot with the Copilot Framework (to be announced)
 - Advanced topics
 - Security and Governance
 
