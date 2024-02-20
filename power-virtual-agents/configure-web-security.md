@@ -10,7 +10,6 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: clmori
 ms.custom: configuration, ceX
-ms.service: power-virtual-agents
 
 ---
 

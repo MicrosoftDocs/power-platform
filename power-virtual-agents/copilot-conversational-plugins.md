@@ -1,15 +1,12 @@
 ---
 title: Create conversational plugins for Microsoft Copilot (preview)
-description: "Using Microsoft Copilot Studio to publish a topic as a Microsoft Copilot Enabled App within Microsoft Copilot"
+description: "Use Microsoft Copilot Studio to publish a topic as a Microsoft Copilot enabled app in Microsoft Copilot"
 ms.reviewer: jameslew
-ms.date: 11/15/2023
+ms.date: 2/2/2024
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 
-ms.service: power-virtual-agents
-searchScope:
-  - "Power Virtual Agents"
 ---
 
 # Create conversational plugins for Microsoft Copilot (preview)
@@ -37,7 +34,10 @@ Unlike a traditional component model that creates a hard-coded integration point
 - End users must have a license to use Microsoft Copilot for Microsoft 365.
 - Your M365 Tenant must also be participating in the [Microsoft Copilot Plugins Preview](https://aka.ms/Copilot_Plugin_Preview)
 - Microsoft Copilot Studio application must be a Microsoft Copilot Studio copilot, not a Power Virtual Agents "Classic" bot.
-- Before end-to-end works, the Microsoft 365 Tenant Admin needs to enable the **Dynamics and Microsoft Copilot Studio** Integrated Apps category in the Microsoft Admin Center.
+- Before end-to-end works, the Microsoft 365 Tenant Admin needs to enable the **Microsoft Copilot Studio** Integrated Apps category in the Microsoft Admin Center.
+
+> [!NOTE]
+> The tile in the Microsoft Admin Center was previously **Dynamics 365 and Microsoft Copilot Studio**, and was split into two, **Dynamics 365**, and **Microsoft Copilot Studio**. Only the latter is required for this feature to work.
 
 > [!IMPORTANT]
 > In this preview, there are some limitations:
@@ -94,8 +94,8 @@ To publish your conversational plugin:
 
     ![Publish Plugin](media/copilot-conversational-plugins/publish-plugin.png)
 
-1. Your Admin can find the **Dataverse and Microsoft Copilot Studio** integrated app in the Microsoft Admin Center under **Settings**, then **Integrations to be reviewed and approved**. In this preview, Deploy/Block is at this category level only.
-1. Once your Tenant admin approves the Dataverse and Microsoft Copilot Studio integrated app, it should appear in the user's list of plugins in their Microsoft Copilot UI.
+1. Your Admin can find the **Microsoft Copilot Studio** integrated app in the Microsoft Admin Center under **Settings**, then **Integrations to be reviewed and approved**. In this preview, Deploy/Block is at this category level only.
+1. Once your Tenant admin approves the integrated app, it should appear in the user's list of plugins in their Microsoft Copilot UI.
 
     ![Conversational plugins flyout](media/copilot-conversational-plugins/flyout.png)
 

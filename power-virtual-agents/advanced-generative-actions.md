@@ -3,7 +3,6 @@ title: Use Generative Actions in Microsoft Copilot Studio (preview)
 description: Use Generative Actions in Microsoft Copilot Studio to provide GPT driven conversation for your copilot.
 keywords: "PVA, plugin, connector, flow, automate"
 ms.date: 11/29/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt

@@ -10,7 +10,6 @@ ms.author: iawilt
 ms.reviewer: micchow
 manager: leeclontz
 ms.custom: "publication, authoring, ceX"
-ms.service: power-virtual-agents
 
 ---
 
