@@ -60,7 +60,7 @@ The following authentication options are available:
 
 ### No Authentication
 
-No authentication means your copilot won't require your users to sign in when interacting with the copilot. An unauthenticated configuration means your copilot can only access public information and resources.
+No authentication means your copilot doesn't require your users to sign in when interacting with the copilot. An unauthenticated configuration means your copilot can only access public information and resources.
 
 [!INCLUDE[no-auth-warning-note](includes/blocks/no-auth-warning.md)]
 
@@ -132,7 +132,7 @@ Your copilot's authentication and **Require user to sign in** setting in combina
   
   - If the service provider is either **Azure Active Directory** or **Microsoft Entra ID**, you can turn on **Require users to sign in** to control who in your organization can chat with the copilot using copilot sharing.
   
-  - If the service provider is **Generic OAuth2**, you can turn **Require users to sign in** on or off. When it's turned on, a user who signs in can chat with the copilot. You can't control which specific users in your organization may chat with the copilot using copilot sharing.
+  - If the service provider is **Generic OAuth2**, you can turn **Require users to sign in** on or off. When it's turned on, a user who signs in can chat with the copilot. You can't control which specific users in your organization can chat with the copilot using copilot sharing.
 
 When a copilot's authentication setting can't control who can chat with it, if you select **Share** on the copilot's overview page a message informs you that anyone can chat with your copilot.
 
@@ -140,7 +140,7 @@ When a copilot's authentication setting can't control who can chat with it, if y
 
 ## Manual authentication fields
 
-The following are all the fields you may see when you're configuring manual authentication. Which fields you see depends on your choice for service provider.
+The following are all the fields you can see when you're configuring manual authentication. Which fields you see depends on your choice for service provider.
 
 | Field name                              | Description                                                                                                                                                                                                                                    |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
