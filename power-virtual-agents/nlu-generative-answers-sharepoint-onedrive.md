@@ -18,7 +18,6 @@ ms.search.region: USA
 
 This capability works by pairing your copilot with a URL, such as _contoso.sharepoint.com/sites/policies_. When a copilot user asks a question and the copilot doesn't have a topic to use for an answer, the copilot searches the URL and all sub-paths. For example, a URL such as _contoso.sharepoint.com/sites_ also includes subpaths like _contoso.sharepoint.com/sites/policies_. Generative answers summarize this content into a targeted response.
 
-
 > [!CAUTION]
 > When you publish your copilot, the calls are made on behalf of the user chatting with the copilot, using the authentication settings configured in the copilot, which must use manual authentication with the **Service Provider** type of **Microsoft Entra ID** (formerly Azure Active Directory).
 > - To authenticate your copilot, see [Authentication](nlu-boost-node.md#authentication).
@@ -27,8 +26,6 @@ This capability works by pairing your copilot with a URL, such as _contoso.share
 > - Selecting **No authentication** and **Only for Teams** authentication options mean your copilot won't retrieve information from SharePoint or OneDrive for Business.
 >
 > - When configuring authentication, scopes control user access. Specify **Sites.Read.All**, **Files.Read.All** in the scopes field near the existing **profile** and **openid** values. These scopes don't give users increased permissions when using the copilot, but allow their permissible content from the SharePoint site as configured for generative answers.
-
-
 
 Due to memory limits, generative answers can only use SharePoint files that are under 3 MB. If a file is larger than 3 MB, consider splitting it into multiple smaller files.
 
