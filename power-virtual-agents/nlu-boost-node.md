@@ -80,7 +80,7 @@ Include delegated permissions for **Microsoft Graph**:
 
 Generative answers obtain content stored in these formats:
 
-- SharePoint pages (aspx pages not suppoerted)
+- SharePoint pages (.aspx pages aren't supported)
 - Word documents (docx)
 - PowerPoint documents (pptx)
 - PDF documents (pdf)
