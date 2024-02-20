@@ -7,7 +7,7 @@ ms.date: 06/23/2022
 author: gattimassimo 
 ms.subservice: admin
 ms.author: magatti
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

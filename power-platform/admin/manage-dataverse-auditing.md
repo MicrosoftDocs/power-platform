@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/20/2023
+ms.date: 02/05/2024
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -415,6 +415,10 @@ Several features use system jobs to perform tasks automatically, including workf
 2. Select **Settings** > **Data management** > **Bulk deletion**.
 
 Select the system job name to open details about your delete job.
+
+## Access audit data using Azure Synapse Link for Dataverse
+
+You can use Azure Synapse link for Dataverse to link the audit table and create reports using Power BI to meet your external and internal auditing, compliance, and governance needs. More information: [Access audit data using Azure Synapse Link for Dataverse and Power BI](audit-data-azure-synapse-link.md)
 
 ### See also
 

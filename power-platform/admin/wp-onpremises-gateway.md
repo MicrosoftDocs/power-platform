@@ -8,7 +8,7 @@ ms.date: 10/22/2020
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

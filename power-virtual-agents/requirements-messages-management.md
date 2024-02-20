@@ -8,7 +8,6 @@ ms.author: iawilt
 manager: leeclontz
 
 ms.reviewer: mainguy
-ms.service: power-virtual-agents
 ---
 
 # Microsoft Copilot Studio messages and capacity management
@@ -17,9 +16,9 @@ ms.service: power-virtual-agents
 > 
 > This article is for billed messages in the Microsoft Copilot Studio license, available for purchase starting December 1, 2023.
 
-A _message_ is an interaction between a customer and a bot, representing one unit of consumption. A message is defined as any request or message sent to the bot that triggers an action or a response from the bot.
+A _message_ is an interaction between a customer and a copilot, representing one unit of consumption. A message is defined as any request or message sent to the copilot that triggers an action or a response from the copilot.
 
-The purchase of a Microsoft Copilot Studio license includes a specific number of billed messages capacity. This capacity is pooled across the entire tenant but it must be assigned to an environment in to enable Microsoft Copilot Studio features for bots in the environment.
+The purchase of a Microsoft Copilot Studio license includes a specific number of billed messages capacity. This capacity is pooled across the entire tenant but it must be assigned to an environment in to enable Microsoft Copilot Studio features for copilots in the environment.
 
 Allocation happens in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/) when you select **Resources** > **Capacity** > **Summary** tab, and then select **Assign to an environment** in the upper-left menu. Additional information can be found in the [Power Platform capacity add-ons](/power-platform/admin/capacity-add-on) article.
 
@@ -27,14 +26,13 @@ Allocation happens in the [Power Platform Admin Center](https://admin.powerplatf
 
 The following table helps illustrate when messages are billed, free, or included in select Microsoft 365 subscriptions. These scenarios are examples only, and not all scenarios are covered.
 
-| Scenario | Is session billed? | Topic type | Channel | Power Automate flow  | Bot Framework extensibility | Bot stored in |
+| Scenario | Is session billed? | Topic type | Channel | Power Automate flow  | Bot Framework extensibility | Copilot stored in |
 | --- | --- | --- | --- | --- | --- | --- |
-| User logs vacation days in a conversation with the bot in Microsoft Teams. | Included with select Microsoft 365 subscriptions | Any topic type | Teams | Yes (only standard connectors) | Not used | Dataverse for Teams |
-| Bot greets user on your website, user escalates to a human agent directly or doesn't interact with the bot. | Yes | System  | Any channel | Not used | Not used | Any environment type |
+| User logs vacation days in a conversation with the copilot in Microsoft Teams. | Included with select Microsoft 365 subscriptions | Any topic type | Teams | Yes (only standard connectors) | Not used | Dataverse for Teams |
+| Copilot greets user on your website, user escalates to a human agent directly or doesn't interact with the copilot. | Yes | System  | Any channel | Not used | Not used | Any environment type |
 | Greeting topic redirects to Bot Framework Composer or a skill topic for advanced operations. | Yes | Any topic type | Any channel | Either used or not used | Yes | Any environment type |
 | Greeting topic gets information about the user using a Power Automate flow to present a customized experience. | Yes | Any topic type | Any channel | Yes (any connector) | Either used or not used | Any environment type |
-| User interacts with the bot on your website to ask about store hours, check order status, and so on. | Yes | Non-system | Any channel | Either used or not used | Either used or not used | Dataverse |
-
+| User interacts with the copilot on your website to ask about store hours, check order status, and so on. | Yes | Non-system | Any channel | Either used or not used | Either used or not used | Dataverse |
 
 
 ## Overage

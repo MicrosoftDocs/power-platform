@@ -1,6 +1,6 @@
 ---
 title: "Language support"
-description: "Create new chatbots in multiple languages, including tutorial and system topics."
+description: "Create copilots in multiple languages, including tutorial and system topics."
 keywords: "PVA, language, regional, region"
 ms.date: 03/24/2023
 
@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "authoring, fundamentals, ce06092020"
-ms.service: power-virtual-agents
 
 ---
 
@@ -17,67 +16,75 @@ ms.service: power-virtual-agents
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-You can create chatbots in Microsoft Copilot Studio in a number of languages. This means that your bots can reach a much broader audience and engage with more markets all around the world.
+You can create copilots in Microsoft Copilot Studio in many languages. Your copilots can reach a broader audience and engage with more markets around the world.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+[Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
-## Specify a language for your bot
+## Specify a language for your copilot
 
-You specify the target language when you first create a bot.
+You specify the target language when you create a copilot in your [Copilot Studio canvas](https://copilotstudio.microsoft.com ).
 
-1. In the **Create a new bot** window, select **Language**.
-
-1. Choose the language you want to use. 
-
-    :::image type="content" source="media/authoring-language-support/language-selection-teams.png" alt-text="Language selection option.":::
+1. From the **Home** page, select **Create a copilot**.
+1. Select a language from **What language do you want your copilot to speak?**.
+   :::image type="content" source="media/authoring-language-support/language-selection-new-copilot.png" alt-text="Screenshot that shows the language selection option when creating a new copilot." lightbox="media/authoring-language-support/language-selection-new-copilot.png":::
 
 ## Default content in the target language
 
-After your new bot has been created, you'll notice that it already has content in the target language, including system topics and template user topics.
+After your new copilot is created, you notice it already has content in the target language, including system topics and template user topics on the **Topics** page.
 
-:::image type="content" source="media/authoring-language-support/language-topics.png" alt-text="Topics in the target language.":::
+:::image type="content" source="media/authoring-language-support/language-topics.png" alt-text="Screenshot that shows all topics of a copilot in the target language." lightbox="media/authoring-language-support/language-topics.png":::
 
-You can now move on to creating new topics for your bot, authoring bot trigger phrases, and creating bot messages in your target language.
+You can create new topics for your copilot, author copilot trigger phrases, and create copilot messages in your target language.
 
-When you've created your own topic in the target language, you can test the bot in the chat canvas and see how well it understands user input and responds in that language.
+You can test the copilot in the chat pane. In chat, you see how well the copilot understands user input and how it responds in that language.
 
-:::image type="content" source="media/authoring-language-support/language-testing.png" alt-text="Test in the target language.":::
+:::image type="content" source="media/authoring-language-support/language-testing.png" alt-text="Screenshot that shows the chat pane when you test in the target language." lightbox="media/authoring-language-support/language-testing.png":::
 
 ## List of supported languages
 
-Microsoft Copilot Studio supports languages in three stages. The stage indicates how well the bot can understand user input in that language, with general availability being the strongest, followed by preview, and then experimental.
+Copilot Studio supports languages in three stages. The stage indicates how well the copilot can understand user input in that language, with general availability being the strongest, followed by preview, and then experimental.
 
-| Language               | Support              |
-| ---------------------- | -------------------- |
-| Chinese (Simplified)   | General availability |
-| Chinese (Traditional)  | General availability |
-| Czech                  | General availability |
-| Danish                 | General availability |
-| Dutch                  | General availability |
-| English                | General availability |
-| Finnish                | General availability |
-| French                 | General availability |
-| German                 | General availability |
-| Greek                  | General availability |
-| Hindi                  | General availability |
-| Indonesian             | General availability |
-| Italian                | General availability |
-| Japanese               | General availability |
-| Korean                 | General availability |
-| Norwegian              | General availability |
-| Polish                 | General availability |
-| Portuguese (Brazilian) | General availability |
-| Russian                | General availability |
-| Spanish                | General availability |
-| Swedish                | General availability |
-| Thai                   | General availability |
-| Turkish                | General availability |
+> [!NOTE]
+> Support levels include your Microsoft customer service support. For example, with features in preview, you can't yet contact Microsoft for technical support with Copilot Studio. In general availability, you can contact Microsoft for Copilot Studio support.
 
+- General availability: &check; Language has full support.
+- Authoring canvas: Copilot creator sees the Copilot Studio UI in the target language.
+- End-user language: The language a user can type in chat to ask questions. Exceptions include copilots with generative AI features that aren't yet available in some languages.
+- Generative answers: A Copilot Studio feature that autogenerates chat responses.
+- Generative actions: A Copilot Studio feature that uses plugins in a conversation.
 
+  > [!NOTE]
+  > Generative Actions is currently only in English.
+
+| Language              | Authoring canvas | End-user language | Generative answers | Generative actions |
+| --------------------- | ---------------- | ----------------- | ------------------ | ------------------ |
+| Chinese (Simplified)  | &check;          | &check;           |         | Preview            |
+| Chinese (Traditional) | &check;          | &check;           |         | Preview            |
+| Czech                 | &check;          | &check;           |         | Preview            |
+| Danish                | &check;          | &check;           | &check;            | Preview            |
+| Dutch                 | &check;          | &check;           | &check;            | Preview            |
+| English               | &check;          | &check;           | &check;            | Preview            |
+| Finnish               | &check;          | &check;           |         | Preview            |
+| French                | &check;          | &check;           | &check;            | Preview            |
+| German                | &check;          | &check;           | &check;            | Preview            |
+| Greek                 | &check;          | &check;           |         | Preview            |
+| Hindi                 | &check;          | &check;           |         | Preview            |
+| Indonesian            | &check;          | &check;           |         | Preview            |
+| Italian               | &check;          | &check;           | &check;            | Preview            |
+| Japanese              | &check;          | &check;           |         | Preview            |
+| Korean                | &check;          | &check;           |         | Preview            |
+| Norwegian             | &check;          | &check;           | &check;            | Preview            |
+| Polish                | &check;          | &check;           |         | Preview            |
+| Portuguese (Brazil)   | &check;          | &check;           | &check;            | Preview            |
+| Russian               | &check;          | &check;           |         | Preview            |
+| Spanish               | &check;          | &check;           | &check;            | Preview            |
+| Swedish               | &check;          | &check;           |         | Preview            |
+| Thai                  | &check;          | &check;           |         | Preview            |
+| Turkish               | &check;          | &check;           |         | Preview            |
 
 ### Related topics
 
 - [Data locations for organizations using Microsoft Copilot Studio](data-location.md)
-- [Multilingual bots](multilingual.md)
+- [Multilingual copilots](multilingual.md)

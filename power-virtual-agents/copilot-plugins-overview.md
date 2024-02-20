@@ -2,7 +2,6 @@
 title: Create copilot plugins - overview (preview)
 description: Use Microsoft Copilot Studio to create plugins that can be called directly from within chats with Microsoft Copilot.
 ms.date: 12/19/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -40,14 +39,14 @@ This article gives an overview of the ways you can create and use copilot plugin
 To create AI plugins that your end users can use in their chats with Microsoft Copilot, you need:
 
 - A license for Microsoft Copilot Studio (or an existing Power Virtual Agents license).
-- Your Microsoft 365 tenant admin to [deploy the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](#deploy-the-dynamics-365-and-copilot-studio-app-admin).
+- Your Microsoft 365 tenant admin to [deploy the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](#deploy-the-microsoft-copilot-studio-app-admin).
 - Access to the limited preview, by [submitting a support ticket](/microsoft-365-copilot/extensibility/prerequisites#requirements-for-plugin-development).
 
 End users in your tenant can use conversational and AI plugins in their chats with Microsoft Copilot if you configure these settings, author and publish an AI plugin, and [the user enables the connection from within their chat with Microsoft Copilot](#enable-the-connection-in-microsoft-copilot).
 
 ## Copilot plugins
 
-Plugins are discrete, reusable building blocks that work across Power Platform, Dynamics 365, and Microsoft 365. All plugins within your [Microsoft 365 tenant](/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide#a-microsoft-365-tenant-defined) are shared from a central plugin registry in Dataverse. When you create or change a plugin and publish it, the changes are pushed to all your copilots that use the plugin.
+Plugins are discrete, reusable building blocks that work across Power Platform, Dynamics 365, and Microsoft 365. All plugins within your [Microsoft 365 tenant](/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide&preserve-view=true#a-microsoft-365-tenant-defined) are shared from a central plugin registry in Dataverse. When you create or change a plugin and publish it, the changes are pushed to all your copilots that use the plugin.
 
 When you create a plugin, you use simple language to describe what the plugin should do. Next, you provide a data source or other connection that the copilot uses when reading a description and determining the best plugin for a conversation. The copilot automatically asks the user for more information, if needed, for the plugin to work.
 
@@ -93,21 +92,21 @@ OpenAI plugins | [Open AI plugins](https://platform.openai.com/docs/plugins/intr
 
 End users in your tenant can use conversational and AI plugins in their chats with Microsoft Copilot if:
 
-1. Your Microsoft 365 tenant admin deploys the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center.
+1. Your Microsoft 365 tenant admin deploys the Microsoft Copilot Studio app in the Microsoft 365 admin center.
 
 1. The end user enables the connection from within their chat with Microsoft Copilot.
 
-### Deploy the Dynamics 365 and Copilot Studio app (admin)
+### Deploy the Microsoft Copilot Studio app (admin)
 
 1. Sign in to the Microsoft 365 admin center with your admin account.
 
 1. Expand **Settings** on the side navigation pane and select **Integrated apps**.
 
-1. Go to the **Available apps** tab and select the entry **Dynamics 365 and Copilot Studio**. The app's details pane opens.
+1. Go to the **Available apps** tab and select the entry **Microsoft Copilot Studio**. The app's details pane opens.
 
 1. Select **Deploy** to enable the app in chats with Microsoft Copilot.
 
-![Deploying the Dynamics 365 and Copilot Studio app](media/copilot-plugins-overview/deploy-dynamics365-and-copilot-studio.png)
+![Deploying the Copilot Studio app](media/copilot-plugins-overview/deploy-dynamics365-and-copilot-studio.png)
 
 ### Enable the connection in Microsoft Copilot
 
