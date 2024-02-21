@@ -157,7 +157,7 @@ Virtual Network support in Power Platform ensures customer connectivity privacy 
 
 ### 5. Can I monitor egress traffic from delegated subnets?
 
-Yes. You can use National Security Group and/or firewalls to monitor egress traffic from delegated subnets.
+Yes. You can use Network Security Group and/or firewalls to monitor egress traffic from delegated subnets.
 
 ### 6. How many IPs does Power Platform require in the subnet to be delegated?
 
