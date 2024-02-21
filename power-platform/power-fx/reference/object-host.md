@@ -54,7 +54,7 @@ The **OSType** property provides the name of the operating system where the app 
 | Value |
 | --- |
 | Windows |
-| macOS |
+| Mac OS |
 | iOS |
 | Android |
 | Linux |

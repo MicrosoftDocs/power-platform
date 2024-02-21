@@ -10,8 +10,8 @@ metadata:
   description: Leverage Microsoft Power Platform to analyze data, build custom apps, automate workflows, build chatbots and websites with Power BI, Power Apps, Power Automate, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
-  author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
-  ms.author: kvivek #Required; microsoft alias of author; optional team alias.
+  author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
+  ms.author: tapanm #Required; microsoft alias of author; optional team alias.
   ms.date: 10/25/2023 #Required; mm/dd/yyyy format.
   hide_bc: false
 
