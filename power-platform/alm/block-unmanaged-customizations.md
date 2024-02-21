@@ -58,6 +58,7 @@ If you must use one of the below apps or features in an environment where block 
 |Resource Scheduling      | Enable of scheduling table and selection option to auto create relationships doesn't work.        |
 |Sales Accelerator     |  Enabling Sales Accelerator or modifying settings, enabling leads data hygiene, creating or editing sequences, configuring work assignment, creating or editing segments, don't work.        |
 |Dataflows      | Creation of a new dataflow, republish an existing dataflow, change refresh settings, change incremental refresh, and importing dataflows don't work.          |
+|Dynamics 365 Customer Insights - Journeys      | Saving and publishing Emails, Journeys and Triggers will not work and give an error.  |
 
 ## See also
 
