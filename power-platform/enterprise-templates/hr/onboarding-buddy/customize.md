@@ -6,7 +6,11 @@ ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 02/21/2024
-ms.custom: bap-template
+ms.custom: 
+  - bap-template
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:12/04/2023
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
