@@ -5,7 +5,7 @@ author: swatimadhukargit
 ms.subservice: alm
 ms.author: swatim
 ms.custom: ""
-ms.date: 02/13/2024
+ms.date: 02/21/2024
 ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
@@ -58,7 +58,7 @@ If you must use one of the below apps or features in an environment where block 
 |Resource Scheduling      | Enable of scheduling table and selection option to auto create relationships doesn't work.        |
 |Sales Accelerator     |  Enabling Sales Accelerator or modifying settings, enabling leads data hygiene, creating or editing sequences, configuring work assignment, creating or editing segments, don't work.        |
 |Dataflows      | Creation of a new dataflow, republish an existing dataflow, change refresh settings, change incremental refresh, and importing dataflows don't work.          |
-|Customer Insights - Journeys (Real-Time Journeys)  |  Journeys cannot be created and published.  <br />Engagement assets such as Triggers cannot be created and published.  <br />Channel assets such as Emails, Forms, SMS and Push Notifications cannot be created and published.  |
+|Dynamics 365 Customer Insights - Journeys (real-time journeys)  |  Journeys can't be created and published.  <br /> Engagement assets such as triggers can't be created and published.  <br />Channel assets such as emails, forms, SMS and push notifications can't be created and published.  |
 
 ## See also
 
