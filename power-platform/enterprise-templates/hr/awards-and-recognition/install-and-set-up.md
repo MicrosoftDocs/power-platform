@@ -227,7 +227,7 @@ More information: [Share a canvas app with your organization](/power-apps/maker/
 > [!NOTE]
 >If Awards and Recognition apps aren't shared with you and you cannot access them directly from Power Apps, please contact your admin.
 
-## Step 7: Enable Copilot
+## Step 7: Enable Copilot (optional)
 
 Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assistant for app admins to get insights about the data through conversation in natural language. As an Awards and Recognition admin, you can leverage Copilot to help you get insights on data. As a Power Platform admin, take these steps to [enable Copilot](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-feature-for-your-environment) and [manage behavior settings](/power-platform/admin/settings-behavior) for all users in the selected environment:
 
