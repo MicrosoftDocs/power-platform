@@ -15,7 +15,7 @@ ms.subservice: solution-templates
 
 As a Power Platform admin, you install, set up, and deploy the Onboarding Buddy template solutions for your organization. This article covers the following steps:
 
-## Review prerequisites
+## Step 1: Review prerequisites
 
 Make sure that you have the required license and an environment and data policy in place before you start.
 
@@ -63,7 +63,7 @@ It's important to have a cohesive environment and data policy and required resou
   - [Office 365 Users connector](/connectors/office365users/)
   - [Office 365 Groups connector](/connectors/office365groups/)
 
-## Create connections
+## Step 2: Create connections
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be set up manually. You need to set up four new connections for the Onboarding Buddy app.
 
@@ -80,7 +80,7 @@ It's best to create the connections before you import the solution. If you creat
 
 [Learn how to manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections).
 
-## Install solution files
+## Step 3: Install solution files
 
 You have two options for installing the Onboarding Buddy solution:
 
@@ -91,7 +91,7 @@ You have two options for installing the Onboarding Buddy solution:
 
 1. Go to the [Onboarding Buddy template in AppSource](<https://aka.ms/AccessOnboardingBuddyTemplate>) and select **Get it now**.
 
-1. In the **Install Onboarding Buddy** window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select the developer environment that you prepared in the [review prerequisites step](#review-prerequisites).
+1. In the **Install Onboarding Buddy** window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select the developer environment that you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 
 1. Agree to the *Terms and Privacy* statements when prompted.
 
@@ -110,7 +110,7 @@ Two solutions are installed in your environment, **Employee Experience Base** an
       - [mpa_EmployeeExperienceBase_unmanaged.zip](<https://aka.ms/EEBaseUnmanagedSolution>)
       - [mpa_OnboardingBuddy_unmanaged.zip](https://aka.ms/OnboardingBuddyUnmanagedSolution)
 
-1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#review-prerequisites).
+1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 
 1. In the left side panel, select **Solutions**.
 
@@ -132,7 +132,7 @@ Two solutions are installed in your environment, **Employee Experience Base** an
 
 [Learn more about solutions](/power-platform/alm/solution-concepts-alm).
 
-## Assign security roles
+## Step 4: Assign security roles
 
 The Onboarding Buddy solution contains two security roles:
 
@@ -158,11 +158,11 @@ Assign security roles in the Power Platform admin center.
 - [Learn how to manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users).
 - [Learn how to control user access to environments with security groups and licenses](/power-platform/admin/control-user-access).
 
-## Share the apps with program admins
+## Step 5: Share the apps with program admins
 
-If program managers need to contribute to configuring the Onboarding Buddy program, [share both the Onboarding Buddy Admin app and the Onboarding Buddy app with them](#share-the-onboarding-buddy-app).
+If program managers need to contribute to configuring the Onboarding Buddy program, [share both the Onboarding Buddy Admin app and the Onboarding Buddy app with them](#step-9-share-the-onboarding-buddy-app).
 
-## Configure program parameters
+## Step 6: Configure program parameters
 
 1. Open the Onboarding Buddy Admin app and select **Configurations**.
 
@@ -178,7 +178,7 @@ If program managers need to contribute to configuring the Onboarding Buddy progr
 
 1. Select **Save & Close**.
 
-## Populate the Onboarders table
+## Step 7: Populate the Onboarders table
 
 The **New Onboarders Sync** flow runs every Saturday, automatically importing into the `Onboarding` table new employees who were set up in Microsoft Entra ID in the previous week. If you want new employees to be part of the program right away, enter them into the `Onboarders` table. You have two options, either run the flow or enter the records manually.
 
@@ -209,7 +209,7 @@ The **New Onboarders Sync** flow runs every Saturday, automatically importing in
 
 1. Repeat for as many Onboarders as you need to create.
 
-## Turn on cloud flows
+## Step 8: Turn on cloud flows
 
 1. In Power Apps, in the left side panel, select **Solutions**.
 
@@ -219,7 +219,7 @@ The **New Onboarders Sync** flow runs every Saturday, automatically importing in
 
 1. Select *each of the four flows* and make sure it's turned on.
 
-## Share the Onboarding Buddy app
+## Step 9: Share the Onboarding Buddy app
 
 Share the Onboarding Buddy app with the users in your organization.
 
@@ -248,7 +248,7 @@ Share the Onboarding Buddy app with the users in your organization.
 > [!NOTE]
 > If the Onboarding Buddy apps aren't shared with you and you can't access them directly in Power Apps, contact your administrator.
 
-## Turn on auditing (optional)
+## Step 10: Turn on auditing (optional)
 
 Auditing isn't required, but we recommend turning it on so that it's easy to see who creates and updates records in the future.
 
