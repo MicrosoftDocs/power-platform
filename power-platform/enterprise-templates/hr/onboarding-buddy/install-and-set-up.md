@@ -1,11 +1,11 @@
 ---
-title: Install and set up the Onboarding Buddy template for Power Platform
+title: Install and set up the Onboarding Buddy template
 description: Learn how to install, set up, and deploy the Onboarding Buddy template for Microsoft Power Platform.
 author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/29/2023
+ms.date: 02/21/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
