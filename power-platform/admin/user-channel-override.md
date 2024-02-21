@@ -42,6 +42,7 @@ Only admins can change the release channel for a user. Complete the following st
     | None | There's no user channel override. The environment or app channel value is used. |
     | Semi-annual channel |  Users get new features twice a year, starting early April and early October. |
     | Monthly channel | Users receive new features monthly, on the first release for the month. |
+    | Microsoft Inner channel | Users receives new features from the current channel under development by Microsoft |
 
 1. Select **Submit**.
 
