@@ -31,13 +31,13 @@ View the [Supplemental terms of use for Microsoft Power Platform and Dynamics 36
 
 There are many ways to manage pockets of environments within your tenant using environment groups. For example, global organizations might choose to create an environment group for all environments in each geographic region to ensure compliance with legal and regulatory requirements. You can also organize environment groups by department or other criteria.
 
-In this article, you see how to augment your _default environment strategy_ by combining _environment groups_ with [_default environment routing_](default-environment-routing.md). Default environment routing gives makers their own personal **Developer** environment. This environment is a secure space to build with Microsoft Dataverse and is similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity.
+In this article, you will see how to augment your _default environment strategy_ by combining _environment groups_ with [_default environment routing_](default-environment-routing.md). Default environment routing gives makers their own personal **Developer** environment. This environment is a secure space to build with Microsoft Dataverse and is similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity.
 
-Enabling this feature might give you more environments to manage, but automatically adding them into a single environment group ensures they're preconfigured with important baseline controls your organization requires.
+Enabling _default environment routing_ might give you more environments to manage, but automatically creating them into a single environment group ensures they're preconfigured with important baseline controls your organization requires.
 
 ## Create an environment group
 
-[Power Platform tenant administrators](use-service-admin-role-manage-tenant.md) can create as many environment groups as necessary to meet their organization's needs. In this article, you create a single environment group named **Personal Productivity**.
+[Power Platform tenant administrators](use-service-admin-role-manage-tenant.md) can create as many environment groups as necessary to meet their organization's needs. In this article, you create a single environment group named **Personal Productivity** where all your new Developer environments will be created into.
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Environment groups** in the navigation pane.
@@ -68,7 +68,7 @@ You can configure the _sharing limits_ rule. Since the environment group is inte
 
 ## Route environments to your environment group
 
-Your new environment group now contains all new personal **Developer** environments created by _default environment routing_. All newly created **Developer** environments are automatically preconfigured to meet baseline requirements.
+With your environment group set up, it can now serve as the home for all new personal Developer environments that are created by *default environment routing*. This provides the assurance that all newly created Developer environments are automatically pre-configured to meet baseline requirements from the start.
 
 ### Select an environment group
 
@@ -80,23 +80,9 @@ Your new environment group now contains all new personal **Developer** environme
 > [!NOTE]
 > For **Developer** environments in the _Personal Productivity_ group, the sharing limit can't be changed in individual environment settings. The same default restriction applies to other rules. To make changes, adjust the rule and the change applies to all environments in the group.
 
-## Add environments to your environment group
+## Manually create environments into the group
 
-You can manually add environments to the _Personal Productivity_ group if you have existing **Developer** environments that belong there.
-
-1. Select the _Personal Productivity_ group.
-1. Select the **Add environments** button in the command bar.
-1. Select a single environment from the list of Managed Environments.
-1. Select **Add**.
-
-> [!NOTE]
->
-> - An environment can only belong to one environment group.
-> - Only Managed Environments can be added to an environment group.
-> - Any environment type, for example Production, Developer, or Sandbox, can be added to an environment group.
-> - It might take up to a minute for the environment to be added. Refresh the list manually to view.
-
-### Manually create environments into the group
+You can manually create environments to the _Personal Productivity_ group.
 
 1. Go to the **Environments** page.
 1. Select **New** in the command bar.
@@ -104,9 +90,15 @@ You can manually add environments to the _Personal Productivity_ group if you ha
 1. Enter the other details.
 1. Select **Save**.
 
+> [!NOTE]
+> 
+> - An environment can only belong to one environment group.
+> - Only Managed Environments can be created into an environment group.
+> - Any environment type, for example Production, Developer, or Sandbox, can be created into an environment group.
+
 ## Remove an environment from your environment group
 
-You can remove an environment from a group if it needs unique governance or if it's placed there by accident.
+You can remove an environment from a group if it needs unique governance or if it's created there by accident.
 
 1. Select the _Personal Productivity_ group.
 2. Select the environment you wish to remove.
