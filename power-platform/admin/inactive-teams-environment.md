@@ -4,7 +4,7 @@ description: Admins can configure an automatic cleanup process that removes inac
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/09/2024
+ms.date: 02/21/2024
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
@@ -45,7 +45,7 @@ The following users receive email notifications on the schedule described in the
 
 - System administrators of the environment.
 
-    A Dataverse for Teams environment is paired with a team in Microsoft Teams. The owners of the team are automatically granted the System Administrator role for the environment. They receive email notifications and can [trigger activity, re-enable, and recover the environment](#trigger-activity-re-enable-or-recover-a-dataverse-for-teams-environment) in the Power Platform admin center. Team members and guests don't receive the email notifications.
+    A Dataverse for Teams environment is paired with a team in Microsoft Teams. The owners of the team are automatically granted the System Administrator role for the environment. They receive email notifications and can [trigger activity, re-enable, and recover the environment](#trigger-activity-re-enable-and-recover-a-dataverse-for-teams-environment) in the Power Platform admin center. Team members and guests don't receive the email notifications.
 
 - The creator of the environment.
 - If environment administrators are no longer part of the tenant, then the tenant administrators are notified.
@@ -80,7 +80,7 @@ The following table describes the schedule of notifications and actions for Data
 > [!NOTE]
 > The **Environment disabled** tile displays anytime a Dataverse for Teams environment is disabled due to inactivity.
 
-## Trigger activity, re-enable, or recover a Dataverse for Teams environment
+## Trigger activity, re-enable, and recover a Dataverse for Teams environment
 
 By default, administrators have 30 days to re-enable an environment. An environment disabled for 30 days is automatically deleted. Administrators have seven days to recover a deleted environment. See [Recover a deleted Dataverse for Teams environment](#recover-a-deleted-dataverse-for-teams-environment).
 
