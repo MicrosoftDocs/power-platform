@@ -40,7 +40,7 @@ Two security models can be used for hierarchies, the _manager hierarchy_ and the
 >
 > In addition to the manager hierarchy security model, a manager must have at least the user level Read privilege on a table, to see the reports’ data. For example, if a manager doesn’t have Read access to the Case table, the manager can't see the cases that their reports have access to.  
 > 
-> In order for the manager to see all the direct report's records, the direct report user must have an **Enabled** user status.
+
 
 For a non-direct report in the same management chain of the manager, a manager has read-only access to the non-direct report’s data. For a direct report, the manager has Read, Write, Append, AppendTo access to the report’s data. To illustrate the manager hierarchy security model, let’s take a look at the following diagram. The CEO can read or update the VP of Sales data and the VP of Service data. However, the CEO can only read the sales manager data and the service manager data, as well as the sales and support data. You can further limit the amount of data accessible by a manager with _depth_. Depth is used to limit how many levels deep a manager has read-only access to the data of their reports. For example, if the depth is set to 2, the CEO can see the data of the VP of Sales, VP of Service, and sales and service managers. However, the CEO doesn’t see the sales data or the support data.  
   
@@ -70,7 +70,6 @@ To illustrate the concept of the direct ancestor path, let’s look at the follo
 >  
 > In addition to the position hierarchy security model, the users at a higher level must have at least the user-level read privilege on a table to see the records that the users at the lower positions have access to. For example, if a user at a higher level doesn’t have read access to the Case table, that user won’t be able to see the cases that the users at a lower positions have access to.  
 > 
-> In order for the user at the higher position to see all the lower position user's records, the lower position user must have an **Enabled** user status.
   
 ## Set up hierarchy security  
 To set up hierarchy security, make sure you have the System Administrator permission to update the setting.
@@ -141,6 +140,26 @@ The manager hierarchy is easily created by using the manager relationship on the
    The example of the enabled users with their corresponding positions is shown in the followin image.  
   
    :::image type="content" source="../admin/media/hierachy-security-enabled-users.png" alt-text="Enabled users with assigned positions.":::
+
+## Include records owned by directs with disabled user status  
+ Managers can see their disabled status direct's records for environments that hierarchy security was enabled after January 31, 2024. For other environments, disabled status direct's records are not included.
+ 
+ To include disabled status direct's records:
+ 
+ 1. Install the [OrganizationSettingsEditor tool](https://learn.microsoft.com/power-platform/admin/environment-database-settings#install-the-organizationsettingseditor-tool).
+ 1. Update the **AuthorizationEnableHSMForDisabledUsers** setting to **false**.
+ 1. Disable the [Hierarchy modeling](https://learn.microsoft.com/power-platform/admin/hierarchy-security?tabs=preview#set-up-hierarchy-security).
+ 1. Re-enable it again.
+   
+ To exclude disabled status direct's records:
+ 1. Install the [OrganizationSettingsEditor tool](https://learn.microsoft.com/power-platform/admin/environment-database-settings#install-the-organizationsettingseditor-tool).
+ 1. Update the **AuthorizationEnableHSMForDisabledUsers** setting to **true**.
+ 1. Disable the [Hierarchy modeling](https://learn.microsoft.com/power-platform/admin/hierarchy-security?tabs=preview#set-up-hierarchy-security).
+ 1. Re-enable it again.
+   
+   > [!NOTE]
+   >  It can take a while when you disabled and re-enabled the hierarchy modeling for the system to recompute the manager record accesses. In an event of a timeout, you can submit a support ticket to request for assistance.   
+    Disabled status direct's records will be included if these records were shared with another direct who is active. You can exclude these records by removing the **share**. 
 
 ## Performance considerations  
  To boost the performance, we recommend:  
