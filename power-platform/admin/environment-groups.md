@@ -25,6 +25,8 @@ Admins can apply various security or compliance rules to these groups to govern 
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note.md)]
 
+View the [Supplemental terms of use for Microsoft Power Platform and Dynamics 365 preview for online services](https://dynamics.microsoft.com/legaldocs/supp-dynamics365-preview/).
+
 ## Strategies for using environment groups
 
 There are many ways to manage pockets of environments within your tenant using environment groups. For example, global organizations might choose to create an environment group for all environments in each geographic region to ensure compliance with legal and regulatory requirements. You can also organize environment groups by department or other criteria.
