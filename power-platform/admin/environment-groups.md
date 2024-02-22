@@ -21,7 +21,7 @@ Startup or enterprise IT teams face the challenge of centrally governing the Pow
 
 Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location.
 
-Admins can apply various security or compliance rules to these groups to govern many environments in bulk, reducing manual effort and ensuring consistency.
+Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets.
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note.md)]
 
@@ -31,13 +31,13 @@ View the [Supplemental terms of use for Microsoft Power Platform and Dynamics 36
 
 There are many ways to manage pockets of environments within your tenant using environment groups. For example, global organizations might choose to create an environment group for all environments in each geographic region to ensure compliance with legal and regulatory requirements. You can also organize environment groups by department or other criteria.
 
-In this article, you will see how to augment your _default environment strategy_ by combining _environment groups_ with [_default environment routing_](default-environment-routing.md). Default environment routing gives makers their own personal **Developer** environment. This environment is a secure space to build with Microsoft Dataverse and is similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity.
+In this article, you learn how to augment your _default environment strategy_ by combining _environment groups_ with [_default environment routing_](default-environment-routing.md). Default environment routing gives makers their own personal developer environment. This environment is a secure space to build with Microsoft Dataverse and is similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity.
 
 Enabling _default environment routing_ might give you more environments to manage, but automatically creating them into a single environment group ensures they're preconfigured with important baseline controls your organization requires.
 
 ## Create an environment group
 
-[Power Platform tenant administrators](use-service-admin-role-manage-tenant.md) can create as many environment groups as necessary to meet their organization's needs. In this article, you create a single environment group named **Personal Productivity** where all your new Developer environments will be created into.
+[Power Platform tenant administrators](use-service-admin-role-manage-tenant.md) can create as many environment groups as necessary to meet their organization's needs. You can create a single environment group named **Personal Productivity**, then create new developer environments into the group.
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Environment groups** in the navigation pane.
@@ -68,7 +68,7 @@ You can configure the _sharing limits_ rule. Since the environment group is inte
 
 ## Route environments to your environment group
 
-With your environment group set up, it can now serve as the home for all new personal Developer environments that are created by *default environment routing*. This provides the assurance that all newly created Developer environments are automatically pre-configured to meet baseline requirements from the start.
+With your environment group set up, it can now serve as the home for all new personal developer environments that are created by _default environment routing_. This deafult ensures that all newly created developer environments are automatically preconfigured to meet baseline requirements from the start.
 
 ### Select an environment group
 
@@ -78,11 +78,11 @@ With your environment group set up, it can now serve as the home for all new per
 1. Select **Save**.
 
 > [!NOTE]
-> For **Developer** environments in the _Personal Productivity_ group, the sharing limit can't be changed in individual environment settings. The same default restriction applies to other rules. To make changes, adjust the rule and the change applies to all environments in the group.
+> For developer environments in the _Personal Productivity_ group, the sharing limit can't be changed in individual environment settings. The same default restriction applies to other rules. To make changes, adjust the rule and the change applies to all environments in the group.
 
 ## Manually create environments into the group
 
-You can manually create environments to the _Personal Productivity_ group.
+You can manually create environments into the _Personal Productivity_ group.
 
 1. Go to the **Environments** page.
 1. Select **New** in the command bar.
@@ -91,10 +91,10 @@ You can manually create environments to the _Personal Productivity_ group.
 1. Select **Save**.
 
 > [!NOTE]
-> 
+>
 > - An environment can only belong to one environment group.
 > - Only Managed Environments can be created into an environment group.
-> - Any environment type, for example Production, Developer, or Sandbox, can be created into an environment group.
+> - Any environment type, for example production, developer, or sandbox, can be created into an environment group.
 
 ## Remove an environment from your environment group
 
