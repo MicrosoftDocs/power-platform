@@ -29,7 +29,7 @@ Admins can apply various security or compliance rules to these groups to govern 
 
 There are many ways to manage pockets of environments within your tenant using environment groups. For example, global organizations might choose to create an environment group for all environments in each geographic region to ensure compliance with legal and regulatory requirements. You can also organize environment groups by department or other criteria.
 
-In this article, you see how to augment your _default environment strategy_ by combining _environment groups_ with [_default environment routing_](default-environment-routing.md). Default environment routing gives makers their own personal **Developer** environment. This environment is a secure space to build with Microsoft Dataverse and is similar to [OneDrive](/microsoft-365/onedrive/online-cloud-storage) for personal productivity.
+In this article, you see how to augment your _default environment strategy_ by combining _environment groups_ with [_default environment routing_](default-environment-routing.md). Default environment routing gives makers their own personal **Developer** environment. This environment is a secure space to build with Microsoft Dataverse and is similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity.
 
 Enabling this feature might give you more environments to manage, but automatically adding them into a single environment group ensures they're preconfigured with important baseline controls your organization requires.
 
