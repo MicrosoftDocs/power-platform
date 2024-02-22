@@ -37,42 +37,43 @@ Before you begin, make sure that you have your CLU model project name and deploy
    >
    > Not all regions supported by Microsoft Copilot Studio have an equivalent CLU region.
 
-2. With your bot open, expand the **Settings** tab on the side menu pane and select **Language**.
+2. With your bot open, expand the **Settings** tab on the side menu pane and select **Language understanding**.
 
-   :::image type="content" source="media/advanced-clu-integration/clu-enable-language.png" alt-text="Screenshot of the Microsoft Copilot Studio web app with the Settings and Language menu options highlighted." border="false":::
+   :::image type="content" source="media/advanced-clu-integration/clu-enable-language.png" alt-text="Screenshot of the Microsoft Copilot Studio web app with the Settings and Language understanding menu options highlighted." border="false":::
 
    >[!NOTE]
-   > If you have already enabled a CLU connection, skip to step 4.
+   > If you have already enabled a CLU connection, skip to step 8.
 
-3. To create a new connection, from within Power Apps, choose the **Connections** menu, select **...More**, and then search for **Azure Cognitive Service for Language**.
+   > [!NOTE]
+   > If you you see the following, then you are **not** connected to **Azure Cognitive Service for Language**. Follow steps 3-7 to connect.
+   > 
+   > :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected.png" alt-text="Language understanding option menu when not connected to Azure Cognitive Service for Language." border="false":::
 
+3. To create a new connection, from within Power Apps, open the **Connections** menu by selecting **...More** and then **Connections**. 
 
     :::image type="content" source="media/advanced-clu-integration/clu-image2.png" alt-text="Azure Cognitive Service for Language." border="false":::
 
-4. From the **NLU Resource** drop-down list, choose **Microsoft Copilot Studio NLU**.
+4. Select **New connection** and search for **Azure Cognitive Service for Language**. This will take you to an authentication settings page.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image1.png" alt-text="Language option to select NLU resource." border="false":::
+5. Select API key for authentication type, enter account key and site URL, then select **Create**. 
+    :::image type="content" source="media/advanced-clu-integration/clu-image3.png" alt-text="Enter display name, authentication type, account key, and Site URL." border="false":::
 
-> [!NOTE]
-> If you you see the following, then you are not connected to **Azure Congnitive Service for Language**. Follow step 3 to connect.
-> 
-> :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected-27Jun23.png" alt-text="Language option menu when not connected to Azure Congintive Service for Language." border="false":::
+6. To view the connection in the **Connections** list, select the **Azure Cognitive Service for Language** connector and select **Edit** in the More commands menu. 
+7. Change the display name to something else to distinguish it from other CLU connectors. The name you enter to change can be any name you choose. With the connector created and configured in Power Apps, you can return to your Microsoft Copilot Studio copilot.
 
-5. Select the **+ (plus sign)** on the to the right of the connector name, to display the authentication settings page. 
-6. Enter the display name, API key, account key, site URL, then select **Save**. Once Power Apps creates the connector, return to your Microsoft Copilot Studio copilot.
-    :::image type="content" source="media/advanced-clu-integration/clu-image3.png" alt-text="Enter display name, authentication type, account key, and Site URL." border="false"::: 
+8. In the **Language understanding** tab in Copilot Studio, choose **Microsoft Copilot Studio NLU** from the **NLU Resource** drop-down list.
 
-7. To view it in the **Connections** list, right click the **Azure Cognitive Service for Language** connector and select **Edit**. 
-9. Change the display name to something else to distinguish it from other CLU connectors. The name you enter to change can be any name you choose.
-8. From the left navigation in Microsoft Copilot Studio, choose **Language**, then in the **NLU Resource** drop-down list, choose [*the name you typed in the last step*], then select **Save**.
-9. In the **Delete example trigger phrases?** option, select **Save snapshot**. This saves the copilot content, including trigger phrases and bot dialogues into a backlog file in YAML format.
+    :::image type="content" source="media/advanced-clu-integration/clu-image1.png" alt-text="Language understanding option to select NLU resource." border="false":::
+
+9. Choose the display name you chose earlier for the CLU connector, then select **Save**. A **Delete example trigger phrases?** window opens.
+10. Select **Save snapshot**. This saves the copilot content, including trigger phrases and bot dialogues into a backlog file in YAML format. Select **Yes, delete my trigger phrase** and then select **Continue**.
 
     :::image type="content" source="media/advanced-clu-integration/clu-image4.png" alt-text="Select Save snapshot to delete example trigger phrases." border="false"::: 
  
-10. Enter your project name and deployment information, and select **Save**.
+11. Enter your project name and deployment information, and select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image5.png" alt-text="Choose a project and model in Azure Cognitive Service for Language." border="false"::: 
 
-Next, switch back to Microsoft Copilot Studio. Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
+Returning to the Microsoft Copilot Studio **Language understanding** tab, select **Save**. Changing the NLU configuration removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
 
 :::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Microsoft Copilot Studio NLU." border="false"::: 
 
