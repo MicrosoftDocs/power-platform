@@ -147,18 +147,18 @@ The manager hierarchy is easily created by using the manager relationship on the
  To include disabled status direct's records:
  
  1. Install the [OrganizationSettingsEditor tool](https://learn.microsoft.com/power-platform/admin/environment-database-settings#install-the-organizationsettingseditor-tool).
- 1. Update the **AuthorizationEnableHSMForDisabledUsers** setting to **false**.
+ 1. Update the **AuthorizationEnableHSMForDisabledUsers** setting to **true**.
  1. Disable the [Hierarchy modeling](https://learn.microsoft.com/power-platform/admin/hierarchy-security?tabs=preview#set-up-hierarchy-security).
  1. Re-enable it again.
    
  To exclude disabled status direct's records:
  1. Install the [OrganizationSettingsEditor tool](https://learn.microsoft.com/power-platform/admin/environment-database-settings#install-the-organizationsettingseditor-tool).
- 1. Update the **AuthorizationEnableHSMForDisabledUsers** setting to **true**.
+ 1. Update the **AuthorizationEnableHSMForDisabledUsers** setting to **false**.
  1. Disable the [Hierarchy modeling](https://learn.microsoft.com/power-platform/admin/hierarchy-security?tabs=preview#set-up-hierarchy-security).
  1. Re-enable it again.
    
    > [!NOTE]
-   >  It can take a while when you disabled and re-enabled the hierarchy modeling for the system to recompute the manager record accesses. In an event of a timeout, you can submit a support ticket to request for assistance.   
+   >  It can take a while when you disabled and re-enabled the hierarchy modeling for the system to recompute the manager record accesses. In an event of a timeout, you can try to reduce the number of tables under the **Hierarchy Table Management** list to only the tables that you need your managers to view their direct's records. If timeout persists, you can submit a support ticket to request for assistance.   
     Disabled status direct's records will be included if these records were shared with another direct who is active. You can exclude these records by removing the **share**. 
 
 ## Performance considerations  
