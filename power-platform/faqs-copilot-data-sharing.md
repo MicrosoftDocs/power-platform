@@ -22,7 +22,7 @@ Microsoft is constantly working to improve the quality of the new AI-powered Cop
 
 ## How does it work?
 
-You may opt in to participate by using the Power Platform admin center. To opt in: 
+You may opt in to participate by using the Power Platform admin center. This setting is currently only viewable for tenants located in the US. To opt in: 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
