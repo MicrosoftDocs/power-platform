@@ -83,7 +83,7 @@ Now that you’ve completed preparing your environment, you’re ready to map in
 
 1. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 2. Then create a language resource in [Language Studio](https://language.cognitive.azure.com/), with the [conversational language understanding](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio) feature enabled.
-3. Note, to ensure PVA functions correctly, you will need to create intents for [Power Virtual Agent's system topics](authoring-system-topics.md) and for [any custom topics](authoring-create-edit-topics.md) you may want to author.
+3. Note, to ensure Copilot Studio functions correctly, you will need to create intents for [Copilot Studio's system topics](authoring-system-topics.md) and for [any custom topics](authoring-create-edit-topics.md) you may want to author.
 4. Author [any custom entities](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components) you want to use in your Microsoft Copilot Studio project.
 5. Train and deploy the project in the same region as your Microsoft Copilot Studio resource.
 
@@ -91,15 +91,15 @@ Now that you’ve completed preparing your environment, you’re ready to map in
 
 You create a new Microsoft Copilot Studio copilot by mapping existing topics to CLU intents. You can manually map intents and entities, or for bulk mapping, see [Use the Bulk tool wizard](#use-the-bulk-tool-wizard).
 
-### Manually map intents:
+### Manually map intents
 
 1.	Open your [Microsoft Copilot Studio](authoring-first-bot.md) copilot.
 
-1. From the left navigation, select **Topics**.
+1. From the left navigation, select **Topics and plugins** and select an intent.
 
     :::image type="content" source="media/advanced-clu-integration/clu-menu-topics.png" alt-text="Select Topics from the left navigation." border="false"::: 
 
-1. In the *Phrases* section of the Trigger node, select the **Edit** link.
+1. In the *Phrases* section of the Trigger node for the intent, select the **Edit** link.
 
     :::image type="content" source="media/advanced-clu-integration/map-intent-phrases.png" alt-text="Select the Edit link." border="false"::: 
 
@@ -111,6 +111,7 @@ You create a new Microsoft Copilot Studio copilot by mapping existing topics to 
     > The CLU intent name must be typed exactly as stored in the CLU model, including matching case as uppercase and lowercase characters. 
 
 1. Click the + (plus) sign to the right of the *Add phrases* box to save the intent.
+2. Repeat for the other intents.
  
 ### Manually map entities:
 
