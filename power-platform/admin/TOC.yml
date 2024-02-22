@@ -88,7 +88,7 @@
                   href: /power-apps/user/request-license
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
-                - name: Auto-claim policies for Power Apps licenses
+                - name: Autoclaim policies for Power Apps licenses
                   href: auto-claim-licensing.md
             - name: Power Automate
               items:
@@ -106,6 +106,8 @@
                   href: power-automate-licensing/add-ons.md
                 - name: Request a Power Automate premium license
                   href: power-automate-licensing/request-premium-license.md
+                - name: Autoclaim policies for Power Automate licenses (preview)
+                  href: power-automate-licensing/power-automate-auto-claim.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
             - name: Pay-as-you-go plan
@@ -608,6 +610,12 @@
                   href: restrict-access-online-trusted-ip-rules.md
                 - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
+            - name: Virtual Network support (preview)
+              items:
+                - name: Virtual Network support overview
+                  href: vnet-support-overview.md
+                - name: Set up and configure Virtual Network support
+                  href: vnet-support-setup-configure.md
             - name: Security FAQs
               href: security/faqs.md
         - name: Analytics
@@ -678,8 +686,8 @@
                   href: subscription-tracking-deleted-object-retention.md
             - name: Add storage capacity
               href: add-storage.md
-            - name: Access storage with SAS token
-              href: storage-sas-token.md
+            - name: Access storage
+              href: access-storage.md
         - name: Resources
           items:
             - name: Overview
@@ -702,7 +710,7 @@
               href: logging-power-automate.md
             - name: Power Pages activity logging (preview)
               href: logging-power-pages.md
-            - name: Power Platform connector activity logging (preview)
+            - name: Power Platform connector activity logging
               href: connector-events-power-platform.md
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
@@ -710,7 +718,7 @@
               href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
-            - name: View Power Platform administrative logs in Microsoft Purview (preview)
+            - name: View Power Platform administrative logs in Microsoft Purview
               href: admin-activity-logging.md
         - name: Programmability and extensibility
           items:

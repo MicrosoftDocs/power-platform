@@ -5,7 +5,7 @@ author: swatimadhukargit
 ms.subservice: alm
 ms.author: swatim
 ms.custom: ""
-ms.date: 02/01/2024
+ms.date: 02/21/2024
 ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
@@ -30,7 +30,7 @@ When the setting is enabled, these operations are blocked for the environment:
 - Adding unmanaged changes to existing managed components are blocked.
 - Any unmanaged changes result in an error returned to the user, such as: “This environment doesn't allow unmanaged customizations. This was a choice made by your admin, and certain actions won't be available or will be view only.”
 
-The following operations aren't blocked by this feature:
+The following operations can be completed even with the block unmanaged customizations setting enabled:
 
 - Change of environment variable, enabling or disabling components. For example, turning Power Automate flows on or off, assigning ownership, or sharing of table records.
 - Solutions operations like remove [Remove an unmanaged layer](/power-apps/maker/data-platform/solution-layers#remove-an-unmanaged-layer).
@@ -44,7 +44,7 @@ This feature can be enabled or disabled from the **Features** area of the enviro
 
 These features have limitations and might not work as expected in an environment where block unmanaged customizations is enabled. Using these features can result in this error: “This environment doesn't allow unmanaged customizations. This was a choice made by your admin, and certain actions won't be available or will be view only."
 
-If you must use one of the below apps or features in an environment where block unmanaged customizations is enabled, we recommend you disable the setting during the preview.
+If you must use one of the below apps or features in an environment where block unmanaged customizations is enabled, we recommend you disable the setting during preview.
 
 | App or feature  | Limitation  |
 |---------|---------|
@@ -57,6 +57,8 @@ If you must use one of the below apps or features in an environment where block 
 |Field Service Mobile     |  Install of geofencing solution doesn't work. <br />Update doesn't work when relationships created during initial install are deleted.        |
 |Resource Scheduling      | Enable of scheduling table and selection option to auto create relationships doesn't work.        |
 |Sales Accelerator     |  Enabling Sales Accelerator or modifying settings, enabling leads data hygiene, creating or editing sequences, configuring work assignment, creating or editing segments, don't work.        |
+|Dataflows      | Creation of a new dataflow, republish an existing dataflow, change refresh settings, change incremental refresh, and importing dataflows don't work.          |
+|Dynamics 365 Customer Insights - Journeys (real-time journeys)  |  Journeys can't be created and published.  <br /> Engagement assets such as triggers can't be created and published.  <br />Channel assets such as emails, forms, SMS, and push notifications can't be created and published.  |
 
 ## See also
 

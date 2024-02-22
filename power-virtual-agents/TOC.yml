@@ -18,7 +18,7 @@
   items:
     - name: Get access to Microsoft Copilot Studio
       href: requirements-licensing-subscriptions.md
-    - name: Use prebuilt chatbot templates in Microsoft Teams
+    - name: Use prebuilt copilot templates in Microsoft Teams
       href: fundamentals-templates.md
     - name: Quickstart - Create and deploy a copilot
       href: fundamentals-get-started.md
