@@ -33,9 +33,9 @@ You can use the **Copy** option in the Microsoft Power Platform admin center to 
   
 **An example scenario**  
   
-Isaac, a business application developer, has received a request from the sales department to configure and deploy a social media integration solution from another company vendor. Isaac has never installed a solution from this vendor and is unsure what impact this would have on the production application. Isaac would like to import the solution into an environment that is nearly identical to, but isolated from, production to learn about the solution and make the appropriate configuration changes. Isaac submits a request to Thomas, the IT Manager for Contoso, to create an Everything copy sandbox environment for Isaac.  
+Isaac, a business application developer, received a request from the sales department to configure and deploy a social media integration solution from another company vendor. Isaac never installed a solution from this vendor and is unsure what impact this would have on the production application. Isaac would like to import the solution into an environment that is nearly identical to, but isolated from, production to learn about the solution and make the appropriate configuration changes. Isaac submits a request to Thomas, the IT Manager for Contoso, to create an Everything copy sandbox environment for Isaac.  
   
-After the Everything copy is complete, Isaac receives a mail from Thomas telling that the sandbox environment is ready. Isaac logs into the sandbox environment and makes the necessary changes to make sure that production external services won't be impacted by the sandbox environment.  Once changes are complete, Isaac turns off administration mode and enables background services.  Isaac is able to use the Everything copy sandbox environment to do the testing and later manually import the solution into production.  
+After the Everything copy is complete, Isaac receives a mail from Thomas telling that the sandbox environment is ready. Isaac logs into the sandbox environment and makes the necessary changes to make sure that production external services isn't be impacted by the sandbox environment. Once changes are complete, Isaac turns off administration mode and enables background services. Isaac is able to use the Everything copy sandbox environment to do the testing and later manually import the solution into production.  
   
 ## Copy over customizations and schemas only 
  Customizations and schemas copy only includes users, customizations, and schema from the source environment and is suitable for:  
@@ -46,12 +46,12 @@ After the Everything copy is complete, Isaac receives a mail from Thomas telling
   
 **An example scenario**  
   
-Isaac has a large development project starting next week for the sales department.  Isaac has a team of developers ready to start on the project, some of whom are internal to Contoso and some are external vendors. The Contoso sales application contains Personally Identifiable Information (PII) that the sales manager has explicitly stated must not be made available to any external parties for privacy and legal liability reasons.  Isaac requests customizations and schemas only copy sandbox environment that doesn't contain any production data or users. In addition, Isaac creates a Microsoft 365 security group to give the development team access to the sandbox environment.  
+Isaac has a large development project starting next week for the sales department. Isaac has a team of developers ready to start on the project, some of whom are internal to Contoso and some are external vendors. The Contoso sales application contains personal data that the sales manager stated must not be made available to any external parties for privacy and legal liability reasons. Isaac requests customizations and schemas only copy sandbox environment that doesn't contain any production data or users. In addition, Isaac creates a Microsoft 365 security group to give the development team access to the sandbox environment.  
   
-After modifying and enabling some of the plug-ins, the developer sandbox environment functions the same and is isolated from the production application.  The development team works on their modifications in this environment for several weeks.  They package their changes into a solution and export/import to deploy to the Everything copy sandbox environment.  After a successful round of testing and signoffs, the changes are manually deployed to production.  
+After modifying and enabling some of the plug-ins, the developer sandbox environment functions the same and is isolated from the production application. The development team works on their modifications in this environment for several weeks. They package their changes into a solution and export/import to deploy to the Everything copy sandbox environment. After a successful round of testing and signoffs, the changes are manually deployed to production.  
   
 ### Tables truncated in customizations and schemas only copy 
- The following tables will be truncated when you do a customizations and schemas only copy:  
+ The following tables are truncated when you do customizations and schemas only copy:  
 
 | Tables    |  &nbsp;    |  &nbsp;   |
 |-----------|-----------|-----------| 
@@ -145,7 +145,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 
 6. Select a target environment.
   
-   A target environment can be a sandbox or preview environment, not a production environment. A sandbox or preview environment can be promoted to a production environment type later after the copy environment operation. If you're copying an environment of type **Trial (subscription-based)**, you'll be able to see and select target environments of the same type, that is **Trial (subscription-based)**.
+   A target environment can be a sandbox or preview environment, not a production environment. A sandbox or preview environment can be promoted to a production environment type later after the copy environment operation. If you're copying an environment of type **Trial (subscription-based)**, you'll be able to see and select target environments of the same type that is **Trial (subscription-based)**.
   
    > [!WARNING]
    >  The data, components, and customizations in target environment will be deleted and replaced with a copy of the data, components, and customizations from the source environment. You won’t be able to recover any deleted data.  
@@ -213,7 +213,7 @@ Copying audit logs can significantly add to the time it takes to copy an environ
   
 - **Yammer** - Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the production environment. Go to **Settings** > **Administration** > **Yammer Configuration**.  
   
-     After creating a new sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you've connected Yammer to customer engagement apps there will be Yammer activity streams posted from customer engagement apps to Yammer asynchronously. These activity streams aren't visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, these activity steams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
+     After creating a new sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you've connected Yammer to customer engagement apps there will be Yammer activity streams posted from customer engagement apps to Yammer asynchronously. Such activity streams aren't visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, activity streams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
   
 - **Platform extensibility** - Consider disabling the following that could be running in the copy environment and impacting external service components.  
     - **Server-side plug-ins**.  
@@ -227,29 +227,29 @@ Copying audit logs can significantly add to the time it takes to copy an environ
 
 - **Flows**
    - Notes
-      - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain.
-      - Flows will initially be disabled.
-      - Flow run history will not be copied to the target environment.
-      - Flows with a “When a HTTP request is received” trigger will have a new HTTP URL.
-      - If the source environment was a default environment, then integrating services like SharePoint, Excel, Teams, PowerBI, and OneDrive will continue to point at any related flows in the source environment. Consider if those integration flows can remain in the source default environment. Remove any integration flows from the target environment that are staying behind in the source default environment.   
+      - In the target environment, existing solution flows are deleted but existing nonsolution flows remain.
+      - Flows are initially disabled.
+      - Flow run history won't be copied to the target environment.
+      - Flows with a "When a HTTP request is received" trigger has a new HTTP URL.
+      - If the source environment was a default environment, then integrating services like SharePoint, Excel, Teams, Power BI, and OneDrive continue to point at any related flows in the source environment. Consider if those integration flows can remain in the source default environment. Remove any integration flows from the target environment that stays behind in the source default environment.   
    - Action items
       1. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations.
-      2. Review flows that use custom connectors to ensure they are pointing at the new custom connector in the target environment.
+      2. Review flows that use custom connectors to ensure they're pointing at the new custom connector in the target environment.
       3. Before enabling flows in the target environment, consider if the corresponding flows should be disabled in the source environment and if appropriate, then disable those flows. Ensure that flow runs have completed before disabling flows.
-      4. Enable flows as needed. Note that any child flows will need to be enabled before parent flows can be enabled.
-      5. For any flows using the “When a HTTP request is received” trigger, adjust any dependent flows or apps to call the new HTTP URL. If the flows in the source environment are disabled, then testing that the dependent apps have been redirected correctly becomes easier.
+      4. Enable flows as needed. Any child flows need to be enabled before parent flows can be enabled.
+      5. For any flows using the "When a HTTP request is received" trigger, adjust any dependent flows or apps to call the new HTTP URL. If the flows in the source environment are disabled, then testing that the dependent apps have been redirected correctly becomes easier.
       6. Ensure that all apps in the target environment are pointing at flows in the target environment. 
 
 - **Connection References**
    - Notes
-      - Connection References will require new connections.
-      - To review a full list of connection references: open **Solutions**, search for the **Default Solution**, click on the objects filter for **Connection references**, then click on each one to view its properties and connection.
+      - Connection References require new connections.
+      - To review a full list of connection references: open **Solutions**, search for the **Default Solution**, select on the objects filter for **Connection references**, then select on each one to view its properties and connection.
    - Action items
       - Create or set connections on all Connection References. Ensure that the connections are created by the appropriate user.
 
 - **Custom Connectors**
    - Notes
-      - Custom connectors will have a new identifier in the target environment, so flows that were pointing at the custom connector in the previous environment will need to be adjusted to point to the new custom connector.
+      - Custom connectors have a new identifier in the target environment, so flows that were pointing at the custom connector in the previous environment needs to be adjusted to point to the new custom connector.
    - Action items
       - Review all custom connectors in the custom connectors page to ensure they were published correctly.
 
