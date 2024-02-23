@@ -48,7 +48,7 @@ You can use the emails to communicate program expectations, link to useful resou
 Once you've added the *Buddy Onboard Emails* flow, you can edit the emails.
 
 1. Go to the *unmanaged* Onboarding Buddy solution and select the **Buddy Onboard Emails** flow.
-1. In the flow and make your changes, find the email you want to update and make your changes.
+1. In the flow, find the email you want to update and make your changes.
 1. Save your flow.
 
 ## Update program information in the app user interface
@@ -85,7 +85,7 @@ The Onboarding Buddy template matches Buddies and Onboarders using their *Region
 You're not limited to matching Buddies and Onboarders by their region and organization. You have several ways to change how the solution matches Buddies and Onboarders. Here are some examples:
 
 - Add a new choice attribute to match on. For static values, especially values that are shared with other applications, choice components can be a good option.
-- Add a table-driven attribute to match on.If you need to add or change values often, creating a table to store them makes updates easier than using a choice component.
+- Add a table-driven attribute to match on. If you need to add or change values often, creating a table to store them makes updates easier than using a choice component.
 - Allow the user to self-select attribute filters to find available buddies. Rather than force Region and Organization matching, allow the user to see various available buddies by adding a user-configurable filter to the matching screen.
 
 To change the user interface or logic, you need to modify the **Buddy Matches** screen. The `Items` property of the gallery **galBuddies_BuddyMatches** contains the Buddy matching filter code:
