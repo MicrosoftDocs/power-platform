@@ -40,11 +40,13 @@ Additionally, you can only install finance and operations apps in to a Power Pla
 
 ### Known limitations
 
-Be sure to check out the latest known limitations available in the overview article [Unified admin experience for finance and operations apps (preview)](finance-operations-apps-overview.md#known-limitations-during-preview).
+Below are a list of known limitations for installation of the provisioning app.  
+
+1. You must use an enviornment with the **Enable Dynamics 365 apps** enabled at the time that enviornment was created.  This is a prerequisite for all Dynamics 365 apps including Sales, Customer Service, Field Service, and all of the finance and operations apps. If you try to install on an environment where this was not enabled, you will receive an error such as "Dynamics 365 Finance and Operations Provisioning App' is not supported on SchemaType: Standard".  The schema is not a visible property in Power Platform admin center, and it cannot be changed after the environment is created.  You will need to try installing finance and operations apps in another environment, or [Create an environment with an ERP template](./tutorial-deploy-new-environment-with-ERP-template.md).
+
+2. You must first install the Platform tools app, before installing the Provisioning app.  The detailed steps are outlined below.  If you forget to do this, you will receive an error such as "Please install 'Dynamics 365 Finance and Operations Platform Tools' application before installing 'Dynamics 365 Finance and Operations Provisioning App".  You can install the missing app, and then retry the installation of the provisioning app.
 
 ## Step-by-step installation guide
-
-# [Power Platform admin center]
 
 ### Install on an environment
 
