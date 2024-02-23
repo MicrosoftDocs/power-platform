@@ -530,9 +530,10 @@ Get-DlpPolicy
 Gets policy objects for the signed-in admin's tenant.
 
 > [!NOTE]
-> - When viewing a DLP policy using PowerShell, the display name of connectors will reflect the names of the connectors when the DLP policy was created or when the specific connectors were last moved within the policy. In other words, changes to the display names of connectors won't be reflected.
-> - When viewing a DLP policy using PowerShell, new connectors that are in the default group and have never been moved won't be returned.
-> 
+>
+> - When viewing a DLP policy using PowerShell, the display name of connectors are from when the DLP policy was created or when the connectors were last moved within the policy. New changes to the display names of connectors won't be reflected.
+> - When viewing a DLP policy using PowerShell, new connectors in the default group that haven't been moved won't be returned.
+>
 > For both of these known issues, a workaround is to move the affected connector to another group within the policy and then move it back to the correct group.  After doing this, each of the connectors will be visible with their correct name.
 
 ### Update a DLP policy
@@ -588,11 +589,11 @@ To exempt a resource from a DLP policy, you need the following information:
 
 You can retrieve the resource ID and type using PowerShell cmdlets Get-PowerApp for apps and Get-Flow for flows.
 
-**Example** 
+#### Example removal script
 
-To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 06002625-7154-4417-996e-21d7a60ad624 we can run the following cmdlets:
+To exempt flow with ID `f239652e-dd38-4826-a1de-90a2aea584d9` and app with ID `06002625-7154-4417-996e-21d7a60ad624`, we can run the following cmdlets:
 
-```
+```powershell
 1. PS D:\> $flow = Get-Flow -FlowName f239652e-dd38-4826-a1de-90a2aea584d9 
 2. PS D:\> $app = Get-PowerApp -AppName 06002625-7154-4417-996e-21d7a60ad624 
 3. PS D:\> $exemptFlow = [pscustomobject]@{ 
@@ -613,7 +614,7 @@ To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 0600
 18. {@{id=/providers/Microsoft.ProcessSimple/environments/Default-b1c07da8-2ae2-47e7-91b8-d3418892f507/flows/f239652e-dd38-4826-a1de-90a2aea584d9; type=Microsoft.ProcessSimple/environments/flows}, @{id=/providers/Microsoft.PowerApps/apps/06002625-7154-4417-996e-21d7a60ad.. 
 ```
 
-### DLP exemption experience in the following scenarios: 
+### DLP exemption experience in the following scenarios
 
 | # | Scenario              | Experience              |
 |-------|----------------------------------------|-----------------------------------|
@@ -686,7 +687,7 @@ You can enforce DLP policies on connections in an environment. Enforcing disable
 Start-DLPEnforcementOnConnectionsInEnvironment -EnvironmentName [Environment ID]
 ```
 
-**Example**
+##### Example environment enforcement script
 
 ```powershell
 Start-DLPEnforcementOnConnectionsInEnvironment -EnvironmentName c4a07cd6-cb14-e987-b5a2-a1dd61346963 
@@ -723,8 +724,8 @@ If you have any comments, suggestions, or questions, post them on the [Administe
 
 ### See also
 
-[Get started using the Power Apps admin module.](/powershell/powerapps/get-started-powerapps-admin) <br />
-[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell) <br />
+[Get started using the Power Apps admin module.](/powershell/powerapps/get-started-powerapps-admin) <br>
+[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell) <br>
 [Preview: Programmability and extensibility overview](programmability-extensibility-overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
