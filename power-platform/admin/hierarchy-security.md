@@ -93,13 +93,13 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
 
     In the **Hierarchy Table Management** area, all system tables are enabled for hierarchy security by default, but you can exclude selective tables from the hierarchy. To exclude specific tables from the hierarchy model, clear the checkboxes for the tables that you want to exclude and save your changes.
 
-    :::image type="content" source="../admin/media/hierarchy-security.png" alt-text="Screenshot of the Hierarchy Security page in Settings for Environments." lightbox="../admin/media/hierarchy-security.png":::
+    :::image type="content" source="media/hierarchy-security.png" alt-text="Screenshot of the Hierarchy Security page in Settings for Environments." lightbox="media/hierarchy-security.png":::
 
 1. Set the **Depth** to a desired value to limit how many levels deep a manager has a read-only access to the data of their reports.
   
     For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you sign in to customer engagement apps as a nonadministrator VP of Sales, you only see the active accounts of the users as shown:  
 
-    :::image type="content" source="../admin/media/sales-vp-access.png" alt-text="Screenshot that shows Read access for VP of Sales and other positions.":::
+    :::image type="content" source="media/sales-vp-access.png" alt-text="Screenshot that shows Read access for VP of Sales and other positions.":::
   
     > [!NOTE]
     >  While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.  
@@ -154,16 +154,16 @@ The manager hierarchy is easily created by using the manager relationship on the
 
  To include disabled status direct's records:
 
- 1. Install the [OrganizationSettingsEditor tool](environment-database-settings#install-the-organizationsettingseditor-tool).
+ 1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
  1. Update the **AuthorizationEnableHSMForDisabledUsers** setting to **true**.
- 1. Disable the [Hierarchy modeling](hierarchy-security?tabs=preview#set-up-hierarchy-security).
+ 1. Disable the [Hierarchy modeling](hierarchy-security.md#set-up-hierarchy-security).
  1. Re-enable it again.
 
  To exclude disabled status direct's records:
 
- 1. Install the [OrganizationSettingsEditor tool](environment-database-settings#install-the-organizationsettingseditor-tool).
+ 1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
  1. Update the **AuthorizationEnableHSMForDisabledUsers** setting to **false**.
- 1. Disable the [Hierarchy modeling](hierarchy-security?tabs=preview#set-up-hierarchy-security).
+ 1. Disable the [Hierarchy modeling](hierarchy-security.md#set-up-hierarchy-security).
  1. Re-enable it again.
 
     > [!NOTE]
