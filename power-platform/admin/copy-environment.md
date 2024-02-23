@@ -2,7 +2,7 @@
 title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
 ms.topic: conceptual
-ms.date: 07/10/2023
+ms.date: 02/22/2024
 author: ChrisGarty
 ms.author: cgarty
 ms.reviewer: sericks
@@ -245,13 +245,13 @@ Copying audit logs can significantly add to the time it takes to copy an environ
       - Connection References will require new connections.
       - To review a full list of connection references: open **Solutions**, search for the **Default Solution**, click on the objects filter for **Connection references**, then click on each one to view its properties and connection.
    - Action items
-      1. Create or set connections on all Connection References. Ensure that the connections are created by the appropriate user.
+      - Create or set connections on all Connection References. Ensure that the connections are created by the appropriate user.
 
 - **Custom Connectors**
    - Notes
       - Custom connectors will have a new identifier in the target environment, so flows that were pointing at the custom connector in the previous environment will need to be adjusted to point to the new custom connector.
    - Action items
-      1. Review all custom connectors in the custom connectors page to ensure they were published correctly.
+      - Review all custom connectors in the custom connectors page to ensure they were published correctly.
 
 ### After the target environment is running correctly, consider the source environment status
 
