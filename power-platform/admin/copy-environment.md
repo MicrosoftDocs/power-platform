@@ -265,8 +265,8 @@ Action items:
 Once the target environment is running correctly with the environment copy from the source environment, consider if the source environment should remain running. In some cases, a duplicate environment is desired, but in other cases, the source environment can now be deleted. Ensure that all components in target environment are running correctly before deleting a source environment. An [environment backup](/power-platform/admin/backup-restore-environments) of the source environment can be made if needed.
 
 Action items:
-1. Delete duplicate items
-2. If needed, delete source environment
+- Delete duplicate items.
+- If needed, delete source environment.
 
 ### See also  
 [What's new about storage](whats-new-storage.md) <br />
