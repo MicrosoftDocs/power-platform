@@ -199,9 +199,10 @@ Copying audit logs can significantly add to the time it takes to copy an environ
   
 3. Do nothing – leave the component as is in the copy environment. For example, you might decide to allow Yammer posting to both the copy and production environments.  
   
-   Here are some possible application components in the copy environment that could have external connections and therefore could impact services with the same connections in your production environment.  
-  
-- **Email** - A mailbox can't be synced with two different environments. For an Everything copy environment, the user mailboxes in the copy environment must be disabled so the mailboxes don't attempt to send or receive email, or track appointments, contacts, or tasks. Set synchronization for the following to None.  
+Here are some possible application components in the copy environment that could have external connections and therefore could impact services with the same connections in your production environment.  
+
+#### Email
+A mailbox can't be synced with two different environments. For an Everything copy environment, the user mailboxes in the copy environment must be disabled so the mailboxes don't attempt to send or receive email, or track appointments, contacts, or tasks. Set synchronization for the following to None.  
   
     - Incoming Email  
     - Outgoing Email  
@@ -209,49 +210,55 @@ Copying audit logs can significantly add to the time it takes to copy an environ
   
   More information: [Set the delivery method for incoming and outgoing email](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)  
   
-- **SharePoint** - Deactivate or redirect SharePoint to a sandbox SharePoint environment to prevent impacting documents managed by SharePoint. Go to **Settings** > **Documentation Management** > **SharePoint Sites**. Select your site, and then select **Deactivate**.  
+#### SharePoint
+Action items:
+1. Deactivate or redirect SharePoint to a sandbox SharePoint environment to prevent impacting documents managed by SharePoint. Go to **Settings** > **Documentation Management** > **SharePoint Sites**. Select your site, and then select **Deactivate**.  
   
-- **Yammer** - Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the production environment. Go to **Settings** > **Administration** > **Yammer Configuration**.  
+#### Yammer
+Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the production environment. Go to **Settings** > **Administration** > **Yammer Configuration**.  
   
-     After creating a new sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you've connected Yammer to customer engagement apps there will be Yammer activity streams posted from customer engagement apps to Yammer asynchronously. Such activity streams aren't visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, activity streams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
+After creating a new sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you've connected Yammer to customer engagement apps there will be Yammer activity streams posted from customer engagement apps to Yammer asynchronously. Such activity streams aren't visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, activity streams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
   
-- **Platform extensibility** - Consider disabling the following that could be running in the copy environment and impacting external service components.  
-    - **Server-side plug-ins**.  
-    - **Workflow custom activity**.  
+#### Platform extensibility
+Consider disabling the following that could be running in the copy environment and impacting external service components.  
+- **Server-side plug-ins**.  
+- **Workflow custom activity**.  
 
-- **Client extensibility** - Review the following.  
-    - **Client-side JavaScript**. Take a look at your JavaScript and HTML web resources for read/write operations that could impact external services.  
-    - **IFRAMES**. Determine if the target of an IFRAME is a production environment.  
+#### Client extensibility
+Review the following.  
+- **Client-side JavaScript**. Take a look at your JavaScript and HTML web resources for read/write operations that could impact external services.  
+- **IFRAMES**. Determine if the target of an IFRAME is a production environment.  
 
--	**Dataverse search** - Confirm that search returns expected results. If results aren't accurate, you can turn off Dataverse search for 12 hours and then turn Dataverse search back on again to refresh the index. You may contact [Microsoft support](get-help-support.md) if you're still experiencing issues.
+#### Dataverse search
+Confirm that search returns expected results. If results aren't accurate, you can turn off Dataverse search for 12 hours and then turn Dataverse search back on again to refresh the index. You may contact [Microsoft support](get-help-support.md) if you're still experiencing issues.
 
-- **Flows**
-   - Notes
-      - In the target environment, existing solution flows are deleted but existing nonsolution flows remain.
-      - Flows are initially disabled.
-      - Flow run history won't be copied to the target environment.
-      - Flows with a "When a HTTP request is received" trigger has a new HTTP URL.
-      - If the source environment was a default environment, then integrating services like SharePoint, Excel, Teams, Power BI, and OneDrive continue to point at any related flows in the source environment. Consider if those integration flows can remain in the source default environment. Remove any integration flows from the target environment that stays behind in the source default environment.   
-   - Action items
-      1. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations.
-      2. Review flows that use custom connectors to ensure they're pointing at the new custom connector in the target environment.
-      3. Before enabling flows in the target environment, consider if the corresponding flows should be disabled in the source environment and if appropriate, then disable those flows. Ensure that flow runs have completed before disabling flows.
-      4. Enable flows as needed. Any child flows need to be enabled before parent flows can be enabled.
-      5. For any flows using the "When a HTTP request is received" trigger, adjust any dependent flows or apps to call the new HTTP URL. If the flows in the source environment are disabled, then testing that the dependent apps have been redirected correctly becomes easier.
-      6. Ensure that all apps in the target environment are pointing at flows in the target environment. 
+#### Flows
+  - In the target environment, existing solution flows are deleted but existing nonsolution flows remain.
+  - Flows are initially disabled.
+  - Flow run history won't be copied to the target environment.
+  - Flows with a "When a HTTP request is received" trigger has a new HTTP URL.
+  - If the source environment was a default environment, then integrating services like SharePoint, Excel, Teams, Power BI, and OneDrive continue to point at any related flows in the source environment. Consider if those integration flows can remain in the source default environment. Remove any integration flows from the target environment that stays behind in the source default environment.   
 
-- **Connection References**
-   - Notes
-      - Connection References require new connections.
-      - To review a full list of connection references: open **Solutions**, search for the **Default Solution**, select on the objects filter for **Connection references**, then select on each one to view its properties and connection.
-   - Action items
-      - Create or set connections on all Connection References. Ensure that the connections are created by the appropriate user.
+Action items:
+1. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations.
+2. Review flows that use custom connectors to ensure they're pointing at the new custom connector in the target environment.
+3. Before enabling flows in the target environment, consider if the corresponding flows should be disabled in the source environment and if appropriate, then disable those flows. Ensure that flow runs have completed before disabling flows.
+4. Enable flows as needed. Any child flows need to be enabled before parent flows can be enabled.
+5. For any flows using the "When a HTTP request is received" trigger, adjust any dependent flows or apps to call the new HTTP URL. If the flows in the source environment are disabled, then testing that the dependent apps have been redirected correctly becomes easier.
+6. Ensure that all apps in the target environment are pointing at flows in the target environment. 
 
-- **Custom Connectors**
-   - Notes
-      - Custom connectors have a new identifier in the target environment, so flows that were pointing at the custom connector in the previous environment needs to be adjusted to point to the new custom connector.
-   - Action items
-      - Review all custom connectors in the custom connectors page to ensure they were published correctly.
+#### Connection References
+  - Connection References require new connections.
+  - To review a full list of connection references: open **Solutions**, search for the **Default Solution**, select on the objects filter for **Connection references**, then select on each one to view its properties and connection.
+
+Action items:
+1. Create or set connections on all Connection References. Ensure that the connections are created by the appropriate user.
+
+#### Custom Connectors
+- Custom connectors have a new identifier in the target environment, so flows that were pointing at the custom connector in the previous environment needs to be adjusted to point to the new custom connector.
+
+Action items:
+1. Review all custom connectors in the custom connectors page to ensure they were published correctly.
 
 ### After the target environment is running correctly, consider the source environment status
 
