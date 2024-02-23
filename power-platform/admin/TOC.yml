@@ -295,7 +295,7 @@
                     - name: Audit security roles
                       href: audit-security-roles.md
                     - name: Access audit data using Azure Synapse Link for Dataverse
-                      href: audit-data-azure-synapse-link.md                
+                      href: audit-data-azure-synapse-link.md
                     - name: System jobs
                       href: manage-dataverse-auditing.md#monitoring-system-jobs
                 - name: Templates
@@ -614,7 +614,7 @@
               items:
                 - name: Virtual Network support overview
                   href: vnet-support-overview.md
-                - name: Set up and configure Virtual Network support
+                - name: Set up Virtual Network support
                   href: vnet-support-setup-configure.md
             - name: Security FAQs
               href: security/faqs.md
@@ -1146,4 +1146,3 @@
         - name: Guidance documentation
           href: ../guidance/index.yml
           displayName: CoE adoption guidance best practices
-
