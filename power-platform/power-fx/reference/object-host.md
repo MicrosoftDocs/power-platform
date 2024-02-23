@@ -100,12 +100,12 @@ The **Version** property provides the identification and version number of the P
 ```powerapps-dot
 Label1.Text: Host.Version
 ```
-# OfflineEnabled property
+## OfflineEnabled property
 
 The **OfflineEnabled** property provides the runtime mode of the app in the Power Apps player. For apps that are not enabled for offline, the property is always false. For apps that are [enabled for offline](/power-apps/mobile/canvas-mobile-offline-overview) the property is false on the web, but true on iOS, Android and Windows.  
 
 > [!NOTE]
-> The **OfflineEnabled** property is true in Power Apps Studio for canvas apps that are offline enabled even if the app don't work without network connectivity.  
+> The **OfflineEnabled** property is true in Power Apps Studio for canvas apps that are offline enabled even if the app doesn't work without network connectivity.  
 
 ```powerapps-dot
 Label1.Text: Host.OfflineEnabled
