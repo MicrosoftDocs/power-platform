@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/29/2023
+ms.date: 02/22/2024
 search.audienceType: 
   - admin
 ms.contributors:
@@ -166,14 +166,10 @@ The manager hierarchy is easily created by using the manager relationship on the
  1. Disable the [Hierarchy modeling](hierarchy-security.md#set-up-hierarchy-security).
  1. Re-enable it again.
 
-    > [!NOTE]
-    > When you disable and re-enable the hierarchy modeling, seeing an update can take time, since the system needs to recompute manager record access.
-    >
-    > If you see a timeout, reduce the number of tables under the **Hierarchy Table Management** list to include only tables that need to be viewed by manager direct's records.
-    >
-    > If the timeout persists, submit a support ticket to request assistance.
-    >
-    > Disabled status direct's records are included if these records are shared with another direct who is active. You can exclude these records by removing the **share**.
+> [!NOTE]
+> - When you disable and re-enable the hierarchy modeling, seeing an update can take time, since the system needs to recompute manager record access.
+> - If you see a timeout, reduce the number of tables under the **Hierarchy Table Management** list to include only tables that need to be viewed by manager direct's records. If the timeout persists, submit a support ticket to request assistance.
+> - Disabled status direct's records are included if these records are shared with another direct who is active. You can exclude these records by removing the **share**.
 
 ## Performance considerations
 
