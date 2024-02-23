@@ -148,18 +148,18 @@ The manager hierarchy is easily created by using the manager relationship on the
   
    :::image type="content" source="../admin/media/hierachy-security-enabled-users.png" alt-text="Screenshot that shows enabled users with assigned positions.":::
 
-## Include records owned by directs with the disabled user status
+## Include or exclude records owned by direct report with the disabled user status
 
- Managers can see their disabled status direct's records for environments where hierarchy security is enabled after January 31, 2024. For other environments, disabled status direct's records aren't included.
+ Managers can see their disabled status direct report's records for environments where hierarchy security is enabled after January 31, 2024. For other environments, disabled status direct report's records aren't included in the manager's view. 
 
- To include disabled status direct's records:
+ To include disabled status direct report's records:
 
  1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
  1. Update the **AuthorizationEnableHSMForDisabledUsers** setting to **true**.
  1. Disable the [Hierarchy modeling](hierarchy-security.md#set-up-hierarchy-security).
  1. Re-enable it again.
 
- To exclude disabled status direct's records:
+ To exclude disabled status direct report's records:
 
  1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
  1. Update the **AuthorizationEnableHSMForDisabledUsers** setting to **false**.
@@ -167,9 +167,9 @@ The manager hierarchy is easily created by using the manager relationship on the
  1. Re-enable it again.
 
 > [!NOTE]
-> - When you disable and re-enable the hierarchy modeling, seeing an update can take time, since the system needs to recompute manager record access.
-> - If you see a timeout, reduce the number of tables under the **Hierarchy Table Management** list to include only tables that need to be viewed by manager direct's records. If the timeout persists, submit a support ticket to request assistance.
-> - Disabled status direct's records are included if these records are shared with another direct who is active. You can exclude these records by removing the **share**.
+> - When you disable and re-enable the hierarchy modeling, the update can take time, since the system needs to recompute manager record access.
+> - If you see a timeout, reduce the number of tables under the **Hierarchy Table Management** list to include only tables that need to be viewed by manager. If the timeout persists, submit a support ticket to request assistance.
+> - Disabled status direct report's records are included if these records are shared with another direct report who is active. You can exclude these records by removing the **share**.
 
 ## Performance considerations
 
