@@ -85,7 +85,7 @@ You have multiple options when creating an environment:
 You create a database to use Dataverse as a data store. The Dataverse is a cloud scale database used to securely store data for business applications built on Power Apps. Dataverse provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Dataverse?](/powerapps/maker/common-data-service/data-platform-intro#why-use-dataverse)
 
 ### Prerequisites 
-To create an environment with a database, you need 1 GB available database capacity.
+To create an environment with a database, you need 1 GB available database capacity.  If creating the environment with Dynamics 365 finance and operations apps, you will also require at least 1 GB available Operations database capacity.
 
 ### Steps
 
@@ -111,7 +111,7 @@ To create an environment with a database, you need 1 GB available database capac
    |Language     | The default language for this environment. More information: [Dataverse language collations](language-collations.md)     |
    | URL         | Enter your organization name. Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won't be available. |
    |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. You must have an appropriate Dynamics 365 license to select **Yes**. If you don't select **Yes** at the time of database provisioning, you won’t be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
+   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales or Dynamics 365 Supply Chain Management. You must have an appropriate Dynamics 365 license to select **Yes**. If you don't select **Yes** at the time of database provisioning, you won’t be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
    |Security group | Select a security group to restrict access to this environment. For open access, select **None**.<br><br>This field is now required.|
    

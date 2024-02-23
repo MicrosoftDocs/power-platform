@@ -38,14 +38,13 @@ You can deploy the finance and operations apps within the Power Platform admin c
 
   :::image type="content" source="media/new-environment-template.png" alt-text="Environment templates":::
 
-  This list is dynamic so you only see references to **Finance**, **Supply Chain Management**, **Commerce**, **Project Operations** and other finance and operations apps based on the license assigned to the admin creating the environment.
+  This list is dynamic so you only see references to **Finance**, **Supply Chain Management**, **Commerce**, **Project Operations** and other finance and operations apps based on the license assigned to the admin creating the environment.  For step-by-step instructions, visit [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md).
 
 - **Option B: Install the provisioning app on an existing environment**: You can install finance and operations apps on an existing Power Platform environment with a Dataverse database. Select an environment, navigate to the **Resources** > **Dynamics 365 apps** page, and select the **Dynamics 365 Finance and Operations Provisioning App**.
 
   :::image type="content" source="media/install-provisioning-app.png" alt-text="Install provisioning app":::
 
-  > [!IMPORTANT]
-  > For this option to work, the environment must have been created with the **Enable Dynamics 365 apps** toggle turned on. This toggle ensures that the environment was created with the underlying schema required by the Dynamics 365 apps.
+For step-by-step instructions, visit [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md).
 
 In either approach, notice that your environment has two runtime URLs: one for the customer engagement apps (**Environment URL**) and another for finance and operations apps (**Finance and Operations URL**).
 
