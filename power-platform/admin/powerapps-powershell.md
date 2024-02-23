@@ -8,7 +8,7 @@ contributors:
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/02/2023
+ms.date: 02/22/2024
 ms.subservice: admin
 ms.author: cgarty
 search.audienceType: 
@@ -44,9 +44,9 @@ If you're new to PowerShell and need help with finding and launching it, go to [
 ## Requirements
 PowerShell in this article requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
 
-> ```powershell
-> $PSVersionTable.PSVersion
-> ```
+```powershell
+$PSVersionTable.PSVersion
+```
 
 If you have an outdated version, go to [Upgrading existing Windows PowerShell](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
 
