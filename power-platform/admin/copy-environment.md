@@ -2,7 +2,7 @@
 title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
 ms.topic: conceptual
-ms.date: 02/22/2024
+ms.date: 02/23/2024
 author: ChrisGarty
 ms.author: cgarty
 ms.reviewer: sericks
@@ -204,9 +204,9 @@ Here are some possible application components in the copy environment that could
 #### Email
 A mailbox can't be synced with two different environments. For an Everything copy environment, the user mailboxes in the copy environment must be disabled so the mailboxes don't attempt to send or receive email, or track appointments, contacts, or tasks. Set synchronization for the following to None.  
   
-    - Incoming Email  
-    - Outgoing Email  
-    - Appointments, Contacts, Tasks  
+- Incoming Email  
+- Outgoing Email  
+- Appointments, Contacts, Tasks  
   
   More information: [Set the delivery method for incoming and outgoing email](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)  
   
@@ -242,7 +242,7 @@ Confirm that search returns expected results. If results aren't accurate, you ca
 
 Action items:
 1. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations.
-2. Review flows that use custom connectors to ensure they're pointing at the new custom connector in the target environment. For more details, see [Custom Connectors](#Custom_Connectors) below.
+2. Review flows that use custom connectors to ensure they're pointing at the new custom connector in the target environment. For more details, see [Custom Connectors](#custom-connectors) below.
 3. Before enabling flows in the target environment, consider if the corresponding flows should be disabled in the source environment and if appropriate, then disable those flows. Ensure that flow runs have completed before disabling flows.
 4. Enable flows as needed. Any child flows need to be enabled before parent flows can be enabled.
 5. For any flows using the "When a HTTP request is received" trigger, adjust any dependent flows or apps to call the new HTTP URL. If the flows in the source environment are disabled, then testing that the dependent apps have been redirected correctly becomes easier.
