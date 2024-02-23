@@ -8,7 +8,7 @@ ms.date: 02/25/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - mikferland-msft
 ms.custom: "admin-security"

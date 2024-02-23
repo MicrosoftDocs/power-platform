@@ -7,7 +7,7 @@ ms.date: 07/19/2022
 author: praveenmantha
 ms.subservice: admin
 ms.author: pmantha
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - srpoduri
 ms.custom: "admin-security"

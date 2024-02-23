@@ -4,7 +4,7 @@ description: "Learn about the levels of permission in customer engagement apps a
 author: praveenmantha 
 ms.subservice: admin
 ms.author: pmantha
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/13/2022

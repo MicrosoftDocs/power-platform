@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 07/16/2020
 ms.subservice: admin
 ms.author: mukeshpo
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

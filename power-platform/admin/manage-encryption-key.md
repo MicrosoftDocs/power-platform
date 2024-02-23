@@ -7,7 +7,7 @@ ms.date: 02/05/2024
 author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
