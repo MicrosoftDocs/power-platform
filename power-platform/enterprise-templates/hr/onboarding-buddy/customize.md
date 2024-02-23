@@ -66,7 +66,7 @@ Once you've added the *Buddy Onboard Emails* flow, you can edit the emails.
 1. Edit the **Onboarding Buddy canvas app** in your new, unmanaged solution.
 1. Change the graphics and text on the screens as needed.
     1. **FP Landing screen** is the signup screen.
-    1. **FP Message screen** is both Welcome Screen 1 and Welcome Screen. Only the text changes as the user selects *Next* or *Back*.
+    1. **FP Message screen** is both Welcome screen 1 and Welcome screen 2. Only the text changes as the user selects *Next* or *Back*.
     1. Save your changes.
 
 ### Modify matching attributes
