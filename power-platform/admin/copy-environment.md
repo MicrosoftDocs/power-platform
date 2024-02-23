@@ -132,7 +132,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
    > [!NOTE]
    > Environment Admins or System Administrators can copy all available environments. System administrators can copy environments for which they have the Environment Admin or System Administrator role.  
   
-2. From the left-side menu, select **Environments**, and then select an environment to copy.
+2. From the left-side menu, select **Environments**, and then select a source environment to copy.
 
 3. Select **Copy** from the top menu bar.
   
@@ -145,10 +145,10 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 
 6. Select a target environment.
   
-   A target environment can be a sandbox or preview environment, not a production environment. If you're copying an environment of type **Trial (subscription-based)**, you'll be able to see and select target environments of the same type, that is **Trial (subscription-based)**.
+   A target environment can be a sandbox or preview environment, not a production environment. A sandbox or preview environment can be promoted to a production environment type later after the copy environment operation. If you're copying an environment of type **Trial (subscription-based)**, you'll be able to see and select target environments of the same type, that is **Trial (subscription-based)**.
   
    > [!WARNING]
-   >  The target environment will be deleted and replaced with a copy of the data and customizations from the source environment. You won’t be able to recover any deleted data.  
+   >  The data, components, and customizations in target environment will be deleted and replaced with a copy of the data, components, and customizations from the source environment. You won’t be able to recover any deleted data.  
 
 7. To restrict environment access to people in a security group select **Edit** (![Edit.](media/edit-button.png)).
 
@@ -189,7 +189,7 @@ Copying audit logs can significantly add to the time it takes to copy an environ
   
 2. Background operations are disabled in the copy environment. Disabled operations include workflows and synchronization with Microsoft Exchange.  
   
-#### Review components 
+### Review components 
   
  You should review the status of application components in the copy environment with external connections such as Yammer, email, plug-ins, custom workflow activities, etc. Review these and consider what action to take:  
   
@@ -225,11 +225,37 @@ Copying audit logs can significantly add to the time it takes to copy an environ
 
 -	**Dataverse search** - Confirm that search returns expected results. If results aren't accurate, you can turn off Dataverse search for 12 hours and then turn Dataverse search back on again to refresh the index. You may contact [Microsoft support](get-help-support.md) if you're still experiencing issues.
 
-- **Flows** - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows will be disabled so enable flows as needed.
+- **Flows**
+   - Notes
+      - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain.
+      - Flows will initially be disabled.
+      - Flow run history will not be copied to the target environment.
+      - Flows with a “When a HTTP request is received” trigger will have a new HTTP URL.
+      - If the source environment was a default environment, then integrating services like SharePoint, Excel, Teams, PowerBI, and OneDrive will continue to point at any related flows in the source environment. Consider if those integration flows can remain in the source default environment. Remove any integration flows from the target environment that are staying behind in the source default environment.   
+   - Action items
+      1. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations.
+      2. Review flows that use custom connectors to ensure they are pointing at the new custom connector in the target environment.
+      3. Before enabling flows in the target environment, consider if the corresponding flows should be disabled in the source environment and if appropriate, then disable those flows. Ensure that flow runs have completed before disabling flows.
+      4. Enable flows as needed. Note that any child flows will need to be enabled before parent flows can be enabled.
+      5. For any flows using the “When a HTTP request is received” trigger, adjust any dependent flows or apps to call the new HTTP URL. If the flows in the source environment are disabled, then testing that the dependent apps have been redirected correctly becomes easier.
+      6. Ensure that all apps in the target environment are pointing at flows in the target environment. 
 
-- **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
+- **Connection References**
+   - Notes
+      - Connection References will require new connections.
+      - To review a full list of connection references: open **Solutions**, search for the **Default Solution**, click on the objects filter for **Connection references**, then click on each one to view its properties and connection.
+   - Action items
+      1. Create or set connections on all Connection References. Ensure that the connections are created by the appropriate user.
 
-- **Custom Connectors** - Custom connectors should be reviewed and, if needed, deleted and reinstalled.
+- **Custom Connectors**
+   - Notes
+      - Custom connectors will have a new identifier in the target environment, so flows that were pointing at the custom connector in the previous environment will need to be adjusted to point to the new custom connector.
+   - Action items
+      1. Review all custom connectors in the custom connectors page to ensure they were published correctly.
+
+### After the target environment is running correctly, consider the source environment status
+
+Once the target environment is running correctly with the environment copy from the source environment, consider if the source environment should remain running. In some cases, a duplicate environment is desired, but in other cases, the source environment can now be deleted. Ensure that all components in target environment are running correctly before deleting a source environment. An [environment backup](/power-platform/admin/backup-restore-environments) of the source environment can be made if needed.
 
 ### See also  
 [What's new about storage](whats-new-storage.md) <br />
