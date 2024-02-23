@@ -59,7 +59,7 @@ Instead of manually designing a conversation flow within the copilot to account 
 - A Power Automate flow plugin takes the contact data provided by the copilot user to create the lead.
 - A prompt plugin summarizes the latest conversations the copilot user had with the contact.
 
-Now when the copilot user asks to create a lead, the flow plugin is triggered and the lead is created from the data already provided by the user. The use can also ask for an abstract or summary, which triggers the prompt plugin and return a summary of actions.
+Now when the copilot user asks to create a lead, the flow plugin is triggered and the lead is created from the data already provided by the user. The user can also ask for an abstract or summary, which triggers the prompt plugin and return a summary of actions.
 
 ### Plugin categories and types
 

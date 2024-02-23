@@ -227,7 +227,22 @@ More information: [Share a canvas app with your organization](/power-apps/maker/
 > [!NOTE]
 >If Awards and Recognition apps aren't shared with you and you cannot access them directly from Power Apps, please contact your admin.
 
-## Step 7: Turn on auditing (optional)
+## Step 7: Enable Copilot (optional)
+
+Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assistant for app admins to get insights about the data through conversation in natural language. As an Awards and Recognition admin, you can leverage Copilot to help you get insights on data. As a Power Platform admin, take these steps to [enable Copilot](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-feature-for-your-environment) and [manage behavior settings](/power-platform/admin/settings-behavior) for all users in the selected environment:
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. Select **Environments** on the left pane and then select the environment where you want to enable Copilot for model-driven app users.
+1. Select **Settings**.
+1. Expand the **Product** section and select **Features** to turn on Copilot.
+1. In the *Copilot* section, set the value for *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**.
+1. Select **Save**.
+1. Next, go back to **Settings**.
+1. Expand the **Product** section and select **Behavior** to manage behavior settings.
+1. In the *Release channel* section, select **Monthly channel** from the dropdown.
+1. Select **Save**.
+
+## Step 8: Turn on auditing (optional)
 
 While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created and updated records in the future. To do this:
 
