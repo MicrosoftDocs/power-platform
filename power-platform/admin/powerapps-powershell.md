@@ -8,7 +8,7 @@ contributors:
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/02/2023
+ms.date: 02/22/2024
 ms.subservice: admin
 ms.author: cgarty
 search.audienceType: 
@@ -44,9 +44,9 @@ If you're new to PowerShell and need help with finding and launching it, go to [
 ## Requirements
 PowerShell in this article requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
 
-> ```powershell
-> $PSVersionTable.PSVersion
-> ```
+```powershell
+$PSVersionTable.PSVersion
+```
 
 If you have an outdated version, go to [Upgrading existing Windows PowerShell](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
 
@@ -146,7 +146,7 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 
 ## Power Apps cmdlets for administrators
 
-For information on Power Apps cmdlets for admins, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md)
+For information on Power Apps and Power Automate cmdlets for admins, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md)
 
 ## Tips
 
@@ -398,7 +398,8 @@ Remove the dependency between flows and an app with this PowerShell command. The
  
 ## Power Automate commands
 
-Use these commands to view and modify data related to Power Automate.
+Use these important commands to perform administration related to Power Automate.
+For a full list of Power Automate and Power Apps cmdlets for admins, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md)
 
 ### Display all flows
 
@@ -443,6 +444,17 @@ Get-AdminFlow | Export-Csv -Path '.\FlowExport.csv'
 ```
 
 Exports all the flows in your tenant into a tabular view .csv file.
+
+### Add flows into Dataverse solutions
+
+```powershell
+Add-AdminFlowsToSolution -EnvironmentName <String>
+```
+
+Migrates all the non-solution flows in the environment.
+Parameter variations can be used to migrate only specific flows, add into a specific solution, or migrate only a set number of flows at a time.
+
+For technical details, please review [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution)
 
 ## API connection commands
 
