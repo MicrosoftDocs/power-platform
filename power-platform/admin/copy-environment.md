@@ -235,17 +235,17 @@ Confirm that search returns expected results. If results aren't accurate, you ca
 #### Flows
   - In the target environment, existing solution flows are deleted but existing nonsolution flows remain.
   - Flows are initially disabled.
+  - When enabling a flow, if an error is encountered, then open the flow in the designer to review errors and flow checker warnings. Adjust and resave the flow as needed.   
   - Flow run history won't be copied to the target environment.
   - Flows with a "When a HTTP request is received" trigger has a new HTTP URL.
-  - If the source environment was a default environment, then integrating services like SharePoint, Excel, Teams, Power BI, and OneDrive continue to point at any related flows in the source environment. Consider if those integration flows can remain in the source default environment. Remove any integration flows from the target environment that stays behind in the source default environment.   
+  - If the source environment was a default environment, then integrating services like SharePoint, Excel, Teams, Power BI, and OneDrive continue to point at any related flows in the source environment. Consider if those integration flows can remain in the source default environment. Remove any integration flows from the target environment that stays behind in the source default environment.
 
 Action items:
 1. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations.
-2. Review flows that use custom connectors to ensure they're pointing at the new custom connector in the target environment.
+2. Review flows that use custom connectors to ensure they're pointing at the new custom connector in the target environment. For more details, see [Custom Connectors](#Custom_Connectors) below.
 3. Before enabling flows in the target environment, consider if the corresponding flows should be disabled in the source environment and if appropriate, then disable those flows. Ensure that flow runs have completed before disabling flows.
 4. Enable flows as needed. Any child flows need to be enabled before parent flows can be enabled.
 5. For any flows using the "When a HTTP request is received" trigger, adjust any dependent flows or apps to call the new HTTP URL. If the flows in the source environment are disabled, then testing that the dependent apps have been redirected correctly becomes easier.
-6. Ensure that all apps in the target environment are pointing at flows in the target environment. 
 
 #### Connection References
   - Connection References require new connections.
@@ -255,7 +255,7 @@ Action items:
 1. Create or set connections on all Connection References. Ensure that the connections are created by the appropriate user.
 
 #### Custom Connectors
-- Custom connectors have a new identifier in the target environment, so flows that were pointing at the custom connector in the previous environment needs to be adjusted to point to the new custom connector.
+- Custom connectors have a new identifier in the target environment and appear to be a new connector, so flows need to be adjusted to point to the new custom connector.
 
 Action items:
 1. Review all custom connectors in the custom connectors page to ensure they were published correctly.
