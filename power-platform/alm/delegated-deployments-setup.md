@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 01/10/2024
+ms.date: 02/23/2024
 ms.custom: 
 ---
 # Deploy pipelines as a service principal or pipeline owner (preview)
