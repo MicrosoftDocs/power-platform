@@ -8,7 +8,7 @@ contributors:
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/02/2023
+ms.date: 02/22/2024
 ms.subservice: admin
 ms.author: cgarty
 search.audienceType: 
@@ -49,9 +49,9 @@ If you're new to PowerShell and need help with finding and launching it, go to [
 
 PowerShell in this article requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
 
-> ```powershell
-> $PSVersionTable.PSVersion
-> ```
+```powershell
+$PSVersionTable.PSVersion
+```
 
 If you have an outdated version, go to [Upgrading existing Windows PowerShell](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
 
@@ -211,7 +211,8 @@ Returns the details for only the default environment of the tenant.
 Get-AdminPowerAppEnvironment –EnvironmentName 'EnvironmentName'
 ```
 
-**Note**: The _EnvironmentName_ field is a unique identifier, which is different from the _DisplayName_ (see first and second fields in the output in the following image).
+> [!NOTE]
+> The *EnvironmentName* field is a unique identifier, which is different from the *DisplayName* (see first and second fields in the output in the following image).
 
 ![Get-AdminEnvironment command.](media/get-adminenvironment.png "Get-AdminEnvironment command")
 
@@ -247,7 +248,8 @@ Set-AdminPowerAppAsFeatured –AppName 'AppName'
 
 Featured applications are grouped and pushed to the top of the list in the Power Apps mobile player.
 
-**Note**: Like environments, the _AppName_ field is a unique identifier, which is different from the _DisplayName_. If you want to perform operations based on the display name, some functions will let you use the pipeline (see next function).
+> [!NOTE]
+> Like environments, the *AppName* field is a unique identifier, which is different from the *DisplayName*. If you want to perform operations based on the display name, some functions will let you use the pipeline (see next function).
 
 ### Make an application a Hero app, using the pipeline
 
@@ -309,7 +311,8 @@ Set-AdminPowerAppOwner –AppName 'AppName' -AppOwner $Global:currentSession.use
 
 Changes the owner role of a PowerApp to the current user, and replaces the original owner as a "can view" role type.
 
-**Note**: The AppName and EnvironmentName fields are the unique identifiers (GUIDs), not the display names.
+> [!NOTE]
+> The AppName and EnvironmentName fields are the unique identifiers (guids), not the display names.
 
 ### Display a list of deleted canvas apps in an environment
 
@@ -446,7 +449,8 @@ Get-AdminFlowOwnerRole –EnvironmentName 'EnvironmentName' –FlowName 'FlowNam
 
 Returns the owner details of the specified flow.
 
-**Note**: Like *Environments* and *PowerApps*, *FlowName* is the unique identifier (guid), which is different from the display name of the flow.
+> [!NOTE]
+> Like *Environments* and *PowerApps*, *FlowName* is the unique identifier (guid), which is different from the display name of the flow.
 
 ### Display flow user details
 
@@ -464,7 +468,8 @@ Remove-AdminFlowUserDetails –UserId 'UserId'
 
 Deletes the details on a flow user completely from the Microsoft database. All flows the input user owns must be deleted before the flow user details can be purged.
 
-**Note**: The UserId field is the Object ID of the user's Microsoft Entra record, which can be found in the [Azure portal](https://portal.azure.com) under **Microsoft Entra ID** > **Users** > **Profile** > **Object ID**. You must be an admin to access this data from here.
+> [!NOTE]
+> The UserId field is the Object ID of the user's Microsoft Entra record, which can be found in the [Azure portal](https://portal.azure.com) under **Microsoft Entra ID** > **Users** > **Profile** > **Object ID**. You must be an admin to access this data from here.
 
 ### Export all flows to a CSV file
 
@@ -507,7 +512,7 @@ Get-AdminPowerAppConnector
 Returns a list of all custom connector details in the tenant.
 
 > [!Note]
-> `Get-AdminPowerAppConnector` does not list custom connectors that are in a solution. This is a known limitation.
+> `Get-AdminPowerAppConnector` doesn't list custom connectors that are in a solution. This is a known limitation.
 
 ## Data loss prevention (DLP) policy commands
 
@@ -616,11 +621,11 @@ To exempt flow with ID `f239652e-dd38-4826-a1de-90a2aea584d9` and app with ID `0
 
 ### DLP exemption experience in the following scenarios
 
-| # | Scenario              | Experience              |
-|-------|----------------------------------------|-----------------------------------|
-| 1     | User launches an app that’s not DLP compliant but DLP exempt. | App launch proceeds with or without DLP enforcement.                                                                                                             |
-| 2     | Maker saves an app that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance doesn't block the app save operation. The DLP noncompliance warning is shown regardless of DLP exemption. |
-| 3     | Maker saves a flow that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance doesn't block the flow save operation. The DLP noncompliance warning doesn't appear.                        |
+| # | Scenario | Experience |
+|---|----------|------------|
+| 1 | User launches an app that’s not DLP compliant but DLP exempt. | App launch proceeds with or without DLP enforcement. |
+| 2 | Maker saves an app that’s not DLP compliant but DLP exempt  | With or without DLP exemption, DLP compliance doesn't block the app save operation. The DLP noncompliance warning is shown regardless of DLP exemption. |
+| 3 | Maker saves a flow that’s not DLP compliant but DLP exempt  | With or without DLP exemption, DLP compliance doesn't block the flow save operation. The DLP noncompliance warning doesn't appear. |
 
 ### Governance error message content commands
 
