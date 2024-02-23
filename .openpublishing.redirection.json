@@ -1,3 +1,4 @@
+
 {
   "redirections": [
     {
@@ -953,6 +954,11 @@
     {
       "source_path": "power-platform/solution-templates/it/hardware-request-and-management/use.md",
       "redirect_url": "/power-platform/enterprise-templates/it/hardware-request-and-management/use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/storage-sas-token.md",
+      "redirect_url": "/power-platform/admin/access-storage",
       "redirect_document_id": false
     }
   ]

@@ -19,6 +19,7 @@ You can use the **Copy** option in the Microsoft Power Platform admin center to 
 >   :::image type="content" source="media/copy-environment-no-target.png" alt-text="No target for copying environment.":::
 > - You can only copy to an environment in the same tenant and region.
 > - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) might not be part of the copy. You should validate your apps post copy.
+> - For each canvas App only up to 20 of the most recent revisions will be copied over.
 > - You can't copy from or to a default or trial type environment.
 > - Copy and restore operations can take up to 8 hours unless a lot of data, including audit data, needs to be copied or restored, in which case they could take up to 24 hours.
   

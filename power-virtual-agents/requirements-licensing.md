@@ -18,13 +18,13 @@ ms.custom: "licensing, admin, ceX"
 
 This topic is written for tenant admins. If you want to sign up for Microsoft Copilot Studio as an individual, see the [Sign up for a Microsoft Copilot Studio trial](sign-up-individual.md) topic.
 
-To create and manage bots with Microsoft Copilot Studio, you need:
+To create and manage copilots with Microsoft Copilot Studio, you need:
 
-- A license for each user, also known as a "per user license" (or "Power Virtual Agent User License" as referred to on the [Microsoft 365 admin center](https://admin.microsoft.com)), should be assigned to individual users who need access to create and manage chatbots.
-- A license for your organization, also known as a "tenant license" (or "Power Virtual Agent" as referred to on the [Microsoft 365 admin center](https://admin.microsoft.com)), should be acquired by the tenant admin. This license cannot be assigned to individual users.
+- A license for each user, also known as a "per user license" (or "Copilot Studio User License" as referred to on the [Microsoft 365 admin center](https://admin.microsoft.com)), should be assigned to individual users who need access to create and manage copilots.
+- A license for your organization, also known as a "tenant license" (or "Copilot Studio" as referred to on the [Microsoft 365 admin center](https://admin.microsoft.com)), should be acquired by the tenant admin. This license cannot be assigned to individual users.
 
 > [!NOTE]
-> Users of your bot don't need a special license. After you publish your bot, anyone who can access where you published the bot can interact with the bot.
+> Users of your copilots don't need a special license. After you publish your copilot, anyone who can access the published copilot can interact with it.
 
 More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130)
   
@@ -43,13 +43,13 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
 1. On the side pane, expand the **Billing** menu, and then select **Purchase services**.
-1. Search for **Power Virtual Agent**, and complete the checkout process.
+1. Search for **Copilot Studio**, and complete the checkout process.
 
 ### Acquire user licenses
 
 1. After you've purchased a Microsoft Copilot Studio license from the Microsoft 365 admin center, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
 1. Scroll down to the **Add-ons** section.
-1. Look for **Power Virtual Agent User License**. Select the number of licenses you need, and complete the checkout process.
+1. Look for **Copilot Studio User License**. Select the number of licenses you need, and complete the checkout process.
 
 > [!IMPORTANT]
 > If you purchased a Microsoft Copilot Studio license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant license and user licenses through that channel, preferably as part of a single transaction.
@@ -66,7 +66,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
    :::image type="content" source="media/requirements-licensing/licensing-manage.png" alt-text="Select a user, and then manage product licenses." border="false":::
 
-1. On the flyout pane, select the check box next to **Power Virtual Agent user license**, and then select **Save changes**.
+1. On the flyout pane, select the check box next to **Copilot Studio user license**, and then select **Save changes**.
 
 Repeat these steps to add more users, or exit the Microsoft 365 admin center if you're finished.
 
@@ -79,14 +79,14 @@ The users can now sign in to the [Microsoft Copilot Studio portal](https://web.p
 
 If you are unsure whether you have both of the required licenses, on the [Microsoft 365 admin center](https://admin.microsoft.com) go to **Billing** and then **Subscriptions** to see the list of active licenses. For Microsoft Copilot Studio you should see two licenses:
 
-- Power Virtual Agent
-- Power Virtual Agent User License
+- Copilot Studio
+- Copilot Studio User License
 
-You can only assign the "Power Virtual Agent User License" to specific users. You don't need to assign the "Power Virtual Agent" license.
+You can only assign the "Copilot Studio User License" to specific users. You don't need to assign the "Copilot Studio" license.
 
 # [Teams](#tab/teams)
 
-To create and manage Microsoft Copilot Studio chatbots in Teams, you need:
+To create and manage Microsoft Copilot Studio copilots in Teams, you need:
 
 - [A license to use Teams](/MicrosoftTeams/user-access)
 - [Licenses to use Microsoft Copilot Studio](requirements-licensing.md)
@@ -112,7 +112,7 @@ You can [disable or enable the ability for users to sign up for a trial themselv
 
 When you purchase a license, you gain capacity for the specified number of billed sessions. Microsoft Copilot Studio pools this capacity across the entire tenant.
 
-The consumption of the capacity isn't reported at the tenant level, but [can be seen for each individual bot](analytics-billed-sessions.md).
+The consumption of the capacity isn't reported at the tenant level, but [can be seen for each individual copilot](analytics-billed-sessions.md).
 
 See [Quotas and rate limit capacity considerations for Microsoft Copilot Studio](requirements-quotas.md) for more information.
 
