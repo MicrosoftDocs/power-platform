@@ -93,7 +93,7 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
 
     In the **Hierarchy Table Management** area, all system tables are enabled for hierarchy security by default, but you can exclude selective tables from the hierarchy. To exclude specific tables from the hierarchy model, clear the checkboxes for the tables that you want to exclude and save your changes.
 
-    :::image type="content" source="media/hierarchy-security.png" alt-text="Screenshot of the Hierarchy Security page in Settings for Environments." lightbox="media/hierarchy-security.png":::
+    :::image type="content" source="media/hierarchy-security/hierarchy-security.png" alt-text="Screenshot of the Hierarchy Security page in Settings for Environments." lightbox="media/hierarchy-security/hierarchy-security.png":::
 
 1. Set the **Depth** to a desired value to limit how many levels deep a manager has a read-only access to the data of their reports.
   
