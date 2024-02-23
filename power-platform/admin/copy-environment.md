@@ -252,13 +252,13 @@ Action items:
   - To review a full list of connection references: open **Solutions**, search for the **Default Solution**, select on the objects filter for **Connection references**, then select on each one to view its properties and connection.
 
 Action items:
-1. Create or set connections on all Connection References. Ensure that the connections are created by the appropriate user.
+- Create or set connections on all Connection References. Ensure that the connections are created by the appropriate user.
 
 #### Custom Connectors
 - Custom connectors have a new identifier in the target environment and appear to be a new connector, so flows need to be adjusted to point to the new custom connector.
 
 Action items:
-1. Review all custom connectors in the custom connectors page to ensure they were published correctly.
+- Review all custom connectors in the custom connectors page to ensure they were published correctly.
 
 ### Source environment status after copy
 
