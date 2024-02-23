@@ -2,7 +2,7 @@
 title: "FAQ for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform"
 description: "This FAQ describes the optional data sharing setting for Copilot AI features in Dynamics 365 and Power Platform and how Microsoft responsibly uses your data."
 author: amishastri 
-ms.date: 08/23/2023
+ms.date: 02/22/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -22,7 +22,12 @@ Microsoft is constantly working to improve the quality of the new AI-powered Cop
 
 ## How does it work?
 
-You may opt in to participate by using the Power Platform admin center. To opt in: 
+You may opt in to participate by using the Power Platform admin center. 
+
+>[!NOTE]
+> This setting is only available for tenants located in the US region currently. 
+
+To opt in: 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
