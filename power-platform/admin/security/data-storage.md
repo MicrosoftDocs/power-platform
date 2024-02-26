@@ -75,6 +75,8 @@ Power Platform has an extensive set of [Data Loss Prevention (DLP) features](../
 
 This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting will restrict who, based on IP, can use enterprise SAS tokens. 
 
+This feature is currently in Private Preview going Public Preview later this spring and GA this summer, 2024. More information can be found in the [Release Planner](https://releaseplans.microsoft.com/en-US/?app=Governance+and+administration). 
+
 These settings can be found in a Dataverse environment’s **Privacy + Security** settings in the admin center. You must turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
 
 Admins can enable one of these four configurations for this setting:
