@@ -74,7 +74,7 @@ C:\>
 
 ## Known issue with `pac power-fx repl`
 
-After installing using the Windows MSI, the shell can stop responding when you try to use [pac power-fx repl](../cli/reference/power-fx.md#pac-power-fx-repl). To work around this issue, install and use the [Visual Studio Code extension](install-vs-code-extension.md) or [install Power Platform CLI with .NET Tool](install-cli-net-tool.md).
+When you install using the Windows MSI, the shell can stop responding when you try to use [pac power-fx repl](../cli/reference/power-fx.md#pac-power-fx-repl). To work around this issue, install and use the [Visual Studio Code extension](install-vs-code-extension.md) or [install Power Platform CLI with .NET Tool](install-cli-net-tool.md).
 
 ### See also
 
