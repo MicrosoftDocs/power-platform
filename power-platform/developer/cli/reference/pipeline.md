@@ -18,6 +18,8 @@ Use the include files to add additional content to this topic.
 -->
 # pac pipeline
 
+Work with Pipelines
+
 [!INCLUDE [pipeline-intro](includes/pipeline-intro.md)]
 
 ## Commands
