@@ -124,7 +124,7 @@ This command opens a dialog so you can select the NuGet Package with changes.
 >
 > The version of the plug-in package or plug-in assembly is not a factor in any upgrade behaviors. You can update the version of the plug-in assembly as you need.
 >
-> The name and version of the plug-in package cannot be changed. Attempting to do so results in an error.
+> The name and version of the plug-in package cannot be changed once created. Attempting to do so, for example in an API call, results in an error.
 
 ### Delete plug-in packages
 
