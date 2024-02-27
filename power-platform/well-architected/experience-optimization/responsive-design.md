@@ -56,11 +56,11 @@ Power Platform details here...
 
 ## Related links
 
-Layout containers
-Breakpoints
-[Create responsive layouts in canvas apps](/power-apps/maker/canvas-apps/create-responsive-layout)
-[Building responsive canvas apps](/power-apps/maker/canvas-apps/build-responsive-apps)
-[Getting Started with Responsive Canvas Apps](/shows/the-low-code-revolution/getting-started-with-responsive-canvas-apps)
+- Layout containers
+- Breakpoints
+- [Create responsive layouts in canvas apps](/power-apps/maker/canvas-apps/create-responsive-layout)
+- [Building responsive canvas apps](/power-apps/maker/canvas-apps/build-responsive-apps)
+- [Getting Started with Responsive Canvas Apps](/shows/the-low-code-revolution/getting-started-with-responsive-canvas-apps)
 
 ## Experience Optimization checklist
 
