@@ -4,7 +4,7 @@ description: Learn about enterprise security with Power Platform.
 author: robstand
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 02/28/2024
+ms.date: 02/26/2024
 ms.author: rstand
 ms.reviewer: sericks
 ms.custom: bap-template
