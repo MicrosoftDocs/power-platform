@@ -100,7 +100,16 @@ The **Version** property provides the identification and version number of the P
 ```powerapps-dot
 Label1.Text: Host.Version
 ```
+## OfflineEnabled property
 
+The **OfflineEnabled** property provides the runtime mode of the app in the Power Apps player. For apps that are not enabled for offline, the property is always false. For apps that are [enabled for offline](/power-apps/mobile/canvas-mobile-offline-overview) the property is false on the web, but true on iOS, Android, and Windows.  
+
+> [!NOTE]
+> Even if a canvas app doesn't function without network connectivity, the **OfflineEnabled** property remains true in Power Apps Studio for canvas apps that have been enabled for offline use.
+
+```powerapps-dot
+Label1.Text: Host.OfflineEnabled
+```
 ## Examples
 
 1. Create a new Canvas app.
@@ -109,6 +118,7 @@ Label1.Text: Host.Version
 1. Add a **Text label** control and set the `Text` property to `"Host.SessionID: " & Host.SessionID`.
 1. Add a **Text label** control and set the `Text` property to `"Host.TenantID: " & Host.TenantID`.
 1. Add a **Text label** control and set the `Text` property to `"Host.Version: " & Host.Version`.
+1. Add a **Text label** control and set the `Text` property to `"Host.OfflineEnabled: " & Host.OfflineEnabled`.
 
 Run your app on different devices and with different browsers and you will see results similar to the below.
 
