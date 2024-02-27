@@ -2,4 +2,3 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 You can use the formulas listed in the [Formula reference - Power Platform CLI](../../../../power-fx/formula-reference-pac-cli.md).
 
-If you [installed Power Platform CLI using Windows MSI](../../../howto/install-cli-msi.md), there is a [known issue with `pac power-fx repl`](../../../howto/install-cli-msi.md#known-issue-with-pac-power-fx-repl) where the shell may stop responding when using this command.
