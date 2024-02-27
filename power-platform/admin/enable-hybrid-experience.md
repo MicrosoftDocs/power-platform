@@ -26,7 +26,7 @@ The following features are not yet present in Unified Interface but can be enabl
 - Reports
 
  > [!NOTE]
-   > The hybrid experience is not available for on-premises versions or on mobile.  
+   > The hybrid experience is not available for on-premises versions, on mobile, or within Teams.  
 
 These features are enabled through a setting in System Settings.
 
