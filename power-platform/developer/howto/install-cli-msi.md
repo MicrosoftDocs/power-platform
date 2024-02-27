@@ -72,6 +72,10 @@ C:\> pac use
 C:\>
 ```
 
+## Known Issue
+
+When trying to use `pac power-fx repl` or `pac pfx repl` your shell will get stuck. We are aware of the issue and we are working on it. If you need to use this Power Fx capability in Power Platform CLI then please install Power Platform CLI using .NET Tool or use within Visual Studio Code terminal.
+
 ### See also
 
 [What is Microsoft Power Platform CLI?](../cli/introduction.md)   
