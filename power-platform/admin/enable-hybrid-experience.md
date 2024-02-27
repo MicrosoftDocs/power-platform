@@ -23,7 +23,7 @@ The following features are not yet present in Unified Interface but can be enabl
 - [Record sharing](/powerapps/user/assign-or-share-records)
 - [Audit History](/powerapps/developer/common-data-service/auditing-overview)
 - All options under **Set Personal Options** (![Settings gear.](media/settings-gear-icon.png "Settings gear"))
-- Reports
+- [Reports](power-apps/user/work-with-reports)
 
  > [!NOTE]
    > The hybrid experience is not available for on-premises versions, on mobile, or within Teams.  
