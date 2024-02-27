@@ -147,7 +147,7 @@ For Dynamics 365 finance and operations apps, you need at least:
 
 1. Select **Save**.
 
-## Create an environment with your own data store
+## Create an environment without a database
 
 You can create an environment without a database and use your own data store.
 
@@ -239,7 +239,7 @@ Yes, environment appears in both admin centers.
 
 Provisioning environments is based on database capacity.
 
-Previously, the limit allowed two environments per Power Apps Plan 2 license. Now, you only need 1 GB of available capacity to provision. All environments with or without Dataverse consume at least 1-GB capacity.
+Previously, the limit allowed two environments per Power Apps Plan 2 license. Now, you only need 1 GB of available capacity to provision. All environments with or without Dataverse consume at least 1 GB capacity.
 
 ### See also
 
