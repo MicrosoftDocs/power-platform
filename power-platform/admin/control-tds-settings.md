@@ -13,12 +13,14 @@ search.audienceType:
 ---
 # Control access of the TDS endpoint
 
-The Tabular Data Stream (TDS) protocol is an application-level protocol used for the transfer of requests and responses between clients and database server systems. When enabled, you can use this protocol to access Microsoft Dataverse using Power BI, Excel, and dataflows.
+The Tabular Data Stream (TDS) protocol is an application-level protocol used for the transfer of requests and responses between clients and database server systems. When enabled in a Power Platform environment, you can use this protocol to access Microsoft Dataverse using Power BI, Excel, and dataflows.
 
 The Dataverse TDS endpoint has two settings, which control the level of access to the TDS endpoint.
 
-- Environment-level. The first setting in the Power Platform admin center feature environment setting. To enable, go to Settings > Product > Features. Under TDS endpoint, and then select **Enable TDS endpoint**, which controls whether the environment will listen to TDS traffic.
-- User-level. The second setting located in the same location as the environment-level setting,**Enable user level access control for TDS endpoint**, which determines whether all environment users have access (the default), or if access to the TDS endpoint is controlled at the individual user level with the **Allow user to access TDS endpoint** miscellaneous privilege is required to be assigned to a user in a security role.
+- Environment-level. The feature environment setting **Enable TDS endpoint**. This setting controls whether the environment will listen to TDS traffic. To enable, go to **Settings** > **Product** > **Features**. Under **TDS endpoint**, select **Enable TDS endpoint.**
+- User-level. This setting is located in the same location as the environment-level setting. The **Enable user level access control for TDS endpoint** setting determines whether all environment users have access to the TDS endpoint or if access is controlled at the individual user level.
+  - When disabled (default) all environment users have access to use the TDS endpoint to access the data they have permission to access. 
+  - When enabled, users don't have access to use the TDS endpoint unless the **Allow user to access TDS endpoint** miscellaneous privilege is assigned to the user in a security role.
 
 ## Features dependent on the TDS endpoint
 
