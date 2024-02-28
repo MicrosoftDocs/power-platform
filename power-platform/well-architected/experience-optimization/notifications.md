@@ -9,11 +9,11 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for meaningful feedback and information
+# Recommendations for feedback and notificaitons
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:07](checklist.md)| **Notify users with relevant, important, and valuable information.** Give users feedback on their actions. Let users know when something happens and what they need to do next. Provide meaningful, useful, and simple guidance in notifications and messages. |
+|[EO:07](checklist.md)| Notify users with relevant, important, and valuable information. Give users feedback on their actions. Let users know when something happens and what they need to do next. Provide meaningful, useful, and simple guidance in notifications and messages. |
 |---|---|
 
 This guide describes the recommendations for ...
