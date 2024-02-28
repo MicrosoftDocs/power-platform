@@ -18,12 +18,14 @@ contributors:
 
 It's important that you protect your data in Microsoft Power Platform and Dataverse, and that you provide continuous availability of service. If you use Microsoft Power Platform to create production environments that have a database and Dynamics 365 applications enabled, you can benefit from the system backups that are automatically performed for those environments. The system backups are stored for up to 28 days. Therefore, you can restore your environment if there are any issues. 
 
-For production environments that don't have Dynamics 365 applications enabled, the default backup retention period is only seven days. However, for [managed environments](managed-environment-overview.md), admins can use PowerShell to change the setting and extend the backup retention period. The available options are 7, 14, 21, and 28 days.
+For production environments that don't have Dynamics 365 applications enabled, the default backup retention period is only seven days. However, for production type [managed environments](managed-environment-overview.md), admins can use PowerShell to change the setting and extend the backup retention period. The available options are 7, 14, 21, and 28 days.
 
-The ability to change the backup retention period is useful for managed environments that don't have Dynamics 365 applications enabled. By enabling you to extend the backup retention period to 28 days, it gives you more flexibility and security for your data. It also helps in accidental data deletion scenarios. Consider the following information:
+The ability to change the backup retention period is useful for managed prodction type environments that don't have Dynamics 365 applications enabled. By enabling you to extend the backup retention period to 28 days, it gives you more flexibility and security for your data. It also helps in accidental data deletion scenarios. Consider the following information:
 
-- This ability to extend the backup retention period beyond seven days is supported only for [managed environments](managed-environment-overview.md).
+- This ability to extend the backup retention period beyond seven days is supported only for production type [managed environments](managed-environment-overview.md).
 - If you change the backup retention period, the new setting applies to all existing and future backups. Because the change might take up to 24 hours to go into effect on the existing backups, some backups might be deleted sooner than expected.
+- For all other non-production environments, the default, backup retention period is seven days including default type environment.
+
 
 To change the backup retention period, you must be an admin who has one of these roles in Microsoft Entra ID:
 
