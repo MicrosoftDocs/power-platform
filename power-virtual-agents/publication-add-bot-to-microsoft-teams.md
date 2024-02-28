@@ -58,7 +58,7 @@ After publishing your bot at least once, you can connect your bot to the Microso
     > [!NOTE]
     > If you do not see this option, then the Microsoft Teams channel may already be enabled.
 
-## Customize the copilot's appearance in Microsoft Teams
+## Customize the bot's appearance in Microsoft Teams
 
 Providing the right description and appearance for the bot before making it available to other users is important as it educates them on what the bot's purpose is and its branding, when applicable.
 
@@ -66,7 +66,7 @@ Providing the right description and appearance for the bot before making it avai
 
 1. Select **Microsoft Teams**.
 
-1. Select **Edit details** to change the copilot's icon, color, and descriptions. These will be shown in the Microsoft Teams app store and the app's About tab after the user installs the copilot. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
+1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the Microsoft Teams app store and the app's About tab after the user installs the bot. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
 
     :::image type="content" source="media/publication-add-bot-to-msft-teams/add-copilot-to-teams-edit-details.PNG" alt-text="You can make changes to the icon, background color, and descriptions":::
 
