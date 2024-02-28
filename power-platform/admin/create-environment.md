@@ -45,7 +45,7 @@ To create an environment, these requirements must be true:
    | Power Virtual Agents trial plan |Yes | No | 
    | Power Virtual Agents plan | No | Yes | 
 
-  If you have any of the above license, you can create a developer environment as long as the developer plan sign up is not turned off by an admin. For more information about developer environment, see [Create a developer environment](/power-platform/developer/create-developer-environment).
+  You can also create a developer environment. For more information about developer environment, see [Create a developer environment](/power-platform/developer/create-developer-environment).
   
 2. The tenant, or _user_ with email trials, must have:
 
