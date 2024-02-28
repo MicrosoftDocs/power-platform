@@ -367,7 +367,7 @@ More information: [Configure Dataverse search to improve search results and perf
 
 ## Step 9: Enable copilot (optional)
 
-Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assistant for app admins to get insights about the data through conversation in natural language. As an Hardware Request and Management admin, you can leverage Copilot to help you get insights on data. As a Power Platform admin, take these steps to [enable Copilot](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-feature-for-your-environment) and [manage behavior settings](/power-platform/admin/settings-behavior) for all users in the selected environment:
+Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assistant for app admins to get insights about the data in their apps through conversation in natural language. As a Hardware Request and Management admin, you can leverage Copilot to help you get insights on data. As a Power Platform admin, take these steps to [enable Copilot](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-feature-for-your-environment) and [manage behavior settings](/power-platform/admin/settings-behavior) for all users in the selected environment:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
 1. Select **Environments** on the left pane and then select the environment where you want to enable Copilot for model-driven app users.
