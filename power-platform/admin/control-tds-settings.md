@@ -28,8 +28,8 @@ The features listed here require the TDS endpoint:
 
 - Power BI Desktop: When using the Dataverse connector in Power BI Desktop app the Dataverse TDS endpoint is used. This feature allows users to connect to Dataverse and create reports and dashboards using the Power BI Desktop app. 
 - Power BI service: This feature allows users to publish and share their Power BI Desktop reports and dashboards to the Power BI online service, where they can access and refresh data from Dataverse using the Dataverse connector. 
-- Power Apps visualize this view: This feature allows users to create and embed Power BI visuals in their Power Apps canvas apps, using data from Dataverse views.
-- Excel Get Data: This feature allows users to import data from Dataverse data into Excel using the Power Query editor and Dataverse connector, where they can transform and analyze the data. 
+- Power Apps visualize this view: This feature allows users to create and embed Power BI visuals in their Power Apps model-driven apps, using data from Dataverse views. More information: [Visualize data in a view with Power BI service](/power-apps/user/visualize-in-power-bi)
+- Excel Get data: This feature allows users to import data from Dataverse data into Excel using the Power Query editor and Dataverse connector, where they can transform and analyze the data. More informjation: [Import using a connector](/power-apps/maker/data-platform/data-platform-import-export#import-using-a-connector)
 - Power Platform dataflows: This feature allows users to import and transform data from Dataverse using the Dataverse connector.  
 - Omnichannel for customer service real-time analytics dashboard: This feature allows users to monitor and optimize their digital contact center. More information: [Overview of Omnichannel real-time analytics dashboard](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard)
 - Power Automate visualizing task mining processes: This feature allows users to visualize the process map and identify optimizations. More information: [Visualize processes](/power-automate/process-advisor-visualize)
