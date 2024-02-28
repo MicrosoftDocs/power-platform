@@ -158,7 +158,7 @@ Keep these key points in mind:
 
 ## Backup and restoration of the default environment
 
-Like every other environment type (sandbox, production, developer), the default environment is archived automatically. However, you can request a restore for the default environment. If you need to restore a backup, contact Microsoft Support. They can restore your environment data to a [Support environment](/power-platform/admin/support-environment). Once that restore is complete, you can view and export data as you need. Keep in mind, that when you restore the default environment, you might also be restoring unused or orphaned apps and flows that were removed during cleanup.[Learn more about backup and restore](backup-restore-environments.md).
+Like every other environment type (sandbox, production, developer), the default environment is archived automatically. However, you can request a restore for the default environment. If you need to restore a backup, contact Microsoft Support. They can restore your environment data to a [Support environment](/power-platform/admin/support-environment). Once that restore is complete, you can view and export data as you need. Keep in mind, that when you restore the default environment, you might also be restoring unused or orphaned apps and flows that were removed during cleanup. More information: [Backup and restore environments](/power-platform/admin/backup-restore-environments).
 
 ### See also
 
