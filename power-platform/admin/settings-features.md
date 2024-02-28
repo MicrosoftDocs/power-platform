@@ -195,6 +195,7 @@ Choose which provider to enable outbound calls from within customer engagement a
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Enable TDS endpoint |  Enables [Tabular Data Stream](/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50) (TDS) endpoint (a SQL data connection) for Microsoft Dataverse in an environment. More information: [Use SQL to query data](/powerapps/developer/common-data-service/cds-sql-query) and [View entity data in Power BI Desktop](/powerapps/maker/common-data-service/view-entity-data-power-bi)|On |
+|Enable user level access control for TDS endpoint | When off, all environment users have access to the TDS endpoint. If on, users only have access when members of a security role that has the **Allow user to access TDS endpoint** privilege. More information: [Control access of the TDS endpoint](control-tds-settings.md) | Off |
 
 ## Record ownership across business units
 | Setting | Description | Default value |

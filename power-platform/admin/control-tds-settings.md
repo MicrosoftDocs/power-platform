@@ -30,7 +30,7 @@ The features listed here require the TDS endpoint:
 - Power BI service: This feature allows users to publish and share their Power BI Desktop reports and dashboards to the Power BI online service, where they can access and refresh data from Dataverse using the Dataverse connector. 
 - Power Apps visualize this view: This feature allows users to create and embed Power BI visuals in their Power Apps canvas apps, using data from Dataverse views.
 - Excel Get Data: This feature allows users to import data from Dataverse data into Excel using the Power Query editor and Dataverse connector, where they can transform and analyze the data. 
-- Power Platform Data flows: This feature allows users to import and transform data from Dataverse using the Dataverse connector.  
+- Power Platform dataflows: This feature allows users to import and transform data from Dataverse using the Dataverse connector.  
 - Omnichannel for customer service real-time analytics dashboard: This feature allows users to monitor and optimize their digital contact center. More information: [Overview of Omnichannel real-time analytics dashboard](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard)
 - Power Automate visualizing task mining processes: This feature allows users to visualize the process map and identify optimizations. More information: [Visualize processes](/power-automate/process-advisor-visualize)
 
@@ -48,7 +48,7 @@ In addition to enabling the environment settings, when using individual user lev
 1. Go to the security roles section in the Power Platform admin center, **Settings** > **Users + permissions** > **Security roles**.
 1. Select the security role where users who need to use the TDS endpoint will be assigned.  
   a. Select the **Miscellaneous privileges** tab, select the **Show all privileges** in the dropdown list. In the **Search** box enter *TDS*, and the press Enter.  
-  b. Select the **Allow user to access TDS endpoint privilege** and set the **Privilege Level** to **Organization**.
+  b. Select the **Allow user to access TDS endpoint** privilege and set the **Privilege Level** to **Organization**.
     :::image type="content" source="media/allow-user-access-TDS.png" alt-text="Allow user access to TDS endpoint privilege":::
   c. Select **Save**.
 1. Assign those users who need TDS endpoint access to the security role. More information: [Assign a security role to a user](assign-security-roles.md)
