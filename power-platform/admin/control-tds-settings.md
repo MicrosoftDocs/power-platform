@@ -1,6 +1,6 @@
 ---
-title: Control access through the TDS endpoint 
-description: Learn how to control access through the TDS endpoint settings in Power Platform.
+title: Control access of the TDS endpoint 
+description: Learn how to control user access with the TDS endpoint settings in Power Platform.
 author: sericks007
 ms.author: richdi
 ms.reviewer: matp
@@ -11,11 +11,11 @@ ms.date: 02/28/2024
 search.audienceType: 
   - admin
 ---
-# Control access through the TDS endpoint
+# Control access of the TDS endpoint
 
-The Tabular Data Stream (TDS) protocol is is an application-level protocol used for the transfer of requests and responses between clients and database server systems. When enabled, you can use this protocol to access Microsoft Dataverse using Power BI, Excel, and dataflows.
+The Tabular Data Stream (TDS) protocol is an application-level protocol used for the transfer of requests and responses between clients and database server systems. When enabled, you can use this protocol to access Microsoft Dataverse using Power BI, Excel, and dataflows.
 
-The Dataverse TDS endpoint has two settings which control the level of access to the TDS endpoint.
+The Dataverse TDS endpoint has two settings, which control the level of access to the TDS endpoint.
 
 - Environment-level. The first setting in the Power Platform admin center feature environment setting. To enable, go to Settings > Product > Features. Under TDS endpoint, and then select **Enable TDS endpoint**, which controls whether the environment will listen to TDS traffic.
 - User-level. The second setting located in the same location as the environment-level setting,**Enable user level access control for TDS endpoint**, which determines whether all environment users have access (the default), or if access to the TDS endpoint is controlled at the individual user level with the **Allow user to access TDS endpoint** miscellaneous privilege is required to be assigned to a user in a security role.
@@ -34,7 +34,7 @@ The features listed here require the TDS endpoint:
 
 ## Enable individual user level control for TDS endpoint
 
-In addition to enabling the environment settings, when using individual user level control the Power Platform administrator must ensure all users who need access to the TDS endpoint and dependent features have the **Allow user to access TDS endpoint** privilege enabled within the appropriate security roles.
+In addition to enabling the environment settings, when using individual user level control the Power Platform administrator must ensure the appropriate security roles have the **Allow user to access TDS endpoint** privilege enabled and all users who need access to the TDS endpoint have membership in those roles.
 
 ### Enable user level control
 
@@ -49,13 +49,12 @@ In addition to enabling the environment settings, when using individual user lev
   b. Select the **Allow user to access TDS endpoint privilege** and set the **Privilege Level** to **Organization**.
     :::image type="content" source="media/allow-user-access-TDS.png" alt-text="Allow user access to TDS endpoint privilege":::
   c. Select **Save**.
-  
-More information: [Security roles and privileges](security-roles-privileges.md)
+1. Assign those users who need TDS endpoint access to the security role. More information: [Assign a security role to a user](assign-security-roles.md)
 
-## Known issues when users are not properly assigned privileges
+## Known issues when users aren't properly assigned privileges
 
 If the user level access control is enabled, users without the **Allow user to access TDS endpoint** miscellaneous privilege get the error message "Attempted to perform an unauthorized operation. User misses prvAllowTDSAccess privilege" when trying to retrieve data using the TDS endpoint. The error message can occur at different points depending on the application being used.
 
-For Power BI desktop when using the **Get Data** dialog with the Dataverse connector and when displaying the environment list in the navigator and trying to expand the table list fails with an authentication error or the missing privilege error.
+Another issue occurs in Power BI desktop with the Dataverse connector in the **Get Data** dialog when displaying the environment list in the navigator and trying to expand the table list. This action fails with an authentication error or the missing privilege error.
 
-To resolve these issues, grant the user the appropriate privileges described in [Enable individual user level control for TDS endpoint](#enable-individual-user-level-control-for-tds-endpoint).
+To resolve these issues, add the user to a security role that has the privilege described in [Enable individual user level control for TDS endpoint](#enable-individual-user-level-control-for-tds-endpoint).
