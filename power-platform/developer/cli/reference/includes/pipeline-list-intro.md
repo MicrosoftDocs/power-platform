@@ -1,1 +1,1 @@
-Use `pac pipeline list` to list existing pipelines in the Power Platform environment one is connected to or use `--environment` / `-env` to select an environment in the same tenant.
+Use `pac pipeline list` to list existing pipelines in the Power Platform environment you are connected to, or use `--environment` / `-env` to select an environment in the same tenant.

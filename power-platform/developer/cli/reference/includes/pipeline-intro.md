@@ -6,3 +6,5 @@ Pipelines significantly reduce the effort and domain knowledge previously requir
 
 - Admins easily configure automated deployment pipelines in minutes rather than days or weeks.
 - Makers have an intuitive user experience for easily deploying their solutions.
+
+[Learn more about pipelines in Power Platform](../../../../alm/pipelines.md)
