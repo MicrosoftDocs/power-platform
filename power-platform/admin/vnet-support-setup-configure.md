@@ -1,5 +1,5 @@
 ﻿---
-title: Set up Virtual Network support for Power Platform
+title: Set up Virtual Network support for Power Platform (preview)
 description: Learn how to set up Azure Virtual Network support for Power Platform.
 ms.date: 2/15/2024
 ms.topic: overview
@@ -15,11 +15,11 @@ ms.custom: "admin-security"
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Azure Virtual Network support for Power Platform allows you to integrate Power Platform and Dataverse components with cloud services or services that are hosted inside your private enterprise network without exposing them to the public internet. This article provides instructions for setting up virtual network support in your Power Platform environments.
+Azure Virtual Network support for Power Platform allows you to integrate Power Platform and Dataverse components with cloud services, or services hosted inside your private enterprise network, without exposing them to the public internet. This article helps you set up virtual network support in your Power Platform environments.
 
 ## Prerequisites
 
-- Review your apps, flows, and plug-in code to make sure that they connect over your virtual network. They shouldn't call endpoints over the public internet. If they need to connect to public endpoints, make sure that your firewall or network configuration allows such calls.
+- Review your apps, flows, and plug-in code to ensure they connect over your virtual network—they shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows such calls.
 
 - Prepare your tenant:
 
@@ -35,15 +35,25 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 
   - In the Power Platform admin center, assign users the Power Platform Administrator role.
 
-  :::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot that shows the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::<!-- EDITOR'S NOTE: If you want to use this image, you need to explain it in the body of the text to meet accessibility requirements. -->
+The following diagram shows virtual network support in a Power Platform environment.
+
+:::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot that shows the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
 
 ## Set up Virtual Network support
 
-Three tasks are involved in setting up Virtual Network support for Power Platform. First, you need to register Microsoft.PowerPlatform as a resource provider for the subscription that contains your virtual network. Then, you need to set up the virtual network and subnets. Finally, you need to create an enterprise policy and configure your Power Platform environment.
+The following four steps help you set up your virtual network.
+
+1. [Register Microsoft.PowerPlatform as a resource provider](#register-microsoftpowerplatform-as-a-resource-provider) for the subscription that contains your virtual network.
+
+1. [Set up the virtual network and subnets](#set-up-the-virtual-network-and-subnets).
+
+1. [Create the enterprise policy](#create-the-enterprise-policy).
+
+1. [Configure your Power Platform environment](#configure-your-power-platform-environment).
 
 ### Register Microsoft.PowerPlatform as a resource provider
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) and navigate to that subscription.
+1. Sign in to the [Azure portal](https://portal.azure.com/) and navigate to your subscription.
 
 1. Select **Resource providers**.
 
@@ -51,7 +61,7 @@ Three tasks are involved in setting up Virtual Network support for Power Platfor
 
 1. Select **Register**.
 
-    :::image type="content" source="media/vnet-support/ms-pp-select.png" alt-text="Screenshot showing where to search for Microsoft.PowerPlatform and where the register button is located.":::<!-- EDITOR'S NOTE: Please recapture this image, with "Microsoft.PowerPlatform" selected and the Register button selectable and called out. -->
+    :::image type="content" source="media/vnet-support/ms-pp-select.png" alt-text="Screenshot showing where to search for Microsoft.PowerPlatform and where the register button is located.":::
 
 ### Set up the virtual network and subnets
 
@@ -62,12 +72,12 @@ When you set up your virtual network, you need to delegate both a primary and a 
 
 1. [Set up the virtual network and subnets](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
 
-1. Delegate the subnet to the Power Platform enterprise policies by [running a subnet injection script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for both your primary and failover subnets.
+1. Delegate the subnet to the Power Platform enterprise policies by running a [subnet injection script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for both your primary and failover subnets.
 
-    > [!IMPORTANT]
-    > Have at least 24 [Classless Inter-Domain Routing (CIDR) addresses](https://datatracker.ietf.org/doc/html/rfc4632), which is 251 IP addresses and 5 reserved IP addresses, in the subnet you create. To delegate the same subnet to multiple environments, you might need more IP addresses in that subnet.
+   > [!IMPORTANT]
+   > Have at least 24 [Classless Inter-Domain Routing (CIDR) addresses](https://datatracker.ietf.org/doc/html/rfc4632), which is 251 IP addresses and 5 reserved IP addresses, in the subnet you create. To delegate the same subnet to multiple environments, you might need more IP addresses in that subnet.
 
-    To allow internet access within Power Platform containers, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the delegated subnets.
+   To allow internet access within Power Platform containers, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the delegated subnets.
 
 1. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both primary and failover subnets must have the same number of available IP addresses.
 
@@ -87,9 +97,9 @@ When you set up your virtual network, you need to delegate both a primary and a 
 
 1. Select **History**.
 
-You should see that the enterprise policies link with your environment was successful.
+   You should see that the enterprise policies link with your environment is successful if the **Status** says **Succeeded**.
 
- :::image type="content" source="media/vnet-support/vnet-success-linked.png" alt-text="Screenshot showing your virtual network is linked to your environment." lightbox="media/vnet-support/vnet-success-linked.png":::
+    :::image type="content" source="media/vnet-support/vnet-success-linked.png" alt-text="Screenshot showing your virtual network is linked to your environment." lightbox="media/vnet-support/vnet-success-linked.png":::
 
 ### See also
 

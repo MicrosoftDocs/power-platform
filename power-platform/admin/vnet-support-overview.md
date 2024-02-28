@@ -15,17 +15,17 @@ ms.custom: "admin-security"
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime, avoiding the need for protected resources to travel over the internet to integrate with Power Platform. Using Virtual Network, Dataverse and Power Platform components can call resources that are owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins to make outbound calls.
+With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using a delegate avoids the need for protected resources to travel over the internet to integrate with Power Platform. Virtual Network, Dataverse, and Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins to make outbound calls.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-Power Platform typically integrates with enterprise resources over public networks. With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. However, Azure Virtual Network support for Power Platform allows you to use a private network and still integrate with cloud services or services that are hosted inside your enterprise network.
+Power Platform typically integrates with enterprise resources over public networks. With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. However, Azure Virtual Network support for Power Platform allows you to use a private network and _still_ integrate with cloud services or services that are hosted inside your enterprise network.
 
 Azure services are protected inside a virtual network by [private endpoints](/azure/private-link/private-endpoint-overview). You can use [Express Route](/azure/expressroute/) to bring your on-premises resources inside the virtual network.
 
 Power Platform uses the virtual network and subnets that you delegate to make outbound calls to enterprise resources over the enterprise private network. Using a private network eliminates the need to route the traffic over the public internet, which could expose enterprise resources.
 
-In a virtual network, you have full control over the outbound traffic from Power Platform. The traffic is subject to network policies that are applied by your network administrator. The following diagram illustrates how resources inside your network interact with a virtual network.
+In a virtual network, you have full control over the outbound traffic from Power Platform. The traffic is subject to network policies applied by your network administrator. The following diagram shows how resources inside your network interact with a virtual network.
 
 :::image type="content" source="media/vnet-support/vnet-support-traffic.png" alt-text="Screenshot that shows how resources inside an enterprise network interact with a virtual network." lightbox="media/vnet-support/vnet-support-traffic.png":::
 
@@ -55,26 +55,26 @@ Power Platform supports Dataverse plug-ins, and with a virtual network, you can 
 
 Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions. For example, if your Power Platform environment is in the United States, then your virtual network, subnets, and enterprise policy must be in the `eastus` or `westus` Azure region.
 
-| Power Platform region | Azure region           |
-|-----------------------|-----------------------------------|
-| United States     | eastus, westus          |
-| South Africa     | eouthafricanorth, southafricawest |
-| Uk          | uksouth, ukwest          |
-| Japan         | japaneast, japanwest       |
-| India         | centralindia, southindia     |
-| France        | francecentral, francesouth    |
-| Europe        | westeurope, northeurope      |
-| Germany        | germanynorth, germanywestcentral |
-| Switzerland      | switzerlandnorth, switzerlandwest |
-| Canada        | canadacentral, canadaeast     |
-| Brazil        | brazilsouth, southcentralus    |
-| Australia       | australiasoutheast, australiaeast |
-| Asia         | eastasia, southeastasia      |
-| UAE          | uaecentral, uaenorth       |
-| Korea         | koreasouth, koreacentral     |
-| Norway        | norwaywest, norwayeast      |
-| Singapore       | southeastasia           |
-| Sweden        | swedencentral           |
+| Power Platform region | Azure region |
+|-----------------------|--------------|
+| United States | eastus, westus |
+| South Africa  | eouthafricanorth, southafricawest |
+| Uk | uksouth, ukwest |
+| Japan | japaneast, japanwest |
+| India | centralindia, southindia |
+| France | francecentral, francesouth |
+| Europe | westeurope, northeurope |
+| Germany | germanynorth, germanywestcentral |
+| Switzerland | switzerlandnorth, switzerlandwest |
+| Canada | canadacentral, canadaeast |
+| Brazil | brazilsouth, southcentralus |
+| Australia | australiasoutheast, australiaeast |
+| Asia | eastasia, southeastasia |
+| UAE | uaecentral, uaenorth |
+| Korea | koreasouth, koreacentral |
+| Norway | norwaywest, norwayeast |
+| Singapore | southeastasia |
+| Sweden | swedencentral |
 
 ## Supported services
 
@@ -92,13 +92,13 @@ Licensing requirements for Virtual Network support for Power Platform will be an
 
 When you use virtual network support in a Power Platform environment, all supported services, like Dataverse plug-ins, execute requests at runtime in your delegated subnet and are subject to your network policies.
 
-For example, a plug-in might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your virtual network. The call from the plugin is blocked in accordance with your network policy. To avoid this, you can host the publicly available service in your virtual network. Alternatively, if your service is hosted in Azure, you can use a private endpoint on the service before you turn on virtual network support in the Power Platform environment.
+For example, a plug-in might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your virtual network. The call from the plugin is blocked in accordance with your network policy. To avoid the blocked call, you can host the publicly available service in your virtual network. Alternatively, if your service is hosted in Azure, you can use a private endpoint on the service before you turn on virtual network support in the Power Platform environment.
 
 ## FAQ
 
 ### What's the difference between a virtual network data gateway and Azure Virtual Network support for Power Platform?
 
-A [virtual network data gateway](/data-integration/vnet/data-gateway-architecture#hardware) is a managed gateway that allows you to access Azure and Power Platform services from within your virtual network without having to set up an on-premises data gateway. It's optimized for ETL (extract, transform, load) workloads, for example, in Power BI and Power Platform dataflows.
+A [virtual network data gateway](/data-integration/vnet/data-gateway-architecture#hardware) is a managed gateway that allows you to access Azure and Power Platform services from within your virtual network without having to set up an on-premises data gateway. For example, the gateway is optimized for ETL (extract, transform, load) workloads in Power BI and Power Platform dataflows.
 
 Azure Virtual Network support for Power Platform uses an Azure subnet delegation for your Power Platform environment. Subnets are used by workloads in the Power Platform environment. Power Platform API workloads use virtual network support because the requests are short-lived and optimized for a large number of requests.
 
@@ -116,7 +116,7 @@ Yes. While the feature is in public preview, you need to delegate a primary and 
 
 ### How can a Power Platform environment in one region connect to resources hosted in another region?
 
-A virtual network that's linked to a Power Platform environment must reside in the [Power Platform environment's region](/power-platform/admin/regions-overview#what-regions-are-available). If the virtual network is in a different region, create a virtual network in the Power Platform environment's region and use [virtual network peering](/azure/virtual-network/virtual-network-peering-overview) to bridge the two regions.
+A virtual network linked to a Power Platform environment must reside in the [Power Platform environment's region](/power-platform/admin/regions-overview#what-regions-are-available). If the virtual network is in a different region, create a virtual network in the Power Platform environment's region and use [virtual network peering](/azure/virtual-network/virtual-network-peering-overview) to bridge the two regions.
 
 ### Can I monitor outbound traffic from delegated subnets?
 
@@ -136,7 +136,7 @@ No. You can't change the IP address range of the subnet after it's delegated to 
 
 ### My virtual network has a custom DNS configured. Does Power Platform use my custom DNS?
 
-Yes. Power Platform uses the custom DNS that's configured in the virtual network that holds the delegated subnet to resolve all endpoints. After the environment is delegated, you can update plug-ins to use the correct endpoint so that your custom DNS can resolve them.
+Yes. Power Platform uses the custom DNS configured in the virtual network that holds the delegated subnet to resolve all endpoints. After the environment is delegated, you can update plug-ins to use the correct endpoint so that your custom DNS can resolve them.
 
 ### My environment has ISV-provided plug-ins. Would these plug-ins run in the delegated subnet?
 
