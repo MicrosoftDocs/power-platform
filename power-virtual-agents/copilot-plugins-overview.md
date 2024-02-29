@@ -1,11 +1,11 @@
 ---
 title: Create copilot plugins - overview (preview)
 description: Use Microsoft Copilot Studio to create plugins that can be called directly from within chats with Microsoft Copilot.
-ms.date: 12/19/2023
+ms.date: 2/09/2024
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: leeclontz
+manager: kjette
 ms.reviewer: jameslew
 ms.custom: plugin, connector, flow, advanced-authoring
 
@@ -39,8 +39,7 @@ This article gives an overview of the ways you can create and use copilot plugin
 To create AI plugins that your end users can use in their chats with Microsoft Copilot, you need:
 
 - A license for Microsoft Copilot Studio (or an existing Power Virtual Agents license).
-- Your Microsoft 365 tenant admin to [deploy the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](#deploy-the-microsoft-copilot-studio-app-admin).
-- Access to the limited preview, by [submitting a support ticket](/microsoft-365-copilot/extensibility/prerequisites#requirements-for-plugin-development).
+- Your Microsoft 365 tenant admin to [deploy the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](/microsoft-365-copilot/extensibility/prerequisites#requirements-for-plugin-development).
 
 End users in your tenant can use conversational and AI plugins in their chats with Microsoft Copilot if you configure these settings, author and publish an AI plugin, and [the user enables the connection from within their chat with Microsoft Copilot](#enable-the-connection-in-microsoft-copilot).
 
