@@ -30,7 +30,7 @@ This article gives an overview of the ways you can create and use copilot plugin
 
 >[!Important]
 >  
-> To use plugins in Microsoft Copilot during this preview, you'll need to submit a support ticket with the title **Enable Copilot plugins for tenants** or make a request to the Microsoft Customer Success Account Manager for your organization.
+> To use plugins in Microsoft Copilot during this preview, you'll need to submit a support ticket as described in the [**Requirements for plugin development** section in the Set up your dev environment article](/microsoft-365-copilot/extensibility/prerequisites#requirements-for-plugin-development).
 >
 > During the preview, you can't use plugins in custom copilots that you build with Microsoft Copilot Studio. Plugins can only be used in Microsoft Copilot.
 
