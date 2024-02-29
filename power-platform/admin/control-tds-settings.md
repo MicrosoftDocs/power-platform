@@ -41,7 +41,7 @@ In addition to enabling the environment settings, when using individual user lev
 ### Enable user level control
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com) open the environment you want, and then go to **Settings** > **Product** > **Features**.
-1. In the TDS endpoint section, make sure **Enable TDS endpoint** is turned on. 
+1. In the **TDS endpoint** section, make sure **Enable TDS endpoint** is turned on. 
 1. Under **Enable TDS endpoint**, turn on **Enable user level access control for TDS endpoint**.  
    :::image type="content" source="media/enable-user-level-tds.png" alt-text="Enable user level access control for TDS endpoint setting":::
    > [!IMPORTANT]
@@ -49,7 +49,7 @@ In addition to enabling the environment settings, when using individual user lev
 1. Select **Save**.
 1. Go to the security roles section in the Power Platform admin center, **Settings** > **Users + permissions** > **Security roles**.
 1. Select the security role where users who need to use the TDS endpoint will be assigned.  
-  a. Select the **Miscellaneous privileges** tab, select the **Show all privileges** in the dropdown list. In the **Search** box enter *TDS*, and the press Enter.  
+  a. Select the **Miscellaneous privileges** tab, select the **Show all privileges** in the dropdown list. In the **Search** box enter *TDS*, and then press Enter.  
   b. Select the **Allow user to access TDS endpoint** privilege and set the **Privilege Level** to **Organization**.
     :::image type="content" source="media/allow-user-access-TDS.png" alt-text="Allow user access to TDS endpoint privilege" lightbox="media/allow-user-access-TDS.png":::
   c. Select **Save**.
