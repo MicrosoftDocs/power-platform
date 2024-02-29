@@ -478,6 +478,8 @@
                   href: block-forwarded-email-from-power-automate.md
                 - name: Continuous access evaluation (preview)
                   href: continuous-access-evaluation.md
+                - name: Control access of TDS endpoint
+                  href: control-tds-settings.md
                 - name: Configure environment security
                   items:
                     - name: Control user access to environments
