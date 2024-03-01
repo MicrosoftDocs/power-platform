@@ -17,9 +17,11 @@ contributors:
 
 # AI functions
 
-Dataverse provides variety of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your applications and workflows to improve functionality and streamline processes. These prebuilt functions work with canvas apps, AI Builder, Power Automate,and low-code plugins where you can easily integrate them into your solutions.
+Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows 
 
-Learn more about how to use AI functions in Power Apps in the following video.
+Dataverse provides variety of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with canvas apps, AI Builder, Power Automate, and low-code plugins so can easily integrate them into your solutions.
+
+Learn more about how to use AI functions in the following video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1iGPI]
 
