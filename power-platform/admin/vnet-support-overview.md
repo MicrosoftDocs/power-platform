@@ -17,10 +17,6 @@ ms.custom: "admin-security"
 
 With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using a delegate avoids the need for protected resources to travel over the internet to integrate with Power Platform. Virtual Network, Dataverse, and Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
 
-Power Platform offers two ways to securely connect to enterprise resources:
-- **Virtual network support for Power Platform:** Virtual Network support for Power Platform is optimized to handle API workloads with a high request volume and low execution time for requests.
-- **Virtual network (VNet) data gateway:** [Virtual Network Data Gateway](https://learn.microsoft.com/data-integration/vnet/overview) is optimized to handle ETL (Extract, Transform, Load) workloads with a low request volume and high execution time for requests.
-
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 Power Platform typically integrates with enterprise resources over public networks. With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. However, Azure Virtual Network support for Power Platform allows you to use a private network and _still_ integrate with cloud services or services that are hosted inside your enterprise network.
