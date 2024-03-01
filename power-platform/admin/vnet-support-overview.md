@@ -97,7 +97,7 @@ Licensing requirements for Virtual Network support for Power Platform will be an
 When you use virtual network support in a Power Platform environment, all supported services, like Dataverse plug-ins, connectors, execute requests at runtime in your delegated subnet and are subject to your network policies. The calls to publicly available resources would start to break.
 
  > [!IMPORTANT]
- >  Before you enable the virtual environment support for Power Platform environment, make sure you check the code of the plug-ins and the connectors. The URL’s/connections need to be updated to work with private connectivity.
+ >  Before you enable the virtual environment support for Power Platform environment, make sure you check the code of the plug-ins and the connectors. The URLs and connections need to be updated to work with private connectivity.
 
 For example, a plug-in might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your virtual network. The call from the plugin is blocked in accordance with your network policy. To avoid the blocked call, you can host the publicly available service in your virtual network. Alternatively, if your service is hosted in Azure, you can use a private endpoint on the service before you turn on virtual network support in the Power Platform environment.
 
