@@ -50,7 +50,7 @@ Power Platform supports Dataverse plug-ins, connectors, and with a virtual netwo
 ### Limitations
 
 - [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
-- You can only use Copy and Restore [environment lifecycle operations](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center). If the source environment has virtual network enabled and the target does not, you cannot do Copy and Restore.
+- You can only use Copy and Restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center). If the source environment has virtual network enabled and the target does not, you cannot do Copy and Restore.
 
 ## Supported regions
 
