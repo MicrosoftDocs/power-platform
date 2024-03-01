@@ -55,8 +55,6 @@ Power Platform supports Dataverse plug-ins, connectors, and with a virtual netwo
 
 - [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
 
-- [Dependent assemblies plug-ins](/power-apps/developer/data-platform/build-and-package#dependent-assemblies) might not work as expected in some cases. We're working to add support for them.
-
 ## Supported regions
 
 Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions. For example, if your Power Platform environment is in the United States, then your virtual network, subnets, and enterprise policy must be in the `eastus` or `westus` Azure region.
