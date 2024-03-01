@@ -48,7 +48,7 @@ Power Platform supports Dataverse plug-ins, connectors, and with a virtual netwo
 - Use Dataverse plug-ins to connect to your on-premises data sources such as SQL server, Oracle, or SAP. You protect your data from data breaches and other external threats.
 
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
-- 
+  
 - Use the SQL Connector to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use Azure Queue to establish secure connections to private endpoint-enabled Azure Queues.
 
 ### Limitations
@@ -101,8 +101,8 @@ Licensing requirements for Virtual Network support for Power Platform will be an
 
 When you use virtual network support in a Power Platform environment, all supported services, like Dataverse plug-ins, connectors, execute requests at runtime in your delegated subnet and are subject to your network policies. The calls to publicly available resources would start to break.
 
-!important
-Review the plug-ins code and connectors to ensure that URL's are updated to support private connectivity before enabling the virtual environment support for Power Platform environment
+ > [!IMPORTANT]
+ >  Before you enable the virtual environment support for Power Platform environment, make sure you check the code of the plug-ins and the connectors. The URL’s/connections need to be updated to work with private connectivity.
 
 For example, a plug-in might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your virtual network. The call from the plugin is blocked in accordance with your network policy. To avoid the blocked call, you can host the publicly available service in your virtual network. Alternatively, if your service is hosted in Azure, you can use a private endpoint on the service before you turn on virtual network support in the Power Platform environment.
 
