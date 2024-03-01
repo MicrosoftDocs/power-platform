@@ -15,7 +15,11 @@ ms.custom: "admin-security"
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using a delegate avoids the need for protected resources to travel over the internet to integrate with Power Platform. Virtual Network, Dataverse, and Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins to make outbound calls.
+With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using a delegate avoids the need for protected resources to travel over the internet to integrate with Power Platform. Virtual Network, Dataverse, and Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
+
+Power Platform offers two ways to securely connect to enterprise resources:
+- **Virtual network support for Power Platform:** Virtual Network support for Power Platform is optimized to handle API workloads with a high request volume and low execution time for requests.
+- **Virtual network (VNet) data gateway:** [Virtual Network Data Gateway](https://learn.microsoft.com/data-integration/vnet/overview) is optimized to handle ETL (Extract, Transform, Load) workloads with a low request volume and high execution time for requests.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
@@ -39,11 +43,13 @@ With Virtual Network support, your Power Platform and Dataverse components get a
 
 ## Supported scenarios
 
-Power Platform supports Dataverse plug-ins, and with a virtual network, you can use secured, private, outbound connectivity with partner software. For example, Dataverse plug-ins enhance data integration security with external data sources from your Power Apps, Power Automate, and Dynamics 365 apps. We plan to extend virtual network support to more Power Platform scenarios. For now, you can:
+Power Platform supports Dataverse plug-ins, connectors, and with a virtual network, you can use secured, private, outbound connectivity with partner software. For example, Dataverse plug-ins and connectors enhance data integration security with external data sources from your Power Apps, Power Automate, and Dynamics 365 apps. We plan to extend virtual network support to more Power Platform scenarios. For now, you can:
 
 - Use Dataverse plug-ins to connect to your on-premises data sources such as SQL server, Oracle, or SAP. You protect your data from data breaches and other external threats.
 
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
+- 
+- Use the SQL Connector to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use Azure Queue to establish secure connections to private endpoint-enabled Azure Queues.
 
 ### Limitations
 
@@ -83,14 +89,20 @@ The following table lists the services that support Azure subnet delegation for 
 | Area | Power Platform services | Virtual Network support |
 |------------|-------------------|--------------|
 | Dataverse | Dataverse plug-ins | Public preview |
+| Connectors | SQL | Public preview |
+|| Azure Queue | Public Preview|
+
 
 ## Licensing requirements
 
 Licensing requirements for Virtual Network support for Power Platform will be announced when the service is closer to general availability.
 
-## Considerations
+## Considerations before enabling virtual network support for Power Platform Environment
 
-When you use virtual network support in a Power Platform environment, all supported services, like Dataverse plug-ins, execute requests at runtime in your delegated subnet and are subject to your network policies.
+When you use virtual network support in a Power Platform environment, all supported services, like Dataverse plug-ins, connectors, execute requests at runtime in your delegated subnet and are subject to your network policies. The calls to publicly available resources would start to break.
+
+!important
+Review the plug-ins code and connectors to ensure that URL's are updated to support private connectivity before enabling the virtual environment support for Power Platform environment
 
 For example, a plug-in might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your virtual network. The call from the plugin is blocked in accordance with your network policy. To avoid the blocked call, you can host the publicly available service in your virtual network. Alternatively, if your service is hosted in Azure, you can use a private endpoint on the service before you turn on virtual network support in the Power Platform environment.
 
