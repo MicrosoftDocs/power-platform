@@ -61,7 +61,7 @@ The following four steps help you set up your virtual network.
 
 1. Select **Register**.
 
-    :::image type="content" source="media/vnet-support/ms-pp-select.png" alt-text="Screenshot showing where to search for Microsoft.PowerPlatform and where the register button is located.":::
+More information: [Register resource provider](/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider-1)
 
 ### Set up the virtual network and subnets
 
