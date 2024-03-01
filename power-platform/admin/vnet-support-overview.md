@@ -45,7 +45,7 @@ Power Platform supports Dataverse plug-ins, connectors, and with a virtual netwo
 
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
   
-- Use the SQL Connector to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use Azure Queue to establish secure connections to private endpoint-enabled Azure Queues.
+- Use the SQL Connector to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) to establish secure connections to private, endpoint-enabled Azure Queues.
 
 ### Limitations
 
@@ -85,7 +85,7 @@ The following table lists the services that support Azure subnet delegation for 
 |------------|-------------------|--------------|
 | Dataverse | Dataverse plug-ins | Public preview |
 | Connectors | SQL | Public preview |
-|| Azure Queue | Public Preview|
+|            | Azure Queue | Public Preview|
 
 
 ## Licensing requirements
