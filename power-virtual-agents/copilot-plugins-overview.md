@@ -38,7 +38,7 @@ You can also [use and deploy pre-built plugins for business applications, includ
 
 
 
-To create AI plugins that your end users can use in their chats with Microsoft Copilot, you need:
+To create conversational and AI plugins that your end users can use in their chats with Microsoft Copilot, you need:
 
 - [A license for Microsoft Copilot Studio (or an existing Power Virtual Agents license)](requirements-licensing-subscriptions.md).
 - [Licenses for Copilot for Microsoft 365](/microsoft-365-copilot/extensibility/overview-business-applications#get-copilot-for-microsoft-365-licenses-and-enable-plugins).
