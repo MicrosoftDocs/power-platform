@@ -95,7 +95,7 @@ The following table lists the services that support Azure subnet delegation for 
 
 Licensing requirements for Virtual Network support for Power Platform will be announced when the service is closer to general availability.
 
-## Considerations before enabling virtual network support for Power Platform Environment
+## Considerations to enable virtual network support for Power Platform Environment
 
 When you use virtual network support in a Power Platform environment, all supported services, like Dataverse plug-ins, connectors, execute requests at runtime in your delegated subnet and are subject to your network policies. The calls to publicly available resources would start to break.
 
