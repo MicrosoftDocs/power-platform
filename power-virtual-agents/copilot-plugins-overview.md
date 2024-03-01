@@ -1,11 +1,11 @@
 ---
 title: Create copilot plugins - overview (preview)
 description: Use Microsoft Copilot Studio to create plugins that can be called directly from within chats with Microsoft Copilot.
-ms.date: 12/19/2023
+ms.date: 2/09/2024
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: leeclontz
+manager: kjette
 ms.reviewer: jameslew
 ms.custom: plugin, connector, flow, advanced-authoring
 
@@ -39,8 +39,7 @@ This article gives an overview of the ways you can create and use copilot plugin
 To create AI plugins that your end users can use in their chats with Microsoft Copilot, you need:
 
 - A license for Microsoft Copilot Studio (or an existing Power Virtual Agents license).
-- Your Microsoft 365 tenant admin to [deploy the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](#deploy-the-dynamics-365-and-copilot-studio-app-admin).
-- Access to the limited preview, by [submitting a support ticket](/microsoft-365-copilot/extensibility/prerequisites#requirements-for-plugin-development).
+- Your Microsoft 365 tenant admin to [deploy the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](/microsoft-365-copilot/extensibility/prerequisites#requirements-for-plugin-development).
 
 End users in your tenant can use conversational and AI plugins in their chats with Microsoft Copilot if you configure these settings, author and publish an AI plugin, and [the user enables the connection from within their chat with Microsoft Copilot](#enable-the-connection-in-microsoft-copilot).
 
@@ -59,7 +58,7 @@ Instead of manually designing a conversation flow within the copilot to account 
 - A Power Automate flow plugin takes the contact data provided by the copilot user to create the lead.
 - A prompt plugin summarizes the latest conversations the copilot user had with the contact.
 
-Now when the copilot user asks to create a lead, the flow plugin is triggered and the lead is created from the data already provided by the user. The use can also ask for an abstract or summary, which triggers the prompt plugin and return a summary of actions.
+Now when the copilot user asks to create a lead, the flow plugin is triggered and the lead is created from the data already provided by the user. The user can also ask for an abstract or summary, which triggers the prompt plugin and return a summary of actions.
 
 ### Plugin categories and types
 
@@ -92,21 +91,21 @@ OpenAI plugins | [Open AI plugins](https://platform.openai.com/docs/plugins/intr
 
 End users in your tenant can use conversational and AI plugins in their chats with Microsoft Copilot if:
 
-1. Your Microsoft 365 tenant admin deploys the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center.
+1. Your Microsoft 365 tenant admin deploys the Microsoft Copilot Studio app in the Microsoft 365 admin center.
 
 1. The end user enables the connection from within their chat with Microsoft Copilot.
 
-### Deploy the Dynamics 365 and Copilot Studio app (admin)
+### Deploy the Microsoft Copilot Studio app (admin)
 
 1. Sign in to the Microsoft 365 admin center with your admin account.
 
 1. Expand **Settings** on the side navigation pane and select **Integrated apps**.
 
-1. Go to the **Available apps** tab and select the entry **Dynamics 365 and Copilot Studio**. The app's details pane opens.
+1. Go to the **Available apps** tab and select the entry **Microsoft Copilot Studio**. The app's details pane opens.
 
 1. Select **Deploy** to enable the app in chats with Microsoft Copilot.
 
-![Deploying the Dynamics 365 and Copilot Studio app](media/copilot-plugins-overview/deploy-dynamics365-and-copilot-studio.png)
+![Deploying the Copilot Studio app](media/copilot-plugins-overview/deploy-dynamics365-and-copilot-studio.png)
 
 ### Enable the connection in Microsoft Copilot
 

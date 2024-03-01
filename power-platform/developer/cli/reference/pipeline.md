@@ -32,7 +32,7 @@ Work with Pipelines
 
 ## pac pipeline deploy
 
-Start pipeline deployment.
+Start pipeline deployment. 
 
 [!INCLUDE [pipeline-deploy-intro](includes/pipeline-deploy-intro.md)]
 
@@ -72,7 +72,7 @@ This parameter requires no value. It's a switch.
 
 ## pac pipeline list
 
-List Pipelines
+List Pipelines. 
 
 [!INCLUDE [pipeline-list-intro](includes/pipeline-list-intro.md)]
 
