@@ -28,7 +28,7 @@ These connections allow you to use plugins in Microsoft Copilot for Microsoft 36
 
 This article gives an overview of the ways you can create and use copilot plugins and provides links for individual configuration steps for building and configuring plugins in Copilot Studio. 
 
-You can also [use and deploy pre-built plugins business applications, including Power Platform and Dynamics 365 apps](/microsoft-365-copilot/extensibility/overview-business-applications).
+You can also [use and deploy pre-built plugins for business applications, including Power Platform and Dynamics 365 apps](/microsoft-365-copilot/extensibility/overview-business-applications).
 
 >[!Important]
 >  
