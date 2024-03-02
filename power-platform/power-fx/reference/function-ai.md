@@ -15,7 +15,7 @@ contributors:
   - mduelae
 ---
 
-# AI functions
+# AI functions - AIClassify, AIExtract, AIReply, AISentiment, AISummarize, and AITranslate
 
 Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows 
 
@@ -42,7 +42,7 @@ Summarize the text that you provide. For example, this function summarizes an em
 |----------------|--------------------------------------|----------------|
 | SummarizedText | Summarized version of the input text | Text sentences |
 
-### AISentiment
+## AISentiment
 
 Detect the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
 
@@ -58,7 +58,7 @@ Detect the sentiment of the text that you provide. For example, this function de
 |-------------------|----------------------------------------|--------------------------------|
 | AnalyzedSentiment | Overall sentiment of the analyzed text | Positive, neutral, or negative |
 
-### AIReply
+## AIReply
 
 Draft a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
 
@@ -74,11 +74,11 @@ Draft a reply to the message that you provide. For example, this function drafts
 |------------------|--------------------------------------------------------|----------------|
 | PreparedResponse | A draft message in response to the provided input text | Text sentences |
 
-### AITranslate
+## AITranslate
 
 Translate text from another language. For example, this function translates a customer email or product review. The source language doesn't need to be specified, and is automatically detected.
 
-To learn more about languages supported for the source and target language, go to [Translator language support—Translation](/ai-services/translator/language-support#translation) and review the list of supported languages under the **Auto Language Detection** column.
+For more information about languages supported for the source and target language, see [Translator language support—Translation](/azure/ai-services/translator/language-support) and review the list of supported languages under the **Auto Language Detection** column.
 
 #### Input for AITranslate
 
@@ -93,7 +93,7 @@ To learn more about languages supported for the source and target language, go t
 |----------------|-----------------|----------------|
 | TranslatedText | Translated text | Text sentences |
 
-### AIClassify
+## AIClassify
 
 Classify text into one or more from the provided category. For example, the following list of categories can be used to classify issues submitted by your customers:
 
@@ -115,7 +115,7 @@ Classify text into one or more from the provided category. For example, the foll
 |----------------|-----------------|---------------------------|
 | Classification | Category        | Name of selected category |
 
-### AIExtract
+## AIExtract
 
 Extract specified entities such as registration numbers, phone numbers, or names of people.
 
