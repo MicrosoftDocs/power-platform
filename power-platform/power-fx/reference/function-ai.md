@@ -19,7 +19,7 @@ contributors:
 
 Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows 
 
-Dataverse provides variety of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with canvas apps, AI Builder, Power Automate, and low-code plugins so can easily integrate them into your solutions.
+Dataverse provides variety a of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with canvas apps, AI Builder, Power Automate, and low-code plugins so can easily integrate them into your solutions.
 
 Learn more about how to use AI functions in the following video.
 
@@ -28,7 +28,7 @@ Learn more about how to use AI functions in the following video.
 
 ## AISummarize
 
-Summarize the text that you provide. For example, this function summarizes an email message or text from a document.
+Summarizes the text that you provide. For example, this function summarizes an email message or text from a document.
 
 #### Input for AISummarize
 
@@ -44,7 +44,7 @@ Summarize the text that you provide. For example, this function summarizes an em
 
 ## AISentiment
 
-Detect the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
+Detects the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
 
 #### Input for AISentiment
 
@@ -60,7 +60,7 @@ Detect the sentiment of the text that you provide. For example, this function de
 
 ## AIReply
 
-Draft a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
+Drafts a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
 
 #### Input for AIReply
 
@@ -76,7 +76,7 @@ Draft a reply to the message that you provide. For example, this function drafts
 
 ## AITranslate
 
-Translate text from another language. For example, this function translates a customer email or product review. The source language doesn't need to be specified, and is automatically detected.
+Translates text from another language. For example, this function translates a customer email or product review. The source language doesn't need to be specified, and is automatically detected.
 
 For more information about languages supported for the source and target language, see [Translator language support—Translation](/azure/ai-services/translator/language-support) and review the list of supported languages under the **Auto Language Detection** column.
 
@@ -95,7 +95,7 @@ For more information about languages supported for the source and target languag
 
 ## AIClassify
 
-Classify text into one or more from the provided category. For example, the following list of categories can be used to classify issues submitted by your customers:
+Classifies text into one or more from the provided category. For example, the following list of categories can be used to classify issues submitted by your customers:
 
 - Problem
 - Billing
@@ -117,7 +117,7 @@ Classify text into one or more from the provided category. For example, the foll
 
 ## AIExtract
 
-Extract specified entities such as registration numbers, phone numbers, or names of people.
+Extracts specified entities such as registration numbers, phone numbers, or names of people.
 
 #### Input for AIExtract
 
