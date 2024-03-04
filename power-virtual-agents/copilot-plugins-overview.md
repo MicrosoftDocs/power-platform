@@ -26,22 +26,29 @@ Copilot plugin building connects the Microsoft 365 tenant and the Power Platform
 
 These connections allow you to use plugins in Microsoft Copilot for Microsoft 365 and use data across Dynamics 365, Power Platform, and Microsoft 365.
 
-This article gives an overview of the ways you can create and use copilot plugins and provides links for individual configuration steps.
+This article gives an overview of the ways you can create and use copilot plugins and provides links for individual configuration steps for building and configuring plugins in Copilot Studio. 
+
+You can also [use and deploy pre-built plugins for business applications, including Power Platform and Dynamics 365 apps](/microsoft-365-copilot/extensibility/overview-business-applications).
 
 >[!Important]
 >  
-> To use plugins in Microsoft Copilot during this preview, you'll need to submit a support ticket as described in the [**Requirements for plugin development** section in the Set up your dev environment article](/microsoft-365-copilot/extensibility/prerequisites#requirements-for-plugin-development).
->
-> During the preview, you can't use plugins in custom copilots that you build with Microsoft Copilot Studio. Plugins can only be used in Microsoft Copilot.
+> During the preview, plugins you build with Copiot Studio can only be used in Copilot for Microsoft 365. You can't use plugins you build in custom copilots that you've created in Copilot Studio.
 
 ## Prerequisites
 
-To create AI plugins that your end users can use in their chats with Microsoft Copilot, you need:
 
-- A license for Microsoft Copilot Studio (or an existing Power Virtual Agents license).
-- Your Microsoft 365 tenant admin to [deploy the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](/microsoft-365-copilot/extensibility/prerequisites#requirements-for-plugin-development).
+
+To create conversational and AI plugins that your end users can use in their chats with Microsoft Copilot, you need:
+
+- [A license for Microsoft Copilot Studio (or an existing Power Virtual Agents license)](requirements-licensing-subscriptions.md).
+- [Licenses for Copilot for Microsoft 365](/microsoft-365-copilot/extensibility/overview-business-applications#get-copilot-for-microsoft-365-licenses-and-enable-plugins).
+- To submit a support ticket with the title **Enable Copilot plugins for tenants** or make a request to the Microsoft Customer Success Account Manager for your organization.
+- Your Microsoft 365 tenant admin to [deploy the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](#deploy-the-microsoft-copilot-studio-app-admin).
 
 End users in your tenant can use conversational and AI plugins in their chats with Microsoft Copilot if you configure these settings, author and publish an AI plugin, and [the user enables the connection from within their chat with Microsoft Copilot](#enable-the-connection-in-microsoft-copilot).
+
+
+
 
 ## Copilot plugins
 
