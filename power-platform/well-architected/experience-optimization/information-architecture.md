@@ -146,10 +146,14 @@ Avoid interchangeably using similar labels. For example, using “About” in th
 ### Organize content in logical schemas and categories
 Schemas help users build their mental maps of information to navigate through experiences and find the content they are looking for. Categorization can occur through different organization schemas, subjective vs exact.
 
-| Schema | Focus | Usage | Optimized for content set | Examples | 
-| ------ | ----- | ----- | ------------------------- | -------- |
-| Subjective schemes | user-centered | Mainly used for top-level categories in level 1 (L1). Valuable when content is organized in meaningful ways | Ambiguous; challenging to create/maintain with high reward | <ul><li>By topic — based on the subject matter and relevancy</li><li>By task — specific user needs, actions, questions, or processes</li><li>By audience — different user groups = different content / tasks</li></ul><br><br>For example, content in a side nav menu for a grocery store is organized from most to least popular from top to bottom. |
-| Exact schemes | content-centered | Mainly nested inside top-level categories in level 2 (L2). Assistive or additional way to organize information since this scheme can be combined with other organizational schemes if needed. | Straightforward; easy to create/maintain; | <ul><li>By alphabetical order — uses the English 26-letter alphabet</li><li>By chronological order — uses time as a reference, usually by date</li><li>By geographical scheme — uses region as a way to segment content</li></ul><br><br> For example, content in a side nav menu for a grocery store is organized alphabetically from top to bottom. |
+**Subjectibe vs exact schemas**
+
+| | Subjective | Exact |
+| - | - | - |
+| Focus | User centered | Content centered | 
+| Usage | Mainly used for top-level categories in level 1 (L1). Valuable when content is organized in meaningful ways | Mainly nested inside top-level categories in level 2 (L2). Assistive or additional way to organize information since this scheme can be combined with other organizational schemes if needed. |
+| Optimal content set | Ambiguous; challenging to create and maintain with high reward |  Straightforward; easy to create/maintain |
+| Examples | <ul><li>By topic — based on the subject matter and relevancy</li><li>By task — specific user needs, actions, questions, or processes</li><li>By audience — different user groups = different content / tasks</li></ul><br><br>For example, content in a side nav menu for a grocery store is organized from most to least popular from top to bottom. | <ul><li>By alphabetical order — uses the English 26-letter alphabet</li><li>By chronological order — uses time as a reference, usually by date</li><li>By geographical scheme — uses region as a way to segment content</li></ul><br><br> For example, content in a side nav menu for a grocery store is organized alphabetically from top to bottom. |
 
 > [!CAUTION]
 > Avoid combining different organization schemes unless necessary. Be consistent, keep it simple, and use one organization method to prevent user confusion to preserve the end users’ mental model of the user experience. Using a single organization scheme method contributes to a mental model that can be quickly understood, and in edge cases, use extreme caution when combining more than one method such as by topic in Level 1 (L1) and by alphabetical order in Level 2 (L2).
