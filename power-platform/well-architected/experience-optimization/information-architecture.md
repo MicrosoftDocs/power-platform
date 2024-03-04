@@ -63,7 +63,7 @@ If you don’t know about context, you won’t be able to create something that 
 | Users | What end-users need to do, how they think, and what they already know. | The user experience will not be easy to use and adopt. | 
 
 
-### Audit content you have
+### Audit available content
 The first step to working with content is to understand what you already have, then determine which content should be used.
 
 **What you have**
@@ -168,6 +168,46 @@ We all think differently, and have different ideas of categories but there are c
 * **Hierarchy.** Some categories and sub-categories may naturally form a hierarchy. Use this mechanism to get a rough start on your first IA draft.
 * **Scannable.** Categories need to be predictable and easily broken down into smaller groups. This helps create clear mental models for users.
 * **Contextual.** Category boundaries aren't fixed – they can change over time as you add content into buckets. Some categories may overlap or have fuzzy boundaries, and some items may belong in a category better than others. For example, categories of “sports” vs “games” may have some items that’d end up in both categories (not recommended).
+
+### Iteratively develop your IA
+IA doesn't need to be final before beginning wireframe and prototype. A first pass is necessary to get a handle on the volume and complexity of the content. Making navigation component choices based on looks alone can force you to change an ideal IA to something that doesn’t best serve the needs of users or accommodate your content.
+
+#### Step 1: Decide what you need to create and just do it
+This is just a starting point, it doesn’t have to be perfect. Scribble on sticky notes, on whiteboard, or in a place where you can share/collaborate with others. Make notes of your rationale.
+
+For example, the first attempt of organizing grocery store items has three top-level categories of fresh food, milk products, and bread. Vegetables and meat are nested under fresh food.
+
+#### Step 2: Check and revise until it works
+Your first draft of an IA will not work perfectly. Consider:
+- labeling: do these terms make sense, will your users understand the labels?
+- grouping: how content is grouped together, is it easy to find/narrow down to?
+- content: do quick tests by placing sample paragraphs of content into your draft IA, does the content fit, or do you have content that doesn’t really fit anywhere?
+
+For example, this next iteration of grocery store items is organized under four categories of produce, dairy, meat, and bakery. Instead of fresh food – produce and meat were labeled to create clearer groupings. Similarly, the bread category was updated to bakery to accommodate more items like pie.
+
+#### Step 3: Stop and discuss with others. There will be a point where you feel good about not tweaking your IA anymore.
+Listen to feedback on the core of the IA, and keep edge-case content in mind. Ask your stakeholders if they feel the IA is flexible for future content additions
+expect changes. 
+
+For example, the final iteration of grocery store items has four top-level categories of produce, dairy & eggs, meat, and bakery. Eggs was added to the dairy category due to egg products not fitting well in other categories.
+
+### Validate your IA with research
+Once you've created a basic structure, you can evaluate it with users to determine whether they can find things where you’ve put them. By testing your IA, you are saving time, resources, and effort before moving to the design phase. It's recommended to use all the steps below in order before landing on a final IA structure and adding navigation.
+
+#### Step 1 - Card sorting. 
+Participants organize cards into categories, this is a fast and easy way to determine where your IA structure doesn’t match user expectations. can be done with physical index cards, post-its or via digital tools like Figma or other UX tools.
+- open card sorting: participants create their own categories
+- modified-delphi: participants work one after another, refining a single model until consensus is reached
+- closed card sorting: participants sort into predefined categories (such as the example)
+
+#### Step 2 - Tree testing. 
+A variation of reverse card sorting, participants given an assigned search task where they are asked where they would look first to find each item
+- Experiment with organizational schemes, subjective vs exact
+- Test with different categories you are unsure about to build clarity
+- Use online UX tools or build simple prototypes in Figma to test these concepts
+
+#### Step 3 - Low-fidelity prototypes. 
+This should only be used as a last step when you feel confident in your IA structure. Use simple shapes and categories in wireframes, avoid detailed design mockups. Making prototypes interactive can add value and depth of understanding your UX flows.
 
 ## Power Platform facilitation
 
