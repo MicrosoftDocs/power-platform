@@ -88,6 +88,8 @@
                   href: extend-pipelines-github-export.md
             - name: Run pipelines
               href: run-pipeline.md
+            - name: Redeploy past solution versions
+              href: redeploy-past-solution-versions.md
             - name: Use Copilot to generate deployment notes in pipelines
               href: copilot-deployment-notes-pipelines.md
         - name: Block unmanaged customizations (preview) 
