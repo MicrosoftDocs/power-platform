@@ -62,26 +62,21 @@ Ensure thorough understanding of existing content, align content with user needs
 #### Step 1: Audit content you have
 The first step to working with content is to understand what you already have, then determine which content should be used.
 
-:::row:::
-   :::column span="":::
-      **What you have**
-      * Understand the subject (if you are new to it)
-      * Look at it with fresh eyes (if you already know it)
-      * Clean up out-of-date and inaccurate content
-   :::column-end:::
-   :::column span="":::
-      **What to collect**
-      * Collect only what you’ll need, and nothing more
-      * Each link's name (the label that will be used in navigation)
-      * Page names (main heading on a page, which should be the same as link name)
-      * Page url (if applicable)
-      * Content type (article, FAQ, report, or something else?)
-      * Resources (PDFs, images, videos, etc)
-      * Status / date last updated
-      * Content owners
-      * Comments (anything you want to note)
-   :::column-end:::
-:::row-end:::
+**What you have**
+* Understand the subject (if you are new to it)
+* Look at it with fresh eyes (if you already know it)
+* Clean up out-of-date and inaccurate content
+
+**What to collect**
+* Collect only what you’ll need, and nothing more
+* Each link's name (the label that will be used in navigation)
+* Page names (main heading on a page, which should be the same as link name)
+* Page url (if applicable)
+* Content type (article, FAQ, report, or something else?)
+* Resources (PDFs, images, videos, etc)
+* Status / date last updated
+* Content owners
+* Comments (anything you want to note)
 
 Keep the following tips in mind when going through this step:
 
@@ -94,30 +89,23 @@ Keep the following tips in mind when going through this step:
 #### Step 2: Identify content needed
 Keep in mind the content you choose should meet your users' needs, and also achieve your project goals.
 
-:::row:::
-   :::column span="":::
-      **Current behavior**
-      * Look at what’s being used already, to easily help confirm what you should include or get ideas for content
-      * Look at website statistics, both recent and long-term, does usage peak and never get used again?
-      * Consider what content is heavily used or popular, and why it's popular
-      * If content is important but not getting enough use, consider how you can make it easier to find
-   :::column-end:::
-   :::column span="":::
-      **User research & content brainstorm**
-      Leverage your initial research insights about users to prioritize and use the right content. Pay attention to:
-      * Gaps in content and uses
-      * Ways to improve UX functionality for easier completion of tasks
-      * Consider needs for functional items to improve pain points in UX flows such as templates, tools, et cetera
-   :::column-end:::
-   :::column span="":::
-   **Market analysis**
-   You can learn a lot by looking at application offerings in the market with similar utility to your project. This provides insight into a perspective other than your own. Consider:
-   * Where do they display information?
-   * Which information is the common denominator?
-   * Is the website or application easy to navigate?
-   * What makes it good or bad?
-   :::column-end:::
-:::row-end:::
+Observe the current behavior related to the project content to gain insights into user preferences, usage patterns, and areas of interest.
+* Look at what's being used already, to easily help confirm what you should include or get ideas for content.
+* Look at website statistics, both recent and long-term, does usage peak and never get used again?
+* Consider what content is heavily used or popular, and why it's popular.
+* If content is important but not getting enough use, consider how you can make it easier to find
+
+User research and content brainstorming provides new ideas for content.
+Leverage your initial research insights about users to prioritize and use the right content. Pay attention to:
+* Gaps in content and uses
+* Ways to improve UX functionality for easier completion of tasks
+* Consider needs for functional items to improve pain points in UX flows such as templates, tools, et cetera
+
+Evaluate application offerings in the market with similar utility to your project. This provides insight into a perspective other than your own.
+* **Consider where they display information.** Experiences that are widely adopted either reflect or influence user expectations.
+* **Identify which information is the common denominator.** The common denominators are core content elements that are essential to users, allowing for prioritization and optimization of the IA to ensure these key components are readily accessible and effectively communicated.
+* **Is the website or application easy to navigate?** Just because an offering is well-adopted doesn't necessarily mean it's also easy to navigate. Certain experiences may be catering to specific audiences with a specialized knowledge or skill set, which may not be applicable to your project. For example, peer-reviewed research databases are widely accepted, but may not be a good pattern for business applications that have a different purpose.
+* **What makes it good or bad?** Clearly understanding both positive and negative aspects of existing applications helps identify best practices to emulate and pitfalls to avoid, ultimately leading to a more user-friendly and successful product.
 
 ### Step 3: Communicating your content
 Content shouldn't be treated as an afterthought, because content is the website. Ensure project content is clearly communicated and understood by all important stakeholders from the beginning of the planning throughout.
