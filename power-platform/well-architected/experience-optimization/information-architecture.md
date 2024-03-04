@@ -92,17 +92,15 @@ Observe the current behavior related to the project content to gain insights int
 * Consider what content is heavily used or popular, and why it's popular.
 * If content is important but not getting enough use, consider how you can make it easier to find
 
-User research and content brainstorming provides new ideas for content.
-Leverage your initial research insights about users to prioritize and use the right content. Pay attention to:
-* Gaps in content and uses
-* Ways to improve UX functionality for easier completion of tasks
-* Consider needs for functional items to improve pain points in UX flows such as templates, tools, et cetera
+Leverage user research insights to prioritize the right content or brainstorm new content.
+* **Pay attention to gaps in content and uses.** Areas where existing content fails to meet user needs or address key topics can help prioritize content creation or restructuring efforts to fill these voids.
+* **Look for ways to improve UX functionality for easier completion of tasks.** Research can help identify pain points and inefficiencies in the current user journey. Design an information architecture that streamlines navigation and facilitates task completion. Consider needs for functional items to improve pain points in UX flows (such as templates, tools, et cetera).
 
 Evaluate application offerings in the market with similar utility to your project. This provides great inspiration and insight into a perspective other than your own.
 * **Consider where popular offerings display information.** Experiences that are widely adopted (across the general population or within a domain) either reflect or influence user expectations. Following standards in the appropriate domain helps meet expectations, ergo influencing better adoption.
 * **Identify which information is the common denominator.** The common denominators are core content elements that are essential to users, allowing for prioritization and optimization of the IA to ensure these key components are readily accessible and effectively communicated.
 * **Is the website or application easy to navigate?** Just because an offering is well-adopted doesn't necessarily mean it's also easy to navigate. Certain experiences may be catering to specific audiences with a specialized knowledge or skill set, which may not be applicable to your project. For example, peer-reviewed research databases are widely accepted, but may not be a good pattern for business applications that have a different purpose.
-* **What makes it good or bad?** Clearly understanding both positive and negative aspects of existing applications helps identify best practices to emulate and pitfalls to avoid, ultimately leading to a more user-friendly and successful product.
+* **What makes it good or bad?** Consciously experiencing the positive and negative aspects of applications you use can help identify best practices to emulate and pitfalls to avoid.
 
 ### Communicate your IA and content plans throught the project
 Content shouldn't be treated as an afterthought, because content is the application. Ensure project content is clearly communicated and understood by all important stakeholders from the beginning of the planning throughout.
