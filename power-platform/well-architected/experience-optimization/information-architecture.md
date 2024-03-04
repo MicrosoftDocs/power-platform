@@ -82,13 +82,16 @@ The first step to working with content is to understand what you already have, t
    :::column-end:::
 :::row-end:::
 
-> [!TIP]
-> * List each content once, or document cross-links elsewhere if it’s important
-> * List all pages, but not always all resources (ie: video, downloadable files, etc)
-> * Consider how you'd prepare content for migration and how to track this progress
+Keep the following tips in mind when going through this step:
+
+* **List each content once, or document cross-links elsewhere if it's important.** This is crucial for ensuring clarity, consistency, and efficiency in organizing content. By avoiding duplication and maintaining a single representation of each content item, the IA remains streamlined and user-friendly, facilitating effective navigation and enhancing the overall user experience. This approach optimizes the presentation of content, reduces cognitive load for users, and promotes satisfaction and engagement with the website or application. Additionally, documenting cross-links elsewhere enables easier maintenance and updates to the IA, ensuring its continued relevance and usability over time.
+
+* **List all pages, but not always all resources (ie: video, downloadable files, etc).**  Maintain focus on the primary structure and organization of the website's content without overwhelming the process with excessive detail. Pages represent the core navigational elements and primary content destinations for users, so they are crucial for establishing the overall hierarchy and flow of information. However, including every resource, such as images, videos, or downloadable files, can clutter the IA and make it harder to identify and prioritize the most important content.
+
+* **Consider how you'd prepare content for migration and how to track this progress.** Migration of content can be a complex process involving various elements such as restructuring, reformatting, and ensuring data integrity. By considering this aspect early on, organizations can anticipate potential challenges, develop appropriate strategies, and implement effective tracking mechanisms to ensure a smooth and successful migration process. Additionally, tracking progress allows for monitoring milestones, identifying issues promptly, and making necessary adjustments to ensure the integrity and quality of the migrated content. 
 
 
-### Step 2: Identify content you need
+#### Step 2: Identify content needed
 Keep in mind the content you choose should meet your users' needs, and also achieve your project goals.
 
 :::row:::
