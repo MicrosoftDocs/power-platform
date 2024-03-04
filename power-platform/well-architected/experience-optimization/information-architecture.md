@@ -82,13 +82,11 @@ The first step to working with content is to understand what you already have, t
 * Content owners
 * Comments (anything you want to note)
 
-Keep the following tips in mind when going through this step:
+List each content once, or document cross-links elsewhere if it's important. This is crucial for ensuring clarity, consistency, and efficiency in organizing content. By avoiding duplication and maintaining a single representation of each content item, the IA remains streamlined and user-friendly, facilitating effective navigation and enhancing the overall user experience. This approach optimizes the presentation of content, reduces cognitive load for users, and promotes satisfaction and engagement with the website or application. Additionally, documenting cross-links elsewhere enables easier maintenance and updates to the IA, ensuring its continued relevance and usability over time.
 
-* **List each content once, or document cross-links elsewhere if it's important.** This is crucial for ensuring clarity, consistency, and efficiency in organizing content. By avoiding duplication and maintaining a single representation of each content item, the IA remains streamlined and user-friendly, facilitating effective navigation and enhancing the overall user experience. This approach optimizes the presentation of content, reduces cognitive load for users, and promotes satisfaction and engagement with the website or application. Additionally, documenting cross-links elsewhere enables easier maintenance and updates to the IA, ensuring its continued relevance and usability over time.
+List all pages, but not always all resources (ie: video, downloadable files, etc). Maintain focus on the primary structure and organization of the website's content without overwhelming the process with excessive detail. Pages represent the core navigational elements and primary content destinations for users, so they are crucial for establishing the overall hierarchy and flow of information. However, including every resource, such as images, videos, or downloadable files, can clutter the IA and make it harder to identify and prioritize the most important content.
 
-* **List all pages, but not always all resources (ie: video, downloadable files, etc).**  Maintain focus on the primary structure and organization of the website's content without overwhelming the process with excessive detail. Pages represent the core navigational elements and primary content destinations for users, so they are crucial for establishing the overall hierarchy and flow of information. However, including every resource, such as images, videos, or downloadable files, can clutter the IA and make it harder to identify and prioritize the most important content.
-
-* **Consider how you'd prepare content for migration and how to track this progress.** Migration of content can be a complex process involving various elements such as restructuring, reformatting, and ensuring data integrity. By considering this aspect early on, organizations can anticipate potential challenges, develop appropriate strategies, and implement effective tracking mechanisms to ensure a smooth and successful migration process. Additionally, tracking progress allows for monitoring milestones, identifying issues promptly, and making necessary adjustments to ensure the integrity and quality of the migrated content. 
+Consider how you'd prepare content for migration and how to track this progress. Migration of content can be a complex process involving various elements such as restructuring, reformatting, and ensuring data integrity. By considering this aspect early on, organizations can anticipate potential challenges, develop appropriate strategies, and implement effective tracking mechanisms to ensure a smooth and successful migration process. Additionally, tracking progress allows for monitoring milestones, identifying issues promptly, and making necessary adjustments to ensure the integrity and quality of the migrated content. 
 
 ### Identify and plan for content in scope
 Keep in mind the content you choose should meet your users' needs, and also achieve your project goals.
@@ -99,11 +97,12 @@ Observe the current behavior related to the project content to gain insights int
 * Consider what content is heavily used or popular, and why it's popular.
 * If content is important but not getting enough use, consider how you can make it easier to find
 
-Leverage user research insights to prioritize the right content or brainstorm new content.
-* **Pay attention to gaps in content and uses.** Areas where existing content fails to meet user needs or address key topics can help prioritize content creation or restructuring efforts to fill these voids.
-* **Look for ways to improve UX functionality for easier completion of tasks.** Research can help identify pain points and inefficiencies in the current user journey. Design an information architecture that streamlines navigation and facilitates task completion. Consider needs for functional items to improve pain points in UX flows (such as templates, tools, et cetera).
+Leverage user research insights to prioritize existing or brainstorm new content. Pay attention to gaps in content and uses it reveals. Identify areas where the existing content fails to meet user needs or address key topics. Understanding these gaps helps prioritize content creation or restructuring efforts to fill these voids.
+
+Look out for ways to improve UX functionality for easier completion of tasks. Use research to identify pain points and inefficiencies in the current user journey and design for an information architecture that facilitates task completion. Consider needs for functional items to improve painpoints in UX flows such as templates, tools. As a general example, if content is originally located across multiple independent experiences for a current user journey, you could consider consolidating content elements (or links to them) into the interface's navigation.
 
 Evaluate application offerings in the market with similar utility to your project. This provides great inspiration and insight into a perspective other than your own.
+
 * **Consider where popular offerings display information.** Experiences that are widely adopted (across the general population or within a domain) either reflect or influence user expectations. Following standards in the appropriate domain helps meet expectations, ergo influencing better adoption.
 * **Identify which information is the common denominator.** The common denominators are core content elements that are essential to users, allowing for prioritization and optimization of the IA to ensure these key components are readily accessible and effectively communicated.
 * **Is the website or application easy to navigate?** Just because an offering is well-adopted doesn't necessarily mean it's also easy to navigate. Certain experiences may be catering to specific audiences with a specialized knowledge or skill set, which may not be applicable to your project. For example, peer-reviewed research databases are widely accepted, but may not be a good pattern for business applications that have a different purpose.
@@ -112,7 +111,7 @@ Evaluate application offerings in the market with similar utility to your projec
 ### Document and communicate IA and content plans
 Content shouldn't be treated as an afterthought, because content is the application. Ensure project content is clearly communicated and understood by all important stakeholders from the beginning of the planning throughout.
 
-* **Involve your entire team from start to finish.** Inclusion throught IA planning ensures a holistic understanding of project objectives, promotes cross-functional collaboration, and harnesses diverse perspectives and expertise. You can leverage everyone's unique insights and skills to address complex challenges, identify opportunities for improvement, and develop a comprehensive IA that aligns with organizational goals and user needs. Involving the entire team also fosters a sense of ownership and commitment, leading to better buy-in and support for the IA implementation and maintenance phases, ultimately resulting in a more successful and sustainable outcome.
+Involve your entire team from start to finish. Inclusion throught IA planning ensures a holistic understanding of project objectives, promotes cross-functional collaboration, and harnesses diverse perspectives and expertise. Leverage everyone's insights and skills to address complex challenges and identify opportunities for improvement. Involving the entire team also fosters a sense of ownership and commitment, leading to better buy-in and support for the IA implementation and ultimately resulting in a more successful and sustainable outcome.
 
 There are strategies to communicate content needs to colleagues while the IA is still being developed:
 - **Show what content exists.** Keep the inventory clearly defined and easily accessible to all stakeholders involved in planning.
@@ -122,12 +121,11 @@ There are strategies to communicate content needs to colleagues while the IA is 
 - Record all content ideas in one place
 - Manage project activities such as content updates and migration
 
-Leverage your initial user research insights about your users to prioritize and use the right content.
-- **Pay attention to gaps in content and uses.** Identify areas where the existing content fails to meet user needs or address key topics. Understanding these gaps helps prioritize content creation or restructuring efforts to fill these voids.
-  
-- **Look out for ways to improve UX functionality for easier completion of tasks.** Use research to identify pain points and inefficiencies in the current user journey and design for an information architecture that facilitates task completion. Consider needs for functional items to improve painpoints in UX flows such as templates, tools. 
 
 <!--- POSSIBLY REDUNDANT  OR UNNECESSARY
+* **Pay attention to gaps in content and uses.** Areas where existing content fails to meet user needs or address key topics can help prioritize content creation or restructuring efforts to fill these voids.
+* **Look for ways to improve UX functionality for easier completion of tasks.** Research can help identify pain points and inefficiencies in the current user journey. Design an information architecture that streamlines navigation and facilitates task completion. Consider needs for functional items to improve pain points in UX flows (such as templates, tools, et cetera).
+
 * **Collaborate closely with content authors (such as designers or writers) when applicable.** Content authors possess valuable insights into the content itself, including its purpose, audience, and intended messaging. Their input ensures that the IA accurately reflects the content's goals and effectively serves its intended audience. Additionally, content authors can provide valuable feedback on the organization and presentation of content, helping to optimize the IA for usability and engagement. Collaborating with designers ensures that the IA is visually appealing and aligns with the overall design aesthetic of the website or application. By involving content authors early in the planning process, potential conflicts or inconsistencies can be identified and addressed proactively, leading to a more cohesive and user-centric information architecture.
 
 * **Reference user research to target content and key decisions.** Use research helps validate whether the IA is aligned with the needs and behaviors of the target audience. Insights from research help make informed decisions about content organization, navigation structure, and user interactions, which ultimately create an IA that resonates with users and supports their goals. This practice promotes user-centricity and leads to more effective IAs that enhances the overall experience.
@@ -194,19 +192,19 @@ For example, the final iteration of grocery store items has four top-level categ
 ### Validate your IA with research
 Once you've created a basic structure, you can evaluate it with users to determine whether they can find things where you’ve put them. By testing your IA, you are saving time, resources, and effort before moving to the design phase. It's recommended to use all the steps below in order before landing on a final IA structure and adding navigation.
 
-#### Step 1 - Card sorting. 
+#### Step 1: Card sorting
 Participants organize cards into categories, this is a fast and easy way to determine where your IA structure doesn’t match user expectations. can be done with physical index cards, post-its or via digital tools like Figma or other UX tools.
 - open card sorting: participants create their own categories
 - modified-delphi: participants work one after another, refining a single model until consensus is reached
 - closed card sorting: participants sort into predefined categories (such as the example)
 
-#### Step 2 - Tree testing. 
+#### Step 2: Tree testing
 A variation of reverse card sorting, participants given an assigned search task where they are asked where they would look first to find each item
 - Experiment with organizational schemes, subjective vs exact
 - Test with different categories you are unsure about to build clarity
 - Use online UX tools or build simple prototypes in Figma to test these concepts
 
-#### Step 3 - Low-fidelity prototypes. 
+#### Step 3: Low-fidelity prototypes
 This should only be used as a last step when you feel confident in your IA structure. Use simple shapes and categories in wireframes, avoid detailed design mockups. Making prototypes interactive can add value and depth of understanding your UX flows.
 
 ## Power Platform facilitation
