@@ -47,7 +47,8 @@ If you don’t know enough about users, you won’t be able to make your experie
 If you don’t know about context, you won’t be able to create something that works for people, the business, and problems will plague your project.
 --->
 
-Information ecology describes how systems of information that go into an IA are all interdependent of each other.
+**Information ecology** describes how systems of information that go into an IA are all interdependent of each other.
+
 | System | Summary | Consequence of disregarding |
 | ------ | ---------- | --------------------------- |
 | Content | What you have, what you should have, and what you need. | IA will not be flexible and futureproof. |
