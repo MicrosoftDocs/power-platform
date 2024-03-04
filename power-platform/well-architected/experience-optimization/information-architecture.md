@@ -35,6 +35,7 @@ This guide describes the recommendations for designing an effective information 
 | Content | The visible and consumable information presented to users, including the underlying data that powers the application's functionality. |
 | Schema | A mental framework or cognitive structure that organizes and interprets information. Schemas help individuals make sense of the world by providing a framework for understanding and categorizing knowledge and experiences. Schemas can encompass a wide range of concepts, including beliefs, attitudes, stereotypes, and expectations. They internally influence a person's perception, memory, and decision-making processes. |
 | Category | A group or class of things that share common characteristics or attributes. Categories are used to organize and classify objects, ideas, or experiences based on similarities or relationships. In information organization or taxonomy, categories are often used to group related items together for easier navigation and retrieval. |
+| Equilibration | The continuous cognitive process of seeking balance or equilibrium between existing schemas and new information or experiences. Individuals strive for cognitive equilibrium, where their understanding of the world is consistent and stable. This concept can be challenging for people who encounter significant inconsistency between their existing beliefs and new information. People may experience discomfort or uncertainty during periods of disequilibrium as they attempt to reconcile conflicting information or perspectives. |
 
 ## Key design strategies
 
