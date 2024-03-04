@@ -90,7 +90,6 @@ Keep the following tips in mind when going through this step:
 
 * **Consider how you'd prepare content for migration and how to track this progress.** Migration of content can be a complex process involving various elements such as restructuring, reformatting, and ensuring data integrity. By considering this aspect early on, organizations can anticipate potential challenges, develop appropriate strategies, and implement effective tracking mechanisms to ensure a smooth and successful migration process. Additionally, tracking progress allows for monitoring milestones, identifying issues promptly, and making necessary adjustments to ensure the integrity and quality of the migrated content. 
 
-
 #### Step 2: Identify content needed
 Keep in mind the content you choose should meet your users' needs, and also achieve your project goals.
 
@@ -124,21 +123,22 @@ Content shouldn't be treated as an afterthought, because content is the website.
 
 There are several ways you can communicate your content needs to colleagues without an IA already in place:
 - Show what content exists
-- discuss what should be deleted or rewritten
-- talk about priorities for updating/adding content
-- consider content goals, format, length, audiences, accuracy, etc.
-- keep a record of content ideas
-- manage project activities such as content updates and migration
+- Discuss what should be deleted or rewritten
+- Identify priorities for updating and adding content
+- Consider content goals, format, length, audiences, accuracy, etc.
+- Record all content ideas in one place
+- Manage project activities such as content updates and migration
 
-Displaying this raw data
 Leverage your initial user research insights about your users to prioritize and use the right content. Pay attention to:
-gaps in content and uses
-ways to improve UX functionality for easier completion of tasks
-consider needs for functional items to improve painpoints in UX flows such as templates, tools, and such
-Quick tips
-collaborate closely with content authors (such as designers or writers)
-involve your entire team from start to finish
-reference user research to target content and key decisions
+- Gaps in content and uses
+- ways to improve UX functionality for easier completion of tasks
+- consider needs for functional items to improve painpoints in UX flows such as templates, tools, and such
+
+* **Collaborate closely with content authors (such as designers or writers) if available.** Content authors possess valuable insights into the content itself, including its purpose, audience, and intended messaging. Their input ensures that the IA accurately reflects the content's goals and effectively serves its intended audience. Additionally, content authors can provide valuable feedback on the organization and presentation of content, helping to optimize the IA for usability and engagement. Collaborating with designers ensures that the IA is visually appealing and aligns with the overall design aesthetic of the website or application. By involving content authors early in the planning process, potential conflicts or inconsistencies can be identified and addressed proactively, leading to a more cohesive and user-centric information architecture.
+
+* **Involve your entire team from start to finish.** Inclusion throught IA planning ensures a holistic understanding of project objectives, promotes cross-functional collaboration, and harnesses diverse perspectives and expertise. You can leverage everyone's unique insights and skills to address complex challenges, identify opportunities for improvement, and develop a comprehensive IA that aligns with organizational goals and user needs. Involving the entire team also fosters a sense of ownership and commitment, leading to better buy-in and support for the IA implementation and maintenance phases, ultimately resulting in a more successful and sustainable outcome.
+
+* **Reference user research to target content and key decisions.** Use research helps validate whether the IA is aligned with the needs and behaviors of the target audience. Insights from research help make informed decisions about content organization, navigation structure, and user interactions, which ultimately create an IA that resonates with users and supports their goals. This practice promotes user-centricity and leads to more effective IAs that enhances the overall experience.
 
 ### Design strategy 2
 
