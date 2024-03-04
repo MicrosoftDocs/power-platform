@@ -1,4 +1,4 @@
-﻿---
+---
 title: AI functions in Power Apps
 description: Reference information including syntax and examples for the AISummarize, AISentiment, AIReply, AITranslate, AIClassify, and AIExtract functions.
 author: paulliew
