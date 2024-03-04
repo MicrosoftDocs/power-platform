@@ -16,7 +16,7 @@ This checklist presents a set of recommendations to help you optimize experience
 
 |&nbsp;|Code  |Recommendation  |
 |-|-|-|
-| &#9744; | [XO:01](user-research.md) | **Conduct user research** to understand the needs and expectations of users.   |
+| &#9744; | [XO:01](user-advocacy.md) | **Develop a culture of user advocacy.** Ensure that design outcomes meet the expectations and requirements of the users of the workload. Reduce costs and risks of design failures, redesigns, and maintenance.   |
 | &#9744; | [XO:02](design-standards.md) | **Follow established standards, conventions, and guidelines.**   |
 | &#9744; | [XO:03](information-architecture.md) | **Implement a consistent information architecture.** Be consistent in navigation structures. Provide contextual clues and visual indicators to guide users. Use consistent and user-friendly labels for categories, navigation, and other informational elements.   |
 | &#9744; | [XO:04](visual-design.md) | **Optimize user perception and aesthetics.**   |

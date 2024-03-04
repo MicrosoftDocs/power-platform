@@ -9,23 +9,32 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for developing a culture of user advocacy
+# Recommendations for creating a culture of user advocacy
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **TODO** Update with checklist details for this item |
+|[EO:01](checklist.md)| Develop a culture of user advocacy. Ensure that design outcomes meet the expectations and requirements of the users of the workload. Reduce costs and risks of design failures, redesigns, and maintenance. |
 |---|---|
 
 This guide describes the recommendations for creating, developing, and nurturing a culture of advocacy for the user
 
 ## Key design strategies
 
-- user-centric mindset
-- empathy and understanding
-- cross-functional collaboration
-- user research
-- Leadership support and alignment
-- Continuous improvement
+### Encourage a user-centric mindset
+
+TBD
+
+### Involve the workload users throughout the lifecycle
+
+TBD
+
+### Conduct user research and share the insights
+
+TBD
+
+### Collect and share user feedback
+
+TBD
 
 ## Power Platform facilitation
 
