@@ -142,48 +142,27 @@ Prioritize consistency for optimal results. Use the same labels and naming conve
 
 Avoid interchangeably using similar labels. For example, using “About” in the menu, “Who we are” in the page heading, and “Our Team” in the deep link URL could be confusing. If they programmatically point to the same data and location, use the same label everywhere.
 
-### Consider how people think about categories
-We all think differently, and have different ideas of categories but there are consistent patterns. Use your initial research about your users to guide your priorization of content — like what users may know already, how they think, and what they’d be using this product for.
+### Organize content in logical schemas and categories
+Schemas help users build their mental maps of information to navigate through experiences and find the content they are looking for. Categorization can occur through different organization schemas, subjective vs exact.
 
-* **Hierarchy.** Some categories and sub-categories may naturally form a hierarchy. Use this mechanism to get a rough start on your first IA draft.
-* **Scannable.** Categories need to be predictable and easily broken down into smaller groups. This helps create clear mental models for users.
-* **Contextual.** Category boundaries aren't fixed – they can change over time as you add content into buckets. Some categories may overlap or have fuzzy boundaries, and some items may belong in a category better than others. For example, categories of “sports” vs “games” may have some items that’d end up in both categories (not recommended).
+| Schema | Focus | Usage | Optimized for content set | Examples | 
+| ------ | ----- | ----- | ------------------------- | -------- |
+| Subjective schemes | user-centered | Mainly used for top-level categories in level 1 (L1). Valuable when content is organized in meaningful ways | Ambiguous; challenging to create/maintain with high reward | <ul><li>By topic — based on the subject matter and relevancy</li><li>By task — specific user needs, actions, questions, or processes</li><li>By audience — different user groups = different content / tasks</li></ul><br><br>For example, content in a side nav menu for a grocery store is organized from most to least popular from top to bottom. |
+| Exact schemes | content-centered | Mainly nested inside top-level categories in level 2 (L2). Assistive or additional way to organize information since this scheme can be combined with other organizational schemes if needed. | Straightforward; easy to create/maintain; | <ul><li>By alphabetical order — uses the English 26-letter alphabet</li><li>By chronological order — uses time as a reference, usually by date</li><li>By geographical scheme — uses region as a way to segment content</li></ul><br><br> For example, content in a side nav menu for a grocery store is organized alphabetically from top to bottom. |
 
-### Organize content in logical schemes and categories
-A scheme (or schema) is a cognitive framework or mental structure used to organize and interpret information. Schemas help individuals make sense of the world by categorizing and understanding incoming stimuli. They are mental representations of knowledge or concepts that guide perception, memory, and problem-solving.
-
-Schemes help users build their mental maps of information to navigate through experiences and find the content they are looking for. Categorization can occur through different organization schemas, subjective vs exact.
-
-Subjective schemes
-user-centered
-mainly used for top-level categories in level 1 (L1)
-valuable when content is organized in meaningful ways
-ambiguous; challenging to create/maintain with high reward
-Some ways to organize content could be:
-By topic — based on the subject matter and relevancy
-By task — specific user needs, actions, questions, or processes
-By audience — different user groups = different content / tasks
-For example, content in a side nav menu for a grocery store is organized from most to least popular from top to bottom.
-
-Exact schemes
-content-centered
-mainly nested inside top-level categories in level 2 (L2)
-assistive/additional way to organize information since this scheme can be combined with other organizational schemes if needed
-straightforward; easy to create/maintain;
-Some ways to organize content could be:
-By alphabetical order — uses the English 26-letter alphabet
-By chronological order — uses time as a reference, usually by date
-By geographical scheme — uses region as a way to segment content
-For example, content in a side nav menu for a grocery store is organized alphabetically from top to bottom.
-
-> [!CAUTION] Avoid combining different organization schemes unless necessary. Be consistent, keep it simple, and use one organization method to prevent user confusion to preserve the end users’ mental model of the user experience. 
-> Using a single organization scheme method contributes to a mental model that can be quickly understood, and in edge cases, use extreme caution when combining more than one method such as by topic in Level 1 (L1) and by alphabetical order in Level 2 (L2).
+> [!CAUTION]
+> Avoid combining different organization schemes unless necessary. Be consistent, keep it simple, and use one organization method to prevent user confusion to preserve the end users’ mental model of the user experience. Using a single organization scheme method contributes to a mental model that can be quickly understood, and in edge cases, use extreme caution when combining more than one method such as by topic in Level 1 (L1) and by alphabetical order in Level 2 (L2).
 >
 > For example, content in a side nav menu for a grocery store is organized subjectively first by importance, then alphabetical order inside the top level categories.
 
 Consider the anatomy and size of your user experience. Your IA should be flexible enough for long term growth that can accommodate for additions of new content at any level of navigation. 
 
+#### Consider how people think about categories
+We all think differently, and have different ideas of categories but there are consistent patterns. Use your initial research about your users to guide your priorization of content — like what users may know already, how they think, and what they'd be using this product for.
 
+* **Hierarchy.** Some categories and sub-categories may naturally form a hierarchy. Use this mechanism to get a rough start on your first IA draft.
+* **Scannable.** Categories need to be predictable and easily broken down into smaller groups. This helps create clear mental models for users.
+* **Contextual.** Category boundaries aren't fixed – they can change over time as you add content into buckets. Some categories may overlap or have fuzzy boundaries, and some items may belong in a category better than others. For example, categories of “sports” vs “games” may have some items that’d end up in both categories (not recommended).
 
 ## Power Platform facilitation
 
