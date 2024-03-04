@@ -19,7 +19,7 @@ This guide provides supplemental information to the main Genesys documentation f
 ## Initial Integration
 
 - Ensure that the [authentication setting in Copilot Studio is set](configuration-end-user-authentication.md) to **No authentication**.
-- While the bot connector documentation is for AWS, equilvalent steps are possible in Azure as well. You'll need to modify the 2 Python scripts accordingly.
+- While the copilot connector documentation is for AWS, equilvalent steps are possible in Azure as well. You'll need to modify the 2 Python scripts accordingly.
 - Ensure that the DynamoDB table name created matches the one in the bot_sessions.py file.
 
 ## Agent Handoff
@@ -49,7 +49,7 @@ This guide provides supplemental information to the main Genesys documentation f
 
 ## iFrame setup
 
-- Refer to existing [documentation](publication-connect-bot-to-web-channels.md#add-your-bot-to-your-website) on how to get a URL to your Copilot Studio bot. 
+- Refer to existing [documentation](publication-connect-bot-to-web-channels.md#add-your-bot-to-your-website) on how to get a URL to your Copilot Studio copilot. 
   - Copy the **iframe src URL**, this will be the value to copy into Genesys Cloud.
 - Follow the [Genesys documentation on how to set up the widget](https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration/).
   - On Step 7, copy your iframe src URL as the **Application URL**.
