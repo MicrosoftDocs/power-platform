@@ -83,7 +83,7 @@ Keep the following tips in mind when going through this step:
 
 * **Consider how you'd prepare content for migration and how to track this progress.** Migration of content can be a complex process involving various elements such as restructuring, reformatting, and ensuring data integrity. By considering this aspect early on, organizations can anticipate potential challenges, develop appropriate strategies, and implement effective tracking mechanisms to ensure a smooth and successful migration process. Additionally, tracking progress allows for monitoring milestones, identifying issues promptly, and making necessary adjustments to ensure the integrity and quality of the migrated content. 
 
-### Step 2: Identify and plan for content in scope
+### Identify and plan for content in scope
 Keep in mind the content you choose should meet your users' needs, and also achieve your project goals.
 
 Observe the current behavior related to the project content to gain insights into user preferences, usage patterns, and areas of interest.
@@ -102,8 +102,10 @@ Evaluate application offerings in the market with similar utility to your projec
 * **Is the website or application easy to navigate?** Just because an offering is well-adopted doesn't necessarily mean it's also easy to navigate. Certain experiences may be catering to specific audiences with a specialized knowledge or skill set, which may not be applicable to your project. For example, peer-reviewed research databases are widely accepted, but may not be a good pattern for business applications that have a different purpose.
 * **What makes it good or bad?** Consciously experiencing the positive and negative aspects of applications you use can help identify best practices to emulate and pitfalls to avoid.
 
-### Communicate your IA and content plans throught the project
+### Document and communicate IA and content plans
 Content shouldn't be treated as an afterthought, because content is the application. Ensure project content is clearly communicated and understood by all important stakeholders from the beginning of the planning throughout.
+
+* **Involve your entire team from start to finish.** Inclusion throught IA planning ensures a holistic understanding of project objectives, promotes cross-functional collaboration, and harnesses diverse perspectives and expertise. You can leverage everyone's unique insights and skills to address complex challenges, identify opportunities for improvement, and develop a comprehensive IA that aligns with organizational goals and user needs. Involving the entire team also fosters a sense of ownership and commitment, leading to better buy-in and support for the IA implementation and maintenance phases, ultimately resulting in a more successful and sustainable outcome.
 
 There are strategies to communicate content needs to colleagues while the IA is still being developed:
 - **Show what content exists.** Keep the inventory clearly defined and easily accessible to all stakeholders involved in planning.
@@ -113,16 +115,16 @@ There are strategies to communicate content needs to colleagues while the IA is 
 - Record all content ideas in one place
 - Manage project activities such as content updates and migration
 
-Leverage your initial user research insights about your users to prioritize and use the right content. Pay attention to:
-- Gaps in content and uses
-- ways to improve UX functionality for easier completion of tasks
-- consider needs for functional items to improve painpoints in UX flows such as templates, tools, and such
+Leverage your initial user research insights about your users to prioritize and use the right content.
+- **Pay attention to gaps in content and uses.** Identify areas where the existing content fails to meet user needs or address key topics. Understanding these gaps helps prioritize content creation or restructuring efforts to fill these voids.
+  
+- **Look out for ways to improve UX functionality for easier completion of tasks.** Use research to identify pain points and inefficiencies in the current user journey and design for an information architecture that facilitates task completion. Consider needs for functional items to improve painpoints in UX flows such as templates, tools. 
 
-* **Collaborate closely with content authors (such as designers or writers) if available.** Content authors possess valuable insights into the content itself, including its purpose, audience, and intended messaging. Their input ensures that the IA accurately reflects the content's goals and effectively serves its intended audience. Additionally, content authors can provide valuable feedback on the organization and presentation of content, helping to optimize the IA for usability and engagement. Collaborating with designers ensures that the IA is visually appealing and aligns with the overall design aesthetic of the website or application. By involving content authors early in the planning process, potential conflicts or inconsistencies can be identified and addressed proactively, leading to a more cohesive and user-centric information architecture.
-
-* **Involve your entire team from start to finish.** Inclusion throught IA planning ensures a holistic understanding of project objectives, promotes cross-functional collaboration, and harnesses diverse perspectives and expertise. You can leverage everyone's unique insights and skills to address complex challenges, identify opportunities for improvement, and develop a comprehensive IA that aligns with organizational goals and user needs. Involving the entire team also fosters a sense of ownership and commitment, leading to better buy-in and support for the IA implementation and maintenance phases, ultimately resulting in a more successful and sustainable outcome.
+<!--- POSSIBLY REDUNDANT  OR UNNECESSARY
+* **Collaborate closely with content authors (such as designers or writers) when applicable.** Content authors possess valuable insights into the content itself, including its purpose, audience, and intended messaging. Their input ensures that the IA accurately reflects the content's goals and effectively serves its intended audience. Additionally, content authors can provide valuable feedback on the organization and presentation of content, helping to optimize the IA for usability and engagement. Collaborating with designers ensures that the IA is visually appealing and aligns with the overall design aesthetic of the website or application. By involving content authors early in the planning process, potential conflicts or inconsistencies can be identified and addressed proactively, leading to a more cohesive and user-centric information architecture.
 
 * **Reference user research to target content and key decisions.** Use research helps validate whether the IA is aligned with the needs and behaviors of the target audience. Insights from research help make informed decisions about content organization, navigation structure, and user interactions, which ultimately create an IA that resonates with users and supports their goals. This practice promotes user-centricity and leads to more effective IAs that enhances the overall experience.
+---> 
 
 ### Design strategy 2
 
