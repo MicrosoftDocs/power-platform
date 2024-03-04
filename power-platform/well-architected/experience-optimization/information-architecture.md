@@ -56,10 +56,7 @@ If you don’t know about context, you won’t be able to create something that 
 | Users | What end-users need to do, how they think, and what they already know. | The user experience will not be easy to use and adopt. | 
 
 
-### Define and plan the content in scope
-Ensure thorough understanding of existing content, align content with user needs and project goals through research and analysis, and facilitate clear communication to effectively manage and optimize website content for improved functionality and user experience.
-
-#### Step 1: Audit content you have
+### Audit content you have
 The first step to working with content is to understand what you already have, then determine which content should be used.
 
 **What you have**
@@ -86,7 +83,7 @@ Keep the following tips in mind when going through this step:
 
 * **Consider how you'd prepare content for migration and how to track this progress.** Migration of content can be a complex process involving various elements such as restructuring, reformatting, and ensuring data integrity. By considering this aspect early on, organizations can anticipate potential challenges, develop appropriate strategies, and implement effective tracking mechanisms to ensure a smooth and successful migration process. Additionally, tracking progress allows for monitoring milestones, identifying issues promptly, and making necessary adjustments to ensure the integrity and quality of the migrated content. 
 
-#### Step 2: Identify content needed
+### Step 2: Identify and plan for content in scope
 Keep in mind the content you choose should meet your users' needs, and also achieve your project goals.
 
 Observe the current behavior related to the project content to gain insights into user preferences, usage patterns, and areas of interest.
@@ -101,20 +98,20 @@ Leverage your initial research insights about users to prioritize and use the ri
 * Ways to improve UX functionality for easier completion of tasks
 * Consider needs for functional items to improve pain points in UX flows such as templates, tools, et cetera
 
-Evaluate application offerings in the market with similar utility to your project. This provides insight into a perspective other than your own.
-* **Consider where they display information.** Experiences that are widely adopted either reflect or influence user expectations.
+Evaluate application offerings in the market with similar utility to your project. This provides great inspiration and insight into a perspective other than your own.
+* **Consider where popular offerings display information.** Experiences that are widely adopted either reflect or influence user expectations.
 * **Identify which information is the common denominator.** The common denominators are core content elements that are essential to users, allowing for prioritization and optimization of the IA to ensure these key components are readily accessible and effectively communicated.
 * **Is the website or application easy to navigate?** Just because an offering is well-adopted doesn't necessarily mean it's also easy to navigate. Certain experiences may be catering to specific audiences with a specialized knowledge or skill set, which may not be applicable to your project. For example, peer-reviewed research databases are widely accepted, but may not be a good pattern for business applications that have a different purpose.
 * **What makes it good or bad?** Clearly understanding both positive and negative aspects of existing applications helps identify best practices to emulate and pitfalls to avoid, ultimately leading to a more user-friendly and successful product.
 
-### Step 3: Communicating your content
-Content shouldn't be treated as an afterthought, because content is the website. Ensure project content is clearly communicated and understood by all important stakeholders from the beginning of the planning throughout.
+### Communicate your IA and content plans throught the project
+Content shouldn't be treated as an afterthought, because content is the application. Ensure project content is clearly communicated and understood by all important stakeholders from the beginning of the planning throughout.
 
-There are several ways you can communicate your content needs to colleagues without an IA already in place:
-- Show what content exists
-- Discuss what should be deleted or rewritten
-- Identify priorities for updating and adding content
-- Consider content goals, format, length, audiences, accuracy, etc.
+There are strategies to communicate content needs to colleagues while the IA is still being developed:
+- **Show what content exists.** Keep the inventory clearly defined and easily accessible to all stakeholders involved in planning.
+- **Discuss what should be deleted or rewritten.** Content should relevent and accurate, otherwise it won't be helpful to include. 
+- **Identify priorities for updating and adding content.** Identifying priorities for updating and adding content enables strategic resource allocation to address critical areas first, ensuring relevance, accuracy, and alignment with user needs and business goals.
+- **Consider content goals, format, length, audiences, accuracy, etc.** These factors guide the development and implementation of content strategy, ensuring that all stakeholders are aligned and aware of the criteria for creating effective content that meets project goals and user needs.
 - Record all content ideas in one place
 - Manage project activities such as content updates and migration
 
