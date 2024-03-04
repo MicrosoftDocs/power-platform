@@ -28,6 +28,14 @@ This guide describes the recommendations for designing an effective information 
 - Helps create effective and optimal experiences.
 - Allows them to effortlessly understand content, especially when using for the first time
 
+**Definitions**
+
+| Term | Definition |
+|---|---|
+| Content | The visible and consumable information presented to users and the underlying data that powers the application's functionality. |
+| Schema | An mental framework or cognitive structure that organizes and interprets information. Schemas help individuals make sense of the world by providing a framework for understanding and categorizing knowledge and experiences. Schemas can encompass a wide range of concepts, including beliefs, attitudes, stereotypes, and expectations. They internally influence a person's perception, memory, and decision-making processes. |
+| Category | A group or class of things that share common characteristics or attributes. Categories are used to organize and classify objects, ideas, or experiences based on similarities or relationships. In information organization or taxonomy, categories are often used to group related items together for easier navigation and retrieval. |
+
 ## Key design strategies
 
 A successful IA is made up of four systems that are ultimately applied to the user interface:
@@ -37,11 +45,9 @@ A successful IA is made up of four systems that are ultimately applied to the us
 1. **Navigation systems**.  How users browse or move through information.
 
 <!---  TODO: DELETE IF TABLE IS ACCEPTABLE
-
 - **Content**. What you have, what you should have, and what you need.
 - **Context**. The business or personal goals for the project, stakeholders, and constraints.
 - **Users**. What they need to do, how they think, what do they already know.
-
 Without a good understanding of these three things, you can’t create an effective IA.
 If you don’t know enough about users, you won’t be able to make your experience easy to use.
 If you don’t know about context, you won’t be able to create something that works for people, the business, and problems will plague your project.
@@ -126,9 +132,58 @@ Leverage your initial user research insights about your users to prioritize and 
 * **Reference user research to target content and key decisions.** Use research helps validate whether the IA is aligned with the needs and behaviors of the target audience. Insights from research help make informed decisions about content organization, navigation structure, and user interactions, which ultimately create an IA that resonates with users and supports their goals. This practice promotes user-centricity and leads to more effective IAs that enhances the overall experience.
 ---> 
 
-### Design strategy 2
+### Communicate the model with clear labels
+Labeling helps users build their mental models of how the user experience is set up. While users may not see the information architecture, labeling allows product makers to represent larger chunks of information without overwhelming users.
 
-Details
+Leverage known labels or groupings that users are used to. For example, in the context of grocery stores, Dairy is a widely known top-level label or category for butter, cheese, eggs, and milk.
+Make everything clear and simple - consider the word choice, iconography and taxonomy of your navigation. Use concise labels without truncation, call things by their correct names and use terms your audience uses. Leverage user research, card sorting, and looking at competitors’ products to help generate clear labels.
+
+Prioritize consistency for optimal results. Use the same labels and naming conventions throughout the experience to prevent user confusion. For example, the nav menu item and page heading on the “About” page share the same label as the website URL, like https://microsoft.com/about
+
+Avoid interchangeably using similar labels. For example, using “About” in the menu, “Who we are” in the page heading, and “Our Team” in the deep link URL could be confusing. If they programmatically point to the same data and location, use the same label everywhere.
+
+### Consider how people think about categories
+We all think differently, and have different ideas of categories but there are consistent patterns. Use your initial research about your users to guide your priorization of content — like what users may know already, how they think, and what they’d be using this product for.
+
+* **Hierarchy.** Some categories and sub-categories may naturally form a hierarchy. Use this mechanism to get a rough start on your first IA draft.
+* **Scannable.** Categories need to be predictable and easily broken down into smaller groups. This helps create clear mental models for users.
+* **Contextual.** Category boundaries aren't fixed – they can change over time as you add content into buckets. Some categories may overlap or have fuzzy boundaries, and some items may belong in a category better than others. For example, categories of “sports” vs “games” may have some items that’d end up in both categories (not recommended).
+
+### Organize content in logical schemes and categories
+A scheme (or schema) is a cognitive framework or mental structure used to organize and interpret information. Schemas help individuals make sense of the world by categorizing and understanding incoming stimuli. They are mental representations of knowledge or concepts that guide perception, memory, and problem-solving.
+
+Schemes help users build their mental maps of information to navigate through experiences and find the content they are looking for. Categorization can occur through different organization schemas, subjective vs exact.
+
+Subjective schemes
+user-centered
+mainly used for top-level categories in level 1 (L1)
+valuable when content is organized in meaningful ways
+ambiguous; challenging to create/maintain with high reward
+Some ways to organize content could be:
+By topic — based on the subject matter and relevancy
+By task — specific user needs, actions, questions, or processes
+By audience — different user groups = different content / tasks
+For example, content in a side nav menu for a grocery store is organized from most to least popular from top to bottom.
+
+Exact schemes
+content-centered
+mainly nested inside top-level categories in level 2 (L2)
+assistive/additional way to organize information since this scheme can be combined with other organizational schemes if needed
+straightforward; easy to create/maintain;
+Some ways to organize content could be:
+By alphabetical order — uses the English 26-letter alphabet
+By chronological order — uses time as a reference, usually by date
+By geographical scheme — uses region as a way to segment content
+For example, content in a side nav menu for a grocery store is organized alphabetically from top to bottom.
+
+> [!CAUTION] Avoid combining different organization schemes unless necessary. Be consistent, keep it simple, and use one organization method to prevent user confusion to preserve the end users’ mental model of the user experience. 
+> Using a single organization scheme method contributes to a mental model that can be quickly understood, and in edge cases, use extreme caution when combining more than one method such as by topic in Level 1 (L1) and by alphabetical order in Level 2 (L2).
+>
+> For example, content in a side nav menu for a grocery store is organized subjectively first by importance, then alphabetical order inside the top level categories.
+
+Consider the anatomy and size of your user experience. Your IA should be flexible enough for long term growth that can accommodate for additions of new content at any level of navigation. 
+
+
 
 ## Power Platform facilitation
 
