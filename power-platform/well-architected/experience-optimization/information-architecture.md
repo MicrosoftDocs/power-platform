@@ -153,7 +153,7 @@ Schemas help users build their mental maps of information to navigate through ex
 | Optimal content set | Ambiguous; challenging to create and maintain with high reward |  Straightforward; easy to create/maintain |
 | Examples | <ul><li>By topic — based on the subject matter and relevancy</li><li>By task — specific user needs, actions, questions, or processes</li><li>By audience — different user groups = different content / tasks</li></ul><br><br>For example, content in a side nav menu for a grocery store is organized from most to least popular from top to bottom. | <ul><li>By alphabetical order — uses the English 26-letter alphabet</li><li>By chronological order — uses time as a reference, usually by date</li><li>By geographical scheme — uses region as a way to segment content</li></ul><br><br> For example, content in a side nav menu for a grocery store is organized alphabetically from top to bottom. |
 
-> [!CAUTION]
+> [!TIP]
 > Avoid combining different organization schemes unless necessary. Be consistent, keep it simple, and use one organization method to prevent user confusion to preserve the end users’ mental model of the user experience. Using a single organization scheme method contributes to a mental model that can be quickly understood, and in edge cases, use extreme caution when combining more than one method such as by topic in Level 1 (L1) and by alphabetical order in Level 2 (L2).
 >
 > For example, content in a side nav menu for a grocery store is organized subjectively first by importance, then alphabetical order inside the top level categories.
