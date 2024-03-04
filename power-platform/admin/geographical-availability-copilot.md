@@ -31,6 +31,9 @@ Copilots and generative AI features in [Microsoft Power Platform](/power-platfor
 
 However, these features aren't available in all regions and languages. Depending on where your environment is hosted, you might need to allow data movement across regions to use them. This article explains how to do that.
 
+> [!NOTE]
+> Copilot features that are generally available are enabled by default. However, your settings for data movement across regions will take precedence over the Copilot setting.
+
 ## How data movement across regions works
 
 When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint that supports these features is hosted**. We do not use your data to train, retrain, or improve Azure OpenAI Service foundation models.
