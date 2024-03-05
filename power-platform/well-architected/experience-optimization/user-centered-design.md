@@ -20,7 +20,7 @@ This guide describes the recommendations for user-centered design to ensure your
 
 ## Key design strategies
 
-These design strategies are not linear or sequential, but rather iterative and cyclical, meaning that they can be repeated and refined throughout the design process, based on the feedback and learning from each stage.
+Putting users at the center of your workload development is the key to ensuring optimal user experiences. Deeply understand what users need and expect from the workload. Perform research and  synthesize the research into artifacts that you can use to plan and communicate the design with users and stakeholders. Continuously improve the experiences with testing and iteration.
 
 ### Involve the workload users throughout the lifecycle
 
@@ -37,13 +37,13 @@ Conducting user research for a well-architected workload is an essential step in
 
 - *Clearly define the objectives of the research*: Ensure that the objectives align with the overall project goals and desired outcomes for the workload, as well as the expectations of the users and stakeholders.
 
-- *Select the research methods*: Identify and choose the research methods that work best for the users of your workload, such as interviews, surveys, observations, or usability testing. These methods should be chosen based on the research objectives and available resources. A well-defined research plan outlines the approach, methodology, timeline, and logistics, while also preparing necessary materials such as interview guides, survey questions, or usability test scenarios.
+- *Select the research methods*: Use a combination of qualitative and quantitative research methods, such as interviews, surveys, observations, usability tests, and card sorting, to gather data from the users and analyze their goals, tasks, pain points, and expectations. Choose the methods based on the research objectives and available resources. A well-defined research plan outlines the approach, methodology, timeline, and logistics, while also preparing necessary materials such as interview guides, survey questions, or usability test scenarios.
 
-- *Recruit participants*: Aim to include individuals who represent the target audience with diversity in contexts, skills, and experience. During research sessions, maintaining a neutral and non-leading approach is crucial to gather unbiased insights. Collect qualitative and/or quantitative data during these sessions, and capture user feedback, observations, and interactions with the solution.
+- *Conduct the research*: Aim to include individuals who represent the target audience with diversity in contexts, skills, and experience. During research sessions, maintaining a neutral and non-leading approach is crucial to gather unbiased insights. Collect qualitative and quantitative data during these sessions, and capture user feedback, observations, and interactions with the solution.
 
 - *Analyze findings*: Identify patterns, themes, and insights that emerge from the research analysis. Employ techniques such as thematic coding or affinity mapping to organize and interpret the data effectively. Use key insights extracted from the research findings to inform design decisions and address user needs, pain points, and preferences.
 
-- *Communicate the findings*: Document the research findings, insights, and recommendations in a clear and actionable format. Share the research findings with stakeholders, users, and other relevant parties to foster understanding and alignment.
+- *Communicate the findings*: Document the research findings, insights, and recommendations in a clear and actionable format. Share the research findings with stakeholders, users, and other relevant parties to foster understanding and justify the design decisions based on the user research.
 
 ### Empathize with the users and their contexts
 
@@ -66,14 +66,6 @@ Embrace a culture of continuous improvement by soliciting feedback, conducting r
 **Analyze and synthesize the test results** by organizing, interpreting, and presenting the data and insights that were collected from the testing phase. Analysis and synthesis should involve identifying the patterns, trends, and themes that emerge from the data, and drawing the conclusions and implications for the design decisions and solutions. Analysis and synthesis should also involve comparing and contrasting the test results with the initial user needs and requirements, and highlighting the strengths and weaknesses of the workload. Analysis and synthesis should be used to generate actionable recommendations and suggestions for design improvement and refinement.
 
 **Implement and communicate the design improvements** by applying the changes and modifications that were suggested by the test results and analysis, and by documenting and sharing the design process and outcomes with the relevant stakeholders. Implementation and communication should involve updating and enhancing the workload based on the user feedback and data, and ensuring that the workload meets the user's expectations and goals. Implementation and communication should also involve creating and delivering the design artifacts and deliverables, such as wireframes, mockups, prototypes, or specifications, that demonstrate the design solutions and rationale. Implementation and communication should be used to finalize and launch the workload, and to showcase the design value and impact.
-
-## Power Platform facilitation
-
-Power Platform details here...
-
-## Related links
-
-Related links here.
 
 ## Experience Optimization checklist
 
