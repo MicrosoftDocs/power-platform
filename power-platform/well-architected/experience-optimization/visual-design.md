@@ -28,12 +28,12 @@ A composition is balanced when all the elements are in optical equilibrium. Ofte
 
 :::row:::
    :::column span="":::
-      ![Alt text](_images/balance-left.svg)
+      ![Alt text](./_images/balance-left.svg)
       **A balanced composition is ia sum of visual forces between the elements.**
       
    :::column-end:::
    :::column span="":::
-      ![Alt text](_images/balance-right.svg)
+      ![Alt text](./_images/balance-right.svg)
       **Balancing layout is one of the hardest tasks as it cannot be measured easily.**
       
    :::column-end:::
