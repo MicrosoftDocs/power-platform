@@ -43,7 +43,7 @@ They are the shortcuts and rules of thumb by which we make judgments and predict
 1. Need to act fast. Users constrained by time and information. With every piece of new information, users need to assess an ability to affect the situation, apply it to decisions, simulate the future to predict what might happen next, and otherwise act on new insights.
 1. What should we remember? Users need to make constant bets and trade-offs around what they try to remember and what we forget. When there are lots of irreducible details, they pick out a few standout items to save and discard the rest.
 
-![Cognative biases](../_images/cognative-bias.svg)
+![Cognative biases](../_images/bias.svg)
 
 ### Fitts's Law
 The time to acquire a target is a function of the distance to and size of the target. Large elements that are positioned close to users are easily selectable. For example, if the button is too small or far from the content it relates to, it will take longer for the user to click it.
