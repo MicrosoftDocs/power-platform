@@ -59,7 +59,7 @@ Learn more about how to use AI functions in the following video.
 
 - _Classification_ - Name of selected category.
 
-**AIExtract**
+**AIExtract input**
 
 AIExtract(_Text_,_Entity_)
 
@@ -110,7 +110,7 @@ AIExtract(_Text_,_Entity_)
 
 **AITranslate input**
 
-**AITranslate**(_Text_,_ TargetLanguage__)
+**AITranslate**(_Text_,_TargetLanguage_)
 
 - _Text_ - Required. A text sentence. The text to translate.
 - _TargetLanguage_ - The language code to which you want to translate sucah as **en** for English.
