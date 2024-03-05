@@ -16,7 +16,7 @@ ms.topic: conceptual
 |[EO:01](checklist.md)| **Prioritize responsiveness and feedback. Make it easy to understand how to interact with the interface, incorporating interactions that align with users' mental models and expectations.** |
 |---|---|
 
-This guide provides an overview of interaction basics for user interface design. There are important considerations between how a user intakes information from the system, and how visual elements are initially arranged and respond to user inputs. All interaction should be thought through and accomodate circumstances and fallbacks to achieve the desired outcomes for the application.
+This guide describes the recommendations for interaction basics of user interface design. There are important considerations between how a user intakes information from the system, and how visual elements are initially arranged and respond to user inputs. Interaction design helps think through task flows, accomodate circumstances and fallbacks to help users reach the intended end state.
 
 ## Key design strategies
 
