@@ -16,7 +16,7 @@ ms.topic: conceptual
 |[EO:01](checklist.md)| **TODO** Update with checklist details for this item |
 |---|---|
 
-This guide covers techniques and principles aimed at creating web pages and applications that adapt and respond fluidly to different screen sizes, resolutions, and orientations across various devices, such as desktop computers, laptops, tablets, and smartphones. This approach ensures that users have a consistent and optimal viewing experience regardless of the device they are using.
+This guide describes the recommendations for principles and techniques used to create applications that adapt and respond fluidly to different screen sizes, resolutions, and orientations across various devices, such as desktop computers, laptops, tablets, and smartphones. This approach ensures that users have a consistent and optimal viewing experience regardless of the device they are using.
 
 ## Key design strategies
 
