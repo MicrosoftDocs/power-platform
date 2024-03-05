@@ -65,7 +65,7 @@ sections:
 
     image:
       componentType: image
-      src: ./_images/well-architected-hub.svg   
+      src: ./_images/well-architected-hub.png   
 
   # bifold with image and text blocks
   #- componentType: bifold
