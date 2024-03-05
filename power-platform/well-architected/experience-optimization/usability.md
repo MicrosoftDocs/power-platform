@@ -23,11 +23,11 @@ This guide describes the recommendations for ...
 Usability is a quality attribute that assesses how easy user interfaces are to use. The word "usability" also refers to methods for improving ease-of-use during the design process.
 
 Usability is defined by 5 quality components:
-1. Learnability: How easy tasks can be attained during the first usage and how quickly users learn from the previous experience?
-1. Efficiency: Once users have learned the design, how quickly can they perform tasks?
-1. Memorability: When users return to the design after a period of not using it, how easily can they reestablish proficiency?
-1. Errors: How many errors do users make, how severe are these errors, and how easily can they recover from the errors?
-1. Satisfaction: How pleasant is it to use the design?
+1. _Learnability:_ How easy tasks can be attained during the first usage and how quickly users learn from the previous experience?
+1. _Efficiency:_ Once users have learned the design, how quickly can they perform tasks?
+1. _Memorability:_ When users return to the design after a period of not using it, how easily can they reestablish proficiency?
+1. _Errors:_ How many errors do users make, how severe are these errors, and how easily can they recover from the errors?
+1. _Satisfaction:_ How pleasant is it to use the design?
 
 Consider these strategies for ensuring usability for your workload:
 
