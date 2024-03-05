@@ -29,7 +29,7 @@ Below are the steps to create a copilot using an existing CLU model:
  
 ## Prepare your environment
 
-Before you begin, make sure that you have your CLU model project name and deployment name.
+Before you begin, make sure that you have your CLU model project name, deployment name, Cognitive Services account key, and site URL for Azure Cognitive Service for Language.
 1. Create a new [Microsoft Copilot Studio](authoring-first-bot.md) copilot.
 
    > [!NOTE]
@@ -37,24 +37,32 @@ Before you begin, make sure that you have your CLU model project name and deploy
    >
    > Not all regions supported by Microsoft Copilot Studio have an equivalent CLU region.
 
-2. With your copilot open, expand the **Settings** tab on the side menu pane, select **Language understanding**, and then select **Manage connections in Power Apps** to open Power Apps.
+1. With your copilot open, expand the **Settings** tab on the side menu pane, select **Language understanding**, and then select **Manage connections in Power Apps** to open Power Apps.
 
    :::image type="content" source="media/advanced-clu-integration/clu-enable-language.png" alt-text="Screenshot of the Microsoft Copilot Studio web app with the Settings and Language menu options highlighted." border="false":::
 
    >[!NOTE]
    > If you have already enabled a CLU connection, skip to step 4.
 
-4. In Power Apps, choose the **Connections** menu if it is pinned to the navigation pane. If the **Connections** menu is not pinned, select **... More**, and then select **Connections**. 
+1. In Power Apps, choose the **Connections** menu if it is pinned to the navigation pane. If the **Connections** menu is not pinned, select **... More**, and then select **Connections**. 
 
-5. Search for **Azure Cognitive Service for Language**.
+    :::image type="content" source="media/advanced-clu-integration/clu-image2.png" alt-text="Language option to select NLU resource." border="false":::
 
 
-4. From the **NLU Resource** drop-down list, choose **Power Virtual Agent NLU**.
+1. Search for **Azure Cognitive Service for Language** and then select the **+** next to this connection.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image1.png" alt-text="Language option to select NLU resource." border="false":::
+    :::image type="content" source="media/advanced-clu-integration/clu-image14.png" alt-text="Language option to select NLU resource." border="false":::
+
+1. In the Azure Cognitive Service for Language configuration window, select `Api Key` as authentication type, enter your account key and site URL, and select **Create**.
+
+    :::image type="content" source="media/advanced-clu-integration/clu-image15.png" alt-text="Language option to select NLU resource." border="false":::
+
+1. In Copilot Studio, under **Natural language understanding**, select **Azure Cognitive Service for Language** from the **NLU Resource** list.
+
+    :::image type="content" source="media/advanced-clu-integration/clu-image16.png" alt-text="Language option to select NLU resource." border="false":::
 
 > [!NOTE]
-> If you you see the following, then you are not connected to **Azure Congnitive Service for Language**. Follow step 3 to connect.
+> If you you see the following, then you are not connected to **Azure Cognitive Service for Language**. Follow step 3 to connect.
 > 
 > :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected-27Jun23.png" alt-text="Language option menu when not connected to Azure Congintive Service for Language." border="false":::
 
