@@ -24,12 +24,13 @@ This guide provides supplemental information to the main Genesys documentation f
 
 ## Agent Handoff
 
-- Refer to existing [documentation for transferring the conversation](/dynamics365/customer-service/set-up-multilingual-pva-bot#configure-the-transfer-to-agent-node-by-using-the-escalate-topic).
-- If passing a message to the agent in the transfer
-  - Set the message in Copilot Studio:
+- Refer to existing [documentation for transferring the conversation](/dynamics365/customer-service/set-up-multilingual-pva-bot#configure-the-transfer-to-agent-node-by-using-the-escalate-topic)
+
+- If passing a message to the agent in the transfer, perform the following steps:
+  1. Set the message in Copilot Studio:
     
     ![Screenshot showing a transfer node.](media/customer-copilot/agent-message.png)
-  - Include as slot for the Escalate intent in the botconnector API call:
+  1. Include as slot for the Escalate intent in the botconnector API call:
     ```
     {
         "name": "Escalate",
@@ -41,15 +42,15 @@ This guide provides supplemental information to the main Genesys documentation f
             }
         }
     ```
-  - The message is visible in Genesys as an output.
+  The message is visible in Genesys as an output.
 
     ![Screenshot showing the Genesys output.](media/customer-copilot/agent-message-genesys.png)
 
-- If passing any other variable from Copilot Studio back to Genesys, follow the same process with `va_{variableName}` as the Slot name.
+- If passing any other variable from Copilot Studio back to Genesys, follow the same process with `va_{variableName}` as the Slot name
 
 ## iFrame setup
 
 - Refer to existing [documentation](publication-connect-bot-to-web-channels.md#add-your-bot-to-your-website) on how to get a URL to your Copilot Studio copilot. 
-  - Copy the **iframe src URL**. This is the value for configuring Genesys Cloud.
+  - Copy or take note of the **iframe src URL**. This value is required for configuring Genesys Cloud.
 - Follow the [Genesys documentation on how to set up the widget](https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration/).
   - On Step 7, copy your iframe src URL as the **Application URL**.
