@@ -2,7 +2,7 @@
 title: Power Well-Architected
 metadata:
   title: Power Well-Architected
-  description: Power Well-Architected is a set of quality-driven tenets, architectural decision points, and review tools that help solution architects build a technical foundation for their workloads.
+  description: Power Well-Architected is a set of guiding principles, architecture strategies, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
   ms.service: power-platform
   ms.topic: hub-page
   ms.subservice: guidance
@@ -13,11 +13,11 @@ sections:
   # Intro
   - componentType: text 
     title: Power Well-Architected 
-    summary: Power Well-Architected (PoWA) is a set of quality-driven tenets, architectural decision points, and review tools intended to help solution architects build a technical foundation for their workloads.
+    summary: Power Well-Architected is a set of guiding principles, architecture strategies, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
     links:
     - componentType: link
       url: what-is-power-well-architected
-      text: What is PoWA?    
+      text: What is Power Well-Architected?    
   # Navigation Section
   - componentType: navigation
     size: large # optionally make section larger
@@ -52,12 +52,17 @@ sections:
         icon: topic-architecture
         url: /power-platform/guidance
         text: Power Platform Guidance Center
+      - componentType: icon-link
+        icon: topic-learn
+        url: /power-platform
+        text: Power Platform product documentation
   # Standard hero
   - componentType: hero
     supertitle: Power Well-Architected 
-    title: Design low-code workloads that achieve business value over time.
+    title: Design modern application workloads that consistently realize business value.
     size: small
-    summary: As solution architects, you want to build reliable, secure, and performant workloads that maximize the value of investment in Power Platform. Start with the Pillars, and align your design choices with the principles. Then, build a strong foundation for your workload based on technical design areas. Finally, use review tools to assess your readiness in deploying to production.
+    summary: Power Well-Architected intends to help you realize the maximum value from your investments in modern application workloads with Power Platform that align closely with your business goals and user needs. Power Well-Architected provides guidance for you to design your modern application workloads to both meet current requirements and adapt to future needs and challenges. Start with the Pillars and aligh your design choices with then principles. Build a strong foundation for your workload based on the design review checklists, recommendation guides, and tradeoffs.
+
     #image:
     #  componentType: image
     #  src: ./_images/well-architected-hub.png   
@@ -118,16 +123,22 @@ sections:
       url: ./experience-optimization/index.yml
       icon: 
         componentType: image
-        src: _images/reliability.svg       
+        src: _images/performance-efficiency.svg       
      
   
   #Text section
   - componentType: text
-    title: Power Platform Guidance Center
+    title: Power Platform Guidance
     links:
     - componentType: link
       url: /power-platform/guidance
       text: Browse the prescriptive guidance for Power Platform
+  - componentType: text
+    title: Power Platform documentation
+    links:
+    - componentType: link
+      url: /power-platform
+      text: Browse the product documentation for Power Platform
 
   # social section
   #- componentType: social

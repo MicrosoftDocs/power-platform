@@ -1,4 +1,4 @@
-- name: Power Platform Well-Architected
+- name: Microsoft Power Platform Well-Architected
   href: ./index.yml
   items:
     - name: About
