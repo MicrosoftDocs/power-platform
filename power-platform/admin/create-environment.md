@@ -4,12 +4,13 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 2/26/2024
+ms.date: 2/27/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: mbajwa
 ms.reviewer: sericks
 ms.contributors:
 - pmantha
+- mbajwa
 search.audienceType: 
   - admin 
 contributors:
@@ -30,20 +31,22 @@ To create an environment, these requirements must be true:
 
 1. The user has a license that allows environment creation. This requirement is waived for Global admins and Power Platform admins except for trial (standard) environments; see #2.c later.
 
-   | License | Trial | Production | Developer |
-   | --- | --- | --- | --- |
-   | Microsoft 365 Plans |No | No | Yes |
-   | Dynamics 365 Teams Plans   |No | No | Yes |
-   | Power Apps Developer Plan   |No | No | Yes |
-   | Dynamics 365 trial | Yes (one) | No| Yes |
-   | Dynamics 365 Plans |Yes (one)| Yes | Yes |
-   | Power Apps plan |Yes (one)| Yes | Yes |
-   | Power Apps trial |Yes (one)| Yes | Yes |
-   | Power Automate plan |Yes (one)| Yes | Yes |
-   | Power Automate trial |Yes (one)| Yes | Yes |
-   | Power Virtual Agents trial plan |Yes | No | Yes |
-   | Power Virtual Agents plan | No | Yes | Yes |
+   | License | Trial | Production |
+   | --- | --- | --- | 
+   | Microsoft 365 Plans |No | No |
+   | Dynamics 365 Teams Plans   |No | No |
+   | Power Apps Developer Plan   |No | No | 
+   | Dynamics 365 trial | Yes (one) | No| 
+   | Dynamics 365 Plans |Yes (one)| Yes | 
+   | Power Apps plan |Yes (one)| Yes | 
+   | Power Apps trial |Yes (one)| Yes | 
+   | Power Automate plan |Yes (one)| Yes | 
+   | Power Automate trial |Yes (one)| Yes | 
+   | Power Virtual Agents trial plan |Yes | No | 
+   | Power Virtual Agents plan | No | Yes | 
 
+  You can also create a developer environment. For more information about developer environment, see [Create a developer environment](/power-platform/developer/create-developer-environment).
+  
 2. The tenant, or _user_ with email trials, must have:
 
    1. At least 1 GB of database storage capacity available for production and sandbox environments.

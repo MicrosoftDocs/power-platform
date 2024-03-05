@@ -9,7 +9,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for following design standards
+# Recommendations for following design standards, conventions, and guidelines
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
@@ -44,11 +44,7 @@ Integrate design standards based on company style guides and branding. Ensure th
 
 ### Mitigate deviations
 
-Proactively identify and address any deviations from design standards to prevent potential negative impacts on user experience and application success. Deviations can lead to confusion, frustration, and increased development costs, so it's essential to mitigate them early in the design process by providing access to design resources. Ideally, having a system that can validate whether design standards are being met across an organization, such as having a regularly scheduled design office hour with people who can help validate standards are being met, can benefit the team to scale out standards in an organization. 
-
-### Continuous improvement
-
-Embrace a culture of continuous improvement by soliciting feedback, conducting regular evaluations, and incorporating lessons learned into future projects. Stay updated with the latest trends in UX design from authorities in the design space who have invested in research. Look to modern Microsoft product interface implementation for inspiration and latest trends in the Fluent UI space. Continuous improvement ensures that your designs evolve alongside changing user needs and industry trends, maintaining relevance and effectiveness over time.
+Proactively identify and address any deviations from design standards to prevent potential negative impacts on user experience and application success. Deviations can lead to confusion, frustration, and increased development costs, so it's essential to mitigate them early in the design process by providing access to design resources. Ideally, having a system that can validate whether design standards are being met across an organization, such as having a regularly scheduled design office hour with people who can help validate standards are being met, can benefit the team to scale out standards in an organization.
 
 ## Power Platform facilitation
 

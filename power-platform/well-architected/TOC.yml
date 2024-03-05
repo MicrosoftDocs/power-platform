@@ -137,9 +137,9 @@
           href: ./experience-optimization/tradeoffs.md
         - name: Recommendations   
           items:
-            - name: XO:01 User advocacy
-              href: ./experience-optimization/user-advocacy.md
-            - name: XO:02 Design standards
+            - name: XO:01 User-centered design
+              href: ./experience-optimization/user-centered-design.md
+            - name: XO:02 Standards and conventions
               href: ./experience-optimization/design-standards.md
             - name: XO:03 Information architecture
               href: ./experience-optimization/information-architecture.md
@@ -149,7 +149,7 @@
               href: ./experience-optimization/interaction-design.md
             - name: XO:06 Usability
               href: ./experience-optimization/usability.md
-            - name: XO:07 Notifications and messages
+            - name: XO:07 Notifications
               href: ./experience-optimization/notifications.md
             - name: XO:08 Responsive design
               href: ./experience-optimization/responsive-design.md
