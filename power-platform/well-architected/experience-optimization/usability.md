@@ -29,6 +29,8 @@ Usability is defined by 5 quality components:
 1. Errors: How many errors do users make, how severe are these errors, and how easily can they recover from the errors?
 1. Satisfaction: How pleasant is it to use the design?
 
+Consider these strategies for ensuring usability for your workload:
+
 - *Visibility of system status*: The system should always keep users informed about what is going on, through appropriate feedback within a reasonable time.
 
 - *Match between system and the real world*: The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.
