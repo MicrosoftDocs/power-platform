@@ -53,11 +53,13 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 
     :::image type="content" source="media/advanced-clu-integration/clu-image14.png" alt-text="Language option to select NLU resource." border="false":::
 
-1. In the Azure Cognitive Service for Language configuration window, select `Api Key` as authentication type, enter your account key and site URL, and select **Create**.
+1. In the **Azure Cognitive Service for Language configuration** window, choose `Api Key` as authentication type, enter your account key and site URL, and select **Create**.
 
     :::image type="content" source="media/advanced-clu-integration/clu-image15.png" alt-text="Language option to select NLU resource." border="false":::
 
-1. In Copilot Studio, under **Natural language understanding**, select **Azure Cognitive Service for Language** from the **NLU Resource** list.
+1. Once Power Apps creates the connector, return to your Microsoft Copilot Studio copilot.
+
+1. In Copilot Studio, select **Refresh**, then under **Natural language understanding**, select **Azure Cognitive Service for Language** from the **NLU Resource** list.
 
     :::image type="content" source="media/advanced-clu-integration/clu-image16.png" alt-text="Language option to select NLU resource." border="false":::
 
@@ -65,6 +67,10 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 > If you you see the following, then you are not connected to **Azure Cognitive Service for Language**. Follow step 3 to connect.
 > 
 > :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected-27Jun23.png" alt-text="Language option menu when not connected to Azure Congintive Service for Language." border="false":::
+
+1. Select **Save** at the top of the page and select **Yes, continue** in the confirmation message.
+
+1. Enter your CLU (conversational language understanding) project and deployment and then select **Save**.
 
 5. Select the **+ (plus sign)** on the to the right of the connector name, to display the authentication settings page. 
 6. Enter the display name, API key, account key, site URL, then select **Save**. Once Power Apps creates the connector, return to your Microsoft Copilot Studio copilot.
