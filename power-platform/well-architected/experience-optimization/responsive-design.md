@@ -36,9 +36,9 @@ While fixed layouts offer precise control over the layout and appearance of elem
 
 Hybrid layouts combine elements of both fluid and fixed layouts to strike a balance between flexibility and control. However, they can be more complex to implement and may require careful consideration of which elements should be fluid and which should be fixed. Hybrid layouts may also introduce challenges in maintaining consistency and visual harmony across different screen sizes and resolutions. In contrast, fluid layouts provide a straightforward and adaptable solution for responsive design. 
 
-### Use a grid structure
+### Use a grid 
 
-The grid is an underlying invisible structure that controls the placement of all elements and content on the page. It makes an app look coherent, enhances visual hierarchy, and balances the design. A flexible grid system helps ensure that your website layout adjusts to different screen sizes.
+The grid is an underlying invisible structure that controls the placement of all elements and content on the page. It makes an app look coherent, enhances visual hierarchy, and balances the design. A flexible grid system helps ensure that your application layout adjusts to different screen sizes.
 
 ### Reduce friction
 
