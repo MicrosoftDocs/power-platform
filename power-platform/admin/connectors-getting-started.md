@@ -2,7 +2,7 @@
 title: Programmability and Extensibility - Power Platform for Admins management connectors - Getting started | Microsoft Docs
 description: Get started with Power Platform for Admins management connectors
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.collection: get-started
 ms.component: pa-admin
 ms.topic: reference

@@ -9,7 +9,6 @@ author: KendalBond007
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "authoring, fundamentals, advanced-authoring, ceX"
-ms.service: power-virtual-agents
 
 ---
 

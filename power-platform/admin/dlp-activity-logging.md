@@ -6,8 +6,8 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/09/2023
 ms.subservice: admin
-author: StephenRauchPM
-ms.author: stephenrauch
+author: Zeffin
+ms.author: johnev
 ms.reviewer: sericks 
 search.audienceType: 
   - admin

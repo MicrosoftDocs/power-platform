@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: kamrani
-ms.service: power-virtual-agents
 
 ms.custom: ceX, advanced-authoring, bap-template
 ---

@@ -1,12 +1,11 @@
 ---
 title: "Microsoft Power Platform developer tools"
 description: "Overview of various developer tools for extending Power Platform."
-author: KumarVivek
+author: JimDaly
 ms.subservice: developer
-ms.author: kvivek
-ms.custom: ""
+ms.author: jdaly
 ms.date: 03/27/2023
-ms.reviewer: kvivek
+ms.reviewer: jdaly
 ms.topic: "article"
 ---
 

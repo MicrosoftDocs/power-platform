@@ -7,7 +7,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 08/10/2021
 ms.author: mehdis
-ms.reviewer: kvivek 
+ms.reviewer: sericks 
   
 ---
 # Using Microsoft Dataverse with a canvas app 

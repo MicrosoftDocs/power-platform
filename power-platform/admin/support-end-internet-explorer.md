@@ -7,7 +7,7 @@ ms.date: 08/18/2022
 ms.subservice: admin
 ms.author: aorth 
 author: adrianorth
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

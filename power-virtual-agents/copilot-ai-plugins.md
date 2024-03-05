@@ -3,7 +3,6 @@ title: Create AI plugins for Microsoft Copilot (preview)
 description: Use plugin actions to extend the capabilities of your copilots.
 keywords: "PVA, plugin, connector, flow, automate"
 ms.date: 11/15/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
