@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **TODO** Update with checklist details for this item |
+|[EO:01](checklist.md)| **Prioritize responsiveness and feedback. Ensure interactive elements respond promptly to input. Make it easy to understand how to interact with the interface, incorporating interactions that align with users' mental models and expectations.** |
 |---|---|
 
 This guide provides an overview of interaction basics for user interface design. There are important considerations between how a user intakes information from the system, and how visual elements are initially arranged and respond to user inputs. All interaction should be thought through and accomodate circumstances and fallbacks to achieve the desired outcomes for the application.
