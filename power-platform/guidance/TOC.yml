@@ -441,6 +441,8 @@
       items:
         - name: Power Platform white papers
           href: white-papers/index.md
+        - name: Enterprise Security
+          href: white-papers/enterprise-security.md
         - name: Activating Managed Environments
           href: white-papers/managed-environment-activation.md
         - name: Application modernization with Power Platform

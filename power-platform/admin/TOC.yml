@@ -88,7 +88,7 @@
                   href: /power-apps/user/request-license
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
-                - name: Auto-claim policies for Power Apps licenses
+                - name: Autoclaim policies for Power Apps licenses
                   href: auto-claim-licensing.md
             - name: Power Automate
               items:
@@ -106,6 +106,8 @@
                   href: power-automate-licensing/add-ons.md
                 - name: Request a Power Automate premium license
                   href: power-automate-licensing/request-premium-license.md
+                - name: Autoclaim policies for Power Automate licenses (preview)
+                  href: power-automate-licensing/power-automate-auto-claim.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
             - name: Pay-as-you-go plan
@@ -293,7 +295,7 @@
                     - name: Audit security roles
                       href: audit-security-roles.md
                     - name: Access audit data using Azure Synapse Link for Dataverse
-                      href: audit-data-azure-synapse-link.md                
+                      href: audit-data-azure-synapse-link.md
                     - name: System jobs
                       href: manage-dataverse-auditing.md#monitoring-system-jobs
                 - name: Templates
@@ -424,9 +426,9 @@
                       href: on-off-switch-for-learning-path-guided-help.md
             - name: Advanced environment operations
               items:
-                - name: Automatic environment cleanup
+                - name: Automatic deletion of inactive environments
                   href: automatic-environment-cleanup.md
-                - name: Dataverse for Teams environment cleanup
+                - name: Automatic deletion of inactive Dataverse for Teams environments
                   href: inactive-teams-environment.md
                 - name: Migrate environment
                   href: move-environment-tenant.md
@@ -476,6 +478,8 @@
                   href: block-forwarded-email-from-power-automate.md
                 - name: Continuous access evaluation (preview)
                   href: continuous-access-evaluation.md
+                - name: Control access of TDS endpoint
+                  href: control-tds-settings.md
                 - name: Configure environment security
                   items:
                     - name: Control user access to environments
@@ -608,6 +612,12 @@
                   href: restrict-access-online-trusted-ip-rules.md
                 - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
+            - name: Virtual Network support (preview)
+              items:
+                - name: Virtual Network support overview
+                  href: vnet-support-overview.md
+                - name: Set up Virtual Network support
+                  href: vnet-support-setup-configure.md
             - name: Security FAQs
               href: security/faqs.md
         - name: Analytics
@@ -678,8 +688,8 @@
                   href: subscription-tracking-deleted-object-retention.md
             - name: Add storage capacity
               href: add-storage.md
-            - name: Access storage with SAS token
-              href: storage-sas-token.md
+            - name: Access storage
+              href: access-storage.md
         - name: Resources
           items:
             - name: Overview
@@ -702,7 +712,7 @@
               href: logging-power-automate.md
             - name: Power Pages activity logging (preview)
               href: logging-power-pages.md
-            - name: Power Platform connector activity logging (preview)
+            - name: Power Platform connector activity logging
               href: connector-events-power-platform.md
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
@@ -710,7 +720,7 @@
               href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
-            - name: View Power Platform administrative logs in Microsoft Purview (preview)
+            - name: View Power Platform administrative logs in Microsoft Purview
               href: admin-activity-logging.md
         - name: Programmability and extensibility
           items:
@@ -1046,6 +1056,8 @@
               displayName: Overview of unified admin experience for finance and operations apps
             - name: "Tutorial: Provision a new environment with an ERP-based template"
               href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
+            - name: "Tutorial: Install the Finance and Operations Provisioning apps"
+              href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
             - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
               href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
             - name: "Admin trials for finance and operations apps"
@@ -1138,4 +1150,3 @@
         - name: Guidance documentation
           href: ../guidance/index.yml
           displayName: CoE adoption guidance best practices
-

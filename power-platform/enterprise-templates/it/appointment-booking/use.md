@@ -15,7 +15,7 @@ ms.subservice: solution-templates
 
 # Get started using the Appointment Booking template for Power Platform
 
-There are two kinds of users who interact with the Appointment Booking app in some way:
+There are several kinds of users who interact with the Appointment Booking app in some way:
 
 - **Meeting Provider**. As a Meeting Provider, you use the app to set up your appointment slots and manage your own appointment slots and related bookings. Delegates can also be set up for Meeting Providers to oversee the appointment booking process for them
 - **Requestor**. As a Requestor, you use the app to book and manage appointments with Meeting Providers

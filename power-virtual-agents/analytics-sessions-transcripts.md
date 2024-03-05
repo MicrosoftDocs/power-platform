@@ -16,7 +16,7 @@ ms.custom: analysis, ceX
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-You can view, export and download transcripts of customer interactions with your bot in both Power Apps and Microsoft Copilot Studio. The information that each app exports is slightly different. This article covers downloading conversation transcripts in Power Apps and using them to create reports in Power BI. [Download bot session transcripts in Microsoft Copilot Studio](analytics-sessions.md).
+You can view, export and download transcripts of customer interactions with your copilot in both Power Apps and Microsoft Copilot Studio. The information that each app exports is slightly different. This article covers downloading conversation transcripts in Power Apps and using them to create reports in Power BI. [Download copilot session transcripts in Microsoft Copilot Studio](analytics-sessions.md).
 
 By default, Power Apps downloads conversation transcripts from the last 30 days. [You can change the retention period](#change-the-default-retention-period).
 
@@ -30,9 +30,9 @@ By default, Power Apps downloads conversation transcripts from the last 30 days.
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
-### View and export bot conversation transcripts from the Power Apps portal
+### View and export copilot conversation transcripts from the Power Apps portal
 
-You can also view and export bot conversation transcripts from the Power Apps portal.
+You can also view and export copilot conversation transcripts from the Power Apps portal.
 
 First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
 
@@ -68,7 +68,7 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
     :::image type="content" source="media/analytics-sessions/export-scripts4.png" alt-text="Download exported data.":::
 
-### Download bot conversation transcripts
+### Download copilot conversation transcripts
 
 1. In the Power Apps navigation menu, select **Dataverse**, and then select **Tables**.
 
@@ -97,17 +97,17 @@ The conversation transcript is a CSV (comma-separated values) file. The followin
 | Content | The entire transcript in JSON format | Refer to the [Content field](#content-field) section. |
 | ConversationStartTime | The time the conversation started (not the time the transcript record was written to the data store) | `2021-04-19T20:39:09Z` |
 | ConversationTranscript | The unique identifier of the row in the Dataverse table | `28eccb77-xxxx-4a63-985f-ffaaadd6f391` |
-| Metadata | JSON that includes the bot ID, tenant ID, and bot name | `{"BotId": "198eca5f-xxxx-4ae6-8c08-835d884a8688", "AADTenantId": "72f988bf-xxxx-41af-91ab-2d7cd011db47", "BotName": "Test Bot"}` |
+| Metadata | JSON that includes the copilot ID, tenant ID, and copilot name | `{"BotId": "198eca5f-xxxx-4ae6-8c08-835d884a8688", "AADTenantId": "72f988bf-xxxx-41af-91ab-2d7cd011db47", "BotName": "Test Bot"}` |
 | Name | The name of the custom row that's created from `ConversationId` followed by `BotId` followed by a `batch number`. The batch number indicates the order when there are multiple analytic sessions for the conversation. Classic bots do not include the batch number. | `8YYe8iif49ZKkycZLe7HUO-o_198eca5f-xxxx-4ae6-8c08-835d884a8688_0` |
-| Bot_ConversationTranscript | The bot ID | `198eca5f-xxxx-4ae6-8c08-835d884a8688` |
+| Bot_ConversationTranscript | The copilot ID | `198eca5f-xxxx-4ae6-8c08-835d884a8688` |
 | Created on | The date and time the transcript record was created | `2021-04-20T02:40:13Z` |
 
 ### Content field
 
-The Content field is a raw log of all the activities that users had with the bot. Common activity types include message and event:
+The Content field is a raw log of all the activities that users had with the copilot. Common activity types include message and event:
 
 - Message activities represent the content that's shown in a conversation. Message activities may contain text, speech, interactive cards, and binary or unknown attachments.
-- Event activities communicate programmatic information from a client or channel to the bot.
+- Event activities communicate programmatic information from a client or channel to the copilot.
 
 For more information on activity types, see [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md).
 
@@ -120,7 +120,7 @@ The following table describes some of the key fields in the Content JSON:
 | `timestamp` | The timestamp of when the activity was generated, in Epoch format (the number of seconds since midnight UTC January 1, 1970) |
 | `type` | The type of activity; for example, `message`, `event`, or `trace` |
 | `replyToId` | The ID of the activity that the current activity is responding to |
-| `from` | Contains fields `id` and `role`:</br><ul><li>`id` - the ID of the invoker</li><li>`role` - holds 0 or 1</li><ul><li>0 - the activity is coming from the bot</li><li>1 - the activity is coming from the user interacting with the bot</li></ul></ul>Notes:</br>The `id` can be used to calculate the number of active users that are interacting with the bot if the canvas is passing in a unique ID of the user. If the canvas doesn't pass an ID, a unique ID per conversation is passed. </br>For security and privacy, the ID is hashed before it's written to the transcript.</br> |
+| `from` | Contains fields `id` and `role`:</br><ul><li>`id` - the ID of the invoker</li><li>`role` - holds 0 or 1</li><ul><li>0 - the activity is coming from the copilot</li><li>1 - the activity is coming from the user interacting with the copilot</li></ul></ul>Notes:</br>The `id` can be used to calculate the number of active users that are interacting with the copilot if the canvas is passing in a unique ID of the user. If the canvas doesn't pass an ID, a unique ID per conversation is passed. </br>For security and privacy, the ID is hashed before it's written to the transcript.</br> |
 | `channelId` | The ID of where the activity is coming from; for example, `directline`, `msteams`, or `facebook` |
 | `textFormat`  | The format of the text; for example, `plain` or `markdown` |
 | `attachments` | Dynamic rich data associated with the activity; for example, `AdaptiveCards`, `HeroCards`, or `Carousel data` |
@@ -184,7 +184,7 @@ The data size in the Standard Azure Data Lake Storage approach can cause slow re
 
 ### Change the default retention period
 
-A Power Apps bulk delete job automatically removes bot transcripts that are older than 30 days. To keep the transcripts longer, cancel the existing job and create a new one that runs on a different schedule.
+A Power Apps bulk delete job automatically removes copilot transcripts that are older than 30 days. To keep the transcripts longer, cancel the existing job and create a new one that runs on a different schedule.
 
 ### Cancel the existing bulk delete job
 
@@ -238,9 +238,9 @@ A Power Apps bulk delete job automatically removes bot transcripts that are olde
 
 ### Tips for getting the most out of your conversation transcripts
 
-[Variables can be used to store data relevant to your bot content](authoring-variables.md) or bot user. Parsing the variable and its value from the conversation transcript lets you filter or slice the data by the variable.
+[Variables can be used to store data relevant to your copilot content](authoring-variables.md) or copilot user. Parsing the variable and its value from the conversation transcript lets you filter or slice the data by the variable.
 
-In many places, the conversation transcripts refer to content by its ID. For example, the ID of the topic that's being redirected to by the current topic is only referred to by its ID. To get the name of the topic, look up its name in the bot content.
+In many places, the conversation transcripts refer to content by its ID. For example, the ID of the topic that's being redirected to by the current topic is only referred to by its ID. To get the name of the topic, look up its name in the copilot content.
 
 ---
 
