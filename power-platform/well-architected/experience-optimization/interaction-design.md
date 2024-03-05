@@ -57,11 +57,11 @@ The modern controls available in Power Apps utilize the latest Fluent UI compone
 
 ![Pareto principle](../_images/pareto.svg)
 
-**Jakob’s Law**: Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know. You can simplify the learning process for users by providing familiar design patterns. 
+**Jakob's Law**: Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know. You can simplify the learning process for users by providing familiar design patterns. 
 
-![Jacob's Law](../_images/jacob.svg)
+![Jacob's Law](../_images/jakob.svg)
 
-**Miller’s Law**: The average person can only keep 7 (plus or minus 2) items in their working memory. Chunking is an effective method of presenting groups of content in a manageable way. Organize content in groups of 5–9 items at a time.
+**Miller's Law**: The average person can only keep 7 (plus or minus 2) items in their working memory. Chunking is an effective method of presenting groups of content in a manageable way. Organize content in groups of 5–9 items at a time.
 
 ![Miller's Law](../_images/miller.svg)
 
