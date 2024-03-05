@@ -9,14 +9,14 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for creating a culture of user advocacy
+# Recommendations for a user-centered design strategy
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
 |[EO:01](checklist.md)| Develop a culture of user advocacy. Ensure that design outcomes meet the expectations and requirements of the users of the workload. Reduce costs and risks of design failures, redesigns, and maintenance. |
 |---|---|
 
-This guide describes the recommendations for creating, developing, and nurturing a culture of advocacy for the user
+This guide describes the recommendations for user-centered design to ensure your workloads are useful, usable, and desirable for users, while meeting business requirements. User-centered design (UCD) is an approach to design that focuses on understanding the needs, preferences, and context of the users who will interact with the workload. Employing user-centered design can help to avoid usability problems, user frustration, and dissatisfaction. It can also help to reduce the costs and risks of design failures, redesigns, and maintenance.
 
 ## Key design strategies
 
@@ -56,13 +56,6 @@ Empathizing with users and their contexts helps the workload team to understand 
 **Create journey maps** to visualize the user personas' end-to-end experience with the workload, across different touchpoints, channels, and stages. Journey maps should illustrate the user's journey from their initial problem or need, to their final goal or satisfaction, and should highlight the user's thoughts, feelings, and pain points along the way. Journey maps should also include the user's actions, interactions, and feedback, as well as the workload's features, functions, and performance. Journey maps should be used to empathize with the user's experience, and to discover the pain points and opportunities for design enhancement.
 
 Empathizing with users and their contexts also helps to build trust and rapport with the users, and further ensures their involvement in, and contribution to, the design process.
-
-### Provide user education and support
-
-- Documentation
-- Training
-- In-app guidance
-- Feedback mechanisms
 
 ### Encourage continuous improvement
 
