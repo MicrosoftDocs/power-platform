@@ -13,43 +13,73 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **TODO** Update with checklist details for this item |
+|[EO:01](checklist.md)| **Assess the ease of use and engagement of the experiences. Optimize for learnability, efficiency, memorability, error encounters and recovery, and satisfaction.** |
 |---|---|
 
-This guide describes the recommendations for ...
+This guide describes the recommendations for improving usability in user interface design. Usability refers to the ease of use and effectiveness of a product for its intended users. It's crucial because it directly impacts user satisfaction, errors, and overall interactions with the digital interface, ultimately affecting the success of an application.
 
 ## Key design strategies
 
 Usability is a quality attribute that assesses how easy user interfaces are to use. The word "usability" also refers to methods for improving ease-of-use during the design process.
 
 Usability is defined by 5 quality components:
-1. Learnability: How easy tasks can be attained during the first usage and how quickly users learn from the previous experience?
-1. Efficiency: Once users have learned the design, how quickly can they perform tasks?
-1. Memorability: When users return to the design after a period of not using it, how easily can they reestablish proficiency?
-1. Errors: How many errors do users make, how severe are these errors, and how easily can they recover from the errors?
-1. Satisfaction: How pleasant is it to use the design?
+1. _Learnability:_ How easy tasks can be attained during the first usage and how quickly users learn from the previous experience?
+1. _Efficiency:_ Once users have learned the design, how quickly can they perform tasks?
+1. _Memorability:_ When users return to the design after a period of not using it, how easily can they reestablish proficiency?
+1. _Errors:_ How many errors do users make, how severe are these errors, and how easily can they recover from the errors?
+1. _Satisfaction:_ How pleasant is it to use the design?
 
 Consider these strategies for ensuring usability for your workload:
 
-**Visibility of system status**: The system should always keep users informed about what is going on, through appropriate feedback within a reasonable time.
+### Visibility of system status
+The system should always keep users informed about what is going on, through appropriate feedback within a reasonable time.
 
-**Match between system and the real world**: The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.
+![Alt](../_images/h1.svg)
 
-**User control and freedom**: Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo.
+### Match between system and the real world
+The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.
 
-**Consistency and standards**: Users should not have to wonder whether different words, situations, or actions mean the same thing.
+![Alt](../_images/h2.svg)
 
-**Error prevention**: Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.
+### User control and freedom
+Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo.
 
-**Recognition rather than recall**: Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.
+![Alt](../_images/h3.svg)
 
-**Flexibility and efficiency of use**: Accelerators — unseen by the novice user — may often speed up the interaction for the expert user such that the system can cater to both inexperienced and experienced users. Allow users to tailor frequent actions.
+### Consistency and standards
+Users should not have to wonder whether different words, situations, or actions mean the same thing.
 
-**Aesthetic and minimalist design**: Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.
+![Alt](../_images/h4.svg)
 
-**Help users recognize, diagnose, and recover from errors**: Error messages should be expressed in plain language (no code), precisely indicate the problem, and constructively suggest a solution.
+### Error prevention
+Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.
 
-**Help and documentation**: Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search for, focused on the user's task, list concrete steps to be carried out, and not be too large.
+![Alt](../_images/h5.svg)
+
+### Recognition rather than recall
+Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.
+
+![Alt](../_images/h6.svg)
+
+### Flexibility and efficiency of use
+Accelerators — unseen by the novice user — may often speed up the interaction for the expert user such that the system can cater to both inexperienced and experienced users. Allow users to tailor frequent actions.
+
+![Alt](../_images/h7.svg)
+
+### Aesthetic and minimalist design
+Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.
+
+![Alt](../_images/h8.svg)
+
+### Help users recognize, diagnose, and recover from errors 
+Error messages should be expressed in plain language (no code), precisely indicate the problem, and constructively suggest a solution.
+
+![Alt](../_images/h9.svg)
+
+### Help and documentation
+Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search for, focused on the user's task, list concrete steps to be carried out, and not be too large.
+
+![Alt](../_images/h10.svg)
 
 ## Power Platform facilitation
 

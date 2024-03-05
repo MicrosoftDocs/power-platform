@@ -13,10 +13,10 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **TODO** Update with checklist details for this item |
+|[EO:01](checklist.md)| **Maintain consistency in design elements such as color schemes, typography, and layout. Prioritize simplicity and clarity, avoiding unnecessary visual clutter or complexity. Strive for a clean, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
 |---|---|
 
-This guide provides an overview of universal visual design patterns that affect user perception and ultimately influence satisfaction. Visual elements in design serve as the foundational building blocks used to create compelling visual compositions. These elements collectively influence user perception in various ways.
+This guide describes the recommendations for universal visual design patterns that affect user perception and ultimately influence satisfaction. Visual elements in design serve as the foundational building blocks used to create compelling visual compositions. Understanding how these elements collectively influence user perception provides structured ways of arranging elements for an effective and appealing experience.
 
 ## Key design strategies
 
@@ -158,19 +158,19 @@ Elements tend to be perceived as groups if they are sharing an area with a clear
    :::column-end:::
 :::row-end:::
 
-### Signals vs noise
+### Signals vs. noise
 
 Visual elements such as lines, contrast, spacing, etc. are used to inform users that something is important, in which case they are signals. However, too many signals, or signals highlighting information that is not important become noise.
 
 :::row:::
    :::column span="":::
       ![Alt text](../_images/signal-noise-left.svg)
-      **Signals help in guiding users through content and informing what is important. **
+      **Signals help in guiding users through content and informing what is important.**
       
    :::column-end:::
    :::column span="":::
       ![Alt text](../_images/signal-noise-right.svg)
-      **Visual noise introduces confusion and has the opposite effects from signals. **
+      **Visual noise introduces confusion and has the opposite effects from signals.**
       
    :::column-end:::
 :::row-end:::

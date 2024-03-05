@@ -18,9 +18,9 @@ ms.topic: conceptual
 
 This guide describes the **recommendations for** **securing your code and development** **environment** by applying security best practices throughout the development cycle. 
 
-At the core of a workload are the components that implement the business logic –these can be made up of both low code components, such as canvas apps and flows, as well as code first components, such as plugins. All components that make up your workload must be **free of security defects** to ensure confidentiality, integrity, and availability.
+At the core of a workload are the components that implement the business logic –these can be made up of both low code components, such as canvas apps and flows, as well as code first components, such as plugins. All components that make up your workload must be free of security defects to ensure confidentiality, integrity, and availability.
 
-It's not enough to secure just the infrastructure plane by using controls on identity and networking and other measures. **Prevent bad implementation of** **Power Platform workloads,** **compromised** **activities in those workloads** to strengthen your overall security posture. The process of integrating security into your development lifecycle is essentially a hardening process. Like resource hardening, tightening up code development is also context-agnostic. The focus is on enhancing security and not the functional requirements of the application. 
+It's not enough to secure just the infrastructure plane by using controls on identity and networking and other measures. Prevent bad implementation of Power Platform workloads, compromised activities in those workloads to strengthen your overall security posture. The process of integrating security into your development lifecycle is essentially a hardening process. Like resource hardening, tightening up code development is also context-agnostic. The focus is on enhancing security and not the functional requirements of the application. 
 
 **Definitions**
 
@@ -33,71 +33,49 @@ It's not enough to secure just the infrastructure plane by using controls on ide
 
 Security measures should be integrated at multiple points into your existing Software Development Lifecycle (SDLC) to ensure:
 
-Design choices don't lead to security gaps.
-
-Low code and code first components as well configuration don't create vulnerabilities because of exploitable implementation and improper coding practices.
-
-Low code and code first components and deployment processes aren't tampered with.
-
-Vulnerabilities revealed through incidents are mitigated.
-
-Compliance requirements aren't compromised or reduced.
-
-Audit logging is implemented in all environments.
+- Design choices don't lead to security gaps.
+- Low code and code first components as well as configuration don't create vulnerabilities because of exploitable implementation and improper coding practices.
+- Low code and code first components and deployment processes aren't tampered with.
+- Vulnerabilities revealed through incidents are mitigated.
+- Compliance requirements aren't compromised or reduced.
+- Audit logging is implemented in all environments.
 
 The following sections provide security strategies for the commonly practiced phases of SDLC.
 
 ### Requirements phase
 
-The goal of the requirements phase is to **gather and analyze the functional and non-functional requirements** for a workload or a new feature of an workload. This phase is important because it facilitates the creation of guardrails that are tailored to the objectives of the workload. Protecting the data and integrity of your workload should be a core requirement throughout every phase of the development lifecycle.
+The goal of the requirements phase is to gather and analyze the functional and non-functional requirements for a workload or a new feature of a workload. This phase is important because it facilitates the creation of guardrails that are tailored to the objectives of the workload. Protecting the data and integrity of your workload should be a core requirement throughout every phase of the development lifecycle.
 
-For example, consider a workload that needs to support critical user flows that enable the user to upload and manipulate data. The security design choices should cover assurances for the user's interaction with the workload, like authenticating and authorizing the user identity, and allowing only permitted actions on the data. Non-functional requirements cover availability, usability, and maintainability. Security choices should include segmentation boundaries, firewall ingress and egress, and other cross-cutting security concerns.
+For example, consider a workload where users will enter and modify data within an application. The security design choices should cover assurances for the user's interaction with the data, like authenticating and authorizing the user identity, and allowing only permitted actions on the data. Non-functional requirements cover availability, usability, and maintainability. Security choices should include segmentation boundaries, firewall ingress and egress, and other cross-cutting security concerns.
 
-All these decisions should lead to a good definition of the security posture of the workload. **Document the security requirements in an agreed-upon specification** and reflect them in the backlog. The document should explicitly state the security investments and the tradeoffs and risks that the business is willing to take on if the investments aren't approved by business stakeholders. For example, you might document the need to use IP firewall in Power Platform environments to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. If business stakeholders aren't prepared to accept the additional cost of using this Managed Environments feature, they need to accept the risk that organizational resources are accessed from external IP locations like a coffee shop. 
+All these decisions should lead to a good definition of the security posture of the workload. Document the security requirements in an agreed-upon specification and reflect them in the backlog. The document should explicitly state the security investments and the tradeoffs and risks that the business is willing to take on if the investments aren't approved by business stakeholders. For example, you might document the need to use IP firewall in Power Platform environments to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. If business stakeholders aren't prepared to accept the additional cost of using this Managed Environments feature, they need to accept the risk that organizational resources are accessed from external IP locations like a coffee shop. Another example, you might need to connect to a third-party data source in your application. An out-of-the-box connector might be available as part of Power Platform, but may not support the authentication requirements approved by your Security teams. Security stakeholders may be prepared to accept the risk of using an unapproved authentication method, or you may have to explore using a custom connector which adds a risk of costing more development time and delaying the overall project.
 
 Security requirement gathering is a critical part of this phase. Without this effort, the design and implementation phases will be based on unstated choices, which can lead to either security gaps or to continuously changing requirements that will increase development time. You might need to change the implementation later to accommodate security, which can be expensive.
 
 ### Design phase
 
-During this phase, **the security requirements are converted to technical requirements**. In your technical specification, document all design decisions to prevent ambiguity during implementation. Here are some typical tasks:
+During this phase, the security requirements are converted to technical requirements. In your technical specification, document all design decisions to prevent ambiguity during implementation. Here are some typical tasks:
 
-**Define the security dimension of the architecture.**
+- **Define the security dimension of the architecture.** Overlay the architecture with security controls. For example, controls that are practical on the network isolation boundaries, the types of identities and authentication methods needed for the components of the workload, and the type of encryption methods to use. For some example architectures, see [TODO].
+- **Evaluate platform-provided affordances.** It's important to understand the **division of responsibility between you and Microsoft Power Platform**. Avoid overlap or duplication with Power Platform native security controls. You'll get better security coverage and be able to reallocate development resources to the needs of the application.
 
-Overlay the architecture with security controls. For example, controls that are practical on the network isolation boundaries, the types of identities and authentication methods needed for the components of the workload, and the type of encryption methods to use. For some example architectures, see […]
+    For example, don’t build custom logic that reactively discovers what connectors are being used in apps and flows to alert on unapproved usage patterns – instead use Data Loss Prevention policies to categorize how connectors can be used.
 
-**Evaluate platform-provided affordances.**
+    **Choose only trusted reference implementations, templates, code components, scripts, and libraries**. Your design should also specify secure version control. Application dependencies should be sourced from trusted parties. **Third-party vendors should be able to meet your security requirements** and share their responsible disclosure plan. Any security incident should be promptly reported so that you can take necessary actions. Also, certain libraries or reference implementations might be prohibited by your organization. For example, it might be secure from vulnerabilities but still disallowed because it’s using features not yet approved by your organization, licensing restrictions or because of the support model of the reference implementation.
 
-It's important to understand the **division of responsibility between you and** **Microsoft Power Platform**. Avoid overlap or duplication with Power Platform native security controls, for example. You'll get better security coverage and be able to reallocate development resources to the needs of the application.
+    To ensure that this guidance is followed, maintain a list of approved and/or unapproved frameworks, libraries, and vendors and ensure your makers are familiar with this list. When possible, place guardrails in the development pipelines to support the list. As much as possible, automate the use of tools to scan dependencies for vulnerabilities.
+- **Store application secrets securely.** Securely implement the use of application secrets and pre-shared keys that your application uses. Credentials and application secrets should never be stored in the source code of the workload (app or flow). Use external resources like Azure Key Vault to ensure that, if your source code becomes available to a potential attacker, no further access can be obtained.
+- **Connect to your data securely.** Make use of the strong security features that Microsoft Dataverse offers to safeguard your data, such as role-based and column-level security. For other data sources, use connectors that have secure authentication methods. Avoid queries that store username and password in plain text. Avoid HTTP for creating custom connectors.
+- **Define how end users will interact with the workload and data.** Consider if users will have direct access to the data, what level of access they require and where they will access the data from. Consider how applications will be shared with end users to ensure only users that need to have access to the app and data will have access. Avoid complex security models that encourage work arounds to avoid security blockers.
+- **Avoid hard coding.** Avoid hard-coding of URLs and keys. For example, avoid hard coding in a Power Automate HTTP action the URL or key to the backend service. Instead use a custom connector or use an environment variable for the URL, and Azure Key Vault for the API key.
+- **Define test plans.** Define clear test cases for security requirements. Evaluate whether you can automate those tests in your pipelines. If your team has processes for manual testing, include security requirements for those tests.
 
-For example, 
-
-**Choose only trusted reference implementations, templates, code components, scripts, and libraries.** Your design should also specify secure version control. Application dependencies should be sourced from trusted parties. Third-party vendors should be able to meet your security requirements and share their responsible disclosure plan. Any security incident should be promptly reported so that you can take necessary actions. Also, certain libraries or reference implementations might be prohibited by your organization. For example, it might be secure from vulnerabilities but still disallowed because it’s using features not yet approved by your organization, licensing restrictions or because of the support model of the reference implementation. 
-
-To ensure that this guidance is followed, maintain a list of approved and/or unapproved frameworks, libraries, and vendors and ensure your makers are familiar with this list**. When possible, place guardrails in the development pipelines to support the list. As much as possible, automate the use of tools to scan dependencies for vulnerabilities.
-
-**Determine the security design patterns that the application code should implement.** Patterns can support security concerns like segmentation and isolation, strong authorization, uniform application security, and modern protocols.
-
-For more information, see [Cloud design patterns that support security](/azure/well-architected/security/design-patterns).
-
-**Store application secrets securely.**
-
-Securely implement the use of application secrets and pre-shared keys that your application uses. **Credentials and application secrets should never be stored in the source** **code of the workload (app or flow).** Use external resources like Azure Key Vault to ensure that, if your source code becomes available to a potential attacker, no further access can be obtained.
-
-**Connect to your data securely.** Use connectors that support secure authentication methods. Use Dataverse with xyz benefits to security. Don’t use implicit connection sharing. Don’t use queries where username and password are stored in plain text. Don’t use HTTP.
-
-**Define how end users will interact with the workload and data.** Will they have direct access to the data, will you use application users to surface data in the app, where will they access the app (e.g. do you need conditional access policies), how will apps be shared (e.g. with security groups). Avoid complex security models that encourage work arounds to avoid security blockers.<br>
-
-**Avoid hard coding.** Avoid hard-coding of URLs and keys. For example, avoid hard coding in a Power Automate HTTP action the URL or key to the backend service. Instead use a custom connector or use an environment variable for the URL, and Azure Key Vault for the API key.<br>
-
-**Define test plans.** Define clear test cases for security requirements. Evaluate whether you can automate those tests in your pipelines. If your team has processes for manual testing, include security requirements for those tests.
-
-** Note**
-
-Perform threat modeling during this phase. Threat modeling can confirm that design choices are aligned with security requirements and expose gaps that you should mitigate. If your workload handles highly sensitive data, invest in security experts who can help you conduct threat modelling.
-
-The initial threat modeling exercise should occur during the design phase when the software's architecture and high-level design are being defined. Doing it during that phase helps you to identify potential security issues before they're incorporated into the system's structure. However, this exercise isn't a one-time activity. It's a continuous process that should continue throughout the software's evolution.
-
-For more information, see […].
+> [!NOTE]
+> Perform threat modeling during this phase. Threat modeling can confirm that design choices are aligned with security requirements and expose gaps that you should mitigate. If your workload handles highly sensitive data, invest in security experts who can help you conduct threat modelling.
+>
+> The initial threat modeling exercise should occur during the design phase when the software's architecture and high-level design are being defined. Doing it during that phase helps you to identify potential security issues before they're incorporated into the system's structure. However, this exercise isn't a one-time activity. It's a continuous process that should continue throughout the software's evolution.
+>
+> For more information, see [Recommendations on threat analysis](threat-model.md).
 
 ### Development and testing phase
 
@@ -135,7 +113,7 @@ Every new component that's integrated into an application increases the attack s
 
 **We recommend using** [Pipelines for Power Platform](/power-platform/alm/set-up-pipelines)** for** **your deployments. Extend pipelines using GitHub Actions.** If you use GitHub workflows, prefer Microsoft-authored tasks. Also, validate tasks because they run in the security context of your pipeline.
 
-Explore the use of service principals for deployment. 
+Explore the use of service principals for deployment.
 
 ### Production phase
 
@@ -151,9 +129,8 @@ Your automated pipeline design should have the flexibility to **support both reg
 
 A release is typically associated with multiple approval gates. Consider creating an emergency process to accelerate security fixes. The process might involve communication among teams. The pipeline should allow for quick roll-forward and rollback deployments that address security fixes, critical bugs, and code updates that occur outside of the regular deployment lifecycle.
 
-** Note**
-
-Always prioritize security fixes over convenience. A security fix shouldn't introduce a regression or bug. If you want to accelerate the fix through an emergency pipeline, carefully consider which automated tests can be bypassed. Evaluate the value of each test against the execution time. For example, unit tests usually complete quickly. Integration or end-to-end tests can run for a long time.
+>[!NOTE]
+> Always prioritize security fixes over convenience. A security fix shouldn't introduce a regression or bug. If you want to accelerate the fix through an emergency pipeline, carefully consider which automated tests can be bypassed. Evaluate the value of each test against the execution time. For example, unit tests usually complete quickly. Integration or end-to-end tests can run for a long time.
 
 **Keep different environments separate.**
 
@@ -167,7 +144,7 @@ Use progressive exposure to **release features to a subset of users** based on c
 
 The goal of this phase is to **make sure security posture doesn't decay over time**. SDLC is an ongoing agile process. Concepts covered in the preceding phases apply to this phase because requirements change over time.
 
-**Continuous improvement.** Continuously assess and improve the security of the software development process by taking into account code reviews, feedback, lessons learned, and evolving threats as well as new features made available by Microsoft Power Platform to increase your security baseline. 
+**Continuous improvement.** Continuously assess and improve the security of the software development process by taking into account code reviews, feedback, lessons learned, and evolving threats as well as new features made available by Microsoft Power Platform to increase your security baseline.
 
 **Decommission legacy assets** that are stale or no longer in use. Doing so reduces the surface area of the application.
 
@@ -175,7 +152,8 @@ Maintenance also includes incident fixes. If issues are found in production, the
 
 Continuously improve your secure coding practices to keep up with the threat landscape.
 
-## Power Platform facilitation
+## SDL in Microsoft Power Platform
+<!-- this may need a different header but should highlight Microsofts responsibility towards SDL -->
 
 Power Platform is built on a culture and methodology of secure design. Both culture and methodology are constantly reinforced through Microsoft's industry-leading [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/practices) (SDL) and [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling) practices.
 
@@ -184,6 +162,8 @@ The Threat Modeling review process ensures that threats are identified during th
 Threat Modeling also accounts for all changes to services that are already live through continuous regular reviews. Relying on the [STRIDE model](/azure/security/develop/threat-modeling-tool-threats) helps to address the most common issues with insecure design.
 
 Microsoft's SDL is equivalent to the [OWASP Software Assurance Maturity Model](https://owaspsamm.org/) (SAMM). Both are built on the premise that secure design is integral to web application security. Learn more: [OWASP Top 10 Risks: Mitigations in Power Platform](/power-platform/admin/security/faqs)
+
+## Power Platform facilitation
 
 Microsoft Security Development Lifecycle (SDL) recommends secure practices that you can apply to your development lifecycle. For more information, see [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/).
 
@@ -199,6 +179,3 @@ With the solution checker feature, you can perform a rich static analysis check 
 - [Solution Architect series: Plan application lifecycle management for Power Platform - Training | Microsoft Learn](/training/modules/application-lifecycle-management-architect/)
 - [Use environment variables in solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/environmentvariables)
 - [Use solution checker to validate your solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/use-powerapps-checker)
-
-  
-
