@@ -139,7 +139,7 @@
           items:
             - name: XO:01 User-centered design
               href: ./experience-optimization/user-centered-design.md
-            - name: XO:02 Design standards
+            - name: XO:02 Standards and conventions
               href: ./experience-optimization/design-standards.md
             - name: XO:03 Information architecture
               href: ./experience-optimization/information-architecture.md
