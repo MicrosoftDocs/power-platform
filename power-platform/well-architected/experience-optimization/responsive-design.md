@@ -26,9 +26,15 @@ Responsive design is easier for less experienced designers and developers to imp
 
 Responsive design makes web content adapt to different screen and window sizes. Increasing the availability of applications to both web and mobile can increase the overall usage and adoption of the app if it's more convenient to access. In the design considerations, optimize for mobile interactions by using larger touch targets, avoiding hover-dependent interactions, and providing alternative input methods for gestures commonly used on touchscreens.
 
-### Use fluid layouts
+### Implement fluid layouts
 
 Fluid layouts use relative units, such as percentages or ratios, instead of fixed units like pixels. This allows the website to resize and reposition elements based on the screen size of the device being used, letting content reflow and balance the white space around.
+
+To achieve a responsive layout, a fluid layout approach is generally recommended due to its inherent flexibility and adaptability across various screen sizes and devices.
+
+While fixed layouts offer precise control over the layout and appearance of elements, they can present pitfalls for responsive design. Fixed layouts maintain a constant width, which may lead to horizontal scrolling or cropping on devices with different screen sizes or aspect ratios. This lack of flexibility can result in a suboptimal user experience, particularly on smaller screens such as smartphones or tablets.
+
+Hybrid layouts combine elements of both fluid and fixed layouts to strike a balance between flexibility and control. However, they can be more complex to implement and may require careful consideration of which elements should be fluid and which should be fixed. Hybrid layouts may also introduce challenges in maintaining consistency and visual harmony across different screen sizes and resolutions. In contrast, fluid layouts provide a straightforward and adaptable solution for responsive design. 
 
 ### Use a grid structure
 
@@ -38,7 +44,7 @@ The grid is an underlying invisible structure that controls the placement of all
 
 An adaptive design automatically reconfigures the elements on the page. It is better to reduce friction by understanding and removing the unnecessary elements in the page. Organize content to ensure the most important information is displayed prominently and is accessible on smaller screens. This may involve reordering content, collapsing navigation menus into responsive menus, and using progressive disclosure techniques to present content in a user-friendly manner.
 
-### Use adaptive design for complex layouts
+### Use adaptive techniques for complex layouts
 
 Breakpoints are the most essential component to create a responsive design. Breakpoints are specific points or thresholds in the layout of a responsive website or application where the design adapts or "breaks" to accommodate different screen sizes, resolutions, or device orientations. They are key components of responsive design and are strategically placed based on the content, layout, and design requirements of the project.
 
@@ -48,7 +54,7 @@ Reduce the file size of high-resolution images for smaller viewports or use port
 
 ### Create a breakpoint matrix
 
-A breakpoint matrix serves as a graphical depiction illustrating the responsive or adaptive behaviors of an application's design across different screen sizes and orientations. It typically presents a structured grid or layout detailing the design's response at various breakpoints. Each segment corresponds to a distinct screen width, offering insights into the design's structure, layout, and functionality. Consequently, designers can utilize the breakpoint matrix to visually demonstrate the variations in design across viewport sizes. A breakpoint matrix encompasses considerations of screen width, viewport orientation, design elements, layout structure, content presentation, navigation, media, and interactive components to illustrate how a website or app's design responds across different screen sizes and orientations.
+A breakpoint matrix serves as a graphical depiction illustrating the responsive or adaptive behaviors of an application's design across different screen sizes and orientations. It typically presents a structured grid or layout detailing the design's response at various breakpoints. Each segment corresponds to a distinct screen width, offering insights into the design's structure, layout, and functionality. A breakpoint matrix encompasses considerations of screen width, viewport orientation, design elements, layout structure, content presentation, navigation, media, and interactive components to illustrate how a website or app's design responds across different screen sizes and orientations.
 
 ## Power Platform facilitation
 
