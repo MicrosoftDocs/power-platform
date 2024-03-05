@@ -19,127 +19,119 @@ contributors:
 
 Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows 
 
+
+## Description
+
 Dataverse provides variety a of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with canvas apps, AI Builder, Power Automate, and low-code plugins so can easily integrate them into your solutions.
 
 Learn more about how to use AI functions in the following video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1iGPI]
 
-## AIClassify
 
-Classifies text into one or more from the provided category. For example, the following list of categories can be used to classify issues submitted by your customers:
+- **AIClassify** classifies text into one or more from the provided category. For example, the following list of categories can be used to classify issues submitted by your customers:
 
-- Problem
-- Billing
-- How To
-- Licensing
+    - Problem
+    - Billing
+    - How To
+    - Licensing
 
-#### Input for AIClassify
+- **AIExtract** extracts specified entities such as registration numbers, phone numbers, or names of people.
+- **AIReply** drafts a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
+- **AISentiment** detects the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
+- **AISummarize** summarizes the text that you provide. For example, this function summarizes an email message or text from a document.
+- **AITranslate** translates text from another language. For example, this function translates a customer email or product review. The source language doesn't need to be specified, and is automatically detected.
 
-| **Name**   | **Required** | **Type**             | **Description**  | **Values**          |
-|------------|--------------|----------------------|------------------|---------------------|
-| Text       | Yes          | string               | Text to classify | Text sentences      |
-| Categories | Yes          | table (string array) | Categories       | Table of categories |
+    For more information about languages supported for the source and target language, see [Translator language support—Translation](/azure/ai-services/translator/language-support) and review the list of supported languages under the **Auto Language Detection** column. 
 
-#### Output for AIClassify
+## Syntax
 
-| **Name**       | **Description** | **Values**                |
-|----------------|-----------------|---------------------------|
-| Classification | Category        | Name of selected category |
+**AIClassify input**
 
-## AIExtract
+**AIClassify**(_Text_, _Categories_)
 
-Extracts specified entities such as registration numbers, phone numbers, or names of people.
+- _Text_ - Required. A text sentences. The text to classify.
+- _Categories_ - Required. Table of categories.
 
-#### Input for AIExtract
+**AIClassify output**
 
-| **Name** | **Required** | **Type** | **Description**                 | **Values**                |
-|----------|--------------|----------|---------------------------------|---------------------------|
-| Text     | Yes          | string   | Text from which to extract data | Text sentences            |
-| Entity   | Yes          | string   | Entity to extract               | Name of entity to extract |
+(_Classification_)
 
-#### Output for AIExtract
+- _Classification_ - Name of selected category.
 
-| **Name**      | **Type** | **Description**                                         | **Values**                                                    |
-|---------------|----------|---------------------------------------------------------|---------------------------------------------------------------|
-| ExtractedData | table    | Extracted data that matched the type of entity provided | Table of zero or more rows of data matching the provided entity. |
+**AIExtract**
 
-## AIReply
+AIExtract(_Text_,_Entity_)
 
-Drafts a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
+- _Text_ - Required. A text sentences. The text from which to extract data.
+-  _Entity_ - Required. The entity to extract. The name of entity to extract.
 
-#### Input for AIReply
+**AIExtract Output**
 
-| **Name** | **Required** | **Type** | **Description** | **Values**     |
-|----------|--------------|----------|-----------------|----------------|
-| Text     | Yes          | string   | Text to respond | Text sentences |
+(_ExtractedData_)
 
-#### Output for AIReply
+- _ExtractedData_ - Table of zero or more rows of data matching the provided entity. The extracted data that matched the type of entity provided.
 
-| **Name**         | **Description**                                        | **Values**     |
-|------------------|--------------------------------------------------------|----------------|
-| PreparedResponse | A draft message in response to the provided input text | Text sentences |
+**AIReply input**
 
-## AISentiment
+**AIReply**(_Text_)
 
-Detects the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
+- _Text_ - Required. A text sentence. The text to respond.
 
-#### Input for AISentiment
+**AIReply output**
 
-| **Name** | **Required** | **Type** | **Description** | **Values**     |
-|----------|--------------|----------|-----------------|----------------|
-| Text     | Yes          | string   | Text to analyze | Text sentences |
+(_PreparedResponse_)
 
-#### Output for AISentiment
+- _PreparedResponse_ - A text sentence. The draft message in response to the provided input text.
 
-| **Name**          | **Description**                        | **Values**                     |
-|-------------------|----------------------------------------|--------------------------------|
-| AnalyzedSentiment | Overall sentiment of the analyzed text | Positive, neutral, or negative |
+**AISentiment input**
 
+**AISentiment**(_Text_)
 
-## AISummarize
+- _Text_ - Required. A text sentence. The text to analyze.
 
-Summarizes the text that you provide. For example, this function summarizes an email message or text from a document.
+**AISentiment output**
 
-#### Input for AISummarize
+(_AnalyzedSentiment_)
 
-| **Name** | **Required** | **Type** | **Description**   | **Values**     |
-|----------|--------------|----------|-------------------|----------------|
-| Text     | Yes          | string   | Text to summarize | Text sentences |
+- _AnalyzedSentiment_ - Positive, neutral, or negatived. The overall sentiment of the analyzed text. 
 
-#### Output for AISummarize
+**AISummarize input**
 
-| **Name**       | **Description**                      | **Values**     |
-|----------------|--------------------------------------|----------------|
-| SummarizedText | Summarized version of the input text | Text sentences |
+**AISummarize**(_Text_)
 
+- _Text_ - Required. A text sentence. The text to summarize.
 
-## AITranslate
+**AISummarize output**
 
-Translates text from another language. For example, this function translates a customer email or product review. The source language doesn't need to be specified, and is automatically detected.
+(_SummarizedText_)
 
-For more information about languages supported for the source and target language, see [Translator language support—Translation](/azure/ai-services/translator/language-support) and review the list of supported languages under the **Auto Language Detection** column.
+- _SummarizedText_ - Reqired. A text sentence. The summarized version of the input text
 
-#### Input for AITranslate
+**AITranslate input**
 
-| **Name**       | **Required** | **Type** | **Description**                              | **Values**                                       |
-|----------------|--------------|----------|----------------------------------------------|--------------------------------------------------|
-| Text           | Yes          | string   | Text to translate                            | Text sentences                                   |
-| TargetLanguage | No           | string   | Language code to which you want to translate | A valid language code such as **en** for English |
+**AITranslate**(_Text_,_ TargetLanguage__)
 
-#### Output for AITranslate
+- _Text_ - Required. A text sentence. The text to translate.
+- _TargetLanguage_ - The language code to which you want to translate sucah as **en** for English.
 
-| **Name**       | **Description** | **Values**     |
-|----------------|-----------------|----------------|
-| TranslatedText | Translated text | Text sentences |
+**AITranslate output**
+
+(_TranslatedText_)
+
+- _TranslatedText_ - A text sentence for the translated text.
 
 
 ## Examples
 
-| Function     | Example                                                                                                   |
-|--------------|-----------------------------------------------------------------------------------------------------------|
-| AIClassify   |  ```Environment.AIClassify({Text:"Insert text here", Categories:\["Category1", "Category2"\]}).Classification ``` |
-| AIExtract    |  ```Environment.AIExtract({Text:"Insert text here", Entity:"Insert entity here"}).ExtractedData ```               |
-| AIReply      |  ```Environment.AIReply({Text:"Insert text here"}).PreparedResponse ```                                           |
-| AISummarize  |    ```Environment.AISummarize({Text:"Insert text here"}).SummarizedText ```                                      |
-| AISentiment  |  ```Environment.AISentiment({Text:"Insert text here"}).AnalyzedSentiment ```                                      |
+
+**AIClassify**: ```Environment.AIClassify({Text:"Insert text here", Categories:\["Category1", "Category2"\]}).Classification```
+
+**AIExtract**: ```Environment.AIExtract({Text:"Insert text here", Entity:"Insert entity here"}).ExtractedData```
+
+**AIReply**: ```Environment.AIReply({Text:"Insert text here"}).PreparedResponse```
+
+**AISummarize**: ```Environment.AISummarize({Text:"Insert text here"}).SummarizedText```
+
+**AISentiment**: ```Environment.AISentiment({Text:"Insert text here"}).AnalyzedSentiment```
+
