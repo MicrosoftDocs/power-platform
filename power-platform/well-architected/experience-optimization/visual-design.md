@@ -26,6 +26,19 @@ There has been a lot of research on human perception of visual design. Users don
 
 A composition is balanced when all the elements are in optical equilibrium. Oftentimes, the mathematical placement needs to be optically adjusted. Some of the elements that affect the visual weight are size, color, density, white space.
 
+:::row:::
+   :::column span="":::
+      ![Alt text](_images/balance-left.svg)
+      **A balanced composition is ia sum of visual forces between the elements.**
+      
+   :::column-end:::
+   :::column span="":::
+      ![Alt text](_images/balance-right.svg)
+      **Balancing layout is one of the hardest tasks as it cannot be measured easily. **
+      
+   :::column-end:::
+:::row-end:::
+
 ### Proximity
 
 Items that are closer together appear to be more related. When spacing elements ensure that there is a noticeable distinction in spacing between elements that should be more related versus less so.
