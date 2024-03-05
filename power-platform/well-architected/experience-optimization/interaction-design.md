@@ -26,11 +26,11 @@ For a successful workload, the visual design needs to go hand in hand with user 
 
 The modern controls available in Power Apps utilize the latest Fluent UI components, which integrate visual elements like shadows, gradients, and animations to signal their interactivity; for instance, raised buttons hint at their clickability, while highlighted text fields indicate readiness for input. Moreover, they follow established design patterns and conventions which ensures familiarity and intuitiveness for users accustomed to modern software interfaces.
 
-[Affordance](../_images/affordance.svg)
+![Affordance](../_images/affordance.svg)
 
 **Mental model**: What users believe they know about a UI strongly impacts how they use it. Mismatched mental models (when users anticipate different outcomes from UI) are common. Since the user interacts with the system image, their mental model needs to match the designer’s mental model that has been fed into the system. Unfamiliar design patterns should be used carefully as they might lead to user confusion. The Fluent UI based modern controls are tested with users by a professional design team, which ensures the user’s mental model is the same as the intention for the pattern.
 
-[Mental model](../_images/mental-model.svg)
+![Mental model](../_images/mental-model.svg)
 
 **Cognitive biases**: They are the shortcuts and rules of thumb by which we make judgments and predictions. There are over 150 cognitive biases. They can be divided into four groups:
 
@@ -39,39 +39,39 @@ The modern controls available in Power Apps utilize the latest Fluent UI compone
 1. Need to act fast. Users constrained by time and information. With every piece of new information, users need to assess an ability to affect the situation, apply it to decisions, simulate the future to predict what might happen next, and otherwise act on new insights.
 1. What should we remember? Users need to make constant bets and trade-offs around what they try to remember and what we forget. When there are lots of irreducible details, they pick out a few standout items to save and discard the rest.
 
-[Cognative biases](../_images/cognative-bias.svg)
+![Cognative biases](../_images/cognative-bias.svg)
 
 **Fitts's Law**: The time to acquire a target is a function of the distance to and size of the target. Large elements that are positioned close to users are easily selectable. For example, if the button is too small or far from the content it relates to, it will take longer for the user to click it.
 
-[Fitt's law](../_images/fitt.svg)
+![Fitt's law](../_images/fitt.svg)
 
 **Hick's Law**: The time it takes to make a decision increases with the number and complexity of choices. Simplify choices for the user by breaking down complex tasks into smaller steps. Avoid overwhelming users by highlighting recommended options. Overcrowding can lead to confusion and longer time to make a choice. Additionally, reduce cognitive load by asking questions in a way that leads to simpler answers. For example, binary “yes/no” questions. 
 
-[Hick's law](../_images/hick.svg)
+![Hick's law](../_images/hick.svg)
 
 **Serial Position Effect**: First, last, as well as most different element is remembered the most by the users. Placing the least important items in the middle of lists can be helpful because these items tend to be stored less frequently in long-term and working memory. Positioning key actions on the far left and right within elements such as navigation can increase memorization.
 
-[Serial position effect](../_images/serial-position.svg)
+![Serial position effect](../_images/serial-position.svg)
 
 **Pareto Principle**: Also known as the 80–20 rule, the law of the vital few, and the principle of factor sparsity states that, for many events, roughly 80% of the effects come from 20% of the causes. It has been researched that testing (or bumping your ideas off) only 5 people will reveal 80% of problems. Be cautious of universal vs inclusive design!
 
-[Pareto principle](../_images/pareto.svg)
+![Pareto principle](../_images/pareto.svg)
 
 **Jakob’s Law**: Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know. You can simplify the learning process for users by providing familiar design patterns. 
 
-[Jacob's Law](../_images/jacob.svg)
+![Jacob's Law](../_images/jacob.svg)
 
 **Miller’s Law**: The average person can only keep 7 (plus or minus 2) items in their working memory. Chunking is an effective method of presenting groups of content in a manageable way. Organize content in groups of 5–9 items at a time.
 
-[Miller's Law](../_images/miller.svg)
+![Miller's Law](../_images/miller.svg)
 
 **Peak-end rule**: People judge an experience largely based on how they felt at its peak and at its end, rather than the total sum or average of every moment of the experience. It might be useful to identify moments when the product is most helpful, valuable, or entertaining and design to make those moments even better. The most intense points and the end of the user journey have particular importance. Also, people recall negative experiences more vividly than positive ones.
 
-[Peak-end rule](../_images/peak-end-rule.svg)
+![Peak-end rule](../_images/peak-end-rule.svg)
 
 **Postel's Law**: Be liberal in what you accept, and conservative in what you send. Be empathetic, flexible, and tolerant to any number of actions the user could possibly take. This means accepting variable input from users, translating input to meet the requirements, defining boundaries for input, and providing clear feedback to the user. At the same time be very specific in what you are asking the user to do.
 
-[Postel's Law](../_images/postel.svg)
+![Postel's Law](../_images/postel.svg)
 
 ## Power Platform facilitation
 
