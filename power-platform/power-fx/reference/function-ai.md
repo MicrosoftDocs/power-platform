@@ -46,7 +46,7 @@ Learn more about how to use AI functions in the following video.
 
 ## Call Dataverse AI functions in canvas apps
 
-You can call the AI functions in canvas apps. For more information, see (power-apps/maker/canvas-apps/working-with-formulas.md#use-power-fx-formula-bar). These AI functions are in the **Environment** data source.
+You can call the AI functions in canvas apps. For more information, see [Use Power Fx formula bar](power-apps/maker/canvas-apps/working-with-formulas.md#use-power-fx-formula-bar). These AI functions are in the **Environment** data source.
 
 1. Open a canvas app for editing in [Power Apps Studio](/power-apps/maker/canvas-apps/power-apps-studio).
 2. On the command bar, select **Add data** and then select a enviroment data source.
