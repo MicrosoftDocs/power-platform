@@ -22,7 +22,7 @@ Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: C
 
 ## Description
 
-Dataverse provides variety a of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with canvas apps, AI Builder, Power Automate, and low-code plugins so can easily integrate them into your solutions.
+Dataverse provides variety of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with canvas apps, AI Builder, Power Automate, and low-code plugins so can easily integrate them into your solutions.
 
 - **AIClassify** classifies text into one or more from the provided category. For example, the following list of categories can be used to classify issues submitted by your customers:
 
@@ -49,8 +49,8 @@ Learn more about how to use AI functions in the following video.
 You can call these [AI functions](power-apps/maker/canvas-apps/working-with-formulas.md#use-power-fx-formula-bar) in canvas apps. These AI functions are in the **Environment** data source.
 
 1. Open a canvas app for editing in [Power Apps Studio](/power-apps/maker/canvas-apps/power-apps-studio).
-2. On the command bar, select **Add data** and then select a enviroment data source.
-3. On the command bar, selct **Insert** > **Button**.
+2. On the command bar, select **Add data** and then select an enviroment data source.
+3. On the command bar, select **Insert** > **Button**.
 4. In formula bar, enter the following function as shown in the screenshot:
 
 :::image type="content" source="media/function-ai/sample-ai-function.png" alt-text="Sample AI function":::
@@ -75,7 +75,7 @@ You can call these [AI functions](power-apps/maker/canvas-apps/working-with-form
 
 **AIExtract**(_Text_,_Entity_)
 
-- _Text_ - Required. A text sentences. The text from which to extract data.
+- _Text_ - Required. A text sentences. The text from which to extract the data.
 -  _Entity_ - Required. The entity to extract. The name of entity to extract.
 
 **AIExtract Output**
@@ -126,6 +126,7 @@ You can call these [AI functions](power-apps/maker/canvas-apps/working-with-form
 
 - _Text_ - Required. A text sentence. The text to translate.
 - _TargetLanguage_ - The language code to which you want to translate, such as **en** for English.
+
 **AITranslate output**
 
 (_TranslatedText_)
