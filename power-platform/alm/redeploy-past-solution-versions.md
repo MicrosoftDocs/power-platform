@@ -26,7 +26,7 @@ For more information about these prerequisites, go to [Set up pipelines](set-up-
 
 1. From the Pipelines page, choose the pipeline in the dropdown that you wish to redeploy from.
 1. Click **Run history**.
-1. Find the record of the successful deployment that you wish to redeploy, and click the **...** next to the start time.
+1. Find the record of the successful deployment that you wish to redeploy, and click the **ellipses (...)** next to the start time.
 1. Click **Redeploy** from the menu.
 1. Read and acknowledge the warning, then click **Redeploy** to continue with the usual deployment configuration process.
 
