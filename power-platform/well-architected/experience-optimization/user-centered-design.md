@@ -1,6 +1,6 @@
 ---
-title: Recommendations for advocating for the user
-description: Learn how to advocate for the user to ensure consistent success with user experience optimization.
+title: Recommendations for a user-centered design strategy
+description: Learn about user-centered design to ensure consistent success with user experience optimization.
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| Develop a culture of user advocacy. Ensure that design outcomes meet the expectations and requirements of the users of the workload. Reduce costs and risks of design failures, redesigns, and maintenance. |
+|[EO:01](checklist.md)| Design your workload to meet the expectations and requirements of the users. Ensure that the workload is useful and provides a positive user experience. |
 |---|---|
 
 This guide describes the recommendations for user-centered design to ensure your workloads are useful, usable, and desirable for users, while meeting business requirements. User-centered design (UCD) is an approach to design that focuses on understanding the needs, preferences, and context of the users who will interact with the workload. Employing user-centered design can help to avoid usability problems, user frustration, and dissatisfaction. It can also help to reduce the costs and risks of design failures, redesigns, and maintenance.
