@@ -38,10 +38,10 @@ What users believe they know about a UI strongly impacts how they use it. Mismat
 
 They are the shortcuts and rules of thumb by which we make judgments and predictions. There are over 150 cognitive biases. They can be divided into four groups:
 
-1. Too much information.There is just too much information, users filter almost all of it out. The brain uses tricks to pick out the bits of information that are most likely going to be useful.
-1. Not enough meaning. The world is very confusing, and users see only a tiny sliver of it, but they need to make sense of it in order to survive. Users connect the dots, fill in the gaps with stuff they already think they know, and update perceptions.
-1. Need to act fast. Users constrained by time and information. With every piece of new information, users need to assess an ability to affect the situation, apply it to decisions, simulate the future to predict what might happen next, and otherwise act on new insights.
-1. What should we remember? Users need to make constant bets and trade-offs around what they try to remember and what we forget. When there are lots of irreducible details, they pick out a few standout items to save and discard the rest.
+1. _Information overload._ Research suggests that the human brain has a limited capacity for processing information consciously at any given moment. Moreover, nowadays there is just too much information, users filter almost all of it out. The brain uses tricks to pick out the bits of information that are most likely going to be useful.
+1. _Ambiguity effect._ The world is very confusing, and users see only a tiny sliver of it, but they need to make sense of it in order to survive. Users connect the dots, fill in the gaps with stuff they already think they know, and update perceptions. 
+1. _Urgency effect._ Users constrained by time and information. With every piece of new information, users need to assess an ability to affect the situation, apply it to decisions, simulate the future to predict what might happen next, and otherwise act on new insights.
+1. _Memory and recall._ Users need to make constant bets and trade-offs around what they try to remember and what we forget. When there are lots of irreducible details, they pick out a few standout items to save and discard the rest.
 
 ![Cognative biases](../_images/bias.svg)
 
