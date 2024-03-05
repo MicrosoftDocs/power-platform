@@ -16,7 +16,7 @@ ms.topic: conceptual
 |[EO:01](checklist.md)| **Maintain consistency in design elements such as color schemes, typography, and layout. Prioritize simplicity and clarity, avoiding unnecessary visual clutter or complexity. Strive for a clean, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
 |---|---|
 
-This guide provides an overview of universal visual design patterns that affect user perception and ultimately influence satisfaction. Visual elements in design serve as the foundational building blocks used to create compelling visual compositions. These elements collectively influence user perception in various ways.
+This guide describes the recommendations for universal visual design patterns that affect user perception and ultimately influence satisfaction. Visual elements in design serve as the foundational building blocks used to create compelling visual compositions. Understanding how these elements collectively influence user perception provides structured ways of arranging elements for an effective and appealing experience.
 
 ## Key design strategies
 
