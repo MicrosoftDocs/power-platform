@@ -52,7 +52,7 @@ You can call the AI functions in canvas apps. For more information, see [Use Pow
 2. On the command bar, select **Add data** and then select a enviroment data source.
 3. On the command bar, selct **Insert** > **Button**.
 4. In formula bar, enter the follwoing function as shown in the screenshot:
-5. 
+
 :::image type="content" source="media/function-ai/sample-ai-function.png" alt-text="Sample AI function":::
 
 
