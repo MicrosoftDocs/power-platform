@@ -4,16 +4,16 @@ description: Learn how to Provide meaningful notifications and messages to ensur
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/29/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for feedback and notifications
+# Recommendations for notifications and messages
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:07](checklist.md)| Notify users with relevant, important, and valuable information. Give users feedback on their actions. Let users know when something happens and what they need to do next. Provide meaningful, useful, and simple guidance in notifications and messages. |
+|[EO:07](checklist.md)| Notify users with relevant, important, and valuable information. Let users know when something happens and what they need to do next. Provide meaningful, useful, and simple guidance in notifications and messages. |
 |---|---|
 
 This guide describes the recommendations for incorporating feedback and guidance into the user experience for your workloads. Robust feedback and guidance mechanisms are fundamental to reducing complexity and a supportive experience for users.

@@ -9,7 +9,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for following design standards
+# Recommendations for following design standards, conventions, and guidelines
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
