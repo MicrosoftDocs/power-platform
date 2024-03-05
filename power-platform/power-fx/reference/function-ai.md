@@ -61,7 +61,7 @@ Learn more about how to use AI functions in the following video.
 
 **AIExtract input**
 
-AIExtract(_Text_,_Entity_)
+**AIExtract**(_Text_,_Entity_)
 
 - _Text_ - Required. A text sentences. The text from which to extract data.
 -  _Entity_ - Required. The entity to extract. The name of entity to extract.
@@ -106,20 +106,19 @@ AIExtract(_Text_,_Entity_)
 
 (_SummarizedText_)
 
-- _SummarizedText_ - Reqired. A text sentence. The summarized version of the input text
+- _SummarizedText_ - Required. A text sentence. The summarized version of the input text
 
 **AITranslate input**
 
 **AITranslate**(_Text_,_TargetLanguage_)
 
 - _Text_ - Required. A text sentence. The text to translate.
-- _TargetLanguage_ - The language code to which you want to translate sucah as **en** for English.
-
+- _TargetLanguage_ - The language code to which you want to translate, such as **en** for English.
 **AITranslate output**
 
 (_TranslatedText_)
 
-- _TranslatedText_ - A text sentence for the translated text.
+- _TranslatedText_ - The translated text.
 
 
 ## Examples
