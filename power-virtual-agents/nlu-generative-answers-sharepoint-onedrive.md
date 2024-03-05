@@ -8,10 +8,8 @@ author: iaanw
 ms.author: iawilt
 ms.reviewer: iawilt
 
-ms.service: power-virtual-agents
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+
 ---
 
 # Use content on SharePoint or OneDrive for Business for generative answers
@@ -20,10 +18,14 @@ searchScope:
 
 This capability works by pairing your copilot with a URL, such as _contoso.sharepoint.com/sites/policies_. When a copilot user asks a question and the copilot doesn't have a topic to use for an answer, the copilot searches the URL and all sub-paths. For example, a URL such as _contoso.sharepoint.com/sites_ also includes subpaths like _contoso.sharepoint.com/sites/policies_. Generative answers summarize this content into a targeted response.
 
-> [!IMPORTANT]
-> Content analysis and retrieval requires authentication. To authenticate your copilot, see [Authentication](nlu-boost-node.md#authentication). The **No authentication** and **Only for Teams** authentication options can't retrieve information from Sharepoint or OneDrive for Business.
+> [!CAUTION]
+> When you publish your copilot, the calls are made on behalf of the user chatting with the copilot, using the authentication settings configured in the copilot, which must use manual authentication with the **Service Provider** type of **Microsoft Entra ID** (formerly Azure Active Directory).
+> - To authenticate your copilot, see [Authentication](nlu-boost-node.md#authentication).
+> - You can find instructions for how to create the needed Microsoft Entra ID application registration in [Configure user authentication with Microsoft Entra ID](configuration-authentication-azure-ad.md).
 >
-> When configuring authentication, scopes control user access. Specify **Sites.Read.All**, **Files.Read.All** in the scopes field near the existing **profile** and **openid** values. These scopes don't give users increased permissions when using the copilot, but allow their permissible content from the Sharepoint site as configured for generative answers.
+> - Selecting **No authentication** and **Only for Teams** authentication options mean your copilot won't retrieve information from SharePoint or OneDrive for Business.
+>
+> - When configuring authentication, scopes control user access. Specify **Sites.Read.All**, **Files.Read.All** in the scopes field near the existing **profile** and **openid** values. These scopes don't give users increased permissions when using the copilot, but allow their permissible content from the SharePoint site as configured for generative answers.
 
 Due to memory limits, generative answers can only use SharePoint files that are under 3 MB. If a file is larger than 3 MB, consider splitting it into multiple smaller files.
 
@@ -43,8 +45,9 @@ Due to memory limits, generative answers can only use SharePoint files that are 
 
    > [!NOTE]
    >
-   > A best practice is to omit _https://_ from the URL. Recognized SharePoint URLs will be from the _sharepoint.com_ domain.
-   > Sharepoint site URLs cannot be more than two levels deep.
+   > A best practice is to omit _https://_ from the URL. Recognized SharePoint URLs will be from the _sharepoint.com_ domain.  
+   > Sharepoint site URLs cannot be more than two levels deep.  
+   > Content from **aspx** files on SharePoint won't be used to generate answers.
 
 1. Select **Save** at the top to save your topic changes.
 

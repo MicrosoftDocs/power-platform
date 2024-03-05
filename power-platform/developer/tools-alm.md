@@ -1,12 +1,11 @@
 ---
 title: "Microsoft Power Platform ALM developer tools"
 description: "Overview of how developers can extend Power Platform using various tools."
-author: KumarVivek
+author: phecke
 ms.subservice: developer
-ms.author: kvivek
-ms.custom: ""
+ms.author: pehecke
 ms.date: 11/09/2022
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.topic: "article"
 ---
 

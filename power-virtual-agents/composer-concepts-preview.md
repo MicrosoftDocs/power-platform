@@ -7,26 +7,20 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: fundamentals, ceX, bap-template
-ms.service: power-virtual-agents
-ms.collection:
-  - virtual-agent
-  - get-started
-searchScope:
-  - "Power Virtual Agents"
 ---
 
-# Key concepts for Bot Framework Composer users
+# Key concepts for Copilot Framework Composer users
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-If you're used to designing bots in Bot Framework Composer, you'll find that some things are different in the Microsoft Copilot Studio preview, and some things are similar. The following table lists some key concepts in Composer and where to find similar concepts in Microsoft Copilot Studio preview.
+If you're used to designing classic bots in the previous version of Bot Framework Composer, there are some similarities and differences with Copilot Studio. The following table lists some key concepts in Composer and where to find similar concepts in Copilot Studio.
 
 | Composer concept               | Microsoft Copilot Studio concept                        | Description                                                                                                                                                                                                                                        |
 | :----------------------------- | :-------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dialogs and triggers           | [Topics][]                                          | Use topics to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the bot should start the topic and a set of _nodes_ that describe the topic's conversation path.                                      |
-| Intents                        | [Trigger phrases][]                                 | Add trigger phrases to a topic for the phrases, keywords, and questions that a customer is likely to type related to a specific issue. Microsoft Copilot Studio uses natural language understanding to parse what a customer types and find the most appropriate topic. |
+| Dialogs and triggers           | [Topics][]                                          | Use topics to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the copilot should start the topic and a set of _nodes_ that describe the topic's conversation path.                                      |
+| Intents                        | [Trigger phrases][]                                 | Add trigger phrases to a topic for the phrases, keywords, and questions that a customer is likely to type related to a specific issue. Copilot Studio uses natural language understanding to parse what a customer types and find the most appropriate topic. |
 | Actions and prompts            | [Nodes][]                                           | Use nodes, such as messages, questions, and conditional branches, on the authoring canvas to create a topic's conversation path.                                                                                                           |
-| Bot response variation         | [Response variations][] and [question variations][] | Use response and question variations to add variety to your bot's messages and questions.                                                                                                                                                          |
+| Bot response variation         | [Response variations][] and [question variations][] | Use response and question variations to add variety to your copilot's messages and questions.                                                                                                                                                          |
 | Suggested actions              | [Quick replies][]                                   | Use quick replies to provide default reply options to the customer.                                                                                                                                                                                    |
 | Entities                       | [Entities][]                                        | Define and use entities to extract semantic information from what a customer types.                                                                                                                                                                   |
 | State, storage, and properties | [Variables][]                                       | Use variables to track state.                                                                                                                                                                                                                      |

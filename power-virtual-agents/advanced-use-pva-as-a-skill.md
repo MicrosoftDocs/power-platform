@@ -2,7 +2,6 @@
 title: Use a Microsoft Copilot Studio copilot as a skill in Bot Framework bots
 description: Call a Microsoft Copilot Studio copilot from a Bot Framework bot session when a user says something that matches the copilot's trigger phrases.
 ms.date: 04/01/2022
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt

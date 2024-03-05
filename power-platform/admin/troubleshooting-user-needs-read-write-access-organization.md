@@ -4,7 +4,7 @@ description: "Learn how to run and interpret diagnostics for user access to envi
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual

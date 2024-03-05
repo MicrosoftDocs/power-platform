@@ -4,7 +4,7 @@ description: "There are two types of Power Platform trial environments. Decide w
 author: meeramahabala
 ms.subservice: admin
 ms.author: meeram
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/18/2023
