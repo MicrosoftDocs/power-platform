@@ -55,6 +55,13 @@ Empathizing with users and their contexts helps the workload team to understand 
 
 Empathizing with users and their contexts also helps to build trust and rapport with the users, and further ensures their involvement in, and contribution to, the design process.
 
+### Provide user education and support
+
+- Documentation
+- Training
+- In-app guidance
+- Feedback mechanisms
+
 ### Encourage continuous improvement
 
 Embrace a culture of continuous improvement by soliciting feedback, conducting regular evaluations, and incorporating lessons learned into future projects. Stay updated with the latest trends in UX design from authorities in the design space who have invested in research. Look to modern Microsoft product interface implementation for inspiration and latest trends in the Fluent UI space. Continuous improvement ensures that your designs evolve alongside changing user needs and industry trends, maintaining relevance and effectiveness over time.
