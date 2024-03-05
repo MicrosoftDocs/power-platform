@@ -44,15 +44,17 @@ Learn more about how to use AI functions in the following video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1iGPI]
 
-## Calling Dataverse AI functions in canvas apps
-You can call these [AI functions in canvas apps](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-formulas#use-power-fx-formula-bar). These AI functions are in the **Environment** data source.
-1. Open your canvas app in [Power Apps studio](https://make.powerapps.com/).
-1. Click on the *Add data* action.
-1. Select **Environment** under *Select a data source*.
-1. Insert a **Button**.
-1. In the **OnSelect**, enter the following in the function *fx*.
+## Call Dataverse AI functions in canvas apps
 
-   (insert image here)
+You can call the AI functions in canvas apps. For more information, see (power-apps/maker/canvas-apps/working-with-formulas.md#use-power-fx-formula-bar). These AI functions are in the **Environment** data source.
+
+1. Open a canvas app for editing in [Power Apps Studio](/power-apps/maker/canvas-apps/power-apps-studio).
+2. On the command bar, select ***Add data** and then select a enviroment data source.
+4. On the command bar, selct **Insert** > **Button**.
+5. In formula bar, enter a function as shown in this screenshot:
+
+
+:::image type="content" source="media/function-ai/sample-ai-function.png" alt-text="Sample AI function":::
 
 
 ## Syntax
@@ -144,4 +146,6 @@ You can call these [AI functions in canvas apps](https://learn.microsoft.com/en-
 **AISummarize**: ```Environment.AISummarize({Text:"Insert text here"}).SummarizedText```
 
 **AISentiment**: ```Environment.AISentiment({Text:"Insert text here"}).AnalyzedSentiment```
+
+**AITranslate**: ```Set(varResult1, Environment.AITranslate({Text:TextInput1.Text}).TranslatedText)```
 
