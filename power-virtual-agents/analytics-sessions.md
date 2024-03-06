@@ -24,7 +24,9 @@ See [Work with conversation transcripts](analytics-sessions-transcripts.md) for 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+-  To view session transcripts, one needs to have the transcript viewer security role. Only admins can grant this role by [Assign the Bot transcript viewer security role during bot sharing](admin-share-bots.md#assign-the-bot-transcript-viewer-security-role-during-bot-sharing).
+
+-  [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 ### Download bot session transcripts
