@@ -45,7 +45,6 @@ After turning on the **Search for records in Microsoft 365 apps** setting, your 
 
 > [!Note]
 > - It may take an hour or more for records to be available in your Outlook web client.
-> - This feature may not yet be available in your region.
 
 > [!Important]
 > The recipient of the email must be able to access the environment with security roles that allow the user to have access to the data and must be able to access the shared record.
