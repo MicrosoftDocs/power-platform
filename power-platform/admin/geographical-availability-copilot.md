@@ -48,7 +48,7 @@ The following table describes when and how data can move across regions for copi
 | Asia</br>Canada</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 | Government cloud (GCC) | United States (commercial cloud) | Yes - to commercial (United States) | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
 
-If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
+\*If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
 
 ## Enable data movement across regions
 
