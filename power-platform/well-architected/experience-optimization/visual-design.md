@@ -1,10 +1,10 @@
 ---
 title: Recommendations for optimizing user perception and aesthetics
 description: Learn how to optimize user perception and aesthetics to ensure consistent success with user experience optimization.
-author: RobStand
-ms.author: rstand
+author: Denise-MSFT
+ms.author: demora
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/29/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -13,29 +13,41 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **Maintain consistency in design elements such as color schemes, typography, and layout. Prioritize simplicity and clarity, avoiding unnecessary visual clutter or complexity. Strive for a clean, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
+|[EO:01](checklist.md)| **Apply classic design principals to visual elements such as color schemes, typography, and layout. Strive for a focused, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
 |---|---|
 
-This guide describes the recommendations for universal visual design patterns that affect user perception and ultimately influence satisfaction. Visual elements in design serve as the foundational building blocks used to create compelling visual compositions. Understanding how these elements collectively influence user perception provides structured ways of arranging elements for an effective and appealing experience.
+This guide describes the recommendations for universal visual design patterns that affect user perception, which can significantly influence satisfaction and adoption of an application. Visual elements serve as foundational building blocks used to create experiences. Applying visual principals that align with how humans naturally perceive and process information provides structured methods to choose and arrange visual elements for an effective and appealing application.
 
 ## Key design strategies
 
-There has been a lot of research on human perception of visual design. Users don’t look at the visual elements in silos. Instead, they perceive them as relations to other elements and the context in which they are viewed. These relationships affect the user’s perception. They can attract attention to specific areas, evoke emotions, aid comprehension, enhance aesthetics, and reinforce brand identity. Thoughtful choices and arrangements of visual elements create engaging, memorable, and effective user experiences that resonate with their target audience.
+There has been a lot of research on human perception of visual design. Users don't look at the visual elements in silos. Instead, they perceive them as relations to other elements and the context in which they are viewed. These relationships affect the user's perception. They can attract attention to specific areas, evoke emotions, aid comprehension, enhance aesthetics, and reinforce brand identity. Thoughtful choices and arrangements of visual elements create engaging, memorable, and effective user experiences that resonate with their target audience.
+
+**The Aesthetic-Usability Effect**
+
+It takes about 50 milliseconds for users to form an opinion about an application. This first impression depends on many factors: structure, colors, spacing, symmetry, amount of text, fonts, and more. A positive first impression can increase overall satisfaction. Research has shown that users are more tolerant of minor usability issues when they find an interface visually appealing. Additionally, quality of design is an indicator of credibility.
 
 ### Balance and weight
 
 A composition is balanced when all the elements are in optical equilibrium. Oftentimes, the mathematical placement needs to be optically adjusted. Some of the elements that affect the visual weight are size, color, density, white space.
 
+- _Size_: Larger elements tend to carry more visual weight than smaller ones. To achieve balance, larger elements can be counterbalanced by grouping them with smaller elements or adjusting their placement within the layout.
+
+- _Color_: Bright or intense colors can attract more attention and appear heavier than muted or neutral colors. Balancing colors involves distributing them evenly throughout the interface or using complementary colors to create visual harmony.
+
+- _Density_: The density of elements refers to how tightly packed they are within a space. Balancing density involves ensuring that elements are distributed evenly across the interface to avoid overcrowding or sparse areas.
+
+- _White space_: Also known as negative space, refers to the empty areas between elements. Space helps create visual breathing room and can be used to balance the composition by providing contrast and emphasis to the elements.
+
 :::row:::
    :::column span="":::
-      ![Alt text](../_images/balance-left.svg)
+      ![Alt text](./media/visual-design/balance-left.svg)
       **A balanced composition is ia sum of visual forces between the elements.**
-      
+
    :::column-end:::
    :::column span="":::
-      ![Alt text](../_images/balance-right.svg)
+      ![Alt text](./media/visual-design/balance-right.svg)
       **Balancing layout is one of the hardest tasks as it cannot be measured easily.**
-      
+
    :::column-end:::
 :::row-end:::
 
@@ -43,16 +55,22 @@ A composition is balanced when all the elements are in optical equilibrium. Ofte
 
 Items that are closer together appear to be more related. When spacing elements ensure that there is a noticeable distinction in spacing between elements that should be more related versus less so.
 
+Group related elements that are functionally or belong to the same hierarchical category closely together. For example, buttons that perform similar actions or options within a dropdown menu should be placed closer together to indicate their association. In a navigation bar, closely spaced menu items indicate a related set of options, while greater spacing between menu categories separates them visually.
+
+Enhance readability in text-heavy interfaces by adjusting spacing between paragraphs, sentences, and words. Closer spacing between paragraphs or sentences indicates a logical connection or continuation of thought, while greater spacing denotes a transition or break in content. This helps users navigate and comprehend textual information more effectively.
+
+Ensure there's a noticeable distinction in spacing between related and unrelated elements are clear to the user to prevent visual clutter and confusion. Clear spacing helps users quickly identify groups of related elements and understand their functional relationships without ambiguity, while subtle spacing differences will not be recognized. A spacing ramp of a design system can help determine the appropriate spacing needed based on element size.
+
 :::row:::
    :::column span="":::
-      ![Alt text](../_images/proximity-left.svg)
+      ![Alt text](./media/visual-design/proximity-left.svg)
       **The circle on the left is be more related to the triangle than to the other circle.**
-      
+
    :::column-end:::
    :::column span="":::
-      ![Alt text](../_images/proximity-right.svg)
+      ![Alt text](./media/visual-design/proximity-right.svg)
       **Spacing between paragraphs is smaller than space between sections.**
-      
+
    :::column-end:::
 :::row-end:::
 
@@ -60,16 +78,24 @@ Items that are closer together appear to be more related. When spacing elements 
 
 Elements that are arranged on a line or a curve are perceived to be more related than elements not on a line or a curve.
 
+Arrange interface elements, such as navigation menus or steps in a process, along a line or curve to imply a sequence or progression. This layout helps users perceive the relationship between elements and understand the logical flow of information or actions.
+
+Place related elements, such as checkbox or radio options, or items (e.g., bullet points) in a list, along a line to visually group them together. This arrangement suggests to users that these elements share a common purpose or belong to the same category, facilitating easier navigation and comprehension.
+
+Use lines or curves to guide users' attention and create visual paths through the interface. For example, an arrow can direct the users' eyes from one section of content to another along a certain path, indicating a connection or progression. This technique helps users navigate the interface more intuitively and encourages exploration.
+
+Arrange key interface elements, such as call-to-action buttons or important information, along a prominent lines to draw users' attention and create focal points. For example, the Fluent MessageBar pattern is often displayed as a prominent balanced message across the content area, with the message on the left, leading to the call to action buttons on the right. This layout strategy highlights these elements and emphasizes their significance, increasing the likelihood of interaction.
+
 :::row:::
    :::column span="":::
-      ![Alt text](../_images/continuity-left.svg)
+      ![Alt text](./media/visual-design/continuity-left.svg)
       **The curves / lines are stronger than colour to our perception.**
-      
+
    :::column-end:::
    :::column span="":::
-      ![Alt text](../_images/continuity-right.svg)
+      ![Alt text](./media/visual-design/continuity-right.svg)
       **Wizards use continuity to help the user understand that the steps are related without overwhelming with all the content.**
-      
+
    :::column-end:::
 :::row-end:::
 
@@ -79,14 +105,14 @@ Human brain strives for simplicity and recognizes a single pattern rather than i
 
 :::row:::
    :::column span="":::
-      ![Alt text](../_images/closure-left.svg)
+      ![Alt text](./media/visual-design/closure-left.svg)
       **A square is recognized first before 4 incomplete circles.**
-      
+
    :::column-end:::
    :::column span="":::
-      ![Alt text](../_images/closure-right.svg)
+      ![Alt text](./media/visual-design/closure-right.svg)
       **Animation from a card to a modal helps to close te gap between the two and relate them to one another.**
-      
+
    :::column-end:::
 :::row-end:::
 
@@ -96,14 +122,14 @@ It is an element that stands out and grabs the attention first. Ideally, design 
 
 :::row:::
    :::column span="":::
-      ![Alt text](../_images/focalpoint-left.svg)
+      ![Alt text](./media/visual-design/focalpoint-left.svg)
       **User’s eye is drawn to the blue square first.**
-      
+
    :::column-end:::
    :::column span="":::
-      ![Alt text](../_images/focalpoint-right.svg)
+      ![Alt text](./media/visual-design/focalpoint-right.svg)
       **Elements such as calls to action can be made focal points to ensure that users notice them.**
-      
+
    :::column-end:::
 :::row-end:::
 
@@ -113,14 +139,14 @@ Objects that look similar will be recognized as a pattern or a group. They will 
 
 :::row:::
    :::column span="":::
-      ![Alt text](../_images/similarity-left.svg)
+      ![Alt text](./media/visual-design/similarity-left.svg)
       **The elements are grouped by shape and colour not arrangement (columns and rows).**
-      
+
    :::column-end:::
    :::column span="":::
-      ![Alt text](../_images/similarity-right.svg)
+      ![Alt text](./media/visual-design/similarity-right.svg)
       **If one card on a dashboard opens as a side panel, users will expect all of them to opend that way.**
-      
+
    :::column-end:::
 :::row-end:::
 
@@ -130,14 +156,14 @@ People instinctively perceive elements to be either a “figure” (what stands 
 
 :::row:::
    :::column span="":::
-      ![Alt text](../_images/figureground-left.svg)
+      ![Alt text](./media/visual-design/figureground-left.svg)
       **Low contrast and minimal negative space contribute to perceiving the white rectangles as part of the background.**
-      
+
    :::column-end:::
    :::column span="":::
-      ![Alt text](../_images/figureground-right.svg)
+      ![Alt text](./media/visual-design/figureground-right.svg)
       **A side image needs to recede into the background so the users can focus on the important content.**
-      
+
    :::column-end:::
 :::row-end:::
 
@@ -147,14 +173,14 @@ Elements tend to be perceived as groups if they are sharing an area with a clear
 
 :::row:::
    :::column span="":::
-      ![Alt text](../_images/grouping-left.svg)
+      ![Alt text](./media/visual-design/grouping-left.svg)
       **Adding borders around an element or a group of elements is a way to create separation from surrounding elements.**
-      
+
    :::column-end:::
    :::column span="":::
-      ![Alt text](../_images/grouping-right.svg)
+      ![Alt text](./media/visual-design/grouping-right.svg)
       **Sectioning content helps users understand that the subject matter is switching.**
-      
+
    :::column-end:::
 :::row-end:::
 
@@ -164,20 +190,16 @@ Visual elements such as lines, contrast, spacing, etc. are used to inform users 
 
 :::row:::
    :::column span="":::
-      ![Alt text](../_images/signal-noise-left.svg)
+      ![Alt text](./media/visual-design/signal-noise-left.svg)
       **Signals help in guiding users through content and informing what is important.**
-      
+
    :::column-end:::
    :::column span="":::
-      ![Alt text](../_images/signal-noise-right.svg)
+      ![Alt text](./media/visual-design/signal-noise-right.svg)
       **Visual noise introduces confusion and has the opposite effects from signals.**
-      
+
    :::column-end:::
 :::row-end:::
-
-### The Aesthetic-Usability Effect
-
-It takes about 50 milliseconds for users to form an opinion about an application. This first impression depends on many factors: structure, colors, spacing, symmetry, amount of text, fonts, and more. A positive first impression can increase overall satisfaction. Research has shown that users are more tolerant of minor usability issues when they find an interface visually appealing. Additionally, quality of design is an indicator of credibility.
 
 ## Power Platform facilitation
 

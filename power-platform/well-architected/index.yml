@@ -63,9 +63,9 @@ sections:
     size: small
     summary: Power Well-Architected intends to help you realize the maximum value from your investments in modern application workloads with Power Platform that align closely with your business goals and user needs. Power Well-Architected provides guidance for you to design your modern application workloads to both meet current requirements and adapt to future needs and challenges. Start with the Pillars and aligh your design choices with then principles. Build a strong foundation for your workload based on the design review checklists, recommendation guides, and tradeoffs.
 
-    #image:
-    #  componentType: image
-    #  src: ./_images/well-architected-hub.png   
+    image:
+      componentType: image
+      src: ./_images/well-architected-hub.png   
 
   # bifold with image and text blocks
   #- componentType: bifold
