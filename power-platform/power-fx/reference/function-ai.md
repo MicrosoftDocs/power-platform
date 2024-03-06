@@ -1,5 +1,5 @@
 ---
-title: AI functions in Power Apps
+title: AISummarize, AISentiment, AIReply, AITranslate, AIClassify, and AIExtract functions
 description: Reference information including syntax and examples for the AISummarize, AISentiment, AIReply, AITranslate, AIClassify, and AIExtract functions.
 author: paulliew
 ms.topic: reference
@@ -23,7 +23,7 @@ Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: C
 
 Dataverse provides a variety of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with Canvas apps, AI Builder, and low-code plugins so can easily integrate them into your solutions.
 
-- **AIClassify** classifies text into one or more provided categories. For example, the following list of categories can be used to classify issues submitted by your customers:
+- **AIClassify** classifies text into one of the provided categories. For example, the following list of categories can be used to classify issues submitted by your customers:
 
     - Problem
     - Billing
@@ -45,11 +45,11 @@ Learn more about how to use AI functions in the following video.
 ## Use in Canvas apps
 
 You can call these functions from canvas apps. However, it is a little more complicated than described for other Power Fx hosts:
-1. You will need to add the **Environment** data source.
-1. The functions will be methods in the **Environment** namespace.  Where this documentation will describe calling **AISummarize( ... )**, you will need to use **Environment.AISummarize( ... )**.
-1. Arguments to the function must be named columns in a record, passed as the only argument.  The names of the columns are given in the Syntax section matching the names of the parameters.
-1. The return value from the function will always be a record, even if it only contains one column.  The name of the column is listed in the Syntax section.
-1. These functions are behavior functions and cannot be used in Canvas data flow, for example as the input to the **Text** property of a **Text** control.  Use a **Set** function to place the result in a global variable, and then use that value elsewhere in your app.
+1. You need to add the **Environment** data source.
+1. The AI functions are functions in the **Environment** namespace.  Where this documentation describes calling **AISummarize( ... )**, for example, you need to use **Environment.AISummarize( ... )**.
+1. Arguments to the function must be named columns in a record, passed as the only argument.  The names of the columns are given in the *Syntax* section matching the names of the parameters.
+1. The return value from these functions is always a record containing one column.  The name of the column is listed in the *Syntax* section.
+1. These functions are [behavior functions](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) and cannot be used in Canvas data flow, for example as the input to the **Text** property of a **Text** control.  Use the [**Set**](function-set) function to place the result in a global variable, and then use that value elsewhere in your app.
 
 Here's an example:
 
@@ -58,48 +58,48 @@ Here's an example:
 1. From the Insert pane, add a **Button** control.
 1. In the formula bar, select the **OnSelect** property and enter the following formula:
    ```powerapps-dot
-   Set( Summary, Environment.AISummarize( {Text: "2, 4, 6, 8, 10, 12, 14, 16, 18, 20"} ).SummarizedText )
+   Set( Summary, Environment.AISummarize( {Text: "2, 4, 6, 8, 10, 12, 14, 16"} ).SummarizedText )
    ```
 1. From the Insert pane, add a **Text** control.
 1. In the formula bar, select the **Text** property and enter the following formula:
    ```powerapps-dot
    Summary
    ```
-1. The text box will display an AI generated summary similar to:
+1. The text box displays an AI generated summary similar to:
    ```
-   The given text is a sequence of even numbers from 2 to 20, increasing by 2 each time.
+   The given text is a sequence of even numbers from 2 to 16, increasing by 2 each time.
    ```
 
 > [!NOTE]
-> In time we will add the same function signatures that other Power Fx hosts enjoy to Canvas. Even when added, it will augment and not replace the current mechanism; apps using the current mechanism will continue to work without modification.
+> We are in the process of adding the same function signatures that other Power Fx hosts enjoy to Canvas. The new signatures will augment and not replace the current mechanism; apps using the current mechanism will continue to work without modification.
 
 ## Syntax
 
 **AIClassify**( _Text_, _Categories_ )
 - _Text_ - Required. A text sentences. The text to classify.
-- _Categories_ - Required. Table of categories.
+- _Categories_ - Required. Single column of table of text categories.
 - For Canvas apps, the return value is in the _Classification_ column.
 
 **AIExtract**( _Text_, _Entity_ )
 - _Text_ - Required. A text sentences. The text from which to extract the data.
-- _Entity_ - Required. The entity to extract. The name of entity to extract.<br>
+- _Entity_ - Required. The entity to extract. The name of entity to extract.
 - For Canvas apps, the return value is in the _ExtractedData_ column, a table of zero or more rows of data matching the provided entity.
 
 **AIReply**( _Text_ )
-- _Text_ - Required. A text sentence. The text to respond to.<br>
+- _Text_ - Required. A text sentence. The text to respond to.
 - For Canvas apps, the return value is in the _PreparedResponse_ column. 
 
 **AISentiment**( _Text_ )
-- _Text_ - Required. The text to analyze for sentiment.<br>
+- _Text_ - Required. The text to analyze for sentiment.
 - For Canvas apps, the return value is in the _AnalyzedSentiment_ column and is "Positive", "Neutral", or "Negative". 
 
 **AISummarize**( _Text_ )
-- _Text_ - Required. The text to summarize.<br>
+- _Text_ - Required. The text to summarize.
 - For Canvas apps, the return value is in the _SummarizedText_ column.
 
 **AITranslate**(_Text_, _TargetLanguage_)
-- _Text_ - Required. The text to translate.<br>
-- _TargetLanguage_ - The language code to which you want to translate, such as "en" for English.  See the [**Language** function](./function-language.md) for more details.<br>
+- _Text_ - Required. The text to translate.
+- _TargetLanguage_ - The language tag to translate into such as "fr" for French.  See the [**Language** function](./function-language.md) for more details.
 - For Canvas apps, the return value is in the _TranslatedText_ column.
 
 ## Examples
@@ -121,19 +121,22 @@ To setup the following examples:
 
 ### AIClassify
 
-1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
-   Set( Result, Environment.AIClassify( {Text:Subject, Entity: ["Location", "Food"]} ).Classification )
+   Set( Result, Environment.AIClassify( {Text:Subject, Categories: ["Housing", "Food"]} ).Classification )
    ```
    For all other products, use this formula:
    ```powerapps-dot
-   Set( Result, AIClassify( Subject, ["Location", "Food"] ) )
+   Set( Result, AIClassify( Subject, ["Housing", "Food"] ) )
    ```
-1. Press the button.  The **Text** control will display the result.
+1. Press the button.  The **Text** control displays the result:
+   ```
+   Food
+   ```
 
 ### AIExtract
 
-1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
    Set( Result, Environment.AIExtract( {Text:Subject, Entity: "State"} ).ExtractedText )
    ```
@@ -141,11 +144,11 @@ To setup the following examples:
    ```powerapps-dot
    Set( Result, AIExtract( Subject, "State" ) )
    ```
-1. Press the button.  The **Text** control will display the result.
+1. Press the button.  The **Text** control displays the result.
 
 ### AIReply
 
-1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
    Set( Result, Environment.AIReply( {Text:Subject} ).PreparedResponse )
    ```
@@ -153,7 +156,7 @@ To setup the following examples:
    ```powerapps-dot
    Set( Result, AIReply( Subject ) )
    ```
-1. Press the button.  The **Text** control will display the result similar to:
+1. Press the button.  The **Text** control displays a result similar to:
    ```
    Washington state is indeed a culinary delight, offering a diverse range of food experiences for both residents and tourists.
    From fresh seafood to farm-to-table produce, ethnic specialties to gourmet treats, there is something to please every palate in Washington.
@@ -164,7 +167,7 @@ To setup the following examples:
 
 ### AISummarize
 
-1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
    Set( Result, Environment.AISummarize( {Text:Subject} ).SummarizedText )
    ```
@@ -172,7 +175,7 @@ To setup the following examples:
    ```powerapps-dot
    Set( Result, AISummarize( Subject ) )
    ```
-1. Press the button.  The **Text** control will display the result similar to:
+1. Press the button.  The **Text** control displays a result similar to:
    ```
    Washington state is known for its diverse food experiences, catering to both locals and visitors.
    From fresh seafood to farm-to-table produce, ethnic specialties, and gourmet treats, there is something to
@@ -182,7 +185,7 @@ To setup the following examples:
 
 ### AISentiment
 
-1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
    Set( Result, Environment.AISentiment( {Text:Subject} ).AnalyzedSentiment )
    ```
@@ -190,19 +193,26 @@ To setup the following examples:
    ```powerapps-dot
    Set( Result, AISentiment( Subject ) )
    ```
-1. Press the button.  The **Text** control will display the result:
+1. Press the button.  The **Text** control displays the result:
    ```
    Positive
    ```
 
 ### AITranslate
 
-1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
-   Set( Result, Environment.AITranslate( {Text:Subject} ).TranslatedText )
+   Set( Result, Environment.AITranslate( {Text:Subject, Language: "fr"} ).TranslatedText )
    ```
    For all other products, use this formula:
    ```powerapps-dot
-   Set( Result, AITranslate( Subject ) )
+   Set( Result, AITranslate( Subject, "fr" ) )
    ```
-1. Press the button.  The **Text** control will display the result.
+1. Press the button.  The **Text** control displays a result similar to:
+   ```
+   Washington est un État qui offre une variété d’expériences culinaires pour les habitants et les visiteurs. 
+   Que vous soyez à la recherche de fruits de mer frais, de produits de la ferme à la table, de spécialités ethniques ou de friandises gastronomiques, 
+   vous trouverez de quoi satisfaire vos papilles à Washington. Washington est célèbre pour ses fruits de mer, 
+   en particulier le saumon, les huîtres, le crabe et les palourdes. L’État possède un long littoral et de nombreuses rivières et lacs 
+   qui fournissent des fruits de mer abondants et de haute qualité.
+   ```
