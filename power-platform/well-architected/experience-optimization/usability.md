@@ -23,11 +23,14 @@ This guide describes the recommendations for improving usability in user interfa
 Usability is a quality attribute that assesses how easy user interfaces are to use. The word "usability" also refers to methods for improving ease-of-use during the design process.
 
 Usability is defined by 5 quality components:
-1. _Learnability:_ How easy tasks can be attained during the first usage and how quickly users learn from the previous experience?
-1. _Efficiency:_ Once users have learned the design, how quickly can they perform tasks?
-1. _Memorability:_ When users return to the design after a period of not using it, how easily can they reestablish proficiency?
-1. _Errors:_ How many errors do users make, how severe are these errors, and how easily can they recover from the errors?
-1. _Satisfaction:_ How pleasant is it to use the design?
+
+| Component | Description |
+| --------- | ----------- |
+| Learnability | How easy tasks can be attained during the first usage and how quickly users learn from the previous experience? |
+| Efficiency | Once users have learned the design, how quickly can they perform tasks? |
+| Memorability | When users return to the design after a period of not using it, how easily can they reestablish proficiency? |
+| Errors | How many errors do users make, how severe are these errors, and how easily can they recover from the errors? |
+| Satisfaction | How pleasant is it to use the design? |
 
 Consider these strategies for ensuring usability for your workload:
 
@@ -35,65 +38,85 @@ Consider these strategies for ensuring usability for your workload:
 
 The system should always keep users informed about what is going on, through appropriate feedback within a reasonable time.
 
-![Alt](./media/usability/h1.svg)
+Use progress indicators or loading animations to reassure users that their request is being processed. This helps prevent frustration from uncertainty and manages expectations, otherwise users may perceive the system as slow or unresponsive and abandon the task.
+
+Provide real-time updates to keep users engaged and informed about the outcome of their actions. This prevents confusion or doubt about whether an action was successful or not, potentially resulting in errors or repetitive actions. Utilize status messages or notifications to clearly communicate successful actions or errors. Any important information that is overlooked could result in errors or misunderstandings down the line.
+
+Maintain consistency in design to ensure users can easily recognize and understand status indicators, reducing cognitive load and improving usability. If repeatable experience patterns appear differnt, users will struggle to interpret the meaning of the variation introduced, leading to inefficiencies in understanding and task completion. Using the matching suite of controls (e.g., all modern controls or all legacy) helps ensure visual elements are consistent. Utilize component libraries or Power Apps component framework to ensure consistency for more complex or composite repeatable experience patterns.
+
+Prioritize clear, focused status updates for users to more easily comprehend information at a glance. This reduces cognitive effort and minimizes risk of misinterpretation, frustration, or disengagement.
+
+Incorporate color-coded indicators on different states for quick recognition and understanding of system status. Color is processed faster than text due to its direct neural pathway and evolutionary significance, while also providing an ability to evoke emotional associations, further enhancing user's ability to comprehend information quickly and intuitively. Reading text requires cognitive processing involving language comprehension and interpretation, a much longer neural pathway which takes more time and effort compared to the immediate recognition of colors.
+
+Offer contextual help or guidance to help users resolve issues or understand delays. This facilitates the correct follow-up action required by the user, who may struggle to overcome obstacles or comprehend complex tasks if they're only being presented a problem. Propose a clear solution and provide inbuilt functionality to optimize the time to the resolution. 
+
+Allow users to track progress of ongoing tasks to enhance transparency and empower users to manage their time effectively.
+
+Prioritize accessibility in system status design as these are the more critical elements of the experience to understand.
+
+![Make the system status visible](./media/h1.svg)
 
 ### Match between system and the real world
 
 The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.
 
-![Alt](./media/usability/h2.svg)
+![Match the system to the real world](./media/h2.svg)
 
 ### User control and freedom
 
 Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo.
 
-![Alt](./media/usability/h3.svg)
+![Give users control and freedom](./media/h3.svg)
 
 ### Consistency and standards
 
 Users should not have to wonder whether different words, situations, or actions mean the same thing.
 
-![Alt](./media/usability/h4.svg)
+![Implement consistant standards](./media/h4.svg)
 
 ### Error prevention
 
 Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.
 
-![Alt](./media/usability/h5.svg)
+![Design ways to prevent errors](./media/h5.svg)
 
 ### Recognition rather than recall
 
 Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.
 
-![Alt](./media/usability/h6.svg)
+![Offer recognition patterns instead of asking users to recall](./media/h6.svg)
 
 ### Flexibility and efficiency of use
 
 Accelerators — unseen by the novice user — may often speed up the interaction for the expert user such that the system can cater to both inexperienced and experienced users. Allow users to tailor frequent actions.
 
-![Alt](./media/usability/h7.svg)
+![Offer flexibility for different user skills](./media/h7.svg)
 
 ### Aesthetic and minimalist design
 
 Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.
 
-![Alt](./media/usability/h8.svg)
+![Apply simplicity in design](./media/h8.svg)
 
 ### Help users recognize, diagnose, and recover from errors 
 
 Error messages should be expressed in plain language (no code), precisely indicate the problem, and constructively suggest a solution.
 
-![Alt](./media/usability/h9.svg)
+![Help users recover from errors](./media/h9.svg)
 
 ### Help and documentation
 
 Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search for, focused on the user's task, list concrete steps to be carried out, and not be too large.
 
-![Alt](./media/usability/h10.svg)
+![Provide help resources](./media/h10.svg)
 
 ## Power Platform facilitation
 
-Although some interaction implementation has been encapsulated into the modern components themselves, these rules should also be considered on the scope of the screen layout or overall application flow.
+For canvas, although many interactions are built into Power Apps modern components themselves, these rules should also be considered on the scope of the screen layout or overall application flow. 
+
+- Progress indication can be implemented using the modern controls with loading patterns described in guidance: [Progress bar control](), [Progress bar guidance](), [Spinner control](), [Spinner guidance]()
+
+For model driven apps, even more usability is built into the interface, so focus the usability heuristics on the parts of the experience you choose to configure.
 
 ## Related links
 
