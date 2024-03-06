@@ -16,7 +16,7 @@ ms.topic: conceptual
 |[SE:02](checklist.md)|Establish a security baseline that's aligned to compliance requirements, industry standards, and platform recommendations. Regularly measure your workload architecture and operations against the baseline to sustain or improve your security posture over time.|
 |---|---|
 
-A comprehensive analysis to identify threats, attacks, vulnerabilities, and counter measures is crucial during the design phase of a workload. _Threat modeling_ is an engineering exercise that includes defining security requirements, identifying, and mitigating threats, and validating those mitigations. You can use this technique at any stage of application development or production, but it's most effective during the design stages of new functionality.
+A comprehensive analysis to identify threats, attacks, vulnerabilities, and counter measures is crucial during the design phase of a workload. Threat modeling is an engineering exercise that includes defining security requirements, identifying, and mitigating threats, and validating those mitigations. You can use this technique at any stage of application development or production, but it's most effective during the design stages of new functionality.
 
 This guide describes the recommendations for doing threat modeling so that you can identify security gaps quickly and design your security defenses.
 
@@ -32,13 +32,12 @@ This guide describes the recommendations for doing threat modeling so that you c
 
 Threat modeling is a crucial process that an organization should integrate into its SDLC. Threat modeling is not solely a developer's task. It's a shared responsibility between:
 
-The workload team, which is responsible for the technical aspects of the system.
-
-Business stakeholders, who understand the business outcomes and have a vested interest in security.
+- The workload team, which is responsible for the technical aspects of the system.
+- Business stakeholders, who understand the business outcomes and have a vested interest in security.
 
 There's often a disconnect between organizational leadership and technical teams regarding business requirements for critical workloads. This disconnect can lead to unwanted outcomes, particularly for security investments.
 
-When the workload team is doing a threat modeling exercise, it should consider both business and technical requirements. The workload team and business stakeholders must agree on security-specific needs of the workload so that they can make adequate investments in the countermeasures.
+Consider both business and technical requirements when doing the threat modeling exercise. The workload team and business stakeholders must agree on security-specific needs of the workload so that they can make adequate investments in the countermeasures.
 
 The security requirements serve as guide for the entire process of threat modeling. To make it an effective exercise, the workload team should have a security mindset and be trained in threat modeling tools.
 
@@ -48,7 +47,7 @@ A clear understanding of the scope is crucial for effective threat modeling. It 
 
 ### Gather information about each component
 
-A workload architecture diagram is a starting point for gathering information because it provides a visual representation of the system. The diagram highlights technical dimensions of the system. For example, it shows user flows, how data moves through the network, data sensitivity levels and information types, and identity access paths.
+A workload architecture diagram is a starting point for gathering information because it provides a visual representation of the system. The diagram highlights technical dimensions of the system. For example, it shows user flows, how data moves through different parts of the workload, data sensitivity levels and information types, and identity access paths.
 
 This detailed analysis can often provide insight into potential vulnerabilities in the design. It's important to understand the functionality of each component and its dependencies.
 
@@ -105,19 +104,17 @@ Learn more: [OWASP top 10 risks: Mitigations in Power Platform](/power-platform/
 
 ## Example
 
-This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](/azure/well-architected/security/establish-baseline). This approach provides a broad understanding of the threat landscape across different IT scenarios.
+This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](establish-baseline.md). This approach provides a broad understanding of the threat landscape across different IT scenarios.
 
 **Development Lifecycle personas**. There are many personas involved in a development life cycle, including developers, testers, final users, and administrators. All of them may be compromised and put your environment at risk through vulnerabilities or threats created intentionally.
 
 **Potential attackers**. Attackers consider a wide range of tools available easily to be used at any time to explore your vulnerabilities and start an attack.
 
-**Security controls**. As part of threat analysis, identify Azure security services to be used to protect your solution and how effective those solutions are.
+**Security controls**. As part of threat analysis, identify Microsoft, Azure and Power Platform security services to be used to protect your solution and how effective those solutions are.
 
-**Log collection**. Logs from Azure resources and some on-premises components may be sent to Azure Log Analytics so you may understand the behavior of your solution developed and try to capture initial vulnerabilities.
+**Log collection**. Logs from Power Platform resources and other components included in your workload, such as Azure resources and on-premise components, may be sent to Application Insights or Microsoft Purview so you may understand the behavior of your solution developed and try to capture initial vulnerabilities.
 
 **Security information event management (SIEM) solution**. Microsoft Sentinel may be added even in an early stage of the solution so you can build some analytics queries to mitigate threats and vulnerabilities, anticipating your security environment when you are in production.
-
-**Microsoft Defender for Cloud** might make some security recommendations to improve the security posture.
 
 ## Related links
 
@@ -130,4 +127,3 @@ This example builds on the Information Technology (IT) environment established i
 - [Content Security Policy](/power-platform/admin/content-security-policy)
 - [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-standard-features)
 - [Intune's compliance policy settings](/mem/intune/protect/device-compliance-get-started)
-
