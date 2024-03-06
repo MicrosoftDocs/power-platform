@@ -70,36 +70,37 @@ Here's an example:
    The given text is a sequence of even numbers from 2 to 20, increasing by 2 each time.
    ```
 
-We are working to add a simplified way to work with these functions from Canvas apps and consistent with other Power Fx hosts.
+> [!NOTE]
+> In time we will add the same function signatures that other Power Fx hosts enjoy to Canvas. Even when added, it will augment and not replace the current mechanism; apps using the current mechanism will continue to work without modification.
 
 ## Syntax
 
 **AIClassify**( _Text_, _Categories_ )
 - _Text_ - Required. A text sentences. The text to classify.
-- _Categories_ - Required. Table of categories.<br>
-For Canvas apps, the return value is in the _Classification_ column.
+- _Categories_ - Required. Table of categories.
+- For Canvas apps, the return value is in the _Classification_ column.
 
 **AIExtract**( _Text_, _Entity_ )
 - _Text_ - Required. A text sentences. The text from which to extract the data.
 - _Entity_ - Required. The entity to extract. The name of entity to extract.<br>
-For Canvas apps, the return value is in the _ExtractedData_ column, a table of zero or more rows of data matching the provided entity.
+- For Canvas apps, the return value is in the _ExtractedData_ column, a table of zero or more rows of data matching the provided entity.
 
 **AIReply**( _Text_ )
 - _Text_ - Required. A text sentence. The text to respond to.<br>
-For Canvas apps, the return value is in the _PreparedResponse_ column. 
+- For Canvas apps, the return value is in the _PreparedResponse_ column. 
 
 **AISentiment**( _Text_ )
 - _Text_ - Required. The text to analyze for sentiment.<br>
-For Canvas apps, the return value is in the _AnalyzedSentiment_ column and is "Positive", "Neutral", or "Negative". 
+- For Canvas apps, the return value is in the _AnalyzedSentiment_ column and is "Positive", "Neutral", or "Negative". 
 
 **AISummarize**( _Text_ )
 - _Text_ - Required. The text to summarize.<br>
-For Canvas apps, the return value is in the _SummarizedText_ column.
+- For Canvas apps, the return value is in the _SummarizedText_ column.
 
 **AITranslate**(_Text_, _TargetLanguage_)
 - _Text_ - Required. The text to translate.<br>
 - _TargetLanguage_ - The language code to which you want to translate, such as "en" for English.  See the [**Language** function](./function-language.md) for more details.<br>
-For Canvas apps, the return value is in the _TranslatedText_ column.
+- For Canvas apps, the return value is in the _TranslatedText_ column.
 
 ## Examples
 
