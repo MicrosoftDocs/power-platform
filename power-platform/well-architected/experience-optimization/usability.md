@@ -42,13 +42,7 @@ Use progress indicators or loading animations to reassure users that their reque
 
 Provide real-time updates to keep users engaged and informed about the outcome of their actions. This prevents confusion or doubt about whether an action was successful or not, potentially resulting in errors or repetitive actions. Utilize status messages or notifications to clearly communicate successful actions or errors. Any important information that is overlooked could result in errors or misunderstandings down the line.
 
-Maintain consistency in design to ensure users can easily recognize and understand status indicators, reducing cognitive load and improving usability. If repeatable experience patterns appear differnt, users will struggle to interpret the meaning of the variation introduced, leading to inefficiencies in understanding and task completion. Using the matching suite of controls (e.g., all modern controls or all legacy) helps ensure visual elements are consistent. Utilize component libraries or Power Apps component framework to ensure consistency for more complex or composite repeatable experience patterns.
-
-Prioritize clear, focused status updates for users to more easily comprehend information at a glance. This reduces cognitive effort and minimizes risk of misinterpretation, frustration, or disengagement.
-
 Incorporate color-coded indicators on different states for quick recognition and understanding of system status. Color is processed faster than text due to its direct neural pathway and evolutionary significance, while also providing an ability to evoke emotional associations, further enhancing user's ability to comprehend information quickly and intuitively. Reading text requires cognitive processing involving language comprehension and interpretation, a much longer neural pathway which takes more time and effort compared to the immediate recognition of colors.
-
-Offer contextual help or guidance to help users resolve issues or understand delays. This facilitates the correct follow-up action required by the user, who may struggle to overcome obstacles or comprehend complex tasks if they're only being presented a problem. Propose a clear solution and provide inbuilt functionality to optimize the time to the resolution. 
 
 Allow users to track progress of ongoing tasks to enhance transparency and empower users to manage their time effectively.
 
@@ -70,7 +64,9 @@ Users often choose system functions by mistake and will need a clearly marked "e
 
 ### Consistency and standards
 
-Users should not have to wonder whether different words, situations, or actions mean the same thing.
+Maintain consistency in design to ensure users can easily recognize and understand status indicators, reducing cognitive load and improving usability. Users should not have to wonder whether different words, situations, or actions mean the same thing. 
+
+If repeatable experience patterns appear differnt, users will struggle to interpret the meaning of the variation introduced, leading to inefficiencies in understanding and task completion. Using the matching suite of controls (e.g., all modern controls or all legacy) helps ensure visual elements are consistent. Utilize component libraries or Power Apps component framework to ensure consistency for more complex or composite repeatable experience patterns.
 
 ![Implement consistant standards](./media/usability/h4.svg)
 
@@ -94,6 +90,8 @@ Accelerators — unseen by the novice user — may often speed up the interactio
 
 ### Aesthetic and minimalist design
 
+Prioritize clear, focused status updates for users to more easily comprehend information at a glance. This reduces cognitive effort and minimizes risk of misinterpretation, frustration, or disengagement.
+
 Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.
 
 ![Apply simplicity in design](./media/usability/h8.svg)
@@ -101,6 +99,8 @@ Dialogues should not contain information which is irrelevant or rarely needed. E
 ### Help users recognize, diagnose, and recover from errors 
 
 Error messages should be expressed in plain language (no code), precisely indicate the problem, and constructively suggest a solution.
+
+Offer contextual help or guidance to help users resolve issues or understand delays. This facilitates the correct follow-up action required by the user, who may struggle to overcome certain obstacles or comprehend complex tasks if they're only being presented a problem. Propose a clear solution and provide inbuilt functionality to optimize the time to the resolution. 
 
 ![Help users recover from errors](./media/usability/h9.svg)
 
