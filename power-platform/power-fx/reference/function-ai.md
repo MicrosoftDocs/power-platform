@@ -15,14 +15,13 @@ contributors:
   - mduelae
 ---
 
-# AI functions - AIClassify, AIExtract, AIReply, AISentiment, AISummarize, and AITranslate
+# AIClassify, AIExtract, AIReply, AISentiment, AISummarize, and AITranslate
 
-Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows 
-
+Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps 
 
 ## Description
 
-Dataverse provides variety of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with canvas apps, AI Builder, Power Automate, and low-code plugins so can easily integrate them into your solutions.
+Dataverse provides a variety of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with Canvas apps, AI Builder, and low-code plugins so can easily integrate them into your solutions.
 
 - **AIClassify** classifies text into one or more from the provided category. For example, the following list of categories can be used to classify issues submitted by your customers:
 
@@ -39,113 +38,108 @@ Dataverse provides variety of ready-to-use AI functions that are preconfigured a
 
     For more information about languages supported for the source and target language, see [Translator language support—Translation](/azure/ai-services/translator/language-support) and review the list of supported languages under the **Auto Language Detection** column. 
 
-
 Learn more about how to use AI functions in the following video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1iGPI]
 
-## Call Dataverse AI functions in canvas apps
+## Use in Canvas apps
 
-You can call these [AI functions](/power-apps/maker/canvas-apps/working-with-formulas#use-power-fx-formula-bar) in canvas apps. These AI functions are in the **Environment** data source.
+You can call these functions from canvas apps. However, it is a little more complicated than described for other Power Fx hosts:
+1. You will need to add the **Environment** data source.
+1. The functions will be methods on the **Environment**.  Where this documentation will say to call **AISummarize( ... )**, you will need to use **Environment.AISummarize( ... )**.
+1. Arguments to the function must be named columns of a record to be passed as input.  The names of the columns are given in the Syntax section.
+1. The return value from the function will likewise always be a record, even if it only contains one column.  The name of the column is listed in the Syntax section.
+1. These functions are behavior functions and cannot be used in Canvas app data flow.  Use a **Set** function to place the result in a global variable, and then use that value throughout your app.
+
+Here's an example:
 
 1. Open a canvas app for editing in [Power Apps Studio](/power-apps/maker/canvas-apps/power-apps-studio).
-2. On the command bar, select **Add data** and then select an enviroment data source.
-3. On the command bar, select **Insert** > **Button**.
-4. In formula bar, enter the following function as shown in the screenshot:
+1. From the Data pane, select **Add data** and then add the **Enviroment** data source.
+1. From the Insert pane, add a **Button** control.
+1. In the formula bar, select the **OnSelect** property and enter the following formula:
+  ```powerapps-dot
+  Set( Summary, Environment.AISummarize( {Text: "2, 4, 6, 8, 10, 12, 14, 16, 18, 20"} ).SummarizedText )
+  ```
+1. From the Insert pane, add a **Text** control.
+1. In the formula bar, select the **Text** property and enter the following formula:
+   ```powerapps-dot
+   Summary
+   ```
+1. The text box will display an AI generated summary, which could be "The given text is a sequence of even numbers from 2 to 20, increasing by 2 each time."
 
-:::image type="content" source="media/function-ai/sample-ai-function.png" alt-text="Sample AI function":::
-
+We are working to simplify the model for Canvas apps and make the experience consistent with other Power Fx hosts.
 
 ## Syntax
 
-**AIClassify input**
-
 **AIClassify**(_Text_, _Categories_)
-
 - _Text_ - Required. A text sentences. The text to classify.
 - _Categories_ - Required. Table of categories.
+For Canvas apps, the return value is in the _Classification_ column.
 
-**AIClassify output**
-
-(_Classification_)
-
-- _Classification_ - Name of selected category.
-
-**AIExtract input**
-
-**AIExtract**(_Text_,_Entity_)
-
+**AIExtract**(_Text_, _Entity_)
 - _Text_ - Required. A text sentences. The text from which to extract the data.
--  _Entity_ - Required. The entity to extract. The name of entity to extract.
-
-**AIExtract Output**
-
-(_ExtractedData_)
-
-- _ExtractedData_ - Table of zero or more rows of data matching the provided entity. The extracted data that matched the type of entity provided.
-
-**AIReply input**
+- _Entity_ - Required. The entity to extract. The name of entity to extract.
+For Canvas apps, the return value is in the _ExtractedData_ column, a table of zero or more rows of data matching the provided entity.
 
 **AIReply**(_Text_)
-
-- _Text_ - Required. A text sentence. The text to respond.
-
-**AIReply output**
-
-(_PreparedResponse_)
-
-- _PreparedResponse_ - A text sentence. The draft message in response to the provided input text.
-
-**AISentiment input**
+- _Text_ - Required. A text sentence. The text to respond to.
+For Canvas apps, the return value is in the _PreparedResponse_ column. 
 
 **AISentiment**(_Text_)
-
 - _Text_ - Required. A text sentence. The text to analyze.
-
-**AISentiment output**
-
-(_AnalyzedSentiment_)
-
-- _AnalyzedSentiment_ - Positive, neutral, or negatived. The overall sentiment of the analyzed text. 
-
-**AISummarize input**
+For Canvas apps, the return value is in the _AnalyzedSentiment_ column and is "Positive", "Neutral", or "Negative". 
 
 **AISummarize**(_Text_)
-
 - _Text_ - Required. A text sentence. The text to summarize.
+For Canvas apps, the return value is in the _SummarizedText_ column.
 
-**AISummarize output**
-
-(_SummarizedText_)
-
-- _SummarizedText_ - Required. A text sentence. The summarized version of the input text
-
-**AITranslate input**
-
-**AITranslate**(_Text_,_TargetLanguage_)
-
+**AITranslate**(_Text_, _TargetLanguage_)
 - _Text_ - Required. A text sentence. The text to translate.
-- _TargetLanguage_ - The language code to which you want to translate, such as **en** for English.
-
-**AITranslate output**
-
-(_TranslatedText_)
-
-- _TranslatedText_ - The translated text.
-
+- _TargetLanguage_ - The language code to which you want to translate, such as "en" for English.  See the [**Language** function](./function-language.md) for more details.
+For Canvas apps, the return value is in the _TranslatedText_ column.
 
 ## Examples
 
+### AIClassify
 
-**AIClassify**: ```Environment.AIClassify({Text:"Insert text here", Categories:\["Category1", "Category2"\]}).Classification```
+```powerapps-dot
+AIClassify( "Insert text here", ["Category1", "Category2"] )
+```
 
-**AIExtract**: ```Environment.AIExtract({Text:"Insert text here", Entity:"Insert entity here"}).ExtractedData```
+Canavs apps:
+```powerapps-dot
+Environment.AIClassify( {Text:"Insert text here", Categories:["Category1", "Category2"]} ).Classification
+```
 
-**AIReply**: ```Environment.AIReply({Text:"Insert text here"}).PreparedResponse```
+### AIExtract
 
-**AISummarize**: ```Environment.AISummarize({Text:"Insert text here"}).SummarizedText```
+```powerapps-dot
+AIExtract( "Insert text here", ... )
+```
 
-**AISentiment**: ```Environment.AISentiment({Text:"Insert text here"}).AnalyzedSentiment```
+Canavs apps:
+```powerapps-dot
+Environment.AIExtract({Text:"Insert text here", Entity:"Insert entity here"}).ExtractedData
+```
 
-**AITranslate**: ```Set(varResult1, Environment.AITranslate({Text:TextInput1.Text}).TranslatedText)```
+### AIReply
 
+```powerapps-dot
+Environment.AIReply({Text:"Insert text here"}).PreparedResponse
+```
+
+### AISummarize
+
+```powerapps-dot
+Environment.AISummarize({Text:"Insert text here"}).SummarizedText
+```
+
+### AISentiment
+```powerapps-dot
+Environment.AISentiment({Text:"Insert text here"}).AnalyzedSentiment
+```
+
+### AITranslate
+```powerapps-dot
+Environment.AITranslate({Text:TextInput1.Text}).TranslatedText
+```
