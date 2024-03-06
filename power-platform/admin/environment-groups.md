@@ -68,7 +68,7 @@ You can configure the _sharing limits_ rule. Since the environment group is inte
 
 ## Route environments to your environment group
 
-With your environment group set up, it can now serve as the home for all new personal developer environments that are created by _default environment routing_. This deafult ensures that all newly created developer environments are automatically preconfigured to meet baseline requirements from the start.
+With your environment group setup, it can now serve as the home for all new personal developer environments that are created by _default environment routing_. This default ensures that all newly created developer environments are automatically preconfigured to meet baseline requirements from the start.
 
 ### Select an environment group
 
@@ -98,7 +98,7 @@ You can manually create environments into the _Personal Productivity_ group.
 
 ## Remove an environment from your environment group
 
-You can remove an environment from a group if it needs unique governance or if it's created there by accident.
+You can remove an environment from a group if it needs unique governance or if you created it by accident.
 
 1. Select the _Personal Productivity_ group.
 2. Select the environment you wish to remove.

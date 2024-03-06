@@ -55,13 +55,13 @@ Default environment routing is a tenant-level, admin setting that:
 
 ## Enable the Default environment routing setting
 
-The **Default environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), [PowerShell](/powershell/) or [Power Platform CLI](../developer/cli/introduction.md).
+The **Default environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), [PowerShell](/powershell/), or [Power Platform CLI](../developer/cli/introduction.md).
 
 ### Before you begin
 
 Before you enable the **Default environment routing** feature, consider these effects:
 
-- This feature enables the automatic creation of a personal developer environment for all of your Power Apps new or existing makers when they go to [make.powerapps.com](https://make.powerapps.com) for the first time. Returning makers who revisit the site aren't impacted.
+- A personal developer environment is automatically created for all of your Power Apps new or existing makers when they go to [make.powerapps.com](https://make.powerapps.com) for the first time. Returning makers who revisit the site aren't impacted.
 
 - Makers are assigned the admin role in their newly created developer environments.
 
@@ -76,7 +76,7 @@ Before you enable the **Default environment routing** feature, consider these ef
 1. In the **Environment routing** pane, turn on the **Create personal developer environments for new makers** option.
 1. Select the desired user type to include in routing. The **All Makers** option routes all Power Apps makers into existing or new personal developer environments. The **New Makers** option routes new makers only.
 1. (Optional) Select an environment group, to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. For more information, see [Environments groups (preview)](environment-groups.md).
-1. (Optional) Admins can select a security group to limit routing only to the member makers of the configured security group. For more information, see [Configure security groups](/enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
+1. (Optional) Admins can select a security group to limit routing only to the member makers of the configured security group. For more information, see [Configure security groups](/enterprise-templates/finance/sap-procurement/administer/configure-security-groups).
 
 :::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where various Environment routing options in Tenant settings are located." lightbox="media/default-environment-routing/environment-routing.png":::
 
