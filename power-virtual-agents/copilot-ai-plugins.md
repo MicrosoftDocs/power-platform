@@ -40,7 +40,7 @@ The experience to create prompt plugins in Copilot Studio is the same as in Powe
 
 **To create prompt plugins:**
 
-1. Sign in to Copilot Studio and select **Plugins (preview)** on the side navigation pane.
+1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com) and select **Plugins (preview)** on the side navigation pane.
 1. Select **Add a Power Platform component as an AI plugin**.
 1. Select **Generate content or extract insights**.
 1. Enter a name for your prompt, and then use plain, conversational language to describe what you want to achieve, for example *Summarize this text as a paragraph with fewer than 50 words*. You can also use prebuilt templates to help identify what your prompt can do and how it could be worded.
@@ -58,7 +58,7 @@ Power Automate flow plugins let you define flows that can be called from AI surf
 
 **To create automation plugins:**
 
-1. Sign in to Copilot Studio and select **Plugins (preview)** on the side navigation pane.
+1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com) and select **Plugins (preview)** on the side navigation pane.
 1. Select **Add a Power Platform component as an AI plugin**.
 1. Select **Custom Automation**.
 1. The flow editor automatically opens with the **Run from Copilot** trigger and **Respond to Copilot** action present.
@@ -80,7 +80,7 @@ Connector plugins let you define connector actions that can be invoked from AI s
 
 **To create connector plugins:**
 
-1. Sign in to Copilot Studio and select **Plugins (preview)** on the side navigation pane.
+1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com) and select **Plugins (preview)** on the side navigation pane.
 1. Select **Add a Power Platform component as an AI plugin**.
 1. Select **Update or get answers about external data** to get started creating a plugin using a connector.
 1. The **Custom connector** editor page automatically opens. Here you can open your connector from the available list or create a new one.  
@@ -112,7 +112,7 @@ Users can create OpenAI plugins and use them to generate connectors to integrate
 
 **To create an OpenAI plugin:**
 
-1. Sign in to Copilot Studio and select **Plugins (preview)** on the side navigation pane.
+1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com) and select **Plugins (preview)** on the side navigation pane.
 1. Select **Add an OpenAI plugin**.
 1. Provide your manifest for the Open AI plugin. You can add a link to the location of the manifest file, or by manually selecting and uploading the manifest file from a local machine.  
    ![Create Openai Manifest](media/copilot-ai-plugins/create-openai-manifest.png)
