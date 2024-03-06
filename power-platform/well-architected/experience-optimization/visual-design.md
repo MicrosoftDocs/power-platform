@@ -16,11 +16,15 @@ ms.topic: conceptual
 |[EO:01](checklist.md)| **Maintain consistency in design elements such as color schemes, typography, and layout. Prioritize simplicity and clarity, avoiding unnecessary visual clutter or complexity. Strive for a clean, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
 |---|---|
 
-This guide describes the recommendations for universal visual design patterns that affect user perception and ultimately influence satisfaction. Visual elements in design serve as the foundational building blocks used to create compelling visual compositions. Understanding how these elements collectively influence user perception provides structured ways of arranging elements for an effective and appealing experience.
+This guide describes the recommendations for universal visual design patterns that affect user perception, which can significantly influence satisfaction and adoption of an application. Visual elements serve as foundational building blocks used to create experiences. Applying visual principals that align with how humans naturally perceive and process information provides structured methods to choose and arrange visual elements for an effective and appealing application.
 
 ## Key design strategies
 
-There has been a lot of research on human perception of visual design. Users don’t look at the visual elements in silos. Instead, they perceive them as relations to other elements and the context in which they are viewed. These relationships affect the user’s perception. They can attract attention to specific areas, evoke emotions, aid comprehension, enhance aesthetics, and reinforce brand identity. Thoughtful choices and arrangements of visual elements create engaging, memorable, and effective user experiences that resonate with their target audience.
+There has been a lot of research on human perception of visual design. Users don't look at the visual elements in silos. Instead, they perceive them as relations to other elements and the context in which they are viewed. These relationships affect the user's perception. They can attract attention to specific areas, evoke emotions, aid comprehension, enhance aesthetics, and reinforce brand identity. Thoughtful choices and arrangements of visual elements create engaging, memorable, and effective user experiences that resonate with their target audience.
+
+**The Aesthetic-Usability Effect**
+
+It takes about 50 milliseconds for users to form an opinion about an application. This first impression depends on many factors: structure, colors, spacing, symmetry, amount of text, fonts, and more. A positive first impression can increase overall satisfaction. Research has shown that users are more tolerant of minor usability issues when they find an interface visually appealing. Additionally, quality of design is an indicator of credibility.
 
 ### Balance and weight
 
@@ -174,10 +178,6 @@ Visual elements such as lines, contrast, spacing, etc. are used to inform users 
 
    :::column-end:::
 :::row-end:::
-
-### The Aesthetic-Usability Effect
-
-It takes about 50 milliseconds for users to form an opinion about an application. This first impression depends on many factors: structure, colors, spacing, symmetry, amount of text, fonts, and more. A positive first impression can increase overall satisfaction. Research has shown that users are more tolerant of minor usability issues when they find an interface visually appealing. Additionally, quality of design is an indicator of credibility.
 
 ## Power Platform facilitation
 
