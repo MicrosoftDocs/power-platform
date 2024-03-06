@@ -324,6 +324,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 ## U
 
+**[UniChar](reference/function-char.md)** – Translates a Unicode code into a string.
+
 **[Upper](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all uppercase.
 
 ## V

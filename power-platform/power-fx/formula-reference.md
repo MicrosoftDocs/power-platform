@@ -450,6 +450,8 @@ Other elements include:
 
 **[Ungroup](reference/function-groupby.md)** – Removes a grouping.
 
+**[UniChar](reference/function-char.md)** – Translates a Unicode code into a string.
+
 **[Unrelate](reference/function-relate-unrelate.md)** – Unrelates records of two tables from a one-to-many or many-to-many relationship.
 
 **[Update](reference/function-update-updateif.md)** – Replaces a record in a data source.
