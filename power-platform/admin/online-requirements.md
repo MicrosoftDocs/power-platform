@@ -4,7 +4,7 @@ description: Provides information about URLs and IP addresses to be added to the
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/25/2023
+ms.date: 03/06/2024
 ms.subservice: admin
 ms.author: sericks
 contributors:
@@ -58,7 +58,7 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | `https://urs.microsoft.com`  |  Required for Microsoft defender SmartScreen filtering.    |
 | https://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
-| https://*.api.powerplatform.com, https://\*.powerplatform.com, & powerplatformusercontent.com | Required for Power Platform API connectivity and used internally by Microsoft products and admin automation scenarios as described in [Programmability and extensibility overview](programmability-extensibility-overview.md). |
+| https://*.api.powerplatform.com, https://\*.powerplatform.com, and powerplatformusercontent.com | Required for Power Platform API connectivity and used internally by Microsoft products and admin automation scenarios as described in [Programmability and extensibility overview](programmability-extensibility-overview.md). |
 | https://mem.gfx.ms  | Me Control is a Microsoft feature that provides a consistent way for users to do core authentication functions like signing in, switching between accounts and more.    |
 | https://www.d365ccafpi.com |  d365ccafpi service exposes a controller endpoint for token change to achieve client side first party integration with external service from PCF control  |
 | https://api.admin.powerplatform.microsoft.com | Required to call Power Platform admin center service in public cloud.|
