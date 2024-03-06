@@ -55,7 +55,7 @@ A composition is balanced when all the elements are in optical equilibrium. Ofte
 
 Items that are closer together appear to be more related. When spacing elements ensure that there is a noticeable distinction in spacing between elements that should be more related versus less so.
 
-Group related elements that are functionally related or belong to the same category closely together. This proximity suggests to users that these elements are connected and share a relationship. For example, buttons that perform similar actions or options within a dropdown menu should be placed closer together to indicate their association. In a navigation bar, closely spaced menu items indicate a related set of options, while greater spacing between menu categories separates them visually.
+Group related elements that are functionally or belong to the same hierarchical category closely together. For example, buttons that perform similar actions or options within a dropdown menu should be placed closer together to indicate their association. In a navigation bar, closely spaced menu items indicate a related set of options, while greater spacing between menu categories separates them visually.
 
 Enhance readability in text-heavy interfaces by adjusting spacing between paragraphs, sentences, and words. Closer spacing between paragraphs or sentences indicates a logical connection or continuation of thought, while greater spacing denotes a transition or break in content. This helps users navigate and comprehend textual information more effectively.
 
