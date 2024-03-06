@@ -54,61 +54,61 @@ Allow users to track progress of ongoing tasks to enhance transparency and empow
 
 Prioritize accessibility in system status design as these are the more critical elements of the experience to understand.
 
-![Make the system status visible](./media/h1.svg)
+![Make the system status visible](./media/usability/h1.svg)
 
 ### Match between system and the real world
 
 The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.
 
-![Match the system to the real world](./media/h2.svg)
+![Match the system to the real world](./media/usability/h2.svg)
 
 ### User control and freedom
 
 Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo.
 
-![Give users control and freedom](./media/h3.svg)
+![Give users control and freedom](./media/usability/h3.svg)
 
 ### Consistency and standards
 
 Users should not have to wonder whether different words, situations, or actions mean the same thing.
 
-![Implement consistant standards](./media/h4.svg)
+![Implement consistant standards](./media/usability/h4.svg)
 
 ### Error prevention
 
 Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.
 
-![Design ways to prevent errors](./media/h5.svg)
+![Design ways to prevent errors](./media/usability/h5.svg)
 
 ### Recognition rather than recall
 
 Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.
 
-![Offer recognition patterns instead of asking users to recall](./media/h6.svg)
+![Offer recognition patterns instead of asking users to recall](./media/usability/h6.svg)
 
 ### Flexibility and efficiency of use
 
 Accelerators — unseen by the novice user — may often speed up the interaction for the expert user such that the system can cater to both inexperienced and experienced users. Allow users to tailor frequent actions.
 
-![Offer flexibility for different user skills](./media/h7.svg)
+![Offer flexibility for different user skills](./media/usability/h7.svg)
 
 ### Aesthetic and minimalist design
 
 Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.
 
-![Apply simplicity in design](./media/h8.svg)
+![Apply simplicity in design](./media/usability/h8.svg)
 
 ### Help users recognize, diagnose, and recover from errors 
 
 Error messages should be expressed in plain language (no code), precisely indicate the problem, and constructively suggest a solution.
 
-![Help users recover from errors](./media/h9.svg)
+![Help users recover from errors](./media/usability/h9.svg)
 
 ### Help and documentation
 
 Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search for, focused on the user's task, list concrete steps to be carried out, and not be too large.
 
-![Provide help resources](./media/h10.svg)
+![Provide help resources](./media/usability/h10.svg)
 
 ## Power Platform facilitation
 
