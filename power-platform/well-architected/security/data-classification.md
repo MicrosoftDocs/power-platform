@@ -28,7 +28,7 @@ This guide provides recommendations for classifying data based on its sensitivit
 
 ## Key design strategies
 
-Data classification helps you correctly size security assurances and helps the triage team expediate discovery during incident response. A prerequisite to the design process is to clearly understand whether data should be treated as confidential, restricted, public, or any other sensitivity classification. It's also essential to determine the locations where data is stored, because the data might be distributed across multiple environments. With knowledge of where the data is stored, you can design a strategy that serves the security requirements. 
+Data classification helps you correctly size security assurances and helps the triage team expediate discovery during incident response. A prerequisite to the design process is to clearly understand whether data should be treated as confidential, restricted, public, or any other sensitivity classification. It's also essential to determine the locations where data is stored, because the data might be distributed across multiple environments. With knowledge of where the data is stored, you can design a strategy that serves the security requirements.
 
 Classifying data can be a tedious task. You can use tools that can find data assets and recommend classifications. But don’t just depend on tools. Make sure your team members do the exercises carefully. Then use tools to automate when it makes sense.
 
@@ -72,9 +72,8 @@ Data classification applies to the system as a whole – take inventory of all d
 
 Consider how you will connect to data:
 
-New data: If your app is creating data that doesn't already exist anywhere, such as in situations where the existing business process was done using paper, we recommend storing the data either in Microsoft Dataverse
-
-Read/write from an existing system: This is a type of data where you need to retrieve the latest information from an existing database or system. In these cases, data needs to be requested at the time you need it. You can use virtual tables, connect to the data via connectors, dataflows or use an on premise gateway for on premise data. 
+- **New data**: If your workload is creating data that doesn't already exist anywhere, such as in situations where the existing business process was done using paper, we recommend storing the data in Microsoft Dataverse. You can then [connect and manage Microsoft Dataverse data through Microsoft Purview](/purview/register-scan-dataverse).
+- **Read/write from an existing system**: If your workload needs to connect to data that already exists, you need to design how to read and write to the existing database or system. You can use virtual tables, connect to the data via connectors, dataflows or use an on premise gateway for on premise data.
 
 #### Define your scope
 
@@ -96,9 +95,9 @@ There are many ways to apply taxonomy labels to the identified data. Using a cla
 
 Keep in mind that not all data can be clearly classified. Make an explicit decision about how the data that can't be classified should be represented in reporting.
 
-The actual implementation depends on the type of resources – data consumed by your Power Platform workload may originate from data sources outside of Power Platform. Your schema should include details on how data from different data sources moves through the systems or is potentially transferred from one data store to the other whilst maintaining classification integrity.
+The actual implementation depends on the type of resources – data consumed by your Power Platform workload may originate from data sources outside of Power Platform. Your schema should include details on how data from different data sources moves through the workload or is potentially transferred from one data store to the other whilst maintaining classification integrity.
 
-Certain Azure resources have built-in classification systems. For example, Azure SQL Server has a classification engine, supports dynamic masking, and can generate reports based on metadata. Microsoft Teams, Microsoft 365 groups, and SharePoint sites can have sensitivity labels applied at the container level. Microsoft Dataverse integrates with Microsoft Purview to apply data labels. 
+Certain Azure resources have built-in classification systems. For example, Azure SQL Server has a classification engine, supports dynamic masking, and can generate reports based on metadata. Microsoft Teams, Microsoft 365 groups, and SharePoint sites can have sensitivity labels applied at the container level. Microsoft Dataverse integrates with Microsoft Purview to apply data labels.
 
 When you design your implementation, evaluate the features supported by the platform and take advantage of them. Make sure metadata used for classification is isolated and stored separately from the data stores.
 
@@ -112,7 +111,7 @@ Ultimately, classification must roll up to the organization through central team
 
 ## Power Platform facilitation
 
-Classification should influence your architectural decisions. 
+Classification should influence your architectural decisions.
 
 Microsoft Purview provides visibility into data assets throughout your organization. For more information, see [What is Microsoft Purview?](/purview/purview)
 
@@ -120,39 +119,12 @@ Microsoft Purview Data Map will enable automated data discovery and sensitive da
 
 With this integration, you can:
 
-Create a holistic, up-to-date data map across Microsoft Dynamics 365, Microsoft Power Platform, and other sources supported by Microsoft Purview.
+- Create a holistic, up-to-date data map across Microsoft Dynamics 365, Microsoft Power Platform, and other sources supported by Microsoft Purview.
+- Automatically classify data assets based on built-in system classifications or user-defined custom classifications and it helps to identify and understand sensitive data.
+- Empower data consumers to discover valuable, trustworthy data.
+- Enable data curators and security administrators to manage and keep data estate secure, reduce data exposure, and better protect sensitive data.
 
-Automatically classify data assets based on built-in system classifications or user-defined custom classifications and it helps to identify and understand sensitive data.
-
-Empower data consumers to discover valuable, trustworthy data.
-
-Enable data curators and security administrators to manage and keep data estate secure, reduce data exposure, and better protect sensitive data.
-
-![Microsoft Purview configuration screen for Microsoft Dataverse tables](images/data-classification/image1.png)
-
-## Example
-
-This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](/azure/well-architected/security/establish-baseline). The example diagram below shows data stores where data is classified.
-
-Data stored on databases and disks should only be accessible to a few users, such as Administrators, Database administrators. Then, it's usual that common users or customers' final clients have access only to layers that are exposed to the internet, such as applications or jump boxes.
-
-Applications communicate with the databases or data stored on disks, such as object storage or file servers.
-
-In some cases, data might be stored in an on-premises environment and the public cloud. Both need to be classified consistently.
-
-In an operator use case, remote administrators need access jump boxes on the cloud or a virtual machine running the workload. Access permissions should be given as per the data classification labels.
-
-Data moves through the virtual machines to the backend databases and data should be treated with the same level of confidentiality throughout the traversal points.
-
-Workloads store data directly in virtual machine disks. Those disks are in scope for classification.
-
-In a hybrid environment, different personas may access workloads on-premises through different mechanisms to connect to different data storage technologies or databases. Access must be granted as per the classification labels.
-
-The on-premises servers connect to important data that need to be classified and protected such as file servers, object storage, and different types of databases, such as relational, no-SQL, and data warehouse.
-
-Microsoft Purview Compliance provides a solution to classify files and emails.
-
-Microsoft Defender for Cloud provides a solution that helps your company to track compliance in your environment, including many of your services used to store data, mentioned in these se cases above.
+Learn more: [Connect to and manage Microsoft Dataverse in Microsoft Purview](/purview/register-scan-dataverse)
 
 ## Organizational alignment
 
@@ -162,13 +134,6 @@ For more information, see [What is data classification? - Cloud Adoption Framewo
 
 ## Related links
 
-[Data classification and sensitivity label taxonomy - Microsoft Service Assurance](/compliance/assurance/assurance-data-classification-and-labels)
-
-[Create a well-designed data classification framework - Microsoft Service Assurance](/compliance/assurance/assurance-create-data-classification-framework)
-
-</purview/purview> 
-
-[Manage the encryption key - Power Platform | Microsoft Learn](/power-platform/admin/manage-encryption-key)
-
-[Connect to and manage Microsoft Dataverse in Microsoft Purview | Microsoft Learn](/purview/register-scan-dataverse?tabs=MI)
-
+- [Data classification and sensitivity label taxonomy - Microsoft Service Assurance](/compliance/assurance/assurance-data-classification-and-labels)
+- [Create a well-designed data classification framework - Microsoft Service Assurance](/compliance/assurance/assurance-create-data-classification-framework)
+- [Connect to and manage Microsoft Dataverse in Microsoft Purview | Microsoft Learn](/purview/register-scan-dataverse?tabs=MI)
