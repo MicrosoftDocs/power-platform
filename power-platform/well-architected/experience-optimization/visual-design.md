@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **Maintain consistency in design elements such as color schemes, typography, and layout. Prioritize simplicity and clarity, avoiding unnecessary visual clutter or complexity. Strive for a clean, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
+|[EO:01](checklist.md)| **Apply classic design principals to visual elements such as color schemes, typography, and layout. Strive for a focused, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
 |---|---|
 
 This guide describes the recommendations for universal visual design patterns that affect user perception, which can significantly influence satisfaction and adoption of an application. Visual elements serve as foundational building blocks used to create experiences. Applying visual principals that align with how humans naturally perceive and process information provides structured methods to choose and arrange visual elements for an effective and appealing application.
