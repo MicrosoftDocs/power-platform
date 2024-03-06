@@ -46,10 +46,10 @@ Learn more about how to use AI functions in the following video.
 
 You can call these functions from canvas apps. However, it is a little more complicated than described for other Power Fx hosts:
 1. You need to add the **Environment** data source.
-1. The AI functions are functions in the **Environment** namespace.  Where this documentation describes calling **AISummarize( ... )**, for example, you need to use **Environment.AISummarize( ... )**.
-1. Arguments to the function must be named columns in a record, passed as the only argument.  The names of the columns are given in the *Syntax* section matching the names of the parameters.
-1. The return value from these functions is always a record containing one column.  The name of the column is listed in the *Syntax* section.
-1. These functions are [behavior functions](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) and cannot be used in Canvas data flow, for example as the input to the **Text** property of a **Text** control.  Use the [**Set**](function-set) function to place the result in a global variable, and then use that value elsewhere in your app.
+1. The AI functions are functions in the **Environment** namespace. Where this documentation describes calling **AISummarize( ... )**, for example, you need to use **Environment.AISummarize( ... )**.
+1. Arguments to the function must be named columns in a record, passed as the only argument. The names of the columns are given in the *Syntax* section matching the names of the parameters.
+1. The return value from these functions is always a record containing one column. The name of the column is listed in the *Syntax* section.
+1. These functions are [behavior functions](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) and cannot be used in Canvas data flow, for example as the input to the **Text** property of a **Text** control. Use the [**Set**](function-set.md) function to place the result in a global variable, and then use that value elsewhere in your app.
 
 Here's an example:
 
@@ -81,7 +81,7 @@ Here's an example:
 - For Canvas apps, the return value is in the _Classification_ column.
 
 **AIExtract**( _Text_, _Entity_ )
-- _Text_ - Required. A text sentences. The text from which to extract the data.
+- _Text_ - Required. A text sentences. The text to extract the data from.
 - _Entity_ - Required. The entity to extract. The name of entity to extract.
 - For Canvas apps, the return value is in the _ExtractedData_ column, a table of zero or more rows of data matching the provided entity.
 
@@ -121,7 +121,7 @@ To setup the following examples:
 
 ### AIClassify
 
-1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
+1. In Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
    Set( Result, Environment.AIClassify( {Text:Subject, Categories: ["Housing", "Food"]} ).Classification )
    ```
@@ -129,14 +129,14 @@ To setup the following examples:
    ```powerapps-dot
    Set( Result, AIClassify( Subject, ["Housing", "Food"] ) )
    ```
-1. Press the button.  The **Text** control displays the result:
+1. Press the button. The **Text** control displays the result:
    ```
    Food
    ```
 
 ### AIExtract
 
-1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
+1. In Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
    Set( Result, Environment.AIExtract( {Text:Subject, Entity: "State"} ).ExtractedText )
    ```
@@ -144,11 +144,11 @@ To setup the following examples:
    ```powerapps-dot
    Set( Result, AIExtract( Subject, "State" ) )
    ```
-1. Press the button.  The **Text** control displays the result.
+1. Press the button. The **Text** control displays the result.
 
 ### AIReply
 
-1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
+1. In Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
    Set( Result, Environment.AIReply( {Text:Subject} ).PreparedResponse )
    ```
@@ -156,18 +156,20 @@ To setup the following examples:
    ```powerapps-dot
    Set( Result, AIReply( Subject ) )
    ```
-1. Press the button.  The **Text** control displays a result similar to:
+1. Press the button. The **Text** control displays a result similar to:
    ```
-   Washington state is indeed a culinary delight, offering a diverse range of food experiences for both residents and tourists.
-   From fresh seafood to farm-to-table produce, ethnic specialties to gourmet treats, there is something to please every palate in Washington.
-   The state is particularly renowned for its seafood, with salmon, oysters, crab, and clams being local favorites.
-   This is due to Washington's extensive coastline and numerous rivers and lakes, which provide an abundance of high-quality seafood.
-   If you have any specific questions or need recommendations for dining in Washington, feel free to ask!
+   Washington state is indeed a culinary delight, offering a diverse range of food experiences
+   for both residents and tourists. From fresh seafood to farm-to-table produce, ethnic specialties
+   to gourmet treats, there is something to please every palate in Washington. The state is
+   particularly renowned for its seafood, with salmon, oysters, crab, and clams being local favorites.
+   This is due to Washington's extensive coastline and numerous rivers and lakes, which provide an
+   abundance of high-quality seafood. If you have any specific questions or need recommendations
+   for dining in Washington, feel free to ask!
    ```
 
 ### AISummarize
 
-1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
+1. In Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
    Set( Result, Environment.AISummarize( {Text:Subject} ).SummarizedText )
    ```
@@ -175,17 +177,18 @@ To setup the following examples:
    ```powerapps-dot
    Set( Result, AISummarize( Subject ) )
    ```
-1. Press the button.  The **Text** control displays a result similar to:
+1. Press the button. The **Text** control displays a result similar to:
    ```
    Washington state is known for its diverse food experiences, catering to both locals and visitors.
-   From fresh seafood to farm-to-table produce, ethnic specialties, and gourmet treats, there is something to
-   please everyone's taste buds. Seafood, particularly salmon, oysters, crab, and clams, is a highlight in Washington.
-   With its extensive coastline, rivers, and lakes, the state offers an abundance of high-quality seafood options.
+   From fresh seafood to farm-to-table produce, ethnic specialties, and gourmet treats, there is
+   something to please everyone's taste buds. Seafood, particularly salmon, oysters, crab, and clams,
+   is a highlight in Washington. With its extensive coastline, rivers, and lakes, the state offers
+   an abundance of high-quality seafood options.
    ```
 
 ### AISentiment
 
-1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
+1. In Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
    Set( Result, Environment.AISentiment( {Text:Subject} ).AnalyzedSentiment )
    ```
@@ -193,14 +196,14 @@ To setup the following examples:
    ```powerapps-dot
    Set( Result, AISentiment( Subject ) )
    ```
-1. Press the button.  The **Text** control displays the result:
+1. Press the button. The **Text** control displays the result:
    ```
    Positive
    ```
 
 ### AITranslate
 
-1. If using Canvas apps, set the **OnSelect** property of the **Button** control to:
+1. In Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```powerapps-dot
    Set( Result, Environment.AITranslate( {Text:Subject, Language: "fr"} ).TranslatedText )
    ```
@@ -208,11 +211,12 @@ To setup the following examples:
    ```powerapps-dot
    Set( Result, AITranslate( Subject, "fr" ) )
    ```
-1. Press the button.  The **Text** control displays a result similar to:
+1. Press the button. The **Text** control displays a result similar to:
    ```
    Washington est un État qui offre une variété d’expériences culinaires pour les habitants et les visiteurs. 
-   Que vous soyez à la recherche de fruits de mer frais, de produits de la ferme à la table, de spécialités ethniques ou de friandises gastronomiques, 
-   vous trouverez de quoi satisfaire vos papilles à Washington. Washington est célèbre pour ses fruits de mer, 
-   en particulier le saumon, les huîtres, le crabe et les palourdes. L’État possède un long littoral et de nombreuses rivières et lacs 
+   Que vous soyez à la recherche de fruits de mer frais, de produits de la ferme à la table,
+   de spécialités ethniques ou de friandises gastronomiques, vous trouverez de quoi satisfaire vos
+   papilles à Washington. Washington est célèbre pour ses fruits de mer, en particulier le saumon, les huîtres,
+   le crabe et les palourdes. L’État possède un long littoral et de nombreuses rivières et lacs 
    qui fournissent des fruits de mer abondants et de haute qualité.
    ```
