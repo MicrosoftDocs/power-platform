@@ -354,7 +354,7 @@ These automatically created topics fall into two categories:
 
    The **Display name** tells the bot which topic the person is asking about.
 
-   The **Description** describes the purpose of the topic to yourself and other bot makers. This description isn't shown to users.
+   The **Description** describes the purpose of the topic for yourself and other bot makers. This description isn't shown to users.
 
     :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="Screenshot of the topic details pane showing Name, Display name, and Description." lightbox="media/authoring-create-edit-topics/details-pane.png":::
 
@@ -426,7 +426,7 @@ If voice-based capabilities are enabled for your bot, you see [more actions](con
 
 1. Enter the message you want the bot to say in the text box.
 
-    You can apply some basic formatting, such as bold, italics, and numbering. You can also [use variables](authoring-variables.md) that you define elsewhere in your bot conversation.
+    You can apply some basic formatting, such as bold, italics, ordered and unordered lists, and hyperlinks. You can also [use variables](authoring-variables.md) that you define elsewhere in your bot conversation.
 
 #### Redirect to another topic
 
@@ -554,7 +554,7 @@ If you want to redirect a topic, you can go to another topic.
 
 1. (Optional) [Save the user response in a variable](authoring-variables.md) to be used later.
 
-The conversation editor creates separate paths in the conversation depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each response. You can add nodes to create branching logic, and specify what the bot should respond with for each path or variable.
+The conversation editor creates separate paths in the conversation depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each response. You can add nodes to create branching logic, and specify what the bot should respond with for each path or value.
 
 #### Add a condition - Teams
 
@@ -578,7 +578,7 @@ A message can specify a response from your bot to the user.
 
 1. Select the "**+**" _Add node_ menu, then select **Show a message** to add a new **Message** node.
 
-1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, and numbering.
+1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, ordered and unordered lists, and hyperlinks.
 
    You can also [use variables that you defined elsewhere](authoring-variables.md) in your bot conversation.
 
