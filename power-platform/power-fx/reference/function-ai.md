@@ -23,7 +23,7 @@ Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: C
 
 Dataverse provides a variety of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with Canvas apps, AI Builder, and low-code plugins so can easily integrate them into your solutions.
 
-- **AIClassify** classifies text into one or more from the provided category. For example, the following list of categories can be used to classify issues submitted by your customers:
+- **AIClassify** classifies text into one or more provided categories. For example, the following list of categories can be used to classify issues submitted by your customers:
 
     - Problem
     - Billing
