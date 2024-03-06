@@ -4,7 +4,7 @@ description: Learn how to access your storage and view the data that's in your s
 author: MilindaV2
 ms.author: milindav
 ms.subservice: admin
-ms.topic: concept-article 
+ms.topic: conceptual
 ms.date: 02/08/2024
 ms.reviewer: matp
 search.audienceType: 
