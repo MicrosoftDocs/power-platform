@@ -69,7 +69,7 @@ In some instances, the copilot may be unable to determine the intent of a custom
 
 In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid-way into a conversation.
 
-When the copilotdetects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-system-topics.md?tabs=preview#escalate). This type of trigger is known as _implicit triggering_.
+When the copilot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-system-topics.md?tabs=preview#escalate). This type of trigger is known as _implicit triggering_.
 
 ### Explicit triggers
 
@@ -84,7 +84,7 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 
 **Add a "Transfer to agent" node into a topic:**
 
-1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the copilotyou want to edit.
+1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the copilot you want to edit.
 
 1. Open the authoring canvas for the topic you want to add the **Transfer conversation** node to.
 
