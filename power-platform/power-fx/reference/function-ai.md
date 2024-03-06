@@ -104,46 +104,105 @@ Here's an example:
 
 ## Examples
 
+To setup the following examples:
+1. In the Tree view, select the **App** object and add the following to the **Formulas** property:
+   ```powerapps-dot
+   Subject = "Washington is a state that offers a variety of food experiences for locals and visitors alike. 
+   Whether you are looking for fresh seafood, farm-to-table produce, ethnic specialties, or gourmet treats, 
+   you will find something to satisfy your taste buds in Washington. Washington is famous for its seafood, 
+   especially salmon, oysters, crab, and clams. The state has a long coastline and numerous rivers and lakes 
+   that provide abundant and high-quality seafood.";
+   ```
+1. Create a **Button** control.
+1. Create a **Text** control and set its **Text** property to:
+   ```powerapps-dot
+   Result
+   ```
+
 ### AIClassify
 
-```powerapps-dot
-AIClassify( "Insert text here", ["Category1", "Category2"] )
-```
-
-Canavs apps:
-```powerapps-dot
-Environment.AIClassify( {Text:"Insert text here", Categories:["Category1", "Category2"]} ).Classification
-```
+1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+   ```powerapps-dot
+   Set( Result, Environment.AIClassify( {Text:Subject, Entity: ["Location", "Food"]} ).Classification )
+   ```
+   For all other products, use this formula:
+   ```powerapps-dot
+   Set( Result, AIClassify( Subject, ["Location", "Food"] ) )
+   ```
+1. Press the button.  The **Text** control will display the result.
 
 ### AIExtract
 
-```powerapps-dot
-AIExtract( "Insert text here", ... )
-```
-
-Canavs apps:
-```powerapps-dot
-Environment.AIExtract({Text:"Insert text here", Entity:"Insert entity here"}).ExtractedData
-```
+1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+   ```powerapps-dot
+   Set( Result, Environment.AIExtract( {Text:Subject, Entity: "State"} ).ExtractedText )
+   ```
+   For all other products, use this formula:
+   ```powerapps-dot
+   Set( Result, AIExtract( Subject, "State" ) )
+   ```
+1. Press the button.  The **Text** control will display the result.
 
 ### AIReply
 
-```powerapps-dot
-Environment.AIReply({Text:"Insert text here"}).PreparedResponse
-```
+1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+   ```powerapps-dot
+   Set( Result, Environment.AIReply( {Text:Subject} ).PreparedResponse )
+   ```
+   For all other products, use this formula:
+   ```powerapps-dot
+   Set( Result, AIReply( Subject ) )
+   ```
+1. Press the button.  The **Text** control will display the result similar to:
+   ```
+   Washington state is indeed a culinary delight, offering a diverse range of food experiences for both residents and tourists.
+   From fresh seafood to farm-to-table produce, ethnic specialties to gourmet treats, there is something to please every palate in Washington.
+   The state is particularly renowned for its seafood, with salmon, oysters, crab, and clams being local favorites.
+   This is due to Washington's extensive coastline and numerous rivers and lakes, which provide an abundance of high-quality seafood.
+   If you have any specific questions or need recommendations for dining in Washington, feel free to ask!
+   ```
 
 ### AISummarize
 
-```powerapps-dot
-Environment.AISummarize({Text:"Insert text here"}).SummarizedText
-```
+1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+   ```powerapps-dot
+   Set( Result, Environment.AISummarize( {Text:Subject} ).SummarizedText )
+   ```
+   For all other products, use this formula:
+   ```powerapps-dot
+   Set( Result, AISummarize( Subject ) )
+   ```
+1. Press the button.  The **Text** control will display the result similar to:
+   ```
+   Washington state is known for its diverse food experiences, catering to both locals and visitors.
+   From fresh seafood to farm-to-table produce, ethnic specialties, and gourmet treats, there is something to
+   please everyone's taste buds. Seafood, particularly salmon, oysters, crab, and clams, is a highlight in Washington.
+   With its extensive coastline, rivers, and lakes, the state offers an abundance of high-quality seafood options.
+   ```
 
 ### AISentiment
-```powerapps-dot
-Environment.AISentiment({Text:"Insert text here"}).AnalyzedSentiment
-```
+
+1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+   ```powerapps-dot
+   Set( Result, Environment.AISentiment( {Text:Subject} ).AnalyzedSentiment )
+   ```
+   For all other products, use this formula:
+   ```powerapps-dot
+   Set( Result, AISentiment( Subject ) )
+   ```
+1. Press the button.  The **Text** control will display the result:
+   ```
+   Positive
+   ```
 
 ### AITranslate
-```powerapps-dot
-Environment.AITranslate({Text:TextInput1.Text}).TranslatedText
-```
+
+1. If on Canavs, set the **OnSelect** property of the **Button** control to:
+   ```powerapps-dot
+   Set( Result, Environment.AITranslate( {Text:Subject} ).TranslatedText )
+   ```
+   For all other products, use this formula:
+   ```powerapps-dot
+   Set( Result, AITranslate( Subject ) )
+   ```
+1. Press the button.  The **Text** control will display the result.
