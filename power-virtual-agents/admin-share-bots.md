@@ -219,7 +219,7 @@ Based on the content and target audience of the copilot, you may want to give tr
 > [!IMPORTANT]
 > Conversation transcript access is managed by environment security roles. After assigning the **Copilot transcript viewer** security role to a user, that user can access conversation transcripts for all copilots that they create or are shared with in the environment.  
 >
-> In the default environment, every user has the **Copilot transcript viewer** role assigned by default. We recommend you create an environment for copilots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your copilots](./environments-first-run-experience.md#create-a-new-environment-for-your-copilots)
+> In the default environment, only admins have the **Copilot transcript viewer** or **Bot transcript viewer** role assigned by default. We recommend you create an environment for copilots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your copilots](./environments-first-run-experience.md#create-a-new-environment-for-your-copilots)
 
 When [sharing the copilot for chat](#share-a-copilot-for-chat), you can assign the **Copilot transcript viewer** role by selecting the checkbox.
 

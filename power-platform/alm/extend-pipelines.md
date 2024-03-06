@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 09/28/2023
+ms.date: 02/23/2024
 ms.custom: 
 ---
 
@@ -20,7 +20,7 @@ Pipelines can be custom tailored to serve the unique needs of an organization. F
 ## Gated extensions available
 Pipelines deployments progress through multiple pre-defined steps until deployment completion. Gated extensions insert custom steps into the progression where custom business logic can be executed. It's like your own personal train where you're in control of where it stops and whether it continues or not.
 
-:::image type="content" source="media/pipelines-extensibility-train.png" alt-text="Extensibility diagram":::
+:::image type="content" source="media/pipelines-extensibility-train.png" alt-text="Extensibility train diagram":::
 
 When enabled, each extension inserts a custom step at a different point within a deployment’s progression. Extensions can be used alone or together. 
 
@@ -52,7 +52,7 @@ The tables below indicate triggers and actions required for each extension. Outp
 > [!NOTE]
 > OnDeploymentRequested triggers for all deployments.
 
-:::image type="content" source="media/extensibility-flow-diagram.png" alt-text="Extensibility diagram":::
+:::image type="content" source="media/extensibility-flow-diagram.png" alt-text="Deployment to first stage diagram":::
 
 ## Triggers
 
@@ -117,7 +117,13 @@ These parameters are exposed across the actions for the corresponding gated exte
 
 ## Samples
 
-Download and then import this unmanaged solution into your pipelines host environment. The download contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https://aka.ms/DownloadPipelinesExtensibilitySamples)
+Download and then import the desired managed solution(s) into your pipelines host environment. These samples can be customized to fit the unique needs of your organization.
+
+### Pipelines extensibility samples
+This download contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https://aka.ms/DownloadPipelinesExtensibilitySamples)
+
+### Delegated deployment samples
+This download contains sample cloud flows for managing approvals and sharing deployed canvas apps and flows within the target environment. [Download sample solution](https://aka.ms/DownloadDelegatedDeploymentSamples)
 
 ## Next steps
 
