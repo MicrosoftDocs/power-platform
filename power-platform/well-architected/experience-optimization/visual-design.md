@@ -30,6 +30,14 @@ It takes about 50 milliseconds for users to form an opinion about an application
 
 A composition is balanced when all the elements are in optical equilibrium. Oftentimes, the mathematical placement needs to be optically adjusted. Some of the elements that affect the visual weight are size, color, density, white space.
 
+- _Size_: Larger elements tend to carry more visual weight than smaller ones. To achieve balance, larger elements can be counterbalanced by grouping them with smaller elements or adjusting their placement within the layout.
+
+- _Color_: Bright or intense colors can attract more attention and appear heavier than muted or neutral colors. Balancing colors involves distributing them evenly throughout the interface or using complementary colors to create visual harmony.
+
+- _Density_: The density of elements refers to how tightly packed they are within a space. Balancing density involves ensuring that elements are distributed evenly across the interface to avoid overcrowding or sparse areas.
+
+- _White space_: Also known as negative space, refers to the empty areas between elements. Space helps create visual breathing room and can be used to balance the composition by providing contrast and emphasis to the elements.
+
 :::row:::
    :::column span="":::
       ![Alt text](./media/visual-design/balance-left.svg)
