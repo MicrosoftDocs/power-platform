@@ -78,6 +78,14 @@ Ensure there's a noticeable distinction in spacing between related and unrelated
 
 Elements that are arranged on a line or a curve are perceived to be more related than elements not on a line or a curve.
 
+Arrange interface elements, such as navigation menus or steps in a process, along a line or curve to imply a sequence or progression. This layout helps users perceive the relationship between elements and understand the logical flow of information or actions.
+
+Place related elements, such as checkbox or radio options, or items (e.g., bullet points) in a list, along a line to visually group them together. This arrangement suggests to users that these elements share a common purpose or belong to the same category, facilitating easier navigation and comprehension.
+
+Use lines or curves to guide users' attention and create visual paths through the interface. For example, an arrow can direct the users' eyes from one section of content to another along a certain path, indicating a connection or progression. This technique helps users navigate the interface more intuitively and encourages exploration.
+
+Arrange key interface elements, such as call-to-action buttons or important information, along a prominent lines to draw users' attention and create focal points. For example, the Fluent MessageBar pattern is often displayed as a prominent balanced message across the content area, with the message on the left, leading to the call to action buttons on the right. This layout strategy highlights these elements and emphasizes their significance, increasing the likelihood of interaction.
+
 :::row:::
    :::column span="":::
       ![Alt text](./media/visual-design/continuity-left.svg)
