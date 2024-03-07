@@ -72,6 +72,10 @@ For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-
 
 For Dynamics 365 App for Outlook, you must add your Outlook Web App homepage origin to `frame-ancestors`.
 
+For embedding Power Apps in Power BI report, add the following to `frame-ancestors`:
+- `https://app.powerbi.com`
+- `https://msi-pbi.pbi.microsoft.com`
+
 ### Important considerations
 Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
 
