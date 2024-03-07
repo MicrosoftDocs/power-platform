@@ -36,10 +36,10 @@ Users of the workload should accomplish tasks efficiently, with minimal frustrat
 
 |Approach|Benefit|
 |-|-|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
+|Follow established conventions and patterns: Use common and recognizable icons, symbols, and layouts, follow the standards and guidelines of the platform or device, and leverage the existing mental models and expectations of the users. |This helps users learn the interface quickly, use it intuitively, and trust its reliability.|
+|Use a logical and hierarchical structure, provide clear labels and feedback, and offer easy ways to undo, go back, or exit.|Users find what they need, know where they are, and navigate the interface with ease.|
+|Use clear and consistent language. Use simple and familiar words, avoid jargon and ambiguity, and use consistent terminology throughout the interface. |This helps users understand the information and instructions, and reduces confusion and errors.|
+|Reduce visual clutter. Use whitespace, alignment, contrast, and hierarchy to create a clean and organized layout, avoid unnecessary graphics, animations, or decorations, and use color and typography strategically. |This helps users focus on the important elements, scan and read the content easily, and avoid distractions and overload.|
 
 ## Design for consistency
 
