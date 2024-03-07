@@ -29,10 +29,10 @@ Description of principle.
 
 ## Design for simplicity
 
-|![Goal icon](../_images/goal.svg) Make the workload easy to use |
+|![Goal icon](../_images/goal.svg) Make the workload easy to use. |
 |--|
 
-Users of the workload should accomplish tasks efficiently, with minimal frustration.
+Users of the workload should accomplish tasks efficiently, with minimal frustration. Simplicity helps users learn the system, perform their tasks, and achieve their goals with minimal effort.
 
 |Approach|Benefit|
 |-|-|
@@ -47,6 +47,34 @@ Users of the workload should accomplish tasks efficiently, with minimal frustrat
 |--|
 
 Description of principle.
+
+|Approach|Benefit|
+|-|-|
+|Summary of approach|Summary of benefit.|
+|Summary of approach|Summary of benefit.|
+|Summary of approach|Summary of benefit.|
+|Summary of approach|Summary of benefit.|
+
+## Design for efficiency
+
+|![Goal icon](../_images/goal.svg) Reduce friction and streamline the user experience. |
+|--|
+
+Description of principle.
+
+|Approach|Benefit|
+|-|-|
+|Summary of approach|Summary of benefit.|
+|Summary of approach|Summary of benefit.|
+|Summary of approach|Summary of benefit.|
+|Summary of approach|Summary of benefit.|
+
+## Design for scalability
+
+|![Goal icon](../_images/goal.svg) Design a flexible architecture that can handle growth and change. |
+|--|
+
+Design the workload to be built to change and built to last.
 
 |Approach|Benefit|
 |-|-|
