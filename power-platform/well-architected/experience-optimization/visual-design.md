@@ -207,6 +207,10 @@ Maintain consistency in the placement and styling of interface elements reinforc
 
 Elements tend to be perceived as groups if they are sharing an area with a clearly defined boundary.
 
+Grouping related elements within visual containers, such as boxes, cards, or borders, helps users perceive them as cohesive units. This visually organizes content and functionality, making it easier to identify and process information. Clear groupings help avoid a cluttered interface and reduce confusion or inefficiency. Grouping is also effective when proximity is not an option; a message bar that spans several controls across a screen but is clearly a related unit because of borders and background color.
+
+Maintaining consistency in the visual presentation of grouped elements reinforces their association and enhances usability. Consistent styling, such as using similar colors, fonts, or icons, across grouped elements reinforces their belongingness to the same category or function. Inconsistencies in visual presentation can weaken the percieved grouping and cause users to overlook relationships between elements or misinterpret their meaning.
+
 :::row:::
    :::column span="":::
       ![Alt text](./media/visual-design/grouping-left.svg)
