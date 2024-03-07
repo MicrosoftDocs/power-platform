@@ -157,6 +157,18 @@ Maintain consistency in the use of focal points throughout the interface to prov
 
 Objects that look similar will be recognized as a pattern or a group. They will be expected to have the same functionality.
 
+Ensure that interface elements with similar functions have consistent visual styles. For example, buttons that perform similar or equally-weighted actions should have the same color, shape, and size, signaling to users that they share common functionality. Inversely, ensure that elements that differ significantly in functionality are clearly distinguishable. This helps prevent confusion and frustration by establishing clear visual cues.
+
+Use consistent iconography and symbols to represent similar actions or features throughout the interface. When users encounter familiar icons in different contexts, they can quickly infer their intended functionality based on their past experiences. Use universal icon metaphors to align with standard expectations. Use consistent icon styling by leveraging icons from the same suite (e.g., Fluent UI iconography library is available for use).
+
+Employ color coding to signify similarities between elements or categories. For example, using the same color to highlight related items in a list or grouping similar data points on a chart enhances visual coherence and aids users in discerning patterns.
+
+Maintain uniformity in typography and text styling for elements that serve analogous purposes. Consistent font styles, sizes, and formatting contribute to a cohesive visual language, facilitating users' recognition of related content or actions.
+
+Provide consistent interactive feedback for similar actions across the interface. Whether it's hovering over a button or clicking on a link, users should expect uniform responses to reinforce the association between visual similarity and functional equivalence. Most of the interactivity behavior (such as hover and pressed state color values) are inherent in the platform, but keep this in mind when building component elements from scratch or if feedback states are manually implemented.
+
+Ensure that visual similarities are complemented by other cues, such as text labels or audio feedback, to accommodate users with diverse needs and preferences. Effective communication of functionality through multiple sensory modalities enhances usability and inclusivity.
+
 :::row:::
    :::column span="":::
       ![Alt text](./media/visual-design/similarity-left.svg)
