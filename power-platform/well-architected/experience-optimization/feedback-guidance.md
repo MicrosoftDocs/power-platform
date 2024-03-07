@@ -1,6 +1,6 @@
 ---
-title: Recommendations for providing meaningful notifications and messages. 
-description: Learn how to Provide meaningful notifications and messages to ensure consistent success with user experience optimization.
+title: Recommendations for providing meaningful feedback and guidance. 
+description: Learn how to Provide meaningful feedback and guidance to ensure consistent success with user experience optimization.
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
@@ -9,14 +9,14 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for notifications and messages
+# Recommendations for feedback and guidance
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
 |[EO:07](checklist.md)| Notify users with relevant, important, and valuable information. Let users know when something happens and what they need to do next. Provide meaningful, useful, and simple guidance in notifications and messages. |
 |---|---|
 
-This guide describes the recommendations for providng meaningful notifications and messages to users of your workload. Notifications and messages in a well-architected workload provide users with the information they need to perform actions and to effectively make decisions. Notifications and messages that lack relevance, are hard to understand, or display at the wrong time for the user to properly react, will lead to a poor experience for users and will potentially result in lost productivity, higher support costs, and failed business processes.
+This guide describes the recommendations for providng meaningful feedback and guidance to users of your workload. Feedback and guidance in a well-architected workload provide users with the information they need to perform actions and to effectively make decisions. Feedback and guidance that lack relevance, are hard to understand, or display at the wrong time for the user to properly react, will lead to a poor experience for users and will potentially result in lost productivity, higher support costs, and failed business processes.
 
 ## Key design strategies
 

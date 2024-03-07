@@ -149,8 +149,8 @@
               href: ./experience-optimization/interaction-design.md
             - name: XO:06 Usability
               href: ./experience-optimization/usability.md
-            - name: XO:07 Notifications
-              href: ./experience-optimization/notifications.md
+            - name: XO:07 Feedback and guidance
+              href: ./experience-optimization/feedback-guidance.md
             - name: XO:08 Responsive design
               href: ./experience-optimization/responsive-design.md
       
