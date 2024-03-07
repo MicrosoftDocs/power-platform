@@ -17,7 +17,7 @@ ms.custom: handoff, ceX
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-When your customers need to speak with a human agent, your copilot can seamlessly hand off the conversation. With the omnichannel capabilities of the [Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), you can connect both voice (Classic only, coming soon for all other copilots) and text (messaging) conversations.
+When your customers need to speak with a human agent, your copilot can seamlessly hand off the conversation. With the omnichannel capabilities of the [Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), you can connect both voice (in Classic chatbots) and text (messaging) conversations.
 
 > [!NOTE]
 > Connecting to Dynamics 365 Customer Service Omnichannel for **voice** capabilities is available to Microsoft Copilot Studio Classic only at this moment. This feature is coming soon to all other copilots.
