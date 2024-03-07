@@ -184,7 +184,11 @@ Ensure that visual similarities are complemented by other cues, such as text lab
 
 ### Figure and ground
 
-People instinctively perceive elements to be either a “figure” (what stands out in the front) or a “ground” (what recedes into the back). Hence, context influences the perception and needs to ensure that there is enough delineation to distinguish between background and the elements that are important. White and negative space increases comprehension of content.
+People instinctively perceive elements to be either a "figure" (what stands out in the front) or a "ground" (what recedes into the back). Hence, context influences the perception and needs to ensure that there is enough delineation to distinguish between background and the elements that are important. White and negative space increases comprehension of content.
+
+Use contrast in color, size, or visual style to establish a clear figure-ground relationship. Important elements should stand out prominently against the background, making them easily distinguishable and guiding users' attention effectively. Surfaces with lighter colors, and more contrasting text or visual elements against the background, will have more prominence. This helps avoid visual clutter, making it easier for the user to identify key information. Provide sufficient contrast between foreground and background elements to improve readability for users with visual impairments, enhancing their ability to access and comprehend content.
+
+Maintain consistency in the placement and styling of interface elements reinforces the figure-ground relationship and aids users in understanding the interface structure. Consistent use of design patterns and visual cues ensures that users can quickly discern between foreground and background elements across different screens and contexts. Inconsistencies in design can disrupt users' mental models and hinder their ability to navigate the interface efficiently.
 
 :::row:::
    :::column span="":::
