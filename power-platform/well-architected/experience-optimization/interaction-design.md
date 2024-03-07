@@ -85,7 +85,13 @@ Frame questions and interactions in a way that leads to simpler answers, such as
 
 ### Serial Position Effect
 
-First, last, as well as most different element is remembered the most by the users. Placing the least important items in the middle of lists can be helpful because these items tend to be stored less frequently in long-term and working memory. Positioning key actions on the far left and right within elements such as navigation can increase memorization.
+First, last, as well as most different element is remembered the most by the users. Utilize the following tips to enhance memorability, improve user engagement, and facilitate more efficient interactions: 
+
+Position key actions, important information, or critical content at the beginning and end of lists, menus, or interfaces. This ensures that users are more likely to remember and engage with these elements. For example, place primary navigation options at the beginning and end of a menu bar for easy access.
+
+Make important elements visually distinct from surrounding content to enhance memorability. Use contrasting colors, bold typography, or unique icons to draw attention to critical actions or information. This helps users differentiate important elements from the rest of the interface, improving recall and usability.
+
+Organize content and actions based on their importance and relevance to users' tasks or goals. Ensure that the most critical information is presented first and last, with less important details in between. This helps users focus on essential content while minimizing cognitive load and preventing information overload.
 
 ![Serial position effect](./media/interaction-design/serial-position.svg)
 
