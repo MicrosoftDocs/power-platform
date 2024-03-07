@@ -65,6 +65,6 @@ In this next image shows an example unit test being defined. A table describing 
 [Build automation that uses Microsoft-hosted agents and Azure Pipelines](/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation)  
 [Continuous integration and deployment (preview)](finance-operations-pipelines.md)  
 [Unit Test Framework](/dynamicsax-2012/developer/unit-test-framework)  
-[Unit testing (preview)](finance-operations-testing)
+[Unit testing (preview)](finance-operations-testing.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
