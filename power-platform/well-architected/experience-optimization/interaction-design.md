@@ -32,7 +32,11 @@ The modern controls available in Power Apps utilize the latest Fluent UI compone
 
 ### Mental model
 
-What users believe they know about a UI strongly impacts how they use it. Mismatched mental models (when users anticipate different outcomes from UI) are common. Since the user interacts with the system image, their mental model needs to match the designer’s mental model that has been fed into the system. Unfamiliar design patterns should be used carefully as they might lead to user confusion. The Fluent UI based modern controls are tested with users by a professional design team, which ensures the user’s mental model is the same as the intention for the pattern.
+What users believe they know about a UI strongly impacts how they use it. Mismatched mental models (when users anticipate different outcomes from UI) are common. Since the user interacts with the system image, their mental model needs to match the designer’s mental model that has been fed into the system. Unfamiliar design patterns should be used carefully as they might lead to user confusion. 
+
+The Fluent UI based modern controls are tested by a professional design team, which ensures the user's mental model is the same as the intention for the pattern. For composite visual elements or task flows, make sure to clearly communicate an accurate representation of the mental model.
+
+One common example of displaying the mental model is to render status or states stored in table data that are important for the user to know. If a record is inactive or closed, the entire form should be disabled as read-only to follow the intended model.
 
 ![Mental model](./media/interaction-design/mental-model.svg)
 
@@ -44,6 +48,12 @@ They are the shortcuts and rules of thumb by which we make judgments and predict
 1. _Ambiguity effect._ The world is very confusing, and users see only a tiny sliver of it, but they need to make sense of it in order to survive. Users connect the dots, fill in the gaps with stuff they already think they know, and update perceptions. 
 1. _Urgency effect._ Users constrained by time and information. With every piece of new information, users need to assess an ability to affect the situation, apply it to decisions, simulate the future to predict what might happen next, and otherwise act on new insights.
 1. _Memory and recall._ Users need to make constant bets and trade-offs around what they try to remember and what we forget. When there are lots of irreducible details, they pick out a few standout items to save and discard the rest.
+
+Learning about cognitive biases enhances awareness of potential pitfalls in a user experience and fosters empathy towards users by understanding their cognitive limitations and tendencies. This awareness enables designers to recognize when biases may influence their own decisions or users' interactions with the interface, leading to more thoughtful and user-centered design solutions. Incorporating this knowledge leads to more intuitive and satisfying user experiences.
+
+Understand your users' needs, goals, and behaviors through user research methods (such as surveys and interviews). This helps uncover cognitive biases that may affect how users perceive and interact with the interface. Continuously iterate on the design based on user feedback and usability testing results to identify and address cognitive biases or usability issues that may arise.
+
+Leveraging standard design patterns and conventions that align with common or universal mental models helps users navigate the interface more intuitively and reduces the likelihood of cognitive biases influencing interactions.
 
 ![Cognative biases](./media/interaction-design/bias.svg)
 
