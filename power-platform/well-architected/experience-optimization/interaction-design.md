@@ -129,6 +129,28 @@ Within each chunk, place the most important information or actions at the forefr
 
 People judge an experience largely based on how they felt at its peak and at its end, rather than the total sum or average of every moment of the experience. It might be useful to identify moments when the product is most helpful, valuable, or entertaining and design to make those moments even better. The most intense points and the end of the user journey have particular importance. Also, people recall negative experiences more vividly than positive ones.
 
+Enhance peak moments by identifying moments within the user journey where the product is most helpful, valuable, or entertaining. Focus on enhancing these peak moments by providing additional value, delight, or functionality to leave a lasting positive impression on the user. Also consider optimizing the end of the journey by paying special attention to how the user ends the workflow. Ensure that the final interactions or messages are clear, satisfying, and align with users' expectations, leaving them with a positive last impression.
+
+Some ways to enhance positive experiences include:
+
+- _Personalization._ Tailor the user experience to individual preferences and behaviors. Offer personalized recommendations, content suggestions, or customization options based on user data and preferences.
+
+- _Microinteractions._ Incorporate small, delightful animations or interactions throughout the interface to make interactions more engaging and enjoyable. For example, subtle animations when hovering over buttons or playful loading screens can add a touch of personality to the user experience.
+
+- _Surprise and delight._ Introduce unexpected elements or Easter eggs that surprise and delight users. This could include hidden features, humorous messages, or interactive elements that encourage exploration and discovery.
+
+- _Efficiency improvements._ Streamline tasks and interactions to make them faster and more efficient for users. Introduce features such as keyboard shortcuts, autocomplete suggestions, or one-click actions to simplify common tasks and save users time.
+
+- _Visual design._ Invest in high-quality visual design to create a visually appealing and cohesive interface. Use aesthetically pleasing typography, color schemes, and imagery to evoke positive emotions and enhance the overall user experience.
+
+- _Feedback and acknowledgment._ Provide immediate and meaningful feedback to users' actions to reassure them that their interactions are registered and understood. Use visual cues, animations, or notifications to acknowledge user input and actions in real-time.
+
+- _Gamification._ Introduce game-like elements such as challenges, rewards, or progress tracking to make the user experience more engaging and enjoyable. Encourage users to achieve specific goals or milestones within the interface to create a sense of accomplishment and motivation.
+
+Recognize that users recall negative experiences more vividly than positive ones. Take proactive measures to identify and address pain points or usability issues throughout the user journey to prevent negative experiences from overshadowing positive ones. The guidance in this pillar is intended to help improve negative experiences. Namely, following usability heuristics, meeting accessibility compliance, clear error handling, using consistency in design, and optimizing for perofrmance all help address negative experiences.
+
+Continuously gather feedback from users to identify peak moments, pain points, and areas for improvement. Use this feedback to iteratively enhance the user experience, focusing on optimizing peak moments and addressing any negative experiences.
+
 ![Peak-end rule](./media/interaction-design/peak-end-rule.svg)
 
 ### Postel's Law
