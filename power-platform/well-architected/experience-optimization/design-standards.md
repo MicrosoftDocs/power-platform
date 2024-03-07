@@ -106,10 +106,39 @@ Headings should feature large or bold text to enable quick scanning and comprehe
 
 On mobile devices, text should be resizable up to 200% without compromising content or functionality. This flexibility ensures that users can adjust text size according to their preferences or needs, enhancing overall accessibility. Furthermore, users should have the ability to zoom in on the interface, with page layouts designed to reflow content seamlessly without horizontal scrolling for zoom levels up to 400%. This ensures that content remains accessible and readable, regardless of the device screen size, and contributes to a more user-friendly experience for all users.
 
+**Images, graphs, and motion**
+
+Images and graphics make content more pleasant and easier to understand for many people, and in particular for those with cognitive and learning disabilities.
+They serve as cues that are used by people with visual impairments to orient themselves in the content. However, when images are used extensively on websites and are not accessible can create major barriers for users. 
+
+Accessible practices around media content benefit braille and screen reader users, people who browse with images turned off to save bandwidth, and search engine crawlers. They can also aid people with hearing loss or cognitive disabilities. 
+
+Use Alt text to make visual content accessible. Alt attributes describe visual content. This is the text that is displayed while images are downloading. Adapt alt text to the context of the image. Be concise and informative (up to 150–250 characters). Images that duplicate text content should be marked as decorative.
+
+**Interaction**
+
+Interaction is where accessibility matters the most. If a user is unable to seamlessly move around a product and complete tasks, we are not building an accessible product. Efficient keyboard and touch interaction helps people using screen readers, people using braille readers, and people who navigate using a keyboard. Common interactions include:
+
+- _Navigation._ Assistive technology users get around a web page mostly by tabbing, search, and, in the case of screen readers, using lists of headings and links. Ensure efficient keyboard navigation with landmarks, headings and shortcuts (like skip to main).
+- _Hyperlinks._ Usability and accessibility of hyperlinks can be improved by making them clear, concise, and meaningful out of context. Apply sufficient color contrast and differentiate visually from other content.
+- _Tables._ Relying on visual cues alone is not sufficient to create an accessible table. With structural markup, headers and data cells can be recognized by the assistive technology.
+- _Forms._ Input fields are used for many types of interactions on the web. Accessibility of forms usually concern people who use screen readers or keyboards.
+- _Focus._ Focus visibility helps anyone who relies on the keyboard to operate the page, by letting them visually determine what will they interact with. Sometimes focus needs to be moved programatically or trapped inside a surface to provide an optimal experience.
+- _State changes._ Specify text for any state change and announcements. Communicating error states and guiding users through error recovery (such as missing information or system issue) is particularly important.
+
+**Accessibility resources**
+- WCAG: https://www.w3.org/WAI/standards-guidelines/wcag/
+- US ADA: https://www.access-board.gov/ada/
+- EU Accessibility Act: https://ec.europa.eu/social/main.jsp?catId=1202
+- Microsoft Accessibility insights: https://www.google.com/search?q=accessibility+insights&oq=accessibility+insights&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDI0NTFqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8
+
 ## Power Platform facilitation
 
 - Refer to the Fluent UI design system for higher level guidance on design principles that apply to the modern controls in Power Apps.
 - Refer to the Power Apps design standards documentation for lower level guidance
+- Power Apps accessibility documentation
+  - Building accessible apps in Power Apps: https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/accessible-apps
+  - Power Apps Accessibility Checker feature: https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/accessibility-checker
 
 ## Experience Optimization checklist
 
