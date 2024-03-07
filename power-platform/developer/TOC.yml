@@ -78,86 +78,88 @@
           href: unified-experience\finance-operations-testing.md
         - name: Continuous integration and deployment
           href: unified-experience\finance-operations-pipelines.md
+        - name: Execute unit tests in Azure Pipelines
+          href: unified-experience\finance-operations-pipeline-test.md
         - name: Frequently asked questions (FAQs)
           href: unified-experience\finance-operations-faq.md
     - name: Tools
       expanded: true
       items:
-      - name: Power Platform developer tools
-        href: tools.md
-      - name: Power Platform CLI
-        href: cli\introduction.md
-        items:
-        - name: Install Visual Studio Code extension
-          href: howto\install-vs-code-extension.md
-        - name: Install with .NET Tool
-          href: howto\install-cli-net-tool.md
-        - name: Install using Windows MSI
-          href: howto\install-cli-msi.md
-        - name: Create and register a plug-in package
-          href: howto\cli-create-package.md
-        - name: Power Platform CLI reference
-          href: cli\reference\index.md
+        - name: Power Platform developer tools
+          href: tools.md
+        - name: Power Platform CLI
+          href: cli\introduction.md
           items:
-          - name: pac admin
-            href: cli\reference\admin.md
-          - name: pac application
-            href: cli\reference\application.md
-          - name: pac auth
-            href: cli\reference\auth.md
-          - name: pac canvas
-            href: cli\reference\canvas.md
-          - name: pac catalog
-            href: cli\reference\catalog.md
-          - name: pac connection
-            href: cli\reference\connection.md
-          - name: pac connector
-            href: cli\reference\connector.md
-          - name: pac copilot
-            href: cli\reference\copilot.md
-          - name: pac data
-            href: cli\reference\data.md
-          - name: pac help
-            href: cli\reference\help.md
-          - name: pac modelbuilder
-            href: cli\reference\modelbuilder.md
-          - name: pac org
-            href: cli\reference\org.md
-          - name: pac package
-            href: cli\reference\package.md
-          - name: pac pcf
-            href: cli\reference\pcf.md
-          - name: pac pipeline
-            href: cli\reference\pipeline.md
-          - name: pac plugin
-            href: cli\reference\plugin.md
-          - name: pac power-fx
-            href: cli\reference\power-fx.md
-          - name: pac powerpages
-            href: cli\reference\powerpages.md
-          - name: pac solution
-            href: cli\reference\solution.md
-          - name: pac telemetry
-            href: cli\reference\telemetry.md
-          - name: pac test
-            href: cli\reference\test.md
-          - name: pac tool
-            href: cli\reference\tool.md
-      - name: Power Platform Tools for Visual Studio
-        items:
-          - name: What is Power Platform Tools for Visual Studio
-            href: devtools-vs.md
-          - name: Create a Power Platform Tools project
-            href: devtools-vs-create-project.md
-          - name: Create and register a plug-in package
-            href: howto\vs-create-package.md
-      - name: Visual Studio connected service
-        items:
-          - name: Overview of Visual Studio connected service
-            href: visual-studio-connected-service.md
-          - name: Create a canvas app front end for your ASP.NET web API
-            href: visual-studio-create-canvas-app.md
-      - name: ALM developer tools
-        href: tools-alm.md
-      - name: Dataverse developer tools
-        href: tools-dataverse.md
+            - name: Install Visual Studio Code extension
+              href: howto\install-vs-code-extension.md
+            - name: Install with .NET Tool
+              href: howto\install-cli-net-tool.md
+            - name: Install using Windows MSI
+              href: howto\install-cli-msi.md
+            - name: Create and register a plug-in package
+              href: howto\cli-create-package.md
+            - name: Power Platform CLI reference
+              href: cli\reference\index.md
+              items:
+                - name: pac admin
+                  href: cli\reference\admin.md
+                - name: pac application
+                  href: cli\reference\application.md
+                - name: pac auth
+                  href: cli\reference\auth.md
+                - name: pac canvas
+                  href: cli\reference\canvas.md
+                - name: pac catalog
+                  href: cli\reference\catalog.md
+                - name: pac connection
+                  href: cli\reference\connection.md
+                - name: pac connector
+                  href: cli\reference\connector.md
+                - name: pac copilot
+                  href: cli\reference\copilot.md
+                - name: pac data
+                  href: cli\reference\data.md
+                - name: pac help
+                  href: cli\reference\help.md
+                - name: pac modelbuilder
+                  href: cli\reference\modelbuilder.md
+                - name: pac org
+                  href: cli\reference\org.md
+                - name: pac package
+                  href: cli\reference\package.md
+                - name: pac pcf
+                  href: cli\reference\pcf.md
+                - name: pac pipeline
+                  href: cli\reference\pipeline.md
+                - name: pac plugin
+                  href: cli\reference\plugin.md
+                - name: pac power-fx
+                  href: cli\reference\power-fx.md
+                - name: pac powerpages
+                  href: cli\reference\powerpages.md
+                - name: pac solution
+                  href: cli\reference\solution.md
+                - name: pac telemetry
+                  href: cli\reference\telemetry.md
+                - name: pac test
+                  href: cli\reference\test.md
+                - name: pac tool
+                  href: cli\reference\tool.md
+        - name: Power Platform Tools for Visual Studio
+          items:
+            - name: What is Power Platform Tools for Visual Studio
+              href: devtools-vs.md
+            - name: Create a Power Platform Tools project
+              href: devtools-vs-create-project.md
+            - name: Create and register a plug-in package
+              href: howto\vs-create-package.md
+        - name: Visual Studio connected service
+          items:
+            - name: Overview of Visual Studio connected service
+              href: visual-studio-connected-service.md
+            - name: Create a canvas app front end for your ASP.NET web API
+              href: visual-studio-create-canvas-app.md
+        - name: ALM developer tools
+          href: tools-alm.md
+        - name: Dataverse developer tools
+          href: tools-dataverse.md
