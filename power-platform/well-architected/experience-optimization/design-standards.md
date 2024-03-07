@@ -51,7 +51,7 @@ _Guidelines_ provide rules and best practices for project teams regarding the ut
 
 Centralized teams can also host universal media assets such as company logos and other design assets in a repository to enable more widespread rapid development.
 
-Microsoft's Fluent UI is an example of a widely-adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system.
+Microsoft's Fluent UI is an example of a widely-adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system. Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet the needs of end users. They are also designed in a way that can be ubiquitous and easily utilized across various digital products and platforms. Each component has specific guidelines to ensure the application aligns with the intended experience. Take advantage of the research-backed knowledge by reviewing the [Fluent 2 guidance](https://fluent2.microsoft.design/#/).
 
 **Conduct design reviews**
 
@@ -65,12 +65,46 @@ For example, if certain text elements must use certain design tokens, the text c
 
 Scan for the number of elements that are a specific component type that match criteria vs number of those elements that do not (e.g., text components that are not named correctly, or named correctly but not following property value guidelines). For responsive layout enforcement, certain layout containers could map to certain naming conventions and property values (e.g., LayoutWrap)
 
-### Follow component design guidelines
+### Meet accessibility standards to increase user base
 
-Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet the needs of end users. They are also designed in a way that can be ubiquitous and easily utilized across various digital products and platforms. Each component has specific guidelines to ensure usage is in line with the intension, to take advantage of the consistent nature components offer.
+Designing with inclusive principles ensures that products are built for a broader audience of users that includes people of all abilities. Inclusive design practice aims to recognize the barriers users with any functional abilities might encounter and create products that facilitate those functions prior to final implementation. Understanding and discussing the aspects of function that can lead to barriers in interaction is necessary to overcome them. 
 
-### Design accessibility 
+**Types of function**
 
+| Function | Purpose |
+| -------- | ------- |
+| Cognition |	Our ability to receive, interpret, and process information. This includes attention, awareness, focus, memory, judgment, comprehension, problem solving, and reasoning. A person’s cognition can affect the way they learn - whether it's learning how to use a new device or learning new information in a classroom. Many aspects of cognition affect one another. |
+| Mobility |	Our anatomy and muscles give us mobility, and they rely on brain signals which control the muscles. Mobility involves grasps, fine motor skills, coordination, control (voluntary vs. involuntary movement), speed, muscle tone, endurance, posture, and temporary injuries. Mobility can be influenced by situational, temporary, progressive, or permanent conditions. |
+| Vision | Our ability to see and understand visual information from our environment to guide thought and movement. Vision is influenced by both physical and neurological factors. Vision limitations include blindness, low vision (partially sighted), decreased acuity, visual field loss, color blindness, photophobia (light sensitivity), bright sunlight impacting readability of text on a screen. |
+| Hearing |	Our ability to receive and understand audio from our environment to guide thought and movement. Degrees of hearing loss vary across a wide spectrum, causing different types of barriers to everyday technology use. The temporary and situational examples could be a loud environment or a quiet zone where playing sound is not possible. |
+| Voice, speech, and communication | Our ability to communicate (verbally or non-verbally) is essential in expressing wants and needs, forming relationships, conveying information to others, and interacting with our environment. |
+| Sensation and perception | Sensation is our ability to detect senses like touch or the positioning of our body. Perception is how the brain processes and communicates these senses. Sensation limitations include vestibular, chronic pain, skin integrity, sensation (hypersensitive and hyposensitive), proprioception.	|
+
+#### Methods of accessing content
+There are many ways for a user to access digital content. Besides using mouse and pointer input, users can also access content through use of a keyboard and various assistive technologies. Other environmental settings include functionality such as screen and braille readers, magnifiers, captions, voice-recognition, and high-contrast settings which adapt the experience to the user’s needs.
+
+**Assistive tools**
+
+- _Keyboard._	People who are blind or have a significant visual impairment interact with websites and apps using screen reader software, which reads content and controls aloud using text-to-speech technology. Since people who are blind can’t see the pointer on the screen, they can’t use a standard mouse.
+The keyboard works as an alternative input to point-and-click interaction. In addition to supporting the basic set of keyboard commands, screen readers also provide a complex set of keyboard commands. These commands give users a powerful additional set of tools to interact with user interfaces more efficiently.
+- _Screen reader._ Screen readers convert digital text into synthesized speech and braille output. They empower users to hear content and navigate with the keyboard. The technology enables people who are blind or who have low vision to use information technology with the same level of independence and privacy as anyone else.
+Screen readers are also used by people with certain cognitive or learning disabilities, or users who simply prefer audio content over text. Beyond the web, screen readers also work with documents, spreadsheets, and the user’s operating system.
+- _Touch._	Touch targets are largely targeted at people with motor delays, who may have problems tapping the screen. More specifically, touch is designed to help people limit the amount of spurious input from unintended (or unregistered) touches.
+- _Dynamic content._ One of the easiest features to implement, and one that provides significant immediate benefits to screen reader users, is landmark roles (ARIA labels). There are eight of these roles, each representing a block of content that occurs commonly on web pages. To use them, simply add a relevant role attribute to an appropriate container within your HTML. Then, screen reader users can quickly jump to that section of the page. 
+
+**Visual styles**
+
+To ensure inclusivity for users with varying vision functions, it's crucial to address visual styles such as color, contrast, and text size in product design. This involves ensuring adequate contrast between text and its background, including text on images, icons, and buttons, to improve readability for users with low contrast sensitivity and color blindness. Well-contrasting content enhances readability in various lighting conditions, benefiting all users. 
+
+Standard text should have a contrast ratio of at least 4.5:1 with the background. Larger text, interactive components, and data visualizations, colors must pass a minimum 3:1 contrast ratio with the background color. Status indicators should effectively utilize semantic colors, type, and imagery to convey information, ensuring content can be perceived by all users. Consider supporting high contrast color palette, which normalizes the color palette for displaying content with a contrast ratio of at least 7:1, ensuring visibility and clarity. Providing dark mode is significantly helpful for readability and reducing eye strain.
+
+**Typography**
+
+Typography plays a crucial role in ensuring readability for users with diverse needs. Text must be large enough and adequately spaced to accommodate different users' requirements. Users should have the option to adjust settings such as orientation and zoom levels, with applications seamlessly adapting their content layout accordingly. Well-set typography not only aids in readability but also facilitates page orientation and navigation, benefiting individuals with low vision, cognitive disabilities, colorblindness, or those relying on screen readers.
+
+Headings should feature large or bold text to enable quick scanning and comprehension, particularly for visual users. Properly applied heading elements ensure efficient navigation for all users. Line width and spacing significantly impact readability; excessively wide lines strain the eyes and overly short lines disrupt rhythm and comprehension. Aim for 50 to 70 characters per line and an optimal line height of 120% to 145% of the font size to enhance readability.
+
+On mobile devices, text should be resizable up to 200% without compromising content or functionality. This flexibility ensures that users can adjust text size according to their preferences or needs, enhancing overall accessibility. Furthermore, users should have the ability to zoom in on the interface, with page layouts designed to reflow content seamlessly without horizontal scrolling for zoom levels up to 400%. This ensures that content remains accessible and readable, regardless of the device screen size, and contributes to a more user-friendly experience for all users.
 
 ## Power Platform facilitation
 
