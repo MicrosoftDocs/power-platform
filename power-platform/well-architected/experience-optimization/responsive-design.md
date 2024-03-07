@@ -41,26 +41,7 @@ Responsive layouts ensure an efficient, adaptable user experience across various
 - Makes people happy by allowing them to easily find the info they need.
 - Supports content prioritization and focus at smaller screen sizes.
 
-### Define a consistent app frame
-
-Utilize an app frame design to deliver the most common layouts found in an application. This removes the need for redundant specification rounds and building. Simple apps have the flexibility to use the header component while more sophisticated apps can leverage side nav to enable depth of navigation. Subcomponents are also customizable. For example, using global search in header, or nav group items in side nav are optional and can be tailored to the needs of your product. 
-
-Users value consistency in UI design across multiple apps, as it helps them learn how to use the app without breaking their usage habit. Using a consistent app frame across applications in your organization can help create coherent experiences by providing a common set of components, interactions, and patterns that persist. This helps people who use those products to complete tasks easier and feel more satisfied with the experience.
-
-<!--- GUIDANCE
-App frame consists of the below elements. Each retains its individual configuration capabilities and can be customized according to app needs.
-- Container or browser window
-- App frame
-- Header with hamburger menu
-- Side nav
-- Content region
-
-Configurations:
-- Header and content region. For single page apps or apps using lightweight nav components such as top nav containing less than five categories. This configuration provides the most space to display info in the content region.
-- Header, side nav, and content region. For apps needing multiple levels of navigation containing more than five categories. This configuration provides less space to display info in the content region but includes a persistent and visible nav menu at larger window sizes. 
---->
-
-### Use a consistent grid
+### Choose a consistent grid
 
 The grid serves as an underlying, invisible structure that governs the positioning of all elements and content within a page. It plays a crucial role in maintaining coherence, enhancing visual hierarchy, and achieving balance in the design of an app. The grid's behavior is consistent across the entire application, ensuring a cohesive user experience. To create a responsive grid layout, it's essential to understand the different types of grids available and apply adaptive techniques as needed. All elements should adhere to the predefined grid to maintain consistency and cohesion in the design.
 
@@ -72,11 +53,7 @@ Stretch grid, also known as fluid grid or fluid layout, is optimized for respons
 
 ### Use established layouts and grouping patterns
 
-Ensure layout adapts to window sizes for accessible scaling.
-Content is efficiently laid out.
-Organize information by hierarchy.
-
-Employ commonly recognized structures and arrangements for organizing content and elements within a user interface. These layouts and patterns have been refined and proven effective over time, making them familiar and intuitive to users while making it easy to implement adaptive design patterns.
+Utilize commonly recognized structures and arrangements for organizing content and elements within a user interface. These layouts and patterns have been refined and proven effective over time, making them familiar and intuitive to users while also making it easy to implement adaptive patterns.
 
 The following includes a non-exhaustive list of established lists, many of which can be combined (e.g., a hero banner layout could contain a grid of items below, with tabs in between the elements to sort).
 
@@ -90,6 +67,12 @@ The following includes a non-exhaustive list of established lists, many of which
 - Modal Layout: Content is displayed in a modal window that overlays the main page, focusing the user's attention on a specific task or interaction while temporarily dimming the background. Modal layouts are commonly used for alerts, dialogs, and form submissions.
 
 ### Design for all device classes
+
+In the design considerations, optimize for mobile interactions by using larger touch targets, avoiding hover-dependent interactions, and providing alternative input methods for gestures commonly used on touchscreens.
+
+#### Create a breakpoint matrix
+
+A breakpoint matrix serves as a graphical depiction illustrating the responsive or adaptive behaviors of an application's design across different screen sizes and orientations. It typically presents a structured grid or layout detailing the design's response at various breakpoints. Each segment corresponds to a distinct screen width, offering insights into the design's structure, layout, and functionality. A breakpoint matrix encompasses considerations of screen width, viewport orientation, design elements, layout structure, content presentation, navigation, media, and interactive components to illustrate how a website or app's design responds across different screen sizes and orientations.
 
 ### Use adaptive techniques
 
@@ -106,7 +89,6 @@ The following includes a non-exhaustive list of established lists, many of which
 <!---
 #### Prioritize mobile-first design
 
-Responsive design makes web content adapt to different screen and window sizes. Increasing the availability of applications to both web and mobile can increase the overall usage and adoption of the app if it's more convenient to access. In the design considerations, optimize for mobile interactions by using larger touch targets, avoiding hover-dependent interactions, and providing alternative input methods for gestures commonly used on touchscreens.
 
 ### Implement fluid layouts
 
@@ -130,9 +112,7 @@ Breakpoints are the most essential component to create a responsive design. Brea
 
 Reduce the file size of high-resolution images for smaller viewports or use portable image types that can easily be scaled, such as SVG. Optimizing your fonts for mobile devices is an absolute necessity if you want your content to be palatable across all screen sizes.
 
-### Create a breakpoint matrix
 
-A breakpoint matrix serves as a graphical depiction illustrating the responsive or adaptive behaviors of an application's design across different screen sizes and orientations. It typically presents a structured grid or layout detailing the design's response at various breakpoints. Each segment corresponds to a distinct screen width, offering insights into the design's structure, layout, and functionality. A breakpoint matrix encompasses considerations of screen width, viewport orientation, design elements, layout structure, content presentation, navigation, media, and interactive components to illustrate how a website or app's design responds across different screen sizes and orientations.
 
 --->
 
