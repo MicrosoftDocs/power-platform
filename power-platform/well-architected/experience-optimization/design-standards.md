@@ -40,7 +40,8 @@ A _component_ represents a discrete, modular unit of a user interface. It serves
 
 Power Apps provides a comprehensive set of basic universal components, like button, dropdown, and several composite components, like the modern table. Use these controls as much as possible for basic needs, then consider building composite components where gaps exist for repeatable user interface patterns.
 
-Composite components should be able to be used exactly as-is or with minimal variation (using parameters) in different app contexts and should not need to be modified. Some examples of custom components could include the following: 
+Composite components should be able to be used exactly as-is or with minimal variation (using parameters) in different app contexts and should not need to be modified. Some examples of custom components could include the following:
+ 
 - A company-branded header or footer. 
 - A screen-sized resource page component for users to provide feedback and get IT help
 - Universal content like copyright notices or links
@@ -53,11 +54,11 @@ Centralized teams can also host universal media assets such as company logos and
 
 Microsoft's Fluent UI is an example of a widely-adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system. Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet the needs of end users. They are also designed in a way that can be ubiquitous and easily utilized across various digital products and platforms. Each component has specific guidelines to ensure the application aligns with the intended experience. Take advantage of the research-backed knowledge by reviewing the [Fluent 2 guidance](https://fluent2.microsoft.design/#/).
 
-**Conduct design reviews**
+#### Conduct design reviews
 
 To ensure that an app meets established UI/UX standards, having resources available to guide the design of user experiences is crucial. Centralized teams should aim to familiarize themselves with basic design standards and best practices. While designers are typically knowledgeable about user experience, project managers can also benefit from learning these skills to contribute effectively to the team.
 
-**Validate usage of design-related app metadata**
+#### Validate usage of design-related app metadata
 
 While the most effective method to validate an experience is to physically walk through and validate it, there's also the option to programmatically read Power Apps app metadata. While there isn't a set method, some approaches include checking that the correct theme is applied to the app, or verifying whether theme token values are being referenced in legacy controls.
 
@@ -67,7 +68,7 @@ Scan for the number of elements that are a specific component type that match cr
 
 ### Meet accessibility standards to increase user base
 
-Designing with inclusive principles ensures that products are built for a broader audience of users that includes people of all abilities. Inclusive design practice aims to recognize the barriers users with any functional abilities might encounter and create products that facilitate those functions prior to final implementation. Understanding and discussing the aspects of function that can lead to barriers in interaction is necessary to overcome them. 
+Designing with inclusive principles ensures that products are built for a broader audience of users that includes people of all abilities. Inclusive design practice aims to recognize the barriers users with any functional abilities might encounter and create products that facilitate those functions prior to final implementation. Understanding and discussing the aspects of function that can lead to barriers in interaction is necessary to overcome them.
 
 **Types of function**
 
@@ -81,24 +82,25 @@ Designing with inclusive principles ensures that products are built for a broade
 | Sensation and perception | Sensation is our ability to detect senses like touch or the positioning of our body. Perception is how the brain processes and communicates these senses. Sensation limitations include vestibular, chronic pain, skin integrity, sensation (hypersensitive and hyposensitive), proprioception.	|
 
 #### Methods of accessing content
+
 There are many ways for a user to access digital content. Besides using mouse and pointer input, users can also access content through use of a keyboard and various assistive technologies. Other environmental settings include functionality such as screen and braille readers, magnifiers, captions, voice-recognition, and high-contrast settings which adapt the experience to the user’s needs.
 
-**Assistive tools**
+#### Assistive tools
 
 - _Keyboard._	People who are blind or have a significant visual impairment interact with websites and apps using screen reader software, which reads content and controls aloud using text-to-speech technology. Since people who are blind can’t see the pointer on the screen, they can’t use a standard mouse.
 The keyboard works as an alternative input to point-and-click interaction. In addition to supporting the basic set of keyboard commands, screen readers also provide a complex set of keyboard commands. These commands give users a powerful additional set of tools to interact with user interfaces more efficiently.
 - _Screen reader._ Screen readers convert digital text into synthesized speech and braille output. They empower users to hear content and navigate with the keyboard. The technology enables people who are blind or who have low vision to use information technology with the same level of independence and privacy as anyone else.
 Screen readers are also used by people with certain cognitive or learning disabilities, or users who simply prefer audio content over text. Beyond the web, screen readers also work with documents, spreadsheets, and the user’s operating system.
 - _Touch._	Touch targets are largely targeted at people with motor delays, who may have problems tapping the screen. More specifically, touch is designed to help people limit the amount of spurious input from unintended (or unregistered) touches.
-- _Dynamic content._ One of the easiest features to implement, and one that provides significant immediate benefits to screen reader users, is landmark roles (ARIA labels). There are eight of these roles, each representing a block of content that occurs commonly on web pages. To use them, simply add a relevant role attribute to an appropriate container within your HTML. Then, screen reader users can quickly jump to that section of the page. 
+- _Dynamic content._ One of the easiest features to implement, and one that provides significant immediate benefits to screen reader users, is landmark roles (ARIA labels). There are eight of these roles, each representing a block of content that occurs commonly on web pages. To use them, simply add a relevant role attribute to an appropriate container within your HTML. Then, screen reader users can quickly jump to that section of the page.
 
-**Visual styles**
+#### Visual styles
 
 To ensure inclusivity for users with varying vision functions, it's crucial to address visual styles such as color, contrast, and text size in product design. This involves ensuring adequate contrast between text and its background, including text on images, icons, and buttons, to improve readability for users with low contrast sensitivity and color blindness. Well-contrasting content enhances readability in various lighting conditions, benefiting all users. 
 
 Standard text should have a contrast ratio of at least 4.5:1 with the background. Larger text, interactive components, and data visualizations, colors must pass a minimum 3:1 contrast ratio with the background color. Status indicators should effectively utilize semantic colors, type, and imagery to convey information, ensuring content can be perceived by all users. Consider supporting high contrast color palette, which normalizes the color palette for displaying content with a contrast ratio of at least 7:1, ensuring visibility and clarity. Providing dark mode is significantly helpful for readability and reducing eye strain.
 
-**Typography**
+#### Typography
 
 Typography plays a crucial role in ensuring readability for users with diverse needs. Text must be large enough and adequately spaced to accommodate different users' requirements. Users should have the option to adjust settings such as orientation and zoom levels, with applications seamlessly adapting their content layout accordingly. Well-set typography not only aids in readability but also facilitates page orientation and navigation, benefiting individuals with low vision, cognitive disabilities, colorblindness, or those relying on screen readers.
 
@@ -106,7 +108,7 @@ Headings should feature large or bold text to enable quick scanning and comprehe
 
 On mobile devices, text should be resizable up to 200% without compromising content or functionality. This flexibility ensures that users can adjust text size according to their preferences or needs, enhancing overall accessibility. Furthermore, users should have the ability to zoom in on the interface, with page layouts designed to reflow content seamlessly without horizontal scrolling for zoom levels up to 400%. This ensures that content remains accessible and readable, regardless of the device screen size, and contributes to a more user-friendly experience for all users.
 
-**Images, graphs, and motion**
+#### Images, graphs, and motion
 
 Images and graphics make content more pleasant and easier to understand for many people, and in particular for those with cognitive and learning disabilities.
 They serve as cues that are used by people with visual impairments to orient themselves in the content. However, when images are used extensively on websites and are not accessible can create major barriers for users. 
@@ -115,7 +117,7 @@ Accessible practices around media content benefit braille and screen reader user
 
 Use Alt text to make visual content accessible. Alt attributes describe visual content. This is the text that is displayed while images are downloading. Adapt alt text to the context of the image. Be concise and informative (up to 150–250 characters). Images that duplicate text content should be marked as decorative.
 
-**Interaction**
+#### Interaction
 
 Interaction is where accessibility matters the most. If a user is unable to seamlessly move around a product and complete tasks, we are not building an accessible product. Efficient keyboard and touch interaction helps people using screen readers, people using braille readers, and people who navigate using a keyboard. Common interactions include:
 
@@ -126,16 +128,17 @@ Interaction is where accessibility matters the most. If a user is unable to seam
 - _Focus._ Focus visibility helps anyone who relies on the keyboard to operate the page, by letting them visually determine what will they interact with. Sometimes focus needs to be moved programatically or trapped inside a surface to provide an optimal experience.
 - _State changes._ Specify text for any state change and announcements. Communicating error states and guiding users through error recovery (such as missing information or system issue) is particularly important.
 
-**Accessibility resources**
-- WCAG: https://www.w3.org/WAI/standards-guidelines/wcag/
-- US ADA: https://www.access-board.gov/ada/
-- EU Accessibility Act: https://ec.europa.eu/social/main.jsp?catId=1202
-- Microsoft Accessibility insights: https://www.google.com/search?q=accessibility+insights&oq=accessibility+insights&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDI0NTFqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8
-
 ## Power Platform facilitation
 
-- Building accessible apps in Power Apps: https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/accessible-apps
-- Power Apps Accessibility Checker feature: https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/accessibility-checker
+- [Building accessible apps in Power Apps](/power-apps/maker/canvas-apps/accessible-apps)
+- [Power Apps Accessibility Checker feature](/power-apps/maker/canvas-apps/accessibility-checker)
+
+## Related links
+
+- [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [US ADA](https://www.access-board.gov/ada/)
+- [EU Accessibility Act](https://ec.europa.eu/social/main.jsp?catId=1202)
+- [Accessibility Insights too](https://accessibilityinsights.io/)
 
 ## Experience Optimization checklist
 
