@@ -73,9 +73,6 @@ The **Default environment routing** setting is disabled by default and must be e
 :::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where various Environment routing options in Tenant settings are located." lightbox="media/default-environment-routing/environment-routing.png":::
 
 
-> [!TIP]
-> If the **Developer environment assignments** property is set to **Only specific admins**, environment routing fails and an error message is displayed. Be sure that the tenant setting for **Developer environment assignments** is set to **Everyone**.
-
 #### [PowerShell](#tab/powershell)
 
 1. Sign in to your tenant account.
@@ -124,7 +121,7 @@ The **Default environment routing** setting is disabled by default and must be e
 
 ---
 
-## Disable the feature using PowerShell 
+## Disable environment routing for your tenant using PowerShell 
 
 To disable environment routing for your tenant, run these PowerShell commands:
 
@@ -134,28 +131,6 @@ $tenantSettings = Get-TenantSettings  
 $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
 
 Set-TenantSettings -RequestBody $tenantSettings
-```
-
-## Check if environment routing is turned on using PowerShell 
-
-Admins can run the following cmdlet to confirm if environment routing is enabled for their tenant's default environment. The **enableDefaultEnvironmentRouting** flag should be set to **True**.
-
-```powershell
-$Get-TenantSettings
-
-$tenantSettings = Get-TenantSettings
-
-$tenantSettings.powerPlatform.governance
-
-*disableAdminDigest: False*
-
-*additionalAdminDigestEmailRecipients: email@myorg.com*
-
-*disableDeveloperEnvironmentCreationByNonAdminUsers: False*
-
-***enableDefaultEnvironmentRouting**: **True***
-
-*policy: @{enableDesktopFlowDataPolicyManagement=False}*
 ```
 
 ## Frequently asked questions (FAQs)
