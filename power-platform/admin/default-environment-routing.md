@@ -23,13 +23,9 @@ When the **Default environment routing** setting is enabled in [make.powerapps.c
 
 :::image type="content" source="media/default-environment-routing/diagram-environment-routing.png" alt-text="Diagram showing how new and existing makers fit into the environment routing and environment group.":::
 
-## Scenario
-
 This example shows you how environment routing activates when the feature is turned on.
 
 Let's say you have your own development environment and you decide to add another user to your environment. The user isn't the owner of that development environment, so when you try to add them, a new development environment is created for them. The user is routed to their new environment, not your own.
-
-## Dataverse
 
 Dataverse is available in developer environments, and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings already preconfigured, such as sharing limits and solution checker. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
 
@@ -41,7 +37,7 @@ Dataverse is available in developer environments, and these environments are [Ma
 > - Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 > - **Non-managed** developer environments are **unaffected** by this feature. Learn more about the developer environment and developer plan in [About the Power Apps Developer Plan](../developer/plan.md).
 
-## Prerequisites
+## Before you begin
 
 Default environment routing is a tenant-level, admin setting that:
 
@@ -53,21 +49,17 @@ Default environment routing is a tenant-level, admin setting that:
 
 - Requires the use of Managed Environments, since all of the newly, created environments are managed. Users in a _managed_ developer environment must have premium licenses to run Power Platform assets.
 
-## Enable the Default environment routing setting
-
-The **Default environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), [PowerShell](/powershell/), or [Power Platform CLI](../developer/cli/introduction.md).
-
-### Before you begin
-
-Before you enable the **Default environment routing** feature, consider these effects:
-
 - A personal developer environment is automatically created for all of your Power Apps new or existing makers when they go to [make.powerapps.com](https://make.powerapps.com) for the first time. Returning makers who revisit the site aren't impacted.
 
 - Makers are assigned the admin role in their newly created developer environments.
 
 - By default, all developer environments created through environment routing are managed.
 
-### Enable the feature
+
+## Enable the default environment routing setting
+
+The **Default environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), [PowerShell](/powershell/), or [Power Platform CLI](../developer/cli/introduction.md).
+
 
 #### [Power Platform admin center](#tab/ppac)
 
@@ -80,14 +72,6 @@ Before you enable the **Default environment routing** feature, consider these ef
 
 :::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where various Environment routing options in Tenant settings are located." lightbox="media/default-environment-routing/environment-routing.png":::
 
-> [!NOTE]
-> The settings shown are visible when you select the airplane icon and enable these feature flags.
-> :::image type="content" source="media/default-environment-routing/airplane-icon.png" alt-text="Screenshot that shows the airplane icon on the Power Platform Admin center UI.":::
->
-> - **ManagedEnvironment2022LimitSharingUpdate**
-> - **EnablePowerPolicyUI**
-> - **EnvironmentRoutingSecurityGroupBaseRoutingEnabled**
-> - **EnvironmentRoutingSeptember2023**
 
 > [!TIP]
 > If the **Developer environment assignments** property is set to **Only specific admins**, environment routing fails and an error message is displayed. Be sure that the tenant setting for **Developer environment assignments** is set to **Everyone**.
@@ -140,7 +124,7 @@ Before you enable the **Default environment routing** feature, consider these ef
 
 ---
 
-## Disable the feature using command shell
+## Disable the feature using PowerShell 
 
 To disable environment routing for your tenant, run these PowerShell commands:
 
@@ -152,7 +136,7 @@ $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $Fals
 Set-TenantSettings -RequestBody $tenantSettings
 ```
 
-## Check if environment routing is turned on using command shell
+## Check if environment routing is turned on using PowerShell 
 
 Admins can run the following cmdlet to confirm if environment routing is enabled for their tenant's default environment. The **enableDefaultEnvironmentRouting** flag should be set to **True**.
 
