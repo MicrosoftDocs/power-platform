@@ -71,7 +71,15 @@ Consider the needs of users with limited dexterity or mobility impairments. By m
 
 ### Hick's Law
 
-The time it takes to make a decision increases with the number and complexity of choices. Simplify choices for the user by breaking down complex tasks into smaller steps. Avoid overwhelming users by highlighting recommended options. Overcrowding can lead to confusion and longer time to make a choice. Additionally, reduce cognitive load by asking questions in a way that leads to simpler answers. For example, binary “yes/no” questions. 
+The time it takes to make a decision increases with the number and complexity of choices.
+
+Instead of presenting users with a multitude of options all at once, break complex tasks into smaller, more manageable steps using progressive disclosure. This helps users focus on one decision at a time, reducing decision-making time and preventing overwhelm. For example, use a step-by-step wizard for complex processes like account setup or product customization.
+
+Guide users towards recommended or commonly chosen options to streamline decision-making. By highlighting preferred choices, users can make decisions more quickly without being bogged down by too many alternatives. This prevents decision paralysis and helps users move through the interface efficiently.
+
+Presenting too many choices or options on a single screen can overwhelm users and lead to decision fatigue. Keep the interface clean and uncluttered by prioritizing essential information and options, while hiding or minimizing less critical ones. This prevents confusion and ensures users can focus on the most relevant choices.
+
+Frame questions and interactions in a way that leads to simpler answers, such as using binary "yes/no" questions or providing clear, straightforward options. This reduces cognitive load on users and makes decision-making more intuitive and efficient. Avoiding overly complex or ambiguous questions prevents users from getting stuck or making errors.
 
 ![Hick's law](./media/interaction-design/hick.svg)
 
