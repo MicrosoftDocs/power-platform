@@ -16,7 +16,7 @@ ms.search.region: USA
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-In some cases, your data might not exist in a supported data source. However, you can provide your own data through Power Automate cloud flows or through HTTP requests. You then format the results into a JSON object as a `Table` variable or expression to generate answers.
+In some cases, your data might not exist in a supported data source. However, you can provide your own data through [Power Automate cloud flows](/microsoft-copilot-studio/nlu-generative-answers-custom-data) or through [HTTP requests](/microsoft-copilot-studio/authoring-http-node). This would typically return a JSON object that you can then parse into a `Table` format to generate answers.
 
 The custom data field takes a `Table` as an input, with the below properties:
 
@@ -26,7 +26,7 @@ The custom data field takes a `Table` as an input, with the below properties:
 | `ContentLocation` |   | Optional URL for the citation of the source content |
 | `Title` |   | Optional title for the citation of the source content |
 
-Here's a sample table:
+Here's a sample table in Power Fx format, after a JSON has been parsed:
 
 ```powerapps-dot
 [
@@ -42,15 +42,14 @@ Here's a sample table:
  {
   Content: "This is a third bit of sample text that can be replaced with content of your choice",
   Title: "Adventure Works Cycles Sample"
- },
- {
-  Content: "This is a fourth bit of sample text that can be replaced with content of your choice"
  }
 ]
 ```
 
 Copilot answers are generated from `Content` and include the link to the data source in `ContentLocation`. If a `Title`, is it used for the citation.
 
+> [!IMPORTANT]
+> Only the first 3 records of the table are used to generate an answer.
 
 ## Use custom data
 

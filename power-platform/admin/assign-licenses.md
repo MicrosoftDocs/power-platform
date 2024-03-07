@@ -2,7 +2,7 @@
 title: "Assign licenses | MicrosoftDocs"
 description: About assigning licenses to a user.
 author: sericks007
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.subservice: admin
 ms.author: sericks
 ms.custom: "admin-security"

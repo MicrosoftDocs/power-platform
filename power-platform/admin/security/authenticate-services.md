@@ -9,7 +9,7 @@ ms.collection: get-started
 author: lancedMicrosoft
 ms.subservice: admin
 ms.author: lanced
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

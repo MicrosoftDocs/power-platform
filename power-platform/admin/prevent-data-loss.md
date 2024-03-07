@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 10/02/2023
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - mikferland-msft
   - mihaelablendea
@@ -36,40 +36,15 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
    The list view shows the following attributes:
 
-   <table style="width:100%">
-   <tr>
-   <th>Attribute</th>
-   <th>Description</th>
-   </tr>
-   <tr>
-   <td width="20%"> Name</td>
-   <td width="80%"> The name of the policy. </td>
-   </tr>
-   <tr>
-   <td width="20%"> Scope</td>
-   <td width="80%"> The type of policy, such as environment-level or tenant-level </td>
-   </tr>
-   <tr>
-   <td width="20%"> Applied to</td>
-   <td width="80%"> The environment scope associated with the policy.<br />For an environment-level policy, this will be a specific (single) environment name associated with the policy. <br /> For a tenant-level policy, this can be one of the following values:<br /><ul><li>All environments</li><li>All environments, except (<i>n</i>)</li><li> (<i>n</i>) environments</li><li>A single environment name</li></ul> </td>
-   </tr>
-   <tr>
-   <td width="20%"> Created by  </td>
-   <td width="80%">   The user who created the policy.   </td>
-   </tr>
-   <tr>
-   <td width="20%"> Created (On) </td>
-   <td width="80%"> The date on which the policy was created.  </td>
-   </tr>
-      <tr>
-   <td width="20%"> Modified by  </td>
-   <td width="80%">   The user who modified the policy.   </td>
-   </tr>
-   <tr>
-   <td width="20%"> Modified (On) </td>
-   <td width="80%"> The date on which the policy was modified.  </td>
-   </tr>
-   </table>
+   | Attribute | Description |
+   | --------- | ----------- |
+   | Name | The name of the policy. |
+   | Scope | The type of policy, such as environment-level or tenant-level |
+   | Applied to | The environment scope associated with the policy.<br>For an environment-level policy, this is single environment name associated with the policy. <br> For a tenant-level policy, this can be one of the following values:<br>- All environments<br>- All environments, except (_n_)<br>- (_n_) environments<br>- A single environment name |
+   | Created by | The user who created the policy. |
+   | Created (On) | The date on which the policy was created. |
+   | Modified by | The user who modified the policy. |
+   | Modified (On) | The date on which the policy was modified. |
 
 ## Edit a DLP policy
 
@@ -91,7 +66,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
    > [!div class="mx-imgBorder"] 
    > ![Edit DLP policy review.](media/dlp-edit-policy-review.png "Edit DLP policy review")
 
-4. (Optional) If necessary, consider enforcing DLP policies on connections. More information: [Enforce DLP policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections)
+4. (Optional) If necessary, consider enforcing DLP policies on connections. More information: [Enforce DLP policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections---environment)
 
    > [!NOTE]
    >  Enforcing DLP policies will disable existing connections that violate any DLP policies and enable any previously disabled connections that no longer violate any DLP policies.

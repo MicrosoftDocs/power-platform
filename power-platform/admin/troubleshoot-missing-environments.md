@@ -7,7 +7,7 @@ ms.date: 10/03/2022
 ms.subservice: admin
 author: davidme-ms
 ms.author: davidme 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
