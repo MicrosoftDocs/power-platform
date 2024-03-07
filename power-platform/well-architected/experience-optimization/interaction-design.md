@@ -97,7 +97,13 @@ Organize content and actions based on their importance and relevance to users' t
 
 ### Pareto Principle
 
-Also known as the 80–20 rule, the law of the vital few, and the principle of factor sparsity states that, for many events, roughly 80% of the effects come from 20% of the causes. It has been researched that testing (or bumping your ideas off) only 5 people will reveal 80% of problems. Be cautious of universal vs inclusive design!
+Also known as the 80–20 rule, the law of the vital few, and the principle of factor sparsity states that, for many events, roughly 80% of the effects come from 20% of the causes. It has been researched that testing (or bumping your ideas off) only 5 people will reveal 80% of problems. 
+
+Identify the most crucial aspects of the UI that significantly impact user satisfaction and usability. This might include common user tasks, frequently accessed features, or critical content areas. By prioritizing these key elements, project teams can allocate resources more efficiently and ensure that the most critical aspects of the UI receive the most attention.
+
+Conduct user testing with a small group of participants to uncover the majority of usability issues. Research suggests that testing with just a few users can reveal a significant portion of problems, allowing you to address them early in the design process.
+
+Be cautious of universal vs inclusive design. Consider the balance between universal design principles, which aim to create interfaces that are usable by as many people as possible, and inclusive design, which focuses on addressing the specific needs of diverse user groups. While it's essential to design for the majority of users, it's also crucial to consider the needs of marginalized or underrepresented groups to ensure that the UI is accessible and inclusive for everyone.
 
 ![Pareto principle](./media/interaction-design/pareto.svg)
 
