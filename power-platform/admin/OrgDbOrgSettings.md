@@ -4,7 +4,7 @@ description: This topic covers the default options available in OrgDBOrgSettings
 author: DanaMartens
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/19/2023
+ms.date: 03/06/2024
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: sericks
