@@ -157,6 +157,16 @@ Continuously gather feedback from users to identify peak moments, pain points, a
 
 Be liberal in what you accept, and conservative in what you send. Be empathetic, flexible, and tolerant to any number of actions the user could possibly take. This means accepting variable input from users, translating input to meet the requirements, defining boundaries for input, and providing clear feedback to the user. At the same time be very specific in what you are asking the user to do.
 
+Design the interface to accept a wide range of user inputs, accommodating different preferences, behaviors, and devices. This flexibility prevents users from feeling restricted or frustrated by rigid input requirements.
+
+If necessary, translate user input to meet the system's requirements or standards. For example, convert different date formats or units of measurement to ensure consistency and accuracy in processing user input.
+
+Clearly define boundaries for acceptable input, providing guidance and constraints to prevent errors or unintended actions. This helps users understand the scope of their interactions and reduces the likelihood of making mistakes.
+
+Offer immediate and informative feedback to users in response to their actions. This includes validation messages, error alerts, or confirmation dialogs to guide users and prevent confusion or uncertainty.
+
+Clearly communicate expectations and instructions to users, specifying what actions are required and how they should be performed. Avoid ambiguity or vague language that may lead to misunderstandings or errors.
+
 ![Postel's Law](./media/interaction-design/postel.svg)
 
 ## Power Platform facilitation
