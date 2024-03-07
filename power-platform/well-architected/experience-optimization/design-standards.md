@@ -134,11 +134,8 @@ Interaction is where accessibility matters the most. If a user is unable to seam
 
 ## Power Platform facilitation
 
-- Refer to the Fluent UI design system for higher level guidance on design principles that apply to the modern controls in Power Apps.
-- Refer to the Power Apps design standards documentation for lower level guidance
-- Power Apps accessibility documentation
-  - Building accessible apps in Power Apps: https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/accessible-apps
-  - Power Apps Accessibility Checker feature: https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/accessibility-checker
+- Building accessible apps in Power Apps: https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/accessible-apps
+- Power Apps Accessibility Checker feature: https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/accessibility-checker
 
 ## Experience Optimization checklist
 
