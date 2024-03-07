@@ -119,6 +119,10 @@ Incorporate commonly used design elements and interaction patterns that users en
 
 The average person can only keep 7 (plus or minus 2) items in their working memory. Chunking is an effective method of presenting groups of content in a manageable way. Organize content in groups of 5–9 items at a time.
 
+Organize content into meaningful chunks or groups containing 5 to 9 items. Employing visual cues such as spacing, borders, or color can clearly delineate between different chunks of content. This helps users perceive the structure of the information and navigate the interface more effectively.
+
+Within each chunk, place the most important information or actions at the forefront, making them easily accessible to users. Present users with a manageable number of options to prevent decision fatigue and reduce cognitive strain. Use headings, bullet points, or icons to help users quickly scan and navigate to relevant sections of the interface (including content within chunks).
+
 ![Miller's Law](./media/interaction-design/miller.svg)
 
 ### Peak-end rule
