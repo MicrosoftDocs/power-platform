@@ -4,7 +4,7 @@ description: Records are now available in the Outlook web client using a simple 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/08/2023
+ms.date: 03/06/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -43,11 +43,9 @@ If there are any changes to the synced data including updates or deletions, the 
 
 After turning on the **Search for records in Microsoft 365 apps** setting, your users can open their Outlook web clients and quickly add links to their most recently used records to be shared with colleagues.
 
-> [!Note]
-> - It may take an hour or more for records to be available in your Outlook web client.
-
 > [!Important]
-> The recipient of the email must be able to access the environment with security roles that allow the user to have access to the data and must be able to access the shared record.
+> - It may take an hour or more for records to be available in your Outlook web client.
+> - The recipient of the email must be able to access the environment with security roles that allow the user to have access to the data and must be able to access the shared record.
 
 1. Open your Outlook web client.
 1. Create a new message.
