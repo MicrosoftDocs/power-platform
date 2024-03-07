@@ -1,6 +1,6 @@
 ---
 title: Add input and output variables
-description: Pass variables between a Power Automate flow and a Microsoft Copilot Studio bot.
+description: Pass variables between a Power Automate flow and a Microsoft Copilot Studio copilot.
 keywords: "PVA, flow, automate"
 ms.date: 03/24/2023
 
@@ -17,12 +17,12 @@ ms.custom: flow, ceX, advanced-authoring
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Use variables as input and output parameters to pass information between Power Automate flows and Microsoft Copilot Studio bots.
+Use variables as input and output parameters to pass information between Power Automate flows and Microsoft Copilot Studio copilots.
 
 > [!IMPORTANT]
-> A bot can only _receive_ up to 1 MB of data from a flow in a single action. However, there's no limit on the amount of data a bot can send or how many variables a bot can pass.
+> A copilot can only _receive_ up to 1 MB of data from a flow in a single action. However, there's no limit on the amount of data a copilot can send or how many variables a copilot can pass.
 
-In this example, you'll create a flow with an input parameter and return it to a bot as an output parameter.
+In this example, you'll create a flow with an input parameter and return it to a copilot as an output parameter.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ In this example, you'll create a flow with an input parameter and return it to a
 
 ## Supported parameter types
 
-Bots can use the following types of inputs and outputs with Power Automate flows:
+Copilots can use the following types of inputs and outputs with Power Automate flows:
 
 - Number
 - String
@@ -51,7 +51,7 @@ The following types aren't supported:
 
 ## Create a topic and flow
 
-1. Go to the [**Topics page**](authoring-create-edit-topics.md) for your bot.
+1. Go to the [**Topics page**](authoring-create-edit-topics.md) for your copilot.
 
 1. Create a new topic called **Echo message**.
 
@@ -95,7 +95,7 @@ The following types aren't supported:
 
 1. Select **Save**.
 
-## Select variables in the bot topic
+## Select variables in the copilot topic
 
 1. On the Microsoft Copilot Studio authoring canvas, select **Add node** (**+**), and then select **Call an action**.
 
@@ -107,9 +107,9 @@ The following types aren't supported:
 
     :::image type="content" source="media/advanced-flow-input-output/action-node.png" alt-text="Screenshot of an Action node for the Echo parameter flow.":::
 
-1. Test your topic in the **Test bot** pane.
+1. Test your topic in the **Test copilot** pane.
 
-    :::image type="content" source="media/advanced-flow-input-output/test-bot.png" alt-text="Screenshot of a bot conversation.":::
+    :::image type="content" source="media/advanced-flow-input-output/test-bot.png" alt-text="Screenshot of a copilot conversation.":::
 
 ## Optionally use literal values for input parameters
 
