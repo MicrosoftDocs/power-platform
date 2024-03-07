@@ -17,7 +17,7 @@ contributors:
 
 # Formula reference - Power Platform CLI
 
-Use these commands to interact with data in Dataverse using a command line or script. Reduce the time and complexity of your Dataverse operations by using Power fx [Learn how to use pac power-fx commands](/developer/cli/reference/power-fx).
+Use these commands to interact with data in Dataverse using a command line or script. Reduce the time and complexity of your Dataverse operations by using Power fx [pac power-fx](../developer/cli/reference/power-fx.md)
 
 ## A
 
