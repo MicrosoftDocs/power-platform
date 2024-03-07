@@ -61,6 +61,12 @@ Leveraging standard design patterns and conventions that align with common or un
 
 The time to acquire a target is a function of the distance to and size of the target. Large elements that are positioned close to users are easily selectable. For example, if the button is too small or far from the content it relates to, it will take longer for the user to click it.
 
+Large, well-placed buttons allow users to navigate the interface with minimal effort, preventing frustration and ensuring a smooth user experience. Interactive elements, such as buttons or links, should be large enough and positioned close to users' natural cursor movement. This makes them easier to click or tap, reducing the time it takes for users to interact with them. For instance, place primary action buttons in prominent locations within reach of users' thumbs on mobile devices.
+
+If interactive elements are too small or spaced too far apart, users may accidentally click the wrong element or miss the target altogether. This can lead to user errors and frustration. Designing with Fitt's Law in mind helps prevent these consequences by ensuring that interactive elements are easily distinguishable and accessible.
+
+Consider the needs of users with limited dexterity or mobility impairments. By making interactive elements larger and easier to target (ensuring correct tab order), you can improve accessibility and ensure all users can interact with the interface comfortably.
+
 ![Fitt's law](./media/interaction-design/fitt.svg)
 
 ### Hick's Law
