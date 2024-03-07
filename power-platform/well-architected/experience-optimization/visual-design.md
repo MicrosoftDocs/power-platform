@@ -134,11 +134,13 @@ Design the interface with a clear hierarchy of information, where the most impor
 
 Place primary call-to-action buttons prominently within the interface, making them the strongest focal points. These buttons should be visually distinct from other elements and strategically positioned to guide users towards desired actions, such as making a purchase or signing up. Fluent design language recommends using the brand theme color for these elements.
 
-Utilize contrast effectively to create focal points. Elements that stand out due to differences in color, brightness, size, or typography will naturally attract users' attention. However, it's important to maintain balance and not overwhelm users with too many competing focal points.
+Utilize contrast effectively to create focal points. Elements that stand out due to differences in color, brightness, size, or typography will naturally attract users' attention. Contrasting brighter surfaces with darker text or branded elements creates a more prominent focal point.
 
 Use whitespace and negative space to highlight focal points by creating visual separation from surrounding elements. This helps prevent distractions and allows users to focus on the most important content or actions. UI elements that have more spacing around them draw more focus and tend to be perceived as higher in importance than elements that have less space around them.
 
 Maintain consistency in the use of focal points throughout the interface to provide a cohesive user experience. Establishing a pattern of focal points helps set expectations of the heirarchy users need to understand to navigate the interface and find important information or actions consistently across different screens or pages.
+
+Keep in mind it's important to maintain balance and not overwhelm users with too many competing focal points.
 
 :::row:::
    :::column span="":::
