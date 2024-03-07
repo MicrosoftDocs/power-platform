@@ -30,9 +30,9 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 
 ## Strategies for using environment groups
 
-There are many ways to manage pockets of environments within your tenant using environment groups. For example, global organizations might choose to create an environment group for all environments in each geographic region to ensure compliance with legal and regulatory requirements. You can also organize environment groups by department or other criteria.
+There are many ways to manage pockets of environments within your tenant using environment groups. For example, global organizations can create an environment group for all environments in each geographic region to ensure compliance with legal and regulatory requirements. You can also organize environment groups by department or other criteria.
 
-In this article, you learn how to augment your _default environment strategy_ by combining _environment groups_ with [_default environment routing_](default-environment-routing.md). Default environment routing gives makers their own personal developer environment. This environment is a secure space to build with Microsoft Dataverse and is similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity.
+This article covers how to augment your _default environment strategy_ by combining _environment groups_ with [_default environment routing_](default-environment-routing.md). Default environment routing gives makers their own personal developer environment. This environment is a secure space to build with Microsoft Dataverse and is similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity.
 
 Enabling _default environment routing_ might give you more environments to manage, but automatically creating them into a single environment group ensures they're preconfigured with important baseline controls your organization requires.
 
@@ -40,7 +40,7 @@ Enabling _default environment routing_ might give you more environments to manag
 
 [Power Platform tenant administrators](use-service-admin-role-manage-tenant.md) can create as many environment groups as necessary to meet their organization's needs. You can create a single environment group named **Personal Productivity**, then create new developer environments into the group.
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to [Power Platform Admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Environment groups** in the navigation pane.
 1. On the **Environment groups** page, select **New group**.
 1. In the **Create group** pane that appears:
@@ -54,12 +54,12 @@ After you create the environment group, Power Platform tenant administrators can
 
 ### The sharing limits rule
 
-You can configure the _sharing limits_ rule. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
+You can also configure the _sharing limits_ rule. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
 
-1. In the _Personal Productivity_ group, select the **Rules** tab.
+1. In the **Personal Productivity** group, select the **Rules** tab.
 1. Select the **Sharing Limits** rule to open its configuration panel.
-1. Select _Exclude sharing with security group_.
-1. Select _Limit total individuals who can share to_ and enter the number `1` into the box.
+1. Select **Exclude sharing with security group**.
+1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
 1. Select **Save**.
 1. Repeat these steps until all desired rules are configured.
 1. Select **Publish rules**.
@@ -101,7 +101,7 @@ You can manually create environments into the _Personal Productivity_ group.
 
 You can remove an environment from a group if it needs unique governance or if you created it by accident.
 
-1. Select the _Personal Productivity_ group.
+1. Select the **Personal Productivity** group.
 2. Select the environment you wish to remove.
 3. Select **Remove from group** in the command bar.
 
