@@ -31,7 +31,7 @@ This guide describes the recommendations for principles and techniques used to c
 
 ## Key design strategies
 
-Responsive design is easier for less experienced designers and developers to implement. Adaptive design is handy for updating an application designed for desktop viewports (aka screen sizes) to make it mobile-friendly.
+Responsive design is easier for less experienced designers and developers to implement, while adaptive design is handy for updating an application designed for desktop viewports (aka screen sizes) to make it mobile-friendly.
 
 ### Use established layouts and grouping patterns
 
