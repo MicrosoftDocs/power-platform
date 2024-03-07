@@ -111,6 +111,8 @@ Be cautious of universal vs inclusive design. Consider the balance between unive
 
 Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know. You can simplify the learning process for users by providing familiar design patterns. 
 
+Incorporate commonly used design elements and interaction patterns that users encounter on other websites. For example, placing the navigation menu at the top of the page or using a shopping cart icon for e-commerce sites. This familiarity makes it easier for users to navigate and interact with your UI. Users expect clickable elements to look like buttons or links. By meeting these expectations, you streamline the learning process and reduce cognitive load for users. This prevents users from feeling overwhelmed or frustrated by unfamiliar interfaces, increasing their likelihood of staying engaged and achieving their goals.
+
 ![Jacob's Law](./media/interaction-design/jakob.svg)
 
 ### Miller's Law
