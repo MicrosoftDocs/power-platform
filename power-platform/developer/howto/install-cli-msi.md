@@ -4,7 +4,7 @@ description: Instructions to install, update, and uninstall the Power Platform C
 author: snizar007
 ms.author: snizar
 ms.reviewer: jdaly
-ms.date: 02/14/2024
+ms.date: 02/27/2024
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -71,6 +71,10 @@ C:\> pac use
   1.30.6 (In Use) (Latest)
 C:\>
 ```
+
+## Known issue with `pac power-fx repl`
+
+When you install using the Windows MSI, the shell can stop responding when you try to use [pac power-fx repl](../cli/reference/power-fx.md#pac-power-fx-repl). To work around this issue, install and use the [Visual Studio Code extension](install-vs-code-extension.md) or [install Power Platform CLI with .NET Tool](install-cli-net-tool.md).
 
 ### See also
 
