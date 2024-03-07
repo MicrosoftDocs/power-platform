@@ -63,10 +63,10 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 
     :::image type="content" source="media/advanced-clu-integration/clu-image16.png" alt-text="Language option to select NLU resource." border="false":::
 
-> [!NOTE]
-> If you you see the following, then you are not connected to **Azure Cognitive Service for Language**. Follow step 3 to connect.
-> 
-> :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected-27Jun23.png" alt-text="Language option menu when not connected to Azure Congintive Service for Language." border="false":::
+    > [!NOTE]
+    > If you you see the following, then you are not connected to **Azure Cognitive Service for Language**. Follow step 3 to connect.
+    > 
+    > :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected-27Jun23.png" alt-text="Language option menu when not connected to Azure Congintive Service for Language." border="false":::
 
 1. Select **Save** at the top of the page and select **Yes, continue** in the confirmation message.
 
