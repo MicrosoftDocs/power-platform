@@ -103,6 +103,16 @@ Arrange key interface elements, such as call-to-action buttons or important info
 
 Human brain strives for simplicity and recognizes a single pattern rather than individual objects even if there is missing information.
 
+Ensure visual consistency in design elements such as shapes, colors, and sizes. Consistent visual patterns help users quickly recognize and understand interface elements, even if they are presented in different contexts.
+
+Use simple and familiar icons or symbols that allow users to fill in missing information based on their previous experiences. For example, a magnifying glass icon is commonly associated with search functionality, even without accompanying text.
+
+Present information gradually to users (also known as progressive disclosure), allowing them to fill in missing details as they interact with the interface. This prevents overwhelming users with too much information at once and encourages exploration.
+
+Leverage Gestalt principles such as similarity, proximity, and continuation to create cohesive visual patterns that encourage users to perceive objects as whole entities. For example, grouping related elements together can help users understand their relationship and purpose. Visually arrange elements consistently using Gestalt principles to indicate segmentations. Use space effectively to create a sense of closure around interface elements.
+
+Utilize animation and transitions to guide users' attention and convey changes in interface states. Smooth transitions between different states or screens can help users understand the relationship between elements and fill in missing information. Multiple modern controls available in Power Apps inherently display animations.
+
 :::row:::
    :::column span="":::
       ![Alt text](./media/visual-design/closure-left.svg)
