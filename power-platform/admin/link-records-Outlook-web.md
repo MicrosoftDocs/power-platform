@@ -4,7 +4,7 @@ description: Records are now available in the Outlook web client using a simple 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/08/2023
+ms.date: 03/06/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -38,6 +38,8 @@ If there are any changes to the synced data including updates or deletions, the 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 2. Select **Settings** > **Product** > **Features**.
 3. Under the **Search** section, turn on the **Search for records in Microsoft 365 apps** setting.
+
+    :::image type="content" source="media/search-records-m365-apps.png" alt-text="A screenshot of the option to enable searching records in Microsoft 365 apps.":::
 
 ## Link to business records in email messages in your Outlook web client
 

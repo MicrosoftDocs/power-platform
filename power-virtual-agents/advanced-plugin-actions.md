@@ -25,7 +25,7 @@ Plugin actions are based on one of the following core action types:
 - Prebuilt connector action
 - Custom connector action
 - Power Automate cloud flow
-- Bot Framework Skill
+- Copilot Framework Skill
 
 > [!IMPORTANT]
 > You can't use [conversational plugins created in Microsoft Copilot Studio](copilot-conversational-plugins.md) as plugin actions.
@@ -49,7 +49,7 @@ Plugin actions can generate a contextual response to a user's query, using the r
 
 1. In the **Add an action (preview)** wizard, search for a plugin action you want to use and select it.
 
-   The default list shown has Power Automate Flows and custom connectors available within your environment. This list includes commonly used prebuilt connectors and Bot Framework Skills that are registered with your copilot. For more information, see [Create AI plugins for Microsoft Copilot (preview)](copilot-ai-plugins.md).
+   The default list shown has Power Automate Flows and custom connectors available within your environment. This list includes commonly used prebuilt connectors and Copilot Framework Skills that are registered with your copilot. For more information, see [Create AI plugins for Microsoft Copilot (preview)](copilot-ai-plugins.md).
 
    :::image type="content" source="media/advanced-plugin-actions/wizard-start.png" alt-text="Screenshot of the first page in the plugin action wizard with the action type filter open.":::
 
@@ -104,7 +104,7 @@ The **Inputs** section allows you to manage the **Display name** and **Descripti
 
 You can change the **Identify as** option to a specific entity type, depending on the input being collected, which can help the copilot accurately extract a value from a user's response.
 
-By default, each input is set to **Dynamically fill with the best option**. The copilot tries to populate the value from available context, such as extracting a value from the user's message. If no appropriate value is found, it generates a question to ask the user for a value. You can override an input with a value instead of asking the user. To override, change the **How will the bot fill this input?** dropdown to **Set as a value**, then enter a value. This value can be a literal value, an existing variable, or a Power Fx formula.
+By default, each input is set to **Dynamically fill with the best option**. The copilot tries to populate the value from available context, such as extracting a value from the user's message. If no appropriate value is found, it generates a question to ask the user for a value. You can override an input with a value instead of asking the user. To override, change the **How will the copilot fill this input?** dropdown to **Set as a value**, then enter a value. This value can be a literal value, an existing variable, or a Power Fx formula.
 
 :::image type="content" source="media/advanced-plugin-actions/wizard-inputs.png" alt-text="Screenshot of the inputs section for plugin action configuration.":::
 
@@ -169,7 +169,7 @@ Plugins are always run in the Microsoft Copilot runtime in the end-user context 
 
 - **Integrated authentication (Teams and Power Apps)**: This authentication setup can be employed if your copilot is in the Teams channel. The setup also works with embedded copilots in any Power Platform app that uses tokens built with the PPAPI standard.
 
-- **Manual authentication (third-party bots)**: This authentication method involves the setup of an Entra ID connection.
+- **Manual authentication (third-party copilots)**: This authentication method involves the setup of an Entra ID connection.
 
 To create a manual authentication connection:
 
