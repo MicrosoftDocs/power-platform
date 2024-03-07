@@ -33,7 +33,28 @@ This guide describes the recommendations for principles and techniques used to c
 
 Responsive design is easier for less experienced designers and developers to implement. Adaptive design is handy for updating an application designed for desktop viewports (aka screen sizes) to make it mobile-friendly.
 
-### Prioritize mobile-first design
+### Use established layouts and grouping patterns
+
+### Define the app frame
+
+### Design for all device classes
+
+### Implement fluid layouts
+
+### Use adaptive techniques
+
+#### Reposition
+
+#### Resize
+
+#### Reflow
+
+#### Show/hide
+
+#### Re-architect
+
+<!---
+#### Prioritize mobile-first design
 
 Responsive design makes web content adapt to different screen and window sizes. Increasing the availability of applications to both web and mobile can increase the overall usage and adoption of the app if it's more convenient to access. In the design considerations, optimize for mobile interactions by using larger touch targets, avoiding hover-dependent interactions, and providing alternative input methods for gestures commonly used on touchscreens.
 
@@ -66,6 +87,8 @@ Reduce the file size of high-resolution images for smaller viewports or use port
 ### Create a breakpoint matrix
 
 A breakpoint matrix serves as a graphical depiction illustrating the responsive or adaptive behaviors of an application's design across different screen sizes and orientations. It typically presents a structured grid or layout detailing the design's response at various breakpoints. Each segment corresponds to a distinct screen width, offering insights into the design's structure, layout, and functionality. A breakpoint matrix encompasses considerations of screen width, viewport orientation, design elements, layout structure, content presentation, navigation, media, and interactive components to illustrate how a website or app's design responds across different screen sizes and orientations.
+
+--->
 
 ## Power Platform facilitation
 
