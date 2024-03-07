@@ -13,10 +13,21 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **Ensure the interface remains usable and visually appealing across a wide range of screen sizes and resolutions. Utilize responsive techniques to adapt the interface dynamically to different screen sizes and orientations. Prioritize performance optimization to minimize loading times and ensure smooth interactions.** |
+|[EO:01](checklist.md)| **Ensure the interface remains usable and visually appealing across a wide range of screen sizes and resolutions. Utilize adaptive design techniques to dynamically render the interface for different screen sizes and orientations. ** |
 |---|---|
 
 This guide describes the recommendations for principles and techniques used to create applications that adapt and respond fluidly to different screen sizes, resolutions, and orientations across various devices, such as desktop computers, laptops, tablets, and smartphones. This approach ensures that users have a consistent and optimal viewing experience regardless of the device they are using.
+
+**Definitions**
+
+| Term | Definition |
+|---|---|
+| Device class | A categorization of devices based on their characteristics such as screen size, resolution, and capabilities. Common device classes include desktop computers, laptops, tablets, smartphones, and wearables. |
+| Breakpoints | Breakpoints are the building blocks of responsive design. They determine how responsive layouts behave across device classes. Breakpoints also represent a subset of common device dimensions. |
+| Grid | The grid provides the fundamental groundwork for placing visual elements. All grids are made up of three elements: columns, gutters, and margins. |
+| Columns | Columns are the building blocks of a grid and mark where elements should be placed. |
+| Gutters | Gutters are the negative space between columns and their width should be a multiple of the base unit. |
+| Margins | Margins are the space outside of the grid columns and rows. |
 
 ## Key design strategies
 
