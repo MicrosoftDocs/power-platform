@@ -228,6 +228,14 @@ Maintaining consistency in the visual presentation of grouped elements reinforce
 
 Visual elements such as lines, contrast, spacing, etc. are used to inform users that something is important, in which case they are signals. However, too many signals, or signals highlighting information that is not important become noise.
 
+Employ focal point principals (like bold text, contrasting colors, or icons) to signal important information or actions to users. For example, use a bright or brand colors for important buttons or headings to make them stand out.
+
+Be selective about what you highlight to avoid overwhelming users with too much information. Only signal elements that are truly important for the user's task or goal. Too many signals can create confusion and make it difficult for users to prioritize. Determine what information is most relevant to the user and signal it accordingly. For instance, if users are completing a form, highlight required fields to draw attention to them. This prevents users from getting lost in unnecessary details and helps them focus on what's essential. Usually a single call-to-action button is recommended for a page.
+
+Ensure signals follow a consistent visual language throughout the interface. This helps users recognize patterns and understand the meaning of different signals intuitively. Inconsistency in signaling can lead to confusion and make it harder for users to interpret the interface.
+
+Tailor your signals to the specific context and user's needs. For example, if users are scanning an interface that presents certain tasks, signal critical status and actionable items prominently to attract their attention. Contextual signals help users quickly find relevant information without being distracted by irrelevant details.
+
 :::row:::
    :::column span="":::
       ![Alt text](./media/visual-design/signal-noise-left.svg)
