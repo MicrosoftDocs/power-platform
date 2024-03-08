@@ -27,6 +27,9 @@ To enable solution checker enforcement for your Managed Environment:
 
     :::image type="content" source="media/managed-environment-solution-checker.png" alt-text="Screenshot of the solution checker settings screen.":::
 
+> [!NOTE]
+> Solution checker enforcement is not available when the environment is in [Administration mode](../admin-mode)
+
 ## Solution checker settings
 
 Select one of the following settings:
