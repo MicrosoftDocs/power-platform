@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Security checklist recommendation:**
 
-|[SE:09](checklist.md)| Protect application secrets by hardening their storage and restricting access and manipulation and by auditing those actions. Run a reliable and regular rotation process that can improvise rotations for emergencies.|
+|[SE:08](checklist.md)| Protect application secrets by hardening their storage and restricting access and manipulation and by auditing those actions. Run a reliable and regular rotation process that can improvise rotations for emergencies.|
 |---|---|
 
 This guide describes the recommendations for securing sensitive information in workloads. Proper management of secrets is crucial for maintaining the security and integrity of your application, workload, and associated data. Improper handling of secrets can lead to data breaches, service disruption, regulatory violations, and other issues.
@@ -39,7 +39,7 @@ Credentials, such as API keys, Open Authorization (OAuth) tokens, and Secure She
 > [!Important]
 > **Don't treat** **nonsecrets like secrets.** Secrets require operational rigor that's unnecessary for nonsecrets and that might result in extra costs.
 >
-> Application configuration settings, such as URLs for APIs that the application uses, are an example of nonsecrets. This information shouldn't be stored with the application code or application secrets. Consider using a custom connector or environment variables to store application configuration. Another option is to use a Dataverse table that stores metadata about the application configuration, however you’ll need to then come up with a mechanism to populate this data in a new environment (move config data from dev/test/prod). You can use Dataflows for this.
+> Application settings that are not secrets, such as the URLs of the APIs that the application needs, should be kept separate from the application code or application secrets. A possible way to store application configuration is to use a custom connector or environment variables. Alternatively, you can use a Dataverse table that holds metadata about the application configuration, but then you’ll need to find a way to fill this data in a new environment (transfer config data from dev/test/prod). You can use Dataflows for this.
 
 ## Key design strategies
 
@@ -57,7 +57,7 @@ We recommend that keys have three distinct roles: user, administrator, and audit
 
 #### Preshared keys
 
-**You can control access by creating distinct keys for each consumer.** For example, a client communicates with a third-party API using a preshared key. If another client needs to access the same API, they must use another key. Don't share keys even if two consumers have the same access patterns or roles. Consumer scopes might change over time, and you can't independently update permissions or distinguish usage patterns after a key is shared. Distinct access also makes revocation easier. If a consumer's key is compromised, it's easier to revoke or rotate that key without affecting other consumers.
+**You can control access by creating distinct keys for each consumer.** For example, a client, like an app or flow, communicates with a third-party API using a preshared key. If another client needs to access the same API, they must use another key. Don't share keys even if two consumers have the same access patterns or roles. Consumer scopes might change over time, and you can't independently update permissions or distinguish usage patterns after a key is shared. Distinct access also makes revocation easier. If a consumer's key is compromised, it's easier to revoke or rotate that key without affecting other consumers.
 
 This guidance applies to different environments. The same key shouldn't be used for both preproduction and production environments. If you're responsible for creating preshared keys, make sure you create multiple keys to support multiple clients.
 
@@ -71,7 +71,7 @@ A dedicated secret management system makes it easy to store, distribute, and con
 
 **You also need to control access at the secret level.** Each secret should only have access to a single resource scope. Create isolation boundaries so that a component is only able to use secrets that it needs. If an isolated component is compromised, it can't gain control of other secrets and potentially the entire workload. One way to isolate secrets is to use multiple key vaults. There's no added costs for creating extra key vaults.
 
-**Implement auditing and monitoring for secret access.** Log who accesses secrets and when to identify unauthorized or suspicious activity. For information about logging from a security perspective, see [link to monitoring recommendation].
+**Implement auditing and monitoring for secret access.** Log who accesses secrets and when to identify unauthorized or suspicious activity. For information about logging from a security perspective, see [Recommendations for monitoring and threat detection](monitor-threats.md).
 
 #### Secret rotation
 
@@ -80,10 +80,6 @@ A dedicated secret management system makes it easy to store, distribute, and con
 Handle OAuth access tokens carefully, taking into consideration their time to live. Consider if the exposure window needs to be adjusted to a shorter period. Refresh tokens must be stored securely with limited exposure to the application. Renewed certificates should also use a new key. For information about refresh tokens, see [Secure OAuth 2.0 On-Behalf-Of refresh tokens](/azure/architecture/example-scenario/secrets/secure-refresh-tokens).
 
 **Replace secrets after they reach their end of life, are no longer used by the workload, or if they've been compromised.** Conversely, don't retire active secrets unless it's an emergency. You can determine a secret's status by viewing access logs. Secret rotation processes shouldn't affect the reliability or performance of the workload. Use strategies that build redundancy in secrets, consumers, and access methods for smooth rotation.
-
-For more information on how Azure Storage handles rotation, see [Manage account access keys](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
-
-Rotation processes should be automated and deployed without any human interaction. Storing secrets in a secret management store that natively supports rotation concepts can simplify this operational task.
 
 ### Safe practices for using secrets
 
@@ -95,9 +91,8 @@ As a secret generator or operator, you should be able to distribute secrets in a
 
 **Use tools that periodically detect exposed secrets** in your application code and build artifacts. You can add these tools as part of your deployment pipelines to scan for credentials before source code commits deploy. Review and sanitize application logs regularly to help ensure that no secrets are inadvertently recorded. You can also reinforce detection via peer reviews.
 
-** Note**
-
-If the scanning tools discover a secret, that secret must be considered compromised. It should be revoked.
+> [!NOTE]
+> If the scanning tools discover a secret, that secret must be considered compromised. It should be revoked.
 
 #### Respond to secret rotation
 
@@ -109,19 +104,28 @@ As a workload owner, you need to **understand the secret rotation plan and polic
 
 ## Power Platform facilitation
 
-_Use Azure Key Vault_ _secrets_
+### Use Azure Key Vault secrets
 
 Environment variables allow for referencing secrets stored in Azure Key Vault. These secrets are then made available for use within Power Automate flows and custom connectors. Notice that the secrets aren't available for use in other customizations or generally via the API.
 
-The actual secrets are stored in Azure Key Vault and the environment variable references the key vault secret location. Using Azure Key Vault secrets with environment variables require that you configure Azure Key Vault so that Power Platform can read the specific secrets you want to reference.
+The actual secrets are stored in Azure Key Vault and the environment variable references the key vault secret location. Using Azure Key Vault secrets with environment variables require that you configure Azure Key Vault so that Power Platform can read the specific secrets you want to reference. For more information, see [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) and [Use environment variables in custom connectors](/connectors/custom-connectors/environment-variables#use-an-environment-variable-in-a-custom-connector)
 
-_Use Solution Checker_
+### Use Solution Checker
 
-With the solution checker feature, you can perform a rich static analysis check on your solutions against a set of best practice rules and quickly identify these problematic patterns. After the check completes, you receive a detailed report that lists the issues identified, the components and code affected, and links to documentation that describes how to resolve each issue. Review the available solution checker rules in the Security category: [Use solution checker to validate your solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/use-powerapps-checker)
+With the solution checker feature, you can perform a rich static analysis check on your solutions against a set of best practice rules and quickly identify these problematic patterns. After the check completes, you receive a detailed report that lists the issues identified, the components and code affected, and links to documentation that describes how to resolve each issue. Review the available solution checker rules in the Security category: [Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker)
+
+## Use CyberArk actions
+
+CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate desktop flows enable you to retrieve credentials from CyberArk. For more information, see [CyberArk actions](/power-automate/desktop-flows/actions-reference/cyberark)
 
 ## Related links
 
-[Use environment variables in solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/environmentvariables)
-
-[Use solution checker to validate your solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/use-powerapps-checker)
-
+[Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
+[Use environment variables in custom connectors](/connectors/custom-connectors/environment-variables#use-an-environment-variable-in-a-custom-connector)
+[Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker)
+[CyberArk actions](/power-automate/desktop-flows/actions-reference/cyberark)
+[Azure DevOps Credential Scanner task](/azure/security/develop/security-code-analysis-customize#credential-scanner-task)
+[Configure the Microsoft Security DevOps Azure DevOps extension](/azure/defender-for-cloud/azure-devops-extension)
+[Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features)
+[Recommendations for monitoring and threat detection](monitor-threats.md)
+[Recommendations for identity and access management](identity-access.md)
