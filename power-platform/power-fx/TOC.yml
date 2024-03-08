@@ -434,6 +434,8 @@
             href: reference/function-round.md 
           - name: Ungroup
             href: reference/function-groupby.md
+          - name: UniChar
+            href: reference/function-char.md
           - name: Unrelate
             href: reference/function-relate-unrelate.md
           - name: Update
