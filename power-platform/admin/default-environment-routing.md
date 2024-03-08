@@ -36,15 +36,15 @@ Dataverse is available in developer environments, and these environments are [Ma
 > - Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 > - **Non-managed** developer environments are **unaffected** by this feature. Learn more about the developer environment and developer plan in [About the Power Apps Developer Plan](../developer/plan.md).
 
-## Before you begin
+## Prerequisites
 
-Environment routing is a tenant-level, admin setting that:
+Understand that environment routing is a tenant-level, admin setting that:
 
 - Only Power Platform admins can enable.
 
 - Requires the **Developer environment assignment** setting to be enabled for **Everyone**.
 
-    :::image type="content" source="media/default-environment-routing/developer-environments-assignment-everyone.png" alt-text="The Developer environment assignment setting must be enabled for Everyone." lightbox="media/default-environment-routing/developer-environments-assignment-everyone.png":::
+  :::image type="content" source="media/default-environment-routing/developer-environments-assignment-everyone.png" alt-text="The Developer environment assignment setting must be enabled for Everyone." lightbox="media/default-environment-routing/developer-environments-assignment-everyone.png":::
 
 - Requires the use of Managed Environments, since all of the newly, created environments are managed. Users in a _managed_ developer environment must have premium licenses to run Power Platform assets.
 
@@ -60,7 +60,7 @@ The **Environment routing** setting is disabled by default and must be enabled u
 
 #### [Power Platform admin center](#tab/ppac)
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com),  select **Settings**.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Settings**.
 1. On the **Tenant settings** page, select **Environment routing (preview)**.
 1. In the **Environment routing** pane, turn on the **Create personal developer environments for new makers** option.
 1. Select the desired user type to include in routing. The **All Makers** option routes all Power Apps makers into existing or new personal developer environments. The **New Makers** option routes new makers only.
@@ -77,38 +77,44 @@ The **Environment routing** setting is disabled by default and must be enabled u
    Add-PowerAppsAccount -Endpoint "prod" -TenantID <Tenant_ID>
    ```
 
-1. Retrieve and store your tenant settings in tenantSettings.
+1. Retrieve and store your tenant settings in `TenantSettings`.
 
    ```powershell
    $tenantSettings = Get-TenantSettings  
    ```
   
 
-1. Set the **enableDefaultEnvironmentRouting** flag to **True**.
+1. Set the `enableDefaultEnvironmentRouting` flag to **True**.
 
    ```powershell
    tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
    
    Set-TenantSettings -RequestBody $tenantSettings
    ```
-1. Set the **environmentRoutingAllMakers** flag to **True** or **False**.
-```powershell
-$tenantSettings = Get-TenantSettings
-$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force  # This value can be set to $true to allow routing for all makers or $False to limit routing to new makers
-```
+1. Set the `environmentRoutingAllMakers` flag to **True** or **False**.
 
-1. (Optional) Set the **environmentRoutingTargetEnvironmentGroupId** to the desired Environment Group ID 
-```powershell
-$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetEnvironmentGroupId' -Value "<GUID for the group that has published rules>" -Force
-```
-1. (Optional) Set the **environmentRoutingTargetSecurityGroupId** to the desired Security Group 
-```powershell
-$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
-```
-1. Save TenantSettings 
-```powershell
-Set-TenantSettings -RequestBody $tenantSettings
-```
+   ```powershell
+   $tenantSettings = Get-TenantSettings
+   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force  # This value can be set to $true to allow 
+   routing for all makers or $False to limit routing to new makers
+   ```
+
+1. (Optional) Set the `environmentRoutingTargetEnvironmentGroupId` to the desired Environment Group ID.
+
+   ```powershell
+   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetEnvironmentGroupId' -Value "<GUID for the group that has published rules>" -Force
+   ```
+1. (Optional) Set the `environmentRoutingTargetSecurityGroupId` to the desired Security Group.
+
+   ```powershell
+   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
+   ```
+1. Save `TenantSettings`.
+
+   ```powershell
+   Set-TenantSettings -RequestBody $tenantSettings
+   ```
+
 ## Disable environment routing for your tenant using PowerShell 
 
 To disable environment routing for your tenant, run these PowerShell commands:
@@ -120,6 +126,7 @@ $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $Fals
 
 Set-TenantSettings -RequestBody $tenantSettings
 ```
+
 For more information about using PowerShell in Power Apps, see the [Overview](/powershell/powerapps/overview).
 
 #### [Power Platform CLI](#tab/pacCLI)
@@ -136,9 +143,9 @@ For more information about using PowerShell in Power Apps, see the [Overview](/p
    pac admin list-tenant-settings --settings-file <settings_file_path>
    ```
 
-1. Set the **enableDefaultEnvironmentRouting** flag to **true** in the JSON file.
+1. Set the `enableDefaultEnvironmentRouting` flag to **true** in the JSON file.
 
-   :::image type="content" source="media/environment-routing2.png" alt-text="Set the enableDefaultEnvironmentRouting flag to true.":::
+   :::image type="content" source="media/environment-routing2.png" alt-text="Screenshot that shows how you set the enableDefaultEnvironmentRouting flag to true.":::
 
 1. Update the tenant settings.
 
@@ -147,7 +154,6 @@ For more information about using PowerShell in Power Apps, see the [Overview](/p
    ```
 
 ---
-
 
 ## Frequently asked questions (FAQs)
 
@@ -211,9 +217,9 @@ No, the default environment doesn't need to be managed to enable environment rou
 
 The maker is always routed to their own existing personal developer environment, such as the developer environment created by them or on their behalf. If they created multiple developer environments, they're routed to the first one in alphabetical order.
 
-### What will happen if the Power Platform admin changes the Developer environment assignments setting from "Everyone" to "Only specific admins" while Environment routing is On ? 
+### What happens if the Power Platform admin changes the Developer environment assignments setting from "Everyone" to "Only specific admins" while Environment routing is **On**? 
 
-The admin will recieve the following error "Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: 1234567910 " and will not be able to change the Developer environment assignments setting. 
+The admin recieves the following error "Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: 1234567910." The admin won't be able to change the Developer environment assignments setting. 
 
 ### Where are makers routed to if they don’t have an existing developer environment?
 
