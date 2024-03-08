@@ -28,7 +28,7 @@ To enable solution checker enforcement for your Managed Environment:
     :::image type="content" source="media/managed-environment-solution-checker.png" alt-text="Screenshot of the solution checker settings screen.":::
 
 > [!NOTE]
-> Solution checker enforcement is not available when the environment is in [Administration mode](../admin-mode)
+> Solution checker enforcement is [not available](/power-apps/maker/data-platform/common-issues-resolutions-solution-checker#solution-checker-cant-access-environments-in-administration-mode) when the environment is in Administration mode
 
 ## Solution checker settings
 
