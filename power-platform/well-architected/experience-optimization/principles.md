@@ -36,9 +36,10 @@ Simplicity helps users learn the system, perform their tasks, and achieve their 
 
 |Approach|Benefit|
 |-|-|
+|Follow established conventions and patterns. Use common and recognizable icons, symbols, and layouts. Follow the standards and guidelines of the platform or device. Leverage the existing mental models and expectations of the users. |Users learn the interface quickly, use it intuitively, and trust its reliability.|
 |Provide intuitive navigation. Use a logical and hierarchical structure, provide clear labels and feedback, and offer easy ways to undo, go back, or exit.|Users find what they need, know where they are, and navigate the interface with ease.|
-|Use clear and consistent language. Use simple and familiar words, avoid jargon and ambiguity, and use consistent terminology throughout the interface. |This helps users understand the information and instructions, and reduces confusion and errors.|
-|Reduce visual clutter. Use whitespace, alignment, contrast, and hierarchy to create a clean and organized layout, avoid unnecessary graphics, animations, or decorations, and use color and typography strategically. |This helps users focus on the important elements, scan and read the content easily, and avoid distractions and overload.|
+|Use clear and consistent language. Use simple and familiar words, avoid jargon and ambiguity, and use consistent terminology throughout the interface. |Users understand the information and instructions.<br/>Users make fewer errors.|
+|Reduce visual clutter. Use whitespace, alignment, contrast, and hierarchy to create a clean and organized layout, avoid unnecessary graphics, animations, or decorations, and use color and typography strategically. |Users focus on the important elements, scan and read the content easily, and avoid distractions and overload.<br/>The design is aesthetically pleasing and usability is improved. |
 
 ## Design for consistency
 
@@ -63,9 +64,9 @@ Users of the workload should accomplish tasks efficiently, with minimal frustrat
 
 |Approach|Benefit|
 |-|-|
-|Follow established conventions and patterns. Use common and recognizable icons, symbols, and layouts, follow the standards and guidelines of the platform or device, and leverage the existing mental models and expectations of the users. |This helps users learn the interface quickly, use it intuitively, and trust its reliability.|
 |Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
+|Provide clear and consistent feedback: Use visual, auditory, or tactile cues to inform users about the status, results, or errors of their actions, use progress indicators for long-running tasks, and acknowledge user input promptly.|Users understand what is happening, monitor their progress, and recover from errors.|
+|Adapt to the user's context and needs: Use responsive design to optimize the interface for different screen sizes, orientations, and resolutions, use adaptive design to customize the interface for different devices, platforms, or environments, and use personalization to tailor the interface for different preferences, goals, or behaviors.|Users access the workload in the context that suits them best.
 
 ## Design for scalability
 
