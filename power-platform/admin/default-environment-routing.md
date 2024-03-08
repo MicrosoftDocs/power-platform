@@ -91,16 +91,35 @@ The **Environment routing** setting is disabled by default and must be enabled u
    
    Set-TenantSettings -RequestBody $tenantSettings
    ```
-
-1. Set the **enableDefaultEnvironmentRouting** flag to **True**.
+1. Set the **environmentRoutingAllMakers** flag to **True** or **False**.
 ```powershell
 $tenantSettings = Get-TenantSettings
-$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force  // This value can be set to $true to allow routing for all makers or $False to limit routing to new makers
-$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetEnvironmentGroupId' -Value "<GUID for the group that has published rules>" -Force // 
-$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
-Set-TenantSettings -RequestBody $tenantSettings
+$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force  # This value can be set to $true to allow routing for all makers or $False to limit routing to new makers
 ```
 
+1. (Optional) Set the **environmentRoutingTargetEnvironmentGroupId** to the desired Environment Group ID 
+```powershell
+$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetEnvironmentGroupId' -Value "<GUID for the group that has published rules>" -Force
+```
+1. (Optional) Set the **environmentRoutingTargetSecurityGroupId** to the desired Security Group 
+```powershell
+$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
+```
+1. Save TenantSettings 
+```powershell
+Set-TenantSettings -RequestBody $tenantSettings
+```
+## Disable environment routing for your tenant using PowerShell 
+
+To disable environment routing for your tenant, run these PowerShell commands:
+
+```powershell
+$tenantSettings = Get-TenantSettings  
+
+$tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
+
+Set-TenantSettings -RequestBody $tenantSettings
+```
 For more information about using PowerShell in Power Apps, see the [Overview](/powershell/powerapps/overview).
 
 #### [Power Platform CLI](#tab/pacCLI)
@@ -129,17 +148,6 @@ For more information about using PowerShell in Power Apps, see the [Overview](/p
 
 ---
 
-## Disable environment routing for your tenant using PowerShell 
-
-To disable environment routing for your tenant, run these PowerShell commands:
-
-```powershell
-$tenantSettings = Get-TenantSettings  
-
-$tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
-
-Set-TenantSettings -RequestBody $tenantSettings
-```
 
 ## Frequently asked questions (FAQs)
 
