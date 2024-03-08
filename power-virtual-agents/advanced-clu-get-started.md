@@ -57,7 +57,9 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 
     :::image type="content" source="media/advanced-clu-integration/clu-image15.png" alt-text="Language option to select NLU resource." border="false":::
 
-1. Once Power Apps creates the connector, return to your Microsoft Copilot Studio copilot.
+1. Once Power Apps creates the connector, return to the **Connections in <environment>** page, search for and select your new connection and then select **Edit** at the top of the page.
+
+1. In the **Azure Cognitive Service for Language configuration** window, enter a display name to distinguish it from other CLU connectors and re-enter the account key, and then select **Create**.
 
 1. In Copilot Studio, select **Refresh**, then under **Natural language understanding**, select **Azure Cognitive Service for Language** from the **NLU Resource** list.
 
@@ -70,15 +72,6 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 
 1. Select **Save** at the top of the page and select **Yes, continue** in the confirmation message.
 
-1. Enter your CLU (conversational language understanding) project and deployment and then select **Save**.
-
-5. Select the **+ (plus sign)** on the to the right of the connector name, to display the authentication settings page. 
-6. Enter the display name, API key, account key, site URL, then select **Save**. Once Power Apps creates the connector, return to your Microsoft Copilot Studio copilot.
-    :::image type="content" source="media/advanced-clu-integration/clu-image3.png" alt-text="Enter display name, authentication type, account key, and Site URL." border="false"::: 
-
-7. To view it in the **Connections** list, right click the **Azure Cognitive Service for Language** connector and select **Edit**. 
-9. Change the display name to something else to distinguish it from other CLU connectors. The name you enter to change can be any name you choose.
-8. From the left navigation in Microsoft Copilot Studio, choose **Language**, then in the **NLU Resource** drop-down list, choose [*the name you typed in the last step*], then select **Save**.
 9. In the **Delete example trigger phrases?** option, select **Save snapshot**. This saves the copilot content, including trigger phrases and copilot dialogues into a backlog file in YAML format.
 
     :::image type="content" source="media/advanced-clu-integration/clu-image4.png" alt-text="Select Save snapshot to delete example trigger phrases." border="false"::: 
