@@ -24,4 +24,3 @@ ms.collection:
 - [Get started with Copilot in Power Automate](/power-automate/get-started-with-copilot)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
-
