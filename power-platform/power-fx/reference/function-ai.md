@@ -31,6 +31,8 @@ Dataverse provides a variety of ready-to-use AI functions that are preconfigured
     - Licensing
 
 - **AIExtract** extracts specified entities such as registration numbers, phone numbers, or names of people.
+  > [!NOTE]
+  > The AIExtract function is still in development and might not operate properly. We will remove this note when it is ready to use.
 - **AIReply** drafts a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
 - **AISentiment** detects the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
 - **AISummarize** summarizes the text that you provide. For example, this function summarizes an email message or text from a document.
@@ -71,7 +73,7 @@ Here's an example:
    ```
 
 > [!NOTE]
-> We are in the process of adding the same function signatures that other Power Fx hosts enjoy to Canvas. The new signatures will augment and not replace the current mechanism; apps using the current mechanism will continue to work without modification.
+> We are in the process of adding the same function signatures that other Power Fx hosts enjoy to canvas. The new signatures will augment and not replace the current mechanism; apps using the current mechanism will continue to work without modification.
 
 ## Syntax
 
