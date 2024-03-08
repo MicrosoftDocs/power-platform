@@ -174,7 +174,7 @@ Application Insights, a feature of Azure Monitor, is widely used within the ente
 - You can set up an Application Insights environment to receive telemetry on diagnostics and performance captured by the Dataverse platform.
 - You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
 - You can set up Power Automate cloud flows to integrate with Application Insights.
-- You can write events and activity from Power Apps canvas apps to Application Insights. 
+- You can write events and activity from Power Apps canvas apps to Application Insights.
 
 For more information, see [Overview of integration with Application Insights](/power-platform/admin/overview-integration-application-insights)
 
@@ -198,4 +198,4 @@ DevOps advocates change management of workloads via continuous integration and c
 
 [Threat intelligence integration in Microsoft Sentinel](/azure/sentinel/threat-intelligence-integration)
 
-[Identify advanced threats with User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics) 
+[Identify advanced threats with User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics)

@@ -44,8 +44,6 @@ The scope of testing must include the application, infrastructure, and automated
 > ![NOTE]
 > This guidance makes a distinction between testing and incident response. Although testing is a detection mechanism that ideally fixes issues prior to production, it shouldn't be confused with the remediation or investigation that's done as part of incident response. The aspect of recovering from security incidents is described in **Incident Response recommendations**.
 
-SDL includes several types of tests that catch vulnerabilities in code, verify runtime components, and use ethical hacking to test the security resilience of the system. SDL is a key shift-left activity. You should run tests like static code analysis and automated scanning of infrastructure as code (IaC) as early in the development process as possible.
-
 **Be involved in test planning.** The workload team might not design the test cases. That task is often centralized in the enterprise or completed by external security experts. The workload team should be involved in that design process to ensure that security assurances integrate with the application's functionality.
 
 **Think like an attacker.** Design your test cases with the assumption that the system has been attacked. That way, you can uncover the potential vulnerabilities and prioritize the tests accordingly.
@@ -58,15 +56,14 @@ SDL includes several types of tests that catch vulnerabilities in code, verify r
 
 Testing in production environments gives you the best information but causes the most disruption. You tend to do only nondestructive tests in production environments. Testing in nonproduction environments is typically less disruptive but might not accurately represent the production environment's configuration in ways that are important to security.
 
-You can create an isolated clone of your production environment by using the Environment copy feature [Copy an environment - Power Platform | Microsoft Learn](/power-platform/admin/copy-environment). If you have deployment pipelines set up, you can also deploy your solution(s) to a dedicated testing environment. 
+You can create an isolated clone of your production environment by using the [environment copy feature](/power-platform/admin/copy-environment). If you have deployment pipelines set up, you can also deploy your solution(s) to a dedicated testing environment.
 
 **Always evaluate the test results.** Testing is a wasted effort if the results aren't used to prioritize actions and make improvements upstream. Document the security guidelines, including best practices, that you uncover. Documentation that captures results and remediation plans educates the team about the various ways that attackers might try to breach security. Conduct regular security training for developers, admins, and testers.
 
 When you design your test plans, think about the following questions:
 
-How often do you expect the test to run, and how does it affect your environment?
-
-What are the different test types that you should run?
+- How often do you expect the test to run, and how does it affect your environment?
+- What are the different test types that you should run?
 
 ### How often do you expect the tests to run?
 
@@ -110,13 +107,11 @@ Tests can be categorized by **technology** and by **testing methodologies**. Com
 
 By adding multiple tests and types of tests, you can uncover:
 
-Gaps in security controls or compensating controls.
+- Gaps in security controls or compensating controls.
+- Misconfigurations.
+- Gaps in observability and detection methods.
 
-Misconfigurations.
-
-Gaps in observability and detection methods.
-
-A good threat modeling exercise can point to key areas to ensure test coverage and frequency. For recommendations on threat modeling, see Recommendations for securing a development lifecycle.
+A good threat modeling exercise can point to key areas to ensure test coverage and frequency. For recommendations on threat modeling, see [Recommendations for securing a development lifecycle](secure-development-lifecycle.md).
 
 Most tests described in these sections can be run as routine tests. However, repeatability can incur costs in some cases and cause disruption. Consider those tradeoffs carefully.
 
@@ -124,13 +119,10 @@ Most tests described in these sections can be run as routine tests. However, rep
 
 Here are some examples of types of tests and their focus areas. This list isn't exhaustive. Test the entire stack, including the application stack, front end, back end, APIs, databases, and any external integrations.
 
-Data security: Test the effectiveness of data encryption and access controls to ensure data is properly protected from unauthorized access and tampering.
-
-Network and connectivity: Test your firewalls to ensure they only allow expected, allowed, and safe traffic to the workload.
-
-Application: Test source code through application security testing (AST) techniques to make sure that you follow secure coding practices and to catch runtime errors like memory corruption and privilege issues. 
-
-Identity: Evaluate whether the role assignments and conditional checks work as intended.
+- **Data security**: Test the effectiveness of data encryption and access controls to ensure data is properly protected from unauthorized access and tampering.
+- **Network and connectivity**: Test your firewalls to ensure they only allow expected, allowed, and safe traffic to the workload.
+- **Application**: Test source code through application security testing (AST) techniques to make sure that you follow secure coding practices and to catch runtime errors like memory corruption and privilege issues.
+- **Identity**: Evaluate whether the role assignments and conditional checks work as intended.
 
 #### Test methodology
 
@@ -138,9 +130,8 @@ There are many perspectives on testing methodologies. We recommend tests that en
 
 Here are some advantages of testing through real-world attacks:
 
-When you make these attacks a part of routine testing, you use an outside-in perspective to check the workload and make sure the defense can withstand an attack.
-
-Based on the lessons they learned, the team upgrades their knowledge and skill level. The team improves situational awareness and can self-assess their readiness to respond to incidents.
+- When you make these attacks a part of routine testing, you use an outside-in perspective to check the workload and make sure the defense can withstand an attack.
+- Based on the lessons they learned, the team upgrades their knowledge and skill level. The team improves situational awareness and can self-assess their readiness to respond to incidents.
 
  > :::image type="icon" source="../_images/risk.svg"::: **Risk**: Testing in general can affect performance. There might be business continuity problems if destructive tests delete or corrupt data. There are also risks associated with information exposure; make sure to maintain the confidentiality of data. Ensure the integrity of data after you complete testing.
 
@@ -166,9 +157,8 @@ The practitioners might need access to sensitive data in the entire organization
 
 In this methodology of simulated attacks, there are two teams:
 
-The _red_ team is the adversary attempting to model real-world attacks. If they're successful, you find gaps in your security design and evaluate the blast radius containment of their breaches.
-
-The _blue_ team is the workload team that defends against the attacks. They test their ability to detect, respond, and remediate the attacks. They validate the defenses that have been implemented to protect workload resources.
+- The _red_ team is the adversary attempting to model real-world attacks. If they're successful, you find gaps in your security design and evaluate the blast radius containment of their breaches.
+- The _blue_ team is the workload team that defends against the attacks. They test their ability to detect, respond, and remediate the attacks. They validate the defenses that have been implemented to protect workload resources.
 
 If they're conducted as routine tests, war game exercises can provide ongoing visibility and assurance that your defenses work as designed. War game exercises can potentially test across levels within your workloads.
 
@@ -180,7 +170,7 @@ For information about red-team and blue-team setup, see [Microsoft Cloud Red Tea
 
 ## Power Platform facilitation
 
-Microsoft Sentinel is a native control that combines security information event management (SIEM) and security orchestration automated response (SOAR) capabilities. It analyzes events and logs from various connected sources. Based on data sources and their alerts, Microsoft Sentinel creates incidents and performs threat analysis for early detection. Through intelligent analytics and queries, you can proactively hunt for security issues. If there's an incident, you can automate workflows. Also, with workbook templates, you can quickly gain insights through visualization.
+Microsoft Sentinel solution for Microsoft Power Platform allows customers to detect various suspicious activities such as Microsoft Power Apps execution from unauthorized geographies, suspicious data destruction by Power Apps, mass deletion of Power Apps, phishing attacks made possible through Power Apps, Power Automate flows activity by departing employees, Microsoft Power Platform connectors added to the an environment, and the update or removal of Microsoft Power Platform data loss prevention policies. For more information, see [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview)
 
 For product documentation, see [Hunting capabilities in Microsoft Sentinel](/azure/sentinel/hunting).
 
@@ -198,9 +188,7 @@ Microsoft performs extensive testing of the Microsoft Cloud services. This testi
 
 Follow the rules of engagement to make sure that access isn't misused. For guidance about planning and executing simulated attacks, see the following articles:
 
-[Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement)
-
-[Penetration testing](/azure/security/fundamentals/pen-testing)
+- [Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement)
+- [Penetration testing](/azure/security/fundamentals/pen-testing)
 
 You can simulate denial of service (DoS) attacks in Azure. Be sure to follow the policies laid out in [Azure DDoS Protection simulation testing](/azure/ddos-protection/test-through-simulations).
-
