@@ -193,6 +193,10 @@ No, the default environment doesn't need to be managed to enable environment rou
 
 The maker is always routed to their own existing personal developer environment, such as the developer environment created by them or on their behalf. If they created multiple developer environments, they're routed to the first one in alphabetical order.
 
+### What will happen if the Power Platform admin changes the Developer environment assignments setting from "Everyone" to "Only specific admins" while Environment routing is On ? 
+
+The admin will recieve the following error "Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: 1234567910 " and will not be able to change the Developer environment assignments setting. 
+
 ### Where are makers routed to if they don’t have an existing developer environment?
 
 If new or existing makers don’t have their own developer environment, they're routed to a new developer environment.
