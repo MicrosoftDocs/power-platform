@@ -46,7 +46,7 @@ Learn more about how to use AI functions in the following video.
 
 ## Use in canvas apps
 
-You can call these functions from canvas apps. However, it is a little more complicated than described for other Power Fx hosts:
+You can call these functions from canvas apps. However, it's a little more complicated than described for other Power Fx hosts:
 1. You need to add the **Environment** data source.
 1. The AI functions are functions in the **Environment** namespace. Where this documentation describes calling **AISummarize( ... )**, for example, you need to use **Environment.AISummarize( ... )**.
 1. Arguments to the function must be named columns in a record, passed as the only argument. The names of the columns are given in the **Syntax** section matching the names of the parameters.
@@ -56,7 +56,7 @@ You can call these functions from canvas apps. However, it is a little more comp
 Here's an example:
 
 1. Open a canvas app for editing in [Power Apps Studio](/power-apps/maker/canvas-apps/power-apps-studio).
-1. From the Data pane, select **Add data** and then add the **Enviroment** data source.
+1. From the Data pane, select **Add data** and then add the **Environment** data source.
 1. From the Insert pane, add a **Button** control.
 1. In the formula bar, select the **OnSelect** property and enter the following formula:
    ```powerapps-dot
