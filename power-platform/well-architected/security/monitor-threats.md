@@ -18,7 +18,7 @@ ms.topic: conceptual
 
 This guide describes the recommendations for monitoring and threat detection. Monitoring is fundamentally a process of **getting information about events that have already occurred**. Security monitoring is a practice of capturing information at different altitudes of the workload (identity, flows, application, operations) to **gain awareness of suspicious activities**. The goal is to predict incidents and learn from past events. Monitoring data provides the basis of post-incident analysis of what occurred to help incident response and forensic investigations.
 
-Monitoring is an Operational Excellence approach that's applied across all Power Well-Architected Framework pillars. This guide provides recommendations only from a security perspective. General concepts of monitoring will be covered in [link to operational excellence monitoring article].
+Monitoring is an Operational Excellence approach that's applied across all Power Well-Architected Framework pillars. This guide provides recommendations only from a security perspective. General concepts of monitoring will be covered in [Recommendations for designing and creating a monitoring system](../operational-excellence/observability.md)
 
 **Definitions**
 
@@ -36,19 +36,16 @@ The main purpose of security monitoring is **threat detection**. The primary obj
 
 Monitoring can be approached from various perspectives:
 
-**Monitor at various altitudes.** Observing from **various altitudes** is the process of getting information about user flows, data access, identity, networking, and even the operating system. Each of these areas offers unique insights that can help you identify deviations from expected behaviors that are established against the security baseline. Conversely, continuously monitoring a system and applications over time can **help establish that baseline posture**. For example, you might typically see around 1,000 sign-in attempts in your identity system every hour. If your monitoring detects a spike of 50,000 sign-in attempts during a short period, an attacker might be trying to gain access to your system.
+- **Monitor at various altitudes.** Observing from **various altitudes** is the process of getting information about user flows, data access, identity, networking, and even the operating system. Each of these areas offers unique insights that can help you identify deviations from expected behaviors that are established against the security baseline. Conversely, continuously monitoring a system and applications over time can **help establish that baseline posture**. For example, you might typically see around 1,000 sign-in attempts in your identity system every hour. If your monitoring detects a spike of 50,000 sign-in attempts during a short period, an attacker might be trying to gain access to your system.
+- **Monitor at various scopes of impact.** It's critical to **observe the application and the platform**. Assume an application user accidentally gets escalated privileges or a security breach occurs. If the user performs actions beyond their designated scope, the impact might be confined to actions that other users can perform.
 
-**Monitor at various scopes of impact.** It's critical to **observe the application and the platform**. Assume an application user accidentally gets escalated privileges or a security breach occurs. If the user performs actions beyond their designated scope, the impact might be confined to actions that other users can perform.
+    However, if an internal entity compromises a database, the extent of the potential damage is uncertain.
 
-However, if an internal entity compromises a database, the extent of the potential damage is uncertain.
+    The blast radius or impact scope could be significantly different, depending on which of these scenarios occurs.
+- **Use specialized monitoring tools.** It's critical to invest in **specialized tools** that can continuously scan for anomalous behavior that might indicate an attack. Most of these tools have **threat intelligence capabilities** that can perform predictive analysis based on a large volume of data and known threats. Most tools aren't stateless and incorporate a deep understanding of telemetry in a security context.
 
-The blast radius or impact scope could be significantly different, depending on which of these scenarios occurs.
-
-**Use specialized monitoring tools.** It's critical to invest in **specialized tools** that can continuously scan for anomalous behavior that might indicate an attack. Most of these tools have **threat intelligence capabilities** that can perform predictive analysis based on a large volume of data and known threats. Most tools aren't stateless and incorporate a deep understanding of telemetry in a security context.
-
-The tools need to be platform-integrated or at least platform-aware to get deep signals from the platform and make predictions with high fidelity. They must be able to generate alerts in a timely manner with enough information to conduct proper triage. Using too many diverse tools can lead to complexity.
-
-**Use monitoring for incident response.** Aggregated data, transformed into actionable intelligence, **enables swift and effective reactions** to incidents. Monitoring **helps with post-incident activities**. The goal is to collect enough data to analyze and understand what happened. The process of monitoring captures information on past events to enhance reactive capabilities and potentially predict future incidents.
+    The tools need to be platform-integrated or at least platform-aware to get deep signals from the platform and make predictions with high fidelity. They must be able to generate alerts in a timely manner with enough information to conduct proper triage. Using too many diverse tools can lead to complexity.
+- **Use monitoring for incident response.** Aggregated data, transformed into actionable intelligence, **enables swift and effective reactions** to incidents. Monitoring **helps with post-incident activities**. The goal is to collect enough data to analyze and understand what happened. The process of monitoring captures information on past events to enhance reactive capabilities and potentially predict future incidents.
 
 The following sections provide recommended practices that incorporate the preceding monitoring perspectives.
 
@@ -56,21 +53,20 @@ The following sections provide recommended practices that incorporate the preced
 
 The objective is to maintain a **comprehensive audit trail** of events that are significant from a security perspective. Logging is the most common way to capture access patterns. Logging must be performed for the application and the platform.
 
-For an audit trail, you need to **establish** **the** ***what*****,** ***when*****, and** ***who***** that's associated with actions**. You need to identify the specific timeframes when actions are performed. Make this assessment in your threat modeling. To counteract a repudiation threat, you should establish strong logging and auditing systems that result in a record of activities and transactions.
+For an audit trail, you need to **establish the *what*, *when*, and *who*** that's associated with actions You need to identify the specific timeframes when actions are performed. Make this assessment in your threat modeling. To counteract a repudiation threat, you should establish strong logging and auditing systems that result in a record of activities and transactions.
 
 The following sections describe use cases for some common altitudes of a workload.
 
-##### Workload user flows
+#### Workload user flows
 
 Your workload should be designed to provide runtime visibility when events occur. **Identify critical points within your** **workload and establish logging for these points.** It's important to acknowledge any escalation in user privileges, the actions performed by the user, and whether the user accessed sensitive information in a secure data store. Keep track of activities for the user and the user session.
 
 To facilitate this tracking, code should be **instrumented via structured logging**. Doing so enables easy and uniform querying and filtering of the logs.
 
-** Important**
+>[!IMPORTANT]
+> You need to enforce responsible logging to maintain the confidentiality and integrity of your system. Secrets and sensitive data must not appear in logs. Be aware of leaking personal data and other compliance requirements when you capture this log data.
 
-You need to enforce responsible logging to maintain the confidentiality and integrity of your system. Secrets and sensitive data must not appear in logs. Be aware of leaking personal data and other compliance requirements when you capture this log data.
-
-##### Identity and access monitoring
+#### Identity and access monitoring
 
 Maintain a thorough **record of access patterns for the application and modifications to platform resources**. Have robust activity logs and threat detection mechanisms, particularly for identity-related activities, because attackers often attempt to manipulate identities to gain unauthorized access.
 
@@ -80,9 +76,7 @@ Implement comprehensive logging by **using all available data points**. For exam
 
 Although logging successful actions is important, **recording failures is necessary from a security perspective**. Document any violations, like a user attempting an action but encountering an authorization failure, access attempts for nonexistent resources, and other actions that seem suspicious.
 
-##### Network monitoring
-
-By monitoring network packets and their sources, destinations, and structures, you gain visibility into access patterns at the network level.
+#### Network monitoring
 
 Your segmentation design should **enable observation points at the boundaries** to monitor what crosses them and log that data. For example, monitor subnets that have network security groups that generate flow logs. Also monitor firewall logs that show the flows that were allowed or denied.
 
@@ -92,9 +86,7 @@ Capturing DNS flows is a significant requirement for many organizations. For ins
 
 It's important to monitor unexpected DNS requests or DNS requests that are directed toward known command and control endpoints.
 
- > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: **Logging all network activities can result in a large amount of data.** Every request from layer 3 can be recorded in a flow log, including every transaction that crosses a subnet boundary. Unfortunately, it's not possible to capture only adverse events because they can only be identified after they occur. Make strategic decisions about the type of events to capture and how long to store them. If you're not careful, managing the data can be overwhelming. There's also a tradeoff on the cost of storing that data.
-
-Because of the tradeoffs, you should consider whether the benefit of network monitoring of your workload is sufficient to justify the costs. If you have a web application solution with a high request volume and your system makes extensive use of managed Azure resources, the cost might outweigh the benefits. On the other hand, if you have a solution that's designed to use virtual machines with various ports and applications, it might be important to capture and analyze network logs.
+ > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: **Logging all network activities can result in a large amount of data.** Unfortunately, it's not possible to capture only adverse events because they can only be identified after they occur. Make strategic decisions about the type of events to capture and how long to store them. If you're not careful, managing the data can be overwhelming. There's also a tradeoff on the cost of storing that data.
 
 ### Capture system changes
 
@@ -112,9 +104,8 @@ Have a comprehensive view, from a patching perspective, of whether the system is
 
 You should set up alerts for these changes, particularly if you don't expect them to occur often.
 
-** Important**
-
-When you roll out to production, be sure that alerts are configured to catch anomalous activity that's detected on the application resources and build process.
+>[!IMPORTANT]
+> When you roll out to production, be sure that alerts are configured to catch anomalous activity that's detected on the application resources and build process.
 
 In your test plans, **include the validation of logging and alerting** as prioritized test cases.
 
@@ -126,7 +117,7 @@ Networking logs can be verbose and take up storage. **Explore different tiers in
 
 The flows of your workload are typically a composite of multiple logging sources. Monitoring data must be **analyzed intelligently across all those sources**. For example, your firewall will only block traffic that reaches it. If you have a network security group that has already blocked certain traffic, that traffic isn't visible to the firewall. To reconstruct the sequence of events, you need to aggregate data from all components that are in flow and then aggregate data from all flows. This data is particularly useful in a post-incident response scenario when you're trying to understand what happened. Accurate timekeeping is essential. For security purposes, all systems need to use a network time source so that they're always in sync.
 
-##### Centralized threat detection with correlated logs
+#### Centralized threat detection with correlated logs
 
 You can use a system like security information and event management (SIEM) to **consolidate security data in a central location** where it can be correlated across various services. These systems have **built-in threat detection** mechanisms. They can **connect to external feeds** to obtain threat intelligence data. Microsoft, for example, publishes threat intelligence data that you can use. You can also buy threat intelligence feeds from other providers, like Anomali and FireEye. These feeds can provide valuable insights and enhance your security posture. For threat insights from Microsoft, see [Security Insider](https://www.microsoft.com/security/business/security-insider/).
 
@@ -144,74 +135,48 @@ By combining several smaller tools, you can emulate some functions of a SIEM sys
 
 **Be proactive about threat detection** and be vigilant for signs of abuse, like identity brute force attacks on an SSH component or an RDP endpoint. Although external threats might generate a lot of noise, especially if the application is exposed to the internet, **internal threats are often a greater concern**. An unexpected brute force attack from a trusted network source or an inadvertent misconfiguration, for instance, should be investigated immediately.
 
-**Keep up with your hardening practices.** Monitoring isn't a substitute for proactively hardening your environment. A larger surface area is prone to more attacks. Tighten controls as much as practice. Detect and disable unused accounts, remove unused ports, and use a web application firewall, for example. For more information about hardening techniques, see [Recommendations on security hardening](/azure/well-architected/security/harden-resources).
+**Keep up with your hardening practices.** Monitoring isn't a substitute for proactively hardening your environment. A larger surface area is prone to more attacks. Tighten controls as much as practice. Detect and disable unused accounts, use an IP firewall, and block endpoints that aren't required with Data Loss Prevention policies, for example.
 
 **Signature-based detection** can inspect a system in detail. It involves looking for signs or correlations between activities that might indicate a potential attack. A detection mechanism might identify certain characteristics that are indicative of a specific type of attack. It might not always be possible to directly detect the command-and-control mechanism of an attack. However, there are often hints or patterns associated with a particular command-and-control process. For example, an attack might be indicated by a certain flow rate from a request perspective, or it might frequently access domains that have specific endings.
 
 Detect **anomalous user access patterns** so that you can identify and investigate deviations from expected patterns. This involves comparing current user behavior with past behavior to spot anomalies. Although it might not be feasible to perform this task manually, you can use threat intelligence tools to do it. Invest in **User and Entity Behavior Analytics (UEBA) tools** that collect user behavior from monitoring data and analyze it. These tools can often perform predictive analysis that maps suspicious behaviors to potential types of attack.
 
-**Detect threats during pre-deployment and post-deployment stages.** During the predeployment phase, incorporate vulnerability scanning into pipelines and take necessary actions based on the results. Post-deployment, continue to conduct vulnerability scanning. You can use tools like Microsoft Defender for Containers, which scans container images. Include the results in the collected data. For information about secure development practices, see [Recommendations for using safe deployment practices](/azure/well-architected/operational-excellence/safe-deployments).
-
-**Take advantage of platform-provided detection mechanisms and measures.** For example, Azure Firewall can analyze traffic and block connections to untrusted destinations. Azure also provides ways to detect and protect against distributed denial-of-service (DDoS) attacks.
+**Detect threats during pre-deployment and post-deployment stages.** During the predeployment phase, incorporate vulnerability scanning into pipelines and take necessary actions based on the results. Post-deployment, continue to conduct vulnerability scanning. You can use tools like Microsoft Defender for Containers, which scans container images. Include the results in the collected data. For information about secure development practices, see [Recommendations for using safe deployment practices](../operational-excellence/safe-deployments).
 
 ## Power Platform facilitation
 
-### Activity Logging
+### Microsoft Sentinel
 
-Available via Microsoft Purview
+Microsoft Sentinel solution for Microsoft Power Platform allows customers to detect various suspicious activities such as Microsoft Power Apps execution from unauthorized geographies, suspicious data destruction by Power Apps, mass deletion of Power Apps, phishing attacks made possible through Power Apps, Power Automate flows activity by departing employees, Microsoft Power Platform connectors added to the an environment, and the update or removal of Microsoft Power Platform data loss prevention policies. For more information, see [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview)
 
-- Power Apps activities 
-- Power Automate activities
-- Power Platform connector events
-- Data Policy changes
-- Environment lifecycle operations
-- Environment property and setting change activities
+### Microsoft Purview Activity Logging
 
-Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema). The schema defines the payload of metadata that is unique for each activity.
+Power Apps, Power Automate, Connectors, Data Loss Prevention, and Power Platform administrative activity logging are tracked and viewed from the Microsoft Purview compliance portal. 
+
+For more information, see:
+
+- [Power Apps activity logging](power-platform/admin/logging-powerapps)
+- [Power Automate activity logging](/power-platform/admin/logging-power-automate)
+- [Power Pages activity logging](/power-platform/admin/logging-power-pages)
+- [Power Platform connector activity logging](/power-platform/admin/connector-events-power-platform)
+- [Data loss prevention activity logging](/power-platform/admin/dlp-activity-logging)
+- [Power Platform administrative actions activity logging](/power-platform/admin/admin-activity-logging)
+- [Microsoft Dataverse and model-driven apps activity logging](/power-platform/admin/enable-use-comprehensive-auditing)
 
 ### Dataverse auditing
 
-The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Dataverse auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment.
-
-Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. Audit logs can be viewed in the Audit History tab for a single record and in the Audit Summary view for all audited operations in a single environment. Audit logs can also be retrieved using the Web API or the SDK for .NET.
-
-[Manage Dataverse auditing - Power Platform | Microsoft Learn](/power-platform/admin/manage-dataverse-auditing)
-
-### Model Driven Apps auditing
-
-Protecting data, preserving privacy, and complying with [privacy regulations](https://www.microsoft.com/trust-center/privacy) are some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. This information from Activity Logging can be used when you perform a Data Protection Impact Assessment (DPIA) addressing the use of Office, Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
-
-This topic covers how you can set Power Apps, Power Automate, and customer engagement apps to audit a broad range of data processing activities and use the [Microsoft Purview compliance portal](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
-
-[Microsoft Dataverse and model-driven apps activity logging - Power Platform | Microsoft Learn](/power-platform/admin/enable-use-comprehensive-auditing)
-
-### Microsoft Sentinel
-
-Microsoft Sentinel solution for Microsoft Power Platform, a premium offering, allowing customers to detect various suspicious activities such as [**Microsoft Power Apps**](https://powerapps.microsoft.com/) execution from unauthorized geographies, suspicious data destruction by Power Apps, mass deletion of Power Apps, phishing attacks made possible through Power Apps, Power Automate flows activity by departing employees, Microsoft Power Platform connectors added to the an environment, and the update or removal of Microsoft Power Platform data loss prevention policies.
-
-This integration will enable Microsoft Power Platform admin center to surface proactive threats to your data and other assets and provide recommendations or automations for mitigation or resolution. This will be essential for organizations to protect their sensitive data, mitigate security risks, and stay one step ahead.
-
-**Identify and prevent insider attacks**: Microsoft Power Platform administrators can be alerted about a wide range of insider threats, including mass deletion of sensitive data, bulk retrieval of sensitive data outside of normal activity hours, and more. 
-
-**Improve incident response time**: Microsoft Power Platform administrators can quickly identify and use recommendations or mitigations provided by Microsoft Sentinel to respond to security incidents, reducing the time it takes to mitigate risks. 
-
-**Comply with regulatory requirements**: Microsoft Power Platform administrators can resolve their regulation and compliance requirements that mandate the use of threat detection tools to protect sensitive data and other assets.  
-
-**Enhance overall security standing**: Microsoft Power Platform administrators can use this integration to proactively monitor their sensitive data, identify vulnerabilities, and take steps to strengthen overall security standing. 
-
-[Microsoft Sentinel](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-sentinel) is a cloud-native security information event and management (SIEM) platform that provides intelligent security analytics for enterprises and provides security operations center (SOC) analysts with a single pane of glass for threat detection and incident management across the organization. Microsoft Sentinel solutions are a collection of SIEM content elements that cover log collection, threat detection, incident investigation, and response for a specific domain in an easy-to-consume-and-deploy package available in Microsoft Sentinel Content hub.
+Logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. This auditing is enabled at the environment level, and additional configuration is required for individual tables and columns. For more information, see [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 
 ### Analyze telemetry with Application Insights
 
-You can set up an Application Insights environment to receive telemetry on diagnostics and performance captured by the Dataverse platform.
+Application Insights, a feature of Azure Monitor, is widely used within the enterprise landscape for monitoring and diagnostics. Data that has already been collected from a specific tenant or environment is pushed to your own Application Insights environment. The data is stored in Azure Monitor logs by Application Insights, and visualized in Performance and Failures panels under Investigate on the left pane. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. The support, developer, and admin personas can use this feature to triage and resolve issues.
 
-You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
+- You can set up an Application Insights environment to receive telemetry on diagnostics and performance captured by the Dataverse platform.
+- You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
+- You can set up Power Automate cloud flows to integrate with Application Insights.
+- You can write events and activity from Power Apps canvas apps to Application Insights. 
 
-You don't need to write any code to enable this telemetry. You can enable or disable the telemetry feed at any time.
-
-[Application Insights](/azure/azure-monitor/app/app-insights-overview) is part of the Azure Monitor ecosystem. It's widely used by enterprises for monitoring and diagnostics. Many customers have added code to their extensions to capture this data into their Application Insights environments. This additional code has a cost, however—not only the cost to write and maintain, but also a performance cost at runtime. These costs can be avoided by using Application Insights built-in integration.
-
-[Overview of integration with Application Insights - Power Platform | Microsoft Learn](/power-platform/admin/overview-integration-application-insights)
+For more information, see [Overview of integration with Application Insights](/power-platform/admin/overview-integration-application-insights)
 
 ### Identity
 
@@ -234,8 +199,3 @@ DevOps advocates change management of workloads via continuous integration and c
 [Threat intelligence integration in Microsoft Sentinel](/azure/sentinel/threat-intelligence-integration)
 
 [Identify advanced threats with User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics) 
-
-</purview/audit-solutions-overview>
-
-[/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype](/office/office-365-management-api/office-365-management-activity-api-schema)
-
