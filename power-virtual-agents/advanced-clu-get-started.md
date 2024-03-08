@@ -61,6 +61,8 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 
 1. In the **Azure Cognitive Service for Language configuration** window, enter a display name to distinguish it from other CLU connectors and re-enter the account key, and then select **Create**.
 
+    :::image type="content" source="media/advanced-clu-integration/clu-image19.png" alt-text="Language option to select NLU resource." border="false":::
+
 1. In Copilot Studio, select **Refresh**, then under **Natural language understanding**, select **Azure Cognitive Service for Language** from the **NLU Resource** list.
 
     :::image type="content" source="media/advanced-clu-integration/clu-image16.png" alt-text="Language option to select NLU resource." border="false":::
@@ -77,9 +79,9 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 1. Enter your project name and deployment information, and select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image5.png" alt-text="Choose a project and model in Azure Cognitive Service for Language." border="false"::: 
 
-Next, switch back to Microsoft Copilot Studio. Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
+1. Next, switch back to Microsoft Copilot Studio. Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
 
-:::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Microsoft Copilot Studio NLU." border="false"::: 
+    :::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Microsoft Copilot Studio NLU." border="false"::: 
 
 Now that you’ve completed preparing your environment, you’re ready to map intents and entities to CLU model data. 
 
