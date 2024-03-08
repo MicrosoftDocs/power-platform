@@ -9,7 +9,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for embracing DevOps culture
+# Recommendations for fostering Fusion team culture
 
 **Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
 
@@ -44,15 +44,17 @@ The following recommendations can help you adopt and implement Fusion developmen
 
 **Encourage upskilling**. A team member may start out as a low-code or business expert but may become more interested in code-first components of the platform. Encourage and allow time for upskilling which will have a positive impact on employee engagement and can facilitate internal career journeys.
 
+**Invest in your professional development** by staying up to date with the latest knowledge on Power Platform. Microsoft offers certifications and learning paths that can help you master the skills and concepts of low-code app development, data analysis, automation, and AI. You can validate your expertise and demonstrate your value to your organization. You can gain confidence and credibility by proving your ability to design, build, and manage solutions on Power Platform. You can access exclusive opportunities and resources, such as events, webinars, forums, and communities, where you can network and learn from other professionals.
+
 ## Commitment to optimization
 
-**Understand business,** **regulatory and other requirements and integrate them into your practices.** Workload teams don't operate in a vacuum. Your team is subject to requirements enforced by the business, industry, and geographic regions you operate in. Ensure that your workload team members understand the requirements that they must follow and the consequences of a failure to meet those requirements.
+**Understand business, regulatory and other requirements and integrate them into your practices.** Workload teams don't operate in a vacuum. Your team is subject to requirements enforced by the business, industry, and geographic regions you operate in. Ensure that your workload team members understand the requirements that they must follow and the consequences of a failure to meet those requirements.
 
-**Proactively** **adapt your practices to ensure that you're compliant with requirements.** Your organization might impose some degree of governance over your workload. Use the requirements your business standardizes as guardrails to ensure that you're operating appropriately.
+**Proactively adapt your practices to ensure that you're compliant with requirements.** Your organization might impose some degree of governance over your workload. Use the requirements your business standardizes as guardrails to ensure that you're operating appropriately.
 
 **Regularly review your standard operating procedures with the team to foster discussions about areas of improvement.** Avoid complacency and encourage innovative thinking by fostering a philosophy that all standard operating procedures should be continuously reviewed and improved throughout the workload lifecycle. Team members should feel empowered to offer opinions on improvements at any time. However, ensure that you dedicate time to review procedures together so that everyone has space to think about areas for improvement and conduct focused discussions about their ideas.
 
-**Embrace safe experimentation.** Give team members access to sandbox environments and ensure that time is built into sprints to allow for experimentation. 
+**Embrace safe experimentation.** Give team members access to sandbox environments and ensure that time is built into sprints to allow for experimentation.
 
 ## Considerations
 
@@ -64,8 +66,8 @@ Microsoft publishes a dedicated [Fusion development whitepaper](/power-apps/guid
 
 ## Related links
 
-[Fusion Teams | Microsoft Power Apps](https://info.microsoft.com/ww-Landing-fusion-teams-101LowCode-power-platform.html)
+[Fusion Teams](https://info.microsoft.com/ww-Landing-fusion-teams-101LowCode-power-platform.html)
 
-[Transform your business applications with fusion development - Training | Microsoft Learn](/training/paths/transform-business-applications-with-fusion-development/)
+[Transform your business applications with fusion development](/training/paths/transform-business-applications-with-fusion-development/)
 
-[Ebook: Fusion development approach to building apps using Power Apps - Power Apps | Microsoft Learn](/power-apps/guidance/fusion-dev-ebook/)
+[Ebook: Fusion development approach to building apps using Power Apps](/power-apps/guidance/fusion-dev-ebook/)

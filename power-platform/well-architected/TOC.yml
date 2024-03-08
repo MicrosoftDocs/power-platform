@@ -89,7 +89,7 @@
           href: ./operational-excellence/tradeoffs.md
         - name: Recommendations   
           items:
-            - name: OE:01 DevOps culture
+            - name: OE:01 Fusion team culture
               href: operational-excellence/devops-culture.md
             - name: OE:02 Task execution process
               href: operational-excellence/formalize-operations-tasks.md
