@@ -97,45 +97,17 @@ Generate incident reports for internal use and, if necessary, for regulatory com
 
 ## Power Platform facilitation
 
-The Microsoft Sentinel solution for Microsoft Power Platform allows customers to detect various suspicious activities such as [**Microsoft Power Apps**](https://powerapps.microsoft.com/) execution from unauthorized geographies, suspicious data destruction by Power Apps, mass deletion of Power Apps, phishing attacks made possible through Power Apps, Power Automate flows activity by departing employees, Microsoft Power Platform connectors added to the an environment, and the update or removal of Microsoft Power Platform data loss prevention policies.
+### Microsoft Sentinel
 
-This integration will enable Microsoft Power Platform admin center to surface proactive threats to your data and other assets and provide recommendations or automations for mitigation or resolution. This will be essential for organizations to protect their sensitive data, mitigate security risks, and stay one step ahead.
-
-**Identify and prevent insider attacks**: Microsoft Power Platform administrators can be alerted about a wide range of insider threats, including mass deletion of sensitive data, bulk retrieval of sensitive data outside of normal activity hours, and more. 
-
-**Improve incident response time**: Microsoft Power Platform administrators can quickly identify and use recommendations or mitigations provided by Microsoft Sentinel to respond to security incidents, reducing the time it takes to mitigate risks. 
-
-**Comply with regulatory requirements**: Microsoft Power Platform administrators can resolve their regulation and compliance requirements that mandate the use of threat detection tools to protect sensitive data and other assets.  
-
-**Enhance overall security standing**: Microsoft Power Platform administrators can use this integration to proactively monitor their sensitive data, identify vulnerabilities, and take steps to strengthen overall security standing. 
-
-More information on pricing for this solution will come ahead of general availability.
-
-[**Microsoft Sentinel**](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-sentinel) is a cloud-native security information event and management (SIEM) platform that provides intelligent security analytics for enterprises and provides security operations center (SOC) analysts with a single pane of glass for threat detection and incident management across the organization. Microsoft Sentinel solutions are a collection of SIEM content elements that cover log collection, threat detection, incident investigation, and response for a specific domain in an easy-to-consume-and-deploy package available in Microsoft Sentinel Content hub.
-
-The solution allows customers to investigate the detected threats and understand what the name of the suspicious app is, the environment it belongs to, the user who created or modified the app, the users using the app, and more.
-
-The Microsoft Sentinel solution for [**Microsoft Power Platform**](https://powerplatform.microsoft.com/) will help organizations to:
-
-**Collect** Microsoft Power Platform and Power Apps activity logs, audits, and events into the Microsoft Sentinel workspace.
-
-**Detect** execution of suspicious, malicious, or illegitimate activities within Microsoft Power Platform and Power Apps.
-
-**Investigate** threats detected in Microsoft Power Platform and Power Apps and contextualize them with additional user activities across the organization.
-
-**Respond** to Microsoft Power Platform-related and Power Apps-related threats and incidents in a simple and canned manner manually, automatically, or via a predefined workflow.
-
-Customers can also use the automation and response capabilities of Microsoft Sentinel to create playbooks and automation rules using Microsoft Azure Logic Apps that will help handle and mitigate the detected threats by automatically or manually disabling the suspicious app, limiting users access to certain apps, or escalating to other stakeholders to advise on the legitimacy of a suspected activity.
+Microsoft Sentinel solution for Microsoft Power Platform allows customers to detect various suspicious activities such as Microsoft Power Apps execution from unauthorized geographies, suspicious data destruction by Power Apps, mass deletion of Power Apps, phishing attacks made possible through Power Apps, Power Automate flows activity by departing employees, Microsoft Power Platform connectors added to the an environment, and the update or removal of Microsoft Power Platform data loss prevention policies. For more information, see [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview)
 
 ### Security updates
 
 The Service teams regularly perform the following to ensure the security of the system:
 
-Scans of the service to identify possible security vulnerabilities
-
-Assessments of the service to ensure that key security controls are operating effectively
-
-Evaluations of the service to determine exposure to any vulnerabilities identified by the Microsoft Security Response Center (MSRC), who regularly monitors external vulnerability awareness sites
+- Scans of the service to identify possible security vulnerabilities
+- Assessments of the service to ensure that key security controls are operating effectively
+- Evaluations of the service to determine exposure to any vulnerabilities identified by the Microsoft Security Response Center (MSRC), who regularly monitors external vulnerability awareness sites
 
 These teams also identify and track any identified issues and take swift action to mitigate risks when necessary.
 
@@ -147,19 +119,17 @@ For more information about security, see [Trust Center](https://www.microsoft.co
 
 ### Manage your maintenance window
 
-Microsoft regularly performs updates and maintenance on customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) to ensure security, performance, availability, and to provide new features and functionality. This update process delivers security and minor service improvements on a weekly basis, with each update rolling out region-by-region according to a safe deployment schedule, arranged in [Stations](/dynamics365/released-versions/dynamics-365ce). For information about your default maintenance window for environments, see [Policies and Communications for service incidents](/power-platform/admin/policies-communications).
-
-Learn more: [Manage your maintenance window - Power Platform | Microsoft Learn](/power-platform/admin/manage-maintenance-window)
+Microsoft regularly performs updates and maintenance to ensure security, performance, availability, and to provide new features and functionality. This update process delivers security and minor service improvements on a weekly basis, with each update rolling out region-by-region according to a safe deployment schedule, arranged in [Stations](/dynamics365/released-versions/dynamics-365ce). For information about your default maintenance window for environments, see [Policies and Communications for service incidents](/power-platform/admin/policies-communications). For more information, see [Manage your maintenance window](/power-platform/admin/manage-maintenance-window)
 
 Ensure that the Azure enrollment portal includes administrator contact information so security operations can be notified directly via an internal process. For more information, see [Update notification settings](/azure/cost-management-billing/manage/ea-portal-administration).
-
-To learn more about establishing a designated point of contact that receives Azure incident notifications from Microsoft Defender for Cloud, see [Configure email notifications for security alerts](/azure/security-center/security-center-provide-security-contact-details).
 
 ## Organizational alignment
 
 Cloud Adoption Framework for Azure provides guidance about incident response planning and security operations. For more information, see [Security operations](/azure/cloud-adoption-framework/secure/security-operations).
 
 ## Related links
+
+[Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview)
 
 [Automatically create incidents from Microsoft security alerts](/azure/sentinel/create-incidents-from-alerts)
 
@@ -168,20 +138,3 @@ Cloud Adoption Framework for Azure provides guidance about incident response pla
 [Configure email notifications for security alerts](/azure/security-center/security-center-provide-security-contact-details)
 
 [Incident response overview](/security/operations/incident-response-overview)
-
-[Microsoft Azure incident readiness](/services-hub/unified/health/ir-azure)
-
-[Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents)
-
-[Security control: Incident response](/security/benchmark/azure/mcsb-incident-response)
-
-[SOAR solutions in Microsoft Sentinel](/azure/sentinel/automation)
-
-[Training: Introduction to Azure incident readiness](/training/technical-support/intro-to-azure-incident-readiness/)
-
-[Update Azure portal notification settings](/azure/cost-management-billing/manage/ea-portal-administration)
-
-[What's an SOC?](https://www.microsoft.com/security/business/security-101/what-is-a-security-operations-center-soc)
-
-[What's Microsoft Sentinel?](/azure/sentinel/overview)
-
