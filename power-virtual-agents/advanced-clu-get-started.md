@@ -72,11 +72,9 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 
 1. Select **Save** at the top of the page and select **Yes, continue** in the confirmation message.
 
-9. In the **Delete example trigger phrases?** option, select **Save snapshot**. This saves the copilot content, including trigger phrases and copilot dialogues into a backlog file in YAML format.
+1. In the **Delete example trigger phrases?** option, select **Save snapshot**. This saves the copilot content, including trigger phrases and copilot dialogues into a backlog file in YAML format.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image4.png" alt-text="Select Save snapshot to delete example trigger phrases." border="false"::: 
- 
-10. Enter your project name and deployment information, and select **Save**.
+1. Enter your project name and deployment information, and select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image5.png" alt-text="Choose a project and model in Azure Cognitive Service for Language." border="false"::: 
 
 Next, switch back to Microsoft Copilot Studio. Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
