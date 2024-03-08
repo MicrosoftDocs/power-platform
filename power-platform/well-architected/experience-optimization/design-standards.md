@@ -138,7 +138,7 @@ Interaction is where accessibility matters the most. If a user is unable to seam
 - [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
 - [US ADA](https://www.access-board.gov/ada/)
 - [EU Accessibility Act](https://ec.europa.eu/social/main.jsp?catId=1202)
-- [Accessibility Insights too](https://accessibilityinsights.io/)
+- [Accessibility Insights tool](https://accessibilityinsights.io/)
 
 ## Experience Optimization checklist
 
