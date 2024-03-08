@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to Power Well-Architected Security checklist recommendation:**
 
-|[SE:12](checklist.md)|Define and test effective incident response procedures that cover a spectrum of incidents, from localized issues to disaster recovery. Clearly define which team or individual runs a procedure.|
+|[SE:11](checklist.md)|Define and test effective incident response procedures that cover a spectrum of incidents, from localized issues to disaster recovery. Clearly define which team or individual runs a procedure.|
 |---|---|
 
 This guide describes the recommendations for implementing a security incident response for a workload. If there's a security compromise to a system, a systematic incident response approach helps to reduce the time that it takes to identify, manage, and mitigate security incidents. These incidents can threaten the confidentiality, integrity, and availability of software systems and data.

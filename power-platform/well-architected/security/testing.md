@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Security checklist recommendation:**
 
-|[SE:11](checklist.md)|Establish a comprehensive testing regimen that combines approaches to prevent security issues, validate threat prevention implementations, and test threat detection mechanisms.|
+|[SE:10](checklist.md)|Establish a comprehensive testing regimen that combines approaches to prevent security issues, validate threat prevention implementations, and test threat detection mechanisms.|
 |---|---|
 
 Rigorous testing is the foundation of good security design. Testing is a tactical form of validation to make sure controls are working as intended. Testing is also a proactive way to detect vulnerabilities in the system.
