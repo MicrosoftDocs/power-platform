@@ -82,8 +82,6 @@ Before you begin, make sure that you have your CLU model project name, deploymen
    > [!NOTE]
    > Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
    >
-   >    :::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Microsoft Copilot Studio NLU." border="false"::: 
-   >
 
 Now that you’ve completed preparing your environment, you’re ready to map intents and entities to CLU model data. 
 
