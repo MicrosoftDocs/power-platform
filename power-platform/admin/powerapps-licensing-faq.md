@@ -14,7 +14,7 @@ ms.custom:
 
 This article lists common questions and answers for licensing and plan options.
 
-For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+For more details about Microsoft Power Apps licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### I have a Power Apps per user license. Can I use it to run Power Automate Flows?
 
@@ -73,5 +73,3 @@ Creating and managing Power Apps do not require a license, so users will be able
 
 ### I can play an app that uses DVs inside Teams in a DV for Teams environment, but when trying to play the same app standalone I get a prompt message.
 If the user only has an Office seeded license, and the app uses Dataverse for Teams, it can only be used when embedded within Teams.
-
-```
