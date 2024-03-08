@@ -74,7 +74,7 @@ The **Environment routing** setting is disabled by default and must be enabled u
 1. Sign in to your tenant account.
 
    ```powershell
-   $Add-PowerAppsAccount -Endpoint "prod" -TenantID &lt;Tenant\_ID&gt;
+   Add-PowerAppsAccount -Endpoint "prod" -TenantID <Tenant_ID>
    ```
 
 1. Retrieve and store your tenant settings in tenantSettings.
@@ -83,13 +83,23 @@ The **Environment routing** setting is disabled by default and must be enabled u
    $tenantSettings = Get-TenantSettings  
    ```
   
+
 1. Set the **enableDefaultEnvironmentRouting** flag to **True**.
 
    ```powershell
-   $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
+   tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
    
    Set-TenantSettings -RequestBody $tenantSettings
    ```
+
+1. Set the **enableDefaultEnvironmentRouting** flag to **True**.
+```powershell
+$tenantSettings = Get-TenantSettings
+$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force  // This value can be set to $true to allow routing for all makers or $False to limit routing to new makers
+$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetEnvironmentGroupId' -Value "<GUID for the group that has published rules>" -Force // 
+$tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
+Set-TenantSettings -RequestBody $tenantSettings
+```
 
 For more information about using PowerShell in Power Apps, see the [Overview](/powershell/powerapps/overview).
 
