@@ -9,6 +9,7 @@ ms.author: johnev
 ms.reviewer: sericks
 ms.contriutors:
  - mbajwa
+ - olegov
 ---
 
 # Microsoft Dataverse analytics
