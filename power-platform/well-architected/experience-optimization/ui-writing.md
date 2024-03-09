@@ -24,9 +24,9 @@ This guide describes the recommendations for
 
 When using a business application, people aren't interested in the features of the UI or being entertained by flowery language. They're focused on task completion. Help them by writing in short, scannable blocks. Divide text into shorter sentences and paragraphs. Avoid overly gushy language. Users often visit a UI with specific objectives in mind, and content should guide them seamlessly toward achieving those objectives.
 
-Be concise. Content should be brief and to the point. Concise doesn't mean limited; it means efficient. Use as few words as possible without losing the meaning. When writing concisely, make sure every word on the screen has a job. Only provide the info needed in the moment, also keeping in mind that too much content is less likely to be read.
+Bite-sized chunks create a natural flow. Focus on the reader, the action taken, or what they can expect next. Don't include information that's irrelevant or distracts from the task at hand because it adds to frustration and cognitive load. For task-level content, do not focus on your company or branding.
 
-Follow Mark Twain's advice: "Writing is easy. All you have to do is cross out the wrong words." 
+Be concise. Content should be brief and to the point. Concise doesn't mean limited; it means efficient. Use as few words as possible without losing the meaning. When writing concisely, make sure every word on the screen has a job. Only provide the info needed in the moment, also keeping in mind that too much content is less likely to be read. Follow Mark Twain's advice: "Writing is easy. All you have to do is cross out the wrong words." 
 
 Tell people what they need to know. The content should provides users with the essential information required to accomplish their tasks or make informed decisions within the UI. Users rely on content to guide their interactions and expect clear, relevant information that meets their needs. It should never cause confusion or frustration during their user journey.
 
