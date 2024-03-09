@@ -52,11 +52,13 @@ Replace overly technical words with simpler ones. Using words like configure, ac
 
 Avoid double negatives. Double negatives increase cognitive load — they make people spend extra time decoding the message. Focus on direct, positive actions.
 
-### Maintain a consistent and polite tone
+### Maintain stylistic consistency
 
 Use one word or phrase to refer to a specific action or thing across the experience every time. For example, if you call the process of securing a reservation 'booking' in one place, don't call it 'planning' or 'scheduling' somewhere else. To help drive consistency, check word usage across your organization and then keep a term list that you and your team agree to. 
 
 Use the proper capitalization. Sentence casing means you only capitalize the first word in a sentence. Proper nouns—names of people, places, and some products—also get capitalized. For subheads, buttons, and hyperlinks, use sentence casing without punctuation. When in doubt, don't capitalize. Use title case for titles (e.g., Chief Financial Officer), organization names (e.g., Human Resources), branded products or programs, and names of people and places. All caps is not recommended under any circumstance; for stylistic usage, it's recommended to use different typography styling (size, font weight and color) rather than all caps.
+
+### Use a polite, relatable tone
 
 Write as if speaking directly to the reader. Second person often uses the pronoun 'you'. It supports a friendly, human tone and helps avoid passive voice by focusing on the reader. You should omit pronouns and accompanying auxiliary verbs, and start your sentence with a verb. Make a connection with the reader by using 'you' or 'your'.
 
@@ -109,7 +111,7 @@ For best practices and standards, lean heavily into active voice. For general gu
 
 ### Be mindful of assistive technologies
 
-Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alt text for images, appropriate ARIA labels, proper heading structures, and keyboard navigation options ensures that the UI content can be accessed and easily understood by people using assistive technologies.
+Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alt text for images, appropriate ARIA labels, proper heading structures, and keyboard navigation options ensures that the UI content can be accessed and easily understood by people depending on assistive technologies.
 
 ## Power Platform facilitation
 
