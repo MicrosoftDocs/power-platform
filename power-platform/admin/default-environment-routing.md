@@ -16,22 +16,23 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
-Environment routing is a premium, governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com/). Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
+Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com/). Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
 
-When the **Environment routing** setting is enabled in [make.powerapps.com](https://make.powerapps.com/), the maker opens their own personal developer environment instead of the environment. Personal developer environments are the makers' own spaces, like OneDrive, for personal productivity where they can start building apps and solutions in their own workspace. Makers don't need to know which environment to work in, since the personal developer environment appears automatically.
+When the **Environment routing** setting is enabled in [Power Platform Admin Center](https://admin.powerplatform.microsoft.com), the maker lands in their own personal developer environment instead of the default environment. Personal developer environments are the makers' own spaces, like OneDrive, for personal productivity where they can start building apps and solutions in their own workspace. Makers don't need to know which environment to work in, since the personal developer environment appears automatically.
+
 
 :::image type="content" source="media/default-environment-routing/diagram-environment-routing.png" alt-text="Diagram showing how new and existing makers fit into the environment routing and environment group.":::
+:::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where the location is to turn on the 'Create personal developer environments for new makers' option." lightbox="media/default-environment-routing/environment-routing.png":::
 
-This example shows you how environment routing activates when the feature is turned on.
-
-Let's say you have your own development environment and you decide to add another user to your environment. The user isn't the owner of that development environment, so when you try to add them, a new development environment is created for them. The user is routed to their new environment, not your own.
+  
+When the feature is turned on, the selected maker type (i.e. new or existing makers), will always land into their own personal developer environment. If the maker has access to one or more existing developer environment that is not owned by them, they will be routed to a new developer environment. 
 
 Dataverse is available in developer environments, and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings already preconfigured, such as sharing limits and solution checker. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
 
 > [!IMPORTANT]
 >
 > - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - Preview features aren't meant for production use and may have restricted functionality.
 > - By default, all developer environments created through environment routing are managed.
 > - Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 > - **Non-managed** developer environments are **unaffected** by this feature. Learn more about the developer environment and developer plan in [About the Power Apps Developer Plan](../developer/plan.md).
@@ -48,7 +49,9 @@ Understand that environment routing is a tenant-level, admin setting that:
 
 - Requires the use of Managed Environments, since all of the newly, created environments are managed. Users in a _managed_ developer environment must have premium licenses to run Power Platform assets.
 
-- A personal developer environment is automatically created for all of your Power Apps new or existing makers when they go to [make.powerapps.com](https://make.powerapps.com) for the first time. Returning makers who revisit the site aren't impacted.
+- A personal developer environment is automatically created for Power Apps new or existing makers (depending on the configured user type) when they go to [make.powerapps.com](https://make.powerapps.com).
+
+- Routed makers will land into their existing developer environment if they already have a developer environment that they own.
 
 - Makers are assigned the admin role in their newly created developer environments.
 
@@ -62,7 +65,7 @@ The **Environment routing** setting is disabled by default and must be enabled u
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Settings**.
 1. On the **Tenant settings** page, select **Environment routing (preview)**.
-1. In the **Environment routing** pane, turn on the **Create personal developer environments for new makers** option.
+1. In the **Environment routing** pane, turn on the **Create personal developer environments for makers** option.
 1. Select the desired user type to include in routing. The **All Makers** option routes all Power Apps makers into existing or new personal developer environments. The **New Makers** option routes new makers only.
 1. (Optional) Select an environment group, to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. For more information, see [Environments groups (preview)](environment-groups.md).
 1. (Optional) Admins can select a security group to limit routing only to the member makers of the configured security group. For more information, see [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
@@ -82,21 +85,19 @@ The **Environment routing** setting is disabled by default and must be enabled u
    ```powershell
    $tenantSettings = Get-TenantSettings  
    ```
-  
 
 1. Set the `enableDefaultEnvironmentRouting` flag to **True**.
 
    ```powershell
    tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
-   
    Set-TenantSettings -RequestBody $tenantSettings
    ```
-1. Set the `environmentRoutingAllMakers` flag to **True** or **False**.
+   
+1. Set the `environmentRoutingAllMakers` flag to **True** to allow routin gfor all makers or **False** to limit routing to new makers.
 
    ```powershell
    $tenantSettings = Get-TenantSettings
-   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force  # This value can be set to $true to allow 
-   routing for all makers or $False to limit routing to new makers
+   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force
    ```
 
 1. (Optional) Set the `environmentRoutingTargetEnvironmentGroupId` to the desired Environment Group ID.
@@ -108,17 +109,14 @@ The **Environment routing** setting is disabled by default and must be enabled u
 
    ```powershell
    $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
+
    ```
 1. Save `TenantSettings`.
-
    ```powershell
    Set-TenantSettings -RequestBody $tenantSettings
    ```
 
-## Disable environment routing for your tenant using PowerShell 
-
-To disable environment routing for your tenant, run these PowerShell commands:
-
+1. Disable environment routing for your tenant using PowerShell 
 ```powershell
 $tenantSettings = Get-TenantSettings  
 
@@ -128,30 +126,6 @@ Set-TenantSettings -RequestBody $tenantSettings
 ```
 
 For more information about using PowerShell in Power Apps, see the [Overview](/powershell/powerapps/overview).
-
-#### [Power Platform CLI](#tab/pacCLI)
-
-1. Create an authentication profile.
-
-   ```powershell
-   pac auth create
-   ```
-
-1. Retrieve and store your tenant settings in JSON file.
-
-   ```powershell
-   pac admin list-tenant-settings --settings-file <settings_file_path>
-   ```
-
-1. Set the `enableDefaultEnvironmentRouting` flag to **true** in the JSON file.
-
-   :::image type="content" source="media/environment-routing2.png" alt-text="Screenshot that shows how you set the enableDefaultEnvironmentRouting flag to true.":::
-
-1. Update the tenant settings.
-
-   ```powershell
-   pac admin update-tenant-settings --settings-file <settings_file_path>
-   ```
 
 ---
 
@@ -219,7 +193,7 @@ The maker is always routed to their own existing personal developer environment,
 
 ### What happens if the Power Platform admin changes the Developer environment assignments setting from "Everyone" to "Only specific admins" while Environment routing is **On**? 
 
-The admin recieves the following error "Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: 1234567910." The admin won't be able to change the Developer environment assignments setting. 
+The admin recieves the following error "Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: 1234567910." The admin won't be able to change the Developer environment assignments setting unless they turn environment routing off. 
 
 ### Where are makers routed to if they don’t have an existing developer environment?
 
