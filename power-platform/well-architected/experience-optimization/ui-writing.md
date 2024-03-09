@@ -90,7 +90,7 @@ Avoid using first-person possessive phrasing like 'My dashboard' while also writ
 
 When it's the product or app speaking, use 'we' or your organization's name. This avoids confusion about who's doing the talking or who should act. For example, use 'We found these results', rather than 'I found these results'. The word 'we', which is a first person pronoun, can help create a more human experience with the UI. It can help demonstrate accountability for system or input errors to show people they're important every step of the way. However, avoid overusing it as it diverts attention from readers and what they need to do. To make your product more centered on the reader, consider only using 'we' for systems errors, status updates, and other system-related issues.
 
-### Construct useful messages that facilitate progress
+### Construct meaningful content to facilitate progress
 
 Put the benefit before the action or feature. This increases the reader's ability to quickly complete tasks by explaining the benefit first. What good thing will happen if they do the action? Explain the benefit before telling them to take an action, and avoid asking for an action before explaining why.
 
@@ -98,25 +98,18 @@ Avoid double negatives. Double negatives increase cognitive load — they make p
 
 Use specific verbs whenever possible. Specific verbs are more meaningful to people than generic ones. Help your reader quickly understand available options or necessary actions by using specific words like get, update, choose, or change. You can avoid confusion and reduce ambiguity by eliminating words that have different meanings. 
 
+Use consistent terminology. Use one word or phrase to refer to a specific action or thing across the experience every time. For example, if you call the process of securing a reservation 'booking' in one place, don't call it 'planning' or 'scheduling' somewhere else. To help drive consistency, check word usage across your organization and then keep a term list that you and your team agree to. 
 
-7. Know When to Focus on the Reader
+Avoid jargon and acronyms. Even most software engineers prefer simple, non-technical language. It's especially important to avoid jargon in error messages. It's also important to remember that many common phrases are colloquialisms and may not be meaningful to everyone.
+Replace overly technical words with simpler ones. Using words like configure, activate, or invalid are unnecessarily technical. Keep it simple. Only use acronyms your readers are familiar with. Spell out acronyms on the first mention on each page and include the parenthetic reference. For example, call to action (CTA). If the spelled-out version of an acronym exceeds a character limit, consider writing around the phrase. 
 
-Organize content in a logical hierarchy
-Put the benefit before the action or feature
-Avoid Double Negatives
-Language Precision and Consistency:
-10. Use Specific Verbs Whenever Possible
+Use the proper capitalization. Sentence casing means you only capitalize the first word in a sentence. Proper nouns—names of people, places, and some products—also get capitalized. For subheads, buttons, and hyperlinks, use sentence casing without punctuation. When in doubt, don't capitalize. Use title case for titles (e.g., Chief Financial Officer), organization names (e.g., Human Resources), branded products or programs, and names of people and places. All caps is not recommended under any circumstance; for stylistic usage, it's recommended to use different typography styling (size, font weight and color) rather than all caps.
 
-Use consistent terminology and formatting
-Avoid Jargon and Acronyms
-Presentation and Formatting:
-13. Use Proper Capitalization
+Keep important info up front. Start with the most important piece of info—the value proposition. Then, if there's room, add a brief paragraph or two with info in order of importance. If you need to say more, use a 'Read more' link. Sometimes it's easier to write the body of the message first and then write the headline.
 
+Be polite—not overly ingratiating. People expect to be given prompts and to act. Using 'please' throughout the UI is unnecessary and comes across as amateure. Use please and sorry sparingly, only when the task you're asking is onerous, is your mistake, or has serious consequences. However, it's never good practice to be rude, presumptuous, cocky, or cynical in UI content.
 
-Be Polite—not Overly Ingratiating
-
-
-
+Use common contractions, such as it's, you're, that's, and don't, to create a friendly, informal tone. Never use your company's name in the possessive form, and avoid using it in a contraction. Avoid ambiguous or unpopular contractions such as there'd and what're. Avoid mixing contractions and spelled-out words in UI as it creates inconsistency and reduces trust. Using spelled-out words in place of common contractions introduces unnecessary formality.
 
 ## Power Platform facilitation
 
