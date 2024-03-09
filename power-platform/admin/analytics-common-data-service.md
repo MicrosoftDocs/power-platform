@@ -3,7 +3,7 @@ title: "View and download Dataverse analytics"
 description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
 author: Zeffin 
 ms.topic: conceptual
-ms.date: 02/08/2024
+ms.date: 03/08/2024
 ms.subservice: admin
 ms.author: johnev
 ms.reviewer: sericks
@@ -258,11 +258,23 @@ For more information about the API count and time limits, refer to [service prot
 
 ##### Example scenarios
 
-The following are two example scenarios to help understand how to interprete the API call rate report.
+API peak call rate is based on either the number of requests or execution time measured by the service protection limits, whichever is greater. One request is equivalent to 150ms of execution time measured by the time limit. 
 
-**Scenario 1**: Client sends 150,000 web API calls in 5 minutes that each execute for 50 ms. 150,000 per 5 minutes is 30,000 per minute, or 500 requests per second. The time recorded is 750,000 ms, equivalent to 5000 API calls per 5 minutes(750,000 / 150), or 17 requests per second. The burst limit records a higher value in this case, so the peak rate displayed is 500 API calls per second.
+The scenarios below show how the peak call rate is derived based on either request count or execution time using 150ms as the conversion factor from time to count.
 
-**Scenario 2:** Client sends 300 web API calls in 5 minutes that each execute for 10 seconds. The burst API limit records an incoming rate of one request per second. The time recorded is 3,000 seconds or 3,000,000 ms, equivalent to 20,000 API calls per 5 minutes (3,000,000 / 150), or 67 API calls per second. The time limit records a higher value in this case, so the peak rate displayed is 67 API calls per second.
+**Scenario 1**: Client sends 150,000 web API calls in 5 minutes that each execute for 50ms. 
+
+- Count is 500 requests per second (150,000 per 5 minutes is 30,000 per minute)
+- Time is equivalent to 17 requests per second (750,000ms total time, or 5000 calls per 5 minutes (750,000ms / 150ms))
+
+Request count is higher in this case, so the peak rate displayed is 500 requests per second.
+
+**Scenario 2**: Client sends 300 web API calls in 5 minutes that each execute for 10 seconds.
+
+- Count is 1 request per second (there are 300 seconds in 5 minutes)
+- Time is equivalent to 67 requests per second (3,000,000ms total time, or 20,000 API calls per 5 minutes (3,000,000ms / 150ms).
+
+Execution time converts to a higher request count in this case, so the peak rate displayed is 67 API calls per second.
 
 #### Optimize API peak call rate
 
