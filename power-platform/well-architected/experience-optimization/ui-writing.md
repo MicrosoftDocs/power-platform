@@ -50,12 +50,42 @@ How people react to and feel about your product depends partly on the quality of
 
 #### Know when to use active voice 
 
+#### Know when to use active voice 
+
 In an _active_ voice, the subject performs the action. It starts with the person or thing that's taking the action. 
 
-In passive voice, the subject receives the action. The past participle of the action verb follows some form of the verb to be (e.g., has been, will be). 
+In _passive_ voice, the subject receives the action (as opposed to performing it). The past participle of the action verb follows some form of the verb to be (e.g., has been, will be). Unlike active voice, passive voice obscures or omits the actor, making the sentence less direct and sometimes ambiguous.
 
-For best practices and standards, lean heavily into active voice. For general guidelines and don’ts, use passive voice.
+**Active vs Passive voice examples**
 
+| Active | Passive |
+| ------ | ------- |
+| "The developer fixed the bug." | The bug was fixed by the developer." |
+| "Click the 'Submit' button to save your changes." | "Your changes will be saved when the 'Submit' button is clicked." |
+| "Enter your email address to receive updates." | "Updates will be received once the email address is entered." |
+| "Select your preferred language from the dropdown menu." | "The preferred language can be selected from the dropdown menu." |
+| "Tap the 'Send' button to share the document." | "The document can be shared by tapping the 'Send' button." | 
+| "Fill out the form with your contact information." | "The form should be filled out with contact information." |
+| "Select a payment method to complete your purchase." | "A payment method must be selected to complete the purchase." | 
+| "Review the terms and conditions before proceeding." | "The terms and conditions should be reviewed before proceeding." |
+| "Click on the image to view it in full size." | "The image can be viewed in full size by clicking on it." |
+
+In each of these examples, the active voice provides clear instructions to the user (the subject) by specifying the action they need to take. This clarity helps users understand what they need to do more efficiently as it gives better direction. In the passive examples, no actor is indicated, so it's unclear who should be performing the action on the subject. The user should be aware when they need to take action. 
+
+Passive voice may be more appropriate in user interfaces when the emphasis is on the action or event itself rather than on who performed it. For example, in error messages or system notifications where the focus is on conveying information about what happened rather than assigning blame or responsibility (either on the user or on the system), passive voice can be useful. It may be preferred when the actor is unknown, irrelevant, or intentionally omitted from the message to maintain a neutral tone. Use judiciously, only when it enhances clarity and comprehension.
+
+| Active | Passive | 
+| ------ | ------- |
+| "You entered the password incorrectly." | "The password was entered incorrectly." |
+| "We have reset your password." | "Your password has been reset." |
+| "We couldn't find the file." | "The file could not be found." |
+| "We updated the application settings." | "The application settings have been updated." |
+| "You submitted the form." | "The form has been submitted." |
+| "We encountered an error while processing your request." | "An error occurred while processing your request." |
+| "The system failed to activate your account." | "The account activation failed." |
+| "We saved the changes." | "The changes have been saved." |
+
+For best practices and standards, lean heavily into active voice. For general guidelines (especially when recommending things to avoid), use passive voice.
 
 Use Second Person
 Effective Messaging Techniques:
