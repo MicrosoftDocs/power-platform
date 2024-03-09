@@ -9,7 +9,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for optimizing user perception and aesthetics
+# Recommendations for writing content for user interfaces
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
