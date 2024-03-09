@@ -60,13 +60,10 @@ In _passive_ voice, the subject receives the action (as opposed to performing it
 
 | Active | Passive |
 | ------ | ------- |
-| "The developer fixed the bug." | The bug was fixed by the developer." |
 | "Click the 'Submit' button to save your changes." | "Your changes will be saved when the 'Submit' button is clicked." |
 | "Enter your email address to receive updates." | "Updates will be received once the email address is entered." |
 | "Select your preferred language from the dropdown menu." | "The preferred language can be selected from the dropdown menu." |
-| "Tap the 'Send' button to share the document." | "The document can be shared by tapping the 'Send' button." | 
 | "Fill out the form with your contact information." | "The form should be filled out with contact information." |
-| "Select a payment method to complete your purchase." | "A payment method must be selected to complete the purchase." | 
 | "Review the terms and conditions before proceeding." | "The terms and conditions should be reviewed before proceeding." |
 | "Click on the image to view it in full size." | "The image can be viewed in full size by clicking on it." |
 
@@ -77,9 +74,7 @@ Passive voice may be more appropriate in user interfaces when the emphasis is on
 | Active | Passive | 
 | ------ | ------- |
 | "You entered the password incorrectly." | "The password was entered incorrectly." |
-| "We have reset your password." | "Your password has been reset." |
 | "We couldn't find the file." | "The file could not be found." |
-| "We updated the application settings." | "The application settings have been updated." |
 | "You submitted the form." | "The form has been submitted." |
 | "We encountered an error while processing your request." | "An error occurred while processing your request." |
 | "The system failed to activate your account." | "The account activation failed." |
