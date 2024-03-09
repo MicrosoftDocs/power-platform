@@ -67,7 +67,7 @@ In _passive_ voice, the subject receives the action (as opposed to performing it
 
 In each of these examples, the active voice provides clear instructions to the user (the subject) by specifying the action they need to take. This clarity helps users understand what they need to do more efficiently as it gives better direction. In the passive examples, no actor is indicated, so it's unclear who should be performing the action on the subject. The user should be aware when they need to take action. 
 
-Passive voice may be more appropriate in user interfaces when the emphasis is on the action or event itself rather than on who performed it. For example, in error messages or system notifications where the focus is on conveying information about what happened rather than assigning blame or responsibility (either on the user or on the system), passive voice can be useful. It may be preferred when the actor is unknown, irrelevant, or intentionally omitted from the message to maintain a neutral tone. Use judiciously, only when it enhances clarity and comprehension.
+Passive voice can be used to soften messages or avoid being too direct, such as when errors occur. For example, when the focus is on conveying information about what happened rather than assigning blame or responsibility.
 
 | Active | Passive | 
 | ------ | ------- |
@@ -78,10 +78,27 @@ Passive voice may be more appropriate in user interfaces when the emphasis is on
 | "The system failed to activate your account." | "The account activation failed." |
 | "We saved the changes." | "The changes have been saved." |
 
+People find failures frustrating regardless of who's at fault. Never imply blame or accuse the reader.
+
 For best practices and standards, lean heavily into active voice. For general guidelines (especially when recommending things to avoid), use passive voice.
 
-Use Second Person
-Effective Messaging Techniques:
+### Use Second Person
+
+Write as if speaking directly to the reader. Second person often uses the pronoun you. It supports a friendly, human tone and helps avoid passive voice by focusing on the reader. You should omit pronouns and accompanying auxiliary verbs, and start your sentence with a verb. Make a connection with the reader by using 'you' or 'your'.
+
+Avoid using first-person possessive phrasing like 'My dashboard' while also writing in second person because it increases cognitive load. 
+
+When it's the product or app speaking, use 'we' or your organization's name. This avoids confusion about who's doing the talking or who should act. For example, use 'We found these results', rather than 'I found these results'. The word 'we', which is a first person pronoun, can help create a more human experience with the UI. It can help demonstrate accountability for system or input errors to show people they're important every step of the way. However, avoid overusing it as it diverts attention from readers and what they need to do. To make your product more centered on the reader, consider only using 'we' for systems errors, status updates, and other system-related issues.
+
+### Construct useful messages that facilitate progress
+
+Put the benefit before the action or feature. This increases the reader's ability to quickly complete tasks by explaining the benefit first. What good thing will happen if they do the action? Explain the benefit before telling them to take an action, and avoid asking for an action before explaining why.
+
+Avoid double negatives. Double negatives increase cognitive load — they make people spend extra time decoding the message. Focus on direct, positive actions.
+
+Use specific verbs whenever possible. Specific verbs are more meaningful to people than generic ones. Help your reader quickly understand available options or necessary actions by using specific words like get, update, choose, or change. You can avoid confusion and reduce ambiguity by eliminating words that have different meanings. 
+
+
 7. Know When to Focus on the Reader
 
 Organize content in a logical hierarchy
