@@ -39,12 +39,12 @@ Promote accessibility. Accessibility involves ensuring that content is perceivab
 ### Use appropriate tone
 
 #### Understand types of statements
-How people react to and feel about your appication depends partly on the quality of the writing and the overall voice and tone in which you speak. When writing in general, there are four types of statements that you can use. Typically, UI content uses three of the four, depending on the purpose of the content and the nature of the product.
+How people react to and feel about your appication depends partly on the quality of the writing and the overall voice and tone in which you speak. When writing in general, there are four types of statements (or sentence structures) that you can use. Typically, UI content uses three of the four, depending on the purpose of the content and the nature of the product.
 
 - Use _declarative_ statements regularly. A description of the features of a component is an example of when you'd use a declarative statement.
 - Use _imperatives_ freely. These are prompts and commands. For example, when asking the reader to review changes and then submit.
-- Use caution with _interrogative_ statements (aka questions). They are okay in product flows where people must make choices. They can help uncover solutions or clarify a reader's needs.
-- Occasionally, _exclamatory_ statements can be used in UI content. Just remember, the more you use them, the smaller the positive impact.
+- Use caution with _interrogative_ statements. These are questions. They are okay in product flows where people must make choices. They can help uncover solutions or clarify a reader's needs.
+- Occasionally, _exclamatory_ statements can be used in UI content. Use judiciously, keeping in mind the more you use them, the smaller the positive impact.
 
 #### Know when to use active voice 
 
@@ -79,7 +79,7 @@ People find failures frustrating regardless of who's at fault. Never imply blame
 
 For best practices and standards, lean heavily into active voice. For general guidelines (especially when recommending things to avoid), use passive voice.
 
-### Use Second Person
+#### Correct pronoun usage
 
 Write as if speaking directly to the reader. Second person often uses the pronoun you. It supports a friendly, human tone and helps avoid passive voice by focusing on the reader. You should omit pronouns and accompanying auxiliary verbs, and start your sentence with a verb. Make a connection with the reader by using 'you' or 'your'.
 
