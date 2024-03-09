@@ -34,10 +34,10 @@ Include sentences of 25 words or less. Sentences should be brief and succinct. S
 
 Promote accessibility. Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alt text for images, proper heading structures, and keyboard navigation options ensures that the UI content can be accessed and utilized by assistive technologies.
 
-### Use the appropriate tone for the situation
+### Use appropriate tone
 
 #### Understand types of statements
-How people react to and feel about your product depends partly on the quality of the writing and the overall voice and tone in which you speak. When writing in general, there are four types of statements that you can use. Typically, UI copy uses three of the four, depending on the purpose of the copy and the nature of the product.
+How people react to and feel about your appication depends partly on the quality of the writing and the overall voice and tone in which you speak. When writing in general, there are four types of statements that you can use. Typically, UI copy uses three of the four, depending on the purpose of the copy and the nature of the product.
 
 - Use _declarative_ statements regularly. A description of the features of a component is an example of when you'd use a declarative statement.
 - Use _imperatives_ freely. These are prompts and commands. For example, when asking the reader to review changes and then submit.
