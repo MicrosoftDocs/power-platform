@@ -36,8 +36,10 @@ Simplicity helps users learn the system, perform their tasks, and achieve their 
 
 |Approach|Benefit|
 |-|-|
+|Create a coherent and logical structure of information, content, and functionality in the interface.| Benefit |
 |Follow established conventions and patterns. Use common and recognizable icons, symbols, and layouts. Follow the standards and guidelines of the platform. Leverage the existing mental models and expectations of the users. | Users can easily figure out how to use the workload without spending a lot of time or effort in learning new interactions or workflows. This faster learning speeds up user onboarding and adoption.<br/><br/>Users have a feeling of consistency as they experience design elements and interactions that they have recognized and used before. This consistency lowers mental effort and makes it simpler for users to comprehend and navigate the interface.<br/><br/>There is uniformity across interfaces, both within a workload and across different workloads. Uniform design elements and interactions facilitate the learning and usage of the interface for users, regardless of their prior experience.|
-|Use clear and consistent language. Use simple and familiar words, avoid jargon and ambiguity, and use consistent terminology throughout the interface. |Users understand the information and instructions.|
+|Use clear and simple language to share information, directions, and feedback with users.|Users understand the information and instructions.|
+|Use progressive disclosure methods to show information slowly and only when necessary. Provide information and options in a tiered or situational way to prevent users from feeling overloaded with too much information at once.| Benefit |
 |Focus on the most important information and actions. Eliminate any elements, features, or fields that are not needed. |Users focus on the important elements, scan and read the content easily, and avoid distractions and overload.<br/><br/>The design is aesthetically pleasing and usability is improved. |
 
 ## Design for consistency
