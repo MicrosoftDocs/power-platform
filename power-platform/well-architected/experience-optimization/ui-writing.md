@@ -38,7 +38,7 @@ Bite-sized chunks create a natural flow. Focus on the reader, the action taken, 
 
 Put the benefit before the action or feature. This increases the reader's ability to quickly complete tasks by explaining the benefit first. What good thing will happen if they do the action? Explain the benefit before telling them to take an action, and avoid asking for an action before explaining why.
 
-For task-level content, do not focus on your company or branding unnecessarily (e.g., "The Microsoft Connector shuttle service will conveniently arrive at your campus location at 2:15 PM" vs "The shuttle will arrive at 2:15 PM").
+For task-level content, do not focus on boasting your company brand in obstructive ways to your user (e.g., "The Microsoft Connector shuttle service will conveniently arrive at your campus location at 2:15 PM" vs "The shuttle will arrive at 2:15 PM").
 
 ### Speak in plain language
 
