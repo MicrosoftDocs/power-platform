@@ -24,7 +24,9 @@ This guide describes the recommendations for
 
 When using a business application, people aren't interested in the features of the UI or being entertained by flowery language. They're focused on task completion. Help them by writing in short, scannable blocks. Divide text into shorter sentences and paragraphs. Avoid overly gushy language. Users often visit a UI with specific objectives in mind, and content should guide them seamlessly toward achieving those objectives.
 
-Be concise. Content should be brief and to the point. Concise doesn't mean limited; it means efficient. Use as few words as possible without losing the meaning. When writing concisely, make sure every word on the screen has a job. Follow Mark Twain's advice: "Writing is easy. All you have to do is cross out the wrong words." 
+Be concise. Content should be brief and to the point. Concise doesn't mean limited; it means efficient. Use as few words as possible without losing the meaning. When writing concisely, make sure every word on the screen has a job. Only provide the info needed in the moment, also keeping in mind that too much content is less likely to be read.
+
+Follow Mark Twain's advice: "Writing is easy. All you have to do is cross out the wrong words." 
 
 Tell people what they need to know. The content should provides users with the essential information required to accomplish their tasks or make informed decisions within the UI. Users rely on content to guide their interactions and expect clear, relevant information that meets their needs. It should never cause confusion or frustration during their user journey.
 
@@ -37,12 +39,12 @@ Promote accessibility. Accessibility involves ensuring that content is perceivab
 ### Use appropriate tone
 
 #### Understand types of statements
-How people react to and feel about your appication depends partly on the quality of the writing and the overall voice and tone in which you speak. When writing in general, there are four types of statements that you can use. Typically, UI copy uses three of the four, depending on the purpose of the copy and the nature of the product.
+How people react to and feel about your appication depends partly on the quality of the writing and the overall voice and tone in which you speak. When writing in general, there are four types of statements that you can use. Typically, UI content uses three of the four, depending on the purpose of the content and the nature of the product.
 
 - Use _declarative_ statements regularly. A description of the features of a component is an example of when you'd use a declarative statement.
 - Use _imperatives_ freely. These are prompts and commands. For example, when asking the reader to review changes and then submit.
 - Use caution with _interrogative_ statements (aka questions). They are okay in product flows where people must make choices. They can help uncover solutions or clarify a reader's needs.
-- Occasionally, _exclamatory_ statements can be used in UI copy. Just remember, the more you use them, the smaller the positive impact.
+- Occasionally, _exclamatory_ statements can be used in UI content. Just remember, the more you use them, the smaller the positive impact.
 
 #### Know when to use active voice 
 
