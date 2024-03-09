@@ -22,8 +22,6 @@ When the **Environment routing** setting is enabled in [Power Platform Admin Cen
 
 
 :::image type="content" source="media/default-environment-routing/diagram-environment-routing.png" alt-text="Diagram showing how new and existing makers fit into the environment routing and environment group.":::
-:::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where the location is to turn on the 'Create personal developer environments for new makers' option." lightbox="media/default-environment-routing/environment-routing.png":::
-
   
 When the feature is turned on, the selected maker type (i.e. new or existing makers), will always land into their own personal developer environment. If the maker has access to one or more existing developer environment that is not owned by them, they will be routed to a new developer environment. 
 
