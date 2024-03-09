@@ -20,25 +20,37 @@ This guide describes the recommendations for
 
 ## Key design strategies
 
-### Make it scannable, task focused, and contextual 
+### Make it scannable
 
 When using a business application, people aren't interested in the features of the UI or being entertained by flowery language. They're focused on task completion. Help them by writing in short, scannable blocks. Divide text into shorter sentences and paragraphs. Avoid overly gushy language. Users often visit a UI with specific objectives in mind, and content should guide them seamlessly toward achieving those objectives.
 
-Bite-sized chunks create a natural flow. Focus on the reader, the action taken, or what they can expect next. Don't include information that's irrelevant or distracts from the task at hand because it adds to frustration and cognitive load. For task-level content, do not focus on your company or branding unnecessarily (e.g., "The Microsoft Connector shuttle service will conveniently arrive at your campus location at 2:15 PM" vs "The shuttle will arrive at 2:15 PM").
-
 Be concise. Content should be brief and to the point. Concise doesn't mean limited; it means efficient. Use as few words as possible without losing the meaning. When writing concisely, make sure every word on the screen has a job. Only provide the info needed in the moment, also keeping in mind that too much content is less likely to be read. Follow Mark Twain's advice: "Writing is easy. All you have to do is cross out the wrong words." 
 
+Keep important info up front. Start with the most important piece of info—the value proposition. Then, if there's room, add a brief paragraph or two with info in order of importance. If you need to say more, use a 'Read more' link. Sometimes it's easier to write the body of the message first and then write the headline.
+
+Promote accessibility. Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alt text for images, proper heading structures, and keyboard navigation options ensures that the UI content can be accessed and utilized by assistive technologies.
+
+### Keep it contextual and task-focused
+
 Tell people what they need to know. The content should provides users with the essential information required to accomplish their tasks or make informed decisions within the UI. Users rely on content to guide their interactions and expect clear, relevant information that meets their needs. It should never cause confusion or frustration during their user journey.
+
+Bite-sized chunks create a natural flow. Focus on the reader, the action taken, or what they can expect next. Don't include information that's irrelevant or distracts from the task at hand because it adds to frustration and cognitive load.
+
+For task-level content, do not focus on your company or branding unnecessarily (e.g., "The Microsoft Connector shuttle service will conveniently arrive at your campus location at 2:15 PM" vs "The shuttle will arrive at 2:15 PM").
+
+### Write in plain language
 
 Speak in plain language. Use simple, clear language that is easily understood by the target audience, devoid of unnecessary jargon or technical terms. Users should be able to comprehend content effortlessly, reducing the likelihood of confusion or misinterpretation, ultimately improving engagement. Keeps reading levels no higher than tenth grade. Maintaining an appropriate reading level enhances accessibility and inclusivity, catering to a broader range of users.
 
 Include sentences of 25 words or less. Sentences should be brief and succinct. Short sentences with sufficient information facilitate comprehension, making the content easier to read and understand. 
 
-Promote accessibility. Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alt text for images, proper heading structures, and keyboard navigation options ensures that the UI content can be accessed and utilized by assistive technologies.
+Avoid jargon and acronyms. Even most software engineers prefer simple, non-technical language. It's especially important to avoid jargon in error messages. It's also important to remember that many common phrases are colloquialisms and may not be meaningful to everyone.
 
-### Use appropriate tone
+Replace overly technical words with simpler ones. Using words like configure, activate, or invalid are unnecessarily technical. Keep it simple. Only use acronyms your readers are familiar with. Spell out acronyms on the first mention on each page and include the parenthetic reference. For example, call to action (CTA). If the spelled-out version of an acronym exceeds a character limit, consider writing around the phrase. 
 
-#### Understand types of statements
+Avoid double negatives. Double negatives increase cognitive load — they make people spend extra time decoding the message. Focus on direct, positive actions.
+
+### Use appropriate sentence structure
 How people react to and feel about your appication depends partly on the quality of the writing and the overall voice and tone in which you speak. When writing in general, there are four types of statements (or sentence structures) that you can use. Typically, UI content uses three of the four, depending on the purpose of the content and the nature of the product.
 
 - Use _declarative_ statements regularly. A description of the features of a component is an example of when you'd use a declarative statement.
@@ -46,7 +58,7 @@ How people react to and feel about your appication depends partly on the quality
 - Use caution with _interrogative_ statements. These are questions. They are okay in product flows where people must make choices. They can help uncover solutions or clarify a reader's needs.
 - Occasionally, _exclamatory_ statements can be used in UI content. Use judiciously, keeping in mind the more you use them, the smaller the positive impact.
 
-#### Know when to use active voice 
+### Know when to use active voice 
 
 In an _active_ voice, the subject performs the action. It starts with the person or thing that's taking the action. For example, "Enter a few letters" is a simple, direct request for the reader to take action.
 
@@ -65,7 +77,7 @@ In _passive_ voice, the subject receives the action (as opposed to performing it
 
 In each of these examples, the active voice provides clear instructions to the user (the subject) by specifying the action they need to take. This clarity helps users understand what they need to do more efficiently as it gives better direction. In the passive examples, no actor is indicated, so it's unclear who should be performing the action on the subject. The user should be aware when they need to take action. 
 
-Passive voice can be used to soften messages or avoid being too direct, such as when errors occur. For example, when the focus is on conveying information about what happened rather than assigning blame or responsibility.
+Passive voice can be used to soften messages or avoid being too direct, such as when errors occur. For example, when the focus is on conveying information about what happened rather than assigning blame or responsibility. People find failures frustrating regardless of who's at fault. Never imply blame or accuse the reader.
 
 | Active | Passive | 
 | ------ | ------- |
@@ -75,11 +87,9 @@ Passive voice can be used to soften messages or avoid being too direct, such as 
 | "We encountered an error while processing your request." | "An error occurred while processing your request." |
 | "We saved the changes." | "The changes have been saved." |
 
-People find failures frustrating regardless of who's at fault. Never imply blame or accuse the reader.
+For best practices and standards, lean heavily into active voice. For general guidelines (especially when recommending things to avoid or error messages), use passive voice.
 
-For best practices and standards, lean heavily into active voice. For general guidelines (especially when recommending things to avoid), use passive voice.
-
-#### Correct pronoun usage
+### Correct pronoun usage
 
 Write as if speaking directly to the reader. Second person often uses the pronoun you. It supports a friendly, human tone and helps avoid passive voice by focusing on the reader. You should omit pronouns and accompanying auxiliary verbs, and start your sentence with a verb. Make a connection with the reader by using 'you' or 'your'.
 
@@ -87,22 +97,19 @@ Avoid using first-person possessive phrasing like 'My dashboard' while also writ
 
 When it's the product or app speaking, use 'we' or your organization's name. This avoids confusion about who's doing the talking or who should act. For example, use 'We found these results', rather than 'I found these results'. The word 'we', which is a first person pronoun, can help create a more human experience with the UI. It can help demonstrate accountability for system or input errors to show people they're important every step of the way. However, avoid overusing it as it diverts attention from readers and what they need to do. To make your product more centered on the reader, consider only using 'we' for systems errors, status updates, and other system-related issues.
 
-### Construct meaningful content to facilitate progress
+### Meaningful content facilitates progress
 
 Put the benefit before the action or feature. This increases the reader's ability to quickly complete tasks by explaining the benefit first. What good thing will happen if they do the action? Explain the benefit before telling them to take an action, and avoid asking for an action before explaining why.
 
-Avoid double negatives. Double negatives increase cognitive load — they make people spend extra time decoding the message. Focus on direct, positive actions.
-
 Use specific verbs whenever possible. Specific verbs are more meaningful to people than generic ones. Help your reader quickly understand available options or necessary actions by using specific words like get, update, choose, or change. You can avoid confusion and reduce ambiguity by eliminating words that have different meanings. 
+
+### Maintain consistent tone, style, and terminology
 
 Use consistent terminology. Use one word or phrase to refer to a specific action or thing across the experience every time. For example, if you call the process of securing a reservation 'booking' in one place, don't call it 'planning' or 'scheduling' somewhere else. To help drive consistency, check word usage across your organization and then keep a term list that you and your team agree to. 
 
-Avoid jargon and acronyms. Even most software engineers prefer simple, non-technical language. It's especially important to avoid jargon in error messages. It's also important to remember that many common phrases are colloquialisms and may not be meaningful to everyone.
-Replace overly technical words with simpler ones. Using words like configure, activate, or invalid are unnecessarily technical. Keep it simple. Only use acronyms your readers are familiar with. Spell out acronyms on the first mention on each page and include the parenthetic reference. For example, call to action (CTA). If the spelled-out version of an acronym exceeds a character limit, consider writing around the phrase. 
-
 Use the proper capitalization. Sentence casing means you only capitalize the first word in a sentence. Proper nouns—names of people, places, and some products—also get capitalized. For subheads, buttons, and hyperlinks, use sentence casing without punctuation. When in doubt, don't capitalize. Use title case for titles (e.g., Chief Financial Officer), organization names (e.g., Human Resources), branded products or programs, and names of people and places. All caps is not recommended under any circumstance; for stylistic usage, it's recommended to use different typography styling (size, font weight and color) rather than all caps.
 
-Keep important info up front. Start with the most important piece of info—the value proposition. Then, if there's room, add a brief paragraph or two with info in order of importance. If you need to say more, use a 'Read more' link. Sometimes it's easier to write the body of the message first and then write the headline.
+### Use polite, relatable language
 
 Be polite—not overly ingratiating. People expect to be given prompts and to act. Using 'please' throughout the UI is unnecessary and comes across as amateure. Use please and sorry sparingly, only when the task you're asking is onerous, is your mistake, or has serious consequences. However, it's never good practice to be rude, presumptuous, cocky, or cynical in UI content.
 
