@@ -71,16 +71,7 @@ Users of the workload should accomplish tasks efficiently, with minimal frustrat
 |Prioritize tasks and features based on user needs and frequency of use, ensuring that commonly performed actions are easily accessible and efficient to execute.| Benefit |
 |Adapt to the user's context and needs. Optimize the interface for different screen sizes, orientations, and resolutions. Use adaptive design to customize the interface for different devices, platforms, or environments.Use personalization to tailor the interface for different preferences, goals, or behaviors.|Users access the workload in the context that suits them best. |
 
-## Design for scalability
+## Next steps
 
-|![Goal icon](../_images/goal.svg) Design a flexible architecture that can handle growth and change. |
-|--|
-
-Design the workload to be built to change and built to last.
-
-|Approach|Benefit|
-|-|-|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
+> [!div class="nextstepaction"]
+> [Experience Optimization checklist](checklist.md)
