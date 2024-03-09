@@ -57,7 +57,7 @@ Understand that environment routing is a tenant-level, admin setting that:
 
 ## Enable the environment routing setting
 
-The **Environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), [PowerShell](/powershell/), or [Power Platform CLI](../developer/cli/introduction.md).
+The **Environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), or [PowerShell](/powershell/).
 
 #### [Power Platform admin center](#tab/ppac)
 
