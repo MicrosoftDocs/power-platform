@@ -26,13 +26,13 @@ When using a business application, people aren't interested in the features of t
 
 Be concise. Content should be brief and to the point. Concise doesn't mean limited; it means efficient. Use as few words as possible without losing the meaning. When writing concisely, make sure every word on the screen has a job. Follow Mark Twain's advice: "Writing is easy. All you have to do is cross out the wrong words." 
 
-Tells people what they need to know. The content should provides users with the essential information required to accomplish their tasks or make informed decisions within the UI. Users rely on content to guide their interactions and expect clear, relevant information that meets their needs. It should never cause confusion or frustration during their user journey.
+Tell people what they need to know. The content should provides users with the essential information required to accomplish their tasks or make informed decisions within the UI. Users rely on content to guide their interactions and expect clear, relevant information that meets their needs. It should never cause confusion or frustration during their user journey.
 
-Speaks in plain language. Use simple, clear language that is easily understood by the target audience, devoid of unnecessary jargon or technical terms. Users should be able to comprehend content effortlessly, reducing the likelihood of confusion or misinterpretation, ultimately improving engagement. Keeps reading levels no higher than tenth grade. Maintaining an appropriate reading level enhances accessibility and inclusivity, catering to a broader range of users.
+Speak in plain language. Use simple, clear language that is easily understood by the target audience, devoid of unnecessary jargon or technical terms. Users should be able to comprehend content effortlessly, reducing the likelihood of confusion or misinterpretation, ultimately improving engagement. Keeps reading levels no higher than tenth grade. Maintaining an appropriate reading level enhances accessibility and inclusivity, catering to a broader range of users.
 
 Include sentences of 25 words or less. Sentences should be brief and succinct. Short sentences with sufficient information facilitate comprehension, making the content easier to read and understand. 
 
-Promotes accessibility. Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alt text for images, proper heading structures, and keyboard navigation options ensures that the UI content can be accessed and utilized by assistive technologies.
+Promote accessibility. Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alt text for images, proper heading structures, and keyboard navigation options ensures that the UI content can be accessed and utilized by assistive technologies.
 
 ### Use the appropriate tone for the situation
 
