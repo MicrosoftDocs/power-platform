@@ -38,7 +38,7 @@ Bite-sized chunks create a natural flow. Focus on the reader, the action taken, 
 
 Put the benefit before the action or feature. This increases the reader's ability to quickly complete tasks by explaining the benefit first. What good thing will happen if they do the action? Explain the benefit before telling them to take an action, and avoid asking for an action before explaining why.
 
-For task-level content, do not focus on boasting your company brand in obstructive ways to your user (e.g., "The Microsoft Connector shuttle service will conveniently arrive at your campus location at 2:15 PM" vs "The shuttle will arrive at 2:15 PM").
+For task-level content, do not focus on boasting your company brand in obstructive ways (e.g., "The Microsoft Connector shuttle service will conveniently arrive at your campus location at 2:15 PM" vs "The shuttle will arrive at 2:15 PM").
 
 ### Speak in plain language
 
@@ -52,13 +52,9 @@ Replace overly technical words with simpler ones. Using words like configure, ac
 
 Avoid double negatives. Double negatives increase cognitive load — they make people spend extra time decoding the message. Focus on direct, positive actions.
 
-### Maintain stylistic consistency
+### Use polite, friendly tone
 
-Use one word or phrase to refer to a specific action or thing across the experience every time. For example, if you call the process of securing a reservation 'booking' in one place, don't call it 'planning' or 'scheduling' somewhere else. To help drive consistency, check word usage across your organization and then keep a term list that you and your team agree to. 
-
-Use the proper capitalization. Sentence casing means you only capitalize the first word in a sentence. Proper nouns—names of people, places, and some products—also get capitalized. For subheads, buttons, and hyperlinks, use sentence casing without punctuation. When in doubt, don't capitalize. Use title case for titles (e.g., Chief Financial Officer), organization names (e.g., Human Resources), branded products or programs, and names of people and places. All caps is not recommended under any circumstance; for stylistic usage, it's recommended to use different typography styling (size, font weight and color) rather than all caps.
-
-### Use a polite, relatable tone
+Be polite, but not overly ingratiating. People expect to be given prompts and to act. Using 'please' throughout the UI is unnecessary and comes across as amateure. Use please and sorry sparingly, only when the task you're asking is onerous, is your mistake, or has serious consequences. However, it's never good practice to be rude, presumptuous, cocky, or cynical in UI content.
 
 Write as if speaking directly to the reader. Second person often uses the pronoun 'you'. It supports a friendly, human tone and helps avoid passive voice by focusing on the reader. You should omit pronouns and accompanying auxiliary verbs, and start your sentence with a verb. Make a connection with the reader by using 'you' or 'your'.
 
@@ -66,11 +62,15 @@ Avoid using first-person possessive phrasing like 'My dashboard' while also writ
 
 When it's the product or app speaking, use 'we' or your organization's name. This avoids confusion about who's doing the talking or who should act. For example, use 'We found these results', rather than 'I found these results'. The word 'we', which is a first person pronoun, can help create a more human experience with the UI. It can help demonstrate accountability for system or input errors to show people they're important every step of the way. However, avoid overusing it as it diverts attention from readers and what they need to do. To make your product more centered on the reader, consider only using 'we' for systems errors, status updates, and other system-related issues.
 
-Be polite, but not overly ingratiating. People expect to be given prompts and to act. Using 'please' throughout the UI is unnecessary and comes across as amateure. Use please and sorry sparingly, only when the task you're asking is onerous, is your mistake, or has serious consequences. However, it's never good practice to be rude, presumptuous, cocky, or cynical in UI content.
-
 Use common contractions, such as it's, you're, that's, and don't, to create a friendly, informal tone. Never use your company's name in the possessive form, and avoid using it in a contraction. Avoid ambiguous or unpopular contractions such as there'd and what're. Avoid mixing contractions and spelled-out words in UI as it creates inconsistency and reduces trust. Using spelled-out words in place of common contractions introduces unnecessary formality.
 
-### Use appropriate sentence structure
+### Maintain stylistic consistency
+
+Use one word or phrase to refer to a specific action or thing across the experience every time. For example, if you call the process of securing a reservation 'booking' in one place, don't call it 'planning' or 'scheduling' somewhere else. To help drive consistency, check word usage across your organization and then keep a term list that you and your team agree to. 
+
+Use the proper capitalization. Sentence casing means you only capitalize the first word in a sentence. Proper nouns—names of people, places, and some products—also get capitalized. For subheads, buttons, and hyperlinks, use sentence casing without punctuation. When in doubt, don't capitalize. Use title case for titles (e.g., Chief Financial Officer), organization names (e.g., Human Resources), branded products or programs, and names of people and places. All caps is not recommended under any circumstance; for stylistic usage, it's recommended to use different typography styling (size, font weight and color) rather than all caps.
+
+### Prioritize correct sentence structure
 How people react to and feel about your appication depends partly on the quality of the writing and the overall voice and tone in which you speak. When writing in general, there are four types of statements (or sentence structures) that you can use. Typically, UI content uses three of the four, depending on the purpose of the content and the nature of the product.
 
 - Use _declarative_ statements regularly. A description of the features of a component is an example of when you'd use a declarative statement.
