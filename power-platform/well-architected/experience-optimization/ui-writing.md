@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **TODO** |
+|[EO:01](checklist.md)| **Content is the primary mode of communication and should provide clear direction. Speak in an approachable, professional tone that provides meaningful content that facilitates success.** |
 |---|---|
 
 This guide describes the recommendations for
