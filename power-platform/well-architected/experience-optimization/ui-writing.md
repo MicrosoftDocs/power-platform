@@ -24,7 +24,7 @@ This guide describes the recommendations for
 
 When using a business application, people aren't interested in the features of the UI or being entertained by flowery language. They're focused on task completion. Help them by writing in short, scannable blocks. Divide text into shorter sentences and paragraphs. Avoid overly gushy language. Users often visit a UI with specific objectives in mind, and content should guide them seamlessly toward achieving those objectives.
 
-Bite-sized chunks create a natural flow. Focus on the reader, the action taken, or what they can expect next. Don't include information that's irrelevant or distracts from the task at hand because it adds to frustration and cognitive load. For task-level content, do not focus on your company or branding.
+Bite-sized chunks create a natural flow. Focus on the reader, the action taken, or what they can expect next. Don't include information that's irrelevant or distracts from the task at hand because it adds to frustration and cognitive load. For task-level content, do not focus on your company or branding unnecessarily (e.g., "The Microsoft Connector shuttle service will conveniently arrive at your campus location at 2:15 PM" vs "The shuttle will arrive at 2:15 PM").
 
 Be concise. Content should be brief and to the point. Concise doesn't mean limited; it means efficient. Use as few words as possible without losing the meaning. When writing concisely, make sure every word on the screen has a job. Only provide the info needed in the moment, also keeping in mind that too much content is less likely to be read. Follow Mark Twain's advice: "Writing is easy. All you have to do is cross out the wrong words." 
 
@@ -48,9 +48,9 @@ How people react to and feel about your appication depends partly on the quality
 
 #### Know when to use active voice 
 
-In an _active_ voice, the subject performs the action. It starts with the person or thing that's taking the action. 
+In an _active_ voice, the subject performs the action. It starts with the person or thing that's taking the action. For example, "Enter a few letters" is a simple, direct request for the reader to take action.
 
-In _passive_ voice, the subject receives the action (as opposed to performing it). The past participle of the action verb follows some form of the verb to be (e.g., has been, will be). Unlike active voice, passive voice obscures or omits the actor, making the sentence less direct and sometimes ambiguous.
+In _passive_ voice, the subject receives the action (as opposed to performing it). The past participle of the action verb follows some form of the verb to be (e.g., has been, will be). Passive voice obscures or omits the actor, making the sentence less direct and sometimes ambiguous. For example, "A few letters should be entered" lacks clarity and authority.
 
 **Active vs Passive voice examples**
 
@@ -73,7 +73,6 @@ Passive voice can be used to soften messages or avoid being too direct, such as 
 | "We couldn't find the file." | "The file could not be found." |
 | "You submitted the form." | "The form has been submitted." |
 | "We encountered an error while processing your request." | "An error occurred while processing your request." |
-| "The system failed to activate your account." | "The account activation failed." |
 | "We saved the changes." | "The changes have been saved." |
 
 People find failures frustrating regardless of who's at fault. Never imply blame or accuse the reader.
