@@ -27,7 +27,7 @@ When the **Environment routing** setting is enabled in [Power Platform Admin Cen
   
 When the feature is turned on, the selected maker type (i.e. new or existing makers), will always land into their own personal developer environment. If the maker has access to one or more existing developer environment that is not owned by them, they will be routed to a new developer environment. 
 
-Dataverse is available in developer environments, and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings already preconfigured, such as sharing limits and solution checker. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
+Dataverse is available in developer environments, and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings preconfigured according to the assigned environment group rules. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
 
 > [!IMPORTANT]
 >
@@ -93,22 +93,22 @@ The **Environment routing** setting is disabled by default and must be enabled u
    Set-TenantSettings -RequestBody $tenantSettings
    ```
    
-1. Set the `environmentRoutingAllMakers` flag to **True** to allow routin gfor all makers or **False** to limit routing to new makers.
+1. Set the `environmentRoutingAllMakers` flag to **True** to allow routing for all makers or **False** to limit routing to new makers.
 
    ```powershell
-   $tenantSettings = Get-TenantSettings
-   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force
+   tenantSettings = Get-TenantSettings
+   tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force
    ```
 
 1. (Optional) Set the `environmentRoutingTargetEnvironmentGroupId` to the desired Environment Group ID.
 
    ```powershell
-   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetEnvironmentGroupId' -Value "<GUID for the group that has published rules>" -Force
+   tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetEnvironmentGroupId' -Value "<GUID for the group that has published rules>" -Force
    ```
 1. (Optional) Set the `environmentRoutingTargetSecurityGroupId` to the desired Security Group.
 
    ```powershell
-   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
+   tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
 
    ```
 1. Save `TenantSettings`.
@@ -116,11 +116,11 @@ The **Environment routing** setting is disabled by default and must be enabled u
    Set-TenantSettings -RequestBody $tenantSettings
    ```
 
-1. Disable environment routing for your tenant using PowerShell 
+**How to disable environment routing for your tenant using PowerShell** 
 ```powershell
-$tenantSettings = Get-TenantSettings  
+tenantSettings = Get-TenantSettings  
 
-$tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
+tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
 
 Set-TenantSettings -RequestBody $tenantSettings
 ```
