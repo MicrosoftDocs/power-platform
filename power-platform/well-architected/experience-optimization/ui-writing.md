@@ -50,8 +50,6 @@ How people react to and feel about your product depends partly on the quality of
 
 #### Know when to use active voice 
 
-#### Know when to use active voice 
-
 In an _active_ voice, the subject performs the action. It starts with the person or thing that's taking the action. 
 
 In _passive_ voice, the subject receives the action (as opposed to performing it). The past participle of the action verb follows some form of the verb to be (e.g., has been, will be). Unlike active voice, passive voice obscures or omits the actor, making the sentence less direct and sometimes ambiguous.
