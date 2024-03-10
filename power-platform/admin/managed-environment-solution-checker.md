@@ -2,7 +2,7 @@
 title: Solution checker enforcement in Managed Environments
 description: Learn about using solution checker enforcement to automatically prevent security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 10/30/2023
+ms.date: 03/10/2024
 author: sidhartg
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -28,7 +28,7 @@ To enable solution checker enforcement for your Managed Environment:
     :::image type="content" source="media/managed-environment-solution-checker.png" alt-text="Screenshot of the solution checker settings screen.":::
 
 > [!NOTE]
-> Solution checker enforcement is [not available](/power-apps/maker/data-platform/common-issues-resolutions-solution-checker#solution-checker-cant-access-environments-in-administration-mode) when the environment is in Administration mode
+> Solution checker enforcement is [not available](/power-apps/maker/data-platform/common-issues-resolutions-solution-checker#solution-checker-cant-access-environments-in-administration-mode) when the environment is in the [Administration mode](admin-mode.md).
 
 ## Solution checker settings
 
