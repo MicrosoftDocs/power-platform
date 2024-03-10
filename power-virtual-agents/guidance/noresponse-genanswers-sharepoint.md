@@ -92,7 +92,7 @@ Below is a reference for a well configured app registration:
 
 And the required authentication settings in Copilot Studio
 
-![A screenshot of Copilot Studio authentication settings](./media/GenAnswers/copilot-auth.png)
+<img src="./media/GenAnswers/copilot-auth.png" alt="Copilot Studio auth settings" width="500" height="auto">
 
 ## File size limitation
 
