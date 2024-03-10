@@ -50,7 +50,7 @@ Generative answers can use these sources:
   - [Bing Web Search](/bing/search-apis/bing-web-search/overview)—doesn't require external configuration
   - [Bing Custom Search](https://www.customsearch.ai/)—requires external configuration
 - Internal resources:
-  - SharePoint (only [Modern Pages](https://support.microsoft.com/en-us/office/sharepoint-classic-and-modern-experiences-5725c103-505d-4a6e-9350-300d3ec7d73f) are supported)
+  - SharePoint (only [Modern Pages](https://support.microsoft.com/en-us/office/sharepoint-classic-and-modern-experiences-5725c103-505d-4a6e-9350-300d3ec7d73f) and [specific file formats](nlu-boost-node.md#supported-content) are supported)
   - OneDrive for Business
   - Documents uploaded to Dataverse
   - Custom data (internal or external): supply your own source, such as a Power Automate Flow or from Skill.
