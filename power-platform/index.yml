@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: tapanm #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/25/2023 #Required; mm/dd/yyyy format.
+  ms.date: 03/15/2024 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -53,6 +53,10 @@ productDirectory:
   - title: Power BI
     imageSrc: "media/hub-page/power-bi.svg"
     summary: Learn how to get expert information and answers to address your needs.
+    url: /power-bi
+  - title: Microsoft Copilot Studio
+    imageSrc: "media/hub-page/copilot-studio.svg"
+    summary: Learn how to quickly build AI-driven copilots and integrate with your apps or websites.
     url: /power-bi
 tools:
   title: Power Platform capabilities 
