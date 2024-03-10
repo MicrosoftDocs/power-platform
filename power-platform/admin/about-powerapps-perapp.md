@@ -4,10 +4,10 @@ description: About Power Apps per app plans
 author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/18/2022
+ms.date: 12/01/2023
 ms.subservice: admin
 ms.author: alaug
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -27,7 +27,7 @@ There are three steps to follow to use a per app plan:
 3. Set up apps to use per app plans
 4. Share the app
 
-## Step one: Purchase per app plans
+## Step 1: Purchase per app plans
 
 You can purchase per app plans from your sales channel or in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
@@ -36,9 +36,9 @@ You can purchase per app plans from your sales channel or in the [Microsoft 365 
 
 You can see your purchased plan in the Microsoft 365 admin center (**Billing** > **Your products**).
 
-Once you've made your purchase, there are no further actions needed in the Microsoft 365 admin center such as license assignment since this license is not assigned to users but rather to environments.
+Once you've made your purchase, there are no further actions needed in the Microsoft 365 admin center such as license assignment since this license isn't assigned to users but rather to environments.
 
-## Step two: Allocate per app plans
+## Step 2: Allocate per app plans
 
 After purchase, you allocate per app plans to environments. If you have multiple environments like test and production, you need to allocate per app plans capacity to all these environments appropriately.
 
@@ -55,7 +55,7 @@ To allocate add-ons, select **Manage**. For detailed information, see [Allocate 
 > 1. Allocate capacity of the per app licenses to the required environment.
 > 2. Remove any user license from the user.
 
-## Step three: Set up apps to use per app plans
+## Step 3: Set up apps to use per app plans
 
 After an admin allocates Power Apps per app plan to an environment, they're assigned to unlicensed users when an app in that environment is shared with them. 
 
@@ -67,15 +67,16 @@ Follow these steps to turn on assigning per app plans for users when an app is s
 
    ![App settings.](media/app-settings2.png "App settings")
 
-3. Under **Pass assignment**, change the **Auto assign per app passes** toggle to **Yes**. The **Auto assign per app passes** toggle appears in all app setting.
+3. Under **Per-app licensing**, change the toggle to **On**. The toggle appears in all app setting.
+   > [!NOTE]
+   > In the default environment, go to app settings > **Pass Assignment** and set the **Auto assign per app passes​** toggle to **Yes**.
 
-   ![Pass assignment.](media/pass-assignment2.png "Pass assignment")
+   ![Per app licensing.](media/per-app-licensing.png "Per app licensing")
 
 > [!IMPORTANT]
 > If per app plans are not allocated to the environment the app is installed in, the toggle is disabled. 
 > 
 > If per app plans are allocated to the environment, the toggle is enabled and defaults to on for apps created after October 1, 2020. 
-
 
 ### Check capacity
 Check the **App passes** capacity for the environment with the app you're sharing. Make sure you have sufficient app passes assigned for the number of users using the app.
@@ -85,7 +86,7 @@ Go to **Resources** > **Capacity** > **Add-ons** tab.
 > [!div class="mx-imgBorder"] 
 > ![Add-on capacity assignment.](media/add-on-assignment.png "Add-on capacity assignment")
 
-## Step four: Share the app
+## Step 4: Share the app
 
 After completing the first three steps, you can now share apps. 
 
@@ -154,7 +155,7 @@ The per app license gives a user access to one Power Apps or one portal for a si
 ## Known issues
 
 ### Reducing per app capacity to zero
-If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Dataverse while per app capacity was greater than zero will **not** get disabled in Dataverse. However, these users won’t be able to launch apps since there is no per app capacity allocated to the environment. Admins should remove the role of the user they do not intend to access the platform.
+If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Dataverse while per app capacity was greater than zero will **not** get disabled in Dataverse. However, these users won’t be able to launch apps since there's no per app capacity allocated to the environment. Admins should remove the role of the user they don't intend to access the platform.
 
 ## FAQ
 
@@ -164,7 +165,7 @@ Yes. Prior to October 2021 each app pass granted a user access to two apps and o
 
 Customers with existing per app plan subscriptions purchased prior to October 1, 2021 will maintain the current entitlement for the duration of their agreement term. Each existing per app plan license will now receive a total of three app passes, entitling users to continue accessing up to two apps and one portal. These app passes will be available for allocation to an environment and assignment to users beginning in October 2021. Power Apps per app plan subscriptions purchased after October 1, 2021 will receive one app pass for each license, entitling assigned users to access one app or one portal.  
 
-### I assigned the baseline access license to my users as a workaround suggested earlier. Now that this workaround is not needed, what should I do to ensure my users are setup correctly? 
+### I assigned the baseline access license to my users as a workaround suggested earlier. Now that this workaround isn't needed, what should I do to ensure my users are setup correctly? 
 As of October, 2020, the baseline access license is no longer required. Ensure that the per app capacity is allocated to the environment. After this step, you can remove the baseline access license from the user using [these instructions](/microsoft-365/admin/manage/remove-licenses-from-users?&preserve-view=trueview=o365-worldwide). 
 
 ### What happens if I assign a user the Power Apps per user license when earlier they were using apps with the per app license? 
@@ -189,11 +190,11 @@ The maker should sign up for the trial to proceed with creating the connection t
 Yes. If a user account is disabled in an environment, there are three different mitigation steps that may be followed.
 
 **Mitigation steps**
-1. Add per app capacity to an environment, add disabled users to an Azure AD security group, and share the app with the security group. The user launching the app will be enabled in the environment.
+1. Add per app capacity to an environment, add disabled users to a Microsoft Entra security group, and share the app with the security group. The user launching the app will be enabled in the environment.
 2. Add per app capacity and use the following PowerShell cmdlet to 'force sync' disabled users to enable these users in the environment. An admin can run the [Add-AdminPowerAppsSyncUser](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?&preserve-view=trueview=pa-ps-latest) PowerShell cmdlet to enable disabled users in an environment.
 3. Add per app capacity to an environment, use [this Power Automate flow template](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/) to enable many disabled users in an environment which an admin can run to force the sync operation to enable users. 
 
 ### Power Automate capabilities included with Per App plans
-A Power Apps Per App plan assignment does not give user the ability to create or own Power Automate flows that user Premium features. Creating and owning flows using Premium features requires assignment of a Power Apps Per User or Power Automate Per User license.  This does not apply for flows [associated to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
+A Power Apps Per App plan assignment doesn't give user the ability to create or own Power Automate flows that user Premium features. Creating and owning flows using Premium features requires assignment of a Power Apps Per User or Power Automate Per User license.  This doesn't apply for flows [associated to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

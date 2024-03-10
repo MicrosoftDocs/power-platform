@@ -2,9 +2,9 @@
 title: "Create users | MicrosoftDocs"
 description: About creating users.
 author: sericks007
-ms.reviewer: Kumarvivek
+ms.reviewer: sericks007
 ms.subservice: admin
-ms.author: kvivek
+ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
@@ -38,10 +38,10 @@ For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](..
 ## User types
 
 ### Regular users
-These are the regular synchronized users from Azure Active Directory (Azure AD).
+These are the regular synchronized users from Microsoft Entra ID.
 
 ### Application users
-Identified by the presence of ApplicationId attribute in the system user record. To check the Azure AD application ID, see [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
+Identified by the presence of ApplicationId attribute in the system user record. To check the Microsoft Entra application ID, see [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
 
 ### Non-interactive users
 - License specific provisioning business rules does not apply to these users after they are marked as non-interactive. Note: security group specific rules still apply. 
@@ -52,7 +52,7 @@ Identified by the presence of ApplicationId attribute in the system user record.
 ### Support user
 See [System and application users](system-application-users.md).
 
-- Not synchronized with Azure AD, and created by Dataverse out of the box.
+- Not synchronized with Microsoft Entra ID, and created by Dataverse out of the box.
 - Placeholder user record for all of the internal Microsoft support users. 
 - Key identifiers: 
   - UPN value is crmoln@microsoft.com.
@@ -65,7 +65,7 @@ See the following: <br />
 [For partners: the Delegated Administrator](for-partners-delegated-administrator.md) <br />
 [System and application users](system-application-users.md)
 
-- Not synchronized with Azure AD, and created by Dataverse out of the box. 
+- Not synchronized with Microsoft Entra ID, and created by Dataverse out of the box. 
 - Placeholder user record for all of customer’s delegated admin partner users to access Dataverse as delegated administrators. 
 - Key identifiers: 
   - UPN value is crmoln2@microsoft.com. 
@@ -81,7 +81,7 @@ The following table shows the fields that are managed in the **Users** section o
 <table>
 <thead>
 <tr class="header">
-<th><p>Customer engagement apps user form </th><th>Microsoft 365/Azure AD user</th></tr>
+<th><p>Customer engagement apps user form </th><th>Microsoft 365/Microsoft Entra user</th></tr>
 </thead>
 <tbody>
 <tr><td>User Name</td><td>Username</td></tr>
@@ -93,13 +93,12 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>InternalEmailAddress*** </td><td>Mail </td></tr>
 <tr><td>Main Phone </td><td>Office phone</td></tr>
 <tr><td>Mobile Phone  </td><td>Mobile phone</td></tr>
-<tr><td>Fax  </td><td>Fax number  </td></tr>
 <tr><td>Address  </td><td>Street address   </td></tr>
 <tr><td>Address   </td><td>City   </td></tr>
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
 <tr><td>AzureActiveDirectoryObjectId****     </td><td>ObjectId   </td></tr>
-<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.<br>**** ObjectID of a user or a service principal in Azure Active Directory.<br /></td></tr>
+<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.  After which, sync will no longer update this field.<br>**** ObjectID of a user or a service principal in Microsoft Entra ID.<br /></td></tr>
 </tbody>
 </table>
 
@@ -115,7 +114,7 @@ To view and edit a user's profile in the Power Platform admin center:
 1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
 2. Select a user in the list.
 
-On the user profile page you can view and make changes to important user profile information such as Security Roles, Team membership, Business Unit, Manager, Position, and more. You can also **Run diagnostics** to troubleshoot access issues or **Refresh User** to re-sync from Azure Active Directory. 
+On the user profile page you can view and make changes to important user profile information such as Security Roles, Team membership, Business Unit, Manager, Position, and more. You can also **Run diagnostics** to troubleshoot access issues or **Refresh User** to re-sync from Microsoft Entra ID. 
 
 :::image type="content" source="media/edit-user-profile.png" alt-text="Edit a user's profile.":::
 
@@ -207,12 +206,12 @@ For users to have access to applications and data in an environment, at a minimu
 > [!TIP]
 > Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
 
-1. A system background process runs periodically to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of [requirements](#requirements-for-successfully-adding-users-in-dataverse). The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Azure AD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
+1. A system background process runs periodically to synchronize changes from Microsoft Entra and updates the SystemUser records in Dataverse based on pre-determined set of [requirements](#requirements-for-successfully-adding-users-in-dataverse). The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Microsoft Entra ID, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
 
    > [!NOTE]
-   > Not all users added in Azure AD will be pickup by the automatic synchronization process. [This section](#user-types) details the eligibility criteria the system background process applies to add a user from Azure AD into Dataverse.
+   > Not all users added in Microsoft Entra ID will be pickup by the automatic synchronization process. [This section](#user-types) details the eligibility criteria the system background process applies to add a user from Microsoft Entra ID into Dataverse.
 
-2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
+2. If users already exist in Microsoft Entra ID, they are automatically added to SystemUsers table at first attempt to access the environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
 
 3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest&preserve-view=true) to add or update users in Dataverse on demand. 
 
@@ -233,10 +232,10 @@ In certain conditions, the above-mentioned system background process is not addi
 
 Below criteria must be met for successfully adding the user in the Dataverse table: 
 
-1. User must be enabled and not deleted or soft-deleted in Azure AD. User must be enabled in Azure AD to be enabled in a Dataverse database. If user is added to Dataverse and then deleted in Azure AD, the state in the Dataverse table will be updated to “disabled”.  
+1. User must be enabled and not deleted or soft-deleted in Microsoft Entra ID. User must be enabled in Microsoft Entra to be enabled in a Dataverse database. If user is added to Dataverse and then deleted in Microsoft Entra ID, the state in the Dataverse table will be updated to “disabled”.  
 
 2. User must have a valid license with these exceptions: 
-   1. Admin users do not require a license. Unlicensed Azure AD admins are enabled in the systems as “Setup user” and have administrative only access mode. 
+   1. Admin users do not require a license. Unlicensed Microsoft Entra admins are enabled in the systems as “Setup user” and have administrative only access mode. 
    2. Individual users do not need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    3. Individual users do not need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    4. Non-interactive users do not need a license 
@@ -369,21 +368,22 @@ A stub user is a user record that has been created as a placeholder. For example
 
 > [!CAUTION]
 > To prevent creating duplicate user records with the same UPN or throw errors during data import workflows, synchronize the users from Entra ID to Dataverse before running data import.
+> If you must reassign records from a stub user to another user, use the [Add-BulkRecordsToUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#command-add-bulkrecordstousers).
 
 A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Basic User** security role is assigned in a Power Apps environment.
 
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 
 
-### Update a user record to reflect changes in Azure AD
+### Update a user record to reflect changes in Microsoft Entra ID
 
-When you create a new user or update an existing user in Dynamics 365 Customer Engagement (on-premises), some fields in the user records, such as name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created, no further synchronization occurs between Azure AD user accounts and customer engagement apps user records. If you make changes to the Azure AD user account, you must manually edit the user record to reflect the changes.
+When you create a new user or update an existing user in Dynamics 365 Customer Engagement (on-premises), some fields in the user records, such as name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created, no further synchronization occurs between Microsoft Entra user accounts and customer engagement apps user records. If you make changes to the Microsoft Entra user account, you must manually edit the user record to reflect the changes.
 
 1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
 
 2. In the list, select the user record you want to update, and then select **Edit**.
 
-The following table shows the fields that are populated on the user form (user record) from the Azure AD user account.
+The following table shows the fields that are populated on the user form (user record) from the Microsoft Entra user account.
 
 <table>
 <thead>
@@ -435,21 +435,21 @@ The following table shows the fields that are populated on the user form (user r
 <td><p>Telephones</p></td>
 </tr>
 <tr>
-<td colspan="3">* The Address field comprises the values from the City and State/province fields in Azure AD.</td></tr>
+<td colspan="3">* The Address field comprises the values from the City and State/province fields in Microsoft Entra ID.</td></tr>
 </tbody>
 </table>
 
 
 ## FAQ 
 
-### If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in Azure AD, how is that reflected in Dataverse?  
+### If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in Microsoft Entra ID, how is that reflected in Dataverse?  
 User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
 
-### Are all users in Azure AD being added to Dataverse? 
-Users from Azure AD are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”, 
+### Are all users in Microsoft Entra being added to Dataverse? 
+Users from Microsoft Entra are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”, 
 
 ### How can the admin increase the performance of adding users in Dataverse? 
-Assigning an Azure AD security group to the environment is a best practice in general, that can also result in a performance increase as regard to adding users that are part of the security group to Dataverse. 
+Assigning a Microsoft Entra security group to the environment is a best practice in general, that can also result in a performance increase as regard to adding users that are part of the security group to Dataverse. 
 
 
 

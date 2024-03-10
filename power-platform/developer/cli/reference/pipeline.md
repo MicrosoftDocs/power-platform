@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 11/10/2023
+ms.date: 1/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -32,7 +32,7 @@ Work with Pipelines
 
 ## pac pipeline deploy
 
-Start pipeline deployment.
+Start pipeline deployment. 
 
 [!INCLUDE [pipeline-deploy-intro](includes/pipeline-deploy-intro.md)]
 
@@ -42,10 +42,6 @@ Start pipeline deployment.
 #### `--currentVersion` `-cv`
 
 Current solution version
-
-#### `--environment` `-env`
-
-Deployment Environment
 
 #### `--newVersion` `-nv`
 
@@ -62,6 +58,10 @@ Deployment Stage ID
 
 ### Optional Parameters for pipeline deploy
 
+#### `--environment` `-env`
+
+Deployment Environment
+
 #### `--wait` `-w`
 
 Wait until the deployment finishes.
@@ -72,12 +72,16 @@ This parameter requires no value. It's a switch.
 
 ## pac pipeline list
 
-List Pipelines
+List Pipelines. 
 
 [!INCLUDE [pipeline-list-intro](includes/pipeline-list-intro.md)]
 
 
 ### Optional Parameters for pipeline list
+
+#### `--environment` `-env`
+
+Deployment Environment
 
 #### `--pipeline` `-p`
 

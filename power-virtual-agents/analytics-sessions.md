@@ -9,8 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: analysis, ceX
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Analyze session information in Microsoft Copilot Studio
@@ -25,7 +24,9 @@ See [Work with conversation transcripts](analytics-sessions-transcripts.md) for 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+-  To view session transcripts, one needs to have the transcript viewer security role. Only admins can grant this role by [Assign the Bot transcript viewer security role during bot sharing](admin-share-bots.md#assign-the-copilot-transcript-viewer-security-role-during-copilot-sharing).
+
+-  [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
 
 ### Download bot session transcripts

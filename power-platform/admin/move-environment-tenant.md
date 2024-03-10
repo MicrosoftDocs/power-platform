@@ -102,7 +102,7 @@ You'll also need to provide the following information:
 1. Be authorized to perform the migration.
 3. A migration with a sandbox copy should be executed and validated by all parties prior to planning the migration of a business critical environment. In that case, we'll also need a new environment in the source tenant so we can copy the business critical environment into the new environment and perform the test migration.
 4. Create users in the target tenant. You must:
-   1. Create users in Microsoft 365/Azure AD.
+   1. Create users in Microsoft 365/Microsoft Entra ID.
    2. Assign licenses.
 5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this article</a>.
 6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from [Power Apps](https://make.powerapps.com) and imported again into the new environment after the migration.
@@ -211,7 +211,7 @@ After the migration:
 Before the migration: 
 1. Sign in to the environment.
 2. Open the [Power Apps Portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
-3. [Reset](/powerapps/maker/portals/admin/reset-portal) the portal.
+3. [Delete](/powerapps/maker/portals/admin/reset-portal) the portal.
 
 After the migration: 
 1. Sign in to the environment.

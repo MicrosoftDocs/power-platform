@@ -1,22 +1,22 @@
 ---
-title: "Invite users with Azure Active Directory B2B collaboration  | MicrosoftDocs"
-description: Invite users with Azure Active Directory B2B collaboration
+title: "Invite users with Microsoft Entra B2B collaboration  | MicrosoftDocs"
+description: Invite users with Microsoft Entra B2B collaboration
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/15/2022
 author: sericks007
 ms.subservice: admin
-ms.author: kvivek
-ms.reviewer: kvivek
+ms.author: sericks
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
 contributors:
   - alaug
   - tapanm-msft
-  - jimholtz
+  - sericks
 ---
-# Invite users with Azure Active Directory B2B collaboration
+# Invite users with Microsoft Entra B2B collaboration
 
 You can invite other users to access your environment. The [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Global admin can do this through the [Azure portal](https://portal.azure.com). Invited users can access your environment using their own login credentials once a license and a security role are assigned to them. The use of the apps created using Power Apps, customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Operations), and finance and operations apps are granted. You don’t need to create a new user account and temporary password for these invited users in your own [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
   
@@ -78,22 +78,22 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
 ## Update user’s name and usage location  
  To assign a license, the invited user’s **Usage location** must be specified. Admins can update the invited user’s profile on the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
   
-1. Go  to **Azure Active Directory** > **Users and groups** > **All users**. If you don't see the newly created user, refresh the page.  
+1. Go  to **Microsoft Entra** > **Users and groups** > **All users**. If you don't see the newly created user, refresh the page.  
   
 2. Click on the invited user, and then click **Profile**.  
   
-   ![User Profile button in Azure Active Directory.](../admin/media/user-profile-button-azure-active-directory.png "User Profile button in Azure Active Directory")  
+   ![User Profile button in Microsoft Entra ID.](../admin/media/user-profile-button-azure-active-directory.png "User Profile button in Microsoft Entra ID")  
   
 3. Update **First name**, **Last name**, and **Usage location**.  
   
-   ![Update Azure Active Directory user profile.](../admin/media/update-azure-active-directory-user-profile.png "Update Azure Active Directory user profile")  
+   ![Update Microsoft Entra user profile.](../admin/media/update-azure-active-directory-user-profile.png "Update Microsoft Entra user profile")  
   
 4. Click **Save**, and then close the Profile blade.  
   
 ## Assign invited users a license and security role  
  Assign your invited users a license and security role so the user can use customer engagement apps.  
   
-1. Go  to **Azure Active Directory** > **Users and groups** > **All users**. If you don't see the newly created user, refresh the page.  
+1. Go  to **Microsoft Entra** > **Users and groups** > **All users**. If you don't see the newly created user, refresh the page.  
   
 2. Click on the invited user, and then click **Licenses**.  
   
@@ -129,7 +129,7 @@ Follow these steps to allow B2B collaboration users to create Power Apps.
 > - A **resource tenant** is where the app is expected to exist, and where the user is expected to create the app using Power Apps as a guest.
 > - A **home tenant** is where the user's account resides and authenticates against.
 
-1. In Azure Active Directory, [in external collaboration settings set guest user access to "(most inclusive)"](/azure/active-directory/b2b/delegate-invitations). For more info about Azure AD B2B check out: [What is guest user access in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
+1. In Microsoft Entra ID, [in external collaboration settings set guest user access to "(most inclusive)"](/azure/active-directory/b2b/delegate-invitations). For more info about Microsoft Entra B2B check out: [What is guest user access in Microsoft Entra B2B?](/azure/active-directory/b2b/what-is-b2b)
 
 2. Use the following PowerShell cmdlet to enable guests to make Power Apps.
 
@@ -146,20 +146,20 @@ Follow these steps to allow B2B collaboration users to create Power Apps.
 
 After the B2B guest users are given the required permissions to create and edit apps, they can now create Power Apps and Microsoft List [custom forms](/powerapps/maker/canvas-apps/customize-list-form#open-the-form) using Power Apps.
 
-4. B2B guests can [follow these steps](/power-apps/maker/canvas-apps/intro-maker-portal) to sign in the preferred Azure AD tenant to build apps.   
+4. B2B guests can [follow these steps](/power-apps/maker/canvas-apps/intro-maker-portal) to sign in the preferred Microsoft Entra tenant to build apps.   
 
 ### Known limitations
-1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to an Azure Active Directory tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
+1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to an Microsoft Entra tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
 2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they’ll need a license with Dataverse use rights assigned to them in the resource tenant.
 3. B2B makers are currently not supported across sovereign cloud boundaries. For example, a B2B guest from a commercial tenant can't make apps in a GCC tenant. The same is applicable for GCC to GCC High, commercial to China cloud, and so on.
 
 ### See also  
-[Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)  
-[Azure Active Directory B2B collaboration code and PowerShell samples](/azure/active-directory/b2b/code-samples)   <br /> 
-[Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](/azure/active-directory/active-directory-b2b-faq)   <br /> 
-[Azure Active Directory B2B Collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   <br /> 
-[Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br /> 
-[Azure Active Directory cross-tenant access overview](/azure/active-directory/external-identities/cross-tenant-access-overview) <br /> 
+[Microsoft Entra B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)  
+[Microsoft Entra B2B collaboration code and PowerShell samples](/azure/active-directory/b2b/code-samples)   <br /> 
+[Microsoft Entra B2B collaboration frequently-asked questions (FAQ)](/azure/active-directory/active-directory-b2b-faq)   <br /> 
+[Microsoft Entra B2B Collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   <br /> 
+[Microsoft Entra B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br /> 
+[Microsoft Entra cross-tenant access overview](/azure/active-directory/external-identities/cross-tenant-access-overview) <br /> 
 [Restrict cross-tenant inbound and outbound access](cross-tenant-restrictions.md) <br /> 
 [Share a canvas app with guest users](/powerapps/maker/canvas-apps/share-app-guests)
 

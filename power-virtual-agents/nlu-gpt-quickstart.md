@@ -1,141 +1,144 @@
 ---
-title: Quickstart guide for building bots with GPT
-description: Build bots quickly and provide the most relevant information to your customers with natural language understanding advancements in Microsoft Copilot Studio.
+title: Quickstart guide for building copilots with GPT
+description: Build copilots quickly and provide the most relevant information to your customers with natural language understanding advancements in Microsoft Copilot Studio.
 keywords: "PVA, GPT, NLU"
 ms.date: 11/15/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: 
-ms.collection: virtual-agent
-ms.service: power-virtual-agents
+
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
 ---
 
 # Quickstart guide for building copilots with generative AI
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Microsoft has made bot building even simpler with AI-powered capabilities in Microsoft Copilot Studio. Whether you're new to conversational AI or a seasoned developer, our intelligence platform is with you and your team every step of the way. 
+Microsoft made copilot build even simpler with AI-powered capabilities in Microsoft Copilot Studio. Whether you're new to conversational AI or a seasoned developer, our intelligence platform is with you and your team every step of the way.
 
-This quickstart guide introduces you to the minimal steps necessary to get started quickly in creating and boosting a chatbot with expanded natural language understanding (NLU) capabilities. Using the intelligent authoring of AI-powered bots, you can now create a new topic or edit an existing one by describing what you want to happen or have your bot generate conversational responses even if there isn't a matching topic.
+This quickstart helps you get started quickly to create and boost a copilot with expanded natural language understanding (NLU) capabilities. With intelligent authoring of AI-powered copilots, create a new topic or edit an existing one. You can describe what you want the copilot to do. Or, your copilot can generate conversational responses, if there's no matching topic.
 
-## Prerequisites 
+## Prerequisites
 
-- You'll need an account for Microsoft Copilot Studio. 
+- An account for Copilot Studio. If you don't have an account, see the [Microsoft Copilot Studio introduction website](https://aka.ms/TryPVA) and select **Try free**.
 
-    > [!NOTE]
-    > If you don't have a Microsoft Copilot Studio account, you can go to the [Microsoft Copilot Studio introduction website](https://aka.ms/TryPVA), select **Start free**, and then sign in with your work email address. Also see the [Quickstart guide for creating a Microsoft Copilot Studio bot](fundamentals-get-started.md).
-    >  
-    > Personal Microsoft accounts aren't supported. 
-    >  
-    > Supported browsers include Microsoft Edge, Chrome, and Firefox.
+  > [!NOTE]
+  > Personal Microsoft accounts aren't supported. Use a work account instead.
 
-- [Review AI response generation training, model, and usage FAQ](faqs-generative-answers.md) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
+- Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
-- You must be using the [current version of Microsoft Copilot Studio](overview-preview.md), and the bot type must not be **Classic**. Classic chatbots have **(classic)** added to their name.  
+- Use the [current version of Copilot Studio](fundamentals-what-is-copilot-studio.md).
+- When creating your copilot, avoid the **(classic)** type, as shown, added to the copilot name. The classic type is for an older version.
 
-    :::image type="content" source="media/nlu-gpt/nlu-boost-bots.png" alt-text="Screenshot of the list of chatbots with one bot with clasic added to its name.":::
+  :::image type="content" source="media/nlu-gpt/nlu-boost-bots.png" alt-text="Screenshot of the list of copilots that shows an example of one regular copilot and one classic copilot.":::
 
-- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported.
+- Your copilot must be created in the US region. View the list of [Supported languages](authoring-language-support.md).
 
-- This capability may be subject to usage limits or capacity throttling.
- 
-> [!IMPORTANT] 
-> If you create a bot that has **Boost conversations** enabled, you'll need your admin to [enable bot publishing for the capability](nlu-boost-conversations.md). 
+- Generative AI might be subject to [usage limits](requirements-quotas.md#limits) or capacity throttling.
 
-## How bot conversations work
+> [!IMPORTANT]
+> To enable **Boost conversations**, your admin can turn on **Boost conversational coverage with generative answers**.
+> :::image type="content" source="media/nlu-gpt/enable-generative-answers.png" alt-text="Screenshot that shows location of the boosting of generative answers option" lightbox="media/nlu-gpt/enable-generative-answers.png":::
+> For more information, see [Generative Answers](nlu-boost-conversations.md).
 
-Power Virtual Agent bots use a [customized NLU model and AI capabilities](advanced-ai-features.md) to understand what a user types and respond with the most appropriate bot topic. A bot topic is a sequence of nodes that logically flow from one step to the other. See [Create and edit topics](authoring-create-edit-topics.md) for details on how bot topics work.
+## How copilot conversations work
 
-For example, you might create a bot for your customers to ask common questions about your business, thus reducing your support overhead by deflecting support calls. In the bot, you could create a topic that includes details about your store opening hours and call it **Store hours**. 
+Copilot Studio uses a [customized NLU model and AI capabilities](advanced-ai-features.md#ai-models-in-microsoft-copilot-studio---background) to understand what a user types, then responds with the best copilot topic. A copilot topic is a portion of a conversational thread between a user and the copilot. Topics are linked together to form nodes. For more information, see [Create and edit topics](authoring-create-edit-topics.md).
 
-When a customer asks a question such as "When do you open?" or "What are your opening hours?", the bot uses NLU to understand the _intent_ behind the question (in this case, that the customer wants to know about hours of operation), and matches that intent to the most appropriate bot topic (which would be the **Store hours** topic). 
+For example, you might create a copilot for your customers to ask common questions about your business. Your support overhead is reduced by deflecting support calls. In the copilot, you can create a topic about your store's opening hours and name the topic **Store hours**.
 
-The bot then follows the _conversation flow_ that you've defined in the **Store hours** topic, which might be a series of questions that use if/else arguments, or logic gates, to ask the customer which store location they're interested in. The final output of the topic might be to then display the hours and contact information for that location.  
+When a customer asks a question such as "When do you open?" or "What are your opening hours?", the copilot uses NLU to understand the _intent_ behind the question. The copilot matches that intent to the best topic, the **Store hours** topic.
 
-However, you may not be able to anticipate all the types of questions your customers ask. To help mitigate this, Microsoft Copilot Studio incorporates a powerful new AI-powered capability that uses the latest advancements in NLU models. When you have **Boost conversations** enabled in your bot, and linked to a publicly available, Bing-indexed website, your bot can provide automatically generated, conversationally friendly, plain language responses without depending upon the bot builder to create topics for every eventuality. 
+The copilot follows the _conversation flow_, which is a group of connected nodes, that you define in the **Store hours** topic. These questions use `if/else` arguments, or logic gates, to determine which store the customer wants. The final output of the topic shows the hours and contact information for that store's location.  
 
-Also, with Microsoft Copilot Studio new Copilot feature, your chatbot uses AI, powered by the Azure OpenAI GPT model (which is also used in Bing), to create bot topics based upon a simple description of what you want to achieve. You can also modify and update any topic in your bot in the same manner, by describing the changes you want to make.
+However, you can't anticipate all the types of questions your customers ask. To help mitigate this, Copilot Studio incorporates a powerful new AI-powered capability that uses the latest advancements in NLU models. With **Boost conversations** enabled and your copilot linked to a public or Bing-indexed website, your copilot automatically generates responses. These responses are conversational, plain language, and don't depend on the copilot builder to create topics for every eventuality.
 
-Ready to get started? The first step is to create your bot.
+Your copilot uses AI powered by the Azure OpenAI GPT model, which is also used in Bing, to create copilot topics from a simple description of your needs. Similarly, you can modify and update any topic in your copilot by describing the changes you want to make.
 
-## Create a boosted bot 
+Ready to get started? The first step is to create your copilot.
 
-1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/). 
+## Create a boosted copilot
 
-1. In the side navigation menu, select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
+For any user-sent message that can't be matched to an existing topic, your copilot can look for an answer on a fallback website. The copilot turns the answer into a simple message that it sends to the user.
+
+1. Go to the [Microsoft Copilot Studio home page](https://web.powerva.microsoft.com/).
+
+1. You can select **Create a copilot** from the **Home** page or **+ New copilot** from the **Copilots** page.
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-home.png" alt-text="Screenshot of the Microsoft Copilot Studio home page.":::
 
-1. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic, and select **Create**.
+1. Enter a name for your copilot and add a fallback URL. This fallback website is where the copilot can search for answers if it can't find the right topic for a user question.
 
-   :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the Boost your conversation option.":::
+   > [!TIP]
+   > Any URL with text works, for example `https://www.microsoft.com/en-us/store/`.
+   >
+   > To add a fallback URL later, after you create a copilot, go to **Generative AI** in the navigation menu. Add your URL to the **Websites** field. Select **Save** at the top.
 
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-copilot-create.png" alt-text="Screenshot of the Boost your conversation option." lightbox="media/nlu-gpt/nlu-quickstart-boost-copilot-create.png" :::
 
+   > [!NOTE]
+   > The copilot creation only prompts you for one fallback website. You can add other data sources, including internal resources like Sharepoint or OneDrive, and public websites. For more information about including more data sources, see [Use Copilot Studio to edit a topic](nlu-authoring.md#use-copilot-to-edit-a-topic).
 
- > [!NOTE]
- > This initial bot creation only prompts you for one fallback website. You can add other data sources, including internal resources such as Sharepoint or OneDrive, and external facing websites. For more information about including additional data sources, refer to [Use Copilot to edit a topic](nlu-authoring.md#use-copilot-to-edit-a-topic).
+1. Select **Create**.
 
-For any user-sent message that can't be matched to an existing topic, your bot looks for an answer on the website you've specified, and turns the answer into a simple message that it sends to the user. 
+For more information, see the [Generative answers](nlu-boost-conversations.md). You can also find instructions for enabling boosted conversations in copilots you already created.
 
-See the [Boost conversations](nlu-boost-conversations.md) topic for more details on the capability, including instructions for enabling boosted conversations in bots you've already created.
+## Create a new topic in Copilot Studio
 
-## Create a new topic using Copilot
+1. With your copilot open on the **Topics** page, select **+ Add** > **Topic** > **Create from description**. You might need to select **Hide copilot** in the navigation menu for a better view.
 
-1. With your bot open, select **Topics**. On the **Topics** page, select **+ New topic** and then **Create with Copilot**.
+   :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Copilot Studio navigation pane with Topics and the New topics button highlighted." lightbox="media/nlu-gpt/describe-it-new-topic.png":::
 
-    :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Microsoft Copilot Studio navigation pane with Topics and the New topics button highlighted.":::
+   > [!NOTE]
+   > If you don't see the **Create from description** option, you may need to enable **Intelligent authoring support**:
+   > 1. Select the **Settings** icon in the top menu, then **General settings**.
+   >:::image type="content" source="media/nlu-gpt/nlu-quickstart-describe-it-enable.png" alt-text="Screenshot of the Copilot Studio menu with the Settings icon open.":::  
+   >  
+   > 1. Turn the switch **On** under **Build and iterate on your topics by describing what you want**.
 
-    > [!NOTE]
-    >  
-    > If you don't see the **Copilot** option, you may need to enable **Intelligent authoring support**:
-    >1. Select the **Settings** icon on the top menu and then **General settings**.
-    >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Microsoft Copilot Studio menu with the Settings icon open.":::  
-    >  
-    >2. Set the switch under **Intelligent authoring support** to **On**.
+1. In the **Create it with Copilot** window that appears, enter a name in **Name your topic**.
 
-2. In the **Create it with Copilot** window that appears, enter a name for your topic in the **Name your topic** field. 
+1. In the **Create a topic to...** field, describe your topic in simple, plain English. See the examples in the **Or try one of these examples to get started** section to understand the structure of a description. Select **View more examples** to generate new examples.
 
-3. In the **Create a topic to...** field, describe the topic you want to create in simple, plain English. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-describe-it-create-topic.png" alt-text="Screenshot of the Create it with Copilot pop-up window." lightbox="media/nlu-gpt/nlu-quickstart-describe-it-create-topic.png":::
 
-    :::image type="content" source="media/nlu-gpt/describe-it-create-topic.png" alt-text="Screenshot of the Describe it to build it pop-up window.":::
-   
-    You can select any of the examples to automatically insert them into the **Create a topic to...** field. Select **View more examples** to generate new suggestions. 
-      
-4. Select **Create**.
+   > [!NOTE]
+   > Normally, to test the basic chat functionality, you can select an example to use it. But this quickstart helps you use a fallback website. The examples don't have a fallback website.
 
-Once your topic is created, your bot is ready for testing.
+1. Select **Create**.
 
-You can explore ways to extend and enhance your boosted bot and topic in [Create (and edit) with Copilot](nlu-authoring.md).
+Once your topic is created, your copilot is ready for testing.
 
-## Test your bot's boosted conversational reach
+You can explore ways to extend and enhance your boosted copilot and topic in [Create and edit with Copilot](nlu-authoring.md).
 
-Once you create a bot, you can immediately test the bot and try out different phrases for your bot to reply to. 
-The **Test bot** pane shows how a bot conversation plays out at every step and you can fine-tune a topic directly within the **Microsoft Copilot Studio** portal:
- 
-1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the side navigation menu.
-   
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-bot.png" alt-text="Screenshot of Test bot option.":::
+## Test your copilot's boosted conversational reach
 
-1. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to. For example, you could type *What is your return policy?*. 
- 
-   The bot retrieves information from the website and returns a response. The response provides a link to where it found that information and allows you to provide feedback.
- 
-1. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
+When testing, you can see how a copilot conversation progresses with each question and answer, then fine-tune a topic directly:
 
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
- 
+1. Select one of your topics, then choose **Test copilot** above the authoring canvas. Alternatively, select **Test your copilot** from the side navigation menu.
+
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-copilot.png" alt-text="Screenshot of location of both options to test your copilot." lightbox="media/nlu-gpt/nlu-quickstart-test-copilot.png":::
+
+1. In the **Type your message** prompt, ask the copilot about the return policy of the organization whose website you linked to. For example, you can type _What is your return policy?_ or _How do I get to your store?_.
+
+   The copilot retrieves information from the website and returns a response. The response provides a link to where it found that information and allows you to provide feedback.
+
+1. (Optional) Try asking the copilot about something not on your fallback website, such as _Why is the sky blue_. Since the copilot can't find a relevant copilot topic or answer, it replies with a [system fallback topic](authoring-system-fallback-topic.md) and asks you to rephrase the question.
+
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-system-fallback.png" alt-text="Screenshot of the Test copilot pane with the message that the copilot doesn't understand what the user asked and could the user rephrase the question.":::
+
 > [!NOTE]
-> After you test your bot, you can select the reset icon at the top of the **Test bot** pane to clear previous conversations. Resetting makes it easier to follow the flow of the current topic without getting confused by previous conversations.
+> After you test your copilot, you can select the reset icon at the top of the **Test copilot** pane to clear previous conversations. Resetting makes it easier to follow the flow of the current topic without getting confused by previous conversations.
 >  
-> :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-reset.png" alt-text="Screenshot of Test bot pane reset button that looks like a an arrow in a circle shap.":::
-You can return to the authoring canvas at any time to revise the conversation path. The **Test bot** pane automatically refreshes when you select **Save**. 
+> :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-reset.png" alt-text="Screenshot of Test copilot pane reset button that looks like a circular arrow.":::
 
+You can return to the authoring canvas at any time to revise the conversation path. The **Test copilot** pane automatically refreshes when you select **Save** after editing your topics.
 
-## Add features to further develop your bot 
-It's easy to take your bot's conversations up a notch by giving your bot a voice of its own. You can add images and video clips, as well as adaptive cards, entities, and variable expressions. 
-See the [Key concepts - Enhanced authoring](advanced-fundamentals.md) for more details, or continue your bot-building journey by checking out the rest of the [Microsoft Copilot Studio documentation](index.yml).
+To troubleshoot error codes in the chat, see [Error codes: Microsoft Copilot Studio](error-codes.md).
 
+## Add features to further develop your copilot
+
+You can enhance your copilot to make it unqiue and enjoyable. Try adding images and video clips, adaptive cards, entities, and variable expressions.
+
+For more information, see [Key concepts - Enhanced authoring](advanced-fundamentals.md)  or continue your copilot-building journey by exploring the rest of the [Microsoft Copilot Studio documentation](index.yml).

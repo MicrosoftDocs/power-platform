@@ -7,7 +7,7 @@ ms.date: 10/03/2022
 ms.subservice: admin
 author: davidme-ms
 ms.author: davidme 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -23,7 +23,7 @@ To troubleshoot an environment missing issue, three pieces of information are re
 
 1. Which environment does the user expect to see in the list that they aren’t seeing? This can be specified by the environment identifier (typically a GUID), the environment display name, or the Dataverse instance URL (if the environment has a Dataverse database). 
 
-2. Which user is experiencing the problem? Since role assignments vary from user to user, the identity of the user experiencing the problem is required information. This can be given by the Azure AD object ID or by the UPN of the user. 
+2. Which user is experiencing the problem? Since role assignments vary from user to user, the identity of the user experiencing the problem is required information. This can be given by the Microsoft Entra object ID or by the UPN of the user. 
 
 3. In which product experience is the customer missing the environment? The rules for inclusion are different for the Power Platform admin center, the Power Apps maker portal, and the Power Automate portal, so this is required information. 
 
@@ -34,7 +34,7 @@ This table lays out the unique requirements that must be met for an environment 
 
 |Product experience   |Inclusion rules   |
 |---------|---------|
-|Power Platform admin center environment list      | Users must have administrative access to the environment for the environment to show up in the main Power Platform admin center environment list (System Administrator role in Dataverse, Environment Admin role for environments without Dataverse). Azure AD Global admins, Power Platform admins, delegated admins, and authorized service principals will see all environments in the tenant. Dynamics 365 admins are limited to seeing environments in which they're a member of the environment security group, if one has been applied.         |
+|Power Platform admin center environment list      | Users must have administrative access to the environment for the environment to show up in the main Power Platform admin center environment list (System Administrator role in Dataverse, Environment Admin role for environments without Dataverse). Microsoft Entra Global admins, Power Platform admins, delegated admins, and authorized service principals will see all environments in the tenant. Dynamics 365 admins are limited to seeing environments in which they're a member of the environment security group, if one has been applied.         |
 |Power Apps maker portal environment list      | The environment list in the Power Apps maker portal includes all environments in which the user has been assigned the Environment maker role plus any environments in which the user has maker permission to one or more apps. **Note**: Assignment of the Environment Administrator role doesn't cause the environment to be included in the environment list in the maker portal.         |
 |Power Automate portal environment list      | The Power Automate portal includes environments in which the user has any built-in security role plus any environments in which the user is a co-owner of one or more flows.         |
 
@@ -65,7 +65,7 @@ If the environment hasn't been deleted and still doesn’t show up in the admin 
 
 The most common reason for environments to not show up in the list is a missing [role assignment](assign-security-roles.md). Compare the roles assigned to the user with the requirements in the [Requirements table](#requirements-for-access-by-product-experience) above. 
 
-In Dataverse environments, the role may be assigned directly to the user or indirectly via an assignment of the role to an [Azure AD group team](manage-teams.md). 
+In Dataverse environments, the role may be assigned directly to the user or indirectly via an assignment of the role to an [Microsoft Entra group team](manage-teams.md). 
 
 > [!NOTE]
 > Role assignments made via Dataverse owner teams will not cause an environment to be included in the environment list. Do not attempt to use owner teams for this purpose. 
@@ -77,7 +77,7 @@ This step only applies to environments with a Dataverse database. Many of the sa
 Common issues that may be identified by this step include: 
 
 1. The user is [not a member of the environment security group](troubleshooting-user-needs-read-write-access-organization.md#user-isnt-a-member-of-the-environments-security-group). 
-2. The user is missing from the environment, or the user record in Dataverse is out of sync with Azure AD, and so the user may need to be [explicitly added by an administrator](add-users-to-environment.md). 
+2. The user is missing from the environment, or the user record in Dataverse is out of sync with Microsoft Entra ID, and so the user may need to be [explicitly added by an administrator](add-users-to-environment.md). 
 
 ## Special notes about developer, trial, and support environment types 
 

@@ -2,7 +2,7 @@
 title: "Tutorial: Install an application to a target environment (preview) | Microsoft Docs"
 description: This tutorial will demonstrate how to use the Power Platform API (preview) to install an application in an environment context.
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/21/2022
@@ -52,14 +52,14 @@ For the remainder of this tutorial, you'll need an environment ID and an applica
 - **Environment Id**: The ID of the environment to which you would install the package. This isn't the organization ID.
 - **Application name**: The name of the application you're trying to install.
 
-Next we'll authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication (preview)](programmability-authentication-v2.md).
+Next we'll authenticate with Microsoft Microsoft Entra and retrieve a token for calling the Power Platform API.  If you haven’t completed your Microsoft Entra setup, see [Authentication (preview)](programmability-authentication-v2.md).
 
-In this tutorial, we're using a user credential with password to obtain a token.  An example call to Azure AD is below:
+In this tutorial, we're using a user credential with password to obtain a token.  An example call to Microsoft Entra ID is below:
 
 > [!div class="mx-imgBorder"] 
-> ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/appmgmt-tutorial-2.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
+> ![Authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API.](media/appmgmt-tutorial-2.png "Authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API")
 
-We then parse the Azure AD token response into a typed object using this JSON schema in the 'Parse JSON' action:
+We then parse the Microsoft Entra token response into a typed object using this JSON schema in the 'Parse JSON' action:
 
 ```json
 {
@@ -82,7 +82,7 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Parse the Azure AD token response into a strongly typed object.](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
+> ![Parse the Microsoft Entra token response into a strongly typed object.](media/capacity5.png "Parse the Microsoft Entra token response into a strongly typed object")
 
 # [Power Platform CLI](#tab/pacCLI)
 ### Get authenticated

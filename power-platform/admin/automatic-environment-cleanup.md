@@ -1,9 +1,9 @@
 ---
-title: Automatic environment cleanup
+title: Automatic deletion of inactive Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/02/2023
+ms.date: 02/21/2024
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -13,7 +13,7 @@ search.audienceType:
 ms.custom: bap-template
 ---
 
-# Automatic environment cleanup
+# Automatic deletion of inactive Power Platform environments
 
 Automated processes periodically identify, disable, and eventually delete inactive Power Platform environments to optimize storage capacity. An environment may be deleted because it's in a tenant with an expired subscription or because it's not being used. In either case, there are actions you can take to prevent the environment from being deleted.
 
@@ -79,7 +79,7 @@ Here are some examples of the types of activities that are included in the measu
 
 - **User activity**: Launch an app, execute a flow (whether automatic or not), chat with a Power Virtual Agents bot
 - **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Power Virtual Agents bot, or custom connector
-- **Admin activity**: Environment operations such as copy, delete, back up, recover, and reset  
+- **Admin activity**: Environment operations such as copy, delete, recover, and reset  
 
 Activity includes automations such as scheduled flow runs. For example, if there's no user, maker, or admin activity in an environment, but it contains a cloud flow that runs daily, then the environment is considered active.
 

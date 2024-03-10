@@ -1,22 +1,23 @@
 ---
 title: Create AI plugins for Microsoft Copilot (preview)
-description: Use plugin actions to extend the capabilities of your bots.
+description: Use plugin actions to extend the capabilities of your copilots.
 keywords: "PVA, plugin, connector, flow, automate"
 ms.date: 11/15/2023
-ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: gapretty
 ms.custom: plugin, connector, flow, advanced-authoring
-ms.collection: virtual-agent
+
 ---
 # Create AI plugins for Microsoft Copilot (preview)
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-You can create multiple types of AI plugins in Microsoft Copilot Studio, which let you customize how Microsoft Copilot responds to your end users:
+AI Plugins can be used to extend Microsoft Copilot, or used within a custom copilot as a plugin action.
+
+You can create multiple types of AI plugins in Microsoft Copilot Studio:
 
 - Prompt plugins, which use AI Builder and natural language understanding to target the specific scenarios and workflows within your business.
 - Flow plugins, which use Power Automate flows to perform actions, and retrieve and work with data.
@@ -25,7 +26,7 @@ You can create multiple types of AI plugins in Microsoft Copilot Studio, which l
 
 This article provides instructions for creating, sharing, or publishing plugins.
 
-After you create plugins, [enable them for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in -microsoft-copilot).
+After you create plugins, [enable them for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot), or [add them to a custom copilot as a plugin action](./advanced-plugin-actions.md).
 
 AI plugins can be created on the **AI plugins (preview)** page in Copilot Studio, under **Plugins (preview)** on the side navigation pane:
 
@@ -39,7 +40,7 @@ The experience to create prompt plugins in Copilot Studio is the same as in Powe
 
 **To create prompt plugins:**
 
-1. Sign in to Copilot Studio and select **Plugins (preview)** on the side navigation pane.
+1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com) and select **Plugins (preview)** on the side navigation pane.
 1. Select **Add a Power Platform component as an AI plugin**.
 1. Select **Generate content or extract insights**.
 1. Enter a name for your prompt, and then use plain, conversational language to describe what you want to achieve, for example *Summarize this text as a paragraph with fewer than 50 words*. You can also use prebuilt templates to help identify what your prompt can do and how it could be worded.
@@ -57,14 +58,14 @@ Power Automate flow plugins let you define flows that can be called from AI surf
 
 **To create automation plugins:**
 
-1. Sign in to Copilot Studio and select **Plugins (preview)** on the side navigation pane.
+1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com) and select **Plugins (preview)** on the side navigation pane.
 1. Select **Add a Power Platform component as an AI plugin**.
 1. Select **Custom Automation**.
 1. The flow editor automatically opens with the **Run from Copilot** trigger and **Respond to Copilot** action present.
 1. You can add inputs to your trigger for information you might want to collect from your users. Provide helpful text descriptions for each input so the AI can correctly identify what to extract from a user's data or inputs.
    ![Create Flow Plugin](media/copilot-ai-plugins/create-flow-plugin.png)
 1. Add actions to your flow such as the **Create an approval** and **Post a message to Teams chat** to create an approval process.
-1. Optionally add parameters to the **Respond to copilot** action for any output you want to send back to the bot.
+1. Optionally add parameters to the **Respond to copilot** action for any output you want to send back to the copilot.
    ![Create Flow Plugin Path](media/copilot-ai-plugins/create-flow-plugin-path.png)
 1. Save your flow with a meaningful flow name and test or run it at least once. The AI uses the title and description of the flow to determine when to invoke the flow plugins. Ensure your flows run correctly, as only tested flows show up as available plugins in Microsoft Copilot.
 
@@ -79,14 +80,14 @@ Connector plugins let you define connector actions that can be invoked from AI s
 
 **To create connector plugins:**
 
-1. Sign in to Copilot Studio and select **Plugins (preview)** on the side navigation pane.
+1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com) and select **Plugins (preview)** on the side navigation pane.
 1. Select **Add a Power Platform component as an AI plugin**.
 1. Select **Update or get answers about external data** to get started creating a plugin using a connector.
-1. The **Custom connector** editor page automatically opens. Here you can open your connector from the available list or create a new one.
+1. The **Custom connector** editor page automatically opens. Here you can open your connector from the available list or create a new one.  
    ![Create Connector Editor](media/copilot-ai-plugins/create-connector-editor.png)
-1. On the **AI plugin** tab, add your plugin information such as a summary and description under **Manifest details**. Select the connector actions to enable them. Add text descriptions so that copilot can identify and use your actions.
+1. On the **AI plugin** tab, add your plugin information such as a summary and description under **Manifest details**. Select the connector actions to enable them. Add text descriptions so that copilot can identify and use your actions.  
    ![Create Connector Details](media/copilot-ai-plugins/create-connectror-details.png)
-1. Select the input parameter in the **Request** section of the action and enter a description. For actions where the input parameters don't have descriptive names and descriptions, it's helpful to add human readable text to aid the AI in using the actions effectively. For example, a field "id" can be better described as the "Account Identifier" or b_date can be described as "Birth Day of Contact in MM/DD/YYYY format." Such descriptions help large language models interact effectively with the plugin.
+1. Select the input parameter in the **Request** section of the action and enter a description. For actions where the input parameters don't have descriptive names and descriptions, it's helpful to add human readable text to aid the AI in using the actions effectively. For example, a field "id" can be better described as the "Account Identifier" or b_date can be described as "Birth Day of Contact in MM/DD/YYYY format." Such descriptions help large language models interact effectively with the plugin.  
      ![Create Connector Description](media/copilot-ai-plugins/create-connector-description.png)
 
 1. Select **Create/Update Connector** and the connector's Swagger gets updated with appropriate annotations.
@@ -111,12 +112,12 @@ Users can create OpenAI plugins and use them to generate connectors to integrate
 
 **To create an OpenAI plugin:**
 
-1. Sign in to Copilot Studio and select **Plugins (preview)** on the side navigation pane.
+1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com) and select **Plugins (preview)** on the side navigation pane.
 1. Select **Add an OpenAI plugin**.
-1. Provide your manifest for the Open AI plugin. You can add a link to the location of the manifest file, or by manually selecting and uploading the manifest file from a local machine.
+1. Provide your manifest for the Open AI plugin. You can add a link to the location of the manifest file, or by manually selecting and uploading the manifest file from a local machine.  
    ![Create Openai Manifest](media/copilot-ai-plugins/create-openai-manifest.png)
 1. After providing your manifest, select **Next**.
-1. Select the authentication type for your plugin from the available options. You might be asked to provide authentication details, if necessary for the connection.
+1. Select the authentication type for your plugin from the available options. You might be asked to provide authentication details, if necessary for the connection.  
    ![Create Openai Auth](media/copilot-ai-plugins/create-openai-auth.png)
 
    The following authentication types are supported:
@@ -125,9 +126,9 @@ Users can create OpenAI plugins and use them to generate connectors to integrate
    - **API Key** - Requires a parameter label, name, and the location for the label. Later, when creating a connection to the connector or plugin, you're prompted to provide your API Key.
    - **OAuth 2.0** - Requires a client ID, client secret, authentication URL, token URL, refresh URL, and scope.
 
-1. Select **Add Plugin**.
+1. Select **Add Plugin**.  
    ![Create Openai Added](media/copilot-ai-plugins/create-openai-added.png)
 
-Your copilot plugin is generated along with your custom connector for the plugin. Both are available for use within your organization and can be included in solutions that you export. For more information, see [Create a custom connector from an OpenAI definition](/connectors/custom-connectors/define-openapi-definition).
+Your copilot plugin is generated along with your custom connector for the plugin. Both are available for use within your organization and can be included in solutions that you export. For more information, see [Create a custom connector from an OpenAPI definition](/connectors/custom-connectors/define-openapi-definition).
 
 After you create your plugin, [enable it for use in Microsoft Copilot](copilot-plugins-overview.md#use-plugins-in-microsoft-copilot).

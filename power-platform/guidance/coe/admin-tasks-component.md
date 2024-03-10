@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 09/07/2022
 ms.subservice: guidance
 ms.author: stjeffer
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -68,7 +68,7 @@ The table below describes the fields used to define a task.
 | Duration | Number | How long the task should take to complete, in minutes |
 | Experience required | Choice | The level of experience required to complete the task |
 | Core admin persona | Choice | Who in the core team will primarily perform the task, for example Environment Admin or Product Owner |
-| Peripheral admin persona | Choice | Who else is required to complete the task, for example Azure AD Administrator or SharePoint Administrator |
+| Peripheral admin persona | Choice | Who else is required to complete the task, for example Microsoft Entra Administrator or SharePoint Administrator |
 | Primary task category | Choice | The primary category for the task, for example Security |
 | Secondary task category | Choice | The secondary category for the task, for example Reporting |
 | Product or service | Choice | The product or service, for example AI Builder or Power Apps |
@@ -100,7 +100,7 @@ This section of the report focuses on how many tasks are reactive ("ad-hoc"). Yo
 This section of the report aggregates duration for all tasks, grouped by task frequency, and provides insight into:
 
 - **Experience levels required**: Illustrates the experience required across all tasks, which can be useful in estimating training requirements for your existing team.
-- **Core admin persona** and **peripheral admin persona**:  Illustrates how many tasks are assigned to the different personas in your core administration team and how many tasks require other teams to complete. For example, creating an environment might require the Power Platform administrator and an Azure AD administrator to create the environment and security groups for managing access.
+- **Core admin persona** and **peripheral admin persona**:  Illustrates how many tasks are assigned to the different personas in your core administration team and how many tasks require other teams to complete. For example, creating an environment might require the Power Platform administrator and a Microsoft Entra administrator to create the environment and security groups for managing access.
 
 ### Task overview - categorization
 

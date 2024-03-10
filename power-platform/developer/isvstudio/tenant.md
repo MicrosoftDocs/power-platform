@@ -3,8 +3,8 @@ title: Tenant page of ISV Studio | Microsoft Docs
 description: Learn about the Tenant page capabilities provided by the ISV Studio portal.
 ms.date: 04/03/2023
 ms.reviewer: jdaly
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 suite: powerapps
 ms.topic: article
 ms.subservice: developer

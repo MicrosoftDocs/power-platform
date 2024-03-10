@@ -9,7 +9,7 @@ ms.collection: get-started
 author: lancedMicrosoft
 ms.subservice: admin
 ms.author: lanced
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -58,13 +58,13 @@ Power Platform services are built on Azure, Microsoft's cloud computing platform
 
 ### Web front-end cluster
 
-Applies to Power Platform services that display a web UI. The web front-end cluster serves the application or service home page to the user's browser. It uses Azure Active Directory (Azure AD) to authenticate clients initially, and provide tokens for subsequent client connections, to the Power Platform back-end service.
+Applies to Power Platform services that display a web UI. The web front-end cluster serves the application or service home page to the user's browser. It uses Microsoft Entra to authenticate clients initially, and provide tokens for subsequent client connections, to the Power Platform back-end service.
 
   :::image type="content" source="./media/WFEcluster.png" alt-text="A diagram that illustrates how the Power Platform web front-end cluster works with the Azure App Service Environment, ASP.NET, and Power Platform service back-end clusters.":::
 
 A web front-end cluster consists of an ASP.NET website that runs in the Azure App Service Environment. When a user visits a Power Platform service or application, the client's DNS service may get the most appropriate (usually nearest) datacenter from the Azure Traffic Manager. For more information, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
-The web front-end cluster manages the login and authentication sequence. It obtains an Azure AD access token after the user is authenticated. The ASP.NET component parses the token to determine which organization the user belongs to. The component then consults the Power Platform global back-end service to specify to the browser which back-end cluster houses the organization's tenant. Subsequent client interactions occur with the back-end cluster directly, without the need for the web front-end intermediary.
+The web front-end cluster manages the login and authentication sequence. It obtains a Microsoft Entra access token after the user is authenticated. The ASP.NET component parses the token to determine which organization the user belongs to. The component then consults the Power Platform global back-end service to specify to the browser which back-end cluster houses the organization's tenant. Subsequent client interactions occur with the back-end cluster directly, without the need for the web front-end intermediary.
 
 The browser fetches static resources, such as .js, .css, and image files, mainly from an Azure Content Delivery Network (CDN). Sovereign Government cluster deployments are an exception. For compliance reasons, these deployments omit the Azure CDN. Instead, they use a web front-end cluster from a compliant region to host static content.
 
@@ -110,7 +110,7 @@ Mobile apps actively communicate with the Power Platform services. App usage sta
 
 #### The application and data on the device
 
-The mobile app and the data it requires are stored securely on the device. Azure AD and refresh tokens are stored using industry-standard security measures.
+The mobile app and the data it requires are stored securely on the device. Microsoft Entra and refresh tokens are stored using industry-standard security measures.
 
 Data cached on the device includes app data, user settings, and dashboards and reports accessed in previous sessions. The cache is stored in a sandbox in internal storage. The cache is accessible only to the app and can be encrypted by the OS.
 
@@ -134,7 +134,7 @@ Notifications are enabled or disabled explicitly by the user. If notifications a
 
 The Power Platform mobile services don't access other application folders or files on the device.
 
-Some token-based authentication data is available to other Microsoft apps, such as Authenticator, to enable single sign-on. This data is managed by the Azure AD Authentication Library SDK.
+Some token-based authentication data is available to other Microsoft apps, such as Authenticator, to enable single sign-on. This data is managed by the Microsoft Entra Authentication Library SDK.
 
 ### Related articles
 

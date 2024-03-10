@@ -7,7 +7,7 @@ ms.date: 08/18/2022
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -28,9 +28,9 @@ The on-premises data gateway acts as a bridge, providing quick and secure data t
 
 On the **Data** page of the [Power Platform admin center](https://admin.powerplatform.microsoft.com), you can view and manage on-premises data gateways.
 
-Users who are part of the Azure AD Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to data gateway management on the Power Platform admin center. However, there might be differences in the features available and the operations that can be performed by each of these roles.
+Users who are part of the Microsoft Entra Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to data gateway management on the Power Platform admin center. However, there might be differences in the features available and the operations that can be performed by each of these roles.
 
-The Azure AD Global administrator role (which includes Global admins) and Power BI service administrators can use the **Tenant administration** setting to control the list of gateways exposed. Only these admins will see the **Tenant administration** toggle.
+The Microsoft Entra Global administrator role (which includes Global admins) and Power BI service administrators can use the **Tenant administration** setting to control the list of gateways exposed. Only these admins will see the **Tenant administration** toggle.
 
 - Turn on **Tenant administration** to see and manage all gateways installed in your enterprise.
 - Turn off **Tenant administration** to see and manage all gateways for which you are an administrator.
@@ -158,7 +158,7 @@ Select a gateway cluster, then select **Details** > **Check status** (![Gateway 
 
 ## Manage gateway installers
 
-As either an Azure AD Global administrator (which includes Global admins) or a Power BI service administrator, use Manage gateway installers to manage who can install the on-premises data gateway in your enterprise. This operation isn't available for gateway admins.
+As either a Microsoft Entra Global administrator (which includes Global admins) or a Power BI service administrator, use Manage gateway installers to manage who can install the on-premises data gateway in your enterprise. This operation isn't available for gateway admins.
 
 > [!NOTE]
 > This feature does not apply to on-premises data gateways (personal mode).

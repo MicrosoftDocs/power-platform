@@ -30,6 +30,8 @@
             href: formula-reference.md
           - name: Dataverse formula reference
             href: formula-reference-dataverse.md
+          - name: Desktop flows formula reference
+            href: formula-reference-desktop-flows.md
           - name: Power Platform CLI formula reference
             href: formula-reference-pac-cli.md
           - name: Abs
@@ -40,6 +42,18 @@
             href: reference/function-trig.md
           - name: Acot
             href: reference/function-trig.md
+          - name: AIClassify
+            href: reference/function-ai.md
+          - name: AIExtract
+            href: reference/function-ai.md
+          - name: AIReply
+            href: reference/function-ai.md
+          - name: AISentiment
+            href: reference/function-ai.md
+          - name: AISummarize
+            href: reference/function-ai.md
+          - name: AITranslate
+            href: reference/function-ai.md
           - name: AddColumns
             href: reference/function-table-shaping.md
           - name: And
@@ -88,6 +102,10 @@
             href: reference/function-colors.md
           - name: ColorValue
             href: reference/function-colors.md
+          - name: Column
+            href: reference/function-columnnames-column.md
+          - name: ColumnNames
+            href: reference/function-columnnames-column.md
           - name: Compass
             href: reference/signals.md
           - name: Concat
@@ -362,6 +380,8 @@
             href: reference/function-sequence.md
           - name: ShowColumns
             href: reference/function-table-shaping.md
+          - name: ShowHostInfo
+            href: reference/showhostinfo.md
           - name: Shuffle
             href: reference/function-shuffle.md
           - name: Sin
@@ -414,6 +434,8 @@
             href: reference/function-round.md 
           - name: Ungroup
             href: reference/function-groupby.md
+          - name: UniChar
+            href: reference/function-char.md
           - name: Unrelate
             href: reference/function-relate-unrelate.md
           - name: Update

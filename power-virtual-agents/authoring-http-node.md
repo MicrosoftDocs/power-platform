@@ -10,8 +10,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewr: gapretty
 ms.custom: authentication, ceX
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Making HTTP requests

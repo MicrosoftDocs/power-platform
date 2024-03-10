@@ -25,7 +25,15 @@
         - name: Create and update solutions
           href: update-solutions-alm.md
         - name: Removing dependencies
-          href: removing-dependencies.md
+          items:
+             - name: Removing dependencies overview
+               href: removing-dependencies.md
+             - name: Field and workflow dependencies
+               href: remove-field-workflow.md
+             - name: Field and view dependencies
+               href: remove-field-view.md
+             - name: Table and model-driven app dependencies
+               href: remove-table-app.md
         - name: Organize solutions
           href: organize-solutions.md
     - name: Tools and apps used
@@ -82,6 +90,8 @@
               href: run-pipeline.md
             - name: Use Copilot to generate deployment notes in pipelines
               href: copilot-deployment-notes-pipelines.md
+        - name: Block unmanaged customizations (preview) 
+          href: block-unmanaged-customizations.md
     - name: ALM for developers
       href: alm-for-developers.md
       items:

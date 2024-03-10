@@ -4,7 +4,7 @@ description: How to manage application users from the Power Platform admin cente
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/18/2022
@@ -23,7 +23,7 @@ We're in the process of moving application user management from the legacy web c
 
 ## View application users in an environment 
 
-On the **Application users** page, you can view and manage application users. The **Custom** app type is your local app registration, as created in Azure Active Directory (Azure AD).
+On the **Application users** page, you can view and manage application users. The **Custom** app type is your local app registration, as created in Microsoft Entra ID.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
 
@@ -39,7 +39,7 @@ On the **Application users** page, you can view and manage application users. Th
 
 You can create an unlicensed application user in your environment. This application user will be given access to your environment's data on behalf of the user who's using your application. 
 
-In an environment, you can only have one application user for each Azure AD&ndash;registered application.   
+In an environment, you can only have one application user for each Microsoft Entra&ndash;registered application.   
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
 
@@ -53,16 +53,16 @@ In an environment, you can only have one application user for each Azure AD&ndas
 
    :::image type="content" source="media/create-new-app-user.png" alt-text="Create a new application user.":::
 
-6. Select **+ Add an app** to choose the registered Azure AD application that was created for the selected user, and then select **Add**. 
+6. Select **+ Add an app** to choose the registered Microsoft Entra application that was created for the selected user, and then select **Add**. 
 
-   :::image type="content" source="media/add-app-from-azure-ad.png" alt-text="Add an application from Azure AD.":::
+   :::image type="content" source="media/add-app-from-azure-ad.png" alt-text="Add an application from Microsoft Entra ID.":::
 
    > [!NOTE]
    > In addition to entering the Application Name or Application ID, you can also enter an Azure Managed Identity Application ID. For Managed Identity, do not enter the Managed Identity Application Name, use the Managed Identity Application ID instead.
    > 
-   > Enterprise applications don't show in the list of applications, only Azure AD app registrations show in the list. Search for the multitenant application by name or ID to assign it to the application user.  
+   > Enterprise applications don't show in the list of applications, only Microsoft Entra app registrations show in the list. Search for the multitenant application by name or ID to assign it to the application user.  
 
-7. The selected Azure AD app is displayed under **App**. You can select **Edit** (![Edit.](media/edit-button.png)) to choose another Azure AD application. Under **Business Unit**, select a business unit from the dropdown list.  
+7. The selected Microsoft Entra app is displayed under **App**. You can select **Edit** (![Edit.](media/edit-button.png)) to choose another Microsoft Entra application. Under **Business Unit**, select a business unit from the dropdown list.  
 
    :::image type="content" source="media/create-new-app-user-business-unit.png" alt-text="Select a business unit.":::
 
@@ -89,7 +89,7 @@ In an environment, you can only have one application user for each Azure AD&ndas
 The **Details** page shows the following properties for the application user: 
 
 - Name 
-- Azure AD application ID
+- Microsoft Entra application ID
 - State
 - Assigned security roles 
 - App type 
@@ -100,14 +100,14 @@ The business unit, email address, and security roles can be edited.
 
 :::image type="content" source="media/application-user-details-page.png" alt-text="The application user details page.":::
 
-## Sync the application user name with the Azure AD application name  
+## Sync the application user name with the Microsoft Entra application name  
 
-When an application user is first created, the username is the same as the name of the registered Azure AD application. The two names can get out of sync when the name of the Azure AD application is changed. You can sync the application user name with the Azure AD application name by selecting **Refresh** on the **Details** page. 
+When an application user is first created, the username is the same as the name of the registered Microsoft Entra application. The two names can get out of sync when the name of the Microsoft Entra application is changed. You can sync the application user name with the Microsoft Entra application name by selecting **Refresh** on the **Details** page. 
 
 > [!NOTE]
-> **Refresh** and the Azure AD app name are only shown when the two names are out of sync. 
+> **Refresh** and the Microsoft Entra app name are only shown when the two names are out of sync. 
 
-:::image type="content" source="media/sync-app-user-name-azure-ad-app-name.png" alt-text="Sync the application user name with the Azure AD application name.":::
+:::image type="content" source="media/sync-app-user-name-azure-ad-app-name.png" alt-text="Sync the application user name with the Microsoft Entra application name.":::
 
 ## Manage roles for an application user 
 
@@ -125,4 +125,4 @@ You can select or deselect roles, and then select **Save**.  All selected roles 
 
    :::image type="content" source="media/activate-application-user.png" alt-text="Activate an application user."::: 
 
-  - To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.  
+  - To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.

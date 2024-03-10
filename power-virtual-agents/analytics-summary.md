@@ -9,8 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: analysis, ceX
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Analyze bot performance and usage in Microsoft Copilot Studio
@@ -33,7 +32,13 @@ _Analytics sessions_ track user engagement with your bot and try to capture how 
 The summary charts measure how well your bot is doing and help you find the topics with the most impact on your bot's performance. A session will time out after 30&nbsp;minutes of inactivity.
 
 - A session starts when a user interacts with your bot or the bot sends a proactive message to the user. The session begins in an _unengaged_ state.
-- A session becomes _engaged_ when a non-system topic is triggered or the session is escalated. Once it's engaged, it remains engaged. An engaged session will have one of the following outcomes: _resolved_, _escalated_, or _abandoned_.
+- A session becomes _engaged_ when one of the following occurs:
+  - a non-system topic is triggered
+  - the session is escalated
+  - the fallback topic is triggered
+  - the conversational boosting topic is triggered
+    
+  Once the session becomes engaged, it remains engaged. An engaged session will have one of the following outcomes: _resolved_, _escalated_, or _abandoned_.
 - A session ends and is considered _escalated_ when the **Escalate** topic is triggered or a **Transfer to agent** node is run. (The current analytics session ends, whether the conversation transfers to a live agent or not.)
 - A session ends and is considered _resolved_ when either:
   - The **Confirmed Success** topic is triggered.

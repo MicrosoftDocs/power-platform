@@ -2,7 +2,7 @@
 title: Responding to DSR requests for Microsoft Dataverse customer data | Microsoft Docs
 description: Walkthrough of how to respond to DSR requests for Microsoft Dataverse customer data
 author: sericks007
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/19/2022
@@ -78,7 +78,7 @@ You can find personal data from Dataverse users within the following resources:
 | Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at an table level. | [Power Platform admin center](https://admin.powerplatform.microsoft.com/) | Through the [Web API](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)  |
 
 #### User
-User personal data is stored in the Azure Active Directory and is automatically synced to all environments with a Dataverse database. System administrators cannot update this personal data directly in Dataverse while the user is active&mdash;they must update the data from within the Microsoft 365 admin center. System administrators can add personal data (for example, custom attributes) directly to Dataverse, but they must manually manage this data.
+User personal data is stored in the Microsoft Entra and is automatically synced to all environments with a Dataverse database. System administrators cannot update this personal data directly in Dataverse while the user is active&mdash;they must update the data from within the Microsoft 365 admin center. System administrators can add personal data (for example, custom attributes) directly to Dataverse, but they must manually manage this data.
 
 To find a user and their personal data, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and do the following:
 
@@ -100,9 +100,9 @@ When [audit tracking](manage-dataverse-auditing.md) is enabled for a table in Da
 ### Rectify
 If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
 
-You can use Azure Active Directory to manage the identities (personal data) of your users within Dataverse. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
+You can use Microsoft Entra to manage the identities (personal data) of your users within Dataverse. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
 
-Once a user row is deleted from Azure Active Directory, System Administrators can then remove any remaining personal data related to that user (such as custom attributes) from all the environments.  
+Once a user row is deleted from Microsoft Entra ID, System Administrators can then remove any remaining personal data related to that user (such as custom attributes) from all the environments.  
 
 ### Export
 
@@ -144,7 +144,7 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 To avoid interruption to business applications that may be critical to your organization's operations, a user's records are not automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application or delete the user from each environment. You can remove the user's personal data or [permanently delete the user](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform).
 
 #### Remove a user's personal data from the user's Summary page
-When a user record is deleted from the Azure Active Directory, the following message is displayed on the user's Summary page:
+When a user record is deleted from the Microsoft Entra, the following message is displayed on the user's Summary page:
 
 *This user's information is no longer managed by Office 365. You can update this record to respond to DSR requests by removing or replacing all personal data associated with this user.*
 
@@ -325,7 +325,7 @@ To see a list of your tables, do the following:
 ### Rectify
 If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
 
-You can use Azure Active Directory to manage the identities (personal data) of your users within the previous version of Dataverse. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
+You can use Microsoft Entra to manage the identities (personal data) of your users within the previous version of Dataverse. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
 
 To rectify personal data that resides in the environment, you can export the table data into an Excel spreadsheet, update it, and then import the updates back to the database.
 

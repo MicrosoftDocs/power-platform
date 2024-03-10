@@ -8,6 +8,8 @@ ms.author: ampatra
 ms.reviewer: sericks
 contributors:
   - marcelbf
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 # Tenant settings
@@ -30,9 +32,12 @@ The following settings apply to all environments within your tenant.
 |[Add-on capacity assignments](capacity-add-on.md#control-who-can-allocate-add-on-capacity)    | Control who can allocate add-on capacity to an environment.        |
 |[Analytics](tenant-level-analytics.md)   | Enable tenant-level analytics.        |
 |[Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy)*   | Enable the Customer Lockbox policy for Managed Environments.        |
+|[Canvas app insights](/power-apps/maker/canvas-apps/application-insights) | Allow canvas app users to collect insights for their app. |
 |[Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features](../transparency-note-copilot-data-sharing.md)   | Enable Microsoft to capture and human review inputs, outputs, telemetry from Dynamics 365 Copilot and Power Platform Copilot AI features to build, improve, and validate Microsoft's machine leaning models, features, services, and related systems.<br/>By default, this setting is disabled.       |
 | Catalog Assignments  | This setting is reserved for future use. No enforcement is driven by this setting at the current time.       |
 | Tenant capacity summary view | This setting controls who can view the tenant capacity summary page: either only tenant admins or both tenant and environment admins. |
+| Copilot feedback | When using Copilot in Power Apps, allow users to submit feedback to Microsoft. |
+| Copilot feedback data | When using Copilot in Power Apps, allow users to share their prompts, questions, and requests with Microsoft. |
 
 *This setting applies only to Managed Environments.
 

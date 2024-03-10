@@ -9,8 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "azure, extend, ceX"
-ms.service: power-virtual-agents
-ms.collection: virtual-agent
+
 ---
 
 # Configure a skill for use in Microsoft Copilot Studio

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 05/20/2021
 ms.subservice: guidance
 ms.author: kathyos
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -116,7 +116,7 @@ For business apps, we often need data from various data sources. Microsoft Datav
 
 - Microsoft customer, sales, and partner data (for example, Microsoft Sales Experience, Lifecycle Services, Customer Service)
 - DevOps and Serviceability (Azure DevOps and IcM Incident Management, for example)
-- Organization hierarchy and user profiles (Azure Active Directory and Microsoft Graph)
+- Organization hierarchy and user profiles (Microsoft Entra and Microsoft Graph)
 
 ## Support and maintenance channels
 

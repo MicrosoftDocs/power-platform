@@ -17,7 +17,7 @@ contributors:
 
 # Formula reference - Power Platform CLI
 
-Use these commands to interact with data in Dataverse using a command line or script. Reduce the time and complexity of your Dataverse operations by using Power Fx. [Learn how to use pac power-fx commands](/power-platform/developer/cli/reference/power-fx).
+Use these commands to interact with data in Dataverse using a command line or script. Reduce the time and complexity of your Dataverse operations by using Power fx [pac power-fx](../developer/cli/reference/power-fx.md)
 
 ## A
 
@@ -63,6 +63,10 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
+**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+
+**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+
 **[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
 
 **[Concatenate](reference/function-concatenate.md)** – Concatenates strings.
@@ -71,7 +75,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[Cot](reference/function-trig.md)** – Returns the cotangent of an angle specified in radians.
 
-**[Count](reference/function-table-counts.md)** - Counts the number of records that contain a number in a single-column table.
+**[Count](reference/function-table-counts.md)** – Counts the number of records that contain a number in a single-column table.
 
 **[CountA](reference/function-table-counts.md)** – Counts table records that aren't [empty](reference/function-isblank-isempty.md).
 
@@ -87,7 +91,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[DateDiff](reference/function-dateadd-datediff.md)** – Subtracts two date values, and shows the result in days, months, quarters, or years.
 
-**[DateTime](reference/function-date-time.md)** - Returns a date/time value, based on both date and time components.
+**[DateTime](reference/function-date-time.md)** – Returns a date/time value, based on both date and time components.
 
 **[DateTimeValue](reference/function-datevalue-timevalue.md)** – Converts a date and time string to a date/time value.
 
@@ -95,11 +99,11 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[Day](reference/function-datetime-parts.md)** – Retrieves the day portion of a date/time value.
 
-**[Dec2Hex](reference/function-hexdec.md)** - Convert a number to a hexadecimal text string.
+**[Dec2Hex](reference/function-hexdec.md)** – Convert a number to a hexadecimal text string.
    
-**[Decimal](reference/function-value.md)** - Converts a string to a [decimal number](data-types.md#decimal-numbers).
+**[Decimal](reference/function-value.md)** – Converts a string to a [decimal number](data-types.md#decimal-numbers).
 
-**[Degrees](reference/function-trig.md)** - Converts radians to degrees.
+**[Degrees](reference/function-trig.md)** – Converts radians to degrees.
 
 **[Distinct](reference/function-distinct.md)** – Summarizes records of a table, removing duplicates.
 
@@ -107,17 +111,17 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 ## E
 
-**[EDate](reference/function-edate-eomonth.md)** - Adds or subtracts months to a date, without changing the day of the month.
+**[EDate](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, without changing the day of the month.
 
 **[EncodeUrl](reference/function-encode-decode.md)** – Encodes special characters using URL encoding.
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
 
-**[EOMonth](reference/function-edate-eomonth.md)** - Adds or subtracts months to a date, returning the last day of that month.
+**[EOMonth](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, returning the last day of that month.
 
 **[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
-**[Exp](reference/function-numericals.md)** - Returns _e_ raised to a power.
+**[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
 
 ## F
 
@@ -129,7 +133,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[FirstN](reference/function-first-last.md)** – Returns the first set of records (N records) of a table.
 
-**[Float](reference/function-value.md)** - Converts a string to a [floating point number](data-types.md#floating-point-numbers).
+**[Float](reference/function-value.md)** – Converts a string to a [floating point number](data-types.md#floating-point-numbers).
 
 **[ForAll](reference/function-forall.md)** – Calculates values and performs actions for all records of a table.
 
@@ -139,9 +143,9 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 ## H
 
-**[Help](reference/function-help.md)** - Displays help information for command line Power Fx hosts.
+**[Help](reference/function-help.md)** – Displays help information for command line Power Fx hosts.
 
-**[Hex2Dec](reference/function-hexdec.md)** - Convert a hexadecimal text string to a number.
+**[Hex2Dec](reference/function-hexdec.md)** – Convert a hexadecimal text string to a number.
 
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
 
@@ -150,7 +154,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[If](reference/function-if.md)** – Returns one value if a condition is true and another value if not.
 
-**[IfError](reference/function-iferror.md)** - Detects errors and provides an alternative value or takes action.
+**[IfError](reference/function-iferror.md)** – Detects errors and provides an alternative value or takes action.
 
 **[Index](reference/function-first-last.md)** – Returns a record from a table based on ordered position.
 
@@ -238,7 +242,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 ## R
 
-**[Radians](reference/function-trig.md)** - Converts degrees to radians.
+**[Radians](reference/function-trig.md)** – Converts degrees to radians.
 
 **[Rand](reference/function-rand.md)** – Returns a pseudo-random number between 0 and 1.
 
@@ -298,7 +302,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[Table](reference/function-table.md)** – Creates a temporary table.
 
-**[Tan](reference/function-trig.md)** - Returns the tangent of an angle specified in radians.
+**[Tan](reference/function-trig.md)** – Returns the tangent of an angle specified in radians.
 
 **[Text](reference/function-text.md)** – Converts any value and formats a number or date/time value to a string of text.
 
@@ -310,7 +314,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[Today](reference/function-now-today-istoday.md)** – Returns the current date-only value.
 
-**[Trace](reference/function-trace.md)** - Provide additional information in your test results.
+**[Trace](reference/function-trace.md)** – Provide additional information in your test results.
 
 **[Trim](reference/function-trim.md)** – Removes extra spaces from the ends and interior of a string of text.
 
@@ -319,6 +323,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 **[Trunc](reference/function-round.md)** – Truncates the number to only the integer portion by removing any decimal portion.
 
 ## U
+
+**[UniChar](reference/function-char.md)** – Translates a Unicode code into a string.
 
 **[Upper](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all uppercase.
 

@@ -1,15 +1,14 @@
 ---
 title: Create copilot plugins - overview (preview)
 description: Use Microsoft Copilot Studio to create plugins that can be called directly from within chats with Microsoft Copilot.
-ms.date: 11/10/2023
-ms.service: power-virtual-agents
+ms.date: 2/09/2024
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: leeclontz
+manager: kjette
 ms.reviewer: jameslew
 ms.custom: plugin, connector, flow, advanced-authoring
-ms.collection: virtual-agent
+
 ---
 
 
@@ -27,27 +26,33 @@ Copilot plugin building connects the Microsoft 365 tenant and the Power Platform
 
 These connections allow you to use plugins in Microsoft Copilot for Microsoft 365 and use data across Dynamics 365, Power Platform, and Microsoft 365.
 
-This article gives an overview of the ways you can create and use copilot plugins and provides links for individual configuration steps.
+This article gives an overview of the ways you can create and use copilot plugins and provides links for individual configuration steps for building and configuring plugins in Copilot Studio. 
+
+You can also [use and deploy pre-built plugins for business applications, including Power Platform and Dynamics 365 apps](/microsoft-365-copilot/extensibility/overview-business-applications).
 
 >[!Important]
 >  
-> During this preview, you can use plugins in Microsoft Copilot. You can't use plugins in custom copilots that you build with Microsoft Copilot Studio.
+> During the preview, plugins you build with Copiot Studio can only be used in Copilot for Microsoft 365. You can't use plugins you build in custom copilots that you've created in Copilot Studio.
 
 ## Prerequisites
 
-To create AI plugins that your end users can use in their chats with Microsoft Copilot, you need:
-
-- A license for Microsoft Copilot Studio (or an existing Power Virtual Agents license).
-- Your Microsoft 365 tenant admin to [deploy the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](#deploy-the-dynamics-365-and-copilot-studio-app-admin).
-- Your Power Platform environment admin to [enable the Microsoft 365 Copilot setting in the Power Platform admin center](#enable-the-microsoft-365-copilot-setting-admin).
 
 
+To create conversational and AI plugins that your end users can use in their chats with Microsoft Copilot, you need:
 
-End users in your tenant can use conversational and AI plugins in their chats with Microsoft Copilot if you configure these settings, author and publish an AI plugin, and [the user enables the connection from within their chat with Microsoft Copilot](#enable-the-connection-in-microsoft-copilot-user).
+- [A license for Microsoft Copilot Studio (or an existing Power Virtual Agents license)](requirements-licensing-subscriptions.md).
+- [Licenses for Copilot for Microsoft 365](/microsoft-365-copilot/extensibility/overview-business-applications#get-copilot-for-microsoft-365-licenses-and-enable-plugins).
+- To submit a support ticket with the title **Enable Copilot plugins for tenants** or make a request to the Microsoft Customer Success Account Manager for your organization.
+- Your Microsoft 365 tenant admin to [deploy the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center](#deploy-the-microsoft-copilot-studio-app-admin).
+
+End users in your tenant can use conversational and AI plugins in their chats with Microsoft Copilot if you configure these settings, author and publish an AI plugin, and [the user enables the connection from within their chat with Microsoft Copilot](#enable-the-connection-in-microsoft-copilot).
+
+
+
 
 ## Copilot plugins
 
-Plugins are discrete, reusable building blocks that work across Power Platform, Dynamics 365, and Microsoft 365. All plugins within your [Microsoft 365 tenant](/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide#a-microsoft-365-tenant-defined) are shared from a central plugin registry in Dataverse. When you create or change a plugin and publish it, the changes are pushed to all your copilots that use the plugin.
+Plugins are discrete, reusable building blocks that work across Power Platform, Dynamics 365, and Microsoft 365. All plugins within your [Microsoft 365 tenant](/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide&preserve-view=true#a-microsoft-365-tenant-defined) are shared from a central plugin registry in Dataverse. When you create or change a plugin and publish it, the changes are pushed to all your copilots that use the plugin.
 
 When you create a plugin, you use simple language to describe what the plugin should do. Next, you provide a data source or other connection that the copilot uses when reading a description and determining the best plugin for a conversation. The copilot automatically asks the user for more information, if needed, for the plugin to work.
 
@@ -60,7 +65,7 @@ Instead of manually designing a conversation flow within the copilot to account 
 - A Power Automate flow plugin takes the contact data provided by the copilot user to create the lead.
 - A prompt plugin summarizes the latest conversations the copilot user had with the contact.
 
-Now when the copilot user asks to create a lead, the flow plugin is triggered and the lead is created from the data already provided by the user. The use can also ask for an abstract or summary, which triggers the prompt plugin and return a summary of actions.
+Now when the copilot user asks to create a lead, the flow plugin is triggered and the lead is created from the data already provided by the user. The user can also ask for an abstract or summary, which triggers the prompt plugin and return a summary of actions.
 
 ### Plugin categories and types
 
@@ -93,39 +98,23 @@ OpenAI plugins | [Open AI plugins](https://platform.openai.com/docs/plugins/intr
 
 End users in your tenant can use conversational and AI plugins in their chats with Microsoft Copilot if:
 
-1. Your Microsoft 365 tenant admin deploys the Dynamics 365 and Copilot Studio app in the Microsoft 365 admin center.
-
-1. Your Power Platform environment admin enables the Microsoft 365 Copilot setting in the Power Platform admin center.
+1. Your Microsoft 365 tenant admin deploys the Microsoft Copilot Studio app in the Microsoft 365 admin center.
 
 1. The end user enables the connection from within their chat with Microsoft Copilot.
 
-### Deploy the Dynamics 365 and Copilot Studio app (admin)
+### Deploy the Microsoft Copilot Studio app (admin)
 
 1. Sign in to the Microsoft 365 admin center with your admin account.
 
 1. Expand **Settings** on the side navigation pane and select **Integrated apps**.
 
-1. Go to the **Available apps** tab and select the entry **Dynamics 365 and Copilot Studio**. The app's details pane opens.
+1. Go to the **Available apps** tab and select the entry **Microsoft Copilot Studio**. The app's details pane opens.
 
 1. Select **Deploy** to enable the app in chats with Microsoft Copilot.
 
-![Deploying the Dynamics 365 and Copilot Studio app](media/copilot-plugins-overview/deploy-dynamics365-and-copilot-studio.png)
+![Deploying the Copilot Studio app](media/copilot-plugins-overview/deploy-dynamics365-and-copilot-studio.png)
 
-### Enable the Microsoft 365 Copilot setting (admin)
-
-1. Sign in to the Power Platform admin center at https\://admin.powerplatform.microsoft.com with your admin account.
-
-1. Select **Environments** on the side navigation pane and then select the environment where you want your plugins to be used.
-
-1. Expand the **Product** section, and select **Features**.
-
-1. Set the switch for **M365 Copilot** to **On**.
-
-1. Scroll to the end of the **Features** page and select **Save**.
-
-![Enabling the Microsoft 365 Copilot setting](media/copilot-plugins-overview/enable-microsoft-365-copilot-setting.png)
-
-### Enable the connection in Microsoft Copilot (user)
+### Enable the connection in Microsoft Copilot
 
 Microsoft Copilot end users need to create a connection between their chat instance and the plugin registry. They only need to create a connection once, then they can interact with all existing and any future plugins that are available to do them.
 
@@ -142,12 +131,11 @@ Users can also ask directed questions about data connections or how to perform c
 - *How can I get data from an external system?*
 - *How can I get data from Salesforce?*
 
-  ## Share AI plugins
+## Share AI plugins
 
 By default, plugins are only visible and usable in Copilot Studio by the person who authored them.
 
 However, the plugin author can share their plugins in the portal where they created them. For example, you can share an AI Builder prompt from the **AI prompts** page by selecting **Share** for the prompt. The same applies for Power Automate flows (from the **Flows** page in Power Automate) or for custom connectors from the **Custom connectors** page.
-  
  
 ## Related topics
 

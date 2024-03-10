@@ -2,7 +2,7 @@
 title: "Assign security roles | MicrosoftDocs"
 description: About assigning security roles to a user.
 author: sericks007
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.subservice: admin
 ms.author: sericks
 ms.custom: "admin-security"
@@ -79,10 +79,10 @@ There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-on
 
 When users are added to Dataverse, they will get roles assigned automatically based on the following criteria: 
 
-1. All Azure Active Directory (Azure AD) admins (tenant admin, Power Platform admin, Dynamics 365 service admin) get the System Administrator role in Dataverse. 
+1. All Microsoft Entra ID admins (tenant admin, Power Platform admin, Dynamics 365 service admin) get the System Administrator role in Dataverse. 
 
    > [!IMPORTANT]
-   > The System Administrator role is not removed automatically if the Azure AD admin role is removed. Since there is no mechanism to track if the role was assigned by the system automatically or by an administrator, we recommend the administrator manually remove the System Administrator role once the Azure AD role is removed. 
+   > The System Administrator role is not removed automatically if the Microsoft Entra admin role is removed. Since there is no mechanism to track if the role was assigned by the system automatically or by an administrator, we recommend the administrator manually remove the System Administrator role once the Microsoft Entra role is removed. 
 
 2. Users with a valid license will get corresponding mapped roles assigned to them automatically. Removal of the respective license will result in automatic role removal. License-based default role management is not applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
 

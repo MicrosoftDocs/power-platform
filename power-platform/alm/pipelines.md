@@ -5,9 +5,11 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 10/19/2023
+ms.date: 02/06/2024
 ms.reviewer: "matp"
 ms.topic: "overview"
+contributors:
+  - asheehi1
 ---
 # Overview of pipelines in Power Platform
 
@@ -33,10 +35,10 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
   - The system handles the heavy lifting and ongoing maintenance so you don't have to.
 
 - Scale ALM at your own pace:
-  - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI](../developer/cli/introduction.md)
+  - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI `pac pipeline` command group](../developer/cli/reference/pipeline.md) 
 - Achieve compliance, safety, monitoring, and automation goals with:
   - Secure production environments with approval based [delegated deployments](delegated-deployments-setup.md).
-  - Customizations and audit logs saved automatically and are easily accessible.
+  - Customizations and audit log saved automatically and are easily accessible.
   - Out-of-the-box analytics provides better visibility within a central location.
   - The ability to view out-of-the-box Power BI reports within the pipelines app or create your own. More information: [Reporting overview for model-driven apps](/power-apps/maker/model-driven-apps/reporting-overview)
   - Custom tailor pipelines to the needs of your organization with [pipelines extensibility](extend-pipelines.md) and Power Automate. 
@@ -73,6 +75,10 @@ Pipelines deploy solutions as well as configuration for the target environment s
    > Power BI Dashboards (preview) and Power BI Datasets (preview) are not currently supported in pipelines. 
    >
 
+### Why can't I see my pipeline from my environment?
+
+First, ensure that your source and target environments are linked properly. You'll only be able to view your pipeline in the assigned source environments, such as your development environments. When linking each of your environments to your pipeline during configuration, you have an option of **Development Environment** or **Target Environment** environment type. If your pipeline-associated environments are assigned their proper type, your pipeline appears as an option in your source development environment.
+
 ### Does pipelines automatically store solution backups?
 
 Yes. Both managed and unmanaged solutions are automatically exported and stored in the pipelines host for every deployment.
@@ -108,9 +114,9 @@ Yes.
 
 Similar to authoring experiences, makers running pipelines can either provide their own connections or connections they have access to. Service principal connections can also be used for connectors that support service principal authentication, including custom connectors. 
 
-### Why can't I update existing environment variables or connection references?
+### Why can't I update existing connection references?
 
-Currently, environment variables without a value in the solution or targeted environment can't be updated during deployment. If a value was deployed previously, it can be updated in the targeted environment. The same is true for updating connection references. 
+Currently, connection references without a value in the solution or targeted environment can't be updated during deployment. If a value was deployed previously, it can be updated in the targeted environment.
 
 ### Who owns deployed solution objects?
 
@@ -130,7 +136,7 @@ Yes. However, using the default environment as the pipelines host isn't recommen
 
 ### Can I deploy using my own service principal?
 
-Not currently. 
+Yes. More information: [Deploy pipelines as a service principal or pipeline owner](delegated-deployments-setup.md).
 
 ### Can pipelines be used with Azure DevOps, GitHub, or the ALM Accelerator?
 
@@ -166,7 +172,7 @@ Not currently. The host and all environments associated with pipelines in a host
 
 ### Can I deploy the same solution using different pipelines?
 
-Yes, this is possible, although we recommend starting with the same pipeline for a given solution. This helps avoid confusion and inadvertent mistakes. Pipeline run information is displayed in the context of one pipeline and one solution (within the solution experience). Therefore other pipelines may not show the latest deployed solution version or other important run information associated with different pipelines. Notice that the Deployment Pipeline Configuration app shows run information across all pipelines and all solutions for the current host.
+Yes, this is possible, although we recommend starting with the same pipeline for a given solution. This helps avoid confusion and inadvertent mistakes. Pipeline run information is displayed in the context of one pipeline and one solution (within the solution experience). Therefore other pipelines might not show the latest deployed solution version or other important run information associated with different pipelines. Notice that the Deployment Pipeline Configuration app shows run information across all pipelines and all solutions for the current host.
 
 ### Can the host environment also be used as a development or target environment?
 

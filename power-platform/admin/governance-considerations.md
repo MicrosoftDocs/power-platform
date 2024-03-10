@@ -8,7 +8,7 @@ ms.date: 01/07/2022
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -29,7 +29,7 @@ Many customers wonder how can Power Platform be made available to their broader 
 It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources used by a Power Apps, Power Automate and Dataverse. [Environments Overview](environments-overview.md) is a good primer which should be followed by [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](/powerapps/maker/), [Microsoft Power Automate](/power-automate/getting-started), [Connectors](/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
 ## Security 
-This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Azure Active Directory, Data Loss Prevention policies and admin connectors that can be used with Power Automate. 
+This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Microsoft Entra ID, Data Loss Prevention policies and admin connectors that can be used with Power Automate. 
 
 ### Licensing 
 Access to Power Apps and Power Automate starts with having a license. The type of license a user has determines the assets and data a user can access. The following table outlines differences in resources available to a user based on their plan type, from a high level. Granular licensing details can be found in the [Licensing overview](pricing-billing-skus.md).
@@ -56,7 +56,7 @@ After users have licenses, environments exist as containers for all resources us
 
 The following principals are supported for each role type.
 
-|Environment type  |Role  |Principal Type (Azure AD)  |
+|Environment type  |Role  |Principal Type (Microsoft Entra ID)  |
 |---------|---------|---------|
 |Environment without Dataverse     | Environment role        | User, group, tenant         |
 |     | Resource permission: Canvas app        | User, group, tenant        |
@@ -70,9 +70,9 @@ The following principals are supported for each role type.
 
 > [!NOTE]
 > - In the Default environment, all users in a tenant are granted access to the Environment Maker role. 
-> - Azure AD tenant Global Administrators have admin access to all environments.
+> - Microsoft Entra tenant Global Administrators have admin access to all environments.
 
-#### FAQ - What permissions exist at an Azure AD tenant level? 
+#### FAQ - What permissions exist at an Microsoft Entra tenant level? 
 
 Today, Microsoft Power Platform admins can do the following: 
 
@@ -92,12 +92,12 @@ Customers with Microsoft Intune can set mobile application protection policies f
 
 ### Consider location-based conditional access
 
-For customers with Azure AD Premium, conditional access policies can be defined in Azure for Power Apps and Power Automate. This allows granting or blocking access based upon: user/group, device, location. 
+For customers with Microsoft Entra ID P1 or P2, conditional access policies can be defined in Azure for Power Apps and Power Automate. This allows granting or blocking access based upon: user/group, device, location. 
 
 #### Creating a Conditional Access Policy
 
 1. Sign in to [https://portal.azure.com](https://portal.azure.com). 
-2. Select **Azure AD Conditional Access**.
+2. Select **Conditional Access**.
 3. Select **+ New Policy**.
 4. Select**users and groups selected**.
 5. Select **All cloud apps** > **All cloud apps** > **Common Data Service** to control access to customer engagement apps.
@@ -184,7 +184,7 @@ You can also use the following PowerShell command to export assigned user licens
 Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 ```
 
-Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign-up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
+Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign-up internal trial plans as well as plans that are sourced from Microsoft Entra ID. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
 The export can take a while for tenants with a large number of Power Platform users.
 

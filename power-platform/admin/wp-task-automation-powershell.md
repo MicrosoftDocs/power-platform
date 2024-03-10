@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 08/26/2020
 ms.subservice: admin
 ms.author: laswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

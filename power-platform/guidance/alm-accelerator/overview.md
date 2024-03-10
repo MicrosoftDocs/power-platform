@@ -27,7 +27,7 @@ ALM Accelerator for Power Platform uses the following premium Power Platform fea
 
 - Dataverse
 - Custom Connector
-- HTTP with Azure Active Directory (Azure AD) connector
+- HTTP with Microsoft Entra connector
 
 To use the ALM Accelerator, you need the following licenses:
 
@@ -46,7 +46,7 @@ The ALM Accelerator is targeted at Power Platform makers and maker teams:
 
 - Makers who are comfortable with the advanced concepts of using Git, such as pull requests, branching, and merging, and want to work in a familiar way with source control and deployment automation
 
-To [set up and configure](./setup-admin-tasks.md) the ALM Accelerator, you should be an administrator with a deeper understanding of Power Platform environments, solutions, and Azure Pipelines. You should also be familiar with Azure AD and Dataverse administration.
+To [set up and configure](./setup-admin-tasks.md) the ALM Accelerator, you should be an administrator with a deeper understanding of Power Platform environments, solutions, and Azure Pipelines. You should also be familiar with Microsoft Entra and Dataverse administration.
 
 The following diagram illustrates how the ALM Accelerator facilitates interactions between a maker team and development, validation, test, and production environments.
 
@@ -72,12 +72,12 @@ There's no one right answer for every organization. The following table and the 
 | :---: | :---: | :---: | :---: |
 | *IT/Developer involvement* | Not required | Up-front setup | Required for every project |
 | *Source code integration* | No, but planned | Yes | Yes |
-| *Maker requires elevated privileges in target environment* | Yes, but service principal support is planned | No, service principal is supported | No, service principal is supported |
+| *Maker requires elevated privileges in target environment* | Yes | No, service principal is supported | No, service principal is supported |
 | *Quality control* | Minimal | Best practices | Unlimited |
 | *Democratized for citizen development* | Yes | Yes | No |
 | *In-product experience* | Yes |  Canvas app provided, but not in the maker experience | No |
 | *Support* | Microsoft-supported | Power CAT support through GitHub issues and discussions | Microsoft-supported and GitHub issues |
-| *Customization* | No | Yes | Yes |
+| *Customization* | Yes | Yes | Yes |
 | *Code-first development* | No | Yes | Yes |
 
 ### Pipelines for Power Platform (Pipelines)

@@ -5,8 +5,8 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/30/2022
 ms.subservice: admin
-author: StephenRauchPM
-ms.author: stephenrauch
+author: Zeffin
+ms.author: johnev
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -56,7 +56,7 @@ You can also view data by using the Azure portal.
 Using the [Azure portal](https://portal.azure.com), select **Storage accounts** > **Access Control(IAM)**, and then select the **Role Assignments**
 tab. Search for **Power Platform Data Analytics**. You'll see: 
 
-1. That a new Power Platform Data Analytics service principal (app) has been created in Azure AD.
+1. That a new Power Platform Data Analytics service principal (app) has been created in Microsoft Entra ID.
 2. This principal has been assigned the Storage Blob Data Contributor access to your Data Lake Storage account.
 
 ### What setting should I choose for the firewall configuration?
@@ -73,4 +73,3 @@ The data mode uses the extensible Common Data Model schema to describe the table
 [Set up Power Platform self-service analytics to export Power Apps inventory and usage data](self-service-analytics.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

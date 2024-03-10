@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 08/04/2021
 ms.subservice: guidance
 ms.author: demora
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -189,7 +189,7 @@ To make a **Shared DLP Policy** visible to makers, the policy needs to be create
 
 ### Share app and instructions with makers
 
-- Grant your makers access to the **Maker – Environment Request** canvas app and assign them the **Power Platform Maker SR** security role. Use an Azure AD group to make assignment easier.
+- Grant your makers access to the **Maker – Environment Request** canvas app and assign them the **Power Platform Maker SR** security role. Use a Microsoft Entra group to make assignment easier.
 - Provide users with instructions on how to use the request system.
 
 ### Approve or Reject requests

@@ -26,7 +26,7 @@ search.app:
 
 Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It is configured within a data loss prevention (DLP) policy, and it is exclusively available for six connectors: 
 - HTTP
-- HTTP with Azure Active Directory (AD)
+- HTTP with Microsoft Entra ID (AD)
 - HTTP Webhook
 - SQL Server
 - Azure Blob Storage 
@@ -68,7 +68,7 @@ After saving your connector endpoint filtering rules and the DLP policy in which
 :::image type="content" source="media/EF_CloudFlow.png" alt-text="DLP error because of endpoint filtering rules.":::
 
 ## Known limitations
-- Endpoint filtering rules are not enforced on environment variables, custom inputs, and dynamically bound endpoints during runtime. Only static endpoints known and selected when building an app, flow, or chatbot during design time are enforced. This implies that connector endpoint filtering rules for SQL Server and Azure Blob Storage are not enforced if the connections are authenticated with Azure Active Directory. In the two screenshots below, a maker has built a cloud flow that defines the SQL Server and database inside variables, and then uses those variables as input to the connection definition. Therefore, the endpoint filtering rules are not evaluated and the cloud flow can execute successfully.
+- Endpoint filtering rules are not enforced on environment variables, custom inputs, and dynamically bound endpoints during runtime. Only static endpoints known and selected when building an app, flow, or chatbot during design time are enforced. This implies that connector endpoint filtering rules for SQL Server and Azure Blob Storage are not enforced if the connections are authenticated with Microsoft Entra ID. In the two screenshots below, a maker has built a cloud flow that defines the SQL Server and database inside variables, and then uses those variables as input to the connection definition. Therefore, the endpoint filtering rules are not evaluated and the cloud flow can execute successfully.
 
     :::image type="content" source="media/EF_KnownLimitation_1.png" alt-text="Cloud flow uses variables to connect to SQL.":::
     :::image type="content" source="media/EF_KnownLimitation_2.png" alt-text="Cloud flow runs successfully.":::
@@ -152,9 +152,9 @@ The following is an example scenario:
 1. Deny `smtp.gmail.com,587` 
 2. Allow `*`
 
-### HTTP with Azure AD, HTTP Webhook, and HTTP connectors 
+### HTTP with Microsoft Entra ID, HTTP Webhook, and HTTP connectors 
 
-The endpoints for all HTTP connectors are represented by a URL pattern. The **Get web resource** action of the HTTP with Azure AD connector is out of scope. 
+The endpoints for all HTTP connectors are represented by a URL pattern. The **Get web resource** action of the HTTP with Microsoft Entra connector is out of scope. 
 
 The following is an example scenario: 
 

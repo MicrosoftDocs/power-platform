@@ -7,7 +7,7 @@ ms.date: 09/22/2022
 author: DanaMartens 
 ms.subservice: admin
 ms.author: dmartens 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -136,7 +136,7 @@ Use the steps provided [here](connect-exchange-online.md) to create a new Ex
 
 
 ### How can I identify who is using Basic authentication and from where? 
-Use the [Azure AD Sign-in Logs](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/new-tools-to-block-legacy-authentication-in-your-organization/ba-p/1225302) page in the Azure portal. To identify requests from server-side synchronization, you can start by using the Add filters option with a condition of **Client app** = Exchange Web Services. Requests to Exchange Web Services from server-side synchronization will have a **User agent** value that starts with CRM. The requests will include the username used to authenticate as well as the source IP address. To view the requests including the user agent value, you need to use the Download option. It is important to choose the JSON format as the user agent value isn't included in the CSV format option. An example request from Dynamics 365 on-premises would start with CRM/9.0.0.0/OnPremise where the middle value is the major version number. An example request to Dynamics 365 online would have a user agent value of CRM/9.0.0.0/Live.
+Use the [Microsoft Entra Sign-in Logs](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/new-tools-to-block-legacy-authentication-in-your-organization/ba-p/1225302) page in the Azure portal. To identify requests from server-side synchronization, you can start by using the Add filters option with a condition of **Client app** = Exchange Web Services. Requests to Exchange Web Services from server-side synchronization will have a **User agent** value that starts with CRM. The requests will include the username used to authenticate as well as the source IP address. To view the requests including the user agent value, you need to use the Download option. It is important to choose the JSON format as the user agent value isn't included in the CSV format option. An example request from Dynamics 365 on-premises would start with CRM/9.0.0.0/OnPremise where the middle value is the major version number. An example request to Dynamics 365 online would have a user agent value of CRM/9.0.0.0/Live.
 
 :::image type="content" source="media/client-app-ews.png" alt-text="Select Add filters with the Client app = Exchange Web Services":::
 
@@ -145,4 +145,3 @@ Use the [Azure AD Sign-in Logs](https://techcommunity.microsoft.com/t5/microsoft
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-
