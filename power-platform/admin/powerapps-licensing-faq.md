@@ -4,7 +4,7 @@ description: This is a licensing FAQ for Power Apps
 author: amchern
 ms.date: 03/07/2024
 ms.reviewer: 
-ms.topic: 
+ms.topic: conceptual
 ms.subservice: 
 ms.author: amchern
 ms.custom: 
@@ -25,7 +25,7 @@ Yes, but it is only valid for a Flow that is executed via a Power Apps trigger a
 After the trial license has expired, users may continue to be able to access an app for up to 2 hours after the trial has expired. Additionally, due to caching, an extra refresh may be needed for access to be revoked. 
 
 ### Why can I access my app that uses a premium connector, such as SQL, with my Office seeded license?
-In 2019, there was a change to Power Apps use rights for Microsoft 365 applications. During this transition period, we granted customers an extension from October 1, 2019 until October 1, 2024, where apps using connectors, such as SQL, would be exempt from Premium connector licensing requirements for reclassified connectors. These apps are considered “grandfathered”. [Learn more](powerapps-flow-licensing-faq#how-does-the-change-to-power-apps-and-power-automate-use-rights-for-microsoft-365-applications-affect-me-if-i-purchased-the-subscriptions-prior-to-oct-1-2019-will-my-existing-apps-and-power-automate-workflows-continue-to-work). 
+In 2019, there was a change to Power Apps use rights for Microsoft 365 applications. During this transition period, we granted customers an extension from October 1, 2019 until October 1, 2024, where apps using connectors, such as SQL, would be exempt from Premium connector licensing requirements for reclassified connectors. These apps are considered “grandfathered”. [Learn more](powerapps-flow-licensing-faq.md#how-does-the-change-to-power-apps-and-power-automate-use-rights-for-microsoft-365-applications-affect-me-if-i-purchased-the-subscriptions-prior-to-oct-1-2019-will-my-existing-apps-and-power-automate-workflows-continue-to-work). 
 
 ### Why does my app still show a premium designation after I’ve removed all premium connectors and saved the app?
 After removing premium connectors from the app, you must publish the app for the designation to update. 
@@ -37,7 +37,7 @@ This is the expected behavior. The app will continue to show as premium designat
 Different Dynamics licenses have different use rights in Power Apps, so we recommend that you review the Microsoft Power Platform licensing guide to find your Dynamics license first. All Dynamics licenses with Power Apps usage rights will allow users to play apps that do not use premium capabilities in both embedded and standalone mode. However, if your Dynamics license is listed as having “limited use rights” for Power Apps, you will only be able to play canvas apps with premium capabilities when embedded inside model-driven apps. This means that you will not be able to play these canvas apps in standalone mode in the web browser or the mobile player.
 
 ### If my app requires premium licensing, what are my licensing options for end-users? 
-End-users will need an entitlement to access a premium app. [Learn more](powerapps-flow-licensing-faq#how-is-microsoft-power-apps-licensed) for different entitlement options.
+End-users will need an entitlement to access a premium app. [Learn more](powerapps-flow-licensing-faq.md#how-is-microsoft-power-apps-licensed) for different entitlement options.
 
 ### What capabilities make my app require a premium license? / We built an app using a trial license, what do we need so our users can run it? 
 Some examples of features that require premium entitlements include: [premium connectors](https://go.microsoft.com/fwlink/?linkid=2263132), [Dataverse entities](https://go.microsoft.com/fwlink/?linkid=2262772), [on-premise data gateways](https://go.microsoft.com/fwlink/?linkid=2263042), [custom APIs](https://go.microsoft.com/fwlink/?linkid=2263205), etc. To determine if your app is premium, makers can also go to the App Details page in Maker Portal to view their app license designation. [Learn more](https://go.microsoft.com/fwlink/?linkid=2262773). 
@@ -63,7 +63,7 @@ We recommend creating your POC in a developer environment, which has no expirati
 Trial licenses have an expiration period and can only be renewed up to 3 times. We recommend using a developer environment with a developer trial license for any POCs.
 
 ### I bought per app plan capacity but my users are being asked to start a trial.
-The passes must be allocated to the environment for them to take effect. [Learn more](about-powerapps-perapp#step-2-allocate-per-app-plans). 
+The passes must be allocated to the environment for them to take effect. [Learn more](about-powerapps-perapp.md#step-2-allocate-per-app-plans). 
 
 ### How long can I use a trial license? 
 Trial licenses have an expiration period and can only be renewed up to 3 times. We recommend using a developer environment with a developer trial license for any POCs.
@@ -73,3 +73,5 @@ Creating and managing Power Apps do not require a license, so users will be able
 
 ### I can play an app that uses DVs inside Teams in a DV for Teams environment, but when trying to play the same app standalone I get a prompt message.
 If the user only has an Office seeded license, and the app uses Dataverse for Teams, it can only be used when embedded within Teams.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
