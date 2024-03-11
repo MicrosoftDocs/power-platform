@@ -20,13 +20,13 @@ This guide describes the recommendations for managing workload development pract
 
 ## Key design strategies
 
-Formalize your workload development practices to help ensure that everyone is aligned around the “why” of the work that is being done. 
+Formalize your workload development practices to help ensure that everyone is aligned around the “why” of the work that is being done.
 
-Don’t treat low code workloads as low complexity, you will still benefit from formalizing the development and management of low code workloads. Learn from your other software development teams. Have a decision matrix in place that dictates what level of formalization is required based on the complexity and criticality of the workload. 
+Don’t treat low code workloads as low complexity, you will still benefit from formalizing the development and management of low code workloads. Learn from your other software development teams. Have a decision matrix in place that dictates what level of formalization is required based on the complexity and criticality of the workload.
 
 ## Standards for development planning
 
-- **Prioritization**: Prioritization means planning the order and scope of the work and involves understanding the true impact and value of workload features on the business, as well as evaluating those impacts against other work requests and the overall roadmap for your product or program. One way to prioritize workloads is by evaluating the business value of the entire workload ([Measuring the business value of Power Platform solutions - Power Platform | Microsoft Learn](/power-platform/guidance/adoption/business-value)), but it may be also be useful to evaluate individual workload features for the business value. 
+- **Prioritization**: Prioritization means planning the order and scope of the work and involves understanding the true impact and value of workload features on the business, as well as evaluating those impacts against other work requests and the overall roadmap for your product or program. One way to prioritize workloads is by [evaluating the business value](/power-platform/guidance/adoption/business-value) of the entire workload, but it may be also be useful to evaluate individual workload features for the business value.
 - **Categorize** solutions built based on criticality—this will allow you to come up with processes that ensure that critical applications have the necessary guardrails to support them while at the same time not stifling innovation of productivity scenarios.
 - **Collaboration**: The process of defining proposed changes to the workload should be a collaborative effort. Most changes to the workload will impact multiple functions and/or components, so involving as many workload team members as possible will help ensure that important considerations are not missed and that everyone is aware of the impact on their particular domain. Collaboration also helps clearly define the scope of a change and how to divide the necessary tasks needed to accomplish the change into well-defined work items, as a larger group with expertise across domains will be able to provide experience-backed estimates for the required effort.
 - **Tools**: Use established, industry-proven tools and processes, like [Agile](/devops/plan/what-is-agile-development), [Scrum](/devops/plan/what-is-scrum), and [Kanban boards](/devops/plan/what-is-kanban). 
@@ -64,5 +64,5 @@ Although there are no Power Platform products that directly facilitate this reco
 
 - [Best practices for Agile project management](/azure/devops/boards/best-practices-agile-project-management)
 - [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards)
-- [User support strategy - Microsoft Power Platform - Power Platform | Microsoft Learn](/power-platform/guidance/adoption/support-strategy-solutions)
-- [Measuring the business value of Power Platform solutions - Power Platform | Microsoft Learn](/power-platform/guidance/adoption/business-value)
+- [User support strategy](/power-platform/guidance/adoption/support-strategy-solutions)
+- [Measuring the business value of Power Platform solutions](/power-platform/guidance/adoption/business-value)
