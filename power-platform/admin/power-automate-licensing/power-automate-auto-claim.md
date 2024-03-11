@@ -106,6 +106,78 @@ To view the auto-claim policy report:
 
 To change the time period shown, select the **Past 30 days** drop-down list. You can view reports for the past 1, 7, 30, and 90 days.
 
+
+## Auto-claim policy enabled by default 
+To simplify license management for administrators, in tenants with Managed Environments, auto-claim policies don't require manual activation by admins. Auto-claim policies are automatically created. Starting from April 15th 2024, a license auto-claim policy for Power Automate per-user licenses, will be created in the Microsoft 365 admin center for tenants who are currently using managed environments. Under this policy, the Power Automate premium or per user plan (legacy) license will be automatically assigned to users that requires it if it is available in your tenant. 
+
+By default, this policy will be applied to users in managed environments. However, admins can choose to extend this policy to apply to standard environments as well via a setting in the Power Platform admin center. 
+
+
+### Can administrators update the policy?
+Yes, administrators can manage the policy in the Microsoft 365 admin center just like any other auto-claim policy. Administrators can disable the policy, delete it, and view reports on which users were assigned licenses.
+
+In the Power Platform admin center, administrators can decide whether the policy should apply to Managed Environments only or all environments.
+
+1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Settings** and click the **Auto-claim policies** option.
+2.	In the **Auto-claim policies** pane, select whether the policy should be applicable to **All Environments** or **Only Managed Environments**.
+
+### Support for group-based license assignment
+
+Auto-claim policies support individual license assignment, which means that licenses are assigned to individual users. If your organization already has an existing process for license assignment, administrators can still make use of the auto-claim policy while maintaining their current workflow. 
+
+Administrators can review the list of users to whom licenses were assigned through the auto-claim policy in the Microsoft 365 admin center. Then, they can make changes, as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to use Microsoft Entra group-based licensing. For more information about group based licensing, go to [Group-based licensing additional scenarios](/entra/identity/users/licensing-group-advanced).
+
+Here are some commands that can assist in unassigning licenses and adding users to the required Microsoft Entra group.
+
+```PowerShell
+##
+#Install and import AzureAD PowerShell module prior to running these commands
+##
+##You may be able to get a list of users, that have been auto-assigned a 
+##license directly, via Microsoft Admin Center. Follow instructions at 
+##https://learn.microsoft.com/en-us/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide#view-an-auto-claim-policy-report
+##
+##Once you have a list of users, you can use the following commands to remove 
+##the direct license assignment and add the user to a licensed group, or 
+##you may tweak the script to iterate through a list of users and 
+##perform this in bulk
+##
+##Please note that adding a user to a licensed group may not result in an 
+##immediate license assignment. Refer to https://learn.microsoft.com/en-us/entra/identity/users/licensing-group-advanced for more information
+#############################################>
+
+$Credential = Get-Credential
+
+# Connect to Azure AD
+Connect-AzureAD -Credential $Credential
+
+#The user that will get a group based license
+$LicensedUser = Get-AzureADUser -SearchString "<UPN, display name or object ID of the user for which you want to assign a license>"
+
+#The group that has the license assigned
+$LicensedGroup = Get-AzureADGroup -SearchString "<Object ID or name of the group that has a relevant license assigned>"
+
+#SKU part number of the sku that needs to be unassigned
+# Power Automate premium = "POWER_AUTOMATE_ATTENDED_RPA"
+# Power Automate per user (legacy) = "FLOW_PER_USER"
+$SkuPartName = "POWER_AUTOMATE_ATTENDED_RPA"
+
+#Get the SkuID of the license that needs to be unassigned from the user
+$LicenseSku = Get-AzureADSubscribedSku | Where-Object {$_.SkuPartNumber -eq $SkuPartName}
+
+#Create the AssignedLicenses Object, used for removing direct license assignment from the user
+$LicensesToRemove = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToRemove.RemoveLicenses = $LicenseSku.SkuId
+
+#Remove directly assigned license from the user
+#Note that this command will result in an error if the user does not have the relevant license assigned directly
+Set-AzureADUserLicense -ObjectId $LicensedUser.ObjectId -AssignedLicenses $LicensesToRemove
+
+#Add user to a licensed group
+Add-AzureADGroupMember -ObjectId $LicensedGroup.ObjectId -RefObjectId $LicensedUser.ObjectId
+
+```
+
 ## Limitations
 
 This section presents all the limitations of the auto-claim policy for Power Automate.
