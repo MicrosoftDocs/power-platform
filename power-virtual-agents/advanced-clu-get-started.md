@@ -56,7 +56,7 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 
 1. In the **Azure Cognitive Service for Language configuration** window, choose `Api Key` as authentication type, enter your account key and site URL, and select **Create**.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image15.png" alt-text="Configuration window for instance of Azure Cognitive Service for Language connection." border="false":::
+    :::image type="content" source="media/advanced-clu-integration/clu-image15.png" alt-text="Configuration window of instance of Azure Cognitive Service for Language connection." border="false":::
 
 1. Once Power Apps creates the connector, return to the **Connections in <environment>** page, search for and select your new connection and then select **Edit** at the top of the page.
 
