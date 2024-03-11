@@ -32,7 +32,7 @@ The first step to optimize development practices is to standardize tools and pro
 
 In some cases, one tool or a suite of tools might provide several functions. Ensure that you understand the capabilities of your tools and their limitations so they meet your requirements across functions.
 
-Determine if you should invest in premium features of the platform or premium versions of tools. Consider the time and effort of developing your own solutions compared to features that the premium tools provide. Consider one-time costs versus recurring costs. In most cases, off-the-shelf tools provide higher value to your team.
+Determine if you should invest in premium features of the platform or premium versions of tools. Consider the time and effort of developing your own solutions compared to features that the premium tools provide. Consider one-time costs versus recurring costs. In most cases, off-the-shelf tools provide higher value to your team. For example, [Managed Environments](/power-platform/admin/managed-environment-overview) offers out of the box features to set a maker onboarding message or to limit sharing pro-actively. Building these features yourself require a lot of development and ongoing maintenance effort that may over time be more costly then investing in Managed Environments.
 
 **Use AI tools** when practical. AI tools can help with code development, reviews, and optimization.
 
@@ -46,9 +46,9 @@ Determine if you should invest in premium features of the platform or premium ve
 
 **Evaluate metrics to quantify effectiveness.** Development and quality assurance teams can only improve if they can quantify their effectiveness. To quantify effectiveness, they must identify the metrics that measure [developer velocity](https://azure.microsoft.com/solutions/developer-velocity) and define KPIs. Examples of these metrics include:
 
-- _Lead time_: The time that it takes for a task or user story to go from the backlog to a production deployment.
-- _Mean time to resolution_: The average time that's spent fixing bugs or defects in code.
-- _Change failure rate_: The percentage of changes that result in a failure.
+- *Lead time*: The time that it takes for a task or user story to go from the backlog to a production deployment.
+- *Mean time to resolution*: The average time that's spent fixing bugs or defects in code.
+- *Change failure rate*: The percentage of changes that result in a failure.
 
 To help stakeholders and the workload team easily track velocity, visualize KPIs by using dashboards or other reporting tools.
 
@@ -56,10 +56,9 @@ To help stakeholders and the workload team easily track velocity, visualize KPIs
 
 - Naming conventions for solutions, artifacts, controls, actions, environments, branches, and builds
 - Error handling standards
-- UX patterns and standards
 - Common patterns or libraries
 
-**Keep track of architecture decisions** that help your teams maintain a fresh understanding of the workload and allow new team members learn about the design decisions that are made during the workload's lifecycle. An architecture decision document should include tools and technologies that were considered, the reason for a decision and function and non-functional requirements that were factored into decisions. Keeping track of decisions will also help having to explain decisions again or going through decision discussions with new members or stakeholders.
+**Keep track of architecture decisions** that help your teams maintain a fresh understanding of the workload and allow new team members learn about the design decisions that are made during the workload's lifecycle. An architecture decision document should include tools and technologies that were considered, the reason for a decision and function and non-functional requirements that were factored into decisions. Recording decisions will also help avoid repeating explanations or revisiting discussions with new members or stakeholders.
 
 **Implement standards and guidelines for addressing technical debt.** The platform and technology is fast-changing, with new features and capabilities rolling out regularly. Adopt a mindset that technical debt is necessary for your workload team's deliverables. This mindset motivates your team to consider and address technical debt regularly to avoid accumulation. Address technical debt as a regularly recurring task in the backlog. Ensure you have processes in place that keep up to date with platform changes – both new features as well as deprecations – and work on an action plan on how to address those changes in your workload.
 
@@ -69,13 +68,13 @@ For example, a product feature might become deprecated or replaced with a differ
 
 **Implement a shift-left approach to testing** by performing unit testing early and often throughout the development process. Frequent testing in each development environment helps developers gain confidence in their applications. To help create your testing strategy with a shift-left approach, consider the following principles:
 
-- _Write tests at the lowest level possible_. Favor tests with the fewest external dependencies, and run tests as part of the build.
-- _Write tests once, and run tests everywhere, including production_. Write tests that you can run in every development environment without accounting for factors that are specific to one environment, like encrypted secrets or configurations.
-- _Design your workload for testing_. When you develop your application, make testability a requirement.
-- _Consider test ownership, which is based on workload ownership_. Your workload team owns their testing and shouldn't rely on other teams to test their code.
-- _Automate tests as much as possible_. Automated code relieves the burden on your workload team and enforces consistent quality.
+- *Write tests at the lowest level possible*. Favor tests with the fewest external dependencies, and run tests as part of the build.
+- *Write tests once, and run tests everywhere, including production*. Write tests that you can run in every development environment without accounting for factors that are specific to one environment, like encrypted secrets or configurations.
+- *Design your workload for testing*. When you develop your application, make testability a requirement.
+- *Consider test ownership, which is based on workload ownership*. Your workload team owns their testing and shouldn't rely on other teams to test their code.
+- *Automate tests as much as possible*_*. Automated code relieves the burden on your workload team and enforces consistent quality.
 
-Require your workload team to understand the security practices related to development and quality assurance. They must follow these practices without exception. For more information, see [[link](/azure/well-architected/security/secure-development-lifecycle) to security pillar].
+Require your workload team to understand the security practices related to development and quality assurance. They must follow these practices without exception. For more information, see [Recommendations for securing a development lifecycle](../security/secure-development-lifecycle).
 
 ## Power Platform facilitation
 
@@ -92,13 +91,12 @@ Require your workload team to understand the security practices related to devel
 - [Power Apps checker Web API](/power-platform/alm/checker-api/overview) provides a mechanism to run static analysis checks against customizations and extensions to the Microsoft Dataverse platform.
 - [Test Studio](/power-apps/maker/canvas-apps/test-studio) allows you to build end-to-end UI tests for your canvas app using Test Studio.
 - [Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
-- Power CAT Code Review Tool allows you to perform code reviews.
+- [Power CAT Code Review Tool](https://github.com/microsoft/powerapps-tools/tree/master/Tools/Apps/Microsoft.PowerApps.CodeReview) allows you to perform code reviews.
 - [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is an open source tool that consists of a set of applications, scripts and pipelines designed to automate the continuous integration/continuous delivery process.
-
-[Microsoft Power Platform CLI](/power-platform/developer/cli/introduction) (`PAC CLI`) is a command-line tool that supports, among other things, the import and export of Power Platform Solutions, and packing to and unpacking from Power Platform Solutions source files. `PAC CLI` is available as a [stand-alone command line tool](https://aka.ms/PowerAppsCLI) or as an [extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode).
+- [Microsoft Power Platform CLI](/power-platform/developer/cli/introduction) (`PAC CLI`) is a command-line tool that supports, among other things, the import and export of Power Platform Solutions, and packing to and unpacking from Power Platform Solutions source files. `PAC CLI` is available as a [stand-alone command line tool](https://aka.ms/PowerAppsCLI) or as an [extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode).
 
 
 ## Related links
 
-- Power CAT Code Review Tool
-- [Co-development governance - Power Apps | Microsoft Learn](/power-apps/guidance/co-develop/governance)
+- [Power CAT Code Review Tool](https://github.com/microsoft/powerapps-tools/tree/master/Tools/Apps/Microsoft.PowerApps.CodeReview)
+- [Co-development governance](/power-apps/guidance/co-develop/governance)
