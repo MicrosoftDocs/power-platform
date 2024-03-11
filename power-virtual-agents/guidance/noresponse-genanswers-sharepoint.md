@@ -1,3 +1,13 @@
+title: "No response from Create generative answers over SharePoint"
+description: "Troubleshoot Generative Answers over SharePoint or OneDrive when no response is returned"
+author: adilei
+ms.date: 03/11/2024
+ms.topic: conceptual
+ms.custom: guidance
+ms.author: adileibowitz
+ms.reviewer: 
+---
+
 # No answers are returned from Conversational Boosting/Generative Answers over SharePoint or OneDrive
 
 Conversational boosting allows makers to create copilots that respond to questions grounded in data sources like public websites or SharePoint, simply pointing the copilot at those data sources. However, in some cases, the copilot will not provide a response and instead say something like **“I’m not sure how to help with that. Can you try rephrasing?”** (the actual message will depend on the implementation).
