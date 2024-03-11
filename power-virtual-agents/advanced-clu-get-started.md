@@ -52,21 +52,21 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 
 1. Search for **Azure Cognitive Service for Language** and then select the **+** next to this connection.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image14.png" alt-text="Language option to select NLU resource." border="false":::
+    :::image type="content" source="media/advanced-clu-integration/clu-image14.png" alt-text="Selection of Azure Cognitive Service for Language to make instance of this connection type." border="false":::
 
 1. In the **Azure Cognitive Service for Language configuration** window, choose `Api Key` as authentication type, enter your account key and site URL, and select **Create**.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image15.png" alt-text="Language option to select NLU resource." border="false":::
+    :::image type="content" source="media/advanced-clu-integration/clu-image15.png" alt-text="Configuration window for instance of Azure Cognitive Service for Language connection." border="false":::
 
 1. Once Power Apps creates the connector, return to the **Connections in <environment>** page, search for and select your new connection and then select **Edit** at the top of the page.
 
 1. In the **Azure Cognitive Service for Language configuration** window, enter a display name to distinguish it from other CLU connectors and reenter the account key, and then select **Create**.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image19.png" alt-text="Language option to select NLU resource." border="false":::
+    :::image type="content" source="media/advanced-clu-integration/clu-image19.png" alt-text="Revisit config window for Azure Cognitive Service for Language connection instance." border="false":::
 
 1. In Copilot Studio, select **Refresh**, then under **Natural language understanding**, select **Azure Cognitive Service for Language** from the **NLU Resource** list.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image16.png" alt-text="Language option to select NLU resource." border="false":::
+    :::image type="content" source="media/advanced-clu-integration/clu-image16.png" alt-text="New connection visible in Copilot Studio under NLU Resource." border="false":::
 
     > [!NOTE]
     > If you you see the following, then you are not connected to **Azure Cognitive Service for Language**. Follow step 3 to connect.
