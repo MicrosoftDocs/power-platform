@@ -106,7 +106,7 @@ To change the time period shown, select the **Past 30 days** drop-down list. You
 
 
 ## Auto-claim policy enabled by default 
-To simplify license management for administrators, in tenants with Managed Environments, auto-claim policies don't require manual activation by admins. Auto-claim policies are automatically created. Starting from April 15th 2024, a license auto-claim policy for Power Automate per-user licenses, will be created in the Microsoft 365 admin center for tenants who are currently using managed environments. Under this policy, the Power Automate premium or per user plan (legacy) license will be automatically assigned to users that requires it if it is available in your tenant. 
+To simplify license management for administrators, in tenants with Managed Environments, auto-claim policies don't require manual activation by admins. Auto-claim policies are automatically created. Starting from April 15th 2024, a license auto-claim policy for Power Automate, will be created in the Microsoft 365 admin center for tenants who are currently using managed environments. Under this policy, the Power Automate premium or per user plan (legacy) license will be automatically assigned to users that requires it if it is available in your tenant. 
 
 By default, this policy will be applied to users in managed environments. However, admins can choose to extend this policy to apply to standard environments as well via a setting in the Power Platform admin center. 
 
