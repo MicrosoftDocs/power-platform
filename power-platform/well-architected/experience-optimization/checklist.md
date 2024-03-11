@@ -24,6 +24,7 @@ This checklist presents a set of recommendations to help you optimize experience
 | &#9744; | [XO:06](usability.md) | **Prioritize ease of use during the design process.**   |
 | &#9744; | [XO:07](feedback-guidance.md) | **Provide meaningful, useful, and simple guidance in notifications and messages.** Notify users with relevant, important, and valuable information. Give users feedback on their actions. Let users know when something happens and what they need to do next.  |
 | &#9744; | [XO:08](responsive-design.md) | **Optimize for different platforms and devices.**   |
+| &#9744; | [XO:09](ui-writing.md) | **Write task-focused content in a professional tone.** Content is the primary mode of communication and should provide clear direction. Speak in an approachable, professional tone that provides meaningful content that facilitates success. |
 
 ## Next steps
 

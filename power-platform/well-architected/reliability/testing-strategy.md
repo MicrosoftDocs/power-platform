@@ -138,11 +138,8 @@ Use the results from your experiments and tests as the basis for new experiments
 
 You can use static results in Power Automate to return a fixed result to test your workload Mock test workflows - Azure Logic Apps | Microsoft Learn
 
-[microsoft/PowerApps-TestEngine (github.com)](https://github.com/microsoft/PowerApps-TestEngine) ? 
+[Power Apps Test Engine (Preview)](/power-apps/developer/test-engine/overview) is a Power Platform CLI component that you can use to test standalone canvas apps in Power Apps.
 
 [Azure Test Plans](/azure/devops/test/overview) is an easy-to-use, browser-based test management solution that provides all the capabilities required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
 
-If your workload includes Azure resources, you can use [Azure Chaos Studio](https://azure.microsoft.com/services/chaos-studio). Azure Chaos Studio is a managed service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience. 
-
-## Related links
-
+If your workload includes Azure resources, you can use [Azure Chaos Studio](https://azure.microsoft.com/services/chaos-studio). Azure Chaos Studio is a managed service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience.
