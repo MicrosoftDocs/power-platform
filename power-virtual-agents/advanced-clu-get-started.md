@@ -16,13 +16,13 @@ ms.custom: "advanced-authoring, CLU, ceX"
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-This topic includes the step-by-step procedures you need to get started with [conversational language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
+This article includes the step-by-step procedures you need to get started with [conversational language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
 
-Below are the steps to create a copilot using an existing CLU model:
+Create a copilot using an existing CLU model:
 
 1. [Prepare your environment](#prepare-your-environment).
 2. [Prepare your conversational language understanding project](#prepare-your-conversational-language-understanding-project).
-3. Map CLU intents and entities:
+3. Map CLU intents and entities.
    - [Manually map intents](#manually-map-intents).
    - [Manually map entities](#manually-map-entities).
    - [Use the wizard to automatically map CLU intents and entities](#use-the-bulk-tool-wizard).
@@ -37,6 +37,7 @@ Before you begin, make sure that you have your CLU model project name, deploymen
    >
    > Not all regions supported by Microsoft Copilot Studio have an equivalent CLU region.
 
+
 1. With your copilot open, expand the **Settings** tab on the side menu pane, select **Language understanding**, and then select **Manage connections in Power Apps** to open Power Apps.
 
    :::image type="content" source="media/advanced-clu-integration/clu-enable-language.png" alt-text="Screenshot of the Microsoft Copilot Studio web app with the Settings and Language menu options highlighted." border="false":::
@@ -44,28 +45,28 @@ Before you begin, make sure that you have your CLU model project name, deploymen
    >[!NOTE]
    > If you have already enabled a CLU connection, skip to step 4.
 
-1. In Power Apps, choose the **Connections** menu if it is pinned to the navigation pane. If the **Connections** menu is not pinned, select **... More**, and then select **Connections**. 
+1. In Power Apps, if the **Connections** menu is pinned to the navigation pane, select **Connections**. If the **Connections** menu isn't pinned, select **... More**, and then select **Connections**. 
 
     :::image type="content" source="media/advanced-clu-integration/clu-image2.png" alt-text="Language option to select NLU resource." border="false":::
 
 
 1. Search for **Azure Cognitive Service for Language** and then select the **+** next to this connection.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image14.png" alt-text="Language option to select NLU resource." border="false":::
+    :::image type="content" source="media/advanced-clu-integration/clu-image14.png" alt-text="Selection of Azure Cognitive Service for Language to make instance of this connection type." border="false":::
 
 1. In the **Azure Cognitive Service for Language configuration** window, choose `Api Key` as authentication type, enter your account key and site URL, and select **Create**.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image15.png" alt-text="Language option to select NLU resource." border="false":::
+    :::image type="content" source="media/advanced-clu-integration/clu-image15.png" alt-text="Configuration window of instance of Azure Cognitive Service for Language connection." border="false":::
 
-1. Once Power Apps creates the connector, return to the **Connections in <environment>** page, search for and select your new connection and then select **Edit** at the top of the page.
+1. Once Power Apps creates the connector, return to the **Connections in `environment`** page, search for and select your new connection and then select **Edit** at the top of the page.
 
-1. In the **Azure Cognitive Service for Language configuration** window, enter a display name to distinguish it from other CLU connectors and re-enter the account key, and then select **Create**.
+1. In the **Azure Cognitive Service for Language configuration** window, enter a display name to distinguish it from other CLU connectors and reenter the account key, and then select **Create**.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image19.png" alt-text="Language option to select NLU resource." border="false":::
+    :::image type="content" source="media/advanced-clu-integration/clu-image19.png" alt-text="Revisit config window for Azure Cognitive Service for Language connection instance." border="false":::
 
 1. In Copilot Studio, select **Refresh**, then under **Natural language understanding**, select **Azure Cognitive Service for Language** from the **NLU Resource** list.
 
-    :::image type="content" source="media/advanced-clu-integration/clu-image16.png" alt-text="Language option to select NLU resource." border="false":::
+    :::image type="content" source="media/advanced-clu-integration/clu-image16.png" alt-text="New connection visible in Copilot Studio under NLU Resource." border="false":::
 
     > [!NOTE]
     > If you you see the following, then you are not connected to **Azure Cognitive Service for Language**. Follow step 3 to connect.
@@ -74,7 +75,7 @@ Before you begin, make sure that you have your CLU model project name, deploymen
 
 1. Select **Save** at the top of the page and select **Yes, continue** in the confirmation message.
 
-1. In the **Delete example trigger phrases?** option, select **Save snapshot**. This saves the copilot content, including trigger phrases and copilot dialogues into a backlog file in YAML format.
+1. To save copilot content, in the **Delete example trigger phrases?** option, select **Save snapshot**. This action saves copilot content including trigger phrases and copilot dialogues into a backlog file in YAML format.
 
 1. Enter your project name and deployment information, and select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image5.png" alt-text="Choose a project and model in Azure Cognitive Service for Language." border="false"::: 
@@ -83,15 +84,18 @@ Before you begin, make sure that you have your CLU model project name, deploymen
    > Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
    >
 
-Now that you’ve completed preparing your environment, you’re ready to map intents and entities to CLU model data. 
+You’re ready to map intents and entities to CLU model data. 
 
 ## Prepare your conversational language understanding project
 
 1. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-2. Then create a language resource in [Language Studio](https://language.cognitive.azure.com/), with the [conversational language understanding](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio) feature enabled.
-3. Note, to ensure PVA functions correctly, you will need to create intents for [Power Virtual Agent's system topics](authoring-system-topics.md) and for [any custom topics](authoring-create-edit-topics.md) you may want to author.
-4. Author [any custom entities](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components) you want to use in your Microsoft Copilot Studio project.
-5. Train and deploy the project in the same region as your Microsoft Copilot Studio resource.
+2. Create a language resource in [Language Studio](https://language.cognitive.azure.com/), with the [conversational language understanding](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio) feature enabled.
+
+   > [!NOTE]
+   > To ensure PVA functions correctly, create intents for [Power Virtual Agent's system topics](authoring-system-topics.md) and [any custom topics](authoring-create-edit-topics.md) you want to author.
+   >
+3. Author [any custom entities](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components) you want to use in your Microsoft Copilot Studio project.
+4. Train and deploy the project in the same region as your Microsoft Copilot Studio resource.
 
 ## Map CLU intents and entities to Microsoft Copilot Studio prebuilt data types
 
@@ -115,11 +119,11 @@ You create a new Microsoft Copilot Studio copilot by mapping existing topics to 
     > [!NOTE]
     > The CLU intent name must be typed exactly as stored in the CLU model, including matching case as uppercase and lowercase characters. 
 
-1. Click the + (plus) sign to the right of the *Add phrases* box to save the intent.
+1. To save the intent, select the + (plus) sign to the right of the *Add phrases* box.
  
 ### Manually map entities:
 
-1. Open your [Microsoft Copilot Studio](authoring-first-bot.md) copilot.	
+1. Open your [Microsoft Copilot Studio](authoring-first-bot.md) copilot.
 
 1. From the left navigation, select **Entities**.
 
@@ -136,7 +140,7 @@ You create a new Microsoft Copilot Studio copilot by mapping existing topics to 
 
 ##  Use the Bulk tool wizard
 
-You create a new copilot by bulk mapping existing topics to CLU intents using the **Map intents and entities** wizard. With the wizard, your copilot can automatically utilize existing intents from your CLU model rather than trigger phrases to determine which topic to map to. 
+You create a new copilot by bulk mapping existing topics to CLU intents using the **Map intents and entities** wizard. With the wizard, your copilot can automatically utilize existing intents from your CLU model rather than trigger phrases to determine which article to map to. 
 
 Begin by uploading your CLU model data file and automatically map CLU intents to your Microsoft Copilot Studio copilot.
 
@@ -144,13 +148,13 @@ Begin by uploading your CLU model data file and automatically map CLU intents to
 1.	In the **File name** option, select **Choose file** to select the data file that you want to upload your CLU model from.
 1.	You then see your model data file in the **Preview** window. Select **Next** to continue.
 1.	select **Add intents and entities**.
-1.	In the **Map existing topics to CLU intents** screen, choose a CLU intent to map to the corresponding  topic. 
+1.	In the **Map existing topics to CLU intents** screen, choose a CLU intent to map to the corresponding  article. 
     :::image type="content" source="media/advanced-clu-integration/clu-image7.png" alt-text="Map existing topics to CLU intents." border="false"::: 
 1.	Review your selections, then select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image9.png" alt-text="Review your selection and then select Save." border="false"::: 
 
-1.	(Optional) For those intents that are not mapped to an existing topic, you can create new topics for each intent. 
-    In the wizard, you’ll see a list of CLU intents that haven’t been mapped to a topic. In the field **Create a new topic**, enter a name for each of the topics that you want to create, and then select **Next**.  
+1.	(Optional) For those intents that aren't mapped to an existing article, you can create new topics for each intent. 
+    In the wizard, you see a list of CLU intents that aren't mapped to an article. In the field **Create a new topic**, enter a name for each of the topics that you want to create, and then select **Next**.  
     :::image type="content" source="media/advanced-clu-integration/clu-image10.png" alt-text="Create new topics for CLU intents." border="false"::: 
 
     > [!NOTE]
@@ -159,7 +163,7 @@ Begin by uploading your CLU model data file and automatically map CLU intents to
 1.	Once all CLU intents and entities are mapped to Microsoft Copilot Studio topics, select **Done**.
     :::image type="content" source="media/advanced-clu-integration/clu-image8.png" alt-text="Add intents and entities and select Done to finish." border="false"::: 
 
-Once you’ve competed this procedure, your copilot topics now appear in the Microsoft Copilot Studio **Topics** pane. For more information, see [Managing topics](authoring-topic-management.md).
+Your copilot topics now appear in the Microsoft Copilot Studio **Topics** pane. For more information, see [Managing topics](authoring-topic-management.md).
 
 ## Related topics
 
