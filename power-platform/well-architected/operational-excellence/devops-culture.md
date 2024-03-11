@@ -30,6 +30,8 @@ The following recommendations can help you adopt and implement Fusion developmen
 
 **Mutual respect fosters a blameless culture.** When issues arise, the workload team should take collaborative ownership and work together to find ways to improve, rather than assigning blame and risking the team’s cohesiveness.
 
+**Secure leadership buy-in and executive sponsorship** for your Power Platform adoption journey. Leadership support is crucial for ensuring that the workload team has the necessary resources, guidance, and encouragement to upskill on Power Platform and use it effectively. Executive sponsors can help communicate the vision and benefits of Power Platform to the rest of the organization, as well as advocate for the workload team's needs and achievements.
+
 ## Team roles and responsibilities
 
 **Teams** **take ownership and responsibility for the workload when they value their work.** The workload team is responsible for the end-to-end operation of their workload. While certain aspects of the workload operation may require outside services, your team should collaborate with other teams to ensure that all functions are successfully completed. Regardless of how involved they are in supporting services, team members must consider every function that supports the workload as their responsibility. This mindset helps reinforce a common sense of ownership.
@@ -55,6 +57,8 @@ The following recommendations can help you adopt and implement Fusion developmen
 **Regularly review your standard operating procedures with the team to foster discussions about areas of improvement.** Avoid complacency and encourage innovative thinking by fostering a philosophy that all standard operating procedures should be continuously reviewed and improved throughout the workload lifecycle. Team members should feel empowered to offer opinions on improvements at any time. However, ensure that you dedicate time to review procedures together so that everyone has space to think about areas for improvement and conduct focused discussions about their ideas.
 
 **Embrace safe experimentation.** Give team members access to sandbox environments and ensure that time is built into sprints to allow for experimentation.
+
+**Stay up to date with Power Platform enhancements** and incorporate them into your existing resources to ensure that your workload is always optimized and aligned with the best practices and standards of the platform. You can also leverage the platform's innovation and potential to deliver more value and better experiences to your business and customers. Experiment with the new features and capabilities in your sandbox or development environments before applying them to your production resources. Test and validate the functionality and performance of the enhancements and ensure that they are compatible with your existing configurations and customizations. Incorporate the enhancements into your existing resources where it makes sense and where they can add value to your workload. Document the changes and communicate them to your stakeholders and users. Monitor the impact and outcomes of the enhancements and collect feedback to measure their effectiveness and satisfaction.
 
 ## Considerations
 
