@@ -61,6 +61,8 @@ In this section, we explain how to capture a trace from the application's web pa
 
 ### Assign trace rights to a user
 
+Each system user account that is to capture and view traces must be assigned the "System tracing user" role.
+
 1. To give a user rights to capture a trace, go to **System administration** > **Users** > **Users**.
 1. Select the user and assign that person the **System tracing user** role.
 
@@ -72,8 +74,6 @@ In this section, we explain how to capture a trace from the application's web pa
 ## Viewing traces
 
 The **Timeline view** tab is the first tab that you see after you import a trace into the Trace Parser. This tab is shown in the following illustration.
-
-[![Example of information in the Timeline tab.](./media/2_desktop.png)](./media/2_desktop.png)
 
 :::image type="content" source="../media/unified-experience/trace-timeline.png" alt-text="Information displayed in the timeline tab." lightbox="../media/unified-experience/trace-timeline.png":::
 
