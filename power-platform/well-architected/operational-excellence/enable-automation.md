@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
 
-|[OE:10](checklist.md)| Design and implement automation upfront for operations such as lifecycle concerns, bootstrapping, and applying governance and compliance guardrails. Don't try to retrofit automation later. Choose automation features that your platform provides..|
+|[OE:09](checklist.md)| Design and implement automation upfront for operations such as lifecycle concerns, and applying governance and compliance guardrails. Don't try to retrofit automation later. Choose automation features that your platform provides.|
 |---|---|
 
 This guide describes the recommendations for designing and implementing your workload to enable automation. Design your workload with automation in mind to ensure that routine tasks such as provisioning resources, scaling, and deployments are performed quickly and reliably. Automation simplifies maintenance tasks and allows you to update, patch, and upgrade your systems more efficiently.
@@ -29,13 +29,13 @@ Design with automation in mind to minimize refactoring after your workload is ru
 - _Deployment_: Automate your application deployments to ensure a predictable standard. Plan for automated deployment by developing deployment standards, training your team on the tools that you'll use, and implementing the necessary infrastructure.
 - _Validation_: Automatically validate compliance requirements against your workload using orchestration or policy tools. Identify the appropriate validation tool for your workload and plan to implement the required systems, for example, orchestration servers.
 
-> :::image type="icon" source="../_images/trade-off.svg"::: > :::image type="icon" source="../_images/trade-off.svg"::: > :::image type="icon" source="../_images/trade-off.svg"::: > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: When designing your workload to enable automation, consider the degree of control that you want to maintain versus the efficiency you can gain through automation. In some cases, your workload might not be mature enough to automate some functions or you might need a level of flexibility that automation doesn't provide.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: When designing your workload to enable automation, consider the degree of control that you want to maintain versus the efficiency you can gain through automation. In some cases, your workload might not be mature enough to automate some functions or you might need a level of flexibility that automation doesn't provide.
 
 Also consider the skill set of your team when designing your workload. If a high degree of automation requires tools that your team isn’t equipped to support, then you might need to use a less comprehensive design as an intermediate step.
 
 ### Continuous workload improvements
 
-Observe your workload in production, analyze usage patterns, and review user behavior and feedback related to your workload to identify areas where you can improve automation. Look for ways to enhance existing automation or introduce new automation to improve your customer experience. For example, you might have automated scaling enabled, but the workload increase is short-lived. You can integrate scale-in automation to decrease CPU usage when the load drops below the threshold.
+Observe your workload in production, analyze usage patterns, and review user behavior and feedback related to your workload to identify areas where you can improve automation. Look for ways to enhance existing automation or introduce new automation to improve your customer experience.
 
 The following sections of this guide offer recommendations on specific areas of automation that can help you in your workload design and implementation.
 
@@ -45,7 +45,7 @@ Take automation into account when designing your authentication and authorizatio
 
 ### Design variability into your workload
 
-Avoid unnecessarily deploying new infrastructure when small changes are made by building flexibility into your artifacts. For example, rather than redeploying your infrastructure when a feature flag changes, you can use environment variables in your solution that update app configurations. Be sure to clearly define and document how variability is used to avoid overuse and configuration drift.
+Avoid unnecessarily deploying new solutions when small changes are made by building flexibility into your artifacts. For example, rather than redeploying your solution when a feature flag changes, you can use environment variables in your solution that update app configurations. Be sure to clearly define and document how variability is used to avoid overuse and configuration drift.
 
 ### Build a control plane
 
@@ -72,50 +72,15 @@ When deciding between orchestration or policy tools, consider whether the config
 
 ## Power Platform facilitation
 
-### Policy management
+### Design variability into your workload
 
-Environment Groups / Policy
-
-**Azure Policy**: Using Azure Policy, you can enforce standards and assess compliance at scale. Azure Policy provides an aggregated view to evaluate the overall state of the workload environment in the compliance dashboard. Or you can use Azure Policy to evaluate each resource and policy on a granular level. You can also use Azure Policy to remediate new resources automatically or remediate existing resources in bulk.
-
-![TODO alt text](media/enable-automation/image1.png)
-
-**Azure Virtual Machines extensions:** Virtual Machines extensions are small packages that run post-deployment configuration and automation on VMs. Several extensions are available for different configuration tasks, such as running scripts, configuring anti-malware solutions, and configuring logging solutions. Install and run these extensions on VMs by using an Azure Resource Manager template, Azure CLI, Azure PowerShell module, or the Azure portal. Each VM has a VM agent installed that manages the lifecycle of the extension.
-
-Typically, VM extensions use a custom script extension to install software, run commands, and perform configurations on a VM or Azure Virtual Machine Scale Sets. You can set these extensions up to run as part of IaC deployments so that they run on new VMs using the Azure VM Agent. Extensions can also be run outside of an Azure deployment by using the Azure CLI, PowerShell module, or the Azure portal.
-
-**Cloud-init:** Cloud-init is an industry tool for configuring Linux VMs on first boot. Much like Azure custom script extensions, cloud-init lets you install packages and run commands on Linux VMs. You can use cloud-init for software installation, system configuration, and content staging. Azure includes many cloud-init-enabled VM images across well-known Linux distributions. For a full list, see cloud-init support for VMs in Azure.
-
-**Azure deployment script resource:** When you deploy using Azure, you might need to run arbitrary code for bootstrapping the management of user accounts, Kubernetes pods, or querying data from a non-Azure system. Because none of these operations are accessible through the Azure control plane, a separate mechanism is required. For more information, see Microsoft.Resources deploymentScripts. Like any other Azure resource, the deployment script resource:
-
-- Can be used in an Azure Resource Manager template.
-- Contains Azure Resource Manager template dependencies in other resources.
-- Consumes input and produces output.
-- Uses a user-assigned managed identity for authentication.
-
-When deployed, the deployment script runs PowerShell or Azure CLI commands and scripts. Script runs and logging can be observed in the Azure portal or with the Azure CLI and PowerShell module. You can customize the variables for the run environment, timeout options, and resource management after a script failure.
-
-**Bootstrap AKS clusters with GitOps**: You can bootstrap a newly provisioned AKS cluster using GitOps and the Flux v2 cluster extension by declaring your configuration settings in GitHub repositories. Because AKS cluster files are stored in a GitHub repository, they're versioned, and changes between versions are easily tracked. Kubernetes controllers run in the clusters and continually reconcile the cluster state with the desired state declared in the Git repository by pulling the files from the repository. For more information, see AKS baseline reference architecture.
-
-### CDesign variability into your workloadonfiguration management
-
-**Azure Automanage State Configuration is a DSC management tool built on top of Azure Policy that performs as an orchestration tool. Using a VM extension, you can directly apply predefined configuration updates to individual VMs or groups of VMs as defined within Azure Policy.**
-
-**Azure App Configuration provides a service to centrally manage application settings and feature flags. It works with Azure Key Vault to let you securely manage a wide variety of application configurations across your environment.Environment Variables** store the parameter keys and values, which then serve as input to various other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments. Learn more: Use environment variables in solutions - Power Apps | Microsoft Learn
+Environment Variables store the parameter keys and values, which then serve as input to various other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments. For more information, see [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables).
 
 ### Authentication and authorization
 
-Conditional Access is a feature of Microsoft Entra ID that lets you control how and when users can access applications and services. Follow the recommendations for conditional access and multi-factor authentication when automating processes with Power Automate. Learn more: Conditional access and multi-factor authentication in Flow - Power Automate | Microsoft Learn
+[Conditional Access](/azure/active-directory/conditional-access/overview) is a feature of Microsoft Entra ID that lets you control how and when users can access applications and services. Follow the recommendations for conditional access and multi-factor authentication when automating processes with Power Automate. For more information, see [Conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
 
 ## Related links
 
-- [Conditional access and multi-factor authentication in Flow - Power Automate | Microsoft Learn](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow)
-- Use environment variables in solutions - Power Apps | Microsoft Learn
-- AKS baseline reference architecture
-- Azure App Configuration
-- Azure Automanage State Configuration
-- Azure Policy
-- Cloud-init support for VMs in Azure
-- GitOps Flux v2 configurations with AKS and Azure Arc-enabled Kubernetes
-- Microsoft.Resources deploymentScripts
-- Recommendations for self-healing and self-preservation
+- [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
+- [Conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow)

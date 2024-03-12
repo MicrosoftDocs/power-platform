@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Operational Excellence checklist recommendation:** 
 
-|[OE:12](checklist.md)| Implement a deployment failure mitigation strategy that addresses unexpected mid-rollout issues with rapid recovery. Combine multiple approaches, such as rollback, feature disablement, or using your deployment pattern's native capabilities. |
+|[OE:11](checklist.md)| Implement a deployment failure mitigation strategy that addresses unexpected mid-rollout issues with rapid recovery. Combine multiple approaches, such as rollback, feature disablement, or using your deployment pattern's native capabilities. |
 |---|---|
 
 This guide describes the recommendations for designing a standardized strategy to effectively handle deployment failures. Like other workload issues, deployment failures are an inevitable part of a workload lifecycle. With this mindset, you can be proactive by having a well-designed, intentional strategy for dealing with deployment failures. Such a strategy enables your workload team to efficiently mitigate failures with as little impact as possible on your end users.
@@ -120,27 +120,15 @@ Test your entire deployment failure mitigation strategy frequently. Like emergen
 
 ## Power Platform facilitation
 
-- Pipelines for Power Platform, Power Platform Build Tools and GitHub Actions support multi-stage deployments.
-- Environment Variables store the parameter keys and values, which then serve as input to various other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
+- [Pipelines in Power Platform](/power-platform/alm/pipelines) aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.
+- [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools) can be used to automate common build and deployment tasks related to apps built on Microsoft Power Platform.
+- [GitHub Actions for Power Platform](/power-platform/alm/devops-github-actions) enable developers to build automated software development lifecycle workflows. With [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions), you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Microsoft Power Platform.
+- [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is an open source tool that consists of a set of applications, scripts and pipelines designed to automate the continuous integration/continuous delivery process.
+- [Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
+- [Environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) store the parameter keys and values, which then serve as input to various other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
+- [Power Platform environments](/power-platform/admin/backup-restore-environments) provide point-in-time restore functionality that can help you roll back.
+- [Application Insights](/azure/azure-monitor/app/app-insights-overview) is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem and Power Platform integrates with Application Insights:
+  - You can receive telemetry on diagnostics and performance captured by the [Dataverse platform in Application Insights](/power-platform/admin/overview-integration-application-insights). You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
+  - You can connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights). You can use these analytics to diagnose issues and understand what users actually do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps.
+  - You can configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this to monitor cloud flow executions and create alerts for cloud flow run failures.
 
-  Power Platform environments provide point-in-time restore functionality that can help you roll back. Back up and restore environments - Power Platform | Microsoft Learn
-
-- Application Insights is part of the Azure Monitor ecosystem and Power Platform integrates with Application Insights:
-  - You can receive telemetry on diagnostics and performance captured by the Dataverse platform in Application Insights. You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance. 
-  - You can connect your canvas apps to Application Insights. You can use these analytics to diagnose issues and understand what users actually do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps.
-  - You can configure Power Automate telemetry to flow into Application Insights. You can use this to monitor cloud flow executions and create alerts for cloud flow run failures. 
-
-- Azure Pipelines provides build and release services to support CI/CD of your applications.
-- Azure Test Plans is a browser-based test management solution that's easy to use. This solution offers capabilities that are required for planned manual testing, user acceptance testing, and exploratory testing. Azure Test Plans also provides a way for you to gather feedback from stakeholders.
-- Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to monitoring data from your cloud and on-premises environments. Monitor includes a robust alerting platform. You can configure that system for automatic notifications and other actions, like autoscaling and other self-healing mechanisms.
-- Application Insights is an extension of Monitor that provides application performance monitoring (APM) features.
-- Azure Logic Apps is a cloud-based platform for running automated workflows that integrate apps, data, services, and systems. You can use Logic Apps to create a new version of your application whenever an update is made to it. Azure maintains a history of the versions and can revert or promote any previous version.
-- Many Azure database services provide point-in-time restore functionality that can help you when you need to roll back:
-  - Azure SQL Database
-  - Azure SQL Managed Instance
-  - Azure Cosmos DB
-  - Azure Database for MySQL
-  - Azure Database for PostgreSQL
-- Azure Chaos Studio Preview is a managed service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience.
-
-## Related links

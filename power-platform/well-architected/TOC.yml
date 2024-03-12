@@ -97,19 +97,19 @@
               href: operational-excellence/formalize-development-practices.md
             - name: OE:04 Tools and processes
               href: operational-excellence/tools-processes.md
-            - name: OE:06 Supply chain for workload development
+            - name: OE:05 Supply chain for workload development
               href: operational-excellence/workload-supply-chain.md
-            - name: OE:07 Monitoring system
+            - name: OE:06 Monitoring system
               href: operational-excellence/observability.md
-            - name: OE:08 Emergency response
+            - name: OE:07 Emergency response
               href: operational-excellence/emergency-response.md
-            - name: OE:09 Task automation
+            - name: OE:08 Task automation
               href: operational-excellence/automate-tasks.md
-            - name: OE:10 Automation design
+            - name: OE:09 Automation design
               href: operational-excellence/enable-automation.md
-            - name: OE:11 Deployment practices
+            - name: OE:10 Deployment practices
               href: operational-excellence/safe-deployments.md
-            - name: OE:12 Failure mitigation
+            - name: OE:11 Failure mitigation
               href: operational-excellence/mitigation-strategy.md
       - name: Performance Efficiency
         items:
