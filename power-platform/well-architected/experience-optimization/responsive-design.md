@@ -9,7 +9,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for optimizing for different platforms and devices
+# Recommendations for optimizing layout
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
@@ -33,13 +33,21 @@ Responsive layouts ensure an efficient, adaptable user experience across various
 
 The app frame is made from a set of controls that are available on every screen in a consistent manner. It's made up of three subcomponents: a header, navigation, and main content area. Simple apps have the flexibility to use the header component while more sophisticated apps can leverage side nav to enable depth of navigation. Subcomponents are also customizable. For example, using global search in header, or nav group items in side nav are optional and can be tailored to the needs of your app.
 
-The header is a core component designed to be a part of every internal application. It consists of a variety of sub-components that give people access to system-wide functions, helps orient them to the UI, and provides consistency across experiences. It appears across the top of the app frame and should persists across all pages of the app. It can optionally host global commands, like search, settings, notifications, feedback, profile, or help. The name of the app should always be displayed, which should ideally also serve as a clickable link to the home or landing page. 
+The _header_ is a core component designed to be a part of every internal application. It consists of a variety of sub-components that give people access to system-wide functions, helps orient them to the UI, and provides consistency across experiences. It appears across the top of the app frame and should persists across all pages of the app. It can optionally host global commands, like search, settings, notifications, feedback, profile, or help. The name of the app should always be displayed, which should ideally also serve as a clickable link to the home or landing page. The header should be responsive - commands in viewports 600 pixels and below should move into the overflow control. The search input width is also responsive at 1023 pixels and below.
 
-The header should be responsive. Header commands in viewports 639 pixels and below move into the overflow control. The search input width is also responsive at 1023 pixels and below.
+Providing a clear way to navigate throught the app helps users become familiar with the layout and functionality. It helps people jump from section to section of an app.
 
-Providing a clear way to navigate throught the app helps users become familiar with the layout and functionality. Adhering to a consistent design language (color schemes, typography, and layout structure), helps users quickly identify and interact with various elements without confusion.
+The most common forms of navigation include top navigation and side navigation. The app should not use both top and side navigation simultaneously.
+- _Top navigation_ provides links to the main areas of an application or a site. The top nav is always on-screen and can perform as a light version of a side (left) navigation. Top navigation is ideal for apps with screens with 5 pages or less. Common standards include having the default active page as the first menu item, navigation has two to five items (can include groups), and does not use both breadcrumb and top navigation simultaneously.
+- The primary navigation for larger business applications is often a _side_ or _left navigation_. Hierarchically, it exists above all other content. It's always present, and may be minimized to a collapsed state (also called a rail state) to free up additional space for page content. At smaller window sizes, it minimizes into a flyout menu. Common standards for side navigation include having the default page as the app's landing page, and using icons for all navigation items (except nested items).
+
+Adhering to a consistent design language (color schemes, typography, and layout structure), helps users quickly identify and interact with various elements without confusion.
 
 Once the app frame is determined, each screen's layout will reside within the content area of the app frame.
+
+### Thoughtfully utilize screen real estate
+
+
 
 ### Use established layouts and grouping patterns
 
