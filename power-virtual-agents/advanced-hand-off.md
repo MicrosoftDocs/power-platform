@@ -1,6 +1,6 @@
 ---
 title: "Hand off to a live agent (contains video)"
-description: "Learn how to hand off a bot conversation to a human agent, complete with context and conversation history."
+description: "Learn how to hand off a copilot conversation to a human agent, complete with context and conversation history."
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -28,7 +28,7 @@ For more information about how to configure hand-off with [Omnichannel for Custo
 >
 
 > [!NOTE]
-> You can choose to escalate a bot conversation without linking to an engagement hub:
+> You can choose to escalate a copilot conversation without linking to an engagement hub:
 >
 > 1. In the **Authoring canvas** for the topic you want to add an escalation option to, at the end of the topic, select **Add node** (**+**) to add a new node.
 > 1. Select **Go to another topic** and then **Escalate**.
@@ -40,13 +40,13 @@ For more information about how to configure hand-off with [Omnichannel for Custo
 ## Prerequisites
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
-- A bot built with [Microsoft Copilot Studio](https://aka.ms/TryPVA).
+- A copilot built with [Microsoft Copilot Studio](https://aka.ms/TryPVA).
 - An engagement hub that is being used by live agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
-- If your bot does not have escalation to agent configured in the "Escalate" System topic, follow the instructions below to configure it 
+- If your copilot does not have escalation to agent configured in the "Escalate" System topic, follow the instructions below to configure it 
 
 ## Configuring the Escalate system topic 
 
-When you create a bot from Dynamics 365 Customer Service, the default bot content includes the "Transfer conversation" node at the end of the **Escalate** system topic. But if you create if from the Microsoft Copilot Studio portal, that configuration will not be done ahead of time. To configure, follow the steps below:
+When you create a copilot from Dynamics 365 Customer Service, the default copilot content includes the "Transfer conversation" node at the end of the **Escalate** system topic. But if you create if from the Microsoft Copilot Studio portal, that configuration will not be done ahead of time. To configure, follow the steps below:
 
 1. Go to Topics, then select the System tab and click on **Escalate** topic
 
@@ -59,21 +59,21 @@ When you create a bot from Dynamics 365 Customer Service, the default bot conten
 
 ## Triggering hand-off to a live agent
 
-Customers engaging with the bot can ask for a live agent at any point in the conversation. This escalation can happen in two ways, with an implicit trigger or an explicit trigger.
+Customers engaging with the copilot can ask for a live agent at any point in the conversation. This escalation can happen in two ways, with an implicit trigger or an explicit trigger.
 
 Upon triggering the hand-off topic, Microsoft Copilot Studio starts the hand-off to the configured engagement hub and sends over all conversation context to find the next best live agent to ramp them up so they can resume the conversation.
 
 ### Implicit triggers
 
-In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there's no [topic](./authoring-create-edit-topics.md), or no matching option within a topic.
+In some instances, the copilot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there's no [topic](./authoring-create-edit-topics.md), or no matching option within a topic.
 
 In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid-way into a conversation.
 
-When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-system-topics.md?tabs=preview#escalate). This type of trigger is known as _implicit triggering_.
+When the copilot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-system-topics.md?tabs=preview#escalate). This type of trigger is known as _implicit triggering_.
 
 ### Explicit triggers
 
-When creating topics for your bot, you may determine that some topics require interaction with a human. This type of trigger is known as _explicit triggering_.
+When creating topics for your copilot, you may determine that some topics require interaction with a human. This type of trigger is known as _explicit triggering_.
 
 In these instances, you must add a **Transfer conversation** node into the topic.
 
@@ -84,11 +84,11 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 
 **Add a "Transfer to agent" node into a topic:**
 
-1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the bot you want to edit.
+1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the copilot you want to edit.
 
 1. Open the authoring canvas for the topic you want to add the **Transfer conversation** node to.
 
-1. Select **Add node** (**+**) to add a message node. Enter what the bot should say to indicate that transferal to a live agent is about to occur.
+1. Select **Add node** (**+**) to add a message node. Enter what the copilot should say to indicate that transferal to a live agent is about to occur.
 
     :::image type="content" source="media/advanced-hand-off/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
@@ -113,14 +113,14 @@ The following table lists the context variables available by default.
 
 | Context                               | Purpose                                                                                                                                  | Example                                                   |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| `va_Scope`                            | Route escalations to a live agent.                                                                                                       | `"bot"`                                                   |
+| `va_Scope`                            | Route escalations to a live agent.                                                                                                       | `"copilot"`                                                   |
 | `va_LastTopic`                        | Route escalations to a live agent and help them ramp-up. Includes the last topic that was triggered by an utterance from the user.       | `"Return items"`                                          |
 | `va_Topics`                           | Ramp-up a live agent. Only includes topics triggered by end user using a trigger phrase. Doesn't include topics that were redirected to. | `[ "Greetings", "Store Hours", "Return Item" ]`           |
 | `va_LastPhrases`                      | Route escalation to a live agent and help them ramp-up.                                                                                  | `"Can I return my item"`                                  |
 | `va_Phrases`                          | Ramp-up a live agent.                                                                                                                    | `["Hi", "When does store open", "Can I return my item" ]` |
-| `va_ConversationId`                   | Uniquely identify a bot conversation.                                                                                                    | `6dba796e-2233-4ea8-881b-4b3ac2b8bbe9`                    |
+| `va_ConversationId`                   | Uniquely identify a copilot conversation.                                                                                                | `6dba796e-2233-4ea8-881b-4b3ac2b8bbe9`                    |
 | `va_AgentMessage`                     | Ramp-up a live agent.                                                                                                                    | `"Got a gift from: HandoffTest"`                          |
-| `va_BotId`                            | Identify the bot that is handing off a conversation.                                                                                     | `6dba796e-2233-4ea8-881b-4b3ac2b8bbe9`                    |
+| `va_BotId`                            | Identify the copilot that is handing off a conversation.                                                                                 | `6dba796e-2233-4ea8-881b-4b3ac2b8bbe9`                    |
 | `va_Language`                         | Route escalation to a live agent.                                                                                                        | `"en-us"`                                                 |
 | All [user-defined topic variables][1] | Ramp-up a live agent.                                                                                                                    | `@StoreLocation = "Bellevue"`                             |
 

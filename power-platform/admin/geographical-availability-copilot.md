@@ -98,10 +98,6 @@ For information about regions supported by Dynamics 365 copilots and generative 
 - For Dynamics 365 Customer Insights - Data, see [Give consent to use Copilot in Customer Insights – Data](/dynamics365/customer-insights/data/copilot-global-consent).
 - For Dynamics 365 Sales, see [Copilot data movement across geographies](/dynamics365/sales/sales-copilot-data-movement).
 
-## Languages availability
-
-To learn about the languages that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/en-us/availability-reports/copilotreport/).
-
 ## Related content
 
 [Legal terms](https://go.microsoft.com/fwlink/?linkid=2182773).
