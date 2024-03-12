@@ -1,12 +1,12 @@
 ---
 title: "Connect to Exchange Online | MicrosoftDocs"
-description: Connect to Exchange Online
+description: Connect to Exchange Online.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/08/2022
-author: DanaMartens
+ms.date: 03/12/2024
+author: rahulmital 
 ms.subservice: admin
-ms.author: dmartens
+ms.author: rahulmital
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -306,9 +306,9 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
 
 #### Approve mailboxes
 
-You can use Manual or Programmatic processses to approve a mailbox.
+You can use a manual or programmatic processses to approve a mailbox.
 
-  **Manual approval**
+##### Approve a mailbox manually
 
 1. Do one of the following: 
 
@@ -323,9 +323,9 @@ You can use Manual or Programmatic processses to approve a mailbox.
   
 5. Select **OK**.
 
-  **Programmatic approval**
+##### Approve a mailbox programmatically
   
-Email addresses cannot be approved using plugins or workflows. External applications can programmatically invoke email address approval by passing the “emailrouteraccessapproval” attribute in the SDK request if the row is not already approved and if the caller is authorized per the above requirements. If the request includes additional attributes, the row’s email address may not be approved.
+Email addresses can't be approved using plug-ins or workflows. External applications can programmatically invoke email address approval by passing the _emailrouteraccessapproval_ attribute in the SDK request if the row is not already approved and if the caller is authorized per the above requirements. If the request includes additional attributes, the row’s email address may not be approved.
    
 ### Remove the requirement to approve mailboxes
 
