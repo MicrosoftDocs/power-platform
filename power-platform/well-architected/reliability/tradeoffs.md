@@ -55,6 +55,7 @@ During the design phase of a workload, you need to consider how decisions based 
 
 - Training becomes more complex as the number of components in the workload increases. This complexity affects the time required for onboarding and increases the knowledge that's needed to track product roadmaps and service-level guidance.
 
+<!--
 ## Reliability tradeoffs with Performance Efficiency
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased latency.** Performance Efficiency requires a system to achieve performance targets for user and data flows.
@@ -72,6 +73,7 @@ During the design phase of a workload, you need to consider how decisions based 
 - Automatic scaling operations aren't instantaneous and therefore can't reliably handle a sudden and dramatic spike in demand that can't be shaped or smoothed. Therefore, over-provisioning via either larger instances or more instances is a critical reliability tactic to account for the lag between demand signal and supply creation. Unused capacity counters the goals of performance efficiency.
 
 - Sometimes a component can't be scaled in reaction to demand, and that demand isn't fully predictable. Using large instances to cover the worst case leads to over-provisioning waste in situations that are outside that use case.
+-->
 
 ## Related resources
 

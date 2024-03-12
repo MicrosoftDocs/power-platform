@@ -44,6 +44,8 @@ landingContent:
             url: identify-flows.md
           - text: Perform failure mode analysis
             url: failure-mode-analysis.md
+          - text: Set reliability targets
+            url: metrics.md
           - text: Design a monitoring and alerting strategy
             url: monitoring-alerting-strategy.md
   - title: Achieve reliability targets

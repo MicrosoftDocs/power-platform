@@ -1,6 +1,6 @@
 ---
 title: Configure hand-off to Dynamics 365 Customer Service
-description: Escalate bot conversations to live agents using omnichannel engagement capabilities of Dynamics 365 Customer Service.
+description: Escalate copilot conversations to live agents using omnichannel engagement capabilities of Dynamics 365 Customer Service.
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -17,44 +17,40 @@ ms.custom: handoff, ceX
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-When your customers need to speak with a human agent, your bot can seamlessly hand off the conversation. With the omnichannel capabilities of the [Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), you can connect both voice (Classic only, coming soon for all other bots) and text (messaging) conversations.
+When your customers need to speak with a human agent, your copilot can seamlessly hand off the conversation. With the omnichannel capabilities of the [Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), you can connect both voice (in Classic chatbots) and text (messaging) conversations.
 
 > [!NOTE]
-> Connecting to Dynamics 365 Customer Service Omnichannel for **voice** capabilities is available to Microsoft Copilot Studio Classic only at this moment. This feature is coming soon to all other bots.
+> Connecting to Dynamics 365 Customer Service Omnichannel for **voice** capabilities is available to Microsoft Copilot Studio Classic only at this moment. This feature is coming soon to all other copilots.
 
-When your bot hands off a conversation, it shares the full history of the conversation and all variables collected in the interaction. Your Omnichannel for Customer Service routes incoming escalations to the right queue, and a live agent can seamlessly resume the conversation. For more information about how to use hand-off in bot conversations, see [Hand off to a live agent](./advanced-hand-off.md).
+When your copilot hands off a conversation, it shares the full history of the conversation and all variables collected in the interaction. Your Omnichannel for Customer Service routes incoming escalations to the right queue, and a live agent can seamlessly resume the conversation. For more information about how to use hand-off in copilot conversations, see [Hand off to a live agent](./advanced-hand-off.md).
 
-You can also enable single sign-on (SSO) to allow chatbots to sign users in if they're logged in to the page where the bot is deployed. For more information, see [Configure single sign-on](configure-sso.md) and [Pass authentication token to bot during single sign-on in live chat](/dynamics365/customer-service/pass-auth-token-sso-live-chat).
+You can also enable single sign-on (SSO) to allow copilots to sign users in if they're logged in to the page where the copilot is deployed. For more information, see [Configure single sign-on](configure-sso.md) and [Pass authentication token to copilot during single sign-on in live chat](/dynamics365/customer-service/pass-auth-token-sso-live-chat).
 
 # [Web app](#tab/webApp)
 
 ## Prerequisites
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
-- Sign in with an account that has at least OC_Admin and Bot Author roles.
+- Sign in with an account that has at least OC_Admin and Copilot Author roles.
 - Have a [product license for Microsoft Copilot Studio](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
-- Your bot and Omnichannel for Customer Service must be in the same environment.
-- For end-to-end capabilities to work as expected, you must [publish](./publication-fundamentals-publish-channels.md) your bot.
+- Your copilot and Omnichannel for Customer Service must be in the same environment.
+- For end-to-end capabilities to work as expected, you must [publish](./publication-fundamentals-publish-channels.md) your copilot.
 
 > [!WARNING]
-> Microsoft Copilot Studio bots with names that are longer than 30 characters will fail to connect when you follow the instructions in this topic. Ensure your bot's name contains less than 30 characters before you proceed.
+> Microsoft Copilot Studio copilots with names that are longer than 30 characters will fail to connect when you follow the instructions in this topic. Ensure your copilot's name contains less than 30 characters before you proceed.
 
-## Connect your bot to Omnichannel for Customer Service
+## Connect your copilot to Omnichannel for Customer Service
 
-1. In Microsoft Copilot Studio, edit your bot. In the navigation menu, select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile.
+1. In Microsoft Copilot Studio, edit your copilot. In the navigation menu, select **Settings**, **Customer engagement hub**, and then select the **Omnichannel** tile.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-settings.png" alt-text="The bot management Agent transfers page.":::
 
 1. Select **Connect**.
 
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-connect.png" alt-text="Screenshot showing the connect pane for OmniChannel transfer to agent":::
-
-    - Note that the OmniChannel installation must be in the same environment as the bot.
+    - Note that the OmniChannel installation must be in the same environment as the copilot.
     - If you're using Application Lifecycle Management (ALM), you may see a message that we can't determine if Omnichannel for Customer Service integration is enabled for the environment. For more information, see [Bots with ALM](#bots-with-alm).
 
-1. Select the **View  in Omnichannel** link to [continue configuring the bot connection in Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-view-in-oc.png" alt-text="Screenshot showing the link to this bot entry in Omnichannel":::
+1. Click **View  in Omnichannel** to [continue configuring the bot connection in Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
 
 > [!IMPORTANT]
 > To test the bot on your custom website, you must use the embed code that's specified in the chat widget you set up in Omnichannel for Customer Service. If you use the embed code from Microsoft Copilot Studio, hand-off won't work. For more information, see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal).
@@ -118,17 +114,15 @@ Dynamics 365 Customer Service expects a conversation to end after a period of in
 
 Finally, save and publish your bot.
 
-## Manage your bot's omnichannel capabilities
+## Manage your copilot's omnichannel capabilities
 
-Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect your bot and find the link to go to the Omnichannel for Customer Service admin center to view the connection details.
+Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect your copilot and find the link to go to the Omnichannel for Customer Service admin center to view the connection details.
 
-### Disconnect your bot from Omnichannel for Customer Service or disable the connection
+### Disconnect your copilot from Omnichannel for Customer Service or disable the connection
 
-If you select **Disconnect**, the application user that represents the bot in your Omnichannel for Customer Service instance is disabled. Your bot effectively disconnects from the Omnichannel for Customer Service environment and stops receiving any traffic from your Omnichannel for Customer Service instance.
+If you select **Disconnect**, the application user that represents the copilot in your Omnichannel for Customer Service instance is disabled. Your copilot effectively disconnects from the Omnichannel for Customer Service environment and stops receiving any traffic from your Omnichannel for Customer Service instance.
 
-:::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-disconnect.png" alt-text="Screenshot of OmniChannel pane with a disconnect button.":::
-
-To add your bot back, you need to [connect it again](#connect-your-bot-to-omnichannel-for-customer-service), starting at Step 2.
+To add your copilot back, you need to [connect it again](#connect-your-bot-to-omnichannel-for-customer-service), starting at Step 2.
 
 ## Known limitations
 
@@ -136,7 +130,7 @@ See [limitations when using Microsoft Copilot Studio with the Chat Add-in for Dy
 
 ## Recommended extensions
 
-The following extensions aren't required to hand-off to Omnichannel for Customer Service, but they provide bot authors with a better experience by providing [extra variables and actions](#voice-based-capabilities).
+The following extensions aren't required to hand-off to Omnichannel for Customer Service, but they provide copilot authors with a better experience by providing [extra variables and actions](#voice-based-capabilities).
 
 Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
 
