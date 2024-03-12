@@ -2,7 +2,7 @@
 title: Diagnose issues and analyze performance using a trace parser with the unified developer experience.
 description: Learn how you can use a trace parser to consume traces and analyze performance in your deployment from your unified developer experience.
 author: pvillads
-ms.date: 03/05/2024
+ms.date: 03/12/2024
 ms.topic: article
 ms.subservice: developer
 ms.reviewer: pehecke
@@ -62,9 +62,9 @@ In this section, we explain how to capture a trace from the application's web pa
 ### Assign trace rights to a user
 
 1. To give a user rights to capture a trace, go to **System administration** > **Users** > **Users**.
-2. Select the user and assign that person the **System tracing user** role.
+1. Select the user and assign that person the **System tracing user** role.
 
-    [![Example of assigning trace rights to a user.](./media/trace2-284x300.jpg)](./media/trace2.jpg)
+:::image type="content" source="../media/unified-experience/trace-assign-to-user.png" alt-text="Assign trace rights to a user.":::
 
 > [!NOTE]
 > To help prevent unwanted tracing, remove the user role after the user has finished tracing.
@@ -74,6 +74,8 @@ In this section, we explain how to capture a trace from the application's web pa
 The **Timeline view** tab is the first tab that you see after you import a trace into the Trace Parser. This tab is shown in the following illustration.
 
 [![Example of information in the Timeline tab.](./media/2_desktop.png)](./media/2_desktop.png)
+
+:::image type="content" source="../media/unified-experience/trace-timeline.png" alt-text="Information displayed in the timeline tab." lightbox="../media/unified-experience/trace-timeline.png":::
 
 The **Timeline** tab has the following major components:
 
@@ -86,7 +88,7 @@ The **Timeline** tab has the following major components:
 
 The **Call tree view** is accessed by selecting the **Call Tree** tab. You can see the call tree for all X++ methods.
 
-[Example of information shown in the Call Tree tab](./media/3_desktop.png)
+:::image type="content" source="../media/unified-experience/trace-call-tree.png" alt-text="Information displayed in the call tree tab." lightbox="../media/unified-experience/trace-call-tree.png":::
 
 Similarly, you can display the **X++** tab to view a list of all the X++ methods. They are sorted by fields such as inclusive/exclusive durations, RPC, or database calls. These methods are similar to the corresponding tabs in Trace Parser and have the same behavior.
 
