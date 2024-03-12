@@ -125,7 +125,7 @@ We'll be introducing new Fluent UI controls that have better usability, accessib
 ### Impact
 
 - Starting April 2023, these controls can no longer be added to forms.
-- Existing control instances will work on existing forms until April 2024.
+- No additional support or fixes will be provided on these controls after April 2024.
 
 ### Action required by you
 
