@@ -24,13 +24,13 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Activity Editor was removed in model-driven apps
 
-As part of a service update designed to improve security within Power Apps, we removed the deprecated Activity Editor control, and recommend the use of the [rich text editor control](/power-apps/maker/model-driven-apps/rich-text-editor-control). This change is rolling out in January and February 2024.
+As part of a service update designed to improve security within Power Apps, we removed the deprecated Activity Editor control, and recommend the use of the [rich text editor control](/power-apps/maker/model-driven-apps/rich-text-editor-control). This change will be rolling out through January and February 2024.
 
 Learn more about [adding the rich text editor control to a model-driven app](/power-apps/maker/model-driven-apps/rich-text-editor-control). If you are using the Activity Editor control in a customized email or appointment experience in a model-driven app, learn more about [switching to the rich text editor control](/dynamics365/customer-service/administer/customer-service-hub-user-guide-email-font-admin#enable-the-rte-control-in-the-email-form).
 
 ## Classic app, form, and view designers are deprecated
 
-Starting in October 2023, the classic app, form, and view designers are deprecated, by default. This means that, by default, all model-driven apps, forms, and views only open via the modern designers. By default, the **Switch to classic** option to revert back to the classic designers from the modern designers will no longer be available.
+Starting in October 2023, the classic app, form, and view designers are deprecated, by default. This means that, by default, all model-driven apps, forms, and views will only open via the modern designers. By default, the **Switch to classic** option to revert back to the classic designers from the modern designers will no longer be available.
 
 ### Impact
 
@@ -206,9 +206,9 @@ Effective July 1, 2022, the Custom message field is deprecated from the environm
 
 ## Power Apps for Windows 8 will be deprecated and replaced with a new app
 
-Effective September 2022, [Power Apps for Windows 8](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) is deprecated. Microsoft continues to provide security and other critical updates for the app until Sept 20, 2022. We won't release any other features or functionalities for the app.
+Effective September 2022, [Power Apps for Windows 8](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) will be deprecated. Microsoft will continue to provide security and other critical updates for the app until Sept 20, 2022. We won't release any other features or functionalities for the app.
 
-After Sept 20, 2022, Power Apps for Windows 8 will be removed from the Microsoft Store, and no longer supported.
+After Sept 20, 2022, Power Apps for Windows 8 will be removed from the Microsoft Store, and will no longer be supported.
 
 On June 20, 2022 [Power Apps for Windows](https://apps.microsoft.com/store/detail/power-apps-preview/9MVC8P1Q3B29?hl) will be available. For more information about the new app, see [Install Powers Apps for Windows](/power-apps/mobile/windows-app-install).
 
