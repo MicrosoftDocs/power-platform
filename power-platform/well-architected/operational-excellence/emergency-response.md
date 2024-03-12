@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
 
-|[OE:08](checklist.md)| Ensure that your workload emits meaningful health signals across infrastructure and code. Collect the resulting data and use it to generate actionable alerts that enact emergency responses via dashboards and queries. Clearly define human responsibilities, such as on-call rotations, incident management, emergency resource access, and running post-mortems.|
+|[OE:07](checklist.md)| Develop an effective emergency operations practice. Ensure that your workload emits meaningful health signals. Collect the resulting data and use it to generate actionable alerts that enact emergency responses via dashboards and queries. Clearly define human responsibilities, such as on-call rotations, incident management, emergency resource access, and running postmortems.|
 |---|---|
 
 This guide describes the recommendations for designing an emergency response strategy. Some of your workloads may be mission critical, and issues that arise over the course of a workload's lifecycle may be severe enough to warrant declaring them emergencies. You can implement tightly controlled and focused processes and procedures that your team can follow to ensure that an issue is handled in a calm, orderly manner. Emergencies naturally raise everyone's stress levels and can lead to a chaotic environment if your team isn't well-prepared. To help minimize stress and confusion, design a response strategy, share the response strategy with your organization, and perform regular emergency response training.
@@ -23,7 +23,7 @@ This guide describes the recommendations for designing an emergency response str
 An emergency response strategy should be a well-defined set of processes and procedures. Each process and procedure should have scripts to ensure that each step progresses your team towards quickly and safely resolving an issue. To develop an emergency response strategy, consider the following overview:
 
 - Prerequisites
-  - Develop an monitoring system
+  - Develop a monitoring system
   - Create an incident response plan
 - Incident phases
   - Detection
@@ -41,13 +41,13 @@ The following sections provide recommendations for each of these phases.
 
 To have a robust emergency response strategy, you need to have a robust observability platform in place. Your observability platform should have the following characteristics:
 
-- **Holistic monitoring**: Ensure that you thoroughly monitor your workload from a configuration and application perspective, include infrastructure monitoring if components of your workload are hosted in the cloud or on-prem.
+- **Holistic monitoring**: Ensure that you thoroughly monitor your workload from a configuration and application perspective, include infrastructure monitoring if components of your workload are hosted in the cloud or on-prem. Make sure all components of your workload are covered by your monitoring strategy, for example if your workload interacts with Azure resources or an on-premise system those should be included in your monitoring as well. 
 - **Verbose logging**: Enable verbose logging for your components to assist with investigations when you triage an issue. Structure logs so that they're easy to manage. Automatically send logs to data sinks to be prepared for analysis.
 - **Useful dashboards**: Create health model-based dashboards that are tailored to each team across your organization. Different teams are responsible for different aspects of workload health.
 - **Actionable alerts**: Create alerts that are useful for your workload teams. Avoid alerts that don't require action from your teams. Too many alerts of this kind can lead to people ignoring or blocking alert notifications.
 - **Automatic notifications**: Ensure that appropriate teams automatically receive alerts that require action from them. For example, your tier-1 support team should get notifications for all alerts, whereas your security engineers should only get alerts for security events.
 
-For more information, see Recommendations for designing and creating a monitoring framework.
+For more information, see [Recommendations for designing and creating a monitoring framework](observability.md).
 
 ## Incident response plan
 
@@ -63,7 +63,7 @@ Identify a postmortem leader. This individual ensures that postmortems are perfo
 
 ### Processes and procedures
 
-Your workload team should define and understand emergency criteria. When your team determines that a case is severe, you can declare a disaster and initiate the disaster recovery plan. In less severe cases, the issue might not meet the criteria of a disaster. But you should still consider the issue an emergency, which necessitates initiating the emergency response plan. Emergencies can either be internal to your workload, e.g. bugs in your application code, or be a result of an issue with a dependency of your workload, e.g. unavailability of an API or a database. The support team must be able to determine whether an issue meets the emergency criteria, even if they have no visibility into the underlying issue.
+Your workload team should define and understand emergency criteria. When your team determines that a case is severe, you can declare a disaster and initiate the disaster recovery plan. In less severe cases, the issue might not meet the criteria of a disaster. But you should still consider the issue an emergency, which necessitates initiating the emergency response plan. Emergencies can either be internal to your workload, e.g. bugs in your application code, or be a result of an issue with a dependency of your workload, e.g. unavailability of an API or a database. An emergency could also be caused by an outage of your supplier, e.g. unavailability of Microsoft Entra ID or Power Platform. The support team must be able to determine whether an issue meets the emergency criteria, even if they have no visibility into the underlying issue.
 
 Precisely define communication and escalation plans. Based on the type of alert notification that they receive, ensure that your tier-1 support can easily contact the appropriate teams to escalate issues to. 
 
@@ -87,7 +87,7 @@ The first step in issue remediation is to identify the component of the workload
 
 ## Root Cause Analysis reporting
 
-The service-level agreements (SLAs) to your customers might dictate that you have to issue root cause analysis (RCA) reports within a certain time period after the incident is resolved. The incident owner or someone who worked closely with them should create the RCA reports. This strategy ensures an accurate accounting of the incident. Typically, organizations have a defined RCA template with guidelines about how information is presented and what kinds of information can or can't be shared. If you need to create your own template and guidelines, ensure that they are reviewed and approved by stakeholders.
+The incident owner or someone who worked closely with them should create the Root Cause Analysis (RCA) reports. This strategy ensures an accurate accounting of the incident. Typically, organizations have a defined RCA template with guidelines about how information is presented and what kinds of information can or can't be shared. If you need to create your own template and guidelines, ensure that they are reviewed and approved by stakeholders.
 
 ## Incident postmortems
 
@@ -105,10 +105,19 @@ As you define your support process and escalation path, it's important to [categ
 
 ## Power Platform facilitation
 
-Azure Application Insights and [Azure Monitor](/azure/azure-monitor/overview) is a comprehensive solution for collecting, analyzing, and responding to monitoring data from cloud and on-premises environments. It includes a robust alerting platform that you can configure for [automatic notifications and other actions](/azure/azure-monitor/alerts/action-groups), like automatic scaling and other self-healing mechanisms.
+[Application Insights](/azure/azure-monitor/app/app-insights-overview) is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem and Power Platform integrates with Application Insights:
+
+- You can receive telemetry on diagnostics and performance captured by the [Dataverse platform in Application Insights](/power-platform/admin/overview-integration-application-insights). You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
+- You can connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights). You can use these analytics to diagnose issues and understand what users actually do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps.
+- You can configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this to monitor cloud flow executions and create alerts for cloud flow run failures.
+
+Application Insights is a comprehensive solution for collecting, analyzing, and responding to monitoring data from cloud and on-premises environments. It includes a robust alerting platform that you can configure for [automatic notifications and other actions](/azure/azure-monitor/alerts/action-groups).
+
+The [Power Platform Automation Kit](/power-automate/guidance/automation-kit/overview/introduction) is set of tools that accelerates the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate money saved and return on investment (ROI). Part of the Automation Kit is the [Control Center](/power-automate/guidance/automation-kit/control-center-overview), which has been designed to complement the existing Monitor desktop flow runs. The key focus of the control center is an orchestrator view for support analysts and organizations to monitor, take action and alert if necessary.
 
 ## Related links
 
-- [Recommendations for designing and creating an observability framework](/azure/well-architected/operational-excellence/observability)
-- [Recommendations for designing a reliable monitoring and alerting strategy](/azure/well-architected/reliability/monitoring-alerting-strategy)
-- [User and maker support strategies - Microsoft Power Platform - Power Platform | Microsoft Learn](/power-platform/guidance/adoption/support-strategy)
+- [Recommendations for designing and creating an observability framework](observability.md)
+- [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy)
+- [User and maker support strategies - Microsoft Power Platform](/power-platform/guidance/adoption/support-strategy)
+- [Power Platform Automation Kit](/power-automate/guidance/automation-kit/overview/introduction)

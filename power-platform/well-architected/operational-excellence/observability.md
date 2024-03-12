@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
 
-|[OE:07](checklist.md)| Design and implement an observability platform to validate design choices and inform future design and business decisions. This platform captures and exposes operational telemetry, metrics, and logs that emit from the workload's infrastructure and code.|
+|[OE:06](checklist.md)| Design and implement a monitoring system to validate design choices and inform future design and business decisions. This system captures and exposes operational telemetry, metrics, and logs that emit from the workload. |
 |---|---|
 
 This guide describes the recommendations for designing and creating a monitoring system. To effectively monitor your workload for security, performance, and reliability, you need a comprehensive system with its own stack that provides the foundation for all monitoring, detection, and alerting functions.
@@ -38,7 +38,7 @@ To implement a comprehensive monitoring system design for your workload, follow 
 - Configure actionable alerts and other automatic responses to intelligently defined thresholds to notify workload teams when issues arise.
 - Include monitoring and alerting systems in your overall workload testing practices.
 - Ensure that monitoring and alerting systems are in scope for continuous improvement. Application and configuration behavior in production provides continuous learning opportunities. Incorporate those lessons into monitoring and alerting designs.
-- Tie the monitoring data that you gather and analyze back to your [system and user flows](/azure/well-architected/reliability/identify-flows) to correlate the health of the flows with the data in addition to the overall health of the workload. Analyzing that data in terms of the flows will help align your observability strategy with your [health model](/azure/well-architected/reliability/metrics).
+- Tie the monitoring data that you gather and analyze back to your [system and user flows](../reliability/identify-flows) to correlate the health of the flows with the data in addition to the overall health of the workload. Analyzing that data in terms of the flows will help align your observability strategy with your [health model](../reliability/metrics).
 - To ensure that you comply with laws and regulations, minimize the storage of any identifiable information. If you do need to store identifiable information, be sure, when you design your solution, to take into account requirements that allow individuals to request that their information be deleted.
 - Regulatory requirements might dictate that information collected for auditing and security needs to be archived and saved. This data is also sensitive and might need to be encrypted or otherwise protected to prevent tampering. You should never record user passwords or other information that might be used to commit identity fraud. You should scrub these details from the data before it's stored.
 
@@ -54,11 +54,11 @@ You should configure all workload components, whether they're low-code or code-f
 
 Logs are primarily useful for detecting and investigating anomalies. Typically, logs are produced by the workload component and then sent to the monitoring platform or pulled by the monitoring platform via automation.
 
-Metrics are primarily useful for building a health model and identifying trends in workload performance and reliability. Metrics are also useful for identifying trends in the usage behavior of your users. These trends can help guide decisions about improvements from the customer perspective. Typically, metrics are defined in the monitoring platform, and the monitoring platform and other tools poll the workload to capture metrics.
+Metrics are primarily useful for [building a health model](../reliability/metrics) and identifying trends in workload performance and reliability. Metrics are also useful for identifying trends in the usage behavior of your users. These trends can help guide decisions about improvements from the customer perspective. Typically, metrics are defined in the monitoring platform, and the monitoring platform and other tools poll the workload to capture metrics.
 
-#### Application data
+#### Workload data
 
-For applications, use the out of the box [integration with Application Insights](/power-platform/admin/overview-integration-application-insights?source=recommendations) to collect data. After Application Insights is enabled, you can get clear visibility into important events, both in real time and historically.
+Use the out of the box [integration with Application Insights](/power-platform/admin/overview-integration-application-insights?source=recommendations) to collect data. After Application Insights is enabled, you can get clear visibility into important events, both in real time and historically.
 
 Application logs support the end-to-end application lifecycle. Logging is essential to understanding how the application operates in various environments, which events occur, and the conditions under which they occur.
 
@@ -111,7 +111,8 @@ For a dashboard system to work effectively, it must be meaningful to the workloa
 
 You might have dashboards for stakeholders or developers that are customized to only show data about the workload that they find relevant. Ensure that the workload team understands the types of data points that other teams are interested in seeing and previews the dashboards before sharing them to check for clarity. Providing dashboards about your workload for stakeholders is a good way to keep them apprised of the workload health, but carries a risk of being counterproductive if the stakeholders don't clearly understand the data they see.
 
->![NOTE] Restrict dashboard access to authorized personnel. Information on dashboards might be sensitive. You should also protect the underlying data to prevent users from changing it.
+> [!NOTE]
+> Restrict dashboard access to authorized personnel. Information on dashboards might be sensitive. You should also protect the underlying data to prevent users from changing it.
 
 #### Reporting
 
@@ -133,18 +134,18 @@ Security reporting tracks customer use of the system. It can include:
 
 To help ensure that the system remains healthy, responsive, and secure, set alerts so that operators can respond to them in a timely manner. An alert can contain enough contextual information to help them quickly get started on diagnostic activities.
 
-#### Recommendations
+### Recommendations
 
 - Define a process for alert response that identifies the accountable owners and actions.
 - Configure alerts for a well-defined scope and adjust the verbosity to minimize noise.
 - Use an automated alerting solution, like Splunk or Azure Monitor, instead of requiring people to actively look for issues.
 - Use alerts to operationalize remediation processes. For example, automatically create tickets to track issues and resolutions.
 
-#### Thresholds
+### Thresholds
 
 Alerts are generated when thresholds are crossed, as detected by your monitoring system. Ensure that the thresholds you set generally give you enough time to implement the necessary changes to your workload to avoid degradation or outages. You should also implement necessary error handling and catch known errors in your workload to reduce the number of alerts. For example, you should configure retry policies for your actions in cloud flows so a retry is attempted as part of the flow run – and only if repeated retries fail an flow failure is recorded and an alert is sent.
 
-For detailed guidance on alerting use cases and other considerations, see Designing a reliable monitoring and alerting strategy.
+For detailed guidance on alerting use cases and other considerations, see [Designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md).
 
 ## **Power Platform facilitation**
 
@@ -161,11 +162,10 @@ For detailed guidance on alerting use cases and other considerations, see Design
   - [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 - Your Power Platform workload may include Azure resources, learn more about monitoring recommendations for Azure resources: [Recommendations for designing and creating a monitoring system - Microsoft Azure Well-Architected Framework | Microsoft Learn](/azure/well-architected/operational-excellence/observability)
-- CoE Starter Kit
+- [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) is a reference implementation that contains a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform. Part of the CoE Starter Kit is a rich [set of dashboards](/power-platform/guidance/coe/power-bi) that can help you get further insights into your adoption and usage of Power Platform.
+- [Power Platform Automation Kit](/power-automate/guidance/automation-kit/overview/introduction) is set of tools that accelerates the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate money saved and return on investment (ROI). Part of the Automation Kit is the [Control Center](/power-automate/guidance/automation-kit/control-center-overview), which has been designed to complement the existing Monitor desktop flow runs. The key focus of the control center is an orchestrator view for support analysts and organizations to monitor, take action and alert if necessary.
 
 ## **Related links**
 
-- [Instrumentation guide](/azure/well-architected/devops/monitor-instrument)
-- [Recommendations for designing a reliable monitoring and alerting strategy](/azure/well-architected/reliability/monitoring-alerting-strategy)
-- [Recommendations for monitoring and threat detection](/azure/well-architected/security/monitor-threats)
-- [Recommendations for collecting performance data](/azure/well-architected/performance-efficiency/collect-performance-data)
+- [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy)
+- [Recommendations for monitoring and threat detection](../security/monitor-threats)

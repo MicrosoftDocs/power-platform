@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Well-Architected Framework Operational Excellence checklist recommendation:**
 
-|[OE:09](checklist.md)| Automate all tasks that do not benefit from the insight and adaptability of human intervention, are highly procedural, and have a shelf-life that will yield a return on the automation investment. Prefer off-the-shelf software for automation vs custom implementations where available. Treat all automation as workload components, applying Well-Architected pillars to their design and implementation. |
+|[OE:08](checklist.md)| Automate all tasks that do not benefit from the insight and adaptability of human intervention, are highly procedural, and have a shelf-life that will yield a return on the automation investment. Prefer off-the-shelf software for automation vs custom implementations where available. Treat all automation as workload components, applying Well-Architected pillars to their design and implementation. |
 |---|---|
 
 This guide describes the recommendations for adopting automation in your workload. You can automate tasks that are repetitive and prone to human error to help your teams gain efficiency and adhere to standards. Automation enables your operations and engineering teams to be more efficient because it gives them more time to work on other improvements. Automation is a powerful tool in all aspects of workload management. Thoughtfully implement automation to empower your organization.
@@ -71,6 +71,10 @@ Power Automate Approvals (out of the box) or the Approvals Kit (custom solution)
 Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related to apps built on Microsoft Power Platform.
 
 The ALM Accelerator is a set of applications, scripts and pipelines designed to automate the continuous integration/continuous delivery process. The toolkit uses Power Platform and Azure DevOps to deliver an end-to-end ALM experience for both low-code and professional developers.
+
+[Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) is a reference implementation that contains a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform. Part of the CoE Starter Kit is a rich set of processes that automate your admin and governance tasks, such as identifying ownerless and highly used applications.
+
+You may have a need to have to orchestrate and automate routine activities for their tenant that are custom to your organization. Several programmability tools are available for administrators for this purpose - you can use connectors, CLI, PowerShell cmdlets and APIs to implement your own automation. For more information, see [Available tools for programmability and extensibility](/power-platform/admin/programmability-extensibility-overview#available-tools).
 
 ## Example
 

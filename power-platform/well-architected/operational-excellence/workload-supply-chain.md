@@ -25,7 +25,7 @@ Incorporate a supply chain to protect your workload from damage that can occur w
 
 The following recommendations can help you define the core tenets of your supply chain.
 
-**Make proposed workload changes through supply chain processes and tools.** Enforce a strict policy of automated template-based deployments. This method helps ensure that your workload's configuration across all environments is standardized, well-defined, and tightly controlled. For environments in a code promotion chain, don't perform updates by using manual processes or human interaction Incorporate all changes to the environment through a pipeline by following deployment practices that you define. To help enforce this policy, consider limiting access to read-only as a default and using an access authorization gate to allow write access.
+**Make proposed workload changes through supply chain processes and tools.** Enforce a strict policy of automated template-based deployments. This method helps ensure that your workload's configuration across all environments is standardized, well-defined, and tightly controlled. For environments in a code promotion chain, don't perform updates by using manual processes or human interaction. Incorporate all changes to the environment through a pipeline by following deployment practices that you define. To help enforce this policy, consider limiting access to read-only as a default and using an access authorization gate to allow write access.
 
 An important aspect of this tenet is that all changes are _proposed_ _changes_ until they're deployed into production. Through automated testing, like integration and smoke testing, you enable your supply chain to automatically reject changes.
 
@@ -81,6 +81,5 @@ TODO
 - [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator)
 - [Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
 - [Microsoft Power Platform CLI](/power-platform/developer/cli/introduction)
-- Performance Efficiency pillar
-- Reliability pillar
-- Security pillar
+- [Reliability pillar](../reliability/checklist.md)
+- [Security pillar](../security/checklist.md)

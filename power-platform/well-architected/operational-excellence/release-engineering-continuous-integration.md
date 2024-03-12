@@ -41,13 +41,13 @@ Continuous integration can help you deliver high-quality software more quickly b
 
 ## Environments
 
-Environment setup and configuration are critical to sustainable and reliable CI/CD. Power Platform environments can be set up to isolate different stages of solution development, testing, and deployment. The CI/CD process moves changes through those stages. You will have to establish an [environment strategy](/power-apps/guidance/co-develop/governance), and come up with guiding principles for developer environments. 
+Environment setup and configuration are critical to sustainable and reliable CI/CD. Power Platform environments can be set up to isolate different stages of solution development, testing, and deployment. The CI/CD process moves changes through those stages. You will have to establish an [environment strategy](/power-apps/guidance/co-develop/governance), and come up with guiding principles for developer environments.
 
 ## Continuous integration
 
 To achieve continuous integration, use tools to manage, integrate, and automate the process. 
 
-A continuous integration pipeline involves a piece of software (often cloud hosted) that provides:
+A continuous integration pipeline provides:
 
 - A platform for running automated tests.
 - Compliance scans.
@@ -57,6 +57,8 @@ A continuous integration pipeline involves a piece of software (often cloud host
 In most cases, the pipeline software is attached to source control such that when pull requests are created or software is merged into a specific branch, the continuous integration pipeline is run. Source control integration also provides the opportunity to give CI feedback directly on pull requests.
 
 Many solutions, like Azure Pipelines or GitHub Actions, provide the capabilities of continuous integration pipelines.
+
+For more information, see [Build CI/CD with Azure for Microsoft Power Platform](/azure/architecture/solution-ideas/articles/azure-devops-continuous-integration-for-power-platform)
 
 ## Source control integration
 
@@ -74,6 +76,8 @@ The following image shows the integration between GitHub and an Azure DevOps pip
 
 A key element of continuous integration is the continual building and testing of code as developers make code contributions. Testing pull requests as they're created gives quick feedback that the commit hasn't introduced breaking changes. The advantage is that the tests in the continuous integration pipeline can be the same tests that run during test-driven development.
 
+![Example diagram of continuous integration.](media/release-engineering-continuous-integration/devops-ci.png)
+
 ## Quality Checks for Custom Code
 
 When including custom code in your solutions, can code quality checks to a validation pipeline to ensure clean custom code is being committed to source control. Regardless of the coding language and syntax patterns you're using, there are multiple options for maintaining code quality and increasing security and governance.
@@ -85,7 +89,7 @@ Failed tests should temporarily block a deployment and lead to a deeper analysis
 ## Power Platform facilitation
 
 - [Pipelines in Power Platform](/power-platform/alm/pipelines) aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.
-- [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools) can be used to automate common build and deployment tasks related to apps built on Microsoft Power Platform. 
+- [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools) can be used to automate common build and deployment tasks related to apps built on Microsoft Power Platform.
 - [GitHub Actions for Power Platform](/power-platform/alm/devops-github-actions) enable developers to build automated software development lifecycle workflows. With [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions), you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Microsoft Power Platform.
 - [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is an open source tool that consists of a set of applications, scripts and pipelines designed to automate the continuous integration/continuous delivery process.
 - [Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
@@ -96,15 +100,11 @@ Failed tests should temporarily block a deployment and lead to a deeper analysis
 
 Learn how to create a continuous integration pipeline:
 
-- [Pipelines in Power Platform](/power-platform/alm/pipelines) 
-- [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools) 
-- [GitHub Actions for Power Platform](/power-platform/alm/devops-github-actions) 
-- CI/CD for Microsoft Power Platform - Azure Architecture Center | Microsoft Learn 
-- </power-platform/alm/>
-- Continuous Integration / Continuous Delivery (CI/CD) - Microsoft Solutions Playbook 
-- </power-platform/admin/environments-overview>
-- [Establishing an environment strategy - Microsoft Power Platform - Power Platform | Microsoft Learn](/power-platform/guidance/adoption/environment-strategy)
-- [Co-development governance - Power Apps | Microsoft Learn](/power-apps/guidance/co-develop/governance)
-- [Use scenarios to implement healthy ALM with Microsoft Power Apps - Power Platform | Microsoft Learn](/power-platform/alm/implement-healthy-alm)
+- [Continuous Integration and Continuous Delivery (CI/CD) for Power Platform](https://playbook.microsoft.com/code-with-fusionops/FusionOps-for-Power-Platform/DevSecOps/CI-CD/)
+- [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/)
+- [CI/CD for Microsoft Power Platform](/azure/architecture/solution-ideas/articles/azure-devops-continuous-integration-for-power-platform)
+- [Power Platform environments](/power-platform/admin/environments-overview)
+- [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
+- [Co-development governance](/power-apps/guidance/co-develop/governance)
+- [Use scenarios to implement healthy ALM with Microsoft Power Apps](/power-platform/alm/implement-healthy-alm)
 - [Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
-- [Power Apps checker Web API](/power-platform/alm/checker-api/overview) provides a mechanism to run static analysis checks against customizations and extensions to the Microsoft Dataverse platform.
