@@ -74,6 +74,8 @@ The ALM Accelerator is a set of applications, scripts and pipelines designed to 
 
 [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) is a reference implementation that contains a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform. Part of the CoE Starter Kit is a rich set of processes that automate your admin and governance tasks, such as identifying ownerless and highly used applications.
 
+You may have a need to have to orchestrate and automate routine activities for their tenant that are custom to your organization. Several programmability tools are available for administrators for this purpose - you can use connectors, CLI, PowerShell cmdlets and APIs to implement your own automation. For more information, see [Available tools for programmability and extensibility](/power-platform/admin/programmability-extensibility-overview#available-tools).
+
 ## Example
 
 TODO

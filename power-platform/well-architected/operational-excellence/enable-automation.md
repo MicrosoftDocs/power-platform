@@ -72,6 +72,19 @@ When deciding between orchestration or policy tools, consider whether the config
 
 ## Power Platform facilitation
 
+### Policy management
+
+#### Environment groups
+
+Environment groups are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location.
+Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets.
+
+For more information see, [Environment groups](/power-platform/admin/environment-groups)
+
+#### Programmability and extensibility
+
+You may have a need to have to orchestrate and automate routine activities for their tenant that are custom to your organization. Several programmability tools are available for administrators for this purpose - you can use connectors, CLI, PowerShell cmdlets and APIs to implement your own automation. For more information, see [Available tools for programmability and extensibility](/power-platform/admin/programmability-extensibility-overview#available-tools).
+
 ### Design variability into your workload
 
 Environment Variables store the parameter keys and values, which then serve as input to various other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments. For more information, see [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables).
