@@ -22,8 +22,8 @@ This guide describes the recommendations for principles and techniques used to d
 
 | Term | Definition |
 |---|---|
-| Device class | A categorization of devices based on their characteristics such as screen size, resolution, and capabilities. Common device classes include desktop computers, laptops, tablets, smartphones, and wearables. |
-| Breakpoints | Breakpoints are the building blocks of responsive design. They determine how responsive layouts behave across device classes. Breakpoints also represent a subset of common device dimensions. |
+| Viewports |  Visible portion of a user interface within a digital interface, such as a web browser or mobile app, where content is displayed, and can vary in size depending on device screen dimensions and resolution. |
+| Breakpoints | Specific pixel values that define viewport ranges and associated app layout behavior, used to implement adaptive and responsive interfaces. |
 
 ## Key design strategies
 
@@ -31,9 +31,13 @@ Responsive layouts ensure an efficient, adaptable user experience across various
 
 ### Determine a consistent app frame
 
-The app frame is made from a set of controls that are available on every screen in a consistent manner. It orients the user by providing clear location, helping ensure they are in the right app, and by providing a clear way to navigate throught the app.
+The app frame is made from a set of controls that are available on every screen in a consistent manner. It's made up of three subcomponents: a header, navigation, and main content area. Simple apps have the flexibility to use the header component while more sophisticated apps can leverage side nav to enable depth of navigation. Subcomponents are also customizable. For example, using global search in header, or nav group items in side nav are optional and can be tailored to the needs of your app.
 
-It consists of a header, navigation, and a content area.
+The header is a core component designed to be a part of every internal application. It consists of a variety of sub-components that give people access to system-wide functions, helps orient them to the UI, and provides consistency across experiences. It appears across the top of the app frame and should persists across all pages of the app. It can optionally host global commands, like search, settings, notifications, feedback, profile, or help. The name of the app should always be displayed, which should ideally also serve as a clickable link to the home or landing page. 
+
+The header should be responsive. Header commands in viewports 639 pixels and below move into the overflow control. The search input width is also responsive at 1023 pixels and below.
+
+Providing a clear way to navigate throught the app helps users become familiar with the layout and functionality. Adhering to a consistent design language (color schemes, typography, and layout structure), helps users quickly identify and interact with various elements without confusion.
 
 Once the app frame is determined, each screen's layout will reside within the content area of the app frame.
 
