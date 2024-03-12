@@ -35,13 +35,11 @@ The app frame is made from a set of controls that are available on every screen 
 
 The _header_ is a core component designed to be a part of every internal application. It consists of a variety of sub-components that give people access to system-wide functions, helps orient them to the UI, and provides consistency across experiences. It appears across the top of the app frame and should persists across all pages of the app. It can optionally host global commands, like search, settings, notifications, feedback, profile, or help. The name of the app should always be displayed, which should ideally also serve as a clickable link to the home or landing page. The header should be responsive - commands in viewports 600 pixels and below should move into the overflow control. The search input width is also responsive at 1023 pixels and below.
 
-Providing a clear way to navigate throught the app helps users become familiar with the layout and functionality. It helps people jump from section to section of an app.
-
-The most common forms of navigation include top navigation and side navigation. The app should not use both top and side navigation simultaneously.
+Providing a clear way to navigate throught the app helps users become familiar with the layout and functionality. It helps people jump from section to section of an app. The most common forms of navigation include top navigation and side navigation. The app should not use both top and side navigation simultaneously.
 - _Top navigation_ provides links to the main areas of an application or a site. The top nav is always on-screen and can perform as a light version of a side (left) navigation. Top navigation is ideal for apps with screens with 5 pages or less. Common standards include having the default active page as the first menu item, navigation has two to five items (can include groups), and does not use both breadcrumb and top navigation simultaneously.
 - The primary navigation for larger business applications is often a _side_ or _left navigation_. Hierarchically, it exists above all other content. It's always present, and may be minimized to a collapsed state (also called a rail state) to free up additional space for page content. At smaller window sizes, it minimizes into a flyout menu. Common standards for side navigation include having the default page as the app's landing page, and using icons for all navigation items (except nested items).
 
-Adhering to a consistent design language (color schemes, typography, and layout structure), helps users quickly identify and interact with various elements without confusion.
+Adhering to a consistent design language (color schemes, typography, and layout structure), helps users quickly identify and interact with various elements without confusion. This recall becomes increasingly powerful the more a consistent app frame pattern is established and used throughout all internal business applications, and aligning to industry standards or patterns in common platforms further enhances that effect.
 
 Once the app frame is determined, each screen's layout will reside within the content area of the app frame.
 
