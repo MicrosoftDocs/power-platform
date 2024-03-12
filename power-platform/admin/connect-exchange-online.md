@@ -306,6 +306,10 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
 
 #### Approve mailboxes
 
+You can use Manual or Programmatic processses to approve a mailbox.
+
+  **Manual approval**
+
 1. Do one of the following: 
 
    - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
@@ -317,8 +321,12 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
   
 4. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
   
-5. Select **OK**.  
+5. Select **OK**.
 
+  **Programmatic approval**
+  
+Email addresses cannot be approved using plugins or workflows. External applications can programmatically invoke email address approval by passing the “emailrouteraccessapproval” attribute in the SDK request if the row is not already approved and if the caller is authorized per the above requirements. If the request includes additional attributes, the row’s email address may not be approved.
+   
 ### Remove the requirement to approve mailboxes
 
 Admins, as described in the preceding permissions model table, can change the settings so that mailbox approval isn't required.
