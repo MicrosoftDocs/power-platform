@@ -4,7 +4,7 @@ description: Learn how to enable data movement across regions for copilots and g
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/13/2024
+ms.date: 03/12/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
@@ -87,7 +87,7 @@ More copilots and generative AI features will be available in the future.
 | Power Apps | Describe a new table | No | [Describe the new table](/power-apps/maker/data-platform/create-edit-entities-portal#describe-the-new-table) |
 | Power Apps | Draft with Copilot | No | [Draft with Copilot](/power-apps/user/well-written-input-text-copilot) |
 | Power Automate | Power Automate designer copilot | No | [Get started with Copilot in cloud flows (preview)](/power-automate/get-started-with-copilot) |
-| Power Pages | Copilot | | [Overview of AI-powered and Copilot features in Power Pages (preview)](/power-pages/configure/ai-copilot-overview) |
+| Power Pages | Copilot | Yes | [Overview of AI-powered and Copilot features in Power Pages (preview)](/power-pages/configure/ai-copilot-overview) |
 
 ## Copilot data movement across geographies for Dynamics 365
 
