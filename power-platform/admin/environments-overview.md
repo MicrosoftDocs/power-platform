@@ -1,14 +1,16 @@
 ---
 title: Environments overview | Microsoft Docs
 description: Learn about Power Platform environments and how to use them.
-author: Mattp123
+author: sericks007
 ms.topic: overview
-ms.date: 01/30/2023
-ms.reviewer: angieandrews
+ms.date: 03/12/2024
+ms.reviewer: sericks
 ms.subservice: admin
-ms.author: matp
+ms.author: sericks
 contributors:
   - marcelbf
+ms.contributors:
+- iyanni
 ---
 # Environments overview
 
