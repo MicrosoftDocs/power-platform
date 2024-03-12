@@ -39,8 +39,7 @@ This unit test task must be included after the optional build and deploy tasks.
 
 In this next figure, the "Execute Unit Tests in Unified Environment" task is included in en example build pipeline.
 
-[Image:Build and deploy pipeline containing a unit test task]
-<!-- :::image type="content" source="" alt-text="Build and deploy pipeline containing a unit test task."::: -->
+:::image type="content" source="..\media\unified-experience\devexp-unitTest-pipeline.png" alt-text="Build and deploy pipeline containing a unit test task.":::
 
 The output logs of the task contains information of each test executed and its output. The task fails if any of the tests that are run fail.
 
@@ -48,8 +47,7 @@ The output logs of the task contains information of each test executed and its o
 
 In this next image is an example unit test being defined. A description of each form field follows.
 
-[Image:Unit test task form with example data]
-<!-- :::image type="content" source="" alt-text="Unit test task form with example data."::: -->
+:::image type="content" source="..\media\unified-experience\devexp-unitTest-task.png" alt-text="Unit test task form with example data.":::
 
 :::row:::
    :::column span="1":::
