@@ -4,7 +4,7 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 2/27/2024
+ms.date: 3/12/2024
 ms.subservice: admin
 ms.author: mbajwa
 ms.reviewer: sericks
@@ -15,6 +15,7 @@ search.audienceType:
   - admin 
 contributors:
   - marcelbf
+  - iyanni
 ---
 
 # Create and manage environments in the Power Platform admin center
