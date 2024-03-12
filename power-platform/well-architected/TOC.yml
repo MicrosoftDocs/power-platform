@@ -111,20 +111,6 @@
               href: operational-excellence/safe-deployments.md
             - name: OE:12 Failure mitigation
               href: operational-excellence/mitigation-strategy.md
-      - name: Performance Efficiency
-        items:
-        - name: Quick links
-          href: ./performance-efficiency/index.yml
-        - name: Design principles
-          href: ./performance-efficiency/principles.md
-        - name: Checklist
-          href: ./performance-efficiency/checklist.md
-        - name: Tradeoffs
-          href: ./performance-efficiency/tradeoffs.md
-        - name: Recommendations   
-          items:
-            - name: Performance efficiency patterns
-              href: ./performance-efficiency/design-patterns.md
       - name: Experience Optimization
         items:
         - name: Quick links
