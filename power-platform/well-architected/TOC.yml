@@ -29,6 +29,8 @@
               href: reliability/identify-flows.md
             - name: RE:03 Failure mode analysis
               href: reliability/failure-mode-analysis.md
+            - name: RE:04 Target metrics
+              href: reliability/metrics.md
             - name: RE:07 Background jobs
               href: reliability/background-jobs.md
             - name: RE:07 Transient faults 
