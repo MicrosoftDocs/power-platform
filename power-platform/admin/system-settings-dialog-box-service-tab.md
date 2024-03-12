@@ -33,8 +33,7 @@ Use this tab to set preferences for the customer service area, such as service l
 4. Select the **System Settings** > **Service** tab.  
   
 > [!NOTE]
-> With the version 9.1 release, service configuration settings in service management are available in the Customer Service Hub based on the Unified Interface experience. You are recommended to manage service configuration settings using the new experience. </br>
-> In the Customer Service Hub app, go to **Service Management** and select **Service Terms** > **Service Configuration Settings** in the sitemap to access the Service configuration settings. 
+> In the Customer Service Admin Center app, select **Service Teams** > **Other SLA Settings** in the sitemap to access the Service configuration settings. 
   
 | Settings |Description|
 |-------------------------|--------------------------|
