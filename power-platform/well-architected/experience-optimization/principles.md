@@ -15,10 +15,10 @@ The **design principles** are intended to provide guidance for aspects of Experi
 
 ## Design for the user
 
-|![Goal icon](../_images/goal.svg) Put the user at the center and understand their behaviors, needs, and preferences.  |
+|![Goal icon](../_images/goal.svg) Put the user at the center of your workload experience design.  |
 |--|
 
-Description of principle.
+Deeply understand the needs, experiences, expected outcomes, and desires of the users of your workload, and tailor the design of the workload to the users' specific requirements.
 
 |Approach|Benefit|
 |-|-|
