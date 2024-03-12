@@ -47,6 +47,18 @@ Other elements include:
 
 **[And](reference/function-logicals.md)** – Boolean logic AND. Returns **true** if all arguments are **true**. You can also use the [**&&** operator](reference/operators.md).
 
+**[AIClassify](reference/function-ai.md)** – Classifies text into one or more of categories.
+
+**[AIExtract](reference/function-ai.md)** – Extracts specified entities such as registration numbers, phone numbers, or names of people.
+
+**[AIReply](reference/function-ai.md)** – Drafts a reply to the message that you provide.
+
+**[AISentiment](reference/function-ai.md)** – Detects the sentiment of the text that you provide.
+
+**[AISummarize](reference/function-ai.md)** – Summarizes the text that you provide.
+
+**[AITranslate](reference/function-ai.md)** – Translates text from another language.
+
 **[App](reference/object-app.md)** – Provides information about the currently running app and control over the app's behavior.
 
 **[Asin](reference/function-trig.md)** – Returns the arcsine of a number, in radians.
