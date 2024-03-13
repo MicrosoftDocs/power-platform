@@ -33,13 +33,15 @@ Responsive layouts ensure an efficient, adaptable user experience across various
 
 The app frame is made from a set of controls that are available on every screen in a consistent manner. It's composed of three main subcomponents; a header, navigation, and a content region. Simple apps have the flexibility to use the header component while more sophisticated apps commonly leverage side navigation to enable many pages. Subcomponents are also customizable, meaning, for example, using global search in header, or grouping items in the side navigation can optionally be tailored to the needs of your app.
 
-The _header_ is a core component designed to be a part of every internal application. It consists of a variety of sub-components that give people access to system-wide functions, helps orient them to the UI, and provides consistency across experiences. It appears across the top of the app frame and should persists across all pages of the app. It can optionally host global commands, like search, settings, notifications, feedback, profile, or help. The name of the app should always be displayed, which should ideally also serve as a clickable link to the home or landing page. The header should be responsive - commands in viewports 600 pixels and below should move into the overflow control. The search input width is also responsive at 1023 pixels and below.
+![App frame is made of three main subcomponents](./media/layout/appframe.svg)
 
-_Navigation_ is a system of controls that work together to help users find information and complete tasks. It helps people jump from section to section of an application. Hierarchically, it's not attached to any page or section, but exists above all other content. It's always present, and may be minimized to a collapsed state (also called a rail state) to free up additional space for page content. At smaller window sizes, it can be minimized into a flyout menu. The most common forms of navigation include top navigation and side navigation (both should not be used simultaneously).
+1. The _header_ is a core component designed to be a part of every internal application. It consists of a variety of sub-components that give people access to system-wide functions, helps orient them to the UI, and provides consistency across experiences. It appears across the top of the app frame and should persists across all pages of the app. It can optionally host global commands, like search, settings, notifications, feedback, profile, or help. The name of the app should always be displayed, which should ideally also serve as a clickable link to the home or landing page. The header should be responsive - commands in viewports 600 pixels and below should move into the overflow control. The search input width is also responsive at 1023 pixels and below.
 
-The _content region_ contains the focus of the screen. Changing the size of the browser window affects the content frame and area available in the main content region. This frame adjusts according to breakpoint and the associated responsive story for each component. This is discussed further in the breakpoint matrix section below. 
+2. _Navigation_ is a system of controls that work together to help users find information and complete tasks. It helps people jump from section to section of an application. Hierarchically, it's not attached to any page or section, but exists above all other content. It's always present, and may be minimized to a collapsed state (also called a rail state) to free up additional space for page content. At smaller window sizes, it can be minimized into a flyout menu. The most common forms of navigation include top navigation and side navigation (both should not be used simultaneously).
 
-The content region can optionally contain several sub-regions that are available for consistent element placement, such as a page header, inline side panes, or panels that overlay the content.
+3. The _content region_ contains the focus of the screen. Changing the size of the browser window affects the content frame and area available in the main content region. This frame adjusts according to breakpoint and the associated responsive story for each component. This is discussed further in the breakpoint matrix section below. 
+
+    The content region can optionally contain several sub-regions that are available for consistent element placement, such as a page header, inline side panes, or panels that overlay the content.
 
 Adhering to a consistent design language (color schemes, typography, and layout structure), helps users quickly identify and interact with various elements without confusion. This recall becomes increasingly powerful the more a consistent app frame pattern is established and used throughout all internal business applications, and aligning to industry standards or patterns in common platforms further enhances that effect.
 
@@ -105,7 +107,9 @@ An _adaptive layout_ is one that changes entirely based on the format it’s pre
 
 #### Reposition
 
-Alter the position of page elements. 
+Alter the position of page elements.
+
+![Elements stacked vertically in smaller viewports are repositioned as horizontal elements in larger viewports](./media/layout/reposition.svg)
 
 Keep your content organized, readable, and balanced by optimizing the composition as window size increases. For example, vertically stacked elements on a mobile viewport can be repositioned horizontally on larger viewports to follow a natural left to right reading order, create balance in the design, and retain visual focus on important page elements.
 
@@ -113,11 +117,15 @@ Keep your content organized, readable, and balanced by optimizing the compositio
 
 Adjust the size and margins of page elements
 
+![Margins decrease in smaller viewports and increase in larger viewports](./media/layout/resize.svg)
+
 Resize page elements to optimize for a rich user experience by displaying more content at the top of the window and reduce vertical scrolling. Adjust page margins to add white space and balance to the composition. This allows the content to breathe resulting in a more visually appealing design. For example, a hero component can stretch to the full width of the window to show more of the background image. Content underneath the photo can also stretch to show more but uses different margins to add variety in the composition and helps to define visual hierarchy.
 
 #### Reflow
 
 Optimize the flow of page elements.
+
+![Elements are usually stacked in small viewports, but can selectively be horizontal in larger viewports](./media/layout/reflow.svg)
 
 Reflow optimizes page elements so they can be fully rendered considering the window size and its orientation by rearranging the content. For example, a single column of content in a smaller window can be reflowed on a larger window to display two columns of text. This allows more content to be displayed "above the fold".
 
@@ -125,11 +133,15 @@ Reflow optimizes page elements so they can be fully rendered considering the win
 
 Optimize content for the window size and its orientation.
 
+![Smaller viewports focus on including critical details while larger viewports can include optional information that adds to aesthetics for the layout](./media/layout/show-hide.svg)
+
 Show or hide page elements to optimize content for the window size and its orientation. This responsive technique gives users the right amount of information and optimal user experience based on how they are viewing it. For example, categories appearing on a small screen show limited meta data like an image, title, and link so more of them can be seen and help the user focus. On a larger screen, categories can show additional meta data like a persona, date, and short description and can still be seen in the view port.
 
 #### Re-architect
 
 Fork or collapse page elements and content to retain focus on important info and actions.
+
+![Certain elements can change form or location to optimize the viewport size](./media/layout/rearchitect.svg)
 
 This is similar to following the practice of “progressive disclosure” in your design but for different window sizes and orientation. In this example, expanding the window allows a list of items to be displayed next to the details which helps to visually link the content and let the user easily choose another item. On the smaller screen, focus remains on displaying key info.
 
