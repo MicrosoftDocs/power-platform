@@ -47,6 +47,8 @@ More information:
 
 [Kerberos constrained delegation (KCD)](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) provides secure user or service access to resources permitted by administrators without multiple requests for credentials. Configure Kerberos constrained delegation for Windows and Microsoft Entra ID authentication.
 
+:::image type="content" source="media/configure-authentication/opdg-connect.png" alt-text="Traffic flow diagram of the on-premises data gateway.":::
+
 Run the gateway Windows service as a domain account with Service Principal Names (SPNs) (SetSPN).
 
 Configuration tasks:

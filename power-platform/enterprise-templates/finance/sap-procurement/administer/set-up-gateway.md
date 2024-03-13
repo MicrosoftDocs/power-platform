@@ -27,7 +27,7 @@ An [on-premises data gateway](/power-platform/admin/wp-onpremises-gateway) acts 
 
 The on-premises data gateway installation encompasses multiple components installed on the same domain as the Windows Virtual Machine (VM).
 
-:::image type="content" source="media/set-up-gateway/opdg-connect.png" alt-text="Traffic flow diagram of the on-premises data gateway.":::
+:::image type="content" source="media/set-up-gateway/opdg-connection.jpeg" alt-text="Diagram of the on-premises data gateway.":::
 
 > [!NOTE]
 >
