@@ -97,8 +97,6 @@ When you trial Microsoft Copilot Studio, you can create trial environments that 
 
 If you've created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Microsoft Copilot Studio portal, you'll also see a notification if you have copilots created in a trial environment that is going to expire in less than two weeks.
 
-:::image type="content" source="media/environments-first-run-experience/ennvironemnt_expiration_notification.png" alt-text="Environment expiration notification.":::
-
 > [!IMPORTANT]
 > There's a difference between an expiring environment and an expiring license. If your license is expiring, you can [extend it without losing any data](sign-up-individual.md#trial-expiration).
 
