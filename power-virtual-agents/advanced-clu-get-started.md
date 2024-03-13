@@ -1,7 +1,7 @@
 ---
 title: Get started with conversational language understanding integration
 description: Create copilots that use Azure conversational language understanding in Microsoft Copilot Studio.
-ms.date: 21/2/2024
+ms.date: 3/13/2024
 ms.topic: article
 author: iaanw
 ms.author: iawilt
