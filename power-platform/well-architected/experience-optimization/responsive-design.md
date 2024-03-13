@@ -67,15 +67,18 @@ An underlying grid can be useful for arranging elements consistently. The chosen
 
 Utilize commonly recognized structures and arrangements for organizing content and elements within a user interface. These layouts and patterns have been refined and proven effective over time, making them familiar and intuitive to users while also making it easy to implement adaptive patterns. Once core scenarios and elements are identified, map each to an established layout that provides the best interaction. Prioritize content and features important for task completion. Determine which elements should be visible and accessible on the screen at all times and which can be hidden or accessed through secondary menus or interactions.
 
-The following includes a non-exhaustive list of established layouts commonly used for business applications.
+The following includes a non-exhaustive list of established layouts commonly used for business or productivity applications. These can all occur in the main content region.
 
-- Landing / home screen
-- Dashboard
-- Form
-- Entity / profile view
-- List page
-- Mini review
-- Wizard
+- _Landing / Home screen._ Description: Serves as the entry point to an application, providing users with an overview of its offerings or features. It's ideal for welcoming users, offering quick access to key functionalities, navigation options, or calls to action, and setting the tone for the app's experience. Prioritize clarity, simplicity, and intuitive navigation to guide users effectively.
+- _Dashboard._ A centralized hub within an application that presents users with a comprehensive overview of relevant data or information. It often consists of customizable widgets or modules, allowing users to monitor specific metrics or perform actions. Dashboards are suited for applications with complex datasets or multifaceted functionalities, enabling users to track progress, analyze trends, and make informed decisions at a glance. They are particularly useful in analytics platforms, project management tools, and financial management apps.
+- _Form._ A structured layout that facilitates data input from users. Typically comprised of fields for entering various types of information, such as text, numbers, dates, and selections. Forms are essential for collecting user input, processing transactions, and facilitating interactions within applications. They are commonly employed in registration flows, checkout processes, data entry tasks, and any scenario requiring user input or feedback.
+- _Entity / profile view._ Presents detailed information about a specific entity, such as a user profile, product listing, or content item. It typically includes descriptive text, multimedia elements, and relevant actions or interactions. They're well-suited for showcasing detailed information about items within an application. They provide users with in-depth insights, facilitate decision-making, and support engagement with specific entities, such as user profiles in social networking apps or product listings in e-commerce platforms.
+- _List page._ Displays a collection of items or entities in a structured format, often presented in a linear or grid layout. It typically includes brief summaries or previews of each item, along with navigation controls for browsing or filtering. List pages are effective for presenting large sets of content or data in a digestible format, enabling users to scan, search, and navigate efficiently. It should be clear how to take action on specific rows if enabled. They are commonly used in content management systems, directory listings, search results, and news feeds.
+- _Mini review._ Mini-revie or split-screen layout divides the interface into two distinct sections, with a list displayed on the left side and an item view on the right side. The list typically contains a collection of items, while the item view provides detailed information about the selected item from the list. This layout is particularly effective in scenarios where users need to browse through a list of items quickly and view detailed information about each item simultaneously, such as performing bulk operations. Product catalogs, document management systems, email or communication clients, and task management tools (e.g., Azure Dev Ops query viewer) are scenarios that typically fit this pattern.
+- _Wizard._ A wizard guides users through a series of sequential steps or tasks, typically in a linear fashion, to complete a complex process or achieve a specific goal. It often includes progress indicators, prompts, and validation checks. Wizards are beneficial for simplifying complex processes, reducing cognitive overload, and guiding users through unfamiliar tasks or workflows. They are commonly utilized in onboarding flows, setup processes, multi-step forms, and task-based interactions, such as configuring complex settings or transactions.
+
+The content region can optionally contain several sub-regions that are available for consistent element placement:
+- Page header
 - Side pane / panel overlay
 
 <!--- 
