@@ -83,7 +83,8 @@ Now that you’ve completed preparing your environment, you’re ready to map in
 
 1. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 2. Then create a language resource in [Language Studio](https://language.cognitive.azure.com/), with the [conversational language understanding](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio) feature enabled.
-3. Note, to ensure Copilot Studio functions correctly, you will need to create intents for [Copilot Studio's system topics](authoring-system-topics.md) and for [any custom topics](authoring-create-edit-topics.md) you may want to author.
+3. To ensure Copilot Studio functions correctly, you'll need to create intents for [Copilot Studio system topics](authoring-system-topics.md) and for [any custom topics](authoring-create-edit-topics.md) you want to create.
+
 4. Author [any custom entities](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components) you want to use in your Microsoft Copilot Studio project.
 5. Train and deploy the project in the same region as your Microsoft Copilot Studio resource.
 
