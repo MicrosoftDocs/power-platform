@@ -22,8 +22,8 @@ This guide describes the recommendations for principles and techniques used to d
 
 | Term | Definition |
 |---|---|
-| Viewports |  Visible portion of a user interface within a digital interface, such as a web browser or mobile app, where content is displayed, and can vary in size depending on device screen dimensions and resolution. |
-| Breakpoints | Specific pixel values that define viewport ranges and associated app layout behavior, used to implement adaptive and responsive interfaces. |
+| Viewport |  Visible portion of a digital interface, such as a web browser or mobile app, where content is displayed. Viewport ranges are often associated with device classes (mobile, tablet, and desktop) based on screen dimensions and resolutions. |
+| Breakpoints | Specific pixel values that define viewport ranges used to determine adaptive layout behavior. |
 
 ## Key design strategies
 
@@ -103,13 +103,6 @@ From there, customize and build upon the standard layout to suit specific requir
 
 Utilize commonly recognized structures and arrangements for organizing content and elements within a user interface. These layouts and patterns have been refined and proven effective over time, making them familiar and intuitive to users while also making it easy to implement adaptive patterns.
 
-### Use an underlying grid
-
-Once screen layouts are chosen, determine the appropriate grid behavior, which should be universal to every screen in the app.
-
-- The _stretch grid_ behavior is characterized by columns and margins that are percentage-based and relative to the viewport size. This allows content to reflow dynamically and maintain balance in the white space around it. Breakpoints can trigger significant layout restructures, with column width being fluid, gutters fixed, and margins fluid except for a fixed margin of 5% of content pixels on the nav's width. An example application of this grid is a dashboard page where dynamic content organization is crucial.
-- Conversely, the _fixed grid_ behavior maintains column and gutter widths regardless of the viewport size, while margins stretch as necessary. This provides greater control over content rendering, allowing for centered or left-aligned layouts. In a fixed grid, column width is fixed at 60px, gutters are fixed, and margins are fluid, with adjustments to a hybrid approach often necessary for smaller screens. Although a fully fixed grid is rare due to limitations on smaller screens, it finds application in news pages or structured card layouts. To make fixed grids responsive, elements must be designed in a way that matches 
-
 ### Design for all device classes
 
 In the design considerations, optimize for mobile interactions by using larger touch targets, avoiding hover-dependent interactions, and providing alternative input methods for gestures commonly used on touchscreens.
@@ -121,6 +114,10 @@ A breakpoint matrix serves as a graphical depiction illustrating the responsive 
 ### Use adaptive techniques
 
 #### Reposition
+
+Alter the position of page elements. Keep your content organized, readable, and balanced by optimizing the composition as window size increases. 
+
+For example, vertically stacked elements on a mobile viewport can be repositioned horizontally on larger viewports to follow a natural left to right reading order, create balance in the design, and retain visual focus on important page elements.
 
 #### Resize
 
