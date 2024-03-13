@@ -64,6 +64,12 @@ Structure system information in a manner that mirrors scenarios and conventions 
 
 Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo.
 
+Customization options allows users to tailor the interface to their preferences helps personalize the overall experience. Providing options for users to rearrange interface elements (e.g. in a dashboard) or create personalized shortcuts for frequently used features enhances their efficiency and comfort in navigating the system. Catering to diverse user needs and preferences fosters a sense of ownership and personal investment or attachment to an experience.
+
+Supporting various input methods accomodates users with different preferences and accessibility needs. Offering options like keyboard shortcuts, touch gestures, voice commands, or mouse clicks ensures that users can interact with the interface using their preferred method. Furthermore, allowing users to configure input settings, such as sensitivity or response time, empowers them to fine-tune their interaction experience to match their comfort level and usage patterns. Flexible input methods promote inclusivity and usability, enabling all users to engage with the interface effectively.
+
+Providing granular control over data and privacy settings is paramount for respecting user autonomy and fostering trust. Adjusting privacy settings, deleting or exporting data, and controlling access permissions for third-party applications ensures users can maintain control over their information. Offering clear explanations and transparent disclosures about data collection practices, security measures, and user rights enables informed decision-making and promotes transparency and accountability.
+
 ![Give users control and freedom](./media/usability/h3.svg)
 
 ### Consistency and standards
