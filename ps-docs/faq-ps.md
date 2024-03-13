@@ -28,7 +28,6 @@ Submit your feedback on Project “Sophia", [here](https://aka.ms/projectsophiaf
 ## 3. Why do I get an error when trying to upload a file?
 You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. For more information, see [Supported data files and limitations](ask-question.md#supported-data-files).
 
-
 ## 4. The page never loads when I select next actions:
 This might happen if you select multiple **next actions** while a previous next action is loading. We're aware of the issue and are working on a fix in an upcoming release, but until then select **cancel** and try the action again.
 
@@ -36,7 +35,8 @@ This might happen if you select multiple **next actions** while a previous next 
 If you're using the AI cursor and press enter after entering your prompt, your prompt will automatically create a new blueprint. You can choose to update only a single block on a blueprint by selecting **Generate** and then select **Generate in place of existing block**. This replaces or updates the content of an existing block based on the content you enter.
 
 ## 6. Can I connect to data instead of uploading files? 
-No, but we plan to support connecting to your enterprise data in future releases.
+Yes, you can connect to connect to Dynamics 365 or Salesforce to analyze data there. There are few limitations to these connections currently, for details please see [Connecting to Salesforce and Dynamics 365](ask-question.md#Connecting-to-Salesforce-and-Dynamics-365).
+We plan to support connecting to additional enterprise data sources in future releases.
 
 ## 7. What are the preview terms? Is Microsoft using my data to train their models? How do I know my data is safe?
 
