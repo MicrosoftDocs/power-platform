@@ -118,6 +118,6 @@ The [Power Platform Automation Kit](/power-automate/guidance/automation-kit/over
 ## Related links
 
 - [Recommendations for designing and creating an observability framework](observability.md)
-- [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy)
+- [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md)
 - [User and maker support strategies - Microsoft Power Platform](/power-platform/guidance/adoption/support-strategy)
 - [Power Platform Automation Kit](/power-automate/guidance/automation-kit/overview/introduction)
