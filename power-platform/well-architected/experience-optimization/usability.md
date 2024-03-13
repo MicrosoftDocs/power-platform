@@ -84,15 +84,17 @@ If repeatable experience patterns appear differnt, users will struggle to interp
 
 Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.
 
-Proactively address potential issues in the interface to maintain workflow continuity and allows users to focus on accomplishing their tasks efficiently. Provide a reliable and error-resistant interface to cultivate trust and confidence in users, encouraging continued engagement and satisfaction. Use 
-
-Define a model that describes the dynamics of the system, which captures the relationships between the system's variables and how they evolve based on different values. Gather values and constraints for each variable (e.g., organized into a list or matrix). For each combination, predict the associated state and the expected system's behavior.
+Proactively address potential issues in the interface to maintain workflow continuity. For complex systems, it can be helpful defining a model that describes the dynamics of the system, which captures the relationships between the system's variables and how they evolve based on different values. Gather values and constraints for each variable (e.g., organized into a list or matrix). For each combination, predict the associated state and the expected system's behavior.
 
 ![Design ways to prevent errors](./media/usability/h5.svg)
 
 ### Recognition rather than recall
 
 Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.
+
+Consider a form scenario where in one case, users are presented options to choose from, while in the other case users are asked to provide the options as free text. The form with predefined options offers a quicker and more convenient experience for users, as they can simply select options without having to type out responses.
+
+Provide easily accessible guidance and resources to avoid the need to recall information from memory. Some common mechanisms to implement this effectively in a user interface includes contextual help icons, inline documentation, tooltips, embedded tutorials, on-demand help menus, searchable knowledge bases, and interactive help widgets like AI-enabled resources.
 
 ![Offer recognition patterns instead of asking users to recall](./media/usability/h6.svg)
 
