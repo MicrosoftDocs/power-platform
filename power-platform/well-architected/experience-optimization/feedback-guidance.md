@@ -4,7 +4,7 @@ description: Learn how to Provide meaningful feedback and guidance to ensure con
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
-ms.date: 03/29/2024
+ms.date: 03/13/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -22,7 +22,7 @@ This guide describes the recommendations for providng meaningful feedback and gu
 
 When users perform an action, they should get prompt and understandable feedback from the system. Notifications and messages play a critical role in delivering important information to users promptly and contextually.
 
-### Feedback
+### Feedback messages
 
 **Minimize noise and distraction.** Use notifications only when necessary to minimize noise and distraction. Overload of system messages reduces efficiency and causes frustration. Notifications break workflow and, therefore, lower efficiency and hinder productivity. Interruptions can take time from which to recover from and can lead to errors. Notifications can annoy people in other ways, such as being irrelevant, too creepy, or delivered via an inappropriate mechanism.
 
@@ -42,7 +42,7 @@ When users perform an action, they should get prompt and understandable feedback
 
 **Empower people with robust settings.** Detailed notification settings allow people to set their own preferences. Empowering them to choose what notifications they get as well as what features are used drives satisfaction and trust.
 
-### Guidance
+### In-app guidance
 
 In-app guidance comprises the various ways of helping users learn and use your workload effectively. Some examples of in-app guidance include tooltips, walkthroughs, tutorials, help menus, and contextual hints.
 

@@ -4,7 +4,7 @@ description: Learn how to write content for user interfaces to ensure consistent
 author: Denise-MSFT
 ms.author: demora
 ms.reviewer: robstand
-ms.date: 03/29/2024
+ms.date: 03/13/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---

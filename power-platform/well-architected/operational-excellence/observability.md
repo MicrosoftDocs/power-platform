@@ -54,7 +54,7 @@ You should configure all workload components, whether they're low-code or code-f
 
 Logs are primarily useful for detecting and investigating anomalies. Typically, logs are produced by the workload component and then sent to the monitoring platform or pulled by the monitoring platform via automation.
 
-Metrics are primarily useful for [building a health model](../reliability/metrics) and identifying trends in workload performance and reliability. Metrics are also useful for identifying trends in the usage behavior of your users. These trends can help guide decisions about improvements from the customer perspective. Typically, metrics are defined in the monitoring platform, and the monitoring platform and other tools poll the workload to capture metrics.
+Metrics are primarily useful for [building a health model](../reliability/metrics.md) and identifying trends in workload performance and reliability. Metrics are also useful for identifying trends in the usage behavior of your users. These trends can help guide decisions about improvements from the customer perspective. Typically, metrics are defined in the monitoring platform, and the monitoring platform and other tools poll the workload to capture metrics.
 
 #### Workload data
 
@@ -167,5 +167,5 @@ For detailed guidance on alerting use cases and other considerations, see [Desig
 
 ## **Related links**
 
-- [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy)
-- [Recommendations for monitoring and threat detection](../security/monitor-threats)
+- [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md)
+- [Recommendations for monitoring and threat detection](../security/monitor-threats.md)
