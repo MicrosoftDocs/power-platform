@@ -109,9 +109,11 @@ Passive voice can be used to soften messages or avoid being too direct, such as 
 
 For best practices and standards, lean heavily into active voice. For general guidelines (especially when recommending things to avoid or error messages), use passive voice.
 
-### Be mindful of assistive technologies
+### Equally plan content for assistive technologies
 
-Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alt text for images, appropriate ARIA labels, proper heading structures, and keyboard navigation options ensures that the UI content can be accessed and easily understood by people depending on assistive technologies.
+Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alternative (alt) text for images ensures that the UI content can be accessed and easily understood by people depending on assistive technologies. Alt text is primarily associated with images, as it serves as a textual alternative to convey the content and purpose of an image using screen readers. However, alt text can also be used for other non-text content elements on web pages, such as videos, audio files, charts, graphs, and interactive elements like buttons or icons.
+
+When writing alt text, provide concise and descriptive text that conveys the purpose and content of the content. It should be clear, informative, and relevant to the context of the image, avoiding overly technical language or unnecessary details. Focus on conveying the essential information, such as key objects, actions, or visual elements, while avoiding subjective interpretations about the image. Keep it concise to ensure it is efficiently read by screen readers (the standard recommendation for maximum length of alt text is typically around 125 characters). Write in a neutral tone and ensure the text is grammatically correct.
 
 ### Writing for international audiences
 
