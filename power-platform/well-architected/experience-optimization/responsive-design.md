@@ -49,9 +49,9 @@ Once the app frame is determined, each screen's layout will reside within the co
 
 Users crave seamless experiences where information is readily accessible, text is easy to read, and aesthetics enhance rather than hinder usability. Prioritize initial visibility of key information, ensure readability across columns, and harmonize design elements for aesthetic appeal. 
 
-Ensure essential information is immediately visible upon opening the screen without the need for scrolling. Striking the balance between displaying sufficient items and providing detailed information for each poses a perennial challenge. At the same time, while it can be tempting to provide as much information as possible into the initial view, this risks overwhelming users and diluting the significance of key elements. Prioritize displaying essential information such as navigation options, crucial content, and actionable items near the top of the screen. Consider employing concise summaries or previews that offer a glimpse into more detailed content, enticing users to delve deeper. Dashboards are specifically optimized to server this purpose for apps with large amounts of data.
+Ensure essential information is immediately visible upon opening the screen without the need for scrolling. Prioritize displaying essential information such as navigation options, crucial content, and actionable items near the top of the screen. Striking the balance between displaying sufficient items and providing detailed information for each poses a perennial challenge. Conversely, while it can be tempting to provide all possible information in the initial view, too much information risks overwhelming users and diluting the significance of key elements. Consider employing concise summaries or previews that offer a glimpse into more detailed content, enticing users to delve deeper. Dashboards are specifically optimized to serve this purpose for visualizing large amounts of data.
 
-Incorporate multiple columns, sections, or groupings to organize content horizontally and maximize screen space. Pay meticulous attention to column width, ensuring text remains legible without excessive strain. Avoid overly narrow columns that force users to constantly scroll horizontally, disrupting the flow of interaction. Conversely, excessively wide columns can impede readability, requiring users to track lines across extended distances. Strive for a balance that accommodates comfortable reading while efficiently utilizing available space.
+Incorporate multiple columns, sections, or groupings to tastefully organize content and maximize space. Pay meticulous attention to column width, ensuring text remains legible without excessive strain. Avoid overly narrow columns that force users to constantly scroll horizontally, disrupting the flow of interaction. Conversely, excessively wide columns can impede readability, requiring users to track lines across extended distances. Strive for a balance that accommodates comfortable reading while efficiently utilizing available space.
 
 Aesthetics play a pivotal role in user perception and engagement. When elements are appropriately sized and positioned, they contribute to a visually pleasing and cohesive interface. Align captions with corresponding visuals or titles, maintain consistent spacing between elements, and adhere to a hierarchy based on user importance. Trim unnecessary embellishments and allocate pixels judiciously to elements that matter most. Prioritize and emphasize content and navigation elements, particularly on navigation-intensive apps or homepages, while avoiding superfluous ornamentation that detracts from usability. 
 
@@ -59,15 +59,9 @@ Always be mindful of how to effectively maintain readability across varying view
 
 ### Use established layouts and grouping patterns
 
-Map scenarios to screen layout. Based on identified user scenarios, prioritize content and features most important for users to accomplish their goals. Determine which elements should be visible and accessible on the screen at all times and which can be hidden or accessed through secondary menus or interactions.
+Utilize commonly recognized structures and arrangements for organizing content and elements within a user interface. These layouts and patterns have been refined and proven effective over time, making them familiar and intuitive to users while also making it easy to implement adaptive patterns. Once core scenarios and elements are identified, map each to an established layout that provides the best interaction. Prioritize content and features important for task completion. Determine which elements should be visible and accessible on the screen at all times and which can be hidden or accessed through secondary menus or interactions.
 
-Screen layouts should be able to adapt fluidly to different screen sizes and orientations. This is more easily achieved by starting from standard layouts and building out customized requirements as needs.
-
-Once core elements are identified, choose a standard layout template that best fits the requirements.
-
-Utilize commonly recognized structures and arrangements for organizing content and elements within a user interface. These layouts and patterns have been refined and proven effective over time, making them familiar and intuitive to users while also making it easy to implement adaptive patterns.
-
-The following includes a non-exhaustive list of established layouts (and layout components) commonly used for business applications.
+The following includes a non-exhaustive list of established layouts commonly used for business applications.
 
 - Landing / home screen
 - Dashboard
