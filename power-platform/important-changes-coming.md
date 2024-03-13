@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 06/29/2023
+ms.date: 03/12/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -125,7 +125,7 @@ We'll be introducing new Fluent UI controls that have better usability, accessib
 ### Impact
 
 - Starting April 2023, these controls can no longer be added to forms.
-- Existing control instances will work on existing forms until April 2024.
+- No additional support or fixes will be provided on these controls after April 2024.
 
 ### Action required by you
 
