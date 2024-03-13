@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| Design your workload to meet the expectations and requirements of the users. Ensure that the workload is useful and provides a positive user experience. |
+|[EO:01](checklist.md)| **Design your workload to meet the expectations and requirements of the users. Ensure that the workload is useful and provides a positive user experience.** |
 |---|---|
 
 This guide describes the recommendations for user-centered design to ensure your workloads are useful, usable, and desirable for users, while meeting business requirements. User-centered design (UCD) is an approach to design that focuses on understanding the needs, preferences, and context of the users who will interact with the workload. Employing user-centered design can help to avoid usability problems, user frustration, and dissatisfaction. It can also help to reduce the costs and risks of design failures, redesigns, and maintenance.

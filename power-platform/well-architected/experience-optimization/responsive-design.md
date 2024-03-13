@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **Maintain usable and visually appealing layouts across screen sizes and resolutions. Utilize adaptive techniques to dynamically render content in various ways.** |
+|[XO:06](checklist.md)| **Maintain usable and visually appealing layouts across screen sizes and resolutions. Utilize adaptive techniques to dynamically render content in various ways.** |
 |---|---|
 
 This guide describes the recommendations for principles and techniques used to design app screen layouts that easy to navigate and adapt fluidly across various devices. This approach ensures that users have a consistent and optimal viewing experience regardless of the device they are using.

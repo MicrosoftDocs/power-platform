@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **Assess the ease of use and engagement of the experiences. Optimize for learnability, efficiency, memorability, error encounters and recovery, and satisfaction.** |
+|[XO:04](checklist.md)| **Prioritize ease of use during the design process. Minimize user effort and maximize task efficiency. Streamline complex processes. Align design decisions with user needs.** |
 |---|---|
 
 This guide describes the recommendations for improving usability in user interface design. Usability refers to the ease of use and effectiveness of a product for its intended users. It's crucial because it directly impacts user satisfaction, errors, and overall interactions with the digital interface, ultimately affecting the success of an application.

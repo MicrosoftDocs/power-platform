@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:07](checklist.md)| **Provide meaningful, useful, and simple guidance in notifications and messages.** Notify users with relevant, important, and valuable information. Give users feedback on their actions. Let users know when something happens and what they need to do next. |
+|[XO:05](checklist.md)| **Provide meaningful, useful, and simple guidance in notifications and messages. Notify users with relevant, important, and valuable information. Give users feedback on their actions. Let users know when something happens and what they need to do next.** |
 |---|---|
 
 This guide describes the recommendations for providng meaningful feedback and guidance to users of your workload. Feedback and guidance in a well-architected workload provide users with the information they need to perform actions and to effectively make decisions. Feedback and guidance that lack relevance, are hard to understand, or display at the wrong time for the user to properly react, will lead to a poor experience for users and will potentially result in lost productivity, higher support costs, and failed business processes.
@@ -22,7 +22,7 @@ This guide describes the recommendations for providng meaningful feedback and gu
 
 When users perform an action, they should get prompt and understandable feedback from the system. Notifications and messages play a critical role in delivering important information to users promptly and contextually.
 
-### Feedback messages
+### Feedback notifications
 
 **Minimize noise and distraction.** Use notifications only when necessary to minimize noise and distraction. Overload of system messages reduces efficiency and causes frustration. Notifications break workflow and, therefore, lower efficiency and hinder productivity. Interruptions can take time from which to recover from and can lead to errors. Notifications can annoy people in other ways, such as being irrelevant, too creepy, or delivered via an inappropriate mechanism.
 
@@ -56,11 +56,12 @@ In-app guidance comprises the various ways of helping users learn and use your w
 
 ## Power Platform facilitation
 
-Power Platform details here...
+- Facilitation 1
+- Facilitation 2
 
 ## Related links
 
-Related links here.
+- [Recommendations for writing content for user interfaces](user-interface-content.md)
 
 ## Experience Optimization checklist
 

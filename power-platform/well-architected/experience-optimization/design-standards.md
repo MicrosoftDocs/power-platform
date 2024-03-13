@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **Follow established standards, conventions, and guidelines.** Leverage commonly-used design patterns. Maintain consistency in design elements, terminology, and interactions across the interface. Use consistent patterns and standards to guide users through the interface and create a cohesive user experience. |
+|[XO:02](checklist.md)| **Follow established standards, conventions, and guidelines. Leverage commonly-used design patterns. Maintain consistency in design elements, terminology, and interactions across the interface. Use consistent patterns and standards to guide users through the interface and create a cohesive user experience.** |
 |---|---|
 
 This guide shows how to apply established design standards, conventions, and best practices to develop user interfaces that are effective and professional, enhancing the user experience and the application’s overall success. Deviating from standards may be needed in certain circumstances but should be carefully thought through to avoid negatively affecting the user's experience and ensure optimal outcomes.
@@ -43,7 +43,7 @@ A _component_ represents a discrete, modular unit of a user interface. It serves
 Power Apps provides a comprehensive set of basic universal components, like button, dropdown, and several composite components, like the modern table. Use these controls as much as possible for basic needs, then consider building composite components where gaps exist for repeatable user interface patterns.
 
 Composite components should be able to be used exactly as-is or with minimal variation (using parameters) in different app contexts and should not need to be modified. Some examples of custom components could include the following:
- 
+
 - A company-branded header or footer. 
 - A screen-sized resource page component for users to provide feedback and get IT help
 - Universal content like copyright notices or links
@@ -78,12 +78,12 @@ Designing with inclusive principles ensures that products are built for a broade
 
 | Function | Purpose |
 | -------- | ------- |
-| Cognition |	Our ability to receive, interpret, and process information. This includes attention, awareness, focus, memory, judgment, comprehension, problem solving, and reasoning. A person’s cognition can affect the way they learn - whether it's learning how to use a new device or learning new information in a classroom. Many aspects of cognition affect one another. |
-| Mobility |	Our anatomy and muscles give us mobility, and they rely on brain signals which control the muscles. Mobility involves grasps, fine motor skills, coordination, control (voluntary vs. involuntary movement), speed, muscle tone, endurance, posture, and temporary injuries. Mobility can be influenced by situational, temporary, progressive, or permanent conditions. |
+| Cognition |Our ability to receive, interpret, and process information. This includes attention, awareness, focus, memory, judgment, comprehension, problem solving, and reasoning. A person’s cognition can affect the way they learn - whether it's learning how to use a new device or learning new information in a classroom. Many aspects of cognition affect one another. |
+| Mobility |Our anatomy and muscles give us mobility, and they rely on brain signals which control the muscles. Mobility involves grasps, fine motor skills, coordination, control (voluntary vs. involuntary movement), speed, muscle tone, endurance, posture, and temporary injuries. Mobility can be influenced by situational, temporary, progressive, or permanent conditions. |
 | Vision | Our ability to see and understand visual information from our environment to guide thought and movement. Vision is influenced by both physical and neurological factors. Vision limitations include blindness, low vision (partially sighted), decreased acuity, visual field loss, color blindness, photophobia (light sensitivity), bright sunlight impacting readability of text on a screen. |
-| Hearing |	Our ability to receive and understand audio from our environment to guide thought and movement. Degrees of hearing loss vary across a wide spectrum, causing different types of barriers to everyday technology use. The temporary and situational examples could be a loud environment or a quiet zone where playing sound is not possible. |
+| Hearing |Our ability to receive and understand audio from our environment to guide thought and movement. Degrees of hearing loss vary across a wide spectrum, causing different types of barriers to everyday technology use. The temporary and situational examples could be a loud environment or a quiet zone where playing sound is not possible. |
 | Voice, speech, and communication | Our ability to communicate (verbally or non-verbally) is essential in expressing wants and needs, forming relationships, conveying information to others, and interacting with our environment. |
-| Sensation and perception | Sensation is our ability to detect senses like touch or the positioning of our body. Perception is how the brain processes and communicates these senses. Sensation limitations include vestibular, chronic pain, skin integrity, sensation (hypersensitive and hyposensitive), proprioception.	|
+| Sensation and perception | Sensation is our ability to detect senses like touch or the positioning of our body. Perception is how the brain processes and communicates these senses. Sensation limitations include vestibular, chronic pain, skin integrity, sensation (hypersensitive and hyposensitive), proprioception.|
 
 #### Methods of accessing content
 
@@ -91,11 +91,11 @@ There are many ways for a user to access digital content. Besides using mouse an
 
 #### Assistive tools
 
-- _Keyboard._	People who are blind or have a significant visual impairment interact with websites and apps using screen reader software, which reads content and controls aloud using text-to-speech technology. Since people who are blind can’t see the pointer on the screen, they can’t use a standard mouse.
+- _Keyboard._ People who are blind or have a significant visual impairment interact with websites and apps using screen reader software, which reads content and controls aloud using text-to-speech technology. Since people who are blind can’t see the pointer on the screen, they can’t use a standard mouse.
 The keyboard works as an alternative input to point-and-click interaction. In addition to supporting the basic set of keyboard commands, screen readers also provide a complex set of keyboard commands. These commands give users a powerful additional set of tools to interact with user interfaces more efficiently.
 - _Screen reader._ Screen readers convert digital text into synthesized speech and braille output. They empower users to hear content and navigate with the keyboard. The technology enables people who are blind or who have low vision to use information technology with the same level of independence and privacy as anyone else.
 Screen readers are also used by people with certain cognitive or learning disabilities, or users who simply prefer audio content over text. Beyond the web, screen readers also work with documents, spreadsheets, and the user’s operating system.
-- _Touch._	Touch targets are largely targeted at people with motor delays, who may have problems tapping the screen. More specifically, touch is designed to help people limit the amount of spurious input from unintended (or unregistered) touches.
+- _Touch._ Touch targets are largely targeted at people with motor delays, who may have problems tapping the screen. More specifically, touch is designed to help people limit the amount of spurious input from unintended (or unregistered) touches.
 - _Dynamic content._ One of the easiest features to implement, and one that provides significant immediate benefits to screen reader users, is landmark roles (ARIA labels). There are eight of these roles, each representing a block of content that occurs commonly on web pages. To use them, simply add a relevant role attribute to an appropriate container within your HTML. Then, screen reader users can quickly jump to that section of the page.
 
 #### Visual styles
