@@ -72,7 +72,8 @@ Before you begin, make sure that you have your CLU model project name and deploy
 11. Enter your project name and deployment information, and select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image5.png" alt-text="Choose a project and model in Azure Cognitive Service for Language." border="false"::: 
 
-Returning to the Microsoft Copilot Studio **Language understanding** tab, select **Save**. Changing the NLU configuration removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
+In Microsoft Copilot Studio, on the **Language understanding** tab, select **Save**. Changing the NLU configuration removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
+
 
 :::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Microsoft Copilot Studio NLU." border="false"::: 
 
