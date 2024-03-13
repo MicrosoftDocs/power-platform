@@ -54,6 +54,10 @@ Prioritize accessibility in system status design as these are the more critical 
 
 The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.
 
+Employ terminology and concepts that are familiar to users and avoid jargon that may alienate them. People quickly grasp the purpose and functionality of a system when it speaks their language. Aligning system terminology with everyday language helps users feel understood and catered to, which can influence positive perceptions of the app.
+
+Structure system information in a manner that mirrors scenarios and conventions users understand to help them easily navigate the interface without having to spend time deciphering unfamiliar layouts. Present information in a natural and logical sequence that resonates with users' expectations. Emulate familiar real-world processes to facilitate intuitive navigation and interaction within the system to reduce the liklihood of errors or misunderstandings.
+
 ![Match the system to the real world](./media/usability/h2.svg)
 
 ### User control and freedom
