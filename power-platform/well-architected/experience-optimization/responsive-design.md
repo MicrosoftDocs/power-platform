@@ -22,7 +22,7 @@ This guide describes the recommendations for principles and techniques used to d
 
 | Term | Definition |
 |---|---|
-| Viewport |  Visible portion of a digital interface, such as a web browser or mobile app, where content is displayed. Viewport ranges are often associated with device classes (mobile, tablet, and desktop) based on screen dimensions and resolutions. |
+| Viewport | Visible portion of a digital interface, such as a web browser or mobile app, where content is displayed. Viewport ranges are often associated with device classes (mobile, tablet, and desktop) based on screen dimensions and resolutions. |
 | Breakpoints | Specific pixel values that define viewport ranges used to determine adaptive layout behavior. |
 
 ## Key design strategies
@@ -103,59 +103,47 @@ From there, customize and build upon the standard layout to suit specific requir
 
 Utilize commonly recognized structures and arrangements for organizing content and elements within a user interface. These layouts and patterns have been refined and proven effective over time, making them familiar and intuitive to users while also making it easy to implement adaptive patterns.
 
-### Design for all device classes
+### Design layouts for all devices
 
-In the design considerations, optimize for mobile interactions by using larger touch targets, avoiding hover-dependent interactions, and providing alternative input methods for gestures commonly used on touchscreens.
+Layouts are a culmination of defined rules and intentional organization of content. Bringing your content into thoughtful structures is key, but making it all flow together with a clear hierarchy across platforms and screen sizes requires scaling logic. Individually, adaptive and responsive design can each address this challenge. In some cases, a mix of adaptive and responsive design is the right choice.
+
+_Responsive design_ uses just one layout where the content is fluid and can adapt to changing format size. This design technique uses media queries to inspect a given device’s characteristics and renders content accordingly. Responsive design allows you to build a feature one time and expect it to work across all screen sizes.
+
+An _adaptive layout_ is one that changes entirely based on the format it’s presented in. Adaptive design has multiple fixed layout sizes and triggers the browser to load a given layout created based on the available space. Sites built with adaptive design use media queries to read breakpoints similar to responsive design, and additional markup based on the device’s capabilities. This process is known as “progressive enhancement.”
+
+#### Reposition
+
+Alter the position of page elements. 
+
+Keep your content organized, readable, and balanced by optimizing the composition as window size increases. For example, vertically stacked elements on a mobile viewport can be repositioned horizontally on larger viewports to follow a natural left to right reading order, create balance in the design, and retain visual focus on important page elements.
+
+#### Resize
+
+Adjust the size and margins of page elements
+
+Resize page elements to optimize for a rich user experience by displaying more content at the top of the window and reduce vertical scrolling. Adjust page margins to add white space and balance to the composition. This allows the content to breathe resulting in a more visually appealing design. For example, a hero component can stretch to the full width of the window to show more of the background image. Content underneath the photo can also stretch to show more but uses different margins to add variety in the composition and helps to define visual hierarchy.
+
+#### Reflow
+
+Optimize the flow of page elements.
+
+Reflow optimizes page elements so they can be fully rendered considering the window size and its orientation by rearranging the content. For example, a single column of content in a smaller window can be reflowed on a larger window to display two columns of text. This allows more content to be displayed "above the fold".
+
+#### Show/hide
+
+Optimize content for the window size and its orientation.
+
+Show or hide page elements to optimize content for the window size and its orientation. This responsive technique gives users the right amount of information and optimal user experience based on how they are viewing it. For example, categories appearing on a small screen show limited meta data like an image, title, and link so more of them can be seen and help the user focus. On a larger screen, categories can show additional meta data like a persona, date, and short description and can still be seen in the view port.
+
+#### Re-architect
+
+Fork or collapse page elements and content to retain focus on important info and actions.
+
+This is similar to following the practice of “progressive disclosure” in your design but for different window sizes and orientation. In this example, expanding the window allows a list of items to be displayed next to the details which helps to visually link the content and let the user easily choose another item. On the smaller screen, focus remains on displaying key info.
 
 #### Create a breakpoint matrix
 
 A breakpoint matrix serves as a graphical depiction illustrating the responsive or adaptive behaviors of an application's design across different screen sizes and orientations. It typically presents a structured grid or layout detailing the design's response at various breakpoints. Each segment corresponds to a distinct screen width, offering insights into the design's structure, layout, and functionality. A breakpoint matrix encompasses considerations of screen width, viewport orientation, design elements, layout structure, content presentation, navigation, media, and interactive components to illustrate how a website or app's design responds across different screen sizes and orientations.
-
-### Use adaptive techniques
-
-#### Reposition
-
-Alter the position of page elements. Keep your content organized, readable, and balanced by optimizing the composition as window size increases. 
-
-For example, vertically stacked elements on a mobile viewport can be repositioned horizontally on larger viewports to follow a natural left to right reading order, create balance in the design, and retain visual focus on important page elements.
-
-#### Resize
-
-#### Reflow
-
-#### Show/hide
-
-#### Re-architect
-
-<!---
-#### Prioritize mobile-first design
-
-
-### Implement fluid layouts
-
-Fluid layouts use relative units, such as percentages or ratios, instead of fixed units like pixels. This allows the website to resize and reposition elements based on the screen size of the device being used, letting content reflow and balance the white space around.
-
-To achieve a responsive layout, a fluid layout approach is generally recommended due to its inherent flexibility and adaptability across various screen sizes and devices.
-
-While fixed layouts offer precise control over the layout and appearance of elements, they can present pitfalls for responsive design. Fixed layouts maintain a constant width, which may lead to horizontal scrolling or cropping on devices with different screen sizes or aspect ratios. This lack of flexibility can result in a suboptimal user experience, particularly on smaller screens such as smartphones or tablets.
-
-Hybrid layouts combine elements of both fluid and fixed layouts to strike a balance between flexibility and control. However, they can be more complex to implement and may require careful consideration of which elements should be fluid and which should be fixed. Hybrid layouts may also introduce challenges in maintaining consistency and visual harmony across different screen sizes and resolutions. In contrast, fluid layouts provide a straightforward and adaptable solution for responsive design. 
-
-### Reduce friction
-
-An adaptive design automatically reconfigures the elements on the page. It is better to reduce friction by understanding and removing the unnecessary elements in the page. Organize content to ensure the most important information is displayed prominently and is accessible on smaller screens. This may involve reordering content, collapsing navigation menus into responsive menus, and using progressive disclosure techniques to present content in a user-friendly manner.
-
-### Use adaptive techniques for complex layouts
-
-Breakpoints are the most essential component to create a responsive design. Breakpoints are specific points or thresholds in the layout of a responsive website or application where the design adapts or "breaks" to accommodate different screen sizes, resolutions, or device orientations. They are key components of responsive design and are strategically placed based on the content, layout, and design requirements of the project.
-
-### Optimize images and fonts
-
-Reduce the file size of high-resolution images for smaller viewports or use portable image types that can easily be scaled, such as SVG. Optimizing your fonts for mobile devices is an absolute necessity if you want your content to be palatable across all screen sizes.
-
-
-
---->
 
 ## Power Platform facilitation
 
