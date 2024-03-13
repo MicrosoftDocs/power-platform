@@ -105,7 +105,9 @@ An _adaptive layout_ is one that changes entirely based on the format it’s pre
 
 #### Reposition
 
-Alter the position of page elements. 
+Alter the position of page elements.
+
+![Elements stacked vertically in smaller viewports are repositioned as horizontal elements in larger viewports](./media/layout/reposition.svg)
 
 Keep your content organized, readable, and balanced by optimizing the composition as window size increases. For example, vertically stacked elements on a mobile viewport can be repositioned horizontally on larger viewports to follow a natural left to right reading order, create balance in the design, and retain visual focus on important page elements.
 
@@ -113,11 +115,15 @@ Keep your content organized, readable, and balanced by optimizing the compositio
 
 Adjust the size and margins of page elements
 
+![Margins decrease in smaller viewports and increase in larger viewports](./media/layout/resize.svg)
+
 Resize page elements to optimize for a rich user experience by displaying more content at the top of the window and reduce vertical scrolling. Adjust page margins to add white space and balance to the composition. This allows the content to breathe resulting in a more visually appealing design. For example, a hero component can stretch to the full width of the window to show more of the background image. Content underneath the photo can also stretch to show more but uses different margins to add variety in the composition and helps to define visual hierarchy.
 
 #### Reflow
 
 Optimize the flow of page elements.
+
+![Elements are usually stacked in small viewports, but can selectively be horizontal in larger viewports](./media/layout/reflow.svg)
 
 Reflow optimizes page elements so they can be fully rendered considering the window size and its orientation by rearranging the content. For example, a single column of content in a smaller window can be reflowed on a larger window to display two columns of text. This allows more content to be displayed "above the fold".
 
@@ -125,11 +131,15 @@ Reflow optimizes page elements so they can be fully rendered considering the win
 
 Optimize content for the window size and its orientation.
 
+![Smaller viewports focus on including critical details while larger viewports can include optional information that adds to aesthetics for the layout](./media/layout/show-hide.svg)
+
 Show or hide page elements to optimize content for the window size and its orientation. This responsive technique gives users the right amount of information and optimal user experience based on how they are viewing it. For example, categories appearing on a small screen show limited meta data like an image, title, and link so more of them can be seen and help the user focus. On a larger screen, categories can show additional meta data like a persona, date, and short description and can still be seen in the view port.
 
 #### Re-architect
 
 Fork or collapse page elements and content to retain focus on important info and actions.
+
+![Certain elements can change form or location to optimize the viewport size](./media/layout/rearchitect.svg)
 
 This is similar to following the practice of “progressive disclosure” in your design but for different window sizes and orientation. In this example, expanding the window allows a list of items to be displayed next to the details which helps to visually link the content and let the user easily choose another item. On the smaller screen, focus remains on displaying key info.
 
