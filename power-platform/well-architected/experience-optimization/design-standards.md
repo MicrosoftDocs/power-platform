@@ -28,7 +28,9 @@ Certain truths about human cognition have been heavily researched and help make 
 
 ### Follow common patterns and metaphors
 
-Universal patterns and metaphors have been established that the general population of digital products have become accustomed to and expect. Ensuring your design includes these patterns where applicable will make your application easier for users to onboard and use long term, reduce training (or support) costs, and even potentially reduce effort that might be required to update the design.
+Universal patterns and metaphors have been established that the general population of digital products have become accustomed to and expect. Ensuring your design includes these patterns where applicable will make your application easier for users to onboard and use long term, reduce training and support costs, and even potentially mitigate effort required to update or redesign. These practices encompass various aspects of design, including layout composition, navigation structure, information hierarchy, and interaction design. 
+
+Adhering to standard icon metaphors and semantic colors is crucial. Icons should leverage established visual associations to convey functionality quickly and effectively to users. Similarly, semantic colors, such as red for error or green for success, provide immediate visual feedback that aligns with users' expectations and mental models. Following these conventions help reduce cognitive load and enhance usability by fostering a sense of familiarity and comfort.
 
 ### Establish a design system
 
@@ -50,9 +52,11 @@ _Pattern library_. Offer a set of predefined design patterns for makers to utili
 
 _Guidelines_ provide rules and best practices for project teams regarding the utilization of components and visual styles. Unlike style guidelines, which focus on aesthetics, design system guidelines define the functional behavior of components and user interaction expectations. For example, if a design system provides a design token set for referencing colors, the guidelines should provide insight into when the colors should be used, and how the developer can access the corresponding color in Power Apps. For components, there should be documentation on correct usage, input and output parameters, and state variations that can be expected of the component.
 
-Centralized teams can also host universal media assets such as company logos and other design assets in a repository to enable more widespread rapid development.
+Centralized design system efforts can also host universal media assets such as company logos and other design assets in a repository to enable more widespread rapid development.
 
-Microsoft's Fluent UI is an example of a widely-adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system. Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet the needs of end users. They are also designed in a way that can be ubiquitous and easily utilized across various digital products and platforms. Each component has specific guidelines to ensure the application aligns with the intended experience. Take advantage of the research-backed knowledge by reviewing the [Fluent 2 guidance](https://fluent2.microsoft.design/#/).
+Microsoft's Fluent UI is an example of a widely-adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system. Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet the needs of end users. They are also designed in a way that can be ubiquitous and easily utilized across various digital products and platforms. Each component has specific guidelines to ensure the application aligns with the intended experience. Take advantage of the research-backed knowledge by reviewing the [Fluent 2 guidance](https://fluent2.microsoft.design/).
+
+Avoiding duplicate implementations by sharing increases production efficiency, but more importantly it means that experiences will start coherent, and not drift apart over time. Contributing to shared elements will help keep experiences fresh and reflect expertise from across the organization.  Today, coherence is challenged because components, systems, process, and culture are often not shared, do not reinforce coherence, and make contribution hard. 
 
 #### Conduct design reviews
 
