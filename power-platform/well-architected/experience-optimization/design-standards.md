@@ -1,10 +1,10 @@
 ---
 title: Recommendations for following design standards
-description: Learn how to follow design standards to ensure consistent success with user experience optimization.
-author: RobStand
-ms.author: rstand
+description: Learn how following design standards ensures consistent success with user experience optimization.
+author: Denise-MSFT
+ms.author: demora
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/29/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **TODO** Update with checklist details for this item |
+|[EO:01](checklist.md)| **Follow established standards, conventions, and guidelines.** Leverage commonly-used design patterns. Maintain consistency in design elements, terminology, and interactions across the interface. Use consistent patterns and standards to guide users through the interface and create a cohesive user experience. |
 |---|---|
 
 This guide shows how to apply established design standards, conventions, and best practices to develop user interfaces that are effective and professional, enhancing the user experience and the application’s overall success. Deviating from standards may be needed in certain circumstances but should be carefully thought through to avoid negatively affecting the user's experience and ensure optimal outcomes.

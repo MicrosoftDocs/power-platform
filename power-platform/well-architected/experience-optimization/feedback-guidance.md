@@ -22,6 +22,8 @@ This guide describes the recommendations for providng meaningful feedback and gu
 
 When users perform an action, they should get prompt and understandable feedback from the system. Notifications and messages play a critical role in delivering important information to users promptly and contextually.
 
+### Feedback
+
 **Minimize noise and distraction.** Use notifications only when necessary to minimize noise and distraction. Overload of system messages reduces efficiency and causes frustration. Notifications break workflow and, therefore, lower efficiency and hinder productivity. Interruptions can take time from which to recover from and can lead to errors. Notifications can annoy people in other ways, such as being irrelevant, too creepy, or delivered via an inappropriate mechanism.
 
 **Use a central location for notifications.** Notification centers are useful aggregators of message content. They’re the best place to provide quick access to what’s important so people can find out what’s going on at any point of time.
@@ -39,6 +41,18 @@ When users perform an action, they should get prompt and understandable feedback
 **Provide inline validation.** Wherever possible, use inline validation so people get feedback on their mistakes immediately.
 
 **Empower people with robust settings.** Detailed notification settings allow people to set their own preferences. Empowering them to choose what notifications they get as well as what features are used drives satisfaction and trust.
+
+### Guidance
+
+In-app guidance comprises the various ways of helping users learn and use your workload effectively. Some examples of in-app guidance include tooltips, walkthroughs, tutorials, help menus, and contextual hints.
+
+**Establish the purpose and scope of the in-app guidance.** Define the specific problems or gaps that the guidance aims to address or fill. Define the desired outcomes and metrics that the guidance intends to achieve or improve.
+
+**Design the guidance content and interaction.** Create the content and interaction of the in-app guidance based on the user needs and expectations and the guidance objectives and outcomes. Use clear and concise language, appropriate tone and style, and consistent terminology and formatting. Use visual and auditory elements, such as icons, images, animations, sounds, and colors, to enhance the content and interaction. Use feedback and reinforcement, such as progress indicators, completion messages, and rewards, to motivate and encourage the user.
+
+**Choose the right guidance type and component.** Select the most suitable type and component of in-app guidance based on the user needs and expectations and the guidance objectives and outcomes. Consider the advantages and disadvantages of each type and component, such as the level of user control, the degree of user interruption, and the amount of user attention. Use a combination of different types and components to provide a comprehensive and flexible guidance experience.
+
+**Iterate and improve the guidance design and implementation.** As part of user testing of your workload's experiences, identify the strengths and weaknesses of the in-app guidance. Make the necessary changes and improvements to the guidance content, interaction, type, component, and integration. Repeat the testing and evaluation process until the in-app guidance meets the user needs and expectations and the guidance objectives and outcomes.
 
 ## Power Platform facilitation
 
