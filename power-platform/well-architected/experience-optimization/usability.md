@@ -84,6 +84,10 @@ If repeatable experience patterns appear differnt, users will struggle to interp
 
 Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.
 
+Proactively address potential issues in the interface to maintain workflow continuity and allows users to focus on accomplishing their tasks efficiently. Provide a reliable and error-resistant interface to cultivate trust and confidence in users, encouraging continued engagement and satisfaction. Use 
+
+Define a model that describes the dynamics of the system, which captures the relationships between the system's variables and how they evolve based on different values. Gather values and constraints for each variable (e.g., organized into a list or matrix). For each combination, predict the associated state and the expected system's behavior.
+
 ![Design ways to prevent errors](./media/usability/h5.svg)
 
 ### Recognition rather than recall
