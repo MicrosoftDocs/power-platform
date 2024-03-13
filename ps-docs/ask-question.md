@@ -35,13 +35,15 @@ You'll get an AI-powered blueprint in response to your question including an ove
 
 ## Ask questions about your data
 
-You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. In future releases, you will be able to **connect to data** instead of uploading data.
+You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. You can also **connect to data** sources from Dynamics 365 Sales and Salesforce. In future releases, you will be able to connect to more data sources.
 
 1. Use one of the following methods to ask questions about your data:
    - On the Home screen, select **go** on the **Onboarding** tile > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
    - On the Home screen, select **New workspace** > **Add data** > **Upload files**
+   - On the Home screen, select **New workspace** > **Add data**>  **Dynamics 365** or **Salesforce**
+   
 
-1. Select the file name and then select **Open**.
+1. If you are uploading a file, select the file name and then select **Open**. If you are connecting to a data source, follow the authentication dialog.
 1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
 1. Select **Generate** or enter your question in the text box and then select **Generate**.
 
@@ -63,6 +65,23 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following li
   - Use original digital documents or PDF that are converted directly from word processors or other digital sources. A scanned PDF will not work.
 -	Encrypted or password-protected files aren’t supported.
 - If a PDF contains tables make sure the borders are clearly outlined. Avoid using any contrasting colors to differentiate between rows and columns.
+
+### Connecting to Salesforce and Dynamics 365
+
+You can connect to CRM data from Salesforce and Dynamics 365. The following limitations apply to these connections currently:
+
+- The connection gets access to a specific set of core entities (i.e. Contacts, Opportunities, Leads, Accounts, Sales orders, and Incidents/Cases).
+- The data is analyzed at the time of connection. The workspace does not refresh data.
+- Data is limited to the top 2000 rows and 100 columns.
+- Only one connection is supported. It is possible to connect to a CRM data source and upload files.
+
+For Dynamics 365 Sales connection:
+- The current logged-in user to Sophia is used to connect to Dynamics 365 Sales.
+- If the current user has access to multiple instances, then a dialog will ask the user to choose one.
+- If no instances of Dynamics 365 are found, the menu will not show Dynamics 365 as an option.
+
+For Salesforce connection:
+- The user is able to create a connection, or reuse an existing connection from the available Power Platform.
 
 
 ### Work with content
