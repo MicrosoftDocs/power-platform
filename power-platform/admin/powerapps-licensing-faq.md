@@ -48,7 +48,7 @@ You don't need a license to build canvas apps. You need a license to build model
 ### Do we need a Power Automate standalone license on top of Power Apps premium?
 - If the flow is in context of Power Apps or Dynamics 365 apps, and is an automated flow, the flow must be associated to the app created using Power Apps or a Dynamics 365 app. The owner also needs a Power Apps Premium license, or a Dynamics 365 license.
 - If the flow is in context of Power Apps or a Dynamics 365 app, and is an instant flow, every user running the flow needs a Power Apps Premium license, or a Dynamics 365 license.
-- If a parent flow calls a child flow, the child flow leverages the context from the parent flow. For example, if the following criteria are met, it uses the parent flow owner's license: 
+- If a parent flow calls a child flow, the child flow uses the context from the parent flow. For example, if the following criteria are met, it uses the parent flow owner's license: 
   - If the parent flow is an automated flow, and
   - The child flow uses premium connectors, and
   - The child flow doesn't have a Process license. If the child flow has a Process license, it uses the Process license and not the parent flow's license. 
