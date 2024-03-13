@@ -113,8 +113,15 @@ For best practices and standards, lean heavily into active voice. For general gu
 
 Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alt text for images, appropriate ARIA labels, proper heading structures, and keyboard navigation options ensures that the UI content can be accessed and easily understood by people depending on assistive technologies.
 
+### Writing for international audiences
+
+When writing content for an internationally used app, consider cultural diversity and sensitivity to ensure inclusivity and relevance for users from different backgrounds. Use culturally neutral language that can be easily understood by a global audience. Avoiding colloquialisms, slang, or cultural-specific references helps ensure that the content remains universally accessible and does not inadvertently exclude or alienate users from different regions or linguistic backgrounds. Provide localized versions of the interface with translations tailored to each target audience's language and dialect preferences to enhance user engagement and comprehension.
+
+Understand cultural norms, values, and preferences when designing content for an international audience. Different cultures have distinct communication styles, etiquette, and social norms that influence user behavior and expectations. Consider factors such as color symbolism, iconography, and content presentation formats specific to each cultural context helps create interfaces that resonate with users. Visual elements such as icons and imagery should be carefully chosen to resonate with users across diverse cultural contexts. While certain symbols may carry universal meanings, others may vary significantly in interpretation depending on cultural norms and beliefs. Collaborating with local experts or conducting user testing during the design and localization process can provide valuable insights and ensure that the interface reflects the cultural nuances and preferences of the target audience.
+
 ## Power Platform facilitation
 
+Power Platform details here ...
 
 ## Related links
 
