@@ -109,7 +109,7 @@ Passive voice can be used to soften messages or avoid being too direct, such as 
 
 For best practices and standards, lean heavily into active voice. For general guidelines (especially when recommending things to avoid or error messages), use passive voice.
 
-### Equally plan content for assistive technologies
+### Be mindful of content needed for assistive technologies
 
 Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alternative (alt) text for images ensures that the UI content can be accessed and easily understood by people depending on assistive technologies. Alt text is primarily associated with images, as it serves as a textual alternative to convey the content and purpose of an image using screen readers. However, alt text can also be used for other non-text content elements on web pages, such as videos, audio files, charts, graphs, and interactive elements like buttons or icons.
 
