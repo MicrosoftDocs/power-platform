@@ -29,7 +29,7 @@ When content is generated, follow these steps to use the AI cursor:
 
 > [!TIP]
 > - **Update an existing block**: If you experience unexpected results, you can ask Project "Sophia" to adjust the results. For example, update an existing block to use another chart type, group by something else, or explain what an acronym means in your source data to help get better results. When you press **Enter** it generates a new blueprint instead of updating an existing block on the current blueprint.
-> - **Add data**: You can upload additional data to an existing workspace at any time using the AI cursor.
+> - **Add data**: You can upload or connect to additional data to an existing workspace at any time using the AI cursor.
    
    > [!div class="mx-imgBorder"]
    > ![Use the AI cursor.](media/ai-cursor.png)
