@@ -92,7 +92,7 @@ Proactively address potential issues in the interface to maintain workflow conti
 
 Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.
 
-Consider a form scenario where in one case, users are presented options to choose from, while in the other case users are asked to provide the options as free text. The form with predefined options offers a quicker and more convenient experience for users, as they can simply select options without having to type out responses.
+When designing forms for example, carefully consider whether to provide predefined options for users to choose from or allow free text input. Opt for predefined options when speed and convenience are paramount, and choose free text input for scenarios requiring richer detail or personalized responses. Striking the right balance between convenience and richness of input ensures an optimal user experience.
 
 Provide easily accessible guidance and resources to avoid the need to recall information from memory. Some common mechanisms to implement this effectively in a user interface includes contextual help icons, inline documentation, tooltips, embedded tutorials, on-demand help menus, searchable knowledge bases, and interactive help widgets like AI-enabled resources.
 
