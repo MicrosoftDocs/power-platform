@@ -29,9 +29,9 @@ You can also [pass a variable to a Microsoft Copilot Studio skill topic as an in
 To set up your Microsoft Copilot Studio copilot as a skill:
 
 1. [Add the Bot Framework bot to the allowlist for the Microsoft Copilot Studio copilot](#add-your-bot-framework-bot-to-the-allowlist-for-your-microsoft-copilot-studio-copilot).
-1. [Download the skill manifest for the Microsoft Copilot Studio copilot](#download-the-bot-skill-manifest-for-your-microsoft-copilot-studio-copilot).
+1. [Download the skill manifest for the Microsoft Copilot Studio copilot](#download-the-copilot-skill-manifest-for-your-microsoft-copilot-studio-copilot).
 1. [Use the downloaded skill manifest in Bot Framework Composer to create a connection between the bots](#connect-to-a-microsoft-copilot-studio-skill-in-composer).
-1. [Use the Bot Framework Emulator to confirm the bot works as a skill](#test-your-microsoft-copilot-studio-bot-as-a-skill-with-a-bot-framework-copilot).
+1. [Use the Bot Framework Emulator to confirm the bot works as a skill](#test-your-microsoft-copilot-studio-copilot-as-a-skill-with-a-bot-framework-bot).
 
 ## Prerequisites
 
