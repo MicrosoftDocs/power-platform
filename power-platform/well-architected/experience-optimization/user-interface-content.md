@@ -20,6 +20,8 @@ This guide describes the recommendations for crafting effective content tailored
 
 ## Key design strategies
 
+Writing content that's part of the user interface (UI) design is both an art and science. Combining these copywriting best practices with visual design best practices will improve your end users' experience.
+
 ### Make it scannable
 
 When using a business application, people aren't interested in the features of the UI or being entertained by flowery language. They're focused on task completion. Help them by writing in short, scannable blocks. Divide text into shorter sentences and paragraphs. Avoid overly gushy language. Users often visit a UI with specific objectives in mind, and content should guide them seamlessly toward achieving those objectives.
