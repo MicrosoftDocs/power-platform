@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **Content must be easily understood and provide clear direction.** Use an approachable, consistent, and professional tone that facilitates task completion.** |
+|[EO:01](checklist.md)| **Content must be easily understood and provide clear direction. Use an approachable, consistent, and professional tone that facilitates task completion.** |
 |---|---|
 
 This guide describes the recommendations for crafting effective content tailored for user experiences. Content serves as the primary mode of communication in a user interface, holding more power in communicateing complex ideas compared to visual elements alone. Whether it's guiding users through a process or communicating essential system information, the words we choose profoundly impact how users interact with and perceive an application. 
