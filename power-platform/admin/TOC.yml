@@ -428,7 +428,7 @@
                       href: on-off-switch-for-learning-path-guided-help.md
             - name: Advanced environment operations
               items:
-                - name: Automatic deletion of inactive environments
+                - name: Automatic deletion of Power Platform environments
                   href: automatic-environment-cleanup.md
                 - name: Automatic deletion of inactive Dataverse for Teams environments
                   href: inactive-teams-environment.md
