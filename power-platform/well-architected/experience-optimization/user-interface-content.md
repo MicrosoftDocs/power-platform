@@ -52,7 +52,7 @@ Replace overly technical words with simpler ones. Using words like configure, ac
 
 Avoid double negatives. Double negatives increase cognitive load — they make people spend extra time decoding the message. Focus on direct, positive actions.
 
-### Use a friendly tone
+### Use a friendly, professional tone
 
 Be polite, but not overly ingratiating. People expect to be given prompts and to act. Using 'please' throughout the UI is unnecessary and comes across as amateure. Use please and sorry sparingly, only when the task you're asking is onerous, is your mistake, or has serious consequences. However, it's never good practice to be rude, presumptuous, cocky, or cynical in UI content.
 
