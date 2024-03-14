@@ -154,4 +154,4 @@ In the following example, the KQL query highlights an attempt to use generative 
 
 1. Try to adjust [content moderation](nlu-boost-conversations.md#content-moderation), but keep in mind that lower content moderation settings might result in answers that are less accurate or relevant.
 
-1. If you think your content shouldn't be moderated, [raise a case with customer support](../power-platform/admin/get-help-support.md).
+1. If you think your content shouldn't be moderated, [raise a case with customer support](/power-platform/admin/get-help-support).
