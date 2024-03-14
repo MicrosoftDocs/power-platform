@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[XO:03](checklist.md)| **TODO** Update with checklist details for this item |
+|[XO:03](checklist.md)| **Implement a consistent information architecture. Make finding information and functionality easy. Provide contextual clues and visual indicators to guide users. Use consistent and user-friendly labels for categories, navigation, and other informational elements.** |
 |---|---|
 
 This guide describes the recommendations for designing an effective information architecture (IA) for your workload.
@@ -24,11 +24,11 @@ Information architecture is the way the content and features of a system are org
 
 ### Be consistent with navigation structures
 
-Navigation is the way users move from one page or screen to another in your product. It should be clear, intuitive, and predictable. Use the same navigation elements, such as menus, tabs, breadcrumbs, and buttons, across your workload, and place them in the same locations. Make sure that the navigation reflects the hierarchy and relationships of your content, and that users can always see where they are and where they can go.
+Consistent navigation helps users to orient themselves in the workload experience, and to move easily and efficiently between different pages or screens. It should be clear, intuitive, and predictable. Use the same navigation elements, such as menus, tabs, breadcrumbs, and buttons, across your workload, and place them in the same locations. Make sure that the navigation reflects the hierarchy and relationships of your content, and that users can always see where they are and where they can go.
 
 ### Use consistent and user-friendly labels
 
-Labels are the words or phrases that you use to name and describe your content and features, such as headings, titles, menus, buttons, and links. They should be consistent in tone, language, and format, and use the terms that your users are familiar with and prefer. For example, if you use the term "account" to refer to the user's profile and settings, use it consistently throughout your workload's experience, and avoid using synonyms like "profile" or "settings".
+Labels are the words or phrases that you use to name and describe your content and features, such as headings, titles, menus, buttons, and links. Clear and consistent labels help users to understand and easily navigate the workload experience and to perform their tasks effectively. Labels should be consistent in tone, language, and format, and use the terms that your users are familiar with and prefer. For example, if you use the term "account" to refer to the user's profile and settings, use it consistently throughout your workload's experience, and avoid using synonyms like "profile" or "settings".
 
 Navigation elements should have clear and descriptive labels that communicate the purpose and destination of each element. Users should be able to understand what each element does and where it leads without having to click or tap on it. For example, a menu item labeled "Products" is more informative than one labeled "Menu 1".
 
@@ -38,11 +38,11 @@ Contextual clues and visual indicators are the elements that help users understa
 
 ### Use progressive disclosure
 
-Provide the right amount of information and functionality at the right time, using techniques such as hiding, collapsing, expanding, or revealing the content and functionality as needed. Avoid overwhelming or distracting the users with too much or too little information and functionality. Allow users to control the level of detail and complexity they want to see or interact with.
+Progressive disclosure helps users to focus on their primary tasks and goals, without being distracted or overwhelmed by secondary or irrelevant information and functionality. Provide the right amount of information and functionality at the right time, using techniques such as hiding, collapsing, expanding, or revealing the content and functionality as needed. Avoid overwhelming or distracting the users with too much or too little information and functionality. Allow users to control the level of detail and complexity they want to see or interact with.
 
-### Categorize information
+### Categorize information and functionality
 
-Group and label the content and functionality into meaningful and logical categories, based on the users' needs, tasks, and goals. Use categories that are mutually exclusive and collectively exhaustive, meaning that each item belongs to one and only one category, and that all the items are covered by the categories. Use categories that are coherent and consistent, meaning that the items within each category share a common characteristic or criterion.
+Organizing information and functionality into meaningful and logical groups makes it easier for users to find and access the information and features of your workload. Group and label the content and functionality into meaningful and logical categories, based on the users' needs, tasks, and goals. Use categories that are mutually exclusive and collectively exhaustive, meaning that each item belongs to one and only one category, and that all the items are covered by the categories. Use categories that are coherent and consistent, meaning that the items within each category share a common characteristic or criterion.
 
 ### Group information and functionality into hierarchies
 
