@@ -1,6 +1,6 @@
 ---
 title: "Resource exemption  | MicrosoftDocs"
-description: Exempt apps and flows that you trust from DLP policies
+description: Exempt apps and flows that you trust from DLP policies.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/13/2024
