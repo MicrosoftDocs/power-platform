@@ -1,11 +1,11 @@
 ---
 title: Auto-claim policies for Power Automate licenses
-description: Automatically assign Power Automate licenses to users with auto-claim policies in the Microsoft 365 admin center.
+description: Learn how to automatically assign Power Automate licenses to users with auto-claim policies in the Microsoft 365 admin center.
 author: kenseongtan
 ms.topic: conceptual
 ms.subservice: admin
 ms.author: kenseongtan
-ms.date: 02/12/2024
+ms.date: 03/14/2024
 search.audienceType:
   - admin
 ms.custom:
@@ -45,7 +45,6 @@ In the Power Automate portal:
 - User triggers / saves / turns on a premium cloud flow with attended RPA (Robotic Process Automation)
 - User requests the Power Automate premium license
   
-
 ## Create an auto-claim policy for Power Automate licenses
 
 Use the information described here to set up an auto-claim policy for Power Automate.
@@ -60,8 +59,8 @@ You must have Microsoft 365 global admin privileges to create and manage auto-cl
 
 You must first enable the auto-claim policy feature in the Microsoft 365 admin center before creating an auto-claim policy.
 
-1. Go to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2259913).
-1. In the **Navigation menu**, select **Billing** > **Licenses**.
+1. Sign in to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2259913).
+1. On the **Navigation menu**, select **Billing** > **Licenses**.
 1. Select the [**Auto-claim policy**](https://admin.microsoft.com/adminportal/home?#/licenses/auto-claimpolicies) tab.
 1. Select **Turn on setting**.
 
@@ -86,8 +85,9 @@ To create a new policy, complete the following steps:
 1. On the **Select apps** page, select or clear the checkboxes for the apps to include or exclude with the license.	Select **Next**.
 1. On the **Review and finish** page, verify the new policy information, make any necessary changes, and then select **Create policy**.
 
-The policy details are displayed.
-:::image type="content" source="../media/power-automate-licensing/auto-claim-policy.png" alt-text="Auto-claim policy configuration for Power Automate.":::
+    The policy details display.
+
+    :::image type="content" source="../media/power-automate-licensing/auto-claim-policy.png" alt-text="Auto-claim policy configuration for Power Automate.":::
 
 ## View license assignment in auto-claim policy report
 
@@ -100,20 +100,21 @@ To view the auto-claim policy report:
 
 To change the time period shown, select the **Past 30 days** drop-down list. You can view reports for the past 1, 7, 30, and 90 days.
 
+## Auto-claim policy enabled by default
 
-## Auto-claim policy enabled by default 
-To simplify license management for administrators, in tenants with Managed Environments, auto-claim policies don't require manual activation by admins. Auto-claim policies are automatically created. Starting from April 15th 2024, a license auto-claim policy for Power Automate, will be created in the Microsoft 365 admin center for tenants who are currently using managed environments. Under this policy, the Power Automate premium or per user plan (legacy) license will be automatically assigned to users that requires it if it's available in your tenant. 
+To simplify license management for administrators, in tenants with Managed Environments, auto-claim policies don't require manual activation by admins. Auto-claim policies are automatically created. Starting from April 15, 2024, a license auto-claim policy for Power Automate, will be created in the Microsoft 365 admin center for tenants who are currently using managed environments. Under this policy, the Power Automate premium or per user plan (legacy) license will be automatically assigned to users that requires it if it's available in your tenant.
 
-By default, this policy is applied to users in managed environments. However, admins can choose to extend this policy to apply to standard environments as well via a setting in the Power Platform admin center. 
-
+By default, this policy is applied to users in managed environments. However, admins can choose to extend this policy to apply to standard environments as well via a setting in the Power Platform admin center.
 
 ### Can administrators update the policy?
+
 Yes, administrators can manage the policy in the Microsoft 365 admin center just like any other auto-claim policy. Administrators can disable the policy, delete it, and view reports on which users were assigned licenses.
 
 In the Power Platform admin center, administrators can decide whether the policy should apply to Managed Environments only or all environments.
 
-1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Settings** and click the **Auto-claim policies** option.
-2.	In the **Auto-claim policies** pane, select whether the policy should be applicable to **All Environments** or **Only Managed Environments**.
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Settings** > **Auto-claim policies**.
+1. On the **Auto-claim policies** pane, select whether the policy should be applicable to **All Environments** or **Only Managed Environments**.
 
 ### Support for group-based license assignment
 
