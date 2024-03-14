@@ -11,7 +11,44 @@ ms.custom: template-how-to
 
 Create and run pipelines to easily deploy solutions to environments.
 
-## Create a pipeline
+## Create a pipeline using the Platform host (Preview)
+
+Pipelines are now accessible to all who navigate to the pipelines page for the first time. Create personal pipelines from your development environments to other target environments that you have import access to.
+
+### Prerequisites
+
+- Two environments can be associated to a personal pipeline created from the Pipelines page: one current development environment and a target environment.
+- All environments used in pipelines must have a Microsoft Dataverse database.
+- All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
+
+#### Setting up the Platform host for the first time
+
+If you are the first user in your tenant to navigate to the Pipelines page in an environment not already associated with a custom pipelines host, the Platform host will be provisioned for everyone in the tenant to use.
+
+#### Create a pipeline from the maker portal
+
+First, ensure that you are in the development environment where you want your pipeline to start from.
+
+Click **Create pipeline** in the command bar or from the Pipeline dropdown.
+
+A panel will open, allowing a Maker to enter:
+- Pipeline name: name for the pipeline.
+- Description: an optional description to describe what the pipeline is used for.
+- Target environment: the environment that solutions in the current development environment will be deployed to.
+
+Once **Save** is clicked, the current (source) environment and the selected target environment will be associated with the Platform host, and environment records for each will be created in the Platform host.
+
+ > [!IMPORTANT]
+   >
+   > Environments can only be associated with one pipelines host. If you would like to use a governed pipeline with advanced extensibility, shareability, and more than two environments, ensure that environment records in the Platform host are deleted within the **Manage pipelines** experience so they are freed up to be added in a custom host.
+   >
+
+#### Delete a pipeline you own from the maker portal
+
+Click **Delete** in the command bar to delete the currently selected pipeline in the dropdown. There will be a confirmation message to ensure that there is intent and knowledge of the consequence.
+This action does not remove the run history for the pipeline nor does it delete the associated environment records from the host.
+
+## Create a pipeline using a custom pipelines host
 
 Power Platform administrators can create one or more pipelines, associate any number of environments, then share access with those that will administer or run pipelines.
 
@@ -125,6 +162,15 @@ The pipeline configuration app and host environment provide many other benefits 
 - Retain backups of all solution artifacts by version.
 - Schedule bulk delete jobs to remove unwanted data and conserve database capacity. More information: [Remove a large amount of specific, targeted data with bulk deletion](../admin/delete-bulk-records.md)
 - Use a dashboard to visualize deployment metrics. You may also build your own reports using data stored within the host.
+
+### Accessing the Deployment Pipeline Configuration app
+
+From the maker portal, the **Manage pipelines** button will navigate to the app of the pipelines host that is associated with the current environment:
+
+1. If the current environment is associated with a custom pipelines host, the button will link to the Deployment Pipeline Configuration app within the dedicated Host environment.
+2. If the current environment is associated with the Platform host, the button will link to an embedded Deployment Pipeline Configuration app within the Platform (preview).
+
+The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role and any maker with the Deployment Pipeline Default role who owns a personal pipeline.
 
 ## Next steps
 
