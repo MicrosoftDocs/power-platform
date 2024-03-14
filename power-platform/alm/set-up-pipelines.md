@@ -168,9 +168,9 @@ The pipeline configuration app and host environment provide many other benefits 
 From the maker portal, the **Manage pipelines** button will navigate to the app of the pipelines host that is associated with the current environment:
 
 1. If the current environment is associated with a custom pipelines host, the button will link to the Deployment Pipeline Configuration app within the dedicated Host environment.
-2. If the current environment is associated with the Platform host, the button will link to an embedded Deployment Pipeline Configuration app within the Platform (preview).
+2. If the current environment is associated with the Platform host, the button will link to an embedded Deployment Pipeline Configuration app within the maker portal (preview).
 
-The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role and any maker with the Deployment Pipeline Default role who owns a personal pipeline.
+The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host and any tenant administrator for the app associated with the Platform host.
 
 ## Next steps
 
