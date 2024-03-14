@@ -16,7 +16,7 @@ ms.custom:
 ---
 # Auto-claim policies for Power Automate licenses
 
-As an administrator, you traditionally assign licenses to users _manually_. [Auto-claim for Power Automate licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies) allows administrators to easily set-up policies within the Microsoft 365 admin center, similar to other Microsoft products and services. Once a policy is configured, any user in the organization who requires an individual Power Automate user license is automatically assigned a license.
+As an administrator, you traditionally assign licenses to users _manually_. [Auto-claim for Power Automate licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies) allows administrators to easily set up policies within the Microsoft 365 admin center, similar to other Microsoft products and services. Once a policy is configured, any user in the organization who requires an individual Power Automate user license is automatically assigned a license.
 
 You can create and manage these auto-claim policies in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2259913).
 
@@ -33,7 +33,7 @@ When the auto-claim policy is configured, the following scenarios automatically 
 
 In the Power Automate portal:
 
-- User triggers / saves / turnes on a premium cloud flow (or standard flow for managed environments)
+- User triggers / saves / turns on a premium cloud flow (or standard flow for managed environments)
 - User requests the Power Automate per user license
 
 ### Power Automate premium
@@ -42,13 +42,9 @@ In addition to the scenarios listed for the [Power Automate per user plan](#powe
 
 In the Power Automate portal:
 
-- User triggers / saves / turns on a premium cloud flow with attended RPA
+- User triggers / saves / turns on a premium cloud flow with attended RPA (Robotic Process Automation)
 - User requests the Power Automate premium license
-
-In the Power Automate for desktop application:
-
-- User selects **Go Premium** (roadmap)
-- User has a self-assisted premium trial and is actively using RPA capabilities (roadmap)
+  
 
 ## Create an auto-claim policy for Power Automate licenses
 
@@ -58,7 +54,7 @@ For more information on managing auto-claim policies in the Microsoft 365 admin 
 
 ### Who can create and manage auto-claim policies?
 
-You must have Microsoft 365 global admin privileges to create and manage auto-claim policies. More information: [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+You must have Microsoft 365 global admin privileges to create and manage auto-claim policies. More information: [Admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ### Turn on the auto-claim policy feature
 
@@ -106,9 +102,9 @@ To change the time period shown, select the **Past 30 days** drop-down list. You
 
 
 ## Auto-claim policy enabled by default 
-To simplify license management for administrators, in tenants with Managed Environments, auto-claim policies don't require manual activation by admins. Auto-claim policies are automatically created. Starting from April 15th 2024, a license auto-claim policy for Power Automate, will be created in the Microsoft 365 admin center for tenants who are currently using managed environments. Under this policy, the Power Automate premium or per user plan (legacy) license will be automatically assigned to users that requires it if it is available in your tenant. 
+To simplify license management for administrators, in tenants with Managed Environments, auto-claim policies don't require manual activation by admins. Auto-claim policies are automatically created. Starting from April 15th 2024, a license auto-claim policy for Power Automate, will be created in the Microsoft 365 admin center for tenants who are currently using managed environments. Under this policy, the Power Automate premium or per user plan (legacy) license will be automatically assigned to users that requires it if it's available in your tenant. 
 
-By default, this policy will be applied to users in managed environments. However, admins can choose to extend this policy to apply to standard environments as well via a setting in the Power Platform admin center. 
+By default, this policy is applied to users in managed environments. However, admins can choose to extend this policy to apply to standard environments as well via a setting in the Power Platform admin center. 
 
 
 ### Can administrators update the policy?
@@ -123,9 +119,9 @@ In the Power Platform admin center, administrators can decide whether the policy
 
 Auto-claim policies support individual license assignment, which means that licenses are assigned to individual users. If your organization already has an existing process for license assignment, administrators can still make use of the auto-claim policy while maintaining their current workflow. 
 
-Administrators can review the list of users to whom licenses were assigned through the auto-claim policy in the Microsoft 365 admin center. Then, they can make changes, as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to use Microsoft Entra group-based licensing. For more information about group based licensing, go to [Group-based licensing additional scenarios](/entra/identity/users/licensing-group-advanced).
+Administrators can review the list of users to whom licenses were assigned through the auto-claim policy in the Microsoft 365 admin center. Then, they can make changes, as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to use Microsoft Entra group-based licensing. For more information about group based licensing, go to [Group-based licensing scenarios](/entra/identity/users/licensing-group-advanced).
 
-Here are some commands that can assist in unassigning licenses and adding users to the required Microsoft Entra group.
+Here are some commands that can help in unassigning licenses and adding users to the required Microsoft Entra group.
 
 ```PowerShell
 ##
