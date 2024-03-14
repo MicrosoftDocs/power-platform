@@ -30,6 +30,8 @@
             href: formula-reference.md
           - name: Dataverse formula reference
             href: formula-reference-dataverse.md
+          - name: Cards formula reference
+            href: formula-reference-cards.md
           - name: Desktop flows formula reference
             href: formula-reference-desktop-flows.md
           - name: Power Platform CLI formula reference
