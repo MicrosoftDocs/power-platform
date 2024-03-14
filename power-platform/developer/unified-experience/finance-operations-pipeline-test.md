@@ -49,62 +49,15 @@ In this next image is an example unit test being defined. A description of each 
 
 :::image type="content" source="..\media\unified-experience\devexp-unitTest-task.png" alt-text="Unit test task form with example data.":::
 
-:::row:::
-   :::column span="1":::
-      **Display name**
-   :::column-end:::
-   :::column span="2":::
-      The name of the test execution task.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Service connection**
-   :::column-end:::
-   :::column span="2":::
-      Service connection to the unified developer experience environment on which the deployment has been made.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Package Platform Version<br/>Package Application Version**
-   :::column-end:::
-   :::column span="2":::
-      Versions of the deployed package and connected environment.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Platform Package Path**
-   :::column-end:::
-   :::column span="2":::
-      The location of the Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp NuGet package installed on the agent.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **X++ Tools Path**
-   :::column-end:::
-   :::column span="2":::
-      The location of the Microsoft.Dynamics.AX.Platform.CompilerPackage NuGet package installed on the agent.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Location of the X++ modules to test**
-   :::column-end:::
-   :::column span="2":::
-      The storage location where the build task produced the assemblies of the models included. This value is often set to $(Build.BinariesDirectory).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Search patterns for the X++ modules to test**
-   :::column-end:::
-   :::column span="2":::
-      Include the pattern for the modules that the tests must be run for. Provide a name matching pattern for X++ package (module) names inside the path that is specified in the location of the X++ modules to test option. You can also specify a list of names instead of search patterns, or exclusion filters. More information: [File matching patterns reference](/azure/devops/pipelines/tasks/file-matching-patterns).
-   :::column-end:::
-:::row-end:::
+| Form field | Description |
+|--|--|
+| Display name | The name of the test execution task. |
+| Service connection | Service connection to the unified developer experience environment on which the deployment has been made. |
+| Package Platform Version<p/>Package Application Version | Versions of the deployed package and connected environment. |
+| Platform Package Path | The location of the Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp NuGet package installed on the agent. |
+| X++ Tools Path | The location of the Microsoft.Dynamics.AX.Platform.CompilerPackage NuGet package installed on the agent. |
+| Location of the X++ modules to test | The storage location where the build task produced the assemblies of the models included. This value is often set to $(Build.BinariesDirectory). |
+| Search patterns for the X++ modules to test | Include the pattern for the modules that the tests must be run for. Provide a name matching pattern for X++ package (module) names inside the path that is specified in the location of the X++ modules to test option. You can also specify a list of names instead of search patterns, or exclusion filters. More information: [File matching patterns reference](/azure/devops/pipelines/tasks/file-matching-patterns). |
 
 ### See also
 
