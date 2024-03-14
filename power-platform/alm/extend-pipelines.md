@@ -16,6 +16,7 @@ Pipelines can be custom tailored to serve the unique needs of an organization. F
 > [!IMPORTANT]
 > - New pipelines extensions are being gradually rolled out across regions and might not be available yet in your region.
 > - Existing pipelines customers may need to update the Power Platform pipelines application to enable new features. You can manage the updates within the Power Platform admin center.
+> - Personal pipelines created within the maker portal cannot be extended.
 
 ## Gated extensions available
 Pipelines deployments progress through multiple pre-defined steps until deployment completion. Gated extensions insert custom steps into the progression where custom business logic can be executed. It's like your own personal train where you're in control of where it stops and whether it continues or not.
