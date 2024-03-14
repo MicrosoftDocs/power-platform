@@ -41,7 +41,7 @@ Environments have two built-in roles that provide access to permissions within a
   - View and manage all resources created within the environment.
   - Set data loss prevention policies. More information: [Manage data loss prevention policies](prevent-data-loss.md)<br />
   After creating the database in the environment, you can use the System Administrator role instead of the Environment Admin role.
-- The *Environment Maker* role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Power Automate.
+- The *Environment Maker* role can create resources within an environment including apps, connections, custom connectors, and flows using Power Automate.
 
 Environment makers can also distribute the apps they build in an environment to other users in your organization by sharing the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app)
 
@@ -109,7 +109,7 @@ You can sort and search the list of environments; this is useful if you have a l
 
 ### Environment details
 
-You can see some of the details of your environments by selecting an environment. Select **See all** to see more environment details.
+Select an environment to view the details of that environment, including the URL, region it is hosted in, and version. Select **See all** to see more environment details.
 
 > [!div class="mx-imgBorder"] 
 > ![Environment details.](media/environment-details-see-all.png "Environment details")

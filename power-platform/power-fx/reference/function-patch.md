@@ -260,4 +260,6 @@ ForAll(
 
 To learn more about the usage of **As** operator and **ThisRecord** see **[Operators](operators.md)** article.
 
+
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

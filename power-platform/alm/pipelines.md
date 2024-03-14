@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 01/10/2024
+ms.date: 02/06/2024
 ms.reviewer: "matp"
 ms.topic: "overview"
 contributors:
@@ -35,7 +35,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
   - The system handles the heavy lifting and ongoing maintenance so you don't have to.
 
 - Scale ALM at your own pace:
-  - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI](../developer/cli/introduction.md)
+  - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI `pac pipeline` command group](../developer/cli/reference/pipeline.md) 
 - Achieve compliance, safety, monitoring, and automation goals with:
   - Secure production environments with approval based [delegated deployments](delegated-deployments-setup.md).
   - Customizations and audit log saved automatically and are easily accessible.
@@ -74,6 +74,10 @@ Pipelines deploy solutions as well as configuration for the target environment s
    >
    > Power BI Dashboards (preview) and Power BI Datasets (preview) are not currently supported in pipelines. 
    >
+
+### Why can't I see my pipeline from my environment?
+
+First, ensure that your source and target environments are linked properly. You'll only be able to view your pipeline in the assigned source environments, such as your development environments. When linking each of your environments to your pipeline during configuration, you have an option of **Development Environment** or **Target Environment** environment type. If your pipeline-associated environments are assigned their proper type, your pipeline appears as an option in your source development environment.
 
 ### Does pipelines automatically store solution backups?
 

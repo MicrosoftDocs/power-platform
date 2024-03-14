@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 03/08/2022
 ms.subservice: admin
 ms.author: kaagar
-ms.reviewer: jimholtz 
+ms.reviewer: sericks 
 contributors:
   - ShawnNandiMSFT
 search.audienceType: 

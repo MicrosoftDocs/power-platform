@@ -1,6 +1,6 @@
 ---
 title: Accommodate time zones (preview)
-description: Learn how Microsoft Copilot Studio bots collect and store date and time. Learn how to adjust the user's time zone and to display dates and times correctly in their time zone.
+description: Learn how Microsoft Copilot Studio copilots collect and store date and time. Learn how to adjust the user's time zone and to display dates and times correctly in their time zone.
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: kamrani
-ms.service: power-virtual-agents
 
 ms.custom: ceX, advanced-authoring, bap-template
 ---
@@ -48,7 +47,7 @@ Use these system-level variables to get information about the user's time zone:
 
 ## Manually set the user's time zone
 
-Microsoft Copilot Studio [automatically determines the user's time zone](#how-microsoft-copilot-studio-determines-the-users-time-zone) when your bot prompts the user for a date and time. You can also manually set the timezone.
+Microsoft Copilot Studio [automatically determines the user's time zone](#how-microsoft-copilot-studio-determines-the-users-time-zone) when your copilot prompts the user for a date and time. You can also manually set the timezone.
 
 1. Open the topic in which you want to set the user's time zone.
 
@@ -66,9 +65,9 @@ Microsoft Copilot Studio [automatically determines the user's time zone](#how-mi
 
 1. In the text box type, enter `The local time zone offset is: `, then select _Insert variable_ (**{x}**), and insert the system variable `Conversation.LocalTimeZoneOffset`.
 
-1. Save and test the chatbot.
+1. Save and test the copilot.
 
-    :::image type="content" source="media/manage-date-and-time/test-bot.png" alt-text="Screenshot of the Test bot pane.":::
+    :::image type="content" source="media/manage-date-and-time/test-bot.png" alt-text="Screenshot of the Test copilot pane.":::
 
 ## Display the date and time in the local time zone
 
@@ -96,9 +95,9 @@ In this example, we'll get the current date and time using the Power Fx `Now()` 
 
     :::image type="content" source="media/manage-date-and-time/time-send-message.png" alt-text="Screenshot of a Message node.":::
 
-1. Test your bot in the **Test bot** pane to get the date and time in your time zone.
+1. Test your copilot in the **Test copilot** pane to get the date and time in your time zone.
 
-    :::image type="content" source="media/manage-date-and-time/time-test-bot.png" alt-text="Screenshot of a bot replying with the current date and time in the test bot pane.":::
+    :::image type="content" source="media/manage-date-and-time/time-test-bot.png" alt-text="Screenshot of a copilot replying with the current date and time in the Test copilot pane.":::
 
 ## Related topics
 

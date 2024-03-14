@@ -1,27 +1,26 @@
 ---
 title: "Export data to respond to requests for copies of personal data"
-description: "Export data to respond to requests for copies of personal data in Power Virtual Agents."
+description: "Export data to respond to requests for copies of personal data in Copilot Studio."
 ms.date: 07/28/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: ceX
-ms.service: power-virtual-agents
 
 ---
 
-# Export data to respond to requests for copies of personal data in Power Virtual Agents
+# Export data to respond to requests for copies of personal data in Copilot Studio
 
-This topic discusses the Power Virtual Agents capabilities to find or export personal data for a specific user.
+This article discusses the Copilot Studio capabilities to find or export personal data for a specific user.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Copilot Studio](fundamentals-what-is-copilot-studio.md).
 
 ## Export customer data
 
-### Bot content (as tenant admin)
+### Copilot content (as tenant admin)
 
 1. Go to [https://make.powerapps.com](https://make.powerapps.com) and sign in with your credentials.
 
@@ -31,11 +30,11 @@ This topic discusses the Power Virtual Agents capabilities to find or export per
 
    :::image type="content" source="media/personal-data-export/open-table-2023.png" alt-text="Open Data table.":::
 
-1. Search for chatbot tables.
+1. Search for copilot tables.
 
-   :::image type="content" source="media/personal-data-export/SearchChatbotTables-2023.png" alt-text="Search chatbot tables.":::
+   :::image type="content" source="media/personal-data-export/SearchChatbotTables-2023.png" alt-text="Search copilot tables.":::
 
-1. Select **Chatbot** or **Chatbot subcomponent** from the table list, then select **Export data**. Your data will take a couple of minutes to be compiled for export. 
+1. Select **Copilot** or **Copilot subcomponent** from the table list, then select **Export data**. Your data takes a couple of minutes to be compiled for export. 
 
    :::image type="content" source="media/personal-data-export/exportchatbotandchatbotsubcomponent-2023.png" alt-text="Select entities for export.":::
 
@@ -43,9 +42,9 @@ This topic discusses the Power Virtual Agents capabilities to find or export per
 
    :::image type="content" source="media/personal-data-export/downloadexporteddata-2023.png" alt-text="Download exported data.":::
 
-### Bot sessions (as bot author)
+### Copilot sessions (as copilot author)
 
-You can download session data for the last 30 days from the [sessions analytics page](analytics-sessions.md) in Power Virtual Agents.
+You can download session data for the last 30 days from the [sessions analytics page](analytics-sessions.md) in Copilot Studio.
 
 You can also [export data from the ConversationTranscripts table](analytics-sessions-transcripts.md#export-conversation-transcripts).
 

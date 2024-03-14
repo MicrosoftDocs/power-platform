@@ -1,9 +1,9 @@
 ---
-title: View Power Platform administrative logs using auditing solutions in Microsoft Purview (preview)
+title: View Power Platform administrative logs using auditing solutions in Microsoft Purview
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/30/2024
+ms.date: 02/05/2024
 author: Zeffin
 ms.subservice: admin
 ms.author: johnev
@@ -14,9 +14,7 @@ ms.contributors:
  - drkestel
 ---
 
-# View Power Platform administrative logs using auditing solutions in Microsoft Purview (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# View Power Platform administrative logs using auditing solutions in Microsoft Purview
 
 Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
 
@@ -26,8 +24,6 @@ In this article, you learn about activities that are performed on Power Platform
 - [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
 
 > [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Administrative activities for Power Platform environments are enabled by default on all tenants. You can't disable activity collection.
 > - At least one user with an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview. More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 
@@ -85,6 +81,14 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | Trials | AssignLicenseToUser | Emitted when a trial license is assigned to a user. |
 | Licensing | DeveloperPlanConsent | Emitted when a tenant admin consents to usage of developer plans. |
 | Environment Lifecycle | EnvironmentDisabledByMiser | Emitted when an environment is automatically disabled due to insufficient database capacity. |
+
+## Activity category: Admin actions
+
+Each activity event contains a payload of metadata that is specific to the individual event. The following admin activities are delivered to Microsoft Purview.
+
+| **Event** | **Description** |
+|-------------------------|-------------------------|
+| Apply Admin Role | Emitted when a tenant admin requested the System administrator role in Dataverse in the environment. |
 
 ## View activities in Microsoft Purview
 
