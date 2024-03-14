@@ -7,7 +7,7 @@ ms.author: samathur
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/03/2024
+ms.date: 03/14/2024
 search.audienceType: 
   - admin
 ms.contributors:
@@ -68,7 +68,6 @@ For each region listed, deployment begins as early as the Friday dark hours befo
 | GCC High\*                   | April 8, 2024  |
 | Europe                       | April 15, 2024 |
 | North America                | April 22, 2024 |
-| Dedicated Scale Groups (SPL) | April 29, 2024 |
 | GCC\*                        | April 29, 2024 |
 | DoD\*                        | April 29, 2024 |
 | China\**                      | April 29, 2024 |
