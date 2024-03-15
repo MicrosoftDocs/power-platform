@@ -40,6 +40,8 @@ Contextual clues and visual indicators are the elements that help users understa
 
 Progressive disclosure helps users to focus on their primary tasks and goals, without being distracted or overwhelmed by secondary or irrelevant information and functionality. Provide the right amount of information and functionality at the right time, using techniques such as hiding, collapsing, expanding, or revealing the content and functionality as needed. Avoid overwhelming or distracting the users with too much or too little information and functionality. Allow users to control the level of detail and complexity they want to see or interact with.
 
+A quintessential demonstration of progressive disclosure is the wizard pattern. A wizard is a step-by-step process that allows users to input or view information in a prescribed order and in which subsequent steps may depend on information entered in previous ones. Breaking down complex processes into smaller, sequential steps reduces cognitive load on the user, compared to revealing all fields and information at once. The same amount of content is presented in an easier to follow and ultimately more format.
+
 ### Categorize information and functionality
 
 Organizing information and functionality into meaningful and logical groups makes it easier for users to find and access the information and features of your workload. Group and label the content and functionality into meaningful and logical categories, based on the users' needs, tasks, and goals. Use categories that are mutually exclusive and collectively exhaustive, meaning that each item belongs to one and only one category, and that all the items are covered by the categories. Use categories that are coherent and consistent, meaning that the items within each category share a common characteristic or criterion.
@@ -50,7 +52,11 @@ Arrange and display the content and functionality in a hierarchical order, based
 
 ## Power Platform facilitation
 
-Power Platform details here...
+Model driven app navigation allows you to [configure groupings of screens](/power-apps/maker/model-driven-apps/app-navigation) in various levels.
+
+Canvas app [navigation](/power-apps/maker/canvas-apps/add-screen-context-variables) is manually configured (both the component itself and the behavior). The [Nav control]() is recommended for level 1 navigation.
+
+The wizard pattern can be implemented using the [Subway nav component](/power-platform/guidance/creator-kit/subwaynav) from the Creator Kit.
 
 ## Related links
 

@@ -57,11 +57,7 @@ Incorporate multiple columns, sections, or groupings to logically organize conte
 
 Size and position visual elements appropriately to create a visually pleasing and balanced interface. Align captions with corresponding visuals or titles, maintain consistent spacing between elements, and adhere to a hierarchy based on user importance. Trim unnecessary embellishments and allocate pixels judiciously to elements that matter most. Prioritize and emphasize content and navigation elements, particularly on navigation-intensive apps or homepages, while avoiding superfluous ornamentation that detracts from usability. 
 
-An underlying grid can be useful for arranging elements consistently. The chosen grid behavior should be universal to every screen's content region in the app, and can also be applied at the component level (e.g., cards).
-
-- The _stretch grid_ behavior is characterized by columns and margins that are percentage-based and relative to the viewport size. This allows content to reflow dynamically and maintain balance in the white space around it. Breakpoints can trigger significant layout restructures, with column width being fluid, gutters fixed, and margins fluid except for a fixed margin of 5% of content pixels on the nav's width. An example application of this grid is a dashboard page where dynamic content organization is crucial.
-- Conversely, the _fixed grid_ behavior maintains column and gutter widths regardless of the viewport size, while margins stretch as necessary. This provides greater control over content rendering, allowing for centered or left-aligned layouts. In a fixed grid, column width is fixed at 60px, gutters are fixed, and margins are fluid, with adjustments to a hybrid approach often necessary for smaller screens. Although a fully fixed grid is rare due to limitations on smaller screens, it finds application in news pages or structured card layouts.
-- _Hybrid grids_. A more complex layout may require a combination of stretch and fixed grid behavior using both techniques. For example, a supplementary information pane (e.g., a filtering experience) on the right side of the screen might have fixed grid behavior, while the main content region uses stretch grid. Further swapping of grid behavior can be determined for each screen region using breakpoints (e.g., smaller viewports for mobile determine stretch grid behavior for all screen segments).
+An underlying grid can be useful for arranging elements consistently. The chosen grid behavior should be universal to every screen's content region in the app, and can also be applied at the component level (e.g., cards or side panes). The most common type of grid layout used in web applications is the column grid. Fluid (or stretch) grid behavior is recommended for implementing responsive screens.
 
 ### Use established layouts and grouping patterns
 
@@ -151,15 +147,13 @@ A breakpoint matrix serves as a graphical depiction illustrating the responsive 
 
 ## Power Platform facilitation
 
-Power Platform details here...
+Model driven app form layouts are configured using the studio. The [form designer](/power-apps/maker/model-driven-apps/form-designer-overview) permits makers to add elements into a grid structure, which allows form pages to be inherently responsive. However, embedded custom components like custom pages, embedded canvas components, or Power Apps Component Framework (PCF) code components must implement responsive behavior in their encapsulated implementations.
+
+Canvas apps require explicit configuration on each component to [implement responsive behavior](/power-apps/maker/canvas-apps/create-responsive-layout), allowing more control over the experience and requiring more attention to detail. Screen sizes are determined on the `App` definition, which can be referenced to determine position, behavior, visibility, and other relevent properties. Include relevent canvas component properties in the breakpoint matrix to make it easier for developers to account for all important responsive behavior.
 
 ## Related links
 
-- Layout containers
-- Breakpoints
-- [Create responsive layouts in canvas apps](/power-apps/maker/canvas-apps/create-responsive-layout)
-- [Building responsive canvas apps](/power-apps/maker/canvas-apps/build-responsive-apps)
-- [Getting Started with Responsive Canvas Apps](/shows/the-low-code-revolution/getting-started-with-responsive-canvas-apps)
+- [Fluent layout](https://fluent2.microsoft.design/layout)
 
 ## Experience Optimization checklist
 
