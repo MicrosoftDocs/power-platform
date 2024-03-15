@@ -112,6 +112,11 @@ A [virtual network data gateway](/data-integration/vnet/data-gateway-architectur
 
 Azure Virtual Network support for Power Platform uses an Azure subnet delegation for your Power Platform environment. Subnets are used by workloads in the Power Platform environment. Power Platform API workloads use virtual network support because the requests are short-lived and optimized for a large number of requests.
 
+### What are the scenarios where I should use virtual network support for Power Platform and the virtual network data gateway?
+Virtual network support for Power Platform will be only supported option for all the scenarios for outbound connectivity from Power Platform except [Power BI](https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview) and [Power Platform Data Flows](https://learn.microsoft.com/en-us/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
+
+[Power BI](https://learn.microsoft.com/en-us/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform Data Flows](https://learn.microsoft.com/en-us/data-integration/vnet/data-gateway-power-platform-dataflows) will continue to use [virtual network (vNet) Data Gateway](https://learn.microsoft.com/en-us/data-integration/vnet/overview).
+
 ### How do you ensure that a virtual network subnet or data gateway from one customer isn't used by another customer in Power Platform?
 
 - Virtual Network support for Power Platform uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview).
