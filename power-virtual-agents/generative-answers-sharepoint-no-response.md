@@ -85,7 +85,7 @@ If no results are returned to the search endpoint, as shown in the following res
     > [!Note]
     > Only modern SharePoint pages are supported.
 
-1. It's possible that documents were only recently uploaded to SharePoint or OneDrive, but have yet to be indexed. It's also possible that there are settings that prevent some sites from appearing in search results. For more information, see [Search results missing in SharePoint Online](sharepoint/troubleshoot/search/search-results-missing).
+1. It's possible that documents were only recently uploaded to SharePoint or OneDrive, but have yet to be indexed. It's also possible that there are settings that prevent some sites from appearing in search results. For more information, see [Search results missing in SharePoint Online](/sharepoint/troubleshoot/search/search-results-missing).
 
 ## Missing user permissions
 
