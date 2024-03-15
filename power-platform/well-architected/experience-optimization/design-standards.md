@@ -138,7 +138,7 @@ Modern controls are available for [canvas apps](/power-apps/maker/canvas-apps/co
 
 Canvas apps can utilize [modern theming](/power-apps/maker/canvas-apps/controls/modern-controls/modern-theming) to reference a consistent brand palette across all controls in the app.
 
-Model driven apps support [themes](/power-apps/maker/model-driven-apps/create-themes-organization-branding) is stored in a table and can be modified for basic branding elements (e.g., header color, links, et cetera).
+Model driven apps support [themes](/power-apps/maker/model-driven-apps/create-themes-organization-branding) which can modify basic branding elements like the app header colors, links, and some form icons.
 
 Reusable, solution aware components are available in multiple forms for various app types. [Custom canvas components](/power-apps/maker/canvas-apps/create-component) can be used in canvas apps or custom pages and are built using low code. [Code components](/power-apps/developer/component-framework/overview) can implement components that can be designed for canvas app, model driven apps, and [Power Pages](/power-pages/configure/component-framework-tutorial) using the pro developer Power Apps Component framework.
 
