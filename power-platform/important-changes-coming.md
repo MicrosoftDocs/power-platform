@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 06/29/2023
+ms.date: 03/14/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -21,6 +21,9 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## DLP resource exemption feature
+Effective March 2024, the data loss prevention (DLP) [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that have never used it before. By October 2024, the resource exemption feature will be deprecated for all customers.
 
 ## Activity Editor was removed in model-driven apps
 
@@ -125,7 +128,7 @@ We'll be introducing new Fluent UI controls that have better usability, accessib
 ### Impact
 
 - Starting April 2023, these controls can no longer be added to forms.
-- Existing control instances will work on existing forms until April 2024.
+- No additional support or fixes will be provided on these controls after April 2024.
 
 ### Action required by you
 
