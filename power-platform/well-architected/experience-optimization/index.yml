@@ -34,7 +34,7 @@ landingContent:
             url: principles.md#design-for-simplicity
           - text: Design for efficiency
             url: principles.md#design-for-efficiency
-  - title: Plan and structure the experience
+  - title: Plan and structure
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -68,6 +68,8 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+          - text: Power Apps Studio documentation
+            url: /power-apps/maker/canvas-apps/power-apps-studio
           - text: Creator Kit
             url: /power-platform/guidance/creator-kit/overview
           - text: Fluent UI Insights
