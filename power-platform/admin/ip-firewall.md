@@ -1,7 +1,7 @@
 ---
-title: IP firewall in Power Platform environments (preview)
+title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 01/09/2024
+ms.date: 03/15/2024
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -12,7 +12,6 @@ ms.custom:
 ---
 
 # IP firewall in Power Platform environments
-
 
 The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyses the IP address of each request in real time. For example, suppose the IP firewall is turned on in your production Dataverse environment and allowed IP addresses are in the ranges associated with your office locations and not any external IP location like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
 
@@ -76,7 +75,7 @@ We recommend that you should test the IP firewall in your test environment first
 
 ## Licensing requirements for IP firewall
 
-IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md), with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 In addition, access to using IP firewall for Microsoft Dataverse requires users in the environments where the IP firewall is enforced to have one of these subscriptions:
 
@@ -148,7 +147,7 @@ Currently, you can only use IP firewall for OData endpoints in Dataverse to acce
 IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key [(BYOK)](manage-encryption-key.md) encryption keys. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK-enabled tenant are locked down to SQL only, therefore audit logs can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
 
 ### Does IP firewall support IPv6 IP ranges?
-Currently, IP firewall does not support IPv6 IP ranges.
+Currently, IP firewall doesn't support IPv6 IP ranges.
 
 ## Next steps
 
