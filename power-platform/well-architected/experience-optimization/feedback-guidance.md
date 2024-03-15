@@ -56,8 +56,19 @@ In-app guidance comprises the various ways of helping users learn and use your w
 
 ## Power Platform facilitation
 
-- Facilitation 1
-- Facilitation 2
+App message bar notifications that span the top of the screen can be triggered in canvas apps [using the Power Fx formula](/power-platform/power-fx/reference/function-showerror) and in model driven apps using [customized command bar actions](/power-apps/maker/model-driven-apps/commanding-use-powerfx).
+
+In-app notifications can be pushed to a centralized user notifications hub [model driven apps](/power-apps/user/notifications) and [the Power Apps mobile app](/power-apps/mobile/mobile-notifications). These can be invoked by the [Dataverse Web API action](/power-apps/developer/data-platform/webapi/reference/sendappnotification?view=dataverse-latest), or more conveniently via [pro code plugins](https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?tabs=clientapi) or [low code plugins](/power-apps/maker/data-platform/lowcode-plug-ins-examples#send-in-app-notifications-based-on-an-instant-action).
+
+The Power Apps notification connector can [invoke push notifications](/power-apps/maker/canvas-apps/add-notifications) to devices with Power Apps mobile app installed.
+
+Universal help panels can be implemented using a [side pane](/power-platform/guidance/creator-kit/panel) in canvas apps or as a [custom page side dialog](/power-apps/developer/model-driven-apps/clientapi/navigate-to-custom-page-examples#open-as-a-side-dialog) in model driven apps.
+
+Use the modern [info button](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-info-button) to provide inline contextual information in canvas apps.
+
+Dataverse offers [server-side business rules](/power-apps/maker/data-platform/data-platform-create-business-rule) for basic field-level input validation. Low code plugins can implement [advanced server-side input validation and customized errors defined in Power Fx](/power-apps/maker/data-platform/lowcode-plug-ins-examples#input-validation-and-custom-errors) during server operations.
+
+Notifications to other services in the Power Platform ecosystem can be invoked from connectors, like [Outlook](/power-apps/teams/add-app-notifications) or [Microsoft Teams](/templates/details/52f77e0cde234231903129fce1327763/notify-a-user-in-teams/).
 
 ## Related links
 
