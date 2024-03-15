@@ -52,15 +52,17 @@ Arrange and display the content and functionality in a hierarchical order, based
 
 ## Power Platform facilitation
 
-Model driven app navigation allows you to [configure groupings of screens](/power-apps/maker/model-driven-apps/app-navigation) in various levels.
+Model driven app navigation allows you to [configure groupings of pages](/power-apps/maker/model-driven-apps/app-navigation) in various levels. The designer lets you control which forms, views, and custom pages exist in the app.
 
-Canvas app [navigation](/power-apps/maker/canvas-apps/add-screen-context-variables) is manually configured (both the component itself and the behavior). The [Nav control]() is recommended for level 1 navigation.
+Canvas apps are made up of [screens](/power-apps/maker/canvas-apps/controls/control-screen), and [navigation](/power-apps/maker/canvas-apps/add-screen-context-variables) between them can be implemented using native components. A [gallery](/power-apps/maker/canvas-apps/controls/control-gallery) or [vertical layout container](/power-apps/maker/canvas-apps/controls/control-vertical-container) can be used to construct listed elements as nodes, where each contains a clickable element, like a [button](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-button) that [navigates](/power-platform/power-fx/reference/function-navigate) between screens. Use [custom components](/power-apps/maker/canvas-apps/create-component) to implement reusable global navigation components that appear on every screen.
+
+The [Nav control](/power-platform/guidance/creator-kit/nav) in Creator Kit can be used for primary navigation. [Tab list](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-tabs-or-tabs-list) is commonly used for secondary navigation to switch content within a screen. The modern [link](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-link) control can be used for [launching outside the app](/power-platform/power-fx/reference/function-param). Universal navigation to resources can be placed in a global [app header](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-header) by overlaying clickable navigation [icons](/power-apps/maker/canvas-apps/controls/control-shapes-icons) (or [Fluent icons](/power-platform/guidance/creator-kit/icon)) over the header in a [container](/power-apps/maker/canvas-apps/controls/control-container).
 
 The wizard pattern can be implemented using the [Subway nav component](/power-platform/guidance/creator-kit/subwaynav) from the Creator Kit.
 
 ## Related links
 
-Related links here.
+- [Navigation in a canvas app learn module](/training/modules/navigation-canvas-app/)
 
 ## Experience Optimization checklist
 

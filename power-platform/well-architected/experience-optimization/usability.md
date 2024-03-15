@@ -130,11 +130,13 @@ Even though it is better if the system can be used without documentation, it may
 
 ## Power Platform facilitation
 
-For canvas, although many interactions are built into Power Apps modern components themselves, these rules should also be considered on the scope of the screen layout or overall application flow. 
+For canvas apps, progress indication and loading can be indicated using the modern [progress bar](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-progress-bar) and [spinner](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-spinner) controls. The modern [badge](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-badge) is intended to display statuses.
 
-- Progress indication can be implemented using the modern controls with loading patterns described in guidance: [Progress bar control](), [Progress bar guidance](), [Spinner control](), [Spinner guidance]()
+Robust error handling can be implemented in canvas apps on the client [using Power Fx expressions related to errors](/power-platform/power-fx/reference/function-iferror).
 
-For model driven apps, even more usability is built into the interface, so focus the usability heuristics on the parts of the experience you choose to configure.
+Custom server-side errors can be defined with Power Fx using [low code plugins](/power-apps/maker/data-platform/lowcode-plug-ins-examples#input-validation-and-custom-errors), including pre-operation validation.
+
+For model driven apps, usability is built into the interface, so focus the usability heuristics on the parts of the experience you choose to configure. An example of inbuilt accelerator is the [personal views](/power-apps/maker/model-driven-apps/create-edit-views#personal-views) feature, which lets users save filtering and column preferences for a table in an app. [Custom help pages](/power-apps/maker/data-platform/create-custom-help-pages) can be configured to offer a detailed help resource within the app.
 
 ## Related links
 

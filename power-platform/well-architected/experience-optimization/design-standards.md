@@ -134,14 +134,29 @@ Interaction is where accessibility matters the most. If a user is unable to seam
 
 ## Power Platform facilitation
 
-Canvas apps supports [accessible properties](#) and comprehensive guidance on [building accessible apps in Power Apps](/power-apps/maker/canvas-apps/accessible-apps). Use [in-studio tooling](/power-apps/maker/canvas-apps/accessibility-checker) to validate accessibility compliance.
+Canvas apps can utilize [modern theming](/power-apps/maker/canvas-apps/controls/modern-controls/modern-theming) to reference a consistent brand palette.
 
-Although model driven apps are accessible without need for configuration, you must ensure all [web resources added to the app are accessible](/power-apps/developer/model-driven-apps/create-accessible-web-resources). All embedded canvas experiences (including custom pages) must be manually configured to meet accessibility standards.
+Model driven apps support [themes](/power-apps/maker/model-driven-apps/create-themes-organization-branding) is stored in a table and can be modified for basic branding elements (e.g., header color, links, et cetera).
+
+Reusable, solution aware components are available in multiple forms for various app types. [Custom canvas components](/power-apps/maker/canvas-apps/create-component) can be used in canvas apps or custom pages and are built using low code. [Code components](/power-apps/developer/component-framework/overview) can implement components that can be designed for canvas app, model driven apps, and [Power Pages](/power-pages/configure/component-framework-tutorial) using the pro developer Power Apps Component framework.
+
+Canvas apps supports [accessible properties](/power-apps/maker/canvas-apps/controls/properties-accessibility) that map to specific assistive technology functions. Use [in-studio tooling](/power-apps/maker/canvas-apps/accessibility-checker) to validate accessibility compliance.
+
+Although model driven apps are accessible without configuration, you must ensure all [web resources added to the app are accessible](/power-apps/developer/model-driven-apps/create-accessible-web-resources). All embedded canvas experiences (including [custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)) must be manually configured to meet accessibility standards.
+
+Model driven apps provide [standard keyboard shortcuts for navigating forms and views](/power-apps/user/screen-reader).
+
+Canvas apps require code components to enable keyboard shortcuts, which can be configured using the Creator Kit [keyboard shortcuts](/power-platform/guidance/creator-kit/keyboardshortcuts) component.
 
 ## Related links
 
-- [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [Building accessible apps in Power Apps](/power-apps/maker/canvas-apps/accessible-apps)
+- [Accessibility limitations in canvas apps](/power-apps/maker/canvas-apps/accessible-apps-limitations)
 - [Power Apps accessibility standards whitepaper](https://powerapps.microsoft.com/en-us/blog/powerapps-canvas-app-accessibility-guidelines/)
+- [Use a screen reader in canvas apps](/power-apps/user/screen-reader)
+- [WCAG standards guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [Microsoft Inclusive Design](https://inclusive.microsoft.design/)
+- [Fluent UI accessibility guidance](https://fluent2.microsoft.design/accessibility)
 
 ## Experience Optimization checklist
 
