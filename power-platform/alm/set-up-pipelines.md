@@ -184,13 +184,13 @@ The Deployment Pipeline Configuration app can be accessed by anyone with the Dep
 
 1. From the maker portal, begin in an environment that you want to disassocite, and click **Solutions**.
 1. Choose any solution that you have access to, and click into it.
-1. Navigate to the **Pipelines** page from the left navigation pane, and click **Manage pipelines** in the command bar. If you are beginning with a custom host, you can also go directly to the dedicated host environment and run the **Deployment Pipeline Configuration** app from there.
+1. Navigate to the **Pipelines** page from the left navigation pane, and then click **Manage pipelines** in the command bar. If you are beginning with a custom host, you can also go directly to the dedicated host environment and run the **Deployment Pipeline Configuration** app from there.
 1. Now that you are in the **Deployment Pipeline Configuration** app, navigate to **Environments** from the left navigation pane.
-1. Select the environment record(s) for the environment(s) that you want to disassociate from this host.
+1. In the **Added Deployment Environments** table shown by default, select the environment record(s) for the environment(s) that you want to disassociate from this host.
 1. Click **Delete** in the command bar, and confirm deletion.
 1. For associating the deleted environment(s) to the new host, Repeat steps 1-4 but in the context of the desired host to associate the environments with.
-1. In the **Added Deployment Environments** table, click **New** in the command bar.
-1. Create the environment record by assigning a name, type, environment ID, and optional description.
+1. In the **Added Deployment Environments** table shown by default, click **New** in the command bar.
+1. Create the environment record by assigning a name, type, environment ID, and optional description. Now you will be able to link the environment(s) to pipelines in the new host.
 
 
 ## Next steps
