@@ -17,7 +17,7 @@ This article provides information on how to create a plug-in using the Power Pla
 ## Prerequisites
 
 - Visual Studio 2019 or 2022
-- [Power Platform Tools extension for Visual Studio](/power-platform/developer/devtools-vs)
+- [Power Platform Tools extension for Visual Studio](devtools-vs.md)
 - .NET Framework 4.6.2 is required for plug-in or custom workflow activity development
 - Power Apps subscription or a trial environment
 
@@ -25,9 +25,9 @@ This article provides information on how to create a plug-in using the Power Pla
 
 Follow these instructions to create a solution with plug-in library, connect to your Power Platform environment and register custom code assemblies, steps, and more.
 
-1. Use Power Platform Tools extension for Visual Studio to create a new solution with a plug-in library. For instructions, go to the [Create a Power Platform Tools project](/power-platform/developer/devtools-vs) article in the Power Platform developer guide.
+1. Use Power Platform Tools extension for Visual Studio to create a new solution with a plug-in library. For instructions, go to the [Create a Power Platform Tools project](devtools-vs-create-project.md) article.
 
-    If you already have an existing solution set up, follow instructions in [Add a new project to a Power Platform solution](/power-platform/developer/devtools-vs-create-project#add-a-new-project-to-a-power-platform-solution) in the Power Platform developer guide to add a Plug-in Library project to the solution using the Power Platform Tools template.
+    If you already have an existing solution set up, follow instructions in [Add a new project to a Power Platform solution](devtools-vs-create-project.md#add-a-new-project-to-a-power-platform-solution) to add a Plug-in Library project to the solution using the Power Platform Tools template.
 
 1. In the **Tools** menu, select **Connect to Dataverse**.
 
@@ -44,13 +44,13 @@ The Power Platform Explorer view is displayed or you can open that view from the
 
 ## Register a plug-in step with Dataverse
 
-Follow these instructions to register a plug-in step (also known as an SDK message processing step). The step identifies what data table and event causes your plug-in to execute. More information: [Event framework](../event-framework.md), [Register plug-in step](../register-plug-in.md#step-registration)
+Follow these instructions to register a plug-in step (also known as an SDK message processing step). The step identifies what data table and event causes your plug-in to execute. More information: [Event framework](/power-apps/developer/data-platform/event-framework), [Register plug-in step](/power-apps/developer/data-platform/register-plug-in#step-registration)
 
 1. Select **View** > **Power Platform Explorer**, expand your environment node and the **Tables** subnode.
 
 1. Right-click on the table type (for example, "Account") that the step is to be registered on, then select **Create Plug-in**.
 
-    :::image type="content" source="../media/tools/devtools-create-plugin.png" alt-text="Create a plug-in.":::
+    :::image type="content" source="./media/devtools-create-plugin.png" alt-text="Create a plug-in.":::
 
     > [!NOTE]
     > You can also create a plug-in by expanding the **Event Catalog**, right-clicking a business event, and choose **Add Plug-in**.
@@ -125,7 +125,7 @@ namespace PPTools_Sample_Solution.NotifyPlugin
 }
 ```
 
-At this point you would add your custom plug-in code where indicated by the TODO code comments. For more information, read some of these related topics: [Pass configuration data to your plug-in](../write-plug-in.md#pass-configuration-data-to-your-plug-in), [Understand the execution context](../understand-the-data-context.md#understand-the-execution-context), and [Tracing and logging](../logging-tracing.md).
+At this point you would add your custom plug-in code where indicated by the TODO code comments. For more information, read some of these related topics: [Pass configuration data to your plug-in](/power-apps/developer/data-platform/write-plug-in#pass-configuration-data-to-your-plug-in), [Understand the execution context](/power-apps/developer/data-platform/understand-the-data-context), and [Tracing and logging](/power-apps/developer/data-platform/logging-tracing).
 
 > [!IMPORTANT]
 > We encourage you to use the Power Platform Tools context menus. When you use the Power Platform Explorer context menus to add plug-ins, classes are generated using the provided information and deployment entries in the CrmPackage project's RegisterFile.crmregister file are maintained. It is this information that is used for deployment of assemblies, plug-ins, and steps.
@@ -159,32 +159,25 @@ After deployment completes, select the refresh icon in **Power Platform Explorer
 
 Entity images are snapshots of entity data before or after the core operation (for example: a create or update). You may (optionally) add entity images on plug-in steps using the **Power Platform Explorer** view. To add an image to a step in the **Power Platform Explorer** view,  expand the **Plug-in Assemblies** node tree to display the target plug-in step, and then right-click on the step to display the context menu from which you can choose **Add Image**.
 
-:::image type="content" source="../media/tools/devtools-add-image.png" alt-text="Add an image to a step.":::
+:::image type="content" source="./media/devtools-add-image.png" alt-text="Add an image to a step.":::
 
 You can also add an image in the **Power Platform Explorer** view under **Event Catalog** on a step of an event plug-in.
 
-:::image type="content" source="../media/tools/devtools-add-image(2).png" alt-text="Add an image to a event step.":::
+:::image type="content" source="./media/devtools-add-image(2).png" alt-text="Add an image to a event step.":::
 
 After you select **Add Image** in the context menu, fill out the form that appears.
 
-:::image type="content" source="../media/tools/devtools-create-image.png" alt-text="Define an entity image.":::
+:::image type="content" source="./media/devtools-create-image.png" alt-text="Define an entity image.":::
 
 In the form, **Pre Image**/**Post Image** specifies the entity data as it exists before (Pre) or after (Post) the core operation. The **Name** field defines the logical name of the entity that you want data for. **Entity Alias** is the named index that you will use in your code to identify the row in the image table that contains the target entity data. **Parameters** is the list of entity data columns that you want. Specify only the columns that you need since plug-in performance will be reduced the more columns you specify.
 
-More information: [Define entity images](../register-plug-in.md#define-entity-images).
-
-## Next steps
-
-Learn more about plug-in development
-
-> [!div class="nextstepaction"]
-> [Next step](../plug-ins.md#next-steps)
+More information: [Define entity images](/power-apps/developer/data-platform/register-plug-in#define-entity-images).
 
 ## Providing tool feedback
 
 You can send tool feedback to Microsoft using the feedback icon in the Power Platform Explorer view.
 
-:::image type="content" source="../media/tools/devtools-feedback-dialog(small).png" alt-text="Provide feedback.":::
+:::image type="content" source="./media/devtools-feedback-dialog(small).png" alt-text="Provide feedback.":::
 
 ### See Also
 
