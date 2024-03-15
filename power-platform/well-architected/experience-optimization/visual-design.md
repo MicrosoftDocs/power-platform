@@ -251,9 +251,11 @@ Tailor your signals to the specific context and user's needs. For example, if us
    :::column-end:::
 :::row-end:::
 
+<!---
 ## Power Platform facilitation
 
 These visual design recommendations are universal for overall design, and implicit in the Power Apps modern controls. Take these into consideration when determining overall design and arrangement of components available.
+-->
 
 ## Related links
 

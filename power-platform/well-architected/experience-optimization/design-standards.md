@@ -134,15 +134,14 @@ Interaction is where accessibility matters the most. If a user is unable to seam
 
 ## Power Platform facilitation
 
-- [Building accessible apps in Power Apps](/power-apps/maker/canvas-apps/accessible-apps)
-- [Power Apps Accessibility Checker feature](/power-apps/maker/canvas-apps/accessibility-checker)
+Canvas apps supports [accessible properties](#) and comprehensive guidance on [building accessible apps in Power Apps](/power-apps/maker/canvas-apps/accessible-apps). Use [in-studio tooling](/power-apps/maker/canvas-apps/accessibility-checker) to validate accessibility compliance.
+
+Although model driven apps are accessible without need for configuration, you must ensure all [web resources added to the app are accessible](/power-apps/developer/model-driven-apps/create-accessible-web-resources). All embedded canvas experiences (including custom pages) must be manually configured to meet accessibility standards.
 
 ## Related links
 
 - [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
-- [US ADA](https://www.access-board.gov/ada/)
-- [EU Accessibility Act](https://ec.europa.eu/social/main.jsp?catId=1202)
-- [Accessibility Insights tool](https://accessibilityinsights.io/)
+- [Power Apps accessibility standards whitepaper](https://powerapps.microsoft.com/en-us/blog/powerapps-canvas-app-accessibility-guidelines/)
 
 ## Experience Optimization checklist
 

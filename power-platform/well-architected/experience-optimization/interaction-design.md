@@ -169,9 +169,11 @@ Clearly communicate expectations and instructions to users, specifying what acti
 
 ![Postel's Law](./media/interaction-design/postel.svg)
 
+<!---
 ## Power Platform facilitation
 
 Although some interaction implementation has been encapsulated into the modern components themselves, these rules should also be considered on the scope of the screen layout or overall application flow.
+--->
 
 ## Related links
 
