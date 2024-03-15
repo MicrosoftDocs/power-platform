@@ -17,7 +17,7 @@ This article provides information on how to create a plug-in using the Power Pla
 ## Prerequisites
 
 - Visual Studio 2019 or 2022
-- [Power Platform Tools extension for Visual Studio](devtools-vs.md)
+- [Power Platform Tools extension for Visual Studio](../devtools-vs.md)
 - .NET Framework 4.6.2 is required for plug-in or custom workflow activity development
 - Power Apps subscription or a trial environment
 
@@ -25,9 +25,9 @@ This article provides information on how to create a plug-in using the Power Pla
 
 Follow these instructions to create a solution with plug-in library, connect to your Power Platform environment and register custom code assemblies, steps, and more.
 
-1. Use Power Platform Tools extension for Visual Studio to create a new solution with a plug-in library. For instructions, go to the [Create a Power Platform Tools project](devtools-vs-create-project.md) article.
+1. Use Power Platform Tools extension for Visual Studio to create a new solution with a plug-in library. For instructions, go to the [Create a Power Platform Tools project](../devtools-vs-create-project.md) article.
 
-    If you already have an existing solution set up, follow instructions in [Add a new project to a Power Platform solution](devtools-vs-create-project.md#add-a-new-project-to-a-power-platform-solution) to add a Plug-in Library project to the solution using the Power Platform Tools template.
+    If you already have an existing solution set up, follow instructions in [Add a new project to a Power Platform solution](../devtools-vs-create-project.md#add-a-new-project-to-a-power-platform-solution) to add a Plug-in Library project to the solution using the Power Platform Tools template.
 
 1. In the **Tools** menu, select **Connect to Dataverse**.
 
@@ -180,11 +180,9 @@ You can send tool feedback to Microsoft using the feedback icon in the Power Pla
 :::image type="content" source="./media/devtools-feedback-dialog(small).png" alt-text="Provide feedback.":::
 
 ### See Also
+>  
+[Tutorial: Debug a plug-in](/power-apps/developer/data-platform/tutorial-debug-plug-in?tabs=pptools)<br/>  
+[Event framework](/power-apps/developer/data-platform/event-framework)<br/>  
+[Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)<br/>  
 
-[Power Platform Tools for Visual Studio](/power-platform/developer/devtools-vs)<br/>  
-[Create a Power Platform Tools project](/power-platform/developer/devtools-vs-create-project)<br/>  
-[Tutorial: Debug a plug-in](../tutorial-debug-plug-in.md?tabs=pptools)<br/>  
-[Event framework](../event-framework.md)<br/>  
-[Use plug-ins to extend business processes](../plug-ins.md)<br/>  
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
