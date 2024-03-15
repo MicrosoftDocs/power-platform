@@ -1,17 +1,19 @@
 ﻿---
-title: Virtual Network support for Power Platform overview (preview)
-description: Learn about Azure Virtual Network support for Microsoft Power Platform and Dynamics 365 apps, understanding prerequisites and support plans to optimize your environment.
-ms.date: 2/15/2024
+title: Virtual network support for Power Platform overview (preview)
+description: Learn about Azure virtual network support for Microsoft Power Platform and Dynamics 365 apps.
+ms.date: 03/15/2024
 ms.topic: overview
 ms.component: pa-admin
+ms.reviewer: sericks
 ms.subservice: admin
 author: ritesp
 ms.author: ritesp
 search.audienceType: admin
 ms.custom: "admin-security"
+
 ---
 
-# Virtual Network support for Power Platform overview (preview)
+# Virtual network support for Power Platform overview (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -44,7 +46,7 @@ Power Platform supports Dataverse plug-ins, connectors, and with a virtual netwo
 - Use Dataverse plug-ins to connect to your on-premises data sources such as SQL server, Oracle, or SAP. You protect your data from data breaches and other external threats.
 
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
-- Use connectors like SQL Connector to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) to establish secure connections to private, endpoint-enabled Azure Queues.
+- Use connectors like SQL Connector to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) to establish secure connections to private, endpoint-enabled Azure queues.
 
 ### Limitations
 
