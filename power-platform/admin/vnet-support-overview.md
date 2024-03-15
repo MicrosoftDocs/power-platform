@@ -1,5 +1,5 @@
 ﻿---
-title: Virtual network support for Power Platform overview (preview) 
+title: "Virtual network support for Power Platform overview (preview) | MicrosoftDocs"
 description: Learn about Azure virtual network support for Microsoft Power Platform and Dynamics 365 apps.
 author: ritesp
 ms.topic: overview
