@@ -44,6 +44,7 @@ Power Platform supports Dataverse plug-ins, connectors, and with a virtual netwo
 - Use Dataverse plug-ins to connect to your on-premises data sources such as SQL server, Oracle, or SAP. You protect your data from data breaches and other external threats.
 
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
+- Use connectors like SQL Connector to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) to establish secure connections to private, endpoint-enabled Azure Queues.
 
 ### Limitations
 
@@ -81,7 +82,13 @@ The following table lists the services that support Azure subnet delegation for 
 
 | Area | Power Platform services | Virtual Network support |
 |------------|-------------------|--------------|
-| Dataverse | Dataverse plug-ins | Public preview |
+| Dataverse | [Dataverse plug-ins](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins) | Preview |
+| Connectors | [SQL](https://learn.microsoft.com/en-us/connectors/sql/) | Preview |
+|            | [Azure SQL Data Warehouse](https://learn.microsoft.com/en-us/connectors/sqldw/) | Preview|
+|            | [Azure Queue](https://learn.microsoft.com/en-us/connectors/azurequeues/) | Preview|
+|            | [Custom Connector](https://learn.microsoft.com/en-us/connectors/custom-connectors/) | Preview|
+|            | [Http with Microsoft Entra](https://learn.microsoft.com/en-us/connectors/webcontentsv2/) | Preview|
+|            | [Azure Key Vault](https://learn.microsoft.com/en-us/connectors/keyvault/) | Preview|
 
 
 ## Licensing requirements
