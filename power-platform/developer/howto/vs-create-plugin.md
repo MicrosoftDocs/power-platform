@@ -181,8 +181,8 @@ You can send tool feedback to Microsoft using the feedback icon in the Power Pla
 
 ### See Also
 >  
-[Tutorial: Debug a plug-in](/power-apps/developer/data-platform/tutorial-debug-plug-in?tabs=pptools)<br/>  
-[Event framework](/power-apps/developer/data-platform/event-framework)<br/>  
-[Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)<br/>  
+[Tutorial: Debug a plug-in](/power-apps/developer/data-platform/tutorial-debug-plug-in?tabs=pptools)  
+[Event framework](/power-apps/developer/data-platform/event-framework)  
+[Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
