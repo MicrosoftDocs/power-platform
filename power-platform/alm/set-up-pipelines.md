@@ -4,8 +4,10 @@ description: Learn how to create, configure, share, and manage Power Platform pi
 author: caburk
 ms.author: matp
 ms.topic: how-to
-ms.date: 09/15/2023
+ms.date: 03/18/2024
 ms.custom: template-how-to
+contributors:
+- asheehi1
 ---
 # Set up pipelines in Power Platform
 
@@ -13,13 +15,19 @@ Create and run pipelines to easily deploy solutions to environments.
 
 ## Create a pipeline using the Platform host (Preview)
 
-Pipelines are now accessible to all who navigate to the pipelines page for the first time. Create personal pipelines from your development environments to other target environments that you have import access to.
+Pipelines are now accessible to all who navigate to the pipelines page for the first time. Create personal pipelines from your development environments to other target environments that you have import access to. Leverage the benefits of pipelines such as no downloads or uploads required, deployment scheduling, inline target environment solution validation, upfront connection reference and environment variable value validation, and Copilot-generated deployment notes with an easy setup process.
 
 ### Prerequisites
 
 - Two environments can be associated to a personal pipeline created from the Pipelines page: one current development environment and a target environment.
 - All environments used in pipelines must have a Microsoft Dataverse database.
 - All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
+
+### Current limitations with personal pipelines
+
+- Personal pipelines cannot be extended.
+- Only two environments, a source and a target, can be configured.
+- Personal pipelines cannot yet be shared with other users.
 
 #### Setting up the Platform host for the first time
 
@@ -36,11 +44,11 @@ A panel will open, allowing a Maker to enter:
 - Description: an optional description to describe what the pipeline is used for.
 - Target environment: the environment that solutions in the current development environment will be deployed to.
 
-Once **Save** is clicked, the current (source) environment and the selected target environment will be associated with the Platform host, and environment records for each will be created in the Platform host.
+Once **Save** is clicked, the current (source) environment and the selected target environment will be associated with the Platform host, and environment records for each will be created in the Platform host. Then, the newly-created pipeline will be auto-selected, and you're ready to [run the pipeline](run-pipeline.md).
 
  > [!IMPORTANT]
    >
-   > Environments can only be associated with one pipelines host. If you would like to use a governed pipeline with advanced extensibility, shareability, and more than two environments, ensure that environment records in the Platform host are deleted within the **Manage pipelines** experience so they are freed up to be added in a custom host.
+   > Environments can only be associated with one pipelines host. If you would like to use a governed pipeline with advanced extensibility, shareability, and more than two environments, ensure that environment records in the Platform host are deleted within the **Manage pipelines** experience so they are freed up to be associated with a custom host. Deleting a pipeline will **not** delete the environment records linked to that pipeline.
    >
 
 #### Delete a pipeline you own from the maker portal
@@ -165,12 +173,25 @@ The pipeline configuration app and host environment provide many other benefits 
 
 ### Accessing the Deployment Pipeline Configuration app
 
-From the maker portal, the **Manage pipelines** button will navigate to the app of the pipelines host that is associated with the current environment:
+From the maker portal, the **Manage pipelines** button in the command bar will navigate to the app of the pipelines host that is associated with the current environment:
 
 1. If the current environment is associated with a custom pipelines host, the button will link to the Deployment Pipeline Configuration app within the dedicated Host environment.
-2. If the current environment is associated with the Platform host, the button will link to an embedded Deployment Pipeline Configuration app within the maker portal (preview).
+1. If the current environment is associated with the Platform host, the button will link to an embedded Deployment Pipeline Configuration app within the maker portal (preview).
 
 The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host and any tenant administrator for the app associated with the Platform host.
+
+#### Disassociating environments from one host and associating them to another host
+
+1. From the maker portal, begin in an environment that you want to disassocite, and click **Solutions**.
+1. Choose any solution that you have access to, and click into it.
+1. Navigate to the **Pipelines** page from the left nav bar, and click **Manage pipelines** in the command bar. If you are beginning with a custom host, you can also go directly to the dedicated host environment and run the **Deployment Pipeline Configuration** app from there.
+1. Now that you are in the **Deployment Pipeline Configuration** app, navigate to **Environments** from the left nav bar.
+1. Select the environment record(s) for the environment(s) that you want to disassociate from this host.
+1. Click **Delete** in the command bar, and confirm deletion.
+1. For associating the deleted environment(s) to the new host, Repeat steps 1-4 but in the context of the desired host to associate the environments with.
+1. In the **Added Deployment Environments** table, click **New** in the command bar.
+1. Create the environment record by assigning a name, type, environment ID, and optional description.
+
 
 ## Next steps
 
