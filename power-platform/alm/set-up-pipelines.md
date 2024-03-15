@@ -171,14 +171,14 @@ The pipeline configuration app and host environment provide many other benefits 
 - Schedule bulk delete jobs to remove unwanted data and conserve database capacity. More information: [Remove a large amount of specific, targeted data with bulk deletion](../admin/delete-bulk-records.md)
 - Use a dashboard to visualize deployment metrics. You may also build your own reports using data stored within the host.
 
-### Accessing the Deployment Pipeline Configuration app
+### Accessing the Deployment Pipeline Configuration app from the maker portal
 
-From the maker portal, the **Manage pipelines** button in the command bar will navigate to the app of the pipelines host that is associated with the current environment:
+From the **Pipelines** page within any solution, the **Manage pipelines** button in the command bar will navigate to the app of the pipelines host that is associated with the current environment:
 
 1. If the current environment is associated with a custom pipelines host, the button will link to the Deployment Pipeline Configuration app within the dedicated Host environment.
 1. If the current environment is associated with the Platform host, the button will link to an embedded Deployment Pipeline Configuration app within the maker portal (preview).
 
-The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host and any tenant administrator for the app associated with the Platform host.
+The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host, and any tenant administrator for the app associated with the Platform host.
 
 #### Disassociating environments from one host and associating them to another host
 
