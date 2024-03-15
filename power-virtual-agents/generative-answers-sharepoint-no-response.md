@@ -1,6 +1,6 @@
 ---
 title: "Generative answers don't return a response"
-description: "Troubleshoot when generative answers stored in SharePoint or OneDrive don't return a response."
+description: "Troubleshoot when generative answers pointing to SharePoint or OneDrive sources don't return results."
 author: adilei
 ms.date: 03/11/2024
 ms.topic: troubleshooting
@@ -9,7 +9,7 @@ ms.author: adileibowitz
 ms.reviewer: erickinser
 ---
 
-# Generative answers over SharePoint or OneDrive don't return results
+# Generative answers pointing to SharePoint or OneDrive sources don't return results
 
 Generative answers allow makers to create copilots that respond to questions grounded in data sources, like public websites or SharePoint, by pointing the copilot at those data sources. However, sometimes the copilot doesn't provide a response and instead returns something like **'I’m not sure how to help with that. Can you try rephrasing?'** (the actual message depends on the implementation).
 
