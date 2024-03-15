@@ -46,7 +46,7 @@ Power Platform supports Dataverse plug-ins, connectors, and with a virtual netwo
 - Use Dataverse plug-ins to connect to your on-premises data sources such as SQL server, Oracle, or SAP. You protect your data from data breaches and other external threats.
 
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
-- Use connectors like SQL Connector to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) to establish secure connections to private, endpoint-enabled Azure queues.
+- Use connectors like SQL Connector to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) to establish secure connections to private, endpoint-enabled Azure Queues.
 
 ### Limitations
 
@@ -84,13 +84,13 @@ The following table lists the services that support Azure subnet delegation for 
 
 | Area | Power Platform services | Virtual Network support |
 |------------|-------------------|--------------|
-| Dataverse | [Dataverse plug-ins](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins) | Preview |
-| Connectors | [SQL](https://learn.microsoft.com/en-us/connectors/sql/) | Preview |
-|            | [Azure SQL Data Warehouse](https://learn.microsoft.com/en-us/connectors/sqldw/) | Preview|
-|            | [Azure Queue](https://learn.microsoft.com/en-us/connectors/azurequeues/) | Preview|
-|            | [Custom Connector](https://learn.microsoft.com/en-us/connectors/custom-connectors/) | Preview|
-|            | [Http with Microsoft Entra](https://learn.microsoft.com/en-us/connectors/webcontentsv2/) | Preview|
-|            | [Azure Key Vault](https://learn.microsoft.com/en-us/connectors/keyvault/) | Preview|
+| Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Preview |
+| Connectors | [SQL Server](/connectors/sql/) | Preview |
+|            | [Azure SQL Data Warehouse](/connectors/sqldw/) | Preview|
+|            | [Azure Queues](/connectors/azurequeues/) | Preview|
+|            | [Custom connectors](/connectors/custom-connectors/) | Preview|
+|            | [HTTP with Microsoft Entra](/connectors/webcontentsv2/) | Preview|
+|            | [Azure Key Vault](/connectors/keyvault/) | Preview|
 
 
 ## Licensing requirements
@@ -115,9 +115,9 @@ A [virtual network data gateway](/data-integration/vnet/data-gateway-architectur
 Azure Virtual Network support for Power Platform uses an Azure subnet delegation for your Power Platform environment. Subnets are used by workloads in the Power Platform environment. Power Platform API workloads use virtual network support because the requests are short-lived and optimized for a large number of requests.
 
 ### What are the scenarios where I should use virtual network support for Power Platform and the virtual network data gateway?
-Virtual network support for Power Platform will be only supported option for all the scenarios for outbound connectivity from Power Platform except [Power BI](https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview) and [Power Platform Data Flows](https://learn.microsoft.com/en-us/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
+Virtual network support for Power Platform is the only supported option for all the scenarios for outbound connectivity from Power Platform except [Power BI](/power-bi/fundamentals/power-bi-overview) and [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
 
-[Power BI](https://learn.microsoft.com/en-us/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform Data Flows](https://learn.microsoft.com/en-us/data-integration/vnet/data-gateway-power-platform-dataflows) will continue to use [virtual network (vNet) Data Gateway](https://learn.microsoft.com/en-us/data-integration/vnet/overview).
+[Power BI](/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform dataflows](/data-integration/vnet/data-gateway-power-platform-dataflows) will continue to use [virtual network (vNet) data gateway](/data-integration/vnet/overview).
 
 ### How do you ensure that a virtual network subnet or data gateway from one customer isn't used by another customer in Power Platform?
 
