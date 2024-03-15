@@ -134,7 +134,9 @@ Interaction is where accessibility matters the most. If a user is unable to seam
 
 ## Power Platform facilitation
 
-Canvas apps can utilize [modern theming](/power-apps/maker/canvas-apps/controls/modern-controls/modern-theming) to reference a consistent brand palette.
+Modern controls are available for [canvas apps](/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls) and [model driven apps](/power-apps/user/modern-fluent-design).
+
+Canvas apps can utilize [modern theming](/power-apps/maker/canvas-apps/controls/modern-controls/modern-theming) to reference a consistent brand palette across all controls in the app.
 
 Model driven apps support [themes](/power-apps/maker/model-driven-apps/create-themes-organization-branding) is stored in a table and can be modified for basic branding elements (e.g., header color, links, et cetera).
 
