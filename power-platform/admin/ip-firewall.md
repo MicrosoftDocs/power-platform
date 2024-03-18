@@ -73,6 +73,21 @@ You should test the IP firewall to verify that it's working.
 
 We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before enforcing the IP firewall on your Production environment.
 
+## Licensing requirements for IP firewall
+
+IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+
+In addition, access to using IP firewall for Microsoft Dataverse requires users in the environments where the IP firewall is enforced to have one of these subscriptions:
+
+- Microsoft 365 or Office 365 A5/E5/G5
+- Microsoft 365 A5/E5/F5/G5 Compliance
+- Microsoft 365 F5 Security & Compliance
+- Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
+- Microsoft 365 A5/E5/F5/G5 Insider Risk Management
+
+[Learn more about these licenses](https://go.microsoft.com/fwlink/?linkid=2214240)
+
+
 ## Frequently asked questions (FAQ)
 
 ### What does the IP firewall cover in Power Platform?
