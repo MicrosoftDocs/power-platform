@@ -1,6 +1,6 @@
 ---
-title: Get recommendations about licensing (preview)
-description: Get recommendations about who in your organization would benefit from having a Power Apps license.
+title: View recommendations about licensing (preview)
+description: View recommendations about who in your organization would benefit from having a Power Apps license.
 author: sericks007
 ms.topic: overview
 ms.date: 03/18/2024
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Get recommendations about licensing (preview)
+# View recommendations about licensing (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
