@@ -76,7 +76,7 @@ The following image shows the integration between GitHub and an Azure DevOps pip
 
 A key element of continuous integration is the continual building and testing of code as developers make code contributions. Testing pull requests as they're created gives immediate feedback that the commit introduced no breaking changes. The advantage is that the tests in the continuous integration pipeline can be the same tests that run during test-driven development.
 
-:::image type="complex" source="media/release-engineering-continuous-integration/devops-ci.png" alt-text="Example diagram of continuous integration":::
+:::image type="content" source="media/release-engineering-continuous-integration/devops-ci.png" alt-text="Example diagram of continuous integration":::
 
 #### Quality checks for custom code
 
