@@ -17,7 +17,7 @@ contributors:
 
 # Get recommendations about licensing (preview)
 
-[!INCLUDE cc-beta-prerelease-disclaimer]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The **Intelligent recommendations (Preview)** page provides you with recommendations about who in your organization would benefit from having a Power Apps license.
 
