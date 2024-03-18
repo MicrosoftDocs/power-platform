@@ -1,16 +1,20 @@
 ---
-title: View license consumption for Power Apps and Power Automate (preview)
-description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
-author: amiyapatr-zz
-ms.date: 11/07/2023
-ms.reviewer: sericks
-ms.topic: conceptual
+title: Licensing overview for Microsoft Power Platform | Microsoft Docs
+description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, Power BI, AI Builder, Dataverse).
+author: dileepsinghmicrosoft
+ms.topic: overview
+ms.date: 01/10/2024
 ms.subservice: admin
-ms.author: ampatra
-ms.custom: bap-template
+ms.author: dileeps
+ms.reviewer: sericks
+contributors:
+- srpoduri 
 search.audienceType: 
- - admin
+  - admin
+ms.collection: 
+    - bap-ai-copilot
 ---
+
 
 # Get recommendations about licensing (preview)
 
