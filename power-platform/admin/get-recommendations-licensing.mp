@@ -1,17 +1,15 @@
 ---
-title: Get recommendations about licensing (preview)
-description: Learn how to get recommendations about who in your organization would benefit from having a Power Apps license.
-author: sericks007
-ms.date: 03/18/2024
+title: View license consumption for Power Apps and Power Automate (preview)
+description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
+author: amiyapatr-zz
+ms.date: 11/07/2023
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
-ms.author: sericks
+ms.author: ampatra
 ms.custom: bap-template
 search.audienceType: 
  - admin
-ms.contributors:
-- zadesa
 ---
 
 # Get recommendations about licensing (preview)
