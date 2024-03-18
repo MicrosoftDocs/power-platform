@@ -30,7 +30,7 @@ This feature allows admins to assign licenses both directly and through security
 Complete the following steps to assign Power Apps licenses to users.
 
 > [!Note}
->  Power Platform admins can assign users to only the security groups that the admins own.   
+>  Power Platform admins can assign users to the security groups that the admins own.   
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
    
