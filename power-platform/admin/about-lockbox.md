@@ -4,7 +4,7 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/10/2023
+ms.date: 03/18/2024
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -152,8 +152,6 @@ In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamic
 - Customer Lockbox won't apply to the access and manual review of customer data shared for Copilot AI features. Customer Lockbox will remain enabled for all in-scope data. 
 
 ## Known issues
-
-- Customer Lockbox isn't available in sovereign clouds at this time.
 
 - Tenant-to-tenant migration isn't supported when Customer Lockbox is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
 
