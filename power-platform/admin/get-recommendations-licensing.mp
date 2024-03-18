@@ -11,7 +11,6 @@ contributors:
 - zadesa 
 search.audienceType: 
   - admin
-
 ---
 
 # Get recommendations about licensing (preview)
