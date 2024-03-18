@@ -57,7 +57,7 @@ You should automate all functions of the monitoring system as much as possible, 
 
 This workflow pipeline illustrates the monitoring system:
 
-:::image type="content" source="media/observability/image1.png" alt-text="Diagram that shows the stages of a comprehensive monitoring system as a pipeline." lightbox="media/observability/monitor-pipeline.png" border="false":::
+:::image type="content" source="media/observability/image1.png" alt-text="Diagram that shows the stages of a comprehensive monitoring system as a pipeline." lightbox="media/observability/image1.png" border="false":::
 
 ### Collection
 

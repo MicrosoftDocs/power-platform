@@ -73,7 +73,5 @@ Create or expand your Center of Excellence (CoE) with the [Power Platform CoE St
 ## See also
 
 - Webinar: [Fusion Teams 101: Low-Code Apps with Power Platform](https://info.microsoft.com/ww-Landing-fusion-teams-101LowCode-power-platform.html)
-
 - Training path: [Transform your business applications with fusion development](/training/paths/transform-business-applications-with-fusion-development/)
-
 - [Ebook: Fusion development approach to building apps using Power Apps](/power-apps/guidance/fusion-dev-ebook/)

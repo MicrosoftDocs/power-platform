@@ -24,7 +24,7 @@ Formalize your workload development practices to help ensure a common understand
 
 Don't treat low code workloads as low complexity. You'll still benefit from formalizing the development and management of low-code workloads. Learn from other software development teams. Have a decision matrix in place that dictates the level of formalization required based on the complexity and criticality of the workload.
 
-## Standards for development planning
+### Standards for development planning
 
 The following standards can help you design a comprehensive development planning strategy.
 
