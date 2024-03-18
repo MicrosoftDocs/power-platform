@@ -146,6 +146,9 @@ Currently, you can only use IP firewall for OData endpoints in Dataverse to acce
 ### IP firewall audit functionality isn't working in my environment. What should I do?
 IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key [(BYOK)](manage-encryption-key.md) encryption keys. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK-enabled tenant are locked down to SQL only, therefore audit logs can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
 
+### Does IP firewall support IPv6 IP ranges?
+Currently, IP firewall doesn't support IPv6 IP ranges.
+
 ## Next steps
 
 [Security in Microsoft Dataverse](wp-security.md)
