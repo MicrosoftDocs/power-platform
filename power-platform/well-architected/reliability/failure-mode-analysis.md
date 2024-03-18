@@ -34,7 +34,7 @@ If you skip FMA altogether or perform an incomplete analysis, your workload is a
 
 ### Prerequisites
 
-Review and implement the recommendations for identifying flows. It’s assumed that you have identified and prioritized user and system flows based on criticality.
+Review and implement the [recommendations for identifying flows](identify-flows.md). It’s assumed that you have identified and prioritized user and system flows based on criticality.
 
 The data that you have gathered and the artifacts that you have created in your work provide you with a concrete description of your data paths involved throughout the flows. To be successful in your FMA work, accuracy and thoroughness in your artifacts is critical.
 
@@ -60,19 +60,13 @@ Identify and document the dependencies in your workload and include them in your
 
 In your workload's critical flows, consider each component and determine how that component, and its dependencies, might be affected by a failure mode. Remember that there are many failure modes to consider when planning for resiliency and recovery. Any one component can be affected by more than one failure mode at any given time. These failure modes include:
 
-Regional outage. An entire Power Platform or Azure region is unavailable.
-
-Service outage. One or more Power Platform or Azure services are unavailable.
-
-Distributed denial-of-service (DDoS) or other malicious attack.
-
-App or component misconfiguration.
-
-Operator error.
-
-Planned maintenance outage.
-
-Component overload.
+- Regional outage. An entire Power Platform or Azure region is unavailable.
+- Service outage. One or more Power Platform or Azure services are unavailable.
+- Distributed denial-of-service (DDoS) or other malicious attack.
+- App or component misconfiguration.
+- Operator error.
+- Planned maintenance outage.
+- Component overload.
 
 The analysis should always be in the context of the flow you're attempting to analyze, so be sure to document the effect on the user and expected result of that flow. For example, if you have an e-commerce application and you’re analyzing your customer flow, the effect of a particular failure mode on one or more components might be that all customers are unable to complete the checkout.
 
@@ -82,7 +76,7 @@ Consider the likelihood of each type of failure mode. Some are very unlikely, li
 
 Mitigation strategies fall into two broad categories: building more resiliency and designing for degraded performance.
 
-Building more resiliency means ensuring that your application design follows best practices for durability, for example breaking up monolithic applications into isolated apps and microservices and using platform provided resiliency configurations, like retry policies. For more information, see [Recommendations for redundancy](/azure/well-architected/reliability/redundancy) and [Recommendations for self-preservation](/azure/well-architected/reliability/self-preservation).
+Building more resiliency means ensuring that your application design follows best practices for durability, for example breaking up monolithic applications into isolated apps and microservices and using platform provided resiliency configurations, like retry policies. For more information, see [Recommendations for handling transient faults](handle-transient-faults.md).
 
 To design for degraded performance, identify potential failure points that might disable one or more components of your flow but don't fully disable that flow. To maintain the functionality of the end-to-end flow, you might need to reroute one or more steps to other components or accept that a failed component runs a function, so the function is no longer available in the user experience. To return to the e-commerce application example, a failed component like a microservice might cause your recommendation engine to be unavailable, but the customers can still search for products and complete their transaction.
 
@@ -92,7 +86,7 @@ If the application has strong dependencies that it can't operate without, the av
 
 #### Detection
 
-Failure detection is essential to ensure that you have correctly identified failure points in your analysis and properly planned your mitigation strategies. Detection in this context means the monitoring of your infrastructure, data and application, and alerting when issues arise. Automate detection as much as possible, and build redundancy into your operations processes to ensure that alerts are always caught and are responded to quickly enough to meet your business requirements. For more information, see the Recommendations for monitoring.
+Failure detection is essential to ensure that you have correctly identified failure points in your analysis and properly planned your mitigation strategies. Detection in this context means the monitoring of your infrastructure, data and application, and alerting when issues arise. Automate detection as much as possible, and build redundancy into your operations processes to ensure that alerts are always caught and are responded to quickly enough to meet your business requirements. For more information, see the [Recommendations for monitoring](monitoring-alerting-strategy.md).
 
 #### Outcome
 
@@ -100,7 +94,7 @@ For the outcome of your analysis, create a set of documents that effectively com
 
 In your analysis, prioritize the failure modes and mitigation strategies that you have identified based on severity and likelihood. Use this prioritization to focus your documentation on those failure modes that are common and severe enough to warrant spending the time, effort, and resources on designing mitigation strategies around. For example, there might be some failure modes that are very rare in occurrence or detection. Designing mitigation strategies around them isn't worth the cost.
 
-Refer to the following example table for a documentation starting point.
+Refer to the following [example table](#example) for a documentation starting point.
 
 During your initial FMA exercise, the documents you produce will be mostly theoretical planning. The FMA documents should be reviewed and updated regularly to ensure that they stay up-to-date with your workload. Chaos testing and real-world experiences will help you refine your analyses over time.
 
@@ -108,31 +102,23 @@ During your initial FMA exercise, the documents you produce will be mostly theor
 
 [Application Insights](/azure/azure-monitor/app/app-insights-overview) is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem and Power Platform integrates with Application Insights: 
 
-You can receive telemetry on diagnostics and performance captured by the [Dataverse platform in Application Insights](/power-platform/admin/overview-integration-application-insights). You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.  
-
-You can connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights). You can use these analytics to diagnose issues and understand what users actually do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps. 
-
-You can configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this to monitor cloud flow executions and create alerts for cloud flow run failures.  
+- You can receive telemetry on diagnostics and performance captured by the [Dataverse platform in Application Insights](/power-platform/admin/overview-integration-application-insights). You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.  
+- You can connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights). You can use these analytics to diagnose issues and understand what users actually do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps. 
+- You can configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this to monitor cloud flow executions and create alerts for cloud flow run failures.  
 
 Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24hrs of the activity, so this can’t be used for real-time monitoring. 
 
-[Power Apps](/power-platform/admin/logging-powerapps) 
-
-[Power Automate](/power-platform/admin/logging-power-automate) 
-
-[Power Pages](/power-platform/admin/logging-power-pages) 
-
-[Power Platform connectors](/power-platform/admin/logging-power-pages) 
-
-[Data Loss Prevention](/power-platform/admin/dlp-activity-logging)  
-
-[Power Platform administrative logs](/power-platform/admin/admin-activity-logging) 
-
-[Dataverse auditing](/power-platform/admin/manage-dataverse-auditing) 
+- [Power Apps](/power-platform/admin/logging-powerapps) 
+- [Power Automate](/power-platform/admin/logging-power-automate) 
+- [Power Pages](/power-platform/admin/logging-power-pages) 
+- [Power Platform connectors](/power-platform/admin/logging-power-pages) 
+- [Data Loss Prevention](/power-platform/admin/dlp-activity-logging)  
+- [Power Platform administrative logs](/power-platform/admin/admin-activity-logging) 
+- [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing) 
 
 ## Example
 
-The following table shows an FMA example for an expense application that’s hosted as a Power Apps canvas app with a Microsoft Dataverse backend and APIs hosted in APIM?/custom connectors to interact with xyz.
+The following table shows an FMA example for an expense application that’s hosted as a Power Apps canvas app with a Microsoft Dataverse backend and APIs hosted in APIM to interact with a third party system. 
 
 **User flow**: User sign in, submit expense claim, and interaction with expense report.
 
@@ -150,6 +136,4 @@ The following table shows an FMA example for an expense application that’s hos
 | **APIM** | Regional outage | Very low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
 | **APIM** | DDoS attack | Medium | Potential for disruption. Microsoft manages DDoS (L3 and L4) protection. | Potential for partial outage |
 | **Your Power Platform solution** | Misconfiguration | Medium | Misconfigurations should be caught during deployment. If these happen during a configuration update, administrators must roll back changes. Configuration update causes a brief external outage. | Potential for full outage |
-
-## Related links
 

@@ -197,4 +197,3 @@ _Criticality rating_: High.
 - [Overview of process mining and task mining in Power Automate - Power Automate | Microsoft Learn](/power-automate/process-advisor-overview)
 - [Visualize processes - Power Automate | Microsoft Learn](/power-automate/process-advisor-visualize)
 - [Introduction to Planning a Power Apps project - Power Apps | Microsoft Learn](/power-apps/guidance/planning/introduction)
-

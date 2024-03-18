@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Reliability checklist recommendation:**
 
-|[RE:07](checklist.md)| Strengthen the resiliency and recoverability of your workload by implementing self-preservation and self-healing measures. Build capabilities into the solution by using infrastructure-based reliability patterns and software-based design patterns to handle component failures and transient errors. Build capabilities into the system to detect solution component failures and automatically initiate corrective action while the workload continues to operate at full or reduced functionality. |
+|[RE:05](checklist.md)| Strengthen the resiliency of your workload by implementing error handling and transient fault handling. Build capabilities into the solution to handle component failures and transient errors.  |
 |---|---|
 
 This guide describes the recommendations for handling transient faults in your cloud applications. All applications that communicate with remote services and resources must be sensitive to transient faults. This is especially true for applications that run in the cloud, where, because of the nature of the environment and connectivity over the internet, this type of fault is likely to be encountered more often. Transient faults include the momentary loss of network connectivity to components and services, the temporary unavailability of a service, and timeouts that occur when a service is busy. These faults are often self-correcting, so, if the action is repeated after a suitable delay, it's likely to succeed.
@@ -26,11 +26,9 @@ Transient faults can occur in any environment, on any platform or operating syst
 
 Transient faults can have a significant effect on the perceived availability of an application, even if it's been thoroughly tested under all foreseeable circumstances. To ensure that your Power Platform workload can operate reliably, you need to ensure that it can respond to the following challenges:
 
-The application must be able to detect faults when they occur and determine if the faults are likely to be transient, are long-lasting, or are terminal failures. Different resources are likely to return different responses when a fault occurs, and these responses can also vary depending on the context of the operation. For example, the response for an error when the application is retrieving data from a custom connector might be different from the response when the application is running a cloud flow and waiting for the response. 
-
-The application must be able to retry the operation if it determines that the fault is likely to be transient. 
-
-The application must use an appropriate strategy for retries. The strategy specifies the number of times the application should retry, the delay between each attempt, and the actions to take after a failed attempt. The appropriate number of attempts and the delay between each one are often difficult to determine. The strategy varies depending on the type of resource and on the current operating conditions of the resource and the application.
+- The application must be able to detect faults when they occur and determine if the faults are likely to be transient, are long-lasting, or are terminal failures. Different resources are likely to return different responses when a fault occurs, and these responses can also vary depending on the context of the operation. For example, the response for an error when the application is retrieving data from a custom connector might be different from the response when the application is running a cloud flow and waiting for the response. 
+- The application must be able to retry the operation if it determines that the fault is likely to be transient. 
+- The application must use an appropriate strategy for retries. The strategy specifies the number of times the application should retry, the delay between each attempt, and the actions to take after a failed attempt. The appropriate number of attempts and the delay between each one are often difficult to determine. The strategy varies depending on the type of resource and on the current operating conditions of the resource and the application.
 
 ### General guidelines
 
@@ -44,27 +42,21 @@ You should use the built-in retry mechanism when one is available, unless you ha
 
 #### Determine if the operation is suitable for retrying
 
-Perform retry operations only when the fault is likely to be transient. Typically, you can identify if a fault is likely to be transient based on the error message returned by the service. Don’t retrying operations that attempt an invalid operation, like updating an row in Microsoft Dataverse that doesn’t exist or that the user does not have permission to, or calling an API endpoint that doesn’t exist. 
-
-Implement retries only when you can determine the full effect of doing so and when the conditions are well understood and can be validated. Remember that the errors returned from resources and services outside your control might evolve over time, and you might need to revisit your transient fault detection logic.
-
-When you develop individual components or services that are called from your applications, make sure to return error codes and messages that help clients determine whether they should retry failed operations. Consider indicating whether the client should retry the operation, for example by returning an **isTransient** value. If you build a web service, consider returning custom errors that are defined within your service contracts. 
+- Perform retry operations only when the fault is likely to be transient. Typically, you can identify if a fault is likely to be transient based on the error message returned by the service. Don’t retry operations that attempt an invalid operation, like updating a row in Microsoft Dataverse that doesn’t exist or that the user does not have permission to, or calling an API endpoint that doesn’t exist. Validate the input parameters to the operation before performing the operation or retrying it to ensure only well understood and allowed parameters are passed to the operation. 
+- Implement retries only when you can determine the full effect of doing so and when the conditions are well understood and can be validated. Remember that the errors returned from resources and services outside your control might evolve over time, and you might need to revisit your transient fault detection logic.
+- When you develop individual components or services that are called from your applications, make sure to return error codes and messages that help clients determine whether they should retry failed operations. Consider indicating whether the client should retry the operation, for example by returning an **isTransient** value. If you build a web service, consider returning custom errors that are defined within your service contracts. 
 
 #### Determine an appropriate retry count and interval
 
-Optimize the retry count and the interval to the type of use case. If you don't retry enough times, the application can't complete the operation and will probably fail. If you retry too many times, or with too short an interval between tries, the health of the application might be adversely affected by holding data in memory. 
+- Optimize the retry count and the interval to the type of use case. If you don't retry enough times, the application can't complete the operation and will probably fail. If you retry too many times, or with too short an interval between tries, the health of the application might be adversely affected by holding data in memory or by resulting in throttling the resource with which you are trying to interact.
+- Adapt values for the time interval and the number of retry attempts to the type of operation. For example, if the operation is part of a user interaction, the interval should be short and only a few retries should be attempted. By using this approach, you can avoid making users wait for a response. If the operation is part of a long running or critical workflow, where canceling and restarting the process is expensive or time-consuming, it's appropriate to wait longer between attempts and retry more times.
+- Keep in mind that determining the appropriate intervals between retries is the most difficult part of designing a successful strategy. Typical strategies use the following types of retry interval:
 
-Adapt values for the time interval and the number of retry attempts to the type of operation. For example, if the operation is part of a user interaction, the interval should be short and only a few retries should be attempted. By using this approach, you can avoid making users wait for a response. If the operation is part of a long running or critical workflow, where canceling and restarting the process is expensive or time-consuming, it's appropriate to wait longer between attempts and retry more times.
+  - **Exponential** **interval**. The application waits a short time before the first retry and then exponentially increases the time between each subsequent retry. For example, it might retry the operation after 3 seconds, 12 seconds, 30 seconds, and so on. You will specific an interval and a retry count. 
+  - **Fixed intervals**. The application waits for the same period of time between each attempt. For example, it might retry the operation every 3 seconds.
+  - **Immediate retry**. Sometimes a transient fault is brief, and retrying the operation immediately is appropriate because it might succeed if the fault is cleared in the time that it takes the application to send the next request. However, there should never be more than one immediate retry attempt. You should switch to alternative strategies, like exponential interval or fallback actions, if the immediate retry fails.
 
-Keep in mind that determining the appropriate intervals between retries is the most difficult part of designing a successful strategy. Typical strategies use the following types of retry interval:
-
-**Exponential** **interval**. The application waits a short time before the first retry and then exponentially increases the time between each subsequent retry. For example, it might retry the operation after 3 seconds, 12 seconds, 30 seconds, and so on. You will specific an interval and a retry count.
-
-**Fixed intervals**. The application waits for the same period of time between each attempt. For example, it might retry the operation every 3 seconds.
-
-**Immediate retry**. Sometimes a transient fault is brief, and retrying the operation immediately is appropriate because it might succeed if the fault is cleared in the time that it takes the application to send the next request. However, there should never be more than one immediate retry attempt. You should switch to alternative strategies, like exponential interval or fallback actions, if the immediate retry fails.
-
-As a general guideline, use an exponential interval strategy for background operations, and use immediate or fixed interval retry strategies for interactive operations. In both cases, you should choose the delay and the retry count so that the maximum latency for all retry attempts is within the required end-to-end latency requirement.
+- As a general guideline, use an exponential interval strategy for background operations, and use immediate or fixed interval retry strategies for interactive operations. In both cases, you should choose the delay and the retry count so that the maximum latency for all retry attempts is within the required end-to-end latency requirement.
 
 Consider the combination of all factors that contribute to the overall maximum timeout for a retried operation. These factors include the time it takes for a failed connection to produce a response, the delay between retry attempts, and the maximum number of retries. The total of all these times can result in long overall operation times, especially when you use an exponential delay strategy where the interval between retries grows rapidly after each failure. If a process must meet a specific service-level agreement (SLA), the overall operation time, including all timeouts and delays, must be within the limits defined in the SLA.
 

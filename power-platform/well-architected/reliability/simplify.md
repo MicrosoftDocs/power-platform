@@ -36,11 +36,21 @@ You must justify every design decision with a business requirement. This design 
 
 Work with stakeholders to:
 
-- **Define and assign a criticality level to your workload, and** **it’s components.** This will help you determine the required components and the best approach to achieve the required resiliency level.
+- **Define and assign a criticality level to your workload, and it’s components.** This will help you determine the required components and the best approach to achieve the required resiliency level. Here's an example of how to define criticality levels: [Define tiers of applications](/power-platform/guidance/adoption/support-strategy-solutions#define-tiers-of-applications).
 - **Define functional and nonfunctional requirements**. Functional requirements define the features and behavior of the system. They are specified by the user and captured in use cases. Nonfunctional requirements define the performance and quality attributes of the system. Ensure that you understand nonfunctional requirements like availability, compliance, data retention/residency, performance, privacy, recovery time, security and scalability. These requirements influence design decisions and technology choices.
-- **Break down the workload into components**. During the discovery and requirement gathering process, some solution ideas should start to become clear. Identify solution components that might make up the proposed solution to meet your business requirement. Prioritize simplicity, efficiency, and reliability in your design. Determine the components that you need to support your workload. Highlight where out of the box capabilities can be used, and where custom development may be needed. 
-- **Use failure mode analysis** to identify single points of failure and potential risks. Clearly understand your business's tolerance for risk. For more information, see Recommendations for performing failure mode analysis.
-- **Define availability and recovery targets** for your workload to inform the architecture decisions. Business metrics include service-level objectives (SLOs), service-level agreements (SLAs), mean time to recover (MTTR), mean time between failure (MTBF), recovery time objectives (RTOs), and recovery point objectives (RPOs). Define target values for these metrics. This exercise might require compromise and mutual understanding between technology and business teams to ensure that each team's goals meet business objectives and are realistic. For more information, see Recommendations for defining reliability targets.
+    Here are some examples for functional and nonfunctional requirements, in the context of a workload that handles expense reports:
+
+    | **Functional requirements** | **Nonfunctional requirements** |
+    |---|---| 
+    | The workload should allow users to log in with their credentials and only access their personal data. | The workload should be available at least 99.9% of the time. |
+    | The workload should provide a dashboard that provides an overview of open, approved, and declined expense reports. | The workload should comply with the relevant regulations and standards for data protection and privacy. |
+    | The workload should support backup and restore operations for the workload data. | The workload should have a response time of less than 5 seconds for most user requests. |
+    | The workload should send notifications to users and administrators when certain events or thresholds are triggered. | The workload should have a high level of security and encryption for the data in transit and at rest. |
+
+    For more information, see [Work with requirements for Microsoft Power Platform and Dynamics 365](/training/modules/work-with-requirements/)
+- **Break down the workload into components**. During the discovery and requirement gathering process, some solution ideas should start to become clear. Identify solution components that might make up the proposed solution to meet your business requirement. Prioritize simplicity, efficiency, and reliability in your design. Determine the components that you need to support your workload. Highlight where out of the box capabilities can be used, and where custom development may be needed.
+- **Use failure mode analysis** to identify single points of failure and potential risks. Clearly understand your business's tolerance for risk. For more information, see [Recommendations for performing failure mode analysis](failure-mode-analysis.md).
+- **Define availability and recovery targets** for your workload to inform the architecture decisions. Business metrics include service-level objectives (SLOs), service-level agreements (SLAs), mean time to recover (MTTR), mean time between failure (MTBF), recovery time objectives (RTOs), and recovery point objectives (RPOs). Define target values for these metrics. This exercise might require compromise and mutual understanding between technology and business teams to ensure that each team's goals meet business objectives and are realistic. For more information, see [Recommendations for defining reliability targets](metrics.md). Power Platform SLAs provide the Microsoft commitments for uptime and connectivity. Different services have different SLAs, and sometimes SKUs within a service have different SLAs. For more information, see [Service-level agreements for online services](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
 
 ### Additional design recommendations
 
@@ -48,8 +58,8 @@ You can perform the following recommendations without stakeholder engagement:
 
 - **Strive for simplicity and clarity** in your design. Use the appropriate level of abstraction and granularity for your components and services. Avoid overengineering or under-engineering your solution. For example:
   - If you solve a process automation requirement with Power Automate breaking a large process into multiple smaller cloud flows might make it more difficult to understand, test and maintain. On the other hand, keeping everything in a large flow might have a negative impact on performance and API call volume. 
-  - If you solve a user facing requirement with Power Apps, a large monolithic canvas app with many controls might have a negative impact on performance. Breaking it down into single apps or custom pages might make testing more difficult, however could have a significant positive impact on performance. 
-- **Anticipate change over time.** Whether to fix bugs, implement new features or technologies, or make existing systems more scalable and resilient – your workload will change over time. 
+  - If you solve a user facing requirement with Power Apps, a canvas app will allow for pixel perfect design of the UX but if your app mainly consists of forms and views, you’ll likely benefit from using the out of the box capabilities of a model-driven app and enhancing it with custom command bar buttons and custom pages.
+- **Anticipate change over time.** Whether to fix bugs, implement new features or technologies, or make existing systems more scalable and resilient – your workload will change over time. Power Platform itself also changes over time, with new features and enhancements being released regularly. Anticipate evaluating new features and incorporate them into your workload if they can bring a performance, experience or security benefit!
 - **Offload cross-cutting concerns to a separate service**. Minimize the need to duplicate code across different functions, prefer reusing services with well-defined interfaces that can be easily consumed by different components. For example, if a set of data operations need to be performed from different places, you can move this functionality to a low code plugin. 
 - **Evaluate the suitability of common patterns and practices** for your needs. Avoid following trends or recommendations that might not be best for your context or requirements. For example, implementing custom code-components might not be the best option for every application because they can introduce complexity, overhead, and dependency issues.
 
@@ -76,15 +86,13 @@ As part of your architectural design, you will have to consider how to store you
 
 For more information, see:
 
-- [Power Apps architectural design - Where to place logic - Power Apps | Microsoft Learn](/power-apps/guidance/planning/logic)
-- [Designing - Which type of app to make - Power Apps | Microsoft Learn](/power-apps/guidance/planning/app-type)
-- [Designing your data structure - Power Apps | Microsoft Learn](/power-apps/guidance/planning/data-modeling)
-- [Data design - Working with enterprise systems - Power Apps | Microsoft Learn](/power-apps/guidance/planning/enterprise-systems)
+- [Power Apps architectural design - Where to place logic](/power-apps/guidance/planning/logic)
+- [Designing - Which type of app to make](/power-apps/guidance/planning/app-type)
+- [Designing your data structure](/power-apps/guidance/planning/data-modeling)
+- [Data design - Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
 ## Related links
 
-- [Work with requirements for Microsoft Power Platform and Dynamics 365 - Training | Microsoft Learn](/training/modules/work-with-requirements/)
-- [Planning a Power Apps project - planning phase overview - Power Apps | Microsoft Learn](/power-apps/guidance/planning/planning-phase)
-- [Use Dataverse low-code plug-ins - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant)
-- [powerapps-tools/Tools/Apps/Microsoft.PowerApps.CodeReview/readme.md at master · microsoft/powerapps-tools (github.com)](https://github.com/microsoft/powerapps-tools/blob/master/Tools/Apps/Microsoft.PowerApps.CodeReview/readme.md)
-
+- [Service-level agreements for online services](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
+- [Work with requirements for Microsoft Power Platform and Dynamics 365 - Training](/training/modules/work-with-requirements/)
+- [Planning a Power Apps project](/power-apps/guidance/planning/planning-phase)
