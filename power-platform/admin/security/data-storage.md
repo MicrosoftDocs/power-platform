@@ -71,7 +71,11 @@ Microsoft manages the address prefixes encompassed by the service tag, and autom
 
 Power Platform has an extensive set of [Data Loss Prevention (DLP) features](../prevent-data-loss.md) to help you manage the security of your data.  
 
-### SAS IP Binding
+### Storage Shared Access Signature (SAS) IP Restriction
+
+> [!NOTE]
+>
+> - Critical Advisory: Prior to activating either of these SAS features, customers must first allowlist https://*.api.powerplatformusercontent.com domain or most SAS functionalities will NOT work.
 
 This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting will restrict who, based on IP, can use enterprise SAS tokens. 
 
@@ -105,6 +109,10 @@ Note the following impact on users:
   - The app may load slower than if IP address restrictions weren’t in place. The IP address restrictions prevents the platform from using some performance capabilities that enable faster load times.
 
   If a user opens an app, while meeting the IP address requirements and then moves to a new network which no longer meets the IP address requirements, the user may observe app contents such as images, embedded media, and links may not load or be accessible. 
+
+#### Logging of SAS Calls
+This setting enables all SAS calls within the Power Platform to be logged into Purview. This logging will show the relevant metadata for all creation and usage events and can be enabled independent of the above SAS IP restrictions. BAP Services are currently onboarding this in 2024
+
 
 ### Related articles
 
