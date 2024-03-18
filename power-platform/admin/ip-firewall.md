@@ -1,7 +1,7 @@
 ---
-title: IP firewall in Power Platform environments
+title: IP firewall in Power Platform environments (preview)
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 03/15/2024
+ms.date: 01/09/2024
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -11,7 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# IP firewall in Power Platform environments
+# IP firewall in Power Platform environments (preview)
+
+[This article is prerelease documentation and is subject to change.]
 
 The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyses the IP address of each request in real time. For example, suppose the IP firewall is turned on in your production Dataverse environment and allowed IP addresses are in the ranges associated with your office locations and not any external IP location like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
 
@@ -19,7 +21,12 @@ The IP firewall helps to protect your organizational data by limiting user acces
 
 > [!IMPORTANT]
 >
+> - The IP firewall feature is only available with [Managed Environments](managed-environment-overview.md).
 > - The IP firewall feature only supports OData endpoints for accessing Dataverse data. Support for [TDS endpoints](settings-features.md#tds-endpoint) will be included in future release.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Key benefits
 
@@ -72,21 +79,6 @@ You should test the IP firewall to verify that it's working.
    You should have the access to the environment that's defined by your security role.
 
 We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before enforcing the IP firewall on your Production environment.
-
-## Licensing requirements for IP firewall
-
-IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
-
-In addition, access to using IP firewall for Microsoft Dataverse requires users in the environments where the IP firewall is enforced to have one of these subscriptions:
-
-- Microsoft 365 or Office 365 A5/E5/G5
-- Microsoft 365 A5/E5/F5/G5 Compliance
-- Microsoft 365 F5 Security & Compliance
-- Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
-- Microsoft 365 A5/E5/F5/G5 Insider Risk Management
-
-[Learn more about these licenses](https://go.microsoft.com/fwlink/?linkid=2214240)
-
 
 ## Frequently asked questions (FAQ)
 
@@ -145,9 +137,6 @@ Currently, you can only use IP firewall for OData endpoints in Dataverse to acce
 
 ### IP firewall audit functionality isn't working in my environment. What should I do?
 IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key [(BYOK)](manage-encryption-key.md) encryption keys. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK-enabled tenant are locked down to SQL only, therefore audit logs can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
-
-### Does IP firewall support IPv6 IP ranges?
-Currently, IP firewall doesn't support IPv6 IP ranges.
 
 ## Next steps
 
