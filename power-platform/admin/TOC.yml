@@ -78,6 +78,8 @@
               href: view-license-consumption-finops-apps.md
             - name: Manage licenses in your org
               href: signup-question-and-answer.md
+            - name: View recommendations about licensing (preview)
+              href: get-recommendations-licensing.md
             - name: Administer without a license
               href: global-service-administrators-can-administer-without-license.md
             - name: Power Apps
