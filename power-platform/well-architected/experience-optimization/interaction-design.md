@@ -13,10 +13,10 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **Prioritize responsiveness and feedback. Make it easy to understand how to interact with the interface, incorporating interactions that align with users' mental models and expectations.** |
+|[XO:08](checklist.md)| **Prioritize responsiveness and feedback. Make it easy to understand how to interact with the interface, incorporating interactions that align with users' mental models and expectations.** |
 |---|---|
 
-This guide describes the recommendations for interaction basics of user interface design. There are important considerations between how a user intakes information from the system, and how visual elements are initially arranged and respond to user inputs. Interaction design helps think through task flows, accomodate circumstances and fallbacks to help users reach the intended end state.
+This guide describes the recommendations for interactions in user interface design. There are important considerations between how a user intakes information from the system, and how visual elements are initially arranged and respond to user inputs. Interaction design helps think through task flows, accomodate circumstances and fallbacks to help users reach the intended end state.
 
 ## Key design strategies
 
@@ -169,9 +169,11 @@ Clearly communicate expectations and instructions to users, specifying what acti
 
 ![Postel's Law](./media/interaction-design/postel.svg)
 
+<!---
 ## Power Platform facilitation
 
 Although some interaction implementation has been encapsulated into the modern components themselves, these rules should also be considered on the scope of the screen layout or overall application flow.
+--->
 
 ## Related links
 

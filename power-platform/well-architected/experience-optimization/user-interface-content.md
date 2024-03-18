@@ -4,7 +4,7 @@ description: Learn how to write content for user interfaces to ensure consistent
 author: Denise-MSFT
 ms.author: demora
 ms.reviewer: robstand
-ms.date: 03/29/2024
+ms.date: 03/13/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -13,12 +13,14 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **Content must be easily understood and provide clear direction. Speak in an approachable, consistent, and professional tone that facilitates task completion.** |
+|[XO:09](checklist.md)| **Content must be easily understood and provide clear direction. Use an approachable, consistent, and professional tone that facilitates task completion.** |
 |---|---|
 
 This guide describes the recommendations for crafting effective content tailored for user experiences. Content serves as the primary mode of communication in a user interface, holding more power in communicateing complex ideas compared to visual elements alone. Whether it's guiding users through a process or communicating essential system information, the words we choose profoundly impact how users interact with and perceive an application. 
 
 ## Key design strategies
+
+Writing content that's part of the user interface (UI) design is both an art and science. Combining these copywriting best practices with visual design best practices will improve your end users' experience.
 
 ### Make it scannable
 
@@ -52,7 +54,7 @@ Replace overly technical words with simpler ones. Using words like configure, ac
 
 Avoid double negatives. Double negatives increase cognitive load — they make people spend extra time decoding the message. Focus on direct, positive actions.
 
-### Use polite, friendly tone
+### Use a polite and friendly tone
 
 Be polite, but not overly ingratiating. People expect to be given prompts and to act. Using 'please' throughout the UI is unnecessary and comes across as amateure. Use please and sorry sparingly, only when the task you're asking is onerous, is your mistake, or has serious consequences. However, it's never good practice to be rude, presumptuous, cocky, or cynical in UI content.
 
@@ -109,12 +111,21 @@ Passive voice can be used to soften messages or avoid being too direct, such as 
 
 For best practices and standards, lean heavily into active voice. For general guidelines (especially when recommending things to avoid or error messages), use passive voice.
 
-### Be mindful of assistive technologies
+### Be mindful of content needed for assistive technologies
 
-Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alt text for images, appropriate ARIA labels, proper heading structures, and keyboard navigation options ensures that the UI content can be accessed and easily understood by people depending on assistive technologies.
+Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alternative (alt) text for images ensures that the UI content can be accessed and easily understood by people depending on assistive technologies. Alt text is primarily associated with images, as it serves as a textual alternative to convey the content and purpose of an image using screen readers. However, alt text can also be used for other non-text content elements on web pages, such as videos, audio files, charts, graphs, and interactive elements like buttons or icons.
+
+When writing alt text, provide concise and descriptive text that conveys the purpose and content of the content. It should be clear, informative, and relevant to the context of the image, avoiding overly technical language or unnecessary details. Focus on conveying the essential information, such as key objects, actions, or visual elements, while avoiding subjective interpretations about the image. Keep it concise to ensure it is efficiently read by screen readers (the standard recommendation for maximum length of alt text is typically around 125 characters). Write in a neutral tone and ensure the text is grammatically correct.
+
+### Writing for international audiences
+
+When writing content for an internationally used app, consider cultural diversity and sensitivity to ensure inclusivity and relevance for users from different backgrounds. Use culturally neutral language that can be easily understood by a global audience. Avoiding colloquialisms, slang, or cultural-specific references helps ensure that the content remains universally accessible and does not inadvertently exclude or alienate users from different regions or linguistic backgrounds. Provide localized versions of the interface with translations tailored to each target audience's language and dialect preferences to enhance user engagement and comprehension.
+
+Understand cultural norms, values, and preferences when designing content for an international audience. Different cultures have distinct communication styles, etiquette, and social norms that influence user behavior and expectations. Consider factors such as color symbolism, iconography, and content presentation formats specific to each cultural context helps create interfaces that resonate with users. Visual elements such as icons and imagery should be carefully chosen to resonate with users across diverse cultural contexts. While certain symbols may carry universal meanings, others may vary significantly in interpretation depending on cultural norms and beliefs. Collaborating with local experts or conducting user testing during the design and localization process can provide valuable insights and ensure that the interface reflects the cultural nuances and preferences of the target audience.
 
 ## Power Platform facilitation
 
+Power Platform details here ...
 
 ## Related links
 

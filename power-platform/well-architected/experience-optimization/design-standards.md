@@ -1,10 +1,10 @@
 ---
 title: Recommendations for following design standards
-description: Learn how to follow design standards to ensure consistent success with user experience optimization.
-author: RobStand
-ms.author: rstand
+description: Learn how following design standards ensures consistent success with user experience optimization.
+author: Denise-MSFT
+ms.author: demora
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/13/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **TODO** Update with checklist details for this item |
+|[XO:02](checklist.md)| **Follow established standards, conventions, and guidelines. Leverage commonly-used design patterns. Maintain consistency in design elements, terminology, and interactions across the interface. Use consistent patterns and standards to guide users through the interface and create a cohesive user experience.** |
 |---|---|
 
 This guide shows how to apply established design standards, conventions, and best practices to develop user interfaces that are effective and professional, enhancing the user experience and the application’s overall success. Deviating from standards may be needed in certain circumstances but should be carefully thought through to avoid negatively affecting the user's experience and ensure optimal outcomes.
@@ -28,7 +28,9 @@ Certain truths about human cognition have been heavily researched and help make 
 
 ### Follow common patterns and metaphors
 
-Universal patterns and metaphors have been established that the general population of digital products have become accustomed to and expect. Ensuring your design includes these patterns where applicable will make your application easier for users to onboard and use long term, reduce training (or support) costs, and even potentially reduce effort that might be required to update the design.
+Universal patterns and metaphors have been established that the general population of digital products have become accustomed to and expect. Ensuring your design includes these patterns where applicable will make your application easier for users to onboard and use long term, reduce training and support costs, and even potentially mitigate effort required to update or redesign. These practices encompass various aspects of design, including layout composition, navigation structure, information hierarchy, and interaction design. 
+
+Adhering to standard icon metaphors and semantic colors is crucial. Icons should leverage established visual associations to convey functionality quickly and effectively to users. Similarly, semantic colors, such as red for error or green for success, provide immediate visual feedback that aligns with users' expectations and mental models. Following these conventions help reduce cognitive load and enhance usability by fostering a sense of familiarity and comfort.
 
 ### Establish a design system
 
@@ -41,7 +43,7 @@ A _component_ represents a discrete, modular unit of a user interface. It serves
 Power Apps provides a comprehensive set of basic universal components, like button, dropdown, and several composite components, like the modern table. Use these controls as much as possible for basic needs, then consider building composite components where gaps exist for repeatable user interface patterns.
 
 Composite components should be able to be used exactly as-is or with minimal variation (using parameters) in different app contexts and should not need to be modified. Some examples of custom components could include the following:
- 
+
 - A company-branded header or footer. 
 - A screen-sized resource page component for users to provide feedback and get IT help
 - Universal content like copyright notices or links
@@ -50,9 +52,11 @@ _Pattern library_. Offer a set of predefined design patterns for makers to utili
 
 _Guidelines_ provide rules and best practices for project teams regarding the utilization of components and visual styles. Unlike style guidelines, which focus on aesthetics, design system guidelines define the functional behavior of components and user interaction expectations. For example, if a design system provides a design token set for referencing colors, the guidelines should provide insight into when the colors should be used, and how the developer can access the corresponding color in Power Apps. For components, there should be documentation on correct usage, input and output parameters, and state variations that can be expected of the component.
 
-Centralized teams can also host universal media assets such as company logos and other design assets in a repository to enable more widespread rapid development.
+Centralized design system efforts can also host universal media assets such as company logos and other design assets in a repository to enable more widespread rapid development.
 
-Microsoft's Fluent UI is an example of a widely-adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system. Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet the needs of end users. They are also designed in a way that can be ubiquitous and easily utilized across various digital products and platforms. Each component has specific guidelines to ensure the application aligns with the intended experience. Take advantage of the research-backed knowledge by reviewing the [Fluent 2 guidance](https://fluent2.microsoft.design/#/).
+Microsoft's Fluent UI is an example of a widely-adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system. Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet the needs of end users. They are also designed in a way that can be ubiquitous and easily utilized across various digital products and platforms. Each component has specific guidelines to ensure the application aligns with the intended experience. Take advantage of the research-backed knowledge by reviewing the [Fluent 2 guidance](https://fluent2.microsoft.design/).
+
+Avoiding duplicate implementations by sharing increases production efficiency, but more importantly it means that experiences will start coherent, and not drift apart over time. Contributing to shared elements will help keep experiences fresh and reflect expertise from across the organization.  Today, coherence is challenged because components, systems, process, and culture are often not shared, do not reinforce coherence, and make contribution hard. 
 
 #### Conduct design reviews
 
@@ -74,12 +78,12 @@ Designing with inclusive principles ensures that products are built for a broade
 
 | Function | Purpose |
 | -------- | ------- |
-| Cognition |	Our ability to receive, interpret, and process information. This includes attention, awareness, focus, memory, judgment, comprehension, problem solving, and reasoning. A person’s cognition can affect the way they learn - whether it's learning how to use a new device or learning new information in a classroom. Many aspects of cognition affect one another. |
-| Mobility |	Our anatomy and muscles give us mobility, and they rely on brain signals which control the muscles. Mobility involves grasps, fine motor skills, coordination, control (voluntary vs. involuntary movement), speed, muscle tone, endurance, posture, and temporary injuries. Mobility can be influenced by situational, temporary, progressive, or permanent conditions. |
+| Cognition |Our ability to receive, interpret, and process information. This includes attention, awareness, focus, memory, judgment, comprehension, problem solving, and reasoning. A person’s cognition can affect the way they learn - whether it's learning how to use a new device or learning new information in a classroom. Many aspects of cognition affect one another. |
+| Mobility |Our anatomy and muscles give us mobility, and they rely on brain signals which control the muscles. Mobility involves grasps, fine motor skills, coordination, control (voluntary vs. involuntary movement), speed, muscle tone, endurance, posture, and temporary injuries. Mobility can be influenced by situational, temporary, progressive, or permanent conditions. |
 | Vision | Our ability to see and understand visual information from our environment to guide thought and movement. Vision is influenced by both physical and neurological factors. Vision limitations include blindness, low vision (partially sighted), decreased acuity, visual field loss, color blindness, photophobia (light sensitivity), bright sunlight impacting readability of text on a screen. |
-| Hearing |	Our ability to receive and understand audio from our environment to guide thought and movement. Degrees of hearing loss vary across a wide spectrum, causing different types of barriers to everyday technology use. The temporary and situational examples could be a loud environment or a quiet zone where playing sound is not possible. |
+| Hearing |Our ability to receive and understand audio from our environment to guide thought and movement. Degrees of hearing loss vary across a wide spectrum, causing different types of barriers to everyday technology use. The temporary and situational examples could be a loud environment or a quiet zone where playing sound is not possible. |
 | Voice, speech, and communication | Our ability to communicate (verbally or non-verbally) is essential in expressing wants and needs, forming relationships, conveying information to others, and interacting with our environment. |
-| Sensation and perception | Sensation is our ability to detect senses like touch or the positioning of our body. Perception is how the brain processes and communicates these senses. Sensation limitations include vestibular, chronic pain, skin integrity, sensation (hypersensitive and hyposensitive), proprioception.	|
+| Sensation and perception | Sensation is our ability to detect senses like touch or the positioning of our body. Perception is how the brain processes and communicates these senses. Sensation limitations include vestibular, chronic pain, skin integrity, sensation (hypersensitive and hyposensitive), proprioception.|
 
 #### Methods of accessing content
 
@@ -87,11 +91,11 @@ There are many ways for a user to access digital content. Besides using mouse an
 
 #### Assistive tools
 
-- _Keyboard._	People who are blind or have a significant visual impairment interact with websites and apps using screen reader software, which reads content and controls aloud using text-to-speech technology. Since people who are blind can’t see the pointer on the screen, they can’t use a standard mouse.
+- _Keyboard._ People who are blind or have a significant visual impairment interact with websites and apps using screen reader software, which reads content and controls aloud using text-to-speech technology. Since people who are blind can’t see the pointer on the screen, they can’t use a standard mouse.
 The keyboard works as an alternative input to point-and-click interaction. In addition to supporting the basic set of keyboard commands, screen readers also provide a complex set of keyboard commands. These commands give users a powerful additional set of tools to interact with user interfaces more efficiently.
 - _Screen reader._ Screen readers convert digital text into synthesized speech and braille output. They empower users to hear content and navigate with the keyboard. The technology enables people who are blind or who have low vision to use information technology with the same level of independence and privacy as anyone else.
 Screen readers are also used by people with certain cognitive or learning disabilities, or users who simply prefer audio content over text. Beyond the web, screen readers also work with documents, spreadsheets, and the user’s operating system.
-- _Touch._	Touch targets are largely targeted at people with motor delays, who may have problems tapping the screen. More specifically, touch is designed to help people limit the amount of spurious input from unintended (or unregistered) touches.
+- _Touch._ Touch targets are largely targeted at people with motor delays, who may have problems tapping the screen. More specifically, touch is designed to help people limit the amount of spurious input from unintended (or unregistered) touches.
 - _Dynamic content._ One of the easiest features to implement, and one that provides significant immediate benefits to screen reader users, is landmark roles (ARIA labels). There are eight of these roles, each representing a block of content that occurs commonly on web pages. To use them, simply add a relevant role attribute to an appropriate container within your HTML. Then, screen reader users can quickly jump to that section of the page.
 
 #### Visual styles
@@ -130,15 +134,31 @@ Interaction is where accessibility matters the most. If a user is unable to seam
 
 ## Power Platform facilitation
 
-- [Building accessible apps in Power Apps](/power-apps/maker/canvas-apps/accessible-apps)
-- [Power Apps Accessibility Checker feature](/power-apps/maker/canvas-apps/accessibility-checker)
+Modern controls are available for [canvas apps](/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls) and [model driven apps](/power-apps/user/modern-fluent-design).
+
+Canvas apps can utilize [modern theming](/power-apps/maker/canvas-apps/controls/modern-controls/modern-theming) to reference a consistent brand palette across all controls in the app.
+
+Model driven apps support [themes](/power-apps/maker/model-driven-apps/create-themes-organization-branding) which can modify basic branding elements like the app header colors, links, and some form icons.
+
+Reusable, solution aware components are available in multiple forms for various app types. [Custom canvas components](/power-apps/maker/canvas-apps/create-component) can be used in canvas apps or custom pages and are built using low code. [Code components](/power-apps/developer/component-framework/overview) can implement components that can be designed for canvas app, model driven apps, and [Power Pages](/power-pages/configure/component-framework-tutorial) using the pro developer Power Apps Component framework.
+
+Canvas apps supports [accessible properties](/power-apps/maker/canvas-apps/controls/properties-accessibility) that map to specific assistive technology functions. Use [in-studio tooling](/power-apps/maker/canvas-apps/accessibility-checker) to validate accessibility compliance.
+
+Although model driven apps are accessible without configuration, you must ensure all [web resources added to the app are accessible](/power-apps/developer/model-driven-apps/create-accessible-web-resources). All embedded canvas experiences (including [custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)) must be manually configured to meet accessibility standards.
+
+Model driven apps provide [standard keyboard shortcuts for navigating forms and views](/power-apps/user/screen-reader).
+
+Canvas apps require code components to enable keyboard shortcuts, which can be configured using the Creator Kit [keyboard shortcuts](/power-platform/guidance/creator-kit/keyboardshortcuts) component.
 
 ## Related links
 
-- [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
-- [US ADA](https://www.access-board.gov/ada/)
-- [EU Accessibility Act](https://ec.europa.eu/social/main.jsp?catId=1202)
-- [Accessibility Insights tool](https://accessibilityinsights.io/)
+- [Building accessible apps in Power Apps](/power-apps/maker/canvas-apps/accessible-apps)
+- [Accessibility limitations in canvas apps](/power-apps/maker/canvas-apps/accessible-apps-limitations)
+- [Power Apps accessibility standards whitepaper](https://powerapps.microsoft.com/en-us/blog/powerapps-canvas-app-accessibility-guidelines/)
+- [Use a screen reader in canvas apps](/power-apps/user/screen-reader)
+- [WCAG standards guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [Microsoft Inclusive Design](https://inclusive.microsoft.design/)
+- [Fluent UI accessibility guidance](https://fluent2.microsoft.design/accessibility)
 
 ## Experience Optimization checklist
 

@@ -32,9 +32,9 @@ Content coming soon
 
 Content coming soon
 
-## More on pillars
+## Pillars
 
-Pillars are the foundation of the Well-Architected Framework. They are the high-level areas of focus that are critical to the success of a workload.
+Pillars are the foundation of Power Well-Architected. They are the high-level areas of focus that are critical to the success of a workload.
 
 1. Start your journey with the **Design principles**. Each principle has a specific goal. For each principle, follow the approaches to craft your design strategy. These approaches are not optional.
 

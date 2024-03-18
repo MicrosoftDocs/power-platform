@@ -15,17 +15,17 @@ The **design principles** are intended to provide guidance for aspects of Experi
 
 ## Design for the user
 
-|![Goal icon](../_images/goal.svg) Put the user at the center and understand their behaviors, needs, and preferences.  |
+|![Goal icon](../_images/goal.svg) Put the user at the center of your workload experience design.  |
 |--|
 
-Description of principle.
+Deeply understand the needs, experiences, expected outcomes, and desires of the users of your workload, and tailor the design of the workload to the users' specific requirements.
 
 |Approach|Benefit|
 |-|-|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
-|Summary of approach|Summary of benefit.|
+|Learn about what users want, need, and struggle with through user research and empathy-building methods. Imagine yourself as a user to understand their experiences and views, guiding design choices that meet their needs well.|Insights inform design decisions and ensure that the workload addresses users' real-world challenges effectively.<br><br>Workload experiences are tailored to users' workflows, mental models, and preferences, resulting in more relevant and user-centric designs.<br><br>The workload resonates with users on an emotional level, leading to higher levels of user satisfaction and engagement.<br><br>You find creative and innovative solutions that address users' needs and overcome usability barriers.|
+|Include users in every stage of the design process, making users the main drivers of decision-making. Design solutions that match user objectives, processes, and ways of thinking, making sure that users can perform tasks quickly and easily.|Users are more likely to enjoy using the system and see its benefits if they feel that the system meets their needs well and is not difficult to use.<br><br>When users perceive the workload as user-friendly and useful for their needs, they are more likely to adopt it and use it regularly in their daily work. This results in higher levels of user engagement and usage, contributing to the success of the system.<br><br>Experiences that are easy to use minimize the need for extensive training and support. When users can easily comprehend and operate the system, you can save time and resources on training programs and user support.|
+|Design experiences that are inclusive and suit users with different backgrounds, cultures, and contexts. Think about factors like language, cultural expectations, and digital skills to make sure that interfaces are easy to use and meaningful for everyone.|Your workload can be used by users with different abilities, including those who have disabilities.<br><br>You anticipate and accomodate evolving user needs and technologies with a flexible and adaptable experience. |
+|Maintain consistency in design and functionality across different platforms and devices. Design interfaces that adapt seamlessly to different screen sizes, resolutions, and input methods, providing users with a consistent experience regardless of the device they use.|Users have a consistent and functional experience with your workload across their different devices and platforms.|
 
 ## Design for simplicity
 
@@ -37,8 +37,8 @@ Simplicity helps users learn the system, perform their tasks, and achieve their 
 |Approach|Benefit|
 |-|-|
 |Create a coherent and logical structure of information, content, and functionality in the interface.| Users quickly understand the interface and are able to locate the functionality relevant to their tasks.<br><br>Users can process information more efficiently and make informed decisions without being overwhelmed.<br><br>Streamlined interactions are more accessible and ensure users can navigate the interface more effectively. |
-|Provide an intuitive and consistent interface that follows the relevant design conventions and standards. Leverage the existing mental models and expectations of the users. | Users can easily figure out how to use the workload without spending a lot of time or effort in learning new interactions or workflows. This faster learning speeds up user onboarding and adoption.<br/><br/>Users have a feeling of consistency as they experience design elements and interactions that they have recognized and used before. This consistency lowers mental effort and makes it simpler for users to comprehend and navigate the interface.<br/><br/>There is uniformity across interfaces, both within a workload and across different workloads. Uniform design elements and interactions facilitate the learning and usage of the interface for users, regardless of their prior experience.|
-|Focus on the most important information and actions. Eliminate any elements, features, or fields that are not needed. |Users focus on the important elements, scan and read the content easily, and avoid distractions and overload.<br/><br/>The design is aesthetically pleasing and usability is improved. |
+|Provide an intuitive and consistent interface that follows relevant design conventions and standards. Leverage the existing mental models and expectations of the users. | Users can easily figure out how to use the workload without spending a lot of time or effort in learning new interactions or workflows. This faster learning speeds up user onboarding and adoption.<br/><br/>Users have a feeling of consistency as they experience design elements and interactions that they have recognized and used before. This consistency lowers mental effort and makes it simpler for users to comprehend and navigate the interface.<br/><br/>There is uniformity across interfaces, both within a workload and across different workloads. Uniform design elements and interactions facilitate the learning and usage of the interface for users, regardless of their prior experience.|
+|Focus on the most important information and actions. Eliminate any elements, features, or fields that are not needed. |Users access and consume information effectively, resulting in better-informed interactions and improved satisfaction.<br/><br/>Users find the system easy to use and are more likely to engage with the workload, leading to higher adoption rates and better utilization. |
 
 ## Design for efficiency
 

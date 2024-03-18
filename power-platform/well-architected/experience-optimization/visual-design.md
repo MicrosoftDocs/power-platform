@@ -4,7 +4,7 @@ description: Learn how to optimize user perception and aesthetics to ensure cons
 author: Denise-MSFT
 ms.author: demora
 ms.reviewer: robstand
-ms.date: 03/29/2024
+ms.date: 03/13/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
 
-|[EO:01](checklist.md)| **Apply classic design principals to visual elements such as color schemes, typography, and layout. Strive for a focused, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
+|[XO:07](checklist.md)| **Apply classic design principals to visual elements such as color schemes, typography, and layout. Strive for a focused, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
 |---|---|
 
 This guide describes the recommendations for universal visual design patterns that affect user perception, which can significantly influence satisfaction and adoption of an application. Visual elements serve as foundational building blocks used to create experiences. Applying visual principals that align with how humans naturally perceive and process information provides structured methods to choose and arrange visual elements for an effective and appealing application.
@@ -251,9 +251,11 @@ Tailor your signals to the specific context and user's needs. For example, if us
    :::column-end:::
 :::row-end:::
 
+<!---
 ## Power Platform facilitation
 
 These visual design recommendations are universal for overall design, and implicit in the Power Apps modern controls. Take these into consideration when determining overall design and arrangement of components available.
+-->
 
 ## Related links
 

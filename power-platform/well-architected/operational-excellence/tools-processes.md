@@ -74,7 +74,7 @@ For example, a product feature might become deprecated or replaced with a differ
 - *Consider test ownership, which is based on workload ownership*. Your workload team owns their testing and shouldn't rely on other teams to test their code.
 - *Automate tests as much as possible*_*. Automated code relieves the burden on your workload team and enforces consistent quality.
 
-Require your workload team to understand the security practices related to development and quality assurance. They must follow these practices without exception. For more information, see [Recommendations for securing a development lifecycle](../security/secure-development-lifecycle).
+Require your workload team to understand the security practices related to development and quality assurance. They must follow these practices without exception. For more information, see [Recommendations for securing a development lifecycle](../security/secure-development-lifecycle.md).
 
 ## Power Platform facilitation
 

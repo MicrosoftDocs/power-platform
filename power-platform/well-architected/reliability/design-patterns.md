@@ -30,5 +30,4 @@ Review the design patterns that support the other pillars.
 
 - [Design patterns that support operational excellence](../operational-excellence/design-patterns.md)
 - [Design patterns that support performance efficiency](../performance-efficiency/design-patterns.md)
-- [Design patterns that support experience optimization](../experience-optimization/design-patterns.md)
 - [Design patterns that support security](../security/design-patterns.md)

@@ -38,7 +38,7 @@ To implement a comprehensive monitoring system design for your workload, follow 
 - Configure actionable alerts and other automatic responses to intelligently defined thresholds to notify workload teams when issues arise.
 - Include monitoring and alerting systems in your overall workload testing practices.
 - Ensure that monitoring and alerting systems are in scope for continuous improvement. Application and configuration behavior in production provides continuous learning opportunities. Incorporate those lessons into monitoring and alerting designs.
-- Tie the monitoring data that you gather and analyze back to your [system and user flows](../reliability/identify-flows) to correlate the health of the flows with the data in addition to the overall health of the workload. Analyzing that data in terms of the flows will help align your observability strategy with your [health model](../reliability/metrics).
+- Tie the monitoring data that you gather and analyze back to your [system and user flows](../reliability/identify-flows.md) to correlate the health of the flows with the data in addition to the overall health of the workload. Analyzing that data in terms of the flows will help align your observability strategy with your [health model](../reliability/metrics.md).
 - To ensure that you comply with laws and regulations, minimize the storage of any identifiable information. If you do need to store identifiable information, be sure, when you design your solution, to take into account requirements that allow individuals to request that their information be deleted.
 - Regulatory requirements might dictate that information collected for auditing and security needs to be archived and saved. This data is also sensitive and might need to be encrypted or otherwise protected to prevent tampering. You should never record user passwords or other information that might be used to commit identity fraud. You should scrub these details from the data before it's stored.
 
@@ -54,7 +54,7 @@ You should configure all workload components, whether they're low-code or code-f
 
 Logs are primarily useful for detecting and investigating anomalies. Typically, logs are produced by the workload component and then sent to the monitoring platform or pulled by the monitoring platform via automation.
 
-Metrics are primarily useful for [building a health model](../reliability/metrics) and identifying trends in workload performance and reliability. Metrics are also useful for identifying trends in the usage behavior of your users. These trends can help guide decisions about improvements from the customer perspective. Typically, metrics are defined in the monitoring platform, and the monitoring platform and other tools poll the workload to capture metrics.
+Metrics are primarily useful for [building a health model](../reliability/metrics.md) and identifying trends in workload performance and reliability. Metrics are also useful for identifying trends in the usage behavior of your users. These trends can help guide decisions about improvements from the customer perspective. Typically, metrics are defined in the monitoring platform, and the monitoring platform and other tools poll the workload to capture metrics.
 
 #### Workload data
 
@@ -167,5 +167,5 @@ For detailed guidance on alerting use cases and other considerations, see [Desig
 
 ## **Related links**
 
-- [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy)
-- [Recommendations for monitoring and threat detection](../security/monitor-threats)
+- [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md)
+- [Recommendations for monitoring and threat detection](../security/monitor-threats.md)
