@@ -19,7 +19,7 @@ At the core of the Operational Excellence pillar are DevOps practices that **ens
 
 Workload operations can devolve into chaotic practices when there's no clear ownership or leadership. In this type of environment, teams often resort to methods that are executed with high effort and produce low outcomes, which leads to poor user experience. These approaches meet only short-term goals. Long-term benefits are realized through **continuous evaluation and strategic investments**.
 
-The design principles provide guidelines for operational strategies that must be considered to **address the underlying causes and not just treat symptoms**. Start with the recommended approaches, and then observe what works and what doesn't to identify areas of improvement. After you set your strategy, continue to drive action by using the [**Operational Excellence checklist**](./checklist.md).
+The design principles provide guidelines for operational strategies that must be considered to **address the underlying causes and not just treat symptoms**. Start with the recommended approaches, and then observe what works and what doesn't to identify areas of improvement. After you set your strategy, continue to drive action by using the [Operational Excellence checklist](./checklist.md).
 
 The operational requirements of a workload are as important as its business requirements. Efficient processes ensure the workload achieves business outcomes within the constraints of compliance, whether that compliance is organizational or external. The key is to find repeatability with consistency.
 
@@ -144,7 +144,5 @@ The deployment process must follow a standard operating procedure. **Any change 
 
 ## Next steps
 
-We recommend that you review the Operational Excellence checklist to explore other concepts. 
-
-> [!div class="nextstepaction"] 
-> [Operational Excellence checklist](checklist.md) 
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)
