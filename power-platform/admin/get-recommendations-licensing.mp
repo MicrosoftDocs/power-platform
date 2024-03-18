@@ -51,3 +51,5 @@ Complete the following steps to assign Power Apps licenses to users.
 6. Admins can see a list of user recommendations and either choose to assign licenses to all recommended users or customize the list by removing users. After user selection, the admin can either assign the licenses directly or through security groups.  
 
 After approving licenses, admins will be able to see the history of license assignment, clearly stating the summary of users who were assigned licenses and the date of assignment.   
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
