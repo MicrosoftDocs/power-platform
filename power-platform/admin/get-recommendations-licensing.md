@@ -38,17 +38,23 @@ Complete the following steps to assign Power Apps licenses to users.
 
 3. Select the **Intelligent recommendations (Preview)** tab.
 
-4. In the **Power Apps** web part, select **View + assign**.
+4. In the **Power Apps** web part, select **View + assign**. 
 
-5. Recommendations are provided based on three categories:
+5. The **Ready to assign** pane appears. View the list of users who would benefit from having a license. You may want to filter the list to show users that meet the following criteria:
+
    - Users of Basic Power Apps licenses
    - Users who are in an active Power Apps trial
    - Users who have already requested a license from their admins
   
-    Do this.
+6. Specify who should get a license:
+   - To assign licenses to specific users, select the checkmark next to the user's name. Then click **Continue**.
+   - To assign licenses to all users, select **Continue**.
 
-6. Admins can see a list of user recommendations and either choose to assign licenses to all recommended users or customize the list by removing users. After user selection, the admin can either assign the licenses directly or through security groups.  
+7. Indicate if you want to assign the licenses directly or through security groups.
 
-After approving licenses, admins will be able to see the history of license assignment, clearly stating the summary of users who were assigned licenses and the date of assignment.   
+8. Select the license you want to assign to the users. Click **Assign**.
+
+## View recently assiged licenses
+Near the bottom of the page, admins can see the history of license assignment, including a summary of users who were assigned licenses and the date of assignment.   
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
