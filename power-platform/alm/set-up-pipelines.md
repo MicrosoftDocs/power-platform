@@ -13,7 +13,7 @@ contributors:
 
 Create and run pipelines to easily deploy solutions to environments.
 
-## Create a pipeline using the platform host (preview)
+## Create a personal pipeline using the platform host (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Pipelines are now available to all who navigate to the pipelines page for the fi
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 >
 
-### Prerequisites for platform host
+### Prerequisites for personal pipelines
 
 - Two environments can be associated to a personal pipeline created from the **Pipelines** page: one current development environment and one target environment.
 - All environments used in pipelines must have a Microsoft Dataverse database.
