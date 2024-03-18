@@ -1,6 +1,6 @@
 ---
 title: Get recommendations about licensing (preview)
-description: Learn how to get recommendations about which users need licenses.
+description: Learn how to get recommendations about who in your organization would benefit from having a Power Apps license.
 author: sericks007
 ms.date: 03/18/2024
 ms.reviewer: sericks
@@ -10,9 +10,8 @@ ms.author: sericks
 ms.custom: bap-template
 search.audienceType: 
  - admin
-contributors:
-- zadesa 
-
+ms.contributors:
+- zadesa
 ---
 
 # Get recommendations about licensing (preview)
