@@ -70,7 +70,7 @@ Another popular practice is building small reports or badges that can be present
 
 The following image shows the integration between GitHub and an Azure DevOps pipeline. In this example, the creation of a pull request triggers an Azure DevOps pipeline. The pipeline status appears in the pull request.
 
-:::image type="complex" source="media/release-engineering-continuous-integration/image1.png" alt-text="Screenshot of an Azure DevOps status badge in a GitHub repository":::
+:::image type="content" source="media/release-engineering-continuous-integration/image1.png" alt-text="Screenshot of an Azure DevOps status badge in a GitHub repository.":::
 
 ### Test integration
 
