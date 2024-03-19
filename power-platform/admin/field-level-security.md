@@ -125,11 +125,11 @@ Any users not defined in the previously created column security profiles won't h
 ### Adding a new column 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
-1. Select **Dataverse** > **Tables**.
+1. Select **Tables** in the navigation pane.
 
 1. Select a table, and then under **Schema**, select **Columns**.
 
-1. Select the **+ New column** option.
+1. Select the **+ New column** option in the command bar.
 
 1. Enter a **Display name** and **Description**.
 
@@ -144,7 +144,7 @@ Every column in the system contains a setting for whether column security is all
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
-1. Select **Dataverse** > **Tables**.
+1. Select **Tables** in the navigation pane.
 
 1. Select a table, and then under **Schema**, select **Columns**.
 
