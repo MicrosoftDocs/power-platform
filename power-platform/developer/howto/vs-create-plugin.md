@@ -65,7 +65,7 @@ Let's say that you followed the steps previously described to create a plug-in c
 
 1. The first method is to do the same as you did previously by expanding the **Table** node in the **Power Platform Explorer** view, right-clicking a table type, and then selecting **Create Plug-in**. When registering the step, specify the same plug-in project library in the **Handler Assembly**, and the new class name in the **Class Name** form field.
 
-1. For the second method, let's say that you already built and deployed the plug-in library assembly to the Dataverse environment. In this case, you will see the deployed assembly and step you created after you refresh the explorer view and expand the **Plug-in Assemblies** node. At that point you can simply right-click the target assembly node and select **Add Plug-in**. Doing so will display the step registration form which you can now fill out for your new plug-in class.
+1. For the second method, let's say that you already built and deployed the plug-in library assembly to the Dataverse environment. In this case, you'll see the deployed assembly and step you created after you refresh the explorer view and expand the **Plug-in Assemblies** node. At that point, you can simply right-click the target assembly node and select **Add Plug-in**. Doing so displays the step registration form, which you can now fill out for your new plug-in class.
 
 Afterwards, build and deploy the plug-in library project to update the target environment and solution.
 
@@ -73,7 +73,7 @@ Afterwards, build and deploy the plug-in library project to update the target en
 
 You can add a step for an existing registered plug-in that you own. To do so, expand the target plug-in assembly node in the **Power Platform Explorer** view to display the registered plug-in. Right-click that plug-in's node and select **Add Step**. Fill out the **Register New Step** form.
 
-You do not need to build and deploy the plug-in project for the step registration to be available in the target environment and solution.
+You don't need to build and deploy the plug-in project for the step registration to be available in the target environment and solution.
 
 ## The PluginBase abstract class
 
@@ -81,7 +81,7 @@ You do not need to build and deploy the plug-in project for the step registratio
 
 ## The generated plug-in class code
 
-The Plug-in Library template provides the `PluginBase` abstract class. Your plug-in must derive from `PluginBase` if it is to work well with the Power Platform Tools extension. Below is the generated derived class when creating a plug-in from Power Platform Explorer. You typically would add your code where the TODO comments are. Notice that the standard [IPlugin](xref:Microsoft.Xrm.Sdk.IPlugin) interface `Execute` method has been replaced with `ExecuteCdsPlugin` in the plug-in code.
+The Plug-in Library template provides the `PluginBase` abstract class. Your plug-in must derive from `PluginBase` if it's to work well with the Power Platform Tools extension. Here is the generated derived class when creating a plug-in from Power Platform Explorer. You typically would add your code where the TODO comments are. Notice that the standard [IPlugin](xref:Microsoft.Xrm.Sdk.IPlugin) interface `Execute` method is now `ExecuteCdsPlugin` in the plug-in code.
 
 ```csharp
 using System;
@@ -125,14 +125,14 @@ namespace PPTools_Sample_Solution.NotifyPlugin
 }
 ```
 
-At this point you would add your custom plug-in code where indicated by the TODO code comments. For more information, read some of these related topics: [Pass configuration data to your plug-in](/power-apps/developer/data-platform/write-plug-in#pass-configuration-data-to-your-plug-in), [Understand the execution context](/power-apps/developer/data-platform/understand-the-data-context), and [Tracing and logging](/power-apps/developer/data-platform/logging-tracing).
+At this point, you would add your custom plug-in code where indicated by the TODO code comments. For more information, read some of these related articles: [Pass configuration data to your plug-in](/power-apps/developer/data-platform/write-plug-in#pass-configuration-data-to-your-plug-in), [Understand the execution context](/power-apps/developer/data-platform/understand-the-data-context), and [Tracing and logging](/power-apps/developer/data-platform/logging-tracing).
 
 > [!IMPORTANT]
 > We encourage you to use the Power Platform Tools context menus. When you use the Power Platform Explorer context menus to add plug-ins, classes are generated using the provided information and deployment entries in the CrmPackage project's RegisterFile.crmregister file are maintained. It is this information that is used for deployment of assemblies, plug-ins, and steps.
 
 ## Sign the assembly
 
-All plug-in and custom workflow assemblies must be digitally signed before they are uploaded to the Dataverse server. to sign the assembly, follow these steps.
+All plug-in and custom workflow assemblies must be digitally signed before they're uploaded to the Dataverse server. To sign the assembly, follow these steps.
 
 1. Select the plug-in or workflow activity project in **Solution Explorer**.
 
@@ -142,7 +142,7 @@ All plug-in and custom workflow assemblies must be digitally signed before they 
 
 ## Deploy the plug-in to the environment solution
 
-After you are done modifying code and are ready to deploy the plug-in assembly and step(s) to you environment, follow these steps.
+After you're done modifying code and are ready to deploy the plug-in assembly and steps to your environment, follow these steps.
 
 1. Build the plug-in library.
 
@@ -153,7 +153,7 @@ After you are done modifying code and are ready to deploy the plug-in assembly a
 > [!TIP]
 > You can deploy all projects in the Visual Studio solution by right-clicking the CrmPackage project and choosing **Deploy**.
 
-After deployment completes, select the refresh icon in **Power Platform Explorer**. Expand the **Plug-in Assemblies** sub-node of your environment node to see your registered assembly. Right-click on the plug-in assembly and step in **Power Platform Explorer** to see what operations are supported. Selecting **Delete Assembly** will un-register the assembly and its related steps.
+After deployment completes, select the refresh icon in **Power Platform Explorer**. Expand the **Plug-in Assemblies** subnode of your environment node to see your registered assembly. Right-click on the plug-in assembly and step in **Power Platform Explorer** to see what operations are supported. Selecting **Delete Assembly** unregisters the assembly and its related steps.
 
 ## Add an entity image
 
@@ -163,13 +163,13 @@ Entity images are snapshots of entity data before or after the core operation (f
 
 You can also add an image in the **Power Platform Explorer** view under **Event Catalog** on a step of an event plug-in.
 
-:::image type="content" source="./media/devtools-add-image(2).png" alt-text="Add an image to a event step.":::
+:::image type="content" source="./media/devtools-add-image(2).png" alt-text="Add an image to an event step.":::
 
 After you select **Add Image** in the context menu, fill out the form that appears.
 
 :::image type="content" source="./media/devtools-create-image.png" alt-text="Define an entity image.":::
 
-In the form, **Pre Image**/**Post Image** specifies the entity data as it exists before (Pre) or after (Post) the core operation. The **Name** field defines the logical name of the entity that you want data for. **Entity Alias** is the named index that you will use in your code to identify the row in the image table that contains the target entity data. **Parameters** is the list of entity data columns that you want. Specify only the columns that you need since plug-in performance will be reduced the more columns you specify.
+In the form, **Pre Image**/**Post Image** specifies the entity data as it exists before (Pre) or after (Post) the core operation. The **Name** field defines the logical name of the entity that you want data for. **Entity Alias** is the named index that you'll use in your code to identify the row in the image table that contains the target entity data. **Parameters** is the list of entity data columns that you want. Specify only the columns that you need since plug-in performance is reduced the more columns you specify.
 
 More information: [Define entity images](/power-apps/developer/data-platform/register-plug-in#define-entity-images).
 
