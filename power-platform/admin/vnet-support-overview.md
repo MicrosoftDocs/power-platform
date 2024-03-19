@@ -84,11 +84,8 @@ The following table lists the services that support Azure subnet delegation for 
 |------------|-------------------|--------------|
 | Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Preview |
 | Connectors | [SQL Server](/connectors/sql/) | Preview |
-| Connectors | [Azure SQL Data Warehouse](/connectors/sqldw/) | Preview|
-| Connectors | [Azure Queues](/connectors/azurequeues/) | Preview|
-| Connectors  | [Custom connectors](/connectors/custom-connectors/) | Preview|
-| Connectors  | [HTTP with Microsoft Entra](/connectors/webcontentsv2/) | Preview|
-| Connectors  | [Azure Key Vault](/connectors/keyvault/) | Preview|
+|  | [Azure SQL Data Warehouse](/connectors/sqldw/) | Preview|
+|  | [Azure Queues](/connectors/azurequeues/) | Preview|
 
 
 ## Licensing requirements
