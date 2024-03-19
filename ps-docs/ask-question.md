@@ -72,16 +72,17 @@ You can connect to CRM data from Salesforce and Dynamics 365. The following limi
 
 - The connection gets access to a specific set of core entities (i.e. Contacts, Opportunities, Leads, Accounts, Sales orders, and Incidents/Cases).
 - The data is analyzed at the time of connection. The workspace does not refresh data.
-- Data is limited to the top 2000 rows and 100 columns.
+- Data is limited to the top 2000 rows and 100 columns per table.
 - Only one connection is supported. It is possible to connect to a CRM data source and upload files.
 
 For Dynamics 365 Sales connection:
 - The current logged-in user to Sophia is used to connect to Dynamics 365 Sales.
 - If the current user has access to multiple instances, then a dialog will ask the user to choose one.
 - If no instances of Dynamics 365 are found, the menu will not show Dynamics 365 as an option.
+- We currently get list of columns to import from each data entity using the Public Default view. If you want to customize the column list, you can modify the view, or make a new view as the Public Default one.
 
 For Salesforce connection:
-- The user is able to create a connection, or reuse an existing connection from the available Power Platform.
+- The user is able to create a connection, or reuse an existing connection from Power Platform environments available to the currently logged in user.
 
 
 ### Work with content
