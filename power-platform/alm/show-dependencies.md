@@ -11,7 +11,6 @@ ms.author: "swatim"
 search.audienceType: 
   - developer
 ---
-
 # Show dependencies for a component
 
 Solution components often depend on other solution components. You can’t delete any solution component that has dependencies from another solution component. For example, you can't delete a model-driven app site map component without first deleting the model-driven app component, or removing the dependency, because the site map depends on the model-driven app.
@@ -32,9 +31,9 @@ The **Dependencies** page has tabs covering reports for **Delete blocked by**, *
 
 ### Dependencies page actions
 
-The **Dependencies** page has multiple actions for each dependency. The actions can be used to inspect and work with the listed dependencies.
+The **Dependencies** page has multiple actions you can take for each dependency. The actions can be used to inspect, delete the component, or remove a dependency with the listed dependencies.
 
-Select the vertical ellipsis next to any component to select one of the following actions:
+Select the vertical ellipsis next to any component to select from one of the following actions:
 
 - **Open**: This action takes you to the particular component using the default solution. The open action helps you navigate to the component where you can inspect or edit it.
 - **Delete**: This action allows you to delete the component. Ensure to use this action only if the component is no longer required and can be deleted. This action is available only for unmanaged components.
