@@ -95,8 +95,8 @@ The following matrix shows what management is possible with the various service 
 |**Data gateways**|||||
 |View gateways|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data policies**|||||
-|View and manage tenant policies|Yes|Yes|Yes<sup>2</sup>|No|  
-|View and manage environment policies|Yes|Yes|Yes<sup>2</sup>|No|  
+|View and manage tenant policies|Yes|Yes|Yes<</sup>|No|  
+|View and manage environment policies|Yes|Yes|No</sup>|No|  
 ||||||
 |**POWER BI**|||||  
 |Manage the Power BI tenant|Yes|Yes|No|Yes|  
@@ -109,7 +109,7 @@ The following matrix shows what management is possible with the various service 
 
 <sup>1</sup>Equivalent permission level to a System Administrator. Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment - if the user has a suitable license.
 
-<sup>2</sup>If a security group is assigned to the environment and the user with this role added to the security group
+<sup>2</sup>If no security group is assigned to the environment, or if a security group is assigned and the user with this role is added to it
 
 
 ### See also  
