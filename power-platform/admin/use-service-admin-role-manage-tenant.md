@@ -95,7 +95,7 @@ The following matrix shows what management is possible with the various service 
 |**Data gateways**|||||
 |View gateways|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data policies**|||||
-|View and manage tenant policies|Yes|Yes|Yes<</sup>|No|  
+|View and manage tenant policies|Yes|Yes|Yes|No|  
 |View and manage environment policies|Yes|Yes|No</sup>|No|  
 ||||||
 |**POWER BI**|||||  
