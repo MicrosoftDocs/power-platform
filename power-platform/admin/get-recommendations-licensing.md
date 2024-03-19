@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# View intelligent recommendations about licensing (preview)
+# View Intelligent recommendations about licensing (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
