@@ -11,6 +11,8 @@ ms.date: 11/30/2023
 
 # Security tradeoffs
 
+Security provides confidentiality, integrity, and availability assurances of a workload's system and its users' data. Security controls are required for the workload and for the software development and operational components of the system. When teams design and operate a workload, they can almost never compromise on security controls.
+
 During the design phase of a workload, it's important to consider how decisions based on the [Security design principles](./principles.md) and recommendations in the [Design review checklist for Security](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for experience optimization.
 
 ## Security tradeoffs with Reliability

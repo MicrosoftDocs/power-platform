@@ -21,11 +21,9 @@ During the design phase of a workload and over its lifecycle, as continuous impr
 
 - Safe deployment strategies often require some amount of forward and backward compatibility between application logic and data in the workload. This added complexity increases the testing burden and can lead to complexities or integrity issues with the workload's data.
 
-- Highly layered, modularized, or parameterized infrastructure as code can increase the chance of accidental misconfiguration because of the complexity of the interaction between the code components.
+- Highly layered, modularized, or parameterized solutions can increase the chance of accidental misconfiguration because of the complexity of the interaction between the components of the workload.
 
-- Cloud design patterns that benefit operations sometimes necessitate the introduction of additional components, for example, the use of an external configuration store or the coordination of sidecar deployments in a containerized application platform. The additional components increase the points of interaction in the system, increasing the surface area for malfunction or misconfiguration.
-
-- Workload components that are designed to independently evolve to support agile development and hosting introduce dependencies on service discovery, or even DNS as a layer of indirection. Service discovery might lack responsiveness to change, and malfunction can be hard to diagnose.
+- Cloud design patterns that benefit operations sometimes necessitate the introduction of additional components, for example, the use of secret store or taking a dependency on Application Insights. The additional components increase the points of interaction in the system, increasing the surface area for malfunction or misconfiguration.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased potentially destabilizing activities.** The Reliability pillar encourages the avoidance of activities or design choices that can destabilize a system and lead to disruptions, outages, or malfunctions.
 
@@ -45,7 +43,7 @@ During the design phase of a workload and over its lifecycle, as continuous impr
 
 - The observability platform of the system collects logs and metrics about the workload, which can be a valuable source of information disclosure. Therefore, the workload's security needs to extend to protect data sinks from internal and external threats.
 
-- Build agents, externalized configuration and feature toggle stores, and side-by-side deployment approaches all increase the application surface area that requires security.
+- Build agents, externalized configuration and feature toggle stores all increase the application surface area that requires security.
 
 - A higher deployment frequency caused by small, incremental changes or by "get current, stay current" efforts results in more security testing in the software development lifecycle.
 
@@ -55,7 +53,7 @@ Observability platforms ingest data of all types to gain insights into a workloa
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Reduced segmentation.** A key security approach for isolating access and function is to design a strong segmentation strategy. This design is implemented through resource isolation and identity controls.
 
-- Co-locating disparate application components in shared compute, network, and data resources to make management easier reverses segmentation or makes role-based segmentation harder to achieve. Co-located components might also need to share a workload identity, which can lead to over-assignment of permissions or a lack of traceability.
+- Co-locating disparate application components in shared environments and data resources to make management easier reverses segmentation or makes role-based segmentation harder to achieve. Co-located components might also need to share a workload identity, which can lead to over-assignment of permissions or a lack of traceability.
 
 - Collecting all logs from across the system in a unified log sink can make querying and building alerts easier. However, doing so can also make it harder or impossible to provide row-based security in order to treat sensitive data with the required audit controls.
 
@@ -81,6 +79,5 @@ Observability platforms ingest data of all types to gain insights into a workloa
 Explore the tradeoffs for the other pillars.
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
-- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)
 - [Security tradeoffs](../security/tradeoffs.md)
