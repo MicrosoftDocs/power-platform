@@ -124,20 +124,30 @@ Any users not defined in the previously created column security profiles won't h
 
 ### Adding a new column 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
+
 1. Select **Dataverse** > **Tables**.
+
 1. Select a table, and then under **Schema**, select **Columns**.
+
 1. Select the **+ New column** option.
+
 1. Enter a **Display name** and **Description**.
+
 1. Select a **Data type**.
+   
    The **Lookup** and **Formula** data types can't be set with column security. For more information, see [Attributes that cannot be enabled for column security](/power-platform/admin/field-level-security.md#attributes-that-cannot-be-enabled-for-column-security).
+   
 1. Expand **Advance options**, and then under **General**, select the **Enable column security** checkbox.
 
 ### Viewing column level security
 Every column in the system contains a setting for whether column security is allowed. Use the following steps to view column security settings.
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
+
 1. Select **Dataverse** > **Tables**.
+
 1. Select a table, and then under **Schema**, select **Columns**.
+
 1. Select a column, expand **Advanced options**, and then under **General**, view the status of **Enable column security**.
 
 If **Enable column security** can be selected, the column can be enabled for column security. 
