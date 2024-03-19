@@ -3,7 +3,7 @@ title: "Column-level security  | MicrosoftDocs"
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/19/2022
+ms.date: 03/19/2024
 author: praveenmantha
 ms.subservice: admin
 ms.author: pmantha
@@ -18,7 +18,7 @@ search.audienceType:
 
 Record-level permissions are granted at the table level, but you may have certain columns associated with a table that contain data that is more sensitive than the other columns. For these situations, you use column-level security to control access to specific columns.  
   
- The scope of column-level security is organization-wide and applies to all data access requests including the following:  
+ The scope of column-level security is organization-wide and applies to all data access requests, including the following requests and calls:  
   
 - Data access requests from within a client application, such as web browser, mobile client, or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)].  
   
@@ -33,7 +33,7 @@ Column-level security is available for the default columns on most out-of-box ta
   
 1. Enable column security on one or more columns for a given table.  
   
-2. Associate one more existing security profiles, or create one or more new security profiles to grant the appropriate access to specific users or teams.  
+2. Associate one more existing security profile, or create one or more new security profiles to grant the appropriate access to specific users or teams.  
   
 A security profile determines the following:  
   
@@ -129,7 +129,7 @@ Any users not defined in the previously created column security profiles won't h
 1. Click on *+ New column*.
 1. Enter a **Display name** and **Description**.
 1. Select a **Data type**.
-   The **Lookup** and **Formula** data types cannot be set with column security - see [Attributes that cannot be enabled for column security](main/power-platform/admin/field-level-security.md#attributes-that-cannot-be-enabled-for-column-security).
+   The **Lookup** and **Formula** data types can't be set with column security - see [Attributes that cannot be enabled for column security](main/power-platform/admin/field-level-security.md#attributes-that-cannot-be-enabled-for-column-security).
 1. Expand **Advance options**, and then under **General**, check the **Enable column security** box.
 
 ### Viewing column level security
@@ -144,7 +144,7 @@ If **Enable column security** can be selected, the column can be enabled for col
 
    :::image type="content" source="media/field-security-enable-column-security.png" alt-text="Enable column security is possible.":::
  
-### Attributes that cannot be enabled for column security
+### Attributes that can't be enabled for column security
 Although most attributes can be secured, there are system attributes, such as IDs, timestamps, and record tracking attributes, that can't. Below are a few examples of attributes that can't be enabled for column security. 
 -    ownerid, processid, stageid, accountid, contactid, businessunitid, organizationid, solutionid, supportingsolutionid, transactioncurrencyid, goalownerid, subscriptionid, userpuid, yammeruserid
 -    createdby, modifiedby, OwningTeam, OwningUser, Owningbusinessunit, yammeremailaddress
