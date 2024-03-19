@@ -23,7 +23,7 @@ During the design phase of a workload, you need to consider how decisions based 
 
 - Similarly, disaster recovery solutions, like backups, increase a workload's surface area. However, they're often isolated from the workload's runtime. This requires the implementation of additional security controls, which might be specific to the disaster recovery solution.
 
-- For the sake of reliability goals, additional components might be needed for the architecture, which increases the surface area. For example, a message bus might be added to make requests resilient. This increased complexity increases the surface area of the workload by adding new components that need to be secured, possibly in ways that aren't already used in the system. Typically, these components are accompanied by additional code and libraries to support their use or general reliability patterns, which also increases the application's surface area.
+- For the sake of reliability goals, additional components might be needed for the architecture, which increases the surface area. This increased complexity increases the surface area of the workload by adding new components that need to be secured, possibly in ways that aren't already used in the system. Typically, these components are accompanied by additional code to support their use or general reliability patterns, which also increases the application's surface area.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Security control bypass.** The Security pillar recommends that all controls remain active in both normal and stressed systems.
 
@@ -33,21 +33,17 @@ During the design phase of a workload, you need to consider how decisions based 
 
 - Granular implementations of security controls, like role-based access control assignments or firewall rules, introduce configuration complexity and sensitivity, increasing the chance for misconfiguration. Mitigating this potential reliability impact by using broad rules erodes all three Zero Trust architecture principles.
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Old software versions.** The Security pillar encourages a "get current, stay current" approach to vendor security patches.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Old versions.** The Security pillar encourages a "get current, stay current" approach to vendor security patches.
 
-- Applying security patches or software updates can potentially disrupt the target component, causing unavailability during the software change. Delaying or avoiding patching might avoid the potential reliability risks, but it leaves the system unprotected against evolving threats.
+- Applying release wave updates or updates to vendor libraries, like third-party components or solutions, can potentially disrupt the target component, causing unavailability during the change. Delaying or avoiding patching might avoid the potential reliability risks, but it leaves the system unprotected against evolving threats.
 
-- The preceding consideration also applies to the workload's code. For example, it applies to application code that uses old libraries and containers that use old base images. If updating and deploying application code is viewed as an unmitigated reliability risk, the application is exposed to additional security risks over time.
+- The preceding consideration also applies to the workload's code. For example, it applies to application code that uses old libraries and components. If updating and deploying application code is viewed as an unmitigated reliability risk, the application is exposed to additional security risks over time.
 
 ## Reliability tradeoffs with Operational Excellence
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased operational complexity.** Operational Excellence, like Reliability itself, prioritizes simplicity.
 
-- Reliability usually increases the complexity of a workload. As the complexity of a workload increases, the operational elements of the workload can also increase to support the added components and processes in terms of deployment coordination and configuration surface area.
-
 - Having a comprehensive monitoring strategy for a workload is a key part of operational excellence. Introducing additional components into an architecture to implement reliability design patterns results in more data sources to manage, increasing the complexity of implementing distributed tracing and observability.
-
-- Using multiple regions to overcome single region resource capacity constraints and/or implement an active/active architecture increases the complexity of the workload's operational management. This complexity is introduced by the need to manage multiple regions and the need to manage the data replication between them.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased effort to generate team knowledge and awareness.** The Operational Excellence pillar recommends keeping and maintaining a documentation repository for procedures and topologies.
 
@@ -80,6 +76,5 @@ During the design phase of a workload, you need to consider how decisions based 
 Explore the tradeoffs for the other pillars.
 
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
-- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)
 - [Security tradeoffs](../security/tradeoffs.md)
