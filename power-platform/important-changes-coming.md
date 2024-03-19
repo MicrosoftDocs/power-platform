@@ -751,9 +751,9 @@ Gateways for desktop flows are deprecated. Direct connectivity is the preferred 
 
 See [Important upcoming changes and deprecations in canvas apps](/powerapps/maker/canvas-apps/important-changes-deprecations).
 
-## Power Apps portals
+## Power Pages
 
-See [Important changes coming in Power Apps portals](/powerapps/maker/portals/important-changes-deprecations).
+See [Important changes coming in Power Pages](/power-pages/important-changes-deprecations).
 
 ## Other deprecation articles
 [Deprecated features in Dynamics 365 Sales](/dynamics365/sales/deprecations-sales)<br/>
