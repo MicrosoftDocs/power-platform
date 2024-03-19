@@ -3,7 +3,7 @@ title: View intelligent recommendations about licensing (preview)
 description: View intelligent recommendations about who in your organization would benefit from having a Power Apps license.
 author: sericks007
 ms.topic: overview
-ms.date: 03/18/2024
+ms.date: 03/19/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -17,9 +17,9 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Intelligent recommendations (Preview)** page provides you with recommendations about who in your organization would benefit from having a Power Apps license.
+The **Intelligent recommendations (Preview)** page provides you with recommendations about who in your organization would benefit from having a Power Apps premium license.
 
-This feature allows admins to assign licenses both directly and through security groups.
+This feature allows Power Platform admins to assign licenses both directly and through security groups.
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -27,7 +27,7 @@ This feature allows admins to assign licenses both directly and through security
 > - This feature is in process of rolling out, and may not be available in your region yet.
 
 ## Assign a Power Apps license
-Complete the following steps to assign Power Apps licenses to users.
+Complete the following steps to assign Power Apps premium licenses to users.
 
 > [!Note]
 >  Power Platform admins can assign users to the security groups that the admins own.   
