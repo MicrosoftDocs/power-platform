@@ -72,21 +72,19 @@ For any tool that you use to build your automation, make it easily accessible an
 
 ## Power Platform facilitation
 
-Power Platform offers many tools and services to help you automate tasks for your workload.
+[Power Automate](https://azure.microsoft.com/products/power-automate/) enables you to automate Power Platform workloads. For example, when you build custom digital process automation (DPA) to handle workload tasks like approval flows. With Power Automate, you can construct workflows from built-in connectors and templates. The large ecosystem of software as a service (SaaS) connectors enables you to connect apps, data, and devices in the cloud such as Office 365 and Azure. You can use [Power Platform admin connectors](/connectors/powerplatformforadmins/) to connect to the Power Platform service itself and perform operational tasks, such as creating environments or sharing applications.
 
-- [Power Automate](https://azure.microsoft.com/products/power-automate/) enables you to automate Power Platform workloads. For example, when you build custom digital process automation (DPA) to handle workload tasks like approval flows. With Power Automate, you can construct workflows from built-in connectors and templates. The large ecosystem of software as a service (SaaS) connectors enables you to connect apps, data, and devices in the cloud such as Office 365 and Azure. You can use [Power Platform admin connectors](/connectors/powerplatformforadmins/) to connect to the Power Platform service itself and perform operational tasks, such as creating environments or sharing applications.
+Power Automate Approvals (out of the box) or the Approvals Kit (custom solution) enable you to implement simple and complex approvals flows that can aid in automation scenarios.
 
-   Power Automate Approvals (out of the box) or the Approvals Kit (custom solution) enable you to implement simple and complex approvals flows that can aid in automation scenarios.
+[GitHub Actions](https://help.github.com/articles/about-github-actions) enable developers to build automated software development lifecycle workflows. With [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions), you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Power Platform.
 
-- [GitHub Actions](https://help.github.com/articles/about-github-actions) enable developers to build automated software development lifecycle workflows. With [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions), you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Power Platform.
+[Microsoft Power Platform Build Tools](/power-platform/alm/devops-build-tools) can be used to automate common build and deployment tasks related to apps built on Power Platform.
 
-- [Microsoft Power Platform Build Tools](/power-platform/alm/devops-build-tools) can be used to automate common build and deployment tasks related to apps built on Power Platform.
+[ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is a set of applications, scripts, and pipelines designed to automate the continuous integration/continuous delivery process. The toolkit uses Power Platform and Azure DevOps to deliver an end-to-end ALM (application lifecycle management) experience for both low-code and professional developers.
 
-- [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is a set of applications, scripts, and pipelines designed to automate the continuous integration/continuous delivery process. The toolkit uses Power Platform and Azure DevOps to deliver an end-to-end ALM (application lifecycle management) experience for both low-code and professional developers.
+[Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) is a reference implementation that contains a collection of components and tools designed to help you get started with developing a strategy for adopting and supporting Power Platform. Included with the CoE Starter Kit is a rich set of processes that automate your administrative and governance tasks, such as identifying ownerless and highly used applications.
 
-- [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) is a reference implementation that contains a collection of components and tools designed to help you get started with developing a strategy for adopting and supporting Power Platform. Included with the CoE Starter Kit is a rich set of processes that automate your administrative and governance tasks, such as identifying ownerless and highly used applications.
-
-- [Programmability and extensibility](/power-platform/admin/programmability-extensibility-overview#available-tools) tools are available for administrators to orchestrate and automate routine activities for their tenants. Available tools include connectors, the Power Platform CLI, PowerShell cmdlets, and APIs.
+[Programmability and extensibility](/power-platform/admin/programmability-extensibility-overview#available-tools) tools are available for administrators to orchestrate and automate routine activities for their tenants. Available tools include connectors, the Power Platform CLI, PowerShell cmdlets, and APIs.
 
 ## See also
 
