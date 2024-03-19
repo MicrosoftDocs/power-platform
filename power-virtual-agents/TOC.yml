@@ -50,6 +50,10 @@
       href: nlu-authoring.md
     - name: AI features for Teams and Classic bots
       href: advanced-ai-features.md
+    - name: Troubleshoot generative AI
+      items:
+        - name: Generative answers don't return a response
+          href: generative-answers-sharepoint-no-response.md
 - name: Expand copilots with plugins
   items:
     - name: Create and configure copilot plugins (preview)
