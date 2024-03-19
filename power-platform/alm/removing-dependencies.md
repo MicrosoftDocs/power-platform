@@ -64,26 +64,15 @@ Uninstalling Solution 1 causes a component deletion because it's the only layer 
    - Uninstalling the Active (unmanaged) layer doesn't cause a component deletion. Only that layer will be removed. Note that you can't uninstall the Active solution, but you can remove components by using the **Remove Active Customization** feature.
    - Uninstalling Solution 1 causes a component deletion. The action happens in the base layer. Unlike scenario 2, you can uninstall Solution 1. The Active solution isn't considered an extension, and both layers will be removed.
 
-## Dependency Details page
+## Show dependencies page
 
-The **Dependency Details**page lists the dependencies for the selected solution. It can be invoked by:
+The **Show dependencies** command lists the dependencies for the selected solution or solution component. It can be invoked by:
 
-- Selecting **Show Dependencies** on the solution page.
+- Selecting **Show dependencies** on the solution page.
+- Selecting **Advanced** > **Show dependencies** within a solution when a solution component is selected.
 - Trying to uninstall a solution, which will cause the platform to detect that dependencies exist.
 
-![Example of a Dependency Details page.](media/dependency-dialog-with-dependencies.png "Example of a Dependency Details page")
-
-The **Dependency Details** page has the following columns:
-
-- **Display name**: The friendly name of the required component. Each component might show slightly different data to make the identification easier. In the preceding figure, you can see that the entity only shows its name, while the field displays its name and the name of its parent entity.
-- **Name/Id**: The internal name of the required component.
-- **Type**: The type of the required component.
-- **Required by**: The friendly name of the component that requires it (the dependent component). If the dependent component has a customization page, its name becomes a link that opens that page.
-- **Dependent Type**: The type of the dependent component.
-- **Solution Layers**: A link where you can see more details about the components involved in the dependency.
-
-> [!NOTE]
-> The required component is the one that you want to delete. The dependent component is the one that has references to the required component. To remove a dependency, you must make changes that affect the dependent component, not the required component.
+From the Dependencies page you can open, remove, or delete, the component. More information: [Show dependencies for a component](show-dependencies.md)
 
 ## Diagnosing dependencies
 

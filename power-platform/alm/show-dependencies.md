@@ -1,61 +1,60 @@
 ---
-title: "Show dependencies (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
-description: "Dependencies sometimes can block operations. This article describes how to view dependencies and take action on dependencies." # 115-145 characters including spaces. This abstract displays in the search result.
+title: "Show dependencies (Microsoft Dataverse) | Microsoft Docs"
+description: "Dependencies sometimes can block operations. This article describes how to view dependencies and take action on dependencies."
 ms.custom: ""
 ms.date: 03/18/2024
-ms.reviewer: ""
-
+ms.reviewer: "matp"
 ms.topic: "article"
-author: "swatimadhukargit" # GitHub ID
+author: "swatimadhukargit"
 ms.subservice: alm
-ms.author: "swatim" # MSFT alias of Microsoft employees only
+ms.author: "swatim"
 search.audienceType: 
   - developer
 ---
 
-# Show dependencies for component
+# Show dependencies for a component
 
-The show dependencies page for a component helps identify the dependencies and take appropriate actions.
+Solution components often depend on other solution components. You can’t delete any solution component that has dependencies from another solution component. For example, you can't delete a model-driven app site map component without first deleting the model-driven app component, or removing the dependency, because the site map depends on the model-driven app.
 
-In this article, we discuss what actions you can take while viewing the dependencies in the Show dependencies menu under Advanced.
+The show dependencies page for a component helps identify the dependencies so you can take appropriate action.
 
-## Delete block by/Used by/Uses
+This article describes the actions you can take while viewing the dependencies in the **Show dependencies** menu under **Advanced**.
 
-The Dependencies page has details about all the components taking dependency on the solution component. They're grouped by solution's name.
+## Dependencies page contents
 
-The Dependencies page has tabs covering reports for Delete blocked by, Used by and Uses.
+The **Dependencies** page displays details about all the components that have a dependency on the solution component. They're grouped by the solution's name.
 
-**Delete blocked by**: The report lists all the dependencies that block the delete of the solution component. Unless these dependencies are removed/deleted, the solution component delete remains blocked.
+The **Dependencies** page has tabs covering reports for **Delete blocked by**, **Used by**, and **Uses**:
 
-**Used by**: The report lists all the dependencies of other components that are using this solution component.
+- **Delete blocked by**: The report lists all the dependencies that block the delete of the solution component. Unless these dependencies are removed or the component is deleted, the solution component delete remains blocked.
+- **Used by**: The report lists all the dependencies of other components that are using this solution component.
+- **Uses**: This report lists all the dependencies that the given solution component uses.
 
-**Uses**: This report lists all the dependencies that the given solution component uses.
+### Dependencies page actions
 
-## Show Dependencies Actions
+The **Dependencies** page has multiple actions for each dependency. The actions can be used to inspect and work with the listed dependencies.
 
-The show dependencies page has multiple actions for each dependency. The actions could be used to inspect and work with the listed dependencies.
+Select the vertical ellipsis next to any component to select one of the following actions:
 
-  ![Solution dependencies action.](media/solution-component-dependencies.png "Solution dependencies action")
+- **Open**: This action takes you to the particular component using the default solution. The open action helps you navigate to the component where you can inspect or edit it.
+- **Delete**: This action allows you to delete the component. Ensure to use this action only if the component is no longer required and can be deleted. This action is available only for unmanaged components.
+- **Remove dependency**: This action allows you to remove the dependency of the component on the solution component. The system attempts to edit the component to remove the dependency. In the event, when the system is unsuccessful in removing the dependency you might have to do a manual edit. This feature is currently available for certain components.
+- **Open documentation**: This action allows you to open documentation where you can learn about the dependencies for that component type.
 
-You can select any component under any grouped solution to use one of the following actions.
+You can also select a grouped solution and perform delete solution action:
 
-**Open**: This action takes you to the particular component using the Default solution. The open action helps you to navigate to the component where you can inspect or edit it.
+**Delete Solution**: If you need to delete (uninstall) a solution that has dependencies on the solution component, use **Delete**. This action deletes the solution.
 
-**Delete**: This action allows you to delete the component. Ensure to use this action only if the component is no longer required and can be deleted. This action is available only for the unmanaged components.
-
-**Remove dependency**: This action allows you to remove the dependency of the component on the solution component. The system attempts to edit the component to remove the dependency. In the event, when the system is unsuccessful in removing the dependency you might have to consider doing manual edit. This feature is available for certain components today and we're working on onboarding more components soon.
-
-**Open documentation** - This action allows you to open documentation where you can learn about the dependencies on that component type.
-
-You can also select a grouped solution and perform Delete solution action:
-
-**Delete Solution** - If you need to delete/uninstall a solution that has dependencies on the solution component, you can utilize the Delete button provided for the solution.
+![Solution dependencies action.](media/solution-component-dependencies.png "Solution dependencies action")
 
 ### See also
 
- [Remove dependencies](./removing-dependencies.md)
- [Solution concepts](./solution-concepts-alm.md)  
- [Solution layers](./solution-layers-alm.md)  
- [Dependency tracking for solution components.](dependency-tracking-solution-components.md)
+[Remove dependencies](./removing-dependencies.md)
+
+[Solution concepts](./solution-concepts-alm.md)  
+
+[Solution layers](./solution-layers-alm.md)  
+
+[Dependency tracking for solution components.](dependency-tracking-solution-components.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
