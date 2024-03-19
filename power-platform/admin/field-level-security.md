@@ -135,7 +135,7 @@ Any users not defined in the previously created column security profiles won't h
 
 1. Select a **Data type**.
    
-   The **Lookup** and **Formula** data types can't be set with column security. For more information, see [Attributes that cannot be enabled for column security](/power-platform/admin/field-level-security.md#attributes-that-cannot-be-enabled-for-column-security).
+   The **Lookup** and **Formula** data types can't be set with column security. For more information, see [Attributes that cannot be enabled for column security](#attributes-that-cant-be-enabled-for-column-security).
    
 1. Expand **Advance options**, and then under **General**, select the **Enable column security** checkbox.
 
