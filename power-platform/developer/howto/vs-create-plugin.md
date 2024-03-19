@@ -33,7 +33,7 @@ Follow these instructions to create a solution with plug-in library, connect to 
 
 1. Select the desired options in the dialog and select **Login**.
 
-1. Select an existing solution or the **Default** solution. The solution will contain your registered plug-in and workflow activity assemblies for later distribution to other environments.
+1. Select an existing solution or the **Default** solution. This solution contains your registered plug-in and workflow activity assemblies for later distribution to other environments.
 
 1. Select **Done** when finished.
 
@@ -55,15 +55,15 @@ Follow these instructions to register a plug-in step (also known as an SDK messa
     > [!NOTE]
     > You can also create a plug-in by expanding the **Event Catalog**, right-clicking a business event, and choose **Add Plug-in**.
 
-1. Fill out the **Register New Step** dialog information and choose **Register New Step** when done. <p/>The class name that you specify when filling out the step information is used to name your new plug-in class. The class is placed in the plug-in project library specified by the **Handler Assembly** dialog field. If there's only one Plug-in Library project in the solution, the **Handler Assembly** field will be inactive.
+1. Fill out the **Register New Step** dialog information and choose **Register New Step** when done. <p/>The class name that you specify when filling out the step information is used to name your new plug-in class. The class is placed in the plug-in project library specified by the **Handler Assembly** dialog field. If there's only one Plug-in Library project in the solution, the **Handler Assembly** field is inactive.
 
-A new step registration has been added to the solution. However, you will need to build and deploy your plug-in library before the plug-in assembly and step are added to the specified Dataverse environment and solution.
+A new step registration is added to the solution. However, you'll need to build and deploy your plug-in library before the plug-in assembly and step are added to the specified Dataverse environment and solution.
 
 ### Add another plug-in class to the library
 
-Let's say that you followed the steps above to create a plug-in class in the plug-in project library and add a step. Now you want to add another plug-in class to that same library. How do you do that? You have two options, both are through context menus of the Power Platform Tools extension.
+Let's say that you followed the steps previously described to create a plug-in class in the plug-in project library and add a step. Now you want to add another plug-in class to that same library. How do you do that? You have two options both are through context menus of the Power Platform Tools extension.
 
-1. The first method is to do the same as you did above by expanding the **Table** node in the **Power Platform Explorer** view, right-clicking a table type, and then selecting **Create Plug-in**. When registering the step, specify the same plug-in project library in the **Handler Assembly**, and the new class name in the **Class Name** form field.
+1. The first method is to do the same as you did previously by expanding the **Table** node in the **Power Platform Explorer** view, right-clicking a table type, and then selecting **Create Plug-in**. When registering the step, specify the same plug-in project library in the **Handler Assembly**, and the new class name in the **Class Name** form field.
 
 1. For the second method, let's say that you already built and deployed the plug-in library assembly to the Dataverse environment. In this case, you will see the deployed assembly and step you created after you refresh the explorer view and expand the **Plug-in Assemblies** node. At that point you can simply right-click the target assembly node and select **Add Plug-in**. Doing so will display the step registration form which you can now fill out for your new plug-in class.
 
