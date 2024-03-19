@@ -15,7 +15,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/18/2023
+ms.date: 03/07/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -27,7 +27,7 @@ An [on-premises data gateway](/power-platform/admin/wp-onpremises-gateway) acts 
 
 The on-premises data gateway installation encompasses multiple components installed on the same domain as the Windows Virtual Machine (VM).
 
-:::image type="content" source="media/set-up-gateway/opdg-connect.png" alt-text="Reuse environment variables in the SAP ERP connector's actions":::
+:::image type="content" source="media/set-up-gateway/opdg-decrypts-sends.png" alt-text="Diagram of the on-premises data gateway.":::
 
 > [!NOTE]
 >
@@ -35,19 +35,17 @@ The on-premises data gateway installation encompasses multiple components instal
 
 ## Gateway setup steps
 
-Gateways are set up by [administrators](/power-platform/admin/admin-documentation). To set up the gateway:
+[Administrators](/power-platform/admin/admin-documentation) set up gateways. To set up the gateway:
 
 1. Create a new [Windows VM](/azure/virtual-machines/overview) or provision a new or repurposed server specifically for SAP integration with Power Platform.
 
 1. Install the most recent [Microsoft .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) listed in the _System Requirements_ section on the [gateway download page](https://www.microsoft.com/download/details.aspx?id=53127) onto the machine.
 
-1. Install the most recent version of the [on-premises data gateway](/data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) onto the machine (December 16, 2022, or later).
+1. [Install](/data-integration/gateway/service-gateway-install) the [most recent version of the on-premises data gateway](/data-integration/gateway/service-gateway-monthly-updates) onto the machine. Microsoft releases a new update for on-premises data gateways every month. You should develop a plan to regularly monitor and [update on-premises data gateways](/data-integration/gateway/service-gateway-update?source=recommendations) to ensure optimal performance and support.
 
 1. Install most recent version of [Microsoft C++ Runtime DLLs](/cpp/windows/latest-supported-vc-redist?view=msvc-170&preserve-view=true). SAP's NCo 3.1 download requires this library to support the .NET Framework.
 
-1. Install [SAP Connector for Microsoft .NET 3.1 (NCo3.1)](https://support.sap.com/en/product/connectors/msnet.html) on the machine.
-
-      - Select [Install assemblies to GAC](/dotnet/framework/app-domains/install-assembly-into-gac) in the Optional setup steps window during the installation of NCo3.1.
+1. Install [SAP Connector for Microsoft .NET 3.1 (NCo 3.1)](https://support.sap.com/en/product/connectors/msnet.html) on the machine.
 
 > [!IMPORTANT]
 >
@@ -58,20 +56,39 @@ Gateways are set up by [administrators](/power-platform/admin/admin-documentatio
 >
 > For more information about SAP services and ports, review [TCP/IP Ports of All SAP Products](https://help.sap.com/docs/Security/575a9f0e56f34c6e8138439eefc32b16/616a3c0b1cc748238de9c0341b15c63c.html).
 
-The installed gateway runs as the default machine-local service account, _NT Service\PBIEgwService_. Update the service account to a domain account if setting up Windows or Azure single sign-on (SSO). Additional information is provided in [Step 1](configure-authentication.md#step-1-configure-kerberos-constrained-delegation) in the _Configure authentication_ article.
+> [!NOTE]
+>
+> If setting up Windows server AD or Microsoft Entra ID SSO, you need to update the service account to a domain account. The installed gateway runs as the default machine-local service account, _NT Service\PBIEgwService_. Additional information is provided in [Step 1](configure-authentication.md#step-1-configure-kerberos-constrained-delegation) in the _Configure authentication_ article.
 
 ## Gateway cluster configuration
 
-On-premises data gateway clusters can be created to avoid single points of failure when accessing on-premises data resources, but it is important to understand how gateway clusters need to be configured when working with SAP.
+You can [create on-premises data gateway clusters](/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster) to avoid single points of failure when accessing on-premises data resources, but it's important to understand how to configure gateway clusters when working with SAP.
 
-The gateway uses the SAP NCo connector and it maintains an internal state of the connection to SAP. For example, if you have _Step A_ in a flow do something in SAP and _Step A_ uses _Gateway 1_ to make that call, then _Gateway 1_ knows about the changes you are trying to make.
+The gateway uses the SAP NCo 3.1 connector and it maintains an internal state of the connection to SAP. For example, if you have _Step A_ in a flow do something in SAP and _Step A_ uses _Gateway 1_ to make that call, then _Gateway 1_ knows about the changes you're trying to make.
 
-Because the connector maintains an internal state of the connection to SAP, you want all of your calls to be forced to the primary gateway in the cluster. A call is only directed to the second gateway when the primary gateway call fails. To support this scenario, **ensure that random load balancing is turned off**.
+Because the connector maintains an internal state of the connection to SAP, you want all your calls to be forced to the primary gateway in the cluster. A call is only directed to the second gateway when the primary gateway call fails. To support this scenario, **turn off random load balancing**.
 
 ### Turn off random load balancing
 
-1. Go to the [**Settings**](/power-platform/admin/onpremises-data-gateway-management#settings) panel in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. Make sure the checkbox next to _Distribute requests across all active gateways in this cluster_ **remains unchecked** on the on-premises data Settings panel.
+As an admin, ensure that an on-premises data gateway cluster set up with the SAP NCo 3.1 connector has random load balancing set to _off_.
+
+:::image type="content" source="media/set-up-gateway/gateway-clusters.png" alt-text="Select a gateway and access the Settings panel to ensure random load balancing is turned off.":::
+
+Assuming your gateways are already set up, take these steps:
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. Select **Data** on the left navigation pane.
+1. Select **On-premises data gateways** to see a list of gateways.
+1. Select the gateway cluster set up with the SAP NCo 3.1 connector.
+1. Select [**Settings**](/power-platform/admin/onpremises-data-gateway-management#settings).
+1. On the _Settings_ panel, go to **General**. Make sure the checkbox next to _Distribute requests across all active gateways in this cluster_ **remains unchecked**.
+1. If you made a change, select **Save**.
+
+> [!NOTE]
+>
+> Your role determines what features are available to you and what operations you can perform in the Power Platform admin center.
+>
+> You need to be a Microsoft Entra Global admin, Power BI Service admin, or a Gateway admin to have access to the [gateway management capabilities](/power-platform/admin/onpremises-data-gateway-management) that allow you to manage gateway details, settings, and users in the Power Platform admin center.
 
 ## Related content
 
