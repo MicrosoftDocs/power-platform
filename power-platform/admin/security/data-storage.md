@@ -29,7 +29,7 @@ First, it’s important to distinguish between *personal data* and *customer dat
 
 ## Data residency
 
-An Microsoft Entra tenant houses information that's relevant to an organization and its security. When an Microsoft Entra tenant signs up for Power Platform services, the tenant's selected country or region is mapped to the most suitable Azure geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure geography, or *home geo*, except where organizations deploy services in multiple regions.
+A Microsoft Entra tenant houses information that's relevant to an organization and its security. When a Microsoft Entra tenant signs up for Power Platform services, the tenant's selected country or region is mapped to the most suitable Azure geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure geography, or *home geo*, except where organizations deploy services in multiple regions.
 
 Some organizations have a global presence. For example, a business may be headquartered in the United States but do business in Australia. It may need certain Power Platform data to be stored in Australia to comply with local regulations. When Power Platform services are deployed in more than one Azure geography, it's referred to as a *multi-geo* deployment. In this case, only metadata related to the environment is stored in the home geo. All metadata and product data in that environment is stored in the remote geo.
 
@@ -78,7 +78,7 @@ Power Platform has an extensive set of [Data Loss Prevention (DLP) features](../
 
 This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting restricts who, based on IP, can use enterprise SAS tokens. 
 
-This feature is currently in Private Preview going Public Preview later this spring, and General Availability is summer 2024. For more information, see [Release Planner](https://releaseplans.microsoft.com/en-US/?app=Governance+and+administration). 
+This feature is currently in private preview. Public preview is planned for later this spring, with general availability in summer 2024. For more information, see [Release Planner](https://releaseplans.microsoft.com/en-US/?app=Governance+and+administration). 
 
 These settings can be found in a Dataverse environment’s **Privacy + Security** settings in the admin center. You must turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
 
@@ -100,12 +100,12 @@ Admins can enable one of these four configurations for this setting:
 #### Impact on Power App experiences
 Note the following impact on users:
 
-- **When a user, who doesn't meet an environment’s IP address restrictions, opens an app**: The following message is dispalyed: "This app stopped working. Try refreshing your browser." There are plans to update this experience to provide more contextual information to the user as to why the app couldn’t be launched.
+- **When a user, who doesn't meet an environment’s IP address restrictions, opens an app**: The following message is displayed: "This app stopped working. Try refreshing your browser." There are plans to update this experience to provide more contextual information to the user as to why the app couldn’t be launched.
 
 - **When a user, who does meet the IP address restrictions, opens an app**: The following events occur:
 
   - A banner with the following message is displayed: “Your organization configured IP address restrictions limiting where Power Apps is accessible. This app may not be accessible when you use another network. Contact your admin for more details.” This banner appears for a few seconds and then disappears. 
-  - The app may load slower than if IP address restrictions weren’t in place. The IP address restrictions prevents the platform from using some performance capabilities that enable faster load times.
+  - The app may load slower than if IP address restrictions weren’t in place. The IP address restrictions prevent the platform from using some performance capabilities that enable faster load times.
 
   If a user opens an app, while meeting the IP address requirements and then moves to a new network which no longer meets the IP address requirements, the user may observe app contents such as images, embedded media, and links may not load or be accessible. 
 
