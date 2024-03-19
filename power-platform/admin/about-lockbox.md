@@ -19,7 +19,7 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 This article covers how to enable Customer Lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits.
 
 > [!Note]
-> Customer Lockbox is available in US Government Community Cloud (GCC), GCC High, and Department of Defense (DoD) regions.
+> Customer Lockbox is available in public clouds and US Government Community Cloud (GCC), GCC High, and Department of Defense (DoD) regions.
 
 ## Summary
 
