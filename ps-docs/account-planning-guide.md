@@ -26,11 +26,11 @@ Use the account planning guide in Project "Sophia" to help you generate account 
 
 1. Go to [https://projectsophia.preview.microsoft.com]( https://projectsophia.preview.microsoft.com).
 1. From the **Home** screen, select **Guides** > **Account planning**.
-1. From the top right, select **Domains** to optimize responses your specific area of interest.
-1. Use one of the following options to add data:
-   - Select **Add data** > **Upload files** to choose file(s) to be loaded
-   - Select **Add data** > connect to **Salesforce** or **Dynamics 365**
-1. When the data loads, select **Generate**.
+1. On the top right, select **Domains** and select a domain for more relevant results.
+1. Select **Add data** and then select one of the following options:
+   - Select **Upload files**.
+   - Select connect to **Salesforce** or **Dynamics 365**
+1. When your data loads, select **Generate**.
 
 Project "Sophia" is going to generate a tailored account plan based on your data. You can upload or connect to more data and refine your account plan or continue exploring your data.
 
