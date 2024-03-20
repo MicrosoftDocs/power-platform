@@ -5,7 +5,7 @@ author: mikkelsen2000
 ms.topic: Overview
 ms.custom: 
 ms.reviewer: mkaur
-ms.date: 10/31/2023
+ms.date: 3/20/2024
 ms.service: power-platform
 ms.author: pemikkel
 search.audienceType:
@@ -40,9 +40,7 @@ You can upload a data file and ask questions about the data. The [supported file
 1. Use one of the following methods to ask questions about your data:
    - On the Home screen, on the **Onboarding** tile, select **go** > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
    - On the Home screen, select **New workspace** > **Add data** > **Upload files**.
-   - On the Home screen, select **New workspace** > **Add data**>  **Dynamics 365** or **Salesforce**.
-   
-
+   - On the Home screen, select **New workspace** > **Add data**> use data from **Dynamics 365** or **Salesforce**.
 1. If you are uploading a file, select the file name and then select **Open**. If you are connecting to a data source, follow the authentication dialog.
 1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
 1. Select **Generate** or enter your question in the text box and then select **Generate**.
@@ -66,23 +64,28 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following li
 -	Encrypted or password-protected files aren’t supported.
 - If a PDF contains tables make sure the borders are clearly outlined. Avoid using any contrasting colors to differentiate between rows and columns.
 
-### Connecting to Salesforce and Dynamics 365
+### Use data from Dynamics 365 or Salesforce 
 
-You can connect to CRM data from Salesforce and Dynamics 365. The following limitations apply to these connections currently:
+> [!IMPORTANT]
+> You need to have account to establish a connection with either Dynamics 365 or Salesforce.
 
-- The connection gets access to a specific set of core entities (i.e. Contacts, Opportunities, Leads, Accounts, Sales orders, and Incidents/Cases).
-- The data is analyzed at the time of connection. The workspace does not refresh data.
-- Data is limited to the top 2000 rows and 100 columns per table.
-- Only one connection is supported. It is possible to connect to a CRM data source and upload files.
+You can connect to your customer data from Dynamics 365 Sales or Salesforce however the following limitations apply:
+
+- You only have access to specific set of core entities, such as contacts, opportunities, leads, accounts, sales orders, and incidents or cases.
+- The data is analyzed only at the time of connection and doesn’t refresh. 
+- The data is limited to the top 2000 rows and 100 columns per table.
+- You can only connect to one external data source, either Dynamics 365 or Salesforce, at any given time. This means that if you choose to connect to Dynamics 365, you won't be able to connect to Salesforce simultaneously. 
+  However, you can still upload files regardless of the external connection.
 
 For Dynamics 365 Sales connection:
-- The current logged-in user to Sophia is used to connect to Dynamics 365 Sales.
-- If the current user has access to multiple instances, then a dialog will ask the user to choose one.
-- If no instances of Dynamics 365 are found, the menu will not show Dynamics 365 as an option.
-- We currently get list of columns to import from each data entity using the Public Default view. If you want to customize the column list, you can modify the view, or make a new view as the Public Default one.
+
+- Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Sales.
+- If the you have access to multiple instances, you'll be prompted to choose one.
+- If a instance isn't found then the option to connnect to **Dynamics 365** won't be available.
+- The list of columns to import from each data table is obtained using the Default view in Dynamics 365 Sale. To customize the column list, you can modify the view or create a new Default view.
 
 For Salesforce connection:
-- The user is able to create a connection, or reuse an existing connection from Power Platform environments available to the currently logged in user.
+- You can create a connection, or reuse an existing connection using the PowerPlatform environments available to the currently logged in user
 
 
 ### Work with content
