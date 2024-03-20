@@ -206,7 +206,7 @@ Ensure the security baseline you establish for Microsoft Power Platform is well 
 ## Related links
 
 - [Microsoft compliance](/compliance/)
-- [Microsoft Power Platform security and governance documentation](power-platform/admin/security)
+- [Microsoft Power Platform security and governance documentation](/power-platform/admin/security)
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [What is incident response? Plan and steps](https://www.microsoft.com/security/business/security-101/what-is-incident-response)
 

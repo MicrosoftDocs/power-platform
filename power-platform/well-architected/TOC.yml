@@ -135,8 +135,8 @@
               href: ./experience-optimization/usability.md
             - name: XO:05 Feedback and guidance
               href: ./experience-optimization/feedback-guidance.md
-            - name: XO:06 Responsive design
-              href: ./experience-optimization/responsive-design.md              
+            - name: XO:06 Form layout
+              href: ./experience-optimization/screen-layout.md              
             - name: XO:07 Visual design
               href: ./experience-optimization/visual-design.md
             - name: XO:08 Interaction design

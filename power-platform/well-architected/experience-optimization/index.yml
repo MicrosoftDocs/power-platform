@@ -60,8 +60,8 @@ landingContent:
         links:
           - text: Keep users informed
             url: feedback-guidance.md
-          - text: Design for different devices
-            url: responsive-design.md
+          - text: Design for different contexts
+            url: screen-layout.md.md
           - text: Provide clear directions
             url: user-interface-content.md           
   - title: Explore related resources

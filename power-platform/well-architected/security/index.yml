@@ -24,8 +24,6 @@ landingContent:
             url: checklist.md
           - text: Tradeoffs
             url: tradeoffs.md
-          - text: Security patterns
-            url: design-patterns.md
   - title: Review design principles
     linkLists:
       - linkListType: concept

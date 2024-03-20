@@ -50,8 +50,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Start with a DevOps culture
-            url: devops-culture.md
+          - text: Start with a Fusion culture
+            url: fusion-culture.md
           - text: Formalize operational tasks
             url: formalize-operations-tasks.md
           - text: Formalize software development and management
