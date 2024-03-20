@@ -26,11 +26,18 @@ Workload architecture differs from its execution. Power Platform Well-Architecte
 
 ## Audience
 
-Content coming soon
+Power Platform Well-Architected is for teams that want to improve workloads and deal with cross-cutting issues. Power Platform Well-Architected offers useful insights and suggestions for anyone who participates in the lifecycle of a modern application workload built with Microsoft Power Platform. No matter what your role is in a workload team, whether it's architect, developer, maker, or business stakeholder, if you have the authority to make decisions within the scope of a workload, you can use the guidance.  
+
+This guidance is helpful no matter the size of your organization. Whether you're part of a big enterprise, a small business, or an independent software vendor, you can move closer to optimal design. The Power Platform Well-Architected guidance covers a wide range of organizational structures and sizes, making sure that all workload users can effectively access its benefits.
 
 ## Goals
 
-Content coming soon
+The main goal of Power Platform Well-Architected is to help you achieve success with your modern application workloads built with Microsoft Power Platform.
+
+- **Successful design**: A well-architected design leads to successful execution. With the comprehensive and thorough coverage of concepts, you can make smart decisions.  
+- **Confidence in outcomes**: The guidance is based on real customer experiences and subject matter expertise of Microsoft solution architects, supporting the principles of the framework.  
+- **Recognize tradeoffs and risks**: The guidance helps you realize that following the recommendations might involve making compromises against the other pillars. It shows the tradeoffs and also the possible risks that you might want to address in the short term.  
+- **Improve over time**: The guidance is intended for iterative use and as a tool for continuous improvement. Assess the maturity of your workload against the guidance. Treat that assessment as a changing score that evolves with your workload, ensuring that the design stays efficient and effective in meeting your business goals.
 
 ## Pillars
 
