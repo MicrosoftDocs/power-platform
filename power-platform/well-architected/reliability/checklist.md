@@ -29,7 +29,6 @@ Approach your design with a focus on reliability to help ensure that you design 
 | &#9744; |[RE:06](testing-strategy.md)      |  **Test for resiliency and availability scenarios by applying the principles of chaos engineering in your test and production environments**. Use testing to ensure that your graceful degradation implementation strategies are effective by performing active malfunction and simulated load testing.       |
 | &#9744; |[RE:07](disaster-recovery.md)     |  **Implement structured, tested, and documented business continuity and disaster recovery (BCDR) plans that align with the recovery targets**. Plans must cover all components and the system as a whole.       |
 | &#9744; |[RE:08](monitoring-alerting-strategy.md)     |  **Measure and publish the solution's health indicators**. Continuously capture uptime and other reliability data from across the workload and also from individual components and key flows.       |
-| &#9744; |[RE:09](default-environment-hygiene.md)     |  Follow recommendations for **default environment hygiene**.       |
 
 ## Next steps
 

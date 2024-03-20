@@ -41,8 +41,6 @@
               href: reliability/disaster-recovery.md
             - name: RE:08 Monitoring and alerting
               href: reliability/monitoring-alerting-strategy.md
-            - name: RE:09 Default environment hygiene
-              href: reliability/default-environment-hygiene.md
       - name: Security
         items: 
         - name: Quick links
@@ -92,7 +90,7 @@
         - name: Recommendations   
           items:
             - name: OE:01 Fusion team culture
-              href: operational-excellence/devops-culture.md
+              href: operational-excellence/fusion-culture.md
             - name: OE:02 Task execution process
               href: operational-excellence/formalize-operations-tasks.md
             - name: OE:03 Software development practices
