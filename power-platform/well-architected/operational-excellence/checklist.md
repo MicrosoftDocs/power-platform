@@ -6,9 +6,10 @@ ms.author: rstand
 ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 11/30/2023
+ms.date: 03/18/2024
 ---
-# Design review checklist for Operational Excellence  
+
+# Design review checklist for Operational Excellence
 
 This checklist presents a set of recommendations to help you build a culture of operational excellence. Start with a DevOps approach to integrate specializations from multiple disciplines. This approach creates a rigorous design and development practice. This approach leads to repeatable, reliable, and safe deployments of infrastructure and code.
 
@@ -28,13 +29,11 @@ If you don't consider tradeoffs and recommendations for operational excellence, 
 | &#9744; | [OE:06](observability.md) | **Design and implement a monitoring system** to validate design choices and inform future design and business decisions. This system captures and exposes operational telemetry, metrics, and logs that emit from the workload.  |
 | &#9744; | [OE:07](emergency-response.md) | **Develop an effective emergency operations practice.** Ensure that your workload emits meaningful health signals. Collect the resulting data and use it to generate actionable alerts that enact emergency responses via dashboards and queries. Clearly define human responsibilities, such as on-call rotations, incident management, emergency resource access, and running postmortems.  |
 | &#9744; | [OE:08](automate-tasks.md) | **Automate all tasks that don't benefit from the insight and adaptability of human intervention, are highly procedural, and have a shelf-life that yields a return on automation investment.** When possible, choose off-the-shelf software for automation versus custom implementations. Treat all automation the same as workload components, and apply the Well-Architected Framework pillars to its design and implementation.  |
-| &#9744; | [OE:09](enable-automation.md) | **Design and implement automation upfront** for operations such as lifecycle concerns, and applying governance and compliance guardrails. Don't try to retrofit automation later. Choose automation features that your platform provides.  |
+| &#9744; | [OE:09](enable-automation.md) | **Design and implement automation upfront** for operations such as lifecycle concerns, and apply governance and compliance guardrails. Don't try to retrofit automation later. Choose automation features that your platform provides.  |
 | &#9744; | [OE:10](safe-deployments.md) | **Clearly define your workload's safe deployment practices.** Emphasize the ideals of small, incremental, quality-gated release methods. Use modern deployment patterns to control risk. Account for routine deployments and emergency, or hotfix, deployments.   |
 | &#9744; | [OE:11](mitigation-strategy.md)  | **Implement a deployment failure mitigation strategy** that addresses unexpected mid-rollout issues with rapid recovery. Combine multiple approaches, such as rollback, feature disablement, or using your deployment pattern's native capabilities.   |
 
 ## Next steps
-
-We recommend that you review the Operational Excellence tradeoffs to explore other concepts.
 
 > [!div class="nextstepaction"]
 > [Operational Excellence tradeoffs](tradeoffs.md)

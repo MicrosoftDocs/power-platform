@@ -99,6 +99,8 @@
               href: operational-excellence/formalize-development-practices.md
             - name: OE:04 Tools and processes
               href: operational-excellence/tools-processes.md
+            - name: OE:04 Continuous integration
+              href: operational-excellence/release-engineering-continuous-integration.md
             - name: OE:05 Supply chain for workload development
               href: operational-excellence/workload-supply-chain.md
             - name: OE:06 Monitoring system

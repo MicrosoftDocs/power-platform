@@ -1,10 +1,10 @@
 ---
 title: Recommendations for enabling automation in a workload
-description: Learn how to design your workload to enable automation. Automation simplifies maintenance tasks, allowing you to update, patch, and upgrade your systems more efficiently and reliably.
+description: Learn how to design your workload to enable automation and simplify maintenance tasks, allowing you to update, patch, and upgrade more efficiently and reliably.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/18/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
 
-|[OE:09](checklist.md)| Design and implement automation upfront for operations such as lifecycle concerns, and applying governance and compliance guardrails. Don't try to retrofit automation later. Choose automation features that your platform provides.|
+|[OE:09](checklist.md)| **Design and implement automation upfront for operations such as lifecycle concerns, and apply governance and compliance guardrails. Don't try to retrofit automation later. Choose automation features that your platform provides.** |
 |---|---|
 
 This guide describes the recommendations for designing and implementing your workload to enable automation. Design your workload with automation in mind to ensure that routine tasks such as provisioning resources, scaling, and deployments are performed quickly and reliably. Automation simplifies maintenance tasks and allows you to update, patch, and upgrade your systems more efficiently.
@@ -26,8 +26,8 @@ You can design your workload to support automation from the ideation phase to th
 
 Design with automation in mind to minimize refactoring after your workload is running. Consider your workload requirements when deciding which automation tools to use. There might be off-the-shelf or open-source automation tools that your team is already familiar with. Adopting those tools can make the path towards automating your workload easier but be mindful of their limitations. Always investigate the tools that your cloud platform provides to ensure they're compatible and provide the functionality you require. Examples of ways that you can proactively plan for automation include:
 
-- _Deployment_: Automate your application deployments to ensure a predictable standard. Plan for automated deployment by developing deployment standards, training your team on the tools that you'll use, and implementing the necessary infrastructure.
-- _Validation_: Automatically validate compliance requirements against your workload using orchestration or policy tools. Identify the appropriate validation tool for your workload and plan to implement the required systems, for example, orchestration servers.
+- *Deployment*: Automate your application deployments to ensure a predictable standard. Plan for automated deployment by developing deployment standards, training your team on the tools that you'll use, and implementing the necessary infrastructure.
+- *Validation*: Automatically validate compliance requirements against your workload using orchestration or policy tools. Identify the appropriate validation tool for your workload and plan to implement the required systems, for example, orchestration servers.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: When designing your workload to enable automation, consider the degree of control that you want to maintain versus the efficiency you can gain through automation. In some cases, your workload might not be mature enough to automate some functions or you might need a level of flexibility that automation doesn't provide.
 
@@ -37,11 +37,11 @@ Also consider the skill set of your team when designing your workload. If a high
 
 Observe your workload in production, analyze usage patterns, and review user behavior and feedback related to your workload to identify areas where you can improve automation. Look for ways to enhance existing automation or introduce new automation to improve your customer experience.
 
-The following sections of this guide offer recommendations on specific areas of automation that can help you in your workload design and implementation.
+The following sections of this guide offer recommendation on specific areas of automation that can help you in your workload design and implementation.
 
 ### Authentication and authorization
 
-Take automation into account when designing your authentication and authorization strategy. It's important to maintain the highest level of security in production workloads, but this can affect automation. For example, the use of multifactor authentication adds complexity that must be accounted for in your automation design. Use nonhuman, secure accounts for automated authentication, such as managed identities, workload identities, or certificates. Ensure that you have included secret and key management in your automation for increased authentication security.
+Take automation into account when designing your authentication and authorization strategy. It's important to maintain the highest level of security in production workloads, but this strategy can affect automation. For example, the use of multifactor authentication adds complexity that must be accounted for in your automation design. Use nonhuman, secure accounts for automated authentication, such as managed identities, workload identities, or certificates. Ensure that you include secret and key management in your automation for increased authentication security.
 
 ### Design variability into your workload
 
@@ -66,34 +66,17 @@ Design your workload to allow for automated user onboarding and offboarding. Pla
 As part of your continuous workload management, you can automate Desired State Configuration (DSC) in your resources to help ensure that they meet compliance and business requirements. DSC automation helps ensure that configuration drift is caught and remediated quickly. You can automate DSC using orchestration tools or policy management tools. Think of orchestration tools, like Azure DevOps services or Jenkins, as push-based mechanisms. Orchestration tools allow configuration updates to be pushed out through a workflow event, like a manual or automated deployment. These updates are run as part of a task sequence defined in your deployment script. Policy management tools use pull-based mechanisms, meaning that a system runs at the foundational level of your workload that periodically polls the workload to check its state against your defined DSC. If the poll identifies a misalignment or configuration drift, the tool takes corrective action. Consider the following factors when deciding between orchestration and policy management tools:
 
 - Orchestration tools don't have built-in capabilities to proactively poll your workload for configuration drift. Orchestration tools should be integrated into your continuous integration and continuous delivery (CI/CD) pipeline to maintain a standard for infrastructure as code (IaC) deployment and management. An advantage of using orchestration tools is that resources are always fully configured when deployed.
+
 - Policy management tools allow you to define policies that affect one or more groups of resources. These policies are enforced when the resource checks in with the policy management system. An advantage of using policy management is that these systems aren't code driven, so they might be easier for operators on your team to adopt.
 
 When deciding between orchestration or policy tools, consider whether the configuration updates you're planning to make on new resources must be made at the time of deployment. Also consider if defining updates in code fits your operational practices and how many resource types you plan to deploy. If there are many different configurations across resource types, policy tools might be an easier way to manage updates.
 
 ## Power Platform facilitation
 
-### Policy management
+[Environment groups](/power-platform/admin/environment-groups) are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location. Administrators can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, to apply rules to security, licensing, compliance, or other facets.
 
-#### Environment groups
+[Programmability and extensibility](/power-platform/admin/programmability-extensibility-overview#available-tools) tools are available for administrators to orchestrate and automate routine activities for their tenants. Available tools include connectors, the Power Platform CLI, PowerShell cmdlets, and APIs.
 
-Environment groups are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location.
-Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets.
+[Environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) support design variability in the workload. For example, to store parameter keys and values, which then serve as input to other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
 
-For more information see, [Environment groups](/power-platform/admin/environment-groups)
-
-#### Programmability and extensibility
-
-You may have a need to have to orchestrate and automate routine activities for their tenant that are custom to your organization. Several programmability tools are available for administrators for this purpose - you can use connectors, CLI, PowerShell cmdlets and APIs to implement your own automation. For more information, see [Available tools for programmability and extensibility](/power-platform/admin/programmability-extensibility-overview#available-tools).
-
-### Design variability into your workload
-
-Environment Variables store the parameter keys and values, which then serve as input to various other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments. For more information, see [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables).
-
-### Authentication and authorization
-
-[Conditional Access](/azure/active-directory/conditional-access/overview) is a feature of Microsoft Entra ID that lets you control how and when users can access applications and services. Follow the recommendations for conditional access and multi-factor authentication when automating processes with Power Automate. For more information, see [Conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
-
-## Related links
-
-- [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
-- [Conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow)
+[Conditional Access](/azure/active-directory/conditional-access/overview) is a feature of Microsoft Entra ID that lets you control how and when users can access applications and services. Follow the recommendations for [conditional access and multifactor authentication](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow) when automating processes with Power Automate.

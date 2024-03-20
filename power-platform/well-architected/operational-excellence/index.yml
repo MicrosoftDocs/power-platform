@@ -58,6 +58,8 @@ landingContent:
             url: formalize-development-practices.md
           - text: Standardize tools and processes
             url: tools-processes.md
+          - text: Follow continuous integration practices
+            url: release-engineering-continuous-integration.md
           - text: Use safe deployment practices (SPD)
             url: safe-deployments.md
   - title: Use automation
