@@ -78,6 +78,8 @@
               href: view-license-consumption-finops-apps.md
             - name: Manage licenses in your org
               href: signup-question-and-answer.md
+            - name: View Intelligent recommendations about licensing (preview)
+              href: get-recommendations-licensing.md
             - name: Administer without a license
               href: global-service-administrators-can-administer-without-license.md
             - name: Power Apps
@@ -90,6 +92,8 @@
                   href: about-powerapps-perapp.md
                 - name: Autoclaim policies for Power Apps licenses
                   href: auto-claim-licensing.md
+                - name: Power Apps licensing FAQs
+                  href: powerapps-licensing-faq.md
             - name: Power Automate
               items:
                 - name: Overview
@@ -182,6 +186,8 @@
                   href: managed-environment-overview.md
                 - name: Enable Managed Environments
                   href: managed-environment-enable.md
+                - name: Environment groups (preview)
+                  href: environment-groups.md
                 - name: Enable maker welcome content (preview)
                   href: welcome-content.md
                 - name: Limit sharing
@@ -218,7 +224,7 @@
                   href: admin-settings.md
                 - name: Environment database settings
                   href: environment-database-settings.md
-                - name: Default environment routing (preview)
+                - name: Default environment routing (Preview)
                   href: default-environment-routing.md
                 - name: Product
                   items:
@@ -426,7 +432,7 @@
                       href: on-off-switch-for-learning-path-guided-help.md
             - name: Advanced environment operations
               items:
-                - name: Automatic deletion of inactive environments
+                - name: Automatic deletion of Power Platform environments
                   href: automatic-environment-cleanup.md
                 - name: Automatic deletion of inactive Dataverse for Teams environments
                   href: inactive-teams-environment.md

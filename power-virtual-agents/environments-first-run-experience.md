@@ -26,7 +26,7 @@ An environment is a space to store, manage, and share your organization's busine
 
 - [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
 
-## Leverage environments
+## Use environments
 
 There are many strategies for using multiple environments. For example, you can:
 
@@ -45,7 +45,7 @@ You can also build all your copilots in a single environment if you don't need o
 
 When you first sign in and create a new copilot, a default environment is created for you.
 
-You can, however, create additional environments by using the [Power Platform Admin Center](/power-platform/admin/create-environment).
+You can, however, create more environments as needed by using the [Power Platform Admin Center](/power-platform/admin/create-environment).
 
 1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and sign in using your work account. Use the same tenant that you use for Microsoft Copilot Studio.
 
@@ -61,18 +61,18 @@ You can, however, create additional environments by using the [Power Platform Ad
       > If you are trying out Microsoft Copilot Studio for free, you'll need to make sure you set the environment to **Trial**. The standard limitations for [trial environments](#trial-environments) apply.
 
    - For **Region** select the [support data region](data-location.md) where you want the environment to be created.
-   - Set **Add a Dataverse data store?** to **Yes**
+   - Set **Add a Dataverse data store?** to **Yes**.
    - Select **Next**.
 
       :::image type="content" source="media/environments-first-run-experience/environments-create-2.png" alt-text="Enter the environment details." border="false":::
 
       > [!NOTE]
       > The environment needs to be created in a supported region, otherwise you won't be able to use it when creating a copilot.
-      > More information: [Supported data locations](./data-location.md).
+      > For more information, see: [Supported data locations](./data-location.md).
 
 1. Specify the details of the Dataverse data store, such as the language, currency type, and security group and then select **Save**.
 
-1. You'll be returned to the **Environments** tab. Select **Refresh** to see the environment. You'll also see a notice explaining that it may take a few minutes to fully create the environment.
+1. You are returned to the **Environments** tab. Select **Refresh** to see the environment. It may take a few minutes to fully create the environment.
 
 1. After the environment is created, you can return to the [Microsoft Copilot Studio portal](https://go.microsoft.com/fwlink/?linkid=2093067) and use the environment to create a new copilot.
 
@@ -82,9 +82,9 @@ You can, however, create additional environments by using the [Power Platform Ad
 
 ### Create a copilot in an existing environment where you don't have access
 
-To create a copilot in an environment where you don't have access, you'll need to be a system administrator or contact the system administrator. You then need to complete the following:
+To create a copilot in an environment, you need access to the environment. If you don't have access, you need to be a system administrator or contact the system administrator to grant access. You then need to complete the following steps:
 
-1. Create a copilot in the environment (this step will install the necessary Microsoft Copilot Studio solutions).
+1. Create a copilot in the environment (this step installs the necessary Microsoft Copilot Studio solutions).
 
 1. [Assign the security role of "copilot author" to yourself](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user) in the environment.
 
@@ -93,11 +93,9 @@ To create a copilot in an environment where you don't have access, you'll need t
 
 ## Trial environments
 
-When you trial Microsoft Copilot Studio, you can create trial environments that expire after 30 days. When the environment expires, all the copilots in the environment will be deleted. The data associated with the copilot, including any flows and resources you have been using, will be lost.
+When you trial Microsoft Copilot Studio, you can create trial environments that expire after 30 days. When the environment expires, all the copilots in the environment are deleted. This causes all the data associated with the copilot, including any flows and resources you have been using, to be lost.
 
-If you've created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Microsoft Copilot Studio portal, you'll also see a notification if you have copilots created in a trial environment that is going to expire in less than two weeks.
-
-:::image type="content" source="media/environments-first-run-experience/ennvironemnt_expiration_notification.png" alt-text="Environment expiration notification.":::
+If you created your own environment and selected **Trial** as the environment type, you receive email messages shortly before the environment expires. In the Microsoft Copilot Studio portal, you also see a notification if you have copilots created in a trial environment that is going to expire in less than two weeks.
 
 > [!IMPORTANT]
 > There's a difference between an expiring environment and an expiring license. If your license is expiring, you can [extend it without losing any data](sign-up-individual.md#trial-expiration).
@@ -122,20 +120,20 @@ The following operation is unsupported:
 
 ## Known issues with creating a copilot
 
-When you are creating your copilot, you might encounter the following issues.
+When you're creating your copilot, you might encounter the following issues.
 
 ### Insufficient permissions for the selected environment
 
-In this case, you see this error: "You do not have permissions to any environments. Please get access from an administrator."
+In this case, you see this error: "You do not have permissions to any environments. Get access from an administrator."
 
-You will need to [create a new environment](environments-first-run-experience.md). Use that environment to create your copilot.
+You need to [create a new environment](environments-first-run-experience.md). Use that environment to create your copilot.
 
 ### The environment doesn't show up in the drop-down menu of Microsoft Copilot Studio
 
-Your environment might not show up in the drop-down menu due to one of the following:
+Your environment might not show up in the drop-down menu due to one of the following causes:
 
 - The environment doesn't have a database created. To resolve this issue, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
-- The environment is created in an unsupported region. More information: [Supported data locations](data-location.md).
+- The environment is created in an unsupported region. For more information, see: [Supported data locations](data-location.md).
 
 
 ## Related links

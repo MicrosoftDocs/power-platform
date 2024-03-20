@@ -2,7 +2,7 @@
 title: "Capture telemetry with Application Insights"
 description: "Use Bot Framework Composer with Microsoft Copilot Studio to send event data to a telemetry service."
 keywords: "composer, adaptive card"
-ms.date: 03/24/2023
+ms.date: 02/22/2024
 
 ms.topic: article
 author: KendalBond007

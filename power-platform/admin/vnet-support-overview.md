@@ -17,10 +17,6 @@ ms.custom: "admin-security"
 
 With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using a delegate avoids the need for protected resources to travel over the internet to integrate with Power Platform. Virtual Network, Dataverse, and Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
 
-Power Platform offers two ways to securely connect to enterprise resources:
-- **Virtual network support for Power Platform:** Virtual Network support for Power Platform is optimized to handle API workloads with a high request volume and low execution time for requests.
-- **Virtual network (VNet) data gateway:** [Virtual Network Data Gateway](https://learn.microsoft.com/data-integration/vnet/overview) is optimized to handle ETL (Extract, Transform, Load) workloads with a low request volume and high execution time for requests.
-
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 Power Platform typically integrates with enterprise resources over public networks. With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. However, Azure Virtual Network support for Power Platform allows you to use a private network and _still_ integrate with cloud services or services that are hosted inside your enterprise network.
@@ -48,12 +44,11 @@ Power Platform supports Dataverse plug-ins, connectors, and with a virtual netwo
 - Use Dataverse plug-ins to connect to your on-premises data sources such as SQL server, Oracle, or SAP. You protect your data from data breaches and other external threats.
 
 - Use other partner plug-ins to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
-  
-- Use the SQL Connector to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use Azure Queue to establish secure connections to private endpoint-enabled Azure Queues.
 
 ### Limitations
 
 - [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
+- You can only use Copy and Restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center). If the source environment has virtual network enabled and the target does not, you cannot do Copy and Restore.
 
 ## Supported regions
 
@@ -87,20 +82,18 @@ The following table lists the services that support Azure subnet delegation for 
 | Area | Power Platform services | Virtual Network support |
 |------------|-------------------|--------------|
 | Dataverse | Dataverse plug-ins | Public preview |
-| Connectors | SQL | Public preview |
-|| Azure Queue | Public Preview|
 
 
 ## Licensing requirements
 
 Licensing requirements for Virtual Network support for Power Platform will be announced when the service is closer to general availability.
 
-## Considerations before enabling virtual network support for Power Platform Environment
+## Considerations to enable virtual network support for Power Platform Environment
 
 When you use virtual network support in a Power Platform environment, all supported services, like Dataverse plug-ins, connectors, execute requests at runtime in your delegated subnet and are subject to your network policies. The calls to publicly available resources would start to break.
 
  > [!IMPORTANT]
- >  Before you enable the virtual environment support for Power Platform environment, make sure you check the code of the plug-ins and the connectors. The URL’s/connections need to be updated to work with private connectivity.
+ >  Before you enable the virtual environment support for Power Platform environment, make sure you check the code of the plug-ins and the connectors. The URLs and connections need to be updated to work with private connectivity.
 
 For example, a plug-in might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your virtual network. The call from the plugin is blocked in accordance with your network policy. To avoid the blocked call, you can host the publicly available service in your virtual network. Alternatively, if your service is hosted in Azure, you can use a private endpoint on the service before you turn on virtual network support in the Power Platform environment.
 

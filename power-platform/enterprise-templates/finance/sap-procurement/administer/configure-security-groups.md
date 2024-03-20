@@ -25,9 +25,9 @@ ms.subservice: solution-templates
 
 Users only need access to the apps and flows that align to their departmental function. You can create Microsoft Entra ID security groups based on business processes and assign team members to the appropriate groups. The security groups control user access to the apps and visibility to the various components within the apps.
 
-## Create Entra ID security groups
+## Create Microsoft Entra ID security groups
 
-The following deployment model illustrates how you assign users to different Entra ID security groups based on their departmental function.
+The following deployment model illustrates how you assign users to different Microsoft Entra ID security groups based on their departmental function.
 
 ### Admin security group
 
@@ -53,7 +53,7 @@ More information:
 
 ## Create Dataverse group teams
 
-Admins manage the [menu items](apply-seed-data.md#manage-menu-options) visible to users in the canvas apps directly in the SAP Administrator app. [Dataverse group team](/power-platform/admin/manage-group-teams) membership controls access and visibility to the menu items. Entra ID security groups govern Dataverse group team membership and ensure one of two options:
+Admins manage the [menu items](apply-seed-data.md#manage-menu-options) visible to users in the canvas apps directly in the SAP Administrator app. [Dataverse group team](/power-platform/admin/manage-group-teams) membership controls access and visibility to the menu items. Microsoft Entra ID security groups govern Dataverse group team membership and ensure one of two options:
 
 - Users have visibility and access to appropriate menu items in the canvas apps when they are added to one or more security groups.
 - Users lose visibility and access when they are removed from a security group.
@@ -68,8 +68,8 @@ More information: [Work with Microsoft Entra ID group teams](/power-apps/develop
 1. Go to **Environments** and select the environment that contains the solutions.
 1. Go to **Settings** > **Users** + **permissions** > **Teams**.
 1. Select **+ Create Team**.
-1. Complete the required fields. For _Team type_, select **Entra ID Security Group**. You'll also be required to complete _Group name_ and _Membership type_.
-1. Search for the example security group previously created in Entra ID and associate it to the newly created _group team_.
+1. Complete the required fields. For _Team type_, select **Microsoft Entra ID Security Group**. You'll also be required to complete _Group name_ and _Membership type_.
+1. Search for the example security group previously created in Microsoft Entra ID and associate it to the newly created _group team_.
 1. Assign security roles to teams that correspond to team functions.
 
 ### Security role guidance
@@ -88,7 +88,7 @@ The following table provides guidance for assigning security roles:
 
 > [!NOTE]
 >
-> - Users are added to or removed from a group team based on their membership to the linked Entra ID security group.
+> - Users are added to or removed from a group team based on their membership to the linked Microsoft Entra ID security group.
 > - Access to Dataverse data is governed by team membership with access levels differentiated between SAP integration user and SAP integration admin security role assignments to the teams.
 > - The Dataverse group team setup in the Power Platform admin center can also be seen in the SAP Admin app for reference.
 
@@ -114,13 +114,13 @@ Share the flows with _Run only privileges_ so users have access to embedded flow
 
 1. Go to the individual cloud flows in Power Apps.
 1. Go to the _Run only users_ section and select **Edit**.
-1. Invite _system users_ and _teams_ by searching for and selecting the Entra ID (Azure AD) security groups that need access to the flow according to the Power Apps that that team needs to use.
+1. Invite _system users_ and _teams_ by searching for and selecting the Microsoft Entra ID (Azure AD) security groups that need access to the flow according to the Power Apps that that team needs to use.
 1. For all three _connections used_, select the **Provided by run-only end user** option.
 1. Select **Save**.
 
 ### Sharing summary
 
-This table provides a mapping summary of what components need to be assigned or shared according to the example Entra ID (Azure AD) security group teams.
+This table provides a mapping summary of what components need to be assigned or shared according to the example Microsoft Entra ID (Azure AD) security group teams.
 
 |             Component             | Type | Vendor management team | Purchase requisitions team | Purchase orders team | Vendor goods receipt team | Vendor invoice team | Vendor payments team | Admin team |
 |:---------------------------------:|:----:|:----------------------:|:--------------------------:|:--------------------:|:-------------------------:|:-------------------:|:--------------------:|:------------------:|
