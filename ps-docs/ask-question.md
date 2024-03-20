@@ -27,7 +27,7 @@ Follow these steps to ask a question:
 
 1. Go to [https://projectsophia.microsoft.com](https://projectsophia.microsoft.com).
 1. From the Home screen, select **New workspace**.
-1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
+1. From the top right, select **Domains** to optimize responses your specific area of interest. 
 1. Enter your question in the text box and then select **Generate**.
 
 You'll get an AI-powered blueprint in response to your question including an overview and suggested next steps.
@@ -35,13 +35,15 @@ You'll get an AI-powered blueprint in response to your question including an ove
 
 ## Ask questions about your data
 
-You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. You can also **connect to data** sources from Dynamics 365 Sales and Salesforce. In future releases, you will be able to connect to more data sources.
+You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. You can also connect to data sources from Dynamics 365 Sales and Salesforce. In future releases, you'll be able to connect to more data sources.
 
-1. Use one of the following methods to ask questions about your data:
+1. Use one of the following options to ask questions about your data:
    - On the Home screen, on the **Onboarding** tile, select **go** > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
    - On the Home screen, select **New workspace** > **Add data** > **Upload files**.
    - On the Home screen, select **New workspace** > **Add data**> use data from **Dynamics 365** or **Salesforce**.
-1. If you are uploading a file, select the file name and then select **Open**. If you are connecting to a data source, follow the authentication dialog.
+  > [!IMPORTANT]
+  > You need to have account to establish a connection with either Dynamics 365 or Salesforce. For more informatoin, see [Use data from Dynamics 365 or Salesforce](ask-question.md#use-data-from-dynamics-365-or-salesforce).
+1. If you're uploading a file, select the file name and then select **Open**. If you're connecting to a data source, follow the authentication dialog.
 1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
 1. Select **Generate** or enter your question in the text box and then select **Generate**.
 
@@ -57,10 +59,10 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following li
   - Column header in the first row only.
   - No more than 10 tables and max 50 columns for each table.
   - Can’t contain merged cells.
-  - Elements such as images, charts and macros can't be processed.
+  - Elements such as images, charts, and macros can't be processed.
 - PDF:
   - The file must contain selectable text. You can test it by trying to highlight text within the PDF. If you can’t select or highlight the text, then it can't be processed.
-  - Use original digital documents or PDF that are converted directly from word processors or other digital sources. A scanned PDF will not work.
+  - Use original digital documents or PDF that are converted directly from word processors or other digital sources. A scanned PDF won't work.
 -	Encrypted or password-protected files aren’t supported.
 - If a PDF contains tables make sure the borders are clearly outlined. Avoid using any contrasting colors to differentiate between rows and columns.
 
@@ -73,15 +75,15 @@ You can connect to your customer data from Dynamics 365 Sales or Salesforce howe
 
 - You only have access to specific set of core entities, such as contacts, opportunities, leads, accounts, sales orders, and incidents or cases.
 - The data is analyzed only at the time of connection and doesn’t refresh. 
-- The data is limited to the top 2000 rows and 100 columns per table.
+- The data is limited to the top 2,000 rows and 100 columns per table.
 - You can only connect to one external data source, either Dynamics 365 or Salesforce, at any given time. This means that if you choose to connect to Dynamics 365, you won't be able to connect to Salesforce simultaneously. 
   However, you can still upload files regardless of the external connection.
 
 For Dynamics 365 Sales connection:
 
 - Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Sales.
-- If the you have access to multiple instances, you'll be prompted to choose one.
-- If a instance isn't found then the option to connnect to **Dynamics 365** won't be available.
+- If you have access to multiple instances, you are prompted to choose one.
+- If a instance isn't found, then the option to connect to **Dynamics 365** won't be available.
 - The list of columns to import from each data table is obtained using the Default view in Dynamics 365 Sale. To customize the column list, you can modify the view or create a new Default view.
 
 For Salesforce connection:
