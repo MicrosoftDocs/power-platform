@@ -31,17 +31,17 @@
               href: reliability/failure-mode-analysis.md
             - name: RE:04 Target metrics
               href: reliability/metrics.md
-            - name: RE:07 Background jobs
+            - name: RE:05 Background jobs
               href: reliability/background-jobs.md
-            - name: RE:07 Transient faults 
+            - name: RE:05 Transient faults 
               href: reliability/handle-transient-faults.md
-            - name: RE:08 Testing
+            - name: RE:06 Testing
               href: reliability/testing-strategy.md
-            - name: RE:09 Disaster recovery  
+            - name: RE:07 Disaster recovery  
               href: reliability/disaster-recovery.md
-            - name: RE:10 Monitoring and alerting
+            - name: RE:08 Monitoring and alerting
               href: reliability/monitoring-alerting-strategy.md
-            - name: RE:11 Default environment hygiene
+            - name: RE:09 Default environment hygiene
               href: reliability/default-environment-hygiene.md
       - name: Security
         items: 

@@ -34,7 +34,7 @@ landingContent:
             url: principles.md#design-for-simplicity
           - text: Design for efficiency
             url: principles.md#design-for-efficiency
-  - title: Plan and structure the experience
+  - title: Plan and structure
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -44,20 +44,32 @@ landingContent:
             url: design-standards.md
           - text: Implement an information architecture
             url: information-architecture.md
-  - title: Plan and structure the experience
+  - title: Optimize ease-of-use
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Focus on user needs
-            url: user-centered-design.md
-          - text: Adhere to design standards
-            url: design-standards.md
-          - text: Implement an information architecture
-            url: information-architecture.md
+          - text: Prioritize usability
+            url: usability.md
+          - text: Optimize visuals
+            url: visual-design.md
+          - text: Focus on user behaviors
+            url: interaction-design.md
+  - title: Engage your users
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Keep users informed
+            url: feedback-guidance.md
+          - text: Design for different devices
+            url: responsive-design.md
+          - text: Provide clear directions
+            url: user-interface-content.md           
   - title: Explore related resources
     linkLists:
       - linkListType: reference
         links:
+          - text: Power Apps Studio documentation
+            url: /power-apps/maker/canvas-apps/power-apps-studio
           - text: Creator Kit
             url: /power-platform/guidance/creator-kit/overview
           - text: Fluent UI Insights

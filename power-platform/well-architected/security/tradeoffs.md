@@ -11,15 +11,15 @@ ms.date: 11/30/2023
 
 # Security tradeoffs
 
-During the design phase of a workload, it's important to consider how decisions based on the [Security design principles](./principles.md) and recommendations in the [Design review checklist for Security](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for experience optimzation.
+Security provides confidentiality, integrity, and availability assurances of a workload's system and its users' data. Security controls are required for the workload and for the software development and operational components of the system. When teams design and operate a workload, they can almost never compromise on security controls.
+
+During the design phase of a workload, it's important to consider how decisions based on the [Security design principles](./principles.md) and recommendations in the [Design review checklist for Security](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for experience optimization.
 
 ## Security tradeoffs with Reliability
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased complexity.** The Reliability pillar prioritizes simplicity and recommends that points of failure are minimized.
 
-- Some security controls can increase the risk of misconfiguration, which can lead to service disruption. Examples of security controls that can introduce misconfiguration include network traffic rules, identity providers, virus scanning exclusions, and role-based or attribute-based access control assignments.
-
-- Increased segmentation usually results in a more complex environment in terms of resource and network topology and operator access. This complexity can lead to more points of failure in processes and in workload execution.
+- Some security controls can increase the risk of misconfiguration, which can lead to service disruption. Examples of security controls that can introduce misconfiguration include network traffic rules, IP firewall settings, and role-based or attribute-based access control assignments.
 
 - Workload security tooling is often incorporated into many layers of a workload's architecture, operations, and runtime requirements. These tools might affect resiliency, availability, and capacity planning. Failure to account for limitations in the tooling can lead to a reliability event, like SNAT port exhaustion on an egress firewall.
 
@@ -29,24 +29,23 @@ The Security pillar requires a workload to explicitly verify identities and acti
 
 - Ingress and egress firewalls.
 - Certificate revocation lists.
-- Accurate system time provided by a Network Time Protocol (NTP) server.
 - Identity providers, like Microsoft Entra ID.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff:  Increased complexity of disaster recovery.** A workload must reliably recover from all forms of disaster.
 
 - Security controls might affect recovery time objectives. This effect can be caused by the additional steps that are needed to decrypt backed up data or by operational access delays created by site reliability triage.
 
-- Security controls themselves, for example secret vaults and their contents or edge DDoS protection, need to be part of the disaster recovery plan of the workload and must be validated via recovery drills.
+- Security controls themselves, for example secret vaults and their contents, need to be part of the disaster recovery plan of the workload and must be validated via recovery drills.
 
-- Security or compliance requirements might limit data residency options or access control restrictions for backups, potentially further complicating recovery by segmenting even offline replicas.
+- Security or compliance requirements might limit data residency options or access control restrictions for backups, potentially further complicating recovery.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased rate of change.** A workload that experiences runtime change is exposed to more risk of reliability impact due to that change.
 
-- Stricter patching and update policies lead to more changes in a workload's production environment. This change comes from sources like these:
-  - Application code being released more frequently because of updates to libraries or updates to base container images
-  - Increased routine patching of operating systems
-  - Staying current with versioned applications or data platforms
-  - Applying vendor patches to software in the environment
+- Stricter solution update policies lead to more changes in a workload's production environment. This change comes from sources like these:
+  - Application code being released more frequently because of updates to solutions
+  - Applying Power Platform release wave updates
+  - Updating configurations of Power Platform environment settings in the environment
+  - Applying patches to libraries or components used in the environment
 
 - Rotation activities for keys, service principal credentials, and certificates increase the risk of transient issues due to the timing of the rotation and clients using the new value.
 
@@ -57,8 +56,6 @@ The Security pillar requires a workload to explicitly verify identities and acti
 - Security benefits from extensive logging that provides high fidelity insight into the workload for alerting on deviations from baselines and for incident response. This logging can generate a significant volume of logs, which can make it harder to provide insights that are targeted at reliability or performance.
 
 - When compliance guidelines for data masking are followed, specific segments of logs or even large amounts of tabular data are redacted to protect confidentiality. The team needs to evaluate how this observability gap might affect alerting or hinder incident response.
-
-- Strong resource segmentation increases the complexity of observability by requiring additional cross-service distributed tracing and correlation for capturing flow traces. The segmentation also increases the surface area of compute and data to service.
 
 - Some security controls impede access by design. During incident response, these controls can slow down workload operators' emergency access. Therefore, incident response plans need to include more emphasis on planning and drills in order to reach acceptable efficacy.
 
@@ -113,5 +110,4 @@ Explore the tradeoffs for the other pillars.
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
-- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)
