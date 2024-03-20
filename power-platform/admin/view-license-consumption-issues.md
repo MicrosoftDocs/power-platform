@@ -2,7 +2,7 @@
 title: View license consumption for Power Apps and Power Automate (preview)
 description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
 author: amiyapatr-zz
-ms.date: 11/07/2023
+ms.date: 03/20/2024
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -71,28 +71,28 @@ From the **Product** dropdown list, select **Power Automate** to view license co
 
 This view is available for users with global admin, Power Platform admin, and Dynamics 365 admins roles.
 
-The **Power Automate licensing summary** section provides details of how many Power Automate licenses have been purchased,assigned and consumed in your entire tenant . It provides details of which flow runs are consuming  licenses. 
+The **Power Automate licensing summary** section provides details of how many Power Automate licenses have been purchased, assigned, and consumed in your entire tenant. It provides details of which flow runs are consuming licenses. 
 
-The **Attention neded** section provides summary count of flows flows requiring licensing attention in your entire tenant
-
+The **Attention neded** section provides a summary count of flows requiring licensing attention in your entire tenant.
 
 | Setting | Description |
 | ------- | ----------- |
 | **Power Automate licensing overview** | The number of users and the summary count of flows actively using licenses by virtue of flow run in your tenant in the last 30 days. This section also provides details of how many Power Automate licenses have been available and how many of those licenses have been assigned to users. |
-| License type | The type of license—Dynamics 365, Microsoft 365, Power automate per flow ,Power app premium , pay-as-you-go, trial, or developer—the actual license is mapped to. |
+| License type | The type of license, such as Dynamics 365, Microsoft 365, Power automate per flow, Power Apps premium, pay-as-you-go, trial, or developer that the actual license is mapped to. |
 | Active users | The number of unique users who opened apps in any of the environments in your tenant at least once in the last 30 days. |
 | Unique flow count | The number of unique flow which are run in your tenant at least once in the last 30 days. |
 | Assigned licenses | The number of unique users who have been assigned a license.|
-| Purchased licenses | The number of Power automate licenses available for your tenant. |
+| Purchased licenses | The number of Power Automate licenses available for your tenant. |
 | Usage details for a license type | Select a license type in the **Power Automate licensing overview** section to view a list of the users and the list of flows consuming a specific license type. |
-| Email | The email ID or user principal name (UPN) of the user who ran the flow  in any of the environments. Select the email link to get list of all flows ran by the user . |
-| Flow name | The name of the flow which was run .Select the flow link to get details of the flow .|
-| Last run  date | The date when the flow was last run . |
+| Email | The email ID or user principal name (UPN) of the user who ran the flow  in any of the environments. Select the email link to get a list of all flows ran by the user. |
+| Flow name | The name of the flow which was run. Select the flow link to get details of the flow.|
+| Last run  date | The date when the flow was last run. |
 | License | The license SKU. |
-| Premium Features | If the flow is using any premium features. |
-| Flow Type | Type of flow scheduled or manual.  |
+| Premium features | Indicates if the flow is using any premium features. |
+| Flow type | Type of flow: scheduled or manual.  |
 | Download | Downloads the information in CSV format. Select a specific license type to start the download. After a CSV file is generated, you can download the same file again within five days without having to start a new download. The download process is asynchronous, which allows you to start the download and return after a few minutes to monitor its progress. |
-| **Attention needed** | A summary count of flows requiring licensing attention comprises: <ul><li>List of flow not having an owner.</li><li>Standalone Premium flows utilizing standard or expired licenses.</li><li>Out-of-context flows, for instance, Premium flows utilizing Power Apps, Power Virtual Agents, or Dynamics 365 licenses but not operating within the context of Power Apps, Power Virtual Agents, or Dynamics 365.</li></ul> To delve into the specifics of flows necessitating licensing attention, choose an item from the "Attention needed" section or click on "view details"  |
+| **Attention needed** | A summary count of flows requiring licensing attention comprises: <ul><li>List of flow not having an owner.</li><li>Standalone, premium flows utilizing standard or expired licenses.</li><li>Out-of-context flows, for instance, premium flows utilizing Power Apps, Microsoft Copilot Studio, or Dynamics 365 licenses but not operating within the context of Power Apps, Microsoft Copilot Studio, or Dynamics 365.</li></ul> To delve into the specifics of flows necessitating licensing attention, choose an item from the **Attention needed** section or select **View details**.  |
+
 ## Environments tab
 
 The **Environments** tab on the **Licenses (preview)** page displays licensing information from the last 30 days for the selected environment.
