@@ -42,10 +42,10 @@ You can also go back to the **Onboarding** screen, by going to the Home screen a
 
 Legend
 
-1. **Exploratory**: Offers a blank canvas where you can explore and ask questions related to your business. Or you can upload business data and ask questions about the data. Project "Sophia" uses the uploaded data to generate insights and suggests next actions.
+1. **Exploratory**: Offers a blank canvas where you can explore and ask questions related to your business. Or you can add business data, by uploading files or connecting to data sources like CRM, and ask questions about the data. Project "Sophia" uses the data to generate insights and suggests next actions.
 2. **Guides**: Helps you through the process of gathering relevant data to tackle specific role-based business tasks. For preview, only the account planning guide is available. Guides for sales territory planning, supply chain optimization, and others are coming soon.
 3. **Question**: Enter your question in the text box and then select **Generate**.
-4. **Blueprint**: The results that are generated when you ask a question or upload data. You can also generate a new blueprint by selecting one of the suggested next steps.
+4. **Blueprint**: The results that are generated when you ask a question. You can also generate a new blueprint by selecting one of the suggested next steps.
 5. **Block**: Example of the different blocks of content that is generated.
 
 ## Home screen
@@ -59,11 +59,11 @@ The next time you sign in to Project "Sophia", you'll see the Home screen. The f
 Legend
 
 1. **Home**: Takes you to the Home screen as shown in the screenshot.
-2. **New workspace**: Opens a blank canvas where you can explore and ask questions related to your business. You can also upload data and ask questions about the data. When you ask a question, a workspace is created that you can access from the Home screen.
+2. **New workspace**: Opens a blank canvas where you can explore and ask questions related to your business. You can also upload data, or connect to data sources, and ask questions about the data. When you ask a question, a workspace is created that you can access from the Home screen.
 3. **Guides**: Helps you through the process of gathering relevant data to tackle specific role-based business tasks. For preview, only the account planning guide is supported. Guides for sales territory planning, supply chain optimization, and others are coming soon.
 4. **Documentation**: Access online help documentation.
 5. **Onboarding**: Select **Go** to go to the [**Onboarding**](overview.md#onboarding-screen) screen.
-6. **Workspace**: When you ask a question or upload data and inquire about the data, a workspace is generated. You can access all your workspaces from the Home screen.
+6. **Workspace**: When you ask a question or add data and inquire about the data, a workspace is generated. You can access all your workspaces from the Home screen.
 7. **Workspace name**: The name of your workspace. The default title of a workspace is **Untitled**. You can select the title and rename it.
 
 ## Waiting room
@@ -76,4 +76,4 @@ If Project "Sophia" reaches its full capacity during the preview period, you're 
 
 ## Authenticated and unauthenticated experience
 
-If you don't sign in to Project "Sophia", you can't ask questions or upload any data. However, you can still access a limited unauthenticated experience where you can use sample data and get a feel for Project "Sophia", and view suggested next steps.
+If you don't sign in to Project "Sophia", you can't ask questions or add any data. However, you can still access a limited unauthenticated experience where you can use sample data and get a feel for Project "Sophia", and view suggested next steps.
