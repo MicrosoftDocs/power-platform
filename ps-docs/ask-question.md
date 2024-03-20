@@ -43,7 +43,7 @@ You can upload a data file and ask questions about the data. The [supported file
    - On the Home screen, select **New workspace** > **Add data**> use data from **Dynamics 365** or **Salesforce**.
   > [!IMPORTANT]
   > You need to have account to establish a connection with either Dynamics 365 or Salesforce. For more informatoin, see [Use data from Dynamics 365 or Salesforce](ask-question.md#use-data-from-dynamics-365-or-salesforce).
-1. If you're uploading a file, select the file name and then select **Open**. If you're connecting to a data source, follow the authentication dialog.
+1. If you're uploading a file, select the file name and then select **Open**. If you're connecting to a data source, follow the instructions in the authentication dialog box.
 1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
 1. Select **Generate** or enter your question in the text box and then select **Generate**.
 
