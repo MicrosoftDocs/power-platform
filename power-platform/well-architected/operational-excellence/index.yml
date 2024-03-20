@@ -35,7 +35,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Embrace DevOps culture
-            url: principles.md#embrace-devops-culture
+            url: principles.md#embrace-fusion-development-and-devops-culture
           - text: Establish development standards
             url: principles.md#establish-development-standards
           - text: Evolve operations with observability

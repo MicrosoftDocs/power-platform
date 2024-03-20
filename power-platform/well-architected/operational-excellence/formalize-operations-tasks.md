@@ -30,12 +30,12 @@ Process standardization takes many shapes. Here are some general recommendations
 
 - Break down routine, improvised, and emergency tasks into checklist items that are easy to understand so that workload teams can achieve consistency in their processes and minimize potential areas of unpredictability.
 
-    An example of a routine task is the process of applying an upgrade to a solution that is in the production environment. When you determine that you need to perform a solution upgrade, the workload team might create a checklist that includes items such as:    
+An example of a routine task is the process of applying an upgrade to a solution that is in the production environment. When you determine that you need to perform a solution upgrade, the workload team might create a checklist that includes items such as:
 
-    - Test the update in test and staging environments.
-    - Create a change management request to deploy the upgrade in production.
-    - Update the documentation, such as a wiki or knowledge base, to reflect the latest information.
-    - Review the outage window to minimize impact on end users.    
+- Test the update in test and staging environments.
+- Create a change management request to deploy the upgrade in production.
+- Update the documentation, such as a wiki or knowledge base, to reflect the latest information.
+- Review the outage window to minimize impact on end users.
 
     Focus each checklist item on a discrete task that is clearly defined.
 
@@ -47,7 +47,7 @@ Process standardization takes many shapes. Here are some general recommendations
 
     Improvised and emergency operations are also good opportunities to learn how to improve your standard operating procedures. Ask the workload team to reflect on ways that the operations could have gone smoother, and determine whether an update to existing processes could be beneficial going forward.
 
-- Adopt industry-proven practices to minimize the time your team spends on inventing processes and standards. Following [Agile practices](/azure/devops/boards/plans/agile-culture?view=azure-devops) with Scrum, organizing your work through Kanban boards, and adopting a shift-left ethos are all examples of practices that are effective for organizations of any size. Many mature organizations use version-controlled standard operating procedures, wikis, new employee manuals, and operations manuals to enforce consistency.
+- Adopt industry-proven practices to minimize the time your team spends on inventing processes and standards. Following [Agile practices](/azure/devops/boards/plans/agile-culture) with Scrum, organizing your work through Kanban boards, and adopting a shift-left ethos are all examples of practices that are effective for organizations of any size. Many mature organizations use version-controlled standard operating procedures, wikis, new employee manuals, and operations manuals to enforce consistency.
 
     Rely on your team's experience to decide which practices fit your workload lifecycle management. Learn from other teams about the standards they've successfully implemented to understand how particular practices fit into your organizational structure.
 
