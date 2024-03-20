@@ -15,4 +15,4 @@ Get the latest info about what's new and what's changed in Platform Power Well-A
 
 ## March 2024
 
-This is the initial launch of Power Platform Well-Architected.
+Welcome to the initial launch of Power Platform Well-Architected.
