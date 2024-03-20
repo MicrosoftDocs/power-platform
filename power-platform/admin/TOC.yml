@@ -620,7 +620,7 @@
                   href: invite-users-azure-active-directory-b2b-collaboration.md
             - name: Virtual Network support (preview)
               items:
-                - name: Virtual Network support overview
+                - name: Virtual Network support overview (preview)
                   href: vnet-support-overview.md
                 - name: Set up Virtual Network support
                   href: vnet-support-setup-configure.md
