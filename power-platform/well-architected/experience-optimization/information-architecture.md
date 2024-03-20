@@ -1,12 +1,13 @@
 ---
-title: Recommendations for implementing an information architecture
-description: Learn how to implement an information architecture to ensure consistent success with user experience optimization.
+title: Recommendations for implementing effective information architecture
+description: Learn strategies for implementing an effective information architecture in your workload to ensure user experience optimization.
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
 ms.date: 01/31/2024
 ms.subservice: guidance
 ms.topic: conceptual
+ai-usage: ai-assisted
 ---
 
 # Recommendations for implementing an information architecture
@@ -16,35 +17,35 @@ ms.topic: conceptual
 |[XO:03](checklist.md)| **Implement a consistent information architecture. Make finding information and functionality easy. Provide contextual clues and visual indicators to guide users. Use consistent and user-friendly labels for categories, navigation, and other informational elements.** |
 |---|---|
 
-This guide describes the recommendations for designing an effective information architecture (IA) for your workload.
+This guide describes recommendations for designing an effective information architecture (IA) for your workload.
 
 ## Key design strategies
 
-Information architecture is the way the content and features of a system are organized and structured. It affects how users perceive, understand, and navigate the system. A well-architected system should have an information architecture that is based on the user needs and tasks, rather than the system's internal logic or technical constraints. Users should be able to find and access the information and features they need with ease and efficiency.
+Information architecture refers to the organization and structure of a system's content and features. It affects how users perceive, understand, and navigate the system. A well-architected system should have an information architecture that prioritizes user needs and tasks over the system's internal logic or technical constraints. This approach ensures users can easily and efficiently find and access the information and features they need.
 
 ### Be consistent with navigation structures
 
-Consistent navigation helps users to orient themselves in the workload experience, and to move easily and efficiently between different pages or screens. It should be clear, intuitive, and predictable. Use the same navigation elements, such as menus, tabs, breadcrumbs, and buttons, across your workload, and place them in the same locations. Make sure that the navigation reflects the hierarchy and relationships of your content, and that users can always see where they are and where they can go.
+Consistent navigation enhances user orientation within the workload experience, facilitating smooth transitions between pages or screens. Navigation should be clear, intuitive, and predictable. Use the same navigation elements—menus, tabs, breadcrumbs, and buttons—across your workload, and place them in consistent locations. Make sure the navigation reflects the hierarchy and relationships of your content and  users can easily perceive their current location and potential destinations.
 
 ### Use consistent and user-friendly labels
 
-Labels are the words or phrases that you use to name and describe your content and features, such as headings, titles, menus, buttons, and links. Clear and consistent labels help users to understand and easily navigate the workload experience and to perform their tasks effectively. Labels should be consistent in tone, language, and format, and use the terms that your users are familiar with and prefer. For example, if you use the term "account" to refer to the user's profile and settings, use it consistently throughout your workload's experience, and avoid using synonyms like "profile" or "settings".
+Labels are the terms used to identify and explain content and features like headings, titles, menus, buttons, and links. Clear and consistent labels help users to understand and easily navigate the workload experience, and to perform their tasks effectively. Labels should be consistent in tone, language, and format, and use terms that users are familiar with and prefer. For example, if you use the term "account" to refer to the user's profile and settings, use it consistently throughout your workload's experience, and avoid using synonyms like "profile" or "settings."
 
-Navigation elements should have clear and descriptive labels that communicate the purpose and destination of each element. Users should be able to understand what each element does and where it leads without having to click or tap on it. For example, a menu item labeled "Products" is more informative than one labeled "Menu 1".
+Navigation elements should have clear and descriptive labels that communicate the purpose and destination of each element. Users should be able to understand what each element does and where it leads without having to click or tap on it. For example, a menu item labeled "Products" provides more information than one labeled "Menu 1."
 
 ### Provide contextual clues and visual indicators to guide users
 
-Contextual clues and visual indicators are the elements that help users understand the meaning and function of your content and features, such as icons, labels, colors, fonts, and images. They should be consistent in style, size, and meaning, and match the user's expectations and conventions. For example, if you use an icon of a magnifying glass to represent a search function, use it consistently throughout your product, and make sure it behaves the same way every time.
+Contextual clues and visual indicators are the elements that help users understand the meaning and function of your content and features. Examples include icons, labels, colors, fonts, and images. They should be consistent in style, size, and meaning, and match the user's expectations and conventions. For example, if you use an icon of a magnifying glass to represent a search function, use it consistently throughout your product, and make sure it behaves the same way each time it's used.
 
 ### Use progressive disclosure
 
-Progressive disclosure helps users to focus on their primary tasks and goals, without being distracted or overwhelmed by secondary or irrelevant information and functionality. Provide the right amount of information and functionality at the right time, using techniques such as hiding, collapsing, expanding, or revealing the content and functionality as needed. Avoid overwhelming or distracting the users with too much or too little information and functionality. Allow users to control the level of detail and complexity they want to see or interact with.
+Progressive disclosure keeps users focused on primary tasks and goals by minimizing distractions from secondary or irrelevant information and functionality. Provide the right amount of information and functionality at the right time, using techniques such as hiding, collapsing, expanding, or revealing content and functionality as needed. Avoid overwhelming or distracting the users with too much or too little information and functionality. Allow users to control the level of detail and complexity they want to see or interact with.
 
-A quintessential demonstration of progressive disclosure is the wizard pattern. A wizard is a step-by-step process that allows users to input or view information in a prescribed order and in which subsequent steps may depend on information entered in previous ones. Breaking down complex processes into smaller, sequential steps reduces cognitive load on the user, compared to revealing all fields and information at once. The same amount of content is presented in an easier to follow and ultimately more format.
+A quintessential demonstration of progressive disclosure is the wizard pattern. A wizard is a step-by-step process that allows users to input or view information in a prescribed order and in which subsequent steps might depend on information entered in previous ones. Breaking down complex processes into smaller, sequential steps reduces cognitive load on the user, compared to revealing all fields and information at once. This approach delivers the same content in a more manageable and user-friendly format.
 
 ### Categorize information and functionality
 
-Organizing information and functionality into meaningful and logical groups makes it easier for users to find and access the information and features of your workload. Group and label the content and functionality into meaningful and logical categories, based on the users' needs, tasks, and goals. Use categories that are mutually exclusive and collectively exhaustive, meaning that each item belongs to one and only one category, and that all the items are covered by the categories. Use categories that are coherent and consistent, meaning that the items within each category share a common characteristic or criterion.
+Organizing information and functionality into meaningful and logical groups makes it easier for users to find and access the information and features of your workload. Group and label the content and functionality into meaningful and logical categories, based on the users' needs, tasks, and goals. Use categories that are mutually exclusive and collectively exhaustive, where each item belongs to one and only one category and all the items are covered by the categories. Be sure to use categories that are coherent and consistent and that items within each category share a common characteristic or criterion.
 
 ### Group information and functionality into hierarchies
 
@@ -52,21 +53,19 @@ Arrange and display the content and functionality in a hierarchical order, based
 
 ## Power Platform facilitation
 
-Model driven app navigation allows you to [configure groupings of pages](/power-apps/maker/model-driven-apps/app-navigation) in various levels. The designer lets you control which forms, views, and custom pages exist in the app.
+Model-driven app navigation allows you to [configure groupings of pages](/power-apps/maker/model-driven-apps/app-navigation) in various levels. The app designer provides you with the ability to manage the forms, views, and custom pages within the app.
 
-Canvas apps are made up of [screens](/power-apps/maker/canvas-apps/controls/control-screen), and [navigation](/power-apps/maker/canvas-apps/add-screen-context-variables) between them can be implemented using native components. A [gallery](/power-apps/maker/canvas-apps/controls/control-gallery) or [vertical layout container](/power-apps/maker/canvas-apps/controls/control-vertical-container) can be used to construct listed elements as nodes, where each contains a clickable element, like a [button](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-button) that [navigates](/power-platform/power-fx/reference/function-navigate) between screens. Use [custom components](/power-apps/maker/canvas-apps/create-component) to implement reusable global navigation components that appear on every screen.
+Canvas apps consist of [screens](/power-apps/maker/canvas-apps/controls/control-screen), with [navigation](/power-apps/maker/canvas-apps/add-screen-context-variables) achieved using native components. For example, you can use a [gallery](/power-apps/maker/canvas-apps/controls/control-gallery) or [vertical layout container](/power-apps/maker/canvas-apps/controls/control-vertical-container) to create lists of elements as nodes, where each node contains a clickable element such as a [button](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-button) to [navigate](/power-platform/power-fx/reference/function-navigate) between screens. Consider using [custom components](/power-apps/maker/canvas-apps/create-component) to implement reusable global navigation components that appear on every screen.
 
-The [Nav control](/power-platform/guidance/creator-kit/nav) in Creator Kit can be used for primary navigation. [Tab list](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-tabs-or-tabs-list) is commonly used for secondary navigation to switch content within a screen. The modern [link](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-link) control can be used for [launching outside the app](/power-platform/power-fx/reference/function-param). Universal navigation to resources can be placed in a global [app header](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-header) by overlaying clickable navigation [icons](/power-apps/maker/canvas-apps/controls/control-shapes-icons) (or [Fluent icons](/power-platform/guidance/creator-kit/icon)) over the header in a [container](/power-apps/maker/canvas-apps/controls/control-container).
+The [Nav control](/power-platform/guidance/creator-kit/nav) in Creator Kit is a good option for primary navigation. [Tab list](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-tabs-or-tabs-list) is commonly used for secondary navigation to switch content within a screen. Use the [Link modern control](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-link) to [launch a webpage or canvas app](/power-platform/power-fx/reference/function-param). Universal navigation to resources can be placed in a global [app header](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-header) by overlaying clickable navigation [icons](/power-apps/maker/canvas-apps/controls/control-shapes-icons) (or [Fluent icons](/power-platform/guidance/creator-kit/icon)) over the header in a [container](/power-apps/maker/canvas-apps/controls/control-container).
 
-The wizard pattern can be implemented using the [Subway nav component](/power-platform/guidance/creator-kit/subwaynav) from the Creator Kit.
+To implement a wizard pattern, use the [SubwayNav component](/power-platform/guidance/creator-kit/subwaynav) of Creator Kit.
 
-## Related links
+## See also
 
 - [Navigation in a canvas app learn module](/training/modules/navigation-canvas-app/)
 
 ## Experience Optimization checklist
-
-Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)
