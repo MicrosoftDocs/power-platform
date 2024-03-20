@@ -38,9 +38,9 @@ You'll get an AI-powered blueprint in response to your question including an ove
 You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. You can also **connect to data** sources from Dynamics 365 Sales and Salesforce. In future releases, you will be able to connect to more data sources.
 
 1. Use one of the following methods to ask questions about your data:
-   - On the Home screen, select **go** on the **Onboarding** tile > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
-   - On the Home screen, select **New workspace** > **Add data** > **Upload files**
-   - On the Home screen, select **New workspace** > **Add data**>  **Dynamics 365** or **Salesforce**
+   - On the Home screen, on the **Onboarding** tile, select **go** > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
+   - On the Home screen, select **New workspace** > **Add data** > **Upload files**.
+   - On the Home screen, select **New workspace** > **Add data**>  **Dynamics 365** or **Salesforce**.
    
 
 1. If you are uploading a file, select the file name and then select **Open**. If you are connecting to a data source, follow the authentication dialog.
