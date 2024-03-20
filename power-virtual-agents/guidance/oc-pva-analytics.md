@@ -1,66 +1,67 @@
 ---
-title: "Analytics considerations for Power Virtual Agents Dynamics 365 Omnichannel"
-description: "Guidance best practices to understand analytics considerations of Power Virtual Agents chatbot vs Dynamics 365 Omnichannel."
+title: "Analytics considerations for Copilot Studio vs Dynamics 365 Omnichannel"
+description: "Guidance best practices to understand analytics considerations of Copilot Studio copilots vs Dynamics 365 Omnichannel."
 author: athinesh
-ms.date: 11/03/2023
+ms.date: 3/20/2024
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: athinesh
 ms.reviewer: iawilt
 ---
-# Introduction
 
-Analytics is a top priority for Dynamics 365 Omni-channel and Power Virtual Agents customers tracking the performance of their Bots and Call-center agents. 
-There are major efforts currently underway to improve the analytics across both these products. 
-While the analytics will continue to improve, there are several considerations you can adopt as a Bot builder or customer service expert to improve the understating 
-of analytics across Power Virtual Agents and Dynamics 365 Omnichannel to enhance bot performance. 
-In this article we will touch on concepts that will help you understand the difference between Dynamics 365 Omni-channel analytics and Power Virtual Agents analytics, 
-the purpose behind both. This will help you to make informed decisions about the bot performance for your implementation.
+# Analytics considerations for Copilot Studio vs Dynamics 365 Omnichannel
 
-## Using Power Virtual Agents Analytics
+Analytics is a top priority for Dynamics 365 Omnichannel and Copilot Studio customers tracking the performance of their copilots and call center agents. 
+There are major efforts currently underway to improve the analytics across both these products. While the analytics will continue to improve, there are several considerations you can adopt as a copilot builder or customer service expert to improve your understanding of analytics across Copilot Studio and Dynamics 365 Omnichannel to enhance copilot performance. 
 
-The out-of-box analytics of Power Virtual Agents is mainly focused on providing insights on bot topics performance through the Sessions (more details below). 
-They do not provide an end-to-end insight including the human agent conversation, but can be effectively used to improve the topic performance inside the bot. 
-These are some key goals behind using Power Virtual Agents analytics, that comes out of box in the application,
+In this article we will touch on concepts that will help you understand the difference between Dynamics 365 Omnichannel analytics and Copilot Studio analytics, as well as the purpose behind the analytics tools in each of them. This will help you make informed decisions about the copilot performance for your implementation.
 
+## Using Copilot Studio Analytics
 
- - Optimized to give insights about bot performance
- - The Insights you can get from Power Virtual Agents include:
- - How engaged are users with the bots?
- - Which topics are driving resolutions/escalations abandonment ?
- - In general, Power Virtual Agents analytics is useful to enhance the bot performance in terms of the topics.
- - This will give insights on what new topics need to be created, and what topics need to be updated to achieve better resolution rates for the incoming user queries.
- - Learn more: Aka.ms/PVA/Analytics
+The standard analytics tools in Coplilot Studio copilots are focused mainly on providing insights about copilot topics performance through during chat sessions. They do not provide an end-to-end insight that includes any human-agent conversation. But they can be used to improve the topic performance inside the copilot. 
 
-## Understanding Power Virtual Agents Analytics Definitions
+The insights you can get from Copilot Studio analytics include metrics for questions like:
+ - How engaged are users with the copilots?
+ - Which topics are driving resolutions, escalations, and abandonment ?
 
-It is important to understand the way Power Virtual Agents calculates the various metrics for the analytics. The basis of these calculation is the bot Sessions.   A session can be a unbilled or billed session . A billed session is a continuous interaction between a bot and a user to address ALL of user’s question within a 60-minute time window.
- - A billed session can include multiple user authored topics.
- - A billed session cannot last longer than 60 minutes or 100 turns.
-A session is interaction between a bot and a user to address or assist a user with ONE query/intent (one user authored topic)
-- Most sessions are engaged which means that a user authored topic or escalate was triggered. There are three possible outcomes:
-- Resolved session is an engaged session when end-users are offered an end-of-conversation survey and either responds yes or leave without a response.
-- Escalated session is an engaged session where end-users indicate that they need a human to help resolve the issue.
-- Abandoned session is an engaged session that is neither resolved nor escalated and is inactive after 60 minutes from the beginning of the session. (user leaves)
-A topic is tied to a dialog built in Power Virtual Agents. One topic has one dialog.
+In general, Copilot Studio analytics tools are useful to enhance the bot performance in terms of the topics. This gives insights about what new topics need to be created, and what topics need to be updated to achieve better resolution rates for future user queries.
 
-## Using Dynamics 365 Omni-channel Chatbot Analytics
+To learn more, see [Key concepts - Analytics in Microsoft Copilot Studio](analytics-overview.md)
 
-The out-of-box analytics of Dynamics 365 Omnichannel is mainly focused on providing insights on how the overall chatbot deflection is performing through the conversations. These are some key goals behind using Dynamics 365 Omni-channel analytics, that comes out of box in the application. 
-- Optimized to give insight into the overall interaction/conversation across bot and human agent, not only bot.
-- You can get the Insights from Dynamics 365 Omnichannel including,
+## Understanding Copilot Studio analytics definitions
+
+It is important to understand the way Copilot Studio calculates the various metrics for the analytics. The basis of these calculations is the copilot sessions. A session can be an unbilled or a billed session. A billed session is a continuous interaction between a copilot and a user to address all of user’s question within a 60-minute time window.
+
+A billed session can include multiple user authored topics and cannot last longer than 60 minutes or 100 turns.
+
+A session is interaction between a copilot and a user to address or assist a user with one query or intent (one user authored topic).
+Most sessions are *engaged*, which means that a user-authored topic or an escalation was triggered. There are three possible outcomes for an engaged session:
+
+- Resolved: End users are offered an end-of-conversation survey and either responds yes or leave without a response.
+- Escalated: End users indicate that they need a human to help resolve the issue.
+- Abandoned: An engaged session that is neither resolved nor escalated and is inactive after 60 minutes from the beginning of the session. This would happen, for example, if the user leaves.
+
+A topic is tied to a dialog flow built in Copilot Studio. One topic contains one dialog flow.
+
+## Using Dynamics 365 Omnichannel chatbot analytics
+
+The standard analytics tools in Dynamics 365 Omnichannel are mainly focused on providing insights about how the overall copilot deflection is performing through the conversations. These analytics are optimized to give insight into the overall interaction/conversation across both copilot and human agent.
+
+The insights you can get from Dynamics 365 Omnichannel include:
+
 - Bot resolution time
 - Bot escalation time
 - Conversation escalation
-  
-Learn more about this in Bot dashboard | Microsoft Learn
 
-## PVA vs Omnichannel Analytics side  by side Example
+## Copilot Studio vs Omnichannel analytics comparison
 
-In the below example you can observe how the Analytics calculation differs between Power Virtual Agents and Dynamics 365 Omni-channel for the same set of metrics, 
-like Resolution rate, Escalation rate and Abandonment rate.
+Let's take a look at how the analytics calculations differ between Copilot Studio and Dynamics 365 Omnichannel for the same set of metrics, 
+such as resolution rate, escalation rate and abandonment rate.
 
-In this example, Power Virtual Agents analytics considers this as two separate bot sessions, while Dynamics 365 Omnichannel analytics considers it as a single “conversation”. As a result of this, the resolution rates, Escalation rates and Abandonment rates can be different across Power Virtual Agents analytics and Dynamics 365 Omni-channel analytics. The Abandonment does not apply for Omnichannel analytics since the conversation is escalated to human agent.
-These key differences in the calculation off Resolution rates and Escalation rates need to be considered while consuming the Power Virtual Agents and Dynamics 365 Omnichannel analytics to determine key metrics like deflection rate, resolution rate etc.  The general recommendation here is to rely on Dynamics 365 Omnichannel Analytics for tracking overall chatbot deflection rate for the organization and use the Power Virtual Agents Analytics mainly for enhancing the topic performance. 
+In this example, Copilot Studio analytics considers this as two separate bot sessions, while Dynamics 365 Omnichannel analytics considers it as a single “conversation”. As a result of this, the resolution rates, escalation rates and abandonment rates can be different across Copilot Studio analytics and Dynamics 365 Omnichannel analytics. The abandonment does not apply for Omnichannel analytics since the conversation is escalated to human agent.
+
+These key differences in the calculation of resolution rates and escalation rates need to be considered when consuming the Copilot Studio and Dynamics 365 Omnichannel analytics to determine key metrics like deflection rate, resolution rate, and so on.  
+
+The general recommendation is that you rely on Dynamics 365 Omnichannel analytics for tracking the overall copilot deflection rate for the organization and use the Copilot Studio analytics for enhancing the topic performance. 
 
 
