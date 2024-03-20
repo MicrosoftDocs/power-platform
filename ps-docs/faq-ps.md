@@ -5,7 +5,7 @@ author: mikkelsen2000
 ms.topic: Overview
 ms.custom: 
 ms.reviewer: mkaur
-ms.date: 11/13/2023
+ms.date: 3/20/2024
 ms.service: power-platform
 ms.author: pemikkel
 search.audienceType:
@@ -35,7 +35,7 @@ This might happen if you select multiple **next actions** while a previous next 
 If you're using the AI cursor and press enter after entering your prompt, your prompt will automatically create a new blueprint. You can choose to update only a single block on a blueprint by selecting **Generate** and then select **Generate in place of existing block**. This replaces or updates the content of an existing block based on the content you enter.
 
 ## 6. Can I connect to data instead of uploading files? 
-Yes, you can connect to connect to Dynamics 365 or Salesforce to analyze data there. There are few limitations to these connections currently, for details please see [Connecting to Salesforce and Dynamics 365](ask-question.md#connecting-to-salesforce-and-dynamics-365).
+Yes, you can connect to connect to Dynamics 365 or Salesforce to analyze your data. For more information, see [Use data from Dynamics 365 or Salesforce](ask-question.md#use-data-from-dynamics-365-or-salesforce).
 We plan to support connecting to additional enterprise data sources in future releases.
 
 ## 7. What are the preview terms? Is Microsoft using my data to train their models? How do I know my data is safe?
