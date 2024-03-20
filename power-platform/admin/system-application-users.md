@@ -71,6 +71,7 @@ Most of these users are hidden from user views but they can be found by using th
 | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\><br />@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service  |
 | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework  |
 | # Sharepoint Syntex | SharepointSyntex@onmicrosoft.com | To allow Sharepoint to use AI Builder document processing models | Basic User  |
+| # InsightsAppsPlatform | InsightsAppsPlatform@onmicrosoft.com | For insights generation and ingestion of data into Dataverse | Insights Apps Platform Role  |
 
 ## The purpose of the system account?
 
