@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for enabling automation in your workload
 
-**Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:09](checklist.md)| **Design and implement automation upfront for operations such as lifecycle concerns, and apply governance and compliance guardrails. Don't try to retrofit automation later. Choose automation features that your platform provides.** |
 |---|---|

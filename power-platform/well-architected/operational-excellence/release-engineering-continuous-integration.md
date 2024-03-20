@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for continuous integration
 
-**Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:04](checklist.md)| **Optimize software development and quality assurance processes by following industry-proven practices for development and testing. For clear role designation, standardize practices across components such as tooling, source control, application design patterns, documentation, and style guides.** |
 |---|---|

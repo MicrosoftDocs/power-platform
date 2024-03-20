@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for developing background jobs
 
-**Applies to this Power Well-Architected Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 |[RE:05](checklist.md)| Strengthen the resiliency of your workload by implementing error handling and transient fault handling. Build capabilities into the solution to handle component failures and transient errors.    |
 |---|---|

@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for building a segmentation strategy
 
-**Applies to Power Well-Architected Security checklist recommendation:**
+**Applies to Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:04](checklist.md)|Create intentional segmentation and perimeters in your architecture design and the workload’s footprint on the platform. The segmentation strategy must include networks, roles and responsibilities, workload identities, and resource organization.|
 |---|---|

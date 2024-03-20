@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for defining reliability targets
 
-**Applies to this Power Well-Architected Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 |[RE:04](checklist.md)| **Define reliability and recovery targets for the components, the flows, and the overall solution. Visualize the targets to negotiate, gain consensus, set expectations, and drive actions to achieve the ideal state. Use the defined targets to build the health model. The health model defines what healthy, degraded, and unhealthy states look like.**  |
 |---|---|

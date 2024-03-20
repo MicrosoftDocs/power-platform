@@ -1,6 +1,6 @@
 ---
-title: How to use the Power Well-Architected documentation
-description: Learn about Power Well-Architected, the pillars of architectural excellence, and how the documentation is organized.
+title: How to use the Power Platform Well-Architected documentation
+description: Learn about Power Platform Well-Architected, the pillars of architectural excellence, and how the documentation is organized.
 author: robstand
 ms.author: rstand
 ms.reviewer: robstand
@@ -9,20 +9,20 @@ ms.topic: conceptual
 ms.date: 03/12/2024
 ---
 
-# What is Power Well-Architected?
+# What is Power Platform Well-Architected?
 
-Power Well-Architected is a framework that can improve the quality of a low-code workload by helping it to:
+Power Platform Well-Architected is a framework that can improve the quality of a low-code workload by helping it to:
 
 - Be reliable.
-- Be as secure as you need it to be.
+- Be secure.
 - Support responsible development and operations.
-- Be easy to use and accomplish its purposes.
+- Be easy to use.
 
-Power Well-Architected is founded on four pillars of architectural excellence, which are mapped to the goals. The pillars are: [Reliability](./reliability/index.yml), [Security](./security/index.yml), [Operational Excellence](./operational-excellence/index.yml), and [Experience Optimization](./experience-optimization/index.yml).
+Power Platform Well-Architected is built on four pillars of architectural excellence, which are mapped to the goals. The pillars are: [**Reliability**](./reliability/index.yml), [**Security**](./security/index.yml), [**Operational Excellence**](./operational-excellence/index.yml), and [Experience Optimization](./experience-optimization/index.yml).
 
-Each pillar provides recommended practices, risk considerations, and tradeoffs. The design decisions must be balanced across all pillars, given the business requirements. The technical and actionable guidance is broad enough for all workloads and applies to a specific scenario. This guidance is centered on Azure.
+Each pillar offers best practices, risk factors, and tradeoffs. The design choices must consider all pillars, based on the business needs. The technical and practical guidance is general enough for all workloads and relevant to a specific situation. This guidance focuses on Power Platform.  
 
-Workload architecture isn't the same as its implementation. Power Well-Architected can set you up for success through architectural design, but the implementation choices depend on the business requirements and constraints of your organization.
+Workload architecture differs from its execution. Power Platform Well-Architected can help you achieve optimal architectural design, but the execution options depend on the business goals and limitations of your organization.
 
 ## Audience
 
@@ -34,7 +34,7 @@ Content coming soon
 
 ## Pillars
 
-Pillars are the foundation of Power Well-Architected. They are the high-level areas of focus that are critical to the success of a workload.
+Pillars are the foundation of Power Platform Well-Architected. They are the high-level areas of focus that are critical to the success of a workload.
 
 1. Start your journey with the **Design principles**. Each principle has a specific goal. For each principle, follow the approaches to craft your design strategy. These approaches are not optional.
 
@@ -48,4 +48,4 @@ Tradeoffs are noted with this icon: :::image type="icon" source="./_images/trade
 
 Risks are noted with this icon: :::image type="icon" source="./_images/risk.svg":::
 
-For more information, see [Power Well-Architected pillars](./pillars.md).
+For more information, see [Power Platform Well-Architected pillars](./pillars.md).

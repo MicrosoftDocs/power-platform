@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for safe deployment practices
 
-**Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:10](checklist.md)| **Clearly define your workload's safe deployment practices. Emphasize the ideals of small, incremental, quality-gated release methods. Use modern deployment patterns to control risk. Account for routine deployments and emergency, or hotfix, deployments.** |
 |---|---|

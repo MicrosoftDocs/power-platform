@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for implementing an information architecture
 
-**Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
+**Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
 |[XO:03](checklist.md)| **Implement a consistent information architecture. Make finding information and functionality easy. Provide contextual clues and visual indicators to guide users. Use consistent and user-friendly labels for categories, navigation, and other informational elements.** |
 |---|---|

@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for formalizing routine and nonroutine tasks
 
-**Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:02](checklist.md)| **Formalize the way you run routine, as needed, and emergency operational tasks by using documentation, checklists, or automation. Strive for consistency and predictability for team processes and deliverables by adopting industry-leading practices and approaches, such as a *shift left* approach.** |
 |---|---|
@@ -63,7 +63,7 @@ An example of a routine task is the process of applying an upgrade to a solution
 
 Although there are no Power Platform products that directly facilitate the formalization of processes and procedures, Microsoft publishes comprehensive guidance on this subject. Use this guidance to understand industry-proven and recommended practices and to consider how to apply them to your workload.
 
-The Power Well-Architected Framework also provides detailed guidance on the processes and procedures that should be codified to ensure that your workload and workload team run according to industry standards.
+The Power Platform Well-Architected Framework also provides detailed guidance on the processes and procedures that should be codified to ensure that your workload and workload team run according to industry standards.
 
 <!--
 Can we provide a link to this comprehensive/detailed guidance?

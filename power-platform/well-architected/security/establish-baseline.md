@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for establishing a security baseline
 
-**Applies to Power Well-Architected Security checklist recommendation:**
+**Applies to Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:01](checklist.md)| Establish a security baseline aligned to compliance requirements, industry standards, and platform recommendations. Regularly measure your workload architecture and operations against the baseline to sustain or improve your security posture over time.|
 |---|---|

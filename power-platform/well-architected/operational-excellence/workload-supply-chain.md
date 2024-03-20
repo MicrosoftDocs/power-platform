@@ -10,7 +10,7 @@ ms.topic: conceptual
 ---
 # Recommendations for designing a workload development supply chain
 
-**Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:06](checklist.md)| **Build a workload supply chain that drives proposed changes through predictable, automated pipelines. The pipelines test and promote those changes across environments. Optimize a supply chain to make your workload reliable, secure, cost effective, and performant.** |
 |---|---|

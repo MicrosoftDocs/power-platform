@@ -1,6 +1,6 @@
 ---
-title: Power Well-Architected pillars
-description: Power Well-Architected pillars
+title: Power Platform Well-Architected pillars
+description: Power Platform Well-Architected pillars
 author: robstand
 ms.author: rstand
 ms.reviewer: robstand
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 11/30/2023
 ---
 
-# Power Well-Architected pillars
+# Power Platform Well-Architected pillars
 
 The Well-Architected Framework pillars drive architectural excellence at the fundamental level of a workload.
 

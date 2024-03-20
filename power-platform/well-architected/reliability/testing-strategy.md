@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for designing a reliability testing strategy
 
-**Applies to this Power Well-Architected Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 |[RE:06](checklist.md)| Test for resiliency and availability scenarios by applying the principles of chaos engineering in your test and production environments. Use testing to ensure that your graceful degradation implementation strategies are effective by performing active malfunction and simulated load testing. |
 |---|---|

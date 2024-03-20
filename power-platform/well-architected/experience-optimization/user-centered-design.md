@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for a user-centered design strategy
 
-**Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
+**Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
 |[XO:01](checklist.md)| **Design your workload to meet the expectations and requirements of the users. Ensure that the workload is useful and provides a positive user experience.** |
 |---|---|

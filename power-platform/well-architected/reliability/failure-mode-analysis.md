@@ -10,7 +10,7 @@ ms.topic: conceptual
 ---
 # Recommendations for performing failure mode analysis
 
-**Applies to this Power Well-Architected Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 |[RE:03](checklist.md)| Use failure mode analysis (FMA) to identify and prioritize potential failures in your solution components. Perform FMA to help you assess the risk and effect of each failure mode. Determine how the workload responds and recovers.  |
 |---|---|

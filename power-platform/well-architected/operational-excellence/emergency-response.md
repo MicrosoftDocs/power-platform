@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for designing an emergency response strategy
 
-**Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:07](checklist.md)| **Develop an effective emergency operations practice. Ensure that your workload emits meaningful health signals. Collect the resulting data and use it to generate actionable alerts that enact emergency responses via dashboards and queries. Clearly define human responsibilities, such as on-call rotations, incident management, emergency resource access, and running postmortems.** |
 |---|---|

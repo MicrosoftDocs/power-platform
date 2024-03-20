@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for designing a deployment failure mitigation strategy
 
-**Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:11](checklist.md)| **Implement a deployment failure mitigation strategy that addresses unexpected mid-rollout issues with rapid recovery. Combine multiple approaches, such as rollback, feature disablement, or using your deployment pattern's native capabilities.** |
 |---|---|

@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for data encryption
 
-**Applies to Power Well-Architected Security checklist recommendation:**
+**Applies to Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:07](checklist.md)|Encrypt data by using modern industry-standard methods to guard confidentiality and integrity. Align encryption scope with data classifications; prioritize native platform encryption methods.|
 |---|---|

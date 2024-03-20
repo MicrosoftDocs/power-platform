@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for following design standards, conventions, and guidelines
 
-**Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
+**Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
 |[XO:02](checklist.md)| **Follow established standards, conventions, and guidelines. Leverage commonly-used design patterns. Maintain consistency in design elements, terminology, and interactions across the interface. Use consistent patterns and standards to guide users through the interface and create a cohesive user experience.** |
 |---|---|

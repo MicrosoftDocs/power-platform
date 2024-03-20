@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for designing and creating a monitoring system
 
-**Applies to this Power Well-Architected Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:06](checklist.md)| **Design and implement a monitoring system to validate design choices and inform future design and business decisions. This system captures and exposes operational telemetry, metrics, and logs that emit from the workload.** |
 |---|---|
