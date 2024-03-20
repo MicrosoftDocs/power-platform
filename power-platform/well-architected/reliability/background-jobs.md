@@ -18,7 +18,7 @@ ms.topic: conceptual
 
 This guide describes the recommendations for developing background jobs. Background jobs run automatically without the need for user interaction. Many applications require background jobs that run independent of the UI.
 
-Some examples of background jobs include batch jobs, intensive processing tasks, and long-running processes, such as workflows. The application starts the job and processes interactive requests from users. For example, an application may need to generate a summary and extract sentiment and key points from documents that users upload, a background job can be performed to run the AI actions and save the summary and key points to the database. The user doesn't have to wait for the process to complete. As another example, a user might submit an expense claim, which initiates a background workflow that processes the expense claim and submits it for approval. The user can continue to file another expense claim or leave the application while the background job runs. After the background job finishes, it sends an email to the user to confirm the expense claim has been submitted for approval.
+Some examples of background jobs include batch jobs, intensive processing tasks, and long-running processes, such as workflows. The application starts the job and processes a request from a user without further user interaction. For example, an application may need to generate a summary and extract sentiment and key points from documents that users upload, a background job can be performed to run the AI actions and save the summary and key points to the database. The user doesn't have to wait for the process to complete. As another example, a user might submit an expense claim, which initiates a background workflow that processes the expense claim and submits it for approval. The user can continue to file another expense claim or leave the application while the background job runs. After the background job finishes, it sends an email to the user to confirm the expense claim has been submitted for approval.
 
 Background jobs help minimize the load on the application UI, which improves availability and reduces interactive response time.
 
@@ -55,6 +55,9 @@ Examples for event-driven triggers are a form being submitted in an application,
 
 Use trigger conditions to streamline your workflows and reduce the number of unnecessary runs. Trigger conditions set up multiple conditions that must be met before a workflow is triggered.
 
+>[!NOTE]
+>Use trigger conditions also to avoid infinite loops if you modify the data source that triggered the workflow as part of the workflow. For example, the application might update certain fields in a row in Microsoft Dataverse table and the workflow runs additional queries based on the updated fields and updates further information in the same row. Use trigger conditions to only trigger the workflow when the fields that are modified by the application are updated, but not any other fields. 
+
 #### Schedule-driven triggers
 
 A timer triggers a schedule-driven invocation that starts the background task. Examples of schedule-driven triggers include:
@@ -62,7 +65,7 @@ A timer triggers a schedule-driven invocation that starts the background task. E
 - A background job runs on a daily or weekly basis and performs a set of actions. 
 - A separate process or application starts a timer that invokes the background task after a time delay or at a specific time.
 
-Examples of tasks that are suited to schedule-driven invocation are batch-processing routines (such as updating related products lists for customers based on their recent behavior), routine data-processing tasks (such as generating accumulated results), data analysis for daily reports, data retention cleanup, and data consistency checks.
+Examples of tasks that are suited to schedule-driven invocation are batch-processing routines (such as updating related products lists for customers based on their recent behavior), routine data-processing tasks (such as generating accumulated results), data analysis for daily reports, data retention cleanup, and data consistency checks (where it is acceptable for data to be incorrect or out of date for a specified period of time).
 
 ### Return results
 
@@ -80,7 +83,7 @@ Background tasks can be complex and require multiple tasks to run. In these scen
 
 It can be a challenge to coordinate multiple tasks and steps, but there are three common patterns to guide your solution:
 
-- **Decompose a task into multiple reusable steps**. An application might be required to perform various tasks of different complexity on the information that it processes. A straightforward but inflexible approach to implementing such an application is to perform this processing as a monolithic module. But this approach is likely to reduce the opportunities for refactoring the code, optimizing it, or reusing it if the application requires parts of the same processing elsewhere. 
+- **Decompose a task into multiple reusable steps**. An application might be required to perform various tasks of different complexity and urgency on the information that it processes. A straightforward but inflexible approach to implementing such an application is to perform this processing as a monolithic module. But this approach is likely to reduce the opportunities for refactoring the code, optimizing it, or reusing it if the application requires parts of the same processing elsewhere. 
 - **Manage the orchestration of the steps for a task**. An application might perform tasks that comprise many steps, some of which might invoke remote services or access remote resources. Sometimes the individual steps are independent of each other, but they're orchestrated by the application logic that implements the task.
 - **Manage the recovery for task steps that fail**. If one or more of the steps fail, an application might need to undo the work that a series of steps performs, which together defines an eventually consistent operation.
 
@@ -119,7 +122,7 @@ Reduce the risk by planning for error handling. Learn more: [Reducing risk and p
 
 - [Microsoft Dataverse calculated columns and rollups](/power-apps/developer/data-platform/calculated-rollup-attributes)
   - [Formula columns](/power-apps/maker/data-platform/formula-columns?tabs=type-or-paste): Formula columns are columns that display a calculated value in a Microsoft Dataverse table. 
-  - Calculated columns: Automate manual calculations used in your business process. For example, a salesperson might want to know the weighted revenue for an opportunity, which is based on the estimated revenue from an opportunity multiplied by the probability. Or, they want to automatically apply a discount, if an order is greater than $500. A calculated column can contain values resulting from simple math operations, or conditional operations, such as greater than or if-else, and many others. You can accomplish all this by using Power Apps, no need to write code.
+  - Calculated columns: Automate manual calculations used in your business process. For example, a salesperson might want to know the weighted revenue for an opportunity, which is based on the estimated revenue from an opportunity multiplied by the probability. Or, they want to automatically apply a discount, if an order is greater than $500. A calculated column can contain values resulting from simple math operations, or conditional operations, such as greater than or if-else, and many others. 
   - Rollup columns: help users obtain insights into data by monitoring key business metrics. A rollup column contains an aggregate value computed over the rows related to a specified row. This includes regular tables and activity tables such as emails and appointments. In more complex scenarios, you can aggregate data over the hierarchy of rows. As an administrator or customizer, you can define rollup columns by using the customization tools in Power Apps, without needing to write code.
 - [Background operations](/power-apps/developer/data-platform/background-operations?tabs=sdk): Use background operations to send requests that Dataverse processes asynchronously. Background operations are useful when you don't want to maintain a connection while a request runs.
 - [Plug-ins](/power-apps/developer/data-platform/plug-ins): A _plug-in_ is a custom event handler that executes in response to a specific event raised during processing of a Microsoft Dataverse data operation.
