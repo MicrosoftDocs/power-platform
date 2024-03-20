@@ -71,7 +71,7 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following li
 > [!IMPORTANT]
 > You need to have account to establish a connection with either Dynamics 365 or Salesforce.
 
-You can connect to your customer data from Dynamics 365 Sales or Salesforce; however the following limitations apply:
+You can connect to your customer data from Dynamics 365 Sales or Salesforce however the following limitations apply:
 
 - You only have access to specific set of core entities, such as contacts, opportunities, leads, accounts, sales orders, and incidents or cases.
 - The data is analyzed only at the time of connection and doesn’t refresh. 
