@@ -42,7 +42,7 @@ You can also go back to the **Onboarding** screen, by going to the Home screen a
 
 Legend
 
-1. **Exploratory**: Offers a blank canvas where you can explore and ask questions related to your business. Or you can add business data, by uploading files or connecting to data sources like CRM, and ask questions about the data. Project "Sophia" uses the data to generate insights and suggests next actions.
+1. **Exploratory**: Offers a blank canvas where you can explore and ask questions related to your business. Or you can add business data, by uploading files or connect to your business data sources such as Dynamics 365 Sales, and ask questions about the data. Project "Sophia" uses the data to generate insights and suggests next actions.
 2. **Guides**: Helps you through the process of gathering relevant data to tackle specific role-based business tasks. For preview, only the account planning guide is available. Guides for sales territory planning, supply chain optimization, and others are coming soon.
 3. **Question**: Enter your question in the text box and then select **Generate**.
 4. **Blueprint**: The results that are generated when you ask a question. You can also generate a new blueprint by selecting one of the suggested next steps.
