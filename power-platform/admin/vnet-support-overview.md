@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/15/2024
+ms.date: 03/20/2024
 ms.subservice: admin
 ms.author: ritesp
 search.audienceType: 
@@ -84,8 +84,8 @@ The following table lists the services that support Azure subnet delegation for 
 |------------|-------------------|--------------|
 | Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Preview |
 | Connectors | [SQL Server](/connectors/sql/) | Preview |
-|  | [Azure SQL Data Warehouse](/connectors/sqldw/) | Preview|
-|  | [Azure Queues](/connectors/azurequeues/) | Preview|
+| Connectors | [Azure SQL Data Warehouse](/connectors/sqldw/) | Preview|
+| Connectors | [Azure Queues](/connectors/azurequeues/) | Preview|
 
 
 ## Licensing requirements
