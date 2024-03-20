@@ -30,6 +30,8 @@ Use the account planning guide in Project "Sophia" to help you generate account 
 1. Select **Add data** and then select one of the following options:
    - **Upload files**
    - Connect to **Salesforce** or **Dynamics 365**
+  > [!IMPORTANT]
+  > You need to have account to establish a connection with either Dynamics 365 or Salesforce. For more informatoin, see [Use data from Dynamics 365 or Salesforce](ask-question.md#use-data-from-dynamics-365-or-salesforce).
 1. When your data loads, select **Generate**.
 
 Project "Sophia" is going to generate a tailored account plan based on your data. You can upload or connect to more data and refine your account plan or continue exploring your data.

@@ -27,7 +27,7 @@ Follow these steps to ask a question:
 
 1. Go to [https://projectsophia.microsoft.com](https://projectsophia.microsoft.com).
 1. From the Home screen, select **New workspace**.
-1. From the top right, select **Domains** to optimize responses your specific area of interest. 
+1. To get relevant results, select **Domains** located at the top right and choose a specific domain.
 1. Enter your question in the text box and then select **Generate**.
 
 You'll get an AI-powered blueprint in response to your question including an overview and suggested next steps.
