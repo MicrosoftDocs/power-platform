@@ -1,6 +1,6 @@
 ---
 title: Operational Excellence tradeoffs
-description: Learn about the Operational Excellence tradeoffs with other pillars.
+description: Learn about tradeoffs that you might encounter when you design workload architectures and operations for operational excellence.
 author: robstand
 ms.author: rstand
 ms.reviewer: robstand
@@ -17,15 +17,15 @@ During the design phase of a workload and over its lifecycle, as continuous impr
 
 ## Operational Excellence tradeoffs with Reliability
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased complexity.** Reliability prioritizes simplicity, because simple design minimizes misconfiguration and reduces unexpected interactions.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased complexity**. Reliability prioritizes simplicity, because simple design minimizes misconfiguration and reduces unexpected interactions.
 
 - Safe deployment strategies often require some amount of forward and backward compatibility between application logic and data in the workload. This added complexity increases the testing burden and can lead to complexities or integrity issues with the workload's data.
 
-- Highly layered, modularized, or parameterized solutions can increase the chance of accidental misconfiguration because of the complexity of the interaction between the components of the workload.
+- Highly layered, modularized, or parameterized structures can increase the chance of accidental misconfiguration due to the complexity of the interaction between the components of the workload.
 
 - Cloud design patterns that benefit operations sometimes necessitate the introduction of additional components, for example, the use of secret store or taking a dependency on Application Insights. The additional components increase the points of interaction in the system, increasing the surface area for malfunction or misconfiguration.
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased potentially destabilizing activities.** The Reliability pillar encourages the avoidance of activities or design choices that can destabilize a system and lead to disruptions, outages, or malfunctions.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased potentially destabilizing activities**. The Reliability pillar encourages the avoidance of activities or design choices that can destabilize a system and lead to disruptions, outages, or malfunctions.
 
 - Deploying small, incremental changes is a technique for mitigating risk, but those small changes are also expected to be delivered to production more frequently. Deployments can destabilize a system, so as the rate of deployment increases, so does this risk.
 
@@ -35,7 +35,7 @@ During the design phase of a workload and over its lifecycle, as continuous impr
 
 ## Operational Excellence tradeoffs with Security
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased surface area.** The Security pillar recommends a reduced workload surface area in terms of components and exposure to operations. This reduction minimizes attack vectors and produces a smaller scope for security control and testing.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased surface area**. The Security pillar recommends a reduced workload surface area in terms of components and exposure to operations. This reduction minimizes attack vectors and produces a smaller scope for security control and testing.
 
 - Components that surround the workload and support its operations, like automation or a custom control plane, must also be in scope for regular security hardening and testing.
 
@@ -43,15 +43,15 @@ During the design phase of a workload and over its lifecycle, as continuous impr
 
 - The observability platform of the system collects logs and metrics about the workload, which can be a valuable source of information disclosure. Therefore, the workload's security needs to extend to protect data sinks from internal and external threats.
 
-- Build agents, externalized configuration and feature toggle stores all increase the application surface area that requires security.
+- Build agents, externalized configuration, and feature toggle stores all increase the application surface area that requires security.
 
 - A higher deployment frequency caused by small, incremental changes or by "get current, stay current" efforts results in more security testing in the software development lifecycle.
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased desire for transparency.** A secure workload is based on designs that protect the confidentiality of data that flows through the components of the system.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased desire for transparency**. A secure workload is based on designs that protect the confidentiality of data that flows through the components of the system.
 
 Observability platforms ingest data of all types to gain insights into a workload's health and behavior. As teams try to attain higher fidelity in observability data, there's an increased risk that data classification controls, like data masking, of the source systems don't extend to the logs and log sinks of the observability platform.
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Reduced segmentation.** A key security approach for isolating access and function is to design a strong segmentation strategy. This design is implemented through resource isolation and identity controls.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Reduced segmentation**. A key security approach for isolating access and function is to design a strong segmentation strategy. This design is implemented through resource isolation and identity controls.
 
 - Co-locating disparate application components in shared environments and data resources to make management easier reverses segmentation or makes role-based segmentation harder to achieve. Co-located components might also need to share a workload identity, which can lead to over-assignment of permissions or a lack of traceability.
 
@@ -62,21 +62,19 @@ Observability platforms ingest data of all types to gain insights into a workloa
 <!--
 ## Operational Excellence tradeoffs with Performance Efficiency
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased resource utilization.** The Performance Efficiency pillar recommends the allocation of as much of the available compute and network as possible to the requirements of the workload.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased resource utilization**. The Performance Efficiency pillar recommends the allocation of as much of the available compute and network as possible to the requirements of the workload.
 
 - A workload's observability framework requires that the components in the architecture allocate time and resources to create, collect, and stream logs and metrics. These data points help ensure that effective alerting and monitoring is possible for reliability, security, and performance. As the level of instrumentation increases, the strain on system resources might also increase.
 
 - Some deployment models, like blue/green deployment, which a workload might use for safe deployment, might introduce side-by-side deployments on the production application platform. These deployments require preemptive scaling to provide enough supply to meet future demand, or leave a mostly dormant deployment in place for a period of time to support rollback.
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased latency.** To create performant workloads, teams look for ways to reduce the time and resources that workloads consume to perform their tasks.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased latency**. To create performant workloads, teams look for ways to reduce the time and resources that workloads consume to perform their tasks.
 
 - Many deployment models require the use of gateway routing access patterns, which can introduce latency. This latency draws against the performance target budget for the related flows.
 
 - Some cloud design patterns that support "independent change over time" approaches to support the ideals of incremental improvement can introduce latency due to the traversal of additional components. This latency can be introduced by gateways, messaging brokers, or anti-corruption layers.
 -->
-## Related resources
-
-Explore the tradeoffs for the other pillars.
+## See also
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)

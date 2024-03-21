@@ -11,14 +11,14 @@ ms.topic: conceptual
 
 # Recommendations for monitoring and threat detection
 
-**Applies to this Power Well-Architected Security checklist recommendation:**
+**Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:09](checklist.md)|Implement a holistic monitoring strategy that relies on modern threat detection mechanisms that can be integrated with the platform. Mechanisms should reliably alert for triage and send signals into existing SecOps processes.|
 |---|---|
 
 This guide describes the recommendations for monitoring and threat detection. Monitoring is fundamentally a process of **getting information about events that have already occurred**. Security monitoring is a practice of capturing information at different altitudes of the workload (identity, flows, application, operations) to **gain awareness of suspicious activities**. The goal is to predict incidents and learn from past events. Monitoring data provides the basis of post-incident analysis of what occurred to help incident response and forensic investigations.
 
-Monitoring is an Operational Excellence approach that's applied across all Power Well-Architected Framework pillars. This guide provides recommendations only from a security perspective. General concepts of monitoring will be covered in [Recommendations for designing and creating a monitoring system](../operational-excellence/observability.md)
+Monitoring is an Operational Excellence approach that's applied across all Power Platform Well-Architected Framework pillars. This guide provides recommendations only from a security perspective. General concepts of monitoring will be covered in [Recommendations for designing and creating a monitoring system](../operational-excellence/observability.md)
 
 **Definitions**
 

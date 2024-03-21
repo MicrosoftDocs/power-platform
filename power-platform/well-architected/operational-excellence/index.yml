@@ -34,8 +34,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Embrace DevOps culture
-            url: principles.md#embrace-devops-culture
+          - text: Embrace fusion and DevOps culture
+            url: principles.md#embrace-fusion-development-and-devops-culture
           - text: Establish development standards
             url: principles.md#establish-development-standards
           - text: Evolve operations with observability
@@ -50,14 +50,16 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Start with a DevOps culture
-            url: devops-culture.md
+          - text: Start with a Fusion culture
+            url: fusion-culture.md
           - text: Formalize operational tasks
             url: formalize-operations-tasks.md
           - text: Formalize software development and management
             url: formalize-development-practices.md
           - text: Standardize tools and processes
             url: tools-processes.md
+          - text: Follow continuous integration practices
+            url: release-engineering-continuous-integration.md
           - text: Use safe deployment practices (SPD)
             url: safe-deployments.md
   - title: Use automation

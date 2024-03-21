@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for security incident response
 
-**Applies to Power Well-Architected Security checklist recommendation:**
+**Applies to Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:11](checklist.md)|Define and test effective incident response procedures that cover a spectrum of incidents, from localized issues to disaster recovery. Clearly define which team or individual runs a procedure.|
 |---|---|

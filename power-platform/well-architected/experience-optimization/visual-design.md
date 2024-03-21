@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for optimizing user perception and aesthetics
 
-**Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
+**Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
 |[XO:07](checklist.md)| **Apply classic design principals to visual elements such as color schemes, typography, and layout. Strive for a focused, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
 |---|---|

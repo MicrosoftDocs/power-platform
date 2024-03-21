@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for threat analysis
 
-**Applies to this Power Well-Architected Security checklist recommendation:**
+**Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:02](checklist.md)|Establish a security baseline that's aligned to compliance requirements, industry standards, and platform recommendations. Regularly measure your workload architecture and operations against the baseline to sustain or improve your security posture over time.|
 |---|---|

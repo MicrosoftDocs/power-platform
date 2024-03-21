@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 
 # Recommendations for feedback and guidance
 
-**Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
+**Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
 |[XO:05](checklist.md)| **Provide meaningful, useful, and simple guidance in notifications and messages. Notify users with relevant, important, and valuable information. Give users feedback on their actions. Let users know when something happens and what they need to do next.** |
 |---|---|
@@ -69,7 +69,7 @@ Use the [Info button modern control](/power-apps/maker/canvas-apps/controls/mode
 
 For basic field-level input validation, Dataverse offers [server-side business rules](/power-apps/maker/data-platform/data-platform-create-business-rule). Implement [advanced server-side input validation and customized errors defined in Power Fx](/power-apps/maker/data-platform/lowcode-plug-ins-examples#input-validation-and-custom-errors) during server operations with low code plugins.
 
-Use connectors to send notifications to other services in the Power Platform ecosystem, such as for services like [Outlook](/power-apps/teams/add-app-notifications) and [Microsoft Teams](/templates/details/52f77e0cde234231903129fce1327763/notify-a-user-in-teams/).
+Notifications to other services in the Power Platform ecosystem can be invoked from connectors, like [Outlook](/power-apps/teams/add-app-notifications) or [Microsoft Teams](/templates/details/52f77e0cde234231903129fce1327763/notify-a-user-in-teams/).
 
 ## See also
 

@@ -5,7 +5,7 @@
       items:
       - name: What's new
         href: whats-new.md
-      - name: What is Power Well-Architected
+      - name: What is Power Platform Well-Architected
         href: what-is-power-well-architected.md
     - name: Pillars
       items:
@@ -41,8 +41,6 @@
               href: reliability/disaster-recovery.md
             - name: RE:08 Monitoring and alerting
               href: reliability/monitoring-alerting-strategy.md
-            - name: RE:09 Default environment hygiene
-              href: reliability/default-environment-hygiene.md
       - name: Security
         items: 
         - name: Quick links
@@ -92,13 +90,15 @@
         - name: Recommendations   
           items:
             - name: OE:01 Fusion team culture
-              href: operational-excellence/devops-culture.md
+              href: operational-excellence/fusion-culture.md
             - name: OE:02 Task execution process
               href: operational-excellence/formalize-operations-tasks.md
             - name: OE:03 Software development practices
               href: operational-excellence/formalize-development-practices.md
             - name: OE:04 Tools and processes
               href: operational-excellence/tools-processes.md
+            - name: OE:04 Continuous integration
+              href: operational-excellence/release-engineering-continuous-integration.md
             - name: OE:05 Supply chain for workload development
               href: operational-excellence/workload-supply-chain.md
             - name: OE:06 Monitoring system
@@ -135,8 +135,8 @@
               href: ./experience-optimization/usability.md
             - name: XO:05 Feedback and guidance
               href: ./experience-optimization/feedback-guidance.md
-            - name: XO:06 Responsive design
-              href: ./experience-optimization/responsive-design.md              
+            - name: XO:06 Form layout
+              href: ./experience-optimization/screen-layout.md              
             - name: XO:07 Visual design
               href: ./experience-optimization/visual-design.md
             - name: XO:08 Interaction design

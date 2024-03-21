@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for identifying and rating flows
 
-**Applies to this Power Well-Architected Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 |[RE:02](checklist.md)| **Identify and rate user and system flows.** Use a criticality scale based on your business requirements to prioritize the flows. |
 |---|---|

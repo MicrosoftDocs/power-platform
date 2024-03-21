@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for following interaction design best practices
 
-**Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
+**Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
 |[XO:08](checklist.md)| **Prioritize responsiveness and feedback. Make it easy to understand how to interact with the interface, incorporating interactions that align with users' mental models and expectations.** |
 |---|---|

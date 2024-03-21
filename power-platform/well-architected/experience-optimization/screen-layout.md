@@ -1,5 +1,5 @@
 ---
-title: Recommendations for optimizing for different contexts and devices.
+title: Recommendations for optimizing layout.
 description: Learn how to optimize app layout for different platforms and devices to ensure consistent success with user experience optimization.
 author: RobStand
 ms.author: rstand
@@ -9,9 +9,9 @@ ms.subservice: guidance
 ms.topic: conceptual
 ---
 
-# Recommendations for optimizing for different contexts and devices
+# Recommendations for optimizing layout
 
-**Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
+**Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
 |[XO:06](checklist.md)| **Maintain usable and visually appealing layouts across screen sizes and resolutions. Utilize adaptive techniques to dynamically render content in various ways.** |
 |---|---|

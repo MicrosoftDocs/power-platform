@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 
 # Recommendations for prioritizing ease of use
 
-**Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
+**Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
 |[XO:04](checklist.md)| **Prioritize ease of use during the design process. Minimize user effort and maximize task efficiency. Streamline complex processes. Align design decisions with user needs.** |
 |---|---|

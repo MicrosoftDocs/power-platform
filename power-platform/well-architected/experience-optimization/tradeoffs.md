@@ -21,9 +21,9 @@ During the design phase of a workload, it's important to consider how decisions 
 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description.
 
-## Experience Optimization tradeoffs with Performance Efficiency
+<!-- ## Experience Optimization tradeoffs with Performance Efficiency
 
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description.
+:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description. -->
 
 ## Experience Optimization tradeoffs with Security
 
@@ -35,5 +35,4 @@ Explore the tradeoffs for the other pillars.
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
-- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)
 - [Security tradeoffs](../security/tradeoffs.md)

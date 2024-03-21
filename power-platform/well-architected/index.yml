@@ -1,8 +1,8 @@
 ### YamlMime:Marketing
-title: Power Well-Architected
+title: Power Platform Well-Architected
 metadata:
-  title: Power Well-Architected
-  description: Power Well-Architected is a set of guiding principles, architecture strategies, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
+  title: Power Platform Well-Architected
+  description: Power Platform Well-Architected is a set of guiding principles, architecture strategies, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
   ms.service: power-platform
   ms.topic: hub-page
   ms.subservice: guidance
@@ -12,12 +12,12 @@ metadata:
 sections:
   # Intro
   - componentType: text 
-    title: Power Well-Architected 
-    summary: Power Well-Architected is a set of guiding principles, architecture strategies, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
+    title: Power Platform Well-Architected 
+    summary: Power Platform Well-Architected is a set of guiding principles, architecture strategies, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
     links:
     - componentType: link
       url: what-is-power-well-architected
-      text: What is Power Well-Architected?    
+      text: What is Power Platform Well-Architected?    
   # Navigation Section
   - componentType: navigation
     size: large # optionally make section larger
@@ -58,10 +58,10 @@ sections:
         text: Power Platform product documentation
   # Standard hero
   - componentType: hero
-    supertitle: Power Well-Architected 
+    supertitle: Power Platform Well-Architected 
     title: Design modern application workloads that consistently realize business value.
     size: small
-    summary: Power Well-Architected intends to help you realize the maximum value from your investments in modern application workloads with Power Platform that align closely with your business goals and user needs. Power Well-Architected provides guidance for you to design your modern application workloads to both meet current requirements and adapt to future needs and challenges. Start with the Pillars and aligh your design choices with then principles. Build a strong foundation for your workload based on the design review checklists, recommendation guides, and tradeoffs.
+    summary: Power Platform Well-Architected intends to help you realize the maximum value from your investments in modern application workloads with Power Platform that align closely with your business goals and user needs. Power Platform Well-Architected provides guidance for you to design your modern application workloads to both meet current requirements and adapt to future needs and challenges. Start with the Pillars and aligh your design choices with then principles. Build a strong foundation for your workload based on the design review checklists, recommendation guides, and tradeoffs.
 
     image:
       componentType: image
@@ -75,7 +75,7 @@ sections:
   #      src: ./_images/well-architected-refresh.png   
   #      alt: WAF refresh update   
   #    - title: Featured update - Core pillars restructured and refreshed 
-  #      summary: The Power Well-Architected  published a significant content refresh across all five pillars. 
+  #      summary: The Power Platform Well-Architected  published a significant content refresh across all five pillars. 
   #     componentType: text
   #      links:
   #        - componentType: link
@@ -90,7 +90,7 @@ sections:
   #          - Design tradeoffs with other pillars. 
   #          - Recommendations on key strategies that fulfill the principles of design.
   #          - Design patterns based on proven, common architecture patterns, mapped to each pillar.
-  #          - Power Well-Architected Review tool has been refreshed to align with the new content.
+  #          - Power Platform Well-Architected Review tool has been refreshed to align with the new content.
  
 # cards section (4)
   - componentType: grid

@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for protecting application secrets
 
-**Applies to this Power Well-Architected Security checklist recommendation:**
+**Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:08](checklist.md)| Protect application secrets by hardening their storage and restricting access and manipulation and by auditing those actions. Run a reliable and regular rotation process that can improvise rotations for emergencies.|
 |---|---|

@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for writing content for user interfaces
 
-**Applies to this Power Well-Architected Experience Optimization checklist recommendation:**
+**Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
 |[XO:09](checklist.md)| **Content must be easily understood and provide clear direction. Use an approachable, consistent, and professional tone that facilitates task completion.** |
 |---|---|

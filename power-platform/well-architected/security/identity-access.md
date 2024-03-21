@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for identity and access management
 
-**Applies to this Power Well-Architected Security checklist recommendation:**
+**Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:05](checklist.md)|Implement strict, conditional, and auditable identity and access management (IAM) across all workload users, team members, and system components. Limit access exclusively to *as necessary*. Use modern industry standards for all authentication and authorization implementations. Restrict and rigorously audit access that's not based on identity.|
 |---|---|

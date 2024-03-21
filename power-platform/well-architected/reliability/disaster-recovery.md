@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for designing a disaster recovery strategy
 
-**Applies to this Power Well-Architected Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 |[RE:07](checklist.md)|Implement structured, tested, and documented business continuity and disaster recovery (BCDR) plans that align with the recovery targets. Plans must cover all components and the system as a whole.   |
 |---|---|
