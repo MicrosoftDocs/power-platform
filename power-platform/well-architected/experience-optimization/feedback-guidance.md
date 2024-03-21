@@ -69,7 +69,7 @@ Use the [Info button modern control](/power-apps/maker/canvas-apps/controls/mode
 
 For basic field-level input validation, Dataverse offers [server-side business rules](/power-apps/maker/data-platform/data-platform-create-business-rule). Implement [advanced server-side input validation and customized errors defined in Power Fx](/power-apps/maker/data-platform/lowcode-plug-ins-examples#input-validation-and-custom-errors) during server operations with low code plugins.
 
-Notifications to other services in the Power Platform ecosystem can be invoked from connectors, like [Outlook](/power-apps/teams/add-app-notifications) or [Microsoft Teams](/templates/details/52f77e0cde234231903129fce1327763/notify-a-user-in-teams/).
+Notifications to other services in the Power Platform ecosystem can be invoked from connectors, like [Outlook](/power-apps/teams/add-app-notifications).
 
 ## See also
 
