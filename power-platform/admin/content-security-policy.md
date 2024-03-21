@@ -1,7 +1,7 @@
 ---
 title: "Content security policy"
 description: "Use content security policy to prevent clickjacking in Power Apps."  
-ms.date: 10/16/2023
+ms.date: 03/21/2024
 ms.topic: conceptual
 author: JesseParsons
 ms.subservice: admin
@@ -72,7 +72,7 @@ For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-
 
 For Dynamics 365 App for Outlook, you must add your Outlook Web App homepage origin to `frame-ancestors`.
 
-For embedding Power Apps in Power BI report, add the following to `frame-ancestors`:
+For embedding Power Apps in Power BI reports, add the following to `frame-ancestors`:
 - `https://app.powerbi.com`
 - `https://msi-pbi.pbi.microsoft.com`
 
