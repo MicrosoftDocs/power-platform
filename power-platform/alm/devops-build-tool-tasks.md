@@ -191,7 +191,7 @@ steps:
 | `HoldingSolution`<br/>Import as a holding solution | An advance parameter (true\|false) used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. |
 | `OverwriteUnmanagedCustomizations`<br/>Overwrite un-managed customizations | Specify whether to overwrite un-managed customizations (true\|false). |
 | `SkipProductUpdateDependencies`<br/>Skip product update dependencies | Specify whether the enforcement of dependencies related to product updates should be skipped (true\|false). |
-| `ConvertToManaged`<br/>Convert to managed | Specify whether to import as a managed solution (true\|false). |
+| `ConvertToManaged`<br/>Convert to managed | Direct the system to convert any matching unmanaged customizations in the environment to managed. (true\|false). |
 | `AsyncOperation`<br/>Asynchronous import | If selected (**true**), the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. Selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true\|false). |
 | `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 | `PublishWorkflows`<br/>Activate processes after import | Specify whether any processes (workflows) in the solution should be activated after import (true\|false). |
