@@ -66,7 +66,7 @@ Visualize the real-time health of your environment by using [custom dashboards](
 
 Use data that's gathered during incidents to continuously improve your [health models](/azure/well-architected/reliability/metrics).
 
-Incorporate [cloud platform monitoring and alerting services](../../admin/check-online-service-health), including platform-level health.
+Incorporate [cloud platform monitoring and alerting services](/power-platform/guidance/admin/check-online-service-health.md), including platform-level health.
 
 Incorporate purpose-built advanced monitoring and analytics that your cloud provider offers, like Azure Monitor [insight tools](/azure/azure-monitor/overview).
 
