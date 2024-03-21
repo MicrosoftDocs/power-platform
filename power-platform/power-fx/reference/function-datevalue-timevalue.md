@@ -96,7 +96,7 @@ If you type **10/11/2014** into a text-input control named **Startdate**, and th
 
 If you typed **October 20, 2014** instead:
 
-- Convert a date from a string in the user's locale and calculate the difference between two days, in days
+- Convert a date from a string in the user's locale and calculate the difference between two dates, in days
 
   ```powerapps-dot
   DateDiff( DateValue( Startdate.Text ), Today() )
