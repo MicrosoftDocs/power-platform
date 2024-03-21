@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for identifying and rating flows
 
-**Applies to this Power Platform Well-Architected Framework Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 | [RE:02](checklist.md) | **Identify and rate user and system flows. Use a criticality scale based on your business requirements to prioritize the flows.** |
 | --- | --- |
@@ -206,3 +206,4 @@ The following example provides a complete scenario and illustrates important poi
 - [Overview of process mining and task mining in Power Automate](/power-automate/process-advisor-overview)
 - [Visualize processes](/power-automate/process-advisor-visualize)
 - [Introduction to Planning a Power Apps project](/power-apps/guidance/planning/introduction)
+

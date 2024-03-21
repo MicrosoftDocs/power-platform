@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for securing a development lifecycle
 
-**Applies to this Power Well-Architected Security checklist recommendation:**
+**Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:02](checklist.md)|Maintain a secure development lifecycle by using a hardened, mostly automated, and auditable software supply chain. Incorporate a secure design by using threat modeling to safeguard against security-defeating implementations.|
 |--|---|

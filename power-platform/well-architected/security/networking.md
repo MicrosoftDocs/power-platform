@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for networking and connectivity
 
-**Applies to this Power Well-Architected Security checklist recommendation:**
+**Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:05](checklist.md)|Isolate, filter, and control network traffic across both ingress and egress flows. Apply defense in depth principles by using localized network controls at all available network boundaries across both east-west and north-south traffic.|
 |---|---|

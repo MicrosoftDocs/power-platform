@@ -20,6 +20,7 @@ This guide describes the recommendations for developing background jobs. Backgro
 
 Some examples of background jobs include batch jobs, intensive processing tasks, and long-running processes, such as workflows. The application starts the job and processes interactive requests from users. For example, an application might need to generate a summary and extract sentiment and key points from documents that users upload. A background job can be performed to run the AI actions and save the summary and key points to the database. The user doesn't have to wait for the process to complete. As another example, a user might submit an expense claim, which initiates a background workflow that processes the expense claim and submits it for approval. The user can continue to file another expense claim or leave the application while the background job runs. After the background job finishes, it sends an email to the user to confirm the expense claim has been submitted for approval.
 
+
 Background jobs help minimize the load on the application UI, which improves availability and reduces interactive response time.
 
 ## Key design strategies
@@ -55,12 +56,15 @@ An action triggers an event-driven invocation that starts the background task. E
 - The UI or a different job triggers the background job and passes data from the performed action to the background job. For example, a user submits an expense claim via a form, and the form details are passed to the background job for processing.
 
 - The UI or a different job saves or updates a value that's in storage. The background job monitors the storage and detects changes, such as new values being added or existing values being modified, and triggers the background job based on that change.
-
+- 
 - The UI or a different job makes a request to an endpoint, such as an HTTPS URI or an API that's exposed as a web service. As part of the request, the UI or job transfers the data that the background task requires. The endpoint or web service invokes the background task, which uses the data as its input.
 
 Other examples of event-driven triggers include a form being submitted in an application, a new row being added to the data store, the value of a field changing in the data store, an email with a specific subject or from a specific sender arriving in the inbox, and a file being uploaded to a file storage location.
 
 Use trigger conditions to streamline your workflows and reduce the number of unnecessary runs. Trigger conditions set up multiple conditions that must be met before a workflow is triggered.
+
+>[!NOTE]
+>Use trigger conditions also to avoid infinite loops if you modify the data source that triggered the workflow as part of the workflow. For example, the application might update certain fields in a row in Microsoft Dataverse table and the workflow runs additional queries based on the updated fields and updates further information in the same row. Use trigger conditions to only trigger the workflow when the fields that are modified by the application are updated, but not any other fields. 
 
 #### Schedule-driven triggers
 
@@ -83,6 +87,7 @@ If you require a background task to communicate with the calling task to indicat
 - Expose an API or endpoint from the background task that the UI or caller can access to obtain status information. The response can include the data that the background task returns to the caller.
 
 - Configure the background task to respond with the status or the data that it processed back to the UI.
+
 
 ### Coordination
 

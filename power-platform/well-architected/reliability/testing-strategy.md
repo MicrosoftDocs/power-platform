@@ -11,14 +11,14 @@ ms.topic: conceptual
 
 # Recommendations for designing a reliability testing strategy
 
-**Applies to this Power Platform Well-Architected Framework Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
-| [RE:08](checklist.md) | **Test for resiliency and availability scenarios by applying the principles of chaos engineering in your test and production environments. Use testing to ensure that your graceful degradation implementation and scaling strategies are effective by performing active malfunction and simulated load testing.** |
-| --- | --- |
+|[RE:06](checklist.md)| Test for resiliency and availability scenarios by applying the principles of chaos engineering in your test and production environments. Use testing to ensure that your graceful degradation implementation strategies are effective by performing active malfunction and simulated load testing. |
+|---|---|
 
 This guide describes the recommendations for designing a reliability testing strategy to validate and optimize the reliability of your workload. Reliability testing focuses on the resiliency and availability of your workload, specifically the critical flows that you identify when you design your solution. This guide provides general testing guidance and guidance that's specific to fault injection and chaos engineering.
 
-**Definitions**<!-- EDITOR'S NOTE: Doesn't comply with "emphasis used as heading" rule, but I'm leaving it since it's this way in the equivalent Azure WAF article. -->
+**Definitions**
 
 | Term | Definition |
 | --- | --- |

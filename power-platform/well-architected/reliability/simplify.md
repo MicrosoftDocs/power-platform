@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for designing for simplicity and efficiency
 
-**Applies to this Power Platform Well-Architected Framework Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 | [RE:01](checklist.md) | **Design your workload to align with business objectives and avoid unnecessary complexity or overhead. Use a practical and balanced approach to make design decisions that deliver the desired results. Contain your design to the necessities to reduce inefficiencies and potential problems.** |
 | --- | --- |
@@ -36,15 +36,21 @@ You must justify every design decision with a business requirement. This design 
 
 Work with stakeholders to:
 
-- **Define and assign a criticality level to your workload's user flows and system flows**. Focus your design on [critical flows](identify-flows.md) to help you determine the required components and the best approach to achieve the required resiliency level.
+- **Define and assign a criticality level to your workload, and it’s components.** This will help you determine the required components and the best approach to achieve the required resiliency level. Here's an example of how to define criticality levels: [Define tiers of applications](/power-platform/guidance/adoption/support-strategy-solutions#define-tiers-of-applications).
+- **Define functional and nonfunctional requirements**. Functional requirements define the features and behavior of the system. They are specified by the user and captured in use cases. Nonfunctional requirements define the performance and quality attributes of the system. Ensure that you understand nonfunctional requirements like availability, compliance, data retention/residency, performance, privacy, recovery time, security and scalability. These requirements influence design decisions and technology choices.
+    Here are some examples for functional and nonfunctional requirements, in the context of a workload that handles expense reports:
 
-- **Define functional and nonfunctional requirements**. Functional requirements define the features and behavior of the system. They're specified by the user and captured in use cases. Nonfunctional requirements define the performance and quality attributes of the system. Consider functional requirements to determine whether an application performs a task. Consider nonfunctional requirements to determine how well the application performs a task. Ensure that you understand nonfunctional requirements like availability, compliance, data retention/residency, performance, privacy, recovery time, security, and scalability. These requirements influence design decisions and technology choices.
+    | **Functional requirements** | **Nonfunctional requirements** |
+    |---|---| 
+    | The workload should allow users to log in with their credentials and only access their personal data. | The workload should be available at least 99.9% of the time. |
+    | The workload should provide a dashboard that provides an overview of open, approved, and declined expense reports. | The workload should comply with the relevant regulations and standards for data protection and privacy. |
+    | The workload should support backup and restore operations for the workload data. | The workload should have a response time of less than 5 seconds for most user requests. |
+    | The workload should send notifications to users and administrators when certain events or thresholds are triggered. | The workload should have a high level of security and encryption for the data in transit and at rest. |
 
-- **Break down the workload into components**. During the discovery and requirement gathering process, some solution ideas should start to become clear. Identify components that might make up the proposed solution to meet your business requirement. Prioritize simplicity, efficiency, and reliability in your design. Determine the components that you need to support your workload. Highlight where out-of-the-box capabilities can be used, and where custom development might be needed.
-
+    For more information, see [Work with requirements for Microsoft Power Platform and Dynamics 365](/training/modules/work-with-requirements/)
+- **Break down the workload into components**. During the discovery and requirement gathering process, some solution ideas should start to become clear. Identify solution components that might make up the proposed solution to meet your business requirement. Prioritize simplicity, efficiency, and reliability in your design. Determine the components that you need to support your workload. Highlight where out of the box capabilities can be used, and where custom development may be needed.
 - **Use failure mode analysis** to identify single points of failure and potential risks. Clearly understand your business's tolerance for risk. For more information, see [Recommendations for performing failure mode analysis](failure-mode-analysis.md).
-
-- **Define availability and recovery targets** for your workload to inform the architecture decisions. Business metrics include service-level objectives (SLOs), service-level agreements (SLAs), mean time to recover (MTTR), mean time between failure (MTBF), recovery time objectives (RTOs), and recovery point objectives (RPOs). Define target values for these metrics. This exercise might require compromise and mutual understanding between technology and business teams to ensure that each team's goals meet business objectives and are realistic. For more information, see [Recommendations for defining reliability targets](metrics.md).<!-- EDITOR'S NOTE: This is the article that's linked in the equivalent Azure article, but it doesn't seem to exist in the Power Platform WAF Reliability doc set. -->
+- **Define availability and recovery targets** for your workload to inform the architecture decisions. Business metrics include service-level objectives (SLOs), service-level agreements (SLAs), mean time to recover (MTTR), mean time between failure (MTBF), recovery time objectives (RTOs), and recovery point objectives (RPOs). Define target values for these metrics. This exercise might require compromise and mutual understanding between technology and business teams to ensure that each team's goals meet business objectives and are realistic. For more information, see [Recommendations for defining reliability targets](metrics.md). Power Platform SLAs provide the Microsoft commitments for uptime and connectivity. Different services have different SLAs, and sometimes SKUs within a service have different SLAs. For more information, see [Service-level agreements for online services](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
 
 ### Additional design recommendations
 
@@ -80,6 +86,7 @@ As part of your architectural design, you need to consider how to store your dat
 
 - **New data**: If your app creates data that doesn't already exist, such as when the existing business process was done on paper, we recommend storing the data in Microsoft Dataverse.
 
+
 - **Read/write from an existing system**: If your app needs to retrieve data from an existing database or system, you need to evaluate the best way to connect to the database or system: using an out-of-the-box connector, a custom connector, or virtual tables.
 
 - **Make a copy of the data**: In situations where original data should never be modified or overwritten, you can copy the data to another data store such as Dataverse. This ensures that the data in the original system isn't be changed, yet your app can work with it. This scenario is common when working with data in accounting and revenue-related systems. You need to consider how data is copied, how often it's updated, and whether a two-way sync needs to take place.
@@ -94,3 +101,4 @@ As part of your architectural design, you need to consider how to store your dat
 - [Work with requirements for Microsoft Power Platform and Dynamics 365](/training/modules/work-with-requirements/)
 - [Use Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant)
 - [Code Review Tool (github.com)](https://github.com/microsoft/powerapps-tools/blob/master/Tools/Apps/Microsoft.PowerApps.CodeReview/readme.md)
+

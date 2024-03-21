@@ -11,10 +11,11 @@ ms.topic: conceptual
 
 # Recommendations for handling transient faults
 
-**Applies to this Power Platform Well-Architected Framework Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
-| [RE:07](checklist.md) | **Strengthen the resiliency and recoverability of your workload by implementing self-preservation and self-healing measures. Build capabilities into the solution by using infrastructure-based reliability patterns and software-based design patterns to handle component failures and transient errors. Build capabilities into the system to detect solution component failures and automatically initiate corrective action while the workload continues to operate at full or reduced functionality.** |
-| --- | --- |
+|[RE:05](checklist.md)| Strengthen the resiliency of your workload by implementing error handling and transient fault handling. Build capabilities into the solution to handle component failures and transient errors.  |
+|---|---|
+
 
 This guide describes the recommendations for handling transient faults in your cloud applications. All applications that communicate with remote services and resources must be sensitive to transient faults. This is especially true for applications that run in the cloud, where, because of the nature of the environment and connectivity over the internet, this type of fault is likely to be encountered more often. Transient faults include the momentary loss of network connectivity to components and services, the temporary unavailability of a service, and timeouts that occur when a service is busy. These faults are often self-correcting, so, if the action is repeated after a suitable delay, it's likely to succeed.
 
@@ -25,6 +26,7 @@ Transient faults can occur in any environment, on any platform or operating syst
 ### Challenges
 
 Transient faults can have a significant effect on the perceived availability of an application, even if it's been thoroughly tested under all foreseeable circumstances. To ensure that your Power Platform workload can operate reliably, you need to ensure that it can respond to the following challenges:
+
 
 - The application must be able to detect faults when they occur and determine if the faults are likely to be transient, are long-lasting, or are terminal failures. Different resources are likely to return different responses when a fault occurs, and these responses can also vary depending on the context of the operation. For example, the response for an error when the application is retrieving data from a custom connector might be different from the response when the application is running a cloud flow and waiting for the response.
 
@@ -64,7 +66,7 @@ Keep in mind that determining the appropriate intervals between retries is the m
 
 - **Immediate retry**. Sometimes a transient fault is brief, and retrying the operation immediately is appropriate because it might succeed if the fault is cleared in the time that it takes the application to send the next request. However, there should never be more than one immediate retry attempt. You should switch to alternative strategies, like exponential interval or fallback actions, if the immediate retry fails.
 
-As a general guideline, use an exponential interval strategy for background operations, and use immediate or fixed interval retry strategies for interactive operations. In both cases, you should choose the delay and the retry count so that the maximum latency for all retry attempts is within the required end-to-end latency requirement.
+- As a general guideline, use an exponential interval strategy for background operations, and use immediate or fixed interval retry strategies for interactive operations. In both cases, you should choose the delay and the retry count so that the maximum latency for all retry attempts is within the required end-to-end latency requirement.
 
 Consider the combination of all factors that contribute to the overall maximum timeout for a retried operation. These factors include the time it takes for a failed connection to produce a response, the delay between retry attempts, and the maximum number of retries. The total of all these times can result in long overall operation times, especially when you use an exponential delay strategy where the interval between retries grows rapidly after each failure. If a process must meet a specific service-level agreement (SLA), the overall operation time, including all timeouts and delays, must be within the limits defined in the SLA.
 

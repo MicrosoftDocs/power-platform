@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 03/29/2024
+ms.date: 03/13/2024
 ---
 
 # Reliability tradeoffs
@@ -23,7 +23,7 @@ During the design phase of a workload, you need to consider how decisions based 
 
 - Similarly, disaster recovery solutions, like backups, increase a workload's surface area. However, they're often isolated from the workload's runtime. This requires the implementation of additional security controls, which might be specific to the disaster recovery solution.
 
-- For the sake of reliability goals, additional components might be needed for the architecture, which increases the surface area. For example, a message bus might be added to make requests resilient. This increased complexity increases the surface area of the workload by adding new components that need to be secured, possibly in ways that aren't already used in the system. Typically, these components are accompanied by additional code and libraries to support their use or general reliability patterns, which also increases the application's surface area.
+- For the sake of reliability goals, additional components might be needed for the architecture, which increases the surface area. This increased complexity increases the surface area of the workload by adding new components that need to be secured, possibly in ways that aren't already used in the system. Typically, these components are accompanied by additional code to support their use or general reliability patterns, which also increases the application's surface area.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Security control bypass**. The Security pillar recommends that all controls remain active in both normal and stressed systems.
 
@@ -35,15 +35,13 @@ During the design phase of a workload, you need to consider how decisions based 
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Old software versions**. The Security pillar encourages a "get current, stay current" approach to vendor security patches.
 
-- Applying security patches or software updates can potentially disrupt the target component, causing unavailability during the software change. Delaying or avoiding patching might avoid the potential reliability risks, but it leaves the system unprotected against evolving threats.
+- Applying release wave updates or updates to vendor libraries, like third-party components or solutions, can potentially disrupt the target component, causing unavailability during the change. Delaying or avoiding patching might avoid the potential reliability risks, but it leaves the system unprotected against evolving threats.
 
-- The preceding consideration also applies to the workload's code. For example, it applies to application code that uses old libraries and containers that use old base images. If updating and deploying application code is viewed as an unmitigated reliability risk, the application is exposed to additional security risks over time.
+- The preceding consideration also applies to the workload's code. For example, it applies to application code that uses old libraries and components. If updating and deploying application code is viewed as an unmitigated reliability risk, the application is exposed to additional security risks over time.
 
 ## Reliability tradeoffs with Operational Excellence
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased operational complexity**. Operational Excellence, like Reliability itself, prioritizes simplicity.
-
-- Reliability usually increases the complexity of a workload. As the complexity of a workload increases, the operational elements of the workload can also increase to support the added components and processes in terms of deployment coordination and configuration surface area.
 
 - Having a comprehensive monitoring strategy for a workload is a key part of operational excellence. Introducing additional components into an architecture to implement reliability design patterns results in more data sources to manage, increasing the complexity of implementing distributed tracing and observability.
 
@@ -55,6 +53,7 @@ During the design phase of a workload, you need to consider how decisions based 
 
 - Training becomes more complex as the number of components in the workload increases. This complexity affects the time required for onboarding and increases the knowledge that's needed to track product roadmaps and service-level guidance.
 
+<!--
 ## Reliability tradeoffs with Performance Efficiency
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased latency**. Performance Efficiency requires a system to achieve performance targets for user and data flows.
@@ -72,10 +71,10 @@ During the design phase of a workload, you need to consider how decisions based 
 - Automatic scaling operations aren't instantaneous and therefore can't reliably handle a sudden and dramatic spike in demand that can't be shaped or smoothed. Therefore, over-provisioning via either larger instances or more instances is a critical reliability tactic to account for the lag between demand signal and supply creation. Unused capacity counters the goals of performance efficiency.
 
 - Sometimes a component can't be scaled in reaction to demand, and that demand isn't fully predictable. Using large instances to cover the worst case leads to over-provisioning waste in situations that are outside that use case.
+-->
 
 ### See also
 
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
-- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)
 - [Security tradeoffs](../security/tradeoffs.md)

@@ -28,6 +28,7 @@ If you don't apply these principles to your design, the workload most likely won
 
 Requirements must cover user experience, data, workflows, and characteristics that are unique to the workload. The outcome of _the requirements process must clearly state the expectations_. The goals must be achievable and negotiated with the team, given a specified investment. They must be documented to drive technological choices, implementations, and operations.
 
+
 | Approach | Benefit |
 | -- | -- |
 | **Quantify success by setting targets on indicators** for individual components, system flows, and the system as a whole. **Do those targets make user flows more reliable?** | Metrics quantify expectations. They enable you to **understand complexities** and determine whether the downstream costs of those complexities are within the investment limit.<br><br>The target values indicate an ideal state. You can use the values as test thresholds that help you **detect deviations** from that state and how long it takes to return to the target state.<br><br>Compliance requirements must also have predictable outcomes for in-scope flows. Prioritizing these flows **brings attention to areas that are the most sensitive**. |
@@ -50,12 +51,14 @@ You should expect that component malfunctions, platform outages, performance deg
 | **Build redundancy in layers and resiliency on various application tiers**.<br><br>Aim for redundancy in physical utilities and immediate data replication. Also aim for redundancy in the functional layer that covers services, operations, and personnel. | Redundancy helps **minimize single points of failure**. For example, if there's a component, zonal, or regional outage, redundant deployment (in active-active or active-passive) allows you to meet uptime targets.<br><br>Adding intermediaries prevents direct dependency between components and improves buffering. Both of these benefits harden the resiliency of the system. |
 | **Overprovision to immediately mitigate individual failure** of redundant instances and to buffer against runaway resource consumption. | Higher investment in overprovisioning **increases resiliency**.<br><br>The system will continue to operate at full utility during an active failure even before scaling operations can start to **remediate the failure**. Likewise, you can reduce the risk of unexpected runaway resource consumption claiming your planned buffer, gaining critical triage time, before system faults or aggressive scaling occur. |
 
+
 ## Design for recovery
 
 | ![Goal icon](../_images/goal.svg) The workload must be able to anticipate and recover from most failures, of all magnitudes, with minimal disruption to the user experience and business objectives. |
 | -- |
 
 Even highly resilient systems need _disaster preparedness approaches_, in both architecture design and workload operations. On the data layer, you should have strategies that can repair workload state in case of corruption.
+
 
 | Approach | Benefit |
 | -- | -- |

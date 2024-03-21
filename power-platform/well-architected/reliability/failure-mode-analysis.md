@@ -10,9 +10,10 @@ ms.topic: conceptual
 ai.usage: ai-assisted
 ---
 
+
 # Recommendations for performing failure mode analysis
 
-**Applies to this Power Platform Well-Architected Framework Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 | [RE:03](checklist.md) | **Use failure mode analysis (FMA) to identify and prioritize potential failures in your solution components. Perform FMA to help you assess the risk and effect of each failure mode. Determine how the workload responds and recovers.** |
 | --- | --- |
@@ -36,6 +37,7 @@ If you skip FMA altogether or perform an incomplete analysis, your workload is a
 In the context of FMA, understanding the prerequisites is crucial. Begin by reviewing and implementing recommendations for identifying flows, prioritizing them based on criticality. Your data artifacts play a pivotal role in describing the data paths within these flows. As you delve into the FMA approach, focus on planning components for critical flows, identifying dependencies (both internal and external), and devising mitigation strategies.
 
 ### Prerequisites
+
 
 Review and implement the [recommendations for identifying flows](identify-flows.md). It's assumed that you have identified and prioritized user and system flows based on criticality.
 
@@ -71,13 +73,12 @@ In your workload's critical flows, consider each component and determine how tha
 - Planned maintenance outage
 - Component overload
 
-The analysis should always be in the context of the flow you're attempting to analyze, so be sure to document the effect on the user and expected result of that flow. For example, if you have an e-commerce application and you're analyzing your customer flow, the effect of a particular failure mode on one or more components might be that all customers are unable to complete the checkout.
-
 Consider the likelihood of each type of failure mode. Some are very unlikely, like multi-zone or multi-region outages, and adding mitigation planning beyond redundancy isn't a good use of resources and time.
 
 #### Mitigation
 
 Mitigation strategies fall into two broad categories: building more resiliency and designing for degraded performance.
+
 
 Building more resiliency means ensuring that your application design follows best practices for durability; for example, breaking up monolithic applications into isolated apps and microservices and using platform-provided resiliency configurations, like retry policies. For more information, see [Recommendations for redundancy](/azure/well-architected/reliability/redundancy) and [Recommendations for self-preservation](/azure/well-architected/reliability/self-preservation).
 
@@ -130,6 +131,7 @@ You can subscribe to receive telemetry captured by the [Dataverse platform in Ap
 
 Connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights) to use these analytics to diagnose issues, understand what users actually do with your apps, drive better business decisions, and improve the quality of your apps.
 
+
 Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this telemetry to monitor cloud flow executions and create alerts for cloud flow run failures.
 
 Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring.
@@ -143,3 +145,19 @@ For more information about logging activities in Power Platform, see:
 - [Data loss prevention](/power-platform/admin/dlp-activity-logging)  
 - [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
+
+| **Component** | **Risk** | **Likelihood** | **Effect/Mitigation/Note** | **Outage** |
+|---|---|---|---|---|
+| **Microsoft** **Entra ID** | Service outage | Low | Full workload outage. Dependent on Microsoft to remediate. | Full |
+| **Microsoft** **Entra ID** | Misconfiguration | Medium | Users unable to sign in. No downstream effect. Help desk reports configuration issue to identity team. | None |
+| **Power Apps** | Service outage | Low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
+| **Power Apps** | Regional outage | Very low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
+| **Power Apps** | DDoS attack | Medium | Potential for disruption. Microsoft manages DDoS (L3 and L4) protection. | Potential for partial outage |
+| **Dataverse** | Service outage | Low | Full workload outage. Dependent on Microsoft to remediate. | Full |
+| **Dataverse** | Regional outage | Very low | Auto-failover group fails over to secondary region. Potential outage during failover. Recovery time objectives (RTOs) and recovery point objectives (RPOs) to be determined during reliability testing. | Potential full |
+| **Dataverse** | Malicious attack (injection) | Medium | Minimal risk. | Potential low risk |
+| **APIM** | Service outage | Low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
+| **APIM** | Regional outage | Very low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
+| **APIM** | DDoS attack | Medium | Potential for disruption. Microsoft manages DDoS (L3 and L4) protection. | Potential for partial outage |
+| **Your Power Platform solution** | Misconfiguration | Medium | Misconfigurations should be caught during deployment. If these happen during a configuration update, administrators must roll back changes. Configuration update causes a brief external outage. | Potential for full outage |
+

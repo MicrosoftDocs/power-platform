@@ -11,10 +11,10 @@ ms.topic: conceptual
 
 # Recommendations for designing a reliable monitoring and alerting strategy
 
-**Applies to this Power Platform Well-Architected Framework Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
-| [RE:10](checklist.md) | **Measure and publish the solution's health indicators. Continuously capture uptime and other reliability data from across the workload and also from individual components and key flows.** |
-| --- | --- |
+|[RE:08](checklist.md)| Measure and publish the solution's health indicators. Continuously capture uptime and other reliability data from across the workload and also from individual components and key flows.  |
+|---|---|
 
 This guide describes the recommendations for designing a reliable monitoring and alerting strategy. Implement this strategy to keep your operations teams informed of your environment's health status and ensure that you meet the established reliability targets for your workload.
 

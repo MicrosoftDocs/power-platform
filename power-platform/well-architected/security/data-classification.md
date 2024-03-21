@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for data classification
 
-**Applies to Power Well-Architected Security checklist recommendation:**
+**Applies to Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:03](checklist.md)|Classify and consistently apply sensitivity labels on all workload data and systems involved in data processing. Use classification to influence workload design, implementation, and security prioritization.|
 |---|---|

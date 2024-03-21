@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for establishing a security baseline
 
-**Applies to Power Well-Architected Security checklist recommendation:**
+**Applies to Power Platform Well-Architected Security checklist recommendation:**
 
 |[SE:01](checklist.md)| Establish a security baseline aligned to compliance requirements, industry standards, and platform recommendations. Regularly measure your workload architecture and operations against the baseline to sustain or improve your security posture over time.|
 |---|---|
@@ -206,7 +206,7 @@ Ensure the security baseline you establish for Microsoft Power Platform is well 
 ## Related links
 
 - [Microsoft compliance](/compliance/)
-- [Microsoft Power Platform security and governance documentation](power-platform/admin/security)
+- [Microsoft Power Platform security and governance documentation](/power-platform/admin/security)
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [What is incident response? Plan and steps](https://www.microsoft.com/security/business/security-101/what-is-incident-response)
 

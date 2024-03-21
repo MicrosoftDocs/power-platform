@@ -1,5 +1,5 @@
 ---
-title: Automatic deletion of inactive Power Platform environments
+title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
@@ -13,7 +13,7 @@ search.audienceType:
 ms.custom: bap-template
 ---
 
-# Automatic deletion of inactive Power Platform environments
+# Automatic deletion of Power Platform environments
 
 Automated processes periodically identify, disable, and eventually delete inactive Power Platform environments to optimize storage capacity. An environment may be deleted because it's in a tenant with an expired subscription or because it's not being used. In either case, there are actions you can take to prevent the environment from being deleted.
 

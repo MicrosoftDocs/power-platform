@@ -10,7 +10,7 @@ ms.topic: conceptual
 ---
 # Recommendations for default environment hygiene
 
-**Applies to this Power Well-Architected Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 |[RE:11](checklist.md)| Default environment hygiene recommendation.   |
 |---|---|
