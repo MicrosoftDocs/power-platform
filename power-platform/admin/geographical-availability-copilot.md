@@ -4,7 +4,7 @@ description: Learn how to enable data movement across regions for copilots and g
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/19/2024
+ms.date: 03/21/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
@@ -99,6 +99,10 @@ For information about regions supported by Dynamics 365 copilots and generative 
 
 - For Dynamics 365 Customer Insights - Data, see [Give consent to use Copilot in Customer Insights – Data](/dynamics365/customer-insights/data/copilot-global-consent).
 - For Dynamics 365 Sales, see [Copilot data movement across geographies](/dynamics365/sales/sales-copilot-data-movement).
+
+## Languages availability
+
+To learn about the languages that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/en-us/availability-reports/copilotreport/).
 
 ## Related content
 
