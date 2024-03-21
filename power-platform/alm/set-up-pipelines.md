@@ -62,7 +62,7 @@ Once you select **Save**, the current (source) environment and the selected targ
 
 #### Delete a pipeline you own from Power Apps
 
-Select **Delete** on the command bar to delete the currently selected pipeline in the dropdown list. A confirmation message will appear regarding your intent and knowledge of the consequence.
+Select **Delete** on the command bar to delete the currently selected pipeline in the dropdown list. A confirmation message appears regarding your intent and knowledge of the consequence.
 
 This action doesn't remove the run history for the pipeline nor does it delete the associated environment records from the host.
 
