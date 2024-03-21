@@ -63,7 +63,7 @@ Learn [more about license entitlements](#license-entitlements).
 
 Here's a chart that lays out the limits that are associated with the different license plans.
 
-|License|Power platform limits per 24 hours|Standard connectors|Premium connectors, Business process flows, Custom connectors, On-premise gateway|RPA attended|RPA Unattended|AI builder credits|Dataverse database capacity(accruved per USL/flow)|Dataverse file capacity(accrued per USL/flow)|Process Mining desktop functionality|Process Mining data storage |
+|License|Power platform limits per 24 hours|Standard connectors|Premium connectors, Business process flows, Custom connectors, On-premises gateway|RPA attended|RPA Unattended|AI builder credits|Dataverse database capacity(accruved per USL/flow)|Dataverse file capacity(accrued per USL/flow)|Process Mining desktop functionality|Process Mining data storage |
 |--------|--------|----|-------|----|------|-----|--------|----------|--------|-----|
 Power Automate premium|Actual limit-40K/user Transition period limit-200K/flow|Included|Included|One bot included|Not Included|5000|250MB|2GB|Included|50MB per user license up to 100GB per tenant|
 Power Automate process plan|Actual limit-250K/process Transition period limit-500K/process|Included|Included|Not included|Included|5000|50MB|200MB|Not Included|Not Included
