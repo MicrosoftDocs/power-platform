@@ -33,10 +33,9 @@ The **Catalog Manager** application includes the following security roles you ca
 
 |Role |Description  |
 |---------|---------|
+|**Catalog Approver**|Users with this role can approve submissions to the catalog. Catalog approvers can be users from your central IT department or Line of Business that your organization wants to empower to participate in the approvals process.|
+|**Catalog Consumer**|Users with this role can discover and install items from the catalog.|
 |**Catalog Submitter**|Users with this role can submit items to the catalog.|
-|**Catalog Read-Only Member**|Users with this role can discover and install items from the catalog  |
-|**Catalog Approver**  |Users with this role can approve submissions to the catalog. Catalog approvers can be users from your central IT department or Line of Business that your organization wants to empower to participate in the approvals process.|
-|**Catalog Administrator**|Users with this role can administer the catalog.|
 
 More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team).
 
