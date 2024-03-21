@@ -514,7 +514,7 @@ The `InputEvent` property can be set to one or more of the following:
 - **`LoadPreviousPage`** - Loads the previous page if there's one
 - **`LoadFirstPage`** - Loads the first page
 
-To ensure that the input event is picked up, it must be sufficed with a random value. for example, `SetSelection" & Text(Rand())`
+To ensure that the input event is picked up, it must be sufficed with a random value. for example, `"SetSelection" & Text(Rand())`
 
 See below for more details.
 
