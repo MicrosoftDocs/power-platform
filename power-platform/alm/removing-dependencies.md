@@ -173,11 +173,11 @@ However, the **new_numberfield** attribute is no longer listed, even if it exist
 To remove unmanaged dependencies, you need to act directly on the components, not in the solutions they belong to. For example, if you want to remove the dependencies between an attribute and a form, you must edit it in the Form Editor and remove the attribute from the form. The dependency will be removed after you select **Save** and **Publish**.
 
 > [!NOTE]
-> You can also delete the dependent component. That action deletes all dependencies, along with the component.
+> 
+> - The new **Show dependencies** command, currently in preview, lets you take action to view, remove the dependency, edit the component, or delete the component. More information: [View dependencies for a component](/power-apps/maker/data-platform/view-component-dependencies)
+> - You can also delete the dependent component. That action deletes all dependencies, along with the component.
 
-To see the dependencies of a component, locate it in the customizations page, and then select **Show dependencies**.
-
-![Customizations page.](media/solution-dependency-layers-and-dependencies-component-show-dependencies.png "Customizations page")
+To view the dependencies of a component, from the **Solutions** area, open the solution you want, select the vertical ellipses next to the component, and then select **Advanced** > **Show dependencies**.
 
 The page of dependencies has two distinct parts:
 
