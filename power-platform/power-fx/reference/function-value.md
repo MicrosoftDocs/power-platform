@@ -25,7 +25,7 @@ Converts a string of text or other types to a number.
 > [!NOTE]
 > Power Apps only supports the **Value** function and it returns a **Float** value. Support for the **Decimal** and **Float** functions will be added soon. 
 
-Use the **Decimal**, **Float**, and **Value** functions to convert a string of text that contains number characters to a numeric value. Use these function when you need to perform calculations on numbers that were entered as text by a user. These functions can also be used to convert other types to a number, such as date/time and Boolean.
+Use the **Decimal**, **Float**, and **Value** functions to convert a string of text that contains number characters to a numeric value. Use these functions when you need to perform calculations on numbers that were entered as text by a user. These functions can also be used to convert other types to a number, such as date/time and Boolean.
 
 The **Value** function will return the default numeric data type for the Power Fx host you are using, which is usually **Decimal** and the best choice for most situations. Use the **Decimal** and **Float** functions when you need a specific data type for a particular scenario, such as a scientific calculation with a very large number. For more details on working with these data types, see [the Numbers section of Data types](../data-types.md#numbers).
 
@@ -34,7 +34,7 @@ Different languages interpret **,** and **.** differently. By default, the text 
 Notes on the format of the string:
 
 - The string may be prefixed with the currency symbol for the current language. The currency symbol is ignored. Currency symbols for other languages aren't ignored.
-- The string may be include a percent sign (**%**) at the end, indicating that it's a percentage. The number will be divided by 100 before being returned. Percentages and currency symbols can't be mixed.
+- The string may include a percent sign (**%**) at the end, indicating that it's a percentage. The number will be divided by 100 before being returned. Percentages and currency symbols can't be mixed.
 - The string may be in scientific notation, with 12 x 10<sup>3</sup> expressed as "12e3".
 
 If the number isn't in a proper format, these functions will return an error.
@@ -88,6 +88,6 @@ Where things diverge is if larger or smaller numbers are used.
 | **Float(&nbsp;"1e100"&nbsp;)** | The number in the text string is within the range of **Float** numbers.  | 1e100 **Float** |
 | **Decimal(&nbsp;"1e100"&nbsp;)** |  The number in the text string is beyond the range of **Decimal** numbers. | *error (overflow)* |
 | **Float(&nbsp;"10000000000.0000000001"&nbsp;)** | The number in the text string is within the range of **Float** numbers.  However, the number requires more precision than a **Float** can provide and will be truncated. | 1 (**Float**) |
-| **Decimal(&nbsp;"10000000000.0000000001"&nbsp;)** |  The number in the text string is within both the range and precision of a **Decimal** numbers. | 10000000000.0000000001 (**Decimal**) |
+| **Decimal(&nbsp;"10000000000.0000000001"&nbsp;)** |  The number in the text string is within both the range and precision of a **Decimal** number. | 10000000000.0000000001 (**Decimal**) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
