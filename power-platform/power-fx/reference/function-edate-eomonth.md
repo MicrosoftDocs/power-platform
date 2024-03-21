@@ -28,7 +28,7 @@ The **EDate** and **EOMonth** functions move a Date/Time forward or backward by 
 
 After the month adjustment, **EDate** leaves the day portion unmodified unless the new value would be beyond the end of the month. For example, moving July 31 backward by one month yields June 30. Use **EDate** to calculate the maturity dates or due dates that fall on the same day of the month as the date of issue.
 
-After the month adjustment, **EOMonth** changes the day potion to the last day of the resulting month. Use **EOMonth** to calculate the maturity dates or due dates that fall on the last day of the month. **EOMonth** can be used to move a Date/Time to the end of the month by adding zero months.
+After the month adjustment, **EOMonth** changes the day portion to the last day of the resulting month. Use **EOMonth** to calculate the maturity dates or due dates that fall on the last day of the month. **EOMonth** can be used to move a Date/Time to the end of the month by adding zero months.
 
 All functions return a Date value. No time component is included, even if one was present in the input Date/Time.
 
