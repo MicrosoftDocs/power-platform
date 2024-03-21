@@ -14,7 +14,7 @@ contributors:
 - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: faq
-ms.date: 04/27/2023
+ms.date: 03/21/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -59,7 +59,7 @@ The SAP ERP connector utilizes the message server to invoke APIs that create, re
 
 ### Can Power Platform consume OData services in SAP?
 
-The Open Data Protocol (OData) connector isn't available to the public yet. You can also create a custom connector in Power Automate to consume [OData services](/odata/).
+The Open Data Protocol (OData) connector is currently only in private preview. However, you can create a custom connector in Power Automate to consume [OData services](/odata/).
 
 ### Can Power Platform access views in S4/HANA?
 
@@ -96,7 +96,7 @@ Yes.
 
 ### How are errors in SAP handled?
 
-Errors are displayed to users in a canvas app using Power Apps in a similar fashion to SAP—red text with the details of the error that occurred. The canvas apps users can correct errors if they're data-related and resubmit their work to SAP.
+Errors are displayed to users in a canvas app using Power Apps in a similar fashion to SAP's red text with the details of the error that occurred. Canvas apps users can correct errors if they're data-related and resubmit their work to SAP.
 
 ### How are file attachments handled?
 
@@ -156,7 +156,7 @@ You have a couple options:
 
 ### Where do I turn if I get stuck with SAP integration with Power Platform?
 
-Nearly 100% of the issues encountered are due to a step or prerequisite being overlooked in the [SAP integration](/power-automate/sap-integration/overview) documentation. If you're still having issues, you have a couple of options:
+Nearly 100% of the issues encountered are due to a step or prerequisite being overlooked in the [SAP integration](/administer/get-started#integrate-sap-with-power-platform) documentation. If you're still having issues, you have a couple of options:
 
 - Submit a question on our forum at: [Power Platform Community](https://powerusers.microsoft.com/)
 - Send an email to: <sap_ecc_powerapps@service.microsoft.com>.
