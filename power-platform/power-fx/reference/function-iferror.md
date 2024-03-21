@@ -107,7 +107,7 @@ As seen above, **IfError** can return an error if the _Replacement_ or _DefaultR
 
 ### FirstError / AllErrors
 
-Within in the replacement formulas, information about the errors found is available through the **FirstError** record and **AllErrors** table. **AllErrors** is a table of error information records with **FirstError** being a shortcut to the first record of this table. **FirstError** will always return the same value as **First( AllErrors )**.
+Within the replacement formulas, information about the errors found is available through the **FirstError** record and **AllErrors** table. **AllErrors** is a table of error information records with **FirstError** being a shortcut to the first record of this table. **FirstError** will always return the same value as **First( AllErrors )**.
 
 Error records include:
 
@@ -135,7 +135,7 @@ The example formula above would display the following banner when the two button
 
 ![Button control activated, showing a notification from the Notify function.](media/function-iferror/notify-firsterror.png)
 
-Typically, there'll be only one error that **FirstError** can sufficiently work with. However, there are scenarios where multiple errors may be returned. For example, when using a [formula chaining operator](./operators.md) or the [**Concurrent** function](./function-concurrent.md). Even in these situations, reporting **FirstError** might be enough to reveal a problem instead overloading a user with multiple errors. If you still have a requirement to work with each error individually, you can use the **AllErrors** table.
+Typically, there'll be only one error that **FirstError** can sufficiently work with. However, there are scenarios where multiple errors may be returned. For example, when using a [formula chaining operator](./operators.md) or the [**Concurrent** function](./function-concurrent.md). Even in these situations, reporting **FirstError** might be enough to reveal a problem instead of overloading a user with multiple errors. If you still have a requirement to work with each error individually, you can use the **AllErrors** table.
 
 ## IsError
 
