@@ -30,14 +30,14 @@ To learn more, see [Key concepts - Analytics in Microsoft Copilot Studio](analyt
 
 ## Understanding Copilot Studio analytics definitions
 
-It is important to understand the way Copilot Studio calculates the various metrics for the analytics. The basis of these calculations is the copilot sessions. A session can be an unbilled or a billed session. A billed session is a continuous interaction between a copilot and a user to address all of user’s question within a 60-minute time window.
+It is important to understand the way Copilot Studio calculates the various metrics for the analytics. The basis of these calculations is the copilot sessions. A session can be an *unbilled* or a *billed* session. A billed session is a continuous interaction between a copilot and a user to address all of user’s question within a 60-minute time window.
 
 A billed session can include multiple user authored topics and cannot last longer than 60 minutes or 100 turns.
 
 A session is interaction between a copilot and a user to address or assist a user with one query or intent (one user authored topic).
 Most sessions are *engaged*, which means that a user-authored topic or an escalation was triggered. There are three possible outcomes for an engaged session:
 
-- Resolved: End users are offered an end-of-conversation survey and either responds yes or leave without a response.
+- Resolved: End users are offered an end-of-conversation survey and either responds yes or leaves without a response.
 - Escalated: End users indicate that they need a human to help resolve the issue.
 - Abandoned: An engaged session that is neither resolved nor escalated and is inactive after 60 minutes from the beginning of the session. This would happen, for example, if the user leaves.
 
@@ -55,13 +55,11 @@ The insights you can get from Dynamics 365 Omnichannel include:
 
 ## Copilot Studio vs Omnichannel analytics comparison
 
-Let's take a look at how the analytics calculations differ between Copilot Studio and Dynamics 365 Omnichannel for the same set of metrics, 
+Analytics calculations differ between Copilot Studio and Dynamics 365 Omnichannel for the same named metrics, 
 such as resolution rate, escalation rate and abandonment rate.
 
-In this example, Copilot Studio analytics considers this as two separate bot sessions, while Dynamics 365 Omnichannel analytics considers it as a single “conversation”. As a result of this, the resolution rates, escalation rates and abandonment rates can be different across Copilot Studio analytics and Dynamics 365 Omnichannel analytics. The abandonment does not apply for Omnichannel analytics since the conversation is escalated to human agent.
+For example, an ongoing interaction with a user that would be considered one conversation and one bot session in Dynamics 365 Omnichannel analytics may be considered by Copilot Studio analytics to be multiple separate analytic sessions. As a result of this, the resolution rates, escalation rates and abandonment rates can be somewhat different across Copilot Studio analytics and Dynamics 365 Omnichannel analytics. 
 
-These key differences in the calculation of resolution rates and escalation rates need to be considered when consuming the Copilot Studio and Dynamics 365 Omnichannel analytics to determine key metrics like deflection rate, resolution rate, and so on.  
-
-The general recommendation is that you rely on Dynamics 365 Omnichannel analytics for tracking the overall copilot deflection rate for the organization and use the Copilot Studio analytics for enhancing the topic performance. 
+These key differences in the calculation of resolution rates and escalation rates need to be considered when consuming the Copilot Studio and Dynamics 365 Omnichannel analytics to determine key metrics like deflection rate, resolution rate, and so on. The general recommendation is that you rely on Dynamics 365 Omnichannel analytics for tracking the overall copilot deflection rate for the organization and use the Copilot Studio analytics for enhancing the topic performance. 
 
 
