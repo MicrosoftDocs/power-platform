@@ -174,7 +174,7 @@ To remove unmanaged dependencies, you need to act directly on the components, no
 
 > [!NOTE]
 > 
-> - The new **Show dependencies** command, currently in preview, lets you take action to view, remove the dependency, edit the component, or delete the component. More information: [View dependencies for a component](/power-apps/maker/data-platform/view-component-dependencies)
+> - The **Show dependencies** command lets you take action to view, remove the dependency, edit the component, or delete the component. More information: [View dependencies for a component](/power-apps/maker/data-platform/view-component-dependencies)
 > - You can also delete the dependent component. That action deletes all dependencies, along with the component.
 
 To view the dependencies of a component, from the **Solutions** area, open the solution you want, select the vertical ellipses next to the component, and then select **Advanced** > **Show dependencies**.
