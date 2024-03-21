@@ -26,8 +26,6 @@
           href: update-solutions-alm.md
         - name: Dependencies
           items:
-             - name: Show dependencies
-               href: show-dependencies.md
              - name: Removing dependencies overview
                href: removing-dependencies.md
              - name: Field and workflow dependencies

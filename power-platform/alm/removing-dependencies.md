@@ -18,7 +18,7 @@ Solution components often depend on other solution components. You can’t delet
 > [!NOTE]
 > In this article, *delete* means that the component is completely removed from the system.
 
-In this article, we'll discuss how to handle these dependencies and the strategies you can use to remove dependencies that you no longer need.
+In this article, we discuss how to handle these dependencies and the strategies you can use to remove dependencies that you no longer need.
 
 ## Dependencies of unmanaged vs. managed components
 
