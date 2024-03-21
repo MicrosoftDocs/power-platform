@@ -2,7 +2,7 @@
 title: "Removing dependencies overview (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "Dependencies sometimes can block operations. This article describes how dependencies can be removed." 
 ms.custom: ""
-ms.date: 06/17/2020
+ms.date: 03/21/2024
 ms.reviewer: ""
 ms.topic: "article"
 author: "ccdietrich" 
@@ -72,7 +72,7 @@ The **Show dependencies** command lists the dependencies for the selected soluti
 - Selecting **Advanced** > **Show dependencies** within a solution when a solution component is selected.
 - Trying to uninstall a solution, which will cause the platform to detect that dependencies exist.
 
-From the Dependencies page you can open, remove, or delete, the component. More information: [Show dependencies for a component](show-dependencies.md)
+From the Dependencies page you can open, remove, or delete, the component. More information: [View dependencies for a component](/power-apps/maker/data-platform/view-component-dependencies)
 
 ## Diagnosing dependencies
 
